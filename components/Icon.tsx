@@ -8,7 +8,7 @@ import {
   Mic, 
   Copy, 
   Film, 
-  Search as SearchCode, 
+  SearchCode, 
   ListMusic, 
   Zap,
   Speaker,
