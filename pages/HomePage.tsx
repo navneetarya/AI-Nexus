@@ -111,38 +111,36 @@ export function HomePage({ navigate }: HomePageProps) {
             marginBottom: 28,
             textTransform: 'uppercase',
           }}>
-            <Zap size={12} /> {TOOLS.length} AI tools reviewed & tested
+            <Zap size={12} /> AI tools reviewed & tested
           </div>
 
           <h1 style={{
             fontFamily: "'Syne', sans-serif",
             fontWeight: 800,
-            fontSize: 'clamp(40px, 7vw, 68px)',
-            lineHeight: 1.02,
+            fontSize: '40px',
+            lineHeight: 1.15,
             color: '#18182b',
-            margin: '0 0 22px',
-            letterSpacing: '-0.035em',
+            margin: '0 0 20px',
+            letterSpacing: '-0.022em',
           }}>
-            The best AI tools,<br />
+            The best AI tools,{' '}
             <span style={{
-              background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+              color: '#7c3aed',
             }}>honest reviews.</span>
           </h1>
 
           <p style={{
-            fontSize: 18,
-            lineHeight: 1.65,
+            fontSize: 16,
+            lineHeight: 1.7,
             color: '#6b7280',
-            margin: '0 0 12px',
+            margin: '0 0 10px',
             fontWeight: 400,
           }}>
             I personally test every tool on this list. Every card links to a <strong style={{ color: '#18182b', fontWeight: 600 }}>free trial</strong> — no credit card required on most.
           </p>
 
-          <p style={{ fontSize: 14, color: '#9ca3af', margin: '0 0 36px' }}>
-            Links are affiliate links — I earn a small commission if you upgrade, at no extra cost to you.
+          <p style={{ fontSize: 13, color: '#9ca3af', margin: '0 0 32px' }}>
+            Affiliate links — I earn a small commission if you upgrade, at no extra cost to you.
           </p>
 
           {/* Search */}
@@ -320,11 +318,11 @@ function ToolCard({ tool, navigate }: { tool: Tool; navigate: (to: string) => vo
       <h3 style={{
         fontFamily: "'Syne', sans-serif",
         fontWeight: 800,
-        fontSize: 22,
+        fontSize: 19,
         color: '#18182b',
-        margin: '0 0 6px',
-        lineHeight: 1.15,
-        letterSpacing: '-0.02em',
+        margin: '0 0 5px',
+        lineHeight: 1.2,
+        letterSpacing: '-0.018em',
       }}>
         {tool.name}
       </h3>

@@ -89,17 +89,17 @@ export function ToolPage({ tool, navigate }: ToolPageProps) {
           <h1 style={{
             fontFamily: "'Syne', sans-serif",
             fontWeight: 800,
-            fontSize: 'clamp(32px, 6vw, 48px)',
+            fontSize: '36px',
             color: '#18182b',
             margin: '0 0 10px',
-            lineHeight: 1.08,
-            letterSpacing: '-0.03em',
+            lineHeight: 1.15,
+            letterSpacing: '-0.025em',
           }}>
             {tool.name}
           </h1>
 
           {/* Tagline */}
-          <p style={{ fontSize: 18, color: '#7c3aed', fontWeight: 600, margin: '0 0 16px', lineHeight: 1.4 }}>
+          <p style={{ fontSize: 16, color: '#7c3aed', fontWeight: 600, margin: '0 0 14px', lineHeight: 1.4 }}>
             {tool.tagline}
           </p>
 

@@ -18,6 +18,7 @@ export interface Tool {
   description: string;
   category: Category;
   affiliateLink: string;
+  affiliateSignupUrl?: string;
   iconName: string;
   color: string;
   accentColor: string;
