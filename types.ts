@@ -1,5 +1,3 @@
-import { LucideIcon } from 'lucide-react';
-
 export enum Category {
   ALL = 'All',
   WRITING = 'Writing',
@@ -23,7 +21,7 @@ export interface Tool {
   iconName: string;
   color: string;
   accentColor: string;
-  commission?: string;
+  userBadge?: string;
   pricing?: string;
   bestFor?: string;
   pros?: string[];

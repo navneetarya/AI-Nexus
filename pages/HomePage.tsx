@@ -1,28 +1,37 @@
 import React, { useState, useMemo } from 'react';
 import { TOOLS, SITE_CONFIG } from '../constants';
 import { Category, FilterState, Tool } from '../types';
-import { Search, ExternalLink, Instagram, ArrowRight } from 'lucide-react';
+import { Search, ExternalLink, Instagram, ArrowRight, Zap } from 'lucide-react';
 
 const CATEGORY_COLORS: Record<string, string> = {
-  [Category.WRITING]:    '#7c3aed',
-  [Category.IMAGE]:      '#db2777',
-  [Category.VIDEO]:      '#059669',
-  [Category.AUDIO]:      '#d97706',
-  [Category.MARKETING]:  '#e11d48',
-  [Category.DESIGN]:     '#2563eb',
-  [Category.CODING]:     '#0891b2',
+  [Category.WRITING]:      '#7c3aed',
+  [Category.IMAGE]:        '#db2777',
+  [Category.VIDEO]:        '#059669',
+  [Category.AUDIO]:        '#d97706',
+  [Category.MARKETING]:    '#e11d48',
+  [Category.DESIGN]:       '#2563eb',
+  [Category.CODING]:       '#0891b2',
   [Category.PRODUCTIVITY]: '#6d28d9',
 };
 
 const CATEGORY_BG: Record<string, string> = {
-  [Category.WRITING]:    '#ede9fe',
-  [Category.IMAGE]:      '#fce7f3',
-  [Category.VIDEO]:      '#d1fae5',
-  [Category.AUDIO]:      '#fef3c7',
-  [Category.MARKETING]:  '#ffe4e6',
-  [Category.DESIGN]:     '#dbeafe',
-  [Category.CODING]:     '#cffafe',
+  [Category.WRITING]:      '#ede9fe',
+  [Category.IMAGE]:        '#fce7f3',
+  [Category.VIDEO]:        '#d1fae5',
+  [Category.AUDIO]:        '#fef3c7',
+  [Category.MARKETING]:    '#ffe4e6',
+  [Category.DESIGN]:       '#dbeafe',
+  [Category.CODING]:       '#cffafe',
   [Category.PRODUCTIVITY]: '#ede9fe',
+};
+
+const BADGE_COLORS: Record<string, { bg: string; color: string }> = {
+  'Free plan ✓':      { bg: '#d1fae5', color: '#065f46' },
+  'Most popular':     { bg: '#ede9fe', color: '#5b21b6' },
+  'Best for beginners': { bg: '#dbeafe', color: '#1e40af' },
+  'Free trial ✓':     { bg: '#d1fae5', color: '#065f46' },
+  'SEO pick':         { bg: '#fef3c7', color: '#92400e' },
+  'One-time price':   { bg: '#fce7f3', color: '#9d174d' },
 };
 
 interface HomePageProps {
@@ -44,68 +53,152 @@ export function HomePage({ navigate }: HomePageProps) {
   const categories = [Category.ALL, ...Object.values(Category).filter(c => c !== Category.ALL)];
 
   return (
-    <div style={{ minHeight: '100vh', background: '#f4f3ff', fontFamily: "'DM Sans', sans-serif" }}>
+    <div style={{ minHeight: '100vh', background: '#f5f4ff', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
 
       {/* Nav */}
-      <nav style={{ background: '#fff', borderBottom: '1px solid #ede9fe', padding: '0 24px', position: 'sticky', top: 0, zIndex: 100 }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', height: 60, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <nav style={{
+        background: 'rgba(255,255,255,0.9)',
+        backdropFilter: 'blur(12px)',
+        borderBottom: '1px solid #ede9fe',
+        padding: '0 24px',
+        position: 'sticky',
+        top: 0,
+        zIndex: 100,
+      }}>
+        <div style={{ maxWidth: 1140, margin: '0 auto', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <div style={{ width: 32, height: 32, background: 'linear-gradient(135deg,#7c3aed,#4f46e5)', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <span style={{ color: '#fff', fontSize: 14, fontFamily: "'Syne', sans-serif", fontWeight: 800 }}>N</span>
+            <div style={{
+              width: 36, height: 36,
+              background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+              borderRadius: 10,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+            }}>
+              <Zap size={18} color="#fff" strokeWidth={2.5} />
             </div>
-            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 18, color: '#1a1a2e' }}>AI Nexus</span>
+            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 20, color: '#18182b', letterSpacing: '-0.03em' }}>
+              AI Nexus
+            </span>
           </div>
-          <a href={SITE_CONFIG.instagramUrl} target="_blank" rel="noopener noreferrer"
-            style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: '#7c3aed', fontWeight: 500, textDecoration: 'none', padding: '6px 14px', border: '1px solid #ede9fe', borderRadius: 20, background: '#faf9ff' }}>
-            <Instagram size={14} /> Follow on Instagram
+          <a
+            href={SITE_CONFIG.instagramUrl}
+            target="_blank" rel="noopener noreferrer"
+            style={{
+              display: 'flex', alignItems: 'center', gap: 7,
+              fontSize: 14, fontWeight: 600, color: '#7c3aed',
+              padding: '8px 16px',
+              border: '1.5px solid #ede9fe',
+              borderRadius: 100,
+              background: '#fdfcff',
+              textDecoration: 'none',
+              transition: 'all 0.15s',
+            }}
+          >
+            <Instagram size={15} /> Follow on Instagram
           </a>
         </div>
       </nav>
 
-      {/* Hero — matches carousel style */}
-      <div style={{ background: '#fff', borderBottom: '1px solid #ede9fe', padding: '64px 24px 56px' }}>
-        <div style={{ maxWidth: 700, margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ display: 'inline-block', background: '#ede9fe', color: '#7c3aed', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', padding: '4px 14px', borderRadius: 20, marginBottom: 20, textTransform: 'uppercase' }}>
-            50+ tools reviewed
+      {/* Hero */}
+      <div style={{ background: '#fff', borderBottom: '1px solid #ede9fe', padding: '72px 24px 64px' }}>
+        <div style={{ maxWidth: 680, margin: '0 auto', textAlign: 'center' }}>
+
+          <div style={{
+            display: 'inline-flex', alignItems: 'center', gap: 6,
+            background: '#ede9fe', color: '#6d28d9',
+            fontSize: 13, fontWeight: 700,
+            letterSpacing: '0.04em',
+            padding: '5px 14px', borderRadius: 100,
+            marginBottom: 28,
+            textTransform: 'uppercase',
+          }}>
+            <Zap size={12} /> {TOOLS.length} AI tools reviewed & tested
           </div>
-          <h1 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 'clamp(36px, 6vw, 64px)', lineHeight: 1.05, color: '#1a1a2e', margin: '0 0 20px', letterSpacing: '-0.02em' }}>
+
+          <h1 style={{
+            fontFamily: "'Syne', sans-serif",
+            fontWeight: 800,
+            fontSize: 'clamp(40px, 7vw, 68px)',
+            lineHeight: 1.02,
+            color: '#18182b',
+            margin: '0 0 22px',
+            letterSpacing: '-0.035em',
+          }}>
             The best AI tools,<br />
-            <span style={{ color: '#7c3aed' }}>honest reviews.</span>
+            <span style={{
+              background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}>honest reviews.</span>
           </h1>
-          <p style={{ fontSize: 17, color: '#6b7280', lineHeight: 1.6, margin: '0 0 32px' }}>
-            Every tool below has a free trial. Click any card to read the full review, see pricing, and get your affiliate-free trial link.
+
+          <p style={{
+            fontSize: 18,
+            lineHeight: 1.65,
+            color: '#6b7280',
+            margin: '0 0 12px',
+            fontWeight: 400,
+          }}>
+            I personally test every tool on this list. Every card links to a <strong style={{ color: '#18182b', fontWeight: 600 }}>free trial</strong> — no credit card required on most.
+          </p>
+
+          <p style={{ fontSize: 14, color: '#9ca3af', margin: '0 0 36px' }}>
+            Links are affiliate links — I earn a small commission if you upgrade, at no extra cost to you.
           </p>
 
           {/* Search */}
-          <div style={{ position: 'relative', maxWidth: 480, margin: '0 auto' }}>
-            <Search size={16} style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%)', color: '#9ca3af' }} />
+          <div style={{ position: 'relative', maxWidth: 500, margin: '0 auto' }}>
+            <Search size={17} style={{ position: 'absolute', left: 18, top: '50%', transform: 'translateY(-50%)', color: '#9ca3af' }} />
             <input
               type="text"
-              placeholder="Search tools (e.g. video, writing, free...)"
+              placeholder="Search tools — writing, video, audio..."
               value={filters.search}
               onChange={e => setFilters(f => ({ ...f, search: e.target.value }))}
-              style={{ width: '100%', paddingLeft: 44, paddingRight: 16, height: 48, border: '1.5px solid #e5e7eb', borderRadius: 12, fontSize: 15, outline: 'none', boxSizing: 'border-box', fontFamily: "'DM Sans', sans-serif", background: '#fafafa' }}
+              style={{
+                width: '100%',
+                paddingLeft: 50, paddingRight: 20,
+                height: 52,
+                border: '1.5px solid #e5e7eb',
+                borderRadius: 14,
+                fontSize: 15,
+                outline: 'none',
+                boxSizing: 'border-box',
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                background: '#fafafa',
+                color: '#18182b',
+                transition: 'border-color 0.15s',
+              }}
+              onFocus={e => (e.target.style.borderColor = '#7c3aed')}
+              onBlur={e => (e.target.style.borderColor = '#e5e7eb')}
             />
           </div>
         </div>
       </div>
 
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '32px 24px 80px' }}>
+      <div style={{ maxWidth: 1140, margin: '0 auto', padding: '36px 24px 96px' }}>
 
-        {/* Category filter — pill style like carousel */}
-        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 32 }}>
+        {/* Category filter */}
+        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 36 }}>
           {categories.map(cat => {
             const active = filters.category === cat;
+            const catColor = CATEGORY_COLORS[cat];
             return (
-              <button key={cat} onClick={() => setFilters(f => ({ ...f, category: cat }))}
+              <button
+                key={cat}
+                onClick={() => setFilters(f => ({ ...f, category: cat }))}
                 style={{
-                  padding: '7px 16px', borderRadius: 20, fontSize: 13, fontWeight: 500, cursor: 'pointer', border: 'none',
-                  background: active ? '#7c3aed' : '#fff',
+                  padding: '8px 18px',
+                  borderRadius: 100,
+                  fontSize: 14,
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  border: 'none',
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
+                  background: active ? (catColor || '#7c3aed') : '#fff',
                   color: active ? '#fff' : '#374151',
-                  boxShadow: active ? 'none' : '0 0 0 1px #e5e7eb',
+                  boxShadow: active ? `0 2px 10px ${(catColor || '#7c3aed')}30` : '0 0 0 1.5px #e5e7eb',
                   transition: 'all 0.15s',
-                  fontFamily: "'DM Sans', sans-serif",
-                }}>
+                }}
+              >
                 {cat}
               </button>
             );
@@ -113,12 +206,13 @@ export function HomePage({ navigate }: HomePageProps) {
         </div>
 
         {/* Results count */}
-        <p style={{ fontSize: 13, color: '#9ca3af', marginBottom: 20 }}>
-          {filtered.length} tool{filtered.length !== 1 ? 's' : ''} found
+        <p style={{ fontSize: 14, color: '#9ca3af', marginBottom: 24, fontWeight: 500 }}>
+          Showing {filtered.length} tool{filtered.length !== 1 ? 's' : ''}
+          {filters.category !== Category.ALL ? ` in ${filters.category}` : ''}
         </p>
 
         {/* Tool grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 18 }}>
           {filtered.map(tool => (
             <ToolCard key={tool.id} tool={tool} navigate={navigate} />
           ))}
@@ -126,28 +220,55 @@ export function HomePage({ navigate }: HomePageProps) {
 
         {filtered.length === 0 && (
           <div style={{ textAlign: 'center', padding: '80px 0', color: '#9ca3af' }}>
-            <p style={{ fontSize: 16, marginBottom: 12 }}>No tools found for "{filters.search}"</p>
-            <button onClick={() => setFilters({ search: '', category: Category.ALL })}
-              style={{ color: '#7c3aed', background: 'none', border: 'none', cursor: 'pointer', fontSize: 14, fontWeight: 500 }}>
-              Clear filters
+            <p style={{ fontSize: 18, marginBottom: 16, color: '#374151', fontWeight: 600 }}>
+              No results for "{filters.search}"
+            </p>
+            <button
+              onClick={() => setFilters({ search: '', category: Category.ALL })}
+              style={{
+                color: '#7c3aed', background: 'none', border: 'none',
+                cursor: 'pointer', fontSize: 15, fontWeight: 600,
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+              }}
+            >
+              Clear filters →
             </button>
           </div>
         )}
       </div>
 
-      {/* Footer — dark purple bar like carousel CTA */}
-      <footer style={{ background: 'linear-gradient(135deg, #4f46e5, #7c3aed)', padding: '40px 24px', textAlign: 'center' }}>
-        <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: 14, margin: '0 0 6px', fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 16 }}>
-          AI Nexus
+      {/* Footer */}
+      <footer style={{
+        background: 'linear-gradient(135deg, #18182b 0%, #2d1b69 100%)',
+        padding: '56px 24px',
+        textAlign: 'center',
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginBottom: 12 }}>
+          <div style={{ width: 32, height: 32, background: 'linear-gradient(135deg,#7c3aed,#4f46e5)', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Zap size={16} color="#fff" />
+          </div>
+          <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 20, color: '#fff', letterSpacing: '-0.03em' }}>
+            AI Nexus
+          </span>
+        </div>
+        <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: 13, margin: '0 0 20px', maxWidth: 400, marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.6 }}>
+          I test every AI tool personally and share honest takes on Instagram. Affiliate links help keep the reviews free.
         </p>
-        <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: 12, margin: '0 0 16px' }}>
-          Links on this site are affiliate links. We earn a small commission at no extra cost to you.
-        </p>
-        <a href={SITE_CONFIG.instagramUrl} target="_blank" rel="noopener noreferrer"
-          style={{ color: 'rgba(255,255,255,0.8)', fontSize: 13, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-          <Instagram size={14} /> @ainexustools
+        <a
+          href={SITE_CONFIG.instagramUrl}
+          target="_blank" rel="noopener noreferrer"
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: 8,
+            color: '#fff', fontSize: 14, fontWeight: 600,
+            background: 'rgba(255,255,255,0.1)',
+            border: '1px solid rgba(255,255,255,0.15)',
+            padding: '10px 20px', borderRadius: 100,
+            textDecoration: 'none',
+          }}
+        >
+          <Instagram size={15} /> Follow @ainexustools
         </a>
-        <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: 11, margin: '16px 0 0' }}>
+        <p style={{ color: 'rgba(255,255,255,0.25)', fontSize: 12, margin: '24px 0 0' }}>
           © {new Date().getFullYear()} AI Nexus. All rights reserved.
         </p>
       </footer>
@@ -159,6 +280,7 @@ function ToolCard({ tool, navigate }: { tool: Tool; navigate: (to: string) => vo
   const [hovered, setHovered] = useState(false);
   const catColor = CATEGORY_COLORS[tool.category] || '#7c3aed';
   const catBg = CATEGORY_BG[tool.category] || '#ede9fe';
+  const badge = tool.userBadge ? (BADGE_COLORS[tool.userBadge] || { bg: '#ede9fe', color: '#5b21b6' }) : null;
 
   return (
     <div
@@ -167,48 +289,84 @@ function ToolCard({ tool, navigate }: { tool: Tool; navigate: (to: string) => vo
       onMouseLeave={() => setHovered(false)}
       style={{
         background: '#fff',
-        borderRadius: 16,
-        border: `1.5px solid ${hovered ? catColor + '40' : '#f0effe'}`,
-        padding: '20px',
+        borderRadius: 18,
+        border: `1.5px solid ${hovered ? catColor + '35' : '#ede9fe'}`,
+        padding: '22px 22px 18px',
         cursor: 'pointer',
-        transition: 'all 0.18s',
-        transform: hovered ? 'translateY(-2px)' : 'none',
-        boxShadow: hovered ? `0 8px 24px ${catColor}18` : '0 1px 4px rgba(0,0,0,0.05)',
-      }}>
-
-      {/* Top row */}
-      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 14 }}>
-        <div>
-          <span style={{ display: 'inline-block', background: catBg, color: catColor, fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', padding: '3px 10px', borderRadius: 20, textTransform: 'uppercase', marginBottom: 8 }}>
-            {tool.category}
-          </span>
-          <h3 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 18, color: '#1a1a2e', margin: 0, lineHeight: 1.2 }}>
-            {tool.name}
-          </h3>
-        </div>
-        <div style={{ color: hovered ? catColor : '#d1d5db', transition: 'color 0.15s', marginTop: 2 }}>
-          <ArrowRight size={18} />
+        transition: 'transform 0.18s, box-shadow 0.18s, border-color 0.18s',
+        transform: hovered ? 'translateY(-3px)' : 'none',
+        boxShadow: hovered ? `0 12px 32px ${catColor}15` : '0 1px 4px rgba(0,0,0,0.04)',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
+      {/* Top row: category label + arrow */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
+        <span style={{
+          background: catBg, color: catColor,
+          fontSize: 11, fontWeight: 700,
+          letterSpacing: '0.06em',
+          padding: '3px 10px', borderRadius: 100,
+          textTransform: 'uppercase',
+        }}>
+          {tool.category}
+        </span>
+        <div style={{ color: hovered ? catColor : '#d1d5db', transition: 'color 0.15s' }}>
+          <ArrowRight size={17} />
         </div>
       </div>
 
+      {/* Tool name */}
+      <h3 style={{
+        fontFamily: "'Syne', sans-serif",
+        fontWeight: 800,
+        fontSize: 22,
+        color: '#18182b',
+        margin: '0 0 6px',
+        lineHeight: 1.15,
+        letterSpacing: '-0.02em',
+      }}>
+        {tool.name}
+      </h3>
+
       {/* Tagline */}
-      <p style={{ fontSize: 13, color: '#7c3aed', fontWeight: 500, margin: '0 0 8px', lineHeight: 1.4 }}>
+      <p style={{
+        fontSize: 14,
+        color: '#7c3aed',
+        fontWeight: 600,
+        margin: '0 0 10px',
+        lineHeight: 1.4,
+      }}>
         {tool.tagline}
       </p>
 
       {/* Description */}
-      <p style={{ fontSize: 13, color: '#6b7280', margin: '0 0 16px', lineHeight: 1.5, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+      <p style={{
+        fontSize: 14,
+        color: '#6b7280',
+        margin: '0 0 18px',
+        lineHeight: 1.6,
+        display: '-webkit-box',
+        WebkitLineClamp: 2,
+        WebkitBoxOrient: 'vertical',
+        overflow: 'hidden',
+        flex: 1,
+      }}>
         {tool.description}
       </p>
 
-      {/* Bottom row */}
+      {/* Bottom row: pricing + user badge */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 14, borderTop: '1px solid #f3f4f6' }}>
         {tool.pricing && (
-          <span style={{ fontSize: 12, color: '#374151', fontWeight: 500 }}>{tool.pricing}</span>
+          <span style={{ fontSize: 13, color: '#374151', fontWeight: 600 }}>{tool.pricing}</span>
         )}
-        {tool.commission && (
-          <span style={{ fontSize: 11, color: '#059669', background: '#d1fae5', padding: '2px 8px', borderRadius: 10, fontWeight: 600 }}>
-            {tool.commission}
+        {badge && tool.userBadge && (
+          <span style={{
+            fontSize: 12, fontWeight: 700,
+            background: badge.bg, color: badge.color,
+            padding: '3px 10px', borderRadius: 100,
+          }}>
+            {tool.userBadge}
           </span>
         )}
       </div>
