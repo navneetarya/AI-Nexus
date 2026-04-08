@@ -15,11 +15,20 @@ export enum Category {
 export interface Tool {
   id: string;
   name: string;
+  slug: string;
+  tagline: string;
   description: string;
   category: Category;
   affiliateLink: string;
-  iconName: string; 
-  color?: string;
+  iconName: string;
+  color: string;
+  accentColor: string;
+  commission?: string;
+  pricing?: string;
+  bestFor?: string;
+  pros?: string[];
+  cons?: string[];
+  features?: string[];
 }
 
 export interface FilterState {

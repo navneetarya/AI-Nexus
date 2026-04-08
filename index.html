@@ -1,68 +1,49 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta name='impact-site-verification' value='cccd36a8-4472-4e8f-8280-bd06f1498f21' />
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Nexus | Ultimate Tool Directory</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              background: '#09090b',
-              surface: '#18181b',
-              primary: '#6366f1',
-              secondary: '#a855f7',
-            },
-            animation: {
-              'blob': 'blob 7s infinite',
-            },
-            keyframes: {
-              blob: {
-                '0%': { transform: 'translate(0px, 0px) scale(1)' },
-                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-                '100%': { transform: 'translate(0px, 0px) scale(1)' },
-              }
-            }
-          },
-        },
+
+    <!-- Primary SEO -->
+    <title>AI Nexus — Best AI Tools Reviewed & Ranked 2025</title>
+    <meta name="description" content="Honest reviews of 50+ AI tools for writing, video, image, audio, and productivity. Every tool includes a free trial link. No fluff, updated weekly." />
+    <meta name="keywords" content="best AI tools, AI writing tools, AI video tools, AI image generator, AI productivity tools, AI tools review 2025" />
+    <link rel="canonical" href="https://ainexus-tools.netlify.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ainexus-tools.netlify.app/" />
+    <meta property="og:title" content="AI Nexus — Best AI Tools Reviewed & Ranked 2025" />
+    <meta property="og:description" content="Honest reviews of 50+ AI tools. Every link is a free trial. Updated weekly." />
+    <meta property="og:image" content="https://ainexus-tools.netlify.app/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Nexus — Best AI Tools Reviewed & Ranked 2025" />
+    <meta name="twitter:description" content="Honest reviews of 50+ AI tools. Every link is a free trial." />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AI Nexus",
+      "url": "https://ainexus-tools.netlify.app",
+      "description": "Curated directory of the best AI tools with honest reviews and free trial links",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://ainexus-tools.netlify.app/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
+    }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #09090b;
-        color: #f4f4f5;
-        overflow-x: hidden;
-      }
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #09090b; }
-      ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
-    </style>
-    <!-- IMPORT MAP REMOVED HERE -->
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
-    "vite": "https://aistudiocdn.com/vite@^7.2.6",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
-  }
-}
-</script>
-</head>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
