@@ -1,27 +1,42 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { TOOLS, SITE_CONFIG } from '../constants';
 import { Category, FilterState, Tool } from '../types';
-import { Search, Instagram, ArrowUpRight, Zap } from 'lucide-react';
+import { Search, Instagram, ArrowRight } from 'lucide-react';
 
-const T = {
-  bg: '#0a0a0f', surface: '#111118', border: '#1e1e2a', borderHover: '#2e2e42',
-  muted: '#3a3a50', subtle: '#6b6b8a', text: '#f0eff6', textDim: '#9090b0',
-  accent: '#00e5a0', accentDim: '#00c888', accentBg: 'rgba(0,229,160,0.08)',
+// ── Exact carousel color palette ──────────────────────────
+const C = {
+  bg:      '#F5F4FF',
+  surf:    '#FFFFFF',
+  a1:      '#5B21B6',
+  a2:      '#06B6D4',
+  txt:     '#0F0F1A',
+  mut:     'rgba(15,15,26,.66)',
+  mut2:    'rgba(15,15,26,.38)',
+  a1card:  'rgba(91,33,182,.065)',
+  a1brd:   'rgba(91,33,182,.18)',
+  a2card:  'rgba(6,182,212,.065)',
+  a2brd:   'rgba(6,182,212,.18)',
+  barBg:   'rgba(245,244,255,.97)',
+  barBrd:  'rgba(91,33,182,.13)',
 };
 
-const CAT_COLOR: Record<string, string> = {
-  Writing: '#60a5fa', Image: '#f472b6', Video: '#34d399', Audio: '#fbbf24',
-  Marketing: '#f87171', Design: '#a78bfa', Coding: '#38bdf8', Productivity: '#fb923c',
+// Category → colour pair (a1 or a2 tint)
+const CAT_ACCENT: Record<string, 'a1' | 'a2'> = {
+  Writing: 'a1', Image: 'a2', Video: 'a1', Audio: 'a2',
+  Marketing: 'a1', Design: 'a2', Coding: 'a1', Productivity: 'a2',
 };
 
-const BADGE_STYLE: Record<string, { bg: string; color: string }> = {
-  'Free plan ✓':        { bg: 'rgba(52,211,153,0.12)',  color: '#34d399' },
-  'Most popular':       { bg: 'rgba(167,139,250,0.12)', color: '#a78bfa' },
-  'Best for beginners': { bg: 'rgba(96,165,250,0.12)',  color: '#60a5fa' },
-  'Free trial ✓':       { bg: 'rgba(52,211,153,0.12)',  color: '#34d399' },
-  'SEO pick':           { bg: 'rgba(251,191,36,0.12)',  color: '#fbbf24' },
-  'One-time price':     { bg: 'rgba(248,113,113,0.12)', color: '#f87171' },
+const BADGE_COLORS: Record<string, { bg: string; color: string }> = {
+  'Free plan ✓':        { bg: 'rgba(6,182,212,.1)',   color: '#06B6D4' },
+  'Most popular':       { bg: 'rgba(91,33,182,.1)',   color: '#5B21B6' },
+  'Best for beginners': { bg: 'rgba(6,182,212,.1)',   color: '#06B6D4' },
+  'Free trial ✓':       { bg: 'rgba(6,182,212,.1)',   color: '#06B6D4' },
+  'SEO pick':           { bg: 'rgba(91,33,182,.1)',   color: '#5B21B6' },
+  'One-time price':     { bg: 'rgba(91,33,182,.1)',   color: '#5B21B6' },
 };
+
+// Dot-grid SVG background — exact from carousel
+const DOT_PATTERN = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Ccircle cx='22' cy='22' r='1.4' fill='rgba(91%2C33%2C182%2C0.12)'/%3E%3C/svg%3E")`;
 
 interface HomePageProps { navigate: (to: string) => void; }
 
@@ -30,7 +45,7 @@ export function HomePage({ navigate }: HomePageProps) {
 
   const filtered = useMemo(() => TOOLS.filter(t => {
     const q = filters.search.toLowerCase();
-    const matchSearch = !q || t.name.toLowerCase().includes(q) || t.description.toLowerCase().includes(q) || t.tagline.toLowerCase().includes(q) || t.category.toLowerCase().includes(q);
+    const matchSearch = !q || t.name.toLowerCase().includes(q) || t.tagline.toLowerCase().includes(q) || t.category.toLowerCase().includes(q);
     const matchCat = filters.category === 'All' || t.category === filters.category;
     return matchSearch && matchCat;
   }), [filters]);
@@ -38,149 +53,215 @@ export function HomePage({ navigate }: HomePageProps) {
   const categories = ['All', 'Writing', 'Image', 'Video', 'Audio', 'Marketing', 'Design', 'Coding', 'Productivity'];
 
   return (
-    <div style={{ minHeight: '100vh', background: T.bg, fontFamily: "'DM Sans', sans-serif", color: T.text }}>
+    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
 
-      {/* Nav */}
-      <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(10,10,15,0.9)', backdropFilter: 'blur(20px)', borderBottom: `1px solid ${T.border}`, padding: '0 32px' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', height: 60, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <div style={{ width: 32, height: 32, borderRadius: 8, background: T.accent, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Zap size={16} color={T.bg} strokeWidth={2.5} />
-            </div>
-            <span style={{ fontWeight: 700, fontSize: 17, letterSpacing: '-0.01em' }}>
-              AI<span style={{ color: T.accent }}>Nexus</span>
+      {/* ── Nav — carousel bar style ────────────────────── */}
+      <nav style={{
+        position: 'sticky', top: 0, zIndex: 100,
+        background: C.barBg,
+        backdropFilter: 'blur(16px)',
+        borderBottom: `1px solid ${C.barBrd}`,
+        padding: '0 28px',
+      }}>
+        <div style={{ maxWidth: 1160, margin: '0 auto', height: 58, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          {/* Logo — left purple stripe + wordmark */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+            <div style={{ width: 4, height: 28, background: `linear-gradient(180deg, ${C.a1}, ${C.a2})`, borderRadius: 2, marginRight: 12 }} />
+            <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, letterSpacing: '-0.02em' }}>
+              AI<span style={{ color: C.a1 }}>Nexus</span>
+            </span>
+            <span style={{ marginLeft: 10, fontSize: 11, fontWeight: 600, letterSpacing: '0.12em', color: C.mut2, textTransform: 'uppercase' as const }}>
+              @ai.nexus.in
             </span>
           </div>
           <a href={SITE_CONFIG.instagramUrl} target="_blank" rel="noopener noreferrer"
-            style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 500, color: T.textDim, padding: '7px 14px', border: `1px solid ${T.border}`, borderRadius: 100 }}>
-            <Instagram size={13} /> Follow
+            style={{ display: 'flex', alignItems: 'center', gap: 7, fontSize: 13, fontWeight: 500, color: C.a1, padding: '7px 16px', border: `1.5px solid ${C.a1brd}`, borderRadius: 100, background: C.a1card, transition: 'all 0.15s' }}>
+            <Instagram size={13} /> Follow on Instagram
           </a>
         </div>
       </nav>
 
-      {/* Hero */}
-      <div style={{ padding: '88px 32px 80px', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', top: -80, left: '50%', transform: 'translateX(-50%)', width: 700, height: 400, background: 'radial-gradient(ellipse, rgba(0,229,160,0.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
-        <div style={{ maxWidth: 680, margin: '0 auto', textAlign: 'center', position: 'relative' }}>
+      {/* ── Hero ─────────────────────────────────────────── */}
+      <div style={{ position: 'relative', overflow: 'hidden', padding: '72px 28px 64px', borderBottom: `1px solid ${C.barBrd}`, background: C.surf }}>
+        {/* Dot pattern */}
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: DOT_PATTERN, opacity: 0.6, pointerEvents: 'none' }} />
+        {/* Concentric circles — exact from carousel slide 1 */}
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 700, height: 700, borderRadius: '50%', border: `1.5px solid rgba(91,33,182,.06)`, pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 450, height: 450, borderRadius: '50%', border: `1px solid rgba(6,182,212,.05)`, pointerEvents: 'none' }} />
+        {/* Glow orbs */}
+        <div style={{ position: 'absolute', top: -100, right: -100, width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(91,33,182,.07) 0%, transparent 70%)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', bottom: -80, left: -80, width: 360, height: 360, borderRadius: '50%', background: 'radial-gradient(circle, rgba(6,182,212,.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
 
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, border: `1px solid ${T.border}`, borderRadius: 100, padding: '5px 14px', marginBottom: 32, fontSize: 12, fontWeight: 600, color: T.accent, letterSpacing: '0.06em', textTransform: 'uppercase' as const, background: T.accentBg }}>
-            <span style={{ width: 6, height: 6, borderRadius: '50%', background: T.accent, display: 'inline-block' }} />
-            AI tools reviewed &amp; tested
+        <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 2 }}>
+          {/* Badge pill — carousel style */}
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg, ${C.a1}, ${C.a2})`, borderRadius: 100, padding: '7px 20px', marginBottom: 28 }}>
+            <span style={{ fontSize: 13, fontWeight: 600, color: '#fff', fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '0.04em' }}>
+              AI tools reviewed &amp; tested
+            </span>
           </div>
 
-          <h1 style={{ margin: '0 0 24px' }}>
-            <span style={{ display: 'block', fontFamily: "'Instrument Serif', serif", fontStyle: 'italic' as const, fontSize: 'clamp(48px, 7vw, 72px)', color: T.text, fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
-              The best AI tools,
-            </span>
-            <span style={{ display: 'block', fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 'clamp(48px, 7vw, 72px)', color: T.accent, lineHeight: 1.05, letterSpacing: '-0.04em' }}>
-              honest reviews.
-            </span>
+          {/* Headline — Space Grotesk, carousel style */}
+          <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 'clamp(40px, 6vw, 58px)', lineHeight: 1.08, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.03em' }}>
+            The best AI tools,
+          </h1>
+          <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 'clamp(40px, 6vw, 58px)', lineHeight: 1.08, color: C.a1, margin: '0 0 24px', letterSpacing: '-0.03em' }}>
+            honest reviews.
           </h1>
 
-          <p style={{ fontSize: 17, lineHeight: 1.7, color: T.textDim, margin: '0 0 10px', maxWidth: 500, marginLeft: 'auto', marginRight: 'auto' }}>
-            I personally test every tool. Every card links directly to a <strong style={{ color: T.text, fontWeight: 600 }}>free trial</strong> — no gatekeeping.
+          <p style={{ fontSize: 17, lineHeight: 1.7, color: C.mut, margin: '0 0 8px', fontWeight: 300 }}>
+            I personally test every tool on this list. Every card links to a <strong style={{ color: C.txt, fontWeight: 600 }}>free trial</strong>.
           </p>
-          <p style={{ fontSize: 13, color: T.muted, margin: '0 0 40px' }}>
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 36px', fontWeight: 300, letterSpacing: '0.02em' }}>
             Affiliate links — I earn a small commission if you upgrade, at no cost to you.
           </p>
 
-          <div style={{ position: 'relative', maxWidth: 480, margin: '0 auto' }}>
-            <Search size={16} style={{ position: 'absolute', left: 18, top: '50%', transform: 'translateY(-50%)', color: T.subtle, pointerEvents: 'none' as const }} />
-            <input type="text" placeholder="Search tools — writing, video, audio..."
+          {/* Search */}
+          <div style={{ position: 'relative', maxWidth: 460, margin: '0 auto' }}>
+            <Search size={15} style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%)', color: C.mut2, pointerEvents: 'none' as const }} />
+            <input
+              type="text"
+              placeholder="Search tools — writing, video, audio..."
               value={filters.search}
               onChange={e => setFilters(f => ({ ...f, search: e.target.value }))}
-              style={{ width: '100%', paddingLeft: 48, paddingRight: 20, height: 50, border: `1.5px solid ${T.border}`, borderRadius: 14, fontSize: 15, outline: 'none', boxSizing: 'border-box' as const, fontFamily: "'DM Sans', sans-serif", background: T.surface, color: T.text }}
-              onFocus={e => (e.target.style.borderColor = T.accent)}
-              onBlur={e => (e.target.style.borderColor = T.border)}
+              style={{ width: '100%', paddingLeft: 44, paddingRight: 16, height: 48, border: `1.5px solid ${C.a1brd}`, borderRadius: 12, fontSize: 15, outline: 'none', boxSizing: 'border-box' as const, fontFamily: "'DM Sans', sans-serif", background: C.surf, color: C.txt, transition: 'border-color 0.15s' }}
+              onFocus={e => (e.target.style.borderColor = C.a1)}
+              onBlur={e => (e.target.style.borderColor = C.a1brd)}
             />
           </div>
         </div>
       </div>
 
-      {/* Content */}
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px 100px' }}>
+      {/* ── Category + Grid ──────────────────────────────── */}
+      <div style={{ maxWidth: 1160, margin: '0 auto', padding: '32px 28px 96px' }}>
 
-        {/* Category filters */}
-        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' as const, marginBottom: 40, paddingBottom: 32, borderBottom: `1px solid ${T.border}` }}>
+        {/* Category pills */}
+        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' as const, marginBottom: 32 }}>
           {categories.map(cat => {
             const active = filters.category === cat;
-            const cc = CAT_COLOR[cat] || T.accent;
+            const isA2 = CAT_ACCENT[cat] === 'a2';
+            const activeColor = isA2 ? C.a2 : C.a1;
+            const activeBg = isA2 ? C.a2card : C.a1card;
+            const activeBrd = isA2 ? C.a2brd : C.a1brd;
             return (
               <button key={cat}
                 onClick={() => setFilters(f => ({ ...f, category: cat as any }))}
-                style={{ padding: '7px 16px', borderRadius: 100, fontSize: 13, fontWeight: 600, border: `1px solid ${active ? cc : T.border}`, background: active ? cc + '18' : 'transparent', color: active ? cc : T.textDim, fontFamily: "'DM Sans', sans-serif", transition: 'all 0.15s' }}
+                style={{ padding: '7px 18px', borderRadius: 100, fontSize: 13, fontWeight: 500, fontFamily: "'DM Sans', sans-serif", border: `1.5px solid ${active ? activeBrd : 'rgba(15,15,26,.12)'}`, background: active ? activeBg : 'transparent', color: active ? activeColor : C.mut, transition: 'all 0.15s' }}
               >{cat}</button>
             );
           })}
         </div>
 
-        <p style={{ fontSize: 13, color: T.subtle, marginBottom: 28, fontWeight: 500 }}>
-          {filtered.length} tool{filtered.length !== 1 ? 's' : ''}{filters.category !== 'All' ? ` in ${filters.category}` : ''}
+        <p style={{ fontSize: 12, color: C.mut2, marginBottom: 24, fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase' as const }}>
+          {filtered.length} tool{filtered.length !== 1 ? 's' : ''}{filters.category !== 'All' ? ` · ${filters.category}` : ''}
         </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 2 }}>
-          {filtered.map((tool, i) => <ToolCard key={tool.id} tool={tool} navigate={navigate} />)}
+        {/* Tool grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(330px, 1fr))', gap: 14 }}>
+          {filtered.map(tool => <ToolCard key={tool.id} tool={tool} navigate={navigate} />)}
         </div>
 
         {filtered.length === 0 && (
           <div style={{ textAlign: 'center', padding: '80px 0' }}>
-            <p style={{ fontSize: 17, color: T.textDim, marginBottom: 16 }}>No results for "{filters.search}"</p>
+            <p style={{ fontSize: 16, color: C.mut, marginBottom: 14 }}>No results for "{filters.search}"</p>
             <button onClick={() => setFilters({ search: '', category: 'All' as any })}
-              style={{ color: T.accent, background: 'none', border: `1px solid ${T.border}`, borderRadius: 100, padding: '8px 20px', fontSize: 14, fontWeight: 600, fontFamily: "'DM Sans', sans-serif" }}>
+              style={{ color: C.a1, border: `1.5px solid ${C.a1brd}`, borderRadius: 100, padding: '8px 20px', fontSize: 13, fontWeight: 500, fontFamily: "'DM Sans', sans-serif", background: C.a1card }}>
               Clear filter
             </button>
           </div>
         )}
       </div>
 
-      {/* Footer */}
-      <footer style={{ borderTop: `1px solid ${T.border}`, padding: '48px 32px', textAlign: 'center', background: T.surface }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginBottom: 12 }}>
-          <div style={{ width: 28, height: 28, borderRadius: 7, background: T.accent, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Zap size={14} color={T.bg} />
-          </div>
-          <span style={{ fontWeight: 700, fontSize: 16 }}>AI<span style={{ color: T.accent }}>Nexus</span></span>
+      {/* ── Footer — carousel bar style ──────────────────── */}
+      <footer style={{ background: C.barBg, borderTop: `1px solid ${C.barBrd}`, padding: '40px 28px', textAlign: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginBottom: 10 }}>
+          <div style={{ width: 4, height: 24, background: `linear-gradient(180deg, ${C.a1}, ${C.a2})`, borderRadius: 2 }} />
+          <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 16, color: C.txt }}>AI<span style={{ color: C.a1 }}>Nexus</span></span>
+          <span style={{ fontSize: 12, color: C.mut2, letterSpacing: '0.08em' }}>@ai.nexus.in</span>
         </div>
-        <p style={{ color: T.subtle, fontSize: 13, margin: '0 0 20px', maxWidth: 360, marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.6 }}>
+        <p style={{ color: C.mut2, fontSize: 13, margin: '0 0 16px', maxWidth: 380, marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.6 }}>
           I test every AI tool personally. Affiliate links help keep the reviews free.
         </p>
         <a href={SITE_CONFIG.instagramUrl} target="_blank" rel="noopener noreferrer"
-          style={{ display: 'inline-flex', alignItems: 'center', gap: 7, color: T.textDim, fontSize: 13, fontWeight: 500, border: `1px solid ${T.border}`, padding: '8px 18px', borderRadius: 100 }}>
-          <Instagram size={13} /> @ainexustools
+          style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: C.a1, fontSize: 13, fontWeight: 500, border: `1.5px solid ${C.a1brd}`, padding: '8px 16px', borderRadius: 100, background: C.a1card }}>
+          <Instagram size={13} /> Follow @ai.nexus.in
         </a>
-        <p style={{ color: T.muted, fontSize: 12, marginTop: 24 }}>© {new Date().getFullYear()} AI Nexus</p>
+        <p style={{ color: C.mut2, fontSize: 11, marginTop: 20 }}>© {new Date().getFullYear()} AI Nexus</p>
       </footer>
     </div>
   );
 }
 
+// ── Tool Card — carousel card DNA ─────────────────────────
 function ToolCard({ tool, navigate }: { tool: Tool; navigate: (to: string) => void }) {
   const [hovered, setHovered] = useState(false);
-  const cc = CAT_COLOR[tool.category] || T.accent;
-  const badge = tool.userBadge ? (BADGE_STYLE[tool.userBadge] || { bg: T.accentBg, color: T.accent }) : null;
+  const isA2 = CAT_ACCENT[tool.category] === 'a2';
+  const cardBg  = isA2 ? C.a2card  : C.a1card;
+  const cardBrd = isA2 ? C.a2brd   : C.a1brd;
+  const accent  = isA2 ? C.a2      : C.a1;
+  const badge   = tool.userBadge ? (BADGE_COLORS[tool.userBadge] || { bg: C.a1card, color: C.a1 }) : null;
 
   return (
-    <div onClick={() => navigate(`/tools/${tool.slug}`)}
+    <div
+      onClick={() => navigate(`/tools/${tool.slug}`)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      style={{ background: hovered ? T.surface : 'transparent', border: `1px solid ${hovered ? T.borderHover : T.border}`, borderRadius: 16, padding: '24px 26px 20px', cursor: 'pointer', transition: 'all 0.18s', transform: hovered ? 'translateY(-2px)' : 'none', position: 'relative', overflow: 'hidden' }}
+      style={{
+        background: hovered ? cardBg : C.surf,
+        border: `1.5px solid ${hovered ? (isA2 ? C.a2brd : C.a1brd) : 'rgba(15,15,26,.1)'}`,
+        borderRadius: 16,
+        padding: '22px 22px 18px',
+        cursor: 'pointer',
+        transition: 'all 0.18s',
+        transform: hovered ? 'translateY(-2px)' : 'none',
+        boxShadow: hovered ? `0 8px 28px rgba(91,33,182,.1)` : '0 1px 4px rgba(15,15,26,.04)',
+        position: 'relative',
+        overflow: 'hidden',
+      }}
     >
-      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: cc, opacity: hovered ? 1 : 0, transition: 'opacity 0.18s', borderRadius: '16px 16px 0 0' }} />
+      {/* Left accent stripe — exact carousel signature */}
+      <div style={{
+        position: 'absolute', left: 0, top: 0, bottom: 0, width: 3,
+        background: `linear-gradient(180deg, ${C.a1}, ${C.a2})`,
+        borderRadius: '16px 0 0 16px',
+        opacity: hovered ? 1 : 0.4,
+        transition: 'opacity 0.18s',
+      }} />
 
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
-        <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase' as const, color: cc, background: cc + '15', padding: '3px 10px', borderRadius: 100 }}>{tool.category}</span>
-        <div style={{ color: hovered ? cc : T.subtle, transition: 'color 0.15s' }}><ArrowUpRight size={16} /></div>
+      {/* Top row */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12, paddingLeft: 8 }}>
+        <span style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: accent, background: isA2 ? C.a2card : C.a1card, border: `1px solid ${isA2 ? C.a2brd : C.a1brd}`, padding: '3px 10px', borderRadius: 100, fontFamily: "'Space Grotesk', sans-serif" }}>
+          {tool.category}
+        </span>
+        <div style={{ color: hovered ? accent : 'rgba(15,15,26,.2)', transition: 'color 0.15s' }}>
+          <ArrowRight size={16} />
+        </div>
       </div>
 
-      <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 20, color: T.text, margin: '0 0 5px', lineHeight: 1.2, letterSpacing: '-0.02em' }}>{tool.name}</h3>
+      {/* Tool name */}
+      <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 20, color: C.txt, margin: '0 0 5px', lineHeight: 1.2, letterSpacing: '-0.02em', paddingLeft: 8 }}>
+        {tool.name}
+      </h3>
 
-      <p style={{ fontSize: 13, fontWeight: 500, color: cc, margin: '0 0 10px', lineHeight: 1.4 }}>{tool.tagline}</p>
+      {/* Tagline */}
+      <p style={{ fontSize: 13, fontWeight: 500, color: accent, margin: '0 0 10px', lineHeight: 1.4, paddingLeft: 8 }}>
+        {tool.tagline}
+      </p>
 
-      <p style={{ fontSize: 13, color: T.textDim, margin: '0 0 20px', lineHeight: 1.6, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{tool.description}</p>
+      {/* Description */}
+      <p style={{ fontSize: 13, color: C.mut, margin: '0 0 18px', lineHeight: 1.6, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', paddingLeft: 8, fontWeight: 300 }}>
+        {tool.description}
+      </p>
 
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 14, borderTop: `1px solid ${T.border}` }}>
-        {tool.pricing && <span style={{ fontSize: 13, fontWeight: 600, color: T.textDim }}>{tool.pricing}</span>}
-        {badge && tool.userBadge && <span style={{ fontSize: 11, fontWeight: 700, background: badge.bg, color: badge.color, padding: '3px 10px', borderRadius: 100 }}>{tool.userBadge}</span>}
+      {/* Bottom */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 12, paddingLeft: 8, borderTop: '1px solid rgba(15,15,26,.07)' }}>
+        {tool.pricing && (
+          <span style={{ fontSize: 13, fontWeight: 600, color: C.mut }}>{tool.pricing}</span>
+        )}
+        {badge && tool.userBadge && (
+          <span style={{ fontSize: 11, fontWeight: 600, background: badge.bg, color: badge.color, padding: '3px 10px', borderRadius: 100, fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '0.03em' }}>
+            {tool.userBadge}
+          </span>
+        )}
       </div>
     </div>
   );
