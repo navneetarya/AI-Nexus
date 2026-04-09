@@ -101,11 +101,9 @@ export function HomePage({ navigate }: HomePageProps) {
           </div>
 
           {/* Headline — Space Grotesk, carousel style */}
-          <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 'clamp(40px, 6vw, 58px)', lineHeight: 1.08, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.03em' }}>
-            The best AI tools,
-          </h1>
-          <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 'clamp(40px, 6vw, 58px)', lineHeight: 1.08, color: C.a1, margin: '0 0 24px', letterSpacing: '-0.03em' }}>
-            honest reviews.
+          <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 'clamp(38px, 6vw, 56px)', lineHeight: 1.1, color: C.txt, margin: '0 0 24px', letterSpacing: '-0.03em' }}>
+            The best AI tools,{' '}
+            <span style={{ color: C.a1 }}>honest reviews.</span>
           </h1>
 
           <p style={{ fontSize: 17, lineHeight: 1.7, color: C.mut, margin: '0 0 8px', fontWeight: 300 }}>
@@ -185,7 +183,11 @@ export function HomePage({ navigate }: HomePageProps) {
           style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: C.a1, fontSize: 13, fontWeight: 500, border: `1.5px solid ${C.a1brd}`, padding: '8px 16px', borderRadius: 100, background: C.a1card }}>
           <Instagram size={13} /> Follow @ai.nexus.in
         </a>
-        <p style={{ color: C.mut2, fontSize: 11, marginTop: 20 }}>© {new Date().getFullYear()} AI Nexus</p>
+        <div style={{ display: 'flex', gap: 20, justifyContent: 'center', marginTop: 16 }}>
+          <button onClick={() => navigate('/about')} style={{ fontSize: 12, color: C.mut2, fontFamily: "'DM Sans', sans-serif", fontWeight: 400 }}>About</button>
+          <button onClick={() => navigate('/disclosure')} style={{ fontSize: 12, color: C.mut2, fontFamily: "'DM Sans', sans-serif", fontWeight: 400 }}>Affiliate Disclosure</button>
+        </div>
+        <p style={{ color: C.mut2, fontSize: 11, marginTop: 12 }}>© {new Date().getFullYear()} AI Nexus</p>
       </footer>
     </div>
   );

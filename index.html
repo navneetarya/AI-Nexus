@@ -4,44 +4,90 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Nexus — Best AI Tools Reviewed 2026</title>
-    <meta name="description" content="Honest reviews of the best AI tools. Every tool tested personally. Every link is a free trial." />
+
+    <!-- Default meta — JS overwrites per-page before paint -->
+    <title>AI Nexus — Best AI Tools Reviewed &amp; Ranked 2026</title>
+    <meta name="description" content="Honest reviews of the best AI tools for writing, video, image, audio and productivity. Every tool personally tested. Every link is a free trial." />
     <link rel="canonical" href="https://ainexus-tools.netlify.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Nexus" />
+    <meta property="og:url" content="https://ainexus-tools.netlify.app/" />
     <meta property="og:title" content="AI Nexus — Best AI Tools Reviewed 2026" />
     <meta property="og:description" content="Honest reviews of the best AI tools. Every link is a free trial." />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ainexus-tools.netlify.app/og-image.png" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AI Nexus","url":"https://ainexus-tools.netlify.app"}</script>
-    <!-- Space Grotesk (carousel headings) + DM Sans (carousel body) — exact fonts from carousel -->
+    <meta name="twitter:site" content="@ainexustools" />
+    <meta name="twitter:title" content="AI Nexus — Best AI Tools Reviewed 2026" />
+    <meta name="twitter:description" content="Honest reviews of the best AI tools. Every link is a free trial." />
+    <meta name="twitter:image" content="https://ainexus-tools.netlify.app/og-image.png" />
+
+    <!-- Indexing signals -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Schema: WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AI Nexus",
+      "url": "https://ainexus-tools.netlify.app",
+      "description": "Honest reviews of the best AI tools. Every tool personally tested.",
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://ainexus-tools.netlify.app/?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AI Nexus",
+        "url": "https://ainexus-tools.netlify.app",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ainexus-tools.netlify.app/logo.png"
+        },
+        "sameAs": ["https://instagram.com/ainexustools"]
+      }
+    }
+    </script>
+
+    <!-- Schema: Person (author — E-E-A-T) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "AI Nexus",
+      "url": "https://ainexus-tools.netlify.app/about",
+      "sameAs": ["https://instagram.com/ainexustools"],
+      "knowsAbout": ["Artificial Intelligence", "AI Tools", "Productivity Software", "Content Creation"]
+    }
+    </script>
+
+    <!-- Fonts: Space Grotesk + DM Sans — exact carousel fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
     <style>
       :root {
-        --bg: #F5F4FF;
-        --surf: #FFFFFF;
-        --a1: #5B21B6;
-        --a2: #06B6D4;
-        --txt: #0F0F1A;
-        --mut: rgba(15,15,26,.66);
-        --mut2: rgba(15,15,26,.38);
-        --a1-glow: rgba(91,33,182,.10);
-        --a1-card: rgba(91,33,182,.065);
-        --a1-border: rgba(91,33,182,.18);
-        --a2-card: rgba(6,182,212,.065);
-        --a2-border: rgba(6,182,212,.18);
-        --bar-bg: rgba(245,244,255,.97);
-        --bar-border: rgba(91,33,182,.13);
+        --bg:#F5F4FF; --surf:#FFFFFF; --a1:#5B21B6; --a2:#06B6D4;
+        --txt:#0F0F1A; --mut:rgba(15,15,26,.66); --mut2:rgba(15,15,26,.38);
+        --a1-card:rgba(91,33,182,.065); --a1-brd:rgba(91,33,182,.18);
+        --a2-card:rgba(6,182,212,.065); --a2-brd:rgba(6,182,212,.18);
+        --bar-bg:rgba(245,244,255,.97); --bar-brd:rgba(91,33,182,.13);
       }
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       html { font-size: 16px; scroll-behavior: smooth; }
-      body {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-family: 'DM Sans', sans-serif;
-        background: var(--bg);
-        color: var(--txt);
-      }
+      body { -webkit-font-smoothing: antialiased; font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--txt); }
       a { text-decoration: none; color: inherit; }
       button { font-family: inherit; cursor: pointer; border: none; background: none; }
       img, svg { display: block; }
