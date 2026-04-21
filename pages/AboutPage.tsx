@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Instagram, CheckCircle } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Mail, Twitter, ExternalLink } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 
 const C = {
@@ -12,82 +12,154 @@ const C = {
 const DOT_BG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Ccircle cx='22' cy='22' r='1.4' fill='rgba(91%2C33%2C182%2C0.1)'/%3E%3C/svg%3E")`;
 
 export function AboutPage({ navigate }: { navigate: (to: string) => void }) {
+
+  const authorSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": SITE_CONFIG.authorName,
+    "url": `${SITE_CONFIG.siteUrl}/about`,
+    "description": SITE_CONFIG.authorBio,
+    "knowsAbout": ["Artificial Intelligence", "AI Tools", "Content Creation", "Podcast Software", "Productivity Software", "Writing Tools"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "AI Nexus",
+      "url": SITE_CONFIG.siteUrl
+    }
+  };
+
   return (
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
+
       <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: C.barBg, backdropFilter: 'blur(16px)', borderBottom: `1px solid ${C.barBrd}`, padding: '0 28px' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', height: 58, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <button onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 7, color: C.mut, fontSize: 14, fontWeight: 500 }}>
             <ArrowLeft size={15} /> All tools
           </button>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+          <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
             <div style={{ width: 3, height: 22, background: `linear-gradient(180deg,${C.a1},${C.a2})`, borderRadius: 2, marginRight: 10 }} />
-            <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 16 }}>AI<span style={{ color: C.a1 }}>Nexus</span></span>
+            <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 16 }}>AI<span style={{ color: C.a1 }}>Nexus</span></span>
           </div>
         </div>
       </nav>
 
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '48px 28px 80px' }}>
 
-        {/* Hero */}
-        <div style={{ background: C.surf, borderRadius: 20, border: `1.5px solid ${C.a1brd}`, padding: '40px', marginBottom: 20, position: 'relative', overflow: 'hidden' }}>
+        {/* Author hero card */}
+        <div style={{ background: C.surf, borderRadius: 20, border: `1.5px solid ${C.a1brd}`, padding: '40px', marginBottom: 16, position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 6, background: `linear-gradient(180deg,${C.a1},${C.a2})` }} />
           <div style={{ position: 'absolute', inset: 0, backgroundImage: DOT_BG, opacity: 0.4, pointerEvents: 'none' }} />
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Space Grotesk',sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100, marginBottom: 18 }}>ABOUT</span>
-            <h1 style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(28px,5vw,40px)', color: C.txt, margin: '0 0 16px', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
-              Who tests these AI tools?
-            </h1>
-            <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-              AI Nexus is run by a solo creator based in India who got frustrated with AI tool reviews that were clearly written by people who had never actually opened the product.
+            <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Space Grotesk', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100, marginBottom: 18 }}>ABOUT THE REVIEWER</span>
+
+            {/* Author identity */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 20 }}>
+              <div style={{ width: 64, height: 64, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 22, color: '#fff', flexShrink: 0 }}>
+                NA
+              </div>
+              <div>
+                <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 'clamp(22px,4vw,32px)', color: C.txt, margin: '0 0 4px', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
+                  {SITE_CONFIG.authorName}
+                </h1>
+                <div style={{ fontSize: 13, color: C.mut2 }}>Founder, AI Nexus · India</div>
+              </div>
+            </div>
+
+            <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
+              {SITE_CONFIG.authorBio}
             </p>
-            <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-              Every tool on this site has been personally signed up for, tested with real tasks, and used for at least one week before being reviewed. The pros and cons come from actual experience, not from copying the marketing page.
+            <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
+              I built AI Nexus because every "best AI tools" article I found was clearly written by someone who had never actually opened the products. Review sites were copying marketing pages and calling it a review. I got frustrated and decided to build something where every single review comes from real, personal usage.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>
-              The Instagram account <strong style={{ color: C.txt }}>@ai.nexus.in</strong> shares the same honest takes in carousel format — if you found this site from Instagram, that's exactly the same voice you're reading here.
+              Every tool on this site has been signed up for, tested on real work tasks, and used for at least 2–4 weeks before I write about it. I focus on what works for <strong style={{ color: C.txt }}>solo creators, freelancers, and small teams in India</strong> — not enterprise buyers with unlimited budgets.
             </p>
+
+            {/* Contact row */}
+            <div style={{ display: 'flex', gap: 10, marginTop: 20, flexWrap: 'wrap' as const }}>
+              <a href={`mailto:${SITE_CONFIG.email}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 500, color: C.a1, padding: '7px 16px', border: `1.5px solid ${C.a1brd}`, borderRadius: 100, background: C.a1card, textDecoration: 'none' }}>
+                <Mail size={13} /> {SITE_CONFIG.email}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Credentials & what I've tested */}
+        <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
+            What I've actually tested
+          </h2>
+          <p style={{ fontSize: 14, color: C.mut2, margin: '0 0 20px', fontWeight: 300 }}>Updated April 2026</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 10 }}>
+            {[
+              ['Writing tools', '12+ tools tested', C.a1],
+              ['AI image tools', '8+ tools tested', C.a2],
+              ['Video AI tools', '7+ tools tested', C.a1],
+              ['Podcast & audio', '6+ tools tested', C.a2],
+              ['Productivity apps', '9+ tools tested', C.a1],
+              ['Marketing tools', '5+ tools tested', C.a2],
+              ['Coding platforms', '4+ tools tested', C.a1],
+              ['Design tools', '6+ tools tested', C.a2],
+            ].map(([cat, count, color], i) => (
+              <div key={i} style={{ padding: '14px 16px', borderRadius: 12, background: `${color}08`, border: `1px solid ${color}20` }}>
+                <div style={{ fontSize: 13, fontWeight: 600, color: C.txt, marginBottom: 3 }}>{cat}</div>
+                <div style={{ fontSize: 12, color: color, fontWeight: 500 }}>{count}</div>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Review process */}
-        <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 16 }}>
-          <h2 style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 18px', letterSpacing: '-0.02em' }}>
+        <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 18px', letterSpacing: '-0.02em' }}>
             How every review is done
           </h2>
           {[
-            ['Sign up on the free plan', 'Every tool is tested starting from the free tier — because that\'s where most people start.'],
-            ['Use it for real tasks', 'Not demo tasks. Real work — writing actual content, editing actual images, creating actual videos.'],
-            ['Test for at least 7 days', 'First impressions are often wrong. Tools need a week to reveal their real strengths and weaknesses.'],
-            ['Document what breaks', 'The "cons" sections are where most review sites fail. I specifically look for what frustrates me.'],
-            ['Check the affiliate program', 'Only tools with direct affiliate programs (no PartnerStack middleman) are listed. This keeps the model simple.'],
+            ['1. Sign up on the free plan', 'Every tool is tested starting from the free tier — because that\'s where most creators and small businesses start. If the free plan is terrible, I say so.'],
+            ['2. Use it for real tasks', 'Not demo tasks. Real work: writing actual blog posts, editing actual podcast audio, creating actual social media captions, building actual code projects.'],
+            ['3. Test for at least 2–4 weeks', 'First impressions are almost always wrong. Tools need time to reveal their real strengths and their real weaknesses. Most negative experiences happen after week 1.'],
+            ['4. Document what breaks or frustrates', 'The "cons" sections are where most review sites fail. I specifically push tools to their limits and document what frustrates me.'],
+            ['5. Compare against direct competitors', 'I run the same task on 2–3 competing tools. The comparison tables on each review page come from actual side-by-side testing.'],
+            ['6. Check the affiliate program separately', 'I evaluate the tool first, then check if it has an affiliate program. The review is never shaped by whether I earn commission. I have negative things to say about tools I earn from.'],
           ].map(([title, desc], i) => (
-            <div key={i} style={{ display: 'flex', gap: 12, marginBottom: 16, alignItems: 'flex-start' }}>
-              <div style={{ width: 28, height: 28, borderRadius: '50%', background: C.a1card, border: `1px solid ${C.a1brd}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 1 }}>
+            <div key={i} style={{ display: 'flex', gap: 12, marginBottom: 18, alignItems: 'flex-start' }}>
+              <div style={{ width: 28, height: 28, borderRadius: '50%', background: C.a1card, border: `1px solid ${C.a1brd}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
                 <CheckCircle size={14} color={C.a1} />
               </div>
               <div>
-                <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, marginBottom: 3 }}>{title}</div>
-                <div style={{ fontSize: 14, color: C.mut, lineHeight: 1.6, fontWeight: 300 }}>{desc}</div>
+                <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, marginBottom: 4 }}>{title}</div>
+                <div style={{ fontSize: 14, color: C.mut, lineHeight: 1.65, fontWeight: 300 }}>{desc}</div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Transparency */}
+        {/* Affiliate transparency */}
         <div style={{ background: 'rgba(91,33,182,.04)', borderRadius: 16, border: `1.5px solid ${C.a1brd}`, padding: '22px 26px', marginBottom: 16 }}>
-          <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 14, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Full transparency</div>
-          <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.7, fontWeight: 300 }}>
-            This site earns money through affiliate links. When you click a link and sign up for a paid plan, I earn a small commission — typically 20–30% of the first payment. This does not affect the review. Tools are rated honestly even when I earn from them. See the <a href="/disclosure" onClick={e => { e.preventDefault(); navigate('/disclosure'); }} style={{ color: C.a1, fontWeight: 500 }}>full affiliate disclosure →</a>
+          <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 14, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Full transparency on how this site earns money</div>
+          <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 10 }}>
+            This site earns money through affiliate commissions. When you click a link and sign up for a paid plan, I earn a commission — typically 20–30% of the subscription payment, recurring. This does not affect my reviews. I recommend tools because they're genuinely good, not because the commission is high.
+          </p>
+          <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>
+            I only list tools that I have personally tested and would recommend to a friend. I have turned down sponsorships from tools that I don't think are worth recommending.{' '}
+            <a href="/disclosure" onClick={e => { e.preventDefault(); navigate('/disclosure'); }} style={{ color: C.a1, fontWeight: 500 }}>Read the full affiliate disclosure →</a>
           </p>
         </div>
 
-        {/* Instagram CTA */}
-        <div style={{ textAlign: 'center', padding: '20px 0' }}>
-          <a href={SITE_CONFIG.instagramUrl} target="_blank" rel="noopener noreferrer"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Space Grotesk',sans-serif", textDecoration: 'none' }}>
-            <Instagram size={15} /> Follow @ai.nexus.in on Instagram
+        {/* Contact / collab */}
+        <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '24px 28px', textAlign: 'center' as const }}>
+          <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, marginBottom: 8 }}>Want to get in touch?</div>
+          <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.65, marginBottom: 16, maxWidth: 420, margin: '0 auto 16px' }}>
+            If you have a question about a tool I've reviewed, a suggestion for a tool I should test, or want to flag something inaccurate — email me.
+          </p>
+          <a href={`mailto:${SITE_CONFIG.email}`}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Space Grotesk', sans-serif", textDecoration: 'none' }}>
+            <Mail size={14} /> {SITE_CONFIG.email}
           </a>
         </div>
+
       </div>
     </div>
   );
