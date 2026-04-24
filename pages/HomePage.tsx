@@ -102,7 +102,7 @@ export function HomePage({ navigate }: HomePageProps) {
           </p>
           <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 36px', fontWeight: 300 }}>
             Affiliate links — I earn a small commission if you upgrade, at no cost to you.{' '}
-            <a href="/disclosure" onClick={e => { e.preventDefault(); }} style={{ color: C.a1 }}>Full disclosure</a>
+            <a href="/disclosure" onClick={e => { e.preventDefault(); navigate('/disclosure'); }} style={{ color: C.a1 }}>Full disclosure</a>
           </p>
 
           <div style={{ position: 'relative', maxWidth: 460, margin: '0 auto' }}>
