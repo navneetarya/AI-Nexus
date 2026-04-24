@@ -91,12 +91,6 @@ export function HomePage({ navigate }: HomePageProps) {
         <div style={{ position: 'absolute', bottom: -80, left: -80, width: 360, height: 360, borderRadius: '50%', background: 'radial-gradient(circle, rgba(6,182,212,.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
 
         <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 2 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg, ${C.a1}, ${C.a2})`, borderRadius: 100, padding: '7px 20px', marginBottom: 28 }}>
-            <span style={{ fontSize: 13, fontWeight: 600, color: '#fff', fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '0.04em' }}>
-              {TOOLS.length} AI tools reviewed & tested personally
-            </span>
-          </div>
-
           <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 'clamp(38px, 6vw, 56px)', lineHeight: 1.1, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.03em' }}>
             The best AI tools,{' '}
             <span style={{ color: C.a1 }}>honest reviews.</span>
@@ -207,7 +201,7 @@ export function HomePage({ navigate }: HomePageProps) {
           <span style={{ fontSize: 12, color: C.mut2 }}>by {SITE_CONFIG.authorName}</span>
         </div>
         <p style={{ color: C.mut2, fontSize: 13, margin: '0 0 8px', maxWidth: 460, marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.6 }}>
-          {TOOLS.length} AI tools tested personally. Affiliate links help keep reviews free and honest.
+          Affiliate links help keep reviews free and honest.
         </p>
         <a href={`mailto:${SITE_CONFIG.email}`}
           style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: C.a1, fontSize: 13, fontWeight: 500, border: `1.5px solid ${C.a1brd}`, padding: '8px 16px', borderRadius: 100, background: C.a1card, textDecoration: 'none', marginBottom: 16 }}>

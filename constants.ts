@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   authorBio: "I've been testing AI tools since 2022 across writing, audio, video, design, and productivity. Based in India, I focus on what actually works for solo creators and small teams — not enterprise buyers.",
   authorExperience: "2+ years testing AI tools",
   siteUrl: "https://ainexus-tools.netlify.app",
-  email: "hello@ainexus.tools",
+  email: "navneetarya1989@gmail.com",
   twitterUrl: "https://twitter.com/ainexustools",
   newsletterNote: "No spam — just honest AI tool reviews, once a week.",
 };
