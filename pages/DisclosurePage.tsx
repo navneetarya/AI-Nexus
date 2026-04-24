@@ -31,7 +31,7 @@ export function DisclosurePage({ navigate }: { navigate: (to: string) => void })
               ['Does this affect our reviews?', 'No. Tools are reviewed based on personal testing and honest assessment. We have written negative reviews of tools that have affiliate programs, and positive reviews of tools where we earn no commission. The affiliate relationship does not influence the content of any review.'],
               ['Which tools have affiliate links?', 'All tools listed on this site have direct affiliate programs. We only list tools where we can earn a commission directly from the tool\'s own affiliate program — not through third-party networks. This is disclosed on every tool page.'],
               ['Compliance', 'This disclosure complies with the FTC guidelines on endorsements and testimonials, and the Advertising Standards Council of India (ASCI) guidelines for digital influencers.'],
-              ['Contact', 'If you have any questions about our affiliate relationships, contact us at hello@ainexus.tools'],
+              ['Contact', 'If you have any questions about our affiliate relationships, contact us at navneetarya1989@gmail.com'],
             ].map(([heading, body], i) => (
               <div key={i} style={{ marginBottom: 24 }}>
                 <h2 style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, margin: '0 0 8px' }}>{heading}</h2>
