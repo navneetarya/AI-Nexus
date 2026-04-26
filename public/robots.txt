@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ainexus-tools.netlify.app/sitemap.xml
+Sitemap: https://ainexustools.online/sitemap.xml

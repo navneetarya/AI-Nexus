@@ -8,16 +8,16 @@
     <!-- Default meta — JS overwrites per-page before paint -->
     <title>AI Nexus — Best AI Tools Reviewed &amp; Ranked 2026 by Navneet Arya</title>
     <meta name="description" content="Honest reviews of the best AI tools for writing, podcasting, social media, coding and productivity. Every tool personally tested by Navneet Arya. Every link is a free trial." />
-    <link rel="canonical" href="https://ainexus-tools.netlify.app/" />
+    <link rel="canonical" href="https://ainexustools.online/" />
     <meta name="author" content="Navneet Arya" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AI Nexus" />
-    <meta property="og:url" content="https://ainexus-tools.netlify.app/" />
+    <meta property="og:url" content="https://ainexustools.online/" />
     <meta property="og:title" content="AI Nexus — Best AI Tools Reviewed 2026 by Navneet Arya" />
     <meta property="og:description" content="Honest AI tool reviews by someone who actually uses them. Every link is a free trial." />
-    <meta property="og:image" content="https://ainexus-tools.netlify.app/og-image.png" />
+    <meta property="og:image" content="https://ainexustools.online/og-image.png" />
     <meta property="og:locale" content="en_IN" />
 
     <!-- Twitter -->
@@ -26,7 +26,7 @@
     <meta name="twitter:creator" content="@ainexustools" />
     <meta name="twitter:title" content="AI Nexus — Best AI Tools Reviewed 2026" />
     <meta name="twitter:description" content="Honest AI tool reviews by someone who actually uses them. Every link is a free trial." />
-    <meta name="twitter:image" content="https://ainexus-tools.netlify.app/og-image.png" />
+    <meta name="twitter:image" content="https://ainexustools.online/og-image.png" />
 
     <!-- Indexing -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -38,21 +38,21 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "AI Nexus",
-      "url": "https://ainexus-tools.netlify.app",
+      "url": "https://ainexustools.online",
       "description": "Honest AI tool reviews by Navneet Arya — every tool personally tested.",
       "inLanguage": "en-IN",
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://ainexus-tools.netlify.app/?search={search_term_string}"
+          "urlTemplate": "https://ainexustools.online/?search={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       },
       "publisher": {
         "@type": "Organization",
         "name": "AI Nexus",
-        "url": "https://ainexus-tools.netlify.app"
+        "url": "https://ainexustools.online"
       }
     }
     </script>
@@ -63,7 +63,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Navneet Arya",
-      "url": "https://ainexus-tools.netlify.app/about",
+      "url": "https://ainexustools.online/about",
       "email": "hello@ainexus.tools",
       "description": "AI tools reviewer and founder of AI Nexus. Testing AI tools since 2022 across writing, audio, video, design, and productivity.",
       "knowsAbout": [
@@ -77,7 +77,7 @@
       "worksFor": {
         "@type": "Organization",
         "name": "AI Nexus",
-        "url": "https://ainexus-tools.netlify.app"
+        "url": "https://ainexustools.online"
       }
     }
     </script>
@@ -106,6 +106,16 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- GitHub Pages SPA routing: restore path from ?p= query param set by 404.html -->
+    <script>
+      (function() {
+        var p = window.location.search.slice(1);
+        if (p && p.startsWith('p=')) {
+          var decoded = decodeURIComponent(p.slice(2));
+          history.replaceState(null, null, decoded);
+        }
+      })();
+    </script>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
