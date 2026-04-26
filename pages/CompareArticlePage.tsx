@@ -147,17 +147,31 @@ export function CompareArticlePage({ article, navigate }: Props) {
         position: 'sticky', top: 0, zIndex: 100,
         background: C.barBg, borderBottom: `1px solid ${C.barBrd}`,
         backdropFilter: 'blur(12px)',
-        padding: '0 1.25rem',
+        padding: '0 28px',
       }}>
-        <div style={{ maxWidth: 760, margin: '0 auto', display: 'flex', alignItems: 'center', height: 56, gap: '1rem' }}>
-          <button
-            onClick={() => navigate('/')}
-            style={{ display: 'flex', alignItems: 'center', gap: 6, background: 'none', border: 'none', cursor: 'pointer', color: C.mut, fontSize: 14 }}
-          >
-            <ArrowLeft size={16} /> Back to reviews
-          </button>
-          <div style={{ flex: 1 }} />
-          <span style={{ fontSize: 13, fontWeight: 700, color: C.a1, letterSpacing: '-0.02em' }}>AI Nexus</span>
+        <div style={{ maxWidth: 1160, margin: '0 auto', display: 'flex', alignItems: 'center', height: 58, justifyContent: 'space-between' }}>
+          {/* Logo */}
+          <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', gap: 0 }}>
+            <div style={{ width: 4, height: 28, background: `linear-gradient(180deg, ${C.a1}, #06B6D4)`, borderRadius: 2, marginRight: 12 }} />
+            <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, letterSpacing: '-0.02em' }}>
+              AI<span style={{ color: C.a1 }}>Nexus</span>
+            </span>
+          </div>
+          {/* Nav links */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <button onClick={() => navigate('/')}
+              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: 'none', cursor: 'pointer' }}>
+              All Tools
+            </button>
+            <button onClick={() => navigate('/')}
+              style={{ fontSize: 13, fontWeight: 600, color: C.a1, padding: '7px 14px', borderRadius: 100, background: 'rgba(91,33,182,.065)', border: `1.5px solid rgba(91,33,182,.18)`, cursor: 'pointer' }}>
+              ⚖️ Compare
+            </button>
+            <button onClick={() => navigate('/about')}
+              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid rgba(15,15,26,.12)`, cursor: 'pointer' }}>
+              About
+            </button>
+          </div>
         </div>
       </nav>
 

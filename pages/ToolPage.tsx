@@ -309,13 +309,26 @@ export function ToolPage({ tool, navigate }: ToolPageProps) {
 
       {/* Nav */}
       <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: C.barBg, backdropFilter: 'blur(16px)', borderBottom: `1px solid ${C.barBrd}`, padding: '0 28px' }}>
-        <div style={{ maxWidth: 860, margin: '0 auto', height: 58, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <button onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 7, color: C.mut, fontSize: 14, fontWeight: 500 }}>
-            <ArrowLeft size={15} /> All tools
-          </button>
-          <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-            <div style={{ width: 3, height: 22, background: `linear-gradient(180deg,${C.a1},${C.a2})`, borderRadius: 2, marginRight: 10 }} />
-            <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 16 }}>AI<span style={{ color: C.a1 }}>Nexus</span></span>
+        <div style={{ maxWidth: 1160, margin: '0 auto', height: 58, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          {/* Logo */}
+          <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', gap: 0 }}>
+            <div style={{ width: 4, height: 28, background: `linear-gradient(180deg,${C.a1},${C.a2})`, borderRadius: 2, marginRight: 12 }} />
+            <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, letterSpacing: '-0.02em' }}>AI<span style={{ color: C.a1 }}>Nexus</span></span>
+          </div>
+          {/* Nav links */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <button onClick={() => navigate('/')}
+              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6 }}>
+              <ArrowLeft size={13} /> All Tools
+            </button>
+            <button onClick={() => navigate('/')}
+              style={{ fontSize: 13, fontWeight: 600, color: C.a1, padding: '7px 14px', borderRadius: 100, background: C.a1card, border: `1.5px solid ${C.a1brd}`, cursor: 'pointer' }}>
+              ⚖️ Compare
+            </button>
+            <button onClick={() => navigate('/about')}
+              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid rgba(15,15,26,.12)`, cursor: 'pointer' }}>
+              About
+            </button>
           </div>
         </div>
       </nav>
