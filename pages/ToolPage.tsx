@@ -541,6 +541,19 @@ export function ToolPage({ tool, navigate }: ToolPageProps) {
                   </tbody>
                 </table>
               </div>
+              {/* Compare article deep-link (only for tools with a compare page) */}
+              {tool.slug === 'ocoya' && (
+                <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', background: 'rgba(91,33,182,.04)', borderRadius: 10, border: '1px solid rgba(91,33,182,.12)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
+                  <span style={{ fontSize: 13, color: C.mut }}>Want a deeper breakdown of Ocoya vs Buffer vs Hootsuite?</span>
+                  <a
+                    href="/compare/ocoya-vs-buffer-vs-hootsuite"
+                    onClick={e => { e.preventDefault(); navigate('/compare/ocoya-vs-buffer-vs-hootsuite'); }}
+                    style={{ fontSize: 13, fontWeight: 600, color: C.a1, textDecoration: 'none' }}
+                  >
+                    Read the full comparison →
+                  </a>
+                </div>
+              )}
             </>
           )
         )}

@@ -4,6 +4,7 @@ import { HomePage } from './pages/HomePage';
 import { ToolPage } from './pages/ToolPage';
 import { AboutPage } from './pages/AboutPage';
 import { DisclosurePage } from './pages/DisclosurePage';
+import { CompareArticlePage, COMPARE_ARTICLES } from './pages/CompareArticlePage';
 
 function updateMeta(title: string, description: string, canonical: string) {
   document.title = title;
@@ -44,6 +45,19 @@ function App() {
         `${SITE_CONFIG.siteUrl}/tools/${tool.slug}`
       );
       return <ToolPage tool={tool} navigate={navigate} />;
+    }
+  }
+
+  const compareMatch = path.match(/^\/compare\/([^/]+)$/);
+  if (compareMatch) {
+    const article = COMPARE_ARTICLES.find(a => a.slug === compareMatch[1]);
+    if (article) {
+      updateMeta(
+        `${article.title} | AI Nexus`,
+        article.metaDescription,
+        `${SITE_CONFIG.siteUrl}/compare/${article.slug}`
+      );
+      return <CompareArticlePage article={article} navigate={navigate} />;
     }
   }
 
