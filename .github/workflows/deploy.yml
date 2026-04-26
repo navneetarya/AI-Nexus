@@ -31,7 +31,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build + Pre-render all routes
+        # vite build compiles the React app, then scripts/prerender.mjs
+        # creates dist/<route>/index.html for every URL in the sitemap.
+        # This ensures GitHub Pages returns HTTP 200 (not 404) for all pages,
+        # making them crawlable by Google, Bing, and AI answer engines.
         run: npm run build
 
       - name: Upload artifact
@@ -49,3 +53,18 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  ping-search-engines:
+    # Notify Google and Bing about sitemap updates after every deploy
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Ping Google
+        run: |
+          curl -sf "https://www.google.com/ping?sitemap=https://ainexustools.online/sitemap.xml" \
+            && echo "Google pinged ✓" || echo "Google ping failed (non-fatal)"
+
+      - name: Ping Bing
+        run: |
+          curl -sf "https://www.bing.com/ping?sitemap=https://ainexustools.online/sitemap.xml" \
+            && echo "Bing pinged ✓" || echo "Bing ping failed (non-fatal)"

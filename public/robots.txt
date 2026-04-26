@@ -1,4 +1,41 @@
+# AI Nexus — https://ainexustools.online
+# robots.txt — last updated 2026-04-26
+
+# ── Allow all crawlers ────────────────────────────────────────────────────────
 User-agent: *
 Allow: /
 
+# ── Google ───────────────────────────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+
+# ── Bing ─────────────────────────────────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# ── Yandex ───────────────────────────────────────────────────────────────────
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 3
+
+# ── AI / Answer engines (AEO) ─────────────────────────────────────────────────
+# Allow Perplexity, ChatGPT, Claude, Gemini to read content for AI answers
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# ── Sitemaps ─────────────────────────────────────────────────────────────────
 Sitemap: https://ainexustools.online/sitemap.xml

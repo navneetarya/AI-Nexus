@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | AI Nexus</title>
+  <meta name="robots" content="noindex, follow" />
+  <!--
+    GitHub Pages SPA fallback — only fires for URLs that truly don't exist.
+    After pre-rendering, all valid routes have their own index.html, so
+    this 404.html should rarely be seen in production.
+
+    For any URL that slips through (old links, typos, etc.), this script
+    encodes the path into a query param so index.html can restore it via
+    history.replaceState — preserving the correct URL in the address bar.
+  -->
   <script>
-    // GitHub Pages SPA routing fix
-    // Encodes the full path into a query param so index.html can restore it
-    var l = window.location;
-    l.replace(
-      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      l.pathname.split('/').slice(0, 1).join('/') +
-      '/?p=' + encodeURIComponent(l.pathname + l.search) +
-      (l.hash || '')
+    var seg = window.location.pathname;
+    // Redirect to homepage with path encoded, so the React app can route it
+    window.location.replace(
+      window.location.origin + '/?p=' + encodeURIComponent(seg + window.location.search) + (window.location.hash || '')
     );
   </script>
 </head>
-<body></body>
+<body>
+  <p>Redirecting…</p>
+</body>
 </html>
