@@ -166,8 +166,6 @@ export const TOOLS: Tool[] = [
     name: 'Podcastle', tagline: 'Record, edit and publish podcasts with AI',
     description: 'Podcastle gives you studio-quality recording, AI-powered noise removal, and one-click publishing. Record remotely with guests and let AI clean up the audio automatically.',
     category: Category.AUDIO, affiliateLink: 'https://podcastle.ai/?ref=ymi1ntf',
-    description: 'Podcastle gives you studio-quality recording, AI-powered noise removal, and one-click publishing. Record remotely with guests and let AI clean up the audio.',
-    category: Category.AUDIO, affiliateLink: 'https://podcastle.ai?ref=ymi1ntf',
     iconName: 'Headphones', color: '#10b981', accentColor: '#059669',
     userBadge: 'Free plan ✓', pricing: 'Free + from $11.99/month', bestFor: 'Podcasters & interviewers',
     features: ['Remote recording', 'AI noise removal', 'Voice enhancement', 'Revoice (voice cloning)', 'Direct Spotify publishing'],

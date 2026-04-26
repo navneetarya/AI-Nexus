@@ -54,7 +54,7 @@ export const COMPARE_ARTICLES: CompareArticle[] = [
 The short answer: if you're a solo creator or small business, Buffer is overrated, Hootsuite is overkill, and Ocoya is the tool most people haven't heard of yet — but probably should be using.`,
     sections: [
       {
-        heading: 'What you're actually trying to solve',
+        heading: "What you're actually trying to solve",
         content: `Before comparing tools, get clear on your actual need. Most small businesses and freelancers need three things: schedule posts in advance across platforms, generate captions without starting from scratch every time, and not pay ₹8,000/month for the privilege.
 
 That's it. None of these tools need to be Salesforce.`,
