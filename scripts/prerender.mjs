@@ -179,6 +179,16 @@ const TOOLS = [
 // ── Compare articles ──────────────────────────────────────────────────────────
 const COMPARE_ARTICLES = [
   {
+    slug: 'rytr-vs-writesonic',
+    title: 'Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?',
+    metaDescription: 'Comparing Rytr and Writesonic for solopreneurs, freelancers, and content creators. Real pricing, real output quality, and an honest verdict on which AI writer wins in 2026.',
+  },
+  {
+    slug: 'grammarly-vs-quillbot',
+    title: 'Grammarly vs QuillBot (2026): Which Should You Actually Use?',
+    metaDescription: 'Grammarly vs QuillBot compared for writers, students, and professionals. Real breakdown of what each tool actually does, where each wins, and which one to use in 2026.',
+  },
+  {
     slug: 'ocoya-vs-buffer-vs-hootsuite',
     title: 'Ocoya vs Buffer vs Hootsuite (2026): Which Social Media Tool Is Actually Worth It?',
     metaDescription: 'Comparing Ocoya, Buffer, and Hootsuite for small businesses and solo creators. Real pricing, real features, and which one wins for Indian freelancers on a budget.',
