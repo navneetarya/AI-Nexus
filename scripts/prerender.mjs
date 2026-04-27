@@ -182,21 +182,49 @@ const COMPARE_ARTICLES = [
     slug: 'rytr-vs-writesonic',
     title: 'Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?',
     metaDescription: 'Comparing Rytr and Writesonic for solopreneurs, freelancers, and content creators. Real pricing, real output quality, and an honest verdict on which AI writer wins in 2026.',
+    faqs: [
+      { q: 'Is Rytr better than Writesonic?', a: 'Rytr is better value for short-to-medium form content — emails, ad copy, social posts, blog intros — at $9/month unlimited. Writesonic is better for long-form SEO blog posts (1,500+ words) thanks to its Article Writer and built-in SEO tools, but costs significantly more.' },
+      { q: 'What is the cheapest AI writing tool between Rytr and Writesonic?', a: 'Rytr is significantly cheaper. The Rytr Saver plan is $9/month for unlimited words. Writesonic\'s comparable plan starts at $16/month and includes word count limits depending on your plan tier.' },
+      { q: 'Does Rytr have a free plan?', a: 'Yes. Rytr\'s free plan gives 10,000 characters per month — enough to test the tool properly before committing to a paid plan.' },
+      { q: 'Can Writesonic write full blog posts?', a: 'Yes. Writesonic\'s Article Writer generates full 1,500–2,500 word drafts with SEO optimisation built in. This is one of Writesonic\'s strongest advantages over Rytr, which requires manual assembly for long-form content.' },
+      { q: 'Which AI writing tool is better for Indian freelancers?', a: 'Rytr at $9/month (around ₹750) is the better starting point for Indian freelancers. The unlimited word count and 40+ templates cover most freelance writing needs without overpaying for features you won\'t use.' },
+    ],
   },
   {
     slug: 'grammarly-vs-quillbot',
     title: 'Grammarly vs QuillBot (2026): Which Should You Actually Use?',
     metaDescription: 'Grammarly vs QuillBot compared for writers, students, and professionals. Real breakdown of what each tool actually does, where each wins, and which one to use in 2026.',
+    faqs: [
+      { q: 'Is Grammarly better than QuillBot?', a: 'They do different things. Grammarly is a real-time writing assistant that improves grammar, tone, and clarity as you write. QuillBot is a paraphrasing and rewriting tool for restructuring existing text. If you write original content, use Grammarly. If you rewrite or summarise content regularly, use QuillBot.' },
+      { q: 'Can I use both Grammarly and QuillBot together?', a: 'Yes — and many writers do. Use Grammarly while drafting (for grammar and tone feedback), and QuillBot when you need to rephrase or simplify sections. They complement each other rather than overlap.' },
+      { q: 'Is QuillBot free?', a: 'QuillBot has a functional free plan with 125-word paraphrasing, a summariser, and a citation generator. Premium is $9.95/month and unlocks all 7 paraphrasing modes and higher word limits.' },
+      { q: 'Is Grammarly worth paying for?', a: 'The premium plan ($12/month) is worth it if writing is central to your work. The tone detection, clarity rewrites, and engagement scoring meaningfully reduce editing time for emails, reports, and content.' },
+      { q: 'Which is better for students, Grammarly or QuillBot?', a: 'QuillBot is more directly useful for most students — the free paraphraser, citation generator (APA, MLA, Chicago, Harvard), and summariser cover the core academic writing needs. Grammarly is better for students who write a lot of original essays and emails.' },
+    ],
   },
   {
     slug: 'podcastle-vs-descript',
     title: 'Podcastle vs Descript (2026): Which Podcast Tool Should You Actually Use?',
     metaDescription: 'Podcastle vs Descript compared for podcasters, indie creators, and remote interviewers. Honest breakdown of recording quality, editing experience, AI features, and real pricing in 2026.',
+    faqs: [
+      { q: 'Is Podcastle better than Descript?', a: 'For pure podcast recording and audio quality — especially remote guest recording — Podcastle is better. Its Magic Dust AI audio enhancement is best-in-class for noise removal. Descript is better for transcript-based editing, video podcasts, and bulk filler-word removal across long interviews.' },
+      { q: 'Does Podcastle record remote guests?', a: 'Yes. Podcastle records each participant locally on their own device and uploads separate high-quality audio tracks. This means recording quality doesn\'t depend on internet connection stability during the call.' },
+      { q: 'What is Descript\'s text-based editing?', a: 'Descript transcribes your recording and lets you edit audio or video by editing the text transcript — delete a word in the transcript and the corresponding audio clip is deleted automatically. This makes cutting filler words and restructuring interviews very fast.' },
+      { q: 'Is Podcastle free?', a: 'Yes. Podcastle\'s free plan includes unlimited recordings, up to 10 hours of Magic Dust AI enhancement per month, and remote recording for up to 10 participants. Paid plans start at $11.99/month.' },
+      { q: 'Which podcast tool is better for beginners?', a: 'Podcastle is easier to get started with. The interface is straightforward, the AI audio cleanup is automatic, and there\'s no new editing paradigm to learn. Descript\'s text-based editing is powerful but takes a learning curve to click into place.' },
+    ],
   },
   {
     slug: 'ocoya-vs-buffer-vs-hootsuite',
     title: 'Ocoya vs Buffer vs Hootsuite (2026): Which Social Media Tool Is Actually Worth It?',
     metaDescription: 'Comparing Ocoya, Buffer, and Hootsuite for small businesses and solo creators. Real pricing, real features, and which one wins for Indian freelancers on a budget.',
+    faqs: [
+      { q: 'Is Ocoya better than Buffer?', a: 'For solo creators and small businesses that also need AI caption writing, Ocoya is the better choice. Buffer is better if you only need scheduling and already have a content pipeline — its interface is cleaner and the free plan is generous.' },
+      { q: 'Is Hootsuite worth it for small businesses?', a: 'No. Hootsuite starts at $99/month and is designed for agencies managing 10+ social accounts with team workflows. For small businesses and freelancers, the price is disproportionate to the features you\'ll actually use.' },
+      { q: 'What is Ocoya used for?', a: 'Ocoya combines AI social media caption writing with scheduling across Instagram, LinkedIn, Twitter/X, Facebook, TikTok, and Pinterest. It\'s built for creators who want one tool to write and schedule posts instead of using separate tools for each job.' },
+      { q: 'Does Buffer have a free plan?', a: 'Yes. Buffer\'s free plan allows 3 social channels and 10 scheduled posts per channel. It\'s a functional free tier for light scheduling use, though the AI features are limited on free.' },
+      { q: 'Which social media scheduling tool is best for Indian freelancers?', a: 'Ocoya at ₹1,260/month is the best value for Indian freelancers who need both AI caption writing and scheduling. Buffer at ~₹500/month is the best option for those who only need scheduling without content creation.' },
+    ],
   },
 ];
 
@@ -429,6 +457,18 @@ for (const tool of TOOLS) {
   writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas }));
 }
 
+function faqSchema(faqs) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  };
+}
+
 // ── 2. Compare pages ──────────────────────────────────────────────────────────
 console.log('\nCompare pages:');
 for (const art of COMPARE_ARTICLES) {
@@ -441,6 +481,9 @@ for (const art of COMPARE_ARTICLES) {
       [3, art.title, canonical],
     ]),
   ];
+  if (art.faqs && art.faqs.length > 0) {
+    schemas.push(faqSchema(art.faqs));
+  }
 
   writeRoute(
     `compare/${art.slug}`,

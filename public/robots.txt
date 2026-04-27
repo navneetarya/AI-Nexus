@@ -1,11 +1,11 @@
 # AI Nexus — https://ainexustools.online
-# robots.txt — last updated 2026-04-26
+# robots.txt — last updated 2026-04-27
 
-# ── Allow all crawlers ────────────────────────────────────────────────────────
+# ── Allow all crawlers by default ─────────────────────────────────────────────
 User-agent: *
 Allow: /
 
-# ── Google ───────────────────────────────────────────────────────────────────
+# ── Google ────────────────────────────────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
@@ -13,29 +13,66 @@ Crawl-delay: 1
 User-agent: Googlebot-Image
 Allow: /
 
-# ── Bing ─────────────────────────────────────────────────────────────────────
+# Google AI / Gemini / AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# ── Bing ──────────────────────────────────────────────────────────────────────
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 2
 
-# ── Yandex ───────────────────────────────────────────────────────────────────
+# ── Yandex ────────────────────────────────────────────────────────────────────
 User-agent: YandexBot
 Allow: /
 Crawl-delay: 3
 
-# ── AI / Answer engines (AEO) ─────────────────────────────────────────────────
-# Allow Perplexity, ChatGPT, Claude, Gemini to read content for AI answers
-User-agent: PerplexityBot
-Allow: /
-
+# ── OpenAI / ChatGPT ──────────────────────────────────────────────────────────
 User-agent: GPTBot
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── Anthropic / Claude ────────────────────────────────────────────────────────
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: anthropic-ai
 Allow: /
 
-# ── Sitemaps ─────────────────────────────────────────────────────────────────
+# ── Perplexity ────────────────────────────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+# ── Meta AI ───────────────────────────────────────────────────────────────────
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ── Apple ─────────────────────────────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Cohere ────────────────────────────────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+# ── DuckDuckGo AI ─────────────────────────────────────────────────────────────
+User-agent: DuckAssistBot
+Allow: /
+
+# ── ByteDance / TikTok AI ─────────────────────────────────────────────────────
+User-agent: Bytespider
+Allow: /
+
+# ── Sitemap ───────────────────────────────────────────────────────────────────
 Sitemap: https://ainexustools.online/sitemap.xml
