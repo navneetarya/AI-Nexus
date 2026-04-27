@@ -322,7 +322,7 @@ For interview-heavy podcasts, this workflow is genuinely transformative. Searchi
 For remote guest interviews — which is where most podcast quality problems happen — Podcastle is the safer choice. Descript's advantages kick in after recording, in the editing phase.`,
       },
       {
-        heading: 'AI features compared: what's actually useful',
+        heading: "AI features compared: what's actually useful",
         content: `**Audio cleanup:** Podcastle's Magic Dust is better for pure audio enhancement. It's more consistent and handles a wider range of noise profiles. Descript's Studio Sound feature is solid but less aggressive.
 
 **Filler word removal:** Descript wins clearly. Its transcript-based editing makes bulk filler word removal (ums, uhs, you knows) fast and precise. Podcastle doesn't have an equivalent bulk-removal workflow.
