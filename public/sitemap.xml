@@ -5,6 +5,8 @@
   <url><loc>https://ainexustools.online/disclosure</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
   <!-- Compare pages — high priority, buying-intent traffic -->
+  <url><loc>https://ainexustools.online/compare/rytr-vs-writesonic</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/grammarly-vs-quillbot</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-27</lastmod></url>
   <url><loc>https://ainexustools.online/compare/ocoya-vs-buffer-vs-hootsuite</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-26</lastmod></url>
 
   <!-- Affiliate picks — highest priority tool pages -->
