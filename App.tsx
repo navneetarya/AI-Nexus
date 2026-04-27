@@ -80,7 +80,7 @@ function App() {
   }
 
   updateMeta(
-    `AI Nexus — ${TOOLS.length} Best AI Tools Reviewed & Ranked ${new Date().getFullYear()}`,
+    `AI Nexus — Best AI Tools Reviewed & Ranked ${new Date().getFullYear()}`,
     `Honest reviews of the best AI tools for writing, video, audio, podcasting, productivity & social media. Every tool personally tested by ${SITE_CONFIG.authorName}. Every link is a free trial.`,
     SITE_CONFIG.siteUrl
   );
