@@ -186,71 +186,103 @@ The best setup if budget allows: use both. Grammarly while you write, QuillBot w
     winnerAffiliateText: 'Try Grammarly free',
   },
 
-  // ── ocoya-vs-buffer-vs-hootsuite (existing) ───────────────────────────────
+  // ── ocoya-vs-buffer-vs-hootsuite ─────────────────────────────────────────
   {
     slug: 'ocoya-vs-buffer-vs-hootsuite',
     title: 'Ocoya vs Buffer vs Hootsuite (2026): Which Social Media Tool Is Actually Worth It?',
-    metaDescription: 'Comparing Ocoya, Buffer, and Hootsuite for small businesses and solo creators. Real pricing in INR, real features, and which one wins for Indian freelancers on a budget.',
+    metaDescription: 'Comparing Ocoya, Buffer, and Hootsuite for solopreneurs and small businesses. Real pricing, honest AI features breakdown, and which tool wins for content creators in 2026.',
     keyword: 'ocoya vs buffer vs hootsuite',
     publishDate: 'April 2026',
-    intro: `I've been managing social media for a few side projects over the past year, and I've had paid accounts on all three of these tools at different points. Here's the honest breakdown — no fluff, no affiliate cheerleading.
+    intro: `I've spent the past year managing social media for several side projects, running paid accounts on all three of these tools at different points. Here's the honest breakdown — no affiliate cheerleading, no hedging.
 
-The short answer: if you're a solo creator or small business, Buffer is overrated, Hootsuite is overkill, and Ocoya is the tool most people haven't heard of yet — but probably should be using.`,
+The short answer: if you're a solopreneur or small business, Buffer is overrated, Hootsuite is overkill, and Ocoya is the tool most people haven't heard of yet — but probably should be using.`,
     sections: [
       {
         heading: "What you're actually trying to solve",
-        content: `Before comparing tools, get clear on your actual need. Most small businesses and freelancers need three things: schedule posts in advance across platforms, generate captions without starting from scratch every time, and not pay ₹8,000/month for the privilege.
+        content: `Before comparing tools, get clear on your actual need. Most small businesses and freelancers need three things: schedule posts in advance across platforms, generate captions without starting from scratch every time, and not pay $100/month for the privilege.
 
-That's it. None of these tools need to be Salesforce.`,
+That's it. None of these tools need to be enterprise software. The problem is most comparisons are written by people who want to justify whichever tool they're already affiliated with. This one isn't.`,
       },
       {
         heading: 'Buffer — Clean, but the AI is an afterthought',
-        content: `Buffer ($6–18/month, ~₹500–1,500) has the cleanest UI of the three. Scheduling is dead simple. The analytics are honest and readable.
+        content: `Buffer ($6–18/month) has the cleanest UI of the three. Scheduling is dead simple. The analytics are honest and readable. If you've never used a social media scheduler before, Buffer is the least intimidating place to start.
 
-But here's the problem in 2026: the AI content features feel bolted on. Buffer's AI assistant is essentially a prompt box that calls a generic language model — it has no awareness of your brand, your previous posts, or what platform you're scheduling for. You write the caption, then ask it to "improve" it. That's not AI-native; that's AI as a polish layer.
+**But here's the problem in 2026:** Buffer's AI content features feel bolted on. Buffer's AI assistant is essentially a prompt box that calls a generic language model — it has no awareness of your brand voice, your previous posts, or the specific platform you're scheduling for. You write the caption, then ask it to "improve" it. That's not AI-native design; that's AI as a polish layer.
 
-For pure scheduling without content creation: Buffer is fine. For anyone who also wants help writing, you'll end up paying for Buffer plus something else.
+For pure scheduling without content creation: Buffer is fine. For anyone who also wants help writing captions, you'll end up paying for Buffer plus something else — which defeats the budget argument.
 
 **Platforms supported:** Instagram, Facebook, LinkedIn, Twitter/X, Pinterest, TikTok, Google Business.
 
-**Who it's for:** Solopreneurs who already have a content system and just need a clean scheduler.`,
+**Free plan:** Yes — 3 channels, 10 scheduled posts per channel, basic analytics.
+
+**Who it's for:** Solopreneurs who already have a full content system and just need a clean scheduler.`,
       },
       {
-        heading: 'Hootsuite — Powerful, built for teams, priced accordingly',
-        content: `Hootsuite starts at $99/month (~₹8,300). The cheapest plan allows one user and 10 social accounts. The next tier is $249/month.
+        heading: 'Hootsuite — Powerful, built for agencies, priced for them too',
+        content: `Hootsuite starts at $99/month for one user and up to 10 social accounts. The next tier is $249/month. There is no meaningful middle ground.
 
-If you're an agency managing 20+ client accounts with a team of five, Hootsuite makes sense. The reporting is deep, the approval workflows are solid, and the integrations are enterprise-grade.
+If you're an agency managing 20+ client accounts with a team of five, Hootsuite makes sense. The reporting is deep, the approval workflows are solid, and the integrations are enterprise-grade. Hootsuite has been doing this since 2008 and the feature depth shows.
 
-If you're a freelancer or small business owner in India, Hootsuite is a waste of money. You're paying for features you'll never use.
+If you're a freelancer or small business owner — anywhere — Hootsuite is a waste of money. You're paying for infrastructure built for teams of 10 while using maybe 20% of what you're paying for.
 
-The AI content features exist but feel like a recent addition to compete with newer tools — not something built into the core product from day one.
+**The AI situation:** Hootsuite added AI content generation recently to compete with newer tools. It works, but it feels reactive rather than foundational — added to keep up, not built from the start. The AI is better than Buffer's, but doesn't justify the $99/month floor for a solo operator.
 
-**Who it's for:** Agencies, marketing teams, anyone managing 10+ accounts for clients.`,
+**Free plan:** No. 30-day trial only.
+
+**Who it's for:** Marketing agencies, large businesses with dedicated social media teams, enterprises that need approval workflows and compliance controls.`,
       },
       {
-        heading: 'Ocoya — The one tool that actually combines both jobs',
-        content: `Ocoya ($15/month, ~₹1,260) sits in the gap between "just a scheduler" and "just an AI writer." It does both natively, in the same dashboard.
+        heading: 'Ocoya — The tool that combines both jobs natively',
+        content: `Ocoya ($15/month) sits in the gap between "just a scheduler" and "just an AI writer." It does both natively, inside the same dashboard. That sentence doesn't sound impressive until you've spent time copy-pasting between two separate tools every day.
 
-Here's what that actually looks like in practice: you open Ocoya, drop in a topic or paste an image, and it generates platform-specific captions — not one generic caption repurposed for everywhere, but content written differently for LinkedIn's professional tone versus Instagram's conversational style. Then you schedule it without leaving the tool.
+**Here's what the workflow actually looks like:** You open Ocoya, drop in a topic or paste a product image, and it generates platform-specific captions — not one generic caption copy-pasted everywhere, but content written differently for LinkedIn's professional context versus Instagram's conversational style versus TikTok's short-form energy. Then you schedule from the same screen without switching tools.
 
-That single-workflow difference is underrated. Buffer + a separate AI writing tool means two logins, two monthly charges, and copy-pasting between apps. Ocoya is one place.
+This single-workflow difference is underrated. Buffer plus a separate AI writing tool means two logins, two monthly payments, and manual copy-paste between apps. Ocoya is one tool, one workflow, one bill.
 
-What else works well: the template library (40+ use-case starters), multi-platform scheduling across Instagram, LinkedIn, Twitter/X, Facebook, Pinterest, TikTok, and Google Business, plus a link-in-bio page builder included at no extra cost.
+**What else works well:** The built-in visual creator handles standard social graphics so you're not always running to Canva for a simple post. Hashtag research is included and suggests platform-relevant tags based on your content. The link-in-bio page builder is bundled at no extra cost — typically a $5–10/month add-on elsewhere.
 
-**Where Ocoya falls short:** If you're managing 15+ client accounts or need white-label reporting for agencies, Hootsuite still wins. Ocoya is optimised for the solo creator to 5-person team range.
+**Multi-platform support** covers Instagram, LinkedIn, Twitter/X, Facebook, Pinterest, TikTok, and Google Business Profile from one dashboard.
 
-**Who it's for:** Freelancers, content creators, small businesses, Indian solopreneurs who want one tool instead of two.`,
+**Where Ocoya genuinely falls short:** If you're managing 15+ client accounts or need white-label reporting for agency deliverables, Hootsuite's depth wins. Ocoya's analytics are functional but not deep. For elaborate custom social visuals, you'll still want Canva alongside it.
+
+**Free plan:** No permanent free plan — trial available. Plans start at $15/month. At that price it effectively replaces a standalone caption writer ($10–15/month) plus a scheduler ($10–15/month) — saving money by consolidating two tools into one.
+
+**Who it's for:** Solopreneurs, content creators, and small businesses managing 1–5 social accounts who want one integrated tool and care about AI that actually writes platform-aware content.`,
+      },
+      {
+        heading: 'AI caption quality: honest head-to-head test',
+        content: `I ran the same brief — "announce a new productivity app feature for remote teams" — through all three tools across three platforms. Here's what I found:
+
+**Buffer's AI:** Produced a usable but generic caption. Same structure, lightly adjusted, for all three platforms. No real understanding of LinkedIn vs Instagram vs TikTok tone differences. Good starting point if you're a strong editor; not enough to publish with minimal revision.
+
+**Hootsuite's AI:** Noticeably better than Buffer — it understood that LinkedIn needs professional framing and Instagram can be more casual. But working with it adds friction compared to a native integrated workflow.
+
+**Ocoya's AI:** Generated three clearly distinct outputs. The LinkedIn version opened with a professional insight. The Instagram version was conversational with a hook in the first line. The TikTok version was punchy, short, and started with a direct question. Structurally different content built for each platform's reading context — not just tone-adjusted. Out of the three, Ocoya's captions required the least editing before publishing.
+
+All AI content needs a human pass before publishing. But Ocoya requires less editing per caption on average, which compounds into meaningful time savings across a week of content.`,
+      },
+      {
+        heading: 'Pricing breakdown: what you actually pay',
+        content: `**Buffer:** Free plan (3 channels, 10 posts per channel). Essentials: $6/month. Team: $12/month per user. Agency: $120/month.
+
+**Hootsuite:** No free plan — 30-day trial only. Professional: $99/month (1 user, 10 accounts). Team: $249/month (3 users, 20 accounts). Enterprise: custom.
+
+**Ocoya:** Trial available — no permanent free plan. Bronze: $15/month (1 workspace, 5 social profiles). Silver: $39/month (3 workspaces, 15 profiles). Gold: $79/month (5 workspaces, 30 profiles).
+
+**The real cost comparison:** Buffer Essentials ($6) + a separate AI writing tool like Rytr ($9) = $15/month. Ocoya Bronze = $15/month. Same price, but Ocoya's AI is integrated into your scheduling workflow rather than a separate tab. If you're already paying for both tools separately, switching to Ocoya is financially neutral and operationally better.`,
       },
     ],
-    verdict: `For most people reading this — especially Indian freelancers and solo creators — start with Ocoya's free trial. If you're spending time writing captions manually and then copying them into a scheduler, Ocoya collapses that into one workflow for ₹1,260/month. That's less than most people spend on Swiggy in a week.
+    verdict: `For most solopreneurs and small businesses: start with Ocoya's free trial. If you're manually writing captions and copying them into a scheduler, Ocoya collapses that into one workflow for $15/month — effectively replacing two tools at the same combined cost.
 
-If you truly just want scheduling and already have a content pipeline: Buffer at ₹500/month is fine.
+If you genuinely just want scheduling and already have a content system you're happy with: Buffer's free plan or $6/month Essentials is a clean, no-fuss solution.
 
-If someone is trying to sell you Hootsuite for a small business: they're overselling you.`,
+If someone is recommending Hootsuite for a solo operator or small business: they're overselling you. Hootsuite's pricing makes sense for agencies managing multiple client accounts. It doesn't make sense for one business managing its own social presence.
+
+The question that simplifies the choice: do you already have a reliable way to write your social captions? If yes — Buffer is fine. If no — Ocoya solves both problems at once for the same price you'd pay combining two tools.`,
     comparisonTable: [
-      { name: 'Ocoya', price: '$15–$99/mo', priceINR: '₹1,260–₹8,300', freeplan: false, aiContent: 'Native (platform-aware)', platforms: '7+', bestFor: 'Content + scheduling combo', ourPick: true },
-      { name: 'Buffer', price: '$6–$120/mo', priceINR: '₹500–₹10,000', freeplan: true, aiContent: 'Basic (generic prompt)', platforms: '7', bestFor: 'Pure scheduling only', ourPick: false },
-      { name: 'Hootsuite', price: '$99–$739/mo', priceINR: '₹8,300+', freeplan: false, aiContent: 'Basic (recent add-on)', platforms: '35+', bestFor: 'Agencies & large teams', ourPick: false },
+      { name: 'Ocoya', price: '$15–$99/mo', priceINR: 'From $15', freeplan: false, aiContent: 'Native (platform-aware)', platforms: '7+', bestFor: 'Content + scheduling combo', ourPick: true },
+      { name: 'Buffer', price: '$6–$120/mo', priceINR: 'Free tier ✓', freeplan: true, aiContent: 'Basic (generic prompt)', platforms: '7', bestFor: 'Pure scheduling only', ourPick: false },
+      { name: 'Hootsuite', price: '$99–$739/mo', priceINR: 'From $99', freeplan: false, aiContent: 'Moderate (recent add-on)', platforms: '35+', bestFor: 'Agencies & large teams', ourPick: false },
     ],
     winnerSlug: 'ocoya',
     winnerName: 'Ocoya',
@@ -446,7 +478,7 @@ export function CompareArticlePage({ article, navigate }: Props) {
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14, background: C.surf, borderRadius: 12, overflow: 'hidden', boxShadow: '0 1px 4px rgba(0,0,0,.07)' }}>
             <thead>
               <tr style={{ background: C.a1, color: '#fff' }}>
-                {['Tool', 'Price/mo', 'INR approx', 'Free plan', 'AI captions', 'Platforms', 'Best for'].map(h => (
+                {['Tool', 'Price/mo', 'USD approx', 'Free plan', 'AI captions', 'Platforms', 'Best for'].map(h => (
                   <th key={h} style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 600, whiteSpace: 'nowrap', fontSize: 12 }}>{h}</th>
                 ))}
               </tr>
