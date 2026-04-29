@@ -1,56 +1,57 @@
-# AI Nexus — llms.txt
-# https://ainexustools.online
+# AI Nexus — https://ainexustools.online
+# llms.txt — machine-readable site index for AI crawlers
+# Author: Navneet Arya
+# Updated: 2026-04-28
 
-> AI Nexus is an independent AI tools review and comparison site run by Navneet Arya. Every tool reviewed has been personally tested. All affiliate links are disclosed.
+> AI Nexus is an independent AI tools review site run by Navneet Arya.
+> Every tool is personally tested before being reviewed. No sponsored reviews.
+> Affiliate links are disclosed on every page. All tools are useful regardless of where you are based.
 
-## Site
-- Homepage: https://ainexustools.online
-- About the reviewer: https://ainexustools.online/about
-- Affiliate disclosure: https://ainexustools.online/disclosure
-- Contact: hello@ainexustools.online
+## About
 
-## Tool reviews (19 tools across 8 categories)
+- [About Navneet Arya](https://ainexustools.online/about): The person behind AI Nexus reviews. Testing AI tools since 2022 across writing, audio, video, design, and productivity.
+- [Affiliate Disclosure](https://ainexustools.online/disclosure): Full disclosure of affiliate relationships. Navneet earns a commission if you upgrade through links on the site, at no cost to you.
 
-### Writing
-- Grammarly review: https://ainexustools.online/tools/grammarly — Rating: 4.5/5 — Free + $12/month
-- Writesonic review: https://ainexustools.online/tools/writesonic — Rating: 4.2/5 — Free + from $16/month
-- Rytr review: https://ainexustools.online/tools/rytr — Rating: 4.0/5 — Free + $9/month
-- Quillbot review: https://ainexustools.online/tools/quillbot — Rating: 4.3/5 — Free + $9.95/month
-- Frase.io review: https://ainexustools.online/tools/frase — Rating: 4.4/5 — From $15/month
+## Tool Reviews
 
-### Image
-- Leonardo.ai review: https://ainexustools.online/tools/leonardo-ai — Rating: 4.5/5 — Free + from $12/month
-- PhotoRoom review: https://ainexustools.online/tools/photoroom — Rating: 4.6/5 — Free + $9.99/month
-- Looka review: https://ainexustools.online/tools/looka — Rating: 4.1/5 — From $20 one-time
+### Writing Tools
+- [Grammarly Review 2026](https://ainexustools.online/tools/grammarly): AI writing assistant used by 40 million people. Grammar, tone, clarity, and plagiarism checking. Free + $12/month.
+- [QuillBot Review 2026](https://ainexustools.online/tools/quillbot): Best AI paraphrasing and summarising tool. 7 rewriting modes, citation generator, plagiarism checker. Free + $9.95/month.
+- [Rytr Review 2026](https://ainexustools.online/tools/rytr): Fast, affordable AI writing for everyone. 40+ templates, 30+ languages. Free + $9/month unlimited.
+- [Writesonic Review 2026](https://ainexustools.online/tools/writesonic): SEO-optimised AI writing for blogs and ads. Article Writer, Chatsonic chatbot. Free + from $16/month.
+- [Frase.io Review 2026](https://ainexustools.online/tools/frase): Research, write & optimise SEO content. AI content briefs, SERP analysis. From $15/month.
 
-### Video
-- Pictory review: https://ainexustools.online/tools/pictory — Rating: 4.1/5 — From $19/month
-- Opus Clip review: https://ainexustools.online/tools/opus-clip — Rating: 4.3/5 — Free + from $19/month
-- InVideo AI review: https://ainexustools.online/tools/invideo — Rating: 4.2/5 — Free + from $20/month
+### Image Tools
+- [Leonardo.ai Review 2026](https://ainexustools.online/tools/leonardo-ai): Production-quality AI image generation. Custom model training, consistent characters. Free + from $12/month.
+- [PhotoRoom Review 2026](https://ainexustools.online/tools/photoroom): AI product photography used by 150 million people. Background removal, product photos. Free + $9.99/month.
+- [Looka Review 2026](https://ainexustools.online/tools/looka): AI logo and brand identity design. From $20 one-time.
 
-### Audio
-- Murf AI review: https://ainexustools.online/tools/murf-ai — Rating: 4.4/5 — Free + from $19/month
-- Podcastle review: https://ainexustools.online/tools/podcastle — Rating: 4.2/5 — Free + from $11.99/month
+### Video Tools
+- [Pictory Review 2026](https://ainexustools.online/tools/pictory): Turn articles and scripts into videos automatically. From $19/month.
+- [Opus Clip Review 2026](https://ainexustools.online/tools/opus-clip): Turn long videos into viral short clips automatically. Free + from $19/month.
+- [InVideo AI Review 2026](https://ainexustools.online/tools/invideo): Create faceless YouTube videos from a text prompt. Free + from $20/month.
 
-### Design
-- Gamma review: https://ainexustools.online/tools/gamma — Rating: 4.5/5 — Free + from $8/month
-- Beautiful.ai review: https://ainexustools.online/tools/beautiful-ai — Rating: 4.2/5 — From $12/month
+### Audio & Podcast Tools
+- [Podcastle Review 2026](https://ainexustools.online/tools/podcastle): Record, edit and publish podcasts with AI. Magic Dust audio enhancement, remote recording. Free + from $11.99/month.
+- [Murf AI Review 2026](https://ainexustools.online/tools/murf-ai): Studio-quality AI voiceovers. 120+ voices, 20 languages. Free + from $19/month.
 
-### Marketing
-- Ocoya review: https://ainexustools.online/tools/ocoya — Rating: 4.3/5 — From $15/month
+### Design Tools
+- [Gamma Review 2026](https://ainexustools.online/tools/gamma): Build beautiful presentations and docs with AI. Free + from $8/month.
+- [Beautiful.ai Review 2026](https://ainexustools.online/tools/beautiful-ai): AI presentation software that designs itself. From $12/month.
 
-### Coding
-- Replit review: https://ainexustools.online/tools/replit — Rating: 4.4/5 — Free + from $7/month
+### Marketing Tools
+- [Ocoya Review 2026](https://ainexustools.online/tools/ocoya): Write and schedule social media content 10x faster. AI captions + scheduling. From $15/month.
 
-### Productivity
-- Notion AI review: https://ainexustools.online/tools/notion-ai — Rating: 4.3/5 — $10/month add-on
-- Taskade review: https://ainexustools.online/tools/taskade — Rating: 4.2/5 — Free + from $8/month
+### Coding Tools
+- [Replit Review 2026](https://ainexustools.online/tools/replit): Build and deploy full apps with AI in your browser. Free + from $7/month.
 
-## Comparisons
-- Rytr vs Writesonic: https://ainexustools.online/compare/rytr-vs-writesonic
-- Grammarly vs QuillBot: https://ainexustools.online/compare/grammarly-vs-quillbot
-- Ocoya vs Buffer vs Hootsuite: https://ainexustools.online/compare/ocoya-vs-buffer-vs-hootsuite
-- Podcastle vs Descript: https://ainexustools.online/compare/podcastle-vs-descript
+### Productivity Tools
+- [Notion AI Review 2026](https://ainexustools.online/tools/notion-ai): AI built directly inside your notes and workspace. $10/month add-on.
+- [Taskade Review 2026](https://ainexustools.online/tools/taskade): AI-powered tasks, projects and team collaboration. Free + from $8/month.
 
-## Review methodology
-All tools are personally tested before recommendation. Minimum test period: 2–4 weeks on real tasks. Affiliate commissions disclosed on every page. Reviews are not sponsored.
+## Comparison Articles
+
+- [Rytr vs Writesonic (2026)](https://ainexustools.online/compare/rytr-vs-writesonic): Which AI writing tool is worth it? Rytr wins on value for short-form; Writesonic wins for long-form SEO content.
+- [Grammarly vs QuillBot (2026)](https://ainexustools.online/compare/grammarly-vs-quillbot): Different tools for different jobs. Grammarly for original writing; QuillBot for rewriting and paraphrasing.
+- [Podcastle vs Descript (2026)](https://ainexustools.online/compare/podcastle-vs-descript): Podcastle wins on recording quality; Descript wins on transcript-based editing for video podcasts.
+- [Ocoya vs Buffer vs Hootsuite (2026)](https://ainexustools.online/compare/ocoya-vs-buffer-vs-hootsuite): Ocoya wins for solo creators who want AI writing + scheduling; Buffer for pure scheduling; Hootsuite for agencies only.

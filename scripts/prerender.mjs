@@ -187,7 +187,7 @@ const COMPARE_ARTICLES = [
       { q: 'What is the cheapest AI writing tool between Rytr and Writesonic?', a: 'Rytr is significantly cheaper. The Rytr Saver plan is $9/month for unlimited words. Writesonic\'s comparable plan starts at $16/month and includes word count limits depending on your plan tier.' },
       { q: 'Does Rytr have a free plan?', a: 'Yes. Rytr\'s free plan gives 10,000 characters per month — enough to test the tool properly before committing to a paid plan.' },
       { q: 'Can Writesonic write full blog posts?', a: 'Yes. Writesonic\'s Article Writer generates full 1,500–2,500 word drafts with SEO optimisation built in. This is one of Writesonic\'s strongest advantages over Rytr, which requires manual assembly for long-form content.' },
-      { q: 'Which AI writing tool is better for Indian freelancers?', a: 'Rytr at $9/month (around ₹750) is the better starting point for Indian freelancers. The unlimited word count and 40+ templates cover most freelance writing needs without overpaying for features you won\'t use.' },
+      { q: 'Which AI writing tool is better for freelancers on a budget?', a: 'Rytr at $9/month unlimited is the better starting point for budget-conscious freelancers worldwide. The unlimited word count and 40+ templates cover most freelance writing needs without overpaying for features you won\'t use.' },
     ],
   },
   {
@@ -217,13 +217,13 @@ const COMPARE_ARTICLES = [
   {
     slug: 'ocoya-vs-buffer-vs-hootsuite',
     title: 'Ocoya vs Buffer vs Hootsuite (2026): Which Social Media Tool Is Actually Worth It?',
-    metaDescription: 'Comparing Ocoya, Buffer, and Hootsuite for small businesses and solo creators. Real pricing, real features, and which one wins for Indian freelancers on a budget.',
+    metaDescription: 'Comparing Ocoya, Buffer, and Hootsuite for solopreneurs and small businesses. Real pricing, honest AI features breakdown, and which tool wins for content creators in 2026.',
     faqs: [
       { q: 'Is Ocoya better than Buffer?', a: 'For solo creators and small businesses that also need AI caption writing, Ocoya is the better choice. Buffer is better if you only need scheduling and already have a content pipeline — its interface is cleaner and the free plan is generous.' },
       { q: 'Is Hootsuite worth it for small businesses?', a: 'No. Hootsuite starts at $99/month and is designed for agencies managing 10+ social accounts with team workflows. For small businesses and freelancers, the price is disproportionate to the features you\'ll actually use.' },
       { q: 'What is Ocoya used for?', a: 'Ocoya combines AI social media caption writing with scheduling across Instagram, LinkedIn, Twitter/X, Facebook, TikTok, and Pinterest. It\'s built for creators who want one tool to write and schedule posts instead of using separate tools for each job.' },
       { q: 'Does Buffer have a free plan?', a: 'Yes. Buffer\'s free plan allows 3 social channels and 10 scheduled posts per channel. It\'s a functional free tier for light scheduling use, though the AI features are limited on free.' },
-      { q: 'Which social media scheduling tool is best for Indian freelancers?', a: 'Ocoya at ₹1,260/month is the best value for Indian freelancers who need both AI caption writing and scheduling. Buffer at ~₹500/month is the best option for those who only need scheduling without content creation.' },
+      { q: 'Which social media scheduling tool is best for freelancers on a budget?', a: 'Ocoya at $15/month is the best value for freelancers and small business owners who need both AI caption writing and scheduling in one tool. Buffer at $6/month (or free) is the best option for those who only need scheduling without content creation.' },
     ],
   },
 ];
@@ -373,7 +373,7 @@ function articleSchema({ title, description, canonical }) {
     url: canonical,
     datePublished: TODAY,
     dateModified: TODAY,
-    inLanguage: 'en-IN',
+    inLanguage: 'en-US',
     author: {
       '@type': 'Person',
       name: AUTHOR,
@@ -496,7 +496,7 @@ console.log('\nStatic pages:');
 {
   const canonical = `${SITE}/about`;
   const title = `About ${AUTHOR} — The Person Behind AI Nexus Reviews`;
-  const description = `${AUTHOR} personally tests every AI tool before recommending it. No sponsored reviews. No copying marketing pages. Based in India, testing since 2022.`;
+  const description = `${AUTHOR} personally tests every AI tool before recommending it. No sponsored reviews. No copying marketing pages. Testing since 2022 across writing, audio, video, design, and productivity.`;
   const schemas = [
     {
       '@context': 'https://schema.org',

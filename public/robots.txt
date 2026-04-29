@@ -1,21 +1,78 @@
+# AI Nexus — https://ainexustools.online
+# robots.txt — last updated 2026-04-27
+
+# ── Allow all crawlers by default ─────────────────────────────────────────────
 User-agent: *
 Allow: /
-Disallow: /api/
 
-Sitemap: https://ainexustools.online/sitemap.xml
+# ── Google ────────────────────────────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
 
-# AEO — allow AI crawlers
+User-agent: Googlebot-Image
+Allow: /
+
+# Google AI / Gemini / AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# ── Bing ──────────────────────────────────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# ── Yandex ────────────────────────────────────────────────────────────────────
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 3
+
+# ── OpenAI / ChatGPT ──────────────────────────────────────────────────────────
 User-agent: GPTBot
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── Anthropic / Claude ────────────────────────────────────────────────────────
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
+# ── Perplexity ────────────────────────────────────────────────────────────────
 User-agent: PerplexityBot
 Allow: /
+
+# ── Meta AI ───────────────────────────────────────────────────────────────────
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ── Apple ─────────────────────────────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Cohere ────────────────────────────────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+# ── DuckDuckGo AI ─────────────────────────────────────────────────────────────
+User-agent: DuckAssistBot
+Allow: /
+
+# ── ByteDance / TikTok AI ─────────────────────────────────────────────────────
+User-agent: Bytespider
+Allow: /
+
+# ── Sitemap ───────────────────────────────────────────────────────────────────
+Sitemap: https://ainexustools.online/sitemap.xml
