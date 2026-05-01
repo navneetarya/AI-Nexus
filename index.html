@@ -97,36 +97,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
     <style>
+      /* ── Light mode tokens (default) ── */
       :root {
-        --bg:#F4F7F6; --surf:#FFFFFF; --a1:#0D9488; --a2:#F97316;
-        --txt:#0F1C1A; --mut:rgba(15,28,26,.62); --mut2:rgba(15,28,26,.38);
-        --a1-card:rgba(13,148,136,.07); --a1-brd:rgba(13,148,136,.2);
-        --a2-card:rgba(249,115,22,.07); --a2-brd:rgba(249,115,22,.2);
-        --bar-bg:rgba(244,247,246,.97); --bar-brd:rgba(13,148,136,.14);
+        --bg:        #F0F5F4;
+        --surf:      #FFFFFF;
+        --surf2:     #F4F7F6;
+        --a1:        #0D9488;
+        --a2:        #F97316;
+        --txt:       #0F1C1A;
+        --mut:       rgba(15,28,26,.62);
+        --mut2:      rgba(15,28,26,.38);
+        --a1-card:   rgba(13,148,136,.08);
+        --a1-brd:    rgba(13,148,136,.20);
+        --a2-card:   rgba(249,115,22,.08);
+        --a2-brd:    rgba(249,115,22,.20);
+        --bar-bg:    rgba(240,245,244,.97);
+        --bar-brd:   rgba(13,148,136,.14);
+        --err-bg:    rgba(239,68,68,.05);
+        --err-brd:   rgba(239,68,68,.16);
+        --suk-bg:    rgba(16,185,129,.06);
+        --suk-brd:   rgba(16,185,129,.20);
+        --dark:      #0A1512;
+        /* borders */
+        --brd-xs:    rgba(15,28,26,.05);
+        --brd-sm:    rgba(15,28,26,.07);
+        --brd:       rgba(15,28,26,.10);
+        --brd-md:    rgba(15,28,26,.12);
+        --brd-lg:    rgba(15,28,26,.14);
+        /* shadows */
+        --sh-xs:     rgba(15,28,26,.04);
+        --sh-sm:     rgba(15,28,26,.06);
+        --sh-md:     rgba(15,28,26,.09);
+        --sh-lg:     rgba(15,28,26,.14);
+        /* chip / subtle surfaces */
+        --chip-bg:   rgba(15,28,26,.05);
+        color-scheme: light;
       }
+
+      /* ── Dark mode tokens ── */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg:        #0C1210;
+          --surf:      #141C1A;
+          --surf2:     #1A2422;
+          --a1:        #14B8A6;
+          --a2:        #FB923C;
+          --txt:       #E2EDEA;
+          --mut:       rgba(180,220,210,.60);
+          --mut2:      rgba(180,220,210,.36);
+          --a1-card:   rgba(20,184,166,.12);
+          --a1-brd:    rgba(20,184,166,.24);
+          --a2-card:   rgba(251,146,60,.10);
+          --a2-brd:    rgba(251,146,60,.22);
+          --bar-bg:    rgba(12,18,16,.96);
+          --bar-brd:   rgba(20,184,166,.18);
+          --err-bg:    rgba(239,68,68,.10);
+          --err-brd:   rgba(239,68,68,.28);
+          --suk-bg:    rgba(16,185,129,.10);
+          --suk-brd:   rgba(16,185,129,.28);
+          --dark:      #E2EDEA;
+          /* borders */
+          --brd-xs:    rgba(180,220,210,.06);
+          --brd-sm:    rgba(180,220,210,.09);
+          --brd:       rgba(180,220,210,.12);
+          --brd-md:    rgba(180,220,210,.16);
+          --brd-lg:    rgba(180,220,210,.20);
+          /* shadows */
+          --sh-xs:     rgba(0,0,0,.20);
+          --sh-sm:     rgba(0,0,0,.28);
+          --sh-md:     rgba(0,0,0,.38);
+          --sh-lg:     rgba(0,0,0,.52);
+          /* chip / subtle surfaces */
+          --chip-bg:   rgba(180,220,210,.08);
+          color-scheme: dark;
+        }
+      }
+
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       html { font-size: 16px; scroll-behavior: smooth; }
-      body { -webkit-font-smoothing: antialiased; font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--txt); }
+      body { -webkit-font-smoothing: antialiased; font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--txt); transition: background 0.2s, color 0.2s; }
       a { text-decoration: none; color: inherit; }
       button { font-family: inherit; cursor: pointer; border: none; background: none; }
       img, svg { display: block; }
-      ::selection { background: rgba(13,148,136,0.18); }
-    
-    /* ── Mobile responsive ── */
-    @media(max-width:680px){
-      body { font-size:15px; }
-      h1 { font-size: clamp(28px,8vw,42px) !important; }
-    }
-    /* ── Smooth scrolling ── */
-    html { scroll-behavior:smooth; }
-    /* ── Focus ring ── */
-    :focus-visible { outline: 2px solid var(--a1,#0D9488); outline-offset:2px; }
-    /* ── Scrollbar teal ── */
-    ::-webkit-scrollbar { width:6px; height:6px; }
-    ::-webkit-scrollbar-track { background:transparent; }
-    ::-webkit-scrollbar-thumb { background:rgba(13,148,136,.3); border-radius:10px; }
-    ::-webkit-scrollbar-thumb:hover { background:rgba(13,148,136,.55); }
+      ::selection { background: rgba(13,148,136,0.25); }
 
+      /* ── Mobile responsive ── */
+      @media(max-width:680px){
+        body { font-size:15px; }
+        h1 { font-size: clamp(28px,8vw,42px) !important; }
+      }
+      /* ── Focus ring ── */
+      :focus-visible { outline: 2px solid var(--a1); outline-offset:2px; }
+      /* ── Scrollbar teal ── */
+      ::-webkit-scrollbar { width:6px; height:6px; }
+      ::-webkit-scrollbar-track { background:transparent; }
+      ::-webkit-scrollbar-thumb { background:rgba(13,148,136,.3); border-radius:10px; }
+      ::-webkit-scrollbar-thumb:hover { background:rgba(13,148,136,.55); }
     </style>
   </head>
   <body>

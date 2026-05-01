@@ -3,10 +3,10 @@ import { ArrowLeft, CheckCircle, Mail, ExternalLink, Linkedin } from 'lucide-rea
 import { SITE_CONFIG } from '../constants';
 
 const C = {
-  bg:'#F4F7F6', surf:'#FFFFFF', a1:'#0D9488', a2:'#F97316',
-  txt:'#0F1C1A', mut:'rgba(15,28,26,.62)', mut2:'rgba(15,28,26,.38)',
-  a1card:'rgba(13,148,136,.07)', a1brd:'rgba(13,148,136,.2)',
-  barBg:'rgba(244,247,246,.97)', barBrd:'rgba(13,148,136,.14)',
+  bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
+  txt:'var(--txt)', mut:'var(--mut)', mut2:'var(--mut2)',
+  a1card:'var(--a1-card)', a1brd:'var(--a1-brd)',
+  barBg:'var(--bar-bg)', barBrd:'var(--bar-brd)',
 };
 
 const DOT_BG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Ccircle cx='22' cy='22' r='1.4' fill='rgba(13%2C148%2C136%2C0.1)'/%3E%3C/svg%3E")`;

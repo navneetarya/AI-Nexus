@@ -4,13 +4,13 @@ import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDo
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS } from '../constants';
 
 const C = {
-  bg:'#F4F7F6', surf:'#FFFFFF', a1:'#0D9488', a2:'#F97316',
-  txt:'#0F1C1A', mut:'rgba(15,28,26,.62)', mut2:'rgba(15,28,26,.38)',
-  a1card:'rgba(13,148,136,.07)', a1brd:'rgba(13,148,136,.2)',
-  a2card:'rgba(249,115,22,.07)',  a2brd:'rgba(249,115,22,.2)',
-  errbg:'rgba(239,68,68,.05)', errbrd:'rgba(239,68,68,.16)',
-  sukbg:'rgba(16,185,129,.06)', sukbrd:'rgba(16,185,129,.2)',
-  barBg:'rgba(244,247,246,.97)', barBrd:'rgba(13,148,136,.14)',
+  bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
+  txt:'var(--txt)', mut:'var(--mut)', mut2:'var(--mut2)',
+  a1card:'var(--a1-card)', a1brd:'var(--a1-brd)',
+  a2card:'var(--a2-card)',  a2brd:'var(--a2-brd)',
+  errbg:'var(--err-bg)', errbrd:'var(--err-brd)',
+  sukbg:'var(--suk-bg)', sukbrd:'var(--suk-brd)',
+  barBg:'var(--bar-bg)', barBrd:'var(--bar-brd)',
 };
 
 const CAT_ACCENT: Record<string, 'a1'|'a2'> = {
@@ -203,7 +203,7 @@ function StarRating({ rating, accent }: { rating: number; accent: string }) {
 function FAQItem({ q, a, accent }: { q: string; a: string; accent: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div style={{ borderBottom: `1px solid rgba(15,15,26,.08)` }}>
+    <div style={{ borderBottom: `1px solid var(--brd-xs)` }}>
       <button
         onClick={() => setOpen(o => !o)}
         style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 0', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' as const, gap: 12 }}
@@ -333,7 +333,7 @@ export function ToolPage({ tool, navigate }: ToolPageProps) {
               ⚖️ Compare
             </button>
             <button onClick={() => navigate('/about')}
-              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid rgba(15,15,26,.12)`, cursor: 'pointer' }}>
+              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid var(--brd-md)`, cursor: 'pointer' }}>
               About
             </button>
           </div>
@@ -541,7 +541,7 @@ export function ToolPage({ tool, navigate }: ToolPageProps) {
                   </thead>
                   <tbody>
                     {comparisons.map((row, i) => (
-                      <tr key={i} style={{ borderBottom: `1px solid rgba(15,15,26,.06)`, background: row.ourPick ? cardBg : 'transparent' }}>
+                      <tr key={i} style={{ borderBottom: `1px solid var(--brd-xs)`, background: row.ourPick ? cardBg : 'transparent' }}>
                         <td style={{ padding: '12px 12px', fontWeight: row.ourPick ? 600 : 400, color: row.ourPick ? accent : C.txt }}>
                           {row.name} {row.ourPick && <span style={{ fontSize: 10, background: accent, color: '#fff', borderRadius: 6, padding: '2px 6px', marginLeft: 6 }}>our pick</span>}
                         </td>

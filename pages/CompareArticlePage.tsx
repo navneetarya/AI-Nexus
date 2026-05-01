@@ -3,10 +3,10 @@ import { ArrowLeft, ExternalLink, Check, X, ChevronRight } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 
 const C = {
-  bg: '#F4F7F6', surf: '#FFFFFF', a1: '#0D9488', a2: '#F97316',
-  txt: '#0F1C1A', mut: 'rgba(15,15,26,.66)', mut2: 'rgba(15,15,26,.38)',
-  a1card: 'rgba(13,148,136,.065)', a1brd: 'rgba(13,148,136,.18)',
-  barBg: 'rgba(245,244,255,.97)', barBrd: 'rgba(13,148,136,.13)',
+  bg: 'var(--bg)', surf: 'var(--surf)', a1: 'var(--a1)', a2: 'var(--a2)',
+  txt: 'var(--txt)', mut: 'var(--mut)', mut2: 'var(--mut2)',
+  a1card: 'var(--a1-card)', a1brd: 'var(--a1-brd)',
+  barBg: 'var(--bar-bg)', barBrd: 'var(--bar-brd)',
 };
 
 // ── Compare article data ───────────────────────────────────────────────────
@@ -435,7 +435,7 @@ export function CompareArticlePage({ article, navigate }: Props) {
               ⚖️ Compare
             </button>
             <button onClick={() => navigate('/about')}
-              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid rgba(15,15,26,.12)`, cursor: 'pointer' }}>
+              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid var(--brd-md)`, cursor: 'pointer' }}>
               About
             </button>
           </div>

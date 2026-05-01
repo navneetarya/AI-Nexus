@@ -10,20 +10,20 @@ import { COMPARE_ARTICLES } from './CompareArticlePage';
 
 // ── Design tokens ────────────────────────────────────────────────────────────
 const C = {
-  bg:     '#F0F5F4',
-  surf:   '#FFFFFF',
-  a1:     '#0D9488',
-  a2:     '#F97316',
-  txt:    '#0F1C1A',
-  mut:    'rgba(15,28,26,.58)',
-  mut2:   'rgba(15,28,26,.34)',
-  a1card: 'rgba(13,148,136,.08)',
-  a1brd:  'rgba(13,148,136,.20)',
-  a2card: 'rgba(249,115,22,.08)',
-  a2brd:  'rgba(249,115,22,.20)',
-  barBg:  'rgba(240,245,244,.97)',
-  barBrd: 'rgba(13,148,136,.13)',
-  dark:   '#0A1512',
+  bg:     'var(--bg)',
+  surf:   'var(--surf)',
+  a1:     'var(--a1)',
+  a2:     'var(--a2)',
+  txt:    'var(--txt)',
+  mut:    'var(--mut)',
+  mut2:   'var(--mut2)',
+  a1card: 'var(--a1-card)',
+  a1brd:  'var(--a1-brd)',
+  a2card: 'var(--a2-card)',
+  a2brd:  'var(--a2-brd)',
+  barBg:  'var(--bar-bg)',
+  barBrd: 'var(--bar-brd)',
+  dark:   'var(--dark)',
 };
 
 // ── Per-tool emoji icons ─────────────────────────────────────────────────────
@@ -111,7 +111,7 @@ const ANIM_STYLE = `
 .tool-card-wrap:hover .tool-card-inner {
   transform:translateY(-3px);
   border-color:var(--card-brd) !important;
-  box-shadow:0 14px 40px rgba(15,28,26,.09) !important;
+  box-shadow:0 14px 40px var(--sh-md) !important;
 }
 .cat-pill  { transition:all .15s ease }
 .cat-pill:hover { transform:translateY(-1px) }
@@ -294,7 +294,7 @@ export function HomePage({ navigate }: HomePageProps) {
                 fontSize:15, fontWeight:500, color:C.txt, padding:'12px 12px',
                 borderRadius:8, background:'transparent', border:'none', cursor:'pointer',
                 fontFamily:"'Plus Jakarta Sans',sans-serif",
-                borderBottom:`1px solid rgba(15,28,26,.05)` }}>
+                borderBottom:`1px solid var(--chip-bg)` }}>
               {label}
             </button>
           ))}
@@ -504,7 +504,7 @@ export function HomePage({ navigate }: HomePageProps) {
           {['✅ Grammarly', '🎧 Podcastle', '⚡ Taskade'].map((t, i) => (
             <div key={i} style={{ background:C.surf, border:`1px solid ${C.a1brd}`,
               borderRadius:9, padding:'7px 13px', fontSize:12, fontWeight:600,
-              color:C.txt, boxShadow:'0 2px 10px rgba(15,28,26,.06)',
+              color:C.txt, boxShadow:'0 2px 10px var(--sh-sm)',
               animation:`fadeIn .6s ease ${.4+i*.13}s both`,
               whiteSpace:'nowrap' as const }}>
               {t}
@@ -517,7 +517,7 @@ export function HomePage({ navigate }: HomePageProps) {
           {['💻 Replit', '📱 Ocoya', '✍️ Rytr'].map((t, i) => (
             <div key={i} style={{ background:C.surf, border:`1px solid ${C.a2brd}`,
               borderRadius:9, padding:'7px 13px', fontSize:12, fontWeight:600,
-              color:C.txt, boxShadow:'0 2px 10px rgba(15,28,26,.06)',
+              color:C.txt, boxShadow:'0 2px 10px var(--sh-sm)',
               animation:`fadeIn .6s ease ${.5+i*.13}s both`,
               whiteSpace:'nowrap' as const }}>
               {t}
@@ -596,7 +596,7 @@ export function HomePage({ navigate }: HomePageProps) {
                 onClick={() => { setFilters({ search:'', category:cat as any }); scrollToId('tools-section'); }}
                 style={{ fontSize:12.5, fontWeight:500, color:C.mut, padding:'6px 13px',
                   borderRadius:100, background:'transparent',
-                  border:`1px solid rgba(15,28,26,.13)`, cursor:'pointer',
+                  border:`1px solid var(--brd-lg)`, cursor:'pointer',
                   fontFamily:"'Plus Jakarta Sans',sans-serif" }}>
                 {label}
               </button>
@@ -631,7 +631,7 @@ export function HomePage({ navigate }: HomePageProps) {
             <span key={i} style={{ fontSize:11.5, fontWeight:500, color:C.mut2,
               padding:'0 18px', whiteSpace:'nowrap' as const,
               display:'inline-flex', alignItems:'center', gap:5,
-              borderRight:`1px solid rgba(15,28,26,.07)` }}>
+              borderRight:`1px solid var(--brd-sm)` }}>
               <span>{TOOL_EMOJI[t.slug] ?? '🤖'}</span> {t.name}
             </span>
           ))}
@@ -680,7 +680,7 @@ export function HomePage({ navigate }: HomePageProps) {
                     borderRadius:13, border:`1.5px solid ${brd}`, background:bg,
                     cursor:'pointer', textAlign:'left' as const,
                     fontFamily:"'Plus Jakarta Sans',sans-serif",
-                    boxShadow:'0 1px 4px rgba(15,28,26,.04)' }}>
+                    boxShadow:'0 1px 4px var(--sh-xs)' }}>
                   <div style={{ width:40, height:40, borderRadius:11, background:accent,
                     display:'flex', alignItems:'center', justifyContent:'center',
                     fontSize:19, flexShrink:0, boxShadow:`0 2px 8px ${accent}40` }}>
@@ -732,7 +732,7 @@ export function HomePage({ navigate }: HomePageProps) {
                 onClick={() => setFilters(f => ({ ...f, category:cat as any }))}
                 style={{ padding:'7px 16px', borderRadius:100, fontSize:12.5,
                   fontWeight:active?700:500, fontFamily:"'Plus Jakarta Sans',sans-serif",
-                  border:`1.5px solid ${active ? abrd : 'rgba(15,28,26,.11)'}`,
+                  border:`1.5px solid ${active ? abrd : 'var(--brd)'}`,
                   background:active ? abg : C.surf, color:active ? ac : C.mut,
                   cursor:'pointer', boxShadow:active?`0 2px 8px ${ac}1e`:'none' }}>
                 {cat !== 'All' && CAT_EMOJI[cat] ? `${CAT_EMOJI[cat]} ` : ''}{cat}
@@ -795,9 +795,9 @@ function BlogCompareCard({ article, navigate, idx }: {
   return (
     <div className="blog-card scroll-reveal"
       onClick={() => navigate(`/compare/${article.slug}`)}
-      style={{ background:C.surf, borderRadius:18, border:`1.5px solid rgba(15,28,26,.08)`,
+      style={{ background:C.surf, borderRadius:18, border:`1.5px solid var(--brd-xs)`,
         cursor:'pointer', overflow:'hidden',
-        boxShadow:'0 2px 8px rgba(15,28,26,.05)',
+        boxShadow:'0 2px 8px var(--chip-bg)',
         animationDelay:`${idx * 0.07}s` }}>
 
       {/* Article header band */}
@@ -861,18 +861,18 @@ function BlogCompareCard({ article, navigate, idx }: {
         <div style={{ display:'flex', alignItems:'center', gap:8,
           marginBottom:18, flexWrap:'wrap' as const }}>
           <span style={{ fontSize:11, color:C.mut2, fontWeight:500,
-            background:'rgba(15,28,26,.05)', padding:'3px 9px', borderRadius:6 }}>
+            background:'var(--chip-bg)', padding:'3px 9px', borderRadius:6 }}>
             📅 {article.publishDate}
           </span>
           <span style={{ fontSize:11, color:C.mut2, fontWeight:500,
-            background:'rgba(15,28,26,.05)', padding:'3px 9px', borderRadius:6 }}>
+            background:'var(--chip-bg)', padding:'3px 9px', borderRadius:6 }}>
             {article.comparisonTable?.length ?? 3} tools compared
           </span>
         </div>
 
         {/* Footer CTA */}
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',
-          borderTop:`1px solid rgba(15,28,26,.07)`, paddingTop:14 }}>
+          borderTop:`1px solid var(--brd-sm)`, paddingTop:14 }}>
           <div style={{ display:'flex', alignItems:'center', gap:6 }}>
             <span style={{ fontSize:10, fontWeight:700, textTransform:'uppercase' as const,
               color:C.mut2, letterSpacing:'0.06em' }}>Winner</span>
@@ -922,10 +922,10 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
 
       <div className="tool-card-inner"
         style={{ background:C.surf, borderRadius:15,
-          border:`1.5px solid rgba(15,28,26,.08)`,
+          border:`1.5px solid var(--brd-xs)`,
           padding:'20px 22px', overflow:'hidden',
           position:'relative' as const,
-          boxShadow:'0 1px 4px rgba(15,28,26,.04)' }}>
+          boxShadow:'0 1px 4px var(--sh-xs)' }}>
 
         {/* Accent bar */}
         <div style={{ position:'absolute', top:0, left:0, right:0, height:3,
@@ -978,15 +978,15 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
           <div style={{ display:'flex', flexWrap:'wrap' as const, gap:5, marginBottom:14 }}>
             {tool.features.slice(0, 3).map((f, i) => (
               <span key={i} style={{ fontSize:11, color:C.mut,
-                background:'rgba(15,28,26,.05)', padding:'3px 8px', borderRadius:6,
-                border:'1px solid rgba(15,28,26,.08)' }}>{f}</span>
+                background:'var(--chip-bg)', padding:'3px 8px', borderRadius:6,
+                border:'1px solid var(--brd-xs)' }}>{f}</span>
             ))}
           </div>
         )}
 
         {/* Footer */}
         <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
-          borderTop:`1px solid rgba(15,28,26,.07)`, paddingTop:12 }}>
+          borderTop:`1px solid var(--brd-sm)`, paddingTop:12 }}>
           <span style={{ fontSize:11.5, color:C.mut2 }}>Best for: {tool.bestFor}</span>
           {isAffiliatePick
             ? <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12,
