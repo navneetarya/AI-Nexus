@@ -122,6 +122,10 @@ const ANIM_STYLE = `
 @keyframes slideDown{ from{opacity:0;transform:translateY(-8px)} to{opacity:1;transform:translateY(0)} }
 @keyframes scaleIn  { from{opacity:0;transform:scale(.95)} to{opacity:1;transform:scale(1)} }
 @keyframes ticker   { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+@keyframes floatA   { 0%,100%{transform:translateY(0px) rotate(-1deg)} 50%{transform:translateY(-10px) rotate(1deg)} }
+@keyframes floatB   { 0%,100%{transform:translateY(-5px) rotate(.8deg)} 50%{transform:translateY(5px) rotate(-1.2deg)} }
+@keyframes floatC   { 0%,100%{transform:translateY(-2px) rotate(.5deg)} 50%{transform:translateY(8px) rotate(-1deg)} }
+@keyframes floatD   { 0%,100%{transform:translateY(4px) rotate(-1.5deg)} 50%{transform:translateY(-6px) rotate(1deg)} }
 
 .anim-fade-up  { animation:fadeUp  .55s cubic-bezier(.22,1,.36,1) both }
 .anim-fade-in  { animation:fadeIn  .5s ease both }
@@ -166,12 +170,24 @@ html { scroll-behavior:smooth }
 ::-webkit-scrollbar-thumb:hover { background:rgba(13,148,136,.5) }
 `;
 
-// ── Pencil SVG logo icon ─────────────────────────────────────────────────────
-const PencilIcon = () => (
-  <svg width="17" height="17" viewBox="0 0 18 18" fill="none">
-    <path d="M13.5 2.25a1.5 1.5 0 0 1 2.25 2L6 14l-3 .75.75-3L13.5 2.25Z"
-      stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M11.25 4.5l2.25 2.25" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/>
+// ── Nexus SVG logomark — node-and-connection "N" motif ───────────────────────
+// Works at 16 px (favicon) through 160 px (OG image). Four nodes at corners
+// connected by strokes that trace the letter N; a fifth hub node sits at the
+// diagonal cross-point, making the "nexus" concept literal.
+const NexusIcon = ({ size = 20 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* Connection lines forming N */}
+    <line x1="4" y1="16" x2="4"  y2="4"  stroke="rgba(255,255,255,.55)" strokeWidth="1.6" strokeLinecap="round"/>
+    <line x1="4" y1="4"  x2="16" y2="16" stroke="rgba(255,255,255,.55)" strokeWidth="1.6" strokeLinecap="round"/>
+    <line x1="16" y1="4" x2="16" y2="16" stroke="rgba(255,255,255,.55)" strokeWidth="1.6" strokeLinecap="round"/>
+    {/* Corner nodes */}
+    <circle cx="4"  cy="4"  r="2.2" fill="#fff"/>
+    <circle cx="4"  cy="16" r="2.2" fill="#fff"/>
+    <circle cx="16" cy="4"  r="2.2" fill="#fff"/>
+    <circle cx="16" cy="16" r="2.2" fill="#fff"/>
+    {/* Hub node at diagonal cross-point — the "nexus" */}
+    <circle cx="10" cy="10" r="2.8" fill="#fff" opacity=".9"/>
+    <circle cx="10" cy="10" r="1.4" fill="rgba(13,148,136,.7)"/>
   </svg>
 );
 
@@ -235,7 +251,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         background:`linear-gradient(135deg,${C.a1},#0b7a6e)`,
         display:'flex', alignItems:'center', justifyContent:'center',
         boxShadow:`0 2px 10px rgba(13,148,136,.32)` }}>
-        <PencilIcon/>
+        <NexusIcon size={20}/>
       </div>
       <div>
         <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:16,
@@ -535,43 +551,93 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         <div style={{ position:'absolute', inset:0, pointerEvents:'none',
           background:`radial-gradient(ellipse 45% 45% at -5% 105%, rgba(249,115,22,.05) 0%, transparent 65%)` }}/>
 
-        {/* Floating mini tool cards */}
-        <div className="hero-float"
-          style={{ position:'absolute', top:24, right:36, display:'flex',
-            flexDirection:'column', gap:7, opacity:0.68, pointerEvents:'none' }}>
-          {['grammarly','podcastle','taskade'].map((slug, i) => {
-            const t = TOOLS.find(x => x.slug === slug);
-            return (
-              <div key={i} style={{ background:C.surf, border:`1px solid ${C.a1brd}`,
-                borderRadius:9, padding:'7px 13px', fontSize:12, fontWeight:600,
-                color:C.txt, boxShadow:'0 2px 10px var(--sh-sm)',
-                animation:`fadeIn .6s ease ${.4+i*.13}s both`,
-                whiteSpace:'nowrap' as const,
-                display:'flex', alignItems:'center', gap:6 }}>
-                <ToolLogo slug={slug} size={14} name={t?.name} color={t?.color} />
-                {t?.name ?? slug}
+        {/* ── Floating animated tool cards ─────────────────────────────── */}
+        {/* Right cluster */}
+        {([
+          { slug:'grammarly', rating:'4.8', badge:'Writing',    anim:'floatA', delay:'0.3s', dur:'5.8s', top:18,  right:32 },
+          { slug:'podcastle', rating:'4.7', badge:'Audio',      anim:'floatB', delay:'0.5s', dur:'6.4s', top:108, right:52 },
+          { slug:'taskade',   rating:'4.6', badge:'Productivity',anim:'floatC', delay:'0.8s', dur:'7.1s', top:196, right:24 },
+        ] as const).map(({ slug, rating, badge, anim, delay, dur, top, right }) => {
+          const t = TOOLS.find(x => x.slug === slug);
+          const ac = CAT_ACCENT[t?.category ?? 'Writing'] === 'a2' ? C.a2 : C.a1;
+          return (
+            <div key={slug} className="hero-float" style={{ position:'absolute', top, right,
+              pointerEvents:'none',
+              animation:`fadeIn .7s ease ${delay} both, ${anim} ${dur} ease-in-out ${delay} infinite` }}>
+              <div style={{ background:C.surf, border:`1.5px solid ${C.a1brd}`,
+                borderRadius:14, padding:'10px 14px', minWidth:160,
+                boxShadow:'0 6px 28px rgba(13,148,136,.13), 0 1px 4px rgba(0,0,0,.10)',
+                backdropFilter:'blur(8px)', WebkitBackdropFilter:'blur(8px)' }}>
+                <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:6 }}>
+                  <div style={{ width:28, height:28, borderRadius:8, background:'#fff',
+                    border:`1.5px solid ${ac}28`, display:'flex', alignItems:'center',
+                    justifyContent:'center', flexShrink:0, overflow:'hidden' }}>
+                    <ToolLogo slug={slug} size={20} name={t?.name} color={ac} />
+                  </div>
+                  <div>
+                    <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700,
+                      fontSize:12.5, color:C.txt, lineHeight:1.2 }}>{t?.name ?? slug}</div>
+                    <div style={{ fontSize:10, color:ac, fontWeight:600,
+                      background:`${ac}12`, padding:'1px 6px', borderRadius:4,
+                      display:'inline-block', marginTop:1 }}>{badge}</div>
+                  </div>
+                </div>
+                <div style={{ display:'flex', alignItems:'center', gap:3 }}>
+                  {[1,2,3,4,5].map(s => (
+                    <svg key={s} width="10" height="10" viewBox="0 0 10 10">
+                      <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
+                        fill={s <= Math.floor(parseFloat(rating)) ? ac : 'var(--brd)'}/>
+                    </svg>
+                  ))}
+                  <span style={{ fontSize:10, fontWeight:700, color:C.mut, marginLeft:3 }}>{rating}</span>
+                </div>
               </div>
-            );
-          })}
-        </div>
-        <div className="hero-float"
-          style={{ position:'absolute', bottom:28, left:36, display:'flex',
-            flexDirection:'column', gap:7, opacity:0.62, pointerEvents:'none' }}>
-          {['replit','ocoya','rytr'].map((slug, i) => {
-            const t = TOOLS.find(x => x.slug === slug);
-            return (
-              <div key={i} style={{ background:C.surf, border:`1px solid ${C.a2brd}`,
-                borderRadius:9, padding:'7px 13px', fontSize:12, fontWeight:600,
-                color:C.txt, boxShadow:'0 2px 10px var(--sh-sm)',
-                animation:`fadeIn .6s ease ${.5+i*.13}s both`,
-                whiteSpace:'nowrap' as const,
-                display:'flex', alignItems:'center', gap:6 }}>
-                <ToolLogo slug={slug} size={14} name={t?.name} color={t?.color} />
-                {t?.name ?? slug}
+            </div>
+          );
+        })}
+
+        {/* Left cluster */}
+        {([
+          { slug:'rytr',   rating:'4.5', badge:'Writing', anim:'floatD', delay:'0.4s', dur:'6.2s', bottom:80, left:28 },
+          { slug:'ocoya',  rating:'4.6', badge:'Marketing',anim:'floatB', delay:'0.7s', dur:'5.5s', bottom:10, left:58 },
+        ] as const).map(({ slug, rating, badge, anim, delay, dur, bottom, left }) => {
+          const t = TOOLS.find(x => x.slug === slug);
+          const ac = CAT_ACCENT[t?.category ?? 'Marketing'] === 'a2' ? C.a2 : C.a1;
+          return (
+            <div key={slug} className="hero-float" style={{ position:'absolute', bottom, left,
+              pointerEvents:'none',
+              animation:`fadeIn .7s ease ${delay} both, ${anim} ${dur} ease-in-out ${delay} infinite` }}>
+              <div style={{ background:C.surf, border:`1.5px solid ${C.a2brd}`,
+                borderRadius:14, padding:'10px 14px', minWidth:148,
+                boxShadow:'0 6px 28px rgba(249,115,22,.10), 0 1px 4px rgba(0,0,0,.10)',
+                backdropFilter:'blur(8px)', WebkitBackdropFilter:'blur(8px)' }}>
+                <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:6 }}>
+                  <div style={{ width:28, height:28, borderRadius:8, background:'#fff',
+                    border:`1.5px solid ${ac}28`, display:'flex', alignItems:'center',
+                    justifyContent:'center', flexShrink:0, overflow:'hidden' }}>
+                    <ToolLogo slug={slug} size={20} name={t?.name} color={ac} />
+                  </div>
+                  <div>
+                    <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700,
+                      fontSize:12.5, color:C.txt, lineHeight:1.2 }}>{t?.name ?? slug}</div>
+                    <div style={{ fontSize:10, color:ac, fontWeight:600,
+                      background:`${ac}12`, padding:'1px 6px', borderRadius:4,
+                      display:'inline-block', marginTop:1 }}>{badge}</div>
+                  </div>
+                </div>
+                <div style={{ display:'flex', alignItems:'center', gap:3 }}>
+                  {[1,2,3,4,5].map(s => (
+                    <svg key={s} width="10" height="10" viewBox="0 0 10 10">
+                      <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
+                        fill={s <= Math.floor(parseFloat(rating)) ? ac : 'var(--brd)'}/>
+                    </svg>
+                  ))}
+                  <span style={{ fontSize:10, fontWeight:700, color:C.mut, marginLeft:3 }}>{rating}</span>
+                </div>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
 
         {/* Hero content */}
         <div style={{ maxWidth:600, margin:'0 auto', textAlign:'center', position:'relative', zIndex:2 }}>
