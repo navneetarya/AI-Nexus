@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowLeft, ExternalLink, Check, X, ChevronRight } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
+import { SharedNav } from './SharedNav';
 
 const C = {
   bg: 'var(--bg)', surf: 'var(--surf)', a1: 'var(--a1)', a2: 'var(--a2)',
@@ -409,46 +410,10 @@ interface Props {
 
 export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: Props) {
   return (
-    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif" }}>
+    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', system-ui, sans-serif" }}>
 
       {/* Nav bar */}
-      <nav style={{
-        position: 'sticky', top: 0, zIndex: 100,
-        background: C.barBg, borderBottom: `1px solid ${C.barBrd}`,
-        backdropFilter: 'blur(12px)',
-        padding: '0 28px',
-      }}>
-        <div style={{ maxWidth: 1160, margin: '0 auto', display: 'flex', alignItems: 'center', height: 58, justifyContent: 'space-between' }}>
-          {/* Logo */}
-          <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', gap: 0 }}>
-            <div style={{ width: 4, height: 28, background: `linear-gradient(180deg, ${C.a1}, #F97316)`, borderRadius: 2, marginRight: 12 }} />
-            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, letterSpacing: '-0.02em' }}>
-              AI<span style={{ color: C.a1 }}>Nexus</span>
-            </span>
-          </div>
-          {/* Nav links */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <button onClick={() => navigate('/')}
-              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: 'none', cursor: 'pointer' }}>
-              All Tools
-            </button>
-            <button onClick={() => navigate('/')}
-              style={{ fontSize: 13, fontWeight: 600, color: C.a1, padding: '7px 14px', borderRadius: 100, background: 'rgba(13,148,136,.065)', border: `1.5px solid rgba(13,148,136,.18)`, cursor: 'pointer' }}>
-              ⚖️ Compare
-            </button>
-            <button onClick={() => navigate('/about')}
-              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid var(--brd-md)`, cursor: 'pointer' }}>
-              About
-            </button>
-            <button onClick={toggleTheme} aria-label="Toggle theme"
-              style={{ width:34, height:34, borderRadius:8, border:`1.5px solid ${C.a1brd}`,
-                background:C.a1card, cursor:'pointer', fontSize:15,
-                display:'flex', alignItems:'center', justifyContent:'center' }}>
-              {isDark ? '☀️' : '🌙'}
-            </button>
-          </div>
-        </div>
-      </nav>
+      <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="compare" />
 
       <main style={{ maxWidth: 760, margin: '0 auto', padding: '2.5rem 1.25rem 5rem' }}>
 

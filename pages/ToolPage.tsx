@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Tool } from '../types';
 import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award, Scale, Sun, Moon } from 'lucide-react';
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS } from '../constants';
+import { SharedNav } from './SharedNav';
 
 const C = {
   bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
@@ -434,36 +435,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
       {/* Nav */}
-      <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: C.barBg, backdropFilter: 'blur(16px)', borderBottom: `1px solid ${C.barBrd}`, padding: '0 28px' }}>
-        <div style={{ maxWidth: 1160, margin: '0 auto', height: 58, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          {/* Logo */}
-          <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', gap: 0 }}>
-            <div style={{ width: 4, height: 28, background: `linear-gradient(180deg,${C.a1},${C.a2})`, borderRadius: 2, marginRight: 12 }} />
-            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, letterSpacing: '-0.02em' }}>AI<span style={{ color: C.a1 }}>Nexus</span></span>
-          </div>
-          {/* Nav links */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <button onClick={() => navigate('/')}
-              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6 }}>
-              <ArrowLeft size={13} /> All Tools
-            </button>
-            <button onClick={() => navigate('/')}
-              style={{ fontSize: 13, fontWeight: 600, color: C.a1, padding: '7px 14px', borderRadius: 100, background: C.a1card, border: `1.5px solid ${C.a1brd}`, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6 }}>
-              <Scale size={13} /> Compare
-            </button>
-            <button onClick={() => navigate('/about')}
-              style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid var(--brd-md)`, cursor: 'pointer' }}>
-              About
-            </button>
-            <button onClick={toggleTheme} aria-label="Toggle theme"
-              style={{ width:34, height:34, borderRadius:8, border:`1.5px solid ${C.a1brd}`,
-                background:C.a1card, cursor:'pointer', fontSize:15,
-                display:'flex', alignItems:'center', justifyContent:'center' }}>
-              {isDark ? <Sun size={15} color={C.a1} /> : <Moon size={15} color={C.a1} />}
-            </button>
-          </div>
-        </div>
-      </nav>
+      <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="tool" />
 
       {/* Breadcrumb */}
       <div style={{ maxWidth: 860, margin: '0 auto', padding: '12px 28px 0', fontSize: 12, color: C.mut2 }}>

@@ -9,6 +9,7 @@ import {
   Mic, Megaphone, Palette, Code2, Scale, Sun, Moon, Calendar,
 } from 'lucide-react';
 import { COMPARE_ARTICLES } from './CompareArticlePage';
+import { SharedNav } from './SharedNav';
 
 // ── Design tokens ────────────────────────────────────────────────────────────
 const C = {
@@ -199,7 +200,6 @@ interface HomePageProps { navigate: (to: string) => void; isDark: boolean; toggl
 // ── Main component ───────────────────────────────────────────────────────────
 export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   const [filters, setFilters]     = useState<FilterState>({ search: '', category: 'All' as any });
-  const [mobileNav, setMobileNav] = useState(false);
   const [view, setView]           = useState<'home' | 'compare'>('home');
 
   // ── Memos — MUST come before any useEffect that references them ─────────
@@ -231,13 +231,11 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   }, [filtered, view]);
 
   const scrollToId = (id: string) => {
-    setMobileNav(false);
     setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 60);
   };
 
   const goCompare = () => {
     setView('compare');
-    setMobileNav(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -246,7 +244,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // ── Logo ─────────────────────────────────────────────────────────────────
+  // ── Logo (used in Footer dark band) ──────────────────────────────────────
   const Logo = ({ dark = false }: { dark?: boolean }) => (
     <div onClick={goHome}
       style={{ display:'flex', alignItems:'center', gap:9, cursor:'pointer', flexShrink:0 }}>
@@ -270,96 +268,16 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
     </div>
   );
 
-  // ── Shared nav ───────────────────────────────────────────────────────────
+  // ── Nav — uses SharedNav so all pages are consistent ─────────────────────
   const Nav = () => (
-    <nav style={{ position:'sticky', top:0, zIndex:200,
-      background:C.barBg, backdropFilter:'blur(22px)',
-      WebkitBackdropFilter:'blur(22px)', borderBottom:`1px solid ${C.barBrd}` }}>
-      <div style={{ maxWidth:1200, margin:'0 auto', height:60,
-        display:'flex', alignItems:'center', justifyContent:'space-between', padding:'0 20px' }}>
-
-        <Logo/>
-
-        {/* Desktop nav */}
-        <div id="desktop-nav" style={{ display:'flex', alignItems:'center', gap:2 }}>
-          <button className="nav-btn" onClick={() => { setView('home'); scrollToId('tools-section'); }}
-            style={{ fontSize:14, fontWeight:500, color:view==='home'?C.a1:C.mut,
-              padding:'7px 13px', borderRadius:8, background: view==='home'?C.a1card:'transparent',
-              border:'none', cursor:'pointer', fontFamily:"'DM Sans',sans-serif" }}>
-            All Tools
-          </button>
-          <button className="nav-btn" onClick={goCompare}
-            style={{ fontSize:14, fontWeight:600,
-              color: view==='compare' ? '#fff' : C.a1,
-              padding:'7px 15px', borderRadius:8,
-              background: view==='compare'
-                ? `linear-gradient(135deg,${C.a1},#0b7a6e)`
-                : C.a1card,
-              border:`1.5px solid ${C.a1brd}`, cursor:'pointer',
-              fontFamily:"'DM Sans',sans-serif",
-              boxShadow: view==='compare' ? '0 2px 8px rgba(13,148,136,.28)' : 'none',
-              display:'flex', alignItems:'center', gap:6 }}>
-            <Scale size={14}/> Compare
-          </button>
-          <button className="nav-btn" onClick={() => navigate('/about')}
-            style={{ fontSize:14, fontWeight:500, color:C.mut, padding:'7px 13px',
-              borderRadius:8, background:'transparent', border:'none', cursor:'pointer',
-              fontFamily:"'DM Sans',sans-serif" }}>
-            About
-          </button>
-          <a href={`mailto:${SITE_CONFIG.email}`}
-            style={{ display:'flex', alignItems:'center', gap:6, fontSize:13,
-              fontWeight:600, color:'#fff', padding:'8px 17px', borderRadius:9,
-              background:`linear-gradient(135deg,${C.a1},#0b7a6e)`,
-              textDecoration:'none', marginLeft:6,
-              boxShadow:'0 2px 8px rgba(13,148,136,.28)' }}>
-            <Mail size={13}/> Contact
-          </a>
-          <button onClick={toggleTheme} aria-label="Toggle theme"
-            style={{ width:36, height:36, borderRadius:9, border:`1.5px solid ${C.a1brd}`,
-              background:C.a1card, cursor:'pointer', fontSize:16, marginLeft:4,
-              display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-            {isDark ? <Sun size={16} color={C.a1} /> : <Moon size={16} color={C.a1} />}
-          </button>
-        </div>
-
-        {/* Hamburger */}
-        <button id="hamburger-btn" onClick={() => setMobileNav(v => !v)} aria-label="Menu"
-          style={{ display:'none', alignItems:'center', justifyContent:'center',
-            width:38, height:38, borderRadius:9, border:`1.5px solid ${C.a1brd}`,
-            background:C.a1card, cursor:'pointer' }}>
-          {mobileNav ? <X size={18} color={C.a1}/> : <Menu size={18} color={C.a1}/>}
-        </button>
-      </div>
-
-      {/* Mobile dropdown */}
-      {mobileNav && (
-        <div className="anim-slide-down"
-          style={{ background:C.surf, borderTop:`1px solid ${C.barBrd}`, padding:'10px 16px 18px' }}>
-          {[
-            { label:'All Tools',   fn: () => { setView('home'); scrollToId('tools-section'); } },
-            { label:'Compare',     fn: goCompare },
-            { label:'About',       fn: () => { setMobileNav(false); navigate('/about'); } },
-            { label:'Disclosure',  fn: () => { setMobileNav(false); navigate('/disclosure'); } },
-          ].map(({ label, fn }) => (
-            <button key={label} onClick={fn}
-              style={{ display:'block', width:'100%', textAlign:'left' as const,
-                fontSize:15, fontWeight:500, color:C.txt, padding:'12px 12px',
-                borderRadius:8, background:'transparent', border:'none', cursor:'pointer',
-                fontFamily:"'DM Sans',sans-serif",
-                borderBottom:`1px solid var(--chip-bg)` }}>
-              {label}
-            </button>
-          ))}
-          <a href={`mailto:${SITE_CONFIG.email}`}
-            style={{ display:'flex', alignItems:'center', justifyContent:'center',
-              gap:8, fontSize:14, fontWeight:600, color:'#fff', padding:'12px',
-              borderRadius:10, background:C.a1, textDecoration:'none', marginTop:10 }}>
-            <Mail size={14}/> {SITE_CONFIG.email}
-          </a>
-        </div>
-      )}
-    </nav>
+    <SharedNav
+      navigate={navigate}
+      isDark={isDark}
+      toggleTheme={toggleTheme}
+      activePage={view === 'compare' ? 'compare' : 'home'}
+      onCompare={goCompare}
+      onAllTools={() => { setView('home'); scrollToId('tools-section'); }}
+    />
   );
 
   // ── Footer ───────────────────────────────────────────────────────────────

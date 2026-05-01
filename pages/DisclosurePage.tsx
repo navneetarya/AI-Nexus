@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
+import { SharedNav } from './SharedNav';
 
 const C = {
   bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
@@ -11,19 +12,7 @@ const C = {
 export function DisclosurePage({ navigate, isDark, toggleTheme }: { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void }) {
   return (
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
-      <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: C.barBg, backdropFilter: 'blur(16px)', borderBottom: `1px solid ${C.barBrd}`, padding: '0 28px' }}>
-        <div style={{ maxWidth: 760, margin: '0 auto', height: 58, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <button onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 7, color: C.mut, fontSize: 14, fontWeight: 500 }}>
-            <ArrowLeft size={15} /> Home
-          </button>
-          <button onClick={toggleTheme} aria-label="Toggle theme"
-            style={{ width:34, height:34, borderRadius:8, border:`1.5px solid ${C.a1brd}`,
-              background:C.a1card, cursor:'pointer', fontSize:15,
-              display:'flex', alignItems:'center', justifyContent:'center' }}>
-            {isDark ? '☀️' : '🌙'}
-          </button>
-        </div>
-      </nav>
+      <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '48px 28px 80px' }}>
         <div style={{ background: C.surf, borderRadius: 20, border: `1.5px solid ${C.a1brd}`, padding: '40px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 6, background: `linear-gradient(180deg,${C.a1},${C.a2})` }} />

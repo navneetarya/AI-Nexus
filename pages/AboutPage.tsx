@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowLeft, CheckCircle, Mail, ExternalLink, Linkedin } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
+import { SharedNav } from './SharedNav';
 
 const C = {
   bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
@@ -34,25 +35,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
 
-      <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: C.barBg, backdropFilter: 'blur(16px)', borderBottom: `1px solid ${C.barBrd}`, padding: '0 28px' }}>
-        <div style={{ maxWidth: 760, margin: '0 auto', height: 58, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <button onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 7, color: C.mut, fontSize: 14, fontWeight: 500 }}>
-            <ArrowLeft size={15} /> All tools
-          </button>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-              <div style={{ width: 3, height: 22, background: `linear-gradient(180deg,${C.a1},${C.a2})`, borderRadius: 2, marginRight: 10 }} />
-              <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 16 }}>AI<span style={{ color: C.a1 }}>Nexus</span></span>
-            </div>
-            <button onClick={toggleTheme} aria-label="Toggle theme"
-              style={{ width:34, height:34, borderRadius:8, border:`1.5px solid ${C.a1brd}`,
-                background:C.a1card, cursor:'pointer', fontSize:15,
-                display:'flex', alignItems:'center', justifyContent:'center' }}>
-              {isDark ? '☀️' : '🌙'}
-            </button>
-          </div>
-        </div>
-      </nav>
+      <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="about" />
 
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '48px 28px 80px' }}>
 
