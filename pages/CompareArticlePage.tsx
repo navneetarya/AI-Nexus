@@ -4,10 +4,12 @@ import { SITE_CONFIG } from '../constants';
 import { SharedNav } from './SharedNav';
 
 const C = {
-  bg: 'var(--bg)', surf: 'var(--surf)', a1: 'var(--a1)', a2: 'var(--a2)',
+  bg: 'var(--bg)', surf: 'var(--surf)', surf2: 'var(--surf2)', a1: 'var(--a1)', a2: 'var(--a2)',
   txt: 'var(--txt)', mut: 'var(--mut)', mut2: 'var(--mut2)',
   a1card: 'var(--a1-card)', a1brd: 'var(--a1-brd)',
+  a2card: 'var(--a2-card)', a2brd: 'var(--a2-brd)',
   barBg: 'var(--bar-bg)', barBrd: 'var(--bar-brd)',
+  brdSm: 'var(--brd-sm)', brdXs: 'var(--brd-xs)',
 };
 
 // ── Compare article data ───────────────────────────────────────────────────
@@ -448,26 +450,36 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
           At a glance — pricing & features
         </h2>
         <div style={{ overflowX: 'auto', marginBottom: '2.5rem' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14, background: C.surf, borderRadius: 12, overflow: 'hidden', boxShadow: '0 1px 4px rgba(0,0,0,.07)' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14, background: C.surf, borderRadius: 12, overflow: 'hidden', boxShadow: '0 1px 8px var(--brd-xs)' }}>
             <thead>
               <tr style={{ background: C.a1, color: '#fff' }}>
                 {['Tool', 'Price/mo', 'USD/mo', 'Free plan', 'AI captions', 'Platforms', 'Best for'].map(h => (
-                  <th key={h} style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 600, whiteSpace: 'nowrap', fontSize: 12 }}>{h}</th>
+                  <th key={h} style={{ padding: '12px 14px', textAlign: 'left', fontWeight: 600, whiteSpace: 'nowrap', fontSize: 12 }}>{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
               {article.comparisonTable.map((row, i) => (
-                <tr key={i} style={{ background: row.ourPick ? 'rgba(13,148,136,.04)' : i % 2 === 0 ? '#fff' : '#fafafa', borderBottom: '1px solid rgba(0,0,0,.05)' }}>
-                  <td style={{ padding: '10px 14px', fontWeight: row.ourPick ? 700 : 500, color: row.ourPick ? C.a1 : C.txt }}>
-                    {row.name}{row.ourPick && <span style={{ marginLeft: 6, background: C.a1, color: '#fff', borderRadius: 4, fontSize: 10, padding: '2px 6px', fontWeight: 700 }}>Our pick</span>}
+                <tr key={i} style={{
+                  background: row.ourPick
+                    ? C.a1card
+                    : i % 2 === 0 ? C.surf : C.surf2,
+                  borderBottom: `1px solid ${C.brdSm}`,
+                }}>
+                  <td style={{ padding: '12px 14px', fontWeight: row.ourPick ? 700 : 500, color: row.ourPick ? C.a1 : C.txt }}>
+                    {row.name}
+                    {row.ourPick && (
+                      <span style={{ marginLeft: 6, background: C.a1, color: '#fff', borderRadius: 4, fontSize: 10, padding: '2px 6px', fontWeight: 700 }}>
+                        Our pick
+                      </span>
+                    )}
                   </td>
-                  <td style={{ padding: '10px 14px', color: C.mut }}>{row.price}</td>
-                  <td style={{ padding: '10px 14px', color: C.mut }}>{row.priceUSD}</td>
-                  <td style={{ padding: '10px 14px' }}>{row.freeplan ? <Check size={15} color="#10b981" /> : <X size={15} color="#ef4444" />}</td>
-                  <td style={{ padding: '10px 14px', color: C.mut, fontSize: 13 }}>{row.aiContent}</td>
-                  <td style={{ padding: '10px 14px', color: C.mut }}>{row.platforms}</td>
-                  <td style={{ padding: '10px 14px', color: C.mut, fontSize: 13 }}>{row.bestFor}</td>
+                  <td style={{ padding: '12px 14px', color: C.txt }}>{row.price}</td>
+                  <td style={{ padding: '12px 14px', color: C.txt }}>{row.priceUSD}</td>
+                  <td style={{ padding: '12px 14px' }}>{row.freeplan ? <Check size={15} color="#10b981" /> : <X size={15} color="#ef4444" />}</td>
+                  <td style={{ padding: '12px 14px', color: C.mut, fontSize: 13 }}>{row.aiContent}</td>
+                  <td style={{ padding: '12px 14px', color: C.mut }}>{row.platforms}</td>
+                  <td style={{ padding: '12px 14px', color: C.mut, fontSize: 13 }}>{row.bestFor}</td>
                 </tr>
               ))}
             </tbody>
@@ -485,8 +497,8 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
         ))}
 
         {/* Verdict box */}
-        <div style={{ background: 'rgba(249,115,22,.06)', border: '1px solid rgba(249,115,22,.2)', borderRadius: 12, padding: '1.25rem 1.5rem', marginBottom: '2.5rem' }}>
-          <div style={{ fontWeight: 700, fontSize: 14, color: C.a1, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+        <div style={{ background: C.a2card, border: `1px solid ${C.a2brd}`, borderRadius: 12, padding: '1.25rem 1.5rem', marginBottom: '2.5rem' }}>
+          <div style={{ fontWeight: 700, fontSize: 14, color: C.a2, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             ⚖️ Our Verdict
           </div>
           {renderContent(article.verdict)}
