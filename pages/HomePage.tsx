@@ -5,6 +5,8 @@ import {
   Search, ArrowRight, Mail, Star, Shield,
   ExternalLink, X, Menu, ChevronRight,
   Zap, Clock, Award, BookOpen, BarChart2,
+  PenLine, Image as ImageIcon, Video as VideoIcon,
+  Mic, Megaphone, Palette, Code2, Scale, Sun, Moon, Calendar,
 } from 'lucide-react';
 import { COMPARE_ARTICLES } from './CompareArticlePage';
 
@@ -26,26 +28,54 @@ const C = {
   dark:   'var(--dark)',
 };
 
-// ── Per-tool emoji icons ─────────────────────────────────────────────────────
-const TOOL_EMOJI: Record<string, string> = {
-  'grammarly':    '✅', 'writesonic':   '📝', 'rytr':         '✍️',
-  'quillbot':     '🔄', 'frase':        '🔍', 'leonardo-ai':  '🎨',
-  'photoroom':    '📸', 'looka':        '💎', 'pictory':      '🎬',
-  'opus-clip':    '✂️', 'invideo':      '🎥', 'murf-ai':      '🎙️',
-  'podcastle':    '🎧', 'gamma':        '✨', 'beautiful-ai': '🖼️',
-  'ocoya':        '📱', 'replit':       '💻', 'notion-ai':    '📓',
-  'taskade':      '⚡',
+// ── Per-tool domains for Clearbit logo fetching ──────────────────────────────
+const TOOL_DOMAIN: Record<string, string> = {
+  'grammarly':'grammarly.com','writesonic':'writesonic.com','rytr':'rytr.me',
+  'quillbot':'quillbot.com','frase':'frase.io','leonardo-ai':'leonardo.ai',
+  'photoroom':'photoroom.com','looka':'looka.com','pictory':'pictory.ai',
+  'opus-clip':'opus.pro','invideo':'invideo.ai','murf-ai':'murf.ai',
+  'podcastle':'podcastle.ai','gamma':'gamma.app','beautiful-ai':'beautiful.ai',
+  'ocoya':'ocoya.com','replit':'replit.com','notion-ai':'notion.so','taskade':'taskade.com',
 };
 
-const COMPARE_ICON: Record<string, string> = {
-  'rytr-vs-writesonic':           '✍️',
-  'podcastle-vs-descript':        '🎧',
-  'ocoya-vs-buffer-vs-hootsuite': '📱',
-  'grammarly-vs-quillbot':        '✅',
-  'leonardo-vs-midjourney':       '🎨',
-  'replit-vs-github-copilot':     '💻',
-  'taskade-vs-notion':            '⚡',
-};
+function ToolLogo({ slug, size = 28, name, color }: { slug: string; size?: number; name?: string; color?: string }) {
+  const [err, setErr] = React.useState(false);
+  const domain = TOOL_DOMAIN[slug];
+  const initial = (name ?? slug)[0].toUpperCase();
+  const r = Math.round(size * 0.27);
+  if (domain && !err) {
+    return (
+      <img src={`https://logo.clearbit.com/${domain}`} alt={name ?? slug}
+        width={size} height={size}
+        style={{ borderRadius: r, objectFit: 'contain', display: 'block', background: '#fff' }}
+        onError={() => setErr(true)}
+      />
+    );
+  }
+  return (
+    <span style={{ width: size, height: size, borderRadius: r, background: color ?? C.a1, color: '#fff',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      fontSize: size * 0.45, fontWeight: 700, fontFamily: "'Syne', sans-serif", flexShrink: 0 }}>
+      {initial}
+    </span>
+  );
+}
+
+// ── Category icon helper ──────────────────────────────────────────────────────
+function CatIcon({ cat, size = 13, color }: { cat: string; size?: number; color?: string }) {
+  const p = { size, color, style: { flexShrink: 0 as const } };
+  switch (cat) {
+    case 'Writing':      return <PenLine {...p} />;
+    case 'Image':        return <ImageIcon {...p} />;
+    case 'Video':        return <VideoIcon {...p} />;
+    case 'Audio':        return <Mic {...p} />;
+    case 'Marketing':    return <Megaphone {...p} />;
+    case 'Design':       return <Palette {...p} />;
+    case 'Coding':       return <Code2 {...p} />;
+    case 'Productivity': return <Zap {...p} />;
+    default:             return <Zap {...p} />;
+  }
+}
 
 const COMPARE_CAT: Record<string, string> = {
   'rytr-vs-writesonic':           'Writing',
@@ -57,10 +87,7 @@ const COMPARE_CAT: Record<string, string> = {
   'taskade-vs-notion':            'Productivity',
 };
 
-const CAT_EMOJI: Record<string, string> = {
-  Writing: '✍️', Image: '🎨', Video: '🎬', Audio: '🎙️',
-  Marketing: '📱', Design: '✨', Coding: '💻', Productivity: '⚡',
-};
+// Category → compare article category mapping
 
 const CAT_ACCENT: Record<string, 'a1' | 'a2'> = {
   Writing: 'a1', Image: 'a2', Video: 'a1', Audio: 'a2',
@@ -251,8 +278,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 : C.a1card,
               border:`1.5px solid ${C.a1brd}`, cursor:'pointer',
               fontFamily:"'Plus Jakarta Sans',sans-serif",
-              boxShadow: view==='compare' ? '0 2px 8px rgba(13,148,136,.28)' : 'none' }}>
-            ⚖️ Compare
+              boxShadow: view==='compare' ? '0 2px 8px rgba(13,148,136,.28)' : 'none',
+              display:'flex', alignItems:'center', gap:6 }}>
+            <Scale size={14}/> Compare
           </button>
           <button className="nav-btn" onClick={() => navigate('/about')}
             style={{ fontSize:14, fontWeight:500, color:C.mut, padding:'7px 13px',
@@ -272,7 +300,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             style={{ width:36, height:36, borderRadius:9, border:`1.5px solid ${C.a1brd}`,
               background:C.a1card, cursor:'pointer', fontSize:16, marginLeft:4,
               display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-            {isDark ? '☀️' : '🌙'}
+            {isDark ? <Sun size={16} color={C.a1} /> : <Moon size={16} color={C.a1} />}
           </button>
         </div>
 
@@ -290,10 +318,10 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         <div className="anim-slide-down"
           style={{ background:C.surf, borderTop:`1px solid ${C.barBrd}`, padding:'10px 16px 18px' }}>
           {[
-            { label:'🔧 All Tools',  fn: () => { setView('home'); scrollToId('tools-section'); } },
-            { label:'⚖️ Compare',   fn: goCompare },
-            { label:'👤 About',      fn: () => { setMobileNav(false); navigate('/about'); } },
-            { label:'📋 Disclosure', fn: () => { setMobileNav(false); navigate('/disclosure'); } },
+            { label:'All Tools',   fn: () => { setView('home'); scrollToId('tools-section'); } },
+            { label:'Compare',     fn: goCompare },
+            { label:'About',       fn: () => { setMobileNav(false); navigate('/about'); } },
+            { label:'Disclosure',  fn: () => { setMobileNav(false); navigate('/disclosure'); } },
           ].map(({ label, fn }) => (
             <button key={label} onClick={fn}
               style={{ display:'block', width:'100%', textAlign:'left' as const,
@@ -349,7 +377,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                   cursor:'pointer', padding:'3px 0', textAlign:'left' as const, transition:'color .15s' }}
                 onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
                 onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
-                {CAT_EMOJI[cat]} {cat}
+                <span style={{ display:'inline-flex', alignItems:'center', gap:5 }}>
+                  <CatIcon cat={cat} size={11} color="rgba(255,255,255,.4)" /> {cat}
+                </span>
               </button>
             ))}
           </div>
@@ -366,7 +396,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                   transition:'color .15s', lineHeight:1.5 }}
                 onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
                 onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
-                {COMPARE_ICON[a.slug] ?? '⚖️'} {a.title.replace(/ \(\d{4}\).*/, '').replace(/ \(\d{4}\)/, '').slice(0, 30)}…
+                <span style={{ display:'inline-flex', alignItems:'center', gap:5 }}>
+                  <Scale size={11} color="rgba(255,255,255,.4)" /> {a.title.replace(/ \(\d{4}\).*/, '').replace(/ \(\d{4}\)/, '').slice(0, 30)}…
+                </span>
               </button>
             ))}
           </div>
@@ -507,28 +539,38 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         <div className="hero-float"
           style={{ position:'absolute', top:24, right:36, display:'flex',
             flexDirection:'column', gap:7, opacity:0.68, pointerEvents:'none' }}>
-          {['✅ Grammarly', '🎧 Podcastle', '⚡ Taskade'].map((t, i) => (
-            <div key={i} style={{ background:C.surf, border:`1px solid ${C.a1brd}`,
-              borderRadius:9, padding:'7px 13px', fontSize:12, fontWeight:600,
-              color:C.txt, boxShadow:'0 2px 10px var(--sh-sm)',
-              animation:`fadeIn .6s ease ${.4+i*.13}s both`,
-              whiteSpace:'nowrap' as const }}>
-              {t}
-            </div>
-          ))}
+          {['grammarly','podcastle','taskade'].map((slug, i) => {
+            const t = TOOLS.find(x => x.slug === slug);
+            return (
+              <div key={i} style={{ background:C.surf, border:`1px solid ${C.a1brd}`,
+                borderRadius:9, padding:'7px 13px', fontSize:12, fontWeight:600,
+                color:C.txt, boxShadow:'0 2px 10px var(--sh-sm)',
+                animation:`fadeIn .6s ease ${.4+i*.13}s both`,
+                whiteSpace:'nowrap' as const,
+                display:'flex', alignItems:'center', gap:6 }}>
+                <ToolLogo slug={slug} size={14} name={t?.name} color={t?.color} />
+                {t?.name ?? slug}
+              </div>
+            );
+          })}
         </div>
         <div className="hero-float"
           style={{ position:'absolute', bottom:28, left:36, display:'flex',
             flexDirection:'column', gap:7, opacity:0.62, pointerEvents:'none' }}>
-          {['💻 Replit', '📱 Ocoya', '✍️ Rytr'].map((t, i) => (
-            <div key={i} style={{ background:C.surf, border:`1px solid ${C.a2brd}`,
-              borderRadius:9, padding:'7px 13px', fontSize:12, fontWeight:600,
-              color:C.txt, boxShadow:'0 2px 10px var(--sh-sm)',
-              animation:`fadeIn .6s ease ${.5+i*.13}s both`,
-              whiteSpace:'nowrap' as const }}>
-              {t}
-            </div>
-          ))}
+          {['replit','ocoya','rytr'].map((slug, i) => {
+            const t = TOOLS.find(x => x.slug === slug);
+            return (
+              <div key={i} style={{ background:C.surf, border:`1px solid ${C.a2brd}`,
+                borderRadius:9, padding:'7px 13px', fontSize:12, fontWeight:600,
+                color:C.txt, boxShadow:'0 2px 10px var(--sh-sm)',
+                animation:`fadeIn .6s ease ${.5+i*.13}s both`,
+                whiteSpace:'nowrap' as const,
+                display:'flex', alignItems:'center', gap:6 }}>
+                <ToolLogo slug={slug} size={14} name={t?.name} color={t?.color} />
+                {t?.name ?? slug}
+              </div>
+            );
+          })}
         </div>
 
         {/* Hero content */}
@@ -594,17 +636,18 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           <div className="anim-fade-up d5"
             style={{ display:'flex', gap:7, justifyContent:'center', flexWrap:'wrap' as const }}>
             {[
-              { label:'✍️ Writing', cat:'Writing' }, { label:'🎙️ Audio',   cat:'Audio' },
-              { label:'📱 Social',  cat:'Marketing'},  { label:'💻 Code',    cat:'Coding' },
-              { label:'⚡ Productivity', cat:'Productivity' }, { label:'🎬 Video', cat:'Video' },
+              { label:'Writing', cat:'Writing' }, { label:'Audio',   cat:'Audio' },
+              { label:'Social',  cat:'Marketing'},  { label:'Code',    cat:'Coding' },
+              { label:'Productivity', cat:'Productivity' }, { label:'Video', cat:'Video' },
             ].map(({ label, cat }) => (
               <button key={cat} className="cat-pill"
                 onClick={() => { setFilters({ search:'', category:cat as any }); scrollToId('tools-section'); }}
                 style={{ fontSize:12.5, fontWeight:500, color:C.mut, padding:'6px 13px',
                   borderRadius:100, background:'transparent',
                   border:`1px solid var(--brd-lg)`, cursor:'pointer',
-                  fontFamily:"'Plus Jakarta Sans',sans-serif" }}>
-                {label}
+                  fontFamily:"'Plus Jakarta Sans',sans-serif",
+                  display:'inline-flex', alignItems:'center', gap:5 }}>
+                <CatIcon cat={cat} size={12} color={C.mut} /> {label}
               </button>
             ))}
           </div>
@@ -636,9 +679,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           {[...TOOLS, ...TOOLS].map((t, i) => (
             <span key={i} style={{ fontSize:11.5, fontWeight:500, color:C.mut2,
               padding:'0 18px', whiteSpace:'nowrap' as const,
-              display:'inline-flex', alignItems:'center', gap:5,
+              display:'inline-flex', alignItems:'center', gap:6,
               borderRight:`1px solid var(--brd-sm)` }}>
-              <span>{TOOL_EMOJI[t.slug] ?? '🤖'}</span> {t.name}
+              <ToolLogo slug={t.slug} size={16} name={t.name} color={t.color} /> {t.name}
             </span>
           ))}
         </div>
@@ -668,7 +711,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 fontWeight:600, color:C.a1, padding:'7px 14px', borderRadius:9,
                 background:C.a1card, border:`1px solid ${C.a1brd}`,
                 cursor:'pointer', fontFamily:"'Plus Jakarta Sans',sans-serif" }}>
-                ⚖️ See all comparisons <ArrowRight size={12}/>
+                <Scale size={13}/> See all comparisons <ArrowRight size={12}/>
             </button>
           </div>
 
@@ -678,7 +721,6 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               const accent = isA2 ? C.a2 : C.a1;
               const bg     = isA2 ? C.a2card : C.a1card;
               const brd    = isA2 ? C.a2brd  : C.a1brd;
-              const emoji  = TOOL_EMOJI[tool.slug] ?? '🤖';
               return (
                 <button key={tool.id} className="pick-card"
                   onClick={() => navigate(`/tools/${tool.slug}`)}
@@ -687,10 +729,11 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                     cursor:'pointer', textAlign:'left' as const,
                     fontFamily:"'Plus Jakarta Sans',sans-serif",
                     boxShadow:'0 1px 4px var(--sh-xs)' }}>
-                  <div style={{ width:40, height:40, borderRadius:11, background:accent,
+                  <div style={{ width:40, height:40, borderRadius:11, flexShrink:0,
+                    background:'#fff', border:`1.5px solid ${brd}`,
                     display:'flex', alignItems:'center', justifyContent:'center',
-                    fontSize:19, flexShrink:0, boxShadow:`0 2px 8px ${accent}40` }}>
-                    {emoji}
+                    overflow:'hidden', boxShadow:`0 2px 8px ${accent}30` }}>
+                    <ToolLogo slug={tool.slug} size={30} name={tool.name} color={accent} />
                   </div>
                   <div style={{ minWidth:0 }}>
                     <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700,
@@ -741,7 +784,10 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                   border:`1.5px solid ${active ? abrd : 'var(--brd)'}`,
                   background:active ? abg : C.surf, color:active ? ac : C.mut,
                   cursor:'pointer', boxShadow:active?`0 2px 8px ${ac}1e`:'none' }}>
-                {cat !== 'All' && CAT_EMOJI[cat] ? `${CAT_EMOJI[cat]} ` : ''}{cat}
+                <span style={{ display:'inline-flex', alignItems:'center', gap:5 }}>
+                  {cat !== 'All' && <CatIcon cat={cat} size={12} color={active ? ac : C.mut} />}
+                  {cat}
+                </span>
               </button>
             );
           })}
@@ -764,7 +810,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
         {filtered.length === 0 && (
           <div style={{ textAlign:'center', padding:'80px 0' }}>
-            <div style={{ fontSize:38, marginBottom:12 }}>🔍</div>
+            <div style={{ display:'flex', justifyContent:'center', marginBottom:12 }}>
+              <Search size={38} color={C.mut2} />
+            </div>
             <p style={{ fontSize:15.5, color:C.mut, marginBottom:14 }}>
               No tools match "{filters.search}"
             </p>
@@ -787,14 +835,12 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 function BlogCompareCard({ article, navigate, idx }: {
   article: any; navigate: (to: string) => void; idx: number;
 }) {
-  const icon     = COMPARE_ICON[article.slug] ?? '⚖️';
   const cat      = COMPARE_CAT[article.slug]  ?? 'Tools';
   const readTime = READ_TIME[article.slug]    ?? 6;
   const accent   = CAT_ACCENT[cat] === 'a2' ? C.a2 : C.a1;
   const acBg     = CAT_ACCENT[cat] === 'a2' ? C.a2card : C.a1card;
   const acBrd    = CAT_ACCENT[cat] === 'a2' ? C.a2brd  : C.a1brd;
 
-  // Derive VS label from title
   const vsLabel = article.title
     .replace(/ \(\d{4}\):.*/, '').replace(/ \(\d{4}\)/, '');
 
@@ -813,11 +859,11 @@ function BlogCompareCard({ article, navigate, idx }: {
         {/* Meta row */}
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',
           marginBottom:14 }}>
-          <span style={{ display:'inline-flex', alignItems:'center', gap:5,
+          <span style={{ display:'inline-flex', alignItems:'center', gap:6,
             fontSize:11, fontWeight:700, color:accent,
             background:acBg, padding:'3px 10px', borderRadius:100,
             border:`1px solid ${acBrd}`, letterSpacing:'0.03em' }}>
-            {icon} {cat}
+            <CatIcon cat={cat} size={11} color={accent} /> {cat}
           </span>
           <span style={{ fontSize:11, color:C.mut2, fontWeight:500,
             display:'flex', alignItems:'center', gap:4 }}>
@@ -825,26 +871,32 @@ function BlogCompareCard({ article, navigate, idx }: {
           </span>
         </div>
 
-        {/* VS icon row */}
+        {/* VS logo row */}
         <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:12 }}>
-          {article.comparisonTable?.slice(0, 3).map((row: any, i: number) => (
-            <React.Fragment key={i}>
-              <div style={{ display:'flex', flexDirection:'column' as const, alignItems:'center', gap:3 }}>
-                <div style={{ width:34, height:34, borderRadius:10, background:C.surf,
-                  border:`1.5px solid ${acBrd}`, display:'flex', alignItems:'center',
-                  justifyContent:'center', fontSize:15, boxShadow:`0 1px 4px ${accent}18` }}>
-                  {TOOL_EMOJI[row.name?.toLowerCase().replace(/\s+/g,'-')] ?? icon}
+          {article.comparisonTable?.slice(0, 3).map((row: any, i: number) => {
+            const slugGuess = row.name?.toLowerCase().replace(/\s+/g, '-');
+            return (
+              <React.Fragment key={i}>
+                <div style={{ display:'flex', flexDirection:'column' as const, alignItems:'center', gap:3 }}>
+                  <div style={{ width:34, height:34, borderRadius:10, background:'#fff',
+                    border:`1.5px solid ${acBrd}`, display:'flex', alignItems:'center',
+                    justifyContent:'center', overflow:'hidden', boxShadow:`0 1px 4px ${accent}18` }}>
+                    <ToolLogo slug={slugGuess} size={26} name={row.name} color={accent} />
+                  </div>
+                  <span style={{ fontSize:9, fontWeight:600, color:C.mut2, letterSpacing:'0.02em' }}>
+                    {row.name?.split(' ')[0]}
+                  </span>
                 </div>
-                <span style={{ fontSize:9, fontWeight:600, color:C.mut2, letterSpacing:'0.02em' }}>
-                  {row.name?.split(' ')[0]}
-                </span>
-              </div>
-              {i < (article.comparisonTable.length > 2 ? 1 : 0) && (
-                <span style={{ fontSize:11, fontWeight:700, color:C.mut2 }}>vs</span>
-              )}
-            </React.Fragment>
-          )) ?? (
-            <div style={{ fontSize:28 }}>{icon}</div>
+                {i < (article.comparisonTable.length > 2 ? 1 : 0) && (
+                  <span style={{ fontSize:11, fontWeight:700, color:C.mut2 }}>vs</span>
+                )}
+              </React.Fragment>
+            );
+          }) ?? (
+            <div style={{ display:'flex', alignItems:'center', justifyContent:'center',
+              width:34, height:34, borderRadius:10, background:acBg, border:`1.5px solid ${acBrd}` }}>
+              <Scale size={16} color={accent} />
+            </div>
           )}
         </div>
 
@@ -867,8 +919,9 @@ function BlogCompareCard({ article, navigate, idx }: {
         <div style={{ display:'flex', alignItems:'center', gap:8,
           marginBottom:18, flexWrap:'wrap' as const }}>
           <span style={{ fontSize:11, color:C.mut2, fontWeight:500,
-            background:'var(--chip-bg)', padding:'3px 9px', borderRadius:6 }}>
-            📅 {article.publishDate}
+            background:'var(--chip-bg)', padding:'3px 9px', borderRadius:6,
+            display:'inline-flex', alignItems:'center', gap:4 }}>
+            <Calendar size={10} color={C.mut2} /> {article.publishDate}
           </span>
           <span style={{ fontSize:11, color:C.mut2, fontWeight:500,
             background:'var(--chip-bg)', padding:'3px 9px', borderRadius:6 }}>
@@ -906,7 +959,6 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
   const accent  = isA2 ? C.a2 : C.a1;
   const cardBrd = isA2 ? C.a2brd : C.a1brd;
   const badge   = tool.userBadge ? BADGE_COLORS[tool.userBadge] : null;
-  const emoji   = TOOL_EMOJI[tool.slug] ?? '🤖';
 
   return (
     <div className="tool-card-wrap scroll-reveal"
@@ -943,9 +995,10 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
           alignItems:'flex-start', marginBottom:10, marginTop:6 }}>
           <div style={{ display:'flex', alignItems:'center', gap:12 }}>
             <div style={{ width:46, height:46, borderRadius:13, flexShrink:0,
-              background:`${accent}12`, border:`1.5px solid ${accent}2e`,
-              display:'flex', alignItems:'center', justifyContent:'center', fontSize:22 }}>
-              {emoji}
+              background:'#fff', border:`1.5px solid ${accent}2e`,
+              display:'flex', alignItems:'center', justifyContent:'center',
+              overflow:'hidden', boxShadow:`0 1px 6px ${accent}22` }}>
+              <ToolLogo slug={tool.slug} size={36} name={tool.name} color={accent} />
             </div>
             <div>
               <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
@@ -969,8 +1022,9 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
         {/* Category chip */}
         <div style={{ marginBottom:9 }}>
           <span style={{ fontSize:11, fontWeight:600, color:accent,
-            background:`${accent}10`, padding:'3px 9px', borderRadius:7 }}>
-            {CAT_EMOJI[tool.category]} {tool.category}
+            background:`${accent}10`, padding:'3px 9px', borderRadius:7,
+            display:'inline-flex', alignItems:'center', gap:5 }}>
+            <CatIcon cat={tool.category} size={11} color={accent} /> {tool.category}
           </span>
         </div>
 

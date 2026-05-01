@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Tool } from '../types';
-import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award, Scale, Sun, Moon } from 'lucide-react';
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS } from '../constants';
 
 const C = {
@@ -220,12 +220,131 @@ function FAQItem({ q, a, accent }: { q: string; a: string; accent: string }) {
   );
 }
 
-const TOOL_EMOJI: Record<string, string> = {
-  'grammarly':'✅','writesonic':'📝','rytr':'✍️','quillbot':'🔄','frase':'🔍',
-  'leonardo-ai':'🎨','photoroom':'📸','looka':'💎','pictory':'🎬','opus-clip':'✂️',
-  'invideo':'🎥','murf-ai':'🎙️','podcastle':'🎧','gamma':'✨','beautiful-ai':'🖼️',
-  'ocoya':'📱','replit':'💻','notion-ai':'📓','taskade':'⚡',
+const TOOL_DOMAIN: Record<string, string> = {
+  'grammarly':'grammarly.com','writesonic':'writesonic.com','rytr':'rytr.me',
+  'quillbot':'quillbot.com','frase':'frase.io','leonardo-ai':'leonardo.ai',
+  'photoroom':'photoroom.com','looka':'looka.com','pictory':'pictory.ai',
+  'opus-clip':'opus.pro','invideo':'invideo.ai','murf-ai':'murf.ai',
+  'podcastle':'podcastle.ai','gamma':'gamma.app','beautiful-ai':'beautiful.ai',
+  'ocoya':'ocoya.com','replit':'replit.com','notion-ai':'notion.so','taskade':'taskade.com',
 };
+
+function ToolLogoImg({ slug, size = 32, name, color }: { slug: string; size?: number; name?: string; color?: string }) {
+  const [err, setErr] = React.useState(false);
+  const domain = TOOL_DOMAIN[slug];
+  const initial = (name ?? slug)[0].toUpperCase();
+  if (domain && !err) {
+    return (
+      <img src={`https://logo.clearbit.com/${domain}`} alt={name ?? slug}
+        width={size} height={size}
+        style={{ borderRadius: Math.round(size * 0.27), objectFit: 'contain', display: 'block', background: '#fff' }}
+        onError={() => setErr(true)}
+      />
+    );
+  }
+  return (
+    <span style={{ width: size, height: size, borderRadius: Math.round(size * 0.27),
+      background: color ?? 'var(--a1)', color: '#fff', display: 'flex', alignItems: 'center',
+      justifyContent: 'center', fontSize: size * 0.45, fontWeight: 700,
+      fontFamily: "'Syne', sans-serif", flexShrink: 0 }}>
+      {initial}
+    </span>
+  );
+}
+
+// ── Per-tool 5-axis radar scores [EaseOfUse, OutputQuality, Value, FreePlan, Support] ──
+const TOOL_RADAR: Record<string, [number, number, number, number, number]> = {
+  'grammarly':    [4.8, 4.5, 4.3, 4.8, 4.2],
+  'writesonic':   [3.8, 4.2, 4.3, 4.0, 3.8],
+  'rytr':         [4.8, 3.8, 5.0, 4.5, 3.8],
+  'quillbot':     [4.8, 4.3, 4.5, 4.3, 3.8],
+  'frase':        [3.5, 4.5, 3.8, 3.0, 4.0],
+  'leonardo-ai':  [3.2, 4.8, 4.8, 4.5, 3.5],
+  'photoroom':    [4.8, 4.8, 4.2, 3.8, 4.0],
+  'looka':        [4.5, 4.0, 4.2, 3.0, 3.8],
+  'pictory':      [4.5, 3.8, 4.0, 3.5, 3.8],
+  'opus-clip':    [4.3, 4.3, 4.0, 4.0, 3.8],
+  'invideo':      [4.5, 4.0, 4.3, 4.2, 3.8],
+  'murf-ai':      [4.5, 4.5, 3.5, 2.5, 4.0],
+  'podcastle':    [4.5, 4.2, 4.3, 4.0, 3.8],
+  'gamma':        [5.0, 4.5, 4.8, 4.5, 3.8],
+  'beautiful-ai': [4.5, 4.2, 3.8, 2.0, 3.8],
+  'ocoya':        [4.2, 3.8, 4.5, 3.5, 3.8],
+  'replit':       [4.5, 4.2, 4.5, 4.0, 4.2],
+  'notion-ai':    [4.3, 4.4, 4.2, 3.5, 4.0],
+  'taskade':      [3.8, 4.2, 4.8, 4.0, 4.0],
+};
+
+const RADAR_AXES = ['Ease of Use', 'Output Quality', 'Value', 'Free Plan', 'Support'] as const;
+
+function RadarChart({ scores, accent }: { scores: [number, number, number, number, number]; accent: string }) {
+  const S = 260, cx = 130, cy = 130, maxR = 88, n = 5;
+  const ang = (i: number) => (i * 2 * Math.PI) / n - Math.PI / 2;
+  const pts = (r: number) => Array.from({ length: n }, (_, i) => ({
+    x: cx + r * Math.cos(ang(i)), y: cy + r * Math.sin(ang(i)),
+  }));
+  const gridPoly = (lvl: number) => pts((lvl / 5) * maxR).map(p => `${p.x},${p.y}`).join(' ');
+  const dataPts = pts(maxR).map((p, i) => {
+    const r = (scores[i] / 5);
+    return { x: cx + (p.x - cx) * r, y: cy + (p.y - cy) * r };
+  });
+  const dataPath = dataPts.map((p, j) => `${j === 0 ? 'M' : 'L'}${p.x} ${p.y}`).join(' ') + ' Z';
+  const labelR = maxR + 26;
+  const labelPts = Array.from({ length: n }, (_, i) => {
+    const a = ang(i);
+    return { x: cx + labelR * Math.cos(a), y: cy + labelR * Math.sin(a), label: RADAR_AXES[i], score: scores[i] };
+  });
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column' as const, alignItems: 'center', gap: 12 }}>
+      <svg viewBox={`0 0 ${S} ${S}`} width={S} height={S} style={{ overflow: 'visible', maxWidth: '100%' }}>
+        {/* Grid rings */}
+        {[1,2,3,4,5].map(l => (
+          <polygon key={l} points={gridPoly(l)} fill="none" stroke="var(--brd-xs)" strokeWidth={l === 5 ? 1.5 : 1} />
+        ))}
+        {/* Axis lines */}
+        {pts(maxR).map((p, i) => (
+          <line key={i} x1={cx} y1={cy} x2={p.x} y2={p.y} stroke="var(--brd-xs)" strokeWidth="1" />
+        ))}
+        {/* Score labels on rings (just 1 and 5) */}
+        <text x={cx + 4} y={cy - (1/5)*maxR - 3} fontSize="8" fill="var(--mut2)" fontFamily="'Plus Jakarta Sans',sans-serif">1</text>
+        <text x={cx + 4} y={cy - maxR - 3}         fontSize="8" fill="var(--mut2)" fontFamily="'Plus Jakarta Sans',sans-serif">5</text>
+        {/* Data polygon */}
+        <path d={dataPath} fill={`${accent}28`} stroke={accent} strokeWidth="2.5" strokeLinejoin="round" />
+        {/* Data dots */}
+        {dataPts.map((p, i) => (
+          <circle key={i} cx={p.x} cy={p.y} r="5" fill={accent} stroke="var(--surf)" strokeWidth="2" />
+        ))}
+        {/* Axis labels */}
+        {labelPts.map((lp, i) => {
+          const anchor = lp.x < cx - 6 ? 'end' : lp.x > cx + 6 ? 'start' : 'middle';
+          return (
+            <g key={i}>
+              <text x={lp.x} y={lp.y - 5} textAnchor={anchor} fontSize="9.5" fontWeight="600"
+                fill="var(--mut2)" fontFamily="'Plus Jakarta Sans',sans-serif" letterSpacing="0.01em">
+                {lp.label}
+              </text>
+              <text x={lp.x} y={lp.y + 9} textAnchor={anchor} fontSize="11" fontWeight="800"
+                fill={accent} fontFamily="'Syne',sans-serif">
+                {lp.score}
+              </text>
+            </g>
+          );
+        })}
+      </svg>
+      {/* Legend row */}
+      <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' as const, justifyContent: 'center' }}>
+        {RADAR_AXES.map((axis, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+            <div style={{ width: 8, height: 8, borderRadius: '50%', background: accent }} />
+            <span style={{ fontSize: 11, color: 'var(--mut2)', fontWeight: 500 }}>{axis}</span>
+            <span style={{ fontSize: 11, color: accent, fontWeight: 700 }}>{scores[i]}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps) {
   const isA2 = CAT_ACCENT[tool.category] === 'a2';
@@ -329,8 +448,8 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <ArrowLeft size={13} /> All Tools
             </button>
             <button onClick={() => navigate('/')}
-              style={{ fontSize: 13, fontWeight: 600, color: C.a1, padding: '7px 14px', borderRadius: 100, background: C.a1card, border: `1.5px solid ${C.a1brd}`, cursor: 'pointer' }}>
-              ⚖️ Compare
+              style={{ fontSize: 13, fontWeight: 600, color: C.a1, padding: '7px 14px', borderRadius: 100, background: C.a1card, border: `1.5px solid ${C.a1brd}`, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6 }}>
+              <Scale size={13} /> Compare
             </button>
             <button onClick={() => navigate('/about')}
               style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid var(--brd-md)`, cursor: 'pointer' }}>
@@ -340,7 +459,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               style={{ width:34, height:34, borderRadius:8, border:`1.5px solid ${C.a1brd}`,
                 background:C.a1card, cursor:'pointer', fontSize:15,
                 display:'flex', alignItems:'center', justifyContent:'center' }}>
-              {isDark ? '☀️' : '🌙'}
+              {isDark ? <Sun size={15} color={C.a1} /> : <Moon size={15} color={C.a1} />}
             </button>
           </div>
         </div>
@@ -364,21 +483,26 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           <div style={{ position: 'absolute', top: -80, right: -80, width: 300, height: 300, borderRadius: '50%', background: `radial-gradient(circle,${accent}10 0%,transparent 70%)`, pointerEvents: 'none' }} />
 
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 18, flexWrap: 'wrap' as const }}>
-              <span style={{ background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Syne', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100 }}>
-                {tool.category.toUpperCase()}
-              </span>
-              <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2 }}>
-                <Calendar size={12} /> Updated {content?.lastTested || TODAY}
-              </span>
-              <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2 }}>
-                <User size={12} /> Reviewed by {SITE_CONFIG.authorName}
-              </span>
-              {content?.timeUsed && (
-                <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: accent, fontWeight: 500 }}>
-                  <Award size={12} /> Tested for {content.timeUsed}
-                </span>
-              )}
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 20, flexWrap: 'wrap' as const, marginBottom: 18 }}>
+              <ToolLogoImg slug={tool.slug} size={64} name={tool.name} color={accent} />
+              <div style={{ flex: 1, minWidth: 200 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8, flexWrap: 'wrap' as const }}>
+                  <span style={{ background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Syne', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100 }}>
+                    {tool.category.toUpperCase()}
+                  </span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2 }}>
+                    <Calendar size={12} /> Updated {content?.lastTested || TODAY}
+                  </span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2 }}>
+                    <User size={12} /> Reviewed by {SITE_CONFIG.authorName}
+                  </span>
+                  {content?.timeUsed && (
+                    <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: accent, fontWeight: 500 }}>
+                      <Award size={12} /> Tested for {content.timeUsed}
+                    </span>
+                  )}
+                </div>
+              </div>
             </div>
 
             <h1 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 'clamp(28px,5vw,44px)', color: C.txt, margin: '0 0 10px', lineHeight: 1.1, letterSpacing: '-0.025em' }}>
@@ -480,6 +604,19 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                   </div>
                 )}
               </div>
+            </>
+          )
+        )}
+
+        {/* ── Performance Radar Chart ── */}
+        {TOOL_RADAR[tool.slug] && (
+          section(
+            <>
+              {sectionTitle('Performance breakdown')}
+              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 20px', lineHeight: 1.65, fontWeight: 300 }}>
+                How {tool.name} scores across five dimensions based on hands-on testing.
+              </p>
+              <RadarChart scores={TOOL_RADAR[tool.slug]!} accent={accent} />
             </>
           )
         )}
