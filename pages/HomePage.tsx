@@ -157,12 +157,7 @@ const ANIM_STYLE = `
 .ticker-track:hover { animation-play-state:paused }
 
 @media(max-width:680px){
-  #hamburger-btn  { display:flex !important }
-  #desktop-nav    { display:none !important }
-  .hero-float     { display:none !important }
-}
-@media(min-width:681px){
-  #hamburger-btn  { display:none !important }
+  .hero-float { display:none !important }
 }
 html { scroll-behavior:smooth }
 ::-webkit-scrollbar { width:5px; height:5px }
@@ -461,7 +456,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <div style={{ position:'relative', overflow:'hidden', background:C.surf,
-        borderBottom:`1px solid ${C.barBrd}`, padding:'68px 24px 72px', minHeight:380 }}>
+        borderBottom:`1px solid ${C.barBrd}`, padding:'68px 24px 60px' }}>
 
         {/* Background washes */}
         <div style={{ position:'absolute', inset:0, pointerEvents:'none',
@@ -784,15 +779,13 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           {filters.search ? ` matching "${filters.search}"` : ''}
         </p>
 
-        {/* ── All tools — single unified 3-column grid ─────────────────── */}
-        {filtered.length > 0 && (
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
-            {filtered.map((tool, i) => (
-              <ToolCard key={tool.id} tool={tool} navigate={navigate}
-                isAffiliatePick={AFFILIATE_SLUGS.includes(tool.slug)} idx={i}/>
-            ))}
-          </div>
-        )}
+        {/* Cards */}
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
+          {filtered.map((tool, i) => (
+            <ToolCard key={tool.id} tool={tool} navigate={navigate}
+              isAffiliatePick={AFFILIATE_SLUGS.includes(tool.slug)} idx={i}/>
+          ))}
+        </div>
 
         {filtered.length === 0 && (
           <div style={{ textAlign:'center', padding:'80px 0' }}>
@@ -819,7 +812,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
 // ── Blog-style Compare Card (for compare view) ───────────────────────────────
 function BlogCompareCard({ article, navigate, idx }: {
-  article: any; navigate: (to: string) => void; idx: number;
+  article: any; navigate: (to: string) => void; idx: number; key?: React.Key;
 }) {
   const cat      = COMPARE_CAT[article.slug]  ?? 'Tools';
   const readTime = READ_TIME[article.slug]    ?? 6;
@@ -938,7 +931,7 @@ function BlogCompareCard({ article, navigate, idx }: {
 }
 
 // ── Tool Card (home view) — 3 visual tiers ──────────────────────────────────
-// • Featured  (affiliate picks)  — same grid cell, vertical layout, teal glow, Editor's Pick ribbon + TOP PICK badge
+// • Featured  (affiliate picks)  — span-2 cols, horizontal layout, teal glow, Editor's Pick ribbon
 // • Standard  (badged tools)     — current design, no change
 // • Secondary (no badge)         — same structure, visually recedes (thinner border, dimmer shadow)
 
@@ -947,7 +940,7 @@ const FEATURED_RATINGS: Record<string, string> = {
 };
 
 function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
-  tool: Tool; navigate: (to: string) => void; isAffiliatePick: boolean; idx: number;
+  tool: Tool; navigate: (to: string) => void; isAffiliatePick: boolean; idx: number; key?: React.Key;
 }) {
   const isA2    = CAT_ACCENT[tool.category] === 'a2';
   const accent  = isA2 ? C.a2 : C.a1;
@@ -955,7 +948,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
   const badge   = tool.userBadge ? BADGE_COLORS[tool.userBadge] : null;
   const isSecondary = !isAffiliatePick && !tool.userBadge;
 
-  // ── FEATURED tier — vertical grid card with special styling ──────────────
+  // ── FEATURED tier ─────────────────────────────────────────────────────────
   if (isAffiliatePick) {
     const rating = FEATURED_RATINGS[tool.slug] ?? '4.5';
     const ratingNum = parseFloat(rating);
@@ -970,108 +963,111 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
         <div style={{ position:'absolute', top:0, right:0, zIndex:4,
           background:`linear-gradient(135deg,${C.a2},#ea580c)`,
           color:'#fff', fontSize:9, fontWeight:800, letterSpacing:'0.08em',
-          padding:'4px 11px', borderRadius:'0 14px 0 10px',
+          padding:'4px 11px', borderRadius:'0 15px 0 10px',
           boxShadow:`0 2px 8px ${C.a2}50` }}>
           TOP PICK
         </div>
 
         <div className="tool-card-inner"
-          style={{ background:`linear-gradient(160deg,${C.surf} 60%,${accent}0e)`,
-            borderRadius:15,
-            border:`2px solid ${accent}50`,
+          style={{ background:`linear-gradient(160deg,${C.surf} 55%,${accent}0e)`,
+            borderRadius:15, border:`2px solid ${accent}48`,
             boxShadow:`0 0 0 1px ${accent}14, 0 8px 32px ${accent}18`,
-            overflow:'hidden', position:'relative', padding:'20px 22px' }}>
+            overflow:'hidden', position:'relative', height:'100%',
+            display:'flex', flexDirection:'column' as const }}>
 
-          {/* Thicker top accent bar */}
-          <div style={{ position:'absolute', top:0, left:0, right:0, height:4,
-            background:`linear-gradient(90deg,${accent},${accent}50)`,
-            borderRadius:'14px 14px 0 0' }}/>
+          {/* Top accent bar */}
+          <div style={{ height:4, flexShrink:0,
+            background:`linear-gradient(90deg,${accent},${accent}55)` }}/>
 
-          {/* Header: logo + name row */}
-          <div style={{ display:'flex', justifyContent:'space-between',
-            alignItems:'flex-start', marginBottom:8, marginTop:6 }}>
-            <div style={{ display:'flex', alignItems:'center', gap:12 }}>
-              <div style={{ width:46, height:46, borderRadius:13, flexShrink:0,
+          <div style={{ padding:'18px 20px 20px', display:'flex',
+            flexDirection:'column' as const, flex:1 }}>
+
+            {/* Editor's Pick label */}
+            <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',
+              gap:8, marginBottom:14 }}>
+              <span style={{ fontSize:10, fontWeight:700, color:accent,
+                letterSpacing:'0.07em', textTransform:'uppercase' as const }}>
+                ✦ Editor's Pick
+              </span>
+              {badge && (
+                <span style={{ fontSize:10, fontWeight:700, color:badge.color,
+                  background:badge.bg, padding:'2px 9px', borderRadius:7,
+                  whiteSpace:'nowrap' as const }}>
+                  {tool.userBadge}
+                </span>
+              )}
+            </div>
+
+            {/* Logo + name row */}
+            <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:8 }}>
+              <div style={{ width:48, height:48, borderRadius:13, flexShrink:0,
                 background:'#fff', border:`2px solid ${accent}28`,
                 display:'flex', alignItems:'center', justifyContent:'center',
-                overflow:'hidden', boxShadow:`0 4px 18px ${accent}2e` }}>
+                overflow:'hidden', boxShadow:`0 3px 14px ${accent}2a` }}>
                 <ToolLogo slug={tool.slug} size={36} name={tool.name} color={accent} />
               </div>
-              <div>
+              <div style={{ minWidth:0 }}>
                 <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
-                  fontSize:15, color:C.txt, letterSpacing:'-0.02em', lineHeight:1.2 }}>
+                  fontSize:15.5, color:C.txt, letterSpacing:'-0.025em', lineHeight:1.2 }}>
                   {tool.name}
                 </div>
-                <div style={{ fontSize:11, color:C.mut2, marginTop:3, fontWeight:500 }}>
+                <div style={{ fontSize:11, color:C.mut2, fontWeight:500, marginTop:2 }}>
                   {tool.pricing}
                 </div>
               </div>
             </div>
-            {badge && (
-              <span style={{ fontSize:10, fontWeight:700, color:badge.color,
-                background:badge.bg, padding:'3px 9px', borderRadius:8,
-                whiteSpace:'nowrap' as const, flexShrink:0 }}>
-                {tool.userBadge}
+
+            {/* Category + stars row */}
+            <div style={{ display:'flex', alignItems:'center',
+              justifyContent:'space-between', marginBottom:10 }}>
+              <span style={{ fontSize:11, fontWeight:600, color:accent,
+                background:`${accent}10`, padding:'3px 9px', borderRadius:7,
+                display:'inline-flex', alignItems:'center', gap:5 }}>
+                <CatIcon cat={tool.category} size={11} color={accent}/> {tool.category}
               </span>
+              <div style={{ display:'flex', alignItems:'center', gap:2 }}>
+                {[1,2,3,4,5].map(s => (
+                  <svg key={s} width="10" height="10" viewBox="0 0 10 10">
+                    <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
+                      fill={s <= Math.floor(ratingNum) ? accent : 'var(--brd)'}/>
+                  </svg>
+                ))}
+                <span style={{ fontSize:10, color:C.mut2, marginLeft:2, fontWeight:600 }}>
+                  {rating}
+                </span>
+              </div>
+            </div>
+
+            {/* Tagline */}
+            <p style={{ fontSize:13, color:C.mut, lineHeight:1.65,
+              margin:'0 0 12px', fontWeight:400, flex:1 }}>
+              {tool.tagline}
+            </p>
+
+            {/* Feature pills */}
+            {tool.features && (
+              <div style={{ display:'flex', flexWrap:'wrap' as const, gap:5, marginBottom:14 }}>
+                {tool.features.slice(0, 3).map((f, i) => (
+                  <span key={i} style={{ fontSize:11, color:C.mut,
+                    background:'var(--chip-bg)', padding:'3px 8px', borderRadius:6,
+                    border:'1px solid var(--brd-xs)' }}>{f}</span>
+                ))}
+              </div>
             )}
-          </div>
 
-          {/* Editor's Pick + category + stars row */}
-          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:9 }}>
-            <div style={{ display:'flex', alignItems:'center', gap:8 }}>
-              <span style={{ fontSize:10.5, fontWeight:700, color:accent,
-                letterSpacing:'0.06em', textTransform:'uppercase' as const }}>
-                ✦ Editor's Pick
+            {/* Footer */}
+            <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
+              borderTop:`1px solid var(--brd-sm)`, paddingTop:12, marginTop:'auto' }}>
+              <span style={{ fontSize:11, color:C.mut2 }}>
+                Best for: {tool.bestFor}
               </span>
-            </div>
-            <div style={{ display:'flex', alignItems:'center', gap:2 }}>
-              {[1,2,3,4,5].map(s => (
-                <svg key={s} width="10" height="10" viewBox="0 0 10 10">
-                  <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
-                    fill={s <= Math.floor(ratingNum) ? accent : 'var(--brd)'}/>
-                </svg>
-              ))}
-              <span style={{ fontSize:10, color:C.mut2, marginLeft:2, fontWeight:600 }}>
-                {rating}
-              </span>
-            </div>
-          </div>
-
-          {/* Category chip */}
-          <div style={{ marginBottom:9 }}>
-            <span style={{ fontSize:11, fontWeight:600, color:accent,
-              background:`${accent}12`, padding:'3px 9px', borderRadius:7,
-              display:'inline-flex', alignItems:'center', gap:5 }}>
-              <CatIcon cat={tool.category} size={11} color={accent}/> {tool.category}
-            </span>
-          </div>
-
-          {/* Tagline */}
-          <p style={{ fontSize:13, color:C.mut, lineHeight:1.62, margin:'0 0 11px', fontWeight:400 }}>
-            {tool.tagline}
-          </p>
-
-          {/* Feature pills */}
-          {tool.features && (
-            <div style={{ display:'flex', flexWrap:'wrap' as const, gap:5, marginBottom:14 }}>
-              {tool.features.slice(0, 3).map((f, i) => (
-                <span key={i} style={{ fontSize:11, color:C.mut,
-                  background:'var(--chip-bg)', padding:'3px 8px', borderRadius:6,
-                  border:'1px solid var(--brd-xs)' }}>{f}</span>
-              ))}
-            </div>
-          )}
-
-          {/* Footer */}
-          <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
-            borderTop:`1px solid var(--brd-sm)`, paddingTop:12 }}>
-            <span style={{ fontSize:11.5, color:C.mut2 }}>Best for: {tool.bestFor}</span>
-            <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12,
-              fontWeight:700, color:'#fff',
-              background:`linear-gradient(135deg,${accent},${isA2?'#ea580c':'#0b7a6e'})`,
-              padding:'7px 14px', borderRadius:9,
-              boxShadow:`0 3px 10px ${accent}44` }}>
-              Try free <ExternalLink size={11}/>
+              <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12.5,
+                fontWeight:700, color:'#fff',
+                background:`linear-gradient(135deg,${accent},${isA2?'#ea580c':'#0b7a6e'})`,
+                padding:'7px 14px', borderRadius:9,
+                boxShadow:`0 3px 10px ${accent}44` }}>
+                Try free <ExternalLink size={11}/>
+              </div>
             </div>
           </div>
         </div>

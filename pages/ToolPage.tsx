@@ -201,7 +201,7 @@ function StarRating({ rating, accent }: { rating: number; accent: string }) {
   );
 }
 
-function FAQItem({ q, a, accent }: { q: string; a: string; accent: string }) {
+function FAQItem({ q, a, accent }: { q: string; a: string; accent: string; key?: React.Key }) {
   const [open, setOpen] = useState(false);
   return (
     <div style={{ borderBottom: `1px solid var(--brd-xs)` }}>
