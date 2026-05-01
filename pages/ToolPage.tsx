@@ -307,8 +307,8 @@ function RadarChart({ scores, accent }: { scores: [number, number, number, numbe
           <line key={i} x1={cx} y1={cy} x2={p.x} y2={p.y} stroke="var(--brd-xs)" strokeWidth="1" />
         ))}
         {/* Score labels on rings (just 1 and 5) */}
-        <text x={cx + 4} y={cy - (1/5)*maxR - 3} fontSize="8" fill="var(--mut2)" fontFamily="'Plus Jakarta Sans',sans-serif">1</text>
-        <text x={cx + 4} y={cy - maxR - 3}         fontSize="8" fill="var(--mut2)" fontFamily="'Plus Jakarta Sans',sans-serif">5</text>
+        <text x={cx + 4} y={cy - (1/5)*maxR - 3} fontSize="8" fill="var(--mut2)" fontFamily="'DM Sans',sans-serif">1</text>
+        <text x={cx + 4} y={cy - maxR - 3}         fontSize="8" fill="var(--mut2)" fontFamily="'DM Sans',sans-serif">5</text>
         {/* Data polygon */}
         <path d={dataPath} fill={`${accent}28`} stroke={accent} strokeWidth="2.5" strokeLinejoin="round" />
         {/* Data dots */}
@@ -321,7 +321,7 @@ function RadarChart({ scores, accent }: { scores: [number, number, number, numbe
           return (
             <g key={i}>
               <text x={lp.x} y={lp.y - 5} textAnchor={anchor} fontSize="9.5" fontWeight="600"
-                fill="var(--mut2)" fontFamily="'Plus Jakarta Sans',sans-serif" letterSpacing="0.01em">
+                fill="var(--mut2)" fontFamily="'DM Sans',sans-serif" letterSpacing="0.01em">
                 {lp.label}
               </text>
               <text x={lp.x} y={lp.y + 9} textAnchor={anchor} fontSize="11" fontWeight="800"
@@ -428,7 +428,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
   );
 
   return (
-    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Plus Jakarta Sans', sans-serif", color: C.txt }}>
+    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}

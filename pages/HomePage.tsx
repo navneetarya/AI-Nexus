@@ -163,6 +163,9 @@ const ANIM_STYLE = `
 @media(min-width:681px){
   #hamburger-btn  { display:none !important }
 }
+@media(min-width:780px){
+  .tool-card-featured-wrap { grid-column: 1 / -1; }
+}
 html { scroll-behavior:smooth }
 ::-webkit-scrollbar { width:5px; height:5px }
 ::-webkit-scrollbar-track { background:transparent }
@@ -282,7 +285,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           <button className="nav-btn" onClick={() => { setView('home'); scrollToId('tools-section'); }}
             style={{ fontSize:14, fontWeight:500, color:view==='home'?C.a1:C.mut,
               padding:'7px 13px', borderRadius:8, background: view==='home'?C.a1card:'transparent',
-              border:'none', cursor:'pointer', fontFamily:"'Plus Jakarta Sans',sans-serif" }}>
+              border:'none', cursor:'pointer', fontFamily:"'DM Sans',sans-serif" }}>
             All Tools
           </button>
           <button className="nav-btn" onClick={goCompare}
@@ -293,7 +296,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 ? `linear-gradient(135deg,${C.a1},#0b7a6e)`
                 : C.a1card,
               border:`1.5px solid ${C.a1brd}`, cursor:'pointer',
-              fontFamily:"'Plus Jakarta Sans',sans-serif",
+              fontFamily:"'DM Sans',sans-serif",
               boxShadow: view==='compare' ? '0 2px 8px rgba(13,148,136,.28)' : 'none',
               display:'flex', alignItems:'center', gap:6 }}>
             <Scale size={14}/> Compare
@@ -301,7 +304,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           <button className="nav-btn" onClick={() => navigate('/about')}
             style={{ fontSize:14, fontWeight:500, color:C.mut, padding:'7px 13px',
               borderRadius:8, background:'transparent', border:'none', cursor:'pointer',
-              fontFamily:"'Plus Jakarta Sans',sans-serif" }}>
+              fontFamily:"'DM Sans',sans-serif" }}>
             About
           </button>
           <a href={`mailto:${SITE_CONFIG.email}`}
@@ -343,7 +346,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               style={{ display:'block', width:'100%', textAlign:'left' as const,
                 fontSize:15, fontWeight:500, color:C.txt, padding:'12px 12px',
                 borderRadius:8, background:'transparent', border:'none', cursor:'pointer',
-                fontFamily:"'Plus Jakarta Sans',sans-serif",
+                fontFamily:"'DM Sans',sans-serif",
                 borderBottom:`1px solid var(--chip-bg)` }}>
               {label}
             </button>
@@ -389,7 +392,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 onClick={() => { setView('home'); setFilters({ search:'', category:cat as any });
                   window.scrollTo(0,0); setTimeout(() => scrollToId('tools-section'), 80); }}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
-                  fontFamily:"'Plus Jakarta Sans',sans-serif", background:'none', border:'none',
+                  fontFamily:"'DM Sans',sans-serif", background:'none', border:'none',
                   cursor:'pointer', padding:'3px 0', textAlign:'left' as const, transition:'color .15s' }}
                 onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
                 onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
@@ -407,7 +410,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             {COMPARE_ARTICLES.map(a => (
               <button key={a.slug} onClick={() => navigate(`/compare/${a.slug}`)}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
-                  fontFamily:"'Plus Jakarta Sans',sans-serif", background:'none', border:'none',
+                  fontFamily:"'DM Sans',sans-serif", background:'none', border:'none',
                   cursor:'pointer', padding:'3px 0', textAlign:'left' as const,
                   transition:'color .15s', lineHeight:1.5 }}
                 onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
@@ -431,7 +434,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             ].map(({ label, fn }) => (
               <button key={label} onClick={fn}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
-                  fontFamily:"'Plus Jakarta Sans',sans-serif", background:'none', border:'none',
+                  fontFamily:"'DM Sans',sans-serif", background:'none', border:'none',
                   cursor:'pointer', padding:'3px 0', textAlign:'left' as const, transition:'color .15s' }}
                 onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
                 onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
@@ -460,7 +463,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   if (view === 'compare') {
     return (
       <div style={{ minHeight:'100vh', background:C.bg,
-        fontFamily:"'Plus Jakarta Sans',sans-serif", color:C.txt }}>
+        fontFamily:"'DM Sans',sans-serif", color:C.txt }}>
         <style>{ANIM_STYLE}</style>
         <Nav/>
 
@@ -537,7 +540,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   // ════════════════════════════════════════════════════════════════════════════
   return (
     <div style={{ minHeight:'100vh', background:C.bg,
-      fontFamily:"'Plus Jakarta Sans',sans-serif", color:C.txt }}>
+      fontFamily:"'DM Sans',sans-serif", color:C.txt }}>
       <style>{ANIM_STYLE}</style>
       <Nav/>
 
@@ -691,7 +694,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               style={{ width:'100%', paddingLeft:43, paddingRight:16, height:50,
                 border:`1.5px solid ${C.a1brd}`, borderRadius:13, fontSize:14.5,
                 outline:'none', boxSizing:'border-box' as const,
-                fontFamily:"'Plus Jakarta Sans',sans-serif", background:C.surf, color:C.txt,
+                fontFamily:"'DM Sans',sans-serif", background:C.surf, color:C.txt,
                 boxShadow:'0 4px 20px rgba(13,148,136,.09)' }}
               onFocus={e=>(e.target.style.borderColor=C.a1)}
               onBlur={e=>(e.target.style.borderColor=C.a1brd)}
@@ -711,7 +714,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 style={{ fontSize:12.5, fontWeight:500, color:C.mut, padding:'6px 13px',
                   borderRadius:100, background:'transparent',
                   border:`1px solid var(--brd-lg)`, cursor:'pointer',
-                  fontFamily:"'Plus Jakarta Sans',sans-serif",
+                  fontFamily:"'DM Sans',sans-serif",
                   display:'inline-flex', alignItems:'center', gap:5 }}>
                 <CatIcon cat={cat} size={12} color={C.mut} /> {label}
               </button>
@@ -776,7 +779,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               style={{ display:'flex', alignItems:'center', gap:5, fontSize:12.5,
                 fontWeight:600, color:C.a1, padding:'7px 14px', borderRadius:9,
                 background:C.a1card, border:`1px solid ${C.a1brd}`,
-                cursor:'pointer', fontFamily:"'Plus Jakarta Sans',sans-serif" }}>
+                cursor:'pointer', fontFamily:"'DM Sans',sans-serif" }}>
                 <Scale size={13}/> See all comparisons <ArrowRight size={12}/>
             </button>
           </div>
@@ -793,7 +796,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                   style={{ display:'flex', alignItems:'center', gap:11, padding:'13px 14px',
                     borderRadius:13, border:`1.5px solid ${brd}`, background:bg,
                     cursor:'pointer', textAlign:'left' as const,
-                    fontFamily:"'Plus Jakarta Sans',sans-serif",
+                    fontFamily:"'DM Sans',sans-serif",
                     boxShadow:'0 1px 4px var(--sh-xs)' }}>
                   <div style={{ width:40, height:40, borderRadius:11, flexShrink:0,
                     background:'#fff', border:`1.5px solid ${brd}`,
@@ -828,7 +831,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             <button onClick={() => setFilters(f => ({ ...f, category:'All' as any }))}
               style={{ fontSize:12, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8,
                 padding:'6px 14px', background:C.a1card, cursor:'pointer',
-                fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:600 }}>
+                fontFamily:"'DM Sans',sans-serif", fontWeight:600 }}>
               ← All tools
             </button>
           )}
@@ -846,7 +849,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               <button key={cat} className="cat-pill"
                 onClick={() => setFilters(f => ({ ...f, category:cat as any }))}
                 style={{ padding:'7px 16px', borderRadius:100, fontSize:12.5,
-                  fontWeight:active?700:500, fontFamily:"'Plus Jakarta Sans',sans-serif",
+                  fontWeight:active?700:500, fontFamily:"'DM Sans',sans-serif",
                   border:`1.5px solid ${active ? abrd : 'var(--brd)'}`,
                   background:active ? abg : C.surf, color:active ? ac : C.mut,
                   cursor:'pointer', boxShadow:active?`0 2px 8px ${ac}1e`:'none' }}>
@@ -885,7 +888,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             <button onClick={() => setFilters({ search:'', category:'All' as any })}
               style={{ color:C.a1, border:`1.5px solid ${C.a1brd}`, borderRadius:9,
                 padding:'9px 22px', fontSize:13, fontWeight:600,
-                fontFamily:"'Plus Jakarta Sans',sans-serif", background:C.a1card, cursor:'pointer' }}>
+                fontFamily:"'DM Sans',sans-serif", background:C.a1card, cursor:'pointer' }}>
               Clear search
             </button>
           </div>
@@ -1017,7 +1020,15 @@ function BlogCompareCard({ article, navigate, idx }: {
   );
 }
 
-// ── Tool Card (home view) ────────────────────────────────────────────────────
+// ── Tool Card (home view) — 3 visual tiers ──────────────────────────────────
+// • Featured  (affiliate picks)  — span-2 cols, horizontal layout, teal glow, Editor's Pick ribbon
+// • Standard  (badged tools)     — current design, no change
+// • Secondary (no badge)         — same structure, visually recedes (thinner border, dimmer shadow)
+
+const FEATURED_RATINGS: Record<string, string> = {
+  rytr: '4.5', podcastle: '4.7', ocoya: '4.6', replit: '4.4', taskade: '4.6',
+};
+
 function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
   tool: Tool; navigate: (to: string) => void; isAffiliatePick: boolean; idx: number;
 }) {
@@ -1025,50 +1036,180 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
   const accent  = isA2 ? C.a2 : C.a1;
   const cardBrd = isA2 ? C.a2brd : C.a1brd;
   const badge   = tool.userBadge ? BADGE_COLORS[tool.userBadge] : null;
+  const isSecondary = !isAffiliatePick && !tool.userBadge;
 
-  return (
-    <div className="tool-card-wrap scroll-reveal"
-      onClick={() => navigate(`/tools/${tool.slug}`)}
-      style={{ cursor:'pointer', position:'relative' as const,
-        ['--card-brd' as any]: cardBrd,
-        animationDelay:`${idx * 0.04}s` }}>
+  // ── FEATURED tier ─────────────────────────────────────────────────────────
+  if (isAffiliatePick) {
+    const rating = FEATURED_RATINGS[tool.slug] ?? '4.5';
+    const ratingNum = parseFloat(rating);
 
-      {/* TOP PICK ribbon */}
-      {isAffiliatePick && (
-        <div style={{ position:'absolute', top:0, right:0, zIndex:3,
+    return (
+      <div className="tool-card-wrap tool-card-featured-wrap scroll-reveal"
+        onClick={() => navigate(`/tools/${tool.slug}`)}
+        style={{ cursor:'pointer', position:'relative', animationDelay:`${idx * 0.04}s`,
+          ['--card-brd' as any]: accent + '60' }}>
+
+        {/* "TOP PICK" ribbon kept for compat + upgraded */}
+        <div style={{ position:'absolute', top:0, right:0, zIndex:4,
           background:`linear-gradient(135deg,${C.a2},#ea580c)`,
           color:'#fff', fontSize:9, fontWeight:800, letterSpacing:'0.08em',
           padding:'4px 11px', borderRadius:'0 14px 0 10px',
           boxShadow:`0 2px 8px ${C.a2}50` }}>
           TOP PICK
         </div>
-      )}
+
+        <div className="tool-card-inner"
+          style={{ background:`linear-gradient(145deg,${C.surf} 50%,${accent}0d)`,
+            borderRadius:16,
+            border:`2px solid ${accent}50`,
+            boxShadow:`0 0 0 1px ${accent}14, 0 12px 44px ${accent}1a`,
+            overflow:'hidden', position:'relative' }}>
+
+          {/* Thicker top accent bar */}
+          <div style={{ height:4,
+            background:`linear-gradient(90deg,${accent},${accent}55)` }}/>
+
+          <div style={{ padding:'18px 22px 20px', maxWidth:900 }}>
+            {/* Editor's Pick label row */}
+            <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:14 }}>
+              <span style={{ fontSize:10.5, fontWeight:700, color:accent,
+                letterSpacing:'0.07em', textTransform:'uppercase' as const }}>
+                ✦ Editor's Pick
+              </span>
+              {badge && (
+                <span style={{ fontSize:10, fontWeight:700, color:badge.color,
+                  background:badge.bg, padding:'2px 9px', borderRadius:7,
+                  whiteSpace:'nowrap' as const }}>
+                  {tool.userBadge}
+                </span>
+              )}
+            </div>
+
+            {/* Horizontal layout */}
+            <div style={{ display:'flex', gap:18, alignItems:'flex-start' }}>
+              {/* Left: logo + stars */}
+              <div style={{ display:'flex', flexDirection:'column' as const,
+                alignItems:'center', gap:8, flexShrink:0 }}>
+                <div style={{ width:62, height:62, borderRadius:16, background:'#fff',
+                  border:`2px solid ${accent}28`,
+                  display:'flex', alignItems:'center', justifyContent:'center',
+                  overflow:'hidden', boxShadow:`0 4px 18px ${accent}2e` }}>
+                  <ToolLogo slug={tool.slug} size={48} name={tool.name} color={accent} />
+                </div>
+                {/* Star rating */}
+                <div style={{ display:'flex', alignItems:'center', gap:2 }}>
+                  {[1,2,3,4,5].map(s => (
+                    <svg key={s} width="11" height="11" viewBox="0 0 10 10">
+                      <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
+                        fill={s <= Math.floor(ratingNum) ? accent : 'var(--brd)'}/>
+                    </svg>
+                  ))}
+                  <span style={{ fontSize:10, color:C.mut2, marginLeft:2, fontWeight:600 }}>
+                    {rating}
+                  </span>
+                </div>
+              </div>
+
+              {/* Right: content */}
+              <div style={{ flex:1, minWidth:0 }}>
+                <div style={{ display:'flex', alignItems:'flex-start',
+                  justifyContent:'space-between', marginBottom:4, gap:8 }}>
+                  <div>
+                    <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
+                      fontSize:17, color:C.txt, letterSpacing:'-0.025em', lineHeight:1.2 }}>
+                      {tool.name}
+                    </div>
+                    <div style={{ fontSize:11, color:C.mut2, fontWeight:500, marginTop:2 }}>
+                      {tool.pricing}
+                    </div>
+                  </div>
+                  <span style={{ fontSize:11, fontWeight:600, color:accent,
+                    background:`${accent}12`, padding:'3px 9px', borderRadius:7, flexShrink:0,
+                    display:'inline-flex', alignItems:'center', gap:5 }}>
+                    <CatIcon cat={tool.category} size={11} color={accent}/> {tool.category}
+                  </span>
+                </div>
+
+                <p style={{ fontSize:13.5, color:C.mut, lineHeight:1.65,
+                  margin:'8px 0 12px', fontWeight:400 }}>
+                  {tool.tagline}
+                </p>
+
+                {/* Feature pills — show 4 on featured */}
+                {tool.features && (
+                  <div style={{ display:'flex', flexWrap:'wrap' as const, gap:5, marginBottom:14 }}>
+                    {tool.features.slice(0, 4).map((f, i) => (
+                      <span key={i} style={{ fontSize:11, color:C.mut,
+                        background:'var(--chip-bg)', padding:'3px 8px', borderRadius:6,
+                        border:'1px solid var(--brd-xs)' }}>{f}</span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Footer */}
+                <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
+                  borderTop:`1px solid var(--brd-sm)`, paddingTop:12 }}>
+                  <span style={{ fontSize:11.5, color:C.mut2 }}>
+                    Best for: {tool.bestFor}
+                  </span>
+                  <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:13,
+                    fontWeight:700, color:'#fff',
+                    background:`linear-gradient(135deg,${accent},${isA2?'#ea580c':'#0b7a6e'})`,
+                    padding:'8px 18px', borderRadius:9,
+                    boxShadow:`0 3px 12px ${accent}44` }}>
+                    Try free <ExternalLink size={12}/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ── STANDARD & SECONDARY tiers ────────────────────────────────────────────
+  // Secondary = no userBadge, not affiliate → slightly receded visual weight
+  return (
+    <div className="tool-card-wrap scroll-reveal"
+      onClick={() => navigate(`/tools/${tool.slug}`)}
+      style={{ cursor:'pointer', position:'relative',
+        ['--card-brd' as any]: cardBrd,
+        animationDelay:`${idx * 0.04}s`,
+        opacity: isSecondary ? 0.88 : 1 }}>
 
       <div className="tool-card-inner"
         style={{ background:C.surf, borderRadius:15,
-          border:`1.5px solid var(--brd-xs)`,
-          padding:'20px 22px', overflow:'hidden',
-          position:'relative' as const,
-          boxShadow:'0 1px 4px var(--sh-xs)' }}>
+          border: isSecondary
+            ? `1px solid var(--brd-xs)`
+            : `1.5px solid var(--brd-xs)`,
+          padding: isSecondary ? '17px 19px' : '20px 22px',
+          overflow:'hidden', position:'relative',
+          boxShadow: isSecondary ? 'none' : '0 1px 4px var(--sh-xs)' }}>
 
-        {/* Accent bar */}
-        <div style={{ position:'absolute', top:0, left:0, right:0, height:3,
-          background:`linear-gradient(90deg,${accent}80,${accent}18)`,
+        {/* Accent top bar — thinner on secondary */}
+        <div style={{ position:'absolute', top:0, left:0, right:0,
+          height: isSecondary ? 2 : 3,
+          background:`linear-gradient(90deg,${accent}${isSecondary?'50':'80'},${accent}${isSecondary?'10':'18'})`,
           borderRadius:'14px 14px 0 0' }}/>
 
         {/* Header */}
         <div style={{ display:'flex', justifyContent:'space-between',
           alignItems:'flex-start', marginBottom:10, marginTop:6 }}>
           <div style={{ display:'flex', alignItems:'center', gap:12 }}>
-            <div style={{ width:46, height:46, borderRadius:13, flexShrink:0,
+            <div style={{ width: isSecondary ? 40 : 46,
+              height: isSecondary ? 40 : 46,
+              borderRadius:13, flexShrink:0,
               background:'#fff', border:`1.5px solid ${accent}2e`,
               display:'flex', alignItems:'center', justifyContent:'center',
               overflow:'hidden', boxShadow:`0 1px 6px ${accent}22` }}>
-              <ToolLogo slug={tool.slug} size={36} name={tool.name} color={accent} />
+              <ToolLogo slug={tool.slug} size={isSecondary ? 30 : 36}
+                name={tool.name} color={accent} />
             </div>
             <div>
               <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
-                fontSize:15, color:C.txt, letterSpacing:'-0.02em', lineHeight:1.2 }}>
+                fontSize: isSecondary ? 14 : 15, color:C.txt,
+                letterSpacing:'-0.02em', lineHeight:1.2 }}>
                 {tool.name}
               </div>
               <div style={{ fontSize:11, color:C.mut2, marginTop:3, fontWeight:500 }}>
@@ -1076,7 +1217,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
               </div>
             </div>
           </div>
-          {badge && (
+          {badge && !isSecondary && (
             <span style={{ fontSize:10, fontWeight:700, color:badge.color,
               background:badge.bg, padding:'3px 9px', borderRadius:8,
               whiteSpace:'nowrap' as const, flexShrink:0 }}>
@@ -1090,17 +1231,18 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
           <span style={{ fontSize:11, fontWeight:600, color:accent,
             background:`${accent}10`, padding:'3px 9px', borderRadius:7,
             display:'inline-flex', alignItems:'center', gap:5 }}>
-            <CatIcon cat={tool.category} size={11} color={accent} /> {tool.category}
+            <CatIcon cat={tool.category} size={11} color={accent}/> {tool.category}
           </span>
         </div>
 
         {/* Tagline */}
-        <p style={{ fontSize:13, color:C.mut, lineHeight:1.62, margin:'0 0 11px', fontWeight:400 }}>
+        <p style={{ fontSize: isSecondary ? 12.5 : 13, color:C.mut,
+          lineHeight:1.62, margin:'0 0 11px', fontWeight:400 }}>
           {tool.tagline}
         </p>
 
         {/* Feature pills */}
-        {tool.features && (
+        {tool.features && !isSecondary && (
           <div style={{ display:'flex', flexWrap:'wrap' as const, gap:5, marginBottom:14 }}>
             {tool.features.slice(0, 3).map((f, i) => (
               <span key={i} style={{ fontSize:11, color:C.mut,
@@ -1114,18 +1256,11 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
         <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
           borderTop:`1px solid var(--brd-sm)`, paddingTop:12 }}>
           <span style={{ fontSize:11.5, color:C.mut2 }}>Best for: {tool.bestFor}</span>
-          {isAffiliatePick
-            ? <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12,
-                fontWeight:700, color:'#fff',
-                background:`linear-gradient(135deg,${accent},${isA2?'#ea580c':'#0b7a6e'})`,
-                padding:'5px 12px', borderRadius:8, boxShadow:`0 2px 8px ${accent}40` }}>
-                Try free <ExternalLink size={11}/>
-              </div>
-            : <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12,
-                fontWeight:600, color:accent }}>
-                Read review <ArrowRight size={12}/>
-              </div>
-          }
+          <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12,
+            fontWeight: isSecondary ? 500 : 600,
+            color: isSecondary ? C.mut2 : accent }}>
+            Read review <ArrowRight size={12}/>
+          </div>
         </div>
       </div>
     </div>
