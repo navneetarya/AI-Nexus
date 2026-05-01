@@ -508,6 +508,8 @@ console.log('\nStatic pages:');
         '@type': 'Person',
         name: AUTHOR,
         url: canonical,
+        image: `${SITE}/author-photo.jpg`,
+        sameAs: ['https://www.linkedin.com/in/navneetarya/'],
         knowsAbout: ['Artificial Intelligence', 'AI Writing Tools', 'Podcast Software', 'Social Media Automation', 'AI Productivity Tools'],
         worksFor: { '@type': 'Organization', name: 'AI Nexus', url: SITE },
       },

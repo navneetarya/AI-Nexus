@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, CheckCircle, Mail, Twitter, ExternalLink } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Mail, ExternalLink, Linkedin } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 
 const C = {
@@ -18,7 +18,9 @@ export function AboutPage({ navigate }: { navigate: (to: string) => void }) {
     "@type": "Person",
     "name": SITE_CONFIG.authorName,
     "url": `${SITE_CONFIG.siteUrl}/about`,
+    "image": `${SITE_CONFIG.siteUrl}/author-photo.jpg`,
     "description": SITE_CONFIG.authorBio,
+    "sameAs": ["https://www.linkedin.com/in/navneetarya/"],
     "knowsAbout": ["Artificial Intelligence", "AI Tools", "Content Creation", "Podcast Software", "Productivity Software", "Writing Tools"],
     "worksFor": {
       "@type": "Organization",
@@ -55,8 +57,18 @@ export function AboutPage({ navigate }: { navigate: (to: string) => void }) {
 
             {/* Author identity */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 20 }}>
-              <div style={{ width: 64, height: 64, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 22, color: '#fff', flexShrink: 0 }}>
-                NA
+              <div style={{ position: 'relative', flexShrink: 0 }}>
+                <div style={{ width: 80, height: 80, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, padding: 3, boxShadow: `0 0 0 3px ${C.a1card}, 0 4px 16px rgba(13,148,136,.25)` }}>
+                  <img
+                    src="/author-photo.jpg"
+                    alt="Navneet Arya — founder of AI Nexus"
+                    width={74} height={74}
+                    style={{ width: 74, height: 74, borderRadius: '50%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
+                  />
+                </div>
+                <div style={{ position: 'absolute', bottom: 2, right: 2, width: 18, height: 18, borderRadius: '50%', background: '#22c55e', border: '2px solid #fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div style={{ width: 7, height: 7, borderRadius: '50%', background: '#fff' }}/>
+                </div>
               </div>
               <div>
                 <h1 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 'clamp(22px,4vw,32px)', color: C.txt, margin: '0 0 4px', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
@@ -81,6 +93,10 @@ export function AboutPage({ navigate }: { navigate: (to: string) => void }) {
               <a href={`mailto:${SITE_CONFIG.email}`}
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 500, color: C.a1, padding: '7px 16px', border: `1.5px solid ${C.a1brd}`, borderRadius: 100, background: C.a1card, textDecoration: 'none' }}>
                 <Mail size={13} /> {SITE_CONFIG.email}
+              </a>
+              <a href="https://www.linkedin.com/in/navneetarya/" target="_blank" rel="noopener noreferrer"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 500, color: '#0A66C2', padding: '7px 16px', border: '1.5px solid rgba(10,102,194,.25)', borderRadius: 100, background: 'rgba(10,102,194,.06)', textDecoration: 'none' }}>
+                <Linkedin size={13} /> LinkedIn
               </a>
             </div>
           </div>
@@ -114,7 +130,7 @@ export function AboutPage({ navigate }: { navigate: (to: string) => void }) {
         {/* Review process */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 18px', letterSpacing: '-0.02em' }}>
-            How every review is done
+            Testing methodology — how every review is done
           </h2>
           {[
             ['1. Sign up on the free plan', 'Every tool is tested starting from the free tier — because that\'s where most creators and small businesses start. If the free plan is terrible, I say so.'],
