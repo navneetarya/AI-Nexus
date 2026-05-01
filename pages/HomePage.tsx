@@ -164,9 +164,6 @@ const ANIM_STYLE = `
 @media(min-width:681px){
   #hamburger-btn  { display:none !important }
 }
-@media(min-width:780px){
-  .tool-card-featured-wrap { grid-column: 1 / -1; }
-}
 html { scroll-behavior:smooth }
 ::-webkit-scrollbar { width:5px; height:5px }
 ::-webkit-scrollbar-track { background:transparent }
@@ -464,7 +461,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <div style={{ position:'relative', overflow:'hidden', background:C.surf,
-        borderBottom:`1px solid ${C.barBrd}`, padding:'68px 24px 60px' }}>
+        borderBottom:`1px solid ${C.barBrd}`, padding:'68px 24px 72px', minHeight:380 }}>
 
         {/* Background washes */}
         <div style={{ position:'absolute', inset:0, pointerEvents:'none',
@@ -787,13 +784,31 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           {filters.search ? ` matching "${filters.search}"` : ''}
         </p>
 
-        {/* Cards */}
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
-          {filtered.map((tool, i) => (
-            <ToolCard key={tool.id} tool={tool} navigate={navigate}
-              isAffiliatePick={AFFILIATE_SLUGS.includes(tool.slug)} idx={i}/>
-          ))}
-        </div>
+        {/* ── Featured picks (affiliate) — stacked full-width ─────────── */}
+        {(() => {
+          const featuredTools = filtered.filter(t => AFFILIATE_SLUGS.includes(t.slug));
+          const regularTools  = filtered.filter(t => !AFFILIATE_SLUGS.includes(t.slug));
+          return (
+            <>
+              {featuredTools.length > 0 && (
+                <div style={{ display:'flex', flexDirection:'column' as const, gap:14, marginBottom: regularTools.length > 0 ? 24 : 0 }}>
+                  {featuredTools.map((tool, i) => (
+                    <ToolCard key={tool.id} tool={tool} navigate={navigate}
+                      isAffiliatePick={true} idx={i}/>
+                  ))}
+                </div>
+              )}
+              {regularTools.length > 0 && (
+                <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
+                  {regularTools.map((tool, i) => (
+                    <ToolCard key={tool.id} tool={tool} navigate={navigate}
+                      isAffiliatePick={false} idx={featuredTools.length + i}/>
+                  ))}
+                </div>
+              )}
+            </>
+          );
+        })()}
 
         {filtered.length === 0 && (
           <div style={{ textAlign:'center', padding:'80px 0' }}>
@@ -987,7 +1002,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
           <div style={{ height:4,
             background:`linear-gradient(90deg,${accent},${accent}55)` }}/>
 
-          <div style={{ padding:'18px 22px 20px', maxWidth:900 }}>
+          <div style={{ padding:'18px 22px 20px' }}>
             {/* Editor's Pick label row */}
             <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:14 }}>
               <span style={{ fontSize:10.5, fontWeight:700, color:accent,
