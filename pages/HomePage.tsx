@@ -784,31 +784,15 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           {filters.search ? ` matching "${filters.search}"` : ''}
         </p>
 
-        {/* ── Featured picks (affiliate) — stacked full-width ─────────── */}
-        {(() => {
-          const featuredTools = filtered.filter(t => AFFILIATE_SLUGS.includes(t.slug));
-          const regularTools  = filtered.filter(t => !AFFILIATE_SLUGS.includes(t.slug));
-          return (
-            <>
-              {featuredTools.length > 0 && (
-                <div style={{ display:'flex', flexDirection:'column' as const, gap:14, marginBottom: regularTools.length > 0 ? 24 : 0 }}>
-                  {featuredTools.map((tool, i) => (
-                    <ToolCard key={tool.id} tool={tool} navigate={navigate}
-                      isAffiliatePick={true} idx={i}/>
-                  ))}
-                </div>
-              )}
-              {regularTools.length > 0 && (
-                <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
-                  {regularTools.map((tool, i) => (
-                    <ToolCard key={tool.id} tool={tool} navigate={navigate}
-                      isAffiliatePick={false} idx={featuredTools.length + i}/>
-                  ))}
-                </div>
-              )}
-            </>
-          );
-        })()}
+        {/* ── All tools — single unified 3-column grid ─────────────────── */}
+        {filtered.length > 0 && (
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
+            {filtered.map((tool, i) => (
+              <ToolCard key={tool.id} tool={tool} navigate={navigate}
+                isAffiliatePick={AFFILIATE_SLUGS.includes(tool.slug)} idx={i}/>
+            ))}
+          </div>
+        )}
 
         {filtered.length === 0 && (
           <div style={{ textAlign:'center', padding:'80px 0' }}>
@@ -954,7 +938,7 @@ function BlogCompareCard({ article, navigate, idx }: {
 }
 
 // ── Tool Card (home view) — 3 visual tiers ──────────────────────────────────
-// • Featured  (affiliate picks)  — span-2 cols, horizontal layout, teal glow, Editor's Pick ribbon
+// • Featured  (affiliate picks)  — same grid cell, vertical layout, teal glow, Editor's Pick ribbon + TOP PICK badge
 // • Standard  (badged tools)     — current design, no change
 // • Secondary (no badge)         — same structure, visually recedes (thinner border, dimmer shadow)
 
@@ -971,18 +955,18 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
   const badge   = tool.userBadge ? BADGE_COLORS[tool.userBadge] : null;
   const isSecondary = !isAffiliatePick && !tool.userBadge;
 
-  // ── FEATURED tier ─────────────────────────────────────────────────────────
+  // ── FEATURED tier — vertical grid card with special styling ──────────────
   if (isAffiliatePick) {
     const rating = FEATURED_RATINGS[tool.slug] ?? '4.5';
     const ratingNum = parseFloat(rating);
 
     return (
-      <div className="tool-card-wrap tool-card-featured-wrap scroll-reveal"
+      <div className="tool-card-wrap scroll-reveal"
         onClick={() => navigate(`/tools/${tool.slug}`)}
         style={{ cursor:'pointer', position:'relative', animationDelay:`${idx * 0.04}s`,
           ['--card-brd' as any]: accent + '60' }}>
 
-        {/* "TOP PICK" ribbon kept for compat + upgraded */}
+        {/* "TOP PICK" ribbon */}
         <div style={{ position:'absolute', top:0, right:0, zIndex:4,
           background:`linear-gradient(135deg,${C.a2},#ea580c)`,
           color:'#fff', fontSize:9, fontWeight:800, letterSpacing:'0.08em',
@@ -992,108 +976,102 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
         </div>
 
         <div className="tool-card-inner"
-          style={{ background:`linear-gradient(145deg,${C.surf} 50%,${accent}0d)`,
-            borderRadius:16,
+          style={{ background:`linear-gradient(160deg,${C.surf} 60%,${accent}0e)`,
+            borderRadius:15,
             border:`2px solid ${accent}50`,
-            boxShadow:`0 0 0 1px ${accent}14, 0 12px 44px ${accent}1a`,
-            overflow:'hidden', position:'relative' }}>
+            boxShadow:`0 0 0 1px ${accent}14, 0 8px 32px ${accent}18`,
+            overflow:'hidden', position:'relative', padding:'20px 22px' }}>
 
           {/* Thicker top accent bar */}
-          <div style={{ height:4,
-            background:`linear-gradient(90deg,${accent},${accent}55)` }}/>
+          <div style={{ position:'absolute', top:0, left:0, right:0, height:4,
+            background:`linear-gradient(90deg,${accent},${accent}50)`,
+            borderRadius:'14px 14px 0 0' }}/>
 
-          <div style={{ padding:'18px 22px 20px' }}>
-            {/* Editor's Pick label row */}
-            <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:14 }}>
+          {/* Header: logo + name row */}
+          <div style={{ display:'flex', justifyContent:'space-between',
+            alignItems:'flex-start', marginBottom:8, marginTop:6 }}>
+            <div style={{ display:'flex', alignItems:'center', gap:12 }}>
+              <div style={{ width:46, height:46, borderRadius:13, flexShrink:0,
+                background:'#fff', border:`2px solid ${accent}28`,
+                display:'flex', alignItems:'center', justifyContent:'center',
+                overflow:'hidden', boxShadow:`0 4px 18px ${accent}2e` }}>
+                <ToolLogo slug={tool.slug} size={36} name={tool.name} color={accent} />
+              </div>
+              <div>
+                <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
+                  fontSize:15, color:C.txt, letterSpacing:'-0.02em', lineHeight:1.2 }}>
+                  {tool.name}
+                </div>
+                <div style={{ fontSize:11, color:C.mut2, marginTop:3, fontWeight:500 }}>
+                  {tool.pricing}
+                </div>
+              </div>
+            </div>
+            {badge && (
+              <span style={{ fontSize:10, fontWeight:700, color:badge.color,
+                background:badge.bg, padding:'3px 9px', borderRadius:8,
+                whiteSpace:'nowrap' as const, flexShrink:0 }}>
+                {tool.userBadge}
+              </span>
+            )}
+          </div>
+
+          {/* Editor's Pick + category + stars row */}
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:9 }}>
+            <div style={{ display:'flex', alignItems:'center', gap:8 }}>
               <span style={{ fontSize:10.5, fontWeight:700, color:accent,
-                letterSpacing:'0.07em', textTransform:'uppercase' as const }}>
+                letterSpacing:'0.06em', textTransform:'uppercase' as const }}>
                 ✦ Editor's Pick
               </span>
-              {badge && (
-                <span style={{ fontSize:10, fontWeight:700, color:badge.color,
-                  background:badge.bg, padding:'2px 9px', borderRadius:7,
-                  whiteSpace:'nowrap' as const }}>
-                  {tool.userBadge}
-                </span>
-              )}
             </div>
+            <div style={{ display:'flex', alignItems:'center', gap:2 }}>
+              {[1,2,3,4,5].map(s => (
+                <svg key={s} width="10" height="10" viewBox="0 0 10 10">
+                  <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
+                    fill={s <= Math.floor(ratingNum) ? accent : 'var(--brd)'}/>
+                </svg>
+              ))}
+              <span style={{ fontSize:10, color:C.mut2, marginLeft:2, fontWeight:600 }}>
+                {rating}
+              </span>
+            </div>
+          </div>
 
-            {/* Horizontal layout */}
-            <div style={{ display:'flex', gap:18, alignItems:'flex-start' }}>
-              {/* Left: logo + stars */}
-              <div style={{ display:'flex', flexDirection:'column' as const,
-                alignItems:'center', gap:8, flexShrink:0 }}>
-                <div style={{ width:62, height:62, borderRadius:16, background:'#fff',
-                  border:`2px solid ${accent}28`,
-                  display:'flex', alignItems:'center', justifyContent:'center',
-                  overflow:'hidden', boxShadow:`0 4px 18px ${accent}2e` }}>
-                  <ToolLogo slug={tool.slug} size={48} name={tool.name} color={accent} />
-                </div>
-                {/* Star rating */}
-                <div style={{ display:'flex', alignItems:'center', gap:2 }}>
-                  {[1,2,3,4,5].map(s => (
-                    <svg key={s} width="11" height="11" viewBox="0 0 10 10">
-                      <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
-                        fill={s <= Math.floor(ratingNum) ? accent : 'var(--brd)'}/>
-                    </svg>
-                  ))}
-                  <span style={{ fontSize:10, color:C.mut2, marginLeft:2, fontWeight:600 }}>
-                    {rating}
-                  </span>
-                </div>
-              </div>
+          {/* Category chip */}
+          <div style={{ marginBottom:9 }}>
+            <span style={{ fontSize:11, fontWeight:600, color:accent,
+              background:`${accent}12`, padding:'3px 9px', borderRadius:7,
+              display:'inline-flex', alignItems:'center', gap:5 }}>
+              <CatIcon cat={tool.category} size={11} color={accent}/> {tool.category}
+            </span>
+          </div>
 
-              {/* Right: content */}
-              <div style={{ flex:1, minWidth:0 }}>
-                <div style={{ display:'flex', alignItems:'flex-start',
-                  justifyContent:'space-between', marginBottom:4, gap:8 }}>
-                  <div>
-                    <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
-                      fontSize:17, color:C.txt, letterSpacing:'-0.025em', lineHeight:1.2 }}>
-                      {tool.name}
-                    </div>
-                    <div style={{ fontSize:11, color:C.mut2, fontWeight:500, marginTop:2 }}>
-                      {tool.pricing}
-                    </div>
-                  </div>
-                  <span style={{ fontSize:11, fontWeight:600, color:accent,
-                    background:`${accent}12`, padding:'3px 9px', borderRadius:7, flexShrink:0,
-                    display:'inline-flex', alignItems:'center', gap:5 }}>
-                    <CatIcon cat={tool.category} size={11} color={accent}/> {tool.category}
-                  </span>
-                </div>
+          {/* Tagline */}
+          <p style={{ fontSize:13, color:C.mut, lineHeight:1.62, margin:'0 0 11px', fontWeight:400 }}>
+            {tool.tagline}
+          </p>
 
-                <p style={{ fontSize:13.5, color:C.mut, lineHeight:1.65,
-                  margin:'8px 0 12px', fontWeight:400 }}>
-                  {tool.tagline}
-                </p>
+          {/* Feature pills */}
+          {tool.features && (
+            <div style={{ display:'flex', flexWrap:'wrap' as const, gap:5, marginBottom:14 }}>
+              {tool.features.slice(0, 3).map((f, i) => (
+                <span key={i} style={{ fontSize:11, color:C.mut,
+                  background:'var(--chip-bg)', padding:'3px 8px', borderRadius:6,
+                  border:'1px solid var(--brd-xs)' }}>{f}</span>
+              ))}
+            </div>
+          )}
 
-                {/* Feature pills — show 4 on featured */}
-                {tool.features && (
-                  <div style={{ display:'flex', flexWrap:'wrap' as const, gap:5, marginBottom:14 }}>
-                    {tool.features.slice(0, 4).map((f, i) => (
-                      <span key={i} style={{ fontSize:11, color:C.mut,
-                        background:'var(--chip-bg)', padding:'3px 8px', borderRadius:6,
-                        border:'1px solid var(--brd-xs)' }}>{f}</span>
-                    ))}
-                  </div>
-                )}
-
-                {/* Footer */}
-                <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
-                  borderTop:`1px solid var(--brd-sm)`, paddingTop:12 }}>
-                  <span style={{ fontSize:11.5, color:C.mut2 }}>
-                    Best for: {tool.bestFor}
-                  </span>
-                  <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:13,
-                    fontWeight:700, color:'#fff',
-                    background:`linear-gradient(135deg,${accent},${isA2?'#ea580c':'#0b7a6e'})`,
-                    padding:'8px 18px', borderRadius:9,
-                    boxShadow:`0 3px 12px ${accent}44` }}>
-                    Try free <ExternalLink size={12}/>
-                  </div>
-                </div>
-              </div>
+          {/* Footer */}
+          <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
+            borderTop:`1px solid var(--brd-sm)`, paddingTop:12 }}>
+            <span style={{ fontSize:11.5, color:C.mut2 }}>Best for: {tool.bestFor}</span>
+            <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12,
+              fontWeight:700, color:'#fff',
+              background:`linear-gradient(135deg,${accent},${isA2?'#ea580c':'#0b7a6e'})`,
+              padding:'7px 14px', borderRadius:9,
+              boxShadow:`0 3px 10px ${accent}44` }}>
+              Try free <ExternalLink size={11}/>
             </div>
           </div>
         </div>
