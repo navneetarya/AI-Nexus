@@ -403,9 +403,11 @@ function renderContent(text: string) {
 interface Props {
   article: CompareArticle;
   navigate: (to: string) => void;
+  isDark: boolean;
+  toggleTheme: () => void;
 }
 
-export function CompareArticlePage({ article, navigate }: Props) {
+export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: Props) {
   return (
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif" }}>
 
@@ -437,6 +439,12 @@ export function CompareArticlePage({ article, navigate }: Props) {
             <button onClick={() => navigate('/about')}
               style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid var(--brd-md)`, cursor: 'pointer' }}>
               About
+            </button>
+            <button onClick={toggleTheme} aria-label="Toggle theme"
+              style={{ width:34, height:34, borderRadius:8, border:`1.5px solid ${C.a1brd}`,
+                background:C.a1card, cursor:'pointer', fontSize:15,
+                display:'flex', alignItems:'center', justifyContent:'center' }}>
+              {isDark ? '☀️' : '🌙'}
             </button>
           </div>
         </div>

@@ -131,12 +131,14 @@
         --sh-lg:     rgba(15,28,26,.14);
         /* chip / subtle surfaces */
         --chip-bg:   rgba(15,28,26,.05);
+        /* footer always dark */
+        --footer-bg: #0A1512;
         color-scheme: light;
       }
 
-      /* ── Dark mode tokens ── */
+      /* ── Dark mode tokens (OS preference fallback) ── */
       @media (prefers-color-scheme: dark) {
-        :root {
+        :root:not([data-theme="light"]) {
           --bg:        #0C1210;
           --surf:      #141C1A;
           --surf2:     #1A2422;
@@ -156,21 +158,59 @@
           --suk-bg:    rgba(16,185,129,.10);
           --suk-brd:   rgba(16,185,129,.28);
           --dark:      #E2EDEA;
-          /* borders */
+          --footer-bg: #0A1512;
           --brd-xs:    rgba(180,220,210,.06);
           --brd-sm:    rgba(180,220,210,.09);
           --brd:       rgba(180,220,210,.12);
           --brd-md:    rgba(180,220,210,.16);
           --brd-lg:    rgba(180,220,210,.20);
-          /* shadows */
           --sh-xs:     rgba(0,0,0,.20);
           --sh-sm:     rgba(0,0,0,.28);
           --sh-md:     rgba(0,0,0,.38);
           --sh-lg:     rgba(0,0,0,.52);
-          /* chip / subtle surfaces */
           --chip-bg:   rgba(180,220,210,.08);
           color-scheme: dark;
         }
+      }
+
+      /* ── Dark mode tokens (manual toggle — wins over OS) ── */
+      html[data-theme="dark"] {
+        --bg:        #0C1210;
+        --surf:      #141C1A;
+        --surf2:     #1A2422;
+        --a1:        #14B8A6;
+        --a2:        #FB923C;
+        --txt:       #E2EDEA;
+        --mut:       rgba(180,220,210,.60);
+        --mut2:      rgba(180,220,210,.36);
+        --a1-card:   rgba(20,184,166,.12);
+        --a1-brd:    rgba(20,184,166,.24);
+        --a2-card:   rgba(251,146,60,.10);
+        --a2-brd:    rgba(251,146,60,.22);
+        --bar-bg:    rgba(12,18,16,.96);
+        --bar-brd:   rgba(20,184,166,.18);
+        --err-bg:    rgba(239,68,68,.10);
+        --err-brd:   rgba(239,68,68,.28);
+        --suk-bg:    rgba(16,185,129,.10);
+        --suk-brd:   rgba(16,185,129,.28);
+        --dark:      #E2EDEA;
+        --footer-bg: #0A1512;
+        --brd-xs:    rgba(180,220,210,.06);
+        --brd-sm:    rgba(180,220,210,.09);
+        --brd:       rgba(180,220,210,.12);
+        --brd-md:    rgba(180,220,210,.16);
+        --brd-lg:    rgba(180,220,210,.20);
+        --sh-xs:     rgba(0,0,0,.20);
+        --sh-sm:     rgba(0,0,0,.28);
+        --sh-md:     rgba(0,0,0,.38);
+        --sh-lg:     rgba(0,0,0,.52);
+        --chip-bg:   rgba(180,220,210,.08);
+        color-scheme: dark;
+      }
+
+      /* ── Light mode forced (manual toggle) ── */
+      html[data-theme="light"] {
+        color-scheme: light;
       }
 
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -194,6 +234,15 @@
       ::-webkit-scrollbar-thumb { background:rgba(13,148,136,.3); border-radius:10px; }
       ::-webkit-scrollbar-thumb:hover { background:rgba(13,148,136,.55); }
     </style>
+    <!-- Theme init: apply saved preference before paint to avoid flash -->
+    <script>
+      (function() {
+        var saved = localStorage.getItem('ainexus-theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

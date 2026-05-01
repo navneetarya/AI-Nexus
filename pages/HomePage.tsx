@@ -148,10 +148,10 @@ const PencilIcon = () => (
   </svg>
 );
 
-interface HomePageProps { navigate: (to: string) => void; }
+interface HomePageProps { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
 
 // ── Main component ───────────────────────────────────────────────────────────
-export function HomePage({ navigate }: HomePageProps) {
+export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   const [filters, setFilters]     = useState<FilterState>({ search: '', category: 'All' as any });
   const [mobileNav, setMobileNav] = useState(false);
   const [view, setView]           = useState<'home' | 'compare'>('home');
@@ -268,6 +268,12 @@ export function HomePage({ navigate }: HomePageProps) {
               boxShadow:'0 2px 8px rgba(13,148,136,.28)' }}>
             <Mail size={13}/> Contact
           </a>
+          <button onClick={toggleTheme} aria-label="Toggle theme"
+            style={{ width:36, height:36, borderRadius:9, border:`1.5px solid ${C.a1brd}`,
+              background:C.a1card, cursor:'pointer', fontSize:16, marginLeft:4,
+              display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+            {isDark ? '☀️' : '🌙'}
+          </button>
         </div>
 
         {/* Hamburger */}
@@ -311,7 +317,7 @@ export function HomePage({ navigate }: HomePageProps) {
 
   // ── Footer ───────────────────────────────────────────────────────────────
   const Footer = () => (
-    <footer style={{ background:C.dark, padding:'48px 24px 26px' }}>
+    <footer style={{ background:'var(--footer-bg)', padding:'48px 24px 26px' }}>
       <div style={{ maxWidth:1200, margin:'0 auto' }}>
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(170px,1fr))',
           gap:32, marginBottom:40 }}>

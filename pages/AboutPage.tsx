@@ -11,7 +11,7 @@ const C = {
 
 const DOT_BG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Ccircle cx='22' cy='22' r='1.4' fill='rgba(13%2C148%2C136%2C0.1)'/%3E%3C/svg%3E")`;
 
-export function AboutPage({ navigate }: { navigate: (to: string) => void }) {
+export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void }) {
 
   const authorSchema = {
     "@context": "https://schema.org",
@@ -39,9 +39,17 @@ export function AboutPage({ navigate }: { navigate: (to: string) => void }) {
           <button onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 7, color: C.mut, fontSize: 14, fontWeight: 500 }}>
             <ArrowLeft size={15} /> All tools
           </button>
-          <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-            <div style={{ width: 3, height: 22, background: `linear-gradient(180deg,${C.a1},${C.a2})`, borderRadius: 2, marginRight: 10 }} />
-            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 16 }}>AI<span style={{ color: C.a1 }}>Nexus</span></span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+              <div style={{ width: 3, height: 22, background: `linear-gradient(180deg,${C.a1},${C.a2})`, borderRadius: 2, marginRight: 10 }} />
+              <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 16 }}>AI<span style={{ color: C.a1 }}>Nexus</span></span>
+            </div>
+            <button onClick={toggleTheme} aria-label="Toggle theme"
+              style={{ width:34, height:34, borderRadius:8, border:`1.5px solid ${C.a1brd}`,
+                background:C.a1card, cursor:'pointer', fontSize:15,
+                display:'flex', alignItems:'center', justifyContent:'center' }}>
+              {isDark ? '☀️' : '🌙'}
+            </button>
           </div>
         </div>
       </nav>

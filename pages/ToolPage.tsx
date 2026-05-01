@@ -186,7 +186,7 @@ const TOOL_CONTENT: Record<string, {
 
 const TODAY = new Date().toISOString().split('T')[0];
 
-interface ToolPageProps { tool: Tool; navigate: (to: string) => void; }
+interface ToolPageProps { tool: Tool; navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
 
 function StarRating({ rating, accent }: { rating: number; accent: string }) {
   return (
@@ -227,7 +227,7 @@ const TOOL_EMOJI: Record<string, string> = {
   'ocoya':'📱','replit':'💻','notion-ai':'📓','taskade':'⚡',
 };
 
-export function ToolPage({ tool, navigate }: ToolPageProps) {
+export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps) {
   const isA2 = CAT_ACCENT[tool.category] === 'a2';
   const accent = isA2 ? C.a2 : C.a1;
   const cardBg = isA2 ? C.a2card : C.a1card;
@@ -335,6 +335,12 @@ export function ToolPage({ tool, navigate }: ToolPageProps) {
             <button onClick={() => navigate('/about')}
               style={{ fontSize: 13, fontWeight: 500, color: C.mut, padding: '7px 14px', borderRadius: 100, background: 'transparent', border: `1px solid var(--brd-md)`, cursor: 'pointer' }}>
               About
+            </button>
+            <button onClick={toggleTheme} aria-label="Toggle theme"
+              style={{ width:34, height:34, borderRadius:8, border:`1.5px solid ${C.a1brd}`,
+                background:C.a1card, cursor:'pointer', fontSize:15,
+                display:'flex', alignItems:'center', justifyContent:'center' }}>
+              {isDark ? '☀️' : '🌙'}
             </button>
           </div>
         </div>
