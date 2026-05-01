@@ -23,7 +23,7 @@ function updateMeta(title: string, description: string, canonical: string) {
 function getInitialTheme(): 'light' | 'dark' | 'system' {
   const saved = localStorage.getItem('ainexus-theme');
   if (saved === 'dark' || saved === 'light') return saved;
-  return 'system';
+  return 'dark'; // default to dark
 }
 
 function App() {

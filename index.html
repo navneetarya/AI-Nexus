@@ -237,11 +237,10 @@
     <!-- Theme init: apply saved preference before paint to avoid flash -->
     <script>
       (function() {
-        var saved = localStorage.getItem('ainexus-theme');
-        if (saved === 'dark' || saved === 'light') {
-          document.documentElement.setAttribute('data-theme', saved);
-        }
-      })();
+  var saved = localStorage.getItem('ainexus-theme');
+  var theme = (saved === 'dark' || saved === 'light') ? saved : 'dark';
+  document.documentElement.setAttribute('data-theme', theme);
+})();
     </script>
   </head>
   <body>
