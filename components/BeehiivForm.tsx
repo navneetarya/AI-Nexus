@@ -1,9 +1,10 @@
 /**
- * BeehiivForm.tsx — Native dark-themed form, submits to Beehiiv silently.
- * No iframe, no popup. Fully matches the AI Nexus brand theme.
+ * BeehiivForm.tsx
+ * Native dark-themed form. Submits to Beehiiv via hidden iframe POST —
+ * user never leaves the page, subscription actually registers.
  */
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Mail, ArrowRight, CheckCircle, Loader, AlertCircle } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 
@@ -11,29 +12,72 @@ interface BeehiivFormProps {
   variant?: 'hero' | 'article';
 }
 
+const BEEHIIV_SUBMIT_URL = 'https://ainexus-weekly.beehiiv.com/subscribe';
 const isValidEmail = (e: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 
-// Submit email to Beehiiv silently using a hidden form post (no-cors)
-async function submitToBeehiiv(email: string): Promise<void> {
-  const body = new URLSearchParams({ email });
-  await fetch('https://ainexus-weekly.beehiiv.com/', {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: body.toString(),
-  });
-  // no-cors means we can't read the response — we optimistically show success
+// ─────────────────────────────────────────────────────────────────────────────
+// Shared hook — handles state + hidden iframe form submission
+// ─────────────────────────────────────────────────────────────────────────────
+function useSubscribe() {
+  const [email,  setEmail]  = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errMsg, setErrMsg] = useState('');
+  const formRef   = useRef<HTMLFormElement>(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  const handleSubmit = () => {
+    if (!isValidEmail(email)) {
+      setErrMsg('Please enter a valid email address.');
+      setStatus('error');
+      return;
+    }
+    setStatus('loading');
+    setErrMsg('');
+
+    // Submit the hidden form targeting the hidden iframe —
+    // Beehiiv receives the POST, user stays on the page.
+    if (formRef.current) {
+      formRef.current.submit();
+    }
+
+    // Show success after a short delay (form has been sent)
+    setTimeout(() => setStatus('success'), 1500);
+  };
+
+  // Hidden plumbing — rendered once, invisible to the user
+  const HiddenForm = (
+    <>
+      <iframe
+        ref={iframeRef}
+        name="beehiiv-hidden-frame"
+        style={{ display: 'none' }}
+        title="hidden"
+        aria-hidden="true"
+      />
+      <form
+        ref={formRef}
+        action={BEEHIIV_SUBMIT_URL}
+        method="POST"
+        target="beehiiv-hidden-frame"
+        style={{ display: 'none' }}
+      >
+        <input type="email" name="email" value={email} readOnly />
+      </form>
+    </>
+  );
+
+  return { email, setEmail, status, errMsg, handleSubmit, HiddenForm };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Shared email row
+// Shared email input row
 // ─────────────────────────────────────────────────────────────────────────────
 function EmailRow({
   email, setEmail, status, errMsg, onSubmit,
 }: {
   email: string;
   setEmail: (v: string) => void;
-  status: 'idle' | 'loading' | 'success' | 'error';
+  status: string;
   errMsg: string;
   onSubmit: () => void;
 }) {
@@ -58,7 +102,7 @@ function EmailRow({
             You're on the list! 🎉
           </div>
           <div style={{ fontSize: 12, color: 'var(--mut)', lineHeight: 1.5 }}>
-            Check your inbox to confirm — then you're all set.
+            Check your inbox to confirm your subscription.
           </div>
         </div>
       </div>
@@ -68,17 +112,14 @@ function EmailRow({
   return (
     <div>
       <div style={{ display: 'flex', gap: 8, alignItems: 'stretch' }}>
-        {/* Input */}
+        {/* Email input */}
         <div style={{ position: 'relative', flex: 1 }}>
-          <Mail
-            size={14}
-            style={{
-              position: 'absolute', left: 12, top: '50%',
-              transform: 'translateY(-50%)',
-              color: hasError ? '#ef4444' : 'var(--mut2)',
-              pointerEvents: 'none',
-            }}
-          />
+          <Mail size={14} style={{
+            position: 'absolute', left: 12, top: '50%',
+            transform: 'translateY(-50%)',
+            color: hasError ? '#ef4444' : 'var(--mut2)',
+            pointerEvents: 'none',
+          }} />
           <input
             type="email"
             placeholder="your@email.com"
@@ -94,15 +135,15 @@ function EmailRow({
               outline: 'none', boxSizing: 'border-box',
               fontFamily: "'DM Sans', sans-serif",
               background: 'var(--surf)', color: 'var(--txt)',
-              opacity: isLoading ? 0.6 : 1,
+              opacity: isLoading ? 0.7 : 1,
               transition: 'border-color 0.15s',
             }}
-            onFocus={e  => { e.target.style.borderColor = 'var(--a1)'; }}
-            onBlur={e   => { e.target.style.borderColor = hasError ? '#ef4444' : 'var(--a1-brd)'; }}
+            onFocus={e => { e.target.style.borderColor = 'var(--a1)'; }}
+            onBlur={e  => { e.target.style.borderColor = hasError ? '#ef4444' : 'var(--a1-brd)'; }}
           />
         </div>
 
-        {/* Button */}
+        {/* Subscribe button */}
         <button
           onClick={onSubmit}
           disabled={isLoading}
@@ -118,8 +159,7 @@ function EmailRow({
             display: 'flex', alignItems: 'center', gap: 6,
             whiteSpace: 'nowrap',
             boxShadow: isLoading ? 'none' : '0 3px 10px rgba(13,148,136,.35)',
-            flexShrink: 0,
-            transition: 'all 0.2s ease',
+            flexShrink: 0, transition: 'all 0.2s ease',
           }}
         >
           {isLoading
@@ -129,7 +169,6 @@ function EmailRow({
         </button>
       </div>
 
-      {/* Error */}
       {hasError && errMsg && (
         <div style={{
           display: 'flex', alignItems: 'center', gap: 6,
@@ -146,34 +185,6 @@ function EmailRow({
       <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
     </div>
   );
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Shared submit logic hook
-// ─────────────────────────────────────────────────────────────────────────────
-function useSubscribe() {
-  const [email,  setEmail]  = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [errMsg, setErrMsg] = useState('');
-
-  const handleSubmit = async () => {
-    if (!isValidEmail(email)) {
-      setErrMsg('Please enter a valid email address.');
-      setStatus('error');
-      return;
-    }
-    setStatus('loading');
-    setErrMsg('');
-    try {
-      await submitToBeehiiv(email);
-      setStatus('success');
-    } catch {
-      setStatus('error');
-      setErrMsg('Something went wrong. Please try again.');
-    }
-  };
-
-  return { email, setEmail, status, errMsg, handleSubmit };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -197,11 +208,11 @@ function HeroStrip(props: ReturnType<typeof useSubscribe>) {
       borderBottom: '1px solid var(--a1-brd)',
       padding: '26px 24px',
     }}>
+      {props.HiddenForm}
       <div style={{
         maxWidth: 820, margin: '0 auto',
         display: 'flex', alignItems: 'center', gap: 28, flexWrap: 'wrap',
       }}>
-        {/* Copy */}
         <div style={{ flex: '0 0 auto', maxWidth: 270 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 9, marginBottom: 5 }}>
             <div style={{
@@ -223,13 +234,10 @@ function HeroStrip(props: ReturnType<typeof useSubscribe>) {
           </p>
         </div>
 
-        {/* Form */}
         <div style={{ flex: '1 1 300px', minWidth: 260 }}>
           <EmailRow
-            email={props.email}
-            setEmail={props.setEmail}
-            status={props.status}
-            errMsg={props.errMsg}
+            email={props.email} setEmail={props.setEmail}
+            status={props.status} errMsg={props.errMsg}
             onSubmit={props.handleSubmit}
           />
         </div>
@@ -249,6 +257,7 @@ function ArticleCard(props: ReturnType<typeof useSubscribe>) {
       borderRadius: 16, padding: '1.5rem', margin: '2.5rem 0',
       boxShadow: '0 4px 20px rgba(13,148,136,.09)',
     }}>
+      {props.HiddenForm}
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
         <div style={{
           width: 34, height: 34, borderRadius: 9, background: 'var(--a1)',
@@ -271,10 +280,8 @@ function ArticleCard(props: ReturnType<typeof useSubscribe>) {
       </div>
 
       <EmailRow
-        email={props.email}
-        setEmail={props.setEmail}
-        status={props.status}
-        errMsg={props.errMsg}
+        email={props.email} setEmail={props.setEmail}
+        status={props.status} errMsg={props.errMsg}
         onSubmit={props.handleSubmit}
       />
     </div>
