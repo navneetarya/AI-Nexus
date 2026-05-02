@@ -120,9 +120,13 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
 
         {/* Review process */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 18px', letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.02em' }}>
             Testing methodology — how every review is done
           </h2>
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 18px', fontWeight: 300 }}>
+            <a href="/methodology" onClick={e => { e.preventDefault(); navigate('/methodology'); }}
+              style={{ color: C.a1, fontWeight: 500 }}>Read the full review methodology →</a>
+          </p>
           {[
             ['1. Sign up on the free plan', 'Every tool is tested starting from the free tier — because that\'s where most creators and small businesses start. If the free plan is terrible, I say so.'],
             ['2. Use it for real tasks', 'Not demo tasks. Real work: writing actual blog posts, editing actual podcast audio, creating actual social media captions, building actual code projects.'],

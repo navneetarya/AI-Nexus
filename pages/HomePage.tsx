@@ -339,6 +339,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             {[
               { label:'Home',                fn: goHome },
               { label:'About the reviewer',  fn: () => navigate('/about') },
+              { label:'How I review tools',  fn: () => navigate('/methodology') },
               { label:'Affiliate disclosure', fn: () => navigate('/disclosure') },
               { label:'Compare tools',        fn: goCompare },
             ].map(({ label, fn }) => (
@@ -556,10 +557,12 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         <div style={{ maxWidth:600, margin:'0 auto', textAlign:'center', position:'relative', zIndex:2 }}>
 
           {/* Trust pill */}
-          <div className="anim-fade-up d1"
+          <button className="anim-fade-up d1"
+            onClick={() => navigate('/methodology')}
             style={{ display:'inline-flex', alignItems:'center', gap:7,
               background:C.a1card, border:`1px solid ${C.a1brd}`,
-              borderRadius:100, padding:'5px 14px 5px 7px', marginBottom:24 }}>
+              borderRadius:100, padding:'5px 14px 5px 7px', marginBottom:24,
+              cursor:'pointer', fontFamily:"'DM Sans',sans-serif" }}>
             <div style={{ width:19, height:19, borderRadius:'50%', background:C.a1,
               display:'flex', alignItems:'center', justifyContent:'center' }}>
               <Shield size={10} color="#fff"/>
@@ -567,7 +570,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             <span style={{ fontSize:12, fontWeight:600, color:C.a1 }}>
               Every tool personally tested — no sponsored posts
             </span>
-          </div>
+          </button>
 
           <h1 className="anim-fade-up d2"
             style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,

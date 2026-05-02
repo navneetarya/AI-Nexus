@@ -435,6 +435,7 @@ function generateSitemap() {
   // Static pages
   urls.push({ loc: `${SITE}/about`,       priority: '0.7', freq: 'monthly', mod: TODAY });
   urls.push({ loc: `${SITE}/disclosure`,  priority: '0.3', freq: 'yearly',  mod: TODAY });
+  urls.push({ loc: `${SITE}/methodology`, priority: '0.7', freq: 'monthly', mod: TODAY });
 
   // Compare pages
   for (const a of COMPARE_ARTICLES) {
@@ -572,11 +573,33 @@ console.log('\nStatic pages:');
   }));
 }
 
+// ── 5. Methodology page ───────────────────────────────────────────────────────
+{
+  const canonical = `${SITE}/methodology`;
+  const title = `How I Review AI Tools — Testing Methodology | AI Nexus`;
+  const description = `The exact 7-step process ${AUTHOR} uses to test every AI tool on AI Nexus. Real standards, paid plan testing, head-to-head comparisons, and the one rule that doesn't bend.`;
+  const schemas = [
+    articleSchema({ title, description, canonical }),
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'Review Methodology', canonical],
+    ]),
+    faqSchema([
+      { q: `Does ${AUTHOR} personally test every AI tool?`, a: `Yes. Every tool reviewed on AI Nexus has been signed up for and used on real work tasks for a minimum of 2–4 weeks before a review is published. Both free and paid plans are tested.` },
+      { q: 'How long does testing take before a review goes live?', a: `A minimum of 2–4 weeks for individual tool reviews. Comparison articles require simultaneous side-by-side testing of 2–3 tools on the same tasks, which typically takes 4–6 weeks in total.` },
+      { q: 'Does the affiliate commission affect ratings or recommendations?', a: `No. Tools are evaluated and rated before checking whether an affiliate programme exists. The review verdict is written independently of any commission. ${AUTHOR} has published critical reviews of tools that have affiliate programmes, and positive reviews of tools that do not.` },
+      { q: 'What does "personally tested" mean on AI Nexus?', a: `It means ${AUTHOR} signed up for a real account (free tier first, then paid), used the tool on actual work tasks — not demo prompts — for at least 2 weeks, and documented real strengths and weaknesses from that experience. It does not mean a 10-minute trial or a review based on other sources.` },
+      { q: 'Are there any sponsored reviews on AI Nexus?', a: `No. AI Nexus does not accept payment from tool companies to publish positive reviews or adjust ratings. All editorial content reflects ${AUTHOR}'s independent assessment after personal testing.` },
+    ]),
+  ];
+  writeRoute('methodology', buildPage(template, { title, description, canonical, schemas }));
+}
+
 // ── 5. Sitemap ────────────────────────────────────────────────────────────────
 generateSitemap();
 
 // ── Done ──────────────────────────────────────────────────────────────────────
-const total = TOOLS.length + COMPARE_ARTICLES.length + 2; // +2 = about, disclosure
+const total = TOOLS.length + COMPARE_ARTICLES.length + 3; // +3 = about, disclosure, methodology
 console.log(`\n✅  ${total} routes pre-rendered. Every URL now returns HTTP 200.\n`);
 console.log('   Google Search Console: re-request indexing for all sitemap URLs.');
 console.log('   Bing Webmaster Tools: submit sitemap at /sitemap.xml\n');

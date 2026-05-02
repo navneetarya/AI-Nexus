@@ -5,6 +5,7 @@ import { ToolPage } from './pages/ToolPage';
 import { AboutPage } from './pages/AboutPage';
 import { DisclosurePage } from './pages/DisclosurePage';
 import { CompareArticlePage, COMPARE_ARTICLES } from './pages/CompareArticlePage';
+import { MethodologyPage } from './pages/MethodologyPage';
 
 function updateMeta(title: string, description: string, canonical: string) {
   document.title = title;
@@ -109,6 +110,15 @@ function App() {
       `${SITE_CONFIG.siteUrl}/disclosure`
     );
     return <DisclosurePage navigate={navigate} {...themeProps} />;
+  }
+
+  if (path === '/methodology') {
+    updateMeta(
+      'How I Review AI Tools — Testing Methodology | AI Nexus',
+      `The exact 7-step process ${SITE_CONFIG.authorName} uses to test every AI tool on AI Nexus. Real standards, paid plan testing, and the one rule that doesn't bend.`,
+      `${SITE_CONFIG.siteUrl}/methodology`
+    );
+    return <MethodologyPage navigate={navigate} {...themeProps} />;
   }
 
   updateMeta(
