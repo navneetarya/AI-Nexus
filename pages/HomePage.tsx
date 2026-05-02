@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { COMPARE_ARTICLES } from './CompareArticlePage';
 import { SharedNav } from './SharedNav';
+import { BeehiivForm } from '../components/BeehiivForm';
 
 // ── Design tokens ────────────────────────────────────────────────────────────
 const C = {
@@ -441,6 +442,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           </div>
         </div>
 
+        {/* ── Newsletter strip — bottom of compare list ────────────────── */}
+        <BeehiivForm variant="hero" />
+
         <Footer/>
       </div>
     );
@@ -807,6 +811,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           </div>
         )}
       </div>
+
+      {/* ── Newsletter strip — bottom of page ────────────────────────── */}
+      <BeehiivForm variant="hero" />
 
       <Footer/>
     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowLeft, ExternalLink, Check, X, ChevronRight } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 import { SharedNav } from './SharedNav';
+import { BeehiivForm } from '../components/BeehiivForm';
 
 const C = {
   bg: 'var(--bg)', surf: 'var(--surf)', surf2: 'var(--surf2)', a1: 'var(--a1)', a2: 'var(--a2)',
@@ -782,6 +783,9 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
             Affiliate link — we earn a commission at no extra cost to you. <span style={{ cursor: 'pointer', textDecoration: 'underline', color: C.mut }} onClick={() => navigate('/disclosure')}>Disclosure</span>
           </div>
         </div>
+
+        {/* Newsletter — bottom of article, after the CTA */}
+        <BeehiivForm variant="article" />
 
       </main>
     </div>

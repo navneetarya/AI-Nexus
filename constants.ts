@@ -10,7 +10,19 @@ export const SITE_CONFIG = {
   siteUrl: "https://ainexustools.online",
   email: "hello@ainexustools.online",
   twitterUrl: "https://twitter.com/ainexustools",
-  newsletterNote: "No spam — just honest AI tool reviews, once a week.",
+  newsletterNote: "Get notified when new AI tool reviews drop. No spam.",
+
+  // ── Beehiiv newsletter embed ───────────────────────────────────────────
+  // HOW TO GET THIS URL (one-time setup):
+  //   1. Sign up at https://www.beehiiv.com  (free up to 2,500 subscribers)
+  //   2. Create a new Publication  →  name it "AI Nexus Weekly"
+  //   3. Dashboard → Grow → Forms → "+ Create Form"
+  //   4. Choose "Embed" type → style it → click "Get Embed Code"
+  //   5. Copy the URL inside src="..." — it looks like:
+  //        https://embeds.beehiiv.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+  //   6. Paste it below, replacing YOUR_EMBED_ID
+  //   7. Commit & push — both the hero strip and compare pages will go live.
+  beehiivEmbedUrl: "https://ainexus-weekly.beehiiv.com/",
 };
 
 // ── Affiliate links — all verified & active ───────────────────────────────
