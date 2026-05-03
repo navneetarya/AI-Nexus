@@ -537,8 +537,9 @@ const template = readTemplate();
 console.log('Tool pages:');
 for (const tool of TOOLS) {
   const canonical = `${SITE}/tools/${tool.slug}`;
-  const title = `${tool.name} Review ${YEAR} — Honest Take, Pricing & Free Trial | AI Nexus`;
-  const description = `${AUTHOR}'s honest ${tool.name} review after personal testing. ${tool.tagline}. Real pros, cons, pricing (${tool.pricing}), and who it's best for.`;
+  // Week 1 Task 4: tagline in title matches App.tsx template — Google indexes the static HTML first
+  const title = `${tool.name} Review ${YEAR}: ${tool.tagline} | AI Nexus`;
+  const description = `Honest ${tool.name} review by ${AUTHOR} — personally tested. ${tool.tagline}. Pros, cons, real verdict, and a free trial link.`;
 
   const schemas = [
     reviewSchema(tool, canonical),

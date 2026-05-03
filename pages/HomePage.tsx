@@ -576,12 +576,13 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </span>
           </button>
 
+          {/* Week 1 Task 7: H1 targets "best AI tools for creators" — 12,000/mo keyword */}
           <h1 className="anim-fade-up d2"
             style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
               fontSize:'clamp(32px,6vw,54px)', lineHeight:1.07, color:C.txt,
               margin:'0 0 16px', letterSpacing:'-0.035em' }}>
-            The best AI tools,<br/>
-            <span style={{ color:C.a1 }}>honestly reviewed.</span>
+            Best AI Tools for Creators —<br/>
+            <span style={{ color:C.a1 }}>Personally Tested & Ranked.</span>
           </h1>
 
           <p className="anim-fade-up d3"

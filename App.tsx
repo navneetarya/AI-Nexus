@@ -73,8 +73,9 @@ function App() {
     const tool = TOOLS.find(t => t.slug === toolMatch[1]);
     if (tool) {
       updateMeta(
-        `${tool.name} Review ${new Date().getFullYear()} — Honest Take, Pricing & Free Trial | AI Nexus`,
-        `${SITE_CONFIG.authorName}'s honest ${tool.name} review after personal testing. ${tool.tagline}. Real pros, cons, pricing, and who it's best for.`,
+        // Week 1 Task 4: tagline in title targets "[tool] review 2026" keyword variants directly
+        `${tool.name} Review ${new Date().getFullYear()}: ${tool.tagline} | AI Nexus`,
+        `Honest ${tool.name} review by ${SITE_CONFIG.authorName} — personally tested. ${tool.tagline}. Pros, cons, real verdict, and a free trial link.`,
         `${SITE_CONFIG.siteUrl}/tools/${tool.slug}`
       );
       return <ToolPage tool={tool} navigate={navigate} {...themeProps} />;
@@ -122,7 +123,8 @@ function App() {
   }
 
   updateMeta(
-    `AI Nexus — Best AI Tools Reviewed & Ranked ${new Date().getFullYear()}`,
+    // Week 1 Task 7: keyword-first homepage title targets "best AI tools reviewed" directly
+    `Best AI Tools Reviewed & Ranked ${new Date().getFullYear()} — AI Nexus by ${SITE_CONFIG.authorName}`,
     `Honest reviews of the best AI tools for writing, video, audio, podcasting, productivity & social media. Every tool personally tested by ${SITE_CONFIG.authorName}. Every link is a free trial.`,
     SITE_CONFIG.siteUrl
   );
