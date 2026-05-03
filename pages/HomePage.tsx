@@ -585,6 +585,30 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             <span style={{ color:C.a1 }}>Personally Tested & Ranked.</span>
           </h1>
 
+          {/* Week 4 Task 4: Social proof strip — 20+ Tools · 7 Comparisons · Free Trial Links */}
+          <div className="anim-fade-up d2" style={{
+            display:'flex', gap:'clamp(12px,3vw,28px)', justifyContent:'center',
+            flexWrap:'wrap' as const, margin:'0 auto 20px', maxWidth:520,
+          }}>
+            {[
+              { num:'20+',  label:'Tools Tested' },
+              { num:'7',    label:'Head-to-Head Comparisons' },
+              { num:'100%', label:'Free Trial Links' },
+            ].map(({ num, label }) => (
+              <div key={label} style={{
+                display:'flex', alignItems:'center', gap:8,
+                background:C.a1card, border:`1px solid ${C.a1brd}`,
+                borderRadius:100, padding:'6px 14px',
+              }}>
+                <span style={{
+                  fontFamily:"'Syne',sans-serif", fontWeight:800,
+                  fontSize:15, color:C.a1, lineHeight:1,
+                }}>{num}</span>
+                <span style={{ fontSize:12, color:C.mut, fontWeight:500 }}>{label}</span>
+              </div>
+            ))}
+          </div>
+
           <p className="anim-fade-up d3"
             style={{ fontSize:16.5, lineHeight:1.72, color:C.mut, margin:'0 0 8px',
               maxWidth:480, marginLeft:'auto', marginRight:'auto' }}>

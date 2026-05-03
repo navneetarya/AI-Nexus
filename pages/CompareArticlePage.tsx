@@ -28,6 +28,8 @@ export interface CompareArticle {
   winnerName: string;
   winnerAffiliateLink: string;
   winnerAffiliateText: string;
+  /** FAQPage schema — 4 Q&As per article, sourced from Google "People also ask" */
+  faqs: { q: string; a: string }[];
 }
 
 export interface CompareSection {
@@ -121,6 +123,12 @@ The mistake is paying Writesonic prices for Rytr-level output needs. Be honest a
     winnerName: 'Rytr',
     winnerAffiliateLink: 'https://rytr.me/?via=navneet-arya',
     winnerAffiliateText: 'Try Rytr free',
+    faqs: [
+      { q: 'Is Rytr better than Writesonic?', a: 'Rytr is better than Writesonic for short-to-medium form content (emails, ad copy, social posts) at a lower price ($9/month unlimited). Writesonic is better for long-form blog posts and SEO-optimised articles. Choose Rytr for value and simplicity, Writesonic if you need a full 1,500+ word Article Writer.' },
+      { q: 'Can I use both Rytr and Writesonic?', a: 'Yes, and some content teams do. Rytr handles quick copy tasks (ad variations, email sequences) while Writesonic handles long-form content. However, for most individuals the overlap is significant enough that paying for both is unnecessary — choose based on your primary content type.' },
+      { q: 'Which has a better free plan — Rytr or Writesonic?', a: 'Writesonic\'s free plan includes one full article per month with their Article Writer — more substantial than Rytr\'s 10,000 character (roughly 1,500 word) monthly allowance. For testing long-form quality, Writesonic\'s free tier gives a clearer picture of paid performance.' },
+      { q: 'Is Writesonic worth $16/month?', a: 'Writesonic is worth $16/month if you regularly publish long-form SEO content. The Article Writer, Chatsonic chatbot with web access, and SEO checker provide real value for bloggers. If your content is primarily short-form, Rytr\'s $9/month unlimited plan delivers better value.' },
+    ],
   },
 
   // ── grammarly-vs-quillbot ─────────────────────────────────────────────────
@@ -188,6 +196,12 @@ The best setup if budget allows: use both. Grammarly while you write, QuillBot w
     winnerName: 'Grammarly',
     winnerAffiliateLink: 'https://grammarly.com?affiliateId=ainexus',
     winnerAffiliateText: 'Try Grammarly free',
+    faqs: [
+      { q: 'Is Grammarly better than QuillBot?', a: 'Grammarly is better for real-time grammar correction and writing improvement across apps (Gmail, Docs, LinkedIn). QuillBot is better for paraphrasing and rewriting existing text. They serve different needs — Grammarly helps you write better, QuillBot helps you rewrite differently.' },
+      { q: 'Can I use both Grammarly and QuillBot?', a: 'Yes — many writers use both. The workflow is natural: use Grammarly while drafting (it integrates into every app via browser extension), then paste sections into QuillBot to rephrase, simplify, or restructure. They don\'t overlap — they complement each other at different stages of writing.' },
+      { q: 'Which has a better free plan?', a: 'Both free plans are genuinely useful. Grammarly\'s free tier has no word limit and integrates into 500+ apps — ideal for everyday grammar checks. QuillBot\'s free plan includes paraphrasing in 2 modes, a grammar checker, summariser (600 words), and citation generator — better for students and researchers.' },
+      { q: 'Is Grammarly Premium worth $12/month?', a: 'Grammarly Premium is worth $12/month if writing is central to your work — emails, reports, blog posts, proposals. The tone detection, clarity rewrites, and plagiarism checker add real value. For casual personal writing, the free plan covers most needs without paying for premium.' },
+    ],
   },
 
   // ── ocoya-vs-buffer-vs-hootsuite ─────────────────────────────────────────
@@ -292,6 +306,12 @@ The question that simplifies the choice: do you already have a reliable way to w
     winnerName: 'Ocoya',
     winnerAffiliateLink: 'https://www.ocoya.com/?via=navneet',
     winnerAffiliateText: 'Try Ocoya free',
+    faqs: [
+      { q: 'Is Ocoya better than Buffer for small businesses?', a: 'For most small businesses that also need to write captions, yes. Ocoya generates platform-specific captions (LinkedIn vs Instagram vs TikTok) natively inside the scheduling workflow — so you\'re not copy-pasting between an AI writer and a scheduler. Buffer is better if you already have a content system and just need a clean scheduler.' },
+      { q: 'Does Hootsuite have AI content generation?', a: 'Yes, Hootsuite added AI caption generation in 2024. It works, but it\'s a recent add-on rather than a native feature — the integration feels less fluid than Ocoya\'s AI. Hootsuite\'s strength remains enterprise-level scheduling, analytics, and approval workflows, not AI content creation.' },
+      { q: 'What is the cheapest social media tool with AI?', a: 'Ocoya at $15/month is the most affordable option that natively combines AI caption writing with social scheduling. Buffer\'s $6/month plan has basic AI suggestions but limited capability. For pure AI content generation separately from scheduling, Rytr ($9/month) produces excellent social media captions.' },
+      { q: 'Is Buffer worth paying for in 2026?', a: 'Buffer is worth paying for if you want a clean, simple scheduler and already have a reliable caption-writing system. At $6/month it\'s excellent value for pure scheduling. If you don\'t have a content system and need AI to help write captions, Ocoya at $15/month does both jobs for roughly the same cost as Buffer plus an AI writer.' },
+    ],
   },
 
   // ── podcastle-vs-descript ─────────────────────────────────────────────────
@@ -383,6 +403,12 @@ The tools are complementary more than competitive. Some serious podcast teams us
     winnerName: 'Podcastle',
     winnerAffiliateLink: 'https://podcastle.ai/?via=navneet',
     winnerAffiliateText: 'Try Podcastle free',
+    faqs: [
+      { q: 'Is Podcastle better than Descript for beginners?', a: 'Yes. Podcastle\'s recording-and-enhance workflow is more immediately accessible than Descript\'s text-based editing paradigm. Beginners can record an episode, apply Magic Dust AI enhancement, and publish without a steep learning curve. Descript\'s workflow takes several sessions to feel natural.' },
+      { q: 'Which is better for video podcasts — Podcastle or Descript?', a: 'Descript is significantly better for video podcasts. It handles audio and video editing with the same text-based workflow, generates social clips, and is specifically designed for multi-format content. Podcastle is audio-first; its video capabilities are limited by comparison.' },
+      { q: 'Does Descript have podcast hosting?', a: 'No. Descript is a recording and editing tool — you export your finished episode and publish it through a separate hosting platform (Buzzsprout, Podbean, Anchor, etc.). Podcastle has built-in podcast distribution on higher-tier plans, which simplifies the workflow for audio-only podcasters.' },
+      { q: 'What is Magic Dust in Podcastle?', a: 'Magic Dust is Podcastle\'s AI audio enhancement feature. It removes background noise, evens out volume levels, and improves voice clarity automatically — without manual audio engineering. Free plan users get 10 hours of Magic Dust per month. Paid plans include unlimited Magic Dust.' },
+    ],
   },
 
   // ── leonardo-vs-midjourney ────────────────────────────────────────────────
@@ -468,6 +494,12 @@ The practical advice: start with Leonardo.ai's free plan. If you consistently fi
     winnerName: 'Leonardo.ai',
     winnerAffiliateLink: 'https://leonardo.ai?via=ainexus',
     winnerAffiliateText: 'Try Leonardo.ai free',
+    faqs: [
+      { q: 'Is Leonardo.ai free to use?', a: 'Yes. Leonardo.ai\'s free plan gives 150 tokens per day — enough to generate 30–40 images daily at standard resolution. Commercial use is permitted even on the free tier, which is more permissive than Midjourney\'s paid-only model. The free plan is one of the most generous in AI image generation.' },
+      { q: 'Is Midjourney worth the $10/month?', a: 'Midjourney is worth $10/month if aesthetic quality is your primary need and you\'re willing to invest time in prompt engineering. The Basic plan gives 200 images per month. If you need more control, custom training, or a functional free tier to start, Leonardo.ai provides better value for most creators.' },
+      { q: 'Which AI image generator is better for game developers?', a: 'Leonardo.ai is significantly better for game developers. It has dedicated models trained for game assets, RPG artwork, and concept art. The custom model training lets you maintain visual consistency across a character set or world — something Midjourney can\'t do without external fine-tuning tools.' },
+      { q: 'Can Leonardo.ai match Midjourney quality?', a: 'For photorealistic portraits and purely aesthetic one-off images, Midjourney still has a quality edge. For consistent project work, concept art, and game assets, Leonardo.ai matches or exceeds Midjourney\'s practical output — especially when using the right fine-tuned model for your style.' },
+    ],
   },
 
   // ── replit-vs-github-copilot ──────────────────────────────────────────────
@@ -549,6 +581,12 @@ The honest summary: most beginners and indie developers will get more value from
     winnerName: 'Replit',
     winnerAffiliateLink: 'https://replit.com/refer/navneetarya1989',
     winnerAffiliateText: 'Try Replit free',
+    faqs: [
+      { q: 'Can beginners use GitHub Copilot?', a: 'Technically yes, but it\'s not ideal. GitHub Copilot requires a working local development environment (VS Code or JetBrains installed, Git configured). Beginners often spend more time debugging their local setup than writing code. Replit\'s browser-based IDE removes this barrier entirely — no installation required.' },
+      { q: 'Is Replit good for professional developers?', a: 'Replit works well for side projects, prototyping, and teaching. However, most professional developers on production codebases use local environments with GitHub Copilot — the deeper IDE integration, Git workflow support, and compute flexibility of local development becomes important at scale.' },
+      { q: 'Does GitHub Copilot work without an internet connection?', a: 'No. GitHub Copilot requires an active internet connection to send code context to GitHub\'s servers and receive suggestions. It also requires an active subscription; the IDE extension alone without a subscription produces no suggestions.' },
+      { q: 'Is Replit free?', a: 'Replit has a free plan with unlimited public projects and 3 private projects, plus basic Ghostwriter AI features. Paid plans start at $7/month for more compute power and advanced AI agent capabilities. The free tier is genuinely functional for learning and small projects.' },
+    ],
   },
 
   // ── taskade-vs-notion ─────────────────────────────────────────────────────
@@ -632,6 +670,12 @@ The most common mistake: choosing Notion for execution work (where the setup ove
     winnerName: 'Taskade',
     winnerAffiliateLink: 'https://taskade.com/?via=rlqcxz',
     winnerAffiliateText: 'Try Taskade free',
+    faqs: [
+      { q: 'Is Taskade better than Notion for project management?', a: 'For execution-focused project management, Taskade is faster to get into — AI agents generate project plans, tasks, and status reports automatically. Notion is better if you also need a knowledge base and interconnected databases. Taskade gets you working faster; Notion is more flexible long-term.' },
+      { q: 'Can Notion replace a project management tool?', a: 'Yes, with setup effort. Notion can replicate most project management features through linked databases, filtered views, and automations. However, it requires building the system yourself or adapting a template. Taskade\'s project structure is ready out of the box with less configuration.' },
+      { q: 'Is Notion AI worth the extra $10/month?', a: 'Notion AI ($10/month add-on) is worth it if you use Notion heavily for writing, research, and documentation. It adds page-level writing assistance, summarisation, and action item extraction. It\'s less compelling if you primarily use Notion for task tracking rather than knowledge management.' },
+      { q: 'Which is better for remote teams — Taskade or Notion?', a: 'Taskade edges out Notion for remote team execution — built-in video calling, real-time collaboration, and AI-generated status reports reduce meeting overhead. Notion is better for remote teams that maintain extensive documentation or knowledge bases. Many teams use both: Taskade for active projects, Notion for company knowledge.' },
+    ],
   },
 ];
 
@@ -721,11 +765,78 @@ interface Props {
   toggleTheme: () => void;
 }
 
+// ── FAQ Section Component ──────────────────────────────────────────────────
+function FAQSection({ faqs, a1, a1card, a1brd, txt, mut }: {
+  faqs: { q: string; a: string }[];
+  a1: string; a1card: string; a1brd: string; txt: string; mut: string;
+}) {
+  const [openIdx, setOpenIdx] = React.useState<number | null>(null);
+  if (!faqs || faqs.length === 0) return null;
+  return (
+    <section style={{ marginBottom: '2.5rem' }}>
+      <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: txt, margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
+        Frequently Asked Questions
+      </h2>
+      <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
+        {faqs.map((faq, i) => (
+          <div key={i} style={{
+            background: openIdx === i ? a1card : 'transparent',
+            border: `1px solid ${openIdx === i ? a1brd : 'var(--brd)'}`,
+            borderRadius: 12, overflow: 'hidden', transition: 'background .15s',
+          }}>
+            <button
+              onClick={() => setOpenIdx(openIdx === i ? null : i)}
+              style={{
+                width: '100%', textAlign: 'left' as const, padding: '14px 18px',
+                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                background: 'none', border: 'none', cursor: 'pointer',
+                fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: txt,
+                gap: 12,
+              }}
+            >
+              <span>{faq.q}</span>
+              <span style={{ color: a1, fontSize: 18, lineHeight: 1, flexShrink: 0 }}>
+                {openIdx === i ? '−' : '+'}
+              </span>
+            </button>
+            {openIdx === i && (
+              <div style={{ padding: '0 18px 14px', fontSize: 14, color: mut, lineHeight: 1.7 }}>
+                {faq.a}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: Props) {
   // Track which tool names have been linked already — only link first mention per page
   const linked = React.useRef(new Set<string>()).current;
   // Reset on article change
   React.useEffect(() => { linked.clear(); }, [article.slug, linked]);
+
+  // Inject FAQPage JSON-LD schema for Google rich results
+  React.useEffect(() => {
+    if (!article.faqs || article.faqs.length === 0) return;
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: article.faqs.map(({ q, a }) => ({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a },
+      })),
+    };
+    document.querySelectorAll('script[data-compare-faq]').forEach(el => el.remove());
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-compare-faq', 'true');
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => { document.querySelectorAll('script[data-compare-faq]').forEach(el => el.remove()); };
+  }, [article.slug, article.faqs]);
   return (
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', system-ui, sans-serif" }}>
 
@@ -818,6 +929,13 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
           </div>
           {renderContent(article.verdict, navigate, linked)}
         </div>
+
+        {/* FAQ Section — FAQPage JSON-LD injected via useEffect above */}
+        <FAQSection
+          faqs={article.faqs}
+          a1={C.a1} a1card={C.a1card} a1brd={C.a1brd}
+          txt={C.txt} mut={C.mut}
+        />
 
         {/* Winner CTA */}
         <div style={{ background: C.surf, border: `1px solid ${C.a1brd}`, borderRadius: 16, padding: '1.5rem', textAlign: 'center', boxShadow: '0 2px 12px rgba(13,148,136,.1)' }}>

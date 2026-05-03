@@ -112,16 +112,16 @@ export function BlogPage({ navigate, isDark, toggleTheme }: BlogPageProps) {
         activePage="blog"
       />
 
-      {/* Hero */}
+      {/* Hero — always dark bg regardless of theme (--dark flips to light in dark mode) */}
       <div style={{
-        background: 'var(--dark)',
+        background: '#0A1512',
         padding: '48px 20px 52px',
         position: 'relative',
         overflow: 'hidden',
       }}>
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'radial-gradient(ellipse 50% 70% at 80% 50%, rgba(13,148,136,.2) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse 60% 80% at 80% 50%, rgba(13,148,136,.22) 0%, transparent 70%), radial-gradient(ellipse 40% 60% at 10% 80%, rgba(20,184,166,.08) 0%, transparent 60%)',
         }} />
         <div style={{ maxWidth: 840, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{
@@ -153,6 +153,18 @@ export function BlogPage({ navigate, isDark, toggleTheme }: BlogPageProps) {
 
       {/* Post grid */}
       <div style={{ maxWidth: 840, margin: '0 auto', padding: '48px 20px 80px' }}>
+        {BLOG_POSTS.length > 0 && (
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 }}>
+            <p style={{ fontSize: 14, color: C.mut, margin: 0 }}>
+              <strong style={{ color: C.txt }}>{BLOG_POSTS.length}</strong> guides published
+            </p>
+            <span style={{
+              fontSize: 11, fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase' as const,
+              color: C.a1, background: C.a1card, border: `1px solid ${C.a1brd}`,
+              padding: '4px 10px', borderRadius: 100,
+            }}>All guides</span>
+          </div>
+        )}
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
