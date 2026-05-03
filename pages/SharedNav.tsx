@@ -51,7 +51,7 @@ export interface SharedNavProps {
   isDark:      boolean;
   toggleTheme: () => void;
   /** Which tab is currently active. Default: 'home' */
-  activePage?: 'home' | 'compare' | 'about' | 'tool';
+  activePage?: 'home' | 'compare' | 'about' | 'tool' | 'blog';
   /** If provided, clicking Compare calls this instead of navigating away */
   onCompare?:  () => void;
   /** If provided, clicking All Tools calls this instead of navigating away */
@@ -87,9 +87,15 @@ export function SharedNav({
     navigate('/about');
   };
 
+  const handleBlog = () => {
+    closeMobile();
+    navigate('/blog');
+  };
+
   const isCompareActive = activePage === 'compare';
   const isHomeActive    = activePage === 'home';
   const isAboutActive   = activePage === 'about';
+  const isBlogActive    = activePage === 'blog';
 
   return (
     <>
@@ -194,6 +200,22 @@ export function SharedNav({
               About
             </button>
 
+            {/* Blog */}
+            <button
+              className="shared-nav-btn"
+              onClick={handleBlog}
+              style={{
+                fontSize: 14, fontWeight: 500,
+                color: isBlogActive ? C.a1 : C.mut,
+                padding: '7px 13px', borderRadius: 8,
+                background: isBlogActive ? C.a1card : 'transparent',
+                border: 'none', cursor: 'pointer',
+                fontFamily: "'DM Sans',sans-serif",
+              }}
+            >
+              Blog
+            </button>
+
             {/* Contact */}
             <a
               href={`mailto:${SITE_CONFIG.email}`}
@@ -256,6 +278,7 @@ export function SharedNav({
               { label: 'All Tools', fn: handleAllTools },
               { label: 'Compare',   fn: handleCompare  },
               { label: 'About',     fn: handleAbout    },
+              { label: 'Blog',      fn: handleBlog     },
             ].map(({ label, fn }) => (
               <button
                 key={label}

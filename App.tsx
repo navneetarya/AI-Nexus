@@ -6,6 +6,10 @@ import { AboutPage } from './pages/AboutPage';
 import { DisclosurePage } from './pages/DisclosurePage';
 import { CompareArticlePage, COMPARE_ARTICLES } from './pages/CompareArticlePage';
 import { MethodologyPage } from './pages/MethodologyPage';
+// Week 3: Blog infrastructure
+import { BlogPage } from './pages/BlogPage';
+import { BlogPostPage } from './pages/BlogPostPage';
+import { BLOG_POSTS } from './blog/index';
 
 function updateMeta(title: string, description: string, canonical: string) {
   document.title = title;
@@ -93,6 +97,30 @@ function App() {
       );
       return <CompareArticlePage article={article} navigate={navigate} {...themeProps} />;
     }
+  }
+
+  // ── Week 3: Blog post pages (/blog/:slug) ───────────────────────────────────
+  const blogPostMatch = path.match(/^\/blog\/([^/]+)$/);
+  if (blogPostMatch) {
+    const post = BLOG_POSTS.find(p => p.slug === blogPostMatch[1]);
+    if (post) {
+      updateMeta(
+        `${post.title} | AI Nexus`,
+        post.metaDescription,
+        `${SITE_CONFIG.siteUrl}/blog/${post.slug}`
+      );
+      return <BlogPostPage post={post} navigate={navigate} {...themeProps} />;
+    }
+  }
+
+  // ── Week 3: Blog list page (/blog) ──────────────────────────────────────────
+  if (path === '/blog') {
+    updateMeta(
+      `AI Tools Blog — Guides & Reviews | AI Nexus by ${SITE_CONFIG.authorName}`,
+      `In-depth AI tool guides and reviews by ${SITE_CONFIG.authorName}. Personally tested. No sponsored posts.`,
+      `${SITE_CONFIG.siteUrl}/blog`
+    );
+    return <BlogPage navigate={navigate} {...themeProps} />;
   }
 
   if (path === '/about') {

@@ -483,6 +483,12 @@ function generateSitemap() {
   urls.push({ loc: `${SITE}/disclosure`,  priority: '0.3', freq: 'yearly',  mod: TODAY });
   urls.push({ loc: `${SITE}/methodology`, priority: '0.7', freq: 'monthly', mod: TODAY });
 
+  // Week 3: Blog list + individual blog posts
+  urls.push({ loc: `${SITE}/blog`, priority: '0.8', freq: 'weekly', mod: TODAY });
+  for (const post of BLOG_POSTS) {
+    urls.push({ loc: `${SITE}/blog/${post.slug}`, priority: '0.85', freq: 'monthly', mod: post.dateModified });
+  }
+
   // Compare pages
   for (const a of COMPARE_ARTICLES) {
     urls.push({ loc: `${SITE}/compare/${a.slug}`, priority: '0.95', freq: 'monthly', mod: TODAY });
@@ -528,7 +534,34 @@ function faqSchema(faqs) {
   };
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
+// ── Blog post data (mirrors blog/ folder) ─────────────────────────────────────
+const BLOG_POSTS = [
+  {
+    slug: 'best-ai-writing-tools-for-beginners-2026',
+    title: 'Best AI Writing Tools for Beginners 2026 — Tested & Ranked',
+    metaDescription: 'Looking for the best AI writing tools for beginners? I personally tested Rytr, Grammarly, QuillBot, and Writesonic so you can start writing smarter in 2026.',
+    datePublished: '2026-05-03',
+    dateModified: '2026-05-03',
+    faqs: [
+      { q: 'What is the best free AI writing tool for beginners?', a: 'Grammarly offers the best free plan for beginners — it catches grammar, spelling, and tone issues across every app you use, from Gmail to Google Docs, with no word limit on the free tier.' },
+      { q: 'Which AI writing tool is easiest for complete beginners?', a: 'Rytr is the easiest AI writing tool for beginners. You pick a use case (blog post, ad, bio), enter a few keywords, and Rytr writes the content. No learning curve, no complex settings.' },
+      { q: 'Can AI writing tools replace a human writer?', a: 'No. AI writing tools generate drafts and starting points, but they lack personal experience, nuanced opinions, and original research. They work best as a co-writer — handling the first draft while you edit, add examples, and inject your voice.' },
+      { q: 'How much do AI writing tools cost for beginners?', a: 'Most AI writing tools have a usable free plan. Paid plans start at $9/month (Rytr) and $9.95/month (QuillBot). Grammarly Pro is $12/month. Writesonic starts at $16/month. You can get started with zero cost using free tiers.' },
+    ],
+  },
+  {
+    slug: 'best-ai-tools-for-freelancers-2026',
+    title: 'Best AI Tools for Freelancers 2026 — Work Faster, Earn More',
+    metaDescription: 'The best AI tools for freelancers in 2026 — tested across writing, design, productivity, social media and coding. Cut your workload in half without cutting your rates.',
+    datePublished: '2026-05-03',
+    dateModified: '2026-05-03',
+    faqs: [
+      { q: 'Are AI tools worth it for freelancers?', a: "Yes — with one condition. AI tools are worth it when they speed up tasks you already do repeatedly, like writing first drafts, editing photos, or generating social captions. They are not worth it if you buy tools you don't have a workflow for yet. Start with one tool that solves your biggest bottleneck." },
+      { q: 'What is the best free AI tool for freelancers?', a: "Grammarly's free plan is the highest-value free AI tool for most freelancers — it improves every client email, proposal, and deliverable you write. For content creation, Rytr's free plan (10,000 characters/month) is the best no-cost option for generating drafts." },
+      { q: 'Can AI tools replace a freelancer?', a: 'No. AI tools handle repetitive, template-driven work — first drafts, background removal, caption generation. They cannot replace the client relationship, creative strategy, domain expertise, or accountability that clients pay a freelancer for.' },
+    ],
+  },
+];
 console.log('\n🔧  Pre-rendering routes for Google & Bing crawlability...\n');
 
 const template = readTemplate();
@@ -647,11 +680,57 @@ console.log('\nStatic pages:');
   writeRoute('methodology', buildPage(template, { title, description, canonical, schemas }));
 }
 
+// ── Week 3: Blog list page (/blog) ────────────────────────────────────────────
+console.log('\nBlog pages:');
+{
+  const canonical = `${SITE}/blog`;
+  const title = `AI Tools Blog — Guides & Reviews | AI Nexus by ${AUTHOR}`;
+  const description = `In-depth AI tool guides and reviews by ${AUTHOR}. Personally tested. No sponsored posts.`;
+  const schemas = [
+    articleSchema({ title, description, canonical }),
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'Blog', canonical],
+    ]),
+  ];
+  writeRoute('blog', buildPage(template, { title, description, canonical, schemas }));
+}
+
+// ── Week 3: Individual blog post pages (/blog/:slug) ──────────────────────────
+for (const post of BLOG_POSTS) {
+  const canonical = `${SITE}/blog/${post.slug}`;
+  const schemas = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: post.title,
+      description: post.metaDescription,
+      url: canonical,
+      datePublished: post.datePublished,
+      dateModified: post.dateModified,
+      author: { '@type': 'Person', name: AUTHOR, url: `${SITE}/about` },
+      publisher: { '@type': 'Organization', name: 'AI Nexus', url: SITE },
+      inLanguage: 'en-US',
+      mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+    },
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'Blog', `${SITE}/blog`],
+      [3, post.title, canonical],
+    ]),
+    ...(post.faqs.length > 0 ? [faqSchema(post.faqs)] : []),
+  ];
+  writeRoute(
+    `blog/${post.slug}`,
+    buildPage(template, { title: `${post.title} | AI Nexus`, description: post.metaDescription, canonical, schemas })
+  );
+}
+
 // ── 5. Sitemap ────────────────────────────────────────────────────────────────
 generateSitemap();
 
 // ── Done ──────────────────────────────────────────────────────────────────────
-const total = TOOLS.length + COMPARE_ARTICLES.length + 3; // +3 = about, disclosure, methodology
+const total = TOOLS.length + COMPARE_ARTICLES.length + 3 + BLOG_POSTS.length + 1; // +1 = /blog list
 console.log(`\n✅  ${total} routes pre-rendered. Every URL now returns HTTP 200.\n`);
 console.log('   Google Search Console: re-request indexing for all sitemap URLs.');
 console.log('   Bing Webmaster Tools: submit sitemap at /sitemap.xml\n');
