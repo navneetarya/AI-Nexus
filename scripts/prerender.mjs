@@ -176,6 +176,52 @@ const TOOLS = [
   },
 ];
 
+// ── Tool FAQs (mirrors TOOL_FAQS in constants.ts) ────────────────────────────
+// These are injected as FAQPage JSON-LD into each tool page's static HTML,
+// giving Google the data it needs to show FAQ rich results in SERPs.
+const TOOL_FAQS = {
+  rytr: [
+    { q: 'Is Rytr really free?', a: "Yes. Rytr's free plan gives you 10,000 characters per month — enough to write 3–4 short blog posts or 20+ social media captions. No credit card required to sign up." },
+    { q: 'How does Rytr compare to ChatGPT?', a: 'ChatGPT is more flexible for conversation and complex tasks. Rytr is faster for specific writing jobs like ad copy, bios, and outlines — it has 40+ pre-built use cases. For $9/month unlimited, Rytr is far better value if you write structured content regularly.' },
+    { q: 'Does Rytr work in languages other than English?', a: 'Yes — Rytr supports 30+ languages including Hindi, Spanish, French, German, and Arabic. The quality in non-English languages is solid for short-form content.' },
+    { q: "What is Rytr's affiliate commission?", a: 'Rytr pays 30% recurring commission. That means if someone you refer stays subscribed, you earn 30% of their monthly payment every single month — indefinitely.' },
+    { q: 'Can Rytr write full blog posts?', a: 'Rytr can write blog outlines, intros, and sections, but the free and Saver plans limit output length. For full 1,500+ word articles, the Unlimited plan at $29/month works, or a dedicated tool like Writesonic.' },
+  ],
+  podcastle: [
+    { q: 'Is Podcastle free to use?', a: "Yes. Podcastle's free plan lets you record and edit podcasts with basic features. The main limitation is export quality and total recording minutes. For starting a first show or low-volume podcasting, the free plan is genuinely functional." },
+    { q: 'How does Podcastle compare to Descript?', a: 'Podcastle is better for recording — especially remote interviews with guests. Descript is better for heavy text-based editing of existing audio. If you record first then edit, Podcastle is the better starting point and it\'s cheaper than Descript too.' },
+    { q: 'Can Podcastle remove background noise automatically?', a: "Yes. Podcastle's AI noise removal is one of its best features — it removes keyboard clicks, air conditioning hum, echo, and room noise in one click. I've tested it on recordings made in a noisy apartment and the results are impressive." },
+    { q: 'What is the Revoice feature?', a: "Revoice lets you clone your voice and fix mistakes in your recording without re-recording. If you mispronounced a word or said 'um', you type the correction and Revoice generates it in your voice. It's the most useful feature for solo podcasters." },
+    { q: 'Does Podcastle publish directly to Spotify?', a: "Yes — Podcastle has direct publishing to Spotify, Apple Podcasts, and other major platforms built into paid plans. You don't need a separate podcast hosting service." },
+  ],
+  ocoya: [
+    { q: 'What platforms does Ocoya schedule to?', a: 'Ocoya supports Instagram, Facebook, Twitter/X, LinkedIn, Pinterest, TikTok, and Google Business Profile. You can create one post and schedule it across all platforms simultaneously.' },
+    { q: 'How does Ocoya compare to Buffer or Hootsuite?', a: "Ocoya is significantly cheaper than Hootsuite and adds AI content generation that Buffer lacks. Buffer is better for detailed analytics. Hootsuite is better for large agency teams with multiple clients. For solo creators and small businesses, Ocoya offers the best value." },
+    { q: 'Can Ocoya write captions automatically?', a: "Yes — Ocoya's AI caption generator writes platform-specific captions based on your topic, product, or brief. It understands the difference between LinkedIn's professional tone and Instagram's casual voice." },
+    { q: 'Is there a free plan for Ocoya?', a: "Ocoya offers a free trial but no permanent free plan. Paid plans start at $15/month. At that price it replaces a standalone caption writer ($10–15/month) plus a scheduler ($10–15/month) — so it actually saves money." },
+    { q: 'Does Ocoya include graphic design tools?', a: "Yes — Ocoya has a built-in visual creator for making social media graphics. It's not as powerful as Canva for complex designs, but for standard social posts many users find they don't need Canva at all after switching to Ocoya." },
+  ],
+  replit: [
+    { q: 'Do I need to install anything to use Replit?', a: "No. Replit works entirely in your browser. No downloads, no local setup, no configuring Node.js or Python environments. You open a browser tab and start coding immediately. This is Replit's biggest advantage for beginners." },
+    { q: 'What coding languages does Replit support?', a: 'Replit supports 50+ languages including Python, JavaScript, TypeScript, Java, C++, Go, Rust, Ruby, PHP, and more. You can switch between languages instantly without installing anything on your machine.' },
+    { q: "How does Replit's AI compare to GitHub Copilot?", a: "Replit's AI (Ghostwriter) understands the context of your entire project — not just the current file. For beginners and solo projects it's very useful. GitHub Copilot integrates better into professional IDEs like VS Code for experienced developers." },
+    { q: 'Can I host my app on Replit for free?', a: "Yes — Replit's free plan gives you a public URL for every project instantly. The free hosting has limits on RAM and always-on uptime. The Core plan ($7/month) removes most limits and is excellent value for indie projects." },
+    { q: 'Is Replit good for learning to code from scratch?', a: "Replit is one of the best environments to learn coding in 2026. The zero-setup experience eliminates the frustration that stops most beginners. The AI assistant explains errors in plain language. Starting with Python on Replit is currently one of the fastest paths to writing real, working code." },
+  ],
+  taskade: [
+    { q: 'What makes Taskade different from Notion or Asana?', a: "Taskade combines task management + team chat + video calls + AI agents in one tool. Notion is better for documents and wikis. Asana is better for large enterprise project management. Taskade is the best all-in-one for small teams and freelancers who don't want 4 separate subscriptions." },
+    { q: 'What are Taskade AI agents?', a: "Taskade lets you build custom AI agents that automate your specific workflows. For example: an agent that takes a client brief and automatically creates a full project plan with tasks and deadlines. These agents run autonomously and can save 30–60 minutes per new project." },
+    { q: "Is Taskade's free plan actually useful?", a: "Yes — unlike many tools where the free plan is just a limited demo, Taskade's free tier gives you real access to AI features, projects, and collaboration. A small team of 2–3 people can operate effectively on the free plan." },
+    { q: 'Does Taskade have a mobile app?', a: "Yes, Taskade has iOS and Android apps. The desktop experience is significantly better than mobile — the mobile app is functional but complex features like building AI agents work better on a computer or tablet." },
+    { q: 'What is the Taskade affiliate commission rate?', a: "Taskade pays 30% recurring commission for the lifetime of the customer. This means every person you refer continues generating 30% commission on their subscription each month, indefinitely." },
+  ],
+  grammarly: [
+    { q: 'Is Grammarly free?', a: "Yes — Grammarly's free plan covers basic grammar, spelling, and punctuation checks. It works across Gmail, Google Docs, and most web apps via the browser extension. Premium unlocks tone detection, clarity rewrites, and plagiarism checking." },
+    { q: 'How accurate is Grammarly?', a: "For standard business and academic writing, Grammarly's accuracy is excellent — better than Microsoft Word's built-in checker. It occasionally over-corrects creative writing by applying formal grammar rules to intentional stylistic choices." },
+    { q: 'Does Grammarly work internationally?', a: "Yes — Grammarly works globally via browser extension and desktop app across Gmail, Google Docs, Word, and 500+ other apps. It's effective in any country and supports American, British, Canadian, and Australian English style preferences." },
+  ],
+};
+
 // ── Compare articles ──────────────────────────────────────────────────────────
 const COMPARE_ARTICLES = [
   {
@@ -470,6 +516,18 @@ ${urls.map(u => `  <url>
   console.log('\n  ✓  /sitemap.xml');
 }
 
+function faqSchema(faqs) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  };
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 console.log('\n🔧  Pre-rendering routes for Google & Bing crawlability...\n');
 
@@ -491,19 +549,12 @@ for (const tool of TOOLS) {
     ]),
   ];
 
-  writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas }));
-}
+  // Inject FAQPage schema if Q&As exist for this tool — enables FAQ rich results in SERPs
+  if (TOOL_FAQS[tool.slug] && TOOL_FAQS[tool.slug].length > 0) {
+    schemas.push(faqSchema(TOOL_FAQS[tool.slug]));
+  }
 
-function faqSchema(faqs) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map(({ q, a }) => ({
-      '@type': 'Question',
-      name: q,
-      acceptedAnswer: { '@type': 'Answer', text: a },
-    })),
-  };
+  writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas }));
 }
 
 // ── 2. Compare pages ──────────────────────────────────────────────────────────
