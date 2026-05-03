@@ -27,6 +27,29 @@ export interface Tool {
   pros?: string[];
   cons?: string[];
   features?: string[];
+
+  // ── Week 2: Affiliate page expansion fields ──────────────────────────────
+  /** Pricing tier breakdown — renders a visual pricing table on the tool page */
+  pricingBreakdown?: {
+    tier: string;       // e.g. "Free", "Saver", "Premium"
+    price: string;      // e.g. "$0/month", "$9/month"
+    highlight: string;  // Key features for this tier in one line
+  }[];
+
+  /** 4-step getting started guide — renders a numbered onboarding section */
+  setupSteps?: string[];
+
+  /** A real output sample with editorial commentary */
+  realOutputExample?: {
+    output: string;       // The actual AI-generated text
+    editorialNote: string; // Your honest take on the quality
+  };
+
+  /** "5 things I use it for daily" list */
+  dailyUseCases?: string[];
+
+  /** "Who should NOT use this" — different from whoShouldSkip in TOOL_CONTENT */
+  notForYou?: string;
 }
 
 export interface FilterState {

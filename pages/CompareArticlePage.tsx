@@ -635,14 +635,75 @@ The most common mistake: choosing Notion for execution work (where the setup ove
   },
 ];
 
-// ── Helper: parse inline **bold** markdown ────────────────────────────────
-function renderContent(text: string) {
+// ── Tool name → slug mapping for first-mention internal links (Task 4) ─────
+const TOOL_LINK_MAP: Record<string, string> = {
+  'Rytr':           'rytr',
+  'Writesonic':     'writesonic',
+  'Grammarly':      'grammarly',
+  'QuillBot':       'quillbot',
+  'Quillbot':       'quillbot',
+  'Podcastle':      'podcastle',
+  'Leonardo.ai':    'leonardo-ai',
+  'Replit':         'replit',
+  'Taskade':        'taskade',
+  'Notion AI':      'notion-ai',
+  'Ocoya':          'ocoya',
+  'Frase':          'frase',
+  'PhotoRoom':      'photoroom',
+  'Looka':          'looka',
+  'Pictory':        'pictory',
+  'Opus Clip':      'opus-clip',
+  'InVideo AI':     'invideo',
+  'Murf AI':        'murf-ai',
+  'Gamma':          'gamma',
+  'Beautiful.ai':   'beautiful-ai',
+};
+
+// ── Helper: parse inline **bold** markdown + first-mention tool links ────────
+function renderContent(text: string, navigate?: (to: string) => void, seenTools?: Set<string>) {
+  const linked = seenTools ?? new Set<string>();
+  // Sort tool names longest-first to avoid partial matches (e.g. "Notion AI" before "Notion")
+  const toolNames = Object.keys(TOOL_LINK_MAP).sort((a, b) => b.length - a.length);
+
+  function linkifyChunk(chunk: string, baseKey: string): React.ReactNode {
+    if (!navigate) return <span key={baseKey}>{chunk}</span>;
+    const parts: React.ReactNode[] = [];
+    let remaining = chunk;
+    let partIdx = 0;
+    while (remaining.length > 0) {
+      let matched = false;
+      for (const toolName of toolNames) {
+        const idx = remaining.indexOf(toolName);
+        if (idx !== -1 && !linked.has(toolName)) {
+          if (idx > 0) parts.push(<span key={`${baseKey}-${partIdx++}`}>{remaining.slice(0, idx)}</span>);
+          linked.add(toolName);
+          const slug = TOOL_LINK_MAP[toolName];
+          parts.push(
+            <span
+              key={`${baseKey}-${partIdx++}`}
+              onClick={() => navigate(`/tools/${slug}`)}
+              style={{ color: C.a1, fontWeight: 600, cursor: 'pointer', textDecoration: 'underline', textDecorationColor: `${C.a1}55` }}
+            >{toolName}</span>
+          );
+          remaining = remaining.slice(idx + toolName.length);
+          matched = true;
+          break;
+        }
+      }
+      if (!matched) {
+        parts.push(<span key={`${baseKey}-${partIdx++}`}>{remaining}</span>);
+        break;
+      }
+    }
+    return <React.Fragment key={baseKey}>{parts}</React.Fragment>;
+  }
+
   return text.split('\n\n').map((para, i) => {
     const parts = para.split(/(\*\*[^*]+\*\*)/g).map((chunk, j) => {
       if (chunk.startsWith('**') && chunk.endsWith('**')) {
         return <strong key={j}>{chunk.slice(2, -2)}</strong>;
       }
-      return <span key={j}>{chunk}</span>;
+      return linkifyChunk(chunk, `${i}-${j}`);
     });
     return (
       <p key={i} style={{ margin: '0 0 1rem', lineHeight: 1.75, color: C.txt }}>
@@ -661,6 +722,10 @@ interface Props {
 }
 
 export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: Props) {
+  // Track which tool names have been linked already — only link first mention per page
+  const linked = React.useRef(new Set<string>()).current;
+  // Reset on article change
+  React.useEffect(() => { linked.clear(); }, [article.slug, linked]);
   return (
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', system-ui, sans-serif" }}>
 
@@ -692,7 +757,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
 
         {/* Intro */}
         <div style={{ background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 12, padding: '1.25rem 1.5rem', marginBottom: '2.5rem' }}>
-          {renderContent(article.intro)}
+          {renderContent(article.intro, navigate, linked)}
         </div>
 
         {/* Comparison table */}
@@ -742,7 +807,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
             <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: C.txt, margin: '0 0 0.85rem', letterSpacing: '-0.02em', borderLeft: `3px solid ${C.a1}`, paddingLeft: '0.75rem' }}>
               {sec.heading}
             </h2>
-            {renderContent(sec.content)}
+            {renderContent(sec.content, navigate, linked)}
           </section>
         ))}
 
@@ -751,7 +816,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
           <div style={{ fontWeight: 700, fontSize: 14, color: C.a2, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             ⚖️ Our Verdict
           </div>
-          {renderContent(article.verdict)}
+          {renderContent(article.verdict, navigate, linked)}
         </div>
 
         {/* Winner CTA */}

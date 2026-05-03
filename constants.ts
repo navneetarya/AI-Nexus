@@ -67,6 +67,21 @@ export const TOOLS: Tool[] = [
     features: ['40+ use cases', '30+ languages', 'Chrome extension', 'Plagiarism checker'],
     pros: ['Very affordable — $9/month unlimited', 'Great free plan (10k chars/month)', 'No learning curve at all'],
     cons: ['Limited long-form output', 'Less accurate than premium tools'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '10,000 characters/month · 20+ use cases · No credit card required' },
+      { tier: 'Saver', price: '$9/month', highlight: 'Unlimited characters · 40+ use cases · Chrome extension · Plagiarism checker' },
+      { tier: 'Unlimited', price: '$29/month', highlight: 'Everything in Saver · Priority support · Custom use case builder · Team access' },
+    ],
+    setupSteps: [
+      'Sign up at rytr.me — no credit card required for the free plan. You get 10,000 characters per month instantly.',
+      'Choose a use case from the 40+ templates. Start with "Blog Idea & Outline" or "Cold Email" to see Rytr at its best.',
+      'Enter your topic or brief, select tone of voice (Professional, Casual, Inspirational), and pick your language.',
+      'Click "Ryte for me" — review the output, use the regenerate button if needed, then copy or export directly.',
+    ],
+    realOutputExample: {
+      output: 'Struggling to find the right words for your cold email? AI tools like Rytr have changed the game for freelancers. In under 60 seconds, you can generate a personalised outreach email that sounds human, not robotic — and actually gets replies.',
+      editorialNote: 'Generated using the "Cold Email" template with a 20-word brief: "AI tools for freelancers, professional tone." I made zero edits — this was the first output. It\'s a solid first draft that needs 10 minutes of personalisation before sending. The structure and hook are genuinely good.',
+    },
   },
   {
     id: 'w4', slug: 'quillbot',
@@ -183,6 +198,19 @@ export const TOOLS: Tool[] = [
     features: ['Remote recording', 'AI noise removal', 'Voice enhancement', 'Revoice (voice cloning)', 'Direct Spotify publishing'],
     pros: ['All-in-one podcast tool', 'Excellent AI noise removal', 'Free plan is genuinely useful', 'Revoice fixes errors without re-recording'],
     cons: ['Export limits on free plan', 'Fewer multi-track editing features than Descript'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Up to 3 recordings/month · 10hr/month Magic Dust AI enhancement · Remote guest recording' },
+      { tier: 'Storyteller', price: '$11.99/month', highlight: 'Unlimited recordings · Full Magic Dust · Auto-transcription · Direct Spotify & Apple Podcasts publishing' },
+      { tier: 'Professional', price: '$23.99/month', highlight: 'Everything in Storyteller · Revoice AI voice cloning · Priority processing · Advanced export formats' },
+    ],
+    dailyUseCases: [
+      'Record a remote guest interview — invite them via a browser link, Podcastle captures separate high-quality local tracks from each participant',
+      'Run Magic Dust on the raw recording to remove keyboard clicks, AC hum, and room echo — one click, takes under 2 minutes',
+      'Auto-transcribe the episode and use the transcript for show notes, social media quote cards, and a blog summary',
+      'Fix a mispronounced name or a stumbled sentence mid-episode using Revoice, without re-recording the entire segment',
+      'Publish directly to Spotify, Apple Podcasts, and other platforms from the Podcastle dashboard — no separate hosting service needed',
+    ],
+    notForYou: 'Professional audio engineers or producers who need multi-track mixing with precise waveform editing, mastering chains, EQ automation, and studio-grade post-production. Podcastle is built for podcasters who want broadcast-quality output without a learning curve — not for audio engineers who need Audacity or Adobe Audition-level control.',
   },
 
   // DESIGN
@@ -220,6 +248,19 @@ export const TOOLS: Tool[] = [
     features: ['AI caption writer', 'Visual creator', 'Multi-platform scheduling', 'Analytics', 'Hashtag research'],
     pros: ['All-in-one social media tool', 'Replaces 3 separate tools', 'Very easy to learn', 'Best value vs Hootsuite'],
     cons: ['Design flexibility limited vs Canva', 'Scheduling can occasionally lag'],
+    pricingBreakdown: [
+      { tier: 'Bronze', price: '$15/month', highlight: '1 workspace · 5 social profiles · AI caption generation · Visual creator · Hashtag research' },
+      { tier: 'Silver', price: '$39/month', highlight: '3 workspaces · 15 social profiles · Advanced analytics · Bulk scheduling · Team access' },
+      { tier: 'Gold', price: '$79/month', highlight: '5 workspaces · 30 social profiles · White-label option · Priority support · API access' },
+    ],
+    dailyUseCases: [
+      'Drop in a product brief and generate platform-specific captions for Instagram, LinkedIn, and TikTok — three distinct outputs in under 2 minutes',
+      'Schedule the entire week\'s content queue in a single 30-minute Monday session, then forget about it',
+      'Use the built-in visual creator for quick announcement graphics — without opening Canva for standard posts',
+      'Check which hashtags performed best from last week and update the saved hashtag sets for the next round of posts',
+      'Review AI-drafted captions for a product launch campaign and push them live with one scheduling action across all platforms',
+    ],
+    notForYou: 'Large agencies managing 20+ client accounts that need white-label PDF reporting, granular multi-user approval workflows, and enterprise-grade analytics dashboards. Ocoya\'s analytics are functional but not deep — if your agency delivers detailed monthly performance reports to clients, Sprout Social or Hootsuite\'s infrastructure is more appropriate for that scale.',
   },
 
   // CODING
@@ -233,6 +274,19 @@ export const TOOLS: Tool[] = [
     features: ['AI coding assistant (Ghostwriter)', 'Instant deployment', 'Multiplayer coding', '50+ languages', 'Built-in database'],
     pros: ['Zero setup — works in browser instantly', 'Great for learning to code', 'Free instant hosting', 'AI understands entire project context'],
     cons: ['Slower than local IDEs', 'Free tier has usage limits'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Unlimited public projects · 3 private projects · Basic Ghostwriter AI · Instant public URL' },
+      { tier: 'Core', price: '$7/month', highlight: 'Unlimited private projects · Always-on deployments · Advanced Ghostwriter · More compute resources' },
+      { tier: 'Teams', price: '$20/month per user', highlight: 'Everything in Core · Shared team workspaces · Admin controls · Team analytics · SSO support' },
+    ],
+    dailyUseCases: [
+      'Open a browser tab and start prototyping a new Python API — running in under 60 seconds with zero local setup or dependency conflicts',
+      'Share a live URL of a working prototype with a client or collaborator instantly, no deployment steps required',
+      'Ask Ghostwriter to explain an error that spans 3 files — it reads the entire project context, not just the current file',
+      'Use the AI agent to refactor a function to async/await across multiple files in a single natural-language command',
+      'Deploy a side project to a permanent public URL for free and share it without touching any server or DevOps infrastructure',
+    ],
+    notForYou: 'Senior developers doing production-grade work with complex infrastructure requirements — Docker containers, custom CI/CD pipelines, demanding build processes, or high-traffic production apps. Replit\'s compute limits and environment constraints don\'t match a properly configured local development setup. For professional engineering at scale, use a local environment with GitHub Copilot layered on top.',
   },
 
   // PRODUCTIVITY
@@ -257,6 +311,19 @@ export const TOOLS: Tool[] = [
     features: ['AI task generation', 'Custom AI agents', 'Video collaboration', 'Mind maps & kanban', 'Workflow automation'],
     pros: ['Very feature-rich for the price', 'Custom AI agents automate workflows', 'Excellent free plan', 'Covers tasks + chat + docs + AI'],
     cons: ['Interface takes a week to learn', 'Mobile app needs improvement'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Unlimited projects · 5 AI agent runs/month · Basic team collaboration · All view types' },
+      { tier: 'Pro', price: '$8/month', highlight: 'Unlimited AI agent runs · Video collaboration · Custom workflows · Priority support · API access' },
+      { tier: 'Business', price: '$16/month', highlight: 'Everything in Pro · Advanced team permissions · Workspace analytics · Custom branding · Dedicated onboarding' },
+    ],
+    dailyUseCases: [
+      'Paste a new client brief into the project AI agent — it generates a complete task breakdown with subtasks and realistic due dates in under 10 seconds',
+      'Run the weekly report agent: it scans all projects and produces a plain-English summary of what\'s done, what\'s overdue, and what\'s next',
+      'Use Mind Map view for morning brainstorming sessions on a new project structure before converting to tasks',
+      'Jump on a built-in video call with a teammate directly inside the task being discussed — no Zoom link required',
+      'Let the automation trigger the next project phase when a milestone task is marked complete, including notifying relevant team members',
+    ],
+    notForYou: 'Large enterprises that need complex role-based permission systems, SOC2 compliance, audit logs, enterprise SSO, and legal-grade data governance. Taskade is built for small, agile teams of 2–20 people. For enterprise project management at scale with compliance requirements, look at Asana Business or Monday Enterprise.',
   },
 ];
 

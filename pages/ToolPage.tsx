@@ -3,6 +3,7 @@ import { Tool } from '../types';
 import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award, Scale, Sun, Moon } from 'lucide-react';
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS } from '../constants';
 import { SharedNav } from './SharedNav';
+import { COMPARE_ARTICLES } from './CompareArticlePage';
 
 const C = {
   bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
@@ -186,6 +187,19 @@ const TOOL_CONTENT: Record<string, {
 };
 
 const TODAY = new Date().toISOString().split('T')[0];
+
+// ── Map each tool slug to its compare article slugs (Task 4 — internal linking) ──
+const TOOL_COMPARE_MAP: Record<string, string[]> = {
+  rytr:          ['rytr-vs-writesonic'],
+  writesonic:    ['rytr-vs-writesonic'],
+  grammarly:     ['grammarly-vs-quillbot'],
+  quillbot:      ['grammarly-vs-quillbot'],
+  ocoya:         ['ocoya-vs-buffer-vs-hootsuite'],
+  podcastle:     ['podcastle-vs-descript'],
+  'leonardo-ai': ['leonardo-vs-midjourney'],
+  replit:        ['replit-vs-github-copilot'],
+  taskade:       ['taskade-vs-notion'],
+};
 
 interface ToolPageProps { tool: Tool; navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
 
@@ -712,7 +726,177 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </div>
         )}
 
-        {/* ── Final CTA ── */}
+        {/* ── Pricing breakdown (Week 2) ── */}
+        {tool.pricingBreakdown && tool.pricingBreakdown.length > 0 && (
+          section(
+            <>
+              {sectionTitle('Pricing breakdown')}
+              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 18px', lineHeight: 1.65, fontWeight: 300 }}>
+                All plans include the core features — here's what changes at each tier.
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 12 }}>
+                {tool.pricingBreakdown.map((tier, i) => (
+                  <div key={i} style={{
+                    padding: '18px 20px',
+                    background: i === 1 ? cardBg : C.bg,
+                    borderRadius: 14,
+                    border: i === 1 ? `2px solid ${accent}` : `1.5px solid ${C.barBrd}`,
+                    position: 'relative' as const,
+                  }}>
+                    {i === 1 && (
+                      <span style={{
+                        position: 'absolute' as const, top: -10, left: 16,
+                        background: accent, color: '#fff', fontSize: 10, fontWeight: 700,
+                        padding: '2px 10px', borderRadius: 100, letterSpacing: '0.06em',
+                      }}>POPULAR</span>
+                    )}
+                    <div style={{ fontSize: 13, fontWeight: 700, color: C.txt, marginBottom: 4, fontFamily: "'Syne', sans-serif" }}>{tier.tier}</div>
+                    <div style={{ fontSize: 20, fontWeight: 800, color: accent, marginBottom: 10, fontFamily: "'Syne', sans-serif" }}>{tier.price}</div>
+                    <div style={{ fontSize: 12, color: C.mut, lineHeight: 1.6 }}>{tier.highlight}</div>
+                  </div>
+                ))}
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <a href={tool.affiliateLink} target="_blank" rel="noopener noreferrer"
+                  style={{ fontSize: 13, color: accent, fontWeight: 600, textDecoration: 'none' }}>
+                  Start free — no credit card required →
+                </a>
+              </div>
+            </>
+          )
+        )}
+
+        {/* ── Setup steps (Week 2 — Rytr only, renders if present) ── */}
+        {tool.setupSteps && tool.setupSteps.length > 0 && (
+          section(
+            <>
+              {sectionTitle(`How to get started with ${tool.name}`)}
+              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 18px', lineHeight: 1.65, fontWeight: 300 }}>
+                From signup to first output in under 5 minutes.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 12 }}>
+                {tool.setupSteps.map((step, i) => (
+                  <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+                    <div style={{
+                      width: 28, height: 28, borderRadius: '50%', flexShrink: 0,
+                      background: `linear-gradient(135deg,${C.a1},${C.a2})`,
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontFamily: "'Syne', sans-serif", fontSize: 12, fontWeight: 700, color: '#fff',
+                    }}>{i + 1}</div>
+                    <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.65, margin: 0, fontWeight: 300, paddingTop: 4 }}>{step}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          )
+        )}
+
+        {/* ── Real output example (Week 2 — Rytr only) ── */}
+        {tool.realOutputExample && (
+          section(
+            <>
+              {sectionTitle('Real output sample')}
+              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 14px', lineHeight: 1.65, fontWeight: 300 }}>
+                Here's an unedited output I generated during testing, with my editorial note on quality.
+              </p>
+              <div style={{ background: cardBg, border: `1px solid ${cardBrd}`, borderRadius: 12, padding: '18px 20px', marginBottom: 14 }}>
+                <div style={{ fontSize: 11, fontWeight: 600, color: accent, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>
+                  AI-generated output
+                </div>
+                <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, margin: 0, fontStyle: 'italic', fontWeight: 300 }}>
+                  "{tool.realOutputExample.output}"
+                </p>
+              </div>
+              <div style={{ background: C.sukbg, border: `1px solid ${C.sukbrd}`, borderRadius: 12, padding: '14px 18px', display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+                <div style={{ fontSize: 16, flexShrink: 0 }}>✍️</div>
+                <div>
+                  <div style={{ fontSize: 11, fontWeight: 600, color: '#059669', letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 5 }}>My editorial note</div>
+                  <p style={{ fontSize: 13, color: C.txt, lineHeight: 1.65, margin: 0, fontWeight: 300 }}>{tool.realOutputExample.editorialNote}</p>
+                </div>
+              </div>
+            </>
+          )
+        )}
+
+        {/* ── Daily use cases (Week 2 — all 5 affiliate tools) ── */}
+        {tool.dailyUseCases && tool.dailyUseCases.length > 0 && (
+          section(
+            <>
+              {sectionTitle(`5 things I actually use ${tool.name} for`)}
+              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 16px', lineHeight: 1.65, fontWeight: 300 }}>
+                Real workflows from personal daily use — not marketing copy from the vendor.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
+                {tool.dailyUseCases.map((uc, i) => (
+                  <div key={i} style={{ display: 'flex', gap: 12, padding: '12px 16px', background: cardBg, borderRadius: 10, border: `1px solid ${cardBrd}`, alignItems: 'flex-start' }}>
+                    <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 13, color: accent, flexShrink: 0, marginTop: 1 }}>
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <span style={{ fontSize: 13, color: C.txt, lineHeight: 1.6 }}>{uc}</span>
+                  </div>
+                ))}
+              </div>
+            </>
+          )
+        )}
+
+        {/* ── Not for you (Week 2) ── */}
+        {tool.notForYou && (
+          section(
+            <>
+              {sectionTitle('Who should NOT use this')}
+              <div style={{ display: 'flex', gap: 14, padding: '16px 18px', background: C.errbg, borderRadius: 12, border: `1px solid ${C.errbrd}`, alignItems: 'flex-start' }}>
+                <div style={{ width: 28, height: 28, borderRadius: '50%', background: 'rgba(239,68,68,.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <X size={14} color="#dc2626" />
+                </div>
+                <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.7, margin: 0, fontWeight: 300 }}>{tool.notForYou}</p>
+              </div>
+            </>
+          )
+        )}
+
+        {/* ── Related comparisons (Task 4 — internal linking) ── */}
+        {(TOOL_COMPARE_MAP[tool.slug] ?? []).length > 0 && (() => {
+          const relatedArticles = COMPARE_ARTICLES.filter(a =>
+            (TOOL_COMPARE_MAP[tool.slug] ?? []).includes(a.slug)
+          );
+          if (relatedArticles.length === 0) return null;
+          return section(
+            <>
+              {sectionTitle('Related comparisons')}
+              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 14px', lineHeight: 1.65, fontWeight: 300 }}>
+                See how {tool.name} stacks up in a full head-to-head breakdown.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
+                {relatedArticles.map((art, i) => (
+                  <div key={i} style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                    padding: '14px 18px', background: cardBg, borderRadius: 12,
+                    border: `1px solid ${cardBrd}`, gap: 12, flexWrap: 'wrap' as const,
+                  }}>
+                    <div>
+                      <div style={{ fontSize: 14, fontWeight: 600, color: C.txt, marginBottom: 3 }}>{art.title}</div>
+                      <div style={{ fontSize: 12, color: C.mut2 }}>{art.publishDate} · {art.comparisonTable.length} tools compared</div>
+                    </div>
+                    <button
+                      onClick={() => navigate(`/compare/${art.slug}`)}
+                      style={{
+                        display: 'inline-flex', alignItems: 'center', gap: 6,
+                        background: `linear-gradient(135deg,${C.a1},${C.a2})`,
+                        color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer',
+                        padding: '8px 18px', fontSize: 13, fontWeight: 600,
+                        fontFamily: "'Syne', sans-serif", whiteSpace: 'nowrap' as const,
+                      }}>
+                      Read comparison →
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </>
+          );
+        })()}
+
+
         <div style={{ background: C.surf, borderRadius: 20, border: `2px solid ${cardBrd}`, padding: '36px', textAlign: 'center' as const }}>
           <div style={{ position: 'relative' }}>
             <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 22, color: C.txt, marginBottom: 10 }}>
