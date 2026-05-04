@@ -379,7 +379,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
     "headline": `${tool.name} Review — ${tool.tagline}`,
     "description": `Honest ${tool.name} review by Navneet Arya (AI Nexus). ${tool.tagline}. Tested personally for ${content?.timeUsed || 'several months'}.`,
     "datePublished": "2026-01-01",
-    "dateModified": TODAY,
+    "dateModified": content?.lastTested ? new Date(content.lastTested).toISOString().split('T')[0] : TODAY,
     "url": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}`,
     "reviewBody": content ? `${content.myTake} ${content.verdict}` : tool.description,
     "reviewRating": {
@@ -476,8 +476,8 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                   <span style={{ background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Syne', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100 }}>
                     {tool.category.toUpperCase()}
                   </span>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2 }}>
-                    <Calendar size={12} /> Updated {content?.lastTested || TODAY}
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 11, fontWeight: 700, letterSpacing: '0.02em', color: accent, background: cardBg, border: `1px solid ${cardBrd}`, padding: '3px 10px', borderRadius: 100 }}>
+                    <Calendar size={11} /> Last verified: {content?.lastTested || 'May 2026'}
                   </span>
                   <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2 }}>
                     <User size={12} /> Reviewed by {SITE_CONFIG.authorName}

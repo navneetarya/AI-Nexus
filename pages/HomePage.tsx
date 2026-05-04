@@ -6,7 +6,7 @@ import {
   ExternalLink, X, Menu, ChevronRight,
   Zap, Clock, Award, BookOpen, BarChart2,
   PenLine, Image as ImageIcon, Video as VideoIcon,
-  Mic, Megaphone, Palette, Code2, Scale, Sun, Moon, Calendar,
+  Mic, Megaphone, Palette, Code2, Scale, Sun, Moon, Calendar, Linkedin,
 } from 'lucide-react';
 import { COMPARE_ARTICLES } from './CompareArticlePage';
 import { SharedNav } from './SharedNav';
@@ -298,11 +298,18 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               marginBottom:16, maxWidth:200 }}>
               Honest AI tool reviews. Every tool personally tested.
             </p>
-            <a href={`mailto:${SITE_CONFIG.email}`}
-              style={{ display:'inline-flex', alignItems:'center', gap:6,
-                color:C.a1, fontSize:13, fontWeight:500, textDecoration:'none' }}>
-              <Mail size={12}/> {SITE_CONFIG.email}
-            </a>
+            <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
+              <a href={`mailto:${SITE_CONFIG.email}`}
+                style={{ display:'inline-flex', alignItems:'center', gap:6,
+                  color:C.a1, fontSize:13, fontWeight:500, textDecoration:'none' }}>
+                <Mail size={12}/> {SITE_CONFIG.email}
+              </a>
+              <a href="https://www.linkedin.com/in/navneetarya/" target="_blank" rel="noopener noreferrer"
+                style={{ display:'inline-flex', alignItems:'center', gap:6,
+                  color:'#5eaeff', fontSize:13, fontWeight:500, textDecoration:'none' }}>
+                <Linkedin size={12}/> LinkedIn — Navneet Arya
+              </a>
+            </div>
           </div>
 
           {/* Tools */}
