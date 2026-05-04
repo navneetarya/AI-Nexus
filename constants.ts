@@ -735,19 +735,16 @@ Object.assign(TOOL_COMPARISONS, {
   ],
 });
 
-// ── Week 8: GSC keywords for 5 new tools ──────────────────────────────────
-Object.assign(TOOL_KEYWORDS, {
-  elevenlabs: ['elevenlabs review', 'elevenlabs vs murf ai', 'best ai voice generator 2026', 'elevenlabs free plan', 'ai voice cloning tool'],
-  jasper: ['jasper ai review', 'jasper vs writesonic', 'best ai writing tool for teams', 'jasper brand voice', 'jasper ai pricing 2026'],
-  descript: ['descript review', 'descript vs podcastle', 'text based audio editor ai', 'descript overdub review', 'best podcast editing software 2026'],
-  perplexity: ['perplexity ai review', 'perplexity vs chatgpt', 'best ai search engine 2026', 'perplexity pro worth it', 'ai research tool with citations'],
-  'canva-ai': ['canva ai review', 'canva ai tools 2026', 'canva magic write review', 'canva vs adobe express ai', 'best ai design tool free'],
-});
-
 export const TOOL_KEYWORDS: Record<string, string[]> = {
   podcastle: ['podcastle review', 'podcastle vs descript', 'best ai podcast recorder', 'podcastle free plan', 'ai podcast editing tool 2026'],
   rytr: ['rytr review', 'rytr vs chatgpt', 'best cheap ai writing tool', 'rytr free plan', 'rytr vs writesonic'],
   ocoya: ['ocoya review', 'ocoya vs buffer', 'best ai social media scheduler', 'ocoya alternative', 'ai caption generator tool'],
   replit: ['replit review', 'replit vs github copilot', 'best browser ide 2026', 'replit free plan', 'learn to code with ai'],
   taskade: ['taskade review', 'taskade vs notion', 'best ai task manager', 'taskade ai agents', 'taskade free plan 2026'],
+  // Week 8: 5 new tools
+  elevenlabs: ['elevenlabs review', 'elevenlabs vs murf ai', 'best ai voice generator 2026', 'elevenlabs free plan', 'ai voice cloning tool'],
+  jasper: ['jasper ai review', 'jasper vs writesonic', 'best ai writing tool for teams', 'jasper brand voice', 'jasper ai pricing 2026'],
+  descript: ['descript review', 'descript vs podcastle', 'text based audio editor ai', 'descript overdub review', 'best podcast editing software 2026'],
+  perplexity: ['perplexity ai review', 'perplexity vs chatgpt', 'best ai search engine 2026', 'perplexity pro worth it', 'ai research tool with citations'],
+  'canva-ai': ['canva ai review', 'canva ai tools 2026', 'canva magic write review', 'canva vs adobe express ai', 'best ai design tool free'],
 };
