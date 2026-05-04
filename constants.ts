@@ -22,7 +22,11 @@ export const SITE_CONFIG = {
   //        https://embeds.beehiiv.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
   //   6. Paste it below, replacing YOUR_EMBED_ID
   //   7. Commit & push — both the hero strip and compare pages will go live.
-  beehiivEmbedUrl: "https://ainexus-weekly.beehiiv.com/",
+  // ACTION REQUIRED: Replace the URL below with your actual Beehiiv embed URL.
+  // Steps: Beehiiv Dashboard → Grow → Forms → select your form → Get Embed Code
+  // The correct URL starts with: https://embeds.beehiiv.com/
+  // Example: https://embeds.beehiiv.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+  beehiivEmbedUrl: "https://embeds.beehiiv.com/YOUR_EMBED_ID_HERE",
 };
 
 // ── Affiliate links — all verified & active ───────────────────────────────

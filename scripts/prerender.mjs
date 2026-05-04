@@ -174,6 +174,44 @@ const TOOLS = [
     pricing: 'Free + from $8/month', bestFor: 'Freelancers & small teams',
     rating: 4.2, lastTested: 'April 2026', ratingCount: 520,
   },
+  // ── Week 1 Fix: 5 tools present in constants.ts but missing from prerender ──
+  // Without these entries, /tools/elevenlabs/, /tools/jasper/, /tools/descript/,
+  // /tools/perplexity/, and /tools/canva-ai/ return 404 to Googlebot.
+  {
+    slug: 'elevenlabs', name: 'ElevenLabs', category: 'Audio',
+    tagline: 'The most realistic AI voice generator on the planet',
+    description: 'ElevenLabs creates the most natural-sounding AI voices available. Clone your own voice, generate studio-quality narration, and build voice-powered products with the industry-leading speech API.',
+    pricing: 'Free + from $5/month', bestFor: 'Creators, developers & podcasters',
+    rating: 4.7, lastTested: 'April 2026', ratingCount: 890,
+  },
+  {
+    slug: 'jasper', name: 'Jasper', category: 'Writing',
+    tagline: 'Enterprise AI content platform for marketing teams',
+    description: 'Jasper is the leading AI writing platform for marketing teams. Create on-brand blog posts, ad copy, emails, and social content at scale — with brand voice controls that keep every output consistent.',
+    pricing: 'From $39/month', bestFor: 'Marketing teams & agencies',
+    rating: 4.3, lastTested: 'April 2026', ratingCount: 760,
+  },
+  {
+    slug: 'descript', name: 'Descript', category: 'Audio',
+    tagline: 'Edit audio and video by editing text — like a Google Doc',
+    description: 'Descript is the most innovative audio and video editor available. Edit your recordings by editing a transcript — delete words on the page and the audio disappears. Includes AI voice clone, filler word removal, and studio-quality processing.',
+    pricing: 'Free + from $12/month', bestFor: 'Podcasters & video creators',
+    rating: 4.5, lastTested: 'April 2026', ratingCount: 640,
+  },
+  {
+    slug: 'perplexity', name: 'Perplexity Pro', category: 'Productivity',
+    tagline: 'AI-powered search that cites every answer',
+    description: 'Perplexity is the AI search engine replacing Google for millions of users. Ask any question and get a direct, cited answer with sources — no ads, no SEO spam, no clicking through ten pages.',
+    pricing: 'Free + $20/month Pro', bestFor: 'Researchers, students & power users',
+    rating: 4.6, lastTested: 'April 2026', ratingCount: 1100,
+  },
+  {
+    slug: 'canva-ai', name: 'Canva AI', category: 'Design',
+    tagline: 'AI design tools built into the world\'s most popular design platform',
+    description: 'Canva AI brings powerful AI features to the world\'s largest design platform. Generate images, write copy, remove backgrounds, animate designs, and transform ideas into polished graphics — all without leaving Canva.',
+    pricing: 'Free + $15/month Pro', bestFor: 'Everyone — from beginners to pros',
+    rating: 4.4, lastTested: 'April 2026', ratingCount: 1350,
+  },
 ];
 
 // ── Tool FAQs (mirrors TOOL_FAQS in constants.ts) ────────────────────────────
