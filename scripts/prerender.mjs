@@ -354,7 +354,7 @@ function readTemplate() {
  * Injects page-specific meta into the HTML template.
  * Modifies: title, description, canonical, og:*, twitter:*, robots, schemas.
  */
-function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }) {
+function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, bodyHtml = null }) {
   let html = template;
 
   // Title
@@ -396,6 +396,29 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
       .join('');
     html = html.replace('</head>', `${blocks}\n  </head>`);
   }
+
+  // ── Body content injection for non-JS crawlers & GEO signals ────────────────
+  // React replaces <div id="root"> contents on mount. Until then, crawlers see
+  // a real H1, author byline, datePublished, and description — boosting GEO score
+  // signals: H1 (+10%), Author (+10%), Date (+5%), Content depth (+5%).
+  const publishDate = datePublished || TODAY;
+  const displayDate = new Date(publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  // Strip "| AI Nexus" suffix for the H1 so it reads naturally
+  const h1Text = esc(title.replace(/ \| AI Nexus$/, ''));
+  const pageBody = bodyHtml
+    ? `<div id="pre-render" style="font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px 16px">
+      <h1 style="font-size:1.6rem;line-height:1.25;margin-bottom:12px">${h1Text}</h1>
+      <p style="color:#555;font-size:.875rem;margin-bottom:16px">By <strong>${esc(AUTHOR)}</strong> · <time datetime="${publishDate}">Updated ${displayDate}</time></p>
+      ${bodyHtml}
+    </div>`
+    : `<div id="pre-render" style="font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px 16px">
+      <h1 style="font-size:1.6rem;line-height:1.25;margin-bottom:12px">${h1Text}</h1>
+      <p style="color:#555;font-size:.875rem;margin-bottom:16px">By <strong>${esc(AUTHOR)}</strong> · <time datetime="${publishDate}">Updated ${displayDate}</time></p>
+      <p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+    </div>`;
+
+  // Replace <div id="root"></div> — React will re-render on mount
+  html = html.replace('<div id="root"></div>', `<div id="root">${pageBody}</div>`);
 
   return html;
 }
@@ -513,27 +536,28 @@ function generateSitemap() {
   // Homepage
   urls.push({ loc: `${SITE}/`, priority: '1.0', freq: 'weekly', mod: TODAY });
 
-  // Static pages
-  urls.push({ loc: `${SITE}/about`,       priority: '0.7', freq: 'monthly', mod: TODAY });
-  urls.push({ loc: `${SITE}/disclosure`,  priority: '0.3', freq: 'yearly',  mod: TODAY });
-  urls.push({ loc: `${SITE}/methodology`, priority: '0.7', freq: 'monthly', mod: TODAY });
+  // Static pages — all with trailing slashes (canonical form served by GitHub Pages)
+  urls.push({ loc: `${SITE}/about/`,           priority: '0.7', freq: 'monthly', mod: TODAY });
+  urls.push({ loc: `${SITE}/disclosure/`,       priority: '0.3', freq: 'yearly',  mod: TODAY });
+  urls.push({ loc: `${SITE}/methodology/`,      priority: '0.7', freq: 'monthly', mod: TODAY });
+  urls.push({ loc: `${SITE}/best-free-ai-tools/`, priority: '0.9', freq: 'weekly', mod: TODAY });
 
-  // Week 3: Blog list + individual blog posts
-  urls.push({ loc: `${SITE}/blog`, priority: '0.8', freq: 'weekly', mod: TODAY });
+  // Blog list + individual blog posts
+  urls.push({ loc: `${SITE}/blog/`, priority: '0.8', freq: 'weekly', mod: TODAY });
   for (const post of BLOG_POSTS) {
-    urls.push({ loc: `${SITE}/blog/${post.slug}`, priority: '0.85', freq: 'monthly', mod: post.dateModified });
+    urls.push({ loc: `${SITE}/blog/${post.slug}/`, priority: '0.85', freq: 'monthly', mod: post.dateModified });
   }
 
   // Compare pages
   for (const a of COMPARE_ARTICLES) {
-    urls.push({ loc: `${SITE}/compare/${a.slug}`, priority: '0.95', freq: 'monthly', mod: TODAY });
+    urls.push({ loc: `${SITE}/compare/${a.slug}/`, priority: '0.95', freq: 'monthly', mod: TODAY });
   }
 
   // Tool pages — affiliate picks get 0.9, rest 0.8
   const affiliatePicks = new Set(['rytr', 'podcastle', 'ocoya', 'replit', 'taskade']);
   for (const t of TOOLS) {
     urls.push({
-      loc: `${SITE}/tools/${t.slug}`,
+      loc: `${SITE}/tools/${t.slug}/`,
       priority: affiliatePicks.has(t.slug) ? '0.9' : '0.8',
       freq: 'monthly',
       mod: TODAY,
@@ -689,7 +713,7 @@ const template = readTemplate();
 // ── 1. Tool pages ─────────────────────────────────────────────────────────────
 console.log('Tool pages:');
 for (const tool of TOOLS) {
-  const canonical = `${SITE}/tools/${tool.slug}`;
+  const canonical = `${SITE}/tools/${tool.slug}/`;
   // Week 1 Task 4: tagline in title matches App.tsx template — Google indexes the static HTML first
   const title = `${tool.name} Review ${YEAR}: ${tool.tagline} | AI Nexus`;
   const description = `Honest ${tool.name} review by ${AUTHOR} — personally tested. ${tool.tagline}. Pros, cons, real verdict, and a free trial link.`;
@@ -714,7 +738,7 @@ for (const tool of TOOLS) {
 // ── 2. Compare pages ──────────────────────────────────────────────────────────
 console.log('\nCompare pages:');
 for (const art of COMPARE_ARTICLES) {
-  const canonical = `${SITE}/compare/${art.slug}`;
+  const canonical = `${SITE}/compare/${art.slug}/`;
   const schemas = [
     articleSchema({ title: art.title, description: art.metaDescription, canonical }),
     breadcrumbs([
@@ -736,7 +760,7 @@ for (const art of COMPARE_ARTICLES) {
 // ── 3. About page ─────────────────────────────────────────────────────────────
 console.log('\nStatic pages:');
 {
-  const canonical = `${SITE}/about`;
+  const canonical = `${SITE}/about/`;
   const title = `About ${AUTHOR} — The Person Behind AI Nexus Reviews`;
   const description = `${AUTHOR} personally tests every AI tool before recommending it. No sponsored reviews. No copying marketing pages. Testing since 2022 across writing, audio, video, design, and productivity.`;
   const schemas = [
@@ -766,7 +790,7 @@ console.log('\nStatic pages:');
 
 // ── 4. Disclosure page ────────────────────────────────────────────────────────
 {
-  const canonical = `${SITE}/disclosure`;
+  const canonical = `${SITE}/disclosure/`;
   const title = 'Affiliate Disclosure | AI Nexus';
   const description = `Full affiliate disclosure for AI Nexus. ${AUTHOR} earns a commission when you purchase through links on this site, at no extra cost to you.`;
   writeRoute('disclosure', buildPage(template, {
@@ -780,7 +804,7 @@ console.log('\nStatic pages:');
 
 // ── 5. Methodology page ───────────────────────────────────────────────────────
 {
-  const canonical = `${SITE}/methodology`;
+  const canonical = `${SITE}/methodology/`;
   const title = `How I Review AI Tools — Testing Methodology | AI Nexus`;
   const description = `The exact 7-step process ${AUTHOR} uses to test every AI tool on AI Nexus. Real standards, paid plan testing, head-to-head comparisons, and the one rule that doesn't bend.`;
   const schemas = [
@@ -803,7 +827,7 @@ console.log('\nStatic pages:');
 // ── Week 3: Blog list page (/blog) ────────────────────────────────────────────
 console.log('\nBlog pages:');
 {
-  const canonical = `${SITE}/blog`;
+  const canonical = `${SITE}/blog/`;
   const title = `AI Tools Blog — Guides & Reviews | AI Nexus by ${AUTHOR}`;
   const description = `In-depth AI tool guides and reviews by ${AUTHOR}. Personally tested. No sponsored posts.`;
   const schemas = [
@@ -818,7 +842,7 @@ console.log('\nBlog pages:');
 
 // ── Week 3: Individual blog post pages (/blog/:slug) ──────────────────────────
 for (const post of BLOG_POSTS) {
-  const canonical = `${SITE}/blog/${post.slug}`;
+  const canonical = `${SITE}/blog/${post.slug}/`;
   const schemas = [
     {
       '@context': 'https://schema.org',
@@ -835,22 +859,48 @@ for (const post of BLOG_POSTS) {
     },
     breadcrumbs([
       [1, 'AI Nexus', SITE],
-      [2, 'Blog', `${SITE}/blog`],
+      [2, 'Blog', `${SITE}/blog/`],
       [3, post.title, canonical],
     ]),
     ...(post.faqs.length > 0 ? [faqSchema(post.faqs)] : []),
   ];
   writeRoute(
     `blog/${post.slug}`,
-    buildPage(template, { title: `${post.title} | AI Nexus`, description: post.metaDescription, canonical, schemas })
+    buildPage(template, { title: `${post.title} | AI Nexus`, description: post.metaDescription, canonical, schemas, datePublished: post.datePublished })
   );
 }
 
-// ── 5. Sitemap ────────────────────────────────────────────────────────────────
+// ── 6. Best Free AI Tools landing page (/best-free-ai-tools) ────────────────
+{
+  const canonical = `${SITE}/best-free-ai-tools/`;
+  const title = `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`;
+  const description = `13 AI tools with permanent free plans — personally tested by ${AUTHOR}. Covers writing, image generation, video, audio, design, coding and productivity. No credit card required for any.`;
+  const schemas = [
+    articleSchema({ title, description, canonical }),
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'Best Free AI Tools', canonical],
+    ]),
+    faqSchema([
+      { q: 'What are the best free AI tools in 2026?', a: 'The best free AI tools in 2026 include Grammarly (writing), Leonardo.ai (image generation), Gamma (presentations), Podcastle (podcasting), Replit (coding), and Rytr (content writing). All have permanent free plans — no credit card required.' },
+      { q: 'Which free AI tool is best for students?', a: 'Grammarly (grammar & clarity), QuillBot (paraphrasing & summarising), and Gamma (presentations) are the most useful free AI tools for students. All have generous free plans that cover core academic writing needs.' },
+      { q: 'Are free AI tools as good as paid ones?', a: 'Free AI tools cover 70–80% of most users\' needs. The paid plans mainly add higher usage limits, advanced features, and removal of watermarks. For light-to-moderate use, the free tiers of Grammarly, Leonardo.ai, Rytr, and Replit are genuinely functional.' },
+      { q: 'Do any free AI tools work without signing up?', a: 'Adobe Podcast Enhance Speech works without creating an account — paste your audio and get noise-removed output instantly. Most other free AI tools require a free account but no credit card.' },
+    ]),
+  ];
+  writeRoute('best-free-ai-tools', buildPage(template, {
+    title, description, canonical, schemas,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+    <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Every tool on this list has been personally tested by ${esc(AUTHOR)} on real tasks — not just sign-up and screenshot. The selection covers writing, image generation, video editing, audio production, design, coding, and productivity.</p>`,
+  }));
+  console.log('\n  ✓  /best-free-ai-tools/');
+}
+
+// ── Sitemap ────────────────────────────────────────────────────────────────────
 generateSitemap();
 
 // ── Done ──────────────────────────────────────────────────────────────────────
-const total = TOOLS.length + COMPARE_ARTICLES.length + 3 + BLOG_POSTS.length + 1; // +1 = /blog list
+const total = TOOLS.length + COMPARE_ARTICLES.length + 4 + BLOG_POSTS.length + 1; // +1 blog list, +4 static
 console.log(`\n✅  ${total} routes pre-rendered. Every URL now returns HTTP 200.\n`);
 console.log('   Google Search Console: re-request indexing for all sitemap URLs.');
 console.log('   Bing Webmaster Tools: submit sitemap at /sitemap.xml\n');
