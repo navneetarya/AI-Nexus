@@ -920,10 +920,11 @@ for (const post of BLOG_POSTS) {
       [2, 'Best Free AI Tools', canonical],
     ]),
     faqSchema([
-      { q: 'What are the best free AI tools in 2026?', a: 'The best free AI tools in 2026 include Grammarly (writing), Leonardo.ai (image generation), Gamma (presentations), Podcastle (podcasting), Replit (coding), and Rytr (content writing). All have permanent free plans — no credit card required.' },
-      { q: 'Which free AI tool is best for students?', a: 'Grammarly (grammar & clarity), QuillBot (paraphrasing & summarising), and Gamma (presentations) are the most useful free AI tools for students. All have generous free plans that cover core academic writing needs.' },
-      { q: 'Are free AI tools as good as paid ones?', a: 'Free AI tools cover 70–80% of most users\' needs. The paid plans mainly add higher usage limits, advanced features, and removal of watermarks. For light-to-moderate use, the free tiers of Grammarly, Leonardo.ai, Rytr, and Replit are genuinely functional.' },
-      { q: 'Do any free AI tools work without signing up?', a: 'Adobe Podcast Enhance Speech works without creating an account — paste your audio and get noise-removed output instantly. Most other free AI tools require a free account but no credit card.' },
+      { q: 'Are there any truly free AI tools?', a: 'Yes — 13 of the tools we have tested offer a permanent free plan (not just a trial). The best completely free AI tools are Grammarly (unlimited grammar checks), Leonardo.ai (150 image credits per day), and Rytr (10,000 characters per month for writing). All three are free forever with no credit card required.' },
+      { q: 'What is the best free AI writing tool?', a: 'Grammarly is the best free AI writing tool for editing and improving existing text. Rytr is the best free tool for generating new content, with 10,000 characters per month on its free plan and over 40 writing templates. Quillbot is the best free paraphrasing and summarisation tool.' },
+      { q: 'What is the best free AI image generator?', a: 'Leonardo.ai is the best free AI image generator, offering 150 credits per day on its free plan — roughly 1,500 AI images per month. It requires no credit card and runs entirely in the browser. Photoroom is the best free AI tool for product photo editing and background removal.' },
+      { q: 'Which free AI tools have no watermark?', a: 'Tools with no watermark on their free plan include Grammarly, Rytr, Quillbot, Leonardo.ai (downloaded images), Gamma (shareable links), Replit (shared projects), and Taskade. Murf AI, InVideo and PhotoRoom do add watermarks on the free tier.' },
+      { q: 'Can I use free AI tools for commercial projects?', a: 'It depends on the tool. Grammarly, Rytr, and Quillbot allow commercial use on their free plans. Leonardo.ai free outputs can be used commercially. Always check the terms of service for each tool before using free-tier outputs in paid client work or products.' },
     ]),
   ];
   writeRoute('best-free-ai-tools', buildPage(template, {

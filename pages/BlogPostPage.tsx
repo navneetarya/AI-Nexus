@@ -50,16 +50,6 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
       mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
     };
 
-    const faqSchema = post.faqs.length > 0 ? {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: post.faqs.map(({ q, a }) => ({
-        '@type': 'Question',
-        name: q,
-        acceptedAnswer: { '@type': 'Answer', text: a },
-      })),
-    } : null;
-
     const breadcrumbSchema = {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -70,7 +60,9 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
       ],
     };
 
-    const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
+    // NOTE: FAQPage schema is already injected by the prerender script into the static HTML.
+    // Do NOT add a second FAQPage here — Google will flag it as "Duplicate field 'FAQPage'".
+    const schemas = [articleSchema, breadcrumbSchema];
 
     // Remove any previously injected blog schemas
     document.querySelectorAll('script[data-blog-schema]').forEach(el => el.remove());

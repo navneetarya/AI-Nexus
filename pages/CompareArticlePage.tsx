@@ -1090,26 +1090,10 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
   // Reset on article change
   React.useEffect(() => { linked.clear(); }, [article.slug, linked]);
 
-  // Inject FAQPage + Article JSON-LD schemas for Google rich results
+  // Inject Article JSON-LD schema for Google rich results
+  // NOTE: FAQPage schema is already injected by the prerender script into the static HTML.
+  // Do NOT add a second FAQPage here — Google will flag it as "Duplicate field 'FAQPage'".
   React.useEffect(() => {
-    // FAQPage schema
-    if (article.faqs && article.faqs.length > 0) {
-      const faqSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: article.faqs.map(({ q, a }) => ({
-          '@type': 'Question',
-          name: q,
-          acceptedAnswer: { '@type': 'Answer', text: a },
-        })),
-      };
-      document.querySelectorAll('script[data-compare-faq]').forEach(el => el.remove());
-      const faqScript = document.createElement('script');
-      faqScript.type = 'application/ld+json';
-      faqScript.setAttribute('data-compare-faq', 'true');
-      faqScript.textContent = JSON.stringify(faqSchema);
-      document.head.appendChild(faqScript);
-    }
     // Article schema with dateModified — tells Google this content is fresh
     const articleSchema = {
       '@context': 'https://schema.org',
@@ -1129,7 +1113,6 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
     articleScript.textContent = JSON.stringify(articleSchema);
     document.head.appendChild(articleScript);
     return () => {
-      document.querySelectorAll('script[data-compare-faq]').forEach(el => el.remove());
       document.querySelectorAll('script[data-compare-article]').forEach(el => el.remove());
     };
   }, [article.slug, article.faqs]);
@@ -1234,7 +1217,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
           {renderContent(article.verdict, navigate, linked)}
         </div>
 
-        {/* FAQ Section — FAQPage JSON-LD injected via useEffect above */}
+        {/* FAQ Section — FAQPage JSON-LD injected by prerender.mjs (not duplicated here) */}
         <FAQSection
           faqs={article.faqs}
           a1={C.a1} a1card={C.a1card} a1brd={C.a1brd}

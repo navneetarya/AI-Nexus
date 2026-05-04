@@ -271,7 +271,8 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
   return (
     <div style={{ background: C.bg, minHeight: '100vh', color: C.txt }}>
       <BreadcrumbSchema />
-      <FAQSchema />
+      {/* NOTE: FAQPage schema is injected by prerender.mjs into the static HTML.
+          Do NOT render <FAQSchema /> here — it creates a duplicate that Google flags. */}
 
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="home" />
 
