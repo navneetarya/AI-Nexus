@@ -1,48 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url><loc>https://ainexustools.online/</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-05-04</lastmod></url>
-  <url><loc>https://ainexustools.online/about</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/disclosure</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
-  <!-- Week 5: High-volume category landing page (22K/mo keyword) -->
-  <url><loc>https://ainexustools.online/best-free-ai-tools</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-04</lastmod></url>
+  <!-- Static pages -->
+  <url><loc>https://ainexustools.online/about/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/disclosure/</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/methodology/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-04-29</lastmod></url>
+
+  <!-- Category landing page (22K/mo keyword) -->
+  <url><loc>https://ainexustools.online/best-free-ai-tools/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-04</lastmod></url>
 
   <!-- Compare pages — high priority, buying-intent traffic -->
-  <url><loc>https://ainexustools.online/compare/rytr-vs-writesonic</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/compare/grammarly-vs-quillbot</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/compare/podcastle-vs-descript</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/compare/ocoya-vs-buffer-vs-hootsuite</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/rytr-vs-writesonic/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/grammarly-vs-quillbot/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/podcastle-vs-descript/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/ocoya-vs-buffer-vs-hootsuite/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/leonardo-vs-midjourney/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/replit-vs-github-copilot/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/taskade-vs-notion/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/grammarly-vs-writesonic/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/murf-ai-vs-elevenlabs/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/taskade-vs-asana/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
 
   <!-- Affiliate picks — highest priority tool pages -->
-  <url><loc>https://ainexustools.online/tools/rytr</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/podcastle</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/ocoya</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/replit</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/taskade</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/rytr/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/podcastle/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/ocoya/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/replit/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/taskade/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
 
   <!-- All tool pages -->
-  <url><loc>https://ainexustools.online/tools/grammarly</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/writesonic</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/quillbot</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/frase</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/leonardo-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/photoroom</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/looka</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/pictory</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/opus-clip</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/invideo</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/murf-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/gamma</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/beautiful-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/notion-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/grammarly/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/writesonic/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/quillbot/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/frase/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/leonardo-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/photoroom/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/looka/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/pictory/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/opus-clip/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/invideo/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/murf-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/gamma/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/beautiful-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/tools/notion-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
 
-  <!-- Blog posts — Week 1–5 -->
-  <url><loc>https://ainexustools.online/blog</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-03</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-grammarly-alternatives</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-03</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-podcastle-alternatives</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-03</lastmod></url>
-  <!-- Week 5 blog posts -->
-  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-social-media-2026</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/how-to-use-rytr-to-write-blog-posts</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
+  <!-- Blog list -->
+  <url><loc>https://ainexustools.online/blog/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
+
+  <!-- Blog posts -->
+  <url><loc>https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-03</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-grammarly-alternatives/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-03</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-podcastle-alternatives/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-03</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-social-media-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/how-to-use-rytr-to-write-blog-posts/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/ai-tools-for-students-free-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-ai-podcast-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
 </urlset>

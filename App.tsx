@@ -34,7 +34,10 @@ function getInitialTheme(): 'light' | 'dark' | 'system' {
 }
 
 function App() {
-  const [path, setPath] = useState(window.location.pathname);
+  // Normalize pathname: strip trailing slash except on root "/"
+  const normalizePath = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p);
+
+  const [path, setPath] = useState(normalizePath(window.location.pathname));
   const [theme, setTheme] = useState<'light' | 'dark' | 'system'>(getInitialTheme);
 
   // Derive isDark for passing to pages
@@ -61,14 +64,14 @@ function App() {
   };
 
   useEffect(() => {
-    const onPop = () => setPath(window.location.pathname);
+    const onPop = () => setPath(normalizePath(window.location.pathname));
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
   }, []);
 
   const navigate = (to: string) => {
     window.history.pushState({}, '', to);
-    setPath(to);
+    setPath(normalizePath(to));
     window.scrollTo(0, 0);
   };
 
@@ -82,7 +85,7 @@ function App() {
         // Week 1 Task 4: tagline in title targets "[tool] review 2026" keyword variants directly
         `${tool.name} Review ${new Date().getFullYear()}: ${tool.tagline} | AI Nexus`,
         `Honest ${tool.name} review by ${SITE_CONFIG.authorName} — personally tested. ${tool.tagline}. Pros, cons, real verdict, and a free trial link.`,
-        `${SITE_CONFIG.siteUrl}/tools/${tool.slug}`
+        `${SITE_CONFIG.siteUrl}/tools/${tool.slug}/`
       );
       return <ToolPage tool={tool} navigate={navigate} {...themeProps} />;
     }
@@ -95,7 +98,7 @@ function App() {
       updateMeta(
         `${article.title} | AI Nexus`,
         article.metaDescription,
-        `${SITE_CONFIG.siteUrl}/compare/${article.slug}`
+        `${SITE_CONFIG.siteUrl}/compare/${article.slug}/`
       );
       return <CompareArticlePage article={article} navigate={navigate} {...themeProps} />;
     }
@@ -109,7 +112,7 @@ function App() {
       updateMeta(
         `${post.title} | AI Nexus`,
         post.metaDescription,
-        `${SITE_CONFIG.siteUrl}/blog/${post.slug}`
+        `${SITE_CONFIG.siteUrl}/blog/${post.slug}/`
       );
       return <BlogPostPage post={post} navigate={navigate} {...themeProps} />;
     }
@@ -120,7 +123,7 @@ function App() {
     updateMeta(
       `AI Tools Blog — Guides & Reviews | AI Nexus by ${SITE_CONFIG.authorName}`,
       `In-depth AI tool guides and reviews by ${SITE_CONFIG.authorName}. Personally tested. No sponsored posts.`,
-      `${SITE_CONFIG.siteUrl}/blog`
+      `${SITE_CONFIG.siteUrl}/blog/`
     );
     return <BlogPage navigate={navigate} {...themeProps} />;
   }
@@ -129,7 +132,7 @@ function App() {
     updateMeta(
       `About ${SITE_CONFIG.authorName} — AI Nexus Reviewer`,
       `${SITE_CONFIG.authorName} personally tests every AI tool before recommending it. No sponsored reviews, no copying marketing pages.`,
-      `${SITE_CONFIG.siteUrl}/about`
+      `${SITE_CONFIG.siteUrl}/about/`
     );
     return <AboutPage navigate={navigate} {...themeProps} />;
   }
@@ -138,7 +141,7 @@ function App() {
     updateMeta(
       'Affiliate Disclosure | AI Nexus',
       'Full affiliate disclosure for AI Nexus. I earn a commission if you purchase through my links, at no extra cost to you.',
-      `${SITE_CONFIG.siteUrl}/disclosure`
+      `${SITE_CONFIG.siteUrl}/disclosure/`
     );
     return <DisclosurePage navigate={navigate} {...themeProps} />;
   }
@@ -147,7 +150,7 @@ function App() {
     updateMeta(
       'How I Review AI Tools — Testing Methodology | AI Nexus',
       `The exact 7-step process ${SITE_CONFIG.authorName} uses to test every AI tool on AI Nexus. Real standards, paid plan testing, and the one rule that doesn't bend.`,
-      `${SITE_CONFIG.siteUrl}/methodology`
+      `${SITE_CONFIG.siteUrl}/methodology/`
     );
     return <MethodologyPage navigate={navigate} {...themeProps} />;
   }
@@ -157,7 +160,7 @@ function App() {
     updateMeta(
       `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`,
       `13 AI tools with permanent free plans — personally tested. Covers writing, image generation, video, audio, design, coding and productivity. No credit card required for any.`,
-      `${SITE_CONFIG.siteUrl}/best-free-ai-tools`
+      `${SITE_CONFIG.siteUrl}/best-free-ai-tools/`
     );
     return <BestFreeAIToolsPage navigate={navigate} {...themeProps} />;
   }
