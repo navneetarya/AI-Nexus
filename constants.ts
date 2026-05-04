@@ -289,6 +289,158 @@ export const TOOLS: Tool[] = [
     notForYou: 'Senior developers doing production-grade work with complex infrastructure requirements — Docker containers, custom CI/CD pipelines, demanding build processes, or high-traffic production apps. Replit\'s compute limits and environment constraints don\'t match a properly configured local development setup. For professional engineering at scale, use a local environment with GitHub Copilot layered on top.',
   },
 
+  // AUDIO (additional)
+  {
+    id: 'a3', slug: 'elevenlabs',
+    name: 'ElevenLabs', tagline: 'The most realistic AI voice generator on the planet',
+    description: 'ElevenLabs creates the most natural-sounding AI voices available. Clone your own voice, generate studio-quality narration, and build voice-powered products with the industry-leading speech API.',
+    category: Category.AUDIO, affiliateLink: 'https://elevenlabs.io?via=ainexus',
+    iconName: 'Volume2', color: '#f97316', accentColor: '#ea580c',
+    userBadge: 'Best quality', pricing: 'Free + from $5/month', bestFor: 'Creators, developers & podcasters',
+    features: ['Ultra-realistic voice synthesis', 'Voice cloning from 1 minute of audio', 'Speech-to-speech', '29 languages', 'Developer API'],
+    pros: ['Best voice quality available — indistinguishable from human', 'Clone your voice in minutes', 'Generous free tier (10,000 chars/month)', 'Fastest in the industry'],
+    cons: ['Higher plans needed for commercial use at scale', 'Voice cloning can be misused — strict verification required'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '10,000 characters/month · 3 custom voices · All pre-made voices · 128kbps MP3 export' },
+      { tier: 'Starter', price: '$5/month', highlight: '30,000 characters/month · 10 custom voices · Commercial licence · 192kbps audio · API access' },
+      { tier: 'Creator', price: '$22/month', highlight: '100,000 characters/month · 30 custom voices · Professional voice cloning · Priority queue · Projects feature' },
+    ],
+    setupSteps: [
+      'Sign up at elevenlabs.io — the free plan activates immediately with 10,000 characters per month, no credit card needed.',
+      'Choose a pre-made voice from the Voice Library (500+ options) or upload a 1-minute clean audio sample to clone your own voice.',
+      'Paste your script into the text box, select your voice, and adjust stability and similarity sliders to fine-tune delivery.',
+      'Click Generate — download your MP3 or use the API to integrate AI voice directly into your app, video, or workflow.',
+    ],
+    dailyUseCases: [
+      'Generate a professional voiceover for a YouTube video in your own cloned voice — without recording a single word',
+      'Convert a blog post into an audio version using a natural-sounding voice and upload it as a podcast bonus episode',
+      'Build a voice assistant for your product using the ElevenLabs API — responses sound human, not robotic',
+      'Create multilingual versions of training content by generating the same script in 29 languages from one recording',
+      'Fix a stumbled sentence in a recording by regenerating just that line in your cloned voice — seamless patching',
+    ],
+    notForYou: 'Users who need full podcast production workflows with recording, editing, and publishing in one place — ElevenLabs is purely a voice generation and API tool. For end-to-end podcast production, pair it with Podcastle or Descript.',
+  },
+
+  // WRITING (additional)
+  {
+    id: 'w6', slug: 'jasper',
+    name: 'Jasper', tagline: 'Enterprise AI content platform for marketing teams',
+    description: 'Jasper is the leading AI writing platform for marketing teams. Create on-brand blog posts, ad copy, emails, and social content at scale — with brand voice controls that keep every output consistent.',
+    category: Category.WRITING, affiliateLink: 'https://jasper.ai?via=ainexus',
+    iconName: 'Briefcase', color: '#7c3aed', accentColor: '#5b21b6',
+    userBadge: 'Best for teams', pricing: 'From $39/month', bestFor: 'Marketing teams & agencies',
+    features: ['Brand voice training', 'AI content campaigns', '50+ templates', 'SEO mode', 'Team collaboration'],
+    pros: ['Best brand voice consistency of any AI writer', 'Purpose-built for marketing workflows', 'Excellent team features and permissions', 'Integrates with Surfer SEO'],
+    cons: ['Most expensive AI writer — starts at $39/month', 'Overkill for solo creators or bloggers', 'No meaningful free plan'],
+    pricingBreakdown: [
+      { tier: 'Creator', price: '$39/month', highlight: '1 user · 1 Brand Voice · Unlimited word generation · Browser extension · 50+ templates' },
+      { tier: 'Pro', price: '$59/month', highlight: '5 users · 3 Brand Voices · 10 Knowledge assets · Campaigns · Team collaboration · SEO mode' },
+      { tier: 'Business', price: 'Custom', highlight: 'Unlimited users · Custom AI model · API access · SSO · Dedicated account manager' },
+    ],
+    setupSteps: [
+      'Start the free trial at jasper.ai — full access for 7 days, no commitment. Add your brand name, tone, and target audience in the onboarding.',
+      'Set up a Brand Voice by pasting 3–5 examples of your best existing content. Jasper learns your style and applies it to all future outputs.',
+      'Open a new document and choose a template — try "Blog Post Intro Paragraph" or "Facebook Ad" to see the quality immediately.',
+      'Use the Campaign feature for larger projects: input a single brief and Jasper generates a full suite of assets — blog, email, social, ads — all in the same brand voice.',
+    ],
+    notForYou: 'Individual bloggers or solo creators on a budget. Jasper\'s strength is brand consistency across a team — if you\'re writing alone, tools like Writesonic or Rytr deliver 80% of the output quality at a fraction of the cost.',
+  },
+
+  // AUDIO (additional)
+  {
+    id: 'a4', slug: 'descript',
+    name: 'Descript', tagline: 'Edit audio and video by editing text — like a Google Doc',
+    description: 'Descript is the most innovative audio and video editor available. Edit your recordings by editing a transcript — delete words on the page and the audio disappears. Includes AI voice clone, filler word removal, and studio-quality processing.',
+    category: Category.AUDIO, affiliateLink: 'https://descript.com?via=ainexus',
+    iconName: 'FileAudio', color: '#0ea5e9', accentColor: '#0284c7',
+    userBadge: 'Most innovative', pricing: 'Free + from $12/month', bestFor: 'Podcasters & video creators',
+    features: ['Text-based audio & video editing', 'Overdub (AI voice clone)', 'Filler word removal', 'Screen recording', 'Multitrack editing'],
+    pros: ['Completely unique editing workflow — edit audio like a document', 'Filler word removal saves hours', 'Best for creators who hate traditional timeline editing', 'Screen recording built in'],
+    cons: ['Steeper learning curve than Podcastle', 'Overdub requires voice training upfront', 'Heavier app — not as fast as simpler tools'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '1 hour transcription/month · 720p export · Watermark on video · Basic editing' },
+      { tier: 'Hobbyist', price: '$12/month', highlight: '10 hours transcription · 4K export · No watermark · Filler word removal · Screen recording' },
+      { tier: 'Creator', price: '$24/month', highlight: 'Unlimited transcription · Overdub voice cloning · Advanced AI features · Priority processing' },
+    ],
+    setupSteps: [
+      'Download Descript from descript.com or use the web app. Upload your audio or video file — transcription starts automatically.',
+      'Read through the transcript. Select any word or phrase you want to delete — pressing backspace removes it from both the transcript and the audio/video.',
+      'Use "Remove Filler Words" (Edit menu) to strip all "um", "uh", and "you know" instances in one click. This alone saves 20–30 minutes per episode.',
+      'For Overdub: go to Settings → Overdub and record 10 minutes of training audio. After processing (~30 min), you can type corrections and Descript speaks them in your voice.',
+    ],
+    dailyUseCases: [
+      'Upload a podcast interview and delete the entire section where a guest went off-topic — just select the text, hit delete, done',
+      'Strip all filler words from a 45-minute recording with one click — Descript finds every "um" and "uh" automatically',
+      'Fix a stumbled line mid-recording using Overdub: type the correct sentence and Descript inserts your AI voice seamlessly',
+      'Record a screen tutorial with the built-in recorder, transcribe it automatically, then use the transcript for your YouTube description',
+      'Export a podcast clip as a social video: add captions, background, and music directly in Descript without switching tools',
+    ],
+    notForYou: 'Users who primarily want to record and do light cleanup. Descript\'s power is in editing complex content. If you just want to record a clean solo podcast and publish it, Podcastle is simpler and cheaper.',
+  },
+
+  // PRODUCTIVITY (additional)
+  {
+    id: 'p3', slug: 'perplexity',
+    name: 'Perplexity Pro', tagline: 'AI-powered search that cites every answer',
+    description: 'Perplexity is the AI search engine replacing Google for millions of users. Ask any question and get a direct, cited answer with sources — no ads, no SEO spam, no clicking through ten pages.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://perplexity.ai?via=ainexus',
+    iconName: 'Globe', color: '#06b6d4', accentColor: '#0891b2',
+    userBadge: 'Best AI search', pricing: 'Free + $20/month Pro', bestFor: 'Researchers, students & power users',
+    features: ['Real-time web search with citations', 'Claude, GPT-4 & Gemini access in one', 'File & image upload analysis', 'Spaces for team research', 'API access'],
+    pros: ['Every answer is sourced — no hallucinated facts', 'Searches the live web in real time', 'Access to multiple AI models on one plan', 'Best research workflow available'],
+    cons: ['Not ideal for creative writing or long-form content', 'Pro plan ($20/month) needed for full model access', 'Can miss nuanced opinions that aren\'t well-documented online'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Unlimited basic searches · 5 Pro searches/day · Real-time web results · Image generation (3/day)' },
+      { tier: 'Pro', price: '$20/month', highlight: 'Unlimited Pro searches · GPT-4o, Claude 3.5, Gemini Ultra access · File uploads · Spaces · API credits ($5/month included)' },
+    ],
+    setupSteps: [
+      'Go to perplexity.ai — the free plan works instantly with no sign-up required. For Pro features, create an account and subscribe.',
+      'Type your question naturally — Perplexity searches the web in real time and synthesises a direct answer with numbered citations.',
+      'Click any citation number to verify the source directly — all answers are traceable. This makes it safe for research and fact-checking.',
+      'Try "Focus" modes: Academic mode searches only peer-reviewed papers. YouTube mode searches video transcripts. Wolfram Alpha mode handles maths.',
+    ],
+    dailyUseCases: [
+      'Research a new AI tool in 30 seconds — ask "What are the pros and cons of [tool]?" and get a sourced summary instantly',
+      'Fact-check claims before publishing: paste a statistic and ask Perplexity to verify it with current sources',
+      'Upload a PDF report and ask questions about it — Perplexity reads and cites specific sections in its answers',
+      'Use Spaces to build a shared research hub for a project — all team members query the same curated source set',
+      'Replace 20 browser tabs: ask complex multi-part research questions and get one organised, cited answer',
+    ],
+    notForYou: 'Users who primarily need long-form writing or creative content generation. Perplexity is a research and information tool — for drafting articles, emails, and copy, Writesonic or Jasper are better suited.',
+  },
+
+  // DESIGN (additional)
+  {
+    id: 'd3', slug: 'canva-ai',
+    name: 'Canva AI', tagline: 'AI design tools built into the world\'s most popular design platform',
+    description: 'Canva AI brings powerful AI features to the world\'s largest design platform. Generate images, write copy, remove backgrounds, animate designs, and transform ideas into polished graphics — all without leaving Canva.',
+    category: Category.DESIGN, affiliateLink: 'https://canva.com?via=ainexus',
+    iconName: 'Palette', color: '#7c3aed', accentColor: '#00c4cc',
+    userBadge: 'Most versatile', pricing: 'Free + $15/month Pro', bestFor: 'Everyone — from beginners to pros',
+    features: ['Magic Write AI copywriter', 'Text-to-image generation', 'Magic Eraser & background removal', 'Magic Resize for any format', 'AI presentation builder'],
+    pros: ['All-in-one platform — design, write, and publish in one place', 'World\'s largest template library (100M+)', 'Excellent free plan with AI features', 'No design experience needed'],
+    cons: ['AI image quality below dedicated tools like Leonardo.ai', 'Can feel overwhelming with too many options', 'Heavy internet dependency — offline access limited'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '250,000+ templates · 5GB storage · Magic Eraser (limited) · Basic AI features · Collaborate with up to 10 people' },
+      { tier: 'Pro', price: '$15/month', highlight: 'All AI features · 1TB storage · Background remover · Magic Resize · Brand Kit · Schedule social posts · 100 million premium elements' },
+      { tier: 'Teams', price: '$10/month per person', highlight: 'Everything in Pro · Brand controls · Advanced collaboration · Template locking · Centralised billing' },
+    ],
+    setupSteps: [
+      'Sign up free at canva.com — you get 250,000+ templates and limited AI features immediately. Pro trial available for 30 days.',
+      'Search for your design type: "Instagram post", "YouTube thumbnail", "pitch deck" — Canva shows templates sized correctly for that format.',
+      'Try Magic Write: click the text tool, type "/" and select Magic Write — describe what you need and Canva generates the copy inside your design.',
+      'Use Magic Resize (Pro): design once at 1080×1080, then click Resize → select all platforms and Canva automatically adapts your layout for every size.',
+    ],
+    dailyUseCases: [
+      'Create a week\'s worth of social media posts using a brand template — swap out photos and captions in 15 minutes',
+      'Use Magic Eraser to remove an unwanted person or object from a product photo — no Photoshop skills needed',
+      'Generate a custom AI image for a blog post hero — describe the concept and Canva creates it inside the exact template dimensions',
+      'Build a pitch deck from scratch: ask the AI presentation builder to generate slides from a bullet-point brief',
+      'Schedule all social media content directly from Canva to Instagram, Facebook, and LinkedIn — no third-party scheduler needed for basic use',
+    ],
+    notForYou: 'Professional graphic designers or photographers who need layer-level control, RAW file editing, complex masking, or custom vector tools. Canva\'s AI features are excellent for non-designers and efficient for content creators — but Adobe Illustrator, Photoshop, or Figma provide the control that professional design work demands.',
+  },
+
   // PRODUCTIVITY
   {
     id: 'p1', slug: 'notion-ai',
@@ -464,6 +616,45 @@ export const TOOL_FAQS: Record<string, Array<{ q: string; a: string }>> = {
   ],
 };
 
+// ── Week 8: FAQs for 5 new tools ──────────────────────────────────────────
+Object.assign(TOOL_FAQS, {
+  elevenlabs: [
+    { q: "Is ElevenLabs free to use?", a: "Yes — ElevenLabs' free plan gives you 10,000 characters per month (roughly 7–8 minutes of audio) with access to all pre-made voices. No credit card is required. The Starter plan at $5/month triples the limit and adds commercial use rights." },
+    { q: "How realistic are ElevenLabs voices?", a: "ElevenLabs consistently ranks as the most realistic AI voice generator available. In blind listening tests, the premium voices are regularly mistaken for real human recordings. The quality gap between ElevenLabs and other tools is significant — particularly for emotional range and natural pacing." },
+    { q: "How do I clone my own voice with ElevenLabs?", a: "Go to Voices → Add Voice → Instant Voice Clone. Upload a clean 1-minute recording of yourself speaking naturally (no background noise). ElevenLabs processes it in under 2 minutes and creates a voice model you can use to generate any text. Professional Voice Clone (Creator plan) uses longer samples for even higher accuracy." },
+    { q: "Can I use ElevenLabs voices commercially?", a: "Commercial use requires the Starter plan ($5/month) or above. The free tier is for personal and non-commercial use only. All paid plans include a commercial licence for content monetised on YouTube, sold as products, or used in client work." },
+    { q: "How does ElevenLabs compare to Murf AI?", a: "ElevenLabs produces better-sounding voices, especially for voice cloning and emotional speech. Murf AI has a more polished production studio with video sync and background music built in. If pure voice quality is your priority, ElevenLabs wins. If you need a full voiceover production workflow in one app, Murf is more practical." },
+  ],
+  jasper: [
+    { q: "Is Jasper worth the price compared to ChatGPT?", a: "Jasper justifies its price for marketing teams through brand voice consistency — it remembers your tone, terminology, and audience across every piece of content. ChatGPT doesn't retain brand context between sessions. For individuals, ChatGPT Plus at $20/month is better value. For teams producing high volume branded content, Jasper's consistency pays for itself." },
+    { q: "Does Jasper have a free plan?", a: "Jasper offers a 7-day free trial with full access to all features. There is no permanent free tier. Plans start at $39/month for one user. Given the focus on team workflows, Jasper is generally purchased at the Pro ($59/month) or Business level." },
+    { q: "What is Jasper's Brand Voice feature?", a: "Brand Voice is Jasper's standout feature — you paste examples of your best existing content and Jasper learns your style, tone, and vocabulary. Every output it generates afterwards applies that brand voice automatically. For teams where multiple writers produce content, it keeps everything sounding like one consistent voice." },
+    { q: "How does Jasper compare to Writesonic?", a: "Writesonic is significantly cheaper ($16/month vs $39/month) and is better value for individual bloggers and small businesses. Jasper wins for marketing teams that need brand voice controls, collaboration, and campaign-level content planning. If you're a solo content creator, Writesonic gives you 80% of the output quality at less than half the price." },
+    { q: "Does Jasper integrate with SEO tools?", a: "Yes — Jasper has a native integration with Surfer SEO. You can write and optimise content in real time, with Surfer's keyword recommendations appearing alongside Jasper's AI output. This makes it particularly effective for SEO-focused marketing teams who need to hit content score targets consistently." },
+  ],
+  descript: [
+    { q: "How is Descript different from traditional audio editors?", a: "Traditional editors like Audacity show you a waveform — you cut audio by selecting sections of a wave. Descript shows you a text transcript of your recording. You edit by reading and deleting words on the page — Descript removes the corresponding audio automatically. It's the first tool to make audio editing accessible to non-technical creators." },
+    { q: "Is Descript free?", a: "Yes — Descript's free plan gives you 1 hour of transcription per month and basic editing. Exported videos include a Descript watermark on the free plan. The Hobbyist plan at $12/month removes the watermark, adds unlimited transcription, and unlocks filler word removal — the two features most creators use daily." },
+    { q: "What is Descript's Overdub feature?", a: "Overdub is Descript's AI voice cloning feature. Record 10 minutes of your voice reading training sentences, and Descript creates a model of your voice. You can then type any text and Descript speaks it in your voice — perfect for fixing mistakes without re-recording. It's available on the Creator plan ($24/month)." },
+    { q: "How accurate is Descript's filler word removal?", a: "Descript's filler word removal is excellent — it detects 'um', 'uh', 'like', 'you know', and custom words you specify. In my testing it correctly identified around 95% of filler words with very few false positives. You can review flagged instances before deleting. For an hour-long podcast, it typically saves 15–25 minutes of manual editing." },
+    { q: "How does Descript compare to Podcastle?", a: "Podcastle is better for recording — especially remote interviews — and has a simpler learning curve. Descript is better for editing complex content where you need precise control over what stays and what goes. Many serious podcasters use both: Podcastle to record and do initial cleanup, Descript for detailed editing and production polish." },
+  ],
+  perplexity: [
+    { q: "How is Perplexity different from Google Search?", a: "Google returns a list of links — you have to click through, read multiple pages, and synthesise the answer yourself. Perplexity reads those pages for you and returns a direct answer with numbered citations. It's particularly better for research questions that would normally require 10+ minutes of reading across multiple tabs. Perplexity does that in 10 seconds." },
+    { q: "Is Perplexity Pro worth $20/month?", a: "Perplexity Pro is worth it if you do more than 5 research queries per day. The free plan gives 5 Pro searches daily — Pro removes the limit and adds access to GPT-4o, Claude 3.5, and Gemini Ultra in one subscription, plus file uploads and Spaces for team research. For power users, it effectively replaces separate subscriptions to multiple AI tools." },
+    { q: "Does Perplexity make up answers?", a: "Perplexity is significantly less prone to hallucination than ChatGPT because every claim is grounded in a live web search. You can click any citation to verify the source instantly. It can still misinterpret or over-simplify sources, so for critical research always verify key claims — but the citation system makes fact-checking much easier than with uncited AI tools." },
+    { q: "Can Perplexity analyse uploaded documents?", a: "Yes — on the Pro plan you can upload PDFs, Word documents, and images. Perplexity reads the content and answers questions about it, citing specific sections. This is useful for analysing reports, research papers, or contracts without reading the whole document. The free plan doesn't include file uploads." },
+    { q: "How does Perplexity compare to ChatGPT for research?", a: "For factual research with verifiable sources, Perplexity is superior — it searches live web results and cites everything. ChatGPT (without browsing) works from training data and can confidently state outdated or incorrect information. For creative tasks, code generation, and nuanced conversation, ChatGPT is more capable. Many serious researchers use Perplexity for fact-finding and ChatGPT for synthesis and writing." },
+  ],
+  'canva-ai': [
+    { q: "Is Canva AI free?", a: "Yes — Canva's free plan includes basic AI features: limited Magic Eraser, Magic Write (50 uses/lifetime on free), and text-to-image generation. The full AI suite — unlimited Magic Write, Magic Resize, Background Remover, and AI presentations — requires Canva Pro at $15/month. The 30-day Pro trial lets you test everything before committing." },
+    { q: "How does Canva AI compare to Adobe Express?", a: "Canva has a larger template library and more polished AI writing tools. Adobe Express integrates better with Adobe Creative Cloud and has stronger photo editing. For most non-designers and content creators, Canva AI offers more value: better templates, easier interface, and more complete AI features in one platform. Adobe Express suits users already in the Adobe ecosystem." },
+    { q: "Can Canva AI generate images from text?", a: "Yes — Canva's text-to-image generator is accessible in any design. Click the Apps panel, search 'Text to Image', describe your image, and choose a style. The quality is good for social media graphics and presentation visuals but doesn't match dedicated tools like Leonardo.ai for highly detailed or photorealistic images. For most content creation purposes, Canva's generator is fast and sufficient." },
+    { q: "What is Magic Resize in Canva?", a: "Magic Resize is one of Canva Pro's most practical features. Design a graphic once — say, an Instagram square post — then click Resize, select other formats (Story, LinkedIn, Twitter header, YouTube thumbnail), and Canva automatically adapts your design to every size. It repositions elements intelligently rather than just stretching. For creators posting across multiple platforms, it saves 30–45 minutes per content batch." },
+    { q: "Is Canva suitable for professional design work?", a: "Canva Pro is excellent for marketing materials, social content, presentations, and business documents. For highly technical design work — custom vector illustrations, print production files, complex brand identity systems — professional tools like Adobe Illustrator are more appropriate. Many professional marketers and content teams use Canva for speed and Illustrator for brand-level creative work that needs pixel-perfect control." },
+  ],
+});
+
 // ── Comparison tables per tool ─────────────────────────────────────────────
 export const TOOL_COMPARISONS: Record<string, Array<{
   name: string; price: string; freeplan: boolean; bestFor: string; ourPick: boolean;
@@ -505,7 +696,54 @@ export const TOOL_COMPARISONS: Record<string, Array<{
   ],
 };
 
-// ── GSC target keywords per tool ──────────────────────────────────────────
+// ── Week 8: Comparisons for 5 new tools ───────────────────────────────────
+Object.assign(TOOL_COMPARISONS, {
+  elevenlabs: [
+    { name: 'ElevenLabs', price: 'Free–$99/mo', freeplan: true, bestFor: 'Realistic voice & cloning', ourPick: true },
+    { name: 'Murf AI', price: 'Free–$39/mo', freeplan: true, bestFor: 'Studio voiceover workflow', ourPick: false },
+    { name: 'Descript Overdub', price: '$12–$24/mo', freeplan: true, bestFor: 'Podcast editing + voice fix', ourPick: false },
+    { name: 'Play.ht', price: 'Free–$39/mo', freeplan: true, bestFor: 'Blog-to-audio publishing', ourPick: false },
+    { name: 'Speechify', price: 'Free–$139/yr', freeplan: true, bestFor: 'Personal listening & TTS', ourPick: false },
+  ],
+  jasper: [
+    { name: 'Jasper', price: '$39–Custom/mo', freeplan: false, bestFor: 'Team brand voice control', ourPick: true },
+    { name: 'Writesonic', price: 'Free–$99/mo', freeplan: true, bestFor: 'SEO blog posts at low cost', ourPick: false },
+    { name: 'Copy.ai', price: 'Free–$36/mo', freeplan: true, bestFor: 'Quick marketing copy', ourPick: false },
+    { name: 'Rytr', price: 'Free–$29/mo', freeplan: true, bestFor: 'Budget short-form writing', ourPick: false },
+    { name: 'ChatGPT Plus', price: '$20/mo', freeplan: true, bestFor: 'Flexible general AI tasks', ourPick: false },
+  ],
+  descript: [
+    { name: 'Descript', price: 'Free–$24/mo', freeplan: true, bestFor: 'Text-based audio & video editing', ourPick: true },
+    { name: 'Podcastle', price: 'Free–$23.99/mo', freeplan: true, bestFor: 'Recording + AI cleanup', ourPick: false },
+    { name: 'Riverside.fm', price: '$15–$24/mo', freeplan: true, bestFor: 'High-quality remote recording', ourPick: false },
+    { name: 'Adobe Audition', price: '$20.99/mo', freeplan: false, bestFor: 'Professional audio engineering', ourPick: false },
+    { name: 'Opus Clip', price: 'Free–$19/mo', freeplan: true, bestFor: 'Auto short-clip generation', ourPick: false },
+  ],
+  perplexity: [
+    { name: 'Perplexity Pro', price: 'Free–$20/mo', freeplan: true, bestFor: 'Cited AI research search', ourPick: true },
+    { name: 'ChatGPT Plus', price: '$20/mo', freeplan: true, bestFor: 'Creative & conversational AI', ourPick: false },
+    { name: 'You.com', price: 'Free–$15/mo', freeplan: true, bestFor: 'Privacy-focused AI search', ourPick: false },
+    { name: 'Bing AI', price: 'Free', freeplan: true, bestFor: 'Free AI search in browser', ourPick: false },
+    { name: 'Elicit', price: 'Free–$10/mo', freeplan: true, bestFor: 'Academic paper research', ourPick: false },
+  ],
+  'canva-ai': [
+    { name: 'Canva AI', price: 'Free–$15/mo', freeplan: true, bestFor: 'All-in-one design + AI creation', ourPick: true },
+    { name: 'Adobe Express', price: 'Free–$9.99/mo', freeplan: true, bestFor: 'Adobe ecosystem integration', ourPick: false },
+    { name: 'Leonardo.ai', price: 'Free–$24/mo', freeplan: true, bestFor: 'High-quality image generation', ourPick: false },
+    { name: 'Looka', price: 'From $20 one-time', freeplan: false, bestFor: 'AI logo & brand identity', ourPick: false },
+    { name: 'Gamma', price: 'Free–$8/mo', freeplan: true, bestFor: 'AI presentations only', ourPick: false },
+  ],
+});
+
+// ── Week 8: GSC keywords for 5 new tools ──────────────────────────────────
+Object.assign(TOOL_KEYWORDS, {
+  elevenlabs: ['elevenlabs review', 'elevenlabs vs murf ai', 'best ai voice generator 2026', 'elevenlabs free plan', 'ai voice cloning tool'],
+  jasper: ['jasper ai review', 'jasper vs writesonic', 'best ai writing tool for teams', 'jasper brand voice', 'jasper ai pricing 2026'],
+  descript: ['descript review', 'descript vs podcastle', 'text based audio editor ai', 'descript overdub review', 'best podcast editing software 2026'],
+  perplexity: ['perplexity ai review', 'perplexity vs chatgpt', 'best ai search engine 2026', 'perplexity pro worth it', 'ai research tool with citations'],
+  'canva-ai': ['canva ai review', 'canva ai tools 2026', 'canva magic write review', 'canva vs adobe express ai', 'best ai design tool free'],
+});
+
 export const TOOL_KEYWORDS: Record<string, string[]> = {
   podcastle: ['podcastle review', 'podcastle vs descript', 'best ai podcast recorder', 'podcastle free plan', 'ai podcast editing tool 2026'],
   rytr: ['rytr review', 'rytr vs chatgpt', 'best cheap ai writing tool', 'rytr free plan', 'rytr vs writesonic'],
