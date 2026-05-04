@@ -570,6 +570,8 @@ function faqSchema(faqs) {
 }
 
 // ── Blog post data (mirrors blog/ folder) ─────────────────────────────────────
+// IMPORTANT: Every entry here must match the slug and metadata in blog/*.ts
+// When adding new blog posts, add them here AND in blog/index.ts
 const BLOG_POSTS = [
   {
     slug: 'best-ai-writing-tools-for-beginners-2026',
@@ -594,6 +596,89 @@ const BLOG_POSTS = [
       { q: 'Are AI tools worth it for freelancers?', a: "Yes — with one condition. AI tools are worth it when they speed up tasks you already do repeatedly, like writing first drafts, editing photos, or generating social captions. They are not worth it if you buy tools you don't have a workflow for yet. Start with one tool that solves your biggest bottleneck." },
       { q: 'What is the best free AI tool for freelancers?', a: "Grammarly's free plan is the highest-value free AI tool for most freelancers — it improves every client email, proposal, and deliverable you write. For content creation, Rytr's free plan (10,000 characters/month) is the best no-cost option for generating drafts." },
       { q: 'Can AI tools replace a freelancer?', a: 'No. AI tools handle repetitive, template-driven work — first drafts, background removal, caption generation. They cannot replace the client relationship, creative strategy, domain expertise, or accountability that clients pay a freelancer for.' },
+    ],
+  },
+  // ── Week 4 additions ──────────────────────────────────────────────────────
+  {
+    slug: 'best-grammarly-alternatives',
+    title: 'Best Grammarly Alternatives in 2026 — Tested & Ranked',
+    metaDescription: 'Looking for a cheaper or better alternative to Grammarly? I tested QuillBot, Writesonic, Rytr, and ProWritingAid. Here are the best Grammarly alternatives that actually work.',
+    datePublished: '2026-05-03',
+    dateModified: '2026-05-03',
+    faqs: [
+      { q: 'What is the best free alternative to Grammarly?', a: "QuillBot is the best free Grammarly alternative for most users. Its free paraphraser, summariser, and grammar checker cover the core writing improvement needs without a subscription. For real-time grammar checking while you write, LanguageTool's free browser extension is the closest free alternative to Grammarly's core workflow." },
+      { q: 'Is QuillBot better than Grammarly?', a: "QuillBot and Grammarly solve different problems. Grammarly excels at real-time grammar, tone, and clarity improvements as you write. QuillBot excels at paraphrasing and restructuring existing text. If you write original content, Grammarly is better. If you rewrite or summarise content regularly, QuillBot is the better tool." },
+      { q: 'Why do people look for Grammarly alternatives?', a: "The most common reasons are: (1) Grammarly Premium costs $12–$15/month, which is expensive for casual writers. (2) Some users want a paraphrasing tool rather than a grammar checker. (3) Grammarly's browser extension can slow down older computers. (4) Some writers find Grammarly's suggestions overly prescriptive for creative writing." },
+      { q: 'What is the cheapest Grammarly alternative?', a: "Rytr at $9/month is the cheapest paid alternative that covers AI writing assistance. QuillBot Premium at $9.95/month is the cheapest alternative focused on paraphrasing and grammar. For completely free alternatives, QuillBot's free plan and LanguageTool's free plan are both functional for regular use." },
+    ],
+  },
+  {
+    slug: 'best-podcastle-alternatives',
+    title: 'Best Podcastle Alternatives in 2026 — For Podcasters Who Need More',
+    metaDescription: 'Looking for a Podcastle alternative? I tested Descript, Riverside.fm, and Adobe Podcast. Here are the best alternatives for recording, editing, and publishing podcasts in 2026.',
+    datePublished: '2026-05-03',
+    dateModified: '2026-05-03',
+    faqs: [
+      { q: 'What is the best free alternative to Podcastle?', a: "Adobe Podcast's Enhance Speech tool is the best free alternative for audio quality cleanup — it removes background noise from any recording instantly, no account required. For recording, Riverside.fm's free plan (2 hours of recording per month) is the strongest free Podcastle alternative for remote guest interviews." },
+      { q: 'Is Riverside.fm better than Podcastle?', a: "Riverside.fm produces higher recording quality than Podcastle at comparable price points — it captures local tracks at up to 4K video and 48kHz audio. Podcastle has a stronger AI editing suite, better noise removal, and a more integrated publishing workflow. Riverside wins on raw recording quality; Podcastle wins on post-production AI features." },
+      { q: 'Can I switch from Podcastle to Descript easily?', a: "Yes — switching is straightforward. Export your existing recordings from Podcastle as WAV or MP3 files, then import them into Descript. Descript will transcribe them automatically. The editing workflow is different (text-based rather than waveform), but your existing audio content transfers cleanly." },
+      { q: 'Which Podcastle alternative is best for video podcasts?', a: "Riverside.fm is the best alternative for video podcasts — it records separate high-quality video tracks from each participant locally, produces up to 4K video output, and has a clips editor for creating social media snippets. Descript also handles video podcasts well with its transcript-based video editing, but Riverside's raw recording quality is higher." },
+    ],
+  },
+  // ── Week 5 additions ──────────────────────────────────────────────────────
+  {
+    slug: 'best-ai-tools-for-social-media-2026',
+    title: 'Best AI Tools for Social Media 2026 — Create, Schedule & Grow Faster',
+    metaDescription: 'The best AI tools for social media in 2026 — tested across content creation, scheduling, short-form video, and image generation. Cut your content creation time by 70%.',
+    datePublished: '2026-05-04',
+    dateModified: '2026-05-04',
+    faqs: [
+      { q: 'What is the best AI tool for social media content creation?', a: "Ocoya is the best all-in-one AI tool for social media content, combining an AI caption writer, visual template library, and scheduling platform for Instagram, LinkedIn, Twitter, TikTok, and Pinterest. For AI-generated images specifically, Leonardo.ai has the best free plan (150 credits/day). For video repurposing, Opus Clip turns long videos into short clips automatically." },
+      { q: 'Can AI tools write social media captions?', a: "Yes — and they do it well for most standard content types. Ocoya generates captions with hashtags and emoji for any topic, tone, and platform. Rytr has a dedicated Social Media Post template. For best results, give the AI a specific brief (topic, tone, target audience, key message) rather than a vague prompt — the quality difference is significant." },
+      { q: 'Is Ocoya worth it for social media management?', a: "Ocoya is worth it if you manage social media professionally — for yourself or clients. At $15/month, it replaces a separate AI writing tool, a Canva-style template library, and a scheduling platform like Buffer. If you only manage your own personal accounts, Buffer's free plan is probably sufficient." },
+      { q: 'What AI tools do social media managers use?', a: "The most commonly used AI tools among social media managers in 2026 are: Ocoya (captions + scheduling), Opus Clip (short-form video from long content), Leonardo.ai (image generation for organic posts), and Canva AI (templates + image editing). Most managers combine 2–3 of these rather than relying on a single tool." },
+    ],
+  },
+  {
+    slug: 'how-to-use-rytr-to-write-blog-posts',
+    title: 'How to Use Rytr to Write Blog Posts (Step-by-Step, 2026)',
+    metaDescription: 'How to use Rytr to write blog posts in 2026 — a step-by-step tutorial covering setup, the best templates, and the exact workflow to cut first-draft time by 60%.',
+    datePublished: '2026-05-04',
+    dateModified: '2026-05-04',
+    faqs: [
+      { q: 'Can Rytr write a full blog post?', a: "Yes — Rytr can write a full blog post using the Blog Idea & Outline template followed by the Blog Section Writing template. The realistic workflow is: use Rytr to generate an outline and first draft of each section, then rewrite and personalise each section in your own voice. Expect to spend 20–30 minutes editing a Rytr-generated 1,000-word draft into a publishable post." },
+      { q: 'Is Rytr good for SEO blog posts?', a: "Rytr is useful for generating SEO-structured blog posts when you give it your target keyword in the brief. It will naturally include the keyword in headings and body copy. However, Rytr does not do keyword research or competitor analysis — you'll need to bring your own keyword data and manually ensure keyword density and internal links. For SEO-specific AI writing, Frase.io is a more specialised option." },
+      { q: "How many blog posts can you write on Rytr's free plan?", a: "Rytr's free plan gives 10,000 characters per month, which translates to roughly 1,500–2,000 words of usable AI output (accounting for regenerations and variations you don't keep). That's enough for one 1,000–1,200 word blog post per month on the free plan. For 4+ posts per month, the $9/month Saver plan with unlimited characters is more practical." },
+      { q: 'Does Rytr plagiarise content?', a: "Rytr generates original content on each run — it is not copying and pasting from existing sources. However, AI-generated content can produce generic phrasing that appears in other AI-generated content. Rytr includes a built-in plagiarism checker on the Saver and Unlimited plans. On the free plan, run your output through a free tool like Copyscape or Grammarly's plagiarism check before publishing." },
+    ],
+  },
+  // ── Week 7 additions ──────────────────────────────────────────────────────
+  {
+    slug: 'ai-tools-for-students-free-2026',
+    title: 'Best Free AI Tools for Students 2026 — Essays, Research & Presentations',
+    metaDescription: 'The best free AI tools for students in 2026 — tested for essays, research summaries, paraphrasing, and presentations. All tools have a genuinely useful free plan.',
+    datePublished: '2026-05-04',
+    dateModified: '2026-05-04',
+    faqs: [
+      { q: 'What is the best free AI tool for students writing essays?', a: "Grammarly is the best free AI tool for essays — it checks grammar, spelling, tone, and clarity as you type, and works directly inside Google Docs and Microsoft Word. For generating essay first drafts and outlines, Rytr's free plan (10,000 characters/month) is the most practical option with no credit card required. Combine both: use Rytr to draft, Grammarly to refine." },
+      { q: 'Is QuillBot free for students?', a: "Yes — QuillBot has a permanent free plan that includes a paraphraser (up to 125 words per paraphrase), a summariser (up to 1,200 words per summary), and basic grammar checking. The free plan does not include the Fluency and Creative paraphrase modes, word flipper, or plagiarism checker — those require QuillBot Premium at $9.95/month. For most students, the free plan covers 80% of use cases." },
+      { q: 'Can students use AI tools without getting caught for plagiarism?', a: "AI tools used for grammar checking, paraphrasing, and outlining are not plagiarism — they're productivity tools, similar to a spell checker. The risk is submitting AI-generated content as your own original analysis or argument. Use these tools to improve clarity, structure, and language — not to replace your own thinking and research. Always check your institution's AI policy, as guidelines vary by school and course." },
+      { q: 'What AI tool is best for making presentation slides quickly?', a: "Gamma is the best free AI tool for creating presentation slides fast. You type a topic or paste your essay outline, and Gamma generates a full slide deck with structure, content, and visual design in under 3 minutes. The free plan gives 400 AI credits on sign-up — enough for 4–5 complete presentations. No design skills required." },
+      { q: 'Which free AI writing tool gives the most characters per month?', a: "Rytr's free plan gives 10,000 characters per month — roughly 1,500–2,000 words of usable AI output. This is the highest free character allowance among dedicated AI writing tools. Writesonic's free plan is more restrictive. For unlimited AI writing at no cost, the free tier of ChatGPT (GPT-3.5) has no monthly character cap but lacks the structured student-focused templates that Rytr provides." },
+    ],
+  },
+  {
+    slug: 'best-ai-podcast-tools-2026',
+    title: 'Best AI Podcast Tools 2026 — Record, Edit & Enhance Your Show',
+    metaDescription: 'The best AI podcast tools in 2026 — tested for recording, editing, voice enhancement, and transcription. Covers Podcastle, Murf AI, Descript, and Adobe Podcast with honest free plan notes.',
+    datePublished: '2026-05-04',
+    dateModified: '2026-05-04',
+    faqs: [
+      { q: 'What is the best AI tool for podcast recording and editing in 2026?', a: "Podcastle is the best all-in-one AI podcast tool for creators who record and edit in the same platform. It handles remote recording (up to 4K quality), AI noise removal, filler word detection, and automatic transcript-based editing. For creators who only need AI editing on pre-recorded files, Descript's text-based editor is the most intuitive option — you edit audio by editing a transcript like a Google Doc." },
+      { q: 'Is Podcastle free?', a: "Yes — Podcastle has a permanent free plan that includes remote recording (up to 10 hours/month), AI magic dust noise removal, automatic transcription (up to 3 hours), and up to 3 published episodes. The free plan is genuinely usable for a new podcast that publishes 2–3 episodes per month. The paid Basic plan at $11.99/month removes episode limits and adds filler word removal." },
+      { q: 'Can AI remove background noise from podcast recordings?', a: "Yes — Podcastle's Magic Dust feature and Adobe Podcast's Enhance Speech tool both use AI to remove background noise, hum, echo, and room reverb from recordings. Adobe Podcast Enhance is particularly impressive: upload a noisy recording and it returns a studio-quality clean version in seconds, completely free. It works on recordings made on laptop microphones, phone audio, and even noisy outdoor recordings." },
+      { q: 'What is the difference between Podcastle and Descript?', a: "Podcastle is primarily a recording and production platform — it excels at remote recording quality and AI audio cleanup. Descript is primarily an editing platform — you edit your podcast by editing the automatically generated transcript (delete a line of text and the audio is removed). Podcastle is better for the recording stage; Descript is better if you have a lot of recorded audio to cut down and structure." },
+      { q: 'Do I need Murf AI for podcasts if I already have a microphone?', a: "Murf AI is not a recording or editing tool — it's a text-to-speech voice generator. You use it for podcast intros, outros, ad reads, and voiceover narration when you don't want to record those sections yourself, or when you need a consistent branded voice for a show with multiple hosts. If you have a microphone and record all your own audio, you don't need Murf for the recording process itself." },
     ],
   },
 ];

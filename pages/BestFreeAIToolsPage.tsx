@@ -140,7 +140,7 @@ function ToolLogo({ slug, size = 32, name, color }: { slug: string; size?: numbe
   );
 }
 
-function ToolCard({ tool, navigate }: { tool: Tool; navigate: (to: string) => void }) {
+const ToolCard: React.FC<{ tool: Tool; navigate: (to: string) => void }> = ({ tool, navigate }) => {
   const detail = FREE_DETAILS[tool.slug];
   const catMeta = CAT_META[tool.category];
   const paidPrice = tool.pricing?.replace(/^Free \+ /i, '') ?? '';
@@ -239,7 +239,7 @@ function ToolCard({ tool, navigate }: { tool: Tool; navigate: (to: string) => vo
       </div>
     </div>
   );
-}
+};
 
 interface Props {
   navigate: (to: string) => void;

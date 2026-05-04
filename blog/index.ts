@@ -10,7 +10,10 @@ import post4 from './best-podcastle-alternatives';
 // Week 5 additions — social media cluster + Rytr tutorial
 import post5 from './best-ai-tools-for-social-media-2026';
 import post6 from './how-to-use-rytr-to-write-blog-posts';
+// Week 7 additions — long-tail content blitz (students + podcast clusters)
+import post7 from './ai-tools-for-students-free-2026';
+import post8 from './best-ai-podcast-tools-2026';
 
-export const BLOG_POSTS: BlogPost[] = [post1, post2, post3, post4, post5, post6];
+export const BLOG_POSTS: BlogPost[] = [post1, post2, post3, post4, post5, post6, post7, post8];
 
 export type { BlogPost };

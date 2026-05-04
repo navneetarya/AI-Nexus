@@ -51,7 +51,7 @@ export interface SharedNavProps {
   isDark:      boolean;
   toggleTheme: () => void;
   /** Which tab is currently active. Default: 'home' */
-  activePage?: 'home' | 'compare' | 'about' | 'tool' | 'blog';
+  activePage?: 'home' | 'compare' | 'about' | 'tool' | 'blog' | 'methodology';
   /** If provided, clicking Compare calls this instead of navigating away */
   onCompare?:  () => void;
   /** If provided, clicking All Tools calls this instead of navigating away */

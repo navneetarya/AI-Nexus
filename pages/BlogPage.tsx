@@ -41,7 +41,7 @@ function CategoryPill({ label }: { label: string }) {
   );
 }
 
-function PostCard({ post, navigate }: { post: BlogPost; navigate: (to: string) => void }) {
+const PostCard: React.FC<{ post: BlogPost; navigate: (to: string) => void }> = ({ post, navigate }) => {
   return (
     <article
       onClick={() => navigate(`/blog/${post.slug}`)}
@@ -100,7 +100,7 @@ function PostCard({ post, navigate }: { post: BlogPost; navigate: (to: string) =
       </div>
     </article>
   );
-}
+};
 
 export function BlogPage({ navigate, isDark, toggleTheme }: BlogPageProps) {
   return (
