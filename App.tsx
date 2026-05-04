@@ -10,6 +10,8 @@ import { MethodologyPage } from './pages/MethodologyPage';
 import { BlogPage } from './pages/BlogPage';
 import { BlogPostPage } from './pages/BlogPostPage';
 import { BLOG_POSTS } from './blog/index';
+// Week 5: Best free AI tools landing page
+import { BestFreeAIToolsPage } from './pages/BestFreeAIToolsPage';
 
 function updateMeta(title: string, description: string, canonical: string) {
   document.title = title;
@@ -148,6 +150,16 @@ function App() {
       `${SITE_CONFIG.siteUrl}/methodology`
     );
     return <MethodologyPage navigate={navigate} {...themeProps} />;
+  }
+
+  // ── Week 5: Best free AI tools landing page (/best-free-ai-tools) ───────────
+  if (path === '/best-free-ai-tools') {
+    updateMeta(
+      `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`,
+      `13 AI tools with permanent free plans — personally tested. Covers writing, image generation, video, audio, design, coding and productivity. No credit card required for any.`,
+      `${SITE_CONFIG.siteUrl}/best-free-ai-tools`
+    );
+    return <BestFreeAIToolsPage navigate={navigate} {...themeProps} />;
   }
 
   updateMeta(

@@ -7,7 +7,10 @@ import post2 from './best-ai-tools-for-freelancers-2026';
 // Week 4 additions — alternatives pages (high buyer-intent)
 import post3 from './best-grammarly-alternatives';
 import post4 from './best-podcastle-alternatives';
+// Week 5 additions — social media cluster + Rytr tutorial
+import post5 from './best-ai-tools-for-social-media-2026';
+import post6 from './how-to-use-rytr-to-write-blog-posts';
 
-export const BLOG_POSTS: BlogPost[] = [post1, post2, post3, post4];
+export const BLOG_POSTS: BlogPost[] = [post1, post2, post3, post4, post5, post6];
 
 export type { BlogPost };

@@ -41,26 +41,37 @@ const TOOL_DOMAIN: Record<string, string> = {
 };
 
 function ToolLogo({ slug, size = 28, name, color }: { slug: string; size?: number; name?: string; color?: string }) {
-  const [err, setErr] = React.useState(false);
+  const [localErr, setLocalErr] = React.useState(false);
+  const [clearbitErr, setClearbitErr] = React.useState(false);
   const domain = TOOL_DOMAIN[slug];
   const initial = (name ?? slug)[0].toUpperCase();
   const r = Math.round(size * 0.27);
-  if (domain && !err) {
+  // Try local logo first (/public/logos/{slug}.png), then Clearbit, then letter avatar
+  if (!localErr) {
+    return (
+      <img src={`/logos/${slug}.png`} alt={name ?? slug}
+        width={size} height={size}
+        style={{ borderRadius: r, objectFit: 'contain', display: 'block', background: '#fff' }}
+        onError={() => setLocalErr(true)}
+      />
+    );
+  }
+  if (domain && !clearbitErr) {
     return (
       <img src={`https://logo.clearbit.com/${domain}`} alt={name ?? slug}
         width={size} height={size}
         style={{ borderRadius: r, objectFit: 'contain', display: 'block', background: '#fff' }}
-        onError={() => setErr(true)}
+        onError={() => setClearbitErr(true)}
       />
     );
   }
-  return (
-    <span style={{ width: size, height: size, borderRadius: r, background: color ?? C.a1, color: '#fff',
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      fontSize: size * 0.45, fontWeight: 700, fontFamily: "'Syne', sans-serif", flexShrink: 0 }}>
-      {initial}
-    </span>
-  );
+return (
+  <span style={{ width: size, height: size, borderRadius: r, background: color ?? C.a1, color: '#fff',
+    display: 'flex', alignItems: 'center', justifyContent: 'center',
+    fontSize: Math.round(size * 0.5), fontWeight: 700 }}>
+    {initial}
+  </span>
+);
 }
 
 // ── Category icon helper ──────────────────────────────────────────────────────
