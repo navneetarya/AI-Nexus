@@ -92,13 +92,22 @@ function CatIcon({ cat, size = 13, color }: { cat: string; size?: number; color?
 
 const COMPARE_CAT: Record<string, string> = {
   'rytr-vs-writesonic':           'Writing',
-  'podcastle-vs-descript':        'Audio',
-  'ocoya-vs-buffer-vs-hootsuite': 'Marketing',
   'grammarly-vs-quillbot':        'Writing',
+  'grammarly-vs-writesonic':      'Writing',
+  'podcastle-vs-descript':        'Audio',
+  'murf-ai-vs-elevenlabs':        'Audio',
+  'ocoya-vs-buffer-vs-hootsuite': 'Marketing',
   'leonardo-vs-midjourney':       'Image',
   'replit-vs-github-copilot':     'Coding',
   'taskade-vs-notion':            'Productivity',
+  'taskade-vs-asana':             'Productivity',
 };
+
+// Derived: category → array of compare slugs (inverted from COMPARE_CAT)
+const CAT_COMPARES: Record<string, string[]> = Object.entries(COMPARE_CAT).reduce(
+  (acc, [slug, cat]) => ({ ...acc, [cat]: [...(acc[cat] ?? []), slug] }),
+  {} as Record<string, string[]>
+);
 
 // Category → compare article category mapping
 
@@ -828,6 +837,59 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           {(filters.category as string)!=='All' ? ` · ${filters.category}` : ''}
           {filters.search ? ` matching "${filters.search}"` : ''}
         </p>
+
+        {/* ── W5 Task 3: Compare callout — shown when a category is active ── */}
+        {(filters.category as string) !== 'All' && (() => {
+          const cat      = filters.category as string;
+          const isA2     = CAT_ACCENT[cat] === 'a2';
+          const ac       = isA2 ? C.a2 : C.a1;
+          const acCard   = isA2 ? C.a2card : C.a1card;
+          const acBrd    = isA2 ? C.a2brd  : C.a1brd;
+          const slugs    = CAT_COMPARES[cat] ?? [];
+          const articles = COMPARE_ARTICLES.filter(a => slugs.includes(a.slug));
+          if (articles.length === 0) return null;
+          return (
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: 12,
+              background: acCard, border: `1px solid ${acBrd}`,
+              borderRadius: 12, padding: '13px 18px', marginBottom: 22,
+              flexWrap: 'wrap' as const,
+            }}>
+              <span style={{
+                fontSize: 12, fontWeight: 700, color: ac,
+                fontFamily: "'DM Sans',sans-serif", whiteSpace: 'nowrap' as const,
+                display: 'flex', alignItems: 'center', gap: 6,
+              }}>
+                <Scale size={13} color={ac} />
+                Compare {cat} tools:
+              </span>
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' as const }}>
+                {articles.map(art => (
+                  <button
+                    key={art.slug}
+                    onClick={() => navigate(`/compare/${art.slug}`)}
+                    style={{
+                      display: 'inline-flex', alignItems: 'center', gap: 5,
+                      fontSize: 12, fontWeight: 600, color: ac,
+                      background: 'transparent',
+                      border: `1px solid ${acBrd}`, borderRadius: 100,
+                      padding: '5px 13px', cursor: 'pointer',
+                      fontFamily: "'DM Sans',sans-serif",
+                      transition: 'background 0.15s',
+                    }}
+                    onMouseEnter={e => (e.currentTarget.style.background = acBrd)}
+                    onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                  >
+                    {art.title
+                      .replace(/\s*\(2026\).*$/, '')
+                      .replace(/\s*:\s*.+$/, '')}
+                    <ArrowRight size={11} />
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Cards */}
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
