@@ -36,6 +36,14 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
       url: canonical,
       datePublished: post.datePublished,
       dateModified: post.dateModified,
+      // FIX 2 (SEO-High): wordCount + image added — recommended by Google's Article rich result spec
+      wordCount: (post as any).wordCount || 1800,
+      image: {
+        '@type': 'ImageObject',
+        url: `${SITE_CONFIG.siteUrl}/og-image.png`,
+        width: 1200,
+        height: 630,
+      },
       author: {
         '@type': 'Person',
         name: post.author,
@@ -176,6 +184,31 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             </span>
           </div>
         </div>
+
+        {/* FIX 9 (AEO-High): Quick Answer TLDR box
+            Google AI Overviews + Perplexity pull the first direct-answer paragraph.
+            This styled excerpt box (class="post-excerpt") is also targeted by Speakable schema
+            in prerender.mjs so AI engines know exactly which element to cite. */}
+        {post.excerpt && (
+          <div
+            className="post-excerpt"
+            style={{
+              background: C.a1card,
+              border: `1px solid ${C.a1brd}`,
+              borderRadius: 10,
+              padding: '14px 20px',
+              marginBottom: 28,
+              fontSize: 15,
+              lineHeight: 1.65,
+              color: C.txt,
+            }}
+          >
+            <span style={{ fontWeight: 700, color: C.a1, marginRight: 6 }}>
+              Quick answer:
+            </span>
+            {post.excerpt}
+          </div>
+        )}
 
         {/* Article content */}
         <div

@@ -18,7 +18,7 @@ const post: BlogPost = {
   faqs: [
     {
       q: 'What is the best AI tool for social media content creation?',
-      a: 'Ocoya is the best all-in-one AI tool for social media content, combining an AI caption writer, visual template library, and scheduling platform for Instagram, LinkedIn, Twitter, TikTok, and Pinterest. For AI-generated images specifically, Leonardo.ai has the best free plan (150 credits/day). For video repurposing, Opus Clip turns long videos into short clips automatically.',
+      a: 'Ocoya is the best all-in-one AI tool for social media — it combines caption writing, scheduling, and image templates. For images specifically, Leonardo.ai offers 150 free credits per day. For video repurposing, Opus Clip automatically turns long videos into short clips for TikTok and Reels.',
     },
     {
       q: 'Can AI tools write social media captions?',
@@ -30,7 +30,7 @@ const post: BlogPost = {
     },
     {
       q: 'What AI tools do social media managers use?',
-      a: 'The most commonly used AI tools among social media managers in 2026 are: Ocoya (captions + scheduling), Opus Clip (short-form video from long content), Leonardo.ai (image generation for organic posts), and Canva AI (templates + image editing). Most managers combine 2–3 of these rather than relying on a single tool.',
+      a: 'The top AI tools for social media managers in 2026 are Ocoya, Opus Clip, Leonardo.ai, and Canva AI. Ocoya handles AI captions and scheduling. Opus Clip repurposes long videos into short clips. Leonardo.ai generates original visuals. Most managers combine 2–3 tools rather than relying on one.',
     },
   ],
   content: `

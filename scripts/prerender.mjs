@@ -484,13 +484,22 @@ function breadcrumbs(items) {
 }
 
 function reviewSchema(tool, canonical) {
+  // FIX 3 (SEO-Medium): Convert "March 2026" → ISO date instead of hardcoding TODAY
+  const months = {
+    January:'01', February:'02', March:'03', April:'04',
+    May:'05', June:'06', July:'07', August:'08',
+    September:'09', October:'10', November:'11', December:'12',
+  };
+  const parts = (tool.lastTested || '').split(' ');
+  const publishDate = parts.length === 2 ? `${parts[1]}-${months[parts[0]] || '01'}-01` : TODAY;
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Review',
     name: `${tool.name} Review ${YEAR} — Honest Take`,
     description: `${AUTHOR}'s personal review of ${tool.name}: ${tool.tagline}`,
     url: canonical,
-    datePublished: TODAY,
+    datePublished: publishDate,
     dateModified: TODAY,
     author: {
       '@type': 'Person',
@@ -509,11 +518,14 @@ function reviewSchema(tool, canonical) {
       applicationCategory: `${tool.category}Application`,
       operatingSystem: 'Web, iOS, Android',
       description: tool.description,
+      // FIX 3 (SEO-High): Proper Offer object (was plain string) — Google uses this for pricing in results
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
         description: tool.pricing,
+        url: canonical,
       },
     },
     reviewRating: {
@@ -542,16 +554,24 @@ function aggregateRatingSchema(tool) {
   };
 }
 
-function articleSchema({ title, description, canonical }) {
+// FIX 2 (SEO-High): Added wordCount + image — both recommended by Google's Article spec
+function articleSchema({ title, description, canonical, wordCount, imageUrl, datePublished }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
     description,
     url: canonical,
-    datePublished: TODAY,
+    datePublished: datePublished || TODAY,
     dateModified: TODAY,
     inLanguage: 'en-US',
+    wordCount: wordCount || 1500,
+    image: {
+      '@type': 'ImageObject',
+      url: imageUrl || `${SITE}/og-image.png`,
+      width: 1200,
+      height: 630,
+    },
     author: {
       '@type': 'Person',
       name: AUTHOR,
@@ -564,6 +584,56 @@ function articleSchema({ title, description, canonical }) {
       logo: { '@type': 'ImageObject', url: `${SITE}/og-image.png` },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  };
+}
+
+// FIX 4 (GEO-Critical): Speakable schema — tells AI engines which passages to cite
+function speakableSchema(canonical, cssSelectors) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': canonical,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: cssSelectors,
+    },
+    url: canonical,
+  };
+}
+
+// FIX 8 (AEO-Critical): HowTo schema — enables numbered step rich results in Google
+function howToSchema({ title, description, canonical, steps }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: title,
+    description,
+    url: canonical,
+    step: steps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+      url: `${canonical}#step-${i + 1}`,
+    })),
+  };
+}
+
+// FIX 11 (AEO-Medium): ItemList schema — enables sitelinks/carousel results in Google
+function itemListSchema({ name, url, items }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    url,
+    numberOfItems: items.length,
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      url: item.url,
+      description: item.description,
+    })),
   };
 }
 
@@ -758,6 +828,37 @@ const BLOG_POSTS = [
       { q: 'Which Notion AI alternative is best for SEO content?', a: "Frase.io is the best Notion AI alternative for SEO content. It pulls the top 20 Google results for your target keyword, analyses what's in them, and creates a content brief showing exactly what to cover. Notion AI cannot do any of this — it has no web access or SEO data integration." },
     ],
   },
+  // ── FIX 1 (SEO-Critical): Missing blog post — was returning 404 to Googlebot ──
+  {
+    slug: 'how-to-use-ai-for-content-creation-2026',
+    title: 'How to Use AI for Content Creation in 2026 — Full Workflow (Writing, Images, Video & Audio)',
+    metaDescription: 'A complete guide on how to use AI for content creation in 2026 — covering AI writing tools, image generators, video makers, and voiceover tools. Real workflows, free plan options, and honest limitations.',
+    datePublished: '2026-05-05',
+    dateModified:  '2026-05-05',
+    mentionedTools: ['rytr','grammarly','leonardo-ai','photoroom','pictory','invideo','podcastle','murf-ai'],
+    howToSteps: [
+      { name: 'Generate your content outline with Rytr',
+        text: 'Open Rytr, select the Blog Idea & Outline use case, enter your topic and primary keyword, set tone to Informational, and generate. Rytr returns a 6–8 point outline in about 15 seconds. Review it, reorder sections, and write a one-sentence brief for each section in your own words.' },
+      { name: 'Draft each section and edit before moving on',
+        text: 'Use Rytr\'s Blog Section Writing template for each section individually. Feed it the heading plus a one-sentence brief. Generate, then immediately edit in your own examples and opinions before generating the next section. This produces substantially better output than generating the full article at once.' },
+      { name: 'Generate a feature image with Leonardo.ai',
+        text: 'Log into Leonardo.ai (free plan gives 150 tokens per day). Choose a fine-tuned model like AlbedoBase XL or DreamShaper, describe your subject in 2–3 sentences, select 4 outputs, and generate. Download the best result — free plan outputs can be used commercially.' },
+      { name: 'Repurpose your written content into video with Pictory',
+        text: 'Paste your article URL or the script text directly into Pictory\'s Article to Video tool. Pictory automatically matches stock footage to each sentence, generates captions, and exports an MP4 in under 10 minutes. Swap any footage clips that do not match well.' },
+    ],
+    faqs: [
+      { q: 'What is the best AI tool for content creation in 2026?',
+        a: 'No single tool covers everything — the right stack depends on your content format. For writing: Rytr (drafts) and Grammarly (editing). For images: Leonardo.ai (150 free credits per day). For video: Pictory (articles to video) or InVideo AI (prompt to video). For audio: Murf AI (voiceovers) and Podcastle (podcast recording). Build a stack of 2–3 tools covering your specific formats rather than relying on one general tool.' },
+      { q: 'Can AI create content automatically without human input?',
+        a: 'AI can generate a full draft with minimal prompting, but fully automated content without editing consistently underperforms in engagement and ranking. The practical workflow: AI generates 60–70% of raw material, a human edits, adds original insight, corrects errors, and adds brand voice. This hybrid approach is faster than working from scratch while producing quality that pure AI output cannot match.' },
+      { q: 'Is AI-generated content detected by Google and penalised?',
+        a: 'Google targets unhelpful content regardless of whether it is AI-generated or human-written. High-quality, accurate AI-assisted content is not penalised. What Google penalises is thin, inaccurate, or duplicate content — which can be AI-generated or human. Edit AI output for accuracy, add original examples, and ensure the content genuinely answers the reader\'s question.' },
+      { q: 'How much does a complete AI content creation stack cost per month?',
+        a: 'A functional stack can be built for under $30/month. Rytr Unlimited: $9/month. Grammarly: free tier covers most needs. Leonardo.ai: free (150 credits/day). Pictory: $19/month for video. Podcastle and Murf AI: free tiers cover low-volume use. Total for writing plus video only: roughly $28/month.' },
+      { q: 'What AI tools do content creators use for short-form social media content?',
+        a: 'The top AI tools for short-form social media in 2026 are Opus Clip, Ocoya, Leonardo.ai, and Rytr. Opus Clip automatically repurposes long videos into short clips for TikTok and Reels. Ocoya writes platform-specific captions and schedules posts. Leonardo.ai generates original visuals. Rytr writes tweet threads and LinkedIn posts using dedicated templates.' },
+    ],
+  },
   {
     slug: 'best-invideo-alternatives-2026',
     title: 'Best InVideo AI Alternatives 2026 — Tested for Faceless YouTube',
@@ -792,6 +893,8 @@ for (const tool of TOOLS) {
       [2, 'AI Tools', `${SITE}/tools`],
       [3, `${tool.name} Review`, canonical],
     ]),
+    // FIX 4 (GEO-Critical): Speakable — tells AI engines which HTML elements to cite
+    speakableSchema(canonical, ['h1', '[data-speakable="verdict"]', '[data-speakable="summary"]']),
   ];
 
   // Inject FAQPage schema if Q&As exist for this tool — enables FAQ rich results in SERPs
@@ -903,6 +1006,16 @@ console.log('\nBlog pages:');
       [1, 'AI Nexus', SITE],
       [2, 'Blog', canonical],
     ]),
+    // FIX 11 (AEO-Medium): ItemList — enables sitelinks + carousel rich results for /blog/
+    itemListSchema({
+      name: 'AI Tools Blog — All Articles by Navneet Arya',
+      url: canonical,
+      items: BLOG_POSTS.map(p => ({
+        name: p.title,
+        url: `${SITE}/blog/${p.slug}/`,
+        description: p.metaDescription,
+      })),
+    }),
   ];
   writeRoute('blog', buildPage(template, { title, description, canonical, schemas }));
 }
@@ -919,17 +1032,34 @@ for (const post of BLOG_POSTS) {
       url: canonical,
       datePublished: post.datePublished,
       dateModified: post.dateModified,
+      // FIX 2 (SEO-High): Added wordCount + image fields
+      wordCount: post.wordCount || 1800,
+      image: { '@type': 'ImageObject', url: `${SITE}/og-image.png`, width: 1200, height: 630 },
       author: { '@type': 'Person', name: AUTHOR, url: `${SITE}/about` },
       publisher: { '@type': 'Organization', name: 'AI Nexus', url: SITE },
       inLanguage: 'en-US',
       mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+      // FIX 7 (GEO-Medium): mentions — builds semantic knowledge graph for AI engines
+      ...(post.mentionedTools?.length ? {
+        mentions: post.mentionedTools.map(slug => ({
+          '@type': 'SoftwareApplication',
+          name: TOOLS.find(t => t.slug === slug)?.name || slug,
+          url: `${SITE}/tools/${slug}/`,
+        })),
+      } : {}),
     },
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'Blog', `${SITE}/blog/`],
       [3, post.title, canonical],
     ]),
+    // FIX 4 (GEO-Critical): Speakable — marks excerpt/intro for AI engine citation
+    speakableSchema(canonical, ['h1', '.post-excerpt', 'h2:first-of-type']),
     ...(post.faqs.length > 0 ? [faqSchema(post.faqs)] : []),
+    // FIX 8 (AEO-Critical): HowTo schema — numbered step rich results for how-to posts
+    ...(post.slug.startsWith('how-to-') && post.howToSteps?.length
+      ? [howToSchema({ title: post.title, description: post.metaDescription, canonical, steps: post.howToSteps })]
+      : []),
   ];
   writeRoute(
     `blog/${post.slug}`,
@@ -942,12 +1072,22 @@ for (const post of BLOG_POSTS) {
   const canonical = `${SITE}/best-free-ai-tools/`;
   const title = `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`;
   const description = `13 AI tools with permanent free plans — personally tested by ${AUTHOR}. Covers writing, image generation, video, audio, design, coding and productivity. No credit card required for any.`;
+
+  // Tools with permanent free plans (mirrors BestFreeAIToolsPage.tsx)
+  const FREE_TOOLS_SLUGS = ['grammarly','rytr','quillbot','leonardo-ai','photoroom','gamma','replit','taskade','podcastle','murf-ai','opus-clip','invideo','writesonic'];
+  const freeToolItems = FREE_TOOLS_SLUGS.map(slug => {
+    const t = TOOLS.find(x => x.slug === slug);
+    return t ? { name: t.name, url: `${SITE}/tools/${t.slug}/`, description: t.tagline } : null;
+  }).filter(Boolean);
+
   const schemas = [
     articleSchema({ title, description, canonical }),
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'Best Free AI Tools', canonical],
     ]),
+    // FIX 11 (AEO-Medium): ItemList — enables carousel rich results for this landing page
+    itemListSchema({ name: 'Best Free AI Tools 2026', url: canonical, items: freeToolItems }),
     faqSchema([
       { q: 'Are there any truly free AI tools?', a: 'Yes — 13 of the tools we have tested offer a permanent free plan (not just a trial). The best completely free AI tools are Grammarly (unlimited grammar checks), Leonardo.ai (150 image credits per day), and Rytr (10,000 characters per month for writing). All three are free forever with no credit card required.' },
       { q: 'What is the best free AI writing tool?', a: 'Grammarly is the best free AI writing tool for editing and improving existing text. Rytr is the best free tool for generating new content, with 10,000 characters per month on its free plan and over 40 writing templates. Quillbot is the best free paraphrasing and summarisation tool.' },
