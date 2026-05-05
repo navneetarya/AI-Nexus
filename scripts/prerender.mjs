@@ -743,6 +743,35 @@ const BLOG_POSTS = [
       { q: 'Do I need Murf AI for podcasts if I already have a microphone?', a: "Murf AI is not a recording or editing tool — it's a text-to-speech voice generator. You use it for podcast intros, outros, ad reads, and voiceover narration when you don't want to record those sections yourself, or when you need a consistent branded voice for a show with multiple hosts. If you have a microphone and record all your own audio, you don't need Murf for the recording process itself." },
     ],
   },
+  // ── Week 4 additions — alternatives pages ────────────────────────────────
+  {
+    slug: 'best-notion-ai-alternatives-2026',
+    title: 'Best Notion AI Alternatives 2026 — Personally Tested & Ranked',
+    metaDescription: "I tested Taskade, Writesonic, Frase, and more as Notion AI alternatives. Here's which one is actually better — and which is free. Honest review with real outputs.",
+    datePublished: '2026-05-05',
+    dateModified: '2026-05-05',
+    faqs: [
+      { q: 'Is Notion AI free?', a: 'No. Notion AI is a paid add-on that costs $10/member/month (or $8/month billed annually) on top of your existing Notion plan. Notion itself has a free plan, but the AI features — writing assistant, summarisation, Q&A — all require the paid add-on. There is no free tier for Notion AI.' },
+      { q: 'What is the best free Notion AI alternative?', a: "Taskade is the best free Notion AI alternative. Its free plan includes unlimited projects, AI writing assistance, task generation, mind maps, and 5 AI agent runs per month — all without a credit card. For note-taking with built-in AI at no cost, Taskade covers more use cases than Notion AI does even on a paid plan." },
+      { q: 'What is better than Notion AI for notes?', a: "It depends on your use case. For AI-powered task and project management, Taskade is better — it adds workflow automation and AI agents. For writing and content research, Writesonic and Frase outperform Notion AI significantly. If your primary need is drafting blog posts, creating content briefs, or SEO writing — neither Notion nor Notion AI is the right tool at all." },
+      { q: 'Can I use Taskade instead of Notion?', a: "Yes. Taskade replaces Notion for most solo creators and small teams. It covers tasks, project views (kanban, list, mind map, calendar), docs, team chat, and video calls — plus built-in AI agents. The main thing Notion does better is highly customised databases with complex relational properties." },
+      { q: 'Which Notion AI alternative is best for SEO content?', a: "Frase.io is the best Notion AI alternative for SEO content. It pulls the top 20 Google results for your target keyword, analyses what's in them, and creates a content brief showing exactly what to cover. Notion AI cannot do any of this — it has no web access or SEO data integration." },
+    ],
+  },
+  {
+    slug: 'best-invideo-alternatives-2026',
+    title: 'Best InVideo AI Alternatives 2026 — Tested for Faceless YouTube',
+    metaDescription: "I tested Pictory, Opus Clip, and Murf AI as InVideo alternatives. Here's which one is actually better for faceless YouTube, short clips, and video repurposing in 2026.",
+    datePublished: '2026-05-05',
+    dateModified: '2026-05-05',
+    faqs: [
+      { q: 'Which InVideo alternative is best for faceless YouTube?', a: "For a full faceless YouTube workflow — script, voiceover, stock footage, captions — Pictory has a key advantage: it starts from your written content (blog posts, scripts) rather than a prompt. If you already produce written content and want to repurpose it into faceless YouTube videos, Pictory is faster and more consistent than InVideo AI." },
+      { q: 'Is there a free InVideo alternative?', a: "Opus Clip has the most functional free plan among InVideo alternatives — it gives you 60 free minutes of video processing per month, which is enough to clip 2–3 long videos into short-form content. Pictory offers a free trial (3 videos) before requiring a paid plan." },
+      { q: 'What is better than InVideo for short-form clips?', a: "Opus Clip is significantly better than InVideo for short-form clip creation. InVideo AI generates new videos from prompts. Opus Clip takes your existing long-form video and automatically identifies the best 30–90 second moments, cuts them, adds captions, and reformats them for TikTok, Reels, and YouTube Shorts." },
+      { q: 'Can Pictory replace InVideo AI?', a: "Pictory and InVideo AI overlap in turning written content into video but approach it differently. Pictory starts with a blog post URL or script and automatically matches stock footage to each sentence. InVideo AI generates the entire video from a text prompt. Pictory is better if you already have content to repurpose; InVideo AI is better if you're creating from scratch." },
+      { q: 'What is the cheapest InVideo AI alternative?', a: "Opus Clip is the cheapest paid InVideo alternative at $19/month, with a functional free plan that gives you 60 minutes of processing per month. Pictory starts at $19/month with a 3-video free trial. All three tools are in a similar price range — choose based on use case, not price." },
+    ],
+  },
 ];
 console.log('\n🔧  Pre-rendering routes for Google & Bing crawlability...\n');
 
