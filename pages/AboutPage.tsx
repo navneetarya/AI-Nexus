@@ -52,7 +52,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 <div style={{ width: 80, height: 80, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, padding: 3, boxShadow: `0 0 0 3px ${C.a1card}, 0 4px 16px rgba(13,148,136,.25)` }}>
                   <img
                     src="/author-photo.jpg"
-                    alt="Navneet Arya — founder of AI Nexus"
+                    alt="Navneet Arya, AI tools reviewer and founder of AI Nexus — personally tested 20+ AI writing, audio, and video tools since 2022"
                     width={74} height={74}
                     style={{ width: 74, height: 74, borderRadius: '50%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
                   />

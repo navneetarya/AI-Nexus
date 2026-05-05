@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Week 6 Task 2: Added image sitemap namespace + image:image tags for all tool pages and blog OG images -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
   <!-- Homepage -->
   <url><loc>https://ainexustools.online/</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-05-04</lastmod></url>
 
@@ -23,42 +25,102 @@
   <url><loc>https://ainexustools.online/compare/murf-ai-vs-elevenlabs/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
   <url><loc>https://ainexustools.online/compare/taskade-vs-asana/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
 
-  <!-- Affiliate picks — highest priority tool pages -->
-  <url><loc>https://ainexustools.online/tools/rytr/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/podcastle/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/ocoya/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/replit/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/taskade/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-29</lastmod></url>
+  <!-- Affiliate picks — highest priority tool pages — Week 6: image:image tags added -->
+  <url><loc>https://ainexustools.online/tools/rytr/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/rytr.png</image:loc><image:title>Rytr AI Writing Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/podcastle/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/podcastle.png</image:loc><image:title>Podcastle AI Podcast Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/ocoya/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/ocoya.png</image:loc><image:title>Ocoya AI Social Media Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/replit/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/replit.png</image:loc><image:title>Replit AI Coding Platform Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/taskade/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/taskade.png</image:loc><image:title>Taskade AI Productivity Tool Logo</image:title></image:image>
+  </url>
 
-  <!-- All tool pages -->
-  <url><loc>https://ainexustools.online/tools/grammarly/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/writesonic/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/quillbot/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/frase/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/leonardo-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/photoroom/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/looka/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/pictory/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/opus-clip/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/invideo/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/murf-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/gamma/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/beautiful-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/tools/notion-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
+  <!-- All tool pages — Week 6: image:image tags added -->
+  <url><loc>https://ainexustools.online/tools/grammarly/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/grammarly.png</image:loc><image:title>Grammarly AI Writing Assistant Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/writesonic/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/writesonic.png</image:loc><image:title>Writesonic AI Content Generator Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/quillbot/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/quillbot.png</image:loc><image:title>QuillBot AI Paraphrasing Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/frase/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/frase.png</image:loc><image:title>Frase AI SEO Content Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/leonardo-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/leonardo-ai.png</image:loc><image:title>Leonardo AI Image Generator Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/photoroom/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/photoroom.png</image:loc><image:title>PhotoRoom AI Background Remover Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/looka/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/looka.png</image:loc><image:title>Looka AI Logo Maker Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/pictory/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/pictory.png</image:loc><image:title>Pictory AI Video Creator Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/opus-clip/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/opus-clip.png</image:loc><image:title>Opus Clip AI Video Repurposing Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/invideo/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/invideo.png</image:loc><image:title>InVideo AI Text-to-Video Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/murf-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/murf-ai.png</image:loc><image:title>Murf AI Voiceover Generator Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/gamma/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/gamma.png</image:loc><image:title>Gamma AI Presentation Maker Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/beautiful-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/beautiful-ai.png</image:loc><image:title>Beautiful.ai Presentation Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/notion-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/notion-ai.png</image:loc><image:title>Notion AI Productivity Tool Logo</image:title></image:image>
+  </url>
 
   <!-- Blog list -->
-  <url><loc>https://ainexustools.online/blog/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>AI Nexus Blog — AI Tool Reviews and Guides</image:title></image:image>
+  </url>
 
-  <!-- Blog posts -->
-  <url><loc>https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-03</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-grammarly-alternatives/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-03</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-podcastle-alternatives/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-03</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-social-media-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/how-to-use-rytr-to-write-blog-posts/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/ai-tools-for-students-free-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-ai-podcast-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod></url>
+  <!-- Blog posts — Week 6: OG image entries added -->
+  <url><loc>https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-29</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Writing Tools for Beginners 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-03</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Tools for Freelancers 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-grammarly-alternatives/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-03</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best Grammarly Alternatives 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-podcastle-alternatives/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-03</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best Podcastle Alternatives 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-social-media-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Tools for Social Media 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/how-to-use-rytr-to-write-blog-posts/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>How to Use Rytr to Write Blog Posts</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/ai-tools-for-students-free-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Free AI Tools for Students 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-ai-podcast-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Podcast Tools 2026</image:title></image:image>
+  </url>
   <!-- Week 4 — Alternatives pages -->
-  <url><loc>https://ainexustools.online/blog/best-notion-ai-alternatives-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-05</lastmod></url>
-  <url><loc>https://ainexustools.online/blog/best-invideo-alternatives-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-05</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-notion-ai-alternatives-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best Notion AI Alternatives 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-invideo-alternatives-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-05</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best InVideo AI Alternatives 2026</image:title></image:image>
+  </url>
 </urlset>

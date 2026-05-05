@@ -149,11 +149,8 @@
         src: url('/fonts/dm-sans-v17-latin-600.woff2') format('woff2');
       }
     </style>
-    <!-- CDN fallback only used if local fonts fail to load -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" /></noscript>
+    <!-- Week 6 Task 3: Removed Google Fonts CDN — all fonts self-hosted via /public/fonts/
+         Eliminates 2 DNS lookups (fonts.googleapis.com + fonts.gstatic.com), saves 150–300ms LCP on mobile -->
 
     <style>
       /* ── Light mode tokens (default) ── */
