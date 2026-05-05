@@ -1112,8 +1112,27 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
     articleScript.setAttribute('data-compare-article', 'true');
     articleScript.textContent = JSON.stringify(articleSchema);
     document.head.appendChild(articleScript);
+
+    // W2-3: Standalone BreadcrumbList schema for Compare pages
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE_CONFIG.siteUrl },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Comparisons', 'item': `${SITE_CONFIG.siteUrl}/compare` },
+        { '@type': 'ListItem', 'position': 3, 'name': article.keyword, 'item': `${SITE_CONFIG.siteUrl}/compare/${article.slug}` },
+      ],
+    };
+    document.querySelectorAll('script[data-compare-breadcrumb]').forEach(el => el.remove());
+    const breadcrumbScript = document.createElement('script');
+    breadcrumbScript.type = 'application/ld+json';
+    breadcrumbScript.setAttribute('data-compare-breadcrumb', 'true');
+    breadcrumbScript.textContent = JSON.stringify(breadcrumbSchema);
+    document.head.appendChild(breadcrumbScript);
+
     return () => {
       document.querySelectorAll('script[data-compare-article]').forEach(el => el.remove());
+      document.querySelectorAll('script[data-compare-breadcrumb]').forEach(el => el.remove());
     };
   }, [article.slug, article.faqs]);
   return (

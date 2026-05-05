@@ -30,6 +30,8 @@ const TOOL_CONTENT: Record<string, {
   verdict: string;
   rating: number;
   lastTested: string;
+  /** ISO 8601 date this review was first published — used in Review schema datePublished */
+  datePublished: string;
   timeUsed: string;
 }> = {
   grammarly: {
@@ -38,7 +40,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I've used Grammarly daily for over two years across Gmail, Notion, and Google Docs. The free plan genuinely catches mistakes that Word misses. The tone detector is surprisingly useful for adjusting between formal and casual communication. It doesn't replace a human editor but it eliminates embarrassing errors before they reach a client.",
     useCases: ["Proofreading client emails before sending", "Improving tone in LinkedIn posts", "Checking student assignments for grammar errors", "Writing cleaner product descriptions for e-commerce"],
     verdict: "The most accessible AI writing tool available. The free tier is genuinely useful — not a crippled demo. Worth upgrading to Premium if you write more than 5,000 words per week.",
-    rating: 4.5, lastTested: "March 2026", timeUsed: "2+ years daily",
+    rating: 4.5, lastTested: "March 2026", datePublished: "2026-01-15", timeUsed: "2+ years daily",
   },
   writesonic: {
     whoIsItFor: "Bloggers, content marketers, and small business owners who need to produce SEO-optimised content regularly without hiring a full-time writer.",
@@ -46,7 +48,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Writesonic's Article Writer 6.0 is the fastest way I've found to go from keyword to publishable draft. The output still needs editing — don't publish raw AI content — but it cuts writing time by roughly 60%. The Chatsonic chatbot is a decent ChatGPT alternative with web search built in.",
     useCases: ["Writing 1,500-word SEO blog posts from a keyword", "Generating Facebook and Google ad copy variants", "Creating product descriptions for Shopify stores", "Drafting email newsletters in minutes"],
     verdict: "Best value for bloggers who want to scale content output. The output needs editing but the time saving is real.",
-    rating: 4.2, lastTested: "February 2026", timeUsed: "6 months",
+    rating: 4.2, lastTested: "February 2026", datePublished: "2026-01-20", timeUsed: "6 months",
   },
   rytr: {
     whoIsItFor: "Freelancers, students, and budget-conscious creators who want AI writing help without a $50/month commitment. Particularly useful for those running on tight budgets since the pricing is the lowest in the category.",
@@ -54,7 +56,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Rytr is the most beginner-friendly AI writing tool I've tested. The interface is cleaner than Jasper or Writesonic, and the free plan gives you 10,000 characters per month — enough to write 3–4 blog posts. The quality isn't quite at GPT-4 level but it's impressively solid for the price. The 40+ use-case templates mean you're never staring at a blank page.",
     useCases: ["Writing Instagram captions and short social posts", "Drafting cold email outreach sequences", "Creating bio sections for LinkedIn profiles", "Generating blog post outlines and section starters"],
     verdict: "The best entry point into AI writing. If you're new to AI tools and unsure about spending money, start here — the free plan is generous and $9/month unlimited is the best deal in the category.",
-    rating: 4.0, lastTested: "April 2026", timeUsed: "8 months",
+    rating: 4.0, lastTested: "April 2026", datePublished: "2026-01-25", timeUsed: "8 months",
   },
   quillbot: {
     whoIsItFor: "Students, academics, researchers, and ESL writers who need to improve existing text rather than generate content from scratch.",
@@ -62,7 +64,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Quillbot does one thing better than any other tool: paraphrasing. I tested all 7 modes on the same paragraph and the Creative mode genuinely restructures sentences in ways that feel human. The summariser is excellent for condensing long research papers. The grammar checker is solid but Grammarly is more accurate.",
     useCases: ["Rewriting academic papers to avoid self-plagiarism", "Summarising 20-page research reports into key points", "Improving ESL writing to sound more natural", "Generating citation references in APA, MLA, Chicago"],
     verdict: "The best paraphrasing tool available. The free plan's 125-word limit per paraphrase is frustrating but the quality is so good you'll quickly justify the $10/month upgrade.",
-    rating: 4.3, lastTested: "January 2026", timeUsed: "1 year",
+    rating: 4.3, lastTested: "January 2026", datePublished: "2026-01-10", timeUsed: "1 year",
   },
   'frase': {
     whoIsItFor: "SEO writers, content teams, and bloggers who want to create content that actually ranks rather than just reads well.",
@@ -70,7 +72,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Frase changed how I approach content briefs. Instead of manually reading the top 10 results for a keyword, Frase pulls them all in and shows you what topics they cover, how long they are, and what questions they answer. The AI writer then helps you match that structure.",
     useCases: ["Building comprehensive content briefs before writing", "Auditing existing posts to find missing topic coverage", "Optimising articles to match what top-ranking pages cover", "Identifying questions your content should answer"],
     verdict: "The best tool for SEO-driven content creation. Not for casual bloggers — this is for people who want to treat content as a business.",
-    rating: 4.4, lastTested: "March 2026", timeUsed: "10 months",
+    rating: 4.4, lastTested: "March 2026", datePublished: "2026-02-01", timeUsed: "10 months",
   },
   'leonardo-ai': {
     whoIsItFor: "Game developers, illustrators, concept artists, and social media creators who need consistent, high-quality AI-generated images with fine creative control.",
@@ -78,7 +80,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Leonardo gives you more creative control than Midjourney for free. The custom model training feature lets you create consistent characters across multiple images — something most other tools can't do. The 150 free daily credits are genuinely usable, not just enough for one image.",
     useCases: ["Creating consistent game character sprites and assets", "Generating product mockup images for e-commerce", "Creating social media visuals at scale", "Building concept art for client presentations"],
     verdict: "The most powerful free AI image tool available. The learning curve is real — spend 30 minutes watching tutorials before diving in — but the ceiling of what you can create is higher than any competitor.",
-    rating: 4.5, lastTested: "February 2026", timeUsed: "1.5 years",
+    rating: 4.5, lastTested: "February 2026", datePublished: "2026-01-18", timeUsed: "1.5 years",
   },
   'photoroom': {
     whoIsItFor: "E-commerce sellers, product photographers, social media managers, and anyone who regularly removes backgrounds from images.",
@@ -86,7 +88,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I tested PhotoRoom against 5 other background removal tools using 20 product photos. PhotoRoom won 17 out of 20. It handles hair, transparent objects, and complex edges better than Adobe's own tools. The mobile app is excellent — I've used it to shoot and clean up product photos in under 2 minutes.",
     useCases: ["Removing backgrounds from product photos for Amazon listings", "Creating consistent social media content with clean subject isolation", "Generating professional headshots from casual photos", "Batch processing 100+ product images simultaneously"],
     verdict: "The best background removal tool available. Period. The free plan's watermark is annoying but the $10/month Pro plan is worth it for anyone selling products online.",
-    rating: 4.6, lastTested: "March 2026", timeUsed: "1 year",
+    rating: 4.6, lastTested: "March 2026", datePublished: "2026-02-05", timeUsed: "1 year",
   },
   looka: {
     whoIsItFor: "Startups, freelancers, and small business owners who need a professional logo and brand identity without paying thousands to a design agency.",
@@ -94,7 +96,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I used Looka to create a brand identity for a test project. The AI generated 40+ logo options in under 2 minutes. The quality varies — some look generic — but 3–4 options were genuinely strong. The brand kit (business cards, social media templates, letterhead) justifies the price.",
     useCases: ["Creating a logo for a new startup or side project", "Generating a full brand kit for a freelance business", "Designing social media profile assets quickly", "Getting a professional logo before a client meeting — same day"],
     verdict: "A one-time investment that saves thousands compared to hiring a designer. The logo quality is better than Canva's logo maker and you own the files outright.",
-    rating: 4.1, lastTested: "January 2026", timeUsed: "6 months",
+    rating: 4.1, lastTested: "January 2026", datePublished: "2026-01-12", timeUsed: "6 months",
   },
   pictory: {
     whoIsItFor: "Bloggers, content repurposers, and YouTube creators who want to turn written content into video without editing skills or expensive software.",
@@ -102,7 +104,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I converted a 1,500-word blog post into a 3-minute video in 12 minutes using Pictory. The AI picks relevant stock footage, adds captions, and inserts background music automatically. The result needed minor adjustments but was 80% publish-ready.",
     useCases: ["Converting blog posts into YouTube videos automatically", "Creating short Reels/Shorts from long-form articles", "Generating video summaries of podcast episodes", "Building a faceless YouTube channel from written content"],
     verdict: "The fastest way to turn written content into video. The stock footage library shows its limits on niche topics but for business and marketing content it works excellently.",
-    rating: 4.1, lastTested: "February 2026", timeUsed: "7 months",
+    rating: 4.1, lastTested: "February 2026", datePublished: "2026-01-22", timeUsed: "7 months",
   },
   'opus-clip': {
     whoIsItFor: "YouTubers, podcasters, webinar hosts, and anyone with long-form video content who wants to repurpose it into short clips for TikTok, Reels, and Shorts.",
@@ -110,7 +112,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I tested Opus Clip on a 45-minute interview and it produced 8 clips. 5 of them were genuinely good — it correctly identified the most emotionally engaging moments, added captions, and even applied a virality score. The other 3 cut at awkward points. Still a massive time saver versus manual clipping.",
     useCases: ["Clipping YouTube videos into TikTok and Reels content", "Extracting key moments from podcast episodes", "Repurposing webinar recordings into social media clips", "Building a short-form content library from long videos"],
     verdict: "The best AI video repurposing tool available. The free plan's 60 minutes per month is enough to test properly. Essential for anyone trying to grow short-form alongside long-form.",
-    rating: 4.3, lastTested: "March 2026", timeUsed: "9 months",
+    rating: 4.3, lastTested: "March 2026", datePublished: "2026-02-10", timeUsed: "9 months",
   },
   invideo: {
     whoIsItFor: "Faceless YouTube creators, digital marketers, and educators who want to create complete videos from a text prompt without appearing on camera.",
@@ -118,7 +120,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "InVideo AI is the most complete text-to-video tool I've tested. I gave it a 50-word prompt about 'how to save money in your 20s' and got a 4-minute video with a script, voiceover, stock footage, and captions. The quality of stock footage selection is the weakest link but the voiceover and pacing are excellent.",
     useCases: ["Creating faceless YouTube educational videos at scale", "Producing explainer videos for product landing pages", "Generating social media video content from blog topics", "Creating training videos for teams without recording equipment"],
     verdict: "The most capable text-to-video tool for faceless content creators. The free plan lets you create 10 minutes of video per week — enough to start a channel.",
-    rating: 4.2, lastTested: "April 2026", timeUsed: "8 months",
+    rating: 4.2, lastTested: "April 2026", datePublished: "2026-02-15", timeUsed: "8 months",
   },
   'murf-ai': {
     whoIsItFor: "Video creators, eLearning developers, marketers, and anyone who needs professional-quality voiceovers without hiring a voice actor.",
@@ -126,7 +128,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Murf's voices are noticeably more natural than ElevenLabs' standard voices. I tested 15 voices across 5 scripts and found 6 that I'd use for client work without hesitation. The video sync feature — where Murf automatically adjusts speech pace to fit your video timeline — is a feature I haven't seen elsewhere.",
     useCases: ["Voiceovers for YouTube videos and online courses", "Narration for product demo videos and explainers", "Podcast-style audio for blog content", "Multilingual voiceovers for global marketing campaigns"],
     verdict: "The best balance of voice quality and ease of use in AI voiceover tools. More expensive than some alternatives but the output quality justifies it for professional use.",
-    rating: 4.4, lastTested: "January 2026", timeUsed: "1 year",
+    rating: 4.4, lastTested: "January 2026", datePublished: "2026-01-08", timeUsed: "1 year",
   },
   podcastle: {
     whoIsItFor: "Independent podcasters, journalists, and content creators who record interviews and need studio-quality audio without a studio setup or recording equipment budget.",
@@ -134,7 +136,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I recorded a remote interview using Podcastle and compared the cleaned-up audio to a professional podcast recorded in a studio. Podcastle's AI noise removal eliminated keyboard clicks, air conditioning hum, and mic handling noise that I hadn't even noticed during recording. The Revoice voice cloning feature for fixing mispronounced words mid-episode is genuinely impressive.",
     useCases: ["Recording and cleaning remote podcast interviews", "Transcribing interviews for show notes automatically", "Fixing audio errors post-recording without re-recording the entire segment", "Publishing podcasts to Spotify and Apple Podcasts directly"],
     verdict: "The best all-in-one podcast tool for creators who don't want to learn Audacity. The free plan is functional enough to start your first show today.",
-    rating: 4.2, lastTested: "April 2026", timeUsed: "6 months",
+    rating: 4.2, lastTested: "April 2026", datePublished: "2026-02-20", timeUsed: "6 months",
   },
   gamma: {
     whoIsItFor: "Founders pitching investors, students presenting projects, educators creating course materials, and anyone who needs beautiful presentations without design skills.",
@@ -142,7 +144,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I created a 12-slide investor pitch deck from a 200-word brief in 4 minutes using Gamma. The design was genuinely polished — better than 80% of the decks I see in real life. The one-click restyle feature let me swap the entire visual theme instantly. The only weakness is that Gamma-made decks look like Gamma-made decks to a trained eye.",
     useCases: ["Creating investor pitch decks from a brief", "Building client-ready proposals quickly", "Making course curriculum slides for educators", "Converting blog posts into presentation format"],
     verdict: "The best free presentation tool available. If you spend more than 2 hours per month making slides, Gamma will save you more time than any other tool on this list.",
-    rating: 4.5, lastTested: "March 2026", timeUsed: "1 year",
+    rating: 4.5, lastTested: "March 2026", datePublished: "2026-02-25", timeUsed: "1 year",
   },
   'beautiful-ai': {
     whoIsItFor: "Business professionals, managers, and teams who need to create consistent, on-brand presentations regularly without a dedicated designer.",
@@ -150,7 +152,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Beautiful.ai's smart slides auto-format as you type — add a bullet point and the layout adjusts automatically. It removes the most frustrating part of PowerPoint: manually resizing and aligning elements. The team collaboration features are excellent for agencies managing multiple client decks.",
     useCases: ["Creating weekly business reports and board presentations", "Building sales decks with consistent branding", "Team collaboration on shared presentation templates", "Converting data into visual presentation slides"],
     verdict: "Better than PowerPoint for anyone who isn't a designer. The lack of a free plan is the main drawback but the $12/month Pro plan is fair for the time it saves.",
-    rating: 4.1, lastTested: "February 2026", timeUsed: "8 months",
+    rating: 4.1, lastTested: "February 2026", datePublished: "2026-01-28", timeUsed: "8 months",
   },
   ocoya: {
     whoIsItFor: "Solo social media managers, small business owners, freelance content creators, and agencies managing 2–5 client accounts who need a single tool for writing, designing, and scheduling.",
@@ -158,7 +160,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Ocoya compresses what normally takes 3 separate tools — a caption writer, a design tool, and a scheduler — into one dashboard. The AI caption generator is genuinely good for Instagram and LinkedIn. The design tool is Canva-lite but works for quick posts. The scheduling is reliable and I haven't had a missed post in 4 months of use.",
     useCases: ["Scheduling 30 posts across Instagram, LinkedIn, and Twitter at once", "Generating AI captions for product launch announcements", "Creating and posting content for client social media accounts", "Maintaining consistent posting frequency without daily manual work"],
     verdict: "The best value all-in-one social media tool for solo operators and small teams. Not as powerful as Hootsuite for large operations, but far more affordable and easier to use.",
-    rating: 4.0, lastTested: "April 2026", timeUsed: "4 months",
+    rating: 4.0, lastTested: "April 2026", datePublished: "2026-03-01", timeUsed: "4 months",
   },
   replit: {
     whoIsItFor: "Students learning to code, indie developers prototyping ideas, non-technical founders who want to build and deploy apps without local setup, and teachers running live coding sessions.",
@@ -166,7 +168,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Replit is where I'd send anyone who wants to learn coding in 2026. The browser-based environment eliminates the 'how do I install Node.js' problem that kills beginner motivation. The AI assistant (Ghostwriter) is integrated directly into the editor and understands the context of your entire project — not just the line you're on. I've used it to prototype 3 side projects without touching my local machine.",
     useCases: ["Learning Python, JavaScript, or any of 50+ languages without setup", "Prototyping web apps and sharing them instantly with a URL", "Building and deploying side projects without DevOps knowledge", "Collaborative coding sessions with teammates in real time"],
     verdict: "The best platform for learning to code or prototyping quickly. The free tier's usage limits can frustrate heavy users, but for getting started or building small projects it's unmatched.",
-    rating: 4.2, lastTested: "April 2026", timeUsed: "1.5 years",
+    rating: 4.2, lastTested: "April 2026", datePublished: "2026-03-05", timeUsed: "1.5 years",
   },
   'notion-ai': {
     whoIsItFor: "Knowledge workers, teams, and individuals who already use Notion and want AI capabilities built directly into their existing workspace rather than switching between tools.",
@@ -174,7 +176,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Notion AI's biggest advantage is context — it can read and reference all your existing Notion pages when generating content. Ask it to write a blog post and it can pull in your brand voice guidelines, existing content, and style preferences from your workspace. The AI agents that run tasks autonomously for 20 minutes (Notion 3.0) are genuinely novel.",
     useCases: ["Summarising meeting notes into action items automatically", "Writing blog drafts that match your existing brand voice", "Building project wikis from scattered notes", "Translating documents into multiple languages in-context"],
     verdict: "Essential for existing Notion users. The $10/month AI add-on pays for itself if you spend even 30 minutes per day in Notion.",
-    rating: 4.4, lastTested: "March 2026", timeUsed: "1.5 years",
+    rating: 4.4, lastTested: "March 2026", datePublished: "2026-02-28", timeUsed: "1.5 years",
   },
   taskade: {
     whoIsItFor: "Freelancers, small remote teams (2–15 people), and solopreneurs who need task management, project tracking, team chat, and AI assistance without paying for 4 separate tools.",
@@ -182,7 +184,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Taskade's custom AI agents are the standout feature. I built an agent that automatically breaks down any project brief into tasks, assigns due dates, and creates a Kanban board — in under 10 seconds. The video collaboration built directly into tasks is something I haven't seen in any competing tool. The mind map view is genuinely useful for brainstorming.",
     useCases: ["Managing client projects with automated task breakdown", "Running a remote team without needing Slack + Asana + Notion separately", "Building AI agents to handle repetitive workflow steps", "Organising personal projects with AI-powered mind maps"],
     verdict: "The most feature-rich tool at its price point. The interface takes a week to fully learn but the investment pays off for any freelancer or small team.",
-    rating: 4.2, lastTested: "April 2026", timeUsed: "10 months",
+    rating: 4.2, lastTested: "April 2026", datePublished: "2026-03-10", timeUsed: "10 months",
   },
 };
 
@@ -378,7 +380,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
     "name": `${tool.name} Review ${new Date().getFullYear()}`,
     "headline": `${tool.name} Review — ${tool.tagline}`,
     "description": `Honest ${tool.name} review by Navneet Arya (AI Nexus). ${tool.tagline}. Tested personally for ${content?.timeUsed || 'several months'}.`,
-    "datePublished": "2026-01-01",
+    "datePublished": content?.datePublished ?? TODAY,
     "dateModified": content?.lastTested ? new Date(content.lastTested).toISOString().split('T')[0] : TODAY,
     "url": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}`,
     "reviewBody": content ? `${content.myTake} ${content.verdict}` : tool.description,
@@ -447,6 +449,16 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      {/* W2-3: Standalone BreadcrumbList schema — Google prefers this as a separate script */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_CONFIG.siteUrl },
+          { "@type": "ListItem", "position": 2, "name": tool.category, "item": `${SITE_CONFIG.siteUrl}/?category=${tool.category}` },
+          { "@type": "ListItem", "position": 3, "name": `${tool.name} Review`, "item": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}` }
+        ]
+      }) }} />
 
       {/* Nav */}
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="tool" />
