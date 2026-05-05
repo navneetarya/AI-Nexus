@@ -422,15 +422,10 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
     }
   };
 
-  const faqSchema = faqs.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(f => ({
-      "@type": "Question",
-      "name": f.q,
-      "acceptedAnswer": { "@type": "Answer", "text": f.a }
-    }))
-  } : null;
+  // NOTE: FAQPage schema is intentionally NOT rendered here.
+  // prerender.mjs already injects FAQPage JSON-LD into the static HTML at build time.
+  // Rendering it again from the React component creates a duplicate that Google flags as
+  // "Duplicate field 'FAQPage'" in Search Console. See CompareArticlePage.tsx for same pattern.
 
   const section = (content: React.ReactNode, mb = 14) => (
     <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: mb }}>
@@ -448,7 +443,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
-      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      {/* FAQPage schema injected by prerender.mjs — do NOT add a second one here */}
       {/* W2-3: Standalone BreadcrumbList schema — Google prefers this as a separate script */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
