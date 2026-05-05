@@ -86,6 +86,15 @@ export const TOOLS: Tool[] = [
       output: 'Struggling to find the right words for your cold email? AI tools like Rytr have changed the game for freelancers. In under 60 seconds, you can generate a personalised outreach email that sounds human, not robotic — and actually gets replies.',
       editorialNote: 'Generated using the "Cold Email" template with a 20-word brief: "AI tools for freelancers, professional tone." I made zero edits — this was the first output. It\'s a solid first draft that needs 10 minutes of personalisation before sending. The structure and hook are genuinely good.',
     },
+    dailyUseCases: [
+      'Batching 10 Instagram captions in 15 minutes using the Social Media Caption template — one brief, 10 output variants, pick the 3 best ones.',
+      'Writing a 5-email cold outreach sequence for a freelance pitch. Each email took under 2 minutes to generate and required only light personalisation.',
+      'Generating 3 headline variants for a landing page A/B test — faster than brainstorming manually, and the hook angles are genuinely varied each time.',
+      'Drafting a LinkedIn post from a bullet-point brief: I type 4 key points, select Professional tone, and get a ready-to-edit post in 90 seconds.',
+      'Writing 20 product descriptions for a Shopify store — Rytr\'s Product Description template handles tone, length, and feature emphasis automatically.',
+    ],
+    notForYou: 'Rytr is not the right tool if you primarily write 1,500+ word articles. Beyond 800 words, it loses coherence and tends to repeat itself — especially on complex topics. It also doesn\'t browse the web or reference current sources, so research-heavy pieces need fact-checking. If long-form SEO articles are your main output, Writesonic or Frase will serve you better. Teams needing multi-user collaboration or brand voice training should look at Jasper\'s team plans. Rytr is a short-form tool at a short-form price — trying to force it into a long-form article workflow is fighting its design.',
+    lastTestedISO: '2026-05-05',
   },
   {
     id: 'w4', slug: 'quillbot',
@@ -491,6 +500,8 @@ export const TOOL_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     { q: "Does Rytr work in languages other than English?", a: "Yes — Rytr supports 30+ languages including Hindi, Spanish, French, German, and Arabic. The quality in non-English languages is solid for short-form content." },
     { q: "What is Rytr's affiliate commission?", a: "Rytr pays 30% recurring commission. That means if someone you refer stays subscribed, you earn 30% of their monthly payment every single month — indefinitely." },
     { q: "Can Rytr write full blog posts?", a: "Rytr can write blog outlines, intros, and sections, but the free and Saver plans limit output length. For full 1,500+ word articles, the Unlimited plan at $29/month works, or a dedicated tool like Writesonic." },
+    { q: "Is Rytr worth upgrading from free to paid?", a: "The free plan gives 10,000 characters/month — enough for 3–4 short posts or a batch of social captions. You'll want to upgrade to the Saver plan ($9/month) the moment you hit that limit. The Saver plan adds unlimited characters, all 40+ use cases (including Magic Command), the Chrome extension, and a plagiarism checker. My recommendation: use the free plan for 2 weeks. If you're hitting the limit or want the Chrome extension for writing inside Gmail and Google Docs, the $9/month upgrade pays for itself within the first week of heavy use. Skip the $29/month Unlimited plan unless you manage a content team — the Saver plan covers 95% of individual creator needs." },
+    { q: "How does Rytr compare to Writesonic?", a: "Rytr and Writesonic solve different problems. Rytr ($9/month) is built for short-form copy: social captions, cold emails, ad copy, and outlines. Writesonic ($15/month+) is built for long-form: full SEO blog posts, AI articles, and structured content with web research. If you primarily write social content, emails, and short copy — Rytr wins on price and simplicity. If you need full 1,500-word articles that rank on Google, Writesonic is the better investment. The free plans reflect this: Rytr's is more generous for short content (10,000 chars vs Writesonic's 25 generations). For a full side-by-side breakdown, see the Rytr vs Writesonic comparison." },
   ],
   podcastle: [
     { q: "Is Podcastle free to use?", a: "Yes. Podcastle's free plan lets you record and edit podcasts with basic features. The main limitation is export quality and total recording minutes. For starting a first show or low-volume podcasting, the free plan is genuinely functional." },

@@ -33,6 +33,10 @@ const TOOL_CONTENT: Record<string, {
   /** ISO 8601 date this review was first published — used in Review schema datePublished */
   datePublished: string;
   timeUsed: string;
+  /** W3-1: Free vs Paid upgrade decision guide — targets "is [tool] worth it" keyword */
+  upgradeGuide?: string;
+  /** W3-1: Quick verdict vs nearest competitor — links to compare article */
+  vsVerdict?: { tool: string; summary: string; compareSlug: string; };
 }> = {
   grammarly: {
     whoIsItFor: "Anyone who writes in English professionally — students submitting assignments, freelancers writing client emails, marketers drafting campaigns, or developers writing documentation.",
@@ -51,12 +55,27 @@ const TOOL_CONTENT: Record<string, {
     rating: 4.2, lastTested: "February 2026", datePublished: "2026-01-20", timeUsed: "6 months",
   },
   rytr: {
-    whoIsItFor: "Freelancers, students, and budget-conscious creators who want AI writing help without a $50/month commitment. Particularly useful for those running on tight budgets since the pricing is the lowest in the category.",
-    whoShouldSkip: "Anyone who needs to write detailed, long-form articles regularly. Rytr caps output at a level that makes it frustrating for 2,000+ word pieces unless you're on the Unlimited plan.",
-    myTake: "Rytr is the most beginner-friendly AI writing tool I've tested. The interface is cleaner than Jasper or Writesonic, and the free plan gives you 10,000 characters per month — enough to write 3–4 blog posts. The quality isn't quite at GPT-4 level but it's impressively solid for the price. The 40+ use-case templates mean you're never staring at a blank page.",
-    useCases: ["Writing Instagram captions and short social posts", "Drafting cold email outreach sequences", "Creating bio sections for LinkedIn profiles", "Generating blog post outlines and section starters"],
-    verdict: "The best entry point into AI writing. If you're new to AI tools and unsure about spending money, start here — the free plan is generous and $9/month unlimited is the best deal in the category.",
-    rating: 4.0, lastTested: "April 2026", datePublished: "2026-01-25", timeUsed: "8 months",
+    whoIsItFor: "Rytr is best suited for freelancers, solopreneurs, and students who want a capable AI writing assistant without spending $40–50/month on premium tools. In 2026, with most AI writing tools raising prices, Rytr's $9/month Saver plan remains the best value in the category. The free plan — 10,000 characters per month — is genuinely functional, not a stripped teaser, making it ideal for anyone who wants to test AI writing before committing money. Social media managers who write captions, ads, and short-form copy daily will get the most from Rytr's 40+ use-case templates. It's also excellent for non-native English speakers: the 30+ language support is among the best at this price point. Bloggers who write 1–3 posts per week will find the Saver plan covers all their short to mid-form writing needs without friction.",
+    whoShouldSkip: "Anyone who needs to write detailed, long-form articles regularly. Rytr loses coherence beyond 800 words and tends to repeat itself on complex topics — frustrating if 2,000-word posts are your standard output. It also doesn't access the web or reference current sources, so research-heavy writing needs manual fact-checking. Content teams needing brand voice training, multi-user collaboration, or enterprise workflows should look at Jasper. If ranking on Google with long-form SEO content is your primary goal, Writesonic or Frase will serve you better at a slightly higher price.",
+    myTake: "I've been using Rytr for 8 months across multiple content types — cold email campaigns, LinkedIn post batches, blog post outlines, product descriptions, and ad copy variants. The interface is the most beginner-friendly in the AI writing category. Jasper requires you to understand content strategy before it's useful. Writesonic has a real learning curve around its article workflow. Rytr's use-case templates are labelled so clearly that you can get usable output within 90 seconds of signing up for the first time.\n\nThat said, Rytr has clear limits. For long-form content — anything above 800 words that needs genuine coherence — it starts to lose the thread of your argument and repeats itself. I use it almost exclusively for short-form work: email sequences, social captions, product descriptions, and quick blog post openers. For those tasks, the quality-to-price ratio is genuinely unmatched in 2026.\n\nThe plagiarism checker on the Saver plan is a useful bonus — I use it to verify AI outputs before publishing anything with specific claims. The Chrome extension is underrated: writing inside Gmail and Google Docs without switching tabs saves more time than you'd expect. If you're building a content pipeline on a budget, start with Rytr's free plan. You'll know within a week whether it fits your workflow.",
+    useCases: [
+      "Social media managers: writing 10 Instagram captions in 15 minutes from a single brief",
+      "Freelancers: generating a 5-email cold outreach sequence in under 10 minutes",
+      "Shopify sellers: writing 20 product descriptions using the Product Description template",
+      "LinkedIn creators: turning a 4-bullet brief into a publish-ready post in 90 seconds",
+      "Marketers: generating 3 headline variants for A/B testing landing pages",
+    ],
+    verdict: "The best entry point into AI writing in 2026. The free plan is generous and genuinely useful — not a crippled demo. At $9/month unlimited, the Saver plan is the best price-to-output deal in the AI writing category. If you're new to AI tools and unsure about the investment, start here. You'll know within a week if it belongs in your workflow — and if it does, it'll save you 3–5 hours every week on short-form writing.",
+    rating: 4.0,
+    lastTested: "May 2026",
+    datePublished: "2026-01-25",
+    timeUsed: "8 months",
+    upgradeGuide: "The free plan gives you 10,000 characters per month, 20+ use cases, and outputs in 30+ languages — enough to write 3–4 short blog posts or a batch of social media captions. It's a real free plan, not a 7-day trial.\n\nThe upgrade to Saver ($9/month) is worth it the moment you hit the character limit — which happens faster than expected when writing email sequences or batching content. Saver adds: unlimited characters, all 40+ use cases (including Magic Command, which lets you give free-form instructions), the Chrome extension for writing inside Gmail and Google Docs, and a plagiarism checker.\n\nThe Unlimited plan ($29/month) adds priority support, a custom use case builder, and team access. This is worth it only if you're managing a content team of 3+ or need to train Rytr on a specific brand voice.\n\nMy recommendation: use the free plan for 2 weeks. If you're hitting the character limit or want the Chrome extension, upgrade to Saver. The $9/month investment pays for itself within the first week of consistent use. Skip Unlimited unless you're running a team.",
+    vsVerdict: {
+      tool: "Writesonic",
+      summary: "Rytr and Writesonic are the two most popular budget AI writing tools in 2026 — but they solve different problems. Writesonic (from $15/month) is built for long-form, SEO-optimised content: its Article Writer 6.0 produces full 1,500-word drafts from a keyword. Rytr ($9/month) is built for short-form volume: social captions, cold emails, ad copy, and outlines.\n\nIf you need full articles, Writesonic wins. If you need short-form copy at scale, Rytr is faster and cheaper.\n\nThe free plans tell the story: Rytr gives 10,000 characters/month with no time limit. Writesonic gives 25 generations/month with significant format restrictions. For freelancers, email marketers, and social media managers, Rytr's free plan is more immediately useful.\n\nMy recommendation: if your primary need is SEO blog content, choose Writesonic. If you write short-form copy in volume, Rytr at $9/month is the smarter buy. See the full breakdown below.",
+      compareSlug: "rytr-vs-writesonic",
+    },
   },
   quillbot: {
     whoIsItFor: "Students, academics, researchers, and ESL writers who need to improve existing text rather than generate content from scratch.",
@@ -381,7 +400,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
     "headline": `${tool.name} Review — ${tool.tagline}`,
     "description": `Honest ${tool.name} review by Navneet Arya (AI Nexus). ${tool.tagline}. Tested personally for ${content?.timeUsed || 'several months'}.`,
     "datePublished": content?.datePublished ?? TODAY,
-    "dateModified": content?.lastTested ? new Date(content.lastTested).toISOString().split('T')[0] : TODAY,
+    "dateModified": tool.lastTestedISO ?? (content?.lastTested ? new Date(content.lastTested).toISOString().split('T')[0] : TODAY),
     "url": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}`,
     "reviewBody": content ? `${content.myTake} ${content.verdict}` : tool.description,
     "reviewRating": {
@@ -733,7 +752,52 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </div>
         )}
 
-        {/* ── Pricing breakdown (Week 2) ── */}
+        {/* ── W3-1: Free vs Paid upgrade guide ── */}
+        {content?.upgradeGuide && (
+          section(
+            <>
+              {sectionTitle(`Is Rytr Worth Upgrading? Free vs Paid — 2026 Guide`)}
+              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 14px', lineHeight: 1.65, fontWeight: 300 }}>
+                Here's exactly when the free plan stops being enough and when the upgrade pays for itself.
+              </p>
+              {content.upgradeGuide.split('\n\n').map((para, i) => (
+                <p key={i} style={{ fontSize: 14, color: C.txt, lineHeight: 1.8, margin: '0 0 14px', fontWeight: 300 }}>{para}</p>
+              ))}
+              <div style={{ marginTop: 8 }}>
+                <a href={tool.affiliateLink} target="_blank" rel="noopener noreferrer"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '10px 20px', fontSize: 13, fontWeight: 600, textDecoration: 'none' }}>
+                  Start free — no credit card required <ExternalLink size={13} />
+                </a>
+              </div>
+            </>
+          )
+        )}
+
+        {/* ── W3-1: Rytr vs nearest competitor quick verdict ── */}
+        {content?.vsVerdict && (() => {
+          const vs = content.vsVerdict!;
+          const compareArticleExists = COMPARE_ARTICLES.some(a => a.slug === vs.compareSlug);
+          return section(
+            <>
+              {sectionTitle(`Rytr vs ${vs.tool} — Quick Verdict`)}
+              {vs.summary.split('\n\n').map((para, i) => (
+                <p key={i} style={{ fontSize: 14, color: C.txt, lineHeight: 1.8, margin: '0 0 14px', fontWeight: 300 }}>{para}</p>
+              ))}
+              {compareArticleExists && (
+                <div style={{ marginTop: 8, padding: '14px 18px', background: cardBg, borderRadius: 12, border: `1px solid ${cardBrd}`, display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 8 }}>
+                  <span style={{ fontSize: 13, color: C.mut }}>Read the full Rytr vs {vs.tool} breakdown →</span>
+                  <button
+                    onClick={() => navigate(`/compare/${vs.compareSlug}`)}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer', padding: '8px 18px', fontSize: 13, fontWeight: 600, fontFamily: "'Syne', sans-serif" }}>
+                    Full comparison →
+                  </button>
+                </div>
+              )}
+            </>
+          );
+        })()}
+
+
         {tool.pricingBreakdown && tool.pricingBreakdown.length > 0 && (
           section(
             <>

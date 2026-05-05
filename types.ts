@@ -50,6 +50,9 @@ export interface Tool {
 
   /** "Who should NOT use this" — different from whoShouldSkip in TOOL_CONTENT */
   notForYou?: string;
+
+  /** W3-1: ISO 8601 date the tool was last tested — used in Review schema dateModified */
+  lastTestedISO?: string;
 }
 
 export interface FilterState {
