@@ -681,7 +681,7 @@ function generateSitemap() {
   function urlBlock({ loc, priority, freq, mod, images = [] }) {
     const imgXml = images.map(img => `    <image:image>
       <image:loc>${img.loc}</image:loc>
-      <image:title>${img.title}</image:title>
+      <image:title>${esc(img.title)}</image:title>
     </image:image>`).join('\n');
     return `  <url>
     <loc>${loc}</loc>
