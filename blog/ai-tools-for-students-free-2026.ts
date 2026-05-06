@@ -11,7 +11,7 @@ const post: BlogPost = {
   title: 'Best Free AI Tools for Students 2026 — Essays, Research, Coding & Presentations',
   metaDescription: 'The best free AI tools for students in 2026 — personally tested for essays, research summaries, paraphrasing, coding help, and presentations. Every tool has a genuinely useful permanent free plan.',
   datePublished: '2026-05-04',
-  dateModified: '2026-05-05',
+  dateModified: '2026-05-06',
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '9 min read',

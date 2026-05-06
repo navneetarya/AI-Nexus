@@ -12,7 +12,7 @@ const post: BlogPost = {
   metaDescription:
     'I tested Taskade, Writesonic, Frase, and more as Notion AI alternatives. Here\'s which one is actually better — and which is free. Honest review with real outputs.',
   datePublished: '2026-05-05',
-  dateModified: '2026-05-05',
+  dateModified: '2026-05-06',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',

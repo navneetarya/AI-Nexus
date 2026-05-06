@@ -11,7 +11,7 @@ const post: BlogPost = {
   title: 'Best AI Podcast Tools 2026 — Record, Edit & Enhance Your Show',
   metaDescription: 'The best AI podcast tools in 2026 — tested for recording, editing, voice enhancement, and transcription. Covers Podcastle, Murf AI, Descript, and Adobe Podcast with honest free plan notes.',
   datePublished: '2026-05-04',
-  dateModified: '2026-05-04',
+  dateModified: '2026-05-06',
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '6 min read',

@@ -9,7 +9,7 @@ const post: BlogPost = {
   title: 'Best Grammarly Alternatives in 2026 — Tested & Ranked',
   metaDescription: 'Looking for a cheaper or better alternative to Grammarly? I tested QuillBot, Writesonic, Rytr, and ProWritingAid. Here are the best Grammarly alternatives that actually work.',
   datePublished: '2026-05-03',
-  dateModified: '2026-05-03',
+  dateModified: '2026-05-06',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',

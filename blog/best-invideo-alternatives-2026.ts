@@ -12,7 +12,7 @@ const post: BlogPost = {
   metaDescription:
     'I tested Pictory, Opus Clip, and Murf AI as InVideo alternatives. Here\'s which one is actually better for faceless YouTube, short clips, and video repurposing in 2026.',
   datePublished: '2026-05-05',
-  dateModified: '2026-05-05',
+  dateModified: '2026-05-06',
   author: 'Navneet Arya',
   category: 'Video',
   readTime: '7 min read',

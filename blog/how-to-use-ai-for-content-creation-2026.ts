@@ -12,7 +12,7 @@ const post: BlogPost = {
   title: 'How to Use AI for Content Creation in 2026 — Full Workflow (Writing, Images, Video & Audio)',
   metaDescription: 'A complete guide on how to use AI for content creation in 2026 — covering AI writing tools, image generators, video makers, and voiceover tools. Real workflows, free plan options, and honest limitations.',
   datePublished: '2026-05-05',
-  dateModified: '2026-05-05',
+  dateModified: '2026-05-06',
   author: 'Navneet Arya',
   category: 'Guides',
   readTime: '10 min read',

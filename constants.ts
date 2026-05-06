@@ -12,21 +12,11 @@ export const SITE_CONFIG = {
   twitterUrl: "https://twitter.com/ainexustools",
   newsletterNote: "Get notified when new AI tool reviews drop. No spam.",
 
-  // ── Beehiiv newsletter embed ───────────────────────────────────────────
-  // HOW TO GET THIS URL (one-time setup):
-  //   1. Sign up at https://www.beehiiv.com  (free up to 2,500 subscribers)
-  //   2. Create a new Publication  →  name it "AI Nexus Weekly"
-  //   3. Dashboard → Grow → Forms → "+ Create Form"
-  //   4. Choose "Embed" type → style it → click "Get Embed Code"
-  //   5. Copy the URL inside src="..." — it looks like:
-  //        https://embeds.beehiiv.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-  //   6. Paste it below, replacing YOUR_EMBED_ID
-  //   7. Commit & push — both the hero strip and compare pages will go live.
-  // ACTION REQUIRED: Replace the URL below with your actual Beehiiv embed URL.
-  // Steps: Beehiiv Dashboard → Grow → Forms → select your form → Get Embed Code
-  // The correct URL starts with: https://embeds.beehiiv.com/
-  // Example: https://embeds.beehiiv.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-  beehiivEmbedUrl: "https://embeds.beehiiv.com/YOUR_EMBED_ID_HERE",
+  // ── Newsletter lead capture ────────────────────────────────────────────
+  // Leads are submitted via components/BeehiivForm.tsx (now NotionForm) which
+  // posts name + email to the Cloudflare Worker proxy at WORKER_URL.
+  // The Worker writes each lead to the "AI Nexus Leads" Notion database.
+  // Worker URL is configured directly in components/BeehiivForm.tsx.
 };
 
 // ── Affiliate links — all verified & active ───────────────────────────────

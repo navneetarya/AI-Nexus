@@ -9,7 +9,7 @@ const post: BlogPost = {
   title: 'Best AI Tools for Freelancers 2026 — Work Faster, Earn More',
   metaDescription: 'The best AI tools for freelancers in 2026 — tested across writing, design, productivity, social media and coding. Cut your workload in half without cutting your rates.',
   datePublished: '2026-05-03',
-  dateModified: '2026-05-03',
+  dateModified: '2026-05-06',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '6 min read',
