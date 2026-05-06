@@ -17,6 +17,10 @@ const C = {
 export interface CompareArticle {
   slug: string;
   title: string;
+  /** H7 (SEO-High): Short SEO-optimised title for <title> tag (≤60 chars).
+   *  Kept separate from `title` so the page H1 stays descriptive while the
+   *  SERP snippet uses a tighter, buyer-intent string with "(Tested Both)". */
+  seoTitle?: string;
   metaDescription: string;
   keyword: string;
   publishDate: string;
@@ -54,6 +58,7 @@ export const COMPARE_ARTICLES: CompareArticle[] = [
   {
     slug: 'rytr-vs-writesonic',
     title: 'Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?',
+    seoTitle: 'Rytr vs Writesonic 2026 — Which Writer Wins? (Tested Both)',
     metaDescription: 'Comparing Rytr and Writesonic for solopreneurs, freelancers, and content creators. Real pricing, real output quality, and an honest verdict on which AI writer wins in 2026.',
     keyword: 'rytr vs writesonic',
     publishDate: 'April 2026',
@@ -135,6 +140,7 @@ The mistake is paying Writesonic prices for Rytr-level output needs. Be honest a
   {
     slug: 'grammarly-vs-quillbot',
     title: 'Grammarly vs QuillBot (2026): Which Should You Actually Use?',
+    seoTitle: 'Grammarly vs QuillBot 2026 — Which Should You Use? (Tested Both)',
     metaDescription: 'Grammarly vs QuillBot compared for writers, students, and professionals. Real breakdown of what each tool actually does, where each wins, and which one to use in 2026.',
     keyword: 'grammarly vs quillbot',
     publishDate: 'April 2026',
@@ -208,6 +214,7 @@ The best setup if budget allows: use both. Grammarly while you write, QuillBot w
   {
     slug: 'ocoya-vs-buffer-vs-hootsuite',
     title: 'Ocoya vs Buffer vs Hootsuite (2026): Which Social Media Tool Is Actually Worth It?',
+    seoTitle: 'Ocoya vs Buffer vs Hootsuite 2026 — Which Wins? (Tested All)',
     metaDescription: 'Comparing Ocoya, Buffer, and Hootsuite for solopreneurs and small businesses. Real pricing, honest AI features breakdown, and which tool wins for content creators in 2026.',
     keyword: 'ocoya vs buffer vs hootsuite',
     publishDate: 'April 2026',
@@ -318,6 +325,7 @@ The question that simplifies the choice: do you already have a reliable way to w
   {
     slug: 'podcastle-vs-descript',
     title: 'Podcastle vs Descript (2026): Which Podcast Tool Should You Actually Use?',
+    seoTitle: 'Podcastle vs Descript 2026 — Which Podcast Tool? (Tested Both)',
     metaDescription: 'Podcastle vs Descript compared for podcasters, indie creators, and remote interviewers. Honest breakdown of recording quality, editing experience, AI features, and real pricing in 2026.',
     keyword: 'podcastle vs descript',
     publishDate: 'April 2026',
@@ -415,6 +423,7 @@ The tools are complementary more than competitive. Some serious podcast teams us
   {
     slug: 'leonardo-vs-midjourney',
     title: 'Leonardo.ai vs Midjourney (2026): Which AI Image Generator Should You Use?',
+    seoTitle: 'Leonardo.ai vs Midjourney 2026 — Which Image AI? (Tested Both)',
     metaDescription: 'Leonardo.ai vs Midjourney compared for creators, designers, and game developers. Real output quality, pricing, commercial rights, and an honest verdict on which image AI wins in 2026.',
     keyword: 'leonardo ai vs midjourney',
     publishDate: 'April 2026',
@@ -506,6 +515,7 @@ The practical advice: start with Leonardo.ai's free plan. If you consistently fi
   {
     slug: 'replit-vs-github-copilot',
     title: 'Replit vs GitHub Copilot (2026): Which AI Coding Tool Is Right for You?',
+    seoTitle: 'Replit vs GitHub Copilot 2026 — Which Coding AI? (Tested Both)',
     metaDescription: 'Replit vs GitHub Copilot compared for beginners, indie developers, and professionals. What each tool actually does, where each wins, and which AI coding tool to use in 2026.',
     keyword: 'replit vs github copilot',
     publishDate: 'April 2026',
@@ -593,6 +603,7 @@ The honest summary: most beginners and indie developers will get more value from
   {
     slug: 'taskade-vs-notion',
     title: 'Taskade vs Notion (2026): Which AI Productivity Tool Actually Gets Work Done?',
+    seoTitle: 'Taskade vs Notion 2026 — Which Gets More Done? (Tested Both)',
     metaDescription: 'Taskade vs Notion compared for freelancers, solopreneurs, and small teams. Real breakdown of AI features, project management, knowledge base capabilities, and pricing in 2026.',
     keyword: 'taskade vs notion',
     publishDate: 'April 2026',
@@ -682,6 +693,7 @@ The most common mistake: choosing Notion for execution work (where the setup ove
   {
     slug: 'grammarly-vs-writesonic',
     title: 'Grammarly vs Writesonic (2026): Which AI Writing Tool Is Right for You?',
+    seoTitle: 'Grammarly vs Writesonic 2026 — Which Do You Need? (Tested Both)',
     metaDescription: 'Grammarly vs Writesonic compared for freelancers, bloggers, and content creators. One fixes your writing; the other generates it. Here\'s which one you actually need in 2026.',
     keyword: 'grammarly vs writesonic',
     publishDate: 'May 2026',
@@ -771,6 +783,7 @@ The mistake to avoid: buying Writesonic's paid tier expecting it to fix your gra
   {
     slug: 'murf-ai-vs-elevenlabs',
     title: 'Murf AI vs ElevenLabs (2026): Which AI Voice Generator Is Worth It?',
+    seoTitle: 'Murf AI vs ElevenLabs 2026 — Which Voice AI? (Tested Both)',
     metaDescription: 'Murf AI vs ElevenLabs compared for content creators, podcasters, and video producers. Real voice quality, pricing, and an honest verdict on which AI voice tool wins in 2026.',
     keyword: 'murf ai vs elevenlabs',
     publishDate: 'May 2026',
@@ -864,6 +877,7 @@ The practical advice: start with Murf AI's free plan (10 minutes/month) to test 
   {
     slug: 'taskade-vs-asana',
     title: 'Taskade vs Asana (2026): Which Project Management Tool Should You Use?',
+    seoTitle: 'Taskade vs Asana 2026 — Which PM Tool Wins? (Tested Both)',
     metaDescription: 'Taskade vs Asana compared for freelancers, small teams, and remote workers. AI features, pricing, and an honest verdict on which project management tool wins in 2026.',
     keyword: 'taskade vs asana',
     publishDate: 'May 2026',

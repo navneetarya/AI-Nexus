@@ -95,8 +95,10 @@ function App() {
   if (compareMatch) {
     const article = COMPARE_ARTICLES.find(a => a.slug === compareMatch[1]);
     if (article) {
+      // H7 (SEO-High): seoTitle is the shorter ≤60-char <title> tag string;
+      // falls back to the full title if seoTitle is not defined.
       updateMeta(
-        `${article.title} | AI Nexus`,
+        `${article.seoTitle ?? article.title} | AI Nexus`,
         article.metaDescription,
         `${SITE_CONFIG.siteUrl}/compare/${article.slug}/`
       );

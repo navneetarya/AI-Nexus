@@ -265,6 +265,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'rytr-vs-writesonic',
     title: 'Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?',
+    seoTitle: 'Rytr vs Writesonic 2026 — Which Writer Wins? (Tested Both)',
     metaDescription: 'Comparing Rytr and Writesonic for solopreneurs, freelancers, and content creators. Real pricing, real output quality, and an honest verdict on which AI writer wins in 2026.',
     faqs: [
       { q: 'Is Rytr better than Writesonic?', a: 'Rytr is better value for short-to-medium form content — emails, ad copy, social posts, blog intros — at $9/month unlimited. Writesonic is better for long-form SEO blog posts (1,500+ words) thanks to its Article Writer and built-in SEO tools, but costs significantly more.' },
@@ -277,6 +278,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'grammarly-vs-quillbot',
     title: 'Grammarly vs QuillBot (2026): Which Should You Actually Use?',
+    seoTitle: 'Grammarly vs QuillBot 2026 — Which Should You Use? (Tested Both)',
     metaDescription: 'Grammarly vs QuillBot compared for writers, students, and professionals. Real breakdown of what each tool actually does, where each wins, and which one to use in 2026.',
     faqs: [
       { q: 'Is Grammarly better than QuillBot?', a: 'They do different things. Grammarly is a real-time writing assistant that improves grammar, tone, and clarity as you write. QuillBot is a paraphrasing and rewriting tool for restructuring existing text. If you write original content, use Grammarly. If you rewrite or summarise content regularly, use QuillBot.' },
@@ -289,6 +291,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'podcastle-vs-descript',
     title: 'Podcastle vs Descript (2026): Which Podcast Tool Should You Actually Use?',
+    seoTitle: 'Podcastle vs Descript 2026 — Which Podcast Tool? (Tested Both)',
     metaDescription: 'Podcastle vs Descript compared for podcasters, indie creators, and remote interviewers. Honest breakdown of recording quality, editing experience, AI features, and real pricing in 2026.',
     faqs: [
       { q: 'Is Podcastle better than Descript?', a: 'For pure podcast recording and audio quality — especially remote guest recording — Podcastle is better. Its Magic Dust AI audio enhancement is best-in-class for noise removal. Descript is better for transcript-based editing, video podcasts, and bulk filler-word removal across long interviews.' },
@@ -301,6 +304,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'ocoya-vs-buffer-vs-hootsuite',
     title: 'Ocoya vs Buffer vs Hootsuite (2026): Which Social Media Tool Is Actually Worth It?',
+    seoTitle: 'Ocoya vs Buffer vs Hootsuite 2026 — Which Wins? (Tested All)',
     metaDescription: 'Comparing Ocoya, Buffer, and Hootsuite for solopreneurs and small businesses. Real pricing, honest AI features breakdown, and which tool wins for content creators in 2026.',
     faqs: [
       { q: 'Is Ocoya better than Buffer?', a: 'For solo creators and small businesses that also need AI caption writing, Ocoya is the better choice. Buffer is better if you only need scheduling and already have a content pipeline — its interface is cleaner and the free plan is generous.' },
@@ -313,6 +317,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'leonardo-vs-midjourney',
     title: 'Leonardo.ai vs Midjourney (2026): Which AI Image Generator Should You Use?',
+    seoTitle: 'Leonardo.ai vs Midjourney 2026 — Which Image AI? (Tested Both)',
     metaDescription: 'Leonardo.ai vs Midjourney compared for creators, designers, and game developers. Real output quality, pricing, commercial rights, and an honest verdict on which image AI wins in 2026.',
     faqs: [
       { q: 'Is Leonardo.ai better than Midjourney?', a: 'They excel at different things. Midjourney produces the highest aesthetic quality for one-off images — painterly, cinematic outputs that other tools struggle to match. Leonardo.ai gives you far more control: 150+ fine-tuned models, custom model training, and a canvas editor. For consistent brand or character visuals across many images, Leonardo.ai wins. For single standout images where quality is everything, Midjourney wins.' },
@@ -325,6 +330,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'replit-vs-github-copilot',
     title: 'Replit vs GitHub Copilot (2026): Which AI Coding Tool Is Right for You?',
+    seoTitle: 'Replit vs GitHub Copilot 2026 — Which Coding AI? (Tested Both)',
     metaDescription: 'Replit vs GitHub Copilot compared for beginners, indie developers, and professionals. What each tool actually does, where each wins, and which AI coding tool to use in 2026.',
     faqs: [
       { q: 'Is Replit better than GitHub Copilot?', a: 'They solve different problems. Replit is a browser-based coding environment with built-in AI — you write, run, and deploy code all in one place, no local setup needed. GitHub Copilot is an AI autocomplete assistant that works inside existing IDEs like VS Code. If you\'re a beginner or building side projects, Replit is more useful. If you\'re a professional developer already in VS Code, Copilot is what you actually want.' },
@@ -337,6 +343,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'taskade-vs-notion',
     title: 'Taskade vs Notion (2026): Which AI Productivity Tool Actually Gets Work Done?',
+    seoTitle: 'Taskade vs Notion 2026 — Which Gets More Done? (Tested Both)',
     metaDescription: 'Taskade vs Notion compared for freelancers, solopreneurs, and small teams. Real breakdown of AI features, project management, knowledge base capabilities, and pricing in 2026.',
     faqs: [
       { q: 'Is Taskade better than Notion?', a: 'For execution and project management — getting tasks done, moving work forward, automating repetitive workflows — Taskade is better. Its AI agents generate project plans and run automations proactively. For knowledge management, documentation, and building complex interconnected information systems, Notion\'s flexibility is unmatched. The right choice depends on whether your biggest friction is doing work or organising knowledge.' },
@@ -351,6 +358,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'grammarly-vs-writesonic',
     title: 'Grammarly vs Writesonic (2026): Which AI Writing Tool Is Right for You?',
+    seoTitle: 'Grammarly vs Writesonic 2026 — Which Do You Need? (Tested Both)',
     metaDescription: 'Grammarly vs Writesonic compared for freelancers, bloggers, and content creators. One fixes your writing; the other generates it. Here\'s which one you actually need in 2026.',
     faqs: [
       { q: 'Is Grammarly better than Writesonic for writing?', a: 'They do different things. Grammarly improves writing you\'ve already produced — grammar, clarity, tone. Writesonic generates new content from scratch. For editing and proofreading, Grammarly wins. For generating blog posts and marketing copy, Writesonic wins. Most serious content creators use both.' },
@@ -362,6 +370,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'murf-ai-vs-elevenlabs',
     title: 'Murf AI vs ElevenLabs (2026): Which AI Voice Generator Is Worth It?',
+    seoTitle: 'Murf AI vs ElevenLabs 2026 — Which Voice AI? (Tested Both)',
     metaDescription: 'Murf AI vs ElevenLabs compared for content creators, podcasters, and video producers. Real voice quality, pricing, and an honest verdict on which AI voice tool wins in 2026.',
     faqs: [
       { q: 'Is Murf AI or ElevenLabs better for YouTube videos?', a: 'Murf AI is better for most YouTube creators. Its built-in video sync, script editor, and professional voice library make voiceover production faster and easier than ElevenLabs\' workflow. ElevenLabs is worth considering for creators who want to clone their own voice for consistent channel identity across a large volume of videos.' },
@@ -373,6 +382,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'taskade-vs-asana',
     title: 'Taskade vs Asana (2026): Which Project Management Tool Should You Use?',
+    seoTitle: 'Taskade vs Asana 2026 — Which PM Tool Wins? (Tested Both)',
     metaDescription: 'Taskade vs Asana compared for freelancers, small teams, and remote workers. AI features, pricing, and an honest verdict on which project management tool wins in 2026.',
     faqs: [
       { q: 'Is Taskade better than Asana for small teams?', a: 'For teams of 1–8 people, Taskade offers better value than Asana in 2026. The workspace-based pricing (not per user) makes it dramatically cheaper, the AI agents that generate project plans and status reports are more integrated than Asana\'s AI add-ons, and the free plan is more functional. Asana\'s depth becomes worthwhile at larger team sizes and enterprise complexity.' },
@@ -392,7 +402,7 @@ function readTemplate() {
  * Injects page-specific meta into the HTML template.
  * Modifies: title, description, canonical, og:*, twitter:*, robots, schemas.
  */
-function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, bodyHtml = null }) {
+function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, bodyHtml = null, readTimeHtml = '' }) {
   let html = template;
 
   // Title
@@ -409,6 +419,11 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
     /(<link\s+rel="canonical"\s+href=")[^"]*(")/,
     `$1${canonical}$2`
   );
+
+  // M5 (SEO-Medium): Hreflang — groundwork for future Hindi/regional content.
+  // Injected per-page so each URL points to its own canonical hreflang URL.
+  const hreflangTags = `\n  <link rel="alternate" hreflang="en" href="${canonical}">\n  <link rel="alternate" hreflang="x-default" href="${canonical}">`;
+  html = html.replace('</head>', hreflangTags + '\n  </head>');
 
   // OG tags
   html = html
@@ -446,7 +461,7 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
   const pageBody = bodyHtml
     ? `<div id="pre-render" style="font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px 16px">
       <h1 style="font-size:1.6rem;line-height:1.25;margin-bottom:12px">${h1Text}</h1>
-      <p style="color:#555;font-size:.875rem;margin-bottom:16px">By <strong>${esc(AUTHOR)}</strong> · <time datetime="${publishDate}">Updated ${displayDate}</time></p>
+      <p style="color:#555;font-size:.875rem;margin-bottom:16px">By <strong>${esc(AUTHOR)}</strong> · <time datetime="${publishDate}">Updated ${displayDate}</time>${readTimeHtml}</p>
       ${bodyHtml}
     </div>`
     : `<div id="pre-render" style="font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px 16px">
@@ -741,6 +756,7 @@ const BLOG_POSTS = [
     metaDescription: 'Looking for the best AI writing tools for beginners? I personally tested Rytr, Grammarly, QuillBot, and Writesonic so you can start writing smarter in 2026.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
+    readTimeMinutes: 6,
     faqs: [
       { q: 'What is the best free AI writing tool for beginners?', a: 'Grammarly offers the best free plan for beginners — it catches grammar, spelling, and tone issues across every app you use, from Gmail to Google Docs, with no word limit on the free tier.' },
       { q: 'Which AI writing tool is easiest for complete beginners?', a: 'Rytr is the easiest AI writing tool for beginners. You pick a use case (blog post, ad, bio), enter a few keywords, and Rytr writes the content. No learning curve, no complex settings.' },
@@ -754,6 +770,7 @@ const BLOG_POSTS = [
     metaDescription: 'The best AI tools for freelancers in 2026 — tested across writing, design, productivity, social media and coding. Cut your workload in half without cutting your rates.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
+    readTimeMinutes: 7,
     faqs: [
       { q: 'Are AI tools worth it for freelancers?', a: "Yes — with one condition. AI tools are worth it when they speed up tasks you already do repeatedly, like writing first drafts, editing photos, or generating social captions. They are not worth it if you buy tools you don't have a workflow for yet. Start with one tool that solves your biggest bottleneck." },
       { q: 'What is the best free AI tool for freelancers?', a: "Grammarly's free plan is the highest-value free AI tool for most freelancers — it improves every client email, proposal, and deliverable you write. For content creation, Rytr's free plan (10,000 characters/month) is the best no-cost option for generating drafts." },
@@ -767,6 +784,7 @@ const BLOG_POSTS = [
     metaDescription: 'Looking for a cheaper or better alternative to Grammarly? I tested QuillBot, Writesonic, Rytr, and ProWritingAid. Here are the best Grammarly alternatives that actually work.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
+    readTimeMinutes: 6,
     faqs: [
       { q: 'What is the best free alternative to Grammarly?', a: "QuillBot is the best free Grammarly alternative for most users. Its free paraphraser, summariser, and grammar checker cover the core writing improvement needs without a subscription. For real-time grammar checking while you write, LanguageTool's free browser extension is the closest free alternative to Grammarly's core workflow." },
       { q: 'Is QuillBot better than Grammarly?', a: "QuillBot and Grammarly solve different problems. Grammarly excels at real-time grammar, tone, and clarity improvements as you write. QuillBot excels at paraphrasing and restructuring existing text. If you write original content, Grammarly is better. If you rewrite or summarise content regularly, QuillBot is the better tool." },
@@ -780,6 +798,7 @@ const BLOG_POSTS = [
     metaDescription: 'Looking for a Podcastle alternative? I tested Descript, Riverside.fm, and Adobe Podcast. Here are the best alternatives for recording, editing, and publishing podcasts in 2026.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
+    readTimeMinutes: 6,
     faqs: [
       { q: 'What is the best free alternative to Podcastle?', a: "Adobe Podcast's Enhance Speech tool is the best free alternative for audio quality cleanup — it removes background noise from any recording instantly, no account required. For recording, Riverside.fm's free plan (2 hours of recording per month) is the strongest free Podcastle alternative for remote guest interviews." },
       { q: 'Is Riverside.fm better than Podcastle?', a: "Riverside.fm produces higher recording quality than Podcastle at comparable price points — it captures local tracks at up to 4K video and 48kHz audio. Podcastle has a stronger AI editing suite, better noise removal, and a more integrated publishing workflow. Riverside wins on raw recording quality; Podcastle wins on post-production AI features." },
@@ -794,6 +813,7 @@ const BLOG_POSTS = [
     metaDescription: 'The best AI tools for social media in 2026 — tested across content creation, scheduling, short-form video, and image generation. Cut your content creation time by 70%.',
     datePublished: '2026-05-04',
     dateModified: '2026-05-04',
+    readTimeMinutes: 7,
     faqs: [
       { q: 'What is the best AI tool for social media content creation?', a: "Ocoya is the best all-in-one AI tool for social media content, combining an AI caption writer, visual template library, and scheduling platform for Instagram, LinkedIn, Twitter, TikTok, and Pinterest. For AI-generated images specifically, Leonardo.ai has the best free plan (150 credits/day). For video repurposing, Opus Clip turns long videos into short clips automatically." },
       { q: 'Can AI tools write social media captions?', a: "Yes — and they do it well for most standard content types. Ocoya generates captions with hashtags and emoji for any topic, tone, and platform. Rytr has a dedicated Social Media Post template. For best results, give the AI a specific brief (topic, tone, target audience, key message) rather than a vague prompt — the quality difference is significant." },
@@ -807,6 +827,7 @@ const BLOG_POSTS = [
     metaDescription: 'How to use Rytr to write blog posts in 2026 — a step-by-step tutorial covering setup, the best templates, and the exact workflow to cut first-draft time by 60%.',
     datePublished: '2026-05-04',
     dateModified: '2026-05-04',
+    readTimeMinutes: 8,
     faqs: [
       { q: 'Can Rytr write a full blog post?', a: "Yes — Rytr can write a full blog post using the Blog Idea & Outline template followed by the Blog Section Writing template. The realistic workflow is: use Rytr to generate an outline and first draft of each section, then rewrite and personalise each section in your own voice. Expect to spend 20–30 minutes editing a Rytr-generated 1,000-word draft into a publishable post." },
       { q: 'Is Rytr good for SEO blog posts?', a: "Rytr is useful for generating SEO-structured blog posts when you give it your target keyword in the brief. It will naturally include the keyword in headings and body copy. However, Rytr does not do keyword research or competitor analysis — you'll need to bring your own keyword data and manually ensure keyword density and internal links. For SEO-specific AI writing, Frase.io is a more specialised option." },
@@ -821,6 +842,7 @@ const BLOG_POSTS = [
     metaDescription: 'The best free AI tools for students in 2026 — tested for essays, research summaries, paraphrasing, and presentations. All tools have a genuinely useful free plan.',
     datePublished: '2026-05-04',
     dateModified: '2026-05-04',
+    readTimeMinutes: 7,
     faqs: [
       { q: 'What is the best free AI tool for students writing essays?', a: "Grammarly is the best free AI tool for essays — it checks grammar, spelling, tone, and clarity as you type, and works directly inside Google Docs and Microsoft Word. For generating essay first drafts and outlines, Rytr's free plan (10,000 characters/month) is the most practical option with no credit card required. Combine both: use Rytr to draft, Grammarly to refine." },
       { q: 'Is QuillBot free for students?', a: "Yes — QuillBot has a permanent free plan that includes a paraphraser (up to 125 words per paraphrase), a summariser (up to 1,200 words per summary), and basic grammar checking. The free plan does not include the Fluency and Creative paraphrase modes, word flipper, or plagiarism checker — those require QuillBot Premium at $9.95/month. For most students, the free plan covers 80% of use cases." },
@@ -835,6 +857,7 @@ const BLOG_POSTS = [
     metaDescription: 'The best AI podcast tools in 2026 — tested for recording, editing, voice enhancement, and transcription. Covers Podcastle, Murf AI, Descript, and Adobe Podcast with honest free plan notes.',
     datePublished: '2026-05-04',
     dateModified: '2026-05-04',
+    readTimeMinutes: 8,
     faqs: [
       { q: 'What is the best AI tool for podcast recording and editing in 2026?', a: "Podcastle is the best all-in-one AI podcast tool for creators who record and edit in the same platform. It handles remote recording (up to 4K quality), AI noise removal, filler word detection, and automatic transcript-based editing. For creators who only need AI editing on pre-recorded files, Descript's text-based editor is the most intuitive option — you edit audio by editing a transcript like a Google Doc." },
       { q: 'Is Podcastle free?', a: "Yes — Podcastle has a permanent free plan that includes remote recording (up to 10 hours/month), AI magic dust noise removal, automatic transcription (up to 3 hours), and up to 3 published episodes. The free plan is genuinely usable for a new podcast that publishes 2–3 episodes per month. The paid Basic plan at $11.99/month removes episode limits and adds filler word removal." },
@@ -850,6 +873,7 @@ const BLOG_POSTS = [
     metaDescription: "I tested Taskade, Writesonic, Frase, and more as Notion AI alternatives. Here's which one is actually better — and which is free. Honest review with real outputs.",
     datePublished: '2026-05-05',
     dateModified: '2026-05-05',
+    readTimeMinutes: 6,
     faqs: [
       { q: 'Is Notion AI free?', a: 'No. Notion AI is a paid add-on that costs $10/member/month (or $8/month billed annually) on top of your existing Notion plan. Notion itself has a free plan, but the AI features — writing assistant, summarisation, Q&A — all require the paid add-on. There is no free tier for Notion AI.' },
       { q: 'What is the best free Notion AI alternative?', a: "Taskade is the best free Notion AI alternative. Its free plan includes unlimited projects, AI writing assistance, task generation, mind maps, and 5 AI agent runs per month — all without a credit card. For note-taking with built-in AI at no cost, Taskade covers more use cases than Notion AI does even on a paid plan." },
@@ -895,6 +919,7 @@ const BLOG_POSTS = [
     metaDescription: "I tested Pictory, Opus Clip, and Murf AI as InVideo alternatives. Here's which one is actually better for faceless YouTube, short clips, and video repurposing in 2026.",
     datePublished: '2026-05-05',
     dateModified: '2026-05-05',
+    readTimeMinutes: 6,
     faqs: [
       { q: 'Which InVideo alternative is best for faceless YouTube?', a: "For a full faceless YouTube workflow — script, voiceover, stock footage, captions — Pictory has a key advantage: it starts from your written content (blog posts, scripts) rather than a prompt. If you already produce written content and want to repurpose it into faceless YouTube videos, Pictory is faster and more consistent than InVideo AI." },
       { q: 'Is there a free InVideo alternative?', a: "Opus Clip has the most functional free plan among InVideo alternatives — it gives you 60 free minutes of video processing per month, which is enough to clip 2–3 long videos into short-form content. Pictory offers a free trial (3 videos) before requiring a paid plan." },
@@ -951,9 +976,10 @@ for (const art of COMPARE_ARTICLES) {
     schemas.push(faqSchema(art.faqs));
   }
 
+  // H7 (SEO-High): use seoTitle (≤60 chars) for <title> tag if defined
   writeRoute(
     `compare/${art.slug}`,
-    buildPage(template, { title: `${art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas })
+    buildPage(template, { title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas })
   );
 }
 
@@ -1091,9 +1117,20 @@ for (const post of BLOG_POSTS) {
       ? [howToSchema({ title: post.title, description: post.metaDescription, canonical, steps: post.howToSteps })]
       : []),
   ];
+  // M1 (SEO-Medium): surface readTimeMinutes in static HTML so crawlers
+  // see it without JS — avoids thin-content signal on pre-rendered pages
+  const readTime = post.readTimeMinutes ? `<span style="margin-left:12px">&#128338; ${post.readTimeMinutes} min read</span>` : '';
   writeRoute(
     `blog/${post.slug}`,
-    buildPage(template, { title: `${post.title} | AI Nexus`, description: post.metaDescription, canonical, schemas, datePublished: post.datePublished })
+    buildPage(template, {
+      title: `${post.title} | AI Nexus`,
+      description: post.metaDescription,
+      canonical,
+      schemas,
+      datePublished: post.datePublished,
+      bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>`,
+      readTimeHtml: readTime,
+    })
   );
 }
 

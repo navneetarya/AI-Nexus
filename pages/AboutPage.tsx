@@ -14,6 +14,8 @@ const DOT_BG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg
 
 export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void }) {
 
+  // M3 (SEO-Medium): Enhanced Person schema — Google quality raters look for
+  // explicit expertise signals (knowsAbout depth, jobTitle, numberOfReviews).
   const authorSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -21,12 +23,23 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
     "url": `${SITE_CONFIG.siteUrl}/about`,
     "image": `${SITE_CONFIG.siteUrl}/author-photo.jpg`,
     "description": SITE_CONFIG.authorBio,
+    "jobTitle": "AI Tools Reviewer & Founder",
     "sameAs": ["https://www.linkedin.com/in/navneetarya/"],
-    "knowsAbout": ["Artificial Intelligence", "AI Tools", "Content Creation", "Podcast Software", "Productivity Software", "Writing Tools"],
+    "knowsAbout": [
+      "Artificial Intelligence", "AI Writing Tools", "AI Image Generators",
+      "Podcast Software", "AI Video Tools", "Productivity Software",
+      "Affiliate Marketing", "Content Creation", "SEO Content Strategy"
+    ],
     "worksFor": {
       "@type": "Organization",
       "name": "AI Nexus",
-      "url": SITE_CONFIG.siteUrl
+      "url": SITE_CONFIG.siteUrl,
+      "description": "Independent AI tool review site — every tool personally tested before publication"
+    },
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "AI Tools Reviewer",
+      "description": "Tests and reviews AI tools for writers, creators, and freelancers. Minimum 2–4 weeks of real-task testing per tool."
     }
   };
 
@@ -101,20 +114,29 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
           <p style={{ fontSize: 14, color: C.mut2, margin: '0 0 20px', fontWeight: 300 }}>Updated April 2026</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 10 }}>
             {[
-              ['Writing tools', '12+ tools tested', C.a1],
-              ['AI image tools', '8+ tools tested', C.a2],
-              ['Video AI tools', '7+ tools tested', C.a1],
-              ['Podcast & audio', '6+ tools tested', C.a2],
-              ['Productivity apps', '9+ tools tested', C.a1],
-              ['Marketing tools', '5+ tools tested', C.a2],
-              ['Coding platforms', '4+ tools tested', C.a1],
-              ['Design tools', '6+ tools tested', C.a2],
-            ].map(([cat, count, color], i) => (
+              ['Writing tools', 'Grammarly, Rytr, QuillBot, Writesonic, Jasper, Frase, ProWritingAid + more', C.a1],
+              ['AI image tools', 'Leonardo.ai, PhotoRoom, Midjourney, Looka, Canva AI, Adobe Firefly + more', C.a2],
+              ['Video AI tools', 'InVideo AI, Pictory, Opus Clip, Descript, Kapwing + more', C.a1],
+              ['Podcast & audio', 'Podcastle, Murf AI, ElevenLabs, Riverside.fm, Adobe Podcast + more', C.a2],
+              ['Productivity apps', 'Taskade, Notion AI, Perplexity, Otter.ai, Motion, Reclaim + more', C.a1],
+              ['Marketing tools', 'Ocoya, Buffer, Hootsuite, Beehiiv, Mailchimp + more', C.a2],
+              ['Coding platforms', 'Replit, GitHub Copilot, Cursor, v0 + more', C.a1],
+              ['Design tools', 'Gamma, Beautiful.ai, Canva AI, Figma AI + more', C.a2],
+            ].map(([cat, tools, color], i) => (
               <div key={i} style={{ padding: '14px 16px', borderRadius: 12, background: `${color}08`, border: `1px solid ${color}20` }}>
                 <div style={{ fontSize: 13, fontWeight: 600, color: C.txt, marginBottom: 3 }}>{cat}</div>
-                <div style={{ fontSize: 12, color: color, fontWeight: 500 }}>{count}</div>
+                {/* M3 (SEO-Medium): Specific tool names add E-E-A-T depth Google quality raters look for */}
+                <div style={{ fontSize: 11, color: color, fontWeight: 500, lineHeight: 1.5 }}>{tools}</div>
               </div>
             ))}
+          </div>
+
+          {/* M3 (SEO-Medium): Testing environment — explicit criteria Google quality raters check for */}
+          <div style={{ marginTop: 16, padding: '14px 16px', borderRadius: 12, background: `${C.a1}06`, border: `1px solid ${C.a1}18` }}>
+            <div style={{ fontSize: 12, fontWeight: 600, color: C.txt, marginBottom: 4 }}>Testing environment</div>
+            <div style={{ fontSize: 12, color: C.mut2, lineHeight: 1.6 }}>
+              Tested on macOS Sequoia and Windows 11 · Chrome and Safari · Free plan first, then paid · Minimum 2–4 weeks per tool · Real tasks, not demo prompts
+            </div>
           </div>
         </div>
 

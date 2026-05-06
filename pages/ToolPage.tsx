@@ -335,7 +335,11 @@ function ToolLogoImg({ slug, size = 32, name, color }: { slug: string; size?: nu
   const initial = (name ?? slug)[0].toUpperCase();
   if (domain && !err) {
     return (
-      <img src={`https://logo.clearbit.com/${domain}`} alt={name ?? slug}
+      <img src={`https://logo.clearbit.com/${domain}`}
+        // M4 (SEO-Medium): descriptive alt text for image SEO + accessibility.
+        // Format: "[Tool Name] AI tool logo" — captures image search queries
+        // and gives screen readers meaningful context.
+        alt={name ? `${name} AI tool logo` : slug}
         width={size} height={size}
         style={{ borderRadius: Math.round(size * 0.27), objectFit: 'contain', display: 'block', background: '#fff' }}
         onError={() => setErr(true)}
