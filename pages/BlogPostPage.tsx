@@ -1,8 +1,74 @@
 // pages/BlogPostPage.tsx
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { SharedNav } from './SharedNav';
 import { BlogPost } from '../blog/index';
 import { SITE_CONFIG } from '../constants';
+
+// ── H5 (SEO-High): Auto-link tool name mentions to /tools/{slug} pages ────────
+// Passes PageRank from blog content to monetisable tool review pages.
+// Keys are the display name (or alias) as it appears in blog prose;
+// values are the corresponding URL slug.
+const TOOL_MENTION_MAP: Record<string, string> = {
+  // Writing
+  'Grammarly':    'grammarly',
+  'Writesonic':   'writesonic',
+  'Rytr':         'rytr',
+  'QuillBot':     'quillbot',
+  'Quillbot':     'quillbot',
+  'Frase':        'frase',
+  'Frase.io':     'frase',
+  'Jasper':       'jasper',
+  // Image
+  'Leonardo.ai':  'leonardo-ai',
+  'PhotoRoom':    'photoroom',
+  'Photoroom':    'photoroom',
+  'Looka':        'looka',
+  // Video
+  'Pictory':      'pictory',
+  'Opus Clip':    'opus-clip',
+  'InVideo AI':   'invideo',
+  'InVideo':      'invideo',
+  // Audio
+  'Murf AI':      'murf-ai',
+  'Murf':         'murf-ai',
+  'Podcastle':    'podcastle',
+  'ElevenLabs':   'elevenlabs',
+  'Descript':     'descript',
+  // Design / Productivity
+  'Gamma':        'gamma',
+  'Beautiful.ai': 'beautiful-ai',
+  'Ocoya':        'ocoya',
+  'Canva AI':     'canva-ai',
+  'Notion AI':    'notion-ai',
+  'Taskade':      'taskade',
+  // Coding / Other
+  'Replit':       'replit',
+  'Perplexity':   'perplexity',
+};
+
+/**
+ * Wraps first occurrence of each tool name in blog HTML with an anchor tag.
+ * Skips text already inside an <a> tag to avoid nested links.
+ * Uses a single regex pass per tool so we only link the first mention.
+ */
+function autoLinkToolMentions(html: string, accentColor: string): string {
+  let result = html;
+  for (const [name, slug] of Object.entries(TOOL_MENTION_MAP)) {
+    // Escape special regex chars in the tool name
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Match the tool name NOT preceded by href=" (i.e. not already in a link)
+    // and not inside an existing anchor tag
+    const pattern = new RegExp(
+      `(?<!href=[^>]*)(?<!<a[^>]*)\\b(${escaped})\\b`,
+      'i'
+    );
+    const replacement =
+      `<a href="/tools/${slug}" style="color:${accentColor};text-decoration:underline;text-underline-offset:2px;font-weight:600;" ` +
+      `title="${name} review — AI Nexus">$1</a>`;
+    result = result.replace(pattern, replacement);
+  }
+  return result;
+}
 
 interface BlogPostPageProps {
   post:        BlogPost;
@@ -24,6 +90,12 @@ const C = {
 };
 
 export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPageProps) {
+  // H5: auto-linked blog content — memoised so it only re-runs when post changes
+  const linkedContent = useMemo(
+    () => autoLinkToolMentions(post.content, C.a1),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [post.slug]
+  );
   // Inject Article + FAQPage JSON-LD schema into <head>
   useEffect(() => {
     const canonical = `${SITE_CONFIG.siteUrl}/blog/${post.slug}`;
@@ -214,7 +286,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
         <div
           style={{ color: C.txt, lineHeight: 1.75, fontSize: 16 }}
           className="blog-content"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ __html: linkedContent }}
         />
 
         {/* FAQ Section */}
