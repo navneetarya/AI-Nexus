@@ -541,14 +541,20 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
       {/* Nav */}
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="tool" />
 
-      {/* Breadcrumb */}
-      <div style={{ maxWidth: 860, margin: '0 auto', padding: '12px 28px 0', fontSize: 12, color: C.mut2 }}>
-        <span style={{ cursor: 'pointer' }} onClick={() => navigate('/')}>Home</span>
-        <span style={{ margin: '0 6px' }}>›</span>
-        <span style={{ cursor: 'pointer' }} onClick={() => navigate('/')}>{tool.category}</span>
-        <span style={{ margin: '0 6px' }}>›</span>
-        <span style={{ color: accent, fontWeight: 500 }}>{tool.name}</span>
-      </div>
+      {/* Breadcrumb — H3 fix: semantic <nav> with aria-label + aria-current for SERP display */}
+      <nav aria-label="Breadcrumb" style={{ maxWidth: 860, margin: '0 auto', padding: '12px 28px 0' }}>
+        <ol style={{ display: 'flex', alignItems: 'center', listStyle: 'none', margin: 0, padding: 0, fontSize: 12, color: C.mut2 }}>
+          <li>
+            <span style={{ cursor: 'pointer' }} onClick={() => navigate('/')}>Home</span>
+          </li>
+          <li aria-hidden="true" style={{ margin: '0 6px' }}>›</li>
+          <li>
+            <span style={{ cursor: 'pointer' }} onClick={() => navigate(`/?category=${encodeURIComponent(tool.category)}`)}>{tool.category}</span>
+          </li>
+          <li aria-hidden="true" style={{ margin: '0 6px' }}>›</li>
+          <li aria-current="page" style={{ color: accent, fontWeight: 500 }}>{tool.name}</li>
+        </ol>
+      </nav>
 
       <div style={{ maxWidth: 860, margin: '0 auto', padding: '24px 28px 96px' }}>
 

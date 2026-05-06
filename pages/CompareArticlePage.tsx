@@ -1143,14 +1143,20 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
 
       <main style={{ maxWidth: 760, margin: '0 auto', padding: '2.5rem 1.25rem 5rem' }}>
 
-        {/* Breadcrumb */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: C.mut2, marginBottom: '1.5rem' }}>
-          <span style={{ cursor: 'pointer', color: C.a1 }} onClick={() => navigate('/')}>Home</span>
-          <ChevronRight size={12} />
-          <span>Compare</span>
-          <ChevronRight size={12} />
-          <span>{article.keyword}</span>
-        </div>
+        {/* Breadcrumb — H3 fix: semantic <nav> with aria-label + aria-current */}
+        <nav aria-label="Breadcrumb" style={{ marginBottom: '1.5rem' }}>
+          <ol style={{ display: 'flex', alignItems: 'center', listStyle: 'none', margin: 0, padding: 0, gap: 6, fontSize: 13, color: C.mut2 }}>
+            <li>
+              <span style={{ cursor: 'pointer', color: C.a1 }} onClick={() => navigate('/')}>Home</span>
+            </li>
+            <li aria-hidden="true"><ChevronRight size={12} /></li>
+            <li>
+              <span style={{ cursor: 'pointer', color: C.a1 }} onClick={() => navigate('/')}>Compare</span>
+            </li>
+            <li aria-hidden="true"><ChevronRight size={12} /></li>
+            <li aria-current="page">{article.keyword}</li>
+          </ol>
+        </nav>
 
         {/* Title */}
         <h1 style={{ fontSize: 'clamp(1.5rem, 4vw, 2rem)', fontWeight: 800, color: C.txt, lineHeight: 1.2, margin: '0 0 0.75rem', letterSpacing: '-0.03em' }}>
