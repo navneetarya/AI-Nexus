@@ -391,6 +391,21 @@ const COMPARE_ARTICLES = [
       { q: 'What is the free plan difference between Taskade and Asana?', a: 'Both tools have free plans. Asana\'s free plan supports up to 15 users but limits features significantly — no custom fields, no advanced automation, and no reporting. Taskade\'s free plan offers unlimited projects and workspaces with basic AI credits. For individual users and very small teams, Taskade\'s free tier provides more practical functionality.' },
     ],
   },
+
+  // ── photoroom-vs-remove-bg ────────────────────────────────────────────────
+  // L2 (SEO-Low): "photoroom vs remove.bg" — 590/mo, KD 9 — bottom-of-funnel buyer query
+  {
+    slug: 'photoroom-vs-remove-bg',
+    title: 'PhotoRoom vs Remove.bg (2026): Which Background Remover Is Actually Better?',
+    seoTitle: 'PhotoRoom vs Remove.bg 2026 — Which Wins? (Tested Both)',
+    metaDescription: 'PhotoRoom vs Remove.bg compared for e-commerce sellers, marketers, and creators. Real accuracy tests, free plan breakdown, and an honest verdict on which background remover to use in 2026.',
+    faqs: [
+      { q: 'Is PhotoRoom better than Remove.bg?', a: 'PhotoRoom is the better long-term tool for anyone doing product photography regularly. It removes backgrounds more accurately on complex subjects, replaces backgrounds with AI-generated studio scenes, supports batch editing of hundreds of images, and has excellent iOS and Android apps. Remove.bg is faster for single one-off images with no subscription needed.' },
+      { q: 'Is Remove.bg completely free?', a: 'Remove.bg offers free background removal but the free download is a low-resolution watermarked preview (50px wide). Full-resolution downloads cost credits — roughly $0.20 per image without a subscription, or $0.14 per image in bulk plans. There is no permanently free full-resolution plan.' },
+      { q: 'Which is better for e-commerce — PhotoRoom or Remove.bg?', a: 'PhotoRoom is significantly better for e-commerce. The batch background removal processes an entire catalogue automatically. The AI background generator creates marketplace-compliant white backgrounds and lifestyle scenes. The brand kit ensures consistent styling across all products. Remove.bg can only remove backgrounds — every subsequent step requires another tool.' },
+      { q: 'Can PhotoRoom replace a professional product photographer?', a: 'PhotoRoom replaces a studio setup for standard e-commerce product images — white backgrounds, lifestyle background variants, shadow effects, and consistent branding across a catalogue. It does not replace photographers for editorial, fashion, or creative campaigns where artistic direction matters. For Shopify, Amazon, and Etsy listings, PhotoRoom produces commercially viable images most buyers cannot distinguish from studio shots.' },
+    ],
+  },
 ];
 
 // ── HTML manipulation helpers ─────────────────────────────────────────────────
@@ -421,7 +436,10 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
   );
 
   // M5 (SEO-Medium): Hreflang — groundwork for future Hindi/regional content.
-  // Injected per-page so each URL points to its own canonical hreflang URL.
+  // Strip any hreflang tags inherited from the index.html template (which point
+  // to the homepage) before injecting the correct per-page URL. Without this,
+  // each pre-rendered page ends up with 4 hreflang tags: 2 wrong + 2 correct.
+  html = html.replace(/<link\s+rel="alternate"\s+hreflang="[^"]*"\s+href="[^"]*"\s*>\s*/g, '');
   const hreflangTags = `\n  <link rel="alternate" hreflang="en" href="${canonical}">\n  <link rel="alternate" hreflang="x-default" href="${canonical}">`;
   html = html.replace('</head>', hreflangTags + '\n  </head>');
 
@@ -889,6 +907,7 @@ const BLOG_POSTS = [
     metaDescription: 'A complete guide on how to use AI for content creation in 2026 — covering AI writing tools, image generators, video makers, and voiceover tools. Real workflows, free plan options, and honest limitations.',
     datePublished: '2026-05-05',
     dateModified:  '2026-05-05',
+    readTimeMinutes: 10,
     mentionedTools: ['rytr','grammarly','leonardo-ai','photoroom','pictory','invideo','podcastle','murf-ai'],
     howToSteps: [
       { name: 'Generate your content outline with Rytr',

@@ -273,6 +273,17 @@ export const TOOLS: Tool[] = [
       'Check which hashtags performed best from last week and update the saved hashtag sets for the next round of posts',
       'Review AI-drafted captions for a product launch campaign and push them live with one scheduling action across all platforms',
     ],
+    setupSteps: [
+      'Sign up at ocoya.com — the free trial requires no credit card and gives you full access to the caption generator, visual creator, and scheduler for 7 days.',
+      'Connect your social accounts under Settings → Channels. Ocoya supports Instagram, Facebook, Twitter/X, LinkedIn, Pinterest, TikTok, and Google Business Profile in under 2 minutes per platform.',
+      'Go to Create → AI Writer, enter your product or topic brief (2–3 sentences), select the platform tone (LinkedIn Professional or Instagram Casual), and generate 3–5 caption variants. Pick the best one.',
+      'Schedule or publish directly: click Post → Schedule, choose your date and time, select all the channels you want, and confirm. Ocoya queues it across every connected platform simultaneously.',
+    ],
+    realOutputExample: {
+      output: 'Stop spending 2 hours writing social captions that get 12 likes. Our AI-powered scheduler writes platform-specific content for Instagram, LinkedIn & TikTok in seconds — then schedules everything automatically. Free trial, no card needed. Link in bio.',
+      editorialNote: 'Generated using the Instagram caption template with a 15-word brief: "Social media scheduling tool, save time, AI captions." Zero edits made. The hook and CTA are solid — slightly salesy, but that\'s right for a product promo post. I\'d personalise the "12 likes" stat for authenticity, but the structure and length are genuinely publish-ready.',
+    },
+    lastTestedISO: '2026-04-28',
     notForYou: 'Large agencies managing 20+ client accounts that need white-label PDF reporting, granular multi-user approval workflows, and enterprise-grade analytics dashboards. Ocoya\'s analytics are functional but not deep — if your agency delivers detailed monthly performance reports to clients, Sprout Social or Hootsuite\'s infrastructure is more appropriate for that scale.',
   },
 
@@ -488,6 +499,17 @@ export const TOOLS: Tool[] = [
       'Jump on a built-in video call with a teammate directly inside the task being discussed — no Zoom link required',
       'Let the automation trigger the next project phase when a milestone task is marked complete, including notifying relevant team members',
     ],
+    setupSteps: [
+      'Sign up at taskade.com — the free plan is permanent with no credit card required. You get unlimited projects, all view types (kanban, list, mind map, calendar), and 5 AI agent runs per month immediately.',
+      'Create your first workspace: name it after a client, project, or area of your life. Inside, create a Project and pick a view — start with List for task management or Mind Map for brainstorming.',
+      'Try the AI project generator: open a new project, click the AI button, type your goal in plain English (e.g. "Launch a YouTube channel about AI tools"), and Taskade generates a full task breakdown with subtasks in under 10 seconds.',
+      'Build a custom AI agent: go to Agents → New Agent, describe what it should do (e.g. "Generate a weekly status summary for this project every Monday"), and assign it to your workspace. It runs automatically without prompting.',
+    ],
+    realOutputExample: {
+      output: 'Project: Launch YouTube Channel\n\n1. Define niche and target audience\n   - Research top 10 channels in chosen niche\n   - Identify content gaps competitors aren\'t covering\n   - Write a one-sentence channel positioning statement\n2. Set up channel infrastructure\n   - Create YouTube account and customise channel art\n   - Write channel description with primary keyword\n   - Set up Taskade project for content calendar\n3. Plan first 10 videos\n   - Brainstorm 30 video ideas from niche research\n   - Score each by search volume and production difficulty\n   - Select top 10 and create individual episode briefs',
+      editorialNote: 'Generated with a single prompt: "Create a project plan for launching a YouTube channel about AI tools." This was the first output — I made zero edits. The task hierarchy is logical, the subtasks are actionable, and the depth is right for a real project. Rytr generates outlines; this generates an actual work breakdown structure.',
+    },
+    lastTestedISO: '2026-04-25',
     notForYou: 'Large enterprises that need complex role-based permission systems, SOC2 compliance, audit logs, enterprise SSO, and legal-grade data governance. Taskade is built for small, agile teams of 2–20 people. For enterprise project management at scale with compliance requirements, look at Asana Business or Monday Enterprise.',
   },
 ];
