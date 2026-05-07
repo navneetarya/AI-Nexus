@@ -15,7 +15,9 @@ import post6 from './how-to-use-rytr-to-write-blog-posts';
 // Week 7 additions — long-tail content blitz (students + podcast clusters)
 import post7 from './ai-tools-for-students-free-2026';
 import post8 from './best-ai-podcast-tools-2026';
+// SEO-07 Tier 2: jasper ai alternatives — 3,200/mo, KD 24, high buyer intent
+import post11 from './jasper-ai-alternatives';
 
-export const BLOG_POSTS: BlogPost[] = [post1, post2, post3, post4, post5, post6, post7, post8, post9, post10];
+export const BLOG_POSTS: BlogPost[] = [post1, post2, post3, post4, post5, post6, post7, post8, post9, post10, post11];
 
 export type { BlogPost };
