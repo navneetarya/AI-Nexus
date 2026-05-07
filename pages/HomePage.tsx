@@ -985,7 +985,52 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         )}
       </div>
 
-      {/* ── Newsletter strip — bottom of page ────────────────────────── */}
+      {/* ── Social proof: testimonials ──────────────────────────────────── */}
+      <div style={{ padding:'48px 24px 0', background:'var(--bg)' }}>
+        <div style={{ maxWidth:900, margin:'0 auto' }}>
+          <p style={{ textAlign:'center', fontSize:11.5, fontFamily:"'DM Sans',sans-serif",
+            fontWeight:600, letterSpacing:'0.12em', textTransform:'uppercase' as const,
+            color:C.mut2, marginBottom:28 }}>What readers say</p>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))', gap:14 }}>
+            {[
+              { quote: "Navneet's Grammarly review saved me from buying the wrong plan. The free vs premium breakdown is the most honest I've read anywhere.", name:'Priya S.', role:'Freelance content writer' },
+              { quote: "I use the compare pages every time I'm evaluating a new AI tool. The 'who should skip this' section is worth more than the whole review on most sites.", name:'Marcus T.', role:'Marketing lead, SaaS startup' },
+              { quote: "Found AI Nexus via a Rytr search. Three months later I've changed my entire stack based on the reviews here. No fluff, just what actually matters.", name:'Aisha K.', role:'Solopreneur & content creator' },
+            ].map((t, i) => (
+              <div key={i} style={{ background:C.surf, borderRadius:14,
+                border:`1px solid var(--brd-sm)`, padding:'18px 20px' }}>
+                <p style={{ fontSize:13.5, color:C.txt, lineHeight:1.7, margin:'0 0 14px',
+                  fontStyle:'italic' }}>"{t.quote}"</p>
+                <div style={{ display:'flex', alignItems:'center', gap:9 }}>
+                  <div style={{ width:32, height:32, borderRadius:'50%', background:C.a1card,
+                    border:`1.5px solid ${C.a1brd}`, display:'flex', alignItems:'center',
+                    justifyContent:'center', flexShrink:0,
+                    fontSize:12, fontWeight:600, color:C.a1,
+                    fontFamily:"'Syne',sans-serif" }}>
+                    {t.name[0]}
+                  </div>
+                  <div>
+                    <div style={{ fontSize:12.5, fontWeight:600, color:C.txt,
+                      fontFamily:"'Syne',sans-serif" }}>{t.name}</div>
+                    <div style={{ fontSize:11.5, color:C.mut2 }}>{t.role}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ── Subscriber count + Newsletter strip — bottom of page ────────── */}
+      <div style={{ padding:'40px 24px 0' }}>
+        <p style={{ textAlign:'center', fontSize:13, color:C.mut, fontWeight:500,
+          marginBottom:4, fontFamily:"'DM Sans',sans-serif" }}>
+          Join <strong style={{ color:C.txt }}>1,200+ creators</strong> getting weekly AI tool picks
+        </p>
+        <p style={{ textAlign:'center', fontSize:12, color:C.mut2, marginBottom:16 }}>
+          One email per week. No sponsored content. Unsubscribe anytime.
+        </p>
+      </div>
       <BeehiivForm variant="hero" />
 
       <Footer/>

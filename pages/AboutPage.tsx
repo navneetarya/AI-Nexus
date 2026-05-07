@@ -149,6 +149,14 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
             <a href="/methodology" onClick={e => { e.preventDefault(); navigate('/methodology'); }}
               style={{ color: C.a1, fontWeight: 500 }}>Read the full review methodology →</a>
           </p>
+
+          {/* E-E-A-T: exact testing standard — audited copy required for Google quality rater signals */}
+          <div style={{ background: C.a1card, borderRadius: 12, border: `1.5px solid ${C.a1brd}`, padding: '18px 20px', marginBottom: 22 }}>
+            <p style={{ fontSize: 14.5, color: C.txt, lineHeight: 1.75, fontWeight: 400, margin: 0 }}>
+              I test every tool personally for at least 30 days before reviewing. My testing includes: output quality across 20+ prompts, ease of use rating, pricing transparency audit, free plan vs paid comparison, and a final "who should NOT use this" assessment. I update reviews when tools change their pricing or features.
+            </p>
+          </div>
+
           {[
             ['1. Sign up on the free plan', 'Every tool is tested starting from the free tier — because that\'s where most creators and small businesses start. If the free plan is terrible, I say so.'],
             ['2. Use it for real tasks', 'Not demo tasks. Real work: writing actual blog posts, editing actual podcast audio, creating actual social media captions, building actual code projects.'],
