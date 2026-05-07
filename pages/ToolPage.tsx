@@ -521,6 +521,13 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
     </div>
   );
 
+  /** G5 GEO: semantic <section> wrapper with aria-label for AI crawler extraction */
+  const geoSection = (ariaLabel: string, content: React.ReactNode, mb = 14) => (
+    <section aria-label={ariaLabel} style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: mb }}>
+      {content}
+    </section>
+  );
+
   const sectionTitle = (text: string) => (
     <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 18px', letterSpacing: '-0.02em' }}>
       {text}
@@ -628,17 +635,17 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </div>
         </div>
 
-        {/* ── Quick verdict ── */}
+        {/* ── G5 GEO: Quick Verdict — semantic <section> so AI crawlers parse "Is [Tool] Worth It?" ── */}
         {content && (
-          <div style={{ background: C.sukbg, borderRadius: 14, border: `1.5px solid ${C.sukbrd}`, padding: '18px 22px', marginBottom: 14, display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+          <section aria-label="Quick Verdict" style={{ background: C.sukbg, borderRadius: 14, border: `1.5px solid ${C.sukbrd}`, padding: '18px 22px', marginBottom: 14, display: 'flex', gap: 14, alignItems: 'flex-start' }}>
             <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'rgba(16,185,129,.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Award size={16} color="#059669" />
             </div>
             <div>
-              <div style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 5 }}>Quick verdict</div>
+              <h2 style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.06em', textTransform: 'uppercase' as const, margin: '0 0 5px', fontFamily: "'DM Sans', sans-serif" }}>Is {tool.name} Worth It? — Quick Verdict</h2>
               <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.65, margin: 0, fontWeight: 300 }}>{content.verdict}</p>
             </div>
-          </div>
+          </section>
         )}
 
         {/* ── Features grid ── */}
@@ -736,20 +743,20 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           )
         )}
 
-        {/* ── Who is it for / who should skip ── */}
+        {/* ── G5 GEO: Who Should Use / Who Should NOT — semantic sections for AI extraction ── */}
         {content && (
-          section(
+          geoSection('Who Should Use This',
             <>
-              {sectionTitle('Who should use it')}
+              {sectionTitle(`Who Should Use ${tool.name}`)}
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-                <div style={{ padding: '16px', background: C.sukbg, borderRadius: 12, border: `1px solid ${C.sukbrd}` }}>
-                  <div style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.05em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Good fit for</div>
+                <section aria-label="Who Should Use This" style={{ padding: '16px', background: C.sukbg, borderRadius: 12, border: `1px solid ${C.sukbrd}` }}>
+                  <h3 style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.05em', textTransform: 'uppercase' as const, margin: '0 0 10px', fontFamily: "'DM Sans', sans-serif" }}>Good fit for</h3>
                   <p style={{ fontSize: 13, color: C.txt, lineHeight: 1.7, margin: 0, fontWeight: 300 }}>{content.whoIsItFor}</p>
-                </div>
-                <div style={{ padding: '16px', background: C.errbg, borderRadius: 12, border: `1px solid ${C.errbrd}` }}>
-                  <div style={{ fontSize: 12, fontWeight: 600, color: '#dc2626', letterSpacing: '0.05em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Skip if you need</div>
+                </section>
+                <section aria-label="Who Should NOT Use This" style={{ padding: '16px', background: C.errbg, borderRadius: 12, border: `1px solid ${C.errbrd}` }}>
+                  <h3 style={{ fontSize: 12, fontWeight: 600, color: '#dc2626', letterSpacing: '0.05em', textTransform: 'uppercase' as const, margin: '0 0 10px', fontFamily: "'DM Sans', sans-serif" }}>Skip if you need</h3>
                   <p style={{ fontSize: 13, color: C.txt, lineHeight: 1.7, margin: 0, fontWeight: 300 }}>{content.whoShouldSkip}</p>
-                </div>
+                </section>
               </div>
             </>
           )
@@ -873,10 +880,11 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
         })()}
 
 
+        {/* ── G5 GEO: Pricing — semantic <section aria-label="Pricing"> so AI answers "[Tool] Pricing 2026" ── */}
         {tool.pricingBreakdown && tool.pricingBreakdown.length > 0 && (
-          section(
+          geoSection('Pricing',
             <>
-              {sectionTitle('Pricing breakdown')}
+              <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.02em' }}>{tool.name} Pricing 2026</h2>
               <p style={{ fontSize: 13, color: C.mut, margin: '0 0 18px', lineHeight: 1.65, fontWeight: 300 }}>
                 All plans include the core features — here's what changes at each tier.
               </p>
