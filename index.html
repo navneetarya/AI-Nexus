@@ -5,6 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- LCP font preloads — browser fetches these before parsing CSS, cutting render time -->
+    <!-- Syne 800 = H1 and headings (LCP element on every page) -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/syne-v24-latin-800.woff2" crossorigin="anonymous" />
+    <!-- DM Sans 400 = body text (largest text block on page) -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/dm-sans-v17-latin-regular.woff2" crossorigin="anonymous" />
+
     <!-- Default meta — JS overwrites per-page before paint -->
     <title>Best AI Tools for Creators — Personally Tested 2026 | AI Nexus</title>
     <meta name="description" content="Honest, hands-on reviews of the best AI tools for writing, podcasting, video, and productivity. Every tool personally tested by Navneet Arya. Free trials only." />

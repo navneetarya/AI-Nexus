@@ -20,6 +20,18 @@ export default defineConfig(({ mode }) => {
       },
       define: {
         'process.env': env
-      }
+      },
+      build: {
+        rollupOptions: {
+          output: {
+            // Split React + ReactDOM into their own chunk so the browser can
+            // cache vendor code separately from app code. Reduces re-download
+            // on every deploy and improves LCP on repeat visits.
+            manualChunks: {
+              'vendor-react': ['react', 'react-dom'],
+            },
+          },
+        },
+      },
     };
 });
