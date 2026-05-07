@@ -257,6 +257,8 @@ const TOOL_FAQS = {
     { q: 'Is Grammarly free?', a: "Yes — Grammarly's free plan covers basic grammar, spelling, and punctuation checks. It works across Gmail, Google Docs, and most web apps via the browser extension. Premium unlocks tone detection, clarity rewrites, and plagiarism checking." },
     { q: 'How accurate is Grammarly?', a: "For standard business and academic writing, Grammarly's accuracy is excellent — better than Microsoft Word's built-in checker. It occasionally over-corrects creative writing by applying formal grammar rules to intentional stylistic choices." },
     { q: 'Does Grammarly work internationally?', a: "Yes — Grammarly works globally via browser extension and desktop app across Gmail, Google Docs, Word, and 500+ other apps. It's effective in any country and supports American, British, Canadian, and Australian English style preferences." },
+    { q: 'Is Grammarly Premium worth it?', a: "Grammarly Premium at $12/month is worth it if you write professionally at significant volume. The tone detector, full-sentence clarity rewrites, and plagiarism checker meaningfully reduce editing time for emails, reports, and long-form content. The free plan is sufficient for casual writing." },
+    { q: 'Does Grammarly work in Microsoft Word and Google Docs?', a: "Yes — Grammarly has native integrations for both Microsoft Word (via a desktop add-in) and Google Docs (via Chrome extension). Corrections appear as underlines in real time, exactly like the built-in spell-checker but significantly more accurate and detailed." },
   ],
 };
 
@@ -845,6 +847,16 @@ const BLOG_POSTS = [
     datePublished: '2026-05-04',
     dateModified: '2026-05-04',
     readTimeMinutes: 8,
+    howToSteps: [
+      { name: 'Create a free Rytr account',
+        text: 'Go to rytr.me and sign up for the free plan — no credit card required. The free plan gives you 10,000 characters per month, enough to write 1–2 full blog posts. Once inside, set your default language and tone in Settings before creating your first document.' },
+      { name: 'Generate a blog outline with the Blog Idea & Outline template',
+        text: 'Click New Document, select "Blog Idea & Outline" from the use-case dropdown, enter your target keyword in the Topic field, choose Informational as your tone, and click Ryte for me. Rytr returns a 6–8 point outline in about 15 seconds. Review and reorder the sections to match your planned structure before moving on.' },
+      { name: 'Write each section using Blog Section Writing',
+        text: 'For each section heading from your outline, create a new generation using the "Blog Section Writing" template. Paste the section heading plus a one-sentence brief into the input. Generate, then immediately edit the output in your own voice — adding personal examples, correcting any inaccuracies, and removing generic padding. Editing section-by-section produces better output than generating the full post at once.' },
+      { name: 'Check for plagiarism and polish with Grammarly',
+        text: 'On the Rytr Saver plan ($9/month), use the built-in Plagiarism Checker on your finished draft. Copy the final draft into Grammarly (free plan) to catch any grammar or tone issues before publishing. The combination of Rytr for structure and Grammarly for refinement produces a cleaner final post than either tool alone.' },
+    ],
     faqs: [
       { q: 'Can Rytr write a full blog post?', a: "Yes — Rytr can write a full blog post using the Blog Idea & Outline template followed by the Blog Section Writing template. The realistic workflow is: use Rytr to generate an outline and first draft of each section, then rewrite and personalise each section in your own voice. Expect to spend 20–30 minutes editing a Rytr-generated 1,000-word draft into a publishable post." },
       { q: 'Is Rytr good for SEO blog posts?', a: "Rytr is useful for generating SEO-structured blog posts when you give it your target keyword in the brief. It will naturally include the keyword in headings and body copy. However, Rytr does not do keyword research or competitor analysis — you'll need to bring your own keyword data and manually ensure keyword density and internal links. For SEO-specific AI writing, Frase.io is a more specialised option." },
