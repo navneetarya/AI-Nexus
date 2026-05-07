@@ -3,7 +3,7 @@ import { TOOLS, SITE_CONFIG } from './constants';
 import { HomePage } from './pages/HomePage';
 
 // ── Data-only imports (small, needed for routing on first render) ────────────
-import { COMPARE_ARTICLES } from './pages/CompareArticlePage';
+import { COMPARE_ARTICLES } from './pages/compare-data';
 import { BLOG_POSTS } from './blog/index';
 
 // ── Lazy page components — each becomes its own JS chunk ────────────────────

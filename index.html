@@ -5,14 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- LCP font preloads — browser fetches these before parsing CSS, cutting render time -->
+    <!-- LCP font preload — browser fetches this before parsing CSS, cutting render time -->
     <!-- Syne 800 = H1 and headings (LCP element on every page) -->
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/syne-v24-latin-800.woff2" crossorigin="anonymous" />
-    <!-- DM Sans 400 = body text (largest text block on page) -->
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/dm-sans-v17-latin-regular.woff2" crossorigin="anonymous" />
-    <!-- DNS prefetch for external logo API (fallback for 5 tools) -->
-    <link rel="dns-prefetch" href="https://logo.clearbit.com" />
-    <link rel="preconnect" href="https://logo.clearbit.com" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/syne-v24-latin-800.woff2" crossorigin="anonymous" fetchpriority="high" />
 
     <!-- Default meta — JS overwrites per-page before paint -->
     <title>Best AI Tools for Creators — Personally Tested 2026 | AI Nexus</title>
@@ -171,21 +166,8 @@
 
     <!-- Week 3 Task 4: Self-hosted fonts — eliminates 2 external DNS lookups, saves ~200-400ms LCP -->
     <!-- Font files placed in /public/fonts/ — v24 Syne, v17 DM Sans -->
+    <!-- Only critical fonts inline — non-critical deferred after paint to save ~60KB on mobile -->
     <style>
-      @font-face {
-        font-family: 'Syne';
-        font-style: normal;
-        font-weight: 600;
-        font-display: optional;
-        src: url('/fonts/syne-v24-latin-600.woff2') format('woff2');
-      }
-      @font-face {
-        font-family: 'Syne';
-        font-style: normal;
-        font-weight: 700;
-        font-display: optional;
-        src: url('/fonts/syne-v24-latin-700.woff2') format('woff2');
-      }
       @font-face {
         font-family: 'Syne';
         font-style: normal;
@@ -196,32 +178,25 @@
       @font-face {
         font-family: 'DM Sans';
         font-style: normal;
-        font-weight: 300;
-        font-display: optional;
-        src: url('/fonts/dm-sans-v17-latin-300.woff2') format('woff2');
-      }
-      @font-face {
-        font-family: 'DM Sans';
-        font-style: normal;
         font-weight: 400;
         font-display: swap;
         src: url('/fonts/dm-sans-v17-latin-regular.woff2') format('woff2');
       }
-      @font-face {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-display: optional;
-        src: url('/fonts/dm-sans-v17-latin-500.woff2') format('woff2');
-      }
-      @font-face {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 600;
-        font-display: optional;
-        src: url('/fonts/dm-sans-v17-latin-600.woff2') format('woff2');
-      }
     </style>
+    <!-- Non-critical font weights — loaded after first paint via JS so they don't
+         compete with the main JS bundle on slow connections (saves ~60KB critical bandwidth) -->
+    <script>
+      window.addEventListener('load', function() {
+        var s = document.createElement('style');
+        s.textContent = "\
+@font-face{font-family:'Syne';font-style:normal;font-weight:600;font-display:optional;src:url('/fonts/syne-v24-latin-600.woff2') format('woff2')}\
+@font-face{font-family:'Syne';font-style:normal;font-weight:700;font-display:optional;src:url('/fonts/syne-v24-latin-700.woff2') format('woff2')}\
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:300;font-display:optional;src:url('/fonts/dm-sans-v17-latin-300.woff2') format('woff2')}\
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:optional;src:url('/fonts/dm-sans-v17-latin-500.woff2') format('woff2')}\
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:optional;src:url('/fonts/dm-sans-v17-latin-600.woff2') format('woff2')}";
+        document.head.appendChild(s);
+      });
+    </script>
     <!-- Week 6 Task 3: Removed Google Fonts CDN — all fonts self-hosted via /public/fonts/
          Eliminates 2 DNS lookups (fonts.googleapis.com + fonts.gstatic.com), saves 150–300ms LCP on mobile -->
 
@@ -378,7 +353,20 @@
     <!-- Visually-hidden fallback heading for crawlers that don't execute JS.
          Uses <p> (not <h1>) so React's per-page <h1> is always the sole H1. -->
     <p role="heading" aria-level="1" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Best AI Tools for Creators — Personally Tested 2026 | AI Nexus</p>
-    <div id="root"></div>
+    <div id="root"><!-- Static shell — React hydrates over this. Enables paint before JS downloads -->
+      <div style="min-height:100vh;background:var(--bg)">
+        <nav style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:var(--bar-bg);backdrop-filter:blur(14px);border-bottom:1px solid var(--bar-brd)">
+          <div style="display:flex;align-items:center;gap:8px">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="12" fill="var(--a1)"/><path d="M12 28V12h4l4 10 4-10h4v16h-3V17l-4 11h-2l-4-11v11h-3z" fill="#fff"/></svg>
+            <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:var(--txt)">AI Nexus<span style="color:var(--a1)">.</span></span>
+          </div>
+        </nav>
+        <div style="max-width:1200px;margin:0 auto;padding:72px 24px 48px;text-align:center">
+          <h1 style="font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(32px,5.5vw,52px);color:var(--txt);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px">Best AI Tools for Creators<br/><span style="color:var(--a1)">Personally Tested & Ranked.</span></h1>
+          <p style="font-size:16px;color:var(--mut);max-width:540px;margin:0 auto;line-height:1.7">Honest reviews of AI writing, video, audio & design tools. Every tool tested for 30+ days before it earns a spot.</p>
+        </div>
+      </div>
+    </div>
     <!-- GitHub Pages SPA routing: restore path from ?p= query param set by 404.html -->
     <script>
       (function() {

@@ -3,7 +3,7 @@ import { Tool } from '../types';
 import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award, Scale, Sun, Moon, BookOpen, Layers } from 'lucide-react';
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS, TOOLS } from '../constants';
 import { SharedNav } from './SharedNav';
-import { COMPARE_ARTICLES } from './CompareArticlePage';
+import { COMPARE_ARTICLES } from './compare-data';
 import { BLOG_POSTS } from '../blog/index';
 
 const C = {

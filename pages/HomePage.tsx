@@ -8,7 +8,7 @@ import {
   PenLine, Image as ImageIcon, Video as VideoIcon,
   Mic, Megaphone, Palette, Code2, Scale, Sun, Moon, Calendar, Linkedin,
 } from 'lucide-react';
-import { COMPARE_ARTICLES } from './CompareArticlePage';
+import { COMPARE_ARTICLES } from './compare-data';
 import { SharedNav } from './SharedNav';
 import { BeehiivForm } from '../components/BeehiivForm';
 
@@ -284,7 +284,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   // FIX: paginate the tool grid — render only the first batch on mount to
   // dramatically reduce main-thread Style & Layout work (was 619ms).
   // Load more cards as the user scrolls down.
-  const TOOLS_PER_PAGE = typeof window !== 'undefined' && window.innerWidth <= 680 ? 8 : 12;
+  const TOOLS_PER_PAGE = typeof window !== 'undefined' && window.innerWidth <= 680 ? 6 : 12;
   const [visibleCount, setVisibleCount] = useState(TOOLS_PER_PAGE);
 
   // ── Memos — MUST come before any useEffect that references them ─────────
