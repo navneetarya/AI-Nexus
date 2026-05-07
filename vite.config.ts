@@ -22,13 +22,29 @@ export default defineConfig(({ mode }) => {
         'process.env': env
       },
       build: {
+        // Raise the warning threshold — our lazy-loaded page chunks will be
+        // individually larger than the default 500KB limit, but that is fine
+        // because they are only downloaded on navigation, not on initial load.
+        chunkSizeWarningLimit: 600,
         rollupOptions: {
           output: {
-            // Split React + ReactDOM into their own chunk so the browser can
-            // cache vendor code separately from app code. Reduces re-download
-            // on every deploy and improves LCP on repeat visits.
-            manualChunks: {
-              'vendor-react': ['react', 'react-dom'],
+            manualChunks(id) {
+              // ── Stable vendor chunks — cached across deploys ─────────────
+              // React core: tiny shim after splitting (< 5KB), cached forever
+              if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/')) {
+                return 'vendor-react';
+              }
+              // lucide-react: ~260KB tree-shakeable icon library.
+              // Splitting it into its own chunk means a single icon change
+              // in app code doesn't bust the icon cache.
+              if (id.includes('node_modules/lucide-react')) {
+                return 'vendor-icons';
+              }
+              // framer-motion: heavy animation library (~150KB).
+              // Isolated so animation bundle updates don't bust app code cache.
+              if (id.includes('node_modules/framer-motion')) {
+                return 'vendor-motion';
+              }
             },
           },
         },

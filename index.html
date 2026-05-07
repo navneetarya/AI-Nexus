@@ -134,13 +134,26 @@
     }
     </script>
 
-    <!-- Google tag (gtag.js) — GA4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9M7R4GGEEK"></script>
+    <!-- Google Analytics GA4 — deferred until after page load so it never
+         competes with LCP rendering. We buffer events that fire before the
+         script arrives (e.g. page_view) using the dataLayer queue; GA4
+         replays them automatically once gtag.js initialises.
+         Delay: 2 000 ms after 'load' gives the LCP element time to paint
+         before we hand the main thread to analytics. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-9M7R4GGEEK');
+      gtag('config', 'G-9M7R4GGEEK', { send_page_view: true });
+
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var s = document.createElement('script');
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9M7R4GGEEK';
+          s.async = true;
+          document.head.appendChild(s);
+        }, 2000);
+      });
     </script>
 
     <!-- Week 3 Task 4: Self-hosted fonts — eliminates 2 external DNS lookups, saves ~200-400ms LCP -->

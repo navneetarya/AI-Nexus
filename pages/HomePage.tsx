@@ -38,19 +38,34 @@ const TOOL_DOMAIN: Record<string, string> = {
   'opus-clip':'opus.pro','invideo':'invideo.ai','murf-ai':'murf.ai',
   'podcastle':'podcastle.ai','gamma':'gamma.app','beautiful-ai':'beautiful.ai',
   'ocoya':'ocoya.com','replit':'replit.com','notion-ai':'notion.so','taskade':'taskade.com',
+  // FIX: slugs whose local PNGs are missing — skip straight to Clearbit to
+  // avoid 5 × 404 console errors that tank the Lighthouse Best Practices score
+  'elevenlabs':'elevenlabs.io','jasper':'jasper.ai','descript':'descript.com',
+  'perplexity':'perplexity.ai','canva-ai':'canva.com',
 };
 
+// Slugs that have NO local PNG in /public/logos/ — skip the 404 attempt and
+// go straight to Clearbit. Add slugs here whenever a logo file is missing.
+const NO_LOCAL_LOGO = new Set([
+  'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',
+]);
+
 function ToolLogo({ slug, size = 28, name, color }: { slug: string; size?: number; name?: string; color?: string }) {
-  const [localErr, setLocalErr] = React.useState(false);
+  // Skip local PNG fetch for known-missing files to prevent 404 console errors
+  const [localErr, setLocalErr] = React.useState(() => NO_LOCAL_LOGO.has(slug));
   const [clearbitErr, setClearbitErr] = React.useState(false);
   const domain = TOOL_DOMAIN[slug];
   const initial = (name ?? slug)[0].toUpperCase();
   const r = Math.round(size * 0.27);
-  // Try local logo first (/public/logos/{slug}.png), then Clearbit, then letter avatar
+
+  // FIX: added loading="lazy" + decoding="async" so below-the-fold logos
+  // don't block the main thread or consume bandwidth during initial paint.
   if (!localErr) {
     return (
       <img src={`/logos/${slug}.png`} alt={name ?? slug}
         width={size} height={size}
+        loading="lazy"
+        decoding="async"
         style={{ borderRadius: r, objectFit: 'contain', display: 'block', background: '#fff' }}
         onError={() => setLocalErr(true)}
       />
@@ -60,18 +75,20 @@ function ToolLogo({ slug, size = 28, name, color }: { slug: string; size?: numbe
     return (
       <img src={`https://logo.clearbit.com/${domain}`} alt={name ?? slug}
         width={size} height={size}
+        loading="lazy"
+        decoding="async"
         style={{ borderRadius: r, objectFit: 'contain', display: 'block', background: '#fff' }}
         onError={() => setClearbitErr(true)}
       />
     );
   }
-return (
-  <span style={{ width: size, height: size, borderRadius: r, background: color ?? C.a1, color: '#fff',
-    display: 'flex', alignItems: 'center', justifyContent: 'center',
-    fontSize: Math.round(size * 0.5), fontWeight: 700 }}>
-    {initial}
-  </span>
-);
+  return (
+    <span style={{ width: size, height: size, borderRadius: r, background: color ?? C.a1, color: '#fff',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      fontSize: Math.round(size * 0.5), fontWeight: 700 }}>
+      {initial}
+    </span>
+  );
 }
 
 // ── Category icon helper ──────────────────────────────────────────────────────
@@ -257,6 +274,11 @@ interface HomePageProps { navigate: (to: string) => void; isDark: boolean; toggl
 export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   const [filters, setFilters]     = useState<FilterState>({ search: '', category: 'All' as any });
   const [view, setView]           = useState<'home' | 'compare'>('home');
+  // FIX: paginate the tool grid — render only the first 12 cards on mount to
+  // dramatically reduce main-thread Style & Layout work (was 619ms).
+  // Load more cards as the user scrolls down.
+  const TOOLS_PER_PAGE = 12;
+  const [visibleCount, setVisibleCount] = useState(TOOLS_PER_PAGE);
 
   // ── Memos — MUST come before any useEffect that references them ─────────
   const filtered = useMemo(() => TOOLS.filter(t => {
@@ -267,6 +289,11 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
     const mc = (filters.category as string) === 'All' || t.category === filters.category;
     return ms && mc;
   }), [filters]);
+
+  // Reset pagination whenever filters change so users always see fresh results from top
+  useEffect(() => {
+    setVisibleCount(TOOLS_PER_PAGE);
+  }, [filters]);
 
   const affiliatePicks = useMemo(
     () => TOOLS.filter(t => AFFILIATE_SLUGS.includes(t.slug)),
@@ -959,13 +986,39 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           );
         })()}
 
-        {/* Cards */}
+        {/* Cards — FIX: only render visibleCount cards at a time to cut
+             main-thread Style & Layout cost from 619ms down significantly */}
         <div className="tool-grid" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
-          {filtered.map((tool, i) => (
+          {filtered.slice(0, visibleCount).map((tool, i) => (
             <ToolCard key={tool.id} tool={tool} navigate={navigate}
               isAffiliatePick={AFFILIATE_SLUGS.includes(tool.slug)} idx={i}/>
           ))}
         </div>
+
+        {/* Load more button — shown when there are more tools to display */}
+        {visibleCount < filtered.length && (
+          <div style={{ textAlign: 'center', marginTop: 28 }}>
+            <button
+              onClick={() => setVisibleCount(c => c + TOOLS_PER_PAGE)}
+              style={{
+                padding: '11px 32px',
+                fontSize: 13,
+                fontWeight: 600,
+                fontFamily: "'DM Sans',sans-serif",
+                color: C.a1,
+                background: C.a1card,
+                border: `1.5px solid ${C.a1brd}`,
+                borderRadius: 10,
+                cursor: 'pointer',
+                transition: 'opacity 0.15s',
+              }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = '0.8')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+            >
+              Load more ({filtered.length - visibleCount} remaining)
+            </button>
+          </div>
+        )}
 
         {filtered.length === 0 && (
           <div style={{ textAlign:'center', padding:'80px 0' }}>
