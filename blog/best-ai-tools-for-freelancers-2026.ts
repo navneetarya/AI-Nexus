@@ -7,7 +7,8 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-tools-for-freelancers-2026',
   title: 'Best AI Tools for Freelancers 2026 — Work Faster, Earn More',
-  metaDescription: 'The best AI tools for freelancers in 2026 — tested across writing, design, productivity, social media and coding. Cut your workload in half without cutting your rates.',
+  seoTitle: 'Best AI Tools for Freelancers 2026',
+  metaDescription: 'The best AI tools for freelancers in 2026 — tested across writing, design, productivity, social media, and coding. Personally tested by Navneet Arya.',
   datePublished: '2026-05-03',
   dateModified: '2026-05-06',
   author: 'Navneet Arya',

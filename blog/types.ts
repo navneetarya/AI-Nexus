@@ -4,6 +4,8 @@
 export interface BlogPost {
   slug: string;
   title: string;
+  /** ≤49 chars — used as <title> tag (appended with " | AI Nexus"). Falls back to title if absent. */
+  seoTitle?: string;
   metaDescription: string;
   datePublished: string;  // YYYY-MM-DD
   dateModified: string;   // YYYY-MM-DD

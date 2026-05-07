@@ -7,7 +7,8 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-grammarly-alternatives',
   title: 'Best Grammarly Alternatives in 2026 — Tested & Ranked',
-  metaDescription: 'Looking for a cheaper or better alternative to Grammarly? I tested QuillBot, Writesonic, Rytr, and ProWritingAid. Here are the best Grammarly alternatives that actually work.',
+  seoTitle: 'Best Grammarly Alternatives 2026 — Tested',
+  metaDescription: 'Looking for a Grammarly alternative? I tested QuillBot, Writesonic, Rytr, and ProWritingAid — here are the best alternatives that actually work in 2026.',
   datePublished: '2026-05-03',
   dateModified: '2026-05-06',
   author: 'Navneet Arya',

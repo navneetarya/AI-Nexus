@@ -82,9 +82,9 @@ function App() {
     const tool = TOOLS.find(t => t.slug === toolMatch[1]);
     if (tool) {
       updateMeta(
-        // Week 1 Task 4: tagline in title targets "[tool] review 2026" keyword variants directly
-        `${tool.name} Review ${new Date().getFullYear()}: ${tool.tagline} | AI Nexus`,
-        `Honest ${tool.name} review by ${SITE_CONFIG.authorName} — personally tested. ${tool.tagline}. Pros, cons, real verdict, and a free trial link.`,
+        // Title kept to ≤60 chars: "[Tool Name] Review 2026 — Personally Tested | AI Nexus"
+        `${tool.name} Review 2026 — Personally Tested | AI Nexus`,
+        `Honest ${tool.name} review by ${SITE_CONFIG.authorName}. ${tool.tagline}. Pros, cons, free plan breakdown — personally tested.`,
         `${SITE_CONFIG.siteUrl}/tools/${tool.slug}/`
       );
       return <ToolPage tool={tool} navigate={navigate} {...themeProps} />;
@@ -112,7 +112,7 @@ function App() {
     const post = BLOG_POSTS.find(p => p.slug === blogPostMatch[1]);
     if (post) {
       updateMeta(
-        `${post.title} | AI Nexus`,
+        `${post.seoTitle ?? post.title} | AI Nexus`,
         post.metaDescription,
         `${SITE_CONFIG.siteUrl}/blog/${post.slug}/`
       );
@@ -132,8 +132,8 @@ function App() {
 
   if (path === '/about') {
     updateMeta(
-      `About ${SITE_CONFIG.authorName} — AI Nexus Reviewer`,
-      `${SITE_CONFIG.authorName} personally tests every AI tool before recommending it. No sponsored reviews, no copying marketing pages.`,
+      `About ${SITE_CONFIG.authorName} — The Person Behind AI Nexus`,
+      `${SITE_CONFIG.authorName} personally tests every AI tool before recommending it. No sponsored reviews. Testing since 2022 across writing, audio, video, and productivity.`,
       `${SITE_CONFIG.siteUrl}/about/`
     );
     return <AboutPage navigate={navigate} {...themeProps} />;
@@ -151,7 +151,7 @@ function App() {
   if (path === '/methodology') {
     updateMeta(
       'How I Review AI Tools — Testing Methodology | AI Nexus',
-      `The exact 7-step process ${SITE_CONFIG.authorName} uses to test every AI tool on AI Nexus. Real standards, paid plan testing, and the one rule that doesn't bend.`,
+      `The 7-step process ${SITE_CONFIG.authorName} uses to test every AI tool on AI Nexus. Real standards, paid plan testing, head-to-head comparisons, and honest verdicts.`,
       `${SITE_CONFIG.siteUrl}/methodology/`
     );
     return <MethodologyPage navigate={navigate} {...themeProps} />;
@@ -161,16 +161,16 @@ function App() {
   if (path === '/best-free-ai-tools') {
     updateMeta(
       `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`,
-      `13 AI tools with permanent free plans — personally tested. Covers writing, image generation, video, audio, design, coding and productivity. No credit card required for any.`,
+      `13 AI tools with permanent free plans — personally tested. Writing, image generation, video, audio, design, coding, and productivity. No credit card required.`,
       `${SITE_CONFIG.siteUrl}/best-free-ai-tools/`
     );
     return <BestFreeAIToolsPage navigate={navigate} {...themeProps} />;
   }
 
   updateMeta(
-    // Week 1 Task 7: keyword-first homepage title targets "best AI tools reviewed" directly
-    `Best AI Tools Reviewed & Ranked ${new Date().getFullYear()} — AI Nexus by ${SITE_CONFIG.authorName}`,
-    `Honest reviews of the best AI tools for writing, video, audio, podcasting, productivity & social media. Every tool personally tested by ${SITE_CONFIG.authorName}. Every link is a free trial.`,
+    // Title ≤60 chars
+    `Best AI Tools 2026 — Tested & Ranked | AI Nexus`,
+    `Honest reviews of the best AI tools for writing, video, audio, podcasting, and productivity. Every tool personally tested by ${SITE_CONFIG.authorName}. Free trials only.`,
     SITE_CONFIG.siteUrl
   );
   return <HomePage navigate={navigate} {...themeProps} />;

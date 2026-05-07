@@ -8,7 +8,8 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-tools-for-social-media-2026',
   title: 'Best AI Tools for Social Media 2026 — Create, Schedule & Grow Faster',
-  metaDescription: 'The best AI tools for social media in 2026 — tested across content creation, scheduling, short-form video, and image generation. Cut your content creation time by 70%.',
+  seoTitle: 'Best AI Tools for Social Media 2026',
+  metaDescription: 'The best AI tools for social media in 2026 — tested for content creation, scheduling, short-form video, and image generation. Personally tested.',
   datePublished: '2026-05-04',
   dateModified: '2026-05-06',
   author: 'Navneet Arya',

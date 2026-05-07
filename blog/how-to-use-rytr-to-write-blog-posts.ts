@@ -9,7 +9,8 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'how-to-use-rytr-to-write-blog-posts',
   title: 'How to Use Rytr to Write Blog Posts (Step-by-Step, 2026)',
-  metaDescription: 'How to use Rytr to write blog posts in 2026 — a step-by-step tutorial covering setup, the best templates, and the exact workflow to cut first-draft time by 60%.',
+  seoTitle: 'How to Use Rytr to Write Blog Posts 2026',
+  metaDescription: 'How to use Rytr to write blog posts in 2026 — a step-by-step guide covering setup, the best templates, and a workflow to cut first-draft time by 60%.',
   datePublished: '2026-05-04',
   dateModified: '2026-05-06',
   author: 'Navneet Arya',

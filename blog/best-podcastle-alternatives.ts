@@ -7,7 +7,8 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-podcastle-alternatives',
   title: 'Best Podcastle Alternatives in 2026 — For Podcasters Who Need More',
-  metaDescription: 'Looking for a Podcastle alternative? I tested Descript, Riverside.fm, and Adobe Podcast. Here are the best alternatives for recording, editing, and publishing podcasts in 2026.',
+  seoTitle: 'Best Podcastle Alternatives 2026',
+  metaDescription: 'Looking for a Podcastle alternative? I tested Descript, Riverside.fm, and Adobe Podcast. Here are the best podcast recording alternatives in 2026.',
   datePublished: '2026-05-03',
   dateModified: '2026-05-06',
   author: 'Navneet Arya',
