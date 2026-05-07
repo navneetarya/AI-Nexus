@@ -44,11 +44,8 @@ const TOOL_DOMAIN: Record<string, string> = {
   'perplexity':'perplexity.ai','canva-ai':'canva.com',
 };
 
-// Slugs that have NO local PNG in /public/logos/ — skip the 404 attempt and
-// go straight to Clearbit. Add slugs here whenever a logo file is missing.
-const NO_LOCAL_LOGO = new Set([
-  'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',
-]);
+// All tool logos now have local PNGs in /public/logos/ — no Clearbit fallback needed.
+const NO_LOCAL_LOGO = new Set<string>([]);
 
 function ToolLogo({ slug, size = 28, name, color }: { slug: string; size?: number; name?: string; color?: string }) {
   // Skip local PNG fetch for known-missing files to prevent 404 console errors
@@ -176,6 +173,7 @@ const ANIM_STYLE = `
 .scroll-reveal { opacity:0; transform:translateY(18px);
   transition:opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1) }
 .scroll-reveal.visible { opacity:1; transform:translateY(0) }
+.tool-card-wrap.visible:not(.scroll-reveal) { opacity:1; transform:none }
 
 .tool-card-inner { transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease }
 .tool-card-wrap:hover .tool-card-inner {
@@ -240,6 +238,15 @@ const ANIM_STYLE = `
 @media(prefers-reduced-motion:reduce){
   .hero-float { animation:none !important }
 }
+/* ── Mobile performance: reduce animation & paint cost ── */
+@media(max-width:680px){
+  .anim-fade-up, .anim-fade-in, .anim-scale-in, .anim-slide-down { animation-duration:.25s !important }
+  .scroll-reveal { transition-duration:.3s !important }
+  .tool-card-inner { transition:none !important }
+  .blog-card { transition:none !important }
+  .pick-card { transition:none !important }
+  .ticker-track { animation-duration:20s !important }
+}
 html { scroll-behavior:smooth }
 ::-webkit-scrollbar { width:5px; height:5px }
 ::-webkit-scrollbar-track { background:transparent }
@@ -274,10 +281,10 @@ interface HomePageProps { navigate: (to: string) => void; isDark: boolean; toggl
 export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   const [filters, setFilters]     = useState<FilterState>({ search: '', category: 'All' as any });
   const [view, setView]           = useState<'home' | 'compare'>('home');
-  // FIX: paginate the tool grid — render only the first 12 cards on mount to
+  // FIX: paginate the tool grid — render only the first batch on mount to
   // dramatically reduce main-thread Style & Layout work (was 619ms).
   // Load more cards as the user scrolls down.
-  const TOOLS_PER_PAGE = 12;
+  const TOOLS_PER_PAGE = typeof window !== 'undefined' && window.innerWidth <= 680 ? 8 : 12;
   const [visibleCount, setVisibleCount] = useState(TOOLS_PER_PAGE);
 
   // ── Memos — MUST come before any useEffect that references them ─────────
@@ -302,16 +309,27 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
   // ── Scroll-reveal (IntersectionObserver) ────────────────────────────────
   useEffect(() => {
-    const els = document.querySelectorAll('.scroll-reveal');
+    const els = document.querySelectorAll('.scroll-reveal:not(.visible)');
+    if (!els.length) return;
     const io  = new IntersectionObserver(
       entries => entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
       }),
-      { threshold: 0.07, rootMargin: '0px 0px -36px 0px' }
+      { threshold: 0.05, rootMargin: '60px 0px -36px 0px' }
     );
     els.forEach(el => io.observe(el));
+    // Fallback: reveal any cards already in viewport after paint settles
+    requestAnimationFrame(() => {
+      els.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight + 60 && r.bottom > 0) {
+          el.classList.add('visible');
+          io.unobserve(el);
+        }
+      });
+    });
     return () => io.disconnect();
-  }, [filtered, view]);
+  }, [filtered, view, visibleCount]);
 
   const scrollToId = (id: string) => {
     setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 60);
@@ -1236,6 +1254,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
   const cardBrd = isA2 ? C.a2brd : C.a1brd;
   const badge   = tool.userBadge ? BADGE_COLORS[tool.userBadge] : null;
   const isSecondary = !isAffiliatePick && !tool.userBadge;
+  const revealCls = idx < 6 ? 'tool-card-wrap visible' : 'tool-card-wrap scroll-reveal';
 
   // ── FEATURED tier ─────────────────────────────────────────────────────────
   if (isAffiliatePick) {
@@ -1243,7 +1262,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
     const ratingNum = parseFloat(rating);
 
     return (
-      <div className="tool-card-wrap scroll-reveal"
+      <div className={revealCls}
         onClick={() => navigate(`/tools/${tool.slug}`)}
         style={{ cursor:'pointer', position:'relative', animationDelay:`${idx * 0.04}s`,
           ['--card-brd' as any]: accent + '60' }}>
@@ -1376,7 +1395,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
   // ── STANDARD & SECONDARY tiers ────────────────────────────────────────────
   // Secondary = no userBadge, not affiliate → slightly receded visual weight
   return (
-    <div className="tool-card-wrap scroll-reveal"
+    <div className={revealCls}
       onClick={() => navigate(`/tools/${tool.slug}`)}
       style={{ cursor:'pointer', position:'relative',
         ['--card-brd' as any]: cardBrd,

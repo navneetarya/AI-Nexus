@@ -10,6 +10,9 @@
     <link rel="preload" as="font" type="font/woff2" href="/fonts/syne-v24-latin-800.woff2" crossorigin="anonymous" />
     <!-- DM Sans 400 = body text (largest text block on page) -->
     <link rel="preload" as="font" type="font/woff2" href="/fonts/dm-sans-v17-latin-regular.woff2" crossorigin="anonymous" />
+    <!-- DNS prefetch for external logo API (fallback for 5 tools) -->
+    <link rel="dns-prefetch" href="https://logo.clearbit.com" />
+    <link rel="preconnect" href="https://logo.clearbit.com" crossorigin />
 
     <!-- Default meta — JS overwrites per-page before paint -->
     <title>Best AI Tools for Creators — Personally Tested 2026 | AI Nexus</title>
@@ -20,7 +23,11 @@
     <link rel="alternate" hreflang="en" href="https://ainexustools.online/">
     <link rel="alternate" hreflang="x-default" href="https://ainexustools.online/">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <!-- RSS feed generated at build time by prerender.mjs -->
     <link rel="alternate" type="application/rss+xml" title="AI Nexus — AI Tool Reviews &amp; Guides" href="/rss.xml" />
+    <meta name="theme-color" content="#0D9488" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="author" content="Navneet Arya" />
 
     <!-- Open Graph -->
@@ -99,6 +106,11 @@
             "AI audio and podcast tools",
             "AI design tools"
           ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "hello@ainexustools.online",
+            "contactType": "editorial"
+          },
           "sameAs": [
             "https://twitter.com/ainexustools"
           ]
@@ -147,12 +159,13 @@
       gtag('config', 'G-9M7R4GGEEK', { send_page_view: true });
 
       window.addEventListener('load', function() {
+        var delay = window.innerWidth <= 680 ? 4000 : 2000;
         setTimeout(function() {
           var s = document.createElement('script');
           s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9M7R4GGEEK';
           s.async = true;
           document.head.appendChild(s);
-        }, 2000);
+        }, delay);
       });
     </script>
 
@@ -163,14 +176,14 @@
         font-family: 'Syne';
         font-style: normal;
         font-weight: 600;
-        font-display: swap;
+        font-display: optional;
         src: url('/fonts/syne-v24-latin-600.woff2') format('woff2');
       }
       @font-face {
         font-family: 'Syne';
         font-style: normal;
         font-weight: 700;
-        font-display: swap;
+        font-display: optional;
         src: url('/fonts/syne-v24-latin-700.woff2') format('woff2');
       }
       @font-face {
@@ -184,7 +197,7 @@
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 300;
-        font-display: swap;
+        font-display: optional;
         src: url('/fonts/dm-sans-v17-latin-300.woff2') format('woff2');
       }
       @font-face {
@@ -198,14 +211,14 @@
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 500;
-        font-display: swap;
+        font-display: optional;
         src: url('/fonts/dm-sans-v17-latin-500.woff2') format('woff2');
       }
       @font-face {
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 600;
-        font-display: swap;
+        font-display: optional;
         src: url('/fonts/dm-sans-v17-latin-600.woff2') format('woff2');
       }
     </style>
@@ -342,6 +355,8 @@
         body { font-size:15px; }
         h1 { font-size: clamp(28px,8vw,42px) !important; }
       }
+      /* ── Content visibility for below-fold performance ── */
+      .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 500px; }
       /* ── Focus ring ── */
       :focus-visible { outline: 2px solid var(--a1); outline-offset:2px; }
       /* ── Scrollbar teal ── */

@@ -38,6 +38,83 @@ jobs:
         # making them crawlable by Google, Bing, and AI answer engines.
         run: npm run build
 
+      - name: Validate prerender output
+        # Task 27: Ensure all routes are prerendered, schemas injected,
+        # sitemap generated, and no regressions before deploying.
+        run: |
+          echo "── Prerender Validation ──"
+
+          # 1. Check critical prerendered pages exist
+          MISSING=0
+          for slug in grammarly writesonic rytr quillbot frase leonardo-ai photoroom looka pictory opus-clip invideo murf-ai podcastle gamma beautiful-ai ocoya replit notion-ai taskade elevenlabs jasper descript perplexity canva-ai; do
+            if [ ! -f "dist/tools/$slug/index.html" ]; then
+              echo "❌ Missing: dist/tools/$slug/index.html"
+              MISSING=$((MISSING+1))
+            fi
+          done
+
+          for slug in best-ai-writing-tools-for-beginners-2026 best-ai-tools-for-freelancers-2026 best-grammarly-alternatives best-podcastle-alternatives best-ai-tools-for-social-media-2026 how-to-use-rytr-to-write-blog-posts ai-tools-for-students-free-2026 best-ai-podcast-tools-2026; do
+            if [ ! -f "dist/blog/$slug/index.html" ]; then
+              echo "❌ Missing: dist/blog/$slug/index.html"
+              MISSING=$((MISSING+1))
+            fi
+          done
+
+          for slug in rytr-vs-writesonic grammarly-vs-quillbot podcastle-vs-descript; do
+            if [ ! -f "dist/compare/$slug/index.html" ]; then
+              echo "❌ Missing: dist/compare/$slug/index.html"
+              MISSING=$((MISSING+1))
+            fi
+          done
+
+          if [ $MISSING -gt 0 ]; then
+            echo "❌ $MISSING prerendered pages missing — aborting deploy"
+            exit 1
+          fi
+          echo "✅ All expected prerendered pages exist"
+
+          # 2. Verify schemas in tool pages
+          if ! grep -q "BreadcrumbList" dist/tools/rytr/index.html; then
+            echo "❌ BreadcrumbList schema missing from tool pages"
+            exit 1
+          fi
+          echo "✅ BreadcrumbList schema present"
+
+          if ! grep -q '"@type":"Review"\|"@type": "Review"' dist/tools/rytr/index.html; then
+            echo "❌ Review schema missing from tool pages"
+            exit 1
+          fi
+          echo "✅ Review schema present"
+
+          # 3. Check sitemap and RSS
+          if [ ! -f "dist/sitemap.xml" ]; then
+            echo "❌ sitemap.xml not generated"
+            exit 1
+          fi
+          echo "✅ sitemap.xml generated"
+
+          if [ ! -f "dist/rss.xml" ]; then
+            echo "❌ rss.xml not generated"
+            exit 1
+          fi
+          echo "✅ rss.xml generated"
+
+          # 4. Check homepage FAQPage schema
+          if ! grep -q "FAQPage" dist/index.html; then
+            echo "❌ FAQPage schema missing from homepage"
+            exit 1
+          fi
+          echo "✅ Homepage FAQPage schema present"
+
+          # 5. Bundle size guard (warn > 800KB total JS)
+          TOTAL_JS=$(find dist/assets -name "*.js" -exec stat --format="%s" {} + 2>/dev/null | awk '{s+=$1}END{print int(s/1024)}')
+          echo "ℹ️  Total JS bundle: ${TOTAL_JS}KB"
+          if [ "$TOTAL_JS" -gt 800 ]; then
+            echo "⚠️  JS bundle exceeds 800KB — investigate code splitting"
+          fi
+
+          echo "── Prerender validation passed ✅ ──"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

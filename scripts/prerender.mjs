@@ -1254,6 +1254,24 @@ ${items}
   console.log(`\n  ✓  /rss.xml  (${BLOG_POSTS.length} blog posts included)`);
 }
 
+// ── Homepage FAQPage schema injection ─────────────────────────────────────────
+// The homepage dist/index.html is the Vite build output — inject FAQPage schema
+// so Google shows FAQ rich results for "best AI tools" homepage queries.
+{
+  const homepagePath = path.join(DIST, 'index.html');
+  let homeHtml = fs.readFileSync(homepagePath, 'utf-8');
+  const homepageFaqSchema = JSON.stringify(faqSchema([
+    { q: 'What are the best free AI tools in 2026?', a: 'The best free AI tools in 2026 are Grammarly (writing, unlimited free), Rytr (10,000 characters/month), QuillBot (paraphrasing, free tier), Leonardo.ai (150 free credits/day), and Gamma (10 free AI presentations). All offer functional free plans that don\'t expire.' },
+    { q: 'Which AI writing tool is best for beginners?', a: 'Rytr is the best AI writing tool for beginners in 2026. It has 40+ pre-built templates with clear labels, a free plan with 10,000 characters/month, and produces usable output within 90 seconds of signing up — no content strategy knowledge required.' },
+    { q: 'Are AI writing tools worth paying for?', a: 'Yes, if you write regularly for work. Paid AI writing tools ($9-16/month) save 2-4 hours per week for professional writers, bloggers, and marketers. The free plans from Grammarly and Rytr are enough for casual writers.' },
+    { q: 'What is the best AI tool for content creators?', a: 'For content creators, the best combination in 2026 is: Rytr or Writesonic for writing, Opus Clip for short-form video, Leonardo.ai for image generation, and Ocoya for social media scheduling. Each tool has a free plan to get started.' },
+  ]), null, 2);
+  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>`;
+  homeHtml = homeHtml.replace('</head>', `${faqScriptTag}\n  </head>`);
+  fs.writeFileSync(homepagePath, homeHtml, 'utf-8');
+  console.log('\n  ✓  / (homepage FAQPage schema injected)');
+}
+
 // ── Sitemap ────────────────────────────────────────────────────────────────────
 generateSitemap();
 // ── RSS Feed ──────────────────────────────────────────────────────────────────

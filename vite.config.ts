@@ -40,11 +40,6 @@ export default defineConfig(({ mode }) => {
               if (id.includes('node_modules/lucide-react')) {
                 return 'vendor-icons';
               }
-              // framer-motion: heavy animation library (~150KB).
-              // Isolated so animation bundle updates don't bust app code cache.
-              if (id.includes('node_modules/framer-motion')) {
-                return 'vendor-motion';
-              }
             },
           },
         },
