@@ -177,8 +177,51 @@ const ANIM_STYLE = `
 .ticker-track { display:flex; animation:ticker 30s linear infinite }
 .ticker-track:hover { animation-play-state:paused }
 
+/* ── Desktop-only floats ── */
 @media(max-width:680px){
   .hero-float { display:none !important }
+  /* Mobile hero chip strip — shown only on mobile */
+  .mobile-hero-chips { display:flex !important }
+  /* Tighten hero padding on small screens */
+  .hero-wrap { padding:44px 16px 40px !important }
+  /* Single-column tool grid on phones */
+  .tool-grid { grid-template-columns: 1fr !important }
+  /* Prevent compare cards from going sub-300px */
+  .compare-grid { grid-template-columns: 1fr !important }
+  /* Horizontal scroll category pills */
+  .cat-pills-row { flex-wrap:nowrap !important; overflow-x:auto; -webkit-overflow-scrolling:touch;
+    padding-bottom:6px; scrollbar-width:none }
+  .cat-pills-row::-webkit-scrollbar { display:none }
+  /* Tighten blog grid */
+  .blog-grid { grid-template-columns:1fr !important }
+  /* Footer single column */
+  .footer-grid { grid-template-columns:1fr !important }
+  /* Tool section padding */
+  .tools-section { padding:24px 14px 72px !important }
+  /* Affiliate picks grid — 1 col on mobile */
+  .picks-grid { grid-template-columns:1fr !important }
+}
+@media(min-width:681px){
+  .mobile-hero-chips { display:none !important }
+}
+/* Smooth scroll chip strip */
+.mobile-hero-chips {
+  display:none;
+  gap:8px; overflow-x:auto; padding:4px 0 12px;
+  -webkit-overflow-scrolling:touch; scrollbar-width:none;
+  mask-image:linear-gradient(90deg,transparent 0,#000 4%,#000 96%,transparent 100%);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 4%,#000 96%,transparent 100%);
+}
+.mobile-hero-chips::-webkit-scrollbar { display:none }
+.mobile-chip {
+  flex-shrink:0; display:inline-flex; align-items:center; gap:6px;
+  padding:7px 12px; border-radius:10px; border:1.5px solid var(--a1-brd);
+  background:var(--a1-card); white-space:nowrap;
+  font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600;
+  color:var(--a1);
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-float { animation:none !important }
 }
 html { scroll-behavior:smooth }
 ::-webkit-scrollbar { width:5px; height:5px }
@@ -487,7 +530,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       <Nav/>
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
-      <div style={{ position:'relative', overflow:'hidden', background:C.surf,
+      <div className="hero-wrap" style={{ position:'relative', overflow:'hidden', background:C.surf,
         borderBottom:`1px solid ${C.barBrd}`, padding:'68px 24px 60px' }}>
 
         {/* Background washes */}
@@ -583,6 +626,31 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </div>
           );
         })}
+
+        {/* ── Mobile-only horizontal tool chip strip ─────────────────── */}
+        {/* Shown on screens ≤680px where hero-floats are hidden. Gives  */}
+        {/* mobile visitors a scrollable preview of featured tools.       */}
+        <div className="mobile-hero-chips" aria-label="Featured tools preview" style={{ marginBottom:20 }}>
+          {['grammarly','rytr','podcastle','taskade','ocoya','replit'].map(slug => {
+            const t = TOOLS.find(x => x.slug === slug);
+            if (!t) return null;
+            const isA2 = CAT_ACCENT[t.category] === 'a2';
+            const ac = isA2 ? C.a2 : C.a1;
+            return (
+              <button key={slug} className="mobile-chip"
+                onClick={() => navigate(`/tools/${slug}`)}
+                style={{ border:`1.5px solid ${ac}40`, background:`${ac}0e`,
+                  color:ac, cursor:'pointer' }}>
+                <div style={{ width:20, height:20, borderRadius:5, background:'#fff',
+                  display:'flex', alignItems:'center', justifyContent:'center',
+                  flexShrink:0, overflow:'hidden' }}>
+                  <ToolLogo slug={slug} size={15} name={t.name} color={ac} />
+                </div>
+                {t.name}
+              </button>
+            );
+          })}
+        </div>
 
         {/* Hero content */}
         <div style={{ maxWidth:600, margin:'0 auto', textAlign:'center', position:'relative', zIndex:2 }}>
@@ -787,7 +855,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       </div>
 
       {/* ── Tool Grid ──────────────────────────────────────────────────── */}
-      <div id="tools-section" style={{ maxWidth:1200, margin:'0 auto', padding:'36px 24px 96px' }}>
+      <div id="tools-section" className="tools-section" style={{ maxWidth:1200, margin:'0 auto', padding:'36px 24px 96px' }}>
 
         {/* Header */}
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',
@@ -807,7 +875,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         </div>
 
         {/* Category pills */}
-        <div style={{ display:'flex', gap:7, flexWrap:'wrap' as const, marginBottom:26 }}>
+        <div className="cat-pills-row" style={{ display:'flex', gap:7, flexWrap:'wrap' as const, marginBottom:26 }}>
           {CATEGORIES.map(cat => {
             const active = (filters.category as string) === cat;
             const isA2   = CAT_ACCENT[cat] === 'a2';
@@ -892,7 +960,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         })()}
 
         {/* Cards */}
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
+        <div className="tool-grid" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
           {filtered.map((tool, i) => (
             <ToolCard key={tool.id} tool={tool} navigate={navigate}
               isAffiliatePick={AFFILIATE_SLUGS.includes(tool.slug)} idx={i}/>
@@ -1054,6 +1122,14 @@ const FEATURED_RATINGS: Record<string, string> = {
   rytr: '4.5', podcastle: '4.7', ocoya: '4.6', replit: '4.4', taskade: '4.6',
 };
 
+/** Format ISO date "2026-05-05" → "May 2026" for the Last Tested chip */
+function fmtTested(iso: string): string {
+  try {
+    const d = new Date(iso + 'T00:00:00');
+    return d.toLocaleDateString('en-US', { month:'short', year:'numeric' });
+  } catch { return iso; }
+}
+
 function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
   tool: Tool; navigate: (to: string) => void; isAffiliatePick: boolean; idx: number; key?: React.Key;
 }) {
@@ -1173,9 +1249,18 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
             {/* Footer */}
             <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
               borderTop:`1px solid var(--brd-sm)`, paddingTop:12, marginTop:'auto' }}>
-              <span style={{ fontSize:11, color:C.mut2 }}>
-                Best for: {tool.bestFor}
-              </span>
+              <div>
+                <span style={{ fontSize:11, color:C.mut2 }}>
+                  Best for: {tool.bestFor}
+                </span>
+                {tool.lastTestedISO && (
+                  <div style={{ fontSize:10, color:accent,
+                    background:`${accent}0f`, padding:'2px 7px', borderRadius:5,
+                    marginTop:5, display:'inline-flex', alignItems:'center', gap:3 }}>
+                    ✓ Tested {fmtTested(tool.lastTestedISO)}
+                  </div>
+                )}
+              </div>
               <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12.5,
                 fontWeight:700, color:'#fff',
                 background:`linear-gradient(135deg,${accent},${isA2?'#ea580c':'#0b7a6e'})`,
@@ -1277,7 +1362,16 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
         {/* Footer */}
         <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
           borderTop:`1px solid var(--brd-sm)`, paddingTop:12 }}>
-          <span style={{ fontSize:11.5, color:C.mut2 }}>Best for: {tool.bestFor}</span>
+          <div>
+            <span style={{ fontSize:11.5, color:C.mut2 }}>Best for: {tool.bestFor}</span>
+            {tool.lastTestedISO && (
+              <div style={{ fontSize:10, color:accent,
+                background:`${accent}0f`, padding:'2px 7px', borderRadius:5,
+                marginTop:5, display:'inline-flex', alignItems:'center', gap:3 }}>
+                ✓ Tested {fmtTested(tool.lastTestedISO)}
+              </div>
+            )}
+          </div>
           <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12,
             fontWeight: isSecondary ? 500 : 600,
             color: isSecondary ? C.mut2 : accent }}>

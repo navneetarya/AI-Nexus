@@ -1,0 +1,18 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" rx="8" fill="#0B1210"/>
+  <!-- Teal glow -->
+  <circle cx="16" cy="16" r="14" fill="rgba(13,148,136,0.08)"/>
+  <!-- Connection lines forming N -->
+  <line x1="7"  y1="24" x2="7"  y2="8"  stroke="rgba(255,255,255,0.45)" stroke-width="2"   stroke-linecap="round"/>
+  <line x1="7"  y1="8"  x2="25" y2="24" stroke="rgba(255,255,255,0.45)" stroke-width="2"   stroke-linecap="round"/>
+  <line x1="25" y1="8"  x2="25" y2="24" stroke="rgba(255,255,255,0.45)" stroke-width="2"   stroke-linecap="round"/>
+  <!-- Corner nodes -->
+  <circle cx="7"  cy="8"  r="3" fill="#ffffff"/>
+  <circle cx="7"  cy="24" r="3" fill="#ffffff"/>
+  <circle cx="25" cy="8"  r="3" fill="#ffffff"/>
+  <circle cx="25" cy="24" r="3" fill="#ffffff"/>
+  <!-- Hub node at diagonal cross-point -->
+  <circle cx="16" cy="16" r="4"   fill="#ffffff" opacity="0.92"/>
+  <circle cx="16" cy="16" r="2.2" fill="#0D9488"/>
+</svg>
