@@ -1,8 +1,9 @@
 // pages/BlogPostPage.tsx
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { SharedNav } from './SharedNav';
 import { BlogPost } from '../blog/index';
-import { SITE_CONFIG } from '../constants';
+import { SITE_CONFIG, TOOLS } from '../constants';
+import { BeehiivForm } from '../components/BeehiivForm';
 
 // ── H5 (SEO-High): Auto-link tool name mentions to /tools/{slug} pages ────────
 // Passes PageRank from blog content to monetisable tool review pages.
@@ -88,6 +89,57 @@ const C = {
   a1brd:  'var(--a1-brd)',
   brd:  'var(--brd)',
 };
+
+function ReadersAlsoAsk({ faqs }: { faqs: { q: string; a: string }[] }) {
+  const [open, setOpen] = useState<number | null>(null);
+  return (
+    <section aria-label="Readers also ask" style={{ margin: '40px 0' }}>
+      <h2 style={{
+        fontFamily: "'Syne', sans-serif",
+        fontSize: 20, fontWeight: 800,
+        color: C.txt, marginBottom: 16,
+      }}>
+        Readers Also Ask
+      </h2>
+      <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 8 }}>
+        {faqs.slice(0, 5).map(({ q, a }, i) => (
+          <div key={i}
+            style={{
+              background: C.surf,
+              border: `1px solid ${C.brd}`,
+              borderRadius: 10,
+              overflow: 'hidden',
+            }}
+          >
+            <button
+              onClick={() => setOpen(open === i ? null : i)}
+              style={{
+                width: '100%', textAlign: 'left' as const,
+                padding: '14px 18px',
+                background: 'none', border: 'none', cursor: 'pointer',
+                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                fontSize: 14, fontWeight: 600, color: C.txt,
+                fontFamily: 'inherit',
+              }}
+            >
+              {q}
+              <span style={{
+                transform: open === i ? 'rotate(180deg)' : 'rotate(0)',
+                transition: 'transform .2s',
+                fontSize: 12, color: C.mut2, flexShrink: 0, marginLeft: 12,
+              }}>▼</span>
+            </button>
+            {open === i && (
+              <div style={{ padding: '0 18px 14px', fontSize: 14, color: C.mut, lineHeight: 1.65 }}>
+                {a}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
 
 export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPageProps) {
   // H5: auto-linked blog content — memoised so it only re-runs when post changes
@@ -288,6 +340,29 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           className="blog-content"
           dangerouslySetInnerHTML={{ __html: linkedContent }}
         />
+
+        {/* M6: Inline newsletter CTA */}
+        <div style={{
+          margin: '40px 0',
+          padding: '24px 28px',
+          background: `linear-gradient(135deg, var(--a1-card), var(--surf))`,
+          border: `1px solid var(--a1-brd)`,
+          borderRadius: 14,
+          textAlign: 'center' as const,
+        }}>
+          <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 6 }}>
+            Get weekly AI tool updates
+          </div>
+          <div style={{ fontSize: 13, color: C.mut, marginBottom: 14 }}>
+            New reviews, free tool alerts, and workflow tips — every Tuesday.
+          </div>
+          <BeehiivForm />
+        </div>
+
+        {/* M21: Readers Also Ask — PAA-style expandable section */}
+        {post.faqs.length > 0 && (
+          <ReadersAlsoAsk faqs={post.faqs} />
+        )}
 
         {/* FAQ Section */}
         {post.faqs.length > 0 && (

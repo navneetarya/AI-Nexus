@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-04-28
+# Updated: 2026-05-08
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Every tool is personally tested before being reviewed. No sponsored reviews.
@@ -48,6 +48,11 @@
 ### Productivity Tools
 - [Notion AI Review 2026](https://ainexustools.online/tools/notion-ai): AI built directly inside your notes and workspace. $10/month add-on.
 - [Taskade Review 2026](https://ainexustools.online/tools/taskade): AI-powered tasks, projects and team collaboration. Free + from $8/month.
+- [ElevenLabs Review 2026](https://ainexustools.online/tools/elevenlabs): The most realistic AI voice generator on the planet. Free + from $5/month.
+- [Jasper Review 2026](https://ainexustools.online/tools/jasper): Enterprise AI content platform for marketing teams. From $39/month.
+- [Descript Review 2026](https://ainexustools.online/tools/descript): Edit audio and video by editing text — like a Google Doc. Free + from $12/month.
+- [Perplexity Pro Review 2026](https://ainexustools.online/tools/perplexity): AI-powered search that cites every answer. Free + $20/month Pro.
+- [Canva AI Review 2026](https://ainexustools.online/tools/canva-ai): AI design tools built into the world's most popular design platform. Free + $15/month Pro.
 
 ## Blog Posts
 
@@ -62,6 +67,13 @@
 - [Best Notion AI Alternatives 2026](https://ainexustools.online/blog/best-notion-ai-alternatives-2026): Taskade, Writesonic, Frase tested as Notion AI replacements. Includes free alternatives and use-case breakdowns.
 - [Best InVideo AI Alternatives 2026](https://ainexustools.online/blog/best-invideo-alternatives-2026): Pictory, Opus Clip, and Murf AI tested for faceless YouTube, short clips, and video repurposing.
 - [How to Use AI for Content Creation 2026](https://ainexustools.online/blog/how-to-use-ai-for-content-creation-2026): Full workflow guide covering AI writing (Rytr + Grammarly), image generation (Leonardo.ai), video (Pictory, InVideo AI), and audio (Podcastle, Murf AI). Personally tested by Navneet Arya across 8 months of solo creator use.
+- [Best Jasper AI Alternatives 2026](https://ainexustools.online/blog/jasper-ai-alternatives): Tested Writesonic, Rytr, Frase, and Copy.ai as Jasper alternatives. Cheaper options with honest pricing comparisons.
+- [Best Free ChatGPT Alternatives 2026](https://ainexustools.online/blog/chatgpt-alternatives-free-2026): Free ChatGPT alternatives tested — Rytr, Writesonic, Perplexity, and Gemini with genuine free plans.
+- [Best AI Coding Tools 2026](https://ainexustools.online/blog/best-ai-coding-tools-2026): Replit, GitHub Copilot, Cursor, and Codeium tested for code generation, debugging, and deployment.
+- [Best Free AI Logo Makers 2026](https://ainexustools.online/blog/best-ai-logo-makers-free-2026): Looka, Canva AI, and Leonardo.ai tested for logo design. No design skills needed.
+- [Best AI Marketing Tools 2026](https://ainexustools.online/blog/best-ai-marketing-tools-2026): Frase, Ocoya, Jasper, and Writesonic for SEO content and social media marketing.
+- [Best AI Tools for Teachers 2026](https://ainexustools.online/blog/ai-tools-for-teachers-2026): Gamma, Grammarly, Notion AI, and Rytr for presentations, feedback, and lesson planning.
+- [Best Midjourney Alternatives 2026](https://ainexustools.online/blog/best-midjourney-alternatives-2026): Leonardo.ai, Stable Diffusion, DALL-E, and Adobe Firefly as free Midjourney alternatives.
 
 ## Comparison Articles
 
@@ -69,3 +81,15 @@
 - [Grammarly vs QuillBot (2026)](https://ainexustools.online/compare/grammarly-vs-quillbot): Different tools for different jobs. Grammarly for original writing; QuillBot for rewriting and paraphrasing.
 - [Podcastle vs Descript (2026)](https://ainexustools.online/compare/podcastle-vs-descript): Podcastle wins on recording quality; Descript wins on transcript-based editing for video podcasts.
 - [Ocoya vs Buffer vs Hootsuite (2026)](https://ainexustools.online/compare/ocoya-vs-buffer-vs-hootsuite): Ocoya wins for solo creators who want AI writing + scheduling; Buffer for pure scheduling; Hootsuite for agencies only.
+- [Leonardo.ai vs Midjourney (2026)](https://ainexustools.online/compare/leonardo-vs-midjourney): Leonardo wins on free plan and creative control; Midjourney wins on single-image aesthetic quality.
+- [Replit vs GitHub Copilot (2026)](https://ainexustools.online/compare/replit-vs-github-copilot): Replit for beginners and side projects; Copilot for professional developers in VS Code.
+- [Taskade vs Notion (2026)](https://ainexustools.online/compare/taskade-vs-notion): Taskade for execution and AI agents; Notion for knowledge management and flexible databases.
+- [Grammarly vs Writesonic (2026)](https://ainexustools.online/compare/grammarly-vs-writesonic): Grammarly improves writing; Writesonic generates it. Different tools for different needs.
+- [Murf AI vs ElevenLabs (2026)](https://ainexustools.online/compare/murf-ai-vs-elevenlabs): Murf for video sync and studio voices; ElevenLabs for voice cloning and API access.
+- [Taskade vs Asana (2026)](https://ainexustools.online/compare/taskade-vs-asana): Taskade wins for small teams with AI agents; Asana for enterprise project management.
+- [PhotoRoom vs Remove.bg (2026)](https://ainexustools.online/compare/photoroom-vs-remove-bg): PhotoRoom for e-commerce batch editing; Remove.bg for quick one-off removals.
+- [Writesonic vs Jasper (2026)](https://ainexustools.online/compare/writesonic-vs-jasper): Writesonic wins on pricing ($16 vs $39/month). Jasper only justified for enterprise brand voice needs.
+- [Grammarly vs ProWritingAid (2026)](https://ainexustools.online/compare/grammarly-vs-prowritingaid): Grammarly more accurate for professional writing; ProWritingAid better for fiction with 20+ style reports.
+- [Leonardo.ai vs Stable Diffusion (2026)](https://ainexustools.online/compare/leonardo-ai-vs-stable-diffusion): Leonardo for ease of use and free plan; Stable Diffusion for technical users wanting full control.
+- [Gamma vs Beautiful.ai (2026)](https://ainexustools.online/compare/gamma-vs-beautiful-ai): Gamma wins on free plan and generation speed; Beautiful.ai for strict corporate branding.
+- [InVideo AI vs Pictory (2026)](https://ainexustools.online/compare/invideo-vs-pictory): InVideo for faceless YouTube from prompts; Pictory for converting blog posts to video.

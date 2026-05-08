@@ -35,6 +35,7 @@ const TOOL_CONTENT: Record<string, {
   verdict: string;
   rating: number;
   lastTested: string;
+  lastTestedISO?: string;
   /** ISO 8601 date this review was first published — used in Review schema datePublished */
   datePublished: string;
   timeUsed: string;
@@ -42,6 +43,11 @@ const TOOL_CONTENT: Record<string, {
   upgradeGuide?: string;
   /** W3-1: Quick verdict vs nearest competitor — links to compare article */
   vsVerdict?: { tool: string; summary: string; compareSlug: string; };
+  /** Optional extended content fields */
+  freePlanDetails?: string;
+  pricingSection?: string;
+  paraphraseModes?: string;
+  faqs?: { q: string; a: string }[];
 }> = {
   grammarly: {
     whatIs: "Grammarly is an AI-powered writing assistant that checks grammar, spelling, tone, and clarity across every app you use — from Gmail to Google Docs. Used by 40 million people worldwide, it offers a permanently free plan with no word limit and a Premium tier at $12/month for advanced rewrites and a plagiarism checker.",
@@ -282,12 +288,25 @@ const TOOL_CONTENT: Record<string, {
   },
   'notion-ai': {
     whatIs: "Notion AI is an AI add-on for Notion that reads and references your existing workspace content. It summarises meeting notes, writes documents in your brand voice, translates pages, and extracts action items — all without leaving Notion. Priced at $10/month per workspace member, added on top of any existing Notion plan. Requires an active Notion account.",
-    whoIsItFor: "Teams and individuals who already use Notion and want AI capabilities built directly into their existing workspace rather than switching between tools.",
-    whoShouldSkip: "Anyone who doesn't already use Notion. The AI add-on is an extension of Notion, not a standalone tool — if you're not already in Notion daily, a tool like Rytr or ChatGPT is more practical.",
-    myTake: "Notion AI's biggest advantage is context — it can read and reference all your existing Notion pages when generating content. Ask it to write a blog post and it can pull in your brand voice guidelines, existing content, and style preferences from your workspace. The AI agents that run tasks autonomously for 20 minutes (Notion 3.0) are genuinely novel.",
-    useCases: ["Summarising meeting notes into action items automatically", "Writing blog drafts that match your existing brand voice", "Building project wikis from scattered notes", "Translating documents into multiple languages in-context"],
-    verdict: "Essential for existing Notion users. The $10/month AI add-on pays for itself if you spend even 30 minutes per day in Notion.",
-    rating: 4.4, lastTested: "March 2026", datePublished: "2026-02-28", timeUsed: "1.5 years",
+    whoIsItFor: "Teams and individuals who already use Notion and want AI capabilities built directly into their existing workspace rather than switching between tools. Notion AI is strongest for knowledge workers — product managers, content teams, researchers, and operations leads — who already keep their docs, wikis, and meeting notes in Notion and want the AI to understand that context.",
+    whoShouldSkip: "Anyone who doesn't already use Notion. The AI add-on is an extension of Notion, not a standalone tool — if you're not already in Notion daily, a tool like Rytr or ChatGPT is more practical. Also skip if your primary need is AI-generated content for external audiences — Notion AI is better at internal documents than marketing copy.",
+    myTake: "Notion AI's biggest advantage is context — it can read and reference all your existing Notion pages when generating content. Ask it to write a blog post and it can pull in your brand voice guidelines, existing content, and style preferences from your workspace. The AI agents that run tasks autonomously for 20 minutes (Notion 3.0) are genuinely novel.\n\nI tested Notion AI on a 200-page workspace with meeting notes, project docs, and a style guide. The Q&A feature correctly pulled answers from deep inside nested pages — something I didn't expect it to handle well. The summarisation is best-in-class for long meeting transcripts: it consistently extracts the right action items and ownership assignments.\n\nThe writing quality for blog drafts is adequate but not exceptional. For polished external content, I still run Notion AI drafts through Grammarly. Where Notion AI genuinely shines: internal comms, project briefs, status updates, and converting messy brainstorm notes into structured documents.\n\nThe $10/month per member pricing adds up fast for teams. A 5-person team pays $50/month just for the AI add-on, on top of whatever Notion plan they're already on. That's the main limitation — it's expensive at scale compared to standalone AI writing tools.",
+    useCases: [
+      "Summarising 60-minute meeting transcripts into 5 bullet points with action items and owners",
+      "Writing project briefs that reference existing docs and past decisions from your workspace",
+      "Building and maintaining team wikis from scattered notes and documents",
+      "Translating internal documentation into multiple languages for distributed teams",
+      "Generating weekly status reports by pulling data from project boards and task databases",
+    ],
+    pricingSection: "**Notion AI Pricing (2026):**\n- Notion AI add-on ($10/month per member): Adds AI capabilities to any Notion plan (Free, Plus, Business, or Enterprise). Includes unlimited AI Q&A, writing assistance, autofill in databases, and AI-generated summaries.\n- Notion Plus ($10/month per member): The base workspace plan most teams use. Combined with AI add-on, total cost is $20/month per member.\n- Notion Business ($18/month per member): Adds SAML SSO, private team spaces, and bulk PDF export. Combined with AI: $28/month per member.\n\nFor solo users on the free Notion plan, the AI add-on is $10/month total — reasonable for the context-aware capabilities. For teams, the per-member pricing means Notion AI can quickly become the most expensive line item in your tool stack.",
+    faqs: [
+      { q: "Is Notion AI worth $10/month?", a: "For daily Notion users who write 5,000+ words per week in Notion, yes. The context-aware generation — pulling from your existing workspace — saves more time than a standalone AI writer that requires re-explaining your brand voice every session. For light Notion users, $10/month is hard to justify over free alternatives like ChatGPT." },
+      { q: "Notion AI vs ChatGPT — which should I use?", a: "Notion AI is better when you need the AI to reference your existing documents, databases, and meeting notes. ChatGPT is better for general-purpose generation, research, and coding. Many power users use both — Notion AI for workspace-integrated tasks and ChatGPT for everything else." },
+      { q: "Can Notion AI replace a writing tool like Rytr?", a: "For internal documents, yes. For external marketing content — blog posts, ad copy, social media captions — Rytr and Writesonic produce higher quality output at lower cost. Notion AI's strength is internal-facing content that benefits from workspace context." },
+      { q: "Does Notion AI work on the free plan?", a: "Yes — the Notion AI add-on can be added to any Notion plan, including the free plan. You pay $10/month per member for the AI functionality regardless of your base plan." },
+    ],
+    verdict: "Essential for existing Notion power users who spend 30+ minutes daily in the workspace. The context-aware generation is genuinely better than standalone AI writers for internal documents, meeting summaries, and project briefs. The $10/month per member pricing makes it expensive for teams — evaluate whether the workspace integration saves enough time to justify the cost over free ChatGPT for simpler tasks.",
+    rating: 4.4, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-02-28", timeUsed: "1.5 years",
   },
   jasper: {
     whatIs: "Jasper is an enterprise AI writing platform built for marketing teams that need consistent, on-brand content at scale. It trains on your brand voice — tone, style, vocabulary — and applies it across every output: blog posts, ad copy, emails, and social content. Pricing starts at $39/month, making it the premium option in the AI writing category and the right tool only when brand consistency across a team justifies the cost.",

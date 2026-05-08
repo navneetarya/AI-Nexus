@@ -731,7 +731,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             flexWrap:'wrap' as const, margin:'0 auto 20px', maxWidth:520,
           }}>
             {[
-              { num:'20+',  label:'Tools Tested' },
+              { num: String(TOOLS.length) + '+', label:'Tools Tested' },
               { num:'7',    label:'Head-to-Head Comparisons' },
               { num:'100%', label:'Free Trial Links' },
             ].map(({ num, label }) => (
@@ -898,6 +898,49 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           </div>
         </div>
       </div>
+
+      {/* ── Trending This Week ────────────────────────────────────────── */}
+      {(filters.category as string) === 'All' && !filters.search && (
+        <div className="scroll-reveal" style={{ maxWidth:1200, margin:'0 auto', padding:'28px 24px 0' }}>
+          <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:17,
+            color:C.txt, letterSpacing:'-0.025em', marginBottom:14, display:'flex', alignItems:'center', gap:8 }}>
+            <span style={{ display:'inline-flex', alignItems:'center', justifyContent:'center',
+              width:22, height:22, borderRadius:6, background:C.a1card }}>
+              🔥
+            </span>
+            Trending This Week
+          </div>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(260px,1fr))', gap:12 }}>
+            {TOOLS.filter(t => ['grammarly','rytr','leonardo-ai','gamma'].includes(t.slug)).map(tool => {
+              const accent = CAT_ACCENT[tool.category] === 'a2' ? C.a2 : C.a1;
+              return (
+                <div key={tool.slug} onClick={() => navigate(`/tools/${tool.slug}`)}
+                  style={{ display:'flex', alignItems:'center', gap:12, padding:'12px 16px',
+                    background:C.surf, border:`1px solid var(--brd-xs)`, borderRadius:12,
+                    cursor:'pointer', transition:'border-color .15s' }}
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = accent)}
+                  onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--brd-xs)')}>
+                  <div style={{ width:36, height:36, borderRadius:10, background:'#fff',
+                    border:`1.5px solid ${accent}28`, display:'flex', alignItems:'center',
+                    justifyContent:'center', overflow:'hidden', flexShrink:0 }}>
+                    <ToolLogo slug={tool.slug} size={28} name={tool.name} color={accent} />
+                  </div>
+                  <div style={{ minWidth:0 }}>
+                    <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:14,
+                      color:C.txt, whiteSpace:'nowrap' as const, overflow:'hidden', textOverflow:'ellipsis' }}>
+                      {tool.name}
+                    </div>
+                    <div style={{ fontSize:11, color:C.mut2, marginTop:1 }}>{tool.category} · {tool.pricing}</div>
+                  </div>
+                  <div style={{ marginLeft:'auto', fontSize:11, color:accent, fontWeight:600, flexShrink:0 }}>
+                    Read review →
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* ── Tool Grid ──────────────────────────────────────────────────── */}
       <div id="tools-section" className="tools-section" style={{ maxWidth:1200, margin:'0 auto', padding:'36px 24px 96px' }}>

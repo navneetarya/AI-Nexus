@@ -151,7 +151,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-9M7R4GGEEK', { send_page_view: true });
 
       window.addEventListener('load', function() {
         var delay = window.innerWidth <= 680 ? 4000 : 2000;
@@ -159,6 +158,9 @@
           var s = document.createElement('script');
           s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9M7R4GGEEK';
           s.async = true;
+          s.onload = function() {
+            gtag('config', 'G-9M7R4GGEEK', { send_page_view: false });
+          };
           document.head.appendChild(s);
         }, delay);
       });
@@ -339,6 +341,9 @@
       ::-webkit-scrollbar-track { background:transparent; }
       ::-webkit-scrollbar-thumb { background:rgba(13,148,136,.3); border-radius:10px; }
       ::-webkit-scrollbar-thumb:hover { background:rgba(13,148,136,.55); }
+      /* ── Skeleton shimmer ── */
+      @keyframes shimmer{0%{background-position:-400px 0}to{background-position:400px 0}}
+      .skeleton{background:linear-gradient(90deg,var(--surf) 25%,var(--brd) 37%,var(--surf) 63%);background-size:800px 100%;animation:shimmer 1.4s infinite;border-radius:8px}
     </style>
     <!-- Theme init: apply saved preference before paint to avoid flash -->
     <script>

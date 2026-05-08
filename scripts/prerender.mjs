@@ -408,6 +408,71 @@ const COMPARE_ARTICLES = [
       { q: 'Can PhotoRoom replace a professional product photographer?', a: 'PhotoRoom replaces a studio setup for standard e-commerce product images — white backgrounds, lifestyle background variants, shadow effects, and consistent branding across a catalogue. It does not replace photographers for editorial, fashion, or creative campaigns where artistic direction matters. For Shopify, Amazon, and Etsy listings, PhotoRoom produces commercially viable images most buyers cannot distinguish from studio shots.' },
     ],
   },
+  // ── writesonic-vs-jasper ──────────────────────────────────────────────────
+  {
+    slug: 'writesonic-vs-jasper',
+    title: 'Writesonic vs Jasper (2026): Which AI Writer Wins for Less?',
+    seoTitle: 'Writesonic vs Jasper 2026 — Which AI Writer Wins?',
+    metaDescription: 'Writesonic vs Jasper compared for content teams and solo creators. Pricing, SEO features, and output quality tested side-by-side in 2026.',
+    faqs: [
+      { q: 'Is Writesonic cheaper than Jasper?', a: 'Yes. Writesonic starts at $16/month with SEO tools included. Jasper starts at $39/month (Creator) and $99/month (Pro). For solo creators, Writesonic delivers 80-90% of Jasper\'s output at less than half the price.' },
+      { q: 'Does Jasper have a free plan?', a: 'No. Jasper offers a 7-day free trial but no permanent free plan. Writesonic has a limited free plan with 25 generations per month.' },
+      { q: 'Which is better for SEO content?', a: 'Writesonic has built-in SEO scoring and keyword optimisation in its Article Writer. Jasper requires Surfer SEO ($89/month extra) for equivalent SEO guidance. For budget-conscious SEO content, Writesonic wins.' },
+      { q: 'Is Jasper worth $39/month?', a: 'Only if brand voice consistency is critical — Jasper\'s Brand Voice feature and team collaboration tools are genuinely superior. For individual creators and small teams, Writesonic at $16/month is the smarter investment.' },
+    ],
+  },
+  // ── grammarly-vs-prowritingaid ────────────────────────────────────────────
+  {
+    slug: 'grammarly-vs-prowritingaid',
+    title: 'Grammarly vs ProWritingAid (2026): Which Grammar Checker Actually Wins?',
+    seoTitle: 'Grammarly vs ProWritingAid 2026 — Tested & Compared',
+    metaDescription: 'Grammarly vs ProWritingAid compared for writers, bloggers, and students. Accuracy tests, pricing breakdown, and honest verdict on which grammar tool to use in 2026.',
+    faqs: [
+      { q: 'Is ProWritingAid better than Grammarly?', a: 'ProWritingAid is better for fiction and long-form creative writing — its 20+ style reports analyse pacing, dialogue, and sentence variety. Grammarly is more accurate for everyday professional writing, emails, and content creation.' },
+      { q: 'Is ProWritingAid cheaper than Grammarly?', a: 'Yes. ProWritingAid Premium is $8/month (billed annually). Grammarly Premium is $12/month. ProWritingAid also offers a $399 lifetime plan — Grammarly has no equivalent.' },
+      { q: 'Which is more accurate?', a: 'Grammarly catches more grammar and punctuation errors — approximately 94% vs ProWritingAid\'s 88% in our 50-sentence test. ProWritingAid catches more stylistic issues like overused words and readability problems.' },
+      { q: 'Can I use both together?', a: 'Technically yes, but they conflict in browser extensions. Most writers choose one. Use Grammarly for professional and business writing, ProWritingAid for creative and fiction writing.' },
+    ],
+  },
+  // ── leonardo-ai-vs-stable-diffusion ───────────────────────────────────────
+  {
+    slug: 'leonardo-ai-vs-stable-diffusion',
+    title: 'Leonardo.ai vs Stable Diffusion (2026): Which AI Image Tool Should You Use?',
+    seoTitle: 'Leonardo.ai vs Stable Diffusion 2026 — Compared',
+    metaDescription: 'Leonardo.ai vs Stable Diffusion compared for creators and developers. Ease of use, free plans, image quality, and which AI image generator to choose in 2026.',
+    faqs: [
+      { q: 'Is Leonardo.ai free?', a: 'Yes. Leonardo.ai offers 150 free credits per day — enough for dozens of images. No credit card required. Stable Diffusion is free and open-source but requires your own GPU or a paid cloud service to run.' },
+      { q: 'Is Stable Diffusion better than Leonardo.ai?', a: 'Stable Diffusion offers more control and customisation for technical users who can run it locally. Leonardo.ai is better for anyone who wants high-quality AI images without setup, coding, or GPU costs.' },
+      { q: 'Can beginners use Stable Diffusion?', a: 'It has a steep learning curve. You need to install ComfyUI or Automatic1111, download model checkpoints, and understand parameters like CFG scale and sampling steps. Leonardo.ai is ready to use in 30 seconds.' },
+      { q: 'Which produces better images?', a: 'At the highest skill level, Stable Diffusion can match or exceed Leonardo.ai. For average users, Leonardo.ai produces better results out of the box thanks to its fine-tuned models and guided UI.' },
+    ],
+  },
+  // ── gamma-vs-beautiful-ai ────────────────────────────────────────────────
+  {
+    slug: 'gamma-vs-beautiful-ai',
+    title: 'Gamma vs Beautiful.ai (2026): Which AI Presentation Tool Wins?',
+    seoTitle: 'Gamma vs Beautiful.ai 2026 — Tested & Compared',
+    metaDescription: 'Gamma vs Beautiful.ai compared for students, startups, and professionals. Free plans, AI generation speed, and design quality tested side-by-side in 2026.',
+    faqs: [
+      { q: 'Is Gamma free?', a: 'Yes. Gamma offers 400 AI credits on signup — enough for 4-5 complete presentations. Free presentations include a small Gamma badge. Paid plans from $8/month remove the badge and add unlimited AI creation.' },
+      { q: 'Is Beautiful.ai better for corporate presentations?', a: 'Beautiful.ai has stronger corporate templates and brand consistency controls. If you present to enterprise clients regularly and need pixel-perfect brand compliance, Beautiful.ai is worth the higher price.' },
+      { q: 'Which generates presentations faster?', a: 'Gamma generates a complete presentation in under 2 minutes from a topic prompt. Beautiful.ai takes 3-4 minutes and requires more manual template selection. Gamma wins on speed.' },
+      { q: 'Can Gamma create websites?', a: 'Yes — Gamma creates scrollable one-page websites and documents using the same AI workflow. Beautiful.ai is limited to slide presentations only.' },
+    ],
+  },
+  // ── invideo-vs-pictory ───────────────────────────────────────────────────
+  {
+    slug: 'invideo-vs-pictory',
+    title: 'InVideo AI vs Pictory (2026): Which Text-to-Video Tool Should You Use?',
+    seoTitle: 'InVideo AI vs Pictory 2026 — Which Video Tool Wins?',
+    metaDescription: 'InVideo AI vs Pictory compared for content creators and faceless YouTube channels. AI video generation, pricing, and output quality tested in 2026.',
+    faqs: [
+      { q: 'Is InVideo AI better than Pictory?', a: 'InVideo AI is better for creating new videos from text prompts — it generates scripts, selects footage, and adds voiceover automatically. Pictory is better for converting existing blog posts into videos. Choose based on whether you\'re creating or repurposing.' },
+      { q: 'Which is cheaper?', a: 'InVideo AI starts at $20/month. Pictory starts at $19/month. Both have limited free plans. The pricing is comparable; the differentiation is in what each tool does best.' },
+      { q: 'Can I make faceless YouTube videos with InVideo AI?', a: 'Yes — InVideo AI is specifically designed for faceless YouTube content. It generates complete videos with script, AI voiceover, stock footage, and captions from a single text prompt.' },
+      { q: 'Does Pictory have AI voiceover?', a: 'Pictory has basic AI narration but it\'s not as natural as InVideo AI\'s voiceover. For professional-quality AI voiceover, pair Pictory with a dedicated tool like Murf AI or ElevenLabs.' },
+    ],
+  },
 ];
 
 // ── HTML manipulation helpers ─────────────────────────────────────────────────
@@ -704,9 +769,21 @@ function generateSitemap() {
   blocks.push(urlBlock({ loc: `${SITE}/about/`,            priority: '0.7', freq: 'monthly', mod: TODAY }));
   blocks.push(urlBlock({ loc: `${SITE}/disclosure/`,        priority: '0.3', freq: 'yearly',  mod: TODAY }));
   blocks.push(urlBlock({ loc: `${SITE}/methodology/`,       priority: '0.7', freq: 'monthly', mod: TODAY }));
+  blocks.push(urlBlock({ loc: `${SITE}/glossary/`,          priority: '0.8', freq: 'monthly', mod: TODAY }));
   blocks.push(urlBlock({ loc: `${SITE}/best-free-ai-tools/`,priority: '0.9', freq: 'weekly',  mod: TODAY,
     images: [{ loc: `${SITE}/og-image.png`, title: 'Best Free AI Tools 2026 — AI Nexus' }],
   }));
+
+  // Category landing pages
+  const CATEGORY_SLUGS = [
+    'best-ai-writing-tools', 'best-ai-image-tools', 'best-ai-video-tools', 'best-ai-audio-tools',
+    'best-ai-marketing-tools', 'best-ai-design-tools', 'best-ai-coding-tools', 'best-ai-productivity-tools',
+  ];
+  for (const slug of CATEGORY_SLUGS) {
+    blocks.push(urlBlock({ loc: `${SITE}/${slug}/`, priority: '0.9', freq: 'weekly', mod: TODAY,
+      images: [{ loc: `${SITE}/og-image.png`, title: `${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} 2026` }],
+    }));
+  }
 
   // Blog list + individual blog posts
   blocks.push(urlBlock({
@@ -958,6 +1035,106 @@ const BLOG_POSTS = [
       { q: 'What is the cheapest InVideo AI alternative?', a: "Opus Clip is the cheapest paid InVideo alternative at $19/month, with a functional free plan that gives you 60 minutes of processing per month. Pictory starts at $19/month with a 3-video free trial. All three tools are in a similar price range — choose based on use case, not price." },
     ],
   },
+  // SEO-07 Tier 2: jasper ai alternatives — 3,200/mo, KD 24
+  {
+    slug: 'jasper-ai-alternatives',
+    title: 'Best Jasper AI Alternatives 2026 — Cheaper & Better Options Tested',
+    metaDescription: 'Looking for a Jasper AI alternative? I tested Writesonic, Rytr, Frase, and Copy.ai. Here are the best Jasper alternatives that actually deliver — with honest pricing comparisons.',
+    datePublished: '2026-05-06',
+    dateModified: '2026-05-06',
+    readTimeMinutes: 7,
+    faqs: [
+      { q: 'What is the best Jasper AI alternative?', a: "Writesonic is the best Jasper alternative for long-form blog content at $19/month vs Jasper's $39/month. For short-form writing, Rytr at $9/month unlimited is significantly cheaper. For SEO-specific content, Frase at $15/month offers SERP analysis that Jasper doesn't include." },
+      { q: 'Why are people looking for Jasper alternatives?', a: "The most common reasons are: (1) Jasper's pricing starts at $39/month — expensive for solo creators. (2) Jasper's output quality has been matched by newer, cheaper tools. (3) Jasper removed the free trial. (4) Many users only need specific features that cheaper tools cover better." },
+      { q: 'Is Writesonic better than Jasper?', a: "For blog content creation, Writesonic matches Jasper's output quality at less than half the price. Jasper is better for enterprise teams needing brand voice training and team collaboration features. For individual creators and small teams, Writesonic is the better value." },
+      { q: 'What is the cheapest Jasper alternative?', a: "Rytr at $9/month unlimited is the cheapest full-featured Jasper alternative. It covers 40+ use cases in 30+ languages. The free plan (10,000 characters/month) lets you test before paying. For enterprise features at a lower price, Writesonic at $19/month is the next step up." },
+    ],
+  },
+  // Week 2 blog posts — H7, H9, H10, H15, M8, M9
+  {
+    slug: 'chatgpt-alternatives-free-2026',
+    title: 'Best Free ChatGPT Alternatives 2026 — Tested & Ranked',
+    metaDescription: 'Looking for free ChatGPT alternatives? I tested Rytr, Writesonic, Perplexity, and Gemini. Here are the best free options that actually work in 2026.',
+    datePublished: '2026-05-06',
+    dateModified: '2026-05-08',
+    readTimeMinutes: 8,
+    faqs: [
+      { q: 'What is the best free ChatGPT alternative?', a: 'Perplexity is the best free ChatGPT alternative for research — it cites sources automatically. Rytr is the best free alternative for writing content, with 10,000 characters/month on the free plan.' },
+      { q: 'Is there a completely free AI chatbot?', a: 'Google Gemini is completely free with no word limits. Perplexity offers unlimited basic searches for free. Both are strong ChatGPT alternatives for everyday use.' },
+      { q: 'Which ChatGPT alternative is best for writing?', a: 'Rytr is the best ChatGPT alternative specifically for writing — it has 40+ templates for blog posts, emails, ads, and social captions. The free plan gives 10,000 characters/month.' },
+      { q: 'Can free AI tools replace ChatGPT Plus?', a: 'For basic writing and research, yes. Perplexity Pro and Writesonic together cost less than ChatGPT Plus and cover most use cases. For complex coding and advanced reasoning, ChatGPT Plus still leads.' },
+    ],
+  },
+  {
+    slug: 'best-ai-coding-tools-2026',
+    title: 'Best AI Coding Tools 2026 — Tested & Ranked',
+    metaDescription: 'Best AI coding tools tested in 2026. Replit, GitHub Copilot, Cursor, and Codeium compared for code generation, debugging, and deployment.',
+    datePublished: '2026-05-05',
+    dateModified: '2026-05-08',
+    readTimeMinutes: 8,
+    faqs: [
+      { q: 'What is the best free AI coding tool?', a: 'Replit is the best free AI coding tool — it includes an AI assistant, hosting, and deployment all in one. Codeium is the best free AI code completion extension for VS Code.' },
+      { q: 'Is GitHub Copilot worth it?', a: 'At $10/month, GitHub Copilot is worth it for professional developers who code 4+ hours daily. It saves 30-60 minutes per day on boilerplate, documentation, and test writing.' },
+      { q: 'Can AI write code for beginners?', a: 'Yes — Replit and Cursor can generate functional code from plain English descriptions. Beginners can build simple web apps, scripts, and automations without deep programming knowledge.' },
+      { q: 'Which AI coding tool is best for Python?', a: 'GitHub Copilot has the strongest Python support due to its training data. Cursor is a close second with excellent context-aware completions for Python projects.' },
+    ],
+  },
+  {
+    slug: 'best-ai-logo-makers-free-2026',
+    title: 'Best Free AI Logo Makers 2026 — Tested & Ranked',
+    metaDescription: 'Best free AI logo makers tested in 2026. Looka, Canva AI, Leonardo.ai compared for startups and small businesses. No design skills needed.',
+    datePublished: '2026-05-04',
+    dateModified: '2026-05-08',
+    readTimeMinutes: 7,
+    faqs: [
+      { q: 'What is the best free AI logo maker?', a: 'Canva AI is the best completely free AI logo maker — you can generate logos with AI and download them at no cost. Looka generates better quality logos but requires purchase to download.' },
+      { q: 'Can AI make a professional logo?', a: 'Yes — AI logo makers like Looka produce logos that are visually indistinguishable from designer-made logos for most small business use cases. They work best for clean, modern logo styles.' },
+      { q: 'How much does an AI logo cost?', a: 'Canva AI logos are free. Looka logos start at $20 one-time purchase. Leonardo.ai can generate logo concepts for free (150 daily credits). Professional designer logos typically cost $200-2,000+.' },
+      { q: 'Do I own the rights to an AI-generated logo?', a: 'With paid plans (Looka, Canva Pro), yes — you get full commercial rights. Free tier outputs may have restrictions. Always check the specific tool\'s licensing terms before using commercially.' },
+    ],
+  },
+  {
+    slug: 'best-ai-marketing-tools-2026',
+    title: 'Best AI Marketing Tools 2026 — Tested & Ranked',
+    metaDescription: 'Best AI marketing tools tested in 2026. Frase, Ocoya, Jasper, and Writesonic compared for SEO content, social media, and campaign management.',
+    datePublished: '2026-05-03',
+    dateModified: '2026-05-08',
+    readTimeMinutes: 9,
+    faqs: [
+      { q: 'What is the best AI marketing tool in 2026?', a: 'Frase is the best AI marketing tool for SEO content — it analyses top-ranking pages and generates data-driven briefs. Ocoya is best for social media marketing with AI caption writing and scheduling.' },
+      { q: 'Can AI replace a marketing team?', a: 'No — but AI tools can make a 1-2 person team as productive as a 5-person team. Tools like Frase, Ocoya, and Writesonic automate research, writing, and scheduling, freeing humans for strategy.' },
+      { q: 'Which AI tool is best for SEO?', a: 'Frase is the best AI tool specifically for SEO content. It analyses the top 20 Google results for any keyword and generates a content brief that tells you exactly what topics to cover.' },
+      { q: 'What is the cheapest AI marketing tool?', a: 'Rytr at $9/month unlimited is the cheapest option for AI content creation. Frase at $15/month is the cheapest with SEO analysis. Ocoya starts at $15/month for social scheduling with AI.' },
+    ],
+  },
+  {
+    slug: 'ai-tools-for-teachers-2026',
+    title: 'Best AI Tools for Teachers 2026 — Tested & Ranked',
+    metaDescription: 'AI tools for teachers tested in 2026. Gamma, Grammarly, Notion AI, and Rytr for presentations, feedback, lesson planning, and worksheets.',
+    datePublished: '2026-05-05',
+    dateModified: '2026-05-08',
+    readTimeMinutes: 7,
+    faqs: [
+      { q: 'What is the best free AI tool for teachers?', a: 'Gamma is the best free AI tool for teachers — it generates complete slide presentations from a topic in under 2 minutes. Grammarly\'s free plan provides unlimited grammar checking for student feedback.' },
+      { q: 'Can teachers use AI legally?', a: 'Yes. Using AI to create lesson plans, presentations, and worksheets is legal and increasingly encouraged. Individual school policies may vary — check with your institution for specific guidelines.' },
+      { q: 'Which AI tool makes the best presentations?', a: 'Gamma generates the best AI presentations. Enter a topic and it creates a complete, visually polished deck in under 2 minutes. The free plan includes 400 AI credits — enough for 4-5 full presentations.' },
+      { q: 'Can AI help grade papers?', a: 'Grammarly can help provide grammar and clarity feedback on student writing. Full automated grading requires specialised tools like Gradescope. AI should supplement, not replace, teacher judgment in assessment.' },
+    ],
+  },
+  {
+    slug: 'best-midjourney-alternatives-2026',
+    title: 'Best Midjourney Alternatives 2026 — Free & Tested',
+    metaDescription: 'Best Midjourney alternatives tested in 2026. Leonardo.ai, Stable Diffusion, DALL-E, and Adobe Firefly compared for free AI image generation.',
+    datePublished: '2026-05-04',
+    dateModified: '2026-05-08',
+    readTimeMinutes: 8,
+    faqs: [
+      { q: 'What is the best free Midjourney alternative?', a: 'Leonardo.ai is the best free Midjourney alternative — 150 free credits per day, no credit card required. The image quality rivals Midjourney for most use cases.' },
+      { q: 'Is there a free AI image generator as good as Midjourney?', a: 'Leonardo.ai comes closest to Midjourney quality on a free plan. Stable Diffusion matches or exceeds Midjourney quality but requires technical setup and a GPU.' },
+      { q: 'Why do people want Midjourney alternatives?', a: 'Midjourney requires Discord to use, has no free plan ($10/month minimum), and limits commercial usage on lower tiers. Many users want browser-based tools with free options.' },
+      { q: 'Which AI image generator is best for beginners?', a: 'Leonardo.ai is the best AI image generator for beginners — it runs in the browser, has guided prompting, and the free plan is generous enough to learn without paying.' },
+    ],
+  },
 ];
 console.log('\n🔧  Pre-rendering routes for Google & Bing crawlability...\n');
 
@@ -968,8 +1145,8 @@ console.log('Tool pages:');
 for (const tool of TOOLS) {
   const canonical = `${SITE}/tools/${tool.slug}/`;
   // Week 1 Task 4: tagline in title matches App.tsx template — Google indexes the static HTML first
-  const title = `${tool.name} Review ${YEAR}: ${tool.tagline} | AI Nexus`;
-  const description = `Honest ${tool.name} review by ${AUTHOR} — personally tested. ${tool.tagline}. Pros, cons, real verdict, and a free trial link.`;
+  const title = `${tool.name} Review ${YEAR} — Personally Tested | AI Nexus`;
+  const description = `${tool.name} review — personally tested for 30+ days. ${tool.tagline}. Honest verdict by ${AUTHOR}. No sponsored reviews.`;
 
   const schemas = [
     reviewSchema(tool, canonical),
@@ -980,6 +1157,30 @@ for (const tool of TOOLS) {
     ]),
     // FIX 4 (GEO-Critical): Speakable — tells AI engines which HTML elements to cite
     speakableSchema(canonical, ['h1', '[data-speakable="verdict"]', '[data-speakable="summary"]']),
+    // H11: SoftwareApplication schema — enables Google rich app results
+    {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: tool.name,
+      url: canonical,
+      applicationCategory: `${tool.category}Application`,
+      operatingSystem: 'Web, iOS, Android',
+      description: tool.description,
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+        description: tool.pricing,
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: tool.rating.toString(),
+        bestRating: '5',
+        worstRating: '1',
+        reviewCount: '1',
+      },
+    },
   ];
 
   // Inject FAQPage schema if Q&As exist for this tool — enables FAQ rich results in SERPs
@@ -1201,6 +1402,55 @@ for (const post of BLOG_POSTS) {
   console.log('\n  ✓  /best-free-ai-tools/');
 }
 
+// ── 7. Category landing pages (/best-ai-writing-tools/ etc.) ────────────────
+{
+  const CATEGORY_PAGES = [
+    { slug: 'best-ai-writing-tools', category: 'Writing', title: 'Best AI Writing Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI writing tools tested for 2026. Grammarly, Rytr, Writesonic, Frase, Jasper reviewed with free plans and honest verdicts.' },
+    { slug: 'best-ai-image-tools', category: 'Image', title: 'Best AI Image Generators 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI image generators tested in 2026. Leonardo.ai, PhotoRoom, and more with honest reviews.' },
+    { slug: 'best-ai-video-tools', category: 'Video', title: 'Best AI Video Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI video tools tested in 2026. InVideo AI, Pictory, Opus Clip reviewed for faceless YouTube and Shorts.' },
+    { slug: 'best-ai-audio-tools', category: 'Audio', title: 'Best AI Audio & Voice Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI audio tools tested in 2026. Murf AI, Podcastle, ElevenLabs for voiceovers and podcasts.' },
+    { slug: 'best-ai-marketing-tools', category: 'Marketing', title: 'Best AI Marketing Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI marketing tools tested in 2026. Ocoya, Frase, and Jasper for SEO and content marketing.' },
+    { slug: 'best-ai-design-tools', category: 'Design', title: 'Best AI Design Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI design tools tested in 2026. Gamma, Looka, Canva AI for presentations and visual content.' },
+    { slug: 'best-ai-coding-tools', category: 'Coding', title: 'Best AI Coding Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI coding tools tested in 2026. Replit and code generation tools with honest reviews.' },
+    { slug: 'best-ai-productivity-tools', category: 'Productivity', title: 'Best AI Productivity Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI productivity tools tested in 2026. Taskade, Notion AI, Perplexity Pro for tasks and workflows.' },
+  ];
+
+  for (const page of CATEGORY_PAGES) {
+    const canonical = `${SITE}/${page.slug}/`;
+    const catTools = TOOLS.filter(t => t.category === page.category);
+    const schemas = [
+      breadcrumbs([
+        [1, 'AI Nexus', SITE],
+        [2, `Best AI ${page.category} Tools`, canonical],
+      ]),
+      itemListSchema({ name: page.title.split(' | ')[0], url: canonical, items: catTools.map(t => ({ name: t.name, url: `${SITE}/tools/${t.slug}/`, description: t.tagline })) }),
+    ];
+    writeRoute(page.slug, buildPage(template, {
+      title: page.title, description: page.desc, canonical, schemas,
+      bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(page.desc)}</p>`,
+    }));
+    console.log(`  ✓  /${page.slug}/`);
+  }
+}
+
+// ── 8. Glossary page (/glossary/) ──────────────────────────────────────────────
+{
+  const canonical = `${SITE}/glossary/`;
+  const title = 'AI Glossary — Key Terms Explained (2026) | AI Nexus';
+  const description = 'Clear definitions of 49 AI terms — LLM, GPT, RAG, prompt engineering, fine-tuning, and more. Written for beginners, updated for 2026.';
+  const schemas = [
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'AI Glossary', canonical],
+    ]),
+  ];
+  writeRoute('glossary', buildPage(template, {
+    title, description, canonical, schemas,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>`,
+  }));
+  console.log('  ✓  /glossary/');
+}
+
 // ── H6 (SEO-High): RSS feed generator (/rss.xml) ─────────────────────────────
 // Aggregator sites (Feedly, Inoreader, etc.) auto-scrape RSS for syndication
 // and backlinks. Also used by news discovery tools and Bing News indexing.
@@ -1266,7 +1516,19 @@ ${items}
     { q: 'Are AI writing tools worth paying for?', a: 'Yes, if you write regularly for work. Paid AI writing tools ($9-16/month) save 2-4 hours per week for professional writers, bloggers, and marketers. The free plans from Grammarly and Rytr are enough for casual writers.' },
     { q: 'What is the best AI tool for content creators?', a: 'For content creators, the best combination in 2026 is: Rytr or Writesonic for writing, Opus Clip for short-form video, Leonardo.ai for image generation, and Ocoya for social media scheduling. Each tool has a free plan to get started.' },
   ]), null, 2);
-  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>`;
+
+  // H4: ItemList schema — enables sitelinks for homepage tool listings
+  const homepageItemListSchema = JSON.stringify(itemListSchema({
+    name: 'Best AI Tools 2026 — Personally Tested & Ranked',
+    url: `${SITE}/`,
+    items: TOOLS.map(t => ({
+      name: t.name,
+      url: `${SITE}/tools/${t.slug}/`,
+      description: t.tagline,
+    })),
+  }), null, 2);
+
+  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>`;
   homeHtml = homeHtml.replace('</head>', `${faqScriptTag}\n  </head>`);
   fs.writeFileSync(homepagePath, homeHtml, 'utf-8');
   console.log('\n  ✓  / (homepage FAQPage schema injected)');

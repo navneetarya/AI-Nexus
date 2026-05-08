@@ -17,6 +17,8 @@ const BlogPage           = React.lazy(() => import('./pages/BlogPage').then(m =>
 const BlogPostPage       = React.lazy(() => import('./pages/BlogPostPage').then(m => ({ default: m.BlogPostPage })));
 const BestFreeAIToolsPage = React.lazy(() => import('./pages/BestFreeAIToolsPage').then(m => ({ default: m.BestFreeAIToolsPage })));
 const CompareArticlePage = React.lazy(() => import('./pages/CompareArticlePage').then(m => ({ default: m.CompareArticlePage })));
+const CategoryPage       = React.lazy(() => import('./pages/CategoryPage').then(m => ({ default: m.CategoryPage })));
+const GlossaryPage       = React.lazy(() => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })));
 
 // ── Minimal loading fallback — avoids layout shift during chunk load ─────────
 function PageLoader() {
@@ -206,6 +208,19 @@ function App() {
     );
   }
 
+  if (path === '/glossary') {
+    updateMeta(
+      'AI Glossary — Key Terms Explained (2026) | AI Nexus',
+      'Clear definitions of 49 AI terms — LLM, GPT, RAG, prompt engineering, fine-tuning, and more. Written for beginners, updated for 2026.',
+      `${SITE_CONFIG.siteUrl}/glossary/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <GlossaryPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
   if (path === '/best-free-ai-tools') {
     updateMeta(
       `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`,
@@ -215,6 +230,28 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <BestFreeAIToolsPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  // ── Category landing pages ────────────────────────────────────────────────
+  const CATEGORY_ROUTES: Record<string, { category: string; title: string; desc: string }> = {
+    '/best-ai-writing-tools':      { category: 'Writing',      title: 'Best AI Writing Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI writing tools tested for 2026. Grammarly, Rytr, Writesonic, Frase, Jasper reviewed with free plans and honest verdicts.' },
+    '/best-ai-image-tools':        { category: 'Image',        title: 'Best AI Image Generators 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI image generators tested in 2026. Leonardo.ai, PhotoRoom, and more — free plans, quality comparisons, honest reviews.' },
+    '/best-ai-video-tools':        { category: 'Video',        title: 'Best AI Video Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI video tools tested in 2026. InVideo AI, Pictory, Opus Clip reviewed for faceless YouTube, Reels, and Shorts.' },
+    '/best-ai-audio-tools':        { category: 'Audio',        title: 'Best AI Audio & Voice Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI audio tools tested in 2026. Murf AI, Podcastle, ElevenLabs for voiceovers, podcasts, and voice cloning.' },
+    '/best-ai-marketing-tools':    { category: 'Marketing',    title: 'Best AI Marketing Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI marketing tools tested in 2026. Ocoya, Frase, and Jasper for SEO, social media, and content marketing.' },
+    '/best-ai-design-tools':       { category: 'Design',       title: 'Best AI Design Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI design tools tested in 2026. Gamma, Looka, Canva AI for presentations, logos, and visual content.' },
+    '/best-ai-coding-tools':       { category: 'Coding',       title: 'Best AI Coding Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI coding tools tested in 2026. Replit, GitHub Copilot alternatives — code generation, debugging, and deployment.' },
+    '/best-ai-productivity-tools': { category: 'Productivity', title: 'Best AI Productivity Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI productivity tools tested in 2026. Taskade, Notion AI, Perplexity Pro for tasks, research, and workflows.' },
+  };
+
+  const catRoute = CATEGORY_ROUTES[path];
+  if (catRoute) {
+    updateMeta(catRoute.title, catRoute.desc, `${SITE_CONFIG.siteUrl}${path}/`);
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <CategoryPage category={catRoute.category} navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }
