@@ -24,7 +24,8 @@ import post14 from './best-ai-logo-makers-free-2026';
 import post15 from './best-ai-marketing-tools-2026';
 import post16 from './ai-tools-for-teachers-2026';
 import post17 from './best-midjourney-alternatives-2026';
+import post18 from './how-to-use-ai-for-content-creation-2026';
 
-export const BLOG_POSTS: BlogPost[] = [post1, post2, post3, post4, post5, post6, post7, post8, post9, post10, post11, post12, post13, post14, post15, post16, post17];
+export const BLOG_POSTS: BlogPost[] = [post1, post2, post3, post4, post5, post6, post7, post8, post9, post10, post11, post12, post13, post14, post15, post16, post17, post18];
 
 export type { BlogPost };

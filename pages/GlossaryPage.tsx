@@ -114,7 +114,7 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
+    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif", color: C.txt }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(definedTermSetSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
@@ -131,7 +131,7 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
 
         {/* Header */}
         <header style={{ marginBottom: 32 }}>
-          <h1 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 'clamp(24px,5vw,36px)', color: C.txt, margin: '0 0 12px', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
+          <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(24px,5vw,36px)', color: C.txt, margin: '0 0 12px', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
             AI Glossary — Key Terms Explained (2026)
           </h1>
           <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.7, fontWeight: 300, maxWidth: 620, margin: 0 }}>
@@ -150,7 +150,7 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
             aria-label="Search glossary terms"
             style={{
               width: '100%', boxSizing: 'border-box' as const,
-              padding: '12px 16px 12px 40px', fontSize: 14, fontFamily: "'DM Sans', sans-serif",
+              padding: '12px 16px 12px 40px', fontSize: 14, fontFamily: "'Inter', system-ui, sans-serif",
               background: C.surf, color: C.txt, border: `1.5px solid ${C.barBrd}`,
               borderRadius: 12, outline: 'none',
             }}
@@ -166,7 +166,7 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
               <a key={l} href={`#letter-${l}`} style={{
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
                 width: 34, height: 34, borderRadius: 8, fontSize: 13, fontWeight: 600,
-                fontFamily: "'Syne', sans-serif", color: C.a1, background: C.a1card,
+                fontFamily: "'Inter', sans-serif", color: C.a1, background: C.a1card,
                 border: `1px solid ${C.a1brd}`, textDecoration: 'none',
                 transition: 'background .15s',
               }}>{l}</a>
@@ -185,7 +185,7 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
         {letters.map(letter => (
           <section key={letter} id={`letter-${letter}`} style={{ marginBottom: 36 }}>
             <div style={{
-              fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 22,
+              fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 22,
               color: C.a1, marginBottom: 16, paddingBottom: 8,
               borderBottom: `2px solid ${C.a1brd}`, letterSpacing: '-0.02em',
             }}>{letter}</div>
@@ -199,7 +199,7 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
                 }}>
                   <dt>
                     <h3 style={{
-                      fontFamily: "'Syne', sans-serif", fontWeight: 600, fontSize: 16,
+                      fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 16,
                       color: C.txt, margin: '0 0 8px', letterSpacing: '-0.015em',
                     }}>{term}</h3>
                   </dt>

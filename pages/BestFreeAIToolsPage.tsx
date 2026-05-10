@@ -134,7 +134,7 @@ function ToolLogo({ slug, size = 32, name, color }: { slug: string; size?: numbe
   return (
     <span style={{ width: size, height: size, borderRadius: r, background: color ?? C.a1, color: '#fff',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
-      fontSize: size * 0.45, fontWeight: 700, fontFamily: "'Syne', sans-serif", flexShrink: 0 }}>
+      fontSize: size * 0.45, fontWeight: 700, fontFamily: "'Inter', sans-serif", flexShrink: 0 }}>
       {initial}
     </span>
   );
@@ -162,7 +162,7 @@ const ToolCard: React.FC<{ tool: Tool; navigate: (to: string) => void }> = ({ to
         <ToolLogo slug={tool.slug} size={40} name={tool.name} color={tool.color} />
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-            <span style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: 15, color: C.txt }}>
+            <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 15, color: C.txt }}>
               {tool.name}
             </span>
             {catMeta && (
@@ -298,7 +298,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
             <Zap size={11} /> 13 TOOLS — PERMANENTLY FREE
           </div>
           <h1 style={{
-            fontFamily: "'Syne',sans-serif", fontWeight: 800,
+            fontFamily: "'Inter',sans-serif", fontWeight: 800,
             fontSize: 'clamp(28px,5vw,48px)', color: '#fff',
             lineHeight: 1.1, marginBottom: 16,
           }}>
@@ -316,7 +316,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
               { n: '0',  label: 'Credit cards needed' },
             ].map(({ n, label }) => (
               <div key={label} style={{ textAlign: 'center' }}>
-                <div style={{ fontFamily: "'Syne',sans-serif", fontSize: 28, fontWeight: 800, color: 'var(--a2)' }}>{n}</div>
+                <div style={{ fontFamily: "'Inter',sans-serif", fontSize: 28, fontWeight: 800, color: 'var(--a2)' }}>{n}</div>
                 <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>{label}</div>
               </div>
             ))}
@@ -329,7 +329,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
         <div style={{
           background: C.surf, border: `1px solid ${C.barBrd}`, borderRadius: 16, padding: '24px 28px',
         }}>
-          <h2 style={{ fontFamily: "'Syne',sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 12 }}>
+          <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 12 }}>
             How I chose these tools
           </h2>
           <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, marginBottom: 10 }}>
@@ -376,7 +376,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
             return (
               <div key={cat} style={{ marginBottom: 40 }}>
                 <h2 style={{
-                  fontFamily: "'Syne',sans-serif", fontSize: 16, fontWeight: 700,
+                  fontFamily: "'Inter',sans-serif", fontSize: 16, fontWeight: 700,
                   color: C.txt, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8,
                 }}>
                   <span>{meta.emoji}</span>
@@ -400,7 +400,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
 
       {/* ── Comparison table ─────────────────────────────────────────────── */}
       <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px 48px' }}>
-        <h2 style={{ fontFamily: "'Syne',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 20 }}>
+        <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 20 }}>
           Quick Comparison: Free Plan Limits
         </h2>
         <div style={{ overflowX: 'auto' }}>
@@ -411,7 +411,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
                   <th key={h} style={{
                     background: C.dark, color: 'rgba(255,255,255,.7)',
                     fontSize: 11, letterSpacing: '.08em', textTransform: 'uppercase',
-                    padding: '11px 14px', textAlign: 'left', fontFamily: "'Syne',sans-serif",
+                    padding: '11px 14px', textAlign: 'left', fontFamily: "'Inter',sans-serif",
                     borderRadius: i === 0 ? '14px 0 0 0' : i === 4 ? '0 14px 0 0' : undefined,
                   }}>
                     {h}
@@ -448,7 +448,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
 
       {/* ── FAQ section ──────────────────────────────────────────────────── */}
       <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px 48px' }}>
-        <h2 style={{ fontFamily: "'Syne',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 20 }}>
+        <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 20 }}>
           Frequently Asked Questions
         </h2>
         {[
@@ -476,7 +476,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
           <div key={i} style={{
             borderBottom: `1px solid ${C.barBrd}`, padding: '18px 0',
           }}>
-            <h3 style={{ fontFamily: "'Syne',sans-serif", fontSize: 14, fontWeight: 700, color: C.txt, marginBottom: 8 }}>
+            <h3 style={{ fontFamily: "'Inter',sans-serif", fontSize: 14, fontWeight: 700, color: C.txt, marginBottom: 8 }}>
               {q}
             </h3>
             <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, margin: 0 }}>{a}</p>
@@ -487,7 +487,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
       {/* ── Footer CTA ───────────────────────────────────────────────────── */}
       <div style={{ background: C.dark, padding: '48px 24px', textAlign: 'center' }}>
         <div style={{ maxWidth: 520, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: "'Syne',sans-serif", fontSize: 22, fontWeight: 800, color: '#fff', marginBottom: 12 }}>
+          <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 22, fontWeight: 800, color: '#fff', marginBottom: 12 }}>
             Want full tool reviews?
           </h2>
           <p style={{ color: 'rgba(255,255,255,.5)', fontSize: 14, marginBottom: 24 }}>

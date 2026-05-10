@@ -11,14 +11,14 @@ const C = {
 
 export function DisclosurePage({ navigate, isDark, toggleTheme }: { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void }) {
   return (
-    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
+    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif", color: C.txt }}>
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '48px 28px 80px' }}>
         <div style={{ background: C.surf, borderRadius: 20, border: `1.5px solid ${C.a1brd}`, padding: '40px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 6, background: `linear-gradient(180deg,${C.a1},${C.a2})` }} />
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Syne',sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100, marginBottom: 20 }}>LEGAL</span>
-            <h1 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: 32, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.025em' }}>Affiliate Disclosure</h1>
+            <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Inter',sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100, marginBottom: 20 }}>LEGAL</span>
+            <h1 style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 32, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.025em' }}>Affiliate Disclosure</h1>
             <p style={{ fontSize: 12, color: C.mut2, marginBottom: 28 }}>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
             {[
@@ -29,7 +29,7 @@ export function DisclosurePage({ navigate, isDark, toggleTheme }: { navigate: (t
               ['Contact', 'If you have any questions about our affiliate relationships, contact us at hello@ainexustools.online'],
             ].map(([heading, body], i) => (
               <div key={i} style={{ marginBottom: 24 }}>
-                <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, margin: '0 0 8px' }}>{heading}</h2>
+                <h2 style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, margin: '0 0 8px' }}>{heading}</h2>
                 <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>{body}</p>
               </div>
             ))}

@@ -129,7 +129,7 @@ function FAQSection({ faqs, a1, a1card, a1brd, txt, mut }: {
                 width: '100%', textAlign: 'left' as const, padding: '14px 18px',
                 display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                 background: 'none', border: 'none', cursor: 'pointer',
-                fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: txt,
+                fontFamily: "'Inter', system-ui, sans-serif", fontSize: 14, fontWeight: 600, color: txt,
                 gap: 12,
               }}
             >
@@ -202,7 +202,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
     };
   }, [article.slug, article.faqs]);
   return (
-    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', system-ui, sans-serif" }}>
+    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif" }}>
 
       {/* Nav bar */}
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="compare" />
@@ -237,7 +237,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
         >
           <div style={{ flexShrink: 0, fontSize: 18, lineHeight: 1 }}>⚡</div>
           <div>
-            <div style={{ fontSize: 11, fontWeight: 700, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 6, fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 6, fontFamily: "'Inter', system-ui, sans-serif" }}>
               Quick Answer
             </div>
             <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.7, margin: 0, fontWeight: 300 }}>

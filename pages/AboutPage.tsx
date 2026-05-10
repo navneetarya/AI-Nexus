@@ -44,7 +44,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
+    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif", color: C.txt }}>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
 
@@ -57,7 +57,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
           <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 6, background: `linear-gradient(180deg,${C.a1},${C.a2})` }} />
           <div style={{ position: 'absolute', inset: 0, backgroundImage: DOT_BG, opacity: 0.4, pointerEvents: 'none' }} />
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Syne', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100, marginBottom: 18 }}>ABOUT THE REVIEWER</span>
+            <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100, marginBottom: 18 }}>ABOUT THE REVIEWER</span>
 
             {/* Author identity */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 20 }}>
@@ -75,7 +75,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 </div>
               </div>
               <div>
-                <h1 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 'clamp(22px,4vw,32px)', color: C.txt, margin: '0 0 4px', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
+                <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(22px,4vw,32px)', color: C.txt, margin: '0 0 4px', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
                   {SITE_CONFIG.authorName}
                 </h1>
                 <div style={{ fontSize: 13, color: C.mut2 }}>Founder, AI Nexus</div>
@@ -108,7 +108,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
 
         {/* Credentials & what I've tested */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
             What I've actually tested
           </h2>
           <p style={{ fontSize: 14, color: C.mut2, margin: '0 0 20px', fontWeight: 300 }}>Updated April 2026</p>
@@ -142,7 +142,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
 
         {/* Review process */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.02em' }}>
             Testing methodology — how every review is done
           </h2>
           <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 18px', fontWeight: 300 }}>
@@ -170,7 +170,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 <CheckCircle size={14} color={C.a1} />
               </div>
               <div>
-                <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, marginBottom: 4 }}>{title}</div>
+                <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, marginBottom: 4 }}>{title}</div>
                 <div style={{ fontSize: 14, color: C.mut, lineHeight: 1.65, fontWeight: 300 }}>{desc}</div>
               </div>
             </div>
@@ -179,7 +179,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
 
         {/* Affiliate transparency */}
         <div style={{ background: 'rgba(13,148,136,.04)', borderRadius: 16, border: `1.5px solid ${C.a1brd}`, padding: '22px 26px', marginBottom: 16 }}>
-          <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 14, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Full transparency on how this site earns money</div>
+          <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 14, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Full transparency on how this site earns money</div>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 10 }}>
             This site earns money through affiliate commissions. When you click a link and sign up for a paid plan, I earn a commission — typically 20–30% of the subscription payment, recurring. This does not affect my reviews. I recommend tools because they're genuinely good, not because the commission is high.
           </p>
@@ -191,12 +191,12 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
 
         {/* Contact / collab */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '24px 28px', textAlign: 'center' as const }}>
-          <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, marginBottom: 8 }}>Want to get in touch?</div>
+          <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, marginBottom: 8 }}>Want to get in touch?</div>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.65, marginBottom: 16, maxWidth: 420, margin: '0 auto 16px' }}>
             If you have a question about a tool I've reviewed, a suggestion for a tool I should test, or want to flag something inaccurate — email me.
           </p>
           <a href={`mailto:${SITE_CONFIG.email}`}
-            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Syne', sans-serif", textDecoration: 'none' }}>
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
             <Mail size={14} /> {SITE_CONFIG.email}
           </a>
         </div>

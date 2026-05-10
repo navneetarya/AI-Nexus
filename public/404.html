@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page Not Found | AI Nexus</title>
   <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://ainexustools.online/" />
   <!--
     GitHub Pages SPA fallback — only fires for URLs that truly don't exist.
     After pre-rendering, all valid routes have their own index.html, so
@@ -21,8 +22,28 @@
       window.location.origin + '/?p=' + encodeURIComponent(seg + window.location.search) + (window.location.hash || '')
     );
   </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #0C1210; color: #e0e7e5; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    .container { text-align: center; max-width: 480px; padding: 24px; }
+    h1 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+    p { color: rgba(224,231,229,.6); margin-bottom: 16px; line-height: 1.6; }
+    a { color: #0D9488; font-weight: 600; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
+    .links a { background: rgba(13,148,136,.1); border: 1px solid rgba(13,148,136,.25); padding: 8px 16px; border-radius: 8px; font-size: 14px; }
+  </style>
 </head>
 <body>
-  <p>Redirecting…</p>
+  <div class="container">
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved. You'll be redirected shortly.</p>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/best-free-ai-tools/">Best Free AI Tools</a>
+      <a href="/tools/grammarly/">Grammarly Review</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+    </div>
+  </div>
 </body>
 </html>

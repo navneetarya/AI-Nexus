@@ -71,7 +71,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
+    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif", color: C.txt }}>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(methodologySchema) }} />
 
@@ -84,9 +84,9 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 6, background: `linear-gradient(180deg,${C.a1},${C.a2})` }} />
           <div style={{ position: 'absolute', inset: 0, backgroundImage: DOT_BG, opacity: 0.4, pointerEvents: 'none' }} />
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Syne', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100, marginBottom: 18 }}>REVIEW METHODOLOGY</span>
+            <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100, marginBottom: 18 }}>REVIEW METHODOLOGY</span>
 
-            <h1 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 'clamp(24px,4vw,34px)', color: C.txt, margin: '0 0 16px', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
+            <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(24px,4vw,34px)', color: C.txt, margin: '0 0 16px', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
               How I Review AI Tools
             </h1>
 
@@ -104,7 +104,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
 
         {/* 7-step process */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
             The 7-step testing process
           </h2>
           <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 24px', fontWeight: 300 }}>Applied to every tool before a review is published</p>
@@ -115,7 +115,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
                 <Icon size={15} color={C.a1} />
               </div>
               <div>
-                <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, marginBottom: 5 }}>{title}</div>
+                <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, marginBottom: 5 }}>{title}</div>
                 <div style={{ fontSize: 14, color: C.mut, lineHeight: 1.72, fontWeight: 300 }}>{body}</div>
               </div>
             </div>
@@ -124,7 +124,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
 
         {/* What "comparison table" means */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.02em' }}>
             What the comparison tables are based on
           </h2>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 12 }}>
@@ -140,7 +140,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
 
         {/* What I don't do */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.02em' }}>
             Standards I don't compromise
           </h2>
           {[
@@ -154,7 +154,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
                 <CheckCircle size={14} color={C.a1} />
               </div>
               <div>
-                <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, marginBottom: 4 }}>{heading}</div>
+                <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, marginBottom: 4 }}>{heading}</div>
                 <div style={{ fontSize: 14, color: C.mut, lineHeight: 1.65, fontWeight: 300 }}>{body}</div>
               </div>
             </div>
@@ -163,7 +163,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
 
         {/* Affiliate transparency */}
         <div style={{ background: 'rgba(13,148,136,.04)', borderRadius: 16, border: `1.5px solid ${C.a1brd}`, padding: '22px 26px', marginBottom: 14 }}>
-          <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 14, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Affiliate links — the full picture</div>
+          <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 14, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Affiliate links — the full picture</div>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 10 }}>
             This site earns revenue through affiliate commissions — when you click a link and sign up for a paid plan, I earn a percentage of the subscription. Commissions range from 20–30% recurring, depending on the tool.
           </p>
@@ -179,11 +179,11 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
         {/* Back links */}
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' as const }}>
           <button onClick={() => navigate('/about')}
-            style={{ fontSize: 13, fontWeight: 500, color: C.a1, padding: '8px 18px', border: `1.5px solid ${C.a1brd}`, borderRadius: 100, background: C.a1card, cursor: 'pointer', fontFamily: "'DM Sans', sans-serif" }}>
+            style={{ fontSize: 13, fontWeight: 500, color: C.a1, padding: '8px 18px', border: `1.5px solid ${C.a1brd}`, borderRadius: 100, background: C.a1card, cursor: 'pointer', fontFamily: "'Inter', system-ui, sans-serif" }}>
             ← About {SITE_CONFIG.authorName}
           </button>
           <button onClick={() => navigate('/')}
-            style={{ fontSize: 13, fontWeight: 500, color: C.mut2, padding: '8px 18px', border: `1.5px solid ${C.barBrd}`, borderRadius: 100, background: C.surf, cursor: 'pointer', fontFamily: "'DM Sans', sans-serif" }}>
+            style={{ fontSize: 13, fontWeight: 500, color: C.mut2, padding: '8px 18px', border: `1.5px solid ${C.barBrd}`, borderRadius: 100, background: C.surf, cursor: 'pointer', fontFamily: "'Inter', system-ui, sans-serif" }}>
             Browse all reviews
           </button>
         </div>

@@ -232,7 +232,7 @@ const ANIM_STYLE = `
   flex-shrink:0; display:inline-flex; align-items:center; gap:6px;
   padding:7px 12px; border-radius:10px; border:1.5px solid var(--a1-brd);
   background:var(--a1-card); white-space:nowrap;
-  font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600;
+  font-family:'Inter', system-ui, sans-serif; font-size:12px; font-weight:600;
   color:var(--a1);
 }
 @media(prefers-reduced-motion:reduce){
@@ -356,7 +356,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         <NexusIcon size={20}/>
       </div>
       <div>
-        <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:16,
+        <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:16,
           color: dark ? '#fff' : C.txt, letterSpacing:'-0.034em', lineHeight:1.1 }}>
           AI Nexus<span style={{ color:C.a1 }}>.</span>
         </div>
@@ -411,14 +411,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
           {/* Tools */}
           <div>
-            <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:11,
+            <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
               color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>TOOLS</div>
             {['Writing','Audio','Video','Image','Coding','Productivity','Marketing','Design'].map(cat => (
               <button key={cat}
                 onClick={() => { setView('home'); setFilters({ search:'', category:cat as any });
                   window.scrollTo(0,0); setTimeout(() => scrollToId('tools-section'), 80); }}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
-                  fontFamily:"'DM Sans',sans-serif", background:'none', border:'none',
+                  fontFamily:"'Inter', system-ui, sans-serif", background:'none', border:'none',
                   cursor:'pointer', padding:'3px 0', textAlign:'left' as const, transition:'color .15s' }}
                 onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
                 onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
@@ -431,12 +431,12 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
           {/* Compare */}
           <div>
-            <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:11,
+            <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
               color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>COMPARE</div>
             {COMPARE_ARTICLES.map(a => (
               <button key={a.slug} onClick={() => navigate(`/compare/${a.slug}`)}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
-                  fontFamily:"'DM Sans',sans-serif", background:'none', border:'none',
+                  fontFamily:"'Inter', system-ui, sans-serif", background:'none', border:'none',
                   cursor:'pointer', padding:'3px 0', textAlign:'left' as const,
                   transition:'color .15s', lineHeight:1.5 }}
                 onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
@@ -450,7 +450,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
           {/* Site */}
           <div>
-            <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:11,
+            <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
               color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>SITE</div>
             {[
               { label:'Home',                fn: goHome },
@@ -461,7 +461,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             ].map(({ label, fn }) => (
               <button key={label} onClick={fn}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
-                  fontFamily:"'DM Sans',sans-serif", background:'none', border:'none',
+                  fontFamily:"'Inter', system-ui, sans-serif", background:'none', border:'none',
                   cursor:'pointer', padding:'3px 0', textAlign:'left' as const, transition:'color .15s' }}
                 onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
                 onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
@@ -490,7 +490,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   if (view === 'compare') {
     return (
       <div style={{ minHeight:'100vh', background:C.bg,
-        fontFamily:"'DM Sans',sans-serif", color:C.txt }}>
+        fontFamily:"'Inter', system-ui, sans-serif", color:C.txt }}>
         <style>{ANIM_STYLE}</style>
         <Nav/>
 
@@ -515,7 +515,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </div>
 
             <h1 className="anim-fade-up d2"
-              style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
+              style={{ fontFamily:"'Inter',sans-serif", fontWeight:800,
                 fontSize:'clamp(28px,5vw,44px)', color:C.txt,
                 margin:'0 0 14px', letterSpacing:'-0.03em', lineHeight:1.1 }}>
               Tool comparisons
@@ -543,7 +543,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 justifyContent:'center', alignItems:'center', textAlign:'center' as const,
                 padding:'40px 28px', minHeight:280 }}>
               <span style={{ fontSize:32, marginBottom:14 }}>🔜</span>
-              <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700,
+              <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700,
                 fontSize:14, color:C.mut, marginBottom:10 }}>
                 More comparisons in progress
               </div>
@@ -570,7 +570,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   // ════════════════════════════════════════════════════════════════════════════
   return (
     <div style={{ minHeight:'100vh', background:C.bg,
-      fontFamily:"'DM Sans',sans-serif", color:C.txt }}>
+      fontFamily:"'Inter', system-ui, sans-serif", color:C.txt }}>
       <style>{ANIM_STYLE}</style>
       <Nav/>
 
@@ -608,7 +608,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                     <ToolLogo slug={slug} size={20} name={t?.name} color={ac} />
                   </div>
                   <div>
-                    <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700,
+                    <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700,
                       fontSize:12.5, color:C.txt, lineHeight:1.2 }}>{t?.name ?? slug}</div>
                     <div style={{ fontSize:10, color:ac, fontWeight:600,
                       background:`${ac}12`, padding:'1px 6px', borderRadius:4,
@@ -651,7 +651,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                     <ToolLogo slug={slug} size={20} name={t?.name} color={ac} />
                   </div>
                   <div>
-                    <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700,
+                    <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700,
                       fontSize:12.5, color:C.txt, lineHeight:1.2 }}>{t?.name ?? slug}</div>
                     <div style={{ fontSize:10, color:ac, fontWeight:600,
                       background:`${ac}12`, padding:'1px 6px', borderRadius:4,
@@ -706,7 +706,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             style={{ display:'inline-flex', alignItems:'center', gap:7,
               background:C.a1card, border:`1px solid ${C.a1brd}`,
               borderRadius:100, padding:'5px 14px 5px 7px', marginBottom:24,
-              cursor:'pointer', fontFamily:"'DM Sans',sans-serif" }}>
+              cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}>
             <div style={{ width:19, height:19, borderRadius:'50%', background:C.a1,
               display:'flex', alignItems:'center', justifyContent:'center' }}>
               <Shield size={10} color="#fff"/>
@@ -718,44 +718,27 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
           {/* Week 1 Task 7: H1 targets "best AI tools for creators" — 12,000/mo keyword */}
           <h1 className="anim-fade-up d2"
-            style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
+            style={{ fontFamily:"'Inter',sans-serif", fontWeight:800,
               fontSize:'clamp(32px,6vw,54px)', lineHeight:1.07, color:C.txt,
               margin:'0 0 16px', letterSpacing:'-0.035em' }}>
-            Best AI Tools for Creators —<br/>
-            <span style={{ color:C.a1 }}>Personally Tested & Ranked.</span>
+            I Test AI Tools for 30+ Days.<br/>
+            <span style={{ color:C.a1 }}>Here's What Actually Works.</span>
           </h1>
-
-          {/* Week 4 Task 4: Social proof strip — 20+ Tools · 7 Comparisons · Free Trial Links */}
-          <div className="anim-fade-up d2" style={{
-            display:'flex', gap:'clamp(12px,3vw,28px)', justifyContent:'center',
-            flexWrap:'wrap' as const, margin:'0 auto 20px', maxWidth:520,
-          }}>
-            {[
-              { num: String(TOOLS.length) + '+', label:'Tools Tested' },
-              { num:'7',    label:'Head-to-Head Comparisons' },
-              { num:'100%', label:'Free Trial Links' },
-            ].map(({ num, label }) => (
-              <div key={label} style={{
-                display:'flex', alignItems:'center', gap:8,
-                background:C.a1card, border:`1px solid ${C.a1brd}`,
-                borderRadius:100, padding:'6px 14px',
-              }}>
-                <span style={{
-                  fontFamily:"'Syne',sans-serif", fontWeight:800,
-                  fontSize:15, color:C.a1, lineHeight:1,
-                }}>{num}</span>
-                <span style={{ fontSize:12, color:C.mut, fontWeight:500 }}>{label}</span>
-              </div>
-            ))}
-          </div>
 
           <p className="anim-fade-up d3"
             style={{ fontSize:16.5, lineHeight:1.72, color:C.mut, margin:'0 0 8px',
               maxWidth:480, marginLeft:'auto', marginRight:'auto' }}>
-            I'm <strong style={{ color:C.txt, fontWeight:600 }}>{SITE_CONFIG.authorName}</strong> — I
-            personally sign up for, test, and use every tool before recommending it.
-            Every link is a <strong style={{ color:C.txt, fontWeight:600 }}>free trial</strong>.
+            Honest reviews by <strong style={{ color:C.txt, fontWeight:600 }}>Navneet Arya</strong>. No paid placements. No fluff.
           </p>
+
+          {/* Social proof counter strip */}
+          <div className="anim-fade-up d3" style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'center', marginTop: 14, marginBottom: 20 }}>
+            {[['24', 'tools tested'], ['17', 'guides published'], ['May 2026', 'last updated']].map(([n, label]) => (
+              <div key={label} style={{ display: 'flex', alignItems: 'center', gap: 6, background: 'rgba(13,148,136,.1)', border: '1px solid rgba(13,148,136,.18)', borderRadius: 100, padding: '5px 14px', fontSize: 12, color: C.mut }}>
+                <span style={{ fontWeight: 700, color: C.a1 }}>{n}</span> {label}
+              </div>
+            ))}
+          </div>
 
           <p className="anim-fade-up d3"
             style={{ fontSize:12, color:C.mut2, margin:'0 0 32px' }}>
@@ -776,7 +759,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               style={{ width:'100%', paddingLeft:43, paddingRight:16, height:50,
                 border:`1.5px solid ${C.a1brd}`, borderRadius:13, fontSize:14.5,
                 outline:'none', boxSizing:'border-box' as const,
-                fontFamily:"'DM Sans',sans-serif", background:C.surf, color:C.txt,
+                fontFamily:"'Inter', system-ui, sans-serif", background:C.surf, color:C.txt,
                 boxShadow:'0 4px 20px rgba(13,148,136,.09)' }}
               onFocus={e=>(e.target.style.borderColor=C.a1)}
               onBlur={e=>(e.target.style.borderColor=C.a1brd)}
@@ -796,7 +779,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 style={{ fontSize:12.5, fontWeight:500, color:C.mut, padding:'6px 13px',
                   borderRadius:100, background:'transparent',
                   border:`1px solid var(--brd-lg)`, cursor:'pointer',
-                  fontFamily:"'DM Sans',sans-serif",
+                  fontFamily:"'Inter', system-ui, sans-serif",
                   display:'inline-flex', alignItems:'center', gap:5 }}>
                 <CatIcon cat={cat} size={12} color={C.mut} /> {label}
               </button>
@@ -850,7 +833,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 <Star size={13} color={C.a2} fill={C.a2}/>
               </div>
               <div>
-                <span style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
+                <span style={{ fontFamily:"'Inter',sans-serif", fontWeight:800,
                   fontSize:14.5, color:C.txt }}>Editor's top picks</span>
                 <span style={{ fontSize:11.5, color:C.mut2, marginLeft:9 }}>
                   Tools I actively use
@@ -861,7 +844,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               style={{ display:'flex', alignItems:'center', gap:5, fontSize:12.5,
                 fontWeight:600, color:C.a1, padding:'7px 14px', borderRadius:9,
                 background:C.a1card, border:`1px solid ${C.a1brd}`,
-                cursor:'pointer', fontFamily:"'DM Sans',sans-serif" }}>
+                cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}>
                 <Scale size={13}/> See all comparisons <ArrowRight size={12}/>
             </button>
           </div>
@@ -878,7 +861,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                   style={{ display:'flex', alignItems:'center', gap:11, padding:'13px 14px',
                     borderRadius:13, border:`1.5px solid ${brd}`, background:bg,
                     cursor:'pointer', textAlign:'left' as const,
-                    fontFamily:"'DM Sans',sans-serif",
+                    fontFamily:"'Inter', system-ui, sans-serif",
                     boxShadow:'0 1px 4px var(--sh-xs)' }}>
                   <div style={{ width:40, height:40, borderRadius:11, flexShrink:0,
                     background:'#fff', border:`1.5px solid ${brd}`,
@@ -887,7 +870,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                     <ToolLogo slug={tool.slug} size={30} name={tool.name} color={accent} />
                   </div>
                   <div style={{ minWidth:0 }}>
-                    <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700,
+                    <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700,
                       fontSize:13.5, color:C.txt, marginBottom:2 }}>{tool.name}</div>
                     <div style={{ fontSize:11, color:accent, fontWeight:600 }}>{tool.pricing}</div>
                   </div>
@@ -902,7 +885,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       {/* ── Trending This Week ────────────────────────────────────────── */}
       {(filters.category as string) === 'All' && !filters.search && (
         <div className="scroll-reveal" style={{ maxWidth:1200, margin:'0 auto', padding:'28px 24px 0' }}>
-          <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:17,
+          <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:17,
             color:C.txt, letterSpacing:'-0.025em', marginBottom:14, display:'flex', alignItems:'center', gap:8 }}>
             <span style={{ display:'inline-flex', alignItems:'center', justifyContent:'center',
               width:22, height:22, borderRadius:6, background:C.a1card }}>
@@ -926,7 +909,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                     <ToolLogo slug={tool.slug} size={28} name={tool.name} color={accent} />
                   </div>
                   <div style={{ minWidth:0 }}>
-                    <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:14,
+                    <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:14,
                       color:C.txt, whiteSpace:'nowrap' as const, overflow:'hidden', textOverflow:'ellipsis' }}>
                       {tool.name}
                     </div>
@@ -948,7 +931,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         {/* Header */}
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',
           marginBottom:20, flexWrap:'wrap' as const, gap:12 }}>
-          <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:19,
+          <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19,
             color:C.txt, letterSpacing:'-0.025em' }}>
             {(filters.category as string) === 'All' ? 'All AI tools' : `${filters.category} tools`}
           </div>
@@ -956,7 +939,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             <button onClick={() => setFilters(f => ({ ...f, category:'All' as any }))}
               style={{ fontSize:12, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8,
                 padding:'6px 14px', background:C.a1card, cursor:'pointer',
-                fontFamily:"'DM Sans',sans-serif", fontWeight:600 }}>
+                fontFamily:"'Inter', system-ui, sans-serif", fontWeight:600 }}>
               ← All tools
             </button>
           )}
@@ -974,7 +957,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               <button key={cat} className="cat-pill"
                 onClick={() => setFilters(f => ({ ...f, category:cat as any }))}
                 style={{ padding:'7px 16px', borderRadius:100, fontSize:12.5,
-                  fontWeight:active?700:500, fontFamily:"'DM Sans',sans-serif",
+                  fontWeight:active?700:500, fontFamily:"'Inter', system-ui, sans-serif",
                   border:`1.5px solid ${active ? abrd : 'var(--brd)'}`,
                   background:active ? abg : C.surf, color:active ? ac : C.mut,
                   cursor:'pointer', boxShadow:active?`0 2px 8px ${ac}1e`:'none' }}>
@@ -1013,7 +996,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             }}>
               <span style={{
                 fontSize: 12, fontWeight: 700, color: ac,
-                fontFamily: "'DM Sans',sans-serif", whiteSpace: 'nowrap' as const,
+                fontFamily: "'Inter', system-ui, sans-serif", whiteSpace: 'nowrap' as const,
                 display: 'flex', alignItems: 'center', gap: 6,
               }}>
                 <Scale size={13} color={ac} />
@@ -1030,7 +1013,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                       background: 'transparent',
                       border: `1px solid ${acBrd}`, borderRadius: 100,
                       padding: '5px 13px', cursor: 'pointer',
-                      fontFamily: "'DM Sans',sans-serif",
+                      fontFamily: "'Inter', system-ui, sans-serif",
                       transition: 'background 0.15s',
                     }}
                     onMouseEnter={e => (e.currentTarget.style.background = acBrd)}
@@ -1065,7 +1048,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 padding: '11px 32px',
                 fontSize: 13,
                 fontWeight: 600,
-                fontFamily: "'DM Sans',sans-serif",
+                fontFamily: "'Inter', system-ui, sans-serif",
                 color: C.a1,
                 background: C.a1card,
                 border: `1.5px solid ${C.a1brd}`,
@@ -1092,7 +1075,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             <button onClick={() => setFilters({ search:'', category:'All' as any })}
               style={{ color:C.a1, border:`1.5px solid ${C.a1brd}`, borderRadius:9,
                 padding:'9px 22px', fontSize:13, fontWeight:600,
-                fontFamily:"'DM Sans',sans-serif", background:C.a1card, cursor:'pointer' }}>
+                fontFamily:"'Inter', system-ui, sans-serif", background:C.a1card, cursor:'pointer' }}>
               Clear search
             </button>
           </div>
@@ -1102,7 +1085,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       {/* ── Social proof: testimonials ──────────────────────────────────── */}
       <div style={{ padding:'48px 24px 0', background:'var(--bg)' }}>
         <div style={{ maxWidth:900, margin:'0 auto' }}>
-          <p style={{ textAlign:'center', fontSize:11.5, fontFamily:"'DM Sans',sans-serif",
+          <p style={{ textAlign:'center', fontSize:11.5, fontFamily:"'Inter', system-ui, sans-serif",
             fontWeight:600, letterSpacing:'0.12em', textTransform:'uppercase' as const,
             color:C.mut2, marginBottom:28 }}>What readers say</p>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))', gap:14 }}>
@@ -1120,12 +1103,12 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                     border:`1.5px solid ${C.a1brd}`, display:'flex', alignItems:'center',
                     justifyContent:'center', flexShrink:0,
                     fontSize:12, fontWeight:600, color:C.a1,
-                    fontFamily:"'Syne',sans-serif" }}>
+                    fontFamily:"'Inter',sans-serif" }}>
                     {t.name[0]}
                   </div>
                   <div>
                     <div style={{ fontSize:12.5, fontWeight:600, color:C.txt,
-                      fontFamily:"'Syne',sans-serif" }}>{t.name}</div>
+                      fontFamily:"'Inter',sans-serif" }}>{t.name}</div>
                     <div style={{ fontSize:11.5, color:C.mut2 }}>{t.role}</div>
                   </div>
                 </div>
@@ -1138,7 +1121,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       {/* ── Subscriber count + Newsletter strip — bottom of page ────────── */}
       <div style={{ padding:'40px 24px 0' }}>
         <p style={{ textAlign:'center', fontSize:13, color:C.mut, fontWeight:500,
-          marginBottom:4, fontFamily:"'DM Sans',sans-serif" }}>
+          marginBottom:4, fontFamily:"'Inter', system-ui, sans-serif" }}>
           Join <strong style={{ color:C.txt }}>1,200+ creators</strong> getting weekly AI tool picks
         </p>
         <p style={{ textAlign:'center', fontSize:12, color:C.mut2, marginBottom:16 }}>
@@ -1222,7 +1205,7 @@ function BlogCompareCard({ article, navigate, idx }: {
         </div>
 
         {/* Title */}
-        <h2 style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:16,
+        <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:16,
           color:C.txt, margin:0, letterSpacing:'-0.02em', lineHeight:1.3 }}>
           {vsLabel}
         </h2>
@@ -1322,6 +1305,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
         <div className="tool-card-inner"
           style={{ background:`linear-gradient(160deg,${C.surf} 55%,${accent}0e)`,
             borderRadius:15, border:`2px solid ${accent}48`,
+            borderLeft:'3px solid var(--a1)',
             boxShadow:`0 0 0 1px ${accent}14, 0 8px 32px ${accent}18`,
             overflow:'hidden', position:'relative', height:'100%',
             display:'flex', flexDirection:'column' as const }}>
@@ -1336,9 +1320,10 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
             {/* Editor's Pick label */}
             <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',
               gap:8, marginBottom:14 }}>
-              <span style={{ fontSize:10, fontWeight:700, color:accent,
-                letterSpacing:'0.07em', textTransform:'uppercase' as const }}>
-                ✦ Editor's Pick
+              <span style={{ fontSize:10, fontWeight:700, color:'#fff',
+                background:C.a1, padding:'2px 8px', borderRadius:100,
+                letterSpacing:'0.05em' }}>
+                EDITOR'S PICK
               </span>
               {badge && (
                 <span style={{ fontSize:10, fontWeight:700, color:badge.color,
@@ -1358,7 +1343,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
                 <ToolLogo slug={tool.slug} size={36} name={tool.name} color={accent} />
               </div>
               <div style={{ minWidth:0 }}>
-                <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
+                <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:800,
                   fontSize:15.5, color:C.txt, letterSpacing:'-0.025em', lineHeight:1.2 }}>
                   {tool.name}
                 </div>
@@ -1423,9 +1408,9 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
               </div>
               <div style={{ display:'flex', alignItems:'center', gap:5, fontSize:12.5,
                 fontWeight:700, color:'#fff',
-                background:`linear-gradient(135deg,${accent},${isA2?'#ea580c':'#0b7a6e'})`,
+                background:'#E8580A',
                 padding:'7px 14px', borderRadius:9,
-                boxShadow:`0 3px 10px ${accent}44` }}>
+                boxShadow:'0 3px 10px rgba(232,88,10,.44)' }}>
                 Try free <ExternalLink size={11}/>
               </div>
             </div>
@@ -1474,7 +1459,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
                 name={tool.name} color={accent} />
             </div>
             <div>
-              <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:800,
+              <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:800,
                 fontSize: isSecondary ? 14 : 15, color:C.txt,
                 letterSpacing:'-0.02em', lineHeight:1.2 }}>
                 {tool.name}

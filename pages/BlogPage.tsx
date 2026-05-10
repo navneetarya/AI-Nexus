@@ -71,7 +71,7 @@ const PostCard: React.FC<{ post: BlogPost; navigate: (to: string) => void }> = (
       </div>
 
       <h2 style={{
-        fontFamily: "'Syne', sans-serif",
+        fontFamily: "'Inter', sans-serif",
         fontSize: 18,
         fontWeight: 800,
         color: C.txt,
@@ -136,7 +136,7 @@ export function BlogPage({ navigate, isDark, toggleTheme }: BlogPageProps) {
             📝 AI Nexus Blog
           </div>
           <h1 style={{
-            fontFamily: "'Syne', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontSize: 'clamp(28px, 5vw, 44px)',
             fontWeight: 800,
             color: '#fff',

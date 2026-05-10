@@ -152,7 +152,7 @@ function FormFields({
               color: '#fff',
               fontSize: 13.5,
               fontWeight: 700,
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               cursor: state === 'loading' ? 'not-allowed' : 'pointer',
               opacity: state === 'loading' || !email.trim() ? 0.7 : 1,
               transition: 'opacity 0.15s, transform 0.12s',
@@ -227,7 +227,7 @@ function HeroStrip() {
               <Mail size={14} color="#fff" />
             </div>
             <span style={{
-              fontFamily: "'Syne', sans-serif", fontWeight: 800,
+              fontFamily: "'Inter', sans-serif", fontWeight: 800,
               fontSize: 14.5, color: 'var(--txt)', letterSpacing: '-0.02em',
             }}>
               New AI tool reviews
@@ -271,7 +271,7 @@ function ArticleCard() {
         </div>
         <div>
           <div style={{
-            fontFamily: "'Syne', sans-serif", fontWeight: 800,
+            fontFamily: "'Inter', sans-serif", fontWeight: 800,
             fontSize: 15, color: 'var(--txt)', letterSpacing: '-0.02em', lineHeight: 1.2,
           }}>
             Found this useful?

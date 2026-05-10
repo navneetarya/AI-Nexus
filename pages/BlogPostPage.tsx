@@ -95,7 +95,7 @@ function ReadersAlsoAsk({ faqs }: { faqs: { q: string; a: string }[] }) {
   return (
     <section aria-label="Readers also ask" style={{ margin: '40px 0' }}>
       <h2 style={{
-        fontFamily: "'Syne', sans-serif",
+        fontFamily: "'Inter', sans-serif",
         fontSize: 20, fontWeight: 800,
         color: C.txt, marginBottom: 16,
       }}>
@@ -263,7 +263,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
 
         {/* Title */}
         <h1 style={{
-          fontFamily: "'Syne', sans-serif",
+          fontFamily: "'Inter', sans-serif",
           fontSize: 'clamp(26px, 5vw, 38px)',
           fontWeight: 800,
           color: C.txt,
@@ -350,7 +350,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           borderRadius: 14,
           textAlign: 'center' as const,
         }}>
-          <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 6 }}>
+          <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 6 }}>
             Get weekly AI tool updates
           </div>
           <div style={{ fontSize: 13, color: C.mut, marginBottom: 14 }}>
@@ -368,7 +368,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
         {post.faqs.length > 0 && (
           <section style={{ marginTop: 56 }}>
             <h2 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               fontSize: 22, fontWeight: 800,
               color: C.txt, marginBottom: 20,
             }}>
@@ -452,7 +452,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
       {/* Scoped blog content styles */}
       <style>{`
         .blog-content h2 {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 22px;
           font-weight: 800;
           color: var(--txt);
@@ -460,7 +460,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           line-height: 1.25;
         }
         .blog-content h3 {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 17px;
           font-weight: 700;
           color: var(--txt);
@@ -485,7 +485,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           overflow: hidden;
         }
         .blog-content th {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 12px;
           font-weight: 700;
           letter-spacing: .06em;

@@ -106,7 +106,16 @@ jobs:
           fi
           echo "✅ Homepage FAQPage schema present"
 
-          # 5. Bundle size guard (warn > 800KB total JS)
+          # 5. Check minimum page count
+          COUNT=$(find dist -name "index.html" | wc -l)
+          echo "ℹ️  Built $COUNT pages"
+          if [ "$COUNT" -lt 40 ]; then
+            echo "❌ Too few pages built ($COUNT) — expected 40+"
+            exit 1
+          fi
+          echo "✅ Page count OK: $COUNT pages"
+
+          # 6. Bundle size guard (warn > 800KB total JS)
           TOTAL_JS=$(find dist/assets -name "*.js" -exec stat --format="%s" {} + 2>/dev/null | awk '{s+=$1}END{print int(s/1024)}')
           echo "ℹ️  Total JS bundle: ${TOTAL_JS}KB"
           if [ "$TOTAL_JS" -gt 800 ]; then
@@ -145,3 +154,10 @@ jobs:
         run: |
           curl -sf "https://www.bing.com/ping?sitemap=https://ainexustools.online/sitemap.xml" \
             && echo "Bing pinged ✓" || echo "Bing ping failed (non-fatal)"
+
+      - name: Ping IndexNow
+        run: |
+          curl -sf -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d '{"host":"ainexustools.online","key":"c77b73bf52984321a0009ddd249c0a20","urlList":["https://ainexustools.online/sitemap.xml"]}' \
+            && echo "IndexNow pinged ✓" || echo "IndexNow ping failed (non-fatal)"

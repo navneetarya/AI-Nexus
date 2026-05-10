@@ -128,7 +128,7 @@ export function SharedNav({
             </div>
             <div>
               <div style={{
-                fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: 16,
+                fontFamily: "'Inter',sans-serif", fontWeight: 800, fontSize: 16,
                 color: C.txt, letterSpacing: '-0.034em', lineHeight: 1.1,
               }}>
                 AI Nexus<span style={{ color: C.a1 }}>.</span>
@@ -157,7 +157,7 @@ export function SharedNav({
                 padding: '7px 13px', borderRadius: 8,
                 background: isHomeActive ? C.a1card : 'transparent',
                 border: 'none', cursor: 'pointer',
-                fontFamily: "'DM Sans',sans-serif",
+                fontFamily: "'Inter', system-ui, sans-serif",
               }}
             >
               All Tools
@@ -176,7 +176,7 @@ export function SharedNav({
                   : C.a1card,
                 border: `1.5px solid ${C.a1brd}`,
                 cursor: 'pointer',
-                fontFamily: "'DM Sans',sans-serif",
+                fontFamily: "'Inter', system-ui, sans-serif",
                 boxShadow: isCompareActive ? '0 2px 8px rgba(13,148,136,.28)' : 'none',
                 display: 'flex', alignItems: 'center', gap: 6,
               }}
@@ -194,7 +194,7 @@ export function SharedNav({
                 padding: '7px 13px', borderRadius: 8,
                 background: isAboutActive ? C.a1card : 'transparent',
                 border: 'none', cursor: 'pointer',
-                fontFamily: "'DM Sans',sans-serif",
+                fontFamily: "'Inter', system-ui, sans-serif",
               }}
             >
               About
@@ -210,7 +210,7 @@ export function SharedNav({
                 padding: '7px 13px', borderRadius: 8,
                 background: isBlogActive ? C.a1card : 'transparent',
                 border: 'none', cursor: 'pointer',
-                fontFamily: "'DM Sans',sans-serif",
+                fontFamily: "'Inter', system-ui, sans-serif",
               }}
             >
               Blog
@@ -288,7 +288,7 @@ export function SharedNav({
                   fontSize: 15, fontWeight: 500, color: C.txt,
                   padding: '12px 12px', borderRadius: 8,
                   background: 'transparent', border: 'none', cursor: 'pointer',
-                  fontFamily: "'DM Sans',sans-serif",
+                  fontFamily: "'Inter', system-ui, sans-serif",
                   borderBottom: '1px solid var(--chip-bg)',
                 }}
               >

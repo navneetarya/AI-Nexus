@@ -16,6 +16,8 @@ const C = {
   barBg:'var(--bar-bg)', barBrd:'var(--bar-brd)',
 };
 
+const AFFILIATE_SLUGS = ['rytr', 'podcastle', 'ocoya', 'replit', 'taskade'];
+
 const CAT_ACCENT: Record<string, 'a1'|'a2'> = {
   Writing:'a1', Image:'a2', Video:'a1', Audio:'a2',
   Marketing:'a1', Design:'a2', Coding:'a1', Productivity:'a2',
@@ -372,7 +374,7 @@ function FAQItem({ q, a, accent }: { q: string; a: string; accent: string; key?:
         onClick={() => setOpen(o => !o)}
         style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 0', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' as const, gap: 12 }}
       >
-        <span style={{ fontSize: 14, fontWeight: 500, color: C.txt, lineHeight: 1.5, fontFamily: "'Syne', sans-serif" }}>{q}</span>
+        <span style={{ fontSize: 14, fontWeight: 500, color: C.txt, lineHeight: 1.5, fontFamily: "'Inter', sans-serif" }}>{q}</span>
         {open ? <ChevronUp size={16} color={accent} style={{ flexShrink: 0 }} /> : <ChevronDown size={16} color={C.mut2} style={{ flexShrink: 0 }} />}
       </button>
       {open && (
@@ -414,7 +416,7 @@ function ToolLogoImg({ slug, size = 32, name, color }: { slug: string; size?: nu
     <span style={{ width: size, height: size, borderRadius: Math.round(size * 0.27),
       background: color ?? 'var(--a1)', color: '#fff', display: 'flex', alignItems: 'center',
       justifyContent: 'center', fontSize: size * 0.45, fontWeight: 700,
-      fontFamily: "'Syne', sans-serif", flexShrink: 0 }}>
+      fontFamily: "'Inter', sans-serif", flexShrink: 0 }}>
       {initial}
     </span>
   );
@@ -475,8 +477,8 @@ function RadarChart({ scores, accent }: { scores: [number, number, number, numbe
           <line key={i} x1={cx} y1={cy} x2={p.x} y2={p.y} stroke="var(--brd-xs)" strokeWidth="1" />
         ))}
         {/* Score labels on rings (just 1 and 5) */}
-        <text x={cx + 4} y={cy - (1/5)*maxR - 3} fontSize="8" fill="var(--mut2)" fontFamily="'DM Sans',sans-serif">1</text>
-        <text x={cx + 4} y={cy - maxR - 3}         fontSize="8" fill="var(--mut2)" fontFamily="'DM Sans',sans-serif">5</text>
+        <text x={cx + 4} y={cy - (1/5)*maxR - 3} fontSize="8" fill="var(--mut2)" fontFamily="'Inter', system-ui, sans-serif">1</text>
+        <text x={cx + 4} y={cy - maxR - 3}         fontSize="8" fill="var(--mut2)" fontFamily="'Inter', system-ui, sans-serif">5</text>
         {/* Data polygon */}
         <path d={dataPath} fill={`${accent}28`} stroke={accent} strokeWidth="2.5" strokeLinejoin="round" />
         {/* Data dots */}
@@ -489,11 +491,11 @@ function RadarChart({ scores, accent }: { scores: [number, number, number, numbe
           return (
             <g key={i}>
               <text x={lp.x} y={lp.y - 5} textAnchor={anchor} fontSize="9.5" fontWeight="600"
-                fill="var(--mut2)" fontFamily="'DM Sans',sans-serif" letterSpacing="0.01em">
+                fill="var(--mut2)" fontFamily="'Inter', system-ui, sans-serif" letterSpacing="0.01em">
                 {lp.label}
               </text>
               <text x={lp.x} y={lp.y + 9} textAnchor={anchor} fontSize="11" fontWeight="800"
-                fill={accent} fontFamily="'Syne',sans-serif">
+                fill={accent} fontFamily="'Inter',sans-serif">
                 {lp.score}
               </text>
             </g>
@@ -592,13 +594,13 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
   );
 
   const sectionTitle = (text: string) => (
-    <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 18px', letterSpacing: '-0.02em' }}>
+    <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 18px', letterSpacing: '-0.02em' }}>
       {text}
     </h2>
   );
 
   return (
-    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'DM Sans', sans-serif", color: C.txt }}>
+    <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif", color: C.txt }}>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       {/* FAQPage schema injected by prerender.mjs — do NOT add a second one here */}
@@ -644,7 +646,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <ToolLogoImg slug={tool.slug} size={64} name={tool.name} color={accent} />
               <div style={{ flex: 1, minWidth: 200 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8, flexWrap: 'wrap' as const }}>
-                  <span style={{ background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Syne', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100 }}>
+                  <span style={{ background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100 }}>
                     {tool.category.toUpperCase()}
                   </span>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 11, fontWeight: 700, letterSpacing: '0.02em', color: accent, background: cardBg, border: `1px solid ${cardBrd}`, padding: '3px 10px', borderRadius: 100 }}>
@@ -662,9 +664,15 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               </div>
             </div>
 
-            <h1 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 'clamp(28px,5vw,44px)', color: C.txt, margin: '0 0 10px', lineHeight: 1.1, letterSpacing: '-0.025em' }}>
+            <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(28px,5vw,44px)', color: C.txt, margin: '0 0 10px', lineHeight: 1.1, letterSpacing: '-0.025em' }}>
               {tool.name} Review {new Date().getFullYear()} — {tool.tagline}
             </h1>
+
+            {content?.lastTested && (
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(16,185,129,.08)', border: '1px solid rgba(16,185,129,.18)', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: '#059669', fontWeight: 600, marginTop: 6 }}>
+                <Check size={12} /> Last tested: {content.lastTested}
+              </div>
+            )}
 
             {content && (
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, margin: '0 0 14px' }}>
@@ -681,7 +689,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             {/* Pricing + CTA row */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' as const }}>
               <a href={tool.affiliateLink} target="_blank" rel="noopener noreferrer"
-                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Syne', sans-serif", textDecoration: 'none' }}>
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
                 Try {tool.name} Free <ExternalLink size={14} />
               </a>
               {tool.pricing && (
@@ -698,13 +706,41 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </div>
         </div>
 
+        {AFFILIATE_SLUGS?.includes(tool.slug) && (
+          <div style={{ 
+            background: 'rgba(249,115,22,.06)', border: '1px solid rgba(249,115,22,.15)', 
+            borderRadius: 8, padding: '8px 14px', marginBottom: 16, fontSize: 12, color: C.mut, lineHeight: 1.5 
+          }}>
+            <strong style={{ color: C.txt }}>Disclosure:</strong> This page contains affiliate links. If you purchase through these links, I earn a commission at no extra cost to you. 
+            <a href="/disclosure/" style={{ color: C.a1, fontWeight: 600, textDecoration: 'none' }}>Learn more</a>
+          </div>
+        )}
+
+        {/* ── W4-H2: "How I Tested This Tool" section ── */}
+        {content && (
+          <div style={{ background: C.surf, border: `1px solid var(--brd-sm)`, borderRadius: 12, padding: '16px 20px', marginBottom: 24 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+              <div style={{ width: 32, height: 32, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <User size={16} color="#fff" />
+              </div>
+              <div>
+                <div style={{ fontSize: 13, fontWeight: 700, color: C.txt }}>Tested by Navneet Arya</div>
+                <div style={{ fontSize: 12, color: C.mut }}>{content.timeUsed} of hands-on use</div>
+              </div>
+            </div>
+            <a href="/methodology/" style={{ fontSize: 12, color: C.a1, fontWeight: 600, textDecoration: 'none' }}>
+              Read full testing methodology →
+            </a>
+          </div>
+        )}
+
         {/* ── AEO A3: "What is [Tool]?" — featured snippet target for "[tool] review" queries ── */}
         {content?.whatIs && (
           <section
             aria-label={`What is ${tool.name}`}
             style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '24px 30px', marginBottom: 14 }}
           >
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 12px', letterSpacing: '-0.02em' }}>
+            <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 12px', letterSpacing: '-0.02em' }}>
               What is {tool.name}?
             </h2>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, margin: 0, fontWeight: 300 }}>
@@ -720,7 +756,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <Award size={16} color="#059669" />
             </div>
             <div>
-              <h2 style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.06em', textTransform: 'uppercase' as const, margin: '0 0 5px', fontFamily: "'DM Sans', sans-serif" }}>Is {tool.name} Worth It? — Quick Verdict</h2>
+              <h2 style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.06em', textTransform: 'uppercase' as const, margin: '0 0 5px', fontFamily: "'Inter', system-ui, sans-serif" }}>Is {tool.name} Worth It? — Quick Verdict</h2>
               <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.65, margin: 0, fontWeight: 300 }}>{content.verdict}</p>
             </div>
           </section>
@@ -800,7 +836,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               {sectionTitle('My honest take')}
               {/* Author byline */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 16px', background: cardBg, borderRadius: 12, border: `1px solid ${cardBrd}`, marginBottom: 18 }}>
-                <div style={{ width: 36, height: 36, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 13, color: '#fff', flexShrink: 0 }}>NA</div>
+                <div style={{ width: 36, height: 36, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 13, color: '#fff', flexShrink: 0 }}>NA</div>
                 <div>
                   <div style={{ fontSize: 13, fontWeight: 600, color: C.txt }}>{SITE_CONFIG.authorName}</div>
                   <div style={{ fontSize: 11, color: C.mut2 }}>{SITE_CONFIG.authorExperience} · tested {tool.name} for {content.timeUsed}</div>
@@ -828,11 +864,11 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               {sectionTitle(`Who Should Use ${tool.name}`)}
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
                 <section aria-label="Who Should Use This" style={{ padding: '16px', background: C.sukbg, borderRadius: 12, border: `1px solid ${C.sukbrd}` }}>
-                  <h3 style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.05em', textTransform: 'uppercase' as const, margin: '0 0 10px', fontFamily: "'DM Sans', sans-serif" }}>Good fit for</h3>
+                  <h3 style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.05em', textTransform: 'uppercase' as const, margin: '0 0 10px', fontFamily: "'Inter', system-ui, sans-serif" }}>Good fit for</h3>
                   <p style={{ fontSize: 13, color: C.txt, lineHeight: 1.7, margin: 0, fontWeight: 300 }}>{content.whoIsItFor}</p>
                 </section>
                 <section aria-label="Who Should NOT Use This" style={{ padding: '16px', background: C.errbg, borderRadius: 12, border: `1px solid ${C.errbrd}` }}>
-                  <h3 style={{ fontSize: 12, fontWeight: 600, color: '#dc2626', letterSpacing: '0.05em', textTransform: 'uppercase' as const, margin: '0 0 10px', fontFamily: "'DM Sans', sans-serif" }}>Skip if you need</h3>
+                  <h3 style={{ fontSize: 12, fontWeight: 600, color: '#dc2626', letterSpacing: '0.05em', textTransform: 'uppercase' as const, margin: '0 0 10px', fontFamily: "'Inter', system-ui, sans-serif" }}>Skip if you need</h3>
                   <p style={{ fontSize: 13, color: C.txt, lineHeight: 1.7, margin: 0, fontWeight: 300 }}>{content.whoShouldSkip}</p>
                 </section>
               </div>
@@ -948,7 +984,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                   <span style={{ fontSize: 13, color: C.mut }}>Read the full Rytr vs {vs.tool} breakdown →</span>
                   <button
                     onClick={() => navigate(`/compare/${vs.compareSlug}`)}
-                    style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer', padding: '8px 18px', fontSize: 13, fontWeight: 600, fontFamily: "'Syne', sans-serif" }}>
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer', padding: '8px 18px', fontSize: 13, fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
                     Full comparison →
                   </button>
                 </div>
@@ -962,7 +998,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
         {tool.pricingBreakdown && tool.pricingBreakdown.length > 0 && (
           geoSection('Pricing',
             <>
-              <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.02em' }}>{tool.name} Pricing 2026</h2>
+              <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.02em' }}>{tool.name} Pricing 2026</h2>
               <p style={{ fontSize: 13, color: C.mut, margin: '0 0 18px', lineHeight: 1.65, fontWeight: 300 }}>
                 All plans include the core features — here's what changes at each tier.
               </p>
@@ -982,8 +1018,8 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                         padding: '2px 10px', borderRadius: 100, letterSpacing: '0.06em',
                       }}>POPULAR</span>
                     )}
-                    <div style={{ fontSize: 13, fontWeight: 700, color: C.txt, marginBottom: 4, fontFamily: "'Syne', sans-serif" }}>{tier.tier}</div>
-                    <div style={{ fontSize: 20, fontWeight: 800, color: accent, marginBottom: 10, fontFamily: "'Syne', sans-serif" }}>{tier.price}</div>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: C.txt, marginBottom: 4, fontFamily: "'Inter', sans-serif" }}>{tier.tier}</div>
+                    <div style={{ fontSize: 20, fontWeight: 800, color: accent, marginBottom: 10, fontFamily: "'Inter', sans-serif" }}>{tier.price}</div>
                     <div style={{ fontSize: 12, color: C.mut, lineHeight: 1.6 }}>{tier.highlight}</div>
                   </div>
                 ))}
@@ -1013,7 +1049,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                       width: 28, height: 28, borderRadius: '50%', flexShrink: 0,
                       background: `linear-gradient(135deg,${C.a1},${C.a2})`,
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      fontFamily: "'Syne', sans-serif", fontSize: 12, fontWeight: 700, color: '#fff',
+                      fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 700, color: '#fff',
                     }}>{i + 1}</div>
                     <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.65, margin: 0, fontWeight: 300, paddingTop: 4 }}>{step}</p>
                   </div>
@@ -1061,7 +1097,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
                 {tool.dailyUseCases.map((uc, i) => (
                   <div key={i} style={{ display: 'flex', gap: 12, padding: '12px 16px', background: cardBg, borderRadius: 10, border: `1px solid ${cardBrd}`, alignItems: 'flex-start' }}>
-                    <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 13, color: accent, flexShrink: 0, marginTop: 1 }}>
+                    <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800, fontSize: 13, color: accent, flexShrink: 0, marginTop: 1 }}>
                       {String(i + 1).padStart(2, '0')}
                     </span>
                     <span style={{ fontSize: 13, color: C.txt, lineHeight: 1.6 }}>{uc}</span>
@@ -1117,7 +1153,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                         background: `linear-gradient(135deg,${C.a1},${C.a2})`,
                         color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer',
                         padding: '8px 18px', fontSize: 13, fontWeight: 600,
-                        fontFamily: "'Syne', sans-serif", whiteSpace: 'nowrap' as const,
+                        fontFamily: "'Inter', sans-serif", whiteSpace: 'nowrap' as const,
                       }}>
                       Read comparison →
                     </button>
@@ -1214,16 +1250,41 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
         })()}
 
 
+        {/* Compare navigation */}
+        {(() => {
+          const relatedCompares = COMPARE_ARTICLES.filter(c => c.slug.includes(tool.slug));
+          if (relatedCompares.length === 0) return null;
+          return (
+            <div style={{ marginTop: 32, marginBottom: 32 }}>
+              <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, marginBottom: 14 }}>
+                See How {tool.name} Compares
+              </h2>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
+                {relatedCompares.map(c => (
+                  <div key={c.slug} onClick={() => navigate(`/compare/${c.slug}`)}
+                    style={{ background: C.surf, border: '1px solid var(--brd-sm)', borderRadius: 10, padding: '14px 16px', cursor: 'pointer', transition: 'transform .15s ease, box-shadow .15s ease' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 24px rgba(13,148,136,.1)'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'none'; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}
+                  >
+                    <div style={{ fontWeight: 700, fontSize: 14, color: C.txt, marginBottom: 4 }}>{c.title}</div>
+                    <div style={{ fontSize: 12, color: C.a1, fontWeight: 600 }}>Read comparison →</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
         <div style={{ background: C.surf, borderRadius: 20, border: `2px solid ${cardBrd}`, padding: '36px', textAlign: 'center' as const }}>
           <div style={{ position: 'relative' }}>
-            <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 22, color: C.txt, marginBottom: 10 }}>
+            <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 22, color: C.txt, marginBottom: 10 }}>
               Ready to try {tool.name}?
             </div>
             <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.7, marginBottom: 24, maxWidth: 440, margin: '0 auto 24px' }}>
               Start with the free plan — no credit card required. Upgrade only if it delivers value.
             </p>
             <a href={tool.affiliateLink} target="_blank" rel="noopener noreferrer"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '14px 32px', fontSize: 15, fontWeight: 600, fontFamily: "'Syne', sans-serif", textDecoration: 'none' }}>
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '14px 32px', fontSize: 15, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
               Start free with {tool.name} <ExternalLink size={15} />
             </a>
             <p style={{ fontSize: 11, color: C.mut2, marginTop: 12 }}>

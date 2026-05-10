@@ -266,7 +266,7 @@ function ToolLogo({ tool, size = 40 }: { tool: Tool; size?: number }) {
     <span style={{
       width: size, height: size, borderRadius: r, background: tool.color, color: '#fff',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
-      fontSize: size * 0.45, fontWeight: 700, fontFamily: "'Syne', sans-serif", flexShrink: 0,
+      fontSize: size * 0.45, fontWeight: 700, fontFamily: "'Inter', sans-serif", flexShrink: 0,
     }}>
       {initial}
     </span>
@@ -291,7 +291,7 @@ const ToolCard: React.FC<{ tool: Tool; navigate: (to: string) => void }> = ({ to
     <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
       <ToolLogo tool={tool} size={40} />
       <div style={{ flex: 1, minWidth: 0 }}>
-        <span style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: 15, color: C.txt }}>
+        <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 15, color: C.txt }}>
           {tool.name}
         </span>
         {tool.userBadge && (
@@ -429,7 +429,7 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
     return (
       <div style={{ background: C.bg, minHeight: '100vh', color: C.txt, padding: 48, textAlign: 'center' }}>
         <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="home" />
-        <h1 style={{ fontFamily: "'Syne',sans-serif", marginTop: 80 }}>Category not found</h1>
+        <h1 style={{ fontFamily: "'Inter',sans-serif", marginTop: 80 }}>Category not found</h1>
         <button onClick={() => navigate('/')} style={{ marginTop: 16, color: C.a1, background: 'none', border: 'none', cursor: 'pointer', fontSize: 14 }}>
           ← Back to Home
         </button>
@@ -484,7 +484,7 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
             <Zap size={11} /> {filteredTools.length} TOOLS TESTED & RANKED
           </div>
           <h1 style={{
-            fontFamily: "'Syne',sans-serif", fontWeight: 800,
+            fontFamily: "'Inter',sans-serif", fontWeight: 800,
             fontSize: 'clamp(28px,5vw,48px)', color: '#fff',
             lineHeight: 1.1, marginBottom: 16,
           }}>
@@ -502,7 +502,7 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
               { n: '2026', label: 'Last updated' },
             ].map(({ n, label }) => (
               <div key={label} style={{ textAlign: 'center' }}>
-                <div style={{ fontFamily: "'Syne',sans-serif", fontSize: 28, fontWeight: 800, color: 'var(--a2)' }}>{n}</div>
+                <div style={{ fontFamily: "'Inter',sans-serif", fontSize: 28, fontWeight: 800, color: 'var(--a2)' }}>{n}</div>
                 <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>{label}</div>
               </div>
             ))}
@@ -515,7 +515,7 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
         <div style={{
           background: C.surf, border: `1px solid ${C.barBrd}`, borderRadius: 16, padding: '24px 28px',
         }}>
-          <h2 style={{ fontFamily: "'Syne',sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 12 }}>
+          <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 12 }}>
             {meta.emoji} How I tested these {meta.title.replace('Best AI ', '').replace(' 2026', '').toLowerCase()}
           </h2>
           {meta.intro.split('\n\n').map((p, i) => (
@@ -529,7 +529,7 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
       {/* ── Tool grid ────────────────────────────────────────────────────── */}
       <div style={{ maxWidth: 780, margin: '0 auto', padding: '32px 24px' }}>
         <h2 style={{
-          fontFamily: "'Syne',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 20,
+          fontFamily: "'Inter',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 20,
           display: 'flex', alignItems: 'center', gap: 8,
         }}>
           <span>{meta.emoji}</span> All {filteredTools.length} {meta.title.replace('Best ', '')}
@@ -550,12 +550,12 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
 
       {/* ── FAQ section ──────────────────────────────────────────────────── */}
       <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px 48px' }}>
-        <h2 style={{ fontFamily: "'Syne',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 20 }}>
+        <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 20 }}>
           Frequently Asked Questions
         </h2>
         {meta.faqs.map(({ q, a }, i) => (
           <div key={i} style={{ borderBottom: `1px solid ${C.barBrd}`, padding: '18px 0' }}>
-            <h3 style={{ fontFamily: "'Syne',sans-serif", fontSize: 14, fontWeight: 700, color: C.txt, marginBottom: 8 }}>
+            <h3 style={{ fontFamily: "'Inter',sans-serif", fontSize: 14, fontWeight: 700, color: C.txt, marginBottom: 8 }}>
               {q}
             </h3>
             <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, margin: 0 }}>{a}</p>
@@ -566,7 +566,7 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
       {/* ── Newsletter CTA ───────────────────────────────────────────────── */}
       <div style={{ background: C.dark, padding: '48px 24px', textAlign: 'center' }}>
         <div style={{ maxWidth: 520, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: "'Syne',sans-serif", fontSize: 22, fontWeight: 800, color: '#fff', marginBottom: 12 }}>
+          <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 22, fontWeight: 800, color: '#fff', marginBottom: 12 }}>
             Get notified when I review new {meta.title.replace('Best AI ', '').replace(' 2026', '').toLowerCase()}
           </h2>
           <p style={{ color: 'rgba(255,255,255,.5)', fontSize: 14, marginBottom: 24 }}>
