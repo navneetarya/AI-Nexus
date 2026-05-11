@@ -97,7 +97,8 @@ function App() {
   }, []);
 
   const navigate = (to: string) => {
-    window.history.pushState({}, '', to);
+    const url = to !== '/' && !to.endsWith('/') ? to + '/' : to;
+    window.history.pushState({}, '', url);
     setPath(normalizePath(to));
     window.scrollTo(0, 0);
   };

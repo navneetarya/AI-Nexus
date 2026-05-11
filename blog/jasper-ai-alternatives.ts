@@ -1,13 +1,13 @@
 // blog/jasper-ai-alternatives.ts
 // SEO-07 Tier 2: Target keyword "jasper ai alternatives" — 3,200/mo, KD 24
-// URL: /blog/jasper-alternatives
+// URL: /blog/jasper-ai-alternatives
 // Intent: High buyer intent — users dissatisfied with Jasper pricing or features
 // Affiliate stack: Writesonic, Rytr, Copy.ai CTAs throughout
 
 import { BlogPost } from './types';
 
 const post: BlogPost = {
-  slug: 'jasper-alternatives',
+  slug: 'jasper-ai-alternatives',
   title: 'Best Jasper AI Alternatives in 2026 — Cheaper & Tested',
   seoTitle: 'Best Jasper AI Alternatives 2026 — Tested',
   metaDescription: 'Jasper AI costs $49/month — too expensive for most creators. I tested the best alternatives: Writesonic, Rytr, Copy.ai, and Frase. Find the right fit.',

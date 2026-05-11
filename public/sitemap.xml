@@ -85,6 +85,42 @@
   <url><loc>https://ainexustools.online/tools/notion-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
     <image:image><image:loc>https://ainexustools.online/logos/notion-ai.png</image:loc><image:title>Notion AI Productivity Tool Logo</image:title></image:image>
   </url>
+  <url><loc>https://ainexustools.online/tools/elevenlabs/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/elevenlabs.png</image:loc><image:title>ElevenLabs AI Voice Generator Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/jasper/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/jasper.png</image:loc><image:title>Jasper AI Content Platform Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/descript/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/descript.png</image:loc><image:title>Descript AI Audio Video Editor Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/perplexity/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/perplexity.png</image:loc><image:title>Perplexity AI Search Engine Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/canva-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/canva-ai.png</image:loc><image:title>Canva AI Design Tool Logo</image:title></image:image>
+  </url>
+
+  <!-- Compare pages — Week 2 additions -->
+  <url><loc>https://ainexustools.online/compare/photoroom-vs-remove-bg/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/writesonic-vs-jasper/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/grammarly-vs-prowritingaid/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/leonardo-ai-vs-stable-diffusion/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/gamma-vs-beautiful-ai/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/invideo-vs-pictory/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
+
+  <!-- Category landing pages -->
+  <url><loc>https://ainexustools.online/best-ai-writing-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/best-ai-image-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/best-ai-video-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/best-ai-audio-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/best-ai-marketing-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/best-ai-design-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/best-ai-coding-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/best-ai-productivity-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
+
+  <!-- Glossary -->
+  <url><loc>https://ainexustools.online/glossary/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-05-10</lastmod></url>
 
   <!-- Blog list -->
   <url><loc>https://ainexustools.online/blog/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod>
