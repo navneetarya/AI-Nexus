@@ -274,22 +274,25 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
           {article.title}
         </h1>
 
-        {/* AEO A4: Quick Answer box — featured snippet target for "[A] vs [B]" queries */}
-        <div
-          role="note"
+        {/* W3-T2: QuickAnswer — hardened for AI citation extraction (Perplexity, ChatGPT, Gemini) */}
+        <section
           aria-label="Quick Answer"
-          style={{ background: C.a1card, border: `1.5px solid ${C.a1brd}`, borderRadius: 12, padding: '16px 20px', marginBottom: '1.25rem', display: 'flex', gap: 14, alignItems: 'flex-start' }}
+          itemScope
+          itemType="https://schema.org/Answer"
+          style={{ background: C.a1card, border: `1.5px solid ${C.a1brd}`, borderRadius: 12, padding: '16px 20px', marginBottom: '1.25rem' }}
         >
-          <div style={{ flexShrink: 0, fontSize: 18, lineHeight: 1 }}>⚡</div>
-          <div>
-            <div style={{ fontSize: 11, fontWeight: 700, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 6, fontFamily: "'Inter', system-ui, sans-serif" }}>
-              Quick Answer
+          <div style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+            <div style={{ flexShrink: 0, fontSize: 18, lineHeight: 1 }}>⚡</div>
+            <div>
+              <h2 style={{ fontSize: 13, fontWeight: 700, color: C.a1, letterSpacing: '0.04em', margin: '0 0 6px', fontFamily: "'Inter', system-ui, sans-serif" }}>
+                Quick Answer: {article.title.replace(/\s*\(\d{4}\).*$/, '')}
+              </h2>
+              <p itemProp="text" style={{ fontSize: 14, color: C.txt, lineHeight: 1.7, margin: 0, fontWeight: 300 }}>
+                {article.quickAnswer}
+              </p>
             </div>
-            <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.7, margin: 0, fontWeight: 300 }}>
-              {article.quickAnswer}
-            </p>
           </div>
-        </div>
+        </section>
 
         {/* W4-T4: Pricing Comparison Table — answers buyer's #1 question immediately */}
         {article.pricing && <PricingTable pricing={article.pricing} />}

@@ -269,6 +269,14 @@ const TOOL_FAQS = {
     { q: 'Is Grammarly Premium worth it?', a: "Grammarly Premium at $12/month is worth it if you write professionally at significant volume. The tone detector, full-sentence clarity rewrites, and plagiarism checker meaningfully reduce editing time for emails, reports, and long-form content. The free plan is sufficient for casual writing." },
     { q: 'Does Grammarly work in Microsoft Word and Google Docs?', a: "Yes — Grammarly has native integrations for both Microsoft Word (via a desktop add-in) and Google Docs (via Chrome extension). Corrections appear as underlines in real time, exactly like the built-in spell-checker but significantly more accurate and detailed." },
   ],
+  // W2-T1: Frase FAQs — enables FAQ rich results for "frase review" (1,200/mo, KD 18)
+  frase: [
+    { q: 'Is Frase worth it in 2026?', a: "Yes — if ranking on Google is your primary content goal. Frase analyses the top 20 results for any keyword and generates a data-driven content brief in 30 seconds. The Content Score feature tells you exactly what topics you're missing. At $15/month for the Solo plan (4 documents/month), it pays for itself if even one article ranks and drives traffic." },
+    { q: 'Frase vs Surfer SEO — which is better?', a: "Both do content optimisation but Frase is stronger on brief-building and research; Surfer SEO is stronger on real-time keyword density analysis during writing. For solo creators, Frase is the better starting point. For agencies managing multiple client sites, Surfer SEO's workflow is more suited to team use." },
+    { q: "What is Frase's free plan limit?", a: "Frase does not have a permanent free plan. It offers a $1 five-day trial that gives full access to the Solo plan features. After the trial, pricing starts at $15/month for the Solo plan (4 SEO documents/month) or $45/month for the Basic plan (30 documents/month)." },
+    { q: 'Who should use Frase?', a: "Frase is built for SEO writers, content marketers, and bloggers who want to create content that ranks on Google. If your content strategy is driven by keyword research and search rankings, Frase is the most focused tool for that job. It's not for casual bloggers or social media content." },
+    { q: 'Does Frase work for non-English content?', a: "Frase's SERP analysis works for any language Google supports — it pulls the top results regardless of language. However, the AI writing features produce the best output in English. For non-English SEO content, use Frase for the brief and competitor analysis, then write the content manually or with a multilingual tool like Writesonic." },
+  ],
 };
 
 // ── Compare articles ──────────────────────────────────────────────────────────
@@ -493,7 +501,30 @@ function readTemplate() {
  * Injects page-specific meta into the HTML template.
  * Modifies: title, description, canonical, og:*, twitter:*, robots, schemas.
  */
-function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, bodyHtml = null, readTimeHtml = '' }) {
+// W2-T3: Per-page-type OG image selection — differentiates social shares.
+// When you create og-compare.png, og-blog-writing.png, etc. in Canva (1200×630),
+// place them in public/ and they'll be used automatically.
+function resolveOgImage(slug) {
+  if (slug.startsWith('compare/')) return `${SITE}/og-compare.png`;
+  if (slug.startsWith('blog/')) {
+    // Map blog post categories to OG images
+    const post = BLOG_POSTS.find(p => `blog/${p.slug}` === slug);
+    if (post) {
+      const title = post.title.toLowerCase();
+      if (title.includes('podcast') || title.includes('audio') || title.includes('voice'))
+        return `${SITE}/og-blog-audio.png`;
+      if (title.includes('writing') || title.includes('grammarly') || title.includes('rytr') || title.includes('jasper'))
+        return `${SITE}/og-blog-writing.png`;
+      if (title.includes('video') || title.includes('invideo'))
+        return `${SITE}/og-blog-video.png`;
+    }
+    return `${SITE}/og-blog-writing.png`;
+  }
+  if (slug.startsWith('tools/')) return `${SITE}/og-tool-review.png`;
+  return `${SITE}/og-image.png`;
+}
+
+function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, bodyHtml = null, readTimeHtml = '', ogImage = null }) {
   let html = template;
 
   // Title
@@ -524,6 +555,12 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
     .replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/,       `$1${esc(title)}$2`)
     .replace(/(<meta\s+property="og:description"\s+content=")[^"]*(")/,  `$1${esc(description)}$2`)
     .replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/,          `$1${canonical}$2`);
+
+  // W2-T3: Replace OG image if a page-specific one is provided
+  if (ogImage) {
+    html = html.replace(/(<meta\s+property="og:image"\s+content=")[^"]*(")/,     `$1${esc(ogImage)}$2`);
+    html = html.replace(/(<meta\s+name="twitter:image"\s+content=")[^"]*(")/,    `$1${esc(ogImage)}$2`);
+  }
 
   // Twitter tags
   html = html
@@ -1199,7 +1236,7 @@ for (const tool of TOOLS) {
     schemas.push(faqSchema(TOOL_FAQS[tool.slug]));
   }
 
-  writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas }));
+  writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas, ogImage: resolveOgImage(`tools/${tool.slug}`) }));
 }
 
 // ── 2. Compare pages ──────────────────────────────────────────────────────────
@@ -1221,7 +1258,7 @@ for (const art of COMPARE_ARTICLES) {
   // H7 (SEO-High): use seoTitle (≤60 chars) for <title> tag if defined
   writeRoute(
     `compare/${art.slug}`,
-    buildPage(template, { title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas })
+    buildPage(template, { title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas, ogImage: resolveOgImage(`compare/${art.slug}`) })
   );
 }
 
@@ -1372,6 +1409,7 @@ for (const post of BLOG_POSTS) {
       datePublished: post.datePublished,
       bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>`,
       readTimeHtml: readTime,
+      ogImage: resolveOgImage(`blog/${post.slug}`),
     })
   );
 }
@@ -1445,15 +1483,69 @@ for (const post of BLOG_POSTS) {
 }
 
 // ── 8. Glossary page (/glossary/) ──────────────────────────────────────────────
+// W3-T3: DefinedTermSet schema — captures definition queries ("what is LLM", "AI hallucination meaning")
 {
   const canonical = `${SITE}/glossary/`;
   const title = 'AI Glossary — Key Terms Explained (2026) | AI Nexus';
   const description = 'Clear definitions of 49 AI terms — LLM, GPT, RAG, prompt engineering, fine-tuning, and more. Written for beginners, updated for 2026.';
+
+  // Top glossary terms for schema (matches GlossaryPage.tsx GLOSSARY_TERMS)
+  const GLOSSARY_TERMS = [
+    { term: 'AGI (Artificial General Intelligence)', definition: 'A hypothetical type of AI that can understand, learn, and apply knowledge across any intellectual task a human can perform.' },
+    { term: 'AI Agent', definition: 'An autonomous AI system that can perceive its environment, make decisions, and take actions to accomplish specific goals.' },
+    { term: 'API (Application Programming Interface)', definition: 'A set of rules and protocols that allows different software applications to communicate with each other.' },
+    { term: 'Chain-of-Thought (CoT)', definition: 'A prompting technique that encourages a language model to break down complex reasoning into intermediate steps before arriving at a final answer.' },
+    { term: 'Deep Learning', definition: 'A subset of machine learning that uses neural networks with many layers to learn complex patterns from large amounts of data.' },
+    { term: 'Diffusion Model', definition: 'A type of generative AI model that creates images by learning to reverse a gradual noising process. DALL·E, Midjourney, and Stable Diffusion all use this approach.' },
+    { term: 'Embedding', definition: 'A numerical representation of text, images, or other data as a dense vector in a high-dimensional space. Embeddings capture semantic meaning.' },
+    { term: 'Fine-Tuning', definition: 'The process of taking a pre-trained AI model and further training it on a smaller, task-specific dataset to improve its performance.' },
+    { term: 'Foundation Model', definition: 'A large AI model trained on broad, diverse data that can be adapted to a wide range of downstream tasks. GPT-4, Claude, Llama, and Gemini are all foundation models.' },
+    { term: 'GPT (Generative Pre-trained Transformer)', definition: 'A family of large language models developed by OpenAI that generate text by predicting the next token in a sequence.' },
+    { term: 'Hallucination', definition: 'When an AI model generates information that sounds plausible but is factually incorrect or entirely fabricated.' },
+    { term: 'LLM (Large Language Model)', definition: 'A neural network trained on massive amounts of text data that can understand, generate, and reason about human language.' },
+    { term: 'LoRA (Low-Rank Adaptation)', definition: 'A parameter-efficient fine-tuning technique that adds small, trainable adapter layers to a frozen pre-trained model instead of updating all its weights.' },
+    { term: 'Multimodal AI', definition: 'AI systems that can process and generate multiple types of data — such as text, images, audio, and video — within a single model.' },
+    { term: 'NLP (Natural Language Processing)', definition: 'The field of AI focused on enabling computers to understand, interpret, and generate human language.' },
+    { term: 'Prompt Engineering', definition: 'The practice of crafting effective instructions (prompts) to get the best possible output from an AI model.' },
+    { term: 'RAG (Retrieval-Augmented Generation)', definition: 'A technique that enhances AI responses by first retrieving relevant documents from an external knowledge base, then feeding that context to the language model.' },
+    { term: 'RLHF (Reinforcement Learning from Human Feedback)', definition: 'A training technique where human evaluators rank AI outputs by quality, and those rankings are used to train a reward model.' },
+    { term: 'Token', definition: 'The basic unit of text that language models process — typically a word, part of a word, or punctuation mark. LLM pricing, context limits, and speed are all measured in tokens.' },
+    { term: 'Transformer', definition: 'The neural network architecture behind virtually all modern language models, introduced in the 2017 paper "Attention Is All You Need."' },
+    { term: 'Vector Database', definition: 'A specialized database optimized for storing and searching high-dimensional vector embeddings.' },
+    { term: 'Zero-Shot Learning', definition: 'A technique where an AI model performs a task it was never explicitly trained on, using only a natural language instruction.' },
+  ];
+
+  const toSlug = (term) => term.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+  const definedTermSetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTermSet',
+    name: 'AI Tools Glossary — AI Nexus',
+    description,
+    url: canonical,
+    hasDefinedTerm: GLOSSARY_TERMS.map(t => ({
+      '@type': 'DefinedTerm',
+      name: t.term,
+      description: t.definition,
+      url: `${canonical}#${toSlug(t.term)}`,
+    })),
+  };
+
+  // FAQPage from top 10 terms — format AI Overviews cite most for definitions
+  const glossaryFaqSchema = faqSchema(
+    GLOSSARY_TERMS.slice(0, 10).map(t => ({
+      q: `What is ${t.term.replace(/\s*\(.*?\)\s*/g, '')}?`,
+      a: t.definition,
+    }))
+  );
+
   const schemas = [
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'AI Glossary', canonical],
     ]),
+    definedTermSetSchema,
+    glossaryFaqSchema,
   ];
   writeRoute('glossary', buildPage(template, {
     title, description, canonical, schemas,
@@ -1539,7 +1631,22 @@ ${items}
     })),
   }), null, 2);
 
-  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>`;
+  // W3-T5: SiteNavigationElement schema — enables sitelinks in branded search results
+  const siteNavSchema = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'SiteNavigationElement',
+    name: ['AI Tool Reviews', 'Compare AI Tools', 'AI Tools Blog', 'Best Free AI Tools', 'AI Glossary', 'About'],
+    url: [
+      `${SITE}/`,
+      `${SITE}/compare/grammarly-vs-writesonic/`,
+      `${SITE}/blog/`,
+      `${SITE}/best-free-ai-tools/`,
+      `${SITE}/glossary/`,
+      `${SITE}/about/`,
+    ],
+  }, null, 2);
+
+  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>`;
   homeHtml = homeHtml.replace('</head>', `${faqScriptTag}\n  </head>`);
   fs.writeFileSync(homepagePath, homeHtml, 'utf-8');
   console.log('\n  ✓  / (homepage FAQPage schema injected)');
