@@ -693,7 +693,8 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
 
             {/* Pricing + CTA row */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' as const }}>
-              <a href={tool.affiliateLink} target="_blank" rel="noopener noreferrer"
+              {/* W4-T2: rel="sponsored nofollow" added for FTC/Google compliance */}
+              <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
                 Try {tool.name} Free <ExternalLink size={14} />
               </a>
@@ -765,6 +766,41 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.65, margin: 0, fontWeight: 300 }}>{content.verdict}</p>
             </div>
           </section>
+        )}
+
+        {/* W4-T2: Second affiliate CTA — shown after verdict, highest-converting position on page */}
+        {tool.affiliateLink && (
+          <div style={{
+            background: `linear-gradient(135deg, ${C.a1}12, ${C.a1}06)`,
+            border: `1.5px solid ${C.a1brd}`,
+            borderRadius: 14, padding: '18px 22px', marginBottom: 14,
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            flexWrap: 'wrap' as const, gap: 12,
+          }}>
+            <div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: C.txt, marginBottom: 3, fontFamily: "'Inter', sans-serif" }}>
+                Ready to try {tool.name}?
+              </div>
+              <div style={{ fontSize: 12, color: C.mut }}>
+                Use my link — free trial available, no credit card needed.
+              </div>
+            </div>
+            <a
+              href={tool.affiliateLink}
+              target="_blank"
+              rel="sponsored nofollow noopener noreferrer"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: 8,
+                background: C.a1, color: '#fff',
+                borderRadius: 10, padding: '10px 20px',
+                fontSize: 13.5, fontWeight: 700,
+                fontFamily: "'Inter', sans-serif", textDecoration: 'none',
+                flexShrink: 0,
+              }}
+            >
+              Get {tool.name} Free → <ExternalLink size={13} />
+            </a>
+          </div>
         )}
 
         {/* ── Features grid ── */}
@@ -906,7 +942,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                         <td style={{ padding: '12px 12px', color: C.mut }}>{row.bestFor}</td>
                         <td style={{ padding: '12px 12px' }}>
                           {row.ourPick && (
-                            <a href={tool.affiliateLink} target="_blank" rel="noopener noreferrer"
+                            <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
                               style={{ fontSize: 11, padding: '4px 10px', borderRadius: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontWeight: 600, textDecoration: 'none', whiteSpace: 'nowrap' as const }}>
                               Try free →
                             </a>
@@ -965,7 +1001,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                 <p key={i} style={{ fontSize: 14, color: C.txt, lineHeight: 1.8, margin: '0 0 14px', fontWeight: 300 }}>{para}</p>
               ))}
               <div style={{ marginTop: 8 }}>
-                <a href={tool.affiliateLink} target="_blank" rel="noopener noreferrer"
+                <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '10px 20px', fontSize: 13, fontWeight: 600, textDecoration: 'none' }}>
                   Start free — no credit card required <ExternalLink size={13} />
                 </a>
@@ -1030,7 +1066,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                 ))}
               </div>
               <div style={{ marginTop: 16 }}>
-                <a href={tool.affiliateLink} target="_blank" rel="noopener noreferrer"
+                <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
                   style={{ fontSize: 13, color: accent, fontWeight: 600, textDecoration: 'none' }}>
                   Start free — no credit card required →
                 </a>
@@ -1288,7 +1324,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.7, marginBottom: 24, maxWidth: 440, margin: '0 auto 24px' }}>
               Start with the free plan — no credit card required. Upgrade only if it delivers value.
             </p>
-            <a href={tool.affiliateLink} target="_blank" rel="noopener noreferrer"
+            <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '14px 32px', fontSize: 15, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
               Start free with {tool.name} <ExternalLink size={15} />
             </a>

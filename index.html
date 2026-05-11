@@ -5,9 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- LCP font preload — browser fetches this before parsing CSS, cutting render time -->
-    <!-- W1-T4 FIX: Syne 800 is the actual H1/hero font (LCP element). Inter 700 was wrong. -->
-    <link rel="preload" href="/fonts/syne-v24-latin-800.woff2" as="font" type="font/woff2" crossorigin="anonymous" fetchpriority="high" />
+    <!-- W4-T6: Fraunces replaces Syne 800 — distinctive serif for hero H1, avoids "AI-startup default" look -->
+    <!-- Fraunces is a variable serif used by The Guardian digital — signals "trusted editorial publication" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,700;9..144,0,800;9..144,0,900;9..144,1,800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,700;9..144,0,800;9..144,0,900;9..144,1,800&display=swap" />
 
     <!-- Default meta — JS overwrites per-page before paint -->
     <title>Best AI Tools for Creators — Personally Tested 2026 | AI Nexus</title>

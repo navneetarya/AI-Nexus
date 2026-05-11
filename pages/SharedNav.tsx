@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { Mail, Menu, X, Scale, Sun, Moon } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { Mail, Menu, X, Scale, Sun, Moon, ChevronDown } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
+import { COMPARE_ARTICLES } from './compare-data';
 
 const C = {
   bg:     'var(--bg)',
@@ -22,6 +23,17 @@ const NAV_CSS = `
 .shared-nav-slide { animation:slideDown .3s ease both }
 .shared-nav-btn   { transition:all .15s ease; }
 .shared-nav-btn:hover { background:rgba(13,148,136,.08)!important; color:var(--a1)!important; }
+.compare-dropdown { position:absolute; top:calc(100% + 6px); left:50%; transform:translateX(-50%);
+  background:var(--surf); border:1px solid var(--bar-brd); border-radius:12px;
+  box-shadow:0 8px 32px rgba(0,0,0,.12); padding:8px; min-width:280px; z-index:300;
+  animation:slideDown .2s ease both; }
+.compare-dropdown-item { display:block; width:100%; text-align:left; padding:8px 12px;
+  border-radius:8px; border:none; background:transparent; cursor:pointer;
+  font-size:13px; color:var(--mut); font-family:'Inter',system-ui,sans-serif;
+  transition:background .12s, color .12s; white-space:nowrap; overflow:hidden;
+  text-overflow:ellipsis; }
+.compare-dropdown-item:hover { background:var(--a1-card)!important; color:var(--a1)!important; }
+.compare-wrap { position:relative; }
 @media(max-width:680px){
   #shared-hamburger { display:flex !important; }
   #shared-desktop-nav { display:none !important; }
@@ -67,8 +79,21 @@ export function SharedNav({
   onAllTools,
 }: SharedNavProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [compareOpen, setCompareOpen] = useState(false);
+  const compareRef = useRef<HTMLDivElement>(null);
 
   const closeMobile = () => setMobileOpen(false);
+
+  // Close compare dropdown when clicking outside
+  React.useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (compareRef.current && !compareRef.current.contains(e.target as Node)) {
+        setCompareOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
 
   const handleAllTools = () => {
     closeMobile();
@@ -163,26 +188,51 @@ export function SharedNav({
               All Tools
             </button>
 
-            {/* Compare */}
-            <button
-              className="shared-nav-btn"
-              onClick={handleCompare}
-              style={{
-                fontSize: 14, fontWeight: 600,
-                color: isCompareActive ? '#fff' : C.a1,
-                padding: '7px 15px', borderRadius: 8,
-                background: isCompareActive
-                  ? `linear-gradient(135deg,${C.a1},#0b7a6e)`
-                  : C.a1card,
-                border: `1.5px solid ${C.a1brd}`,
-                cursor: 'pointer',
-                fontFamily: "'Inter', system-ui, sans-serif",
-                boxShadow: isCompareActive ? '0 2px 8px rgba(13,148,136,.28)' : 'none',
-                display: 'flex', alignItems: 'center', gap: 6,
-              }}
-            >
-              <Scale size={14} /> Compare
-            </button>
+            {/* Compare — with dropdown */}
+            <div className="compare-wrap" ref={compareRef}>
+              <button
+                className="shared-nav-btn"
+                onClick={() => {
+                  if (onCompare && !compareOpen) { handleCompare(); }
+                  else { setCompareOpen(v => !v); }
+                }}
+                onMouseEnter={() => setCompareOpen(true)}
+                style={{
+                  fontSize: 14, fontWeight: 600,
+                  color: isCompareActive ? '#fff' : C.a1,
+                  padding: '7px 15px', borderRadius: 8,
+                  background: isCompareActive
+                    ? `linear-gradient(135deg,${C.a1},#0b7a6e)`
+                    : C.a1card,
+                  border: `1.5px solid ${C.a1brd}`,
+                  cursor: 'pointer',
+                  fontFamily: "'Inter', system-ui, sans-serif",
+                  boxShadow: isCompareActive ? '0 2px 8px rgba(13,148,136,.28)' : 'none',
+                  display: 'flex', alignItems: 'center', gap: 6,
+                }}
+              >
+                <Scale size={14} /> Compare <ChevronDown size={12} style={{ transition: 'transform .2s', transform: compareOpen ? 'rotate(180deg)' : 'none' }} />
+              </button>
+
+              {/* W4-T3: Compare dropdown — all compare articles */}
+              {compareOpen && (
+                <div className="compare-dropdown" onMouseLeave={() => setCompareOpen(false)}>
+                  <div style={{ fontSize: 10, fontWeight: 700, color: C.a1, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '4px 12px 6px', borderBottom: `1px solid ${C.a1brd}`, marginBottom: 4 }}>
+                    All Comparisons
+                  </div>
+                  {COMPARE_ARTICLES.map(a => (
+                    <button
+                      key={a.slug}
+                      className="compare-dropdown-item"
+                      onClick={() => { setCompareOpen(false); closeMobile(); navigate(`/compare/${a.slug}`); }}
+                    >
+                      <Scale size={11} style={{ display: 'inline', marginRight: 7, verticalAlign: 'middle', color: 'var(--a1)' }} />
+                      {a.keyword}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
 
             {/* About */}
             <button

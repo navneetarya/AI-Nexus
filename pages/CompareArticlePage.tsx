@@ -14,9 +14,54 @@ const C = {
 };
 
 export { COMPARE_ARTICLES } from './compare-data';
-export type { CompareArticle, CompareSection, CompareRow } from './compare-data';
+export type { CompareArticle, CompareSection, CompareRow, ComparePricing, ToolPricing } from './compare-data';
 import { COMPARE_ARTICLES } from './compare-data';
-import type { CompareArticle } from './compare-data';
+import type { CompareArticle, ComparePricing } from './compare-data';
+
+// ── W4-T4: Pricing Table Component ────────────────────────────────────────
+function PricingTable({ pricing }: { pricing: ComparePricing }) {
+  return (
+    <div style={{ marginBottom: '1.75rem' }}>
+      <h2 style={{ fontSize: '1.05rem', fontWeight: 700, color: C.txt, margin: '0 0 0.75rem', letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: 8 }}>
+        💰 Pricing Comparison
+      </h2>
+      <div style={{ overflowX: 'auto' }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13.5, background: C.surf, borderRadius: 12, overflow: 'hidden', border: `1px solid ${C.brdSm}` }}>
+          <thead>
+            <tr style={{ background: C.a1 }}>
+              {['Tool', 'Free Plan', 'Starting Price', 'Paid From', 'Best For'].map(h => (
+                <th key={h} style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 600, fontSize: 12, color: '#fff', whiteSpace: 'nowrap' }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {pricing.tools.map((tool, i) => (
+              <tr key={i} style={{ background: i % 2 === 0 ? C.surf : C.surf2, borderBottom: `1px solid ${C.brdSm}` }}>
+                <td style={{ padding: '10px 14px', fontWeight: 700, color: C.a1 }}>
+                  {tool.affiliateLink ? (
+                    <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
+                      style={{ color: C.a1, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 5 }}>
+                      {tool.name} <ExternalLink size={11} />
+                    </a>
+                  ) : tool.name}
+                </td>
+                <td style={{ padding: '10px 14px', textAlign: 'center' }}>
+                  {tool.free ? <Check size={15} color="#10b981" /> : <X size={15} color="#ef4444" />}
+                </td>
+                <td style={{ padding: '10px 14px', color: C.txt, fontWeight: 600 }}>{tool.startingPrice}</td>
+                <td style={{ padding: '10px 14px', color: C.mut }}>{tool.paidFrom}</td>
+                <td style={{ padding: '10px 14px', color: C.mut, fontSize: 12.5 }}>{tool.bestPlanFor}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p style={{ fontSize: 11, color: C.mut2, margin: '6px 0 0', fontStyle: 'italic' }}>
+        Prices verified as of {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}. Affiliate links marked with ↗ — I earn a commission at no cost to you.
+      </p>
+    </div>
+  );
+}
 
 // ── Tool name → slug mapping for first-mention internal links (Task 4) ─────
 const TOOL_LINK_MAP: Record<string, string> = {
@@ -245,6 +290,9 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
             </p>
           </div>
         </div>
+
+        {/* W4-T4: Pricing Comparison Table — answers buyer's #1 question immediately */}
+        {article.pricing && <PricingTable pricing={article.pricing} />}
 
         {/* Meta */}
         <div style={{ display: 'flex', gap: '0.75rem', fontSize: 13, color: C.mut, marginBottom: '2rem', flexWrap: 'wrap', alignItems: 'center' }}>

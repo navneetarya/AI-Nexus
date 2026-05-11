@@ -700,13 +700,29 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         {/* Hero content */}
         <div style={{ maxWidth:600, margin:'0 auto', textAlign:'center', position:'relative', zIndex:2 }}>
 
+          {/* W4-T1: Author photo badge — reviewer identity above fold */}
+          <div className="anim-fade-up d1" style={{
+            display:'inline-flex', alignItems:'center', gap:8,
+            background:C.surf, border:`1px solid ${C.a1brd}`,
+            borderRadius:100, padding:'4px 14px 4px 4px', marginBottom:16,
+          }}>
+            <img
+              src="/author-photo.jpg"
+              alt="Navneet Arya"
+              style={{ width:28, height:28, borderRadius:'50%', objectFit:'cover' as const, border:`2px solid ${C.a1}`, flexShrink:0 }}
+            />
+            <span style={{ fontSize:12, fontWeight:600, color:C.txt, fontFamily:"'Inter', system-ui, sans-serif" }}>
+              by Navneet Arya
+            </span>
+          </div>
+
           {/* Trust pill */}
           <button className="anim-fade-up d1"
             onClick={() => navigate('/methodology')}
             style={{ display:'inline-flex', alignItems:'center', gap:7,
               background:C.a1card, border:`1px solid ${C.a1brd}`,
               borderRadius:100, padding:'5px 14px 5px 7px', marginBottom:24,
-              cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}>
+              cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif", marginLeft:8 }}>
             <div style={{ width:19, height:19, borderRadius:'50%', background:C.a1,
               display:'flex', alignItems:'center', justifyContent:'center' }}>
               <Shield size={10} color="#fff"/>
@@ -716,13 +732,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </span>
           </button>
 
+          {/* W4-T6: H1 uses Fraunces — editorial serif, differentiates from 300+ AI sites using Inter/Syne */}
           {/* Week 1 Task 7: H1 targets "best AI tools for creators" — 12,000/mo keyword */}
           <h1 className="anim-fade-up d2"
-            style={{ fontFamily:"'Inter',sans-serif", fontWeight:800,
+            style={{ fontFamily:"'Fraunces', Georgia, serif", fontWeight:800,
               fontSize:'clamp(32px,6vw,54px)', lineHeight:1.07, color:C.txt,
-              margin:'0 0 16px', letterSpacing:'-0.035em' }}>
+              margin:'0 0 16px', letterSpacing:'-0.025em' }}>
             I Test AI Tools for 30+ Days.<br/>
-            <span style={{ color:C.a1 }}>Here's What Actually Works.</span>
+            <span style={{ color:C.a1, fontStyle:'italic' }}>Here's What Actually Works.</span>
           </h1>
 
           <p className="anim-fade-up d3"
@@ -738,6 +755,18 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 <span style={{ fontWeight: 700, color: C.a1 }}>{n}</span> {label}
               </div>
             ))}
+          </div>
+
+          {/* W4-T1: Newsletter CTA moved into hero — "Join 500+ creators" credibility hook */}
+          <div className="anim-fade-up d3" style={{
+            background:C.a1card, border:`1px solid ${C.a1brd}`,
+            borderRadius:14, padding:'14px 18px', margin:'0 auto 20px',
+            maxWidth:430, textAlign:'left' as const,
+          }}>
+            <p style={{ fontSize:12.5, fontWeight:700, color:C.txt, margin:'0 0 8px', fontFamily:"'Inter', system-ui, sans-serif" }}>
+              📬 Join 500+ creators getting weekly AI tool picks
+            </p>
+            <BeehiivForm variant="article" />
           </div>
 
           <p className="anim-fade-up d3"
@@ -1115,6 +1144,53 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* W4-T3: Popular Comparisons section — surfaces buyer-intent content on homepage */}
+      <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px 48px' }}>
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:20, flexWrap:'wrap' as const, gap:12 }}>
+          <div>
+            <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19, color:C.txt, letterSpacing:'-0.025em', marginBottom:4 }}>
+              Popular Comparisons
+            </div>
+            <div style={{ fontSize:13, color:C.mut }}>
+              Can't decide between two tools? These side-by-side breakdowns cut through the noise.
+            </div>
+          </div>
+          <button
+            onClick={goCompare}
+            style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:600, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8, padding:'7px 14px', background:C.a1card, cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}
+          >
+            View all {COMPARE_ARTICLES.length} comparisons <ArrowRight size={13} />
+          </button>
+        </div>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(280px, 1fr))', gap:14 }}>
+          {COMPARE_ARTICLES.slice(0, 5).map((article, i) => (
+            <div
+              key={article.slug}
+              onClick={() => navigate(`/compare/${article.slug}`)}
+              style={{ background:C.surf, border:`1.5px solid var(--brd-xs)`, borderRadius:14, padding:'16px 18px', cursor:'pointer', transition:'box-shadow .15s, transform .15s' }}
+              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 20px ${C.a1}22`; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; }}
+            >
+              <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:8 }}>
+                <div style={{ width:28, height:28, borderRadius:8, background:C.a1card, border:`1px solid ${C.a1brd}`, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+                  <Scale size={13} color={C.a1} />
+                </div>
+                <span style={{ fontSize:10, fontWeight:700, color:C.a1, letterSpacing:'0.07em', textTransform:'uppercase' as const }}>Compare</span>
+              </div>
+              <div style={{ fontSize:14, fontWeight:700, color:C.txt, lineHeight:1.4, marginBottom:6 }}>
+                {article.keyword.split(' vs ').join(' vs ')}
+              </div>
+              <div style={{ fontSize:12, color:C.mut, lineHeight:1.5 }}>
+                {article.quickAnswer.slice(0, 90)}…
+              </div>
+              <div style={{ display:'flex', alignItems:'center', gap:4, marginTop:10, fontSize:12, fontWeight:600, color:C.a1 }}>
+                Read comparison <ArrowRight size={11} />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
