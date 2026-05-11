@@ -127,4 +127,27 @@
   <url><loc>https://ainexustools.online/blog/best-invideo-alternatives-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-05</lastmod>
     <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best InVideo AI Alternatives 2026</image:title></image:image>
   </url>
+
+  <!-- W1-T1 FIX: 7 blog posts that existed in codebase but were missing from sitemap -->
+  <url><loc>https://ainexustools.online/blog/jasper-ai-alternatives/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best Jasper AI Alternatives 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/chatgpt-alternatives-free-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best Free ChatGPT Alternatives 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-ai-coding-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Coding Tools 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-ai-logo-makers-free-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best Free AI Logo Makers 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-ai-marketing-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Marketing Tools 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/ai-tools-for-teachers-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Tools for Teachers 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-midjourney-alternatives-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best Midjourney Alternatives 2026</image:title></image:image>
+  </url>
 </urlset>

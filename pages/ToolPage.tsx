@@ -339,17 +339,22 @@ const TOOL_CONTENT: Record<string, {
 
 const TODAY = new Date().toISOString().split('T')[0];
 
-// ── Map each tool slug to its compare article slugs (Task 4 — internal linking) ──
+// ── Map each tool slug to its compare article slugs (W1-T3 — internal linking audit fix) ──
+// Updated: added missing compare links per the audit report recommendations.
+// Each tool now links to ALL relevant compare pages, not just the first one found.
 const TOOL_COMPARE_MAP: Record<string, string[]> = {
   rytr:          ['rytr-vs-writesonic'],
-  writesonic:    ['rytr-vs-writesonic'],
-  grammarly:     ['grammarly-vs-quillbot'],
+  writesonic:    ['grammarly-vs-writesonic', 'rytr-vs-writesonic'],
+  grammarly:     ['grammarly-vs-writesonic', 'grammarly-vs-quillbot'],
   quillbot:      ['grammarly-vs-quillbot'],
   ocoya:         ['ocoya-vs-buffer-vs-hootsuite'],
   podcastle:     ['podcastle-vs-descript'],
+  descript:      ['podcastle-vs-descript'],
+  'murf-ai':     ['murf-ai-vs-elevenlabs'],
+  elevenlabs:    ['murf-ai-vs-elevenlabs'],
   'leonardo-ai': ['leonardo-vs-midjourney'],
   replit:        ['replit-vs-github-copilot'],
-  taskade:       ['taskade-vs-notion'],
+  taskade:       ['taskade-vs-notion', 'taskade-vs-asana'],
 };
 
 interface ToolPageProps { tool: Tool; navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }

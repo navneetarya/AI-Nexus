@@ -28,6 +28,15 @@ const ROOT   = path.join(__dir, '..');
 const DIST   = path.join(ROOT, 'dist');
 const SITE   = 'https://ainexustools.online';
 const AUTHOR = 'Navneet Arya';
+// W1-T6 FIX: sameAs array — links "Navneet Arya" entity across Google's knowledge graph.
+// Used in every Person schema in this file so AI engines (Perplexity, ChatGPT, Google AIO)
+// can reliably associate the author name with ainexustools.online.
+const AUTHOR_SAME_AS = [
+  'https://www.linkedin.com/in/navneetarya/',
+  'https://twitter.com/ainexustools',
+  'https://ainexustools.online/about/',
+  'https://github.com/navneetarya',
+];
 const YEAR   = 2026;
 const TODAY  = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
@@ -605,6 +614,7 @@ function reviewSchema(tool, canonical) {
       '@type': 'Person',
       name: AUTHOR,
       url: `${SITE}/about`,
+      sameAs: AUTHOR_SAME_AS,
     },
     publisher: {
       '@type': 'Organization',
@@ -675,6 +685,7 @@ function articleSchema({ title, description, canonical, wordCount, imageUrl, dat
       '@type': 'Person',
       name: AUTHOR,
       url: `${SITE}/about`,
+      sameAs: AUTHOR_SAME_AS,
     },
     publisher: {
       '@type': 'Organization',
@@ -1232,7 +1243,7 @@ console.log('\nStatic pages:');
         name: AUTHOR,
         url: canonical,
         image: `${SITE}/author-photo.jpg`,
-        sameAs: ['https://www.linkedin.com/in/navneetarya/'],
+        sameAs: AUTHOR_SAME_AS,
         knowsAbout: ['Artificial Intelligence', 'AI Writing Tools', 'Podcast Software', 'Social Media Automation', 'AI Productivity Tools'],
         worksFor: { '@type': 'Organization', name: 'AI Nexus', url: SITE },
       },
@@ -1322,7 +1333,7 @@ for (const post of BLOG_POSTS) {
       // FIX 2 (SEO-High): Added wordCount + image fields
       wordCount: post.wordCount || 1800,
       image: { '@type': 'ImageObject', url: `${SITE}/og-image.png`, width: 1200, height: 630 },
-      author: { '@type': 'Person', name: AUTHOR, url: `${SITE}/about` },
+      author: { '@type': 'Person', name: AUTHOR, url: `${SITE}/about`, sameAs: AUTHOR_SAME_AS },
       publisher: { '@type': 'Organization', name: 'AI Nexus', url: SITE },
       inLanguage: 'en-US',
       mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
