@@ -10,13 +10,13 @@ const post: BlogPost = {
   slug: 'ai-tools-for-students-free-2026',
   title: 'Best Free AI Tools for Students 2026 — Essays, Research, Coding & Presentations',
   seoTitle: 'Best Free AI Tools for Students 2026',
-  metaDescription: 'The best free AI tools for students in 2026 — tested for essays, research, paraphrasing, and presentations. Every tool has a genuinely useful free plan.',
+  metaDescription: '5 AI tools every student should bookmark — all permanently free, no credit card needed. Compared across essays, research, paraphrasing, coding, and presentations.',
   datePublished: '2026-05-04',
-  dateModified: '2026-05-06',
+  dateModified: '2026-05-10',
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '9 min read',
-  excerpt: 'Every tool in this list has a permanent free plan that covers real student workloads — not a 7-day trial that expires before your next deadline. Tested across essays, research summaries, paraphrasing, coding assignments, and presentation slides.',
+  excerpt: 'Every tool in this list has a permanent free plan that covers real student workloads — not a 7-day trial that expires before your next deadline. Compared across essays, research summaries, paraphrasing, coding assignments, and presentation slides.',
   faqs: [
     {
       q: 'What is the best free AI tool for students writing essays?',
@@ -41,7 +41,7 @@ const post: BlogPost = {
   ],
   content: `
 <h2>Why This List Is Different</h2>
-<p>Most "AI tools for students" lists recommend tools with 7-day free trials that expire before your next assignment deadline. Every tool in this guide has a permanent free plan that covers real, ongoing student workloads. I have tested all of them personally across the use cases that actually come up in university life: last-minute essay drafts, long research paper summaries, citation-heavy paraphrasing, coding bugs at midnight, and tight presentation deadlines.</p>
+<p>Most "AI tools for students" lists recommend tools with 7-day free trials that expire before your next assignment deadline. Every tool in this guide has a permanent free plan that covers real, ongoing student workloads. Each has been independently researched across the use cases that actually come up in university life: last-minute essay drafts, long research paper summaries, citation-heavy paraphrasing, coding bugs at midnight, and tight presentation deadlines.</p>
 <p>This updated guide covers five task types — writing, research, presentations, coding, and studying — with a comparison table showing which tool wins for each.</p>
 
 <h2>Top 5 AI Tools for Students — By Task Type</h2>

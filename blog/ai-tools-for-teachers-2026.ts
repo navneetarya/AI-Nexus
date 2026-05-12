@@ -8,13 +8,13 @@ const post: BlogPost = {
   slug: 'ai-tools-for-teachers-2026',
   title: 'Best AI Tools for Teachers in 2026 — Save Hours Every Week',
   seoTitle: 'Best AI Tools for Teachers 2026 — Tested',
-  metaDescription: 'I tested Gamma, Grammarly, Notion AI, and Rytr for real teaching tasks. Here are the best AI tools for teachers to save time in 2026.',
+  metaDescription: 'Gamma, Grammarly, Notion AI, and Rytr compared for real teaching tasks — lesson plans, presentations, feedback, and worksheets. Here is what actually saves time in 2026.',
   datePublished: '2026-05-05',
   dateModified: '2026-05-08',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',
-  excerpt: 'Teachers are drowning in admin work. I tested four AI tools on real teaching tasks — lesson planning, presentations, feedback, and worksheet creation — to find which ones actually save time.',
+  excerpt: 'Teachers are drowning in admin work. Four AI tools compared across real teaching tasks — lesson planning, presentations, feedback, and worksheet creation — to find which ones actually save time.',
   faqs: [
     {
       q: 'What is the best AI tool for teachers in 2026?',
@@ -40,7 +40,7 @@ const post: BlogPost = {
   content: `
 <h2>Why Teachers Need AI Tools (But Not the Ones You Think)</h2>
 <p>When people talk about AI in education, they usually mean student-facing tools — chatbots that answer questions, adaptive learning platforms, automated tutoring. But the teachers I've spoken to don't need another student tool. They need tools that reduce the 10-15 hours per week they spend on admin: creating presentations, writing feedback, planning lessons, and generating worksheets.</p>
-<p>I tested four AI tools specifically on teaching tasks — not generic content creation, but the actual work teachers do. I created lesson plans, built slide decks, wrote student feedback, and generated practice worksheets. Here's what saved real time and what was gimmicky.</p>
+<p>Every tool in this guide was independently researched across real teaching tasks — not generic content creation demos, but the actual work: lesson plans, slide decks, student feedback, and practice worksheets. Here is what saves real time and what is gimmicky.</p>
 
 <h2>Quick Comparison: AI Tools for Teachers</h2>
 <div style="overflow-x:auto;margin:24px 0;">

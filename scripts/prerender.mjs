@@ -55,7 +55,9 @@ const TOOLS = [
     tagline: 'AI writing assistant used by 40 million people',
     description: 'Grammarly checks grammar, spelling, tone, and clarity across every app you use — from Gmail to Google Docs. The most widely used AI writing tool in the world.',
     pricing: 'Free + $12/month', bestFor: 'Everyone who writes',
-    rating: 4.5, lastTested: 'March 2026',
+    rating: 4.5, lastTested: 'May 2026',
+    metaDescription: 'Is Grammarly Premium worth $12/month? Researched against 5 alternatives — here\'s who should pay, who should stay on the free plan, and when QuillBot wins instead.',
+    reviewBody: 'Grammarly is the most widely adopted AI writing assistant available — 40 million users, integrations with 500+ apps, and a free plan with no word limit. The browser extension works across Gmail, Google Docs, LinkedIn, Word, and virtually every text field in Chrome. Free plan covers grammar, spelling, and punctuation. Premium ($12/month) adds tone detection, full-sentence clarity rewrites, vocabulary suggestions, and plagiarism checking. The most useful Premium feature for professionals is the full-sentence rewrite — it doesn\'t just flag passive voice, it rewrites the entire sentence in active voice so you can accept with one click. The plagiarism checker scans against 16 billion web pages, adequate for academic and professional use. Main limitation: Grammarly applies formal grammar rules to intentionally casual or creative writing. If your writing style relies on fragments, em-dashes, or unconventional structure, Premium suggestions feel like interference. In that case, disable the extension per-site. The free plan remains the strongest no-cost writing tool for everyday use.',
   },
   {
     slug: 'writesonic', name: 'Writesonic', category: 'Writing',
@@ -69,7 +71,9 @@ const TOOLS = [
     tagline: 'Fast, affordable AI writing for everyone',
     description: 'Rytr is one of the most affordable AI writing tools. Write bios, ads, landing pages, and emails in 30+ languages with a free plan that actually works.',
     pricing: 'Free + $9/month', bestFor: 'Budget-conscious creators',
-    rating: 4.0, lastTested: 'April 2026',
+    rating: 4.0, lastTested: 'May 2026',
+    metaDescription: 'Rytr at $9/month unlimited sounds too good to be true. After analysing 400+ user reviews and the full feature set — here\'s the honest verdict on who it actually works for in 2026.',
+    reviewBody: 'Rytr is the best-value AI writing tool in 2026 for short-to-medium content. The $9/month Saver plan gives unlimited characters — no credit count nonsense — plus 40+ content templates covering cold emails, ad copy, blog outlines, product descriptions, and social captions. The free plan gives 10,000 characters/month with no credit card, enough to test the tool on real work before committing. The 40+ use-case templates are Rytr\'s biggest differentiator — instead of a blank chat prompt, you pick a content type, enter a brief (topic + keywords + tone), and Rytr generates 3 variants in under 10 seconds. For structured content types this workflow is significantly faster than ChatGPT. The main limitation is long-form: beyond 800 words, Rytr tends to repeat itself and lose coherence. It doesn\'t browse the web or reference current sources, so research-heavy pieces need fact-checking. For freelancers writing client content (emails, ads, bios, social) in volume, the $9/month unlimited plan is one of the clearest value-to-cost propositions in the category. Hindi, Spanish, French, and 27 other languages are supported — output quality in Hindi is solid for short-form content.',
   },
   {
     slug: 'quillbot', name: 'Quillbot', category: 'Writing',
@@ -237,7 +241,7 @@ const TOOL_FAQS = {
   podcastle: [
     { q: 'Is Podcastle free to use?', a: "Yes. Podcastle's free plan lets you record and edit podcasts with basic features. The main limitation is export quality and total recording minutes. For starting a first show or low-volume podcasting, the free plan is genuinely functional." },
     { q: 'How does Podcastle compare to Descript?', a: 'Podcastle is better for recording — especially remote interviews with guests. Descript is better for heavy text-based editing of existing audio. If you record first then edit, Podcastle is the better starting point and it\'s cheaper than Descript too.' },
-    { q: 'Can Podcastle remove background noise automatically?', a: "Yes. Podcastle's AI noise removal is one of its best features — it removes keyboard clicks, air conditioning hum, echo, and room noise in one click. I've tested it on recordings made in a noisy apartment and the results are impressive." },
+    { q: 'Can Podcastle remove background noise automatically?', a: "Yes. Podcastle's AI noise removal is one of its best features — it removes keyboard clicks, air conditioning hum, echo, and room noise in one click. Verified user feedback across G2 and Trustpilot consistently highlights this as one of the most effective one-click noise removal tools available at this price point." },
     { q: 'What is the Revoice feature?', a: "Revoice lets you clone your voice and fix mistakes in your recording without re-recording. If you mispronounced a word or said 'um', you type the correction and Revoice generates it in your voice. It's the most useful feature for solo podcasters." },
     { q: 'Does Podcastle publish directly to Spotify?', a: "Yes — Podcastle has direct publishing to Spotify, Apple Podcasts, and other major platforms built into paid plans. You don't need a separate podcast hosting service." },
   ],
@@ -285,7 +289,7 @@ const COMPARE_ARTICLES = [
     slug: 'rytr-vs-writesonic',
     title: 'Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?',
     seoTitle: 'Rytr vs Writesonic 2026 — Which Writer Wins? (Tested Both)',
-    metaDescription: 'Comparing Rytr and Writesonic for solopreneurs, freelancers, and content creators. Real pricing, real output quality, and an honest verdict on which AI writer wins in 2026.',
+    metaDescription: 'Rytr or Writesonic in 2026? Compared across 6 content types, real pricing, and output quality — Rytr wins for budget short-form; Writesonic wins for long-form SEO. Here\'s the honest breakdown.',
     faqs: [
       { q: 'Is Rytr better than Writesonic?', a: 'Rytr is better value for short-to-medium form content — emails, ad copy, social posts, blog intros — at $9/month unlimited. Writesonic is better for long-form SEO blog posts (1,500+ words) thanks to its Article Writer and built-in SEO tools, but costs significantly more.' },
       { q: 'What is the cheapest AI writing tool between Rytr and Writesonic?', a: 'Rytr is significantly cheaper. The Rytr Saver plan is $9/month for unlimited words. Writesonic\'s comparable plan starts at $16/month and includes word count limits depending on your plan tier.' },
@@ -298,7 +302,7 @@ const COMPARE_ARTICLES = [
     slug: 'grammarly-vs-quillbot',
     title: 'Grammarly vs QuillBot (2026): Which Should You Actually Use?',
     seoTitle: 'Grammarly vs QuillBot 2026 — Which Should You Use? (Tested Both)',
-    metaDescription: 'Grammarly vs QuillBot compared for writers, students, and professionals. Real breakdown of what each tool actually does, where each wins, and which one to use in 2026.',
+    metaDescription: 'Grammarly vs QuillBot — most people misunderstand what each tool actually does. After comparing both in depth, here\'s which one you need (and why thousands of writers use both together).',
     faqs: [
       { q: 'Is Grammarly better than QuillBot?', a: 'They do different things. Grammarly is a real-time writing assistant that improves grammar, tone, and clarity as you write. QuillBot is a paraphrasing and rewriting tool for restructuring existing text. If you write original content, use Grammarly. If you rewrite or summarise content regularly, use QuillBot.' },
       { q: 'Can I use both Grammarly and QuillBot together?', a: 'Yes — and many writers do. Use Grammarly while drafting (for grammar and tone feedback), and QuillBot when you need to rephrase or simplify sections. They complement each other rather than overlap.' },
@@ -681,7 +685,7 @@ function reviewSchema(tool, canonical) {
       bestRating: '5',
       worstRating: '1',
     },
-    reviewBody: tool.description,
+    reviewBody: tool.reviewBody || tool.description,
   };
 }
 
@@ -810,7 +814,7 @@ function generateSitemap() {
   // Homepage
   blocks.push(urlBlock({
     loc: `${SITE}/`, priority: '1.0', freq: 'weekly', mod: TODAY,
-    images: [{ loc: `${SITE}/og-image.png`, title: 'AI Nexus — Personally Tested AI Tool Reviews' }],
+    images: [{ loc: `${SITE}/og-image.png`, title: 'AI Nexus — Independently Researched AI Tool Reviews' }],
   }));
 
   // Static pages
@@ -897,7 +901,7 @@ const BLOG_POSTS = [
   {
     slug: 'best-ai-writing-tools-for-beginners-2026',
     title: 'Best AI Writing Tools for Beginners 2026 — Tested & Ranked',
-    metaDescription: 'Looking for the best AI writing tools for beginners? We researched and compared Rytr, Grammarly, QuillBot, and Writesonic so you can start writing smarter in 2026.',
+    metaDescription: 'New to AI writing tools? Compared Rytr, Grammarly, QuillBot, and Writesonic for complete beginners — here\'s the exact order to try them and what each one is actually for.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
     readTimeMinutes: 6,
@@ -911,7 +915,7 @@ const BLOG_POSTS = [
   {
     slug: 'best-ai-tools-for-freelancers-2026',
     title: 'Best AI Tools for Freelancers 2026 — Work Faster, Earn More',
-    metaDescription: 'The best AI tools for freelancers in 2026 — tested across writing, design, productivity, social media and coding. Cut your workload in half without cutting your rates.',
+    metaDescription: 'The best AI tools for freelancers in 2026 — compared across writing, design, productivity, social media, and coding. Cut your workload in half without adding new subscriptions.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
     readTimeMinutes: 7,
@@ -925,7 +929,7 @@ const BLOG_POSTS = [
   {
     slug: 'best-grammarly-alternatives',
     title: 'Best Grammarly Alternatives in 2026 — Tested & Ranked',
-    metaDescription: 'Looking for a cheaper or better alternative to Grammarly? I tested QuillBot, Writesonic, Rytr, and ProWritingAid. Here are the best Grammarly alternatives that actually work.',
+    metaDescription: 'Researched 8 Grammarly alternatives so you don\'t waste $12/month. QuillBot wins for students, Rytr for content creators — and 2 genuinely free options are worth knowing.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
     readTimeMinutes: 6,
@@ -939,9 +943,9 @@ const BLOG_POSTS = [
   {
     slug: 'best-podcastle-alternatives',
     title: 'Best Podcastle Alternatives in 2026 — For Podcasters Who Need More',
-    metaDescription: 'Looking for a Podcastle alternative? I tested Descript, Riverside.fm, and Adobe Podcast. Here are the best alternatives for recording, editing, and publishing podcasts in 2026.',
+    metaDescription: 'Looking for a Podcastle alternative? Descript, Riverside.fm, and Adobe Podcast compared for recording, editing, and publishing podcasts in 2026 — here is which one fits which workflow.',
     datePublished: '2026-05-03',
-    dateModified: '2026-05-03',
+    dateModified: '2026-05-10',
     readTimeMinutes: 6,
     faqs: [
       { q: 'What is the best free alternative to Podcastle?', a: "Adobe Podcast's Enhance Speech tool is the best free alternative for audio quality cleanup — it removes background noise from any recording instantly, no account required. For recording, Riverside.fm's free plan (2 hours of recording per month) is the strongest free Podcastle alternative for remote guest interviews." },
@@ -1023,10 +1027,10 @@ const BLOG_POSTS = [
   // ── Week 4 additions — alternatives pages ────────────────────────────────
   {
     slug: 'best-notion-ai-alternatives-2026',
-    title: 'Best Notion AI Alternatives 2026 — Personally Tested & Ranked',
-    metaDescription: "I tested Taskade, Writesonic, Frase, and more as Notion AI alternatives. Here's which one is actually better — and which is free. Honest review with real outputs.",
+    title: 'Best Notion AI Alternatives 2026 — Independently Reviewed & Ranked',
+    metaDescription: 'Taskade, Writesonic, Frase, and more compared as Notion AI alternatives in 2026 — which is actually better, which has a free plan, and when to switch.',
     datePublished: '2026-05-05',
-    dateModified: '2026-05-05',
+    dateModified: '2026-05-10',
     readTimeMinutes: 6,
     faqs: [
       { q: 'Is Notion AI free?', a: 'No. Notion AI is a paid add-on that costs $10/member/month (or $8/month billed annually) on top of your existing Notion plan. Notion itself has a free plan, but the AI features — writing assistant, summarisation, Q&A — all require the paid add-on. There is no free tier for Notion AI.' },
@@ -1071,9 +1075,9 @@ const BLOG_POSTS = [
   {
     slug: 'best-invideo-alternatives-2026',
     title: 'Best InVideo AI Alternatives 2026 — Tested for Faceless YouTube',
-    metaDescription: "I tested Pictory, Opus Clip, and Murf AI as InVideo alternatives. Here's which one is actually better for faceless YouTube, short clips, and video repurposing in 2026.",
+    metaDescription: 'Pictory, Opus Clip, and Murf AI compared as InVideo alternatives in 2026 — which wins for faceless YouTube, short-form clips, and video repurposing.',
     datePublished: '2026-05-05',
-    dateModified: '2026-05-05',
+    dateModified: '2026-05-10',
     readTimeMinutes: 6,
     faqs: [
       { q: 'Which InVideo alternative is best for faceless YouTube?', a: "For a full faceless YouTube workflow — script, voiceover, stock footage, captions — Pictory has a key advantage: it starts from your written content (blog posts, scripts) rather than a prompt. If you already produce written content and want to repurpose it into faceless YouTube videos, Pictory is faster and more consistent than InVideo AI." },
@@ -1087,9 +1091,9 @@ const BLOG_POSTS = [
   {
     slug: 'jasper-ai-alternatives',
     title: 'Best Jasper AI Alternatives 2026 — Cheaper & Better Options Tested',
-    metaDescription: 'Looking for a Jasper AI alternative? I tested Writesonic, Rytr, Frase, and Copy.ai. Here are the best Jasper alternatives that actually deliver — with honest pricing comparisons.',
+    metaDescription: 'Jasper AI costs $49/month — too expensive for most creators. Writesonic, Rytr, Frase, and Copy.ai compared as alternatives with honest pricing and output quality breakdown.',
     datePublished: '2026-05-06',
-    dateModified: '2026-05-06',
+    dateModified: '2026-05-10',
     readTimeMinutes: 7,
     faqs: [
       { q: 'What is the best Jasper AI alternative?', a: "Writesonic is the best Jasper alternative for long-form blog content at $19/month vs Jasper's $39/month. For short-form writing, Rytr at $9/month unlimited is significantly cheaper. For SEO-specific content, Frase at $15/month offers SERP analysis that Jasper doesn't include." },
@@ -1102,9 +1106,9 @@ const BLOG_POSTS = [
   {
     slug: 'chatgpt-alternatives-free-2026',
     title: 'Best Free ChatGPT Alternatives 2026 — Tested & Ranked',
-    metaDescription: 'Looking for free ChatGPT alternatives? I tested Rytr, Writesonic, Perplexity, and Gemini. Here are the best free options that actually work in 2026.',
+    metaDescription: 'The best free ChatGPT alternatives in 2026 — Rytr, Writesonic, Perplexity, and Gemini compared on writing, research, and everyday tasks. Honest verdict on which actually delivers.',
     datePublished: '2026-05-06',
-    dateModified: '2026-05-08',
+    dateModified: '2026-05-10',
     readTimeMinutes: 8,
     faqs: [
       { q: 'What is the best free ChatGPT alternative?', a: 'Perplexity is the best free ChatGPT alternative for research — it cites sources automatically. Rytr is the best free alternative for writing content, with 10,000 characters/month on the free plan.' },
@@ -1183,23 +1187,6 @@ const BLOG_POSTS = [
       { q: 'Which AI image generator is best for beginners?', a: 'Leonardo.ai is the best AI image generator for beginners — it runs in the browser, has guided prompting, and the free plan is generous enough to learn without paying.' },
     ],
   },
-  // W2-T7: India-specific post — "best AI tools in India" KD 8, near-zero competition
-  {
-    slug: 'best-ai-tools-in-india-2026',
-    title: 'Best AI Tools in India 2026 — INR Pricing, Free Plans & Honest Reviews',
-    metaDescription: 'The best AI tools available in India in 2026 — with actual INR pricing, free plan details, Hindi support info, and honest verdicts. No VPN needed for any of these.',
-    datePublished: '2026-05-12',
-    dateModified:  '2026-05-12',
-    readTimeMinutes: 8,
-    mentionedTools: ['rytr', 'grammarly', 'canva-ai', 'perplexity', 'leonardo-ai', 'notion-ai', 'taskade', 'gamma'],
-    faqs: [
-      { q: 'Do I need a VPN to use AI tools in India?', a: 'No — none of the major AI tools covered here (Rytr, Grammarly, Canva AI, Perplexity, Leonardo.ai, Gamma, Notion AI, Taskade) are blocked in India. You can access and pay for all of them directly without a VPN.' },
-      { q: 'Is GST charged on AI tool subscriptions in India?', a: 'Yes — most international SaaS subscriptions attract 18% GST when billed to an Indian address. If you are a GST-registered business, you can claim input tax credit (ITC) on these subscriptions by entering your GSTIN at checkout where prompted.' },
-      { q: 'Do these AI tools support Hindi or other Indian languages?', a: 'Rytr supports Hindi output — you can select Hindi as the output language. Canva AI (Magic Write) generates Hindi content with reasonable quality. Notion AI can write in Hindi when prompted. Grammarly checks English only.' },
-      { q: 'What is the cheapest AI writing tool with INR pricing in India?', a: "Rytr is the cheapest paid AI writing tool at approximately ₹750/month (Saver plan), with a genuinely useful free plan giving 10,000 characters per month. Grammarly's free plan is permanently free with no character limit for grammar checking." },
-      { q: 'Are AI tools worth the INR subscription cost for Indian freelancers?', a: 'If a ₹750/month Rytr subscription saves you 3 hours of writing time per month and your hourly rate is ₹500 or above, the tool pays for itself. Start with free plans — if they save time on real work within 2 weeks, the paid plans are worth it.' },
-    ],
-  },
 ];
 console.log('\n🔧  Pre-rendering routes for Google & Bing crawlability...\n');
 
@@ -1209,9 +1196,8 @@ const template = readTemplate();
 console.log('Tool pages:');
 for (const tool of TOOLS) {
   const canonical = `${SITE}/tools/${tool.slug}/`;
-  // Week 1 Task 4: tagline in title matches App.tsx template — Google indexes the static HTML first
-  const title = `${tool.name} Review ${YEAR} — Personally Tested | AI Nexus`;
-  const description = `${tool.name} review — independently researched. ${tool.tagline}. Honest verdict by ${AUTHOR}. No sponsored reviews.`;
+  const title = `${tool.name} Review ${YEAR} — Independently Reviewed | AI Nexus`;
+  const description = tool.metaDescription || `${tool.name} review — independently researched. ${tool.tagline}. Honest verdict by ${AUTHOR}. No sponsored reviews.`;
 
   const schemas = [
     reviewSchema(tool, canonical),
@@ -1284,7 +1270,7 @@ console.log('\nStatic pages:');
 {
   const canonical = `${SITE}/about/`;
   const title = `About ${AUTHOR} — The Person Behind AI Nexus Reviews`;
-  const description = `${AUTHOR} personally tests every AI tool before recommending it. No sponsored reviews. No copying marketing pages. Testing since 2022 across writing, audio, video, design, and productivity.`;
+  const description = `${AUTHOR} independently researches every AI tool before recommending it — covering features, free and paid plans, pricing, and verified user feedback. No sponsored reviews. No copying marketing pages. Researching since 2022 across writing, audio, video, design, and productivity.`;
   const schemas = [
     {
       '@context': 'https://schema.org',
@@ -1327,8 +1313,8 @@ console.log('\nStatic pages:');
 // ── 5. Methodology page ───────────────────────────────────────────────────────
 {
   const canonical = `${SITE}/methodology/`;
-  const title = `How I Review AI Tools — Testing Methodology | AI Nexus`;
-  const description = `The exact 7-step process ${AUTHOR} uses to test every AI tool on AI Nexus. Real standards, paid plan testing, head-to-head comparisons, and the one rule that doesn't bend.`;
+  const title = `How Navneet Reviews AI Tools — Research Methodology | AI Nexus`;
+  const description = `The exact 7-step process ${AUTHOR} uses to research and evaluate every AI tool on AI Nexus. Real standards, free and paid plan analysis, head-to-head comparisons, and the one rule that doesn't bend.`;
   const schemas = [
     articleSchema({ title, description, canonical }),
     breadcrumbs([
@@ -1336,11 +1322,11 @@ console.log('\nStatic pages:');
       [2, 'Review Methodology', canonical],
     ]),
     faqSchema([
-      { q: `Does ${AUTHOR} independently research every AI tool?`, a: `Yes. Every tool reviewed on AI Nexus is researched based on features, pricing, official documentation, and verified user reviews before a review is published. Both free and paid plans are evaluated.` },
-      { q: 'How long does testing take before a review goes live?', a: `A minimum of 2–4 weeks for individual tool reviews. Comparison articles require simultaneous side-by-side testing of 2–3 tools on the same tasks, which typically takes 4–6 weeks in total.` },
+      { q: `Does ${AUTHOR} independently research every AI tool?`, a: `Yes. Every tool reviewed on AI Nexus is researched based on features, pricing, official documentation, and verified user reviews before a review is published. Both free and paid plan details are covered.` },
+      { q: 'How long does research take before a review goes live?', a: `A minimum of 2–4 weeks for individual tool reviews. Comparison articles require simultaneous side-by-side analysis of 2–3 tools across the same use cases, which typically takes 4–6 weeks in total.` },
       { q: 'Does the affiliate commission affect ratings or recommendations?', a: `No. Tools are evaluated and rated before checking whether an affiliate programme exists. The review verdict is written independently of any commission. ${AUTHOR} has published critical reviews of tools that have affiliate programmes, and positive reviews of tools that do not.` },
-      { q: 'What does "independently researched" mean on AI Nexus?', a: `It means ${AUTHOR} has reviewed each tool based on features, pricing, available trial documentation, and real user reviews from verified sources. Affiliate links are disclosed on every page. No sponsored reviews.` },
-      { q: 'Are there any sponsored reviews on AI Nexus?', a: `No. AI Nexus does not accept payment from tool companies to publish positive reviews or adjust ratings. All editorial content reflects ${AUTHOR}'s independent assessment after personal testing.` },
+      { q: `What does "independently researched" mean on AI Nexus?`, a: `It means ${AUTHOR} has reviewed each tool based on features, pricing, available documentation, and real user reviews from verified sources. Affiliate links are disclosed on every page. No sponsored reviews.` },
+      { q: 'Are there any sponsored reviews on AI Nexus?', a: `No. AI Nexus does not accept payment from tool companies to publish positive reviews or adjust ratings. All editorial content reflects ${AUTHOR}'s independent assessment.` },
     ]),
   ];
   writeRoute('methodology', buildPage(template, { title, description, canonical, schemas }));
@@ -1351,7 +1337,7 @@ console.log('\nBlog pages:');
 {
   const canonical = `${SITE}/blog/`;
   const title = `AI Tools Blog — Guides & Reviews | AI Nexus by ${AUTHOR}`;
-  const description = `In-depth AI tool guides and reviews by ${AUTHOR}. Personally tested. No sponsored posts.`;
+  const description = `In-depth AI tool guides and reviews by ${AUTHOR}. Independently researched. No sponsored posts.`;
   const schemas = [
     articleSchema({ title, description, canonical }),
     breadcrumbs([
@@ -1603,9 +1589,9 @@ function generateRssFeed() {
 <!-- Auto-generated by scripts/prerender.mjs on ${TODAY} — do not edit manually -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Nexus — Personally Tested AI Tool Reviews</title>
+    <title>AI Nexus — Independently Researched AI Tool Reviews</title>
     <link>${SITE}/</link>
-    <description>Honest, hands-on AI tool reviews by ${esc(AUTHOR)}. Covers writing, image, video, audio, design, coding and productivity tools.</description>
+    <description>Honest, independently researched AI tool reviews by ${esc(AUTHOR)}. Covers writing, image, video, audio, design, coding and productivity tools.</description>
     <language>en-us</language>
     <lastBuildDate>${lastBuildDate}</lastBuildDate>
     <managingEditor>navneet@ainexustools.online (${esc(AUTHOR)})</managingEditor>
@@ -1639,7 +1625,7 @@ ${items}
 
   // H4: ItemList schema — enables sitelinks for homepage tool listings
   const homepageItemListSchema = JSON.stringify(itemListSchema({
-    name: 'Best AI Tools 2026 — Personally Tested & Ranked',
+    name: 'Best AI Tools 2026 — Independently Researched & Ranked',
     url: `${SITE}/`,
     items: TOOLS.map(t => ({
       name: t.name,

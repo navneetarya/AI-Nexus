@@ -8,13 +8,13 @@ const post: BlogPost = {
   slug: 'best-midjourney-alternatives-2026',
   title: 'Best Midjourney Alternatives in 2026 — Free & Paid Options Tested',
   seoTitle: 'Best Midjourney Alternatives 2026 — Tested',
-  metaDescription: 'I tested Leonardo.ai, Stable Diffusion, DALL-E, and Adobe Firefly as Midjourney alternatives. Here are the best options for every budget in 2026.',
+  metaDescription: 'Leonardo.ai, Stable Diffusion, DALL-E, and Adobe Firefly compared as Midjourney alternatives in 2026 — which produces comparable quality at a lower price, and which has the best free plan.',
   datePublished: '2026-05-04',
   dateModified: '2026-05-08',
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '9 min read',
-  excerpt: 'Midjourney is brilliant but expensive and Discord-only. I tested four alternatives on the same prompts to find which ones produce comparable quality — with better access and pricing.',
+  excerpt: 'Midjourney is brilliant but expensive and Discord-only. Four alternatives compared on the same prompts — which produces comparable quality with better access and pricing in 2026.',
   faqs: [
     {
       q: 'What is the best free alternative to Midjourney?',

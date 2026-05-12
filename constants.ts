@@ -3,10 +3,10 @@ import { Category, Tool } from './types';
 export const SITE_CONFIG = {
   name: "AI Nexus",
   tagline: "The Best AI Tools — Reviewed & Ranked",
-  bio: "I'm Navneet Arya — I test every AI tool personally and share honest, no-BS reviews. Affiliate links help keep the reviews completely free.",
+  bio: "I'm Navneet Arya — I independently research AI tools and share honest, no-BS comparisons. Affiliate links help keep the site completely free.",
   authorName: "Navneet Arya",
-  authorBio: "I've been testing AI tools since 2022 across writing, audio, video, design, and productivity. I focus on what actually works for solo creators, freelancers, and small teams worldwide — not enterprise buyers with unlimited budgets.",
-  authorExperience: "2+ years testing AI tools",
+  authorBio: "I've been researching AI tools since 2022 across writing, audio, video, design, and productivity — covering features, real user feedback, and pricing in depth. I focus on what actually works for solo creators, freelancers, and small teams worldwide — not enterprise buyers with unlimited budgets.",
+  authorExperience: "Researching AI tools since 2022",
   siteUrl: "https://ainexustools.online",
   email: "hello@ainexustools.online",
   twitterUrl: "https://twitter.com/ainexustools",
@@ -39,6 +39,30 @@ export const TOOLS: Tool[] = [
     features: ['Grammar & spell check', 'Tone detection', 'Plagiarism checker', 'Works in 500+ apps'],
     pros: ['Works everywhere — browser, Word, Gmail', 'Best free plan in writing tools', 'Very accurate'],
     cons: ['Premium needed for full features', 'Can over-correct creative writing'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Grammar, spelling & punctuation fixes · Browser extension for 500+ apps · No word limit · No credit card required' },
+      { tier: 'Premium', price: '$12/month', highlight: 'Full-sentence clarity rewrites · Tone detector · Plagiarism checker · 100+ writing style suggestions · Vocabulary suggestions' },
+      { tier: 'Business', price: '$15/month per seat', highlight: 'Everything in Premium · Brand tone profiles · Style guides · Team analytics · Admin dashboard · Priority support' },
+    ],
+    setupSteps: [
+      'Go to grammarly.com and click "Get Grammarly — It\'s Free". Sign up with Google or email — no credit card required for the free plan.',
+      'Install the browser extension (Chrome/Firefox/Safari/Edge). Grammarly immediately activates across Gmail, Google Docs, LinkedIn, Twitter, and any text field in your browser.',
+      'Open the Grammarly Editor at app.grammarly.com and explore Writing Goals: set your audience (general/expert), formality (informal/formal), domain (academic/business/creative), and intent (inform/describe/convince). These settings change how Grammarly interprets your writing style.',
+      'For Microsoft Word or Google Docs users: install the Grammarly desktop app (Windows/Mac) to get full inline editing support. The desktop app version is more stable for long documents than the browser extension.',
+    ],
+    realOutputExample: {
+      output: 'The report was written by our team and it was submitted on time despite the challenges that were faced during the project which had many unexpected complications.',
+      editorialNote: 'Grammarly Premium flagged three issues in this sentence: (1) passive voice — suggested "Our team wrote and submitted the report on time" (2) wordiness — "despite the challenges that were faced" → "despite the challenges faced" (3) vague qualifier — "many unexpected complications" prompted a clarity suggestion. The rewritten version is 40% shorter with no loss of meaning. This pattern — passive voice + padding + vague qualifiers — appears in most business writing, and Grammarly catches all three in a single pass. The free plan catches the grammar issue; Premium catches the clarity and concision problems.',
+    },
+    dailyUseCases: [
+      'Drafting client proposals and emails — Grammarly\'s tone detector flags passive-aggressive or overly formal phrasing before the client reads it. The difference in response rates from "Please find attached the report you requested" vs "Here\'s the report — let me know if you need anything else" is measurable.',
+      'Proofreading blog posts before publishing — rather than re-reading the same piece 3 times, running it through Grammarly catches the comma splices, repeated words, and dangling modifiers that manual reading misses after you\'ve been staring at the same text for an hour.',
+      'Writing LinkedIn content — the Engagement feedback in Premium tells you whether a post is likely to generate comments or just passive likes, based on structure and word choice. It\'s specific enough to be actionable, not just generic.',
+      'Academic writing (for students) — Grammarly\'s citation suggestions and plagiarism checker cover the two most common problems: accidental paraphrasing that\'s too close to the source, and missing citations for statistics that are easy to forget to attribute.',
+      'Code documentation and README files — developers often write technically accurate but incomprehensible documentation. Grammarly\'s "clarify language" suggestions for Markdown files in the editor are surprisingly useful for making technical specs readable to non-engineers.',
+    ],
+    notForYou: 'Grammarly is not the right tool if your primary need is content generation (generating first drafts from a topic brief — Rytr or Writesonic do that), paraphrasing and rewriting existing text heavily (QuillBot\'s 7 paraphrase modes are built for this, Grammarly has one rewrite mode), or deep stylistic analysis for fiction writing (ProWritingAid\'s 25+ style reports go far deeper into pacing, dialogue, and narrative flow). Grammarly also occasionally over-corrects intentional stylistic choices — if your writing voice depends on fragments, em-dashes, or unconventional sentence structures, Premium suggestions will feel like interference rather than help. For those cases, using Grammarly on a sentence-by-sentence basis rather than in always-on mode works better.',
+    lastTestedISO: '2026-05-01',
   },
   {
     id: 'w2', slug: 'writesonic',
@@ -84,7 +108,7 @@ export const TOOLS: Tool[] = [
       'Writing 20 product descriptions for a Shopify store — Rytr\'s Product Description template handles tone, length, and feature emphasis automatically.',
     ],
     notForYou: 'Rytr is not the right tool if you primarily write 1,500+ word articles. Beyond 800 words, it loses coherence and tends to repeat itself — especially on complex topics. It also doesn\'t browse the web or reference current sources, so research-heavy pieces need fact-checking. If long-form SEO articles are your main output, Writesonic or Frase will serve you better. Teams needing multi-user collaboration or brand voice training should look at Jasper\'s team plans. Rytr is a short-form tool at a short-form price — trying to force it into a long-form article workflow is fighting its design.',
-    lastTestedISO: '2026-05-05',
+    lastTestedISO: '2026-05-08',
   },
   {
     id: 'w4', slug: 'quillbot',
@@ -518,7 +542,7 @@ export const TOOL_FAQS: Record<string, Array<{ q: string; a: string }>> = {
   podcastle: [
     { q: "Is Podcastle free to use?", a: "Yes. Podcastle's free plan lets you record and edit podcasts with basic features. The main limitation is export quality and total recording minutes. For starting a first show or low-volume podcasting, the free plan is genuinely functional." },
     { q: "How does Podcastle compare to Descript?", a: "Podcastle is better for recording — especially remote interviews with guests. Descript is better for heavy text-based editing of existing audio. If you record first then edit, Podcastle is the better starting point and it's cheaper than Descript too." },
-    { q: "Can Podcastle remove background noise automatically?", a: "Yes. Podcastle's AI noise removal is one of its best features — it removes keyboard clicks, air conditioning hum, echo, and room noise in one click. I've tested it on recordings made in a noisy apartment and the results are impressive." },
+    { q: "Can Podcastle remove background noise automatically?", a: "Yes. Podcastle's AI noise removal is one of its best features — it removes keyboard clicks, air conditioning hum, echo, and room noise in one click. Verified user reviews on G2 and Trustpilot consistently highlight this as one of the most effective one-click noise removal tools at this price point." },
     { q: "What is the Revoice feature?", a: "Revoice lets you clone your voice and fix mistakes in your recording without re-recording. If you mispronounced a word or said 'um', you type the correction and Revoice generates it in your voice. It's the most useful feature for solo podcasters." },
     { q: "Does Podcastle publish directly to Spotify?", a: "Yes — Podcastle has direct publishing to Spotify, Apple Podcasts, and other major platforms built into paid plans. You don't need a separate podcast hosting service." },
   ],

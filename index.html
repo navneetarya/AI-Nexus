@@ -5,17 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- W2-T11: Fraunces self-hosted — removes external DNS call to fonts.googleapis.com + gstatic.com
-         ACTION REQUIRED: Download font files from fonts.google.com/specimen/Fraunces
-         Click "Download family", extract woff2 subset files, rename and copy to /public/fonts/:
-           fraunces-700.woff2  (weight 700, normal)
-           fraunces-800.woff2  (weight 800, normal)
-           fraunces-900.woff2  (weight 900, normal)
-           fraunces-italic-800.woff2  (weight 800, italic)
-         @font-face declarations are injected below in the existing Inter style block. -->
+    <!-- W4-T6: Fraunces replaces Syne 800 — distinctive serif for hero H1, avoids "AI-startup default" look -->
+    <!-- Fraunces is a variable serif used by The Guardian digital — signals "trusted editorial publication" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,700;9..144,0,800;9..144,0,900;9..144,1,800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,700;9..144,0,800;9..144,0,900;9..144,1,800&display=swap" />
 
     <!-- Default meta — JS overwrites per-page before paint -->
-    <title>Best AI Tools for Creators — Personally Tested 2026 | AI Nexus</title>
+    <title>Best AI Tools for Creators — Researched &amp; Ranked 2026 | AI Nexus</title>
     <meta name="description" content="Independent research on the best AI tools for writing, podcasting, video &amp; productivity in 2026. Honest pros, cons, pricing &amp; comparisons. No sponsored reviews." />
     <link rel="canonical" href="https://ainexustools.online/" />
     <!-- M5 (SEO-Medium): hreflang — signals English targeting to Google;
@@ -34,7 +32,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AI Nexus" />
     <meta property="og:url" content="https://ainexustools.online/" />
-    <meta property="og:title" content="Best AI Tools for Creators — Personally Tested 2026 | AI Nexus" />
+    <meta property="og:title" content="Best AI Tools for Creators — Researched &amp; Ranked 2026 | AI Nexus" />
     <meta property="og:description" content="Independent research on the best AI tools for writing, podcasting, video &amp; productivity in 2026. Honest pros, cons, pricing &amp; comparisons. No sponsored reviews." />
     <meta property="og:image" content="https://ainexustools.online/og-image.png" />
     <meta property="og:locale" content="en_US" />
@@ -43,7 +41,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ainexustools" />
     <meta name="twitter:creator" content="@ainexustools" />
-    <meta name="twitter:title" content="Best AI Tools for Creators — Personally Tested 2026 | AI Nexus" />
+    <meta name="twitter:title" content="Best AI Tools for Creators — Researched &amp; Ranked 2026 | AI Nexus" />
     <meta name="twitter:description" content="Independent research on the best AI tools for writing, podcasting, video &amp; productivity in 2026. Honest pros, cons, pricing &amp; comparisons. No sponsored reviews." />
     <meta name="twitter:image" content="https://ainexustools.online/og-image.png" />
 
@@ -188,37 +186,6 @@
         font-weight: 700;
         font-display: swap;
         src: url('/fonts/inter-v20-latin-700.woff2') format('woff2');
-      }
-      /* W2-T11: Fraunces self-hosted — eliminates DNS lookup to fonts.googleapis.com + gstatic.com
-         Saves 100–300ms LCP on mobile. Matches Inter self-hosting pattern above.
-         Requires /public/fonts/fraunces-{700,800,900}.woff2 + fraunces-italic-800.woff2 */
-      @font-face {
-        font-family: 'Fraunces';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url('/fonts/fraunces-700.woff2') format('woff2');
-      }
-      @font-face {
-        font-family: 'Fraunces';
-        font-style: normal;
-        font-weight: 800;
-        font-display: swap;
-        src: url('/fonts/fraunces-800.woff2') format('woff2');
-      }
-      @font-face {
-        font-family: 'Fraunces';
-        font-style: normal;
-        font-weight: 900;
-        font-display: swap;
-        src: url('/fonts/fraunces-900.woff2') format('woff2');
-      }
-      @font-face {
-        font-family: 'Fraunces';
-        font-style: italic;
-        font-weight: 800;
-        font-display: swap;
-        src: url('/fonts/fraunces-italic-800.woff2') format('woff2');
       }
     </style>
     <!-- Non-critical font weights — loaded after first paint via JS -->
@@ -390,7 +357,7 @@
   <body>
     <!-- Visually-hidden fallback heading for crawlers that don't execute JS.
          Uses <p> (not <h1>) so React's per-page <h1> is always the sole H1. -->
-    <p role="heading" aria-level="1" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Best AI Tools for Creators — Personally Tested 2026 | AI Nexus</p>
+    <p role="heading" aria-level="1" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Best AI Tools for Creators — Researched &amp; Ranked 2026 | AI Nexus</p>
     <div id="root"><!-- Static shell — React hydrates over this. Enables paint before JS downloads -->
       <div style="min-height:100vh;background:var(--bg)">
         <nav style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:var(--bar-bg);backdrop-filter:blur(14px);border-bottom:1px solid var(--bar-brd)">
@@ -400,7 +367,7 @@
           </div>
         </nav>
         <div style="max-width:1200px;margin:0 auto;padding:72px 24px 48px;text-align:center">
-          <h1 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(32px,5.5vw,52px);color:var(--txt);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px">I Test AI Tools for 30+ Days.<br/><span style="color:var(--a1)">Here's What Actually Works.</span></h1>
+          <h1 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(32px,5.5vw,52px);color:var(--txt);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px">Deep-Researched AI Tool Reviews.<br/><span style="color:var(--a1)">Here's What Actually Works.</span></h1>
           <p style="font-size:16px;color:var(--mut);max-width:540px;margin:0 auto;line-height:1.7">Researched &amp; compared so you don't have to. Honest pros, cons &amp; pricing — updated 2026.</p>
         </div>
       </div>

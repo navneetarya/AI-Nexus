@@ -8,7 +8,7 @@ const post: BlogPost = {
   slug: 'best-ai-marketing-tools-2026',
   title: 'Best AI Marketing Tools in 2026 — For SEO, Social & Content',
   seoTitle: 'Best AI Marketing Tools 2026 — Ranked',
-  metaDescription: 'I tested Frase, Ocoya, Jasper, and Writesonic for SEO and social media marketing. Here are the best AI marketing tools in 2026 for every budget.',
+  metaDescription: 'Frase, Ocoya, Jasper, and Writesonic compared for SEO and social media marketing in 2026 — honest breakdown for every budget, including what the free plans actually cover.',
   datePublished: '2026-05-03',
   dateModified: '2026-05-08',
   author: 'Navneet Arya',

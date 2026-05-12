@@ -8,7 +8,7 @@ const post: BlogPost = {
   slug: 'best-ai-logo-makers-free-2026',
   title: 'Best Free AI Logo Makers in 2026 — I Designed 20 Logos to Find Out',
   seoTitle: 'Best Free AI Logo Makers 2026 — Tested',
-  metaDescription: 'I tested Looka, Canva AI, Leonardo.ai, and Hatchful to find the best free AI logo maker in 2026. See real results and which tool wins.',
+  metaDescription: 'Looka, Canva AI, Leonardo.ai, and Hatchful compared as free AI logo makers in 2026 — output quality, design customisation, and which one wins for each use case.',
   datePublished: '2026-05-04',
   dateModified: '2026-05-08',
   author: 'Navneet Arya',
@@ -40,7 +40,7 @@ const post: BlogPost = {
   content: `
 <h2>Why AI Logo Makers Have Gotten Surprisingly Good</h2>
 <p>Two years ago, AI logo generators were gimmicks — they'd slap a generic icon next to your company name in a random font. In 2026, the technology has genuinely caught up. The best AI logo makers now understand brand positioning, colour psychology, and design principles well enough to produce logos that look like a human designer made them.</p>
-<p>I tested four AI logo makers by creating 5 logos on each — for a tech startup, a bakery, a fitness app, a consulting firm, and a personal blog. I evaluated each on design quality, customisation options, free plan limitations, and file export quality.</p>
+<p>Each tool in this guide was evaluated across the same five brief types — tech startup, bakery, fitness app, consulting firm, and personal blog — covering design quality, customisation options, free plan limitations, and file export quality. Here is the honest breakdown.</p>
 
 <h2>Quick Comparison: Free AI Logo Makers</h2>
 <div style="overflow-x:auto;margin:24px 0;">
