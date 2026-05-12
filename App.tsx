@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { TOOLS, SITE_CONFIG } from './constants';
 import { HomePage } from './pages/HomePage';
+import { StickyNewsletterBar } from './components/BeehiivForm';
 
 // ── Data-only imports (small, needed for routing on first render) ────────────
 import { COMPARE_ARTICLES } from './pages/compare-data';
@@ -265,4 +266,15 @@ function App() {
   return <HomePage navigate={navigate} {...themeProps} />;
 }
 
-export default App;
+// W4-T21: StickyNewsletterBar is injected here so it persists across all route changes
+// without re-mounting. It is mobile-only (CSS hides it ≥641px) and self-dismisses.
+function AppWithStickyBar() {
+  return (
+    <>
+      <App />
+      <StickyNewsletterBar />
+    </>
+  );
+}
+
+export default AppWithStickyBar;

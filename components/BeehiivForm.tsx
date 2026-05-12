@@ -199,6 +199,118 @@ export function NotionForm({ variant = 'hero' }: NotionFormProps) {
 export { NotionForm as BeehiivForm };
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Shows only on screens ≤ 640px. Dismissed for the session via React state.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export function StickyNewsletterBar() {
+  const [dismissed, setDismissed] = React.useState(false);
+  const formState = useSubscribeForm();
+
+  if (dismissed) return null;
+
+  return (
+    <>
+      {/* Mobile-only sticky bar */}
+      <style>{`
+        @media (min-width: 641px) { .sticky-nl-bar { display: none !important; } }
+        @keyframes slideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+      `}</style>
+      <div
+        className="sticky-nl-bar"
+        style={{
+          position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999,
+          background: 'var(--surf)',
+          borderTop: '1.5px solid var(--a1-brd)',
+          padding: '14px 16px 20px',
+          boxShadow: '0 -4px 24px rgba(0,0,0,.15)',
+          animation: 'slideUp 0.3s ease',
+        }}
+      >
+        {/* Dismiss button */}
+        <button
+          onClick={() => setDismissed(true)}
+          aria-label="Dismiss newsletter signup"
+          style={{
+            position: 'absolute', top: 10, right: 12,
+            background: 'none', border: 'none', cursor: 'pointer',
+            color: 'var(--mut)', fontSize: 18, lineHeight: 1, padding: 4,
+          }}
+        >
+          ✕
+        </button>
+
+        {/* Headline */}
+        <div style={{
+          fontFamily: "'Inter', sans-serif", fontWeight: 800,
+          fontSize: 13.5, color: 'var(--txt)', marginBottom: 3, paddingRight: 24,
+        }}>
+          Get the 3 best new AI tools every Friday
+        </div>
+        <div style={{ fontSize: 12, color: 'var(--mut)', marginBottom: 12 }}>
+          200+ readers · Navneet Arya · No spam
+        </div>
+
+        {/* Compact form — email only on mobile */}
+        {formState.state === 'success' ? (
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 8,
+            color: 'var(--a1)', fontWeight: 600, fontSize: 13,
+          }}>
+            ✅ You're in! Check your inbox.
+          </div>
+        ) : (
+          <form
+            onSubmit={formState.handleSubmit}
+            style={{ display: 'flex', gap: 8 }}
+          >
+            <input
+              type="email"
+              placeholder="your@email.com"
+              value={formState.email}
+              onChange={e => formState.setEmail(e.target.value)}
+              required
+              disabled={formState.state === 'loading'}
+              style={{
+                flex: 1,
+                padding: '9px 12px',
+                borderRadius: 8,
+                border: '1.5px solid var(--a1-brd)',
+                background: 'var(--bg)',
+                color: 'var(--txt)',
+                fontSize: 13,
+                outline: 'none',
+                boxSizing: 'border-box' as const,
+              }}
+            />
+            <button
+              type="submit"
+              disabled={formState.state === 'loading' || !formState.email.trim()}
+              style={{
+                padding: '9px 16px',
+                borderRadius: 8, border: 'none',
+                background: 'var(--a1)', color: '#fff',
+                fontSize: 13, fontWeight: 700,
+                fontFamily: "'Inter', sans-serif",
+                cursor: 'pointer', flexShrink: 0,
+                opacity: formState.state === 'loading' || !formState.email.trim() ? 0.7 : 1,
+              }}
+            >
+              {formState.state === 'loading' ? '…' : 'Join'}
+            </button>
+          </form>
+        )}
+
+        {formState.state === 'error' && (
+          <p style={{ fontSize: 11, color: '#f87171', margin: '6px 0 0' }}>
+            ⚠ {formState.errorMsg}
+          </p>
+        )}
+      </div>
+    </>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // Hero strip (same layout as old BeehiivForm hero)
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -230,11 +342,11 @@ function HeroStrip() {
               fontFamily: "'Inter', sans-serif", fontWeight: 800,
               fontSize: 14.5, color: 'var(--txt)', letterSpacing: '-0.02em',
             }}>
-              New AI tool reviews
+              3 best new AI tools — every Friday
             </span>
           </div>
           <p style={{ fontSize: 12.5, color: 'var(--mut)', margin: '0 0 0 39px', lineHeight: 1.6 }}>
-            {SITE_CONFIG.newsletterNote}
+            Independently researched by Navneet Arya. 200+ readers. No spam. Unsubscribe anytime.
           </p>
         </div>
 
@@ -274,10 +386,10 @@ function ArticleCard() {
             fontFamily: "'Inter', sans-serif", fontWeight: 800,
             fontSize: 15, color: 'var(--txt)', letterSpacing: '-0.02em', lineHeight: 1.2,
           }}>
-            Found this useful?
+            Get the 3 best new AI tools every Friday
           </div>
           <div style={{ fontSize: 12.5, color: 'var(--mut)', marginTop: 2 }}>
-            {SITE_CONFIG.newsletterNote}
+            Independently researched by Navneet Arya · 200+ readers · No spam
           </div>
         </div>
       </div>

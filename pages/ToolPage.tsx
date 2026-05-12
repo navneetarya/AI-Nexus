@@ -5,6 +5,7 @@ import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS, TOOLS } from '
 import { SharedNav } from './SharedNav';
 import { COMPARE_ARTICLES } from './compare-data';
 import { BLOG_POSTS } from '../blog/index';
+import { BeehiivForm } from '../components/BeehiivForm';
 
 const C = {
   bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
@@ -655,7 +656,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                     {tool.category.toUpperCase()}
                   </span>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 11, fontWeight: 700, letterSpacing: '0.02em', color: accent, background: cardBg, border: `1px solid ${cardBrd}`, padding: '3px 10px', borderRadius: 100 }}>
-                    <Calendar size={11} /> Last verified: {content?.lastTested || 'May 2026'}
+                    🔍 Independently reviewed — {content?.lastTested || 'May 2026'} · 8 min read
                   </span>
                   <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2 }}>
                     <User size={12} /> Reviewed by {SITE_CONFIG.authorName}
@@ -675,7 +676,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
 
             {content?.lastTested && (
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(16,185,129,.08)', border: '1px solid rgba(16,185,129,.18)', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: '#059669', fontWeight: 600, marginTop: 6 }}>
-                <Check size={12} /> Last tested: {content.lastTested}
+                <Check size={12} /> Independently reviewed — {content.lastTested} · Navneet Arya, AI Nexus
               </div>
             )}
 
@@ -768,7 +769,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </section>
         )}
 
-        {/* W4-T2: Second affiliate CTA — shown after verdict, highest-converting position on page */}
+        {/* W4-T21: Second affiliate CTA — shown after verdict, highest-converting position on page */}
         {tool.affiliateLink && (
           <div style={{
             background: `linear-gradient(135deg, ${C.a1}12, ${C.a1}06)`,
@@ -802,6 +803,9 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             </a>
           </div>
         )}
+
+        {/* W4-T21: Newsletter signup — below verdict, builds owned audience + EEAT trust signal */}
+        <BeehiivForm variant="article" />
 
         {/* ── Features grid ── */}
         {tool.features && tool.features.length > 0 && (
