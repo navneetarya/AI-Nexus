@@ -897,7 +897,7 @@ const BLOG_POSTS = [
   {
     slug: 'best-ai-writing-tools-for-beginners-2026',
     title: 'Best AI Writing Tools for Beginners 2026 — Tested & Ranked',
-    metaDescription: 'Looking for the best AI writing tools for beginners? I personally tested Rytr, Grammarly, QuillBot, and Writesonic so you can start writing smarter in 2026.',
+    metaDescription: 'Looking for the best AI writing tools for beginners? We researched and compared Rytr, Grammarly, QuillBot, and Writesonic so you can start writing smarter in 2026.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
     readTimeMinutes: 6,
@@ -1194,7 +1194,7 @@ for (const tool of TOOLS) {
   const canonical = `${SITE}/tools/${tool.slug}/`;
   // Week 1 Task 4: tagline in title matches App.tsx template — Google indexes the static HTML first
   const title = `${tool.name} Review ${YEAR} — Personally Tested | AI Nexus`;
-  const description = `${tool.name} review — personally tested for 30+ days. ${tool.tagline}. Honest verdict by ${AUTHOR}. No sponsored reviews.`;
+  const description = `${tool.name} review — independently researched. ${tool.tagline}. Honest verdict by ${AUTHOR}. No sponsored reviews.`;
 
   const schemas = [
     reviewSchema(tool, canonical),
@@ -1319,10 +1319,10 @@ console.log('\nStatic pages:');
       [2, 'Review Methodology', canonical],
     ]),
     faqSchema([
-      { q: `Does ${AUTHOR} personally test every AI tool?`, a: `Yes. Every tool reviewed on AI Nexus has been signed up for and used on real work tasks for a minimum of 2–4 weeks before a review is published. Both free and paid plans are tested.` },
+      { q: `Does ${AUTHOR} independently research every AI tool?`, a: `Yes. Every tool reviewed on AI Nexus is researched based on features, pricing, official documentation, and verified user reviews before a review is published. Both free and paid plans are evaluated.` },
       { q: 'How long does testing take before a review goes live?', a: `A minimum of 2–4 weeks for individual tool reviews. Comparison articles require simultaneous side-by-side testing of 2–3 tools on the same tasks, which typically takes 4–6 weeks in total.` },
       { q: 'Does the affiliate commission affect ratings or recommendations?', a: `No. Tools are evaluated and rated before checking whether an affiliate programme exists. The review verdict is written independently of any commission. ${AUTHOR} has published critical reviews of tools that have affiliate programmes, and positive reviews of tools that do not.` },
-      { q: 'What does "personally tested" mean on AI Nexus?', a: `It means ${AUTHOR} signed up for a real account (free tier first, then paid), used the tool on actual work tasks — not demo prompts — for at least 2 weeks, and documented real strengths and weaknesses from that experience. It does not mean a 10-minute trial or a review based on other sources.` },
+      { q: 'What does "independently researched" mean on AI Nexus?', a: `It means ${AUTHOR} has reviewed each tool based on features, pricing, available trial documentation, and real user reviews from verified sources. Affiliate links are disclosed on every page. No sponsored reviews.` },
       { q: 'Are there any sponsored reviews on AI Nexus?', a: `No. AI Nexus does not accept payment from tool companies to publish positive reviews or adjust ratings. All editorial content reflects ${AUTHOR}'s independent assessment after personal testing.` },
     ]),
   ];
@@ -1418,7 +1418,7 @@ for (const post of BLOG_POSTS) {
 {
   const canonical = `${SITE}/best-free-ai-tools/`;
   const title = `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`;
-  const description = `13 AI tools with permanent free plans — personally tested by ${AUTHOR}. Covers writing, image generation, video, audio, design, coding and productivity. No credit card required for any.`;
+  const description = `13 AI tools with permanent free plans — independently researched by ${AUTHOR}. Covers writing, image generation, video, audio, design, coding and productivity. No credit card required for any.`;
 
   // Tools with permanent free plans (mirrors BestFreeAIToolsPage.tsx)
   const FREE_TOOLS_SLUGS = ['grammarly','rytr','quillbot','leonardo-ai','photoroom','gamma','replit','taskade','podcastle','murf-ai','opus-clip','invideo','writesonic'];
@@ -1446,7 +1446,7 @@ for (const post of BLOG_POSTS) {
   writeRoute('best-free-ai-tools', buildPage(template, {
     title, description, canonical, schemas,
     bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
-    <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Every tool on this list has been personally tested by ${esc(AUTHOR)} on real tasks — not just sign-up and screenshot. The selection covers writing, image generation, video editing, audio production, design, coding, and productivity.</p>`,
+    <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Every tool on this list has been independently researched by ${esc(AUTHOR)} — covering features, free plan limits, pricing, and real user feedback. The selection covers writing, image generation, video editing, audio production, design, coding, and productivity.</p>`,
   }));
   console.log('\n  ✓  /best-free-ai-tools/');
 }

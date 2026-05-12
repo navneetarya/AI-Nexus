@@ -393,7 +393,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             <div style={{ marginBottom:14 }}><Logo dark/></div>
             <p style={{ color:'rgba(255,255,255,.4)', fontSize:13, lineHeight:1.7,
               marginBottom:16, maxWidth:200 }}>
-              Honest AI tool reviews. Every tool personally tested.
+              Honest AI tool research &amp; comparisons. No sponsored reviews.
             </p>
             <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
               <a href={`mailto:${SITE_CONFIG.email}`}
@@ -522,7 +522,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </h1>
             <p className="anim-fade-up d3"
               style={{ fontSize:16, color:C.mut, lineHeight:1.7, margin:0, maxWidth:520 }}>
-              Can't decide between two tools? These in-depth, personally tested breakdowns
+              Can't decide between two tools? These in-depth, research-backed breakdowns
               give you an honest verdict — no affiliate bias, just what actually works.
             </p>
           </div>
@@ -728,7 +728,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               <Shield size={10} color="#fff"/>
             </div>
             <span style={{ fontSize:12, fontWeight:600, color:C.a1 }}>
-              Every tool personally tested — no sponsored posts
+              Independently researched — no sponsored posts
             </span>
           </button>
 
@@ -738,8 +738,8 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             style={{ fontFamily:"'Fraunces', Georgia, serif", fontWeight:800,
               fontSize:'clamp(32px,6vw,54px)', lineHeight:1.07, color:C.txt,
               margin:'0 0 16px', letterSpacing:'-0.025em' }}>
-            I Test AI Tools for 30+ Days.<br/>
-            <span style={{ color:C.a1, fontStyle:'italic' }}>Here's What Actually Works.</span>
+            I Research AI Tools So You<br/>
+            <span style={{ color:C.a1, fontStyle:'italic' }}>Don't Have To.</span>
           </h1>
 
           <p className="anim-fade-up d3"

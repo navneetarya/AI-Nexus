@@ -53,7 +53,7 @@ jobs:
             fi
           done
 
-          for slug in best-ai-writing-tools-for-beginners-2026 best-ai-tools-for-freelancers-2026 best-grammarly-alternatives best-podcastle-alternatives best-ai-tools-for-social-media-2026 how-to-use-rytr-to-write-blog-posts ai-tools-for-students-free-2026 best-ai-podcast-tools-2026; do
+          for slug in best-ai-writing-tools-for-beginners-2026 best-ai-tools-for-freelancers-2026 best-grammarly-alternatives best-podcastle-alternatives best-ai-tools-for-social-media-2026 how-to-use-rytr-to-write-blog-posts ai-tools-for-students-free-2026 best-ai-podcast-tools-2026 jasper-ai-alternatives chatgpt-alternatives-free-2026 best-ai-coding-tools-2026 best-ai-logo-makers-free-2026 best-ai-marketing-tools-2026 ai-tools-for-teachers-2026 best-midjourney-alternatives-2026 best-notion-ai-alternatives-2026 best-invideo-alternatives-2026 how-to-use-ai-for-content-creation-2026; do
             if [ ! -f "dist/blog/$slug/index.html" ]; then
               echo "❌ Missing: dist/blog/$slug/index.html"
               MISSING=$((MISSING+1))
@@ -63,6 +63,13 @@ jobs:
           for slug in rytr-vs-writesonic grammarly-vs-quillbot podcastle-vs-descript; do
             if [ ! -f "dist/compare/$slug/index.html" ]; then
               echo "❌ Missing: dist/compare/$slug/index.html"
+              MISSING=$((MISSING+1))
+            fi
+          done
+
+          for slug in best-ai-writing-tools best-ai-image-tools best-ai-video-tools best-ai-audio-tools best-ai-marketing-tools best-ai-design-tools best-ai-coding-tools best-ai-productivity-tools; do
+            if [ ! -f "dist/$slug/index.html" ]; then
+              echo "❌ Missing: dist/$slug/index.html"
               MISSING=$((MISSING+1))
             fi
           done

@@ -76,7 +76,7 @@ const TOOL_CONTENT: Record<string, {
     verdict: "The most accessible and accurate AI writing assistant for English. The free plan is genuinely useful — not a crippled demo — and the $12/month Premium plan is worth it the moment you write professionally at any significant volume. If you only install one writing tool, install Grammarly.",
     /** SEO-07: Targets "is grammarly worth it" (3,600/mo KD 22) + "grammarly premium review" (4,400/mo KD 28) */
     upgradeGuide: "The free plan genuinely earns its keep. Grammarly Free catches spelling, grammar, and punctuation errors with no word limit — coverage that beats Microsoft Word on complex sentence structures. For personal emails, simple documents, and student essays, the free plan is all you need.\n\nThe upgrade to Premium ($12/month billed annually) is worth it the moment you write professionally at volume. Three features justify the cost:\n\n1. **Full-sentence clarity rewrites.** Grammarly flags verbose sentences and suggests a version that says the same thing in 30–40% fewer words. After two years of accepting these suggestions, my first drafts are shorter and cleaner.\n\n2. **Plagiarism checker against 16 billion web pages.** Essential for freelancers submitting content to clients, academics, and anyone publishing content who needs to verify originality before it goes live.\n\n3. **Tone detector.** Before sending a difficult email, Grammarly analyses whether it reads as confident, direct, aggressive, or friendly. It has flagged client emails that could have caused friction — that alone has paid for the subscription multiple times over.\n\nIs Grammarly Premium worth it? Yes, if you write 5,000+ words per week in a professional context. No, if you're a casual writer who only needs basic error catching — the free plan is legitimately sufficient for that use case.",
-    rating: 4.5, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-01-15", timeUsed: "2+ years daily",
+    rating: 4.5, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-01-15", timeUsed: "Researched Mar 2026",
   },
   writesonic: {
     whatIs: "Writesonic is an AI content writing platform built for SEO-driven long-form blog posts. Its Article Writer 6.0 generates a full 1,500-word draft from a single keyword in under 5 minutes. It includes Chatsonic — a ChatGPT alternative with real-time web search — and is priced from $19/month for unlimited words.",
@@ -97,7 +97,7 @@ const TOOL_CONTENT: Record<string, {
       { q: "Can Writesonic write factually accurate content?", a: "More than most AI writers — Chatsonic has real-time web search which lets it reference current information. But AI-generated content should always be fact-checked before publishing. Writesonic's content is a starting point, not a final draft." },
     ],
     verdict: "Best value for bloggers who need to scale long-form content output. The output requires editing but the 60% time saving is real. The $19/month Individual plan is worth it if you publish more than 4 blog posts per month.",
-    rating: 4.2, lastTested: "February 2026", lastTestedISO: "2026-02-20", datePublished: "2026-01-20", timeUsed: "6 months",
+    rating: 4.2, lastTested: "February 2026", lastTestedISO: "2026-02-20", datePublished: "2026-01-20", timeUsed: "Researched Feb 2026",
     upgradeGuide: "Writesonic's free plan gives you 25 one-time credits — enough to generate 2–3 full articles and test the tool properly. The quality of those test articles will tell you everything you need to know about whether it belongs in your workflow. But 25 credits disappear in a single content session, which makes the free plan a demo rather than a sustainable option.\n\nThe upgrade to the Individual plan ($19/month billed annually, unlimited words) is worth it the moment you publish more than 4 blog posts per month. Here's exactly why:\n\n1. **Article Writer 6.0.** From a single keyword, Writesonic generates a structured 1,500-word draft with an introduction, 5–6 H2 sections, an FAQ block, and a conclusion — in about 3 minutes. The draft needs editing, but it removes the blank-page problem entirely. If you write 4+ articles monthly, that's 12+ hours saved.\n\n2. **Chatsonic with real-time web search.** Unlike standard ChatGPT, Chatsonic pulls current information from the web. For trend-based content, product updates, or anything time-sensitive, this produces more accurate output than AI writers working from a frozen training set.\n\n3. **100+ templates for every content format.** Facebook ads, Google ad copy, landing page sections, email subjects, product descriptions — the templates are purpose-built for marketing workflows, not just general writing.\n\nIs Writesonic worth it? Yes — if long-form blog content is your primary output and you publish consistently. No — if you only write occasionally or primarily need short-form copy. For short-form volume, Rytr at $9/month is the better investment. For SEO research plus writing in one workflow, Frase at $15/month is worth comparing. Writesonic wins when your main need is fast, publishable long-form drafts.",
   },
   rytr: {
@@ -116,7 +116,7 @@ const TOOL_CONTENT: Record<string, {
     rating: 4.0,
     lastTested: "May 2026",
     datePublished: "2026-01-25",
-    timeUsed: "8 months",
+    timeUsed: "Researched May 2026",
     upgradeGuide: "The free plan gives you 10,000 characters per month, 20+ use cases, and outputs in 30+ languages — enough to write 3–4 short blog posts or a batch of social media captions. It's a real free plan, not a 7-day trial.\n\nThe upgrade to Saver ($9/month) is worth it the moment you hit the character limit — which happens faster than expected when writing email sequences or batching content. Saver adds: unlimited characters, all 40+ use cases (including Magic Command, which lets you give free-form instructions), the Chrome extension for writing inside Gmail and Google Docs, and a plagiarism checker.\n\nThe Unlimited plan ($29/month) adds priority support, a custom use case builder, and team access. This is worth it only if you're managing a content team of 3+ or need to train Rytr on a specific brand voice.\n\nMy recommendation: use the free plan for 2 weeks. If you're hitting the character limit or want the Chrome extension, upgrade to Saver. The $9/month investment pays for itself within the first week of consistent use. Skip Unlimited unless you're running a team.",
     vsVerdict: {
       tool: "Writesonic",
@@ -144,7 +144,7 @@ const TOOL_CONTENT: Record<string, {
       { q: "Is Quillbot good for students?", a: "Yes — particularly for paraphrasing research and generating citations. The free plan is sufficient for many student use cases. Be aware that using Quillbot to paraphrase others' work without attribution is still plagiarism — the tool doesn't change the ethical obligation to cite your sources." },
     ],
     verdict: "The best paraphrasing and rewriting tool available. The free plan's 125-word limit is frustrating for document-level work, but the quality of the Creative mode paraphrases is genuinely impressive. At $10/month Premium, it's the right tool for any student, academic, or ESL professional who regularly needs to rework existing text.",
-    rating: 4.3, lastTested: "January 2026", lastTestedISO: "2026-01-20", datePublished: "2026-01-10", timeUsed: "1 year",
+    rating: 4.3, lastTested: "January 2026", lastTestedISO: "2026-01-20", datePublished: "2026-01-10", timeUsed: "Researched Jan 2026",
   },
   'frase': {
     whatIs: "Frase is an AI SEO content tool that analyses the top 20 Google results for any keyword and generates a data-driven content brief in 30 seconds. It shows exactly which topics, headings, and questions competitors cover — then its AI writer drafts the article to match. Priced from $15/month with a $1 five-day trial.",
@@ -165,7 +165,7 @@ const TOOL_CONTENT: Record<string, {
       { q: "Can Frase write content for me?", a: "Yes — Frase has an AI writer that generates paragraphs and sections from the brief it creates. The prose quality is functional but not exceptional. I use Frase for the research and structure and a separate tool (Writesonic or manual writing) for the actual prose. The outline and brief are Frase's strongest outputs." },
     ],
     verdict: "The best tool for SEO-driven content creation if ranking on Google is your primary goal. The research and brief-building features alone justify the price for any content operation publishing more than 2 posts per month. Not for casual bloggers — this is for people treating content as a business investment.",
-    rating: 4.4, lastTested: "March 2026", lastTestedISO: "2026-03-10", datePublished: "2026-02-01", timeUsed: "10 months",
+    rating: 4.4, lastTested: "March 2026", lastTestedISO: "2026-03-10", datePublished: "2026-02-01", timeUsed: "Researched Mar 2026",
   },
   'leonardo-ai': {
     whatIs: "Leonardo.ai is a free AI image generator offering 150 generation credits per day — one of the most generous free plans available. It features custom model training for consistent character styles, a real-time canvas, and 20+ fine-tuned art models. Best suited for game developers, illustrators, and creators who need more creative control than Midjourney provides.",
@@ -174,7 +174,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Leonardo gives you more creative control than Midjourney for free. The custom model training feature lets you create consistent characters across multiple images — something most other tools can't do. The 150 free daily credits are genuinely usable, not just enough for one image.",
     useCases: ["Creating consistent game character sprites and assets", "Generating product mockup images for e-commerce", "Creating social media visuals at scale", "Building concept art for client presentations"],
     verdict: "The most powerful free AI image tool available. The learning curve is real — spend 30 minutes watching tutorials before diving in — but the ceiling of what you can create is higher than any competitor.",
-    rating: 4.5, lastTested: "February 2026", datePublished: "2026-01-18", timeUsed: "1.5 years",
+    rating: 4.5, lastTested: "February 2026", datePublished: "2026-01-18", timeUsed: "Researched Feb 2026",
   },
   'photoroom': {
     whatIs: "PhotoRoom is an AI background removal and product photography tool used by 150 million people. It automatically removes backgrounds from images — handling hair, transparent objects, and complex edges better than Adobe's own tools — and replaces them with AI-generated scenes. Free plan available; Pro is $9.99/month with batch processing for e-commerce sellers.",
@@ -183,7 +183,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I tested PhotoRoom against 5 other background removal tools using 20 product photos. PhotoRoom won 17 out of 20. It handles hair, transparent objects, and complex edges better than Adobe's own tools. The mobile app is excellent — I've used it to shoot and clean up product photos in under 2 minutes.",
     useCases: ["Removing backgrounds from product photos for Amazon listings", "Creating consistent social media content with clean subject isolation", "Generating professional headshots from casual photos", "Batch processing 100+ product images simultaneously"],
     verdict: "The best background removal tool available. Period. The free plan's watermark is annoying but the $10/month Pro plan is worth it for anyone selling products online.",
-    rating: 4.6, lastTested: "March 2026", datePublished: "2026-02-05", timeUsed: "1 year",
+    rating: 4.6, lastTested: "March 2026", datePublished: "2026-02-05", timeUsed: "Researched Mar 2026",
   },
   looka: {
     whatIs: "Looka is an AI logo and brand identity generator for startups and small businesses. It produces 40+ logo options in under two minutes based on your industry, style preferences, and colour choices. A basic logo package starts at $20 as a one-time purchase; the $96/year Brand Kit adds business cards, social media templates, and letterhead assets.",
@@ -192,7 +192,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I used Looka to create a brand identity for a test project. The AI generated 40+ logo options in under 2 minutes. The quality varies — some look generic — but 3–4 options were genuinely strong. The brand kit (business cards, social media templates, letterhead) justifies the price.",
     useCases: ["Creating a logo for a new startup or side project", "Generating a full brand kit for a freelance business", "Designing social media profile assets quickly", "Getting a professional logo before a client meeting — same day"],
     verdict: "A one-time investment that saves thousands compared to hiring a designer. The logo quality is better than Canva's logo maker and you own the files outright.",
-    rating: 4.1, lastTested: "January 2026", datePublished: "2026-01-12", timeUsed: "6 months",
+    rating: 4.1, lastTested: "January 2026", datePublished: "2026-01-12", timeUsed: "Researched Jan 2026",
   },
   pictory: {
     whatIs: "Pictory is an AI video creation tool that converts blog posts, scripts, and articles into edited videos automatically. It selects relevant stock footage from a 3-million+ clip library, adds AI-generated captions, and exports in landscape, square, or portrait formats. Designed for bloggers and content repurposers with no video editing skills; plans start at $19/month.",
@@ -201,7 +201,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I converted a 1,500-word blog post into a 3-minute video in 12 minutes using Pictory. The AI picks relevant stock footage, adds captions, and inserts background music automatically. The result needed minor adjustments but was 80% publish-ready.",
     useCases: ["Converting blog posts into YouTube videos automatically", "Creating short Reels/Shorts from long-form articles", "Generating video summaries of podcast episodes", "Building a faceless YouTube channel from written content"],
     verdict: "The fastest way to turn written content into video. The stock footage library shows its limits on niche topics but for business and marketing content it works excellently.",
-    rating: 4.1, lastTested: "February 2026", datePublished: "2026-01-22", timeUsed: "7 months",
+    rating: 4.1, lastTested: "February 2026", datePublished: "2026-01-22", timeUsed: "Researched Feb 2026",
   },
   'opus-clip': {
     whatIs: "Opus Clip is an AI video repurposing tool that automatically finds the best moments in long-form videos and converts them into short clips for TikTok, Reels, and Shorts. It scores each clip for virality potential, adds animated captions, and exports in portrait format. Free plan includes 60 minutes of processing per month; paid plans start at $19/month.",
@@ -210,7 +210,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I tested Opus Clip on a 45-minute interview and it produced 8 clips. 5 of them were genuinely good — it correctly identified the most emotionally engaging moments, added captions, and even applied a virality score. The other 3 cut at awkward points. Still a massive time saver versus manual clipping.",
     useCases: ["Clipping YouTube videos into TikTok and Reels content", "Extracting key moments from podcast episodes", "Repurposing webinar recordings into social media clips", "Building a short-form content library from long videos"],
     verdict: "The best AI video repurposing tool available. The free plan's 60 minutes per month is enough to test properly. Essential for anyone trying to grow short-form alongside long-form.",
-    rating: 4.3, lastTested: "March 2026", datePublished: "2026-02-10", timeUsed: "9 months",
+    rating: 4.3, lastTested: "March 2026", datePublished: "2026-02-10", timeUsed: "Researched Mar 2026",
   },
   invideo: {
     whatIs: "InVideo AI is a text-to-video platform that generates complete videos from a single text prompt — including script, AI voiceover, stock footage from a 16-million+ library, and captions. Purpose-built for faceless YouTube channels and educational content. Free plan allows unlimited videos with watermark; paid plans from $20/month remove watermarks and unlock 1080p export.",
@@ -219,7 +219,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "InVideo AI is the most complete text-to-video tool I've tested. I gave it a 50-word prompt about 'how to save money in your 20s' and got a 4-minute video with a script, voiceover, stock footage, and captions. The quality of stock footage selection is the weakest link but the voiceover and pacing are excellent.",
     useCases: ["Creating faceless YouTube educational videos at scale", "Producing explainer videos for product landing pages", "Generating social media video content from blog topics", "Creating training videos for teams without recording equipment"],
     verdict: "The most capable text-to-video tool for faceless content creators. The free plan lets you create 10 minutes of video per week — enough to start a channel.",
-    rating: 4.2, lastTested: "April 2026", datePublished: "2026-02-15", timeUsed: "8 months",
+    rating: 4.2, lastTested: "April 2026", datePublished: "2026-02-15", timeUsed: "Researched May 2026",
   },
   'murf-ai': {
     whatIs: "Murf AI is a professional text-to-speech voiceover platform with 120+ studio-quality voices across 20+ languages. It includes a video sync feature that automatically adjusts speech pace to match your video timeline — unique in its category. Free plan provides 10 minutes of voiceover; Creator plan is $19/month with 2 hours and full commercial use rights.",
@@ -241,7 +241,7 @@ const TOOL_CONTENT: Record<string, {
       { q: "Can I use Murf AI for commercial projects?", a: "Yes — the Creator plan and above include commercial usage rights. The free plan output is watermarked and cannot be used commercially. Check the specific licensing terms for client-facing work; the Business plan's commercial licence is broader than Creator's." },
     ],
     verdict: "The best balance of voice naturalness and production workflow in AI voiceover tools. The video sync feature alone distinguishes it from every other tool in the category. More expensive than some alternatives, but the output quality and time saving on video production justifies it for professional use.",
-    rating: 4.4, lastTested: "January 2026", lastTestedISO: "2026-01-15", datePublished: "2026-01-08", timeUsed: "1 year",
+    rating: 4.4, lastTested: "January 2026", lastTestedISO: "2026-01-15", datePublished: "2026-01-08", timeUsed: "Researched Jan 2026",
   },
   podcastle: {
     whatIs: "Podcastle is an AI podcast recording and editing platform that captures remote guests in studio-quality audio, then cleans up the recording automatically. Its Magic Dust AI removes background noise, keyboard clicks, and echo in one click. The Revoice feature fixes mispronounced words without re-recording. Free plan covers 10 hours of recording per month.",
@@ -250,7 +250,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I recorded a remote interview using Podcastle and compared the cleaned-up audio to a professional podcast recorded in a studio. Podcastle's AI noise removal eliminated keyboard clicks, air conditioning hum, and mic handling noise that I hadn't even noticed during recording. The Revoice voice cloning feature for fixing mispronounced words mid-episode is genuinely impressive.",
     useCases: ["Recording and cleaning remote podcast interviews", "Transcribing interviews for show notes automatically", "Fixing audio errors post-recording without re-recording the entire segment", "Publishing podcasts to Spotify and Apple Podcasts directly"],
     verdict: "The best all-in-one podcast tool for creators who don't want to learn Audacity. The free plan is functional enough to start your first show today.",
-    rating: 4.2, lastTested: "April 2026", datePublished: "2026-02-20", timeUsed: "6 months",
+    rating: 4.2, lastTested: "April 2026", datePublished: "2026-02-20", timeUsed: "Researched Apr 2026",
   },
   gamma: {
     whatIs: "Gamma is an AI presentation tool that generates a complete slide deck from a topic or outline in under 3 minutes. It also creates scrollable documents and single-page websites using the same workflow. Free plan includes 400 AI credits on signup — enough for 4–5 full presentations. Paid plans start at $8/month with unlimited AI creation and badge removal.",
@@ -259,7 +259,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "I created a 12-slide investor pitch deck from a 200-word brief in 4 minutes using Gamma. The design was genuinely polished — better than 80% of the decks I see in real life. The one-click restyle feature let me swap the entire visual theme instantly. The only weakness is that Gamma-made decks look like Gamma-made decks to a trained eye.",
     useCases: ["Creating investor pitch decks from a brief", "Building client-ready proposals quickly", "Making course curriculum slides for educators", "Converting blog posts into presentation format"],
     verdict: "The best free presentation tool available. If you spend more than 2 hours per month making slides, Gamma will save you more time than any other tool on this list.",
-    rating: 4.5, lastTested: "March 2026", datePublished: "2026-02-25", timeUsed: "1 year",
+    rating: 4.5, lastTested: "March 2026", datePublished: "2026-02-25", timeUsed: "Researched Mar 2026",
   },
   'beautiful-ai': {
     whatIs: "Beautiful.ai is an AI presentation tool with Smart Slides that automatically reformat as you add or remove content — no manual alignment or resizing needed. Designed for business professionals who need consistently polished decks without a designer. No permanent free plan; Pro is $12/month billed annually, Team is $40/user/month with collaboration and shared brand kits.",
@@ -268,7 +268,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Beautiful.ai's smart slides auto-format as you type — add a bullet point and the layout adjusts automatically. It removes the most frustrating part of PowerPoint: manually resizing and aligning elements. The team collaboration features are excellent for agencies managing multiple client decks.",
     useCases: ["Creating weekly business reports and board presentations", "Building sales decks with consistent branding", "Team collaboration on shared presentation templates", "Converting data into visual presentation slides"],
     verdict: "Better than PowerPoint for anyone who isn't a designer. The lack of a free plan is the main drawback but the $12/month Pro plan is fair for the time it saves.",
-    rating: 4.1, lastTested: "February 2026", datePublished: "2026-01-28", timeUsed: "8 months",
+    rating: 4.1, lastTested: "February 2026", datePublished: "2026-01-28", timeUsed: "Researched May 2026",
   },
   ocoya: {
     whatIs: "Ocoya is an AI social media tool that combines caption writing, graphic design, and post scheduling in one dashboard. It generates platform-specific captions for Instagram, LinkedIn, Twitter/X, TikTok, and 5 other networks, and includes a Canva-style design editor. Plans start at $15/month — replacing a separate caption writer and scheduler that would cost $25–30/month combined.",
@@ -277,7 +277,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Ocoya compresses what normally takes 3 separate tools — a caption writer, a design tool, and a scheduler — into one dashboard. The AI caption generator is genuinely good for Instagram and LinkedIn. The design tool is Canva-lite but works for quick posts. The scheduling is reliable and I haven't had a missed post in 4 months of use.",
     useCases: ["Scheduling 30 posts across Instagram, LinkedIn, and Twitter at once", "Generating AI captions for product launch announcements", "Creating and posting content for client social media accounts", "Maintaining consistent posting frequency without daily manual work"],
     verdict: "The best value all-in-one social media tool for solo operators and small teams. Not as powerful as Hootsuite for large operations, but far more affordable and easier to use.",
-    rating: 4.0, lastTested: "April 2026", datePublished: "2026-03-01", timeUsed: "4 months",
+    rating: 4.0, lastTested: "April 2026", datePublished: "2026-03-01", timeUsed: "Researched Apr 2026",
   },
   replit: {
     whatIs: "Replit is a browser-based coding environment that requires zero local setup — no installing Node.js, Python, or any runtime. It supports 50+ programming languages, deploys apps instantly with a public URL, and includes Ghostwriter, an AI coding assistant with full project context. Free plan available; Core plan is $7/month for production hosting.",
@@ -286,7 +286,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Replit is where I'd send anyone who wants to learn coding in 2026. The browser-based environment eliminates the 'how do I install Node.js' problem that kills beginner motivation. The AI assistant (Ghostwriter) is integrated directly into the editor and understands the context of your entire project — not just the line you're on. I've used it to prototype 3 side projects without touching my local machine.",
     useCases: ["Learning Python, JavaScript, or any of 50+ languages without setup", "Prototyping web apps and sharing them instantly with a URL", "Building and deploying side projects without DevOps knowledge", "Collaborative coding sessions with teammates in real time"],
     verdict: "The best platform for learning to code or prototyping quickly. The free tier's usage limits can frustrate heavy users, but for getting started or building small projects it's unmatched.",
-    rating: 4.2, lastTested: "April 2026", datePublished: "2026-03-05", timeUsed: "1.5 years",
+    rating: 4.2, lastTested: "April 2026", datePublished: "2026-03-05", timeUsed: "Researched Apr 2026",
   },
   'notion-ai': {
     whatIs: "Notion AI is an AI add-on for Notion that reads and references your existing workspace content. It summarises meeting notes, writes documents in your brand voice, translates pages, and extracts action items — all without leaving Notion. Priced at $10/month per workspace member, added on top of any existing Notion plan. Requires an active Notion account.",
@@ -308,7 +308,7 @@ const TOOL_CONTENT: Record<string, {
       { q: "Does Notion AI work on the free plan?", a: "Yes — the Notion AI add-on can be added to any Notion plan, including the free plan. You pay $10/month per member for the AI functionality regardless of your base plan." },
     ],
     verdict: "Essential for existing Notion power users who spend 30+ minutes daily in the workspace. The context-aware generation is genuinely better than standalone AI writers for internal documents, meeting summaries, and project briefs. The $10/month per member pricing makes it expensive for teams — evaluate whether the workspace integration saves enough time to justify the cost over free ChatGPT for simpler tasks.",
-    rating: 4.4, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-02-28", timeUsed: "1.5 years",
+    rating: 4.4, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-02-28", timeUsed: "Researched Mar 2026",
   },
   jasper: {
     whatIs: "Jasper is an enterprise AI writing platform built for marketing teams that need consistent, on-brand content at scale. It trains on your brand voice — tone, style, vocabulary — and applies it across every output: blog posts, ad copy, emails, and social content. Pricing starts at $39/month, making it the premium option in the AI writing category and the right tool only when brand consistency across a team justifies the cost.",
@@ -323,7 +323,7 @@ const TOOL_CONTENT: Record<string, {
       "Writing long-form SEO articles with the integrated Surfer SEO score checker",
     ],
     verdict: "The best AI writing tool for marketing teams and agencies where brand voice consistency across multiple writers is the primary requirement. The $39/month price is only justifiable for teams — solo writers should choose Writesonic or Rytr instead.",
-    rating: 4.3, lastTested: "April 2026", datePublished: "2026-02-01", timeUsed: "8 months",
+    rating: 4.3, lastTested: "April 2026", datePublished: "2026-02-01", timeUsed: "Researched May 2026",
     upgradeGuide: "Jasper offers a 7-day free trial with full access — no stripped-down tier. The trial is genuinely the right way to evaluate it: set up a brand voice in the first 30 minutes and generate 3–4 pieces of content before deciding. If the brand voice output doesn't immediately impress you, the paid plans won't change that assessment.\n\nJasper's three paid tiers reflect very different use cases:\n\n**Creator ($39/month)** — 1 user, 1 brand voice, unlimited word generation, browser extension, 50+ templates. This is the entry point for a solo content creator or small business owner who wants Jasper's quality without team features. It's worth the price if you publish 10,000+ words per month of professional content and the brand consistency saving is measurable in your workflow.\n\n**Pro ($59/month)** — Up to 5 users, 3 brand voices, 10 knowledge assets, Campaigns feature, team collaboration, SEO mode. This is where Jasper's real value appears for small agencies. Three brand voices cover most small-agency use cases. The Campaigns feature — generating a full content suite from one brief — alone justifies the jump from Creator if you're running regular content campaigns.\n\n**Business (custom pricing)** — Unlimited users and brand voices, custom AI model, API access, SSO. Enterprise only.\n\nIs Jasper worth it? Yes — for Pro plan users managing 2+ client brands or a content team of 3+ people. No — for solo writers. The $39/month Creator plan puts you at 2x the cost of Writesonic for comparable solo output quality. Jasper's premium is real, but it's a team premium. If you're writing alone, the money is better spent on Writesonic ($19/month) for long-form or Rytr ($9/month) for short-form.",
   },
   taskade: {
@@ -333,7 +333,7 @@ const TOOL_CONTENT: Record<string, {
     myTake: "Taskade's custom AI agents are the standout feature. I built an agent that automatically breaks down any project brief into tasks, assigns due dates, and creates a Kanban board — in under 10 seconds. The video collaboration built directly into tasks is something I haven't seen in any competing tool. The mind map view is genuinely useful for brainstorming.",
     useCases: ["Managing client projects with automated task breakdown", "Running a remote team without needing Slack + Asana + Notion separately", "Building AI agents to handle repetitive workflow steps", "Organising personal projects with AI-powered mind maps"],
     verdict: "The most feature-rich tool at its price point. The interface takes a week to fully learn but the investment pays off for any freelancer or small team.",
-    rating: 4.2, lastTested: "April 2026", datePublished: "2026-03-10", timeUsed: "10 months",
+    rating: 4.2, lastTested: "April 2026", datePublished: "2026-03-10", timeUsed: "Researched Apr 2026",
   },
 };
 
@@ -537,7 +537,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
     "@type": "Review",
     "name": `${tool.name} Review ${new Date().getFullYear()}`,
     "headline": `${tool.name} Review — ${tool.tagline}`,
-    "description": `Honest ${tool.name} review by Navneet Arya (AI Nexus). ${tool.tagline}. Tested personally for ${content?.timeUsed || 'several months'}.`,
+    "description": `Independent ${tool.name} review by Navneet Arya (AI Nexus). ${tool.tagline}. Independently researched · ${content?.timeUsed || 'Apr 2026'}.`,
     "datePublished": content?.datePublished ?? TODAY,
     "dateModified": tool.lastTestedISO ?? (content?.lastTested ? new Date(content.lastTested).toISOString().split('T')[0] : TODAY),
     "url": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}`,
@@ -662,7 +662,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                   </span>
                   {content?.timeUsed && (
                     <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: accent, fontWeight: 500 }}>
-                      <Award size={12} /> Tested for {content.timeUsed}
+                      <Award size={12} /> {content.timeUsed}
                     </span>
                   )}
                 </div>
@@ -731,7 +731,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               </div>
               <div>
                 <div style={{ fontSize: 13, fontWeight: 700, color: C.txt }}>Tested by Navneet Arya</div>
-                <div style={{ fontSize: 12, color: C.mut }}>{content.timeUsed} of hands-on use</div>
+                <div style={{ fontSize: 12, color: C.mut }}>{content.timeUsed}</div>
               </div>
             </div>
             <a href="/methodology/" style={{ fontSize: 12, color: C.a1, fontWeight: 600, textDecoration: 'none' }}>
@@ -880,7 +880,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                 <div style={{ width: 36, height: 36, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 13, color: '#fff', flexShrink: 0 }}>NA</div>
                 <div>
                   <div style={{ fontSize: 13, fontWeight: 600, color: C.txt }}>{SITE_CONFIG.authorName}</div>
-                  <div style={{ fontSize: 11, color: C.mut2 }}>{SITE_CONFIG.authorExperience} · tested {tool.name} for {content.timeUsed}</div>
+                  <div style={{ fontSize: 11, color: C.mut2 }}>{SITE_CONFIG.authorExperience} · researched {tool.name} · {content.timeUsed}</div>
                 </div>
               </div>
               <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.8, fontWeight: 300, margin: '0 0 18px' }}>{content.myTake}</p>
@@ -1214,7 +1214,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             <>
               {sectionTitle(`More ${tool.category} tools`)}
               <p style={{ fontSize: 13, color: C.mut, margin: '0 0 14px', lineHeight: 1.65, fontWeight: 300 }}>
-                Other {tool.category.toLowerCase()} tools I've personally tested — worth comparing before you decide.
+                Other {tool.category.toLowerCase()} tools worth comparing before you decide.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
                 {sameCat.map((t, i) => (
