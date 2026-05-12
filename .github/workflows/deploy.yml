@@ -6,6 +6,11 @@ on:
       - main
   workflow_dispatch:
 
+# Opt all actions into the Node.js 24 runner now, before GitHub forces it on
+# June 2 2026 (avoids the Node 20 deprecation failures on checkout/setup-node).
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: read
   pages: write
@@ -25,7 +30,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22        # Node 22 is current LTS; matches @types/node ^22 in package.json
           cache: "npm"
 
       - name: Install dependencies
