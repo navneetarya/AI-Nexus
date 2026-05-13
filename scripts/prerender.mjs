@@ -146,7 +146,7 @@ const TOOLS = [
     description: 'Podcastle gives you studio-quality recording, AI-powered noise removal, and one-click publishing. Record remotely with guests and let AI clean up the audio automatically.',
     pricing: 'Free + from $11.99/month', bestFor: 'Podcasters & interviewers',
     rating: 4.2, lastTested: 'April 2026',
-    seoTitle: 'Podcastle Review 2026 — Free Plan, AI Noise Removal & Honest Verdict | AI Nexus',
+    seoTitle: 'Podcastle Review 2026 — Free Plan, AI Noise Removal Tested | AI Nexus',
   },
   {
     slug: 'gamma', name: 'Gamma', category: 'Design',
@@ -168,7 +168,7 @@ const TOOLS = [
     description: 'Ocoya combines AI caption writing with social media scheduling. Write posts, create visuals, and schedule to Instagram, LinkedIn, Twitter, and more — all in one tool.',
     pricing: 'From $15/month', bestFor: 'Social media managers & creators',
     rating: 4.0, lastTested: 'April 2026',
-    seoTitle: 'Ocoya Review 2026 — Better Than Buffer? AI Captions & Pricing Tested | AI Nexus',
+    seoTitle: 'Ocoya Review 2026 — Buffer Alternative, AI Captions & Pricing | AI Nexus',
   },
   {
     slug: 'replit', name: 'Replit', category: 'Coding',
