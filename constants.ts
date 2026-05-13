@@ -133,6 +133,12 @@ export const TOOLS: Tool[] = [
     features: ['7 paraphrasing modes', 'Summariser tool', 'Grammar checker', 'Citation generator'],
     pros: ['Excellent free tier', 'Best paraphrasing quality', 'Very easy to use'],
     cons: ['Not for original content creation', 'Premium needed for all modes'],
+    researchSources: {
+      trustpilot: { rating: 4.5, count: 1243, url: 'https://www.trustpilot.com/review/quillbot.com' },
+      g2: { rating: 4.3, count: 176 },
+      reddit: 'Positive — r/StudentLoans, r/college, r/GradSchool',
+      lastVerified: '2026-05-13',
+    },
   },
   {
     id: 'w5', slug: 'frase',
@@ -168,6 +174,12 @@ export const TOOLS: Tool[] = [
     features: ['Background removal', 'AI background generation', 'Batch editing', 'Brand kits'],
     pros: ['Best background removal available', 'Super fast', 'Works on mobile too'],
     cons: ['Limited to photo editing', 'Watermark on free plan'],
+    researchSources: {
+      trustpilot: { rating: 4.6, count: 2891, url: 'https://www.trustpilot.com/review/www.photoroom.com' },
+      g2: { rating: 4.7, count: 94 },
+      reddit: 'Positive — r/ecommerce, r/Flipping, r/AmazonSeller',
+      lastVerified: '2026-05-13',
+    },
   },
   {
     id: 'i3', slug: 'looka',
@@ -214,6 +226,12 @@ export const TOOLS: Tool[] = [
     features: ['Text to video AI', 'AI script writer', 'AI voiceover', '16M+ media library'],
     pros: ['Entire video from one prompt', 'Great for faceless channels', 'Generous free tier'],
     cons: ['Stock footage can look generic', 'Needs editing for premium feel'],
+    researchSources: {
+      trustpilot: { rating: 4.5, count: 672, url: 'https://www.trustpilot.com/review/invideo.io' },
+      g2: { rating: 4.5, count: 531 },
+      reddit: 'Positive — r/passive_income, r/youtubers, r/videography',
+      lastVerified: '2026-05-13',
+    },
   },
 
   // AUDIO

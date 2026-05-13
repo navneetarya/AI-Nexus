@@ -128,6 +128,73 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           </p>
         </div>
 
+        {/* W4-T4: Research criteria scoring section ─────────────────────────────────
+             Audit finding: Methodology page lacked a transparent breakdown of HOW each
+             criterion is weighted, which reduces E-E-A-T trust signals and makes it
+             harder for AI engines to extract structured evaluation logic.
+             This section adds a scored criteria table (matching the 5-dimension rating
+             system described in the comparison tables section above) so both human readers
+             and AI engines can see exactly what each star rating is built from.
+        */}
+        <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
+            How each rating is scored
+          </h2>
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 20px', fontWeight: 300 }}>
+            The 5 criteria behind every tool's rating — and how much each one weighs
+          </p>
+
+          {[
+            {
+              icon: BadgeDollarSign,
+              label: 'Pricing fairness',
+              weight: '25%',
+              desc: 'Does the price reflect real-world value at the feature tier? Compared against direct competitors at the same price bracket. INR equivalent is checked against purchasing power parity — a ₹1,500/month tool is held to a different standard than a $15/month USD-priced tool.',
+            },
+            {
+              icon: Star,
+              label: 'Free plan quality',
+              weight: '20%',
+              desc: 'Is the free plan genuinely usable, or is it a locked demo designed to frustrate? A free plan scores high if a real user can accomplish meaningful work without paying. Word limits, watermarks, export restrictions, and credit-card requirements are all counted against.',
+            },
+            {
+              icon: CheckCircle,
+              label: 'Output accuracy',
+              weight: '25%',
+              desc: 'Does the tool do what it claims, reliably? For writing tools: grammar accuracy and output coherence. For image tools: prompt adherence and consistency. Measured against verified G2, Capterra, and Trustpilot data — not the tool\'s own marketing claims.',
+            },
+            {
+              icon: FlaskConical,
+              label: 'Ease of use',
+              weight: '15%',
+              desc: 'Can a non-technical user accomplish the core task within 10 minutes of signing up? Based on usability scores from verified review platforms and the documented onboarding flow. Tools that require CLI setup or documentation-heavy configuration score lower here.',
+            },
+            {
+              icon: ShieldCheck,
+              label: 'Reliability & support',
+              weight: '15%',
+              desc: 'Does the tool stay up, and does the company respond when things go wrong? Outage history from verified sources, support response time from user reports, and billing/cancellation transparency all factor in. Subscription traps (hard to cancel, unexpected charges) drop the score significantly.',
+            },
+          ].map(({ icon: Icon, label, weight, desc }, i, arr) => (
+            <div key={i} style={{ display: 'flex', gap: 14, marginBottom: i < arr.length - 1 ? 20 : 0, alignItems: 'flex-start', paddingBottom: i < arr.length - 1 ? 20 : 0, borderBottom: i < arr.length - 1 ? `1px solid ${C.barBrd}` : 'none' }}>
+              <div style={{ width: 36, height: 36, borderRadius: 10, background: C.a1card, border: `1px solid ${C.a1brd}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 1 }}>
+                <Icon size={15} color={C.a1} />
+              </div>
+              <div style={{ flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 5 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt }}>{label}</span>
+                  <span style={{ fontSize: 11, fontWeight: 600, color: C.a1, background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 100, padding: '2px 10px', letterSpacing: '0.06em' }}>{weight}</span>
+                </div>
+                {/* Weight bar */}
+                <div style={{ height: 4, background: C.barBg, borderRadius: 99, marginBottom: 8, overflow: 'hidden' }}>
+                  <div style={{ height: '100%', width: weight, background: `linear-gradient(90deg,${C.a1},${C.a2})`, borderRadius: 99 }} />
+                </div>
+                <div style={{ fontSize: 13, color: C.mut, lineHeight: 1.7, fontWeight: 300 }}>{desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
         {/* What I don't do */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.02em' }}>

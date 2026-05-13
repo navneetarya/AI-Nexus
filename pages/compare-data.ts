@@ -23,8 +23,6 @@ export interface CompareArticle {
   metaDescription: string;
   keyword: string;
   publishDate: string;
-  /** W3-T3: "Last verified" freshness signal — renders near page title as "Comparison last verified: May 2026" */
-  lastUpdated?: string;
   /** AEO A4: 40–60 word "Quick Answer" box — Google featured snippet target for "[A] vs [B]" queries.
    *  Rendered immediately below the H1 with role="note". Directly answers which tool wins and for whom. */
   quickAnswer: string;
@@ -65,10 +63,9 @@ export const COMPARE_ARTICLES: CompareArticle[] = [
     slug: 'rytr-vs-writesonic',
     title: 'Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?',
     seoTitle: 'Rytr vs Writesonic (2026): Pick the Right One',
-    metaDescription: 'Rytr vs Writesonic compared for solopreneurs and freelancers. Real pricing, output quality, and an honest verdict on which AI writer wins. Updated May 2026.',
+    metaDescription: 'Rytr vs Writesonic compared for solopreneurs and freelancers. Real pricing, output quality, and an honest verdict on which AI writer wins in 2026.',
     keyword: 'rytr vs writesonic',
     publishDate: 'April 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Rytr ($9/month unlimited) is better for short-form copy — social captions, emails, and ad variations. Writesonic ($19/month) is better for full SEO blog posts of 1,500+ words. If you write short-form content regularly, choose Rytr. If long-form Google-ranking content is your main output, choose Writesonic. Both have free plans.',
     intro: `I've run both of these tools side-by-side for content work over the past several months — paid accounts on both, same prompts, same use cases. Here's the honest breakdown.
 
@@ -155,10 +152,9 @@ The mistake is paying Writesonic prices for Rytr-level output needs. Be honest a
     slug: 'grammarly-vs-quillbot',
     title: 'Grammarly vs QuillBot (2026): Which Should You Actually Use?',
     seoTitle: 'Grammarly vs QuillBot (2026): Honest Winner Declared',
-    metaDescription: 'Grammarly vs QuillBot compared for writers, students, and professionals. Real breakdown of what each tool does, where each wins, and which to use. Updated May 2026.',
+    metaDescription: 'Grammarly vs QuillBot compared for writers, students, and professionals. Real breakdown of what each tool does, where each wins, and which to use in 2026.',
     keyword: 'grammarly vs quillbot',
     publishDate: 'April 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Grammarly is better for catching grammar and tone errors as you write original content. QuillBot is better for paraphrasing and rewriting existing text. Students needing citations and paraphrasing should choose QuillBot. Professionals writing original emails and documents should choose Grammarly. Many writers use both — they solve different problems.',
     intro: `These two tools get compared constantly — and almost always by people who don't clearly understand what each one is actually built to do. Grammarly and QuillBot are not the same kind of product.
 
@@ -240,7 +236,6 @@ The best setup if budget allows: use both. Grammarly while you write, QuillBot w
     metaDescription: 'Ocoya, Buffer, and Hootsuite compared for solopreneurs. Real pricing, honest AI features, and which tool wins for content creators in 2026.',
     keyword: 'ocoya vs buffer vs hootsuite',
     publishDate: 'April 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Ocoya ($15/month) wins for solopreneurs who want AI caption writing and scheduling in one tool. Buffer is better for detailed analytics with a simpler interface. Hootsuite suits large agency teams managing 20+ accounts. For most solo creators and small businesses, Ocoya provides more value at a lower price than either alternative.',
     intro: `I've spent the past year managing social media for several side projects, running paid accounts on all three of these tools at different points. Here's the honest breakdown — no affiliate cheerleading, no hedging.
 
@@ -360,7 +355,6 @@ The question that simplifies the choice: do you already have a reliable way to w
     metaDescription: 'Podcastle vs Descript compared for podcasters and indie creators. Breakdown of recording quality, editing experience, AI features, and pricing in 2026.',
     keyword: 'podcastle vs descript',
     publishDate: 'April 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Podcastle is better for recording — especially remote guest interviews and AI audio cleanup. Descript is better for editing: its text-based editor lets you cut audio by deleting transcript words. If you record podcasts and want studio-quality results without editing complexity, choose Podcastle. If you produce video podcasts and need precise editing control, choose Descript.',
     intro: `I've used both Podcastle and Descript for podcast production over the past year — recording solo episodes, recording remote guests, editing transcripts, cleaning up audio. Here's the real comparison.
 
@@ -466,7 +460,6 @@ The tools are complementary more than competitive. Some serious podcast teams us
     metaDescription: 'Leonardo.ai vs Midjourney compared for creators and designers. Real output quality, pricing, commercial rights, and which image AI wins in 2026.',
     keyword: 'leonardo ai vs midjourney',
     publishDate: 'April 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Midjourney produces the most visually stunning AI images but runs entirely inside Discord with no free plan. Leonardo.ai offers comparable quality with a proper web interface, 150 free credits daily, and custom model training for consistent characters. For game developers and creators needing control and a free tier, Leonardo.ai wins. For pure aesthetic quality, Midjourney wins.',
     intro: `I've used both of these tools extensively — generating product visuals, character concepts, social graphics, and game assets across paid accounts on both. Here's the honest comparison.
 
@@ -563,10 +556,9 @@ The practical advice: start with Leonardo.ai's free plan. If you consistently fi
     slug: 'replit-vs-github-copilot',
     title: 'Replit vs GitHub Copilot (2026): Which AI Coding Tool Is Right for You?',
     seoTitle: 'Replit vs GitHub Copilot: Which AI Coder Wins?',
-    metaDescription: 'Replit vs GitHub Copilot compared for beginners and developers. What each tool does, where each wins, and which AI coding tool to use in 2026.',
+    metaDescription: 'Replit builds the whole app. Copilot autocompletes inside VS Code. Completely different tools — here\'s which one you actually need (and when to use both) in 2026.',
     keyword: 'replit vs github copilot',
     publishDate: 'April 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Replit is a full browser-based coding environment — zero setup, instant deployment, 50+ languages. GitHub Copilot is an AI code autocomplete tool inside VS Code and JetBrains. Beginners and indie developers should start with Replit. Experienced developers already using VS Code should add GitHub Copilot. They are complementary, not competing tools.',
     intro: `This comparison comes up constantly, and almost always misses the point: Replit and GitHub Copilot are not the same kind of tool. Comparing them directly is like comparing a kitchen to a chef's knife. One is an environment; the other is an instrument inside an environment.
 
@@ -659,10 +651,9 @@ The honest summary: most beginners and indie developers will get more value from
     slug: 'taskade-vs-notion',
     title: 'Taskade vs Notion (2026): Which AI Productivity Tool Actually Gets Work Done?',
     seoTitle: 'Taskade vs Notion (2026): Which Is Better for Solo Use?',
-    metaDescription: 'I tested both for 30 days — Taskade vs Notion compared for freelancers and small teams. Breakdown of AI features, project management, knowledge base, and pricing. Updated May 2026.',
+    metaDescription: 'I tested both for 30 days — Taskade vs Notion compared for freelancers and small teams. Breakdown of AI features, project management, knowledge base capabilities, and pricing in 2026.',
     keyword: 'taskade vs notion',
     publishDate: 'April 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Taskade is better for task management and execution — its AI agents automate project setup in seconds. Notion is better as a knowledge base and document wiki. Small teams and freelancers who want to ship work faster should choose Taskade. Teams building a company knowledge base or handling complex databases should choose Notion. Both have functional free plans.',
     intro: `I ran both of these tools simultaneously for four months — Notion for one client project, Taskade for another — specifically to see which one actually moved work forward faster. Here's what I found.
 
@@ -757,10 +748,9 @@ The most common mistake: choosing Notion for execution work (where the setup ove
     slug: 'grammarly-vs-writesonic',
     title: 'Grammarly vs Writesonic (2026): Which AI Writing Tool Is Right for You?',
     seoTitle: 'Grammarly vs Writesonic (2026): Which One to Buy?',
-    metaDescription: 'I tested both for 30 days — Grammarly vs Writesonic compared for freelancers, bloggers, and content creators. One fixes your writing; the other generates it. Updated May 2026.',
+    metaDescription: 'Grammarly fixes your writing. Writesonic generates it. Two very different tools — tested both for 30 days. Here\'s the honest verdict on which one is worth your money in 2026.',
     keyword: 'grammarly vs writesonic',
     publishDate: 'May 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Grammarly fixes and improves writing you already have — grammar, tone, clarity. Writesonic generates new written content from a brief or keyword. If you write your own content and want it to be better, choose Grammarly (free plan available). If you need AI to write first drafts of blog posts or marketing copy for you, choose Writesonic from $19/month.',
     intro: `I've used both tools as part of my daily writing workflow for over a year — Grammarly running in the background for everything I type, Writesonic for generating first drafts of blog content. The comparison comes up constantly, and the honest answer is that these tools solve different problems.
 
@@ -858,7 +848,6 @@ The mistake to avoid: buying Writesonic's paid tier expecting it to fix your gra
     metaDescription: 'Murf AI vs ElevenLabs compared for content creators and podcasters. Real voice quality, pricing, and an honest verdict on which AI voice tool wins in 2026.',
     keyword: 'murf ai vs elevenlabs',
     publishDate: 'May 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Murf AI is better for structured production workflows — video timeline sync, eLearning narration, and a polished studio interface. ElevenLabs has the most realistic voice cloning available and a more generous free tier (10,000 characters/month vs Murf\'s 10 minutes). For general professional voiceovers, choose Murf. For cloning a specific voice, choose ElevenLabs.',
     intro: `I've generated voiceovers with both tools across dozens of projects — explainer videos, YouTube narrations, podcast intros, and training materials. The comparison comes up constantly among content creators, and the honest answer is that these tools have genuinely different strengths.
 
@@ -960,7 +949,6 @@ The practical advice: start with Murf AI's free plan (10 minutes/month) to test 
     metaDescription: 'I tested both for 30 days — Taskade vs Asana compared for freelancers and small teams. AI features, pricing, and an honest verdict on which project management tool wins in 2026.',
     keyword: 'taskade vs asana',
     publishDate: 'May 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Asana is better for established teams with complex workflows, approval chains, and enterprise reporting. Taskade is better for individuals, freelancers, and small teams who want AI-powered task automation without Asana\'s complexity or price. Asana free plan caps at 15 users with limited features. Taskade\'s free plan gives full AI access for small teams.',
     intro: `I've used Asana for client project management for three years and switched one of my own businesses to Taskade in 2025. The comparison matters a lot right now: Asana is the established enterprise-grade project management tool; Taskade is the AI-native challenger that's been quietly building a serious product.
 
@@ -1062,7 +1050,6 @@ The switching cost is low enough to test: Taskade's free plan is functional and 
     metaDescription: 'PhotoRoom vs Remove.bg compared for e-commerce sellers and creators. Real accuracy tests, free plan breakdown, and which background remover to use in 2026.',
     keyword: 'photoroom vs remove.bg',
     publishDate: 'May 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Remove.bg is faster for one-off single image background removal — free for low resolution, credits for HD. PhotoRoom does everything Remove.bg does plus AI background replacement, shadow effects, and batch processing for e-commerce. For occasional quick removals, use Remove.bg free. For regular product photography, PhotoRoom\'s $9.99/month Pro plan is the better long-term tool.',
     intro: `I've run both tools on the same set of 60 product images — jewellery, clothing, glass bottles, hair, and furry plush toys — and counted the manual touch-ups each one needed. Here's the honest result.\n\nShort answer: Remove.bg is faster for single images when speed is everything. PhotoRoom is the better long-term tool for anyone doing product photography regularly — it removes backgrounds AND lets you replace them, apply shadows, and export in batch. Same core technology, very different scope.`,
     sections: [
@@ -1111,10 +1098,9 @@ The switching cost is low enough to test: Taskade's free plan is functional and 
     slug: 'writesonic-vs-jasper',
     title: 'Writesonic vs Jasper (2026): Which AI Writing Tool Is Actually Worth the Money?',
     seoTitle: 'Writesonic vs Jasper 2026 — Tested & Compared',
-    metaDescription: 'Writesonic vs Jasper compared for bloggers and marketing teams. Real pricing, SEO features, output quality, and an honest verdict on which AI writer wins. Updated May 2026.',
+    metaDescription: 'Writesonic vs Jasper compared for bloggers and marketing teams. Real pricing, SEO features, output quality, and an honest verdict on which AI writer wins in 2026.',
     keyword: 'writesonic vs jasper',
     publishDate: 'May 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Writesonic ($16/month) delivers 90% of Jasper\'s output quality at less than half the price. Jasper ($39+/month) is better for enterprise marketing teams needing brand voice consistency across multiple writers. For solo bloggers, freelancers, and small businesses, Writesonic is the smarter investment. Choose Jasper only if brand governance across a team is a non-negotiable requirement.',
     intro: `I've run paid accounts on both Writesonic and Jasper for over a year — same briefs, same content types, same deadlines. The comparison comes up constantly from freelancers and small marketing teams trying to decide where to put their budget, and the honest answer is simpler than most reviews make it.
 
@@ -1208,7 +1194,6 @@ The mistake most people make: paying Jasper prices for individual use. If you're
     metaDescription: 'Grammarly vs ProWritingAid compared for writers of all types. Real accuracy tests, pricing, and which grammar checker wins for business writing vs fiction in 2026.',
     keyword: 'grammarly vs prowritingaid',
     publishDate: 'May 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Grammarly is more accurate for everyday grammar checking and works across 500+ apps seamlessly. ProWritingAid is better for long-form fiction and creative writers who need style analysis, pacing reports, and manuscript-level editing — at a lower price ($8/month vs $12/month). For business writing and emails, choose Grammarly. For novels and academic writing, choose ProWritingAid.',
     intro: `I've used both tools daily for over a year — Grammarly running in my browser for emails and professional writing, ProWritingAid open in a separate tab for long-form content editing. The comparison comes up constantly, and most reviews don't address the real difference clearly enough.
 
@@ -1302,7 +1287,6 @@ Many serious writers use both: Grammarly in the browser for everyday writing, Pr
     metaDescription: 'Leonardo.ai vs Stable Diffusion compared for creators and developers. Ease of use, output quality, pricing, and which AI image tool to choose in 2026.',
     keyword: 'leonardo ai vs stable diffusion',
     publishDate: 'May 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Leonardo.ai is better for most creators — web-based, free plan with 150 daily tokens, and no technical setup required. Stable Diffusion is better for technical users who want complete control over models, training, and generation parameters on their own hardware. If you want to generate images now without a learning curve, choose Leonardo.ai. If you want unlimited local generation with full customisation, choose Stable Diffusion.',
     intro: `I've used Leonardo.ai's web platform for commercial content work and run Stable Diffusion locally on my own GPU for experimental and fine-tuning projects. The comparison comes up constantly, and most articles fail to acknowledge the fundamental difference: one is a product, the other is an open-source framework.
 
@@ -1402,7 +1386,6 @@ The practical path: start with Leonardo.ai's free plan. If you find yourself hit
     metaDescription: 'Gamma vs Beautiful.ai compared for founders, students, and professionals. Free plans, AI generation speed, design quality, and which presentation tool wins in 2026.',
     keyword: 'gamma vs beautiful ai',
     publishDate: 'May 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'Gamma is better for most users — its free plan is genuinely useful, AI deck generation takes under 2 minutes, and the output looks stunning with minimal effort. Beautiful.ai is better for corporate teams needing strict brand controls and slide-level design consistency. For individuals, students, and startups, Gamma wins on value, speed, and output quality.',
     intro: `I've built presentations with both tools for pitch decks, client reports, workshop slides, and internal strategy documents. The comparison matters because both tools promise the same thing — AI that designs presentations for you — but they deliver on that promise very differently.
 
@@ -1502,7 +1485,6 @@ The simple test: create a pitch deck in Gamma's free plan. If the output quality
     metaDescription: 'InVideo AI vs Pictory compared for content creators and marketers. Real output quality, pricing, and which text-to-video tool wins for YouTube and repurposing in 2026.',
     keyword: 'invideo vs pictory',
     publishDate: 'May 2026',
-    lastUpdated: 'May 2026',
     quickAnswer: 'InVideo AI is better for creating original videos from a text prompt — complete with script, voiceover, stock footage, and captions. Pictory is better for repurposing existing blog posts and long-form text into short branded videos. For faceless YouTube channels, choose InVideo AI. For turning written content into video, choose Pictory.',
     intro: `I've produced videos with both tools over the past eight months — faceless YouTube content with InVideo AI, blog-to-video repurposing with Pictory. The comparison is important because both call themselves "text-to-video" tools, but they interpret that phrase very differently.
 

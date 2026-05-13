@@ -29,11 +29,13 @@ import post18 from './how-to-use-ai-for-content-creation-2026';
 import post19 from './best-ai-tools-in-india-2026';
 // W3-T3: India freelancers post — KD 8, 1,100/mo, zero competition from MarketerMilk
 import post20 from './best-ai-tools-for-freelancers-india-2026';
+// W2-T2: India students post — KD 4, 2,400/mo, free plan focus for Indian college students
+import post21 from './best-free-ai-tools-for-students-in-india-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
   post1, post2, post3, post4, post5, post6, post7, post8,
   post9, post10, post11, post12, post13, post14, post15,
-  post16, post17, post18, post19, post20,
+  post16, post17, post18, post19, post20, post21,
 ];
 
 export type { BlogPost };

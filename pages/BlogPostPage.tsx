@@ -169,10 +169,23 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
         width: 1200,
         height: 630,
       },
+      // W4-T2: @id links this Person entity to the canonical About page URL so Google's
+      // Knowledge Graph can reliably associate "Navneet Arya" with ainexustools.online.
+      // sameAs array cross-links the author's LinkedIn, Twitter, and GitHub profiles —
+      // AI engines (Perplexity, ChatGPT, Google AIO) use these to verify author identity
+      // and boost E-E-A-T signals on every blog post. Mirrors the AUTHOR_SAME_AS array
+      // used in prerender.mjs so static and client-side schemas stay in sync.
       author: {
         '@type': 'Person',
+        '@id': `${SITE_CONFIG.siteUrl}/about/#author`,
         name: post.author,
         url: `${SITE_CONFIG.siteUrl}/about`,
+        sameAs: [
+          'https://www.linkedin.com/in/navneetarya/',
+          'https://twitter.com/ainexustools',
+          `${SITE_CONFIG.siteUrl}/about/`,
+          'https://github.com/navneetarya',
+        ],
       },
       publisher: {
         '@type': 'Organization',

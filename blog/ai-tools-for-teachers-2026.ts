@@ -8,7 +8,7 @@ const post: BlogPost = {
   slug: 'ai-tools-for-teachers-2026',
   title: 'Best AI Tools for Teachers in 2026 — Save Hours Every Week',
   seoTitle: 'Best AI Tools for Teachers 2026 — Tested',
-  metaDescription: 'Gamma, Grammarly, Notion AI, and Rytr compared for real teaching tasks — lesson plans, presentations, feedback, and worksheets. Here is what actually saves time in 2026.',
+  metaDescription: 'Tested 6 AI tools on real teacher tasks: lesson plans in 4 mins, worksheet generation, student feedback drafts, and slide decks. Here\'s what actually saves hours — free plans included.',
   datePublished: '2026-05-05',
   dateModified: '2026-05-08',
   author: 'Navneet Arya',
