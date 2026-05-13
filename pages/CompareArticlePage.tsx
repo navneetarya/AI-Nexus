@@ -307,7 +307,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
             border: `1px solid ${C.a1brd}`,
             padding: '3px 10px', borderRadius: 100,
           }}>
-            🗓 Last verified: {article.publishDate}
+            🗓 Last verified: {article.lastUpdated ?? article.publishDate}
           </span>
           <span style={{ color: C.a1, fontWeight: 600 }}>Independently reviewed — no paid placements</span>
         </div>
