@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Tool } from '../types';
-import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award, Scale, Sun, Moon, BookOpen, Layers } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award, Scale, Sun, Moon, BookOpen, Layers, Shield } from 'lucide-react';
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS, TOOLS } from '../constants';
 import { SharedNav } from './SharedNav';
 import { COMPARE_ARTICLES } from './compare-data';
@@ -661,6 +661,9 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                   <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2 }}>
                     <User size={12} /> Reviewed by {SITE_CONFIG.authorName}
                   </span>
+                  <a href="/methodology/" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 11, color: C.a1, textDecoration: 'none', fontWeight: 600 }}>
+                    <Shield size={11} /> How we research
+                  </a>
                   {content?.timeUsed && (
                     <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: accent, fontWeight: 500 }}>
                       <Award size={12} /> {content.timeUsed}

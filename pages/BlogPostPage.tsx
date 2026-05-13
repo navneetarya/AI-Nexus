@@ -1,5 +1,6 @@
 // pages/BlogPostPage.tsx
 import React, { useEffect, useMemo, useState } from 'react';
+import { Shield } from 'lucide-react';
 import { SharedNav } from './SharedNav';
 import { BlogPost } from '../blog/index';
 import { SITE_CONFIG, TOOLS } from '../constants';
@@ -302,9 +303,10 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
                 padding: '5px 12px', borderRadius: 8,
                 background: C.a1card, border: `1px solid ${C.a1brd}`,
                 fontWeight: 600,
+                display: 'inline-flex', alignItems: 'center', gap: 4,
               }}
             >
-              See how I test →
+              <Shield size={11} /> How we research →
             </span>
           </div>
         </div>

@@ -78,7 +78,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(22px,4vw,32px)', color: C.txt, margin: '0 0 4px', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
                   {SITE_CONFIG.authorName}
                 </h1>
-                <div style={{ fontSize: 13, color: C.mut2 }}>Founder, AI Nexus</div>
+                <div style={{ fontSize: 13, color: C.mut2 }}>AI Automation &amp; Performance Testing Leader · BOLD &nbsp;|&nbsp; Founder, AI Nexus</div>
               </div>
             </div>
 
