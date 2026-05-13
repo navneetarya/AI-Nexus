@@ -102,6 +102,7 @@ const post: BlogPost = {
   <li><strong>Unlimited ($29/month):</strong> No limits, team features, dedicated account manager</li>
 </ul>
 <p><strong>Honest verdict:</strong> The output quality is good for short-form content — ad copy, social posts, email intros. Long-form blog posts need heavier editing, but that's true of every AI writing tool at this price point. Verified user feedback across G2 and Reddit consistently highlights the template variety and the generous free plan as the strongest differentiators.</p>
+<p><a href="/compare/rytr-vs-writesonic" style="color:#0D9488;font-weight:600;">→ Rytr vs Writesonic — which AI writing tool is right for beginners?</a></p>
 
 <h2>3. QuillBot — Best for Rewriting and Summarising</h2>
 <p><strong>Rating: 4.3/5 · Free plan: 125 words per paraphrase</strong></p>

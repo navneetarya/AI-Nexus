@@ -53,6 +53,18 @@ export interface Tool {
 
   /** W3-1: ISO 8601 date the tool was last tested — used in Review schema dateModified */
   lastTestedISO?: string;
+
+  /**
+   * W2-T1 (no-screenshot variant): Research basis data shown as a visible citation bar
+   * on the tool page. Replaces the screenshot requirement by surfacing the independent
+   * data sources that back up the review — satisfying EEAT Trustworthiness for quality raters.
+   */
+  researchSources?: {
+    trustpilot?: { rating: number; count: number; url: string };
+    g2?: { rating: number; count: number };
+    reddit?: string;          // e.g. "Positive — r/Blogging, r/freelanceWriters"
+    lastVerified: string;     // ISO 8601 — "2026-05-12"
+  };
 }
 
 export interface FilterState {

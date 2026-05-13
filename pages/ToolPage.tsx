@@ -741,6 +741,77 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </div>
         )}
 
+        {/* ── W2-T1 (no-screenshot variant): Research Basis citation bar ──────────────
+             Surfaces the independent data sources backing this review so Google quality
+             raters can verify the research basis without needing screenshots.
+             Only renders when tool.researchSources is populated in constants.ts.        */}
+        {tool.researchSources && (
+          <div
+            aria-label={`Research basis for ${tool.name} review`}
+            style={{
+              background: 'linear-gradient(135deg, rgba(13,148,136,.06), rgba(13,148,136,.03))',
+              border: '1px solid rgba(13,148,136,.2)',
+              borderRadius: 12,
+              padding: '14px 18px',
+              marginBottom: 20,
+              display: 'flex',
+              flexWrap: 'wrap' as const,
+              alignItems: 'center',
+              gap: 10,
+            }}
+          >
+            {/* Label */}
+            <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 11, fontWeight: 700, textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: C.a1, flexShrink: 0 }}>
+              <Check size={12} /> Research Basis
+            </span>
+
+            <span style={{ width: 1, height: 16, background: 'rgba(13,148,136,.25)', flexShrink: 0 }} />
+
+            {/* Trustpilot */}
+            {tool.researchSources.trustpilot && (
+              <a
+                href={tool.researchSources.trustpilot.url}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2, textDecoration: 'none', fontWeight: 500 }}
+                aria-label={`${tool.name} Trustpilot rating`}
+              >
+                <Star size={12} color="#22c55e" fill="#22c55e" />
+                <span><strong style={{ color: C.txt }}>{tool.researchSources.trustpilot.rating}/5</strong> Trustpilot</span>
+                <span style={{ color: C.mut2 }}>({tool.researchSources.trustpilot.count.toLocaleString()} reviews)</span>
+              </a>
+            )}
+
+            {/* G2 */}
+            {tool.researchSources.g2 && (
+              <>
+                <span style={{ color: C.mut2, fontSize: 12 }}>·</span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2, fontWeight: 500 }}>
+                  <Star size={12} color="#f97316" fill="#f97316" />
+                  <span><strong style={{ color: C.txt }}>{tool.researchSources.g2.rating}/5</strong> G2</span>
+                  <span style={{ color: C.mut2 }}>({tool.researchSources.g2.count.toLocaleString()} reviews)</span>
+                </span>
+              </>
+            )}
+
+            {/* Reddit */}
+            {tool.researchSources.reddit && (
+              <>
+                <span style={{ color: C.mut2, fontSize: 12 }}>·</span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: C.mut2, fontWeight: 500 }}>
+                  <Award size={12} color={C.a1} />
+                  <span>Reddit: <strong style={{ color: C.txt }}>{tool.researchSources.reddit}</strong></span>
+                </span>
+              </>
+            )}
+
+            {/* Last verified */}
+            <span style={{ marginLeft: 'auto', fontSize: 11, color: C.mut2, flexShrink: 0 }}>
+              Verified {tool.researchSources.lastVerified}
+            </span>
+          </div>
+        )}
+
         {/* ── AEO A3: "What is [Tool]?" — featured snippet target for "[tool] review" queries ── */}
         {content?.whatIs && (
           <section

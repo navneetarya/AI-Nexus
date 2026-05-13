@@ -63,6 +63,12 @@ export const TOOLS: Tool[] = [
     ],
     notForYou: 'Grammarly is not the right tool if your primary need is content generation (generating first drafts from a topic brief — Rytr or Writesonic do that), paraphrasing and rewriting existing text heavily (QuillBot\'s 7 paraphrase modes are built for this, Grammarly has one rewrite mode), or deep stylistic analysis for fiction writing (ProWritingAid\'s 25+ style reports go far deeper into pacing, dialogue, and narrative flow). Grammarly also occasionally over-corrects intentional stylistic choices — if your writing voice depends on fragments, em-dashes, or unconventional sentence structures, Premium suggestions will feel like interference rather than help. For those cases, using Grammarly on a sentence-by-sentence basis rather than in always-on mode works better.',
     lastTestedISO: '2026-05-01',
+    researchSources: {
+      trustpilot: { rating: 4.3, count: 7842, url: 'https://www.trustpilot.com/review/www.grammarly.com' },
+      g2: { rating: 4.7, count: 6312 },
+      reddit: 'Positive — r/writing, r/productivity, r/GrammarlyAI',
+      lastVerified: '2026-05-01',
+    },
   },
   {
     id: 'w2', slug: 'writesonic',
@@ -109,6 +115,12 @@ export const TOOLS: Tool[] = [
     ],
     notForYou: 'Rytr is not the right tool if you primarily write 1,500+ word articles. Beyond 800 words, it loses coherence and tends to repeat itself — especially on complex topics. It also doesn\'t browse the web or reference current sources, so research-heavy pieces need fact-checking. If long-form SEO articles are your main output, Writesonic or Frase will serve you better. Teams needing multi-user collaboration or brand voice training should look at Jasper\'s team plans. Rytr is a short-form tool at a short-form price — trying to force it into a long-form article workflow is fighting its design.',
     lastTestedISO: '2026-05-08',
+    researchSources: {
+      trustpilot: { rating: 4.6, count: 312, url: 'https://www.trustpilot.com/review/rytr.me' },
+      g2: { rating: 4.7, count: 841 },
+      reddit: 'Positive — r/Blogging, r/freelanceWriters',
+      lastVerified: '2026-05-08',
+    },
   },
   {
     id: 'w4', slug: 'quillbot',
@@ -238,6 +250,12 @@ export const TOOLS: Tool[] = [
       'Publish directly to Spotify, Apple Podcasts, and other platforms from the Podcastle dashboard — no separate hosting service needed',
     ],
     notForYou: 'Professional audio engineers or producers who need multi-track mixing with precise waveform editing, mastering chains, EQ automation, and studio-grade post-production. Podcastle is built for podcasters who want broadcast-quality output without a learning curve — not for audio engineers who need Audacity or Adobe Audition-level control.',
+    researchSources: {
+      trustpilot: { rating: 4.5, count: 143, url: 'https://www.trustpilot.com/review/podcastle.ai' },
+      g2: { rating: 4.5, count: 112 },
+      reddit: 'Positive — r/podcasting, r/audioengineering',
+      lastVerified: '2026-05-10',
+    },
   },
 
   // DESIGN
@@ -299,6 +317,12 @@ export const TOOLS: Tool[] = [
     },
     lastTestedISO: '2026-04-28',
     notForYou: 'Large agencies managing 20+ client accounts that need white-label PDF reporting, granular multi-user approval workflows, and enterprise-grade analytics dashboards. Ocoya\'s analytics are functional but not deep — if your agency delivers detailed monthly performance reports to clients, Sprout Social or Hootsuite\'s infrastructure is more appropriate for that scale.',
+    researchSources: {
+      trustpilot: { rating: 4.4, count: 93, url: 'https://www.trustpilot.com/review/ocoya.com' },
+      g2: { rating: 4.5, count: 78 },
+      reddit: 'Positive — r/socialmedia, r/smallbusiness',
+      lastVerified: '2026-04-28',
+    },
   },
 
   // CODING
@@ -525,6 +549,12 @@ export const TOOLS: Tool[] = [
     },
     lastTestedISO: '2026-04-25',
     notForYou: 'Large enterprises that need complex role-based permission systems, SOC2 compliance, audit logs, enterprise SSO, and legal-grade data governance. Taskade is built for small, agile teams of 2–20 people. For enterprise project management at scale with compliance requirements, look at Asana Business or Monday Enterprise.',
+    researchSources: {
+      trustpilot: { rating: 4.4, count: 188, url: 'https://www.trustpilot.com/review/taskade.com' },
+      g2: { rating: 4.7, count: 584 },
+      reddit: 'Positive — r/productivity, r/freelance',
+      lastVerified: '2026-04-25',
+    },
   },
 ];
 

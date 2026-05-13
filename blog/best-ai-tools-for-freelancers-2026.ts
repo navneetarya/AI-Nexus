@@ -52,7 +52,7 @@ const post: BlogPost = {
 <p><strong>Category: Productivity · Rating: 4.1/5 · Free: available · Paid: from $8/month</strong></p>
 <p>Taskade is a project management and notes tool with AI built into every feature. You can generate a project plan from a single sentence, create SOPs for recurring client work, summarise meeting notes, and manage tasks — all within one app.</p>
 <p>For freelancers, the most valuable feature is the AI Workflow Generator. Describe a project ("create a 4-week content strategy for a skincare brand") and Taskade generates a full task breakdown with subtasks, timelines, and notes. It's not perfect, but it's a 10-minute starting point that saves you from building briefs from scratch.</p>
-<p><a href="/tools/taskade" style="color:#0D9488;font-weight:600;">→ Full Taskade review</a> &nbsp;·&nbsp; <a href="/compare/taskade-vs-notion" style="color:#0D9488;font-weight:600;">→ Taskade vs Notion — which is better for freelancers?</a></p>
+<p><a href="/tools/taskade" style="color:#0D9488;font-weight:600;">→ Full Taskade review</a> &nbsp;·&nbsp; <a href="/compare/taskade-vs-notion" style="color:#0D9488;font-weight:600;">→ Taskade vs Notion — which is better for freelancers?</a> &nbsp;·&nbsp; <a href="/compare/taskade-vs-asana" style="color:#0D9488;font-weight:600;">→ Taskade vs Asana — full comparison</a></p>
 
 <h2>4. Ocoya — AI Social Media for Freelancers Managing Client Accounts</h2>
 <p><strong>Category: Social Media · Rating: 4.0/5 · Free: trial · Paid: from $15/month</strong></p>
