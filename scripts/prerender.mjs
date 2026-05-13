@@ -56,6 +56,7 @@ const TOOLS = [
     description: 'Grammarly checks grammar, spelling, tone, and clarity across every app you use — from Gmail to Google Docs. The most widely used AI writing tool in the world.',
     pricing: 'Free + $12/month', bestFor: 'Everyone who writes',
     rating: 4.5, lastTested: 'May 2026',
+    seoTitle: 'Grammarly Review 2026 — Is Premium Worth $12/month? | AI Nexus',
     metaDescription: 'Is Grammarly Premium worth $12/month? Researched against 5 alternatives — here\'s who should pay, who should stay on the free plan, and when QuillBot wins instead.',
     reviewBody: 'Grammarly is the most widely adopted AI writing assistant available — 40 million users, integrations with 500+ apps, and a free plan with no word limit. The browser extension works across Gmail, Google Docs, LinkedIn, Word, and virtually every text field in Chrome. Free plan covers grammar, spelling, and punctuation. Premium ($12/month) adds tone detection, full-sentence clarity rewrites, vocabulary suggestions, and plagiarism checking. The most useful Premium feature for professionals is the full-sentence rewrite — it doesn\'t just flag passive voice, it rewrites the entire sentence in active voice so you can accept with one click. The plagiarism checker scans against 16 billion web pages, adequate for academic and professional use. Main limitation: Grammarly applies formal grammar rules to intentionally casual or creative writing. If your writing style relies on fragments, em-dashes, or unconventional structure, Premium suggestions feel like interference. In that case, disable the extension per-site. The free plan remains the strongest no-cost writing tool for everyday use.',
   },
@@ -72,6 +73,7 @@ const TOOLS = [
     description: 'Rytr is one of the most affordable AI writing tools. Write bios, ads, landing pages, and emails in 30+ languages with a free plan that actually works.',
     pricing: 'Free + $9/month', bestFor: 'Budget-conscious creators',
     rating: 4.0, lastTested: 'May 2026',
+    seoTitle: 'Rytr Review 2026 — Free Plan Limits, $9/mo Pricing & Who It\'s For | AI Nexus',
     metaDescription: 'Rytr at $9/month unlimited sounds too good to be true. After analysing 400+ user reviews and the full feature set — here\'s the honest verdict on who it actually works for in 2026.',
     reviewBody: 'Rytr is the best-value AI writing tool in 2026 for short-to-medium content. The $9/month Saver plan gives unlimited characters — no credit count nonsense — plus 40+ content templates covering cold emails, ad copy, blog outlines, product descriptions, and social captions. The free plan gives 10,000 characters/month with no credit card, enough to test the tool on real work before committing. The 40+ use-case templates are Rytr\'s biggest differentiator — instead of a blank chat prompt, you pick a content type, enter a brief (topic + keywords + tone), and Rytr generates 3 variants in under 10 seconds. For structured content types this workflow is significantly faster than ChatGPT. The main limitation is long-form: beyond 800 words, Rytr tends to repeat itself and lose coherence. It doesn\'t browse the web or reference current sources, so research-heavy pieces need fact-checking. For freelancers writing client content (emails, ads, bios, social) in volume, the $9/month unlimited plan is one of the clearest value-to-cost propositions in the category. Hindi, Spanish, French, and 27 other languages are supported — output quality in Hindi is solid for short-form content.',
   },
@@ -144,6 +146,7 @@ const TOOLS = [
     description: 'Podcastle gives you studio-quality recording, AI-powered noise removal, and one-click publishing. Record remotely with guests and let AI clean up the audio automatically.',
     pricing: 'Free + from $11.99/month', bestFor: 'Podcasters & interviewers',
     rating: 4.2, lastTested: 'April 2026',
+    seoTitle: 'Podcastle Review 2026 — Free Plan, AI Noise Removal & Honest Verdict | AI Nexus',
   },
   {
     slug: 'gamma', name: 'Gamma', category: 'Design',
@@ -165,6 +168,7 @@ const TOOLS = [
     description: 'Ocoya combines AI caption writing with social media scheduling. Write posts, create visuals, and schedule to Instagram, LinkedIn, Twitter, and more — all in one tool.',
     pricing: 'From $15/month', bestFor: 'Social media managers & creators',
     rating: 4.0, lastTested: 'April 2026',
+    seoTitle: 'Ocoya Review 2026 — Better Than Buffer? AI Captions & Pricing Tested | AI Nexus',
   },
   {
     slug: 'replit', name: 'Replit', category: 'Coding',
@@ -186,6 +190,7 @@ const TOOLS = [
     description: 'Taskade combines AI task management, project planning, and team chat in one workspace. Build custom AI agents to automate your workflows and handle repetitive tasks.',
     pricing: 'Free + from $8/month', bestFor: 'Freelancers & small teams',
     rating: 4.2, lastTested: 'April 2026',
+    seoTitle: 'Taskade Review 2026 — AI Agents, Free Plan & Real Use Cases | AI Nexus',
   },
   // ── Week 1 Fix: 5 tools present in constants.ts but missing from prerender ──
   // Without these entries, /tools/elevenlabs/, /tools/jasper/, /tools/descript/,
@@ -505,27 +510,29 @@ function readTemplate() {
  * Injects page-specific meta into the HTML template.
  * Modifies: title, description, canonical, og:*, twitter:*, robots, schemas.
  */
-// W2-T3: Per-page-type OG image selection — differentiates social shares.
-// When you create og-compare.png, og-blog-writing.png, etc. in Canva (1200×630),
-// place them in public/ and they'll be used automatically.
+// W4-T2: Per-page-type OG image selection — category-specific WebP images (30–34 KB each).
+// All images generated at 1200×630px in WebP for performance (vs PNG ~4–8× larger).
+// Files live in public/ — generated by scripts/generate-og-images.mjs.
 function resolveOgImage(slug) {
-  if (slug.startsWith('compare/')) return `${SITE}/og-compare.png`;
+  if (slug.startsWith('compare/')) return `${SITE}/og-compare.webp`;
   if (slug.startsWith('blog/')) {
-    // Map blog post categories to OG images
     const post = BLOG_POSTS.find(p => `blog/${p.slug}` === slug);
     if (post) {
-      const title = post.title.toLowerCase();
-      if (title.includes('podcast') || title.includes('audio') || title.includes('voice'))
-        return `${SITE}/og-blog-audio.png`;
-      if (title.includes('writing') || title.includes('grammarly') || title.includes('rytr') || title.includes('jasper'))
-        return `${SITE}/og-blog-writing.png`;
-      if (title.includes('video') || title.includes('invideo'))
-        return `${SITE}/og-blog-video.png`;
+      const t = post.title.toLowerCase();
+      // India-specific posts get their own OG image for niche positioning
+      if (t.includes('india') || t.includes('inr') || t.includes('indian'))
+        return `${SITE}/og-india-guide.webp`;
+      if (t.includes('podcast') || t.includes('audio') || t.includes('voice'))
+        return `${SITE}/og-blog-audio.webp`;
+      if (t.includes('video') || t.includes('invideo') || t.includes('pictory'))
+        return `${SITE}/og-blog-video.webp`;
+      if (t.includes('writing') || t.includes('grammarly') || t.includes('rytr') || t.includes('jasper') || t.includes('alternatives'))
+        return `${SITE}/og-blog-writing.webp`;
     }
-    return `${SITE}/og-blog-writing.png`;
+    return `${SITE}/og-blog-writing.webp`;
   }
-  if (slug.startsWith('tools/')) return `${SITE}/og-tool-review.png`;
-  return `${SITE}/og-image.png`;
+  if (slug.startsWith('tools/')) return `${SITE}/og-tool-review.webp`;
+  return `${SITE}/og-image.png`; // homepage/static pages keep existing PNG
 }
 
 function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, bodyHtml = null, readTimeHtml = '', ogImage = null }) {
@@ -900,7 +907,7 @@ function faqSchema(faqs) {
 const BLOG_POSTS = [
   {
     slug: 'best-ai-writing-tools-for-beginners-2026',
-    title: 'Best AI Writing Tools for Beginners 2026 — Tested & Ranked',
+    title: '7 Best AI Writing Tools for Beginners 2026 — Free Options Included',
     metaDescription: 'New to AI writing tools? Compared Rytr, Grammarly, QuillBot, and Writesonic for complete beginners — here\'s the exact order to try them and what each one is actually for.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
@@ -928,7 +935,7 @@ const BLOG_POSTS = [
   // ── Week 4 additions ──────────────────────────────────────────────────────
   {
     slug: 'best-grammarly-alternatives',
-    title: 'Best Grammarly Alternatives in 2026 — Tested & Ranked',
+    title: 'Best Grammarly Alternatives 2026 — Cheaper Options Tested & Ranked',
     metaDescription: 'Researched 8 Grammarly alternatives so you don\'t waste $12/month. QuillBot wins for students, Rytr for content creators — and 2 genuinely free options are worth knowing.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
@@ -1189,7 +1196,7 @@ const BLOG_POSTS = [
   },
   {
     slug: 'best-ai-tools-in-india-2026',
-    title: 'Best AI Tools in India 2026 — INR Pricing, Free Plans & Honest Reviews',
+    title: 'Best AI Tools in India 2026 — INR Pricing, Free Plans & Honest Rankings',
     metaDescription: 'The best AI tools available in India in 2026 — with actual INR pricing, free plan details, Hindi support info, and honest verdicts. No VPN needed for any of these.',
     datePublished: '2026-05-12',
     dateModified: '2026-05-12',
@@ -1211,7 +1218,8 @@ const template = readTemplate();
 console.log('Tool pages:');
 for (const tool of TOOLS) {
   const canonical = `${SITE}/tools/${tool.slug}/`;
-  const title = `${tool.name} Review ${YEAR} — Independently Reviewed | AI Nexus`;
+  // W4-T1: Use seoTitle if set (CTR-optimised format from GSC data); fall back to generic.
+  const title = tool.seoTitle ?? `${tool.name} Review ${YEAR} — Independently Reviewed | AI Nexus`;
   const description = tool.metaDescription || `${tool.name} review — independently researched. ${tool.tagline}. Honest verdict by ${AUTHOR}. No sponsored reviews.`;
 
   const schemas = [
