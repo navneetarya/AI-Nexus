@@ -155,6 +155,26 @@ const post: BlogPost = {
 </ul>
 <p>For a broader look at AI tools suited to Indian creators and freelancers across all categories, see: <a href="/blog/best-ai-tools-in-india-2026" style="color:#0D9488;font-weight:600;">Best AI Tools in India 2026 — Full Researcher's Guide</a> and <a href="/blog/best-ai-tools-for-freelancers-india-2026" style="color:#0D9488;font-weight:600;">Best AI Tools for Freelancers in India 2026</a>.</p>
 
+<h2>Before You Go Live: 5 Things to Check With Any AI Logo</h2>
+<p>Whether you use Canva, Looka, Leonardo, or Hatchful, run through this checklist before putting your AI logo on a business card, website, or client deliverable. Skipping these steps is where most people waste money reprinting or rebranding within six months.</p>
+<ol style="margin:12px 0 12px 24px;line-height:2.4;">
+  <li>
+    <strong>Check legibility at small sizes.</strong> Paste your logo into a WhatsApp message thumbnail (32×32px). If you cannot read the brand name or identify the icon, the design is too detailed for real-world use. Simplify or choose a different variation before finalising.
+  </li>
+  <li>
+    <strong>Test on white AND dark backgrounds.</strong> Most Indian freelancers work across both — light mode for client emails, dark mode for Instagram Stories. Download a version for each background before sharing with a client.
+  </li>
+  <li>
+    <strong>Check for accidental similarity.</strong> Google your logo concept (e.g. "minimalist triangle tech logo teal") and review image results. AI generators pull from common design patterns. If your logo resembles a well-known brand mark, change the icon shape or colour before using it commercially.
+  </li>
+  <li>
+    <strong>Download SVG, not just PNG.</strong> PNG breaks at large print sizes. SVG scales infinitely and is what printers, web developers, and professional designers will ask for. Canva Pro (₹499/month) and Looka both provide SVG. On free plans, check whether SVG is available before committing to a tool for commercial work.
+  </li>
+  <li>
+    <strong>Save your source files before sharing.</strong> Once you hand a PNG to a client, they will use it in sizes and formats you did not plan for. Keep the editable source — Canva project link, Looka editor URL, or Leonardo generation prompt — so you can regenerate at any dimension later.
+  </li>
+</ol>
+
 <h2>Final Verdict: Best Free AI Logo Maker in 2026</h2>
 <ol style="margin:12px 0 12px 24px;line-height:2.2;">
   <li><strong>Best free overall:</strong> Canva AI — free downloads, templates, ecosystem, and INR pricing make it the clear winner for most users</li>

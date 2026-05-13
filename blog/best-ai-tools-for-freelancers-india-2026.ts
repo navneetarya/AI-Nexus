@@ -10,8 +10,8 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-tools-for-freelancers-india-2026',
   title: 'Best AI Tools for Freelancers in India 2026 — Free Plans, INR Pricing & What Actually Works',
-  seoTitle: 'Best AI Tools for Freelancers in India 2026 — Free Plans & INR Pricing',
-  metaDescription: 'The best AI tools for Indian freelancers in 2026 — with INR pricing, free tiers that need no credit card, and picks from Fiverr and Upwork India communities. Independently researched.',
+  seoTitle: 'Best AI Tools for Freelancers India 2026 — INR Pricing',
+  metaDescription: 'AI tools for Indian freelancers 2026 — INR pricing, free tiers without a credit card, Fiverr and Upwork India picks. Independently researched.',
   datePublished: '2026-05-13',
   dateModified: '2026-05-13',
   author: 'Navneet Arya',
