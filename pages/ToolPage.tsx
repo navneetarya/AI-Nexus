@@ -731,7 +731,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                 <User size={16} color="#fff" />
               </div>
               <div>
-                <div style={{ fontSize: 13, fontWeight: 700, color: C.txt }}>Tested by Navneet Arya</div>
+                <div style={{ fontSize: 13, fontWeight: 700, color: C.txt }}>Researched by Navneet Arya</div>
                 <div style={{ fontSize: 12, color: C.mut }}>{content.timeUsed}</div>
               </div>
             </div>
@@ -952,7 +952,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               {sectionTitle('My honest take')}
               {/* Author byline */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 16px', background: cardBg, borderRadius: 12, border: `1px solid ${cardBrd}`, marginBottom: 18 }}>
-                <div style={{ width: 36, height: 36, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 13, color: '#fff', flexShrink: 0 }}>NA</div>
+                <img src="/author-photo.jpg" alt="Navneet Arya, independent AI researcher and founder of AI Nexus" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' as const, flexShrink: 0 }} />
                 <div>
                   <div style={{ fontSize: 13, fontWeight: 600, color: C.txt }}>{SITE_CONFIG.authorName}</div>
                   <div style={{ fontSize: 11, color: C.mut2 }}>{SITE_CONFIG.authorExperience} · researched {tool.name} · {content.timeUsed}</div>
@@ -961,7 +961,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.8, fontWeight: 300, margin: '0 0 18px' }}>{content.myTake}</p>
 
               {/* Use cases */}
-              <div style={{ fontSize: 12, fontWeight: 600, color: accent, letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Real use cases I tested</div>
+              <div style={{ fontSize: 12, fontWeight: 600, color: accent, letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Real-world use cases</div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 8 }}>
                 {content.useCases.map((u, i) => (
                   <div key={i} style={{ padding: '10px 14px', background: cardBg, borderRadius: 10, border: `1px solid ${cardBrd}`, fontSize: 13, color: C.txt, lineHeight: 1.5 }}>
