@@ -329,6 +329,7 @@ export function SharedNav({
               { label: 'Compare',   fn: handleCompare  },
               { label: 'About',     fn: handleAbout    },
               { label: 'Blog',      fn: handleBlog     },
+              { label: 'Privacy Policy', fn: () => { closeMobile(); navigate('/privacy'); } },
             ].map(({ label, fn }) => (
               <button
                 key={label}
@@ -359,6 +360,43 @@ export function SharedNav({
           </div>
         )}
       </nav>
+      {/* W1-T3: Site footer — Privacy Policy visibility for Google Quality Raters */}
+      <footer style={{
+        background: C.surf,
+        borderTop: `1px solid ${C.barBrd}`,
+        padding: '14px 20px',
+      }}>
+        <div style={{
+          maxWidth: 1200, margin: '0 auto',
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          flexWrap: 'wrap' as const, gap: 10,
+        }}>
+          <div style={{ fontSize: 12, color: C.mut2 }}>
+            © {new Date().getFullYear()} AI Nexus · ainexustools.online
+          </div>
+          <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap' as const }}>
+            {[
+              { label: 'Privacy Policy', path: '/privacy' },
+              { label: 'Disclosure',     path: '/disclosure' },
+              { label: 'Methodology',    path: '/methodology' },
+              { label: 'About',          path: '/about' },
+            ].map(({ label, path }) => (
+              <button
+                key={path}
+                onClick={() => navigate(path)}
+                style={{
+                  fontSize: 12, color: C.mut2, background: 'none',
+                  border: 'none', cursor: 'pointer', padding: 0,
+                  fontFamily: "'Inter', system-ui, sans-serif",
+                  textDecoration: 'none',
+                }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

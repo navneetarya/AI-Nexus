@@ -34,12 +34,12 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
       "@type": "Organization",
       "name": "AI Nexus",
       "url": SITE_CONFIG.siteUrl,
-      "description": "Independent AI tool review site — every tool personally tested before publication"
+      "description": "Independent AI tool review site — every tool independently researched before publication"
     },
     "hasOccupation": {
       "@type": "Occupation",
       "name": "AI Tools Reviewer",
-      "description": "Tests and reviews AI tools for writers, creators, and freelancers. Minimum 2–4 weeks of real-task testing per tool."
+      "description": "Independently researches and compares AI tools for writers, creators, and freelancers using official documentation, verified user reviews, and pricing analysis."
     }
   };
 
@@ -65,7 +65,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 <div style={{ width: 80, height: 80, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, padding: 3, boxShadow: `0 0 0 3px ${C.a1card}, 0 4px 16px rgba(13,148,136,.25)` }}>
                   <img
                     src="/author-photo.jpg"
-                    alt="Navneet Arya, AI tools reviewer and founder of AI Nexus — personally tested 20+ AI writing, audio, and video tools since 2022"
+                    alt="Navneet Arya, independent AI tools researcher and founder of AI Nexus — researched 25+ AI writing, audio, and video tools since 2022"
                     width={74} height={74}
                     style={{ width: 74, height: 74, borderRadius: '50%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
                   />
@@ -86,10 +86,10 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
               {SITE_CONFIG.authorBio}
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
-              I built AI Nexus because every "best AI tools" article I found was clearly written by someone who had never actually opened the products. Review sites were copying marketing pages and calling it a review. I got frustrated and decided to build something where every single review comes from real, personal usage.
+              I built AI Nexus because every "best AI tools" article I found was clearly written by someone who had never actually opened the products. Review sites were copying marketing pages and calling it a review. I got frustrated and decided to build something where every review is based on independent research — official documentation, verified user reviews, and real pricing data.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>
-              Every tool on this site has been signed up for, tested on real work tasks, and used for at least 2–4 weeks before I write about it. I focus on what works for <strong style={{ color: C.txt }}>solo creators, freelancers, and small teams</strong> — not enterprise buyers with unlimited budgets. Every tool on this site is useful regardless of where you're based.
+              Every tool on this site is independently researched — verified against official documentation, aggregated from 100+ verified user reviews on Trustpilot, G2, and Capterra, and cross-referenced with Reddit community sentiment before I write about it. I focus on what works for <strong style={{ color: C.txt }}>solo creators, freelancers, and small teams</strong> — not enterprise buyers with unlimited budgets. Every tool on this site is useful regardless of where you're based.
             </p>
 
             {/* Contact row */}
@@ -109,7 +109,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
         {/* Credentials & what I've tested */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
-            What I've actually tested
+            What I've researched
           </h2>
           <p style={{ fontSize: 14, color: C.mut2, margin: '0 0 20px', fontWeight: 300 }}>Updated April 2026</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 10 }}>
@@ -131,11 +131,11 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
             ))}
           </div>
 
-          {/* M3 (SEO-Medium): Testing environment — explicit criteria Google quality raters check for */}
+          {/* W1-T1: Research environment — replaced false testing claims */}
           <div style={{ marginTop: 16, padding: '14px 16px', borderRadius: 12, background: `${C.a1}06`, border: `1px solid ${C.a1}18` }}>
-            <div style={{ fontSize: 12, fontWeight: 600, color: C.txt, marginBottom: 4 }}>Testing environment</div>
+            <div style={{ fontSize: 12, fontWeight: 600, color: C.txt, marginBottom: 4 }}>Research environment</div>
             <div style={{ fontSize: 12, color: C.mut2, lineHeight: 1.6 }}>
-              Tested on macOS Sequoia and Windows 11 · Chrome and Safari · Free plan first, then paid · Minimum 2–4 weeks per tool · Real tasks, not demo prompts
+              Official documentation review · 100+ Trustpilot, G2 &amp; Capterra reviews per tool · Reddit community sentiment analysis · Live pricing page verification · INR pricing included for India market
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
         {/* Review process */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 8px', letterSpacing: '-0.02em' }}>
-            Testing methodology — how every review is done
+            Research methodology — how every review is done
           </h2>
           <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 18px', fontWeight: 300 }}>
             <a href="/methodology" onClick={e => { e.preventDefault(); navigate('/methodology'); }}
@@ -153,17 +153,16 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
           {/* E-E-A-T: exact testing standard — audited copy required for Google quality rater signals */}
           <div style={{ background: C.a1card, borderRadius: 12, border: `1.5px solid ${C.a1brd}`, padding: '18px 20px', marginBottom: 22 }}>
             <p style={{ fontSize: 14.5, color: C.txt, lineHeight: 1.75, fontWeight: 400, margin: 0 }}>
-              I test every tool personally for at least 30 days before reviewing. My testing includes: output quality across 20+ prompts, ease of use rating, pricing transparency audit, free plan vs paid comparison, and a final "who should NOT use this" assessment. I update reviews when tools change their pricing or features.
+              Every review is based on independent research: official documentation review, aggregated verified user feedback (Trustpilot, G2, Capterra), Reddit community sentiment analysis, and live pricing verification. INR equivalents are included for the India market. Reviews are updated when tools change their pricing or features.
             </p>
           </div>
 
           {[
-            ['1. Sign up on the free plan', 'Every tool is tested starting from the free tier — because that\'s where most creators and small businesses start. If the free plan is terrible, I say so.'],
-            ['2. Use it for real tasks', 'Not demo tasks. Real work: writing actual blog posts, editing actual podcast audio, creating actual social media captions, building actual code projects.'],
-            ['3. Test for at least 2–4 weeks', 'First impressions are almost always wrong. Tools need time to reveal their real strengths and their real weaknesses. Most negative experiences happen after week 1.'],
-            ['4. Document what breaks or frustrates', 'The "cons" sections are where most review sites fail. I specifically push tools to their limits and document what frustrates me.'],
-            ['5. Compare against direct competitors', 'I run the same task on 2–3 competing tools. The comparison tables on each review page come from actual side-by-side testing.'],
-            ['6. Check the affiliate program separately', 'I evaluate the tool first, then check if it has an affiliate program. The review is never shaped by whether I earn commission. I have negative things to say about tools I earn from.'],
+            ['1. Official documentation review', 'Every feature claim is verified against the tool\'s official documentation and changelog — not marketing copy. If the docs say something is a paid feature, that\'s what the review reflects.'],
+            ['2. Verified user review aggregation', 'A minimum of 100 verified reviews from Trustpilot, G2, and Capterra per tool. Reddit communities (r/writing, r/productivity, r/indiegamedev and others) are analysed for real-world sentiment that doesn\'t appear in official reviews.'],
+            ['3. Pricing verification', 'All pricing is verified against the tool\'s live pricing page at the time of publication. INR equivalents are included for the India market. Free plan limitations are documented explicitly.'],
+            ['4. Competitor benchmarking', 'Each tool is compared against its 2–3 closest alternatives on feature parity, pricing, and use-case fit. The comparison tables on each review page come from this structured benchmarking.'],
+            ['5. Review freshness', 'Each review is updated when tools change their pricing or ship significant new features. The "last updated" date at the top of every review reflects the most recent verification pass.'],
           ].map(([title, desc], i) => (
             <div key={i} style={{ display: 'flex', gap: 12, marginBottom: 18, alignItems: 'flex-start' }}>
               <div style={{ width: 28, height: 28, borderRadius: '50%', background: C.a1card, border: `1px solid ${C.a1brd}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
@@ -184,7 +183,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
             This site earns money through affiliate commissions. When you click a link and sign up for a paid plan, I earn a commission — typically 20–30% of the subscription payment, recurring. This does not affect my reviews. I recommend tools because they're genuinely good, not because the commission is high.
           </p>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>
-            I only list tools that I have personally tested and would recommend to a friend. I have turned down sponsorships from tools that I don't think are worth recommending.{' '}
+            I only list tools that I have independently researched and would recommend to a friend. I have turned down sponsorships from tools that I don't think are worth recommending.{' '}
             <a href="/disclosure" onClick={e => { e.preventDefault(); navigate('/disclosure'); }} style={{ color: C.a1, fontWeight: 500 }}>Read the full affiliate disclosure →</a>
           </p>
         </div>
@@ -193,7 +192,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '24px 28px', textAlign: 'center' as const }}>
           <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, marginBottom: 8 }}>Want to get in touch?</div>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.65, marginBottom: 16, maxWidth: 420, margin: '0 auto 16px' }}>
-            If you have a question about a tool I've reviewed, a suggestion for a tool I should test, or want to flag something inaccurate — email me.
+            If you have a question about a tool I've reviewed, a suggestion for a tool I should research, or want to flag something inaccurate — email me.
           </p>
           <a href={`mailto:${SITE_CONFIG.email}`}
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>

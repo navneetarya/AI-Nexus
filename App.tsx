@@ -13,6 +13,7 @@ import { BLOG_POSTS } from './blog/index';
 const ToolPage           = React.lazy(() => import('./pages/ToolPage').then(m => ({ default: m.ToolPage })));
 const AboutPage          = React.lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })));
 const DisclosurePage     = React.lazy(() => import('./pages/DisclosurePage').then(m => ({ default: m.DisclosurePage })));
+const PrivacyPage        = React.lazy(() => import('./pages/PrivacyPage').then(m => ({ default: m.PrivacyPage })));
 const MethodologyPage    = React.lazy(() => import('./pages/MethodologyPage').then(m => ({ default: m.MethodologyPage })));
 const BlogPage           = React.lazy(() => import('./pages/BlogPage').then(m => ({ default: m.BlogPage })));
 const BlogPostPage       = React.lazy(() => import('./pages/BlogPostPage').then(m => ({ default: m.BlogPostPage })));
@@ -193,6 +194,19 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <DisclosurePage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/privacy') {
+    updateMeta(
+      'Privacy Policy | AI Nexus',
+      'Privacy policy for AI Nexus (ainexustools.online). How we handle data, Google Analytics usage, cookies, and your rights.',
+      `${SITE_CONFIG.siteUrl}/privacy/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <PrivacyPage navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }
