@@ -96,9 +96,11 @@ else:
 section("CHECK 2 · Old static shell removed")
 
 OLD_SHELL_MARKERS = [
-    ("Old centered H1 text gone",    "Deep-Researched AI Tool Reviews"),
-    ("Old subtitle text gone",       "Research-backed comparisons so you don't have to"),
-    ("Old narrow hero div gone",     "padding:72px 24px 48px;text-align:center"),
+    ("Old centered H1 text gone",        "Deep-Researched AI Tool Reviews"),
+    ("Old subtitle text gone",           "Research-backed comparisons so you don't have to"),
+    ("Old narrow hero div gone",         "padding:72px 24px 48px;text-align:center"),
+    ("Old M-shape logo path gone",       "M12 28V12h4l4 10"),
+    ("OS matchMedia fallback gone",      "matchMedia('(prefers-color-scheme"),
 ]
 for label, needle in OLD_SHELL_MARKERS:
     (ok if needle not in src else fail)(label)
@@ -120,9 +122,21 @@ SKELETON_MARKERS = [
     ("Filter tabs skeleton present",           "border-radius:100px"),
     ("Search bar skeleton present",            "height:44px;border-radius:12px"),
     ("max-width matches React (1200px)",       "max-width:1200px"),
+    # Bug 1 fix: NexusIcon logo
+    ("NexusIcon N-logo in skeleton nav",       'stroke="rgba(255,255,255,.55)"'),
+    ("NexusIcon diagonal line present",        'x1="10" y1="10" x2="30" y2="30"'),
+    ("NexusIcon centre circle present",        'cx="20" cy="20" r="5.6"'),
+    # Bug 2 fix: theme default alignment
+    ("Theme init defaults to dark (no OS pref)", "prefers-color-scheme" not in
+        src.split("ainexus-theme")[1][:400] if "ainexus-theme" in src else False),
+    ("Theme init hard-codes 'dark' fallback",  ": 'dark'" in src or ": \"dark\"" in
+        (src.split("ainexus-theme")[1][:400] if "ainexus-theme" in src else "")),
 ]
-for label, needle in SKELETON_MARKERS:
-    (ok if needle in src else fail)(label)
+for label, value in SKELETON_MARKERS:
+    if isinstance(value, bool):
+        (ok if value else fail)(label)
+    else:
+        (ok if value in src else fail)(label)
 
 # ── Count skeleton elements ───────────────────────────────────────────────────
 sk_count = src.count('class="skeleton"')
@@ -163,7 +177,7 @@ PRESERVED = [
     ("Canonical URL",                                 "canonical"),
     ("OG image tag",                                  "og:image"),
     ("#root div present",                             'id="root"'),
-    ("Nav logo SVG intact",                           "M12 28V12h4l4 10"),
+    ("Nav logo SVG intact (NexusIcon)",               'stroke="rgba(255,255,255,.55)"'),
     ("AI Nexus brand name in nav",                    "AI Nexus"),
 ]
 for label, needle in PRESERVED:

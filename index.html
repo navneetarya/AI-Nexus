@@ -345,11 +345,14 @@
       @keyframes shimmer{0%{background-position:-400px 0}to{background-position:400px 0}}
       .skeleton{background:linear-gradient(90deg,var(--surf) 25%,var(--brd) 37%,var(--surf) 63%);background-size:800px 100%;animation:shimmer 1.4s infinite;border-radius:8px}
     </style>
-    <!-- Theme init: apply saved preference before paint to avoid flash -->
+    <!-- Theme init: apply saved preference before paint to avoid flash.
+         Default is 'dark' — MUST match App.tsx getInitialTheme() which returns 'dark'
+         when no saved pref exists. Using OS pref here caused a light→dark flash on
+         first visit for users whose OS is light mode. -->
     <script>
       (function() {
   var saved = localStorage.getItem('ainexus-theme');
-  var theme = (saved === 'dark' || saved === 'light') ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  var theme = (saved === 'dark' || saved === 'light') ? saved : 'dark';
   document.documentElement.setAttribute('data-theme', theme);
 })();
     </script>
@@ -365,7 +368,19 @@
         <!-- ── Nav: identical to React nav so it never moves ── -->
         <nav style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:var(--bar-bg);backdrop-filter:blur(14px);border-bottom:1px solid var(--bar-brd)">
           <div style="display:flex;align-items:center;gap:8px">
-            <svg width="32" height="32" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="12" fill="var(--a1)"/><path d="M12 28V12h4l4 10 4-10h4v16h-3V17l-4 11h-2l-4-11v11h-3z" fill="#fff"/></svg>
+            <!-- NexusIcon — identical geometry to SharedNav.tsx NexusIcon, scaled to 40×40 box -->
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="12" fill="var(--a1)"/>
+              <line x1="10" y1="30" x2="10" y2="10" stroke="rgba(255,255,255,.55)" stroke-width="3.2" stroke-linecap="round"/>
+              <line x1="10" y1="10" x2="30" y2="30" stroke="rgba(255,255,255,.55)" stroke-width="3.2" stroke-linecap="round"/>
+              <line x1="30" y1="10" x2="30" y2="30" stroke="rgba(255,255,255,.55)" stroke-width="3.2" stroke-linecap="round"/>
+              <circle cx="10" cy="10" r="4.4" fill="#fff"/>
+              <circle cx="10" cy="30" r="4.4" fill="#fff"/>
+              <circle cx="30" cy="10" r="4.4" fill="#fff"/>
+              <circle cx="30" cy="30" r="4.4" fill="#fff"/>
+              <circle cx="20" cy="20" r="5.6" fill="#fff" opacity=".9"/>
+              <circle cx="20" cy="20" r="2.8" fill="rgba(13,148,136,.7)"/>
+            </svg>
             <span style="font-family:'Inter',sans-serif;font-weight:800;font-size:18px;color:var(--txt)">AI Nexus<span style="color:var(--a1)">.</span></span>
           </div>
           <!-- Nav right: skeleton pills matching React's nav buttons -->
