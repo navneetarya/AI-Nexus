@@ -1247,6 +1247,36 @@ const BLOG_POSTS = [
       { q: 'Are AI tools worth the INR subscription cost for Indian freelancers?', a: "If a ₹750/month Rytr subscription saves you 3 hours of writing time per month, and your hourly rate is ₹500 or above, the tool pays for itself. Start with free plans of Rytr and Grammarly — if they save you time on real work within 2 weeks, the paid plans are worth it." },
     ],
   },
+  // T4.5: 3-way comparison — consolidates taskade-vs-notion + taskade-vs-asana compare pages
+  {
+    slug: 'taskade-vs-notion-vs-asana-2026',
+    title: 'Taskade vs Notion vs Asana 2026 — 3-Way Comparison for Freelancers',
+    metaDescription: 'Taskade vs Notion vs Asana compared for freelancers and small teams. Honest breakdown of AI features, pricing, and which tool actually gets work done in 2026.',
+    datePublished: '2026-05-14',
+    dateModified: '2026-05-14',
+    readTimeMinutes: 8,
+    faqs: [
+      { q: 'Is Taskade better than Notion for freelancers?', a: 'For execution-focused work — getting tasks done and projects moving — Taskade is faster to get into. Its AI agents generate project plans from a description, and the workspace-based pricing ($8/month total, not per user) makes it dramatically cheaper for solo freelancers. Notion is better if you also need a knowledge base, interconnected databases, or a company wiki alongside your task management.' },
+      { q: 'Is Taskade better than Asana for freelancers?', a: 'Yes, for most freelancers. Asana charges per user (Starter: $10.99/month per user), which makes it expensive even solo. Taskade charges per workspace ($8/month regardless of users). For a solo freelancer or a team of 2–4, Taskade is significantly cheaper and has more integrated AI features. Asana becomes worth the cost at mid-size team scale with complex workflows and reporting needs.' },
+      { q: 'What is the pricing difference between Taskade, Notion, and Asana?', a: 'Taskade: Free plan available, paid from $8/month per workspace. Notion: Free plan available, Plus from $10/month per user, with Notion AI as a $10/month add-on. Asana: Free plan (up to 15 users, limited features), Starter from $10.99/month per user, Advanced from $24.99/month per user. For a team of 4, Taskade costs $8/month total vs Asana at $43.96/month and Notion at $40/month plus AI costs.' },
+      { q: 'Can Taskade replace both Notion and Asana?', a: 'Taskade can replace Asana for most freelancers and small teams focused on execution — the AI agents, project views, and workspace pricing make it a viable alternative. Replacing Notion is harder: Taskade lacks Notion\'s interconnected database system, rich knowledge base features, and template ecosystem. For teams that primarily do project execution rather than knowledge management, Taskade is sufficient. Teams with heavy documentation needs will still want Notion.' },
+    ],
+  },
+  // T4.5: Leonardo vs Midjourney free plan blog — expands compare page with free-tier focus
+  {
+    slug: 'leonardo-vs-midjourney-2026',
+    title: 'Leonardo.ai vs Midjourney 2026 — Free Plan Comparison (Which Is Worth It?)',
+    metaDescription: 'Leonardo.ai vs Midjourney compared for 2026 — free plan, image quality, pricing, and commercial rights. Which AI image generator is worth it for creators who can\'t afford to guess?',
+    datePublished: '2026-05-14',
+    dateModified: '2026-05-14',
+    readTimeMinutes: 7,
+    faqs: [
+      { q: 'Does Leonardo.ai have a free plan?', a: 'Yes. Leonardo.ai\'s free plan gives 150 tokens per day — enough to generate approximately 30–40 images daily at standard resolution. Commercial use is permitted even on the free tier. No credit card is required to sign up.' },
+      { q: 'Does Midjourney have a free plan?', a: 'No. As of 2026, Midjourney does not offer a free plan. Subscriptions start at $10/month for the Basic plan, which includes 200 image generations per month. There is no free trial available without a paid subscription.' },
+      { q: 'Is Leonardo.ai as good as Midjourney?', a: 'For most practical creative work — game assets, social media graphics, branded visuals, and concept art with consistent style — Leonardo.ai matches or exceeds Midjourney\'s practical output. For pure aesthetic quality on one-off hero images and portfolio pieces, Midjourney\'s v6.1 model still produces output that is difficult to match. The difference matters for some use cases and not others.' },
+      { q: 'Which AI image generator is better for game developers?', a: 'Leonardo.ai is significantly better for game developers. It has dedicated models trained for game assets, RPG artwork, and concept art. The custom model training lets you maintain visual consistency across a character set — something Midjourney cannot do without external fine-tuning tools. Leonardo\'s free plan (150 tokens/day) is also generous enough to support active game development work.' },
+    ],
+  },
 ];
 console.log('\n🔧  Pre-rendering routes for Google & Bing crawlability...\n');
 

@@ -34,11 +34,18 @@ import post21 from './best-free-ai-tools-for-students-in-india-2026';
 // T2.7: Content creators free post — 3,200/mo, low competition, free-plan focused
 // Target keyword: "best ai tools for content creators free 2026"
 import post22 from './best-ai-tools-for-content-creators-free-2026';
+// T4.5: 3-way comparison blog — consolidates taskade-vs-notion + taskade-vs-asana compare pages
+// Target keyword: "taskade vs notion vs asana" — new 3-way search query
+import post23 from './taskade-vs-notion-vs-asana-2026';
+// T4.5: Leonardo vs Midjourney free plan blog — expands compare page with free-tier focus
+// Target keyword: "leonardo ai vs midjourney 2026" — 1,200/mo, image generator comparison
+import post24 from './leonardo-vs-midjourney-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
   post1, post2, post3, post4, post5, post6, post7, post8,
   post9, post10, post11, post12, post13, post14, post15,
   post16, post17, post18, post19, post20, post21, post22,
+  post23, post24,
 ];
 
 export type { BlogPost };
