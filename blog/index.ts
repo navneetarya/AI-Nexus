@@ -31,11 +31,14 @@ import post19 from './best-ai-tools-in-india-2026';
 import post20 from './best-ai-tools-for-freelancers-india-2026';
 // W2-T2: India students post — KD 4, 2,400/mo, free plan focus for Indian college students
 import post21 from './best-free-ai-tools-for-students-in-india-2026';
+// T2.7: Content creators free post — 3,200/mo, low competition, free-plan focused
+// Target keyword: "best ai tools for content creators free 2026"
+import post22 from './best-ai-tools-for-content-creators-free-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
   post1, post2, post3, post4, post5, post6, post7, post8,
   post9, post10, post11, post12, post13, post14, post15,
-  post16, post17, post18, post19, post20, post21,
+  post16, post17, post18, post19, post20, post21, post22,
 ];
 
 export type { BlogPost };

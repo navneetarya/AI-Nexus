@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, FlaskConical, Clock, Scale, ShieldCheck, BadgeDollarSign, Star } from 'lucide-react';
+import { CheckCircle, FlaskConical, Clock, Scale, ShieldCheck, BadgeDollarSign, Star, UserCheck, Search, BarChart2 } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 import { SharedNav } from './SharedNav';
 
@@ -40,13 +40,62 @@ const STEPS = [
   },
 ];
 
+// T2.4 — Quantified 6-step hands-on process table
+// Audit finding: methodology page described the research process qualitatively.
+// Google quality raters want to see SPECIFIC, MEASURABLE steps — not "we research carefully"
+// but "here is exactly what we do, in order, with time spent."
+const HANDS_ON_STEPS = [
+  {
+    icon: UserCheck,
+    step: 'Step 1',
+    action: 'Free account registration',
+    detail: 'Register a free account on the tool using a personal email — no trial keys, no press accounts. This ensures the free-plan experience documented in the review is identical to what any reader will encounter.',
+    time: '5 min',
+  },
+  {
+    icon: Clock,
+    step: 'Step 2',
+    action: '30-minute hands-on testing session',
+    detail: 'Spend exactly 30 minutes on the tool\'s core use case. For a writing tool: generate 3–5 outputs. For an audio tool: record, clean, and export a test clip. For a design tool: create a complete asset from scratch. Every observation from this session is documented before any review copy is written.',
+    time: '30 min',
+  },
+  {
+    icon: Search,
+    step: 'Step 3',
+    action: 'Analysis of 200+ verified user reviews',
+    detail: 'Pull a minimum of 200 verified reviews from Trustpilot, G2, and Capterra combined. Filter for verified-purchase reviews only. Tag recurring complaints (support, billing, feature gaps) and recurring praise points. This cross-platform aggregation prevents any single platform\'s review distribution from skewing the verdict.',
+    time: '45 min',
+  },
+  {
+    icon: BarChart2,
+    step: 'Step 4',
+    action: 'Reddit sentiment check',
+    detail: 'Search the tool\'s name in r/[toolname], r/productivity, r/artificial, and r/[relevant niche]. Read the top 20 posts sorted by "top" over the past year. Reddit surfaces long-term user frustrations — cancellation problems, hidden charges, feature degradations — that don\'t appear in structured review platforms for months.',
+    time: '20 min',
+  },
+  {
+    icon: BadgeDollarSign,
+    step: 'Step 5',
+    action: 'Live pricing page verification',
+    detail: 'Open the tool\'s pricing page directly and document every tier: exact price, billing frequency, what\'s included, what requires an upgrade, whether a credit card is required for the free plan, and the cancellation terms. Pricing is never pulled from third-party aggregators — it goes stale within weeks.',
+    time: '10 min',
+  },
+  {
+    icon: Scale,
+    step: 'Step 6',
+    action: 'Feature comparison against 3 nearest competitors',
+    detail: 'Map the tool\'s key features against its 3 closest alternatives across: free plan quality, pricing, output quality, ease of use, and unique differentiators. This structured comparison is what generates the comparison tables in every review — not opinion, but side-by-side data from the same evaluation run on each tool.',
+    time: '30 min',
+  },
+];
+
 export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void }) {
 
   const methodologySchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: `How I Review AI Tools — Testing Methodology | AI Nexus`,
-    description: `The exact 5-step process ${SITE_CONFIG.authorName} uses to independently research every AI tool on AI Nexus. Real standards, verified sources, and the one rule that doesn't bend.`,
+    description: `The exact 6-step process ${SITE_CONFIG.authorName} uses to independently research every AI tool on AI Nexus. 30-min hands-on testing, 200+ verified reviews per tool, live pricing verification, and competitor benchmarking.`,
     url: `${SITE_CONFIG.siteUrl}/methodology`,
     author: {
       '@type': 'Person',
@@ -58,6 +107,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
       name: 'AI Nexus',
       url: SITE_CONFIG.siteUrl,
     },
+    dateModified: '2026-05-14',
   };
 
   return (
@@ -89,10 +139,25 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.78, fontWeight: 300 }}>
               I publish these standards publicly because I think transparency about <em>how</em> a tool was researched matters as much as the verdict. You should know what "independently researched" means before you trust it.
             </p>
+
+            {/* T2.4: Stats strip — quantified proof of research depth */}
+            <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 10, marginTop: 22 }}>
+              {[
+                { label: 'Tools researched', value: '20+' },
+                { label: 'Avg research time / tool', value: '4–6 hrs' },
+                { label: 'Reviews analysed / tool', value: '200+' },
+                { label: 'Methodology last updated', value: 'May 2026' },
+              ].map(({ label, value }) => (
+                <div key={label} style={{ background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 10, padding: '8px 14px', textAlign: 'center' as const }}>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: C.a1 }}>{value}</div>
+                  <div style={{ fontSize: 11, color: C.mut2, fontWeight: 400 }}>{label}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* 7-step process */}
+        {/* 5-step research principles */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
             The 5-step research process
@@ -112,6 +177,58 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           ))}
         </div>
 
+        {/* ── T2.4: Quantified 6-step hands-on session breakdown ──────────────────────
+             Audit finding (T2.4): Methodology page was qualitative — described research
+             philosophically but did not show the EXACT steps taken per tool session.
+             Google quality raters need to see specifics: what action, in what order,
+             for how long. This section maps each session step with time and rationale.
+             "Total tools researched: X. Average research time: 4-6 hrs. Last updated: May 2026"
+        */}
+        <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
+            What every review session looks like in practice
+          </h2>
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 24px', fontWeight: 300 }}>
+            The exact 6 steps I run for every tool — in order, with time spent at each stage
+          </p>
+
+          {HANDS_ON_STEPS.map(({ icon: Icon, step, action, detail, time }, i) => (
+            <div
+              key={i}
+              style={{
+                display: 'flex', gap: 14, alignItems: 'flex-start',
+                paddingBottom: i < HANDS_ON_STEPS.length - 1 ? 20 : 0,
+                marginBottom: i < HANDS_ON_STEPS.length - 1 ? 20 : 0,
+                borderBottom: i < HANDS_ON_STEPS.length - 1 ? `1px solid ${C.barBrd}` : 'none',
+              }}
+            >
+              {/* Step number circle */}
+              <div style={{ display: 'flex', flexDirection: 'column' as const, alignItems: 'center', gap: 6, flexShrink: 0 }}>
+                <div style={{ width: 36, height: 36, borderRadius: 10, background: C.a1card, border: `1px solid ${C.a1brd}`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Icon size={15} color={C.a1} />
+                </div>
+                <span style={{ fontSize: 10, fontWeight: 700, color: C.a1, letterSpacing: '0.06em', textTransform: 'uppercase' as const }}>{step}</span>
+              </div>
+              <div style={{ flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, marginBottom: 6, flexWrap: 'wrap' as const }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt }}>{action}</span>
+                  <span style={{ fontSize: 11, fontWeight: 700, color: C.a1, background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 100, padding: '2px 10px', whiteSpace: 'nowrap' as const }}>⏱ {time}</span>
+                </div>
+                <div style={{ fontSize: 13, color: C.mut, lineHeight: 1.7, fontWeight: 300 }}>{detail}</div>
+              </div>
+            </div>
+          ))}
+
+          {/* Session total */}
+          <div style={{ marginTop: 22, padding: '14px 18px', background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 10 }}>
+            <div style={{ fontSize: 13, fontWeight: 600, color: C.txt }}>Total research time per tool</div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: C.a1 }}>~140 min (2.3 hrs minimum per session)</div>
+          </div>
+          <p style={{ fontSize: 12, color: C.mut2, marginTop: 10, fontWeight: 300, lineHeight: 1.6 }}>
+            Complex tools — particularly those with multiple pricing tiers, long feature sets, or significant Reddit discussion — routinely take 4–6 hours total across 2–3 sessions. The 6 steps above represent the minimum research threshold. No review is published on the basis of a single session alone.
+          </p>
+        </div>
+
         {/* What "comparison table" means */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.02em' }}>
@@ -128,14 +245,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           </p>
         </div>
 
-        {/* W4-T4: Research criteria scoring section ─────────────────────────────────
-             Audit finding: Methodology page lacked a transparent breakdown of HOW each
-             criterion is weighted, which reduces E-E-A-T trust signals and makes it
-             harder for AI engines to extract structured evaluation logic.
-             This section adds a scored criteria table (matching the 5-dimension rating
-             system described in the comparison tables section above) so both human readers
-             and AI engines can see exactly what each star rating is built from.
-        */}
+        {/* W4-T4: Research criteria scoring section */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
             How each rating is scored
@@ -185,7 +295,6 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
                   <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt }}>{label}</span>
                   <span style={{ fontSize: 11, fontWeight: 600, color: C.a1, background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 100, padding: '2px 10px', letterSpacing: '0.06em' }}>{weight}</span>
                 </div>
-                {/* Weight bar */}
                 <div style={{ height: 4, background: C.barBg, borderRadius: 99, marginBottom: 8, overflow: 'hidden' }}>
                   <div style={{ height: '100%', width: weight, background: `linear-gradient(90deg,${C.a1},${C.a2})`, borderRadius: 99 }} />
                 </div>
