@@ -38,6 +38,16 @@ export interface CompareArticle {
   faqs: { q: string; a: string }[];
   /** W4-T4: Pricing comparison table — shown below quickAnswer box */
   pricing?: ComparePricing;
+  /** T3.1: Feature-by-feature comparison table — winner badge per row */
+  featureRows?: FeatureRow[];
+}
+
+/** T3.1: One row in the feature comparison table */
+export interface FeatureRow {
+  feature: string;
+  toolA: string;    // value for left tool (comparisonTable[0])
+  toolB: string;    // value for right tool (comparisonTable[1])
+  winner: 'A' | 'B' | 'tie';
 }
 
 export interface CompareSection {
@@ -145,6 +155,16 @@ The mistake is paying Writesonic prices for Rytr-level output needs. Be honest a
       { q: 'Which has a better free plan — Rytr or Writesonic?', a: 'Writesonic\'s free plan includes one full article per month with their Article Writer — more substantial than Rytr\'s 10,000 character (roughly 1,500 word) monthly allowance. For testing long-form quality, Writesonic\'s free tier gives a clearer picture of paid performance.' },
       { q: 'Is Writesonic worth $16/month?', a: 'Writesonic is worth $16/month if you regularly publish long-form SEO content. The Article Writer, Chatsonic chatbot with web access, and SEO checker provide real value for bloggers. If your content is primarily short-form, Rytr\'s $9/month unlimited plan delivers better value.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: '10,000 chars/month',     toolB: '1 article/month',          winner: 'tie' },
+      { feature: 'Paid pricing',        toolA: '$9/mo unlimited',         toolB: '$16/mo limited words',     winner: 'A' },
+      { feature: 'Content type',        toolA: 'Short-form focused',      toolB: 'Long-form + SEO articles', winner: 'tie' },
+      { feature: 'AI model',            toolA: 'GPT-3.5 / proprietary',   toolB: 'GPT-4 / Chatsonic',        winner: 'B' },
+      { feature: 'Language support',    toolA: '30+ languages',           toolB: '25+ languages',            winner: 'A' },
+      { feature: 'Integrations',        toolA: 'Chrome extension + API',  toolB: 'Web app + API',            winner: 'tie' },
+      { feature: 'Customer support',    toolA: 'Chat + email',            toolB: 'Chat + email',             winner: 'tie' },
+      { feature: 'Best for',            toolA: 'Freelancers & solopreneurs', toolB: 'SEO bloggers & teams', winner: 'tie' },
+    ],
   },
 
   // ── grammarly-vs-quillbot ─────────────────────────────────────────────────
@@ -225,6 +245,16 @@ The best setup if budget allows: use both. Grammarly while you write, QuillBot w
       { q: 'Can I use both Grammarly and QuillBot?', a: 'Yes — many writers use both. The workflow is natural: use Grammarly while drafting (it integrates into every app via browser extension), then paste sections into QuillBot to rephrase, simplify, or restructure. They don\'t overlap — they complement each other at different stages of writing.' },
       { q: 'Which has a better free plan?', a: 'Both free plans are genuinely useful. Grammarly\'s free tier has no word limit and integrates into 500+ apps — ideal for everyday grammar checks. QuillBot\'s free plan includes paraphrasing in 2 modes, a grammar checker, summariser (600 words), and citation generator — better for students and researchers.' },
       { q: 'Is Grammarly Premium worth $12/month?', a: 'Grammarly Premium is worth $12/month if writing is central to your work — emails, reports, blog posts, proposals. The tone detection, clarity rewrites, and plagiarism checker add real value. For casual personal writing, the free plan covers most needs without paying for premium.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Unlimited (basic grammar)',  toolB: 'Paraphrase + grammar',     winner: 'tie' },
+      { feature: 'Paid pricing',        toolA: '$12/mo',                    toolB: '$9.95/mo',                 winner: 'B' },
+      { feature: 'Primary use case',    toolA: 'Grammar, tone, rewrites',   toolB: 'Paraphrase & summarise',   winner: 'tie' },
+      { feature: 'Plagiarism checker',  toolA: 'Yes (Premium)',             toolB: 'Yes (Premium)',            winner: 'tie' },
+      { feature: 'Integrations',        toolA: '500+ apps via extension',   toolB: 'Chrome ext + Word plugin', winner: 'A' },
+      { feature: 'Language support',    toolA: 'English only',              toolB: '30+ languages',            winner: 'B' },
+      { feature: 'AI writing assist',   toolA: 'Rewrites & suggestions',    toolB: '7 paraphrase modes',       winner: 'tie' },
+      { feature: 'Best for',            toolA: 'Professional writers',      toolB: 'Students & researchers',   winner: 'tie' },
     ],
   },
 
@@ -345,6 +375,16 @@ The question that simplifies the choice: do you already have a reliable way to w
       { q: 'What is the cheapest social media tool with AI?', a: 'Ocoya at $15/month is the most affordable option that natively combines AI caption writing with social scheduling. Buffer\'s $6/month plan has basic AI suggestions but limited capability. For pure AI content generation separately from scheduling, Rytr ($9/month) produces excellent social media captions.' },
       { q: 'Is Buffer worth paying for in 2026?', a: 'Buffer is worth paying for if you want a clean, simple scheduler and already have a reliable caption-writing system. At $6/month it\'s excellent value for pure scheduling. If you don\'t have a content system and need AI to help write captions, Ocoya at $15/month does both jobs for roughly the same cost as Buffer plus an AI writer.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'No (trial only)',           toolB: 'Yes (3 channels)',         winner: 'B' },
+      { feature: 'Paid pricing',        toolA: 'From $15/mo',              toolB: 'From $6/mo',              winner: 'B' },
+      { feature: 'AI caption gen',      toolA: 'Native platform-aware',    toolB: 'Basic (generic)',         winner: 'A' },
+      { feature: 'Platforms supported', toolA: '7+',                       toolB: '7',                       winner: 'tie' },
+      { feature: 'Analytics',           toolA: 'Built-in',                 toolB: 'Basic on paid',           winner: 'A' },
+      { feature: 'Team collaboration',  toolA: 'Yes',                      toolB: 'Limited free',            winner: 'A' },
+      { feature: 'Best for',            toolA: 'Content + scheduling combo', toolB: 'Simple scheduling',     winner: 'tie' },
+      { feature: 'Setup time',          toolA: '15 mins',                  toolB: '5 mins',                  winner: 'B' },
+    ],
   },
 
   // ── podcastle-vs-descript ─────────────────────────────────────────────────
@@ -450,6 +490,16 @@ The tools are complementary more than competitive. Some serious podcast teams us
       { q: 'Does Descript have podcast hosting?', a: 'No. Descript is a recording and editing tool — you export your finished episode and publish it through a separate hosting platform (Buzzsprout, Podbean, Anchor, etc.). Podcastle has built-in podcast distribution on higher-tier plans, which simplifies the workflow for audio-only podcasters.' },
       { q: 'What is Magic Dust in Podcastle?', a: 'Magic Dust is Podcastle\'s AI audio enhancement feature. It removes background noise, evens out volume levels, and improves voice clarity automatically — without manual audio engineering. Free plan users get 10 hours of Magic Dust per month. Paid plans include unlimited Magic Dust.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (limited hours)',       toolB: 'Yes (1 hour transcription)', winner: 'tie' },
+      { feature: 'Paid pricing',        toolA: 'From $11.99/mo',           toolB: 'From $12/mo',              winner: 'tie' },
+      { feature: 'AI noise removal',    toolA: 'Magic Dust (1-click)',      toolB: 'Studio Sound',             winner: 'A' },
+      { feature: 'Text-based editing',  toolA: 'Basic',                    toolB: 'Full (delete words)',       winner: 'B' },
+      { feature: 'Voice cloning',       toolA: 'Yes',                      toolB: 'Yes (Overdub)',             winner: 'tie' },
+      { feature: 'Video editing',       toolA: 'No',                       toolB: 'Yes',                      winner: 'B' },
+      { feature: 'Mobile app',          toolA: 'iOS + Android',            toolB: 'iOS only',                 winner: 'A' },
+      { feature: 'Best for',            toolA: 'Recording-first podcasters', toolB: 'Post-production editing', winner: 'tie' },
+    ],
   },
 
   // ── leonardo-vs-midjourney ────────────────────────────────────────────────
@@ -549,6 +599,16 @@ The practical advice: start with Leonardo.ai's free plan. If you consistently fi
       { q: 'Which AI image generator is better for game developers?', a: 'Leonardo.ai is significantly better for game developers. It has dedicated models trained for game assets, RPG artwork, and concept art. The custom model training lets you maintain visual consistency across a character set or world — something Midjourney can\'t do without external fine-tuning tools.' },
       { q: 'Can Leonardo.ai match Midjourney quality?', a: 'For photorealistic portraits and purely aesthetic one-off images, Midjourney still has a quality edge. For consistent project work, concept art, and game assets, Leonardo.ai matches or exceeds Midjourney\'s practical output — especially when using the right fine-tuned model for your style.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: '150 tokens/day',            toolB: 'No free tier',             winner: 'A' },
+      { feature: 'Paid pricing',        toolA: 'From $12/mo',              toolB: 'From $10/mo',              winner: 'B' },
+      { feature: 'Image quality',       toolA: 'Photorealistic + stylised', toolB: 'Artistic & stylised',     winner: 'tie' },
+      { feature: 'Fine-tuning models',  toolA: 'Yes (custom models)',       toolB: 'No',                      winner: 'A' },
+      { feature: 'API access',          toolA: 'Yes',                      toolB: 'No public API',            winner: 'A' },
+      { feature: 'Prompt interface',    toolA: 'Web app',                  toolB: 'Discord bot',              winner: 'A' },
+      { feature: 'Style variety',       toolA: 'Very high',                toolB: 'High (artistic)',          winner: 'tie' },
+      { feature: 'Best for',            toolA: 'Creators & developers',    toolB: 'Artistic visual work',     winner: 'tie' },
+    ],
   },
 
   // ── replit-vs-github-copilot ──────────────────────────────────────────────
@@ -646,6 +706,16 @@ The honest summary: most beginners and indie developers will get more value from
       { q: 'Does GitHub Copilot work without an internet connection?', a: 'No. GitHub Copilot requires an active internet connection to send code context to GitHub\'s servers and receive suggestions. It also requires an active subscription; the IDE extension alone without a subscription produces no suggestions.' },
       { q: 'Is Replit free?', a: 'Replit has a free plan with unlimited public projects and 3 private projects, plus basic Ghostwriter AI features. Paid plans start at $7/month for more compute power and advanced AI agent capabilities. The free tier is genuinely functional for learning and small projects.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (limited compute)',     toolB: 'Yes (limited completions)', winner: 'tie' },
+      { feature: 'Paid pricing',        toolA: 'From $7/mo',               toolB: '$10/mo',                   winner: 'A' },
+      { feature: 'Setup required',      toolA: 'None (browser-based)',     toolB: 'VS Code / IDE needed',     winner: 'A' },
+      { feature: 'AI coding assist',    toolA: 'Built-in Ghostwriter',     toolB: 'Best-in-class completions', winner: 'B' },
+      { feature: 'Deployment',          toolA: 'One-click',                toolB: 'Separate step required',   winner: 'A' },
+      { feature: 'Collaboration',       toolA: 'Yes (multiplayer)',        toolB: 'No',                       winner: 'A' },
+      { feature: 'Language support',    toolA: '50+',                      toolB: '80+ languages',            winner: 'B' },
+      { feature: 'Best for',            toolA: 'Beginners & learners',     toolB: 'Professional developers',  winner: 'tie' },
+    ],
   },
 
   // ── taskade-vs-notion ─────────────────────────────────────────────────────
@@ -742,6 +812,16 @@ The most common mistake: choosing Notion for execution work (where the setup ove
       { q: 'Can Notion replace a project management tool?', a: 'Yes, with setup effort. Notion can replicate most project management features through linked databases, filtered views, and automations. However, it requires building the system yourself or adapting a template. Taskade\'s project structure is ready out of the box with less configuration.' },
       { q: 'Is Notion AI worth the extra $10/month?', a: 'Notion AI ($10/month add-on) is worth it if you use Notion heavily for writing, research, and documentation. It adds page-level writing assistance, summarisation, and action item extraction. It\'s less compelling if you primarily use Notion for task tracking rather than knowledge management.' },
       { q: 'Which is better for remote teams — Taskade or Notion?', a: 'Taskade edges out Notion for remote team execution — built-in video calling, real-time collaboration, and AI-generated status reports reduce meeting overhead. Notion is better for remote teams that maintain extensive documentation or knowledge bases. Many teams use both: Taskade for active projects, Notion for company knowledge.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (unlimited projects)',  toolB: 'Yes (limited blocks)',     winner: 'A' },
+      { feature: 'Paid pricing',        toolA: 'From $8/mo',               toolB: 'From $8/mo',               winner: 'tie' },
+      { feature: 'AI capabilities',    toolA: 'Custom AI agents',          toolB: 'Notion AI (add-on $10)',   winner: 'A' },
+      { feature: 'Task management',     toolA: 'Native + AI-generated',    toolB: 'Database-based',           winner: 'A' },
+      { feature: 'Document editing',    toolA: 'Basic',                    toolB: 'Full wiki-style',          winner: 'B' },
+      { feature: 'Collaboration',       toolA: 'Video + chat built-in',    toolB: 'Comments + mentions',      winner: 'A' },
+      { feature: 'Templates',           toolA: '500+',                     toolB: '10,000+ community',        winner: 'B' },
+      { feature: 'Best for',            toolA: 'Freelancers & small teams', toolB: 'Knowledge management',    winner: 'tie' },
     ],
   },
 
@@ -841,6 +921,16 @@ The mistake to avoid: buying Writesonic's paid tier expecting it to fix your gra
       { q: 'Can Writesonic replace a human writer?', a: 'Writesonic can replace the first-draft phase of writing for structured content like blog posts, product descriptions, and ad copy. It significantly reduces time-to-draft. However, the output still needs editing for voice, nuance, and accuracy. It works best as a writing accelerator rather than a full replacement for human judgement.' },
       { q: 'Does Grammarly work with Google Docs?', a: 'Yes. Grammarly has a browser extension that works inside Google Docs, Gmail, LinkedIn, Twitter, and most web-based text editors. It also has native desktop apps for Mac and Windows, and a Microsoft Office add-in for Word and Outlook. The free plan includes all platform integrations.' },
       { q: 'Which has a better free plan — Grammarly or Writesonic?', a: 'Grammarly\'s free plan is better for most users — it provides unlimited grammar and spelling checks with no word count limits. Writesonic\'s free plan gives 10,000 words per month, which is enough to test the tool but limiting for regular use. For casual writers, Grammarly free is the better starting point.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Unlimited basic grammar',   toolB: '1 article + limited words', winner: 'A' },
+      { feature: 'Paid pricing',        toolA: 'From $12/mo',              toolB: 'From $16/mo',              winner: 'A' },
+      { feature: 'Primary function',    toolA: 'Edit & improve writing',   toolB: 'Generate content',         winner: 'tie' },
+      { feature: 'Long-form writing',   toolA: 'Suggestions only',         toolB: 'Full article generation',  winner: 'B' },
+      { feature: 'Integrations',        toolA: '500+ apps (extension)',     toolB: 'Web app + API',            winner: 'A' },
+      { feature: 'Plagiarism checker',  toolA: 'Yes (Premium)',            toolB: 'No',                       winner: 'A' },
+      { feature: 'SEO tools',           toolA: 'No',                       toolB: 'Yes (keyword integration)', winner: 'B' },
+      { feature: 'Best for',            toolA: 'Editing your own writing', toolB: 'Generating new content',   winner: 'tie' },
     ],
   },
 
@@ -943,6 +1033,16 @@ The practical advice: start with Murf AI's free plan (10 minutes/month) to test 
       { q: 'Which AI voice tool is best for e-learning?', a: 'Murf AI is the better choice for e-learning production. The professional voice library with accent variety, the pronunciation editor for technical terms, and the video sync feature make it a complete e-learning voiceover tool. The collaboration features on Team plans also suit instructional design workflows with multiple contributors.' },
       { q: 'Does Murf AI offer voice cloning?', a: 'Yes. Murf AI offers voice cloning on its Enterprise plan. However, ElevenLabs provides more accessible and accurate voice cloning on lower-cost plans (Creator plan at $22/month). If custom voice cloning is your primary need, ElevenLabs is the better and more affordable option for most creators.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (limited mins)',        toolB: 'Yes (limited chars)',       winner: 'tie' },
+      { feature: 'Paid pricing',        toolA: 'From $19/mo',              toolB: 'From $5/mo',               winner: 'B' },
+      { feature: 'Voice quality',       toolA: 'Studio-grade, natural',    toolB: 'Hyper-realistic cloning',  winner: 'B' },
+      { feature: 'Voice cloning',       toolA: 'Yes (Enterprise)',         toolB: 'Yes (all paid plans)',      winner: 'B' },
+      { feature: 'Voice library',       toolA: '120+ voices, 20 languages', toolB: '900+ voices, 29 languages', winner: 'B' },
+      { feature: 'API access',          toolA: 'Yes',                      toolB: 'Yes',                      winner: 'tie' },
+      { feature: 'Team workspace',      toolA: 'Yes (built-in)',           toolB: 'Limited',                  winner: 'A' },
+      { feature: 'Best for',            toolA: 'Presentations & e-learning', toolB: 'Ultra-realistic voices', winner: 'tie' },
+    ],
   },
 
   // ── taskade-vs-asana ──────────────────────────────────────────────────────
@@ -1042,6 +1142,16 @@ The switching cost is low enough to test: Taskade's free plan is functional and 
       { q: 'Can Taskade replace Asana for a mid-size company?', a: 'Taskade can replace Asana for most mid-size teams focused on execution and collaboration. However, companies that rely on Asana\'s portfolio management, advanced reporting, 200+ native integrations, or custom approval workflows may find Taskade\'s feature set limiting. Evaluate which specific Asana features your team actively uses before switching.' },
       { q: 'What is the free plan difference between Taskade and Asana?', a: 'Both tools have free plans. Asana\'s free plan supports up to 15 users but limits features significantly — no custom fields, no advanced automation, and no reporting. Taskade\'s free plan offers unlimited projects and workspaces with basic AI credits. For individual users and very small teams, Taskade\'s free tier provides more practical functionality.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (unlimited projects)',  toolB: 'Yes (limited features)',   winner: 'A' },
+      { feature: 'Paid pricing',        toolA: 'From $8/mo',               toolB: 'From $10.99/mo',           winner: 'A' },
+      { feature: 'AI capabilities',    toolA: 'Custom AI agents',          toolB: 'AI workflows (paid)',       winner: 'A' },
+      { feature: 'Project views',       toolA: 'List, Kanban, Mind Map, Calendar', toolB: 'List, Kanban, Timeline', winner: 'A' },
+      { feature: 'Team size fit',       toolA: 'Small teams (2–20)',        toolB: 'Small to enterprise',      winner: 'B' },
+      { feature: 'Integrations',        toolA: 'Zapier, Slack, limited',   toolB: '200+ integrations',        winner: 'B' },
+      { feature: 'Reporting',           toolA: 'Basic',                    toolB: 'Advanced (paid)',           winner: 'B' },
+      { feature: 'Best for',            toolA: 'Freelancers + AI-first',   toolB: 'Structured team projects', winner: 'tie' },
+    ],
   },
 
   // ── photoroom-vs-remove-bg ────────────────────────────────────────────────
@@ -1094,6 +1204,16 @@ The switching cost is low enough to test: Taskade's free plan is functional and 
       { q: 'Is Remove.bg completely free?', a: 'Remove.bg offers free background removal but the free download is a low-resolution watermarked preview (50px wide). Full-resolution downloads cost credits — roughly $0.20 per image without a subscription, or $0.14 per image in bulk plans. There is no permanently free full-resolution plan.' },
       { q: 'Can PhotoRoom replace a professional product photographer?', a: 'PhotoRoom replaces a studio setup for standard e-commerce product images — white backgrounds, lifestyle background variants, shadow effects, and consistent branding across a catalogue. It does not replace photographers for editorial, fashion, or creative campaigns where lighting, styling, and artistic direction matter. For Shopify, Amazon, and Etsy product listings, PhotoRoom produces commercially viable images that most buyers cannot distinguish from studio shots.' },
       { q: 'Which is better for e-commerce — PhotoRoom or Remove.bg?', a: 'PhotoRoom is significantly better for e-commerce. The batch background removal processes an entire catalogue automatically. The AI background generator creates marketplace-compliant white backgrounds and lifestyle scenes. The brand kit ensures consistent styling across all products. Remove.bg can only remove backgrounds — every subsequent step (adding a background, shadow, or styling) requires another tool.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (watermark)',           toolB: 'Yes (preview)',            winner: 'A' },
+      { feature: 'Paid pricing',        toolA: 'From $9.99/mo',            toolB: 'From $9/mo (credits)',     winner: 'tie' },
+      { feature: 'Background removal', toolA: 'AI (fast + accurate)',      toolB: 'AI (industry standard)',   winner: 'tie' },
+      { feature: 'Background replace', toolA: 'Yes (templates + custom)',  toolB: 'No',                      winner: 'A' },
+      { feature: 'Batch processing',   toolA: 'Yes',                       toolB: 'Yes (API)',                winner: 'tie' },
+      { feature: 'Mobile app',         toolA: 'iOS + Android',             toolB: 'No app',                  winner: 'A' },
+      { feature: 'API access',         toolA: 'Yes',                       toolB: 'Yes',                     winner: 'tie' },
+      { feature: 'Best for',           toolA: 'E-commerce product photos', toolB: 'Quick background removal', winner: 'tie' },
     ],
   },
 
@@ -1188,6 +1308,16 @@ The mistake most people make: paying Jasper prices for individual use. If you're
       { q: 'Does Jasper have a free plan?', a: 'No. Jasper offers a 7-day free trial but no permanent free plan. Writesonic offers a free tier with 10,000 words per month — enough to test the tool\'s output quality before committing. For creators who want to evaluate before paying, Writesonic\'s free plan is a significant advantage.' },
       { q: 'Can Writesonic replace Jasper for a marketing team?', a: 'Writesonic can replace Jasper for small marketing teams (2–3 people) focused on content volume over brand governance. However, teams of 4+ writers needing consistent brand voice across all outputs, campaign coordination, and approval workflows will find Jasper\'s team features worth the premium. Evaluate based on your team size and brand consistency requirements.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (1 article + words)',   toolB: 'No (7-day trial only)',    winner: 'A' },
+      { feature: 'Paid pricing',        toolA: 'From $16/mo',              toolB: 'From $39/mo',              winner: 'A' },
+      { feature: 'AI model quality',    toolA: 'GPT-4 Turbo + Chatsonic', toolB: 'Jasper proprietary + GPT-4', winner: 'tie' },
+      { feature: 'SEO integration',     toolA: 'Built-in checker',         toolB: 'Surfer SEO add-on ($$$)',  winner: 'A' },
+      { feature: 'Brand voice',         toolA: 'Limited',                  toolB: 'Advanced (multi-brand)',   winner: 'B' },
+      { feature: 'Team features',       toolA: 'Basic',                    toolB: 'Advanced collaboration',   winner: 'B' },
+      { feature: 'Templates',           toolA: '100+',                     toolB: '80+ recipes',              winner: 'A' },
+      { feature: 'Best for',            toolA: 'Solo creators & bloggers', toolB: 'Marketing teams & agencies', winner: 'tie' },
+    ],
   },
 
   // ── grammarly-vs-prowritingaid ────────────────────────────────────────────
@@ -1280,6 +1410,16 @@ Many serious writers use both: Grammarly in the browser for everyday writing, Pr
       { q: 'Is ProWritingAid worth $8/month?', a: 'ProWritingAid is worth $8/month for anyone writing long-form content regularly — fiction, academic papers, or non-fiction manuscripts. The 20+ analytical reports (style, pacing, readability, dialogue) catch patterns that no other tool at this price identifies. The lifetime deal at $399 is even better value for career writers.' },
       { q: 'Can I use both Grammarly and ProWritingAid?', a: 'Yes, and many professional writers do. The typical workflow: Grammarly runs in the browser for emails, social posts, and quick documents. ProWritingAid is used for focused editing sessions on manuscripts and long-form work. They check for different things, so using both catches more issues than either alone.' },
       { q: 'Does ProWritingAid work with Scrivener?', a: 'Yes. ProWritingAid has a native Scrivener integration that brings all 20+ reports directly into your Scrivener workspace — no exporting or copy-pasting needed. Grammarly does not integrate with Scrivener. For fiction writers using Scrivener as their primary tool, this integration is a major advantage for ProWritingAid.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (unlimited basic)',     toolB: 'Yes (500 word limit)',     winner: 'A' },
+      { feature: 'Paid pricing',        toolA: 'From $12/mo',              toolB: '$10/mo or $70/lifetime',   winner: 'B' },
+      { feature: 'Grammar checking',    toolA: 'Excellent (real-time)',     toolB: 'Excellent (deep)',         winner: 'tie' },
+      { feature: 'Style reports',       toolA: 'Basic suggestions',        toolB: '25+ detailed reports',     winner: 'B' },
+      { feature: 'Integrations',        toolA: '500+ apps (extension)',     toolB: 'Scrivener + Word + web',  winner: 'A' },
+      { feature: 'Plagiarism check',    toolA: 'Yes (Premium)',            toolB: 'Yes (add-on)',             winner: 'tie' },
+      { feature: 'Fiction writing',     toolA: 'General purpose',          toolB: 'Specific fiction reports', winner: 'B' },
+      { feature: 'Best for',            toolA: 'Everyday professional writing', toolB: 'Authors & serious writers', winner: 'tie' },
     ],
   },
 
@@ -1380,6 +1520,16 @@ The practical path: start with Leonardo.ai's free plan. If you find yourself hit
       { q: 'Can a beginner use Stable Diffusion?', a: 'Beginners can use Stable Diffusion, but the learning curve is steep. Installing Python dependencies, downloading model files, and configuring UI tools like Automatic1111 or ComfyUI takes several hours. Fooocus (a simplified SD interface) lowers the barrier somewhat. For beginners who want results quickly, Leonardo.ai\'s free plan is the far easier starting point.' },
       { q: 'Which AI image tool is best for game development?', a: 'Both are excellent for game development. Leonardo.ai has dedicated game asset models and a simpler workflow for artists. Stable Diffusion with ControlNet offers more precise control over character poses, scene composition, and style — critical for production pipelines. Small indie teams typically prefer Leonardo.ai; studios with technical artists prefer Stable Diffusion.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: '150 tokens/day',            toolB: 'Open-source (self-host)',   winner: 'tie' },
+      { feature: 'Paid pricing',        toolA: 'From $12/mo',              toolB: 'API credits based',        winner: 'tie' },
+      { feature: 'Setup required',      toolA: 'None (browser)',           toolB: 'Technical (local or API)', winner: 'A' },
+      { feature: 'Image quality',       toolA: 'High + fine-tuned',        toolB: 'Variable (model dependent)', winner: 'A' },
+      { feature: 'Custom models',       toolA: 'Yes (built-in training)',   toolB: 'Yes (full control)',       winner: 'tie' },
+      { feature: 'Commercial use',      toolA: 'Yes (all plans)',          toolB: 'Yes (license dependent)',  winner: 'A' },
+      { feature: 'Control options',     toolA: 'ControlNet + prompts',     toolB: 'Full ControlNet suite',    winner: 'B' },
+      { feature: 'Best for',            toolA: 'Creators & marketers',     toolB: 'Developers & researchers', winner: 'tie' },
+    ],
   },
 
   // ── gamma-vs-beautiful-ai ─────────────────────────────────────────────────
@@ -1479,6 +1629,16 @@ The simple test: create a pitch deck in Gamma's free plan. If the output quality
       { q: 'Can Gamma export to PowerPoint?', a: 'Yes, Gamma exports to PowerPoint (.pptx), though some formatting — particularly custom fonts and embedded content — may not translate perfectly. Beautiful.ai\'s PowerPoint export is more reliable for maintaining exact formatting. If your final deliverable must be a pixel-perfect .pptx file, Beautiful.ai handles this better.' },
       { q: 'Is Beautiful.ai worth $12/month?', a: 'Beautiful.ai is worth $12/month for professionals who create multiple presentations weekly and need every slide to look consistently polished without design skills. The smart templates genuinely prevent bad design. However, for occasional presentation needs or price-sensitive users, Gamma\'s free plan or $8/month paid plan delivers comparable results at lower cost.' },
     ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (limited exports)',     toolB: 'No (trial only)',           winner: 'A' },
+      { feature: 'Paid pricing',        toolA: 'From $8/mo',               toolB: 'From $12/mo',              winner: 'A' },
+      { feature: 'AI generation',       toolA: 'Full deck from prompt',    toolB: 'Smart layout assist',       winner: 'A' },
+      { feature: 'Design quality',      toolA: 'Modern & polished',        toolB: 'Professional & branded',    winner: 'B' },
+      { feature: 'Customisation',       toolA: 'Good (template-based)',    toolB: 'High (full design control)', winner: 'B' },
+      { feature: 'Export formats',      toolA: 'PDF, PNG, PPT (paid)',     toolB: 'PDF, PPT, Google Slides',   winner: 'tie' },
+      { feature: 'Collaboration',       toolA: 'Yes (comments + share)',   toolB: 'Yes (team workspaces)',     winner: 'tie' },
+      { feature: 'Best for',            toolA: 'Quick AI-generated decks', toolB: 'Polished branded decks',    winner: 'tie' },
+    ],
   },
 
   // ── invideo-vs-pictory ────────────────────────────────────────────────────
@@ -1577,6 +1737,16 @@ The deciding question: are you creating new video content or repurposing existin
       { q: 'Can InVideo AI create faceless YouTube videos?', a: 'Yes. InVideo AI is one of the best tools for faceless YouTube channels. It generates complete videos — script, stock footage, AI voiceover, captions, and music — from a single text prompt. The free plan allows testing the workflow. Many faceless YouTube creators use InVideo AI as their primary production tool.' },
       { q: 'Is Pictory good for turning blog posts into videos?', a: 'Yes, blog-to-video conversion is Pictory\'s core strength. Paste a blog post URL or text, and Pictory automatically creates a short video with matched footage, text overlays, and captions. The output is optimised for social media sharing — LinkedIn, Instagram Reels, and Twitter. It\'s the fastest way to get video content from existing articles.' },
       { q: 'Which is cheaper — InVideo AI or Pictory?', a: 'InVideo AI has a more accessible entry point — a free plan with 10 minutes of weekly generation vs Pictory\'s 3-video free trial. InVideo AI\'s paid plans start at $20/month; Pictory\'s start at $19/month. At the entry tier, they\'re similarly priced, but InVideo AI\'s free plan gives you more runway to evaluate before committing.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (watermark)',           toolB: 'Yes (3 videos/month)',     winner: 'tie' },
+      { feature: 'Paid pricing',        toolA: 'From $20/mo',              toolB: 'From $19/mo',              winner: 'B' },
+      { feature: 'AI script to video',  toolA: 'Yes (text-to-video)',      toolB: 'Yes (article-to-video)',    winner: 'tie' },
+      { feature: 'Stock library',       toolA: '16M+ media assets',        toolB: '3M+ clips',                winner: 'A' },
+      { feature: 'AI voiceover',        toolA: 'Yes (50+ voices)',         toolB: 'Yes (ElevenLabs powered)', winner: 'B' },
+      { feature: 'Editing control',     toolA: 'High (timeline editor)',   toolB: 'Moderate (template-based)', winner: 'A' },
+      { feature: 'Best for',            toolA: 'Full video creation',      toolB: 'Blog-to-video repurposing', winner: 'tie' },
+      { feature: 'Export quality',      toolA: 'Up to 4K',                 toolB: 'Up to 1080p',              winner: 'A' },
     ],
   },
 ];

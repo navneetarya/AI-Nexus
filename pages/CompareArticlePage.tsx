@@ -14,9 +14,62 @@ const C = {
 };
 
 export { COMPARE_ARTICLES } from './compare-data';
-export type { CompareArticle, CompareSection, CompareRow, ComparePricing, ToolPricing } from './compare-data';
+export type { CompareArticle, CompareSection, CompareRow, ComparePricing, ToolPricing, FeatureRow } from './compare-data';
 import { COMPARE_ARTICLES } from './compare-data';
-import type { CompareArticle, ComparePricing } from './compare-data';
+import type { CompareArticle, ComparePricing, FeatureRow } from './compare-data';
+
+// ── T3.1: Feature Comparison Table Component ──────────────────────────────
+function FeatureComparisonTable({ rows, toolA, toolB }: { rows: FeatureRow[]; toolA: string; toolB: string }) {
+  const WIN_A  = { bg: 'rgba(16,185,129,.12)', color: '#10b981', label: toolA };
+  const WIN_B  = { bg: 'rgba(99,102,241,.12)',  color: '#6366f1', label: toolB };
+  const WIN_TIE = { bg: 'rgba(245,158,11,.10)', color: '#f59e0b', label: 'Tie' };
+
+  return (
+    <div style={{ marginBottom: '1.75rem' }}>
+      <h2 style={{ fontSize: '1.05rem', fontWeight: 700, color: C.txt, margin: '0 0 0.75rem', letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: 8 }}>
+        ⚖️ Feature-by-Feature Comparison
+      </h2>
+      <div style={{ overflowX: 'auto' }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13.5, background: C.surf, borderRadius: 12, overflow: 'hidden', border: `1px solid ${C.brdSm}` }}>
+          <thead>
+            <tr style={{ background: C.surf2 }}>
+              {['Feature', toolA, toolB, 'Winner'].map((h, i) => (
+                <th key={h} style={{
+                  padding: '10px 14px', textAlign: 'left', fontWeight: 700, fontSize: 11.5,
+                  color: i === 0 ? C.mut2 : i === 1 ? C.a1 : i === 2 ? '#6366f1' : C.mut,
+                  borderBottom: `1px solid ${C.brdSm}`, whiteSpace: 'nowrap' as const,
+                  textTransform: 'uppercase' as const, letterSpacing: '0.06em',
+                }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, i) => {
+              const win = row.winner === 'A' ? WIN_A : row.winner === 'B' ? WIN_B : WIN_TIE;
+              const isEven = i % 2 === 0;
+              return (
+                <tr key={i} style={{ background: isEven ? C.surf : C.surf2, borderBottom: `1px solid ${C.brdXs}` }}>
+                  <td style={{ padding: '10px 14px', fontWeight: 600, color: C.txt, fontSize: 13 }}>{row.feature}</td>
+                  <td style={{ padding: '10px 14px', color: C.mut, fontSize: 13 }}>{row.toolA}</td>
+                  <td style={{ padding: '10px 14px', color: C.mut, fontSize: 13 }}>{row.toolB}</td>
+                  <td style={{ padding: '10px 14px' }}>
+                    <span style={{
+                      display: 'inline-block', fontSize: 11, fontWeight: 700, padding: '3px 10px',
+                      borderRadius: 100, background: win.bg, color: win.color,
+                      whiteSpace: 'nowrap' as const,
+                    }}>
+                      {row.winner === 'tie' ? '🤝 Tie' : `✓ ${win.label}`}
+                    </span>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
 
 // ── W4-T4: Pricing Table Component ────────────────────────────────────────
 function PricingTable({ pricing }: { pricing: ComparePricing }) {
@@ -296,6 +349,15 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
 
         {/* W4-T4: Pricing Comparison Table — answers buyer's #1 question immediately */}
         {article.pricing && <PricingTable pricing={article.pricing} />}
+
+        {/* T3.1: Feature Comparison Table — MarketerMilk parity */}
+        {article.featureRows && article.featureRows.length > 0 && (
+          <FeatureComparisonTable
+            rows={article.featureRows}
+            toolA={article.comparisonTable[0]?.name ?? 'Tool A'}
+            toolB={article.comparisonTable[1]?.name ?? 'Tool B'}
+          />
+        )}
 
         {/* Meta */}
         <div style={{ display: 'flex', gap: '0.75rem', fontSize: 13, color: C.mut, marginBottom: '2rem', flexWrap: 'wrap', alignItems: 'center' }}>

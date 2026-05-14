@@ -1340,6 +1340,21 @@ const FEATURED_RATINGS: Record<string, string> = {
   rytr: '4.5', podcastle: '4.7', ocoya: '4.6', replit: '4.4', taskade: '4.6',
 };
 
+/** T3.5: Derive display rating from researchSources (avg of trustpilot + g2) or FEATURED_RATINGS fallback */
+function getCardRating(tool: Tool): string | null {
+  const src = tool.researchSources;
+  if (src) {
+    const vals: number[] = [];
+    if (src.trustpilot?.rating) vals.push(src.trustpilot.rating);
+    if (src.g2?.rating) vals.push(src.g2.rating);
+    if (vals.length > 0) {
+      const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
+      return avg.toFixed(1);
+    }
+  }
+  return FEATURED_RATINGS[tool.slug] ?? null;
+}
+
 /** Format ISO date "2026-05-05" → "May 2026" for the Last Tested chip */
 function fmtTested(iso: string): string {
   try {
@@ -1475,10 +1490,11 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
                   Best for: {tool.bestFor}
                 </span>
                 {tool.lastTestedISO && (
-                  <div style={{ fontSize:10, color:accent,
-                    background:`${accent}0f`, padding:'2px 7px', borderRadius:5,
+                  <div style={{ fontSize:10, fontWeight:700, color:'#0D9488',
+                    background:'rgba(13,148,136,.10)', border:'1px solid rgba(13,148,136,.22)',
+                    padding:'2px 8px', borderRadius:5,
                     marginTop:5, display:'inline-flex', alignItems:'center', gap:3 }}>
-                    ✓ Tested {fmtTested(tool.lastTestedISO)}
+                    ✓ Free plan tested · {fmtTested(tool.lastTestedISO)}
                   </div>
                 )}
               </div>
@@ -1554,13 +1570,29 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
           )}
         </div>
 
-        {/* Category chip */}
-        <div style={{ marginBottom:9 }}>
+        {/* Category chip + T3.5 Star Rating */}
+        <div style={{ marginBottom:9, display:'flex', alignItems:'center', justifyContent:'space-between' }}>
           <span style={{ fontSize:11, fontWeight:600, color:accent,
             background:`${accent}10`, padding:'3px 9px', borderRadius:7,
             display:'inline-flex', alignItems:'center', gap:5 }}>
             <CatIcon cat={tool.category} size={11} color={accent}/> {tool.category}
           </span>
+          {(() => {
+            const r = getCardRating(tool);
+            if (!r) return null;
+            const rn = parseFloat(r);
+            return (
+              <div style={{ display:'flex', alignItems:'center', gap:2 }}>
+                {[1,2,3,4,5].map(s => (
+                  <svg key={s} width="10" height="10" viewBox="0 0 10 10">
+                    <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
+                      fill={s <= Math.floor(rn) ? accent : 'var(--brd)'}/>
+                  </svg>
+                ))}
+                <span style={{ fontSize:10, color:C.mut2, marginLeft:2, fontWeight:600 }}>{r}</span>
+              </div>
+            );
+          })()}
         </div>
 
         {/* Tagline */}
@@ -1586,10 +1618,11 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
           <div>
             <span style={{ fontSize:11.5, color:C.mut2 }}>Best for: {tool.bestFor}</span>
             {tool.lastTestedISO && (
-              <div style={{ fontSize:10, color:accent,
-                background:`${accent}0f`, padding:'2px 7px', borderRadius:5,
+              <div style={{ fontSize:10, fontWeight:700, color:'#0D9488',
+                background:'rgba(13,148,136,.10)', border:'1px solid rgba(13,148,136,.22)',
+                padding:'2px 8px', borderRadius:5,
                 marginTop:5, display:'inline-flex', alignItems:'center', gap:3 }}>
-                ✓ Tested {fmtTested(tool.lastTestedISO)}
+                ✓ Free plan tested · {fmtTested(tool.lastTestedISO)}
               </div>
             )}
           </div>
