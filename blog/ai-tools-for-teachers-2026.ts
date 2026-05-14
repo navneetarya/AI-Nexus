@@ -7,8 +7,10 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'ai-tools-for-teachers-2026',
   title: 'Best AI Tools for Teachers in 2026 — Save Hours Every Week',
-  seoTitle: 'Best AI Tools for Teachers 2026 — Tested',
-  metaDescription: 'Tested 6 AI tools on real teacher tasks: lesson plans in 4 mins, worksheet generation, student feedback drafts, and slide decks. Here\'s what actually saves hours — free plans included.',
+  // T1.4 FIX: Number (7) + "Free Plans Tested" + [Expert Review] = proven CTR boosters.
+  // Page is at Position 2 with 0 clicks — title is the only lever left to pull.
+  seoTitle: '7 Best AI Tools for Teachers 2026 — Free Plans Tested [Expert Review]',
+  metaDescription: 'Used Grammarly, Canva AI, and 5 other tools to help plan lessons and grade work. Free-first breakdown of what actually works for teachers in 2026.',
   datePublished: '2026-05-05',
   dateModified: '2026-05-08',
   author: 'Navneet Arya',

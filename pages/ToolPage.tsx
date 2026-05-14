@@ -673,15 +673,48 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               </div>
             </div>
 
-            <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(28px,5vw,44px)', color: C.txt, margin: '0 0 10px', lineHeight: 1.1, letterSpacing: '-0.025em' }}>
+            <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(28px,5vw,44px)', color: C.txt, margin: '0 0 14px', lineHeight: 1.1, letterSpacing: '-0.025em' }}>
               {tool.name} Review {new Date().getFullYear()} — {tool.tagline}
             </h1>
 
-            {content?.lastTested && (
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(16,185,129,.08)', border: '1px solid rgba(16,185,129,.18)', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: '#059669', fontWeight: 600, marginTop: 6 }}>
-                <Check size={12} /> Independently reviewed — {content.lastTested} · Navneet Arya, AI Nexus
+            {/* T1.7: Author byline strip — directly below H1 per audit spec.
+                Google quality raters check for authored pages vs anonymous directories.
+                Photo + name + title + lastTested + "About the reviewer" link = +5 EEAT Trust pts. */}
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: 12,
+              padding: '12px 16px',
+              background: cardBg,
+              border: `1px solid ${cardBrd}`,
+              borderRadius: 12,
+              marginBottom: 14,
+            }}>
+              <img
+                src="/author-photo.jpg"
+                alt="Navneet Arya — independent AI tools researcher"
+                width={38} height={38}
+                style={{ borderRadius: '50%', objectFit: 'cover' as const, flexShrink: 0 }}
+              />
+              <div style={{ flex: 1 }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: C.txt }}>
+                  {SITE_CONFIG.authorName}
+                </div>
+                <div style={{ fontSize: 11, color: C.mut2 }}>
+                  {SITE_CONFIG.authorTitle}
+                  {(content?.lastTested) && ` · Last tested: ${content.lastTested}`}
+                </div>
               </div>
-            )}
+              <a
+                href="/about/"
+                style={{
+                  fontSize: 11, fontWeight: 600, color: C.a1,
+                  textDecoration: 'none', whiteSpace: 'nowrap' as const,
+                  padding: '4px 10px', borderRadius: 8,
+                  background: `${C.a1}12`, border: `1px solid ${C.a1}30`,
+                }}
+              >
+                About the reviewer →
+              </a>
+            </div>
 
             {content && (
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, margin: '0 0 14px' }}>

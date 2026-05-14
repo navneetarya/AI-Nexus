@@ -561,15 +561,17 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
   html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`);
 
   // Meta description
+  // T1.2 FIX: Use function form — replacement strings treat $1/$2 as capture-group back-references,
+  // so any $ in the content (e.g. "$12/month") corrupts the output. Function form avoids this entirely.
   html = html.replace(
     /(<meta\s+name="description"\s+content=")[^"]*(")/,
-    `$1${esc(description)}$2`
+    (_, g1, g2) => g1 + esc(description) + g2
   );
 
   // Canonical
   html = html.replace(
     /(<link\s+rel="canonical"\s+href=")[^"]*(")/,
-    `$1${canonical}$2`
+    (_, g1, g2) => g1 + canonical + g2
   );
 
   // M5 (SEO-Medium): Hreflang — groundwork for future Hindi/regional content.
@@ -580,27 +582,27 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
   const hreflangTags = `\n  <link rel="alternate" hreflang="en" href="${canonical}">\n  <link rel="alternate" hreflang="x-default" href="${canonical}">`;
   html = html.replace('</head>', hreflangTags + '\n  </head>');
 
-  // OG tags
+  // OG tags — function form to prevent $ in pricing strings corrupting capture-group back-references
   html = html
-    .replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/,       `$1${esc(title)}$2`)
-    .replace(/(<meta\s+property="og:description"\s+content=")[^"]*(")/,  `$1${esc(description)}$2`)
-    .replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/,          `$1${canonical}$2`);
+    .replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/,       (_, g1, g2) => g1 + esc(title) + g2)
+    .replace(/(<meta\s+property="og:description"\s+content=")[^"]*(")/,  (_, g1, g2) => g1 + esc(description) + g2)
+    .replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/,          (_, g1, g2) => g1 + canonical + g2);
 
   // W2-T3: Replace OG image if a page-specific one is provided
   if (ogImage) {
-    html = html.replace(/(<meta\s+property="og:image"\s+content=")[^"]*(")/,     `$1${esc(ogImage)}$2`);
-    html = html.replace(/(<meta\s+name="twitter:image"\s+content=")[^"]*(")/,    `$1${esc(ogImage)}$2`);
+    html = html.replace(/(<meta\s+property="og:image"\s+content=")[^"]*(")/,  (_, g1, g2) => g1 + esc(ogImage) + g2);
+    html = html.replace(/(<meta\s+name="twitter:image"\s+content=")[^"]*(")/,(_, g1, g2) => g1 + esc(ogImage) + g2);
   }
 
-  // Twitter tags
+  // Twitter tags — function form for same reason as OG tags above
   html = html
-    .replace(/(<meta\s+name="twitter:title"\s+content=")[^"]*(")/,       `$1${esc(title)}$2`)
-    .replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/,  `$1${esc(description)}$2`);
+    .replace(/(<meta\s+name="twitter:title"\s+content=")[^"]*(")/,       (_, g1, g2) => g1 + esc(title) + g2)
+    .replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/,  (_, g1, g2) => g1 + esc(description) + g2);
 
   // Robots meta
   html = html.replace(
     /(<meta\s+name="robots"\s+content=")[^"]*(")/,
-    `$1${robots}$2`
+    (_, g1, g2) => g1 + robots + g2
   );
 
   // Inject page-specific JSON-LD schemas (inserted just before </head>)
@@ -631,8 +633,25 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
       <p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
     </div>`;
 
-  // Replace <div id="root"></div> — React will re-render on mount
-  html = html.replace('<div id="root"></div>', `<div id="root">${pageBody}</div>`);
+  // T1.2 FIX: Replace the entire <div id="root">…</div> block with prerendered content.
+  // The base index.html has skeleton shimmer HTML inside <div id="root"> — not an empty div —
+  // so the old exact-string match '<div id="root"></div>' never fired, leaving every tool/blog
+  // page with the homepage skeleton body and zero real content for Google to index.
+  // Strategy: use the "<!-- GitHub Pages SPA routing" comment as a reliable end-marker.
+  // It immediately follows the closing root </div> in this template and won't appear elsewhere.
+  const rootStart = html.indexOf('<div id="root">');
+  const spaCommentPos = html.indexOf('<!-- GitHub Pages SPA routing');
+  if (rootStart !== -1 && spaCommentPos !== -1) {
+    // lastIndexOf finds the root div's own </div>, not any nested ones
+    const rootEnd = html.lastIndexOf('</div>', spaCommentPos);
+    html =
+      html.substring(0, rootStart) +
+      `<div id="root">${pageBody}</div>` +
+      html.substring(rootEnd + '</div>'.length);
+  } else {
+    // Fallback: original behaviour for any future template variant with an empty root div
+    html = html.replace('<div id="root"></div>', `<div id="root">${pageBody}</div>`);
+  }
 
   return html;
 }

@@ -1,6 +1,6 @@
 // pages/BlogPostPage.tsx
 import React, { useEffect, useMemo, useState } from 'react';
-import { Shield } from 'lucide-react';
+// Shield icon removed — T1.7 author strip now uses plain "About the reviewer →" anchor
 import { SharedNav } from './SharedNav';
 import { BlogPost } from '../blog/index';
 import { SITE_CONFIG, TOOLS } from '../constants';
@@ -287,7 +287,8 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           {post.title}
         </h1>
 
-        {/* Author strip */}
+        {/* T1.7: Author byline strip — upgraded with job title + "About the reviewer" link.
+            Audit spec: every page must show author credentials, not just the About page. */}
         <div style={{
           display: 'flex', alignItems: 'center', gap: 12,
           padding: '14px 18px',
@@ -302,25 +303,25 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             width={40} height={40}
             style={{ borderRadius: '50%', flexShrink: 0 }}
           />
-          <div>
-            <div style={{ fontSize: 14, fontWeight: 600, color: C.txt }}>{post.author}</div>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: 14, fontWeight: 700, color: C.txt }}>{post.author}</div>
             <div style={{ fontSize: 12, color: C.mut2 }}>
-              Published {new Date(post.datePublished).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+              {SITE_CONFIG.authorTitle} · Published {new Date(post.datePublished).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </div>
           </div>
-          <div style={{ marginLeft: 'auto' }}>
-            <span
-              onClick={() => navigate('/methodology')}
+          <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
+            <a
+              href="/about/"
               style={{
-                fontSize: 12, color: C.a1, cursor: 'pointer',
+                fontSize: 12, color: C.a1, textDecoration: 'none',
                 padding: '5px 12px', borderRadius: 8,
                 background: C.a1card, border: `1px solid ${C.a1brd}`,
                 fontWeight: 600,
                 display: 'inline-flex', alignItems: 'center', gap: 4,
               }}
             >
-              <Shield size={11} /> How we research →
-            </span>
+              About the reviewer →
+            </a>
           </div>
         </div>
 
