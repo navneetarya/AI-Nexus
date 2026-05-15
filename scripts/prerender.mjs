@@ -361,7 +361,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'rytr-vs-writesonic',
     title: 'Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?',
-    seoTitle: 'Rytr vs Writesonic 2026 — Honest Comparison by AI Tools Researcher',
+    seoTitle: 'Rytr vs Writesonic 2026 — Honest AI Tools Comparison',
     metaDescription: 'Rytr or Writesonic in 2026? Compared across 6 content types, real pricing, and output quality — Rytr wins for budget short-form; Writesonic wins for long-form SEO. Here\'s the honest breakdown.',
     faqs: [
       { q: 'Is Rytr better than Writesonic?', a: 'Rytr is better value for short-to-medium form content — emails, ad copy, social posts, blog intros — at $9/month unlimited. Writesonic is better for long-form SEO blog posts (1,500+ words) thanks to its Article Writer and built-in SEO tools, but costs significantly more.' },
@@ -374,7 +374,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'grammarly-vs-quillbot',
     title: 'Grammarly vs QuillBot (2026): Which Should You Actually Use?',
-    seoTitle: 'Grammarly vs QuillBot 2026 — Which Should You Use? (Independent Review)',
+    seoTitle: 'Grammarly vs QuillBot 2026 — Independent Review',
     metaDescription: 'Grammarly vs QuillBot — most people misunderstand what each tool actually does. After comparing both in depth, here\'s which one you need (and why thousands of writers use both together).',
     faqs: [
       { q: 'Is Grammarly better than QuillBot?', a: 'They do different things. Grammarly is a real-time writing assistant that improves grammar, tone, and clarity as you write. QuillBot is a paraphrasing and rewriting tool for restructuring existing text. If you write original content, use Grammarly. If you rewrite or summarise content regularly, use QuillBot.' },
@@ -387,7 +387,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'podcastle-vs-descript',
     title: 'Podcastle vs Descript (2026): Which Podcast Tool Should You Actually Use?',
-    seoTitle: 'Podcastle vs Descript 2026 — Which Podcast Tool Wins? (Researched & Compared)',
+    seoTitle: 'Podcastle vs Descript 2026 — Which Wins? (Researched)',
     metaDescription: 'Podcastle vs Descript compared for podcasters, indie creators, and remote interviewers. Honest breakdown of recording quality, editing experience, AI features, and real pricing in 2026.',
     faqs: [
       { q: 'Is Podcastle better than Descript?', a: 'For pure podcast recording and audio quality — especially remote guest recording — Podcastle is better. Its Magic Dust AI audio enhancement is best-in-class for noise removal. Descript is better for transcript-based editing, video podcasts, and bulk filler-word removal across long interviews.' },
@@ -466,7 +466,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'murf-ai-vs-elevenlabs',
     title: 'Murf AI vs ElevenLabs (2026): Which AI Voice Generator Is Worth It?',
-    seoTitle: 'Murf AI vs ElevenLabs 2026 — Which Voice AI Is Worth It? (Researched)',
+    seoTitle: 'Murf AI vs ElevenLabs 2026 — Honest Comparison',
     metaDescription: 'Murf AI vs ElevenLabs compared for content creators, podcasters, and video producers. Real voice quality, pricing, and an honest verdict on which AI voice tool wins in 2026.',
     faqs: [
       { q: 'Is Murf AI or ElevenLabs better for YouTube videos?', a: 'Murf AI is better for most YouTube creators. Its built-in video sync, script editor, and professional voice library make voiceover production faster and easier than ElevenLabs\' workflow. ElevenLabs is worth considering for creators who want to clone their own voice for consistent channel identity across a large volume of videos.' },
