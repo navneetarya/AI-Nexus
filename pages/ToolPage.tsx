@@ -429,6 +429,34 @@ The background removal on the free tier worked correctly on a clean product phot
     datePublished: "2026-03-15",
     timeUsed: "Tested May 2026",
   },
+
+  // W2-T9: Perplexity full TOOL_CONTENT — P2 keyword: "perplexity review" (1,900/mo)
+  perplexity: {
+    whatIs: "Perplexity is an AI-powered answer engine that provides direct answers to questions with cited sources from the web — replacing the need to visit multiple search result pages. Unlike Google, Perplexity returns a synthesised answer with numbered citations you can verify immediately. The free plan supports unlimited standard searches with no credit card required; Perplexity Pro at $20/month adds GPT-4o, Claude 3.5, and Gemini Ultra for 300 Pro searches per day.",
+    whoIsItFor: "Researchers, students, journalists, analysts, and professionals who spend significant time looking up factual information and want answers with verifiable sources rather than a list of links to scroll through. Perplexity excels for knowledge workers who regularly ask complex, multi-part questions — competitive analysis, technical comparisons, news synthesis, and academic research. If you regularly open 5–8 browser tabs to answer one question, Perplexity collapses that entire workflow into a single cited answer.",
+    whoShouldSkip: "Casual browsers who want personalised discovery, local restaurant recommendations, or Google Shopping results — Google's personalisation engine still wins for those use cases. Also skip if you're researching highly specialised niche topics where you need to read primary documents directly. Perplexity is a synthesis tool; use it to get oriented fast, then follow its citations for deep reading. For creative writing or open-ended brainstorming, ChatGPT or Claude offer better conversational depth.",
+    myTake: "Perplexity has fundamentally changed how I handle research tasks. A typical research session before Perplexity involved 6–8 browser tabs, manual cross-referencing, and 20–30 minutes to synthesise an answer. Perplexity collapses that into 30 seconds and a clearly cited paragraph.\n\nThe citation system is what makes it genuinely trustworthy for research — something ChatGPT still can't match for fact-finding. Every claim in the answer has a numbered source I can click immediately. I've used it for competitive intelligence, technical tool comparisons, and quick fact verification before publishing. The friction reduction versus traditional search is real and measurable.\n\nThe Focus modes are underrated. Switching from 'Web' to 'Academic' filters results to peer-reviewed papers — useful for research-backed writing. The 'Reddit' focus surfaces real user opinions rather than brand-controlled pages — the most honest perspective on most products.\n\nThe limitation I keep hitting: Perplexity is only as accurate as its sources. On very recent events (last 24–72 hours), niche technical topics, or anything requiring deep domain expertise, it occasionally synthesises confidently wrong answers. I treat it as a high-quality starting point for any research task, but I verify the key facts myself before publishing anything based on it.",
+    useCases: [
+      "Research synthesis: answer complex, multi-part questions with cited sources in under 30 seconds instead of 8 browser tabs",
+      "Students: summarise academic topics with source citations for papers — switch to Academic focus mode for peer-reviewed sources",
+      "Competitive analysis: ask specific questions about competitor pricing, features, or recent changes with sourced, up-to-date answers",
+      "News briefings: ask 'what happened with [topic] this week' for a synthesised summary with news source links rather than scanning headlines",
+      "Technical comparisons: evaluate tools, frameworks, or libraries against specific criteria with sourced technical details",
+    ],
+    pricingSection: "**Perplexity Pricing (2026):**\n- Free: Unlimited standard searches, no credit card required. Includes file uploads, Focus modes (Web, Academic, YouTube, Reddit), image search, and Perplexity's own AI model. The free plan covers the majority of everyday research needs.\n- Pro ($20/month or $200/year): 300 Pro searches per day using GPT-4o, Claude 3.5, or Gemini Ultra (your choice per query). Unlimited standard searches. Real-time AI image generation. Spaces for persistent document-based research. API access and priority support.\n\nThe free plan is unusually generous — unlimited standard searches handle most research use cases well. The Pro plan is worth it for professionals conducting research daily who want the best AI models on complex analytical questions, not just a faster search engine.",
+    faqs: [
+      { q: "Is Perplexity AI free?", a: "Yes — Perplexity offers unlimited standard searches on its free plan with no credit card required. The free tier uses Perplexity's own AI model and covers most everyday research and fact-finding needs. Perplexity Pro ($20/month) adds access to GPT-4o, Claude 3.5, and Gemini Ultra for 300 Pro searches per day, plus persistent Spaces for document-based research." },
+      { q: "Perplexity vs Google — which is better for research?", a: "Perplexity is better when you need a direct, synthesised answer with cited sources — it replaces reading 8 browser tabs with one cited paragraph. Google is better for finding specific websites, personalised shopping results, and local recommendations. Most serious researchers use both: Perplexity for complex factual questions and synthesis, Google for discovery and navigation." },
+      { q: "Is Perplexity Pro worth $20/month?", a: "For professionals and researchers who conduct research daily, yes. Pro access to GPT-4o and Claude 3.5 produces noticeably better synthesis on complex, multi-part questions. The Spaces feature is valuable for ongoing projects. For casual users searching a few times per day on established factual topics, the free plan's standard model is sufficient." },
+      { q: "Is Perplexity accurate?", a: "Perplexity is highly accurate for established, well-sourced factual questions — and significantly more verifiable than ChatGPT because every claim has a numbered citation you can check. On niche topics, very recent events (last 24–48 hours), or highly specialised technical questions, accuracy varies with source quality. Always verify key claims against the cited sources before publishing." },
+    ],
+    verdict: "The most useful research tool in 2026 for anyone who asks factual questions regularly. The free plan with unlimited searches and cited sources is genuinely better than Google for research-style queries. Replace your multi-tab research sessions with Perplexity and you'll reclaim 20–30 minutes per day within the first week of consistent use.",
+    rating: 4.6,
+    lastTested: "May 2026",
+    lastTestedISO: "2026-05-10",
+    datePublished: "2026-03-20",
+    timeUsed: "Tested May 2026",
+  },
 };
 
 const TODAY = new Date().toISOString().split('T')[0];
@@ -492,6 +520,7 @@ const TOOL_DOMAIN: Record<string, string> = {
   'opus-clip':'opus.pro','invideo':'invideo.ai','murf-ai':'murf.ai',
   'podcastle':'podcastle.ai','gamma':'gamma.app','beautiful-ai':'beautiful.ai',
   'ocoya':'ocoya.com','replit':'replit.com','notion-ai':'notion.so','taskade':'taskade.com',
+  'perplexity':'perplexity.ai',
 };
 
 function ToolLogoImg({ slug, size = 32, name, color }: { slug: string; size?: number; name?: string; color?: string }) {

@@ -14,7 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '7 min read',
-  excerpt: 'Every AI writing tool promises to "transform your writing" — most don\'t deliver for beginners. After comparing every major option, here\'s exactly which tools work and which to skip in 2026.',
+  excerpt: 'The best AI writing tools for beginners in 2026 are Grammarly (free grammar and tone checker — works in every app), Rytr (best for generating new content — 10,000 free characters/month), and QuillBot (best for paraphrasing and rewriting). Start with Grammarly\'s free plan — no credit card needed, and it works inside Gmail, Google Docs, and your browser immediately. Add Rytr when you need to write first drafts faster.',
   faqs: [
     {
       q: 'What is the best free AI writing tool for beginners?',

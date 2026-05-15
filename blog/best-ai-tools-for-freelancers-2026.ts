@@ -14,7 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '6 min read',
-  excerpt: 'Freelancers who use AI tools finish projects 2–3x faster and take on more clients without burning out. Here are the tools worth adding to your stack in 2026 — researched across real freelance workflows.',
+  excerpt: 'The best AI tools for freelancers in 2026 are: Grammarly (free — improves every client email and deliverable), Rytr ($9/month — write proposals and content 3x faster), Canva AI (free — create professional graphics without a designer), and PhotoRoom ($10/month — professional product photos from a phone). These four tools cover writing, design, and content creation — the most common freelance workflows — and three of them have a usable free plan.',
   faqs: [
     {
       q: 'Are AI tools worth it for freelancers?',
