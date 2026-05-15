@@ -201,6 +201,7 @@ const TOOLS = [
     description: 'ElevenLabs creates the most natural-sounding AI voices available. Clone your own voice, generate studio-quality narration, and build voice-powered products with the industry-leading speech API.',
     pricing: 'Free + from $5/month', bestFor: 'Creators, developers & podcasters',
     rating: 4.7, lastTested: 'April 2026',
+    reviewBody: 'ElevenLabs is the benchmark for AI voice quality in 2026 — no other tool comes close for realism, especially on emotional speech and sentence-final intonation. The free plan gives 10,000 characters per month (roughly 7–8 minutes of audio) with access to 500+ pre-made voices and no credit card required. Voice cloning from a 1-minute clean sample takes under 2 minutes to process and produces output that is regularly mistaken for the original speaker in informal listening tests. The Starter plan at $5/month triples the character limit and adds commercial use rights — one of the best value upgrades in the AI tools category. The main limitation is workflow: ElevenLabs is a pure voice generation and API tool. It does not record audio, edit timelines, or handle publishing. For end-to-end podcast or video production, pair it with Podcastle or Descript. For developers, the API is the most capable speech API available in 2026, with streaming, multi-voice projects, and dubbing endpoints. The free tier is generous enough to build and test a production integration before committing to a paid plan.',
   },
   {
     slug: 'jasper', name: 'Jasper', category: 'Writing',
@@ -215,6 +216,7 @@ const TOOLS = [
     description: 'Descript is the most innovative audio and video editor available. Edit your recordings by editing a transcript — delete words on the page and the audio disappears. Includes AI voice clone, filler word removal, and studio-quality processing.',
     pricing: 'Free + from $12/month', bestFor: 'Podcasters & video creators',
     rating: 4.5, lastTested: 'April 2026',
+    reviewBody: 'Descript is the most distinctive audio and video editor in its category because of one core concept: you edit your recording by editing the transcript. Select a sentence in the text, press backspace, and the corresponding audio is removed. For podcasters and video creators who hate traditional waveform editing, this changes everything. The filler word removal feature strips every "um", "uh", and "you know" from a 45-minute recording in a single click — saving 20–30 minutes of manual editing on every episode. The Overdub voice cloning feature requires 10 minutes of training audio but once trained lets you type corrections that Descript renders in your cloned voice — seamlessly fixing stumbles without re-recording. The free plan limits you to 1 hour of transcription per month and adds a watermark to video exports; the Hobbyist plan at $12/month removes both restrictions and adds 4K export and filler word removal. The learning curve is steeper than Podcastle because the interface is built around a document paradigm rather than a timeline — creators who think in waveforms may find it counterintuitive at first. For anyone who already edits text faster than they edit audio, Descript is the most significant productivity upgrade in the category.',
   },
   {
     slug: 'perplexity', name: 'Perplexity Pro', category: 'Productivity',
@@ -277,6 +279,22 @@ const TOOL_FAQS = {
     { q: 'Does Grammarly work internationally?', a: "Yes — Grammarly works globally via browser extension and desktop app across Gmail, Google Docs, Word, and 500+ other apps. It's effective in any country and supports American, British, Canadian, and Australian English style preferences." },
     { q: 'Is Grammarly Premium worth it?', a: "Grammarly Premium at $12/month is worth it if you write professionally at significant volume. The tone detector, full-sentence clarity rewrites, and plagiarism checker meaningfully reduce editing time for emails, reports, and long-form content. The free plan is sufficient for casual writing." },
     { q: 'Does Grammarly work in Microsoft Word and Google Docs?', a: "Yes — Grammarly has native integrations for both Microsoft Word (via a desktop add-in) and Google Docs (via Chrome extension). Corrections appear as underlines in real time, exactly like the built-in spell-checker but significantly more accurate and detailed." },
+  ],
+  // W1-T2: ElevenLabs FAQs — enables FAQ rich results for "elevenlabs review" (1,600/mo)
+  elevenlabs: [
+    { q: 'Is ElevenLabs free to use?', a: "Yes — ElevenLabs' free plan gives 10,000 characters per month (roughly 7–8 minutes of audio) with access to all pre-made voices. No credit card is required. The Starter plan at $5/month triples the limit and adds commercial use rights." },
+    { q: 'How realistic are ElevenLabs voices?', a: "ElevenLabs consistently ranks as the most realistic AI voice generator available. In blind listening tests, the premium voices are regularly mistaken for real human recordings. The quality gap between ElevenLabs and other tools is significant — particularly for emotional range and natural pacing." },
+    { q: 'How do I clone my own voice with ElevenLabs?', a: "Go to Voices → Add Voice → Instant Voice Clone. Upload a clean 1-minute recording of yourself speaking naturally (no background noise). ElevenLabs processes it in under 2 minutes and creates a voice model you can use to generate any text. Professional Voice Clone on the Creator plan uses longer samples for even higher accuracy." },
+    { q: 'Can I use ElevenLabs voices commercially?', a: "Commercial use requires the Starter plan ($5/month) or above. The free tier is for personal and non-commercial use only. All paid plans include a commercial licence for content monetised on YouTube, sold as products, or used in client work." },
+    { q: 'How does ElevenLabs compare to Murf AI?', a: "ElevenLabs produces better-sounding voices, especially for voice cloning and emotional speech. Murf AI has a more polished production studio with video sync and background music built in. If pure voice quality is your priority, ElevenLabs wins. If you need a full voiceover production workflow in one app, Murf is more practical." },
+  ],
+  // W1-T4: Descript FAQs — enables FAQ rich results for "descript review" (1,200/mo)
+  descript: [
+    { q: 'What makes Descript different from other audio editors?', a: "Descript uses a text-based editing model — you edit your recording by editing the transcript. Delete a sentence in the text and the audio disappears. This is fundamentally different from traditional timeline editors and is significantly faster for podcasters and video creators who think in words, not waveforms." },
+    { q: 'Is Descript free?', a: "Yes — Descript has a free plan that includes 1 hour of transcription per month, basic editing, and 720p video export with a watermark. The Hobbyist plan at $12/month removes the watermark, adds 4K export, 10 hours of transcription, screen recording, and filler word removal." },
+    { q: 'How does Descript filler word removal work?', a: "Go to Edit → Remove Filler Words. Descript scans your transcript for 'um', 'uh', 'you know', 'like', and other filler words and highlights them all. You review the list and delete any or all of them in one click. The corresponding audio is removed seamlessly. On a typical 45-minute podcast, this saves 20–30 minutes of manual editing." },
+    { q: 'What is Descript Overdub?', a: "Overdub is Descript's AI voice cloning feature. Record 10 minutes of training audio, wait 30 minutes for processing, and you can then type corrections that Descript renders in your cloned voice. It's used to fix mispronounced words or stumbled lines without re-recording the entire segment. Available on the Creator plan ($24/month)." },
+    { q: 'Descript vs Podcastle — which should I use?', a: "Descript is better for editing-heavy workflows — long-form podcast episodes, video content, and anything where you'll spend significant time removing errors and restructuring content. Podcastle is better for recording remote guests in high quality with minimal editing needed. For simple recording and publish, Podcastle. For complex editing, Descript." },
   ],
   // W2-T1: Frase FAQs — enables FAQ rich results for "frase review" (1,200/mo, KD 18)
   frase: [
@@ -1277,8 +1295,55 @@ const BLOG_POSTS = [
       { q: 'Which AI image generator is better for game developers?', a: 'Leonardo.ai is significantly better for game developers. It has dedicated models trained for game assets, RPG artwork, and concept art. The custom model training lets you maintain visual consistency across a character set — something Midjourney cannot do without external fine-tuning tools. Leonardo\'s free plan (150 tokens/day) is also generous enough to support active game development work.' },
     ],
   },
+  // W1-T1: Fix 3 Blog 404s — files existed but were not registered in BLOG_POSTS
+  // best-free-ai-tools-for-students-in-india-2026: KD 4 · 2,400/mo
+  {
+    slug: 'best-free-ai-tools-for-students-in-india-2026',
+    title: 'Best Free AI Tools for Students in India 2026 — No Dollar Card, No VPN',
+    metaDescription: 'Best free AI tools for students in India 2026 — works without a VPN or dollar card. Covers essays, research, presentations and coding with INR pricing notes.',
+    datePublished: '2026-05-13',
+    dateModified: '2026-05-13',
+    readTimeMinutes: 8,
+    faqs: [
+      { q: 'What is the best free AI tool for students in India?', a: "Grammarly is the single most useful free AI tool for Indian students — it checks grammar, tone, and clarity in real time across Gmail, Google Docs, and every browser-based editor, with no character limit on the free plan and no credit card required. For generating essay drafts and outlines, Rytr's free plan (10,000 characters/month) is the best zero-cost option for content generation. Start with Grammarly on day one; add Rytr once you need to produce drafts faster." },
+      { q: 'Do I need a VPN or dollar card to use free AI tools in India?', a: 'No. Every tool in this guide — Grammarly, Rytr, QuillBot, Perplexity, Gamma, and Taskade — is fully accessible from Indian IP addresses without a VPN. The free plans on all six tools can be activated with an Indian email address only, with no credit card or dollar payment required at the free tier.' },
+      { q: 'Which free AI tool supports Hindi for Indian students?', a: "Rytr is the best free AI tool with Hindi language support — you select Hindi from the output language dropdown and it generates Hindi content directly. Canva AI (Magic Write) also produces usable Hindi for captions and short copy. Grammarly checks English only. Perplexity understands Hindi queries and can respond in Hindi when asked." },
+      { q: 'Is using AI tools considered cheating in Indian universities?', a: "AI tools used for grammar checking, paraphrasing existing ideas, or structuring your own content are not academic dishonesty. The risk arises when AI-generated text is submitted as original analysis or research. Most Indian universities are still developing formal AI policies. The safe rule: use AI to improve your own writing, not to replace your thinking." },
+      { q: 'What is the best free AI tool for research for Indian students?', a: 'Perplexity is the best free AI research tool for Indian students. It answers questions by reading current web sources and citing them — useful for fact-checking, literature reviews, and understanding complex topics. The free plan gives unlimited daily searches at no cost.' },
+    ],
+  },
+  // W1-T1: best-ai-tools-for-freelancers-india-2026: KD 8 · 1,100/mo
+  {
+    slug: 'best-ai-tools-for-freelancers-india-2026',
+    title: 'Best AI Tools for Freelancers in India 2026 — Free Plans, INR Pricing & What Actually Works',
+    metaDescription: 'AI tools for Indian freelancers 2026 — INR pricing, free tiers without a credit card, Fiverr and Upwork India picks. Independently researched.',
+    datePublished: '2026-05-13',
+    dateModified: '2026-05-13',
+    readTimeMinutes: 7,
+    faqs: [
+      { q: 'Are there AI tools for freelancers with INR pricing in India?', a: "Yes. Several major AI tools now offer India-specific pricing in INR. Grammarly Premium is available at ₹699/month (billed annually). Canva Pro is ₹499/month. Rytr's paid plans start at approximately ₹750/month. Always check the tool's India pricing page directly as these are updated regularly." },
+      { q: 'Which free AI tools work for Indian freelancers without a credit card?', a: "Grammarly free, Rytr free (10,000 chars/month), Canva free, Notion AI (limited), and Perplexity free all work without a credit card. You only need an email address to sign up. These are the safest starting points for Indian freelancers who cannot pay in USD." },
+      { q: 'Are AI tools popular among Indian freelancers on Fiverr and Upwork?', a: "Yes — Grammarly is nearly universal among Indian freelancers on Fiverr and Upwork for polishing client communication and deliverables. Canva AI is the most used design tool. ChatGPT and Rytr are common for content writing. Taskade is growing as a project management tool for retainer-based freelancers." },
+      { q: 'What is the best AI tool for Indian freelancers under ₹500/month?', a: "Rytr's Saver plan (~₹750/month, or free at 10K chars) is the best value for content writers. Canva free covers most design needs at zero cost. For grammar and editing, Grammarly free handles most use cases. If you can stretch to ₹499/month, Canva Pro unlocks commercial downloads and brand kits." },
+    ],
+  },
+  // W1-T1: best-ai-tools-for-content-creators-free-2026: 3,200/mo · Low difficulty
+  {
+    slug: 'best-ai-tools-for-content-creators-free-2026',
+    title: 'Best Free AI Tools for Content Creators 2026 — Tested on Free Plans',
+    metaDescription: 'The best free AI tools for content creators in 2026 — independently tested on free plans. Writing, design, audio, scheduling, and editing tools that work without a subscription.',
+    datePublished: '2026-05-14',
+    dateModified: '2026-05-14',
+    readTimeMinutes: 10,
+    faqs: [
+      { q: 'What is the best free AI tool for content creators in 2026?', a: "Canva AI is the best free AI tool for content creators who need design, writing, and image generation in one place. Its free plan includes 250,000+ templates, Magic Write (AI copy), and limited background removal — enough to produce professional content without paying. For writing specifically, Rytr's free plan (10,000 characters/month) is the strongest no-cost option for generating captions, emails, and short copy." },
+      { q: 'Can you use AI tools for content creation without paying?', a: "Yes — all 8 tools in this guide have genuinely usable free plans. The key distinction is what 'free' means: Rytr's free plan has no time limit but caps at 10,000 characters/month. Canva free is unlimited for basic design but locks AI features behind Pro. Podcastle free allows 10 hours of recording per month. For most solo content creators publishing 3–5 pieces per week, the free plans covered here are sufficient to start without a paid subscription." },
+      { q: 'Which AI tool is best for YouTube and social media content creators?', a: "For YouTube creators: Podcastle (free, 10hrs/month) for audio recording and editing, Canva AI (free) for thumbnails and graphics, and Ocoya (paid from $15/month) for cross-platform scheduling. For social media creators specifically: Ocoya combines caption writing, design, and scheduling — the three tasks that take the most time — into one dashboard." },
+      { q: 'Is Grammarly useful for content creators?', a: "Yes — Grammarly's free plan is one of the highest-ROI free tools for any content creator who writes in English. It catches grammar and clarity errors across Gmail, Google Docs, Notion, and the browser without any word limit. The tone detector (Premium only) is particularly useful for creators who write for multiple audience types." },
+      { q: 'What AI tool helps content creators save the most time?', a: "Ocoya saves the most time for creators managing multiple social media accounts — it replaces a caption writer, design tool, and scheduler in one dashboard. For writers and bloggers, Rytr cuts first-draft time by 60–70% on short-form content. For podcast creators, Podcastle's AI noise removal and auto-transcription eliminate the most time-consuming post-production steps." },
+    ],
+  },
 ];
-console.log('\n🔧  Pre-rendering routes for Google & Bing crawlability...\n');
 
 const template = readTemplate();
 
