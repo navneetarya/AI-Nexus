@@ -88,6 +88,7 @@ const TOOLS = [
     slug: 'frase', name: 'Frase.io', category: 'Writing',
     tagline: 'Research, write & optimise SEO content in minutes',
     description: 'Frase helps you create SEO-optimised content fast. Research top-ranking pages, generate AI content briefs, and write articles that rank — all in one workflow.',
+    reviewBody: 'Frase is the most focused SEO content tool available in 2026 for creators who write with the goal of ranking on Google. Its core function is competitive analysis: it reads the top 10 ranking pages for your target keyword and surfaces the exact topics, headings, word counts, and questions you need to address to compete. A content brief that would take 45–60 minutes of manual research takes 30 seconds in Frase. The Content Score feature tells you your optimisation percentage in real time — writing to a Frase score above 75 consistently produces content that ranks faster than content written without a data-driven brief. The AI writer generates paragraphs from the brief, though the prose quality is functional rather than exceptional; Frase is strongest on the research and structure side. The Solo plan at $15/month covers 4 SEO documents per month — enough for a solo creator publishing weekly. The $45/month Basic plan (30 documents/month) is where active content teams start. A $1 five-day trial lets you run briefs on your most important keywords before committing. Main limitation: skip Frase if your primary goal is not Google rankings — the price is hard to justify for purely social or newsletter content.',
     pricing: 'From $15/month', bestFor: 'SEO writers & bloggers',
     rating: 4.4, lastTested: 'March 2026',
   },
@@ -95,6 +96,7 @@ const TOOLS = [
     slug: 'leonardo-ai', name: 'Leonardo.ai', category: 'Image',
     tagline: 'Production-quality AI image generation for creators',
     description: 'Leonardo.ai creates stunning AI images with exceptional creative control. Train custom models, generate consistent characters, and produce game-ready visual assets.',
+    reviewBody: 'Leonardo.ai is the most powerful free AI image generator available in 2026, offering 150 generation credits per day with no credit card required — a more generous free tier than Midjourney (no free plan), Adobe Firefly (limited credits), or DALL-E (25 free generations). The platform distinguishes itself from every competitor through custom model training: you can upload reference images to train a personal model that generates consistent characters, art styles, or product visuals across unlimited generations. This is the feature game developers and illustrators reach for — the ability to maintain visual consistency across an entire asset library is something Midjourney cannot match without complex prompting workflows. The real-time generation canvas, Phoenix model, and 20+ fine-tuned art models give creative control that generic image generators cannot offer. The free tier handles approximately 30–50 quality images per day depending on resolution settings. The $12/month Apprentice plan removes the watermark and adds 2,500 tokens/month for higher-resolution generations. Main limitation: the learning curve is real — the interface rewards users who invest 30 minutes in tutorials. For quick one-off images, DALL-E or Bing Image Creator are faster. Leonardo is the right tool when consistency, creative control, and volume matter.',
     pricing: 'Free + from $12/month', bestFor: 'Creators & game developers',
     rating: 4.5, lastTested: 'February 2026',
   },
@@ -359,7 +361,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'rytr-vs-writesonic',
     title: 'Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?',
-    seoTitle: 'Rytr vs Writesonic 2026 — Which Writer Wins? (Tested Both)',
+    seoTitle: 'Rytr vs Writesonic 2026 — Honest Comparison by AI Tools Researcher',
     metaDescription: 'Rytr or Writesonic in 2026? Compared across 6 content types, real pricing, and output quality — Rytr wins for budget short-form; Writesonic wins for long-form SEO. Here\'s the honest breakdown.',
     faqs: [
       { q: 'Is Rytr better than Writesonic?', a: 'Rytr is better value for short-to-medium form content — emails, ad copy, social posts, blog intros — at $9/month unlimited. Writesonic is better for long-form SEO blog posts (1,500+ words) thanks to its Article Writer and built-in SEO tools, but costs significantly more.' },
@@ -372,7 +374,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'grammarly-vs-quillbot',
     title: 'Grammarly vs QuillBot (2026): Which Should You Actually Use?',
-    seoTitle: 'Grammarly vs QuillBot 2026 — Which Should You Use? (Tested Both)',
+    seoTitle: 'Grammarly vs QuillBot 2026 — Which Should You Use? (Independent Review)',
     metaDescription: 'Grammarly vs QuillBot — most people misunderstand what each tool actually does. After comparing both in depth, here\'s which one you need (and why thousands of writers use both together).',
     faqs: [
       { q: 'Is Grammarly better than QuillBot?', a: 'They do different things. Grammarly is a real-time writing assistant that improves grammar, tone, and clarity as you write. QuillBot is a paraphrasing and rewriting tool for restructuring existing text. If you write original content, use Grammarly. If you rewrite or summarise content regularly, use QuillBot.' },
@@ -385,7 +387,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'podcastle-vs-descript',
     title: 'Podcastle vs Descript (2026): Which Podcast Tool Should You Actually Use?',
-    seoTitle: 'Podcastle vs Descript 2026 — Which Podcast Tool? (Tested Both)',
+    seoTitle: 'Podcastle vs Descript 2026 — Which Podcast Tool Wins? (Researched & Compared)',
     metaDescription: 'Podcastle vs Descript compared for podcasters, indie creators, and remote interviewers. Honest breakdown of recording quality, editing experience, AI features, and real pricing in 2026.',
     faqs: [
       { q: 'Is Podcastle better than Descript?', a: 'For pure podcast recording and audio quality — especially remote guest recording — Podcastle is better. Its Magic Dust AI audio enhancement is best-in-class for noise removal. Descript is better for transcript-based editing, video podcasts, and bulk filler-word removal across long interviews.' },
@@ -437,7 +439,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'taskade-vs-notion',
     title: 'Taskade vs Notion (2026): Which AI Productivity Tool Actually Gets Work Done?',
-    seoTitle: 'Taskade vs Notion 2026 — Which Gets More Done? (Tested Both)',
+    seoTitle: 'Taskade vs Notion 2026 — Honest Comparison by AI Tools Researcher',
     metaDescription: 'Taskade vs Notion compared for freelancers, solopreneurs, and small teams. Real breakdown of AI features, project management, knowledge base capabilities, and pricing in 2026.',
     faqs: [
       { q: 'Is Taskade better than Notion?', a: 'For execution and project management — getting tasks done, moving work forward, automating repetitive workflows — Taskade is better. Its AI agents generate project plans and run automations proactively. For knowledge management, documentation, and building complex interconnected information systems, Notion\'s flexibility is unmatched. The right choice depends on whether your biggest friction is doing work or organising knowledge.' },
@@ -464,7 +466,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'murf-ai-vs-elevenlabs',
     title: 'Murf AI vs ElevenLabs (2026): Which AI Voice Generator Is Worth It?',
-    seoTitle: 'Murf AI vs ElevenLabs 2026 — Which Voice AI? (Tested Both)',
+    seoTitle: 'Murf AI vs ElevenLabs 2026 — Which Voice AI Is Worth It? (Researched)',
     metaDescription: 'Murf AI vs ElevenLabs compared for content creators, podcasters, and video producers. Real voice quality, pricing, and an honest verdict on which AI voice tool wins in 2026.',
     faqs: [
       { q: 'Is Murf AI or ElevenLabs better for YouTube videos?', a: 'Murf AI is better for most YouTube creators. Its built-in video sync, script editor, and professional voice library make voiceover production faster and easier than ElevenLabs\' workflow. ElevenLabs is worth considering for creators who want to clone their own voice for consistent channel identity across a large volume of videos.' },
@@ -1278,7 +1280,8 @@ const BLOG_POSTS = [
   {
     slug: 'ai-tools-for-teachers-2026',
     title: 'Best AI Tools for Teachers 2026 — Tested & Ranked',
-    metaDescription: 'AI tools for teachers tested in 2026. Gamma, Grammarly, Notion AI, and Rytr for presentations, feedback, lesson planning, and worksheets.',
+    seoTitle: 'Best AI Tools for Teachers 2026 — Free & Paid [Researched by AI Tools Expert]',
+    metaDescription: 'Best AI tools for teachers in 2026 — independently researched. Gamma, Grammarly, Notion AI, and Rytr rated for presentations, lesson planning, and student feedback.',
     datePublished: '2026-05-05',
     dateModified: '2026-05-08',
     readTimeMinutes: 7,

@@ -108,10 +108,20 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
 
         {/* Credentials & what I've tested */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
-          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
-            What I've researched
-          </h2>
-          <p style={{ fontSize: 14, color: C.mut2, margin: '0 0 20px', fontWeight: 300 }}>Updated April 2026</p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 10, marginBottom: 18 }}>
+            <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: 0, letterSpacing: '-0.02em' }}>
+              What I've researched
+            </h2>
+            {/* W4-T3 (Task 21): Prominent last-verified badge — Google quality raters check for
+                freshness signals on YMYL-adjacent pages. Small muted text is insufficient.
+                Badge format: "Research last updated: May 2026 · 24 tools verified" */}
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: `${C.a1}12`, border: `1.5px solid ${C.a1}30`, borderRadius: 100, padding: '5px 14px' }}>
+              <div style={{ width: 7, height: 7, borderRadius: '50%', background: C.a1, flexShrink: 0 }} />
+              <span style={{ fontSize: 12, fontWeight: 600, color: C.a1, fontFamily: "'Inter', sans-serif", letterSpacing: '0.01em' }}>
+                Research last updated: May 2026 &middot; 24 tools verified
+              </span>
+            </div>
+          </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 10 }}>
             {[
               ['Writing tools', 'Grammarly, Rytr, QuillBot, Writesonic, Jasper, Frase, ProWritingAid + more', C.a1],

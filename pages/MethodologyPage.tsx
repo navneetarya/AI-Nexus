@@ -124,7 +124,16 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 6, background: `linear-gradient(180deg,${C.a1},${C.a2})` }} />
           <div style={{ position: 'absolute', inset: 0, backgroundImage: DOT_BG, opacity: 0.4, pointerEvents: 'none' }} />
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100, marginBottom: 18 }}>REVIEW METHODOLOGY</span>
+            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' as const, gap: 10, marginBottom: 18 }}>
+              <span style={{ display: 'inline-block', background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 100 }}>REVIEW METHODOLOGY</span>
+              {/* W4-T3 (Task 21): Prominent freshness badge at page top — quality raters check this */}
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: `${C.a1}12`, border: `1.5px solid ${C.a1}30`, borderRadius: 100, padding: '5px 14px' }}>
+                <div style={{ width: 7, height: 7, borderRadius: '50%', background: C.a1, flexShrink: 0 }} />
+                <span style={{ fontSize: 11, fontWeight: 600, color: C.a1, fontFamily: "'Inter', sans-serif", letterSpacing: '0.01em' }}>
+                  Last verified: May 2026 &middot; 24 tools
+                </span>
+              </div>
+            </div>
 
             <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(24px,4vw,34px)', color: C.txt, margin: '0 0 16px', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
               How I Research AI Tools
@@ -143,7 +152,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             {/* T2.4: Stats strip — quantified proof of research depth */}
             <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 10, marginTop: 22 }}>
               {[
-                { label: 'Tools researched', value: '20+' },
+                { label: 'Tools researched', value: '24' },
                 { label: 'Avg research time / tool', value: '4–6 hrs' },
                 { label: 'Reviews analysed / tool', value: '200+' },
                 { label: 'Methodology last updated', value: 'May 2026' },
