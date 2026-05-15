@@ -6,6 +6,37 @@ import { BlogPost } from '../blog/index';
 import { SITE_CONFIG, TOOLS } from '../constants';
 import { BeehiivForm } from '../components/BeehiivForm';
 
+// ── W3-T16: Related tool reviews per blog post ─────────────────────────────
+// Maps each blog slug → up to 3 tool slugs to surface as "Related Reviews"
+// at the bottom of the post. Distributes PageRank from high-traffic blog posts
+// to individual tool review pages. Keep the most relevant tools first.
+const BLOG_RELATED_TOOLS: Record<string, string[]> = {
+  'best-ai-writing-tools-for-beginners-2026':        ['grammarly', 'rytr', 'writesonic'],
+  'best-ai-tools-for-freelancers-2026':              ['rytr', 'grammarly', 'notion-ai'],
+  'best-grammarly-alternatives':                     ['quillbot', 'writesonic', 'rytr'],
+  'best-podcastle-alternatives':                     ['podcastle', 'descript', 'murf-ai'],
+  'best-notion-ai-alternatives-2026':                ['notion-ai', 'taskade', 'replit'],
+  'best-invideo-alternatives-2026':                  ['invideo', 'opus-clip', 'pictory'],
+  'best-ai-tools-for-social-media-2026':             ['ocoya', 'canva-ai', 'rytr'],
+  'how-to-use-rytr-to-write-blog-posts':             ['rytr', 'grammarly', 'writesonic'],
+  'ai-tools-for-students-free-2026':                 ['grammarly', 'quillbot', 'gamma'],
+  'best-ai-podcast-tools-2026':                      ['podcastle', 'descript', 'murf-ai'],
+  'jasper-ai-alternatives':                          ['rytr', 'writesonic', 'grammarly'],
+  'chatgpt-alternatives-free-2026':                  ['perplexity', 'writesonic', 'rytr'],
+  'best-ai-coding-tools-2026':                       ['replit', 'taskade', 'notion-ai'],
+  'best-ai-logo-makers-free-2026':                   ['looka', 'canva-ai', 'gamma'],
+  'best-ai-marketing-tools-2026':                    ['ocoya', 'writesonic', 'grammarly'],
+  'ai-tools-for-teachers-2026':                      ['grammarly', 'gamma', 'notion-ai'],
+  'best-midjourney-alternatives-2026':               ['leonardo-ai', 'photoroom', 'canva-ai'],
+  'how-to-use-ai-for-content-creation-2026':         ['rytr', 'grammarly', 'canva-ai'],
+  'best-ai-tools-in-india-2026':                     ['grammarly', 'canva-ai', 'photoroom'],
+  'best-ai-tools-for-freelancers-india-2026':        ['rytr', 'grammarly', 'taskade'],
+  'best-free-ai-tools-for-students-in-india-2026':   ['grammarly', 'canva-ai', 'gamma'],
+  'best-ai-tools-for-content-creators-free-2026':    ['canva-ai', 'opus-clip', 'rytr'],
+  'taskade-vs-notion-vs-asana-2026':                 ['taskade', 'notion-ai', 'replit'],
+  'leonardo-vs-midjourney-2026':                     ['leonardo-ai', 'photoroom', 'canva-ai'],
+};
+
 // ── H5 (SEO-High): Auto-link tool name mentions to /tools/{slug} pages ────────
 // Passes PageRank from blog content to monetisable tool review pages.
 // Keys are the display name (or alias) as it appears in blog prose;
@@ -415,6 +446,75 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             </div>
           </section>
         )}
+
+        {/* ── W3-T16: Related Reviews — 3 tool cards from BLOG_RELATED_TOOLS map ── */}
+        {(() => {
+          const relatedSlugs = BLOG_RELATED_TOOLS[post.slug] || [];
+          const relatedTools = relatedSlugs
+            .map(slug => TOOLS.find(t => t.slug === slug))
+            .filter(Boolean) as typeof TOOLS;
+          if (relatedTools.length === 0) return null;
+          return (
+            <section style={{ marginTop: 52 }}>
+              <h2 style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: 18, fontWeight: 800,
+                color: C.txt, marginBottom: 16,
+                letterSpacing: '-0.02em',
+              }}>
+                Related Reviews
+              </h2>
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+                gap: 12,
+              }}>
+                {relatedTools.map(t => (
+                  <button
+                    key={t.slug}
+                    onClick={() => navigate(`/tools/${t.slug}`)}
+                    style={{
+                      background: C.surf,
+                      border: `1px solid ${C.brd}`,
+                      borderRadius: 12,
+                      padding: '16px 18px',
+                      textAlign: 'left' as const,
+                      cursor: 'pointer',
+                      display: 'flex',
+                      flexDirection: 'column' as const,
+                      gap: 6,
+                      transition: 'border-color .15s',
+                    }}
+                    onMouseEnter={e => (e.currentTarget.style.borderColor = C.a1)}
+                    onMouseLeave={e => (e.currentTarget.style.borderColor = C.brd)}
+                  >
+                    <span style={{
+                      fontSize: 13, fontWeight: 700,
+                      color: C.txt, fontFamily: "'Inter', sans-serif",
+                    }}>
+                      {t.name}
+                    </span>
+                    <span style={{
+                      fontSize: 11, color: C.mut2,
+                      fontFamily: "'Inter', sans-serif",
+                      letterSpacing: '0.04em',
+                      textTransform: 'uppercase' as const,
+                    }}>
+                      {t.category}
+                    </span>
+                    <span style={{
+                      fontSize: 12, color: C.a1,
+                      fontFamily: "'Inter', sans-serif",
+                      marginTop: 2,
+                    }}>
+                      Read review →
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
 
         {/* Back + explore CTA */}
         <div style={{
