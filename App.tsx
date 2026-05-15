@@ -18,6 +18,7 @@ const MethodologyPage    = React.lazy(() => import('./pages/MethodologyPage').th
 const BlogPage           = React.lazy(() => import('./pages/BlogPage').then(m => ({ default: m.BlogPage })));
 const BlogPostPage       = React.lazy(() => import('./pages/BlogPostPage').then(m => ({ default: m.BlogPostPage })));
 const BestFreeAIToolsPage = React.lazy(() => import('./pages/BestFreeAIToolsPage').then(m => ({ default: m.BestFreeAIToolsPage })));
+const BestAIToolsIndiaPage = React.lazy(() => import('./pages/BestAIToolsIndiaPage').then(m => ({ default: m.BestAIToolsIndiaPage })));
 const CompareArticlePage = React.lazy(() => import('./pages/CompareArticlePage').then(m => ({ default: m.CompareArticlePage })));
 const CategoryPage       = React.lazy(() => import('./pages/CategoryPage').then(m => ({ default: m.CategoryPage })));
 const GlossaryPage       = React.lazy(() => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })));
@@ -246,6 +247,20 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <BestFreeAIToolsPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+
+  if (path === '/best-ai-tools-india') {
+    updateMeta(
+      `Best AI Tools for India 2026 — INR Pricing & Hindi Support | AI Nexus`,
+      `10 best AI tools for India in 2026 — independently tested with INR pricing, Hindi support status, VPN requirements, and India-specific use cases.`,
+      `${SITE_CONFIG.siteUrl}/best-ai-tools-india/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <BestAIToolsIndiaPage navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }

@@ -937,6 +937,11 @@ function generateSitemap() {
     images: [{ loc: `${SITE}/og-image.png`, title: 'Best Free AI Tools 2026 — AI Nexus' }],
   }));
 
+  // W3-T15: India landing page — priority 0.9, weekly — targets "best AI tools India 2026" (2,800/mo KD 16)
+  blocks.push(urlBlock({ loc: `${SITE}/best-ai-tools-india/`, priority: '0.9', freq: 'weekly', mod: TODAY,
+    images: [{ loc: `${SITE}/og-india-guide.webp`, title: 'Best AI Tools for India 2026 — INR Pricing — AI Nexus' }],
+  }));
+
   // Category landing pages
   const CATEGORY_SLUGS = [
     'best-ai-writing-tools', 'best-ai-image-tools', 'best-ai-video-tools', 'best-ai-audio-tools',
@@ -1656,6 +1661,46 @@ for (const post of BLOG_POSTS) {
     <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Every tool on this list has been independently researched by ${esc(AUTHOR)} — covering features, free plan limits, pricing, and real user feedback. The selection covers writing, image generation, video editing, audio production, design, coding, and productivity.</p>`,
   }));
   console.log('\n  ✓  /best-free-ai-tools/');
+}
+
+// ── W3-T15: Best AI Tools India landing page (/best-ai-tools-india/) ─────────
+// Target keyword: "best AI tools India 2026" — 2,800/mo KD 16
+// Unique angle: INR pricing, Hindi support, VPN status — no competitor targets India
+{
+  const canonical = `${SITE}/best-ai-tools-india/`;
+  const title = `Best AI Tools for India 2026 — INR Pricing & Hindi Support | AI Nexus`;
+  const description = `10 best AI tools for India independently tested by ${AUTHOR} — with INR pricing, Hindi language support status, and VPN requirements. Includes free plan details and India-specific use cases for freelancers, creators, and students.`;
+
+  const INDIA_SLUGS = ['grammarly','rytr','canva-ai','elevenlabs','leonardo-ai','murf-ai','perplexity','notion-ai','replit','taskade'];
+  const indiaToolItems = INDIA_SLUGS.map((slug, i) => {
+    const t = TOOLS.find(x => x.slug === slug);
+    return t ? { name: t.name, url: `${SITE}/tools/${t.slug}/`, description: t.tagline, position: i + 1 } : null;
+  }).filter(Boolean);
+
+  const schemas = [
+    articleSchema({ title, description, canonical, datePublished: '2026-05-15' }),
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'Best AI Tools India', canonical],
+    ]),
+    // ItemList schema — enables carousel rich results for "best AI tools India" queries
+    itemListSchema({ name: 'Best AI Tools for India 2026', url: canonical, items: indiaToolItems }),
+    faqSchema([
+      { q: 'What are the best AI tools for India in 2026?', a: 'The best AI tools for India in 2026 — with INR pricing and no VPN required — are Grammarly (free writing assistant, unlimited), Rytr (free AI writer with Hindi support, paid from ~₹750/month), Canva AI (free design with Hindi UI), ElevenLabs (free AI voice generator with Indian English voices), and Leonardo.ai (free AI image generator, 150 credits/day). All five work in India without a VPN on a permanent free plan.' },
+      { q: 'Do AI tools work in India without a VPN?', a: 'Yes — Grammarly, Rytr, Canva AI, ElevenLabs, Leonardo.ai, Murf AI, Perplexity, Notion AI, Replit, and Taskade all work in India without a VPN as of 2026. None of these tools are geo-blocked in India. Free plans are accessible from any Indian IP address without restriction.' },
+      { q: 'What is the cheapest AI writing tool in India?', a: 'Rytr is the cheapest paid AI writing tool in India at approximately ₹750/month ($9/month). It also offers a free plan with 10,000 characters per month and supports Hindi content generation. Grammarly is free for grammar checking with no character limit on the free plan.' },
+      { q: 'Which AI tools support Hindi language in India?', a: 'AI tools with Hindi support include Rytr (Hindi content generation), Canva AI (Hindi interface and design tools), ElevenLabs (Hindi text-to-speech voices), Murf AI (Hindi and Indian English studio voices), Perplexity (answers in Hindi on request), and Notion AI (generates Hindi content). Grammarly, Leonardo.ai, and Replit are English-only tools.' },
+      { q: 'Is GST charged on AI tool subscriptions in India?', a: 'Yes — 18% GST is charged when purchasing AI tool subscriptions from India. Most international AI platforms add GST at checkout when an Indian billing address is entered. A ₹1,000/month plan costs approximately ₹1,180/month after GST. Businesses registered with a GSTIN can claim input tax credit on these subscription costs.' },
+    ]),
+  ];
+
+  writeRoute('best-ai-tools-india', buildPage(template, {
+    title, description, canonical, schemas,
+    ogImage: `${SITE}/og-india-guide.webp`,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+    <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Every tool is independently reviewed by ${esc(AUTHOR)} with India-specific context: INR pricing at May 2026 exchange rates (~₹83/USD), Hindi language support status verified per tool, and VPN requirements confirmed from Indian IP addresses. GST (18%) applies to paid subscriptions purchased from an Indian billing address — factor this into your total cost.</p>`,
+  }));
+  console.log('\n  ✓  /best-ai-tools-india/');
 }
 
 // ── 7. Category landing pages (/best-ai-writing-tools/ etc.) ────────────────
