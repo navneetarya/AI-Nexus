@@ -156,6 +156,50 @@ function BreadcrumbSchema() {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(json) }} />;
 }
 
+// ── Schema: ItemList (SoftwareApplication) for India page ───────────────────
+function IndiaItemListSchema() {
+  const items = [
+    { position: 1, name: 'Grammarly', url: `${SITE_CONFIG.siteUrl}/tools/grammarly`, description: 'Best free AI writing assistant for Indian professionals — English grammar, tone, and email improvement.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web, Chrome, iOS, Android' },
+    { position: 2, name: 'Rytr', url: `${SITE_CONFIG.siteUrl}/tools/rytr`, description: 'Most affordable AI content writer for Indian freelancers and students — ₹750/month paid tier.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
+    { position: 3, name: 'Canva AI', url: `${SITE_CONFIG.siteUrl}/tools/canva-ai`, description: 'Best free AI design tool for Indian SMEs and content creators — Hindi template support included.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web, iOS, Android' },
+    { position: 4, name: 'ElevenLabs', url: `${SITE_CONFIG.siteUrl}/tools/elevenlabs`, description: 'Best AI voice generator supporting Indian English accents — free 10,000 characters per month.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
+    { position: 5, name: 'Leonardo AI', url: `${SITE_CONFIG.siteUrl}/tools/leonardo-ai`, description: 'Best free AI image generator for Indian designers — 150 free credits daily, no credit card required.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
+    { position: 6, name: 'Murf AI', url: `${SITE_CONFIG.siteUrl}/tools/murf-ai`, description: 'AI voiceover tool with strong Indian English voice support — used by Indian eLearning creators.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
+    { position: 7, name: 'Perplexity', url: `${SITE_CONFIG.siteUrl}/tools/perplexity`, description: 'Best free AI search engine for Indian researchers and students — cited answers, no hallucinations.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web, iOS, Android' },
+    { position: 8, name: 'Notion AI', url: `${SITE_CONFIG.siteUrl}/tools/notion-ai`, description: 'AI-powered notes and project management for Indian startups — ₹830/month add-on.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web, iOS, Android, Desktop' },
+    { position: 9, name: 'Replit', url: `${SITE_CONFIG.siteUrl}/tools/replit`, description: 'Best free browser-based coding environment for Indian CS students — no installation required.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
+    { position: 10, name: 'Taskade', url: `${SITE_CONFIG.siteUrl}/tools/taskade`, description: 'AI project management for Indian freelancers and remote teams — free plan with 1 workspace.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web, iOS, Android, Desktop' },
+  ];
+
+  const json = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Best AI Tools in India 2026',
+    description: 'Top 10 AI tools available in India ranked for INR pricing, Hindi support, and Indian use cases.',
+    url: `${SITE_CONFIG.siteUrl}/best-ai-tools-india/`,
+    numberOfItems: items.length,
+    itemListElement: items.map(item => ({
+      '@type': 'ListItem',
+      position: item.position,
+      item: {
+        '@type': 'SoftwareApplication',
+        name: item.name,
+        url: item.url,
+        description: item.description,
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: item.operatingSystem,
+        offers: {
+          '@type': 'Offer',
+          price: item.price,
+          priceCurrency: item.priceCurrency,
+          availability: 'https://schema.org/InStock',
+        },
+      },
+    })),
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(json) }} />;
+}
+
 // ── Tool logo with local-first → Clearbit fallback ──────────────────────────
 const TOOL_DOMAIN: Record<string, string> = {
   'grammarly': 'grammarly.com', 'rytr': 'rytr.me', 'canva-ai': 'canva.com',
@@ -362,6 +406,7 @@ export function BestAIToolsIndiaPage({ navigate, isDark, toggleTheme }: Props) {
   return (
     <div style={{ background: C.bg, minHeight: '100vh', color: C.txt }}>
       <BreadcrumbSchema />
+      <IndiaItemListSchema />
       {/* NOTE: FAQPage + Article schema injected by prerender.mjs into static HTML */}
 
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="home" />

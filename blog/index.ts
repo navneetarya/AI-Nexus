@@ -40,12 +40,15 @@ import post23 from './taskade-vs-notion-vs-asana-2026';
 // T4.5: Leonardo vs Midjourney free plan blog — expands compare page with free-tier focus
 // Target keyword: "leonardo ai vs midjourney 2026" — 1,200/mo, image generator comparison
 import post24 from './leonardo-vs-midjourney-2026';
+// P3 keyword gap: "best ai writing tools" — 5,400/mo, Medium KD
+// /best-ai-writing-tools route is a CategoryPage — dedicated editorial post needed to compete
+import post25 from './best-ai-writing-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
   post1, post2, post3, post4, post5, post6, post7, post8,
   post9, post10, post11, post12, post13, post14, post15,
   post16, post17, post18, post19, post20, post21, post22,
-  post23, post24,
+  post23, post24, post25,
 ];
 
 export type { BlogPost };
