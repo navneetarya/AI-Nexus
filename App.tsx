@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { TOOLS, SITE_CONFIG } from './constants';
 import { HomePage } from './pages/HomePage';
-import { StickyNewsletterBar } from './components/BeehiivForm';
+import { StickyNewsletterBar, ScrollNewsletterPopup } from './components/BeehiivForm';
 
 // ── Data-only imports (small, needed for routing on first render) ────────────
 import { COMPARE_ARTICLES } from './pages/compare-data';
@@ -297,11 +297,13 @@ function App() {
 
 // W4-T21: StickyNewsletterBar is injected here so it persists across all route changes
 // without re-mounting. It is mobile-only (CSS hides it ≥641px) and self-dismisses.
+// W2-T2: ScrollNewsletterPopup fires at 65% scroll depth on /tools/* and /blog/* pages.
 function AppWithStickyBar() {
   return (
     <>
       <App />
       <StickyNewsletterBar />
+      <ScrollNewsletterPopup />
     </>
   );
 }

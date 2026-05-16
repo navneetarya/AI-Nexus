@@ -223,6 +223,12 @@ The Hindi social media caption test was useful: the output was grammatically cor
     myTake: "I used Looka to create a brand identity for a test project. The AI generated 40+ logo options in under 2 minutes. The quality varies — some look generic — but 3–4 options were genuinely strong. The brand kit (business cards, social media templates, letterhead) justifies the price.",
     useCases: ["Creating a logo for a new startup or side project", "Generating a full brand kit for a freelance business", "Designing social media profile assets quickly", "Getting a professional logo before a client meeting — same day"],
     verdict: "A one-time investment that saves thousands compared to hiring a designer. The logo quality is better than Canva's logo maker and you own the files outright.",
+    faqs: [
+      { q: "Is Looka free?", a: "Looka lets you preview unlimited logo concepts for free with no account required. Downloading your final logo files requires a purchase — a basic Logo Package starts at $20 as a one-time payment. The $96/year Brand Kit plan adds business cards, social media templates, email signatures, and letterhead assets." },
+      { q: "Is Looka worth it for a small business?", a: "Yes, for most startups and small businesses. A professional logo from a designer typically costs $300–$1,500. Looka's one-time $20 Logo Package or $96/year Brand Kit is a fraction of that cost. The AI generates 40+ options in under 2 minutes, and you own the files outright — no subscription required for the basic package." },
+      { q: "Looka vs Canva logo maker — which is better?", a: "Looka is better for logos specifically — it generates more unique, brand-identity-focused designs from your inputs and produces files in the correct formats (SVG, EPS, PNG) for all business uses. Canva's logo maker is more template-based and the output quality for logos is lower. If you want a full brand identity kit beyond just a logo, Looka's Brand Kit plan is the more complete option." },
+      { q: "What file formats does Looka provide?", a: "Looka provides PNG (transparent background, multiple sizes), SVG (scalable vector for print), EPS (professional print production), and PDF files. All formats are included in the Logo Package purchase. SVG and EPS are the formats printers and agencies will ask for — Looka includes them by default, which Canva's free plan does not." },
+    ],
     rating: 4.1, lastTested: "January 2026", datePublished: "2026-01-12", timeUsed: "Researched Jan 2026",
   },
   pictory: {
@@ -232,6 +238,12 @@ The Hindi social media caption test was useful: the output was grammatically cor
     myTake: "I converted a 1,500-word blog post into a 3-minute video in 12 minutes using Pictory. The AI picks relevant stock footage, adds captions, and inserts background music automatically. The result needed minor adjustments but was 80% publish-ready.",
     useCases: ["Converting blog posts into YouTube videos automatically", "Creating short Reels/Shorts from long-form articles", "Generating video summaries of podcast episodes", "Building a faceless YouTube channel from written content"],
     verdict: "The fastest way to turn written content into video. The stock footage library shows its limits on niche topics but for business and marketing content it works excellently.",
+    faqs: [
+      { q: "Is Pictory free?", a: "Pictory offers a free trial that includes 3 video projects with no credit card required. After the trial, plans start at $19/month (Starter) for 30 videos per month. There is no permanent free plan — the trial is enough to test the blog-to-video workflow before committing." },
+      { q: "What types of content can Pictory turn into video?", a: "Pictory converts blog post URLs, pasted articles and scripts, plain text documents, and Zoom or Teams recording transcripts into edited videos. It selects relevant stock footage automatically from a 3-million+ clip library, adds AI-generated captions, and exports in landscape (YouTube), square (Instagram), or portrait (Reels/Shorts) formats." },
+      { q: "Pictory vs InVideo AI — which is better?", a: "They solve different problems. Pictory is best for converting existing written content (blog posts, articles) into video — paste a URL and it builds the video around your content. InVideo AI is best for creating a video from scratch using a text prompt — it writes the script, selects footage, and adds voiceover. Use Pictory if you have written content to repurpose; use InVideo AI if you want to create new video content from a topic idea." },
+      { q: "Does Pictory add watermarks?", a: "Yes — during the free trial, all exported videos include a Pictory watermark. Paid plans (from $19/month) remove the watermark entirely and include 1080p export quality. The Starter plan at $19/month covers 30 videos per month, which is sufficient for most content creators repurposing existing blog posts." },
+    ],
     rating: 4.1, lastTested: "February 2026", datePublished: "2026-01-22", timeUsed: "Researched Feb 2026",
   },
   'opus-clip': {
@@ -264,6 +276,12 @@ The Hindi social media caption test was useful: the output was grammatically cor
     myTake: "InVideo AI is the most complete text-to-video tool I've tested. I gave it a 50-word prompt about 'how to save money in your 20s' and got a 4-minute video with a script, voiceover, stock footage, and captions. The quality of stock footage selection is the weakest link but the voiceover and pacing are excellent.",
     useCases: ["Creating faceless YouTube educational videos at scale", "Producing explainer videos for product landing pages", "Generating social media video content from blog topics", "Creating training videos for teams without recording equipment"],
     verdict: "The most capable text-to-video tool for faceless content creators. The free plan lets you create 10 minutes of video per week — enough to start a channel.",
+    faqs: [
+      { q: "Is InVideo AI free?", a: "Yes — InVideo AI has a free plan with unlimited video creation. Free plan videos include an InVideo watermark and are capped at 10 minutes per week of AI-generated content. The paid plan at $20/month (billed annually) removes the watermark, unlocks 1080p export, and adds 50 AI video generations per month with full commercial use rights." },
+      { q: "What can I make with InVideo AI?", a: "InVideo AI generates complete videos from a single text prompt — it writes the script, selects stock footage from a 16-million+ clip library, adds an AI voiceover, and includes captions automatically. It is purpose-built for faceless YouTube channels, educational explainer videos, product landing page videos, and social media content where appearing on camera is not required." },
+      { q: "InVideo AI vs Pictory — which should I use?", a: "Use InVideo AI if you want to create a video from a topic idea or prompt — it generates the script and footage from scratch. Use Pictory if you have existing written content (a blog post or article) that you want to convert into video. InVideo creates; Pictory converts. Both produce faceless videos with stock footage, but the starting point is different." },
+      { q: "Does InVideo AI add a watermark on the free plan?", a: "Yes — the free plan adds an InVideo watermark to all exported videos. It appears in the bottom-right corner. The watermark is removed on all paid plans, which start at $20/month billed annually. If you are publishing videos commercially or to a brand channel, the paid plan is required for clean, professional output." },
+    ],
     rating: 4.2, lastTested: "April 2026", datePublished: "2026-02-15", timeUsed: "Researched May 2026",
   },
   'murf-ai': {

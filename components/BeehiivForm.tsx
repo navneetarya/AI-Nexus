@@ -363,6 +363,243 @@ function HeroStrip() {
 // Article card (same layout as old BeehiivForm article)
 // ─────────────────────────────────────────────────────────────────────────────
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Scroll-triggered popup (W2-T2)
+// Shows at 65 % scroll depth on /tools/* and /blog/* pages only.
+// Dismissed via close button → localStorage flag suppresses it for 7 days.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const POPUP_KEY = 'ainexus-popup-shown';
+const POPUP_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days in ms
+
+function isPopupSuppressed(): boolean {
+  try {
+    const raw = localStorage.getItem(POPUP_KEY);
+    if (!raw) return false;
+    return Date.now() - parseInt(raw, 10) < POPUP_TTL;
+  } catch {
+    return false;
+  }
+}
+
+function suppressPopup() {
+  try { localStorage.setItem(POPUP_KEY, String(Date.now())); } catch { /* ignore */ }
+}
+
+function isEligiblePage(): boolean {
+  const p = window.location.pathname;
+  return p.startsWith('/tools/') || p.startsWith('/blog/');
+}
+
+export function ScrollNewsletterPopup() {
+  const [visible, setVisible] = React.useState(false);
+  const [exiting, setExiting] = React.useState(false);
+  const formState = useSubscribeForm();
+
+  // Reset visibility whenever the user navigates to a new page
+  React.useEffect(() => {
+    setVisible(false);
+    setExiting(false);
+  }, [window.location.pathname]); // re-runs on each render after navigation
+
+  React.useEffect(() => {
+    if (isPopupSuppressed()) return;
+
+    function handleScroll() {
+      if (!isEligiblePage() || isPopupSuppressed()) return;
+
+      const scrolled = window.scrollY + window.innerHeight;
+      const total = document.documentElement.scrollHeight;
+      if (total > 0 && scrolled / total >= 0.65) {
+        setVisible(true);
+      }
+    }
+
+    // Also listen to popstate so the scroll handler re-checks the new page
+    function handlePop() {
+      setVisible(false);
+      setExiting(false);
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('popstate', handlePop);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('popstate', handlePop);
+    };
+  }, []);
+
+  function dismiss() {
+    suppressPopup();
+    setExiting(true);
+    setTimeout(() => setVisible(false), 300);
+  }
+
+  // Auto-dismiss after successful subscription
+  React.useEffect(() => {
+    if (formState.state === 'success') {
+      suppressPopup();
+      const t = setTimeout(() => dismiss(), 2500);
+      return () => clearTimeout(t);
+    }
+  }, [formState.state]);
+
+  if (!visible) return null;
+
+  return (
+    <>
+      <style>{`
+        @keyframes ainexus-slideUp {
+          from { transform: translateY(24px); opacity: 0; }
+          to   { transform: translateY(0);    opacity: 1; }
+        }
+        @keyframes ainexus-slideDown {
+          from { transform: translateY(0);    opacity: 1; }
+          to   { transform: translateY(24px); opacity: 0; }
+        }
+        .ainexus-popup {
+          animation: ainexus-slideUp 0.28s cubic-bezier(0.22,1,0.36,1) forwards;
+        }
+        .ainexus-popup.exiting {
+          animation: ainexus-slideDown 0.25s ease forwards;
+        }
+      `}</style>
+
+      <div
+        className={`ainexus-popup${exiting ? ' exiting' : ''}`}
+        role="dialog"
+        aria-modal="false"
+        aria-label="Newsletter signup"
+        style={{
+          position: 'fixed',
+          bottom: 24,
+          right: 24,
+          zIndex: 10000,
+          width: 320,
+          background: 'var(--surf)',
+          border: '1.5px solid var(--a1-brd)',
+          borderRadius: 16,
+          padding: '20px 20px 18px',
+          boxShadow: '0 8px 40px rgba(0,0,0,0.45)',
+        }}
+      >
+        {/* Close button */}
+        <button
+          onClick={dismiss}
+          aria-label="Close newsletter popup"
+          style={{
+            position: 'absolute',
+            top: 12,
+            right: 14,
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+            color: 'var(--mut)',
+            fontSize: 18,
+            lineHeight: 1,
+            padding: 4,
+          }}
+        >
+          ✕
+        </button>
+
+        {/* Header */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 4, paddingRight: 24 }}>
+          <div style={{
+            width: 30, height: 30, borderRadius: 8,
+            background: 'var(--a1)',
+            flexShrink: 0,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 2px 8px rgba(13,148,136,.35)',
+          }}>
+            <Mail size={14} color="#fff" />
+          </div>
+          <span style={{
+            fontFamily: "'Inter', sans-serif",
+            fontWeight: 800,
+            fontSize: 14,
+            color: 'var(--txt)',
+            letterSpacing: '-0.02em',
+            lineHeight: 1.25,
+          }}>
+            New AI tool reviews weekly
+          </span>
+        </div>
+
+        <p style={{ fontSize: 12, color: 'var(--mut)', margin: '0 0 14px 40px', lineHeight: 1.5 }}>
+          No spam. Unsubscribe anytime.
+        </p>
+
+        {/* Form — email only, compact */}
+        {formState.state === 'success' ? (
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 8,
+            padding: '10px 14px',
+            background: 'rgba(13,148,136,.10)',
+            border: '1.5px solid var(--a1-brd)',
+            borderRadius: 10,
+          }}>
+            <CheckCircle size={16} color="var(--a1)" strokeWidth={2.5} />
+            <span style={{ fontSize: 13, color: 'var(--txt)', fontWeight: 600 }}>
+              You're in! Talk soon.
+            </span>
+          </div>
+        ) : (
+          <form
+            onSubmit={formState.handleSubmit}
+            style={{ display: 'flex', gap: 8 }}
+          >
+            <input
+              type="email"
+              placeholder="your@email.com"
+              value={formState.email}
+              onChange={e => formState.setEmail(e.target.value)}
+              required
+              disabled={formState.state === 'loading'}
+              style={{
+                flex: 1,
+                padding: '9px 12px',
+                borderRadius: 8,
+                border: '1.5px solid var(--a1-brd)',
+                background: 'var(--bg)',
+                color: 'var(--txt)',
+                fontSize: 13,
+                outline: 'none',
+                boxSizing: 'border-box' as const,
+              }}
+            />
+            <button
+              type="submit"
+              disabled={formState.state === 'loading' || !formState.email.trim()}
+              style={{
+                padding: '9px 16px',
+                borderRadius: 8,
+                border: 'none',
+                background: 'var(--a1)',
+                color: '#fff',
+                fontSize: 13,
+                fontWeight: 700,
+                fontFamily: "'Inter', sans-serif",
+                cursor: formState.state === 'loading' ? 'not-allowed' : 'pointer',
+                flexShrink: 0,
+                opacity: formState.state === 'loading' || !formState.email.trim() ? 0.7 : 1,
+              }}
+            >
+              {formState.state === 'loading' ? '…' : 'Join'}
+            </button>
+          </form>
+        )}
+
+        {formState.state === 'error' && (
+          <p style={{ fontSize: 11, color: '#f87171', margin: '6px 0 0' }}>
+            ⚠ {formState.errorMsg}
+          </p>
+        )}
+      </div>
+    </>
+  );
+}
+
 function ArticleCard() {
   const formState = useSubscribeForm();
 
