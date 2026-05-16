@@ -38,6 +38,10 @@ const post: BlogPost = {
     },
   ],
   content: `
+<div style="background:rgba(13,148,136,.08);border-left:4px solid #0d9488;border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;">
+  <p style="font-weight:600;margin:0 0 8px;color:#0d9488;font-size:13px;text-transform:uppercase;letter-spacing:.04em;">Quick Verdict</p>
+  <p style="margin:0;line-height:1.7;"><strong>Best overall:</strong> Gemini — unlimited free plan, real-time web access, no rate limits. <strong>Best for research:</strong> Perplexity — every answer has clickable source citations. <strong>Best for content creation:</strong> Rytr — template-guided writing, easier than a blank prompt. <strong>Best for SEO blogging:</strong> Writesonic — structured article output with built-in SEO formatting. All four are permanently free with no credit card required.</p>
+</div>
 <h2>Why You Might Want a ChatGPT Alternative</h2>
 <p>ChatGPT is the default AI chatbot for most people — and for good reason. But its free tier has real limitations in 2026: rate limits during peak hours, no real-time web access on the free plan, and GPT-4o access that gets throttled when demand spikes.</p>
 <p>I spent three weeks testing every serious free alternative on the same set of tasks: writing blog intros, researching niche topics, summarising articles, generating code snippets, and brainstorming content ideas. Some of these tools aren't just "good enough" — they're genuinely better than free ChatGPT for specific use cases.</p>
