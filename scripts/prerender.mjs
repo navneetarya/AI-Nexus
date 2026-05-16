@@ -357,6 +357,82 @@ const TOOL_FAQS = {
     { q: 'Opus Clip vs manual video editing — is it worth it?', a: "For creators with existing long-form content (YouTube videos, podcasts, webinars, interviews), Opus Clip saves significant time. Manual clipping of a 60-minute video into 8 short clips takes 3–4 hours. Opus Clip does it in 5–10 minutes. The output needs review and occasional manual trimming, but the time saving is real. The 60-minute free plan is enough to verify it works for your content type before paying." },
     { q: 'What platforms does Opus Clip work for?', a: "Opus Clip exports clips in portrait format (9:16) optimised for TikTok, Instagram Reels, and YouTube Shorts — the three major short-form video platforms. It adds animated captions automatically, which are required for accessibility and engagement on all three platforms. Landscape (16:9) and square (1:1) export options are available on paid plans." },
   ],
+
+  // ── Bug 1 Fix: FAQs for tools that were missing schema injection ─────────
+  // These 9 tools had entries in TOOLS[] but no key in TOOL_FAQS, so no
+  // FAQPage JSON-LD was ever injected into their static HTML.
+
+  writesonic: [
+    { q: 'Is Writesonic free to use?', a: "Writesonic has a free plan that gives 25 one-click article generations and access to most templates with a word limit. No credit card is required. The paid plans start at $16/month for the Small plan, which lifts the word limit and adds the full Article Writer with SEO integration." },
+    { q: 'Writesonic vs Jasper — which is better?', a: "Writesonic is better value for most solo creators and freelancers — it delivers comparable output quality at less than half the price ($16/month vs Jasper's $39/month). Jasper wins on brand voice consistency and enterprise team features. For budget-conscious content creators, Writesonic is the smarter starting point." },
+    { q: 'Can Writesonic write full SEO blog posts?', a: "Yes — Writesonic's Article Writer generates 1,500–2,500 word SEO-optimised drafts with keyword integration, meta descriptions, and heading structure. It analyses competitor content and incorporates SEO best practices automatically. For long-form blog content at scale, this is one of Writesonic's strongest use cases." },
+    { q: 'What is Chatsonic?', a: "Chatsonic is Writesonic's AI chatbot — similar to ChatGPT but with real-time web browsing enabled. It can research current topics, pull recent data, and generate content based on up-to-date information. This makes it particularly useful for news-driven content and topical blog posts that need current facts." },
+    { q: 'Does Writesonic support languages other than English?', a: "Yes — Writesonic supports 25+ languages including Spanish, French, German, Hindi, Portuguese, Italian, and Dutch. The output quality in major European languages is solid. For non-English content at scale, Writesonic is one of the better-supported multilingual AI writing tools at this price point." },
+  ],
+
+  quillbot: [
+    { q: 'Is QuillBot free?', a: "Yes — QuillBot has a functional free plan with 125-word paraphrasing per input, a basic summariser, a citation generator (APA, MLA, Chicago, Harvard), and a grammar checker. No credit card is required. The Premium plan at $9.95/month unlocks all 7 paraphrasing modes, unlimited word length, and faster processing." },
+    { q: 'Is QuillBot good for academic writing?', a: "QuillBot is widely used in academic contexts for paraphrasing source material and generating citations. The citation generator supports APA, MLA, Chicago, and Harvard formats. The paraphraser helps restructure content while preserving meaning. For academic integrity purposes, QuillBot should be used for paraphrasing and citation — not to generate original arguments." },
+    { q: 'How accurate is QuillBot paraphrasing?', a: "QuillBot's paraphrasing accuracy is strong for standard text — it preserves meaning while restructuring sentences effectively. The Standard and Formal modes are the most reliable for professional and academic content. The Creative mode produces more varied output but occasionally shifts meaning. Always review the output, particularly for technical or nuanced content." },
+    { q: 'QuillBot vs Grammarly — which should I use?', a: "They serve different purposes. Grammarly improves grammar, tone, and clarity as you write original content in real time. QuillBot restructures and paraphrases existing text. If you write original content, use Grammarly. If you regularly rephrase or summarise source material, use QuillBot. Many writers use both together for different stages of the writing process." },
+    { q: 'Does QuillBot have a plagiarism checker?', a: "Yes — QuillBot Premium includes a plagiarism checker that scans against published web content and academic databases. It's functional for verifying paraphrased content but not as comprehensive as Grammarly's or Turnitin's checkers for academic submission. For critical plagiarism checking before academic submission, use an institution-approved tool." },
+  ],
+
+  'leonardo-ai': [
+    { q: 'Is Leonardo.ai free?', a: "Yes — Leonardo.ai gives 150 free credits per day, which is enough for 30–50 quality images depending on resolution settings. No credit card is required. The free tier is genuinely functional for testing and regular creative use. The Apprentice plan at $12/month adds 2,500 tokens/month, removes watermarks, and enables higher-resolution generation." },
+    { q: 'Leonardo.ai vs Midjourney — which is better?', a: "Leonardo.ai has a significantly more generous free plan (150 credits/day vs Midjourney's no free plan) and offers custom model training that Midjourney cannot match. Midjourney produces slightly higher aesthetic quality in its default output. For creators who need consistency, custom models, and a free option — Leonardo.ai wins. For pure prompt-to-image output quality, Midjourney is marginally ahead." },
+    { q: 'Can I train a custom model on Leonardo.ai?', a: "Yes — custom model training is one of Leonardo.ai's most powerful features. Upload 10–30 reference images to train a personal model that generates consistent characters, art styles, or product visuals across unlimited future generations. This feature is available on paid plans and is particularly used by game developers, illustrators, and brand designers who need visual consistency." },
+    { q: 'What is the Leonardo.ai Phoenix model?', a: "Phoenix is Leonardo.ai's most advanced base model as of 2026. It produces higher-quality, more coherent images than the earlier models, handles complex prompts more accurately, and generates better text within images. It is available on all plan levels including the free tier." },
+    { q: 'Is Leonardo.ai good for beginners?', a: "Leonardo.ai has a steeper learning curve than simpler tools like DALL-E or Adobe Firefly. The interface rewards users who invest 30–45 minutes in tutorials to understand model selection, negative prompts, and generation parameters. For beginners who want high-quality results without setup, Canva AI's image generator or DALL-E is more accessible. Leonardo.ai is the right choice once you need more creative control." },
+  ],
+
+  looka: [
+    { q: 'Is Looka free to use?', a: "Looka lets you generate and preview logo concepts for free — you can see exactly what your logo will look like before paying. The brand kit and high-resolution file download require a paid plan. The Logo Package starts at $65 (one-time) and the Brand Kit subscription at $96/year. You are not charged during the design and preview stage." },
+    { q: 'How good are Looka logos compared to a designer?', a: "Looka produces solid, professional logos for standard business types — especially retail, food, tech startups, and service businesses. For most small businesses, the output is commercially viable and comparable to hiring a junior designer. For complex, highly differentiated brand identities or industries requiring unique symbolism, a human designer adds more value." },
+    { q: 'What files do you get with a Looka logo?', a: "The Logo Package includes SVG, PNG, PDF, and EPS files in both colour and black-and-white versions. SVG and EPS are vector formats — infinitely scalable without quality loss — which means you can print the logo on anything from a business card to a billboard. The Brand Kit adds social media templates, business card designs, and email signature graphics." },
+    { q: 'Can I customise a Looka logo after generating it?', a: "Yes — Looka provides a full editor where you can change colours, fonts, icon placement, and layout after the initial AI generation. You can iterate through many variations until you find the right combination. The editor is accessible throughout the paid subscription period." },
+    { q: 'Looka vs Canva logo maker — which is better?', a: "Looka is better for creating a standalone professional logo — the AI generates more polished, original concepts based on your industry and preferences. Canva's logo maker is better if you already have design experience and want to build a logo from scratch using Canva's template library. For most small business owners who need a professional logo quickly, Looka's guided process produces better results faster." },
+  ],
+
+  pictory: [
+    { q: 'Is Pictory free to use?', a: "Pictory does not have a permanent free plan. It offers a free trial with 3 video projects (no credit card required) so you can test the full workflow before committing. Paid plans start at $19/month for the Starter plan, which includes 30 videos per month at up to 10 minutes each." },
+    { q: 'What is Pictory best for?', a: "Pictory is best for repurposing existing content into video — particularly converting blog posts, articles, and scripts into short social media videos or video summaries. It is also strong for creating highlight reels from long webinar or Zoom recordings. For creating new videos from scratch with no existing content, InVideo AI is a better fit." },
+    { q: 'Can Pictory turn a blog post into a video automatically?', a: "Yes — paste any blog post URL or text into Pictory and it extracts key points, selects matching stock footage from its library, adds background music, and generates a narrated video in minutes. The automation handles 80% of the work; you review and adjust the script, footage selection, and branding before export." },
+    { q: 'Pictory vs InVideo AI — which should I choose?', a: "Pictory is better for repurposing existing content (blogs, webinar recordings, articles). InVideo AI is better for creating new videos from a text prompt with no existing content. If your workflow is 'I have blog posts and want to make videos' — Pictory. If your workflow is 'I want to create faceless YouTube videos from scratch' — InVideo AI." },
+    { q: 'What stock footage library does Pictory use?', a: "Pictory provides access to over 3 million licensed stock footage clips from Storyblocks. The library covers business, lifestyle, technology, nature, and general b-roll content. Storyblocks footage is commercially licensable, meaning videos exported from Pictory can be used on monetised YouTube channels and social media platforms without additional licensing fees." },
+  ],
+
+  invideo: [
+    { q: 'Is InVideo AI free?', a: "InVideo AI has a free plan that includes 10 minutes of video generation per week with an InVideo watermark. The watermark makes it unsuitable for commercial or professional use. The paid plans start at $20/month, which removes the watermark, increases video length limits, and adds AI voiceover options and stock footage access." },
+    { q: 'How does InVideo AI generate videos from text?', a: "Enter a text prompt or script — for example, 'Create a 5-minute YouTube video about the benefits of meditation' — and InVideo AI generates a script, selects background footage from its stock library, adds AI voiceover narration, creates subtitles, and assembles the complete video. The process takes 3–10 minutes depending on video length." },
+    { q: 'Can I make faceless YouTube videos with InVideo AI?', a: "Yes — InVideo AI is specifically designed for faceless YouTube video creation. The AI generates complete videos with stock footage b-roll, AI narration, and auto-captions from a single text prompt or topic. Many creators run faceless YouTube channels entirely using InVideo AI, editing the generated output to add personal commentary." },
+    { q: 'InVideo AI vs Pictory — what is the difference?', a: "InVideo AI creates videos from scratch using AI generation. Pictory converts existing content (blog posts, recordings) into videos. If you want to create new video content from a topic or prompt, use InVideo AI. If you want to repurpose existing written or recorded content into video, use Pictory. The tools solve different problems in the same content workflow." },
+    { q: 'What languages does InVideo AI support?', a: "InVideo AI supports voiceover and subtitle generation in 50+ languages including English, Spanish, French, German, Hindi, Portuguese, Arabic, and Japanese. The voice quality varies by language — English and Spanish voices are the most natural-sounding. For non-English faceless channels, check the specific language output quality in the free trial before committing." },
+  ],
+
+  gamma: [
+    { q: 'Is Gamma free?', a: "Yes — Gamma gives 400 free AI credits on signup with no credit card required. That is enough to create 4–5 complete AI-generated presentations. Free presentations include a small Gamma badge in the corner. The Plus plan at $8/month removes the badge, unlocks unlimited AI creation, and adds custom domains and analytics." },
+    { q: 'How does Gamma generate presentations?', a: "Enter a topic, paste existing content, or upload a document. Gamma's AI generates a complete presentation — including slide content, layout, imagery, and formatting — in under 2 minutes. You then edit individual slides in a web-based editor. The AI handles the structural thinking so you focus on refinement rather than starting from a blank slide." },
+    { q: 'Gamma vs PowerPoint — which should I use?', a: "Gamma is faster for AI-generated presentations and produces more modern, visually polished results from minimal input. PowerPoint gives more precise manual control and is the standard for corporate and client presentations where exact brand compliance matters. For rapid ideation, pitch decks, and team presentations, Gamma is significantly faster. For formal corporate deliverables, PowerPoint is still the expected format." },
+    { q: 'Can Gamma export to PowerPoint or PDF?', a: "Yes — Gamma exports to PDF and PowerPoint (.pptx) on paid plans. This means you can create the structure in Gamma and deliver a .pptx file to clients or stakeholders who work in PowerPoint. PDF export is available on the free plan." },
+    { q: 'Is Gamma good for student presentations?', a: "Gamma is excellent for student presentations — the free plan with 400 credits covers most academic presentation needs, the AI generates professional-looking slides faster than building them manually, and the modern templates are significantly more visually polished than default PowerPoint themes. For coursework presentations, Gamma consistently produces better-looking results with less effort." },
+  ],
+
+  'beautiful-ai': [
+    { q: 'Is Beautiful.ai free?', a: "Beautiful.ai does not have a permanent free plan. It offers a 14-day free trial with full access. Paid plans start at $12/month (billed annually) for the Pro plan, which includes unlimited presentations, custom themes, and access to all Smart Slide templates. Team plans with collaboration features start at $40/user/month." },
+    { q: 'What makes Beautiful.ai different from PowerPoint?', a: "Beautiful.ai uses Smart Slides — templates that adapt their layout automatically as you add content. Add a fourth bullet point and the slide redesigns itself to accommodate it without breaking the visual structure. This removes the most frustrating part of PowerPoint: maintaining visual consistency as content changes. For professionals who spend time fixing slide layouts, Beautiful.ai eliminates that overhead." },
+    { q: 'Beautiful.ai vs Gamma — which is better?', a: "Gamma generates presentations faster from AI prompts and is better for rapid ideation and team sharing via web link. Beautiful.ai produces more corporate-polished output with stronger brand controls and is better for presentations delivered to clients or executives where visual precision matters. Gamma wins on speed; Beautiful.ai wins on professional finish." },
+    { q: 'Can Beautiful.ai export to PowerPoint?', a: "Yes — Beautiful.ai can export presentations to PDF and PowerPoint format. The PowerPoint export preserves the visual design, making it suitable for situations where stakeholders need an editable .pptx file. Note that some Smart Slide adaptivity is lost in the PowerPoint export, as the exported file becomes a static slide deck." },
+    { q: 'Is Beautiful.ai worth the price?', a: "Beautiful.ai is worth $12/month for professionals who create presentations regularly and value visual quality over setup time. The Smart Slide system genuinely reduces the time spent on layout maintenance. For casual users who create presentations infrequently, Gamma's free plan or Canva's free presentation templates are better-value starting points." },
+  ],
+
+  jasper: [
+    { q: 'Is Jasper AI worth it in 2026?', a: "Jasper at $39/month is worth it specifically for content teams that need consistent brand voice across multiple writers. The Brand Voice feature trains Jasper on your style guide and company voice, producing on-brand content without lengthy prompting. For individual creators and freelancers who don't have a defined brand voice system, Writesonic at $16/month delivers comparable output at less than half the price." },
+    { q: 'Does Jasper AI have a free plan?', a: "No — Jasper does not offer a permanent free plan. It provides a 7-day free trial (no credit card for some trial versions) that gives access to the full feature set including Brand Voice, the document editor, and all templates. After the trial, the Creator plan is $39/month and the Pro plan (with Brand Voice for 3+ brand voices) is $99/month." },
+    { q: 'Jasper AI vs ChatGPT — which is better for marketing?', a: "Jasper is better for structured marketing content creation within a defined brand voice — it has 50+ purpose-built marketing templates (ad copy, product descriptions, email sequences, blog posts) and the Brand Voice feature ensures consistency. ChatGPT is better for flexible, conversational tasks, research, and one-off content where brand consistency isn't the primary concern. For a dedicated content team, Jasper. For a solo creator or researcher, ChatGPT." },
+    { q: 'What is Jasper Art?', a: "Jasper Art is Jasper's built-in AI image generation feature, powered by Stable Diffusion. It generates images from text prompts within the Jasper editor, allowing content creators to produce both written content and supporting visuals in one workflow. Available on the Creator and Pro plans. For dedicated image generation with more control, Leonardo.ai or Midjourney produce higher-quality outputs." },
+    { q: 'Can Jasper write in languages other than English?', a: "Yes — Jasper supports 30+ languages including Spanish, French, German, Italian, Portuguese, Dutch, Japanese, and Hindi. The output quality in major European languages is strong. For non-English content at scale, verify the specific language quality during the free trial, as performance varies by language and content type." },
+  ],
 };
 
 // ── Compare articles ──────────────────────────────────────────────────────────
@@ -600,6 +676,37 @@ const CATEGORY_OG_MAP = {
   'best-ai-productivity-tools':`${SITE}/og-category-productivity.webp`,
 };
 
+// Bug 4 Fix: Per-post OG images — generated by scripts/generate-blog-og-images.mjs
+// Maps blog post slug → absolute WebP URL served from /og/blog/<slug>.webp
+// resolveOgImage() checks this map first before falling through to category images.
+// To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
+const BLOG_OG_MAP = {
+  'best-ai-writing-tools-for-beginners-2026':    `${SITE}/og/blog/best-ai-writing-tools-for-beginners-2026.webp`,
+  'best-ai-tools-for-freelancers-2026':          `${SITE}/og/blog/best-ai-tools-for-freelancers-2026.webp`,
+  'best-grammarly-alternatives':                  `${SITE}/og/blog/best-grammarly-alternatives.webp`,
+  'best-podcastle-alternatives':                  `${SITE}/og/blog/best-podcastle-alternatives.webp`,
+  'best-ai-tools-for-social-media-2026':         `${SITE}/og/blog/best-ai-tools-for-social-media-2026.webp`,
+  'how-to-use-rytr-to-write-blog-posts':         `${SITE}/og/blog/how-to-use-rytr-to-write-blog-posts.webp`,
+  'ai-tools-for-students-free-2026':             `${SITE}/og/blog/ai-tools-for-students-free-2026.webp`,
+  'best-ai-podcast-tools-2026':                  `${SITE}/og/blog/best-ai-podcast-tools-2026.webp`,
+  'best-notion-ai-alternatives-2026':            `${SITE}/og/blog/best-notion-ai-alternatives-2026.webp`,
+  'how-to-use-ai-for-content-creation-2026':     `${SITE}/og/blog/how-to-use-ai-for-content-creation-2026.webp`,
+  'best-invideo-alternatives-2026':              `${SITE}/og/blog/best-invideo-alternatives-2026.webp`,
+  'jasper-ai-alternatives':                       `${SITE}/og/blog/jasper-ai-alternatives.webp`,
+  'chatgpt-alternatives-free-2026':              `${SITE}/og/blog/chatgpt-alternatives-free-2026.webp`,
+  'best-ai-coding-tools-2026':                   `${SITE}/og/blog/best-ai-coding-tools-2026.webp`,
+  'best-ai-logo-makers-free-2026':               `${SITE}/og/blog/best-ai-logo-makers-free-2026.webp`,
+  'best-ai-marketing-tools-2026':                `${SITE}/og/blog/best-ai-marketing-tools-2026.webp`,
+  'ai-tools-for-teachers-2026':                  `${SITE}/og/blog/ai-tools-for-teachers-2026.webp`,
+  'best-midjourney-alternatives-2026':           `${SITE}/og/blog/best-midjourney-alternatives-2026.webp`,
+  'best-ai-tools-in-india-2026':                 `${SITE}/og/blog/best-ai-tools-in-india-2026.webp`,
+  'taskade-vs-notion-vs-asana-2026':             `${SITE}/og/blog/taskade-vs-notion-vs-asana-2026.webp`,
+  'leonardo-vs-midjourney-2026':                 `${SITE}/og/blog/leonardo-vs-midjourney-2026.webp`,
+  'best-free-ai-tools-for-students-in-india-2026':`${SITE}/og/blog/best-free-ai-tools-for-students-in-india-2026.webp`,
+  'best-ai-tools-for-freelancers-india-2026':   `${SITE}/og/blog/best-ai-tools-for-freelancers-india-2026.webp`,
+  'best-ai-tools-for-content-creators-free-2026':`${SITE}/og/blog/best-ai-tools-for-content-creators-free-2026.webp`,
+};
+
 function resolveOgImage(slug) {
   // W4-T1: Category landing pages — each gets a topic-specific OG image
   if (CATEGORY_OG_MAP[slug]) return CATEGORY_OG_MAP[slug];
@@ -608,6 +715,13 @@ function resolveOgImage(slug) {
   if (slug.startsWith('blog/')) {
     const post = BLOG_POSTS.find(p => `blog/${p.slug}` === slug);
     if (post) {
+      // Bug 4 Fix: Per-post ogImage takes priority over any category-level fallback.
+      // 1. post.ogImage field (set directly in BLOG_POSTS entry)
+      // 2. BLOG_OG_MAP lookup (generated by scripts/generate-blog-og-images.mjs)
+      // 3. Legacy keyword-based category image fallback
+      if (post.ogImage) return post.ogImage;
+      if (BLOG_OG_MAP[post.slug]) return BLOG_OG_MAP[post.slug];
+
       const t = post.title.toLowerCase();
       // India-specific posts get their own OG image for niche positioning
       if (t.includes('india') || t.includes('inr') || t.includes('indian'))
