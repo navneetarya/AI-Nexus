@@ -48,16 +48,16 @@ const HANDS_ON_STEPS = [
   {
     icon: UserCheck,
     step: 'Step 1',
-    action: 'Free account registration',
-    detail: 'Register a free account on the tool using a personal email — no trial keys, no press accounts. This ensures the free-plan experience documented in the review is identical to what any reader will encounter.',
-    time: '5 min',
+    action: 'Free account sign-up & interface exploration',
+    detail: 'Where a free tier is available, a free account is registered to document the exact sign-up flow, onboarding experience, and free-plan limitations a new user encounters — credit-card requirements, feature gates, and trial length. This ensures free-plan coverage in the review reflects real access conditions, not marketing copy.',
+    time: '10 min',
   },
   {
     icon: Clock,
     step: 'Step 2',
-    action: '30-minute hands-on testing session',
-    detail: 'Spend exactly 30 minutes on the tool\'s core use case. For a writing tool: generate 3–5 outputs. For an audio tool: record, clean, and export a test clip. For a design tool: create a complete asset from scratch. Every observation from this session is documented before any review copy is written.',
-    time: '30 min',
+    action: 'Official documentation & feature verification',
+    detail: 'Every feature claim is verified directly against the tool\'s official documentation, help centre, and changelog — not third-party summaries or the tool\'s own marketing copy. Feature limits, beta flags, plan restrictions, and deprecation notices are all captured at this stage. This is what prevents the most common review-site failure: republishing a vendor\'s own marketing as if it were independent analysis.',
+    time: '40 min',
   },
   {
     icon: Search,
@@ -95,7 +95,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: `How I Review AI Tools — Testing Methodology | AI Nexus`,
-    description: `The exact 6-step process ${SITE_CONFIG.authorName} uses to independently research every AI tool on AI Nexus. 30-min hands-on testing, 200+ verified reviews per tool, live pricing verification, and competitor benchmarking.`,
+    description: `The exact 6-step process ${SITE_CONFIG.authorName} uses to independently research every AI tool on AI Nexus. Official documentation review, 200+ verified reviews per tool, live pricing verification, Reddit sentiment analysis, and competitor benchmarking.`,
     url: `${SITE_CONFIG.siteUrl}/methodology`,
     author: {
       '@type': 'Person',
@@ -231,7 +231,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           {/* Session total */}
           <div style={{ marginTop: 22, padding: '14px 18px', background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 10 }}>
             <div style={{ fontSize: 13, fontWeight: 600, color: C.txt }}>Total research time per tool</div>
-            <div style={{ fontSize: 15, fontWeight: 700, color: C.a1 }}>~140 min (2.3 hrs minimum per session)</div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: C.a1 }}>~155 min (2.5 hrs minimum per session)</div>
           </div>
           <p style={{ fontSize: 12, color: C.mut2, marginTop: 10, fontWeight: 300, lineHeight: 1.6 }}>
             Complex tools — particularly those with multiple pricing tiers, long feature sets, or significant Reddit discussion — routinely take 4–6 hours total across 2–3 sessions. The 6 steps above represent the minimum research threshold. No review is published on the basis of a single session alone.
