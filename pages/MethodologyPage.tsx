@@ -48,9 +48,9 @@ const HANDS_ON_STEPS = [
   {
     icon: UserCheck,
     step: 'Step 1',
-    action: 'Free account sign-up & interface exploration',
-    detail: 'Where a free tier is available, a free account is registered to document the exact sign-up flow, onboarding experience, and free-plan limitations a new user encounters — credit-card requirements, feature gates, and trial length. This ensures free-plan coverage in the review reflects real access conditions, not marketing copy.',
-    time: '10 min',
+    action: 'Official documentation & interface research',
+    detail: 'Every review begins with a thorough read of the tool\'s official documentation, help centre, and changelog. Feature claims, plan restrictions, beta flags, and deprecation notices are all verified here — not from third-party summaries or the tool\'s own marketing copy. Where a free tier is available and account creation adds meaningful data on the onboarding flow or free-plan limitations, a free account may be registered as part of this step. Account creation is an optional addition, not a requirement: reviews of tools without a genuinely accessible free tier are based entirely on documentation, verified user reports, and official pricing pages.',
+    time: '20 min',
   },
   {
     icon: Clock,

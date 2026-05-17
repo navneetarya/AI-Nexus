@@ -33,7 +33,7 @@ const AUTHOR = 'Navneet Arya';
 // can reliably associate the author name with ainexustools.online.
 const AUTHOR_SAME_AS = [
   'https://www.linkedin.com/in/navneetarya/',
-  'https://twitter.com/ainexustools',
+  'https://x.com/aryanavneet',
   'https://ainexustools.online/about/',
   'https://github.com/navneetarya',
 ];

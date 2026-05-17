@@ -764,7 +764,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             maxWidth:430, textAlign:'left' as const,
           }}>
             <p style={{ fontSize:12.5, fontWeight:700, color:C.txt, margin:'0 0 8px', fontFamily:"'Inter', system-ui, sans-serif" }}>
-              📬 Join 500+ creators getting weekly AI tool picks
+              📬 Weekly AI tool picks — free, no sponsored content
             </p>
             <BeehiivForm variant="article" />
           </div>
@@ -823,7 +823,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           justifyContent:'center', gap:'clamp(18px,4vw,48px)', flexWrap:'wrap' as const }}>
           {[
             { icon:<Award size={13}/>,  text:`${TOOLS.length}+ tools reviewed` },
-            { icon:<Clock size={13}/>,  text:'2+ years of testing' },
+            { icon:<Clock size={13}/>,  text:'Researching AI tools since 2022' },
             { icon:<Shield size={13}/>, text:'No sponsored content' },
             { icon:<Zap size={13}/>,    text:'Every link = free trial' },
           ].map(({ icon, text }, i) => (
@@ -1111,38 +1111,34 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         )}
       </div>
 
-      {/* ── Social proof: testimonials ──────────────────────────────────── */}
+      {/* ── Author CTA — replaces fabricated testimonials ──────────────── */}
       <div style={{ padding:'48px 24px 0', background:'var(--bg)' }}>
         <div style={{ maxWidth:900, margin:'0 auto' }}>
-          <p style={{ textAlign:'center', fontSize:11.5, fontFamily:"'Inter', system-ui, sans-serif",
-            fontWeight:600, letterSpacing:'0.12em', textTransform:'uppercase' as const,
-            color:C.mut2, marginBottom:28 }}>What readers say</p>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))', gap:14 }}>
-            {[
-              { quote: "Navneet's Grammarly review saved me from buying the wrong plan. The free vs premium breakdown is the most honest I've read anywhere.", name:'Priya S.', role:'Freelance content writer' },
-              { quote: "I use the compare pages every time I'm evaluating a new AI tool. The 'who should skip this' section is worth more than the whole review on most sites.", name:'Marcus T.', role:'Marketing lead, SaaS startup' },
-              { quote: "Found AI Nexus via a Rytr search. Three months later I've changed my entire stack based on the reviews here. No fluff, just what actually matters.", name:'Aisha K.', role:'Solopreneur & content creator' },
-            ].map((t, i) => (
-              <div key={i} style={{ background:C.surf, borderRadius:14,
-                border:`1px solid var(--brd-sm)`, padding:'18px 20px' }}>
-                <p style={{ fontSize:13.5, color:C.txt, lineHeight:1.7, margin:'0 0 14px',
-                  fontStyle:'italic' }}>"{t.quote}"</p>
-                <div style={{ display:'flex', alignItems:'center', gap:9 }}>
-                  <div style={{ width:32, height:32, borderRadius:'50%', background:C.a1card,
-                    border:`1.5px solid ${C.a1brd}`, display:'flex', alignItems:'center',
-                    justifyContent:'center', flexShrink:0,
-                    fontSize:12, fontWeight:600, color:C.a1,
-                    fontFamily:"'Inter',sans-serif" }}>
-                    {t.name[0]}
-                  </div>
-                  <div>
-                    <div style={{ fontSize:12.5, fontWeight:600, color:C.txt,
-                      fontFamily:"'Inter',sans-serif" }}>{t.name}</div>
-                    <div style={{ fontSize:11.5, color:C.mut2 }}>{t.role}</div>
-                  </div>
-                </div>
+          <div style={{ display:'flex', alignItems:'center', gap:20,
+            background:C.surf, borderRadius:16, border:`1px solid var(--brd-sm)`,
+            padding:'24px 28px', flexWrap:'wrap' as const }}>
+            <img
+              src="/author-photo.jpg"
+              alt="Navneet Arya — independent AI tools researcher"
+              width={56} height={56}
+              style={{ borderRadius:'50%', objectFit:'cover' as const, flexShrink:0 }}
+            />
+            <div style={{ flex:1, minWidth:200 }}>
+              <div style={{ fontSize:14, fontWeight:700, color:C.txt,
+                fontFamily:"'Inter',sans-serif", marginBottom:4 }}>
+                Navneet Arya — independent AI tools researcher
               </div>
-            ))}
+              <div style={{ fontSize:13.5, color:C.mut, lineHeight:1.65 }}>
+                I read every email. If a review here helped you choose a tool — or if you think I got something wrong — I genuinely want to hear it.
+              </div>
+              <a href="mailto:hello@ainexustools.online"
+                style={{ display:'inline-flex', alignItems:'center', gap:6, marginTop:10,
+                  fontSize:12.5, fontWeight:600, color:C.a1, textDecoration:'none',
+                  padding:'6px 14px', borderRadius:8,
+                  background:C.a1card, border:`1px solid ${C.a1brd}` }}>
+                <Mail size={13}/> hello@ainexustools.online
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1194,11 +1190,11 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         </div>
       </div>
 
-      {/* ── Subscriber count + Newsletter strip — bottom of page ────────── */}
+      {/* ── Newsletter strip — bottom of page ──────────────────────────── */}
       <div style={{ padding:'40px 24px 0' }}>
         <p style={{ textAlign:'center', fontSize:13, color:C.mut, fontWeight:500,
           marginBottom:4, fontFamily:"'Inter', system-ui, sans-serif" }}>
-          Join <strong style={{ color:C.txt }}>1,200+ creators</strong> getting weekly AI tool picks
+          New reviews every week. No sponsored content. Unsubscribe anytime.
         </p>
         <p style={{ textAlign:'center', fontSize:12, color:C.mut2, marginBottom:16 }}>
           One email per week. No sponsored content. Unsubscribe anytime.
