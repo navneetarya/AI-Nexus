@@ -28,7 +28,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
       "https://www.linkedin.com/in/navneetarya/",
       "https://x.com/aryanavneet",
       "https://ainexustools.online/about/"
-      // Add once published: "https://medium.com/@navneetarya"
+      // Add once published: "https://medium.com/@navneetarya1989"
     ],
     "knowsAbout": [
       "Artificial Intelligence", "AI Writing Tools", "AI Image Generators",

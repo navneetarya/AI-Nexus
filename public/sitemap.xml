@@ -192,4 +192,24 @@
   <url><loc>https://ainexustools.online/blog/best-ai-tools-in-india-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-12</lastmod>
     <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Tools in India 2026</image:title></image:image>
   </url>
+
+  <!-- W2: Missing blog posts — added to ensure full sitemap coverage -->
+  <url><loc>https://ainexustools.online/blog/best-ai-writing-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-14</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Writing Tools 2026 — Tested, Ranked &amp; Compared</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-14</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Taskade vs Notion vs Asana 2026 — 3-Way Comparison for Freelancers</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/leonardo-vs-midjourney-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-14</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Leonardo.ai vs Midjourney 2026 — Free Plan Comparison</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-free-ai-tools-for-students-in-india-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-13</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best Free AI Tools for Students in India 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-freelancers-india-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-13</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Tools for Freelancers in India 2026</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-14</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best Free AI Tools for Content Creators 2026</image:title></image:image>
+  </url>
 </urlset>

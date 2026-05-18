@@ -367,11 +367,11 @@ def validate_w2_t4(root: Path, r: Results):
 
     # Check placeholder comment exists (shows intent is tracked in code)
     if about_content:
-        has_placeholder = "medium.com/@navneetarya" in about_content
+        has_placeholder = "medium.com/@navneetarya1989" in about_content
         if has_placeholder:
             # Check if it's still a comment or actually added
             is_live = bool(re.search(
-                r'"https://medium\.com/@navneetarya"',
+                r'"https://medium\.com/@navneetarya1989"',
                 about_content
             ))
             if is_live:
@@ -382,16 +382,16 @@ def validate_w2_t4(root: Path, r: Results):
                 r.skipped += 1
         else:
             r.record(False, "Medium URL placeholder present in AboutPage.tsx",
-                     "no reference to medium.com/@navneetarya found")
+                     "no reference to medium.com/@navneetarya1989 found")
     else:
         r.skip("AboutPage.tsx Medium placeholder check", "file not found")
 
     if prerender_content:
-        has_placeholder = "medium.com/@navneetarya" in prerender_content
+        has_placeholder = "medium.com/@navneetarya1989" in prerender_content
         if has_placeholder:
             # Check AUTHOR_SAME_AS specifically
             is_live = bool(re.search(
-                r"'https://medium\.com/@navneetarya'",
+                r"'https://medium\.com/@navneetarya1989'",
                 prerender_content
             ))
             if is_live:
