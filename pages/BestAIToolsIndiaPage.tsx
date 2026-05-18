@@ -34,6 +34,7 @@ const INDIA_TOOLS: Array<{
   indiaUseCase: string;
   rank: number;
   badge?: string;
+  indiaVerdict?: string;
 }> = [
   {
     slug: 'grammarly',
@@ -45,6 +46,7 @@ const INDIA_TOOLS: Array<{
     indiaUseCase: 'Emails, reports, LinkedIn profiles, client communication in English',
     rank: 1,
     badge: 'Best Free Pick',
+    indiaVerdict: 'Grammarly is the single highest-value free tool for Indian professionals writing in English. The free plan has no character limit — unlike most AI tools — and works instantly via the Chrome extension across Gmail, LinkedIn, and Google Docs. For BPO workers, IT professionals, and freelancers writing client emails daily, it eliminates the "sounds non-native" problem without any subscription.',
   },
   {
     slug: 'rytr',
@@ -56,6 +58,7 @@ const INDIA_TOOLS: Array<{
     indiaUseCase: 'Freelance blog content, social media captions, product descriptions for Meesho/Flipkart sellers',
     rank: 2,
     badge: 'Best Value',
+    indiaVerdict: 'At ₹750/month for unlimited content, Rytr is the most accessible paid AI writing tool in India — no international card needed, UPI accepted at checkout. The Hindi content generation is genuinely useful for regional social media and product listings on Meesho or Flipkart. The free tier\'s 10,000 characters/month is enough to test the tool on real work before committing.',
   },
   {
     slug: 'canva-ai',
@@ -67,6 +70,7 @@ const INDIA_TOOLS: Array<{
     indiaUseCase: 'Social media creatives, festival posts, YouTube thumbnails, WhatsApp marketing',
     rank: 3,
     badge: 'Most Versatile',
+    indiaVerdict: 'Canva is the only AI design tool with a dedicated Indian festival template library — Diwali, Holi, Eid, Independence Day posts are built-in, not generic stock. The Hindi UI and regional-language text support makes it the default choice for Indian SMEs running WhatsApp marketing and Instagram. At ₹499/month, the Pro plan is priced significantly below the international rate and accepts Indian cards and UPI.',
   },
   {
     slug: 'elevenlabs',
@@ -351,6 +355,27 @@ const IndiaToolCard: React.FC<{
         <span style={{ color: C.txt, fontWeight: 600 }}>India use case: </span>
         {indiaTool.indiaUseCase}
       </div>
+
+      {/* W2-T2: India Verdict — 50-word narrative for top-3 tools */}
+      {indiaTool.indiaVerdict && (
+        <div style={{
+          background: 'rgba(255,107,53,.05)',
+          border: '1px solid rgba(255,107,53,.18)',
+          borderRadius: 10,
+          padding: '12px 14px',
+        }}>
+          <div style={{
+            fontSize: 10, fontWeight: 700, color: 'var(--a2)',
+            letterSpacing: '.08em', textTransform: 'uppercase' as const,
+            marginBottom: 6,
+          }}>
+            🇮🇳 India Verdict
+          </div>
+          <p style={{ fontSize: 12.5, color: C.txt, lineHeight: 1.7, margin: 0 }}>
+            {indiaTool.indiaVerdict}
+          </p>
+        </div>
+      )}
 
       {/* CTAs */}
       <div style={{ display: 'flex', gap: 8, marginTop: 2 }}>
@@ -664,6 +689,98 @@ export function BestAIToolsIndiaPage({ navigate, isDark, toggleTheme }: Props) {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </div>
+
+      {/* ── W2-T2: UPI & Indian Payment Methods ──────────────────────────── */}
+      <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px 48px' }}>
+        <div style={{
+          background: C.surf,
+          border: `1px solid ${C.barBrd}`,
+          borderRadius: 16,
+          padding: '28px',
+        }}>
+          <h2 style={{
+            fontFamily: "'Inter',sans-serif", fontSize: 18, fontWeight: 800,
+            color: C.txt, marginBottom: 6,
+          }}>
+            💳 Payment Methods — What Works from India
+          </h2>
+          <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.7, marginBottom: 20 }}>
+            Most AI tool checkout pages show USD pricing and accept international cards. Here is exactly what works from an Indian billing address, including UPI and domestic card support.
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {[
+              {
+                tool: 'Grammarly',
+                methods: 'UPI, Indian Visa/Mastercard debit, RuPay, Net Banking',
+                note: 'Free plan requires no payment at all. Premium checkout fully supports Indian payment rails.',
+                ok: true,
+              },
+              {
+                tool: 'Rytr',
+                methods: 'UPI, Indian debit/credit cards, Razorpay gateway',
+                note: 'Uses Razorpay — the most India-friendly checkout on this list. UPI works without VPN.',
+                ok: true,
+              },
+              {
+                tool: 'Canva AI (Pro)',
+                methods: 'UPI, Indian debit/credit cards, Net Banking',
+                note: 'Canva has a dedicated India pricing page. Pro billed in INR — no forex charges.',
+                ok: true,
+              },
+              {
+                tool: 'ElevenLabs',
+                methods: 'International Visa/Mastercard credit card required for paid plans',
+                note: 'Free plan works without payment. Paid plans require an international credit card — Indian debit cards are often declined. Workaround: use a Niyo or Wise card.',
+                ok: false,
+              },
+              {
+                tool: 'Perplexity Pro',
+                methods: 'International Visa/Mastercard credit card required',
+                note: 'No UPI support. Indian debit cards declined at checkout. Use Niyo Global or a forex card for the ₹1,660/month Pro plan.',
+                ok: false,
+              },
+              {
+                tool: 'Leonardo AI, Replit, Taskade, Notion AI, Murf AI',
+                methods: 'International credit card for paid plans; free plans require no payment',
+                note: 'Free plans are accessible without any payment method. For paid plans, use an international credit card or a Wise/Niyo virtual card.',
+                ok: false,
+              },
+            ].map(({ tool, methods, note, ok }) => (
+              <div key={tool} style={{
+                display: 'grid', gridTemplateColumns: '140px 1fr',
+                gap: 16, alignItems: 'start',
+                background: C.bg, borderRadius: 10,
+                border: `1px solid ${C.barBrd}`, padding: '14px 16px',
+              }}>
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: C.txt, marginBottom: 4 }}>{tool}</div>
+                  <span style={{
+                    display: 'inline-flex', alignItems: 'center', gap: 4,
+                    fontSize: 10, fontWeight: 700, padding: '2px 8px', borderRadius: 100,
+                    background: ok ? 'rgba(16,185,129,.1)' : 'rgba(245,158,11,.1)',
+                    color: ok ? '#10b981' : '#f59e0b',
+                    border: `1px solid ${ok ? 'rgba(16,185,129,.25)' : 'rgba(245,158,11,.25)'}`,
+                  }}>
+                    {ok ? '✓ UPI Supported' : '⚠ Intl. Card Needed'}
+                  </span>
+                </div>
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: C.txt, marginBottom: 4 }}>{methods}</div>
+                  <div style={{ fontSize: 12, color: C.mut, lineHeight: 1.6 }}>{note}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div style={{
+            marginTop: 18, padding: '12px 16px',
+            background: 'rgba(13,148,136,.06)', borderRadius: 10,
+            border: '1px solid rgba(13,148,136,.18)',
+            fontSize: 12.5, color: C.txt, lineHeight: 1.65,
+          }}>
+            <strong style={{ color: 'var(--a1)' }}>Pro tip for Indian users:</strong> A <strong>Niyo Global</strong> or <strong>Wise</strong> virtual card solves the international payment problem for any tool on this list. Both are free to get, work with UPI for top-ups, and are accepted everywhere international Visa/Mastercard cards are. This is the most practical workaround for tools that don't support Indian domestic cards on paid plans.
           </div>
         </div>
       </div>

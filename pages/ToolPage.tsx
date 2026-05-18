@@ -1254,6 +1254,78 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               </div>
               <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.8, fontWeight: 300, margin: '0 0 18px' }}>{content.myTake}</p>
 
+              {/* W2-T5: Sources consulted disclosure — Wirecutter-style trust signal
+                  Audit finding: myTake sections need explicit source attribution visible
+                  in the UI for both human readers and Google quality raters. */}
+              {tool.researchSources && (
+                <div style={{
+                  background: 'rgba(13,148,136,.04)',
+                  border: '1px solid rgba(13,148,136,.14)',
+                  borderRadius: 10,
+                  padding: '12px 16px',
+                  marginBottom: 20,
+                  display: 'flex',
+                  flexWrap: 'wrap' as const,
+                  gap: 14,
+                  alignItems: 'flex-start',
+                }}>
+                  <div style={{
+                    fontSize: 10, fontWeight: 800, color: 'var(--a1)',
+                    letterSpacing: '.09em', textTransform: 'uppercase' as const,
+                    flexShrink: 0, paddingTop: 2,
+                  }}>
+                    Sources consulted
+                  </div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 8, flex: 1, minWidth: 0 }}>
+                    {tool.researchSources.g2 && (
+                      <span style={{
+                        fontSize: 12, color: 'var(--mut)',
+                        background: 'var(--surf2)', borderRadius: 6,
+                        padding: '3px 9px', border: '1px solid var(--brd2)',
+                      }}>
+                        G2 — <strong style={{ color: 'var(--txt)' }}>{tool.researchSources.g2.count.toLocaleString()} verified reviews</strong> ({tool.researchSources.g2.rating}/5)
+                      </span>
+                    )}
+                    {tool.researchSources.trustpilot && (
+                      <span style={{
+                        fontSize: 12, color: 'var(--mut)',
+                        background: 'var(--surf2)', borderRadius: 6,
+                        padding: '3px 9px', border: '1px solid var(--brd2)',
+                      }}>
+                        Trustpilot — <strong style={{ color: 'var(--txt)' }}>{tool.researchSources.trustpilot.count.toLocaleString()} reviews</strong> ({tool.researchSources.trustpilot.rating}/5)
+                      </span>
+                    )}
+                    {tool.researchSources.reddit && (
+                      <span style={{
+                        fontSize: 12, color: 'var(--mut)',
+                        background: 'var(--surf2)', borderRadius: 6,
+                        padding: '3px 9px', border: '1px solid var(--brd2)',
+                      }}>
+                        Reddit — <strong style={{ color: 'var(--txt)' }}>{tool.researchSources.reddit}</strong>
+                      </span>
+                    )}
+                    {tool.researchSources.lastVerified && (
+                      <span style={{
+                        fontSize: 12, color: 'var(--mut)',
+                        background: 'var(--surf2)', borderRadius: 6,
+                        padding: '3px 9px', border: '1px solid var(--brd2)',
+                      }}>
+                        Research date — <strong style={{ color: 'var(--txt)' }}>{tool.researchSources.lastVerified}</strong>
+                      </span>
+                    )}
+                    <a
+                      href="/methodology/"
+                      style={{
+                        fontSize: 12, color: 'var(--a1)', fontWeight: 600,
+                        textDecoration: 'none', padding: '3px 0', flexShrink: 0,
+                      }}
+                    >
+                      How we research →
+                    </a>
+                  </div>
+                </div>
+              )}
+
               {/* Use cases */}
               <div style={{ fontSize: 12, fontWeight: 600, color: accent, letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Real-world use cases</div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 8 }}>
