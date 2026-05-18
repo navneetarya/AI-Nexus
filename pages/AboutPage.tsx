@@ -24,7 +24,12 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
     "image": `${SITE_CONFIG.siteUrl}/author-photo.jpg`,
     "description": SITE_CONFIG.authorBio,
     "jobTitle": "AI Tools Reviewer & Founder",
-    "sameAs": ["https://www.linkedin.com/in/navneetarya/"],
+    "sameAs": [
+      "https://www.linkedin.com/in/navneetarya/",
+      "https://x.com/aryanavneet",
+      "https://ainexustools.online/about/"
+      // Add once published: "https://medium.com/@navneetarya"
+    ],
     "knowsAbout": [
       "Artificial Intelligence", "AI Writing Tools", "AI Image Generators",
       "Podcast Software", "AI Video Tools", "Productivity Software",
