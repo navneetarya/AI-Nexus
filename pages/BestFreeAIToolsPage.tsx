@@ -333,10 +333,10 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
             How I chose these tools
           </h2>
           <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, marginBottom: 10 }}>
-            I tested over 40 AI tools across 2024–2026 and narrowed this list to the 13 that meet three strict criteria: (1) the free plan works without a credit card, (2) the free limit is generous enough to do real work — not just a demo, and (3) the tool is genuinely useful for solo creators, freelancers, or students.
+            40+ AI tools were evaluated across 2024–2026 against three strict criteria — narrowed to the 13 listed here: (1) the free plan works without a credit card, (2) the free limit is generous enough to do real work — not just a demo, and (3) the tool is genuinely useful for solo creators, freelancers, or students.
           </p>
           <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, margin: 0 }}>
-            I've excluded tools with free trials only (Pictory, Beautiful.ai), tools where "free" is just a locked dashboard (Ocoya, Frase), and tools that require a paid plan for any useful output. Every tool below is free to use today.
+            Excluded from this list: tools with free trials only (Pictory, Beautiful.ai), tools where "free" is just a locked dashboard (Ocoya, Frase), and tools that require a paid plan for any useful output. Every tool below is free to use today.
           </p>
         </div>
       </div>

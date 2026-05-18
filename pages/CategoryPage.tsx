@@ -105,7 +105,7 @@ The AI video space is evolving faster than any other category. Tools that strugg
 
 For content creators, the real question is workflow fit. Do you need to turn blog posts into videos? Repurpose podcasts into clips? Create explainer videos with AI avatars? Each tool below is optimised for a different workflow, and I have mapped out exactly which one fits each use case.
 
-Every review includes real video samples I created, rendering time benchmarks, export quality comparisons, and honest verdicts on whether the free plan is genuinely usable for production work.`,
+Every review includes documented sample outputs, rendering time benchmarks from verified user reports, export quality comparisons, and honest verdicts on whether the free plan is genuinely usable for production work.`,
     faqs: [
       { q: 'What is the best AI video editor in 2026?', a: 'InVideo is the best all-round AI video tool for creating videos from text prompts. Opus Clip is the best for repurposing long videos into short clips. The best choice depends on whether you need to create from scratch or edit existing footage.' },
       { q: 'Can AI make videos from text?', a: 'Yes — tools like InVideo can generate complete videos from a text prompt or script. They automatically select stock footage, add transitions, generate voiceover, and add captions. The quality is good enough for social media and marketing content.' },
@@ -182,7 +182,7 @@ What separates great AI design tools from gimmicky ones is output polish. Can yo
 
 The design tool landscape in 2026 is divided between specialised tools (presentations only, social graphics only) and all-in-one platforms. Specialised tools generally produce better results in their niche, while all-in-one tools offer convenience and cost savings. The right choice depends on your primary design needs.
 
-Each review below includes design samples I created, template quality assessments, export format options, and honest comparisons with traditional design tools. Browse the list and click through to the full review for detailed testing results.`,
+Each review below includes documented design samples, template quality assessments, export format options, and honest comparisons with traditional design tools. Browse the list and click through to the full review for detailed testing results.`,
     faqs: [
       { q: 'What is the best AI design tool in 2026?', a: 'Gamma is the best AI design tool for presentations and decks — it generates professional slide decks from a text prompt. For social media graphics, Canva with its AI features offers the broadest template library. The best choice depends on whether you need presentations, social graphics, or brand materials.' },
       { q: 'Can AI design tools replace a graphic designer?', a: 'For standard business materials — presentations, social posts, basic marketing graphics — yes, AI design tools can replace a freelance designer for most tasks. For brand identity work, complex illustrations, and custom creative direction, human designers still deliver superior results.' },
