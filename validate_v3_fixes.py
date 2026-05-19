@@ -546,7 +546,7 @@ section("SECURITY & COMPLIANCE — OWASP Basics, Affiliate Disclosure")
 # No dangerouslySetInnerHTML with unescaped user input
 # Safe usage: JSON.stringify() on a plain JS object (JSON-LD schema injection)
 # Unsafe usage: raw string variable injected without JSON.stringify
-dangerous_uses = re.findall(r'dangerouslySetInnerHTML\s*=\s*\{\{\s*__html:\s*(?!JSON\.stringify)', toolpage)
+dangerous_uses = re.findall(r'dangerouslySetInnerHTML\s*=\s*\{\{\s*__html:(?!\s*JSON\.stringify)', toolpage)
 check(
     "ToolPage: no dangerouslySetInnerHTML with raw tool data",
     len(dangerous_uses) == 0,

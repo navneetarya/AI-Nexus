@@ -1062,6 +1062,9 @@ function generateSitemap() {
     images: [{ loc: `${SITE}/og-india-guide.webp`, title: 'Best AI Tools for India 2026 — INR Pricing — AI Nexus' }],
   }));
 
+  // Keyword gap landing page — "best ai logo maker free" (4,400/mo KD 16)
+  blocks.push(urlBlock({ loc: `${SITE}/best-ai-logo-makers/`, priority: '0.85', freq: 'monthly', mod: TODAY }));
+
   // Category landing pages
   const CATEGORY_SLUGS = [
     'best-ai-writing-tools', 'best-ai-image-tools', 'best-ai-video-tools', 'best-ai-audio-tools',
@@ -1869,8 +1872,6 @@ for (const post of BLOG_POSTS) {
       { q: 'What is the INR price of Looka for Indian users?', a: 'Looka charges in USD — a logo package is $65 (approximately ₹5,400 at May 2026 rates). Canva AI Pro is more affordable at ₹499/month with INR billing, making it the recommended option for Indian creators.' },
     ]),
   ];
-
-  blocks.push(urlBlock({ loc: canonical, priority: '0.85', freq: 'monthly', mod: '2026-05-19' }));
 
   writeRoute('best-ai-logo-makers', buildPage(template, {
     title, description, canonical, schemas,
