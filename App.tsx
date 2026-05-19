@@ -19,6 +19,7 @@ const BlogPage           = React.lazy(() => import('./pages/BlogPage').then(m =>
 const BlogPostPage       = React.lazy(() => import('./pages/BlogPostPage').then(m => ({ default: m.BlogPostPage })));
 const BestFreeAIToolsPage = React.lazy(() => import('./pages/BestFreeAIToolsPage').then(m => ({ default: m.BestFreeAIToolsPage })));
 const BestAIToolsIndiaPage = React.lazy(() => import('./pages/BestAIToolsIndiaPage').then(m => ({ default: m.BestAIToolsIndiaPage })));
+const BestAILogoMakersPage = React.lazy(() => import('./pages/BestAILogoMakersPage').then(m => ({ default: m.BestAILogoMakersPage })));
 const CompareArticlePage = React.lazy(() => import('./pages/CompareArticlePage').then(m => ({ default: m.CompareArticlePage })));
 const CategoryPage       = React.lazy(() => import('./pages/CategoryPage').then(m => ({ default: m.CategoryPage })));
 const GlossaryPage       = React.lazy(() => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })));
@@ -261,6 +262,19 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <BestAIToolsIndiaPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/best-ai-logo-makers') {
+    updateMeta(
+      `Best Free AI Logo Makers 2026 — Tested & Compared | AI Nexus`,
+      `4 AI logo tools independently tested — Looka, Canva AI, Leonardo.ai, and PhotoRoom. Free plan limits, INR pricing, and honest verdicts for solo creators and freelancers.`,
+      `${SITE_CONFIG.siteUrl}/best-ai-logo-makers/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <BestAILogoMakersPage navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }

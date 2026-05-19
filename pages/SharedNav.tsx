@@ -34,9 +34,17 @@ const NAV_CSS = `
   text-overflow:ellipsis; }
 .compare-dropdown-item:hover { background:var(--a1-card)!important; color:var(--a1)!important; }
 .compare-wrap { position:relative; }
+.trust-pill-nav {
+  display:inline-flex; align-items:center; gap:5px;
+  background:var(--a1-card); border:1px solid var(--a1-brd);
+  border-radius:100px; padding:5px 12px;
+  font-size:11px; font-weight:700; color:var(--a1);
+  white-space:nowrap; letter-spacing:.01em; line-height:1; flex-shrink:0;
+}
 @media(max-width:680px){
   #shared-hamburger { display:flex !important; }
   #shared-desktop-nav { display:none !important; }
+  .trust-pill-nav { display:none !important; }
 }
 @media(min-width:681px){
   #shared-hamburger { display:none !important; }
@@ -265,6 +273,11 @@ export function SharedNav({
             >
               Blog
             </button>
+
+            {/* Trust pill — hidden on mobile via CSS */}
+            <span className="trust-pill-nav" title="All reviews are independently researched. No sponsored content.">
+              🔒 No sponsored reviews
+            </span>
 
             {/* Contact */}
             <a

@@ -13,6 +13,8 @@ const C = {
 interface GlossaryTerm {
   term: string;
   definition: string;
+  /** Optional internal links rendered as 'See also' pills after the definition */
+  seeAlso?: { label: string; path: string }[];
 }
 
 const GLOSSARY_TERMS: GlossaryTerm[] = [
@@ -29,7 +31,8 @@ const GLOSSARY_TERMS: GlossaryTerm[] = [
   { term: "Computer Vision", definition: "A field of AI that enables machines to interpret and understand visual information from images and videos. Applications include facial recognition, object detection, medical image analysis, autonomous driving, and tools like Google Lens or Apple's Visual Look Up." },
   { term: "Constitutional AI", definition: "An alignment approach developed by Anthropic where an AI system is trained using a set of written principles (a \"constitution\") that guide its behavior. The model critiques and revises its own responses based on these principles, reducing the need for extensive human feedback while improving safety." },
   { term: "Deep Learning", definition: "A subset of machine learning that uses neural networks with many layers (hence \"deep\") to learn complex patterns from large amounts of data. Deep learning powers most modern AI breakthroughs — including image recognition, speech processing, and large language models." },
-  { term: "Diffusion Model", definition: "A type of generative AI model that creates images (or other data) by learning to reverse a gradual noising process. During training, the model learns to remove noise step by step; during generation, it starts from pure noise and iteratively refines it into a coherent image. DALL·E, Midjourney, and Stable Diffusion all use this approach." },
+  { term: "Diffusion Model", definition: "A type of generative AI model that creates images (or other data) by learning to reverse a gradual noising process. During training, the model learns to remove noise step by step; during generation, it starts from pure noise and iteratively refines it into a coherent image. DALL·E, Midjourney, and Stable Diffusion all use this approach.",
+    seeAlso: [{ label: 'Leonardo.ai review', path: '/tools/leonardo-ai/' }] },
   { term: "Edge AI", definition: "Running AI models directly on local devices — such as smartphones, laptops, or IoT sensors — instead of sending data to cloud servers. Edge AI enables faster response times, offline functionality, and improved privacy since data never leaves the device." },
   { term: "Embedding", definition: "A numerical representation of text, images, or other data as a dense vector (list of numbers) in a high-dimensional space. Embeddings capture semantic meaning — so similar concepts end up close together in vector space. They power search, recommendation systems, and retrieval-augmented generation (RAG)." },
   { term: "Few-Shot Learning", definition: "A technique where a language model is given a small number of examples (\"shots\") in the prompt to demonstrate the desired task or output format. Few-shot prompting helps models produce more accurate and consistent results without requiring any fine-tuning." },
@@ -49,15 +52,20 @@ const GLOSSARY_TERMS: GlossaryTerm[] = [
   { term: "NLU (Natural Language Understanding)", definition: "A subfield of NLP focused specifically on a machine's ability to comprehend the meaning and intent behind human language — not just the words themselves. NLU powers features like intent detection in chatbots, semantic search, and contextual understanding in virtual assistants." },
   { term: "OCR (Optical Character Recognition)", definition: "Technology that converts images of text — such as scanned documents, photos of signs, or handwritten notes — into machine-readable, editable text. Modern OCR systems use deep learning to achieve high accuracy across fonts, languages, and handwriting styles." },
   { term: "Overfitting", definition: "When a machine learning model learns the training data too well — including its noise and quirks — and performs poorly on new, unseen data. An overfitted model essentially memorizes instead of generalizing. Techniques like dropout, regularization, and larger datasets help prevent overfitting." },
-  { term: "Prompt Engineering", definition: "The practice of crafting effective instructions (prompts) to get the best possible output from an AI model. Good prompt engineering involves clear task descriptions, relevant context, output format specifications, and techniques like few-shot examples or chain-of-thought reasoning." },
-  { term: "RAG (Retrieval-Augmented Generation)", definition: "A technique that enhances AI responses by first retrieving relevant documents from an external knowledge base, then feeding that context to the language model alongside the user's query. RAG reduces hallucinations and keeps answers grounded in up-to-date, verified information." },
+  { term: "Prompt Engineering", definition: "The practice of crafting effective instructions (prompts) to get the best possible output from an AI model. Good prompt engineering involves clear task descriptions, relevant context, output format specifications, and techniques like few-shot examples or chain-of-thought reasoning.",
+    seeAlso: [{ label: 'Grammarly review', path: '/tools/grammarly/' }, { label: 'Rytr review', path: '/tools/rytr/' }] },
+  { term: "RAG (Retrieval-Augmented Generation)", definition: "A technique that enhances AI responses by first retrieving relevant documents from an external knowledge base, then feeding that context to the language model alongside the user's query. RAG reduces hallucinations and keeps answers grounded in up-to-date, verified information.",
+    seeAlso: [{ label: 'Perplexity review', path: '/tools/perplexity/' }] },
   { term: "Reinforcement Learning", definition: "A machine learning paradigm where an agent learns to make decisions by receiving rewards or penalties for its actions within an environment. The agent optimizes its strategy to maximize cumulative reward over time. Reinforcement learning is used in game-playing AI, robotics, and recommendation systems." },
   { term: "RLHF (Reinforcement Learning from Human Feedback)", definition: "A training technique where human evaluators rank AI outputs by quality, and those rankings are used to train a reward model that guides further model optimization. RLHF is a key technique behind making language models more helpful, harmless, and aligned with user preferences." },
-  { term: "Speech-to-Text (STT)", definition: "AI technology that converts spoken language into written text in real time or from recorded audio. Also called automatic speech recognition (ASR), it powers transcription services (Otter.ai, Descript), voice assistants, and accessibility features like live captions." },
-  { term: "Stable Diffusion", definition: "An open-source diffusion model for generating images from text prompts, developed by Stability AI. Because it's open-source, Stable Diffusion can be run locally, fine-tuned with custom datasets (using LoRA or DreamBooth), and modified by the community — making it a foundation for many AI image tools." },
+  { term: "Speech-to-Text (STT)", definition: "AI technology that converts spoken language into written text in real time or from recorded audio. Also called automatic speech recognition (ASR), it powers transcription services (Otter.ai, Descript), voice assistants, and accessibility features like live captions.",
+    seeAlso: [{ label: 'Descript review', path: '/tools/descript/' }, { label: 'Podcastle review', path: '/tools/podcastle/' }] },
+  { term: "Stable Diffusion", definition: "An open-source diffusion model for generating images from text prompts, developed by Stability AI. Because it's open-source, Stable Diffusion can be run locally, fine-tuned with custom datasets (using LoRA or DreamBooth), and modified by the community — making it a foundation for many AI image tools.",
+    seeAlso: [{ label: 'Leonardo.ai review', path: '/tools/leonardo-ai/' }] },
   { term: "Supervised Learning", definition: "A machine learning approach where the model is trained on labeled data — input-output pairs where the correct answer is provided. The model learns to map inputs to outputs and can then predict labels for new, unseen inputs. Image classification, spam detection, and language translation are common supervised learning tasks." },
   { term: "Synthetic Data", definition: "Artificially generated data that mimics the statistical properties of real-world data, used to train or augment AI models. Synthetic data is valuable when real data is scarce, expensive, or raises privacy concerns — for example, generating realistic medical images without using actual patient records." },
-  { term: "Text-to-Speech (TTS)", definition: "AI technology that converts written text into natural-sounding spoken audio. Modern TTS systems like ElevenLabs, Murf AI, and OpenAI's voice models can clone voices, adjust tone and pacing, and produce speech nearly indistinguishable from human recordings." },
+  { term: "Text-to-Speech (TTS)", definition: "AI technology that converts written text into natural-sounding spoken audio. Modern TTS systems like ElevenLabs, Murf AI, and OpenAI's voice models can clone voices, adjust tone and pacing, and produce speech nearly indistinguishable from human recordings.",
+    seeAlso: [{ label: 'ElevenLabs review', path: '/tools/elevenlabs/' }, { label: 'Murf AI review', path: '/tools/murf-ai/' }] },
   { term: "Token", definition: "The basic unit of text that language models process — typically a word, part of a word, or punctuation mark. For example, the word \"understanding\" might be split into the tokens \"under\" and \"standing\". LLM pricing, context limits, and speed are all measured in tokens." },
   { term: "Tokenization", definition: "The process of splitting text into tokens before feeding it into a language model. Different models use different tokenization strategies — some split by words, others by subword units (byte-pair encoding). Tokenization affects model efficiency, multilingual performance, and context window utilization." },
   { term: "Transfer Learning", definition: "A technique where a model trained on one task is reused as the starting point for a different but related task. Instead of training from scratch, transfer learning leverages knowledge already learned — dramatically reducing the data and compute needed. Fine-tuning a foundation model is the most common form of transfer learning in AI." },
@@ -191,7 +199,7 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
             }}>{letter}</div>
 
             <dl style={{ margin: 0 }}>
-              {grouped[letter].map(({ term, definition }) => (
+              {grouped[letter].map(({ term, definition, seeAlso }) => (
                 <article key={term} style={{
                   background: C.surf, borderRadius: 14,
                   border: `1px solid ${C.barBrd}`, padding: '20px 24px',
@@ -204,7 +212,24 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
                     }}>{term}</h3>
                   </dt>
                   <dd style={{ margin: 0 }}>
-                    <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.7, fontWeight: 300, margin: 0 }}>{definition}</p>
+                    <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.7, fontWeight: 300, margin: seeAlso && seeAlso.length > 0 ? '0 0 10px' : 0 }}>{definition}</p>
+                    {seeAlso && seeAlso.length > 0 && (
+                      <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 6, alignItems: 'center' }}>
+                        <span style={{ fontSize: 11, fontWeight: 600, color: C.mut2, letterSpacing: '.04em', textTransform: 'uppercase' as const }}>See also:</span>
+                        {seeAlso.map(({ label, path }) => (
+                          <a key={path} href={path}
+                            onClick={e => { e.preventDefault(); navigate(path); }}
+                            style={{
+                              display: 'inline-flex', alignItems: 'center', gap: 4,
+                              fontSize: 12, fontWeight: 600, color: C.a1,
+                              background: C.a1card, border: `1px solid ${C.a1brd}`,
+                              borderRadius: 100, padding: '3px 10px',
+                              textDecoration: 'none', transition: 'opacity .15s',
+                            }}
+                          >{label} →</a>
+                        ))}
+                      </div>
+                    )}
                   </dd>
                 </article>
               ))}

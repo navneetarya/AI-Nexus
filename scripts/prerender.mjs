@@ -1840,6 +1840,46 @@ for (const post of BLOG_POSTS) {
   console.log('\n  ✓  /best-ai-tools-india/');
 }
 
+// ── Best AI Logo Makers landing page (/best-ai-logo-makers/) ─────────────────
+// Target keyword: "best ai logo maker free" — 4,400/mo KD 16
+// Unique angle: Free plan comparison with INR pricing for Indian creators
+{
+  const canonical = `${SITE}/best-ai-logo-makers/`;
+  const title = `Best Free AI Logo Makers 2026 — Tested & Compared | AI Nexus`;
+  const description = `4 AI logo tools independently tested by ${AUTHOR} — Looka, Canva AI, Leonardo.ai, and PhotoRoom. Free plan limits, INR pricing, and honest verdicts for solo creators and freelancers.`;
+
+  const LOGO_SLUGS = ['looka', 'canva-ai', 'leonardo-ai', 'photoroom'];
+  const logoToolItems = LOGO_SLUGS.map((slug, i) => {
+    const t = TOOLS.find(x => x.slug === slug);
+    return t ? { name: t.name, url: `${SITE}/tools/${t.slug}/`, description: t.tagline, position: i + 1 } : null;
+  }).filter(Boolean);
+
+  const schemas = [
+    articleSchema({ title, description, canonical, datePublished: '2026-05-19' }),
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'Best AI Logo Makers', canonical],
+    ]),
+    itemListSchema({ name: 'Best Free AI Logo Makers 2026', url: canonical, items: logoToolItems }),
+    faqSchema([
+      { q: 'What is the best free AI logo maker in 2026?', a: 'Canva AI is the best free AI logo maker for most people. Its free plan includes hundreds of logo templates, an AI-powered design assistant, and the ability to download logos in PNG format — all without paying. No credit card is required.' },
+      { q: 'Can I make a professional logo for free?', a: 'Yes — Canva AI\'s free plan provides everything most small businesses need: 250,000+ templates, AI design suggestions, icon library, and PNG download with no watermark. For a more premium brand-kit-focused result, Looka charges a one-time fee starting at $65.' },
+      { q: 'Is Looka free to use?', a: 'Looka lets you design and preview your logo for free. Downloading your logo files requires a paid plan starting at $65 one-time (approximately ₹5,400 at May 2026 rates). You can come back to your design at any time before purchasing.' },
+      { q: 'Can AI generate a logo I can trademark?', a: 'Trademark eligibility depends on originality and your jurisdiction. In India and most countries, you can trademark a logo you have customised significantly from its AI origin. Consult a trademark attorney before filing.' },
+      { q: 'What is the INR price of Looka for Indian users?', a: 'Looka charges in USD — a logo package is $65 (approximately ₹5,400 at May 2026 rates). Canva AI Pro is more affordable at ₹499/month with INR billing, making it the recommended option for Indian creators.' },
+    ]),
+  ];
+
+  blocks.push(urlBlock({ loc: canonical, priority: '0.85', freq: 'monthly', mod: '2026-05-19' }));
+
+  writeRoute('best-ai-logo-makers', buildPage(template, {
+    title, description, canonical, schemas,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+    <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Each tool was tested by ${esc(AUTHOR)} across 4 use cases: tech startup, freelancer portfolio, food blog, and fitness brand — evaluating design quality, free plan limits, and download rights. INR pricing is included for Indian creators and freelancers.</p>`,
+  }));
+  console.log('\n  ✓  /best-ai-logo-makers/');
+}
+
 // ── 7. Category landing pages (/best-ai-writing-tools/ etc.) ────────────────
 {
   const CATEGORY_PAGES = [

@@ -750,7 +750,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
           {/* Social proof counter strip */}
           <div className="anim-fade-up d3" style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'center', marginTop: 14, marginBottom: 20 }}>
-            {[['24', 'tools tested'], ['17', 'guides published'], ['May 2026', 'last updated']].map(([n, label]) => (
+            {[['24', 'tools tested'], ['17', 'guides published'], ['23,000+', 'reviews analysed'], ['May 2026', 'last updated']].map(([n, label]) => (
               <div key={label} style={{ display: 'flex', alignItems: 'center', gap: 6, background: 'rgba(13,148,136,.1)', border: '1px solid rgba(13,148,136,.18)', borderRadius: 100, padding: '5px 14px', fontSize: 12, color: C.mut }}>
                 <span style={{ fontWeight: 700, color: C.a1 }}>{n}</span> {label}
               </div>

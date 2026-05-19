@@ -53,11 +53,11 @@ const HANDS_ON_STEPS = [
     time: '20 min',
   },
   {
-    icon: Clock,
+    icon: ShieldCheck,
     step: 'Step 2',
-    action: 'Official documentation & feature verification',
-    detail: 'Every feature claim is verified directly against the tool\'s official documentation, help centre, and changelog — not third-party summaries or the tool\'s own marketing copy. Feature limits, beta flags, plan restrictions, and deprecation notices are all captured at this stage. This is what prevents the most common review-site failure: republishing a vendor\'s own marketing as if it were independent analysis.',
-    time: '40 min',
+    action: 'Free plan claim verification',
+    detail: 'Every free tier claim is independently verified against what the tool actually delivers — not what its marketing page promises. This step specifically documents: whether a credit card is required to access the free plan, whether "free" features are actually rate-limited or watermarked, and where advertised free capabilities require a paid upgrade to use in practice. INR equivalents are included for Indian creators, since USD pricing does not reflect local purchasing power. This is the step that catches the most common deceptive pattern in AI tool marketing: advertising a feature as free when it is only available on a paid plan.',
+    time: '15 min',
   },
   {
     icon: Search,

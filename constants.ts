@@ -851,6 +851,31 @@ Object.assign(TOOL_FAQS, {
   ],
 });
 
+// ── W2-T2: FAQs for tools previously missing from constants.ts TOOL_FAQS ──
+Object.assign(TOOL_FAQS, {
+  podcastle: [
+    { q: "Is Podcastle free?", a: "Yes — Podcastle has a permanent free plan that includes remote recording (up to 10 hours/month), AI Magic Dust noise removal, automatic transcription (up to 3 hours), and up to 3 published episodes per month. No credit card is required. The paid Basic plan at $11.99/month removes episode limits and adds filler word removal." },
+    { q: "How does Podcastle compare to Descript?", a: "Podcastle is better for recording — especially remote interviews with guests. Descript is better for heavy text-based editing of existing audio. If you record first then edit, Podcastle is the better starting point and it's cheaper than Descript. For solo podcasters who need one-click noise removal and simple publishing, Podcastle wins." },
+    { q: "Can Podcastle remove background noise automatically?", a: "Yes — Podcastle's AI Magic Dust noise removal removes keyboard clicks, air conditioning hum, echo, and room noise in one click. Verified user feedback across G2 and Trustpilot consistently highlights this as one of the most effective one-click noise removal tools available at this price point. It's available on the free plan." },
+    { q: "What is Podcastle Revoice?", a: "Revoice lets you clone your voice to fix recording mistakes without re-recording. If you mispronounced a word or said 'um', you type the correction and Revoice generates it in your voice. It's particularly useful for solo podcasters who want polished audio without multiple takes." },
+    { q: "Does Podcastle publish directly to Spotify?", a: "Yes — Podcastle has direct publishing to Spotify, Apple Podcasts, and other major platforms built into paid plans. You don't need a separate podcast hosting service, which makes it one of the most complete end-to-end podcast tools for creators who want to record, edit, and publish in one platform." },
+  ],
+  replit: [
+    { q: "Is Replit free to use?", a: "Yes — Replit's free plan includes a browser-based coding environment for 50+ languages, 3 public Repls with public URLs, and Ghostwriter AI autocomplete (limited). No local setup or installation is required. The Core plan at $7/month adds private Repls, always-on deployments, more compute power, and full Ghostwriter AI access." },
+    { q: "Do I need to install anything to use Replit?", a: "No — Replit works entirely in your browser. No downloads, no local setup, no configuring Node.js or Python environments. You open a browser tab and start coding immediately. This is Replit's biggest advantage for beginners and anyone working on a shared or restricted machine." },
+    { q: "What coding languages does Replit support?", a: "Replit supports 50+ languages including Python, JavaScript, TypeScript, Java, C++, Go, Rust, Ruby, PHP, HTML/CSS, and more. You can switch between languages instantly without installing runtimes or configuring dependencies. It also supports full-stack frameworks including Next.js, Flask, and Django." },
+    { q: "How does Replit AI compare to GitHub Copilot?", a: "Replit's Ghostwriter AI understands the context of your entire project — not just the current file — making it more contextually aware for small to mid-size projects. GitHub Copilot integrates better into professional IDEs like VS Code for experienced developers working on large codebases. For beginners and solo projects, Ghostwriter's in-browser integration is more accessible." },
+    { q: "Is Replit good for learning to code from scratch?", a: "Replit is one of the best environments to learn coding in 2026. The zero-setup experience eliminates the frustration that stops most beginners before they write a single line. The AI assistant explains errors in plain language. Starting with Python on Replit is currently one of the fastest paths to writing real, working code for complete beginners." },
+  ],
+  ocoya: [
+    { q: "Is Ocoya free?", a: "Ocoya does not have a permanent free plan — it offers a 7-day free trial with no credit card required. Paid plans start at $15/month. The trial gives full access to the AI caption generator, visual template editor, and social media scheduler across all supported platforms, which is enough to evaluate whether it fits your workflow." },
+    { q: "What social media platforms does Ocoya support?", a: "Ocoya supports Instagram, Facebook, Twitter/X, LinkedIn, Pinterest, TikTok, and Google Business Profile. You can create one post and schedule it across all platforms simultaneously with platform-appropriate formatting — Ocoya adjusts caption style and hashtag density based on the destination platform." },
+    { q: "How does Ocoya compare to Buffer?", a: "Ocoya is cheaper than Buffer for most plans and adds AI caption generation that Buffer lacks. Buffer has stronger analytics and a cleaner scheduling calendar. For solo creators and small businesses who need both an AI caption writer and a scheduler in one tool, Ocoya offers better value. For teams with established content workflows who mainly need scheduling and analytics, Buffer is more mature." },
+    { q: "Can Ocoya write social media captions automatically?", a: "Yes — Ocoya's AI caption generator writes platform-specific captions based on your topic, product, or brief. It understands the tone difference between LinkedIn's professional style and Instagram's casual voice, and generates hashtag suggestions optimised for reach on each platform." },
+    { q: "Does Ocoya include graphic design tools?", a: "Yes — Ocoya has a built-in visual creator for making social media graphics with templates for all major platform formats. It's not as deep as Canva for complex design work, but for standard social posts many users find it eliminates the need to switch between a separate design and scheduling tool." },
+  ],
+});
+
 // ── Comparison tables per tool ─────────────────────────────────────────────
 export const TOOL_COMPARISONS: Record<string, Array<{
   name: string; price: string; freeplan: boolean; bestFor: string; ourPick: boolean;

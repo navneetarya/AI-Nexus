@@ -193,6 +193,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  { slug: 'best-ai-writing-tools-2026',                  title: 'Best AI Writing Tools 2026' },
   { slug: 'best-ai-writing-tools-for-beginners-2026',    title: '7 Best AI Writing Tools for Beginners 2026' },
   { slug: 'best-ai-tools-for-freelancers-2026',          title: 'Best AI Tools for Freelancers 2026' },
   { slug: 'best-grammarly-alternatives',                  title: 'Best Grammarly Alternatives 2026' },
