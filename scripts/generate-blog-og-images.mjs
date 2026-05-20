@@ -217,8 +217,8 @@ const POSTS = [
   { slug: 'leonardo-vs-midjourney-2026',                 title: 'Leonardo.ai vs Midjourney 2026' },
   { slug: 'best-free-ai-tools-for-students-in-india-2026', title: 'Best Free AI Tools for Students in India 2026' },
   { slug: 'best-ai-tools-for-freelancers-india-2026',   title: 'Best AI Tools for Freelancers in India 2026' },
-  { slug: 'best-ai-tools-for-content-creators-free-2026', title: 'Best Free AI Tools for Content Creators 2026' },
-];
+  { slug: 'best-ai-tools-for-content-creators-free-2026', title: 'Best Free AI Tools for Content Creators 2026' },  { slug: 'best-free-ai-writing-tools-2026',             title: 'Best Free AI Writing Tools 2026 — No Credit Card Required' },
+  { slug: 'is-grammarly-premium-worth-it-2026',          title: 'Is Grammarly Premium Worth It in 2026?' },];
 
 // ── Generate ─────────────────────────────────────────────────────────────────
 console.log(`\n🎨  Generating ${POSTS.length} blog OG images → public/og/blog/\n`);
