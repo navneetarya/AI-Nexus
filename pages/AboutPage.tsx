@@ -88,7 +88,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
             </div>
 
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
-              {SITE_CONFIG.authorBio}
+              I'm Navneet Arya — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. I've independently researched 22+ AI tools since 2022 — covering writing, audio, video, design, coding, and productivity.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
               I built AI Nexus because every "best AI tools" article I found was clearly written by someone who had never actually opened the products. Review sites were copying marketing pages and calling it a review. I got frustrated and decided to build something where every review is based on independent research — official documentation, verified user reviews, and real pricing data.
@@ -108,6 +108,24 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 <Linkedin size={13} /> LinkedIn
               </a>
             </div>
+          </div>
+        </div>
+
+        {/* Methodology in numbers */}
+        <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '24px 28px', marginBottom: 14 }}>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.02em' }}>Methodology in numbers</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 12 }}>
+            {[
+              { n: '200+',    label: 'verified reviews analysed per tool' },
+              { n: 'May 2026', label: 'live pricing verified against official pages' },
+              { n: '✓',       label: 'tools tested via official free plans where available' },
+              { n: '22+ / 16 / 25+', label: 'reviews · comparisons · blog posts published' },
+            ].map(({ n, label }, i) => (
+              <div key={i} style={{ padding: '16px', borderRadius: 12, background: `${i % 2 === 0 ? C.a1 : C.a2}08`, border: `1px solid ${i % 2 === 0 ? C.a1 : C.a2}20`, textAlign: 'center' as const }}>
+                <div style={{ fontSize: 20, fontWeight: 800, color: i % 2 === 0 ? C.a1 : C.a2, lineHeight: 1.15, marginBottom: 4 }}>{n}</div>
+                <div style={{ fontSize: 12, color: C.mut, fontWeight: 500, lineHeight: 1.4 }}>{label}</div>
+              </div>
+            ))}
           </div>
         </div>
 

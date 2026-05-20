@@ -5,12 +5,37 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- W4-T6: Fraunces replaces Syne 800 — distinctive serif for hero H1, avoids "AI-startup default" look -->
-    <!-- Fraunces is a variable serif used by The Guardian digital — signals "trusted editorial publication" -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,700;9..144,0,800;9..144,0,900;9..144,1,800&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,700;9..144,0,800;9..144,0,900;9..144,1,800&display=swap" />
+    <!-- Fraunces self-hosted — eliminates Google Fonts DNS lookup for LCP improvement -->
+    <style>
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/fraunces-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/fraunces-800.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/fonts/fraunces-900.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/fraunces-italic-800.woff2') format('woff2');
+}
+</style>
 
     <!-- Default meta — JS overwrites per-page before paint -->
     <title>Best AI Tools for Creators — Researched &amp; Ranked 2026 | AI Nexus</title>

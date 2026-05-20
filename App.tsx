@@ -115,8 +115,9 @@ function App() {
     const tool = TOOLS.find(t => t.slug === toolMatch[1]);
     if (tool) {
       updateMeta(
-        `${tool.name} Review 2026 — Personally Tested | AI Nexus`,
-        `Honest ${tool.name} review by ${SITE_CONFIG.authorName}. ${tool.tagline}. Pros, cons, free plan breakdown — personally tested.`,
+        `${tool.name} Review 2026 — Independently Researched | AI Nexus`,
+        `${tool.name} review 2026 — Researched by ${SITE_CONFIG.authorName}. ${tool.tagline}. Pricing, pros, cons, and who it's actually for.`,
+
         `${SITE_CONFIG.siteUrl}/tools/${tool.slug}/`
       );
       return (
@@ -164,7 +165,8 @@ function App() {
   if (path === '/blog') {
     updateMeta(
       `AI Tools Blog — Guides & Reviews | AI Nexus by ${SITE_CONFIG.authorName}`,
-      `In-depth AI tool guides and reviews by ${SITE_CONFIG.authorName}. Personally tested. No sponsored posts.`,
+      `In-depth AI tool guides and reviews by ${SITE_CONFIG.authorName}. Independently researched. No sponsored posts.`,
+
       `${SITE_CONFIG.siteUrl}/blog/`
     );
     return (
@@ -177,7 +179,8 @@ function App() {
   if (path === '/about') {
     updateMeta(
       `About ${SITE_CONFIG.authorName} — The Person Behind AI Nexus`,
-      `${SITE_CONFIG.authorName} personally tests every AI tool before recommending it. No sponsored reviews. Testing since 2022 across writing, audio, video, and productivity.`,
+      `${SITE_CONFIG.authorName} independently researches AI tools since 2022 — official docs, 200+ verified reviews, and live pricing verification. No sponsored reviews.`,
+
       `${SITE_CONFIG.siteUrl}/about/`
     );
     return (
@@ -242,7 +245,7 @@ function App() {
   if (path === '/best-free-ai-tools') {
     updateMeta(
       `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`,
-      `13 AI tools with permanent free plans — personally tested. Writing, image generation, video, audio, design, coding, and productivity. No credit card required.`,
+      `13 AI tools with permanent free plans — independently researched. Writing, image generation, video, audio, design, coding, and productivity. No credit card required.`,
       `${SITE_CONFIG.siteUrl}/best-free-ai-tools/`
     );
     return (
@@ -303,7 +306,7 @@ function App() {
 
   updateMeta(
     `Best AI Tools 2026 — Tested & Ranked | AI Nexus`,
-    `Honest reviews of the best AI tools for writing, video, audio, podcasting, and productivity. Every tool personally tested by ${SITE_CONFIG.authorName}. Free trials only.`,
+    `Honest reviews of the best AI tools for writing, video, audio, podcasting, and productivity. Independently researched by ${SITE_CONFIG.authorName} — official docs, 200+ verified reviews per tool, live pricing verified May 2026.`,
     SITE_CONFIG.siteUrl
   );
   return <HomePage navigate={navigate} {...themeProps} />;

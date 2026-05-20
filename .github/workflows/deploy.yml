@@ -152,6 +152,11 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+      - name: Notify Google and Bing of sitemap update
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://ainexustools.online/sitemap.xml" || true
+          curl -s "https://www.bing.com/ping?sitemap=https://ainexustools.online/sitemap.xml" || true
+
   ping-search-engines:
     # Notify Google and Bing about sitemap updates after every deploy
     runs-on: ubuntu-latest

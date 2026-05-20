@@ -43,12 +43,17 @@ import post24 from './leonardo-vs-midjourney-2026';
 // P3 keyword gap: "best ai writing tools" — 5,400/mo, Medium KD
 // /best-ai-writing-tools route is a CategoryPage — dedicated editorial post needed to compete
 import post25 from './best-ai-writing-tools-2026';
+// T3.1: Free AI writing tools — 4,200/mo, KD 22 — "no credit card" angle
+import post26 from './best-free-ai-writing-tools-2026';
+// T3.2: Grammarly Premium worth it — 3,600/mo, KD 22 — upgrade-intent query
+import post27 from './is-grammarly-premium-worth-it-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
   post1, post2, post3, post4, post5, post6, post7, post8,
   post9, post10, post11, post12, post13, post14, post15,
   post16, post17, post18, post19, post20, post21, post22,
   post23, post24, post25,
+  post26, post27,
 ];
 
 export type { BlogPost };

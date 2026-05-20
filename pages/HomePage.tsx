@@ -748,6 +748,21 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             Honest reviews by <strong style={{ color:C.txt, fontWeight:600 }}>Navneet Arya</strong>. No paid placements. No fluff.
           </p>
 
+          {/* Trust stats bar */}
+          <div className="anim-fade-up d3" style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 16 }}>
+            {[
+              { n: '22+',  label: 'AI tools researched' },
+              { n: '25',   label: 'blog posts published' },
+              { n: '200+', label: 'reviews analysed per tool' },
+              { n: '2022', label: 'researching since' },
+            ].map(({ n, label }) => (
+              <div key={label} style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: 24, fontWeight: 800, color: C.a1, lineHeight: 1.1 }}>{n}</div>
+                <div style={{ fontSize: 12, color: C.mut, fontWeight: 500, marginTop: 2 }}>{label}</div>
+              </div>
+            ))}
+          </div>
+
           {/* Social proof counter strip */}
           <div className="anim-fade-up d3" style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'center', marginTop: 14, marginBottom: 20 }}>
             {[['24', 'tools tested'], ['17', 'guides published'], ['23,000+', 'reviews analysed'], ['May 2026', 'last updated']].map(([n, label]) => (
