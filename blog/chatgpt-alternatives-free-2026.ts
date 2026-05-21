@@ -116,7 +116,7 @@ const post: BlogPost = {
 <h2>3. Rytr — The Best Free Alternative for Quick Content</h2>
 <p><strong>Rating: 4.0/5 · Free plan: 10,000 characters/month</strong></p>
 <p>Rytr occupies a different niche from chat-based alternatives. It's a structured content generator with 40+ use-case templates — blog intros, product descriptions, ad copy, email subjects, social media posts. You fill in a brief, pick a tone, and Rytr generates 2-3 options.</p>
-<p>For beginners who find ChatGPT's blank prompt box intimidating, Rytr's template approach is far more approachable. You don't need to learn prompt engineering. Just pick "Blog Section" from the dropdown, type your topic, and you get usable copy in seconds.</p>
+<p>For beginners who find ChatGPT's blank prompt box intimidating, Rytr's template approach is far more approachable. You don't need to learn <a href="/glossary/#prompt-engineering" style="color:var(--a1);font-weight:600;">prompt engineering</a>. Just pick "Blog Section" from the dropdown, type your topic, and you get usable copy in seconds.</p>
 <p>The 10,000 character free limit is tight — roughly 2-3 blog sections per month — but it's enough to test whether AI writing works for your workflow before committing to the $9/month Saver plan.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Pros:</strong> Template-guided writing, beginner-friendly, affordable upgrade</li>

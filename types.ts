@@ -55,6 +55,13 @@ export interface Tool {
   lastTestedISO?: string;
 
   /**
+   * Optional custom <title> for the tool page. When present, App.tsx uses this
+   * instead of the generic "[Tool] Review 2026 — Independently Researched" pattern.
+   * Use question-format titles for "is it worth it" tools (higher CTR).
+   */
+  titleTemplate?: string;
+
+  /**
    * W2-T1 (no-screenshot variant): Research basis data shown as a visible citation bar
    * on the tool page. Replaces the screenshot requirement by surfacing the independent
    * data sources that back up the review — satisfying EEAT Trustworthiness for quality raters.

@@ -37,6 +37,7 @@ const AUTHOR_SAME_AS = [
   'https://ainexustools.online/about/',
   'https://github.com/navneetarya',
   'https://medium.com/@navneetarya1989',
+  'https://www.quora.com/profile/Navneet-Arya',
 ];
 const YEAR   = 2026;
 const TODAY  = new Date().toISOString().split('T')[0]; // YYYY-MM-DD

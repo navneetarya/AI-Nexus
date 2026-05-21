@@ -10,7 +10,7 @@ export const SITE_CONFIG = {
   authorExperience: "Researching AI tools since 2022",
   siteUrl: "https://ainexustools.online",
   email: "hello@ainexustools.online",
-  twitterUrl: "https://twitter.com/ainexustools",
+  twitterUrl: "https://x.com/aryanavneet",
   newsletterNote: "Get notified when new AI tool reviews drop. No spam.",
 
   // ── Newsletter lead capture ────────────────────────────────────────────
@@ -63,6 +63,7 @@ export const TOOLS: Tool[] = [
       'Code documentation and README files — developers often write technically accurate but incomprehensible documentation. Grammarly\'s "clarify language" suggestions for Markdown files in the editor are surprisingly useful for making technical specs readable to non-engineers.',
     ],
     notForYou: 'Grammarly is not the right tool if your primary need is content generation (generating first drafts from a topic brief — Rytr or Writesonic do that), paraphrasing and rewriting existing text heavily (QuillBot\'s 7 paraphrase modes are built for this, Grammarly has one rewrite mode), or deep stylistic analysis for fiction writing (ProWritingAid\'s 25+ style reports go far deeper into pacing, dialogue, and narrative flow). Grammarly also occasionally over-corrects intentional stylistic choices — if your writing voice depends on fragments, em-dashes, or unconventional sentence structures, Premium suggestions will feel like interference rather than help. For those cases, using Grammarly on a sentence-by-sentence basis rather than in always-on mode works better.',
+    titleTemplate: 'Grammarly Review 2026: Is Premium Worth $12/Month? | AI Nexus',
     lastTestedISO: '2026-05-01',
     researchSources: {
       trustpilot: { rating: 4.3, count: 7842, url: 'https://www.trustpilot.com/review/www.grammarly.com' },
@@ -121,6 +122,7 @@ export const TOOLS: Tool[] = [
       'Writing 20 product descriptions for a Shopify store — Rytr\'s Product Description template handles tone, length, and feature emphasis automatically.',
     ],
     notForYou: 'Rytr is not the right tool if you primarily write 1,500+ word articles. Beyond 800 words, it loses coherence and tends to repeat itself — especially on complex topics. It also doesn\'t browse the web or reference current sources, so research-heavy pieces need fact-checking. If long-form SEO articles are your main output, Writesonic or Frase will serve you better. Teams needing multi-user collaboration or brand voice training should look at Jasper\'s team plans. Rytr is a short-form tool at a short-form price — trying to force it into a long-form article workflow is fighting its design.',
+    titleTemplate: 'Rytr Review 2026 — Free Plan Limits & $9/Month Verdict | AI Nexus',
     lastTestedISO: '2026-05-08',
     researchSources: {
       trustpilot: { rating: 4.6, count: 312, url: 'https://www.trustpilot.com/review/rytr.me' },
@@ -139,6 +141,7 @@ export const TOOLS: Tool[] = [
     features: ['7 paraphrasing modes', 'Summariser tool', 'Grammar checker', 'Citation generator'],
     pros: ['Excellent free tier', 'Best paraphrasing quality', 'Very easy to use'],
     cons: ['Not for original content creation', 'Premium needed for all modes'],
+    titleTemplate: 'QuillBot Review 2026 — Is the Free Paraphrasing Tool Legit? | AI Nexus',
     researchSources: {
       trustpilot: { rating: 4.5, count: 1243, url: 'https://www.trustpilot.com/review/quillbot.com' },
       g2: { rating: 4.3, count: 176 },
@@ -577,6 +580,7 @@ export const TOOLS: Tool[] = [
   // DESIGN (additional)
   {
     id: 'd3', slug: 'canva-ai',
+    titleTemplate: 'Canva AI Review 2026: What\'s Actually Free vs Paid? | AI Nexus',
     name: 'Canva AI', tagline: 'AI design tools built into the world\'s most popular design platform',
     description: 'Canva AI brings powerful AI features to the world\'s largest design platform. Generate images, write copy, remove backgrounds, animate designs, and transform ideas into polished graphics — all without leaving Canva.',
     category: Category.DESIGN, affiliateLink: 'https://canva.com?via=ainexus',

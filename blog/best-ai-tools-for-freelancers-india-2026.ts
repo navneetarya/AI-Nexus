@@ -122,7 +122,7 @@ const post: BlogPost = {
 
 <h2>5. Perplexity — Best Free Research Tool for Brief-Heavy Freelance Work</h2>
 <p><strong>Category: Research · Free plan: Unlimited searches · Pricing: Free to start</strong></p>
-<p>Perplexity is an AI-powered search engine that provides cited, sourced answers — not AI hallucinations. For freelancers who write research-heavy content (industry reports, explainer articles, technical blogs), Perplexity is the fastest way to gather accurate background information before writing.</p>
+<p>Perplexity is an AI-powered search engine that provides cited, sourced answers — not <a href="/glossary/#hallucination" style="color:var(--a1);font-weight:600;">AI hallucinations</a>. For freelancers who write research-heavy content (industry reports, explainer articles, technical blogs), Perplexity is the fastest way to gather accurate background information before writing.</p>
 <p>The key difference from ChatGPT for research: Perplexity cites its sources with live links. You can verify every claim before putting it in a client deliverable. For Indian freelancers writing for international clients who fact-check content, this citation trail is essential.</p>
 <p>The free plan has no meaningful limits for research purposes. It's the one tool on this list where there's no reason to pay unless you need the Pro tier's advanced model access.</p>
 

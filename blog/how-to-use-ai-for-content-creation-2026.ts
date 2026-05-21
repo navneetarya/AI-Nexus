@@ -11,7 +11,7 @@ const post: BlogPost = {
   slug: 'how-to-use-ai-for-content-creation-2026',
   title: 'How to Use AI for Content Creation in 2026 — Full Workflow (Writing, Images, Video & Audio)',
   seoTitle: 'How to Use AI for Content Creation 2026',
-  metaDescription: 'How to use AI for content creation in 2026 — covering writing tools, image generators, video makers, and voiceover tools. Real workflows included.',
+  metaDescription: 'Write an article, generate a feature image, repurpose it as a video, and create a podcast episode — all in one afternoon. The actual AI content creation workflow for solo creators in 2026.',
   datePublished: '2026-05-05',
   dateModified: '2026-05-06',
   author: 'Navneet Arya',
@@ -117,7 +117,7 @@ const post: BlogPost = {
 <p>For Reels, YouTube Shorts, and TikTok, <a href="/tools/invideo" style="color:var(--a1);font-weight:600;">InVideo AI</a> takes a text prompt or topic and produces a complete short-form video with footage, voiceover, captions, and music in under 5 minutes. The free plan includes 10 video exports per month with an InVideo watermark — enough to test the workflow before committing to the $25/month paid plan.</p>
 <p>The highest-quality use of InVideo for content creators is repurposing key sections from longer articles into 60-second short-form videos that drive traffic back to the full post. Enter the key point from your article as a prompt, set the duration to 60 seconds, let InVideo generate, then spend 5 minutes adjusting the script and swapping out any footage that does not fit. The result is a platform-native short video that would otherwise take 45–90 minutes to produce manually.</p>
 
-<h2>Part 4 — AI for Audio (Podcasting, Voiceover, Text-to-Speech)</h2>
+<h2>Part 4 — AI for Audio (Podcasting, Voiceover, <a href="/glossary/#text-to-speech" style="color:var(--a1);font-weight:600;">Text-to-Speech</a>)</h2>
 <p><strong>Tools covered: <a href="/tools/podcastle" style="color:var(--a1);font-weight:600;">Podcastle</a> · <a href="/tools/murf-ai" style="color:var(--a1);font-weight:600;">Murf AI</a></strong></p>
 
 <h3>Recording and Editing Podcasts with Podcastle</h3>

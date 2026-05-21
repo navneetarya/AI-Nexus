@@ -31,27 +31,13 @@ const C = {
 };
 
 // ── Per-tool domains for Clearbit logo fetching ──────────────────────────────
-const TOOL_DOMAIN: Record<string, string> = {
-  'grammarly':'grammarly.com','writesonic':'writesonic.com','rytr':'rytr.me',
-  'quillbot':'quillbot.com','frase':'frase.io','leonardo-ai':'leonardo.ai',
-  'photoroom':'photoroom.com','looka':'looka.com','pictory':'pictory.ai',
-  'opus-clip':'opus.pro','invideo':'invideo.ai','murf-ai':'murf.ai',
-  'podcastle':'podcastle.ai','gamma':'gamma.app','beautiful-ai':'beautiful.ai',
-  'ocoya':'ocoya.com','replit':'replit.com','notion-ai':'notion.so','taskade':'taskade.com',
-  // FIX: slugs whose local PNGs are missing — skip straight to Clearbit to
-  // avoid 5 × 404 console errors that tank the Lighthouse Best Practices score
-  'elevenlabs':'elevenlabs.io','jasper':'jasper.ai','descript':'descript.com',
-  'perplexity':'perplexity.ai','canva-ai':'canva.com',
-};
 
-// All tool logos now have local PNGs in /public/logos/ — no Clearbit fallback needed.
+// All tool logos have local PNGs in /public/logos/ — no external fallback needed.
 const NO_LOCAL_LOGO = new Set<string>([]);
 
 function ToolLogo({ slug, size = 28, name, color }: { slug: string; size?: number; name?: string; color?: string }) {
   // Skip local PNG fetch for known-missing files to prevent 404 console errors
   const [localErr, setLocalErr] = React.useState(() => NO_LOCAL_LOGO.has(slug));
-  const [clearbitErr, setClearbitErr] = React.useState(false);
-  const domain = TOOL_DOMAIN[slug];
   const initial = (name ?? slug)[0].toUpperCase();
   const r = Math.round(size * 0.27);
 
@@ -65,17 +51,6 @@ function ToolLogo({ slug, size = 28, name, color }: { slug: string; size?: numbe
         decoding="async"
         style={{ borderRadius: r, objectFit: 'contain', display: 'block', background: '#fff' }}
         onError={() => setLocalErr(true)}
-      />
-    );
-  }
-  if (domain && !clearbitErr) {
-    return (
-      <img src={`https://logo.clearbit.com/${domain}`} alt={name ?? slug}
-        width={size} height={size}
-        loading="lazy"
-        decoding="async"
-        style={{ borderRadius: r, objectFit: 'contain', display: 'block', background: '#fff' }}
-        onError={() => setClearbitErr(true)}
       />
     );
   }

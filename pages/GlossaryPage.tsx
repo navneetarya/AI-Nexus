@@ -190,7 +190,7 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
         )}
 
         {/* Glossary entries */}
-        {letters.map(letter => (
+              {letters.map(letter => (
           <section key={letter} id={`letter-${letter}`} style={{ marginBottom: 36 }}>
             <div style={{
               fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 22,
@@ -199,8 +199,19 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
             }}>{letter}</div>
 
             <dl style={{ margin: 0 }}>
-              {grouped[letter].map(({ term, definition, seeAlso }) => (
-                <article key={term} style={{
+              {grouped[letter].map(({ term, definition, seeAlso }) => {
+                // Build a URL-safe anchor id from the term:
+                // "LLM (Large Language Model)" → "llm"
+                // "Prompt Engineering" → "prompt-engineering"
+                const termId = term
+                  .split('(')[0].trim()
+                  .toLowerCase()
+                  .replace(/[^a-z0-9\s-]/g, '')
+                  .replace(/\s+/g, '-')
+                  .replace(/-+/g, '-')
+                  .replace(/^-|-$/g, '');
+                return (
+                <article key={term} id={termId} style={{
                   background: C.surf, borderRadius: 14,
                   border: `1px solid ${C.barBrd}`, padding: '20px 24px',
                   marginBottom: 10,
@@ -232,7 +243,8 @@ export function GlossaryPage({ navigate, isDark, toggleTheme }: { navigate: (to:
                     )}
                   </dd>
                 </article>
-              ))}
+                );
+              })}
             </dl>
           </section>
         ))}

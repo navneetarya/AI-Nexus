@@ -80,27 +80,101 @@ const TOOL_MENTION_MAP: Record<string, string> = {
 };
 
 /**
- * Wraps first occurrence of each tool name in blog HTML with an anchor tag.
- * Skips text already inside an <a> tag to avoid nested links.
- * Uses a single regex pass per tool so we only link the first mention.
+ * Wraps the first occurrence of each tool name in blog HTML with an anchor.
+ *
+ * Uses DOM-tree walking instead of regex on raw HTML strings, which avoids:
+ *   - Matching text already inside <a> tags (nested-link bug)
+ *   - Case-sensitivity issues with mixed-case replacements
+ *   - First-mention detection failures when the first occurrence is in a table
+ *     header that already has a link
+ *
+ * Strategy:
+ *   1. Parse the HTML string into a real DOM element.
+ *   2. Walk all text nodes, skipping those inside <a>, <code>, <script>, <style>.
+ *   3. For each text node, find every unlinked tool name (longest names first to
+ *      handle "InVideo AI" before "InVideo") and replace them in one pass.
+ *   4. Serialise back to innerHTML.
  */
 function autoLinkToolMentions(html: string, accentColor: string): string {
-  let result = html;
-  for (const [name, slug] of Object.entries(TOOL_MENTION_MAP)) {
-    // Escape special regex chars in the tool name
-    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    // Match the tool name NOT preceded by href=" (i.e. not already in a link)
-    // and not inside an existing anchor tag
-    const pattern = new RegExp(
-      `(?<!href=[^>]*)(?<!<a[^>]*)\\b(${escaped})\\b`,
-      'i'
-    );
-    const replacement =
-      `<a href="/tools/${slug}" style="color:${accentColor};text-decoration:underline;text-underline-offset:2px;font-weight:600;" ` +
-      `title="${name} review — AI Nexus">$1</a>`;
-    result = result.replace(pattern, replacement);
+  const container = document.createElement('div');
+  container.innerHTML = html;
+
+  // Track which names have already been linked (one link per tool)
+  const linked = new Set<string>();
+
+  // Sort longest-first so "InVideo AI" matches before "InVideo", etc.
+  const entries = Object.entries(TOOL_MENTION_MAP)
+    .sort(([a], [b]) => b.length - a.length);
+
+  /**
+   * Recursively walk the DOM. Process leaf text nodes; recurse into elements
+   * that are NOT anchors/code/script/style (those are skip zones).
+   */
+  function processNode(node: Node): void {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const textNode = node as Text;
+      const text = textNode.nodeValue ?? '';
+      if (!text.trim()) return;
+
+      // Collect all unlinked matches in this text node
+      type MatchInfo = { start: number; end: number; name: string; slug: string; original: string };
+      const matches: MatchInfo[] = [];
+
+      for (const [name, slug] of entries) {
+        if (linked.has(name)) continue;
+        const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const m = new RegExp(`\\b${escaped}\\b`, 'i').exec(text);
+        if (m) {
+          matches.push({ start: m.index, end: m.index + m[0].length, name, slug, original: m[0] });
+        }
+      }
+
+      if (matches.length === 0) return;
+
+      // Sort by position, remove overlapping entries (keep the earlier one)
+      matches.sort((a, b) => a.start - b.start);
+      const nonOverlapping: MatchInfo[] = [];
+      let lastEnd = 0;
+      for (const m of matches) {
+        if (m.start >= lastEnd) { nonOverlapping.push(m); lastEnd = m.end; }
+      }
+
+      // Rebuild the text node as a mix of text nodes + anchor elements
+      const parent = textNode.parentNode!;
+      let cursor = 0;
+      for (const m of nonOverlapping) {
+        if (m.start > cursor) {
+          parent.insertBefore(document.createTextNode(text.slice(cursor, m.start)), textNode);
+        }
+        const a = document.createElement('a');
+        a.href = `/tools/${m.slug}/`;
+        a.style.cssText = `color:${accentColor};text-decoration:underline;text-underline-offset:2px;font-weight:600;`;
+        a.title = `${m.name} review — AI Nexus`;
+        a.textContent = m.original;
+        parent.insertBefore(a, textNode);
+        linked.add(m.name);
+        cursor = m.end;
+      }
+      if (cursor < text.length) {
+        parent.insertBefore(document.createTextNode(text.slice(cursor)), textNode);
+      }
+      parent.removeChild(textNode);
+      return;
+    }
+
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      const tag = (node as Element).tagName.toLowerCase();
+      // Skip entire subtree for these elements
+      if (tag === 'a' || tag === 'code' || tag === 'script' || tag === 'style') return;
+    }
+
+    // Snapshot childNodes before mutation (insertBefore can shift live NodeList)
+    const children = Array.from(node.childNodes);
+    for (const child of children) processNode(child);
   }
-  return result;
+
+  processNode(container);
+  return container.innerHTML;
 }
 
 interface BlogPostPageProps {

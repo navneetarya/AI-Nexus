@@ -115,9 +115,8 @@ function App() {
     const tool = TOOLS.find(t => t.slug === toolMatch[1]);
     if (tool) {
       updateMeta(
-        `${tool.name} Review 2026 — Independently Researched | AI Nexus`,
+        tool.titleTemplate ?? `${tool.name} Review 2026 — Independently Researched | AI Nexus`,
         `${tool.name} review 2026 — Researched by ${SITE_CONFIG.authorName}. ${tool.tagline}. Pricing, pros, cons, and who it's actually for.`,
-
         `${SITE_CONFIG.siteUrl}/tools/${tool.slug}/`
       );
       return (

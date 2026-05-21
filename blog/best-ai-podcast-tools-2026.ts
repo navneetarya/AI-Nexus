@@ -10,7 +10,7 @@ const post: BlogPost = {
   slug: 'best-ai-podcast-tools-2026',
   title: 'Best AI Podcast Tools 2026 — Record, Edit & Enhance Your Show',
   seoTitle: 'Best AI Podcast Tools 2026 — Record & Edit',
-  metaDescription: 'The best AI podcast tools in 2026 — tested for recording, editing, and transcription. Covers Podcastle, Murf AI, Descript, and Adobe Podcast.',
+  metaDescription: 'Podcastle records free for 3 hours/month, Descript edits by transcript, Murf AI writes your voiceovers. Which AI podcast tool fits your workflow in 2026? Honest picks.',
   datePublished: '2026-05-04',
   dateModified: '2026-05-06',
   author: 'Navneet Arya',

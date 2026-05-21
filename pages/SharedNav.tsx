@@ -130,6 +130,11 @@ export function SharedNav({
   const isAboutActive   = activePage === 'about';
   const isBlogActive    = activePage === 'blog';
 
+  const handleGlossary = () => {
+    closeMobile();
+    navigate('/glossary');
+  };
+
   return (
     <>
       <style>{NAV_CSS}</style>
@@ -274,6 +279,22 @@ export function SharedNav({
               Blog
             </button>
 
+            {/* Glossary — desktop only */}
+            <button
+              className="shared-nav-btn"
+              onClick={handleGlossary}
+              style={{
+                fontSize: 14, fontWeight: 500,
+                color: C.mut,
+                padding: '7px 13px', borderRadius: 8,
+                background: 'transparent',
+                border: 'none', cursor: 'pointer',
+                fontFamily: "'Inter', system-ui, sans-serif",
+              }}
+            >
+              Glossary
+            </button>
+
             {/* Trust pill — hidden on mobile via CSS */}
             <span className="trust-pill-nav" title="All reviews are independently researched. No sponsored content.">
               🔒 No sponsored reviews
@@ -342,6 +363,7 @@ export function SharedNav({
               { label: 'Compare',   fn: handleCompare  },
               { label: 'About',     fn: handleAbout    },
               { label: 'Blog',      fn: handleBlog     },
+              { label: 'Glossary',  fn: handleGlossary },
               { label: 'Privacy Policy', fn: () => { closeMobile(); navigate('/privacy'); } },
             ].map(({ label, fn }) => (
               <button
