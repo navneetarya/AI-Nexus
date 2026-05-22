@@ -49,6 +49,15 @@ import post26 from './best-free-ai-writing-tools-2026';
 import post27 from './is-grammarly-premium-worth-it-2026';
 // W2-T1: Grok 4 vs ChatGPT vs Claude — 🔥 Trending +450% — 22K+/mo, KD 12 — CRITICAL first-mover
 import post28 from './grok-4-vs-chatgpt-vs-claude-content-creators-2026';
+// 🔥 Trending +550% — Google Gemini AI Review — 18K+/mo, KD 19
+// Angle: "Can Gemini replace Grammarly + ChatGPT for my writing workflow?" — Google Workspace users
+import post29 from './google-gemini-ai-review-2026';
+// 🔥 Trending +380% — Claude Code vs GitHub Copilot vs Replit — 9K+/mo, KD 14
+// Angle: "Which AI coding tool is best if you're not a professional developer?"
+import post30 from './claude-code-vs-github-copilot-vs-replit-2026';
+// 📈 Rising +280% — Perplexity AI Review — 14K+/mo, KD 22
+// Angle: "Is Perplexity replacing Google for you?" — AI search vs traditional search
+import post31 from './perplexity-ai-review-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
   post1, post2, post3, post4, post5, post6, post7, post8,
@@ -56,6 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
   post16, post17, post18, post19, post20, post21, post22,
   post23, post24, post25,
   post26, post27, post28,
+  post29, post30, post31,
 ];
 
 export type { BlogPost };

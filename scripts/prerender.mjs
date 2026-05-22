@@ -710,6 +710,9 @@ const BLOG_OG_MAP = {
   'best-ai-tools-for-content-creators-free-2026':`${SITE}/og/blog/best-ai-tools-for-content-creators-free-2026.webp`,
   // W2-T1: Trending +450% — first-mover keyword
   'grok-4-vs-chatgpt-vs-claude-content-creators-2026': `${SITE}/og/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026.webp`,
+  'google-gemini-ai-review-2026':                       `${SITE}/og/blog/google-gemini-ai-review-2026.webp`,
+  'claude-code-vs-github-copilot-vs-replit-2026':       `${SITE}/og/blog/claude-code-vs-github-copilot-vs-replit-2026.webp`,
+  'perplexity-ai-review-2026':                          `${SITE}/og/blog/perplexity-ai-review-2026.webp`,
 };
 
 function resolveOgImage(slug) {
@@ -1554,6 +1557,54 @@ const BLOG_POSTS = [
       { q: 'Which AI is best for social media content creation in 2026?', a: 'Grok 4 is the best AI for social media content creation in 2026, specifically because it has access to real-time trending topics on X and the broader web. For evergreen social content, Claude and ChatGPT produce equally strong output.' },
       { q: 'What is the pricing difference between Grok 4, ChatGPT, and Claude in 2026?', a: 'All three have free tiers. ChatGPT Plus costs $20/month for GPT-5.5. Claude Pro costs $20/month for priority access. Grok 4 requires X Premium+ at $16/month or SuperGrok at $30/month for the most capable Heavy model. ChatGPT Plus at $20/month delivers the best balance of capability and ecosystem at that price point for most creators.' },
       { q: 'Can I use Grok 4, ChatGPT, and Claude for free as a content creator?', a: 'Yes — all three have usable free tiers: ChatGPT free (GPT-4o, usage-limited), Claude free (Claude Sonnet, daily message limit), and Grok 4 free (within the X platform, rate-limited). For light content creation, the free tiers are sufficient to test each tool before committing.' },
+    ],
+  },
+  // 🔥 Trending +550% — Google Gemini AI Review — 18K+/mo · KD 19 · Published 2026-05-15
+  {
+    slug: 'google-gemini-ai-review-2026',
+    title: 'Google Gemini AI Review 2026: Is It Better Than ChatGPT for Writing?',
+    metaDescription: 'Google Gemini 3.1 Pro reviewed for writing in 2026. Compared against ChatGPT on blog posts, email copy, and Google Docs integration. Honest verdict — no affiliate bias.',
+    datePublished: '2026-05-15',
+    dateModified: '2026-05-15',
+    readTimeMinutes: 10,
+    faqs: [
+      { q: 'Is Google Gemini better than ChatGPT for writing in 2026?', a: 'For most writing tasks, ChatGPT (GPT-5.5) still produces more reliable prose than Gemini 3.1 Pro. Gemini has a clear edge for Google Workspace integration and real-time web research. For Google Docs users and research-backed writing, Gemini is the better choice.' },
+      { q: 'Is Google Gemini free to use?', a: 'Yes — Gemini has a free tier with Gemini 1.5 Flash. Gemini 3.1 Pro requires Google One AI Premium at $19.99/month, which also includes 2TB of Google Drive storage and full Workspace AI features.' },
+      { q: 'Can Gemini replace Grammarly for writing?', a: 'No. Gemini generates content when prompted; Grammarly is an inline editing layer that improves content you have already written. They solve different problems and work best together.' },
+      { q: 'What is Gemini 3.1 Pro and when did it launch?', a: 'Gemini 3.1 Pro is Google\'s most capable publicly available AI model as of May 2026. It features a 2-million-token context window, deep Google Workspace integration, native multimodal input, and improved instruction-following.' },
+      { q: 'Does Gemini work inside Google Docs?', a: 'Yes — Gemini is natively integrated into Google Docs, Gmail, Sheets, and Slides via Google One AI Premium. In Docs, the sidebar supports multi-turn drafting without leaving the document.' },
+    ],
+  },
+  // 🔥 Trending +380% — Claude Code vs GitHub Copilot vs Replit — 9K+/mo · KD 14 · Published 2026-05-17
+  {
+    slug: 'claude-code-vs-github-copilot-vs-replit-2026',
+    title: 'Claude Code vs GitHub Copilot vs Replit: Best AI Coding Tool 2026',
+    metaDescription: 'Claude Code, GitHub Copilot, and Replit compared for 2026. Tested across real coding tasks — honest verdict on which is best for developers, no-code builders, and non-developers.',
+    datePublished: '2026-05-17',
+    dateModified: '2026-05-17',
+    readTimeMinutes: 10,
+    faqs: [
+      { q: 'What is Claude Code and how is it different from GitHub Copilot?', a: 'Claude Code is a terminal-based agentic coding tool that reads your entire codebase and takes on full tasks autonomously. GitHub Copilot provides inline code completions inside an IDE. Claude Code is an agent that delegates tasks; Copilot is an assistant that completes code as you type.' },
+      { q: 'Is Claude Code worth it for non-developers?', a: 'No — Claude Code requires terminal comfort and an existing codebase. For non-developers, Replit is the better choice: browser-based, no local setup required, and designed for users with limited coding experience.' },
+      { q: 'Is GitHub Copilot still worth it in 2026?', a: 'Yes — Copilot remains the best AI coding tool for seamless IDE integration at $10/month flat. Claude Code has overtaken it for agentic full-task work, but for everyday inline completion, Copilot is still unmatched.' },
+      { q: 'Can Claude Code write an entire app from scratch?', a: 'Claude Code can scaffold significant portions of an app, reading your project structure, writing files across directories, running tests, and iterating on errors. It excels at well-defined tasks on existing codebases.' },
+      { q: 'Which AI coding tool has the best free plan in 2026?', a: 'Replit has the most functional free tier for non-developers. GitHub Copilot has a limited free tier. Claude Code requires API credits with no meaningful free usage for heavy sessions.' },
+    ],
+  },
+  // 📈 Rising +280% — Perplexity AI Review — 14K+/mo · KD 22 · Published 2026-05-19
+  {
+    slug: 'perplexity-ai-review-2026',
+    title: 'Perplexity AI Review 2026: Is It Worth It vs Google Search?',
+    metaDescription: 'Perplexity AI reviewed for 2026 — tested against Google Search on research, fact-finding, and everyday queries. Is it worth $20/month? Honest verdict with no affiliate bias.',
+    datePublished: '2026-05-19',
+    dateModified: '2026-05-19',
+    readTimeMinutes: 9,
+    faqs: [
+      { q: 'Is Perplexity better than Google Search in 2026?', a: 'Perplexity is better for research-heavy queries requiring multi-source synthesis. Google is still better for navigational queries, local search, breaking news, and shopping. For deep research tasks, Perplexity saves significant time over opening multiple tabs.' },
+      { q: 'Is Perplexity AI free to use?', a: 'Yes — Perplexity has a permanent free plan with unlimited standard searches, no credit card required. Perplexity Pro at $20/month adds GPT-4o, Claude 3.5, Gemini Ultra (300 Pro searches/day), Deep Research, and Spaces.' },
+      { q: 'What is Perplexity Deep Research?', a: 'Perplexity Deep Research is a Pro feature that runs an extended autonomous research session, searching dozens of sources and producing a structured 1,500–3,000 word report with citations in 2–5 minutes.' },
+      { q: 'Does Perplexity have a mobile app?', a: 'Yes — Perplexity has iOS and Android apps with full feature parity. The mobile app supports voice search and can replace Google in your browser address bar on iOS and Android.' },
+      { q: 'Is Perplexity Pro worth the $20/month?', a: 'Perplexity Pro is worth $20/month for research-heavy workers who regularly synthesise information from multiple sources. For casual users, the free plan with unlimited standard searches is sufficient.' },
     ],
   },
 ];
