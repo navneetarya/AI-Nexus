@@ -72,6 +72,16 @@ export interface Tool {
     reddit?: string;          // e.g. "Positive — r/Blogging, r/freelanceWriters"
     lastVerified: string;     // ISO 8601 — "2026-05-12"
   };
+
+  /**
+   * W4: India-specific pricing in INR — rendered as a localised pricing note on the
+   * tool page for Indian visitors. Supports UPI/Razorpay context and GST notes.
+   */
+  indiaPricing?: {
+    free: string;   // e.g. "Free forever" or "No free plan (7-day trial)"
+    paid: string;   // e.g. "₹1,000/month Premium"
+    note: string;   // Payment method / GST / accessibility note
+  };
 }
 
 export interface FilterState {

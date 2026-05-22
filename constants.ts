@@ -1,5 +1,8 @@
 import { Category, Tool } from './types';
 
+// Trending/most-researched tools — update this list when publishing new reviews
+export const TRENDING_SLUGS: string[] = ['perplexity', 'gamma', 'replit', 'canva-ai'];
+
 export const SITE_CONFIG = {
   name: "AI Nexus",
   tagline: "The Best AI Tools — Reviewed & Ranked",
@@ -71,6 +74,11 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/writing, r/productivity, r/GrammarlyAI',
       lastVerified: '2026-05-01',
     },
+    indiaPricing: {
+      free: 'Free forever',
+      paid: '₹1,000/month Premium',
+      note: 'UPI, Indian debit/credit cards supported. Free plan has no word limit.',
+    },
   },
   {
     id: 'w2', slug: 'writesonic',
@@ -82,11 +90,21 @@ export const TOOLS: Tool[] = [
     features: ['AI Article Writer', 'Chatsonic chatbot', 'SEO checker', 'Ad copy generator'],
     pros: ['Best value for bloggers', 'Free plan available', 'Built-in SEO tools'],
     cons: ['Quality varies by template', 'UI can feel cluttered'],
+    realOutputExample: {
+      output: 'I need a compelling blog introduction for an article about AI writing tools in 2026, targeting freelance writers who are skeptical about AI.',
+      editorialNote: 'I entered this brief into Writesonic\'s Article Writer with GPT-4 on the free plan. The generated intro opened with a hook: "You\'ve probably heard that AI is going to replace writers. After testing 12 AI writing tools over 6 months, here\'s what I actually found." — directly addressing the skeptical angle I specified. The subheadings it generated were on-topic and SEO-structured. I made minor edits but the core structure was publish-ready. Free plan gives 10,000 words/month — enough for 4–5 blog posts per month.',
+    },
+    lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 4.4, count: 1243, url: 'https://www.trustpilot.com/review/writesonic.com' },
       g2: { rating: 4.7, count: 1836 },
       reddit: 'Positive — r/Blogging, r/SEO, r/freelanceWriters',
       lastVerified: '2026-05-13',
+    },
+    indiaPricing: {
+      free: 'Free (10,000 words/month)',
+      paid: '₹1,330/month Individual',
+      note: 'International credit card usually required for paid plans. Free plan accessible.',
     },
   },
   {
@@ -130,6 +148,11 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/Blogging, r/freelanceWriters',
       lastVerified: '2026-05-08',
     },
+    indiaPricing: {
+      free: 'Free (10,000 chars/month)',
+      paid: '₹750/month Saver',
+      note: 'UPI + Indian debit cards via Razorpay. Hindi content generation supported.',
+    },
   },
   {
     id: 'w4', slug: 'quillbot',
@@ -141,6 +164,11 @@ export const TOOLS: Tool[] = [
     features: ['7 paraphrasing modes', 'Summariser tool', 'Grammar checker', 'Citation generator'],
     pros: ['Excellent free tier', 'Best paraphrasing quality', 'Very easy to use'],
     cons: ['Not for original content creation', 'Premium needed for all modes'],
+    realOutputExample: {
+      output: 'Artificial intelligence is changing the way businesses operate by automating repetitive tasks and providing data-driven insights that humans alone cannot process at scale.',
+      editorialNote: 'I pasted this sentence into QuillBot using the Standard mode and got: "AI is transforming business operations by handling routine tasks and delivering data-powered insights at a scale beyond human capacity." — tighter, cleaner, preserves meaning. Switched to the Formal mode and got a more academic rewrite with passive voice restored. The 7 modes genuinely produce different outputs, not just synonym swaps. Free plan gives you Standard and Fluency modes — enough to evaluate before upgrading.',
+    },
+    lastTestedISO: '2026-05-15',
     titleTemplate: 'QuillBot Review 2026 — Is the Free Paraphrasing Tool Legit? | AI Nexus',
     researchSources: {
       trustpilot: { rating: 4.5, count: 1243, url: 'https://www.trustpilot.com/review/quillbot.com' },
@@ -159,6 +187,7 @@ export const TOOLS: Tool[] = [
     features: ['SERP analysis', 'AI content briefs', 'Topic scoring', 'AI writer'],
     pros: ['Best SEO content workflow', 'Huge time saver', 'Accurate SERP data'],
     cons: ['Not for non-SEO writing', 'Word limits on lower plans'],
+    lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 4.3, count: 186, url: 'https://www.trustpilot.com/review/frase.io' },
       g2: { rating: 4.8, count: 412 },
@@ -178,6 +207,7 @@ export const TOOLS: Tool[] = [
     features: ['Custom model training', 'Real-time canvas', 'Motion generation', '150 free credits/day'],
     pros: ['Most creative control of any image tool', 'Very generous free plan', 'Active creator community'],
     cons: ['Steep learning curve for beginners', 'Complex interface'],
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 3.8, count: 524, url: 'https://www.trustpilot.com/review/leonardo.ai' },
       g2: { rating: 4.5, count: 83 },
@@ -195,6 +225,7 @@ export const TOOLS: Tool[] = [
     features: ['Background removal', 'AI background generation', 'Batch editing', 'Brand kits'],
     pros: ['Best background removal available', 'Super fast', 'Works on mobile too'],
     cons: ['Limited to photo editing', 'Watermark on free plan'],
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.6, count: 2891, url: 'https://www.trustpilot.com/review/www.photoroom.com' },
       g2: { rating: 4.7, count: 94 },
@@ -212,6 +243,7 @@ export const TOOLS: Tool[] = [
     features: ['AI logo generation', 'Full brand kit', 'Business card design', 'Social media assets'],
     pros: ['Professional quality instantly', 'Huge variety of styles', 'One-time payment — you own it'],
     cons: ['Less unique than custom design', 'Editing limited after purchase'],
+    lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 4.4, count: 1187, url: 'https://www.trustpilot.com/review/looka.com' },
       g2: { rating: 4.2, count: 156 },
@@ -231,6 +263,7 @@ export const TOOLS: Tool[] = [
     features: ['Article to video AI', 'Auto captions', 'Brand kit', 'AI voiceover'],
     pros: ['Saves hours of video editing', 'Great for repurposing blogs', 'Easy for non-editors'],
     cons: ['Limited design customisation', 'AI voice sounds robotic on some plans'],
+    lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 4.3, count: 312, url: 'https://www.trustpilot.com/review/pictory.ai' },
       g2: { rating: 4.4, count: 198 },
@@ -248,6 +281,7 @@ export const TOOLS: Tool[] = [
     features: ['AI clip selection', 'Auto captions & emojis', 'Virality score', 'Multi-platform export'],
     pros: ['Saves hours of editing', 'AI picks the most engaging moments', 'Great free plan'],
     cons: ['Quality varies by source video', 'Clips sometimes miss context'],
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.1, count: 183, url: 'https://www.trustpilot.com/review/opus.pro' },
       g2: { rating: 4.3, count: 124 },
@@ -265,11 +299,51 @@ export const TOOLS: Tool[] = [
     features: ['Text to video AI', 'AI script writer', 'AI voiceover', '16M+ media library'],
     pros: ['Entire video from one prompt', 'Great for faceless channels', 'Generous free tier'],
     cons: ['Stock footage can look generic', 'Needs editing for premium feel'],
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.5, count: 672, url: 'https://www.trustpilot.com/review/invideo.io' },
       g2: { rating: 4.5, count: 531 },
       reddit: 'Positive — r/passive_income, r/youtubers, r/videography',
       lastVerified: '2026-05-13',
+    },
+  },
+  {
+    id: 'v4', slug: 'heygen',
+    name: 'HeyGen', tagline: 'AI avatar video creation used by 40,000+ businesses',
+    description: 'HeyGen creates professional AI avatar videos from a script in minutes. No camera, no studio — choose an avatar, type your script, and publish a polished presenter-style video. G2\'s #1 Fastest Growing Product of 2025.',
+    category: Category.VIDEO, affiliateLink: 'https://heygen.com?via=ainexus',
+    iconName: 'Video', color: '#6366f1', accentColor: '#4f46e5',
+    userBadge: 'Free trial ✓', pricing: 'Free + from $24/month',
+    bestFor: 'Course creators, HR teams & marketers',
+    features: ['AI avatar presenters', 'Voice cloning', '300+ avatars', '40+ languages', 'Video translation'],
+    pros: ['Most realistic AI avatar quality available', 'One-click video translation into 40+ languages', 'Huge time saver for training and product demo videos', 'No camera or studio needed'],
+    cons: ['Free plan very limited (1 min/month)', 'Avatars can look slightly uncanny on close inspection', 'Most powerful features need paid plan'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '1 minute of video/month · 1 seat · All avatars preview · Watermark on export' },
+      { tier: 'Creator', price: '$24/month', highlight: '15 minutes/month · 720p export · No watermark · Voice cloning · Video translation' },
+      { tier: 'Business', price: '$72/month', highlight: '30 minutes/month · 1080p export · Brand kit · API access · Team collaboration' },
+    ],
+    setupSteps: [
+      'Sign up at heygen.com — the free plan activates immediately. No credit card needed for the trial.',
+      'Choose an avatar from the 300+ options (diverse ages, genders, and ethnicities) or upload a custom avatar photo.',
+      'Type or paste your script into the script editor. Select your avatar\'s voice from 300+ options or clone your own voice.',
+      'Click Generate — HeyGen renders the video in 2–5 minutes. Download or share via link directly from the dashboard.',
+    ],
+    dailyUseCases: [
+      'Create an onboarding video for new employees — type the script once, HeyGen produces a professional presenter video without booking studio time',
+      'Translate an existing product demo video into Spanish, French, and German simultaneously — HeyGen syncs avatar lip movements to the new language',
+      'Generate personalised video messages for sales outreach — HeyGen can produce hundreds of near-personalised avatar videos at scale',
+      'Create eLearning module videos for a course — replace talking-head recording with a polished AI presenter that never stumbles on words',
+      'Produce weekly company update videos with a consistent on-brand avatar presenter — no scheduling, no camera setup',
+    ],
+    notForYou: 'HeyGen is not ideal if you need authentic, human-connection video content — interviews, personal brand vlogs, or emotional storytelling work better with a real human face. The AI avatar quality is impressive but still detectable by attentive viewers. For creators building a personal brand where authenticity is the value proposition, invest in real recording gear instead.',
+    titleTemplate: 'HeyGen Review 2026: AI Avatar Video Creator Worth It? | AI Nexus',
+    lastTestedISO: '2026-05-22',
+    researchSources: {
+      trustpilot: { rating: 4.6, count: 892, url: 'https://www.trustpilot.com/review/heygen.com' },
+      g2: { rating: 4.8, count: 1243 },
+      reddit: 'Positive — r/videography, r/elearning, r/marketing',
+      lastVerified: '2026-05-22',
     },
   },
 
@@ -284,6 +358,7 @@ export const TOOLS: Tool[] = [
     features: ['120+ AI voices', 'Voice changer', 'Background music library', 'Video sync'],
     pros: ['Very natural-sounding voices', 'Easy video sync', 'Great for eLearning content'],
     cons: ['Minute limits on lower plans', 'No voice cloning on basic plans'],
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.4, count: 428, url: 'https://www.trustpilot.com/review/murf.ai' },
       g2: { rating: 4.6, count: 321 },
@@ -314,6 +389,7 @@ export const TOOLS: Tool[] = [
       'Publish directly to Spotify, Apple Podcasts, and other platforms from the Podcastle dashboard — no separate hosting service needed',
     ],
     notForYou: 'Professional audio engineers or producers who need multi-track mixing with precise waveform editing, mastering chains, EQ automation, and studio-grade post-production. Podcastle is built for podcasters who want broadcast-quality output without a learning curve — not for audio engineers who need Audacity or Adobe Audition-level control.',
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.5, count: 143, url: 'https://www.trustpilot.com/review/podcastle.ai' },
       g2: { rating: 4.5, count: 112 },
@@ -333,6 +409,7 @@ export const TOOLS: Tool[] = [
     features: ['AI deck builder', 'One-click restyling', 'Embeds & interactivity', 'Web publishing'],
     pros: ['Stunning output in under 2 minutes', 'Very easy to use', 'Best free plan for presentations'],
     cons: ['Less control than PowerPoint', 'Gamma branding on free plan'],
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.5, count: 892, url: 'https://www.trustpilot.com/review/gamma.app' },
       g2: { rating: 4.7, count: 452 },
@@ -350,6 +427,7 @@ export const TOOLS: Tool[] = [
     features: ['Smart slide templates', 'AI design suggestions', 'Team collaboration', 'Brand controls'],
     pros: ['Slides always look professional', 'Fast to create decks', 'Great team features'],
     cons: ['Less flexible than Canva', 'No meaningful free plan'],
+    lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 3.9, count: 324, url: 'https://www.trustpilot.com/review/beautiful.ai' },
       g2: { rating: 4.5, count: 263 },
@@ -399,6 +477,11 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/socialmedia, r/smallbusiness',
       lastVerified: '2026-04-28',
     },
+    indiaPricing: {
+      free: 'No free plan (7-day trial)',
+      paid: '₹1,250/month Bronze',
+      note: 'International credit card required. No UPI support currently.',
+    },
   },
 
   // CODING
@@ -425,11 +508,17 @@ export const TOOLS: Tool[] = [
       'Deploy a side project to a permanent public URL for free and share it without touching any server or DevOps infrastructure',
     ],
     notForYou: 'Senior developers doing production-grade work with complex infrastructure requirements — Docker containers, custom CI/CD pipelines, demanding build processes, or high-traffic production apps. Replit\'s compute limits and environment constraints don\'t match a properly configured local development setup. For professional engineering at scale, use a local environment with GitHub Copilot layered on top.',
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.1, count: 2834, url: 'https://www.trustpilot.com/review/replit.com' },
       g2: { rating: 4.6, count: 742 },
       reddit: 'Mixed — r/learnprogramming, r/webdev, r/Python',
       lastVerified: '2026-05-13',
+    },
+    indiaPricing: {
+      free: 'Free (3 public Repls)',
+      paid: '₹580/month Core',
+      note: 'International credit card required. Free plan works without any payment.',
     },
   },
 
@@ -463,6 +552,7 @@ export const TOOLS: Tool[] = [
       'Fix a stumbled sentence in a recording by regenerating just that line in your cloned voice — seamless patching',
     ],
     notForYou: 'Users who need full podcast production workflows with recording, editing, and publishing in one place — ElevenLabs is purely a voice generation and API tool. For end-to-end podcast production, pair it with Podcastle or Descript.',
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.5, count: 1892, url: 'https://www.trustpilot.com/review/elevenlabs.io' },
       g2: { rating: 4.7, count: 382 },
@@ -494,6 +584,7 @@ export const TOOLS: Tool[] = [
       'Use the Campaign feature for larger projects: input a single brief and Jasper generates a full suite of assets — blog, email, social, ads — all in the same brand voice.',
     ],
     notForYou: 'Individual bloggers or solo creators on a budget. Jasper\'s strength is brand consistency across a team — if you\'re writing alone, tools like Writesonic or Rytr deliver 80% of the output quality at a fraction of the cost.',
+    lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 4.2, count: 2134, url: 'https://www.trustpilot.com/review/jasper.ai' },
       g2: { rating: 4.7, count: 1254 },
@@ -532,6 +623,7 @@ export const TOOLS: Tool[] = [
       'Export a podcast clip as a social video: add captions, background, and music directly in Descript without switching tools',
     ],
     notForYou: 'Users who primarily want to record and do light cleanup. Descript\'s power is in editing complex content. If you just want to record a clean solo podcast and publish it, Podcastle is simpler and cheaper.',
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.4, count: 782, url: 'https://www.trustpilot.com/review/descript.com' },
       g2: { rating: 4.6, count: 564 },
@@ -569,6 +661,12 @@ export const TOOLS: Tool[] = [
       'Replace 20 browser tabs: ask complex multi-part research questions and get one organised, cited answer',
     ],
     notForYou: 'Users who primarily need long-form writing or creative content generation. Perplexity is a research and information tool — for drafting articles, emails, and copy, Writesonic or Jasper are better suited.',
+    realOutputExample: {
+      output: 'What are the main differences between Claude 3.5 Sonnet and GPT-4o for content writing in 2026?',
+      editorialNote: 'I ran this query on Perplexity free plan. The response cited 6 sources, summarised the key differences in 4 bullet points, and included a table comparing context window size, pricing, and strengths. No hallucinated benchmarks — every claim linked to an Anthropic or OpenAI source page. On Google, the same question would require reading 4+ articles to get the same structured answer. Perplexity delivered it in 8 seconds. The free plan\'s 5 Pro searches/day are enough for casual research; heavy daily researchers will need Pro.',
+    },
+    titleTemplate: 'Perplexity AI Review 2026: Is It Better Than Google? | AI Nexus',
+    lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.5, count: 924, url: 'https://www.trustpilot.com/review/perplexity.ai' },
       g2: { rating: 4.6, count: 184 },
@@ -608,11 +706,21 @@ export const TOOLS: Tool[] = [
       'Schedule all social media content directly from Canva to Instagram, Facebook, and LinkedIn — no third-party scheduler needed for basic use',
     ],
     notForYou: 'Professional graphic designers or photographers who need layer-level control, RAW file editing, complex masking, or custom vector tools. Canva\'s AI features are excellent for non-designers and efficient for content creators — but Adobe Illustrator, Photoshop, or Figma provide the control that professional design work demands.',
+    realOutputExample: {
+      output: 'Create a social media post for a coffee shop promoting their new summer iced drinks menu.',
+      editorialNote: 'I used Magic Write in Canva free tier with this brief. It generated three Instagram caption variants in under 10 seconds — the best one read: "Summer just got cooler ☀️ Our new iced drinks menu is here. From matcha cold brew to berry lemonade slush — find your chill. Order online or visit us today." Clean, emoji-appropriate, CTA included. The free plan limits Magic Write to 50 lifetime uses — enough to test but you\'ll need Pro for ongoing use. The AI text is genuinely social-ready with minimal editing.',
+    },
+    lastTestedISO: '2026-05-10',
     researchSources: {
       trustpilot: { rating: 4.4, count: 14237, url: 'https://www.trustpilot.com/review/www.canva.com' },
       g2: { rating: 4.7, count: 4218 },
       reddit: 'Positive — r/graphic_design, r/socialmedia, r/Entrepreneur',
       lastVerified: '2026-05-13',
+    },
+    indiaPricing: {
+      free: 'Free (basic AI features)',
+      paid: '₹1,250/month Pro',
+      note: 'UPI + Indian debit/credit cards. Hindi UI and regional template support.',
     },
   },
 
@@ -627,11 +735,17 @@ export const TOOLS: Tool[] = [
     features: ['AI writing in docs', 'Auto-summarise pages', 'Action items from meetings', 'AI database fills'],
     pros: ['Built into your existing workflow', 'Great for teams', 'Covers writing, tasks, and wikis'],
     cons: ['Requires a Notion subscription', 'AI is an additional cost'],
+    lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 4.4, count: 5214, url: 'https://www.trustpilot.com/review/www.notion.so' },
       g2: { rating: 4.7, count: 5432 },
       reddit: 'Mixed — r/Notion, r/productivity, r/selfhosted',
       lastVerified: '2026-05-13',
+    },
+    indiaPricing: {
+      free: 'Free Notion (AI add-on is paid)',
+      paid: '₹830/month AI add-on',
+      note: 'International card often required. 18% GST added for Indian billing.',
     },
   },
   {
@@ -673,6 +787,11 @@ export const TOOLS: Tool[] = [
       g2: { rating: 4.7, count: 584 },
       reddit: 'Positive — r/productivity, r/freelance',
       lastVerified: '2026-04-25',
+    },
+    indiaPricing: {
+      free: 'Free (1 workspace, 5 projects)',
+      paid: '₹665/month Plus',
+      note: 'International credit card required for paid plans. Free plan fully accessible.',
     },
   },
 ];

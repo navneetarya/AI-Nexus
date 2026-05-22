@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Mail, Menu, X, Scale, Sun, Moon, ChevronDown } from 'lucide-react';
+import { Mail, Menu, X, Scale, Sun, Moon, ChevronDown, BookOpen } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 import { COMPARE_ARTICLES } from './compare-data';
 
@@ -34,6 +34,7 @@ const NAV_CSS = `
   text-overflow:ellipsis; }
 .compare-dropdown-item:hover { background:var(--a1-card)!important; color:var(--a1)!important; }
 .compare-wrap { position:relative; }
+.bestlists-wrap { position:relative; }
 .trust-pill-nav {
   display:inline-flex; align-items:center; gap:5px;
   background:var(--a1-card); border:1px solid var(--a1-brd);
@@ -88,7 +89,9 @@ export function SharedNav({
 }: SharedNavProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [compareOpen, setCompareOpen] = useState(false);
+  const [bestListsOpen, setBestListsOpen] = useState(false);
   const compareRef = useRef<HTMLDivElement>(null);
+  const bestListsRef = useRef<HTMLDivElement>(null);
 
   const closeMobile = () => setMobileOpen(false);
 
@@ -97,6 +100,17 @@ export function SharedNav({
     const handler = (e: MouseEvent) => {
       if (compareRef.current && !compareRef.current.contains(e.target as Node)) {
         setCompareOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  // Close bestLists dropdown when clicking outside
+  React.useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (bestListsRef.current && !bestListsRef.current.contains(e.target as Node)) {
+        setBestListsOpen(false);
       }
     };
     document.addEventListener('mousedown', handler);
@@ -123,6 +137,11 @@ export function SharedNav({
   const handleBlog = () => {
     closeMobile();
     navigate('/blog');
+  };
+
+  const handleBestLists = () => {
+    closeMobile();
+    navigate('/best-free-ai-tools');
   };
 
   const isCompareActive = activePage === 'compare';
@@ -279,6 +298,51 @@ export function SharedNav({
               Blog
             </button>
 
+            {/* Best Lists — with dropdown */}
+            <div className="bestlists-wrap" ref={bestListsRef}>
+              <button
+                className="shared-nav-btn"
+                onClick={() => setBestListsOpen(v => !v)}
+                onMouseEnter={() => setBestListsOpen(true)}
+                style={{
+                  fontSize: 14, fontWeight: 500,
+                  color: C.mut,
+                  padding: '7px 13px', borderRadius: 8,
+                  background: 'transparent',
+                  border: 'none', cursor: 'pointer',
+                  fontFamily: "'Inter', system-ui, sans-serif",
+                  display: 'flex', alignItems: 'center', gap: 6,
+                }}
+              >
+                <BookOpen size={14} /> Best Lists <ChevronDown size={12} style={{ transition: 'transform .2s', transform: bestListsOpen ? 'rotate(180deg)' : 'none' }} />
+              </button>
+
+              {bestListsOpen && (
+                <div className="compare-dropdown" onMouseLeave={() => setBestListsOpen(false)}>
+                  <div style={{ fontSize: 10, fontWeight: 700, color: C.a1, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '4px 12px 6px', borderBottom: `1px solid ${C.a1brd}`, marginBottom: 4 }}>
+                    Best Lists
+                  </div>
+                  {([
+                    { label: 'Best Free AI Tools',            path: '/best-free-ai-tools' },
+                    { label: 'Best AI Tools India',           path: '/best-ai-tools-india' },
+                    { label: 'Best AI Writing Tools',         path: '/best-ai-writing-tools' },
+                    { label: 'Best AI Coding Tools',          path: '/best-ai-coding-tools' },
+                    { label: 'Best AI Logo Makers',           path: '/best-ai-logo-makers' },
+                    { label: 'Best AI Tools for Freelancers', path: '/best-ai-tools-for-freelancers' },
+                  ] as { label: string; path: string }[]).map(({ label, path }) => (
+                    <button
+                      key={path}
+                      className="compare-dropdown-item"
+                      onClick={() => { setBestListsOpen(false); closeMobile(); navigate(path); }}
+                    >
+                      <BookOpen size={11} style={{ display: 'inline', marginRight: 7, verticalAlign: 'middle', color: 'var(--a1)' }} />
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {/* Glossary — desktop only */}
             <button
               className="shared-nav-btn"
@@ -359,11 +423,17 @@ export function SharedNav({
             }}
           >
             {[
-              { label: 'All Tools', fn: handleAllTools },
-              { label: 'Compare',   fn: handleCompare  },
-              { label: 'About',     fn: handleAbout    },
-              { label: 'Blog',      fn: handleBlog     },
-              { label: 'Glossary',  fn: handleGlossary },
+              { label: 'All Tools',  fn: handleAllTools },
+              { label: 'Compare',    fn: handleCompare  },
+              { label: 'About',      fn: handleAbout    },
+              { label: 'Blog',       fn: handleBlog     },
+              { label: 'Best Free AI Tools',            fn: () => { closeMobile(); navigate('/best-free-ai-tools'); } },
+              { label: 'Best AI Tools India',           fn: () => { closeMobile(); navigate('/best-ai-tools-india'); } },
+              { label: 'Best AI Writing Tools',         fn: () => { closeMobile(); navigate('/best-ai-writing-tools'); } },
+              { label: 'Best AI Coding Tools',          fn: () => { closeMobile(); navigate('/best-ai-coding-tools'); } },
+              { label: 'Best AI Logo Makers',           fn: () => { closeMobile(); navigate('/best-ai-logo-makers'); } },
+              { label: 'Best AI Tools for Freelancers', fn: () => { closeMobile(); navigate('/best-ai-tools-for-freelancers'); } },
+              { label: 'Glossary',   fn: handleGlossary },
               { label: 'Privacy Policy', fn: () => { closeMobile(); navigate('/privacy'); } },
             ].map(({ label, fn }) => (
               <button

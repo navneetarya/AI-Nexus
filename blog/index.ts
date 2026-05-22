@@ -58,6 +58,8 @@ import post30 from './claude-code-vs-github-copilot-vs-replit-2026';
 // 📈 Rising +280% — Perplexity AI Review — 14K+/mo, KD 22
 // Angle: "Is Perplexity replacing Google for you?" — AI search vs traditional search
 import post31 from './perplexity-ai-review-2026';
+// 🏆 Pillar post: Best AI chatbot 2026 — 18K+/mo, KD 28 — mega-comparison targeting featured snippet
+import post32 from './best-ai-chatbot-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
   post1, post2, post3, post4, post5, post6, post7, post8,
@@ -65,7 +67,7 @@ export const BLOG_POSTS: BlogPost[] = [
   post16, post17, post18, post19, post20, post21, post22,
   post23, post24, post25,
   post26, post27, post28,
-  post29, post30, post31,
+  post29, post30, post31, post32,
 ];
 
 export type { BlogPost };

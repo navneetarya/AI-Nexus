@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { TOOLS, SITE_CONFIG } from '../constants';
+import { TOOLS, SITE_CONFIG, TRENDING_SLUGS } from '../constants';
 import { Category, FilterState, Tool } from '../types';
 import {
   Search, ArrowRight, Mail, Star, Shield,
@@ -433,6 +433,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               { label:'How I review tools',  fn: () => navigate('/methodology') },
               { label:'Affiliate disclosure', fn: () => navigate('/disclosure') },
               { label:'Compare tools',        fn: goCompare },
+              { label:'Glossary',               fn: () => navigate('/glossary') },
             ].map(({ label, fn }) => (
               <button key={label} onClick={fn}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
@@ -726,23 +727,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           {/* Trust stats bar */}
           <div className="anim-fade-up d3" style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 16 }}>
             {[
-              { n: '22+',  label: 'AI tools researched' },
-              { n: '25',   label: 'blog posts published' },
+              { n: '24',   label: 'AI tools reviewed' },
+              { n: '31',   label: 'blog posts published' },
               { n: '200+', label: 'reviews analysed per tool' },
               { n: '2022', label: 'researching since' },
             ].map(({ n, label }) => (
               <div key={label} style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: 24, fontWeight: 800, color: C.a1, lineHeight: 1.1 }}>{n}</div>
                 <div style={{ fontSize: 12, color: C.mut, fontWeight: 500, marginTop: 2 }}>{label}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Social proof counter strip */}
-          <div className="anim-fade-up d3" style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'center', marginTop: 14, marginBottom: 20 }}>
-            {[['24', 'tools tested'], ['17', 'guides published'], ['23,000+', 'reviews analysed'], ['May 2026', 'last updated']].map(([n, label]) => (
-              <div key={label} style={{ display: 'flex', alignItems: 'center', gap: 6, background: 'rgba(13,148,136,.1)', border: '1px solid rgba(13,148,136,.18)', borderRadius: 100, padding: '5px 14px', fontSize: 12, color: C.mut }}>
-                <span style={{ fontWeight: 700, color: C.a1 }}>{n}</span> {label}
               </div>
             ))}
           </div>
@@ -815,7 +807,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             { icon:<Award size={13}/>,  text:`${TOOLS.length}+ tools reviewed` },
             { icon:<Clock size={13}/>,  text:'Researching AI tools since 2022' },
             { icon:<Shield size={13}/>, text:'No sponsored content' },
-            { icon:<Zap size={13}/>,    text:'Every link = free trial' },
+            { icon:<Zap size={13}/>,    text:'Free plan status shown on every card' },
           ].map(({ icon, text }, i) => (
             <div key={i} style={{ display:'flex', alignItems:'center', gap:7,
               color:'rgba(255,255,255,.88)', fontSize:12.5, fontWeight:500 }}>
@@ -910,10 +902,10 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               width:22, height:22, borderRadius:6, background:C.a1card }}>
               🔥
             </span>
-            Trending This Week
+            Most Researched This Month
           </div>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(260px,1fr))', gap:12 }}>
-            {TOOLS.filter(t => ['grammarly','rytr','leonardo-ai','gamma'].includes(t.slug)).map(tool => {
+            {TOOLS.filter(t => TRENDING_SLUGS.includes(t.slug)).map(tool => {
               const accent = CAT_ACCENT[tool.category] === 'a2' ? C.a2 : C.a1;
               return (
                 <div key={tool.slug} onClick={() => navigate(`/tools/${tool.slug}`)}

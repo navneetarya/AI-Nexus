@@ -1188,6 +1188,46 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </div>
         )}
 
+        {/* ── W4: Research Transparency Badge — surfaces methodology for EEAT Trustworthiness ── */}
+        {tool.researchSources && (
+          <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '20px 24px', marginBottom: 14 }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: C.a1, letterSpacing: '0.1em', textTransform: 'uppercase' as const, marginBottom: 12 }}>
+              Research Transparency
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 8 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: C.txt }}>
+                <Check size={14} color="#059669" style={{ flexShrink: 0 }} />
+                <span>
+                  <strong>Sources checked:</strong>{' '}
+                  {[
+                    tool.researchSources.trustpilot && `Trustpilot (${tool.researchSources.trustpilot.count.toLocaleString()} reviews)`,
+                    tool.researchSources.g2 && `G2 (${tool.researchSources.g2.count.toLocaleString()} reviews)`,
+                    tool.researchSources.reddit && 'Reddit',
+                  ].filter(Boolean).join(', ')}
+                </span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: C.txt }}>
+                <Check size={14} color="#059669" style={{ flexShrink: 0 }} />
+                <span><strong>Last verified:</strong> {tool.researchSources.lastVerified}</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: C.txt }}>
+                <Check size={14} color="#059669" style={{ flexShrink: 0 }} />
+                <span>
+                  <strong>Free plan personally tested:</strong>{' '}
+                  {(tool.lastTestedISO && tool.pricing?.toLowerCase().includes('free'))
+                    ? <span style={{ color: '#059669', fontWeight: 600 }}>YES</span>
+                    : <span style={{ color: '#dc2626', fontWeight: 600 }}>NO</span>
+                  }
+                </span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: C.txt }}>
+                <Check size={14} color="#059669" style={{ flexShrink: 0 }} />
+                <span><strong>Pricing verified:</strong> {tool.researchSources.lastVerified}</span>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* ── AEO A3: "What is [Tool]?" — featured snippet target for "[tool] review" queries ── */}
         {content?.whatIs && (
           <section

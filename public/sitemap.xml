@@ -9,6 +9,7 @@
   <url><loc>https://ainexustools.online/about/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-04-29</lastmod></url>
   <url><loc>https://ainexustools.online/disclosure/</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2026-04-29</lastmod></url>
   <url><loc>https://ainexustools.online/methodology/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/glossary/</loc><changefreq>weekly</changefreq><priority>0.75</priority><lastmod>2026-05-22</lastmod></url>
 
   <!-- Category landing page (22K/mo keyword) -->
   <url><loc>https://ainexustools.online/best-free-ai-tools/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-04</lastmod></url>
@@ -76,6 +77,9 @@
   <url><loc>https://ainexustools.online/tools/invideo/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
     <image:image><image:loc>https://ainexustools.online/logos/invideo.png</image:loc><image:title>InVideo AI Text-to-Video Tool Logo</image:title></image:image>
   </url>
+  <url><loc>https://ainexustools.online/tools/heygen/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-22</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/heygen.png</image:loc><image:title>HeyGen AI Avatar Video Creator Logo</image:title></image:image>
+  </url>
   <url><loc>https://ainexustools.online/tools/murf-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
     <image:image><image:loc>https://ainexustools.online/logos/murf-ai.png</image:loc><image:title>Murf AI Voiceover Generator Logo</image:title></image:image>
   </url>
@@ -111,6 +115,7 @@
   <url><loc>https://ainexustools.online/compare/leonardo-ai-vs-stable-diffusion/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
   <url><loc>https://ainexustools.online/compare/gamma-vs-beautiful-ai/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
   <url><loc>https://ainexustools.online/compare/invideo-vs-pictory/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/claude-code-vs-github-copilot-vs-replit/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-22</lastmod></url>
 
   <!-- Category landing pages -->
   <url><loc>https://ainexustools.online/best-ai-writing-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
@@ -235,5 +240,9 @@
   <!-- 📈 Rising +280% — Perplexity AI Review — 14K+/mo · KD 22 · Published 2026-05-19 -->
   <url><loc>https://ainexustools.online/blog/perplexity-ai-review-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-19</lastmod>
     <image:image><image:loc>https://ainexustools.online/og/blog/perplexity-ai-review-2026.webp</image:loc><image:title>Perplexity AI Review 2026: Is It Worth It vs Google Search?</image:title></image:image>
+  </url>
+  <!-- 🏆 Pillar post: Best AI chatbot 2026 — 18K+/mo · KD 28 · Published 2026-05-22 -->
+  <url><loc>https://ainexustools.online/blog/best-ai-chatbot-2026/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-22</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og/blog/best-ai-chatbot-2026.webp</image:loc><image:title>Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini vs Grok Compared</image:title></image:image>
   </url>
 </urlset>

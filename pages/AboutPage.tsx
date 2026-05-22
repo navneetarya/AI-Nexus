@@ -88,7 +88,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
             </div>
 
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
-              I'm Navneet Arya — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. I've independently researched 22+ AI tools since 2022 — covering writing, audio, video, design, coding, and productivity.
+              I'm Navneet Arya — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools for my own work first, then write about them. I've systematically researched 24+ tools across writing, audio, video, design, coding, and productivity since 2022 because I was selecting tools for my own workflows before recommending them to others.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
               I built AI Nexus because every "best AI tools" article I found was clearly written by someone who had never actually opened the products. Review sites were copying marketing pages and calling it a review. I got frustrated and decided to build something where every review is based on independent research — official documentation, verified user reviews, and real pricing data.
