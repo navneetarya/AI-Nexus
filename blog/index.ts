@@ -47,13 +47,15 @@ import post25 from './best-ai-writing-tools-2026';
 import post26 from './best-free-ai-writing-tools-2026';
 // T3.2: Grammarly Premium worth it — 3,600/mo, KD 22 — upgrade-intent query
 import post27 from './is-grammarly-premium-worth-it-2026';
+// W2-T1: Grok 4 vs ChatGPT vs Claude — 🔥 Trending +450% — 22K+/mo, KD 12 — CRITICAL first-mover
+import post28 from './grok-4-vs-chatgpt-vs-claude-content-creators-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
   post1, post2, post3, post4, post5, post6, post7, post8,
   post9, post10, post11, post12, post13, post14, post15,
   post16, post17, post18, post19, post20, post21, post22,
   post23, post24, post25,
-  post26, post27,
+  post26, post27, post28,
 ];
 
 export type { BlogPost };
