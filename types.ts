@@ -82,6 +82,15 @@ export interface Tool {
     paid: string;   // e.g. "₹1,000/month Premium"
     note: string;   // Payment method / GST / accessibility note
   };
+
+  /**
+   * W3: Dated update log — shown on tool pages as a "Review Updates" section.
+   * Each entry captures a date and a brief note about what was verified/changed.
+   */
+  updateLog?: {
+    date: string;  // e.g. "May 2026"
+    note: string;  // Short note about what was verified or updated
+  }[];
 }
 
 export interface FilterState {

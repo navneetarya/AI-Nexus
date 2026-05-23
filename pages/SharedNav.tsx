@@ -126,7 +126,12 @@ export function SharedNav({
   const handleCompare = () => {
     closeMobile();
     if (onCompare) { onCompare(); }
-    else { navigate('/'); }
+    else { navigate('/compare'); }
+  };
+
+  const handleCompareIndex = () => {
+    closeMobile();
+    navigate('/compare');
   };
 
   const handleAbout = () => {
@@ -298,6 +303,22 @@ export function SharedNav({
               Blog
             </button>
 
+            {/* Compare Index */}
+            <button
+              className="shared-nav-btn"
+              onClick={handleCompareIndex}
+              style={{
+                fontSize: 14, fontWeight: 500,
+                color: C.mut,
+                padding: '7px 13px', borderRadius: 8,
+                background: 'transparent',
+                border: 'none', cursor: 'pointer',
+                fontFamily: "'Inter', system-ui, sans-serif",
+              }}
+            >
+              Compare
+            </button>
+
             {/* Best Lists — with dropdown */}
             <div className="bestlists-wrap" ref={bestListsRef}>
               <button
@@ -424,7 +445,7 @@ export function SharedNav({
           >
             {[
               { label: 'All Tools',  fn: handleAllTools },
-              { label: 'Compare',    fn: handleCompare  },
+              { label: 'Compare',    fn: handleCompareIndex },
               { label: 'About',      fn: handleAbout    },
               { label: 'Blog',       fn: handleBlog     },
               { label: 'Best Free AI Tools',            fn: () => { closeMobile(); navigate('/best-free-ai-tools'); } },

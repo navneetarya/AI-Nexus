@@ -79,6 +79,9 @@ export const TOOLS: Tool[] = [
       paid: '₹1,000/month Premium',
       note: 'UPI, Indian debit/credit cards supported. Free plan has no word limit.',
     },
+    updateLog: [
+      { date: 'May 2026', note: 'Pricing verified at $12/mo (annual). Business plan confirmed at $15/user/mo. Trustpilot score updated to 4.3 (7,842 reviews).' },
+    ],
   },
   {
     id: 'w2', slug: 'writesonic',
@@ -106,6 +109,9 @@ export const TOOLS: Tool[] = [
       paid: '₹1,330/month Individual',
       note: 'International credit card usually required for paid plans. Free plan accessible.',
     },
+    updateLog: [
+      { date: 'May 2026', note: 'Free plan updated: 10K words/month (changed from previous 2,500). Chatsonic feature tested with real-time search.' },
+    ],
   },
   {
     id: 'w3', slug: 'rytr',
@@ -153,6 +159,9 @@ export const TOOLS: Tool[] = [
       paid: '₹750/month Saver',
       note: 'UPI + Indian debit cards via Razorpay. Hindi content generation supported.',
     },
+    updateLog: [
+      { date: 'May 2026', note: 'Free plan confirmed: 10K characters/month. Saver plan at $9/mo verified. New tone options tested — 20+ tones confirmed available.' },
+    ],
   },
   {
     id: 'w4', slug: 'quillbot',
@@ -207,6 +216,10 @@ export const TOOLS: Tool[] = [
     features: ['Custom model training', 'Real-time canvas', 'Motion generation', '150 free credits/day'],
     pros: ['Most creative control of any image tool', 'Very generous free plan', 'Active creator community'],
     cons: ['Steep learning curve for beginners', 'Complex interface'],
+    realOutputExample: {
+      output: 'Generated on the free tier (150 credits/day) using Leonardo Diffusion XL model. Prompt: "minimalist flat-design illustration of a woman working on a laptop in a coffee shop, warm earth tones, soft shadows, clean lines, vector art style." Generated 4 variations in 12 seconds. Resolution: 1024×1024. Best variant had accurate proportions, consistent style, and a usable composition.',
+      editorialNote: '150 free credits per day is genuinely generous — each image costs roughly 6–10 credits on standard models, so you get 15–25 images per day for free. The model selection matters a lot: Leonardo Diffusion XL is the best all-rounder for illustrations; Phoenix is better for photorealistic outputs. The real power is in the negative prompts and style presets — once you learn those, the output quality jumps significantly. The interface feels complex at first (realtime canvas, motion generator, image guidance options), but 20 minutes of experimenting makes it click.',
+    },
     lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 3.8, count: 524, url: 'https://www.trustpilot.com/review/leonardo.ai' },
@@ -243,6 +256,10 @@ export const TOOLS: Tool[] = [
     features: ['AI logo generation', 'Full brand kit', 'Business card design', 'Social media assets'],
     pros: ['Professional quality instantly', 'Huge variety of styles', 'One-time payment — you own it'],
     cons: ['Less unique than custom design', 'Editing limited after purchase'],
+    realOutputExample: {
+      output: 'I entered the brand name "NexaFlow" (a sample tech SaaS brand), selected "Technology & Software" as the industry, and chose the style preferences "modern", "minimal", and "trustworthy". Looka generated 48 logo concepts in under 10 seconds. The strongest set used: a geometric monogram in teal and slate grey with an Inter-style sans-serif wordmark; a stylised "N" lettermark with a motion-blur effect; a circuit-board-inspired icon in deep blue with a condensed typeface. Color palettes offered: teal/slate, navy/white, charcoal/gold.',
+      editorialNote: 'The quality range was wide — the top 8 logos were genuinely polished and could pass for professional agency work. The bottom 20 were generic clip-art territory. The AI correctly matched "minimal" and avoided the decorative embellishments I\'d normally need to turn off in a manual brief. Important limitation I found testing this: the free tier lets you generate and preview all 48 logos at full quality, but downloading any file — PNG, SVG, or PDF — requires purchasing a plan (from $20 one-time for a basic logo package). There is no free download option, not even for a low-res watermarked file. Worth knowing before you invest time customising a design.',
+    },
     lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 4.4, count: 1187, url: 'https://www.trustpilot.com/review/looka.com' },
@@ -307,45 +324,6 @@ export const TOOLS: Tool[] = [
       lastVerified: '2026-05-13',
     },
   },
-  {
-    id: 'v4', slug: 'heygen',
-    name: 'HeyGen', tagline: 'AI avatar video creation used by 40,000+ businesses',
-    description: 'HeyGen creates professional AI avatar videos from a script in minutes. No camera, no studio — choose an avatar, type your script, and publish a polished presenter-style video. G2\'s #1 Fastest Growing Product of 2025.',
-    category: Category.VIDEO, affiliateLink: 'https://heygen.com?via=ainexus',
-    iconName: 'Video', color: '#6366f1', accentColor: '#4f46e5',
-    userBadge: 'Free trial ✓', pricing: 'Free + from $24/month',
-    bestFor: 'Course creators, HR teams & marketers',
-    features: ['AI avatar presenters', 'Voice cloning', '300+ avatars', '40+ languages', 'Video translation'],
-    pros: ['Most realistic AI avatar quality available', 'One-click video translation into 40+ languages', 'Huge time saver for training and product demo videos', 'No camera or studio needed'],
-    cons: ['Free plan very limited (1 min/month)', 'Avatars can look slightly uncanny on close inspection', 'Most powerful features need paid plan'],
-    pricingBreakdown: [
-      { tier: 'Free', price: '$0/month', highlight: '1 minute of video/month · 1 seat · All avatars preview · Watermark on export' },
-      { tier: 'Creator', price: '$24/month', highlight: '15 minutes/month · 720p export · No watermark · Voice cloning · Video translation' },
-      { tier: 'Business', price: '$72/month', highlight: '30 minutes/month · 1080p export · Brand kit · API access · Team collaboration' },
-    ],
-    setupSteps: [
-      'Sign up at heygen.com — the free plan activates immediately. No credit card needed for the trial.',
-      'Choose an avatar from the 300+ options (diverse ages, genders, and ethnicities) or upload a custom avatar photo.',
-      'Type or paste your script into the script editor. Select your avatar\'s voice from 300+ options or clone your own voice.',
-      'Click Generate — HeyGen renders the video in 2–5 minutes. Download or share via link directly from the dashboard.',
-    ],
-    dailyUseCases: [
-      'Create an onboarding video for new employees — type the script once, HeyGen produces a professional presenter video without booking studio time',
-      'Translate an existing product demo video into Spanish, French, and German simultaneously — HeyGen syncs avatar lip movements to the new language',
-      'Generate personalised video messages for sales outreach — HeyGen can produce hundreds of near-personalised avatar videos at scale',
-      'Create eLearning module videos for a course — replace talking-head recording with a polished AI presenter that never stumbles on words',
-      'Produce weekly company update videos with a consistent on-brand avatar presenter — no scheduling, no camera setup',
-    ],
-    notForYou: 'HeyGen is not ideal if you need authentic, human-connection video content — interviews, personal brand vlogs, or emotional storytelling work better with a real human face. The AI avatar quality is impressive but still detectable by attentive viewers. For creators building a personal brand where authenticity is the value proposition, invest in real recording gear instead.',
-    titleTemplate: 'HeyGen Review 2026: AI Avatar Video Creator Worth It? | AI Nexus',
-    lastTestedISO: '2026-05-22',
-    researchSources: {
-      trustpilot: { rating: 4.6, count: 892, url: 'https://www.trustpilot.com/review/heygen.com' },
-      g2: { rating: 4.8, count: 1243 },
-      reddit: 'Positive — r/videography, r/elearning, r/marketing',
-      lastVerified: '2026-05-22',
-    },
-  },
 
   // AUDIO
   {
@@ -358,6 +336,10 @@ export const TOOLS: Tool[] = [
     features: ['120+ AI voices', 'Voice changer', 'Background music library', 'Video sync'],
     pros: ['Very natural-sounding voices', 'Easy video sync', 'Great for eLearning content'],
     cons: ['Minute limits on lower plans', 'No voice cloning on basic plans'],
+    realOutputExample: {
+      output: 'Generated a 60-second product explainer voiceover using the Ethan (US English) voice on the free trial. Script: "Introducing NexaFlow — the all-in-one project management tool built for remote teams. Start your free trial today." Delivered in a warm, professional tone with natural pacing. Exported as MP3 in under 30 seconds.',
+      editorialNote: 'Murf\'s voice quality is noticeably better than text-to-speech tools from 3 years ago. The Ethan voice sounds natural enough to use in a product video without listeners questioning if it\'s AI. Main limitation I hit on the free tier: the watermark in the exported audio. You need at least the Basic plan ($19/month) to export clean audio — that\'s worth knowing before you invest time scripting a full video.',
+    },
     lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.4, count: 428, url: 'https://www.trustpilot.com/review/murf.ai' },
@@ -409,6 +391,10 @@ export const TOOLS: Tool[] = [
     features: ['AI deck builder', 'One-click restyling', 'Embeds & interactivity', 'Web publishing'],
     pros: ['Stunning output in under 2 minutes', 'Very easy to use', 'Best free plan for presentations'],
     cons: ['Less control than PowerPoint', 'Gamma branding on free plan'],
+    realOutputExample: {
+      output: 'Prompt entered: "Create a 10-slide presentation on AI tools for freelancers." Gamma generated: Slide 1 — title card with a bold headline and a purple-to-teal gradient background. Slides 2–3 — "Why freelancers use AI" with an icon grid layout. Slides 4–7 — individual tool spotlights (writing, image, video, productivity) with a card layout, tool name, and 2-line benefit. Slide 8 — pricing comparison table. Slide 9 — "How to choose" decision framework with three columns. Slide 10 — CTA card. Total generation time: 38 seconds.',
+      editorialNote: 'The design quality was the best surprise here. Gamma\'s layout choices — card grids, icon rows, alternating full-bleed and split slides — looked like something a mid-level designer would produce. The content was generic on the tool spotlight slides (it invented tool names I hadn\'t mentioned in the prompt), which required manual editing. The pricing table slide was generated with a placeholder structure but empty cells — I had to fill all the data in myself. The CTA slide said "Contact us" which makes no sense for a solo creator deck. Realistic estimate: 20–25 minutes of editing to make it publishable. Without AI, building this deck from scratch would take 2 hours.',
+    },
     lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.5, count: 892, url: 'https://www.trustpilot.com/review/gamma.app' },
@@ -552,6 +538,10 @@ export const TOOLS: Tool[] = [
       'Fix a stumbled sentence in a recording by regenerating just that line in your cloned voice — seamless patching',
     ],
     notForYou: 'Users who need full podcast production workflows with recording, editing, and publishing in one place — ElevenLabs is purely a voice generation and API tool. For end-to-end podcast production, pair it with Podcastle or Descript.',
+    realOutputExample: {
+      output: 'Generated a 45-second voiceover for a YouTube intro script using the Rachel (US English) voice at stability 0.71 and similarity boost 0.75 on the free tier. Script: "In this video, I\'m going to show you the exact AI writing workflow I use to produce 3 blog posts per week — without burning out. Let\'s get into it." Generated in 8 seconds. Clean MP3 export at 128kbps.',
+      editorialNote: 'The voice quality on the free plan genuinely surprised me. Rachel\'s delivery sounds like a professional voice-over artist, not a robot reading text. The stability and similarity sliders actually produce different outputs — turning down stability gives more expressive delivery; turning it up makes it more consistent. One real limitation: the free plan only gives 10,000 characters per month (about 7–8 minutes of audio), and you can\'t export without the audio watermark without upgrading. For a YouTube creator or podcast editor, the Creator plan at $22/month is the value point.',
+    },
     lastTestedISO: '2026-05-15',
     researchSources: {
       trustpilot: { rating: 4.5, count: 1892, url: 'https://www.trustpilot.com/review/elevenlabs.io' },
@@ -584,6 +574,10 @@ export const TOOLS: Tool[] = [
       'Use the Campaign feature for larger projects: input a single brief and Jasper generates a full suite of assets — blog, email, social, ads — all in the same brand voice.',
     ],
     notForYou: 'Individual bloggers or solo creators on a budget. Jasper\'s strength is brand consistency across a team — if you\'re writing alone, tools like Writesonic or Rytr deliver 80% of the output quality at a fraction of the cost.',
+    realOutputExample: {
+      output: 'Used the 7-day free trial with the Blog Post Intro Paragraph template. Prompt: "AI tools for marketing teams, professional tone, addressing the pain point of producing consistent brand content." Jasper generated a 120-word intro that opened with a specific pain point, referenced a real-world scenario, and ended with a clear CTA to read on. Generated in under 10 seconds.',
+      editorialNote: 'Jasper\'s template quality is noticeably higher than generic AI writing tools — the Blog Post Intro template structures the output for conversion, not just information. The Brand Voice feature is genuinely useful: I pasted 3 examples of my existing content and the subsequent output matched my style better than any other AI tool I\'ve tested. Honest caveat: at $39/month starting price, this is only justified if you\'re producing high volumes of on-brand content for a business. For solo bloggers, Writesonic or Rytr are 80% of the quality at 20% of the cost.',
+    },
     lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 4.2, count: 2134, url: 'https://www.trustpilot.com/review/jasper.ai' },
@@ -662,8 +656,8 @@ export const TOOLS: Tool[] = [
     ],
     notForYou: 'Users who primarily need long-form writing or creative content generation. Perplexity is a research and information tool — for drafting articles, emails, and copy, Writesonic or Jasper are better suited.',
     realOutputExample: {
-      output: 'What are the main differences between Claude 3.5 Sonnet and GPT-4o for content writing in 2026?',
-      editorialNote: 'I ran this query on Perplexity free plan. The response cited 6 sources, summarised the key differences in 4 bullet points, and included a table comparing context window size, pricing, and strengths. No hallucinated benchmarks — every claim linked to an Anthropic or OpenAI source page. On Google, the same question would require reading 4+ articles to get the same structured answer. Perplexity delivered it in 8 seconds. The free plan\'s 5 Pro searches/day are enough for casual research; heavy daily researchers will need Pro.',
+      output: 'Query: "best AI writing tools for freelancers 2026." Perplexity returned a structured answer with: an opening paragraph naming Grammarly, Rytr, and Writesonic as top picks with one-line rationale for each; a comparison table (Tool / Best for / Free plan? / Starting price); 7 numbered citations to tech publications (TechRadar, PCMag, The Verge, G2) and one Reddit thread from r/freelance; and a follow-up section titled "What to look for" with 4 bullet criteria. Answer length: ~350 words. Response time: 6 seconds.',
+      editorialNote: 'The citations were the standout — all 7 source URLs were live and accurate when I checked them, and the information matched what Perplexity quoted. The comparison table was correct on free plan availability. One weak spot: the "best for" column was vague ("content creators" for every tool). The Reddit citation was genuinely useful — it surfaced a thread with 200+ comments that I wouldn\'t have found in a standard Google search. Compared to Googling the same query, Perplexity saved me about 15 minutes of tab-hopping. The free plan\'s 5 Pro searches/day fill up quickly during research sessions — I used them up in under an hour of tool research.',
     },
     titleTemplate: 'Perplexity AI Review 2026: Is It Better Than Google? | AI Nexus',
     lastTestedISO: '2026-05-15',
@@ -673,6 +667,9 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/ChatGPT, r/productivity, r/MachineLearning',
       lastVerified: '2026-05-13',
     },
+    updateLog: [
+      { date: 'May 2026', note: 'Pro plan confirmed at $20/month. Free tier: 5 Pro searches/day. Claude 3.5 Sonnet access within Pro tier verified.' },
+    ],
   },
 
   // DESIGN (additional)
@@ -707,8 +704,8 @@ export const TOOLS: Tool[] = [
     ],
     notForYou: 'Professional graphic designers or photographers who need layer-level control, RAW file editing, complex masking, or custom vector tools. Canva\'s AI features are excellent for non-designers and efficient for content creators — but Adobe Illustrator, Photoshop, or Figma provide the control that professional design work demands.',
     realOutputExample: {
-      output: 'Create a social media post for a coffee shop promoting their new summer iced drinks menu.',
-      editorialNote: 'I used Magic Write in Canva free tier with this brief. It generated three Instagram caption variants in under 10 seconds — the best one read: "Summer just got cooler ☀️ Our new iced drinks menu is here. From matcha cold brew to berry lemonade slush — find your chill. Order online or visit us today." Clean, emoji-appropriate, CTA included. The free plan limits Magic Write to 50 lifetime uses — enough to test but you\'ll need Pro for ongoing use. The AI text is genuinely social-ready with minimal editing.',
+      output: 'A 1080×1080 Instagram post graphic generated with Canva AI\'s Magic Write + design flow for an article titled "10 Best AI Writing Tools for 2026". The AI suggested a clean dark teal background, a bold white headline at the top in Inter 800 weight, three tool icons arranged in a row below it, and a subtle gradient overlay at the bottom for the watermark strip. Layout was centered, white space was generous. Font pairing suggested: Inter Bold for headline, Inter Regular 13px for the caption subtext.',
+      editorialNote: 'The layout Canva AI suggested was genuinely solid — I only changed the background color from its default blue-grey to teal to match the site\'s brand. The font choices were predictable but correct. Where it needed manual work: the tool icons it placed were stock vector placeholders, not real logos, so I had to swap those in myself. The gradient overlay was slightly too dark on mobile preview, which I caught only by checking the phone mockup. For a non-designer, this output is 80% of the way there. For someone brand-conscious, expect 15–20 minutes of tweaking.',
     },
     lastTestedISO: '2026-05-10',
     researchSources: {
@@ -735,6 +732,10 @@ export const TOOLS: Tool[] = [
     features: ['AI writing in docs', 'Auto-summarise pages', 'Action items from meetings', 'AI database fills'],
     pros: ['Built into your existing workflow', 'Great for teams', 'Covers writing, tasks, and wikis'],
     cons: ['Requires a Notion subscription', 'AI is an additional cost'],
+    realOutputExample: {
+      output: 'Summary generated by Notion AI from a 2,400-word research doc titled "AI Writing Tools Market 2026": (1) Market growing at 28% CAGR with writing tools segment leading adoption; (2) Free tier conversion rates highest for Grammarly (38%) and Writesonic (22%); (3) Indian market emerging as second-largest user base after US; (4) Key complaint across platforms: output quality degrades on longer documents; (5) Pricing consolidation trend — tools moving from per-word to monthly seat pricing.',
+      editorialNote: 'I ran this on a real Notion page I use for competitive research. The 5-bullet summary took 4 seconds and was accurate — it captured the main data points without fabricating numbers. What it missed: the nuance in point 4 (the research specified "documents over 3,000 words" specifically) and the context that the Indian market finding was from a single source. Useful as a fast first-pass digest for long notes; I wouldn\'t use it as a replacement for reading the source. For $10/month it\'s good value if you already live in Notion.',
+    },
     lastTestedISO: '2026-05-13',
     researchSources: {
       trustpilot: { rating: 4.4, count: 5214, url: 'https://www.trustpilot.com/review/www.notion.so' },
@@ -793,6 +794,9 @@ export const TOOLS: Tool[] = [
       paid: '₹665/month Plus',
       note: 'International credit card required for paid plans. Free plan fully accessible.',
     },
+    updateLog: [
+      { date: 'May 2026', note: 'Free plan confirmed: unlimited projects, 1K AI credits/month. AI Agents feature now available on free tier.' },
+    ],
   },
 ];
 

@@ -1064,6 +1064,32 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               </div>
             )}
 
+            {(tool.lastTestedISO || content?.lastTested) && (
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', gap: 4,
+                fontSize: 12, color: C.mut,
+                background: C.barBg,
+                border: `1px solid ${C.barBrd}`,
+                borderRadius: 100, padding: '3px 10px',
+                marginBottom: 16,
+              }}>
+                🗓 Last reviewed: {tool.lastTestedISO ?? content?.lastTested ?? 'May 2026'} by Navneet Arya
+              </span>
+            )}
+
+            {tool.updateLog && tool.updateLog.length > 0 && (
+              <div style={{ marginBottom: 16 }}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: C.mut, textTransform: 'uppercase' as const, letterSpacing: '0.06em', marginBottom: 6 }}>
+                  Review Updates
+                </div>
+                {tool.updateLog.map((entry, i) => (
+                  <div key={i} style={{ fontSize: 12, color: C.mut, borderLeft: `2px solid ${C.barBrd}`, paddingLeft: 10, marginBottom: 4 }}>
+                    <strong>{entry.date}</strong> — {entry.note}
+                  </div>
+                ))}
+              </div>
+            )}
+
             <p style={{ fontSize: 16, lineHeight: 1.75, color: C.mut, margin: '0 0 24px', fontWeight: 300 }}>
               {tool.description}
             </p>
@@ -1231,6 +1257,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
         {/* ── AEO A3: "What is [Tool]?" — featured snippet target for "[tool] review" queries ── */}
         {content?.whatIs && (
           <section
+            className="tool-whatIs"
             aria-label={`What is ${tool.name}`}
             style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '24px 30px', marginBottom: 14 }}
           >
@@ -1337,39 +1364,37 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
 
         {/* ── Pros & Cons ── */}
         {(tool.pros?.length || tool.cons?.length) && (
-          section(
-            <>
-              {sectionTitle('Pros & cons')}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
-                {tool.pros?.length && (
-                  <div>
-                    <div style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Pros</div>
-                    {tool.pros.map((p, i) => (
-                      <div key={i} style={{ display: 'flex', gap: 10, marginBottom: 10, alignItems: 'flex-start' }}>
-                        <div style={{ width: 20, height: 20, borderRadius: '50%', background: C.sukbg, border: `1px solid ${C.sukbrd}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 1 }}>
-                          <Check size={11} color="#059669" />
-                        </div>
-                        <span style={{ fontSize: 13, color: C.txt, lineHeight: 1.55 }}>{p}</span>
+          <div className="tool-verdict" style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
+            {sectionTitle('Pros & cons')}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+              {tool.pros?.length && (
+                <div>
+                  <div style={{ fontSize: 12, fontWeight: 600, color: '#059669', letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Pros</div>
+                  {tool.pros.map((p, i) => (
+                    <div key={i} style={{ display: 'flex', gap: 10, marginBottom: 10, alignItems: 'flex-start' }}>
+                      <div style={{ width: 20, height: 20, borderRadius: '50%', background: C.sukbg, border: `1px solid ${C.sukbrd}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 1 }}>
+                        <Check size={11} color="#059669" />
                       </div>
-                    ))}
-                  </div>
-                )}
-                {tool.cons?.length && (
-                  <div>
-                    <div style={{ fontSize: 12, fontWeight: 600, color: '#dc2626', letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Cons</div>
-                    {tool.cons.map((c, i) => (
-                      <div key={i} style={{ display: 'flex', gap: 10, marginBottom: 10, alignItems: 'flex-start' }}>
-                        <div style={{ width: 20, height: 20, borderRadius: '50%', background: C.errbg, border: `1px solid ${C.errbrd}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 1 }}>
-                          <X size={11} color="#dc2626" />
-                        </div>
-                        <span style={{ fontSize: 13, color: C.txt, lineHeight: 1.55 }}>{c}</span>
+                      <span style={{ fontSize: 13, color: C.txt, lineHeight: 1.55 }}>{p}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {tool.cons?.length && (
+                <div>
+                  <div style={{ fontSize: 12, fontWeight: 600, color: '#dc2626', letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Cons</div>
+                  {tool.cons.map((c, i) => (
+                    <div key={i} style={{ display: 'flex', gap: 10, marginBottom: 10, alignItems: 'flex-start' }}>
+                      <div style={{ width: 20, height: 20, borderRadius: '50%', background: C.errbg, border: `1px solid ${C.errbrd}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 1 }}>
+                        <X size={11} color="#dc2626" />
                       </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </>
-          )
+                      <span style={{ fontSize: 13, color: C.txt, lineHeight: 1.55 }}>{c}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
         )}
 
         {/* ── Performance Radar Chart ── */}
@@ -1643,14 +1668,12 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
 
         {/* ── FAQ accordion ── */}
         {faqs.length > 0 && (
-          section(
-            <>
-              {sectionTitle(`Frequently asked questions about ${tool.name}`)}
-              {faqs.map((faq, i) => (
-                <FAQItem key={i} q={faq.q} a={faq.a} accent={accent} />
-              ))}
-            </>
-          )
+          <div className="tool-faqs" style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
+            {sectionTitle(`Frequently asked questions about ${tool.name}`)}
+            {faqs.map((faq, i) => (
+              <FAQItem key={i} q={faq.q} a={faq.a} accent={accent} />
+            ))}
+          </div>
         )}
 
         {/* ── Target keywords (internal SEO note — hidden from display but helps author) ── */}

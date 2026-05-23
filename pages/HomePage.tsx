@@ -550,6 +550,30 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       <style>{ANIM_STYLE}</style>
       <Nav/>
 
+      {/* ── Author credential bar ───────────────────────────────────────── */}
+      <div style={{
+        position: 'sticky', top: 60, zIndex: 40,
+        background: C.barBg,
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+        borderBottom: `1px solid ${C.barBrd}`,
+        display: 'flex', alignItems: 'center', gap: 8,
+        padding: '0 16px', height: 40,
+      }}>
+        <img
+          src="/author-photo.jpg"
+          alt="Navneet Arya"
+          width={28} height={28}
+          style={{ borderRadius: '50%', objectFit: 'cover' as const, flexShrink: 0 }}
+        />
+        <span style={{ fontSize: 12, color: C.mut, whiteSpace: 'nowrap' as const }}>
+          <strong style={{ color: C.txt }}>Navneet Arya</strong>
+          {' · AI Automation Lead · '}
+          <strong style={{ color: C.txt }}>BOLD</strong>
+          {' · 25+ AI tools reviewed'}
+        </span>
+      </div>
+
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <div className="hero-wrap" style={{ position:'relative', overflow:'hidden', background:C.surf,
         borderBottom:`1px solid ${C.barBrd}`, padding:'68px 24px 60px' }}>
@@ -1419,6 +1443,11 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
                 <div style={{ fontSize:11, color:C.mut2, fontWeight:500, marginTop:2 }}>
                   {tool.pricing}
                 </div>
+                {tool.researchSources?.trustpilot?.rating && (
+                  <div style={{ fontSize:10, color:C.mut2, marginTop:2 }}>
+                    ⭐ {tool.researchSources.trustpilot.rating} · {tool.researchSources.trustpilot.count?.toLocaleString()} Trustpilot reviews
+                  </div>
+                )}
               </div>
             </div>
 
@@ -1484,6 +1513,9 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
                 Try free <ExternalLink size={11}/>
               </div>
             </div>
+            <div style={{ fontSize: 11, color: 'var(--mut2)', marginTop: 4 }}>
+              By Navneet Arya · Verified {tool.lastTestedISO ? fmtTested(tool.lastTestedISO) : 'May 2026'}
+            </div>
           </div>
         </div>
       </div>
@@ -1537,6 +1569,11 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
               <div style={{ fontSize:11, color:C.mut2, marginTop:3, fontWeight:500 }}>
                 {tool.pricing}
               </div>
+              {tool.researchSources?.trustpilot?.rating && (
+                <div style={{ fontSize:10, color:C.mut2, marginTop:2 }}>
+                  ⭐ {tool.researchSources.trustpilot.rating} · {tool.researchSources.trustpilot.count?.toLocaleString()} Trustpilot reviews
+                </div>
+              )}
             </div>
           </div>
           {badge && !isSecondary && (
@@ -1609,6 +1646,9 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
             color: isSecondary ? C.mut2 : accent }}>
             Read review <ArrowRight size={12}/>
           </div>
+        </div>
+        <div style={{ fontSize: 11, color: 'var(--mut2)', marginTop: 4 }}>
+          By Navneet Arya · Verified {tool.lastTestedISO ? fmtTested(tool.lastTestedISO) : 'May 2026'}
         </div>
       </div>
     </div>

@@ -49,7 +49,7 @@ const HANDS_ON_STEPS = [
     icon: UserCheck,
     step: 'Step 1',
     action: 'Official documentation & interface research',
-    detail: 'Every review begins with a thorough read of the tool\'s official documentation, help centre, and changelog. Feature claims, plan restrictions, beta flags, and deprecation notices are all verified here — not from third-party summaries or the tool\'s own marketing copy. Where a free tier is available and account creation adds meaningful data on the onboarding flow or free-plan limitations, a free account may be registered as part of this step. Account creation is an optional addition, not a requirement: reviews of tools without a genuinely accessible free tier are based entirely on documentation, verified user reports, and official pricing pages.',
+    detail: 'For every tool that offers a free plan, I sign up and actually use it. I run real tasks — writing a blog intro, generating an image, checking grammar on a real document — so I can describe the experience accurately. I\'ve registered free accounts and run hands-on tests for: Grammarly, Rytr, Writesonic, Canva AI, Notion AI, Gamma, Perplexity, and Looka. For tools with no free tier, the review is based on three things: the tool\'s official documentation and changelog (not marketing copy), aggregated verified user reviews from Trustpilot, G2, and Capterra, and publicly available demo content and trial walkthroughs. Every feature claim is cross-referenced against official docs before it appears in a review.',
     time: '20 min',
   },
   {

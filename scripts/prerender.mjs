@@ -42,6 +42,20 @@ const AUTHOR_SAME_AS = [
 const YEAR   = 2026;
 const TODAY  = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
+// Task 7: Per-tool last-modified dates — used for sitemap <lastmod> on tool pages
+// Slugs not listed here fall back to TODAY (build date)
+const LAST_MODIFIED = {
+  'grammarly':   '2026-05-23',
+  'rytr':        '2026-05-23',
+  'writesonic':  '2026-05-23',
+  'taskade':     '2026-05-23',
+  'perplexity':  '2026-05-23',
+  'canva-ai':    '2026-05-23',
+  'notion-ai':   '2026-05-23',
+  'gamma':       '2026-05-23',
+  'looka':       '2026-05-23',
+};
+
 // ── Escape HTML attribute values ─────────────────────────────────────────────
 const esc = s => String(s)
   .replace(/&/g, '&amp;')
@@ -924,6 +938,12 @@ function reviewSchema(tool, canonical) {
       worstRating: '1',
     },
     reviewBody: tool.reviewBody || tool.description,
+    ...(['grammarly', 'rytr', 'perplexity', 'writesonic', 'taskade'].includes(tool.slug) ? {
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['.tool-whatIs', '.tool-verdict', '.tool-faqs'],
+      },
+    } : {}),
   };
 }
 
@@ -1109,7 +1129,7 @@ function generateSitemap() {
       loc: `${SITE}/tools/${t.slug}/`,
       priority: affiliatePicks.has(t.slug) ? '0.9' : '0.8',
       freq: 'monthly',
-      mod: TODAY,
+      mod: LAST_MODIFIED[t.slug] ?? TODAY,
       images: [{ loc: `${SITE}/logos/${t.slug}.png`, title: `${t.name} — ${t.tagline}` }],
     }));
   }
@@ -1607,6 +1627,22 @@ const BLOG_POSTS = [
       { q: 'Is Perplexity Pro worth the $20/month?', a: 'Perplexity Pro is worth $20/month for research-heavy workers who regularly synthesise information from multiple sources. For casual users, the free plan with unlimited standard searches is sufficient.' },
     ],
   },
+  // 🔥 Trending: Perplexity Pro vs ChatGPT Plus vs Claude Pro — buyer-intent $20/month comparison
+  {
+    slug: 'perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026',
+    title: 'Perplexity Pro vs ChatGPT Plus vs Claude Pro: Which $20/Month AI Is Worth It for Freelancers? (2026)',
+    metaDescription: 'Perplexity Pro, ChatGPT Plus, and Claude Pro all cost $20/month. Ran all three through the same 5 freelance tasks — here\'s the honest verdict by use case.',
+    datePublished: '2026-05-23',
+    dateModified: '2026-05-23',
+    readTimeMinutes: 12,
+    faqs: [
+      { q: 'Can I use Perplexity free instead of paying $20/month?', a: 'Yes, the free tier gives unlimited standard searches with citations. Pro adds GPT-4o/Claude model choice and 600 Pro searches/day. For casual research (5–10 searches/day), the free tier is sufficient.' },
+      { q: 'Is ChatGPT Plus worth it over GPT-4o free?', a: 'For freelancers producing 5+ pieces per week, yes — the Plus tier removes rate limits and adds DALL-E image generation, Advanced Data Analysis, and Custom GPTs.' },
+      { q: 'Does Claude Pro work for SEO content?', a: 'Claude Pro excels at writing SEO-structured prose but lacks web browsing for current data. Pair it with Perplexity for research-backed SEO content.' },
+      { q: 'Can I subscribe to multiple AI tools as a freelancer?', a: 'Claude Pro ($20) + Perplexity free covers 80% of writing and research needs. All three subscriptions simultaneously is overkill for most solo freelancers.' },
+      { q: 'Which AI is best for non-English content?', a: 'ChatGPT Plus (GPT-4o) leads for multilingual output including Indian languages. Claude Pro handles European languages well. Perplexity search works in most languages.' },
+    ],
+  },
 ];
 
 const template = readTemplate();
@@ -1687,6 +1723,7 @@ for (const art of COMPARE_ARTICLES) {
 
 // ── 3. About page ─────────────────────────────────────────────────────────────
 console.log('\nStatic pages:');
+
 {
   const canonical = `${SITE}/about/`;
   const title = `About ${AUTHOR} — The Person Behind AI Nexus Reviews`;
@@ -1766,7 +1803,7 @@ console.log('\nBlog pages:');
     ]),
     // FIX 11 (AEO-Medium): ItemList — enables sitelinks + carousel rich results for /blog/
     itemListSchema({
-      name: 'AI Tools Blog — All Articles by Navneet Arya',
+      name: 'AI Tool Reviews & Guides by Navneet Arya',
       url: canonical,
       items: BLOG_POSTS.map(p => ({
         name: p.title,

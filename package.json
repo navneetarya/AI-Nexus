@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build && node scripts/prerender.mjs && node scripts/generate-llms-full.mjs",
     "generate:llms": "node scripts/generate-llms-full.mjs",
+    "verify-prerender": "node scripts/verify-prerender.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

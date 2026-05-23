@@ -73,6 +73,10 @@
 - [Best AI Marketing Tools 2026](https://ainexustools.online/blog/best-ai-marketing-tools-2026): Frase, Ocoya, Jasper, and Writesonic for SEO content and social media marketing.
 - [Best AI Tools for Teachers 2026](https://ainexustools.online/blog/ai-tools-for-teachers-2026): Gamma, Grammarly, Notion AI, and Rytr for presentations, feedback, and lesson planning.
 - [Best Midjourney Alternatives 2026](https://ainexustools.online/blog/best-midjourney-alternatives-2026): Leonardo.ai, Stable Diffusion, DALL-E, and Adobe Firefly as free Midjourney alternatives.
+- [Perplexity AI Review 2026](https://ainexustools.online/blog/perplexity-ai-review-2026): Hands-on review of Perplexity AI — real-time web search, citation quality, and whether the $20/month Pro plan is worth it for researchers and power users.
+- [Google Gemini AI Review 2026](https://ainexustools.online/blog/google-gemini-ai-review-2026): Independent review of Google Gemini — covering the free vs Ultra plan differences, multimodal capabilities, and how it compares to ChatGPT and Claude.
+- [Grok 4 vs ChatGPT vs Claude for Content Creators (2026)](https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026): Side-by-side comparison of Grok 4, ChatGPT Plus, and Claude Pro for content creators — long-form writing, accuracy, and real-world output quality tested.
+- [Perplexity Pro vs ChatGPT Plus vs Claude Pro for Freelancers (2026)](https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026): Which AI subscription is worth it for freelancers? Perplexity Pro, ChatGPT Plus, and Claude Pro compared on research, writing, and value for money.
 - [Affiliate Disclosure](https://ainexustools.online/disclosure): Full disclosure of affiliate relationships. Navneet earns a commission if you upgrade through links on the site, at no cost to you.
 
 ## Comparison Articles
@@ -93,3 +97,13 @@
 - [Leonardo.ai vs Stable Diffusion (2026)](https://ainexustools.online/compare/leonardo-ai-vs-stable-diffusion): Leonardo for ease of use and free plan; Stable Diffusion for technical users wanting full control.
 - [Gamma vs Beautiful.ai (2026)](https://ainexustools.online/compare/gamma-vs-beautiful-ai): Gamma wins on free plan and generation speed; Beautiful.ai for strict corporate branding.
 - [InVideo AI vs Pictory (2026)](https://ainexustools.online/compare/invideo-vs-pictory): InVideo for faceless YouTube from prompts; Pictory for converting blog posts to video.
+
+## Editorial Standards
+
+AI Nexus follows strict editorial standards to ensure every review is independent, accurate, and genuinely useful.
+
+- **Independence**: No tool pays for a positive review. Affiliate relationships are disclosed in full. Editorial outcomes are never influenced by commercial partnerships.
+- **Verification**: Every pricing claim is verified against official tool pages before publication. Review scores reflect aggregated data from G2, Trustpilot, and Capterra — not editorial opinion alone.
+- **Freshness**: Tool reviews are checked and updated when pricing, features, or free plan terms change. The review date reflects when pricing and features were last verified.
+- **Transparency**: The reviewer (Navneet Arya) is identified by name on every review page. Research methodology is documented at /methodology/.
+- **Affiliate policy**: AI Nexus earns a commission when readers upgrade through affiliate links, at no cost to the reader. This never changes the editorial verdict.

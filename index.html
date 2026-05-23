@@ -378,13 +378,12 @@
       .skeleton{background:linear-gradient(90deg,var(--surf) 25%,var(--brd) 37%,var(--surf) 63%);background-size:800px 100%;animation:shimmer 1.4s infinite;border-radius:8px}
     </style>
     <!-- Theme init: apply saved preference before paint to avoid flash.
-         Default is 'dark' — MUST match App.tsx getInitialTheme() which returns 'dark'
-         when no saved pref exists. Using OS pref here caused a light→dark flash on
-         first visit for users whose OS is light mode. -->
+         Default is 'light' — MUST match App.tsx getInitialTheme() which returns 'light'
+         when no saved pref exists. -->
     <script>
       (function() {
   var saved = localStorage.getItem('ainexus-theme');
-  var theme = (saved === 'dark' || saved === 'light') ? saved : 'dark';
+  var theme = (saved === 'dark' || saved === 'light') ? saved : 'light';
   document.documentElement.setAttribute('data-theme', theme);
 })();
     </script>

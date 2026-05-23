@@ -60,8 +60,12 @@ import post30 from './claude-code-vs-github-copilot-vs-replit-2026';
 import post31 from './perplexity-ai-review-2026';
 // 🏆 Pillar post: Best AI chatbot 2026 — 18K+/mo, KD 28 — mega-comparison targeting featured snippet
 import post32 from './best-ai-chatbot-2026';
+// 🔥 Trending: Perplexity Pro vs ChatGPT Plus vs Claude Pro — buyer-intent $20/month comparison
+// Angle: same 5 tasks, 3 AIs, honest task-by-task verdict — 2026-05-23
+import post33 from './perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post33,
   post1, post2, post3, post4, post5, post6, post7, post8,
   post9, post10, post11, post12, post13, post14, post15,
   post16, post17, post18, post19, post20, post21, post22,

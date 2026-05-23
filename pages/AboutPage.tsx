@@ -83,7 +83,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(22px,4vw,32px)', color: C.txt, margin: '0 0 4px', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
                   {SITE_CONFIG.authorName}
                 </h1>
-                <div style={{ fontSize: 13, color: C.mut2 }}>AI Automation &amp; Performance Testing Leader · BOLD &nbsp;|&nbsp; Founder, AI Nexus</div>
+                <div style={{ fontSize: 13, color: C.mut2 }}>AI Automation &amp; Performance Testing Leader · BOLD &nbsp;|&nbsp; Researching AI tools since 2022 · 25+ tools reviewed</div>
               </div>
             </div>
 
@@ -107,6 +107,24 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 500, color: '#0A66C2', padding: '7px 16px', border: '1.5px solid rgba(10,102,194,.25)', borderRadius: 100, background: 'rgba(10,102,194,.06)', textDecoration: 'none' }}>
                 <Linkedin size={13} /> LinkedIn
               </a>
+            </div>
+
+            {/* Featured In */}
+            <div style={{ marginTop: 20 }}>
+              <div style={{ fontSize: 11, fontWeight: 600, color: C.mut, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Find me on</div>
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' as const }}>
+                <a href="https://alternativeto.net/software/ai-nexus/" target="_blank" rel="noopener noreferrer"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 12, fontWeight: 500, color: C.mut, padding: '5px 14px', border: `1.5px solid ${C.barBrd}`, borderRadius: 100, background: C.surf, textDecoration: 'none' }}>
+                  🔗 AlternativeTo
+                </a>
+                <a href="https://medium.com/@navneetarya1989" target="_blank" rel="noopener noreferrer"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 12, fontWeight: 500, color: C.mut, padding: '5px 14px', border: `1.5px solid ${C.barBrd}`, borderRadius: 100, background: C.surf, textDecoration: 'none' }}>
+                  ✍️ Medium
+                </a>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 12, fontWeight: 500, color: C.mut, padding: '5px 14px', border: `1.5px solid ${C.barBrd}`, borderRadius: 100, background: C.surf }}>
+                  🤖 Cited in AI Overview responses
+                </span>
+              </div>
             </div>
           </div>
         </div>

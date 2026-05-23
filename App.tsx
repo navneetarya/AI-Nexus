@@ -21,6 +21,7 @@ const BestFreeAIToolsPage = React.lazy(() => import('./pages/BestFreeAIToolsPage
 const BestAIToolsIndiaPage = React.lazy(() => import('./pages/BestAIToolsIndiaPage').then(m => ({ default: m.BestAIToolsIndiaPage })));
 const BestAILogoMakersPage = React.lazy(() => import('./pages/BestAILogoMakersPage').then(m => ({ default: m.BestAILogoMakersPage })));
 const CompareArticlePage = React.lazy(() => import('./pages/CompareArticlePage').then(m => ({ default: m.CompareArticlePage })));
+const CompareIndexPage   = React.lazy(() => import('./pages/CompareIndexPage').then(m => ({ default: m.CompareIndexPage })));
 const CategoryPage       = React.lazy(() => import('./pages/CategoryPage').then(m => ({ default: m.CategoryPage })));
 const GlossaryPage       = React.lazy(() => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })));
 
@@ -64,7 +65,7 @@ function updateMeta(title: string, description: string, canonical: string) {
 function getInitialTheme(): 'light' | 'dark' | 'system' {
   const saved = localStorage.getItem('ainexus-theme');
   if (saved === 'dark' || saved === 'light') return saved;
-  return 'dark';
+  return 'light';
 }
 
 function App() {
@@ -128,6 +129,18 @@ function App() {
   }
 
   const compareMatch = path.match(/^\/compare\/([^/]+)$/);
+  if (path === '/compare') {
+    updateMeta(
+      'AI Tool Comparisons 2026 — Side-by-Side Reviews | AI Nexus',
+      'Side-by-side comparisons of the best AI tools, independently researched by Navneet Arya. No sponsored opinions.',
+      `${SITE_CONFIG.siteUrl}/compare/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <CompareIndexPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
   if (compareMatch) {
     const article = COMPARE_ARTICLES.find(a => a.slug === compareMatch[1]);
     if (article) {
