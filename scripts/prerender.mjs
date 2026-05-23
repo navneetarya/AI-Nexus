@@ -81,7 +81,7 @@ const TOOLS = [
     tagline: 'SEO-optimised AI writing for blogs and ads',
     description: 'Writesonic creates SEO-friendly blog posts, Facebook ads, Google ads, and product descriptions. Powered by GPT-4 with a built-in AI chatbot called Chatsonic.',
     pricing: 'Free + from $16/month', bestFor: 'Bloggers & content marketers',
-    rating: 4.2, lastTested: 'February 2026',
+    rating: 4.2, lastTested: 'May 2026',
   },
   {
     slug: 'rytr', name: 'Rytr', category: 'Writing',
@@ -98,7 +98,7 @@ const TOOLS = [
     tagline: 'Paraphrase, summarise & improve your writing instantly',
     description: 'Quillbot is the best AI paraphrasing and summarising tool. Rewrite sentences, summarise long articles, check grammar, and detect plagiarism — all in one platform.',
     pricing: 'Free + $9.95/month', bestFor: 'Students & researchers',
-    rating: 4.3, lastTested: 'January 2026',
+    rating: 4.3, lastTested: 'May 2026',
   },
   {
     slug: 'frase', name: 'Frase.io', category: 'Writing',
@@ -114,7 +114,7 @@ const TOOLS = [
     description: 'Leonardo.ai creates stunning AI images with exceptional creative control. Train custom models, generate consistent characters, and produce game-ready visual assets.',
     reviewBody: 'Leonardo.ai is the most powerful free AI image generator available in 2026, offering 150 generation credits per day with no credit card required — a more generous free tier than Midjourney (no free plan), Adobe Firefly (limited credits), or DALL-E (25 free generations). The platform distinguishes itself from every competitor through custom model training: you can upload reference images to train a personal model that generates consistent characters, art styles, or product visuals across unlimited generations. This is the feature game developers and illustrators reach for — the ability to maintain visual consistency across an entire asset library is something Midjourney cannot match without complex prompting workflows. The real-time generation canvas, Phoenix model, and 20+ fine-tuned art models give creative control that generic image generators cannot offer. The free tier handles approximately 30–50 quality images per day depending on resolution settings. The $12/month Apprentice plan removes the watermark and adds 2,500 tokens/month for higher-resolution generations. Main limitation: the learning curve is real — the interface rewards users who invest 30 minutes in tutorials. For quick one-off images, DALL-E or Bing Image Creator are faster. Leonardo is the right tool when consistency, creative control, and volume matter.',
     pricing: 'Free + from $12/month', bestFor: 'Creators & game developers',
-    rating: 4.5, lastTested: 'February 2026',
+    rating: 4.5, lastTested: 'May 2026',
   },
   {
     slug: 'photoroom', name: 'PhotoRoom', category: 'Image',
@@ -129,14 +129,14 @@ const TOOLS = [
     tagline: 'Design your brand logo with AI in minutes',
     description: 'Looka uses AI to generate professional logos and complete brand identities. Answer a few questions, get hundreds of logo options, and own your brand kit outright.',
     pricing: 'From $20 one-time', bestFor: 'Startups & small businesses',
-    rating: 4.1, lastTested: 'January 2026',
+    rating: 4.1, lastTested: 'May 2026',
   },
   {
     slug: 'pictory', name: 'Pictory', category: 'Video',
     tagline: 'Turn your articles and scripts into videos automatically',
     description: 'Pictory converts blog posts, scripts, and long-form content into short branded videos. The fastest way to repurpose written content into video for YouTube or Reels.',
     pricing: 'From $19/month', bestFor: 'Bloggers & content repurposers',
-    rating: 4.1, lastTested: 'February 2026',
+    rating: 4.1, lastTested: 'May 2026',
   },
   {
     slug: 'opus-clip', name: 'Opus Clip', category: 'Video',
@@ -158,7 +158,7 @@ const TOOLS = [
     tagline: 'Studio-quality AI voiceovers in minutes',
     description: 'Murf AI creates studio-quality voiceovers for videos, presentations, and e-learning using 120+ realistic AI voices across 20 languages. No microphone needed.',
     pricing: 'Free + from $19/month', bestFor: 'Video creators & eLearning',
-    rating: 4.4, lastTested: 'January 2026',
+    rating: 4.4, lastTested: 'May 2026',
   },
   {
     slug: 'podcastle', name: 'Podcastle', category: 'Audio',
@@ -180,7 +180,7 @@ const TOOLS = [
     tagline: 'AI presentation software that designs itself',
     description: 'Beautiful.ai automatically designs your slides as you type. Add content and the AI handles layout, alignment, and visual consistency — every slide looks polished.',
     pricing: 'From $12/month', bestFor: 'Business professionals & teams',
-    rating: 4.1, lastTested: 'February 2026',
+    rating: 4.1, lastTested: 'May 2026',
     reviewBody: 'Beautiful.ai is an AI presentation tool built around Smart Slides — template types that automatically reformat as you add or remove content. Add a fourth column to a feature comparison slide and the layout redistributes automatically. Remove a team member card and the grid reflows. This eliminates the most time-consuming part of PowerPoint: manually resizing and realigning elements after content changes. In a 15-slide sales deck test (cover, problem/solution, feature comparison, timeline, team bios, pricing table), Beautiful.ai took 22 minutes versus approximately 90 minutes of layout work for the same deck in PowerPoint. The key differentiator from Gamma (the main free alternative) is structural formality: Gamma generates a full deck from a text brief in 3 minutes but with less design control; Beautiful.ai builds slides individually with tighter brand consistency. The Team plan ($40/user/month) adds a shared brand kit that locks fonts, colours, and logo placement — preventing off-brand choices before they happen. For agencies managing multiple client presentations, this eliminates design review cycles. No permanent free plan — only a 14-day trial. Pro plan at $12/month billed annually is the entry point. Main limitation: no permanent free tier means a commitment before fully evaluating the tool; use the 14-day trial on a real project before purchasing.',
   },
   {
