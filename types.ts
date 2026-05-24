@@ -91,6 +91,9 @@ export interface Tool {
     date: string;  // e.g. "May 2026"
     note: string;  // Short note about what was verified or updated
   }[];
+
+  /** W3: Review type — 'hands-on' for tools personally tested, 'research-based' for tools reviewed through official documentation and aggregated user reviews. */
+  reviewType?: 'hands-on' | 'research-based';
 }
 
 export interface FilterState {

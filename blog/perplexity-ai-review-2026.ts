@@ -18,7 +18,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',
-  ogImage: 'https://ainexustools.online/og/blog/perplexity-ai-review-2026.webp',
+  ogImage: 'https://ainexustools.online/og-tool-review.webp',
   excerpt: 'Search interest in "Perplexity vs Google" is up 280% in 30 days. As Google Search leans further into AI Overviews, and Perplexity adds Pro Search with access to GPT-4o and Claude 3.5, millions of users are asking whether traditional search is still the right tool. This review tests Perplexity against Google across eight real-world search scenarios and gives you a straight answer.',
   faqs: [
     {

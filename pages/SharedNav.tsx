@@ -46,6 +46,7 @@ const NAV_CSS = `
   #shared-hamburger { display:flex !important; }
   #shared-desktop-nav { display:none !important; }
   .trust-pill-nav { display:none !important; }
+  .author-cred-bar { display:none !important; }
 }
 @media(min-width:681px){
   #shared-hamburger { display:none !important; }
@@ -486,6 +487,51 @@ export function SharedNav({
           </div>
         )}
       </nav>
+
+      {/* W4-T1: Author credential bar — desktop only, hidden on mobile via .author-cred-bar CSS class */}
+      <div
+        className="author-cred-bar"
+        aria-label="Author credentials"
+        style={{
+          background: C.barBg,
+          borderBottom: `1px solid ${C.barBrd}`,
+          height: 32,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <div style={{
+          maxWidth: 1200, width: '100%', margin: '0 auto',
+          padding: '0 20px', display: 'flex', alignItems: 'center', gap: 8,
+        }}>
+          <img
+            src="/author-avatar.png"
+            alt="Navneet Arya"
+            width={20} height={20}
+            style={{ borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
+          />
+          <span style={{ fontSize: 11, color: C.mut, lineHeight: 1 }}>
+            Reviewed by{' '}
+            <a
+              onClick={() => navigate('/about')}
+              style={{ color: C.a1, fontWeight: 700, cursor: 'pointer', textDecoration: 'none' }}
+            >
+              Navneet Arya
+            </a>
+            {' '}·{' '}
+            <strong style={{ color: C.txt, fontWeight: 700 }}>AI Automation &amp; Performance Testing Leader</strong>
+            {' '}·{' '}
+            <a
+              onClick={() => navigate('/about')}
+              style={{ color: C.a1, fontWeight: 600, cursor: 'pointer', textDecoration: 'none' }}
+            >
+              About
+            </a>
+          </span>
+        </div>
+      </div>
+
       {/* W1-T3: Site footer — Privacy Policy visibility for Google Quality Raters */}
       <footer style={{
         background: C.surf,

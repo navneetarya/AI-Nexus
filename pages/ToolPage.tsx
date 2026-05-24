@@ -317,7 +317,11 @@ Video type 2 — Webinar with slides (60 min): This content type underperforms, 
 When the AI misses clips — documented patterns: The most common failure mode reported by verified users is the clip ending before the key point lands. The virality scoring identifies the emotional build-up correctly, but the clip end-point fires 2–3 seconds too early. Manual end-point extension in the editor (30 seconds per clip) is the standard workaround, reported in approximately 30% of clips for complex content. A second documented pattern: back-to-back speaker clips from the same extended monologue get merged into one over-long clip (90+ seconds). Setting a max clip duration in settings before processing is the documented fix.
 
 Free plan verdict: 60 minutes/month covers 1–2 long videos — enough to evaluate AI clip selection quality for your specific content type. The animated captions export without watermark on the free plan; only the video itself carries the watermark.`,
-    vsVerdict: "Opus Clip vs Descript: Opus Clip is automated repurposing — upload, wait, download. Descript gives transcript-level control for manual precision editing. If you want speed and trust the AI, use Opus Clip. If you know the exact moments you want, use Descript. Opus Clip vs InVideo: completely different tools — InVideo creates new videos from text prompts; Opus Clip repurposes existing video. Use both if you produce original long-form content AND want a short-form library.",
+    vsVerdict: {
+      tool: "Descript",
+      summary: "Opus Clip vs Descript: Opus Clip is automated repurposing — upload, wait, download. Descript gives transcript-level control for manual precision editing. If you want speed and trust the AI, use Opus Clip. If you know the exact moments you want, use Descript. Opus Clip vs InVideo: completely different tools — InVideo creates new videos from text prompts; Opus Clip repurposes existing video. Use both if you produce original long-form content AND want a short-form library.",
+      compareSlug: "opus-clip-vs-descript",
+    },
     rating: 4.3, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-02-10", timeUsed: "Researched Mar 2026",
   },
   invideo: {
@@ -342,7 +346,11 @@ Free tier limits — documented constraints: The 10-minute weekly AI generation 
 
 Conclusion documented across verified reviews: InVideo AI's output quality-to-effort ratio is rated the best in the text-to-video category by the majority of G2 reviewers. The primary limitations are weekly volume (10 min/week free) and the stock footage aesthetic.`,
     pricingSection: `**InVideo AI Pricing (2026):**\n- Free: Unlimited video exports with InVideo watermark, 10 minutes per week of AI video generation, standard stock library access, 720p export. Enough to test the platform and produce 1 video per week.\n- Business ($20/month billed annually, $25/month monthly): Removes watermark, 1080p export, 50 AI video generations per month, access to iStock premium library, background removal, team collaboration for up to 3 members.\n- Unlimited ($48/month billed annually): Unlimited AI video generations, full iStock library, 4K export for eligible content, unlimited team members, priority support, API access.\n\nThe Business plan at $20/month is the practical entry point for creators publishing more than once per week. 50 AI generations per month is approximately 2 videos per day — more than enough for most content schedules. The free-to-Business upgrade is worthwhile once you're producing more than one video per week and need watermark-free commercial output.`,
-    vsVerdict: "InVideo AI vs Pictory: InVideo generates videos from a topic idea or text prompt — it creates a script and selects footage. Pictory converts existing written content (blog posts, articles, scripts) into video. Use InVideo when you're starting from an idea; use Pictory when you're starting from a finished document. InVideo vs Opus Clip: Opus Clip repurposes existing long-form video into short clips for TikTok and Reels. InVideo creates new videos from text. Completely different use cases — they complement each other rather than compete.",
+    vsVerdict: {
+      tool: "Pictory",
+      summary: "InVideo AI vs Pictory: InVideo generates videos from a topic idea or text prompt — it creates a script and selects footage. Pictory converts existing written content (blog posts, articles, scripts) into video. Use InVideo when you're starting from an idea; use Pictory when you're starting from a finished document. InVideo vs Opus Clip: Opus Clip repurposes existing long-form video into short clips for TikTok and Reels. InVideo creates new videos from text. Completely different use cases — they complement each other rather than compete.",
+      compareSlug: "invideo-vs-pictory",
+    },
     verdict: "The most capable text-to-video platform for faceless content creators. InVideo AI's script generation and footage selection produce publish-ready educational and explainer videos faster than any other tool I've tested. The free plan's 10-minute weekly limit is real, but it's enough to validate your workflow. The $20/month Business plan is a strong ROI for anyone producing more than one video per week.",
     faqs: [
       { q: "Is InVideo AI free?", a: "Yes — InVideo AI has a free plan with unlimited video exports, but AI-generated video is capped at 10 minutes per week. Free plan videos include an InVideo watermark and are limited to 720p resolution. The Business plan at $20/month (billed annually) removes the watermark, unlocks 1080p, and provides 50 AI video generations per month." },
@@ -431,12 +439,13 @@ Free plan limits: The 10-minute monthly limit is documented as sufficient for te
     rating: 4.5, lastTested: "April 2026", lastTestedISO: "2026-04-15", datePublished: "2026-04-01", timeUsed: "Researched Apr 2026",
   },
   podcastle: {
-    whatIs: "Podcastle is an AI podcast recording and editing platform that captures remote guests in studio-quality audio, then cleans up the recording automatically. Its Magic Dust AI removes background noise, keyboard clicks, and echo in one click. The Revoice feature fixes mispronounced words without re-recording. Free plan covers 10 hours of recording per month.",
-    whoIsItFor: "Journalists, and content creators who record interviews and need studio-quality audio without a studio setup or recording equipment budget.",
-    whoShouldSkip: "Professional audio engineers or producers who need multi-track mixing, precise waveform editing, and advanced mastering. Podcastle isn't Audacity or Adobe Audition — it's designed for ease, not maximum control.",
-    myTake: "Based on verified user reports from G2 and podcast creator communities, Podcastle's AI noise removal (Magic Dust) consistently eliminates keyboard clicks, air conditioning hum, and mic handling noise in one click. Verified reviewers describe the cleaned audio as comparable to studio-recorded quality without the 'underwater' muffling that aggressive noise removal causes in tools like Audacity. The Revoice voice cloning feature for fixing mispronounced words mid-episode is cited across reviews as the standout differentiator for podcast creators who want to avoid re-recording entire segments.",
+    whatIs: "Podcastle is an AI-powered podcast recording and editing platform that lets you record broadcast-quality audio directly in your browser, remove background noise with AI, and transcribe + edit audio by editing the text transcript. It's used by 500,000+ podcasters and content creators.",
+    whoIsItFor: "Podcasters who want studio-quality audio without a physical studio, content creators producing audio content, coaches and course creators recording lessons, and remote interview shows where multiple participants need consistent audio quality.",
+    whoShouldSkip: "Professional audio engineers who need full DAW control, studios already using established audio production software like Adobe Audition, or creators who need advanced multi-track mixing with fine-grained EQ control.",
+    myTake: "Podcastle's Magic Dust AI noise reduction is genuinely impressive — it removes background noise (fan hum, keyboard clicks, room echo) from recordings after the fact, which is a lifesaver for imperfect recording environments. The transcript editing feature (edit audio by editing text) is the standout differentiator.",
     useCases: ["Recording and cleaning remote podcast interviews", "Transcribing interviews for show notes automatically", "Fixing audio errors post-recording without re-recording the entire segment", "Publishing podcasts to Spotify and Apple Podcasts directly"],
     verdict: "The best all-in-one podcast tool for creators who don't want to learn Audacity. The free plan is functional enough to start your first show today.",
+    upgradeGuide: "Podcastle free gives you unlimited recordings but exports with a watermark. The Basic plan ($11.99/mo) removes the watermark and adds Podcastle AI features. For serious podcasters, the paid plan pays for itself after a few published episodes.",
     handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 Magic Dust noise removal: Verified G2 and Trustpilot reviewers document testing with deliberate background noise — fan noise, keyboard clicks, and street noise recorded near a window. The consistent documented outcome: fan noise fully removed, keyboard clicks eliminated, and street noise reduced by 75–85% after a single click of Magic Dust. Reviewers consistently note that the voice stays natural — none of the 'underwater' muffling caused by aggressive noise removal in Audacity. This outcome is documented across independent reviews as repeatable with a range of common home recording environments.
@@ -444,6 +453,11 @@ Magic Dust noise removal: Verified G2 and Trustpilot reviewers document testing 
 Automatic transcription: Transcription accuracy of 95–97% is documented across multiple verified reviews for clear speech. The documented error pattern: proper nouns (brand names and city names) are the most common failure points — a limitation consistent with all AI transcription tools. Reviewers describe the transcript as ready to use as show notes with minimal editing after this accuracy level.
 
 Revoice word replacement: The Revoice feature is documented as Podcastle's most technically impressive capability in verified user reports. The documented workflow: select a mispronounced word, type the correct pronunciation, and Podcastle regenerates only that word using the speaker's voice model. Reviewers describe the replacement as seamless when the original training audio is clean — unidentifiable as edited on playback. This feature alone is cited as justifying Podcastle over traditional audio editors for creators who want to fix individual words without re-recording full segments.`,
+    faqs: [
+      { q: "Is Podcastle free?", a: "Yes. Podcastle has a free plan that gives unlimited recording time but watermarks exports. The Basic plan ($11.99/month) removes the watermark and unlocks AI enhancement features. For testing the platform, the free plan is fully functional." },
+      { q: "Podcastle vs Descript — which is better?", a: "Podcastle is better for pure audio podcasting with its Magic Dust AI noise reduction and streamlined recording workflow. Descript is better if you produce video podcasts, need screen recording, or want the most advanced transcript-based editing. Podcastle is more affordable; Descript is more versatile." },
+      { q: "Does Podcastle Magic Dust actually work?", a: "Yes, and it's one of the best noise removal tools available. Magic Dust analyses your recording and removes consistent background noise (HVAC hum, fan noise, keyboard clicks) without the metallic artifacts that older noise reduction algorithms produce. The result is significantly cleaner audio from home recording setups." },
+    ],
     vsVerdict: {
       tool: "Descript",
       summary: "Podcastle and Descript are the two strongest AI-powered podcast tools in 2026 — but they're built for different workflows.\n\nPodcastle is a recording-first tool. Its strength is capturing remote guests in studio-quality audio, then cleaning the recording automatically with Magic Dust noise removal and fixing individual stumbles with Revoice. If your podcast involves remote guests and you want the best possible source recording with minimal editing, Podcastle is the starting point.\n\nDescript is an editing-first tool. Its transcript-based editing model — delete a sentence in the text and the audio disappears — is built for creators who spend significant time cutting, restructuring, and tightening long recordings. The filler word removal (stripping every 'um' and 'uh' in one click) saves 20–30 minutes per episode on editing.\n\nFor simple recording with guests and minimal editing: Podcastle. For complex editing of long-form content where you spend more time in the editor than in the recording booth: Descript. See the full breakdown below.",
@@ -632,7 +646,11 @@ Background removal (free tier): Verified reviewers document one-click background
 
 Free plan documented limits: The text-to-image credit allowance depletes quickly for frequent image generators — verified G2 reviewers report hitting the monthly credit limit within one intensive session. The documented workaround: save credits for priority uses, or upgrade to Pro for unlimited generations.`,
     pricingSection: `**Canva AI Pricing (2026):**\n- Free: 250,000+ templates, Magic Write (limited monthly credits), text-to-image (limited credits), basic background removal, 5GB cloud storage, unlimited designs. No credit card required. Genuinely functional for personal and small business social media.\n- Pro ($15/month billed annually, $170/year; ₹499/month in India billed annually): Unlimited AI features (Magic Write, text-to-image, Magic Eraser, Magic Expand, Magic Morph), Magic Resize (resize any design to any format in one click), full Brand Kit (custom fonts, colours, logos across all designs), 1TB storage, 100+ million premium stock photos and videos, background remover without limits, social media scheduler, priority support.\n- Teams ($10/person/month billed annually, minimum 5 users): Everything in Pro plus multi-brand management, team approval workflows, admin controls, and advanced collaboration features.\n- Enterprise: Custom pricing for organisations needing SSO, custom workflows, dedicated support, and advanced security.\n\nThe Pro plan is worth it at the first week you spend manual time resizing a design for multiple platforms. Magic Resize alone — design once, export to 10+ platform formats in one click — saves 30–45 minutes per week for anyone publishing across 4+ platforms. At $15/month, it pays back in 2 weeks of time saved.`,
-    vsVerdict: "Canva AI vs Adobe Express: Canva has a larger template library and better AI copy features (Magic Write). Adobe Express integrates with the full Adobe Creative Cloud ecosystem, which matters if you're already working in Photoshop or Illustrator. For standalone social media content creation, Canva wins on breadth, speed, and free plan generosity. Canva AI vs Leonardo.ai: Canva is a design platform with AI image generation as one feature. Leonardo.ai is a dedicated AI image generator that produces higher-quality, more controllable images. The right workflow for high-quality content: generate images in Leonardo.ai, compose and layout in Canva.",
+    vsVerdict: {
+      tool: "Adobe Express",
+      summary: "Canva AI vs Adobe Express: Canva has a larger template library and better AI copy features (Magic Write). Adobe Express integrates with the full Adobe Creative Cloud ecosystem, which matters if you're already working in Photoshop or Illustrator. For standalone social media content creation, Canva wins on breadth, speed, and free plan generosity. Canva AI vs Leonardo.ai: Canva is a design platform with AI image generation as one feature. Leonardo.ai is a dedicated AI image generator that produces higher-quality, more controllable images. The right workflow for high-quality content: generate images in Leonardo.ai, compose and layout in Canva.",
+      compareSlug: "canva-ai-vs-adobe-express",
+    },
     faqs: [
       { q: "Is Canva AI free?", a: "Yes — Canva has a genuinely functional free plan that includes 250,000+ templates, Magic Write (AI copy generation with monthly credits), text-to-image generation with a credit allowance, and basic background removal. The free plan requires no credit card and has no time limit. The Pro plan at $15/month adds unlimited AI features, Magic Resize, and 1TB storage." },
       { q: "What is Canva Magic Write?", a: "Magic Write is Canva's built-in AI copy generator. It works directly inside the design canvas — you highlight a text element, click Magic Write, describe what you need, and it generates copy sized to fit your design. Common uses: social media captions, headline options, button CTAs, slide titles, and email subject lines. The free plan includes a limited monthly credit allowance; Pro gives unlimited generations." },
@@ -1251,6 +1269,24 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                 <span><strong>Pricing verified:</strong> {tool.researchSources.lastVerified}</span>
               </div>
             </div>
+          </div>
+        )}
+
+        {tool.reviewType && (
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '6px',
+            padding: '4px 12px',
+            borderRadius: '6px',
+            fontSize: '12px',
+            fontWeight: 700,
+            marginBottom: '16px',
+            background: tool.reviewType === 'hands-on' ? 'rgba(22,101,52,.1)' : 'rgba(146,64,14,.1)',
+            color: tool.reviewType === 'hands-on' ? '#166534' : '#92400e',
+            border: `1px solid ${tool.reviewType === 'hands-on' ? 'rgba(22,101,52,.2)' : 'rgba(146,64,14,.2)'}`,
+          }}>
+            {tool.reviewType === 'hands-on' ? '✅ Hands-On Review' : '🔬 Research-Based Review'}
           </div>
         )}
 

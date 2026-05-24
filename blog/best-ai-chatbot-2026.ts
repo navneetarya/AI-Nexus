@@ -17,7 +17,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Guides',
   readTime: '12 min read',
-  ogImage: 'https://ainexustools.online/og/blog/best-ai-chatbot-2026.webp',
+  ogImage: 'https://ainexustools.online/og-compare.webp',
   excerpt: 'The AI chatbot landscape in 2026 looks nothing like 2023. GPT-5.5, Claude 3.5, Gemini 3.1, and Grok 4.3 are all genuinely excellent — and the right choice depends entirely on what you\'re using it for.',
   faqs: [
     { q: 'What is the best AI chatbot in 2026?', a: 'The best AI chatbot in 2026 depends on your use case. For research with cited sources, Perplexity is unmatched. For creative writing and long-form content, Claude 3.5 Sonnet produces the most nuanced output. For coding tasks, GPT-5.5 and Claude Code are the strongest. For real-time news and current events, Grok 4.3 with X integration has an edge. For Google Workspace users, Gemini integrates seamlessly.' },

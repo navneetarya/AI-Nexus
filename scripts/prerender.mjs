@@ -722,11 +722,11 @@ const BLOG_OG_MAP = {
   'best-free-ai-tools-for-students-in-india-2026':`${SITE}/og/blog/best-free-ai-tools-for-students-in-india-2026.webp`,
   'best-ai-tools-for-freelancers-india-2026':   `${SITE}/og/blog/best-ai-tools-for-freelancers-india-2026.webp`,
   'best-ai-tools-for-content-creators-free-2026':`${SITE}/og/blog/best-ai-tools-for-content-creators-free-2026.webp`,
-  // W2-T1: Trending +450% — first-mover keyword
-  'grok-4-vs-chatgpt-vs-claude-content-creators-2026': `${SITE}/og/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026.webp`,
-  'google-gemini-ai-review-2026':                       `${SITE}/og/blog/google-gemini-ai-review-2026.webp`,
-  'claude-code-vs-github-copilot-vs-replit-2026':       `${SITE}/og/blog/claude-code-vs-github-copilot-vs-replit-2026.webp`,
-  'perplexity-ai-review-2026':                          `${SITE}/og/blog/perplexity-ai-review-2026.webp`,
+  // W2-T1: Trending +450% — first-mover keyword — fallback to root-level images until proper OG generated
+  'grok-4-vs-chatgpt-vs-claude-content-creators-2026': `${SITE}/og-blog-writing.webp`,
+  'google-gemini-ai-review-2026':                       `${SITE}/og-tool-review.webp`,
+  'claude-code-vs-github-copilot-vs-replit-2026':       `${SITE}/og-compare.webp`,
+  'perplexity-ai-review-2026':                          `${SITE}/og-tool-review.webp`,
 };
 
 function resolveOgImage(slug) {
@@ -1643,6 +1643,23 @@ const BLOG_POSTS = [
       { q: 'Which AI is best for non-English content?', a: 'ChatGPT Plus (GPT-4o) leads for multilingual output including Indian languages. Claude Pro handles European languages well. Perplexity search works in most languages.' },
     ],
   },
+  // Week 2 EEAT: ChatGPT Free vs Claude Free vs Gemini Free — high-volume evergreen keyword
+  {
+    slug: 'chatgpt-free-vs-claude-free-vs-gemini-free-2026',
+    title: 'ChatGPT Free vs Claude Free vs Gemini Free: Which AI Actually Works for Freelancers in 2026?',
+    metaDescription: 'ChatGPT, Claude, and Gemini all have free plans. Tested all three on the same 5 freelance tasks — message limits, output quality, and when to upgrade. Honest verdict, no affiliate spin.',
+    datePublished: '2026-05-24',
+    dateModified: '2026-05-24',
+    readTimeMinutes: 10,
+    ogImage: 'https://ainexustools.online/og-compare.webp',
+    faqs: [
+      { q: 'Is Claude free better than ChatGPT free?', a: 'For writing quality, yes — Claude\'s free plan uses Claude 3.5 Sonnet which produces more nuanced, publication-ready prose than ChatGPT\'s free tier. For versatility, ChatGPT free is better — it handles images, code, and a wider range of tasks. Most freelancers benefit from using both: Claude for first drafts, ChatGPT for everything else.' },
+      { q: 'Does Gemini free have a message limit?', a: 'Gemini\'s free plan doesn\'t publish explicit daily message limits like ChatGPT does. In practice, heavy users report hitting soft limits after extensive usage. For typical freelance use (5–10 substantive prompts per day), Gemini Free is effectively unlimited. The bigger limitation is context length — Gemini 1.5 Flash is the free tier model, with reduced capabilities vs Gemini Pro.' },
+      { q: 'Can I use ChatGPT free for commercial work?', a: 'Yes. OpenAI\'s free plan permits commercial use of ChatGPT outputs. The same applies to Claude and Gemini free tiers. You own the outputs you generate. The limitation is practical, not legal — free plan limits mean you can\'t rely on these tools for high-volume commercial production without upgrading.' },
+      { q: 'Which free AI is best for blog writing?', a: 'Claude Free produces the best first-draft quality for blog posts — longer sentences, more varied structure, and a more human-sounding voice than ChatGPT\'s free tier. Use Claude for your first draft, then Grammarly (free) to polish. For SEO-optimised blog outlines and structure, ChatGPT with Browse is better because it can research current keyword data.' },
+      { q: 'When should I upgrade from a free AI plan?', a: 'Upgrade when you\'re hitting daily message limits regularly (sign of real dependency), when output quality is costing you editing time that exceeds the monthly cost, or when you need features only available on paid tiers (Claude\'s Projects, ChatGPT\'s memory, Gemini\'s Workspace integration). For casual use under 10 prompts/day, free plans are sufficient indefinitely.' },
+    ],
+  },
 ];
 
 const template = readTemplate();
@@ -1701,7 +1718,10 @@ for (const tool of TOOLS) {
 // ── 2. Compare pages ──────────────────────────────────────────────────────────
 console.log('\nCompare pages:');
 for (const art of COMPARE_ARTICLES) {
-  const canonical = `${SITE}/compare/${art.slug}/`;
+  // claude-code compare page defers canonically to the blog post (avoids duplicate content)
+  const canonical = art.slug === 'claude-code-vs-github-copilot-vs-replit'
+    ? `${SITE}/blog/claude-code-vs-github-copilot-vs-replit-2026/`
+    : `${SITE}/compare/${art.slug}/`;
   const schemas = [
     articleSchema({ title: art.title, description: art.metaDescription, canonical }),
     breadcrumbs([
@@ -2171,18 +2191,19 @@ ${items}
     })),
   }), null, 2);
 
-  // W3-T5: SiteNavigationElement schema — enables sitelinks in branded search results
+  // W4-T2: SiteNavigationElement schema — ItemList wrapping individual SiteNavigationElement items
+  // Upgraded from flat array format to structured ItemList per schema.org spec for richer sitelinks.
   const siteNavSchema = JSON.stringify({
     '@context': 'https://schema.org',
-    '@type': 'SiteNavigationElement',
-    name: ['AI Tool Reviews', 'Compare AI Tools', 'AI Tools Blog', 'Best Free AI Tools', 'AI Glossary', 'About'],
-    url: [
-      `${SITE}/`,
-      `${SITE}/compare/grammarly-vs-writesonic/`,
-      `${SITE}/blog/`,
-      `${SITE}/best-free-ai-tools/`,
-      `${SITE}/glossary/`,
-      `${SITE}/about/`,
+    '@type': 'ItemList',
+    '@id': `${SITE}/#navigation`,
+    name: 'Site Navigation',
+    itemListElement: [
+      { '@type': 'SiteNavigationElement', position: 1, name: 'AI Tool Reviews', url: `${SITE}/` },
+      { '@type': 'SiteNavigationElement', position: 2, name: 'Compare AI Tools', url: `${SITE}/compare` },
+      { '@type': 'SiteNavigationElement', position: 3, name: 'AI Tools Blog', url: `${SITE}/blog/` },
+      { '@type': 'SiteNavigationElement', position: 4, name: 'About & Methodology', url: `${SITE}/about/` },
+      { '@type': 'SiteNavigationElement', position: 5, name: 'AI Glossary', url: `${SITE}/glossary/` },
     ],
   }, null, 2);
 

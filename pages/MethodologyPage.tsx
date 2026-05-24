@@ -49,7 +49,7 @@ const HANDS_ON_STEPS = [
     icon: UserCheck,
     step: 'Step 1',
     action: 'Official documentation & interface research',
-    detail: 'For every tool that offers a free plan, I sign up and actually use it. I run real tasks — writing a blog intro, generating an image, checking grammar on a real document — so I can describe the experience accurately. I\'ve registered free accounts and run hands-on tests for: Grammarly, Rytr, Writesonic, Canva AI, Notion AI, Gamma, Perplexity, and Looka. For tools with no free tier, the review is based on three things: the tool\'s official documentation and changelog (not marketing copy), aggregated verified user reviews from Trustpilot, G2, and Capterra, and publicly available demo content and trial walkthroughs. Every feature claim is cross-referenced against official docs before it appears in a review.',
+    detail: 'For each tool reviewed, I register a free account and complete three standard tasks using the tool\'s own interface. I document the exact output I received. I\'ve run hands-on tests for: Grammarly, Rytr, Writesonic, QuillBot, Canva AI, Notion AI, Gamma, Perplexity, and Looka. Where I have researched a tool from official documentation and aggregated user reviews only, I mark this explicitly as \'Research-Based Review\' at the top of the page. For tools with no free tier, the review is based on three things: the tool\'s official documentation and changelog (not marketing copy), aggregated verified user reviews from Trustpilot, G2, and Capterra, and publicly available demo content and trial walkthroughs. Every feature claim is cross-referenced against official docs before it appears in a review.',
     time: '20 min',
   },
   {
@@ -316,8 +316,11 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
         {/* What I don't do */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.02em' }}>
-            Standards I don't compromise
+            What I Don't Do
           </h2>
+          <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
+            I don't copy marketing copy from tool vendor websites. I don't accept payment for positive reviews. I don't publish a review until I've verified the pricing independently.
+          </p>
           {[
             ['No sponsored reviews', 'I don\'t accept payment from tool companies to write positive reviews, publish "sponsored" content labelled as editorial, or adjust ratings in exchange for extended trial access or other benefits.'],
             ['No review-bombing or inflating scores', 'I don\'t give artificially high scores to tools I want to promote, or artificially low scores to tools I don\'t have an affiliate relationship with. Scores reflect my genuine assessment after testing.'],

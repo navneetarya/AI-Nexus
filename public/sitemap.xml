@@ -77,9 +77,7 @@
   <url><loc>https://ainexustools.online/tools/invideo/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
     <image:image><image:loc>https://ainexustools.online/logos/invideo.png</image:loc><image:title>InVideo AI Text-to-Video Tool Logo</image:title></image:image>
   </url>
-  <url><loc>https://ainexustools.online/tools/heygen/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-22</lastmod>
-    <image:image><image:loc>https://ainexustools.online/logos/heygen.png</image:loc><image:title>HeyGen AI Avatar Video Creator Logo</image:title></image:image>
-  </url>
+
   <url><loc>https://ainexustools.online/tools/murf-ai/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-05</lastmod>
     <image:image><image:loc>https://ainexustools.online/logos/murf-ai.png</image:loc><image:title>Murf AI Voiceover Generator Logo</image:title></image:image>
   </url>
@@ -115,7 +113,7 @@
   <url><loc>https://ainexustools.online/compare/leonardo-ai-vs-stable-diffusion/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
   <url><loc>https://ainexustools.online/compare/gamma-vs-beautiful-ai/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
   <url><loc>https://ainexustools.online/compare/invideo-vs-pictory/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-10</lastmod></url>
-  <url><loc>https://ainexustools.online/compare/claude-code-vs-github-copilot-vs-replit/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-22</lastmod></url>
+
 
   <!-- Category landing pages -->
   <url><loc>https://ainexustools.online/best-ai-writing-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
@@ -227,22 +225,30 @@
   </url>
   <!-- W2-T1: Trending +450% — Grok 4 vs ChatGPT vs Claude — 22K+/mo · KD 12 · Published 2026-05-22 -->
   <url><loc>https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/</loc><changefreq>weekly</changefreq><priority>0.90</priority><lastmod>2026-05-22</lastmod>
-    <image:image><image:loc>https://ainexustools.online/og/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026.webp</image:loc><image:title>Grok 4 vs ChatGPT vs Claude for Content Creators 2026</image:title></image:image>
+    <image:image><image:loc>https://ainexustools.online/og-blog-writing.webp</image:loc><image:title>Grok 4 vs ChatGPT vs Claude for Content Creators 2026</image:title></image:image>
   </url>
   <!-- 🔥 Trending +550% — Google Gemini AI Review — 18K+/mo · KD 19 · Published 2026-05-15 -->
   <url><loc>https://ainexustools.online/blog/google-gemini-ai-review-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-15</lastmod>
-    <image:image><image:loc>https://ainexustools.online/og/blog/google-gemini-ai-review-2026.webp</image:loc><image:title>Google Gemini AI Review 2026: Is It Better Than ChatGPT for Writing?</image:title></image:image>
+    <image:image><image:loc>https://ainexustools.online/og-tool-review.webp</image:loc><image:title>Google Gemini AI Review 2026: Is It Better Than ChatGPT for Writing?</image:title></image:image>
   </url>
   <!-- 🔥 Trending +380% — Claude Code vs GitHub Copilot vs Replit — 9K+/mo · KD 14 · Published 2026-05-17 -->
   <url><loc>https://ainexustools.online/blog/claude-code-vs-github-copilot-vs-replit-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-17</lastmod>
-    <image:image><image:loc>https://ainexustools.online/og/blog/claude-code-vs-github-copilot-vs-replit-2026.webp</image:loc><image:title>Claude Code vs GitHub Copilot vs Replit: Best AI Coding Tool 2026</image:title></image:image>
+    <image:image><image:loc>https://ainexustools.online/og-compare.webp</image:loc><image:title>Claude Code vs GitHub Copilot vs Replit: Best AI Coding Tool 2026</image:title></image:image>
   </url>
   <!-- 📈 Rising +280% — Perplexity AI Review — 14K+/mo · KD 22 · Published 2026-05-19 -->
   <url><loc>https://ainexustools.online/blog/perplexity-ai-review-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-19</lastmod>
-    <image:image><image:loc>https://ainexustools.online/og/blog/perplexity-ai-review-2026.webp</image:loc><image:title>Perplexity AI Review 2026: Is It Worth It vs Google Search?</image:title></image:image>
+    <image:image><image:loc>https://ainexustools.online/og-tool-review.webp</image:loc><image:title>Perplexity AI Review 2026: Is It Worth It vs Google Search?</image:title></image:image>
   </url>
   <!-- 🏆 Pillar post: Best AI chatbot 2026 — 18K+/mo · KD 28 · Published 2026-05-22 -->
   <url><loc>https://ainexustools.online/blog/best-ai-chatbot-2026/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-22</lastmod>
-    <image:image><image:loc>https://ainexustools.online/og/blog/best-ai-chatbot-2026.webp</image:loc><image:title>Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini vs Grok Compared</image:title></image:image>
+    <image:image><image:loc>https://ainexustools.online/og-compare.webp</image:loc><image:title>Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini vs Grok Compared</image:title></image:image>
+  </url>
+  <!-- Perplexity Pro vs ChatGPT Plus vs Claude Pro — buyer-intent $20/month comparison · Published 2026-05-23 -->
+  <url><loc>https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-23</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-compare.webp</image:loc><image:title>Perplexity Pro vs ChatGPT Plus vs Claude Pro: Best $20/Month AI for Freelancers 2026</image:title></image:image>
+  </url>
+  <!-- New blog: ChatGPT Free vs Claude Free vs Gemini Free — evergreen high-volume keyword -->
+  <url><loc>https://ainexustools.online/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-24</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-compare.webp</image:loc><image:title>ChatGPT Free vs Claude Free vs Gemini Free 2026</image:title></image:image>
   </url>
 </urlset>

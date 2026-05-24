@@ -63,9 +63,12 @@ import post32 from './best-ai-chatbot-2026';
 // 🔥 Trending: Perplexity Pro vs ChatGPT Plus vs Claude Pro — buyer-intent $20/month comparison
 // Angle: same 5 tasks, 3 AIs, honest task-by-task verdict — 2026-05-23
 import post33 from './perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026';
+// Week 2 EEAT: ChatGPT Free vs Claude Free vs Gemini Free — high-volume evergreen comparison
+// Target keyword: "chatgpt free vs claude free" — free plan comparison for freelancers
+import post34 from './chatgpt-free-vs-claude-free-vs-gemini-free-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
-  post33,
+  post34, post33,
   post1, post2, post3, post4, post5, post6, post7, post8,
   post9, post10, post11, post12, post13, post14, post15,
   post16, post17, post18, post19, post20, post21, post22,

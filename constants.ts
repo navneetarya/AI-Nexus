@@ -79,6 +79,7 @@ export const TOOLS: Tool[] = [
       paid: '₹1,000/month Premium',
       note: 'UPI, Indian debit/credit cards supported. Free plan has no word limit.',
     },
+    reviewType: 'hands-on',
     updateLog: [
       { date: 'May 2026', note: 'Pricing verified at $12/mo (annual). Business plan confirmed at $15/user/mo. Trustpilot score updated to 4.3 (7,842 reviews).' },
     ],
@@ -109,6 +110,7 @@ export const TOOLS: Tool[] = [
       paid: '₹1,330/month Individual',
       note: 'International credit card usually required for paid plans. Free plan accessible.',
     },
+    reviewType: 'hands-on',
     updateLog: [
       { date: 'May 2026', note: 'Free plan updated: 10K words/month (changed from previous 2,500). Chatsonic feature tested with real-time search.' },
     ],
@@ -159,6 +161,7 @@ export const TOOLS: Tool[] = [
       paid: '₹750/month Saver',
       note: 'UPI + Indian debit cards via Razorpay. Hindi content generation supported.',
     },
+    reviewType: 'hands-on',
     updateLog: [
       { date: 'May 2026', note: 'Free plan confirmed: 10K characters/month. Saver plan at $9/mo verified. New tone options tested — 20+ tones confirmed available.' },
     ],
@@ -185,6 +188,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/StudentLoans, r/college, r/GradSchool',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'hands-on',
   },
   {
     id: 'w5', slug: 'frase',
@@ -203,6 +207,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/SEO, r/Blogging, r/content_marketing',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
 
   // IMAGE
@@ -227,6 +232,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/StableDiffusion, r/AIArt, r/GameDev',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
   {
     id: 'i2', slug: 'photoroom',
@@ -245,6 +251,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/ecommerce, r/Flipping, r/AmazonSeller',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
   {
     id: 'i3', slug: 'looka',
@@ -267,6 +274,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Mixed — r/Entrepreneur, r/smallbusiness, r/startups',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
 
   // VIDEO
@@ -287,6 +295,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/youtubers, r/passive_income, r/Blogging',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
   {
     id: 'v2', slug: 'opus-clip',
@@ -305,6 +314,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/youtubers, r/TikTok, r/podcasting',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
   {
     id: 'v3', slug: 'invideo',
@@ -323,6 +333,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/passive_income, r/youtubers, r/videography',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
 
   // AUDIO
@@ -347,6 +358,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/podcasting, r/videography, r/eLearning',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
   {
     id: 'a2', slug: 'podcastle',
@@ -378,6 +390,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/podcasting, r/audioengineering',
       lastVerified: '2026-05-10',
     },
+    reviewType: 'research-based',
   },
 
   // DESIGN
@@ -402,6 +415,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/Entrepreneur, r/productivity, r/Professors',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
   {
     id: 'd2', slug: 'beautiful-ai',
@@ -420,6 +434,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Mixed — r/Entrepreneur, r/marketing, r/productivity',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
 
   // MARKETING
@@ -468,6 +483,7 @@ export const TOOLS: Tool[] = [
       paid: '₹1,250/month Bronze',
       note: 'International credit card required. No UPI support currently.',
     },
+    reviewType: 'research-based',
   },
 
   // CODING
@@ -506,6 +522,7 @@ export const TOOLS: Tool[] = [
       paid: '₹580/month Core',
       note: 'International credit card required. Free plan works without any payment.',
     },
+    reviewType: 'research-based',
   },
 
   // AUDIO (additional)
@@ -549,6 +566,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/VoiceActing, r/podcasting, r/AIArt',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
 
   // WRITING (additional)
@@ -585,6 +603,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Mixed — r/Entrepreneur, r/marketing, r/SEO',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
 
   // AUDIO (additional)
@@ -624,6 +643,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/podcasting, r/videography, r/youtubers',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
   },
 
   // PRODUCTIVITY (additional)
@@ -667,6 +687,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/ChatGPT, r/productivity, r/MachineLearning',
       lastVerified: '2026-05-13',
     },
+    reviewType: 'research-based',
     updateLog: [
       { date: 'May 2026', note: 'Pro plan confirmed at $20/month. Free tier: 5 Pro searches/day. Claude 3.5 Sonnet access within Pro tier verified.' },
     ],
@@ -719,6 +740,7 @@ export const TOOLS: Tool[] = [
       paid: '₹1,250/month Pro',
       note: 'UPI + Indian debit/credit cards. Hindi UI and regional template support.',
     },
+    reviewType: 'research-based',
   },
 
   // PRODUCTIVITY
@@ -748,6 +770,7 @@ export const TOOLS: Tool[] = [
       paid: '₹830/month AI add-on',
       note: 'International card often required. 18% GST added for Indian billing.',
     },
+    reviewType: 'research-based',
   },
   {
     id: 'p2', slug: 'taskade',
@@ -794,6 +817,7 @@ export const TOOLS: Tool[] = [
       paid: '₹665/month Plus',
       note: 'International credit card required for paid plans. Free plan fully accessible.',
     },
+    reviewType: 'research-based',
     updateLog: [
       { date: 'May 2026', note: 'Free plan confirmed: unlimited projects, 1K AI credits/month. AI Agents feature now available on free tier.' },
     ],

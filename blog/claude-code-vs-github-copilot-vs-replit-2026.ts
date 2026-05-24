@@ -18,7 +18,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '10 min read',
-  ogImage: 'https://ainexustools.online/og/blog/claude-code-vs-github-copilot-vs-replit-2026.webp',
+  ogImage: 'https://ainexustools.online/og-compare.webp',
   excerpt: 'Claude Code went GA in early 2026 and immediately dominated developer forums. GitHub Copilot has been the category leader for two years. Replit is the go-to browser-based option for non-developers. Which one is actually worth using in 2026 — especially if you are not a professional developer? Here is the full breakdown.',
   faqs: [
     {
