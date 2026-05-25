@@ -1079,6 +1079,8 @@ function generateSitemap() {
   blocks.push(urlBlock({ loc: `${SITE}/about/`,            priority: '0.7', freq: 'monthly', mod: TODAY }));
   blocks.push(urlBlock({ loc: `${SITE}/disclosure/`,        priority: '0.3', freq: 'yearly',  mod: TODAY }));
   blocks.push(urlBlock({ loc: `${SITE}/methodology/`,       priority: '0.7', freq: 'monthly', mod: TODAY }));
+  blocks.push(urlBlock({ loc: `${SITE}/editorial-policy/`,  priority: '0.4', freq: 'yearly',  mod: TODAY }));
+  blocks.push(urlBlock({ loc: `${SITE}/how-we-analyze-ai-tools/`, priority: '0.5', freq: 'yearly', mod: TODAY }));
   blocks.push(urlBlock({ loc: `${SITE}/glossary/`,          priority: '0.8', freq: 'monthly', mod: TODAY }));
   blocks.push(urlBlock({ loc: `${SITE}/best-free-ai-tools/`,priority: '0.9', freq: 'weekly',  mod: TODAY,
     images: [{ loc: `${SITE}/og-image.png`, title: 'Best Free AI Tools 2026 — AI Nexus' }],
@@ -1809,6 +1811,32 @@ console.log('\nStatic pages:');
   writeRoute('methodology', buildPage(template, { title, description, canonical, schemas }));
 }
 
+// ── Editorial Policy page ─────────────────────────────────────────────────────
+{
+  const canonical = `${SITE}/editorial-policy/`;
+  const title = 'Editorial Policy | AI Nexus';
+  const description = 'AI Nexus editorial standards: independent research, no sponsored reviews, verified pricing, and transparent methodology.';
+  writeRoute('editorial-policy', buildPage(template, {
+    title,
+    description,
+    canonical,
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Editorial Policy', canonical]])],
+  }));
+}
+
+// ── How We Analyze AI Tools page ───────────────────────────────────────────
+{
+  const canonical = `${SITE}/how-we-analyze-ai-tools/`;
+  const title = 'How We Analyze AI Tools — 6-Step Research Process | AI Nexus';
+  const description = 'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, 200+ reviews, live pricing verification.';
+  writeRoute('how-we-analyze-ai-tools', buildPage(template, {
+    title,
+    description,
+    canonical,
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'How We Analyze AI Tools', canonical]])],
+  }));
+}
+
 // ── Week 3: Blog list page (/blog) ────────────────────────────────────────────
 console.log('\nBlog pages:');
 {
@@ -1836,8 +1864,21 @@ console.log('\nBlog pages:');
 }
 
 // ── Week 3: Individual blog post pages (/blog/:slug) ──────────────────────────
+// Canonical overrides — prevents keyword cannibalization for writing tools cluster
+const BLOG_CANONICAL_OVERRIDES = {
+  'best-ai-writing-tools-for-beginners-2026': `${SITE}/blog/best-ai-writing-tools-2026/`,
+  'best-free-ai-writing-tools-2026': `${SITE}/blog/best-ai-writing-tools-2026/`,
+};
+
+// India-specific blog slugs — need en-IN hreflang
+const INDIA_BLOG_SLUGS = new Set([
+  'best-ai-tools-in-india-2026',
+  'best-free-ai-tools-for-students-in-india-2026',
+  'best-ai-tools-for-freelancers-india-2026',
+]);
+
 for (const post of BLOG_POSTS) {
-  const canonical = `${SITE}/blog/${post.slug}/`;
+  const canonical = BLOG_CANONICAL_OVERRIDES[post.slug] || `${SITE}/blog/${post.slug}/`;
   const schemas = [
     {
       '@context': 'https://schema.org',
@@ -1879,19 +1920,21 @@ for (const post of BLOG_POSTS) {
   // M1 (SEO-Medium): surface readTimeMinutes in static HTML so crawlers
   // see it without JS — avoids thin-content signal on pre-rendered pages
   const readTime = post.readTimeMinutes ? `<span style="margin-left:12px">&#128338; ${post.readTimeMinutes} min read</span>` : '';
-  writeRoute(
-    `blog/${post.slug}`,
-    buildPage(template, {
-      title: `${post.title} | AI Nexus`,
-      description: post.metaDescription,
-      canonical,
-      schemas,
-      datePublished: post.datePublished,
-      bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>`,
-      readTimeHtml: readTime,
-      ogImage: resolveOgImage(`blog/${post.slug}`),
-    })
-  );
+  let html = buildPage(template, {
+    title: `${post.title} | AI Nexus`,
+    description: post.metaDescription,
+    canonical,
+    schemas,
+    datePublished: post.datePublished,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>`,
+    readTimeHtml: readTime,
+    ogImage: resolveOgImage(`blog/${post.slug}`),
+  });
+  if (INDIA_BLOG_SLUGS.has(post.slug)) {
+    const indiaHreflang = `    <link rel="alternate" hreflang="en-IN" href="${SITE}/blog/${post.slug}/" />\n    <link rel="alternate" hreflang="en" href="${SITE}/blog/${post.slug}/" />\n    <link rel="alternate" hreflang="x-default" href="${SITE}/" />`;
+    html = html.replace('</head>', `${indiaHreflang}\n  </head>`);
+  }
+  writeRoute(`blog/${post.slug}`, html);
 }
 
 // ── 6. Best Free AI Tools landing page (/best-free-ai-tools) ────────────────

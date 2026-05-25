@@ -14,37 +14,45 @@ const DOT_BG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg
 
 export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void }) {
 
-  // M3 (SEO-Medium): Enhanced Person schema — Google quality raters look for
-  // explicit expertise signals (knowsAbout depth, jobTitle, numberOfReviews).
+  // M3 (SEO-Medium): ProfilePage schema wrapping Person — Google EEAT requires
+  // ProfilePage on /about pages with mainEntity Person for quality rater signals.
   const authorSchema = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": SITE_CONFIG.authorName,
+    "@type": "ProfilePage",
+    "name": "About Navneet Arya — AI Tools Researcher | AI Nexus",
     "url": `${SITE_CONFIG.siteUrl}/about`,
-    "image": `${SITE_CONFIG.siteUrl}/author-photo.jpg`,
-    "description": SITE_CONFIG.authorBio,
-    "jobTitle": "AI Tools Reviewer & Founder",
-    "sameAs": [
-      "https://www.linkedin.com/in/navneetarya/",
-      "https://x.com/aryanavneet",
-      "https://ainexustools.online/about/",
-      "https://medium.com/@navneetarya1989"
-    ],
-    "knowsAbout": [
-      "Artificial Intelligence", "AI Writing Tools", "AI Image Generators",
-      "Podcast Software", "AI Video Tools", "Productivity Software",
-      "Affiliate Marketing", "Content Creation", "SEO Content Strategy"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "AI Nexus",
-      "url": SITE_CONFIG.siteUrl,
-      "description": "Independent AI tool review site — every tool independently researched before publication"
-    },
-    "hasOccupation": {
-      "@type": "Occupation",
-      "name": "AI Tools Reviewer",
-      "description": "Independently researches and compares AI tools for writers, creators, and freelancers using official documentation, verified user reviews, and pricing analysis."
+    "dateModified": "2026-05-25",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": `${SITE_CONFIG.siteUrl}/about#author`,
+      "name": SITE_CONFIG.authorName,
+      "url": `${SITE_CONFIG.siteUrl}/about`,
+      "image": `${SITE_CONFIG.siteUrl}/author-photo.jpg`,
+      "description": SITE_CONFIG.authorBio,
+      "jobTitle": "Independent AI Workflow & Automation Researcher",
+      "sameAs": [
+        "https://www.linkedin.com/in/navneetarya/",
+        "https://x.com/aryanavneet",
+        `${SITE_CONFIG.siteUrl}/about/`,
+        "https://medium.com/@navneetarya1989"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence", "AI Writing Tools", "AI Image Generators",
+        "Podcast Software", "AI Video Tools", "Productivity Software",
+        "Affiliate Marketing", "Content Creation", "SEO Content Strategy",
+        "AI Automation", "Performance Testing"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "AI Nexus",
+        "url": SITE_CONFIG.siteUrl,
+        "description": "Independent AI tool research and comparison platform — every tool independently researched before publication"
+      },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Independent AI Workflow & Automation Researcher",
+        "description": "Independently researches and compares AI tools for writers, creators, and freelancers using official documentation, verified user reviews, and pricing analysis."
+      }
     }
   };
 

@@ -745,7 +745,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           <p className="anim-fade-up d3"
             style={{ fontSize:16.5, lineHeight:1.72, color:C.mut, margin:'0 0 8px',
               maxWidth:480, marginLeft:'auto', marginRight:'auto' }}>
-            Honest reviews by <strong style={{ color:C.txt, fontWeight:600 }}>Navneet Arya</strong>. No paid placements. No fluff.
+            Independent AI research, comparisons &amp; workflow intelligence — for creators, freelancers and teams.
           </p>
 
           {/* Trust stats bar */}
@@ -920,14 +920,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       {/* ── Trending This Week ────────────────────────────────────────── */}
       {(filters.category as string) === 'All' && !filters.search && (
         <div className="scroll-reveal" style={{ maxWidth:1200, margin:'0 auto', padding:'28px 24px 0' }}>
-          <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:17,
+          <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:17,
             color:C.txt, letterSpacing:'-0.025em', marginBottom:14, display:'flex', alignItems:'center', gap:8 }}>
             <span style={{ display:'inline-flex', alignItems:'center', justifyContent:'center',
               width:22, height:22, borderRadius:6, background:C.a1card }}>
               🔥
             </span>
             Most Researched This Month
-          </div>
+          </h2>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(260px,1fr))', gap:12 }}>
             {TOOLS.filter(t => TRENDING_SLUGS.includes(t.slug)).map(tool => {
               const accent = CAT_ACCENT[tool.category] === 'a2' ? C.a2 : C.a1;
@@ -966,10 +966,10 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         {/* Header */}
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',
           marginBottom:20, flexWrap:'wrap' as const, gap:12 }}>
-          <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19,
+          <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19,
             color:C.txt, letterSpacing:'-0.025em' }}>
             {(filters.category as string) === 'All' ? 'All AI tools' : `${filters.category} tools`}
-          </div>
+          </h2>
           {(filters.category as string) !== 'All' && (
             <button onClick={() => setFilters(f => ({ ...f, category:'All' as any }))}
               style={{ fontSize:12, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8,
@@ -1153,9 +1153,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px 48px' }}>
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:20, flexWrap:'wrap' as const, gap:12 }}>
           <div>
-            <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19, color:C.txt, letterSpacing:'-0.025em', marginBottom:4 }}>
+            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19, color:C.txt, letterSpacing:'-0.025em', marginBottom:4 }}>
               Popular Comparisons
-            </div>
+            </h2>
             <div style={{ fontSize:13, color:C.mut }}>
               Can't decide between two tools? These side-by-side breakdowns cut through the noise.
             </div>

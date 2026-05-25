@@ -24,6 +24,8 @@ const CompareArticlePage = React.lazy(() => import('./pages/CompareArticlePage')
 const CompareIndexPage   = React.lazy(() => import('./pages/CompareIndexPage').then(m => ({ default: m.CompareIndexPage })));
 const CategoryPage       = React.lazy(() => import('./pages/CategoryPage').then(m => ({ default: m.CategoryPage })));
 const GlossaryPage       = React.lazy(() => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })));
+const EditorialPolicyPage = React.lazy(() => import('./pages/EditorialPolicyPage').then(m => ({ default: m.EditorialPolicyPage })));
+const HowWeAnalyzePage    = React.lazy(() => import('./pages/HowWeAnalyzePage').then(m => ({ default: m.HowWeAnalyzePage })));
 
 // ── Minimal loading fallback — avoids layout shift during chunk load ─────────
 function PageLoader() {
@@ -237,6 +239,32 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <MethodologyPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/editorial-policy' || path === '/editorial-policy/') {
+    updateMeta(
+      'Editorial Policy | AI Nexus',
+      'AI Nexus editorial standards: independent research, no sponsored reviews, verified pricing, and transparent methodology.',
+      `${SITE_CONFIG.siteUrl}/editorial-policy/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <EditorialPolicyPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/how-we-analyze-ai-tools' || path === '/how-we-analyze-ai-tools/') {
+    updateMeta(
+      'How We Analyze AI Tools — 6-Step Research Process | AI Nexus',
+      'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, 200+ reviews, live pricing verification.',
+      `${SITE_CONFIG.siteUrl}/how-we-analyze-ai-tools/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <HowWeAnalyzePage navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }
