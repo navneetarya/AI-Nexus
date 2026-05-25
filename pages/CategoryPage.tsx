@@ -16,7 +16,7 @@ const C = {
   a2:     'var(--a2)',
   txt:    'var(--txt)',
   mut:    'var(--mut)',
-  dark:   'var(--dark)',
+  dark:   'var(--hero-bg)',
   a1card: 'var(--a1-card)',
   a1brd:  'var(--a1-brd)',
   barBg:  'var(--bar-bg)',
@@ -233,7 +233,7 @@ For freelancers managing multiple clients, students juggling coursework, or team
     faqs: [
       { q: 'What is the best AI productivity tool in 2026?', a: 'Taskade is the best all-in-one AI productivity tool, combining task management, project planning, and AI agents in a single platform. Notion AI is the best for knowledge management and note-taking. The best choice depends on whether you prioritise task management or information organisation.' },
       { q: 'Can AI productivity tools replace project management software?', a: 'For small teams and solo users, yes — tools like Taskade handle tasks, projects, timelines, and collaboration with AI assistance. For large teams with complex workflows, dedicated project management tools like Jira or Asana still offer more granular control and enterprise features.' },
-      { q: 'How much time do AI productivity tools actually save?', a: 'In my testing, AI productivity tools save 5–10 hours per week for active users. The biggest savings come from AI task breakdown (turning vague goals into actionable steps), automated meeting notes, and intelligent task prioritisation.' },
+      { q: 'How much time do AI productivity tools actually save?', a: 'Research shows AI productivity tools save 5–10 hours per week for active users. The biggest savings come from AI task breakdown (turning vague goals into actionable steps), automated meeting notes, and intelligent task prioritisation.' },
       { q: 'Are there free AI productivity tools?', a: 'Taskade offers a free plan with 1 workspace and 5 projects. Notion offers a free personal plan with AI features. Both are genuinely usable on the free tier for individual productivity, though teams will need paid plans for collaboration features.' },
       { q: 'Do AI productivity tools work offline?', a: 'Most AI productivity tools require an internet connection for AI features since processing happens on remote servers. Some, like Notion, offer offline editing with AI features syncing when you reconnect. Check each tool\'s offline capabilities if this is important for your workflow.' },
     ],
@@ -477,7 +477,7 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
             color: meta.color, fontSize: 11, fontWeight: 700, letterSpacing: '.1em',
             padding: '5px 14px', borderRadius: 100, marginBottom: 20,
           }}>
-            <Zap size={11} /> {filteredTools.length} TOOLS TESTED & RANKED
+            <Zap size={11} /> {filteredTools.length} TOOLS ANALYZED & RANKED
           </div>
           <h1 style={{
             fontFamily: "'Inter',sans-serif", fontWeight: 800,
@@ -512,7 +512,7 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
           background: C.surf, border: `1px solid ${C.barBrd}`, borderRadius: 16, padding: '24px 28px',
         }}>
           <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 12 }}>
-            {meta.emoji} How I tested these {meta.title.replace('Best AI ', '').replace(' 2026', '').toLowerCase()}
+            {meta.emoji} How we research these {meta.title.replace('Best AI ', '').replace(' 2026', '').toLowerCase()}
           </h2>
           {meta.intro.split('\n\n').map((p, i) => (
             <p key={i} style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, marginBottom: i < meta.intro.split('\n\n').length - 1 ? 10 : 0 }}>

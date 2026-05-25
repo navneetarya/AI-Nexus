@@ -284,7 +284,7 @@ function App() {
 
   if (path === '/best-free-ai-tools') {
     updateMeta(
-      `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`,
+      `Best Free AI Tools 2026 — Researched & Ranked | AI Nexus`,
       `13 AI tools with permanent free plans — independently researched. Writing, image generation, video, audio, design, coding, and productivity. No credit card required.`,
       `${SITE_CONFIG.siteUrl}/best-free-ai-tools/`
     );
@@ -299,7 +299,7 @@ function App() {
   if (path === '/best-ai-tools-india') {
     updateMeta(
       `Best AI Tools for India 2026 — INR Pricing & Hindi Support | AI Nexus`,
-      `10 best AI tools for India in 2026 — independently tested with INR pricing, Hindi support status, VPN requirements, and India-specific use cases.`,
+      `10 best AI tools for India in 2026 — independently analyzed with INR pricing, Hindi support status, VPN requirements, and India-specific use cases.`,
       `${SITE_CONFIG.siteUrl}/best-ai-tools-india/`
     );
     return (
@@ -311,8 +311,8 @@ function App() {
 
   if (path === '/best-ai-logo-makers') {
     updateMeta(
-      `Best Free AI Logo Makers 2026 — Tested & Compared | AI Nexus`,
-      `4 AI logo tools independently tested — Looka, Canva AI, Leonardo.ai, and PhotoRoom. Free plan limits, INR pricing, and honest verdicts for solo creators and freelancers.`,
+      `Best Free AI Logo Makers 2026 — Researched & Compared | AI Nexus`,
+      `4 AI logo tools independently analyzed — Looka, Canva AI, Leonardo.ai, and PhotoRoom. Free plan limits, INR pricing, and honest verdicts for solo creators and freelancers.`,
       `${SITE_CONFIG.siteUrl}/best-ai-logo-makers/`
     );
     return (
@@ -324,14 +324,14 @@ function App() {
 
   // ── Category landing pages ────────────────────────────────────────────────
   const CATEGORY_ROUTES: Record<string, { category: string; title: string; desc: string }> = {
-    '/best-ai-writing-tools':      { category: 'Writing',      title: 'Best AI Writing Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI writing tools tested for 2026. Grammarly, Rytr, Writesonic, Frase, Jasper reviewed with free plans and honest verdicts.' },
-    '/best-ai-image-tools':        { category: 'Image',        title: 'Best AI Image Generators 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI image generators tested in 2026. Leonardo.ai, PhotoRoom, and more — free plans, quality comparisons, honest reviews.' },
-    '/best-ai-video-tools':        { category: 'Video',        title: 'Best AI Video Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI video tools tested in 2026. InVideo AI, Pictory, Opus Clip reviewed for faceless YouTube, Reels, and Shorts.' },
-    '/best-ai-audio-tools':        { category: 'Audio',        title: 'Best AI Audio & Voice Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI audio tools tested in 2026. Murf AI, Podcastle, ElevenLabs for voiceovers, podcasts, and voice cloning.' },
-    '/best-ai-marketing-tools':    { category: 'Marketing',    title: 'Best AI Marketing Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI marketing tools tested in 2026. Ocoya, Frase, and Jasper for SEO, social media, and content marketing.' },
-    '/best-ai-design-tools':       { category: 'Design',       title: 'Best AI Design Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI design tools tested in 2026. Gamma, Looka, Canva AI for presentations, logos, and visual content.' },
-    '/best-ai-coding-tools':       { category: 'Coding',       title: 'Best AI Coding Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI coding tools tested in 2026. Replit, GitHub Copilot alternatives — code generation, debugging, and deployment.' },
-    '/best-ai-productivity-tools': { category: 'Productivity', title: 'Best AI Productivity Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI productivity tools tested in 2026. Taskade, Notion AI, Perplexity Pro for tasks, research, and workflows.' },
+    '/best-ai-writing-tools':      { category: 'Writing',      title: 'Best AI Writing Tools 2026 — Researched & Ranked | AI Nexus', desc: 'Best AI writing tools independently researched for 2026. Grammarly, Rytr, Writesonic, Frase, Jasper reviewed with free plans and honest verdicts.' },
+    '/best-ai-image-tools':        { category: 'Image',        title: 'Best AI Image Generators 2026 — Researched & Ranked | AI Nexus', desc: 'Best AI image generators independently researched in 2026. Leonardo.ai, PhotoRoom, and more — free plans, quality comparisons, honest reviews.' },
+    '/best-ai-video-tools':        { category: 'Video',        title: 'Best AI Video Tools 2026 — Researched & Ranked | AI Nexus', desc: 'Best AI video tools independently researched in 2026. InVideo AI, Pictory, Opus Clip reviewed for faceless YouTube, Reels, and Shorts.' },
+    '/best-ai-audio-tools':        { category: 'Audio',        title: 'Best AI Audio & Voice Tools 2026 — Researched & Ranked | AI Nexus', desc: 'Best AI audio tools independently researched in 2026. Murf AI, Podcastle, ElevenLabs for voiceovers, podcasts, and voice cloning.' },
+    '/best-ai-marketing-tools':    { category: 'Marketing',    title: 'Best AI Marketing Tools 2026 — Researched & Ranked | AI Nexus', desc: 'Best AI marketing tools independently researched in 2026. Ocoya, Frase, and Jasper for SEO, social media, and content marketing.' },
+    '/best-ai-design-tools':       { category: 'Design',       title: 'Best AI Design Tools 2026 — Researched & Ranked | AI Nexus', desc: 'Best AI design tools independently researched in 2026. Gamma, Looka, Canva AI for presentations, logos, and visual content.' },
+    '/best-ai-coding-tools':       { category: 'Coding',       title: 'Best AI Coding Tools 2026 — Researched & Ranked | AI Nexus', desc: 'Best AI coding tools independently researched in 2026. Replit, GitHub Copilot alternatives — code generation, debugging, and deployment.' },
+    '/best-ai-productivity-tools': { category: 'Productivity', title: 'Best AI Productivity Tools 2026 — Researched & Ranked | AI Nexus', desc: 'Best AI productivity tools independently researched in 2026. Taskade, Notion AI, Perplexity Pro for tasks, research, and workflows.' },
   };
 
   const catRoute = CATEGORY_ROUTES[path];
@@ -345,7 +345,7 @@ function App() {
   }
 
   updateMeta(
-    `Best AI Tools 2026 — Tested & Ranked | AI Nexus`,
+      `Best AI Tools 2026 — Researched & Ranked | AI Nexus`,
     `Honest reviews of the best AI tools for writing, video, audio, podcasting, and productivity. Independently researched by ${SITE_CONFIG.authorName} — official docs, 200+ verified reviews per tool, live pricing verified May 2026.`,
     SITE_CONFIG.siteUrl
   );

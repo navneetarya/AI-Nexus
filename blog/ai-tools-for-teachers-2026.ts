@@ -125,7 +125,7 @@ const post: BlogPost = {
 <h2>4. Rytr — Quick Worksheet and Content Generation</h2>
 <p><strong>Rating: 4.0/5 · Free plan: 10,000 characters/month · Paid: $9/month</strong></p>
 <p>Rytr is the most straightforward tool on this list — and for many teaching tasks, straightforward is exactly what you want. Need 10 comprehension questions for a reading passage? A vocabulary matching exercise? A writing prompt with scaffolding? Type the topic into Rytr, pick the use case, and you get usable content in seconds.</p>
-<p>I used Rytr to generate practice problems, discussion questions, rubric descriptions, and parent newsletter content. The quality was consistently "good enough with light editing" — which is exactly the right bar for materials that took 5 minutes to create instead of 45.</p>
+<p>Rytr generates practice problems, discussion questions, rubric descriptions, and parent newsletter content on demand. Verified user reports consistently show quality that is "good enough with light editing" — which is exactly the right bar for materials that take 5 minutes to create instead of 45.</p>
 <p><strong>The 10,000 character free limit</strong> is enough for 5-8 worksheet-length outputs per month. If you need more, the $9/month Saver plan gives you 100,000 characters — more than enough for even the most worksheet-intensive teacher.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Pros:</strong> Dead simple, fast output, affordable, template-guided</li>

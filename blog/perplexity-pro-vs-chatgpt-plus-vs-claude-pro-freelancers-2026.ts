@@ -149,7 +149,7 @@ const post: BlogPost = {
 <p><strong>Winner: ChatGPT Plus for high-volume content generation.</strong> Consistent, platform-aware, and fast across different tones and formats.</p>
 
 <h2>Task 5: Summarise a long document</h2>
-<p>I pasted a 4,200-word client research brief and asked all three: <em>"Summarise this document in 5 bullet points. Each bullet should be one sentence max. Focus on the key decisions and action items."</em></p>
+<p>A 4,200-word client research brief was submitted to all three tools: <em>"Summarise this document in 5 bullet points. Each bullet should be one sentence max. Focus on the key decisions and action items."</em></p>
 
 <p>All three handled this reasonably well, which is worth noting. Basic document summarisation is a solved problem at this price tier. The differences were in nuance.</p>
 

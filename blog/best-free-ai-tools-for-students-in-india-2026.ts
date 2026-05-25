@@ -55,7 +55,7 @@ const post: BlogPost = {
 <div style="overflow-x:auto;margin:16px 0 28px;">
   <table style="width:100%;border-collapse:collapse;font-size:13px;">
     <thead>
-      <tr style="background:var(--dark);color:rgba(255,255,255,0.85);">
+      <tr style="background:var(--hero-bg);color:rgba(255,255,255,0.85);">
         <th style="padding:10px 14px;text-align:left;border-radius:8px 0 0 0;">Tool</th>
         <th style="padding:10px 14px;text-align:left;">Best For</th>
         <th style="padding:10px 14px;text-align:left;">Free Plan</th>

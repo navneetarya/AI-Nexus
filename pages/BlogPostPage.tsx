@@ -608,7 +608,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
               Explore all AI tool reviews
             </div>
             <div style={{ fontSize: 13, color: C.mut2 }}>
-              Every tool personally tested by {SITE_CONFIG.authorName}
+              Every tool independently researched by {SITE_CONFIG.authorName}
             </div>
           </div>
           <div style={{ display: 'flex', gap: 10 }}>

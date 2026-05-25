@@ -114,7 +114,7 @@ const post: BlogPost = {
 <p>For research-heavy workflows — content briefs, competitive analysis, industry deep-dives — this time saving compounds across dozens of queries per day.</p>
 
 <h2>Perplexity Deep Research: When to Use It</h2>
-<p>Perplexity Deep Research (Pro feature) takes 2–5 minutes to complete and produces multi-section reports for complex queries. I tested it on: "What is the current regulatory landscape for AI-generated content in the EU and US, and what does it mean for content creators?"</p>
+<p>Perplexity Deep Research (Pro feature) takes 2–5 minutes to complete and produces multi-section reports for complex queries. The Deep Research feature was tested on: "What is the current regulatory landscape for AI-generated content in the EU and US, and what does it mean for content creators?"</p>
 <p>The result was a 2,800-word report covering the EU AI Act's content provisions, US Section 230 implications, platform-level enforcement policies, and practical guidance for creators — with 22 citations linking to primary sources. This is a research task that would realistically take a human 2–3 hours. Deep Research completed it in 4 minutes.</p>
 <p>Deep Research is not flawless. It can miss nuance, occasionally surfaces lower-quality sources, and requires fact-checking on specific claims before publishing. But as a starting point for complex research tasks — generating a structured overview you then verify and expand — it is genuinely transformative for knowledge workers.</p>
 

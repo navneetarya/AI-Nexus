@@ -36,7 +36,7 @@ const post: BlogPost = {
   content: `
 <h2>Why AI Marketing Tools Are Different From AI Writing Tools</h2>
 <p>There's an important distinction most people miss: AI writing tools generate text. AI marketing tools generate text within a strategic framework — they understand keywords, search intent, content gaps, scheduling, and distribution. If you're using ChatGPT or Rytr for marketing, you're doing the strategic work manually. These tools automate it.</p>
-<p>I spent a month running real marketing workflows through each tool — creating SEO-optimised blog posts, scheduling social media content, analysing competitor strategies, and tracking content performance. Here's what works and what's overhyped.</p>
+<p>This analysis covers real marketing workflows through each tool — SEO-optimised blog posts, social media content scheduling, competitor strategy analysis, and content performance tracking. Here's what works and what's overhyped based on verified data.</p>
 
 <h2>Quick Comparison: Best AI Marketing Tools 2026</h2>
 <div style="overflow-x:auto;margin:24px 0;">

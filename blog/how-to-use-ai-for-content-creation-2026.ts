@@ -64,7 +64,7 @@ const post: BlogPost = {
 <div style="overflow-x:auto;margin:20px 0 28px;">
   <table style="width:100%;border-collapse:collapse;font-size:13px;">
     <thead>
-      <tr style="background:var(--dark);color:rgba(255,255,255,0.85);">
+      <tr style="background:var(--hero-bg);color:rgba(255,255,255,0.85);">
         <th style="padding:10px 14px;text-align:left;border-radius:8px 0 0 0;">Step</th>
         <th style="padding:10px 14px;text-align:left;">Tool</th>
         <th style="padding:10px 14px;text-align:left;">Time</th>
@@ -133,7 +133,7 @@ const post: BlogPost = {
 <div style="overflow-x:auto;margin:20px 0 28px;">
   <table style="width:100%;border-collapse:collapse;font-size:13px;">
     <thead>
-      <tr style="background:var(--dark);color:rgba(255,255,255,0.85);">
+      <tr style="background:var(--hero-bg);color:rgba(255,255,255,0.85);">
         <th style="padding:10px 14px;text-align:left;border-radius:8px 0 0 0;">Source Content</th>
         <th style="padding:10px 14px;text-align:left;">Repurposed Format</th>
         <th style="padding:10px 14px;text-align:left;">AI Tool</th>

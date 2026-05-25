@@ -15,7 +15,7 @@ const C = {
   a2:     'var(--a2)',
   txt:    'var(--txt)',
   mut:    'var(--mut)',
-  dark:   'var(--dark)',
+  dark:   'var(--hero-bg)',
   a1card: 'var(--a1-card)',
   a1brd:  'var(--a1-brd)',
   barBg:  'var(--bar-bg)',
@@ -469,7 +469,7 @@ export function BestAIToolsIndiaPage({ navigate, isDark, toggleTheme }: Props) {
             color: 'rgba(255,255,255,.55)', fontSize: 15, lineHeight: 1.7,
             marginBottom: 28, maxWidth: 580, margin: '0 auto 28px',
           }}>
-            10 independently tested AI tools — with actual rupee pricing, Hindi language support status, and Indian use cases.
+            10 independently analyzed AI tools — with actual rupee pricing, Hindi language support status, and Indian use cases.
             No VPN required for any tool on this list.
           </p>
 

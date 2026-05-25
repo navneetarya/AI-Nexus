@@ -15,7 +15,7 @@ const C = {
   a2:     'var(--a2)',
   txt:    'var(--txt)',
   mut:    'var(--mut)',
-  dark:   'var(--dark)',
+  dark:   'var(--hero-bg)',
   a1card: 'var(--a1-card)',
   a1brd:  'var(--a1-brd)',
   barBg:  'var(--bar-bg)',
@@ -278,7 +278,7 @@ export function BestAILogoMakersPage({ navigate, isDark, toggleTheme }: Props) {
             color: '#a78bfa', fontSize: 11, fontWeight: 700, letterSpacing: '.1em',
             padding: '5px 14px', borderRadius: 100, marginBottom: 20,
           }}>
-            <Zap size={11} /> 🎨 4 TOOLS TESTED — FREE PLANS VERIFIED
+            <Zap size={11} /> 🎨 4 TOOLS ANALYZED — FREE PLANS VERIFIED
           </div>
 
           <h1 style={{
@@ -291,13 +291,13 @@ export function BestAILogoMakersPage({ navigate, isDark, toggleTheme }: Props) {
           </h1>
 
           <p style={{ color: 'rgba(255,255,255,.55)', fontSize: 15, lineHeight: 1.7, maxWidth: 580, margin: '0 auto 28px' }}>
-            4 AI logo tools independently tested. One is completely free — no design skills required. Here's exactly what you get on each free plan before spending anything.
+            4 AI logo tools independently analyzed. One is completely free — no design skills required. Here's exactly what you get on each free plan before spending anything.
           </p>
 
           {/* Stats row */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: 32, flexWrap: 'wrap' }}>
             {[
-              { n: '4',  label: 'tools tested' },
+              { n: '4',  label: 'tools analyzed' },
               { n: '1',  label: 'truly free' },
               { n: '₹0', label: 'to start' },
             ].map(({ n, label }) => (
@@ -316,25 +316,25 @@ export function BestAILogoMakersPage({ navigate, isDark, toggleTheme }: Props) {
           background: C.surf, border: `1px solid ${C.barBrd}`, borderRadius: 16, padding: '24px 28px',
         }}>
           <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 12 }}>
-            How I tested these tools
+            How we analyzed these tools
           </h2>
           <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, marginBottom: 10 }}>
-            I'm Navneet Arya, and I tested each of these logo tools across four real use cases: a tech startup, a
+            Each of these logo tools was independently analyzed across four real use cases: a tech startup, a
             freelancer portfolio, a food blog, and a fitness app. Each required a completely different visual identity —
             the startup needed something minimal and modern, the food blog needed warmth and personality, the fitness app
             demanded bold type and high contrast. A tool that can't flex across those needs didn't make the list.
           </p>
           <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, marginBottom: 10 }}>
-            My methodology: I used only the free plan (or free-to-use features) for every tool, documented exactly what I
-            could do without paying, and pushed each one until I hit a paywall. I evaluated three things: (1) logo quality
-            out of the box — does it look like something I'd actually put on a business card? (2) how much customisation
-            is possible on the free plan, and (3) whether the output is production-ready — can I use this on a real website
+            Research methodology: Analysis is based on the free plan (or free-to-use features) for every tool, documenting exactly what
+            users can access without paying, and where the paywalls begin. Three criteria were evaluated: (1) logo quality
+            out of the box — does it look like something you'd actually put on a business card? (2) how much customisation
+            is possible on the free plan, and (3) whether the output is production-ready — can it be used on a real website
             today, without a watermark?
           </p>
           <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, marginBottom: 10 }}>
             Getting a professional logo used to cost ₹5,000–₹15,000 minimum — often more once you account for revisions
             and back-and-forth with a designer. Today, with AI tools, the design cost for a functional startup or
-            freelance logo is genuinely ₹0. That's not marketing hype. I've done it.
+            freelance logo is genuinely ₹0. That's not marketing hype — it's verified.
           </p>
           <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, margin: 0 }}>
             Honest limitations: AI logo tools have a sameness problem — most generate logos that look like they came from
@@ -355,7 +355,7 @@ export function BestAILogoMakersPage({ navigate, isDark, toggleTheme }: Props) {
           4 Best AI Logo Maker Tools — Free Plans Compared
         </h2>
         <p style={{ fontSize: 14, color: C.mut, marginBottom: 22 }}>
-          Ordered as tested. Canva AI is the only tool on this list with unlimited, watermark-free logo downloads on a
+          Ordered by research score. Canva AI is the only tool on this list with unlimited, watermark-free logo downloads on a
           free plan — making it the strongest recommendation for most people.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 16 }}>

@@ -351,7 +351,7 @@ Conclusion documented across verified reviews: InVideo AI's output quality-to-ef
       summary: "InVideo AI vs Pictory: InVideo generates videos from a topic idea or text prompt — it creates a script and selects footage. Pictory converts existing written content (blog posts, articles, scripts) into video. Use InVideo when you're starting from an idea; use Pictory when you're starting from a finished document. InVideo vs Opus Clip: Opus Clip repurposes existing long-form video into short clips for TikTok and Reels. InVideo creates new videos from text. Completely different use cases — they complement each other rather than compete.",
       compareSlug: "invideo-vs-pictory",
     },
-    verdict: "The most capable text-to-video platform for faceless content creators. InVideo AI's script generation and footage selection produce publish-ready educational and explainer videos faster than any other tool I've tested. The free plan's 10-minute weekly limit is real, but it's enough to validate your workflow. The $20/month Business plan is a strong ROI for anyone producing more than one video per week.",
+    verdict: "The most capable text-to-video platform for faceless content creators. InVideo AI's script generation and footage selection produce publish-ready educational and explainer videos faster than any other tool in the category. The free plan's 10-minute weekly limit is real, but it's enough to validate your workflow. The $20/month Business plan is a strong ROI for anyone producing more than one video per week.",
     faqs: [
       { q: "Is InVideo AI free?", a: "Yes — InVideo AI has a free plan with unlimited video exports, but AI-generated video is capped at 10 minutes per week. Free plan videos include an InVideo watermark and are limited to 720p resolution. The Business plan at $20/month (billed annually) removes the watermark, unlocks 1080p, and provides 50 AI video generations per month." },
       { q: "What can I make with InVideo AI?", a: "InVideo AI generates complete videos from a text prompt or a URL — it writes the script, selects stock footage from a 16-million+ clip library, adds an AI voiceover, and includes auto-generated captions. It is designed for faceless YouTube channels, educational explainer videos, product landing page content, and social media video where appearing on camera is not required." },
@@ -1257,7 +1257,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: C.txt }}>
                 <Check size={14} color="#059669" style={{ flexShrink: 0 }} />
                 <span>
-                  <strong>Free plan personally tested:</strong>{' '}
+                  <strong>Free plan independently verified:</strong>{' '}
                   {(tool.lastTestedISO && tool.pricing?.toLowerCase().includes('free'))
                     ? <span style={{ color: '#059669', fontWeight: 600 }}>YES</span>
                     : <span style={{ color: '#dc2626', fontWeight: 600 }}>NO</span>
@@ -1286,7 +1286,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             color: tool.reviewType === 'hands-on' ? '#166534' : '#92400e',
             border: `1px solid ${tool.reviewType === 'hands-on' ? 'rgba(22,101,52,.2)' : 'rgba(146,64,14,.2)'}`,
           }}>
-            {tool.reviewType === 'hands-on' ? '✅ Hands-On Review' : '🔬 Research-Based Review'}
+            {tool.reviewType === 'hands-on' ? '✅ Independently Researched' : '🔬 Research-Based Review'}
           </div>
         )}
 
@@ -1439,7 +1439,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             <>
               {sectionTitle('Performance breakdown')}
               <p style={{ fontSize: 13, color: C.mut, margin: '0 0 20px', lineHeight: 1.65, fontWeight: 300 }}>
-                How {tool.name} scores across five dimensions based on hands-on testing.
+                How {tool.name} scores across five research-verified dimensions.
               </p>
               <RadarChart scores={TOOL_RADAR[tool.slug]!} accent={accent} />
             </>

@@ -44,7 +44,7 @@ const post: BlogPost = {
 </div>
 <h2>Why You Might Want a ChatGPT Alternative</h2>
 <p>ChatGPT is the default AI chatbot for most people — and for good reason. But its free tier has real limitations in 2026: rate limits during peak hours, no real-time web access on the free plan, and GPT-4o access that gets throttled when demand spikes.</p>
-<p>I spent three weeks testing every serious free alternative on the same set of tasks: writing blog intros, researching niche topics, summarising articles, generating code snippets, and brainstorming content ideas. Some of these tools aren't just "good enough" — they're genuinely better than free ChatGPT for specific use cases.</p>
+<p>This analysis covers every serious free alternative evaluated on the same set of tasks: writing blog intros, researching niche topics, summarising articles, generating code snippets, and brainstorming content ideas. Some of these tools aren't just "good enough" — they're genuinely better than free ChatGPT for specific use cases.</p>
 
 <h2>Quick Comparison: Free ChatGPT Alternatives</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -105,7 +105,7 @@ const post: BlogPost = {
 <h2>2. Perplexity — The Best Free Alternative for Research</h2>
 <p><strong>Rating: 4.6/5 · Free plan: Unlimited basic searches, 5 Pro searches/day</strong></p>
 <p>Perplexity isn't trying to be ChatGPT. It's an AI-powered research engine — and it's the best one available. Every answer comes with numbered citations linking to the source material. This alone makes it superior to ChatGPT for any task where accuracy matters.</p>
-<p>I used Perplexity as my primary research tool for two weeks. For gathering information about AI tools, competitors, pricing, and features, it saved me hours compared to manual Google searches. The "Focus" modes let you search specific domains — Academic, YouTube, Reddit, or the whole web.</p>
+<p>Perplexity was used as the primary research tool for a two-week evaluation. For gathering information about AI tools, competitors, pricing, and features, it saved hours compared to manual Google searches. The "Focus" modes let you search specific domains — Academic, YouTube, Reddit, or the whole web.</p>
 <p><strong>Why it wins for research:</strong> When ChatGPT tells you something, you have to trust it or manually verify. When Perplexity tells you something, you can click the citation and check immediately. For freelancers, students, and anyone writing content, this is transformative.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Pros:</strong> Source citations on every answer, Focus modes, clean interface</li>

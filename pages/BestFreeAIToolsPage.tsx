@@ -16,7 +16,7 @@ const C = {
   a2:   'var(--a2)',
   txt:  'var(--txt)',
   mut:  'var(--mut)',
-  dark: 'var(--dark)',
+  dark: 'var(--hero-bg)',
   a1card: 'var(--a1-card)',
   a1brd:  'var(--a1-brd)',
   barBg:  'var(--bar-bg)',
@@ -77,7 +77,7 @@ function BreadcrumbSchema() {
 
 function FAQSchema() {
   const faqs = [
-    { q: 'Are there any truly free AI tools?', a: 'Yes — 13 of the tools we have tested offer a permanent free plan (not just a trial). The best completely free AI tools are Grammarly (unlimited grammar checks), Leonardo.ai (150 image credits per day), and Rytr (10,000 characters per month for writing). All three are free forever with no credit card required.' },
+    { q: 'Are there any truly free AI tools?', a: 'Yes — 13 of the tools we have independently analyzed offer a permanent free plan (not just a trial). The best completely free AI tools are Grammarly (unlimited grammar checks), Leonardo.ai (150 image credits per day), and Rytr (10,000 characters per month for writing). All three are free forever with no credit card required.' },
     { q: 'What is the best free AI writing tool?', a: 'Grammarly is the best free AI writing tool for editing and improving existing text. Rytr is the best free tool for generating new content, with 10,000 characters per month on its free plan and over 40 writing templates. Quillbot is the best free paraphrasing and summarisation tool.' },
     { q: 'What is the best free AI image generator?', a: 'Leonardo.ai is the best free AI image generator, offering 150 credits per day on its free plan — roughly 1,500 AI images per month. It requires no credit card and runs entirely in the browser. Photoroom is the best free AI tool for product photo editing and background removal.' },
     { q: 'Which free AI tools have no watermark?', a: 'Tools with no watermark on their free plan include Grammarly, Rytr, Quillbot, Leonardo.ai (downloaded images), Gamma (shareable links), Replit (shared projects), and Taskade. Murf AI, InVideo and PhotoRoom do add watermarks on the free tier.' },
@@ -303,10 +303,10 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
             lineHeight: 1.1, marginBottom: 16,
           }}>
             Best Free AI Tools 2026<br />
-            <span style={{ color: 'var(--a2)' }}>Tested & Ranked</span>
+            <span style={{ color: 'var(--a2)' }}>Researched & Ranked</span>
           </h1>
           <p style={{ color: 'rgba(255,255,255,.55)', fontSize: 15, lineHeight: 1.7, marginBottom: 28, maxWidth: 560, margin: '0 auto 28px' }}>
-            Every tool below has a permanent free plan — not a trial, not a demo. I've personally tested each one to confirm what you actually get for free and where the limits are.
+            Every tool below has a permanent free plan — not a trial, not a demo. Each has been independently researched to confirm what you actually get for free and where the limits are.
           </p>
           {/* Stats row */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: 32, flexWrap: 'wrap' }}>
