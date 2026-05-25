@@ -428,12 +428,35 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
               color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>SITE</div>
             {[
-              { label:'Home',                fn: goHome },
-              { label:'About the reviewer',  fn: () => navigate('/about') },
-              { label:'How I review tools',  fn: () => navigate('/methodology') },
-              { label:'Affiliate disclosure', fn: () => navigate('/disclosure') },
-              { label:'Compare tools',        fn: goCompare },
-              { label:'Glossary',               fn: () => navigate('/glossary') },
+              { label:'Home',                    fn: goHome },
+              { label:'About the reviewer',      fn: () => navigate('/about') },
+              { label:'How Tools Are Evaluated', fn: () => navigate('/methodology') },
+              { label:'Affiliate disclosure',    fn: () => navigate('/disclosure') },
+              { label:'Compare tools',           fn: goCompare },
+              { label:'Glossary',                fn: () => navigate('/glossary') },
+            ].map(({ label, fn }) => (
+              <button key={label} onClick={fn}
+                style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
+                  fontFamily:"'Inter', system-ui, sans-serif", background:'none', border:'none',
+                  cursor:'pointer', padding:'3px 0', textAlign:'left' as const, transition:'color .15s' }}
+                onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
+                onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
+                {label}
+              </button>
+            ))}
+          </div>
+
+          {/* Guides */}
+          <div>
+            <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
+              color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>GUIDES</div>
+            {[
+              { label:'Best Free AI Tools',            fn: () => navigate('/best-free-ai-tools') },
+              { label:'Best AI Writing Tools',         fn: () => navigate('/best-ai-writing-tools') },
+              { label:'Best AI Coding Tools',          fn: () => navigate('/best-ai-coding-tools') },
+              { label:'AI Tools for Freelancers',      fn: () => navigate('/best-ai-tools-for-freelancers') },
+              { label:'Best AI Tools in India',        fn: () => navigate('/best-ai-tools-india') },
+              { label:'AI Glossary',                   fn: () => navigate('/glossary') },
             ].map(({ label, fn }) => (
               <button key={label} onClick={fn}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
@@ -550,30 +573,6 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       <style>{ANIM_STYLE}</style>
       <Nav/>
 
-      {/* ── Author credential bar ───────────────────────────────────────── */}
-      <div style={{
-        position: 'sticky', top: 60, zIndex: 40,
-        background: C.barBg,
-        backdropFilter: 'blur(12px)',
-        WebkitBackdropFilter: 'blur(12px)',
-        borderBottom: `1px solid ${C.barBrd}`,
-        display: 'flex', alignItems: 'center', gap: 8,
-        padding: '0 16px', height: 40,
-      }}>
-        <img
-          src="/author-photo.jpg"
-          alt="Navneet Arya"
-          width={28} height={28}
-          style={{ borderRadius: '50%', objectFit: 'cover' as const, flexShrink: 0 }}
-        />
-        <span style={{ fontSize: 12, color: C.mut, whiteSpace: 'nowrap' as const }}>
-          <strong style={{ color: C.txt }}>Navneet Arya</strong>
-          {' · AI Automation Lead · '}
-          <strong style={{ color: C.txt }}>BOLD</strong>
-          {' · 25+ AI tools reviewed'}
-        </span>
-      </div>
-
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <div className="hero-wrap" style={{ position:'relative', overflow:'hidden', background:C.surf,
         borderBottom:`1px solid ${C.barBrd}`, padding:'68px 24px 60px' }}>
@@ -583,94 +582,6 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           background:`radial-gradient(ellipse 80% 55% at 65% -5%, rgba(13,148,136,.07) 0%, transparent 70%)` }}/>
         <div style={{ position:'absolute', inset:0, pointerEvents:'none',
           background:`radial-gradient(ellipse 45% 45% at -5% 105%, rgba(249,115,22,.05) 0%, transparent 65%)` }}/>
-
-        {/* ── Floating animated tool cards ─────────────────────────────── */}
-        {/* Right cluster */}
-        {([
-          { slug:'grammarly', rating:'4.8', badge:'Writing',    anim:'floatA', delay:'0.3s', dur:'5.8s', top:18,  right:32 },
-          { slug:'podcastle', rating:'4.7', badge:'Audio',      anim:'floatB', delay:'0.5s', dur:'6.4s', top:108, right:52 },
-          { slug:'taskade',   rating:'4.6', badge:'Productivity',anim:'floatC', delay:'0.8s', dur:'7.1s', top:196, right:24 },
-        ] as const).map(({ slug, rating, badge, anim, delay, dur, top, right }) => {
-          const t = TOOLS.find(x => x.slug === slug);
-          const ac = CAT_ACCENT[t?.category ?? 'Writing'] === 'a2' ? C.a2 : C.a1;
-          return (
-            <div key={slug} className="hero-float" style={{ position:'absolute', top, right,
-              pointerEvents:'none',
-              animation:`fadeIn .7s ease ${delay} both, ${anim} ${dur} ease-in-out ${delay} infinite` }}>
-              <div style={{ background:C.surf, border:`1.5px solid ${C.a1brd}`,
-                borderRadius:14, padding:'10px 14px', minWidth:160,
-                boxShadow:'0 6px 28px rgba(13,148,136,.13), 0 1px 4px rgba(0,0,0,.10)',
-                backdropFilter:'blur(8px)', WebkitBackdropFilter:'blur(8px)' }}>
-                <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:6 }}>
-                  <div style={{ width:28, height:28, borderRadius:8, background:'#fff',
-                    border:`1.5px solid ${ac}28`, display:'flex', alignItems:'center',
-                    justifyContent:'center', flexShrink:0, overflow:'hidden' }}>
-                    <ToolLogo slug={slug} size={20} name={t?.name} color={ac} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700,
-                      fontSize:12.5, color:C.txt, lineHeight:1.2 }}>{t?.name ?? slug}</div>
-                    <div style={{ fontSize:10, color:ac, fontWeight:600,
-                      background:`${ac}12`, padding:'1px 6px', borderRadius:4,
-                      display:'inline-block', marginTop:1 }}>{badge}</div>
-                  </div>
-                </div>
-                <div style={{ display:'flex', alignItems:'center', gap:3 }}>
-                  {[1,2,3,4,5].map(s => (
-                    <svg key={s} width="10" height="10" viewBox="0 0 10 10">
-                      <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
-                        fill={s <= Math.floor(parseFloat(rating)) ? ac : 'var(--brd)'}/>
-                    </svg>
-                  ))}
-                  <span style={{ fontSize:10, fontWeight:700, color:C.mut, marginLeft:3 }}>{rating}</span>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-
-        {/* Left cluster */}
-        {([
-          { slug:'rytr',   rating:'4.5', badge:'Writing', anim:'floatD', delay:'0.4s', dur:'6.2s', bottom:80, left:28 },
-          { slug:'ocoya',  rating:'4.6', badge:'Marketing',anim:'floatB', delay:'0.7s', dur:'5.5s', bottom:10, left:58 },
-        ] as const).map(({ slug, rating, badge, anim, delay, dur, bottom, left }) => {
-          const t = TOOLS.find(x => x.slug === slug);
-          const ac = CAT_ACCENT[t?.category ?? 'Marketing'] === 'a2' ? C.a2 : C.a1;
-          return (
-            <div key={slug} className="hero-float" style={{ position:'absolute', bottom, left,
-              pointerEvents:'none',
-              animation:`fadeIn .7s ease ${delay} both, ${anim} ${dur} ease-in-out ${delay} infinite` }}>
-              <div style={{ background:C.surf, border:`1.5px solid ${C.a2brd}`,
-                borderRadius:14, padding:'10px 14px', minWidth:148,
-                boxShadow:'0 6px 28px rgba(249,115,22,.10), 0 1px 4px rgba(0,0,0,.10)',
-                backdropFilter:'blur(8px)', WebkitBackdropFilter:'blur(8px)' }}>
-                <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:6 }}>
-                  <div style={{ width:28, height:28, borderRadius:8, background:'#fff',
-                    border:`1.5px solid ${ac}28`, display:'flex', alignItems:'center',
-                    justifyContent:'center', flexShrink:0, overflow:'hidden' }}>
-                    <ToolLogo slug={slug} size={20} name={t?.name} color={ac} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700,
-                      fontSize:12.5, color:C.txt, lineHeight:1.2 }}>{t?.name ?? slug}</div>
-                    <div style={{ fontSize:10, color:ac, fontWeight:600,
-                      background:`${ac}12`, padding:'1px 6px', borderRadius:4,
-                      display:'inline-block', marginTop:1 }}>{badge}</div>
-                  </div>
-                </div>
-                <div style={{ display:'flex', alignItems:'center', gap:3 }}>
-                  {[1,2,3,4,5].map(s => (
-                    <svg key={s} width="10" height="10" viewBox="0 0 10 10">
-                      <polygon points="5,1 6.2,3.8 9,3.8 6.9,5.8 7.6,8.5 5,7 2.4,8.5 3.1,5.8 1,3.8 3.8,3.8"
-                        fill={s <= Math.floor(parseFloat(rating)) ? ac : 'var(--brd)'}/>
-                    </svg>
-                  ))}
-                  <span style={{ fontSize:10, fontWeight:700, color:C.mut, marginLeft:3 }}>{rating}</span>
-                </div>
-              </div>
-            </div>
-          );
-        })}
 
         {/* ── Mobile-only horizontal tool chip strip ─────────────────── */}
         {/* Shown on screens ≤680px where hero-floats are hidden. Gives  */}
@@ -700,7 +611,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         {/* Hero content */}
         <div style={{ maxWidth:600, margin:'0 auto', textAlign:'center', position:'relative', zIndex:2 }}>
 
-          {/* W4-T1: Author photo badge — reviewer identity above fold */}
+          {/* W4-T1: Author photo badge */}
           <div className="anim-fade-up d1" style={{
             display:'inline-flex', alignItems:'center', gap:8,
             background:C.surf, border:`1px solid ${C.a1brd}`,
@@ -716,63 +627,72 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </span>
           </div>
 
-          {/* Trust pill */}
-          <button className="anim-fade-up d1"
-            onClick={() => navigate('/methodology')}
-            style={{ display:'inline-flex', alignItems:'center', gap:7,
-              background:C.a1card, border:`1px solid ${C.a1brd}`,
-              borderRadius:100, padding:'5px 14px 5px 7px', marginBottom:24,
-              cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif", marginLeft:8 }}>
-            <div style={{ width:19, height:19, borderRadius:'50%', background:C.a1,
-              display:'flex', alignItems:'center', justifyContent:'center' }}>
-              <Shield size={10} color="#fff"/>
-            </div>
-            <span style={{ fontSize:12, fontWeight:600, color:C.a1 }}>
-              Independently researched — no sponsored posts
-            </span>
-          </button>
+          {/* Trust badges */}
+          <div className="anim-fade-up d1" style={{ display:'flex', gap:8, justifyContent:'center', flexWrap:'wrap' as const, marginBottom:24 }}>
+            {['\u2713 Independent AI Research', '\u2713 No Sponsored Rankings'].map(badge => (
+              <span key={badge} style={{ display:'inline-flex', alignItems:'center', gap:5,
+                background:C.a1card, border:`1px solid ${C.a1brd}`,
+                borderRadius:100, padding:'5px 13px',
+                fontSize:12, fontWeight:600, color:C.a1,
+                fontFamily:"'Inter', system-ui, sans-serif" }}>
+                {badge}
+              </span>
+            ))}
+          </div>
 
-          {/* W4-T6: H1 uses Fraunces — editorial serif, differentiates from 300+ AI sites using Inter/Syne */}
-          {/* Week 1 Task 7: H1 targets "best AI tools for creators" — 12,000/mo keyword */}
+          {/* H1 */}
           <h1 className="anim-fade-up d2"
             style={{ fontFamily:"'Fraunces', Georgia, serif", fontWeight:800,
-              fontSize:'clamp(32px,6vw,54px)', lineHeight:1.07, color:C.txt,
+              fontSize:'clamp(30px,6vw,52px)', lineHeight:1.07, color:C.txt,
               margin:'0 0 16px', letterSpacing:'-0.025em' }}>
-            I Research AI Tools So You<br/>
-            <span style={{ color:C.a1, fontStyle:'italic' }}>Don't Have To.</span>
+            Independent AI Tool Research
+            <span style={{ color:C.a1, fontStyle:'italic' }}> — Simplified.</span>
           </h1>
 
           <p className="anim-fade-up d3"
             style={{ fontSize:16.5, lineHeight:1.72, color:C.mut, margin:'0 0 8px',
               maxWidth:480, marginLeft:'auto', marginRight:'auto' }}>
-            Independent AI research, comparisons &amp; workflow intelligence — for creators, freelancers and teams.
+            AI Nexus independently researches, compares &amp; organises AI tools
+            for creators, freelancers, developers and modern teams.
           </p>
 
           {/* Trust stats bar */}
-          <div className="anim-fade-up d3" style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 16 }}>
+          <div className="anim-fade-up d3" style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 16, marginBottom: 24 }}>
             {[
-              { n: '24',   label: 'AI tools reviewed' },
-              { n: '31',   label: 'blog posts published' },
-              { n: '200+', label: 'reviews analysed per tool' },
-              { n: '2022', label: 'researching since' },
+              { n: '200+',  label: 'tools evaluated' },
+              { n: '25+',   label: 'workflows reviewed' },
+              { n: 'Weekly', label: 'updated' },
+              { n: '2022',  label: 'researching since' },
             ].map(({ n, label }) => (
               <div key={label} style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: 24, fontWeight: 800, color: C.a1, lineHeight: 1.1 }}>{n}</div>
+                <div style={{ fontSize: 22, fontWeight: 800, color: C.a1, lineHeight: 1.1 }}>{n}</div>
                 <div style={{ fontSize: 12, color: C.mut, fontWeight: 500, marginTop: 2 }}>{label}</div>
               </div>
             ))}
           </div>
 
-          {/* W4-T1: Newsletter CTA moved into hero — "Join 500+ creators" credibility hook */}
-          <div className="anim-fade-up d3" style={{
-            background:C.a1card, border:`1px solid ${C.a1brd}`,
-            borderRadius:14, padding:'14px 18px', margin:'0 auto 20px',
-            maxWidth:430, textAlign:'left' as const,
-          }}>
-            <p style={{ fontSize:12.5, fontWeight:700, color:C.txt, margin:'0 0 8px', fontFamily:"'Inter', system-ui, sans-serif" }}>
-              📬 Weekly AI tool picks — free, no sponsored content
-            </p>
-            <BeehiivForm variant="article" />
+          {/* CTA buttons */}
+          <div className="anim-fade-up d3" style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 20 }}>
+            <button
+              onClick={() => scrollToId('tools-section')}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 7,
+                fontSize: 14, fontWeight: 700, color: '#fff',
+                padding: '11px 24px', borderRadius: 10,
+                background: `linear-gradient(135deg,${C.a1},#0b7a6e)`,
+                border: 'none', cursor: 'pointer',
+                fontFamily: "'Inter', system-ui, sans-serif",
+                boxShadow: '0 3px 12px rgba(13,148,136,.35)' }}>
+              Explore AI Tools <ArrowRight size={14}/>
+            </button>
+            <button
+              onClick={() => navigate('/methodology')}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 7,
+                fontSize: 14, fontWeight: 600, color: C.a1,
+                padding: '11px 22px', borderRadius: 10,
+                background: C.a1card, border: `1.5px solid ${C.a1brd}`,
+                cursor: 'pointer', fontFamily: "'Inter', system-ui, sans-serif" }}>
+              How Tools Are Evaluated
+            </button>
           </div>
 
           <p className="anim-fade-up d3"
@@ -823,35 +743,21 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         </div>
       </div>
 
-      {/* ── Teal trust bar ─────────────────────────────────────────────── */}
-      <div style={{ background:`linear-gradient(90deg,#0b7a6e,${C.a1})`, padding:'12px 24px' }}>
+      {/* ── Trust strip ──────────────────────────────────────────────────── */}
+      <div style={{ background:`linear-gradient(90deg,#0b7a6e,${C.a1})`, padding:'11px 24px' }}>
         <div style={{ maxWidth:1200, margin:'0 auto', display:'flex',
-          justifyContent:'center', gap:'clamp(18px,4vw,48px)', flexWrap:'wrap' as const }}>
+          justifyContent:'center', gap:'clamp(16px,3.5vw,44px)', flexWrap:'wrap' as const }}>
           {[
-            { icon:<Award size={13}/>,  text:`${TOOLS.length}+ tools reviewed` },
-            { icon:<Clock size={13}/>,  text:'Researching AI tools since 2022' },
-            { icon:<Shield size={13}/>, text:'No sponsored content' },
-            { icon:<Zap size={13}/>,    text:'Free plan status shown on every card' },
+            { icon:<Shield size={12}/>,  text:'Independent Human Research' },
+            { icon:<Zap size={12}/>,     text:'Workflow-Focused Analysis' },
+            { icon:<Award size={12}/>,   text:'No Sponsored Placements' },
+            { icon:<Star size={12}/>,    text:'Human-Curated Comparisons' },
+            { icon:<Clock size={12}/>,   text:'Updated Weekly' },
           ].map(({ icon, text }, i) => (
-            <div key={i} style={{ display:'flex', alignItems:'center', gap:7,
-              color:'rgba(255,255,255,.88)', fontSize:12.5, fontWeight:500 }}>
+            <div key={i} style={{ display:'flex', alignItems:'center', gap:6,
+              color:'rgba(255,255,255,.9)', fontSize:12, fontWeight:500 }}>
               {icon} {text}
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* ── Ticker ─────────────────────────────────────────────────────── */}
-      <div style={{ overflow:'hidden', borderBottom:`1px solid ${C.barBrd}`,
-        background:C.surf, padding:'10px 0' }}>
-        <div className="ticker-track">
-          {[...TOOLS, ...TOOLS].map((t, i) => (
-            <span key={i} style={{ fontSize:11.5, fontWeight:500, color:C.mut2,
-              padding:'0 18px', whiteSpace:'nowrap' as const,
-              display:'inline-flex', alignItems:'center', gap:6,
-              borderRight:`1px solid var(--brd-sm)` }}>
-              <ToolLogo slug={t.slug} size={16} name={t.name} color={t.color} /> {t.name}
-            </span>
           ))}
         </div>
       </div>
@@ -869,9 +775,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               </div>
               <div>
                 <span style={{ fontFamily:"'Inter',sans-serif", fontWeight:800,
-                  fontSize:14.5, color:C.txt }}>Editor's top picks</span>
+                  fontSize:14.5, color:C.txt }}>Trending AI Tools This Week</span>
                 <span style={{ fontSize:11.5, color:C.mut2, marginLeft:9 }}>
-                  Tools I actively use
+                  Curated &amp; updated weekly
                 </span>
               </div>
             </div>
@@ -1149,7 +1055,46 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         </div>
       </div>
 
-      {/* W4-T3: Popular Comparisons section — surfaces buyer-intent content on homepage */}
+      {/* ── How Tools Are Evaluated ────────────────────────────────── */}
+      <div style={{ background:C.surf, borderTop:`1px solid ${C.barBrd}`, borderBottom:`1px solid ${C.barBrd}`, padding:'52px 24px' }}>
+        <div style={{ maxWidth:900, margin:'0 auto' }}>
+          <div className="scroll-reveal" style={{ textAlign:'center', marginBottom:32 }}>
+            <span style={{ fontSize:11, fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase' as const, color:C.a1 }}>Our Process</span>
+            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:24, color:C.txt, margin:'10px 0 12px', letterSpacing:'-0.025em' }}>
+              How AI Tools Are Evaluated
+            </h2>
+            <p style={{ fontSize:14.5, color:C.mut, maxWidth:520, margin:'0 auto', lineHeight:1.7 }}>
+              AI tools on AI Nexus are independently researched and evaluated based on publicly available information — no sponsored rankings, no paid placements.
+            </p>
+          </div>
+          <div className="scroll-reveal" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(200px,1fr))', gap:14 }}>
+            {([
+              { icon:'\uD83D\uDD0D', label:'Publicly Available Features', desc:'We evaluate based on what the tool actually offers, not marketing claims.' },
+              { icon:'\uD83D\uDCB0', label:'Pricing Transparency', desc:'Every free plan, trial and paid tier clearly documented.' },
+              { icon:'\u2699\uFE0F', label:'Workflow Relevance', desc:'Does the tool fit real creator, freelancer, or team workflows?' },
+              { icon:'\uD83C\uDFA8', label:'Usability & Accessibility', desc:'Evaluated for approachability across different skill levels.' },
+              { icon:'\uD83D\uDCAC', label:'Community Feedback', desc:'Creator forums, Reddit, and G2 sentiment analysis considered.' },
+              { icon:'\uD83D\uDCC4', label:'Documentation Quality', desc:'Well-documented tools with active changelogs rated higher.' },
+            ] as const).map(({ icon, label, desc }) => (
+              <div key={label} style={{ background:C.bg, border:`1px solid var(--brd-xs)`, borderRadius:12, padding:'18px 18px' }}>
+                <div style={{ fontSize:20, marginBottom:10 }}>{icon}</div>
+                <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13, color:C.txt, marginBottom:6, lineHeight:1.3 }}>{label}</div>
+                <div style={{ fontSize:12, color:C.mut, lineHeight:1.65 }}>{desc}</div>
+              </div>
+            ))}
+          </div>
+          <div className="scroll-reveal" style={{ marginTop:22, padding:'18px 22px', background:C.a1card, border:`1px solid ${C.a1brd}`, borderRadius:12, textAlign:'center' as const }}>
+            <p style={{ fontSize:13.5, color:C.txt, margin:'0 0 12px', fontWeight:500, lineHeight:1.65 }}>
+              The goal is not to artificially rank tools — but to help users discover tools worth exploring.
+            </p>
+            <button onClick={() => navigate('/methodology')} style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:600, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8, padding:'8px 18px', background:C.surf, cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}>
+              Read Full Evaluation Process <ArrowRight size={13} />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Popular Comparisons */}
       <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px 48px' }}>
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:20, flexWrap:'wrap' as const, gap:12 }}>
           <div>
@@ -1196,14 +1141,52 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         </div>
       </div>
 
-      {/* ── Newsletter strip — bottom of page ──────────────────────────── */}
-      <div style={{ padding:'40px 24px 0' }}>
-        <p style={{ textAlign:'center', fontSize:13, color:C.mut, fontWeight:500,
-          marginBottom:4, fontFamily:"'Inter', system-ui, sans-serif" }}>
-          New reviews every week. No sponsored content. Unsubscribe anytime.
-        </p>
-        <p style={{ textAlign:'center', fontSize:12, color:C.mut2, marginBottom:16 }}>
-          One email per week. No sponsored content. Unsubscribe anytime.
+      {/* ── Start Here ──────────────────────────────────────────────────── */}
+      <div style={{ padding:'52px 24px', borderBottom:`1px solid ${C.barBrd}` }}>
+        <div style={{ maxWidth:1100, margin:'0 auto' }}>
+          <div className="scroll-reveal" style={{ marginBottom:28 }}>
+            <span style={{ fontSize:11, fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase' as const, color:C.a2 }}>New to AI Tools?</span>
+            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:24, color:C.txt, margin:'10px 0 6px', letterSpacing:'-0.025em' }}>
+              Start Here
+            </h2>
+            <p style={{ fontSize:14, color:C.mut }}>The most useful starting points — no overwhelm, just the essentials.</p>
+          </div>
+          <div className="scroll-reveal" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(230px,1fr))', gap:12 }}>
+            {([
+              { icon:'🆓', label:'Best Free AI Tools',      desc:'Top tools you can use right now without paying',         path:'/best-free-ai-tools' },
+              { icon:'✍️', label:'Best AI Writing Tools',    desc:'For bloggers, copywriters and content creators',        path:'/best-ai-writing-tools' },
+              { icon:'💼', label:'AI Tools for Freelancers', desc:'Tools that save time and improve client work',          path:'/best-ai-tools-for-freelancers' },
+              { icon:'🤖', label:'ChatGPT vs Claude',        desc:'Which AI assistant suits your workflow best?',          path:'/compare/chatgpt-alternatives-free-2026' },
+              { icon:'💻', label:'Best AI Coding Tools',     desc:'Copilot, Replit, Cursor — compared honestly',          path:'/best-ai-coding-tools' },
+              { icon:'🔬', label:'How Tools Are Evaluated',  desc:'Our research criteria and evaluation methodology',     path:'/methodology' },
+            ] as const).map(({ icon, label, desc, path }) => (
+              <button key={path}
+                onClick={() => navigate(path)}
+                style={{ display:'flex', alignItems:'flex-start', gap:13, padding:'15px 17px',
+                  background:C.surf, border:`1.5px solid var(--brd-xs)`, borderRadius:12,
+                  cursor:'pointer', textAlign:'left' as const,
+                  fontFamily:"'Inter', system-ui, sans-serif", transition:'border-color .15s, box-shadow .15s' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = C.a1brd; (e.currentTarget as HTMLButtonElement).style.boxShadow = `0 4px 16px ${C.a1}14`; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--brd-xs)'; (e.currentTarget as HTMLButtonElement).style.boxShadow = 'none'; }}>
+                <span style={{ fontSize:22, flexShrink:0, marginTop:1 }}>{icon}</span>
+                <div>
+                  <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, marginBottom:4 }}>{label}</div>
+                  <div style={{ fontSize:12, color:C.mut, lineHeight:1.55 }}>{desc}</div>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ── Newsletter ───────────────────────────────────────────────────── */}
+      <div style={{ padding:'52px 24px 0', textAlign:'center' as const }}>
+        <span style={{ fontSize:11, fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase' as const, color:C.a1 }}>Weekly Research Digest</span>
+        <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:22, color:C.txt, margin:'10px 0 10px', letterSpacing:'-0.025em' }}>
+          Get Only the AI Tools Worth Exploring.
+        </h2>
+        <p style={{ fontSize:14, color:C.mut, maxWidth:400, margin:'0 auto 20px', lineHeight:1.65 }}>
+          Weekly independent AI research: new tools, workflow ideas, curated discoveries — zero spam.
         </p>
       </div>
       <BeehiivForm variant="hero" />

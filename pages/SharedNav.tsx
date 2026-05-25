@@ -160,6 +160,11 @@ export function SharedNav({
     navigate('/glossary');
   };
 
+  const handleMethodology = () => {
+    closeMobile();
+    navigate('/methodology');
+  };
+
   return (
     <>
       <style>{NAV_CSS}</style>
@@ -304,21 +309,6 @@ export function SharedNav({
               Blog
             </button>
 
-            {/* Compare Index */}
-            <button
-              className="shared-nav-btn"
-              onClick={handleCompareIndex}
-              style={{
-                fontSize: 14, fontWeight: 500,
-                color: C.mut,
-                padding: '7px 13px', borderRadius: 8,
-                background: 'transparent',
-                border: 'none', cursor: 'pointer',
-                fontFamily: "'Inter', system-ui, sans-serif",
-              }}
-            >
-              Compare
-            </button>
 
             {/* Best Lists — with dropdown */}
             <div className="bestlists-wrap" ref={bestListsRef}>
@@ -379,6 +369,22 @@ export function SharedNav({
               }}
             >
               Glossary
+            </button>
+
+            {/* How I Review — trust signal in nav */}
+            <button
+              className="shared-nav-btn"
+              onClick={handleMethodology}
+              style={{
+                fontSize: 13, fontWeight: 700,
+                color: C.a1,
+                padding: '7px 13px', borderRadius: 8,
+                background: C.a1card,
+                border: `1px solid ${C.a1brd}`, cursor: 'pointer',
+                fontFamily: "'Inter', system-ui, sans-serif",
+              }}
+            >
+              How I Review
             </button>
 
             {/* Trust pill — hidden on mobile via CSS */}
@@ -456,6 +462,7 @@ export function SharedNav({
               { label: 'Best AI Logo Makers',           fn: () => { closeMobile(); navigate('/best-ai-logo-makers'); } },
               { label: 'Best AI Tools for Freelancers', fn: () => { closeMobile(); navigate('/best-ai-tools-for-freelancers'); } },
               { label: 'Glossary',   fn: handleGlossary },
+              { label: 'How I Review', fn: handleMethodology },
               { label: 'Privacy Policy', fn: () => { closeMobile(); navigate('/privacy'); } },
             ].map(({ label, fn }) => (
               <button
