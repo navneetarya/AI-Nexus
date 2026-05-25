@@ -549,8 +549,6 @@ export function SharedNav({
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', padding: '0 0 12px', borderBottom: `1px solid ${C.barBrd}`, marginBottom: 12 }}>
           <a href="https://www.linkedin.com/in/navneetarya/" target="_blank" rel="noopener noreferrer" style={{ color: C.mut, fontSize: 12, textDecoration: 'none' }}>LinkedIn</a>
           <a href="https://x.com/aryanavneet" target="_blank" rel="noopener noreferrer" style={{ color: C.mut, fontSize: 12, textDecoration: 'none' }}>X / Twitter</a>
-          <a href="https://www.youtube.com/@navneetarya" target="_blank" rel="noopener noreferrer" style={{ color: C.mut, fontSize: 12, textDecoration: 'none' }}>YouTube</a>
-          <a href="https://www.instagram.com/navneet.arya.official/" target="_blank" rel="noopener noreferrer" style={{ color: C.mut, fontSize: 12, textDecoration: 'none' }}>Instagram</a>
         </div>
         <div style={{
           maxWidth: 1200, margin: '0 auto',
