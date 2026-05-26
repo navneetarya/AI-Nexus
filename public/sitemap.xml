@@ -10,6 +10,10 @@
   <url><loc>https://ainexustools.online/disclosure/</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2026-04-29</lastmod></url>
   <url><loc>https://ainexustools.online/methodology/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-04-29</lastmod></url>
   <url><loc>https://ainexustools.online/glossary/</loc><changefreq>weekly</changefreq><priority>0.75</priority><lastmod>2026-05-22</lastmod></url>
+  <url><loc>https://ainexustools.online/contact/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-05-26</lastmod></url>
+  <url><loc>https://ainexustools.online/editorial-policy/</loc><changefreq>yearly</changefreq><priority>0.5</priority><lastmod>2026-05-26</lastmod></url>
+  <url><loc>https://ainexustools.online/how-we-analyze-ai-tools/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-05-26</lastmod></url>
+  <url><loc>https://ainexustools.online/privacy/</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2026-05-26</lastmod></url>
 
   <!-- Category landing page (22K/mo keyword) -->
   <url><loc>https://ainexustools.online/best-free-ai-tools/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-04</lastmod></url>
@@ -28,6 +32,8 @@
   <url><loc>https://ainexustools.online/compare/grammarly-vs-writesonic/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
   <url><loc>https://ainexustools.online/compare/murf-ai-vs-elevenlabs/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
   <url><loc>https://ainexustools.online/compare/taskade-vs-asana/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/chatgpt-vs-claude/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-26</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/cursor-vs-windsurf/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-26</lastmod></url>
 
   <!-- Affiliate picks — highest priority tool pages — Week 6: image:image tags added -->
   <url><loc>https://ainexustools.online/tools/rytr/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-05</lastmod>

@@ -26,6 +26,7 @@ const CategoryPage       = React.lazy(() => import('./pages/CategoryPage').then(
 const GlossaryPage       = React.lazy(() => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })));
 const EditorialPolicyPage = React.lazy(() => import('./pages/EditorialPolicyPage').then(m => ({ default: m.EditorialPolicyPage })));
 const HowWeAnalyzePage    = React.lazy(() => import('./pages/HowWeAnalyzePage').then(m => ({ default: m.HowWeAnalyzePage })));
+const ContactPage         = React.lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
 
 // ── Minimal loading fallback — avoids layout shift during chunk load ─────────
 function PageLoader() {
@@ -265,6 +266,19 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <HowWeAnalyzePage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/contact' || path === '/contact/') {
+    updateMeta(
+      'Contact AI Nexus — Editorial, Research & Press Enquiries',
+      'Contact Navneet Arya at AI Nexus for editorial enquiries, research collaboration, press contact, and affiliate partnership questions.',
+      `${SITE_CONFIG.siteUrl}/contact/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <ContactPage navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }

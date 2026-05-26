@@ -1,10 +1,9 @@
-import { defineConfig, loadEnv } from 'vite';
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     // @ts-ignore process is always defined in the node build environment
     const root = process.cwd();
-    const env = loadEnv(mode, root, '');
     
     return {
       base: '/', 
@@ -19,13 +18,15 @@ export default defineConfig(({ mode }) => {
         }
       },
       define: {
-        'process.env': env
+        // Only expose NODE_ENV — never the entire process.env object
+        // (passing the full object would leak OS-level vars like PATH into the bundle)
+        'process.env.NODE_ENV': JSON.stringify(mode),
       },
       build: {
-        // Raise the warning threshold — our lazy-loaded page chunks will be
-        // individually larger than the default 500KB limit, but that is fine
-        // because they are only downloaded on navigation, not on initial load.
-        chunkSizeWarningLimit: 600,
+        // Raise the warning threshold — the main bundle is intentionally large
+        // because all tool/blog/compare data is statically bundled for fast navigation.
+        // Gzipped transfer size is ~266 kB which is within acceptable range.
+        chunkSizeWarningLimit: 1000,
         rollupOptions: {
           output: {
             manualChunks(id) {
