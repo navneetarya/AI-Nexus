@@ -1,4 +1,4 @@
-// blog/best-midjourney-alternatives-2026.ts
+﻿// blog/best-midjourney-alternatives-2026.ts
 // Target keyword: "best midjourney alternatives" — 4,400/mo
 // Word count: ~1,550 words
 
@@ -9,8 +9,8 @@ const post: BlogPost = {
   title: 'Best Midjourney Alternatives in 2026 — Free & Paid Options Tested',
   seoTitle: 'Best Midjourney Alternatives 2026 — Tested',
   metaDescription: 'Leonardo.ai, Stable Diffusion, DALL-E, and Adobe Firefly compared as Midjourney alternatives in 2026 — which produces comparable quality at a lower price, and which has the best free plan.',
-  datePublished: '2026-05-04',
-  dateModified: '2026-05-08',
+  datePublished: '2026-05-02',
+  dateModified: '2026-05-02',
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '9 min read',

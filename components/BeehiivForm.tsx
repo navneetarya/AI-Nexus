@@ -247,7 +247,7 @@ export function StickyNewsletterBar() {
           Get the 3 best new AI tools every Friday
         </div>
         <div style={{ fontSize: 12, color: 'var(--mut)', marginBottom: 12 }}>
-          Navneet Arya · AI Automation Professional · No spam
+          Navneet Arya · Independent AI Tools Researcher · No spam
         </div>
 
         {/* Compact form — email only on mobile */}
@@ -346,7 +346,7 @@ function HeroStrip() {
             </span>
           </div>
           <p style={{ fontSize: 12.5, color: 'var(--mut)', margin: '0 0 0 39px', lineHeight: 1.6 }}>
-            Independently researched by Navneet Arya · AI Automation Professional · No spam. Unsubscribe anytime.
+            Independently researched by Navneet Arya · Independent AI Tools Researcher · No spam. Unsubscribe anytime.
           </p>
         </div>
 
@@ -626,7 +626,7 @@ function ArticleCard() {
             Get the 3 best new AI tools every Friday
           </div>
           <div style={{ fontSize: 12.5, color: 'var(--mut)', marginTop: 2 }}>
-            Independently researched by Navneet Arya · AI Automation Professional · No spam
+            Independently researched by Navneet Arya · Independent AI Tools Researcher · No spam
           </div>
         </div>
       </div>

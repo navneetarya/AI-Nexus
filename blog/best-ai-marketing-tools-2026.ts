@@ -1,4 +1,4 @@
-// blog/best-ai-marketing-tools-2026.ts
+﻿// blog/best-ai-marketing-tools-2026.ts
 // Target keyword: "best ai marketing tools 2026" — 3,200/mo
 // Word count: ~1,550 words
 
@@ -9,8 +9,8 @@ const post: BlogPost = {
   title: 'Best AI Marketing Tools in 2026 — For SEO, Social & Content',
   seoTitle: 'Best AI Marketing Tools 2026 — Ranked',
   metaDescription: 'Frase, Ocoya, Jasper, and Writesonic compared for SEO and social media marketing in 2026 — honest breakdown for every budget, including what the free plans actually cover.',
-  datePublished: '2026-05-03',
-  dateModified: '2026-05-08',
+  datePublished: '2026-04-27',
+  dateModified: '2026-04-27',
   author: 'Navneet Arya',
   category: 'Marketing',
   readTime: '9 min read',

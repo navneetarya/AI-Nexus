@@ -1,4 +1,4 @@
-// blog/best-ai-writing-tools-for-beginners-2026.ts
+﻿// blog/best-ai-writing-tools-for-beginners-2026.ts
 // Target keyword: "best AI writing tools for beginners" — 5,400/mo, Easy difficulty
 // Word count: ~1,450 words
 
@@ -9,8 +9,8 @@ const post: BlogPost = {
   title: 'Best AI Writing Tools for Beginners 2026 — Tested & Ranked',
   seoTitle: 'Best AI Writing Tools for Beginners 2026',
   metaDescription: 'New to AI writing tools? Compared Rytr, Grammarly, QuillBot, and Writesonic for complete beginners — here\'s the exact order to try them and what each one is actually for.',
-  datePublished: '2026-05-03',
-  dateModified: '2026-05-10',
+  datePublished: '2026-04-29',
+  dateModified: '2026-04-29',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '7 min read',

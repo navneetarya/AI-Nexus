@@ -420,15 +420,53 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
           </table>
         </div>
 
+        {/* Table of Contents */}
+        {article.sections.length >= 3 && (
+          <nav
+            aria-label="Table of contents"
+            style={{
+              background: C.surf,
+              border: `1px solid ${C.brdSm}`,
+              borderRadius: 10,
+              padding: '14px 20px',
+              marginBottom: '2rem',
+              fontSize: 14,
+            }}
+          >
+            <div style={{ fontWeight: 700, color: C.txt, marginBottom: 8, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              In this article
+            </div>
+            <ol style={{ margin: 0, padding: '0 0 0 18px', display: 'flex', flexDirection: 'column', gap: 4 }}>
+              {article.sections.map((sec) => {
+                const id = sec.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                return (
+                  <li key={id}>
+                    <a
+                      href={`#${id}`}
+                      style={{ color: C.a1, textDecoration: 'none', lineHeight: 1.5 }}
+                      onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); }}
+                    >
+                      {sec.heading}
+                    </a>
+                  </li>
+                );
+              })}
+            </ol>
+          </nav>
+        )}
+
         {/* Article sections */}
-        {article.sections.map((sec, i) => (
-          <section key={i} style={{ marginBottom: '2.25rem' }}>
-            <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: C.txt, margin: '0 0 0.85rem', letterSpacing: '-0.02em', borderLeft: `3px solid ${C.a1}`, paddingLeft: '0.75rem' }}>
-              {sec.heading}
-            </h2>
-            {renderContent(sec.content, navigate, linked)}
-          </section>
-        ))}
+        {article.sections.map((sec, i) => {
+          const id = sec.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+          return (
+            <section key={i} id={id} style={{ marginBottom: '2.25rem' }}>
+              <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: C.txt, margin: '0 0 0.85rem', letterSpacing: '-0.02em', borderLeft: `3px solid ${C.a1}`, paddingLeft: '0.75rem' }}>
+                {sec.heading}
+              </h2>
+              {renderContent(sec.content, navigate, linked)}
+            </section>
+          );
+        })}
 
         {/* Verdict box */}
         <div style={{ background: C.a2card, border: `1px solid ${C.a2brd}`, borderRadius: 12, padding: '1.25rem 1.5rem', marginBottom: '2.5rem' }}>

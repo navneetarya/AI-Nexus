@@ -1,4 +1,4 @@
-// blog/best-ai-tools-for-freelancers-2026.ts
+﻿// blog/best-ai-tools-for-freelancers-2026.ts
 // Target keyword: "best AI tools for freelancers" — 4,800/mo, Easy difficulty
 // Word count: ~1,250 words
 
@@ -9,8 +9,8 @@ const post: BlogPost = {
   title: 'Best AI Tools for Freelancers 2026 — Work Faster, Earn More',
   seoTitle: 'Best AI Tools for Freelancers 2026',
   metaDescription: 'Spending too much time on writing, design, and admin? The 7 AI tools that actually cut freelancer workload in 2026 — picked by use case, not by affiliate budget.',
-  datePublished: '2026-05-03',
-  dateModified: '2026-05-10',
+  datePublished: '2026-04-28',
+  dateModified: '2026-04-28',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '6 min read',

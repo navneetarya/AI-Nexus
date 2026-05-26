@@ -1,4 +1,4 @@
-// blog/how-to-use-rytr-to-write-blog-posts.ts
+﻿// blog/how-to-use-rytr-to-write-blog-posts.ts
 // Week 5 Task 3 — Blog Post #4
 // Target keyword: "how to use rytr" — 2,900/mo, Easy difficulty
 // Tutorial format — converts at 3–5x review posts because reader intent is active
@@ -11,8 +11,8 @@ const post: BlogPost = {
   title: 'How to Use Rytr to Write Blog Posts (Step-by-Step, 2026)',
   seoTitle: 'How to Use Rytr to Write Blog Posts 2026',
   metaDescription: 'How to use Rytr to write blog posts in 2026 — a step-by-step guide covering setup, the best templates, and a workflow to cut first-draft time by 60%.',
-  datePublished: '2026-05-04',
-  dateModified: '2026-05-06',
+  datePublished: '2026-05-02',
+  dateModified: '2026-05-02',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '6 min read',

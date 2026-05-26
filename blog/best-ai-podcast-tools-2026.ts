@@ -1,4 +1,4 @@
-// blog/best-ai-podcast-tools-2026.ts
+﻿// blog/best-ai-podcast-tools-2026.ts
 // Week 7 Task 2 — Blog Post #6
 // Target keyword: "best AI podcast tools 2026" — 2,100/mo, Easy difficulty
 // Creates topical cluster: Podcastle review + Podcastle vs Descript compare article + this post
@@ -11,8 +11,8 @@ const post: BlogPost = {
   title: 'Best AI Podcast Tools 2026 — Record, Edit & Enhance Your Show',
   seoTitle: 'Best AI Podcast Tools 2026 — Record & Edit',
   metaDescription: 'Podcastle records free for 3 hours/month, Descript edits by transcript, Murf AI writes your voiceovers. Which AI podcast tool fits your workflow in 2026? Honest picks.',
-  datePublished: '2026-05-04',
-  dateModified: '2026-05-06',
+  datePublished: '2026-05-01',
+  dateModified: '2026-05-01',
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '6 min read',

@@ -1,4 +1,4 @@
-// blog/best-ai-writing-tools-2026.ts
+﻿// blog/best-ai-writing-tools-2026.ts
 // Target keyword: "best ai writing tools" — 5,400/mo, Medium KD
 // Intent: informational + commercial — writers comparing all major AI writing tools
 // Note: /best-ai-writing-tools route is a CategoryPage filter — cannot rank Medium KD.
@@ -13,8 +13,8 @@ const post: BlogPost = {
   title: 'Best AI Writing Tools 2026 — Tested, Ranked & Compared',
   seoTitle: 'Best AI Writing Tools 2026 — Tested & Ranked',
   metaDescription: '6 best AI writing tools tested for 2026. Grammarly, Rytr, QuillBot, Writesonic, Jasper, and Frase ranked by use case, free plan quality, and real-world output. No sponsored picks.',
-  datePublished: '2026-05-14',
-  dateModified: '2026-05-14',
+  datePublished: '2026-05-11',
+  dateModified: '2026-05-11',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '10 min read',

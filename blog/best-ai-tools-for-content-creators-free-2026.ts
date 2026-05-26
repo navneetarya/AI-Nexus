@@ -1,4 +1,4 @@
-// blog/best-ai-tools-for-content-creators-free-2026.ts
+﻿// blog/best-ai-tools-for-content-creators-free-2026.ts
 // T2.7 — Target keyword: "best ai tools for content creators free 2026"
 // Est. volume: 3,200/mo · Difficulty: Low · Intent: Informational + Free-plan focus
 // Word count: ~2,600 words
@@ -12,8 +12,8 @@ const post: BlogPost = {
   title: 'Best Free AI Tools for Content Creators 2026 — Tested on Free Plans',
   seoTitle: 'Best Free AI Tools for Content Creators 2026 — Tested',
   metaDescription: 'Creating content without a budget? 7 AI tools with genuinely free plans — writing, design, video clips, voiceover, and scheduling. No subscription required. Tested in 2026.',
-  datePublished: '2026-05-14',
-  dateModified: '2026-05-14',
+  datePublished: '2026-05-10',
+  dateModified: '2026-05-10',
   author: 'Navneet Arya',
   category: 'Content Creation',
   readTime: '10 min read',

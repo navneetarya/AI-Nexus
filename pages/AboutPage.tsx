@@ -29,7 +29,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
       "url": `${SITE_CONFIG.siteUrl}/about`,
       "image": `${SITE_CONFIG.siteUrl}/author-photo.jpg`,
       "description": SITE_CONFIG.authorBio,
-      "jobTitle": "Independent AI Workflow & Automation Researcher",
+      "jobTitle": "Independent AI Tools Researcher",
       "sameAs": [
         "https://www.linkedin.com/in/navneetarya/",
         "https://x.com/aryanavneet",
@@ -50,8 +50,8 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
       },
       "hasOccupation": {
         "@type": "Occupation",
-        "name": "Independent AI Workflow & Automation Researcher",
-        "description": "Independently researches and compares AI tools for writers, creators, and freelancers using official documentation, verified user reviews, and pricing analysis."
+        "name": "Independent AI Tools Researcher",
+        "description": "Independently researches and compares AI tools for writers, creators, freelancers, and developers using official documentation, verified user reviews, and pricing analysis."
       }
     }
   };
@@ -91,7 +91,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(22px,4vw,32px)', color: C.txt, margin: '0 0 4px', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
                   {SITE_CONFIG.authorName}
                 </h1>
-                <div style={{ fontSize: 13, color: C.mut2 }}>AI Automation &amp; Performance Testing Leader · BOLD &nbsp;|&nbsp; Researching AI tools since 2022 · 25+ tools reviewed</div>
+                <div style={{ fontSize: 13, color: C.mut2 }}>Independent AI Tools Researcher &nbsp;|&nbsp; Researching AI tools since 2022 · 25+ tools reviewed</div>
               </div>
             </div>
 

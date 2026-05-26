@@ -1,4 +1,4 @@
-// blog/is-grammarly-premium-worth-it-2026.ts
+﻿// blog/is-grammarly-premium-worth-it-2026.ts
 // Target keyword: "is grammarly premium worth it" / "grammarly premium worth it" — 3,600/mo, KD 22
 // Intent: upgrade-intent query — user already uses Grammarly free and is deciding whether to pay
 // T3.2: Grammarly Premium worth it — 3,600/mo, KD 22 — upgrade-intent query
@@ -10,8 +10,8 @@ const post: BlogPost = {
   title: 'Is Grammarly Premium Worth It in 2026? — Honest Answer After 400+ Reviews',
   seoTitle: 'Is Grammarly Premium Worth It 2026? — Honest Verdict',
   metaDescription: 'Is Grammarly Premium worth $12/month in 2026? After analysing 400+ verified reviews and comparing it to 5 alternatives — here is the honest answer with a clear verdict.',
-  datePublished: '2026-05-20',
-  dateModified: '2026-05-20',
+  datePublished: '2026-05-16',
+  dateModified: '2026-05-16',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '7 min read',

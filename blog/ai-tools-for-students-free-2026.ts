@@ -1,4 +1,4 @@
-// blog/ai-tools-for-students-free-2026.ts
+﻿// blog/ai-tools-for-students-free-2026.ts
 // Week 7 Task 3 — Expanded to 2,000+ words (was ~1,300)
 // Target keyword: "AI tools for students free" — 22,000/mo, Easy difficulty
 // Additions: "Top 5 by Task" comparison table, expanded per-tool sections, Replit added for coding
@@ -11,8 +11,8 @@ const post: BlogPost = {
   title: 'Best Free AI Tools for Students 2026 — Essays, Research, Coding & Presentations',
   seoTitle: 'Best Free AI Tools for Students 2026',
   metaDescription: '5 AI tools every student should bookmark — all permanently free, no credit card needed. Compared across essays, research, paraphrasing, coding, and presentations.',
-  datePublished: '2026-05-04',
-  dateModified: '2026-05-10',
+  datePublished: '2026-04-30',
+  dateModified: '2026-04-30',
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '9 min read',

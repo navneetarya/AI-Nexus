@@ -1,4 +1,4 @@
-// blog/best-ai-tools-for-freelancers-india-2026.ts
+﻿// blog/best-ai-tools-for-freelancers-india-2026.ts
 // W3-T3 — Target keyword: "best ai tools for freelancers india 2026" — KD 8, 1,100/mo
 // Zero competition from MarketerMilk or AI Tools Marketer.
 // Word count: ~1,050 words
@@ -12,8 +12,8 @@ const post: BlogPost = {
   title: 'Best AI Tools for Freelancers in India 2026 — Free Plans, INR Pricing & What Actually Works',
   seoTitle: 'Best AI Tools for Freelancers India 2026 — INR Pricing',
   metaDescription: 'AI tools for Indian freelancers 2026 — INR pricing, free tiers without a credit card, Fiverr and Upwork India picks. Independently researched.',
-  datePublished: '2026-05-13',
-  dateModified: '2026-05-13',
+  datePublished: '2026-05-09',
+  dateModified: '2026-05-09',
   author: 'Navneet Arya',
   category: 'india',
   readTime: '7 min read',

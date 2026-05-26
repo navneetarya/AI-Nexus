@@ -1,4 +1,4 @@
-// blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026.ts
+﻿// blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026.ts
 // W2-T1 — Target keyword: "grok 4 vs chatgpt" — 22K+/mo · KD 12 · 🔥 Trending +450%
 // Secondary keywords: "grok 4 vs claude", "best ai for content creators 2026", "grok 4 writing"
 // Intent: commercial comparison — content creators choosing their primary AI writing tool
@@ -15,8 +15,8 @@ const post: BlogPost = {
   title: 'Grok 4 vs ChatGPT vs Claude: Which AI Is Best for Content Creators in 2026?',
   seoTitle: 'Grok 4 vs ChatGPT vs Claude for Content Creators 2026',
   metaDescription: 'Grok 4, ChatGPT (GPT-5.5), and Claude compared for content creators. Blog drafts, social captions, email copy, and long-form content — tested and ranked by use case. Honest verdict with no affiliate bias.',
-  datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  datePublished: '2026-05-18',
+  dateModified: '2026-05-18',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '11 min read',

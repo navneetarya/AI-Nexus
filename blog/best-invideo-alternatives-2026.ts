@@ -1,4 +1,4 @@
-// blog/best-invideo-alternatives-2026.ts
+﻿// blog/best-invideo-alternatives-2026.ts
 // Target keyword: "best invideo alternatives" — 2,400/mo, Easy difficulty
 // Secondary: "invideo alternative free" — 900/mo | "best faceless youtube ai tool" — 1,800/mo
 // URL: /blog/best-invideo-alternatives-2026
@@ -12,8 +12,8 @@ const post: BlogPost = {
   seoTitle: 'Best InVideo AI Alternatives 2026',
   metaDescription:
     'Pictory, Opus Clip, and Murf AI compared as InVideo alternatives in 2026 — which wins for faceless YouTube, short-form clips, and video repurposing.',
-  datePublished: '2026-05-05',
-  dateModified: '2026-05-10',
+  datePublished: '2026-05-04',
+  dateModified: '2026-05-04',
   author: 'Navneet Arya',
   category: 'Video',
   readTime: '7 min read',

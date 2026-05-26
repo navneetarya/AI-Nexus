@@ -1,4 +1,4 @@
-// blog/leonardo-vs-midjourney-2026.ts
+﻿// blog/leonardo-vs-midjourney-2026.ts
 // T4.5 — Target keyword: "leonardo ai vs midjourney 2026" — free plan comparison
 // Expands on /compare/leonardo-vs-midjourney compare page with free-plan focus
 // Internal links: /tools/leonardo-ai, /compare/leonardo-vs-midjourney, /blog/best-midjourney-alternatives-2026
@@ -11,8 +11,8 @@ const post: BlogPost = {
   title: 'Leonardo.ai vs Midjourney 2026 — Free Plan Comparison (Which Is Worth It?)',
   seoTitle: 'Leonardo AI vs Midjourney 2026 — Free Plan Compared',
   metaDescription: 'Leonardo.ai vs Midjourney compared for 2026 — free plan, image quality, pricing, and commercial rights. Which AI image generator is worth it for creators who can\'t afford to guess?',
-  datePublished: '2026-05-14',
-  dateModified: '2026-05-14',
+  datePublished: '2026-05-12',
+  dateModified: '2026-05-12',
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '7 min read',

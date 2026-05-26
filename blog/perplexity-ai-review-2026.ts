@@ -1,4 +1,4 @@
-// blog/perplexity-ai-review-2026.ts
+﻿// blog/perplexity-ai-review-2026.ts
 // 📈 Rising +280% — Target keyword: "perplexity vs google" — 14K+/mo · KD 22
 // Secondary keywords: "perplexity ai review 2026", "is perplexity worth it", "perplexity pro review"
 // Intent: informational/commercial — researchers, students, knowledge workers evaluating AI search
@@ -13,8 +13,8 @@ const post: BlogPost = {
   title: 'Perplexity AI Review 2026: Is It Worth It vs Google Search?',
   seoTitle: 'Perplexity AI Review 2026: Worth It vs Google Search?',
   metaDescription: 'Perplexity AI reviewed for 2026 — tested against Google Search on research, fact-finding, and everyday queries. Is it worth $20/month? Honest verdict with no affiliate bias.',
-  datePublished: '2026-05-19',
-  dateModified: '2026-05-19',
+  datePublished: '2026-05-15',
+  dateModified: '2026-05-15',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',

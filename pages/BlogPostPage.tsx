@@ -33,8 +33,17 @@ const BLOG_RELATED_TOOLS: Record<string, string[]> = {
   'best-ai-tools-for-freelancers-india-2026':        ['rytr', 'grammarly', 'taskade'],
   'best-free-ai-tools-for-students-in-india-2026':   ['grammarly', 'canva-ai', 'gamma'],
   'best-ai-tools-for-content-creators-free-2026':    ['canva-ai', 'opus-clip', 'rytr'],
+  'best-ai-tools-for-developers-2026':          ['replit', 'notion-ai', 'taskade'],
+  'best-ai-tools-for-automation-engineers-2026': ['replit', 'notion-ai', 'taskade'],
+  'best-ai-tools-for-youtubers-2026':            ['invideo', 'opus-clip', 'pictory'],
+  'best-ai-tools-for-startups-2026':             ['notion-ai', 'canva-ai', 'gamma'],
   'taskade-vs-notion-vs-asana-2026':                 ['taskade', 'notion-ai', 'replit'],
   'leonardo-vs-midjourney-2026':                     ['leonardo-ai', 'photoroom', 'canva-ai'],
+  'ai-api-pricing-comparison-2026':                  ['replit', 'notion-ai', 'taskade'],
+  'best-free-ai-tool-plans-2026':                    ['grammarly', 'canva-ai', 'gamma'],
+  'fastest-growing-ai-startups-2026':                ['perplexity', 'replit', 'taskade'],
+  'cheapest-ai-coding-tools-2026':                   ['replit', 'notion-ai', 'taskade'],
+  'ai-ecosystem-growth-report-2026':                 ['grammarly', 'canva-ai', 'leonardo-ai'],
 };
 
 // ── H5 (SEO-High): Auto-link tool name mentions to /tools/{slug} pages ────────
@@ -193,7 +202,8 @@ const C = {
   a1:   'var(--a1)',
   a1card: 'var(--a1-card)',
   a1brd:  'var(--a1-brd)',
-  brd:  'var(--brd)',
+  brd:    'var(--brd)',
+  brdSm:  'var(--brd-sm)'
 };
 
 function ReadersAlsoAsk({ faqs }: { faqs: { q: string; a: string }[] }) {
@@ -248,12 +258,26 @@ function ReadersAlsoAsk({ faqs }: { faqs: { q: string; a: string }[] }) {
 }
 
 export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPageProps) {
+  // Extract h2 headings from raw content for the Table of Contents
+  const tocItems = useMemo(() => {
+    const matches = [...post.content.matchAll(/<h2[^>]*>(.*?)<\/h2>/gi)];
+    return matches.map(m => {
+      const text = m[1].replace(/<[^>]+>/g, '').trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return { text, id };
+    });
+  }, [post.slug]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // H5: auto-linked blog content — memoised so it only re-runs when post changes
-  const linkedContent = useMemo(
-    () => autoLinkToolMentions(post.content, C.a1),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [post.slug]
-  );
+  // Also injects id attributes into h2 tags for TOC anchor links
+  const linkedContent = useMemo(() => {
+    const withLinks = autoLinkToolMentions(post.content, C.a1);
+    return withLinks.replace(/<h2([^>]*)>(.*?)<\/h2>/gi, (_match, attrs, inner) => {
+      const text = inner.replace(/<[^>]+>/g, '').trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return `<h2${attrs} id="${id}">${inner}</h2>`;
+    });
+  }, [post.slug]); // eslint-disable-line react-hooks/exhaustive-deps
   // Inject Article + FAQPage JSON-LD schema into <head>
   useEffect(() => {
     const canonical = `${SITE_CONFIG.siteUrl}/blog/${post.slug}`;
@@ -453,6 +477,38 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             </span>
             {post.excerpt}
           </div>
+        )}
+
+        {/* Table of Contents */}
+        {tocItems.length >= 3 && (
+          <nav
+            aria-label="Table of contents"
+            style={{
+              background: C.surf,
+              border: `1px solid ${C.brd}`,
+              borderRadius: 10,
+              padding: '14px 20px',
+              marginBottom: 28,
+              fontSize: 14,
+            }}
+          >
+            <div style={{ fontWeight: 700, color: C.txt, marginBottom: 8, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              In this article
+            </div>
+            <ol style={{ margin: 0, padding: '0 0 0 18px', display: 'flex', flexDirection: 'column', gap: 4 }}>
+              {tocItems.map(({ text, id }) => (
+                <li key={id}>
+                  <a
+                    href={`#${id}`}
+                    style={{ color: C.a1, textDecoration: 'none', lineHeight: 1.5 }}
+                    onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); }}
+                  >
+                    {text}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
         )}
 
         {/* Article content */}

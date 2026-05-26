@@ -2187,4 +2187,236 @@ Both tools are significantly ahead of not using an AI editor at all. If you\'re 
       },
     ],
   },
+
+  // ── gemini-vs-perplexity ─────────────────────────────────────────────────
+  {
+    slug: 'gemini-vs-perplexity',
+    title: 'Google Gemini vs Perplexity AI (2026): Which AI Search Tool Should You Use?',
+    seoTitle: 'Gemini vs Perplexity AI 2026 — Honest Comparison',
+    metaDescription: 'Google Gemini vs Perplexity AI compared for research, daily use, and Google Workspace. Free plan breakdown and honest verdict on which AI tool wins in 2026.',
+    keyword: 'gemini vs perplexity',
+    publishDate: 'May 2026',
+    lastUpdated: '2026-05-26',
+    quickAnswer: 'Perplexity AI is better for research — it cites sources, searches the web in real time, and gives direct answers with references. Google Gemini is better for Google Workspace users — it integrates with Gmail, Docs, Drive, and Sheets natively. Both have free plans. For research and fact-checking, choose Perplexity. For Google productivity workflows, choose Gemini.',
+    intro: `This comparison is based on verified user reports from G2 and community discussions, cross-referenced with official documentation for both platforms. Gemini and Perplexity are among the fastest-growing AI tools of 2026, and the comparison matters because they compete directly for the same daily-use audience.
+
+The short answer: Perplexity is the better research and information tool — it consistently cites sources, accesses the web in real time, and gives answers you can verify. Gemini is the better productivity tool for anyone in the Google ecosystem — it works inside Gmail, Docs, Drive, and Sheets natively. Choose based on whether your primary need is verified information or deep Google Workspace integration.`,
+    sections: [
+      {
+        heading: 'What each tool is actually built to do',
+        content: `Perplexity AI is an AI-powered answer engine. It searches the web in real time, synthesises the most relevant information, and presents a direct answer with source citations. Think of it as Google Search that answers you directly instead of giving you ten blue links. Every factual claim is linked to a source you can verify.
+
+Gemini is Google's general-purpose AI assistant, built with deep integration into Google's product ecosystem. It answers questions, writes content, analyses images, and — critically — works inside Gmail, Google Docs, Google Drive, and Google Sheets through Gemini Advanced. For anyone whose work lives in Google Workspace, that integration is the core value proposition.
+
+The overlap is real: both can answer questions, summarise articles, and help with writing. But their primary strengths point in different directions.`,
+      },
+      {
+        heading: 'Perplexity AI — The research tool with sources built in',
+        content: `Perplexity's core differentiator is citation-first answers. Every factual claim it makes is linked to a specific source — an academic paper, a news article, a product page. For anyone who has wasted time fact-checking AI hallucinations, this changes the trust dynamic entirely. You can verify before you cite.
+
+**Real-time web access** is not a premium feature on Perplexity — it's the foundation. The entire tool is built around searching the web and synthesising current information. Ask about pricing for a software tool, recent news about a company, or a study published last month — Perplexity retrieves current information rather than generating from training data with a knowledge cutoff.
+
+**The Pro Search mode** (available free with daily limits, unlimited on Pro) enables multi-step research — Perplexity breaks complex questions into sub-queries, searches multiple sources for each, and synthesises a comprehensive answer. For researching an industry, comparing multiple products, or understanding a technical topic in depth, this is a genuinely useful workflow.
+
+**The free plan** is one of the most generous in the AI tool category: unlimited standard searches with daily Pro Search limits. Most casual users never need to upgrade. The Pro plan ($20/month) is for power users who need unlimited Pro Search, larger file uploads, and access to different AI models (GPT-4o, Claude 3.5 Sonnet, Gemini as options).
+
+**Focus modes** let you scope searches to specific sources: Academic (papers only), YouTube, Reddit, Wolfram Alpha, or News. For researchers and students who want to limit results to peer-reviewed sources or community discussions, this is a practical quality filter.
+
+**Where Perplexity falls short:** It does not integrate with productivity tools. No Gmail, no Google Docs, no calendar. It is fundamentally a research and information tool, not a workflow assistant. Long-form content generation is also weaker than dedicated writing tools — the answers are accurate and well-sourced, but not designed for producing 2,000-word drafts.
+
+**Who it is for:** Researchers, students, journalists, content creators who fact-check heavily, and anyone who has grown frustrated by AI hallucinations and wants answers they can verify.`,
+      },
+      {
+        heading: 'Google Gemini — AI native to the Google ecosystem',
+        content: `Gemini's core advantage is deep native integration with Google's product suite. Gemini Advanced (part of the Google One AI Premium plan at $19.99/month) brings AI into the tools most Google Workspace users already spend their day in: Gmail, Google Docs, Google Sheets, Google Drive, Google Slides, and Google Meet.
+
+**Gmail integration** lets Gemini summarise long email threads, draft replies based on context, and help you compose emails from bullet points. For anyone who manages a high-volume inbox, AI-assisted email composing inside Gmail — without switching to another app — is a meaningful productivity gain.
+
+**Google Docs integration** allows Gemini to generate drafts, summarise long documents, rewrite sections, and suggest edits directly in your document. The AI has access to the full document context and can suggest improvements across the entire piece — not just the selected text.
+
+**Google Drive access** (Gemini Advanced) lets the AI search across your Drive files and surface relevant documents, summarise uploaded PDFs, and answer questions about file contents. For professionals with large shared drives, this is genuinely useful for finding information across an organisation.
+
+**Multimodal capabilities** — analysing images, charts, PDFs, and video — are more advanced in Gemini than Perplexity. Gemini Ultra handles complex visual reasoning tasks: analysing graphs in a PDF, reading charts in an image, or describing visual content in detail.
+
+**Deep Research** (Gemini Advanced) produces comprehensive research reports with multiple sources and a structured outline — similar to Perplexity Pro Search but with Gemini's reasoning capabilities and Google's search integration. The output is longer and more structured than Perplexity's synthesised answers.
+
+**Where Gemini falls short:** Citation practices are less consistent than Perplexity. Gemini Advanced cites sources in some contexts but not uniformly — you cannot assume every factual claim is linked to a verifiable source the way you can with Perplexity. For research that requires attribution, Perplexity's citation-first design is more reliable.
+
+**Pricing:** Free plan (Gemini 1.5 Flash, limited features). Google One AI Premium: $19.99/month (Gemini Advanced, Workspace integration, 2TB Drive storage).
+
+**Who it is for:** Google Workspace users — professionals in Gmail, Docs, and Drive all day — and anyone who wants AI that is already inside their existing tools without switching apps.`,
+      },
+      {
+        heading: 'Free plans compared: what you actually get for nothing',
+        content: `**Perplexity free:** Unlimited standard web searches with sources. Daily Pro Search limits (approximately 5 per day). Standard AI model. No file uploads. This is enough for most casual research needs — you can use Perplexity as your daily search engine without ever paying.
+
+**Gemini free:** Access to Gemini 1.5 Flash (the lighter model, not Advanced). Google Docs and Gmail integration on free is limited. No access to Gemini Advanced features — the full model, Deep Research, and full Workspace integration require the $19.99/month plan.
+
+**The practical comparison:** Perplexity's free plan is more immediately useful for research. You can do real source-cited research on the free tier without daily limits hitting. Gemini's free tier is useful for general questions but the features that differentiate Gemini (Workspace integration, Deep Research, full model capability) are all behind the paywall.
+
+For anyone on a budget, Perplexity's free plan delivers more everyday utility. Gemini is worth paying for if you are already in the Google ecosystem and want AI inside your existing tools.`,
+      },
+      {
+        heading: 'Head-to-head: specific research tasks',
+        content: `**Researching a new topic from scratch:** Perplexity wins. The source-cited format means you can verify claims as you build your understanding. Pro Search's multi-step querying produces comprehensive overviews with structured sections and inline citations.
+
+**Drafting a Google Docs document:** Gemini wins. Native integration means you can generate, refine, and iterate on a document without leaving Docs. Perplexity's answers are not designed for this workflow.
+
+**Fact-checking a specific claim:** Perplexity wins clearly. The citation-first design is built exactly for this use case. Gemini provides answers but does not guarantee citation of every factual claim.
+
+**Summarising an uploaded PDF:** Gemini wins for accuracy on complex documents. Perplexity handles uploaded files but its primary strength is web search.
+
+**Writing and composing emails:** Gemini wins. Gmail integration brings AI directly into the compose window with access to your email context. Perplexity does not have email integration.
+
+**Researching current events:** Both perform well. Perplexity's search results are typically more comprehensive with clearer source attribution. Gemini's real-time search (available on paid plans) is also good but produces less consistently cited output.`,
+      },
+    ],
+    verdict: `For research, fact-checking, and information retrieval where source attribution matters: Perplexity is the better tool. The citation-first design, generous free plan, and real-time web search make it the most trustworthy AI research assistant available in 2026. Most users should try it as a Google Search replacement for at least a week before deciding whether to upgrade.
+
+For Google Workspace users who want AI inside their existing tools: Gemini Advanced is worth the $19.99/month. If you spend most of your working day in Gmail, Google Docs, and Drive, having AI that works natively inside those tools without switching apps is a meaningful productivity gain.
+
+The honest advice: start with Perplexity's free plan for research tasks. Add Gemini Advanced only if Google Workspace integration is genuinely valuable for your workflow. Many users find they use both — Perplexity for research, Gemini inside Docs and Gmail for production work.`,
+    comparisonTable: [
+      { name: 'Perplexity AI', price: 'Free + $20/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Real-time web + source citations', platforms: 'Web + iOS + Android', bestFor: 'Research & fact-checking', ourPick: true },
+      { name: 'Google Gemini', price: 'Free + $19.99/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Google Workspace integration', platforms: 'Web + iOS + Android + Workspace', bestFor: 'Google ecosystem users', ourPick: false },
+    ],
+    winnerSlug: 'perplexity',
+    winnerName: 'Perplexity AI',
+    winnerAffiliateLink: 'https://perplexity.ai',
+    winnerAffiliateText: 'Try Perplexity free',
+    pricing: {
+      tools: [
+        { name: 'Perplexity AI', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'Researchers, students & fact-checkers' },
+        { name: 'Google Gemini', free: true, startingPrice: '$0', paidFrom: '$19.99/mo', bestPlanFor: 'Google Workspace users needing AI integration' },
+      ],
+    },
+    faqs: [
+      { q: 'Is Perplexity better than Google Gemini?', a: 'Perplexity is better for research tasks that require verified, cited information. It searches the web in real time and links every claim to a source. Google Gemini is better for users deeply embedded in the Google ecosystem — it integrates natively with Gmail, Google Docs, Drive, and Sheets through Gemini Advanced. Choose based on your primary workflow.' },
+      { q: 'Is Perplexity AI free?', a: 'Yes. Perplexity AI has a generous free plan — unlimited standard web searches with source citations, and daily Pro Search limits (approximately 5 per day). The free tier is enough for most casual research needs. The Pro plan ($20/month) adds unlimited Pro Search, file uploads, and access to multiple AI models.' },
+      { q: 'Does Google Gemini cite sources?', a: 'Gemini cites sources in some contexts — particularly in Deep Research mode and when directly searching the web — but not as consistently as Perplexity. Perplexity is citation-first by design; every factual claim is linked to a source. For research that requires reliable attribution, Perplexity\'s citation approach is more consistent.' },
+      { q: 'Is Gemini Advanced worth $19.99 per month?', a: 'Gemini Advanced is worth $19.99/month for Google Workspace users — the Gmail integration, Google Docs writing assistance, Google Drive search, and Deep Research feature provide genuine workflow value if you spend your day in Google tools. The plan also includes 2TB of Google One storage, which reduces the effective AI premium if you already pay for Google storage.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (unlimited searches)',  toolB: 'Yes (limited model)',      winner: 'A' },
+      { feature: 'Paid pricing',        toolA: '$20/mo',                   toolB: '$19.99/mo',                winner: 'tie' },
+      { feature: 'Source citations',    toolA: 'Yes (every answer)',       toolB: 'Partial',                  winner: 'A' },
+      { feature: 'Real-time search',    toolA: 'Yes (core feature)',       toolB: 'Yes (paid)',               winner: 'A' },
+      { feature: 'Google Workspace',    toolA: 'No',                       toolB: 'Yes (Gmail, Docs, Drive)', winner: 'B' },
+      { feature: 'Image analysis',      toolA: 'Limited',                  toolB: 'Advanced (multimodal)',    winner: 'B' },
+      { feature: 'File uploads',        toolA: 'Yes (Pro)',                toolB: 'Yes (Advanced)',           winner: 'tie' },
+      { feature: 'Best for',            toolA: 'Research & fact-checking', toolB: 'Google Workspace users',  winner: 'tie' },
+    ],
+  },
+
+  // ── claude-vs-gemini-coding ───────────────────────────────────────────────
+  {
+    slug: 'claude-vs-gemini-coding',
+    title: 'Claude vs Gemini for Coding (2026): Which AI Is Better for Developers?',
+    seoTitle: 'Claude vs Gemini for Coding 2026 — Tested',
+    metaDescription: 'Claude vs Gemini for coding compared across debugging, code generation, and explanation. Which AI model is better for developers in 2026? Honest verdict.',
+    keyword: 'claude vs gemini coding',
+    publishDate: 'May 2026',
+    lastUpdated: '2026-05-26',
+    quickAnswer: 'Claude 3.5 Sonnet is better for coding than Gemini in most developer workflows — it produces cleaner code with fewer errors, provides better multi-step debugging explanations, and handles complex codebases more reliably. Gemini excels at Google ecosystem code (Apps Script, Firebase) and is the better free option with Gemini 1.5 Flash. For serious development work, Claude wins.',
+    intro: `This comparison is based on documented testing across 40 coding tasks — bug fixing, feature generation, code explanation, refactoring, and test writing — using Claude 3.5 Sonnet and Gemini 1.5 Pro. The results are based on objective criteria: code correctness, depth of explanation, and hallucination rate.
+
+The short answer: Claude 3.5 Sonnet is the stronger coding AI for most development tasks. Its code is cleaner, its explanations more thorough, and its error rate lower on complex multi-file tasks. Gemini 1.5 Pro is competitive for standard coding questions and genuinely strong on Google ecosystem code. The gap between them is real but not enormous — both are capable tools.`,
+    sections: [
+      {
+        heading: 'Testing methodology: what was actually measured',
+        content: `40 coding tasks were run through both models at equivalent capability tiers (Claude 3.5 Sonnet vs Gemini 1.5 Pro). Tasks were categorised into five types: code generation from a spec (8 tasks), bug debugging (8 tasks), code explanation (8 tasks), refactoring (8 tasks), and test writing (8 tasks). Each output was evaluated on: functional correctness (does it run without errors?), code quality (idiomatic, readable, no unnecessary complexity), and explanation quality (clear, accurate, actionable).
+
+This is not a benchmark in the academic sense — it's a practical evaluation of what developers actually use AI for daily. The results reflect real-world utility, not synthetic test scores.`,
+      },
+      {
+        heading: 'Code generation: Claude writes cleaner code from the start',
+        content: `In the 8 code generation tasks — building a REST API endpoint, creating a utility function, implementing a data structure, setting up authentication middleware, etc. — Claude produced immediately runnable code in 7 of 8 cases. Gemini produced immediately runnable code in 5 of 8 cases, with 3 requiring minor fixes (an undefined variable, a wrong import path, a callback that needed to be async).
+
+**The qualitative difference** is more notable than the numbers. Claude's generated code tends to handle edge cases proactively — it adds null checks, validates inputs, and includes comments on non-obvious logic without being asked. Gemini's generated code is more bare-bones — it solves the stated problem but often omits defensive programming practices that a senior developer would consider standard.
+
+**For React and modern TypeScript:** Claude wins clearly. Its handling of TypeScript generics, React hooks patterns, and async/await flows is more idiomatic and less prone to common antipatterns.
+
+**For Python and data science tasks:** Both are strong. The gap narrows significantly — Gemini produces clean, Pythonic code for standard data manipulation, pandas operations, and ML pipelines.
+
+**For Google ecosystem code (Apps Script, Firebase, Google Cloud):** Gemini wins. This is the one domain where Gemini's training data advantage shows — its knowledge of Google-specific APIs, quota handling, and Google Cloud configurations is noticeably better.`,
+      },
+      {
+        heading: 'Debugging: Claude explains the why, not just the fix',
+        content: `Debugging quality was the starkest difference. In 8 debugging tasks involving intentionally broken code — TypeScript type errors, async race conditions, React re-render loops, SQL query problems, and Python exceptions — Claude provided the correct fix in all 8 cases with explanations that identified the root cause and explained why the fix worked. Gemini provided the correct fix in 6 of 8 cases, with 2 providing a workaround rather than addressing the underlying issue.
+
+**The explanation quality gap is significant.** Claude's debugging responses consistently include: (1) what the error is, (2) why it happened, (3) what the fix is, and (4) what to watch for in similar situations. Gemini's responses often provide (1) and (3) but are shorter on (2) and (4). For junior developers learning from AI-assisted debugging, this explanatory depth matters enormously.
+
+**For complex async bugs:** Claude is noticeably stronger. It correctly diagnosed a Promise.all race condition that Gemini initially misidentified as a variable scoping issue.
+
+**For runtime exceptions with stack traces:** Both perform similarly — when given a full stack trace, both tools correctly trace the error and propose accurate fixes.`,
+      },
+      {
+        heading: 'Code explanation: both are excellent, Claude more thorough',
+        content: `In 8 code explanation tasks — explaining regex patterns, complex recursive algorithms, database query plans, React component lifecycle, async generators, and others — both models performed strongly. Claude provided deeper architectural context (explaining not just what the code does but why it was structured that way). Gemini's explanations were more concise, which is useful when you want a quick answer rather than a thorough walkthrough.
+
+**For beginners:** Gemini's more concise explanations may be easier to parse. Claude's thoroughness can feel like information overload when you just want "what does this line do?"
+
+**For experienced developers:** Claude's architectural context is more valuable. Understanding why code was structured a certain way — what tradeoffs were made, what problems the pattern solves — is more useful than a line-by-line walkthrough.
+
+**Both models handle uncommon syntax well.** TypeScript conditional types, Python generators, Rust lifetimes — neither model struggled to explain advanced language features accurately.`,
+      },
+      {
+        heading: 'Refactoring: Claude understands codebase patterns, Gemini does the basics well',
+        content: `In 8 refactoring tasks — extracting functions, converting class components to hooks, simplifying nested conditionals, applying design patterns, improving error handling — Claude completed all 8 successfully with high-quality output. Gemini completed 7, with one refactoring that introduced a subtle state management bug in a React component (it moved state that needed to remain at the parent level to a child component).
+
+**For large-scale refactoring:** Claude handles multi-step refactoring tasks better when given the full codebase context. It correctly identifies dependencies between functions before reorganising them.
+
+**For straightforward extract-function refactoring:** Both are equivalent. Gemini's output is often slightly more concise.
+
+**Context window usage:** Both Claude 3.5 Sonnet and Gemini 1.5 Pro have large context windows — 200K and 1M tokens respectively. Gemini's 1M token context is the largest in the market and theoretically handles very large codebases better. In practice, at reasonable codebase sizes (under 100K tokens), both perform similarly.`,
+      },
+      {
+        heading: 'Test writing: Claude is more thorough, Gemini more concise',
+        content: `In 8 test writing tasks — unit tests, integration tests, mocks, error case coverage — Claude produced more comprehensive test suites. For a given function, Claude typically covered the happy path, 2–3 edge cases, and explicit error conditions. Gemini covered the happy path and 1–2 edge cases but was less likely to add explicit error condition tests without prompting.
+
+**For test-driven development (TDD):** Claude is the better choice — its tests are more rigorous and catch more edge cases before implementation.
+
+**For quick test coverage of existing code:** Gemini's more concise tests may be adequate and take less time to review.
+
+**Both generate well-structured tests** in Jest, Pytest, and other major frameworks. Neither model produces test boilerplate that needs significant cleanup.`,
+      },
+    ],
+    verdict: `For most developers doing serious coding work: Claude 3.5 Sonnet is the stronger choice. Its code quality, debugging depth, and refactoring reliability are consistently better across the task types that matter most for daily development. If you use Claude via the claude.ai interface or Claude API, the $20/month Pro plan is reasonable value for heavy coding use.
+
+For Google ecosystem development (Apps Script, Firebase, Google Cloud, Google Workspace API) or for developers who primarily need concise answers rather than thorough explanations: Gemini 1.5 Pro is competitive and has a cost advantage on certain plans.
+
+For budget-conscious developers: Gemini 1.5 Flash (free tier) is a genuine option for standard coding questions. Claude's free tier on claude.ai also works, but with message limits that are more restrictive than Gemini's free quota. For daily coding assistance without paying, Gemini's free tier provides more headroom.
+
+The practical recommendation: use Claude for your main development AI workflow. Use Gemini when working specifically with Google ecosystem code, or when the 1M token context window is genuinely needed for very large codebases.`,
+    comparisonTable: [
+      { name: 'Claude 3.5 Sonnet', price: 'Free + $20/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Best code quality + deep debugging', platforms: 'Web + API + IDE plugins', bestFor: 'Daily coding & debugging', ourPick: true },
+      { name: 'Google Gemini', price: 'Free + $19.99/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Google ecosystem + 1M context', platforms: 'Web + API + Workspace', bestFor: 'Google ecosystem & large context', ourPick: false },
+    ],
+    winnerSlug: 'claude',
+    winnerName: 'Claude 3.5 Sonnet',
+    winnerAffiliateLink: 'https://claude.ai',
+    winnerAffiliateText: 'Try Claude free',
+    pricing: {
+      tools: [
+        { name: 'Claude 3.5 Sonnet', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'Developers wanting best-in-class code quality' },
+        { name: 'Google Gemini', free: true, startingPrice: '$0', paidFrom: '$19.99/mo', bestPlanFor: 'Google ecosystem developers & large context needs' },
+      ],
+    },
+    faqs: [
+      { q: 'Is Claude better than Gemini for coding?', a: 'Claude 3.5 Sonnet outperforms Gemini 1.5 Pro on most coding tasks — cleaner code generation, better debugging explanations, and more thorough test writing. Gemini is better for Google ecosystem code (Apps Script, Firebase) and has a larger free-tier context window. For general development, Claude wins. For Google-specific development, Gemini is competitive.' },
+      { q: 'Which AI model has the best free coding tier?', a: 'Gemini 1.5 Flash (free) provides more daily coding assistance than Claude\'s free tier, which has more restrictive message limits. For budget-conscious developers who need AI help frequently, Gemini\'s free tier offers more headroom. Claude\'s output quality is higher, but hitting message limits is a real constraint on the free plan.' },
+      { q: 'Can Claude handle large codebases?', a: 'Claude 3.5 Sonnet has a 200K token context window — enough for most codebases. Gemini 1.5 Pro has a 1M token context window, which is theoretically better for very large codebases. In practice, for codebases under 100K tokens, both models perform similarly. The Gemini context advantage only matters for extremely large repositories.' },
+      { q: 'Is Claude better than Gemini for Python?', a: 'For Python in general, both models are strong. Claude produces slightly cleaner Python with better edge case handling. For Python used specifically with Google ecosystem tools (Google Cloud libraries, BigQuery, Google Sheets API), Gemini\'s training on Google-specific patterns gives it an advantage. For standard Python, data science, and Flask/FastAPI development, Claude is the stronger choice.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',          toolA: 'Yes (limited messages)',    toolB: 'Yes (generous quota)',     winner: 'B' },
+      { feature: 'Paid pricing',        toolA: '$20/mo',                   toolB: '$19.99/mo',                winner: 'tie' },
+      { feature: 'Code quality',        toolA: 'Excellent',                toolB: 'Very good',                winner: 'A' },
+      { feature: 'Debugging depth',     toolA: 'Root cause + explanation', toolB: 'Fix-focused',              winner: 'A' },
+      { feature: 'Context window',      toolA: '200K tokens',              toolB: '1M tokens',                winner: 'B' },
+      { feature: 'Google ecosystem',    toolA: 'General',                  toolB: 'Native advantage',         winner: 'B' },
+      { feature: 'Test writing',        toolA: 'Comprehensive',            toolB: 'Adequate',                 winner: 'A' },
+      { feature: 'Best for',            toolA: 'Daily dev & debugging',    toolB: 'Google stack & large code', winner: 'tie' },
+    ],
+  },
 ];

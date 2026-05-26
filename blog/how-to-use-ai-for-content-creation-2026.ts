@@ -1,4 +1,4 @@
-// blog/how-to-use-ai-for-content-creation-2026.ts
+﻿// blog/how-to-use-ai-for-content-creation-2026.ts
 // Week 7 Task 1 — New High-Volume Blog Post
 // Target keyword: "how to use AI for content creation" — 18,000/mo, Medium difficulty
 // Frame: workflow-style tutorial covering writing, images, video, audio
@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'How to Use AI for Content Creation 2026',
   metaDescription: 'Write an article, generate a feature image, repurpose it as a video, and create a podcast episode — all in one afternoon. The actual AI content creation workflow for solo creators in 2026.',
   datePublished: '2026-05-05',
-  dateModified: '2026-05-06',
+  dateModified: '2026-05-05',
   author: 'Navneet Arya',
   category: 'Guides',
   readTime: '10 min read',

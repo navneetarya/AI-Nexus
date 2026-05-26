@@ -1,4 +1,4 @@
-// blog/best-ai-chatbot-2026.ts
+﻿// blog/best-ai-chatbot-2026.ts
 // 🏆 Pillar post: Best AI chatbot 2026 — 18K+/mo, KD 28 — mega-comparison targeting featured snippet
 // Target keyword: "best ai chatbot 2026" — 18,100/mo, KD 28
 // Secondary keywords: "chatgpt vs claude", "best ai assistant 2026", "grok vs chatgpt"
@@ -12,8 +12,8 @@ const post: BlogPost = {
   title: 'Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini vs Grok vs Perplexity',
   seoTitle: 'Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini Compared',
   metaDescription: 'The 5 best AI chatbots in 2026 compared — ChatGPT, Claude, Gemini, Grok 4, and Perplexity. Pricing, strengths, and which AI chatbot is actually best for your use case.',
-  datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  datePublished: '2026-05-17',
+  dateModified: '2026-05-17',
   author: 'Navneet Arya',
   category: 'Guides',
   readTime: '12 min read',

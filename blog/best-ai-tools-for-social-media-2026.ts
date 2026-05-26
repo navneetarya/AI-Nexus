@@ -1,4 +1,4 @@
-// blog/best-ai-tools-for-social-media-2026.ts
+﻿// blog/best-ai-tools-for-social-media-2026.ts
 // Week 5 Task 2 — Blog Post #3
 // Target keyword: "best AI tools for social media" — 6,200/mo, Medium difficulty
 // Word count: ~1,450 words
@@ -10,8 +10,8 @@ const post: BlogPost = {
   title: 'Best AI Tools for Social Media 2026 — Create, Schedule & Grow Faster',
   seoTitle: 'Best AI Tools for Social Media 2026',
   metaDescription: 'Ocoya schedules and writes captions. Opus Clip turns long videos into Reels. Canva AI designs in seconds. The 6 social media AI tools that actually cut publishing time in 2026.',
-  datePublished: '2026-05-04',
-  dateModified: '2026-05-10',
+  datePublished: '2026-05-01',
+  dateModified: '2026-05-01',
   author: 'Navneet Arya',
   category: 'Social Media',
   readTime: '7 min read',

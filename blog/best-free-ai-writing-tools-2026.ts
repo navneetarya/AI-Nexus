@@ -1,4 +1,4 @@
-// blog/best-free-ai-writing-tools-2026.ts
+﻿// blog/best-free-ai-writing-tools-2026.ts
 // Target keyword: "best free AI writing tools" — 4,200/mo, KD 22
 // Intent: informational + commercial — users looking for no-cost AI writing tools
 // Angle: "no credit card required" — permanent free plans only, no trial bait-and-switch
@@ -11,8 +11,8 @@ const post: BlogPost = {
   title: 'Best Free AI Writing Tools 2026 — 5 Tools With No Credit Card Required',
   seoTitle: 'Best Free AI Writing Tools 2026 — No Credit Card Required',
   metaDescription: 'The best free AI writing tools in 2026 — 5 tools with permanent free plans. No credit card required. Grammarly, Rytr, QuillBot, Writesonic, and one wildcard compared honestly.',
-  datePublished: '2026-05-20',
-  dateModified: '2026-05-20',
+  datePublished: '2026-05-16',
+  dateModified: '2026-05-16',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',

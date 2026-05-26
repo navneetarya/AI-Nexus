@@ -1,4 +1,4 @@
-// blog/chatgpt-alternatives-free-2026.ts
+﻿// blog/chatgpt-alternatives-free-2026.ts
 // Target keyword: "chatgpt alternatives free" — 9,800/mo
 // Word count: ~1,500 words
 
@@ -10,7 +10,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free ChatGPT Alternatives 2026',
   metaDescription: 'The best free ChatGPT alternatives in 2026 — Gemini, Perplexity, Rytr, and Writesonic compared on writing, research, and everyday tasks. Honest verdict on which actually delivers.',
   datePublished: '2026-05-06',
-  dateModified: '2026-05-08',
+  dateModified: '2026-05-06',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',

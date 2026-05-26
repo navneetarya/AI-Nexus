@@ -1,4 +1,4 @@
-// blog/best-grammarly-alternatives.ts
+﻿// blog/best-grammarly-alternatives.ts
 // Target keyword: "best grammarly alternatives" — 8,000/mo, Medium difficulty
 // URL: /blog/best-grammarly-alternatives
 
@@ -9,8 +9,8 @@ const post: BlogPost = {
   title: 'Best Grammarly Alternatives in 2026 — Tested & Ranked',
   seoTitle: 'Best Grammarly Alternatives 2026 — Tested',
   metaDescription: 'Researched 8 Grammarly alternatives so you don\'t waste $12/month. QuillBot wins for students, Rytr for content creators — and 2 genuinely free options are included.',
-  datePublished: '2026-05-03',
-  dateModified: '2026-05-10',
+  datePublished: '2026-04-27',
+  dateModified: '2026-04-27',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',

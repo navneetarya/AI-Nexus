@@ -1,4 +1,4 @@
-// blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026.ts
+﻿// blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026.ts
 // 🔥 Trending: "perplexity pro vs chatgpt plus" — buyer-intent comparison, $20/month tier
 // Angle: same 5 tasks, 3 AIs, honest task-by-task verdict — no single winner
 
@@ -9,8 +9,8 @@ const post: BlogPost = {
   title: 'Perplexity Pro vs ChatGPT Plus vs Claude Pro: Which $20/Month AI Is Worth It for Freelancers? (2026)',
   seoTitle: 'Perplexity vs ChatGPT vs Claude: Best $20 AI Tool',
   metaDescription: 'Perplexity Pro, ChatGPT Plus, and Claude Pro all cost $20/month. Ran all three through the same 5 freelance tasks — here\'s the honest verdict by use case.',
-  datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  datePublished: '2026-05-19',
+  dateModified: '2026-05-19',
   author: 'Navneet Arya',
   category: 'AI Comparison',
   readTime: '12 min read',

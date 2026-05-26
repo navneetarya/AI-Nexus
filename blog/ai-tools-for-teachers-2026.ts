@@ -1,4 +1,4 @@
-// blog/ai-tools-for-teachers-2026.ts
+﻿// blog/ai-tools-for-teachers-2026.ts
 // Target keyword: "ai tools for teachers" — 1,600/mo
 // Word count: ~1,500 words
 
@@ -11,8 +11,8 @@ const post: BlogPost = {
   // Page is at Position 2 with 0 clicks — title is the only lever left to pull.
   seoTitle: '7 Best AI Tools for Teachers 2026 — Free Plans Tested [Expert Review]',
   metaDescription: 'Used Grammarly, Canva AI, and 5 other tools to help plan lessons and grade work. Free-first breakdown of what actually works for teachers in 2026.',
-  datePublished: '2026-05-05',
-  dateModified: '2026-05-08',
+  datePublished: '2026-05-03',
+  dateModified: '2026-05-03',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',

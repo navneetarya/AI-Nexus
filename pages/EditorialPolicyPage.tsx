@@ -66,7 +66,7 @@ export function EditorialPolicyPage({ navigate, isDark, toggleTheme }: { navigat
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
 
-      <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="" />
+      <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />
 
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '48px 28px 80px' }}>
 

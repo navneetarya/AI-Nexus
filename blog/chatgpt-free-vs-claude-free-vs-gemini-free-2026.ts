@@ -1,4 +1,4 @@
-// blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026.ts
+﻿// blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026.ts
 // Week 2 — Target keyword: "chatgpt free vs claude free" / "best free ai for freelancers"
 // Secondary keywords: "is claude free better than chatgpt free", "gemini free plan", "best free ai 2026"
 // Intent: commercial comparison — freelancers choosing between free AI plans before upgrading
@@ -11,8 +11,8 @@ const post: BlogPost = {
   title: 'ChatGPT Free vs Claude Free vs Gemini Free: Which AI Actually Works for Freelancers in 2026?',
   seoTitle: 'ChatGPT Free vs Claude Free vs Gemini Free (2026)',
   metaDescription: 'ChatGPT, Claude, and Gemini all have free plans. Tested all three on the same 5 freelance tasks — message limits, output quality, and when to upgrade. Honest verdict, no affiliate spin.',
-  datePublished: '2026-05-24',
-  dateModified: '2026-05-24',
+  datePublished: '2026-05-20',
+  dateModified: '2026-05-20',
   author: 'Navneet Arya',
   category: 'AI Comparison',
   readTime: '10 min read',

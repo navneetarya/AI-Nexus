@@ -1,4 +1,4 @@
-// blog/best-ai-tools-in-india-2026.ts
+﻿// blog/best-ai-tools-in-india-2026.ts
 // Target keywords: "best AI tools in India" (1,200/mo KD 8), "best AI tools for Indian students" (900/mo KD 6)
 //                  "free AI tools for Indian creators" (800/mo KD 5)
 // Word count: ~1,900 words — written specifically for Indian audience, near-zero competition
@@ -10,8 +10,8 @@ const post: BlogPost = {
   title: 'Best AI Tools in India 2026 — INR Pricing, Free Plans & Honest Reviews',
   seoTitle: 'Best AI Tools in India 2026 — INR Pricing',
   metaDescription: 'The best AI tools available in India in 2026 — with actual INR pricing, free plan details, Hindi support info, and honest verdicts. No VPN needed for any of these.',
-  datePublished: '2026-05-12',
-  dateModified: '2026-05-12',
+  datePublished: '2026-05-08',
+  dateModified: '2026-05-08',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',

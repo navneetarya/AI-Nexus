@@ -1,4 +1,4 @@
-// blog/taskade-vs-notion-vs-asana-2026.ts
+﻿// blog/taskade-vs-notion-vs-asana-2026.ts
 // T4.5 — Target keyword: "taskade vs notion vs asana" — 3-way comparison for freelancers
 // Consolidates /compare/taskade-vs-notion and /compare/taskade-vs-asana pages
 // Internal links: /tools/taskade, /compare/taskade-vs-notion, /compare/taskade-vs-asana
@@ -11,8 +11,8 @@ const post: BlogPost = {
   title: 'Taskade vs Notion vs Asana 2026 — 3-Way Comparison for Freelancers',
   seoTitle: 'Taskade vs Notion vs Asana 2026 — Best for Freelancers?',
   metaDescription: 'Taskade vs Notion vs Asana compared for freelancers and small teams. Honest breakdown of AI features, pricing, and which tool actually gets work done in 2026.',
-  datePublished: '2026-05-14',
-  dateModified: '2026-05-14',
+  datePublished: '2026-05-12',
+  dateModified: '2026-05-12',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',

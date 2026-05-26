@@ -1,4 +1,4 @@
-// blog/best-ai-logo-makers-free-2026.ts
+﻿// blog/best-ai-logo-makers-free-2026.ts
 // Target keywords: "best ai logo maker free" (12,000/mo) + "best ai logo makers free india" (1,900/mo, KD 15)
 // W3 update: Added India-specific section, INR pricing, India FAQs, internal link to India post
 // Word count: ~1,800 words
@@ -10,8 +10,8 @@ const post: BlogPost = {
   title: 'Best Free AI Logo Makers in 2026 — Including INR Pricing for India',
   seoTitle: 'Best Free AI Logo Makers 2026 — INR Pricing & India Guide',
   metaDescription: 'Looka, Canva AI, Leonardo.ai, and Hatchful compared as free AI logo makers in 2026 — with INR pricing for Indian creators and freelancers. Output quality, customisation, and honest picks.',
-  datePublished: '2026-05-04',
-  dateModified: '2026-05-13',
+  datePublished: '2026-04-30',
+  dateModified: '2026-04-30',
   author: 'Navneet Arya',
   category: 'india',
   readTime: '9 min read',

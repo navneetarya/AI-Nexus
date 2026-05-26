@@ -1,4 +1,4 @@
-// blog/best-podcastle-alternatives.ts
+﻿// blog/best-podcastle-alternatives.ts
 // Target keyword: "podcastle alternatives" — 1,900/mo, Easy difficulty
 // URL: /blog/best-podcastle-alternatives
 
@@ -9,8 +9,8 @@ const post: BlogPost = {
   title: 'Best Podcastle Alternatives in 2026 — For Podcasters Who Need More',
   seoTitle: 'Best Podcastle Alternatives 2026',
   metaDescription: 'Looking for a Podcastle alternative? Descript, Riverside.fm, and Adobe Podcast compared for recording, editing, and publishing podcasts in 2026 — honest verdict on which fits which workflow.',
-  datePublished: '2026-05-03',
-  dateModified: '2026-05-06',
+  datePublished: '2026-04-28',
+  dateModified: '2026-04-28',
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '6 min read',

@@ -1,4 +1,4 @@
-// blog/best-notion-ai-alternatives-2026.ts
+﻿// blog/best-notion-ai-alternatives-2026.ts
 // Target keyword: "best notion ai alternatives" — 4,200/mo, Easy-Medium difficulty
 // Secondary: "notion ai alternative free" — 1,600/mo | "notion ai vs taskade" — 900/mo
 // URL: /blog/best-notion-ai-alternatives-2026
@@ -13,7 +13,7 @@ const post: BlogPost = {
   metaDescription:
     'Taskade, Writesonic, and Frase compared as Notion AI alternatives in 2026 — which is actually better, which has a genuine free plan, and when switching makes sense.',
   datePublished: '2026-05-05',
-  dateModified: '2026-05-10',
+  dateModified: '2026-05-05',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',

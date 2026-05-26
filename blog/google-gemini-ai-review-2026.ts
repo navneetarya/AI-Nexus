@@ -1,4 +1,4 @@
-// blog/google-gemini-ai-review-2026.ts
+﻿// blog/google-gemini-ai-review-2026.ts
 // 🔥 Trending +550% — Target keyword: "gemini ai review" — 18K+/mo · KD 19
 // Secondary keywords: "google gemini vs chatgpt writing", "gemini 3.1 pro review", "is gemini better than chatgpt"
 // Intent: commercial review — writers, students, marketers evaluating Gemini for their writing workflow
@@ -13,8 +13,8 @@ const post: BlogPost = {
   title: 'Google Gemini AI Review 2026: Is It Better Than ChatGPT for Writing?',
   seoTitle: 'Google Gemini AI Review 2026: Better Than ChatGPT for Writing?',
   metaDescription: 'Google Gemini 3.1 Pro reviewed for writing in 2026. Compared against ChatGPT on blog posts, email copy, and Google Docs integration. Honest verdict — no affiliate bias.',
-  datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  datePublished: '2026-05-13',
+  dateModified: '2026-05-13',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '10 min read',

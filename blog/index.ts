@@ -66,8 +66,21 @@ import post33 from './perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2
 // Week 2 EEAT: ChatGPT Free vs Claude Free vs Gemini Free — high-volume evergreen comparison
 // Target keyword: "chatgpt free vs claude free" — free plan comparison for freelancers
 import post34 from './chatgpt-free-vs-claude-free-vs-gemini-free-2026';
+// Use-case pages — developers, automation engineers, YouTubers, startups
+import post35 from './best-ai-tools-for-developers-2026';
+import post36 from './best-ai-tools-for-automation-engineers-2026';
+import post37 from './best-ai-tools-for-youtubers-2026';
+import post38 from './best-ai-tools-for-startups-2026';
+// Research Intelligence pages — API pricing, free plans, startup growth, ecosystem analysis
+import post39 from './ai-api-pricing-comparison-2026';
+import post40 from './best-free-ai-tool-plans-2026';
+import post41 from './fastest-growing-ai-startups-2026';
+import post42 from './cheapest-ai-coding-tools-2026';
+import post43 from './ai-ecosystem-growth-report-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post43, post42, post41, post40, post39,
+  post38, post37, post36, post35,
   post34, post33,
   post1, post2, post3, post4, post5, post6, post7, post8,
   post9, post10, post11, post12, post13, post14, post15,

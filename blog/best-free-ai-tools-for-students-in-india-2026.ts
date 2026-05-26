@@ -1,4 +1,4 @@
-// blog/best-free-ai-tools-for-students-in-india-2026.ts
+﻿// blog/best-free-ai-tools-for-students-in-india-2026.ts
 // W2-T2 — Target keyword: "best free ai tools for students in india 2026" — KD 4, 2,400/mo
 // Secondary:  "free ai tools for students india" (KD 3, 1,800/mo)
 //             "ai tools for indian students free" (KD 3, 900/mo)
@@ -14,8 +14,8 @@ const post: BlogPost = {
   title: 'Best Free AI Tools for Students in India 2026 — No Dollar Card, No VPN',
   seoTitle: 'Best Free AI Tools for Students in India 2026',
   metaDescription: 'Best free AI tools for students in India 2026 — works without a VPN or dollar card. Covers essays, research, presentations and coding with INR pricing notes.',
-  datePublished: '2026-05-13',
-  dateModified: '2026-05-13',
+  datePublished: '2026-05-09',
+  dateModified: '2026-05-09',
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '8 min read',

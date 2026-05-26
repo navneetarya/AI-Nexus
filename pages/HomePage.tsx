@@ -9,6 +9,7 @@ import {
   Mic, Megaphone, Palette, Code2, Scale, Sun, Moon, Calendar, Linkedin,
 } from 'lucide-react';
 import { COMPARE_ARTICLES } from './compare-data';
+import { BLOG_POSTS } from '../blog/index';
 import { SharedNav } from './SharedNav';
 import { BeehiivForm } from '../components/BeehiivForm';
 
@@ -645,8 +646,8 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             style={{ fontFamily:"'Fraunces', Georgia, serif", fontWeight:800,
               fontSize:'clamp(30px,6vw,52px)', lineHeight:1.07, color:C.txt,
               margin:'0 0 16px', letterSpacing:'-0.025em' }}>
-            Independent AI Tool Research
-            <span style={{ color:C.a1, fontStyle:'italic' }}> — Simplified.</span>
+            Independent AI Research, Comparisons
+            <span style={{ color:C.a1, fontStyle:'italic' }}> &amp; Workflow Intelligence</span>
           </h1>
 
           <p className="anim-fade-up d3"
@@ -862,6 +863,46 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 </div>
               );
             })}
+          </div>
+        </div>
+      )}
+
+      {/* ── Latest AI Research ──────────────────────────────────────────── */}
+      {(filters.category as string) === 'All' && !filters.search && (
+        <div className="scroll-reveal" style={{ maxWidth:1200, margin:'0 auto', padding:'28px 24px 0' }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:14, gap:8 }}>
+            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:17,
+              color:C.txt, letterSpacing:'-0.025em', margin:0, display:'flex', alignItems:'center', gap:8 }}>
+              <span style={{ display:'inline-flex', alignItems:'center', justifyContent:'center',
+                width:22, height:22, borderRadius:6, background:C.a1card }}>📊</span>
+              Latest AI Research
+            </h2>
+            <button
+              onClick={() => navigate('/blog')}
+              style={{ fontSize:12, fontWeight:600, color:C.a1, background:'none', border:'none',
+                cursor:'pointer', fontFamily:"'Inter',sans-serif" }}>
+              View all research →
+            </button>
+          </div>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))', gap:12 }}>
+            {BLOG_POSTS.filter(p => p.category === 'Research').slice(0, 3).map(post => (
+              <div key={post.slug}
+                onClick={() => navigate(`/blog/${post.slug}`)}
+                style={{ padding:'16px', background:C.surf, border:`1px solid var(--brd-xs)`,
+                  borderRadius:12, cursor:'pointer', transition:'border-color .15s' }}
+                onMouseEnter={e => (e.currentTarget.style.borderColor = C.a1)}
+                onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--brd-xs)')}
+              >
+                <div style={{ fontSize:11, fontWeight:700, color:C.a1, textTransform:'uppercase',
+                  letterSpacing:'0.06em', marginBottom:6 }}>{post.category}</div>
+                <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:14,
+                  color:C.txt, lineHeight:1.4, marginBottom:6 }}>{post.title}</div>
+                <div style={{ fontSize:12, color:C.mut, lineHeight:1.5,
+                  display:'-webkit-box', WebkitLineClamp:2, WebkitBoxOrient:'vertical' as const,
+                  overflow:'hidden' }}>{post.excerpt}</div>
+                <div style={{ marginTop:10, fontSize:11, color:C.a1, fontWeight:600 }}>Read research →</div>
+              </div>
+            ))}
           </div>
         </div>
       )}

@@ -1,4 +1,4 @@
-// blog/best-ai-coding-tools-2026.ts
+﻿// blog/best-ai-coding-tools-2026.ts
 // Target keyword: "best ai coding tools 2026" — 1,600/mo
 // Word count: ~1,500 words
 
@@ -9,8 +9,8 @@ const post: BlogPost = {
   title: 'Best AI Coding Tools in 2026 — Independently Reviewed & Ranked',
   seoTitle: 'Best AI Coding Tools 2026 — Tested & Ranked',
   metaDescription: 'GitHub Copilot, Cursor, Replit, and Codeium compared on real-world projects in 2026 — honest verdict on which saves the most time and which is worth paying for.',
-  datePublished: '2026-05-05',
-  dateModified: '2026-05-08',
+  datePublished: '2026-05-04',
+  dateModified: '2026-05-04',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '8 min read',
