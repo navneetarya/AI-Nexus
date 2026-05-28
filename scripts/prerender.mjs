@@ -2012,7 +2012,7 @@ console.log('\nStatic pages:');
   const title = `How Navneet Reviews AI Tools — Research Methodology | AI Nexus`;
   const description = `The exact 7-step process ${AUTHOR} uses to research and evaluate every AI tool on AI Nexus. Real standards, free and paid plan analysis, head-to-head comparisons, and the one rule that doesn't bend.`;
   const schemas = [
-    articleSchema({ title, description, canonical }),
+    articleSchema({ title, description, canonical, imageUrl: `${SITE}/og-image.png` }),
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'Review Methodology', canonical],
@@ -2061,7 +2061,7 @@ console.log('\nBlog pages:');
   const title = `AI Tools Blog — Guides & Reviews | AI Nexus by ${AUTHOR}`;
   const description = `In-depth AI tool guides and reviews by ${AUTHOR}. Independently researched. No sponsored posts.`;
   const schemas = [
-    articleSchema({ title, description, canonical }),
+    articleSchema({ title, description, canonical, imageUrl: `${SITE}/og-blog-writing.webp` }),
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'Blog', canonical],
@@ -2168,7 +2168,7 @@ for (const post of BLOG_POSTS) {
   }).filter(Boolean);
 
   const schemas = [
-    articleSchema({ title, description, canonical }),
+    articleSchema({ title, description, canonical, imageUrl: `${SITE}/og-category-writing.webp` }),
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'Best Free AI Tools', canonical],
@@ -2205,7 +2205,7 @@ for (const post of BLOG_POSTS) {
   }).filter(Boolean);
 
   const schemas = [
-    articleSchema({ title, description, canonical, datePublished: '2026-05-15' }),
+    articleSchema({ title, description, canonical, datePublished: '2026-05-15', imageUrl: `${SITE}/og-india-guide.webp` }),
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'Best AI Tools India', canonical],
@@ -2244,7 +2244,7 @@ for (const post of BLOG_POSTS) {
   }).filter(Boolean);
 
   const schemas = [
-    articleSchema({ title, description, canonical, datePublished: '2026-05-19' }),
+    articleSchema({ title, description, canonical, datePublished: '2026-05-19', imageUrl: `${SITE}/og-category-image.webp` }),
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'Best AI Logo Makers', canonical],

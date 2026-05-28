@@ -257,4 +257,18 @@
   <url><loc>https://ainexustools.online/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-24</lastmod>
     <image:image><image:loc>https://ainexustools.online/og-compare.webp</image:loc><image:title>ChatGPT Free vs Claude Free vs Gemini Free 2026</image:title></image:image>
   </url>
+  <!-- Week 6 blog additions — previously missing from sitemap -->
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-developers-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-21</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-automation-engineers-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-22</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-startups-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-23</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-youtubers-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-23</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/best-free-ai-tool-plans-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-24</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/ai-api-pricing-comparison-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-24</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/cheapest-ai-coding-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-25</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/fastest-growing-ai-startups-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-25</lastmod></url>
+  <url><loc>https://ainexustools.online/blog/ai-ecosystem-growth-report-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-26</lastmod></url>
+  <!-- Compare pages previously missing from sitemap -->
+  <url><loc>https://ainexustools.online/compare/claude-code-vs-github-copilot-vs-replit/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-26</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/gemini-vs-perplexity/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-26</lastmod></url>
+  <url><loc>https://ainexustools.online/compare/claude-vs-gemini-coding/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-05-26</lastmod></url>
 </urlset>
