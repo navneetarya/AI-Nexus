@@ -51,7 +51,7 @@ function PageLoader() {
   );
 }
 
-function updateMeta(title: string, description: string, canonical: string) {
+function updateMeta(title: string, description: string, canonical: string, ogImage?: string) {
   document.title = title;
   const setMeta = (sel: string, val: string) => {
     const el = document.querySelector(sel);
@@ -61,6 +61,10 @@ function updateMeta(title: string, description: string, canonical: string) {
   setMeta('meta[property="og:title"]', title);
   setMeta('meta[property="og:description"]', description);
   setMeta('meta[property="og:url"]', canonical);
+  if (ogImage) {
+    setMeta('meta[property="og:image"]', ogImage);
+    setMeta('meta[name="twitter:image"]', ogImage);
+  }
   const canon = document.querySelector('link[rel="canonical"]');
   if (canon) canon.setAttribute('href', canonical);
 }
@@ -167,7 +171,8 @@ function App() {
       updateMeta(
         `${post.seoTitle ?? post.title} | AI Nexus`,
         post.metaDescription,
-        `${SITE_CONFIG.siteUrl}/blog/${post.slug}/`
+        `${SITE_CONFIG.siteUrl}/blog/${post.slug}/`,
+        post.ogImage
       );
       return (
         <Suspense fallback={<PageLoader />}>
@@ -244,7 +249,7 @@ function App() {
     );
   }
 
-  if (path === '/editorial-policy' || path === '/editorial-policy/') {
+  if (path === '/editorial-policy') {
     updateMeta(
       'Editorial Policy | AI Nexus',
       'AI Nexus editorial standards: independent research, no sponsored reviews, verified pricing, and transparent methodology.',
@@ -257,7 +262,7 @@ function App() {
     );
   }
 
-  if (path === '/how-we-analyze-ai-tools' || path === '/how-we-analyze-ai-tools/') {
+  if (path === '/how-we-analyze-ai-tools') {
     updateMeta(
       'How We Analyze AI Tools — 6-Step Research Process | AI Nexus',
       'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, 200+ reviews, live pricing verification.',
@@ -270,7 +275,7 @@ function App() {
     );
   }
 
-  if (path === '/contact' || path === '/contact/') {
+  if (path === '/contact') {
     updateMeta(
       'Contact AI Nexus — Editorial, Research & Press Enquiries',
       'Contact Navneet Arya at AI Nexus for editorial enquiries, research collaboration, press contact, and affiliate partnership questions.',
