@@ -2365,6 +2365,32 @@ for (const post of BLOG_POSTS) {
   }));
 }
 
+// ── Best AI Tools for Freelancers landing page (/best-ai-tools-for-freelancers/) ──
+{
+  const canonical = `${SITE}/best-ai-tools-for-freelancers/`;
+  const title = `Best AI Tools for Freelancers 2026 — Work Faster, Earn More | AI Nexus`;
+  const description = `The best AI tools for freelancers in 2026 — compared across writing, design, productivity, social media, and coding. Cut your workload in half without adding new subscriptions. Independently researched by ${AUTHOR}.`;
+
+  const schemas = [
+    articleSchema({ title, description, canonical, datePublished: '2026-05-03', imageUrl: `${SITE}/og/blog/best-ai-tools-for-freelancers-2026.webp` }),
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'Best AI Tools for Freelancers', canonical],
+    ]),
+    faqSchema([
+      { q: 'Are AI tools worth it for freelancers?', a: 'Yes — with one condition. AI tools are worth it when they speed up tasks you already do repeatedly, like writing first drafts, editing photos, or generating social captions. They are not worth it if you buy tools you don\'t have a workflow for yet. Start with one tool that solves your biggest bottleneck.' },
+      { q: 'What is the best free AI tool for freelancers?', a: 'Grammarly\'s free plan is the highest-value free AI tool for most freelancers — it improves every client email, proposal, and deliverable you write. For content creation, Rytr\'s free plan (10,000 characters/month) is the best no-cost option for generating drafts.' },
+      { q: 'Can AI tools replace a freelancer?', a: 'No. AI tools handle repetitive, template-driven work — first drafts, background removal, caption generation. They cannot replace the client relationship, creative strategy, domain expertise, or accountability that clients pay a freelancer for.' },
+    ]),
+  ];
+
+  writeRoute('best-ai-tools-for-freelancers', buildPage(template, {
+    title, description, canonical, schemas,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+    <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Every tool on this list has been independently researched by ${esc(AUTHOR)} — covering real workflows, free plan limits, and honest pricing breakdowns for freelance professionals.</p>`,
+  }));
+}
+
 // ── 7. Category landing pages (/best-ai-writing-tools/ etc.) ────────────────
 {
   const CATEGORY_PAGES = [
