@@ -363,12 +363,35 @@ function App() {
     );
   }
 
+  // ── 404 catch-all: unknown paths get a not-found page instead of silently serving the homepage ──
+  if (path !== '/' && path !== '') {
+    updateMeta(
+      'Page Not Found — AI Nexus',
+      'The page you requested does not exist on AI Nexus.',
+      `${SITE_CONFIG.siteUrl}${path}/`
+    );
+    return <NotFoundPage navigate={navigate} {...themeProps} />;
+  }
+
   updateMeta(
       `Best AI Tools 2026 — Researched & Ranked | AI Nexus`,
     `Honest reviews of the best AI tools for writing, video, audio, podcasting, and productivity. Independently researched by ${SITE_CONFIG.authorName} — official docs, 200+ verified reviews per tool, live pricing verified May 2026.`,
     SITE_CONFIG.siteUrl
   );
   return <HomePage navigate={navigate} {...themeProps} />;
+}
+
+// ── 404 Not Found page ──────────────────────────────────────────────────────
+function NotFoundPage({ navigate, isDark, toggleTheme }: { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void }) {
+  return (
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'var(--bg)', padding: 32 }}>
+      <h1 style={{ fontSize: 48, fontWeight: 800, color: 'var(--a1)', margin: '0 0 16px' }}>404</h1>
+      <p style={{ fontSize: 18, color: 'var(--txt)', margin: '0 0 24px', textAlign: 'center' }}>This page doesn't exist on AI Nexus.</p>
+      <button onClick={() => navigate('/')} style={{ padding: '12px 24px', background: 'var(--a1)', color: '#fff', border: 'none', borderRadius: 8, fontSize: 16, fontWeight: 600, cursor: 'pointer' }}>
+        Back to Home
+      </button>
+    </div>
+  );
 }
 
 // W4-T21: StickyNewsletterBar is injected here so it persists across all route changes

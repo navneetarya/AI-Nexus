@@ -1,0 +1,175 @@
+{
+  "timestamp": "2026-05-30T23:09:16.034128",
+  "site": "https://ainexustools.online",
+  "summary": {
+    "total": 18,
+    "critical": 0,
+    "high": 0,
+    "medium": 15,
+    "low": 3
+  },
+  "issues": [
+    {
+      "severity": "MEDIUM",
+      "category": "Performance & Core Web Vitals",
+      "title": "8 unused font files (109KB wasted)",
+      "details": "Font files in /public/fonts/ not referenced in any @font-face or preload: dm-sans-v17-latin-300.woff2, dm-sans-v17-latin-500.woff2, dm-sans-v17-latin-600.woff2, dm-sans-v17-latin-regular.woff2, syne-v24-latin-600.woff2, syne-v24-latin-700.woff2, syne-v24-latin-800.woff2, syne-v24-latin-regular.woff2",
+      "file": "public\\fonts",
+      "line": null,
+      "fix": "Delete unused font files to reduce deployed bundle size."
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Performance & Core Web Vitals",
+      "title": "1 render-blocking scripts",
+      "details": "Scripts without async/defer block rendering: ['/index.tsx']",
+      "file": "index.html",
+      "line": null,
+      "fix": "Add async or defer to non-critical scripts."
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /best-ai-design-tools exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('best-ai-design-tools', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /best-ai-audio-tools exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('best-ai-audio-tools', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /best-ai-productivity-tools exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('best-ai-productivity-tools', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /privacy exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('privacy', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /best-ai-marketing-tools exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('best-ai-marketing-tools', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /best-ai-video-tools exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('best-ai-video-tools', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /best-ai-image-tools exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('best-ai-image-tools', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /contact exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('contact', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /best-ai-coding-tools exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('best-ai-coding-tools', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Internal Linking",
+      "title": "Route /best-ai-writing-tools exists in App.tsx but may not be pre-rendered",
+      "details": "If this page isn't pre-rendered, it only works via client-side JS. Googlebot may not index it on GitHub Pages.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add writeRoute('best-ai-writing-tools', ...) in prerender.mjs"
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Navigation & UX",
+      "title": "No 404 route in SPA router",
+      "details": "Unmatched routes fall through to homepage instead of showing a 404. This creates soft-404s that confuse Googlebot.",
+      "file": "App.tsx",
+      "line": null,
+      "fix": "Add a catch-all route that renders a 404 page with proper status signal."
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Landing Page Analysis",
+      "title": "Homepage has 2 H1 tags",
+      "details": "Multiple H1s dilute SEO signal. Use one H1, rest should be H2-H6.",
+      "file": "pages\\HomePage.tsx",
+      "line": null,
+      "fix": "Keep one H1, convert others to H2."
+    },
+    {
+      "severity": "MEDIUM",
+      "category": "Content & Keyword",
+      "title": "2 tool reviews under 150 words",
+      "details": "Short reviews may be flagged as thin content by Google.",
+      "file": "scripts\\prerender.mjs",
+      "line": null,
+      "fix": "Expand short reviews to 300+ words with specific details."
+    },
+    {
+      "severity": "LOW",
+      "category": "Accessibility",
+      "title": "No skip-to-content link in navigation",
+      "details": "Screen reader users need a skip link to bypass the nav.",
+      "file": "pages\\SharedNav.tsx",
+      "line": null,
+      "fix": "Add <a href='#main' class='sr-only'>Skip to content</a>"
+    },
+    {
+      "severity": "LOW",
+      "category": "Generative Engine Optimization",
+      "title": "Missing E-E-A-T signal: Detailed review body",
+      "details": "'reviewBody' not found in constants.ts. This data strengthens AI engine trust in your content.",
+      "file": "constants.ts",
+      "line": null,
+      "fix": "Add reviewBody to tool data."
+    },
+    {
+      "severity": "LOW",
+      "category": "Crawlability & Indexing",
+      "title": "No Bing site validation file",
+      "details": "Bing Webmaster Tools requires a validation file for site ownership.",
+      "file": "public",
+      "line": null,
+      "fix": "Add BingSiteAuth.xml from Bing Webmaster Tools."
+    }
+  ]
+}

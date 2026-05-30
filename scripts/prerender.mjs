@@ -56,6 +56,36 @@ const LAST_MODIFIED = {
   'looka':       '2026-05-23',
 };
 
+// Trustpilot review counts per tool — sourced from constants.ts
+// Used in SoftwareApplication schema aggregateRating.reviewCount
+// Tools without a count here will have the aggregateRating block omitted entirely
+const TRUSTPILOT_COUNTS = {
+  'grammarly': 7842,
+  'writesonic': 1243,
+  'rytr': 312,
+  'quillbot': 1243,
+  'frase': 186,
+  'leonardo-ai': 524,
+  'photoroom': 2891,
+  'looka': 1187,
+  'pictory': 312,
+  'opus-clip': 183,
+  'invideo': 672,
+  'murf-ai': 428,
+  'podcastle': 143,
+  'gamma': 892,
+  'beautiful-ai': 324,
+  'ocoya': 93,
+  'replit': 2834,
+  'elevenlabs': 1892,
+  'jasper': 2134,
+  'descript': 782,
+  'perplexity': 924,
+  'canva-ai': 14237,
+  'notion-ai': 5214,
+  'taskade': 188,
+};
+
 // ── Escape HTML attribute values ─────────────────────────────────────────────
 const esc = s => String(s)
   .replace(/&/g, '&amp;')
@@ -199,6 +229,7 @@ const TOOLS = [
     rating: 4.0, lastTested: 'April 2026',
     seoTitle: 'Ocoya Review 2026 — Buffer Alternative, AI Captions & Pricing | AI Nexus',
     metaDescription: 'Ocoya review 2026 — $15/month for AI captions + social scheduling. Is it cheaper than Buffer? Real pricing breakdown across 3 plans and who should use it.',
+    reviewBody: 'Ocoya is a dedicated social media content platform that combines AI caption writing with multi-platform scheduling for social media managers and content creators who need to post consistently across multiple channels. The standout feature is the AI caption generator — provide a topic, product description, or campaign brief and Ocoya produces platform-optimised captions for Instagram, LinkedIn, Twitter, and Facebook in seconds. Captions are tailored per platform: LinkedIn posts get a professional tone, Instagram gets hashtag suggestions, and Twitter stays under 280 characters. Scheduling is built directly into the workflow — write, preview, and schedule without switching tools. Plans start at $15/month (Bronze) which includes 5 social profiles, AI caption generation, and a visual content calendar. The Silver plan at $33/month adds 20 profiles and team collaboration. Compared to Buffer ($6/month per channel, no AI writing), Ocoya is more cost-effective for teams managing 4 or more profiles since the AI writing is included in all paid plans. The main limitation is design capabilities: while Ocoya includes basic image templates, the built-in editor is not a Canva replacement for teams that need complex branded visuals. For social-first content workflows where writing and scheduling are the primary need, Ocoya delivers strong value with its all-in-one approach. For teams that require advanced design alongside scheduling, combining Canva with a simpler scheduler may be more flexible.',
   },
   {
     slug: 'replit', name: 'Replit', category: 'Coding',
@@ -842,7 +873,7 @@ function resolveOgImage(slug) {
   return `${SITE}/og-image.png`; // homepage/static pages keep existing PNG
 }
 
-function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, bodyHtml = null, readTimeHtml = '', ogImage = null }) {
+function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, bodyHtml = null, readTimeHtml = '', ogImage = null, ogType = 'website' }) {
   let html = template;
 
   // Title
@@ -874,7 +905,8 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
   html = html
     .replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/,       (_, g1, g2) => g1 + esc(title) + g2)
     .replace(/(<meta\s+property="og:description"\s+content=")[^"]*(")/,  (_, g1, g2) => g1 + esc(description) + g2)
-    .replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/,          (_, g1, g2) => g1 + canonical + g2);
+    .replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/,          (_, g1, g2) => g1 + canonical + g2)
+    .replace(/(<meta\s+property="og:type"\s+content=")[^"]*(")/,         (_, g1, g2) => g1 + ogType + g2);
 
   // W2-T3: Replace OG image if a page-specific one is provided
   if (ogImage) {
@@ -1028,21 +1060,6 @@ function reviewSchema(tool, canonical) {
   };
 }
 
-function aggregateRatingSchema(tool) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'AggregateRating',
-    name: `${tool.name} — User Ratings on AI Nexus`,
-    ratingValue: tool.rating,
-    bestRating: '5',
-    worstRating: '1',
-    itemReviewed: {
-      '@type': 'SoftwareApplication',
-      name: tool.name,
-    },
-  };
-}
-
 // FIX 2 (SEO-High): Added wordCount + image — both recommended by Google's Article spec
 function articleSchema({ title, description, canonical, wordCount, imageUrl, datePublished }) {
   return {
@@ -1157,11 +1174,13 @@ function generateSitemap() {
   }));
 
   // Static pages
-  blocks.push(urlBlock({ loc: `${SITE}/about/`,            priority: '0.7', freq: 'monthly', mod: TODAY }));
-  blocks.push(urlBlock({ loc: `${SITE}/disclosure/`,        priority: '0.3', freq: 'yearly',  mod: TODAY }));
-  blocks.push(urlBlock({ loc: `${SITE}/methodology/`,       priority: '0.7', freq: 'monthly', mod: TODAY }));
-  blocks.push(urlBlock({ loc: `${SITE}/editorial-policy/`,  priority: '0.4', freq: 'yearly',  mod: TODAY }));
-  blocks.push(urlBlock({ loc: `${SITE}/how-we-analyze-ai-tools/`, priority: '0.5', freq: 'yearly', mod: TODAY }));
+  blocks.push(urlBlock({ loc: `${SITE}/about/`,            priority: '0.7', freq: 'monthly', mod: '2026-05-01' }));
+  blocks.push(urlBlock({ loc: `${SITE}/contact/`,          priority: '0.5', freq: 'yearly',  mod: '2026-05-01' }));
+  blocks.push(urlBlock({ loc: `${SITE}/privacy/`,          priority: '0.4', freq: 'yearly',  mod: '2026-05-01' }));
+  blocks.push(urlBlock({ loc: `${SITE}/disclosure/`,        priority: '0.3', freq: 'yearly',  mod: '2026-05-01' }));
+  blocks.push(urlBlock({ loc: `${SITE}/methodology/`,       priority: '0.7', freq: 'monthly', mod: '2026-05-01' }));
+  blocks.push(urlBlock({ loc: `${SITE}/editorial-policy/`,  priority: '0.4', freq: 'yearly',  mod: '2026-05-01' }));
+  blocks.push(urlBlock({ loc: `${SITE}/how-we-analyze-ai-tools/`, priority: '0.5', freq: 'yearly', mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/glossary/`,          priority: '0.8', freq: 'monthly', mod: TODAY }));
   blocks.push(urlBlock({ loc: `${SITE}/best-free-ai-tools/`,priority: '0.9', freq: 'weekly',  mod: TODAY,
     images: [{ loc: `${SITE}/og-image.png`, title: 'Best Free AI Tools 2026 — AI Nexus' }],
@@ -1198,7 +1217,8 @@ function generateSitemap() {
     }));
   }
 
-  // Compare pages
+  // Compare pages — include the /compare/ index page
+  blocks.push(urlBlock({ loc: `${SITE}/compare/`, priority: '0.8', freq: 'weekly', mod: TODAY }));
   for (const a of COMPARE_ARTICLES) {
     blocks.push(urlBlock({
       loc: `${SITE}/compare/${a.slug}/`, priority: '0.95', freq: 'monthly', mod: TODAY,
@@ -1965,13 +1985,17 @@ for (const tool of TOOLS) {
         availability: 'https://schema.org/InStock',
         description: tool.pricing,
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: tool.rating.toString(),
-        bestRating: '5',
-        worstRating: '1',
-        reviewCount: '1',
-      },
+      // Only include aggregateRating if we have a real Trustpilot review count
+      // (hardcoded '1' was suppressing rich results — looked fabricated to Google)
+      ...(TRUSTPILOT_COUNTS[tool.slug] ? {
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: tool.rating.toString(),
+          bestRating: '5',
+          worstRating: '1',
+          reviewCount: TRUSTPILOT_COUNTS[tool.slug].toString(),
+        },
+      } : {}),
     },
   ];
 
@@ -1980,16 +2004,15 @@ for (const tool of TOOLS) {
     schemas.push(faqSchema(TOOL_FAQS[tool.slug]));
   }
 
-  writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas, ogImage: resolveOgImage(`tools/${tool.slug}`) }));
+  writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas, ogImage: resolveOgImage(`tools/${tool.slug}`), ogType: 'product' }));
 }
 
 // ── 2. Compare pages ──────────────────────────────────────────────────────────
 console.log('\nCompare pages:');
 for (const art of COMPARE_ARTICLES) {
-  // claude-code compare page defers canonically to the blog post (avoids duplicate content)
-  const canonical = art.slug === 'claude-code-vs-github-copilot-vs-replit'
-    ? `${SITE}/blog/claude-code-vs-github-copilot-vs-replit-2026/`
-    : `${SITE}/compare/${art.slug}/`;
+  // FIXED: All compare pages self-canonicalize. Previously claude-code compare page
+  // pointed its canonical to the blog URL, meaning it could never be indexed at /compare/.
+  const canonical = `${SITE}/compare/${art.slug}/`;
   const schemas = [
     articleSchema({ title: art.title, description: art.metaDescription, canonical, imageUrl: resolveOgImage(`compare/${art.slug}`) }),
     breadcrumbs([
@@ -2005,7 +2028,7 @@ for (const art of COMPARE_ARTICLES) {
   // H7 (SEO-High): use seoTitle (≤60 chars) for <title> tag if defined
   writeRoute(
     `compare/${art.slug}`,
-    buildPage(template, { title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas, ogImage: resolveOgImage(`compare/${art.slug}`) })
+    buildPage(template, { title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas, ogImage: resolveOgImage(`compare/${art.slug}`), ogType: 'article' })
   );
 }
 
@@ -2103,6 +2126,32 @@ console.log('\nStatic pages:');
   }));
 }
 
+// ── Contact page ──────────────────────────────────────────────────────────────
+{
+  const canonical = `${SITE}/contact/`;
+  const title = 'Contact AI Nexus — Editorial, Research & Press Enquiries';
+  const description = 'Contact Navneet Arya at AI Nexus for editorial enquiries, research collaboration, press contact, and affiliate partnership questions.';
+  writeRoute('contact', buildPage(template, {
+    title,
+    description,
+    canonical,
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Contact', canonical]])],
+  }));
+}
+
+// ── Privacy page ──────────────────────────────────────────────────────────────
+{
+  const canonical = `${SITE}/privacy/`;
+  const title = 'Privacy Policy | AI Nexus';
+  const description = 'Privacy policy for AI Nexus (ainexustools.online). How we handle data, Google Analytics usage, cookies, and your rights.';
+  writeRoute('privacy', buildPage(template, {
+    title,
+    description,
+    canonical,
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Privacy Policy', canonical]])],
+  }));
+}
+
 // ── Week 3: Blog list page (/blog) ────────────────────────────────────────────
 console.log('\nBlog pages:');
 {
@@ -2130,10 +2179,10 @@ console.log('\nBlog pages:');
 }
 
 // ── Week 3: Individual blog post pages (/blog/:slug) ──────────────────────────
-// Canonical overrides — prevents keyword cannibalization for writing tools cluster
+// FIXED: Canonical overrides removed — these posts have completely different search intent
+// and audiences. Pointing them at best-ai-writing-tools-2026 was blocking Google from
+// indexing them at their own URLs.
 const BLOG_CANONICAL_OVERRIDES = {
-  'best-ai-writing-tools-for-beginners-2026': `${SITE}/blog/best-ai-writing-tools-2026/`,
-  'best-free-ai-writing-tools-2026': `${SITE}/blog/best-ai-writing-tools-2026/`,
 };
 
 // India-specific blog slugs — need en-IN hreflang
@@ -2195,6 +2244,7 @@ for (const post of BLOG_POSTS) {
     bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>`,
     readTimeHtml: readTime,
     ogImage: resolveOgImage(`blog/${post.slug}`),
+    ogType: 'article',
   });
   if (INDIA_BLOG_SLUGS.has(post.slug)) {
     const indiaHreflang = `    <link rel="alternate" hreflang="en-IN" href="${SITE}/blog/${post.slug}/" />\n    <link rel="alternate" hreflang="en" href="${SITE}/blog/${post.slug}/" />\n    <link rel="alternate" hreflang="x-default" href="${SITE}/" />`;

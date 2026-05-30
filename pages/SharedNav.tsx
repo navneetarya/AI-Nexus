@@ -168,6 +168,14 @@ export function SharedNav({
   return (
     <>
       <style>{NAV_CSS}</style>
+      <a href="#main" className="sr-only" style={{
+        position:'absolute', left:'-9999px', top:'auto', width:'1px', height:'1px', overflow:'hidden',
+        zIndex:999, padding:'8px 16px', background:C.a1, color:'#fff', borderRadius:4,
+        fontSize:14, textDecoration:'none',
+      }} onFocus={e => { e.currentTarget.style.left = '8px'; e.currentTarget.style.top = '8px'; e.currentTarget.style.width = 'auto'; e.currentTarget.style.height = 'auto'; }}
+        onBlur={e => { e.currentTarget.style.left = '-9999px'; e.currentTarget.style.width = '1px'; e.currentTarget.style.height = '1px'; }}>
+        Skip to content
+      </a>
       <nav style={{
         position: 'sticky', top: 0, zIndex: 200,
         background: C.barBg,

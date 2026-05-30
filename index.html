@@ -5,6 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Preload Fraunces hero font — LCP element uses this; preload ensures browser
+         discovers it before CSS parse completes, eliminating FOIT/FOUT on H1 -->
+    <link rel="preload" href="/fonts/fraunces-900.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/fraunces-700.woff2" as="font" type="font/woff2" crossorigin />
+
     <!-- Fraunces self-hosted — eliminates Google Fonts DNS lookup for LCP improvement -->
     <style>
 @font-face {
@@ -190,7 +195,7 @@
       gtag('js', new Date());
 
       window.addEventListener('load', function() {
-        var delay = window.innerWidth <= 680 ? 4000 : 2000;
+        var delay = window.innerWidth <= 680 ? 1500 : 2000;
         setTimeout(function() {
           var s = document.createElement('script');
           s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9M7R4GGEEK';

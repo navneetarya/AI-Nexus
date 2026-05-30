@@ -514,12 +514,12 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               </span>
             </div>
 
-            <h1 className="anim-fade-up d2"
+            <h2 className="anim-fade-up d2"
               style={{ fontFamily:"'Inter',sans-serif", fontWeight:800,
                 fontSize:'clamp(28px,5vw,44px)', color:C.txt,
                 margin:'0 0 14px', letterSpacing:'-0.03em', lineHeight:1.1 }}>
               Tool comparisons
-            </h1>
+            </h2>
             <p className="anim-fade-up d3"
               style={{ fontSize:16, color:C.mut, lineHeight:1.7, margin:0, maxWidth:520 }}>
               Can't decide between two tools? These in-depth, research-backed breakdowns
