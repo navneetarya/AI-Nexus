@@ -1197,7 +1197,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               { icon:'🆓', label:'Best Free AI Tools',      desc:'Top tools you can use right now without paying',         path:'/best-free-ai-tools' },
               { icon:'✍️', label:'Best AI Writing Tools',    desc:'For bloggers, copywriters and content creators',        path:'/best-ai-writing-tools' },
               { icon:'💼', label:'AI Tools for Freelancers', desc:'Tools that save time and improve client work',          path:'/best-ai-tools-for-freelancers' },
-              { icon:'🤖', label:'ChatGPT vs Claude',        desc:'Which AI assistant suits your workflow best?',          path:'/compare/chatgpt-alternatives-free-2026' },
+              { icon:'🤖', label:'ChatGPT vs Claude',        desc:'Which AI assistant suits your workflow best?',          path:'/blog/chatgpt-alternatives-free-2026' },
               { icon:'💻', label:'Best AI Coding Tools',     desc:'Copilot, Replit, Cursor — compared honestly',          path:'/best-ai-coding-tools' },
               { icon:'🔬', label:'How Tools Are Evaluated',  desc:'Our research criteria and evaluation methodology',     path:'/methodology' },
             ] as const).map(({ icon, label, desc, path }) => (

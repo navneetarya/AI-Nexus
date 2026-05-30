@@ -162,6 +162,21 @@ function App() {
         </Suspense>
       );
     }
+    // Fallback: if slug exists as a blog post, render that instead
+    const blogFallback = BLOG_POSTS.find(p => p.slug === compareMatch[1]);
+    if (blogFallback) {
+      updateMeta(
+        `${blogFallback.seoTitle ?? blogFallback.title} | AI Nexus`,
+        blogFallback.metaDescription,
+        `${SITE_CONFIG.siteUrl}/blog/${blogFallback.slug}/`,
+        blogFallback.ogImage
+      );
+      return (
+        <Suspense fallback={<PageLoader />}>
+          <BlogPostPage post={blogFallback} navigate={navigate} {...themeProps} />
+        </Suspense>
+      );
+    }
   }
 
   const blogPostMatch = path.match(/^\/blog\/([^/]+)$/);
@@ -337,6 +352,19 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <BestAILogoMakersPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/best-ai-tools-for-freelancers') {
+    updateMeta(
+      `Best AI Tools for Freelancers 2026 — Independently Researched | AI Nexus`,
+      `The best AI tools for freelancers in 2026 — writing, design, audio, and productivity tools reviewed and ranked for independent professionals.`,
+      `${SITE_CONFIG.siteUrl}/best-ai-tools-for-freelancers/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <BlogPostPage post={BLOG_POSTS.find(p => p.slug === 'best-ai-tools-for-freelancers-2026')!} navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }
