@@ -17,10 +17,17 @@
   -->
   <script>
     var seg = window.location.pathname;
-    // Redirect to homepage with path encoded, so the React app can route it
-    window.location.replace(
-      window.location.origin + '/?p=' + encodeURIComponent(seg + window.location.search) + (window.location.hash || '')
-    );
+    // C3 Fix: Enforce trailing slash canonical form — prevents duplicate URL pairs
+    if (seg !== '/' && !seg.endsWith('/')) {
+      window.location.replace(
+        window.location.origin + seg + '/' + window.location.search + (window.location.hash || '')
+      );
+    } else {
+      // Redirect to homepage with path encoded, so the React app can route it
+      window.location.replace(
+        window.location.origin + '/?p=' + encodeURIComponent(seg + window.location.search) + (window.location.hash || '')
+      );
+    }
   </script>
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; background: #0C1210; color: #e0e7e5; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }

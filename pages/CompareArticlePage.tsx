@@ -496,7 +496,8 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
             <a
               href={article.winnerAffiliateLink}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
+              onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: article.winnerName, cta_position: 'verdict', page_path: window.location.pathname }); } }}
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: C.a1, color: '#fff', padding: '0.75rem 1.5rem', borderRadius: 10, fontWeight: 700, fontSize: 15, textDecoration: 'none' }}
             >
               {article.winnerAffiliateText} <ExternalLink size={15} />

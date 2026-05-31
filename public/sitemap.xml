@@ -21,6 +21,11 @@
   <!-- Best AI Logo Makers landing page (4,400/mo KD 16) -->
   <url><loc>https://ainexustools.online/best-ai-logo-makers/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-19</lastmod></url>
 
+  <!-- C11 Fix: /tools/ index hub page -->
+  <url><loc>https://ainexustools.online/tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-31</lastmod></url>
+  <!-- H5 Fix: /compare/ index hub page -->
+  <url><loc>https://ainexustools.online/compare/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-31</lastmod></url>
+
   <!-- Compare pages — high priority, buying-intent traffic -->
   <url><loc>https://ainexustools.online/compare/rytr-vs-writesonic/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>
   <url><loc>https://ainexustools.online/compare/grammarly-vs-quillbot/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-04-29</lastmod></url>

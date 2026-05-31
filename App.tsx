@@ -3,6 +3,13 @@ import { TOOLS, SITE_CONFIG } from './constants';
 import { HomePage } from './pages/HomePage';
 import { StickyNewsletterBar, ScrollNewsletterPopup } from './components/BeehiivForm';
 
+// C4: Declare gtag on window for TypeScript
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 // ── Data-only imports (small, needed for routing on first render) ────────────
 import { COMPARE_ARTICLES } from './pages/compare-data';
 import { BLOG_POSTS } from './blog/index';
@@ -113,6 +120,21 @@ function App() {
     window.history.pushState({}, '', url);
     setPath(normalizePath(to));
     window.scrollTo(0, 0);
+    // C4 Fix: Fire GA4 page_view for SPA navigation
+    // GA4-2: Include page_type custom dimension for SEO analysis
+    if (typeof window.gtag === 'function') {
+      const pageType = url.startsWith('/tools/') ? 'tool_page'
+        : url.startsWith('/blog/') ? 'blog_post'
+        : url.startsWith('/compare/') ? 'compare'
+        : url.startsWith('/best-') ? 'category'
+        : url === '/' ? 'homepage' : 'static';
+      window.gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: url,
+        page_type: pageType,
+      });
+    }
   };
 
   const themeProps = { isDark, toggleTheme };

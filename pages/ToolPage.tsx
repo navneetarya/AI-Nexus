@@ -1116,6 +1116,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' as const }}>
               {/* W4-T2: rel="sponsored nofollow" added for FTC/Google compliance */}
               <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
+                onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, cta_position: 'hero', page_path: window.location.pathname }); } }}
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
                 Try {tool.name} Free <ExternalLink size={14} />
               </a>

@@ -355,6 +355,29 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
     };
   }, [post]);
 
+  // GA4-5 Fix: Scroll milestone tracking — measures content engagement depth
+  useEffect(() => {
+    const milestones = [25, 50, 75, 90];
+    const fired = new Set<number>();
+    const handleScroll = () => {
+      const scrollPct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+      for (const m of milestones) {
+        if (scrollPct >= m && !fired.has(m)) {
+          fired.add(m);
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'content_milestone', {
+              milestone: `scroll_${m}`,
+              post_slug: post.slug,
+              page_path: window.location.pathname,
+            });
+          }
+        }
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [post.slug]);
+
   return (
     <div style={{ minHeight: '100vh', background: C.bg }}>
       <SharedNav

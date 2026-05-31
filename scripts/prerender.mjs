@@ -93,6 +93,33 @@ const esc = s => String(s)
   .replace(/</g, '&lt;')
   .replace(/>/g, '&gt;');
 
+// ── C1 Fix: Load blog post full content from .ts source files ────────────────
+// Blog .ts files have a `content` template literal with full article HTML.
+// This function extracts it so prerendered pages include the complete article.
+function loadBlogContent(slug) {
+  const filePath = path.join(ROOT, 'blog', `${slug}.ts`);
+  if (!fs.existsSync(filePath)) return null;
+  const src = fs.readFileSync(filePath, 'utf-8');
+  // Find content field — always a template literal: content: `...`
+  const marker = 'content:';
+  const markerIdx = src.indexOf(marker);
+  if (markerIdx === -1) return null;
+  const backtickStart = src.indexOf('`', markerIdx);
+  if (backtickStart === -1) return null;
+  // Walk forward to find the matching closing backtick
+  let i = backtickStart + 1;
+  let depth = 0;
+  while (i < src.length) {
+    if (src[i] === '\\') { i += 2; continue; }
+    if (src[i] === '`' && depth === 0) break;
+    if (src[i] === '$' && src[i + 1] === '{') { depth++; i += 2; continue; }
+    if (src[i] === '}' && depth > 0) { depth--; }
+    i++;
+  }
+  const content = src.slice(backtickStart + 1, i);
+  return content.trim() || null;
+}
+
 // ── Tool data (mirrors constants.ts) ─────────────────────────────────────────
 // Slug order matches constants.ts — do not reorder without updating that file.
 const TOOLS = [
@@ -1952,6 +1979,66 @@ const BLOG_POSTS = [
 
 const template = readTemplate();
 
+// ── H4 Fix: Related links map — internal links between tool pages and blog/compare pages ──
+const RELATED_LINKS = {
+  'grammarly': [
+    ['/blog/best-grammarly-alternatives/', 'Best Grammarly Alternatives 2026'],
+    ['/compare/grammarly-vs-quillbot/', 'Grammarly vs QuillBot'],
+    ['/blog/best-free-ai-writing-tools-2026/', 'Best Free AI Writing Tools'],
+    ['/blog/is-grammarly-premium-worth-it-2026/', 'Is Grammarly Premium Worth It?'],
+  ],
+  'podcastle': [
+    ['/blog/best-podcastle-alternatives/', 'Best Podcastle Alternatives 2026'],
+    ['/compare/podcastle-vs-descript/', 'Podcastle vs Descript'],
+    ['/blog/best-ai-podcast-tools-2026/', 'Best AI Podcast Tools'],
+  ],
+  'rytr': [
+    ['/blog/how-to-use-rytr-to-write-blog-posts/', 'How to Use Rytr for Blog Posts'],
+    ['/compare/rytr-vs-writesonic/', 'Rytr vs Writesonic'],
+    ['/blog/best-ai-writing-tools-for-beginners-2026/', 'Best AI Writing Tools for Beginners'],
+  ],
+  'writesonic': [
+    ['/compare/rytr-vs-writesonic/', 'Rytr vs Writesonic'],
+    ['/compare/writesonic-vs-jasper/', 'Writesonic vs Jasper'],
+    ['/blog/best-ai-writing-tools-2026/', 'Best AI Writing Tools'],
+  ],
+  'leonardo-ai': [
+    ['/blog/leonardo-vs-midjourney-2026/', 'Leonardo vs Midjourney'],
+    ['/blog/best-midjourney-alternatives-2026/', 'Best Midjourney Alternatives'],
+    ['/compare/photoroom-vs-remove-bg/', 'PhotoRoom vs Remove.bg'],
+  ],
+  'quillbot': [
+    ['/compare/grammarly-vs-quillbot/', 'Grammarly vs QuillBot'],
+    ['/blog/best-grammarly-alternatives/', 'Best Grammarly Alternatives'],
+    ['/blog/best-free-ai-writing-tools-2026/', 'Best Free AI Writing Tools'],
+  ],
+  'notion-ai': [
+    ['/blog/best-notion-ai-alternatives-2026/', 'Best Notion AI Alternatives'],
+    ['/compare/taskade-vs-notion/', 'Taskade vs Notion AI'],
+  ],
+  'taskade': [
+    ['/compare/taskade-vs-notion/', 'Taskade vs Notion AI'],
+    ['/blog/taskade-vs-notion-vs-asana-2026/', 'Taskade vs Notion vs Asana'],
+  ],
+  'invideo': [
+    ['/blog/best-invideo-alternatives-2026/', 'Best InVideo Alternatives'],
+  ],
+  'replit': [
+    ['/blog/best-ai-coding-tools-2026/', 'Best AI Coding Tools 2026'],
+    ['/blog/claude-code-vs-github-copilot-vs-replit-2026/', 'Claude Code vs Copilot vs Replit'],
+  ],
+  'perplexity': [
+    ['/blog/perplexity-ai-review-2026/', 'Perplexity AI Review 2026'],
+    ['/blog/best-ai-chatbot-2026/', 'Best AI Chatbot 2026'],
+  ],
+  'canva-ai': [
+    ['/blog/best-ai-logo-makers-free-2026/', 'Best AI Logo Makers Free'],
+  ],
+  'photoroom': [
+    ['/compare/photoroom-vs-remove-bg/', 'PhotoRoom vs Remove.bg'],
+  ],
+};
+
 // ── 1. Tool pages ─────────────────────────────────────────────────────────────
 console.log('Tool pages:');
 for (const tool of TOOLS) {
@@ -2004,7 +2091,52 @@ for (const tool of TOOLS) {
     schemas.push(faqSchema(TOOL_FAQS[tool.slug]));
   }
 
-  writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas, ogImage: resolveOgImage(`tools/${tool.slug}`), ogType: 'product' }));
+  // C2 + C10 Fix: Inject reviewBody + tool details as visible HTML with data-speakable attributes
+  const toolFaqHtml = TOOL_FAQS[tool.slug]?.length
+    ? `<div style="margin-top:24px"><h2 style="font-size:1.2rem;margin-bottom:12px">Frequently Asked Questions</h2>` +
+      TOOL_FAQS[tool.slug].map(f => `<h3 style="font-size:1rem;margin:12px 0 4px">${esc(f.q)}</h3><p style="font-size:.95rem;line-height:1.6;color:#444">${esc(f.a)}</p>`).join('') +
+      `</div>`
+    : '';
+  // H4 Fix: Add related articles links for topical authority
+  const relatedLinks = RELATED_LINKS[tool.slug];
+  const relatedHtml = relatedLinks?.length
+    ? `<div style="margin-top:24px;padding-top:16px;border-top:1px solid #e5e7eb"><h2 style="font-size:1.1rem;margin-bottom:10px">Related Articles</h2><ul style="list-style:none;padding:0">` +
+      relatedLinks.map(([url, text]) => `<li style="margin-bottom:6px"><a href="${SITE}${url}" style="color:#0D9488;text-decoration:none;font-weight:500">${esc(text)}</a></li>`).join('') +
+      `</ul></div>`
+    : '';
+  const toolBodyHtml = `
+    <p data-speakable="summary" style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+    <div data-speakable="verdict" style="margin-top:16px">
+      <h2 style="font-size:1.2rem;margin-bottom:8px">Our Research</h2>
+      <p style="font-size:.95rem;line-height:1.7;color:#333">${esc(tool.reviewBody || tool.description)}</p>
+    </div>
+    <p style="font-size:.9rem;color:#555;margin-top:12px"><strong>Rating:</strong> ${tool.rating}/5 · <strong>Pricing:</strong> ${esc(tool.pricing || 'See website')}</p>
+    ${toolFaqHtml}
+    ${relatedHtml}`;
+
+  writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas, bodyHtml: toolBodyHtml, ogImage: resolveOgImage(`tools/${tool.slug}`), ogType: 'product' }));
+}
+
+// ── C11 Fix: /tools/ index page — critical internal linking hub ───────────────
+{
+  const canonical = `${SITE}/tools/`;
+  const title = 'All AI Tools — Reviewed & Ranked 2026 | AI Nexus';
+  const description = `${TOOLS.length} AI tools independently reviewed by ${AUTHOR}. Writing, image, video, audio, design, coding & productivity tools compared with honest ratings and pricing.`;
+  const toolListHtml = TOOLS.map(t =>
+    `<li style="margin-bottom:8px"><a href="${SITE}/tools/${t.slug}/" style="color:#0D9488;font-weight:600;text-decoration:none">${esc(t.name)}</a> — ${esc(t.tagline)} (${esc(t.pricing || 'See website')})</li>`
+  ).join('');
+  const schemas = [
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'All AI Tools', canonical],
+    ]),
+    itemListSchema({ name: 'All AI Tools Reviewed 2026', url: canonical, items: TOOLS.map(t => ({ name: t.name, url: `${SITE}/tools/${t.slug}/`, description: t.tagline })) }),
+  ];
+  writeRoute('tools', buildPage(template, {
+    title, description, canonical, schemas,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+    <ul style="list-style:none;padding:0;margin-top:20px">${toolListHtml}</ul>`,
+  }));
 }
 
 // ── 2. Compare pages ──────────────────────────────────────────────────────────
@@ -2030,6 +2162,28 @@ for (const art of COMPARE_ARTICLES) {
     `compare/${art.slug}`,
     buildPage(template, { title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas, ogImage: resolveOgImage(`compare/${art.slug}`), ogType: 'article' })
   );
+}
+
+// ── H5 Fix: /compare/ index page — comparison hub for internal linking ────────
+{
+  const canonical = `${SITE}/compare/`;
+  const title = 'AI Tool Comparisons 2026 — Side-by-Side Reviews | AI Nexus';
+  const description = `Side-by-side comparisons of the best AI tools, independently researched by ${AUTHOR}. No sponsored opinions — honest verdicts on which tool wins for each use case.`;
+  const compareListHtml = COMPARE_ARTICLES.map(a =>
+    `<li style="margin-bottom:8px"><a href="${SITE}/compare/${a.slug}/" style="color:#0D9488;font-weight:600;text-decoration:none">${esc(a.seoTitle || a.title)}</a></li>`
+  ).join('');
+  const schemas = [
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'AI Tool Comparisons', canonical],
+    ]),
+    itemListSchema({ name: 'AI Tool Comparisons 2026', url: canonical, items: COMPARE_ARTICLES.map(a => ({ name: a.title, url: `${SITE}/compare/${a.slug}/`, description: a.metaDescription })) }),
+  ];
+  writeRoute('compare', buildPage(template, {
+    title, description, canonical, schemas,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+    <ul style="list-style:none;padding:0;margin-top:20px">${compareListHtml}</ul>`,
+  }));
 }
 
 // ── 3. About page ─────────────────────────────────────────────────────────────
@@ -2235,13 +2389,26 @@ for (const post of BLOG_POSTS) {
   // M1 (SEO-Medium): surface readTimeMinutes in static HTML so crawlers
   // see it without JS — avoids thin-content signal on pre-rendered pages
   const readTime = post.readTimeMinutes ? `<span style="margin-left:12px">&#128338; ${post.readTimeMinutes} min read</span>` : '';
+
+  // C1 Fix: Inject full blog post content from .ts source file instead of just metaDescription
+  const blogContent = loadBlogContent(post.slug);
+  // C6 Fix: Render FAQ answers as visible HTML (not just in JSON-LD schema)
+  const faqHtml = post.faqs?.length
+    ? `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:16px">Frequently Asked Questions</h2>` +
+      post.faqs.map(f => `<h3 style="font-size:1rem;margin:16px 0 6px">${esc(f.q)}</h3><p style="font-size:.95rem;line-height:1.6;color:#444">${esc(f.a)}</p>`).join('') +
+      `</div>`
+    : '';
+  const fullBodyHtml = blogContent
+    ? `<div data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333;margin-bottom:20px">${esc(post.metaDescription)}</div>${blogContent}${faqHtml}`
+    : `<p data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>${faqHtml}`;
+
   let html = buildPage(template, {
     title: `${post.title} | AI Nexus`,
     description: post.metaDescription,
     canonical,
     schemas,
     datePublished: post.datePublished,
-    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>`,
+    bodyHtml: fullBodyHtml,
     readTimeHtml: readTime,
     ogImage: resolveOgImage(`blog/${post.slug}`),
     ogType: 'article',
