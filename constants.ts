@@ -24,11 +24,13 @@ export const SITE_CONFIG = {
 };
 
 // ── Affiliate links — all verified & active ───────────────────────────────
-// Rytr:      https://rytr.me/?via=navneet-arya         30% recurring
-// Podcastle: https://podcastle.ai/?ref=ymi1ntf          20% recurring
-// Ocoya:     https://www.ocoya.com/?via=navneet         30% recurring
-// Replit:    https://replit.com/refer/navneetarya1989   referral bonus
-// Taskade:   https://www.taskade.com/?via=rlqcxz        30% recurring
+// Rytr:       https://rytr.me/?via=navneet-arya          30% recurring
+// Podcastle:  https://podcastle.ai/?ref=ymi1ntf           20% recurring
+// Ocoya:      https://www.ocoya.com/?via=navneet          30% recurring
+// Replit:     https://replit.com/refer/navneetarya1989    referral bonus
+// Taskade:    https://www.taskade.com/?via=rlqcxz         30% recurring
+// Murf AI:    https://get.murf.ai/ilypoqhxvxsj           (referral link)
+// ElevenLabs: https://try.elevenlabs.io/earuakibkmz9     (referral link)
 
 export const TOOLS: Tool[] = [
 
@@ -37,7 +39,7 @@ export const TOOLS: Tool[] = [
     id: 'w1', slug: 'grammarly',
     name: 'Grammarly', tagline: 'AI writing assistant used by 40 million people',
     description: 'Grammarly checks grammar, spelling, tone, and clarity across every app you use — from Gmail to Google Docs. The most widely used AI writing tool in the world.',
-    category: Category.WRITING, affiliateLink: 'https://grammarly.com?affiliateId=ainexus',
+    category: Category.WRITING, affiliateLink: 'https://grammarly.com', // TODO: join Impact.com for proper Grammarly affiliate tracking link
     iconName: 'CheckSquare', color: '#15a672', accentColor: '#0d7a54',
     userBadge: 'Most popular', pricing: 'Free + $12/month', bestFor: 'Everyone who writes',
     features: ['Grammar & spell check', 'Tone detection', 'Plagiarism checker', 'Works in 500+ apps'],
@@ -341,7 +343,7 @@ export const TOOLS: Tool[] = [
     id: 'a1', slug: 'murf-ai',
     name: 'Murf AI', tagline: 'Studio-quality AI voiceovers in minutes',
     description: 'Murf AI creates studio-quality voiceovers for videos, presentations, and e-learning using 120+ realistic AI voices across 20 languages. No microphone needed.',
-    category: Category.AUDIO, affiliateLink: 'https://murf.ai?via=ainexus',
+    category: Category.AUDIO, affiliateLink: 'https://get.murf.ai/ilypoqhxvxsj',
     iconName: 'Mic', color: '#a78bfa', accentColor: '#7c3aed',
     userBadge: 'Free plan ✓', pricing: 'Free + from $19/month', bestFor: 'Video creators & eLearning',
     features: ['120+ AI voices', 'Voice changer', 'Background music library', 'Video sync'],
@@ -530,7 +532,7 @@ export const TOOLS: Tool[] = [
     id: 'a3', slug: 'elevenlabs',
     name: 'ElevenLabs', tagline: 'The most realistic AI voice generator on the planet',
     description: 'ElevenLabs creates the most natural-sounding AI voices available. Clone your own voice, generate studio-quality narration, and build voice-powered products with the industry-leading speech API.',
-    category: Category.AUDIO, affiliateLink: 'https://elevenlabs.io?via=ainexus',
+    category: Category.AUDIO, affiliateLink: 'https://try.elevenlabs.io/earuakibkmz9',
     iconName: 'Volume2', color: '#f97316', accentColor: '#ea580c',
     userBadge: 'Best quality', pricing: 'Free + from $5/month', bestFor: 'Creators, developers & podcasters',
     features: ['Ultra-realistic voice synthesis', 'Voice cloning from 1 minute of audio', 'Speech-to-speech', '29 languages', 'Developer API'],

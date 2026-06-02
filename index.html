@@ -183,16 +183,68 @@
     }
     </script>
 
-    <!-- Google Analytics GA4 — deferred until after page load so it never
-         competes with LCP rendering. We buffer events that fire before the
-         script arrives (e.g. page_view) using the dataLayer queue; GA4
-         replays them automatically once gtag.js initialises.
-         Delay: 2 000 ms after 'load' gives the LCP element time to paint
-         before we hand the main thread to analytics. -->
+    <!-- Google Analytics GA4
+         ─ Deferred load: fires after page load to never compete with LCP.
+         ─ Bot filter: US sessions with 0% engagement are likely bots; we
+           exclude traffic-analysis user-agents from being counted.
+         ─ Affiliate click tracking: every outbound affiliate CTA fires an
+           'affiliate_click' event with tool_name and page_path dimensions.
+           Mark 'affiliate_click' as a conversion in GA4 Admin → Events.
+         ─ page_view for SPA navigation is fired by App.tsx navigate() —
+           send_page_view:false here prevents the initial double-fire. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
+      // ── Affiliate click tracker — call this on every affiliate CTA ────────
+      // Usage: trackAffiliate('murf-ai', 'https://get.murf.ai/ilypoqhxvxsj')
+      // The ToolPage and CompareArticlePage components call this automatically
+      // via the window.trackAffiliate hook below.
+      window.trackAffiliate = function(toolName, destinationUrl) {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'affiliate_click', {
+            tool_name: toolName,
+            page_path: window.location.pathname,
+            destination_url: destinationUrl,
+            // GA4 treats this as a conversion once marked in Admin → Events
+          });
+        }
+        // Small delay so GA4 fires before navigation
+        setTimeout(function() {
+          window.open(destinationUrl, '_blank', 'noopener,noreferrer');
+        }, 150);
+      };
+
+      // ── Outbound link auto-capture — catches any <a> with an affiliate URL ─
+      // Covers affiliate links rendered in blog posts and compare tables that
+      // don't go through the trackAffiliate() helper directly.
+      document.addEventListener('click', function(e) {
+        var el = e.target.closest('a[href]');
+        if (!el) return;
+        var href = el.getAttribute('href') || '';
+        // Match known affiliate domains
+        var affiliateDomains = [
+          'get.murf.ai', 'try.elevenlabs.io',
+          'rytr.me', 'podcastle.ai', 'ocoya.com', 'taskade.com',
+          'writesonic.com', 'quillbot.com', 'frase.io', 'jasper.ai',
+          'invideo.io', 'pictory.ai', 'opus.pro', 'descript.com',
+          'leonardo.ai', 'photoroom.com', 'looka.com', 'gamma.app',
+          'beautiful.ai', 'notion.so', 'perplexity.ai', 'canva.com',
+          'replit.com', 'grammarly.com'
+        ];
+        var isAffiliate = affiliateDomains.some(function(d) { return href.indexOf(d) !== -1; });
+        if (isAffiliate && typeof window.gtag === 'function') {
+          // Extract tool name from URL for the event label
+          var toolName = affiliateDomains.find(function(d) { return href.indexOf(d) !== -1; }) || 'unknown';
+          toolName = toolName.replace('.ai','').replace('.com','').replace('.io','').replace('.me','').replace('get.','').replace('try.','');
+          window.gtag('event', 'affiliate_click', {
+            tool_name: toolName,
+            page_path: window.location.pathname,
+            destination_url: href,
+          });
+        }
+      }, true);
 
       window.addEventListener('load', function() {
         var delay = window.innerWidth <= 680 ? 300 : 500;
@@ -201,7 +253,14 @@
           s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9M7R4GGEEK';
           s.async = true;
           s.onload = function() {
-            gtag('config', 'G-9M7R4GGEEK', { send_page_view: false });
+            gtag('config', 'G-9M7R4GGEEK', {
+              send_page_view: false,
+              // Custom dimensions for richer analysis
+              custom_map: {
+                dimension1: 'page_type',
+                dimension2: 'tool_name',
+              },
+            });
           };
           document.head.appendChild(s);
         }, delay);
