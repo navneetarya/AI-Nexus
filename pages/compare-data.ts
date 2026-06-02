@@ -1049,12 +1049,12 @@ The practical advice: start with Murf AI's free plan (10 minutes/month) to test 
     ],
     winnerSlug: 'murf-ai',
     winnerName: 'Murf AI',
-    winnerAffiliateLink: 'https://murf.ai?via=ainexus',
+    winnerAffiliateLink: 'https://get.murf.ai/ilypoqhxvxsj',
     winnerAffiliateText: 'Try Murf AI free',
     pricing: {
       tools: [
-        { name: 'Murf AI', free: true, startingPrice: '$0', paidFrom: '$19/mo', bestPlanFor: 'Studio-quality voiceovers with video sync', affiliateLink: 'https://murf.ai?via=ainexus' },
-        { name: 'ElevenLabs', free: true, startingPrice: '$0', paidFrom: '$5/mo', bestPlanFor: 'Hyper-realistic voice cloning & developers', affiliateLink: 'https://elevenlabs.io' },
+        { name: 'Murf AI', free: true, startingPrice: '$0', paidFrom: '$19/mo', bestPlanFor: 'Studio-quality voiceovers with video sync', affiliateLink: 'https://get.murf.ai/ilypoqhxvxsj' },
+        { name: 'ElevenLabs', free: true, startingPrice: '$0', paidFrom: '$5/mo', bestPlanFor: 'Hyper-realistic voice cloning & developers', affiliateLink: 'https://try.elevenlabs.io/earuakibkmz9' },
       ],
     },
     faqs: [
