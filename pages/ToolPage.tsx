@@ -90,7 +90,7 @@ The free plan limitation documented in Grammarly's own help centre and corrobora
       summary: "Grammarly and QuillBot are the two most widely used AI writing assistance tools in 2026 — but they serve different writing stages.\n\nGrammarly catches errors and improves clarity on writing you've already produced. It's a live grammar and style checker that works across Gmail, Google Docs, LinkedIn, and 500,000+ other apps. The free plan has no word limit and is permanently available.\n\nQuillBot rewrites and paraphrases source text. It's for transforming existing passages — simplifying, expanding, or changing the style of content you've already written. Its 7 paraphrase modes (Standard, Fluency, Creative, and more) give structural control that Grammarly doesn't attempt.\n\nThey are not direct competitors — many writers use both. Use Grammarly while writing for live error detection. Use QuillBot after drafting when you need to restructure or rephrase a passage. If you can only choose one: Grammarly covers far more of the everyday writing workflow. See the full breakdown below.",
       compareSlug: "grammarly-vs-quillbot",
     },
-    relatedBlogSlugs: ['ai-tools-for-teachers-2026'],
+    relatedBlogSlugs: ['is-grammarly-premium-worth-it-2026', 'best-grammarly-alternatives', 'best-ai-writing-tools-for-beginners-2026'],
     rating: 4.5, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-01-15", timeUsed: "Researched Mar 2026",
   },
   writesonic: {
@@ -112,6 +112,7 @@ The free plan limitation documented in Grammarly's own help centre and corrobora
       { q: "Can Writesonic write factually accurate content?", a: "More than most AI writers — Chatsonic has real-time web search which lets it reference current information. But AI-generated content should always be fact-checked before publishing. Writesonic's content is a starting point, not a final draft." },
     ],
     verdict: "Best value for bloggers who need to scale long-form content output. The output requires editing but the 60% time saving is real. The $19/month Individual plan is worth it if you publish more than 4 blog posts per month.",
+    relatedBlogSlugs: ['best-ai-writing-tools-2026', 'jasper-ai-alternatives', 'best-ai-tools-for-startups-2026'],
     rating: 4.2, lastTested: "February 2026", lastTestedISO: "2026-02-20", datePublished: "2026-01-20", timeUsed: "Researched Feb 2026",
     upgradeGuide: "Writesonic's free plan gives you 25 one-time credits — enough to generate 2–3 full articles and test the tool properly. The quality of those test articles will tell you everything you need to know about whether it belongs in your workflow. But 25 credits disappear in a single content session, which makes the free plan a demo rather than a sustainable option.\n\nThe upgrade to the Individual plan ($19/month billed annually, unlimited words) is worth it the moment you publish more than 4 blog posts per month. Here's exactly why:\n\n1. **Article Writer 6.0.** From a single keyword, Writesonic generates a structured 1,500-word draft with an introduction, 5–6 H2 sections, an FAQ block, and a conclusion — in about 3 minutes. The draft needs editing, but it removes the blank-page problem entirely. If you write 4+ articles monthly, that's 12+ hours saved.\n\n2. **Chatsonic with real-time web search.** Unlike standard ChatGPT, Chatsonic pulls current information from the web. For trend-based content, product updates, or anything time-sensitive, this produces more accurate output than AI writers working from a frozen training set.\n\n3. **100+ templates for every content format.** Facebook ads, Google ad copy, landing page sections, email subjects, product descriptions — the templates are purpose-built for marketing workflows, not just general writing.\n\nIs Writesonic worth it? Yes — if long-form blog content is your primary output and you publish consistently. No — if you only write occasionally or primarily need short-form copy. For short-form volume, Rytr at $9/month is the better investment. For SEO research plus writing in one workflow, Frase at $15/month is worth comparing. Writesonic wins when your main need is fast, publishable long-form drafts.",
   },
@@ -128,6 +129,7 @@ The free plan limitation documented in Grammarly's own help centre and corrobora
       "Marketers: generating 3 headline variants for A/B testing landing pages",
     ],
     verdict: "The best entry point into AI writing in 2026. The free plan is generous and genuinely useful — not a crippled demo. At $9/month unlimited, the Saver plan is the best price-to-output deal in the AI writing category. If you're new to AI tools and unsure about the investment, start here. You'll know within a week if it belongs in your workflow — and if it does, it'll save you 3–5 hours every week on short-form writing.",
+    relatedBlogSlugs: ['how-to-use-rytr-to-write-blog-posts', 'best-ai-writing-tools-for-beginners-2026', 'best-ai-tools-for-content-creators-free-2026'],
     rating: 4.0,
     lastTested: "May 2026",
     datePublished: "2026-01-25",
@@ -166,6 +168,7 @@ Hindi social media caption output: multiple independent user reports in r/artifi
       { q: "Is Quillbot good for students?", a: "Yes — particularly for paraphrasing research and generating citations. The free plan is sufficient for many student use cases. Be aware that using Quillbot to paraphrase others' work without attribution is still plagiarism — the tool doesn't change the ethical obligation to cite your sources." },
     ],
     verdict: "The best paraphrasing and rewriting tool available. The free plan's 125-word limit is frustrating for document-level work, but the quality of the Creative mode paraphrases is genuinely impressive. At $10/month Premium, it's the right tool for any student, academic, or ESL professional who regularly needs to rework existing text.",
+    relatedBlogSlugs: ['best-grammarly-alternatives', 'best-ai-writing-tools-2026', 'best-free-ai-writing-tools-2026'],
     rating: 4.3, lastTested: "January 2026", lastTestedISO: "2026-01-20", datePublished: "2026-01-10", timeUsed: "Researched Jan 2026",
   },
   'frase': {
@@ -194,6 +197,7 @@ Content Editor scoring: The Frase Content Score is documented across multiple G2
 
 $1 five-day trial value: Verified reviewers consistently document this as enough to run complete briefs on 3–5 priority keywords. The documented consensus: run briefs on your 5 most important keywords during the trial — if the gap analysis reveals clear missing content on any one of them, the tool pays for itself on the first optimisation.`,
     verdict: "The best tool for SEO-driven content creation if ranking on Google is your primary goal. The research and brief-building features alone justify the price for any content operation publishing more than 2 posts per month. Not for casual bloggers — this is for people treating content as a business investment.",
+    relatedBlogSlugs: ['best-ai-marketing-tools-2026', 'best-ai-writing-tools-2026', 'best-ai-tools-for-content-creators-free-2026'],
     rating: 4.4, lastTested: "March 2026", lastTestedISO: "2026-03-10", datePublished: "2026-02-01", timeUsed: "Researched Mar 2026",
   },
   'leonardo-ai': {
@@ -225,6 +229,7 @@ Custom model training: Verified Product Hunt reviewers document training a custo
 
 Photorealism gap: The documented consistent limitation across r/StableDiffusion comparison threads: Leonardo's quality ceiling for photorealistic product photography and brand imagery is lower than Midjourney v6 and DALL-E 3. For illustration, concept art, and consistent fictional character generation, verified community consensus positions Leonardo as equal or superior to paid alternatives. For photorealistic brand visuals, Midjourney is documented as producing stronger output.`,
     verdict: "The most powerful free AI image tool available. The learning curve is real — spend 30 minutes watching tutorials before diving in — but the ceiling of what you can create is higher than any competitor.",
+    relatedBlogSlugs: ['best-midjourney-alternatives-2026', 'leonardo-vs-midjourney-2026', 'best-ai-logo-makers-free-2026'],
     rating: 4.5, lastTested: "February 2026", lastTestedISO: "2026-02-15", datePublished: "2026-01-18", timeUsed: "Researched Feb 2026",
   },
   'photoroom': {
@@ -255,6 +260,7 @@ Mobile app workflow — Indian seller use case: Verified reviews from Meesho and
 
 Free plan limits: The watermark on free exports is the primary documented limitation. Verified users report the watermark as visible enough to prevent use on professional or commercial listings. The Pro plan at $9.99/month is documented as the practical entry point for any seller publishing images commercially — and the batch processing (100+ images) is the feature cited most frequently as the economic justification.`,
     verdict: "The best background removal and product photography tool available. The 150 million user base reflects genuine product quality — it handles edge cases that professional tools miss. The free plan is useful for occasional use; the $9.99/month Pro plan is essential for any e-commerce seller processing images regularly.",
+    relatedBlogSlugs: ['best-ai-logo-makers-free-2026', 'best-ai-tools-for-content-creators-free-2026', 'best-ai-tools-for-freelancers-2026'],
     rating: 4.6, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-02-05", timeUsed: "Researched Mar 2026",
   },
   looka: {
@@ -270,6 +276,7 @@ Free plan limits: The watermark on free exports is the primary documented limita
       { q: "Looka vs Canva logo maker — which is better?", a: "Looka is better for logos specifically — it generates more unique, brand-identity-focused designs from your inputs and produces files in the correct formats (SVG, EPS, PNG) for all business uses. Canva's logo maker is more template-based and the output quality for logos is lower. If you want a full brand identity kit beyond just a logo, Looka's Brand Kit plan is the more complete option." },
       { q: "What file formats does Looka provide?", a: "Looka provides PNG (transparent background, multiple sizes), SVG (scalable vector for print), EPS (professional print production), and PDF files. All formats are included in the Logo Package purchase. SVG and EPS are the formats printers and agencies will ask for — Looka includes them by default, which Canva's free plan does not." },
     ],
+    relatedBlogSlugs: ['best-ai-logo-makers-free-2026', 'best-ai-tools-for-startups-2026', 'best-ai-tools-for-freelancers-2026'],
     rating: 4.1, lastTested: "January 2026", lastTestedISO: "2026-01-15", datePublished: "2026-01-12", timeUsed: "Researched Jan 2026",
   },
   pictory: {
@@ -285,6 +292,7 @@ Free plan limits: The watermark on free exports is the primary documented limita
       { q: "Pictory vs InVideo AI — which is better?", a: "They solve different problems. Pictory is best for converting existing written content (blog posts, articles) into video — paste a URL and it builds the video around your content. InVideo AI is best for creating a video from scratch using a text prompt — it writes the script, selects footage, and adds voiceover. Use Pictory if you have written content to repurpose; use InVideo AI if you want to create new video content from a topic idea." },
       { q: "Does Pictory add watermarks?", a: "Yes — during the free trial, all exported videos include a Pictory watermark. Paid plans (from $19/month) remove the watermark entirely and include 1080p export quality. The Starter plan at $19/month covers 30 videos per month, which is sufficient for most content creators repurposing existing blog posts." },
     ],
+    relatedBlogSlugs: ['best-invideo-alternatives-2026', 'best-ai-tools-for-youtubers-2026', 'how-to-use-ai-for-content-creation-2026'],
     rating: 4.1, lastTested: "February 2026", lastTestedISO: "2026-02-15", datePublished: "2026-01-22", timeUsed: "Researched Feb 2026",
   },
   'opus-clip': {
@@ -322,6 +330,7 @@ Free plan verdict: 60 minutes/month covers 1–2 long videos — enough to evalu
       summary: "Opus Clip vs Descript: Opus Clip is automated repurposing — upload, wait, download. Descript gives transcript-level control for manual precision editing. If you want speed and trust the AI, use Opus Clip. If you know the exact moments you want, use Descript. Opus Clip vs InVideo: completely different tools — InVideo creates new videos from text prompts; Opus Clip repurposes existing video. Use both if you produce original long-form content AND want a short-form library.",
       compareSlug: "opus-clip-vs-descript",
     },
+    relatedBlogSlugs: ['best-ai-tools-for-youtubers-2026', 'best-ai-tools-for-content-creators-free-2026', 'how-to-use-ai-for-content-creation-2026'],
     rating: 4.3, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-02-10", timeUsed: "Researched Mar 2026",
   },
   invideo: {
@@ -359,6 +368,7 @@ Conclusion documented across verified reviews: InVideo AI's output quality-to-ef
       { q: "Does InVideo AI add a watermark on the free plan?", a: "Yes — the free plan adds an InVideo watermark to all exported videos. It appears in the bottom-right corner and is semi-transparent but visible. The watermark is removed on all paid plans starting at $20/month (billed annually). Any video published commercially or to a brand channel requires a paid plan for clean, professional output." },
       { q: "How many videos can I make with InVideo AI for free?", a: "The free plan limits you to 10 minutes of AI-generated video per week. This is roughly one 8-10 minute video or two 4-5 minute videos weekly. There is no hard cap on the number of exports, but the AI generation minutes reset each week. Once you hit the 10-minute weekly limit, you cannot generate new AI video until the following week." },
     ],
+    relatedBlogSlugs: ['best-invideo-alternatives-2026', 'best-ai-tools-for-youtubers-2026', 'how-to-use-ai-for-content-creation-2026'],
     rating: 4.2, lastTested: "May 2026", lastTestedISO: "2026-05-01", datePublished: "2026-02-15", timeUsed: "Tested May 2026",
   },
   'murf-ai': {
@@ -388,6 +398,7 @@ Video sync feature: Verified users document the video sync workflow: import a 47
 
 Free plan limits: The 10-minute monthly limit is documented as sufficient for testing 2–3 voice samples and evaluating quality across categories. Reviewers note that watermarked exports cannot be used for commercial or client-facing work. The Creator plan at $19/month is documented as the practical entry point — 2 hours of narration covers 10–15 YouTube videos per month.`,
     verdict: "The best balance of voice naturalness and production workflow in AI voiceover tools. The video sync feature alone distinguishes it from every other tool in the category. More expensive than some alternatives, but the output quality and time saving on video production justifies it for professional use.",
+    relatedBlogSlugs: ['best-ai-podcast-tools-2026', 'best-ai-tools-for-content-creators-free-2026', 'best-ai-tools-for-youtubers-2026'],
     rating: 4.4, lastTested: "January 2026", lastTestedISO: "2026-01-15", datePublished: "2026-01-08", timeUsed: "Researched Jan 2026",
   },
   // W1-T2: ElevenLabs full TOOL_CONTENT — P1 keyword: "elevenlabs review" (1,600/mo)
@@ -412,6 +423,7 @@ Free plan limits: The 10-minute monthly limit is documented as sufficient for te
       { q: "ElevenLabs vs Murf AI — which is better?", a: "ElevenLabs produces better voice quality, especially for voice cloning and emotional delivery. Murf AI includes a full production studio with video sync and background music — better for structured eLearning and corporate voiceover workflows. For pure voice generation quality, ElevenLabs wins. For an all-in-one voiceover production environment, Murf is more practical." },
     ],
     verdict: "The best AI voice generator in 2026, and it's not close. The voice quality, cloning accuracy, and free tier generosity make it the default starting point for any creator or developer who needs realistic speech output. The $5/month Starter plan is one of the best value upgrades in the entire AI tools category.",
+    relatedBlogSlugs: ['best-ai-podcast-tools-2026', 'best-ai-tools-for-developers-2026', 'best-ai-tools-for-content-creators-free-2026'],
     rating: 4.7, lastTested: "April 2026", lastTestedISO: "2026-04-10", datePublished: "2026-04-05", timeUsed: "Researched Apr 2026",
   },
   // W1-T4: Descript full TOOL_CONTENT — P1 keyword: "descript review" (1,200/mo)
@@ -436,6 +448,7 @@ Free plan limits: The 10-minute monthly limit is documented as sufficient for te
       { q: "Descript vs Podcastle — which should I use?", a: "Descript is better for editing-heavy workflows — long-form podcasts, video content, and anything where you'll spend significant time removing errors and restructuring. Podcastle is better for recording remote guests in high quality with minimal editing. For simple recording and publish, Podcastle. For complex transcript-based editing, Descript." },
     ],
     verdict: "The most innovative audio and video editing tool available. The transcript-based editing workflow saves hours per episode once you adapt to it — the filler word removal alone is worth the $12/month Hobbyist plan. Steeper learning curve than Podcastle, but the time saving on editing-heavy content is significant.",
+    relatedBlogSlugs: ['best-podcastle-alternatives', 'best-ai-podcast-tools-2026', 'best-ai-tools-for-youtubers-2026'],
     rating: 4.5, lastTested: "April 2026", lastTestedISO: "2026-04-15", datePublished: "2026-04-01", timeUsed: "Researched Apr 2026",
   },
   podcastle: {
@@ -463,6 +476,7 @@ Revoice word replacement: The Revoice feature is documented as Podcastle's most 
       summary: "Podcastle and Descript are the two strongest AI-powered podcast tools in 2026 — but they're built for different workflows.\n\nPodcastle is a recording-first tool. Its strength is capturing remote guests in studio-quality audio, then cleaning the recording automatically with Magic Dust noise removal and fixing individual stumbles with Revoice. If your podcast involves remote guests and you want the best possible source recording with minimal editing, Podcastle is the starting point.\n\nDescript is an editing-first tool. Its transcript-based editing model — delete a sentence in the text and the audio disappears — is built for creators who spend significant time cutting, restructuring, and tightening long recordings. The filler word removal (stripping every 'um' and 'uh' in one click) saves 20–30 minutes per episode on editing.\n\nFor simple recording with guests and minimal editing: Podcastle. For complex editing of long-form content where you spend more time in the editor than in the recording booth: Descript. See the full breakdown below.",
       compareSlug: "podcastle-vs-descript",
     },
+    relatedBlogSlugs: ['best-podcastle-alternatives', 'best-ai-podcast-tools-2026', 'best-ai-tools-for-content-creators-free-2026'],
     rating: 4.2, lastTested: "April 2026", lastTestedISO: "2026-04-15", datePublished: "2026-02-20", timeUsed: "Researched Apr 2026",
   },
   gamma: {
@@ -472,7 +486,7 @@ Revoice word replacement: The Revoice feature is documented as Podcastle's most 
     myTake: "Based on G2 reviews and Product Hunt discussions, Gamma consistently generates a 12-slide investor pitch deck from a 200-word brief in 3–5 minutes. The design quality is documented as polished by verified reviewers — frequently cited as better than typical manually-built decks. The one-click restyle feature for swapping visual themes instantly is among the most praised workflow features. The documented limitation: Gamma-made decks have a recognisable visual signature that professionals familiar with the tool will identify on sight.",
     useCases: ["Creating investor pitch decks from a brief", "Building client-ready proposals quickly", "Making course curriculum slides for educators", "Converting blog posts into presentation format"],
     verdict: "The best free presentation tool available. If you spend more than 2 hours per month making slides, Gamma will save you more time than any other tool on this list.",
-    relatedBlogSlugs: ['ai-tools-for-teachers-2026'],
+    relatedBlogSlugs: ['best-ai-tools-for-startups-2026', 'ai-tools-for-students-free-2026', 'ai-tools-for-teachers-2026'],
     rating: 4.5, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-02-25", timeUsed: "Researched Mar 2026",
   },
   'beautiful-ai': {
@@ -508,6 +522,7 @@ Smart Slide reformatting test: Reviewers document adding and removing content fr
 
 14-day trial value: Verified reviewers document the trial as sufficient to evaluate the Smart Slide workflow on one real project. The recommended evaluation: use it for an actual client or investor deck — not a test deck — and measure whether the layout automation translates into meaningful time saving for your specific content type.`,
     verdict: "Better than PowerPoint for business professionals who create presentations regularly. The Smart Slide system saves meaningful layout time on every deck. The lack of a free permanent plan is the main barrier — use the 14-day trial on a real project before committing to $12/month.",
+    relatedBlogSlugs: ['best-ai-tools-for-startups-2026', 'best-ai-tools-for-freelancers-2026', 'ai-tools-for-teachers-2026'],
     rating: 4.1, lastTested: "February 2026", lastTestedISO: "2026-02-15", datePublished: "2026-01-28", timeUsed: "Researched May 2026",
   },
   ocoya: {
@@ -524,6 +539,7 @@ AI caption generation across three platforms: Verified G2 reviewers document cre
 Design editor: The built-in design editor is documented as handling standard product post graphics in 5–8 minutes: template selection, image swap, brand colour update, and headline edit. Reviewers note the templates are optimised for social media dimensions from the start, reducing the dimension-formatting step required in general-purpose design tools.
 
 Scheduling workflow: The documented time-to-schedule outcome reported by verified reviewers: creating and scheduling three platform-specific posts from brief to scheduled in 12–18 minutes total. For creators managing more than two social media accounts, verified reviewers document this time-saving compounding significantly across a full week of posting.`,
+    relatedBlogSlugs: ['best-ai-marketing-tools-2026', 'best-ai-tools-for-social-media-2026', 'best-ai-tools-for-freelancers-2026'],
     rating: 4.0, lastTested: "April 2026", lastTestedISO: "2026-04-15", datePublished: "2026-03-01", timeUsed: "Researched Apr 2026",
   },
   replit: {
@@ -547,6 +563,7 @@ Ghostwriter AI context: Verified developer reviewers document the difference bet
 
 Free plan documented limits: The compute resources on the free plan are documented as adequate for learning and lightweight prototyping but insufficient for data-intensive scripts or production web applications. Verified users report repls going to sleep after 5 minutes of inactivity on the free plan, requiring a reload before code resumes. The Core plan's always-on deployment and boosted compute is documented as the necessary upgrade for any project that needs to remain accessible continuously.`,
     verdict: "The best platform for learning to code or prototyping quickly. The free tier's usage limits can frustrate heavy users, but for getting started or building small projects it's unmatched.",
+    relatedBlogSlugs: ['best-ai-coding-tools-2026', 'claude-code-vs-github-copilot-vs-replit-2026', 'best-ai-tools-for-developers-2026'],
     rating: 4.2, lastTested: "April 2026", lastTestedISO: "2026-04-15", datePublished: "2026-03-05", timeUsed: "Researched Apr 2026",
   },
   'notion-ai': {
@@ -577,7 +594,7 @@ Workspace-aware document generation: The most-cited unique capability in verifie
 Q&A across workspace: Verified users with 150+ page workspaces document the Ask AI feature answering specific questions about details buried in nested pages — finding a specific pricing decision from a meeting note 4 months prior, or locating a client preference from a project kickoff document. Response accuracy is documented as high for factual retrieval and lower for synthesis questions requiring cross-referencing multiple documents.`,
     verdict: "Essential for existing Notion power users who spend 30+ minutes daily in the workspace. The context-aware generation is genuinely better than standalone AI writers for internal documents, meeting summaries, and project briefs. The $10/month per member pricing makes it expensive for teams — evaluate whether the workspace integration saves enough time to justify the cost over free ChatGPT for simpler tasks.",
     rating: 4.4, lastTested: "March 2026", lastTestedISO: "2026-03-15", datePublished: "2026-02-28", timeUsed: "Researched Mar 2026",
-    relatedBlogSlugs: ['ai-tools-for-teachers-2026'],
+    relatedBlogSlugs: ['best-notion-ai-alternatives-2026', 'taskade-vs-notion-vs-asana-2026', 'best-ai-tools-for-startups-2026'],
   },
   jasper: {
     whatIs: "Jasper is an enterprise AI writing platform built for marketing teams that need consistent, on-brand content at scale. It trains on your brand voice — tone, style, vocabulary — and applies it across every output: blog posts, ad copy, emails, and social content. Pricing starts at $39/month, making it the premium option in the AI writing category and the right tool only when brand consistency across a team justifies the cost.",
@@ -592,6 +609,7 @@ Q&A across workspace: Verified users with 150+ page workspaces document the Ask 
       "Writing long-form SEO articles with the integrated Surfer SEO score checker",
     ],
     verdict: "The best AI writing tool for marketing teams and agencies where brand voice consistency across multiple writers is the primary requirement. The $39/month price is only justifiable for teams — solo writers should choose Writesonic or Rytr instead.",
+    relatedBlogSlugs: ['jasper-ai-alternatives', 'best-ai-marketing-tools-2026', 'best-ai-writing-tools-2026'],
     rating: 4.3, lastTested: "April 2026", lastTestedISO: "2026-04-15", datePublished: "2026-02-01", timeUsed: "Researched May 2026",
     upgradeGuide: "Jasper offers a 7-day free trial with full access — no stripped-down tier. The trial is genuinely the right way to evaluate it: set up a brand voice in the first 30 minutes and generate 3–4 pieces of content before deciding. If the brand voice output doesn't immediately impress you, the paid plans won't change that assessment.\n\nJasper's three paid tiers reflect very different use cases:\n\n**Creator ($39/month)** — 1 user, 1 brand voice, unlimited word generation, browser extension, 50+ templates. This is the entry point for a solo content creator or small business owner who wants Jasper's quality without team features. It's worth the price if you publish 10,000+ words per month of professional content and the brand consistency saving is measurable in your workflow.\n\n**Pro ($59/month)** — Up to 5 users, 3 brand voices, 10 knowledge assets, Campaigns feature, team collaboration, SEO mode. This is where Jasper's real value appears for small agencies. Three brand voices cover most small-agency use cases. The Campaigns feature — generating a full content suite from one brief — alone justifies the jump from Creator if you're running regular content campaigns.\n\n**Business (custom pricing)** — Unlimited users and brand voices, custom AI model, API access, SSO. Enterprise only.\n\nIs Jasper worth it? Yes — for Pro plan users managing 2+ client brands or a content team of 3+ people. No — for solo writers. The $39/month Creator plan puts you at 2x the cost of Writesonic for comparable solo output quality. Jasper's premium is real, but it's a team premium. If you're writing alone, the money is better spent on Writesonic ($19/month) for long-form or Rytr ($9/month) for short-form.",
   },
@@ -622,7 +640,7 @@ Video in-task calls: The video calling feature built directly into task contexts
       compareSlug: "taskade-vs-notion",
     },
     rating: 4.2, lastTested: "April 2026", lastTestedISO: "2026-04-15", datePublished: "2026-03-10", timeUsed: "Researched Apr 2026",
-    relatedBlogSlugs: ['ai-tools-for-teachers-2026'],
+    relatedBlogSlugs: ['taskade-vs-notion-vs-asana-2026', 'best-notion-ai-alternatives-2026', 'best-ai-tools-for-freelancers-2026'],
   },
   'canva-ai': {
     whatIs: "Canva AI is an AI-powered design platform used by 180+ million people worldwide. Its free plan includes 250,000+ templates, Magic Write (AI copy generation), text-to-image generation with a monthly credit allowance, and basic background removal — all without a credit card. The Pro plan at $15/month (billed annually) adds unlimited AI features, Magic Resize, 1TB storage, the full Brand Kit, and the Magic Studio suite including Magic Eraser, Magic Expand, and AI-assisted video editing.",
@@ -659,6 +677,7 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
       { q: "What is Canva AI Magic Resize?", a: "Magic Resize is a Pro feature that resizes any Canva design to any other canvas size in one click, automatically repositioning and scaling design elements to fit the new dimensions. It eliminates the manual work of reformatting a design for every platform — Instagram, LinkedIn, Pinterest, YouTube, Facebook, Twitter/X — each of which has different required dimensions. It is available exclusively on Canva Pro and Teams plans." },
     ],
     verdict: "The best free design tool for content creators who need design, AI copy, and image generation in one place. The free plan is genuinely functional for daily social media content. Upgrade to Pro ($15/month) when you need Magic Resize across multiple platforms, unlimited AI features, or a Brand Kit for consistent multi-platform content at scale.",
+    relatedBlogSlugs: ['best-ai-logo-makers-free-2026', 'best-ai-tools-for-social-media-2026', 'best-ai-tools-for-content-creators-free-2026'],
     rating: 4.7,
     lastTested: "May 2026",
     lastTestedISO: "2026-05-10",
@@ -687,6 +706,7 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
       { q: "Is Perplexity accurate?", a: "Perplexity is highly accurate for established, well-sourced factual questions — and significantly more verifiable than ChatGPT because every claim has a numbered citation you can check. On niche topics, very recent events (last 24–48 hours), or highly specialised technical questions, accuracy varies with source quality. Always verify key claims against the cited sources before publishing." },
     ],
     verdict: "The most useful research tool in 2026 for anyone who asks factual questions regularly. The free plan with unlimited searches and cited sources is genuinely better than Google for research-style queries. Replace your multi-tab research sessions with Perplexity and you'll reclaim 20–30 minutes per day within the first week of consistent use.",
+    relatedBlogSlugs: ['perplexity-ai-review-2026', 'perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026', 'best-ai-chatbot-2026'],
     rating: 4.6,
     lastTested: "May 2026",
     lastTestedISO: "2026-05-10",
@@ -890,54 +910,21 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
   const comparisons = TOOL_COMPARISONS[tool.slug] || [];
   const keywords = TOOL_KEYWORDS[tool.slug] || [];
 
-  // Schema.org — Review + FAQPage combined
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "name": `${tool.name} Review ${new Date().getFullYear()}`,
-    "headline": `${tool.name} Review — ${tool.tagline}`,
-    "description": `Independent ${tool.name} review by Navneet Arya (AI Nexus). ${tool.tagline}. Independently researched · ${content?.timeUsed || 'Apr 2026'}.`,
-    "datePublished": content?.datePublished ?? TODAY,
-    "dateModified": tool.lastTestedISO ?? (content?.lastTested ? new Date(content.lastTested).toISOString().split('T')[0] : TODAY),
-    "url": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}`,
-    "reviewBody": content ? `${content.myTake} ${content.verdict}` : tool.description,
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": content?.rating?.toString() || "4.0",
-      "bestRating": "5", "worstRating": "1"
-    },
-    "author": {
-      "@type": "Person",
-      "name": SITE_CONFIG.authorName,
-      "url": `${SITE_CONFIG.siteUrl}/about`,
-      "description": SITE_CONFIG.authorBio,
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "AI Nexus",
-      "url": SITE_CONFIG.siteUrl,
-    },
-    "itemReviewed": {
-      "@type": "SoftwareApplication",
-      "name": tool.name,
-      "applicationCategory": "WebApplication",
-      "operatingSystem": "Web, iOS, Android",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": tool.pricing },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": content?.rating?.toString() || "4.0",
-        "reviewCount": "1", "bestRating": "5", "worstRating": "1"
-      }
-    },
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_CONFIG.siteUrl },
-        { "@type": "ListItem", "position": 2, "name": tool.category, "item": `${SITE_CONFIG.siteUrl}/?category=${tool.category}` },
-        { "@type": "ListItem", "position": 3, "name": tool.name, "item": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}` }
-      ]
-    }
+  const CATEGORY_SLUG_MAP: Record<string, string> = {
+    'Writing': '/best-ai-writing-tools/',
+    'Image': '/best-ai-image-tools/',
+    'Video': '/best-ai-video-tools/',
+    'Audio': '/best-ai-audio-tools/',
+    'Marketing': '/best-ai-marketing-tools/',
+    'Design': '/best-ai-design-tools/',
+    'Coding': '/best-ai-coding-tools/',
+    'Productivity': '/best-ai-productivity-tools/',
   };
+
+  // NOTE: Review schema is intentionally NOT rendered here.
+  // prerender.mjs already injects Review + SoftwareApplication JSON-LD into the static HTML at build time.
+  // Rendering it again from the React component creates a duplicate with incorrect reviewCount="1"
+  // that overwrites the correct Trustpilot-based counts. See prerender.mjs for the authoritative schema.
 
   // NOTE: FAQPage schema is intentionally NOT rendered here.
   // prerender.mjs already injects FAQPage JSON-LD into the static HTML at build time.
@@ -966,7 +953,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
   return (
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif", color: C.txt }}>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+      {/* Review schema injected by prerender.mjs — do NOT add a second one here */}
       {/* FAQPage schema injected by prerender.mjs — do NOT add a second one here */}
       {/* W2-3: Standalone BreadcrumbList schema — Google prefers this as a separate script */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -974,7 +961,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_CONFIG.siteUrl },
-          { "@type": "ListItem", "position": 2, "name": tool.category, "item": `${SITE_CONFIG.siteUrl}/?category=${tool.category}` },
+          { "@type": "ListItem", "position": 2, "name": tool.category, "item": `${SITE_CONFIG.siteUrl}${CATEGORY_SLUG_MAP[tool.category] || '/'}` },
           { "@type": "ListItem", "position": 3, "name": `${tool.name} Review`, "item": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}` }
         ]
       }) }} />
@@ -990,7 +977,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </li>
           <li aria-hidden="true" style={{ margin: '0 6px' }}>›</li>
           <li>
-            <span style={{ cursor: 'pointer' }} onClick={() => navigate(`/?category=${encodeURIComponent(tool.category)}`)}>{tool.category}</span>
+            <span style={{ cursor: 'pointer' }} onClick={() => navigate(CATEGORY_SLUG_MAP[tool.category] || '/')}>{tool.category}</span>
           </li>
           <li aria-hidden="true" style={{ margin: '0 6px' }}>›</li>
           <li aria-current="page" style={{ color: accent, fontWeight: 500 }}>{tool.name}</li>

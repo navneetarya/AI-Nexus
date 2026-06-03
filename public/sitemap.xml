@@ -20,6 +20,10 @@
   <url><loc>https://ainexustools.online/best-ai-tools-india/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-18</lastmod></url>
   <!-- Best AI Logo Makers landing page (4,400/mo KD 16) -->
   <url><loc>https://ainexustools.online/best-ai-logo-makers/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-19</lastmod></url>
+  <!-- Best AI Tools for Freelancers standalone route (defined in App.tsx:381) — was missing from sitemap -->
+  <url><loc>https://ainexustools.online/best-ai-tools-for-freelancers/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-06-03</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og/blog/best-ai-tools-for-freelancers-2026.webp</image:loc><image:title>Best AI Tools for Freelancers 2026</image:title></image:image>
+  </url>
 
   <!-- C11 Fix: /tools/ index hub page -->
   <url><loc>https://ainexustools.online/tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-31</lastmod></url>
