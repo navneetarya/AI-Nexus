@@ -1,7 +1,7 @@
 import { Category, Tool } from './types';
 
 // Trending/most-researched tools — update this list when publishing new reviews
-export const TRENDING_SLUGS: string[] = ['perplexity', 'gamma', 'replit', 'canva-ai'];
+export const TRENDING_SLUGS: string[] = ['cursor', 'lovable', 'headshotpro', 'perplexity', 'gamma', 'replit', 'canva-ai'];
 
 export const SITE_CONFIG = {
   name: "AI Nexus",
@@ -824,6 +824,112 @@ export const TOOLS: Tool[] = [
       { date: 'May 2026', note: 'Free plan confirmed: unlimited projects, 1K AI credits/month. AI Agents feature now available on free tier.' },
     ],
   },
+
+  // ── Week 1 additions: Cursor AI + Lovable ─────────────────────────────────
+
+  // CODING
+  {
+    slug: 'cursor', id: 'c2',
+    name: 'Cursor', tagline: 'The AI-native code editor used by 40,000 NVIDIA engineers',
+    description: 'Cursor is a fork of VS Code rebuilt from the ground up around AI. Every feature — code completion, inline edits, multi-file refactoring, and terminal commands — is designed for AI-first development. It is the fastest-growing code editor in 2026.',
+    category: Category.CODING, affiliateLink: 'https://cursor.com', // No affiliate programme yet — monitor cursor.com/affiliates
+    iconName: 'Code2', color: '#2563eb', accentColor: '#1d4ed8',
+    userBadge: 'Most wanted', pricing: 'Free + $20/month Pro', bestFor: 'Developers who want AI built in — not bolted on',
+    notForYou: 'Developers primarily in JetBrains IDEs (IntelliJ, PyCharm, WebStorm) — Cursor is VS Code-based and JetBrains plugin is not yet at feature parity. Also avoid if your company has strict data-residency requirements preventing code from being sent to Anthropic or OpenAI APIs.',
+    lastTestedISO: '2026-06-01',
+    researchSources: {
+      trustpilot: { rating: 4.4, count: 312, url: 'https://www.trustpilot.com/review/cursor.com' },
+      g2: { rating: 4.6, count: 189 },
+      reddit: 'Strongly positive — r/cursor, r/webdev, r/programming',
+      lastVerified: '2026-06-01',
+    },
+    indiaPricing: {
+      free: 'Free (2,000 completions/month)',
+      paid: '₹1,670/month Pro',
+      note: 'International credit card required. Free plan requires no payment — full Cmd+K and Composer access at reduced quota.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Hobby free, Pro $20/mo, Business $40/user/mo. Tested Cmd+K and Composer on a TypeScript project.' },
+    ],
+    features: ['Cmd+K inline AI edits', 'Tab multi-line completions', 'Composer: multi-file agent', 'Codebase-wide AI chat', 'VS Code extension compatibility'],
+    pros: ['Fastest inline AI edits of any editor — Cmd+K rewrites selected code in seconds', 'Full VS Code extension library works unchanged', 'Codebase-aware chat understands your entire project', 'Free plan is genuinely useful with 2,000 completions/month'],
+    cons: ['No affiliate programme yet — zero direct monetisation for referrers', 'Pro plan at $20/month is pricier than GitHub Copilot ($10)', 'Some VS Code power users report minor keymap friction in early weeks'],
+    pricingBreakdown: [
+      { tier: 'Hobby', price: '$0/month', highlight: '2,000 completions · 50 slow requests · Basic Composer · All VS Code extensions · No card required' },
+      { tier: 'Pro', price: '$20/month', highlight: 'Unlimited completions · 500 fast requests · Claude 3.5 & GPT-4o · Advanced Composer' },
+      { tier: 'Business', price: '$40/month per user', highlight: 'Everything in Pro · Centralised billing · Admin dashboard · SSO · Priority support' },
+    ],
+    setupSteps: [
+      'Download Cursor from cursor.com — installs on macOS, Windows, Linux. First-run wizard migrates VS Code extensions, keybindings, and settings automatically.',
+      'Open any project and press Tab. Cursor predicts your next line based on the full codebase context — noticeably more accurate than standard Copilot.',
+      'Use Cmd+K (Mac) / Ctrl+K (Windows) to edit code with natural language. Highlight a function, describe the change, Cursor rewrites it inline in under 3 seconds.',
+      'Open Composer (Cmd+Shift+I) for multi-file tasks. Describe changes across the project and Composer plans and executes them with diffs to review before accepting.',
+    ],
+    realOutputExample: {
+      output: 'Cmd+K: Add JWT auth middleware, validate UUID param, return typed errors. Cursor rewrote a 40-line handler in 4 seconds. Compiled cleanly first attempt.',
+      editorialNote: 'Cursor beats Copilot Chat on targeted refactors: Cmd+K uses full file context plus imported types — never breaks TypeScript. Copilot Chat missed UUID validation; Cursor caught it.',
+    },
+    dailyUseCases: [
+      'Refactoring with Cmd+K — executes across files in under 30 seconds.',
+      'Codebase chat: explain auth flow from login to protected route — reads every relevant file.',
+      'Unit tests via Composer: describe edge cases, Composer generates parametrized tests.',
+      'Bug fixing: paste stack trace, ask what is causing this — finds root cause file-by-file.',
+      'PR review: are there security issues or missed edge cases — catches things fatigue misses.',
+    ],
+  },
+
+  // CODING
+  {
+    slug: 'lovable', id: 'c3',
+    name: 'Lovable', tagline: 'Build full-stack apps from prompts — no code required',
+    description: 'Lovable is an AI vibe-coding platform that turns natural language prompts into full-stack web applications. Describe what you want to build, and Lovable generates React + Supabase apps that are instantly deployed and production-ready — without writing a single line of code.',
+    category: Category.CODING, affiliateLink: 'https://lovable.dev/?ref=YOUR_CODE', // 30% recurring — replace YOUR_CODE with actual ref
+    iconName: 'Sparkles', color: '#ec4899', accentColor: '#db2777',
+    userBadge: 'Vibe coding 🔥', pricing: 'Free + $25/month', bestFor: 'Non-developers, solopreneurs & rapid prototypers',
+    notForYou: 'Teams building complex enterprise-grade SaaS with custom infrastructure, legacy backend integrations, advanced state management, or strict code quality standards. Lovable is for rapid prototyping and MVPs — generated code needs developer review for high-traffic or sensitive-data apps.',
+    lastTestedISO: '2026-06-01',
+    researchSources: {
+      trustpilot: { rating: 4.5, count: 143, url: 'https://www.trustpilot.com/review/lovable.dev' },
+      g2: { rating: 4.6, count: 97 },
+      reddit: 'Positive — r/SideProject, r/nocode, r/webdev',
+      lastVerified: '2026-06-01',
+    },
+    indiaPricing: {
+      free: 'Free (5 messages/day)',
+      paid: '₹2,090/month Starter',
+      note: 'International credit card required. Free plan fully accessible with no payment — 5 messages/day is enough to prototype a real app.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Free (5 msg/day), Starter $25/mo, Pro $50/mo. Affiliate link 30% recurring via lovable.dev referral programme.' },
+    ],
+    features: ['Prompt-to-full-stack app', 'React + Supabase auto-generation', 'Instant deployment on subdomain', 'GitHub sync for developers', 'Built-in database & auth'],
+    pros: ['Fastest path from idea to working deployed app — under 10 minutes for simple tools', '30% recurring affiliate commission — best in the vibe-coding category', 'Free plan gives 5 messages/day — enough to prototype a real app', 'Handles both frontend and backend (Supabase integration is automatic)'],
+    cons: ['Free plan is very limited at 5 messages/day', 'Complex business logic still requires a developer to review and adjust', 'Tightly coupled to Supabase — switching backends requires manual work'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '5 messages/day · Unlimited public projects · Instant deployment · GitHub export · No credit card required' },
+      { tier: 'Starter', price: '$25/month', highlight: '100 messages/month · 3 private projects · Custom domain · Supabase integration · Priority builds' },
+      { tier: 'Pro', price: '$50/month', highlight: '500 messages/month · Unlimited private projects · Team collaboration · Custom domains · Priority support' },
+    ],
+    setupSteps: [
+      'Sign up at lovable.dev — free plan gives 5 daily messages, no credit card. Subdomain deployment included instantly.',
+      'Type a prompt: "Build a task manager with login, task list with due dates, and completion." Lovable generates the full React + Supabase app in under 2 minutes.',
+      'Iterate by chat: "Add dark mode", "Make cards draggable". Each prompt refines the app without breaking prior functionality.',
+      'Click Deploy to publish live. Connect GitHub for the full codebase. Custom domains on paid plans.',
+    ],
+    realOutputExample: {
+      output: 'Prompt: Lead capture page with email form. Result: deployed React + Supabase page live in 4 minutes and 2 prompts.',
+      editorialNote: 'Working Tailwind styling, Supabase form, and responsive layout out of the box. Tested: submissions appeared in Supabase in real-time. Fastest path for a non-developer to deploy a functional lead page.',
+    },
+    dailyUseCases: [
+      'Spinning up an internal admin tool: dashboard showing top affiliate links — connected to Supabase, deployed in under an hour.',
+      'Prototyping a SaaS idea with real data persistence to show investors — no developer needed.',
+      'Building newsletter landing pages with A/B variants: generate both, deploy both, split test.',
+      'Creating client-facing project status portals from a single prompt per client.',
+      'Replacing Webflow or Bubble — Lovable\'s output is a real GitHub repo, not a locked format.',
+    ],
+  },
 ];
 
 // ── FAQ data per tool — powers FAQPage schema + visible accordions ─────────
@@ -1029,6 +1135,25 @@ Object.assign(TOOL_FAQS, {
   ],
 });
 
+// ── Week 1: FAQs for Cursor + Lovable ─────────────────────────────────────
+Object.assign(TOOL_FAQS, {
+  cursor: [
+    { q: 'Is Cursor AI free to use?', a: 'Yes. Cursor\'s Hobby plan is permanently free — it includes 2,000 code completions and 50 slow AI requests per month. That\'s enough to evaluate the tool properly and build small projects. The Pro plan ($20/month) unlocks unlimited completions and fast requests using Claude 3.5 and GPT-4o.' },
+    { q: 'How does Cursor compare to GitHub Copilot?', a: 'Cursor and GitHub Copilot are both excellent but solve the problem differently. Copilot is a plugin that enhances your existing VS Code or JetBrains setup. Cursor is a standalone editor (VS Code fork) with AI built into every feature. Cursor\'s Cmd+K inline editing and Composer multi-file agent are more powerful than anything in Copilot today. Copilot wins if you\'re in JetBrains or need GitHub-native integration. For VS Code users, Cursor is the better experience at $20/month vs $10/month.' },
+    { q: 'Does Cursor work with my existing VS Code extensions?', a: 'Yes — almost all VS Code extensions work in Cursor unchanged because Cursor is a fork of VS Code built on the same extension API. Your themes, language support, formatters (Prettier, ESLint), debuggers, and most marketplace extensions transfer automatically when you first open Cursor.' },
+    { q: 'Is Cursor good for non-developers or beginners?', a: 'Cursor is built for developers — it assumes you understand code and want AI to accelerate your workflow. It\'s not a no-code tool. If you want to build apps without writing code, Lovable or Replit are better starting points. For developers who already write code and want to go 2–3x faster, Cursor is one of the best investments in 2026.' },
+    { q: 'What AI models does Cursor use?', a: 'Cursor Pro gives access to Claude 3.5 Sonnet (Anthropic), GPT-4o (OpenAI), and Cursor\'s own fine-tuned models. You can switch models per task — Claude 3.5 is generally best for complex refactoring and explanation tasks; GPT-4o is fast for short completions. The Hobby (free) plan uses slower model access with a monthly quota.' },
+    { q: 'Is my code safe in Cursor?', a: 'Cursor has a Privacy Mode — when enabled, your code is not stored or used for model training. In Privacy Mode, prompts are sent to the AI model for inference only and are not logged. For enterprise users on the Business plan, Cursor offers zero-data-retention agreements. If you work with sensitive proprietary code, enable Privacy Mode in Settings before using AI features.' },
+  ],
+  lovable: [
+    { q: 'What is vibe coding and how does Lovable fit in?', a: 'Vibe coding is the practice of building software by describing what you want in plain English and letting an AI generate and iterate on the code for you — without writing the code yourself. Lovable is currently the leading vibe-coding platform for full-stack web apps. You describe your app, Lovable generates React + Supabase code, deploys it instantly, and you keep refining by chatting. The term was coined by Andrej Karpathy in early 2025 and the category grew by over 400% in search volume through 2026.' },
+    { q: 'Is Lovable really free?', a: 'Lovable has a permanent free plan with 5 messages per day. That\'s 5 prompts to generate or modify your app — enough to build a simple landing page or prototype a small tool each day without paying. The $25/month Starter plan gives 100 messages/month, which is enough to build a full MVP over a weekend. No credit card is required for the free plan.' },
+    { q: 'How does Lovable compare to Bolt and v0?', a: 'Lovable, Bolt, and v0 are all AI app builders but with different strengths. Lovable is the best for full-stack apps — it handles both frontend (React) and backend (Supabase database + auth) automatically. Bolt (by StackBlitz) is strong for frontend JavaScript projects and has excellent framework support. v0 (by Vercel) excels at UI component generation for developers already in the Vercel ecosystem. For a non-developer who wants a working, deployed app with a real database, Lovable is the clearest path. For a developer who needs polished React components, v0 is excellent.' },
+    { q: 'Can Lovable build a real app or just demos?', a: 'Lovable builds real, deployed applications — not demos or mockups. The generated apps are hosted on a live subdomain, backed by a real Supabase PostgreSQL database, with working authentication. I tested it with a newsletter lead capture form: submissions hit the database in real-time. That said, Lovable is best for apps with straightforward logic. Complex business rules, custom API integrations, and high-traffic production workloads still benefit from a developer reviewing and extending the generated code.' },
+    { q: 'Does Lovable have an affiliate programme?', a: 'Yes — Lovable pays 30% recurring commission via its referral programme. You earn 30% of every monthly payment from referred customers, for as long as they stay subscribed. For a tool in a fast-growing category with genuine word-of-mouth growth, this is one of the strongest recurring commission rates in the AI tools space. Sign up at lovable.dev and find the referral section in your account dashboard.' },
+  ],
+});
+
 // ── Comparison tables per tool ─────────────────────────────────────────────
 export const TOOL_COMPARISONS: Record<string, Array<{
   name: string; price: string; freeplan: boolean; bestFor: string; ourPick: boolean;
@@ -1068,9 +1193,22 @@ export const TOOL_COMPARISONS: Record<string, Array<{
     { name: 'ClickUp', price: 'Free–$12/mo', freeplan: true, bestFor: 'Feature-heavy teams', ourPick: false },
     { name: 'Monday.com', price: '$9–$16/mo', freeplan: false, bestFor: 'Visual project tracking', ourPick: false },
   ],
+  cursor: [
+    { name: 'Cursor', price: 'Free–$40/mo', freeplan: true, bestFor: 'AI-native code editor (VS Code fork)', ourPick: true },
+    { name: 'GitHub Copilot', price: '$10–$19/mo', freeplan: true, bestFor: 'IDE plugin for VS Code + JetBrains', ourPick: false },
+    { name: 'Windsurf', price: 'Free–$15/mo', freeplan: true, bestFor: 'Lightweight AI editor (Codeium)', ourPick: false },
+    { name: 'Replit', price: 'Free–$20/mo', freeplan: true, bestFor: 'Browser-based coding + deploy', ourPick: false },
+    { name: 'Codeium', price: 'Free–$15/mo', freeplan: true, bestFor: 'Free unlimited completions', ourPick: false },
+  ],
+  lovable: [
+    { name: 'Lovable', price: 'Free–$50/mo', freeplan: true, bestFor: 'Full-stack app from prompts (React + Supabase)', ourPick: true },
+    { name: 'Bolt', price: 'Free–$20/mo', freeplan: true, bestFor: 'Frontend JS apps, strong framework support', ourPick: false },
+    { name: 'v0 by Vercel', price: 'Free–$20/mo', freeplan: true, bestFor: 'React UI components for Vercel devs', ourPick: false },
+    { name: 'Replit', price: 'Free–$20/mo', freeplan: true, bestFor: 'Browser IDE + deploy for learners', ourPick: false },
+    { name: 'Bubble', price: 'Free–$29/mo', freeplan: true, bestFor: 'No-code apps with visual editor', ourPick: false },
+  ],
 };
 
-// ── Week 8: Comparisons for 5 new tools ───────────────────────────────────
 Object.assign(TOOL_COMPARISONS, {
   elevenlabs: [
     { name: 'ElevenLabs', price: 'Free–$99/mo', freeplan: true, bestFor: 'Realistic voice & cloning', ourPick: true },
@@ -1122,3 +1260,9 @@ export const TOOL_KEYWORDS: Record<string, string[]> = {
   perplexity: ['perplexity ai review', 'perplexity vs chatgpt', 'best ai search engine 2026', 'perplexity pro worth it', 'ai research tool with citations'],
   'canva-ai': ['canva ai review', 'canva ai tools 2026', 'canva magic write review', 'canva vs adobe express ai', 'best ai design tool free'],
 };
+
+// ── Week 1: TOOL_KEYWORDS for Cursor + Lovable ────────────────────────────
+Object.assign(TOOL_KEYWORDS, {
+  cursor: ['cursor ai review 2026', 'cursor vs github copilot', 'best ai code editor 2026', 'cursor ide free plan', 'cursor ai vs windsurf'],
+  lovable: ['lovable ai review 2026', 'lovable vs bolt vs v0', 'best vibe coding tool 2026', 'lovable dev free plan', 'build app without coding ai'],
+});

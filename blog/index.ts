@@ -77,8 +77,14 @@ import post40 from './best-free-ai-tool-plans-2026';
 import post41 from './fastest-growing-ai-startups-2026';
 import post42 from './cheapest-ai-coding-tools-2026';
 import post43 from './ai-ecosystem-growth-report-2026';
+// ── Week 1 (Jun 5–11): Trending spike content ─────────────────────────────
+// 🔥 +480% trending — GPT-5.5 vs Claude Opus 4.8 vs Grok 4 — 22K+/mo, KD 15
+import post44 from './gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026';
+// 🔥 New zero-competition category — Best vibe coding tools 2026 (Lovable vs Bolt vs v0)
+import post45 from './best-vibe-coding-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post45, post44, // Week 1 trending posts — pinned to top for freshness signals
   post43, post42, post41, post40, post39,
   post38, post37, post36, post35,
   post34, post33,
