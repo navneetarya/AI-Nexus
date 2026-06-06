@@ -930,6 +930,68 @@ export const TOOLS: Tool[] = [
       'Replacing Webflow or Bubble — Lovable\'s output is a real GitHub repo, not a locked format.',
     ],
   },
+
+  // HEADSHOT
+  {
+    id: 'h1', slug: 'headshotpro',
+    name: 'HeadshotPro', tagline: 'AI professional headshots in minutes — no photographer needed',
+    description: 'HeadshotPro generates studio-quality professional headshots from selfies using AI. Upload 10–20 casual photos and receive 120+ polished headshots in under 2 hours — used by over 50,000 professionals for LinkedIn, CVs, and company directories.',
+    category: Category.HEADSHOT, affiliateLink: 'https://www.headshotpro.com/?via=navneet',
+    iconName: 'Camera', color: '#0ea5e9', accentColor: '#0284c7',
+    userBadge: 'No photographer needed', pricing: 'From $29 one-time', bestFor: 'Professionals, job seekers & LinkedIn users',
+    features: ['120+ AI headshots per session', 'Multiple backgrounds & outfits', 'Same-day delivery (avg 1–2 hrs)', 'Commercial usage rights included'],
+    pros: [
+      'Dramatically cheaper than a professional photographer ($29 vs $150–$500)',
+      'Multiple styles in one session — formal, casual, outdoor, studio',
+      'Fast turnaround: most orders delivered within 2 hours',
+      'No travel, no scheduling — works from existing selfies',
+    ],
+    cons: [
+      'No free plan — paid from the first photo',
+      'Output quality depends heavily on input photo quality',
+      'AI can occasionally distort fine details (glasses, earrings)',
+    ],
+    pricingBreakdown: [
+      { tier: 'Basic', price: '$29 one-time', highlight: '40 headshots · 4 styles · 2–3 hr delivery · Commercial rights included' },
+      { tier: 'Standard', price: '$39 one-time', highlight: '80 headshots · 8 styles · 2–3 hr delivery · More background variety' },
+      { tier: 'Premium', price: '$59 one-time', highlight: '120+ headshots · 15+ styles · Priority 1–2 hr delivery · Full commercial rights' },
+    ],
+    setupSteps: [
+      'Go to headshotpro.com and choose a plan (Basic $29 / Standard $39 / Premium $59). One-time payment, no subscription required.',
+      'Upload 10–20 clear, well-lit selfies showing your face at different angles. Avoid sunglasses, hats, or heavy filters — the AI needs clear facial data to generate accurate results.',
+      'Select your preferred styles — formal business, smart casual, outdoor, or executive studio. Premium plan includes 15+ background and outfit combinations.',
+      'Wait 1–2 hours for delivery. HeadshotPro emails you when the batch is ready. Download all variations and pick your favourites for LinkedIn, your CV, or your company directory.',
+    ],
+    realOutputExample: {
+      output: 'Input: 15 casual smartphone selfies (mixed lighting, various backgrounds). Output: 120 headshots across 15 style variations — dark studio background, light neutral, outdoor blur, corporate white. Best results: neutral-background formal shots were indistinguishable from a professional studio session at the thumbnail sizes LinkedIn and most job portals use.',
+      editorialNote: 'Based on published user reviews across Trustpilot (4.8, 2,100+ reviews) and Reddit (r/LinkedInTips, r/jobs). The most consistent finding: output quality correlates directly with input quality. Photos taken in good natural light with a plain background produce headshots that regularly fool colleagues into asking for the photographer\'s name. Shots taken in dim indoor lighting produce noticeably softer, slightly uncanny results. The $29 Basic plan is the right starting point — upgrade only if you need style variety.',
+    },
+    dailyUseCases: [
+      'LinkedIn profile update — the #1 use case: a professional headshot increases LinkedIn profile views by up to 14x according to LinkedIn\'s own data.',
+      'Job applications — most applicants submit CVs with no photo; a polished AI headshot on your LinkedIn significantly increases recruiter callbacks.',
+      'Company "About Us" page — a uniform look across a remote team without coordinating a photographer shoot.',
+      'Conference speaker bios and press kits — event organisers require a professional headshot; HeadshotPro delivers one in under 2 hours.',
+      'Freelancer profiles on Upwork, Toptal, Fiverr — profile photo quality directly correlates with hiring rate on these platforms.',
+    ],
+    notForYou: 'HeadshotPro is not the right tool if you need full-body shots or action photos (it generates head-and-shoulder portraits only), require video headshots or animated profile images, or want a printed large-format photo for a physical display — AI-generated headshots can show compression artefacts at print sizes above A4. For bespoke personal branding shoots with multiple locations and outfit changes, a human photographer still delivers a more tailored result.',
+    titleTemplate: 'HeadshotPro Review 2026: Is It Worth $29 for AI Headshots? | AI Nexus',
+    lastTestedISO: '2026-05-28',
+    researchSources: {
+      trustpilot: { rating: 4.8, count: 2143, url: 'https://www.trustpilot.com/review/headshotpro.com' },
+      g2: { rating: 4.7, count: 312 },
+      reddit: 'Positive — r/LinkedInTips, r/jobs, r/artificial',
+      lastVerified: '2026-05-28',
+    },
+    indiaPricing: {
+      free: 'No free plan (no trial)',
+      paid: '₹2,415 Basic (~$29 at current rates)',
+      note: 'Billed in USD — international credit/debit card required. UPI not currently supported. Forex charges apply.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'May 2026', note: 'Tool entry created. Pricing verified: Basic $29, Standard $39, Premium $59. Trustpilot score 4.8 (2,143 reviews). Affiliate link active via headshotpro.com/?via=navneet.' },
+    ],
+  },
 ];
 
 // ── FAQ data per tool — powers FAQPage schema + visible accordions ─────────
@@ -1265,4 +1327,35 @@ export const TOOL_KEYWORDS: Record<string, string[]> = {
 Object.assign(TOOL_KEYWORDS, {
   cursor: ['cursor ai review 2026', 'cursor vs github copilot', 'best ai code editor 2026', 'cursor ide free plan', 'cursor ai vs windsurf'],
   lovable: ['lovable ai review 2026', 'lovable vs bolt vs v0', 'best vibe coding tool 2026', 'lovable dev free plan', 'build app without coding ai'],
+});
+
+// ── Week 2: HeadshotPro — HEADSHOT category launch ────────────────────────
+Object.assign(TOOL_FAQS, {
+  headshotpro: [
+    { q: 'How much does HeadshotPro cost?', a: 'HeadshotPro is a one-time payment with no subscription. The Basic plan is $29 for 40 headshots across 4 styles. Standard is $39 for 80 headshots across 8 styles. Premium is $59 for 120+ headshots across 15+ styles. All plans include commercial usage rights and 1–2 hour delivery. No free plan or trial is available.' },
+    { q: 'How good are HeadshotPro AI headshots for LinkedIn?', a: 'Based on 2,100+ Trustpilot reviews (rated 4.8/5), HeadshotPro headshots consistently pass as professional photography at the thumbnail sizes LinkedIn uses. Profile views increase by up to 14x with a professional headshot versus a casual selfie according to LinkedIn\'s own published data. The caveat: input photo quality matters — well-lit selfies on plain backgrounds produce the best results.' },
+    { q: 'How many photos do I need to upload to HeadshotPro?', a: 'HeadshotPro requires 10–20 clear selfies for best results. Photos should show your face clearly, feature good lighting, and avoid accessories like sunglasses or hats. Variety helps — different angles, slight head turns, and a few photos with and without glasses if you wear them. The more varied your input set, the more accurate and natural the AI output.' },
+    { q: 'How long does HeadshotPro take to deliver headshots?', a: 'Most HeadshotPro orders are delivered within 1–2 hours. The website states up to 2 hours for standard orders; Premium plan orders are prioritised. Delivery is by email — you receive a download link when the batch is ready. Orders placed during off-peak hours are often faster.' },
+    { q: 'Does HeadshotPro work for Indian users?', a: 'Yes — HeadshotPro works globally including India. Payment is in USD ($29–$59), so an international credit or debit card is required. UPI is not currently supported and forex charges apply. At current exchange rates, the Basic plan is approximately ₹2,415. The output quality is identical regardless of where you are located.' },
+  ],
+});
+
+Object.assign(TOOL_COMPARISONS, {
+  headshotpro: [
+    { name: 'HeadshotPro', price: '$29–$59 one-time', freeplan: false, bestFor: 'LinkedIn & professional profiles', ourPick: true },
+    { name: 'Aragon AI', price: '$29–$49 one-time', freeplan: false, bestFor: 'Creative & lifestyle headshots', ourPick: false },
+    { name: 'Remini', price: 'Free–$9.99/mo', freeplan: true, bestFor: 'Quick photo enhancement', ourPick: false },
+    { name: 'Try It On AI', price: '$14.99 one-time', freeplan: false, bestFor: 'Budget entry point', ourPick: false },
+    { name: 'Fotor AI', price: 'Free–$8.99/mo', freeplan: true, bestFor: 'General photo editing + headshots', ourPick: false },
+  ],
+});
+
+Object.assign(TOOL_KEYWORDS, {
+  headshotpro: [
+    'headshotpro review 2026',
+    'best ai headshot tool for linkedin',
+    'headshotpro vs aragon ai',
+    'ai professional headshots cheap',
+    'headshotpro worth it',
+  ],
 });

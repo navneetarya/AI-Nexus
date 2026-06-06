@@ -82,8 +82,12 @@ import post43 from './ai-ecosystem-growth-report-2026';
 import post44 from './gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026';
 // 🔥 New zero-competition category — Best vibe coding tools 2026 (Lovable vs Bolt vs v0)
 import post45 from './best-vibe-coding-tools-2026';
+// ── Week 2: Headshot category launch — KD 12, 2k–4k/mo, affiliate monetised ─
+// Target keyword: "best ai headshot tools for linkedin 2026" — HeadshotPro #1
+import post46 from './best-ai-headshot-tools-linkedin-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post46, // Week 2 headshot post — new HEADSHOT category launch
   post45, post44, // Week 1 trending posts — pinned to top for freshness signals
   post43, post42, post41, post40, post39,
   post38, post37, post36, post35,
