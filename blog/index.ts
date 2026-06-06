@@ -85,8 +85,12 @@ import post45 from './best-vibe-coding-tools-2026';
 // ── Week 2: Headshot category launch — KD 12, 2k–4k/mo, affiliate monetised ─
 // Target keyword: "best ai headshot tools for linkedin 2026" — HeadshotPro #1
 import post46 from './best-ai-headshot-tools-linkedin-2026';
+// ── Week 2: Cursor AI review — 8K–12K/mo, KD 18 — high-volume coding tool review ─
+// Target keyword: "cursor ai review 2026" — #1 AI code editor review
+import post47 from './cursor-ai-review-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post47, // Week 2 Cursor AI review — high-volume coding review, pinned for freshness
   post46, // Week 2 headshot post — new HEADSHOT category launch
   post45, post44, // Week 1 trending posts — pinned to top for freshness signals
   post43, post42, post41, post40, post39,
