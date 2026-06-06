@@ -1100,6 +1100,7 @@ function compareProductListSchema(compareSlug, canonical) {
       '@id': `${SITE}/tools/${tool.slug}/`,
       name: tool.name,
       description: tool.tagline,
+      image: `${SITE}/logos/${tool.slug}.png`,
       url: `${SITE}/tools/${tool.slug}/`,
       offers: {
         '@type': 'Offer',
