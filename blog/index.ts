@@ -88,8 +88,16 @@ import post46 from './best-ai-headshot-tools-linkedin-2026';
 // ── Week 2: Cursor AI review — 8K–12K/mo, KD 18 — high-volume coding tool review ─
 // Target keyword: "cursor ai review 2026" — #1 AI code editor review
 import post47 from './cursor-ai-review-2026';
+// ── Week 3: Email marketing post — 3K–6K/mo, KD low — GetResponse affiliate (40–60% recurring) ─
+// Target keyword: "best ai email marketing tool 2026"
+import post48 from './best-ai-email-marketing-tools-2026';
+// ── Week 3: YouTube creators post — 2K–5K/mo, KD low — 3 affiliates: Munch AI + ElevenLabs + Opus.pro ─
+// Target keyword: "best ai tools youtube creators 2026" | Differentiator: workflow-intelligence angle
+import post49 from './best-ai-tools-for-youtube-creators-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post49, // Week 3 YouTube creators — 3 affiliates (Munch AI + ElevenLabs + Opus.pro), pinned for freshness
+  post48, // Week 3 email marketing — GetResponse affiliate (40–60% recurring), pinned for freshness
   post47, // Week 2 Cursor AI review — high-volume coding review, pinned for freshness
   post46, // Week 2 headshot post — new HEADSHOT category launch
   post45, post44, // Week 1 trending posts — pinned to top for freshness signals
