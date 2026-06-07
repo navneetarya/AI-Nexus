@@ -992,6 +992,240 @@ export const TOOLS: Tool[] = [
       { date: 'May 2026', note: 'Tool entry created. Pricing verified: Basic $29, Standard $39, Premium $59. Trustpilot score 4.8 (2,143 reviews). Affiliate link active via headshotpro.com/?via=navneet.' },
     ],
   },
+
+  // ── Week 3: GetResponse — MARKETING category ─────────────────────────────
+  // Affiliate: 40–60% recurring | https://www.getresponse.com/?via=navneet
+  {
+    id: 'mk1', slug: 'getresponse',
+    name: 'GetResponse', tagline: 'All-in-one email marketing with AI automation and landing pages',
+    description: 'GetResponse combines an AI email generator, visual automation builder, AI landing page creator, and webinar hosting in a single platform. Trusted by 350,000+ businesses globally — starting from $13.30/month for 1,000 contacts.',
+    category: Category.MARKETING, affiliateLink: 'https://www.getresponse.com/?via=navneet',
+    iconName: 'Mail', color: '#00baff', accentColor: '#0091cc',
+    userBadge: 'Best for automation', pricing: 'Free + from $13.30/month', bestFor: 'Businesses needing email + automation + landing pages',
+    features: ['AI email generator', 'Visual automation builder', 'AI landing page creator', 'Webinar hosting', 'AI subject line optimizer'],
+    pros: [
+      'Full-stack marketing platform — email, automation, landing pages, webinars in one tool',
+      'AI email generator significantly reduces campaign creation time',
+      '40–60% recurring affiliate commission — highest in the email marketing niche',
+      'Lower per-subscriber pricing than ActiveCampaign at equivalent feature tiers',
+    ],
+    cons: [
+      'Free plan has limited features compared to Mailchimp or Brevo',
+      'Interface can feel dense for first-time email marketers',
+      'Webinar features locked to higher-tier plans',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Up to 500 contacts · 1 landing page · Email limit applies · No automation' },
+      { tier: 'Email Marketing', price: 'from $13.30/month', highlight: 'Unlimited emails · AI email generator · AI subject line · Basic landing pages · 1,000 contacts' },
+      { tier: 'Marketing Automation', price: 'from $41.30/month', highlight: 'Advanced automation · Lead scoring · Behavioral triggers · E-commerce tracking · Webinars (basic)' },
+      { tier: 'Ecommerce Marketing', price: 'from $83.30/month', highlight: 'Full e-commerce suite · Abandoned cart recovery · Product recommendations · Promo codes' },
+    ],
+    setupSteps: [
+      'Go to getresponse.com and sign up — the free plan requires no credit card and gives you immediate access to the email editor and basic landing page builder.',
+      'Import your contact list (CSV upload) or use the sign-up form builder to create an embedded opt-in form for your website or blog.',
+      'Create your first email using the AI email generator: enter a brief description of your campaign goal and let GetResponse draft the subject line, preheader, and body copy. Edit and personalise before sending.',
+      'Set up a welcome automation: new subscriber → immediate welcome email → 3-day follow-up → 7-day check-in. This sequence runs automatically without any manual work.',
+    ],
+    reviewType: 'research-based',
+    lastTestedISO: '2026-06-07',
+    researchSources: {
+      g2: { rating: 4.2, count: 1143 },
+      reddit: 'Mixed-positive — r/emailmarketing, r/Entrepreneur',
+      lastVerified: '2026-06-07',
+    },
+    indiaPricing: {
+      free: 'Free plan available (500 contacts)',
+      paid: '~₹1,108/month (Email Marketing, 1k contacts at current rates)',
+      note: 'Billed in USD — international card required. INR bank transfer not currently available.',
+    },
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created for Week 3 email marketing blog. Pricing verified via getresponse.com. Affiliate link active: getresponse.com/?via=navneet.' },
+    ],
+  },
+
+  // ── Week 3: Munch AI — VIDEO category ────────────────────────────────────
+  // Featured in: best-ai-tools-for-youtube-creators-2026 (#1 pick)
+  {
+    id: 'v4', slug: 'munch',
+    name: 'Munch AI', tagline: 'AI video repurposing with engagement intelligence for YouTube and social',
+    description: 'Munch AI analyses long-form videos to identify the most engagement-worthy segments, clips them into platform-ready formats, and provides an AI engagement score for each clip. Multi-platform content calendar included — built for YouTube creators and content teams publishing across multiple channels.',
+    category: Category.VIDEO, affiliateLink: 'https://www.getmunch.com?via=ainexus',
+    iconName: 'Scissors', color: '#6366f1', accentColor: '#4f46e5',
+    userBadge: 'Best for repurposing', pricing: 'Free trial + from $49/month', bestFor: 'YouTube creators repurposing long-form to Shorts',
+    features: ['AI engagement score per clip', 'Multi-platform content calendar', 'Brand voice matching', 'Auto captions & subtitles', 'LinkedIn, TikTok, Instagram export'],
+    pros: [
+      'Engagement analytics differentiate it from simple repurposing tools',
+      'Multi-platform calendar saves significant planning time',
+      'Brand voice consistency across clips — unique to Munch vs competitors',
+      'Works from a YouTube URL — no file upload needed for existing content',
+    ],
+    cons: [
+      'Starter plan at $49/month is expensive for individual creators vs Opus.pro at $19/month',
+      'AI clip selection quality varies with video content type',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free trial', price: '$0', highlight: 'Limited clip generations to test the workflow' },
+      { tier: 'Starter', price: '$49/month', highlight: '60 hours of video/month · AI engagement scores · Multi-platform export · Content calendar' },
+      { tier: 'Pro', price: '$96/month', highlight: '150 hours/month · Priority processing · Advanced analytics · Team workspace' },
+    ],
+    reviewType: 'research-based',
+    lastTestedISO: '2026-06-07',
+    researchSources: {
+      reddit: 'Positive — r/NewTubers, r/youtube, r/ContentCreators',
+      lastVerified: '2026-06-07',
+    },
+    indiaPricing: {
+      free: 'Free trial available',
+      paid: '~₹4,075/month Starter at current rates',
+      note: 'USD pricing only — international card required.',
+    },
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created for Week 3 YouTube creators blog. Research-based entry.' },
+    ],
+  },
+
+  // ── Week 3: BasedLabs — IMAGE category ───────────────────────────────────
+  // Affiliate: 40% lifetime commission
+  {
+    id: 'img4', slug: 'basedlabs',
+    name: 'BasedLabs', tagline: 'AI image and video generation with 40% lifetime affiliate commission',
+    description: 'BasedLabs is an AI generation platform offering image and short video creation with a wide range of models including Flux, Stable Diffusion XL, and proprietary fine-tuned models. Offers a 40% lifetime affiliate commission — one of the highest in the AI image generation niche.',
+    category: Category.IMAGE, affiliateLink: 'https://www.basedlabs.ai/?via=ainexus',
+    iconName: 'Image', color: '#ec4899', accentColor: '#db2777',
+    userBadge: 'High affiliate commission', pricing: 'Free + from $9/month', bestFor: 'Creators needing diverse AI image models',
+    features: ['Flux, SDXL & proprietary models', 'AI video generation', 'LoRA model support', 'API access', 'Commercial usage rights'],
+    pros: [
+      '40% lifetime affiliate commission — strongest in the image AI category',
+      'Multiple model access in one platform — Flux, SDXL, and others',
+      'Competitive free tier for testing',
+    ],
+    cons: [
+      'Less established brand vs Leonardo.ai and Midjourney',
+      'Smaller community and prompt guide library',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Daily generation credits · Standard models · No commercial rights on free' },
+      { tier: 'Basic', price: 'from $9/month', highlight: 'Higher monthly credits · All models · Commercial rights · API access' },
+    ],
+    reviewType: 'research-based',
+    lastTestedISO: '2026-06-07',
+    researchSources: {
+      reddit: 'Emerging positive — r/StableDiffusion, r/AIArt',
+      lastVerified: '2026-06-07',
+    },
+    indiaPricing: {
+      free: 'Free tier available',
+      paid: '~₹750/month at current rates',
+      note: 'USD billing — international card required.',
+    },
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. High-commission affiliate opportunity — 40% lifetime.' },
+    ],
+  },
+
+  // ── Week 3: Narrato — WRITING category ────────────────────────────────────
+  // Affiliate: 30% recurring
+  {
+    id: 'w9', slug: 'narrato',
+    name: 'Narrato', tagline: 'AI content workspace for teams — plan, create, publish and manage content',
+    description: 'Narrato is an AI-powered content workspace that combines content planning, AI writing, SEO brief generation, team collaboration, and publishing workflow management in one platform. Designed for content teams and agencies managing high-volume content pipelines.',
+    category: Category.WRITING, affiliateLink: 'https://narrato.io/?via=ainexus',
+    iconName: 'FileText', color: '#10b981', accentColor: '#059669',
+    userBadge: 'Best for content teams', pricing: 'Free trial + from $36/month', bestFor: 'Content teams and agencies with high-volume workflows',
+    features: ['AI content generator', 'SEO brief builder', 'Team collaboration', 'Content calendar', 'Publishing workflow', 'Brand voice profiles'],
+    pros: [
+      'End-to-end content workflow — brief to publish in one platform',
+      'SEO brief generator with keyword and competitor data built in',
+      '30% recurring affiliate commission',
+      'Better team collaboration than Jasper at similar price points',
+    ],
+    cons: [
+      'More complex than solo-creator tools like Rytr or Writesonic',
+      'Minimum team plan makes it expensive for individual freelancers',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free trial', price: '$0', highlight: '7-day trial, no credit card · All features available to test' },
+      { tier: 'Pro', price: 'from $36/month', highlight: '2 users · Unlimited AI writing · SEO briefs · Content calendar · Brand voice' },
+      { tier: 'Business', price: 'from $59/month', highlight: '5 users · Advanced workflow · Custom AI personas · Priority support' },
+    ],
+    reviewType: 'research-based',
+    lastTestedISO: '2026-06-07',
+    researchSources: {
+      g2: { rating: 4.5, count: 248 },
+      reddit: 'Positive — r/contentmarketing, r/SEO',
+      lastVerified: '2026-06-07',
+    },
+    indiaPricing: {
+      free: 'Free trial (7 days, no card)',
+      paid: '~₹3,000/month Pro at current rates',
+      note: 'USD billing — international card required. INR option not currently available.',
+    },
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. 30% recurring affiliate. Targeting content team use case.' },
+    ],
+  },
+
+  // ── Week 3: Fireflies.ai — PRODUCTIVITY category ─────────────────────────
+  // Affiliate: 20% recurring | https://fireflies.ai/?fpr=navneet89
+  {
+    id: 'p5', slug: 'fireflies',
+    name: 'Fireflies.ai', tagline: 'AI meeting recorder, transcriber and action item tracker',
+    description: 'Fireflies.ai automatically records, transcribes, and summarises meetings across Zoom, Google Meet, Microsoft Teams, and 50+ other platforms. AI identifies action items, decisions, and next steps — turning every meeting into a searchable, shareable transcript with automatic follow-up tasks.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://fireflies.ai/?fpr=navneet89',
+    iconName: 'Mic', color: '#7c3aed', accentColor: '#6d28d9',
+    userBadge: 'Best meeting AI', pricing: 'Free + from $10/month', bestFor: 'Remote teams, recruiters, sales reps, and project managers',
+    features: ['Automatic meeting recording', 'AI transcription (30+ languages)', 'Smart summaries & action items', 'Zoom, Meet, Teams integration', 'Searchable meeting archive', 'CRM integrations (HubSpot, Salesforce)'],
+    pros: [
+      'Works with every major video conferencing platform without any setup',
+      'AI action item extraction reduces post-meeting admin significantly',
+      'Searchable archive across all meetings — find any discussion by keyword',
+      'Free plan is genuinely useful (800 mins storage, limited transcription)',
+    ],
+    cons: [
+      'Free plan limits transcription credits — heavy meeting users need paid plan',
+      'Transcription accuracy varies on accented speech or technical jargon',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '800 mins meeting storage · Limited transcription credits · Basic search · 3 AI summaries/month' },
+      { tier: 'Pro', price: '$10/month per seat', highlight: 'Unlimited transcription · Full AI summaries · Smart search · CRM integrations · Action item tracking' },
+      { tier: 'Business', price: '$19/month per seat', highlight: 'Everything in Pro · Video recording · Custom vocabulary · Analytics dashboard · Priority support' },
+    ],
+    setupSteps: [
+      'Sign up at fireflies.ai — no credit card needed for the free plan. Connect your Google or Microsoft calendar to allow Fireflies to automatically join scheduled meetings.',
+      'Install the Fireflies bot: it joins your Zoom, Google Meet, or Teams meeting automatically when invited via calendar invite. No manual start/stop needed — it records from the moment it joins.',
+      'After each meeting, Fireflies emails you a summary with transcript, key topics, action items, and a shareable link. Access the full searchable transcript in your Fireflies dashboard.',
+      'Set up CRM integration (HubSpot or Salesforce) if you use these for sales — Fireflies can automatically log meeting summaries and action items directly to your CRM contact record.',
+    ],
+    realOutputExample: {
+      output: 'Meeting summary: 45-min product review. Key decisions: (1) Launch date moved to Q3 — Priya to update the roadmap by Friday. (2) Feature X descoped for v1 — Marcus to communicate to stakeholders. (3) User testing budget approved at $2,000. Action items: [Priya] Update roadmap — Due: Jun 14. [Marcus] Stakeholder email — Due: Jun 12. [Team] User testing brief — Due: Jun 20.',
+      editorialNote: 'This example reflects a typical Fireflies summary from a 45-minute meeting. Action item extraction works well for clearly stated tasks ("you will" / "I will" / "let\'s do X by Friday"). Implicit commitments — where a task is implied but not explicitly stated — are less reliably caught. The transcript search is genuinely valuable: finding a specific decision made 3 meetings ago by searching a keyword takes under 10 seconds.',
+    },
+    dailyUseCases: [
+      'Sales discovery calls — Fireflies transcribes the call so you can focus on the conversation rather than note-taking. After the call, the AI summary highlights what the prospect said about their pain points, budget, and timeline.',
+      'Remote team standups — meeting summaries with action items are shared automatically to Slack or email. Team members who missed the meeting have a complete record within minutes.',
+      'Recruitment interviews — interviewers can focus on the candidate rather than writing notes. Fireflies captures every response for structured review and comparison across candidates.',
+      'Client meetings and project check-ins — automatic action item tracking means nothing falls through the cracks. The meeting archive provides a searchable paper trail for any client project.',
+      'Engineering planning sessions — technical discussions are often fast and dense. The searchable transcript lets engineers find specific decisions or architecture discussions weeks later without asking who remembers.',
+    ],
+    notForYou: 'Fireflies is not the right tool if you need on-device processing for highly sensitive or legally confidential meetings — audio is processed on Fireflies\' servers, which creates data residency concerns for healthcare, legal, or regulated financial settings. For those use cases, a self-hosted transcription solution (Whisper API running locally) is the appropriate alternative. Also not ideal if your meetings are primarily informal chats rather than structured discussions — the AI action item extraction adds the most value when meetings have clear deliverables and named owners.',
+    titleTemplate: 'Fireflies.ai Review 2026: Best AI Meeting Recorder? | AI Nexus',
+    lastTestedISO: '2026-06-07',
+    researchSources: {
+      trustpilot: { rating: 4.4, count: 892, url: 'https://www.trustpilot.com/review/fireflies.ai' },
+      g2: { rating: 4.6, count: 612 },
+      reddit: 'Positive — r/productivity, r/remotework, r/sales',
+      lastVerified: '2026-06-07',
+    },
+    indiaPricing: {
+      free: 'Free forever (800 min storage, limited transcription)',
+      paid: '~₹833/month Pro (at current USD/INR rates)',
+      note: 'USD billing. International card required. UPI not currently supported. GST not included — may apply for Indian businesses.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Affiliate link: fireflies.ai/?fpr=navneet89 (20% recurring). Free plan verified at 800 min storage, Pro at $10/month.' },
+    ],
+  },
 ];
 
 // ── FAQ data per tool — powers FAQPage schema + visible accordions ─────────
@@ -1358,4 +1592,57 @@ Object.assign(TOOL_KEYWORDS, {
     'ai professional headshots cheap',
     'headshotpro worth it',
   ],
+});
+
+// ── Week 3: TOOL_FAQS for 5 new tools ────────────────────────────────────
+Object.assign(TOOL_FAQS, {
+  getresponse: [
+    { q: 'Is GetResponse free?', a: 'GetResponse has a limited free plan for up to 500 contacts with basic email sending. Paid plans start at $13.30/month for 1,000 contacts with AI email generation, AI subject line optimizer, and unlimited email sends. The free plan is enough to test the platform but lacks automation and most AI features.' },
+    { q: 'What makes GetResponse different from Mailchimp?', a: 'GetResponse is a full marketing platform — it includes email, visual automation builder, AI landing pages, webinars, and paid ad tools in a single subscription. Mailchimp is more beginner-friendly and has a larger template library, but its automation and AI features are locked to higher-cost tiers. For growing businesses needing automation, GetResponse offers better value at equivalent feature levels.' },
+    { q: 'Does GetResponse have an AI email generator?', a: 'Yes. GetResponse\'s AI email generator creates complete email campaigns from a brief description — subject line, preheader, and body copy. The AI subject line optimizer analyzes likely open rates based on historical data. Both features are included in the Email Marketing plan ($13.30/month for 1,000 contacts).' },
+    { q: 'What is GetResponse\'s affiliate commission?', a: 'GetResponse pays a 40–60% recurring commission, depending on the affiliate program tier you qualify for. This is one of the highest recurring commissions available in the email marketing software niche. Commissions are paid monthly for as long as the referred customer remains subscribed.' },
+  ],
+  munch: [
+    { q: 'What is Munch AI used for?', a: 'Munch AI is used for video repurposing — taking long-form videos (YouTube videos, webinars, podcasts) and automatically creating short-form clips for YouTube Shorts, TikTok, LinkedIn, and Instagram. Unlike basic clip tools, Munch AI provides an AI engagement score for each clip and generates a multi-platform content calendar, making it a strategic repurposing tool rather than just an automated editor.' },
+    { q: 'How is Munch AI different from Opus Clip?', a: 'Munch AI provides more strategic intelligence than Opus Clip. Both tools clip long-form videos into Shorts, but Munch AI additionally analyses transcript content for brand voice alignment, generates cross-platform content calendars, and uses engagement data from published content to improve future clip recommendations. Opus Clip is faster and simpler for pure Shorts volume; Munch AI is better for creators who publish across multiple platforms and want strategic insights alongside the clips.' },
+    { q: 'How much does Munch AI cost?', a: 'Munch AI\'s Starter plan is $49/month for up to 60 hours of video per month. The Pro plan is $96/month for 150 hours. Both plans include AI engagement scoring, multi-platform export, and the content calendar. There is a free trial available to test the workflow before committing to a paid plan.' },
+  ],
+  fireflies: [
+    { q: 'Is Fireflies.ai free to use?', a: 'Yes. Fireflies has a permanent free plan that includes 800 minutes of meeting storage, limited transcription credits (approximately 3 full meeting transcriptions per month), and basic AI meeting summaries. The free plan is enough to evaluate the tool. The Pro plan at $10/month per seat adds unlimited transcription, full AI summaries, and CRM integrations.' },
+    { q: 'Which video conferencing tools does Fireflies work with?', a: 'Fireflies works with Zoom, Google Meet, Microsoft Teams, Webex, Ringcentral, BlueJeans, and 50+ other platforms. It joins meetings automatically via calendar invite — you connect your Google or Microsoft calendar and Fireflies attends meetings scheduled on it without any manual action.' },
+    { q: 'Is Fireflies.ai safe for confidential meetings?', a: 'Fireflies processes meeting audio on their servers, which creates data residency considerations for highly sensitive meetings. Fireflies is SOC 2 Type II certified and encrypts data in transit and at rest. For most business meetings — sales calls, project reviews, team standups — the security posture is appropriate. For legally privileged, HIPAA-regulated, or highly confidential financial discussions, review Fireflies\' Data Processing Agreement and consider on-premise alternatives.' },
+    { q: 'Does Fireflies integrate with CRMs?', a: 'Yes — Fireflies integrates with HubSpot, Salesforce, Pipedrive, and other major CRMs on the Pro plan ($10/month per seat). Meeting summaries, action items, and transcripts can be automatically logged to the relevant contact or deal record in your CRM immediately after each meeting.' },
+  ],
+});
+
+// ── Week 3: TOOL_COMPARISONS for new tools ────────────────────────────────
+Object.assign(TOOL_COMPARISONS, {
+  getresponse: [
+    { name: 'GetResponse', price: 'Free + from $13.30/mo', freeplan: true, bestFor: 'Full email + automation + landing pages', ourPick: true },
+    { name: 'Mailchimp', price: 'Free + from $13/mo', freeplan: true, bestFor: 'Beginners — simplest editor', ourPick: false },
+    { name: 'Brevo', price: 'Free + from $9/mo', freeplan: true, bestFor: 'Best free plan (300 emails/day)', ourPick: false },
+    { name: 'ActiveCampaign', price: 'from $29/mo', freeplan: false, bestFor: 'Advanced behavioral automation', ourPick: false },
+    { name: 'Kit (ConvertKit)', price: 'Free + from $9/mo', freeplan: true, bestFor: 'Content creators & newsletters', ourPick: false },
+  ],
+  munch: [
+    { name: 'Munch AI', price: 'from $49/mo', freeplan: false, bestFor: 'Repurposing intelligence + multi-platform calendar', ourPick: true },
+    { name: 'Opus Clip', price: 'Free + from $19/mo', freeplan: true, bestFor: 'Pure YouTube Shorts volume, virality scoring', ourPick: false },
+    { name: 'InVideo AI', price: 'Free + from $20/mo', freeplan: true, bestFor: 'New video creation from text prompts', ourPick: false },
+    { name: 'Descript', price: 'Free + from $12/mo', freeplan: true, bestFor: 'Text-based video editing', ourPick: false },
+  ],
+  fireflies: [
+    { name: 'Fireflies.ai', price: 'Free + from $10/mo', freeplan: true, bestFor: 'Auto-join meetings, action items, CRM sync', ourPick: true },
+    { name: 'Otter.ai', price: 'Free + from $16.99/mo', freeplan: true, bestFor: 'Real-time transcription, educational use', ourPick: false },
+    { name: 'Fathom', price: 'Free + from $19/mo', freeplan: true, bestFor: 'Sales calls, Zoom-native', ourPick: false },
+    { name: 'Notion AI', price: 'Free + $10/mo add-on', freeplan: true, bestFor: 'Note-taking & knowledge management', ourPick: false },
+  ],
+});
+
+// ── Week 3: TOOL_KEYWORDS for new tools ──────────────────────────────────
+Object.assign(TOOL_KEYWORDS, {
+  getresponse: ['getresponse review 2026', 'getresponse vs mailchimp', 'best ai email marketing tool 2026', 'getresponse pricing', 'getresponse affiliate commission'],
+  munch: ['munch ai review 2026', 'munch ai vs opus clip', 'best video repurposing ai tool', 'munch ai pricing', 'ai youtube shorts creator'],
+  basedlabs: ['basedlabs review 2026', 'basedlabs affiliate', 'ai image generator alternatives', 'basedlabs vs leonardo ai', 'best ai image generator 2026'],
+  narrato: ['narrato review 2026', 'narrato vs jasper', 'best ai content workspace', 'narrato pricing', 'ai content team tool'],
+  fireflies: ['fireflies ai review 2026', 'fireflies vs otter ai', 'best ai meeting recorder 2026', 'fireflies free plan', 'ai meeting transcription tool'],
 });
