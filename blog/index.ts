@@ -94,13 +94,18 @@ import post48 from './best-ai-email-marketing-tools-2026';
 // ── Week 3: YouTube creators post — 2K–5K/mo, KD low — 3 affiliates: Munch AI + ElevenLabs + Opus.pro ─
 // Target keyword: "best ai tools youtube creators 2026" | Differentiator: workflow-intelligence angle
 import post49 from './best-ai-tools-for-youtube-creators-2026';
+// ── Week 4: Best AI Meeting Tools — 2K–4K/mo, KD low — Fireflies.ai affiliate (20% recurring) ─
+// Target keyword: "best ai meeting tools 2026" | Covers: Fireflies.ai · Otter.ai · Fathom
+// Affiliate: Fireflies.ai — https://fireflies.ai/?fpr=navneet89 — 20% recurring commission
+import post50 from './best-ai-meeting-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
-  post49, // Week 3 YouTube creators — 3 affiliates (Munch AI + ElevenLabs + Opus.pro), pinned for freshness
-  post48, // Week 3 email marketing — GetResponse affiliate (40–60% recurring), pinned for freshness
-  post47, // Week 2 Cursor AI review — high-volume coding review, pinned for freshness
+  post50, // Week 4 best ai meeting tools — Fireflies affiliate (20% recurring), pinned for freshness
+  post49, // Week 3 YouTube creators — 3 affiliates (Munch AI + ElevenLabs + Opus.pro)
+  post48, // Week 3 email marketing — GetResponse affiliate (40–60% recurring)
+  post47, // Week 2 Cursor AI review — high-volume coding review
   post46, // Week 2 headshot post — new HEADSHOT category launch
-  post45, post44, // Week 1 trending posts — pinned to top for freshness signals
+  post45, post44, // Week 1 trending posts
   post43, post42, post41, post40, post39,
   post38, post37, post36, post35,
   post34, post33,
