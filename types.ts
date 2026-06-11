@@ -8,6 +8,11 @@ export enum Category {
   DESIGN = 'Design',
   CODING = 'Coding',
   PRODUCTIVITY = 'Productivity',
+  // ── Week 2: HEADSHOT — bug fix (used in constants.ts since Week 2 but was missing here) ──
+  HEADSHOT = 'Headshot',
+  // ── Week 4: New categories for upcoming tool pages ────────────────────────
+  EMAIL = 'Email',
+  MEETING = 'Meeting',
 }
 
 export interface Tool {

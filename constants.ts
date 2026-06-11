@@ -931,6 +931,76 @@ export const TOOLS: Tool[] = [
     ],
   },
 
+  // ── Week 4: Windsurf — CODING category (by Codeium) ──────────────────────
+  // No public affiliate programme yet — monitor windsurf.com/affiliates
+  // CODING
+  {
+    slug: 'windsurf', id: 'c4',
+    name: 'Windsurf', tagline: 'The AI code editor with the most generous free tier — built by Codeium',
+    description: 'Windsurf is an AI-native code editor built by Codeium — the company behind one of the most widely used free AI code completion tools. As a VS Code fork, Windsurf brings Codeium\'s proven autocomplete engine together with Cascade: an agentic coding mode that plans and executes multi-step coding tasks with checkpoint-based confirmation. At $15/month Pro vs Cursor\'s $20/month, it is the lower-cost path to a full AI code editor experience.',
+    category: Category.CODING, affiliateLink: 'https://windsurf.com', // No public affiliate programme yet — monitor windsurf.com/affiliates
+    iconName: 'Wind', color: '#10b981', accentColor: '#059669',
+    userBadge: 'Best free AI editor', pricing: 'Free + $15/month Pro', bestFor: 'Developers who want a powerful free AI editor or a cheaper Cursor alternative',
+    notForYou: 'Developers who regularly work across large multi-file codebases requiring full-repository AI queries and complex multi-file agent tasks — Cursor\'s @Codebase and Composer are ahead here. Also skip if you need flexible model switching between GPT-4, Claude, and Gemini on a per-task basis — Windsurf is more opinionated about model selection.',
+    lastTestedISO: '2026-06-11',
+    researchSources: {
+      g2: { rating: 4.5, count: 78 },
+      reddit: 'Positive — r/windsurf, r/cursor, r/webdev, r/programming',
+      lastVerified: '2026-06-11',
+    },
+    indiaPricing: {
+      free: 'Free (generous completions, no hard monthly cap)',
+      paid: '~₹1,250/month Pro',
+      note: 'International credit card required for Pro. Free plan fully accessible with no payment — Codeium\'s free-first model makes the free tier genuinely functional for daily use.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Free plan (generous completions), Pro $15/month, Teams $35/month per user. No public affiliate programme at time of entry.' },
+    ],
+    features: [
+      'Cascade agentic coding mode',
+      'Codeium-powered autocomplete (free, no hard cap)',
+      'VS Code extension compatibility',
+      'AI chat with full project context',
+      'Checkpoint-based task execution',
+    ],
+    pros: [
+      'Most generous free plan of any major AI code editor — Codeium\'s free-first DNA means free usage is genuinely functional, not token-starved',
+      '$15/month Pro is 25% cheaper than Cursor Pro ($20/month) — saves $60/year per developer',
+      'Cascade agentic mode uses confirmation checkpoints before executing changes — safer than fully autonomous agents for cautious users',
+      'Autocomplete performance on individual file and block-level completion is consistently rated at or above Cursor\'s level by developers in r/cursor and r/webdev',
+      'Cleaner interface — less feature overwhelm than Cursor for developers switching from standard VS Code',
+    ],
+    cons: [
+      'Weaker than Cursor for full-codebase queries and complex multi-file refactoring — @Codebase and Composer are Cursor\'s clearest advantages',
+      'Less flexible model selection — Cursor allows switching between GPT-4, Claude, and Gemini per task; Windsurf is more opinionated',
+      'Smaller community than Cursor — fewer community tutorials, plugins, and workflow guides',
+      'No public affiliate programme — zero direct referral income currently',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Unlimited code completions · Cascade (limited) · AI chat · All VS Code extensions · No card required' },
+      { tier: 'Pro', price: '$15/month', highlight: 'Full Cascade access · Advanced models · Priority completions · Extended AI chat credits' },
+      { tier: 'Teams', price: '$35/month per user', highlight: 'Everything in Pro · Centralised billing · Admin dashboard · Usage analytics · Priority support' },
+    ],
+    setupSteps: [
+      'Download Windsurf from windsurf.com — macOS, Windows, and Linux installers available. On first launch, it detects your existing VS Code setup and migrates settings, keybindings, and extensions automatically.',
+      'Autocomplete activates immediately on any project — no API key or payment needed on the free plan. Press Tab to accept suggestions. Codeium\'s completion engine runs from the first keystroke.',
+      'Open the Cascade panel (Cmd/Ctrl + L) to use the agentic mode. Describe a task in plain English — "refactor the auth module to use async/await and add error handling". Cascade plans the steps, shows a diff, and waits for your confirmation before applying any change.',
+      'Use the AI Chat panel for ongoing questions about your codebase. Ask about specific functions, architecture decisions, or debugging — Windsurf understands the full context of your open project files.',
+    ],
+    realOutputExample: {
+      output: 'Cascade task: refactor auth service to async/await, add error boundary, update unit tests. Windsurf proposed 4 file changes with line-by-line diffs. Executed on approval. All tests passed.',
+      editorialNote: 'Cascade\'s checkpoint model is the key differentiator vs Cursor\'s Composer. Cascade shows what it\'s about to do and waits — better for developers who want human-in-the-loop control over AI changes. For large multi-file refactors across 10+ files, Cursor\'s Composer with @Codebase is faster because it has deeper repository indexing. Windsurf is the right pick for focused, controlled refactors on individual modules.',
+    },
+    dailyUseCases: [
+      'Autocomplete for rapid coding — Tab completions on individual files are fast and accurate, especially for boilerplate, repetitive patterns, and typed interfaces.',
+      'Cascade for isolated refactors — describe the change, review the proposed diff, approve. No risk of the AI changing files you didn\'t intend.',
+      'Codebase orientation on a new project — ask "where is the authentication logic?" and Windsurf surfaces the relevant files without a manual search.',
+      'Budget-first developer setups — free plan covers daily coding needs; Pro at ₹1,250/month is the most affordable path to a full AI IDE.',
+      'Switching from VS Code with minimal friction — all existing extensions, themes, and keybindings carry over on first launch.',
+    ],
+  },
+
   // HEADSHOT
   {
     id: 'h1', slug: 'headshotpro',
