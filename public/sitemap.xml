@@ -140,9 +140,6 @@
   <url><loc>https://ainexustools.online/best-ai-coding-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
   <url><loc>https://ainexustools.online/best-ai-productivity-tools/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-10</lastmod></url>
 
-  <!-- Glossary -->
-  <url><loc>https://ainexustools.online/glossary/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-05-10</lastmod></url>
-
   <!-- Blog list -->
   <url><loc>https://ainexustools.online/blog/</loc><changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-05-04</lastmod>
     <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>AI Nexus Blog — AI Tool Reviews and Guides</image:title></image:image>
@@ -285,4 +282,48 @@
   <!-- Week 2: Headshot category launch -->
   <url><loc>https://ainexustools.online/blog/best-ai-headshot-tools-linkedin-2026/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://ainexustools.online/tool/headshotpro/</loc><changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-05-28</lastmod></url>
+
+  <!-- Week 2: cursor-ai-review-2026 — 8K–12K/mo, KD 18 — was missing from sitemap -->
+  <url><loc>https://ainexustools.online/blog/cursor-ai-review-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-05-25</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-tool-review.webp</image:loc><image:title>Cursor AI Review 2026: Is It the Best AI Code Editor?</image:title></image:image>
+  </url>
+
+  <!-- Week 3: New tool pages added to constants.ts — cursor, lovable, getresponse, munch, basedlabs, narrato, fireflies -->
+  <url><loc>https://ainexustools.online/tools/cursor/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-06-03</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/cursor.png</image:loc><image:title>Cursor AI Code Editor Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/lovable/</loc><changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-06-03</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/lovable.png</image:loc><image:title>Lovable AI App Builder Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/getresponse/</loc><changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-06-07</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/getresponse.png</image:loc><image:title>GetResponse AI Email Marketing Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/munch/</loc><changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-06-07</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/munch.png</image:loc><image:title>Munch AI Video Repurposing Tool Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/basedlabs/</loc><changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-06-07</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/basedlabs.png</image:loc><image:title>BasedLabs AI Image &amp; Video Generator Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/narrato/</loc><changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-06-07</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/narrato.png</image:loc><image:title>Narrato AI Content Workspace Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/fireflies/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-06-09</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/fireflies.png</image:loc><image:title>Fireflies.ai AI Meeting Recorder Logo</image:title></image:image>
+  </url>
+
+  <!-- Week 3: Blog posts previously missing from sitemap -->
+  <url><loc>https://ainexustools.online/blog/best-ai-email-marketing-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-06-07</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-blog-marketing.webp</image:loc><image:title>Best AI Email Marketing Tools 2026 — Ranked</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/blog/best-ai-tools-for-youtube-creators-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-06-07</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-image.png</image:loc><image:title>Best AI Tools for YouTube Creators 2026 — Expert Picks</image:title></image:image>
+  </url>
+
+  <!-- Week 3: Compare page previously missing from sitemap -->
+  <url><loc>https://ainexustools.online/compare/lovable-vs-bolt-vs-v0/</loc><changefreq>monthly</changefreq><priority>0.95</priority><lastmod>2026-06-05</lastmod></url>
+
+  <!-- Week 4: New blog post — best-ai-meeting-tools-2026 — 2K–4K/mo, KD low -->
+  <url><loc>https://ainexustools.online/blog/best-ai-meeting-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-06-09</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-blog-marketing.webp</image:loc><image:title>Best AI Meeting Tools 2026 — Ranked &amp; Compared</image:title></image:image>
+  </url>
 </urlset>
