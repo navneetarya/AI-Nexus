@@ -160,11 +160,16 @@ jobs:
           # 3b. Sitemap URL count — catches silent drops (missing posts/tools/etc.)
           LOC_COUNT=$(grep -c "<loc>" dist/sitemap.xml)
           echo "ℹ️  sitemap.xml contains $LOC_COUNT <loc> entries"
-          if [ "$LOC_COUNT" -ne 128 ]; then
-            echo "❌ Expected 128 URLs in sitemap.xml, found $LOC_COUNT"
+          EXPECTED_LOC_COUNT=125
+          if [ "$LOC_COUNT" -ne "$EXPECTED_LOC_COUNT" ]; then
+            echo "❌ Expected $EXPECTED_LOC_COUNT URLs in sitemap.xml, found $LOC_COUNT"
+            echo "   Breakdown should be: 1 homepage + 7 static + 1 glossary + 3 special landing (free/india/logos)"
+            echo "   + 5 category pages (no canonical override) + 1 blog index + 50 blog posts"
+            echo "   + 1 compare index + 23 compare articles + 33 tool pages = 125"
+            echo "   Note: 3 category pages (writing/coding/marketing) have canonical overrides to blog posts"
             exit 1
           fi
-          echo "✅ Sitemap URL count OK: 128"
+          echo "✅ Sitemap URL count OK: $EXPECTED_LOC_COUNT"
 
           # 4. Check homepage FAQPage schema
           if ! grep -q "FAQPage" dist/index.html; then
