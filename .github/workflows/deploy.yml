@@ -58,7 +58,7 @@ jobs:
             fi
           done
 
-          for slug in best-ai-writing-tools-for-beginners-2026 best-ai-tools-for-freelancers-2026 best-grammarly-alternatives best-podcastle-alternatives best-ai-tools-for-social-media-2026 how-to-use-rytr-to-write-blog-posts ai-tools-for-students-free-2026 best-ai-podcast-tools-2026 jasper-ai-alternatives chatgpt-alternatives-free-2026 best-ai-coding-tools-2026 best-ai-logo-makers-free-2026 best-ai-marketing-tools-2026 ai-tools-for-teachers-2026 best-midjourney-alternatives-2026 best-notion-ai-alternatives-2026 best-invideo-alternatives-2026 how-to-use-ai-for-content-creation-2026 best-ai-tools-in-india-2026 grok-4-vs-chatgpt-vs-claude-content-creators-2026; do
+          for slug in ai-api-pricing-comparison-2026 ai-ecosystem-growth-report-2026 ai-tools-for-students-free-2026 ai-tools-for-teachers-2026 best-ai-chatbot-2026 best-ai-coding-tools-2026 best-ai-email-marketing-tools-2026 best-ai-headshot-tools-linkedin-2026 best-ai-logo-makers-free-2026 best-ai-marketing-tools-2026 best-ai-meeting-tools-2026 best-ai-podcast-tools-2026 best-ai-tools-for-automation-engineers-2026 best-ai-tools-for-content-creators-free-2026 best-ai-tools-for-developers-2026 best-ai-tools-for-freelancers-2026 best-ai-tools-for-freelancers-india-2026 best-ai-tools-for-social-media-2026 best-ai-tools-for-startups-2026 best-ai-tools-for-youtube-creators-2026 best-ai-tools-for-youtubers-2026 best-ai-tools-in-india-2026 best-ai-writing-tools-2026 best-ai-writing-tools-for-beginners-2026 best-free-ai-tool-plans-2026 best-free-ai-tools-for-students-in-india-2026 best-free-ai-writing-tools-2026 best-grammarly-alternatives best-invideo-alternatives-2026 best-midjourney-alternatives-2026 best-notion-ai-alternatives-2026 best-podcastle-alternatives best-vibe-coding-tools-2026 chatgpt-alternatives-free-2026 chatgpt-free-vs-claude-free-vs-gemini-free-2026 cheapest-ai-coding-tools-2026 claude-code-vs-github-copilot-vs-replit-2026 cursor-ai-review-2026 fastest-growing-ai-startups-2026 google-gemini-ai-review-2026 gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026 grok-4-vs-chatgpt-vs-claude-content-creators-2026 how-to-use-ai-for-content-creation-2026 how-to-use-rytr-to-write-blog-posts is-grammarly-premium-worth-it-2026 jasper-ai-alternatives leonardo-vs-midjourney-2026 perplexity-ai-review-2026 perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026 taskade-vs-notion-vs-asana-2026; do
             if [ ! -f "dist/blog/$slug/index.html" ]; then
               echo "❌ Missing: dist/blog/$slug/index.html"
               MISSING=$((MISSING+1))
@@ -111,6 +111,15 @@ jobs:
           fi
           echo "✅ rss.xml generated"
 
+          # 3b. Sitemap URL count — catches silent drops (missing posts/tools/etc.)
+          LOC_COUNT=$(grep -c "<loc>" dist/sitemap.xml)
+          echo "ℹ️  sitemap.xml contains $LOC_COUNT <loc> entries"
+          if [ "$LOC_COUNT" -ne 128 ]; then
+            echo "❌ Expected 128 URLs in sitemap.xml, found $LOC_COUNT"
+            exit 1
+          fi
+          echo "✅ Sitemap URL count OK: 128"
+
           # 4. Check homepage FAQPage schema
           if ! grep -q "FAQPage" dist/index.html; then
             echo "❌ FAQPage schema missing from homepage"
@@ -135,6 +144,66 @@ jobs:
           fi
 
           echo "── Prerender validation passed ✅ ──"
+
+      - name: Validate JSON-LD schema syntax
+        # Catches malformed structured data before it ships — a single
+        # invalid JSON-LD block can get an entire page's rich results
+        # dropped (Review, FAQPage, BreadcrumbList, etc.) without any
+        # HTTP-level error, so this isn't caught by the checks above.
+        run: |
+          echo "── JSON-LD Schema Validation ──"
+          node <<'EOF'
+          const fs = require('fs');
+
+          const files = [
+            'dist/index.html',
+            'dist/about/index.html',
+            'dist/tools/rytr/index.html',
+            'dist/blog/best-ai-writing-tools-2026/index.html',
+            'dist/compare/rytr-vs-writesonic/index.html',
+            'dist/best-ai-writing-tools/index.html',
+          ];
+
+          let failed = false;
+
+          for (const file of files) {
+            if (!fs.existsSync(file)) {
+              console.log(`❌ Missing file: ${file}`);
+              failed = true;
+              continue;
+            }
+
+            const html = fs.readFileSync(file, 'utf-8');
+            const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+
+            if (blocks.length === 0) {
+              console.log(`❌ No JSON-LD schema found in ${file}`);
+              failed = true;
+              continue;
+            }
+
+            let blockErrors = 0;
+            blocks.forEach((block, i) => {
+              try {
+                JSON.parse(block[1].trim());
+              } catch (err) {
+                console.log(`❌ Invalid JSON-LD in ${file} (block ${i + 1}): ${err.message}`);
+                blockErrors++;
+                failed = true;
+              }
+            });
+
+            if (blockErrors === 0) {
+              console.log(`✅ ${file}: ${blocks.length} valid JSON-LD block(s)`);
+            }
+          }
+
+          if (failed) {
+            console.log('❌ JSON-LD schema validation failed');
+            process.exit(1);
+          }
+          console.log('✅ All JSON-LD schema blocks valid');
+          EOF
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
