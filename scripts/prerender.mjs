@@ -120,6 +120,46 @@ function loadBlogContent(slug) {
   return content.trim() || null;
 }
 
+// I-21 Fix: Inline share/newsletter CTA inside the blog post body.
+// The ScrollNewsletterPopup only fires at 65% scroll depth, so readers who
+// don't scroll that far (or who dismiss it) never see a share/email CTA.
+// This inserts a lightweight HTML block right after the </h2> closing tag
+// closest to the post's midpoint (~50% through the article), giving every
+// post a mid-article share/subscribe touchpoint without relying on JS.
+function injectMidArticleCTA(blogContent, post, canonical) {
+  if (!blogContent) return blogContent;
+  const h2CloseRe = /<\/h2>/gi;
+  const endPositions = [];
+  let m;
+  while ((m = h2CloseRe.exec(blogContent)) !== null) {
+    endPositions.push(m.index + m[0].length);
+  }
+  // Skip the first H2 (usually "Quick Summary") — find the closing H2 tag
+  // nearest the article's character midpoint among the remaining headings.
+  if (endPositions.length < 2) return blogContent;
+  const midpoint = blogContent.length / 2;
+  let target = endPositions[1];
+  let bestDiff = Math.abs(target - midpoint);
+  for (let idx = 2; idx < endPositions.length; idx++) {
+    const diff = Math.abs(endPositions[idx] - midpoint);
+    if (diff < bestDiff) { bestDiff = diff; target = endPositions[idx]; }
+  }
+  const shareUrl = encodeURIComponent(canonical);
+  const shareText = encodeURIComponent(post.seoTitle || post.title);
+  const cta = `
+<div style="margin:28px 0;padding:20px 22px;background:rgba(13,148,136,.06);border:1.5px solid rgba(13,148,136,.25);border-radius:12px;text-align:center">
+  <p style="margin:0 0 6px;font-size:1rem;font-weight:700;color:#111">Found this useful?</p>
+  <p style="margin:0 0 14px;font-size:.9rem;color:#555;line-height:1.5">Share it with someone deciding between AI tools, or get new comparisons like this in your inbox.</p>
+  <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap">
+    <a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}" target="_blank" rel="noopener" style="padding:9px 16px;border-radius:8px;background:#0D9488;color:#fff;font-size:.85rem;font-weight:600;text-decoration:none">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}" target="_blank" rel="noopener" style="padding:9px 16px;border-radius:8px;background:#0D9488;color:#fff;font-size:.85rem;font-weight:600;text-decoration:none">Share on LinkedIn</a>
+    <a href="${SITE}/#newsletter" style="padding:9px 16px;border-radius:8px;border:1.5px solid #0D9488;color:#0D9488;font-size:.85rem;font-weight:600;text-decoration:none">Get weekly AI tool reviews</a>
+  </div>
+</div>
+`;
+  return blogContent.slice(0, target) + cta + blogContent.slice(target);
+}
+
 // ── Tool data (mirrors constants.ts) ─────────────────────────────────────────
 // Slug order matches constants.ts — do not reorder without updating that file.
 const TOOLS = [
@@ -2507,7 +2547,14 @@ console.log('\nStatic pages:');
         '@type': 'Person',
         name: AUTHOR,
         url: canonical,
-        image: `${SITE}/author-photo.jpg`,
+        // I-18 Fix: ImageObject with caption acts as schema.org's alt-text
+        // equivalent — gives image search engines keyword-rich context for
+        // the author's photo (Person entity image search).
+        image: {
+          '@type': 'ImageObject',
+          url: `${SITE}/author-photo.jpg`,
+          caption: 'Navneet Arya — Independent AI Workflow & Automation Researcher',
+        },
         sameAs: AUTHOR_SAME_AS,
         knowsAbout: ['Artificial Intelligence', 'AI Writing Tools', 'Podcast Software', 'Social Media Automation', 'AI Productivity Tools'],
         worksFor: { '@type': 'Organization', name: 'AI Nexus', url: SITE },
@@ -2704,7 +2751,9 @@ for (const post of BLOG_POSTS) {
   const readTime = post.readTimeMinutes ? `<span style="margin-left:12px">&#128338; ${post.readTimeMinutes} min read</span>` : '';
 
   // C1 Fix: Inject full blog post content from .ts source file instead of just metaDescription
-  const blogContent = loadBlogContent(post.slug);
+  let blogContent = loadBlogContent(post.slug);
+  // I-21 Fix: insert inline share/newsletter CTA at ~50% of post body
+  blogContent = injectMidArticleCTA(blogContent, post, canonical);
   // C6 Fix: Render FAQ answers as visible HTML (not just in JSON-LD schema)
   const faqHtml = post.faqs?.length
     ? `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:16px">Frequently Asked Questions</h2>` +
