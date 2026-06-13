@@ -10,7 +10,7 @@ const post: BlogPost = {
   slug: 'ai-tools-for-students-free-2026',
   title: 'Best Free AI Tools for Students 2026 — Essays, Research, Coding & Presentations',
   seoTitle: 'Best Free AI Tools for Students 2026',
-  metaDescription: '5 AI tools every student should bookmark — all permanently free, no credit card needed. Compared across essays, research, paraphrasing, coding, and presentations.',
+  metaDescription: '5 AI tools every student should bookmark in 2026 — all permanently free, no credit card needed. Compared for essays, research, coding, and slides.',
   datePublished: '2026-04-30',
   dateModified: '2026-04-30',
   author: 'Navneet Arya',

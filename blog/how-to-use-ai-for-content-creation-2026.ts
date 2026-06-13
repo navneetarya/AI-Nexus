@@ -11,7 +11,7 @@ const post: BlogPost = {
   slug: 'how-to-use-ai-for-content-creation-2026',
   title: 'How to Use AI for Content Creation in 2026 — Full Workflow (Writing, Images, Video & Audio)',
   seoTitle: 'How to Use AI for Content Creation 2026',
-  metaDescription: 'Write an article, generate a feature image, repurpose it as a video, and create a podcast episode — all in one afternoon. The actual AI content creation workflow for solo creators in 2026.',
+  metaDescription: 'Write an article, generate an image, repurpose it as a video, and create a podcast — all in one afternoon. See the AI content workflow for 2026.',
   datePublished: '2026-05-05',
   dateModified: '2026-05-05',
   author: 'Navneet Arya',

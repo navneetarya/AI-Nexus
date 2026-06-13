@@ -8,7 +8,7 @@ const post: BlogPost = {
   slug: 'best-grammarly-alternatives',
   title: 'Best Grammarly Alternatives in 2026 — Tested & Ranked',
   seoTitle: 'Best Grammarly Alternatives 2026 — Tested',
-  metaDescription: 'Researched 8 Grammarly alternatives so you don\'t waste $12/month. QuillBot wins for students, Rytr for content creators — and 2 genuinely free options are included.',
+  metaDescription: 'We researched 8 Grammarly alternatives so you do not waste $12/month. QuillBot wins for students, Rytr for content creators — plus 2 free picks.',
   datePublished: '2026-04-27',
   dateModified: '2026-04-27',
   author: 'Navneet Arya',

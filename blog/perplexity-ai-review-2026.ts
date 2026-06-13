@@ -12,7 +12,7 @@ const post: BlogPost = {
   slug: 'perplexity-ai-review-2026',
   title: 'Perplexity AI Review 2026: Is It Worth It vs Google Search?',
   seoTitle: 'Perplexity AI Review 2026: Worth It vs Google Search?',
-  metaDescription: 'Perplexity AI reviewed for 2026 — tested against Google Search on research, fact-finding, and everyday queries. Is it worth $20/month? Honest verdict with no affiliate bias.',
+  metaDescription: 'Perplexity AI reviewed for 2026 — tested against Google Search on research and everyday queries. Is it worth $20/month? See the honest verdict.',
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
   author: 'Navneet Arya',

@@ -12,7 +12,7 @@ const post: BlogPost = {
   slug: 'google-gemini-ai-review-2026',
   title: 'Google Gemini AI Review 2026: Is It Better Than ChatGPT for Writing?',
   seoTitle: 'Google Gemini AI Review 2026: Better Than ChatGPT for Writing?',
-  metaDescription: 'Google Gemini 3.1 Pro reviewed for writing in 2026. Compared against ChatGPT on blog posts, email copy, and Google Docs integration. Honest verdict — no affiliate bias.',
+  metaDescription: 'Google Gemini 3.1 Pro reviewed for writing in 2026 — compared against ChatGPT on blog posts, email copy, and Docs integration. See the verdict.',
   datePublished: '2026-05-13',
   dateModified: '2026-05-13',
   author: 'Navneet Arya',

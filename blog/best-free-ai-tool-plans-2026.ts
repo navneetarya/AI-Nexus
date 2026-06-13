@@ -4,7 +4,7 @@ const post: BlogPost = {
   slug: 'best-free-ai-tool-plans-2026',
   title: 'Best Free AI Tool Plans in 2026 — What You Actually Get for Nothing',
   seoTitle: 'Best Free AI Tool Plans 2026 — Honest Breakdown',
-  metaDescription: 'The most generous free AI tool plans in 2026: which tools give real value for free, which free plans are actually useful, and where the limits are. Independent analysis.',
+  metaDescription: 'The most generous free AI tool plans for 2026 — which tools give real value for free, and where the limits are. See our independent analysis.',
   datePublished: '2026-05-24',
   dateModified: '2026-05-24',
   author: 'Navneet Arya',

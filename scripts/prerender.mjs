@@ -943,7 +943,6 @@ const BLOG_OG_MAP = {
   // but updating map entries for consistency and future-proofing
   'best-free-ai-writing-tools-2026':                    `${SITE}/og/blog/best-free-ai-writing-tools-2026.webp`,
   'is-grammarly-premium-worth-it-2026':                 `${SITE}/og/blog/is-grammarly-premium-worth-it-2026.webp`,
-  'best-ai-tools-for-freelancers-2026':                 `${SITE}/og/blog/best-ai-tools-for-freelancers-2026.webp`,
   // Week 3: new blog posts
   // I-02 Fix: og-blog-marketing.webp does not exist — replaced with existing og-blog-writing.webp
   'best-ai-email-marketing-tools-2026':              `${SITE}/og-blog-writing.webp`,
@@ -951,6 +950,13 @@ const BLOG_OG_MAP = {
   // This post now uses the canonical URL of the older post, so sharing the same
   // root-level video OG is correct — both posts represent the same topic cluster.
   'best-ai-tools-for-youtube-creators-2026':         `${SITE}/og-blog-video.webp`,
+  // I-02 Fix (this session): post.ogImage previously pointed to /og/blog/<slug>.webp files
+  // that do not exist on disk — map entries below mirror the corrected post.ogImage values
+  // so BLOG_OG_MAP stays consistent and future lookups (sitemap, etc.) resolve correctly.
+  'gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026':        `${SITE}/og-compare.webp`,
+  'best-vibe-coding-tools-2026':                      `${SITE}/og-compare.webp`,
+  'best-ai-headshot-tools-linkedin-2026':             `${SITE}/og-tool-review.webp`,
+  'best-ai-meeting-tools-2026':                       `${SITE}/og-tool-review.webp`,
 };
 
 function resolveOgImage(slug) {
@@ -2122,7 +2128,9 @@ const BLOG_POSTS = [
     datePublished: '2026-06-05',
     dateModified: '2026-06-05',
     readTimeMinutes: 10,
-    ogImage: 'https://ainexustools.online/og/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026.webp',
+    // I-02 Fix: /og/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026.webp does not exist on disk —
+    // using og-compare.webp (this is a 3-way AI model comparison post)
+    ogImage: 'https://ainexustools.online/og-compare.webp',
     faqs: [
       { q: 'Which is better — GPT-5.5, Claude Opus 4.8, or Grok 4?', a: 'It depends on your use case. GPT-5.5 is the most versatile all-rounder — best for mixed creative, coding, and research tasks. Claude Opus 4.8 is the top choice for long-document analysis, detailed reasoning, and nuanced writing. Grok 4 leads on real-time web search and X/Twitter-integrated research tasks. For most individual users, Claude Opus 4.8 or GPT-5.5 delivers the best cost-to-output ratio.' },
       { q: 'Is Grok 4 better than ChatGPT?', a: 'Grok 4 outperforms ChatGPT on tasks requiring real-time information — it has native X/Twitter access and live web search built in. For static reasoning, coding, and long-form writing, GPT-5.5 (ChatGPT) is generally more capable. Grok 4 is the better tool for journalists, social media researchers, and anyone whose work requires current events knowledge.' },
@@ -2141,7 +2149,9 @@ const BLOG_POSTS = [
     datePublished: '2026-06-05',
     dateModified: '2026-06-05',
     readTimeMinutes: 9,
-    ogImage: 'https://ainexustools.online/og/blog/best-vibe-coding-tools-2026.webp',
+    // I-02 Fix: /og/blog/best-vibe-coding-tools-2026.webp does not exist on disk —
+    // using og-compare.webp (this is a Lovable vs Bolt vs v0 comparison post)
+    ogImage: 'https://ainexustools.online/og-compare.webp',
     faqs: [
       { q: 'What is vibe coding?', a: 'Vibe coding is a development approach where you describe what you want to build in plain English and an AI generates, deploys, and iterates on the code for you — without you writing any code manually. The term was coined by Andrej Karpathy in February 2025. By mid-2026, tools like Lovable, Bolt, and v0 have made it possible to ship a working full-stack web app in under an hour from a text description alone.' },
       { q: 'Which vibe coding tool is best for beginners with no coding experience?', a: 'Lovable is the best vibe coding tool for complete beginners. It handles both frontend (React) and backend (Supabase database + authentication) automatically, deploys to a live URL without any configuration, and the 5 free messages/day on the free plan is enough to build a real app. Bolt is a close second for beginners but requires more technical prompting for backend features.' },
@@ -2161,7 +2171,9 @@ const BLOG_POSTS = [
     datePublished: '2026-05-28',
     dateModified: '2026-05-28',
     readTimeMinutes: 9,
-    ogImage: 'https://ainexustools.online/og/blog/best-ai-headshot-tools-linkedin-2026.webp',
+    // I-02 Fix: /og/blog/best-ai-headshot-tools-linkedin-2026.webp does not exist on disk —
+    // using og-tool-review.webp (matches CATEGORY_OG_MAP fallback for Image-category posts)
+    ogImage: 'https://ainexustools.online/og-tool-review.webp',
     faqs: [
       { q: 'What is the best AI headshot tool for LinkedIn in 2026?', a: 'HeadshotPro is the best AI headshot tool for LinkedIn in 2026. It delivers 120+ professional headshots from 10–20 selfies in under 2 hours, priced from $29 one-time — no subscription required. With a 4.8/5 Trustpilot score from over 2,000 reviews, it consistently produces headshots that pass as studio photography at the sizes LinkedIn and most job platforms use.' },
       { q: 'How much do AI professional headshots cost?', a: 'AI headshot tools typically charge a one-time fee ranging from $14.99 (Try It On AI) to $59 (HeadshotPro Premium). Most tools deliver 40–120 headshots per session across multiple backgrounds and styles. This compares favourably to a professional photographer, who typically charges $150–$500 per session for a single style.' },
@@ -2206,7 +2218,9 @@ const BLOG_POSTS = [
     datePublished: '2026-06-07',
     dateModified: '2026-06-07',
     readTimeMinutes: 10,
-    ogImage: 'https://ainexustools.online/og-blog-marketing.webp',
+    // I-02 Fix: og-blog-marketing.webp does not exist on disk — using og-blog-writing.webp
+    // (matches CATEGORY_OG_MAP fallback for Marketing-category posts)
+    ogImage: 'https://ainexustools.online/og-blog-writing.webp',
     faqs: [
       { q: 'What is the best AI email marketing tool in 2026?', a: 'GetResponse is the best AI email marketing tool in 2026 for most businesses. It combines an AI email generator, AI subject line optimizer, visual automation builder, AI landing page builder, and webinar hosting in a single platform — starting from $13.30/month for 1,000 contacts. Its 40–60% recurring affiliate program also makes it popular among email marketing educators. For zero-budget users, Brevo\'s free plan (300 emails/day, unlimited contacts) is the strongest free option available.' },
       { q: 'Which AI email marketing tool has the best free plan?', a: 'Brevo (formerly Sendinblue) has the best free plan among AI email marketing tools in 2026. It allows unlimited contacts with up to 300 emails per day (9,000/month) — far more generous than Mailchimp\'s free tier (500 contacts, 1,000 emails/month). Kit (ConvertKit) offers a free plan for up to 10,000 subscribers but limits automation and removes the ability to send broadcast emails to your full list.' },
@@ -2247,7 +2261,9 @@ const BLOG_POSTS = [
     datePublished: '2026-06-09',
     dateModified: '2026-06-09',
     readTimeMinutes: 9,
-    ogImage: 'https://ainexustools.online/og-blog-marketing.webp',
+    // I-02 Fix: og-blog-marketing.webp does not exist on disk — using og-tool-review.webp
+    // (matches CATEGORY_OG_MAP fallback for Productivity-category posts)
+    ogImage: 'https://ainexustools.online/og-tool-review.webp',
     faqs: [
       { q: 'What is the best AI meeting tool in 2026?', a: 'Fireflies.ai is the best AI meeting tool in 2026 for most teams. It automatically joins Zoom, Google Meet, and Microsoft Teams calls, produces searchable transcripts within minutes, extracts named action items, and syncs summaries directly to HubSpot or Salesforce. The free plan supports 800 minutes of meeting storage and 3 AI summaries per month — enough to trial the platform before committing to the Pro plan at $10/month per seat. For individuals who need unlimited free recordings without a credit card, Fathom\'s completely free unlimited tier is the standout alternative.' },
       { q: 'Is Fireflies.ai worth it for remote teams?', a: 'Yes — Fireflies.ai is worth it for remote teams that hold more than 3–4 meetings per week. The core value is twofold: first, every meeting becomes a searchable knowledge record — find any decision, commitment, or discussion topic across months of meetings by searching a keyword. Second, the AI action item extraction pulls named tasks ("Alex will send the proposal by Friday") from transcripts automatically, reducing post-meeting follow-up time by 30–60 minutes per week per team. At $10/month per seat on the Pro plan, the ROI is positive for any professional billing more than $50/hour whose time would otherwise be spent on meeting notes.' },

@@ -10,7 +10,7 @@ const post: BlogPost = {
   slug: 'leonardo-vs-midjourney-2026',
   title: 'Leonardo.ai vs Midjourney 2026 — Free Plan Comparison (Which Is Worth It?)',
   seoTitle: 'Leonardo AI vs Midjourney 2026 — Free Plan Compared',
-  metaDescription: 'Leonardo.ai vs Midjourney compared for 2026 — free plan, image quality, pricing, and commercial rights. Which AI image generator is worth it for creators who can\'t afford to guess?',
+  metaDescription: 'Leonardo.ai vs Midjourney compared for 2026 — free plans, image quality, pricing, and commercial usage rights. See which AI image generator wins.',
   datePublished: '2026-05-12',
   dateModified: '2026-05-12',
   author: 'Navneet Arya',

@@ -8,7 +8,7 @@ const post: BlogPost = {
   slug: 'best-ai-writing-tools-for-beginners-2026',
   title: 'Best AI Writing Tools for Beginners 2026 — Tested & Ranked',
   seoTitle: 'Best AI Writing Tools for Beginners 2026',
-  metaDescription: 'New to AI writing tools? Compared Rytr, Grammarly, QuillBot, and Writesonic for complete beginners — here\'s the exact order to try them and what each one is actually for.',
+  metaDescription: 'New to AI writing tools? Rytr, Grammarly, QuillBot, and Writesonic compared for beginners — the exact order to try them and what each is for.',
   datePublished: '2026-04-29',
   dateModified: '2026-04-29',
   author: 'Navneet Arya',

@@ -9,7 +9,7 @@ const post: BlogPost = {
   slug: 'is-grammarly-premium-worth-it-2026',
   title: 'Is Grammarly Premium Worth It in 2026? — Honest Answer After 400+ Reviews',
   seoTitle: 'Is Grammarly Premium Worth It 2026? — Honest Verdict',
-  metaDescription: 'Is Grammarly Premium worth $12/month in 2026? After analysing 400+ verified reviews and comparing it to 5 alternatives — here is the honest answer with a clear verdict.',
+  metaDescription: 'Is Grammarly Premium worth $12/month in 2026? We analysed 400+ reviews and compared it to 5 alternatives. See the honest verdict and answer.',
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
   author: 'Navneet Arya',

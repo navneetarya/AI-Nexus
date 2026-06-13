@@ -10,7 +10,7 @@ const post: BlogPost = {
   slug: 'best-free-ai-writing-tools-2026',
   title: 'Best Free AI Writing Tools 2026 — 5 Tools With No Credit Card Required',
   seoTitle: 'Best Free AI Writing Tools 2026 — No Credit Card Required',
-  metaDescription: 'The best free AI writing tools in 2026 — 5 tools with permanent free plans. No credit card required. Grammarly, Rytr, QuillBot, Writesonic, and one wildcard compared honestly.',
+  metaDescription: 'The best free AI writing tools for 2026 — 5 tools with permanent free plans, no credit card needed. Grammarly, Rytr, QuillBot, and more compared.',
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
   author: 'Navneet Arya',

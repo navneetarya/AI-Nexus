@@ -8,7 +8,7 @@ const post: BlogPost = {
   slug: 'best-podcastle-alternatives',
   title: 'Best Podcastle Alternatives in 2026 — For Podcasters Who Need More',
   seoTitle: 'Best Podcastle Alternatives 2026',
-  metaDescription: 'Looking for a Podcastle alternative? Descript, Riverside.fm, and Adobe Podcast compared for recording, editing, and publishing podcasts in 2026 — honest verdict on which fits which workflow.',
+  metaDescription: 'Looking for a Podcastle alternative? Descript, Riverside.fm, and Adobe Podcast compared for recording and editing podcasts in 2026. See our picks.',
   datePublished: '2026-04-28',
   dateModified: '2026-04-28',
   author: 'Navneet Arya',

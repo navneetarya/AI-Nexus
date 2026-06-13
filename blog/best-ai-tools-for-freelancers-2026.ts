@@ -8,7 +8,7 @@ const post: BlogPost = {
   slug: 'best-ai-tools-for-freelancers-2026',
   title: 'Best AI Tools for Freelancers 2026 — Work Faster, Earn More',
   seoTitle: 'Best AI Tools for Freelancers 2026',
-  metaDescription: 'Spending too much time on writing, design, and admin? The 7 AI tools that actually cut freelancer workload in 2026 — picked by use case, not by affiliate budget.',
+  metaDescription: 'Spending too much time on writing, design, and admin? See the 7 AI tools that actually cut freelancer workload in 2026 — picked by use case.',
   datePublished: '2026-04-28',
   dateModified: '2026-04-28',
   author: 'Navneet Arya',
