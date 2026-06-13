@@ -884,7 +884,7 @@ export const TOOLS: Tool[] = [
     slug: 'lovable', id: 'c3',
     name: 'Lovable', tagline: 'Build full-stack apps from prompts — no code required',
     description: 'Lovable is an AI vibe-coding platform that turns natural language prompts into full-stack web applications. Describe what you want to build, and Lovable generates React + Supabase apps that are instantly deployed and production-ready — without writing a single line of code.',
-    category: Category.CODING, affiliateLink: 'https://lovable.dev/?ref=YOUR_CODE', // 30% recurring — replace YOUR_CODE with actual ref
+    category: Category.CODING, affiliateLink: 'https://lovable.dev', // 30% recurring affiliate available
     iconName: 'Sparkles', color: '#ec4899', accentColor: '#db2777',
     userBadge: 'Vibe coding 🔥', pricing: 'Free + $25/month', bestFor: 'Non-developers, solopreneurs & rapid prototypers',
     notForYou: 'Teams building complex enterprise-grade SaaS with custom infrastructure, legacy backend integrations, advanced state management, or strict code quality standards. Lovable is for rapid prototyping and MVPs — generated code needs developer review for high-traffic or sensitive-data apps.',
