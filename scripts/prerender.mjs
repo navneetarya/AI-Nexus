@@ -2685,15 +2685,17 @@ console.log('\nBlog pages:');
 // ── Week 3: Individual blog post pages (/blog/:slug) ──────────────────────────
 // I-01 Fix: YouTube cannibalization canonical override.
 // Both posts target "best ai tools youtubers 2026" (2K–5K/mo).
-// The newer /youtube-creators post defers canonical to the older /youtubers post,
-// consolidating all ranking signals on one URL. The creators post stays indexed at
-// its own URL for direct traffic; it just doesn't compete with itself in SERPs.
+// DIRECTION CORRECTED (Section 3 audit): the OLDER /youtubers post now defers
+// canonical to the NEWER /youtube-creators post. Reason: the creators post carries
+// 3 affiliate links (Munch AI + ElevenLabs + Opus.pro) vs zero on the older post,
+// making it the higher-value URL to concentrate ranking signals on.
+// All internal links should point to /youtube-creators-2026/ going forward.
 // NOTE: Do NOT add writing-tools overrides back here — those posts have different
 // search intent and audiences. The YouTube pair is a true keyword duplicate.
 // I-04 Fix: AI writing tools cannibalization — 3-post cluster.
 // best-ai-writing-tools-2026 is the pillar. Both satellite posts defer canonical.
 const BLOG_CANONICAL_OVERRIDES = {
-  'best-ai-tools-for-youtube-creators-2026':   `${SITE}/blog/best-ai-tools-for-youtubers-2026/`,
+  'best-ai-tools-for-youtubers-2026':          `${SITE}/blog/best-ai-tools-for-youtube-creators-2026/`,
   'best-ai-writing-tools-for-beginners-2026':  `${SITE}/blog/best-ai-writing-tools-2026/`,
   'best-free-ai-writing-tools-2026':           `${SITE}/blog/best-ai-writing-tools-2026/`,
 };
