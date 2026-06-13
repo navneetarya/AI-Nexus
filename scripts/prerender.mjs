@@ -2453,9 +2453,12 @@ for (const art of COMPARE_ARTICLES) {
     // Issue 21 Fix (AEO): Product+ItemList schema for comparison rich results
     ...(productListSchema ? [productListSchema] : []),
   ];
-  if (art.faqs && art.faqs.length > 0) {
+  
+if (art.faqs && art.faqs.length > 0) {
     schemas.push(faqSchema(art.faqs));
   }
+  // I-09 Fix: Speakable schema for compare pages (was missing; tool pages ✓, blog posts ✓)
+  schemas.push(speakableSchema(canonical, ['h1', '[data-speakable="verdict"]', 'h2:first-of-type']));
 
   // H7 (SEO-High): use seoTitle (≤60 chars) for <title> tag if defined
   writeRoute(
@@ -2640,8 +2643,12 @@ console.log('\nBlog pages:');
 // its own URL for direct traffic; it just doesn't compete with itself in SERPs.
 // NOTE: Do NOT add writing-tools overrides back here — those posts have different
 // search intent and audiences. The YouTube pair is a true keyword duplicate.
+// I-04 Fix: AI writing tools cannibalization — 3-post cluster.
+// best-ai-writing-tools-2026 is the pillar. Both satellite posts defer canonical.
 const BLOG_CANONICAL_OVERRIDES = {
-  'best-ai-tools-for-youtube-creators-2026': `${SITE}/blog/best-ai-tools-for-youtubers-2026/`,
+  'best-ai-tools-for-youtube-creators-2026':   `${SITE}/blog/best-ai-tools-for-youtubers-2026/`,
+  'best-ai-writing-tools-for-beginners-2026':  `${SITE}/blog/best-ai-writing-tools-2026/`,
+  'best-free-ai-writing-tools-2026':           `${SITE}/blog/best-ai-writing-tools-2026/`,
 };
 
 // India-specific blog slugs — need en-IN hreflang

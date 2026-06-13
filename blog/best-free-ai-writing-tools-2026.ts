@@ -1,4 +1,9 @@
 ﻿// blog/best-free-ai-writing-tools-2026.ts
+// ── I-04 CANONICAL NOTE ──────────────────────────────────────────────────────
+// SATELLITE post — canonical defers to pillar: /blog/best-ai-writing-tools-2026/
+// Handled in: scripts/prerender.mjs → BLOG_CANONICAL_OVERRIDES
+// Post stays live for direct traffic; does not compete in SERPs for head keyword.
+// ─────────────────────────────────────────────────────────────────────────────
 // Target keyword: "best free AI writing tools" — 4,200/mo, KD 22
 // Intent: informational + commercial — users looking for no-cost AI writing tools
 // Angle: "no credit card required" — permanent free plans only, no trial bait-and-switch

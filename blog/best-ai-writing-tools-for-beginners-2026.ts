@@ -1,4 +1,9 @@
 ﻿// blog/best-ai-writing-tools-for-beginners-2026.ts
+// ── I-04 CANONICAL NOTE ──────────────────────────────────────────────────────
+// SATELLITE post — canonical defers to pillar: /blog/best-ai-writing-tools-2026/
+// Handled in: scripts/prerender.mjs → BLOG_CANONICAL_OVERRIDES
+// Post stays live for direct traffic; does not compete in SERPs for head keyword.
+// ─────────────────────────────────────────────────────────────────────────────
 // Target keyword: "best AI writing tools for beginners" — 5,400/mo, Easy difficulty
 // Word count: ~1,450 words
 

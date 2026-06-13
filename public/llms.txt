@@ -90,6 +90,22 @@
 - [Cheapest AI Coding Tools 2026](https://ainexustools.online/blog/cheapest-ai-coding-tools-2026): Lowest cost AI coding tools in 2026 — free tiers, cheapest paid plans, and which tools offer the best value for solo developers.
 - [AI Ecosystem Growth Report 2026](https://ainexustools.online/blog/ai-ecosystem-growth-report-2026): State of the AI tools market in 2026 — adoption trends, pricing changes, and which categories are growing fastest.
 - [Affiliate Disclosure](https://ainexustools.online/disclosure): Full disclosure of affiliate relationships. Navneet earns a commission if you upgrade through links on the site, at no cost to you.
+- [Best AI Writing Tools 2026](https://ainexustools.online/blog/best-ai-writing-tools-2026): 6 best AI writing tools tested — Grammarly, Rytr, QuillBot, Writesonic, Jasper, and Frase ranked by use case, free plan, and pricing.
+- [Best Free AI Writing Tools 2026](https://ainexustools.online/blog/best-free-ai-writing-tools-2026): 5 free AI writing tools with permanent free plans and no credit card required — Grammarly, Rytr, QuillBot, Writesonic, and ChatGPT compared.
+- [Is Grammarly Premium Worth It 2026](https://ainexustools.online/blog/is-grammarly-premium-worth-it-2026): Honest answer after analysing 400+ verified reviews — when $12/month is justified and when the free plan is enough.
+- [How to Use Rytr to Write Blog Posts](https://ainexustools.online/blog/how-to-use-rytr-to-write-blog-posts): Step-by-step tutorial for using Rytr to write blog posts — setup, best templates, and exact workflow for generating publish-ready drafts.
+- [Best AI Tools for Content Creators Free 2026](https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026): 7 AI tools for content creators with permanent free plans — no credit card, no watermarks on key features.
+- [Best AI Tools in India 2026](https://ainexustools.online/blog/best-ai-tools-in-india-2026): Best AI tools available in India with INR pricing, free plan details, and Hindi support — independently researched.
+- [Best AI Tools for Freelancers in India 2026](https://ainexustools.online/blog/best-ai-tools-for-freelancers-india-2026): AI tools for Indian freelancers with INR pricing, free tiers without a credit card, and Fiverr/Upwork India picks.
+- [Best Free AI Tools for Students in India 2026](https://ainexustools.online/blog/best-free-ai-tools-for-students-in-india-2026): Free AI tools for Indian students — works without VPN or dollar card. Covers essays, research, and presentations.
+- [Taskade vs Notion vs Asana 2026](https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026): 3-way comparison for freelancers — Taskade wins for AI automation, Notion for knowledge management, Asana for enterprise projects.
+- [Leonardo.ai vs Midjourney 2026](https://ainexustools.online/blog/leonardo-vs-midjourney-2026): Free plan comparison — Leonardo wins on credits and creative control; Midjourney wins on single-image aesthetic quality.
+- [GPT-5.5 vs Claude Opus 4.8 vs Grok 4 (June 2026)](https://ainexustools.online/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026): Writing, coding, reasoning, and price compared — honest breakdown of which AI model wins in June 2026.
+- [Best Vibe Coding Tools 2026](https://ainexustools.online/blog/best-vibe-coding-tools-2026): Lovable, Bolt, and v0 tested on real app builds — which vibe coding tool goes from prompt to deployed app fastest.
+- [Best AI Headshot Tools for LinkedIn 2026](https://ainexustools.online/blog/best-ai-headshot-tools-linkedin-2026): HeadshotPro, Aragon AI, Remini and more — pricing, output quality, and honest verdict for LinkedIn profile photos.
+- [Cursor AI Review 2026](https://ainexustools.online/blog/cursor-ai-review-2026): Cursor AI reviewed — pricing, free plan, Tab completion, Composer, and Agent mode. Is it worth $20/month over GitHub Copilot?
+- [Best AI Email Marketing Tools 2026](https://ainexustools.online/blog/best-ai-email-marketing-tools-2026): GetResponse, Mailchimp AI, Brevo and ActiveCampaign ranked — automation, free plans, and pricing compared.
+- [Best AI Meeting Tools 2026](https://ainexustools.online/blog/best-ai-meeting-tools-2026): Fireflies.ai, Otter.ai, and Fathom ranked — auto-transcription, action items, summaries, and pricing compared.
 
 ## Comparison Articles
 
@@ -119,3 +135,7 @@ AI Nexus follows strict editorial standards to ensure every review is independen
 - **Freshness**: Tool reviews are checked and updated when pricing, features, or free plan terms change. The review date reflects when pricing and features were last verified.
 - **Transparency**: The reviewer (Navneet Arya) is identified by name on every review page. Research methodology is documented at /methodology/.
 - **Affiliate policy**: AI Nexus earns a commission when readers upgrade through affiliate links, at no cost to the reader. This never changes the editorial verdict.
+
+## Feeds
+
+- [RSS Feed](https://ainexustools.online/rss.xml)
