@@ -11,7 +11,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-tools-for-youtube-creators-2026',
   title: 'Best AI Tools for YouTube Creators 2026 — Expert Picks',
-  seoTitle: 'Best AI Tools for YouTube Creators 2026',
+  seoTitle: 'Best AI Tools for YouTube Creators & Shorts 2026',
   metaDescription: 'Munch AI, ElevenLabs & Opus Clip for YouTube creators 2026. Voice cloning, repurposing intelligence, auto-Shorts — 3 affiliate picks, honest research.',
   datePublished: '2026-05-27',
   dateModified: '2026-05-27',
