@@ -58,7 +58,53 @@ jobs:
             fi
           done
 
-          for slug in ai-api-pricing-comparison-2026 ai-ecosystem-growth-report-2026 ai-tools-for-students-free-2026 ai-tools-for-teachers-2026 best-ai-chatbot-2026 best-ai-coding-tools-2026 best-ai-email-marketing-tools-2026 best-ai-headshot-tools-linkedin-2026 best-ai-logo-makers-free-2026 best-ai-marketing-tools-2026 best-ai-meeting-tools-2026 best-ai-podcast-tools-2026 best-ai-tools-for-automation-engineers-2026 best-ai-tools-for-content-creators-free-2026 best-ai-tools-for-developers-2026 best-ai-tools-for-freelancers-2026 best-ai-tools-for-freelancers-india-2026 best-ai-tools-for-social-media-2026 best-ai-tools-for-startups-2026 best-ai-tools-for-youtube-creators-2026 best-ai-tools-for-youtubers-2026 best-ai-tools-in-india-2026 best-ai-writing-tools-2026 best-ai-writing-tools-for-beginners-2026 best-free-ai-tool-plans-2026 best-free-ai-tools-for-students-in-india-2026 best-free-ai-writing-tools-2026 best-grammarly-alternatives best-invideo-alternatives-2026 best-midjourney-alternatives-2026 best-notion-ai-alternatives-2026 best-podcastle-alternatives best-vibe-coding-tools-2026 chatgpt-alternatives-free-2026 chatgpt-free-vs-claude-free-vs-gemini-free-2026 cheapest-ai-coding-tools-2026 claude-code-vs-github-copilot-vs-replit-2026 cursor-ai-review-2026 fastest-growing-ai-startups-2026 google-gemini-ai-review-2026 gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026 grok-4-vs-chatgpt-vs-claude-content-creators-2026 how-to-use-ai-for-content-creation-2026 how-to-use-rytr-to-write-blog-posts is-grammarly-premium-worth-it-2026 jasper-ai-alternatives leonardo-vs-midjourney-2026 perplexity-ai-review-2026 perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026 taskade-vs-notion-vs-asana-2026; do
+          # 1b. Blog slug list — kept in sync with blog/*.ts via the count
+          # check below.
+          #
+          # PROCESS — when publishing a new blog post:
+          #   1. Add the post's .ts file to blog/ (as usual).
+          #   2. Add its slug to the BLOG_SLUGS array immediately below
+          #      (alphabetical order, matching the filename without .ts).
+          #   3. If the new post adds a new route to sitemap.xml, bump the
+          #      "Sitemap URL count" check further down in this file.
+          # The sync check below will fail the build with a reminder if a
+          # post is added to blog/ without a matching entry here.
+          BLOG_SLUGS=(
+            ai-api-pricing-comparison-2026 ai-ecosystem-growth-report-2026 ai-tools-for-students-free-2026 ai-tools-for-teachers-2026
+            best-ai-chatbot-2026 best-ai-coding-tools-2026 best-ai-email-marketing-tools-2026 best-ai-headshot-tools-linkedin-2026
+            best-ai-logo-makers-free-2026 best-ai-marketing-tools-2026 best-ai-meeting-tools-2026 best-ai-podcast-tools-2026
+            best-ai-tools-for-automation-engineers-2026 best-ai-tools-for-content-creators-free-2026 best-ai-tools-for-developers-2026
+            best-ai-tools-for-freelancers-2026 best-ai-tools-for-freelancers-india-2026 best-ai-tools-for-social-media-2026
+            best-ai-tools-for-startups-2026 best-ai-tools-for-youtube-creators-2026 best-ai-tools-for-youtubers-2026
+            best-ai-tools-in-india-2026 best-ai-writing-tools-2026 best-ai-writing-tools-for-beginners-2026
+            best-free-ai-tool-plans-2026 best-free-ai-tools-for-students-in-india-2026 best-free-ai-writing-tools-2026
+            best-grammarly-alternatives best-invideo-alternatives-2026 best-midjourney-alternatives-2026 best-notion-ai-alternatives-2026
+            best-podcastle-alternatives best-vibe-coding-tools-2026 chatgpt-alternatives-free-2026
+            chatgpt-free-vs-claude-free-vs-gemini-free-2026 cheapest-ai-coding-tools-2026 claude-code-vs-github-copilot-vs-replit-2026
+            cursor-ai-review-2026 fastest-growing-ai-startups-2026 google-gemini-ai-review-2026
+            gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026 grok-4-vs-chatgpt-vs-claude-content-creators-2026
+            how-to-use-ai-for-content-creation-2026 how-to-use-rytr-to-write-blog-posts is-grammarly-premium-worth-it-2026
+            jasper-ai-alternatives leonardo-vs-midjourney-2026 perplexity-ai-review-2026
+            perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026 taskade-vs-notion-vs-asana-2026
+          )
+
+          # Sync check — fails if blog/*.ts files were added/removed without
+          # updating BLOG_SLUGS above (excludes index.ts and types.ts).
+          ACTUAL_COUNT=$(find blog -maxdepth 1 -name "*.ts" ! -name "index.ts" ! -name "types.ts" | wc -l)
+          EXPECTED_COUNT=${#BLOG_SLUGS[@]}
+          echo "ℹ️  blog/ has $ACTUAL_COUNT post files; BLOG_SLUGS lists $EXPECTED_COUNT slugs"
+          if [ "$ACTUAL_COUNT" -ne "$EXPECTED_COUNT" ]; then
+            echo "❌ blog/ contains $ACTUAL_COUNT post files but BLOG_SLUGS lists $EXPECTED_COUNT."
+            echo "   A blog post was added or removed without updating deploy.yml."
+            echo "   → Fix: edit .github/workflows/deploy.yml → 'Validate prerender"
+            echo "     output' step → add/remove the slug in the BLOG_SLUGS array,"
+            echo "     and update the sitemap <loc> count check if the total"
+            echo "     page count changed."
+            exit 1
+          fi
+          echo "✅ BLOG_SLUGS list is in sync with blog/ ($ACTUAL_COUNT posts)"
+
+          for slug in "${BLOG_SLUGS[@]}"; do
             if [ ! -f "dist/blog/$slug/index.html" ]; then
               echo "❌ Missing: dist/blog/$slug/index.html"
               MISSING=$((MISSING+1))
@@ -204,6 +250,18 @@ jobs:
           }
           console.log('✅ All JSON-LD schema blocks valid');
           EOF
+
+      - name: Check for unfilled affiliate placeholders
+        # If an affiliate link template (e.g. "YOUR_CODE") ever gets added
+        # to constants.ts/TOOLS without the real partner ID being filled in,
+        # this catches it before it ships to production.
+        run: |
+          echo "── Affiliate Placeholder Check ──"
+          if grep -r "YOUR_CODE" dist/ 2>/dev/null; then
+            echo "❌ CRITICAL: Unfilled affiliate placeholder ('YOUR_CODE') found in dist/"
+            exit 1
+          fi
+          echo "✅ No affiliate placeholders in dist/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
