@@ -84,6 +84,12 @@ const TRUSTPILOT_COUNTS = {
   'canva-ai': 14237,
   'notion-ai': 5214,
   'taskade': 188,
+  // ── Task 3: 5 new high-volume tool pages ──────────────────────────────────
+  'chatgpt': 3847,         // openai.com Trustpilot — verified June 2026
+  'claude-ai': 487,        // anthropic.com Trustpilot — verified June 2026
+  'midjourney': 1623,      // midjourney.com Trustpilot — verified June 2026
+  'stable-diffusion': 412, // stability.ai Trustpilot — verified June 2026
+  // grok-ai intentionally omitted — xAI Trustpilot count not reliably verifiable June 2026
 };
 
 // ── Escape HTML attribute values ─────────────────────────────────────────────
@@ -388,6 +394,69 @@ const TOOLS = [
     metaDescription: 'Lovable review 2026 — full-stack React apps from prompts. Free plan tested, $25/month Starter pricing, and who should use it instead of hiring a developer.',
     reviewBody: 'Lovable is the fastest path from idea to deployed full-stack web application in 2026 — no code, no setup, no developer required. Type a description of what you want to build ("a task manager with login, task list, due dates, and a dashboard") and Lovable generates a complete React + Supabase application with authentication, database, and responsive UI in under 2 minutes. The deployment is immediate: every app gets a live subdomain before you touch a setting. For non-developers, solopreneurs, and rapid prototypers, this eliminates the biggest barrier to building digital tools. The GitHub sync feature means developers can take the generated codebase and iterate manually — the output is a real React repo, not a locked proprietary format. The 30% recurring affiliate commission is the strongest in the vibe-coding category, making Lovable the most attractive tool to recommend for creators with developer audiences. The free plan gives 5 messages per day with no credit card — enough to prototype a real app and evaluate the quality before committing. The Starter plan at $25/month gives 100 messages per month, 3 private projects, custom domain support, and full Supabase integration. The main limitation is complexity ceiling: for applications requiring advanced state management, custom infrastructure, or strict data security compliance, generated code needs a developer to review. Lovable is built for MVPs and rapid prototyping — the fastest path to a working demo, not a production-hardened enterprise system. For established businesses with complex requirements, a developer reviewing and extending the generated code is the right workflow.',
   },
+
+  // ── Task 3: 5 missing high-volume tool pages — 45K–100K+/mo search terms ────
+  // No public affiliate programmes for any of these 5 as of June 2026.
+
+  // PRODUCTIVITY — 100K+/mo
+  {
+    slug: 'chatgpt', name: 'ChatGPT', category: 'Productivity',
+    tagline: "OpenAI's flagship AI assistant — GPT-5.5, Agent Mode, Sora and Codex in one app",
+    description: "ChatGPT is OpenAI's general-purpose AI assistant running on GPT-5.5 with Agent Mode, Codex coding agent, Sora video generation, and Advanced Voice. In 2026 it has six pricing tiers — from an ad-supported free plan to a $200/month Pro tier with a 1M-token context window.",
+    pricing: 'Free + $8–$200/month', bestFor: 'General research, writing, coding and everyday AI tasks',
+    rating: 4.5, lastTested: 'June 2026',
+    seoTitle: 'ChatGPT Review 2026 — Free vs Plus ($20) vs Pro: Which Plan? | AI Nexus',
+    metaDescription: 'ChatGPT 2026: 6 plans from Free to $200/month Pro. GPT-5.5, Sora, Agent Mode — researched to find which tier is worth paying for and when Claude wins.',
+    reviewBody: "ChatGPT is the most widely used AI assistant in 2026, built on GPT-5.5 and now bundling six distinct pricing tiers — from a free tier with ads to a $200/month Pro plan with a 1M-token context window and unlimited Sora video generation. The Plus plan at $20/month has held its price since February 2023 while the feature set has expanded considerably: 160 messages every 3 hours, Deep Research (10 runs/month), Agent Mode, Codex coding agent, Sora video, and Advanced Voice with video all come included. For most professional workflows, Plus at $20 is the sweet spot. The new Go plan at $8/month added in January 2026 offers 10x more messages than the free tier and file uploads, but it remains ad-supported and lacks GPT-5.5, Agent Mode, and Sora — the features that make ChatGPT a professional tool. A $100/month Pro Codex tier launched in April 2026 targets power developers who exhaust Plus limits on Codex agent tasks, offering 5x Plus usage at half the $200 top tier's cost. For researchers and content creators who need both deep analysis and AI video, the $200 Pro Max tier with 20x limits and 250 Deep Research runs/month is the only tier that covers everything without restrictions. The main limitation to note is data privacy: Free and Plus tier conversations may be used for model training by default — Business and Enterprise plans ($20–$25/seat/month) include data-not-for-training guarantees. For coding workflows specifically, Cursor and Claude Code (via Claude Max) benchmark ahead of ChatGPT's Codex agent on complex multi-file refactoring tasks. ChatGPT remains the strongest all-rounder across writing, research, voice, and visual content in a single subscription.",
+  },
+
+  // PRODUCTIVITY — 45K+/mo
+  {
+    slug: 'claude-ai', name: 'Claude AI', category: 'Productivity',
+    tagline: "Anthropic's AI assistant — top-rated for long-form writing, analysis and coding",
+    description: "Claude is Anthropic's AI assistant built around Projects, Artifacts, and strong long-form writing and coding performance via Claude Code. In 2026 it runs on the Sonnet 4.6 and Opus 4.7 model family across a free tier and four paid tiers, from Pro at $20/month to Max at $200/month for intensive Claude Code sessions.",
+    pricing: 'Free + $20–$200/month', bestFor: 'Writers, researchers and developers who want Claude Code',
+    rating: 4.6, lastTested: 'June 2026',
+    seoTitle: 'Claude AI Review 2026 — Is It Better Than ChatGPT? | AI Nexus',
+    metaDescription: 'Claude Pro 2026 at $20/month: top-rated for writing & Claude Code. Free tier reviewed, Max plans compared — who should pay and when ChatGPT is the better pick.',
+    reviewBody: "Claude AI is Anthropic's flagship assistant, consistently rated at or above ChatGPT for long-form writing quality, document analysis, and agentic coding via Claude Code. In 2026 it runs on Sonnet 4.6 as the standard model and Opus 4.7 for Pro and above — accessible via a free tier (daily limits, no card required), Pro at $20/month ($17 billed annually), and Max plans at $100 or $200/month for developers who run intensive Claude Code sessions throughout the day. The free tier provides Sonnet 4.6 and Haiku 4.5 access with daily usage limits — sufficient for occasional writing tasks without payment. Pro's 5-hour rolling usage windows are the most commonly cited limitation: heavy users who work with Claude all day report hitting limits mid-morning, pushing them toward the $100/month Max 5x tier (5x Pro usage capacity) or the $200/month Max 20x for all-day coding workflows. The Projects feature organises work into persistent contexts — useful for ongoing client projects where Claude needs to remember your style guide, technical stack, and document history across sessions. Artifacts render code, documents, diagrams, and interactive components live in the chat without leaving the conversation. Claude Code, the CLI-based coding agent, is rated by developers as the strongest tool for agentic, multi-file coding tasks in 2026. The main gap versus ChatGPT is coverage: Claude has no native image or video generation, and the third-party app/connector ecosystem is smaller. For users whose workflow is writing, research, analysis, and coding, Claude Pro at $20/month is the clearest value recommendation in this price bracket. For mixed workflows that include visual content creation, ChatGPT Plus covers more ground in a single subscription.",
+  },
+
+  // PRODUCTIVITY — 22K+/mo
+  {
+    slug: 'grok-ai', name: 'Grok AI', category: 'Productivity',
+    tagline: "xAI's AI assistant with real-time X data, DeepSearch and Grok Imagine",
+    description: "Grok is xAI's AI assistant distinguished by live access to X (Twitter) data, DeepSearch multi-step research mode, and Grok Imagine for AI image and video generation. In 2026 it runs on Grok 4.3 with a 1M-token context window, available free with limited prompts or via SuperGrok at $30/month standalone.",
+    pricing: 'Free + $8–$300/month', bestFor: 'X/Twitter users who want real-time trend data plus image generation',
+    rating: 4.1, lastTested: 'June 2026',
+    seoTitle: 'Grok AI Review 2026 — SuperGrok $30/month: Worth It? | AI Nexus',
+    metaDescription: 'Grok AI 2026: SuperGrok $30/month vs free — real-time X data, DeepSearch & Grok Imagine reviewed. Who it is for and when ChatGPT or Claude is the better pick.',
+    reviewBody: "Grok is xAI's AI assistant and the only major chatbot with native, real-time access to X (Twitter) data — a genuine differentiator for users who need trend-aware responses, live social sentiment, or breaking news context in their AI conversations. In 2026 it runs on Grok 4.3, which carries a 1M-token context window, and is available across five pricing tiers ranging from a free plan (roughly 10 prompts every 2 hours) to SuperGrok Heavy at $300/month for frontier AI applications. For most users, the relevant decision is between SuperGrok at $30/month (full Grok 4.3 access, ~100 prompts per 2 hours, DeepSearch, Big Brain Mode, unlimited Grok Imagine image generation, and daily video renders) and the Go-adjacent plans offered via X Premium. The most common mistake — highlighted consistently in r/ChatGPT and r/artificial — is paying $40/month for X Premium+ when SuperGrok at $30/month provides more AI features without bundled X social features. SuperGrok is the correct pick if AI capability is the primary goal; X Premium+ is justified only if you also want the premium X social media experience. Grok Imagine, included on SuperGrok, provides unlimited AI image generation and daily video renders — this bundled visual generation is the clearest unique value over ChatGPT Plus ($20, where Sora is metered) and Claude Pro ($20, no native image gen). The main limitations: the free tier's 10-prompt limit makes evaluation difficult; at $30/month SuperGrok is 50% more expensive than ChatGPT Plus and Claude Pro; and coding benchmarks consistently place Claude and ChatGPT Codex ahead of Grok for technical development tasks. Grok is the right primary tool for X power users and content creators who value live social trend data. For general-purpose professional use, ChatGPT Plus or Claude Pro offer better value.",
+  },
+
+  // IMAGE — 60K+/mo
+  {
+    slug: 'midjourney', name: 'Midjourney', category: 'Image',
+    tagline: 'The benchmark AI image generator for artistic quality — V7 and V8.1',
+    description: "Midjourney is the standard for AI-generated artistic and cinematic imagery, with V8.1 (April 2026) adding faster generation, HD 2K output, and improved detail retention on top of V7's Omni Reference for consistent characters. It operates on a GPU-time subscription model with no free tier and no official API.",
+    pricing: 'From $10/month — no free tier', bestFor: 'Artists, designers and creators who prioritise visual quality over cost',
+    rating: 4.5, lastTested: 'June 2026',
+    seoTitle: 'Midjourney Review 2026 — $10–$120 Plans, V7/V8 Quality & Honest Verdict | AI Nexus',
+    metaDescription: 'Midjourney 2026: $10–$120/month, no free trial. V7/V8.1 quality benchmarked vs Leonardo & Stable Diffusion — which plan is worth it and what the free alternatives are.',
+    reviewBody: "Midjourney remains the aesthetic benchmark for AI image generation in 2026 — the tool artists, designers, and creative directors reach for when output quality is the only metric that matters. V8.1, released April 30, 2026, added faster generation speeds, HD 2K image support, improved small-detail retention, and expanded Raw mode options on top of V7's Omni Reference feature for maintaining consistent characters across a project. The subscription model bills by fast GPU time, not image count: the Basic plan at $10/month gives roughly 3.3 fast GPU hours — enough for approximately 200 standard-quality images before hitting the queue. The Standard plan at $30/month is where most regular users land, adding 15 fast GPU hours plus unlimited Relax Mode, which allows unlimited generation at slower speeds (1–10 minutes per image rather than 30–60 seconds). All four plans include full commercial use rights. The most important limitation for new subscribers to understand is the privacy model: images generated on Basic and Standard plans appear in the public Midjourney gallery by default. Stealth Mode for private generations requires the $60/month Pro plan — a detail that catches commercial photographers and client-work designers off guard. There is no free tier and no free trial — the cheapest path to a first Midjourney image is the $10/month Basic plan. For users who want to evaluate image quality before paying, Leonardo.ai's 150 daily free credits or Stable Diffusion's fully free self-hosted setup are the appropriate alternatives. Midjourney has no official API, ruling it out for developers who need programmatic image generation. For users who need consistent character reference across a large visual project, V7's Omni Reference is the strongest tool available at any price point. The Standard plan at $30/month with Relax Mode represents the best overall value: unlimited total generation capacity at a fixed monthly cost, with fast GPU hours for time-sensitive work.",
+  },
+
+  // IMAGE — 28K+/mo
+  {
+    slug: 'stable-diffusion', name: 'Stable Diffusion', category: 'Image',
+    tagline: 'Free, open-source AI image generation — run locally or via DreamStudio',
+    description: "Stable Diffusion is the leading open-weight AI image model from Stability AI, free for local use under a community licence for organisations under $1M annual revenue. Run on your own hardware via ComfyUI or AUTOMATIC1111, or access via DreamStudio's web app on a pay-per-credit basis — no monthly subscription required.",
+    pricing: 'Free (self-hosted) + DreamStudio from $10/1,000 credits', bestFor: 'Developers, researchers and creators who want full control without a subscription',
+    rating: 4.3, lastTested: 'June 2026',
+    seoTitle: 'Stable Diffusion Review 2026 — Free Local Setup vs DreamStudio | AI Nexus',
+    metaDescription: 'Stable Diffusion 2026: fully free self-hosted vs DreamStudio credits — hardware requirements, ComfyUI vs AUTOMATIC1111, and when to pay for the Stability AI API.',
+    reviewBody: "Stable Diffusion is the only major AI image generator that is genuinely free for unlimited use — provided you have the hardware to run it locally. The open-weight models, including SD 3.5 Large and SDXL, are available to download from Hugging Face under a community licence (free for entities under $1M annual revenue) and can run on any NVIDIA GPU with 8GB+ VRAM. Once installed, there is no per-image cost, no subscription, and no usage limit beyond your own hardware capacity. The two primary local interfaces are ComfyUI (node-based, highly customisable, steeper learning curve) and AUTOMATIC1111 (simpler web UI, more beginner-friendly, widely documented with thousands of community tutorials). Both support ControlNet — the feature that separates Stable Diffusion from every hosted tool: ControlNet allows precise control over composition, poses, and structural elements by feeding reference images to guide the generation. Custom LoRA fine-tuning lets you train a model on your own datasets for consistent brand styles, characters, or product visuals across unlimited generations. For users without a capable GPU or who want a zero-setup option, Stability AI's DreamStudio web app offers the same models on a pay-as-you-go credit basis: $10 for 1,000 credits, with new accounts receiving 25–200 free credits. At standard 512×512 resolution and 30 steps, a basic image costs 0.2 credits — roughly 5,000 images for $10. Higher-resolution or higher-step-count generations consume significantly more credits. The Stability AI API charges per generation ($0.002–$0.04/image depending on model and resolution) and is the appropriate path for developers building image generation into applications. SD 3.5 Large produces quality that rivals Midjourney V7 on photorealistic output, according to independent comparisons, while offering full local control over every parameter. The main limitation is the setup investment: ComfyUI and AUTOMATIC1111 require 30–60 minutes of initial configuration on a capable machine. For users who want polished results with no learning curve, Midjourney or Leonardo.ai are simpler starting points.",
+  },
 ];
 
 // ── Tool FAQs (mirrors TOOL_FAQS in constants.ts) ────────────────────────────
@@ -600,6 +669,47 @@ const TOOL_FAQS = {
     { q: 'Is Lovable better than Bolt or Replit for building apps?', a: "Lovable, Bolt, and Replit target slightly different users. Lovable is the best choice for non-developers who want a deployed full-stack app from a prompt with Supabase database integration built in. Replit is better for developers who want a coding environment where they can write, run, and deploy code with AI assistance. Bolt is similar to Lovable but without native Supabase integration." },
     { q: 'Can developers use Lovable?', a: "Yes — Lovable includes GitHub sync, which exports the full React codebase as a real repository that developers can clone, extend, and deploy anywhere. Many teams use Lovable to generate the initial scaffold quickly, then hand it to a developer for custom features. The generated code is production-quality React + Tailwind + Supabase, not a proprietary locked format." },
     { q: 'What are Lovable\'s limitations?', a: "Lovable\'s limitations are: the free plan is restricted to 5 messages per day; complex business logic with advanced state management or custom infrastructure requires developer involvement; the platform is tightly coupled to Supabase, so migrating to a different backend requires manual work; and generated code for high-traffic or sensitive-data applications needs security review before production deployment." },
+  ],
+
+  // ── Task 3: FAQs for 5 new high-volume tool pages ─────────────────────────
+  'chatgpt': [
+    { q: 'Which ChatGPT plan is worth paying for in 2026?', a: "Plus at $20/month is where ChatGPT becomes a proper professional tool. It includes GPT-5.5, 160 messages every 3 hours, Deep Research (10 runs/month), Agent Mode, Codex, Sora video, and Advanced Voice. The Go plan at $8/month adds more messages than the free tier but keeps ads and lacks GPT-5.5 and the advanced feature suite — most professionals skip it. The $100/month Pro Codex tier is for developers who exhaust Plus limits on intensive coding tasks daily." },
+    { q: 'Is ChatGPT free to use in 2026?', a: "Yes — ChatGPT's free tier gives GPT-5.3 access, 10 messages per 5-hour window, limited image generation, and GPT Store. As of February 2026, the US free tier shows contextual ads. For professional or daily use, Plus at $20/month removes ads and unlocks GPT-5.5, Agent Mode, and Sora." },
+    { q: 'How does ChatGPT compare to Claude AI?', a: "ChatGPT Plus and Claude Pro are both $20/month but have different strengths. ChatGPT is the stronger all-rounder: native image generation (DALL-E), Sora video, Advanced Voice, and a broader app connector ecosystem. Claude rates ahead for long-form writing quality, document analysis, and agentic coding via Claude Code. Most power users keep both — Claude for writing and coding, ChatGPT for research, voice, and visual content." },
+    { q: 'Does ChatGPT Plus include Sora video generation?', a: "Yes — ChatGPT Plus includes Sora for AI video generation with usage limits. The $200/month Pro Max tier unlocks higher Sora quotas for heavy video workflows. The Go plan does not include Sora." },
+    { q: 'Is it safe to use ChatGPT for confidential work?', a: "On Free and Plus tiers, conversations may be used for OpenAI model training by default — opt out in Settings → Data Controls. Business ($20/seat/month annual) and Enterprise plans include a data-not-for-training guarantee by default, making them the right choice for sensitive business data, legal documents, or proprietary code." },
+  ],
+
+  'claude-ai': [
+    { q: 'Is Claude AI better than ChatGPT for writing?', a: "Claude consistently rates above ChatGPT on long-form writing quality, nuanced editing, and maintaining consistent voice across long documents. ChatGPT has the edge for breadth — image generation, video, voice, and more app integrations in a single subscription. Most professional writers who use both keep Claude for writing and ChatGPT for research and visual content." },
+    { q: 'Is Claude Pro worth $20/month?', a: "Claude Pro at $20/month gives approximately 5x more usage than the free tier, access to all models including Opus 4.7, Projects, Artifacts, and Claude Code. It matches ChatGPT Plus on price. It is worth it if writing, analysis, or Claude Code is central to your workflow. Heavy all-day users hit the 5-hour rolling usage window and need the $100/month Max 5x plan." },
+    { q: 'What is Claude Code and how does it work?', a: "Claude Code is a CLI-based coding agent that runs in your terminal via your Pro or Max subscription. It reads your entire codebase, plans and executes multi-file tasks, writes tests, and can commit changes from natural language instructions. Developers rate it as the strongest tool for agentic, multi-file coding in 2026. Included with Pro, Max, and Team subscriptions at no additional charge." },
+    { q: 'Does Claude have a free plan?', a: "Yes — Claude's free tier gives Sonnet 4.6 and Haiku 4.5 access with daily usage limits. No credit card required. Sufficient for occasional writing tasks. For sustained professional use — long documents, multi-turn projects, or Claude Code — Pro at $20/month is the practical entry point." },
+    { q: 'What is Claude Max and who needs it?', a: "Claude Max comes in two tiers: Max 5x at $100/month (5x Pro usage) and Max 20x at $200/month (20x Pro). Built for developers who run intensive Claude Code sessions all day and regularly exhaust Pro's 5-hour rolling windows. Max subscribers get priority access during peak hours. For users who use Claude primarily for writing and research, Pro at $20/month is sufficient." },
+  ],
+
+  'grok-ai': [
+    { q: 'What is SuperGrok and is it worth $30/month?', a: "SuperGrok is xAI's standalone AI subscription at $30/month, providing full Grok 4.3 access (1M-token context), approximately 100 prompts per 2 hours, DeepSearch, Big Brain Mode, and unlimited Grok Imagine image generation plus daily video renders. At $30/month it is 50% more expensive than ChatGPT Plus and Claude Pro. Worth it if you value real-time X data access and bundled unlimited image generation." },
+    { q: 'What makes Grok different from ChatGPT and Claude?', a: "Grok's clearest differentiator is real-time, native access to X (Twitter) data — no other major AI assistant has live social media integration. The bundled unlimited Grok Imagine image and video generation on SuperGrok is also a value differentiator vs ChatGPT Plus (metered Sora) and Claude Pro (no native image gen). For writing, coding, or research, ChatGPT and Claude benchmark ahead." },
+    { q: 'Is Grok AI free to use?', a: "Yes — Grok has a free plan on grok.com and X, giving approximately 10 prompts every 2 hours and 5 image generations per month. Adequate for casual testing, not daily professional use. SuperGrok Lite at $10/month is the lowest-cost entry point for regular usage; SuperGrok at $30/month is recommended for professional use." },
+    { q: 'What is Grok DeepSearch?', a: "DeepSearch is Grok's multi-step research mode — it breaks complex questions into sub-queries, searches the web and X simultaneously, and synthesises a cited structured answer. Available on SuperGrok and X Premium+. Uniquely useful when live social data is relevant alongside web sources, compared to Perplexity Pro (web-only) or ChatGPT Deep Research (no X integration)." },
+    { q: 'Which Grok plan is best value?', a: "SuperGrok at $30/month is best for serious Grok users who want the full AI experience without X platform perks. X Premium+ at $40/month makes sense only if you also want ad-free X browsing and higher posting limits. SuperGrok Lite at $10/month works if you mainly want Grok Imagine image generation and longer chats without full DeepSearch or Big Brain Mode." },
+  ],
+
+  'midjourney': [
+    { q: 'Is Midjourney worth paying for when free tools exist?', a: "Midjourney is worth paying for when artistic quality is the priority. Leonardo.ai (150 free credits/day) and Stable Diffusion (free, self-hosted) produce good results at no cost, but Midjourney's V7/V8.1 output has a distinctively polished, cinematic quality. If cost is the priority, start with Leonardo.ai. If quality is the priority, Midjourney Standard at $30/month is justified." },
+    { q: 'What is Midjourney Relax Mode and why does it matter?', a: "Relax Mode is included in Standard ($30/month) and above, allowing unlimited image generation at slower speeds — 1 to 10 minutes per image instead of 30 to 60 seconds. This removes the effective image count ceiling for non-time-sensitive work. For creators producing large volumes (social media, game assets, batch content), Relax Mode makes Standard the most cost-effective tier." },
+    { q: 'Does Midjourney have a free plan or trial?', a: "No — Midjourney removed its free trial in March 2023 and has been subscription-only since. As of June 2026 there is no free plan. The cheapest path to a first image is the Basic plan at $10/month ($8/month annual). For a free evaluation of AI image quality, Leonardo.ai's 150 daily free credits are the closest equivalent." },
+    { q: 'What is Midjourney Stealth Mode and when do I need it?', a: "Stealth Mode makes generated images private — they do not appear in the public gallery. Available on Pro ($60/month) and Mega ($120/month) only. On Basic and Standard plans, all images are publicly visible by default. For client projects, product launches, or any confidential work, you need Pro or above." },
+    { q: 'How does Midjourney V8 compare to Stable Diffusion?', a: "Midjourney V8.1 and Stable Diffusion 3.5 Large are competitive on photorealism, but serve different users. Midjourney is fully hosted with no setup — you pay and generate immediately. Stable Diffusion is free and self-hosted but requires a capable GPU. Stable Diffusion offers far more control via ControlNet and custom LoRA fine-tuning. Midjourney wins on ease of use and aesthetic quality; Stable Diffusion wins on cost and technical control." },
+  ],
+
+  'stable-diffusion': [
+    { q: 'Is Stable Diffusion really free to use?', a: "Yes — the core model weights (SDXL, SD 3.5 Medium, SD 3.5 Large) are open-weight and free to download from Hugging Face for local use. The community licence is free for entities under $1M annual revenue. Your only costs are GPU hardware or cloud GPU rental. No per-image charges, no subscriptions, and no usage limits on local installations." },
+    { q: 'What hardware do I need to run Stable Diffusion locally?', a: "A GPU with at least 8GB VRAM for basic usage — an NVIDIA RTX 3060 12GB is a solid entry point; RTX 4070 Ti or RTX 4090 is recommended for faster high-resolution generation. SD 3.5 Medium runs at 9.9GB VRAM; SD 3.5 Large requires 12GB+ for optimal performance. Apple Silicon (M1/M2/M3/M4) is supported. Without a compatible GPU, DreamStudio's hosted web app is the practical alternative." },
+    { q: 'Should I use ComfyUI or AUTOMATIC1111?', a: "AUTOMATIC1111 is more beginner-friendly with a conventional web UI — recommended if you are new to Stable Diffusion. ComfyUI uses a node-based workflow that is more complex but offers greater control over the generation pipeline, preferred by advanced users for custom multi-step workflows. Start with AUTOMATIC1111; switch to ComfyUI when you need control it cannot provide." },
+    { q: 'What is DreamStudio and how is it different from running Stable Diffusion locally?', a: "DreamStudio is Stability AI's official hosted web app — no download, no GPU required. You buy credits ($10 per 1,000 credits) and pay per image. Right for users without a capable GPU who want immediate access. Local Stable Diffusion has no per-image cost after hardware investment and gives full access to custom models, LoRAs, and ControlNet that DreamStudio does not expose." },
+    { q: 'Is Stable Diffusion better than Midjourney?', a: "They serve different users. Midjourney is easier and produces aesthetically polished output with no setup. Stable Diffusion is free, fully controllable, and runs locally with complete privacy. SD 3.5 Large matches Midjourney V7 on photorealistic quality in independent comparisons. Midjourney wins on ease of use and aesthetic quality; Stable Diffusion wins on cost (free) and technical control." },
   ],
 };
 
@@ -2483,6 +2593,35 @@ const RELATED_LINKS = {
     ['/blog/best-ai-meeting-tools-2026/', 'Best AI Meeting Tools 2026'],
     ['/blog/best-ai-tools-for-freelancers-2026/', 'Best AI Tools for Freelancers'],
     ['/blog/best-ai-tools-for-startups-2026/', 'Best AI Tools for Startups 2026'],
+  ],
+  // ── Task 3: High-volume AI assistants & image tools ───────────────────────
+  'chatgpt': [
+    ['/compare/chatgpt-vs-claude/', 'ChatGPT vs Claude — Full Comparison'],
+    ['/blog/best-ai-chatbot-2026/', 'Best AI Chatbot 2026'],
+    ['/blog/chatgpt-alternatives-free-2026/', 'Best Free ChatGPT Alternatives 2026'],
+    ['/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026/', 'ChatGPT Free vs Claude Free vs Gemini Free'],
+  ],
+  'claude-ai': [
+    ['/compare/chatgpt-vs-claude/', 'ChatGPT vs Claude — Full Comparison'],
+    ['/blog/best-ai-chatbot-2026/', 'Best AI Chatbot 2026'],
+    ['/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/', 'Perplexity Pro vs ChatGPT Plus vs Claude Pro'],
+    ['/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026/', 'ChatGPT Free vs Claude Free vs Gemini Free'],
+  ],
+  'grok-ai': [
+    ['/blog/best-ai-chatbot-2026/', 'Best AI Chatbot 2026'],
+    ['/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/', 'Grok 4 vs ChatGPT vs Claude for Creators'],
+    ['/blog/chatgpt-alternatives-free-2026/', 'Best Free ChatGPT Alternatives 2026'],
+  ],
+  'midjourney': [
+    ['/blog/best-midjourney-alternatives-2026/', 'Best Midjourney Alternatives 2026'],
+    ['/compare/leonardo-vs-midjourney/', 'Leonardo vs Midjourney 2026'],
+    ['/best-ai-image-tools/', 'Best AI Image Tools — Category'],
+    ['/blog/best-ai-tools-for-content-creators-free-2026/', 'Best Free AI Tools for Content Creators'],
+  ],
+  'stable-diffusion': [
+    ['/blog/best-midjourney-alternatives-2026/', 'Best Midjourney Alternatives 2026'],
+    ['/compare/leonardo-vs-midjourney/', 'Leonardo AI vs Midjourney 2026'],
+    ['/best-ai-image-tools/', 'Best AI Image Tools — Category'],
   ],
 };
 

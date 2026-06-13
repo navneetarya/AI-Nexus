@@ -326,4 +326,22 @@
   <url><loc>https://ainexustools.online/blog/best-ai-meeting-tools-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-06-09</lastmod>
     <image:image><image:loc>https://ainexustools.online/og-blog-marketing.webp</image:loc><image:title>Best AI Meeting Tools 2026 — Ranked &amp; Compared</image:title></image:image>
   </url>
+
+  <!-- Task 3: 5 missing high-volume tool pages — 22K–100K+/mo, highest-priority additions -->
+  <!-- Priority 0.95 — above all other tool pages — reflects the search volume of these terms   -->
+  <url><loc>https://ainexustools.online/tools/chatgpt/</loc><changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-06-14</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/chatgpt.png</image:loc><image:title>ChatGPT by OpenAI — AI Assistant Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/claude-ai/</loc><changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-06-14</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/claude-ai.png</image:loc><image:title>Claude AI by Anthropic — AI Assistant Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/midjourney/</loc><changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-06-14</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/midjourney.png</image:loc><image:title>Midjourney AI Image Generator Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/stable-diffusion/</loc><changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-06-14</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/stable-diffusion.png</image:loc><image:title>Stable Diffusion — Open-Source AI Image Generator Logo</image:title></image:image>
+  </url>
+  <url><loc>https://ainexustools.online/tools/grok-ai/</loc><changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-06-14</lastmod>
+    <image:image><image:loc>https://ainexustools.online/logos/grok-ai.png</image:loc><image:title>Grok AI by xAI — AI Assistant Logo</image:title></image:image>
+  </url>
 </urlset>

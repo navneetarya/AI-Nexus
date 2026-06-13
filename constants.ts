@@ -1296,6 +1296,245 @@ export const TOOLS: Tool[] = [
       { date: 'June 2026', note: 'Tool entry created. Affiliate link: fireflies.ai/?fpr=navneet89 (20% recurring). Free plan verified at 800 min storage, Pro at $10/month.' },
     ],
   },
+
+  // ── Task 3: High-volume missing tool pages — ChatGPT, Claude AI, Grok AI (PRODUCTIVITY) +
+  // Midjourney, Stable Diffusion (IMAGE). Added to close zero-coverage gap on 45K–100K+/mo
+  // search terms. No affiliate programmes currently available for any of these 5 — monitor
+  // OpenAI, Anthropic, xAI, Midjourney and Stability AI partner pages for future programmes.
+
+  // PRODUCTIVITY (AI assistants)
+  {
+    id: 'ai1', slug: 'chatgpt',
+    name: 'ChatGPT', tagline: "OpenAI's flagship AI assistant — GPT-5.5, Sora video and Agent Mode in one app",
+    description: "ChatGPT is OpenAI's general-purpose AI assistant, now running on GPT-5.5 with Agent Mode, Codex coding agent, Sora video generation, and Advanced Voice. In 2026 it spans six pricing tiers — from an ad-supported free plan to a $200/month Pro tier with a 1M-token context window — making it the most feature-dense single AI subscription on the market.",
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://chatgpt.com', // No public affiliate programme — monitor openai.com/partners
+    iconName: 'Bot', color: '#10a37f', accentColor: '#0d8a6c',
+    userBadge: 'Most popular AI', pricing: 'Free + $8–$200/month (Go, Plus, Pro)', bestFor: 'General research, writing, coding and everyday AI assistant use',
+    notForYou: 'Developers who want the deepest agentic coding workflow — Claude Code (via Claude Pro/Max) and Cursor consistently benchmark ahead of ChatGPT\'s Codex agent for large, multi-file refactors. Also skip the Free tier if you are uncomfortable with in-chat ads, which OpenAI began testing on Free and Go in the US from February 2026.',
+    lastTestedISO: '2026-06-13',
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free (GPT-5.3, 10 messages/5hr, ads in some regions)',
+      paid: 'Go ~₹399/month · Plus ~₹1,750/month',
+      note: 'ChatGPT Go launched in India first (August 2025) at a discounted local price before its $8/month global rollout in January 2026. International or Indian card both accepted; UPI not yet supported for subscriptions.',
+    },
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified across 6 tiers: Free $0, Go $8, Plus $20, Pro $100 (new April 2026), Pro $200, Business from $20/seat/month annual. GPT-5.5 confirmed as default flagship model since April 23, 2026.' },
+    ],
+    features: [
+      'GPT-5.5 flagship model (GPT-5.5 Pro on Pro/Business/Enterprise)',
+      'Agent Mode + Codex coding agent (mobile preview free on all plans)',
+      'Sora video generation (Plus and above)',
+      'Deep Research — up to 250 runs/month on Pro $200',
+      'Advanced Voice Mode with video',
+      '60+ third-party app connectors',
+    ],
+    pros: [
+      'Broadest feature set of any AI assistant — chat, voice, video, coding agent and image generation in one subscription',
+      'Plus at $20/month has held its price since 2023 while the feature set has expanded dramatically',
+      'New Go tier ($8/month) makes paid ChatGPT accessible in price-sensitive markets including India',
+      'Codex Mobile is now free on every plan, including Free and Go',
+    ],
+    cons: [
+      'Six overlapping tiers make it genuinely confusing to pick the right plan',
+      'Free and Go tiers now show ads in the US — a first for ChatGPT',
+      'The $200/month Pro tier is a steep jump for the 1M-token context window and unlimited Sora access',
+      'No official affiliate programme — zero referral monetisation',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'GPT-5.3 access · 10 messages/5hr · limited image generation · GPT Store · ads in US' },
+      { tier: 'Go', price: '$8/month', highlight: '10x more messages · unlimited GPT-5.3 Instant · file uploads · image creation · still ad-supported' },
+      { tier: 'Plus', price: '$20/month', highlight: 'GPT-5.5 · 160 msgs/3hr · 3,000 weekly GPT-5.5 Thinking msgs · Sora · Deep Research (10/mo) · Agent Mode · Codex' },
+      { tier: 'Pro', price: '$100–$200/month', highlight: 'Same model suite as Plus at 5x–20x usage · GPT-5.5 Pro · 1M-token context (on $200 tier) · priority Sora & Deep Research (up to 250/mo)' },
+    ],
+  },
+
+  // PRODUCTIVITY (AI assistants)
+  {
+    id: 'ai2', slug: 'claude-ai',
+    name: 'Claude AI', tagline: "Anthropic's AI assistant — the top pick for long-form writing, analysis and coding",
+    description: 'Claude is Anthropic\'s AI assistant, built around Projects, Artifacts, and a strong reputation for careful long-form writing, document analysis, and coding via Claude Code. In 2026 Claude runs on the Sonnet 4.6 / Opus 4.7 model family across a free tier and four paid tiers, with Max plans aimed at developers who run intensive Claude Code sessions throughout the day.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://claude.ai', // No public affiliate programme — monitor anthropic.com
+    iconName: 'MessageSquare', color: '#d97757', accentColor: '#c2410c',
+    userBadge: 'Best for writing & code', pricing: 'Free + $17–$200/month (Pro, Max)', bestFor: 'Writers, researchers and developers who want Claude Code',
+    notForYou: 'Casual users who just need quick factual answers or image/video generation — Claude has no native image generator and ChatGPT or Grok cover those use cases better. Also reconsider if you need a generous rolling usage window for all-day chat use: Claude Pro\'s 5-hour rolling limits are tighter than ChatGPT Plus for high-volume conversational use.',
+    lastTestedISO: '2026-06-13',
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free (Sonnet 4.6 & Haiku 4.5, daily usage limits, no card required)',
+      paid: 'Pro ~₹1,750/month (~₹1,490/month billed annually)',
+      note: 'USD billing via international card — no UPI or local INR billing confirmed as of June 2026. Free tier is fully usable for occasional writing and research tasks with no payment method needed.',
+    },
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Free $0, Pro $20/month ($17/month billed annually), Max 5x $100/month, Max 20x $200/month, Team Standard $25/seat/month, Team Premium $125/seat/month.' },
+    ],
+    features: [
+      'Claude Sonnet 4.6 and Opus 4.7 models on paid plans',
+      'Projects — persistent context for ongoing work',
+      'Artifacts — live-rendered code, documents and visualisations',
+      'Claude Code CLI for agentic, multi-file coding tasks',
+      'Large file and document uploads with citation-backed analysis',
+      'Team plans with centralised billing and admin controls',
+    ],
+    pros: [
+      'Consistently rated ahead of competitors for long-form writing quality and nuanced editing',
+      'Claude Code is a top pick for agentic, multi-file coding workflows',
+      'Pro at $20/month ($17 annual) matches ChatGPT Plus and Gemini Advanced on price',
+      'Artifacts make it easy to preview and iterate on generated code, docs and diagrams without leaving the chat',
+    ],
+    cons: [
+      'No native image or video generation — needs a separate tool for visual content',
+      'Pro\'s 5-hour rolling usage windows can feel restrictive for all-day power users, pushing them toward the $100+ Max tiers',
+      'No official affiliate programme — zero referral monetisation',
+      'Smaller third-party app/connector ecosystem than ChatGPT',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Sonnet 4.6 & Haiku 4.5 access · daily usage limits · Projects & Artifacts · no card required' },
+      { tier: 'Pro', price: '$20/month ($17/mo annual)', highlight: '~5x Free usage · all models incl. Opus 4.7 · Claude Code · Projects with larger context' },
+      { tier: 'Max 5x / 20x', price: '$100–$200/month', highlight: '5x–20x Pro usage · priority access during peak hours · built for daily Claude Code workflows' },
+      { tier: 'Team', price: '$25–$125/seat/month', highlight: 'Standard ($25) and Premium ($125) tiers · centralised billing · shared workspace · admin controls' },
+    ],
+  },
+
+  // PRODUCTIVITY (AI assistants)
+  {
+    id: 'ai3', slug: 'grok-ai',
+    name: 'Grok AI', tagline: "xAI's chatbot with real-time X data access, DeepSearch and Grok Imagine",
+    description: 'Grok is xAI\'s AI assistant, distinguished by live access to X (Twitter) data, a DeepSearch research mode, and Grok Imagine for AI image and video generation. In 2026 it runs on Grok 4.3 (1M-token context) and is available free with limited prompts, bundled into X Premium tiers, or as a standalone SuperGrok subscription starting at $10/month.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://grok.com', // No public affiliate programme — monitor x.ai
+    iconName: 'Zap', color: '#475569', accentColor: '#334155',
+    userBadge: 'Real-time X data', pricing: 'Free + $8–$300/month (X Premium, SuperGrok, Heavy)', bestFor: 'X/Twitter users who want real-time trend-aware AI plus image and video generation',
+    notForYou: 'Developers who need the strongest coding performance — Claude and ChatGPT\'s Codex agent both outperform Grok on coding benchmarks. Also reconsider if you are budget-conscious: at $30/month, standalone SuperGrok costs 50% more than ChatGPT Plus, Claude Pro, or Gemini Advanced for broadly comparable core chat capability.',
+    lastTestedISO: '2026-06-13',
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free (~10 prompts/2hrs, 5 images/month, limited Grok 3/4 access)',
+      paid: 'SuperGrok ~₹2,500/month (international card)',
+      note: 'Billed in USD via X/xAI — no confirmed INR billing or UPI support as of June 2026. SuperGrok Lite at $10/month is the lowest-cost standalone paid entry point if available in your region.',
+    },
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Free $0, X Premium $8/month, SuperGrok Lite $10/month, SuperGrok $30/month, X Premium+ $40/month, SuperGrok Heavy $300/month. Grok 4.3 (1M context) confirmed as current flagship since April 30, 2026.' },
+    ],
+    features: [
+      'Grok 4.3 model with 1M-token context window',
+      'DeepSearch — multi-step web research mode',
+      'Big Brain Mode for extended reasoning',
+      'Grok Imagine — AI image and video generation (unlimited images on SuperGrok)',
+      'Real-time access to X (Twitter) posts and trends',
+      'Voice mode for conversational interaction',
+    ],
+    pros: [
+      'Only major AI assistant with live, native access to real-time X data and trending topics',
+      'SuperGrok includes unlimited Grok Imagine image generation plus daily video renders — bundled image/video gen most competitors charge extra for',
+      'SuperGrok Lite at $10/month is a genuinely affordable entry point for light users wanting Grok Imagine access',
+      '1M-token context window on the flagship model matches the top tier of ChatGPT and Claude',
+    ],
+    cons: [
+      'Free tier is restrictive — roughly 10 prompts every 2 hours and 5 images/month',
+      'Standalone SuperGrok at $30/month is the most expensive entry point among the major chatbot subscriptions',
+      'Plan structure is genuinely confusing — five overlapping tiers split across xAI subscriptions and X platform bundles',
+      'No official affiliate programme — zero referral monetisation',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '~10 prompts/2hrs · 5 images/month · limited Grok model access' },
+      { tier: 'X Premium', price: '$8/month', highlight: 'Light Grok access bundled with X platform features and ad revenue sharing' },
+      { tier: 'SuperGrok Lite', price: '$10/month', highlight: '2x longer chats than Free · basic Grok Imagine (480p, 6-second clips) · 1 AI agent' },
+      { tier: 'SuperGrok', price: '$30/month', highlight: 'Full Grok 4.3 (1M context) · ~100 prompts/2hrs · DeepSearch · Big Brain Mode · unlimited Imagine images + daily video' },
+    ],
+  },
+
+  // IMAGE
+  {
+    id: 'i4', slug: 'midjourney',
+    name: 'Midjourney', tagline: 'The benchmark AI image generator for artistic quality — V7/V8',
+    description: "Midjourney remains the standard for AI-generated artistic and cinematic imagery, with V8.1 (April 2026) adding faster generation, HD 2K output, and improved small-detail retention on top of V7's Omni Reference for consistent characters. It runs on a GPU-time subscription model with no free tier and no official API — generation happens via the Midjourney web app or Discord.",
+    category: Category.IMAGE, affiliateLink: 'https://midjourney.com', // No public affiliate programme — monitor midjourney.com
+    iconName: 'Image', color: '#8b5cf6', accentColor: '#7c3aed',
+    userBadge: 'Best image quality', pricing: 'From $10/month — no free tier', bestFor: 'Artists, designers and creators who prioritise visual quality over cost or API access',
+    notForYou: 'Anyone who wants to try AI image generation for free before paying, or who needs programmatic API access for an app — Midjourney has no free tier and no official API. Leonardo.ai (150 free credits/day) or Stable Diffusion (free, open-source, self-hosted) are better starting points for budget-conscious or developer use cases.',
+    lastTestedISO: '2026-06-13',
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'No free tier — paid subscription required from first image',
+      paid: 'Basic ~₹830/month · Standard ~₹2,490/month (at ~₹83/USD)',
+      note: 'USD billing via international card — no INR billing confirmed. 20% discount on all 4 tiers (Basic, Standard, Pro, Mega) when billed annually.',
+    },
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Basic $10, Standard $30, Pro $60, Mega $120/month (20% off annual). V8.1 confirmed as latest model update (April 30, 2026); V7 remains the documented default for most accounts.' },
+    ],
+    features: [
+      'V8.1 model — faster generation, HD 2K support, improved detail retention',
+      'Omni Reference for consistent characters across generations',
+      'Relax Mode — unlimited slower generations on Standard plan and above',
+      'Stealth Mode — private generations on Pro and Mega plans',
+      'Image-to-video animation',
+      'Discord and web app generation',
+    ],
+    pros: [
+      'Consistently produces the most aesthetically polished, cinematic output of any major image generator',
+      'Relax Mode on Standard ($30/month) and above gives effectively unlimited generations once fast GPU hours are used',
+      'All plans include full commercial usage rights',
+      'V7/V8.1\'s Omni Reference makes consistent characters across a project significantly easier than earlier versions',
+    ],
+    cons: [
+      'No free tier or trial — $10/month minimum just to generate a first image',
+      'No official API — cannot be integrated into apps or automated workflows',
+      'Images on Basic and Standard plans are public by default; private generation requires the $60/month Pro plan',
+      'Billing is GPU-time based, not a simple image quota — heavy users can exhaust fast hours faster than expected',
+    ],
+    pricingBreakdown: [
+      { tier: 'Basic', price: '$10/month', highlight: '~3.3 fast GPU hours/month · no Relax Mode · public gallery · commercial use included' },
+      { tier: 'Standard', price: '$30/month', highlight: '~15 fast GPU hours · unlimited Relax Mode · public gallery · commercial use' },
+      { tier: 'Pro', price: '$60/month', highlight: '~30 fast GPU hours · unlimited Relax Mode · Stealth Mode (private generations) · commercial use' },
+      { tier: 'Mega', price: '$120/month', highlight: 'Highest fast GPU allowance · unlimited Relax Mode · Stealth Mode · commercial use for larger teams' },
+    ],
+  },
+
+  // IMAGE
+  {
+    id: 'i5', slug: 'stable-diffusion',
+    name: 'Stable Diffusion', tagline: 'Free, open-source AI image generation you can run on your own hardware',
+    description: 'Stable Diffusion is the leading open-weight AI image model family from Stability AI, distributed free for local use under a permissive community licence (free for organisations under $1M annual revenue). It can be run locally via ComfyUI or AUTOMATIC1111, or accessed through Stability AI\'s hosted DreamStudio web app and API on a pay-per-credit basis — with no subscription required.',
+    category: Category.IMAGE, affiliateLink: 'https://stability.ai', // No public affiliate programme — monitor stability.ai
+    iconName: 'Layers', color: '#0ea5e9', accentColor: '#0284c7',
+    userBadge: 'Free & open-source', pricing: 'Free (self-hosted) + DreamStudio from $10/1,000 credits', bestFor: 'Developers, researchers and creators who want full control without a subscription',
+    notForYou: 'Anyone without a capable GPU (8GB+ VRAM) who wants a zero-setup experience — running Stable Diffusion locally requires hardware and some technical comfort with ComfyUI or AUTOMATIC1111. If you want polished output with no setup at all, Midjourney or Leonardo.ai are simpler starting points.',
+    lastTestedISO: '2026-06-13',
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free forever for local/self-hosted use (under $1M revenue, community licence)',
+      paid: 'DreamStudio ~₹830 for 1,000 credits (~5,000 basic images)',
+      note: 'DreamStudio is pay-as-you-go credits, not a subscription — billed in USD via international card. No INR billing confirmed. Local use on your own GPU has no ongoing cost beyond electricity/hardware.',
+    },
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: fully free for local/self-hosted use under the Community Licence; DreamStudio credits at $10 per 1,000 (~5,000 basic 512x512 images, fewer for higher-resolution/step-count generations).' },
+    ],
+    features: [
+      'Open-weight models (SD 3.5 and earlier) downloadable from Hugging Face',
+      'ControlNet for precise composition, pose and structure control',
+      'Custom LoRA fine-tuning on your own datasets',
+      'ComfyUI and AUTOMATIC1111 community interfaces',
+      'DreamStudio hosted web app and API (no local GPU required)',
+      '2026 multimodal expansion: Stable Video, Stable Audio, SPAR3D (image-to-3D)',
+    ],
+    pros: [
+      'Genuinely free for unlimited local generation — no subscription, no per-image cost beyond hardware',
+      'Full customisation: fine-tune custom models and LoRAs for consistent brand or character styles',
+      'On-premise generation keeps sensitive prompts and outputs entirely private',
+      'SD 3.5 Large quality rivals Midjourney V7 for photorealistic output according to independent comparisons',
+    ],
+    cons: [
+      'Requires a capable GPU (8GB+ VRAM recommended) for local use — cloud/DreamStudio costs apply otherwise',
+      'ComfyUI and AUTOMATIC1111 have a real learning curve compared to Midjourney or Leonardo\'s simple prompt boxes',
+      'DreamStudio\'s credit system is not a flat subscription, making cost prediction harder for high-volume use',
+      'SD3\'s licence is more restrictive than SDXL\'s — check current terms before commercial use of newer models',
+    ],
+    pricingBreakdown: [
+      { tier: 'Self-hosted', price: '$0', highlight: 'Free, open-weight models · unlimited local generations · requires your own GPU (8GB+ VRAM)' },
+      { tier: 'DreamStudio credits', price: '$10 / 1,000 credits', highlight: 'No subscription · ~5,000 basic 512x512 images or fewer high-res/step-count generations · 25–200 free credits on signup' },
+      { tier: 'Stability API', price: '~$0.002–$0.04/image', highlight: 'Pay-per-generation API · SDXL cheapest, Stable Image Ultra most expensive per credit · integrate into your own apps' },
+    ],
+  },
 ];
 
 // ── FAQ data per tool — powers FAQPage schema + visible accordions ─────────
