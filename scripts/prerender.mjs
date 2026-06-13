@@ -937,13 +937,20 @@ const BLOG_OG_MAP = {
   'ai-ecosystem-growth-report-2026':                    `${SITE}/og-tool-review.webp`,
   'best-ai-chatbot-2026':                               `${SITE}/og-compare.webp`,
   // Additional posts missing from earlier map
-  'best-ai-writing-tools-2026':                         `${SITE}/og-blog-writing.webp`,
-  'best-free-ai-writing-tools-2026':                    `${SITE}/og-blog-writing.webp`,
-  'is-grammarly-premium-worth-it-2026':                 `${SITE}/og-blog-writing.webp`,
+  // I-02: Upgraded from root-level fallback — actual /og/blog/ file exists on disk
+  'best-ai-writing-tools-2026':                         `${SITE}/og/blog/best-ai-writing-tools-2026.webp`,
+  // I-02: These two have post.ogImage set directly in BLOG_POSTS (takes priority),
+  // but updating map entries for consistency and future-proofing
+  'best-free-ai-writing-tools-2026':                    `${SITE}/og/blog/best-free-ai-writing-tools-2026.webp`,
+  'is-grammarly-premium-worth-it-2026':                 `${SITE}/og/blog/is-grammarly-premium-worth-it-2026.webp`,
   'best-ai-tools-for-freelancers-2026':                 `${SITE}/og/blog/best-ai-tools-for-freelancers-2026.webp`,
   // Week 3: new blog posts
-  'best-ai-email-marketing-tools-2026':              `${SITE}/og-blog-marketing.webp`,
-  'best-ai-tools-for-youtube-creators-2026':         `${SITE}/og/blog/best-ai-tools-for-youtubers-2026.webp`,
+  // I-02 Fix: og-blog-marketing.webp does not exist — replaced with existing og-blog-writing.webp
+  'best-ai-email-marketing-tools-2026':              `${SITE}/og-blog-writing.webp`,
+  // I-01+I-02 Fix: was pointing to /og/blog/best-ai-tools-for-youtubers-2026.webp (file does not exist).
+  // This post now uses the canonical URL of the older post, so sharing the same
+  // root-level video OG is correct — both posts represent the same topic cluster.
+  'best-ai-tools-for-youtube-creators-2026':         `${SITE}/og-blog-video.webp`,
 };
 
 function resolveOgImage(slug) {
@@ -2610,10 +2617,15 @@ console.log('\nBlog pages:');
 }
 
 // ── Week 3: Individual blog post pages (/blog/:slug) ──────────────────────────
-// FIXED: Canonical overrides removed — these posts have completely different search intent
-// and audiences. Pointing them at best-ai-writing-tools-2026 was blocking Google from
-// indexing them at their own URLs.
+// I-01 Fix: YouTube cannibalization canonical override.
+// Both posts target "best ai tools youtubers 2026" (2K–5K/mo).
+// The newer /youtube-creators post defers canonical to the older /youtubers post,
+// consolidating all ranking signals on one URL. The creators post stays indexed at
+// its own URL for direct traffic; it just doesn't compete with itself in SERPs.
+// NOTE: Do NOT add writing-tools overrides back here — those posts have different
+// search intent and audiences. The YouTube pair is a true keyword duplicate.
 const BLOG_CANONICAL_OVERRIDES = {
+  'best-ai-tools-for-youtube-creators-2026': `${SITE}/blog/best-ai-tools-for-youtubers-2026/`,
 };
 
 // India-specific blog slugs — need en-IN hreflang
