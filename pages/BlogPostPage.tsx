@@ -494,17 +494,54 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
               border: `1px solid ${C.a1brd}`,
               borderRadius: 10,
               padding: '14px 20px',
-              marginBottom: 28,
+              marginBottom: 16,
               fontSize: 15,
               lineHeight: 1.65,
               color: C.txt,
             }}
           >
-            <span style={{ fontWeight: 700, color: C.a1, marginRight: 6 }}>
-              Quick answer:
+            <span className="qa-label" style={{ fontWeight: 700, color: C.a1, marginRight: 6 }}>
+              Quick Answer:
             </span>
             {post.excerpt}
           </div>
+        )}
+
+        {/* Task 6 (GEO/EEAT): Expert opinion blockquote — rendered only when myTake is populated.
+            AI engines (Perplexity, ChatGPT, Google AIO) prioritise labelled expert opinions
+            when selecting content to cite. The cite attribute links back to the About page
+            for author authority. Placed directly after the Quick Answer box so it appears
+            above the fold alongside the primary answer signal. */}
+        {post.myTake && (
+          <blockquote
+            cite="/about/"
+            style={{
+              margin: '0 0 28px',
+              padding: '14px 20px',
+              background: C.surf,
+              border: `1px solid ${C.brdSm}`,
+              borderLeft: `3px solid ${C.a1}`,
+              borderRadius: '0 10px 10px 0',
+            }}
+          >
+            <p style={{
+              fontSize: 15,
+              fontStyle: 'italic',
+              color: C.txt,
+              lineHeight: 1.7,
+              margin: '0 0 8px',
+            }}>
+              &ldquo;{post.myTake}&rdquo;
+            </p>
+            <footer style={{
+              fontSize: 13,
+              color: C.mut2,
+              fontWeight: 600,
+              fontStyle: 'normal',
+            }}>
+              — {post.author}, AI Nexus
+            </footer>
+          </blockquote>
         )}
 
         {/* Table of Contents */}

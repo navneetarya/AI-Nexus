@@ -34,7 +34,7 @@ function FeatureComparisonTable({ rows, toolA, toolB }: { rows: FeatureRow[]; to
           <thead>
             <tr style={{ background: C.surf2 }}>
               {['Feature', toolA, toolB, 'Winner'].map((h, i) => (
-                <th key={h} style={{
+                <th key={h} scope="col" style={{
                   padding: '10px 14px', textAlign: 'left', fontWeight: 700, fontSize: 11.5,
                   color: i === 0 ? C.mut2 : i === 1 ? C.a1 : i === 2 ? '#6366f1' : C.mut,
                   borderBottom: `1px solid ${C.brdSm}`, whiteSpace: 'nowrap' as const,
@@ -83,7 +83,7 @@ function PricingTable({ pricing }: { pricing: ComparePricing }) {
           <thead>
             <tr style={{ background: C.a1 }}>
               {['Tool', 'Free Plan', 'Starting Price', 'Paid From', 'Best For'].map(h => (
-                <th key={h} style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 600, fontSize: 12, color: '#fff', whiteSpace: 'nowrap' }}>{h}</th>
+                <th key={h} scope="col" style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 600, fontSize: 12, color: '#fff', whiteSpace: 'nowrap' }}>{h}</th>
               ))}
             </tr>
           </thead>
@@ -388,7 +388,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
             <thead>
               <tr style={{ background: C.a1, color: '#fff' }}>
                 {['Tool', 'Price/mo', 'USD/mo', 'Free plan', 'AI captions', 'Platforms', 'Best for'].map(h => (
-                  <th key={h} style={{ padding: '12px 14px', textAlign: 'left', fontWeight: 600, whiteSpace: 'nowrap', fontSize: 12 }}>{h}</th>
+                  <th key={h} scope="col" style={{ padding: '12px 14px', textAlign: 'left', fontWeight: 600, whiteSpace: 'nowrap', fontSize: 12 }}>{h}</th>
                 ))}
               </tr>
             </thead>

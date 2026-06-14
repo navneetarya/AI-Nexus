@@ -114,3 +114,56 @@ export interface FilterState {
   search: string;
   category: Category;
 }
+
+// ── BlogPost — central type for all blog/*.ts files ──────────────────────────
+// Imported by blog/index.ts and re-exported as `BlogPost` for consumers.
+export interface BlogPost {
+  slug: string;
+  title: string;
+  seoTitle: string;
+  metaDescription: string;
+  datePublished: string;   // ISO 8601 — "2026-05-28"
+  dateModified: string;    // ISO 8601 — "2026-06-14"
+  author: string;
+  category: string;
+  readTime: string;        // e.g. "9 min read"
+  ogImage?: string;        // Absolute URL to OG image
+  excerpt?: string;        // 1–2 sentence answer shown in the Quick Answer box
+  content: string;         // Full HTML body of the post
+
+  /** FAQs — rendered in the "Readers Also Ask" + "FAQ" sections and FAQ schema */
+  faqs: { q: string; a: string }[];
+
+  /** Optional Pros & Cons rendered as a two-column card after article body */
+  proscons?: {
+    pros: string[];
+    cons: string[];
+  };
+
+  /** Optional outbound citations rendered as a Sources section (EEAT trust signal) */
+  outboundCitations?: {
+    url: string;
+    label: string;
+  }[];
+
+  /** Optional explicit word count used in Article JSON-LD */
+  wordCount?: number;
+
+  /**
+   * Task 6 (GEO/EEAT): Editor's personal take — rendered as a semantic
+   * <blockquote> with "— Navneet Arya, AI Nexus" attribution immediately
+   * after the Quick Answer excerpt box.
+   *
+   * Use 1–2 sentences in first-person present tense.
+   * AI engines (Perplexity, ChatGPT, Google AIO) prioritise labelled expert
+   * opinions when selecting content to cite — this field satisfies that signal.
+   *
+   * Example:
+   *   myTake: "Fireflies.ai is the meeting tool I'd recommend to anyone running
+   *            more than five remote calls a week — the CRM sync alone saves 30
+   *            minutes of manual data entry per meeting."
+   *
+   * Populate for the top 10 highest-traffic posts first.
+   */
+  myTake?: string;
+}
