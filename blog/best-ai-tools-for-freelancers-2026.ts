@@ -14,6 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '6 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-for-freelancers-2026.webp',
   excerpt: 'The best AI tools for freelancers in 2026 are: Grammarly (free — improves every client email and deliverable), Rytr ($9/month — write proposals and content 3x faster), Canva AI (free — create professional graphics without a designer), and PhotoRoom ($10/month — professional product photos from a phone). These four tools cover writing, design, and content creation — the most common freelance workflows — and three of them have a usable free plan.',
   faqs: [
     {

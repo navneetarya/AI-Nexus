@@ -17,6 +17,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Guides',
   readTime: '10 min read',
+  ogImage: 'https://ainexustools.online/og/blog/how-to-use-ai-for-content-creation-2026.webp',
   excerpt: 'AI content creation in 2026 is not about replacing your ideas — it is about cutting the production time between your idea and a finished piece of content by 60–80%. Here is the full workflow I use personally, broken down by content type.',
   faqs: [
     {

@@ -16,6 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'image',
   readTime: '9 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-headshot-tools-linkedin-2026.webp',
   excerpt: 'The best AI headshot tools for LinkedIn in 2026 — compared across output quality, speed, pricing, and free plan availability. HeadshotPro leads, but the right pick depends on your budget and use case.',
   faqs: [
     {

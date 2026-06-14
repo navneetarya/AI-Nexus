@@ -10,6 +10,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Research',
   readTime: '10 min read',
+  ogImage: 'https://ainexustools.online/og/blog/ai-api-pricing-comparison-2026.webp',
   excerpt: 'AI API costs vary by 100x between providers and models. This independent analysis compares real 2026 pricing across OpenAI, Anthropic, Google, and open-source to help developers choose the most cost-effective option for their use case.',
   faqs: [
     { q: 'Which AI API is the cheapest in 2026?', a: 'Meta Llama 3 hosted via providers like Together AI or Groq is the cheapest capable AI API in 2026 — roughly $0.20–0.80 per million tokens. Among proprietary APIs, Google Gemini 1.5 Flash is the most affordable at $0.075 per million input tokens for most use cases.' },

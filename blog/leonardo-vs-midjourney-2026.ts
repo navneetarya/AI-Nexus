@@ -16,6 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '7 min read',
+  ogImage: 'https://ainexustools.online/og/blog/leonardo-vs-midjourney-2026.webp',
   excerpt: 'Midjourney has no free plan and costs $10/month minimum. Leonardo.ai gives you 150 free credits every day with no credit card required. Here is an honest breakdown of what you actually get with each tool — and who should choose which in 2026.',
   faqs: [
     {

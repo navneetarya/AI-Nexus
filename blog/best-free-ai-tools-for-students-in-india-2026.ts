@@ -19,6 +19,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '8 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-free-ai-tools-for-students-in-india-2026.webp',
   excerpt: 'Every tool on this list has a permanent free plan that works from any Indian college campus — no VPN, no dollar card, no trial that expires before your next deadline. INR pricing included where it applies.',
   faqs: [
     {

@@ -17,6 +17,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Video',
   readTime: '7 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-invideo-alternatives-2026.webp',
   excerpt:
     'InVideo AI is popular — but it\'s not the only way to build a faceless YouTube channel. Three alternatives compared that do specific jobs better — honest breakdown for 2026.',
   faqs: [

@@ -16,6 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '6 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-podcast-tools-2026.webp',
   excerpt: 'AI has changed podcast production more than any other content format in the last two years. Here are the tools that actually reduce your editing time — and which ones are worth paying for.',
   faqs: [
     {

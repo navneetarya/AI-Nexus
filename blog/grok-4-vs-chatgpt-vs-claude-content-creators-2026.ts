@@ -20,7 +20,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '11 min read',
-  ogImage: 'https://ainexustools.online/og-blog-writing.webp',
+  ogImage: 'https://ainexustools.online/og/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026.webp',
   excerpt: 'Grok 4.3 launched April 30, 2026. GPT-5.5 launched April 23. Millions of content creators are asking the same question right now: which one should I use for my writing workflow? The short answer: Claude for quality-first long-form drafts, ChatGPT for versatile everyday content, and Grok 4 for real-time research-backed writing. Here is the full breakdown by use case.',
   faqs: [
     {

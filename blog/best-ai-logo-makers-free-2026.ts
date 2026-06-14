@@ -15,6 +15,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'india',
   readTime: '9 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-logo-makers-free-2026.webp',
   excerpt: 'The best free AI logo makers of 2026 — compared across design quality, customisation, and free plan limits. Now includes INR pricing and India-specific guidance for creators and freelancers.',
   faqs: [
     {

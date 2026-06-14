@@ -14,6 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '6 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-podcastle-alternatives.webp',
   excerpt: 'Podcastle is excellent for recording — but it\'s not the right fit for every podcaster. The best alternatives compared in depth, from Descript\'s text-based editing to Riverside\'s studio-quality remote recording.',
   faqs: [
     {

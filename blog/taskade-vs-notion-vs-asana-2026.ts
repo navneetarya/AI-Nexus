@@ -16,6 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',
+  ogImage: 'https://ainexustools.online/og/blog/taskade-vs-notion-vs-asana-2026.webp',
   excerpt: 'Three of the most-compared productivity tools in 2026 — but they solve different problems. Taskade automates execution. Notion organises knowledge. Asana manages enterprise workflows. Here is how to pick the right one for your freelance stack.',
   faqs: [
     {

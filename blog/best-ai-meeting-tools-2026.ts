@@ -17,6 +17,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-meeting-tools-2026.webp',
   excerpt: 'The best AI meeting tools in 2026 — compared across transcription accuracy, action item extraction, free plan generosity, and pricing. Fireflies.ai leads for full-stack meeting intelligence with CRM sync; Otter.ai wins for real-time live transcription; Fathom stands out with a genuinely unlimited free tier for individuals.',
   faqs: [
     {

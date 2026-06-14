@@ -19,7 +19,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '10 min read',
-  ogImage: 'https://ainexustools.online/og-tool-review.webp',
+  ogImage: 'https://ainexustools.online/og/blog/cursor-ai-review-2026.webp',
   excerpt: 'Cursor is the most-discussed AI code editor of 2026 — search interest for "cursor ai review" has climbed steadily since its viral launch. Built on VS Code with deep model integration, it promises to replace GitHub Copilot for serious developers. This review covers pricing, the free vs Pro difference, Tab completion, Composer, and Agent mode — with an honest verdict on whether it is worth the $20/month.',
   faqs: [
     {

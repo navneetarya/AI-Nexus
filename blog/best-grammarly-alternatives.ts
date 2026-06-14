@@ -14,6 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-grammarly-alternatives.webp',
   excerpt: 'The best Grammarly alternatives in 2026 are QuillBot (best for paraphrasing and rewriting — free plan available), LanguageTool (best free real-time grammar checker for non-English writers), and Rytr ($9/month — best if you need to generate new content, not just edit). QuillBot wins for students who need paraphrasing. LanguageTool wins for non-English writing. Neither matches Grammarly\'s real-time tone detection, but both cost less.',
   faqs: [
     {

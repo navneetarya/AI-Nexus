@@ -16,6 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '9 min read',
+  ogImage: 'https://ainexustools.online/og/blog/jasper-ai-alternatives.webp',
   excerpt: "Jasper is powerful — but at $49/month it's one of the most expensive AI writing tools on the market. Every major alternative compared so you can get the same quality output for less.",
   faqs: [
     {

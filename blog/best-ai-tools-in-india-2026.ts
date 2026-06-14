@@ -15,6 +15,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-in-india-2026.webp',
   excerpt: 'Most AI tool roundups list USD prices and ignore Indian creators entirely. This one is written from India, with INR pricing, GST notes, and honest answers to questions Indian users actually ask.',
   faqs: [
     {

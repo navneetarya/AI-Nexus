@@ -18,6 +18,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Video',
   readTime: '10 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-for-youtube-creators-2026.webp',
   excerpt: 'Munch AI leads for AI-powered video repurposing intelligence, ElevenLabs delivers the most realistic voice cloning for narration-driven channels, and Opus.pro automates your entire Shorts pipeline. This guide independently researches all three — plus InVideo AI and VidIQ — so you can build the right YouTube creator stack for 2026.',
   faqs: [
     {

@@ -17,6 +17,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'india',
   readTime: '7 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-for-freelancers-india-2026.webp',
   excerpt: 'Indian freelancers have specific needs global AI tool guides miss — INR pricing, free tiers without a credit card, and tools that work for the content formats Indian clients actually buy. Here is what the research shows.',
   faqs: [
     {

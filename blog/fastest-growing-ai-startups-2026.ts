@@ -10,6 +10,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Research',
   readTime: '10 min read',
+  ogImage: 'https://ainexustools.online/og/blog/fastest-growing-ai-startups-2026.webp',
   excerpt: 'Which AI startups are growing fastest in 2026? This independent analysis examines revenue growth, user adoption, and funding rounds to identify the standout companies. Based on public data and verified reports.',
   faqs: [
     { q: 'Which AI startup is growing the fastest in 2026?', a: 'Perplexity AI was among the fastest-growing AI startups by user count in 2026, reportedly reaching 100M+ monthly users. Cursor (the AI coding editor) achieved significant ARR growth in 2025-2026. Anthropic (Claude) and Mistral AI saw major funding rounds and product adoption acceleration. Growth rates in AI are measured across different metrics — users, revenue, and funding are often cited differently.' },

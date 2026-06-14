@@ -10,6 +10,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '7 min read',
+  ogImage: 'https://ainexustools.online/og/blog/cheapest-ai-coding-tools-2026.webp',
   excerpt: 'AI coding tools range from free to $40/month. This pricing analysis compares what you actually get at each tier — and identifies the best value options for developers on a budget.',
   faqs: [
     { q: 'What is the cheapest AI coding tool in 2026?', a: 'The cheapest AI coding tools with genuine functionality are: Codeium (completely free for individuals — unlimited completions), Replit free plan (browser-based IDE with basic AI), and GitHub Copilot free tier (limited completions). For paid tools, Replit Core at $7/month is the most affordable full-featured AI coding environment.' },

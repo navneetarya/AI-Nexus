@@ -16,6 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '9 min read',
+  ogImage: 'https://ainexustools.online/og/blog/ai-tools-for-students-free-2026.webp',
   excerpt: 'The best free AI tools for students in 2026 are: Grammarly (free grammar and tone checker for essays — no credit card), QuillBot (free paraphrasing and summarisation tool), Perplexity (free AI search engine with cited sources for research), and Replit (free browser-based coding environment for CS assignments). All four have permanent free plans — not trials — that cover real student workloads without a subscription.',
   faqs: [
     {

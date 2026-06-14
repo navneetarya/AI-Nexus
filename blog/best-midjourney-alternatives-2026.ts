@@ -14,6 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '9 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-midjourney-alternatives-2026.webp',
   excerpt: 'Midjourney is brilliant but expensive and Discord-only. Four alternatives compared on the same prompts — which produces comparable quality with better access and pricing in 2026.',
   faqs: [
     {

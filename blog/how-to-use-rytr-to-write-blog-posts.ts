@@ -16,6 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '6 min read',
+  ogImage: 'https://ainexustools.online/og/blog/how-to-use-rytr-to-write-blog-posts.webp',
   excerpt: 'Rytr can cut your blog post first-draft time by 60% if you know which templates to use and how to brief it properly. Here\'s the exact step-by-step workflow I use.',
   faqs: [
     {

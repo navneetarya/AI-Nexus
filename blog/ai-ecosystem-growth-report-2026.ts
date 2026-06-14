@@ -10,6 +10,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Research',
   readTime: '11 min read',
+  ogImage: 'https://ainexustools.online/og/blog/ai-ecosystem-growth-report-2026.webp',
   excerpt: 'The AI tools market in 2026 has crossed $50B in annual revenue and is accelerating. This independent research report analyses adoption trends, growth categories, and the tools gaining the most ground.',
   faqs: [
     { q: 'How big is the AI tools market in 2026?', a: 'The global AI software market is estimated at $50–90B in 2026 depending on the definition used (including foundation model APIs, AI-native applications, and AI-augmented software). AI-specific productivity tools and writing assistants are among the fastest-growing segments, with individual tool revenues in the hundreds of millions for leading platforms.' },

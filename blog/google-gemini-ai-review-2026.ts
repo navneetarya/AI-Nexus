@@ -18,7 +18,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '10 min read',
-  ogImage: 'https://ainexustools.online/og-tool-review.webp',
+  ogImage: 'https://ainexustools.online/og/blog/google-gemini-ai-review-2026.webp',
   excerpt: 'Gemini 3.1 Pro launched recently and search interest is up 550%. The big question for writers: can Gemini replace ChatGPT — and maybe Grammarly too — for your daily writing workflow? After testing both tools across five real writing tasks, here is the honest answer.',
   faqs: [
     {

@@ -17,6 +17,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Content Creation',
   readTime: '10 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-for-content-creators-free-2026.webp',
   excerpt: 'Research covers 8 AI tools and their free plans. Here is what content creators can actually do for free in 2026 — and what requires a paid plan.',
   faqs: [
     {

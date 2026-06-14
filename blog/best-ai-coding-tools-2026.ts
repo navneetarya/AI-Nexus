@@ -14,6 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '8 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-coding-tools-2026.webp',
   excerpt: 'AI coding tools have gone from novelty to necessity. The four biggest players compared on real-world projects — which actually saves time and which is overhyped in 2026.',
   faqs: [
     {

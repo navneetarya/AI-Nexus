@@ -17,6 +17,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Marketing',
   readTime: '10 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-email-marketing-tools-2026.webp',
   excerpt: 'The best AI email marketing tools in 2026 — compared across automation depth, AI feature quality, free plan generosity, and pricing. GetResponse leads for full-stack email + automation; Brevo wins on value; Mailchimp on free plan simplicity for beginners.',
   faqs: [
     {

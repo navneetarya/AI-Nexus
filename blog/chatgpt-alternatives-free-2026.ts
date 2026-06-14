@@ -14,6 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',
+  ogImage: 'https://ainexustools.online/og/blog/chatgpt-alternatives-free-2026.webp',
   excerpt: 'The best free ChatGPT alternatives in 2026 are: Perplexity (best for research — free, unlimited searches with cited sources), Claude by Anthropic (free — stronger at nuanced writing and analysis), Google Gemini (free — best integrated with Google Workspace and real-time search), and Microsoft Copilot (free — built into Edge browser and Windows). All four are permanently free with no credit card required. Perplexity is the best choice for research; Claude is the best for writing quality.',
   faqs: [
     {

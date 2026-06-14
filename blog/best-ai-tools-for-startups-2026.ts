@@ -10,6 +10,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-for-startups-2026.webp',
   excerpt: 'Startups that use AI effectively in 2026 operate with the output of a much larger team. These are the tools that give you the highest leverage per dollar spent.',
   faqs: [
     { q: 'What are the best AI tools for startups in 2026?', a: 'The highest-leverage AI tools for startups are: Gamma (pitch decks in 2 minutes), Claude (writing, research, and content), Canva AI (design without a designer), Notion AI (documentation and knowledge management), and GitHub Copilot (for technical founders building product). Combined cost: under $70/month for a team of two.' },

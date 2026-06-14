@@ -16,7 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'AI Comparison',
   readTime: '10 min read',
-  ogImage: 'https://ainexustools.online/og-compare.webp',
+  ogImage: 'https://ainexustools.online/og/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026.webp',
   excerpt: 'ChatGPT, Claude, and Gemini all offer free plans with genuinely useful capabilities in 2026. Tested all three on the same five freelance tasks — blog writing, social captions, research summaries, email drafting, and brainstorming — to find out which free tier actually delivers. The honest verdict: use all three together and cover 80% of your freelance AI needs without spending a penny.',
   faqs: [
     {

@@ -14,6 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Marketing',
   readTime: '9 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-marketing-tools-2026.webp',
   excerpt: 'I ran real SEO campaigns and social media schedules through four AI marketing tools. Here\'s which ones actually move the needle — and which are just expensive content spinners.',
   faqs: [
     {

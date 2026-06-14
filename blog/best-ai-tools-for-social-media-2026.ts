@@ -15,6 +15,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Social Media',
   readTime: '7 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-for-social-media-2026.webp',
   excerpt: 'Social media managers who use the right AI tools produce 3–5x more content in the same time — without sacrificing quality. Here are the tools that actually deliver in 2026.',
   faqs: [
     {

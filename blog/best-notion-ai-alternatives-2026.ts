@@ -16,6 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-notion-ai-alternatives-2026.webp',
   excerpt:
     'Notion AI costs $10/month on top of your Notion plan. Before you pay, read this — I found three alternatives that do more for less.',
   faqs: [

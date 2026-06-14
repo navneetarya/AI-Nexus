@@ -16,6 +16,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',
+  ogImage: 'https://ainexustools.online/og/blog/ai-tools-for-teachers-2026.webp',
   excerpt: 'Teachers are drowning in admin work. Four AI tools compared across real teaching tasks — lesson planning, presentations, feedback, and worksheet creation — to find which ones actually save time.',
   faqs: [
     {

@@ -10,6 +10,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Video',
   readTime: '9 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-for-youtubers-2026.webp',
   excerpt: 'AI has made YouTube content creation dramatically faster in 2026. These tools handle scripting, editing, voiceover, thumbnails, and SEO optimisation — saving creators 5–10 hours per video.',
   faqs: [
     { q: 'What is the best AI tool for YouTube creators in 2026?', a: 'Opus Clip is the best AI tool specifically for turning long-form YouTube videos into short-form clips for Shorts, Reels, and TikTok. InVideo AI is the best for creating full faceless YouTube videos from a text prompt. For SEO optimisation and analytics, VidIQ and TubeBuddy are the top tools.' },

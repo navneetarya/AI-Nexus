@@ -10,6 +10,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'Research',
   readTime: '8 min read',
+  ogImage: 'https://ainexustools.online/og/blog/best-free-ai-tool-plans-2026.webp',
   excerpt: 'Not all free AI plans are created equal. Some are genuinely useful; others are barely functional trials. This analysis identifies the AI tools with the most generous, actually useful free plans in 2026.',
   faqs: [
     { q: 'Which AI tools have the best free plans in 2026?', a: 'The most generous free AI plans in 2026 are: Perplexity (unlimited searches with citations), Leonardo.ai (150 tokens/day for image generation), Grammarly (unlimited basic grammar checking), Canva (generous design features), Gamma (400 AI credits for presentations), and Replit (unlimited public projects with AI). All provide enough functionality for regular productive use without paying.' },

@@ -14,7 +14,7 @@ const post: BlogPost = {
   author: 'Navneet Arya',
   category: 'AI Comparison',
   readTime: '12 min read',
-  ogImage: 'https://ainexustools.online/og-compare.webp',
+  ogImage: 'https://ainexustools.online/og/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026.webp',
   excerpt: 'All three cost $20/month. All three promise to transform your workflow. But after running Perplexity Pro, ChatGPT Plus, and Claude Pro through the same five freelance tasks on the same day, it\'s clear they are not interchangeable. Here\'s which one wins for writing, research, editing, social media, and document summarisation — and the honest truth about which tier is actually worth paying for.',
   faqs: [
     {
