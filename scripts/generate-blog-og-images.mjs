@@ -2,7 +2,7 @@
 /**
  * scripts/generate-blog-og-images.mjs
  *
- * Generates 1200×630 WebP OG images for every blog post.
+ * Generates 1200x630 WebP OG images for every blog post.
  * Run once: node scripts/generate-blog-og-images.mjs
  * Images are written to public/og/blog/<slug>.webp
  *
@@ -29,25 +29,25 @@ function accentColor(slug, title) {
   const t = (slug + title).toLowerCase();
   if (t.includes('podcast') || t.includes('audio') || t.includes('voice') || t.includes('podcastle') || t.includes('descript') || t.includes('elevenlabs') || t.includes('murf'))
     return { hex: '#EC4899', r: 236, g: 72,  b: 153 }; // pink  — Audio
-  if (t.includes('video') || t.includes('invideo') || t.includes('pictory') || t.includes('opus'))
-    return { hex: '#F59E0B', r: 245, g: 158, b: 11  }; // amber — Video
+  if (t.includes('video') || t.includes('invideo') || t.includes('pictory') || t.includes('opus') || t.includes('youtube') || t.includes('youtuber'))
+    return { hex: '#F59E0B', r: 245, g: 158, b: 11  }; // amber — Video/YouTube
   if (t.includes('india') || t.includes('inr') || t.includes('indian'))
     return { hex: '#F97316', r: 249, g: 115, b: 22  }; // orange — India
-  if (t.includes('social') || t.includes('marketing') || t.includes('ocoya') || t.includes('buffer'))
-    return { hex: '#10B981', r: 16,  g: 185, b: 129 }; // emerald — Marketing
-  if (t.includes('coding') || t.includes('replit') || t.includes('github') || t.includes('developer'))
-    return { hex: '#8B5CF6', r: 139, g: 92,  b: 246 }; // violet — Coding
+  if (t.includes('social') || t.includes('marketing') || t.includes('ocoya') || t.includes('buffer') || t.includes('email'))
+    return { hex: '#10B981', r: 16,  g: 185, b: 129 }; // emerald — Marketing/Email
+  if (t.includes('coding') || t.includes('replit') || t.includes('github') || t.includes('developer') || t.includes('vibe') || t.includes('cursor') || t.includes('copilot') || t.includes('claude code') || t.includes('api') || t.includes('automation'))
+    return { hex: '#8B5CF6', r: 139, g: 92,  b: 246 }; // violet — Coding/Dev
   if (t.includes('student') || t.includes('teacher') || t.includes('education') || t.includes('free'))
-    return { hex: '#3B82F6', r: 59,  g: 130, b: 246 }; // blue — Education
-  if (t.includes('logo') || t.includes('image') || t.includes('midjourney') || t.includes('leonardo') || t.includes('design') || t.includes('canva'))
-    return { hex: '#06B6D4', r: 6,   g: 182, b: 212 }; // cyan — Image/Design
-  if (t.includes('productivity') || t.includes('notion') || t.includes('taskade') || t.includes('asana'))
-    return { hex: '#14B8A6', r: 20,  g: 184, b: 166 }; // teal — Productivity
-  // Default: writing / AI tools
-  return { hex: '#6366F1', r: 99, g: 102, b: 241 };    // indigo — Writing
+    return { hex: '#3B82F6', r: 59,  g: 130, b: 246 }; // blue — Education/Free
+  if (t.includes('logo') || t.includes('image') || t.includes('midjourney') || t.includes('leonardo') || t.includes('design') || t.includes('canva') || t.includes('headshot') || t.includes('photo'))
+    return { hex: '#06B6D4', r: 6,   g: 182, b: 212 }; // cyan — Image/Design/Headshot
+  if (t.includes('productivity') || t.includes('notion') || t.includes('taskade') || t.includes('asana') || t.includes('meeting') || t.includes('startup') || t.includes('ecosystem') || t.includes('growth'))
+    return { hex: '#14B8A6', r: 20,  g: 184, b: 166 }; // teal — Productivity/Business
+  // Default: writing / comparisons / chatbots / pricing
+  return { hex: '#6366F1', r: 99, g: 102, b: 241 };    // indigo — Writing/Compare
 }
 
-// ── Wrap title text into lines of ≤ maxChars ──────────────────────────────────
+// ── Wrap title text into lines of <= maxChars ──────────────────────────────────
 function wrapText(text, maxChars = 36) {
   const words = text.split(' ');
   const lines = [];
@@ -68,14 +68,20 @@ function wrapText(text, maxChars = 36) {
 function categoryLabel(slug, title) {
   const t = (slug + title).toLowerCase();
   if (t.includes('podcast') || t.includes('audio') || t.includes('voice'))   return 'Audio & Podcast';
-  if (t.includes('video') || t.includes('youtube'))                           return 'AI Video';
-  if (t.includes('social') || t.includes('marketing'))                        return 'Marketing';
-  if (t.includes('coding') || t.includes('developer') || t.includes('replit'))return 'AI Coding';
-  if (t.includes('student') || t.includes('teacher'))                         return 'Education';
+  if (t.includes('video') || t.includes('youtube') || t.includes('youtuber')) return 'AI Video';
+  if (t.includes('email'))                                                      return 'Email Marketing';
+  if (t.includes('social') || t.includes('marketing'))                         return 'Marketing';
+  if (t.includes('cursor') || t.includes('copilot') || t.includes('vibe') || t.includes('claude code')) return 'AI Coding';
+  if (t.includes('coding') || t.includes('developer') || t.includes('replit') || t.includes('api') || t.includes('automation')) return 'AI Coding';
+  if (t.includes('student') || t.includes('teacher'))                          return 'Education';
+  if (t.includes('headshot'))                                                   return 'AI Headshots';
   if (t.includes('logo') || t.includes('image') || t.includes('midjourney') || t.includes('leonardo') || t.includes('canva')) return 'AI Image';
+  if (t.includes('meeting'))                                                    return 'AI Meetings';
+  if (t.includes('startup') || t.includes('ecosystem') || t.includes('growth') || t.includes('fastest')) return 'AI Research';
   if (t.includes('productivity') || t.includes('notion') || t.includes('taskade')) return 'Productivity';
-  if (t.includes('india') || t.includes('inr'))                               return 'AI Tools India';
-  if (t.includes('freelancer'))                                                return 'For Freelancers';
+  if (t.includes('india') || t.includes('inr'))                                return 'AI Tools India';
+  if (t.includes('freelancer'))                                                 return 'For Freelancers';
+  if (t.includes('chatbot') || t.includes('vs') || t.includes('compare') || t.includes('pricing')) return 'AI Comparison';
   return 'AI Writing';
 }
 
@@ -103,17 +109,14 @@ function buildSvg({ slug, title }) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
   <defs>
-    <!-- Dark background gradient -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%"   stop-color="#080C1A"/>
       <stop offset="100%" stop-color="#0F172A"/>
     </linearGradient>
-    <!-- Radial glow behind title -->
     <radialGradient id="glow" cx="40%" cy="50%" r="50%">
       <stop offset="0%"   stop-color="${ac.hex}" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="${ac.hex}" stop-opacity="0"/>
     </radialGradient>
-    <!-- Noise texture for depth -->
     <filter id="noise">
       <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
@@ -122,25 +125,16 @@ function buildSvg({ slug, title }) {
     </filter>
   </defs>
 
-  <!-- Background -->
   <rect width="${W}" height="${H}" fill="url(#bg)"/>
-
-  <!-- Subtle grid dots -->
   <rect width="${W}" height="${H}" fill="none"
     style="background-image:radial-gradient(circle,rgba(255,255,255,.04) 1px,transparent 1px);background-size:32px 32px"/>
-
-  <!-- Glow -->
   <rect width="${W}" height="${H}" fill="url(#glow)"/>
 
-  <!-- Left accent bar -->
   <rect x="0" y="0" width="8" height="${H}" fill="${ac.hex}"/>
 
-  <!-- Subtle top line -->
   <line x1="140" y1="52" x2="${W - 60}" y2="52" stroke="${ac.hex}" stroke-opacity="0.3" stroke-width="1"/>
-  <!-- Subtle bottom line -->
   <line x1="140" y1="${H - 52}" x2="${W - 60}" y2="${H - 52}" stroke="${ac.hex}" stroke-opacity="0.3" stroke-width="1"/>
 
-  <!-- Category pill (top-left) -->
   <rect x="140" y="64" rx="6" ry="6" width="${cat.length * 9 + 28}" height="34" fill="${ac.hex}" fill-opacity="0.18"/>
   <rect x="140" y="64" rx="6" ry="6" width="${cat.length * 9 + 28}" height="34" fill="none" stroke="${ac.hex}" stroke-opacity="0.5" stroke-width="1"/>
   <text x="${154}" y="81"
@@ -149,11 +143,8 @@ function buildSvg({ slug, title }) {
     dominant-baseline="middle" style="letter-spacing:1px;text-transform:uppercase"
   >${escSvg(cat)}</text>
 
-  <!-- Title lines -->
   ${titleSvg}
 
-  <!-- AI Nexus logo area (bottom) -->
-  <!-- Hexagon icon -->
   <polygon
     points="60,${H-58} 76,${H-68} 92,${H-58} 92,${H-38} 76,${H-28} 60,${H-38}"
     fill="${ac.hex}" fill-opacity="0.25" stroke="${ac.hex}" stroke-width="1.5"
@@ -164,7 +155,6 @@ function buildSvg({ slug, title }) {
     text-anchor="middle" dominant-baseline="middle"
   >AI</text>
 
-  <!-- Wordmark -->
   <text x="104" y="${H - 52}"
     font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
     font-size="20" font-weight="800" fill="white"
@@ -176,7 +166,6 @@ function buildSvg({ slug, title }) {
     dominant-baseline="middle"
   >${escSvg(SITE)}</text>
 
-  <!-- Corner accent dot -->
   <circle cx="${W - 60}" cy="${H - 60}" r="4" fill="${ac.hex}" fill-opacity="0.6"/>
   <circle cx="${W - 60}" cy="${H - 60}" r="10" fill="none" stroke="${ac.hex}" stroke-opacity="0.25" stroke-width="1"/>
   <circle cx="${W - 60}" cy="${H - 60}" r="18" fill="none" stroke="${ac.hex}" stroke-opacity="0.12" stroke-width="1"/>
@@ -193,6 +182,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  // ── Batch 1 — original 27 (already generated; re-running is safe) ──────────
   { slug: 'best-ai-writing-tools-2026',                  title: 'Best AI Writing Tools 2026' },
   { slug: 'best-ai-writing-tools-for-beginners-2026',    title: '7 Best AI Writing Tools for Beginners 2026' },
   { slug: 'best-ai-tools-for-freelancers-2026',          title: 'Best AI Tools for Freelancers 2026' },
@@ -214,11 +204,44 @@ const POSTS = [
   { slug: 'best-midjourney-alternatives-2026',           title: 'Best Midjourney Alternatives 2026' },
   { slug: 'best-ai-tools-in-india-2026',                 title: 'Best AI Tools in India 2026' },
   { slug: 'taskade-vs-notion-vs-asana-2026',             title: 'Taskade vs Notion vs Asana 2026' },
-  { slug: 'leonardo-vs-midjourney-2026',                 title: 'Leonardo.ai vs Midjourney 2026' },
+  { slug: 'leonardo-vs-midjourney-2026',                 title: 'Leonardo AI vs Midjourney 2026' },
   { slug: 'best-free-ai-tools-for-students-in-india-2026', title: 'Best Free AI Tools for Students in India 2026' },
-  { slug: 'best-ai-tools-for-freelancers-india-2026',   title: 'Best AI Tools for Freelancers in India 2026' },
-  { slug: 'best-ai-tools-for-content-creators-free-2026', title: 'Best Free AI Tools for Content Creators 2026' },  { slug: 'best-free-ai-writing-tools-2026',             title: 'Best Free AI Writing Tools 2026 — No Credit Card Required' },
-  { slug: 'is-grammarly-premium-worth-it-2026',          title: 'Is Grammarly Premium Worth It in 2026?' },];
+  { slug: 'best-ai-tools-for-freelancers-india-2026',    title: 'Best AI Tools for Freelancers in India 2026' },
+  { slug: 'best-ai-tools-for-content-creators-free-2026', title: 'Best Free AI Tools for Content Creators 2026' },
+  { slug: 'best-free-ai-writing-tools-2026',             title: 'Best Free AI Writing Tools 2026' },
+  { slug: 'is-grammarly-premium-worth-it-2026',          title: 'Is Grammarly Premium Worth It in 2026?' },
+
+  // ── Batch 2 — 23 new/missing posts (Week 1–4 additions) ───────────────────
+
+  // Fix: had ogImage field but .webp file was missing (404 on social share)
+  { slug: 'best-vibe-coding-tools-2026',                 title: 'Best Vibe Coding Tools 2026: Lovable vs Bolt vs v0' },
+  { slug: 'gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026',  title: 'GPT-5.5 vs Claude Opus 4.8 vs Grok 4 (2026)' },
+
+  // Had ogImage pointing to generic webp — now get unique images
+  { slug: 'best-ai-chatbot-2026',                        title: 'Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini' },
+  { slug: 'chatgpt-free-vs-claude-free-vs-gemini-free-2026', title: 'ChatGPT Free vs Claude Free vs Gemini Free 2026' },
+  { slug: 'claude-code-vs-github-copilot-vs-replit-2026', title: 'Claude Code vs GitHub Copilot vs Replit 2026' },
+  { slug: 'cursor-ai-review-2026',                       title: 'Cursor AI Review 2026: Best AI Code Editor?' },
+  { slug: 'google-gemini-ai-review-2026',                title: 'Google Gemini AI Review 2026' },
+  { slug: 'grok-4-vs-chatgpt-vs-claude-content-creators-2026', title: 'Grok 4 vs ChatGPT vs Claude for Creators 2026' },
+  { slug: 'perplexity-ai-review-2026',                   title: 'Perplexity AI Review 2026: Worth It vs Google?' },
+  { slug: 'perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026', title: 'Perplexity Pro vs ChatGPT Plus vs Claude Pro 2026' },
+
+  // No ogImage field at all — completely missing
+  { slug: 'ai-api-pricing-comparison-2026',              title: 'AI API Pricing Comparison 2026' },
+  { slug: 'ai-ecosystem-growth-report-2026',             title: 'AI Ecosystem Growth Report 2026' },
+  { slug: 'best-ai-email-marketing-tools-2026',          title: 'Best AI Email Marketing Tools 2026' },
+  { slug: 'best-ai-headshot-tools-linkedin-2026',        title: 'Best AI Headshot Tools for LinkedIn 2026' },
+  { slug: 'best-ai-meeting-tools-2026',                  title: 'Best AI Meeting Tools 2026' },
+  { slug: 'best-ai-tools-for-automation-engineers-2026', title: 'Best AI Tools for Automation Engineers 2026' },
+  { slug: 'best-ai-tools-for-developers-2026',           title: 'Best AI Tools for Developers 2026' },
+  { slug: 'best-ai-tools-for-startups-2026',             title: 'Best AI Tools for Startups 2026' },
+  { slug: 'best-ai-tools-for-youtube-creators-2026',     title: 'Best AI Tools for YouTube Creators 2026' },
+  { slug: 'best-ai-tools-for-youtubers-2026',            title: 'Best AI Tools for YouTubers 2026' },
+  { slug: 'best-free-ai-tool-plans-2026',                title: 'Best Free AI Tool Plans 2026' },
+  { slug: 'cheapest-ai-coding-tools-2026',               title: 'Cheapest AI Coding Tools in 2026' },
+  { slug: 'fastest-growing-ai-startups-2026',            title: 'Fastest Growing AI Startups 2026' },
+];
 
 // ── Generate ─────────────────────────────────────────────────────────────────
 console.log(`\n🎨  Generating ${POSTS.length} blog OG images → public/og/blog/\n`);
@@ -241,4 +264,4 @@ for (const post of POSTS) {
 }
 
 console.log(`\n✅  Done. ${ok} images generated${fail ? `, ${fail} failed` : ''}.`);
-console.log(`   Add ?public/og/blog/ to your .gitignore exceptions if needed.\n`);
+console.log(`   All images written to public/og/blog/\n`);
