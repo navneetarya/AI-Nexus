@@ -2996,8 +2996,92 @@ const INDIA_BLOG_SLUGS = new Set([
   'best-ai-tools-for-freelancers-india-2026',
 ]);
 
+// ── TASK 1 (AEO-Critical): Extract ranked tools from a best-* blog post ─────
+// AIO engines (Google AIO, Perplexity, ChatGPT Search) parse "best X" pages for
+// ranked list answers. Without ItemList schema the order is invisible to machine
+// extraction. With it, each position + tool name is directly parseable so AIO
+// engines can cite "#1 Grammarly" or "#2 Rytr" with confidence.
+//
+// Three-tier extraction strategy (in priority order):
+//   Tier 1 — post.mentionedTools[]   : explicit author curation (authoritative)
+//   Tier 2 — href="/tools/{slug}"    : internal tool page links in the HTML
+//   Tier 3 — numbered H2 headings    : "#N Tool —" or "N. Tool —" patterns
+//
+// For site tools (slug in TOOLS array): url points to /tools/{slug}/ for rich
+//   internal linking signal.
+// For external tools (not in TOOLS): name included, url omitted — still valid
+//   per schema.org ListItem spec (only position + name are required).
+// Returns [] when no tools can be reliably detected; no ItemList is injected.
+function extractBestPostTools(post, blogContent) {
+  const toolBySlug = new Map(TOOLS.map(t => [t.slug, t]));
+  const toolByName = new Map(TOOLS.map(t => [t.name.toLowerCase(), t]));
+  const seen  = new Set();
+  const items = [];
+
+  function addBySlug(slug) {
+    if (!slug || seen.has(slug)) return;
+    const tool = toolBySlug.get(slug);
+    if (!tool) return;             // slug not in TOOLS — skip
+    seen.add(slug);
+    items.push({ name: tool.name, url: `${SITE}/tools/${slug}/`, description: tool.tagline || '' });
+  }
+
+  function addByName(rawName) {
+    const clean = rawName.trim();
+    if (!clean) return;
+    const key = clean.toLowerCase();
+    if (seen.has(key)) return;
+    seen.add(key);
+    const tool = toolByName.get(key);
+    if (tool) {
+      // Matched a site tool by display name — use its slug URL
+      items.push({ name: tool.name, url: `${SITE}/tools/${tool.slug}/`, description: tool.tagline || '' });
+    } else {
+      // External tool not in TOOLS: include name only (URL omitted)
+      items.push({ name: clean });
+    }
+  }
+
+  // ── Tier 1: explicit mentionedTools array on the post object ────────────────
+  if (post.mentionedTools?.length) {
+    post.mentionedTools.forEach(addBySlug);
+    return items;   // authoritative — skip further parsing
+  }
+
+  if (!blogContent) return items;
+
+  // ── Tier 2: href="/tools/{slug}" links found in the compiled blog HTML ───────
+  // Internal links the author deliberately added to tool review pages are the
+  // strongest signal after explicit curation.
+  const hrefRe = /href=["'](?:https:\/\/ainexustools\.online)?\/tools\/([a-z0-9-]+)\/?["']/g;
+  let m;
+  while ((m = hrefRe.exec(blogContent)) !== null) addBySlug(m[1]);
+  if (items.length) return items;  // Tier 2 succeeded — no need for heading parse
+
+  // ── Tier 3: numbered H2 headings ────────────────────────────────────────────
+  // Covers posts where tools aren't linked to internal /tools/ pages (external
+  // tools like HeadshotPro, GetResponse, Brevo, GitHub Copilot, etc.).
+  // Matches:  #N ToolName — description
+  //           N. ToolName — description
+  // Stops before the em-dash to isolate the clean tool name.
+  const numberedH2Re = /<h2[^>]*>(?:#\d+\.?\s+|\d+\.\s+)([^<]+?)(?:\s+\u2014|\s*<\/h2>)/gi;
+  while ((m = numberedH2Re.exec(blogContent)) !== null) {
+    const candidate = m[1].trim();
+    // Skip structural headings that accidentally match the number prefix pattern
+    if (/^(Best|Quick|Final|Why|My|The|How|Before|Building|India|Category|Not\s)/i.test(candidate)) continue;
+    addByName(candidate);
+  }
+
+  return items;
+}
+
 for (const post of BLOG_POSTS) {
   const canonical = BLOG_CANONICAL_OVERRIDES[post.slug] || `${SITE}/blog/${post.slug}/`;
+  // TASK 1: Pre-load blog content here (moved from ~40 lines below) so that
+  // extractBestPostTools can scan it for Tier 2/3 tool extraction before the
+  // schemas array is assembled. The variable continues to be used below for
+  // CTA injection and body HTML — behaviour is unchanged.
+  let blogContent = loadBlogContent(post.slug);
   const schemas = [
     {
       '@context': 'https://schema.org',
@@ -3036,13 +3120,23 @@ for (const post of BLOG_POSTS) {
     ...(post.slug.startsWith('how-to-') && post.howToSteps?.length
       ? [howToSchema({ title: post.title, description: post.metaDescription, canonical, steps: post.howToSteps })]
       : []),
+    // TASK 1 (AEO-Critical): ItemList schema for best-* posts.
+    // Makes each ranked tool's position + name machine-readable for Google AIO,
+    // Perplexity, and ChatGPT Search snippet extraction.
+    // extractBestPostTools runs three-tier detection: mentionedTools[] → /tools/ hrefs → H2 headings.
+    // Emits nothing (empty spread) when no tools can be reliably detected.
+    ...(post.slug.startsWith('best-')
+      ? (bestItems => bestItems.length
+          ? [itemListSchema({ name: post.seoTitle || post.title, url: canonical, items: bestItems })]
+          : []
+        )(extractBestPostTools(post, blogContent))
+      : []),
   ];
   // M1 (SEO-Medium): surface readTimeMinutes in static HTML so crawlers
   // see it without JS — avoids thin-content signal on pre-rendered pages
   const readTime = post.readTimeMinutes ? `<span style="margin-left:12px">&#128338; ${post.readTimeMinutes} min read</span>` : '';
 
-  // C1 Fix: Inject full blog post content from .ts source file instead of just metaDescription
-  let blogContent = loadBlogContent(post.slug);
+  // C1 Fix: Blog content was pre-loaded above (before schemas) to support TASK 1.
   // I-21 Fix: insert inline share/newsletter CTA at ~50% of post body
   blogContent = injectMidArticleCTA(blogContent, post, canonical);
   // C6 Fix: Render FAQ answers as visible HTML (not just in JSON-LD schema)
