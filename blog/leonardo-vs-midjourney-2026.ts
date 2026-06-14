@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Leonardo AI vs Midjourney 2026 — Free Plan Compared',
   metaDescription: 'Leonardo.ai vs Midjourney compared for 2026 — free plans, image quality, pricing, and commercial usage rights. See which AI image generator wins.',
   datePublished: '2026-05-12',
-  dateModified: '2026-05-12',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '7 min read',

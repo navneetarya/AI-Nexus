@@ -6,7 +6,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Tool Plans 2026 — Honest Breakdown',
   metaDescription: 'The most generous free AI tool plans for 2026 — which tools give real value for free, and where the limits are. See our independent analysis.',
   datePublished: '2026-05-24',
-  dateModified: '2026-05-24',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Research',
   readTime: '8 min read',

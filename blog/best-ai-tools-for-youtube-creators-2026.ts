@@ -14,7 +14,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for YouTube Creators & Shorts 2026',
   metaDescription: 'Munch AI, ElevenLabs & Opus Clip for YouTube creators 2026. Voice cloning, repurposing intelligence, auto-Shorts — 3 affiliate picks, honest research.',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Video',
   readTime: '10 min read',

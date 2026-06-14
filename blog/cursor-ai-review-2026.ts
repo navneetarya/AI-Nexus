@@ -15,7 +15,7 @@ const post: BlogPost = {
   seoTitle: 'Cursor AI Review 2026: Best AI Code Editor?',
   metaDescription: 'Cursor AI reviewed for 2026 — pricing, free plan, Tab completion, Composer, and Agent mode tested. Is it worth $20/month over GitHub Copilot? Honest verdict.',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '10 min read',

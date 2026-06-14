@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Tools for Content Creators 2026 — Tested',
   metaDescription: 'Creating content on a tight budget? 7 AI tools with genuinely free plans for writing, design, video, voiceover, and scheduling — tested for 2026.',
   datePublished: '2026-05-10',
-  dateModified: '2026-05-10',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Content Creation',
   readTime: '10 min read',

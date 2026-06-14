@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Taskade vs Notion vs Asana 2026 — Best for Freelancers?',
   metaDescription: 'Taskade vs Notion vs Asana compared for freelancers and small teams. Honest breakdown of AI features, pricing, and which tool actually gets work done in 2026.',
   datePublished: '2026-05-12',
-  dateModified: '2026-05-12',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',

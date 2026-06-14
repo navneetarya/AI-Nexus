@@ -10,7 +10,7 @@ const post: BlogPost = {
   seoTitle: 'Best Grammarly Alternatives 2026 — Tested',
   metaDescription: 'We researched 8 Grammarly alternatives so you do not waste $12/month. QuillBot wins for students, Rytr for content creators — plus 2 free picks.',
   datePublished: '2026-04-27',
-  dateModified: '2026-04-27',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',

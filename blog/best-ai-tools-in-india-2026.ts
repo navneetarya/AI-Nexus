@@ -11,7 +11,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools in India 2026 — INR Pricing',
   metaDescription: 'The best AI tools available in India for 2026 — with INR pricing, free plan details, and Hindi support info. No VPN needed. See honest picks.',
   datePublished: '2026-05-08',
-  dateModified: '2026-05-08',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',

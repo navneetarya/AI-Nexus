@@ -15,7 +15,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Tools for Students in India 2026',
   metaDescription: 'Best free AI tools for students in India 2026 — works without a VPN or dollar card. Covers essays, research, presentations and coding with INR pricing notes.',
   datePublished: '2026-05-09',
-  dateModified: '2026-05-09',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '8 min read',

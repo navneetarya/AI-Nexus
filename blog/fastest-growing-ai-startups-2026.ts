@@ -6,7 +6,7 @@ const post: BlogPost = {
   seoTitle: 'Fastest Growing AI Startups 2026 — Researched',
   metaDescription: 'Independent research into the fastest growing AI startups of 2026 — ranked by revenue, user growth, and funding based on verified public data.',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Research',
   readTime: '10 min read',

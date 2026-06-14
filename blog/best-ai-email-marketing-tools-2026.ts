@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Email Marketing Tools 2026 — Ranked',
   metaDescription: 'GetResponse, Mailchimp AI, Brevo & ActiveCampaign — best AI email marketing tools 2026. Automation, free plans, pricing & honest comparison.',
   datePublished: '2026-06-07',
-  dateModified: '2026-06-07',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Marketing',
   readTime: '10 min read',

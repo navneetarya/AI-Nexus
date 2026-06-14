@@ -6,7 +6,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Automation Engineers 2026',
   metaDescription: 'The best AI tools for QA and test automation engineers in 2026 — GitHub Copilot, Claude, Testim, and Applitools compared head-to-head. See research.',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '8 min read',

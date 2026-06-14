@@ -460,6 +460,11 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             <div style={{ fontSize: 12, color: C.mut2 }}>
               {SITE_CONFIG.authorTitle} · Published {new Date(post.datePublished).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </div>
+            {/* T9 (EEAT-Medium): BOLD credibility line — surfaces the primary
+                credibility signal to readers and quality raters, not just JSON-LD. */}
+            <div style={{ fontSize: 12, color: C.mut2, marginTop: 2 }}>
+              {SITE_CONFIG.authorTitleSecondary}
+            </div>
           </div>
           <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
             <a
@@ -653,6 +658,42 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
                 </div>
               )}
             </div>
+          </section>
+        )}
+
+        {/* T7 (EEAT-Medium): Sources section ──────────────────────────────────
+            Renders only when post.outboundCitations is populated. Dofollow links
+            to G2, Trustpilot, and official pricing pages address the audit finding
+            of zero outbound citations — a key EEAT trust signal for quality raters
+            and AI engines. Placed after Pros & Cons, before the newsletter CTA.
+            Populate `outboundCitations` in individual blog post .ts files separately. */}
+        {post.outboundCitations && post.outboundCitations.length > 0 && (
+          <section style={{ marginTop: 44 }} aria-label="Sources">
+            <h2 style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 20, fontWeight: 800,
+              color: C.txt, marginBottom: 16,
+              letterSpacing: '-0.02em',
+            }}>
+              Sources
+            </h2>
+            <ul style={{
+              margin: 0, padding: '0 0 0 18px',
+              display: 'flex', flexDirection: 'column' as const, gap: 8,
+            }}>
+              {post.outboundCitations.map((c, i) => (
+                <li key={i} style={{ fontSize: 14, color: C.mut, lineHeight: 1.6 }}>
+                  <a
+                    href={c.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: C.a1, textDecoration: 'underline', textUnderlineOffset: 2 }}
+                  >
+                    {c.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 

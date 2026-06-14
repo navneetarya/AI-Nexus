@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini Compared',
   metaDescription: 'The 5 best AI chatbots for 2026 compared — ChatGPT, Claude, Gemini, Grok 4, and Perplexity. See pricing, strengths, and which one fits your use case.',
   datePublished: '2026-05-17',
-  dateModified: '2026-05-17',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Guides',
   readTime: '12 min read',

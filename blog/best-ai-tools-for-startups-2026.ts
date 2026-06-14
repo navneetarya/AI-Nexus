@@ -6,7 +6,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Startups 2026 — Tested',
   metaDescription: 'The best AI tools for startups in 2026: Notion AI, Gamma, Claude, Canva AI, and Grammarly compared. Build product, content, and pitches faster with these tools.',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',

@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'How to Use AI for Content Creation 2026',
   metaDescription: 'Write an article, generate an image, repurpose it as a video, and create a podcast — all in one afternoon. See the AI content workflow for 2026.',
   datePublished: '2026-05-05',
-  dateModified: '2026-05-05',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Guides',
   readTime: '10 min read',

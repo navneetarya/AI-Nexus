@@ -10,7 +10,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Marketing Tools 2026 — Ranked',
   metaDescription: 'Frase, Ocoya, Jasper, and Writesonic compared for SEO and social media marketing in 2026 — see the honest breakdown for every budget and plan.',
   datePublished: '2026-04-27',
-  dateModified: '2026-04-27',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Marketing',
   readTime: '9 min read',

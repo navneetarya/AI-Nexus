@@ -10,7 +10,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free ChatGPT Alternatives 2026',
   metaDescription: 'The best free ChatGPT alternatives for 2026 — Gemini, Perplexity, Rytr, and Writesonic compared for writing and research. See which one delivers.',
   datePublished: '2026-05-06',
-  dateModified: '2026-05-06',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',

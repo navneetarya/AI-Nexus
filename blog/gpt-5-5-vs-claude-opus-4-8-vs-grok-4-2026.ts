@@ -11,7 +11,7 @@ const post: BlogPost = {
   seoTitle: 'GPT-5.5 vs Claude Opus 4.8 vs Grok 4 (2026)',
   metaDescription: 'GPT-5.5, Claude Opus 4.8, and Grok 4 compared on writing, coding, reasoning, and price. Honest breakdown of which AI wins in June 2026.',
   datePublished: '2026-06-05',
-  dateModified: '2026-06-05',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'AI Chatbots',
   readTime: '10 min read',

@@ -6,7 +6,7 @@ const post: BlogPost = {
   seoTitle: 'Cheapest AI Coding Tools 2026 — Honest Pricing',
   metaDescription: 'The cheapest AI coding tools for 2026 compared by real monthly cost — free options, sub-$10 tools, and whether cheaper means worse. See picks.',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '7 min read',

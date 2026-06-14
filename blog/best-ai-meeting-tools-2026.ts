@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Meeting Tools 2026 — Ranked & Compared',
   metaDescription: 'Fireflies.ai, Otter.ai & Fathom — best AI meeting tools 2026. Auto-transcription, action items, summaries & pricing. Independent research.',
   datePublished: '2026-06-09',
-  dateModified: '2026-06-09',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',

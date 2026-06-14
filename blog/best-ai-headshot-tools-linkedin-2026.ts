@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Headshot Tools for LinkedIn 2026 — Ranked',
   metaDescription: 'HeadshotPro, Aragon AI, Remini & more — best AI headshot tools for LinkedIn 2026. Pricing, output quality, and honest verdict from independent research.',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'image',
   readTime: '9 min read',

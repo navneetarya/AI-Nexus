@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Grok 4 vs ChatGPT vs Claude for Content Creators 2026',
   metaDescription: 'Grok 4 vs ChatGPT vs Claude for content creators in 2026 — compared on blog posts, captions, and email copy. See the honest, unbiased verdict.',
   datePublished: '2026-05-18',
-  dateModified: '2026-05-18',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '11 min read',

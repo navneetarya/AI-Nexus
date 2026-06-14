@@ -6,7 +6,7 @@ const post: BlogPost = {
   seoTitle: 'AI API Pricing 2026 — Full Comparison',
   metaDescription: 'Complete AI API pricing comparison for 2026: OpenAI GPT-4o, Anthropic Claude, Google Gemini, and Meta Llama compared on cost per million tokens. Build smarter.',
   datePublished: '2026-05-24',
-  dateModified: '2026-05-24',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Research',
   readTime: '10 min read',

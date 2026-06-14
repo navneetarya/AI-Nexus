@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'ChatGPT Free vs Claude Free vs Gemini Free (2026)',
   metaDescription: 'ChatGPT, Claude, and Gemini free plans tested on 5 real freelance tasks — message limits, output quality, and when to upgrade. See the verdict.',
   datePublished: '2026-05-20',
-  dateModified: '2026-05-20',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'AI Comparison',
   readTime: '10 min read',

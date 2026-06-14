@@ -14,7 +14,7 @@ const post: BlogPost = {
   seoTitle: 'Claude Code vs GitHub Copilot vs Replit 2026 — Honest Comparison',
   metaDescription: 'Claude Code vs GitHub Copilot vs Replit for 2026 — tested on real coding tasks. See the honest verdict for developers and non-developers alike.',
   datePublished: '2026-05-14',
-  dateModified: '2026-05-14',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '10 min read',

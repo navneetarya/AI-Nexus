@@ -11,7 +11,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Social Media 2026',
   metaDescription: 'Ocoya writes captions, Opus Clip turns videos into Reels, Canva AI designs in seconds. See the 6 social media AI tools that cut publishing time.',
   datePublished: '2026-05-01',
-  dateModified: '2026-05-01',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Social Media',
   readTime: '7 min read',

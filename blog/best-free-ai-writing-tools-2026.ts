@@ -17,7 +17,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Writing Tools 2026 — No Credit Card Required',
   metaDescription: 'The best free AI writing tools for 2026 — 5 tools with permanent free plans, no credit card needed. Grammarly, Rytr, QuillBot, and more compared.',
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',

@@ -9,6 +9,9 @@ export const SITE_CONFIG = {
   bio: "I'm Navneet Arya — I independently research AI tools and share honest, no-BS comparisons. Affiliate links help keep the site completely free.",
   authorName: "Navneet Arya",
   authorTitle: "Independent AI Tools Researcher",
+  // T9 (EEAT-Medium): Second author-strip line shown on every blog post —
+  // surfaces the BOLD credibility signal to readers/quality raters, not just JSON-LD.
+  authorTitleSecondary: "AI Automation & Performance Testing Leader at BOLD",
   authorBio: "AI Automation & Performance Testing Leader at BOLD. Researching AI tools since 2022 across writing, audio, video, design, and productivity — covering features, real user feedback, and pricing in depth. Focused on what actually works for solo creators, freelancers, and small teams worldwide — not enterprise buyers with unlimited budgets.",
   authorExperience: "Researching AI tools since 2022",
   siteUrl: "https://ainexustools.online",

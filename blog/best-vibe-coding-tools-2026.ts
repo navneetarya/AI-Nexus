@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Best Vibe Coding Tools 2026: Lovable vs Bolt vs v0',
   metaDescription: 'Lovable, Bolt, and v0 tested on real app builds for 2026. See which vibe coding tool goes from prompt to deployed app fastest — honest verdict.',
   datePublished: '2026-06-05',
-  dateModified: '2026-06-05',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '9 min read',

@@ -14,7 +14,7 @@ const post: BlogPost = {
   seoTitle: 'Perplexity AI Review 2026: Worth It vs Google Search?',
   metaDescription: 'Perplexity AI reviewed for 2026 — tested against Google Search on research and everyday queries. Is it worth $20/month? See the honest verdict.',
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',

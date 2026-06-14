@@ -6,7 +6,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Developers 2026 — Tested',
   metaDescription: 'The best AI tools for software developers in 2026 — GitHub Copilot, Cursor, Claude, Replit, and Warp compared on real projects. See the verdict.',
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '9 min read',

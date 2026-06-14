@@ -11,7 +11,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Logo Makers 2026 — INR Pricing & India Guide',
   metaDescription: 'Looka, Canva AI, Leonardo.ai, and Hatchful compared as free AI logo makers for 2026, with INR pricing for India. See our honest picks and verdict.',
   datePublished: '2026-04-30',
-  dateModified: '2026-04-30',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'india',
   readTime: '9 min read',

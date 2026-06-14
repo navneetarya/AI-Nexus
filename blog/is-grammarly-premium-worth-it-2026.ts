@@ -11,7 +11,7 @@ const post: BlogPost = {
   seoTitle: 'Is Grammarly Premium Worth It 2026? — Honest Verdict',
   metaDescription: 'Is Grammarly Premium worth $12/month in 2026? We analysed 400+ reviews and compared it to 5 alternatives. See the honest verdict and answer.',
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '7 min read',

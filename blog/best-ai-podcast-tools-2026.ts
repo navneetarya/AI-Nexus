@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Podcast Tools 2026 — Record & Edit',
   metaDescription: 'Podcastle records free for 3 hours/month, Descript edits by transcript, Murf AI writes voiceovers. See which AI podcast tool fits your workflow.',
   datePublished: '2026-05-01',
-  dateModified: '2026-05-01',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '6 min read',

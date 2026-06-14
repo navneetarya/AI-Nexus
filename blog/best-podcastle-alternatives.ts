@@ -10,7 +10,7 @@ const post: BlogPost = {
   seoTitle: 'Best Podcastle Alternatives 2026',
   metaDescription: 'Looking for a Podcastle alternative? Descript, Riverside.fm, and Adobe Podcast compared for recording and editing podcasts in 2026. See our picks.',
   datePublished: '2026-04-28',
-  dateModified: '2026-04-28',
+  dateModified: '2026-06-14',
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '6 min read',
