@@ -39,7 +39,7 @@ const post: BlogPost = {
     },
   ],
   content: `
-<h2>Quick Verdict</h2>
+<h2>Which $20/Month AI Is Worth It for Freelancers — Perplexity Pro, ChatGPT Plus, or Claude Pro?</h2>
 <p>None of the three wins every task — Perplexity Pro is worth it for research with sources, ChatGPT Plus for writing first drafts and brainstorming, and Claude Pro for editing and document summarisation, so the $20/month that's “worth it” depends entirely on which of those five tasks eats most of your week.</p>
 <p>Three tools. Same five tasks. One honest table.</p>
 

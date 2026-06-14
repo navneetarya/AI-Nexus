@@ -25,7 +25,7 @@ const post: BlogPost = {
     { q: 'Is Claude Opus 4.8 worth $20/month?', a: 'Yes — if you use AI for more than 30 minutes a day. Claude Opus 4.8 via Claude Pro gives access to the most capable reasoning and writing model available on a flat subscription. Compared to paying per-token on the API, the $20/month plan is exceptional value for heavy users doing research, writing, and analysis.' },
   ],
   content: `
-<h2>The Three Frontier Models Competing for Your $20/Month</h2>
+<h2>Which AI Is Best — GPT-5.5, Claude Opus 4.8, or Grok 4?</h2>
 <p>Which one is best depends on the job: GPT-5.5 is the most versatile all-rounder for mixed creative, coding, and research work, Claude Opus 4.8 is the strongest choice for long-document analysis and nuanced writing, and Grok 4 leads on real-time web research — for most individual users, Claude Opus 4.8 or GPT-5.5 gives the best value for $20/month. Three of the most capable AI models ever built are now available to anyone with a $20/month subscription. GPT-5.5 (OpenAI), Claude Opus 4.8 (Anthropic), and Grok 4 (xAI) each represent a different philosophy about what an AI assistant should be — and choosing wrong means leaving serious capability on the table.</p>
 <p>I ran the same set of 8 real-world tasks across all three models over two weeks in June 2026. These were not cherry-picked benchmarks — they were the actual tasks that come up in a week of content creation, research, and coding work. Here is what I found.</p>
 

@@ -41,7 +41,7 @@ const post: BlogPost = {
     },
   ],
   content: `
-<h2>Quick comparison: free plan limits at a glance</h2>
+<h2>Which Free AI Plan Actually Works for Freelancers in 2026?</h2>
 <p>No single free plan wins outright for freelancers in 2026 — ChatGPT, Claude, and Gemini free tiers each win different tasks, and running all three together covers roughly 80% of a freelancer's AI needs without spending anything. Before diving into task-by-task results, here is where each free plan stands in mid-2026:</p>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">

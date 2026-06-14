@@ -27,7 +27,7 @@ const post: BlogPost = {
     { q: 'Which AI chatbot has the best free plan?', a: 'Perplexity and Google Gemini have the most generous free plans in 2026. Perplexity gives unlimited basic searches and 5 Pro searches per day for free — enough for casual research. Gemini is free for Gmail and Google Docs users. Claude and ChatGPT both have free tiers with daily usage limits. Grok 4 requires an X Premium subscription for full access.' },
   ],
   content: `
-<h2>The AI Chatbot Landscape in 2026</h2>
+<h2>What Is the Best AI Chatbot in 2026?</h2>
 <p>The best AI chatbot in 2026 depends on the job: ChatGPT (GPT-5.5) is the strongest all-rounder, Claude 3.5 Sonnet is the sharpest for writing and analysis, Gemini 3.1 Pro is the obvious pick if your life runs on Google Workspace, and Grok 4.3 is the one to reach for when a question depends on what's happening right now. The AI chatbot market in May 2026 is no longer about one clear winner. GPT-5.5, Claude 3.5 Sonnet, Gemini 3.1 Pro, Grok 4.3, and Perplexity Pro are all genuinely excellent at different things — and picking the "best" one depends entirely on what you're actually trying to accomplish.</p>
 <p>After testing all five against the same tasks, here's the honest comparison.</p>
 

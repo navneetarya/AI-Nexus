@@ -41,7 +41,7 @@ const post: BlogPost = {
     },
   ],
   content: `
-<h2>Why This List Is Different</h2>
+<h2>What Are the Best Free AI Tools for Students in 2026?</h2>
 <p>The best free AI tools for students in 2026 are Grammarly for essay editing, QuillBot for paraphrasing and summarising research, Perplexity for cited research answers, and Replit for coding assignments — and unlike most “free” lists, all four run on permanent free plans rather than trials that expire before a deadline. Most "AI tools for students" lists recommend tools with 7-day free trials that expire before your next assignment deadline. Every tool in this guide has a permanent free plan that covers real, ongoing student workloads. Each has been independently researched across the use cases that actually come up in university life: last-minute essay drafts, long research paper summaries, citation-heavy paraphrasing, coding bugs at midnight, and tight presentation deadlines.</p>
 <p>This updated guide covers five task types — writing, research, presentations, coding, and studying — with a comparison table showing which tool wins for each.</p>
 
