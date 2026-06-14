@@ -38,7 +38,7 @@ const post: BlogPost = {
   ],
   content: `
 <h2>What Rytr Actually Does (And What It Doesn't)</h2>
-<p>Before getting into the tutorial, it's worth being clear about what Rytr is and isn't. Rytr is a use-case-based AI writing tool — you pick a template (blog intro, email, product description, etc.), give it a brief, and it generates a first draft. It is not a long-form essay writer, and it doesn't do research.</p>
+<p>To use Rytr for blog posts, generate an outline first, write each section with the Blog Section Writing template, draft the introduction last, and let Rytr generate a closing and CTA — done in that order, this workflow cuts first-draft time by roughly 60%. Before getting into the tutorial, it's worth being clear about what Rytr is and isn't. Rytr is a use-case-based AI writing tool — you pick a template (blog intro, email, product description, etc.), give it a brief, and it generates a first draft. It is not a long-form essay writer, and it doesn't do research.</p>
 <p>The most effective way to use Rytr for blog posts is as a first-draft accelerator, not a full replacement for your writing. The output requires editing, personalisation, and fact-checking. But for writers who stall at the blank page or spend too long on first drafts, Rytr cuts that friction dramatically.</p>
 <p>I've written dozens of posts using this workflow. Here's exactly how it works.</p>
 

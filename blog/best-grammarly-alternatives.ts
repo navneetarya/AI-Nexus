@@ -36,7 +36,7 @@ const post: BlogPost = {
   ],
   content: `
 <h2>Why People Look for Grammarly Alternatives</h2>
-<p>Grammarly is the most well-known writing assistant on the market — and for good reason. But it's not the right tool for everyone. The three most common reasons people look for alternatives are price, style-stripping, and feature mismatch.</p>
+<p>The best Grammarly alternatives in 2026 are QuillBot for paraphrasing and rewriting on a free plan, LanguageTool if you write primarily in a language other than English, and Rytr at $9/month if you need to generate new content rather than just edit — none of them fully match Grammarly's real-time tone detection, but all three cost less. Grammarly is the most well-known writing assistant on the market — and for good reason. But it's not the right tool for everyone. The three most common reasons people look for alternatives are price, style-stripping, and feature mismatch.</p>
 <p><strong>Price:</strong> Grammarly Premium costs $12/month ($144/year), which feels steep if you only need occasional grammar help. Several alternatives offer similar or better features for less.</p>
 <p><strong>Style-stripping:</strong> Grammarly applies formal grammar rules to creative writing. If you write punchy one-liners or intentional fragments, it flags them constantly. Writers with a distinctive voice often find Grammarly more friction than help.</p>
 <p><strong>Feature mismatch:</strong> If you need to paraphrase, summarise, or generate content — not just fix grammar — Grammarly isn't built for those jobs. Alternatives like QuillBot and Rytr handle them better.</p>

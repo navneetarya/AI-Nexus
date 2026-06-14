@@ -25,7 +25,7 @@ const post: BlogPost = {
 </div>
 
 <h2>State of the AI Tools Ecosystem: May 2026</h2>
-<p>The AI tools market in 2026 has transitioned from hype cycle to genuine infrastructure. Tools that were novelties in 2023 are now integrated into the daily workflows of hundreds of millions of professionals. The market has matured enough to produce winners and losers — some categories are consolidating around 2–3 dominant tools, while others remain fragmented.</p>
+<p>The AI tools ecosystem crossed $50 billion in annual revenue in 2026, and the growth is concentrated in application-layer tools, AI coding assistants, and vertical AI agents rather than spread evenly across the market. The AI tools market in 2026 has transitioned from hype cycle to genuine infrastructure. Tools that were novelties in 2023 are now integrated into the daily workflows of hundreds of millions of professionals. The market has matured enough to produce winners and losers — some categories are consolidating around 2–3 dominant tools, while others remain fragmented.</p>
 <p>This report covers market size estimates, growth by category, adoption trends, and the structural factors shaping the ecosystem's next phase.</p>
 
 <h2>Market Size: AI Software in 2026</h2>

@@ -69,7 +69,7 @@ const post: BlogPost = {
 </nav>
 
 <h2 id="quick-summary">Quick Summary</h2>
-<p>Cursor is an AI-first code editor built on VS Code, developed by Anysphere. It launched publicly in 2023 and has become the dominant AI code editor in 2026 — favoured by professional developers, freelancers, and solopreneurs who want AI deeply integrated into their workflow rather than bolted on as an extension.</p>
+<p>Yes — Cursor is the best standalone AI code editor in 2026, and the $20/month Pro plan is worth it for anyone who codes more than two hours a day, thanks to Composer's multi-file editing and an Agent mode that can carry out coding tasks with minimal supervision. Cursor is an AI-first code editor built on VS Code, developed by Anysphere. It launched publicly in 2023 and has become the dominant AI code editor in 2026 — favoured by professional developers, freelancers, and solopreneurs who want AI deeply integrated into their workflow rather than bolted on as an extension.</p>
 <p>The core value proposition is simple: Cursor does not just complete the current line you are typing. It understands your entire codebase, can edit multiple files simultaneously, and can run as an autonomous agent that executes multi-step coding tasks with minimal supervision. These three capabilities separate it from GitHub Copilot and most VS Code AI extensions.</p>
 
 <div style="background:rgba(99,102,241,.08);border-left:4px solid #6366f1;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">

@@ -43,7 +43,7 @@ const post: BlogPost = {
   ],
   content: `
 <h2>Why AI Content Creation Changed in 2026</h2>
-<p>Two years ago, "AI content creation" meant pasting a rough ChatGPT output into a blog post and hoping no one noticed. In 2026, the tooling has matured to the point where a solo creator can produce a written article, a custom feature image, a repurposed video version, and a podcast episode — all from the same source idea — in a single working afternoon. I have been doing exactly this for the past eight months across this site, and the workflow below is what I actually use.</p>
+<p>Using AI for content creation in 2026 means running one idea through four AI-assisted stages — writing, images, video, and audio — and the right workflow can cut the time between an idea and a finished piece of content by 60–80%. Two years ago, "AI content creation" meant pasting a rough ChatGPT output into a blog post and hoping no one noticed. In 2026, the tooling has matured to the point where a solo creator can produce a written article, a custom feature image, a repurposed video version, and a podcast episode — all from the same source idea — in a single working afternoon. I have been doing exactly this for the past eight months across this site, and the workflow below is what I actually use.</p>
 <p>This guide is structured by content format. Jump to the section that matches what you are making, or read through for the full picture of how the formats connect into a single repeatable system.</p>
 
 <h2>Part 1 — AI for Written Content (Articles, Blog Posts, Social Captions)</h2>

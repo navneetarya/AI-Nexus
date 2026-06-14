@@ -38,7 +38,7 @@ const post: BlogPost = {
   ],
   content: `
 <h2>The Core Difference Most Comparisons Get Wrong</h2>
-<p>Leonardo.ai and Midjourney are both AI image generators — but they're optimised for different types of creative work. Treating them as direct substitutes leads to choosing the wrong tool and being disappointed by the result.</p>
+<p>Leonardo.ai is worth it for most creators in 2026 — 150 free credits a day with no credit card, plus creative control and consistent style across a project — while Midjourney is worth its $10/month minimum only if you need the highest possible aesthetic quality for one-off standout images. Leonardo.ai and Midjourney are both AI image generators — but they're optimised for different types of creative work. Treating them as direct substitutes leads to choosing the wrong tool and being disappointed by the result.</p>
 <p>Midjourney's strength is <strong>aesthetic quality</strong>. Give it a well-structured prompt and the output is frequently stunning — painterly, cinematic, or hyperrealistic in ways that other tools still struggle to match. But it's a black box: you describe what you want, it generates something, and iteration is prompt-based trial and error. And it costs $10/month minimum with no free tier.</p>
 <p>Leonardo.ai's strength is <strong>control and consistency</strong>. You can select from 150+ fine-tuned models, each trained for different styles. You can train your own custom model on your art style. You get precise sliders and settings. The output is more predictable — which is often exactly what you need for professional project work. And it has a functional free plan.</p>
 

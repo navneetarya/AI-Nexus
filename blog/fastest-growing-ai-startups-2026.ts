@@ -25,7 +25,7 @@ const post: BlogPost = {
 </div>
 
 <h2>The AI Startup Landscape in 2026</h2>
-<p>The AI startup ecosystem in 2026 is in a second wave of consolidation. The first wave (2023–2024) was dominated by foundation model companies: OpenAI, Anthropic, Google DeepMind, and Mistral. The second wave is application-layer startups building on top of those foundation models — and several are growing faster than their foundation model counterparts.</p>
+<p>The fastest-growing AI startups in 2026 are concentrated in application-layer categories — AI coding tools, AI video and voice generation, and vertical AI agents for specific industries — rather than the foundation-model labs that dominated headlines in the previous wave. The AI startup ecosystem in 2026 is in a second wave of consolidation. The first wave (2023–2024) was dominated by foundation model companies: OpenAI, Anthropic, Google DeepMind, and Mistral. The second wave is application-layer startups building on top of those foundation models — and several are growing faster than their foundation model counterparts.</p>
 <p>Understanding which companies are growing — and why — matters for developers, investors, and anyone building in or around the AI ecosystem.</p>
 
 <h2>Fastest Growing AI Startups by Category</h2>

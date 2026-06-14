@@ -28,7 +28,7 @@ const post: BlogPost = {
   ],
   content: `
 <h2>The AI Chatbot Landscape in 2026</h2>
-<p>The AI chatbot market in May 2026 is no longer about one clear winner. GPT-5.5, Claude 3.5 Sonnet, Gemini 3.1 Pro, Grok 4.3, and Perplexity Pro are all genuinely excellent at different things — and picking the "best" one depends entirely on what you're actually trying to accomplish.</p>
+<p>The best AI chatbot in 2026 depends on the job: ChatGPT (GPT-5.5) is the strongest all-rounder, Claude 3.5 Sonnet is the sharpest for writing and analysis, Gemini 3.1 Pro is the obvious pick if your life runs on Google Workspace, and Grok 4.3 is the one to reach for when a question depends on what's happening right now. The AI chatbot market in May 2026 is no longer about one clear winner. GPT-5.5, Claude 3.5 Sonnet, Gemini 3.1 Pro, Grok 4.3, and Perplexity Pro are all genuinely excellent at different things — and picking the "best" one depends entirely on what you're actually trying to accomplish.</p>
 <p>After testing all five against the same tasks, here's the honest comparison.</p>
 
 <h2>Quick Comparison Table</h2>

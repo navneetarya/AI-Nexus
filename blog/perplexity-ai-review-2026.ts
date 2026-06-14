@@ -44,7 +44,7 @@ const post: BlogPost = {
   ],
   content: `
 <h2>Why Perplexity Is Trending Right Now</h2>
-<p>For two years, Perplexity operated as a power-user tool — known in tech communities, largely ignored by the mainstream. That has changed. Google Trends shows a 280% spike in "Perplexity vs Google" searches in May 2026. The reasons are converging: Google's AI Overviews have made traditional search results harder to navigate, Perplexity added Deep Research with access to premium models, and a growing number of knowledge workers have switched to it as their primary search tool and reported measurable time savings.</p>
+<p>Perplexity is worth it for research-heavy work — questions that require pulling together information from multiple sources — but Google still wins for navigational searches, local results, breaking news, and shopping, so the honest answer is that most people end up using both. For two years, Perplexity operated as a power-user tool — known in tech communities, largely ignored by the mainstream. That has changed. Google Trends shows a 280% spike in "Perplexity vs Google" searches in May 2026. The reasons are converging: Google's AI Overviews have made traditional search results harder to navigate, Perplexity added Deep Research with access to premium models, and a growing number of knowledge workers have switched to it as their primary search tool and reported measurable time savings.</p>
 <p>This review tests Perplexity against Google across eight specific search scenarios to answer one question: should you actually switch?</p>
 
 <h2>What Is Perplexity, and How Does It Work?</h2>

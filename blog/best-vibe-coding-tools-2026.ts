@@ -27,7 +27,7 @@ const post: BlogPost = {
   ],
   content: `
 <h2>What Is Vibe Coding — and Why Does It Matter in 2026?</h2>
-<p>In February 2025, Andrej Karpathy — former Tesla AI director and OpenAI founding member — coined the phrase "vibe coding" to describe a new way of building software. Instead of writing code line by line, you describe what you want in plain English and let an AI handle the implementation. You keep refining by chatting. You never touch the source directly.</p>
+<p>Lovable, Bolt, and v0 each win at a different job in 2026: Lovable is the best choice for complete beginners building a full-stack MVP, Bolt is strongest for frontend-heavy projects where you want framework flexibility, and v0 by Vercel is built for generating UI components rather than entire applications. In February 2025, Andrej Karpathy — former Tesla AI director and OpenAI founding member — coined the phrase "vibe coding" to describe a new way of building software. Instead of writing code line by line, you describe what you want in plain English and let an AI handle the implementation. You keep refining by chatting. You never touch the source directly.</p>
 <p>Eighteen months later, vibe coding is not a novelty. It is a legitimate development approach that a growing number of solo builders, freelancers, and product teams are using to ship real software. Search interest for "vibe coding tools" grew over 400% between January and June 2026. Three tools dominate the category: Lovable, Bolt, and v0.</p>
 <p>I tested all three on identical build tasks: a lead capture landing page, a simple task manager with authentication, and a data dashboard pulling from a CSV. Here is what I found.</p>
 
