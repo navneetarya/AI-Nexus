@@ -42,12 +42,25 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
         "Affiliate Marketing", "Content Creation", "SEO Content Strategy",
         "AI Automation", "Performance Testing"
       ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "AI Nexus",
-        "url": SITE_CONFIG.siteUrl,
-        "description": "Independent AI tool research and comparison platform — every tool independently researched before publication"
-      },
+      // T6 (EEAT-High): worksFor now lists BOTH organisations — AI Nexus (founder)
+      // and BOLD (primary employer). Google's quality raters and AI engines use
+      // worksFor to establish real-world authority for "Independent AI Researcher"
+      // claims. Listing only AI Nexus left the strongest credibility signal (day-job
+      // at BOLD) completely absent from structured data. Schema.org allows an array.
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "AI Nexus",
+          "url": SITE_CONFIG.siteUrl,
+          "description": "Independent AI tool research and comparison platform — every tool independently researched before publication"
+        },
+        {
+          "@type": "Organization",
+          "name": "BOLD",
+          "url": "https://bold.com",
+          "description": "AI Automation & Performance Testing — Navneet Arya's primary employer where AI tools are evaluated for real production workflows"
+        }
+      ],
       "hasOccupation": {
         "@type": "Occupation",
         "name": "Independent AI Tools Researcher",

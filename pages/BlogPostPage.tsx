@@ -534,12 +534,127 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           </nav>
         )}
 
+        {/* T4 (EEAT-High): "About This Review" credibility box ────────────────
+            The #1 missing visual EEAT signal flagged by the audit. Google quality
+            raters and AI engines look for explicit review provenance above the fold.
+            Wires to post.author + post.dateModified — zero new data required.
+            Displayed between the TOC and the article body so it is always visible
+            before the reader reaches any substantive claim. */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: 12,
+          padding: '12px 18px',
+          background: C.a1card,
+          border: `1px solid ${C.a1brd}`,
+          borderLeft: `3px solid ${C.a1}`,
+          borderRadius: 10,
+          marginBottom: 26,
+        }}>
+          <span style={{ fontSize: 16, lineHeight: 1, marginTop: 3, flexShrink: 0 }} aria-hidden="true">🛡️</span>
+          <div>
+            <div style={{
+              fontSize: 11, fontWeight: 700, color: C.a1,
+              letterSpacing: '0.07em', textTransform: 'uppercase' as const,
+              marginBottom: 4,
+            }}>
+              About This Review
+            </div>
+            <div style={{ fontSize: 13, color: C.mut, lineHeight: 1.65 }}>
+              Reviewed by{' '}
+              <strong style={{ color: C.txt, fontWeight: 600 }}>{post.author}</strong>
+              {' · '}Last verified:{' '}
+              <strong style={{ color: C.txt, fontWeight: 600 }}>
+                {new Date(post.dateModified).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}
+              </strong>
+              {' · '}Based on G2, Trustpilot &amp; Reddit analysis
+            </div>
+          </div>
+        </div>
+
         {/* Article content */}
         <div
           style={{ color: C.txt, lineHeight: 1.75, fontSize: 16 }}
           className="blog-content"
           dangerouslySetInnerHTML={{ __html: linkedContent }}
         />
+
+        {/* T5 (EEAT-High): Pros/Cons table ─────────────────────────────────────
+            Renders only when post.proscons is populated. Two-column green/red card
+            layout — boosts scannability and qualifies the post for rich result
+            eligibility. Placed after the article body so it acts as a visual
+            summary before the reader hits the newsletter CTA.
+            Populate `proscons` in individual blog post .ts files separately. */}
+        {post.proscons && (post.proscons.pros.length > 0 || post.proscons.cons.length > 0) && (
+          <section style={{ marginTop: 44 }} aria-label="Pros and cons">
+            <h2 style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 20, fontWeight: 800,
+              color: C.txt, marginBottom: 16,
+              letterSpacing: '-0.02em',
+            }}>
+              Pros &amp; Cons
+            </h2>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+              gap: 14,
+            }}>
+              {post.proscons.pros.length > 0 && (
+                <div style={{
+                  background: 'rgba(16,185,129,.05)',
+                  border: '1px solid rgba(16,185,129,.22)',
+                  borderTop: '2px solid #10b981',
+                  borderRadius: 12,
+                  padding: '18px 20px',
+                }}>
+                  <div style={{
+                    fontSize: 12, fontWeight: 700,
+                    color: '#10b981',
+                    letterSpacing: '0.07em', textTransform: 'uppercase' as const,
+                    marginBottom: 14,
+                  }}>
+                    ✓ Pros
+                  </div>
+                  <ul style={{
+                    margin: 0, padding: '0 0 0 16px',
+                    display: 'flex', flexDirection: 'column' as const, gap: 9,
+                  }}>
+                    {post.proscons.pros.map((p, i) => (
+                      <li key={i} style={{ fontSize: 14, color: C.txt, lineHeight: 1.55 }}>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {post.proscons.cons.length > 0 && (
+                <div style={{
+                  background: 'rgba(239,68,68,.05)',
+                  border: '1px solid rgba(239,68,68,.2)',
+                  borderTop: '2px solid #ef4444',
+                  borderRadius: 12,
+                  padding: '18px 20px',
+                }}>
+                  <div style={{
+                    fontSize: 12, fontWeight: 700,
+                    color: '#ef4444',
+                    letterSpacing: '0.07em', textTransform: 'uppercase' as const,
+                    marginBottom: 14,
+                  }}>
+                    ✗ Cons
+                  </div>
+                  <ul style={{
+                    margin: 0, padding: '0 0 0 16px',
+                    display: 'flex', flexDirection: 'column' as const, gap: 9,
+                  }}>
+                    {post.proscons.cons.map((c, i) => (
+                      <li key={i} style={{ fontSize: 14, color: C.txt, lineHeight: 1.55 }}>{c}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
 
         {/* M6: Inline newsletter CTA */}
         <div style={{
