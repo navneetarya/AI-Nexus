@@ -8,7 +8,11 @@ export enum Category {
   DESIGN = 'Design',
   CODING = 'Coding',
   PRODUCTIVITY = 'Productivity',
+  // ── Week 2: HEADSHOT — bug fix (used in constants.ts since Week 2 but was missing here) ──
   HEADSHOT = 'Headshot',
+  // ── Week 4: New categories for upcoming tool pages ────────────────────────
+  EMAIL = 'Email',
+  MEETING = 'Meeting',
 }
 
 export interface Tool {
@@ -95,78 +99,18 @@ export interface Tool {
 
   /** W3: Review type — 'hands-on' for tools personally tested, 'research-based' for tools reviewed through official documentation and aggregated user reviews. */
   reviewType?: 'hands-on' | 'research-based';
+
+  /**
+   * Task 4 (AEO/GEO): External entity links for the tool's parent company/product —
+   * Wikidata, Crunchbase, ProductHunt, etc. Read by scripts/prerender.mjs and merged
+   * into the tool page's Review/SoftwareApplication JSON-LD as `sameAs`, helping
+   * Google's Knowledge Graph and AI engines (Perplexity, ChatGPT, AI Overviews)
+   * disambiguate which real-world entity this review refers to.
+   */
+  sameAs?: string[];
 }
 
 export interface FilterState {
   search: string;
   category: Category;
-}
-
-// ── BlogPost ─────────────────────────────────────────────────────────────────
-// Central type for all blog posts. Every field used in blog/*.ts files must
-// be declared here. Individual blog post files import this from './types'.
-// blog/index.ts re-exports it for page components and prerender.mjs.
-export interface BlogPost {
-  /** URL slug — e.g. "cursor-ai-review-2026" */
-  slug: string;
-  /** H1 / <title> headline */
-  title: string;
-  /** Optional custom <title> tag (50–60 chars) — falls back to title if omitted */
-  seoTitle: string;
-  /** Meta description (150–160 chars) */
-  metaDescription: string;
-  /** ISO 8601 publish date — e.g. "2026-05-25" */
-  datePublished: string;
-  /** ISO 8601 last-modified date — refreshed on every content update */
-  dateModified: string;
-  /** Display name of the author — "Navneet Arya" */
-  author: string;
-  /** Category label shown on the post card — e.g. "Writing", "Coding" */
-  category: string;
-  /** Estimated read time — e.g. "9 min read" */
-  readTime: string;
-  /**
-   * Absolute URL of the OG image used for social sharing.
-   * e.g. "https://ainexustools.online/og/blog/cursor-ai-review-2026.webp"
-   * Falls back to the homepage OG image when omitted.
-   */
-  ogImage?: string;
-  /**
-   * One-paragraph "Quick Answer" shown above the article body.
-   * Targeted by Speakable schema in prerender.mjs for AI engine citations.
-   */
-  excerpt?: string;
-  /**
-   * FAQ pairs — rendered as both an interactive accordion (ReadersAlsoAsk)
-   * and a static FAQ section. Also used for FAQPage JSON-LD in prerender.mjs.
-   * Minimum 3 pairs recommended for FAQ rich result eligibility.
-   */
-  faqs: { q: string; a: string }[];
-  /** Raw HTML article body — must contain h2 headings for the auto-generated TOC */
-  content: string;
-  /**
-   * T5 (EEAT-High): Optional visual pros/cons table.
-   * Renders a two-column green/red card block after the article body.
-   * Boosts scannability and qualifies the post for ItemList-style rich results.
-   * Populate per post separately — omit the field to hide the section entirely.
-   *
-   * @example
-   * proscons: {
-   *   pros: ['Generous free plan', 'Works in Google Docs'],
-   *   cons: ['No Android app', 'Limited to 10k characters on free tier'],
-   * }
-   */
-  proscons?: {
-    pros: string[];
-    cons: string[];
-  };
-  /**
-   * T7 (EEAT-Medium): Optional outbound citations — renders a "Sources" section
-   * at the bottom of the post with dofollow links to G2, Trustpilot, pricing pages.
-   * Populate per post separately.
-   */
-  outboundCitations?: {
-    label: string;  // e.g. "Fireflies.ai on G2"
-    url: string;    // e.g. "https://www.g2.com/products/fireflies-ai/reviews"
-  }[];
 }

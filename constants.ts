@@ -40,6 +40,13 @@ export const TOOLS: Tool[] = [
   // WRITING
   {
     id: 'w1', slug: 'grammarly',
+    // Task 4 (AEO/GEO): external entity links — helps AI engines/Knowledge Graph
+    // disambiguate "Grammarly" the company vs. the review on this page.
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q16840770',
+      'https://www.crunchbase.com/organization/grammarly',
+      'https://www.producthunt.com/products/grammarly',
+    ],
     name: 'Grammarly', tagline: 'AI writing assistant used by 40 million people',
     description: 'Grammarly checks grammar, spelling, tone, and clarity across every app you use — from Gmail to Google Docs. The most widely used AI writing tool in the world.',
     category: Category.WRITING, affiliateLink: 'https://grammarly.com', // TODO: join Impact.com for proper Grammarly affiliate tracking link
@@ -654,6 +661,12 @@ export const TOOLS: Tool[] = [
   // PRODUCTIVITY (additional)
   {
     id: 'p3', slug: 'perplexity',
+    // Task 4 (AEO/GEO): external entity links for Perplexity AI (the company).
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q124333951',
+      'https://www.crunchbase.com/organization/perplexity-ai',
+      'https://www.producthunt.com/products/perplexity-ai',
+    ],
     name: 'Perplexity Pro', tagline: 'AI-powered search that cites every answer',
     description: 'Perplexity is the AI search engine replacing Google for millions of users. Ask any question and get a direct, cited answer with sources — no ads, no SEO spam, no clicking through ten pages.',
     category: Category.PRODUCTIVITY, affiliateLink: 'https://perplexity.ai?via=ainexus',
@@ -701,6 +714,12 @@ export const TOOLS: Tool[] = [
   // DESIGN (additional)
   {
     id: 'd3', slug: 'canva-ai',
+    // Task 4 (AEO/GEO): external entity links for Canva (the underlying product).
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q136783069',
+      'https://www.crunchbase.com/organization/canva',
+      'https://www.producthunt.com/products/canva',
+    ],
     titleTemplate: 'Canva AI Review 2026: What\'s Actually Free vs Paid? | AI Nexus',
     name: 'Canva AI', tagline: 'AI design tools built into the world\'s most popular design platform',
     description: 'Canva AI brings powerful AI features to the world\'s largest design platform. Generate images, write copy, remove backgrounds, animate designs, and transform ideas into polished graphics — all without leaving Canva.',
@@ -751,6 +770,12 @@ export const TOOLS: Tool[] = [
   // PRODUCTIVITY
   {
     id: 'p1', slug: 'notion-ai',
+    // Task 4 (AEO/GEO): external entity links for Notion (the underlying product).
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q60747998',
+      'https://www.crunchbase.com/organization/notion',
+      'https://www.producthunt.com/products/notion',
+    ],
     name: 'Notion AI', tagline: 'AI built directly inside your notes and workspace',
     description: 'Notion AI gives you the power of AI directly inside your notes, docs, and team wikis. Summarise meetings, write drafts, translate, and automate tasks without switching apps.',
     category: Category.PRODUCTIVITY, affiliateLink: 'https://notion.so?via=ainexus',
@@ -1308,6 +1333,12 @@ export const TOOLS: Tool[] = [
   // PRODUCTIVITY (AI assistants)
   {
     id: 'ai1', slug: 'chatgpt',
+    // Task 4 (AEO/GEO): external entity links — ChatGPT (product) + OpenAI (publisher).
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q115564437',
+      'https://www.crunchbase.com/organization/openai',
+      'https://www.producthunt.com/products/chatgpt',
+    ],
     name: 'ChatGPT', tagline: "OpenAI's flagship AI assistant — GPT-5.5, Sora video and Agent Mode in one app",
     description: "ChatGPT is OpenAI's general-purpose AI assistant, now running on GPT-5.5 with Agent Mode, Codex coding agent, Sora video generation, and Advanced Voice. In 2026 it spans six pricing tiers — from an ad-supported free plan to a $200/month Pro tier with a 1M-token context window — making it the most feature-dense single AI subscription on the market.",
     category: Category.PRODUCTIVITY, affiliateLink: 'https://chatgpt.com', // No public affiliate programme — monitor openai.com/partners
@@ -1355,6 +1386,12 @@ export const TOOLS: Tool[] = [
   // PRODUCTIVITY (AI assistants)
   {
     id: 'ai2', slug: 'claude-ai',
+    // Task 4 (AEO/GEO): external entity links — Claude (product) + Anthropic (publisher).
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q118876059',
+      'https://www.crunchbase.com/organization/anthropic',
+      'https://www.producthunt.com/products/claude',
+    ],
     name: 'Claude AI', tagline: "Anthropic's AI assistant — the top pick for long-form writing, analysis and coding",
     description: 'Claude is Anthropic\'s AI assistant, built around Projects, Artifacts, and a strong reputation for careful long-form writing, document analysis, and coding via Claude Code. In 2026 Claude runs on the Sonnet 4.6 / Opus 4.7 model family across a free tier and four paid tiers, with Max plans aimed at developers who run intensive Claude Code sessions throughout the day.',
     category: Category.PRODUCTIVITY, affiliateLink: 'https://claude.ai', // No public affiliate programme — monitor anthropic.com
@@ -1449,6 +1486,12 @@ export const TOOLS: Tool[] = [
   // IMAGE
   {
     id: 'i4', slug: 'midjourney',
+    // Task 4 (AEO/GEO): external entity links for Midjourney, Inc.
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q113070628',
+      'https://www.crunchbase.com/organization/midjourney',
+      'https://www.producthunt.com/products/midjourney',
+    ],
     name: 'Midjourney', tagline: 'The benchmark AI image generator for artistic quality — V7/V8',
     description: "Midjourney remains the standard for AI-generated artistic and cinematic imagery, with V8.1 (April 2026) adding faster generation, HD 2K output, and improved small-detail retention on top of V7's Omni Reference for consistent characters. It runs on a GPU-time subscription model with no free tier and no official API — generation happens via the Midjourney web app or Discord.",
     category: Category.IMAGE, affiliateLink: 'https://midjourney.com', // No public affiliate programme — monitor midjourney.com

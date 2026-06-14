@@ -171,6 +171,12 @@ function injectMidArticleCTA(blogContent, post, canonical) {
 const TOOLS = [
   {
     slug: 'grammarly', name: 'Grammarly', category: 'Writing',
+    // Task 4 (AEO/GEO): external entity links — mirrors constants.ts `sameAs`.
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q16840770',
+      'https://www.crunchbase.com/organization/grammarly',
+      'https://www.producthunt.com/products/grammarly',
+    ],
     tagline: 'AI writing assistant used by 40 million people',
     description: 'Grammarly checks grammar, spelling, tone, and clarity across every app you use — from Gmail to Google Docs. The most widely used AI writing tool in the world.',
     pricing: 'Free + $12/month', bestFor: 'Everyone who writes',
@@ -314,6 +320,12 @@ const TOOLS = [
   },
   {
     slug: 'notion-ai', name: 'Notion AI', category: 'Productivity',
+    // Task 4 (AEO/GEO): external entity links — mirrors constants.ts `sameAs`.
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q60747998',
+      'https://www.crunchbase.com/organization/notion',
+      'https://www.producthunt.com/products/notion',
+    ],
     tagline: 'AI built directly inside your notes and workspace',
     description: 'Notion AI gives you the power of AI directly inside your notes, docs, and team wikis. Summarise meetings, write drafts, translate, and automate tasks without switching apps.',
     pricing: '$10/month add-on', bestFor: 'Teams & knowledge workers',
@@ -358,6 +370,12 @@ const TOOLS = [
   },
   {
     slug: 'perplexity', name: 'Perplexity Pro', category: 'Productivity',
+    // Task 4 (AEO/GEO): external entity links — mirrors constants.ts `sameAs`.
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q124333951',
+      'https://www.crunchbase.com/organization/perplexity-ai',
+      'https://www.producthunt.com/products/perplexity-ai',
+    ],
     tagline: 'AI-powered search that cites every answer',
     description: 'Perplexity is the AI search engine replacing Google for millions of users. Ask any question and get a direct, cited answer with sources — no ads, no SEO spam, no clicking through ten pages.',
     pricing: 'Free + $20/month Pro', bestFor: 'Researchers, students & power users',
@@ -366,6 +384,12 @@ const TOOLS = [
   },
   {
     slug: 'canva-ai', name: 'Canva AI', category: 'Design',
+    // Task 4 (AEO/GEO): external entity links — mirrors constants.ts `sameAs`.
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q136783069',
+      'https://www.crunchbase.com/organization/canva',
+      'https://www.producthunt.com/products/canva',
+    ],
     tagline: 'AI design tools built into the world\'s most popular design platform',
     description: 'Canva AI brings powerful AI features to the world\'s largest design platform. Generate images, write copy, remove backgrounds, animate designs, and transform ideas into polished graphics — all without leaving Canva.',
     pricing: 'Free + $15/month Pro', bestFor: 'Everyone — from beginners to pros',
@@ -401,6 +425,12 @@ const TOOLS = [
   // PRODUCTIVITY — 100K+/mo
   {
     slug: 'chatgpt', name: 'ChatGPT', category: 'Productivity',
+    // Task 4 (AEO/GEO): external entity links — mirrors constants.ts `sameAs`.
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q115564437',
+      'https://www.crunchbase.com/organization/openai',
+      'https://www.producthunt.com/products/chatgpt',
+    ],
     tagline: "OpenAI's flagship AI assistant — GPT-5.5, Agent Mode, Sora and Codex in one app",
     description: "ChatGPT is OpenAI's general-purpose AI assistant running on GPT-5.5 with Agent Mode, Codex coding agent, Sora video generation, and Advanced Voice. In 2026 it has six pricing tiers — from an ad-supported free plan to a $200/month Pro tier with a 1M-token context window.",
     pricing: 'Free + $8–$200/month', bestFor: 'General research, writing, coding and everyday AI tasks',
@@ -413,6 +443,12 @@ const TOOLS = [
   // PRODUCTIVITY — 45K+/mo
   {
     slug: 'claude-ai', name: 'Claude AI', category: 'Productivity',
+    // Task 4 (AEO/GEO): external entity links — mirrors constants.ts `sameAs`.
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q118876059',
+      'https://www.crunchbase.com/organization/anthropic',
+      'https://www.producthunt.com/products/claude',
+    ],
     tagline: "Anthropic's AI assistant — top-rated for long-form writing, analysis and coding",
     description: "Claude is Anthropic's AI assistant built around Projects, Artifacts, and strong long-form writing and coding performance via Claude Code. In 2026 it runs on the Sonnet 4.6 and Opus 4.7 model family across a free tier and four paid tiers, from Pro at $20/month to Max at $200/month for intensive Claude Code sessions.",
     pricing: 'Free + $20–$200/month', bestFor: 'Writers, researchers and developers who want Claude Code',
@@ -437,6 +473,12 @@ const TOOLS = [
   // IMAGE — 60K+/mo
   {
     slug: 'midjourney', name: 'Midjourney', category: 'Image',
+    // Task 4 (AEO/GEO): external entity links — mirrors constants.ts `sameAs`.
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q113070628',
+      'https://www.crunchbase.com/organization/midjourney',
+      'https://www.producthunt.com/products/midjourney',
+    ],
     tagline: 'The benchmark AI image generator for artistic quality — V7 and V8.1',
     description: "Midjourney is the standard for AI-generated artistic and cinematic imagery, with V8.1 (April 2026) adding faster generation, HD 2K output, and improved detail retention on top of V7's Omni Reference for consistent characters. It operates on a GPU-time subscription model with no free tier and no official API.",
     pricing: 'From $10/month — no free tier', bestFor: 'Artists, designers and creators who prioritise visual quality over cost',
@@ -1301,6 +1343,9 @@ function compareProductListSchema(compareSlug, canonical) {
           worstRating: '1',
         },
       } : {}),
+      // Task 4 (AEO/GEO): Wikidata/Crunchbase/ProductHunt links for the tool's
+      // parent company/product — helps disambiguate the entity in Knowledge Graph.
+      ...(tool.sameAs ? { sameAs: tool.sameAs } : {}),
     };
     return { '@type': 'ListItem', position: idx + 1, item };
   }).filter(Boolean);
@@ -1314,6 +1359,45 @@ function compareProductListSchema(compareSlug, canonical) {
     url: canonical,
     numberOfItems: toolItems.length,
     itemListElement: toolItems,
+  };
+}
+
+// Task 3 Fix (AEO/GEO): Dataset schema for compare pages — describes the comparison
+// table itself as structured data (rather than just the surrounding article), so AI
+// engines can extract the compared attributes (pricing, features, rating) directly.
+function compareDatasetSchema(art, canonical) {
+  const slugParts = art.slug.split('-vs-');
+  const toolNames = slugParts.map(s => TOOLS.find(t => t.slug === s)?.name || s);
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${toolNames.join(' vs ')} Comparison Data ${YEAR}`,
+    description: art.metaDescription || `Side-by-side comparison data for ${toolNames.join(' vs ')}, covering pricing, features, and independent ratings.`,
+    url: canonical,
+    creator: {
+      '@type': 'Person',
+      name: AUTHOR,
+      url: `${SITE}/about`,
+      sameAs: AUTHOR_SAME_AS,
+    },
+    variableMeasured: [
+      {
+        '@type': 'PropertyValue',
+        name: 'Pricing',
+        description: `Monthly pricing tiers for ${toolNames.join(' and ')}`,
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Features',
+        description: `Core feature set comparison across ${toolNames.join(' and ')}`,
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Rating',
+        description: `Independent rating out of 5 for ${toolNames.join(' and ')}`,
+      },
+    ],
   };
 }
 
@@ -1362,6 +1446,9 @@ function reviewSchema(tool, canonical) {
         description: tool.pricing,
         url: canonical,
       },
+      // Task 4 (AEO/GEO): Wikidata/Crunchbase/ProductHunt links for the tool's
+      // parent company/product — helps disambiguate the entity in Knowledge Graph.
+      ...(tool.sameAs ? { sameAs: tool.sameAs } : {}),
     },
     reviewRating: {
       '@type': 'Rating',
@@ -1376,6 +1463,55 @@ function reviewSchema(tool, canonical) {
         cssSelector: ['.tool-whatIs', '.tool-verdict', '.tool-faqs'],
       },
     } : {}),
+  };
+}
+
+// Task 2 Fix (AEO/GEO): ClaimReview schema — frames the star rating as a fact-checked
+// claim with byline attribution, which AI Overviews/Perplexity/ChatGPT can surface
+// directly as a sourced verdict instead of treating it as marketing copy.
+function claimReviewSchema(tool, canonical) {
+  // Reuse the same "March 2026" → ISO date logic as reviewSchema so both schemas
+  // reference the same publish/verification date.
+  const months = {
+    January:'01', February:'02', March:'03', April:'04',
+    May:'05', June:'06', July:'07', August:'08',
+    September:'09', October:'10', November:'11', December:'12',
+  };
+  const parts = (tool.lastTested || '').split(' ');
+  const publishDate = parts.length === 2 ? `${parts[1]}-${months[parts[0]] || '01'}-01` : TODAY;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ClaimReview',
+    url: canonical,
+    datePublished: publishDate,
+    author: {
+      '@type': 'Person',
+      name: AUTHOR,
+      url: `${SITE}/about`,
+      sameAs: AUTHOR_SAME_AS,
+    },
+    claimReviewed: `${tool.name} deserves a rating of ${tool.rating} out of 5 for ${(tool.category || 'AI tools').toLowerCase()} use cases.`,
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: tool.rating,
+      bestRating: '5',
+      worstRating: '1',
+    },
+    itemReviewed: {
+      '@type': 'Claim',
+      author: {
+        '@type': 'Organization',
+        name: tool.name,
+        url: canonical,
+      },
+      datePublished: publishDate,
+      appearance: {
+        '@type': 'CreativeWork',
+        url: canonical,
+        name: `${tool.name} Review ${YEAR}`,
+      },
+    },
   };
 }
 
@@ -2675,6 +2811,8 @@ for (const tool of TOOLS) {
 
   const schemas = [
     reviewSchema(tool, canonical),
+    // Task 2 (AEO/GEO): ClaimReview — exposes the rating verdict as a fact-checked claim
+    claimReviewSchema(tool, canonical),
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'AI Tools', `${SITE}/tools`],
@@ -2709,6 +2847,9 @@ for (const tool of TOOLS) {
           reviewCount: TRUSTPILOT_COUNTS[tool.slug].toString(),
         },
       } : {}),
+      // Task 4 (AEO/GEO): Wikidata/Crunchbase/ProductHunt links for the tool's
+      // parent company/product — helps disambiguate the entity in Knowledge Graph.
+      ...(tool.sameAs ? { sameAs: tool.sameAs } : {}),
     },
   ];
 
@@ -2781,6 +2922,9 @@ for (const art of COMPARE_ARTICLES) {
     ]),
     // Issue 21 Fix (AEO): Product+ItemList schema for comparison rich results
     ...(productListSchema ? [productListSchema] : []),
+    // Task 3 (AEO/GEO): Dataset schema — describes the comparison table's
+    // measured attributes (pricing, features, rating) as structured data.
+    compareDatasetSchema(art, canonical),
   ];
   
 if (art.faqs && art.faqs.length > 0) {
