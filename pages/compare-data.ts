@@ -1772,7 +1772,7 @@ The deciding question: are you creating new video content or repurposing existin
     pricing: {
       tools: [
         { name: 'InVideo AI', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'Content creators turning scripts into video', affiliateLink: 'https://invideo.io?via=ainexus' },
-        { name: 'Pictory', free: true, startingPrice: '$0 (trial)', paidFrom: '$19/mo', bestPlanFor: 'Bloggers repurposing written content to video', affiliateLink: 'https://pictory.ai?via=ainexus' },
+        { name: 'Pictory', free: true, startingPrice: '$0 (trial)', paidFrom: '$19/mo', bestPlanFor: 'Bloggers repurposing written content to video', affiliateLink: 'https://pictory.ai?fpr=navneet24' },
       ],
     },
     faqs: [

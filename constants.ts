@@ -294,7 +294,7 @@ export const TOOLS: Tool[] = [
     id: 'v1', slug: 'pictory',
     name: 'Pictory', tagline: 'Turn your articles and scripts into videos automatically',
     description: 'Pictory converts blog posts, scripts, and long-form content into short branded videos. The fastest way to repurpose written content into video for YouTube or Reels.',
-    category: Category.VIDEO, affiliateLink: 'https://pictory.ai?via=ainexus',
+    category: Category.VIDEO, affiliateLink: 'https://pictory.ai?fpr=navneet24',
     iconName: 'Film', color: '#818cf8', accentColor: '#6366f1',
     userBadge: 'Free trial ✓', pricing: 'From $19/month', bestFor: 'Bloggers & content repurposers',
     features: ['Article to video AI', 'Auto captions', 'Brand kit', 'AI voiceover'],
