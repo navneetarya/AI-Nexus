@@ -1767,11 +1767,11 @@ The deciding question: are you creating new video content or repurposing existin
     ],
     winnerSlug: 'invideo',
     winnerName: 'InVideo AI',
-    winnerAffiliateLink: 'https://invideo.io?via=ainexus',
+    winnerAffiliateLink: 'https://invideo.sjv.io/c/5629153/883681/12258',
     winnerAffiliateText: 'Try InVideo AI free',
     pricing: {
       tools: [
-        { name: 'InVideo AI', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'Content creators turning scripts into video', affiliateLink: 'https://invideo.io?via=ainexus' },
+        { name: 'InVideo AI', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'Content creators turning scripts into video', affiliateLink: 'https://invideo.sjv.io/c/5629153/883681/12258' },
         { name: 'Pictory', free: true, startingPrice: '$0 (trial)', paidFrom: '$19/mo', bestPlanFor: 'Bloggers repurposing written content to video', affiliateLink: 'https://pictory.ai?fpr=navneet24' },
       ],
     },

@@ -332,7 +332,7 @@ export const TOOLS: Tool[] = [
     id: 'v3', slug: 'invideo',
     name: 'InVideo AI', tagline: 'Create faceless YouTube videos from a text prompt',
     description: 'InVideo AI generates complete videos from a text prompt — script, voiceover, stock footage, and captions included. Perfect for creating faceless YouTube channels at scale.',
-    category: Category.VIDEO, affiliateLink: 'https://invideo.io?via=ainexus',
+    category: Category.VIDEO, affiliateLink: 'https://invideo.sjv.io/c/5629153/883681/12258',
     iconName: 'Video', color: '#10b981', accentColor: '#059669',
     userBadge: 'Free plan ✓', pricing: 'Free + from $20/month', bestFor: 'Faceless YouTube creators',
     features: ['Text to video AI', 'AI script writer', 'AI voiceover', '16M+ media library'],
