@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-06-03
+# Updated: 2026-06-19
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -106,6 +106,7 @@
 - [Cursor AI Review 2026](https://ainexustools.online/blog/cursor-ai-review-2026): Cursor AI reviewed — pricing, free plan, Tab completion, Composer, and Agent mode. Is it worth $20/month over GitHub Copilot?
 - [Best AI Email Marketing Tools 2026](https://ainexustools.online/blog/best-ai-email-marketing-tools-2026): GetResponse, Mailchimp AI, Brevo and ActiveCampaign ranked — automation, free plans, and pricing compared.
 - [Best AI Meeting Tools 2026](https://ainexustools.online/blog/best-ai-meeting-tools-2026): Fireflies.ai, Otter.ai, and Fathom ranked — auto-transcription, action items, summaries, and pricing compared.
+- [Best AI Agents for Small Business 2026](https://ainexustools.online/blog/best-ai-agents-for-small-business-2026): Lindy.ai, Relevance AI, Make.com and n8n compared — autonomy levels, SMB pricing, and which agent platform to start with.
 
 ## Comparison Articles
 
