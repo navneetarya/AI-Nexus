@@ -100,6 +100,7 @@ const post: BlogPost = {
 <p>The principle is leverage per dollar, not completeness. Don't subscribe to every AI tool — subscribe to the ones that directly address your highest-friction workflows.</p>
 <p>For most early-stage startups, the highest-leverage starting point is: <strong>Claude</strong> for writing and research, <strong>Gamma</strong> for presentations, and <strong>Canva AI</strong> for design. Total monthly cost: $35–43. Test for two months and add Notion AI and GitHub Copilot only if the workflow need is clear.</p>
 <p>The startups that struggle with AI tools are usually the ones that subscribe to everything and use none of them consistently. Pick three tools, integrate them deeply into your daily workflow, and expand from there.</p>
+<p>If your startup is evaluating whether to invest in AI automation platforms (like Make.com, n8n) or full AI agent platforms (like Lindy.ai, Relevance AI), two guides clarify the landscape: <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a> compares the leading platforms on autonomy, pricing, and deployment fit; <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a> explains which category matches which use case — important reading before committing budget to either.</p>
 `
 };
 

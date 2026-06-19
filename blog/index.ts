@@ -102,8 +102,13 @@ import post50 from './best-ai-meeting-tools-2026';
 // Target keyword: "best ai agents for small business 2026"
 // Affiliates: Relevance AI (direct) · Lindy.ai (PartnerStack) · n8n (PartnerStack) · Make.com (direct)
 import post51 from './best-ai-agents-for-small-business-2026';
+// ── PILLAR: AI Agents vs AI Automation — 61,900/mo — publish before all others ─
+// Target keyword: "ai agents vs ai automation" / "difference between ai agents and automation"
+// Affiliates: Relevance AI · Lindy.ai · Make.com · n8n (see comment block at top of .ts)
+import post52 from './ai-agents-vs-ai-automation-difference-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post52, // PILLAR — AI Agents vs AI Automation — 61,900/mo — pinned first for freshness
   post51, // Week 5 AI agents for SMB — Relevance AI + Make.com affiliates, P1 Urgent
   post50, // Week 4 best ai meeting tools — Fireflies affiliate (20% recurring), pinned for freshness
   post49, // Week 3 YouTube creators — 3 affiliates (Munch AI + ElevenLabs + Opus.pro)

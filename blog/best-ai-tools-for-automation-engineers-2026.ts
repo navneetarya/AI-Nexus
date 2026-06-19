@@ -56,6 +56,7 @@ const post: BlogPost = {
 <h2>The Automation Engineer AI Toolkit in 2026</h2>
 <p>The most effective automation engineers are combining tools: <strong>GitHub Copilot</strong> for daily test code writing, <strong>Claude</strong> for architecture and complex debugging, and a specialist AI testing platform (<strong>Testim, Applitools, or Mabl</strong>) for the production test infrastructure.</p>
 <p>The engineers who understand both how to use AI effectively and how to design robust test strategies are in higher demand than ever. AI handles the repetitive work — boilerplate, locator maintenance, visual comparison — freeing automation engineers for the strategic work that actually requires expertise.</p>
+<p>If you're also evaluating AI agent platforms alongside these automation tools — for workflow orchestration, CI pipeline automation, or test data management — our pillar guide covers the architectural distinction in full: <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a> Including a decision framework for when rule-based automation hits its ceiling and agent reasoning becomes the correct tool choice.</p>
 `
 };
 

@@ -1151,6 +1151,8 @@ const BLOG_OG_MAP = {
   'best-ai-meeting-tools-2026':                       `${SITE}/og-tool-review.webp`,
   // Week 5: AI agents for small business — P1 Urgent, KD 12, 3,400/mo
   'best-ai-agents-for-small-business-2026':           `${SITE}/og-tool-review.webp`,
+  // Pillar: AI Agents vs AI Automation — 61,900/mo — highest-priority publish
+  'ai-agents-vs-ai-automation-difference-2026':       `${SITE}/og-tool-review.webp`,
 };
 
 function resolveOgImage(slug) {
@@ -2584,9 +2586,32 @@ const BLOG_POSTS = [
       { q: 'What is the difference between an AI agent and a chatbot?', a: 'A chatbot responds to explicit user messages — reactive and single-step. An AI agent pursues a goal across multiple steps using tools, without being prompted at each step. Example: a chatbot answers "When is my order arriving?" An AI agent can check order status, identify a delay, draft a customer update email, and flag the issue to your fulfilment team — all without a human initiating each action.' },
     ],
   },
+  // ── PILLAR: ai-agents-vs-ai-automation-difference-2026 ───────────────────
+  // Blog .ts created + registered in blog/index.ts — adding to prerender for static HTML
+  // Target keyword: "ai agents vs ai automation" / "difference between ai agents and automation"
+  // Volume: 61,900/mo — publish before all other posts in this sprint
+  // Affiliates: Relevance AI (direct · https://relevanceai.com/?via=navneet)
+  //             Make.com (direct · https://www.make.com/en/register?pc=navneet)
+  //             Lindy.ai (PartnerStack — replace href in .ts when approved)
+  //             n8n (PartnerStack — replace href in .ts when approved)
+  {
+    slug: 'ai-agents-vs-ai-automation-difference-2026',
+    title: 'AI Agents vs AI Automation: What\'s the Real Difference?',
+    seoTitle: 'AI Agents vs AI Automation: What\'s the Real Difference? (2026)',
+    metaDescription: 'AI agents and AI automation are not the same thing. One follows rules; the other reasons. Here is the clearest explanation of the difference — and when to use each.',
+    datePublished: '2026-06-19',
+    dateModified: '2026-06-19',
+    readTimeMinutes: 10,
+    ogImage: 'https://ainexustools.online/og-tool-review.webp',
+    faqs: [
+      { q: 'What is the difference between AI agents and AI automation?', a: 'AI automation follows a fixed rule-based workflow: a trigger fires, conditions are checked, and a defined action executes. Every step is specified by a human in advance. AI agents pursue goals: given an objective, the agent uses an LLM to reason about what steps to take, which tools to use, and how to adapt when intermediate results are unexpected. Automation is deterministic; agents are reasoning systems. Automation is cheaper and more reliable for predictable inputs; agents handle variable inputs and multi-step decisions that automation cannot model without exponentially complex branching.' },
+      { q: 'Is Make.com an AI agent or an automation tool?', a: 'Make.com is an automation tool that has added AI-powered steps. Its core architecture is workflow-based — a human designs the execution path and the tool follows it. The AI modules embedded in Make.com workflows can classify, generate, or extract data within a step, but the overall execution sequence is fixed and human-designed. This places Make.com at Level 2 (AI-augmented automation) — more capable than rule-only automation, but not an agent that reasons about what to do next.' },
+      { q: 'Is Zapier an AI agent?', a: 'Zapier\'s core product is automation, not an agent. Its Agents product (launched late 2024) adds genuine agent behaviour — monitoring triggers and autonomously executing multi-step actions across 6,000+ integrations — but this is a separate product from traditional Zaps. Classic Zaps are deterministic automation; Zapier Agents add goal-driven reasoning. Most Zapier users are using the automation product.' },
+      { q: 'Can n8n be used as an AI agent?', a: 'Yes — n8n\'s AI Agent node enables genuine agent behaviour within n8n workflows. The node uses an LLM with tool definitions to reason about what actions to take, rather than following a fixed execution path. This makes n8n one of the most capable platforms for building custom agents, especially for technical teams wanting full control over agent tools, memory, and decision logic. The self-hosted Community edition is free; Cloud Starter starts at approximately €20/month.' },
+      { q: 'Which is better for a small business: AI automation or AI agents?', a: 'For most small businesses in 2026, start with AI-augmented automation (Make.com, n8n) for any workflow where inputs are predictable. This handles the majority of practical use cases at lower cost than agent platforms. Move to supervised agents (Lindy.ai, Relevance AI) only when inputs are genuinely variable and multi-step reasoning is required. The realistic SMB entry point for agents is $19–20/month.' },
+    ],
+  },
 ];
-
-const template = readTemplate();
 
 // ── H4 Fix: Related links map — internal links between tool pages and blog/compare pages ──
 const RELATED_LINKS = {
@@ -2825,7 +2850,28 @@ const BLOG_RELATED_LINKS = {
   'best-vibe-coding-tools-2026': [
     ['/blog/best-ai-coding-tools-2026/', 'Best AI Coding Tools 2026'],
   ],
+
+  // ── Agents / Automation cluster ─────────────────────────────────────────────
+  'ai-agents-vs-ai-automation-difference-2026': [
+    ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
+    ['/blog/best-ai-tools-for-automation-engineers-2026/', 'Best AI Tools for Automation Engineers 2026'],
+  ],
+  'best-ai-agents-for-small-business-2026': [
+    ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
+    ['/blog/best-ai-tools-for-startups-2026/', 'Best AI Tools for Startups 2026'],
+  ],
+  'best-ai-tools-for-automation-engineers-2026': [
+    ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
+  ],
+  'best-ai-tools-for-startups-2026': [
+    ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
+    ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
+  ],
 };
+
+// ── Load the base template from dist/index.html ──────────────────────────
+// This HTML will be cloned and customised for each route (tools, blog, etc)
+const template = fs.readFileSync(path.join(DIST, 'index.html'), 'utf-8');
 
 // ── 1. Tool pages ─────────────────────────────────────────────────────────────
 console.log('Tool pages:');

@@ -351,6 +351,16 @@
     <image:image><image:loc>https://ainexustools.online/og/blog/best-ai-meeting-tools-2026.webp</image:loc><image:title>Best AI Meeting Tools 2026 — Ranked &amp; Compared</image:title></image:image>
   </url>
 
+  <!-- Week 5: AI Agents for Small Business — 3,400/mo, KD 12 -->
+  <url><loc>https://ainexustools.online/blog/best-ai-agents-for-small-business-2026/</loc><changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-06-19</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-tool-review.webp</image:loc><image:title>Best AI Agents for Small Business 2026 — Ranked &amp; Compared</image:title></image:image>
+  </url>
+
+  <!-- PILLAR: AI Agents vs AI Automation — 61,900/mo — publish before all others -->
+  <url><loc>https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026/</loc><changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-06-19</lastmod>
+    <image:image><image:loc>https://ainexustools.online/og-tool-review.webp</image:loc><image:title>AI Agents vs AI Automation: What&apos;s the Real Difference? (2026)</image:title></image:image>
+  </url>
+
   <!-- Task 3: 5 missing high-volume tool pages — 22K–100K+/mo, highest-priority additions -->
   <!-- Priority 0.95 — above all other tool pages — reflects the search volume of these terms   -->
   <url><loc>https://ainexustools.online/tools/chatgpt/</loc><changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-06-14</lastmod>
