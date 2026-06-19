@@ -98,8 +98,13 @@ import post49 from './best-ai-tools-for-youtube-creators-2026';
 // Target keyword: "best ai meeting tools 2026" | Covers: Fireflies.ai · Otter.ai · Fathom
 // Affiliate: Fireflies.ai — https://fireflies.ai/?fpr=navneet89 — 20% recurring commission
 import post50 from './best-ai-meeting-tools-2026';
+// ── Week 5: Best AI Agents for Small Business — 3,400/mo, KD 12 — P1 Urgent ─
+// Target keyword: "best ai agents for small business 2026"
+// Affiliates: Relevance AI (direct) · Lindy.ai (PartnerStack) · n8n (PartnerStack) · Make.com (direct)
+import post51 from './best-ai-agents-for-small-business-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post51, // Week 5 AI agents for SMB — Relevance AI + Make.com affiliates, P1 Urgent
   post50, // Week 4 best ai meeting tools — Fireflies affiliate (20% recurring), pinned for freshness
   post49, // Week 3 YouTube creators — 3 affiliates (Munch AI + ElevenLabs + Opus.pro)
   post48, // Week 3 email marketing — GetResponse affiliate (40–60% recurring)
