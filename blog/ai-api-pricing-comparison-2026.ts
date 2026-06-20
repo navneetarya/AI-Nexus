@@ -6,7 +6,7 @@ const post: BlogPost = {
   seoTitle: 'AI API Pricing 2026 — Full Comparison',
   metaDescription: 'Complete AI API pricing comparison for 2026: OpenAI GPT-4o, Anthropic Claude, Google Gemini, and Meta Llama compared on cost per million tokens. Build smarter.',
   datePublished: '2026-05-24',
-  dateModified: '2026-06-14',
+  dateModified: '2026-06-20',
   author: 'Navneet Arya',
   category: 'Research',
   readTime: '10 min read',
@@ -122,6 +122,7 @@ const post: BlogPost = {
 <h2>The Tiered Model Strategy</h2>
 <p>The most cost-effective AI applications in 2026 use a tiered model approach: route simple, structured queries to cheaper models (Gemini Flash, GPT-4o mini, Haiku) and escalate only complex queries requiring higher reasoning to expensive models (GPT-4o, Claude Sonnet). A well-designed routing layer can reduce API costs by 60–80% compared to routing everything to the most capable model.</p>
 <p>This is not a compromise on quality — it's using the right tool for each job. Classifying customer support tickets doesn't need GPT-4o. Drafting a complex legal document summary does.</p>
+<p>If you're calling these APIs from inside a no-code workflow rather than custom code, the automation platform you choose affects this cost calculus directly — n8n, Make, and Zapier each handle model routing and API calls differently, with very different pricing models layered on top. See our comparison: <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier: AI Automation Platform Comparison 2026</a>.</p>
 `
 };
 
