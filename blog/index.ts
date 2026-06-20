@@ -106,9 +106,14 @@ import post51 from './best-ai-agents-for-small-business-2026';
 // Target keyword: "ai agents vs ai automation" / "difference between ai agents and automation"
 // Affiliates: Relevance AI · Lindy.ai · Make.com · n8n (see comment block at top of .ts)
 import post52 from './ai-agents-vs-ai-automation-difference-2026';
+// ── P1 First Mover: What is MCP (Model Context Protocol)? — KD low, 82,800/mo, zero independent competition ─
+// Target keyword: "what is mcp" / "model context protocol explained"
+// Infra-cluster anchor — low direct affiliate, high strategic/citation value (see comment block at top of .ts)
+import post53 from './what-is-mcp-model-context-protocol-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
-  post52, // PILLAR — AI Agents vs AI Automation — 61,900/mo — pinned first for freshness
+  post53, // P1 First Mover — What is MCP? — 82,800/mo, zero independent competition — pinned first for freshness
+  post52, // PILLAR — AI Agents vs AI Automation — 61,900/mo
   post51, // Week 5 AI agents for SMB — Relevance AI + Make.com affiliates, P1 Urgent
   post50, // Week 4 best ai meeting tools — Fireflies affiliate (20% recurring), pinned for freshness
   post49, // Week 3 YouTube creators — 3 affiliates (Munch AI + ElevenLabs + Opus.pro)

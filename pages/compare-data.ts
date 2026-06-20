@@ -1828,7 +1828,9 @@ These are fundamentally different tools. Comparing them on a single feature list
 
 **Pricing:** Pay-per-use via Anthropic API. Typical coding sessions cost $0.50–$3.00 depending on codebase size and task complexity. No fixed monthly fee — costs vary with usage.
 
-**Who it is for:** Experienced developers comfortable with a terminal who need an agent for complex, multi-file work. Not appropriate for beginners or anyone unfamiliar with command-line tools.`,
+**Who it is for:** Experienced developers comfortable with a terminal who need an agent for complex, multi-file work. Not appropriate for beginners or anyone unfamiliar with command-line tools.
+
+Claude Code also speaks the [Model Context Protocol](/blog/what-is-mcp-model-context-protocol-2026/) (MCP) natively — Anthropic's open standard for letting AI agents call external tools and live data sources. In practice, that means a refactor can pull a live database schema or check a ticket in your project tracker mid-task, without a developer building a custom integration first.`,
       },
       {
         heading: 'GitHub Copilot — The professional developer standard',
@@ -2488,6 +2490,8 @@ The short answer: Lovable is the strongest choice for non-developers who want a 
 **Lead capture page test:** v0 generated a polished landing page component in one prompt — excellent visual design, Tailwind-styled, responsive. But it was a static UI component. No form action, no data submission, no backend. To make it functional, a developer adds the logic manually — which is exactly what v0 is designed for.
 
 **Paid plan:** $20/month for substantially higher credit limits and access to more advanced models.
+
+Developers wiring v0's output up to live data — a CRM, an internal API, a database — increasingly do that through [Model Context Protocol](/blog/what-is-mcp-model-context-protocol-2026/) servers rather than a hand-rolled API client, since MCP standardises how an AI coding tool discovers and calls external data sources.
 
 **Who v0 is for:** Front-end developers and Next.js developers who want to accelerate UI implementation inside an existing project. Not suitable for non-developers or for building a new application from scratch.`,
       },

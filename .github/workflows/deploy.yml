@@ -87,6 +87,7 @@ jobs:
             how-to-use-ai-for-content-creation-2026 how-to-use-rytr-to-write-blog-posts is-grammarly-premium-worth-it-2026
             jasper-ai-alternatives leonardo-vs-midjourney-2026 perplexity-ai-review-2026
             perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026 taskade-vs-notion-vs-asana-2026
+            what-is-mcp-model-context-protocol-2026
           )
 
           # Sync check — fails if blog/*.ts files were added/removed without
@@ -161,14 +162,15 @@ jobs:
           # 3b. Sitemap URL count — catches silent drops (missing posts/tools/etc.)
           LOC_COUNT=$(grep -c "<loc>" dist/sitemap.xml)
           echo "ℹ️  sitemap.xml contains $LOC_COUNT <loc> entries"
-          EXPECTED_LOC_COUNT=127
+          EXPECTED_LOC_COUNT=128
           if [ "$LOC_COUNT" -ne "$EXPECTED_LOC_COUNT" ]; then
             echo "❌ Expected $EXPECTED_LOC_COUNT URLs in sitemap.xml, found $LOC_COUNT"
             echo "   Current breakdown: 1 home + 8 static + 1 freelancers landing + 3 specials (free/india/logos)"
-            echo "   + 8 categories + 1 blog index + 52 blog posts"
-            echo "   + 1 compare index + 22 compare articles + 31 tools = 127"
+            echo "   + 8 categories + 1 blog index + 53 blog posts"
+            echo "   + 1 compare index + 22 compare articles + 31 tools = 128"
             echo "   (Task 3: +5 new tool pages — chatgpt, claude-ai, grok-ai, midjourney, stable-diffusion)"
             echo "   (Pillar: +1 ai-agents-vs-ai-automation-difference-2026)"
+            echo "   (P1 First Mover: +1 what-is-mcp-model-context-protocol-2026)"
             echo "   If you added new routes, update EXPECTED_LOC_COUNT in deploy.yml to match."
             exit 1
           fi

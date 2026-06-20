@@ -180,9 +180,29 @@ function renderContent(text: string, navigate?: (to: string) => void, seenTools?
   }
 
   return text.split('\n\n').map((para, i) => {
-    const parts = para.split(/(\*\*[^*]+\*\*)/g).map((chunk, j) => {
+    const parts = para.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g).map((chunk, j) => {
       if (chunk.startsWith('**') && chunk.endsWith('**')) {
         return <strong key={j}>{chunk.slice(2, -2)}</strong>;
+      }
+      // Markdown-style internal/external link: [label](/path/) or [label](https://...)
+      const linkMatch = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(chunk);
+      if (linkMatch) {
+        const [, label, href] = linkMatch;
+        const isInternal = href.startsWith('/');
+        if (isInternal && navigate) {
+          return (
+            <span
+              key={j}
+              onClick={() => navigate(href)}
+              style={{ color: C.a1, fontWeight: 600, cursor: 'pointer', textDecoration: 'underline', textDecorationColor: `${C.a1}55` }}
+            >{label}</span>
+          );
+        }
+        return (
+          <a key={j} href={href} target={isInternal ? undefined : '_blank'} rel={isInternal ? undefined : 'noopener noreferrer'} style={{ color: C.a1, fontWeight: 600, textDecoration: 'underline', textDecorationColor: `${C.a1}55` }}>
+            {label}
+          </a>
+        );
       }
       return linkifyChunk(chunk, `${i}-${j}`);
     });
