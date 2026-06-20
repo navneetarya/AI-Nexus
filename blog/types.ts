@@ -150,6 +150,16 @@ export interface BlogPost {
   wordCount?: number;
 
   /**
+   * H-01 Audit Fix: Quick Answer box for Featured Snippet targeting.
+   * 40–60 word direct answer to the post's target keyword query.
+   * Injected before the main content as a styled callout block with
+   * data-speakable="quick-answer" for AI engine extraction.
+   * Pattern: "The best [X] in 2026 is [Y] for [reason]. [Z] is better for
+   * [use case]. [A] has the best free plan. This guide compares N options."
+   */
+  quickAnswer?: string;
+
+  /**
    * Task 6 (GEO/EEAT): Editor's personal take — rendered as a semantic
    * <blockquote> with "— Navneet Arya, AI Nexus" attribution immediately
    * after the Quick Answer excerpt box.

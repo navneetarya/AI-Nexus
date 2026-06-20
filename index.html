@@ -232,7 +232,12 @@
           'invideo.io', 'pictory.ai', 'opus.pro', 'descript.com',
           'leonardo.ai', 'photoroom.com', 'looka.com', 'gamma.app',
           'beautiful.ai', 'notion.so', 'perplexity.ai', 'canva.com',
-          'replit.com', 'grammarly.com'
+          'replit.com', 'grammarly.com',
+          // H-08 Audit Fix: 8 affiliate tools were missing from tracking
+          'cursor.com', 'lovable.dev', 'getresponse.com',
+          'getmunch.com', 'headshotpro.com', 'fireflies.ai',
+          'narrato.io', 'make.com', 'lindy.ai', 'relevanceai.com',
+          'n8n.io', 'windsurf.com'
         ];
         var isAffiliate = affiliateDomains.some(function(d) { return href.indexOf(d) !== -1; });
         if (isAffiliate && typeof window.gtag === 'function') {

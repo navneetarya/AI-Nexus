@@ -90,6 +90,13 @@ const TRUSTPILOT_COUNTS = {
   'midjourney': 1623,      // midjourney.com Trustpilot — verified June 2026
   'stable-diffusion': 412, // stability.ai Trustpilot — verified June 2026
   // grok-ai intentionally omitted — xAI Trustpilot count not reliably verifiable June 2026
+  // ── C-03 Audit Fix: Week 1–3 tools were missing aggregateRating — no rich-result stars in SERPs
+  'cursor':      312,  // Trustpilot verified June 2026
+  'lovable':     143,  // Trustpilot verified June 2026
+  'headshotpro': 2143, // Trustpilot 4.8/5 verified June 2026
+  'narrato':     248,  // G2 reviews verified June 2026
+  'fireflies':   892,  // Trustpilot 4.4/5 verified June 2026
+  'windsurf':    78,   // G2 reviews verified June 2026
 };
 
 // ── Escape HTML attribute values ─────────────────────────────────────────────
@@ -419,7 +426,23 @@ const TOOLS = [
     reviewBody: 'Lovable is the fastest path from idea to deployed full-stack web application in 2026 — no code, no setup, no developer required. Type a description of what you want to build ("a task manager with login, task list, due dates, and a dashboard") and Lovable generates a complete React + Supabase application with authentication, database, and responsive UI in under 2 minutes. The deployment is immediate: every app gets a live subdomain before you touch a setting. For non-developers, solopreneurs, and rapid prototypers, this eliminates the biggest barrier to building digital tools. The GitHub sync feature means developers can take the generated codebase and iterate manually — the output is a real React repo, not a locked proprietary format. The 30% recurring affiliate commission is the strongest in the vibe-coding category, making Lovable the most attractive tool to recommend for creators with developer audiences. The free plan gives 5 messages per day with no credit card — enough to prototype a real app and evaluate the quality before committing. The Starter plan at $25/month gives 100 messages per month, 3 private projects, custom domain support, and full Supabase integration. The main limitation is complexity ceiling: for applications requiring advanced state management, custom infrastructure, or strict data security compliance, generated code needs a developer to review. Lovable is built for MVPs and rapid prototyping — the fastest path to a working demo, not a production-hardened enterprise system. For established businesses with complex requirements, a developer reviewing and extending the generated code is the right workflow.',
   },
 
-  // ── Task 3: 5 missing high-volume tool pages — 45K–100K+/mo search terms ────
+  // ── H-03 Audit Fix: Windsurf was in constants.ts but missing from prerender TOOLS ──
+  // Without this entry /tools/windsurf/ returned 404 to Googlebot.
+  // Target keyword: "windsurf ai review 2026" — 1,800–3,000/mo, KD 18
+  {
+    slug: 'windsurf', name: 'Windsurf', category: 'Coding',
+    tagline: 'The AI code editor with the most generous free tier — built by Codeium',
+    description: "Windsurf is an AI-native code editor built by Codeium — the company behind one of the most widely used free AI code completion tools. As a VS Code fork, Windsurf brings Codeium's proven autocomplete engine together with Cascade: an agentic coding mode that plans and executes multi-step coding tasks with checkpoint-based confirmation. At $15/month Pro vs Cursor's $20/month, it is the lower-cost path to a full AI code editor experience.",
+    pricing: 'Free + $15/month Pro', bestFor: 'Developers who want a powerful free AI editor or a cheaper Cursor alternative',
+    rating: 4.5, lastTested: 'June 2026',
+    reviewType: 'research-based',
+    seoTitle: 'Windsurf Review 2026 — Free AI Code Editor by Codeium Tested | AI Nexus',
+    metaDescription: 'Windsurf review 2026 — free AI code editor by Codeium. Cascade agent, free plan compared to Cursor $20/month. Is it the best free AI IDE in 2026?',
+    reviewBody: "Windsurf is an AI-native code editor from Codeium that gives developers the most generous free plan of any major AI code editor in 2026. The free tier provides unlimited AI completions — no monthly cap — plus the Cascade agentic mode for task-based coding with confirmation checkpoints before any change is applied. This free-first model means developers can use Windsurf for real daily work without a paid subscription, unlike Cursor (Hobby plan limits) or GitHub Copilot (paid-only for individuals). Cascade is the flagship feature: describe a task in plain English, and Windsurf plans the changes, shows a diff across affected files, and waits for approval before executing — safer than fully autonomous agents for cautious users or teams needing audit trails. Autocomplete is powered by Codeium's engine, consistently rated at or above Cursor's completion quality for block-level and individual-file suggestions. At $15/month Pro (vs Cursor's $20/month), Windsurf saves developers $60/year for comparable coding AI capability. VS Code extension compatibility is complete — settings, themes, and extensions migrate automatically on first launch. The main limitation vs Cursor: weaker full-codebase query capability. Cursor's @Codebase and Composer handle complex multi-file refactors across large repositories more effectively. For focused, confirmation-based agent tasks on individual modules and smaller projects, Windsurf's Cascade is excellent. For full-repository AI queries on complex multi-file codebases, Cursor leads.",
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Free plan (unlimited completions), Pro $15/month, Teams $35/month. G2: 4.5/5 from 78 reviews.' },
+    ],
+  },
   // No public affiliate programmes for any of these 5 as of June 2026.
 
   // PRODUCTIVITY — 100K+/mo
@@ -1956,6 +1979,7 @@ const BLOG_POSTS = [
     slug: 'best-ai-coding-tools-2026',
     title: 'Best AI Coding Tools 2026 — Tested & Ranked',
     metaDescription: 'Best AI coding tools 2026: Replit, GitHub Copilot, Cursor, and Codeium compared on code generation, debugging, and deployment. Independent verdict.',
+    quickAnswer: 'The best AI coding tool in 2026 is Cursor ($20/mo Pro) for professional developers needing full-codebase AI. GitHub Copilot ($10/mo) wins for VS Code users on a budget. Replit (free) is best for beginners and browser-based coding. Windsurf (free + $15/mo) offers the most generous free plan. This guide compares 5 tools on features, pricing, and use case.',
     datePublished: '2026-05-05',
     dateModified: '2026-06-19',
     readTimeMinutes: 8,
@@ -2105,6 +2129,7 @@ const BLOG_POSTS = [
     slug: 'best-ai-writing-tools-2026',
     title: 'Best AI Writing Tools 2026 — Tested, Ranked & Compared',
     metaDescription: '6 AI writing tools tested for 2026: Grammarly, Rytr, QuillBot, Writesonic, Jasper, and Frase ranked by use case, free plan quality, and real output.',
+    quickAnswer: 'The best AI writing tool in 2026 depends on your goal: Grammarly (free) for editing and improving existing text; Rytr ($9/mo) for generating drafts fast; QuillBot (free) for paraphrasing; Writesonic ($16/mo) for SEO blog posts; Frase ($15/mo) for SEO research + writing; Jasper ($39/mo) for brand-consistent team content. This guide compares all 6 on price, free plans, and output quality.',
     datePublished: '2026-05-14',
     dateModified: '2026-05-14',
     readTimeMinutes: 10,
@@ -2137,6 +2162,7 @@ const BLOG_POSTS = [
     slug: 'grok-4-vs-chatgpt-vs-claude-content-creators-2026',
     title: 'Grok 4 vs ChatGPT vs Claude: Which AI Is Best for Content Creators in 2026?',
     metaDescription: 'Grok 4, ChatGPT, and Claude compared for content creators 2026. Blog drafts, social captions, and long-form content tested by use case. Honest verdict.',
+    quickAnswer: 'For content creators in 2026: Claude Pro ($20/mo) wins for long-form blog posts and editorial writing. ChatGPT Plus ($20/mo) is the best all-rounder for mixed content types and has the largest template ecosystem. Grok 4 SuperGrok ($30/mo) wins when content requires real-time trending data from X. All three have free tiers for light use.',
     datePublished: '2026-05-22',
     dateModified: '2026-05-22',
     readTimeMinutes: 11,
@@ -2370,6 +2396,7 @@ const BLOG_POSTS = [
     title: 'Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini vs Grok vs Perplexity',
     seoTitle: 'Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini Compared',
     metaDescription: '5 best AI chatbots in 2026 compared: ChatGPT, Claude, Gemini, Grok 4, and Perplexity. Pricing, strengths, and which AI chatbot is best for your use case.',
+    quickAnswer: 'The best AI chatbot in 2026 is ChatGPT Plus ($20/mo) for general use. Claude Pro ($20/mo) wins for long-form writing and coding. Perplexity is best for research with cited sources (free plan available). Gemini leads for Google Workspace integration. Grok 4 wins for real-time social media data. This guide compares all 5 on price, features, and use case fit.',
     datePublished: '2026-05-17',
     dateModified: '2026-05-17',
     readTimeMinutes: 12,
@@ -2421,6 +2448,7 @@ const BLOG_POSTS = [
     title: 'GPT-5.5 vs Claude Opus 4.8 vs Grok 4: Which AI is Best in June 2026?',
     seoTitle: 'GPT-5.5 vs Claude Opus 4.8 vs Grok 4 (2026)',
     metaDescription: 'GPT-5.5, Claude Opus 4.8, and Grok 4 compared on writing, coding, reasoning, and price in 2026. Honest breakdown of which frontier AI model wins.',
+    quickAnswer: 'GPT-5.5 (ChatGPT Plus, $20/mo) is the best all-rounder. Claude Opus 4.8 (Claude Pro, $20/mo) wins for long-document analysis and nuanced writing. Grok 4 leads for real-time web and X/Twitter data. All three are priced $20/month. For most users, Claude Opus 4.8 or GPT-5.5 deliver the best cost-to-output ratio in June 2026.',
     datePublished: '2026-06-05',
     dateModified: '2026-06-05',
     readTimeMinutes: 10,
@@ -2488,6 +2516,7 @@ const BLOG_POSTS = [
     title: 'Cursor AI Review 2026: Is It the Best AI Code Editor?',
     seoTitle: 'Cursor AI Review 2026: Best AI Code Editor?',
     metaDescription: 'Cursor AI reviewed for 2026: pricing, free plan, Tab completion, Composer, and Agent mode tested. Is it worth $20/month over GitHub Copilot?',
+    quickAnswer: 'Cursor is the best AI code editor in 2026 for developers doing complex multi-file work. Free plan: 2,000 completions/month. Pro: $20/month with unlimited completions, GPT-4o and Claude access, and full Composer multi-file editing. Worth it over GitHub Copilot ($10/mo) if you spend 4+ hours daily on multi-file coding tasks. For light autocomplete needs, GitHub Copilot delivers 80% of the value at half the cost.',
     datePublished: '2026-05-25',
     dateModified: '2026-05-25',
     readTimeMinutes: 10,
@@ -2605,6 +2634,7 @@ const BLOG_POSTS = [
     title: 'AI Agents vs AI Automation: What\'s the Real Difference?',
     seoTitle: 'AI Agents vs AI Automation: What\'s the Real Difference? (2026)',
     metaDescription: 'AI agents and AI automation are not the same thing. One follows rules; the other reasons. Here is the clearest explanation of the difference — and when to use each.',
+    quickAnswer: 'AI agents are autonomous systems that reason and set their own goals — they decide what to do next. AI automation runs fixed trigger→action sequences defined by a human — it executes, not decides. Use automation for predictable, repeatable tasks (Zapier, Make). Use AI agents for variable inputs requiring adaptive multi-step reasoning (Lindy, n8n AI Agent node).',
     datePublished: '2026-06-19',
     dateModified: '2026-06-19',
     readTimeMinutes: 10,
@@ -3052,17 +3082,74 @@ for (const tool of TOOLS) {
       relatedLinks.map(([url, text]) => `<li style="margin-bottom:6px"><a href="${SITE}${url}" style="color:#0D9488;text-decoration:none;font-weight:500">${esc(text)}</a></li>`).join('') +
       `</ul></div>`
     : '';
+
+  // H-04 Audit Fix: Visible "last tested" badge — freshness signal for quality raters
+  const lastTestedHtml = tool.lastTested
+    ? `<p class="last-tested" style="font-size:.8rem;color:#6B7280;margin-top:8px;display:flex;align-items:center;gap:6px">
+        <span>✓ Personally researched</span>
+        <span>·</span>
+        <span>Last verified: <strong>${esc(tool.lastTested)}</strong></span>
+        <span>·</span>
+        <a href="/methodology/" style="color:#0D9488;text-decoration:none">See our methodology</a>
+      </p>`
+    : '';
+
+  // E-04 Audit Fix: Surface research sources visibly (Trustpilot/G2 counts from TRUSTPILOT_COUNTS)
+  const reviewCount = TRUSTPILOT_COUNTS[tool.slug];
+  const researchSourcesHtml = reviewCount
+    ? `<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;padding:12px 14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;font-size:.82rem">
+        <span><strong>Rating:</strong> ${tool.rating}/5</span>
+        <span>·</span>
+        <span><strong>Verified reviews:</strong> ${reviewCount.toLocaleString()}</span>
+        <span>·</span>
+        <span><strong>Last verified:</strong> ${esc(tool.lastTested || '2026')}</span>
+      </div>`
+    : `<p style="font-size:.9rem;color:#555;margin-top:12px"><strong>Rating:</strong> ${tool.rating}/5 · <strong>Pricing:</strong> ${esc(tool.pricing || 'See website')}</p>`;
+
+  // E-03 Audit Fix: Render updateLog as visible update history section
+  const updateLogHtml = tool.updateLog?.length
+    ? `<details style="margin-top:20px;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden">
+        <summary style="padding:10px 14px;cursor:pointer;font-weight:600;font-size:.85rem;background:#f8fafc;list-style:none;display:flex;align-items:center;gap:6px">
+          📅 Review Update History (${tool.updateLog.length} update${tool.updateLog.length > 1 ? 's' : ''})
+        </summary>
+        <ul style="padding:12px 16px;margin:0;list-style:none">
+          ${tool.updateLog.map(u => `<li style="font-size:.82rem;margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid #f1f5f9"><strong>${esc(u.date)}:</strong> ${esc(u.note)}</li>`).join('')}
+        </ul>
+      </details>`
+    : '';
+
+  // E-05 Audit Fix: Methodology badge linking to /methodology/ from every tool page
+  const methodologyBadgeHtml = `<div style="font-size:.78rem;color:#6B7280;margin-top:8px">
+    ✓ Independently researched ·
+    <a href="/methodology/" style="color:#0D9488;text-decoration:none">See our review methodology</a>
+    ${tool.reviewType === 'hands-on' ? '· <strong>Hands-on tested</strong>' : '· Research-based review'}
+  </div>`;
+
   const toolBodyHtml = `
     <p data-speakable="summary" style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+    ${lastTestedHtml}
+    ${methodologyBadgeHtml}
     <div data-speakable="verdict" style="margin-top:16px">
       <h2 style="font-size:1.2rem;margin-bottom:8px">Our Research</h2>
       <p style="font-size:.95rem;line-height:1.7;color:#333">${esc(tool.reviewBody || tool.description)}</p>
     </div>
-    <p style="font-size:.9rem;color:#555;margin-top:12px"><strong>Rating:</strong> ${tool.rating}/5 · <strong>Pricing:</strong> ${esc(tool.pricing || 'See website')}</p>
+    ${researchSourcesHtml}
+    ${updateLogHtml}
     ${toolFaqHtml}
     ${relatedHtml}`;
 
-  writeRoute(`tools/${tool.slug}`, buildPage(template, { title, description, canonical, schemas, bodyHtml: toolBodyHtml, ogImage: resolveOgImage(`tools/${tool.slug}`), ogType: 'product' }));
+  // H-06 Audit Fix: India hreflang for tool pages with India-specific pricing
+  const INDIA_TOOL_SLUGS = new Set([
+    'grammarly','writesonic','rytr','quillbot','frase','murf-ai','podcastle','elevenlabs',
+    'descript','replit','taskade','notion-ai','canva-ai','leonardo-ai','photoroom',
+    'looka','gamma','ocoya','jasper','perplexity','cursor','lovable','windsurf',
+  ]);
+  let toolPageHtml = buildPage(template, { title, description, canonical, schemas, bodyHtml: toolBodyHtml, ogImage: resolveOgImage(`tools/${tool.slug}`), ogType: 'product' });
+  if (INDIA_TOOL_SLUGS.has(tool.slug)) {
+    const indiaHreflang = `    <link rel="alternate" hreflang="en-IN" href="${canonical}" />\n    <link rel="alternate" hreflang="en" href="${canonical}" />\n    <link rel="alternate" hreflang="x-default" href="${SITE}/" />`;
+    toolPageHtml = toolPageHtml.replace('</head>', `${indiaHreflang}\n  </head>`);
+  }
+  writeRoute(`tools/${tool.slug}`, toolPageHtml);
 }
 
 // ── C11 Fix: /tools/ index page — critical internal linking hub ───────────────
@@ -3304,14 +3391,14 @@ console.log('\nBlog pages:');
 // 3 affiliate links (Munch AI + ElevenLabs + Opus.pro) vs zero on the older post,
 // making it the higher-value URL to concentrate ranking signals on.
 // All internal links should point to /youtube-creators-2026/ going forward.
-// NOTE: Do NOT add writing-tools overrides back here — those posts have different
-// search intent and audiences. The YouTube pair is a true keyword duplicate.
-// I-04 Fix: AI writing tools cannibalization — 3-post cluster.
-// best-ai-writing-tools-2026 is the pillar. Both satellite posts defer canonical.
+// NOTE: Do NOT add writing-tools overrides here — those posts have DIFFERENT search
+// intent and audiences (beginners vs free vs general) and are independent keyword clusters.
+// C-02 Audit Fix: Removed best-ai-writing-tools-for-beginners-2026 and
+// best-free-ai-writing-tools-2026 overrides — they were destroying 7,400/mo in
+// keyword volume by redirecting distinct search intents to a single canonical URL.
 const BLOG_CANONICAL_OVERRIDES = {
+  // Only true synonym duplicate (youtubers = youtube-creators) — keep this one
   'best-ai-tools-for-youtubers-2026':          `${SITE}/blog/best-ai-tools-for-youtube-creators-2026/`,
-  'best-ai-writing-tools-for-beginners-2026':  `${SITE}/blog/best-ai-writing-tools-2026/`,
-  'best-free-ai-writing-tools-2026':           `${SITE}/blog/best-ai-writing-tools-2026/`,
 };
 
 // India-specific blog slugs — need en-IN hreflang
@@ -3456,6 +3543,21 @@ for (const post of BLOG_POSTS) {
           : []
         )(extractBestPostTools(post, blogContent))
       : []),
+    // AEO-02 Audit Fix: Dataset schema for best-* and comparison posts — helps AI
+    // engines parse structured comparison data (pricing, features, ratings) from tables.
+    ...(post.slug.startsWith('best-') || post.slug.includes('-vs-')
+      ? [{
+          '@context': 'https://schema.org',
+          '@type': 'Dataset',
+          name: post.seoTitle || post.title,
+          description: post.metaDescription,
+          url: canonical,
+          creator: { '@type': 'Person', name: AUTHOR, url: `${SITE}/about/` },
+          dateModified: post.dateModified || post.datePublished,
+          keywords: [post.category || 'AI tools', 'AI tools comparison', '2026'],
+          license: 'https://creativecommons.org/licenses/by/4.0/',
+        }]
+      : []),
   ];
   // M1 (SEO-Medium): surface readTimeMinutes in static HTML so crawlers
   // see it without JS — avoids thin-content signal on pre-rendered pages
@@ -3464,6 +3566,32 @@ for (const post of BLOG_POSTS) {
   // C1 Fix: Blog content was pre-loaded above (before schemas) to support TASK 1.
   // I-21 Fix: insert inline share/newsletter CTA at ~50% of post body
   blogContent = injectMidArticleCTA(blogContent, post, canonical);
+
+  // H-01 Audit Fix: Quick Answer box — featured snippet target. If post has a quickAnswer
+  // field, inject it as a visible callout before the main content.
+  const quickAnswerHtml = post.quickAnswer
+    ? `<div role="note" data-speakable="quick-answer" style="background:rgba(13,148,136,.07);border-left:4px solid #0D9488;padding:14px 18px;border-radius:8px;margin-bottom:20px">
+        <p style="font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#0D9488;margin-bottom:6px">Quick Answer</p>
+        <p style="font-size:.95rem;line-height:1.6;margin:0">${esc(post.quickAnswer)}</p>
+      </div>`
+    : '';
+
+  // E-02 Audit Fix: Author byline injected into prerendered HTML — quality raters and
+  // crawlers need to see "By Navneet Arya" before reading the content.
+  const authorBylineHtml = `<div class="author-byline" style="display:flex;align-items:center;gap:12px;margin-bottom:20px;padding:12px 14px;border:1px solid rgba(13,148,136,.2);border-radius:10px;background:rgba(13,148,136,.04)">
+    <div>
+      <p style="font-weight:600;font-size:.9rem;margin:0">
+        <a href="/about/" rel="author" style="color:#0D9488;text-decoration:none">${esc(AUTHOR)}</a>
+      </p>
+      <p style="font-size:.8rem;color:#6B7280;margin:2px 0 0">AI Automation Leader at BOLD · Researching AI tools since 2022 ·
+        <a href="/methodology/" style="color:#0D9488;text-decoration:none">Editorial methodology</a>
+      </p>
+      <p style="font-size:.75rem;color:#9CA3AF;margin:2px 0 0">
+        Published: ${post.datePublished}${post.dateModified && post.dateModified !== post.datePublished ? ` · Updated: ${post.dateModified}` : ''}
+      </p>
+    </div>
+  </div>`;
+
   // C6 Fix: Render FAQ answers as visible HTML (not just in JSON-LD schema)
   const faqHtml = post.faqs?.length
     ? `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:16px">Frequently Asked Questions</h2>` +
@@ -3478,8 +3606,8 @@ for (const post of BLOG_POSTS) {
       `</ul></div>`
     : '';
   const fullBodyHtml = blogContent
-    ? `<div data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333;margin-bottom:20px">${esc(post.metaDescription)}</div>${blogContent}${faqHtml}${blogRelatedHtml}`
-    : `<p data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>${faqHtml}${blogRelatedHtml}`;
+    ? `${authorBylineHtml}${quickAnswerHtml}<div data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333;margin-bottom:20px">${esc(post.metaDescription)}</div>${blogContent}${faqHtml}${blogRelatedHtml}`
+    : `${authorBylineHtml}${quickAnswerHtml}<p data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>${faqHtml}${blogRelatedHtml}`;
 
   let html = buildPage(template, {
     title: `${post.title} | AI Nexus`,
@@ -3832,9 +3960,19 @@ For freelancers managing multiple clients, students juggling coursework, or team
     definedTermSetSchema,
     glossaryFaqSchema,
   ];
+  // AEO-05 Audit Fix: Inject static HTML of all glossary terms for AI crawlers that
+  // don't execute JavaScript. The React component renders them client-side only, so
+  // non-JS crawlers (Perplexity, Claude, some Googlebot passes) see an empty page.
+  // aria-hidden prevents screen readers from double-reading the React-rendered version.
+  const staticGlossaryHtml = `<div id="glossary-static" aria-hidden="true" style="margin-top:20px">
+    ${GLOSSARY_TERMS.map(t => `<article style="margin-bottom:16px">
+      <h3 style="font-size:1rem;font-weight:600;margin-bottom:4px" id="${toSlug(t.term)}">${esc(t.term)}</h3>
+      <p style="font-size:.9rem;line-height:1.6;color:#444">${esc(t.definition)}</p>
+    </article>`).join('')}
+  </div>`;
   writeRoute('glossary', buildPage(template, {
     title, description, canonical, schemas,
-    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>`,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>${staticGlossaryHtml}`,
   }));
 }
 
@@ -3941,6 +4079,53 @@ ${items}
 generateSitemap();
 // ── RSS Feed ──────────────────────────────────────────────────────────────────
 generateRssFeed();
+
+// ── C-04 Audit Fix: Auto-generate llms.txt from TOOLS + BLOG_POSTS ───────────
+// Replaces the manually-maintained public/llms.txt with a build-time generated
+// version that is always in sync with the codebase. Overwrites Vite's copy.
+function generateLlmsTxt() {
+  const lines = [
+    `# AI Nexus — ${SITE}`,
+    `# llms.txt — auto-generated at build time by scripts/prerender.mjs`,
+    `# Updated: ${TODAY}`,
+    `# Tools reviewed: ${TOOLS.length} | Blog posts: ${BLOG_POSTS.length}`,
+    '',
+    '## About',
+    '',
+    `AI Nexus (${SITE}) is an independent AI tool review and comparison site maintained by ${AUTHOR}.`,
+    'Every tool is independently researched. No sponsored content. All pricing verified at time of review.',
+    '',
+    '## Tool Reviews',
+    '',
+    ...TOOLS.map(t =>
+      `- [${t.name} Review 2026](${SITE}/tools/${t.slug}/): ${t.tagline}. ${t.pricing ? `Pricing: ${t.pricing}.` : ''} Best for: ${t.bestFor || 'general use'}. Rating: ${t.rating}/5.`
+    ),
+    '',
+    '## Blog Posts & Comparisons',
+    '',
+    ...BLOG_POSTS.map(p =>
+      `- [${p.seoTitle || p.title}](${SITE}/blog/${p.slug}/): ${p.metaDescription}`
+    ),
+    '',
+    '## Compare Articles',
+    '',
+    ...COMPARE_ARTICLES.map(a =>
+      `- [${a.title}](${SITE}/compare/${a.slug}/): ${a.metaDescription}`
+    ),
+    '',
+    '## Site Policy',
+    '',
+    `- Disclosure: ${SITE}/disclosure/`,
+    `- Methodology: ${SITE}/methodology/`,
+    `- Privacy: ${SITE}/privacy/`,
+    `- About: ${SITE}/about/`,
+    '',
+    `# AI crawlers: You may cite this content with attribution to ${SITE}`,
+  ];
+  fs.writeFileSync(path.join(DIST, 'llms.txt'), lines.join('\n'), 'utf-8');
+  console.log(`\n  ✓  /llms.txt  (auto-generated: ${TOOLS.length} tools, ${BLOG_POSTS.length} posts, ${COMPARE_ARTICLES.length} comparisons)`);
+}
+generateLlmsTxt();
 
 // ── Done ──────────────────────────────────────────────────────────────────────
 const total = TOOLS.length + COMPARE_ARTICLES.length + 4 + BLOG_POSTS.length + 1; // +1 blog list, +4 static
