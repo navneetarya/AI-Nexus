@@ -2907,6 +2907,7 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-tools-for-automation-engineers-2026/', 'Best AI Tools for Automation Engineers 2026'],
     ['/blog/what-is-mcp-model-context-protocol-2026/', 'What is MCP (Model Context Protocol)?'],
     ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: AI Automation Platform Comparison 2026'],
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
   ],
   'best-ai-agents-for-small-business-2026': [
     ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
@@ -2915,6 +2916,7 @@ const BLOG_RELATED_LINKS = {
   'best-ai-tools-for-automation-engineers-2026': [
     ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
     ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: AI Automation Platform Comparison 2026'],
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
   ],
   'best-ai-tools-for-startups-2026': [
     ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
@@ -2927,6 +2929,7 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-coding-tools-2026/', 'Best AI Coding Tools 2026'],
     ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
     ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: AI Automation Platform Comparison 2026'],
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
   ],
 
   // ── P1 Urgent: n8n vs Make vs Zapier — 5,200/mo, highest raw volume Phase 1 ──
@@ -2935,6 +2938,15 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-tools-for-automation-engineers-2026/', 'Best AI Tools for Automation Engineers 2026'],
     ['/blog/ai-api-pricing-comparison-2026/', 'AI API Pricing Comparison 2026'],
     ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
+  ],
+
+  // ── P1 Urgent: Best No-Code AI Automation Tools — highest affiliate density, 5 programs ────
+  'best-no-code-ai-automation-tools-2026': [
+    ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: AI Automation Platform Comparison 2026'],
+    ['/blog/what-is-mcp-model-context-protocol-2026/', 'What is MCP (Model Context Protocol)?'],
+    ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
+    ['/blog/best-ai-tools-for-automation-engineers-2026/', 'Best AI Tools for Automation Engineers 2026'],
   ],
 
   // ── Research Intelligence cluster ───────────────────────────────────────────

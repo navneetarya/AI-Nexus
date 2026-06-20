@@ -53,6 +53,7 @@ const post: BlogPost = {
 
 <h2>The Startups Worth Watching in Late 2026</h2>
 <p>Based on current growth signals and product trajectory, these are the companies most likely to be the headline AI startups of 2027: companies building AI agents for specific professional workflows (legal, medical, finance), AI infrastructure companies that reduce the cost and complexity of AI deployment, and multimodal companies that combine vision, audio, and text in production-grade applications.</p>
+<p>One vertical worth flagging specifically is AI-powered recruitment and hiring. Several early-stage startups are applying the same playbook that worked for Perplexity in search and Cursor in coding — a specific, painful workflow (sourcing candidates, screening resumes, scheduling interviews) rather than a general-purpose assistant — to talent acquisition. Given how much manual, repetitive work recruitment still involves, this is a category we expect meaningful growth from over the next year, and we're tracking it closely for a dedicated Best AI Recruitment Tools comparison. In the meantime, the agent-versus-automation distinction covered in <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a> is directly relevant to evaluating these tools, and <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a> already covers several agent platforms — including Lindy — that smaller teams are adapting for candidate outreach and screening today.</p>
 `
 };
 
