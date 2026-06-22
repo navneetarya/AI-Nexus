@@ -395,9 +395,9 @@ check("DEPLOY", "deploy.yml checks for windsurf tool page",
       "windsurf" in deploy_yml,
       "Add 'windsurf' to tool slugs validation list in deploy.yml")
 
-check("DEPLOY", "deploy.yml EXPECTED_LOC_COUNT = 131 (includes windsurf)",
-      "EXPECTED_LOC_COUNT=131" in deploy_yml,
-      "Update EXPECTED_LOC_COUNT to 131 in deploy.yml sitemap check")
+check("DEPLOY", "deploy.yml EXPECTED_LOC_COUNT = 135",
+      "EXPECTED_LOC_COUNT=135" in deploy_yml,
+      "Update EXPECTED_LOC_COUNT to 135 in deploy.yml sitemap check")
 
 check("DEPLOY", "deploy.yml llms.txt check uses dist/llms.txt (auto-generated)",
       "dist/llms.txt" in deploy_yml and deploy_yml.split("Validate llms.txt sync")[1].split("Upload artifact")[0].count("public/llms.txt") == 0,
@@ -406,8 +406,8 @@ check("DEPLOY", "deploy.yml llms.txt check uses dist/llms.txt (auto-generated)",
 # Sitemap count in generated file
 sitemap = read(DIST / "sitemap.xml")
 loc_count = sitemap.count("<loc>")
-check("DEPLOY", f"dist/sitemap.xml has 131 URLs ({loc_count} found)",
-      loc_count == 131,
+check("DEPLOY", f"dist/sitemap.xml has 135 URLs ({loc_count} found)",
+      loc_count == 135,
       "Sitemap URL count mismatch — check TOOLS/BLOG_POSTS/COMPARE_ARTICLES counts")
 
 print()
