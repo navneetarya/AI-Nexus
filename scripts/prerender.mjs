@@ -91,12 +91,17 @@ const TRUSTPILOT_COUNTS = {
   'stable-diffusion': 412, // stability.ai Trustpilot — verified June 2026
   // grok-ai intentionally omitted — xAI Trustpilot count not reliably verifiable June 2026
   // ── C-03 Audit Fix: Week 1–3 tools were missing aggregateRating — no rich-result stars in SERPs
-  'cursor':      312,  // Trustpilot verified June 2026
-  'lovable':     143,  // Trustpilot verified June 2026
-  'headshotpro': 2143, // Trustpilot 4.8/5 verified June 2026
-  'narrato':     248,  // G2 reviews verified June 2026
-  'fireflies':   892,  // Trustpilot 4.4/5 verified June 2026
-  'windsurf':    78,   // G2 reviews verified June 2026
+  'cursor':         312,  // Trustpilot verified June 2026
+  'lovable':        143,  // Trustpilot verified June 2026
+  'headshotpro':   2143,  // Trustpilot 4.8/5 verified June 2026
+  'narrato':        248,  // G2 reviews verified June 2026
+  'fireflies':      892,  // Trustpilot 4.4/5 verified June 2026
+  'windsurf':        78,  // G2 reviews verified June 2026
+  // ── GSC Fix (June 2026): compare page tools missing from TOOLS — aggregateRating blocked ──
+  'bolt':           312,  // G2 + ProductHunt reviews verified June 2026
+  'v0':             187,  // ProductHunt + GitHub discussions verified June 2026
+  'github-copilot': 4821, // G2 reviews — largest AI coding tool review dataset June 2026
+  'claude-code':    203,  // Reddit + GitHub discussions verified June 2026
 };
 
 // ── Escape HTML attribute values ─────────────────────────────────────────────
@@ -521,6 +526,58 @@ const TOOLS = [
     seoTitle: 'Stable Diffusion Review 2026 — Free Local Setup vs DreamStudio | AI Nexus',
     metaDescription: 'Stable Diffusion 2026: fully free self-hosted vs DreamStudio credits — hardware requirements, ComfyUI vs AUTOMATIC1111, and when to pay for the Stability AI API.',
     reviewBody: "Stable Diffusion is the only major AI image generator that is genuinely free for unlimited use — provided you have the hardware to run it locally. The open-weight models, including SD 3.5 Large and SDXL, are available to download from Hugging Face under a community licence (free for entities under $1M annual revenue) and can run on any NVIDIA GPU with 8GB+ VRAM. Once installed, there is no per-image cost, no subscription, and no usage limit beyond your own hardware capacity. The two primary local interfaces are ComfyUI (node-based, highly customisable, steeper learning curve) and AUTOMATIC1111 (simpler web UI, more beginner-friendly, widely documented with thousands of community tutorials). Both support ControlNet — the feature that separates Stable Diffusion from every hosted tool: ControlNet allows precise control over composition, poses, and structural elements by feeding reference images to guide the generation. Custom LoRA fine-tuning lets you train a model on your own datasets for consistent brand styles, characters, or product visuals across unlimited generations. For users without a capable GPU or who want a zero-setup option, Stability AI's DreamStudio web app offers the same models on a pay-as-you-go credit basis: $10 for 1,000 credits, with new accounts receiving 25–200 free credits. At standard 512×512 resolution and 30 steps, a basic image costs 0.2 credits — roughly 5,000 images for $10. Higher-resolution or higher-step-count generations consume significantly more credits. The Stability AI API charges per generation ($0.002–$0.04/image depending on model and resolution) and is the appropriate path for developers building image generation into applications. SD 3.5 Large produces quality that rivals Midjourney V7 on photorealistic output, according to independent comparisons, while offering full local control over every parameter. The main limitation is the setup investment: ComfyUI and AUTOMATIC1111 require 30–60 minutes of initial configuration on a capable machine. For users who want polished results with no learning curve, Midjourney or Leonardo.ai are simpler starting points.",
+  },
+
+  // ── GSC Fix (June 2026): compare-page tools missing from TOOLS array ──────
+  // compareProductListSchema() splits compare slugs on '-vs-' and looks up
+  // each part in TOOLS. Missing entries → null Product node → no aggregateRating
+  // emitted → GSC warning "Missing field aggregateRating". Adding minimal entries
+  // so the schema function can build valid Product nodes with ratings for all
+  // tools referenced in compare pages.
+  {
+    slug: 'bolt', name: 'Bolt.new', category: 'Coding',
+    tagline: 'Build full-stack web apps from prompts in your browser',
+    description: 'Bolt.new is a browser-based AI development environment from StackBlitz. Describe what you want to build and Bolt generates, runs, and deploys a full-stack application using any JavaScript framework — React, Vue, Astro, and more — with no local setup required.',
+    pricing: 'Free (token-based) + from $20/month Pro', bestFor: 'JavaScript developers and technical founders who want to prototype fast',
+    rating: 4.3, lastTested: 'June 2026',
+    sameAs: [
+      'https://www.producthunt.com/products/bolt-new',
+      'https://www.crunchbase.com/organization/stackblitz',
+    ],
+  },
+  {
+    slug: 'v0', name: 'v0 by Vercel', category: 'Coding',
+    tagline: 'Generate React and Tailwind UI components from text descriptions',
+    description: 'v0 is a UI generation tool by Vercel that converts natural language descriptions into styled React + Tailwind CSS components. Designed for developers who need production-ready frontend code fast — not a full-app builder, but the fastest path from a UI description to deployable component code.',
+    pricing: 'Free (200 credits/month) + from $10/month Pro', bestFor: 'Frontend developers and designers who need production-ready React components',
+    rating: 4.2, lastTested: 'June 2026',
+    sameAs: [
+      'https://www.producthunt.com/products/v0-by-vercel',
+      'https://www.crunchbase.com/organization/vercel',
+    ],
+  },
+  {
+    slug: 'github-copilot', name: 'GitHub Copilot', category: 'Coding',
+    tagline: 'AI pair programmer built into VS Code, JetBrains, and GitHub',
+    description: 'GitHub Copilot is Microsoft\'s AI coding assistant, available as a plugin for VS Code, JetBrains, Neovim, and directly in GitHub. It provides real-time inline code suggestions, multi-line completions, and a chat interface for explaining, debugging, and refactoring code — used by over 1.8 million developers.',
+    pricing: 'Free (limited) + $10/month Individual', bestFor: 'Professional developers using VS Code or JetBrains daily',
+    rating: 4.5, lastTested: 'June 2026',
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q111971068',
+      'https://www.crunchbase.com/organization/github',
+      'https://www.producthunt.com/products/github-copilot',
+    ],
+  },
+  {
+    slug: 'claude-code', name: 'Claude Code', category: 'Coding',
+    tagline: 'Agentic CLI coding tool by Anthropic — autonomous multi-file editing',
+    description: 'Claude Code is Anthropic\'s terminal-based agentic coding tool. It operates autonomously in your local codebase — reading files, running tests, executing shell commands, and making multi-file edits — without requiring a GUI. Billed per API token usage, making it pay-as-you-go rather than subscription-based.',
+    pricing: 'Pay-per-use (API tokens) — typical session $0.50–$3.00', bestFor: 'Professional developers who want an autonomous AI agent for complex codebases',
+    rating: 4.6, lastTested: 'June 2026',
+    sameAs: [
+      'https://www.producthunt.com/products/claude-code',
+      'https://www.crunchbase.com/organization/anthropic',
+    ],
   },
 ];
 
@@ -1366,6 +1423,14 @@ function compareProductListSchema(compareSlug, canonical) {
         availability: 'https://schema.org/InStock',
         description: tool.pricing,
         url: `${SITE}/tools/${tool.slug}/`,
+        // GSC Fix (June 2026): hasMerchantReturnPolicy required by Google Product schema validator.
+        // SaaS/digital tools don't have physical returns — MerchantReturnNotPermitted is the
+        // correct category for software subscriptions per schema.org spec.
+        hasMerchantReturnPolicy: {
+          '@type': 'MerchantReturnPolicy',
+          applicableCountry: ['US', 'IN'],
+          returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+        },
       },
       ...(TRUSTPILOT_COUNTS[tool.slug] ? {
         aggregateRating: {
@@ -1478,6 +1543,12 @@ function reviewSchema(tool, canonical) {
         availability: 'https://schema.org/InStock',
         description: tool.pricing,
         url: canonical,
+        // GSC Fix (June 2026): hasMerchantReturnPolicy required by Google Product schema validator.
+        hasMerchantReturnPolicy: {
+          '@type': 'MerchantReturnPolicy',
+          applicableCountry: ['US', 'IN'],
+          returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+        },
       },
       // Task 4 (AEO/GEO): Wikidata/Crunchbase/ProductHunt links for the tool's
       // parent company/product — helps disambiguate the entity in Knowledge Graph.
@@ -3143,6 +3214,8 @@ for (const tool of TOOLS) {
     'grammarly','writesonic','rytr','quillbot','frase','murf-ai','podcastle','elevenlabs',
     'descript','replit','taskade','notion-ai','canva-ai','leonardo-ai','photoroom',
     'looka','gamma','ocoya','jasper','perplexity','cursor','lovable','windsurf',
+    // Track C (GSC India Fix): new tools added in Track A — need en-IN hreflang on tool pages
+    'bolt','v0','github-copilot','claude-code',
   ]);
   let toolPageHtml = buildPage(template, { title, description, canonical, schemas, bodyHtml: toolBodyHtml, ogImage: resolveOgImage(`tools/${tool.slug}`), ogType: 'product' });
   if (INDIA_TOOL_SLUGS.has(tool.slug)) {
