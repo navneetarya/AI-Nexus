@@ -3255,7 +3255,8 @@ for (const art of COMPARE_ARTICLES) {
   const canonical = `${SITE}/compare/${art.slug}/`;
   const productListSchema = compareProductListSchema(art.slug, canonical);
   const schemas = [
-    articleSchema({ title: art.title, description: art.metaDescription, canonical, imageUrl: resolveOgImage(`compare/${art.slug}`) }),
+    articleSchema({ title: art.title, description: art.metaDescription, canonical, imageUrl: resolveOgImage(`compare/${art.slug}`), areaServed: 'IN' }),
+	
     breadcrumbs([
       [1, 'AI Nexus', SITE],
       [2, 'Comparisons', `${SITE}/compare`],
