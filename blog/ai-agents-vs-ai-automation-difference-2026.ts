@@ -10,7 +10,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'ai-agents-vs-ai-automation-difference-2026',
   title: 'AI Agents vs AI Automation: What\'s the Real Difference?',
-  seoTitle: 'AI Agents vs AI Automation: What\'s the Real Difference? (2026)',
+  seoTitle: 'AI Agents vs AI Automation (2026): Which Solves Your Problem? [Explained Simply]',
   metaDescription: 'AI agents and AI automation are not the same thing. One follows rules; the other reasons. Here is the clearest explanation of the difference — and when to use each.',
   datePublished: '2026-06-19',
   dateModified: '2026-06-19',

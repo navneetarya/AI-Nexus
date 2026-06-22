@@ -11,7 +11,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'what-is-mcp-model-context-protocol-2026',
   title: 'What is MCP (Model Context Protocol)? The AI Integration Standard Explained',
-  seoTitle: 'What is MCP Protocol? AI Integration Standard 2026',
+  seoTitle: 'What is MCP? (2026): Why Claude, Cursor, and Every AI Tool Wants It',
   metaDescription: 'MCP (Model Context Protocol) is Anthropic\'s open standard connecting AI models to external tools. Independent analysis of adoption, implications, and which platforms support it.',
   datePublished: '2026-06-18',
   dateModified: '2026-06-18',

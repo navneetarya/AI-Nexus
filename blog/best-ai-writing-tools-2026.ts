@@ -11,7 +11,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-writing-tools-2026',
   title: 'Best AI Writing Tools 2026 — Tested, Ranked & Compared',
-  seoTitle: 'Best AI Writing Tools 2026 — Tested & Ranked',
+  seoTitle: '8 Best AI Writing Tools (2026) — Tested Against Human Writing',
   metaDescription: '6 best AI writing tools for 2026 — Grammarly, Rytr, QuillBot, Writesonic, Jasper, and Frase ranked by use case and free plan. See our top picks.',
   datePublished: '2026-05-11',
   dateModified: '2026-06-14',

@@ -10,7 +10,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-agents-for-small-business-2026',
   title: 'Best AI Agents for Small Business 2026 — Ranked & Compared',
-  seoTitle: 'Best AI Agents for Small Business 2026',
+  seoTitle: 'Best AI Agents for Small Business (2026): Automate Tasks Without Code',
   metaDescription: 'Analysis of 8 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Updated June 2026.',
   datePublished: '2026-06-11',
   dateModified: '2026-06-19',

@@ -9,7 +9,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'chatgpt-free-vs-claude-free-vs-gemini-free-2026',
   title: 'ChatGPT Free vs Claude Free vs Gemini Free: Which AI Actually Works for Freelancers in 2026?',
-  seoTitle: 'ChatGPT Free vs Claude Free vs Gemini Free (2026)',
+  seoTitle: 'ChatGPT Free vs Claude Free vs Gemini Free (2026): Which Free Tier Is Actually Usable?',
   metaDescription: 'ChatGPT, Claude, and Gemini free plans tested on 5 real freelance tasks — message limits, output quality, and when to upgrade. See the verdict.',
   datePublished: '2026-05-20',
   dateModified: '2026-06-14',

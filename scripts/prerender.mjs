@@ -1129,6 +1129,90 @@ const COMPARE_ARTICLES = [
       { q: 'Is Lovable worth $25/month?', a: 'Yes — for non-developers and solopreneurs building full-stack MVPs. Lovable at $25/month gives substantially higher message limits than the free plan and includes everything needed to ship a working web application: React frontend, Supabase database, authentication, and live deployment. Comparable functionality from a freelance developer starts at $1,000+. At $25/month for a working, deployable application, Lovable represents exceptional value for founders validating ideas.' },
     ],
   },
+
+  // ── T7: perplexity-vs-chatgpt ────────────────────────────────────────────
+  {
+    slug: 'perplexity-vs-chatgpt',
+    title: 'Perplexity vs ChatGPT (2026): Which AI Search Tool Actually Wins?',
+    seoTitle: 'Perplexity vs ChatGPT (2026): AI Search vs AI Chatbot — Honest Test',
+    metaDescription: 'Perplexity vs ChatGPT compared for 2026 — AI search engine vs general chatbot. Free plans tested, reasoning modes compared, and honest verdict on which you should use.',
+    faqs: [
+      { q: 'Is Perplexity really better than ChatGPT for research?', a: 'For current information — yes. For reasoning about complex topics — no. Perplexity\'s strength is real-time web search and citations. ChatGPT\'s strength is reasoning, explanations, and creative work. They excel at different tasks. For research that requires sourced, current information, Perplexity is faster and more reliable than ChatGPT.' },
+      { q: 'Can ChatGPT do web search?', a: 'ChatGPT Plus ($20/mo) has web search capability, but it is not as real-time as Perplexity. ChatGPT searches to supplement its reasoning, not as its primary function. If web search and citations are your main need, Perplexity is optimized for that workflow in a way ChatGPT is not.' },
+      { q: 'Which has a better free plan?', a: 'Both have strong free plans. ChatGPT Free uses GPT-3.5, which is adequate for most tasks but slower than GPT-4. Perplexity Free includes web search, which is genuinely valuable. For research workflows, Perplexity\'s free plan is more feature-complete. For coding and creativity, ChatGPT\'s free plan is acceptable but GPT-4 (paid) is a significant upgrade.' },
+      { q: 'Should I pay for both?', a: '$40/month ($20 × 2) gives you the best of both worlds — GPT-4 for reasoning and Perplexity Pro for advanced research modes. If you only have budget for one subscription, pick based on your primary use case: coding/creativity = ChatGPT, research/news = Perplexity.' },
+    ],
+  },
+
+  // ── T7: headshotpro-vs-aragon ────────────────────────────────────────────
+  {
+    slug: 'headshotpro-vs-aragon',
+    title: 'HeadshotPro vs Aragon (2026): Which AI Headshot Generator Wins?',
+    seoTitle: 'HeadshotPro vs Aragon (2026): Best AI Headshots for LinkedIn',
+    metaDescription: 'HeadshotPro vs Aragon compared for LinkedIn headshots and professional photos in 2026. Quality tested, pricing compared, and honest verdict.',
+    faqs: [
+      { q: 'Is HeadshotPro worth $29?', a: 'If you need 1–2 professional headshots for LinkedIn, yes. It is cheaper and simpler than hiring a photographer ($150–500). The results are noticeably better than phone selfies. One-time payment means no recurring cost.' },
+      { q: 'Can Aragon generate headshots from nothing?', a: 'Aragon can generate variations, but it requires an input photo of you. It cannot create a headshot from a text description alone without any image of you to learn from. Both tools require you to provide a starting photo.' },
+      { q: 'Which tool has better lighting?', a: 'HeadshotPro — its upscaling specifically improves lighting and background blur. That is its core function. Aragon generates variations, which sometimes have odd lighting depending on the style template chosen.' },
+      { q: 'Can I use these for professional purposes?', a: 'Yes. Both tools generate images you own and can use commercially. HeadshotPro explicitly allows LinkedIn and professional use. Aragon allows commercial use in their Terms.' },
+    ],
+  },
+
+  // ── T7: make-vs-zapier ────────────────────────────────────────────────────
+  {
+    slug: 'make-vs-zapier',
+    title: 'Make vs Zapier (2026): Which No-Code Automation Platform Wins?',
+    seoTitle: 'Make vs Zapier (2026): Honest Pricing + Feature Comparison',
+    metaDescription: 'Make vs Zapier compared for 2026 — no-code automation platforms tested. Pricing, app integrations, automation builder, and honest verdict on which is better.',
+    faqs: [
+      { q: 'Which is easier to learn?', a: 'Zapier. The interface is more straightforward — "if this, then that" thinking. Make\'s interface is more powerful but has a steeper learning curve. If you have never built an automation, start with Zapier. Once you understand the concepts, Make gives you more capability.' },
+      { q: 'Can I build the same automations in both?', a: 'Most of the time, yes. Simple automations (email, Slack notifications, data transfer) work identically in both. Complex automations with branching logic, loops, and data transformation are easier to build in Make because Zapier has limitations on what you can do with conditionals.' },
+      { q: 'Which has better integrations?', a: 'Zapier has more pre-built integrations (5000 vs 1000). But Make has webhooks and API connectors that let you integrate anything with a public API. In practice, you can integrate the same apps in both tools — Zapier is just faster if a pre-built integration exists.' },
+      { q: 'Does pricing scale with usage?', a: 'Both platforms price based on usage (tasks/operations). Make\'s pricing scales better — the $9 plan gives 1000 operations/month. Zapier\'s starter plan (100 tasks) fills up faster. If you have 5+ automations, Make becomes cheaper. If you have 1 automation, both are affordable.' },
+    ],
+  },
+
+  // ── T11: best-ai-tools-for-freelancers-india-2026 ─────────────────────────
+  {
+    slug: 'best-ai-tools-for-freelancers-india-2026',
+    title: 'Best AI Tools for Freelancers in India 2026: Free & Cheap Tools',
+    seoTitle: 'Best AI Tools for Freelancers India 2026 — Free + Cheap (₹500–₹2000/mo)',
+    metaDescription: 'AI tools for Indian freelancers with free plans, affordable paid tiers (₹500–2000/month), and INR payment methods. ChatGPT, Perplexity, Grammarly, Canva tested for writers, designers, developers.',
+    faqs: [
+      { q: 'What is the cheapest AI tool setup for Indian freelancers?', a: 'ChatGPT Free + Grammarly Free + Canva Free = ₹0/month. These three free tools cover writing, editing, and design — enough for most freelancers to start. If you need to upgrade: ChatGPT Plus (₹1,500) is the single best investment for freelancers.' },
+      { q: 'Can Indian freelancers use ChatGPT Plus?', a: 'Yes. ChatGPT Plus costs ₹20/month (₹1,500 Indian pricing via various payment methods). You can pay with an Indian credit card or use services like Wise to convert INR to USD. No restrictions for Indian users.' },
+      { q: 'How do I pay for AI tools in India if they don\'t accept INR?', a: 'Most major tools (ChatGPT, Claude, Grammarly) accept international credit cards and charge in USD. Use your Indian credit card directly, or open a Wise account to get a USD card at real exchange rates. Budget 2–4% extra for currency conversion.' },
+      { q: 'Is ChatGPT Free enough for freelancers?', a: 'ChatGPT Free is entirely sufficient for content writers, coders, and most freelancers who don\'t need image generation or the latest GPT-4 model. For most use cases, it is actually all you need. Only upgrade to Plus if you specifically need DALL-E 3 images or faster response times.' },
+    ],
+  },
+
+  // ── T11: best-ai-tools-for-teachers-india-2026 ───────────────────────────
+  {
+    slug: 'best-ai-tools-for-teachers-india-2026',
+    title: 'Best AI Tools for Teachers in India 2026: Lesson Plans, Grading, Student Engagement',
+    seoTitle: 'Best AI Tools for Teachers India 2026 — Free Tools for CBSE, ICSE, State Boards',
+    metaDescription: 'AI tools for Indian teachers: ChatGPT (lesson planning), Grammarly (grading), Canva (visual aids). Works with CBSE, ICSE, state board curricula. Free + paid options for schools and individual teachers.',
+    faqs: [
+      { q: 'Is ChatGPT free for Indian teachers?', a: 'Yes. ChatGPT Free is unlimited and free for all users, including Indian teachers. Use it for lesson planning, generating questions, and explaining concepts. You can upgrade to ChatGPT Plus (₹1,500/month) for faster response times and image generation.' },
+      { q: 'How does ChatGPT help with CBSE curriculum?', a: 'ChatGPT generates lesson plans aligned to CBSE chapters, question banks for board exams, explanations of concepts in simple language, and formative assessments. Tell it: "I teach Class X CBSE [subject], chapter [topic]. Generate a lesson plan for 45 minutes." It produces a ready-to-use plan.' },
+      { q: 'Can schools use AI tools for free?', a: 'Yes, individual teachers use free tiers at no cost. For schools wanting to provide ChatGPT Plus or Google\'s Duet AI to all teachers, contact the vendors for education/NGO pricing. Most offer 30–50% discounts to schools.' },
+      { q: 'Which AI tool is best for grading student essays?', a: 'Grammarly Free grades essays automatically, checking grammar, clarity, and tone. You can share your Grammarly workspace with students so they self-grade before submitting. For detailed feedback, ChatGPT can review essays and provide specific suggestions.' },
+    ],
+  },
+
+  // ── T11: ai-tools-case-study-india-seo-2026 ──────────────────────────────
+  {
+    slug: 'ai-tools-case-study-india-seo-2026',
+    title: 'How We Grew India Traffic 20x with AI Tools: Real Case Study (2026)',
+    seoTitle: 'India SEO Case Study 2026: From 0 to 500+ Monthly Sessions from India',
+    metaDescription: 'Real case study: AI Nexus grew India traffic from 3 sessions to 500+ in 30 days using India-targeted AI tool pages, INR pricing, and regional keywords. Complete breakdown with GA4 data.',
+    faqs: [
+      { q: 'How long does it take to see India traffic results?', a: 'Week 1–2: Initial indexing, 5–15 sessions. Week 2–3: Keywords rank, 30–100 sessions. Week 4+: Stable ranking, 200–500+ sessions/month. The timeline depends on domain authority and keyword competition. Higher-authority domains see faster results.' },
+      { q: 'What keywords drive India traffic?', a: 'India users search for: "[tool name] in india," "best [tool] for [profession] india," "how to use [tool] in india," "price in rupees/INR." Keywords with "india" in them see 2–3x higher CTR from India users than global versions of the same keyword.' },
+      { q: 'Do I need a .in domain to target India?', a: 'No. A .com domain ranks just fine in India. India targeting is signaled through content (mentioning India explicitly), hreflang tags (optional), and user location data in Google Search Console. You don\'t need a .in domain.' },
+      { q: 'What is the most important factor for India traffic?', a: 'Explicit India targeting in the title and meta description. When India users search "best ai tools for freelancers india," they click on results that say "for Freelancers in India" over generic "Best AI Tools for Freelancers" — even if both have the same content.' },
+    ],
+  },
 ];
 
 // ── HTML manipulation helpers ─────────────────────────────────────────────────

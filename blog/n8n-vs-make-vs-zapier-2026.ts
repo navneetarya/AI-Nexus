@@ -10,7 +10,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'n8n-vs-make-vs-zapier-2026',
   title: 'n8n vs Make vs Zapier: AI Automation Platform Comparison 2026',
-  seoTitle: 'n8n vs Make vs Zapier: AI Automation 2026',
+  seoTitle: 'n8n vs Make vs Zapier (2026): Which No-Code Automation Platform Actually Scales?',
   metaDescription: 'Independent pricing, AI capability, and workflow analysis of n8n, Make, and Zapier. Which automation platform wins for AI-first workflows in 2026?',
   datePublished: '2026-06-20',
   dateModified: '2026-06-20',

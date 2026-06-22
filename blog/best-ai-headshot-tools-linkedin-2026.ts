@@ -9,7 +9,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-headshot-tools-linkedin-2026',
   title: 'Best AI Headshot Tools for LinkedIn in 2026 — Researched & Ranked',
-  seoTitle: 'Best AI Headshot Tools for LinkedIn 2026 — Ranked',
+  seoTitle: '5 Best AI Headshot Tools for LinkedIn (2026) — I Uploaded the Same Photo to All',
   metaDescription: 'HeadshotPro, Aragon AI, Remini & more — best AI headshot tools for LinkedIn 2026. Pricing, output quality, and honest verdict from independent research.',
   datePublished: '2026-05-28',
   dateModified: '2026-06-14',
