@@ -49,6 +49,7 @@ export const TOOLS: Tool[] = [
     ],
     name: 'Grammarly', tagline: 'AI writing assistant used by 40 million people',
     description: 'Grammarly checks grammar, spelling, tone, and clarity across every app you use — from Gmail to Google Docs. The most widely used AI writing tool in the world.',
+    reviewBody: 'Grammarly is the most accessible writing tool available. The free plan covers grammar, spelling, and punctuation across 500+ apps. Premium ($12/month) adds tone detection, clarity rewrites, plagiarism checking, and 100+ writing suggestions. Browser extension works in Gmail, Google Docs, LinkedIn, Twitter, and any text field. For anyone writing professionally or frequently, Grammarly is essential infrastructure. Accuracy is exceptional with rare false positives. Best for professionals, students, freelancers. Not ideal for fiction writers needing unconditional creative control.',
     category: Category.WRITING, affiliateLink: 'https://grammarly.com', // TODO: join Impact.com for proper Grammarly affiliate tracking link
     iconName: 'CheckSquare', color: '#15a672', accentColor: '#0d7a54',
     userBadge: 'Most popular', pricing: 'Free + $12/month', bestFor: 'Everyone who writes',

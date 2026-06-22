@@ -90,6 +90,14 @@ export function SharedNav({
 }: SharedNavProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [compareOpen, setCompareOpen] = useState(false);
+  
+  // Skip-to-content link for accessibility (WCAG 2.1 Level A)
+  const skipLinkStyle: React.CSSProperties = {
+    position: 'absolute', top: '-40px', left: '0',
+    background: 'var(--a1)', color: '#fff', padding: '8px',
+    textDecoration: 'none', zIndex: 100, fontSize: '12px', fontWeight: 600
+  };
+  const onSkipClick = () => { const el = document.getElementById('main-content'); if (el) el.focus(); };
   const [bestListsOpen, setBestListsOpen] = useState(false);
   const compareRef = useRef<HTMLDivElement>(null);
   const bestListsRef = useRef<HTMLDivElement>(null);
