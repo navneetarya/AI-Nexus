@@ -432,6 +432,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               { label:'Home',                    fn: goHome },
               { label:'About the reviewer',      fn: () => navigate('/about') },
               { label:'How Tools Are Evaluated', fn: () => navigate('/methodology') },
+              { label:'Terms of Service',       fn: () => navigate('/terms') },
               { label:'Affiliate disclosure',    fn: () => navigate('/disclosure') },
               { label:'Compare tools',           fn: goCompare },
               { label:'Glossary',                fn: () => navigate('/glossary') },
@@ -612,7 +613,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         {/* Hero content */}
         <div style={{ maxWidth:600, margin:'0 auto', textAlign:'center', position:'relative', zIndex:2 }}>
 
-          {/* W4-T1: Author photo badge */}
+          {/* W4-T1: Author photo badge with credentials */}
           <div className="anim-fade-up d1" style={{
             display:'inline-flex', alignItems:'center', gap:8,
             background:C.surf, border:`1px solid ${C.a1brd}`,
@@ -620,11 +621,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           }}>
             <img
               src="/author-photo.jpg"
-              alt="Navneet Arya"
+              alt="Navneet Arya, AI tools researcher"
               style={{ width:28, height:28, borderRadius:'50%', objectFit:'cover' as const, border:`2px solid ${C.a1}`, flexShrink:0 }}
             />
             <span style={{ fontSize:12, fontWeight:600, color:C.txt, fontFamily:"'Inter', system-ui, sans-serif" }}>
               by Navneet Arya
+            </span>
+            <span style={{ fontSize:10, fontWeight:500, color:C.mut2, marginLeft:4 }}>
+              AI Researcher • 4 yrs exp
             </span>
           </div>
 
@@ -646,8 +650,8 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             style={{ fontFamily:"'Fraunces', Georgia, serif", fontWeight:800,
               fontSize:'clamp(30px,6vw,52px)', lineHeight:1.07, color:C.txt,
               margin:'0 0 16px', letterSpacing:'-0.025em' }}>
-            Independent AI Research, Comparisons
-            <span style={{ color:C.a1, fontStyle:'italic' }}> &amp; Workflow Intelligence</span>
+            Independent AI Tool Reviews
+            <span style={{ color:C.a1, fontStyle:'italic' }}> for 2026</span>
           </h1>
 
           {/* GEO: content image with descriptive ALT text */}
@@ -666,24 +670,25 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           <p className="anim-fade-up d3"
             style={{ fontSize:16.5, lineHeight:1.72, color:C.mut, margin:'0 0 8px',
               maxWidth:480, marginLeft:'auto', marginRight:'auto' }}>
-            <strong style={{ color:C.txt }}>AI Nexus</strong> independently reviews and compares the
-            best AI tools for 2026 — AI writing tools, coding assistants, image generators,
-            video editors, and more. Every review is human-researched, workflow-tested, and
-            free of sponsored placements.
+            <strong style={{ color:C.txt }}>AI Nexus</strong> provides independent reviews and comparisons of the best AI tools for 2026. Our research covers <strong>AI writing assistants</strong>, <strong>AI coding tools</strong>, <strong>image generators</strong>, <strong>video editors</strong>, <strong>audio tools</strong>, and more AI software. Every review is <strong>human-researched</strong>, <strong>workflow-tested</strong>, and <strong>free of sponsored placements</strong> — delivering honest AI tool analysis.
           </p>
 
-          {/* Trust stats bar */}
+          {/* Trust stats bar with sources and key-value patterns */}
           <div className="anim-fade-up d3" style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 16, marginBottom: 24 }}>
             {[
-              { n: '200+',  label: 'AI tools evaluated', src: 'AI Nexus research, 2026' },
-              { n: '33',    label: 'in-depth reviews live', src: 'published on ainexustools.online' },
-              { n: '25+',   label: 'real workflows tested', src: 'across 8 tool categories' },
-              { n: '4 yrs', label: 'researching AI tools', src: 'since 2022' },
-            ].map(({ n, label, src }) => (
-              <div key={label} style={{ textAlign: 'center' }}>
+              { n: '200+',  label: 'AI tools evaluated', detail: '**Source:** AI Nexus proprietary database, 2026' },
+              { n: '33',    label: 'in-depth reviews published', detail: '**Status:** Live on ainexustools.online' },
+              { n: '25+',   label: 'real workflows tested', detail: '**Coverage:** 8 tool categories' },
+              { n: '4 yrs', label: 'AI research experience', detail: '**Since:** 2022' },
+            ].map(({ n, label, detail }) => (
+              <div key={label} style={{ textAlign: 'center', minWidth: 160 }}>
                 <div style={{ fontSize: 22, fontWeight: 800, color: C.a1, lineHeight: 1.1 }}>{n}</div>
-                <div style={{ fontSize: 12, color: C.mut, fontWeight: 500, marginTop: 2 }}>{label}</div>
-                <div style={{ fontSize: 10, color: C.mut2, marginTop: 1, fontStyle: 'italic' }}>{src}</div>
+                <div style={{ fontSize: 12, color: C.txt, fontWeight: 600, marginTop: 2 }}>{label}</div>
+                <div style={{ fontSize: 10, color: C.mut2, marginTop: 3, lineHeight: 1.4, fontFamily: "'Inter', system-ui, sans-serif" }}>
+                  <div style={{ fontWeight: 500 }}>
+                    {detail.replace(/\*\*|\*\*/g, '')}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -851,14 +856,18 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </span>
             Most Researched This Month
           </h2>
-          {/* AEO: concise answer paragraph after H2 */}
+          {/* AEO: concise answer paragraph after H2 (40-200 characters) */}
           <p style={{ fontSize:13, color:C.mut, margin:'0 0 14px', lineHeight:1.55 }}>
-            The AI tools getting the most attention from creators and teams in June 2026, based on AI Nexus reader activity.
+            The AI tools trending in June 2026 based on AI Nexus reader engagement and usage patterns across all categories.
           </p>
           <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5,
-            color:C.txt, letterSpacing:'-0.01em', margin:'0 0 10px' }}>
+            color:C.txt, letterSpacing:'-0.01em', margin:'0 0 6px' }}>
             Top Tools by Category — Writing, Audio &amp; Productivity
           </h3>
+          {/* GEO: Additional descriptive paragraph after H3 */}
+          <p style={{ fontSize:12, color:C.mut2, margin:'0 0 12px', lineHeight:1.5 }}>
+            Explore the most-reviewed AI software across key productivity categories: <strong>AI writing assistants</strong> for content creation, <strong>podcast tools</strong> for audio production, and <strong>AI productivity apps</strong> for workflow automation.
+          </p>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(260px,1fr))', gap:12 }}>
             {TOOLS.filter(t => TRENDING_SLUGS.includes(t.slug)).map(tool => {
               const accent = CAT_ACCENT[tool.category] === 'a2' ? C.a2 : C.a1;
@@ -894,14 +903,13 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       {/* ── Latest AI Research ──────────────────────────────────────────── */}
       {(filters.category as string) === 'All' && !filters.search && (
         <div className="scroll-reveal" style={{ maxWidth:1200, margin:'0 auto', padding:'28px 24px 0' }}>
-          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:6, gap:8 }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:6, gap:8, flexWrap:'wrap' as const }}>
             <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:17,
               color:C.txt, letterSpacing:'-0.025em', margin:0, display:'flex', alignItems:'center', gap:8 }}>
               <span style={{ display:'inline-flex', alignItems:'center', justifyContent:'center',
                 width:22, height:22, borderRadius:6, background:C.a1card }}>📊</span>
               Latest AI Research
             </h2>
-            {/* AEO: concise answer paragraph after H2 */}
             <button
               onClick={() => navigate('/blog')}
               style={{ fontSize:12, fontWeight:600, color:C.a1, background:'none', border:'none',
@@ -909,9 +917,17 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               View all research →
             </button>
           </div>
-          {/* AEO concise summary */}
-          <p style={{ fontSize:13, color:C.mut, margin:'0 0 14px', lineHeight:1.55 }}>
-            In-depth AI tool analysis from AI Nexus — data-driven research on tools, pricing shifts, and workflow fit for 2026.
+          {/* AEO concise answer paragraph after H2 */}
+          <p style={{ fontSize:13, color:C.mut, margin:'0 0 6px', lineHeight:1.55 }}>
+            In-depth AI tool analysis and comparisons from AI Nexus research team covering 2026 trends and pricing.
+          </p>
+          <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13, 
+            color:C.txt, margin:'0 0 8px', fontStyle:'italic' }}>
+            AI Tool Reviews and Workflow Analysis
+          </h3>
+          {/* GEO: descriptive paragraph under H3 */}
+          <p style={{ fontSize:12, color:C.mut2, margin:'0 0 14px', lineHeight:1.5 }}>
+            Research-driven content on <strong>best AI tools for different use cases</strong>, <strong>pricing comparisons</strong>, and <strong>feature analysis</strong> to help you find the right AI software for your workflow.
           </p>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))', gap:12 }}>
             {BLOG_POSTS.filter(p => p.category === 'Research').slice(0, 3).map(post => (
@@ -939,21 +955,21 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       {/* ── Tool Grid ──────────────────────────────────────────────────── */}
       <div id="tools-section" className="tools-section" style={{ maxWidth:1200, margin:'0 auto', padding:'36px 24px 96px' }}>
 
-        {/* Header */}
-        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',
-          marginBottom:20, flexWrap:'wrap' as const, gap:12 }}>
+        {/* Header with H2 and concise answer paragraph */}
+        <div style={{ marginBottom:20 }}>
           <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19,
-            color:C.txt, letterSpacing:'-0.025em' }}>
-            {(filters.category as string) === 'All' ? 'All AI tools' : `${filters.category} tools`}
+            color:C.txt, letterSpacing:'-0.025em', marginBottom:8 }}>
+            {(filters.category as string) === 'All' ? 'Explore All AI Tools' : `Best ${filters.category} Tools`}
           </h2>
-          {(filters.category as string) !== 'All' && (
-            <button onClick={() => setFilters(f => ({ ...f, category:'All' as any }))}
-              style={{ fontSize:12, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8,
-                padding:'6px 14px', background:C.a1card, cursor:'pointer',
-                fontFamily:"'Inter', system-ui, sans-serif", fontWeight:600 }}>
-              ← All tools
-            </button>
-          )}
+          {/* GEO + AEO: Concise answer paragraph right after H2 */}
+          <p style={{ fontSize:13, color:C.mut, margin:'0 0 14px', lineHeight:1.55 }}>
+            Browse <strong>AI Nexus</strong>'s collection of independently-reviewed tools. Read detailed reviews, compare features, and find the best AI software for your workflow across all categories.
+          </p>
+          {/* Sub-section heading with more detail */}
+          <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:14,
+            color:C.txt, letterSpacing:'-0.01em', margin:'0 0 12px' }}>
+            Filter by AI Tool Category
+          </h3>
         </div>
 
         {/* Category pills */}
