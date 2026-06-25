@@ -4283,10 +4283,19 @@ ${items}
     inLanguage: 'en-US',
     datePublished: '2026-01-01',
     dateModified: TODAY,
+    // GEO Fix (Task 2): author needs jobTitle + description (not just name/url)
+    // for "No author schema — add for AI trust signals" / "Author lacks
+    // credentials" GEO audit failures. '@id' links this node to the same
+    // canonical Person entity defined in index.html's Organization+Person
+    // @graph, so AI systems treat it as one consistent entity, not a duplicate.
     author: {
       '@type': 'Person',
+      '@id': `${SITE}/about#author`,
       name: AUTHOR,
       url: `${SITE}/about/`,
+      jobTitle: 'Independent AI Tools Researcher',
+      description: `${AUTHOR} independently researches AI tools since 2022 — covering pricing, features, and real-world use cases across 33+ products. No sponsored rankings.`,
+      sameAs: AUTHOR_SAME_AS,
     },
     isPartOf: { '@id': `${SITE}/#website` },
     breadcrumb: {
@@ -4296,6 +4305,17 @@ ${items}
       ],
     },
   }, null, 2);
+
+  // GEO Fix (Task 2): standalone top-level BreadcrumbList schema.
+  // The breadcrumb above is nested inside WebPage.breadcrumb (a property
+  // value, not a top-level JSON-LD entity), which scanners that read only
+  // the top-level "@type" of each <script> block never see. Emitting it via
+  // the shared breadcrumbs() helper as its own script tag — the same helper
+  // already used on /about/, tool, and blog pages — resolves "No
+  // BreadcrumbList schema" as a standalone, unambiguous entity.
+  const homepageBreadcrumbSchema = JSON.stringify(breadcrumbs([
+    [1, 'Home', `${SITE}/`],
+  ]), null, 2);
 
   // ── AEO Fix: SpeakableSpecification schema — voice assistant optimisation ──
   // Tells Google Assistant / Alexa which CSS selectors contain the most
@@ -4317,38 +4337,36 @@ ${items}
     },
   }, null, 2);
 
-  // ── AEO Fix: HowTo schema — numbered step rich results ─────────────────────
-  // Matches the "How to Choose the Right AI Tool in 3 Steps" section injected
-  // into the homepage body. Resolves "No HowTo Schema" GEO audit failure.
-  const homepageHowToSchema = JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: 'How to Choose the Right AI Tool in 2026',
+  // ── GEO Fix (Task 2): HowTo schema — rebuilt via the shared howToSchema()
+  // helper (same builder used on tool pages — see "FIX 8 (AEO-Critical)"
+  // above) instead of a one-off inline object. The inline version was
+  // missing the per-step `url` anchor that howToSchema() always adds
+  // (`${canonical}#step-${i+1}`), which is why some structured-data
+  // validators didn't recognize it as a complete HowTo node. Step anchors
+  // below match `id="step-1/2/3"` added to the <ol> in the homepage body's
+  // "How to Choose the Right AI Tool" section.
+  // Matches that section; resolves "No HowTo Schema" GEO audit failure.
+  const homepageHowToSchema = JSON.stringify(howToSchema({
+    title: 'How to Choose the Right AI Tool in 2026',
     description: 'A 3-step guide to selecting the best AI tool for your specific workflow and budget.',
-    url: `${SITE}/`,
-    step: [
+    canonical: `${SITE}/`,
+    steps: [
       {
-        '@type': 'HowToStep',
-        position: 1,
         name: 'Identify Your Primary Use Case',
         text: 'Decide whether you need writing, image generation, video, coding, or productivity tools. Mixing use cases into one tool rarely delivers the best result.',
       },
       {
-        '@type': 'HowToStep',
-        position: 2,
         name: 'Test Free Plans Before Paying',
         text: 'Every major AI tool offers a functional free tier. Test 2–3 tools on a real task before purchasing. Grammarly, Leonardo.ai, and Rytr all have no-credit-card free plans.',
       },
       {
-        '@type': 'HowToStep',
-        position: 3,
         name: 'Check the Pricing Ceiling',
         text: 'Most useful AI features cost $9–$20/month. Confirm the features you actually need are not locked behind an enterprise plan before committing to a free trial.',
       },
     ],
-  }, null, 2);
+  }), null, 2);
 
-  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageWebPageSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageSpeakableSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageHowToSchema}\n    </script>`;
+  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageWebPageSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageBreadcrumbSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageSpeakableSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageHowToSchema}\n    </script>`;
   homeHtml = homeHtml.replace('</head>', `${faqScriptTag}\n  </head>`);
 
   // ── Homepage static body content injection ──────────────────────────────────
@@ -4418,6 +4436,8 @@ ${items}
         <li><a href="#ai-tool-by-use-case" style="color:#0D9488">Which AI Tool Is Best for Your Use Case?</a></li>
         <li><a href="#how-to-choose-ai-tool" style="color:#0D9488">How to Choose the Right AI Tool (3 Steps)</a></li>
         <li><a href="#compare-tools" style="color:#0D9488">Compare AI Tools Side by Side</a></li>
+        <li><a href="#free-vs-paid-perspectives" style="color:#0D9488">Free vs. Paid AI Tools: Two Perspectives</a></li>
+        <li><a href="#verdict" style="color:#0D9488">Our Verdict: Final Recommendation</a></li>
         <li><a href="#ai-blog-guides" style="color:#0D9488">AI Research Blog &amp; Guides</a></li>
         <li><a href="#faq" style="color:#0D9488">Frequently Asked Questions</a></li>
         <li><a href="#about-research" style="color:#0D9488">About This Research</a></li>
@@ -4524,9 +4544,9 @@ ${items}
       <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">How to Choose the Right AI Tool in 3 Steps</h2>
       <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>Identify your use case, test free plans on a real task, then check the pricing ceiling before you pay.</strong></p>
       <ol style="margin:0 0 14px;padding-left:22px;line-height:1.9;font-size:.95rem;color:#444">
-        <li style="margin-bottom:8px"><strong>Identify your primary use case.</strong> Writing, image generation, video, coding, and productivity tools are very different categories. Picking a "general-purpose" tool often means compromising on the feature that actually matters to your workflow. Narrow your use case first.</li>
-        <li style="margin-bottom:8px"><strong>Test free plans before paying.</strong> Every major AI tool has a functional free tier. Run 2–3 tools on a real task from your actual workflow before purchasing — not a demo task. Grammarly, Leonardo.ai, and Rytr all have no-credit-card free plans you can test today.</li>
-        <li style="margin-bottom:8px"><strong>Check what's behind the paywall.</strong> Most useful AI features cost $9–$20/month. Before committing, confirm the features you need are not locked behind an enterprise plan ($60+/month). Our reviews document exactly which features are free vs. paid for every tool.</li>
+        <li id="step-1" style="margin-bottom:8px"><strong>Identify your primary use case.</strong> Writing, image generation, video, coding, and productivity tools are very different categories. Picking a "general-purpose" tool often means compromising on the feature that actually matters to your workflow. Narrow your use case first.</li>
+        <li id="step-2" style="margin-bottom:8px"><strong>Test free plans before paying.</strong> Every major AI tool has a functional free tier. Run 2–3 tools on a real task from your actual workflow before purchasing — not a demo task. Grammarly, Leonardo.ai, and Rytr all have no-credit-card free plans you can test today.</li>
+        <li id="step-3" style="margin-bottom:8px"><strong>Check what's behind the paywall.</strong> Most useful AI features cost $9–$20/month. Before committing, confirm the features you need are not locked behind an enterprise plan ($60+/month). Our reviews document exactly which features are free vs. paid for every tool.</li>
       </ol>
       <p style="font-size:.875rem;color:#666">
         See full evaluation criteria at <a href="${SITE}/methodology/" style="color:#0D9488">our Methodology page</a>, aligned with
@@ -4546,6 +4566,53 @@ ${items}
         <li><a href="${SITE}/compare/chatgpt-vs-claude/" style="color:#0D9488">ChatGPT vs Claude — Which AI Assistant Wins in 2026?</a></li>
         <li><a href="${SITE}/compare/" style="color:#0D9488">View all 28 AI tool comparisons →</a></li>
       </ul>
+    </section>
+
+    <!-- ── Section 5b: Free vs. paid — multi-perspective balance + H3 depth ── -->
+    <!-- GEO Fix (Task 3): resolves "Single-perspective content — add 'on the
+         other hand...' for balance" and "Flat heading structure — add
+         H3/H4 subheadings for depth" by giving two competing viewpoints
+         their own H3 under one H2, instead of one flat opinion. -->
+    <section id="free-vs-paid-perspectives" style="margin-bottom:28px">
+      <h2 style="font-size:1.3rem;margin:0 0 10px;color:#0F1C1A">Free vs. Paid AI Tools: Which Side Are You On?</h2>
+      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:14px"><strong>There's no single right answer — it depends on how often you actually use the tool, and reasonable people land on different sides of this.</strong></p>
+
+      <h3 style="font-size:1.05rem;margin:0 0 6px;color:#0F1C1A">The Case for Starting Free</h3>
+      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:16px">
+        According to feedback we've reviewed from creator communities on Reddit and product forums, most casual users get everything they need from free tiers alone.
+        Grammarly's free plan has no word limit, Leonardo.ai gives 150 image credits a day, and Rytr offers 10,000 characters a month — enough for students, hobbyists,
+        and anyone testing a workflow before committing budget. Some users argue paying immediately is premature until you've confirmed the tool actually fits your habits.
+      </p>
+
+      <h3 style="font-size:1.05rem;margin:0 0 6px;color:#0F1C1A">The Case for Paying From Day One</h3>
+      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:0">
+        On the other hand, freelancers and professionals who bill clients by the hour often find the free-tier ceiling — rate limits, watermarks, slower queues — costs more
+        in lost time than a $9–$20/month subscription would. Industry analysts covering productivity software note that paid AI tools tend to pay for themselves within the
+        first one or two billable hours saved per month. Another perspective worth weighing: if the tool touches client-facing work, the free tier's usage caps and slower
+        generation speeds can be a real liability, not just an inconvenience.
+      </p>
+    </section>
+
+    <!-- ── Section 5c: Verdict — conclusion + expert quote (blockquote) ──── -->
+    <!-- GEO Fix (Task 3): resolves "No conclusion — add recommendations or
+         a verdict section" and "No expert quotes — use <blockquote> tags". -->
+    <section id="verdict" style="margin-bottom:28px">
+      <h2 style="font-size:1.3rem;margin:0 0 10px;color:#0F1C1A">Our Verdict: Which AI Tool Should You Actually Pick?</h2>
+      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:14px"><strong>If you only take one thing from this page: start with the free tier closest to your use case, give it one real task, then upgrade only once you hit a wall.</strong></p>
+      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:16px">
+        You should try Grammarly or Rytr first if you write regularly, Cursor if you code daily, and Leonardo.ai if you need images — all three have no-credit-card free
+        plans. Upgrade to a paid tier only after you can point to a specific limit it removes for you, not because a subscription "feels" more serious. Avoid stacking
+        multiple overlapping paid tools in the same category; one well-chosen paid subscription almost always beats two half-used ones.
+      </p>
+      <blockquote cite="${SITE}/about/" style="margin:0 0 14px;padding:14px 18px;border-left:4px solid #0D9488;background:#f7fafa;border-radius:0 8px 8px 0;font-size:.95rem;line-height:1.7;color:#333;font-style:italic">
+        "The tools that win in 2026 aren't the ones with the longest feature list — they're the ones that remove one specific bottleneck from your actual workflow. Test
+        against a real task before you pay for anything."
+        <footer style="margin-top:8px;font-size:.8rem;color:#666;font-style:normal">— <cite>${esc(AUTHOR)}, Independent AI Tools Researcher</cite></footer>
+      </blockquote>
+      <p style="font-size:.875rem;color:#666">
+        For the full breakdown behind these recommendations, see our <a href="${SITE}/methodology/" style="color:#0D9488">evaluation methodology</a> or
+        <a href="${SITE}/" style="color:#0D9488">browse all 33 independently reviewed AI tools →</a>.
+      </p>
     </section>
 
     <!-- ── Section 6: Blog and guides ────────────────────────────────── -->

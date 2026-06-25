@@ -180,6 +180,17 @@ jobs:
           fi
           echo "✅ Homepage FAQPage schema present"
 
+          # 4b. GEO Task 4: check homepage BreadcrumbList schema — mirrors the
+          # tool-page BreadcrumbList check above (step 2). Standalone
+          # top-level BreadcrumbList was added (not just nested inside
+          # WebPage.breadcrumb) so scanners that read only top-level "@type"
+          # per <script> block can detect it.
+          if ! grep -q "BreadcrumbList" dist/index.html; then
+            echo "❌ BreadcrumbList schema missing from homepage"
+            exit 1
+          fi
+          echo "✅ Homepage BreadcrumbList schema present"
+
           # 5. Check minimum page count
           COUNT=$(find dist -name "index.html" | wc -l)
           echo "ℹ️  Built $COUNT pages"
@@ -256,6 +267,47 @@ jobs:
             process.exit(1);
           }
           console.log('✅ All JSON-LD schema blocks valid');
+          EOF
+
+      - name: Validate homepage body word count
+        # GEO Task 4: catches silent homepage body injection failure. If the
+        # `data-prerender="homepage"` marker scripts/prerender.mjs relies on
+        # is ever renamed/stripped by a future Vite/build change, the
+        # homepage regresses to ~38 words of skeleton HTML with no visible
+        # build error — this guard fails the build instead of letting that
+        # ship silently to production.
+        run: |
+          echo "── Homepage Body Word Count Guard ──"
+          node <<'EOF'
+          const fs = require('fs');
+
+          const html = fs.readFileSync('dist/index.html', 'utf-8');
+
+          // Measure only the rendered <main id="main-content"> block (not
+          // <head> scripts/JSON-LD), which would otherwise mask a silent
+          // injection failure by inflating the count with unrelated text.
+          const mainMatch = html.match(/<main[^>]*id="main-content"[\s\S]*?<\/main>/);
+          if (!mainMatch) {
+            console.log('❌ <main id="main-content"> block not found in dist/index.html');
+            console.log('   Homepage body injection likely failed silently — check');
+            console.log('   scripts/prerender.mjs for the data-prerender="homepage" marker.');
+            process.exit(1);
+          }
+
+          const text = mainMatch[0]
+            .replace(/<script[\s\S]*?<\/script>/g, ' ')
+            .replace(/<[^>]+>/g, ' ')
+            .replace(/&[a-z]+;/gi, ' ');
+          const wordCount = (text.match(/[A-Za-z0-9]+/g) || []).length;
+
+          console.log(`ℹ️  Homepage body word count: ~${wordCount}`);
+          if (wordCount < 300) {
+            console.log(`❌ Homepage body has only ~${wordCount} words — expected 300+`);
+            console.log('   Body injection may have silently failed. Check scripts/prerender.mjs');
+            console.log('   homepage injection block and verify dist/index.html manually.');
+            process.exit(1);
+          }
+          console.log(`✅ Homepage body word count OK (~${wordCount} words)`);
           EOF
 
       - name: Check for unfilled affiliate placeholders
