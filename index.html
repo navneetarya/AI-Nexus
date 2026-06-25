@@ -490,10 +490,8 @@
   <body>
     <!-- Skip to main content — accessibility & ARIA best practice -->
     <a href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;padding:8px 16px;background:var(--a1);color:#fff;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;border-radius:0 0 8px 0;transition:left 0s" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to main content</a>
-    <!-- Visually-hidden H1 for crawlers that don't execute JS.
-         Real per-page <h1> rendered by React is the primary heading.
-         This static fallback ensures Googlebot always finds an H1 even before hydration. -->
-    <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Best AI Tools 2026 — 33 Independently Reviewed | AI Nexus</h1>
+    <!-- Note: <h1> is rendered by React (HomePage.tsx) on hydration.
+         Removed static fallback H1 to prevent duplicate-H1 SEO penalty. -->
     <div id="root" data-prerender="homepage"><!-- Static skeleton shell — mirrors React layout geometry so hydration causes zero visual jump.
          Visible to crawlers that don't run JS; invisible transition for users once React mounts. -->
       <div style="min-height:100vh;background:var(--bg)">
