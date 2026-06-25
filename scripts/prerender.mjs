@@ -1221,6 +1221,44 @@ function readTemplate() {
 }
 
 /**
+ * Finds the position of the closing </div> that matches the opening <div id="root"> tag.
+ * Uses depth-counting so it works regardless of whether Vite strips HTML comments.
+ *
+ * @param {string} html   - Full HTML string
+ * @param {number} rootStart - Index of '<div id="root"' in html
+ * @returns {number} Index of the matching </div>, or -1 if not found
+ */
+function findRootDivEnd(html, rootStart) {
+  // Advance past the opening tag's closing '>'
+  const tagEnd = html.indexOf('>', rootStart);
+  if (tagEnd === -1) return -1;
+
+  let depth = 1;
+  let pos = tagEnd + 1;
+
+  while (pos < html.length && depth > 0) {
+    const nextOpen  = html.indexOf('<div', pos);
+    const nextClose = html.indexOf('</div>', pos);
+
+    if (nextClose === -1) break; // Malformed HTML — bail out
+
+    if (nextOpen !== -1 && nextOpen < nextClose) {
+      // Another <div> opens before the next </div> — go deeper
+      depth++;
+      pos = nextOpen + 4; // Advance past '<div'
+    } else {
+      // A </div> closes before the next <div> opens — come back up
+      depth--;
+      if (depth === 0) {
+        return nextClose; // This is the matching close tag
+      }
+      pos = nextClose + 6; // Advance past '</div>'
+    }
+  }
+  return -1;
+}
+
+/**
  * Injects page-specific meta into the HTML template.
  * Modifies: title, description, canonical, og:*, twitter:*, robots, schemas.
  */
@@ -1437,24 +1475,29 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
       <p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
     </div>`;
 
-  // T1.2 FIX: Replace the entire <div id="root">…</div> block with prerendered content.
-  // The base index.html has skeleton shimmer HTML inside <div id="root"> — not an empty div —
-  // so the old exact-string match '<div id="root"></div>' never fired, leaving every tool/blog
-  // page with the homepage skeleton body and zero real content for Google to index.
-  // Strategy: use the "<!-- GitHub Pages SPA routing" comment as a reliable end-marker.
-  // It immediately follows the closing root </div> in this template and won't appear elsewhere.
-  const rootStart = html.indexOf('<div id="root">');
-  const spaCommentPos = html.indexOf('<!-- GitHub Pages SPA routing');
-  if (rootStart !== -1 && spaCommentPos !== -1) {
-    // lastIndexOf finds the root div's own </div>, not any nested ones
-    const rootEnd = html.lastIndexOf('</div>', spaCommentPos);
-    html =
-      html.substring(0, rootStart) +
-      `<div id="root">${pageBody}</div>` +
-      html.substring(rootEnd + '</div>'.length);
-  } else {
-    // Fallback: original behaviour for any future template variant with an empty root div
-    html = html.replace('<div id="root"></div>', `<div id="root">${pageBody}</div>`);
+  // T1.2 FIX (updated): Replace the entire <div id="root">…</div> block with prerendered
+  // content. The previous strategy located the end of the root div by searching for the
+  // '<!-- GitHub Pages SPA routing' comment — but Vite strips HTML comments in production
+  // builds, making spaCommentPos === -1 and silently aborting every injection.
+  //
+  // New strategy: use findRootDivEnd() which depth-counts <div>/<div> pairs to locate
+  // the exact closing </div> of the root div. Works whether or not comments are present,
+  // and handles any future changes to the skeleton HTML without needing a new end-marker.
+  //
+  // Also updated: search for '<div id="root"' (no trailing '>') so this matches both the
+  // source form '<div id="root">' and the built form '<div id="root" data-prerender="homepage">'.
+  const rootStart = html.indexOf('<div id="root"');
+  if (rootStart !== -1) {
+    const rootEnd = findRootDivEnd(html, rootStart);
+    if (rootEnd !== -1) {
+      html =
+        html.substring(0, rootStart) +
+        `<div id="root">${pageBody}</div>` +
+        html.substring(rootEnd + '</div>'.length);
+    } else {
+      // Depth-counter failed — last-resort fallback for an empty root div
+      html = html.replace('<div id="root"></div>', `<div id="root">${pageBody}</div>`);
+    }
   }
 
   return html;
@@ -4342,7 +4385,7 @@ ${items}
 
     <!-- ── Header ──────────────────────────────────────────────────────── -->
     <header style="margin-bottom:24px">
-      <h1 style="font-size:1.8rem;line-height:1.2;margin-bottom:12px;color:#0F1C1A" itemprop="headline">Best AI Tools 2026 — Independently Researched &amp; Reviewed</h1>
+      <h1 style="font-size:1.8rem;line-height:1.2;margin-bottom:12px;color:#0F1C1A" itemprop="headline">Best AI Tools 2026 — 33 Independently Reviewed</h1>
       <p style="color:#555;font-size:.875rem;margin-bottom:12px">
         By <strong itemprop="author">${esc(AUTHOR)}</strong>, Independent AI Tools Researcher ·
         <time itemprop="dateModified" datetime="${TODAY}">Updated ${displayDate}</time>
@@ -4590,15 +4633,32 @@ ${items}
   </article>
 </main>`;
 
-  // Inject body content into <div id="root"> — same strategy as buildPage()
-  const rootStart = homeHtml.indexOf('<div id="root">');
-  const spaCommentPos = homeHtml.indexOf('<!-- GitHub Pages SPA routing');
-  if (rootStart !== -1 && spaCommentPos !== -1) {
-    const rootEnd = homeHtml.lastIndexOf('</div>', spaCommentPos);
-    homeHtml =
-      homeHtml.substring(0, rootStart) +
-      `<div id="root">${homepageBodyContent}</div>` +
-      homeHtml.substring(rootEnd + '</div>'.length);
+  // Inject body content into <div id="root" data-prerender="homepage">.
+  //
+  // Previous strategy searched for '<!-- GitHub Pages SPA routing' as an end-marker,
+  // but Vite strips HTML comments in production builds → spaCommentPos === -1 → injection
+  // silently skipped → homepage indexed with only 38 words of skeleton HTML.
+  //
+  // New strategy:
+  //   1. Locate the root div by searching for 'data-prerender="homepage"' (a real HTML
+  //      attribute that Vite never strips, unlike comments).
+  //   2. Call findRootDivEnd() to depth-count <div>/<div> pairs and find the matching
+  //      closing </div> — fully comment-independent.
+  //   3. Re-emit the div preserving the data-prerender attribute so React can hydrate
+  //      correctly and any future tooling can identify the prerendered shell.
+  const rootStart = homeHtml.indexOf('<div id="root"');
+  if (rootStart !== -1) {
+    const rootEnd = findRootDivEnd(homeHtml, rootStart);
+    if (rootEnd !== -1) {
+      homeHtml =
+        homeHtml.substring(0, rootStart) +
+        `<div id="root" data-prerender="homepage">${homepageBodyContent}</div>` +
+        homeHtml.substring(rootEnd + '</div>'.length);
+    } else {
+      console.error('  ✗  Homepage root div end not found — body injection skipped');
+    }
+  } else {
+    console.error('  ✗  Homepage root div not found — body injection skipped');
   }
 
   fs.writeFileSync(homepagePath, homeHtml, 'utf-8');
