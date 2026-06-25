@@ -171,7 +171,8 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
             The 5-step research process
           </h2>
-          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 24px', fontWeight: 300 }}>Applied to every tool before a review is published</p>
+          {/* AEO: concise answer paragraph after H2 (40-200 chars) */}
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 24px', fontWeight: 300 }}>Applied to every tool before a review is published — verified docs, 200+ reviews, live pricing, Reddit sentiment, and competitor benchmarking.</p>
 
           {STEPS.map(({ icon: Icon, title, body }, i) => (
             <div key={i} style={{ display: 'flex', gap: 14, marginBottom: i < STEPS.length - 1 ? 22 : 0, alignItems: 'flex-start' }}>
@@ -197,9 +198,28 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
             What every review session looks like in practice
           </h2>
-          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 24px', fontWeight: 300 }}>
-            The exact 6 steps I run for every tool — in order, with time spent at each stage
+          {/* AEO: concise answer paragraph after H2 */}
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 12px', fontWeight: 300 }}>
+            Six structured steps applied to every tool, documented with time spent and data sources — ensuring transparent, repeatable research methodology.
           </p>
+          <h3 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.01em' }}>
+            Documented Research Process — Average 2.5–6 Hours Per Tool
+          </h3>
+          {/* AEO: Research formula as code block */}
+          <div style={{ marginBottom: 16, padding: '12px 16px', background: 'var(--footer-bg)', borderRadius: 8, border: `1px solid rgba(13,148,136,.2)`, overflowX: 'auto' as const }}>
+            <pre style={{ margin: 0, fontSize: 11, color: 'rgba(255,255,255,.75)', lineHeight: 1.6, fontFamily: "'Courier New', monospace" }}>
+              <code>{`Research Process Breakdown:
+  Step 1: Docs review        = 20 min  // verify features
+  Step 2: Free plan check    = 15 min  // test credit card requirement
+  Step 3: Review analysis    = 45 min  // 200+ verified reviews
+  Step 4: Reddit sentiment   = 20 min  // real-world frustrations
+  Step 5: Live pricing       = 10 min  // never cached data
+  Step 6: Competitor compare = 30 min  // feature matrix
+  ─────────────────────────────────────
+  Total minimum per tool:     ~155 min (2.5 hours)
+  Complex tools (4–6 tiers):  4–6 hours across 2–3 sessions`}</code>
+            </pre>
+          </div>
 
           {HANDS_ON_STEPS.map(({ icon: Icon, step, action, detail, time }, i) => (
             <div
@@ -337,6 +357,36 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Author credentials — GEO E-E-A-T signals */}
+        <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
+            About the Researcher
+          </h2>
+          {/* AEO: concise answer paragraph */}
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 16px', fontWeight: 300 }}>
+            Navneet Arya is an AI automation and performance testing leader with 13+ years in enterprise technology and product evaluation.
+          </p>
+          {/* GEO: Author credentials with key-value patterns */}
+          <dl style={{ margin: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px 20px' }}>
+            {([
+              { label: 'Background', val: '13+ years enterprise tech, AI automation, and product testing' },
+              { label: 'AI Research', val: 'Independently evaluating AI tools since 2022' },
+              { label: 'Tools Evaluated', val: '200+ AI tools tested across all categories' },
+              { label: 'Review Process', val: '4–6 hours minimum research per tool (documented methodology)' },
+              { label: 'Standards', val: 'Zero sponsored reviews, independent verification only' },
+              { label: 'Current Role', val: 'AI Automation & Performance Testing Leader, BOLD' },
+            ] as const).map(({ label, val }) => (
+              <div key={label} style={{ display: 'flex', gap: 6, alignItems: 'flex-start' }}>
+                <dt style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 12, color: C.a1, flexShrink: 0 }}>{label}:</dt>
+                <dd style={{ margin: 0, fontSize: 12, color: C.mut, lineHeight: 1.6 }}>{val}</dd>
+              </div>
+            ))}
+          </dl>
+          <p style={{ fontSize: 13, color: C.mut, lineHeight: 1.7, marginTop: 14 }}>
+            All reviews on this site reflect independent research verified against official documentation, live pricing, and 200+ verified user reviews per tool. No tool receives preferential ranking based on commission structure or affiliate relationships.
+          </p>
         </div>
 
         {/* Affiliate transparency */}

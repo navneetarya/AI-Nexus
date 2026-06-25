@@ -152,7 +152,11 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
 
         {/* Methodology in numbers */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '24px 28px', marginBottom: 14 }}>
-          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.02em' }}>Methodology in numbers</h2>
+          <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 16, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>Methodology in numbers</h2>
+          {/* AEO: concise answer paragraph after H2 */}
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 16px', fontWeight: 300 }}>
+            Research depth and transparency metrics — verified reviews, pricing verification, and publications across AI Nexus.
+          </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 12 }}>
             {[
               { n: '200+',    label: 'verified reviews analysed per tool' },
@@ -170,7 +174,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
 
         {/* Credentials & what I've tested */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 10, marginBottom: 18 }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 10, marginBottom: 6 }}>
             <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: 0, letterSpacing: '-0.02em' }}>
               What I've researched
             </h2>
@@ -184,6 +188,10 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
               </span>
             </div>
           </div>
+          {/* AEO: concise answer paragraph after H2 */}
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 18px', fontWeight: 300 }}>
+            Independently researched AI tools across 8 categories — verified against official docs, user reviews, and live pricing data since 2022.
+          </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 10 }}>
             {[
               ['Writing tools', 'Grammarly, Rytr, QuillBot, Writesonic, Jasper, Frase, ProWritingAid + more', C.a1],
