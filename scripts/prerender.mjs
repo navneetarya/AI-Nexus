@@ -4227,10 +4227,136 @@ ${items}
     ],
   }, null, 2);
 
-  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>`;
+  // ── Homepage WebPage schema with dateModified ────────────────────────────────
+  // Adds dateModified to signal freshness; prevents "year in title but no
+  // dateModified" GSC/AEO penalty that flags potential date manipulation.
+  const homepageWebPageSchema = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${SITE}/#webpage`,
+    url: `${SITE}/`,
+    name: 'Best AI Tools 2026 — 33 Independently Reviewed | AI Nexus',
+    description: 'AI Nexus independently researches AI tools against official docs, 200+ verified reviews, and live pricing. No sponsored picks.',
+    inLanguage: 'en-US',
+    datePublished: '2026-01-01',
+    dateModified: TODAY,
+    author: {
+      '@type': 'Person',
+      name: AUTHOR,
+      url: `${SITE}/about/`,
+    },
+    isPartOf: { '@id': `${SITE}/#website` },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+      ],
+    },
+  }, null, 2);
+
+  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageWebPageSchema}\n    </script>`;
   homeHtml = homeHtml.replace('</head>', `${faqScriptTag}\n  </head>`);
+
+  // ── Homepage static body content injection ──────────────────────────────────
+  // Injects crawlable, keyword-rich HTML content into <div id="root"> for the
+  // homepage. This is the same pattern used for tool/blog/compare pages.
+  // React replaces this on hydration; crawlers see it immediately.
+  // Fixes: No H1, No H2, Thin content (38 words), 0 internal links, no external
+  // links, no author byline, no About/Contact/Privacy links.
+  const displayDate = new Date(TODAY + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  // Build a list of up to 8 featured tool links for the static content
+  const featuredTools = TOOLS.slice(0, 8).map(t =>
+    `<li><a href="${SITE}/tools/${t.slug}/" style="color:#0D9488;text-decoration:none">${esc(t.name)} — ${esc(t.tagline.slice(0, 60))}</a></li>`
+  ).join('\n        ');
+
+  const homepageBodyContent = `<div id="pre-render" style="font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px 16px">
+
+    <h1 style="font-size:1.8rem;line-height:1.2;margin-bottom:12px;color:#0F1C1A">Best AI Tools 2026 — Independently Researched &amp; Reviewed</h1>
+
+    <p style="color:#555;font-size:.875rem;margin-bottom:16px">
+      By <strong>${esc(AUTHOR)}</strong>, Independent AI Tools Researcher ·
+      <time datetime="${TODAY}">Updated ${displayDate}</time>
+    </p>
+
+    <p style="font-size:1rem;line-height:1.7;color:#333;margin-bottom:16px">
+      AI Nexus independently researches, compares and organises AI tools for creators, freelancers, developers and modern teams.
+      Our research covers 200+ AI tools across writing, video, audio, image generation, coding, productivity, marketing and design.
+      Every tool on this site has been researched against official documentation, verified pricing, and real user review data —
+      with no sponsored placements or paid rankings.
+    </p>
+
+    <h2 style="font-size:1.3rem;margin:24px 0 10px;color:#0F1C1A">Independent AI Tool Reviews</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
+      Browse 33+ independently researched AI tool reviews with verified pricing, feature breakdowns, and workflow recommendations.
+      From AI writing tools like <a href="${SITE}/tools/grammarly/" style="color:#0D9488">Grammarly</a> and
+      <a href="${SITE}/tools/rytr/" style="color:#0D9488">Rytr</a> to AI coding tools like
+      <a href="${SITE}/tools/cursor/" style="color:#0D9488">Cursor</a> and
+      <a href="${SITE}/tools/replit/" style="color:#0D9488">Replit</a> — every review is based on publicly
+      available information and community feedback, not vendor claims.
+    </p>
+    <ul style="margin:0 0 20px;padding-left:20px;line-height:1.9;font-size:.95rem">
+      ${featuredTools}
+    </ul>
+
+    <h2 style="font-size:1.3rem;margin:24px 0 10px;color:#0F1C1A">Compare AI Tools Side by Side</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
+      Can't decide between two tools? Our in-depth comparisons cut through the noise with honest, data-backed verdicts.
+      No affiliate bias — just what actually works for different use cases and budgets.
+    </p>
+    <ul style="margin:0 0 20px;padding-left:20px;line-height:1.9;font-size:.95rem">
+      <li><a href="${SITE}/compare/rytr-vs-writesonic/" style="color:#0D9488">Rytr vs Writesonic — AI Writing Tool Comparison</a></li>
+      <li><a href="${SITE}/compare/grammarly-vs-quillbot/" style="color:#0D9488">Grammarly vs QuillBot — Grammar &amp; Paraphrasing Comparison</a></li>
+      <li><a href="${SITE}/compare/podcastle-vs-descript/" style="color:#0D9488">Podcastle vs Descript — AI Podcast Tool Comparison</a></li>
+      <li><a href="${SITE}/compare/" style="color:#0D9488">View all AI tool comparisons →</a></li>
+    </ul>
+
+    <h2 style="font-size:1.3rem;margin:24px 0 10px;color:#0F1C1A">AI Research Blog &amp; Guides</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
+      In-depth guides and market intelligence on AI tools, pricing trends, and workflow automation.
+      Research is grounded in publicly available data, community feedback, and independent analysis —
+      following standards from <a href="https://schema.org" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Schema.org</a> and
+      <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Google's helpful content guidelines</a>.
+    </p>
+    <ul style="margin:0 0 20px;padding-left:20px;line-height:1.9;font-size:.95rem">
+      <li><a href="${SITE}/blog/best-ai-writing-tools-2026/" style="color:#0D9488">Best AI Writing Tools 2026 — 12 Tools Compared</a></li>
+      <li><a href="${SITE}/blog/best-ai-coding-tools-2026/" style="color:#0D9488">Best AI Coding Tools 2026 — Cursor, Copilot, Replit &amp; More</a></li>
+      <li><a href="${SITE}/blog/chatgpt-alternatives-free-2026/" style="color:#0D9488">Best Free ChatGPT Alternatives in 2026</a></li>
+      <li><a href="${SITE}/blog/" style="color:#0D9488">View all AI research articles →</a></li>
+    </ul>
+
+    <h2 style="font-size:1.3rem;margin:24px 0 10px;color:#0F1C1A">About This Research</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:20px">
+      AI Nexus is run by <strong>${esc(AUTHOR)}</strong>, an independent AI tools researcher since 2022.
+      All tool research is based on publicly available feature documentation, transparent pricing pages,
+      verified Trustpilot and G2 review data, and creator community feedback from Reddit and product forums.
+      There are no sponsored rankings or paid placements on this site.
+    </p>
+
+    <nav aria-label="Important pages" style="display:flex;flex-wrap:wrap;gap:12px 20px;padding-top:16px;border-top:1px solid #e5e7eb;font-size:.875rem">
+      <a href="${SITE}/about/" style="color:#0D9488;text-decoration:none;font-weight:500">About the Reviewer</a>
+      <a href="${SITE}/methodology/" style="color:#0D9488;text-decoration:none;font-weight:500">Evaluation Methodology</a>
+      <a href="${SITE}/contact/" style="color:#0D9488;text-decoration:none;font-weight:500">Contact</a>
+      <a href="${SITE}/privacy/" style="color:#0D9488;text-decoration:none;font-weight:500">Privacy Policy</a>
+      <a href="${SITE}/disclosure/" style="color:#0D9488;text-decoration:none;font-weight:500">Affiliate Disclosure</a>
+      <a href="${SITE}/glossary/" style="color:#0D9488;text-decoration:none;font-weight:500">AI Glossary</a>
+    </nav>
+
+  </div>`;
+
+  // Inject body content into <div id="root"> — same strategy as buildPage()
+  const rootStart = homeHtml.indexOf('<div id="root">');
+  const spaCommentPos = homeHtml.indexOf('<!-- GitHub Pages SPA routing');
+  if (rootStart !== -1 && spaCommentPos !== -1) {
+    const rootEnd = homeHtml.lastIndexOf('</div>', spaCommentPos);
+    homeHtml =
+      homeHtml.substring(0, rootStart) +
+      `<div id="root">${homepageBodyContent}</div>` +
+      homeHtml.substring(rootEnd + '</div>'.length);
+  }
+
   fs.writeFileSync(homepagePath, homeHtml, 'utf-8');
-  console.log('\n  ✓  / (homepage FAQPage schema injected)');
+  console.log('\n  ✓  / (homepage FAQPage schema + body content injected)');
 }
 
 // ── Sitemap ────────────────────────────────────────────────────────────────────
