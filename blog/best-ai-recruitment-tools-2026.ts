@@ -1,7 +1,7 @@
 import { BlogPost } from './types';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
-// Juicebox (PeopleGPT) : TODO — apply at https://juicebox.ai/affiliates
+// Juicebox (PeopleGPT) : Affiliate active — https://juicebox.ai/?via=c6add3
 // Greenhouse           : TODO — apply at https://www.greenhouse.io/partners
 // Lever                : TODO — apply at https://www.lever.co/partners
 // Ashby                : No affiliate — linked to main site only
@@ -46,7 +46,7 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://www.shrm.org/topics-tools/news/technology/ai-recruiting-tools-2026', label: 'SHRM: AI in Recruiting 2026 Survey' },
     { url: 'https://business.linkedin.com/talent-solutions/global-talent-trends', label: 'LinkedIn Global Talent Trends 2026' },
-    { url: 'https://juicebox.ai', label: 'Juicebox (PeopleGPT) — AI Talent Intelligence' },
+    { url: 'https://juicebox.ai/?via=c6add3', label: 'Juicebox (PeopleGPT) — AI Talent Intelligence' },
     { url: 'https://www.greenhouse.io', label: 'Greenhouse — Enterprise ATS' },
     { url: 'https://www.lever.co', label: 'Lever — ATS + CRM Platform' },
   ],
@@ -93,7 +93,7 @@ const post: BlogPost = {
 </table>
 </div>
 <p><strong>India pricing note:</strong> Juicebox Starter at approximately ₹6,600/month. No local payment gateway — requires USD card or international Razorpay. Candidate data coverage for India (Tier 1 cities: Bengaluru, Hyderabad, Mumbai, Pune, Delhi NCR) is strong; Tier 2 city coverage is thinner than LinkedIn Recruiter.</p>
-<p><strong>Best for:</strong> Technical and specialised roles where Boolean search quality has become the bottleneck. Engineering, data science, and product management hiring at companies running 5–30 open roles per quarter. <strong>Apply affiliate:</strong> <a href="https://juicebox.ai" target="_blank" rel="noopener sponsored">Juicebox (affiliate link pending approval)</a>.</p>
+<p><strong>Best for:</strong> Technical and specialised roles where Boolean search quality has become the bottleneck. Engineering, data science, and product management hiring at companies running 5–30 open roles per quarter. <strong>Apply affiliate:</strong> <a href="https://juicebox.ai/?via=c6add3" target="_blank" rel="noopener sponsored">Juicebox (affiliate link)</a>.</p>
 
 <h3>2. Greenhouse — Best Enterprise ATS with AI Screening</h3>
 <p>Greenhouse is the enterprise ATS standard for companies that take structured hiring seriously — it is the most deeply integrated platform in the market, with pre-built connections to 450+ HR tools, job boards, and HRIS systems. The AI screening layer (introduced as Greenhouse Intelligence) scores incoming applications against structured job criteria and routes top candidates automatically, reducing time-to-shortlist by 40–60% for high-volume roles according to internal Greenhouse benchmarks.</p>

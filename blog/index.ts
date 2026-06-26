@@ -118,7 +118,7 @@ import post54 from './n8n-vs-make-vs-zapier-2026';
 import post55 from './best-no-code-ai-automation-tools-2026';
 // ── Day 6 · Jun 26: Best AI Recruitment Tools — new HR vertical, 3,600/mo, KD 22 ─
 // Target keyword: "best ai recruitment tools 2026"
-// Affiliates: Juicebox (TODO) · Greenhouse (TODO) · Lever (TODO)
+// Affiliates: Juicebox (https://juicebox.ai/?via=c6add3) · Greenhouse (TODO) · Lever (TODO)
 import post56 from './best-ai-recruitment-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
