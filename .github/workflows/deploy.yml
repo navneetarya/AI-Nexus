@@ -162,12 +162,12 @@ jobs:
           # 3b. Sitemap URL count — catches silent drops (missing posts/tools/etc.)
           LOC_COUNT=$(grep -c "<loc>" dist/sitemap.xml)
           echo "ℹ️  sitemap.xml contains $LOC_COUNT <loc> entries"
-          EXPECTED_LOC_COUNT=142
+          EXPECTED_LOC_COUNT=143
           if [ "$LOC_COUNT" -ne "$EXPECTED_LOC_COUNT" ]; then
             echo "❌ Expected $EXPECTED_LOC_COUNT URLs in sitemap.xml, found $LOC_COUNT"
-            echo "   Current breakdown: 1 home + 8 static + 1 freelancers landing + 3 specials (free/india/logos)"
+            echo "   Current breakdown: 1 home + 9 static + 1 freelancers landing + 3 specials (free/india/logos)"
             echo "   + 8 categories + 1 blog index + 56 blog posts"
-            echo "   + 1 compare index + 28 compare articles (22 base + 6 new: 3 T7 + 3 India) + 32 tools + 4 additional routes = 142"
+            echo "   + 1 compare index + 28 compare articles (22 base + 6 new: 3 T7 + 3 India) + 32 tools + 4 additional routes = 143"
             echo "   If you added new routes, update EXPECTED_LOC_COUNT in deploy.yml to match."
             exit 1
           fi
