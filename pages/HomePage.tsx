@@ -650,8 +650,8 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             style={{ fontFamily:"'Fraunces', Georgia, serif", fontWeight:800,
               fontSize:'clamp(30px,6vw,52px)', lineHeight:1.07, color:C.txt,
               margin:'0 0 16px', letterSpacing:'-0.025em' }}>
-            Independent AI Tool Reviews
-            <span style={{ color:C.a1, fontStyle:'italic' }}> for 2026</span>
+            Best AI Tools 2026
+            <span style={{ color:C.a1, fontStyle:'italic' }}> Independently Reviewed</span>
           </h1>
 
           {/* GEO: content image with descriptive ALT text */}

@@ -21,6 +21,7 @@ const ToolPage           = React.lazy(() => import('./pages/ToolPage').then(m =>
 const AboutPage          = React.lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })));
 const DisclosurePage     = React.lazy(() => import('./pages/DisclosurePage').then(m => ({ default: m.DisclosurePage })));
 const PrivacyPage        = React.lazy(() => import('./pages/PrivacyPage').then(m => ({ default: m.PrivacyPage })));
+const TermsPage          = React.lazy(() => import('./pages/TermsPage').then(m => ({ default: m.TermsPage })));
 const MethodologyPage    = React.lazy(() => import('./pages/MethodologyPage').then(m => ({ default: m.MethodologyPage })));
 const BlogPage           = React.lazy(() => import('./pages/BlogPage').then(m => ({ default: m.BlogPage })));
 const BlogPostPage       = React.lazy(() => import('./pages/BlogPostPage').then(m => ({ default: m.BlogPostPage })));
@@ -270,6 +271,19 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <PrivacyPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/terms') {
+    updateMeta(
+      'Terms of Service | AI Nexus',
+      'Terms of Service for AI Nexus (ainexustools.online): use of content, affiliate disclosures, limitations, and contact details.',
+      `${SITE_CONFIG.siteUrl}/terms/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <TermsPage navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }

@@ -96,6 +96,9 @@ function respond(data, status = 200) {
     status,
     headers: {
       'Content-Type': 'application/json',
+      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline'",
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
+      'X-Content-Type-Options': 'nosniff',
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type'

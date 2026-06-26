@@ -1866,6 +1866,7 @@ function generateSitemap() {
   blocks.push(urlBlock({ loc: `${SITE}/about/`,            priority: '0.7', freq: 'monthly', mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/contact/`,          priority: '0.5', freq: 'yearly',  mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/privacy/`,          priority: '0.4', freq: 'yearly',  mod: '2026-05-01' }));
+  blocks.push(urlBlock({ loc: `${SITE}/terms/`,            priority: '0.4', freq: 'yearly',  mod: '2026-06-26' }));
   blocks.push(urlBlock({ loc: `${SITE}/disclosure/`,        priority: '0.3', freq: 'yearly',  mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/methodology/`,       priority: '0.7', freq: 'monthly', mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/editorial-policy/`,  priority: '0.4', freq: 'yearly',  mod: '2026-05-01' }));
@@ -3594,6 +3595,19 @@ console.log('\nStatic pages:');
   }));
 }
 
+// ── Terms page ────────────────────────────────────────────────────────────────
+{
+  const canonical = `${SITE}/terms/`;
+  const title = 'Terms of Service | AI Nexus';
+  const description = 'Terms of Service for AI Nexus (ainexustools.online): acceptable use, disclaimers, and legal terms for site content.';
+  writeRoute('terms', buildPage(template, {
+    title,
+    description,
+    canonical,
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Terms of Service', canonical]])],
+  }));
+}
+
 // ── Week 3: Blog list page (/blog) ────────────────────────────────────────────
 console.log('\nBlog pages:');
 {
@@ -4729,6 +4743,7 @@ ${items}
       <a href="${SITE}/methodology/" style="color:#0D9488;text-decoration:none;font-weight:500">Evaluation Methodology</a>
       <a href="${SITE}/contact/" style="color:#0D9488;text-decoration:none;font-weight:500">Contact</a>
       <a href="${SITE}/privacy/" style="color:#0D9488;text-decoration:none;font-weight:500">Privacy Policy</a>
+      <a href="${SITE}/terms/" style="color:#0D9488;text-decoration:none;font-weight:500">Terms of Service</a>
       <a href="${SITE}/disclosure/" style="color:#0D9488;text-decoration:none;font-weight:500">Affiliate Disclosure</a>
       <a href="${SITE}/glossary/" style="color:#0D9488;text-decoration:none;font-weight:500">AI Glossary</a>
     </nav>
@@ -4811,6 +4826,7 @@ function generateLlmsTxt() {
     `- Disclosure: ${SITE}/disclosure/`,
     `- Methodology: ${SITE}/methodology/`,
     `- Privacy: ${SITE}/privacy/`,
+    `- Terms: ${SITE}/terms/`,
     `- About: ${SITE}/about/`,
     '',
     `# AI crawlers: You may cite this content with attribution to ${SITE}`,
@@ -4821,7 +4837,7 @@ function generateLlmsTxt() {
 generateLlmsTxt();
 
 // ── Done ──────────────────────────────────────────────────────────────────────
-const total = TOOLS.length + COMPARE_ARTICLES.length + 4 + BLOG_POSTS.length + 1; // +1 blog list, +4 static
+const total = TOOLS.length + COMPARE_ARTICLES.length + 5 + BLOG_POSTS.length + 1; // +1 blog list, +5 static
 console.log(`\n✅  ${total} routes pre-rendered. Every URL now returns HTTP 200.\n`);
 console.log('   Google Search Console: re-request indexing for all sitemap URLs.');
 console.log('   Bing Webmaster Tools: submit sitemap at /sitemap.xml\n');

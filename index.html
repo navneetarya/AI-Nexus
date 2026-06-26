@@ -66,7 +66,7 @@
     <!-- Content-Security-Policy via meta — governs what resources can load.
          Note: frame-ancestors and HSTS must be set as HTTP headers (not possible on
          GitHub Pages without a Cloudflare Worker or proxy). -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; frame-src 'none'; object-src 'none'; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'">
     <!-- X-Content-Type-Options / X-Frame-Options / HSTS / Permissions-Policy:
          Set these as HTTP response headers via Cloudflare Transform Rules or a Worker.
          Example Cloudflare rule headers to add:
@@ -104,44 +104,31 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow" />
 
-    <!-- Schema: WebSite -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "AI Nexus",
-      "url": "https://ainexustools.online",
-      "description": "Independent AI tool research and comparisons for creators and freelancers — by Navneet Arya.",
-      "inLanguage": "en-US",
-      "dateModified": "2026-06-25",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://ainexustools.online/?search={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "AI Nexus",
-        "url": "https://ainexustools.online",
-        "sameAs": [
-          "https://www.linkedin.com/in/navneetarya/",
-          "https://x.com/aryanavneet",
-          "https://medium.com/@navneetarya1989"
-        ]
-      }
-    }
-    </script>
-
-    <!-- G4 GEO Fix: @graph — Organization + Person linked via @id so AI systems build a knowledge entity -->
-    <!-- Replaces the disconnected Person-only schema. @graph lets ChatGPT/Perplexity/Gemini -->
-    <!-- understand AI Nexus as a named entity with a founder, mission, and content focus.    -->
+    <!-- Consolidated JSON-LD graph to reduce payload and avoid schema duplication -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://ainexustools.online/#website",
+          "name": "AI Nexus",
+          "url": "https://ainexustools.online",
+          "description": "Independent AI tool research and comparisons for creators and freelancers.",
+          "inLanguage": "en-US",
+          "dateModified": "2026-06-26",
+          "publisher": {
+            "@id": "https://ainexustools.online/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://ainexustools.online/?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
         {
           "@type": "Organization",
           "@id": "https://ainexustools.online/#organization",
@@ -208,94 +195,7 @@
     }
     </script>
 
-    <!-- Google Analytics GA4
-         ─ Deferred load: fires after page load to never compete with LCP.
-         ─ Bot filter: US sessions with 0% engagement are likely bots; we
-           exclude traffic-analysis user-agents from being counted.
-         ─ Affiliate click tracking: every outbound affiliate CTA fires an
-           'affiliate_click' event with tool_name and page_path dimensions.
-           Mark 'affiliate_click' as a conversion in GA4 Admin → Events.
-         ─ page_view for SPA navigation is fired by App.tsx navigate() —
-           send_page_view:false here prevents the initial double-fire. -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      // ── Affiliate click tracker — call this on every affiliate CTA ────────
-      // Usage: trackAffiliate('murf-ai', 'https://get.murf.ai/ilypoqhxvxsj')
-      // The ToolPage and CompareArticlePage components call this automatically
-      // via the window.trackAffiliate hook below.
-      window.trackAffiliate = function(toolName, destinationUrl) {
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', 'affiliate_click', {
-            tool_name: toolName,
-            page_path: window.location.pathname,
-            destination_url: destinationUrl,
-            // GA4 treats this as a conversion once marked in Admin → Events
-          });
-        }
-        // Small delay so GA4 fires before navigation
-        setTimeout(function() {
-          window.open(destinationUrl, '_blank', 'noopener,noreferrer');
-        }, 150);
-      };
-
-      // ── Outbound link auto-capture — catches any <a> with an affiliate URL ─
-      // Covers affiliate links rendered in blog posts and compare tables that
-      // don't go through the trackAffiliate() helper directly.
-      document.addEventListener('click', function(e) {
-        var el = e.target.closest('a[href]');
-        if (!el) return;
-        var href = el.getAttribute('href') || '';
-        // Match known affiliate domains
-        var affiliateDomains = [
-          'get.murf.ai', 'try.elevenlabs.io',
-          'rytr.me', 'podcastle.ai', 'ocoya.com', 'taskade.com',
-          'writesonic.com', 'quillbot.com', 'frase.io', 'jasper.ai',
-          'invideo.io', 'pictory.ai', 'opus.pro', 'descript.com',
-          'leonardo.ai', 'photoroom.com', 'looka.com', 'gamma.app',
-          'beautiful.ai', 'notion.so', 'perplexity.ai', 'canva.com',
-          'replit.com', 'grammarly.com',
-          // H-08 Audit Fix: 8 affiliate tools were missing from tracking
-          'cursor.com', 'lovable.dev', 'getresponse.com',
-          'getmunch.com', 'headshotpro.com', 'fireflies.ai',
-          'narrato.io', 'make.com', 'lindy.ai', 'relevanceai.com',
-          'n8n.io', 'windsurf.com'
-        ];
-        var isAffiliate = affiliateDomains.some(function(d) { return href.indexOf(d) !== -1; });
-        if (isAffiliate && typeof window.gtag === 'function') {
-          // Extract tool name from URL for the event label
-          var toolName = affiliateDomains.find(function(d) { return href.indexOf(d) !== -1; }) || 'unknown';
-          toolName = toolName.replace('.ai','').replace('.com','').replace('.io','').replace('.me','').replace('get.','').replace('try.','');
-          window.gtag('event', 'affiliate_click', {
-            tool_name: toolName,
-            page_path: window.location.pathname,
-            destination_url: href,
-          });
-        }
-      }, true);
-
-      window.addEventListener('load', function() {
-        var delay = window.innerWidth <= 680 ? 300 : 500;
-        setTimeout(function() {
-          var s = document.createElement('script');
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9M7R4GGEEK';
-          s.async = true;
-          s.onload = function() {
-            gtag('config', 'G-9M7R4GGEEK', {
-              send_page_view: false,
-              // Custom dimensions for richer analysis
-              custom_map: {
-                dimension1: 'page_type',
-                dimension2: 'tool_name',
-              },
-            });
-          };
-          document.head.appendChild(s);
-        }, delay);
-      });
-    </script>
+    <script src="/js/ga-init.js" defer></script>
 
     <!-- Self-hosted Inter font — eliminates external DNS lookups, saves LCP -->
     <!-- Font files placed in /public/fonts/ — Inter v20 -->
@@ -316,17 +216,8 @@
         src: url('/fonts/inter-v20-latin-700.woff2') format('woff2');
       }
     </style>
-    <!-- Non-critical font weights — loaded after first paint via JS -->
-    <script>
-      window.addEventListener('load', function() {
-        var s = document.createElement('style');
-        s.textContent = "\
-@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:optional;src:url('/fonts/inter-v20-latin-500.woff2') format('woff2')}\
-@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:optional;src:url('/fonts/inter-v20-latin-600.woff2') format('woff2')}\
-@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:optional;src:url('/fonts/inter-v20-latin-800.woff2') format('woff2')}";
-        document.head.appendChild(s);
-      });
-    </script>
+    <!-- Non-critical font weights loaded after first paint -->
+    <script src="/js/fonts-init.js" defer></script>
     <!-- All fonts self-hosted via /public/fonts/ — Inter v20
          Eliminates DNS lookups, saves 150–300ms LCP on mobile -->
 
@@ -476,20 +367,12 @@
       @keyframes shimmer{0%{background-position:-400px 0}to{background-position:400px 0}}
       .skeleton{background:linear-gradient(90deg,var(--surf) 25%,var(--brd) 37%,var(--surf) 63%);background-size:800px 100%;animation:shimmer 1.4s infinite;border-radius:8px}
     </style>
-    <!-- Theme init: apply saved preference before paint to avoid flash.
-         Default is 'light' — MUST match App.tsx getInitialTheme() which returns 'light'
-         when no saved pref exists. -->
-    <script>
-      (function() {
-  var saved = localStorage.getItem('ainexus-theme');
-  var theme = (saved === 'dark' || saved === 'light') ? saved : 'light';
-  document.documentElement.setAttribute('data-theme', theme);
-})();
-    </script>
+    <!-- Theme init script applies saved preference before paint -->
+    <script src="/js/theme-init.js"></script>
   </head>
   <body>
     <!-- Skip to main content — accessibility & ARIA best practice -->
-    <a href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;padding:8px 16px;background:var(--a1);color:#fff;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;border-radius:0 0 8px 0;transition:left 0s" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to main content</a>
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:8px;width:1px;height:1px;overflow:hidden;z-index:999;padding:8px 16px;background:var(--a1);color:#fff;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;border-radius:0 0 8px 0;transition:left 0s">Skip to main content</a>
     <!-- Note: <h1> is rendered by React (HomePage.tsx) on hydration.
          Removed static fallback H1 to prevent duplicate-H1 SEO penalty. -->
     <div id="root" data-prerender="homepage"><!-- Static skeleton shell — mirrors React layout geometry so hydration causes zero visual jump.
@@ -596,6 +479,7 @@
               <a href="/methodology/" style="color:rgba(255,255,255,.55);font-family:'Inter',sans-serif;font-size:13px;text-decoration:none">Methodology</a>
               <a href="/contact/" style="color:rgba(255,255,255,.55);font-family:'Inter',sans-serif;font-size:13px;text-decoration:none">Contact</a>
               <a href="/privacy/" style="color:rgba(255,255,255,.55);font-family:'Inter',sans-serif;font-size:13px;text-decoration:none">Privacy Policy</a>
+              <a href="/terms/" style="color:rgba(255,255,255,.55);font-family:'Inter',sans-serif;font-size:13px;text-decoration:none">Terms of Service</a>
               <a href="/disclosure/" style="color:rgba(255,255,255,.55);font-family:'Inter',sans-serif;font-size:13px;text-decoration:none">Affiliate Disclosure</a>
               <a href="/glossary/" style="color:rgba(255,255,255,.55);font-family:'Inter',sans-serif;font-size:13px;text-decoration:none">AI Glossary</a>
             </nav>
@@ -608,16 +492,14 @@
 
       </div>
     </div>
-    <!-- GitHub Pages SPA routing: restore path from ?p= query param set by 404.html -->
-    <script>
-      (function() {
-        var p = window.location.search.slice(1);
-        if (p && p.startsWith('p=')) {
-          var decoded = decodeURIComponent(p.slice(2));
-          history.replaceState(null, null, decoded);
-        }
-      })();
-    </script>
+    <style>
+      .skip-link:focus {
+        left: 0 !important;
+        width: auto;
+        height: auto;
+      }
+    </style>
+    <script src="/js/route-rewrite.js" defer></script>
     <script type="module" src="/index.tsx" async></script>
 
   </body>
