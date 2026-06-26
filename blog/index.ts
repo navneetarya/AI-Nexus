@@ -116,8 +116,13 @@ import post54 from './n8n-vs-make-vs-zapier-2026';
 // ── P1 Urgent: Best No-Code AI Automation Tools — highest affiliate density on roadmap, 5 programs ─
 // Target keyword: "best no-code ai automation tools 2026" — 4,100/mo, KD 16
 import post55 from './best-no-code-ai-automation-tools-2026';
+// ── Day 6 · Jun 26: Best AI Recruitment Tools — new HR vertical, 3,600/mo, KD 22 ─
+// Target keyword: "best ai recruitment tools 2026"
+// Affiliates: Juicebox (TODO) · Greenhouse (TODO) · Lever (TODO)
+import post56 from './best-ai-recruitment-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post56, // Day 6 — Best AI Recruitment Tools — new HR vertical, 3,600/mo, KD 22 — pinned first for freshness
   post55, // P1 Urgent — Best No-Code AI Automation Tools — highest affiliate density, pinned first for freshness
   post54, // P1 Urgent — n8n vs Make vs Zapier — 5,200/mo, KD 14 — pinned first for freshness
   post53, // P1 First Mover — What is MCP? — 82,800/mo, zero independent competition

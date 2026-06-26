@@ -111,6 +111,7 @@
 - [What is MCP (Model Context Protocol)? The AI Integration Standard Explained](https://ainexustools.online/blog/what-is-mcp-model-context-protocol-2026/): Independent explainer on Anthropic's open MCP standard — what it solves, MCP vs traditional APIs, and which platforms (Cursor, Windsurf, n8n, Zapier, ChatGPT) support it as of June 2026.
 - [n8n vs Make vs Zapier: AI Automation Platform Comparison 2026](https://ainexustools.online/blog/n8n-vs-make-vs-zapier-2026/): Independent pricing, AI capability, and workflow analysis of n8n, Make, and Zapier — MCP support, native AI nodes, true cost at scale, and a decision framework for which platform fits which team.
 - [Best No-Code AI Automation Tools 2026](https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026/): 9 no-code AI automation platforms ranked — Zapier, Make.com, n8n, Lindy, Activepieces, Bardeen, Gumloop, Pipedream, and Relevance AI — with true cost comparison and a decision guide by technical level.
+- [Best AI Recruitment Tools 2026](https://ainexustools.online/blog/best-ai-recruitment-tools-2026/): Hiring Intelligence Report covering 8 AI recruitment platforms — Juicebox (AI sourcing), Greenhouse, Lever, Ashby, Paradox, Manatal, SeekOut, and HireVue — with INR pricing, team-size fit guide, and a two-layer sourcing + ATS stack recommendation.
 
 ## Comparison Articles
 
