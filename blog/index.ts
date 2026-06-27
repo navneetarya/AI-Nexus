@@ -120,8 +120,14 @@ import post55 from './best-no-code-ai-automation-tools-2026';
 // Target keyword: "best ai recruitment tools 2026"
 // Affiliates: Juicebox (https://juicebox.ai/?via=c6add3) · Greenhouse (TODO) · Lever (TODO)
 import post56 from './best-ai-recruitment-tools-2026';
+// ── Day 7 · Jun 27: AI Tools ROI Calculator — Internal Link Hub, 2,200/mo, KD 10 ─
+// Target keyword: "ai tools cost roi calculator 2026"
+// Role: AI Economics Pillar — links to every tool comparison page on the site
+// Affiliates: none new — reuses all existing active affiliate programs
+import post57 from './ai-tools-cost-roi-calculator-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post57, // Day 7 — AI Tools ROI Calculator — Internal Link Hub, 2,200/mo, KD 10 — pinned first for freshness
   post56, // Day 6 — Best AI Recruitment Tools — new HR vertical, 3,600/mo, KD 22 — pinned first for freshness
   post55, // P1 Urgent — Best No-Code AI Automation Tools — highest affiliate density, pinned first for freshness
   post54, // P1 Urgent — n8n vs Make vs Zapier — 5,200/mo, KD 14 — pinned first for freshness
