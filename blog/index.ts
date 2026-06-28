@@ -125,8 +125,13 @@ import post56 from './best-ai-recruitment-tools-2026';
 // Role: AI Economics Pillar — links to every tool comparison page on the site
 // Affiliates: none new — reuses all existing active affiliate programs
 import post57 from './ai-tools-cost-roi-calculator-2026';
+// ── Day 8 · Jun 28: Best AI Agents for Customer Service — 2,900/mo, KD 18 ─
+// Target keyword: "best ai agents for customer service 2026"
+// Affiliates: Intercom (TODO — apply) · Freshdesk AI (TODO — apply) · Tidio (active)
+import post58 from './best-ai-agents-customer-service-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post58, // Day 8 — Best AI Agents for Customer Service — 2,900/mo, KD 18 — pinned first for freshness
   post57, // Day 7 — AI Tools ROI Calculator — Internal Link Hub, 2,200/mo, KD 10 — pinned first for freshness
   post56, // Day 6 — Best AI Recruitment Tools — new HR vertical, 3,600/mo, KD 22 — pinned first for freshness
   post55, // P1 Urgent — Best No-Code AI Automation Tools — highest affiliate density, pinned first for freshness
