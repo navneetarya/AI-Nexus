@@ -1189,34 +1189,6 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </div>
           </div>
 
-          {/* AEO: video content — YouTube embed for AI tools overview */}
-          <div className="scroll-reveal" style={{ marginTop:28, marginBottom:8 }}>
-            <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:14, color:C.txt, margin:'0 0 10px' }}>
-              Watch: How to Choose the Right AI Tool for Your Workflow
-            </h3>
-            <p style={{ fontSize:13, color:C.mut, margin:'0 0 12px', lineHeight:1.55 }}>
-              A practical walkthrough of how AI Nexus evaluates tools — covering free plans, workflow fit, and honest limitations.
-            </p>
-            <div style={{ position:'relative', paddingBottom:'56.25%', height:0, borderRadius:12, overflow:'hidden', border:`1px solid var(--brd-xs)` }}>
-              <iframe
-                src="https://www.youtube.com/embed/?listType=search&list=best+ai+tools+2026+review"
-                title="Best AI Tools 2026 — AI Nexus Review and Comparison Guide"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-                style={{ position:'absolute', top:0, left:0, width:'100%', height:'100%', border:'none' }}
-              />
-            </div>
-            {/* Fallback for no-JS / crawlers */}
-            <noscript>
-              <p style={{ fontSize:13, color:C.mut }}>
-                Watch our AI tools comparison video on{' '}
-                <a href="https://www.youtube.com/@ainexus" target="_blank" rel="noopener noreferrer" style={{ color:C.a1 }}>
-                  YouTube — AI Nexus channel
-                </a>.
-              </p>
-            </noscript>
-          </div>
         </div>
       </div>
 
