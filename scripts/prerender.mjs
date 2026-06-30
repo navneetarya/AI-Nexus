@@ -1288,6 +1288,7 @@ const CATEGORY_OG_MAP = {
 // resolveOgImage() checks this map first before falling through to category images.
 // To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
 const BLOG_OG_MAP = {
+  'best-ai-video-generators-2026':                `${SITE}/og-blog-video.webp`,
   'best-ai-writing-tools-for-beginners-2026':    `${SITE}/og/blog/best-ai-writing-tools-for-beginners-2026.webp`,
   'best-ai-tools-for-freelancers-2026':          `${SITE}/og/blog/best-ai-tools-for-freelancers-2026.webp`,
   'best-grammarly-alternatives':                  `${SITE}/og/blog/best-grammarly-alternatives.webp`,
@@ -3030,6 +3031,27 @@ const BLOG_POSTS = [
       { q: 'How do Indian solopreneurs pay for AI tools that only bill in USD?', a: 'Most tools in this stack require a USD-capable card — Claude, Taskade, Ocoya, Fireflies, and Canva AI all bill internationally with no UPI support. The practical workaround is a forex-enabled debit/credit card or a prepaid international card from a fintech like Niyo or Scapia. Two notable exceptions: ChatGPT Go launched in India first at approximately ₹399/month, and Perplexity Pro accepts UPI and Indian cards directly at approximately ₹1,250/month. GST may apply on top of the listed price for GST-registered businesses.' },
     ],
   },
+  // ── Day 11 (Jun 30): best-ai-video-generators-2026 — trending topic, Sora shutdown ──
+  // Blog .ts created + registered in blog/index.ts — adding to prerender for static HTML
+  // Target keyword: "best ai video generators 2026" / "sora alternative 2026"
+  // Affiliates: none — Runway/Veo/Kling/Pika/Luma all linked direct, no confirmed program
+  {
+    slug: 'best-ai-video-generators-2026',
+    title: 'Best AI Video Generators 2026: Runway vs Veo vs Kling vs Sora Alternatives',
+    seoTitle: 'Best AI Video Generators 2026: Runway vs Veo vs Kling Ranked',
+    metaDescription: 'Best AI video generators 2026 ranked: Veo 3.1, Runway Gen-4.5, Kling AI 3.0, Pika & Luma compared on pricing, quality, and the best Sora alternative.',
+    datePublished: '2026-06-30',
+    dateModified: '2026-06-30',
+    readTimeMinutes: 13,
+    ogImage: 'https://ainexustools.online/og-blog-video.webp',
+    faqs: [
+      { q: 'Is Sora shutting down in 2026?', a: 'Yes. OpenAI discontinued the consumer Sora web and app experience on April 26, 2026, and has scheduled the Sora API for full shutdown on September 24, 2026. As a standalone product, Sora is no longer a safe choice for any ongoing creative or commercial pipeline — anyone who built a workflow around it needs to migrate to Veo, Runway, Kling, or another active platform before the September API cutoff.' },
+      { q: 'What is the best free AI video generator in 2026?', a: "There is no genuinely unlimited free AI video generator at usable quality in 2026. Kling AI's free tier is the most generous (66 credits/day, resetting daily), but is capped at 720p, watermarked, and blocks commercial use. Runway's free plan gives 125 one-time credits that never refresh. For ongoing experimentation, Kling's daily reset is the most usable free option; for published or commercial work, budget for a paid tier." },
+      { q: 'Runway vs Veo vs Kling: which AI video generator should I actually use?', a: "Choose Google Veo 3.1 if native, synchronized audio and dialogue matter — it generates voice and sound effects in the same pass as the video. Choose Runway Gen-4.5 if you need precise camera control (Motion Brush, Director Mode) and an in-platform editing workspace. Choose Kling AI 3.0 if budget and multilingual lip-sync matter more than peak photorealism — its per-credit cost is the most accessible of the three for creators publishing regularly." },
+      { q: 'Which AI video generator is best for YouTube and Shorts?', a: "For Shorts and short-form content, Pika's Pikaframes (define a start and end frame, let the AI generate the transition) is the fastest way to produce a usable clip without a complex prompt, at lower pricing than Runway or Veo. For longer-form YouTube content, Google Veo 3.1's photorealism and native audio justify the higher price. Frequent publishers should also evaluate Runway Pro, whose credit pool stretches further across a weekly schedule than Kling's per-second cost." },
+      { q: 'Is Kling AI better than Runway in 2026?', a: "Kling AI 3.0 wins on per-credit cost, multilingual native lip-sync (five languages), and a storyboard mode for multi-shot sequences — the stronger choice for budget-conscious creators publishing frequently. Runway Gen-4.5 wins on camera control precision, an actual editing workspace, and bundled access to Kling 3.0 Pro and Veo 3.1 inside one subscription. For pure cost-per-clip, Kling generally wins; for professional production workflows, Runway remains the stronger platform." },
+    ],
+  },
 ];
 
 // ── H4 Fix: Related links map — internal links between tool pages and blog/compare pages ──
@@ -3234,6 +3256,13 @@ const RELATED_LINKS = {
 // ── Task 5/6 Fix: Related links map for blog posts — links pillar posts to their
 // satellite/cluster posts (and vice versa) for internal authority distribution.
 const BLOG_RELATED_LINKS = {
+  // ── Day 11: Best AI Video Generators 2026 — links to existing video cluster ──
+  'best-ai-video-generators-2026': [
+    ['/blog/best-invideo-alternatives-2026/', 'Best InVideo Alternatives 2026'],
+    ['/blog/best-ai-tools-for-youtube-creators-2026/', 'Best AI Tools for YouTube Creators 2026'],
+    ['/best-ai-video-tools/', 'Best AI Video Tools — Category'],
+  ],
+
   // ── Task 5: ChatGPT cluster hub — best-ai-chatbot-2026 (18K+/mo pillar) ─────
   'best-ai-chatbot-2026': [
     ['/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/', 'Grok 4 vs ChatGPT vs Claude for Content Creators'],

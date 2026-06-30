@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-06-20
+# Updated: 2026-06-30
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -115,6 +115,7 @@
 - [Best AI Agents for Customer Service 2026](https://ainexustools.online/blog/best-ai-agents-customer-service-2026/): 8 AI customer service agent platforms compared — Intercom Fin (45–65% resolution rate, outcome-based pricing), Zendesk AI, Freshdesk Freddy, Tidio (free plan, Shopify-native), Ada CX, Salesforce Agentforce, Kustomer, and Forethought — with resolution rate benchmarks, INR pricing, and a decision framework by team size.
 - [Best AI Coding Agents 2026: Devin vs Claude Code vs SWE-Agent](https://ainexustools.online/blog/best-ai-coding-agents-2026/): Independent analysis of 6 AI coding agents — Devin (most autonomous, $150–$500/month), Claude Code (50%+ SWE-bench Verified, $20/month), Cursor Agent (IDE-native agentic loops, $20/month), SWE-Agent (open-source, API costs only), GitHub Copilot Workspace, and OpenHands — with SWE-bench scores, INR pricing, and a decision guide by workflow and autonomy level.
 - [AI for Solopreneurs: The Complete Tool Stack for One-Person Businesses](https://ainexustools.online/blog/ai-tools-for-solopreneurs-2026/): The complete AI tool stack for one-person businesses in 2026 across 9 functions — Claude/ChatGPT (thinking), Taskade (tasks), Perplexity (research), Ocoya (social), Tidio (support), Fireflies.ai (meetings), Canva AI (design), and Make.com (automation) — with a 30-day rollout plan, cost breakdown, and INR pricing for Indian solopreneurs.
+- [Best AI Video Generators 2026: Runway vs Veo vs Kling vs Sora Alternatives](https://ainexustools.online/blog/best-ai-video-generators-2026/): 5 AI video generators ranked — Google Veo 3.1 (native audio), Runway Gen-4.5 (camera control), Kling AI 3.0 (value, multilingual lip-sync), Pika (Pikaframes), and Luma Dream Machine (multi-model bundle) — with credit-system breakdowns, INR pricing, and guidance on what to use after Sora's April 2026 shutdown.
 
 ## Comparison Articles
 

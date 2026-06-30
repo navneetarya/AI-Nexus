@@ -80,7 +80,7 @@ jobs:
             best-ai-tools-for-automation-engineers-2026 best-ai-tools-for-content-creators-free-2026 best-ai-tools-for-developers-2026
             best-ai-tools-for-freelancers-2026 best-ai-tools-for-freelancers-india-2026 best-ai-tools-for-social-media-2026
             best-ai-tools-for-startups-2026 best-ai-tools-for-youtube-creators-2026 best-ai-tools-for-youtubers-2026
-            best-ai-tools-in-india-2026 best-ai-writing-tools-2026 best-ai-writing-tools-for-beginners-2026
+            best-ai-tools-in-india-2026 best-ai-video-generators-2026 best-ai-writing-tools-2026 best-ai-writing-tools-for-beginners-2026
             best-free-ai-tool-plans-2026 best-free-ai-tools-for-students-in-india-2026 best-free-ai-writing-tools-2026
             best-grammarly-alternatives best-invideo-alternatives-2026 best-midjourney-alternatives-2026 best-no-code-ai-automation-tools-2026 best-notion-ai-alternatives-2026
             best-podcastle-alternatives best-vibe-coding-tools-2026 best-ai-recruitment-tools-2026 chatgpt-alternatives-free-2026
@@ -165,7 +165,7 @@ jobs:
           # 3b. Sitemap URL count — catches silent drops (missing posts/tools/etc.)
           LOC_COUNT=$(grep -c "<loc>" dist/sitemap.xml)
           echo "ℹ️  sitemap.xml contains $LOC_COUNT <loc> entries"
-          EXPECTED_LOC_COUNT=147
+          EXPECTED_LOC_COUNT=148
           if [ "$LOC_COUNT" -ne "$EXPECTED_LOC_COUNT" ]; then
             echo "❌ Expected $EXPECTED_LOC_COUNT URLs in sitemap.xml, found $LOC_COUNT"
             echo "   Current breakdown: 1 home + 9 static + 1 freelancers landing + 3 specials (free/india/logos)"

@@ -139,8 +139,14 @@ import post59 from './best-ai-coding-agents-2026';
 // Affiliates: none new — reuses existing Taskade, Notion, Perplexity, Ocoya, Canva AI, Fireflies, Make.com stack
 // Links: connects to /blog/taskade-vs-notion-vs-asana-2026/, /blog/ai-tools-cost-roi-calculator-2026/, and 6 others
 import post60 from './ai-tools-for-solopreneurs-2026';
+// ── Day 11 · Jun 30: Best AI Video Generators 2026 — Runway vs Veo vs Kling ─────
+// Target keyword: "best ai video generators 2026" / "sora alternative 2026"
+// Affiliates: none — Runway/Veo/Kling/Pika/Luma all linked direct, no confirmed program
+// Links: connects to /blog/best-invideo-alternatives-2026/, /blog/best-ai-tools-for-youtube-creators-2026/, /best-ai-video-tools
+import post61 from './best-ai-video-generators-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post61, // Day 11 — Best AI Video Generators 2026 — new VIDEO-GENERATION sub-niche, trending (Sora shutdown) — pinned first for freshness
   post60, // Day 10 — AI for Solopreneurs — Complete Tool Stack, 2,400/mo, KD 11 — pinned first for freshness
   post59, // Day 9 — Best AI Coding Agents 2026 — Coding Pillar, 4,400/mo, KD 20 — pinned first for freshness
   post58, // Day 8 — Best AI Agents for Customer Service — 2,900/mo, KD 18 — pinned first for freshness
