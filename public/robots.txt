@@ -75,3 +75,9 @@ Allow: /
 
 # ── Sitemap ───────────────────────────────────────────────────────────────────
 Sitemap: https://ainexustools.online/sitemap.xml
+
+# ── AI crawler discovery index ────────────────────────────────────────────────
+# Machine-readable index for LLM and answer-engine crawlers.
+# Not a robots standard directive, but widely used as a crawl hint.
+# Keep this URL in sync with generated output from scripts/prerender.mjs.
+llms: https://ainexustools.online/llms.txt
