@@ -134,8 +134,14 @@ import post58 from './best-ai-agents-customer-service-2026';
 // Affiliates: none new — reuses existing Cursor, Replit, Lovable stack
 // Links: connects to /blog/best-ai-tools-for-developers-2026/ (link prepped on Day 4)
 import post59 from './best-ai-coding-agents-2026';
+// ── Day 10 · Jun 30: AI for Solopreneurs — Complete Tool Stack, 2,400/mo, KD 11 ─
+// Target keyword: "ai tools for solopreneurs 2026" / "ai stack for one person business"
+// Affiliates: none new — reuses existing Taskade, Notion, Perplexity, Ocoya, Canva AI, Fireflies, Make.com stack
+// Links: connects to /blog/taskade-vs-notion-vs-asana-2026/, /blog/ai-tools-cost-roi-calculator-2026/, and 6 others
+import post60 from './ai-tools-for-solopreneurs-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post60, // Day 10 — AI for Solopreneurs — Complete Tool Stack, 2,400/mo, KD 11 — pinned first for freshness
   post59, // Day 9 — Best AI Coding Agents 2026 — Coding Pillar, 4,400/mo, KD 20 — pinned first for freshness
   post58, // Day 8 — Best AI Agents for Customer Service — 2,900/mo, KD 18 — pinned first for freshness
   post57, // Day 7 — AI Tools ROI Calculator — Internal Link Hub, 2,200/mo, KD 10 — pinned first for freshness
