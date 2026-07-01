@@ -344,7 +344,8 @@ jobs:
           echo "✅ dist/llms.txt present in build output"
 
           # 2. Count /blog/ URL entries in the auto-generated dist/llms.txt
-          BLOG_FILE_COUNT=$(find blog -maxdepth 1 -name "*.ts" ! -name "index.ts" ! -name "types.ts" | wc -l | tr -d ' ')
+          # Exclude non-post helper modules kept in blog/.
+          BLOG_FILE_COUNT=$(find blog -maxdepth 1 -name "*.ts" ! -name "index.ts" ! -name "types.ts" ! -name "loaders.ts" ! -name "metadata.ts" | wc -l | tr -d ' ')
           LLMS_BLOG_COUNT=$(grep -c "ainexustools.online/blog/" dist/llms.txt || true)
           echo "ℹ️  blog/ has $BLOG_FILE_COUNT post files"
           echo "ℹ️  dist/llms.txt lists $LLMS_BLOG_COUNT /blog/ entries"
