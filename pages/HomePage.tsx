@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, lazy, Suspense, useRef } from 'react';
 import { SITE_CONFIG, TRENDING_SLUGS } from '../site-config';
 import { Category, FilterState, Tool } from '../types';
 import {
@@ -11,7 +11,8 @@ import {
 import { COMPARE_ARTICLES_META } from './compare-metadata';
 import { BLOG_POSTS_META } from '../blog/metadata';
 import { SharedNav } from './SharedNav';
-import { BeehiivForm } from '../components/BeehiivForm';
+
+const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 // ── Design tokens ────────────────────────────────────────────────────────────
 const C = {
@@ -252,6 +253,45 @@ const NexusIcon = ({ size = 20 }: { size?: number }) => (
 );
 
 interface HomePageProps { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
+
+function DeferredSection({
+  children,
+  minHeight = 220,
+  rootMargin = '420px 0px',
+}: {
+  children: React.ReactNode;
+  minHeight?: number;
+  rootMargin?: string;
+}) {
+  const [visible, setVisible] = useState(typeof window === 'undefined');
+  const mountRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (visible || !mountRef.current) return;
+
+    if (!('IntersectionObserver' in window)) {
+      setVisible(true);
+      return;
+    }
+
+    const obs = new IntersectionObserver(
+      entries => {
+        if (entries.some(entry => entry.isIntersecting)) {
+          setVisible(true);
+          obs.disconnect();
+        }
+      },
+      { rootMargin }
+    );
+    obs.observe(mountRef.current);
+
+    return () => obs.disconnect();
+  }, [visible, rootMargin]);
+
+  if (visible) return <>{children}</>;
+
+  return <div ref={mountRef} style={{ minHeight }} aria-hidden="true" />;
+}
 
 // ── Main component ───────────────────────────────────────────────────────────
 export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
@@ -579,7 +619,9 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         </div>
 
         {/* ── Newsletter strip — bottom of compare list ────────────────── */}
-        <BeehiivForm variant="hero" />
+        <Suspense fallback={<div style={{ minHeight: 220 }} />}>
+          <BeehiivForm variant="hero" />
+        </Suspense>
 
         <Footer/>
       </div>
@@ -677,11 +719,12 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           {/* GEO: content image with descriptive ALT text */}
           <div className="anim-fade-up d2" style={{ margin:'0 auto 14px', maxWidth:480 }}>
             <img
-              src="/og-image.png"
+              src="/og-tool-review.webp"
               alt="AI Nexus — independent AI tools research dashboard showing 33 reviewed tools across writing, coding, audio, video, and image categories for 2026"
               width={480}
               height={252}
               loading="eager"
+              fetchPriority="high"
               decoding="async"
               style={{ width:'100%', height:'auto', borderRadius:12, border:`1px solid var(--brd-xs)`, display:'block' }}
             />
@@ -867,7 +910,8 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
       {/* ── Trending This Week ────────────────────────────────────────── */}
       {(filters.category as string) === 'All' && !filters.search && (
-        <div className="scroll-reveal" style={{ maxWidth:1200, margin:'0 auto', padding:'28px 24px 0' }}>
+        <DeferredSection minHeight={360}>
+          <div className="scroll-reveal" style={{ maxWidth:1200, margin:'0 auto', padding:'28px 24px 0' }}>
           <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:17,
             color:C.txt, letterSpacing:'-0.025em', marginBottom:6, display:'flex', alignItems:'center', gap:8 }}>
             <span style={{ display:'inline-flex', alignItems:'center', justifyContent:'center',
@@ -917,7 +961,8 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               );
             })}
           </div>
-        </div>
+          </div>
+        </DeferredSection>
       )}
 
       {/* ── Latest AI Research ──────────────────────────────────────────── */}
@@ -1130,288 +1175,290 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       </div>
 
       {/* ── Author CTA — replaces fabricated testimonials ──────────────── */}
-      <div style={{ padding:'48px 24px 0', background:'var(--bg)' }}>
-        <div style={{ maxWidth:900, margin:'0 auto' }}>
-          <div style={{ display:'flex', alignItems:'flex-start', gap:20,
-            background:C.surf, borderRadius:16, border:`1px solid var(--brd-sm)`,
-            padding:'24px 28px', flexWrap:'wrap' as const }}>
-            <img
-              src="/author-photo.jpg"
-              alt="Navneet Arya — AI Automation &amp; Performance Testing Leader, independent AI tools researcher"
-              width={64} height={64}
-              style={{ borderRadius:'50%', objectFit:'cover' as const, flexShrink:0 }}
-            />
-            <div style={{ flex:1, minWidth:200 }}>
-              <div style={{ fontSize:15, fontWeight:800, color:C.txt,
-                fontFamily:"'Inter',sans-serif", marginBottom:2 }}>
-                Navneet Arya
+      <DeferredSection minHeight={260}>
+        <div style={{ padding:'48px 24px 0', background:'var(--bg)' }}>
+          <div style={{ maxWidth:900, margin:'0 auto' }}>
+            <div style={{ display:'flex', alignItems:'flex-start', gap:20,
+              background:C.surf, borderRadius:16, border:`1px solid var(--brd-sm)`,
+              padding:'24px 28px', flexWrap:'wrap' as const }}>
+              <img
+                src="/author-photo.jpg"
+                alt="Navneet Arya — AI Automation &amp; Performance Testing Leader, independent AI tools researcher"
+                width={64} height={64}
+                style={{ borderRadius:'50%', objectFit:'cover' as const, flexShrink:0 }}
+              />
+              <div style={{ flex:1, minWidth:200 }}>
+                <div style={{ fontSize:15, fontWeight:800, color:C.txt,
+                  fontFamily:"'Inter',sans-serif", marginBottom:2 }}>
+                  Navneet Arya
+                </div>
+                {/* GEO: author credentials */}
+                <dl style={{ margin:'0 0 8px', display:'flex', flexWrap:'wrap' as const, gap:'2px 16px' }}>
+                  {[
+                    { label:'Role',       val:'AI Automation & Performance Testing Leader, BOLD' },
+                    { label:'Expertise',  val:'AI tools research since 2022' },
+                    { label:'Reviews',    val:'200+ AI tools independently evaluated' },
+                    { label:'Background', val:'13+ years in enterprise tech & product testing' },
+                  ].map(({ label, val }) => (
+                    <div key={label} style={{ display:'flex', gap:4, fontSize:12, color:C.mut, lineHeight:1.6, minWidth:200 }}>
+                      <dt style={{ fontWeight:700, color:C.txt, flexShrink:0 }}>{label}:</dt>
+                      <dd style={{ margin:0 }}>{val}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <div style={{ fontSize:13.5, color:C.mut, lineHeight:1.65, marginBottom:10 }}>
+                  I read every email. If a review here helped you choose a tool — or if you think I got something wrong — I genuinely want to hear it.
+                </div>
+                <a href="mailto:hello@ainexustools.online"
+                  style={{ display:'inline-flex', alignItems:'center', gap:6,
+                    fontSize:12.5, fontWeight:600, color:C.a1, textDecoration:'none',
+                    padding:'6px 14px', borderRadius:8,
+                    background:C.a1card, border:`1px solid ${C.a1brd}` }}>
+                  <Mail size={13}/> hello@ainexustools.online
+                </a>
               </div>
-              {/* GEO: author credentials */}
-              <dl style={{ margin:'0 0 8px', display:'flex', flexWrap:'wrap' as const, gap:'2px 16px' }}>
-                {[
-                  { label:'Role',       val:'AI Automation & Performance Testing Leader, BOLD' },
-                  { label:'Expertise',  val:'AI tools research since 2022' },
-                  { label:'Reviews',    val:'200+ AI tools independently evaluated' },
-                  { label:'Background', val:'13+ years in enterprise tech & product testing' },
-                ].map(({ label, val }) => (
-                  <div key={label} style={{ display:'flex', gap:4, fontSize:12, color:C.mut, lineHeight:1.6, minWidth:200 }}>
-                    <dt style={{ fontWeight:700, color:C.txt, flexShrink:0 }}>{label}:</dt>
-                    <dd style={{ margin:0 }}>{val}</dd>
+            </div>
+          </div>
+        </div>
+      </DeferredSection>
+
+      {/* ── AI Tools Research Statistics ─────────────────────────────── */}
+      <DeferredSection minHeight={420}>
+        <div style={{ padding:'48px 24px 0', background:'var(--bg)' }}>
+          <div style={{ maxWidth:900, margin:'0 auto' }}>
+            <div className="scroll-reveal" style={{ marginBottom:20 }}>
+              <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:20, color:C.txt, margin:'0 0 6px', letterSpacing:'-0.025em' }}>
+                AI Tool Adoption — Key Statistics for 2026
+              </h2>
+              <p style={{ fontSize:13.5, color:C.mut, margin:'0 0 16px', lineHeight:1.65 }}>
+                Research-backed data on how AI tools are reshaping creator and freelancer workflows in 2025–2026.
+              </p>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, margin:'0 0 14px' }}>
+                Adoption &amp; Productivity Impact
+              </h3>
+              <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(250px,1fr))', gap:12 }}>
+                {([
+                  { stat:'77%',     claim:'of freelancers use at least one AI tool weekly in 2025', source:'Freelancer.com Annual Survey, 2025' },
+                  { stat:'2.5 hrs', claim:'average time saved per day by creators using AI writing tools', source:'G2 AI tools user survey, 2025' },
+                  { stat:'40–70%',  claim:'reduction in repetitive content tasks with AI assistance', source:'McKinsey Global Institute, 2024' },
+                  { stat:'$1.81T',  claim:'projected global AI software market by 2030', source:'Grand View Research, 2024' },
+                  { stat:'33',      claim:'AI tools independently reviewed on AI Nexus across 8 categories', source:'AI Nexus research database, 2026' },
+                  { stat:'200+',    claim:'hours of hands-on AI tool testing and workflow analysis by AI Nexus', source:'AI Nexus internal research, 2022–2026' },
+                ] as const).map(({ stat, claim, source }) => (
+                  <div key={stat+claim} style={{ background:C.surf, border:`1px solid var(--brd-xs)`, borderRadius:12, padding:'16px 18px' }}>
+                    <div style={{ fontSize:26, fontWeight:800, color:C.a1, lineHeight:1, marginBottom:6 }}>{stat}</div>
+                    <p style={{ fontSize:13, color:C.txt, lineHeight:1.55, margin:'0 0 6px', fontWeight:500 }}>{claim}</p>
+                    <cite style={{ fontSize:11, color:C.mut2, fontStyle:'italic', display:'block' }}>Source: {source}</cite>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </DeferredSection>
+
+      {/* ── How Tools Are Evaluated ────────────────────────────────── */}
+      <DeferredSection minHeight={560}>
+        <div style={{ background:C.surf, borderTop:`1px solid ${C.barBrd}`, borderBottom:`1px solid ${C.barBrd}`, padding:'52px 24px' }}>
+          <div style={{ maxWidth:900, margin:'0 auto' }}>
+            <div className="scroll-reveal" style={{ textAlign:'center', marginBottom:28 }}>
+              <span style={{ fontSize:11, fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase' as const, color:C.a1 }}>Our Process</span>
+              <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:24, color:C.txt, margin:'10px 0 8px', letterSpacing:'-0.025em' }}>
+                How AI Tools Are Evaluated
+              </h2>
+              <p style={{ fontSize:14.5, color:C.mut, maxWidth:520, margin:'0 auto 8px', lineHeight:1.7 }}>
+                Every AI tool on AI Nexus is independently evaluated across 6 criteria — no paid placements, no sponsored rankings.
+              </p>
+              <p style={{ fontSize:13, color:C.mut, maxWidth:540, margin:'0 auto', lineHeight:1.65 }}>
+                AI tools on AI Nexus are independently researched and evaluated based on publicly available information — no sponsored rankings, no paid placements.
+              </p>
+            </div>
+
+            <div className="scroll-reveal" style={{ marginBottom:20, padding:'16px 20px', background:C.bg, borderRadius:12, border:`1px solid var(--brd-xs)` }}>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:14, color:C.txt, margin:'0 0 12px' }}>
+                Evaluation Criteria — How Each Tool Is Scored
+              </h3>
+              <dl style={{ margin:0, display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(260px,1fr))', gap:'8px 20px' }}>
+                {([
+                  { label:'Features',      val:'Tested against official documentation, not marketing copy' },
+                  { label:'Pricing',       val:'Every free plan, trial limit, and paid tier verified live' },
+                  { label:'Workflow Fit',  val:'Does it save real time for creators or freelancers?' },
+                  { label:'Usability',     val:'Rated across beginner to advanced skill levels' },
+                  { label:'Community',     val:'Reddit, G2, and Trustpilot sentiment cross-referenced' },
+                  { label:'Docs Quality',  val:'Active changelogs and clear support docs score higher' },
+                ] as const).map(({ label, val }) => (
+                  <div key={label} style={{ display:'flex', gap:6 }}>
+                    <dt style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:12, color:C.a1, flexShrink:0 }}>{label}:</dt>
+                    <dd style={{ margin:0, fontSize:12, color:C.mut, lineHeight:1.55 }}>{val}</dd>
                   </div>
                 ))}
               </dl>
-              <div style={{ fontSize:13.5, color:C.mut, lineHeight:1.65, marginBottom:10 }}>
-                I read every email. If a review here helped you choose a tool — or if you think I got something wrong — I genuinely want to hear it.
-              </div>
-              <a href="mailto:hello@ainexustools.online"
-                style={{ display:'inline-flex', alignItems:'center', gap:6,
-                  fontSize:12.5, fontWeight:600, color:C.a1, textDecoration:'none',
-                  padding:'6px 14px', borderRadius:8,
-                  background:C.a1card, border:`1px solid ${C.a1brd}` }}>
-                <Mail size={13}/> hello@ainexustools.online
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ── AI Tools Research Statistics ─────────────────────────────── */}
-      <div style={{ padding:'48px 24px 0', background:'var(--bg)' }}>
-        <div style={{ maxWidth:900, margin:'0 auto' }}>
-          <div className="scroll-reveal" style={{ marginBottom:20 }}>
-            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:20, color:C.txt, margin:'0 0 6px', letterSpacing:'-0.025em' }}>
-              AI Tool Adoption — Key Statistics for 2026
-            </h2>
-            {/* AEO: concise answer paragraph after H2 */}
-            <p style={{ fontSize:13.5, color:C.mut, margin:'0 0 16px', lineHeight:1.65 }}>
-              Research-backed data on how AI tools are reshaping creator and freelancer workflows in 2025–2026.
-            </p>
-            <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, margin:'0 0 14px' }}>
-              Adoption &amp; Productivity Impact
-            </h3>
-            {/* GEO: 5+ statistics with source references */}
-            <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(250px,1fr))', gap:12 }}>
-              {([
-                { stat:'77%',     claim:'of freelancers use at least one AI tool weekly in 2025', source:'Freelancer.com Annual Survey, 2025' },
-                { stat:'2.5 hrs', claim:'average time saved per day by creators using AI writing tools', source:'G2 AI tools user survey, 2025' },
-                { stat:'40–70%',  claim:'reduction in repetitive content tasks with AI assistance', source:'McKinsey Global Institute, 2024' },
-                { stat:'$1.81T',  claim:'projected global AI software market by 2030', source:'Grand View Research, 2024' },
-                { stat:'33',      claim:'AI tools independently reviewed on AI Nexus across 8 categories', source:'AI Nexus research database, 2026' },
-                { stat:'200+',    claim:'hours of hands-on AI tool testing and workflow analysis by AI Nexus', source:'AI Nexus internal research, 2022–2026' },
-              ] as const).map(({ stat, claim, source }) => (
-                <div key={stat+claim} style={{ background:C.surf, border:`1px solid var(--brd-xs)`, borderRadius:12, padding:'16px 18px' }}>
-                  <div style={{ fontSize:26, fontWeight:800, color:C.a1, lineHeight:1, marginBottom:6 }}>{stat}</div>
-                  <p style={{ fontSize:13, color:C.txt, lineHeight:1.55, margin:'0 0 6px', fontWeight:500 }}>{claim}</p>
-                  {/* AEO: source attribution */}
-                  <cite style={{ fontSize:11, color:C.mut2, fontStyle:'italic', display:'block' }}>Source: {source}</cite>
-                </div>
-              ))}
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      {/* ── How Tools Are Evaluated ────────────────────────────────── */}
-      <div style={{ background:C.surf, borderTop:`1px solid ${C.barBrd}`, borderBottom:`1px solid ${C.barBrd}`, padding:'52px 24px' }}>
-        <div style={{ maxWidth:900, margin:'0 auto' }}>
-          <div className="scroll-reveal" style={{ textAlign:'center', marginBottom:28 }}>
-            <span style={{ fontSize:11, fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase' as const, color:C.a1 }}>Our Process</span>
-            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:24, color:C.txt, margin:'10px 0 8px', letterSpacing:'-0.025em' }}>
-              How AI Tools Are Evaluated
-            </h2>
-            {/* AEO: concise answer paragraph right after H2 */}
-            <p style={{ fontSize:14.5, color:C.mut, maxWidth:520, margin:'0 auto 8px', lineHeight:1.7 }}>
-              Every AI tool on AI Nexus is independently evaluated across 6 criteria — no paid placements, no sponsored rankings.
-            </p>
-            <p style={{ fontSize:13, color:C.mut, maxWidth:540, margin:'0 auto', lineHeight:1.65 }}>
-              AI tools on AI Nexus are independently researched and evaluated based on publicly available information — no sponsored rankings, no paid placements.
-            </p>
-          </div>
-
-          {/* GEO: H3 subheadings for each criterion + code-style labels (AEO: key-value patterns) */}
-          <div className="scroll-reveal" style={{ marginBottom:20, padding:'16px 20px', background:C.bg, borderRadius:12, border:`1px solid var(--brd-xs)` }}>
-            <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:14, color:C.txt, margin:'0 0 12px' }}>
-              Evaluation Criteria — How Each Tool Is Scored
-            </h3>
-            {/* AEO: key-value patterns for AI extraction */}
-            <dl style={{ margin:0, display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(260px,1fr))', gap:'8px 20px' }}>
-              {([
-                { label:'Features',      val:'Tested against official documentation, not marketing copy' },
-                { label:'Pricing',       val:'Every free plan, trial limit, and paid tier verified live' },
-                { label:'Workflow Fit',  val:'Does it save real time for creators or freelancers?' },
-                { label:'Usability',     val:'Rated across beginner to advanced skill levels' },
-                { label:'Community',     val:'Reddit, G2, and Trustpilot sentiment cross-referenced' },
-                { label:'Docs Quality',  val:'Active changelogs and clear support docs score higher' },
-              ] as const).map(({ label, val }) => (
-                <div key={label} style={{ display:'flex', gap:6 }}>
-                  <dt style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:12, color:C.a1, flexShrink:0 }}>{label}:</dt>
-                  <dd style={{ margin:0, fontSize:12, color:C.mut, lineHeight:1.55 }}>{val}</dd>
-                </div>
-              ))}
-            </dl>
-            {/* AEO: code block for technical scoring reference */}
-            <div style={{ marginTop:14, padding:'10px 14px', background:'var(--footer-bg)', borderRadius:8, border:`1px solid rgba(13,148,136,.2)`, overflowX:'auto' as const }}>
-              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:12, color:C.a1, margin:'0 0 6px' }}>
-                Scoring Formula (simplified)
-              </h3>
-              <pre style={{ margin:0, fontSize:11.5, color:'rgba(255,255,255,.75)', lineHeight:1.7, fontFamily:"'Courier New', monospace" }}>
-                <code>{`Category weights used in AI Nexus scoring:
+              <div style={{ marginTop:14, padding:'10px 14px', background:'var(--footer-bg)', borderRadius:8, border:`1px solid rgba(13,148,136,.2)`, overflowX:'auto' as const }}>
+                <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:12, color:C.a1, margin:'0 0 6px' }}>
+                  Scoring Formula (simplified)
+                </h3>
+                <pre style={{ margin:0, fontSize:11.5, color:'rgba(255,255,255,.75)', lineHeight:1.7, fontFamily:"'Courier New', monospace" }}>
+                  <code>{`Category weights used in AI Nexus scoring:
   features_accuracy  = 30%   // verified against official docs
   pricing_clarity    = 20%   // free plan, trial, paid tiers
   workflow_fit       = 25%   // real creator / freelancer use
   usability          = 15%   // beginner to advanced
   community_signal   = 10%   // G2, Trustpilot, Reddit avg`}</code>
-              </pre>
+                </pre>
+              </div>
+            </div>
+
+            <div className="scroll-reveal" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(200px,1fr))', gap:14, marginBottom:20 }}>
+              {([
+                { icon:'\uD83D\uDD0D', label:'Publicly Available Features', desc:'We evaluate based on what the tool actually offers, not marketing claims.' },
+                { icon:'\uD83D\uDCB0', label:'Pricing Transparency', desc:'Every free plan, trial and paid tier clearly documented.' },
+                { icon:'\u2699\uFE0F', label:'Workflow Relevance', desc:'Does the tool fit real creator, freelancer, or team workflows?' },
+                { icon:'\uD83C\uDFA8', label:'Usability & Accessibility', desc:'Evaluated for approachability across different skill levels.' },
+                { icon:'\uD83D\uDCAC', label:'Community Feedback', desc:'Creator forums, Reddit, and G2 sentiment analysis considered.' },
+                { icon:'\uD83D\uDCC4', label:'Documentation Quality', desc:'Well-documented tools with active changelogs rated higher.' },
+              ] as const).map(({ icon, label, desc }) => (
+                <div key={label} style={{ background:C.bg, border:`1px solid var(--brd-xs)`, borderRadius:12, padding:'18px 18px' }}>
+                  <div style={{ fontSize:20, marginBottom:10 }}>{icon}</div>
+                  <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13, color:C.txt, marginBottom:6, lineHeight:1.3, margin:'0 0 6px' }}>{label}</h3>
+                  <p style={{ fontSize:12, color:C.mut, lineHeight:1.65, margin:0 }}>{desc}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="scroll-reveal" style={{ marginBottom:20, padding:'16px 20px', background:`rgba(249,115,22,.05)`, borderRadius:12, border:`1px solid rgba(249,115,22,.18)` }}>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:'#c2410c', margin:'0 0 8px' }}>
+                A Balanced View on AI Tools
+              </h3>
+              <p style={{ fontSize:13, color:C.mut, lineHeight:1.7, margin:0 }}>
+                AI tools can dramatically accelerate writing, design, and coding workflows — cutting repetitive work by 40–70% in many cases (source: G2 user surveys, 2025). On the other hand, AI-generated output still requires human review for accuracy, brand voice, and factual claims. The best AI tools amplify human judgment — they don't replace it. AI Nexus evaluations reflect both the genuine time savings and the real limitations, so you can make an informed decision.
+              </p>
+            </div>
+
+            <div className="scroll-reveal" style={{ marginTop:22, padding:'18px 22px', background:C.a1card, border:`1px solid ${C.a1brd}`, borderRadius:12, textAlign:'center' as const }}>
+              <p style={{ fontSize:13.5, color:C.txt, margin:'0 0 12px', fontWeight:500, lineHeight:1.65 }}>
+                The goal is not to artificially rank tools — but to help users discover tools worth exploring.
+              </p>
+              <button onClick={() => navigate('/methodology')} style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:600, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8, padding:'8px 18px', background:C.surf, cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}>
+                Read Full Evaluation Process <ArrowRight size={13} />
+              </button>
             </div>
           </div>
-
-          <div className="scroll-reveal" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(200px,1fr))', gap:14, marginBottom:20 }}>
-            {([
-              { icon:'\uD83D\uDD0D', label:'Publicly Available Features', desc:'We evaluate based on what the tool actually offers, not marketing claims.' },
-              { icon:'\uD83D\uDCB0', label:'Pricing Transparency', desc:'Every free plan, trial and paid tier clearly documented.' },
-              { icon:'\u2699\uFE0F', label:'Workflow Relevance', desc:'Does the tool fit real creator, freelancer, or team workflows?' },
-              { icon:'\uD83C\uDFA8', label:'Usability & Accessibility', desc:'Evaluated for approachability across different skill levels.' },
-              { icon:'\uD83D\uDCAC', label:'Community Feedback', desc:'Creator forums, Reddit, and G2 sentiment analysis considered.' },
-              { icon:'\uD83D\uDCC4', label:'Documentation Quality', desc:'Well-documented tools with active changelogs rated higher.' },
-            ] as const).map(({ icon, label, desc }) => (
-              <div key={label} style={{ background:C.bg, border:`1px solid var(--brd-xs)`, borderRadius:12, padding:'18px 18px' }}>
-                <div style={{ fontSize:20, marginBottom:10 }}>{icon}</div>
-                {/* GEO: H3 subheadings inside criteria cards */}
-                <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13, color:C.txt, marginBottom:6, lineHeight:1.3, margin:'0 0 6px' }}>{label}</h3>
-                <p style={{ fontSize:12, color:C.mut, lineHeight:1.65, margin:0 }}>{desc}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* GEO: balanced perspective — "on the other hand" content */}
-          <div className="scroll-reveal" style={{ marginBottom:20, padding:'16px 20px', background:`rgba(249,115,22,.05)`, borderRadius:12, border:`1px solid rgba(249,115,22,.18)` }}>
-            <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:'#c2410c', margin:'0 0 8px' }}>
-              A Balanced View on AI Tools
-            </h3>
-            <p style={{ fontSize:13, color:C.mut, lineHeight:1.7, margin:0 }}>
-              AI tools can dramatically accelerate writing, design, and coding workflows — cutting repetitive work by 40–70% in many cases (source: G2 user surveys, 2025). On the other hand, AI-generated output still requires human review for accuracy, brand voice, and factual claims. The best AI tools amplify human judgment — they don't replace it. AI Nexus evaluations reflect both the genuine time savings and the real limitations, so you can make an informed decision.
-            </p>
-          </div>
-
-          <div className="scroll-reveal" style={{ marginTop:22, padding:'18px 22px', background:C.a1card, border:`1px solid ${C.a1brd}`, borderRadius:12, textAlign:'center' as const }}>
-            <p style={{ fontSize:13.5, color:C.txt, margin:'0 0 12px', fontWeight:500, lineHeight:1.65 }}>
-              The goal is not to artificially rank tools — but to help users discover tools worth exploring.
-            </p>
-            <button onClick={() => navigate('/methodology')} style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:600, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8, padding:'8px 18px', background:C.surf, cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}>
-              Read Full Evaluation Process <ArrowRight size={13} />
-            </button>
-          </div>
         </div>
-      </div>
+      </DeferredSection>
 
       {/* Popular Comparisons */}
-      <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px 48px' }}>
-        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:8, flexWrap:'wrap' as const, gap:12 }}>
-          <div>
-            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19, color:C.txt, letterSpacing:'-0.025em', marginBottom:4 }}>
-              Popular Comparisons
-            </h2>
-            {/* AEO: concise answer paragraph */}
-            <p style={{ fontSize:13, color:C.mut, margin:'0 0 4px', lineHeight:1.55 }}>
-              Can't decide between two tools? These side-by-side breakdowns cut through the noise with honest, data-driven verdicts.
-            </p>
-          </div>
-          <button
-            onClick={goCompare}
-            style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:600, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8, padding:'7px 14px', background:C.a1card, cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}
-          >
-            View all {COMPARE_ARTICLES_META.length} comparisons <ArrowRight size={13} />
-          </button>
-        </div>
-        <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, margin:'0 0 16px' }}>
-          Writing, Audio &amp; Productivity Tool Showdowns
-        </h3>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(280px, 1fr))', gap:14 }}>
-          {COMPARE_ARTICLES_META.slice(0, 5).map((article, i) => (
-            <div
-              key={article.slug}
-              onClick={() => navigate(`/compare/${article.slug}`)}
-              style={{ background:C.surf, border:`1.5px solid var(--brd-xs)`, borderRadius:14, padding:'16px 18px', cursor:'pointer', transition:'box-shadow .15s, transform .15s' }}
-              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 20px ${C.a1}22`; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; }}
-            >
-              <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:8 }}>
-                <div style={{ width:28, height:28, borderRadius:8, background:C.a1card, border:`1px solid ${C.a1brd}`, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                  <Scale size={13} color={C.a1} />
-                </div>
-                <span style={{ fontSize:10, fontWeight:700, color:C.a1, letterSpacing:'0.07em', textTransform:'uppercase' as const }}>Compare</span>
-              </div>
-              <div style={{ fontSize:14, fontWeight:700, color:C.txt, lineHeight:1.4, marginBottom:6 }}>
-                {(article.keyword || article.title || 'AI Tool Comparison').split(' vs ').join(' vs ')}
-              </div>
-              <div style={{ fontSize:12, color:C.mut, lineHeight:1.5 }}>
-                {(article.metaDescription || article.title || 'Read this side-by-side comparison.').slice(0, 90)}…
-              </div>
-              <div style={{ display:'flex', alignItems:'center', gap:4, marginTop:10, fontSize:12, fontWeight:600, color:C.a1 }}>
-                Read comparison <ArrowRight size={11} />
-              </div>
+      <DeferredSection minHeight={420}>
+        <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px 48px' }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:8, flexWrap:'wrap' as const, gap:12 }}>
+            <div>
+              <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19, color:C.txt, letterSpacing:'-0.025em', marginBottom:4 }}>
+                Popular Comparisons
+              </h2>
+              <p style={{ fontSize:13, color:C.mut, margin:'0 0 4px', lineHeight:1.55 }}>
+                Can't decide between two tools? These side-by-side breakdowns cut through the noise with honest, data-driven verdicts.
+              </p>
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* ── Start Here ──────────────────────────────────────────────────── */}
-      <div style={{ padding:'52px 24px', borderBottom:`1px solid ${C.barBrd}` }}>
-        <div style={{ maxWidth:1100, margin:'0 auto' }}>
-          <div className="scroll-reveal" style={{ marginBottom:16 }}>
-            <span style={{ fontSize:11, fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase' as const, color:C.a2 }}>New to AI Tools?</span>
-            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:24, color:C.txt, margin:'10px 0 6px', letterSpacing:'-0.025em' }}>
-              Start Here
-            </h2>
-            {/* AEO: concise answer paragraph after H2 */}
-            <p style={{ fontSize:14, color:C.mut, margin:'0 0 6px', lineHeight:1.65 }}>The most useful starting points — no overwhelm, just the essentials for creators and freelancers new to AI tools.</p>
-            <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, margin:'6px 0 16px' }}>
-              Guides by Use Case — Writing, Coding, Freelancing &amp; More
-            </h3>
+            <button
+              onClick={goCompare}
+              style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:600, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8, padding:'7px 14px', background:C.a1card, cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}
+            >
+              View all {COMPARE_ARTICLES_META.length} comparisons <ArrowRight size={13} />
+            </button>
           </div>
-          <div className="scroll-reveal" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(230px,1fr))', gap:12 }}>
-            {([
-              { icon:'🆓', label:'Best Free AI Tools',      desc:'Top tools you can use right now without paying',         path:'/best-free-ai-tools' },
-              { icon:'✍️', label:'Best AI Writing Tools',    desc:'For bloggers, copywriters and content creators',        path:'/best-ai-writing-tools' },
-              { icon:'💼', label:'AI Tools for Freelancers', desc:'Tools that save time and improve client work',          path:'/best-ai-tools-for-freelancers' },
-              { icon:'🤖', label:'ChatGPT vs Claude',        desc:'Which AI assistant suits your workflow best?',          path:'/blog/chatgpt-alternatives-free-2026' },
-              { icon:'💻', label:'Best AI Coding Tools',     desc:'Copilot, Replit, Cursor — compared honestly',          path:'/best-ai-coding-tools' },
-              { icon:'🔬', label:'How Tools Are Evaluated',  desc:'Our research criteria and evaluation methodology',     path:'/methodology' },
-            ] as const).map(({ icon, label, desc, path }) => (
-              <button key={path}
-                onClick={() => navigate(path)}
-                style={{ display:'flex', alignItems:'flex-start', gap:13, padding:'15px 17px',
-                  background:C.surf, border:`1.5px solid var(--brd-xs)`, borderRadius:12,
-                  cursor:'pointer', textAlign:'left' as const,
-                  fontFamily:"'Inter', system-ui, sans-serif", transition:'border-color .15s, box-shadow .15s' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = C.a1brd; (e.currentTarget as HTMLButtonElement).style.boxShadow = `0 4px 16px ${C.a1}14`; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--brd-xs)'; (e.currentTarget as HTMLButtonElement).style.boxShadow = 'none'; }}>
-                <span style={{ fontSize:22, flexShrink:0, marginTop:1 }}>{icon}</span>
-                <div>
-                  <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, marginBottom:4 }}>{label}</div>
-                  <div style={{ fontSize:12, color:C.mut, lineHeight:1.55 }}>{desc}</div>
+          <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, margin:'0 0 16px' }}>
+            Writing, Audio &amp; Productivity Tool Showdowns
+          </h3>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(280px, 1fr))', gap:14 }}>
+            {COMPARE_ARTICLES_META.slice(0, 5).map((article, i) => (
+              <div
+                key={article.slug}
+                onClick={() => navigate(`/compare/${article.slug}`)}
+                style={{ background:C.surf, border:`1.5px solid var(--brd-xs)`, borderRadius:14, padding:'16px 18px', cursor:'pointer', transition:'box-shadow .15s, transform .15s' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 20px ${C.a1}22`; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; }}
+              >
+                <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:8 }}>
+                  <div style={{ width:28, height:28, borderRadius:8, background:C.a1card, border:`1px solid ${C.a1brd}`, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+                    <Scale size={13} color={C.a1} />
+                  </div>
+                  <span style={{ fontSize:10, fontWeight:700, color:C.a1, letterSpacing:'0.07em', textTransform:'uppercase' as const }}>Compare</span>
                 </div>
-              </button>
+                <div style={{ fontSize:14, fontWeight:700, color:C.txt, lineHeight:1.4, marginBottom:6 }}>
+                  {(article.keyword || article.title || 'AI Tool Comparison').split(' vs ').join(' vs ')}
+                </div>
+                <div style={{ fontSize:12, color:C.mut, lineHeight:1.5 }}>
+                  {(article.metaDescription || article.title || 'Read this side-by-side comparison.').slice(0, 90)}…
+                </div>
+                <div style={{ display:'flex', alignItems:'center', gap:4, marginTop:10, fontSize:12, fontWeight:600, color:C.a1 }}>
+                  Read comparison <ArrowRight size={11} />
+                </div>
+              </div>
             ))}
           </div>
         </div>
-      </div>
+      </DeferredSection>
+
+      {/* ── Start Here ──────────────────────────────────────────────────── */}
+      <DeferredSection minHeight={420}>
+        <div style={{ padding:'52px 24px', borderBottom:`1px solid ${C.barBrd}` }}>
+          <div style={{ maxWidth:1100, margin:'0 auto' }}>
+            <div className="scroll-reveal" style={{ marginBottom:16 }}>
+              <span style={{ fontSize:11, fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase' as const, color:C.a2 }}>New to AI Tools?</span>
+              <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:24, color:C.txt, margin:'10px 0 6px', letterSpacing:'-0.025em' }}>
+                Start Here
+              </h2>
+              <p style={{ fontSize:14, color:C.mut, margin:'0 0 6px', lineHeight:1.65 }}>The most useful starting points — no overwhelm, just the essentials for creators and freelancers new to AI tools.</p>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, margin:'6px 0 16px' }}>
+                Guides by Use Case — Writing, Coding, Freelancing &amp; More
+              </h3>
+            </div>
+            <div className="scroll-reveal" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(230px,1fr))', gap:12 }}>
+              {([
+                { icon:'🆓', label:'Best Free AI Tools',      desc:'Top tools you can use right now without paying',         path:'/best-free-ai-tools' },
+                { icon:'✍️', label:'Best AI Writing Tools',    desc:'For bloggers, copywriters and content creators',        path:'/best-ai-writing-tools' },
+                { icon:'💼', label:'AI Tools for Freelancers', desc:'Tools that save time and improve client work',          path:'/best-ai-tools-for-freelancers' },
+                { icon:'🤖', label:'ChatGPT vs Claude',        desc:'Which AI assistant suits your workflow best?',          path:'/blog/chatgpt-alternatives-free-2026' },
+                { icon:'💻', label:'Best AI Coding Tools',     desc:'Copilot, Replit, Cursor — compared honestly',          path:'/best-ai-coding-tools' },
+                { icon:'🔬', label:'How Tools Are Evaluated',  desc:'Our research criteria and evaluation methodology',     path:'/methodology' },
+              ] as const).map(({ icon, label, desc, path }) => (
+                <button key={path}
+                  onClick={() => navigate(path)}
+                  style={{ display:'flex', alignItems:'flex-start', gap:13, padding:'15px 17px',
+                    background:C.surf, border:`1.5px solid var(--brd-xs)`, borderRadius:12,
+                    cursor:'pointer', textAlign:'left' as const,
+                    fontFamily:"'Inter', system-ui, sans-serif", transition:'border-color .15s, box-shadow .15s' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = C.a1brd; (e.currentTarget as HTMLButtonElement).style.boxShadow = `0 4px 16px ${C.a1}14`; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--brd-xs)'; (e.currentTarget as HTMLButtonElement).style.boxShadow = 'none'; }}>
+                  <span style={{ fontSize:22, flexShrink:0, marginTop:1 }}>{icon}</span>
+                  <div>
+                    <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, marginBottom:4 }}>{label}</div>
+                    <div style={{ fontSize:12, color:C.mut, lineHeight:1.55 }}>{desc}</div>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </DeferredSection>
 
       {/* ── Newsletter ───────────────────────────────────────────────────── */}
-      <div style={{ padding:'52px 24px 0', textAlign:'center' as const }}>
-        <span style={{ fontSize:11, fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase' as const, color:C.a1 }}>Weekly Research Digest</span>
-        <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:22, color:C.txt, margin:'10px 0 10px', letterSpacing:'-0.025em' }}>
-          Get Only the AI Tools Worth Exploring.
-        </h2>
-        {/* AEO: concise answer paragraph after H2 */}
-        <p style={{ fontSize:14, color:C.mut, maxWidth:440, margin:'0 auto 20px', lineHeight:1.65 }}>
-          Weekly <strong style={{ color:C.txt }}>AI Nexus</strong> research digest: new AI tool reviews, pricing updates, workflow ideas, and curated discoveries — zero spam, unsubscribe any time.
-        </p>
-      </div>
-      <BeehiivForm variant="hero" />
+      <DeferredSection minHeight={560}>
+        <div style={{ padding:'52px 24px 0', textAlign:'center' as const }}>
+          <span style={{ fontSize:11, fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase' as const, color:C.a1 }}>Weekly Research Digest</span>
+          <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:22, color:C.txt, margin:'10px 0 10px', letterSpacing:'-0.025em' }}>
+            Get Only the AI Tools Worth Exploring.
+          </h2>
+          {/* AEO: concise answer paragraph after H2 */}
+          <p style={{ fontSize:14, color:C.mut, maxWidth:440, margin:'0 auto 20px', lineHeight:1.65 }}>
+            Weekly <strong style={{ color:C.txt }}>AI Nexus</strong> research digest: new AI tool reviews, pricing updates, workflow ideas, and curated discoveries — zero spam, unsubscribe any time.
+          </p>
+        </div>
+        <Suspense fallback={<div style={{ minHeight: 220 }} />}>
+          <BeehiivForm variant="hero" />
+        </Suspense>
 
-      <Footer/>
+        <Footer/>
+      </DeferredSection>
     </div>
   );
 }

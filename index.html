@@ -6,40 +6,18 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Preload Fraunces hero font — LCP element uses this; preload ensures browser
-         discovers it before CSS parse completes, eliminating FOIT/FOUT on H1 -->
-    <link rel="preload" href="/fonts/fraunces-900.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/fraunces-700.woff2" as="font" type="font/woff2" crossorigin />
+        <!-- Preload LCP resources only: hero font + hero image -->
+        <link rel="preload" href="/fonts/fraunces-800.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/og-tool-review.webp" as="image" type="image/webp" fetchpriority="high" />
 
     <!-- Fraunces self-hosted — eliminates Google Fonts DNS lookup for LCP improvement -->
     <style>
 @font-face {
   font-family: 'Fraunces';
   font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/fraunces-700.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Fraunces';
-  font-style: normal;
   font-weight: 800;
   font-display: swap;
   src: url('/fonts/fraunces-800.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url('/fonts/fraunces-900.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Fraunces';
-  font-style: italic;
-  font-weight: 800;
-  font-display: swap;
-  src: url('/fonts/fraunces-italic-800.woff2') format('woff2');
 }
 </style>
 
