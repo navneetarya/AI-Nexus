@@ -94,9 +94,10 @@ jobs:
             what-is-mcp-model-context-protocol-2026
           )
 
-          # Sync check — fails if blog/*.ts files were added/removed without
-          # updating BLOG_SLUGS above (excludes index.ts and types.ts).
-          ACTUAL_COUNT=$(find blog -maxdepth 1 -name "*.ts" ! -name "index.ts" ! -name "types.ts" | wc -l)
+          # Sync check — fails if blog post files were added/removed without
+          # updating BLOG_SLUGS above.
+          # Exclude non-post helper modules kept in blog/.
+          ACTUAL_COUNT=$(find blog -maxdepth 1 -name "*.ts" ! -name "index.ts" ! -name "types.ts" ! -name "loaders.ts" ! -name "metadata.ts" | wc -l)
           EXPECTED_COUNT=${#BLOG_SLUGS[@]}
           echo "ℹ️  blog/ has $ACTUAL_COUNT post files; BLOG_SLUGS lists $EXPECTED_COUNT slugs"
           if [ "$ACTUAL_COUNT" -ne "$EXPECTED_COUNT" ]; then
