@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, lazy, Suspense, useRef } from 'react';
+import React, { useState, useMemo, useEffect, lazy, Suspense } from 'react';
 import { SITE_CONFIG, TRENDING_SLUGS } from '../site-config';
 import { Category, FilterState, Tool } from '../types';
 import {
@@ -254,48 +254,15 @@ const NexusIcon = ({ size = 20 }: { size?: number }) => (
 
 interface HomePageProps { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
 
-function DeferredSection({
-  children,
-  minHeight = 220,
-  rootMargin = '420px 0px',
-}: {
-  children: React.ReactNode;
-  minHeight?: number;
-  rootMargin?: string;
-}) {
-  const [visible, setVisible] = useState(typeof window === 'undefined');
-  const mountRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    if (visible || !mountRef.current) return;
-
-    if (!('IntersectionObserver' in window)) {
-      setVisible(true);
-      return;
-    }
-
-    const obs = new IntersectionObserver(
-      entries => {
-        if (entries.some(entry => entry.isIntersecting)) {
-          setVisible(true);
-          obs.disconnect();
-        }
-      },
-      { rootMargin }
-    );
-    obs.observe(mountRef.current);
-
-    return () => obs.disconnect();
-  }, [visible, rootMargin]);
-
-  if (visible) return <>{children}</>;
-
-  return <div ref={mountRef} style={{ minHeight }} aria-hidden="true" />;
+function DeferredSection({ children }: { children: React.ReactNode }) {
+  // Keep sections rendering immediately to avoid visible vertical gaps.
+  return <>{children}</>;
 }
 
 // ── Main component ───────────────────────────────────────────────────────────
 export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   const [TOOLS, setTOOLS]        = useState<Tool[]>([]);
+  const [toolsLoaded, setToolsLoaded] = useState(false);
   const [filters, setFilters]     = useState<FilterState>({ search: '', category: 'All' as any });
   const [view, setView]           = useState<'home' | 'compare'>('home');
   // FIX: paginate the tool grid — render only the first batch on mount to
@@ -308,7 +275,12 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
     let mounted = true;
     const loadTools = () => {
       import('../constants').then(mod => {
-        if (mounted) setTOOLS(mod.TOOLS);
+        if (mounted) {
+          setTOOLS(mod.TOOLS);
+          setToolsLoaded(true);
+        }
+      }).catch(() => {
+        if (mounted) setToolsLoaded(true);
       });
     };
 
@@ -1064,7 +1036,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
         <p style={{ fontSize:11, color:C.mut2, marginBottom:20, fontWeight:600,
           letterSpacing:'0.08em', textTransform:'uppercase' as const }}>
-          {filtered.length} tool{filtered.length !== 1?'s':''}
+          {!toolsLoaded ? 'Loading tools…' : `${filtered.length} tool${filtered.length !== 1?'s':''}`}
           {(filters.category as string)!=='All' ? ` · ${filters.category}` : ''}
           {filters.search ? ` matching "${filters.search}"` : ''}
         </p>
@@ -1156,7 +1128,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           </div>
         )}
 
-        {filtered.length === 0 && (
+        {toolsLoaded && filtered.length === 0 && (
           <div style={{ textAlign:'center', padding:'80px 0' }}>
             <div style={{ display:'flex', justifyContent:'center', marginBottom:12 }}>
               <Search size={38} color={C.mut2} />
