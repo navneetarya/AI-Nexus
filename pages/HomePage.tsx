@@ -303,7 +303,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                   || t.category.toLowerCase().includes(q);
     const mc = (filters.category as string) === 'All' || t.category === filters.category;
     return ms && mc;
-  }), [filters]);
+  }), [TOOLS, filters]);
 
   // Reset pagination whenever filters change so users always see fresh results from top
   useEffect(() => {
