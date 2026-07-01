@@ -77,6 +77,7 @@ jobs:
             best-ai-agents-customer-service-2026
             best-ai-agents-for-small-business-2026 best-ai-chatbot-2026 best-ai-coding-agents-2026 best-ai-coding-tools-2026 best-ai-email-marketing-tools-2026 best-ai-headshot-tools-linkedin-2026
             best-ai-logo-makers-free-2026 best-ai-marketing-tools-2026 best-ai-meeting-tools-2026 best-ai-podcast-tools-2026
+            best-ai-presentation-tools-2026
             best-ai-tools-for-automation-engineers-2026 best-ai-tools-for-content-creators-free-2026 best-ai-tools-for-developers-2026
             best-ai-tools-for-freelancers-2026 best-ai-tools-for-freelancers-india-2026 best-ai-tools-for-social-media-2026
             best-ai-tools-for-startups-2026 best-ai-tools-for-youtube-creators-2026 best-ai-tools-for-youtubers-2026
@@ -165,12 +166,12 @@ jobs:
           # 3b. Sitemap URL count — catches silent drops (missing posts/tools/etc.)
           LOC_COUNT=$(grep -c "<loc>" dist/sitemap.xml)
           echo "ℹ️  sitemap.xml contains $LOC_COUNT <loc> entries"
-          EXPECTED_LOC_COUNT=148
+          EXPECTED_LOC_COUNT=149
           if [ "$LOC_COUNT" -ne "$EXPECTED_LOC_COUNT" ]; then
             echo "❌ Expected $EXPECTED_LOC_COUNT URLs in sitemap.xml, found $LOC_COUNT"
             echo "   Current breakdown: 1 home + 9 static + 1 freelancers landing + 3 specials (free/india/logos)"
-            echo "   + 8 categories + 1 blog index + 60 blog posts"
-            echo "   + 1 compare index + 28 compare articles (22 base + 6 new: 3 T7 + 3 India) + 32 tools + 4 additional routes = 147"
+            echo "   + 8 categories + 1 blog index + 62 blog posts"
+            echo "   + 1 compare index + 28 compare articles (22 base + 6 new: 3 T7 + 3 India) + 32 tools + 4 additional routes = 148"
             echo "   If you added new routes, update EXPECTED_LOC_COUNT in deploy.yml to match."
             exit 1
           fi

@@ -1288,6 +1288,7 @@ const CATEGORY_OG_MAP = {
 // resolveOgImage() checks this map first before falling through to category images.
 // To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
 const BLOG_OG_MAP = {
+  'best-ai-presentation-tools-2026':              `${SITE}/og-compare.webp`,
   'best-ai-video-generators-2026':                `${SITE}/og-blog-video.webp`,
   'best-ai-writing-tools-for-beginners-2026':    `${SITE}/og/blog/best-ai-writing-tools-for-beginners-2026.webp`,
   'best-ai-tools-for-freelancers-2026':          `${SITE}/og/blog/best-ai-tools-for-freelancers-2026.webp`,
@@ -3052,6 +3053,28 @@ const BLOG_POSTS = [
       { q: 'Is Kling AI better than Runway in 2026?', a: "Kling AI 3.0 wins on per-credit cost, multilingual native lip-sync (five languages), and a storyboard mode for multi-shot sequences — the stronger choice for budget-conscious creators publishing frequently. Runway Gen-4.5 wins on camera control precision, an actual editing workspace, and bundled access to Kling 3.0 Pro and Veo 3.1 inside one subscription. For pure cost-per-clip, Kling generally wins; for professional production workflows, Runway remains the stronger platform." },
     ],
   },
+  // ── Day 12 (Jun 30): best-ai-presentation-tools-2026 — Tome shutdown news hook ──
+  // Target keyword: "best ai presentation tools 2026"
+  // Affiliates: Gamma + Beautiful.ai + Canva AI (active) — NotebookLM has no program
+  {
+    slug: 'best-ai-presentation-tools-2026',
+    title: 'Best AI Presentation Tools 2026: Gamma vs Beautiful.ai vs Canva AI vs NotebookLM',
+    seoTitle: 'Best AI Presentation Tools 2026: Tested & Ranked',
+    metaDescription: 'Best AI presentation tools 2026 compared: Gamma, Beautiful.ai, Canva AI, NotebookLM. Tome shut down in 2025 — what to use instead, with verified pricing.',
+    datePublished: '2026-06-30',
+    dateModified: '2026-06-30',
+    readTimeMinutes: 11,
+    ogImage: 'https://ainexustools.online/og-compare.webp',
+    mentionedTools: ['gamma', 'beautiful-ai', 'canva-ai'],
+    faqs: [
+      { q: 'Is Tome still available in 2026?', a: 'No. Tome shut down its AI presentation product (Tome Slides) on April 30, 2025, after reaching roughly 20–25 million users but failing to convert that free usage into sustainable revenue — its annual recurring revenue stayed under $4 million despite a $300 million valuation. The founding team pivoted to build Lightfield, an AI-native CRM, using the same underlying technology. Separately, AngelList acquired just the "Tome" brand name for an unrelated legal-document summarization product — a confusing coincidence that has nothing to do with the original presentation tool. Any presentations not exported before the April 2025 shutdown were permanently deleted. If an article published after mid-2025 recommends Tome for presentations, treat it as outdated.' },
+      { q: 'What is the best free AI presentation tool in 2026?', a: 'NotebookLM (Google) is the strongest genuinely free option — there is no paid tier at all for its slide-generation feature, and because it builds presentations from documents you upload rather than from a prompt, the content is grounded in your actual material instead of AI-invented filler. Gamma\'s free plan is the best free option if you are starting from a blank page rather than existing documents — it gives 400 one-time AI credits (roughly 8–15 full presentations) before you hit a paywall, though every free Gamma deck carries a "Made with Gamma" watermark. Canva\'s free plan includes a usable slice of its Magic Design AI (200 credits/month) bundled with its much larger free template library. Beautiful.ai has no permanent free plan — only a 14-day trial that requires a credit card and auto-charges if you forget to cancel.' },
+      { q: 'Is Gamma or Beautiful.ai better for presentations?', a: 'It depends on what you are optimizing for. Gamma is the better choice for speed, design variety, and getting a usable first draft fast — type a prompt and receive a complete, visually polished deck (or web page, or document) in under a minute, with a card-based format that works equally well as a shareable web link. Beautiful.ai is the better choice when consistency matters more than speed — its Smart Slide system constrains every slide to a small library of professionally designed layouts, so a team of 20 people producing decks independently will all produce decks that look like they came from the same design system. The tradeoff: Gamma gives you more creative range but requires more editing to make export-ready; Beautiful.ai is more rigid but harder to make look unprofessional. For solo founders and freelancers, Gamma is the more practical pick. For sales and marketing teams that need brand consistency across many presenters, Beautiful.ai is worth the higher entry price.' },
+      { q: 'Can NotebookLM make a PowerPoint presentation?', a: 'NotebookLM\'s slide-generation feature launched in November 2025 with PDF as the primary export format; native PPTX (PowerPoint) export began rolling out starting February 2026 and should be available in most accounts by mid-2026, though Google has not published an exact completion date for the full rollout. Until you confirm PPTX export is live on your account, the safe assumption is PDF-first — usable for sharing and presenting directly, but requiring a manual rebuild if your final deliverable must specifically be an editable .pptx file. Check NotebookLM\'s export menu directly, since this is a feature still in active rollout.' },
+      { q: 'Is Canva good for AI presentations or just templates?', a: 'Canva AI\'s presentation generation (Magic Design) is genuinely AI-driven — it builds a structured deck from a single text prompt, not just a folder of pre-made templates — but it is a feature bolted onto a much broader design platform rather than a presentation-first product the way Gamma is. The practical result: Canva AI\'s slide-specific intelligence (narrative flow, content structuring, slide-to-slide pacing) is noticeably weaker than Gamma\'s, but if you are already a Canva user for social graphics, brand assets, or marketing materials, getting presentations "for free" inside a subscription you already pay for is a real advantage. Pick Canva if presentations are one of several design tasks you do weekly; pick Gamma if presentations specifically are the job.' },
+      { q: 'How much do AI presentation tools cost for a small team in India?', a: 'For a 3-person team, Gamma Plus across 3 seats runs roughly $24/month (~₹2,000/month) — the cheapest paid option with unlimited generation and no watermark. Canva Pro for 3 seats runs $45/month (~₹3,750/month) but bundles a full design suite beyond presentations. Beautiful.ai is the most expensive entry point for a team — there is no team discount below the $40/seat/month Team plan, so 3 seats costs $120/month (~₹10,000/month). All four tools bill in USD with no UPI support; Indian users need a forex-enabled card or an international prepaid card (Niyo, Scapia) to subscribe. NotebookLM remains the only fully free option regardless of team size, since Google does not currently charge for the slides feature at any tier.' },
+    ],
+  },
 ];
 
 // ── H4 Fix: Related links map — internal links between tool pages and blog/compare pages ──
@@ -3256,6 +3279,14 @@ const RELATED_LINKS = {
 // ── Task 5/6 Fix: Related links map for blog posts — links pillar posts to their
 // satellite/cluster posts (and vice versa) for internal authority distribution.
 const BLOG_RELATED_LINKS = {
+  // ── Day 12: Best AI Presentation Tools 2026 — links to design/marketing cluster ──
+  'best-ai-presentation-tools-2026': [
+    ['/compare/gamma-vs-beautiful-ai/', 'Gamma vs Beautiful.ai — Full Comparison'],
+    ['/best-ai-design-tools/', 'Best AI Design Tools — Category'],
+    ['/blog/best-ai-marketing-tools-2026/', 'Best AI Marketing Tools 2026'],
+    ['/blog/ai-tools-for-teachers-2026/', 'Best AI Tools for Teachers 2026'],
+  ],
+
   // ── Day 11: Best AI Video Generators 2026 — links to existing video cluster ──
   'best-ai-video-generators-2026': [
     ['/blog/best-invideo-alternatives-2026/', 'Best InVideo Alternatives 2026'],
@@ -3437,6 +3468,10 @@ const BLOG_RELATED_LINKS = {
   'taskade-vs-notion-vs-asana-2026': [
     ['/blog/ai-tools-for-solopreneurs-2026/', 'AI for Solopreneurs: The Complete Tool Stack'],
     ['/blog/best-ai-tools-for-freelancers-2026/', 'Best AI Tools for Freelancers 2026'],
+  ],
+  // Back-link: ai-tools-for-teachers → presentation tools post (Day 12 back-link)
+  'ai-tools-for-teachers-2026': [
+    ['/blog/best-ai-presentation-tools-2026/', 'Best AI Presentation Tools 2026'],
   ],
 };
 

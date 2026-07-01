@@ -144,8 +144,14 @@ import post60 from './ai-tools-for-solopreneurs-2026';
 // Affiliates: none — Runway/Veo/Kling/Pika/Luma all linked direct, no confirmed program
 // Links: connects to /blog/best-invideo-alternatives-2026/, /blog/best-ai-tools-for-youtube-creators-2026/, /best-ai-video-tools
 import post61 from './best-ai-video-generators-2026';
+// ── Day 12 · Jun 30: Best AI Presentation Tools 2026 — Gamma vs Beautiful.ai vs Canva AI vs NotebookLM ──
+// Target keyword: "best ai presentation tools 2026" — Tome shutdown (Apr 2025) news hook
+// Affiliates: Gamma + Beautiful.ai + Canva AI (all active) — NotebookLM has no program
+// Links: connects to /compare/gamma-vs-beautiful-ai/, /best-ai-design-tools/, /blog/best-ai-marketing-tools-2026/
+import post62 from './best-ai-presentation-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post62, // Day 12 — Best AI Presentation Tools 2026 — Tome shutdown news hook — pinned first for freshness
   post61, // Day 11 — Best AI Video Generators 2026 — new VIDEO-GENERATION sub-niche, trending (Sora shutdown) — pinned first for freshness
   post60, // Day 10 — AI for Solopreneurs — Complete Tool Stack, 2,400/mo, KD 11 — pinned first for freshness
   post59, // Day 9 — Best AI Coding Agents 2026 — Coding Pillar, 4,400/mo, KD 20 — pinned first for freshness
