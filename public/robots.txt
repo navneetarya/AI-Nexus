@@ -77,7 +77,8 @@ Allow: /
 Sitemap: https://ainexustools.online/sitemap.xml
 
 # ── AI crawler discovery index ────────────────────────────────────────────────
-# Machine-readable index for LLM and answer-engine crawlers.
-# Not a robots standard directive, but widely used as a crawl hint.
-# Keep this URL in sync with generated output from scripts/prerender.mjs.
-llms: https://ainexustools.online/llms.txt
+# Machine-readable index for LLM and answer-engine crawlers: https://ainexustools.online/llms.txt
+# Not a robots.txt directive — "llms:" has no standard meaning here, so it's kept as a
+# comment to avoid a parser error. Crawlers that support llms.txt discovery check
+# /llms.txt directly at the site root; they don't rely on robots.txt to find it.
+# Keep the URL above in sync with generated output from scripts/prerender.mjs.
