@@ -1323,10 +1323,10 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 <span style={{ fontSize:10, fontWeight:700, color:C.a1, letterSpacing:'0.07em', textTransform:'uppercase' as const }}>Compare</span>
               </div>
               <div style={{ fontSize:14, fontWeight:700, color:C.txt, lineHeight:1.4, marginBottom:6 }}>
-                {article.keyword.split(' vs ').join(' vs ')}
+                {(article.keyword || article.title || 'AI Tool Comparison').split(' vs ').join(' vs ')}
               </div>
               <div style={{ fontSize:12, color:C.mut, lineHeight:1.5 }}>
-                {article.quickAnswer.slice(0, 90)}…
+                {(article.metaDescription || article.title || 'Read this side-by-side comparison.').slice(0, 90)}…
               </div>
               <div style={{ display:'flex', alignItems:'center', gap:4, marginTop:10, fontSize:12, fontWeight:600, color:C.a1 }}>
                 Read comparison <ArrowRight size={11} />
