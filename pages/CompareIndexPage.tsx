@@ -1,7 +1,7 @@
 import React from 'react';
 import { Scale } from 'lucide-react';
 import { SharedNav } from './SharedNav';
-import { COMPARE_ARTICLES } from './compare-data';
+import { COMPARE_ARTICLES_META } from './compare-metadata';
 
 const C = {
   bg:     'var(--bg)',
@@ -51,7 +51,7 @@ export function CompareIndexPage({ navigate, isDark, toggleTheme }: CompareIndex
           </h1>
 
           <p style={{ fontSize: 16, color: C.mut, maxWidth: 540, margin: '0 auto', lineHeight: 1.65 }}>
-            {COMPARE_ARTICLES.length} side-by-side comparisons independently researched by Navneet Arya.
+            {COMPARE_ARTICLES_META.length} side-by-side comparisons independently researched by Navneet Arya.
             No sponsored opinions. No affiliate bias.
           </p>
         </div>
@@ -62,7 +62,7 @@ export function CompareIndexPage({ navigate, isDark, toggleTheme }: CompareIndex
           gridTemplateColumns: 'repeat(auto-fill, minmax(310px, 1fr))',
           gap: 20,
         }}>
-          {COMPARE_ARTICLES.map(article => (
+          {COMPARE_ARTICLES_META.map(article => (
             <article
               key={article.slug}
               onClick={() => navigate(`/compare/${article.slug}`)}
@@ -94,7 +94,7 @@ export function CompareIndexPage({ navigate, isDark, toggleTheme }: CompareIndex
                   {article.publishDate}
                 </span>
                 <span style={{ fontSize: 11, color: C.mut2, marginLeft: 'auto' }}>
-                  Winner: {article.winnerName}
+                  Winner: {article.winnerName || 'See full verdict'}
                 </span>
               </div>
 

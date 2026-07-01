@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Mail, Menu, X, Scale, Sun, Moon, ChevronDown, BookOpen } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
-import { COMPARE_ARTICLES } from './compare-data';
+import { COMPARE_ARTICLES_META } from './compare-metadata';
 
 const C = {
   bg:     'var(--bg)',
@@ -279,7 +279,7 @@ export function SharedNav({
                   <div style={{ fontSize: 10, fontWeight: 700, color: C.a1, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '4px 12px 6px', borderBottom: `1px solid ${C.a1brd}`, marginBottom: 4 }}>
                     All Comparisons
                   </div>
-                  {COMPARE_ARTICLES.map(a => (
+                  {COMPARE_ARTICLES_META.map(a => (
                     <button
                       key={a.slug}
                       className="compare-dropdown-item"

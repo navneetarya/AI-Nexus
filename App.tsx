@@ -2,6 +2,8 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { TOOLS, SITE_CONFIG } from './constants';
 import { HomePage } from './pages/HomePage';
 import { StickyNewsletterBar, ScrollNewsletterPopup } from './components/BeehiivForm';
+import type { BlogPost } from './blog/types';
+import type { CompareArticle } from './pages/compare-data';
 
 // C4: Declare gtag on window for TypeScript
 declare global {
@@ -11,8 +13,9 @@ declare global {
 }
 
 // ── Data-only imports (small, needed for routing on first render) ────────────
-import { COMPARE_ARTICLES } from './pages/compare-data';
-import { BLOG_POSTS } from './blog/index';
+import { COMPARE_META_BY_SLUG } from './pages/compare-metadata';
+import { BLOG_POST_META_BY_SLUG } from './blog/metadata';
+import { loadBlogPostBySlug } from './blog/loaders';
 
 // ── Lazy page components — each becomes its own JS chunk ────────────────────
 // These are only downloaded when the user actually navigates to that route,
@@ -81,6 +84,91 @@ function getInitialTheme(): 'light' | 'dark' | 'system' {
   const saved = localStorage.getItem('ainexus-theme');
   if (saved === 'dark' || saved === 'light') return saved;
   return 'light';
+}
+
+async function loadCompareArticleBySlug(slug: string): Promise<CompareArticle | null> {
+  const { COMPARE_ARTICLES } = await import('./pages/compare-data');
+  return COMPARE_ARTICLES.find(article => article.slug === slug) ?? null;
+}
+
+function LazyBlogPostRoute({
+  slug,
+  navigate,
+  isDark,
+  toggleTheme,
+}: {
+  slug: string;
+  navigate: (to: string) => void;
+  isDark: boolean;
+  toggleTheme: () => void;
+}) {
+  const [post, setPost] = useState<BlogPost | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let mounted = true;
+    setLoading(true);
+    setPost(null);
+    loadBlogPostBySlug(slug)
+      .then(result => {
+        if (mounted) setPost(result);
+      })
+      .finally(() => {
+        if (mounted) setLoading(false);
+      });
+    return () => {
+      mounted = false;
+    };
+  }, [slug]);
+
+  if (loading) return <PageLoader />;
+  if (!post) return <NotFoundPage navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />;
+
+  return (
+    <Suspense fallback={<PageLoader />}>
+      <BlogPostPage post={post} navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />
+    </Suspense>
+  );
+}
+
+function LazyCompareArticleRoute({
+  slug,
+  navigate,
+  isDark,
+  toggleTheme,
+}: {
+  slug: string;
+  navigate: (to: string) => void;
+  isDark: boolean;
+  toggleTheme: () => void;
+}) {
+  const [article, setArticle] = useState<CompareArticle | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let mounted = true;
+    setLoading(true);
+    setArticle(null);
+    loadCompareArticleBySlug(slug)
+      .then(result => {
+        if (mounted) setArticle(result);
+      })
+      .finally(() => {
+        if (mounted) setLoading(false);
+      });
+    return () => {
+      mounted = false;
+    };
+  }, [slug]);
+
+  if (loading) return <PageLoader />;
+  if (!article) return <NotFoundPage navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />;
+
+  return (
+    <Suspense fallback={<PageLoader />}>
+      <CompareArticlePage article={article} navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />
+    </Suspense>
+  );
 }
 
 function App() {
@@ -173,7 +261,7 @@ function App() {
     );
   }
   if (compareMatch) {
-    const article = COMPARE_ARTICLES.find(a => a.slug === compareMatch[1]);
+    const article = COMPARE_META_BY_SLUG[compareMatch[1]];
     if (article) {
       updateMeta(
         `${article.seoTitle ?? article.title} | AI Nexus`,
@@ -181,13 +269,11 @@ function App() {
         `${SITE_CONFIG.siteUrl}/compare/${article.slug}/`
       );
       return (
-        <Suspense fallback={<PageLoader />}>
-          <CompareArticlePage article={article} navigate={navigate} {...themeProps} />
-        </Suspense>
+        <LazyCompareArticleRoute slug={article.slug} navigate={navigate} {...themeProps} />
       );
     }
     // Fallback: if slug exists as a blog post, render that instead
-    const blogFallback = BLOG_POSTS.find(p => p.slug === compareMatch[1]);
+    const blogFallback = BLOG_POST_META_BY_SLUG[compareMatch[1]];
     if (blogFallback) {
       updateMeta(
         `${blogFallback.seoTitle ?? blogFallback.title} | AI Nexus`,
@@ -195,17 +281,13 @@ function App() {
         `${SITE_CONFIG.siteUrl}/blog/${blogFallback.slug}/`,
         blogFallback.ogImage
       );
-      return (
-        <Suspense fallback={<PageLoader />}>
-          <BlogPostPage post={blogFallback} navigate={navigate} {...themeProps} />
-        </Suspense>
-      );
+      return <LazyBlogPostRoute slug={blogFallback.slug} navigate={navigate} {...themeProps} />;
     }
   }
 
   const blogPostMatch = path.match(/^\/blog\/([^/]+)$/);
   if (blogPostMatch) {
-    const post = BLOG_POSTS.find(p => p.slug === blogPostMatch[1]);
+    const post = BLOG_POST_META_BY_SLUG[blogPostMatch[1]];
     if (post) {
       updateMeta(
         `${post.seoTitle ?? post.title} | AI Nexus`,
@@ -213,11 +295,7 @@ function App() {
         `${SITE_CONFIG.siteUrl}/blog/${post.slug}/`,
         post.ogImage
       );
-      return (
-        <Suspense fallback={<PageLoader />}>
-          <BlogPostPage post={post} navigate={navigate} {...themeProps} />
-        </Suspense>
-      );
+      return <LazyBlogPostRoute slug={post.slug} navigate={navigate} {...themeProps} />;
     }
   }
 
@@ -394,16 +472,16 @@ function App() {
   }
 
   if (path === '/best-ai-tools-for-freelancers') {
+    const postMeta = BLOG_POST_META_BY_SLUG['best-ai-tools-for-freelancers-2026'];
+    if (!postMeta) {
+      return <NotFoundPage navigate={navigate} {...themeProps} />;
+    }
     updateMeta(
       `Best AI Tools for Freelancers ${CURRENT_YEAR} — Independently Researched | AI Nexus`,
       `The best AI tools for freelancers in 2026 — writing, design, audio, and productivity tools reviewed and ranked for independent professionals.`,
       `${SITE_CONFIG.siteUrl}/best-ai-tools-for-freelancers/`
     );
-    return (
-      <Suspense fallback={<PageLoader />}>
-        <BlogPostPage post={BLOG_POSTS.find(p => p.slug === 'best-ai-tools-for-freelancers-2026')!} navigate={navigate} {...themeProps} />
-      </Suspense>
-    );
+    return <LazyBlogPostRoute slug={postMeta.slug} navigate={navigate} {...themeProps} />;
   }
 
   // ── Category landing pages ────────────────────────────────────────────────

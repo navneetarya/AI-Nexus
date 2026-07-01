@@ -1,7 +1,7 @@
 // pages/BlogPage.tsx
 import React from 'react';
 import { SharedNav } from './SharedNav';
-import { BLOG_POSTS, BlogPost } from '../blog/index';
+import { BLOG_POSTS_META, BlogPostMeta } from '../blog/metadata';
 import { SITE_CONFIG } from '../constants';
 
 interface BlogPageProps {
@@ -41,7 +41,7 @@ function CategoryPill({ label }: { label: string }) {
   );
 }
 
-const PostCard: React.FC<{ post: BlogPost; navigate: (to: string) => void }> = ({ post, navigate }) => {
+const PostCard: React.FC<{ post: BlogPostMeta; navigate: (to: string) => void }> = ({ post, navigate }) => {
   return (
     <article
       onClick={() => navigate(`/blog/${post.slug}`)}
@@ -153,10 +153,10 @@ export function BlogPage({ navigate, isDark, toggleTheme }: BlogPageProps) {
 
       {/* Post grid */}
       <div style={{ maxWidth: 840, margin: '0 auto', padding: '48px 20px 80px' }}>
-        {BLOG_POSTS.length > 0 && (
+        {BLOG_POSTS_META.length > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 }}>
             <p style={{ fontSize: 14, color: C.mut, margin: 0 }}>
-              <strong style={{ color: C.txt }}>{BLOG_POSTS.length}</strong> guides published
+              <strong style={{ color: C.txt }}>{BLOG_POSTS_META.length}</strong> guides published
             </p>
             <span style={{
               fontSize: 11, fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase' as const,
@@ -170,12 +170,12 @@ export function BlogPage({ navigate, isDark, toggleTheme }: BlogPageProps) {
           gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
           gap: 20,
         }}>
-          {BLOG_POSTS.map(post => (
+          {BLOG_POSTS_META.map(post => (
             <PostCard key={post.slug} post={post} navigate={navigate} />
           ))}
         </div>
 
-        {BLOG_POSTS.length === 0 && (
+        {BLOG_POSTS_META.length === 0 && (
           <p style={{ color: C.mut, textAlign: 'center', padding: '60px 0' }}>
             No posts yet — check back soon.
           </p>

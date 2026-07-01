@@ -1,0 +1,77 @@
+import type { BlogPost } from './types';
+
+type BlogPostModule = { default: BlogPost };
+
+const BLOG_POST_LOADERS: Record<string, () => Promise<BlogPostModule>> = {
+  'best-ai-presentation-tools-2026': () => import('./best-ai-presentation-tools-2026'),
+  'best-ai-video-generators-2026': () => import('./best-ai-video-generators-2026'),
+  'ai-tools-for-solopreneurs-2026': () => import('./ai-tools-for-solopreneurs-2026'),
+  'best-ai-coding-agents-2026': () => import('./best-ai-coding-agents-2026'),
+  'best-ai-agents-customer-service-2026': () => import('./best-ai-agents-customer-service-2026'),
+  'ai-tools-cost-roi-calculator-2026': () => import('./ai-tools-cost-roi-calculator-2026'),
+  'best-ai-recruitment-tools-2026': () => import('./best-ai-recruitment-tools-2026'),
+  'best-no-code-ai-automation-tools-2026': () => import('./best-no-code-ai-automation-tools-2026'),
+  'n8n-vs-make-vs-zapier-2026': () => import('./n8n-vs-make-vs-zapier-2026'),
+  'what-is-mcp-model-context-protocol-2026': () => import('./what-is-mcp-model-context-protocol-2026'),
+  'ai-agents-vs-ai-automation-difference-2026': () => import('./ai-agents-vs-ai-automation-difference-2026'),
+  'best-ai-agents-for-small-business-2026': () => import('./best-ai-agents-for-small-business-2026'),
+  'best-ai-meeting-tools-2026': () => import('./best-ai-meeting-tools-2026'),
+  'best-ai-tools-for-youtube-creators-2026': () => import('./best-ai-tools-for-youtube-creators-2026'),
+  'best-ai-email-marketing-tools-2026': () => import('./best-ai-email-marketing-tools-2026'),
+  'cursor-ai-review-2026': () => import('./cursor-ai-review-2026'),
+  'best-ai-headshot-tools-linkedin-2026': () => import('./best-ai-headshot-tools-linkedin-2026'),
+  'best-vibe-coding-tools-2026': () => import('./best-vibe-coding-tools-2026'),
+  'gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026': () => import('./gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026'),
+  'ai-ecosystem-growth-report-2026': () => import('./ai-ecosystem-growth-report-2026'),
+  'cheapest-ai-coding-tools-2026': () => import('./cheapest-ai-coding-tools-2026'),
+  'fastest-growing-ai-startups-2026': () => import('./fastest-growing-ai-startups-2026'),
+  'best-free-ai-tool-plans-2026': () => import('./best-free-ai-tool-plans-2026'),
+  'ai-api-pricing-comparison-2026': () => import('./ai-api-pricing-comparison-2026'),
+  'best-ai-tools-for-startups-2026': () => import('./best-ai-tools-for-startups-2026'),
+  'best-ai-tools-for-youtubers-2026': () => import('./best-ai-tools-for-youtubers-2026'),
+  'best-ai-tools-for-automation-engineers-2026': () => import('./best-ai-tools-for-automation-engineers-2026'),
+  'best-ai-tools-for-developers-2026': () => import('./best-ai-tools-for-developers-2026'),
+  'chatgpt-free-vs-claude-free-vs-gemini-free-2026': () => import('./chatgpt-free-vs-claude-free-vs-gemini-free-2026'),
+  'perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026': () => import('./perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026'),
+  'best-ai-writing-tools-for-beginners-2026': () => import('./best-ai-writing-tools-for-beginners-2026'),
+  'best-ai-tools-for-freelancers-2026': () => import('./best-ai-tools-for-freelancers-2026'),
+  'best-grammarly-alternatives': () => import('./best-grammarly-alternatives'),
+  'best-podcastle-alternatives': () => import('./best-podcastle-alternatives'),
+  'best-ai-tools-for-social-media-2026': () => import('./best-ai-tools-for-social-media-2026'),
+  'how-to-use-rytr-to-write-blog-posts': () => import('./how-to-use-rytr-to-write-blog-posts'),
+  'ai-tools-for-students-free-2026': () => import('./ai-tools-for-students-free-2026'),
+  'best-ai-podcast-tools-2026': () => import('./best-ai-podcast-tools-2026'),
+  'best-notion-ai-alternatives-2026': () => import('./best-notion-ai-alternatives-2026'),
+  'best-invideo-alternatives-2026': () => import('./best-invideo-alternatives-2026'),
+  'jasper-ai-alternatives': () => import('./jasper-ai-alternatives'),
+  'chatgpt-alternatives-free-2026': () => import('./chatgpt-alternatives-free-2026'),
+  'best-ai-coding-tools-2026': () => import('./best-ai-coding-tools-2026'),
+  'best-ai-logo-makers-free-2026': () => import('./best-ai-logo-makers-free-2026'),
+  'best-ai-marketing-tools-2026': () => import('./best-ai-marketing-tools-2026'),
+  'ai-tools-for-teachers-2026': () => import('./ai-tools-for-teachers-2026'),
+  'best-midjourney-alternatives-2026': () => import('./best-midjourney-alternatives-2026'),
+  'how-to-use-ai-for-content-creation-2026': () => import('./how-to-use-ai-for-content-creation-2026'),
+  'best-ai-tools-in-india-2026': () => import('./best-ai-tools-in-india-2026'),
+  'best-ai-tools-for-freelancers-india-2026': () => import('./best-ai-tools-for-freelancers-india-2026'),
+  'best-free-ai-tools-for-students-in-india-2026': () => import('./best-free-ai-tools-for-students-in-india-2026'),
+  'best-ai-tools-for-content-creators-free-2026': () => import('./best-ai-tools-for-content-creators-free-2026'),
+  'taskade-vs-notion-vs-asana-2026': () => import('./taskade-vs-notion-vs-asana-2026'),
+  'leonardo-vs-midjourney-2026': () => import('./leonardo-vs-midjourney-2026'),
+  'best-ai-writing-tools-2026': () => import('./best-ai-writing-tools-2026'),
+  'best-free-ai-writing-tools-2026': () => import('./best-free-ai-writing-tools-2026'),
+  'is-grammarly-premium-worth-it-2026': () => import('./is-grammarly-premium-worth-it-2026'),
+  'grok-4-vs-chatgpt-vs-claude-content-creators-2026': () => import('./grok-4-vs-chatgpt-vs-claude-content-creators-2026'),
+  'google-gemini-ai-review-2026': () => import('./google-gemini-ai-review-2026'),
+  'claude-code-vs-github-copilot-vs-replit-2026': () => import('./claude-code-vs-github-copilot-vs-replit-2026'),
+  'perplexity-ai-review-2026': () => import('./perplexity-ai-review-2026'),
+  'best-ai-chatbot-2026': () => import('./best-ai-chatbot-2026'),
+};
+
+export async function loadBlogPostBySlug(slug: string): Promise<BlogPost | null> {
+  const load = BLOG_POST_LOADERS[slug];
+  if (!load) return null;
+  const mod = await load();
+  return mod.default;
+}
+
+export const BLOG_POST_SLUGS = Object.keys(BLOG_POST_LOADERS);

@@ -8,8 +8,8 @@ import {
   PenLine, Image as ImageIcon, Video as VideoIcon,
   Mic, Megaphone, Palette, Code2, Scale, Sun, Moon, Calendar, Linkedin,
 } from 'lucide-react';
-import { COMPARE_ARTICLES } from './compare-data';
-import { BLOG_POSTS } from '../blog/index';
+import { COMPARE_ARTICLES_META } from './compare-metadata';
+import { BLOG_POSTS_META } from '../blog/metadata';
 import { SharedNav } from './SharedNav';
 import { BeehiivForm } from '../components/BeehiivForm';
 
@@ -409,7 +409,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           <div>
             <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
               color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>COMPARE</div>
-            {COMPARE_ARTICLES.map(a => (
+            {COMPARE_ARTICLES_META.map(a => (
               <button key={a.slug} onClick={() => navigate(`/compare/${a.slug}`)}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
                   fontFamily:"'Inter', system-ui, sans-serif", background:'none', border:'none',
@@ -511,7 +511,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 <BarChart2 size={10} color="#fff"/>
               </div>
               <span style={{ fontSize:11.5, fontWeight:600, color:C.a1 }}>
-                {COMPARE_ARTICLES.length} tool comparisons published
+                {COMPARE_ARTICLES_META.length} tool comparisons published
               </span>
             </div>
 
@@ -533,7 +533,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         <div style={{ maxWidth:1100, margin:'0 auto', padding:'44px 24px 96px' }}>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(320px,1fr))',
             gap:24 }}>
-            {COMPARE_ARTICLES.map((article, i) => (
+            {COMPARE_ARTICLES_META.map((article, i) => (
               <BlogCompareCard key={article.slug} article={article} navigate={navigate} idx={i}/>
             ))}
 
@@ -930,7 +930,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             Research-driven content on <strong>best AI tools for different use cases</strong>, <strong>pricing comparisons</strong>, and <strong>feature analysis</strong> to help you find the right AI software for your workflow.
           </p>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))', gap:12 }}>
-            {BLOG_POSTS.filter(p => p.category === 'Research').slice(0, 3).map(post => (
+            {BLOG_POSTS_META.filter(p => p.category === 'Research').slice(0, 3).map(post => (
               <div key={post.slug}
                 onClick={() => navigate(`/blog/${post.slug}`)}
                 style={{ padding:'16px', background:C.surf, border:`1px solid var(--brd-xs)`,
@@ -1012,7 +1012,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           const acCard   = isA2 ? C.a2card : C.a1card;
           const acBrd    = isA2 ? C.a2brd  : C.a1brd;
           const slugs    = CAT_COMPARES[cat] ?? [];
-          const articles = COMPARE_ARTICLES.filter(a => slugs.includes(a.slug));
+          const articles = COMPARE_ARTICLES_META.filter(a => slugs.includes(a.slug));
           if (articles.length === 0) return null;
           return (
             <div style={{
@@ -1301,14 +1301,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             onClick={goCompare}
             style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:600, color:C.a1, border:`1px solid ${C.a1brd}`, borderRadius:8, padding:'7px 14px', background:C.a1card, cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}
           >
-            View all {COMPARE_ARTICLES.length} comparisons <ArrowRight size={13} />
+            View all {COMPARE_ARTICLES_META.length} comparisons <ArrowRight size={13} />
           </button>
         </div>
         <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13.5, color:C.txt, margin:'0 0 16px' }}>
           Writing, Audio &amp; Productivity Tool Showdowns
         </h3>
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(280px, 1fr))', gap:14 }}>
-          {COMPARE_ARTICLES.slice(0, 5).map((article, i) => (
+          {COMPARE_ARTICLES_META.slice(0, 5).map((article, i) => (
             <div
               key={article.slug}
               onClick={() => navigate(`/compare/${article.slug}`)}

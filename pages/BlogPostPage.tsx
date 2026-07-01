@@ -2,7 +2,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 // Shield icon removed — T1.7 author strip now uses plain "About the reviewer →" anchor
 import { SharedNav } from './SharedNav';
-import { BlogPost } from '../blog/index';
+import type { BlogPost } from '../blog/types';
 import { SITE_CONFIG, TOOLS } from '../constants';
 import { BeehiivForm } from '../components/BeehiivForm';
 
