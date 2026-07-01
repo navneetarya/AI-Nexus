@@ -231,20 +231,21 @@ export function SharedNav({
             id="shared-desktop-nav"
             style={{ display: 'flex', alignItems: 'center', gap: 2 }}
           >
-            {/* All Tools */}
+            {/* Explore Tools (primary nav action) */}
             <button
               className="shared-nav-btn"
               onClick={handleAllTools}
               style={{
-                fontSize: 14, fontWeight: 500,
-                color: isHomeActive ? C.a1 : C.mut,
-                padding: '7px 13px', borderRadius: 8,
-                background: isHomeActive ? C.a1card : 'transparent',
+                fontSize: 13.5, fontWeight: 700,
+                color: '#fff',
+                padding: '8px 14px', borderRadius: 9,
+                background: `linear-gradient(135deg,${C.a1},#0b7a6e)`,
                 border: 'none', cursor: 'pointer',
                 fontFamily: "'Inter', system-ui, sans-serif",
+                boxShadow: '0 2px 8px rgba(13,148,136,.24)',
               }}
             >
-              All Tools
+              Explore Tools
             </button>
 
             {/* Compare — with dropdown */}
@@ -257,16 +258,14 @@ export function SharedNav({
                 }}
                 onMouseEnter={() => setCompareOpen(true)}
                 style={{
-                  fontSize: 14, fontWeight: 600,
-                  color: isCompareActive ? '#fff' : C.a1,
-                  padding: '7px 15px', borderRadius: 8,
-                  background: isCompareActive
-                    ? `linear-gradient(135deg,${C.a1},#0b7a6e)`
-                    : C.a1card,
-                  border: `1.5px solid ${C.a1brd}`,
+                  fontSize: 13.5, fontWeight: 600,
+                  color: isCompareActive ? C.a1 : C.mut,
+                  padding: '7px 13px', borderRadius: 8,
+                  background: isCompareActive ? C.a1card : 'transparent',
+                  border: `1px solid ${isCompareActive ? C.a1brd : 'transparent'}`,
                   cursor: 'pointer',
                   fontFamily: "'Inter', system-ui, sans-serif",
-                  boxShadow: isCompareActive ? '0 2px 8px rgba(13,148,136,.28)' : 'none',
+                    boxShadow: 'none',
                   display: 'flex', alignItems: 'center', gap: 6,
                 }}
               >
@@ -340,6 +339,7 @@ export function SharedNav({
                   border: 'none', cursor: 'pointer',
                   fontFamily: "'Inter', system-ui, sans-serif",
                   display: 'flex', alignItems: 'center', gap: 6,
+                  opacity: .92,
                 }}
               >
                 <BookOpen size={14} /> Best Lists <ChevronDown size={12} style={{ transition: 'transform .2s', transform: bestListsOpen ? 'rotate(180deg)' : 'none' }} />
@@ -403,25 +403,23 @@ export function SharedNav({
               How I Review
             </button>
 
-            {/* Trust pill — hidden on mobile via CSS */}
-            <span className="trust-pill-nav" title="All reviews are independently researched. No sponsored content.">
-              🔒 No sponsored reviews
-            </span>
-
             {/* Contact */}
-            <a
-              href={`mailto:${SITE_CONFIG.email}`}
+            <button
+              onClick={() => navigate('/contact')}
+              className="shared-nav-btn"
               style={{
-                display: 'flex', alignItems: 'center', gap: 6,
-                fontSize: 13, fontWeight: 600, color: '#fff',
-                padding: '8px 17px', borderRadius: 9,
-                background: `linear-gradient(135deg,${C.a1},#0b7a6e)`,
-                textDecoration: 'none', marginLeft: 6,
-                boxShadow: '0 2px 8px rgba(13,148,136,.28)',
+                fontSize: 13.5, fontWeight: 600,
+                color: C.a1,
+                padding: '7px 12px', borderRadius: 8,
+                background: C.a1card,
+                border: `1px solid ${C.a1brd}`,
+                cursor: 'pointer',
+                fontFamily: "'Inter', system-ui, sans-serif",
+                marginLeft: 2,
               }}
             >
-              <Mail size={13} /> Contact
-            </a>
+              Contact
+            </button>
 
             {/* Theme toggle */}
             <button

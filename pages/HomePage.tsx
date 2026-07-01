@@ -154,18 +154,18 @@ const ANIM_STYLE = `
 
 .tool-card-inner { transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease }
 .tool-card-wrap:hover .tool-card-inner {
-  transform:translateY(-3px);
+  transform:none;
   border-color:var(--card-brd) !important;
-  box-shadow:0 14px 40px var(--sh-md) !important;
+  box-shadow:0 6px 18px var(--sh-sm) !important;
 }
 .cat-pill  { transition:all .15s ease }
-.cat-pill:hover { transform:translateY(-1px) }
+.cat-pill:hover { transform:none }
 .nav-btn   { transition:all .15s ease }
 .nav-btn:hover  { background:rgba(13,148,136,.08)!important; color:#0D9488!important }
 .blog-card { transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease }
-.blog-card:hover { transform:translateY(-3px); box-shadow:0 16px 40px rgba(13,148,136,.10)!important; border-color:rgba(13,148,136,.28)!important }
+.blog-card:hover { transform:none; box-shadow:0 8px 20px rgba(13,148,136,.08)!important; border-color:rgba(13,148,136,.22)!important }
 .pick-card { transition:all .15s ease }
-.pick-card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(13,148,136,.10)!important }
+.pick-card:hover { transform:none; box-shadow:0 4px 12px rgba(13,148,136,.08)!important }
 .ticker-track { display:flex; animation:ticker 30s linear infinite }
 .ticker-track:hover { animation-play-state:paused }
 
@@ -391,17 +391,17 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
 
   // ── Footer ───────────────────────────────────────────────────────────────
   const Footer = () => (
-    <footer style={{ background:'var(--footer-bg)', padding:'48px 24px 26px' }}>
+    <footer style={{ background:'var(--footer-bg)', padding:'44px 24px 24px' }}>
       <div style={{ maxWidth:1200, margin:'0 auto' }}>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(170px,1fr))',
-          gap:32, marginBottom:40 }}>
+        <div className="footer-grid" style={{ display:'grid', gridTemplateColumns:'2fr 1fr 1fr 1.4fr',
+          gap:28, marginBottom:30 }}>
 
           {/* Brand */}
           <div>
             <div style={{ marginBottom:14 }}><Logo dark/></div>
             <p style={{ color:'rgba(255,255,255,.4)', fontSize:13, lineHeight:1.7,
-              marginBottom:16, maxWidth:200 }}>
-              Honest AI tool research &amp; comparisons. No sponsored reviews.
+              marginBottom:16, maxWidth:320 }}>
+              Calm, independent AI tool reviews for creators and freelancers. No sponsored rankings.
             </p>
             <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
               <a href={`mailto:${SITE_CONFIG.email}`}
@@ -417,59 +417,18 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </div>
           </div>
 
-          {/* Tools */}
+          {/* Explore */}
           <div>
             <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
-              color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>TOOLS</div>
-            {['Writing','Audio','Video','Image','Coding','Productivity','Marketing','Design'].map(cat => (
-              <button key={cat}
-                onClick={() => { setView('home'); setFilters({ search:'', category:cat as any });
-                  window.scrollTo(0,0); setTimeout(() => scrollToId('tools-section'), 80); }}
-                style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
-                  fontFamily:"'Inter', system-ui, sans-serif", background:'none', border:'none',
-                  cursor:'pointer', padding:'3px 0', textAlign:'left' as const, transition:'color .15s' }}
-                onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
-                onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
-                <span style={{ display:'inline-flex', alignItems:'center', gap:5 }}>
-                  <CatIcon cat={cat} size={11} color="rgba(255,255,255,.4)" /> {cat}
-                </span>
-              </button>
-            ))}
-          </div>
-
-          {/* Compare */}
-          <div>
-            <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
-              color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>COMPARE</div>
-            {COMPARE_ARTICLES_META.map(a => (
-              <button key={a.slug} onClick={() => navigate(`/compare/${a.slug}`)}
-                style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
-                  fontFamily:"'Inter', system-ui, sans-serif", background:'none', border:'none',
-                  cursor:'pointer', padding:'3px 0', textAlign:'left' as const,
-                  transition:'color .15s', lineHeight:1.5 }}
-                onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
-                onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
-                <span style={{ display:'inline-flex', alignItems:'center', gap:5 }}>
-                  <Scale size={11} color="rgba(255,255,255,.4)" /> {a.title.replace(/ \(\d{4}\).*/, '').replace(/ \(\d{4}\)/, '').slice(0, 30)}…
-                </span>
-              </button>
-            ))}
-          </div>
-
-          {/* Site */}
-          <div>
-            <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
-              color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>SITE</div>
+              color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>EXPLORE</div>
             {[
-              { label:'Home',                    fn: goHome },
-              { label:'About the reviewer',      fn: () => navigate('/about') },
-              { label:'How Tools Are Evaluated', fn: () => navigate('/methodology') },
-              { label:'Terms of Service',       fn: () => navigate('/terms') },
-              { label:'Affiliate disclosure',    fn: () => navigate('/disclosure') },
-              { label:'Compare tools',           fn: goCompare },
-              { label:'Glossary',                fn: () => navigate('/glossary') },
+              { label: 'Explore Tools', fn: () => { setView('home'); setFilters({ search:'', category:'All' as any }); setTimeout(() => scrollToId('tools-section'), 80); } },
+              { label: 'Compare Tools', fn: goCompare },
+              { label: 'Best Free AI Tools', fn: () => navigate('/best-free-ai-tools') },
+              { label: 'Best AI Writing Tools', fn: () => navigate('/best-ai-writing-tools') },
             ].map(({ label, fn }) => (
-              <button key={label} onClick={fn}
+              <button key={label}
+                onClick={fn}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
                   fontFamily:"'Inter', system-ui, sans-serif", background:'none', border:'none',
                   cursor:'pointer', padding:'3px 0', textAlign:'left' as const, transition:'color .15s' }}
@@ -480,17 +439,37 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             ))}
           </div>
 
-          {/* Guides */}
+          {/* Company */}
           <div>
             <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
-              color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>GUIDES</div>
+              color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>COMPANY</div>
             {[
-              { label:'Best Free AI Tools',            fn: () => navigate('/best-free-ai-tools') },
-              { label:'Best AI Writing Tools',         fn: () => navigate('/best-ai-writing-tools') },
-              { label:'Best AI Coding Tools',          fn: () => navigate('/best-ai-coding-tools') },
-              { label:'AI Tools for Freelancers',      fn: () => navigate('/best-ai-tools-for-freelancers') },
-              { label:'Best AI Tools in India',        fn: () => navigate('/best-ai-tools-india') },
-              { label:'AI Glossary',                   fn: () => navigate('/glossary') },
+              { label:'About', fn: () => navigate('/about') },
+              { label:'Methodology', fn: () => navigate('/methodology') },
+              { label:'Contact', fn: () => navigate('/contact') },
+              { label:'Blog', fn: () => navigate('/blog') },
+            ].map(({ label, fn }) => (
+              <button key={label} onClick={fn}
+                style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
+                  fontFamily:"'Inter', system-ui, sans-serif", background:'none', border:'none',
+                  cursor:'pointer', padding:'3px 0', textAlign:'left' as const,
+                  transition:'color .15s', lineHeight:1.5 }}
+                onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
+                onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
+                {label}
+              </button>
+            ))}
+          </div>
+
+          {/* Legal */}
+          <div>
+            <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:11,
+              color:'rgba(255,255,255,.35)', marginBottom:12, letterSpacing:'0.1em' }}>LEGAL</div>
+            {[
+              { label:'Privacy Policy',          fn: () => navigate('/privacy') },
+              { label:'Terms of Service',       fn: () => navigate('/terms') },
+              { label:'Affiliate Disclosure',    fn: () => navigate('/disclosure') },
+              { label:'Editorial Policy',        fn: () => navigate('/editorial-policy') },
             ].map(({ label, fn }) => (
               <button key={label} onClick={fn}
                 style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
@@ -619,31 +598,6 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
         <div style={{ position:'absolute', inset:0, pointerEvents:'none',
           background:`radial-gradient(ellipse 45% 45% at -5% 105%, rgba(249,115,22,.05) 0%, transparent 65%)` }}/>
 
-        {/* ── Mobile-only horizontal tool chip strip ─────────────────── */}
-        {/* Shown on screens ≤680px where hero-floats are hidden. Gives  */}
-        {/* mobile visitors a scrollable preview of featured tools.       */}
-        <div className="mobile-hero-chips" aria-label="Featured tools preview" style={{ marginBottom:20 }}>
-          {['grammarly','rytr','podcastle','taskade','ocoya','replit'].map(slug => {
-            const t = TOOLS.find(x => x.slug === slug);
-            if (!t) return null;
-            const isA2 = CAT_ACCENT[t.category] === 'a2';
-            const ac = isA2 ? C.a2 : C.a1;
-            return (
-              <button key={slug} className="mobile-chip"
-                onClick={() => navigate(`/tools/${slug}`)}
-                style={{ border:`1.5px solid ${ac}40`, background:`${ac}0e`,
-                  color:ac, cursor:'pointer' }}>
-                <div style={{ width:20, height:20, borderRadius:5, background:'#fff',
-                  display:'flex', alignItems:'center', justifyContent:'center',
-                  flexShrink:0, overflow:'hidden' }}>
-                  <ToolLogo slug={slug} size={15} name={t.name} color={ac} />
-                </div>
-                {t.name}
-              </button>
-            );
-          })}
-        </div>
-
         {/* Hero content */}
         <div style={{ maxWidth:600, margin:'0 auto', textAlign:'center', position:'relative', zIndex:2 }}>
 
@@ -666,17 +620,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             </span>
           </div>
 
-          {/* Trust badges */}
-          <div className="anim-fade-up d1" style={{ display:'flex', gap:8, justifyContent:'center', flexWrap:'wrap' as const, marginBottom:24 }}>
-            {['\u2713 Independent AI Research', '\u2713 No Sponsored Rankings'].map(badge => (
-              <span key={badge} style={{ display:'inline-flex', alignItems:'center', gap:5,
-                background:C.a1card, border:`1px solid ${C.a1brd}`,
-                borderRadius:100, padding:'5px 13px',
-                fontSize:12, fontWeight:600, color:C.a1,
-                fontFamily:"'Inter', system-ui, sans-serif" }}>
-                {badge}
-              </span>
-            ))}
+          <div className="anim-fade-up d1" style={{ marginBottom:16 }}>
+            <span style={{ display:'inline-flex', alignItems:'center', gap:6,
+              background:C.a1card, border:`1px solid ${C.a1brd}`,
+              borderRadius:100, padding:'6px 14px',
+              fontSize:12, fontWeight:700, color:C.a1,
+              fontFamily:"'Inter', system-ui, sans-serif" }}>
+              Independent research. No sponsored rankings.
+            </span>
           </div>
 
           {/* H1 */}
@@ -705,26 +656,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           <p className="anim-fade-up d3"
             style={{ fontSize:16.5, lineHeight:1.72, color:C.mut, margin:'0 0 8px',
               maxWidth:480, marginLeft:'auto', marginRight:'auto' }}>
-            <strong style={{ color:C.txt }}>AI Nexus</strong> provides independent reviews and comparisons of the best AI tools for 2026. Our research covers <strong>AI writing assistants</strong>, <strong>AI coding tools</strong>, <strong>image generators</strong>, <strong>video editors</strong>, <strong>audio tools</strong>, and more AI software. Every review is <strong>human-researched</strong>, <strong>workflow-tested</strong>, and <strong>free of sponsored placements</strong> — delivering honest AI tool analysis.
+            Compare the best AI tools for writing, coding, marketing, audio, and design with clear, independent reviews built for creators and freelancers.
           </p>
 
-          {/* Trust stats bar with sources and key-value patterns */}
-          <div className="anim-fade-up d3" style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 16, marginBottom: 24 }}>
-            {[
-              { n: '200+',  label: 'AI tools evaluated', detail: '**Source:** AI Nexus proprietary database, 2026' },
-              { n: '33',    label: 'in-depth reviews published', detail: '**Status:** Live on ainexustools.online' },
-              { n: '25+',   label: 'real workflows tested', detail: '**Coverage:** 8 tool categories' },
-              { n: '4 yrs', label: 'AI research experience', detail: '**Since:** 2022' },
-            ].map(({ n, label, detail }) => (
-              <div key={label} style={{ textAlign: 'center', minWidth: 160 }}>
-                <div style={{ fontSize: 22, fontWeight: 800, color: C.a1, lineHeight: 1.1 }}>{n}</div>
-                <div style={{ fontSize: 12, color: C.txt, fontWeight: 600, marginTop: 2 }}>{label}</div>
-                <div style={{ fontSize: 10, color: C.mut2, marginTop: 3, lineHeight: 1.4, fontFamily: "'Inter', system-ui, sans-serif" }}>
-                  <div style={{ fontWeight: 500 }}>
-                    {detail.replace(/\*\*|\*\*/g, '')}
-                  </div>
-                </div>
-              </div>
+          <div className="anim-fade-up d3" style={{ display:'flex', justifyContent:'center', gap:14, flexWrap:'wrap' as const, marginTop:14, marginBottom:22 }}>
+            {['200+ tools analyzed', '33 in-depth reviews', 'Updated weekly'].map(item => (
+              <span key={item} style={{ fontSize:11.5, color:C.mut2, fontWeight:600,
+                background:'var(--chip-bg)', border:'1px solid var(--brd-xs)',
+                padding:'5px 10px', borderRadius:100 }}>{item}</span>
             ))}
           </div>
 
@@ -801,7 +740,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       </div>
 
       {/* ── Trust strip ──────────────────────────────────────────────────── */}
-      <div style={{ background:`linear-gradient(90deg,#0b7a6e,${C.a1})`, padding:'11px 24px' }}>
+      <div style={{ background:C.surf, padding:'10px 24px', borderTop:`1px solid var(--brd-xs)`, borderBottom:`1px solid var(--brd-xs)` }}>
         <div style={{ maxWidth:1200, margin:'0 auto', display:'flex',
           justifyContent:'center', gap:'clamp(16px,3.5vw,44px)', flexWrap:'wrap' as const }}>
           {[
@@ -812,7 +751,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             { icon:<Clock size={12}/>,   text:'Updated Weekly' },
           ].map(({ icon, text }, i) => (
             <div key={i} style={{ display:'flex', alignItems:'center', gap:6,
-              color:'rgba(255,255,255,.9)', fontSize:12, fontWeight:500 }}>
+              color:C.mut, fontSize:11.5, fontWeight:600 }}>
               {icon} {text}
             </div>
           ))}
