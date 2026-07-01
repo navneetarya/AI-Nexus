@@ -1,9 +1,10 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { TOOLS, SITE_CONFIG } from './constants';
+import { SITE_CONFIG } from './site-config';
 import { HomePage } from './pages/HomePage';
 import { StickyNewsletterBar, ScrollNewsletterPopup } from './components/BeehiivForm';
 import type { BlogPost } from './blog/types';
 import type { CompareArticle } from './pages/compare-data';
+import type { Tool } from './types';
 
 // C4: Declare gtag on window for TypeScript
 declare global {
@@ -91,6 +92,11 @@ async function loadCompareArticleBySlug(slug: string): Promise<CompareArticle | 
   return COMPARE_ARTICLES.find(article => article.slug === slug) ?? null;
 }
 
+async function loadToolBySlug(slug: string): Promise<Tool | null> {
+  const { TOOLS } = await import('./constants');
+  return TOOLS.find(tool => tool.slug === slug) ?? null;
+}
+
 function LazyBlogPostRoute({
   slug,
   navigate,
@@ -171,6 +177,54 @@ function LazyCompareArticleRoute({
   );
 }
 
+function LazyToolRoute({
+  slug,
+  navigate,
+  isDark,
+  toggleTheme,
+  currentYear,
+}: {
+  slug: string;
+  navigate: (to: string) => void;
+  isDark: boolean;
+  toggleTheme: () => void;
+  currentYear: number;
+}) {
+  const [tool, setTool] = useState<Tool | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let mounted = true;
+    setLoading(true);
+    setTool(null);
+    loadToolBySlug(slug)
+      .then(result => {
+        if (mounted) setTool(result);
+      })
+      .finally(() => {
+        if (mounted) setLoading(false);
+      });
+    return () => {
+      mounted = false;
+    };
+  }, [slug]);
+
+  if (loading) return <PageLoader />;
+  if (!tool) return <NotFoundPage navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />;
+
+  updateMeta(
+    tool.titleTemplate ?? `${tool.name} Review ${currentYear} — Independently Researched | AI Nexus`,
+    `${tool.name} review 2026 — Researched by ${SITE_CONFIG.authorName}. ${tool.tagline}. Pricing, pros, cons, and who it's actually for.`,
+    `${SITE_CONFIG.siteUrl}/tools/${tool.slug}/`
+  );
+
+  return (
+    <Suspense fallback={<PageLoader />}>
+      <ToolPage tool={tool} navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />
+    </Suspense>
+  );
+}
+
 function App() {
   const normalizePath = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p);
 
@@ -232,19 +286,7 @@ function App() {
   // ── Route matching ────────────────────────────────────────────────────────
   const toolMatch = path.match(/^\/tools\/([^/]+)$/);
   if (toolMatch) {
-    const tool = TOOLS.find(t => t.slug === toolMatch[1]);
-    if (tool) {
-      updateMeta(
-        tool.titleTemplate ?? `${tool.name} Review ${CURRENT_YEAR} — Independently Researched | AI Nexus`,
-        `${tool.name} review 2026 — Researched by ${SITE_CONFIG.authorName}. ${tool.tagline}. Pricing, pros, cons, and who it's actually for.`,
-        `${SITE_CONFIG.siteUrl}/tools/${tool.slug}/`
-      );
-      return (
-        <Suspense fallback={<PageLoader />}>
-          <ToolPage tool={tool} navigate={navigate} {...themeProps} />
-        </Suspense>
-      );
-    }
+    return <LazyToolRoute slug={toolMatch[1]} navigate={navigate} {...themeProps} currentYear={CURRENT_YEAR} />;
   }
 
   const compareMatch = path.match(/^\/compare\/([^/]+)$/);

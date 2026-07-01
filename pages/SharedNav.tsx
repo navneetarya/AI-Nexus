@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Mail, Menu, X, Scale, Sun, Moon, ChevronDown, BookOpen } from 'lucide-react';
-import { SITE_CONFIG } from '../constants';
+import { SITE_CONFIG } from '../site-config';
 import { COMPARE_ARTICLES_META } from './compare-metadata';
 
 const C = {

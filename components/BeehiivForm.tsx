@@ -11,7 +11,7 @@
 
 import React, { useState } from 'react';
 import { Mail, CheckCircle, Loader2 } from 'lucide-react';
-import { SITE_CONFIG } from '../constants';
+import { SITE_CONFIG } from '../site-config';
 
 // 👇 Replace this with your Cloudflare Worker URL after deploying it
 const WORKER_URL = 'https://ai-nexus-leads.navneetarya1989.workers.dev';

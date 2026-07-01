@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { TOOLS, SITE_CONFIG, TRENDING_SLUGS } from '../constants';
+import { SITE_CONFIG, TRENDING_SLUGS } from '../site-config';
 import { Category, FilterState, Tool } from '../types';
 import {
   Search, ArrowRight, Mail, Star, Shield,
@@ -255,6 +255,7 @@ interface HomePageProps { navigate: (to: string) => void; isDark: boolean; toggl
 
 // ── Main component ───────────────────────────────────────────────────────────
 export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
+  const [TOOLS, setTOOLS]        = useState<Tool[]>([]);
   const [filters, setFilters]     = useState<FilterState>({ search: '', category: 'All' as any });
   const [view, setView]           = useState<'home' | 'compare'>('home');
   // FIX: paginate the tool grid — render only the first batch on mount to
@@ -262,6 +263,25 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   // Load more cards as the user scrolls down.
   const TOOLS_PER_PAGE = typeof window !== 'undefined' && window.innerWidth <= 680 ? 6 : 12;
   const [visibleCount, setVisibleCount] = useState(TOOLS_PER_PAGE);
+
+  useEffect(() => {
+    let mounted = true;
+    const loadTools = () => {
+      import('../constants').then(mod => {
+        if (mounted) setTOOLS(mod.TOOLS);
+      });
+    };
+
+    if ('requestIdleCallback' in window) {
+      (window as any).requestIdleCallback(loadTools, { timeout: 1200 });
+    } else {
+      setTimeout(loadTools, 700);
+    }
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   // ── Memos — MUST come before any useEffect that references them ─────────
   const filtered = useMemo(() => TOOLS.filter(t => {
@@ -661,7 +681,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               alt="AI Nexus — independent AI tools research dashboard showing 33 reviewed tools across writing, coding, audio, video, and image categories for 2026"
               width={480}
               height={252}
-              loading="lazy"
+              loading="eager"
               decoding="async"
               style={{ width:'100%', height:'auto', borderRadius:12, border:`1px solid var(--brd-xs)`, display:'block' }}
             />
