@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "multi-agent-ai-systems-explained-2026",
+    "title": "Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026",
+    "seoTitle": "Multi-Agent AI Systems Explained 2026: Architecture & Tools",
+    "metaDescription": "Multi-agent AI systems explained: architecture, the 6 frameworks that matter in 2026 (LangGraph, CrewAI, AutoGen & more), MCP vs A2A, and real use cases.",
+    "datePublished": "2026-07-02",
+    "dateModified": "2026-07-02",
+    "author": "Navneet Arya",
+    "category": "Coding",
+    "readTime": "12 min read",
+    "ogImage": "https://ainexustools.online/og-tool-review.webp",
+    "excerpt": "A multi-agent AI system splits a task across several specialized AI agents — each with its own role, tools, and reasoning loop — that coordinate through an orchestrator or a peer-to-peer protocol instead of one model trying to do everything. In 2026, LangGraph, CrewAI, and Anthropic's Claude Agent SDK are the frameworks doing most of the production work, connected through two protocols: MCP for tool access and A2A for agent-to-agent handoffs."
+  },
+  {
     "slug": "best-ai-presentation-tools-2026",
     "title": "Best AI Presentation Tools 2026: Gamma vs Beautiful.ai vs Canva AI vs NotebookLM",
     "seoTitle": "Best AI Presentation Tools 2026: Tested & Ranked",
