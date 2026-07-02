@@ -149,8 +149,13 @@ import post61 from './best-ai-video-generators-2026';
 // Affiliates: Gamma + Beautiful.ai + Canva AI (all active) — NotebookLM has no program
 // Links: connects to /compare/gamma-vs-beautiful-ai/, /best-ai-design-tools/, /blog/best-ai-marketing-tools-2026/
 import post62 from './best-ai-presentation-tools-2026';
+// ── Day 12 · Jul 2: Multi-Agent AI Systems Explained — Technical/GEO, 1,600/mo, KD 9 ──
+// Target keyword: "multi-agent ai systems" — no direct affiliate, optimized for AI search citation
+// Links: connects to /blog/what-is-mcp-model-context-protocol-2026/, /blog/ai-agents-vs-ai-automation-difference-2026/, /blog/best-ai-coding-agents-2026/
+import post63 from './multi-agent-ai-systems-explained-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post63, // Day 12 (Jul 2) — Multi-Agent AI Systems Explained — 1,600/mo, KD 9 — pinned first for freshness
   post62, // Day 12 — Best AI Presentation Tools 2026 — Tome shutdown news hook — pinned first for freshness
   post61, // Day 11 — Best AI Video Generators 2026 — new VIDEO-GENERATION sub-niche, trending (Sora shutdown) — pinned first for freshness
   post60, // Day 10 — AI for Solopreneurs — Complete Tool Stack, 2,400/mo, KD 11 — pinned first for freshness

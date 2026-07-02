@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-06-30
+# Updated: 2026-07-02
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -55,6 +55,7 @@
 
 ## Blog Posts
 
+- [Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026](https://ainexustools.online/blog/multi-agent-ai-systems-explained-2026): Multi-agent AI architecture patterns, MCP vs A2A protocols, and the 6 frameworks that matter in 2026 — LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Google ADK, Claude Agent SDK — with real production use cases.
 - [Best AI Writing Tools for Beginners 2026](https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026): Rytr, Grammarly, QuillBot, and Writesonic compared for complete beginners. Covers free plans, ease of use, and which tool wins for each use case.
 - [Best AI Tools for Freelancers 2026](https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026): AI tools across writing, design, productivity, social media and coding — independently researched for real freelance workflows.
 - [Best Grammarly Alternatives 2026](https://ainexustools.online/blog/best-grammarly-alternatives): QuillBot, Writesonic, Rytr, and ProWritingAid compared. Free alternatives and use-case breakdowns.
