@@ -1288,6 +1288,8 @@ const CATEGORY_OG_MAP = {
 // resolveOgImage() checks this map first before falling through to category images.
 // To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
 const BLOG_OG_MAP = {
+  // Day 13 (Jul 3): Relevance AI vs Lindy vs Gumloop — Fastest Win, 800/mo, KD 5
+  'relevance-ai-vs-lindy-vs-gumloop-2026':        `${SITE}/og-compare.webp`,
   // Day 12 (Jul 2): Multi-Agent AI Systems Explained — Technical/GEO, 1,600/mo, KD 9
   'multi-agent-ai-systems-explained-2026':        `${SITE}/og-tool-review.webp`,
   'best-ai-presentation-tools-2026':              `${SITE}/og-compare.webp`,
@@ -3077,6 +3079,27 @@ const BLOG_POSTS = [
       { q: 'How much do AI presentation tools cost for a small team in India?', a: 'For a 3-person team, Gamma Plus across 3 seats runs roughly $24/month (~₹2,000/month) — the cheapest paid option with unlimited generation and no watermark. Canva Pro for 3 seats runs $45/month (~₹3,750/month) but bundles a full design suite beyond presentations. Beautiful.ai is the most expensive entry point for a team — there is no team discount below the $40/seat/month Team plan, so 3 seats costs $120/month (~₹10,000/month). All four tools bill in USD with no UPI support; Indian users need a forex-enabled card or an international prepaid card (Niyo, Scapia) to subscribe. NotebookLM remains the only fully free option regardless of team size, since Google does not currently charge for the slides feature at any tier.' },
     ],
   },
+  // ── Day 13 (Jul 3): relevance-ai-vs-lindy-vs-gumloop-2026 — Fastest Win ──
+  // Target keyword: "relevance ai vs lindy vs gumloop" — 800/mo, KD 5
+  // Affiliates: Relevance AI (live) · Lindy (TODO) · Gumloop (application pending)
+  {
+    slug: 'relevance-ai-vs-lindy-vs-gumloop-2026',
+    title: 'Relevance AI vs Lindy vs Gumloop: AI Agent Builder Comparison',
+    seoTitle: 'Relevance AI vs Lindy vs Gumloop (2026): Which Wins?',
+    metaDescription: 'Relevance AI vs Lindy vs Gumloop compared on pricing, architecture, and fit. Verified July 2026 — includes Lindy\'s dropped free tier.',
+    datePublished: '2026-07-03',
+    dateModified: '2026-07-03',
+    readTimeMinutes: 11,
+    ogImage: 'https://ainexustools.online/og-compare.webp',
+    quickAnswer: 'Relevance AI (from $19/month, free tier available) wins for building a coordinated team of sales and ops agents. Lindy (from $49.99/month — no free tier, only a 7-day trial) is the fastest path to a working AI assistant for email and scheduling. Gumloop (free tier, $37/month Pro) wins for data-heavy, node-based AI pipelines. All three differ sharply on architecture, not just price.',
+    faqs: [
+      { q: 'Does Lindy have a free plan in 2026?', a: 'No. As of Lindy’s own pricing page (last updated May 2026), there is no free tier — only a 7-day free trial with full access to the Plus plan’s features. This is a change from earlier in Lindy’s history, when a limited free plan (roughly 400 credits/month) existed; several third-party review sites and roundups have not caught up to this and still list a free plan. After the trial, plans run Plus at $49.99/month, Pro at $99.99/month (3x the usage), and Max at $199.99/month (7x the usage), plus custom Enterprise pricing. Relevance AI and Gumloop both still offer genuine ongoing free tiers, which matters if you want to test an agent builder before committing a card.' },
+      { q: 'Which is cheaper: Relevance AI, Lindy, or Gumloop?', a: 'Gumloop and Relevance AI both start free and scale to a similar entry price — Gumloop Pro is $37/month for 20,000+ credits, Relevance AI Pro is $19/month (annual billing) for 2,500 Actions plus $20 in Vendor Credits. Lindy is the most expensive entry point by a wide margin at $49.99/month with no free tier at all. At the team tier the gap widens further: Relevance AI Team runs $234/month (annual) or $349/month (monthly) for 7,000 Actions, while Lindy Max tops out at $199.99/month per individual seat before Enterprise pricing kicks in. For pure cost-to-test, Relevance AI and Gumloop are the only two you can actually try without paying.' },
+      { q: 'Is Relevance AI or Gumloop better for building AI agents?', a: 'It depends on what the agent needs to do. Relevance AI is purpose-built for multi-agent coordination — its "Tools + Agents" framework lets several specialized agents (a researcher, a writer, a scheduler) share context and hand off work toward one goal, which suits sales and revenue-operations use cases like prospect research feeding into personalized outreach. Gumloop is a visual, node-based canvas built for data-heavy pipelines — scraping a source, running it through an AI node, and pushing structured output to a database or API — and is the stronger choice when the job looks more like ETL with AI steps than like a conversational assistant.' },
+      { q: 'Can I use Relevance AI, Lindy, and Gumloop together?', a: 'Yes, and it is a common pattern rather than an edge case. A workable stack: use Gumloop for the data-processing layer (scraping, enrichment, structuring unstructured content), feed the output into Relevance AI’s Tools + Agents framework for auditable, multi-step agent reasoning on that data, and use Lindy as the front-end assistant that handles the resulting inbox, scheduling, and follow-up work with a human still in the loop. None of these platforms is designed to replace the other two — they sit at different layers of an agent stack.' },
+      { q: 'Which AI agent builder is best for a small business in India?', a: 'None of the three bill in INR or accept UPI directly — all three charge in USD via international card, which typically adds 2–3.5% in foreign transaction fees on top of the listed price, plus 18% GST for GST-registered Indian businesses. On pure affordability to start, Relevance AI (free tier, then $19/month ≈ ₹1,580 + GST) and Gumloop (free tier, then $37/month ≈ ₹3,070 + GST) are more accessible than Lindy, which has no free tier and starts at $49.99/month ≈ ₹4,150 + GST. A forex-enabled card (most major Indian banks now offer one) or a prepaid international card from a fintech like Niyo or Scapia avoids repeated cross-border fees better than a standard debit card.' },
+    ],
+  },
   // ── Day 12 (Jul 2): multi-agent-ai-systems-explained-2026 — Technical/GEO ──
   // Target keyword: "multi-agent ai systems" — 1,600/mo, KD 9
   // No direct affiliate — optimized for AI search citation (Claude, Perplexity)
@@ -3302,6 +3325,15 @@ const RELATED_LINKS = {
 // ── Task 5/6 Fix: Related links map for blog posts — links pillar posts to their
 // satellite/cluster posts (and vice versa) for internal authority distribution.
 const BLOG_RELATED_LINKS = {
+  // ── Day 13 (Jul 3): Relevance AI vs Lindy vs Gumloop — links to agents/automation cluster ──
+  'relevance-ai-vs-lindy-vs-gumloop-2026': [
+    ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
+    ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
+    ['/blog/multi-agent-ai-systems-explained-2026/', 'Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026'],
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
+    ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: AI Automation Platform Comparison 2026'],
+  ],
+
   // ── Day 12 (Jul 2): Multi-Agent AI Systems Explained — links to agents/protocol cluster ──
   'multi-agent-ai-systems-explained-2026': [
     ['/blog/what-is-mcp-model-context-protocol-2026/', 'What is MCP (Model Context Protocol)?'],
@@ -3309,6 +3341,7 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-coding-agents-2026/', 'Best AI Coding Agents 2026: Devin vs Claude Code vs SWE-Agent'],
     ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: AI Automation Platform Comparison 2026'],
     ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
+    ['/blog/relevance-ai-vs-lindy-vs-gumloop-2026/', 'Relevance AI vs Lindy vs Gumloop: AI Agent Builder Comparison'],
     ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
   ],
 
@@ -3367,14 +3400,17 @@ const BLOG_RELATED_LINKS = {
   // ── Agents / Automation cluster ─────────────────────────────────────────────
   'ai-agents-vs-ai-automation-difference-2026': [
     ['/blog/multi-agent-ai-systems-explained-2026/', 'Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026'],
+    ['/blog/relevance-ai-vs-lindy-vs-gumloop-2026/', 'Relevance AI vs Lindy vs Gumloop: AI Agent Builder Comparison'],
     ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
     ['/blog/best-ai-tools-for-automation-engineers-2026/', 'Best AI Tools for Automation Engineers 2026'],
     ['/blog/what-is-mcp-model-context-protocol-2026/', 'What is MCP (Model Context Protocol)?'],
     ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: AI Automation Platform Comparison 2026'],
-    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
   ],
   'best-ai-agents-for-small-business-2026': [
+    ['/blog/best-ai-agents-customer-service-2026/', 'Best AI Agents for Customer Service 2026'],
     ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
+    ['/blog/relevance-ai-vs-lindy-vs-gumloop-2026/', 'Relevance AI vs Lindy vs Gumloop: AI Agent Builder Comparison'],
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
     ['/blog/best-ai-tools-for-startups-2026/', 'Best AI Tools for Startups 2026'],
   ],
   'best-ai-tools-for-automation-engineers-2026': [
@@ -3457,13 +3493,8 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
     ['/blog/ai-tools-cost-roi-calculator-2026/', 'AI Tools ROI Calculator 2026'],
   ],
-  // Back-link: best-ai-agents-for-small-business → customer service post
-  'best-ai-agents-for-small-business-2026': [
-    ['/blog/best-ai-agents-customer-service-2026/', 'Best AI Agents for Customer Service 2026'],
-    ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
-    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
-    ['/blog/best-ai-tools-for-startups-2026/', 'Best AI Tools for Startups 2026'],
-  ],
+  // Note: back-link to customer-service post merged into the single
+  // 'best-ai-agents-for-small-business-2026' entry above (duplicate-key bug fixed 2026-07-03).
   // ── Day 9 (Jun 29): AI Coding Agents — Coding Pillar, connects to developer cluster ─
   'best-ai-coding-agents-2026': [
     ['/blog/multi-agent-ai-systems-explained-2026/', 'Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026'],

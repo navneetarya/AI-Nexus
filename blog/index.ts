@@ -153,8 +153,11 @@ import post62 from './best-ai-presentation-tools-2026';
 // Target keyword: "multi-agent ai systems" — no direct affiliate, optimized for AI search citation
 // Links: connects to /blog/what-is-mcp-model-context-protocol-2026/, /blog/ai-agents-vs-ai-automation-difference-2026/, /blog/best-ai-coding-agents-2026/
 import post63 from './multi-agent-ai-systems-explained-2026';
+// Day 13 (Jul 3) — Relevance AI vs Lindy vs Gumloop — 800/mo, KD 5, Fastest Win
+import post64 from './relevance-ai-vs-lindy-vs-gumloop-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post64, // Day 13 (Jul 3) — Relevance AI vs Lindy vs Gumloop — 800/mo, KD 5 — pinned first for freshness
   post63, // Day 12 (Jul 2) — Multi-Agent AI Systems Explained — 1,600/mo, KD 9 — pinned first for freshness
   post62, // Day 12 — Best AI Presentation Tools 2026 — Tome shutdown news hook — pinned first for freshness
   post61, // Day 11 — Best AI Video Generators 2026 — new VIDEO-GENERATION sub-niche, trending (Sora shutdown) — pinned first for freshness
