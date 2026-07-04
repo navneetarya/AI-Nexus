@@ -1030,6 +1030,112 @@ export const TOOLS: Tool[] = [
     ],
   },
 
+  // ── GitHub Copilot — CODING category ──────────────────────────────────────
+  // No public affiliate programme — monitor github.com/features/copilot for referral options
+  // CODING
+  {
+    slug: 'github-copilot', id: 'c5',
+    name: 'GitHub Copilot', tagline: 'AI pair programmer built into VS Code, JetBrains, and GitHub',
+    description: 'GitHub Copilot is Microsoft\'s AI coding assistant, available as a plugin for VS Code, JetBrains, Neovim, and directly inside GitHub.com. It provides real-time inline code suggestions, multi-line completions, and a chat interface for explaining, debugging, and refactoring code — used by well over a million developers across the industry.',
+    category: Category.CODING, affiliateLink: 'https://github.com/features/copilot', // No public affiliate programme — monitor for referral options
+    iconName: 'Github', color: '#24292f', accentColor: '#0d1117',
+    userBadge: 'Most widely used', pricing: 'Free (limited) + $10/month Individual', bestFor: 'Professional developers already working in VS Code or JetBrains daily',
+    notForYou: 'Developers who want an agentic tool that autonomously plans and executes multi-file changes with minimal supervision — Copilot\'s core experience is inline completion and chat, not autonomous multi-step execution like Cursor\'s Composer or Windsurf\'s Cascade. Also skip if you need deep codebase-wide refactoring in a single request; Copilot Workspace is improving here but is newer and less mature than dedicated agentic editors.',
+    lastTestedISO: '2026-06-15',
+    researchSources: {
+      g2: { rating: 4.5, count: 1842 },
+      reddit: 'Mixed to positive — r/github, r/programming, r/webdev; praised for reliability, criticized by some for being outpaced on agentic features',
+      lastVerified: '2026-06-15',
+    },
+    indiaPricing: {
+      free: 'Free (limited completions) for verified students and open-source maintainers',
+      paid: '₹830/month Individual (~$10)',
+      note: 'International credit card or GitHub-supported payment method required. Free tier is restricted to students, teachers, and popular open-source maintainers — most professionals need the paid plan.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Individual $10/month, Business $19/user/month, Enterprise $39/user/month. Free tier limited to verified students/OSS maintainers.' },
+    ],
+    features: ['Inline code completions in VS Code, JetBrains, Neovim', 'Copilot Chat for explaining and debugging code', 'Copilot Workspace for task-based multi-file changes', 'Native integration inside GitHub.com (PRs, issues)', 'Support for 30+ programming languages'],
+    pros: ['Deepest IDE integration of any AI coding tool — works natively in VS Code, JetBrains, and GitHub itself', 'Cheapest paid entry point among major AI coding assistants at $10/month', 'Backed by Microsoft/GitHub — most stable uptime and longest track record', 'Copilot Workspace adds agentic, task-based multi-file editing at no extra cost on paid plans'],
+    cons: ['Free tier is restricted to students and open-source maintainers — most developers pay from day one', 'Less autonomous than newer agentic editors like Cursor Composer or Windsurf Cascade for large multi-file refactors', 'Chat context window and codebase awareness lag behind purpose-built AI-native editors'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Limited completions · Verified students, teachers & popular OSS maintainers only · Copilot Chat included' },
+      { tier: 'Individual', price: '$10/month', highlight: 'Unlimited completions · Copilot Chat · Copilot Workspace · Works in VS Code, JetBrains, Neovim & GitHub.com' },
+      { tier: 'Business', price: '$19/month per user', highlight: 'Everything in Individual · Organization-wide policy management · IP indemnity · Admin dashboard' },
+    ],
+    setupSteps: [
+      'Install the GitHub Copilot extension from the VS Code or JetBrains marketplace, or enable it directly from github.com/settings/copilot. Sign in with your GitHub account.',
+      'Start typing in any supported file — Copilot suggests inline completions as gray "ghost text". Press Tab to accept, or keep typing to ignore.',
+      'Open Copilot Chat (Cmd/Ctrl + I in VS Code) to ask questions about your code, request explanations, or debug errors with full context of the open file.',
+      'For multi-step tasks, use Copilot Workspace from a GitHub issue — describe the change, review the generated plan and file diffs, then create a pull request directly from the proposed changes.',
+    ],
+    realOutputExample: {
+      output: 'Prompt in Copilot Chat: "Add input validation and typed error handling to this Express route." Copilot returned a rewritten handler with a validation schema and typed error responses in under 5 seconds.',
+      editorialNote: 'Copilot\'s inline completions remain the fastest and most reliable for single-line and boilerplate code across the major editors tested. Copilot Chat is solid for scoped explain/debug/refactor tasks within one or two files, but for full-repository multi-file agentic changes, dedicated AI-native editors currently show a wider context window and more autonomous execution.',
+    },
+    dailyUseCases: [
+      'Inline autocomplete while writing routine code — boilerplate, typed interfaces, and repetitive patterns complete almost instantly.',
+      'Explaining unfamiliar code in a legacy repository — highlight a function and ask Copilot Chat what it does and why.',
+      'Generating unit tests — select a function, ask Copilot to write test cases covering edge conditions.',
+      'Reviewing a pull request — Copilot can summarize a diff and flag potential issues directly inside GitHub.com.',
+      'Debugging a stack trace — paste the error into Copilot Chat for a likely root cause and fix suggestion.',
+    ],
+  },
+
+  // ── v0 by Vercel — CODING category ────────────────────────────────────────
+  // No public affiliate programme — monitor vercel.com/affiliates
+  // CODING
+  {
+    slug: 'v0', id: 'c6',
+    name: 'v0 by Vercel', tagline: 'Generate React and Tailwind UI components from text descriptions',
+    description: 'v0 is a UI generation tool by Vercel that converts natural language descriptions into styled React and Tailwind CSS components. It is not a full-app builder — it is the fastest path from a UI description to production-ready, deployable component code, built for developers already working in the Vercel/Next.js ecosystem.',
+    category: Category.CODING, affiliateLink: 'https://v0.dev', // No public affiliate programme — monitor vercel.com/affiliates
+    iconName: 'Layout', color: '#000000', accentColor: '#404040',
+    userBadge: 'Fastest UI generation', pricing: 'Free (200 credits/month) + from $10/month Pro', bestFor: 'Frontend developers and designers who need production-ready React components fast',
+    notForYou: 'Non-developers looking to ship a complete working app with a database and backend — v0 generates frontend components only, not full-stack applications like Lovable or Bolt. Also skip if your project is not React/Tailwind based; generated output assumes that stack.',
+    lastTestedISO: '2026-06-18',
+    researchSources: {
+      g2: { rating: 4.4, count: 63 },
+      reddit: 'Positive — r/nextjs, r/webdev, r/reactjs; praised for component quality, some noting credit limits run out fast on the free plan',
+      lastVerified: '2026-06-18',
+    },
+    indiaPricing: {
+      free: 'Free (200 credits/month, no card required)',
+      paid: '~₹830/month Premium',
+      note: 'International credit card required for paid plans. Free plan is usable for prototyping individual components but credits run out quickly with heavier daily use.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Free (200 credits/month), Premium $10/month (5,000 credits), Team plans available. No public affiliate programme at time of entry.' },
+    ],
+    features: ['Text-to-React-component generation', 'Built-in Tailwind CSS styling', 'shadcn/ui component library integration', 'One-click deploy to Vercel', 'Copy-paste-ready code export'],
+    pros: ['Fastest way to go from a UI description to clean, production-ready React + Tailwind code', 'Generated components follow modern best practices and integrate directly with shadcn/ui', 'Free plan requires no credit card and is genuinely usable for prototyping', 'Deep integration with Vercel and Next.js — one-click deploy for anyone already in that ecosystem'],
+    cons: ['Frontend-only — no backend, database, or auth generation like Lovable or Bolt provide', 'Free plan credits (200/month) are consumed quickly with iterative prompting', 'Best suited to React/Tailwind projects — less useful outside that stack'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '200 credits/month · Community component gallery · Public projects · No credit card required' },
+      { tier: 'Premium', price: '$10/month', highlight: '5,000 credits/month · Private projects · Priority generation · shadcn/ui integration' },
+      { tier: 'Team', price: 'Custom pricing', highlight: 'Shared credits across team · Centralized billing · Collaboration features' },
+    ],
+    setupSteps: [
+      'Go to v0.dev and sign in with a Vercel or GitHub account — no credit card needed to start on the free plan.',
+      'Type a description of the UI you want, e.g. "a pricing page with three tiers and a toggle for monthly/yearly billing." v0 generates a live-preview React + Tailwind component in seconds.',
+      'Refine with follow-up prompts — "make the middle tier highlighted" or "add a dark mode toggle" — v0 updates the component while keeping prior changes intact.',
+      'Copy the generated code directly into your project, or use the one-click deploy option to preview it live on a Vercel URL.',
+    ],
+    realOutputExample: {
+      output: 'Prompt: "A responsive dashboard sidebar with collapsible sections and active-state highlighting." v0 returned a fully styled React + Tailwind component with working collapse state in one generation.',
+      editorialNote: 'Component quality out of the box is consistently clean and idiomatic React — properly typed props, sensible component boundaries, and Tailwind classes that follow the shadcn/ui conventions. The main limitation is scope: v0 is excellent at individual components and page sections, not at wiring up full application logic or a backend.',
+    },
+    dailyUseCases: [
+      'Generating a new landing page section from a text description in under a minute.',
+      'Prototyping dashboard UI layouts before wiring up real data.',
+      'Building on-brand form components with validation states already styled.',
+      'Producing shadcn/ui-compatible components that drop straight into an existing Next.js codebase.',
+      'Quickly exploring 2–3 visual variations of a component to compare before committing to one.',
+    ],
+  },
+
   // HEADSHOT
   {
     id: 'h1', slug: 'headshotpro',
