@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-07-03
+# Updated: 2026-07-06
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -56,6 +56,7 @@
 ## Blog Posts
 
 - [Relevance AI vs Lindy vs Gumloop: AI Agent Builder Comparison](https://ainexustools.online/blog/relevance-ai-vs-lindy-vs-gumloop-2026): Relevance AI vs Lindy vs Gumloop compared on pricing, architecture, and fit, verified July 2026 — includes Lindy's dropped free tier and a worked cost example for a 200-lead/month agent workflow.
+- [LLM API Pricing Comparison: Cost Per Token 2026 (GPT-4o vs Claude vs Gemini)](https://ainexustools.online/blog/llm-api-pricing-comparison-2026): Verified July 2026 per-token pricing for GPT-5.5/GPT-4o, Claude Sonnet 5/Opus 4.8, and Gemini 3.5/3.1 Pro — includes a worked cost example and notes GPT-4o's removal from OpenAI's current pricing page.
 - [Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026](https://ainexustools.online/blog/multi-agent-ai-systems-explained-2026): Multi-agent AI architecture patterns, MCP vs A2A protocols, and the 6 frameworks that matter in 2026 — LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Google ADK, Claude Agent SDK — with real production use cases.
 - [Best AI Writing Tools for Beginners 2026](https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026): Rytr, Grammarly, QuillBot, and Writesonic compared for complete beginners. Covers free plans, ease of use, and which tool wins for each use case.
 - [Best AI Tools for Freelancers 2026](https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026): AI tools across writing, design, productivity, social media and coding — independently researched for real freelance workflows.

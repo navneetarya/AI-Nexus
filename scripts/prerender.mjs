@@ -1290,6 +1290,7 @@ const CATEGORY_OG_MAP = {
 const BLOG_OG_MAP = {
   // Day 13 (Jul 3): Relevance AI vs Lindy vs Gumloop — Fastest Win, 800/mo, KD 5
   'relevance-ai-vs-lindy-vs-gumloop-2026':        `${SITE}/og-compare.webp`,
+  'llm-api-pricing-comparison-2026':              `${SITE}/og-compare.webp`,
   // Day 12 (Jul 2): Multi-Agent AI Systems Explained — Technical/GEO, 1,600/mo, KD 9
   'multi-agent-ai-systems-explained-2026':        `${SITE}/og-tool-review.webp`,
   'best-ai-presentation-tools-2026':              `${SITE}/og-compare.webp`,
@@ -3100,6 +3101,29 @@ const BLOG_POSTS = [
       { q: 'Which AI agent builder is best for a small business in India?', a: 'None of the three bill in INR or accept UPI directly — all three charge in USD via international card, which typically adds 2–3.5% in foreign transaction fees on top of the listed price, plus 18% GST for GST-registered Indian businesses. On pure affordability to start, Relevance AI (free tier, then $19/month ≈ ₹1,580 + GST) and Gumloop (free tier, then $37/month ≈ ₹3,070 + GST) are more accessible than Lindy, which has no free tier and starts at $49.99/month ≈ ₹4,150 + GST. A forex-enabled card (most major Indian banks now offer one) or a prepaid international card from a fintech like Niyo or Scapia avoids repeated cross-border fees better than a standard debit card.' },
     ],
   },
+  // ── Day 14 (Jul 6): llm-api-pricing-comparison-2026 — GPT-4o retirement angle ──
+  // Target keyword: "llm api pricing" / "cost per token 2026" — 2,100/mo, KD 12
+  // No direct affiliate — optimized for AI search citation. Cross-links both ways
+  // with the earlier ai-api-pricing-comparison-2026 post (see BLOG_RELATED_LINKS).
+  {
+    slug: 'llm-api-pricing-comparison-2026',
+    title: 'LLM API Pricing Comparison: Cost Per Token 2026 (GPT-4o vs Claude vs Gemini)',
+    seoTitle: 'LLM API Pricing 2026: GPT vs Claude vs Gemini',
+    metaDescription: 'Real, verified July 2026 LLM API pricing per token — GPT-5.5/GPT-4o, Claude Sonnet 5/Opus 4.8, and Gemini 3.5/3.1 Pro compared, plus a worked cost example.',
+    datePublished: '2026-07-06',
+    dateModified: '2026-07-06',
+    readTimeMinutes: 12,
+    ogImage: 'https://ainexustools.online/og-compare.webp',
+    quickAnswer: 'As of July 2026, Claude Sonnet 5 is the cheapest frontier-tier model at $2/$10 per million input/output tokens (introductory, through August 31), Gemini 3.5 Flash costs $1.50/$9, and GPT-5.4 costs $2.50/$15. GPT-4o no longer appears on OpenAI\'s official pricing page — GPT-5.4 and GPT-5.5 are its direct successors for any 2026 API pricing comparison.',
+    faqs: [
+      { q: 'Is GPT-4o pricing still relevant in 2026?', a: 'Not for new integrations. OpenAI retired GPT-4o from ChatGPT entirely by April 3, 2026, and as of July 2026 GPT-4o no longer appears on OpenAI\'s official API pricing page alongside the current GPT-5.5 and GPT-5.4 families. Existing API integrations may still route to legacy GPT-4o endpoints depending on account history, but OpenAI has been clear that GPT-5.4 and GPT-5.5 are the models developers should use for any current pricing comparison. If a comparison chart still lists GPT-4o at $2.50/$10 per million tokens as OpenAI\'s current flagship rate, treat it as outdated — that was accurate earlier in 2026 but does not reflect OpenAI\'s current lineup.' },
+      { q: 'What is the cheapest LLM API in 2026?', a: 'Among frontier-tier, general-purpose models, Gemini 3.5 Flash ($1.50/$9.00 per million input/output tokens) and Claude Sonnet 5 ($2.00/$10.00 introductory, through August 31, 2026) are the two cheapest capable options. For pure budget routing on simple tasks like classification or extraction, Gemini 2.5 Flash-Lite ($0.10/$0.40 per million tokens) and Claude Haiku 4.5 ($1.00/$5.00) are considerably cheaper, but they trade off reasoning depth. The right "cheapest" answer depends on whether the task needs frontier-level reasoning or can be routed to a smaller model.' },
+      { q: 'How much does the Claude API cost per million tokens in 2026?', a: 'Claude Sonnet 5 costs $2.00 input / $10.00 output per million tokens through an introductory period ending August 31, 2026, after which it moves to $3.00/$15.00 — the same rate as Claude Sonnet 4.6. Claude Opus 4.8 costs $5.00/$25.00, and Claude Haiku 4.5 costs $1.00/$5.00. All current-generation Claude models include a full 1 million token context window at standard pricing with no long-context surcharge, and prompt caching cuts cache-hit input cost by 90% across the board.' },
+      { q: 'Is Gemini cheaper than GPT-5 and Claude for API use?', a: 'At the flagship tier, Gemini 3.5 Flash ($1.50/$9.00) undercuts GPT-5.4 ($2.50/$15.00) and matches or beats Claude Sonnet 5\'s post-introductory rate ($3.00/$15.00), while Gemini 3.1 Pro Preview ($2.00/$12.00 up to 200K tokens) sits between the two on price. Google also offers a genuinely free tier for Flash and Flash-Lite models with reduced rate limits, which neither OpenAI nor Anthropic currently matches for their current-generation models. Google\'s Pro-tier models, however, lost free-tier access entirely as of April 1, 2026 — Gemini 3.1 Pro Preview is paid-only.' },
+      { q: 'What is prompt caching and how much does it save on LLM API costs?', a: 'Prompt caching lets an API reuse a previously processed prompt prefix (a system prompt, a long document, or few-shot examples) instead of reprocessing it on every request, billing the cached portion at a steep discount. Anthropic charges just 10% of standard input price for a cache hit (a 90% saving) after an initial 1.25x-cost cache write. OpenAI\'s GPT-5.4 and GPT-5.5 families offer a similar 90% cached-input discount. Google\'s Gemini context caching runs at roughly 10% of standard input price plus a small hourly storage fee. For any application with a stable system prompt sent on every request, caching is usually the single biggest lever for cutting LLM API costs — bigger than choosing between providers.' },
+      { q: 'How much does LLM API usage cost in India after GST and currency conversion?', a: 'None of the three providers bill in INR or accept UPI for API usage — OpenAI, Anthropic, and Google all charge in USD via international card, which typically adds 2–3.5% in foreign transaction fees, and 18% GST applies for GST-registered Indian businesses on top of the converted amount. For budgeting, a $50/month API bill on any of the three providers works out to roughly ₹4,150–₹4,300 after typical forex fees, before GST. A forex-enabled card from an Indian bank, or a fintech card from a provider like Niyo or Scapia, reduces the repeated conversion fee compared to a standard debit card.' },
+    ],
+  },
   // ── Day 12 (Jul 2): multi-agent-ai-systems-explained-2026 — Technical/GEO ──
   // Target keyword: "multi-agent ai systems" — 1,600/mo, KD 9
   // No direct affiliate — optimized for AI search citation (Claude, Perplexity)
@@ -3453,6 +3477,15 @@ const BLOG_RELATED_LINKS = {
   // ── Research Intelligence cluster ───────────────────────────────────────────
   'ai-api-pricing-comparison-2026': [
     ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: AI Automation Platform Comparison 2026'],
+    ['/blog/llm-api-pricing-comparison-2026/', 'LLM API Pricing Comparison: Cost Per Token 2026'],
+  ],
+
+  // ── Day 14 (Jul 6): LLM API Pricing Comparison — cross-links to earlier pricing post ──
+  'llm-api-pricing-comparison-2026': [
+    ['/blog/ai-api-pricing-comparison-2026/', 'AI API Pricing Comparison 2026'],
+    ['/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/', 'GPT-5.5 vs Claude Opus 4.8 vs Grok 4'],
+    ['/blog/ai-tools-cost-roi-calculator-2026/', 'AI Tools Cost & ROI Calculator 2026'],
+    ['/best-ai-coding-tools/', 'Best AI Coding Tools — Category'],
   ],
 
   // ── Day 6 (Jun 26): HR vertical — new cluster anchor ───────────────────────

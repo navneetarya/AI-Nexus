@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "llm-api-pricing-comparison-2026",
+    "title": "LLM API Pricing Comparison: Cost Per Token 2026 (GPT-4o vs Claude vs Gemini)",
+    "seoTitle": "LLM API Pricing 2026: GPT vs Claude vs Gemini",
+    "metaDescription": "Real, verified July 2026 LLM API pricing per token — GPT-5.5/GPT-4o, Claude Sonnet 5/Opus 4.8, and Gemini 3.5/3.1 Pro compared, plus a worked cost example.",
+    "datePublished": "2026-07-06",
+    "dateModified": "2026-07-06",
+    "author": "Navneet Arya",
+    "category": "Coding",
+    "readTime": "12 min read",
+    "ogImage": "https://ainexustools.online/og-compare.webp",
+    "excerpt": "GPT-4o has quietly disappeared from OpenAI's own pricing page. Here is what the OpenAI, Anthropic, and Google Gemini APIs actually cost per million tokens as of July 2026 — including a worked cost example for a real production workload."
+  },
+  {
     "slug": "relevance-ai-vs-lindy-vs-gumloop-2026",
     "title": "Relevance AI vs Lindy vs Gumloop: AI Agent Builder Comparison",
     "seoTitle": "Relevance AI vs Lindy vs Gumloop (2026): Which Wins?",
