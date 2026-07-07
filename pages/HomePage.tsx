@@ -117,7 +117,15 @@ const BADGE_COLORS: Record<string, { bg: string; color: string }> = {
   'Best for beginners': { bg: 'rgba(13,148,136,.1)',  color: '#0D9488' },
 };
 
-const AFFILIATE_SLUGS = ['rytr', 'podcastle', 'ocoya', 'replit', 'taskade'];
+// Keep in sync with pages/ToolPage.tsx AFFILIATE_SLUGS — every slug here has a live,
+// commission-tracked affiliateLink in constants.ts.
+const AFFILIATE_SLUGS = [
+  'writesonic', 'rytr', 'quillbot', 'frase', 'leonardo-ai', 'photoroom', 'looka',
+  'pictory', 'opus-clip', 'invideo', 'murf-ai', 'podcastle', 'gamma', 'beautiful-ai',
+  'ocoya', 'replit', 'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',
+  'notion-ai', 'taskade', 'headshotpro', 'getresponse', 'munch', 'basedlabs',
+  'narrato', 'fireflies',
+];
 const CATEGORIES = ['All', 'Writing', 'Image', 'Video', 'Audio', 'Marketing', 'Design', 'Coding', 'Productivity'];
 
 // Estimated read time for compare articles (minutes)

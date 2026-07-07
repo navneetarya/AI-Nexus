@@ -2602,7 +2602,7 @@ The bottom line: most "which one should I use?" questions come down to one quest
     publishDate: 'June 2026',
     lastUpdated: '2026-06-22',
     quickAnswer: 'ChatGPT (OpenAI) is better for creative work, coding assistance, and detailed explanations. Perplexity is better for real-time research, current events, and fact-based queries that require web citations. For pure chat: ChatGPT. For research that needs sources: Perplexity. Both have strong free tiers — test both for your use case.',
-    intro: `Perplexity and ChatGPT are the two most downloaded AI apps in 2026, but they solve different problems. I've tested both extensively — ChatGPT for content creation and coding, Perplexity for research-heavy work — and the results are clear: they are not direct competitors, but if you use only one AI tool, choosing the right one saves real time.`,
+    intro: `Perplexity and ChatGPT are the two most downloaded AI apps in 2026, but they solve different problems. Based on official documentation, user reports, and hands-on community feedback — ChatGPT for content creation and coding, Perplexity for research-heavy work — the pattern is clear: they are not direct competitors, but if you use only one AI tool, choosing the right one saves real time.`,
     sections: [
       {
         heading: 'ChatGPT is a reasoning engine. Perplexity is a research engine.',
@@ -2683,7 +2683,7 @@ ChatGPT's reasoning is sharper. It understands context better. It can think thro
     publishDate: 'June 2026',
     lastUpdated: '2026-06-22',
     quickAnswer: 'HeadshotPro generates more natural-looking professional headshots and uses a simpler workflow — upload your photo, AI upscales and stylizes it. Aragon is more flexible for creative variations but requires more configuration. For LinkedIn photos: HeadshotPro. For multiple styles and angles: Aragon.',
-    intro: `AI headshot tools have become essential for professionals who need LinkedIn photos, portfolio images, or profile pictures without hiring a photographer. I tested both HeadshotPro and Aragon with the same input photo and tracked quality, processing time, and usability.`,
+    intro: `AI headshot tools have become essential for professionals who need LinkedIn photos, portfolio images, or profile pictures without hiring a photographer. This comparison is based on verified user reviews, sample output galleries, and official pricing and turnaround data for HeadshotPro and Aragon.`,
     sections: [
       {
         heading: 'The key difference: Generation vs. upscaling',
@@ -2746,7 +2746,7 @@ Aragon: Upload photo → Configure style/setting → Generate variations → Rev
     publishDate: 'June 2026',
     lastUpdated: '2026-06-22',
     quickAnswer: 'Make is cheaper and more flexible for advanced automations ($9/mo for unlimited tasks). Zapier is simpler, has more app integrations (5000+), and better for non-technical users. For builders and power users: Make. For simplicity and breadth: Zapier. Both have free tiers.',
-    intro: `Make (formerly Integromat) and Zapier are the two most popular no-code automation platforms in 2026. Both connect your apps and automate repetitive workflows — but they take different approaches to pricing, flexibility, and ease of use. I've tested both with real client workflows to see which one actually delivers.`,
+    intro: `Make (formerly Integromat) and Zapier are the two most popular no-code automation platforms in 2026. Both connect your apps and automate repetitive workflows — but they take different approaches to pricing, flexibility, and ease of use. This comparison draws on official documentation, verified user reviews, and reported real-world workflow builds to show which one actually delivers.`,
     sections: [
       {
         heading: 'The core trade-off: Power vs. simplicity',

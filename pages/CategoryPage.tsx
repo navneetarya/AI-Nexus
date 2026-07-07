@@ -72,11 +72,11 @@ Browse the tools below, read the full reviews, and pick the one that matches you
     slug: 'best-ai-image-tools',
     emoji: '🎨',
     color: '#3b82f6',
-    intro: `The best AI image generators in 2026 can create stunning visuals from a simple text prompt — but choosing the right one depends entirely on what you need. Product photos? Marketing graphics? Digital art? Each tool has different strengths, and I have tested them all head-to-head.
+    intro: `The best AI image generators in 2026 can create stunning visuals from a simple text prompt — but choosing the right one depends entirely on what you need. Product photos? Marketing graphics? Digital art? Each tool has different strengths, researched and compared head-to-head below.
 
 Leonardo.ai stands out for its generous free plan — 150 credits per day, which translates to roughly 1,500 images per month at no cost. For professional product photography, PhotoRoom automates background removal and scene generation. Midjourney remains the gold standard for artistic quality, though it requires Discord access and a paid subscription.
 
-What matters most when choosing an AI image tool is output quality, creative control, and commercial usage rights. Some tools generate beautiful images but restrict commercial use on free plans. Others offer full commercial licences but produce less refined results. I have documented the exact terms for each tool in the reviews below.
+What matters most when choosing an AI image tool is output quality, creative control, and commercial usage rights. Some tools generate beautiful images but restrict commercial use on free plans. Others offer full commercial licences but produce less refined results. The exact terms for each tool are documented in the reviews below, based on official pricing pages and licence terms.
 
 The technology has advanced dramatically — modern AI image generators handle complex compositions, realistic lighting, and specific art styles with remarkable consistency. Whether you are creating social media content, e-commerce product shots, presentation graphics, or creative artwork, there is a tool here that fits your use case.
 
@@ -195,7 +195,7 @@ Each review includes documented design samples, template quality assessments, ex
     slug: 'best-ai-coding-tools',
     emoji: '💻',
     color: '#22c55e',
-    intro: `The best AI coding tools in 2026 go far beyond autocomplete — they write entire functions, debug complex errors, explain unfamiliar codebases, and even build full applications from natural language descriptions. I have tested each tool on this page with real development projects across multiple programming languages.
+    intro: `The best AI coding tools in 2026 go far beyond autocomplete — they write entire functions, debug complex errors, explain unfamiliar codebases, and even build full applications from natural language descriptions. Each tool on this page has been researched against official documentation, verified user reviews, and real-world reports across multiple programming languages.
 
 Replit has transformed from a simple online IDE into a powerful AI-first development platform. Its AI assistant can generate, explain, and debug code directly in the browser. GitHub Copilot remains the industry standard for IDE-integrated code completion, offering suggestions that are right more often than not. Newer tools like Cursor take a different approach with chat-first coding workflows.
 

@@ -284,7 +284,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "category": "Coding",
     "readTime": "9 min read",
     "ogImage": "https://ainexustools.online/og/blog/best-vibe-coding-tools-2026.webp",
-    "excerpt": "Vibe coding is the fastest-growing development approach of 2026 — building real apps by chatting with AI instead of writing code. I tested Lovable, Bolt, and v0 on identical tasks. Here is exactly which one to use and..."
+    "excerpt": "Vibe coding is the fastest-growing development approach of 2026 — building real apps by chatting with AI instead of writing code. Here is how Lovable, Bolt, and v0 compare on identical tasks, and exactly which one to..."
   },
   {
     "slug": "gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",

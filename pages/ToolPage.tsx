@@ -17,7 +17,18 @@ const C = {
   barBg:'var(--bar-bg)', barBrd:'var(--bar-brd)',
 };
 
-const AFFILIATE_SLUGS = ['rytr', 'podcastle', 'ocoya', 'replit', 'taskade'];
+// Every tool slug below has a live, commission-tracked affiliateLink in constants.ts
+// (via=, ref=, fpr=, /refer/, or partner-network URL). Tools with a direct/no-affiliate
+// link (e.g. cursor, chatgpt, midjourney) are intentionally excluded.
+// NOTE: keep in sync with constants.ts — any new affiliateLink with a tracking param
+// must be added here or its disclosure banner will not render.
+const AFFILIATE_SLUGS = [
+  'writesonic', 'rytr', 'quillbot', 'frase', 'leonardo-ai', 'photoroom', 'looka',
+  'pictory', 'opus-clip', 'invideo', 'murf-ai', 'podcastle', 'gamma', 'beautiful-ai',
+  'ocoya', 'replit', 'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',
+  'notion-ai', 'taskade', 'headshotpro', 'getresponse', 'munch', 'basedlabs',
+  'narrato', 'fireflies',
+];
 
 const CAT_ACCENT: Record<string, 'a1'|'a2'> = {
   Writing:'a1', Image:'a2', Video:'a1', Audio:'a2',
