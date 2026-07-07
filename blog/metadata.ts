@@ -635,7 +635,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "category": "Marketing",
     "readTime": "9 min read",
     "ogImage": "https://ainexustools.online/og/blog/best-ai-marketing-tools-2026.webp",
-    "excerpt": "I ran real SEO campaigns and social media schedules through four AI marketing tools. Here's which ones actually move the needle — and which are just expensive content spinners."
+    "excerpt": "A comparative review of four AI marketing tools for SEO and social media workflows, highlighting which platforms deliver measurable outcomes and which underperform for the price."
   },
   {
     "slug": "ai-tools-for-teachers-2026",
