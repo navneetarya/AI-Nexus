@@ -157,8 +157,12 @@ import post63 from './multi-agent-ai-systems-explained-2026';
 import post64 from './relevance-ai-vs-lindy-vs-gumloop-2026';
 // Day 14 (Jul 6) — LLM API Pricing Comparison 2026 — 2,100/mo, KD 12
 import post65 from './llm-api-pricing-comparison-2026';
+// Day 15 (Jul 9, slotted Jul 5) — Claude Code Alternatives 2026 — 2,600/mo, KD 15
+// Affiliates: none new — reuses existing Cursor, Windsurf tool pages
+import post66 from './claude-code-alternatives-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post66, // Day 15 — Claude Code Alternatives 2026 — 2,600/mo, KD 15 — pinned first for freshness
   post65, // Day 14 (Jul 6) — LLM API Pricing Comparison 2026 — 2,100/mo, KD 12 — pinned first for freshness
   post64, // Day 13 (Jul 3) — Relevance AI vs Lindy vs Gumloop — 800/mo, KD 5 — pinned first for freshness
   post63, // Day 12 (Jul 2) — Multi-Agent AI Systems Explained — 1,600/mo, KD 9 — pinned first for freshness

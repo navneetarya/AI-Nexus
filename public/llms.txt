@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-07-06
+# Updated: 2026-07-09
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -55,6 +55,7 @@
 
 ## Blog Posts
 
+- [Claude Code Alternatives 2026: Terminal AI Coding Agents Ranked](https://ainexustools.online/blog/claude-code-alternatives-2026): 7 terminal AI coding agents ranked against Claude Code — pricing, open-source status, and Terminal-Bench scores for Codex CLI, OpenCode, Aider, and more, verified July 2026.
 - [Relevance AI vs Lindy vs Gumloop: AI Agent Builder Comparison](https://ainexustools.online/blog/relevance-ai-vs-lindy-vs-gumloop-2026): Relevance AI vs Lindy vs Gumloop compared on pricing, architecture, and fit, verified July 2026 — includes Lindy's dropped free tier and a worked cost example for a 200-lead/month agent workflow.
 - [LLM API Pricing Comparison: Cost Per Token 2026 (GPT-4o vs Claude vs Gemini)](https://ainexustools.online/blog/llm-api-pricing-comparison-2026): Verified July 2026 per-token pricing for GPT-5.5/GPT-4o, Claude Sonnet 5/Opus 4.8, and Gemini 3.5/3.1 Pro — includes a worked cost example and notes GPT-4o's removal from OpenAI's current pricing page.
 - [Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026](https://ainexustools.online/blog/multi-agent-ai-systems-explained-2026): Multi-agent AI architecture patterns, MCP vs A2A protocols, and the 6 frameworks that matter in 2026 — LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Google ADK, Claude Agent SDK — with real production use cases.

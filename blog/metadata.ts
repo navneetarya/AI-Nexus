@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "claude-code-alternatives-2026",
+    "title": "Claude Code Alternatives 2026: Terminal AI Coding Agents Ranked",
+    "seoTitle": "Claude Code Alternatives 2026: Terminal AI Agents Ranked",
+    "metaDescription": "7 terminal AI coding agents ranked against Claude Code — pricing, open-source status, and Terminal-Bench scores for Codex CLI, OpenCode, Aider, and more.",
+    "datePublished": "2026-07-09",
+    "dateModified": "2026-07-09",
+    "author": "Navneet Arya",
+    "category": "Coding",
+    "readTime": "12 min read",
+    "ogImage": "https://ainexustools.online/og-compare.webp",
+    "excerpt": "Claude Code still leads on raw codebase reasoning, but it no longer has the terminal to itself — and it no longer wins on price. Here are 7 terminal-native alternatives ranked on cost, open-source status, and independently verified benchmark scores as of July 2026."
+  },
+  {
     "slug": "llm-api-pricing-comparison-2026",
     "title": "LLM API Pricing Comparison: Cost Per Token 2026 (GPT-4o vs Claude vs Gemini)",
     "seoTitle": "LLM API Pricing 2026: GPT vs Claude vs Gemini",

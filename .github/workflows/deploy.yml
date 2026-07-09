@@ -85,7 +85,7 @@ jobs:
             best-free-ai-tool-plans-2026 best-free-ai-tools-for-students-in-india-2026 best-free-ai-writing-tools-2026
             best-grammarly-alternatives best-invideo-alternatives-2026 best-midjourney-alternatives-2026 best-no-code-ai-automation-tools-2026 best-notion-ai-alternatives-2026
             best-podcastle-alternatives best-vibe-coding-tools-2026 best-ai-recruitment-tools-2026 chatgpt-alternatives-free-2026
-            chatgpt-free-vs-claude-free-vs-gemini-free-2026 cheapest-ai-coding-tools-2026 claude-code-vs-github-copilot-vs-replit-2026
+            chatgpt-free-vs-claude-free-vs-gemini-free-2026 cheapest-ai-coding-tools-2026 claude-code-alternatives-2026 claude-code-vs-github-copilot-vs-replit-2026
             cursor-ai-review-2026 fastest-growing-ai-startups-2026 google-gemini-ai-review-2026
             gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026 grok-4-vs-chatgpt-vs-claude-content-creators-2026
             how-to-use-ai-for-content-creation-2026 how-to-use-rytr-to-write-blog-posts is-grammarly-premium-worth-it-2026
@@ -167,7 +167,7 @@ jobs:
           # 3b. Sitemap URL count — catches silent drops (missing posts/tools/etc.)
           LOC_COUNT=$(grep -c "<loc>" dist/sitemap.xml)
           echo "ℹ️  sitemap.xml contains $LOC_COUNT <loc> entries"
-          EXPECTED_LOC_COUNT=152
+          EXPECTED_LOC_COUNT=153
           if [ "$LOC_COUNT" -ne "$EXPECTED_LOC_COUNT" ]; then
             echo "❌ Expected $EXPECTED_LOC_COUNT URLs in sitemap.xml, found $LOC_COUNT"
             echo "   Current breakdown: 1 home + 9 static + 1 freelancers landing + 3 specials (free/india/logos)"

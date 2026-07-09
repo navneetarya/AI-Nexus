@@ -1288,6 +1288,8 @@ const CATEGORY_OG_MAP = {
 // resolveOgImage() checks this map first before falling through to category images.
 // To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
 const BLOG_OG_MAP = {
+  // Day 15 (Jul 9): Claude Code Alternatives 2026 — Terminal AI Coding Agents Ranked
+  'claude-code-alternatives-2026':                `${SITE}/og-compare.webp`,
   // Day 13 (Jul 3): Relevance AI vs Lindy vs Gumloop — Fastest Win, 800/mo, KD 5
   'relevance-ai-vs-lindy-vs-gumloop-2026':        `${SITE}/og-compare.webp`,
   'llm-api-pricing-comparison-2026':              `${SITE}/og-compare.webp`,
@@ -3124,6 +3126,29 @@ const BLOG_POSTS = [
       { q: 'How much does LLM API usage cost in India after GST and currency conversion?', a: 'None of the three providers bill in INR or accept UPI for API usage — OpenAI, Anthropic, and Google all charge in USD via international card, which typically adds 2–3.5% in foreign transaction fees, and 18% GST applies for GST-registered Indian businesses on top of the converted amount. For budgeting, a $50/month API bill on any of the three providers works out to roughly ₹4,150–₹4,300 after typical forex fees, before GST. A forex-enabled card from an Indian bank, or a fintech card from a provider like Niyo or Scapia, reduces the repeated conversion fee compared to a standard debit card.' },
     ],
   },
+  // ── Day 15 (Jul 9, slotted Jul 5): claude-code-alternatives-2026 — Terminal AI Coding Agents Ranked ──
+  // Target keyword: "claude code alternatives" — 2,600/mo, KD 15
+  // Affiliates: none new — reuses existing Cursor, Windsurf tool pages
+  {
+    slug: 'claude-code-alternatives-2026',
+    title: 'Claude Code Alternatives 2026: Terminal AI Coding Agents Ranked',
+    seoTitle: 'Claude Code Alternatives 2026: Terminal AI Agents Ranked',
+    metaDescription: '7 terminal AI coding agents ranked against Claude Code — pricing, open-source status, and Terminal-Bench scores for Codex CLI, OpenCode, Aider, and more.',
+    datePublished: '2026-07-09',
+    dateModified: '2026-07-09',
+    readTimeMinutes: 12,
+    ogImage: 'https://ainexustools.online/og-compare.webp',
+    quickAnswer: 'The best free Claude Code alternative in July 2026 is OpenAI Codex CLI — open source, bundled with any ChatGPT plan, and #1 on the Terminal-Bench 2.1 leaderboard. OpenCode is the strongest open-source, model-agnostic pick. Aider stays the safest git-native default. Claude Code still leads codebase reasoning, but Pro starts at $20/month with no free tier.',
+    faqs: [
+      { q: 'What is the best free alternative to Claude Code in 2026?', a: 'OpenAI Codex CLI is the strongest free alternative — it is open source (Apache 2.0), included at no extra cost with ChatGPT Free, Go, Plus, Pro, Business, Edu, and Enterprise plans, and as of the most recent Terminal-Bench 2.1 leaderboard, Codex CLI running GPT-5.5 scores highest of any agent tested, ahead of Claude Code on Opus 4.8. OpenCode is the best fully open-source, model-agnostic option if you want to bring your own API key across 75+ providers rather than depend on one vendor\'s subscription. Both are genuinely free to run — you only pay for the underlying model calls if you use API billing instead of a bundled subscription.' },
+      { q: 'Is OpenAI Codex CLI really free, or do I need a ChatGPT subscription?', a: 'The Codex CLI tool itself is free and open source under an Apache 2.0 license — you can download and run it with your own OpenAI API key and pay only for the tokens you use. Separately, OpenAI also bundles Codex usage into ChatGPT Free, Go, Plus, Pro, Business, Edu, and Enterprise plans, with usage limits that scale by tier, so most developers who already pay for ChatGPT Plus get meaningful Codex CLI access without an extra bill. Heavy users on lower tiers will still hit rate limits and may need to switch to API billing or a higher ChatGPT plan.' },
+      { q: 'What happened to Gemini CLI — is it still available?', a: 'Gemini CLI stopped serving requests for Google AI free, Pro, and Ultra individual users on June 18, 2026, with no grace period, as Google consolidated its terminal agent under the Antigravity brand. The replacement, Antigravity CLI, is a closed-source Go rewrite (unlike Gemini CLI, which was Apache 2.0 open source) that is free during its current preview period, though several independent testers have reported meaningfully tighter daily free-request limits than Gemini CLI\'s old allowance. Enterprise users on Gemini Code Assist Standard or Enterprise licenses, or those using a paid Gemini API key, retain access to the original Gemini CLI.' },
+      { q: 'Is Amazon Q Developer CLI still worth setting up in 2026?', a: 'Not for new adopters. AWS closed new Amazon Q Developer signups — both the free tier and the $19/month Pro tier — on May 15, 2026, and has stated the IDE plugins and CLI will reach end of support on April 30, 2027. Existing subscriptions can keep adding seats, but AWS is directing new users toward Kiro, its newer spec-driven agentic development environment, instead. If you are choosing a terminal agent from scratch today, Q Developer CLI is not a forward-looking pick regardless of its free tier.' },
+      { q: 'Which terminal AI coding agent is best for a git-native workflow?', a: 'Aider remains the reference point for git-native terminal coding. It commits every AI-made edit as a separate, descriptively-messaged commit automatically, which makes reviewing, bisecting, and reverting AI changes as simple as reading normal git history — no separate diff-review UI required. It is free, open source (Apache 2.0), and works with any model provider you bring an API key for. OpenCode and Codex CLI both support git-aware workflows too, but neither auto-commits by default the way Aider does out of the box.' },
+      { q: 'How much does Claude Code actually cost per month in 2026?', a: 'Claude Code has no dedicated subscription of its own — it draws on your existing Claude plan. Pro is $20/month, Max is $100 or $200/month depending on the usage tier, and Team Premium runs roughly $100 per seat. There is no free tier; a Pro subscription or an API key is required to use it at all. On API billing instead of a subscription, cost is metered per token at standard Claude API rates, and heavy agentic sessions can burn tokens quickly — Anthropic\'s own enterprise data puts typical usage at roughly $13 per developer per active day.' },
+      { q: 'Which terminal AI coding agent is cheapest for developers in India?', a: 'OpenCode and Aider are the cheapest starting points for Indian developers because both are free to run and let you route requests through a lower-cost model provider or a local Ollama model with no subscription at all. For a bundled-subscription option, OpenAI Codex CLI usage included with a ChatGPT Plus subscription works out to roughly the same ₹1,700–₹1,900/month range as Claude Pro after typical forex card fees, since neither OpenAI nor Anthropic bills directly in INR or accepts UPI. None of the tools in this guide offer India-specific pricing — every option is billed in USD.' },
+    ],
+  },
   // ── Day 12 (Jul 2): multi-agent-ai-systems-explained-2026 — Technical/GEO ──
   // Target keyword: "multi-agent ai systems" — 1,600/mo, KD 9
   // No direct affiliate — optimized for AI search citation (Claude, Perplexity)
@@ -3480,6 +3505,14 @@ const BLOG_RELATED_LINKS = {
     ['/blog/llm-api-pricing-comparison-2026/', 'LLM API Pricing Comparison: Cost Per Token 2026'],
   ],
 
+  // ── Day 15 (Jul 9): Claude Code Alternatives — cross-links to coding cluster ──
+  'claude-code-alternatives-2026': [
+    ['/blog/best-ai-coding-agents-2026/', 'Best AI Coding Agents 2026'],
+    ['/blog/claude-code-vs-github-copilot-vs-replit-2026/', 'Claude Code vs GitHub Copilot vs Replit'],
+    ['/blog/cheapest-ai-coding-tools-2026/', 'Cheapest AI Coding Tools 2026'],
+    ['/best-ai-coding-tools/', 'Best AI Coding Tools — Category'],
+  ],
+
   // ── Day 14 (Jul 6): LLM API Pricing Comparison — cross-links to earlier pricing post ──
   'llm-api-pricing-comparison-2026': [
     ['/blog/ai-api-pricing-comparison-2026/', 'AI API Pricing Comparison 2026'],
@@ -3530,6 +3563,7 @@ const BLOG_RELATED_LINKS = {
   // 'best-ai-agents-for-small-business-2026' entry above (duplicate-key bug fixed 2026-07-03).
   // ── Day 9 (Jun 29): AI Coding Agents — Coding Pillar, connects to developer cluster ─
   'best-ai-coding-agents-2026': [
+    ['/blog/claude-code-alternatives-2026/', 'Claude Code Alternatives 2026: Terminal AI Coding Agents Ranked'],
     ['/blog/multi-agent-ai-systems-explained-2026/', 'Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026'],
     ['/blog/best-ai-tools-for-developers-2026/', 'Best AI Tools for Developers 2026'],
     ['/blog/claude-code-vs-github-copilot-vs-replit-2026/', 'Claude Code vs GitHub Copilot vs Replit 2026'],
