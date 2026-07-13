@@ -84,7 +84,7 @@ const post: BlogPost = {
 
 <p><strong>Zapier</strong> launched its Agents product in late 2024, allowing agents to monitor triggers and autonomously execute multi-step actions across Zapier's 6,000+ app integrations. For SMBs already invested in the Zapier ecosystem, Agents adds autonomous behaviour without switching platforms. Starter plans begin at $19.99/month. <a href="https://zapier.com/" target="_blank" rel="noopener noreferrer nofollow">Zapier</a></p>
 
-<p><strong>Bardeen</strong> specialises in browser-based automation — it operates inside Chrome and enables AI-powered web scraping, form filling, and prospect research that APIs can't reach. Particularly useful for sales teams gathering contact data from LinkedIn, company websites, and portals with no public API. Free plan available; Professional plan at $10/month.</p>
+<p><strong><a href="https://www.bardeen.ai/" target="_blank" rel="noopener noreferrer">Bardeen</a></strong> specialises in browser-based automation — it operates inside Chrome and enables AI-powered web scraping, form filling, and prospect research that APIs can't reach. Particularly useful for sales teams gathering contact data from LinkedIn, company websites, and portals with no public API. Free plan available; Professional plan at $10/month.</p>
 
 <p><strong>Activepieces</strong> is an actively maintained open-source Make.com alternative that is free to self-host. For cost-constrained SMBs that need automation without per-operation pricing, Activepieces provides a capable foundation with a growing AI integrations library. The self-hosted community edition is free; a managed cloud plan is available for teams that prefer not to manage their own server.</p>
 
