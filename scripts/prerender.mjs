@@ -3503,6 +3503,8 @@ const BLOG_RELATED_LINKS = {
   'best-ai-tools-for-startups-2026': [
     ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
     ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
+    ['/blog/best-ai-recruitment-tools-2026/', 'Best AI Recruitment Tools 2026'],
+    ['/blog/ai-contract-analysis-tools-2026/', 'AI Contract Analysis Tools 2026: Legal AI for Small Business & Freelancers'],
   ],
 
   // ── P1 First Mover: MCP infra-cluster anchor — 82,800/mo ────────────────────
@@ -3530,6 +3532,7 @@ const BLOG_RELATED_LINKS = {
     ['/blog/what-is-mcp-model-context-protocol-2026/', 'What is MCP (Model Context Protocol)?'],
     ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
     ['/blog/best-ai-tools-for-automation-engineers-2026/', 'Best AI Tools for Automation Engineers 2026'],
+    ['/blog/best-ai-agents-customer-service-2026/', 'Best AI Agents for Customer Service 2026'],
   ],
 
   // ── Research Intelligence cluster ───────────────────────────────────────────
@@ -3543,7 +3546,12 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-coding-agents-2026/', 'Best AI Coding Agents 2026'],
     ['/blog/claude-code-vs-github-copilot-vs-replit-2026/', 'Claude Code vs GitHub Copilot vs Replit'],
     ['/blog/cheapest-ai-coding-tools-2026/', 'Cheapest AI Coding Tools 2026'],
+    ['/blog/llm-api-pricing-comparison-2026/', 'LLM API Pricing Comparison: Cost Per Token 2026'],
     ['/best-ai-coding-tools/', 'Best AI Coding Tools — Category'],
+  ],
+  // Back-link: Claude Code vs Copilot vs Replit → Claude Code Alternatives (Day 18 linking sweep)
+  'claude-code-vs-github-copilot-vs-replit-2026': [
+    ['/blog/claude-code-alternatives-2026/', 'Claude Code Alternatives 2026: Terminal AI Coding Agents Ranked'],
   ],
 
   // ── Day 14 (Jul 6): LLM API Pricing Comparison — cross-links to earlier pricing post ──
@@ -3551,7 +3559,12 @@ const BLOG_RELATED_LINKS = {
     ['/blog/ai-api-pricing-comparison-2026/', 'AI API Pricing Comparison 2026'],
     ['/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/', 'GPT-5.5 vs Claude Opus 4.8 vs Grok 4'],
     ['/blog/ai-tools-cost-roi-calculator-2026/', 'AI Tools Cost & ROI Calculator 2026'],
+    ['/blog/claude-code-alternatives-2026/', 'Claude Code Alternatives 2026: Terminal AI Coding Agents Ranked'],
     ['/best-ai-coding-tools/', 'Best AI Coding Tools — Category'],
+  ],
+  // Back-link: gpt-5-5 model comparison → LLM pricing post (Day 18 linking sweep)
+  'gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026': [
+    ['/blog/llm-api-pricing-comparison-2026/', 'LLM API Pricing Comparison: Cost Per Token 2026'],
   ],
 
   // ── Day 6 (Jun 26): HR vertical — new cluster anchor ───────────────────────
@@ -3624,6 +3637,7 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-tools-for-freelancers-2026/', 'Best AI Tools for Freelancers 2026'],
     ['/blog/ai-tools-cost-roi-calculator-2026/', 'AI Tools ROI Calculator 2026'],
     ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
+    ['/blog/ai-contract-analysis-tools-2026/', 'AI Contract Analysis Tools 2026: Legal AI for Small Business & Freelancers'],
   ],
   // Back-link: best-ai-tools-for-freelancers → solopreneur stack post (Day 10 back-link)
   'best-ai-tools-for-freelancers-2026': [
