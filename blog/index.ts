@@ -160,8 +160,13 @@ import post65 from './llm-api-pricing-comparison-2026';
 // Day 15 (Jul 9, slotted Jul 5) — Claude Code Alternatives 2026 — 2,600/mo, KD 15
 // Affiliates: none new — reuses existing Cursor, Windsurf tool pages
 import post66 from './claude-code-alternatives-2026';
+// Day 16 (Jul 6 slot) — AI Contract Analysis Tools 2026 — New Legal Vertical, 2,100/mo, KD 19
+// Affiliates: Spellbook, Harvey AI, Luminance — all enterprise/sales-led, no confirmed
+// self-serve affiliate link as of July 2026; linked direct to official sites (see file header)
+import post67 from './ai-contract-analysis-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post67, // Day 16 — AI Contract Analysis Tools 2026 — New Legal Vertical, 2,100/mo, KD 19 — pinned first for freshness
   post66, // Day 15 — Claude Code Alternatives 2026 — 2,600/mo, KD 15 — pinned first for freshness
   post65, // Day 14 (Jul 6) — LLM API Pricing Comparison 2026 — 2,100/mo, KD 12 — pinned first for freshness
   post64, // Day 13 (Jul 3) — Relevance AI vs Lindy vs Gumloop — 800/mo, KD 5 — pinned first for freshness

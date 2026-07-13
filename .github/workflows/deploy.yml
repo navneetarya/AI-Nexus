@@ -71,7 +71,7 @@ jobs:
           # post is added to blog/ without a matching entry here.
           BLOG_SLUGS=(
             ai-agents-vs-ai-automation-difference-2026
-            ai-api-pricing-comparison-2026 ai-ecosystem-growth-report-2026 ai-tools-for-students-free-2026 ai-tools-for-teachers-2026
+            ai-api-pricing-comparison-2026 ai-contract-analysis-tools-2026 ai-ecosystem-growth-report-2026 ai-tools-for-students-free-2026 ai-tools-for-teachers-2026
             ai-tools-cost-roi-calculator-2026
             ai-tools-for-solopreneurs-2026
             best-ai-agents-customer-service-2026
@@ -167,7 +167,7 @@ jobs:
           # 3b. Sitemap URL count — catches silent drops (missing posts/tools/etc.)
           LOC_COUNT=$(grep -c "<loc>" dist/sitemap.xml)
           echo "ℹ️  sitemap.xml contains $LOC_COUNT <loc> entries"
-          EXPECTED_LOC_COUNT=153
+          EXPECTED_LOC_COUNT=154
           if [ "$LOC_COUNT" -ne "$EXPECTED_LOC_COUNT" ]; then
             echo "❌ Expected $EXPECTED_LOC_COUNT URLs in sitemap.xml, found $LOC_COUNT"
             echo "   Current breakdown: 1 home + 9 static + 1 freelancers landing + 3 specials (free/india/logos)"

@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "ai-contract-analysis-tools-2026",
+    "title": "AI Contract Analysis Tools 2026: Legal AI for Small Business & Freelancers",
+    "seoTitle": "AI Contract Analysis Tools 2026: Best Options for Freelancers & SMBs",
+    "metaDescription": "Harvey AI and Luminance are enterprise-only. Spellbook is built for lawyers. Here is what AI contract analysis tools actually cost in 2026 — and what freelancers should use instead.",
+    "datePublished": "2026-07-13",
+    "dateModified": "2026-07-13",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "11 min read",
+    "ogImage": "https://ainexustools.online/og-compare.webp",
+    "excerpt": "Harvey AI and Luminance dominate legal-AI headlines in 2026, but both are priced and sold for AmLaw 100 firms, not the freelancer sending five NDAs a month. Here is what AI contract analysis tools actually cost, who each one is really built for, and what a solo business owner should use instead."
+  },
+  {
     "slug": "claude-code-alternatives-2026",
     "title": "Claude Code Alternatives 2026: Terminal AI Coding Agents Ranked",
     "seoTitle": "Claude Code Alternatives 2026: Terminal AI Agents Ranked",
