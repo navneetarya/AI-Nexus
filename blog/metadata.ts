@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-voice-dictation-tools-2026",
+    "title": "Best AI Voice Dictation Tools 2026: Wispr Flow vs Superwhisper vs Free Options",
+    "seoTitle": "Best AI Voice Dictation Tools 2026: Wispr vs Superwhisper",
+    "metaDescription": "Wispr Flow scores 4.5/5 on G2 but 2.7/5 on Trustpilot. What that gap means, plus honest pricing for Superwhisper, Otter.ai, Dragon, and free tools in 2026.",
+    "datePublished": "2026-07-14",
+    "dateModified": "2026-07-14",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "10 min read",
+    "ogImage": "https://ainexustools.online/og-compare.webp",
+    "excerpt": "Wispr Flow is the most polished cross-platform AI dictation tool in 2026, but its 4.5/5 G2 rating and 2.7/5 Trustpilot rating tell very different stories. Superwhisper is the stronger value pick for Mac-only, privacy-focused users, and the free built-in options cover light daily use."
+  },
+  {
     "slug": "ai-contract-analysis-tools-2026",
     "title": "AI Contract Analysis Tools 2026: Legal AI for Small Business & Freelancers",
     "seoTitle": "AI Contract Analysis Tools 2026: Best Options for Freelancers & SMBs",
