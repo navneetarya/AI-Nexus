@@ -39,6 +39,32 @@ const AUTHOR_SAME_AS = [
   'https://medium.com/@navneetarya1989',
   'https://www.quora.com/profile/Navneet-Arya',
 ];
+// E-E-A-T Fix (Expertise pillar): shared Person node with jobTitle + worksFor
+// (AI Nexus + BOLD) reused across every per-page Article/Review/Dataset schema.
+// Previously only the About page and homepage carried the "AI Automation &
+// Performance Testing at BOLD" credential — every tool review, blog post, and
+// comparison page shipped a bare {name, url, sameAs} Person with no expertise
+// signal at all. Google's quality raters and AI engines read worksFor/jobTitle
+// on the entity that appears on the page they're actually crawling, not just
+// the About page, so the credential needs to travel with every page.
+const AUTHOR_PERSON = {
+  '@type': 'Person',
+  '@id': `${SITE}/about#author`,
+  name: AUTHOR,
+  url: `${SITE}/about/`,
+  jobTitle: 'Independent AI Tools Researcher',
+  worksFor: [
+    { '@type': 'Organization', name: 'AI Nexus', url: SITE },
+    {
+      '@type': 'Organization',
+      name: 'BOLD',
+      url: 'https://www.bold.com',
+      description: 'AI Automation & Performance Testing — Navneet Arya\'s primary employer, where AI tools are evaluated for real production workflows.',
+    },
+  ],
+  knowsAbout: ['Artificial Intelligence', 'AI Writing Tools', 'AI Automation', 'Performance Testing', 'AI Productivity Tools'],
+  sameAs: AUTHOR_SAME_AS,
+};
 const YEAR   = new Date().getFullYear();
 const TODAY  = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
@@ -1623,12 +1649,7 @@ function compareDatasetSchema(art, canonical) {
     name: `${toolNames.join(' vs ')} Comparison Data ${YEAR}`,
     description: art.metaDescription || `Side-by-side comparison data for ${toolNames.join(' vs ')}, covering pricing, features, and independent ratings.`,
     url: canonical,
-    creator: {
-      '@type': 'Person',
-      name: AUTHOR,
-      url: `${SITE}/about`,
-      sameAs: AUTHOR_SAME_AS,
-    },
+    creator: AUTHOR_PERSON,
     variableMeasured: [
       {
         '@type': 'PropertyValue',
@@ -1667,12 +1688,7 @@ function reviewSchema(tool, canonical) {
     url: canonical,
     datePublished: publishDate,
     dateModified: TODAY,
-    author: {
-      '@type': 'Person',
-      name: AUTHOR,
-      url: `${SITE}/about`,
-      sameAs: AUTHOR_SAME_AS,
-    },
+    author: AUTHOR_PERSON,
     publisher: {
       '@type': 'Organization',
       name: 'AI Nexus',
@@ -1739,12 +1755,7 @@ function claimReviewSchema(tool, canonical) {
     '@type': 'ClaimReview',
     url: canonical,
     datePublished: publishDate,
-    author: {
-      '@type': 'Person',
-      name: AUTHOR,
-      url: `${SITE}/about`,
-      sameAs: AUTHOR_SAME_AS,
-    },
+    author: AUTHOR_PERSON,
     claimReviewed: `${tool.name} deserves a rating of ${tool.rating} out of 5 for ${(tool.category || 'AI tools').toLowerCase()} use cases.`,
     reviewRating: {
       '@type': 'Rating',
@@ -1788,12 +1799,7 @@ function articleSchema({ title, description, canonical, wordCount, imageUrl, dat
       width: 1200,
       height: 630,
     },
-    author: {
-      '@type': 'Person',
-      name: AUTHOR,
-      url: `${SITE}/about`,
-      sameAs: AUTHOR_SAME_AS,
-    },
+    author: AUTHOR_PERSON,
     publisher: {
       '@type': 'Organization',
       name: 'AI Nexus',
@@ -3928,8 +3934,7 @@ console.log('\nStatic pages:');
       name: title,
       description,
       author: {
-        '@type': 'Person',
-        name: AUTHOR,
+        ...AUTHOR_PERSON,
         url: canonical,
         // I-18 Fix: ImageObject with caption acts as schema.org's alt-text
         // equivalent — gives image search engines keyword-rich context for
@@ -3939,9 +3944,6 @@ console.log('\nStatic pages:');
           url: `${SITE}/author-photo.jpg`,
           caption: 'Navneet Arya — Independent AI Workflow & Automation Researcher',
         },
-        sameAs: AUTHOR_SAME_AS,
-        knowsAbout: ['Artificial Intelligence', 'AI Writing Tools', 'Podcast Software', 'Social Media Automation', 'AI Productivity Tools'],
-        worksFor: { '@type': 'Organization', name: 'AI Nexus', url: SITE },
       },
     },
     breadcrumbs([
@@ -4202,7 +4204,7 @@ for (const post of BLOG_POSTS) {
       // FIX 2 (SEO-High): Added wordCount + image fields — derive from readTimeMinutes (~220 words/min) when not set
       wordCount: post.wordCount || (post.readTimeMinutes ? post.readTimeMinutes * 220 : 1800),
       image: { '@type': 'ImageObject', url: resolveOgImage(`blog/${post.slug}`), width: 1200, height: 630 },
-      author: { '@type': 'Person', name: AUTHOR, url: `${SITE}/about`, sameAs: AUTHOR_SAME_AS },
+      author: AUTHOR_PERSON,
       publisher: { '@type': 'Organization', name: 'AI Nexus', url: SITE },
       inLanguage: INDIA_BLOG_SLUGS.has(post.slug) ? 'en-IN' : 'en-US',
       ...(INDIA_BLOG_SLUGS.has(post.slug) ? { areaServed: 'IN' } : {}),
@@ -4248,7 +4250,7 @@ for (const post of BLOG_POSTS) {
           name: post.seoTitle || post.title,
           description: post.metaDescription,
           url: canonical,
-          creator: { '@type': 'Person', name: AUTHOR, url: `${SITE}/about/` },
+          creator: AUTHOR_PERSON,
           dateModified: post.dateModified || post.datePublished,
           keywords: [post.category || 'AI tools', 'AI tools comparison', '2026'],
           license: 'https://creativecommons.org/licenses/by/4.0/',
@@ -4784,13 +4786,8 @@ ${items}
     // canonical Person entity defined in index.html's Organization+Person
     // @graph, so AI systems treat it as one consistent entity, not a duplicate.
     author: {
-      '@type': 'Person',
-      '@id': `${SITE}/about#author`,
-      name: AUTHOR,
-      url: `${SITE}/about/`,
-      jobTitle: 'Independent AI Tools Researcher',
+      ...AUTHOR_PERSON,
       description: `${AUTHOR} independently researches AI tools since 2022 — covering pricing, features, and real-world use cases across 33+ products. No sponsored rankings.`,
-      sameAs: AUTHOR_SAME_AS,
     },
     isPartOf: { '@id': `${SITE}/#website` },
     breadcrumb: {

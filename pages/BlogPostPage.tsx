@@ -309,6 +309,16 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
         '@id': `${SITE_CONFIG.siteUrl}/about/#author`,
         name: post.author,
         url: `${SITE_CONFIG.siteUrl}/about`,
+        jobTitle: 'Independent AI Tools Researcher',
+        worksFor: [
+          { '@type': 'Organization', name: 'AI Nexus', url: SITE_CONFIG.siteUrl },
+          {
+            '@type': 'Organization',
+            name: 'BOLD',
+            url: 'https://www.bold.com',
+            description: 'AI Automation & Performance Testing — Navneet Arya\'s primary employer, where AI tools are evaluated for real production workflows.',
+          },
+        ],
         sameAs: [
           'https://www.linkedin.com/in/navneetarya/',
           'https://twitter.com/ainexustools',

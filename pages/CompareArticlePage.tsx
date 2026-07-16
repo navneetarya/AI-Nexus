@@ -286,7 +286,21 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
       'description': article.metaDescription,
       'datePublished': '2026-01-01',
       'dateModified': new Date().toISOString().split('T')[0],
-      'author': { '@type': 'Person', 'name': SITE_CONFIG.authorName, 'url': `${SITE_CONFIG.siteUrl}/about` },
+      'author': {
+        '@type': 'Person',
+        'name': SITE_CONFIG.authorName,
+        'url': `${SITE_CONFIG.siteUrl}/about`,
+        'jobTitle': 'Independent AI Tools Researcher',
+        'worksFor': [
+          { '@type': 'Organization', 'name': 'AI Nexus', 'url': SITE_CONFIG.siteUrl },
+          {
+            '@type': 'Organization',
+            'name': 'BOLD',
+            'url': 'https://www.bold.com',
+            'description': 'AI Automation & Performance Testing — Navneet Arya\'s primary employer, where AI tools are evaluated for real production workflows.',
+          },
+        ],
+      },
       'publisher': { '@type': 'Organization', 'name': 'AI Nexus', 'url': SITE_CONFIG.siteUrl },
       'mainEntityOfPage': { '@type': 'WebPage', '@id': `${SITE_CONFIG.siteUrl}/compare/${article.slug}` },
     };
