@@ -1,7 +1,8 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { SITE_CONFIG } from './site-config';
 import { HomePage } from './pages/HomePage';
-import { StickyNewsletterBar, ScrollNewsletterPopup } from './components/BeehiivForm';
+const StickyNewsletterBar = React.lazy(() => import('./components/BeehiivForm').then(m => ({ default: m.StickyNewsletterBar })));
+const ScrollNewsletterPopup = React.lazy(() => import('./components/BeehiivForm').then(m => ({ default: m.ScrollNewsletterPopup })));
 import type { BlogPost } from './blog/types';
 import type { CompareArticle } from './pages/compare-data';
 import type { Tool } from './types';
@@ -586,8 +587,10 @@ function AppWithStickyBar() {
   return (
     <>
       <App />
-      <StickyNewsletterBar />
-      <ScrollNewsletterPopup />
+      <Suspense fallback={null}>
+        <StickyNewsletterBar />
+        <ScrollNewsletterPopup />
+      </Suspense>
     </>
   );
 }

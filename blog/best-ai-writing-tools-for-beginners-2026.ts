@@ -11,7 +11,7 @@ import { BlogPost } from './types';
 
 const post: BlogPost = {
   slug: 'best-ai-writing-tools-for-beginners-2026',
-  title: 'Best AI Writing Tools for Beginners 2026 — Tested & Ranked',
+  title: 'Best AI Writing Tools for Beginners 2026 — Reviewed & Ranked',
   seoTitle: 'Best AI Writing Tools for Beginners 2026',
   metaDescription: 'New to AI writing tools? Rytr, Grammarly, QuillBot, and Writesonic compared for beginners — the exact order to try them and what each is for.',
   datePublished: '2026-04-29',

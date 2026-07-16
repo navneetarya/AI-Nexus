@@ -12,7 +12,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'cursor-ai-review-2026',
   title: 'Cursor AI Review 2026: Is It the Best AI Code Editor?',
-  seoTitle: 'Cursor AI Review 2026: After 3 Months of Daily Use — Still Worth $20/mo?',
+  seoTitle: 'Cursor AI Review 2026: Still Worth $20/mo?',
   metaDescription: 'Cursor AI reviewed for 2026 — pricing, free plan, Tab completion, Composer, and Agent mode tested. Is it worth $20/month over GitHub Copilot? Honest verdict.',
   datePublished: '2026-05-25',
   dateModified: '2026-06-14',

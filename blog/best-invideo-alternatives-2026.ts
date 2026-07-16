@@ -8,7 +8,7 @@ import { BlogPost } from './types';
 
 const post: BlogPost = {
   slug: 'best-invideo-alternatives-2026',
-  title: 'Best InVideo AI Alternatives 2026 — Tested for Faceless YouTube',
+  title: 'Best InVideo AI Alternatives 2026 — Reviewed for Faceless YouTube',
   seoTitle: 'Best InVideo AI Alternatives 2026',
   metaDescription:
     'Pictory, Opus Clip, and Murf AI compared as InVideo alternatives in 2026 — which wins for faceless YouTube, short-form clips, and video repurposing.',

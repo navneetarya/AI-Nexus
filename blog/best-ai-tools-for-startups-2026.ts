@@ -3,7 +3,7 @@
 const post: BlogPost = {
   slug: 'best-ai-tools-for-startups-2026',
   title: 'Best AI Tools for Startups in 2026 — Build Faster With Less',
-  seoTitle: 'Best AI Tools for Startups 2026 — Tested',
+  seoTitle: 'Best AI Tools for Startups 2026 — Reviewed',
   metaDescription: 'The best AI tools for startups in 2026: Notion AI, Gamma, Claude, Canva AI, and Grammarly compared. Build product, content, and pitches faster with these tools.',
   datePublished: '2026-05-23',
   dateModified: '2026-06-14',

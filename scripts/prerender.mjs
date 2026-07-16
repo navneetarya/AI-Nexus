@@ -319,7 +319,7 @@ const TOOLS = [
     description: 'Podcastle gives you studio-quality recording, AI-powered noise removal, and one-click publishing. Record remotely with guests and let AI clean up the audio automatically.',
     pricing: 'Free + from $11.99/month', bestFor: 'Podcasters & interviewers',
     rating: 4.2, lastTested: 'April 2026',
-    seoTitle: 'Podcastle Review 2026 — Free Plan, AI Noise Removal Tested | AI Nexus',
+    seoTitle: 'Podcastle Review 2026 — Free Plan, AI Noise Removal Reviewed | AI Nexus',
     reviewBody: 'Podcastle is the strongest tool in 2026 for podcasters and remote interviewers who prioritise recording quality and ease of use over advanced editing capabilities. The local recording architecture — each participant records on their own device and uploads separate audio tracks — means recording quality is independent of internet connection stability during the interview. This is the technical detail that matters most for remote podcast production: Zoom and similar tools compress audio over the network; Podcastle captures full-quality audio locally. The AI audio enhancement (Magic Dust) removes background noise, echo, room reverb, and keyboard clicks in a single click — consistently rated among the most effective one-click noise removal tools at this price point in G2 and Trustpilot reviews. The free plan includes unlimited recordings and up to 10 hours of Magic Dust enhancement per month, making it genuinely functional for low-volume podcasting. The Revoice feature lets users clone their voice and type corrections that Podcastle renders in the cloned voice — fixing stumbles without re-recording segments. Paid plans start at $11.99/month and include direct publishing to Spotify, Apple Podcasts, and other major platforms without needing a separate hosting service. The main limitation compared to Descript is editing depth: Podcastle does not offer transcript-based editing. For podcasters who produce long interviews requiring heavy content editing (removing segments, restructuring the episode), Descript text-based editing is more efficient. Podcastle is the better choice when recording quality and simplicity are the primary requirements.',
   },
   {
@@ -442,7 +442,7 @@ const TOOLS = [
     description: 'Cursor is a fork of VS Code rebuilt from the ground up around AI. Every feature — code completion, inline edits, multi-file refactoring, and terminal commands — is designed for AI-first development. It is the fastest-growing code editor in 2026.',
     pricing: 'Free + $20/month Pro', bestFor: 'Developers who want AI built in — not bolted on',
     rating: 4.4, lastTested: 'June 2026',
-    seoTitle: 'Cursor Review 2026 — AI Code Editor Tested, Free vs Pro | AI Nexus',
+    seoTitle: 'Cursor Review 2026 — AI Code Editor Reviewed, Free vs Pro | AI Nexus',
     metaDescription: 'Cursor review 2026 — AI-native VS Code fork used by 40,000 NVIDIA engineers. Free plan limits, $20/month Pro, and who should switch from GitHub Copilot.',
     reviewBody: 'Cursor is the fastest-growing AI code editor in 2026 — a fork of VS Code rebuilt specifically for AI-first development workflows. Unlike GitHub Copilot (a plugin bolted onto an existing IDE), Cursor bakes AI into every feature: Tab completions predict multi-line changes across the entire codebase, Cmd+K rewrites highlighted code with natural language instructions in under 3 seconds, and Composer handles multi-file refactoring tasks that would take hours manually. The @Codebase feature is the most powerful differentiator — it reads every file in your project and answers architecture questions, traces bugs across files, and plans refactors with full project context. In testing on a TypeScript project with 80+ files, Cursor correctly identified a UUID validation gap that GitHub Copilot Chat missed. VS Code extension compatibility is complete: Cursor installs with a first-run migration wizard that transfers all existing extensions, keybindings, and settings. The Hobby free plan gives 2,000 completions per month and basic Composer access with no credit card. Pro at $20/month gives unlimited completions, 500 fast requests with Claude 3.5 and GPT-4o, and full Advanced Composer. The main limitation compared to GitHub Copilot ($10/month) is price — Pro is double the cost. For developers spending 4+ hours daily on complex multi-file tasks, the Composer and @Codebase features justify the premium. For developers who primarily need inline autocomplete, GitHub Copilot at $10/month delivers 80% of the value at half the cost.',
   },
@@ -467,7 +467,7 @@ const TOOLS = [
     pricing: 'Free + $15/month Pro', bestFor: 'Developers who want a powerful free AI editor or a cheaper Cursor alternative',
     rating: 4.5, lastTested: 'June 2026',
     reviewType: 'research-based',
-    seoTitle: 'Windsurf Review 2026 — Free AI Code Editor by Codeium Tested | AI Nexus',
+    seoTitle: 'Windsurf Review 2026 — Free AI Code Editor by Codeium Reviewed | AI Nexus',
     metaDescription: 'Windsurf review 2026 — free AI code editor by Codeium. Cascade agent, free plan compared to Cursor $20/month. Is it the best free AI IDE in 2026?',
     reviewBody: "Windsurf is an AI-native code editor from Codeium that gives developers the most generous free plan of any major AI code editor in 2026. The free tier provides unlimited AI completions — no monthly cap — plus the Cascade agentic mode for task-based coding with confirmation checkpoints before any change is applied. This free-first model means developers can use Windsurf for real daily work without a paid subscription, unlike Cursor (Hobby plan limits) or GitHub Copilot (paid-only for individuals). Cascade is the flagship feature: describe a task in plain English, and Windsurf plans the changes, shows a diff across affected files, and waits for approval before executing — safer than fully autonomous agents for cautious users or teams needing audit trails. Autocomplete is powered by Codeium's engine, consistently rated at or above Cursor's completion quality for block-level and individual-file suggestions. At $15/month Pro (vs Cursor's $20/month), Windsurf saves developers $60/year for comparable coding AI capability. VS Code extension compatibility is complete — settings, themes, and extensions migrate automatically on first launch. The main limitation vs Cursor: weaker full-codebase query capability. Cursor's @Codebase and Composer handle complex multi-file refactors across large repositories more effectively. For focused, confirmation-based agent tasks on individual modules and smaller projects, Windsurf's Cascade is excellent. For full-repository AI queries on complex multi-file codebases, Cursor leads.",
     updateLog: [
@@ -905,7 +905,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'ocoya-vs-buffer-vs-hootsuite',
     title: 'Ocoya vs Buffer vs Hootsuite (2026): Which Social Media Tool Is Actually Worth It?',
-    seoTitle: 'Ocoya vs Buffer vs Hootsuite 2026 — Which Wins? (Tested All)',
+    seoTitle: 'Ocoya vs Buffer vs Hootsuite 2026 — Which Wins? (Compared)',
     metaDescription: 'Ocoya vs Buffer vs Hootsuite 2026: compared for solopreneurs and small businesses. AI features, real pricing, and which tool wins for content creators.',
     faqs: [
       { q: 'Is Ocoya better than Buffer?', a: 'For solo creators and small businesses that also need AI caption writing, Ocoya is the better choice. Buffer is better if you only need scheduling and already have a content pipeline — its interface is cleaner and the free plan is generous.' },
@@ -918,7 +918,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'leonardo-vs-midjourney',
     title: 'Leonardo.ai vs Midjourney (2026): Which AI Image Generator Should You Use?',
-    seoTitle: 'Leonardo.ai vs Midjourney 2026 — Which Image AI? (Tested Both)',
+    seoTitle: 'Leonardo.ai vs Midjourney 2026 — Which Image AI? (Compared)',
     metaDescription: 'Leonardo.ai vs Midjourney 2026: compared for creators, designers, and game devs. Output quality, commercial rights, and which image AI wins in 2026.',
     faqs: [
       { q: 'Is Leonardo.ai better than Midjourney?', a: 'They excel at different things. Midjourney produces the highest aesthetic quality for one-off images — painterly, cinematic outputs that other tools struggle to match. Leonardo.ai gives you far more control: 150+ fine-tuned models, custom model training, and a canvas editor. For consistent brand or character visuals across many images, Leonardo.ai wins. For single standout images where quality is everything, Midjourney wins.' },
@@ -931,7 +931,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'replit-vs-github-copilot',
     title: 'Replit vs GitHub Copilot (2026): Which AI Coding Tool Is Right for You?',
-    seoTitle: 'Replit vs GitHub Copilot 2026 — Which Coding AI? (Tested Both)',
+    seoTitle: 'Replit vs GitHub Copilot 2026 — Which Coding AI? (Compared)',
     metaDescription: 'Replit vs GitHub Copilot 2026: compared for beginners and indie devs. What each does, where each wins, and which AI coding tool to choose in 2026.',
     faqs: [
       { q: 'Is Replit better than GitHub Copilot?', a: 'They solve different problems. Replit is a browser-based coding environment with built-in AI — you write, run, and deploy code all in one place, no local setup needed. GitHub Copilot is an AI autocomplete assistant that works inside existing IDEs like VS Code. If you\'re a beginner or building side projects, Replit is more useful. If you\'re a professional developer already in VS Code, Copilot is what you actually want.' },
@@ -959,7 +959,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'grammarly-vs-writesonic',
     title: 'Grammarly vs Writesonic (2026): Which AI Writing Tool Is Right for You?',
-    seoTitle: 'Grammarly vs Writesonic 2026 — Which Do You Need? (Tested Both)',
+    seoTitle: 'Grammarly vs Writesonic 2026 — Which Do You Need? (Compared)',
     metaDescription: 'Grammarly vs Writesonic 2026: one fixes your writing, the other generates it. Compared for freelancers and bloggers — which one you actually need.',
     faqs: [
       { q: 'Is Grammarly better than Writesonic for writing?', a: 'They do different things. Grammarly improves writing you\'ve already produced — grammar, clarity, tone. Writesonic generates new content from scratch. For editing and proofreading, Grammarly wins. For generating blog posts and marketing copy, Writesonic wins. Most serious content creators use both.' },
@@ -983,7 +983,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'taskade-vs-asana',
     title: 'Taskade vs Asana (2026): Which Project Management Tool Should You Use?',
-    seoTitle: 'Taskade vs Asana 2026 — Which PM Tool Wins? (Tested Both)',
+    seoTitle: 'Taskade vs Asana 2026 — Which PM Tool Wins? (Compared)',
     metaDescription: 'Taskade vs Asana 2026: compared for freelancers and remote teams. AI features, real pricing, and an honest verdict on which project management tool wins.',
     faqs: [
       { q: 'Is Taskade better than Asana for small teams?', a: 'For teams of 1–8 people, Taskade offers better value than Asana in 2026. The workspace-based pricing (not per user) makes it dramatically cheaper, the AI agents that generate project plans and status reports are more integrated than Asana\'s AI add-ons, and the free plan is more functional. Asana\'s depth becomes worthwhile at larger team sizes and enterprise complexity.' },
@@ -998,7 +998,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'photoroom-vs-remove-bg',
     title: 'PhotoRoom vs Remove.bg (2026): Which Background Remover Is Actually Better?',
-    seoTitle: 'PhotoRoom vs Remove.bg 2026 — Which Wins? (Tested Both)',
+    seoTitle: 'PhotoRoom vs Remove.bg 2026 — Which Wins? (Compared)',
     metaDescription: 'PhotoRoom vs Remove.bg 2026: compared for e-commerce sellers and creators. Accuracy tests, free plan breakdown, and which background remover to use.',
     faqs: [
       { q: 'Is PhotoRoom better than Remove.bg?', a: 'PhotoRoom is the better long-term tool for anyone doing product photography regularly. It removes backgrounds more accurately on complex subjects, replaces backgrounds with AI-generated studio scenes, supports batch editing of hundreds of images, and has excellent iOS and Android apps. Remove.bg is faster for single one-off images with no subscription needed.' },
@@ -1024,7 +1024,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'grammarly-vs-prowritingaid',
     title: 'Grammarly vs ProWritingAid (2026): Which Grammar Checker Actually Wins?',
-    seoTitle: 'Grammarly vs ProWritingAid 2026 — Tested & Compared',
+    seoTitle: 'Grammarly vs ProWritingAid 2026 — Compared',
     metaDescription: 'Grammarly vs ProWritingAid 2026: compared for writers, bloggers, and students. Accuracy tests, real pricing, and which grammar tool to use in 2026.',
     faqs: [
       { q: 'Is ProWritingAid better than Grammarly?', a: 'ProWritingAid is better for fiction and long-form creative writing — its 20+ style reports analyse pacing, dialogue, and sentence variety. Grammarly is more accurate for everyday professional writing, emails, and content creation.' },
@@ -1050,7 +1050,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'gamma-vs-beautiful-ai',
     title: 'Gamma vs Beautiful.ai (2026): Which AI Presentation Tool Wins?',
-    seoTitle: 'Gamma vs Beautiful.ai 2026 — Tested & Compared',
+    seoTitle: 'Gamma vs Beautiful.ai 2026 — Compared',
     metaDescription: 'Gamma vs Beautiful.ai compared for students, startups, and professionals. Free plans, AI generation speed, and design quality tested side-by-side in 2026.',
     faqs: [
       { q: 'Is Gamma free?', a: 'Yes. Gamma offers 400 AI credits on signup — enough for 4-5 complete presentations. Free presentations include a small Gamma badge. Paid plans from $8/month remove the badge and add unlimited AI creation.' },
@@ -1076,7 +1076,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'claude-code-vs-github-copilot-vs-replit',
     title: 'Claude Code vs GitHub Copilot vs Replit 2026: Best AI Coding Tool?',
-    seoTitle: 'Claude Code vs GitHub Copilot vs Replit 2026 — Tested',
+    seoTitle: 'Claude Code vs GitHub Copilot vs Replit 2026 — Compared',
     metaDescription: 'Claude Code vs GitHub Copilot vs Replit 2026: compared for developers and non-coders. Real pricing, AI quality, and which coding tool wins in 2026.',
     faqs: [
       { q: 'Is Claude Code better than GitHub Copilot?', a: 'For autonomous multi-step tasks and complex refactoring, yes — Claude Code operates more like an agent that reads your entire codebase and executes multi-file changes. GitHub Copilot is better for inline autocomplete and single-file suggestions inside your IDE. They solve different problems and many advanced developers use both.' },
@@ -1130,7 +1130,7 @@ const COMPARE_ARTICLES = [
   {
     slug: 'claude-vs-gemini-coding',
     title: 'Claude vs Gemini for Coding (2026): Which AI Is Better for Developers?',
-    seoTitle: 'Claude vs Gemini for Coding 2026 — Tested',
+    seoTitle: 'Claude vs Gemini for Coding 2026 — Compared',
     metaDescription: 'Claude vs Gemini for coding compared across debugging, code generation, and explanation. Which AI model is better for developers in 2026? Honest verdict.',
     faqs: [
       { q: 'Is Claude better than Gemini for coding?', a: 'Claude 3.5 Sonnet outperforms Gemini 1.5 Pro on most coding tasks — cleaner code generation, better debugging explanations, and more thorough test writing. Gemini is better for Google ecosystem code (Apps Script, Firebase) and has a larger free-tier context window. For general development, Claude wins. For Google-specific development, Gemini is competitive.' },
@@ -2058,7 +2058,7 @@ const BLOG_POSTS = [
   // ── Week 4 additions ──────────────────────────────────────────────────────
   {
     slug: 'best-grammarly-alternatives',
-    title: 'Best Grammarly Alternatives 2026 — Cheaper Options Tested & Ranked',
+    title: 'Best Grammarly Alternatives 2026 — Cheaper Options Reviewed & Ranked',
     metaDescription: '8 Grammarly alternatives researched so you don\'t waste $12/month. QuillBot wins for students, Rytr for creators — plus 2 genuinely free options.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
@@ -2204,7 +2204,7 @@ const BLOG_POSTS = [
   },
   {
     slug: 'best-invideo-alternatives-2026',
-    title: 'Best InVideo AI Alternatives 2026 — Tested for Faceless YouTube',
+    title: 'Best InVideo AI Alternatives 2026 — Reviewed for Faceless YouTube',
     metaDescription: 'Pictory, Opus Clip, and Murf AI compared as InVideo alternatives in 2026 — which wins for faceless YouTube, short-form clips, and video repurposing.',
     datePublished: '2026-05-05',
     dateModified: '2026-05-10',
@@ -2220,7 +2220,7 @@ const BLOG_POSTS = [
   // SEO-07 Tier 2: jasper ai alternatives — 3,200/mo, KD 24
   {
     slug: 'jasper-ai-alternatives',
-    title: 'Best Jasper AI Alternatives 2026 — Cheaper & Better Options Tested',
+    title: 'Best Jasper AI Alternatives 2026 — Cheaper & Better Options Reviewed',
     metaDescription: 'Jasper AI at $49/month too expensive? Writesonic, Rytr, Frase, and Copy.ai compared as alternatives with honest pricing and output quality breakdown.',
     datePublished: '2026-05-06',
     dateModified: '2026-05-10',
@@ -2235,7 +2235,7 @@ const BLOG_POSTS = [
   // Week 2 blog posts — H7, H9, H10, H15, M8, M9
   {
     slug: 'chatgpt-alternatives-free-2026',
-    title: 'Best Free ChatGPT Alternatives 2026 — Tested & Ranked',
+    title: 'Best Free ChatGPT Alternatives 2026 — Reviewed & Ranked',
     metaDescription: 'Best free ChatGPT alternatives 2026: Rytr, Writesonic, Perplexity, and Gemini compared on writing and research. Honest verdict on which actually delivers.',
     datePublished: '2026-05-06',
     dateModified: '2026-05-10',
@@ -2249,7 +2249,7 @@ const BLOG_POSTS = [
   },
   {
     slug: 'best-ai-coding-tools-2026',
-    title: 'Best AI Coding Tools 2026 — Tested & Ranked',
+    title: 'Best AI Coding Tools 2026 — Reviewed & Ranked',
     metaDescription: 'Best AI coding tools 2026: Replit, GitHub Copilot, Cursor, and Codeium compared on code generation, debugging, and deployment. Independent verdict.',
     quickAnswer: 'The best AI coding tool in 2026 is Cursor ($20/mo Pro) for professional developers needing full-codebase AI. GitHub Copilot ($10/mo) wins for VS Code users on a budget. Replit (free) is best for beginners and browser-based coding. Windsurf (free + $15/mo) offers the most generous free plan. This guide compares 5 tools on features, pricing, and use case.',
     datePublished: '2026-05-05',
@@ -2264,7 +2264,7 @@ const BLOG_POSTS = [
   },
   {
     slug: 'best-ai-logo-makers-free-2026',
-    title: 'Best Free AI Logo Makers 2026 — Tested & Ranked',
+    title: 'Best Free AI Logo Makers 2026 — Reviewed & Ranked',
     metaDescription: 'Best free AI logo makers 2026: Looka, Canva AI, and Leonardo.ai compared for startups and small businesses. No design skills needed. Honest verdict.',
     datePublished: '2026-05-04',
     dateModified: '2026-05-08',
@@ -2278,7 +2278,7 @@ const BLOG_POSTS = [
   },
   {
     slug: 'best-ai-marketing-tools-2026',
-    title: 'Best AI Marketing Tools 2026 — Tested & Ranked',
+    title: 'Best AI Marketing Tools 2026 — Reviewed & Ranked',
     metaDescription: 'Best AI marketing tools tested in 2026. Frase, Ocoya, Jasper, and Writesonic compared for SEO content, social media, and campaign management.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-08',
@@ -2292,7 +2292,7 @@ const BLOG_POSTS = [
   },
   {
     slug: 'ai-tools-for-teachers-2026',
-    title: 'Best AI Tools for Teachers 2026 — Tested & Ranked',
+    title: 'Best AI Tools for Teachers 2026 — Reviewed & Ranked',
     seoTitle: 'Best AI Tools for Teachers 2026 — Free & Paid [Researched by AI Tools Expert]',
     metaDescription: 'Best AI tools for teachers 2026: Gamma, Grammarly, Notion AI, and Rytr compared for lesson planning, presentations, and student feedback. Independent.',
     datePublished: '2026-05-05',
@@ -2307,7 +2307,7 @@ const BLOG_POSTS = [
   },
   {
     slug: 'best-midjourney-alternatives-2026',
-    title: 'Best Midjourney Alternatives 2026 — Free & Tested',
+    title: 'Best Midjourney Alternatives 2026 — Free & Reviewed',
     metaDescription: 'Best Midjourney alternatives tested in 2026. Leonardo.ai, Stable Diffusion, DALL-E, and Adobe Firefly compared for free AI image generation.',
     datePublished: '2026-05-04',
     dateModified: '2026-05-08',
@@ -2399,7 +2399,7 @@ const BLOG_POSTS = [
   // W2-T1: best-ai-writing-tools-2026 — 5,400/mo · Medium KD — head keyword editorial post
   {
     slug: 'best-ai-writing-tools-2026',
-    title: 'Best AI Writing Tools 2026 — Tested, Ranked & Compared',
+    title: 'Best AI Writing Tools 2026 — Reviewed, Ranked & Compared',
     metaDescription: '6 AI writing tools tested for 2026: Grammarly, Rytr, QuillBot, Writesonic, Jasper, and Frase ranked by use case, free plan quality, and real output.',
     quickAnswer: 'The best AI writing tool in 2026 depends on your goal: Grammarly (free) for editing and improving existing text; Rytr ($9/mo) for generating drafts fast; QuillBot (free) for paraphrasing; Writesonic ($16/mo) for SEO blog posts; Frase ($15/mo) for SEO research + writing; Jasper ($39/mo) for brand-consistent team content. This guide compares all 6 on price, free plans, and output quality.',
     datePublished: '2026-05-14',
@@ -2416,7 +2416,7 @@ const BLOG_POSTS = [
   // W1-T1: best-ai-tools-for-content-creators-free-2026: 3,200/mo · Low difficulty
   {
     slug: 'best-ai-tools-for-content-creators-free-2026',
-    title: 'Best Free AI Tools for Content Creators 2026 — Tested on Free Plans',
+    title: 'Best Free AI Tools for Content Creators 2026 — Reviewed: Free Plans Compared',
     metaDescription: 'Best free AI tools for content creators 2026: 7 tools with permanent free plans. No credit card, no watermarks. Grammarly, Rytr, Leonardo.ai ranked.',
     datePublished: '2026-05-14',
     dateModified: '2026-05-14',
@@ -2530,8 +2530,8 @@ const BLOG_POSTS = [
   // ── Research Intelligence tier — Week 6 additions ──────────────────────────
   {
     slug: 'best-ai-tools-for-developers-2026',
-    title: 'Best AI Tools for Developers in 2026 — Tested & Ranked',
-    seoTitle: 'Best AI Tools for Developers 2026 — Tested',
+    title: 'Best AI Tools for Developers in 2026 — Reviewed & Ranked',
+    seoTitle: 'Best AI Tools for Developers 2026 — Reviewed',
     metaDescription: 'Best AI tools for software developers 2026: GitHub Copilot, Cursor, Claude, Replit, and Warp compared on real projects. Independent researcher verdict.',
     datePublished: '2026-05-21',
     dateModified: '2026-05-21',
@@ -2545,7 +2545,7 @@ const BLOG_POSTS = [
   },
   {
     slug: 'best-ai-tools-for-automation-engineers-2026',
-    title: 'Best AI Tools for Automation Engineers in 2026 — Independently Tested',
+    title: 'Best AI Tools for Automation Engineers in 2026 — Independently Reviewed',
     seoTitle: 'Best AI Tools for Automation Engineers 2026',
     metaDescription: 'Best AI tools for QA automation engineers 2026: GitHub Copilot, Claude, Testim, and Applitools compared for test automation. Independent research.',
     datePublished: '2026-05-22',
@@ -2561,7 +2561,7 @@ const BLOG_POSTS = [
   {
     slug: 'best-ai-tools-for-startups-2026',
     title: 'Best AI Tools for Startups in 2026 — Build Faster With Less',
-    seoTitle: 'Best AI Tools for Startups 2026 — Tested',
+    seoTitle: 'Best AI Tools for Startups 2026 — Reviewed',
     metaDescription: 'Best AI tools for startups 2026: Notion AI, Gamma, Claude, Canva AI, and Grammarly compared. Build product, content, and pitches faster with these tools.',
     datePublished: '2026-05-23',
     dateModified: '2026-05-23',
@@ -2575,8 +2575,8 @@ const BLOG_POSTS = [
   },
   {
     slug: 'best-ai-tools-for-youtubers-2026',
-    title: 'Best AI Tools for YouTubers in 2026 — Tested by a Creator',
-    seoTitle: 'Best AI Tools for YouTubers 2026 — Tested',
+    title: 'Best AI Tools for YouTubers in 2026 — Reviewed for Creators',
+    seoTitle: 'Best AI Tools for YouTubers 2026 — Reviewed',
     metaDescription: 'Best AI tools for YouTube creators 2026: InVideo AI, Opus Clip, Descript, Murf AI, and VidIQ compared. Save hours per video. Independent research.',
     datePublished: '2026-05-23',
     dateModified: '2026-05-23',
@@ -2620,7 +2620,7 @@ const BLOG_POSTS = [
   },
   {
     slug: 'cheapest-ai-coding-tools-2026',
-    title: 'Cheapest AI Coding Tools in 2026 — Real Pricing, Tested',
+    title: 'Cheapest AI Coding Tools in 2026 — Real Pricing, Compared',
     seoTitle: 'Cheapest AI Coding Tools 2026 — Honest Pricing',
     metaDescription: 'Cheapest AI coding tools 2026 compared by real monthly cost. Free options, sub-$10 tools, and whether cheaper means worse. Independent pricing research.',
     datePublished: '2026-05-25',
@@ -3120,7 +3120,7 @@ const BLOG_POSTS = [
   {
     slug: 'best-ai-presentation-tools-2026',
     title: 'Best AI Presentation Tools 2026: Gamma vs Beautiful.ai vs Canva AI vs NotebookLM',
-    seoTitle: 'Best AI Presentation Tools 2026: Tested & Ranked',
+    seoTitle: 'Best AI Presentation Tools 2026: Reviewed & Ranked',
     metaDescription: 'Best AI presentation tools 2026 compared: Gamma, Beautiful.ai, Canva AI, NotebookLM. Tome shut down in 2025 — what to use instead, with verified pricing.',
     datePublished: '2026-06-30',
     dateModified: '2026-06-30',
@@ -4328,7 +4328,7 @@ for (const post of BLOG_POSTS) {
 // ── 6. Best Free AI Tools landing page (/best-free-ai-tools) ────────────────
 {
   const canonical = `${SITE}/best-free-ai-tools/`;
-  const title = `Best Free AI Tools 2026 — Tested & Ranked | AI Nexus`;
+  const title = `Best Free AI Tools 2026 — Reviewed & Ranked | AI Nexus`;
   const description = `13 AI tools with permanent free plans — independently researched by ${AUTHOR}. Covers writing, image generation, video, audio, design, coding and productivity. No credit card required for any.`;
 
   // Tools with permanent free plans (mirrors BestFreeAIToolsPage.tsx)
@@ -4408,7 +4408,7 @@ for (const post of BLOG_POSTS) {
 // Unique angle: Free plan comparison with INR pricing for Indian creators
 {
   const canonical = `${SITE}/best-ai-logo-makers/`;
-  const title = `Best Free AI Logo Makers 2026 — Tested & Compared | AI Nexus`;
+  const title = `Best Free AI Logo Makers 2026 — Reviewed & Compared | AI Nexus`;
   const description = `4 AI logo tools independently tested by ${AUTHOR} — Looka, Canva AI, Leonardo.ai, and PhotoRoom. Free plan limits, INR pricing, and honest verdicts for solo creators and freelancers.`;
 
   const LOGO_SLUGS = ['looka', 'canva-ai', 'leonardo-ai', 'photoroom'];
@@ -4550,9 +4550,9 @@ For freelancers managing multiple clients, students juggling coursework, or team
 // ── 7. Category landing pages (/best-ai-writing-tools/ etc.) ────────────────
 {
   const CATEGORY_PAGES = [
-    { slug: 'best-ai-writing-tools', category: 'Writing', title: 'Best AI Writing Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI writing tools tested for 2026. Grammarly, Rytr, Writesonic, Frase, Jasper reviewed with free plans and honest verdicts.' },
-    { slug: 'best-ai-image-tools', category: 'Image', title: 'Best AI Image Generators 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI image generators tested in 2026. Leonardo.ai, PhotoRoom, and more with honest reviews.' },
-    { slug: 'best-ai-video-tools', category: 'Video', title: 'Best AI Video Tools 2026 — Tested & Ranked | AI Nexus', desc: 'Best AI video tools tested in 2026. InVideo AI, Pictory, Opus Clip reviewed for faceless YouTube and Shorts.' },
+    { slug: 'best-ai-writing-tools', category: 'Writing', title: 'Best AI Writing Tools 2026 — Reviewed & Ranked | AI Nexus', desc: 'Best AI writing tools reviewed for 2026. Grammarly, Rytr, Writesonic, Frase, Jasper compared with free plans and honest verdicts.' },
+    { slug: 'best-ai-image-tools', category: 'Image', title: 'Best AI Image Generators 2026 — Reviewed & Ranked | AI Nexus', desc: 'Best AI image generators reviewed in 2026. Leonardo.ai, PhotoRoom, and more with honest reviews.' },
+    { slug: 'best-ai-video-tools', category: 'Video', title: 'Best AI Video Tools 2026 — Reviewed & Ranked | AI Nexus', desc: 'Best AI video tools reviewed in 2026. InVideo AI, Pictory, Opus Clip compared for faceless YouTube and Shorts.' },
     { slug: 'best-ai-audio-tools', category: 'Audio', title: 'Best AI Audio Tools 2026 — Podcast, Voiceover & TTS Compared | AI Nexus', desc: 'Best AI audio tools in 2026 — Podcastle, Murf AI, ElevenLabs, Descript. Independently researched across 200+ verified reviews. Free plans compared. Podcast and voiceover picks.' },
     { slug: 'best-ai-marketing-tools', category: 'Marketing', title: 'Best AI Marketing Tools 2026 — SEO, Social & Content AI Compared | AI Nexus', desc: 'Best AI marketing tools in 2026 — Ocoya, Frase, Jasper, Writesonic for SEO and social media marketing. Independently researched. Free plans and pricing compared.' },
     { slug: 'best-ai-design-tools', category: 'Design', title: 'Best AI Design Tools 2026 — Logo, Presentation & Graphic AI Compared | AI Nexus', desc: 'Best AI design tools in 2026 — Canva AI, Looka, Gamma, Beautiful.ai. Free plans, pricing, and honest comparisons. No design experience needed.' },

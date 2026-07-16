@@ -2,7 +2,7 @@
 
 const post: BlogPost = {
   slug: 'best-ai-tools-for-automation-engineers-2026',
-  title: 'Best AI Tools for Automation Engineers in 2026 — Independently Tested',
+  title: 'Best AI Tools for Automation Engineers in 2026 — Independently Reviewed',
   seoTitle: 'Best AI Tools for Automation Engineers 2026',
   metaDescription: 'The best AI tools for QA and test automation engineers in 2026 — GitHub Copilot, Claude, Testim, and Applitools compared head-to-head. See research.',
   datePublished: '2026-05-22',

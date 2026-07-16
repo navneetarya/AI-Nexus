@@ -9,7 +9,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-notion-ai-alternatives-2026',
   title: 'Best Notion AI Alternatives 2026 — Independently Reviewed & Ranked',
-  seoTitle: 'Best Notion AI Alternatives 2026 — Tested',
+  seoTitle: 'Best Notion AI Alternatives 2026 — Reviewed',
   metaDescription: 'Taskade, Writesonic, and Frase compared as Notion AI alternatives for 2026 — which is better, which has a real free plan, and when to switch.',
   datePublished: '2026-05-05',
   dateModified: '2026-06-14',

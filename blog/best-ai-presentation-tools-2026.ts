@@ -19,7 +19,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-presentation-tools-2026',
   title: 'Best AI Presentation Tools 2026: Gamma vs Beautiful.ai vs Canva AI vs NotebookLM',
-  seoTitle: 'Best AI Presentation Tools 2026: Tested & Ranked',
+  seoTitle: 'Best AI Presentation Tools 2026: Reviewed & Ranked',
   metaDescription: 'Best AI presentation tools 2026 compared: Gamma, Beautiful.ai, Canva AI, NotebookLM. Tome shut down in 2025 — what to use instead, with verified pricing.',
   datePublished: '2026-06-30',
   dateModified: '2026-06-30',

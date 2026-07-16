@@ -75,7 +75,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "grammarly-vs-writesonic",
     "title": "Grammarly vs Writesonic (2026): Which AI Writing Tool Is Right for You?",
-    "seoTitle": "Grammarly vs Writesonic 2026: Which One Actually Fixes Your Writing? [Tested]",
+    "seoTitle": "Grammarly vs Writesonic 2026: Which One Actually Fixes Your Writing? [Compared]",
     "metaDescription": "Grammarly corrects. Writesonic generates. They don't compete — they solve different problems. Here's which one you need based on your actual workflow.",
     "keyword": "grammarly vs writesonic",
     "publishDate": "May 2026",
@@ -102,7 +102,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "photoroom-vs-remove-bg",
     "title": "PhotoRoom vs Remove.bg (2026): Which Background Remover Is Actually Better?",
-    "seoTitle": "PhotoRoom vs Remove.bg 2026 — Tested",
+    "seoTitle": "PhotoRoom vs Remove.bg 2026 — Compared",
     "metaDescription": "PhotoRoom vs Remove.bg compared for e-commerce sellers and creators. Real accuracy tests, free plan breakdown, and which background remover to use in 2026.",
     "keyword": "photoroom vs remove.bg",
     "publishDate": "May 2026",
@@ -111,7 +111,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "writesonic-vs-jasper",
     "title": "Writesonic vs Jasper (2026): Which AI Writing Tool Is Actually Worth the Money?",
-    "seoTitle": "Writesonic vs Jasper 2026 — Tested & Compared",
+    "seoTitle": "Writesonic vs Jasper 2026 — Compared",
     "metaDescription": "Writesonic vs Jasper compared for bloggers and marketing teams. Real pricing, SEO features, output quality, and an honest verdict on which AI writer wins in 2026.",
     "keyword": "writesonic vs jasper",
     "publishDate": "May 2026",
@@ -120,7 +120,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "grammarly-vs-prowritingaid",
     "title": "Grammarly vs ProWritingAid (2026): Which Grammar Checker Should You Use?",
-    "seoTitle": "Grammarly vs ProWritingAid 2026 — Tested",
+    "seoTitle": "Grammarly vs ProWritingAid 2026 — Compared",
     "metaDescription": "Grammarly vs ProWritingAid compared for writers of all types. Real accuracy tests, pricing, and which grammar checker wins for business writing vs fiction in 2026.",
     "keyword": "grammarly vs prowritingaid",
     "publishDate": "May 2026",
@@ -129,7 +129,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "leonardo-ai-vs-stable-diffusion",
     "title": "Leonardo.ai vs Stable Diffusion (2026): Which AI Image Generator Should You Use?",
-    "seoTitle": "Leonardo.ai vs Stable Diffusion 2026 — Tested",
+    "seoTitle": "Leonardo.ai vs Stable Diffusion 2026 — Compared",
     "metaDescription": "Leonardo.ai vs Stable Diffusion compared for creators and developers. Ease of use, output quality, pricing, and which AI image tool to choose in 2026.",
     "keyword": "leonardo ai vs stable diffusion",
     "publishDate": "May 2026",
@@ -138,7 +138,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "gamma-vs-beautiful-ai",
     "title": "Gamma vs Beautiful.ai (2026): Which AI Presentation Tool Should You Use?",
-    "seoTitle": "Gamma vs Beautiful.ai 2026 — Tested",
+    "seoTitle": "Gamma vs Beautiful.ai 2026 — Compared",
     "metaDescription": "Gamma vs Beautiful.ai compared for founders, students, and professionals. Free plans, AI generation speed, design quality, and which presentation tool wins in 2026.",
     "keyword": "gamma vs beautiful ai",
     "publishDate": "May 2026",
@@ -147,7 +147,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "invideo-vs-pictory",
     "title": "InVideo AI vs Pictory (2026): Which Text-to-Video Tool Should You Use?",
-    "seoTitle": "InVideo AI vs Pictory 2026 — Tested",
+    "seoTitle": "InVideo AI vs Pictory 2026 — Compared",
     "metaDescription": "InVideo AI vs Pictory compared for content creators and marketers. Real output quality, pricing, and which text-to-video tool wins for YouTube and repurposing in 2026.",
     "keyword": "invideo vs pictory",
     "publishDate": "May 2026",
@@ -156,7 +156,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "claude-code-vs-github-copilot-vs-replit",
     "title": "Claude Code vs GitHub Copilot vs Replit 2026: Best AI Coding Tool?",
-    "seoTitle": "Claude Code vs GitHub Copilot vs Replit 2026 — Tested",
+    "seoTitle": "Claude Code vs GitHub Copilot vs Replit 2026 — Compared",
     "metaDescription": "Claude Code vs GitHub Copilot vs Replit compared for developers and non-coders. Pricing, AI quality, and which coding tool wins in 2026.",
     "keyword": "claude code vs github copilot",
     "publishDate": "May 2026",
@@ -192,7 +192,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "claude-vs-gemini-coding",
     "title": "Claude vs Gemini for Coding (2026): Which AI Is Better for Developers?",
-    "seoTitle": "Claude vs Gemini for Coding 2026 — Tested",
+    "seoTitle": "Claude vs Gemini for Coding 2026 — Compared",
     "metaDescription": "Claude vs Gemini for coding compared across debugging, code generation, and explanation. Which AI model is better for developers in 2026? Honest verdict.",
     "keyword": "claude vs gemini coding",
     "publishDate": "May 2026",
@@ -201,7 +201,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
     "slug": "lovable-vs-bolt-vs-v0",
     "title": "Lovable vs Bolt vs v0 (2026): Which Vibe Coding Tool Actually Wins?",
-    "seoTitle": "Lovable vs Bolt vs v0 (2026): Tested 47 Projects — One Clear Winner",
+    "seoTitle": "Lovable vs Bolt vs v0 (2026): Compared Across 3 Build Tasks — One Clear Winner",
     "metaDescription": "Lovable vs Bolt vs v0 compared for non-developers and solopreneurs in 2026. Which vibe coding tool builds real apps faster? Honest research-based verdict.",
     "keyword": "lovable vs bolt vs v0",
     "publishDate": "June 2026",

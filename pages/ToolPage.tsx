@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { Tool } from '../types';
 import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award, Scale, Sun, Moon, BookOpen, Layers, Shield } from 'lucide-react';
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS, TOOLS } from '../constants';
 import { SharedNav } from './SharedNav';
 import { COMPARE_ARTICLES } from './compare-data';
 import { BLOG_POSTS } from '../blog/index';
-import { BeehiivForm } from '../components/BeehiivForm';
+const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 const C = {
   bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
@@ -1378,7 +1378,9 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
         )}
 
         {/* W4-T21: Newsletter signup — below verdict, builds owned audience + EEAT trust signal */}
-        <BeehiivForm variant="article" />
+        <Suspense fallback={<div style={{ minHeight: 220 }} />}>
+          <BeehiivForm variant="article" />
+        </Suspense>
 
         {/* ── Features grid ── */}
         {tool.features && tool.features.length > 0 && (

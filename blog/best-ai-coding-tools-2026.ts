@@ -7,7 +7,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-coding-tools-2026',
   title: 'Best AI Coding Tools in 2026 — Independently Reviewed & Ranked',
-  seoTitle: 'Best AI Coding Tools 2026 — Tested & Ranked',
+  seoTitle: 'Best AI Coding Tools 2026 — Reviewed & Ranked',
   metaDescription: 'GitHub Copilot, Cursor, Replit, and Codeium compared on real-world projects in 2026 — honest verdict on which saves the most time and which is worth paying for.',
   datePublished: '2026-05-04',
   dateModified: '2026-06-19',

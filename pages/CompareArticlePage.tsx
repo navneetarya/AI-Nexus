@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { ArrowLeft, ExternalLink, Check, X, ChevronRight } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 import { SharedNav } from './SharedNav';
-import { BeehiivForm } from '../components/BeehiivForm';
+const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 const C = {
   bg: 'var(--bg)', surf: 'var(--surf)', surf2: 'var(--surf2)', a1: 'var(--a1)', a2: 'var(--a2)',
@@ -549,7 +549,9 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
         </div>
 
         {/* Newsletter — bottom of article, after the CTA */}
-        <BeehiivForm variant="article" />
+        <Suspense fallback={<div style={{ minHeight: 220 }} />}>
+          <BeehiivForm variant="article" />
+        </Suspense>
 
       </main>
     </div>

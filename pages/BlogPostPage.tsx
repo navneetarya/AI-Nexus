@@ -1,10 +1,10 @@
 // pages/BlogPostPage.tsx
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState, lazy, Suspense } from 'react';
 // Shield icon removed — T1.7 author strip now uses plain "About the reviewer →" anchor
 import { SharedNav } from './SharedNav';
 import type { BlogPost } from '../blog/types';
 import { SITE_CONFIG, TOOLS } from '../constants';
-import { BeehiivForm } from '../components/BeehiivForm';
+const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 // ── W3-T16: Related tool reviews per blog post ─────────────────────────────
 // Maps each blog slug → up to 3 tool slugs to surface as "Related Reviews"
@@ -759,7 +759,9 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           <div style={{ fontSize: 13, color: C.mut, marginBottom: 14 }}>
             New reviews, free tool alerts, and workflow tips — every Tuesday.
           </div>
-          <BeehiivForm />
+          <Suspense fallback={<div style={{ minHeight: 60 }} />}>
+            <BeehiivForm />
+          </Suspense>
         </div>
 
         {/* M21: Readers Also Ask — PAA-style expandable section */}

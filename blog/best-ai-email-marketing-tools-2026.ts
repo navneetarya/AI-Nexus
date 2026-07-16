@@ -10,7 +10,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-email-marketing-tools-2026',
   title: 'Best AI Email Marketing Tools 2026 — Ranked',
-  seoTitle: '7 Best AI Email Marketing Tools (2026) — Tested on Real Campaigns',
+  seoTitle: '7 Best AI Email Marketing Tools (2026) — Reviewed & Ranked',
   metaDescription: 'GetResponse, Mailchimp AI, Brevo & ActiveCampaign — best AI email marketing tools 2026. Automation, free plans, pricing & honest comparison.',
   datePublished: '2026-06-07',
   dateModified: '2026-06-14',

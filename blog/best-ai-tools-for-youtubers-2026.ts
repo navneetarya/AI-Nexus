@@ -2,8 +2,8 @@
 
 const post: BlogPost = {
   slug: 'best-ai-tools-for-youtubers-2026',
-  title: 'Best AI Tools for YouTubers in 2026 — Tested by a Creator',
-  seoTitle: 'Best AI Tools for YouTubers 2026 — Tested',
+  title: 'Best AI Tools for YouTubers in 2026 — Reviewed for Creators',
+  seoTitle: 'Best AI Tools for YouTubers 2026 — Reviewed',
   metaDescription: 'The best AI tools for YouTube creators in 2026 — InVideo AI, Opus Clip, Descript, Murf AI, and VidIQ compared. Save hours per video. See picks.',
   datePublished: '2026-05-23',
   dateModified: '2026-06-14',

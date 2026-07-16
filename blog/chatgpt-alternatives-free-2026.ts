@@ -6,7 +6,7 @@ import { BlogPost } from './types';
 
 const post: BlogPost = {
   slug: 'chatgpt-alternatives-free-2026',
-  title: 'Best Free ChatGPT Alternatives in 2026 — Tested Head-to-Head',
+  title: 'Best Free ChatGPT Alternatives in 2026 — Compared Head-to-Head',
   seoTitle: 'Best Free ChatGPT Alternatives 2026',
   metaDescription: 'The best free ChatGPT alternatives for 2026 — Gemini, Perplexity, Rytr, and Writesonic compared for writing and research. See which one delivers.',
   datePublished: '2026-05-06',

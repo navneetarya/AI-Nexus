@@ -128,8 +128,8 @@ export const PAGE_1_INDIA_FREELANCERS = {
 // ── Page 2: Top 10 AI Tools Teachers Can Use in India (Education Vertical) ─
 export const PAGE_2_INDIA_TEACHERS = {
   slug: 'best-ai-tools-for-teachers-india-2026',
-  title: '7 Best AI Tools for Teachers India 2026 — Free Plans Tested [Expert Review]',
-  seoTitle: '7 Best AI Tools for Teachers India 2026 — Free Plans Tested',
+  title: '7 Best AI Tools for Teachers India 2026 — Free Plans Reviewed [Expert Review]',
+  seoTitle: '7 Best AI Tools for Teachers India 2026 — Free Plans Reviewed',
   metaDescription: 'Best AI tools for teachers in India 2026. Free lesson plans, grading helpers, and student engagement tools tested with Indian schools.',
   
   keywords: [

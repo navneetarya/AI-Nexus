@@ -94,7 +94,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "best-ai-presentation-tools-2026",
     "title": "Best AI Presentation Tools 2026: Gamma vs Beautiful.ai vs Canva AI vs NotebookLM",
-    "seoTitle": "Best AI Presentation Tools 2026: Tested & Ranked",
+    "seoTitle": "Best AI Presentation Tools 2026: Reviewed & Ranked",
     "metaDescription": "Best AI presentation tools 2026 compared: Gamma, Beautiful.ai, Canva AI, NotebookLM. Tome shut down in 2025 — what to use instead, with verified pricing.",
     "datePublished": "2026-06-30",
     "dateModified": "2026-06-30",
@@ -276,7 +276,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "best-ai-email-marketing-tools-2026",
     "title": "Best AI Email Marketing Tools 2026 — Ranked",
-    "seoTitle": "7 Best AI Email Marketing Tools (2026) — Tested on Real Campaigns",
+    "seoTitle": "7 Best AI Email Marketing Tools (2026) — Reviewed & Ranked",
     "metaDescription": "GetResponse, Mailchimp AI, Brevo & ActiveCampaign — best AI email marketing tools 2026. Automation, free plans, pricing & honest comparison.",
     "datePublished": "2026-06-07",
     "dateModified": "2026-06-14",
@@ -289,7 +289,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "cursor-ai-review-2026",
     "title": "Cursor AI Review 2026: Is It the Best AI Code Editor?",
-    "seoTitle": "Cursor AI Review 2026: After 3 Months of Daily Use — Still Worth $20/mo?",
+    "seoTitle": "Cursor AI Review 2026: Still Worth $20/mo?",
     "metaDescription": "Cursor AI reviewed for 2026 — pricing, free plan, Tab completion, Composer, and Agent mode tested. Is it worth $20/month over GitHub Copilot? Honest verdict.",
     "datePublished": "2026-05-25",
     "dateModified": "2026-06-14",
@@ -302,7 +302,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "best-ai-headshot-tools-linkedin-2026",
     "title": "Best AI Headshot Tools for LinkedIn in 2026 — Researched & Ranked",
-    "seoTitle": "5 Best AI Headshot Tools for LinkedIn (2026) — I Uploaded the Same Photo to All",
+    "seoTitle": "5 Best AI Headshot Tools for LinkedIn (2026) — Compared Side-by-Side",
     "metaDescription": "HeadshotPro, Aragon AI, Remini & more — best AI headshot tools for LinkedIn 2026. Pricing, output quality, and honest verdict from independent research.",
     "datePublished": "2026-05-28",
     "dateModified": "2026-06-14",
@@ -353,7 +353,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "cheapest-ai-coding-tools-2026",
-    "title": "Cheapest AI Coding Tools in 2026 — Real Pricing, Tested",
+    "title": "Cheapest AI Coding Tools in 2026 — Real Pricing, Compared",
     "seoTitle": "Cheapest AI Coding Tools 2026 — Honest Pricing",
     "metaDescription": "The cheapest AI coding tools for 2026 compared by real monthly cost — free options, sub-$10 tools, and whether cheaper means worse. See picks.",
     "datePublished": "2026-05-25",
@@ -406,7 +406,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "best-ai-tools-for-startups-2026",
     "title": "Best AI Tools for Startups in 2026 — Build Faster With Less",
-    "seoTitle": "Best AI Tools for Startups 2026 — Tested",
+    "seoTitle": "Best AI Tools for Startups 2026 — Reviewed",
     "metaDescription": "The best AI tools for startups in 2026: Notion AI, Gamma, Claude, Canva AI, and Grammarly compared. Build product, content, and pitches faster with these tools.",
     "datePublished": "2026-05-23",
     "dateModified": "2026-06-14",
@@ -418,8 +418,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-ai-tools-for-youtubers-2026",
-    "title": "Best AI Tools for YouTubers in 2026 — Tested by a Creator",
-    "seoTitle": "Best AI Tools for YouTubers 2026 — Tested",
+    "title": "Best AI Tools for YouTubers in 2026 — Reviewed for Creators",
+    "seoTitle": "Best AI Tools for YouTubers 2026 — Reviewed",
     "metaDescription": "The best AI tools for YouTube creators in 2026 — InVideo AI, Opus Clip, Descript, Murf AI, and VidIQ compared. Save hours per video. See picks.",
     "datePublished": "2026-05-23",
     "dateModified": "2026-06-14",
@@ -431,7 +431,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-ai-tools-for-automation-engineers-2026",
-    "title": "Best AI Tools for Automation Engineers in 2026 — Independently Tested",
+    "title": "Best AI Tools for Automation Engineers in 2026 — Independently Reviewed",
     "seoTitle": "Best AI Tools for Automation Engineers 2026",
     "metaDescription": "The best AI tools for QA and test automation engineers in 2026 — GitHub Copilot, Claude, Testim, and Applitools compared head-to-head. See research.",
     "datePublished": "2026-05-22",
@@ -444,8 +444,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-ai-tools-for-developers-2026",
-    "title": "Best AI Tools for Developers in 2026 — Tested & Ranked",
-    "seoTitle": "Best AI Tools for Developers 2026 — Tested",
+    "title": "Best AI Tools for Developers in 2026 — Reviewed & Ranked",
+    "seoTitle": "Best AI Tools for Developers 2026 — Reviewed",
     "metaDescription": "The best AI tools for software developers in 2026 — GitHub Copilot, Cursor, Claude, Replit, and Warp compared on real projects. See the verdict.",
     "datePublished": "2026-05-21",
     "dateModified": "2026-06-14",
@@ -483,7 +483,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-ai-writing-tools-for-beginners-2026",
-    "title": "Best AI Writing Tools for Beginners 2026 — Tested & Ranked",
+    "title": "Best AI Writing Tools for Beginners 2026 — Reviewed & Ranked",
     "seoTitle": "Best AI Writing Tools for Beginners 2026",
     "metaDescription": "New to AI writing tools? Rytr, Grammarly, QuillBot, and Writesonic compared for beginners — the exact order to try them and what each is for.",
     "datePublished": "2026-04-29",
@@ -509,8 +509,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-grammarly-alternatives",
-    "title": "Best Grammarly Alternatives in 2026 — Tested & Ranked",
-    "seoTitle": "Best Grammarly Alternatives 2026 — Tested",
+    "title": "Best Grammarly Alternatives in 2026 — Reviewed & Ranked",
+    "seoTitle": "Best Grammarly Alternatives 2026 — Reviewed",
     "metaDescription": "We researched 8 Grammarly alternatives so you do not waste $12/month. QuillBot wins for students, Rytr for content creators — plus 2 free picks.",
     "datePublished": "2026-04-27",
     "dateModified": "2026-06-14",
@@ -588,7 +588,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "best-notion-ai-alternatives-2026",
     "title": "Best Notion AI Alternatives 2026 — Independently Reviewed & Ranked",
-    "seoTitle": "Best Notion AI Alternatives 2026 — Tested",
+    "seoTitle": "Best Notion AI Alternatives 2026 — Reviewed",
     "metaDescription": "Taskade, Writesonic, and Frase compared as Notion AI alternatives for 2026 — which is better, which has a real free plan, and when to switch.",
     "datePublished": "2026-05-05",
     "dateModified": "2026-06-14",
@@ -600,7 +600,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-invideo-alternatives-2026",
-    "title": "Best InVideo AI Alternatives 2026 — Tested for Faceless YouTube",
+    "title": "Best InVideo AI Alternatives 2026 — Reviewed for Faceless YouTube",
     "seoTitle": "Best InVideo AI Alternatives 2026",
     "metaDescription": "Pictory, Opus Clip, and Murf AI compared as InVideo alternatives in 2026 — which wins for faceless YouTube, short-form clips, and video repurposing.",
     "datePublished": "2026-05-04",
@@ -613,8 +613,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "jasper-ai-alternatives",
-    "title": "Best Jasper AI Alternatives in 2026 — Cheaper & Tested",
-    "seoTitle": "Best Jasper AI Alternatives 2026 — Tested",
+    "title": "Best Jasper AI Alternatives in 2026 — Cheaper & Reviewed",
+    "seoTitle": "Best Jasper AI Alternatives 2026 — Reviewed",
     "metaDescription": "Jasper AI costs $49/month — too pricey for most creators. Writesonic, Rytr, Copy.ai, and Frase compared as alternatives for every budget in 2026.",
     "datePublished": "2026-05-07",
     "dateModified": "2026-06-14",
@@ -626,7 +626,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "chatgpt-alternatives-free-2026",
-    "title": "Best Free ChatGPT Alternatives in 2026 — Tested Head-to-Head",
+    "title": "Best Free ChatGPT Alternatives in 2026 — Compared Head-to-Head",
     "seoTitle": "Best Free ChatGPT Alternatives 2026",
     "metaDescription": "The best free ChatGPT alternatives for 2026 — Gemini, Perplexity, Rytr, and Writesonic compared for writing and research. See which one delivers.",
     "datePublished": "2026-05-06",
@@ -640,7 +640,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "best-ai-coding-tools-2026",
     "title": "Best AI Coding Tools in 2026 — Independently Reviewed & Ranked",
-    "seoTitle": "Best AI Coding Tools 2026 — Tested & Ranked",
+    "seoTitle": "Best AI Coding Tools 2026 — Reviewed & Ranked",
     "metaDescription": "GitHub Copilot, Cursor, Replit, and Codeium compared on real-world projects in 2026 — honest verdict on which saves the most time and which is worth paying for.",
     "datePublished": "2026-05-04",
     "dateModified": "2026-06-19",
@@ -679,7 +679,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "ai-tools-for-teachers-2026",
     "title": "Best AI Tools for Teachers in 2026 — Save Hours Every Week",
-    "seoTitle": "7 Best AI Tools for Teachers 2026 — Free Plans Tested [Expert Review]",
+    "seoTitle": "7 Best AI Tools for Teachers 2026 — Free Plans Reviewed [Expert Review]",
     "metaDescription": "Used Grammarly, Canva AI, and 5 other tools to help plan lessons and grade work. Free-first breakdown of what actually works for teachers in 2026.",
     "datePublished": "2026-05-03",
     "dateModified": "2026-06-14",
@@ -691,8 +691,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-midjourney-alternatives-2026",
-    "title": "Best Midjourney Alternatives in 2026 — Free & Paid Options Tested",
-    "seoTitle": "Best Midjourney Alternatives 2026 — Tested",
+    "title": "Best Midjourney Alternatives in 2026 — Free & Paid Options Compared",
+    "seoTitle": "Best Midjourney Alternatives 2026 — Reviewed",
     "metaDescription": "Leonardo.ai, Stable Diffusion, DALL-E, and Adobe Firefly compared as Midjourney alternatives for 2026. See which offers better quality and pricing.",
     "datePublished": "2026-05-02",
     "dateModified": "2026-06-14",
@@ -756,8 +756,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-ai-tools-for-content-creators-free-2026",
-    "title": "Best Free AI Tools for Content Creators 2026 — Tested on Free Plans",
-    "seoTitle": "Best Free AI Tools for Content Creators 2026 — Tested",
+    "title": "Best Free AI Tools for Content Creators 2026 — Reviewed: Free Plans Compared",
+    "seoTitle": "Best Free AI Tools for Content Creators 2026 — Reviewed",
     "metaDescription": "Creating content on a tight budget? 7 AI tools with genuinely free plans for writing, design, video, voiceover, and scheduling — tested for 2026.",
     "datePublished": "2026-05-10",
     "dateModified": "2026-06-14",
@@ -795,8 +795,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-ai-writing-tools-2026",
-    "title": "Best AI Writing Tools 2026 — Tested, Ranked & Compared",
-    "seoTitle": "8 Best AI Writing Tools (2026) — Tested Against Human Writing",
+    "title": "Best AI Writing Tools 2026 — Reviewed, Ranked & Compared",
+    "seoTitle": "8 Best AI Writing Tools (2026) — Compared Against Human Writing",
     "metaDescription": "6 best AI writing tools for 2026 — Grammarly, Rytr, QuillBot, Writesonic, Jasper, and Frase ranked by use case and free plan. See our top picks.",
     "datePublished": "2026-05-11",
     "dateModified": "2026-06-14",
@@ -874,7 +874,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "perplexity-ai-review-2026",
     "title": "Perplexity AI Review 2026: Is It Worth It vs Google Search?",
-    "seoTitle": "Perplexity AI Review 2026: After Replacing Google Search for 3 Weeks",
+    "seoTitle": "Perplexity AI Review 2026: Is It Worth It vs Google Search?",
     "metaDescription": "Perplexity AI reviewed for 2026 — tested against Google Search on research and everyday queries. Is it worth $20/month? See the honest verdict.",
     "datePublished": "2026-05-15",
     "dateModified": "2026-06-14",
