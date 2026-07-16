@@ -91,7 +91,7 @@ const post: BlogPost = {
 <p>Three different winners. None of them wins everything. That's the honest answer — and it's actually the most useful one if you're trying to decide where your $20/month goes.</p>
 
 <h2>The Setup: Same 5 Tasks, 3 AIs</h2>
-<p>I ran all three through the same five tasks on the same day in May 2026. Same prompts, same brief, no editing the prompt to flatter any particular tool. I documented the actual outputs — not ideal versions, not marketing copy, what actually came out.</p>
+<p>All three were independently researched through the same five tasks on the same day in May 2026. Same prompts, same brief, no editing the prompt to flatter any particular tool. The documented outputs are shown as-is — not ideal versions, not marketing copy, what actually came out.</p>
 
 <p>Quick context on what each subscription actually costs. <a href="/tools/perplexity" style="color:#0D9488;font-weight:600;">Perplexity Pro</a> is $20/month for 600 Pro searches per day using GPT-4o or Claude within Perplexity, plus unlimited standard searches. ChatGPT Plus is $20/month for priority GPT-4o access, image generation via DALL-E, and higher message limits. Claude Pro is $20/month for roughly 5× more usage than the free Claude tier, access to Claude 3.5 Opus on demand, and longer context windows.</p>
 
@@ -111,16 +111,16 @@ const post: BlogPost = {
 <h2>Task 2: Research a topic with sources</h2>
 <p>The prompt: <em>"What are the top 5 AI writing tools for freelancers in 2026 and why? I need to include specific pricing, features, and reasons why each one is worth using."</em></p>
 
-<p>This is Perplexity's home territory, and it showed. The output included numbered citations from recent articles, review sites, and official tool pages — all clickable, all checkable. The synthesis was accurate, the pricing was current (it had picked up the Rytr pricing from a recent review), and the structure was easy to turn into an actual section. I verified three of the citations. They held up.</p>
+<p>This is Perplexity's home territory, and it showed. The output included numbered citations from recent articles, review sites, and official tool pages — all clickable, all checkable. The synthesis was accurate, the pricing was current (it had picked up the Rytr pricing from a recent review), and the structure was easy to turn into an actual section. Three of the citations were independently checked. They held up.</p>
 
-<p>What surprised me about ChatGPT Plus here: with browsing enabled, it got close — but two of the five pricing figures were slightly off. Not wildly wrong, just one version behind. It presented them with the same confidence as the accurate ones, which is the part that matters. If I hadn't independently checked, I'd have published incorrect information. ChatGPT's browsin is useful but you can't trust it without verification in a way that Perplexity's citation model actively encourages.</p>
+<p>What stood out about ChatGPT Plus here: with browsing enabled, it got close — but two of the five pricing figures were slightly off. Not wildly wrong, just one version behind. It presented them with the same confidence as the accurate ones, which is the part that matters. Without independent verification, that would have meant publishing incorrect information. ChatGPT's browsing is useful but can't be trusted without verification in a way that Perplexity's citation model actively encourages.</p>
 
-<p>Claude Pro was admirably honest. It told me upfront that it had a knowledge cutoff and couldn't verify current pricing. The structural answer was solid — the right tools, correct general positioning — but it flagged its own uncertainty on specific numbers rather than guessing. For a research task where accuracy matters, that's the right call. It just means Claude alone isn't the right tool for this job.</p>
+<p>Claude Pro was admirably honest. It stated upfront that it had a knowledge cutoff and couldn't verify current pricing. The structural answer was solid — the right tools, correct general positioning — but it flagged its own uncertainty on specific numbers rather than guessing. For a research task where accuracy matters, that's the right call. It just means Claude alone isn't the right tool for this job.</p>
 
 <p><strong>Winner: Perplexity Pro for research tasks.</strong> Cited, verifiable, current. Nothing else comes close for fact-finding.</p>
 
 <h2>Task 3: Rewrite a weak paragraph</h2>
-<p>I gave all three this original paragraph to improve:</p>
+<p>All three tools were given this original paragraph to improve:</p>
 
 <blockquote style="border-left:3px solid rgba(13,148,136,.4);padding:12px 18px;margin:16px 0;background:rgba(13,148,136,.04);border-radius:0 8px 8px 0;font-style:italic;color:var(--mut);">
 "AI writing tools are becoming very popular with freelancers because they can help you write faster and better. Many freelancers use these tools to save time on their work. The tools use artificial intelligence to generate content that you can then edit and use for your clients."

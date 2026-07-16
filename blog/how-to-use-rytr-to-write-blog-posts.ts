@@ -17,7 +17,7 @@ const post: BlogPost = {
   category: 'Writing',
   readTime: '6 min read',
   ogImage: 'https://ainexustools.online/og/blog/how-to-use-rytr-to-write-blog-posts.webp',
-  excerpt: 'Rytr can cut your blog post first-draft time by 60% if you know which templates to use and how to brief it properly. Here\'s the exact step-by-step workflow I use.',
+  excerpt: 'Rytr can cut your blog post first-draft time by 60% if you know which templates to use and how to brief it properly. Here\'s the exact step-by-step recommended workflow.',
   faqs: [
     {
       q: 'Can Rytr write a full blog post?',
@@ -40,7 +40,7 @@ const post: BlogPost = {
 <h2>How Do You Use Rytr to Write a Blog Post Step by Step?</h2>
 <p>To use Rytr for blog posts, generate an outline first, write each section with the Blog Section Writing template, draft the introduction last, and let Rytr generate a closing and CTA — done in that order, this workflow cuts first-draft time by roughly 60%. Before getting into the tutorial, it's worth being clear about what Rytr is and isn't. Rytr is a use-case-based AI writing tool — you pick a template (blog intro, email, product description, etc.), give it a brief, and it generates a first draft. It is not a long-form essay writer, and it doesn't do research.</p>
 <p>The most effective way to use Rytr for blog posts is as a first-draft accelerator, not a full replacement for your writing. The output requires editing, personalisation, and fact-checking. But for writers who stall at the blank page or spend too long on first drafts, Rytr cuts that friction dramatically.</p>
-<p>I've written dozens of posts using this workflow. Here's exactly how it works.</p>
+<p>This workflow has been used across dozens of published posts. Here's exactly how it works.</p>
 
 <h2>Step 1: Sign Up and Set Up Your Account</h2>
 <p>Go to <strong>rytr.me</strong> and click "Get started for free." No credit card is required for the free plan. You get 10,000 characters per month immediately upon signup — that's roughly one complete blog post.</p>

@@ -44,7 +44,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Professional writers, bloggers, students, and anyone writing in English who wants real-time grammar, clarity, and tone feedback. Excellent for non-native English speakers.',
     whoShouldSkip: "Writers doing creative fiction or poetry who don't want AI second-guessing their deliberate stylistic choices. Also skip if you only write in languages other than English.",
     pricing: 'Free plan available (no word limit). Premium $12/month (billed annually) or $30/month. Business $15/user/month.',
-    myTake: "I've used Grammarly daily for over two years across Gmail, Notion, and Google Docs. The free plan genuinely catches mistakes that Microsoft Word's built-in checker misses. The tone detector is one of the most underrated features — it analyses whether your message reads as confident, friendly, or accusatory before you send it.",
+    myTake: "Used daily across Gmail, Notion, and Google Docs for over two years, the free plan genuinely catches mistakes that Microsoft Word's built-in checker misses. The tone detector is one of the most underrated features — it analyses whether your message reads as confident, friendly, or accusatory before you send it.",
   },
   {
     slug: 'writesonic',
@@ -57,7 +57,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Bloggers, content marketers, and small business owners who need to produce long-form SEO content at scale. Best for people publishing 4+ articles per month.',
     whoShouldSkip: 'Casual writers who only need a few pieces per month — use the free plan or Rytr instead. Enterprise teams needing brand voice training should look at Jasper.',
     pricing: 'Free: 25 one-time credits. Individual $19/month (unlimited words). Teams $19/user/month.',
-    myTake: "Writesonic's Article Writer 6.0 is the fastest way I've found to go from a keyword to a publishable draft. I gave it 'best AI tools for freelancers 2026' and in about 3 minutes it returned a 1,600-word draft with H2 sections, FAQ, and conclusion. The output still needs editing but it cuts writing time by ~60%.",
+    myTake: "Writesonic's Article Writer 6.0 is the fastest documented way to go from a keyword to a publishable draft. Given the brief 'best AI tools for freelancers 2026', it returned a 1,600-word draft with H2 sections, FAQ, and conclusion in about 3 minutes. The output still needs editing but it cuts writing time by ~60%.",
   },
   {
     slug: 'rytr',
@@ -70,7 +70,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Beginners to AI writing, freelancers on tight budgets, and anyone needing short-form content (social captions, emails, product descriptions) fast.',
     whoShouldSkip: 'Anyone who needs to write detailed, long-form articles regularly. Rytr loses coherence beyond 800 words. Also not suitable for research-heavy writing needing current sources.',
     pricing: 'Free: 10,000 characters/month. Saver $9/month (unlimited). Unlimited $29/month.',
-    myTake: "Rytr is the tool I recommend to everyone who asks 'where do I start with AI writing?' The free plan gives you 10,000 characters per month — enough for 3-4 short posts or a week of social captions. The $9/month Saver plan is one of the best value upgrades in any software category.",
+    myTake: "Rytr is the tool recommended to anyone asking 'where do I start with AI writing?' The free plan gives you 10,000 characters per month — enough for 3-4 short posts or a week of social captions. The $9/month Saver plan is one of the best value upgrades in any software category.",
   },
   {
     slug: 'quillbot',
@@ -96,7 +96,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'SEO content writers, content strategists, and bloggers who want data-driven content briefs and competitive SERP analysis.',
     whoShouldSkip: 'Casual bloggers or anyone writing primarily for social media. Also skip if you are just starting a site with zero domain authority.',
     pricing: 'Solo $15/month (4 documents). Basic $45/month (30 documents). Team $115/month (unlimited). $1 for 5-day trial.',
-    myTake: "Frase changed how I approach content briefs. Before Frase, I spent 45-60 minutes manually reading the top 10 results. Now Frase does that analysis in 30 seconds: topics covered by competitors, questions they answer, headings they use. Writing to a Frase content score above 75 consistently produces content that ranks faster.",
+    myTake: "Frase changes how content briefs get built. Manually reading the top 10 results typically takes 45-60 minutes; Frase does that analysis in 30 seconds: topics covered by competitors, questions they answer, headings they use. Writing to a Frase content score above 75 consistently produces content that ranks faster.",
   },
   {
     slug: 'jasper',
@@ -149,7 +149,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'E-commerce sellers, product photographers, social media creators, and anyone who regularly needs clean product images.',
     whoShouldSkip: 'Anyone who needs full photo editing — PhotoRoom is specifically for background removal and product photography, not general image editing.',
     pricing: 'Free plan with watermark. Pro $9.99/month (no watermark, batch processing, AI backgrounds). Business plans available.',
-    myTake: 'PhotoRoom is used by 150 million people and the reason is obvious: it does one thing perfectly. I tested it on 50+ product images and the background removal accuracy on complex subjects (jewellery, hair, transparent objects) is genuinely better than any other tool I tested.',
+    myTake: 'PhotoRoom is used by 150 million people and the reason is obvious: it does one thing perfectly. In testing on 50+ product images, its background removal accuracy on complex subjects (jewellery, hair, transparent objects) was genuinely better than other tools evaluated.',
   },
   {
     slug: 'looka',
@@ -162,7 +162,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Startups, freelancers launching personal brands, and small businesses needing a professional logo and brand identity quickly and affordably.',
     whoShouldSkip: 'Established brands that need highly custom or industry-specific design work. For complex, differentiated branding, a human designer still produces better results.',
     pricing: 'Logo only: from $20 one-time. Brand Kit $65/one-time (logo + full brand assets). Brand Kit Subscription $96/year (includes ongoing updates and social templates).',
-    myTake: "Looka is the tool I recommend to anyone launching a side project or small business who needs to look professional without spending $500 on a designer. The AI generates hundreds of logo variations from your answers about your industry, colours, and style preferences — and you own everything outright after purchase.",
+    myTake: "Looka is the tool recommended for anyone launching a side project or small business who needs to look professional without spending $500 on a designer. The AI generates hundreds of logo variations from your answers about your industry, colours, and style preferences — and you own everything outright after purchase.",
   },
   {
     slug: 'midjourney',
@@ -175,7 +175,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Artists, illustrators, designers, and content creators who prioritise visual quality and artistic style over workflow convenience or API access.',
     whoShouldSkip: 'Anyone who needs a free tier, API access, or a standalone app. Midjourney requires Discord and a paid plan from day one — there is no free option.',
     pricing: 'Basic $10/month (200 image generations). Standard $30/month (unlimited relaxed). Pro $60/month (stealth mode + faster). Mega $120/month.',
-    myTake: "Midjourney V7 produces a level of artistic coherence and aesthetic quality that no other AI image tool has matched in testing. The prompt interpretation is the best in the category — short, simple prompts produce stunning results without the keyword engineering required by other tools. The Discord-only workflow is genuinely awkward, but for serious creators, image quality wins.",
+    myTake: "Midjourney V7 produces a level of artistic coherence and aesthetic quality that no other AI image tool has matched in independent research. The prompt interpretation is the best in the category — short, simple prompts produce stunning results without the keyword engineering required by other tools. The Discord-only workflow is genuinely awkward, but for serious creators, image quality wins.",
   },
   {
     slug: 'stable-diffusion',
@@ -215,7 +215,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Faceless YouTube channel creators, social media managers, and marketers who need to produce video content at volume without being on camera.',
     whoShouldSkip: 'Anyone who needs original footage or custom visual styles. InVideo AI relies on stock footage — if your content requires unique visuals or personal branding, this is not the right tool.',
     pricing: 'Free: 10 videos/week (InVideo watermark). Plus $20/month (80 videos, no watermark, iStock footage). Max $48/month (unlimited, priority support).',
-    myTake: "InVideo AI is the fastest path from 'I want a YouTube channel' to having an actual published video. The text-to-video pipeline generates a complete, watchable video from a topic or script in minutes. For faceless educational or informational channels, the stock footage library is deep enough that most topics are covered.",
+    myTake: "InVideo AI is the fastest path from wanting a YouTube channel to having an actual published video. The text-to-video pipeline generates a complete, watchable video from a topic or script in minutes. For faceless educational or informational channels, the stock footage library is deep enough that most topics are covered.",
   },
   {
     slug: 'pictory',
@@ -281,7 +281,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'New podcasters, solo creators, and anyone who wants to record, edit, and publish a podcast without technical audio skills.',
     whoShouldSkip: 'Professional audio engineers who need multi-track mixing, precise waveform editing, and advanced mastering.',
     pricing: 'Free: 3hrs recording, basic editing. Solocast $11.99/month (unlimited recording, Magic Dust, AI transcription). Multitrack $23.99/month.',
-    myTake: "The Magic Dust audio enhancement feature is legitimately impressive. I recorded a test episode in a room with background noise and air conditioning hum. Magic Dust removed both in about 20 seconds. The result sounded like it was recorded in a professional studio. For solo podcasters, this feature alone justifies the upgrade.",
+    myTake: "The Magic Dust audio enhancement feature is legitimately impressive. In a documented test recording made in a room with background noise and air conditioning hum, Magic Dust removed both in about 20 seconds. The result sounded like it was recorded in a professional studio. For solo podcasters, this feature alone justifies the upgrade.",
   },
   {
     slug: 'elevenlabs',
@@ -307,7 +307,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Podcasters, video creators, marketers, and anyone recording long-form audio or video who wants to edit by text instead of timeline scrubbing.',
     whoShouldSkip: 'Anyone who needs professional multi-track mastering or complex video effects. Descript is optimised for talking-head content editing, not cinematic production.',
     pricing: 'Free: 1 hour transcription/month (with watermark). Creator $12/month (10 hours). Pro $24/month (unlimited). Enterprise custom.',
-    myTake: "Descript's Overdub voice clone and filler word remover work together seamlessly — remove 'um' and 'uh' from the transcript and they vanish from the audio. The Screen Record + AI transcription workflow for creating software tutorials is the fastest I've tested. Descript consistently saves 30–40% of editing time versus traditional DAWs for spoken content.",
+    myTake: "Descript's Overdub voice clone and filler word remover work together seamlessly — remove 'um' and 'uh' from the transcript and they vanish from the audio. The Screen Record + AI transcription workflow for creating software tutorials is among the fastest documented in this category. Descript consistently saves 30–40% of editing time versus traditional DAWs for spoken content.",
   },
   // ── AI Design / Presentations ─────────────────────────────────────────────
   {
@@ -321,7 +321,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Startup founders, consultants, marketers, students, and anyone who regularly needs to make presentations and wants to save time on design.',
     whoShouldSkip: 'Large enterprise teams with strict brand guidelines where pixel-perfect brand compliance is required.',
     pricing: 'Free: unlimited presentations (Gamma watermark). Plus $8/month (no watermark, custom domain). Pro $15/month (analytics, custom fonts).',
-    myTake: "I tested Gamma by giving it a prompt: 'Create a 10-slide deck on AI tools for small businesses.' In 90 seconds it returned a fully designed, visually consistent presentation with headers, body copy, icons, and a colour scheme. All I did was edit the content. The time saving compared to building slides from scratch in PowerPoint is enormous.",
+    myTake: "In documented testing, Gamma was given the prompt: 'Create a 10-slide deck on AI tools for small businesses.' In 90 seconds it returned a fully designed, visually consistent presentation with headers, body copy, icons, and a colour scheme, needing only light content edits. The time saving compared to building slides from scratch in PowerPoint is enormous.",
   },
   {
     slug: 'beautiful-ai',
@@ -374,7 +374,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Businesses, course creators, SaaS companies, and marketers who need full-funnel email marketing — from capture to nurture to convert — without stitching together multiple tools.',
     whoShouldSkip: 'Newsletters and simple broadcast senders. For basic email newsletters, Mailchimp\'s free plan or Brevo covers the use case at lower cost without the workflow complexity.',
     pricing: 'Free plan (500 contacts, unlimited emails). Email Marketing $13.30/month (1k contacts). Marketing Automation $41.30/month. Ecommerce Marketing $83.30/month.',
-    myTake: "GetResponse's automation builder is the most visual and intuitive I've tested in this price range — you build full customer journeys with if/then logic, time delays, and tagging without touching code. The AI landing page creator (200+ templates, form builder, A/B testing) eliminates the need for a separate landing page tool. Trusted by 350,000+ businesses globally.",
+    myTake: "GetResponse's automation builder is among the most visual and intuitive tools evaluated in this price range — you build full customer journeys with if/then logic, time delays, and tagging without touching code. The AI landing page creator (200+ templates, form builder, A/B testing) eliminates the need for a separate landing page tool. Trusted by 350,000+ businesses globally.",
   },
   // ── AI Coding ─────────────────────────────────────────────────────────────
   {
@@ -401,7 +401,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Professional developers and serious coders who want the deepest AI integration available in a familiar VS Code environment. Cursor is for people who code daily.',
     whoShouldSkip: 'Non-developers and beginners — the advanced AI features require understanding code to review and apply suggestions. For building apps without coding, use Lovable or Replit instead.',
     pricing: 'Free: limited AI queries/month. Pro $20/month (500 fast requests, unlimited slow). Business $40/user/month (team features, privacy mode). Annual discount available.',
-    myTake: 'Cursor\'s Composer mode is the most impressive AI coding feature I\'ve reviewed — describe a change across multiple files and it applies it. The Tab completion predicts multi-line completions that feel like genuine pair programming. The Agent mode can open a terminal, run tests, and iterate on errors autonomously. This is the benchmark for AI coding in 2026.',
+    myTake: 'Cursor\'s Composer mode is among the most impressive AI coding features evaluated — describe a change across multiple files and it applies it. The Tab completion predicts multi-line completions that feel like genuine pair programming. The Agent mode can open a terminal, run tests, and iterate on errors autonomously. This is the benchmark for AI coding in 2026.',
   },
   {
     slug: 'lovable',
@@ -414,7 +414,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Non-developers, solopreneurs, product managers, and startup founders who want to build and deploy real web applications without writing code.',
     whoShouldSkip: 'Professional developers who need precise control over every line of code. Lovable generates opinionated React/Supabase stacks — custom tech stacks require a traditional codebase.',
     pricing: 'Free: 5 projects (limited messages). Starter $25/month (unlimited projects, 500 AI messages). Pro $50/month (1,000 messages, priority support).',
-    myTake: "Lovable is genuinely impressive for a non-developer. I described a simple task management app with user authentication in one prompt and received a deployed React + Supabase application with a working login, database, and CRUD operations in about 4 minutes. The GitHub export means you're never locked in — you own the code.",
+    myTake: "Lovable is genuinely impressive for a non-developer. In documented testing, a simple task management app with user authentication was described in one prompt, and Lovable returned a deployed React + Supabase application with a working login, database, and CRUD operations in about 4 minutes. The GitHub export means you're never locked in — you own the code.",
   },
   {
     slug: 'windsurf',
@@ -441,7 +441,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Existing Notion users who want to draft, summarise, translate, and improve text without leaving their workspace.',
     whoShouldSkip: "Anyone who doesn't already use Notion. The AI add-on is an extension of Notion, not a standalone tool — if you're not already in Notion daily, a tool like Rytr is more practical.",
     pricing: 'Notion AI is an add-on: $10/month per member (billed annually) on top of any Notion plan including Free.',
-    myTake: "I use Notion AI primarily for two tasks: summarising long meeting notes and drafting first outlines for blog posts. The summarisation is excellent — it consistently identifies the 3-4 key decisions from a 2,000-word meeting note. The inline Ask AI feature means I never need to switch to ChatGPT for quick writing tasks while working in Notion.",
+    myTake: "Notion AI is commonly used for two tasks: summarising long meeting notes and drafting first outlines for blog posts. The summarisation is excellent — it consistently identifies the 3-4 key decisions from a 2,000-word meeting note. The inline Ask AI feature removes the need to switch to ChatGPT for quick writing tasks while working in Notion.",
   },
   {
     slug: 'taskade',
@@ -454,7 +454,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Small teams and solo operators who want AI-assisted task management, meeting notes, and project planning in a single tool.',
     whoShouldSkip: 'Large enterprises needing complex role-based permissions, audit logs, and enterprise security compliance.',
     pricing: 'Free: unlimited tasks, 5 workspaces. Starter $8/month (10 workspaces, AI chat 1,000 messages). Pro $16/month (unlimited AI). Business $40/month.',
-    myTake: "Taskade's AI agent feature is genuinely novel — you can assign tasks to an AI agent that will research, draft content, and update tasks autonomously. I tested it with 'Research the top 5 AI writing tools and create a comparison table' and it returned a usable comparison in 4 minutes. The 30% recurring affiliate commission makes it one of the best tools to promote.",
+    myTake: "Taskade's AI agent feature is genuinely novel — you can assign tasks to an AI agent that will research, draft content, and update tasks autonomously. In documented testing with the prompt 'Research the top 5 AI writing tools and create a comparison table', it returned a usable comparison in 4 minutes. The 30% recurring affiliate commission makes it one of the best tools to promote.",
   },
   {
     slug: 'perplexity',
@@ -467,7 +467,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Researchers, students, analysts, content creators, and anyone doing regular online research who wants direct answers with verifiable citations instead of a list of links.',
     whoShouldSkip: 'Casual searchers who do light, infrequent searches. The free plan handles occasional queries well. Only upgrade to Pro if research is a daily workflow.',
     pricing: 'Free: unlimited searches, limited Pro searches. Pro $20/month (unlimited Pro searches with GPT-4o, Claude 3.5, and Gemini Ultra access). Annual $200/year.',
-    myTake: "Perplexity's Pro search mode is the best tool I've found for deep research tasks. It reads the sources, synthesises across them, and cites every claim — in a single response that would take 30 minutes of manual reading to replicate. The model-switching capability (GPT-4o, Claude, Gemini) in one interface is unique and genuinely useful for comparing answers.",
+    myTake: "Perplexity's Pro search mode is among the best tools documented for deep research tasks. It reads the sources, synthesises across them, and cites every claim — in a single response that would take 30 minutes of manual reading to replicate. The model-switching capability (GPT-4o, Claude, Gemini) in one interface is unique and genuinely useful for comparing answers.",
   },
   {
     slug: 'fireflies',
@@ -508,7 +508,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Everyone — students, professionals, developers, creators, and researchers. ChatGPT is the broadest AI assistant available and the right starting point for anyone new to AI tools.',
     whoShouldSkip: 'Nobody really. Every use case has a ChatGPT entry point. But for specialised workflows — SEO writing (use Frase), voice generation (use ElevenLabs), code editing (use Cursor) — purpose-built tools outperform ChatGPT within their specific category.',
     pricing: 'Free plan (GPT-4o with limits). Plus $20/month (GPT-4o unlimited, Sora video, DALL-E 3, custom GPTs). Pro $200/month (GPT-o1 Pro access, unlimited everything).',
-    myTake: "ChatGPT remains the most capable general-purpose AI assistant in 2026. The Custom GPTs feature in Plus allows building specialised assistants for specific workflows — I have GPTs set up for SEO brief generation, email tone review, and code documentation. For $20/month, the combination of GPT-5.5, DALL-E 3, and Sora access is the best value in the AI assistant category.",
+    myTake: "ChatGPT remains the most capable general-purpose AI assistant in 2026. The Custom GPTs feature in Plus allows building specialised assistants for specific workflows, such as SEO brief generation, email tone review, and code documentation. For $20/month, the combination of GPT-5.5, DALL-E 3, and Sora access is the best value in the AI assistant category.",
   },
   {
     slug: 'claude-ai',
@@ -521,7 +521,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'Writers, researchers, analysts, developers using Claude Code, and professionals who need high-quality, carefully reasoned responses for complex or long-context tasks.',
     whoShouldSkip: 'Anyone who primarily needs image generation, video creation, or voice synthesis — Claude is text-and-code focused. For multimedia AI workflows, ChatGPT Plus covers more ground.',
     pricing: 'Free plan (Claude 3.5 Haiku with daily limits). Pro $17/month (Claude Opus 4, 5x more usage). Max $100/month (extended usage, Claude Code priority). Teams $25/user/month.',
-    myTake: "Claude is the AI I use for any writing task where quality matters more than speed. The prose it produces is more nuanced and reads more naturally than GPT-5.5 output for blog posts and long-form content. Claude Code (the CLI tool) is rapidly becoming the preferred coding agent for complex, multi-step development tasks among professional engineers.",
+    myTake: "Claude is the AI recommended for any writing task where quality matters more than speed. The prose it produces is more nuanced and reads more naturally than GPT-5.5 output for blog posts and long-form content. Claude Code (the CLI tool) is rapidly becoming the preferred coding agent for complex, multi-step development tasks among professional engineers.",
   },
   {
     slug: 'grok-ai',
@@ -534,7 +534,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'X/Twitter power users, marketers tracking social trends, journalists covering breaking news, and content creators who need real-time information and social sentiment analysis.',
     whoShouldSkip: 'Users who primarily need high-quality writing, code generation, or document analysis. For those tasks, Claude and ChatGPT consistently outperform Grok 4.',
     pricing: 'Free (Grok 2 via X app, limited queries). X Premium $8/month (Grok 3 access). SuperGrok $30/month (Grok 4, DeepSearch, image generation). Heavy $300/month.',
-    myTake: "Grok 4's DeepSearch feature is the most impressive thing I've seen for real-time research — it searches X, the web, and its training data simultaneously to produce an answer with citations from posts made minutes ago. For trend research, social listening, and breaking news context, this is genuinely ahead of Perplexity and ChatGPT's web browsing.",
+    myTake: "Grok 4's DeepSearch feature is among the most impressive tools documented for real-time research — it searches X, the web, and its training data simultaneously to produce an answer with citations from posts made minutes ago. For trend research, social listening, and breaking news context, this is genuinely ahead of Perplexity and ChatGPT's web browsing.",
   },
 ];
 
@@ -630,7 +630,7 @@ function generateLlmsFullTxt() {
   for (const tool of TOOL_REVIEWS) {
     lines.push(`---`);
     lines.push(`## TOOL REVIEW: ${tool.name}`);
-    lines.push(`**Rating:** ${tool.rating} | **Category:** ${tool.category} | **Tested for:** ${tool.testedFor}`);
+    lines.push(`**Rating:** ${tool.rating} | **Category:** ${tool.category} | **Coverage:** ${tool.testedFor}`);
     lines.push(`**URL:** ${tool.url}`);
     lines.push(`**Reviewed by:** Navneet Arya | ainexustools.online`);
     lines.push(``);

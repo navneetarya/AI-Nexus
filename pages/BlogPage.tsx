@@ -146,7 +146,7 @@ export function BlogPage({ navigate, isDark, toggleTheme }: BlogPageProps) {
             AI Tools Guides &amp; Reviews
           </h1>
           <p style={{ color: 'rgba(255,255,255,.55)', fontSize: 16, maxWidth: 480 }}>
-            In-depth guides written by {SITE_CONFIG.authorName} after personally testing every tool mentioned.
+            In-depth guides written by {SITE_CONFIG.authorName}, independently researched using official documentation, verified user reviews, and public product demos.
           </p>
         </div>
       </div>

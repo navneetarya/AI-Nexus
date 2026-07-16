@@ -23,7 +23,7 @@ export function DisclosurePage({ navigate, isDark, toggleTheme }: { navigate: (t
 
             {[
               ['What are affiliate links?', 'Some links on this website are affiliate links. This means that if you click a link and make a purchase or sign up for a paid plan, AI Nexus may earn a commission. This comes at no additional cost to you.'],
-              ['Does this affect our reviews?', 'No. Tools are reviewed based on personal testing and honest assessment. We have written negative reviews of tools that have affiliate programs, and positive reviews of tools where we earn no commission. The affiliate relationship does not influence the content of any review.'],
+              ['Does this affect our reviews?', 'No. Tools are reviewed through independent research — official documentation, verified user reviews (Trustpilot, G2, Reddit), and pricing analysis — combined with honest, unsponsored assessment. We have written negative reviews of tools that have affiliate programs, and positive reviews of tools where we earn no commission. The affiliate relationship does not influence the content of any review.'],
               ['Which tools have affiliate links?','Some tools featured on AI Nexus contain affiliate or referral links. We may earn a commission if you purchase through these links, at no extra cost to you. However, many tools are included purely because they are useful to our readers. Affiliate partnerships do not influence our reviews, rankings, or recommendations.'
 			  ],
               ['Compliance', 'This disclosure complies with the FTC guidelines on endorsements and testimonials, and international standards for affiliate marketing disclosures including ASA (UK) and ACCC (Australia) guidelines.'],

@@ -53,7 +53,7 @@ const TOOL_CONTENT: Record<string, {
   /** ISO 8601 date this review was first published — used in Review schema datePublished */
   datePublished: string;
   timeUsed: string;
-  handsOnTesting?: string;
+  researchSummary?: string;
   /** W3-1: Free vs Paid upgrade decision guide — targets "is [tool] worth it" keyword */
   upgradeGuide?: string;
   /** W3-1: Quick verdict vs nearest competitor — links to compare article */
@@ -91,7 +91,7 @@ const TOOL_CONTENT: Record<string, {
     verdict: "The most accessible and accurate AI writing assistant for English. The free plan is genuinely useful — not a crippled demo — and the $12/month Premium plan is worth it the moment you write professionally at any significant volume. If you only install one writing tool, install Grammarly.",
     /** SEO-07: Targets "is grammarly worth it" (3,600/mo KD 22) + "grammarly premium review" (4,400/mo KD 28) */
     upgradeGuide: "The free plan genuinely earns its keep. Grammarly Free catches spelling, grammar, and punctuation errors with no word limit — coverage that beats Microsoft Word on complex sentence structures. For personal emails, simple documents, and student essays, the free plan is all you need.\n\nThe upgrade to Premium ($12/month billed annually) is worth it the moment you write professionally at volume. Three features justify the cost:\n\n1. **Full-sentence clarity rewrites.** Grammarly flags verbose sentences and suggests a version that says the same thing in 30–40% fewer words. Verified long-term G2 reviewers document consistent improvement in first-draft length after 2–3 months of regular use — fewer wordy constructions, tighter sentence patterns that carry over into unassisted writing.\n\n2. **Plagiarism checker against 16 billion web pages.** Essential for freelancers submitting content to clients, academics, and anyone publishing content who needs to verify originality before it goes live.\n\n3. **Tone detector.** Before sending a difficult email, Grammarly analyses whether it reads as confident, direct, aggressive, or friendly. It has flagged client emails that could have caused friction — that alone has paid for the subscription multiple times over.\n\nIs Grammarly Premium worth it? Yes, if you write 5,000+ words per week in a professional context. No, if you're a casual writer who only needs basic error catching — the free plan is legitimately sufficient for that use case.",
-    handsOnTesting: `This section documents outcomes verified through Grammarly's official feature documentation, independent review analysis from G2 and Capterra, and the tool's own published help centre.
+    researchSummary: `This section documents outcomes verified through Grammarly's official feature documentation, independent review analysis from G2 and Capterra, and the tool's own published help centre.
 
 According to Grammarly's official documentation, the free browser extension checks spelling, grammar, punctuation, and basic clarity across all sites — including Gmail, Google Docs, and Notion — with no word limit and no credit card required. Multiple verified G2 reviewers independently describe testing the free plan on 400-word professional email drafts and identifying 8–12 issues, with consistent findings: comma splices, passive constructions, pronoun reference errors, and Oxford comma omissions. Verified reviewers note accuracy meaningfully higher than Microsoft Word's built-in checker on complex sentence structures.
 
@@ -146,7 +146,7 @@ The free plan limitation documented in Grammarly's own help centre and corrobora
     datePublished: "2026-01-25",
     timeUsed: "Researched May 2026",
     upgradeGuide: "The free plan gives you 10,000 characters per month, 20+ use cases, and outputs in 30+ languages — enough to write 3–4 short blog posts or a batch of social media captions. It's a real free plan, not a 7-day trial.\n\nThe upgrade to Saver ($9/month) is worth it the moment you hit the character limit — which happens faster than expected when writing email sequences or batching content. Saver adds: unlimited characters, all 40+ use cases (including Magic Command, which lets you give free-form instructions), the Chrome extension for writing inside Gmail and Google Docs, and a plagiarism checker.\n\nThe Unlimited plan ($29/month) adds priority support, a custom use case builder, and team access. This is worth it only if you're managing a content team of 3+ or need to train Rytr on a specific brand voice.\n\nMy recommendation: use the free plan for 2 weeks. If you're hitting the character limit or want the Chrome extension, upgrade to Saver. The $9/month investment pays for itself within the first week of consistent use. Skip Unlimited unless you're running a team.",
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 The Cold Email template is consistently cited in G2 reviews as producing well-structured outputs on the first attempt: a curiosity-driven opening line, one value proposition paragraph, and a clear CTA within 150 words. The structure-to-edit ratio is favourable — users report needing to adjust product-specific details, not the overall structure.
 
@@ -200,7 +200,7 @@ Hindi social media caption output: multiple independent user reports in r/artifi
       { q: "Frase vs Surfer SEO — which is better?", a: "Both do content optimisation but Frase is stronger on the brief-building and research side; Surfer SEO is stronger on real-time keyword density analysis during writing. Frase's AI writer is more integrated into the brief workflow. Surfer's Content Score is used by more agencies. If you can only afford one, Frase is better for solo creators; Surfer SEO is better for agencies managing multiple client sites." },
       { q: "Can Frase write content for me?", a: "Yes — Frase has an AI writer that generates paragraphs and sections from the brief it creates. The prose quality is functional but not exceptional. I use Frase for the research and structure and a separate tool (Writesonic or manual writing) for the actual prose. The outline and brief are Frase's strongest outputs." },
     ],
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 Keyword brief generation: Verified G2 reviewers document running a content brief for a mid-competition keyword and receiving a structured brief in under 30 seconds: top 20 ranking pages analysed, topic clusters they cover, average word count and heading count, and the questions each page answers in FAQ sections. Reviewers consistently describe this as replacing 45–60 minutes of manual competitor reading. The consistent documented outcome: the brief immediately identifies which topics the current content is missing to be competitive.
 
@@ -232,7 +232,7 @@ Trustpilot's lower rating (3.8/5 vs G2's 4.5/5) reflects a pattern common across
       { q: "Can I use Leonardo.ai images commercially?", a: "Free plan images are licensed for personal use only. The Artisan plan ($24/month) and above include a commercial licence for client work, product mockups, and published content. Always verify your current plan's licence agreement before using AI-generated images commercially — the licence terms update periodically." },
       { q: "What is Leonardo.ai custom model training?", a: "Custom model training lets you upload 20–30 reference images and train Leonardo to generate new images in that exact style, anatomy, or character design. The resulting fine-tuned model can produce consistent character sheets, game asset sets, or brand illustration styles. Model training is available on the free plan — an unusually generous offering for a capability of this sophistication." },
     ],
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 150-token daily allowance: Verified G2 reviewers and r/AIArt contributors document completing full professional illustration sets — 8–12 concept art variations, consistent character sheets, game asset batches — within the free daily allowance without exhausting tokens. The consistent finding: 150 tokens covers a full productive illustration session for most use cases. Complex multi-step generations (high-resolution upscale + variations + inpainting) consume tokens faster and can exhaust the limit on intensive sessions.
 
@@ -263,7 +263,7 @@ Photorealism gap: The documented consistent limitation across r/StableDiffusion 
       { q: "Does PhotoRoom work for Indian e-commerce sellers on Meesho and Flipkart?", a: "Yes — PhotoRoom is widely used by Indian sellers on Meesho, Flipkart, and Amazon India. The mobile app lets you photograph products at home and produce white-background studio images instantly. The free plan handles occasional listings; the Pro plan ($9.99/month) is worth it for sellers with 50+ SKUs or regular catalogue updates." },
       { q: "How does PhotoRoom compare to Remove.bg?", a: "Both tools remove backgrounds, but PhotoRoom goes significantly further: it adds AI-generated backgrounds, product shadow effects, a batch editor, and a brand kit. Remove.bg is faster for quick one-off removals. PhotoRoom is the better long-term tool for anyone doing regular product photography or e-commerce work." },
     ],
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 Background removal accuracy: Verified G2 and Trustpilot reviewers document testing across product categories: footwear (mesh surfaces), jewellery (thin chains), glassware (transparency), and food products (complex organic edges). The consistent finding: footwear and hard goods produce clean results without manual touch-up. Jewellery and thin-strap accessories require occasional edge refinement using the free eraser tool — approximately 1–2 minutes additional per image for complex products. Transparent glass and crystal products produce clean removal in 70–80% of images on first attempt.
 
@@ -327,7 +327,7 @@ Free plan limits: The watermark on free exports is the primary documented limita
       { q: "Opus Clip vs Descript for short clips — which is better?", a: "They solve different problems. Opus Clip is fully automated — upload a video and it finds clips for you. Descript requires manual editing via a transcript but gives precise control over exactly what's included. Opus Clip is faster if you trust the AI to find highlights; Descript is better if you know exactly which moments you want to clip and need frame-accurate editing." },
     ],
     verdict: "The best AI video repurposing tool available for creators who produce regular long-form content. The free 60-minute plan is enough to properly test whether the AI clip selection works for your content type. If it does, the $19/month Starter plan is one of the clearest time-for-money trades in the short-form content creation category.",
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 Video type 1 — Podcast interview (45 min): The free 60 minutes/month plan covers 1–2 long videos. Verified G2 reviewers document Opus Clip producing 8 clips from a 45-minute podcast interview, with 5 being genuinely strong — correctly identifying emotionally engaging moments and scroll-stopping statements. A 45-minute video fully processed in under 5 minutes is the consistently reported outcome. 5 publish-ready clips is the typical result documented across independent user reports.
 
@@ -356,7 +356,7 @@ Free plan verdict: 60 minutes/month covers 1–2 long videos — enough to evalu
       "Social media managers: repurposing blog content into 60-second video summaries for LinkedIn and YouTube Shorts",
       "Corporate trainers: producing onboarding and compliance training videos from script documents without a video production team",
     ],
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 Video type 1 — topic prompt (4-minute, professional tone): G2 reviewers document output times of 5–7 minutes from prompt to export for standard-length educational videos. The documented result is a well-structured video with a clear hook, multiple tool sections, a summary, and a CTA. Voiceover pacing is reported as natural by the majority of reviewers. Manual clip replacements average 3–5 per video for repeated visual themes. The InVideo watermark appears bottom-right on the free plan and is described across reviews as smaller and less intrusive than expected.
 
@@ -401,7 +401,7 @@ Conclusion documented across verified reviews: InVideo AI's output quality-to-ef
       { q: "What languages does Murf AI support?", a: "Murf supports 20+ languages including English (US, UK, Australian, Indian accents), Spanish, French, German, Italian, Portuguese, Hindi, Arabic, Chinese, Japanese, and Korean. The non-English voice quality is strong for the major European languages and Hindi — noticeably better than most competitors for Indian English specifically." },
       { q: "Can I use Murf AI for commercial projects?", a: "Yes — the Creator plan and above include commercial usage rights. The free plan output is watermarked and cannot be used commercially. Check the specific licensing terms for client-facing work; the Business plan's commercial licence is broader than Creator's." },
     ],
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 Voice quality evaluation: Verified G2 reviewers document testing multiple voices from Murf's library for eLearning narration. The documented consistent finding: a subset of voices in the English (US) and Hindi categories produce output that passes as human-recorded to listeners not told they were hearing AI. The specific attribute cited is sentence-final intonation — the natural downward pitch at statement endings — which generic TTS tools consistently fail to reproduce. Murf's studio-recorded voices handle this correctly across the documented voice library.
 
@@ -470,7 +470,7 @@ Free plan limits: The 10-minute monthly limit is documented as sufficient for te
     useCases: ["Recording and cleaning remote podcast interviews", "Transcribing interviews for show notes automatically", "Fixing audio errors post-recording without re-recording the entire segment", "Publishing podcasts to Spotify and Apple Podcasts directly"],
     verdict: "The best all-in-one podcast tool for creators who don't want to learn Audacity. The free plan is functional enough to start your first show today.",
     upgradeGuide: "Podcastle free gives you unlimited recordings but exports with a watermark. The Basic plan ($11.99/mo) removes the watermark and adds Podcastle AI features. For serious podcasters, the paid plan pays for itself after a few published episodes.",
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 Magic Dust noise removal: Verified G2 and Trustpilot reviewers document testing with deliberate background noise — fan noise, keyboard clicks, and street noise recorded near a window. The consistent documented outcome: fan noise fully removed, keyboard clicks eliminated, and street noise reduced by 75–85% after a single click of Magic Dust. Reviewers consistently note that the voice stays natural — none of the 'underwater' muffling caused by aggressive noise removal in Audacity. This outcome is documented across independent reviews as repeatable with a range of common home recording environments.
 
@@ -525,7 +525,7 @@ Revoice word replacement: The Revoice feature is documented as Podcastle's most 
       summary: "Beautiful.ai and Gamma are the two strongest AI presentation tools in 2026 — but they solve different problems.\n\nGamma (free plan, $8/month paid) generates a complete deck from a text brief in under 3 minutes. You describe what you want, and Gamma builds and styles the entire presentation. For internal decks, quick client updates, and anyone who needs a polished slide in minimal time, Gamma wins on speed and cost.\n\nBeautiful.ai ($12/month, no free plan) gives you more structural control through Smart Slides. You build slides individually using templates that auto-format as content changes — better for formal business presentations where the deck reflects your brand.\n\nMy recommendation: use Gamma when speed and cost matter. Use Beautiful.ai when the presentation is client-facing, involves brand guidelines, or needs to be edited repeatedly by multiple team members. See the full breakdown below.",
       compareSlug: "gamma-vs-beautiful-ai",
     },
-    handsOnTesting: `Free trial test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free trial test — documented from verified user reports and official feature documentation (May 2026).
 
 Sales deck build: Verified G2 reviewers document building a 12-slide sales deck (cover, problem, solution, market size, competitor comparison, team, pricing, CTA) using Beautiful.ai's Smart Slide templates. The consistently documented outcome: 20–25 minutes total for a professionally formatted deck — compared to 90 minutes in PowerPoint for the same content. No manual alignment at any step is the consistent finding: when reviewers add a fifth competitor to the comparison table, the columns redistribute automatically without touching the layout.
 
@@ -543,7 +543,7 @@ Smart Slide reformatting test: Reviewers document adding and removing content fr
     myTake: "Based on G2 reviews and social media marketing community reports, Ocoya compresses what normally takes 3 separate tools — a caption writer, a design tool, and a scheduler — into one dashboard. The AI caption generator receives consistent praise for Instagram and LinkedIn outputs. The design tool is Canva-lite but documented as sufficient for quick posts. Post scheduling reliability is documented across verified G2 reviews as consistent, with no missed scheduled posts reported as a common complaint across the review base.",
     useCases: ["Scheduling 30 posts across Instagram, LinkedIn, and Twitter at once", "Generating AI captions for product launch announcements", "Creating and posting content for client social media accounts", "Maintaining consistent posting frequency without daily manual work"],
     verdict: "The best value all-in-one social media tool for solo operators and small teams. Not as powerful as Hootsuite for large operations, but far more affordable and easier to use.",
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 AI caption generation across three platforms: Verified G2 reviewers document creating and scheduling content for Instagram, LinkedIn, and Twitter/X from a single product announcement brief. The documented outcome: platform-adapted versions from one input — the Instagram caption shorter with line breaks and emojis, the LinkedIn caption opening with a data hook and ending with a professional CTA, and the Twitter/X caption under 240 characters with the key message in the first 8 words. Reviewers report all three as publish-ready with only minor edits required.
 
@@ -566,7 +566,7 @@ Scheduling workflow: The documented time-to-schedule outcome reported by verifie
       { q: "Can I deploy real apps on Replit?", a: "Yes — Replit can host and deploy web applications, bots, and APIs with a public URL. Free repls go to sleep after inactivity; the Core plan ($7/month) includes always-on deployment that keeps your app running. For production applications with significant traffic, Replit's compute resources are more limited than dedicated cloud providers like Vercel or Railway." },
       { q: "What is Replit Ghostwriter?", a: "Ghostwriter is Replit's built-in AI coding assistant. Unlike standalone AI chatbots, it has full context of your entire project — not just the current file — which makes its debugging suggestions and code completions more accurate for multi-file projects. Ghostwriter is included on both free and paid plans, with the Core plan providing a larger context window for complex projects." },
     ],
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 Zero-setup coding environment: Verified G2 and Product Hunt reviewers document the core workflow: navigate to replit.com, click 'Create Repl', select Python (or any language), and start writing code. The documented time from landing page to running code: under 90 seconds. Reviewers specifically describe eliminating the 'how do I install Python' problem — cited across developer education communities as the most common motivation-killer for beginner programmers.
 
@@ -596,7 +596,7 @@ Free plan documented limits: The compute resources on the free plan are document
       { q: "Can Notion AI replace a writing tool like Rytr?", a: "For internal documents, yes. For external marketing content — blog posts, ad copy, social media captions — Rytr and Writesonic produce higher quality output at lower cost. Notion AI's strength is internal-facing content that benefits from workspace context." },
       { q: "Does Notion AI work on the free plan?", a: "Yes — the Notion AI add-on can be added to any Notion plan, including the free plan. You pay $10/month per member for the AI functionality regardless of your base plan." },
     ],
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 Meeting summary generation: Verified G2 users document pasting a 60-minute meeting transcript into a Notion page, then using Notion AI to summarise it. The documented outcome: a 5-bullet summary with action items and owners in under 30 seconds, extracted correctly from the raw transcript. Reviewers note that ownership attribution — which person is responsible for which action — is typically correct when the transcript clearly identifies speakers.
 
@@ -637,7 +637,7 @@ Q&A across workspace: Verified users with 150+ page workspaces document the Ask 
       { q: "What are Taskade AI agents?", a: "Taskade AI agents are customisable automated assistants that perform tasks within your workspace. You can create an agent that automatically breaks a project brief into tasks, assigns due dates, and structures a Kanban board in under 10 seconds. Agents can also run recurring workflows — like weekly status report generation — without manual triggers. Available on the free plan with basic credits." },
       { q: "Can Taskade replace Slack and Asana?", a: "For teams of 2–15, yes — Taskade combines task management (like Asana), team messaging (like Slack), and video calls in one workspace. G2 reviewers document saving meaningful time on tab-switching and context transfer. For larger teams with complex permission structures and enterprise integration requirements, dedicated tools like Asana and Slack offer more control." },
     ],
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 AI task breakdown: Verified G2 reviewers document the core AI agent workflow: type a project brief ('Launch a 5-week email marketing campaign for a new product'), click Generate, and receive a structured task list with milestones and subtasks in under 10 seconds. Reviewers describe the task breakdown as genuinely comprehensive — covering steps they would have manually missed in a first-pass planning session. The documented time comparison: 10 seconds AI-generated vs 15–20 minutes manual planning for a typical client project.
 
@@ -665,7 +665,7 @@ Video in-task calls: The video calling feature built directly into task contexts
       "Small businesses: designing and scheduling social media content, menus, flyers, and promotional materials without hiring a designer",
       "Email marketers: building newsletter headers and promotional graphics that match brand colours and fonts consistently across campaigns",
     ],
-    handsOnTesting: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
+    researchSummary: `Free plan test — documented from verified user reports and official feature documentation (May 2026).
 
 YouTube thumbnail workflow: Verified G2 reviewers document the end-to-end process: search 'YouTube thumbnail' in the template library, select a bold template, swap the background using drag-and-drop, update the headline text, and use Magic Write to generate headline variations. Documented completion time: 8–10 minutes. Reviewers with no design experience describe the result as cleaner than typical mid-size channel thumbnails. No design background required at any step is the consistent finding.
 
@@ -1142,7 +1142,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </div>
         )}
 
-        {/* ── W4-H2: "How I Tested This Tool" section ── */}
+        {/* ── W4-H2: Independent research summary section ── */}
         {content && (
           <div style={{ background: C.surf, border: `1px solid var(--brd-sm)`, borderRadius: 12, padding: '16px 20px', marginBottom: 24 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
@@ -1281,11 +1281,11 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             fontSize: '12px',
             fontWeight: 700,
             marginBottom: '16px',
-            background: tool.reviewType === 'hands-on' ? 'rgba(22,101,52,.1)' : 'rgba(146,64,14,.1)',
-            color: tool.reviewType === 'hands-on' ? '#166534' : '#92400e',
-            border: `1px solid ${tool.reviewType === 'hands-on' ? 'rgba(22,101,52,.2)' : 'rgba(146,64,14,.2)'}`,
+            background: tool.reviewType === 'deep-research' ? 'rgba(22,101,52,.1)' : 'rgba(146,64,14,.1)',
+            color: tool.reviewType === 'deep-research' ? '#166534' : '#92400e',
+            border: `1px solid ${tool.reviewType === 'deep-research' ? 'rgba(22,101,52,.2)' : 'rgba(146,64,14,.2)'}`,
           }}>
-            {tool.reviewType === 'hands-on' ? '✅ Independently Researched' : '🔬 Research-Based Review'}
+            {tool.reviewType === 'deep-research' ? '✅ Independently Researched' : '🔬 Research-Based Review'}
           </div>
         )}
 
@@ -1554,14 +1554,14 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           )
         )}
 
-        {/* ── T2.5: My Hands-On Testing section ────────────────────────────────────
-             Audit finding: Experience score 2/100 because there were no firsthand
-             testing observations on tool pages. Google quality raters distinguish
-             review sites from directories by looking for specific, personal,
-             first-person observations from actual use.
-             Only rendered for tools that have handsOnTesting content (top 5 affiliate tools).
+        {/* ── T2.5: Independent research summary section ────────────────────────────
+             Audit finding: Experience score 2/100 because there were no specific,
+             documented research observations on tool pages. Google quality raters
+             distinguish review sites from directories by looking for specific,
+             verifiable observations grounded in documentation and free-plan/trial use.
+             Only rendered for tools that have researchSummary content (top 5 affiliate tools).
              Impact: EEAT Experience 2 → 15. */}
-        {content?.handsOnTesting && (
+        {content?.researchSummary && (
           <section
             aria-label={`Verified free-plan research: ${tool.name}`}
             style={{
@@ -1600,7 +1600,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             </div>
 
             {/* Testing paragraphs — rendered as split paragraphs on \n\n */}
-            {content.handsOnTesting.split('\n\n').filter(Boolean).map((para, i) => (
+            {content.researchSummary.split('\n\n').filter(Boolean).map((para, i) => (
               <p
                 key={i}
                 style={{
@@ -1608,7 +1608,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                   color: C.mut,
                   lineHeight: 1.78,
                   fontWeight: 300,
-                  margin: i < content.handsOnTesting!.split('\n\n').filter(Boolean).length - 1
+                  margin: i < content.researchSummary!.split('\n\n').filter(Boolean).length - 1
                     ? '0 0 14px'
                     : '0',
                 }}
@@ -1835,7 +1835,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             <>
               {sectionTitle('Real output sample')}
               <p style={{ fontSize: 13, color: C.mut, margin: '0 0 14px', lineHeight: 1.65, fontWeight: 300 }}>
-                Here's an unedited output I generated during testing, with my editorial note on quality.
+                Here's an unedited AI-generated output documented during research, with an editorial note on quality.
               </p>
               <div style={{ background: cardBg, border: `1px solid ${cardBrd}`, borderRadius: 12, padding: '18px 20px', marginBottom: 14 }}>
                 <div style={{ fontSize: 11, fontWeight: 600, color: accent, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>
@@ -1848,7 +1848,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <div style={{ background: C.sukbg, border: `1px solid ${C.sukbrd}`, borderRadius: 12, padding: '14px 18px', display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                 <div style={{ fontSize: 16, flexShrink: 0 }}>✍️</div>
                 <div>
-                  <div style={{ fontSize: 11, fontWeight: 600, color: '#059669', letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 5 }}>My editorial note</div>
+                  <div style={{ fontSize: 11, fontWeight: 600, color: '#059669', letterSpacing: '0.06em', textTransform: 'uppercase' as const, marginBottom: 5 }}>Editorial note</div>
                   <p style={{ fontSize: 13, color: C.txt, lineHeight: 1.65, margin: 0, fontWeight: 300 }}>{tool.realOutputExample.editorialNote}</p>
                 </div>
               </div>

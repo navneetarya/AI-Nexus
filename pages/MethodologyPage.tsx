@@ -40,11 +40,11 @@ const STEPS = [
   },
 ];
 
-// T2.4 — Quantified 6-step hands-on process table
+// T2.4 — Quantified 6-step research process table
 // Audit finding: methodology page described the research process qualitatively.
 // Google quality raters want to see SPECIFIC, MEASURABLE steps — not "we research carefully"
 // but "here is exactly what we do, in order, with time spent."
-const HANDS_ON_STEPS = [
+const RESEARCH_STEPS = [
   {
     icon: UserCheck,
     step: 'Step 1',
@@ -187,7 +187,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           ))}
         </div>
 
-        {/* ── T2.4: Quantified 6-step hands-on session breakdown ──────────────────────
+        {/* ── T2.4: Quantified 6-step research session breakdown ──────────────────────
              Audit finding (T2.4): Methodology page was qualitative — described research
              philosophically but did not show the EXACT steps taken per tool session.
              Google quality raters need to see specifics: what action, in what order,
@@ -221,14 +221,14 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             </pre>
           </div>
 
-          {HANDS_ON_STEPS.map(({ icon: Icon, step, action, detail, time }, i) => (
+          {RESEARCH_STEPS.map(({ icon: Icon, step, action, detail, time }, i) => (
             <div
               key={i}
               style={{
                 display: 'flex', gap: 14, alignItems: 'flex-start',
-                paddingBottom: i < HANDS_ON_STEPS.length - 1 ? 20 : 0,
-                marginBottom: i < HANDS_ON_STEPS.length - 1 ? 20 : 0,
-                borderBottom: i < HANDS_ON_STEPS.length - 1 ? `1px solid ${C.barBrd}` : 'none',
+                paddingBottom: i < RESEARCH_STEPS.length - 1 ? 20 : 0,
+                marginBottom: i < RESEARCH_STEPS.length - 1 ? 20 : 0,
+                borderBottom: i < RESEARCH_STEPS.length - 1 ? `1px solid ${C.barBrd}` : 'none',
               }}
             >
               {/* Step number circle */}

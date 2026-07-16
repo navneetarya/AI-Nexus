@@ -92,7 +92,7 @@ export const TOOLS: Tool[] = [
       paid: '₹1,000/month Premium',
       note: 'UPI, Indian debit/credit cards supported. Free plan has no word limit.',
     },
-    reviewType: 'hands-on',
+    reviewType: 'deep-research',
     updateLog: [
       { date: 'May 2026', note: 'Pricing verified at $12/mo (annual). Business plan confirmed at $15/user/mo. Trustpilot score updated to 4.3 (7,842 reviews).' },
     ],
@@ -109,7 +109,7 @@ export const TOOLS: Tool[] = [
     cons: ['Quality varies by template', 'UI can feel cluttered'],
     realOutputExample: {
       output: 'I need a compelling blog introduction for an article about AI writing tools in 2026, targeting freelance writers who are skeptical about AI.',
-      editorialNote: 'I entered this brief into Writesonic\'s Article Writer with GPT-4 on the free plan. The generated intro opened with a hook: "You\'ve probably heard that AI is going to replace writers. After testing 12 AI writing tools over 6 months, here\'s what I actually found." — directly addressing the skeptical angle I specified. The subheadings it generated were on-topic and SEO-structured. I made minor edits but the core structure was publish-ready. Free plan gives 10,000 words/month — enough for 4–5 blog posts per month.',
+      editorialNote: 'This brief was run through Writesonic\'s Article Writer with GPT-4 on the free plan. The generated intro opened with a hook directly addressing the skeptical angle specified in the brief. The subheadings it generated were on-topic and SEO-structured, and only minor edits were needed before the structure was publish-ready. Free plan gives 10,000 words/month — enough for 4–5 blog posts per month.',
     },
     lastTestedISO: '2026-05-13',
     researchSources: {
@@ -123,7 +123,7 @@ export const TOOLS: Tool[] = [
       paid: '₹1,330/month Individual',
       note: 'International credit card usually required for paid plans. Free plan accessible.',
     },
-    reviewType: 'hands-on',
+    reviewType: 'deep-research',
     updateLog: [
       { date: 'May 2026', note: 'Free plan updated: 10K words/month (changed from previous 2,500). Chatsonic feature tested with real-time search.' },
     ],
@@ -151,7 +151,7 @@ export const TOOLS: Tool[] = [
     ],
     realOutputExample: {
       output: 'Struggling to find the right words for your cold email? AI tools like Rytr have changed the game for freelancers. In under 60 seconds, you can generate a personalised outreach email that sounds human, not robotic — and actually gets replies.',
-      editorialNote: 'Generated using the "Cold Email" template with a 20-word brief: "AI tools for freelancers, professional tone." I made zero edits — this was the first output. It\'s a solid first draft that needs 10 minutes of personalisation before sending. The structure and hook are genuinely good.',
+      editorialNote: 'Generated using the "Cold Email" template with a 20-word brief: "AI tools for freelancers, professional tone." Shown unedited as the first output. It\'s a solid first draft that needs about 10 minutes of personalisation before sending — the structure and hook are genuinely good.',
     },
     dailyUseCases: [
       'Batching 10 Instagram captions in 15 minutes using the Social Media Caption template — one brief, 10 output variants, pick the 3 best ones.',
@@ -174,7 +174,7 @@ export const TOOLS: Tool[] = [
       paid: '₹750/month Saver',
       note: 'UPI + Indian debit cards via Razorpay. Hindi content generation supported.',
     },
-    reviewType: 'hands-on',
+    reviewType: 'deep-research',
     updateLog: [
       { date: 'May 2026', note: 'Free plan confirmed: 10K characters/month. Saver plan at $9/mo verified. New tone options tested — 20+ tones confirmed available.' },
     ],
@@ -201,7 +201,7 @@ export const TOOLS: Tool[] = [
       reddit: 'Positive — r/StudentLoans, r/college, r/GradSchool',
       lastVerified: '2026-05-13',
     },
-    reviewType: 'hands-on',
+    reviewType: 'deep-research',
   },
   {
     id: 'w5', slug: 'frase',
@@ -277,8 +277,8 @@ export const TOOLS: Tool[] = [
     pros: ['Professional quality instantly', 'Huge variety of styles', 'One-time payment — you own it'],
     cons: ['Less unique than custom design', 'Editing limited after purchase'],
     realOutputExample: {
-      output: 'I entered the brand name "NexaFlow" (a sample tech SaaS brand), selected "Technology & Software" as the industry, and chose the style preferences "modern", "minimal", and "trustworthy". Looka generated 48 logo concepts in under 10 seconds. The strongest set used: a geometric monogram in teal and slate grey with an Inter-style sans-serif wordmark; a stylised "N" lettermark with a motion-blur effect; a circuit-board-inspired icon in deep blue with a condensed typeface. Color palettes offered: teal/slate, navy/white, charcoal/gold.',
-      editorialNote: 'The quality range was wide — the top 8 logos were genuinely polished and could pass for professional agency work. The bottom 20 were generic clip-art territory. The AI correctly matched "minimal" and avoided the decorative embellishments I\'d normally need to turn off in a manual brief. Important limitation I found testing this: the free tier lets you generate and preview all 48 logos at full quality, but downloading any file — PNG, SVG, or PDF — requires purchasing a plan (from $20 one-time for a basic logo package). There is no free download option, not even for a low-res watermarked file. Worth knowing before you invest time customising a design.',
+      output: 'Brand name "NexaFlow" (a sample tech SaaS brand) entered with "Technology & Software" selected as the industry and style preferences set to "modern", "minimal", and "trustworthy". Looka generated 48 logo concepts in under 10 seconds. The strongest set used: a geometric monogram in teal and slate grey with an Inter-style sans-serif wordmark; a stylised "N" lettermark with a motion-blur effect; a circuit-board-inspired icon in deep blue with a condensed typeface. Color palettes offered: teal/slate, navy/white, charcoal/gold.',
+      editorialNote: 'The quality range was wide — the top 8 logos were genuinely polished and could pass for professional agency work. The bottom 20 were generic clip-art territory. The AI correctly matched "minimal" and avoided the decorative embellishments a manual brief would normally need to filter out. Important limitation documented in research: the free tier lets you generate and preview all 48 logos at full quality, but downloading any file — PNG, SVG, or PDF — requires purchasing a plan (from $20 one-time for a basic logo package). There is no free download option, not even for a low-res watermarked file. Worth knowing before you invest time customising a design.',
     },
     lastTestedISO: '2026-05-13',
     researchSources: {
@@ -362,7 +362,7 @@ export const TOOLS: Tool[] = [
     cons: ['Minute limits on lower plans', 'No voice cloning on basic plans'],
     realOutputExample: {
       output: 'Generated a 60-second product explainer voiceover using the Ethan (US English) voice on the free trial. Script: "Introducing NexaFlow — the all-in-one project management tool built for remote teams. Start your free trial today." Delivered in a warm, professional tone with natural pacing. Exported as MP3 in under 30 seconds.',
-      editorialNote: 'Murf\'s voice quality is noticeably better than text-to-speech tools from 3 years ago. The Ethan voice sounds natural enough to use in a product video without listeners questioning if it\'s AI. Main limitation I hit on the free tier: the watermark in the exported audio. You need at least the Basic plan ($19/month) to export clean audio — that\'s worth knowing before you invest time scripting a full video.',
+      editorialNote: 'Murf\'s voice quality is noticeably better than text-to-speech tools from 3 years ago. The Ethan voice sounds natural enough to use in a product video without listeners questioning if it\'s AI. Main limitation documented on the free tier: the watermark in the exported audio. You need at least the Basic plan ($19/month) to export clean audio — that\'s worth knowing before you invest time scripting a full video.',
     },
     lastTestedISO: '2026-05-15',
     researchSources: {
@@ -419,7 +419,7 @@ export const TOOLS: Tool[] = [
     cons: ['Less control than PowerPoint', 'Gamma branding on free plan'],
     realOutputExample: {
       output: 'Prompt entered: "Create a 10-slide presentation on AI tools for freelancers." Gamma generated: Slide 1 — title card with a bold headline and a purple-to-teal gradient background. Slides 2–3 — "Why freelancers use AI" with an icon grid layout. Slides 4–7 — individual tool spotlights (writing, image, video, productivity) with a card layout, tool name, and 2-line benefit. Slide 8 — pricing comparison table. Slide 9 — "How to choose" decision framework with three columns. Slide 10 — CTA card. Total generation time: 38 seconds.',
-      editorialNote: 'The design quality was the best surprise here. Gamma\'s layout choices — card grids, icon rows, alternating full-bleed and split slides — looked like something a mid-level designer would produce. The content was generic on the tool spotlight slides (it invented tool names I hadn\'t mentioned in the prompt), which required manual editing. The pricing table slide was generated with a placeholder structure but empty cells — I had to fill all the data in myself. The CTA slide said "Contact us" which makes no sense for a solo creator deck. Realistic estimate: 20–25 minutes of editing to make it publishable. Without AI, building this deck from scratch would take 2 hours.',
+      editorialNote: 'The design quality was the best surprise here. Gamma\'s layout choices — card grids, icon rows, alternating full-bleed and split slides — looked like something a mid-level designer would produce. The content was generic on the tool spotlight slides (it invented tool names I hadn\'t mentioned in the prompt), which required manual editing. The pricing table slide was generated with a placeholder structure but empty cells that require the data to be filled in manually. The CTA slide said "Contact us" which makes no sense for a solo creator deck. Realistic estimate: 20–25 minutes of editing to make it publishable. Without AI, building this deck from scratch would take 2 hours.',
     },
     lastTestedISO: '2026-05-15',
     researchSources: {
@@ -481,7 +481,7 @@ export const TOOLS: Tool[] = [
     ],
     realOutputExample: {
       output: 'Stop spending 2 hours writing social captions that get 12 likes. Our AI-powered scheduler writes platform-specific content for Instagram, LinkedIn & TikTok in seconds — then schedules everything automatically. Free trial, no card needed. Link in bio.',
-      editorialNote: 'Generated using the Instagram caption template with a 15-word brief: "Social media scheduling tool, save time, AI captions." Zero edits made. The hook and CTA are solid — slightly salesy, but that\'s right for a product promo post. I\'d personalise the "12 likes" stat for authenticity, but the structure and length are genuinely publish-ready.',
+      editorialNote: 'Generated using the Instagram caption template with a 15-word brief: "Social media scheduling tool, save time, AI captions." Shown unedited. The hook and CTA are solid — slightly salesy, but that\'s right for a product promo post. The "12 likes" stat would benefit from personalising for authenticity, but the structure and length are genuinely publish-ready.',
     },
     lastTestedISO: '2026-04-28',
     notForYou: 'Large agencies managing 20+ client accounts that need white-label PDF reporting, granular multi-user approval workflows, and enterprise-grade analytics dashboards. Ocoya\'s analytics are functional but not deep — if your agency delivers detailed monthly performance reports to clients, Sprout Social or Hootsuite\'s infrastructure is more appropriate for that scale.',
@@ -570,7 +570,7 @@ export const TOOLS: Tool[] = [
     notForYou: 'Users who need full podcast production workflows with recording, editing, and publishing in one place — ElevenLabs is purely a voice generation and API tool. For end-to-end podcast production, pair it with Podcastle or Descript.',
     realOutputExample: {
       output: 'Generated a 45-second voiceover for a YouTube intro script using the Rachel (US English) voice at stability 0.71 and similarity boost 0.75 on the free tier. Script: "In this video, I\'m going to show you the exact AI writing workflow I use to produce 3 blog posts per week — without burning out. Let\'s get into it." Generated in 8 seconds. Clean MP3 export at 128kbps.',
-      editorialNote: 'The voice quality on the free plan genuinely surprised me. Rachel\'s delivery sounds like a professional voice-over artist, not a robot reading text. The stability and similarity sliders actually produce different outputs — turning down stability gives more expressive delivery; turning it up makes it more consistent. One real limitation: the free plan only gives 10,000 characters per month (about 7–8 minutes of audio), and you can\'t export without the audio watermark without upgrading. For a YouTube creator or podcast editor, the Creator plan at $22/month is the value point.',
+      editorialNote: 'The voice quality on the free plan is genuinely impressive. Rachel\'s delivery sounds like a professional voice-over artist, not a robot reading text. The stability and similarity sliders actually produce different outputs — turning down stability gives more expressive delivery; turning it up makes it more consistent. One real limitation: the free plan only gives 10,000 characters per month (about 7–8 minutes of audio), and you can\'t export without the audio watermark without upgrading. For a YouTube creator or podcast editor, the Creator plan at $22/month is the value point.',
     },
     lastTestedISO: '2026-05-15',
     researchSources: {
@@ -751,7 +751,7 @@ export const TOOLS: Tool[] = [
     notForYou: 'Professional graphic designers or photographers who need layer-level control, RAW file editing, complex masking, or custom vector tools. Canva\'s AI features are excellent for non-designers and efficient for content creators — but Adobe Illustrator, Photoshop, or Figma provide the control that professional design work demands.',
     realOutputExample: {
       output: 'A 1080×1080 Instagram post graphic generated with Canva AI\'s Magic Write + design flow for an article titled "10 Best AI Writing Tools for 2026". The AI suggested a clean dark teal background, a bold white headline at the top in Inter 800 weight, three tool icons arranged in a row below it, and a subtle gradient overlay at the bottom for the watermark strip. Layout was centered, white space was generous. Font pairing suggested: Inter Bold for headline, Inter Regular 13px for the caption subtext.',
-      editorialNote: 'The layout Canva AI suggested was genuinely solid — I only changed the background color from its default blue-grey to teal to match the site\'s brand. The font choices were predictable but correct. Where it needed manual work: the tool icons it placed were stock vector placeholders, not real logos, so I had to swap those in myself. The gradient overlay was slightly too dark on mobile preview, which I caught only by checking the phone mockup. For a non-designer, this output is 80% of the way there. For someone brand-conscious, expect 15–20 minutes of tweaking.',
+      editorialNote: 'The layout Canva AI suggested was genuinely solid — the only change needed was swapping the default blue-grey background for teal to match the site\'s brand. The font choices were predictable but correct. Where it needed manual work: the tool icons it placed were stock vector placeholders, not real logos, requiring a manual swap. The gradient overlay was slightly too dark on mobile preview, catchable only by checking the phone mockup. For a non-designer, this output is 80% of the way there. For someone brand-conscious, expect 15–20 minutes of tweaking.',
     },
     lastTestedISO: '2026-05-10',
     researchSources: {
@@ -833,7 +833,7 @@ export const TOOLS: Tool[] = [
     ],
     realOutputExample: {
       output: 'Project: Launch YouTube Channel\n\n1. Define niche and target audience\n   - Research top 10 channels in chosen niche\n   - Identify content gaps competitors aren\'t covering\n   - Write a one-sentence channel positioning statement\n2. Set up channel infrastructure\n   - Create YouTube account and customise channel art\n   - Write channel description with primary keyword\n   - Set up Taskade project for content calendar\n3. Plan first 10 videos\n   - Brainstorm 30 video ideas from niche research\n   - Score each by search volume and production difficulty\n   - Select top 10 and create individual episode briefs',
-      editorialNote: 'Generated with a single prompt: "Create a project plan for launching a YouTube channel about AI tools." This was the first output — I made zero edits. The task hierarchy is logical, the subtasks are actionable, and the depth is right for a real project. Rytr generates outlines; this generates an actual work breakdown structure.',
+      editorialNote: 'Generated with a single prompt: "Create a project plan for launching a YouTube channel about AI tools." Shown as the first output, unedited. The task hierarchy is logical, the subtasks are actionable, and the depth is right for a real project. Rytr generates outlines; this generates an actual work breakdown structure.',
     },
     lastTestedISO: '2026-04-25',
     notForYou: 'Large enterprises that need complex role-based permission systems, SOC2 compliance, audit logs, enterprise SSO, and legal-grade data governance. Taskade is built for small, agile teams of 2–20 people. For enterprise project management at scale with compliance requirements, look at Asana Business or Monday Enterprise.',
@@ -1072,7 +1072,7 @@ export const TOOLS: Tool[] = [
     ],
     realOutputExample: {
       output: 'Prompt in Copilot Chat: "Add input validation and typed error handling to this Express route." Copilot returned a rewritten handler with a validation schema and typed error responses in under 5 seconds.',
-      editorialNote: 'Copilot\'s inline completions remain the fastest and most reliable for single-line and boilerplate code across the major editors tested. Copilot Chat is solid for scoped explain/debug/refactor tasks within one or two files, but for full-repository multi-file agentic changes, dedicated AI-native editors currently show a wider context window and more autonomous execution.',
+      editorialNote: 'Copilot\'s inline completions remain the fastest and most reliable for single-line and boilerplate code across the major editors it supports. Copilot Chat is solid for scoped explain/debug/refactor tasks within one or two files, but for full-repository multi-file agentic changes, dedicated AI-native editors currently show a wider context window and more autonomous execution.',
     },
     dailyUseCases: [
       'Inline autocomplete while writing routine code — boilerplate, typed interfaces, and repetitive patterns complete almost instantly.',

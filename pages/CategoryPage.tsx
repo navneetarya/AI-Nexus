@@ -80,7 +80,7 @@ What matters most when choosing an AI image tool is output quality, creative con
 
 The technology has advanced dramatically — modern AI image generators handle complex compositions, realistic lighting, and specific art styles with remarkable consistency. Whether you are creating social media content, e-commerce product shots, presentation graphics, or creative artwork, there is a tool here that fits your use case.
 
-Each tool below includes sample outputs I generated, honest quality assessments, pricing breakdowns, and my verdict on who should use it. Browse the list and click through to the full review for any tool that catches your eye.`,
+Each tool below includes sample outputs, honest quality assessments, pricing breakdowns, and a verdict on who should use it. Browse the list and click through to the full review for any tool that catches your eye.`,
     faqs: [
       { q: 'What is the best AI image generator in 2026?', a: 'Leonardo.ai is the best free AI image generator with 150 credits per day. For the highest artistic quality, Midjourney remains the leader. PhotoRoom is the best for product photography and e-commerce. The best choice depends on your specific use case and budget.' },
       { q: 'Are AI-generated images free to use commercially?', a: 'It depends on the tool and plan. Leonardo.ai allows commercial use on its free plan. Midjourney grants commercial rights on all paid plans. Always check each tool\'s specific terms of service before using AI-generated images in commercial projects or client work.' },

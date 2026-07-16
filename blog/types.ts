@@ -97,8 +97,8 @@ export interface Tool {
     note: string;  // Short note about what was verified or updated
   }[];
 
-  /** W3: Review type — 'hands-on' for tools personally tested, 'research-based' for tools reviewed through official documentation and aggregated user reviews. */
-  reviewType?: 'hands-on' | 'research-based';
+  /** W3: Review type — 'deep-research' for tools with in-depth verified-source research (free-plan/trial hands-on where noted), 'research-based' for tools reviewed through official documentation and aggregated user reviews only. */
+  reviewType?: 'deep-research' | 'research-based';
 
   /**
    * Task 4 (AEO/GEO): External entity links for the tool's parent company/product —

@@ -172,7 +172,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
           </div>
         </div>
 
-        {/* Credentials & what I've tested */}
+        {/* Credentials & research coverage */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 10, marginBottom: 6 }}>
             <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: 0, letterSpacing: '-0.02em' }}>

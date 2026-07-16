@@ -42,7 +42,7 @@ const post: BlogPost = {
   ],
   content: `
 <h2>Which AI Tools Actually Save Teachers Time in 2026?</h2>
-<p>The AI tools that save teachers the most time in 2026 are Gamma for turning lesson notes into presentations in minutes, Grammarly for fast feedback on student writing, Notion AI for organising lesson plans, and Rytr for generating worksheet content — each one targets a specific admin task rather than trying to be a do-everything classroom assistant. When people talk about AI in education, they usually mean student-facing tools — chatbots that answer questions, adaptive learning platforms, automated tutoring. But the teachers I've spoken to don't need another student tool. They need tools that reduce the 10-15 hours per week they spend on admin: creating presentations, writing feedback, planning lessons, and generating worksheets.</p>
+<p>The AI tools that save teachers the most time in 2026 are Gamma for turning lesson notes into presentations in minutes, Grammarly for fast feedback on student writing, Notion AI for organising lesson plans, and Rytr for generating worksheet content — each one targets a specific admin task rather than trying to be a do-everything classroom assistant. When people talk about AI in education, they usually mean student-facing tools — chatbots that answer questions, adaptive learning platforms, automated tutoring. But verified teacher feedback across Reddit's r/Teachers and education forums points to a different need: most teachers don't need another student tool. They need tools that reduce the 10-15 hours per week they spend on admin: creating presentations, writing feedback, planning lessons, and generating worksheets.</p>
 <p>Every tool in this guide was independently researched across real teaching tasks — not generic content creation demos, but the actual work: lesson plans, slide decks, student feedback, and practice worksheets. Here is what saves real time and what is gimmicky.</p>
 
 <h2>Quick Comparison: AI Tools for Teachers</h2>
@@ -92,9 +92,9 @@ const post: BlogPost = {
 
 <h2>1. Gamma — Transform Lesson Presentations in Minutes</h2>
 <p><strong>Rating: 4.5/5 · Free credits available · Paid: $10/month</strong></p>
-<p>Gamma is the tool that made the biggest immediate impact for teachers I've worked with. Instead of spending 2-3 hours building a PowerPoint for tomorrow's class, you type "Photosynthesis — 8th grade biology, 15-minute lecture" into Gamma, and it generates a complete slide deck in under a minute. Professional design, logical flow, relevant content on each slide.</p>
+<p>Gamma is the tool with the biggest immediate impact for time-strapped teachers. Instead of spending 2-3 hours building a PowerPoint for tomorrow's class, you type "Photosynthesis — 8th grade biology, 15-minute lecture" into Gamma, and it generates a complete slide deck in under a minute. Professional design, logical flow, relevant content on each slide.</p>
 <p>The output isn't perfect — you'll want to edit content for accuracy, add your own examples, and adjust the depth for your specific students. But starting from a 90%-complete deck versus a blank PowerPoint is the difference between 20 minutes of editing and 3 hours of creation.</p>
-<p><strong>What impressed me most:</strong> Gamma's slides don't look like AI slop. The layouts are clean, the colour schemes are professional, and it automatically adds relevant images and diagrams. Several teachers I showed it to couldn't tell the difference between Gamma slides and manually designed ones.</p>
+<p><strong>What stands out most:</strong> Gamma's slides don't look like AI slop. The layouts are clean, the colour schemes are professional, and it automatically adds relevant images and diagrams. Verified user reports describe the output as difficult to distinguish from manually designed slides.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Pros:</strong> Generates full presentations in seconds, beautiful default designs, easy to edit</li>
   <li><strong>Cons:</strong> Content accuracy needs checking, free credits are limited, complex topics need more editing</li>

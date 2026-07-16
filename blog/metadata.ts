@@ -557,7 +557,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "category": "Writing",
     "readTime": "6 min read",
     "ogImage": "https://ainexustools.online/og/blog/how-to-use-rytr-to-write-blog-posts.webp",
-    "excerpt": "Rytr can cut your blog post first-draft time by 60% if you know which templates to use and how to brief it properly. Here's the exact step-by-step workflow I use."
+    "excerpt": "Rytr can cut your blog post first-draft time by 60% if you know which templates to use and how to brief it properly. Here's the exact step-by-step recommended workflow."
   },
   {
     "slug": "ai-tools-for-students-free-2026",
@@ -596,7 +596,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "category": "Productivity",
     "readTime": "8 min read",
     "ogImage": "https://ainexustools.online/og/blog/best-notion-ai-alternatives-2026.webp",
-    "excerpt": "Notion AI costs $10/month on top of your Notion plan. Before you pay, read this — I found three alternatives that do more for less."
+    "excerpt": "Notion AI costs $10/month on top of your Notion plan. Before you pay, read this — independent research surfaced three alternatives that do more for less."
   },
   {
     "slug": "best-invideo-alternatives-2026",
@@ -713,7 +713,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "category": "Guides",
     "readTime": "10 min read",
     "ogImage": "https://ainexustools.online/og/blog/how-to-use-ai-for-content-creation-2026.webp",
-    "excerpt": "AI content creation in 2026 is not about replacing your ideas — it is about cutting the production time between your idea and a finished piece of content by 60–80%. Here is the full workflow I use personally, broken d..."
+    "excerpt": "AI content creation in 2026 is not about replacing your ideas — it is about cutting the production time between your idea and a finished piece of content by 60–80%. Here is the full recommended workflow, broken d..."
   },
   {
     "slug": "best-ai-tools-in-india-2026",

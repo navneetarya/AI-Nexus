@@ -57,7 +57,7 @@ export function EditorialPolicyPage({ navigate, isDark, toggleTheme }: { navigat
     },
     {
       title: "Author Expertise",
-      body: `AI Nexus is run by Navneet Arya, an AI Automation & Performance Testing professional since 2022. Research is based on official documentation, verified reviews, and public usage data — not fabricated testing or sponsored data. Where hands-on research has been conducted, it is noted explicitly. Where research is documentation and review-based, that is also stated.`
+      body: `AI Nexus is run by Navneet Arya, an AI Automation & Performance Testing professional since 2022. Research is based on official documentation, verified reviews, and public usage data — not fabricated testing or sponsored data. Where free-plan or trial-based research has been conducted directly, it is noted explicitly. Where research is documentation and review-based, that is also stated.`
     },
   ];
 
