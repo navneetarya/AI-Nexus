@@ -248,7 +248,7 @@ const post: BlogPost = {
   <li><strong>Best for multi-purpose photo editing:</strong> Fotor AI — $8.99/mo with headshots as one feature</li>
 </ol>
 
-<p>For more AI tools recommendations across categories, see: <a href="/blog/best-ai-tools-for-freelancers-2026" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Freelancers 2026</a>, <a href="/blog/best-ai-tools-for-content-creators-free-2026" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Content Creators (Free)</a>, and <a href="/blog/best-ai-tools-for-startups-2026" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Startups 2026</a>.</p>
+<p>For more AI tools recommendations across categories, see: <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Freelancers 2026</a>, <a href="/blog/best-ai-tools-for-content-creators-free-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Content Creators (Free)</a>, and <a href="/blog/best-ai-tools-for-startups-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Startups 2026</a>.</p>
   `.trim(),
 };
 

@@ -132,7 +132,7 @@ const post: BlogPost = {
 <p><strong>Free plan needed → Copy.ai (free forever).</strong> Unlimited short-form copy with no credit card. Not suitable for long-form blog posts but covers most marketing copy needs.</p>
 <p><strong>SEO research + writing → Frase ($15/month).</strong> Best brief and outline generation for content teams optimising for Google rankings. Weaker on full draft generation vs Writesonic.</p>
 <p><strong>Team collaboration and brand voice → Stay with Jasper ($49/month).</strong> If you're managing a team of 3+ writers with a brand style guide, Jasper's collaboration and voice enforcement features justify the premium.</p>
-<p>Before switching, it's worth reading the full breakdown of what Jasper actually includes at each tier: <a href="/tools/jasper" style="color:#0D9488;font-weight:600;">→ Jasper full review — pricing, Brand Voice, and who it's actually for</a>. Many freelancers paying $49/month discover they're using less than 20% of what the Creator plan offers, which is exactly when one of the cheaper alternatives above makes more sense.</p>
+<p>Before switching, it's worth reading the full breakdown of what Jasper actually includes at each tier: <a href="/tools/jasper/" style="color:#0D9488;font-weight:600;">→ Jasper full review — pricing, Brand Voice, and who it's actually for</a>. Many freelancers paying $49/month discover they're using less than 20% of what the Creator plan offers, which is exactly when one of the cheaper alternatives above makes more sense.</p>
 `,
 };
 

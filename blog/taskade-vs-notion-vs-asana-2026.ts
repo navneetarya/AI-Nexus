@@ -40,7 +40,7 @@ const post: BlogPost = {
 <h2>Which Is Best for Freelancers — Taskade, Notion, or Asana?</h2>
 <p>For freelancers in 2026, Taskade is the best pick if you want AI to build and run your project plans, Notion wins if your priority is organising knowledge in interconnected databases and wikis, and Asana only makes sense once you're managing enterprise-style approval chains — most solo freelancers get the most value from Taskade. Taskade, Notion, and Asana are the three tools freelancers and small teams consider most when looking for a productivity upgrade. But they keep getting compared as if they're interchangeable. They're not.</p>
 <p>Asana is a 15-year-old enterprise project management platform that added AI as a feature layer. Notion is the most flexible workspace tool available — a blank canvas you can build almost any system on. Taskade is an AI-native tool where AI is built into the core workflow, not bolted on.</p>
-<p>The right tool depends on which problem you actually have — not which has the best landing page. Here's the honest breakdown, researched across both the <a href="/compare/taskade-vs-notion" style="color:#0D9488;font-weight:600;">Taskade vs Notion</a> and <a href="/compare/taskade-vs-asana" style="color:#0D9488;font-weight:600;">Taskade vs Asana</a> deep comparisons.</p>
+<p>The right tool depends on which problem you actually have — not which has the best landing page. Here's the honest breakdown, researched across both the <a href="/compare/taskade-vs-notion/" style="color:#0D9488;font-weight:600;">Taskade vs Notion</a> and <a href="/compare/taskade-vs-asana/" style="color:#0D9488;font-weight:600;">Taskade vs Asana</a> deep comparisons.</p>
 
 <h2>Quick Comparison — The Core Difference</h2>
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:8px;padding:16px 20px;margin:20px 0;">
@@ -105,7 +105,7 @@ const post: BlogPost = {
 <p>The feature that matters most for freelancers: <strong>project generation from a prompt</strong>. Describe what you want to achieve — "plan a product launch for May, including pre-launch content, outreach, and post-launch review tasks" — and Taskade generates a complete project with tasks, subtasks, and suggested due dates in under 30 seconds. It's not perfect, but it saves 30–45 minutes of initial planning per project.</p>
 <p>The pricing model is the other significant advantage. Taskade charges per workspace, not per user. A team of 4 on Taskade's Plus plan pays $8/month total. The same team on Asana Starter pays $43.96/month. For solopreneurs and small remote teams, this distinction is significant.</p>
 <p><strong>Where Taskade falls short:</strong> The knowledge base and documentation features are basic compared to Notion. If your work involves heavy research, interconnected notes, or complex databases with many-to-many relations, Taskade's structure feels limiting. It's optimised for execution, not for organising knowledge.</p>
-<p><a href="/tools/taskade" style="color:#0D9488;font-weight:600;">→ Full Taskade review</a></p>
+<p><a href="/tools/taskade/" style="color:#0D9488;font-weight:600;">→ Full Taskade review</a></p>
 
 <h2>Notion — The Most Flexible Workspace Tool Available</h2>
 <p><strong>Free plan: Yes · Plus: $10/user/month · Notion AI: +$10/month add-on</strong></p>
@@ -120,7 +120,7 @@ const post: BlogPost = {
 <p>For freelancers and small teams, most of this depth is irrelevant — and the pricing reflects enterprise scale. A team of 4 on Asana Starter pays $43.96/month. A team of 8 pays $87.92/month. Taskade handles the same execution workflow for $8–$16/month total.</p>
 <p>Asana's AI layer (Asana Intelligence, available on Advanced and Enterprise plans) adds smart fields, status summaries, and goal suggestions — useful, but noticeably bolted onto an existing product rather than integrated from the ground up.</p>
 <p><strong>When Asana is the right choice:</strong> Established teams at 10+ people with complex cross-department workflows, approval chains, enterprise reporting requirements, and a need to integrate with Salesforce, HubSpot, or Jira. At that scale, Asana's feature depth and integration ecosystem justify the per-user cost.</p>
-<p><a href="/compare/taskade-vs-asana" style="color:#0D9488;font-weight:600;">→ Full Taskade vs Asana comparison</a></p>
+<p><a href="/compare/taskade-vs-asana/" style="color:#0D9488;font-weight:600;">→ Full Taskade vs Asana comparison</a></p>
 
 <h2>Pricing Reality for a Team of 4</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -160,13 +160,13 @@ const post: BlogPost = {
 <h2>Which Tool Is Right for You?</h2>
 <p>The most common mistake is choosing Notion for execution work (where the setup overhead kills momentum) or choosing Taskade for deep knowledge management (where the simplicity becomes a constraint). Be honest about which problem you actually have:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
-  <li><strong>You need to execute client projects faster with less planning overhead →</strong> <a href="/tools/taskade" style="color:#0D9488;font-weight:600;">Taskade</a></li>
+  <li><strong>You need to execute client projects faster with less planning overhead →</strong> <a href="/tools/taskade/" style="color:#0D9488;font-weight:600;">Taskade</a></li>
   <li><strong>You need to organise research, build interconnected databases, and maintain a knowledge base →</strong> Notion</li>
   <li><strong>You're at 10+ people with complex approval workflows and enterprise integration requirements →</strong> Asana</li>
   <li><strong>You're a solo freelancer who can only afford one tool →</strong> Start with Taskade's free plan. You can always layer in Notion later for knowledge management.</li>
 </ul>
 <p>For most freelancers who are choosing between these three, Taskade's combination of AI-native execution, workspace-based pricing, and a functional free plan makes it the right starting point in 2026. The ones who should go straight to Notion are freelancers whose primary work is research, documentation, and knowledge management — not task execution.</p>
-<p>See the full head-to-head details: <a href="/compare/taskade-vs-notion" style="color:#0D9488;font-weight:600;">Taskade vs Notion — full comparison</a> &nbsp;·&nbsp; <a href="/compare/taskade-vs-asana" style="color:#0D9488;font-weight:600;">Taskade vs Asana — full comparison</a></p>
+<p>See the full head-to-head details: <a href="/compare/taskade-vs-notion/" style="color:#0D9488;font-weight:600;">Taskade vs Notion — full comparison</a> &nbsp;·&nbsp; <a href="/compare/taskade-vs-asana/" style="color:#0D9488;font-weight:600;">Taskade vs Asana — full comparison</a></p>
   `.trim(),
 };
 

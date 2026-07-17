@@ -50,7 +50,7 @@ const post: BlogPost = {
   content: `
 <h2>What Are the Best Free AI Tools for Students in India in 2026?</h2>
 <p>The best free AI tools for students in India in 2026 are Grammarly for essays and assignments, Rytr for writing with Hindi-language support, QuillBot for paraphrasing research papers, and Perplexity for cited research answers — and every one of them works from a normal Indian college campus without a VPN or a dollar card. Most "best free AI tools for students" lists are written for US or UK audiences. They recommend tools that require a dollar card to activate the free plan, suggest options blocked in India, or list prices only in USD without any note on GST or exchange-rate impact. This guide is written specifically for students in India — every tool below works from Indian IP addresses without a VPN, every free plan requires only an email address, and INR pricing is included where relevant.</p>
-<p>For a broader list of AI tools for Indian creators of all types, see the <a href="/blog/best-ai-tools-in-india-2026" style="color:#0D9488;font-weight:600;">best AI tools in India 2026 guide</a>. For a non-India-specific student tool comparison, see <a href="/blog/ai-tools-for-students-free-2026" style="color:#0D9488;font-weight:600;">best free AI tools for students 2026</a>. This post covers the intersection: free tools that work specifically well for students studying and writing from India.</p>
+<p>For a broader list of AI tools for Indian creators of all types, see the <a href="/blog/best-ai-tools-in-india-2026/" style="color:#0D9488;font-weight:600;">best AI tools in India 2026 guide</a>. For a non-India-specific student tool comparison, see <a href="/blog/ai-tools-for-students-free-2026/" style="color:#0D9488;font-weight:600;">best free AI tools for students 2026</a>. This post covers the intersection: free tools that work specifically well for students studying and writing from India.</p>
 
 <h2>Free Plan Comparison — At a Glance</h2>
 <div style="overflow-x:auto;margin:16px 0 28px;">
@@ -123,7 +123,7 @@ const post: BlogPost = {
 <p>Grammarly's free browser extension is the single highest-ROI tool any Indian student can install today. It works silently in the background across every text field in Chrome — your Google Docs assignments, Gmail submissions to professors, LinkedIn internship applications, and any form you fill in a browser. The free tier catches grammar errors, spelling mistakes, run-on sentences, and missing punctuation with no character limit and no expiry date.</p>
 <p>For Indian students writing academic English, Grammarly is particularly useful for two specific patterns: passive voice overuse (common in students trained on formal Hindi-to-English translation habits) and comma splices (joining two independent clauses with only a comma). Both of these appear consistently in Indian academic writing and are flagged immediately on the free plan.</p>
 <p><strong>Payment &amp; access:</strong> Sign up with any Indian email address at grammarly.com — no credit card, no dollar payment. The browser extension installs in under 2 minutes. The Pro plan (tone detection, plagiarism checker, vocabulary enhancement) is approximately ₹999/month when billed annually; UPI-linked cards and Indian debit cards are accepted at checkout via the Google Play Store if the main site payment fails.</p>
-<p><a href="/tools/grammarly" style="color:#0D9488;font-weight:600;">→ Full Grammarly review with free plan breakdown</a></p>
+<p><a href="/tools/grammarly/" style="color:#0D9488;font-weight:600;">→ Full Grammarly review with free plan breakdown</a></p>
 
 <h2>2. Rytr — Best Free AI Writing Tool with Hindi Support</h2>
 <p><strong>Free plan: 10,000 characters/month · Hindi output supported · No credit card</strong></p>
@@ -131,7 +131,7 @@ const post: BlogPost = {
 <p>For English-medium students, 10,000 free characters per month covers roughly two 600-word blog posts, one 800-word essay draft, or twenty Instagram captions. Rytr's 40+ use-case templates (Blog Idea, Essay Outline, Cold Email, LinkedIn Summary) act as structured prompts — useful for students who don't yet know how to write effective AI prompts, since the templates show you exactly what inputs produce good outputs.</p>
 <p><strong>Free plan reality check:</strong> 10,000 characters disappears in one heavy-use session if you're generating full essay sections. Use it for outlines and introductions first, then write the body yourself — this produces better academic work and stretches the free allocation further.</p>
 <p><strong>INR pricing:</strong> The Saver plan is approximately ₹750/month (unlimited characters, all 40+ use cases). The free plan requires no card at all.</p>
-<p><a href="/tools/rytr" style="color:#0D9488;font-weight:600;">→ Full Rytr review — free plan, Hindi support &amp; pricing</a></p>
+<p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review — free plan, Hindi support &amp; pricing</a></p>
 
 <h2>3. QuillBot — Best Free Tool for Paraphrasing Research</h2>
 <p><strong>Free plan: 125 words/paraphrase · Summariser up to 1,200 words · No credit card</strong></p>
@@ -139,7 +139,7 @@ const post: BlogPost = {
 <p>The Summariser is the genuinely underused feature on the free plan. Paste up to 1,200 words from a research paper or news article and QuillBot returns a condensed summary — useful for literature reviews, building reference lists quickly, and preparing notes from dense academic sources. For Indian students doing research-based assignments, this alone saves 20–30 minutes per source.</p>
 <p><strong>The Citation Generator</strong> (free) auto-formats references in APA, MLA, Chicago, and Harvard from a URL, DOI, or book title. Indian universities that require APA or Harvard citation formats benefit from this directly — copy the URL of your source, paste it in, get a correctly formatted citation in under 10 seconds.</p>
 <p><strong>INR pricing:</strong> QuillBot Premium is approximately ₹830/month (removes word limits, unlocks all paraphrase modes, adds Plagiarism Checker).</p>
-<p><a href="/tools/quillbot" style="color:#0D9488;font-weight:600;">→ Full QuillBot review — free plan &amp; what Premium actually adds</a></p>
+<p><a href="/tools/quillbot/" style="color:#0D9488;font-weight:600;">→ Full QuillBot review — free plan &amp; what Premium actually adds</a></p>
 
 <h2>4. Perplexity — Best Free AI Research Tool for Indian Students</h2>
 <p><strong>Free plan: Unlimited daily searches · No credit card · Understands Hindi queries</strong></p>
@@ -159,7 +159,7 @@ const post: BlogPost = {
 <p>Taskade combines task management, notes, mind maps, and AI generation in one workspace. For students, the most useful feature is the AI Project Generator: describe your assignment or exam preparation goal in one sentence and Taskade generates a full breakdown with subtasks, suggested timelines, and notes. For a student preparing for end-semester exams across 5 subjects, this takes the planning work off your plate in under 2 minutes.</p>
 <p><strong>Free plan breadth:</strong> The Taskade free plan gives access to all view types — list, kanban, mind map, and calendar — plus 5 AI agent runs per month. For individual student use, the free tier is sufficient for daily study tracking and assignment planning without upgrading.</p>
 <p><strong>INR pricing:</strong> The Pro plan is approximately ₹650/month if you need unlimited AI runs for heavier workloads.</p>
-<p><a href="/tools/taskade" style="color:#0D9488;font-weight:600;">→ Full Taskade review — free plan &amp; student use cases</a></p>
+<p><a href="/tools/taskade/" style="color:#0D9488;font-weight:600;">→ Full Taskade review — free plan &amp; student use cases</a></p>
 
 <h2>The Zero-Cost Student Stack for India — How to Build It</h2>
 <p>You can have a fully functional AI-powered study setup in India at ₹0/month. Here is the exact order to build it:</p>

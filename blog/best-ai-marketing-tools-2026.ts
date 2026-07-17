@@ -105,7 +105,7 @@ const post: BlogPost = {
   <li><strong>Cons:</strong> SEO features are basic, analytics could be deeper</li>
   <li><strong>Best for:</strong> Social media managers and small businesses managing multiple platforms</li>
 </ul>
-<p><a href="/compare/ocoya-vs-buffer-vs-hootsuite" style="color:#0D9488;font-weight:600;">→ Ocoya vs Buffer vs Hootsuite — which social media tool wins in 2026?</a></p>
+<p><a href="/compare/ocoya-vs-buffer-vs-hootsuite/" style="color:#0D9488;font-weight:600;">→ Ocoya vs Buffer vs Hootsuite — which social media tool wins in 2026?</a></p>
 
 <h2>3. Jasper — Best for Marketing Teams and Agencies</h2>
 <p><strong>Rating: 4.4/5 · 7-day trial · Paid: $49/month</strong></p>

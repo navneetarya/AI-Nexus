@@ -226,7 +226,7 @@ const ToolCard: React.FC<{ tool: Tool; navigate: (to: string) => void }> = ({ to
           <ExternalLink size={12} /> Try Free
         </a>
         <button
-          onClick={() => navigate(`/tools/${tool.slug}`)}
+          onClick={() => navigate(`/tools/${tool.slug}/`)}
           style={{
             flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5,
             background: C.barBg, border: `1px solid ${C.barBrd}`, color: C.txt,
@@ -425,7 +425,7 @@ export function BestFreeAIToolsPage({ navigate, isDark, toggleTheme }: Props) {
                 return (
                   <tr key={t.id} style={{ background: idx % 2 === 0 ? C.surf : C.bg }}>
                     <td style={{ padding: '11px 14px', fontSize: 13, fontWeight: 600, color: C.txt, borderTop: `1px solid ${C.barBrd}` }}>
-                      <button onClick={() => navigate(`/tools/${t.slug}`)}
+                      <button onClick={() => navigate(`/tools/${t.slug}/`)}
                         style={{ background: 'none', border: 'none', color: C.a1, cursor: 'pointer', fontWeight: 700, fontSize: 13, padding: 0 }}>
                         {t.name}
                       </button>

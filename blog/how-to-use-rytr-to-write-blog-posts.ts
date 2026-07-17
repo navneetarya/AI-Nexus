@@ -101,7 +101,7 @@ const post: BlogPost = {
 <h2>Which Rytr Plan Do You Need?</h2>
 <p>The <strong>free plan</strong> (10,000 characters/month) is enough for 1 blog post per month and plenty to test the workflow. If you're publishing 2+ posts per week, the <strong>$9/month Saver plan</strong> gives you unlimited characters and access to the plagiarism checker — it pays for itself within the first post if your time is worth anything.</p>
 <p>The $29/month Unlimited plan adds custom use cases and priority support. Unless you're building a content agency workflow, the Saver plan is the right stopping point for individual bloggers.</p>
-<p>Ready to start? <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="noopener noreferrer" style="color:var(--a1);font-weight:700;">Try Rytr free →</a> No credit card required. Or read our <a href="/tools/rytr" style="color:var(--a1);font-weight:600;">full Rytr review</a> for a deeper look at everything the platform offers.</p>
+<p>Ready to start? <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="noopener noreferrer" style="color:var(--a1);font-weight:700;">Try Rytr free →</a> No credit card required. Or read our <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">full Rytr review</a> for a deeper look at everything the platform offers.</p>
   `.trim(),
 };
 

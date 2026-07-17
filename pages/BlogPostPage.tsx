@@ -280,7 +280,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
   }, [post.slug]); // eslint-disable-line react-hooks/exhaustive-deps
   // Inject Article + FAQPage JSON-LD schema into <head>
   useEffect(() => {
-    const canonical = `${SITE_CONFIG.siteUrl}/blog/${post.slug}`;
+    const canonical = `${SITE_CONFIG.siteUrl}/blog/${post.slug}/`;
 
     const articleSchema = {
       '@context': 'https://schema.org',
@@ -830,7 +830,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
                 {relatedTools.map(t => (
                   <button
                     key={t.slug}
-                    onClick={() => navigate(`/tools/${t.slug}`)}
+                    onClick={() => navigate(`/tools/${t.slug}/`)}
                     style={{
                       background: C.surf,
                       border: `1px solid ${C.brd}`,

@@ -119,7 +119,7 @@ const post: BlogPost = {
 </ul>
 <p><strong>What requires a paid upgrade ($12/month):</strong> Real-time tone detection, full-sentence rewrites (GrammarlyGO), advanced style suggestions, vocabulary enhancement, and the plagiarism checker.</p>
 <p><strong>Who the free plan is best for:</strong> Anyone who writes professionally and wants an always-on error filter. Students, freelancers, remote workers, and business owners all benefit from the free tier without needing to upgrade. The free plan alone is sufficient if your goal is polished, error-free output rather than style coaching.</p>
-<p><a href="/tools/grammarly" style="color:#0D9488;font-weight:600;">→ Full Grammarly review — free vs Premium features compared in detail</a></p>
+<p><a href="/tools/grammarly/" style="color:#0D9488;font-weight:600;">→ Full Grammarly review — free vs Premium features compared in detail</a></p>
 
 <h2>#2 Rytr — Best Free AI Writing Tool for Content Generation</h2>
 <p><strong>Free plan: 10,000 characters/month · No credit card required · Paid: $9/month</strong></p>
@@ -134,7 +134,7 @@ const post: BlogPost = {
 </ul>
 <p><strong>The free plan limit in practice:</strong> 10,000 characters sounds like a lot — it isn't. A single 800-word blog post uses roughly 5,000 characters. Power users will exhaust the free tier in a few sessions. But for writers who need to generate content occasionally rather than daily, the free plan is genuinely functional.</p>
 <p><strong>Who the free plan is best for:</strong> Freelancers and students who need to break writer's block and generate occasional drafts but aren't ready to commit to a monthly subscription. Also useful as a trial before committing to the $9/month Saver plan.</p>
-<p><a href="/tools/rytr" style="color:#0D9488;font-weight:600;">→ Full Rytr review — free plan limits, templates, and whether $9/month is worth it</a></p>
+<p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review — free plan limits, templates, and whether $9/month is worth it</a></p>
 
 <h2>#3 QuillBot — Best Free AI Writing Tool for Students and Researchers</h2>
 <p><strong>Free plan: 125 words per paraphrase pass, unlimited summariser · No credit card required · Paid: $9.95/month</strong></p>
@@ -149,7 +149,7 @@ const post: BlogPost = {
 </ul>
 <p><strong>The free plan limit in practice:</strong> 125 words per paraphrase pass means you process longer documents section by section — paste, paraphrase, copy, repeat. For a 1,000-word essay this takes 8–10 passes. Annoying, but functional. The summariser has no limit, so long-form document summarisation remains completely free regardless of document length.</p>
 <p><strong>Who the free plan is best for:</strong> Students paraphrasing academic sources, researchers summarising papers, non-native English speakers using Fluency mode to polish phrasing, and anyone who needs a citation generator. The free tier covers all four use cases without a paid upgrade.</p>
-<p><a href="/tools/quillbot" style="color:#0D9488;font-weight:600;">→ Full QuillBot review — all 7 paraphrase modes and premium plan breakdown</a></p>
+<p><a href="/tools/quillbot/" style="color:#0D9488;font-weight:600;">→ Full QuillBot review — all 7 paraphrase modes and premium plan breakdown</a></p>
 
 <h2>#4 Writesonic — Free Plan for Occasional Short-Form Copy</h2>
 <p><strong>Free plan: 25 generations/month · No credit card required · Paid: $16/month</strong></p>
@@ -163,7 +163,7 @@ const post: BlogPost = {
 </ul>
 <p><strong>The honest assessment:</strong> Writesonic's real strength — Article Writer 6.0 for long-form SEO content — is not available on the free plan. If long-form blog posts are your goal, the free plan is a preview rather than a working tool. For occasional short-form copy needs, the 25 monthly generations are useful. For regular publishing, the $16/month Individual plan is the entry point that unlocks the tool's full capability.</p>
 <p><strong>Who the free plan is best for:</strong> Marketers who occasionally need a polished tagline, ad headline, or product description and don't want to commit to a subscription for infrequent copy needs.</p>
-<p><a href="/tools/writesonic" style="color:#0D9488;font-weight:600;">→ Full Writesonic review — Article Writer 6.0, Chatsonic, and whether $16/month is worth it</a></p>
+<p><a href="/tools/writesonic/" style="color:#0D9488;font-weight:600;">→ Full Writesonic review — Article Writer 6.0, Chatsonic, and whether $16/month is worth it</a></p>
 
 <h2>#5 ChatGPT — The Wildcard Free Writing Tool With No Generation Limit</h2>
 <p><strong>Free plan: Unlimited (GPT-3.5) · No credit card required · Paid: $20/month (Plus, GPT-4o)</strong></p>
@@ -195,7 +195,7 @@ const post: BlogPost = {
   <li><strong>QuillBot → $9.95/month:</strong> When the 125-word limit makes paraphrasing long documents too slow</li>
   <li><strong>Writesonic → $16/month:</strong> When you need Article Writer 6.0 for long-form SEO blog posts</li>
 </ul>
-<p>See also: <a href="/blog/best-ai-writing-tools-2026" style="color:#0D9488;font-weight:600;">→ Best AI writing tools 2026 — full paid plans compared</a> and <a href="/blog/best-ai-writing-tools-for-beginners-2026" style="color:#0D9488;font-weight:600;">→ Best AI writing tools for beginners</a> — if you're new to the category and want a simpler starting point.</p>
+<p>See also: <a href="/blog/best-ai-writing-tools-2026/" style="color:#0D9488;font-weight:600;">→ Best AI writing tools 2026 — full paid plans compared</a> and <a href="/blog/best-ai-writing-tools-for-beginners-2026/" style="color:#0D9488;font-weight:600;">→ Best AI writing tools for beginners</a> — if you're new to the category and want a simpler starting point.</p>
   `.trim(),
 };
 

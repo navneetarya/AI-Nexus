@@ -87,7 +87,7 @@ const post: BlogPost = {
 <p><strong>Overdub (AI voice):</strong> Descript's voice cloning feature is mature and reliable. Record a voice model, then use it to add or replace words in your recording — useful for fixing mistakes without re-recording a whole take.</p>
 <p><strong>Where Descript falls short vs Podcastle:</strong> The recording quality for remote guests is slightly less consistent than Podcastle's Magic Dust approach. Descript also doesn't offer podcast publishing and distribution — you export and publish elsewhere. The learning curve is real; the text-editing paradigm takes a few sessions to feel natural.</p>
 <p><strong>Free plan:</strong> 1 hour of transcription per month, basic audio and video editing, watermarked exports. Paid Creator plan at $12/month removes limits.</p>
-<p><a href="/compare/podcastle-vs-descript" style="color:#0D9488;font-weight:600;">→ See full Podcastle vs Descript comparison</a></p>
+<p><a href="/compare/podcastle-vs-descript/" style="color:#0D9488;font-weight:600;">→ See full Podcastle vs Descript comparison</a></p>
 
 <h2>#2 Riverside.fm — Best for Remote Guest Recording Quality</h2>
 <p>Riverside.fm ($15/month) is the most direct competitor to Podcastle for remote podcast recording — and it does the core job slightly better. Where Podcastle records locally and uploads, Riverside also records locally but adds 4K video recording per participant, uncompressed WAV audio tracks, and a more polished in-browser guest experience.</p>

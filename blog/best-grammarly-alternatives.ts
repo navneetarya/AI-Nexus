@@ -92,7 +92,7 @@ const post: BlogPost = {
 <p><strong>What Grammarly does better:</strong> Real-time integration across 500+ apps via browser extension. If you write in Gmail, Google Docs, LinkedIn, or Notion every day, Grammarly's seamless suggestions where you're already working are genuinely hard to replace. QuillBot is a tool you visit; Grammarly is a layer on top of everything.</p>
 <p><strong>Free plan:</strong> Paraphrasing in 2 modes, grammar checker with no word limit, summariser (600 words), citation generator. Functional for regular use. Premium at $9.95/month unlocks all 7 paraphrase modes and removes character limits.</p>
 <p><strong>Who should switch to QuillBot:</strong> Students (citation generator + summariser alone justify it), content writers who rewrite and repurpose heavily, and anyone who finds Grammarly's price too high for their actual usage.</p>
-<p><a href="/tools/quillbot" style="color:#0D9488;font-weight:600;">→ Read the full QuillBot review</a> &nbsp;·&nbsp; <a href="/compare/grammarly-vs-quillbot" style="color:#0D9488;font-weight:600;">→ Grammarly vs QuillBot — in-depth comparison</a></p>
+<p><a href="/tools/quillbot/" style="color:#0D9488;font-weight:600;">→ Read the full QuillBot review</a> &nbsp;·&nbsp; <a href="/compare/grammarly-vs-quillbot/" style="color:#0D9488;font-weight:600;">→ Grammarly vs QuillBot — in-depth comparison</a></p>
 
 <h2>#2 Writesonic — Best for Generating New Content</h2>
 <p>Writesonic ($16/month) does something Grammarly doesn't: it generates content from scratch. Article Writer, Chatsonic AI chatbot, and a built-in SEO checker make it the better choice for anyone who needs to produce long-form content regularly, not just polish existing writing.</p>
@@ -100,21 +100,21 @@ const post: BlogPost = {
 <p><strong>Chatsonic</strong> — Writesonic's AI chatbot with real-time web access — is included in all paid plans. For research-heavy content, this is genuinely useful; Grammarly has no equivalent.</p>
 <p><strong>Where Writesonic falls short as a Grammarly replacement:</strong> It doesn't integrate into Gmail, Docs, or other apps the way Grammarly does. If your core need is real-time error correction while writing, Writesonic doesn't solve that problem.</p>
 <p><strong>Who should switch to Writesonic:</strong> SEO content marketers, bloggers publishing 4+ articles per month, and anyone whose bottleneck is generating first drafts rather than correcting them.</p>
-<p><a href="/tools/writesonic" style="color:#0D9488;font-weight:600;">→ Read the full Writesonic review</a> &nbsp;·&nbsp; <a href="/compare/grammarly-vs-writesonic" style="color:#0D9488;font-weight:600;">→ Grammarly vs Writesonic — which is right for you?</a></p>
+<p><a href="/tools/writesonic/" style="color:#0D9488;font-weight:600;">→ Read the full Writesonic review</a> &nbsp;·&nbsp; <a href="/compare/grammarly-vs-writesonic/" style="color:#0D9488;font-weight:600;">→ Grammarly vs Writesonic — which is right for you?</a></p>
 
 <h2>#3 Rytr — Best Budget Alternative at $9/Month</h2>
 <p>Rytr's $9/month Saver plan is the best-value AI writing tool available in 2026: unlimited words, 40+ content templates, and support for 30+ languages. For freelancers and solopreneurs who write structured content types — email sequences, ad copy, blog intros, social posts — Rytr handles these without the word credit nonsense that plagues more expensive tools.</p>
 <p><strong>Key difference from Grammarly:</strong> Rytr generates content; Grammarly corrects it. They're complementary tools, not direct substitutes. But if you're choosing one, and your main need is producing content faster rather than editing it better, Rytr wins on value.</p>
 <p><strong>Free plan:</strong> 10,000 characters/month. Enough to test whether it fits your workflow before spending anything.</p>
 <p><strong>Where Rytr falls short:</strong> Long-form articles over 1,200 words need manual assembly. The output is consistent but sometimes generic on nuanced topics. No real-time integration into external apps.</p>
-<p><a href="/tools/rytr" style="color:#0D9488;font-weight:600;">→ Read the full Rytr review</a></p>
+<p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Read the full Rytr review</a></p>
 
 <h2>#4 ProWritingAid — Best for Serious Authors and Editors</h2>
 <p>ProWritingAid ($20/month or $120/year one-time) is the most thorough editing tool on this list. Where Grammarly makes quick suggestions, ProWritingAid produces detailed reports: readability analysis, overused word detection, sentence length variety, passive voice percentage, pacing analysis, and more.</p>
 <p>For novelists, serious non-fiction authors, and professional editors, ProWritingAid's depth of analysis is unmatched at any price. It integrates with Scrivener — the tool most serious authors use — which Grammarly doesn't.</p>
 <p><strong>Why most people don't need ProWritingAid:</strong> The same depth that makes it powerful for authors makes it overwhelming for casual use. A weekly writing report is useful for improving your craft; it's overkill for a quick email.</p>
 <p><strong>Who should consider ProWritingAid:</strong> Authors writing books or long-form non-fiction, professional editors, and anyone who wants deep craft-level feedback on their writing rather than quick grammar fixes.</p>
-<p><a href="/compare/grammarly-vs-prowritingaid" style="color:#0D9488;font-weight:600;">→ Grammarly vs ProWritingAid — full feature breakdown</a></p>
+<p><a href="/compare/grammarly-vs-prowritingaid/" style="color:#0D9488;font-weight:600;">→ Grammarly vs ProWritingAid — full feature breakdown</a></p>
 
 <h2>The Honest Verdict: Which Grammarly Alternative Should You Use?</h2>
 <p>For most people looking for a Grammarly alternative: <strong>start with QuillBot</strong>. The free plan is genuinely functional, it does things Grammarly doesn't (paraphrasing, summarising, citations), and the $9.95/month premium is cheaper than Grammarly. If you write original content AND need real-time app integration, consider running both — many writers use Grammarly while typing and QuillBot to refine drafts.</p>

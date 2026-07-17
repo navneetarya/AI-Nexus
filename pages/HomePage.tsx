@@ -846,7 +846,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 {articles.map(art => (
                   <button
                     key={art.slug}
-                    onClick={() => navigate(`/compare/${art.slug}`)}
+                    onClick={() => navigate(`/compare/${art.slug}/`)}
                     style={{
                       display: 'inline-flex', alignItems: 'center', gap: 5,
                       fontSize: 12, fontWeight: 600, color: ac,
@@ -949,7 +949,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             {COMPARE_ARTICLES_META.slice(0, 5).map((article, i) => (
               <div
                 key={article.slug}
-                onClick={() => navigate(`/compare/${article.slug}`)}
+                onClick={() => navigate(`/compare/${article.slug}/`)}
                 style={{ background:C.surf, border:`1.5px solid var(--brd-xs)`, borderRadius:14, padding:'16px 18px', cursor:'pointer', transition:'box-shadow .15s, transform .15s' }}
                 onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 20px ${C.a1}22`; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; }}
@@ -1013,7 +1013,7 @@ function BlogCompareCard({ article, navigate, idx }: {
 
   return (
     <div className="blog-card scroll-reveal"
-      onClick={() => navigate(`/compare/${article.slug}`)}
+      onClick={() => navigate(`/compare/${article.slug}/`)}
       style={{ background:C.surf, borderRadius:18, border:`1.5px solid var(--brd-xs)`,
         cursor:'pointer', overflow:'hidden',
         boxShadow:'0 2px 8px var(--chip-bg)',
@@ -1167,7 +1167,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
 
     return (
       <div className={revealCls}
-        onClick={() => navigate(`/tools/${tool.slug}`)}
+        onClick={() => navigate(`/tools/${tool.slug}/`)}
         style={{ cursor:'pointer', position:'relative', animationDelay:`${idx * 0.04}s`,
           ['--card-brd' as any]: accent + '60' }}>
 
@@ -1311,7 +1311,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
   // Secondary = no userBadge, not affiliate → slightly receded visual weight
   return (
     <div className={revealCls}
-      onClick={() => navigate(`/tools/${tool.slug}`)}
+      onClick={() => navigate(`/tools/${tool.slug}/`)}
       style={{ cursor:'pointer', position:'relative',
         ['--card-brd' as any]: cardBrd,
         animationDelay:`${idx * 0.04}s`,

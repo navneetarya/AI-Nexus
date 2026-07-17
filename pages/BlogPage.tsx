@@ -44,7 +44,7 @@ function CategoryPill({ label }: { label: string }) {
 const PostCard: React.FC<{ post: BlogPostMeta; navigate: (to: string) => void }> = ({ post, navigate }) => {
   return (
     <article
-      onClick={() => navigate(`/blog/${post.slug}`)}
+      onClick={() => navigate(`/blog/${post.slug}/`)}
       style={{
         background: C.surf,
         border: `1px solid ${C.brd}`,

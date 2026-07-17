@@ -93,7 +93,7 @@ const post: BlogPost = {
 <h2>The Setup: Same 5 Tasks, 3 AIs</h2>
 <p>All three were independently researched through the same five tasks on the same day in May 2026. Same prompts, same brief, no editing the prompt to flatter any particular tool. The documented outputs are shown as-is — not ideal versions, not marketing copy, what actually came out.</p>
 
-<p>Quick context on what each subscription actually costs. <a href="/tools/perplexity" style="color:#0D9488;font-weight:600;">Perplexity Pro</a> is $20/month for 600 Pro searches per day using GPT-4o or Claude within Perplexity, plus unlimited standard searches. ChatGPT Plus is $20/month for priority GPT-4o access, image generation via DALL-E, and higher message limits. Claude Pro is $20/month for roughly 5× more usage than the free Claude tier, access to Claude 3.5 Opus on demand, and longer context windows.</p>
+<p>Quick context on what each subscription actually costs. <a href="/tools/perplexity/" style="color:#0D9488;font-weight:600;">Perplexity Pro</a> is $20/month for 600 Pro searches per day using GPT-4o or Claude within Perplexity, plus unlimited standard searches. ChatGPT Plus is $20/month for priority GPT-4o access, image generation via DALL-E, and higher message limits. Claude Pro is $20/month for roughly 5× more usage than the free Claude tier, access to Claude 3.5 Opus on demand, and longer context windows.</p>
 
 <p>Here's the thing about Perplexity specifically: their free tier is unusually capable. It gives you unlimited standard searches with citations — which is the main feature that makes Perplexity worth using at all. The Pro upgrade is mainly about model quality (GPT-4o vs the default Perplexity model) and search volume. For some freelancers, the free tier genuinely covers their research needs. I'll come back to this in the recommendation section.</p>
 
@@ -173,7 +173,7 @@ const post: BlogPost = {
 <h3>Perplexity Pro — $20/month</h3>
 <p>600 Pro searches per day using GPT-4o or Claude 3.5 as the underlying model (you can choose per query), unlimited standard searches, Spaces for persistent research environments with uploaded documents, and real-time image generation. The honest thing to acknowledge here: Perplexity's free tier gives you 5 Pro searches per day plus unlimited standard searches. If your use case is "I research things a few times per week and want cited answers", the free tier is probably sufficient. The Pro upgrade is for daily heavy research users.</p>
 
-<p>For a broader look at ChatGPT alternatives at every price point, see our guide: <a href="/blog/chatgpt-alternatives-free-2026" style="color:#0D9488;font-weight:600;">ChatGPT alternatives (including free ones) in 2026</a>.</p>
+<p>For a broader look at ChatGPT alternatives at every price point, see our guide: <a href="/blog/chatgpt-alternatives-free-2026/" style="color:#0D9488;font-weight:600;">ChatGPT alternatives (including free ones) in 2026</a>.</p>
 
 <h2>My recommendation: by freelancer type</h2>
 
@@ -187,7 +187,7 @@ const post: BlogPost = {
 <p>For anyone generating large quantities of short-form content — captions, email subject lines, ad variations, caption batches — ChatGPT has the most reliable volume-generation workflow. The DALL-E access is also genuinely useful for creating quick graphics without a design subscription.</p>
 
 <h3>Tight budget → Perplexity free + Claude free</h3>
-<p>Here's the honest answer for freelancers who don't want to spend $20/month yet: the Perplexity free tier (unlimited standard searches, 5 Pro searches per day) combined with the Claude free tier (limited daily usage) covers roughly 80% of what the paid tiers provide. You'll hit limits on heavy-use days, but for a freelancer starting out or working part-time, this combination is genuinely functional. See the full breakdown in our <a href="/blog/best-ai-tools-for-freelancers-2026" style="color:#0D9488;font-weight:600;">best AI tools for freelancers guide</a> for tool-by-tool free plan analysis.</p>
+<p>Here's the honest answer for freelancers who don't want to spend $20/month yet: the Perplexity free tier (unlimited standard searches, 5 Pro searches per day) combined with the Claude free tier (limited daily usage) covers roughly 80% of what the paid tiers provide. You'll hit limits on heavy-use days, but for a freelancer starting out or working part-time, this combination is genuinely functional. See the full breakdown in our <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:#0D9488;font-weight:600;">best AI tools for freelancers guide</a> for tool-by-tool free plan analysis.</p>
 
 <h3>Not sure where to start?</h3>
 <p>Run the same test I did. Pick the three tasks most representative of your actual workload. Use the free tiers of all three tools. Pay for whichever one saves you the most time on those specific tasks. That's the only data point that matters.</p>

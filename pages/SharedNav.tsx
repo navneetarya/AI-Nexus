@@ -282,7 +282,7 @@ export function SharedNav({
                     <button
                       key={a.slug}
                       className="compare-dropdown-item"
-                      onClick={() => { setCompareOpen(false); closeMobile(); navigate(`/compare/${a.slug}`); }}
+                      onClick={() => { setCompareOpen(false); closeMobile(); navigate(`/compare/${a.slug}/`); }}
                     >
                       <Scale size={11} style={{ display: 'inline', marginRight: 7, verticalAlign: 'middle', color: 'var(--a1)' }} />
                       {a.keyword}

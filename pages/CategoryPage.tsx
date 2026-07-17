@@ -351,7 +351,7 @@ const ToolCard: React.FC<{ tool: Tool; navigate: (to: string) => void }> = ({ to
         <ExternalLink size={12} /> Try It
       </a>
       <button
-        onClick={() => navigate(`/tools/${tool.slug}`)}
+        onClick={() => navigate(`/tools/${tool.slug}/`)}
         style={{
           flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5,
           background: C.barBg, border: `1px solid ${C.barBrd}`, color: C.txt,
@@ -402,7 +402,7 @@ function ItemListSchema({ tools, meta }: { tools: Tool[]; meta: CategoryMeta }) 
       '@type': 'ListItem',
       position: i + 1,
       name: t.name,
-      url: `${SITE_CONFIG.siteUrl}/tools/${t.slug}`,
+      url: `${SITE_CONFIG.siteUrl}/tools/${t.slug}/`,
     })),
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(json) }} />;

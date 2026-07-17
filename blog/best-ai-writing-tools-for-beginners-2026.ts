@@ -95,7 +95,7 @@ const post: BlogPost = {
 <p>The free version catches grammar, spelling, punctuation, and basic clarity issues. The paid version ($12/month) adds tone detection, vocabulary suggestions, and a full-sentence rewrite feature that's genuinely useful for non-native English writers.</p>
 <p><strong>Why it works for beginners:</strong> Grammarly runs in the background across every app. There's no workflow change, no new tool to open — corrections appear inline as you type. The free plan genuinely covers most beginners' needs with no word limit.</p>
 <p><strong>Who should skip it:</strong> If your goal is to generate content from scratch rather than improve your own writing, Grammarly alone won't do that. Pair it with Rytr or Writesonic for content generation.</p>
-<p><a href="/compare/grammarly-vs-quillbot" style="color:#0D9488;font-weight:600;">→ Grammarly vs QuillBot — which writing tool do beginners actually need?</a></p>
+<p><a href="/compare/grammarly-vs-quillbot/" style="color:#0D9488;font-weight:600;">→ Grammarly vs QuillBot — which writing tool do beginners actually need?</a></p>
 
 <h2>2. Rytr — Best for Generating Drafts Without Any Learning Curve</h2>
 <p><strong>Rating: 4.0/5 · Free plan: 10,000 characters/month</strong></p>
@@ -108,7 +108,7 @@ const post: BlogPost = {
   <li><strong>Unlimited ($29/month):</strong> No limits, team features, dedicated account manager</li>
 </ul>
 <p><strong>Honest verdict:</strong> The output quality is good for short-form content — ad copy, social posts, email intros. Long-form blog posts need heavier editing, but that's true of every AI writing tool at this price point. Verified user feedback across G2 and Reddit consistently highlights the template variety and the generous free plan as the strongest differentiators.</p>
-<p><a href="/compare/rytr-vs-writesonic" style="color:#0D9488;font-weight:600;">→ Rytr vs Writesonic — which AI writing tool is right for beginners?</a></p>
+<p><a href="/compare/rytr-vs-writesonic/" style="color:#0D9488;font-weight:600;">→ Rytr vs Writesonic — which AI writing tool is right for beginners?</a></p>
 
 <h2>3. QuillBot — Best for Rewriting and Summarising</h2>
 <p><strong>Rating: 4.3/5 · Free plan: 125 words per paraphrase</strong></p>
@@ -138,7 +138,7 @@ const post: BlogPost = {
 <h2>Final Verdict</h2>
 <p>The best AI writing tool for beginners in 2026 depends on what you're trying to do. If you want to write better, start with <strong>Grammarly</strong>. If you want to generate content faster, start with <strong>Rytr</strong>. If you're repurposing or summarising research, <strong>QuillBot</strong> is your tool. And if SEO blogging is your goal, invest time learning <strong>Writesonic</strong>.</p>
 <p>All four have free plans. Try them all before spending a pound.</p>
-<p style="margin-top:16px;">📍 <strong>Based in India?</strong> See our dedicated guide: <a href="/blog/best-free-ai-tools-for-students-in-india-2026" style="color:#0D9488;font-weight:600;">Best Free AI Tools for Students in India 2026</a> — covers INR pricing, VPN-free access, and which free plans work on Indian payment methods.</p>
+<p style="margin-top:16px;">📍 <strong>Based in India?</strong> See our dedicated guide: <a href="/blog/best-free-ai-tools-for-students-in-india-2026/" style="color:#0D9488;font-weight:600;">Best Free AI Tools for Students in India 2026</a> — covers INR pricing, VPN-free access, and which free plans work on Indian payment methods.</p>
   `.trim(),
 };
 

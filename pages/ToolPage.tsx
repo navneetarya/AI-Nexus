@@ -973,7 +973,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_CONFIG.siteUrl },
           { "@type": "ListItem", "position": 2, "name": tool.category, "item": `${SITE_CONFIG.siteUrl}${CATEGORY_SLUG_MAP[tool.category] || '/'}` },
-          { "@type": "ListItem", "position": 3, "name": `${tool.name} Review`, "item": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}` }
+          { "@type": "ListItem", "position": 3, "name": `${tool.name} Review`, "item": `${SITE_CONFIG.siteUrl}/tools/${tool.slug}/` }
         ]
       }) }} />
 
@@ -1691,7 +1691,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                 <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', background: 'rgba(13,148,136,.04)', borderRadius: 10, border: '1px solid rgba(13,148,136,.12)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
                   <span style={{ fontSize: 13, color: C.mut }}>Want a deeper breakdown of Ocoya vs Buffer vs Hootsuite?</span>
                   <a
-                    href="/compare/ocoya-vs-buffer-vs-hootsuite"
+                    href="/compare/ocoya-vs-buffer-vs-hootsuite/"
                     onClick={e => { e.preventDefault(); navigate('/compare/ocoya-vs-buffer-vs-hootsuite'); }}
                     style={{ fontSize: 13, fontWeight: 600, color: C.a1, textDecoration: 'none' }}
                   >
@@ -1755,7 +1755,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                 <div style={{ marginTop: 8, padding: '14px 18px', background: cardBg, borderRadius: 12, border: `1px solid ${cardBrd}`, display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 8 }}>
                   <span style={{ fontSize: 13, color: C.mut }}>Read the full {tool.name} vs {vs.tool} breakdown →</span>
                   <button
-                    onClick={() => navigate(`/compare/${vs.compareSlug}`)}
+                    onClick={() => navigate(`/compare/${vs.compareSlug}/`)}
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer', padding: '8px 18px', fontSize: 13, fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
                     Full comparison →
                   </button>
@@ -1919,7 +1919,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                       <div style={{ fontSize: 12, color: C.mut2 }}>{art.publishDate} · {art.comparisonTable.length} tools compared</div>
                     </div>
                     <button
-                      onClick={() => navigate(`/compare/${art.slug}`)}
+                      onClick={() => navigate(`/compare/${art.slug}/`)}
                       style={{
                         display: 'inline-flex', alignItems: 'center', gap: 6,
                         background: `linear-gradient(135deg,${C.a1},${C.a2})`,
@@ -1950,7 +1950,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
                 {sameCat.map((t, i) => (
                   <div key={i}
-                    onClick={() => navigate(`/tools/${t.slug}`)}
+                    onClick={() => navigate(`/tools/${t.slug}/`)}
                     style={{
                       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                       padding: '14px 18px', background: cardBg, borderRadius: 12,
@@ -2009,7 +2009,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
                 {relatedPosts.map((p, i) => (
                   <div key={i}
-                    onClick={() => navigate(`/blog/${p.slug}`)}
+                    onClick={() => navigate(`/blog/${p.slug}/`)}
                     style={{
                       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                       padding: '14px 18px', background: cardBg, borderRadius: 12,
@@ -2044,7 +2044,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               </h2>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
                 {relatedCompares.map(c => (
-                  <div key={c.slug} onClick={() => navigate(`/compare/${c.slug}`)}
+                  <div key={c.slug} onClick={() => navigate(`/compare/${c.slug}/`)}
                     style={{ background: C.surf, border: '1px solid var(--brd-sm)', borderRadius: 10, padding: '14px 16px', cursor: 'pointer', transition: 'transform .15s ease, box-shadow .15s ease' }}
                     onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 24px rgba(13,148,136,.1)'; }}
                     onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'none'; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}

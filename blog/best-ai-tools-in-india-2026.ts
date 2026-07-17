@@ -132,8 +132,8 @@ const post: BlogPost = {
 <h2>More India-Specific Guides</h2>
 <p>This guide covers the full AI stack for Indian users. If you're looking for something more specific, these two guides go deeper:</p>
 <ul style="margin:12px 0 16px 24px;line-height:2.6;">
-  <li><a href="/blog/best-free-ai-tools-for-students-in-india-2026" style="color:#0D9488;font-weight:600;">Best Free AI Tools for Students in India 2026</a> — Every tool has a permanent free plan that works without a VPN or dollar card. Covers essays, research, presentations, and coding with INR pricing notes.</li>
-  <li><a href="/blog/best-ai-tools-for-freelancers-india-2026" style="color:#0D9488;font-weight:600;">Best AI Tools for Indian Freelancers 2026</a> — Built specifically for freelancers billing in INR. Covers writing, design, project management, and client communication tools with honest ROI calculations.</li>
+  <li><a href="/blog/best-free-ai-tools-for-students-in-india-2026/" style="color:#0D9488;font-weight:600;">Best Free AI Tools for Students in India 2026</a> — Every tool has a permanent free plan that works without a VPN or dollar card. Covers essays, research, presentations, and coding with INR pricing notes.</li>
+  <li><a href="/blog/best-ai-tools-for-freelancers-india-2026/" style="color:#0D9488;font-weight:600;">Best AI Tools for Indian Freelancers 2026</a> — Built specifically for freelancers billing in INR. Covers writing, design, project management, and client communication tools with honest ROI calculations.</li>
 </ul>
 
 <h2>Final Verdict: Where to Start as an Indian Creator</h2>

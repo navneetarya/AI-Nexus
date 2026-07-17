@@ -137,14 +137,14 @@ const post: BlogPost = {
   </tbody>
 </table>
 </div>
-<p>The most relevant comparison is <a href="/tools/quillbot" style="color:#0D9488;font-weight:600;">QuillBot</a> at $9.95/month — it is cheaper than Grammarly Premium and stronger for paraphrasing and rewriting. But it doesn't replace Grammarly for real-time writing assistance across your apps. The question of Grammarly vs QuillBot ultimately comes down to whether you need to <em>improve what you write</em> (Grammarly) or <em>rewrite what already exists</em> (QuillBot).</p>
-<p><a href="/compare/grammarly-vs-quillbot" style="color:#0D9488;font-weight:600;">→ Grammarly vs QuillBot — full feature comparison and which to pick</a></p>
+<p>The most relevant comparison is <a href="/tools/quillbot/" style="color:#0D9488;font-weight:600;">QuillBot</a> at $9.95/month — it is cheaper than Grammarly Premium and stronger for paraphrasing and rewriting. But it doesn't replace Grammarly for real-time writing assistance across your apps. The question of Grammarly vs QuillBot ultimately comes down to whether you need to <em>improve what you write</em> (Grammarly) or <em>rewrite what already exists</em> (QuillBot).</p>
+<p><a href="/compare/grammarly-vs-quillbot/" style="color:#0D9488;font-weight:600;">→ Grammarly vs QuillBot — full feature comparison and which to pick</a></p>
 
 <h2>Final Verdict</h2>
 <p><strong>Grammarly Premium is worth $12/month if:</strong> you write professionally every day, you need tone awareness for client or stakeholder communication, or you want full-sentence rewrites and style coaching rather than just error correction.</p>
 <p><strong>Grammarly Premium is not worth it if:</strong> you write occasionally, you primarily need to fix grammar and typos (the free plan does that), or you're a student who only needs error-free output rather than style improvement.</p>
 <p>The free plan is not a stripped-down version of a product — it is a complete, genuinely useful writing tool. Premium is an upgrade, not a necessity. The right time to pay is when you find yourself wanting something the free plan can't give you — and most users will know when that moment arrives.</p>
-<p>See also: <a href="/tools/grammarly" style="color:#0D9488;font-weight:600;">→ Full Grammarly review — free vs Premium compared with use-case verdicts</a> and <a href="/blog/best-free-ai-writing-tools-2026" style="color:#0D9488;font-weight:600;">→ Best free AI writing tools 2026 — 5 tools with no credit card required</a>.</p>
+<p>See also: <a href="/tools/grammarly/" style="color:#0D9488;font-weight:600;">→ Full Grammarly review — free vs Premium compared with use-case verdicts</a> and <a href="/blog/best-free-ai-writing-tools-2026/" style="color:#0D9488;font-weight:600;">→ Best free AI writing tools 2026 — 5 tools with no credit card required</a>.</p>
   `.trim(),
 };
 

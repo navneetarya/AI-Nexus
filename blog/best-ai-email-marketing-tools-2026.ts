@@ -375,7 +375,7 @@ const post: BlogPost = {
   <li><strong>Best for creators/newsletters:</strong> Kit — free up to 10k subscribers</li>
 </ol>
 
-<p>For more AI marketing tool recommendations, see: <a href="/blog/best-ai-marketing-tools-2026" style="color:#0ea5e9;font-weight:600;">Best AI Marketing Tools 2026</a>, <a href="/blog/best-ai-tools-for-startups-2026" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Startups 2026</a>, and <a href="/blog/best-ai-tools-for-freelancers-2026" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Freelancers 2026</a>. Explore all AI marketing tools reviewed on the <a href="/best-ai-marketing-tools" style="color:#0ea5e9;font-weight:600;">AI Marketing Tools category page</a>, or compare social media marketing tools: <a href="/compare/ocoya-vs-buffer-vs-hootsuite" style="color:#0ea5e9;font-weight:600;">Ocoya vs Buffer vs Hootsuite</a>.</p>
+<p>For more AI marketing tool recommendations, see: <a href="/blog/best-ai-marketing-tools-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Marketing Tools 2026</a>, <a href="/blog/best-ai-tools-for-startups-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Startups 2026</a>, and <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Freelancers 2026</a>. Explore all AI marketing tools reviewed on the <a href="/best-ai-marketing-tools" style="color:#0ea5e9;font-weight:600;">AI Marketing Tools category page</a>, or compare social media marketing tools: <a href="/compare/ocoya-vs-buffer-vs-hootsuite/" style="color:#0ea5e9;font-weight:600;">Ocoya vs Buffer vs Hootsuite</a>.</p>
   `.trim(),
 };
 

@@ -65,7 +65,7 @@ export function CompareIndexPage({ navigate, isDark, toggleTheme }: CompareIndex
           {COMPARE_ARTICLES_META.map(article => (
             <article
               key={article.slug}
-              onClick={() => navigate(`/compare/${article.slug}`)}
+              onClick={() => navigate(`/compare/${article.slug}/`)}
               style={{
                 background: C.surf,
                 border: `1px solid ${C.brd}`,

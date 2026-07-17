@@ -162,7 +162,7 @@ function renderContent(text: string, navigate?: (to: string) => void, seenTools?
           parts.push(
             <span
               key={`${baseKey}-${partIdx++}`}
-              onClick={() => navigate(`/tools/${slug}`)}
+              onClick={() => navigate(`/tools/${slug}/`)}
               style={{ color: C.a1, fontWeight: 600, cursor: 'pointer', textDecoration: 'underline', textDecorationColor: `${C.a1}55` }}
             >{toolName}</span>
           );
@@ -302,7 +302,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
         ],
       },
       'publisher': { '@type': 'Organization', 'name': 'AI Nexus', 'url': SITE_CONFIG.siteUrl },
-      'mainEntityOfPage': { '@type': 'WebPage', '@id': `${SITE_CONFIG.siteUrl}/compare/${article.slug}` },
+      'mainEntityOfPage': { '@type': 'WebPage', '@id': `${SITE_CONFIG.siteUrl}/compare/${article.slug}/` },
     };
     document.querySelectorAll('script[data-compare-article]').forEach(el => el.remove());
     const articleScript = document.createElement('script');
@@ -318,7 +318,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
       'itemListElement': [
         { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE_CONFIG.siteUrl },
         { '@type': 'ListItem', 'position': 2, 'name': 'Comparisons', 'item': `${SITE_CONFIG.siteUrl}/compare` },
-        { '@type': 'ListItem', 'position': 3, 'name': article.keyword, 'item': `${SITE_CONFIG.siteUrl}/compare/${article.slug}` },
+        { '@type': 'ListItem', 'position': 3, 'name': article.keyword, 'item': `${SITE_CONFIG.siteUrl}/compare/${article.slug}/` },
       ],
     };
     document.querySelectorAll('script[data-compare-breadcrumb]').forEach(el => el.remove());
@@ -537,7 +537,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
               {article.winnerAffiliateText} <ExternalLink size={15} />
             </a>
             <button
-              onClick={() => navigate(`/tools/${article.winnerSlug}`)}
+              onClick={() => navigate(`/tools/${article.winnerSlug}/`)}
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'none', border: `1.5px solid ${C.a1brd}`, color: C.a1, padding: '0.75rem 1.25rem', borderRadius: 10, fontWeight: 600, fontSize: 15, cursor: 'pointer' }}
             >
               Full review <ChevronRight size={15} />

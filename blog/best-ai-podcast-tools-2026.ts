@@ -33,7 +33,7 @@ const post: BlogPost = {
     },
     {
       q: 'What is the difference between Podcastle and Descript?',
-      a: 'Podcastle is primarily a recording and production platform — it excels at remote recording quality and AI audio cleanup. Descript is primarily an editing platform — you edit your podcast by editing the automatically generated transcript (delete a line of text and the audio is removed). Podcastle is better for the recording stage; Descript is better if you have a lot of recorded audio to cut down and structure. See the full comparison in our <a href="/compare/podcastle-vs-descript" style="color:var(--a1);">Podcastle vs Descript article</a>.',
+      a: 'Podcastle is primarily a recording and production platform — it excels at remote recording quality and AI audio cleanup. Descript is primarily an editing platform — you edit your podcast by editing the automatically generated transcript (delete a line of text and the audio is removed). Podcastle is better for the recording stage; Descript is better if you have a lot of recorded audio to cut down and structure. See the full comparison in our <a href="/compare/podcastle-vs-descript/" style="color:var(--a1);">Podcastle vs Descript article</a>.',
     },
     {
       q: 'Do I need Murf AI for podcasts if I already have a microphone?',
@@ -46,12 +46,12 @@ const post: BlogPost = {
 <p>Every major AI podcast tool in this guide has been independently researched across features, pricing, free plan details, and verified user feedback. Here is what is actually worth recommending — and what to skip.</p>
 
 <h2>1. Podcastle — Best All-in-One AI Podcast Platform</h2>
-<p><strong>Category: Audio · Rating: 4.5/5 · Pricing: Free + from $11.99/month · <a href="/tools/podcastle" style="color:var(--a1);font-weight:600;">Full Podcastle Review →</a></strong></p>
+<p><strong>Category: Audio · Rating: 4.5/5 · Pricing: Free + from $11.99/month · <a href="/tools/podcastle/" style="color:var(--a1);font-weight:600;">Full Podcastle Review →</a></strong></p>
 <p>Podcastle is the closest thing to a complete podcast studio in a browser. You get high-quality remote recording (up to 4K audio with local track recording for each participant), AI noise removal called Magic Dust, automatic transcription, filler word detection, and a basic multi-track editor — all in one platform without downloading software.</p>
 <p>The feature that makes Podcastle stand out from competitors is the combination of <strong>AI Magic Dust + local track recording</strong>. When you record a remote interview, each participant's audio is recorded locally on their own device (not through the internet stream) and uploaded after the session. This eliminates the audio quality degradation that makes most remote podcast recordings sound like Zoom calls. Magic Dust then removes any remaining noise from each local track independently.</p>
 <p>For a podcast that interviews guests remotely — which covers the majority of podcasts in 2026 — this workflow produces results that previously required a professional recording engineer to achieve.</p>
 <p><strong>Free plan reality:</strong> The free plan covers up to 10 recording hours per month and 3 published episodes. For a weekly podcast, that's under capacity — you'd need the $11.99/month Basic plan. For a bi-weekly or monthly show, the free plan is genuinely workable long-term. Full affiliate link: <a href="https://podcastle.ai/?ref=ymi1ntf" style="color:var(--a1);font-weight:600;">Try Podcastle free →</a></p>
-<p>Compare Podcastle to its nearest competitor in our <a href="/compare/podcastle-vs-descript" style="color:var(--a1);font-weight:600;">Podcastle vs Descript breakdown →</a></p>
+<p>Compare Podcastle to its nearest competitor in our <a href="/compare/podcastle-vs-descript/" style="color:var(--a1);font-weight:600;">Podcastle vs Descript breakdown →</a></p>
 
 <h2>2. Adobe Podcast Enhance — Best Free Audio Cleanup Tool</h2>
 <p><strong>Category: Audio Enhancement · Pricing: Free (Enhance Speech) · Paid: Adobe Creative Cloud</strong></p>
@@ -64,10 +64,10 @@ const post: BlogPost = {
 <p><strong>Category: Editing · Rating: 4.4/5 · Pricing: Free + from $12/month</strong></p>
 <p>Descript takes a fundamentally different approach to podcast editing: instead of editing a waveform on a timeline, you edit a transcript. Delete a sentence from the transcript and Descript removes it from the audio. This makes editing as intuitive as editing a Google Doc — no audio editing experience required.</p>
 <p>For podcasters who struggle with traditional audio editing software (Audacity, GarageBand, Logic Pro), Descript removes the entire learning curve. You listen through your recording, read the auto-generated transcript, and delete or rearrange sections by editing the text. Overdub mode lets you re-record a specific word or phrase using an AI clone of your own voice — fix a stumble without re-recording the whole segment.</p>
-<p>The free plan includes 1 hour of transcription per month and watermarked exports. The $12/month Creator plan gives 10 hours of transcription and clean exports — reasonable for a weekly 30-minute show. See our full <a href="/compare/podcastle-vs-descript" style="color:var(--a1);font-weight:600;">Podcastle vs Descript comparison</a> to understand which fits your workflow better.</p>
+<p>The free plan includes 1 hour of transcription per month and watermarked exports. The $12/month Creator plan gives 10 hours of transcription and clean exports — reasonable for a weekly 30-minute show. See our full <a href="/compare/podcastle-vs-descript/" style="color:var(--a1);font-weight:600;">Podcastle vs Descript comparison</a> to understand which fits your workflow better.</p>
 
 <h2>4. Murf AI — Best for Podcast Intros, Outros & Ad Reads</h2>
-<p><strong>Category: Audio · Rating: 4.4/5 · Pricing: Free + from $19/month · <a href="/tools/murf-ai" style="color:var(--a1);font-weight:600;">Full Murf AI Review →</a></strong></p>
+<p><strong>Category: Audio · Rating: 4.4/5 · Pricing: Free + from $19/month · <a href="/tools/murf-ai/" style="color:var(--a1);font-weight:600;">Full Murf AI Review →</a></strong></p>
 <p>Murf AI generates realistic AI voiceovers from text. For podcasters, the most practical use cases are: (1) recording a professional intro or outro without needing to re-record it every episode, (2) creating ad reads for sponsors in a consistent voice, and (3) generating narration for solo "explainer" podcast episodes where you've written a script but don't want to record yourself reading it.</p>
 <p>The voice library includes 120+ AI voices across 20+ languages, with different accents, genders, and tones. The Studio interface lets you adjust speaking rate, pitch, and emphasis on individual words — so the output doesn't sound like the flat robotic TTS you'd expect.</p>
 <p><strong>Free plan:</strong> 10 minutes of voiceover generation per month with watermark. This is enough to test the tool thoroughly, but not sufficient for ongoing production. The $19/month Basic plan removes the watermark and gives 2 hours of monthly voice generation — enough for weekly short episodes. Compare Murf to ElevenLabs if ultra-realistic voice cloning is your priority: Murf wins on workflow polish, ElevenLabs wins on pure voice realism.</p>

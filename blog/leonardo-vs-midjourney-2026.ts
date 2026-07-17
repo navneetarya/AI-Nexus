@@ -103,7 +103,7 @@ const post: BlogPost = {
 <p><strong>Custom model training</strong> lets you upload 15–20 reference images and fine-tune a model on your specific style. For brand consistency — getting your product or character to look the same across 50 different images — this is genuinely powerful. It's the only way to achieve this level of visual consistency without external tools.</p>
 <p><strong>The canvas editor</strong> works like a basic Photoshop layer — you can inpaint (edit specific areas), outpaint (extend the image), and remove or replace elements. Not as advanced as dedicated image editors, but useful for quick corrections without leaving the platform.</p>
 <p><strong>Commercial rights:</strong> Leonardo's paid plans include full commercial use. Importantly, the free plan also grants commercial rights for outputs — more permissive than many competitors.</p>
-<p><a href="/tools/leonardo-ai" style="color:#0D9488;font-weight:600;">→ Full Leonardo.ai review</a></p>
+<p><a href="/tools/leonardo-ai/" style="color:#0D9488;font-weight:600;">→ Full Leonardo.ai review</a></p>
 
 <h2>Midjourney — The Gold Standard for Raw Image Quality</h2>
 <p>Midjourney's output quality at its best is still unmatched. The v6 and v6.1 models produce images with a painterly depth, natural light handling, and compositional intelligence that other tools are still catching up to. For portfolio pieces, hero images, and creative inspiration, it remains the benchmark.</p>
@@ -132,8 +132,8 @@ const post: BlogPost = {
 <h2>Practical Advice</h2>
 <p>Start with Leonardo.ai's free plan. Generate 50–100 images across a week using different models. If you consistently find that your output doesn't reach the quality level you need for your specific use case — and aesthetic quality is genuinely the bottleneck — try Midjourney's Basic plan for a month.</p>
 <p>Most creators who go through this process find Leonardo's paid tiers (Apprentice at $12/month for 8,500 tokens, Artisan at $30/month for 25,000 tokens) are more than sufficient for professional work. The creators who stay on Midjourney are usually those where pure aesthetic quality for one-off images is the single non-negotiable.</p>
-<p>For the full head-to-head technical comparison, see: <a href="/compare/leonardo-vs-midjourney" style="color:#0D9488;font-weight:600;">Leonardo.ai vs Midjourney — full comparison</a></p>
-<p>Looking for more free alternatives? See: <a href="/blog/best-midjourney-alternatives-2026" style="color:#0D9488;font-weight:600;">Best Midjourney Alternatives 2026 — Free Options Tested</a></p>
+<p>For the full head-to-head technical comparison, see: <a href="/compare/leonardo-vs-midjourney/" style="color:#0D9488;font-weight:600;">Leonardo.ai vs Midjourney — full comparison</a></p>
+<p>Looking for more free alternatives? See: <a href="/blog/best-midjourney-alternatives-2026/" style="color:#0D9488;font-weight:600;">Best Midjourney Alternatives 2026 — Free Options Tested</a></p>
   `.trim(),
 };
 

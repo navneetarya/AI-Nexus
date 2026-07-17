@@ -85,7 +85,7 @@ const post: BlogPost = {
     </tr>
     <tr>
       <td style="padding:10px 14px;">Grammar + editing</td>
-      <td style="padding:10px 14px;font-weight:600;">Neither — use <a href="/tools/grammarly" style="color:rgb(13,148,136);">Grammarly</a></td>
+      <td style="padding:10px 14px;font-weight:600;">Neither — use <a href="/tools/grammarly/" style="color:rgb(13,148,136);">Grammarly</a></td>
       <td style="padding:10px 14px;">Inline real-time editing is a different job</td>
     </tr>
   </tbody>
@@ -125,8 +125,8 @@ const post: BlogPost = {
 <p><strong>Edge: Gemini.</strong></p>
 
 <h2>Does Gemini Replace Grammarly?</h2>
-<p>Short answer: no, and it never will. <a href="/tools/grammarly" style="color:rgb(13,148,136);">Grammarly</a> works inline as you type — it checks your own writing in real time, catching grammar errors, improving clarity, and flagging tone issues across every app you use (Gmail, Google Docs, Notion, LinkedIn, and hundreds more). Gemini generates content when you prompt it.</p>
-<p>These are complementary tools solving different problems. The practical workflow for most writers: use Gemini (or ChatGPT, or <a href="/tools/writesonic" style="color:rgb(13,148,136);">Writesonic</a>) to generate a first draft, then run the draft through Grammarly to polish it before publishing. Using Gemini inside Google Docs and Grammarly's browser extension together is one of the most efficient writing setups available in 2026.</p>
+<p>Short answer: no, and it never will. <a href="/tools/grammarly/" style="color:rgb(13,148,136);">Grammarly</a> works inline as you type — it checks your own writing in real time, catching grammar errors, improving clarity, and flagging tone issues across every app you use (Gmail, Google Docs, Notion, LinkedIn, and hundreds more). Gemini generates content when you prompt it.</p>
+<p>These are complementary tools solving different problems. The practical workflow for most writers: use Gemini (or ChatGPT, or <a href="/tools/writesonic/" style="color:rgb(13,148,136);">Writesonic</a>) to generate a first draft, then run the draft through Grammarly to polish it before publishing. Using Gemini inside Google Docs and Grammarly's browser extension together is one of the most efficient writing setups available in 2026.</p>
 
 <h2>Gemini Pricing in 2026</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -157,7 +157,7 @@ const post: BlogPost = {
 <h2>Who Should Use Gemini in 2026</h2>
 <p><strong>Use Gemini if you:</strong> Write primarily inside Google Docs and Gmail, need live web-grounded research in your content, are already paying for Google One storage, or want a single AI that handles email, docs, and research without switching apps.</p>
 <p><strong>Stick with ChatGPT or Claude if you:</strong> Write long-form content where prose quality is the priority, rely on custom GPTs or Claude's extended thinking, or work outside the Google ecosystem entirely.</p>
-<p>For a full comparison of all the top AI writing tools available in 2026 — including Grok 4, ChatGPT, Claude, and Writesonic — see the <a href="/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026" style="color:rgb(13,148,136);">Grok 4 vs ChatGPT vs Claude comparison</a>.</p>
+<p>For a full comparison of all the top AI writing tools available in 2026 — including Grok 4, ChatGPT, Claude, and Writesonic — see the <a href="/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/" style="color:rgb(13,148,136);">Grok 4 vs ChatGPT vs Claude comparison</a>.</p>
 
 <h2>Final Verdict</h2>
 <p>Gemini 3.1 Pro is a genuinely useful writing tool in 2026 — not because it writes better prose than ChatGPT, but because it is embedded where writers already work. The Gmail integration alone justifies trying it for professional correspondence. The live search grounding makes it the best AI for research-backed writing. And for anyone already paying for Google One storage, the AI Premium tier is close to a no-brainer at the upgrade price.</p>

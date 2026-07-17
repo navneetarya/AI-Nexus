@@ -154,7 +154,7 @@ const post: BlogPost = {
   <li><strong>₹499/month budget:</strong> Canva Pro — INR pricing, UPI accepted, SVG downloads, brand kits, full commercial rights.</li>
   <li><strong>Need a premium, unique logo for a funded startup:</strong> Leonardo.ai for the mark + Canva for layout. Pay for Looka's brand kit (~₹1,650 one-time) if you need professional SVG files and brand guidelines.</li>
 </ul>
-<p>For a broader look at AI tools suited to Indian creators and freelancers across all categories, see: <a href="/blog/best-ai-tools-in-india-2026" style="color:#0D9488;font-weight:600;">Best AI Tools in India 2026 — Full Researcher's Guide</a> and <a href="/blog/best-ai-tools-for-freelancers-india-2026" style="color:#0D9488;font-weight:600;">Best AI Tools for Freelancers in India 2026</a>.</p>
+<p>For a broader look at AI tools suited to Indian creators and freelancers across all categories, see: <a href="/blog/best-ai-tools-in-india-2026/" style="color:#0D9488;font-weight:600;">Best AI Tools in India 2026 — Full Researcher's Guide</a> and <a href="/blog/best-ai-tools-for-freelancers-india-2026/" style="color:#0D9488;font-weight:600;">Best AI Tools for Freelancers in India 2026</a>.</p>
 
 <h2>Before You Go Live: 5 Things to Check With Any AI Logo</h2>
 <p>Whether you use Canva, Looka, Leonardo, or Hatchful, run through this checklist before putting your AI logo on a business card, website, or client deliverable. Skipping these steps is where most people waste money reprinting or rebranding within six months.</p>

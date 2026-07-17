@@ -99,7 +99,7 @@ const post: BlogPost = {
 <p><strong>Real test result:</strong> I took a 1,200-word blog post about AI tools for students and ran it through Pictory. Within 12 minutes I had a 4-minute video with accurate captions, natural transitions, and a voiceover that sounded like a scripted presenter — not a robot. The same prompt in InVideo AI produced a video with more generic b-roll and a script that was rewritten (not based on my article). For repurposing existing writing, Pictory is clearly better.</p>
 <p><strong>Brand templates:</strong> Pictory lets you set a brand kit — fonts, colours, logo placement — that applies to every video automatically. For faceless YouTube channels building a consistent look, this is a major time-saver. InVideo also has templates, but Pictory's brand persistence across a content pipeline is more polished.</p>
 <p><strong>Pricing:</strong> From $19/month. 3-video free trial (no credit card) — enough to test whether it fits your content workflow before committing.</p>
-<p><a href="/tools/pictory" style="color:#0D9488;font-weight:600;">→ Read the full Pictory review</a></p>
+<p><a href="/tools/pictory/" style="color:#0D9488;font-weight:600;">→ Read the full Pictory review</a></p>
 
 <h2>#2 Opus Clip — Best for Short-Form Clips from Long Videos</h2>
 <p>Opus Clip solves a completely different problem to InVideo AI — and it's important to understand the distinction before choosing. InVideo AI <em>creates</em> new videos from text prompts. Opus Clip <em>repurposes</em> existing long-form video into short clips for TikTok, Reels, and YouTube Shorts.</p>
@@ -108,14 +108,14 @@ const post: BlogPost = {
 <p><strong>Who this is NOT for:</strong> Creators who don't have existing long-form video. If you want to build a faceless YouTube channel from scratch with no footage, Opus Clip doesn't help — you need InVideo AI or Pictory for that workflow.</p>
 <p><strong>The virality score:</strong> Opus Clip's AI analyses each potential clip for hooks, speaker energy, topic relevance, and pacing, then scores it. According to independent user reports, the top-scored clips consistently perform better on Reels than manually selected ones — picking moments that are easily overlooked in long-form content.</p>
 <p><strong>Free plan:</strong> 60 minutes of video processing per month — enough to clip 2–3 videos at no cost. The $19/month Pro plan removes the monthly limit and adds premium caption styles and auto-post scheduling.</p>
-<p><a href="/tools/opus-clip" style="color:#0D9488;font-weight:600;">→ Read the full Opus Clip review</a></p>
+<p><a href="/tools/opus-clip/" style="color:#0D9488;font-weight:600;">→ Read the full Opus Clip review</a></p>
 
 <h2>#3 Murf AI — Best When You Want a Better Voice on Your Videos</h2>
 <p>If you're staying with InVideo AI or Pictory but hate how the AI voiceovers sound, Murf AI is the fix. Murf has 120+ AI voices across 20 languages — the selection is meaningfully wider than InVideo's built-in voices, and the quality of Murf's studio voices is noticeably more natural on longer scripts.</p>
 <p><strong>The use case:</strong> Generate your video in InVideo AI or Pictory, export the script and timing, then produce the voiceover in Murf and swap it in. Murf integrates directly with Google Slides, Canva, and Descript for this reason — it's designed to be a voiceover layer on top of other video workflows, not a standalone video creator.</p>
 <p><strong>Real difference in voice quality:</strong> Independent comparisons of InVideo's default AI voice against Murf's "Marcus" (US English, professional) consistently show Murf with more natural pacing, realistic breaths, and less flat monotone on longer sentences. For faceless YouTube channels where the voiceover is the main presenter, this quality difference is audible and matters for viewer retention.</p>
 <p><strong>Pricing:</strong> Free plan with limited exports. Paid from $19/month for Creator, which includes 24 voices, 2 hours of voice generation, and commercial rights — important if you're monetising your YouTube channel.</p>
-<p><a href="/tools/murf-ai" style="color:#0D9488;font-weight:600;">→ Read the full Murf AI review</a></p>
+<p><a href="/tools/murf-ai/" style="color:#0D9488;font-weight:600;">→ Read the full Murf AI review</a></p>
 
 <h2>The Honest Verdict: Which InVideo Alternative Should You Use?</h2>
 <p><strong>Building a faceless YouTube channel from scratch with blog content or scripts you already have?</strong> → <strong>Pictory</strong>. It's the fastest path from written content to a published YouTube video with branded, consistent output.</p>
