@@ -1314,6 +1314,8 @@ const CATEGORY_OG_MAP = {
 // resolveOgImage() checks this map first before falling through to category images.
 // To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
 const BLOG_OG_MAP = {
+  // Day 18 (Jul 17): Best AI Resume Builder Tools 2026 — Teal vs Rezi vs Kickresume vs Jobscan
+  'best-ai-resume-builder-tools-2026':             `${SITE}/og-compare.webp`,
   // Day 17 (Jul 14): Best AI Voice Dictation Tools 2026 — Wispr Flow vs Superwhisper
   'best-ai-voice-dictation-tools-2026':           `${SITE}/og-compare.webp`,
   // Day 16 (Jul 13): AI Contract Analysis Tools 2026 — New Legal Vertical
@@ -1984,6 +1986,29 @@ function faqSchema(faqs) {
 // IMPORTANT: Every entry here must match the slug and metadata in blog/*.ts
 // When adding new blog posts, add them here AND in blog/index.ts
 const BLOG_POSTS = [
+  // —— Day 18 (Jul 17): Best AI Resume Builder Tools 2026 — New Career/Job-Search Vertical ——
+  // Target keyword: "best ai resume builder tools 2026"
+  // Affiliates: Teal + Rezi have confirmed application-based affiliate programs (not instant
+  // self-serve); no confirmed program found for Kickresume or Jobscan as of July 2026
+  {
+    slug: 'best-ai-resume-builder-tools-2026',
+    title: 'Best AI Resume Builder Tools 2026: ATS-Tested and Ranked',
+    seoTitle: 'Best AI Resume Builder Tools 2026: ATS Ranked',
+    metaDescription: 'Teal, Rezi, Kickresume, and Jobscan all claim the ATS crown. Real 2026 pricing, who each tool actually fits, and which one is worth paying for.',
+    datePublished: '2026-07-17',
+    dateModified: '2026-07-17',
+    readTimeMinutes: 11,
+    ogImage: 'https://ainexustools.online/og-compare.webp',
+    quickAnswer: 'For most job seekers in 2026, Teal is the best starting point — its free-forever plan covers resume building, job tracking, and keyword matching at $0. Rezi is the strongest paid pick for ATS-heavy applications ($29/month or $149 lifetime). Kickresume wins on design. Jobscan is the deepest ATS scorer but priciest at $49.95/month.',
+    faqs: [
+      { q: 'What is the best free AI resume builder in 2026?', a: 'Teal has the most generous genuinely free tier: unlimited resumes, a job-application tracker, 10 templates, and basic AI-assisted content suggestions, with no credit card required and no forced trial expiration. Jobscan\'s free tier is narrower — 5 ATS match scans per month — but is useful specifically for checking keyword alignment before you apply. Kickresume\'s free plan is the most limited of the four: 4 templates and no AI writing features at all, positioning free users toward an upgrade almost immediately. For a $0 budget, start with Teal for building and tracking, and layer in Jobscan\'s free scans only when you need a keyword-match check on a specific application.' },
+      { q: 'Is Rezi or Kickresume better for ATS compatibility?', a: 'Rezi is the stronger pick for pure ATS compatibility. Its templates are deliberately plain — single-column, standard section headers, no graphics or icons — because that formatting parses cleanly across every major ATS (Workday, Greenhouse, Taleo, iCIMS). Kickresume\'s templates lean more visual, with color blocks, icons, and multi-column layouts in several designs; these look better to a human reviewer but carry more parsing risk on older or stricter ATS platforms. If your target companies are large enterprises using strict applicant tracking systems, Rezi is the safer choice. If you are applying somewhere a human reviews resumes directly — startups, creative roles, smaller companies — Kickresume\'s design edge matters more.' },
+      { q: 'Is Jobscan worth $49.95 a month?', a: 'Only if you are actively applying to many roles in a short window and want to eliminate ATS-keyword guesswork entirely. Jobscan\'s core value is its per-job match-score analysis against 20+ criteria, checked against named ATS platforms your target company may use, which no competitor on this list replicates at the same depth. For a job seeker submitting one or two applications a week, the free tier\'s 5 scans/month is often enough, and the $49.95/month price is hard to justify long-term. The more common approach among heavy job seekers is a single-month subscription during an active search push, then cancellation once the target role is secured.' },
+      { q: 'Can I just use ChatGPT or Claude to write my resume for free?', a: 'Yes, and for a first draft it works reasonably well — both can rewrite weak bullet points into achievement-focused language and explain what a strong resume section looks like, entirely free. What general-purpose AI does not do is check your resume against a specific job description\'s parsed keywords, score ATS compatibility against a named platform, or provide a pre-formatted, ATS-safe template — that structured, per-job matching is the actual product that Teal, Rezi, Jobscan, and Kickresume are built around. A practical combination many job seekers use: draft and refine content with ChatGPT or Claude for free, then run the finished resume through Teal\'s free tier or Jobscan\'s free scans for the ATS-specific check before submitting.' },
+      { q: 'Do any of these AI resume builders offer India-specific pricing?', a: 'No. Teal, Rezi, Kickresume, and Jobscan all bill exclusively in USD with no confirmed INR pricing tier or UPI payment option as of July 2026 — this is a USD-first category overall. As of July 2026, $1 trades at roughly ₹95, which puts Rezi\'s $29/month plan at approximately ₹2,750/month and Jobscan\'s $49.95/month at roughly ₹4,750/month, before any international transaction fees your card issuer may add. For Indian job seekers, the practical starting point is the same as everywhere else: use a genuinely free tier (Teal, or Jobscan\'s 5 free scans/month) before paying in USD for a feature you may only need during one focused application push.' },
+      { q: 'Which AI resume builder has the best job-tracking features, not just resume writing?', a: 'Teal is the clearest leader here — its job tracker lets you save postings directly from a Chrome extension, organize applications by stage (saved, applied, interviewing, offer), and keeps each tailored resume version linked to the specific job it was written for, all inside the free plan. Rezi and Kickresume are primarily document-focused tools; neither offers a comparable application-pipeline view. If managing a high volume of applications across multiple companies is your main pain point, rather than the resume document itself, Teal\'s tracker is the more relevant feature to weigh than any of the AI writing comparisons in this guide.' },
+    ],
+  },
   // —— Day 17 (Jul 14): Best AI Voice Dictation Tools 2026 — Wispr Flow vs Superwhisper ——
   // Target keyword: "best ai voice dictation tools 2026"
   // Affiliates: none confirmed for Wispr Flow, Superwhisper, or Otter.ai as of July 2026
@@ -3428,6 +3453,13 @@ const RELATED_LINKS = {
 // ── Task 5/6 Fix: Related links map for blog posts — links pillar posts to their
 // satellite/cluster posts (and vice versa) for internal authority distribution.
 const BLOG_RELATED_LINKS = {
+  // ── Day 18 (Jul 17): Best AI Resume Builder Tools 2026 — links to freelancer/student/India cluster ──
+  'best-ai-resume-builder-tools-2026': [
+    ['/blog/best-ai-tools-for-freelancers-2026/', 'Best AI Tools for Freelancers 2026'],
+    ['/blog/ai-tools-for-students-free-2026/', 'Best Free AI Tools for Students 2026'],
+    ['/blog/best-ai-tools-in-india-2026/', 'Best AI Tools in India 2026'],
+  ],
+
   // ── Day 17 (Jul 14): Best AI Voice Dictation Tools 2026 — links to productivity/solopreneur cluster ──
   'best-ai-voice-dictation-tools-2026': [
     ['/best-ai-writing-tools/', 'Best AI Writing Tools — Category'],

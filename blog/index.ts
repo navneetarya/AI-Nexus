@@ -168,9 +168,14 @@ import post67 from './ai-contract-analysis-tools-2026';
 // Affiliates: none confirmed for Wispr Flow, Superwhisper, or Otter.ai as of July 2026;
 // linked direct to official sites (see file header)
 import post68 from './best-ai-voice-dictation-tools-2026';
+// Day 18 (Jul 17) — Best AI Resume Builder Tools 2026 — New Career/Job-Search Vertical
+// Affiliates: Teal + Rezi have confirmed application-based affiliate programs (not instant
+// self-serve); no confirmed program found for Kickresume or Jobscan. Linked direct to
+// official sites as of July 2026 (see file header).
+import post69 from './best-ai-resume-builder-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
-  post68, // Day 17 — Best AI Voice Dictation Tools 2026 — pinned first for freshness
+  post69, // Day 18 — Best AI Resume Builder Tools 2026 — pinned first for freshness
   post67, // Day 16 — AI Contract Analysis Tools 2026 — New Legal Vertical, 2,100/mo, KD 19 — pinned first for freshness
   post66, // Day 15 — Claude Code Alternatives 2026 — 2,600/mo, KD 15 — pinned first for freshness
   post65, // Day 14 (Jul 6) — LLM API Pricing Comparison 2026 — 2,100/mo, KD 12 — pinned first for freshness

@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-resume-builder-tools-2026",
+    "title": "Best AI Resume Builder Tools 2026: ATS-Tested and Ranked",
+    "seoTitle": "Best AI Resume Builder Tools 2026: ATS Ranked",
+    "metaDescription": "Teal, Rezi, Kickresume, and Jobscan all claim the ATS crown. Real 2026 pricing, who each tool actually fits, and which one is worth paying for.",
+    "datePublished": "2026-07-17",
+    "dateModified": "2026-07-17",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "11 min read",
+    "ogImage": "https://ainexustools.online/og-compare.webp",
+    "excerpt": "Nearly every AI resume tool claims the top ATS-optimization spot in 2026. Here is what Teal, Rezi, Kickresume, and Jobscan actually cost, what each is genuinely built for, and which one is worth paying for based on your situation."
+  },
+  {
     "slug": "best-ai-voice-dictation-tools-2026",
     "title": "Best AI Voice Dictation Tools 2026: Wispr Flow vs Superwhisper vs Free Options",
     "seoTitle": "Best AI Voice Dictation Tools 2026: Wispr vs Superwhisper",
