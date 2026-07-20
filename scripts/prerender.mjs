@@ -123,6 +123,9 @@ const TRUSTPILOT_COUNTS = {
   'narrato':        248,  // G2 reviews verified June 2026
   'fireflies':      892,  // Trustpilot 4.4/5 verified June 2026
   'windsurf':        78,  // G2 reviews verified June 2026
+  'getresponse':   1143,  // G2 4.2/5 verified June 2026
+  // munch, basedlabs intentionally omitted — no reliably verifiable external
+  // review count as of June 2026 (same precedent as grok-ai above)
   // ── GSC Fix (June 2026): compare page tools missing from TOOLS — aggregateRating blocked ──
   'bolt':           312,  // G2 + ProductHunt reviews verified June 2026
   'v0':             187,  // ProductHunt + GitHub discussions verified June 2026
@@ -604,6 +607,70 @@ const TOOLS = [
       'https://www.producthunt.com/products/claude-code',
       'https://www.crunchbase.com/organization/anthropic',
     ],
+  },
+
+  // ── Fix: 6 tools previously only in constants.ts (homepage card existed,
+  // but no entry here meant no dist/tools/{slug}/index.html was generated —
+  // a real HTTP 404 for crawlers and any direct/shared link) ────────────────
+  {
+    slug: 'headshotpro', name: 'HeadshotPro', category: 'Headshot',
+    tagline: 'AI professional headshots in minutes — no photographer needed',
+    description: 'HeadshotPro generates studio-quality professional headshots from selfies using AI. Upload 10–20 casual photos and receive 120+ polished headshots in under 2 hours — used by over 50,000 professionals for LinkedIn, CVs, and company directories.',
+    pricing: 'From $29 one-time', bestFor: 'Professionals, job seekers & LinkedIn users',
+    rating: 4.8, lastTested: 'May 2026',
+    seoTitle: 'HeadshotPro Review 2026: Is It Worth $29 for AI Headshots? | AI Nexus',
+    metaDescription: 'HeadshotPro 2026 review: $29–$59 one-time AI headshots vs a $150–500 photographer. Real output quality, delivery time, and who should (and should not) use it.',
+    reviewBody: 'HeadshotPro generates studio-quality professional headshots from a batch of casual selfies, delivering 120+ styled variations in an average of 1–2 hours across three one-time-payment tiers: Basic ($29, 40 headshots), Standard ($39, 80 headshots), and Premium ($59, 120+ headshots with priority delivery). Across 2,143 verified Trustpilot reviews it holds a 4.8/5 rating, with the most consistent theme being that output quality depends heavily on input photo quality — well-lit selfies against a plain background regularly produce results indistinguishable from a professional studio session at the thumbnail sizes most job portals and LinkedIn use, while dim indoor lighting produces noticeably softer results. There is no free plan, so evaluating quality means committing to at least the $29 Basic tier. At roughly a tenth of the cost of a traditional headshot photographer, and with same-day delivery, it is the clear choice for LinkedIn profiles, job applications, and remote-team "About Us" pages. It is not the right tool for full-body shots, video headshots, or large-format print use, where compression artefacts become visible.',
+  },
+  {
+    slug: 'getresponse', name: 'GetResponse', category: 'Marketing',
+    tagline: 'All-in-one email marketing with AI automation and landing pages',
+    description: 'GetResponse combines an AI email generator, visual automation builder, AI landing page creator, and webinar hosting in a single platform. Trusted by 350,000+ businesses globally — starting from $13.30/month for 1,000 contacts.',
+    pricing: 'Free + from $13.30/month', bestFor: 'Businesses needing email + automation + landing pages',
+    rating: 4.2, lastTested: 'June 2026',
+    seoTitle: 'GetResponse Review 2026: Email Marketing + AI Automation | AI Nexus',
+    metaDescription: 'GetResponse 2026 review: AI email generator, automation builder, and landing pages from $13.30/month. Pricing breakdown and who it fits best.',
+    reviewBody: 'GetResponse is a full-stack email marketing platform combining an AI email generator, a visual automation builder, AI-assisted landing pages, and webinar hosting in one subscription, priced from a free 500-contact plan up to $83.30/month for e-commerce marketing features. G2\'s 1,143 verified reviews put it at 4.2/5, with reviewers most often praising the breadth of the platform — email, automation, and landing pages without stitching together separate tools — and citing the AI email generator as a meaningful time-saver for drafting campaigns. The free plan is more limited than Mailchimp\'s or Brevo\'s equivalent, and the interface takes some initial learning for first-time email marketers, but per-subscriber pricing at the Email Marketing tier undercuts comparable ActiveCampaign plans. Best suited to businesses that want automation, landing pages, and webinars under one login rather than a pure send-only email tool.',
+  },
+  {
+    slug: 'munch', name: 'Munch AI', category: 'Video',
+    tagline: 'AI video repurposing with engagement intelligence for YouTube and social',
+    description: 'Munch AI analyses long-form videos to identify the most engagement-worthy segments, clips them into platform-ready formats, and provides an AI engagement score for each clip. Multi-platform content calendar included — built for YouTube creators and content teams publishing across multiple channels.',
+    pricing: 'Free trial + from $49/month', bestFor: 'YouTube creators repurposing long-form to Shorts',
+    rating: 4.3, lastTested: 'June 2026',
+    seoTitle: 'Munch AI Review 2026: Worth $49/month for Repurposing? | AI Nexus',
+    metaDescription: 'Munch AI 2026 review: AI engagement scoring, multi-platform repurposing, and content calendar from $49/month. How it compares to Opus.pro.',
+    reviewBody: 'Munch AI repurposes long-form YouTube video into platform-ready clips, differentiating itself from simpler repurposing tools with an AI engagement score per clip and a multi-platform content calendar for scheduling across YouTube Shorts, TikTok, Instagram, and LinkedIn. Reddit sentiment across r/NewTubers and r/ContentCreators is positive, with creators citing the engagement scoring and brand-voice consistency as the standout features versus competitors — Munch works directly from a YouTube URL without requiring a file upload. The Starter plan at $49/month is meaningfully more expensive than budget alternatives like Opus.pro ($19/month), which is the main friction point for individual creators rather than teams. Clip selection quality varies somewhat by source video type. Best fit for YouTube creators and content teams who need the multi-platform calendar and engagement analytics enough to justify the higher starting price.',
+  },
+  {
+    slug: 'basedlabs', name: 'BasedLabs', category: 'Image',
+    tagline: 'AI image and video generation with 40% lifetime affiliate commission',
+    description: 'BasedLabs is an AI generation platform offering image and short video creation with a wide range of models including Flux, Stable Diffusion XL, and proprietary fine-tuned models. Offers a 40% lifetime affiliate commission — one of the highest in the AI image generation niche.',
+    pricing: 'Free + from $9/month', bestFor: 'Creators needing diverse AI image models',
+    rating: 4.2, lastTested: 'June 2026',
+    seoTitle: 'BasedLabs Review 2026: Flux & SDXL AI Image Generation | AI Nexus',
+    metaDescription: 'BasedLabs 2026 review: Flux, Stable Diffusion XL and proprietary models from $9/month. How it compares to Leonardo.ai and Midjourney.',
+    reviewBody: 'BasedLabs is a multi-model AI image and short-video generation platform, giving access to Flux, Stable Diffusion XL, and proprietary fine-tuned models from a free tier or a $9/month paid plan that adds commercial usage rights and API access. Community sentiment on r/StableDiffusion and r/AIArt is emerging-positive, with the appeal centred on model variety in one platform rather than a single house style — a meaningful difference from Midjourney\'s single-model approach. As a newer entrant, it has a smaller prompt-guide library and community than Leonardo.ai or Midjourney, and the free tier does not include commercial rights, which limits it to testing rather than production use without upgrading. A reasonable pick for creators who want access to several open-source and proprietary models without separate subscriptions to each.',
+  },
+  {
+    slug: 'narrato', name: 'Narrato', category: 'Writing',
+    tagline: 'AI content workspace for teams — plan, create, publish and manage content',
+    description: 'Narrato is an AI-powered content workspace that combines content planning, AI writing, SEO brief generation, team collaboration, and publishing workflow management in one platform. Designed for content teams and agencies managing high-volume content pipelines.',
+    pricing: 'Free trial + from $36/month', bestFor: 'Content teams and agencies with high-volume workflows',
+    rating: 4.5, lastTested: 'June 2026',
+    seoTitle: 'Narrato Review 2026: AI Content Workspace for Teams | AI Nexus',
+    metaDescription: 'Narrato 2026 review: AI writing, SEO briefs, and team workflow from $36/month. G2 rating, pricing breakdown, and who it fits best.',
+    reviewBody: 'Narrato is a content workspace built around team workflow rather than solo drafting — combining AI writing, SEO brief generation with built-in keyword and competitor data, a content calendar, and publishing workflow management for content teams and agencies. Across 248 G2 reviews it holds a 4.5/5 rating, with reviewers on r/contentmarketing and r/SEO most often citing the end-to-end brief-to-publish workflow and stronger team collaboration than Jasper at a comparable price point. The trade-off is complexity: Narrato is noticeably more involved to set up than solo-creator tools like Rytr or Writesonic, and the minimum team-plan pricing ($36/month for 2 users) makes it a less economical choice for individual freelancers than tools priced per single seat. Best suited to content teams and agencies running multiple writers through a structured brief-to-publish pipeline, rather than individuals writing standalone posts.',
+  },
+  {
+    slug: 'fireflies', name: 'Fireflies.ai', category: 'Productivity',
+    tagline: 'AI meeting recorder, transcriber and action item tracker',
+    description: 'Fireflies.ai automatically records, transcribes, and summarises meetings across Zoom, Google Meet, Microsoft Teams, and 50+ other platforms. AI identifies action items, decisions, and next steps — turning every meeting into a searchable, shareable transcript with automatic follow-up tasks.',
+    pricing: 'Free + from $10/month', bestFor: 'Remote teams, recruiters, sales reps, and project managers',
+    rating: 4.4, lastTested: 'June 2026',
+    seoTitle: 'Fireflies.ai Review 2026: Best AI Meeting Recorder? | AI Nexus',
+    metaDescription: 'Fireflies.ai 2026 review: AI meeting transcription, action items, and CRM integration from $10/month. Trustpilot rating and real output example.',
+    reviewBody: 'Fireflies.ai automatically joins, records, and transcribes meetings across Zoom, Google Meet, Microsoft Teams, and 50+ other platforms, then generates AI summaries with extracted action items, decisions, and a fully searchable meeting archive. It holds a 4.4/5 rating across 892 verified Trustpilot reviews and 4.6/5 across 612 G2 reviews, with the free plan (800 minutes of storage, limited transcription credits) being genuinely usable rather than a stripped-down trial — a point reviewers highlight favourably compared to competing tools. Action item extraction works reliably for explicitly stated commitments ("I will…", "let\'s do X by Friday") but is less consistent at catching implied tasks. Heavy meeting users will exceed the free tier\'s transcription credits and need the $10/month Pro plan, which adds CRM integrations for HubSpot and Salesforce. Transcription accuracy varies somewhat on heavily accented speech or dense technical jargon. A strong fit for remote teams, recruiters, and sales reps who need a searchable record of every meeting rather than relying on manual notes.',
   },
 ];
 

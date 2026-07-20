@@ -1030,6 +1030,96 @@ export const TOOLS: Tool[] = [
     ],
   },
 
+  // ── Fix: Bolt.new — CODING category ─────────────────────────────────────
+  // Was already generating a live, indexed static page via prerender.mjs's
+  // separate TOOLS array, but had no entry here — meaning App.tsx's
+  // `TOOLS.find(t => t.slug === slug)` returned null and crashed every real
+  // visitor to NotFoundPage the instant React hydrated, despite Google
+  // actively indexing and ranking the page. Also absent from the homepage grid.
+  // CODING
+  {
+    slug: 'bolt', id: 'c7',
+    name: 'Bolt.new', tagline: 'Build full-stack web apps from prompts in your browser',
+    description: 'Bolt.new is a browser-based AI development environment from StackBlitz. Describe what you want to build and Bolt generates, runs, and deploys a full-stack application using any JavaScript framework — React, Vue, Astro, and more — with no local setup required.',
+    category: Category.CODING, affiliateLink: 'https://bolt.new', // No public affiliate programme yet — monitor bolt.new for referral options
+    iconName: 'Zap', color: '#f59e0b', accentColor: '#d97706',
+    userBadge: 'Fastest browser prototyping', pricing: 'Free (token-based) + from $20/month Pro', bestFor: 'JavaScript developers and technical founders who want to prototype fast',
+    features: ['Full-stack app generation from prompts', 'Runs entirely in-browser (WebContainers)', 'One-click deploy to Netlify', 'Supports React, Vue, Astro, Svelte', 'Live preview with instant hot reload'],
+    pros: [
+      'Zero local setup — write, run, and deploy from the browser tab',
+      'Fastest path from prompt to a working, deployed full-stack app',
+      'Supports a wide range of JS frameworks, not locked to one stack',
+      'Free tier is enough to prototype and test the workflow',
+    ],
+    cons: [
+      'Token-based free plan runs out quickly on larger projects',
+      'Generated code needs developer review before production use',
+      'Less suited to large, established codebases than Cursor or Windsurf',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: 'Limited daily tokens · Full framework access · Community support' },
+      { tier: 'Pro', price: '$20/month', highlight: 'More generation tokens · Priority processing · Private projects' },
+      { tier: 'Team', price: 'from $40/month per user', highlight: 'Shared workspace · Centralised billing · Higher token pool' },
+    ],
+    notForYou: 'Not the right tool for maintaining large, established production codebases with complex CI/CD — Bolt is built for rapid prototyping and greenfield builds. For day-to-day work inside an existing repo, an AI-native editor like Cursor or Windsurf is a better fit.',
+    lastTestedISO: '2026-06-13',
+    researchSources: {
+      reddit: 'Positive — r/webdev, r/SaaS, praised for fast prototyping speed',
+      lastVerified: '2026-06-13',
+    },
+    indiaPricing: {
+      free: 'Free (token-based, no card required)',
+      paid: '~₹1,670/month Pro at current rates',
+      note: 'Billed in USD — international card required.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'July 2026', note: 'Tool entry added to constants.ts. Page was previously live and indexed via prerender.mjs only, causing a hydration crash to Not Found for real visitors.' },
+    ],
+  },
+
+  // ── Fix: Claude Code — CODING category ──────────────────────────────────
+  // Same sync gap as Bolt.new above — live indexed page, but missing here.
+  // CODING
+  {
+    slug: 'claude-code', id: 'c8',
+    name: 'Claude Code', tagline: 'Agentic CLI coding tool by Anthropic — autonomous multi-file editing',
+    description: 'Claude Code is Anthropic\'s terminal-based agentic coding tool. It operates autonomously in your local codebase — reading files, running tests, executing shell commands, and making multi-file edits — without requiring a GUI. Billed per API token usage, making it pay-as-you-go rather than subscription-based.',
+    category: Category.CODING, affiliateLink: 'https://www.anthropic.com/claude-code', // No public affiliate programme — direct link only
+    iconName: 'Terminal', color: '#d97757', accentColor: '#c2410c',
+    userBadge: 'Most autonomous agent', pricing: 'Pay-per-use (API tokens) — typical session $0.50–$3.00', bestFor: 'Professional developers who want an autonomous AI agent for complex codebases',
+    features: ['Autonomous multi-file editing', 'Runs tests and shell commands directly', 'Terminal-native — no GUI required', 'Reads and reasons over full local codebase', 'Pay-per-token pricing (no subscription lock-in)'],
+    pros: [
+      'Most autonomous of the major coding agents — plans and executes multi-step tasks with minimal prompting',
+      'Pay-per-use pricing means no fixed monthly cost for light or occasional users',
+      'Deep codebase reasoning across many files in a single session',
+      'Terminal-native workflow fits well into existing developer tooling',
+    ],
+    cons: [
+      'No flat-rate plan — heavy daily use can cost more than a $20/month subscription tool',
+      'CLI-only — no built-in GUI for developers who prefer a visual editor',
+      'Requires an Anthropic API key and basic comfort with the terminal',
+    ],
+    pricingBreakdown: [
+      { tier: 'Pay-per-use', price: '$0.50–$3.00 per session (typical)', highlight: 'Billed via Anthropic API tokens · No subscription · Cost scales with codebase size and task complexity' },
+    ],
+    notForYou: 'Not the right fit if you want predictable flat-rate monthly billing or prefer working inside a GUI code editor rather than the terminal. Developers who want AI built into a visual editor experience are better served by Cursor or Windsurf.',
+    lastTestedISO: '2026-06-13',
+    researchSources: {
+      reddit: 'Strongly positive — r/ClaudeAI, r/programming, praised for autonomous multi-file task handling',
+      lastVerified: '2026-06-13',
+    },
+    indiaPricing: {
+      free: 'No free tier (pay-per-token from first use)',
+      paid: 'Usage-based — typical session ₹40–₹250 at current rates',
+      note: 'Billed via Anthropic API in USD — international card or API billing account required.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'July 2026', note: 'Tool entry added to constants.ts. Page was previously live and indexed via prerender.mjs only, causing a hydration crash to Not Found for real visitors.' },
+    ],
+  },
+
   // ── GitHub Copilot — CODING category ──────────────────────────────────────
   // No public affiliate programme — monitor github.com/features/copilot for referral options
   // CODING
@@ -1453,6 +1543,11 @@ export const TOOLS: Tool[] = [
     userBadge: 'Most popular AI', pricing: 'Free + $8–$200/month (Go, Plus, Pro)', bestFor: 'General research, writing, coding and everyday AI assistant use',
     notForYou: 'Developers who want the deepest agentic coding workflow — Claude Code (via Claude Pro/Max) and Cursor consistently benchmark ahead of ChatGPT\'s Codex agent for large, multi-file refactors. Also skip the Free tier if you are uncomfortable with in-chat ads, which OpenAI began testing on Free and Go in the US from February 2026.',
     lastTestedISO: '2026-06-13',
+    researchSources: {
+      trustpilot: { rating: 1.3, count: 3847, url: 'https://www.trustpilot.com/review/openai.com' },
+      reddit: 'Mixed on Trustpilot (billing/support disputes and the GPT-4o deprecation dominate reviews there) — considerably more positive on r/ChatGPT and r/OpenAI, where capability and everyday usefulness are the focus',
+      lastVerified: '2026-07-20',
+    },
     reviewType: 'research-based',
     indiaPricing: {
       free: 'Free (GPT-5.3, 10 messages/5hr, ads in some regions)',
@@ -1506,6 +1601,11 @@ export const TOOLS: Tool[] = [
     userBadge: 'Best for writing & code', pricing: 'Free + $17–$200/month (Pro, Max)', bestFor: 'Writers, researchers and developers who want Claude Code',
     notForYou: 'Casual users who just need quick factual answers or image/video generation — Claude has no native image generator and ChatGPT or Grok cover those use cases better. Also reconsider if you need a generous rolling usage window for all-day chat use: Claude Pro\'s 5-hour rolling limits are tighter than ChatGPT Plus for high-volume conversational use.',
     lastTestedISO: '2026-06-13',
+    researchSources: {
+      trustpilot: { rating: 1.4, count: 487, url: 'https://www.trustpilot.com/review/claude.ai' },
+      reddit: 'Mixed on Trustpilot (billing/subscription-tier changes and automated-agent-only support dominate reviews there) — considerably more positive on r/ClaudeAI and r/artificial, where writing quality and Claude Code performance are the focus',
+      lastVerified: '2026-07-20',
+    },
     reviewType: 'research-based',
     indiaPricing: {
       free: 'Free (Sonnet 4.6 & Haiku 4.5, daily usage limits, no card required)',
@@ -2128,5 +2228,19 @@ Object.assign(TOOL_FAQS, {
     { q: "What is Grok DeepSearch?", a: "DeepSearch is Grok's multi-step research mode — it breaks complex questions into sub-queries, searches the web and X simultaneously, and synthesises a cited structured answer. Available on SuperGrok and X Premium+. Uniquely useful when live social data is relevant alongside web sources, compared to Perplexity Pro (web-only) or ChatGPT Deep Research (no X integration)." },
     { q: "Which Grok plan is best value?", a: "SuperGrok at $30/month is best for serious Grok users who want the full AI experience without X platform perks. X Premium+ at $40/month makes sense only if you also want ad-free X browsing and higher posting limits. SuperGrok Lite at $10/month works if you mainly want Grok Imagine image generation and longer chats without full DeepSearch or Big Brain Mode." },
     { q: "Is Grok AI good for coding?", a: "Grok handles coding reasonably well for text-based tasks like code review and debugging explanations, but independent testing and G2 reviewer feedback consistently place Claude Code and ChatGPT's Codex agent ahead of Grok on complex, multi-file agentic coding work. If coding is your primary use case, Claude or ChatGPT Plus is the stronger pick." },
+  ],
+  'chatgpt': [
+    { q: "Is ChatGPT free to use?", a: "Yes — ChatGPT's Free tier gives GPT-5.3 access with 10 messages every 5 hours, limited image generation, and access to the GPT Store, though it now shows ads in the US. Go ($8/month) removes most of the message limits; Plus ($20/month) is where Agent Mode, Sora, and Deep Research unlock." },
+    { q: "What is the difference between ChatGPT Plus and Go?", a: "Go ($8/month) gives 10x more messages than Free and unlimited GPT-5.3 Instant, but stays on the older model and remains ad-supported. Plus ($20/month) upgrades to GPT-5.5, adds Sora video generation, Deep Research, Agent Mode, and the Codex coding agent — the meaningful feature jump is at Plus, not Go." },
+    { q: "Why is ChatGPT's Trustpilot rating so low?", a: "OpenAI's Trustpilot rating sits around 1.3–1.7/5, but this reflects a common pattern across major AI subscription products: reviews concentrate around billing disputes, cancellation friction, and reaction to model changes (particularly the GPT-4o deprecation), since satisfied daily users rarely leave reviews. Community sentiment on r/ChatGPT about day-to-day capability is considerably more positive." },
+    { q: "Is ChatGPT good for coding?", a: "ChatGPT's Codex agent handles general coding tasks well and is free on every plan including Free and Go, which is a real advantage for occasional use. For complex, multi-file agentic coding work, independent benchmarks and community feedback consistently rate Claude Code and Cursor ahead of ChatGPT's Codex agent." },
+    { q: "Which ChatGPT plan should I get?", a: "Plus at $20/month is the practical default for most people — it unlocks Agent Mode, Sora, and Deep Research. Go ($8/month) works if you only need more Free-tier headroom without the full feature set. Only consider Pro ($100–$200/month) if you're regularly hitting Plus's usage caps or specifically need the 1M-token context window." },
+  ],
+  'claude-ai': [
+    { q: "Is Claude AI free to use?", a: "Yes — Claude's Free tier gives Sonnet 4.6 and Haiku 4.5 access with daily usage limits and no card required. It's usable for occasional writing and research tasks, but professional daily use typically requires Pro at $20/month ($17/month billed annually)." },
+    { q: "Is Claude better than ChatGPT for writing?", a: "Claude is consistently rated ahead of ChatGPT for long-form writing quality and nuanced editing across community feedback and comparison testing. ChatGPT has broader feature coverage overall (image/video generation, voice), but for writing specifically, Claude is the more commonly recommended choice." },
+    { q: "What is Claude Code?", a: "Claude Code is Anthropic's agentic coding tool, available via Claude Pro and Max plans (or standalone pay-per-use). It autonomously reads files, runs tests, and makes multi-file edits directly in your codebase from the terminal, and is consistently rated among the top agentic coding tools for complex, multi-file work." },
+    { q: "Why is Claude AI's Trustpilot rating so low?", a: "Claude's Trustpilot rating sits around 1.4/5, largely driven by billing and subscription-tier disputes (including unexpected upgrades from Pro to Max) and support being routed primarily through an automated agent. This pattern is common across major AI subscription vendors' Trustpilot pages. Community sentiment on r/ClaudeAI about output quality and Claude Code specifically is considerably more positive." },
+    { q: "Does Claude AI generate images?", a: "No — Claude has no native image or video generation as of mid-2026. For AI image generation, ChatGPT (via DALL-E/Sora), Midjourney, or Grok Imagine are better fits. Claude's strengths are text-based: writing, document analysis, and coding." },
   ],
 });
