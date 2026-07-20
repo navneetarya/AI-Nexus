@@ -1553,6 +1553,11 @@ export const TOOLS: Tool[] = [
     userBadge: 'Real-time X data', pricing: 'Free + $8–$300/month (X Premium, SuperGrok, Heavy)', bestFor: 'X/Twitter users who want real-time trend-aware AI plus image and video generation',
     notForYou: 'Developers who need the strongest coding performance — Claude and ChatGPT\'s Codex agent both outperform Grok on coding benchmarks. Also reconsider if you are budget-conscious: at $30/month, standalone SuperGrok costs 50% more than ChatGPT Plus, Claude Pro, or Gemini Advanced for broadly comparable core chat capability.',
     lastTestedISO: '2026-06-13',
+    researchSources: {
+      g2: { rating: 4.2, count: 29 },
+      reddit: 'Mixed — r/artificial and r/ChatGPT praise real-time X data and bundled image/video generation; Trustpilot reviews frequently cite billing and support complaints',
+      lastVerified: '2026-06-13',
+    },
     reviewType: 'research-based',
     indiaPricing: {
       free: 'Free (~10 prompts/2hrs, 5 images/month, limited Grok 3/4 access)',
@@ -1561,6 +1566,7 @@ export const TOOLS: Tool[] = [
     },
     updateLog: [
       { date: 'June 2026', note: 'Tool entry created. Pricing verified: Free $0, X Premium $8/month, SuperGrok Lite $10/month, SuperGrok $30/month, X Premium+ $40/month, SuperGrok Heavy $300/month. Grok 4.3 (1M context) confirmed as current flagship since April 30, 2026.' },
+      { date: 'July 2026', note: 'Added full research-based review content (What is Grok AI, My Honest Take, verdict, FAQs, G2 rating) — page previously rendered with summary-only content on the client, out of sync with the prerendered/indexed version.' },
     ],
     features: [
       'Grok 4.3 model with 1M-token context window',
@@ -2107,4 +2113,20 @@ Object.assign(TOOL_KEYWORDS, {
   basedlabs: ['basedlabs review 2026', 'basedlabs affiliate', 'ai image generator alternatives', 'basedlabs vs leonardo ai', 'best ai image generator 2026'],
   narrato: ['narrato review 2026', 'narrato vs jasper', 'best ai content workspace', 'narrato pricing', 'ai content team tool'],
   fireflies: ['fireflies ai review 2026', 'fireflies vs otter ai', 'best ai meeting recorder 2026', 'fireflies free plan', 'ai meeting transcription tool'],
+});
+
+// ── Fix: grok-ai FAQs — mirrors the entry already in scripts/prerender.mjs.
+// TOOL_FAQS here drives the client-rendered FAQ accordion (pages/ToolPage.tsx);
+// prerender.mjs drives the FAQPage JSON-LD in the static/indexed HTML. Both must
+// stay in sync — this was previously only in prerender.mjs, so real visitors never
+// saw the FAQ section that Google was already indexing and ranking for.
+Object.assign(TOOL_FAQS, {
+  'grok-ai': [
+    { q: "What is SuperGrok and is it worth $30/month?", a: "SuperGrok is xAI's standalone AI subscription at $30/month, providing full Grok 4.3 access (1M-token context), approximately 100 prompts per 2 hours, DeepSearch, Big Brain Mode, and unlimited Grok Imagine image generation plus daily video renders. At $30/month it is 50% more expensive than ChatGPT Plus and Claude Pro. Worth it if you value real-time X data access and bundled unlimited image generation." },
+    { q: "What makes Grok different from ChatGPT and Claude?", a: "Grok's clearest differentiator is real-time, native access to X (Twitter) data — no other major AI assistant has live social media integration. The bundled unlimited Grok Imagine image and video generation on SuperGrok is also a value differentiator vs ChatGPT Plus (metered Sora) and Claude Pro (no native image gen). For writing, coding, or research, ChatGPT and Claude benchmark ahead." },
+    { q: "Is Grok AI free to use?", a: "Yes — Grok has a free plan on grok.com and X, giving approximately 10 prompts every 2 hours and 5 image generations per month. Adequate for casual testing, not daily professional use. SuperGrok Lite at $10/month is the lowest-cost entry point for regular usage; SuperGrok at $30/month is recommended for professional use." },
+    { q: "What is Grok DeepSearch?", a: "DeepSearch is Grok's multi-step research mode — it breaks complex questions into sub-queries, searches the web and X simultaneously, and synthesises a cited structured answer. Available on SuperGrok and X Premium+. Uniquely useful when live social data is relevant alongside web sources, compared to Perplexity Pro (web-only) or ChatGPT Deep Research (no X integration)." },
+    { q: "Which Grok plan is best value?", a: "SuperGrok at $30/month is best for serious Grok users who want the full AI experience without X platform perks. X Premium+ at $40/month makes sense only if you also want ad-free X browsing and higher posting limits. SuperGrok Lite at $10/month works if you mainly want Grok Imagine image generation and longer chats without full DeepSearch or Big Brain Mode." },
+    { q: "Is Grok AI good for coding?", a: "Grok handles coding reasonably well for text-based tasks like code review and debugging explanations, but independent testing and G2 reviewer feedback consistently place Claude Code and ChatGPT's Codex agent ahead of Grok on complex, multi-file agentic coding work. If coding is your primary use case, Claude or ChatGPT Plus is the stronger pick." },
+  ],
 });
