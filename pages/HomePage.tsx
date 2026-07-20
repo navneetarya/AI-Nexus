@@ -273,11 +273,6 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
   const [toolsLoaded, setToolsLoaded] = useState(false);
   const [filters, setFilters]     = useState<FilterState>({ search: '', category: 'All' as any });
   const [view, setView]           = useState<'home' | 'compare'>('home');
-  // FIX: paginate the tool grid — render only the first batch on mount to
-  // dramatically reduce main-thread Style & Layout work (was 619ms).
-  // Load more cards as the user scrolls down.
-  const TOOLS_PER_PAGE = typeof window !== 'undefined' && window.innerWidth <= 680 ? 6 : 12;
-  const [visibleCount, setVisibleCount] = useState(TOOLS_PER_PAGE);
 
   useEffect(() => {
     let mounted = true;
@@ -313,11 +308,6 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
     return ms && mc;
   }), [TOOLS, filters]);
 
-  // Reset pagination whenever filters change so users always see fresh results from top
-  useEffect(() => {
-    setVisibleCount(TOOLS_PER_PAGE);
-  }, [filters]);
-
   // ── Scroll-reveal (IntersectionObserver) ────────────────────────────────
   useEffect(() => {
     const els = document.querySelectorAll('.scroll-reveal:not(.visible)');
@@ -340,7 +330,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       });
     });
     return () => io.disconnect();
-  }, [filtered, view, visibleCount]);
+  }, [filtered, view]);
 
   const scrollToId = (id: string) => {
     setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 60);
@@ -870,39 +860,13 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           );
         })()}
 
-        {/* Cards — FIX: only render visibleCount cards at a time to cut
-             main-thread Style & Layout cost from 619ms down significantly */}
+        {/* Cards */}
         <div className="tool-grid" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))', gap:14 }}>
-          {filtered.slice(0, visibleCount).map((tool, i) => (
+          {filtered.map((tool, i) => (
             <ToolCard key={tool.id} tool={tool} navigate={navigate}
               isAffiliatePick={AFFILIATE_SLUGS.includes(tool.slug)} idx={i}/>
           ))}
         </div>
-
-        {/* Load more button — shown when there are more tools to display */}
-        {visibleCount < filtered.length && (
-          <div style={{ textAlign: 'center', marginTop: 28 }}>
-            <button
-              onClick={() => setVisibleCount(c => c + TOOLS_PER_PAGE)}
-              style={{
-                padding: '11px 32px',
-                fontSize: 13,
-                fontWeight: 600,
-                fontFamily: "'Inter', system-ui, sans-serif",
-                color: C.a1,
-                background: C.a1card,
-                border: `1.5px solid ${C.a1brd}`,
-                borderRadius: 10,
-                cursor: 'pointer',
-                transition: 'opacity 0.15s',
-              }}
-              onMouseEnter={e => (e.currentTarget.style.opacity = '0.8')}
-              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
-            >
-              Load more ({filtered.length - visibleCount} remaining)
-            </button>
-          </div>
-        )}
 
         {toolsLoaded && filtered.length === 0 && (
           <div style={{ textAlign:'center', padding:'80px 0' }}>

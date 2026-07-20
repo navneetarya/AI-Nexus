@@ -1712,6 +1712,10 @@ export const TOOLS: Tool[] = [
     userBadge: 'Best image quality', pricing: 'From $10/month — no free tier', bestFor: 'Artists, designers and creators who prioritise visual quality over cost or API access',
     notForYou: 'Anyone who wants to try AI image generation for free before paying, or who needs programmatic API access for an app — Midjourney has no free tier and no official API. Leonardo.ai (150 free credits/day) or Stable Diffusion (free, open-source, self-hosted) are better starting points for budget-conscious or developer use cases.',
     lastTestedISO: '2026-06-13',
+    researchSources: {
+      reddit: 'Positive — r/midjourney, r/aiArt, r/design; visual quality consistently praised, with criticism focused on cost and closed ecosystem limits',
+      lastVerified: '2026-07-20',
+    },
     reviewType: 'research-based',
     indiaPricing: {
       free: 'No free tier — paid subscription required from first image',
@@ -1759,6 +1763,10 @@ export const TOOLS: Tool[] = [
     userBadge: 'Free & open-source', pricing: 'Free (self-hosted) + DreamStudio from $10/1,000 credits', bestFor: 'Developers, researchers and creators who want full control without a subscription',
     notForYou: 'Anyone without a capable GPU (8GB+ VRAM) who wants a zero-setup experience — running Stable Diffusion locally requires hardware and some technical comfort with ComfyUI or AUTOMATIC1111. If you want polished output with no setup at all, Midjourney or Leonardo.ai are simpler starting points.',
     lastTestedISO: '2026-06-13',
+    researchSources: {
+      reddit: 'Positive — r/StableDiffusion, r/comfyui, r/AIArt; strongest sentiment around control, open workflows and local generation, with setup complexity the main drawback',
+      lastVerified: '2026-07-20',
+    },
     reviewType: 'research-based',
     indiaPricing: {
       free: 'Free forever for local/self-hosted use (under $1M revenue, community licence)',
@@ -2242,5 +2250,47 @@ Object.assign(TOOL_FAQS, {
     { q: "What is Claude Code?", a: "Claude Code is Anthropic's agentic coding tool, available via Claude Pro and Max plans (or standalone pay-per-use). It autonomously reads files, runs tests, and makes multi-file edits directly in your codebase from the terminal, and is consistently rated among the top agentic coding tools for complex, multi-file work." },
     { q: "Why is Claude AI's Trustpilot rating so low?", a: "Claude's Trustpilot rating sits around 1.4/5, largely driven by billing and subscription-tier disputes (including unexpected upgrades from Pro to Max) and support being routed primarily through an automated agent. This pattern is common across major AI subscription vendors' Trustpilot pages. Community sentiment on r/ClaudeAI about output quality and Claude Code specifically is considerably more positive." },
     { q: "Does Claude AI generate images?", a: "No — Claude has no native image or video generation as of mid-2026. For AI image generation, ChatGPT (via DALL-E/Sora), Midjourney, or Grok Imagine are better fits. Claude's strengths are text-based: writing, document analysis, and coding." },
+  ],
+  windsurf: [
+    { q: 'Is Windsurf free to use?', a: 'Yes. Windsurf has a genuinely usable free tier with Codeium-powered autocomplete and limited Cascade agent access. It is one of the most generous free AI editor plans in the category, which is the main reason many developers try it before Cursor.' },
+    { q: 'Windsurf vs Cursor — which is better?', a: 'Cursor is usually stronger for deep codebase reasoning and complex multi-file refactors. Windsurf is cheaper at $15/month vs $20/month and has a more generous free tier. If price matters and you want a safer, checkpoint-style agent workflow, Windsurf is the better first try.' },
+    { q: 'What is Cascade in Windsurf?', a: 'Cascade is Windsurf\'s agent workflow. You describe a coding task in plain English, it proposes a plan and code changes, and then waits for confirmation at checkpoints before applying them. It is designed to keep the human in control rather than changing many files silently.' },
+    { q: 'Does Windsurf work with VS Code extensions?', a: 'Yes. Windsurf is built on a VS Code-style foundation, so the familiar editor model and extension compatibility are part of the appeal for developers switching from VS Code.' },
+  ],
+  bolt: [
+    { q: 'Is Bolt.new free?', a: 'Bolt.new has a free tier with limited tokens, which is enough to test the prompt-to-app workflow and prototype smaller projects. Paid plans mainly buy more generation headroom and private project support.' },
+    { q: 'What is Bolt.new best for?', a: 'Bolt is best for rapid greenfield web-app prototyping in the browser. It shines when you want to describe an app, get a working JavaScript project, preview it instantly, and iterate without local setup.' },
+    { q: 'How is Bolt different from Lovable?', a: 'Bolt is more developer-oriented and browser-IDE-like, especially for JavaScript frameworks. Lovable is more opinionated around full-stack React + Supabase app generation for non-developers and founders. Both are prompt-based, but their workflows feel different.' },
+    { q: 'Can Bolt.new replace my normal code editor?', a: 'Not usually. Bolt is excellent for prototyping and first versions, but most developers still move mature codebases into a full editor such as Cursor, VS Code, or Windsurf for long-term maintenance.' },
+  ],
+  'claude-code': [
+    { q: 'What is Claude Code?', a: 'Claude Code is Anthropic\'s terminal-native coding agent. It can inspect your local repository, read files, run commands, generate changes, and iterate on multi-file tasks directly from the command line.' },
+    { q: 'Does Claude Code have a free plan?', a: 'No subscription-style free plan exists. Claude Code is billed through Anthropic API usage from the first session, so cost depends on how much model work your tasks require.' },
+    { q: 'Is Claude Code better than Cursor?', a: 'They solve the same broad problem in different shapes. Claude Code is stronger for developers who want a terminal-first, highly autonomous agent. Cursor is stronger if you want AI embedded in a visual editor with inline edits, completions, and a smoother GUI workflow.' },
+    { q: 'Who should use Claude Code?', a: 'Claude Code is best for professional developers comfortable in the terminal who want an agent for debugging, repo-wide changes, tests, and other multi-step coding tasks where simple autocomplete is not enough.' },
+  ],
+  'github-copilot': [
+    { q: 'Is GitHub Copilot free?', a: 'For most professionals, no. The free tier is limited to verified students, teachers, and qualifying open-source maintainers. Most working developers use the $10/month Individual plan.' },
+    { q: 'What is GitHub Copilot best at?', a: 'Copilot is strongest at inline code completions inside editors developers already use every day. It is also useful for file-scoped chat, quick test generation, and GitHub-native PR assistance.' },
+    { q: 'GitHub Copilot vs Cursor — which should I choose?', a: 'Choose Copilot if you want the lowest-cost mainstream AI assistant inside your existing IDE. Choose Cursor if you want a more AI-native editor with better multi-file editing and codebase-aware workflows.' },
+    { q: 'Does Copilot work in JetBrains and VS Code?', a: 'Yes. Broad IDE support is one of Copilot\'s biggest advantages. It works in VS Code, JetBrains IDEs, Neovim, and GitHub itself.' },
+  ],
+  v0: [
+    { q: 'Is v0 free to use?', a: 'Yes. v0 has a free tier with 200 credits per month, which is enough to prototype components and page sections before deciding whether the workflow fits your frontend stack.' },
+    { q: 'What is v0 best for?', a: 'v0 is best for generating React and Tailwind UI components quickly from natural-language descriptions. It is especially useful for Next.js teams and anyone already working in the Vercel ecosystem.' },
+    { q: 'Can v0 build a full app?', a: 'Not by itself. v0 is primarily a frontend UI generator. It can help you scaffold page structure and components, but it is not a backend, database, or full product workflow tool like Lovable or Bolt.' },
+    { q: 'v0 vs Lovable — what is the difference?', a: 'v0 focuses on component and UI generation for developers. Lovable focuses on full-stack app generation for founders and non-developers. If your main bottleneck is frontend UI, v0 is the better fit.' },
+  ],
+  midjourney: [
+    { q: 'Does Midjourney have a free plan?', a: 'No. Midjourney requires a paid subscription from the first image. The Basic plan starts at $10/month, but the Standard plan is the one most regular users end up preferring because it adds Relax Mode.' },
+    { q: 'Why do people still pay for Midjourney?', a: 'Because Midjourney consistently delivers some of the best default image aesthetics in the market. Many creators value the visual quality enough to accept the lack of a free tier and the closed ecosystem.' },
+    { q: 'Midjourney vs Leonardo.ai — which is better?', a: 'Midjourney is usually better for pure aesthetic output. Leonardo.ai is better for free access, more control, and creator workflows like model training. The better choice depends on whether quality ceiling or flexibility matters more.' },
+    { q: 'Can I use Midjourney commercially?', a: 'Yes. Paid Midjourney plans include commercial usage rights, which is one reason it remains popular with agencies, creators, and marketers despite the subscription cost.' },
+  ],
+  'stable-diffusion': [
+    { q: 'Is Stable Diffusion really free?', a: 'Yes for local/self-hosted use under Stability AI\'s community-style licensing terms for qualifying users and organisations. If you run it on your own hardware, there is no monthly subscription. Hosted DreamStudio usage is billed separately via credits.' },
+    { q: 'Why do people use Stable Diffusion instead of Midjourney?', a: 'Control. Stable Diffusion lets you self-host, fine-tune LoRAs, automate pipelines, and keep generation private. Midjourney is easier and prettier out of the box, but far more closed.' },
+    { q: 'Is Stable Diffusion hard to use?', a: 'For beginners, yes. Tools like ComfyUI and AUTOMATIC1111 are powerful but have a real learning curve. Stable Diffusion becomes attractive once customisation, privacy, or workflow ownership matters enough to justify that complexity.' },
+    { q: 'What is DreamStudio?', a: 'DreamStudio is Stability AI\'s hosted web app for using Stable Diffusion models without running them locally. It uses a pay-as-you-go credit system rather than a flat monthly subscription.' },
   ],
 });

@@ -169,16 +169,19 @@ jobs:
           # 3b. Sitemap URL count — catches silent drops (missing posts/tools/etc.)
           LOC_COUNT=$(grep -c "<loc>" dist/sitemap.xml)
           echo "ℹ️  sitemap.xml contains $LOC_COUNT <loc> entries"
-          EXPECTED_LOC_COUNT=156
-          if [ "$LOC_COUNT" -ne "$EXPECTED_LOC_COUNT" ]; then
-            echo "❌ Expected $EXPECTED_LOC_COUNT URLs in sitemap.xml, found $LOC_COUNT"
-            echo "   Current breakdown: 1 home + 9 static + 1 freelancers landing + 3 specials (free/india/logos)"
-            echo "   + 8 categories + 1 blog index + 65 blog posts (Day 14: +llm-api-pricing-comparison-2026)"
-            echo "   + 1 compare index + 28 compare articles (22 base + 6 new: 3 T7 + 3 India) + 32 tools + 4 additional routes = 152"
-            echo "   If you added new routes, update EXPECTED_LOC_COUNT in deploy.yml to match."
+          # Some prerendered routes are intentionally excluded from the sitemap:
+          # - /tools/ is a utility index used for navigation, not an SEO target.
+          # - /best-ai-tools-for-freelancers/ is an internal route alias not meant to be indexed separately.
+          ROUTE_COUNT=$(find dist -type f -name index.html \
+            ! -path 'dist/tools/index.html' \
+            ! -path 'dist/best-ai-tools-for-freelancers/index.html' | wc -l | tr -d ' ')
+          echo "ℹ️  dist contains $ROUTE_COUNT sitemap-eligible prerendered route index files"
+          if [ "$LOC_COUNT" -ne "$ROUTE_COUNT" ]; then
+            echo "❌ sitemap.xml URL count ($LOC_COUNT) does not match prerendered route count ($ROUTE_COUNT)"
+            echo "   Regenerate prerender output or inspect sitemap generation for dropped/extra routes."
             exit 1
           fi
-          echo "✅ Sitemap URL count OK: $EXPECTED_LOC_COUNT"
+          echo "✅ Sitemap URL count matches sitemap-eligible prerendered route count: $ROUTE_COUNT"
 
           # 4. Check homepage FAQPage schema
           if ! grep -q "FAQPage" dist/index.html; then
