@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
+    "title": "ChatGPT Atlas vs Perplexity Comet vs Dia (2026): Which AI Browser Should You Actually Install?",
+    "seoTitle": "AI Browser Comparison 2026: Atlas vs Comet vs Dia",
+    "metaDescription": "ChatGPT Atlas, Perplexity Comet, and Dia compared for 2026 — features, pricing, and the security risks most roundups skip. Honest verdict on which to install.",
+    "datePublished": "2026-07-21",
+    "dateModified": "2026-07-21",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "10 min read",
+    "ogImage": "https://ainexustools.online/og-compare.webp",
+    "excerpt": "ChatGPT Atlas, Perplexity Comet, and Dia are the three agentic browsers leading the shift from search-based to AI-assisted browsing in 2026. This guide compares features and pricing, and covers the permissions trade-off most roundups leave out."
+  },
+  {
     "slug": "best-ai-resume-builder-tools-2026",
     "title": "Best AI Resume Builder Tools 2026: ATS-Tested and Ranked",
     "seoTitle": "Best AI Resume Builder Tools 2026: ATS Ranked",

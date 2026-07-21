@@ -72,6 +72,7 @@ const BLOG_POST_LOADERS: Record<string, () => Promise<BlogPostModule>> = {
   'claude-code-vs-github-copilot-vs-replit-2026': () => import('./claude-code-vs-github-copilot-vs-replit-2026'),
   'perplexity-ai-review-2026': () => import('./perplexity-ai-review-2026'),
   'best-ai-chatbot-2026': () => import('./best-ai-chatbot-2026'),
+  'chatgpt-atlas-vs-perplexity-comet-vs-dia-2026': () => import('./chatgpt-atlas-vs-perplexity-comet-vs-dia-2026'),
 };
 
 export async function loadBlogPostBySlug(slug: string): Promise<BlogPost | null> {

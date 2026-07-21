@@ -1381,6 +1381,8 @@ const CATEGORY_OG_MAP = {
 // resolveOgImage() checks this map first before falling through to category images.
 // To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
 const BLOG_OG_MAP = {
+  // Day 19 (Jul 21): ChatGPT Atlas vs Perplexity Comet vs Dia — AI browser comparison
+  'chatgpt-atlas-vs-perplexity-comet-vs-dia-2026': `${SITE}/og-compare.webp`,
   // Day 18 (Jul 17): Best AI Resume Builder Tools 2026 — Teal vs Rezi vs Kickresume vs Jobscan
   'best-ai-resume-builder-tools-2026':             `${SITE}/og-compare.webp`,
   // Day 17 (Jul 14): Best AI Voice Dictation Tools 2026 — Wispr Flow vs Superwhisper
@@ -2053,6 +2055,40 @@ function faqSchema(faqs) {
 // IMPORTANT: Every entry here must match the slug and metadata in blog/*.ts
 // When adding new blog posts, add them here AND in blog/index.ts
 const BLOG_POSTS = [
+  {
+    slug: 'chatgpt-atlas-vs-perplexity-comet-vs-dia-2026',
+    title: 'ChatGPT Atlas vs Perplexity Comet vs Dia (2026): Which AI Browser Should You Actually Install?',
+    seoTitle: 'AI Browser Comparison 2026: Atlas vs Comet vs Dia',
+    metaDescription: 'ChatGPT Atlas, Perplexity Comet, and Dia compared for 2026 — features, pricing, and the security risks most roundups skip. Honest verdict on which to install.',
+    datePublished: '2026-07-21',
+    dateModified: '2026-07-21',
+    readTimeMinutes: 10,
+    ogImage: 'https://ainexustools.online/og-compare.webp',
+    mentionedTools: ['chatgpt', 'perplexity'],
+    quickAnswer: 'Perplexity Comet is the best all-round agentic browser in 2026 for research-heavy work — full features are free, and citations back every answer. ChatGPT Atlas wins for task automation if you already pay for ChatGPT Plus. Dia suits Mac-only users who want a personal-assistant feel, but it collects the most browsing data of the three and has no Windows release yet.',
+    faqs: [
+    {
+      q: 'Is Perplexity Comet safe to use?',
+      a: 'Comet is safe for everyday browsing, but it carries real agentic-browser risk. In March 2026, researchers at Zenity Labs published a set of vulnerabilities called "PleaseFix" demonstrating zero-click agent hijacking in Comet, including a path that could extract credentials from a 1Password vault through the agent\'s own authorized workflows — not by exploiting a flaw in 1Password itself. This isn\'t unique to Comet; it reflects a risk category shared by every agentic browser that can act across tabs with stored logins. If you use Comet, limit agent-mode access on banking, email, and password-manager sessions, and keep the browser and any connected extensions updated.',
+    },
+    {
+      q: 'What is an agentic browser?',
+      a: 'An agentic browser is a web browser with an AI agent built into its core that can not only summarize or answer questions about a page, but take multi-step actions on your behalf — filling forms, comparing prices across tabs, booking appointments, or completing a purchase. ChatGPT Atlas, Perplexity Comet, and Dia are the three leading examples in 2026. The distinction from a browser with a bolted-on AI sidebar (like Chrome with Gemini, or Edge with Copilot) is that agent mode is built into the browsing engine itself, giving the AI direct access to page content, your open tabs, and — in varying degrees — your stored credentials and browsing history.',
+    },
+    {
+      q: 'ChatGPT Atlas vs Dia browser — which is better for Mac users?',
+      a: 'For Mac users specifically, Dia has the more personal-assistant-style feature set — it auto-creates tab groups around meetings and calendar events, and its Memory feature learns facts from your browsing over time. Atlas has the edge on raw task automation through Agent Mode, plus hard guardrails: it cannot run code, install extensions, or download files, and it pauses for confirmation on sensitive sites like banking pages. Dia is Apple Silicon-only (no Intel Mac support, no Windows build yet), while Atlas at least has Windows, iOS, and Android versions confirmed as "coming soon." If Mac-only is fine for you, the choice comes down to whether you want Dia\'s memory-driven personal assistant or Atlas\'s more restrained, guardrailed agent.',
+    },
+    {
+      q: 'Do I need a paid plan to use any of these AI browsers?',
+      a: 'No — all three are free to download and use for basic browsing and AI chat. The paid tiers unlock specific features: ChatGPT Atlas requires a Plus ($20/month), Pro ($100 or $200/month), or Business plan to use Agent Mode (the free tier gets the browser and sidebar chat, but not autonomous task execution). Perplexity Comet is the most generous — the core browser, unlimited AI search, citations, and agentic features are all free; the optional $5/month Comet Plus only adds premium publisher content access. Dia has a free tier with usage limits and a $20/month Dia Pro tier for expanded AI feature access.',
+    },
+    {
+      q: 'Will ChatGPT Atlas, Perplexity Comet, and Dia come to Windows?',
+      a: 'Perplexity Comet is already available on Windows alongside macOS. ChatGPT Atlas launched on macOS only, with OpenAI confirming Windows, iOS, and Android versions are in development but with no shipped date as of July 2026. Dia is the furthest behind on this front — it\'s macOS-only and requires Apple Silicon hardware (Intel Macs are explicitly unsupported), and while a Windows signup page exists on The Browser Company\'s site, there is no live build or announced release window.',
+    },
+    ],
+  },
   // —— Day 18 (Jul 17): Best AI Resume Builder Tools 2026 — New Career/Job-Search Vertical ——
   // Target keyword: "best ai resume builder tools 2026"
   // Affiliates: Teal + Rezi have confirmed application-based affiliate programs (not instant
@@ -3520,6 +3556,13 @@ const RELATED_LINKS = {
 // ── Task 5/6 Fix: Related links map for blog posts — links pillar posts to their
 // satellite/cluster posts (and vice versa) for internal authority distribution.
 const BLOG_RELATED_LINKS = {
+  // ── Day 19 (Jul 21): ChatGPT Atlas vs Perplexity Comet vs Dia — links to related AI-tool comparison cluster ──
+  'chatgpt-atlas-vs-perplexity-comet-vs-dia-2026': [
+    ['/blog/perplexity-ai-review-2026/', 'Perplexity AI Review 2026'],
+    ['/blog/best-ai-chatbot-2026/', 'Best AI Chatbot 2026'],
+    ['/best-ai-productivity-tools/', 'Best AI Productivity Tools — Category'],
+  ],
+
   // ── Day 18 (Jul 17): Best AI Resume Builder Tools 2026 — links to freelancer/student/India cluster ──
   'best-ai-resume-builder-tools-2026': [
     ['/blog/best-ai-tools-for-freelancers-2026/', 'Best AI Tools for Freelancers 2026'],
