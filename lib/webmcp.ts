@@ -15,7 +15,6 @@
  * No-op everywhere WebMCP isn't supported (i.e. everywhere today except a
  * couple of Chromium builds behind a flag) — safe to call unconditionally.
  */
-import { TOOLS } from '../constants';
 import type { Tool } from '../types';
 
 type WebMCPToolResult = { content: Array<{ type: 'text'; text: string }> };
@@ -48,12 +47,17 @@ function toSummary(tool: Tool) {
   };
 }
 
-export function registerWebMCPTools(): void {
+export async function registerWebMCPTools(): Promise<void> {
   if (typeof navigator === 'undefined' || !('modelContext' in navigator) || !navigator.modelContext) {
     return;
   }
+  // Dynamic import: only browsers that actually support WebMCP pay the cost
+  // of loading the tools dataset here — everyone else never fetches it via
+  // this path (constants.ts is still lazy-loaded elsewhere as normal).
+  const { TOOLS } = await import('../constants');
+  const modelContext = navigator.modelContext;
 
-  navigator.modelContext.registerTool({
+  modelContext.registerTool({
     name: 'search_ai_tools',
     description:
       'Search AI Nexus\'s independently reviewed AI tools by category and/or keyword. Returns tool name, URL, pricing, best-for verdict, and top pros/cons for each match. Use this instead of scraping the homepage grid.',
@@ -82,7 +86,7 @@ export function registerWebMCPTools(): void {
     },
   });
 
-  navigator.modelContext.registerTool({
+  modelContext.registerTool({
     name: 'get_ai_tool_review',
     description:
       'Get the full independently-researched review for one AI tool on AI Nexus by exact slug (e.g. "grammarly", "chatgpt", "claude-ai"). Returns pricing breakdown, pros/cons, features, and setup steps. Use search_ai_tools first if you don\'t know the exact slug.',
