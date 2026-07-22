@@ -18,6 +18,7 @@ declare global {
 import { COMPARE_META_BY_SLUG } from './pages/compare-metadata';
 import { BLOG_POST_META_BY_SLUG } from './blog/metadata';
 import { loadBlogPostBySlug } from './blog/loaders';
+import { registerWebMCPTools } from './lib/webmcp';
 
 // ── Lazy page components — each becomes its own JS chunk ────────────────────
 // These are only downloaded when the user actually navigates to that route,
@@ -257,6 +258,12 @@ function App() {
     const onPop = () => setPath(normalizePath(window.location.pathname));
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  // Agent-Ready: register WebMCP tools (navigator.modelContext) once per load.
+  // No-op in every browser that doesn't support it yet.
+  useEffect(() => {
+    registerWebMCPTools();
   }, []);
 
   const navigate = (to: string) => {

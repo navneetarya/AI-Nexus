@@ -1,0 +1,21 @@
+{
+  "$schema": "https://github.com/cloudflare/agent-skills-discovery-rfc",
+  "site": "https://ainexustools.online",
+  "name": "AI Nexus",
+  "description": "Independent AI tools review and comparison site maintained by Navneet Arya. Skills below help an agent complete common research tasks on this site without guessing URL structure or scraping page chrome.",
+  "updated": "2026-07-22",
+  "skills": [
+    {
+      "name": "compare-ai-tools",
+      "description": "How to find and read AI Nexus's head-to-head comparisons between two or more AI tools, including pricing, feature, and verdict data.",
+      "href": "/.well-known/agent-skills/compare-ai-tools.md",
+      "type": "text/markdown"
+    },
+    {
+      "name": "find-tool-pricing-and-verdict",
+      "description": "How to locate a single tool's review page, extract its current pricing, rating, and best-for verdict, and confirm when it was last checked.",
+      "href": "/.well-known/agent-skills/find-tool-pricing-and-verdict.md",
+      "type": "text/markdown"
+    }
+  ]
+}

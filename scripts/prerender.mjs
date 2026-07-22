@@ -1313,6 +1313,119 @@ function readTemplate() {
   return fs.readFileSync(path.join(DIST, 'index.html'), 'utf-8');
 }
 
+// ── Agent-Ready: Markdown Negotiation ────────────────────────────────────────
+// isitagentready.com's "Markdown Negotiation" check expects an agent sending
+// `Accept: text/markdown` to receive a clean markdown version of the page
+// instead of full HTML. GitHub Pages is a static host and can't inspect the
+// Accept header at request time, so the actual content negotiation happens at
+// the Cloudflare edge via a Transform Rule (see CLOUDFLARE_AGENT_READY_SETUP.md)
+// that rewrites e.g. /tools/chatgpt/ -> /tools/chatgpt.md. This function
+// generates that .md file at build time from the same clean bodyHtml every
+// page already injects for crawlers — no separate content source to maintain.
+function decodeEntities(s) {
+  return String(s)
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>');
+}
+
+/**
+ * Converts the clean, controlled HTML AI Nexus generates for its pre-rendered
+ * body content into Markdown. Not a general-purpose HTML→MD library — it only
+ * needs to understand the small set of tags actually used in bodyHtml
+ * (headings, paragraphs, lists, links, emphasis, blockquotes, tables).
+ */
+function htmlToMarkdown(html) {
+  let s = html;
+
+  // Strip script/style entirely
+  s = s.replace(/<(script|style)[\s\S]*?<\/\1>/gi, '');
+
+  // Tables (simple: header row + body rows, no colspan/rowspan)
+  s = s.replace(/<table[^>]*>([\s\S]*?)<\/table>/gi, (_, inner) => {
+    const rows = [...inner.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)].map(m => m[1]);
+    if (!rows.length) return '';
+    const cellsOf = row => [...row.matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/gi)]
+      .map(c => decodeEntities(c[1].replace(/<[^>]+>/g, '').trim()));
+    const out = [];
+    const header = cellsOf(rows[0]);
+    out.push(`| ${header.join(' | ')} |`);
+    out.push(`| ${header.map(() => '---').join(' | ')} |`);
+    for (let i = 1; i < rows.length; i++) {
+      out.push(`| ${cellsOf(rows[i]).join(' | ')} |`);
+    }
+    return `\n\n${out.join('\n')}\n\n`;
+  });
+
+  // Headings
+  s = s.replace(/<h1[^>]*>([\s\S]*?)<\/h1>/gi, (_, t) => `\n\n# ${t.replace(/<[^>]+>/g, '').trim()}\n\n`);
+  s = s.replace(/<h2[^>]*>([\s\S]*?)<\/h2>/gi, (_, t) => `\n\n## ${t.replace(/<[^>]+>/g, '').trim()}\n\n`);
+  s = s.replace(/<h3[^>]*>([\s\S]*?)<\/h3>/gi, (_, t) => `\n\n### ${t.replace(/<[^>]+>/g, '').trim()}\n\n`);
+  s = s.replace(/<h4[^>]*>([\s\S]*?)<\/h4>/gi, (_, t) => `\n\n#### ${t.replace(/<[^>]+>/g, '').trim()}\n\n`);
+
+  // Links & emphasis (before stripping generic tags)
+  s = s.replace(/<a\s+[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, t) => `[${t.replace(/<[^>]+>/g, '').trim()}](${href})`);
+  s = s.replace(/<(strong|b)[^>]*>([\s\S]*?)<\/\1>/gi, (_, __, t) => `**${t.replace(/<[^>]+>/g, '').trim()}**`);
+  s = s.replace(/<(em|i)[^>]*>([\s\S]*?)<\/\1>/gi, (_, __, t) => `_${t.replace(/<[^>]+>/g, '').trim()}_`);
+
+  // Blockquotes
+  s = s.replace(/<blockquote[^>]*>([\s\S]*?)<\/blockquote>/gi, (_, t) =>
+    '\n\n' + t.replace(/<[^>]+>/g, '').trim().split('\n').map(l => `> ${l.trim()}`).join('\n') + '\n\n');
+
+  // Lists
+  s = s.replace(/<li[^>]*>([\s\S]*?)<\/li>/gi, (_, t) => `- ${t.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()}\n`);
+  s = s.replace(/<\/?(ul|ol)[^>]*>/gi, '\n');
+
+  // Paragraphs / line breaks
+  s = s.replace(/<br\s*\/?>/gi, '\n');
+  s = s.replace(/<p[^>]*>([\s\S]*?)<\/p>/gi, (_, t) => `\n\n${t.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()}\n\n`);
+
+  // Strip anything left (divs, spans, etc.)
+  s = s.replace(/<[^>]+>/g, '');
+
+  s = decodeEntities(s);
+  // Collapse excess blank lines and strip leading indentation left over from
+  // the source HTML's own formatting (it's pretty-printed for readability,
+  // not semantic — that indentation has no meaning in the extracted text).
+  s = s.split('\n').map(line => line.replace(/^[ \t]+/, '')).join('\n');
+  s = s.replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+  return s;
+}
+
+/** Converts a content HTML fragment to Markdown and writes it to <routePath>.md. */
+function writeMarkdownFile(routePath, innerHtml, canonical) {
+  const md = htmlToMarkdown(innerHtml);
+  const frontMatter = `<!-- ${canonical} -->\n<!-- Source: AI Nexus (${SITE}) — Author: ${AUTHOR} -->\n\n`;
+  const outPath = path.join(DIST, `${routePath === '' ? 'index' : routePath}.md`);
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  fs.writeFileSync(outPath, frontMatter + md + '\n', 'utf-8');
+}
+
+/**
+ * Extracts the `<div id="pre-render">…</div>` block already injected into a
+ * built page and writes it alongside the HTML as `<routePath>.md`. This is
+ * the sibling file the Cloudflare Transform Rule serves for
+ * `Accept: text/markdown` requests (see CLOUDFLARE_AGENT_READY_SETUP.md).
+ */
+function writeMarkdownSibling(routePath, fullHtml, canonical) {
+  const start = fullHtml.indexOf('<div id="pre-render"');
+  if (start === -1) return;
+  const tagEnd = fullHtml.indexOf('>', start);
+  let depth = 1, pos = tagEnd + 1;
+  while (pos < fullHtml.length && depth > 0) {
+    const nextOpen = fullHtml.indexOf('<div', pos);
+    const nextClose = fullHtml.indexOf('</div>', pos);
+    if (nextClose === -1) return;
+    if (nextOpen !== -1 && nextOpen < nextClose) { depth++; pos = nextOpen + 4; }
+    else { depth--; pos = nextClose + 6; }
+  }
+  const inner = fullHtml.slice(tagEnd + 1, pos - 6);
+  writeMarkdownFile(routePath, inner, canonical);
+}
+
 /**
  * Finds the position of the closing </div> that matches the opening <div id="root"> tag.
  * Uses depth-counting so it works regardless of whether Vite strips HTML comments.
@@ -1543,6 +1656,12 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
   const hreflangTags = `\n  <link rel="alternate" hreflang="en" href="${canonical}">\n  <link rel="alternate" hreflang="x-default" href="${canonical}">`;
   html = html.replace('</head>', hreflangTags + '\n  </head>');
 
+  // Agent-Ready: point HTML-parsing agents to the clean markdown version of
+  // this exact page (built by writeMarkdownSibling) without requiring them
+  // to send Accept: text/markdown up front.
+  const markdownHref = canonical.replace(/\/$/, '') + '.md';
+  html = html.replace('</head>', `\n  <link rel="alternate" type="text/markdown" href="${markdownHref}">\n  </head>`);
+
   // OG tags — function form to prevent $ in pricing strings corrupting capture-group back-references
   html = html
     .replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/,       (_, g1, g2) => g1 + esc(title) + g2)
@@ -1628,6 +1747,7 @@ function writeRoute(routePath, html) {
   const dir = path.join(DIST, routePath);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf-8');
+  writeMarkdownSibling(routePath, html, `${SITE}/${routePath}/`);
   console.log(`  ✓  /${routePath}/`);
 }
 
@@ -4875,6 +4995,9 @@ ${items}
 {
   const homepagePath = path.join(DIST, 'index.html');
   let homeHtml = fs.readFileSync(homepagePath, 'utf-8');
+  // Agent-Ready: markdown alternate for the homepage (root path is handled by
+  // its own Cloudflare Transform Rule — see CLOUDFLARE_AGENT_READY_SETUP.md)
+  homeHtml = homeHtml.replace('</head>', `\n  <link rel="alternate" type="text/markdown" href="${SITE}/index.md">\n  </head>`);
   const homepageFaqSchema = JSON.stringify(faqSchema([
     { q: 'What are the best free AI tools in 2026?', a: 'The best free AI tools in 2026 are Grammarly (writing, unlimited free), Rytr (10,000 characters/month), QuillBot (paraphrasing, free tier), Leonardo.ai (150 free credits/day), and Gamma (10 free AI presentations). All offer functional free plans that don\'t expire.' },
     { q: 'Which AI writing tool is best for beginners?', a: 'Rytr is the best AI writing tool for beginners in 2026. It has 40+ pre-built templates with clear labels, a free plan with 10,000 characters/month, and produces usable output within 90 seconds of signing up — no content strategy knowledge required.' },
@@ -5364,7 +5487,9 @@ ${items}
   }
 
   fs.writeFileSync(homepagePath, homeHtml, 'utf-8');
+  writeMarkdownFile('', homepageBodyContent, `${SITE}/`);
   console.log('\n  ✓  / (homepage FAQPage schema + body content injected)');
+  console.log('  ✓  /index.md  (markdown negotiation source)');
 }
 
 // ── Sitemap ────────────────────────────────────────────────────────────────────
@@ -5419,6 +5544,43 @@ function generateLlmsTxt() {
   console.log(`\n  ✓  /llms.txt  (auto-generated: ${TOOLS.length} tools, ${BLOG_POSTS.length} posts, ${COMPARE_ARTICLES.length} comparisons)`);
 }
 generateLlmsTxt();
+
+// ── Agent-Ready: API Catalog (RFC 9727) ──────────────────────────────────────
+// AI Nexus doesn't expose a traditional REST API, but it does publish several
+// machine-readable resources agents rely on to discover and read the site
+// without scraping HTML. RFC 9727 gives agents one standard place to find all
+// of them: /.well-known/api-catalog, as a `linkset+json` document. Auto-generated
+// so it can never drift from what actually exists on disk.
+function generateApiCatalog() {
+  const linkset = [
+    {
+      anchor: `${SITE}/`,
+      'service-desc': [{ href: `${SITE}/llms.txt`, type: 'text/plain', title: 'llms.txt — structured site index for LLM crawlers' }],
+    },
+    {
+      anchor: `${SITE}/`,
+      'service-desc': [{ href: `${SITE}/llms-full.txt`, type: 'text/plain', title: 'llms-full.txt — full-text export of every tool review and article' }],
+    },
+    {
+      anchor: `${SITE}/`,
+      describedby: [{ href: `${SITE}/sitemap.xml`, type: 'application/xml', title: 'XML sitemap — full URL index' }],
+    },
+    {
+      anchor: `${SITE}/`,
+      describedby: [{ href: `${SITE}/rss.xml`, type: 'application/rss+xml', title: 'RSS feed — chronological post discovery' }],
+    },
+    {
+      anchor: `${SITE}/`,
+      describedby: [{ href: `${SITE}/.well-known/agent-skills/index.json`, type: 'application/json', title: 'Agent Skills index — task guides for using this site' }],
+    },
+  ];
+  const doc = { linkset };
+  const dir = path.join(DIST, '.well-known');
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'api-catalog'), JSON.stringify(doc, null, 2), 'utf-8');
+  console.log('  ✓  /.well-known/api-catalog  (RFC 9727)');
+}
+generateApiCatalog();
 
 // ── Done ──────────────────────────────────────────────────────────────────────
 const total = TOOLS.length + COMPARE_ARTICLES.length + 5 + BLOG_POSTS.length + 1; // +1 blog list, +5 static

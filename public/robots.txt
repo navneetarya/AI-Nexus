@@ -5,6 +5,15 @@
 User-agent: *
 Allow: /
 
+# ── Content Signals (contentsignals.org / IETF draft-romm-aipref-contentsignals) ──
+# Independent of crawl access above: declares how this content may be used.
+# search=yes  -> ok to index for search results
+# ai-input=yes -> ok to use as grounding/context for AI answers (RAG, citations)
+# ai-train=yes -> ok to use for model training
+# All content here is original editorial review content with full attribution
+# already expected — no restriction from AI Nexus's side.
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
 # ── Google ────────────────────────────────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
