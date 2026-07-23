@@ -174,8 +174,10 @@ import post68 from './best-ai-voice-dictation-tools-2026';
 // official sites as of July 2026 (see file header).
 import post69 from './best-ai-resume-builder-tools-2026';
 import post70 from './chatgpt-atlas-vs-perplexity-comet-vs-dia-2026';
+import post71 from './emergent-ai-explained-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post71, // Day 20 (Jul 23) — What Is Emergent AI? Emergent Abilities Explained — pillar/explainer, low competition — pinned first for freshness
   post70, // Day 19 (Jul 21) — ChatGPT Atlas vs Perplexity Comet vs Dia — AI browser comparison, security angle — pinned first for freshness
   post69, // Day 18 — Best AI Resume Builder Tools 2026 — pinned first for freshness
   post67, // Day 16 — AI Contract Analysis Tools 2026 — New Legal Vertical, 2,100/mo, KD 19 — pinned first for freshness
