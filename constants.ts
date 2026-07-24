@@ -960,6 +960,54 @@ export const TOOLS: Tool[] = [
     ],
   },
 
+  {
+    // Target keyword: "emergent ai review 2026" / "emergent.sh review" — low competition, rising term
+    // Duplicate check: grep -c "slug: 'emergent'" constants.ts + prerender.mjs → 0 and 0 before this edit
+    slug: 'emergent', id: 'c9',
+    name: 'Emergent', tagline: 'Prompt-to-app AI builder — YC-backed, $100M ARR in under 8 months',
+    description: 'Emergent (emergent.sh) is an AI "vibe coding" platform that builds full-stack web and mobile apps from natural-language prompts, then deploys and hosts them. Backed by Y Combinator and reportedly growing from $100K to $100M in annualized revenue in under 8 months, it competes directly with Bolt, Lovable, and Replit — with a credit-based pricing model that reviewers consistently flag as the tool\'s biggest downside.',
+    category: Category.CODING, affiliateLink: 'https://emergent.sh', // Official affiliate program exists (partners.emergent.sh, Rewardful, 20% recurring for 6 months) — not yet applied/approved for AI Nexus; using official URL until an approved referral link is available
+    iconName: 'Sparkles', color: '#6366f1', accentColor: '#4f46e5',
+    userBadge: 'Vibe coding 🔥', pricing: 'Free + $20/month', bestFor: 'Non-technical founders who want a full working app, not just a UI mockup',
+    notForYou: 'Budget-conscious builders and anyone doing frequent small iterations — the credit-based model means costs can climb fast mid-project, and this is the single most repeated complaint across Trustpilot and Reddit. If you mainly need frontend components, v0 is cheaper and more predictable.',
+    lastTestedISO: '2026-07-23',
+    researchSources: {
+      trustpilot: { rating: 2.7, count: 400, url: 'https://www.trustpilot.com/review/emergent.sh' },
+      reddit: 'Mixed to negative — r/vibecoding, r/nocode (credit-burn complaints dominate; some strongly positive complex-build reports)',
+      lastVerified: '2026-07-23',
+    },
+    indiaPricing: {
+      free: 'No confirmed INR billing',
+      paid: 'USD-only pricing (Stripe checkout)',
+      note: 'No India-specific pricing, UPI support, or GST note found in this pass — stating that plainly rather than assuming parity with tools that do offer INR billing. Notably founded by India-based twin brothers Mukund and Madhav Jha.',
+    },
+    reviewType: 'research-based',
+    updateLog: [
+      { date: 'July 2026', note: 'Tool entry created. Pricing verified across 6 independent sources: Free (10 credits/mo), Standard $20/mo (100 credits), Pro $200/mo (750 credits, 1M context). Team/Enterprise tier structure conflicted between sources — flagged rather than guessed. Trustpilot rating (~2.7/5, 400+ reviews) is an aggregator-reported approximation; direct fetch was blocked by bot detection.' },
+    ],
+    features: ['Prompt-to-full-stack web + mobile app', 'Auto deploy + hosting', 'GitHub save/sync', '1M-token context window (Pro)', 'Custom agent creation (Pro)', 'Day-one access to Claude Fable 5'],
+    pros: ['Builds full end-to-end apps (frontend + backend + deploy), not just UI scaffolding', 'Fast-growing, well-funded (Series B, Khosla Ventures + SoftBank) — less startup-risk than smaller competitors', '1M-token context window on Pro handles genuinely large, complex builds', 'Reported "black magic" results on complex builds by some Reddit users spending at the Pro tier'],
+    cons: ['Credit-based pricing is the most consistent complaint across every review source — costs can escalate quickly mid-project', 'Free plan (10 credits/month) is too limited to build anything real', 'Trustpilot sentiment is mixed to negative (~2.7/5), concentrated on billing and refund disputes', 'Team/Enterprise tier structure is inconsistently documented across sources as of this review'],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '10 credits/month · enough to test the workflow, not to ship a real project' },
+      { tier: 'Standard', price: '$20/month ($17/mo annual)', highlight: '100 credits/month · private project hosting · GitHub save & collaboration' },
+      { tier: 'Pro', price: '$200/month ($167/mo annual)', highlight: '750 credits/month · 1M-token context window · custom agents · priority support' },
+      { tier: 'Enterprise', price: 'Custom', highlight: 'Contact sales · team/shared-credit structure reported inconsistently across sources' },
+    ],
+    setupSteps: [
+      'Sign up at emergent.sh — free plan gives 10 credits/month, no credit card required to start.',
+      'Describe the app you want in plain English — Emergent plans and scaffolds a full-stack build, not just a frontend.',
+      'Iterate by chat to refine features; each meaningful change consumes credits, so batch requests where possible to control cost.',
+      'Deploy directly from the platform, or connect GitHub to take the generated codebase for manual development.',
+    ],
+    dailyUseCases: [
+      'Building a complete MVP with backend logic for a non-technical founder to demo to investors',
+      'Prototyping an internal business tool that needs real data persistence, not just a mockup',
+      'Testing whether a product idea is viable before committing engineering budget to it',
+      'Rapid iteration on a single well-scoped app where credit cost is budgeted in advance',
+    ],
+  },
+
   // ── Week 4: Windsurf — CODING category (by Codeium) ──────────────────────
   // No public affiliate programme yet — monitor windsurf.com/affiliates
   // CODING
@@ -2292,5 +2340,16 @@ Object.assign(TOOL_FAQS, {
     { q: 'Why do people use Stable Diffusion instead of Midjourney?', a: 'Control. Stable Diffusion lets you self-host, fine-tune LoRAs, automate pipelines, and keep generation private. Midjourney is easier and prettier out of the box, but far more closed.' },
     { q: 'Is Stable Diffusion hard to use?', a: 'For beginners, yes. Tools like ComfyUI and AUTOMATIC1111 are powerful but have a real learning curve. Stable Diffusion becomes attractive once customisation, privacy, or workflow ownership matters enough to justify that complexity.' },
     { q: 'What is DreamStudio?', a: 'DreamStudio is Stability AI\'s hosted web app for using Stable Diffusion models without running them locally. It uses a pay-as-you-go credit system rather than a flat monthly subscription.' },
+  ],
+});
+
+// ── Emergent (emergent.sh) FAQs — added July 2026, mirrors prerender.mjs TOOL_FAQS ──
+Object.assign(TOOL_FAQS, {
+  emergent: [
+    { q: 'Is Emergent (emergent.sh) free to use?', a: 'Yes, with real limits — the free plan gives 10 credits per month, which is enough to test the workflow but not to finish a real project. Most reviewers report needing the $20/month Standard plan (100 credits) for anything beyond a quick prototype.' },
+    { q: 'Why does Emergent have so many negative reviews?', a: 'The dominant complaint across Trustpilot and Reddit (r/vibecoding, r/nocode) is the credit-based pricing model — costs can climb quickly mid-project if a build needs many iterations, and several users report spending far more than expected. Some users building larger, well-scoped apps report strongly positive results, particularly at the Pro tier with its 1M-token context window — but budget-conscious or frequent small-iteration use cases are the ones most likely to be frustrated.' },
+    { q: 'Emergent vs Lovable vs Bolt — which should I use?', a: 'Lovable is the cheaper, more predictable entry point for non-developers building a full-stack MVP with Supabase built in. Bolt is more developer-oriented for rapid frontend prototyping. Emergent covers similar full-stack ground to Lovable but is reported as more credit-hungry per action — better suited to well-scoped, higher-budget builds than frequent small tweaks.' },
+    { q: 'Does Emergent have an affiliate program?', a: 'Yes — Emergent runs its own affiliate program at partners.emergent.sh (20% recurring commission for 6 months), separate from any third-party network.' },
+    { q: 'What is the 1M-token context window on Emergent Pro actually useful for?', a: 'It lets the AI keep a much larger amount of your project — code, prior instructions, and context — "in view" at once, which matters most on complex, multi-step builds where losing earlier context causes the AI to contradict or break its own earlier work. For small, simple apps it makes little practical difference; it becomes valuable as project complexity grows.' },
   ],
 });

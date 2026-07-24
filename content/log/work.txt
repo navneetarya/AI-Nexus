@@ -1,0 +1,2 @@
+[2026-07-23] | PUBLISHED | slug: emergent-ai-explained-2026 | kw: emergent ai | score: 8.8/10 | gates: 8/8 | wc: ~3008
+[2026-07-23] | TOOL ADDED | slug: emergent | category: Coding | rating: 3.4/5 | gates: 6/6 (2 iterations) | affiliate: pending approval (partners.emergent.sh)

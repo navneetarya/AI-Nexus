@@ -51,7 +51,7 @@ jobs:
 
           # 1. Check critical prerendered pages exist
           MISSING=0
-          for slug in grammarly writesonic rytr quillbot frase leonardo-ai photoroom looka pictory opus-clip invideo murf-ai podcastle gamma beautiful-ai ocoya replit notion-ai taskade elevenlabs jasper descript perplexity canva-ai cursor lovable chatgpt claude-ai grok-ai midjourney stable-diffusion windsurf github-copilot v0 headshotpro getresponse munch basedlabs narrato fireflies bolt claude-code; do
+          for slug in grammarly writesonic rytr quillbot frase leonardo-ai photoroom looka pictory opus-clip invideo murf-ai podcastle gamma beautiful-ai ocoya replit notion-ai taskade elevenlabs jasper descript perplexity canva-ai cursor lovable emergent chatgpt claude-ai grok-ai midjourney stable-diffusion windsurf github-copilot v0 headshotpro getresponse munch basedlabs narrato fireflies bolt claude-code; do
             if [ ! -f "dist/tools/$slug/index.html" ]; then
               echo "❌ Missing: dist/tools/$slug/index.html"
               MISSING=$((MISSING+1))
