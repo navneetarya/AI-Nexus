@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-voice-agent-small-business-2026",
+    "title": "Best AI Voice Agent Platforms for Small Business in 2026 (Real Costs, Tested)",
+    "seoTitle": "Best AI Voice Agent for Small Business 2026",
+    "metaDescription": "Retell AI, Vapi, Bland, ElevenLabs & Synthflow compared on real cost and small-business fit — verified July 2026, includes Synthflow's pricing pivot.",
+    "datePublished": "2026-07-25",
+    "dateModified": "2026-07-25",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "11 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-voice-agent-small-business-2026.webp",
+    "excerpt": "Retell AI is the strongest overall pick for small businesses on transparent, pay-as-you-go pricing, Vapi suits technical freelancers who want full control, and Bland fits outbound-heavy campaigns — while Synthflow, long recommended as the no-code small-business option, quietly moved to Enterprise-only pricing in 2026."
+  },
+  {
     "slug": "emergent-ai-explained-2026",
     "title": "What Is Emergent AI? Emergent Abilities Explained (2026 Guide)",
     "seoTitle": "What Is Emergent AI? Emergent Abilities Explained 2026",

@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-07-23
+# Updated: 2026-07-25
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -55,7 +55,9 @@
 
 ## Blog Posts
 
+- [Best AI Voice Agent Platforms for Small Business in 2026 (Real Costs, Tested)](https://ainexustools.online/blog/best-ai-voice-agent-small-business-2026): Retell AI, Vapi, Bland, ElevenLabs & Synthflow compared on real cost and small-business fit — verified July 2026, includes Synthflow's pricing pivot to Enterprise-only.
 - [What Is Emergent AI? Emergent Abilities Explained (2026 Guide)](https://ainexustools.online/blog/emergent-ai-explained-2026): Emergent AI explained in plain English — real examples of emergent abilities, the 2023 Stanford "mirage" rebuttal, and what emergent behavior in AI agents means for multi-agent workflows in 2026.
+- [ChatGPT Atlas vs Perplexity Comet vs Dia: AI Browser Comparison 2026](https://ainexustools.online/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026): ChatGPT Atlas, Perplexity Comet, and Dia compared on agentic browsing, pricing, and security — which AI browser is actually safe and worth using in 2026.
 - [Best AI Resume Builder Tools 2026: ATS-Tested and Ranked](https://ainexustools.online/blog/best-ai-resume-builder-tools-2026): Teal, Rezi, Kickresume, and Jobscan compared on real 2026 pricing and ATS compatibility — which one is actually worth paying for, verified July 2026.
 - [Best AI Voice Dictation Tools 2026: Wispr Flow vs Superwhisper vs Free Options](https://ainexustools.online/blog/best-ai-voice-dictation-tools-2026): Wispr Flow scores 4.5/5 on G2 but 2.7/5 on Trustpilot. Honest pricing and rating comparison for Wispr Flow, Superwhisper, Otter.ai, Dragon, and free options, verified July 2026.
 - [AI Contract Analysis Tools 2026: Legal AI for Small Business & Freelancers](https://ainexustools.online/blog/ai-contract-analysis-tools-2026): Harvey AI and Luminance are enterprise-only with no public pricing; Spellbook is priced for lawyers drafting in Word. What freelancers and small businesses should actually use for contract review, verified July 2026.

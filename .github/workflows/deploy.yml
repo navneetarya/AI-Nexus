@@ -70,6 +70,7 @@ jobs:
           # The sync check below will fail the build with a reminder if a
           # post is added to blog/ without a matching entry here.
           BLOG_SLUGS=(
+            best-ai-voice-agent-small-business-2026
             chatgpt-atlas-vs-perplexity-comet-vs-dia-2026
             best-ai-resume-builder-tools-2026
             ai-agents-vs-ai-automation-difference-2026
