@@ -42,6 +42,17 @@ const post: BlogPost = {
       a: 'Perplexity Pro is worth $20/month if you use it for research-heavy work — academic writing, competitive intelligence, technical documentation, or any task that currently requires opening 10+ tabs and synthesising information manually. For casual users doing 5–10 standard searches per day, the free plan is sufficient. The main upgrade benefits are the more capable AI models (especially for complex reasoning), Deep Research for multi-source synthesis, and Spaces for ongoing research sessions with document context.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Is Perplexity Worth It vs Google Search in 2026?</h2>
 <p>Perplexity is worth it for research-heavy work — questions that require pulling together information from multiple sources — but Google still wins for navigational searches, local results, breaking news, and shopping, so the honest answer is that most people end up using both. For two years, Perplexity operated as a power-user tool — known in tech communities, largely ignored by the mainstream. That has changed. Google Trends shows a 280% spike in "Perplexity vs Google" searches in May 2026. The reasons are converging: Google's AI Overviews have made traditional search results harder to navigate, Perplexity added Deep Research with access to premium models, and a growing number of knowledge workers have switched to it as their primary search tool and reported measurable time savings.</p>

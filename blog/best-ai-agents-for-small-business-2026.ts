@@ -42,11 +42,42 @@ const post: BlogPost = {
       a: 'A chatbot responds to explicit user messages — it is reactive and single-step. An AI agent pursues a goal across multiple steps, using tools and making decisions without being prompted at each step. Example: a chatbot answers "When is my order arriving?" An AI agent can proactively check order status, identify a delay, draft and send a customer update email, and flag the issue to your fulfilment team — all without a human initiating each action. Agents are defined by goal-directedness and tool use; chatbots are defined by conversational response.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The strongest AI agent platforms for small businesses in 2026: <strong>Lindy.ai</strong> (best for non-technical owners — email, scheduling, lead qualification from ~$20/mo), <strong>Relevance AI</strong> (best for custom auditable agent workflows — from $19/mo), <strong>Make.com</strong> (best automation-native option with AI modules — from $9/mo), and <strong>n8n</strong> (best for technical teams — free to self-host). Eight platforms are compared below across autonomy tier, pricing, and SMB deployment fit.</p>
 </div>
+<!-- ai-nexus:early-comparison-table -->
+<div style="overflow-x:auto;margin:16px 0 24px;">
+<table style="width:100%;border-collapse:collapse;font-size:14px;">
+  <thead><tr style="background:rgba(13,148,136,.1);">
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;">Final shortlist</td>
+      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 <h2>What Makes an AI Agent Different from Traditional Software (2026 Definition)</h2>
 <p>Traditional business software executes fixed commands: a button press triggers a function and returns a result. Every decision requires a human. AI agents operate on a different model — they interpret a <em>goal</em>, plan a sequence of steps to achieve it, take actions across multiple tools, and adapt based on intermediate results.</p>

@@ -18,6 +18,17 @@ const post: BlogPost = {
     { q: 'Is GitHub Copilot worth $10/month?', a: 'For developers who code 4+ hours daily, GitHub Copilot at $10/month is worth it. Most users report saving 30–60 minutes per day on boilerplate and repetitive code, making the ROI clear. For occasional coders, the free tier or Codeium (free) may be sufficient.' },
     { q: 'What is Codeium and is it free?', a: 'Codeium is an AI code completion tool that is completely free for individual developers. It supports 70+ languages, integrates with VS Code, JetBrains, and Neovim, and provides unlimited AI completions and chat. Codeium Teams (for business use with shared context) costs $12/month per user.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>

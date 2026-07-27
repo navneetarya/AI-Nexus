@@ -22,6 +22,7 @@ DIST = ROOT / "dist"
 PUBLIC = ROOT / "public"
 SCRIPTS = ROOT / "scripts"
 BLOG = ROOT / "blog"
+NON_POST_FILES = {"index.ts", "types.ts", "loaders.ts", "metadata.ts"}
 
 PASS = "\033[92m✅\033[0m"
 FAIL = "\033[91m❌\033[0m"
@@ -130,7 +131,7 @@ check("C-04", f"dist/llms.txt lists tool reviews ({tool_count_in_llms} found, ex
       "generateLlmsTxt() should include all TOOLS entries")
 
 blog_count_in_llms = llms_txt.count("ainexustools.online/blog/")
-blog_ts_count = len(list(BLOG.glob("*.ts"))) - 2  # exclude index.ts and types.ts
+blog_ts_count = len([p for p in BLOG.glob("*.ts") if p.name not in NON_POST_FILES])
 check("C-04", f"dist/llms.txt lists blog posts ({blog_count_in_llms} found, expected ≥{blog_ts_count})",
       blog_count_in_llms >= blog_ts_count,
       "generateLlmsTxt() must include all BLOG_POSTS entries")
@@ -211,13 +212,15 @@ for slug in ["grammarly", "writesonic", "windsurf", "cursor"]:
 # H-07: PAA optimization (content-level task, no code check)
 print(f"  {INFO}  [H-07] PAA optimization is a content task — manually align FAQ questions to Google PAA results")
 
-# H-08: Affiliate domains in index.html
-index_html = read(ROOT / "index.html")
+# H-08: Affiliate domains in outbound link tracker
+# The tracker moved to public/js/ga-init.js; keep index.html as fallback for
+# older inline implementations.
+affiliate_tracker = read(PUBLIC / "js" / "ga-init.js") + "\n" + read(ROOT / "index.html")
 for domain in ["cursor.com", "lovable.dev", "getresponse.com", "headshotpro.com",
                "fireflies.ai", "narrato.io", "make.com"]:
-    check("H-08", f"index.html affiliate tracking includes '{domain}'",
-          domain in index_html,
-          f"Add '{domain}' to affiliateDomains array in index.html outbound link tracker")
+    check("H-08", f"affiliate tracking includes '{domain}'",
+          domain in affiliate_tracker,
+          f"Add '{domain}' to affiliateDomains array in public/js/ga-init.js")
 
 # H-09: Internal links rendering (already via RELATED_LINKS + BLOG_RELATED_LINKS)
 grammarly_html = read(DIST / "tools" / "grammarly" / "index.html")
@@ -395,20 +398,31 @@ check("DEPLOY", "deploy.yml checks for windsurf tool page",
       "windsurf" in deploy_yml,
       "Add 'windsurf' to tool slugs validation list in deploy.yml")
 
-check("DEPLOY", "deploy.yml EXPECTED_LOC_COUNT = 135",
-      "EXPECTED_LOC_COUNT=135" in deploy_yml,
-      "Update EXPECTED_LOC_COUNT to 135 in deploy.yml sitemap check")
+check("DEPLOY", "deploy.yml uses dynamic sitemap parity check (LOC_COUNT vs ROUTE_COUNT)",
+      "LOC_COUNT=$(grep -c \"<loc>\" dist/sitemap.xml)" in deploy_yml and
+      "ROUTE_COUNT=$(find dist -type f -name index.html" in deploy_yml and
+      "if [ \"$LOC_COUNT\" -ne \"$ROUTE_COUNT\" ]" in deploy_yml,
+      "Use dynamic LOC_COUNT vs ROUTE_COUNT validation in deploy.yml")
 
 check("DEPLOY", "deploy.yml llms.txt check uses dist/llms.txt (auto-generated)",
       "dist/llms.txt" in deploy_yml and deploy_yml.split("Validate llms.txt sync")[1].split("Upload artifact")[0].count("public/llms.txt") == 0,
       "Update deploy.yml llms.txt validation step to check dist/llms.txt instead of public/llms.txt")
 
-# Sitemap count in generated file
+# Sitemap parity in generated file (must match deploy workflow logic)
 sitemap = read(DIST / "sitemap.xml")
 loc_count = sitemap.count("<loc>")
-check("DEPLOY", f"dist/sitemap.xml has 135 URLs ({loc_count} found)",
-      loc_count == 135,
-      "Sitemap URL count mismatch — check TOOLS/BLOG_POSTS/COMPARE_ARTICLES counts")
+route_count = 0
+if DIST.exists():
+      route_files = list(DIST.rglob("index.html"))
+      excluded = {
+            str((DIST / "tools" / "index.html").resolve()),
+            str((DIST / "best-ai-tools-for-freelancers" / "index.html").resolve()),
+      }
+      route_count = sum(1 for p in route_files if str(p.resolve()) not in excluded)
+
+check("DEPLOY", f"dist/sitemap.xml route parity ({loc_count} loc entries vs {route_count} prerendered routes)",
+        loc_count == route_count,
+        "Sitemap URL count mismatch — regenerate and check prerender route inclusion/exclusions")
 
 print()
 

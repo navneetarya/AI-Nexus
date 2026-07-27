@@ -36,6 +36,17 @@ const post: BlogPost = {
       a: 'Taskade can replace Asana for most freelancers and small teams focused on execution — the AI agents, project views, and workspace pricing make it a viable alternative. Replacing Notion is harder: Taskade lacks Notion\'s interconnected database system, rich knowledge base features, and template ecosystem. For teams that primarily do project execution rather than knowledge management, Taskade is sufficient. Teams with heavy documentation needs will still want Notion.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Which Is Best for Freelancers — Taskade, Notion, or Asana?</h2>
 <p>For freelancers in 2026, Taskade is the best pick if you want AI to build and run your project plans, Notion wins if your priority is organising knowledge in interconnected databases and wikis, and Asana only makes sense once you're managing enterprise-style approval chains — most solo freelancers get the most value from Taskade. Taskade, Notion, and Asana are the three tools freelancers and small teams consider most when looking for a productivity upgrade. But they keep getting compared as if they're interchangeable. They're not.</p>

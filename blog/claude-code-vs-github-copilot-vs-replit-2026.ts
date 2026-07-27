@@ -42,6 +42,17 @@ const post: BlogPost = {
       a: 'Replit has the most functional free tier for non-developers — you get a full browser-based IDE with basic AI features, unlimited public projects, and no local setup required. GitHub Copilot introduced a free tier in 2024 with limited completions. Claude Code requires an Anthropic API subscription — there is no meaningful free tier for heavy usage. For a complete comparison of all free AI coding tool options, see the best AI coding tools guide.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Which Is Best — Claude Code, GitHub Copilot, or Replit?</h2>
 <p>Claude Code, GitHub Copilot, and Replit each lead for a different kind of user in 2026: Claude Code is the strongest agentic coding agent for autonomous multi-step tasks, GitHub Copilot remains the best IDE-integrated assistant for day-to-day coding, and Replit is the easiest entry point if you're not a professional developer. Claude Code launched as generally available in early 2026 and immediately triggered a wave of developer forum discussions. Search interest in "claude code vs copilot" is up 380% in the past 30 days. The developer community is actively re-evaluating which tool belongs in their workflow — and so is a growing group of non-developers trying to use AI to build scripts, automations, and small apps without a traditional coding background.</p>

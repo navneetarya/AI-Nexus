@@ -38,6 +38,17 @@ const post: BlogPost = {
       a: 'DALL-E 3 (via ChatGPT) is the easiest for beginners — you describe what you want in plain English and get good results without learning prompt engineering. Leonardo.ai is the best free option with a beginner-friendly web interface.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>What Are the Best Midjourney Alternatives in 2026?</h2>
 <p>The best Midjourney alternatives in 2026 are Leonardo.ai overall, Stable Diffusion if you want unlimited free generation, DALL-E 3 for beginners who want prompts to behave predictably, and Adobe Firefly when you need commercially safe images for client work. Midjourney produces stunning AI art. That's not up for debate. But it has three significant drawbacks that push users toward alternatives: it requires Discord (a deal-breaker for many professionals), the $10/month Basic plan limits you to ~200 generations, and there's no free tier to test before committing.</p>

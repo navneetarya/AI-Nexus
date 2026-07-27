@@ -42,6 +42,17 @@ const post: BlogPost = {
       a: 'Opus Clip is the cheapest paid InVideo alternative at $19/month, with a functional free plan that gives you 60 minutes of processing per month. Pictory starts at $19/month with a 3-video free trial. InVideo AI\'s paid plan also starts at $20/month. All three are in a similar price range — the choice should be based on use case (creating new videos vs. repurposing existing ones vs. clipping long content) rather than price.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>What Are the Best InVideo AI Alternatives in 2026?</h2>
 <p>The best InVideo AI alternatives in 2026 are Pictory for turning existing blog or script content into faceless videos, Opus Clip for cutting long videos into short-form clips, and Murf AI if your main complaint about InVideo is the voiceover quality. InVideo AI is a genuinely capable tool — it generates complete faceless YouTube videos from a text prompt: script, stock footage, AI voiceover, and captions in one workflow. But it's not the right tool for every video creator, and it has real limitations that push people to look for alternatives.</p>

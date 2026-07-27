@@ -47,6 +47,17 @@ const post: BlogPost = {
       a: 'Perplexity is the strongest free AI tool for UPSC and competitive exam prep — it answers current-affairs questions with citations from live web sources, which is critical for an exam that tests recent events. For making structured notes and mind maps from your study material, Taskade\'s free plan generates topic breakdowns and study plans from a single sentence prompt. Gamma is useful for converting dense notes into revision slide decks.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>What Are the Best Free AI Tools for Students in India in 2026?</h2>
 <p>The best free AI tools for students in India in 2026 are Grammarly for essays and assignments, Rytr for writing with Hindi-language support, QuillBot for paraphrasing research papers, and Perplexity for cited research answers — and every one of them works from a normal Indian college campus without a VPN or a dollar card. Most "best free AI tools for students" lists are written for US or UK audiences. They recommend tools that require a dollar card to activate the free plan, suggest options blocked in India, or list prices only in USD without any note on GST or exchange-rate impact. This guide is written specifically for students in India — every tool below works from Indian IP addresses without a VPN, every free plan requires only an email address, and INR pricing is included where relevant.</p>

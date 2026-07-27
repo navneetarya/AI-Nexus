@@ -39,9 +39,40 @@ const post: BlogPost = {
       a: 'The calculation is straightforward: if a ₹750/month Rytr subscription saves you 3 hours of writing time per month, and your hourly rate is ₹500 or above, the tool pays for itself. For Indian freelancers charging clients in INR, the ROI threshold is low. Start with free plans of Rytr and Grammarly — if they save you time on real work within 2 weeks, the paid plans are worth it. The tools most worth paying for are Rytr (writing), Canva Pro (design), and Grammarly Pro (editing) in that order.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>What Are the Best AI Tools in India in 2026?</h2>
 <p>The best AI tools in India in 2026 are Rytr for writing, Grammarly for editing on a permanently free plan, Canva AI for design, Perplexity for research with cited sources on its free tier, and Leonardo.ai for free AI image generation — and every one of these works without a dollar card, a VPN, or a hidden USD-only paywall. Every "best AI tools" roundup I've read lists prices in USD, assumes you're paying with a US card, and doesn't mention GST once. As someone running an AI tools site from Noida, I kept getting the same questions from readers: Does this work in India? What's the actual INR price? Do I need a VPN? Can it write in Hindi?</p>
+<!-- ai-nexus:early-comparison-table -->
+<div style="overflow-x:auto;margin:16px 0 24px;">
+<table style="width:100%;border-collapse:collapse;font-size:14px;">
+  <thead><tr style="background:rgba(13,148,136,.1);">
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;">Final shortlist</td>
+      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <p>This guide answers those questions specifically. Every tool below is accessible from India without a VPN, has been checked for INR pricing at checkout, and includes honest notes on Hindi/regional language support where relevant.</p>
 
 <h2>1. Rytr — Best AI Writing Tool for Indian Creators</h2>

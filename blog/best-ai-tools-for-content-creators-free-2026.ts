@@ -41,6 +41,17 @@ const post: BlogPost = {
       a: 'Ocoya saves the most time for creators managing multiple social media accounts — it replaces a caption writer, design tool, and scheduler in one dashboard. For writers and bloggers, Rytr cuts first-draft time by 60–70% on short-form content. For podcast creators and video editors, Podcastle\'s AI noise removal and auto-transcription eliminate the most time-consuming post-production steps.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:10px;padding:16px 20px;margin:0 0 28px;">
   <div style="font-size:11px;font-weight:700;color:#0D9488;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;">⚡ Quick Answer</div>

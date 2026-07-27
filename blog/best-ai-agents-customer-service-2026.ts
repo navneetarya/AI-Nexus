@@ -46,6 +46,19 @@ const post: BlogPost = {
       a: 'AI customer service costs in 2026 vary dramatically by business model. Tidio is the most accessible entry point: a free plan exists for up to 50 live chat conversations/month; the Tidio+ plan with AI Lyro (their AI agent) starts at $29/month and handles up to 50 AI-resolved conversations, then charges approximately $0.70–$1.00 per additional AI conversation. Intercom Fin charges $0.99 per resolved conversation with no minimum, making it genuinely pay-as-you-go for low-volume SMBs — a team resolving 200 conversations/month with AI pays $198/month, which is often cheaper than a part-time support agent. Freshdesk\'s Growth plan starts at $18/agent/month with basic Freddy AI included; full Freddy Copilot and Freddy Self Service add $29–$35/agent/month extra. Enterprise platforms (Zendesk AI suite, Salesforce Agentforce, Ada CX, Kustomer) have minimum annual contract values of $15,000–$100,000+ per year. For most SMBs: Tidio for under 200 AI conversations/month, Intercom Fin for growth-stage teams, Freshdesk Freddy for teams already in the Freshworks ecosystem.',
     },
   ],
+  proscons: {
+    pros: [
+      'Compares eight customer-service agents by autonomous resolution rate, escalation quality, and pricing model',
+      'Highlights stack-fit guidance for SMB, mid-market, and enterprise teams instead of one-size-fits-all recommendations',
+      'Includes India-relevant billing constraints, GST impact, and realistic cost-per-resolution framing',
+    ],
+    cons: [
+      'Enterprise pricing is often custom-quoted, so final contract values can differ from public estimates',
+      'Resolution-rate outcomes depend heavily on your knowledge-base quality and routing setup after deployment',
+      'Some platforms still require separate negotiations for local billing and compliance terms in India',
+    ],
+  },
+
   outboundCitations: [
     { url: 'https://www.intercom.com/fin', label: 'Intercom Fin — AI Customer Service Agent' },
     { url: 'https://www.zendesk.com/ai/', label: 'Zendesk AI — Enterprise Customer Service AI' },
@@ -269,6 +282,14 @@ const post: BlogPost = {
 <p><strong>If you are already on Freshdesk or Zendesk:</strong> Use the native AI layer. The data advantage of years of resolved tickets on your current platform outweighs the resolution rate edge Intercom might deliver, and the migration cost and data loss are real factors.</p>
 <p><strong>If you are an SMB or e-commerce team on Shopify under 1,000 conversations per month:</strong> Tidio. Start with the free plan, measure deflection rate in week one, and upgrade only if the volume justifies it. Lyro at $29/month resolving 30–40% of queries is measurable ROI at an accessible price point.</p>
 <p>The AI customer service category in 2026 is genuinely mature — all eight platforms reviewed here produce measurable autonomous resolution in production. The differentiation that matters now is knowledge management depth, escalation context quality, and pricing structure alignment to your volume — not whether the AI works.</p>
+
+<!-- ai-nexus:tool-cta-block -->
+<div style="margin:30px 0 12px;padding:16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 8px;font-size:14px;line-height:1.6;"><strong>Compare official pages before deciding:</strong></p>
+  <a href="https://www.intercom.com/fin" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit intercom</a>  <a href="https://www.zendesk.com/ai/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit zendesk</a>  <a href="https://www.freshworks.com/freshdesk/freddy-ai/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit freshworks</a>  <a href="https://www.tidio.com/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit tidio</a>  <a href="https://www.ada.cx/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ada</a>  <a href="https://www.gartner.com/en/customer-service-support/insights/ai-customer-service-trends" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit gartner</a>
+  <p style="margin:10px 0 0;font-size:11px;color:#6b7280;">Affiliate disclosure: some links may be affiliate links at no extra cost to you.</p>
+</div>
+
 `,
 };
 

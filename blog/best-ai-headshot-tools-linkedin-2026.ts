@@ -48,6 +48,17 @@ const post: BlogPost = {
       a: 'Yes — all the tools in this guide are available in India. However, HeadshotPro and Aragon AI charge in USD and require an international credit or debit card (UPI is not supported). At current exchange rates, HeadshotPro Basic is approximately ₹2,415. Fotor AI and Remini offer INR-accessible plans and support Indian payment methods for their premium features.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <nav aria-label="Table of contents" style="background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#0ea5e9;">Table of Contents</p>

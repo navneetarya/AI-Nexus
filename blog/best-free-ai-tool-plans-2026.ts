@@ -18,6 +18,17 @@ const post: BlogPost = {
     { q: 'What can you do with free AI tools?', a: 'With the right combination of free AI tools in 2026, you can write and grammar-check all your content (Grammarly free), generate images (Leonardo.ai free), research and fact-check (Perplexity free), create presentations (Gamma free), design marketing materials (Canva free), and build projects in a browser IDE (Replit free). A complete productive AI workflow at zero cost is genuinely achievable.' },
     { q: 'Are free AI tools good enough for professional use?', a: 'For individual professionals, several free AI tools are genuinely production-quality. Grammarly free covers most grammar needs. Perplexity free handles serious research. Leonardo.ai free generates professional-quality images. The free plans become limiting primarily at high volume or when team features and integrations are needed.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>

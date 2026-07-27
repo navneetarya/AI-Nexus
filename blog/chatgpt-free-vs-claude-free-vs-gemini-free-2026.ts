@@ -40,6 +40,17 @@ const post: BlogPost = {
       a: 'Upgrade when you\'re hitting daily message limits regularly (sign of real dependency), when output quality is costing you editing time that exceeds the monthly cost, or when you need features only available on paid tiers (Claude\'s Projects, ChatGPT\'s memory, Gemini\'s Workspace integration). For casual use under 10 prompts/day, free plans are sufficient indefinitely.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Which Free AI Plan Actually Works for Freelancers in 2026?</h2>
 <p>No single free plan wins outright for freelancers in 2026 — ChatGPT, Claude, and Gemini free tiers each win different tasks, and running all three together covers roughly 80% of a freelancer's AI needs without spending anything. Before diving into task-by-task results, here is where each free plan stands in mid-2026:</p>

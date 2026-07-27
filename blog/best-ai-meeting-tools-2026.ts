@@ -41,6 +41,17 @@ const post: BlogPost = {
       a: 'When evaluating AI meeting tools in 2026, prioritise five criteria: (1) Integration coverage — does it auto-join your specific meeting platform (Zoom, Google Meet, Teams, Webex)? (2) Transcription accuracy — especially for accents, technical terminology, and multiple speakers. (3) Action item extraction — does the AI reliably identify named tasks and owners, or just highlight keywords? (4) Search capability — can you find a decision from a meeting 3 months ago by searching a keyword? (5) Pricing model — per-seat fees add up fast for large teams; check whether the free plan covers your realistic monthly meeting volume before committing to a subscription.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <nav aria-label="Table of contents" style="background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#0ea5e9;">Table of Contents</p>
@@ -349,7 +360,7 @@ const post: BlogPost = {
   <li><strong>Best for revenue intelligence:</strong> Avoma — call scoring, deal health, coaching scorecards</li>
 </ol>
 
-<p>For more AI productivity tool recommendations, see: <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Freelancers 2026</a>, <a href="/blog/best-ai-tools-for-startups-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Startups 2026</a>, and <a href="/blog/taskade-vs-notion-vs-asana-2026/" style="color:#0ea5e9;font-weight:600;">Taskade vs Notion vs Asana 2026</a>. You can also review the full <a href="/tools/fireflies/" style="color:#0ea5e9;font-weight:600;">Fireflies.ai tool page</a> or explore all <a href="/best-ai-productivity-tools" style="color:#0ea5e9;font-weight:600;">AI Productivity Tools</a> reviewed on AI Nexus.</p>
+<p>For more AI productivity tool recommendations, see: <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Freelancers 2026</a>, <a href="/blog/best-ai-tools-for-startups-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Startups 2026</a>, and <a href="/blog/taskade-vs-notion-vs-asana-2026/" style="color:#0ea5e9;font-weight:600;">Taskade vs Notion vs Asana 2026</a>. You can also review the full <a href="/tools/fireflies/" style="color:#0ea5e9;font-weight:600;">Fireflies.ai tool page</a> or explore all <a href="/best-ai-productivity-tools/" style="color:#0ea5e9;font-weight:600;">AI Productivity Tools</a> reviewed on AI Nexus.</p>
   `.trim(),
 };
 

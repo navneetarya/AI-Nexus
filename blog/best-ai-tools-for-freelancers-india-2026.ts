@@ -37,6 +37,17 @@ const post: BlogPost = {
       a: 'Rytr\'s Saver plan (~₹750/month, or free at 10K chars) is the best value for content writers. Canva free covers most design needs at zero cost. For grammar and editing, Grammarly free handles most use cases. If you can stretch to ₹499/month, Canva Pro unlocks commercial downloads and brand kits.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>What Are the Best AI Tools for Freelancers in India in 2026?</h2>
 <p>The best AI tools for freelancers in India in 2026 are Grammarly as the non-negotiable baseline for every client message, Rytr for writing content faster without a dollar card, Canva AI for free design work, and Taskade for juggling multiple client projects — and all of them have INR-friendly or genuinely free tiers, which most global guides never mention. Search for AI tools for freelancers and you'll find lists built for US and European readers — tools priced in USD, with credit card requirements, and use cases centred on Western client workflows. Indian freelancers on Fiverr, Upwork, and domestic platforms like Internshala or Truelancer have a different reality: USD pricing that eats into margins, platforms that may not accept Indian cards, and client briefs that call for regional language awareness.</p>

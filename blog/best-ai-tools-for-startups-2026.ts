@@ -18,6 +18,17 @@ const post: BlogPost = {
     { q: 'Are AI tools worth it for early-stage startups?', a: 'Yes, especially for pre-revenue startups where team bandwidth is the primary constraint. AI tools are among the highest-ROI investments at the early stage — $50–100/month in AI subscriptions can save 20+ hours of work per week across content, design, and development tasks.' },
     { q: 'What AI tool is best for startup pitch decks?', a: 'Gamma is the best AI tool for startup pitch decks. It generates a complete presentation from a text description in under 2 minutes, with professional design and coherent structure. A usable pitch deck draft takes 20–30 minutes total with Gamma, versus 3–4 hours in PowerPoint from scratch.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>

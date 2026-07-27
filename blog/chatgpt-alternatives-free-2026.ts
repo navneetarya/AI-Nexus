@@ -38,6 +38,17 @@ const post: BlogPost = {
       a: 'Perplexity is the best pick for students because it cites every source, making it easy to verify claims and build bibliographies. Gemini is a strong second choice for brainstorming and essay outlining.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0d9488;border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;">
   <p style="font-weight:600;margin:0 0 8px;color:#0d9488;font-size:13px;text-transform:uppercase;letter-spacing:.04em;">Quick Verdict</p>

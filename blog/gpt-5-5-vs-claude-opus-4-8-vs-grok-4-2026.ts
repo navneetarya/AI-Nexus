@@ -24,6 +24,17 @@ const post: BlogPost = {
     { q: 'Which AI is best for coding in 2026?', a: 'For coding tasks specifically, Claude Opus 4.8 and GPT-5.5 are the top performers — both score above 70% on SWE-bench coding benchmarks. Claude Opus 4.8 shows a slight edge on complex multi-file refactoring and TypeScript projects. Grok 4 is competent but not the first choice for production coding.' },
     { q: 'Is Claude Opus 4.8 worth $20/month?', a: 'Yes — if you use AI for more than 30 minutes a day. Claude Opus 4.8 via Claude Pro gives access to the most capable reasoning and writing model available on a flat subscription. Compared to paying per-token on the API, the $20/month plan is exceptional value for heavy users doing research, writing, and analysis.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Which AI Is Best — GPT-5.5, Claude Opus 4.8, or Grok 4?</h2>
 <p>Which one is best depends on the job: GPT-5.5 is the most versatile all-rounder for mixed creative, coding, and research work, Claude Opus 4.8 is the strongest choice for long-document analysis and nuanced writing, and Grok 4 leads on real-time web research — for most individual users, Claude Opus 4.8 or GPT-5.5 gives the best value for $20/month. Three of the most capable AI models ever built are now available to anyone with a $20/month subscription. GPT-5.5 (OpenAI), Claude Opus 4.8 (Anthropic), and Grok 4 (xAI) each represent a different philosophy about what an AI assistant should be — and choosing wrong means leaving serious capability on the table.</p>

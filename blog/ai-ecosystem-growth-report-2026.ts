@@ -18,6 +18,17 @@ const post: BlogPost = {
     { q: 'Is AI tool adoption slowing down in 2026?', a: 'No — adoption continues to accelerate in 2026, but the growth pattern is shifting. Early 2024 growth was broad exploration; 2026 growth is selective consolidation around tools that solve specific problems well. Users are replacing multiple experimental subscriptions with fewer, more deeply integrated tools.' },
     { q: 'What percentage of professionals use AI tools?', a: 'Survey data from 2025-2026 consistently shows 60–80% of knowledge workers in developed markets using at least one AI tool regularly. Among developers and content creators, AI tool usage is above 70%. Adoption is highest in tech, marketing, and education, and growing fastest in legal, finance, and healthcare.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Research Note</strong>

@@ -18,6 +18,17 @@ const post: BlogPost = {
     { q: 'Which AI API is best for high-volume applications?', a: 'For high-volume applications where cost is a primary constraint, Gemini 1.5 Flash ($0.075/M input tokens), GPT-4o mini ($0.15/M), or open-source Llama 3 (self-hosted or $0.20–0.80/M via cloud) provide the best cost-per-quality tradeoff at scale.' },
     { q: 'Is Claude API more expensive than GPT-4?', a: 'Claude 3.5 Sonnet API costs $3/$15 per million input/output tokens. GPT-4o costs $5/$15 per million tokens. For input-heavy workloads, Claude is cheaper. Both are competitive for production use cases requiring high-quality reasoning.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Key Finding</strong>

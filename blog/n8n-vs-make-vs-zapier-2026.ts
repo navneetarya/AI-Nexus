@@ -51,6 +51,26 @@ const post: BlogPost = {
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>n8n</strong> wins on AI-native depth and cost at scale — the deepest MCP support, a native AI Agent node, and execution-based pricing that stays cheap as workflows get complex, but with a steeper technical learning curve. <strong>Make</strong> offers the best balance of power and price for moderate-complexity workflows — visual branching logic at roughly 60–80% lower cost than Zapier at comparable volume. <strong>Zapier</strong> remains the fastest path to a working automation for non-technical teams, with the largest app library, though its task-based pricing punishes multi-step workflows at scale. There is no universal winner — the right platform depends on technical comfort, workflow complexity, and volume.</p>
 </div>
+<!-- ai-nexus:early-comparison-table -->
+<div style="overflow-x:auto;margin:16px 0 24px;">
+<table style="width:100%;border-collapse:collapse;font-size:14px;">
+  <thead><tr style="background:rgba(13,148,136,.1);">
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;">Final shortlist</td>
+      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 <h2>Why the AI Automation Platform Decision Matters More Than Before in 2026</h2>
 <p>This comparison would have looked very different eighteen months ago. n8n, Make, and Zapier all started as the same basic product category — visual, trigger-based automation connecting SaaS apps — and for years the decision mostly came down to price and app coverage. That's no longer true. AI has split the category: these platforms are no longer just executing pre-defined rules, they're becoming the layer through which AI agents reach the rest of a company's software stack.</p>
@@ -161,6 +181,17 @@ const post: BlogPost = {
 <p>For platforms designed specifically around AI agent behaviour rather than rule-based automation, see <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a>, and for the broader architectural question of when automation is the right tool versus when you need genuine agent reasoning, see <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a></p>
   `.trim(),
   wordCount: 2416,
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   outboundCitations: [
     { url: 'https://n8n.io/', label: 'n8n — Workflow Automation Platform' },
     { url: 'https://www.make.com', label: 'Make — Visual Automation Platform' },

@@ -18,6 +18,17 @@ const post: BlogPost = {
     { q: 'What is the best free AI coding tool?', a: 'Replit has the most functional free plan for beginners — it provides a full browser-based IDE with AI assistance at no cost. For developers with a local setup, GitHub Copilot now offers a limited free tier.' },
     { q: 'Can AI tools replace software developers?', a: 'No. AI coding tools accelerate development by handling boilerplate, suggesting completions, and helping with debugging. They do not understand business requirements, architectural tradeoffs, or system design. They make skilled developers faster — they do not replace the judgment that makes good software.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>

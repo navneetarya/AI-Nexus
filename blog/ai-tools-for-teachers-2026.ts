@@ -40,6 +40,17 @@ const post: BlogPost = {
       a: 'Use AI as a starting point, not a final product. Always review and personalise AI-generated content. Be transparent with students about AI use. Never input student personal information into AI tools. Focus AI on admin tasks that take time away from actual teaching.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Which AI Tools Actually Save Teachers Time in 2026?</h2>
 <p>The AI tools that save teachers the most time in 2026 are Gamma for turning lesson notes into presentations in minutes, Grammarly for fast feedback on student writing, Notion AI for organising lesson plans, and Rytr for generating worksheet content — each one targets a specific admin task rather than trying to be a do-everything classroom assistant. When people talk about AI in education, they usually mean student-facing tools — chatbots that answer questions, adaptive learning platforms, automated tutoring. But verified teacher feedback across Reddit's r/Teachers and education forums points to a different need: most teachers don't need another student tool. They need tools that reduce the 10-15 hours per week they spend on admin: creating presentations, writing feedback, planning lessons, and generating worksheets.</p>

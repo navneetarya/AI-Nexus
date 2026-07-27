@@ -42,6 +42,17 @@ const post: BlogPost = {
       a: 'Frase ($15/month) is the best AI writing tool specifically for SEO blog posts because it combines content research (analysing the top 20 Google results for your keyword) with AI writing in one workflow. Writesonic ($16/month) is the strongest alternative for SEO long-form drafts without the research layer. Both produce more SEO-ready output than general-purpose tools like Rytr or ChatGPT.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>What Are the Best AI Writing Tools in 2026?</h2>
 <p>The best AI writing tools in 2026 are Grammarly for improving writing you've already done, Rytr for generating first drafts fast at $9/month, QuillBot for paraphrasing and summarising on a free plan, and Writesonic for long-form SEO blog posts — and the right pick depends on whether you need to generate, improve, rewrite, or optimise content. The AI writing tool market has six genuinely different product categories — but most roundups treat them as interchangeable and rank them by marketing budget. They are not interchangeable. Using a grammar checker when you need a content generator wastes money. Using a long-form SEO tool when you need quick social captions is overkill.</p>

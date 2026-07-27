@@ -34,6 +34,17 @@ const post: BlogPost = {
       a: 'Jasper is the most polished AI marketing tool, but at $49/month it\'s also the most expensive. It\'s worth it for marketing teams and agencies who need brand voice consistency, team collaboration, and campaign management. Solo marketers get better value from Frase or Writesonic.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>What Are the Best AI Marketing Tools in 2026?</h2>
 <p>The best AI marketing tools in 2026 split by job: Frase for SEO content strategy and briefs, Ocoya for social media scheduling and captions, Jasper for marketing teams that need brand-voice consistency at scale, and Writesonic if you want SEO and social covered on one budget-friendly plan. There's an important distinction most people miss: AI writing tools generate text. AI marketing tools generate text within a strategic framework — they understand keywords, search intent, content gaps, scheduling, and distribution. If you're using ChatGPT or Rytr for marketing, you're doing the strategic work manually. These tools automate it.</p>

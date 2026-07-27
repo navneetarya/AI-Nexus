@@ -25,6 +25,17 @@ const post: BlogPost = {
     { q: 'What is v0 by Vercel?', a: 'v0 is Vercel\'s AI UI generation tool that turns text descriptions and screenshots into React components. Unlike Lovable and Bolt, v0 is designed for developers who want polished UI components they can drop into existing projects — not a full app builder. It is the best option if you already have a Next.js codebase and want AI to generate styled components for it.' },
     { q: 'Can vibe coding tools build real production apps?', a: 'Yes — for apps with moderate complexity. Lovable and Bolt can produce working, deployed applications with real databases that handle real users, and user reports describe lead-capture and internal tools running reliably in production. For high-traffic applications, apps handling sensitive financial or medical data, or products requiring complex business logic, you still need a developer to review, test, and harden the generated code.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Which Vibe Coding Tool Should You Use — Lovable, Bolt, or v0?</h2>
 <p>Lovable, Bolt, and v0 each win at a different job in 2026: Lovable is the best choice for complete beginners building a full-stack MVP, Bolt is strongest for frontend-heavy projects where you want framework flexibility, and v0 by Vercel is built for generating UI components rather than entire applications. In February 2025, Andrej Karpathy — former Tesla AI director and OpenAI founding member — coined the phrase "vibe coding" to describe a new way of building software. Instead of writing code line by line, you describe what you want in plain English and let an AI handle the implementation. You keep refining by chatting. You never touch the source directly.</p>

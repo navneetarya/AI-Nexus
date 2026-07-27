@@ -60,6 +60,17 @@ const post: BlogPost = {
       a: 'Most global AI tools price in USD with no local INR adjustment — Indian businesses pay the international rate plus 18% GST. At a USD/INR rate of ~83, a $50/month AI tool costs approximately ₹4,150 + GST = ~₹4,900/month. Some tools (Notion AI, Canva Pro) have localised INR plans at 30–40% below USD pricing. Rupee-denominated payment typically requires a Razorpay account or UPI-linked international card. Indian freelancers and SMBs running lean stacks of 2–3 tools typically spend ₹2,500–₹8,000/month on AI tools.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   outboundCitations: [
     { url: 'https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai', label: 'McKinsey State of AI 2026' },
     { url: 'https://www.gartner.com/en/articles/ai-software-market-outlook', label: 'Gartner AI Software Spending Forecast 2026' },

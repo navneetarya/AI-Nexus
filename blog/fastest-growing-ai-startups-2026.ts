@@ -18,6 +18,17 @@ const post: BlogPost = {
     { q: 'Is Perplexity AI publicly traded?', a: 'As of May 2026, Perplexity AI is not publicly traded. It remains a private company backed by venture capital. An IPO has not been publicly confirmed, though the company has seen significant valuation growth with successive funding rounds.' },
     { q: 'What makes an AI startup successful in 2026?', a: 'Successful AI startups in 2026 typically share: a clear moat beyond access to foundation models (proprietary data, workflow integration, or domain expertise), a specific use case rather than general AI assistance, strong user retention (low churn after first use), and a monetisation path that aligns with how users get value. Distribution and go-to-market have become as important as model quality.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Research Note</strong>

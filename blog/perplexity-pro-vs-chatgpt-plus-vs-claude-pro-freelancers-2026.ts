@@ -38,6 +38,17 @@ const post: BlogPost = {
       a: 'ChatGPT Plus (GPT-4o) has the strongest multilingual performance across the three tools, with solid output in Spanish, French, Hindi, Arabic, Portuguese, and German. Claude Pro handles European languages well but is noticeably weaker on right-to-left scripts. Perplexity Pro\'s search citations work in most languages, but the synthesis quality varies. For Indian language content — Hindi, Tamil, Marathi, Bengali — GPT-4o consistently produces the most natural output among the three.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Which $20/Month AI Is Worth It for Freelancers — Perplexity Pro, ChatGPT Plus, or Claude Pro?</h2>
 <p>None of the three wins every task — Perplexity Pro is worth it for research with sources, ChatGPT Plus for writing first drafts and brainstorming, and Claude Pro for editing and document summarisation, so the $20/month that's “worth it” depends entirely on which of those five tasks eats most of your week.</p>

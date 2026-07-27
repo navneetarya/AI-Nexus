@@ -76,11 +76,31 @@ const post: BlogPost = {
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI video generators in 2026: <strong>Google Veo 3.1</strong> (best photorealism and native audio, from $19.99/month), <strong>Runway Gen-4.5</strong> (best camera control and editing workspace, from $12/month), <strong>Kling AI 3.0</strong> (best value and multilingual lip-sync, from roughly $7/month), <strong>Pika</strong> (best for fast stylized social clips, from $8/month), and <strong>Luma Dream Machine</strong> (best multi-model bundle, from $30/month).</p>
 </div>
+<!-- ai-nexus:early-comparison-table -->
+<div style="overflow-x:auto;margin:16px 0 24px;">
+<table style="width:100%;border-collapse:collapse;font-size:14px;">
+  <thead><tr style="background:rgba(13,148,136,.1);">
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;">Final shortlist</td>
+      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 <h2>Best AI Video Generators 2026: What's Actually New</h2>
 <p>OpenAI shut down the consumer Sora web and app on April 26, 2026, with the developer API scheduled to follow on September 24, 2026. That single decision reshuffled the entire category — and it is the reason "best AI video generators 2026" searches have spiked over the past two months. I'm Navneet Arya, and this guide ranks the five text-to-video and image-to-video tools that are genuinely worth paying for right now, based on verified June 2026 pricing, hands-on community reporting from Reddit's r/VideoEditing and r/ArtificialIntelligence, and the credit-math gotchas that pricing pages rarely make obvious.</p>
 <p>"AI video generator" covers a specific job: turning a text prompt or a still image into a short video clip — usually 5 to 15 seconds — using a model trained to predict motion, lighting, and physics frame by frame. If what you're picturing when you search for text to video AI is a prompt in, a video out, that is a different job from AI video editors like InVideo or Opus Clip, which repurpose footage you already have.</p>
-<p>None of the five tools below existed in AI Nexus's coverage before this post; if you're looking for editing or repurposing tools instead, see our <a href="/blog/best-invideo-alternatives-2026/">InVideo alternatives guide</a> or the full <a href="/best-ai-video-tools">AI video tools category page</a>.</p>
+<p>None of the five tools below existed in AI Nexus's coverage before this post; if you're looking for editing or repurposing tools instead, see our <a href="/blog/best-invideo-alternatives-2026/">InVideo alternatives guide</a> or the full <a href="/best-ai-video-tools/">AI video tools category page</a>.</p>
 
 <h2>#1 Google Veo 3.1 — Best for Photorealism and Native Audio</h2>
 <p>Google Veo 3.1 is the only model in this group that generates synchronized audio — dialogue, ambient sound, and sound effects — in the same generation pass as the video itself, at up to 48kHz. That single capability changes the workflow: every other text to video AI tool here produces a silent clip that still needs a separate voiceover or sound-design step. Veo 3.1 is accessible through the Gemini app and Google's Flow filmmaking interface.</p>

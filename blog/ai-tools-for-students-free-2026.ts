@@ -40,6 +40,17 @@ const post: BlogPost = {
       a: 'Replit is the best free AI tool for coding assignments — it is a browser-based code editor with a built-in AI assistant that explains errors, suggests fixes, and completes code snippets. No installation is required. The free plan supports Python, JavaScript, Java, C++, and 50+ other languages. For students who already use VS Code, GitHub Copilot offers a free student plan through the GitHub Student Developer Pack, which gives unlimited AI code completions.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>What Are the Best Free AI Tools for Students in 2026?</h2>
 <p>The best free AI tools for students in 2026 are Grammarly for essay editing, QuillBot for paraphrasing and summarising research, Perplexity for cited research answers, and Replit for coding assignments — and unlike most “free” lists, all four run on permanent free plans rather than trials that expire before a deadline. Most "AI tools for students" lists recommend tools with 7-day free trials that expire before your next assignment deadline. Every tool in this guide has a permanent free plan that covers real, ongoing student workloads. Each has been independently researched across the use cases that actually come up in university life: last-minute essay drafts, long research paper summaries, citation-heavy paraphrasing, coding bugs at midnight, and tight presentation deadlines.</p>

@@ -42,6 +42,17 @@ const post: BlogPost = {
       a: 'For a new YouTube creator in 2026, the most cost-effective AI stack is: VidIQ free plan (keyword research and topic ideation), ElevenLabs Creator plan at $5/month (AI narration for faceless content), Opus.pro free plan (60 min/month Shorts repurposing), and Canva free plan (thumbnails and graphic design). Total monthly cost: $5. Once the channel reaches 1,000 subscribers and monetisation, upgrade to Opus.pro Pro ($19/month) and Munch AI Starter ($49/month) for repurposing intelligence at scale. The stack that most accelerates early growth combines AI-researched topics (VidIQ), AI narration (ElevenLabs), and AI-repurposed Shorts (Opus.pro) — three levers that directly impact discoverability, watch time, and cross-platform reach without requiring a large budget.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <nav aria-label="Table of contents" style="background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#0ea5e9;">Table of Contents</p>
@@ -353,7 +364,7 @@ const post: BlogPost = {
   <li><strong>Best free YouTube SEO:</strong> VidIQ — keyword research, competitor gaps, AI topic ideation</li>
 </ol>
 
-<p>For more creator-focused AI tool recommendations, see: <a href="/blog/best-ai-tools-for-content-creators-free-2026/" style="color:#0ea5e9;font-weight:600;">Best Free AI Tools for Content Creators 2026</a>, <a href="/blog/best-ai-podcast-tools-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Podcast Tools 2026</a>, and our existing <a href="/blog/best-ai-tools-for-youtubers-2026/" style="color:#0ea5e9;font-weight:600;">AI tools for YouTubers guide</a> for a broader tool overview. Browse all independently researched video AI tools on the <a href="/best-ai-video-tools" style="color:#0ea5e9;font-weight:600;">AI Video Tools category page</a>, or compare voice tools head-to-head: <a href="/compare/murf-ai-vs-elevenlabs/" style="color:#0ea5e9;font-weight:600;">Murf AI vs ElevenLabs →</a></p>
+<p>For more creator-focused AI tool recommendations, see: <a href="/blog/best-ai-tools-for-content-creators-free-2026/" style="color:#0ea5e9;font-weight:600;">Best Free AI Tools for Content Creators 2026</a>, <a href="/blog/best-ai-podcast-tools-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Podcast Tools 2026</a>, and our existing <a href="/blog/best-ai-tools-for-youtubers-2026/" style="color:#0ea5e9;font-weight:600;">AI tools for YouTubers guide</a> for a broader tool overview. Browse all independently researched video AI tools on the <a href="/best-ai-video-tools/" style="color:#0ea5e9;font-weight:600;">AI Video Tools category page</a>, or compare voice tools head-to-head: <a href="/compare/murf-ai-vs-elevenlabs/" style="color:#0ea5e9;font-weight:600;">Murf AI vs ElevenLabs →</a></p>
   `.trim(),
 };
 

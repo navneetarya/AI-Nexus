@@ -36,6 +36,17 @@ const post: BlogPost = {
       a: 'Rytr generates original content on each run — it is not copying and pasting from existing sources. However, AI-generated content can produce generic phrasing that appears in other AI-generated content. Rytr includes a built-in plagiarism checker on the Saver and Unlimited plans. On the free plan, run your output through a free tool like Copyscape or Grammarly\'s plagiarism check before publishing.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>How Do You Use Rytr to Write a Blog Post Step by Step?</h2>
 <p>To use Rytr for blog posts, generate an outline first, write each section with the Blog Section Writing template, draft the introduction last, and let Rytr generate a closing and CTA — done in that order, this workflow cuts first-draft time by roughly 60%. Before getting into the tutorial, it's worth being clear about what Rytr is and isn't. Rytr is a use-case-based AI writing tool — you pick a template (blog intro, email, product description, etc.), give it a brief, and it generates a first draft. It is not a long-form essay writer, and it doesn't do research.</p>

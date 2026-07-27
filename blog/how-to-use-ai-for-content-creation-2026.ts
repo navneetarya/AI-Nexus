@@ -41,6 +41,17 @@ const post: BlogPost = {
       a: 'For short-form social media content, the most-used AI tools among creators in 2026 are: Opus Clip for repurposing long videos into short clips automatically, Ocoya for writing social captions and scheduling posts, Leonardo.ai for generating original visuals, and Rytr for writing tweet threads and LinkedIn posts using dedicated templates. For Reels and TikTok specifically, InVideo AI can generate a complete short-form video from a text prompt in under 5 minutes.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>How Do You Use AI for Content Creation in 2026?</h2>
 <p>Using AI for content creation in 2026 means running one idea through four AI-assisted stages — writing, images, video, and audio — and the right workflow can cut the time between an idea and a finished piece of content by 60–80%. Two years ago, "AI content creation" meant pasting a rough ChatGPT output into a blog post and hoping no one noticed. In 2026, the tooling has matured to the point where a solo creator can produce a written article, a custom feature image, a repurposed video version, and a podcast episode — all from the same source idea — in a single working afternoon. This site has run exactly this workflow for the past eight months, and the breakdown below reflects the recommended system.</p>

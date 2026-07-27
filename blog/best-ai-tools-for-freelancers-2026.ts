@@ -38,6 +38,17 @@ const post: BlogPost = {
       a: 'Based on typical freelance workflows: Rytr saves 3–5 hours per week on first drafts and structured copy. Canva AI saves 1–2 hours per week on client graphics. Taskade saves 30–60 minutes per week on project planning. That is roughly 5–8 hours per week — time you can redirect to higher-rate client work or taking on an additional project.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>What Are the Best AI Tools for Freelancers in 2026?</h2>
 <p>The best AI tools for freelancers in 2026 are Grammarly for polishing every client email and deliverable, Rytr for writing proposals and content roughly three times faster, Canva AI for design work without hiring a designer, and PhotoRoom for turning a phone photo into a professional product shot. Most freelancers I talk to have tried one or two AI tools, found them underwhelming for their specific work, and gone back to doing everything manually. The problem is usually tool selection — they tried a general-purpose chatbot when they needed a specialist tool.</p>

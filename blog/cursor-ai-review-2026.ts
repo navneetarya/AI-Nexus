@@ -51,9 +51,40 @@ const post: BlogPost = {
       a: 'Yes — Cursor is suitable for beginners because it is built on VS Code, the most widely taught editor globally. If you have done any VS Code tutorials, you can start using Cursor immediately. For beginners, the most useful features are Tab completion (it finishes your code as you type) and the Chat panel (you can ask questions about your code in plain English). Composer and Agent mode are more advanced and become valuable once you understand basic project structure.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <nav aria-label="Table of contents" style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#6366f1;">Table of Contents</p>
+<!-- ai-nexus:early-comparison-table -->
+<div style="overflow-x:auto;margin:16px 0 24px;">
+<table style="width:100%;border-collapse:collapse;font-size:14px;">
+  <thead><tr style="background:rgba(13,148,136,.1);">
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;">Final shortlist</td>
+      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
   <ol style="margin:0;padding-left:20px;line-height:2.2;font-size:14px;">
     <li><a href="#quick-summary" style="color:#6366f1;text-decoration:none;">Is Cursor the Best AI Code Editor in 2026?</a></li>
     <li><a href="#key-takeaways" style="color:#6366f1;text-decoration:none;">Key Takeaways</a></li>

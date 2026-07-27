@@ -42,6 +42,17 @@ const post: BlogPost = {
       a: 'Yes — Gemini is natively integrated into Google Docs, Gmail, Sheets, and Slides via the Google One AI Premium subscription. In Docs, you can prompt Gemini to draft sections, rewrite paragraphs, summarise content, and adjust tone without leaving the document. This is one of Gemini\'s strongest competitive advantages over ChatGPT, which requires a separate tab or plugin to use alongside Google Docs.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Is Gemini Better Than ChatGPT for Writing in 2026?</h2>
 <p>For most writing tasks, ChatGPT (GPT-5.5) still produces more consistently polished prose than Gemini 3.1 Pro — but Gemini pulls ahead specifically for anyone who writes inside Google Docs and Gmail or needs research baked directly into the output. Google Trends shows a 550% spike in searches for "Gemini AI review" over the past 30 days. Gemini 3.1 Pro — Google's most capable model to date — launched recently with a 2-million-token context window, deep Google Workspace integration, and significantly sharper instruction-following. Writers who use Google Docs daily are asking the obvious question: <strong>do I still need ChatGPT?</strong></p>

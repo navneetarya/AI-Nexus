@@ -43,9 +43,40 @@ const post: BlogPost = {
       a: 'Yes. ProWritingAid ($10/month) offers deeper style analysis with 20+ writing reports and is particularly strong for fiction writers. QuillBot ($9.95/month) is better for paraphrasing. Rytr ($9/month) is better for generating new content. If your goal is specifically tone detection and rewriting for professional communication, Grammarly Premium has no direct equivalent at a lower price — but for grammar correction alone, the free plan already does that job.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Quick Verdict: Is Grammarly Premium Worth It?</h2>
 <p><strong>Yes — for daily professional writers.</strong> If you send important emails, write client proposals, or produce content that represents you or your brand, Grammarly Premium's tone detection and full-sentence rewrite features justify $12/month. The upgrade pays for itself the first time it stops you sending a message that reads as dismissive when you meant to sound direct.</p>
+<!-- ai-nexus:early-comparison-table -->
+<div style="overflow-x:auto;margin:16px 0 24px;">
+<table style="width:100%;border-collapse:collapse;font-size:14px;">
+  <thead><tr style="background:rgba(13,148,136,.1);">
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;">Final shortlist</td>
+      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <p><strong>No — for casual or student writers.</strong> If you primarily write occasional emails, assignments, or personal content, the free plan catches the errors that matter most. The Premium features are genuinely useful — they're just not useful enough to justify $144/year for infrequent writing.</p>
 <p>The honest answer depends on one question: are you hitting the limits of the free plan? If the answer is yes, upgrade. If you haven't noticed what the free plan is missing, you don't need Premium yet.</p>
 

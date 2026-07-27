@@ -47,6 +47,26 @@ const post: BlogPost = {
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Relevance AI</strong> (from $19/month, free tier available) wins for building a coordinated team of sales and ops agents. <strong>Lindy</strong> (from $49.99/month — no free tier, only a 7-day trial) is the fastest path to a working AI assistant for email and scheduling. <strong>Gumloop</strong> (free tier, $37/month Pro) wins for data-heavy, node-based AI pipelines. All three differ sharply on architecture, not just price.</p>
 </div>
+<!-- ai-nexus:early-comparison-table -->
+<div style="overflow-x:auto;margin:16px 0 24px;">
+<table style="width:100%;border-collapse:collapse;font-size:14px;">
+  <thead><tr style="background:rgba(13,148,136,.1);">
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;">Final shortlist</td>
+      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 <blockquote style="border-left:3px solid #0D9488;padding-left:16px;margin:24px 0;font-style:italic;color:#444;">Lindy quietly dropped its free tier at some point this year — its own pricing page now offers only a 7-day trial, though plenty of "best AI agent" roundups still list a free plan that no longer exists. If you want to test-drive an AI agent builder without paying, start with Relevance AI or Gumloop instead.<br/><span style="font-style:normal;font-size:13px;color:#888;">— Navneet Arya, AI Nexus</span></blockquote>
 

@@ -197,7 +197,15 @@ const post: BlogPost = {
 
 <h2>Final Verdict: Claude Code Alternatives in July 2026</h2>
 <p>Claude Code has not gotten worse — Opus 4.8 remains a top performer on real-issue-resolution benchmarks, and the tool's codebase reasoning is still widely cited as best-in-class. What has changed is that it is no longer the only serious option in the terminal, and two of its strongest challengers, OpenAI Codex CLI and OpenCode, are free. For most developers evaluating a Claude Code alternative in 2026, the honest starting point is Codex CLI if you want the least setup, or OpenCode if you want the most control — with Claude Code still worth its $20/month for anyone whose daily work leans on its specific reasoning strength.</p>
-  `.trim(),
+
+<!-- ai-nexus:tool-cta-block -->
+<div style="margin:30px 0 12px;padding:16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 8px;font-size:14px;line-height:1.6;"><strong>Compare official pages before deciding:</strong></p>
+  <a href="https://developers.openai.com/codex/cli" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit developers</a>  <a href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit platform</a>  <a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit developers</a>  <a href="https://aider.chat/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Aider — Official Site & Docs</a>  <a href="https://opencode.ai/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit OpenCode — Official Site</a>  <a href="https://aws.amazon.com/blogs/devops/amazon-q-developer-end-of-support-announcement/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit aws</a>
+  <p style="margin:10px 0 0;font-size:11px;color:#6b7280;">Affiliate disclosure: some links may be affiliate links at no extra cost to you.</p>
+</div>
+
+`.trim(),
   wordCount: 2390,
   proscons: {
     pros: [

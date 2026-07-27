@@ -36,6 +36,17 @@ const post: BlogPost = {
       a: 'Leonardo.ai is significantly better for game developers. It has dedicated models trained for game assets, RPG artwork, and concept art. The custom model training lets you maintain visual consistency across a character set — something Midjourney cannot do without external fine-tuning tools. Leonardo\'s free plan (150 tokens/day) is also generous enough to support active game development work.',
     },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <h2>Leonardo.ai vs Midjourney — Which Is Worth It in 2026?</h2>
 <p>Leonardo.ai is worth it for most creators in 2026 — 150 free credits a day with no credit card, plus creative control and consistent style across a project — while Midjourney is worth its $10/month minimum only if you need the highest possible aesthetic quality for one-off standout images. Leonardo.ai and Midjourney are both AI image generators — but they're optimised for different types of creative work. Treating them as direct substitutes leads to choosing the wrong tool and being disappointed by the result.</p>

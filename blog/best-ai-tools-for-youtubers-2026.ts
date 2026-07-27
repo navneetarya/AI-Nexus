@@ -18,6 +18,17 @@ const post: BlogPost = {
     { q: 'What AI tool is best for YouTube Shorts?', a: 'Opus Clip is the best AI tool for YouTube Shorts. It analyses your long-form videos, identifies the most engaging moments, and automatically clips them into 9:16 vertical format with captions. The AI also rewrites titles for short-form engagement and scores clips by predicted virality.' },
     { q: 'Is AI voiceover good enough for YouTube?', a: 'Yes, for most content types in 2026. Murf AI and ElevenLabs both produce voiceovers that sound natural enough for educational, tutorial, and faceless content channels. For channels where personality and authentic delivery are central to the brand, human voiceover is still preferable. AI voiceover works best for explainers, listicles, and informational content.' },
   ],
+  proscons: {
+    pros: [
+      'Covers key options for this use case in one place',
+      'Includes current pricing, feature scope, and fit guidance',
+    ],
+    cons: [
+      'Pricing and feature details can change quickly; verify on official pages',
+      'The best choice depends on your exact workflow, team size, and budget',
+    ],
+  },
+
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>

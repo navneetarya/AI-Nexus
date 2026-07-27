@@ -55,6 +55,19 @@ const post: BlogPost = {
       a: 'Skip dedicated AI sales CRM tools, enterprise automation platforms (n8n self-hosted, Zapier\'s higher tiers), and AI agent builders (Lindy.ai, Relevance AI) until you have a repeatable process worth automating — these tools solve a scaling problem most solopreneurs do not have yet in month one. Also skip paying for AI headshot tools, AI logo makers, and premium design suites before you have a working offer and at least a few paying clients; Canva AI\'s free tier covers basic brand assets adequately until revenue justifies the upgrade. The general rule: pay for a tool only after you have hit its free-tier limit doing real work, not in anticipation of needing it.',
     },
   ],
+  proscons: {
+    pros: [
+      'Maps a full one-person business stack with realistic free-tier and low-cost upgrade paths',
+      'Balances writing, research, support, design, and automation tools around practical weekly workload constraints',
+      'Provides actionable India pricing context for USD-only subscriptions versus locally accessible alternatives',
+    ],
+    cons: [
+      'Running many tools together can increase context switching unless processes are standardized early',
+      'Free tiers are useful for validation but often too limited once client volume grows consistently',
+      'Cross-tool automation reliability depends on integration setup quality and ongoing maintenance',
+    ],
+  },
+
   outboundCitations: [
     { url: 'https://www.taskade.com', label: 'Taskade — AI Task Management and Agents' },
     { url: 'https://www.notion.so', label: 'Notion AI — AI-Native Workspace' },
