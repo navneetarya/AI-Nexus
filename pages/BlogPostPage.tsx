@@ -1,5 +1,5 @@
 // pages/BlogPostPage.tsx
-import React, { useEffect, useMemo, useState, lazy, Suspense } from 'react';
+import React, { useEffect, useMemo, lazy, Suspense } from 'react';
 // Shield icon removed — T1.7 author strip now uses plain "About the reviewer →" anchor
 import { SharedNav } from './SharedNav';
 import type { BlogPost } from '../blog/types';
@@ -206,57 +206,6 @@ const C = {
   brdSm:  'var(--brd-sm)'
 };
 
-function ReadersAlsoAsk({ faqs }: { faqs: { q: string; a: string }[] }) {
-  const [open, setOpen] = useState<number | null>(null);
-  return (
-    <section aria-label="Readers also ask" style={{ margin: '40px 0' }}>
-      <h2 style={{
-        fontFamily: "'Inter', sans-serif",
-        fontSize: 20, fontWeight: 800,
-        color: C.txt, marginBottom: 16,
-      }}>
-        Readers Also Ask
-      </h2>
-      <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 8 }}>
-        {faqs.slice(0, 5).map(({ q, a }, i) => (
-          <div key={i}
-            style={{
-              background: C.surf,
-              border: `1px solid ${C.brd}`,
-              borderRadius: 10,
-              overflow: 'hidden',
-            }}
-          >
-            <button
-              onClick={() => setOpen(open === i ? null : i)}
-              style={{
-                width: '100%', textAlign: 'left' as const,
-                padding: '14px 18px',
-                background: 'none', border: 'none', cursor: 'pointer',
-                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                fontSize: 14, fontWeight: 600, color: C.txt,
-                fontFamily: 'inherit',
-              }}
-            >
-              {q}
-              <span style={{
-                transform: open === i ? 'rotate(180deg)' : 'rotate(0)',
-                transition: 'transform .2s',
-                fontSize: 12, color: C.mut2, flexShrink: 0, marginLeft: 12,
-              }}>▼</span>
-            </button>
-            {open === i && (
-              <div style={{ padding: '0 18px 14px', fontSize: 14, color: C.mut, lineHeight: 1.65 }}>
-                {a}
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPageProps) {
   // Extract h2 headings from raw content for the Table of Contents
   const tocItems = useMemo(() => {
@@ -278,6 +227,19 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
       return `<h2${attrs} id="${id}">${inner}</h2>`;
     });
   }, [post.slug]); // eslint-disable-line react-hooks/exhaustive-deps
+  // Bounce-audit fix: Pros & Cons should sit directly after the comparison table —
+  // the point where a reader actually forms a decision — instead of always at the
+  // bottom of the article. Split the rendered content right after the first
+  // </table> (plus its wrapping </div>, if the table is wrapped for scroll) so we
+  // can inject the Pros & Cons block there. Posts with no table simply render as
+  // one block, same as before.
+  const [contentBeforeTable, contentAfterTable] = useMemo(() => {
+    const match = /<\/table>\s*(<\/div>)?/i.exec(linkedContent);
+    if (!match) return [linkedContent, ''];
+    const splitIndex = match.index + match[0].length;
+    return [linkedContent.slice(0, splitIndex), linkedContent.slice(splitIndex)];
+  }, [linkedContent]);
+
   // Inject Article + FAQPage JSON-LD schema into <head>
   useEffect(() => {
     const canonical = `${SITE_CONFIG.siteUrl}/blog/${post.slug}/`;
@@ -449,47 +411,30 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           {post.title}
         </h1>
 
-        {/* T1.7: Author byline strip — upgraded with job title + "About the reviewer" link.
-            Audit spec: every page must show author credentials, not just the About page. */}
+        {/* Bounce-audit fix: byline + "fact-checked" bar collapsed into a single
+            compact trust line directly under the H1, instead of three separate
+            trust blocks in a row before the reader has been answered anything.
+            The full author bio card (avatar, title, About link) now lives at the
+            very bottom of the article — see "Author bio" near the end of this file. */}
         <div style={{
-          display: 'flex', alignItems: 'center', gap: 12,
-          padding: '14px 18px',
-          background: C.surf,
-          border: `1px solid ${C.brd}`,
-          borderRadius: 12,
-          marginBottom: 40,
+          display: 'flex', alignItems: 'center', flexWrap: 'wrap' as const,
+          columnGap: 8, rowGap: 4,
+          fontSize: 13, color: C.mut2,
+          marginBottom: 28,
         }}>
-          <img
-            src="/author-avatar.png"
-            alt={`${post.author} — AI tools reviewer and founder of AI Nexus`}
-            width={40} height={40}
-            style={{ borderRadius: '50%', flexShrink: 0 }}
-          />
-          <div style={{ flex: 1 }}>
-            <div style={{ fontSize: 14, fontWeight: 700, color: C.txt }}>{post.author}</div>
-            <div style={{ fontSize: 12, color: C.mut2 }}>
-              {SITE_CONFIG.authorTitle} · Published {new Date(post.datePublished).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
-            </div>
-            {/* T9 (EEAT-Medium): BOLD credibility line — surfaces the primary
-                credibility signal to readers and quality raters, not just JSON-LD. */}
-            <div style={{ fontSize: 12, color: C.mut2, marginTop: 2 }}>
-              {SITE_CONFIG.authorTitleSecondary}
-            </div>
-          </div>
-          <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
-            <a
-              href="/about/"
-              style={{
-                fontSize: 12, color: C.a1, textDecoration: 'none',
-                padding: '5px 12px', borderRadius: 8,
-                background: C.a1card, border: `1px solid ${C.a1brd}`,
-                fontWeight: 600,
-                display: 'inline-flex', alignItems: 'center', gap: 4,
-              }}
-            >
-              About the reviewer →
-            </a>
-          </div>
+          <span style={{ color: C.txt, fontWeight: 700 }}>{post.author}</span>
+          <span aria-hidden="true">·</span>
+          <span>
+            Verified {new Date(post.dateModified).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}
+          </span>
+          <span aria-hidden="true">·</span>
+          <span>G2, Trustpilot &amp; Reddit analysis</span>
+          <a
+            href="/about/"
+            style={{ color: C.a1, textDecoration: 'none', fontWeight: 600 }}
+          >
+            About the reviewer →
+          </a>
         </div>
 
         {/* FIX 9 (AEO-High): Quick Answer TLDR box
@@ -586,56 +531,20 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           </nav>
         )}
 
-        {/* T4 (EEAT-High): "About This Review" credibility box ────────────────
-            The #1 missing visual EEAT signal flagged by the audit. Google quality
-            raters and AI engines look for explicit review provenance above the fold.
-            Wires to post.author + post.dateModified — zero new data required.
-            Displayed between the TOC and the article body so it is always visible
-            before the reader reaches any substantive claim. */}
-        <div style={{
-          display: 'flex',
-          alignItems: 'flex-start',
-          gap: 12,
-          padding: '12px 18px',
-          background: C.a1card,
-          border: `1px solid ${C.a1brd}`,
-          borderLeft: `3px solid ${C.a1}`,
-          borderRadius: 10,
-          marginBottom: 26,
-        }}>
-          <span style={{ fontSize: 16, lineHeight: 1, marginTop: 3, flexShrink: 0 }} aria-hidden="true">🛡️</span>
-          <div>
-            <div style={{
-              fontSize: 11, fontWeight: 700, color: C.a1,
-              letterSpacing: '0.07em', textTransform: 'uppercase' as const,
-              marginBottom: 4,
-            }}>
-              About This Review
-            </div>
-            <div style={{ fontSize: 13, color: C.mut, lineHeight: 1.65 }}>
-              Reviewed by{' '}
-              <strong style={{ color: C.txt, fontWeight: 600 }}>{post.author}</strong>
-              {' · '}Last verified:{' '}
-              <strong style={{ color: C.txt, fontWeight: 600 }}>
-                {new Date(post.dateModified).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}
-              </strong>
-              {' · '}Based on G2, Trustpilot &amp; Reddit analysis
-            </div>
-          </div>
-        </div>
-
-        {/* Article content */}
+        {/* Article content — part 1: everything up to (and including) the first
+            comparison table, if the post has one. */}
         <div
           style={{ color: C.txt, lineHeight: 1.75, fontSize: 16 }}
           className="blog-content"
-          dangerouslySetInnerHTML={{ __html: linkedContent }}
+          dangerouslySetInnerHTML={{ __html: contentBeforeTable }}
         />
 
         {/* T5 (EEAT-High): Pros/Cons table ─────────────────────────────────────
             Renders only when post.proscons is populated. Two-column green/red card
             layout — boosts scannability and qualifies the post for rich result
-            eligibility. Placed after the article body so it acts as a visual
-            summary before the reader hits the newsletter CTA.
+            eligibility. Bounce-audit fix: now placed directly after the comparison
+            table (the highest-intent moment on the page) instead of always at the
+            bottom of the article, where readers who decided early never see it.
             Populate `proscons` in individual blog post .ts files separately. */}
         {post.proscons && (post.proscons.pros.length > 0 || post.proscons.cons.length > 0) && (
           <section style={{ marginTop: 44 }} aria-label="Pros and cons">
@@ -708,6 +617,16 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           </section>
         )}
 
+        {/* Article content — part 2: everything after the comparison table.
+            Empty when the post has no table, so this is a no-op for those posts. */}
+        {contentAfterTable && (
+          <div
+            style={{ color: C.txt, lineHeight: 1.75, fontSize: 16 }}
+            className="blog-content"
+            dangerouslySetInnerHTML={{ __html: contentAfterTable }}
+          />
+        )}
+
         {/* T7 (EEAT-Medium): Sources section ──────────────────────────────────
             Renders only when post.outboundCitations is populated. Dofollow links
             to G2, Trustpilot, and official pricing pages address the audit finding
@@ -764,12 +683,10 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           </Suspense>
         </div>
 
-        {/* M21: Readers Also Ask — PAA-style expandable section */}
-        {post.faqs.length > 0 && (
-          <ReadersAlsoAsk faqs={post.faqs} />
-        )}
-
-        {/* FAQ Section */}
+        {/* FAQ Section — bounce-audit fix: this used to be immediately preceded by
+            a "Readers Also Ask" accordion rendering the exact same post.faqs array,
+            which read as a duplicated/glitching section. Kept just this one,
+            since it's the block wired to the FAQPage schema in prerender.mjs. */}
         {post.faqs.length > 0 && (
           <section style={{ marginTop: 56 }}>
             <h2 style={{
@@ -873,6 +790,45 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             </section>
           );
         })()}
+
+        {/* Author bio — the full credential card (avatar, title, BOLD line, About
+            link) that used to gate the top of every post now lives here instead,
+            per the bounce audit: trust should follow a convinced reader, not
+            block one who hasn't been answered yet. */}
+        <div style={{
+          display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' as const,
+          padding: '18px 20px',
+          background: C.surf,
+          border: `1px solid ${C.brd}`,
+          borderRadius: 12,
+          marginTop: 52,
+        }}>
+          <img
+            src="/author-avatar.png"
+            alt={`${post.author} — AI tools reviewer and founder of AI Nexus`}
+            width={48} height={48}
+            style={{ borderRadius: '50%', flexShrink: 0 }}
+          />
+          <div style={{ flex: 1, minWidth: 180 }}>
+            <div style={{ fontSize: 14, fontWeight: 700, color: C.txt }}>{post.author}</div>
+            <div style={{ fontSize: 12, color: C.mut2 }}>{SITE_CONFIG.authorTitle}</div>
+            <div style={{ fontSize: 12, color: C.mut2, marginTop: 2 }}>
+              {SITE_CONFIG.authorTitleSecondary}
+            </div>
+          </div>
+          <a
+            href="/about/"
+            style={{
+              fontSize: 12, color: C.a1, textDecoration: 'none',
+              padding: '5px 12px', borderRadius: 8,
+              background: C.a1card, border: `1px solid ${C.a1brd}`,
+              fontWeight: 600, flexShrink: 0,
+              display: 'inline-flex', alignItems: 'center', gap: 4,
+            }}
+          >
+            About the reviewer →
+          </a>
+        </div>
 
         {/* Back + explore CTA */}
         <div style={{
