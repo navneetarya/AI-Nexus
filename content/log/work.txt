@@ -2,3 +2,4 @@
 [2026-07-23] | TOOL ADDED | slug: emergent | category: Coding | rating: 3.4/5 | gates: 6/6 (2 iterations) | affiliate: pending approval (partners.emergent.sh)
 [2026-07-25] | BUGFIX | blog/index.ts: post68 was imported but missing from BLOG_POSTS array — re-added | public/llms.txt: post70 (chatgpt-atlas-vs-perplexity-comet-vs-dia-2026) was missing from Blog Posts section — added, header date bumped
 [2026-07-25] | PUBLISHED | slug: best-ai-voice-agent-small-business-2026 | kw: best ai voice agent for small business | score: 8.4/10 | gates: 8/8 | wc: 2519 | scoop: Synthflow verified enterprise-only pricing pivot ($30k/yr), not yet reflected in third-party comparison content | outstanding: OG webp image not generated (needs local run of generate-blog-og-images.mjs)
+[2026-07-28] | TOOL ADDED | slug: nano-banana-pro | name: Nano Banana Pro (Gemini 3 Pro Image) | category: Image | gates: 6/6 | tool count: 43 -> 44

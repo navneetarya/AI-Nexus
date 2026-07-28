@@ -833,6 +833,24 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
     researchSummary: "This section documents pricing and sentiment verified across emergent.sh's official pricing page, Trustpilot's public review page for emergent.sh (aggregator-reported rating due to a blocked direct fetch — flagged as an estimate, not an exact live figure), Product Hunt's listing, and Reddit threads in r/vibecoding and r/nocode, cross-checked as of July 2026.",
     rating: 3.4, lastTested: "July 2026", lastTestedISO: "2026-07-23", datePublished: "2026-07-23", timeUsed: "Researched Jul 2026",
   },
+  'nano-banana-pro': {
+    whatIs: "Nano Banana Pro is Google's flagship AI image generation and editing model (Gemini 3 Pro Image), reachable via the Gemini app, Google AI Studio, and the Gemini API. It leads the category on in-image text accuracy and native 4K output, and can ground images in real-time Search data for accurate infographics.",
+    whoIsItFor: "Marketers and content teams who need legible in-image text (packaging, signage, infographics), designers doing rapid iterative edits without re-rolling from scratch, and anyone who wants a genuinely free tier to test before paying for a subscription.",
+    whoShouldSkip: "Artists chasing a distinctive default aesthetic — Midjourney's stylised, cinematic output still has more visual \"wow factor\" out of the box, since Nano Banana Pro is deliberately literal rather than embellishing a simple prompt. Also skip if you need a flat-rate API budget; per-image metering ($0.134–$0.24) can outcost flat-tier competitors at real production volume.",
+    myTake: "The headline claim — 94–96% text rendering accuracy versus roughly 71–78% for Midjourney and DALL-E 3 — holds up across independent benchmark write-ups, and it's a genuinely useful differentiator for anyone making packaging, signage, or infographics where legible text actually matters. The conversational, edit-don't-reroll workflow is also a real practical advantage: you fix what's wrong instead of regenerating from scratch.\n\nWhere it gets confusing is pricing. There's no single \"Nano Banana Pro subscription\" — you're buying into Google AI Plus, Pro, or Ultra, each with different daily quotas and different watermark rules, and reviewers consistently flag this bundling as harder to shop for than a normal SaaS price page. If clean, predictable single-tier pricing matters more to you than best-in-class text rendering, that's worth weighing before you commit.",
+    useCases: [
+      "Packaging, signage, or product mockups where legible in-image text matters",
+      "Marketing infographics that need real, Search-grounded facts and figures",
+      "Iterative product photography edits without regenerating from scratch",
+      "Multi-subject scenes needing consistent characters across a sequence",
+      "Rapid prototyping of visual concepts before committing design time",
+    ],
+    pricingSection: "**Nano Banana Pro pricing (verified July 2026):**\n- Free: ~2–3 images/day, visible watermark, no card required.\n- Google AI Plus ($7.99/month): higher daily quota, watermark still applied on some outputs.\n- Google AI Pro ($19.99/month): ~100 images/day at native 4K, no watermark — the practical entry point for regular use.\n- Google AI Ultra ($249.99/month): ~1,000 images/day at 4K plus Gemini Ultra model access and 30TB storage — built for heavy production use, not casual creators.\n- API (Gemini 3 Pro Image Preview): $0.134/image at 1K–2K resolution, $0.24/image at 4K, with a 50% Batch API discount.\n\nMost individual creators land on Google AI Pro; developers building at volume should compare the metered API cost against flat-tier competitors before committing.",
+    researchSummary: "This entry documents pricing verified against Google's official Gemini and AI Studio pricing pages, cross-checked across multiple independent API-pricing trackers as of July 2026. No independent G2, Trustpilot, or Capterra listing exists for Nano Banana Pro specifically, since it ships as a Google Gemini model feature rather than a standalone SaaS product — this is stated explicitly rather than an invented rating. Sentiment is sourced from Reddit communities (r/Bard, r/GoogleGeminiAI, r/aiArt) instead.",
+    relatedBlogSlugs: ['leonardo-vs-midjourney-2026', 'best-midjourney-alternatives-2026', 'best-nano-banana-pro-alternatives-2026'],
+    verdict: "Nano Banana Pro is the strongest choice available today for anyone who needs accurate in-image text, native 4K output, or fast conversational edits — and its free tier is a genuinely usable way to test that before paying. The confusing multi-tier Google AI bundling is the real friction point, not the model quality itself.",
+    rating: 4.3, lastTested: "July 2026", lastTestedISO: "2026-07-28", datePublished: "2026-07-28", timeUsed: "Researched Jul 2026",
+  },
   windsurf: {
     whatIs: "Windsurf is Codeium's AI-native code editor and Cursor's closest direct competitor. Built on a VS Code-style experience, it combines Codeium's strong free autocomplete with Cascade, an agent workflow for planning and applying multi-step coding changes. At $15/month Pro, it is positioned as the lower-cost AI editor for developers who want more than a plugin but less spend than Cursor.",
     whoIsItFor: "Developers who want a serious AI editor with a genuinely usable free plan and safer human-in-the-loop agent workflows. It fits especially well for solo developers, indie hackers, and budget-conscious teams who want daily AI help without stepping up to the highest monthly pricing tier in the category.",
@@ -1178,6 +1196,7 @@ const TOOL_RADAR: Record<string, [number, number, number, number, number]> = {
   'claude-ai':    [4.6, 4.7, 4.2, 4.0, 2.9],
   'grok-ai':      [4.1, 4.2, 3.5, 3.0, 2.6],
   'midjourney':   [4.0, 4.9, 3.8, 1.5, 3.7],
+  'nano-banana-pro': [4.6, 4.8, 3.6, 2.5, 3.0],
   'stable-diffusion':[2.8, 4.7, 5.0, 5.0, 3.6],
 };
 

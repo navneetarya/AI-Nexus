@@ -1801,6 +1801,57 @@ export const TOOLS: Tool[] = [
     ],
   },
 
+  // IMAGE — added July 2026, trending breakout AI image model (Gemini 3 Pro Image)
+  // Duplicate check: grep -c "slug: 'nano-banana-pro'" constants.ts + prerender.mjs → 0 and 0 before this edit
+  {
+    id: 'i6', slug: 'nano-banana-pro',
+    name: 'Nano Banana Pro', tagline: "Google Gemini's AI image model — best-in-class text rendering, native 4K",
+    description: 'Nano Banana Pro (Gemini 3 Pro Image) is Google\'s flagship AI image generation and editing model, reachable through the Gemini app, Google AI Studio, and the Gemini API. It leads the market on in-image text accuracy (94–96%) and native 4K output, and can pull in real-time facts via Search grounding for infographics and data visuals. The faster, cheaper Nano Banana 2 (Gemini 3.1 Flash Image) sits alongside it for everyday high-volume editing.',
+    category: Category.IMAGE, affiliateLink: 'https://gemini.google.com', // No public consumer affiliate programme — monitor gemini.google.com
+    iconName: 'Sparkles', color: '#fbbf24', accentColor: '#f59e0b',
+    userBadge: 'Free plan ✓', pricing: 'Free (limited) + from $7.99/month', bestFor: 'Marketers, designers, and creators who need accurate in-image text and fast, conversational edits',
+    notForYou: 'Anyone who wants one dedicated subscription with a distinctive default art style — Midjourney still wins on stylistic "wow factor" out of the box. Also skip if you need a flat-rate API; Nano Banana Pro\'s official API is metered per image ($0.134–$0.24), which can outcost flat-rate competitors at high volume.',
+    lastTestedISO: '2026-07-28',
+    researchSources: {
+      reddit: 'Mixed-to-positive — r/Bard, r/GoogleGeminiAI, r/aiArt; text rendering and edit speed consistently praised, with recurring complaints about the free/Plus-tier watermark and confusing Plus/Pro/Ultra tier bundling',
+      lastVerified: '2026-07-28',
+    },
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free tier via the Gemini app — a few images/day with a visible watermark, no card required',
+      paid: 'Google AI Plus ~₹650/month · Google AI Pro ~₹1,650/month (USD-equivalent billing via Google One, at ~₹83/USD)',
+      note: 'Billed through Google One/Play Store — UPI and Indian debit/credit cards accepted at checkout. No India-specific discount confirmed as of this review.',
+    },
+    updateLog: [
+      { date: 'July 2026', note: 'Tool entry created. Pricing verified across Google AI plans (Free / Plus $7.99 / Pro $19.99 / Ultra $249.99) and Gemini API rates ($0.134 per 1K–2K image, $0.24 per 4K image). No independent G2/Trustpilot listing found for this model — sourced Reddit sentiment only, stated explicitly rather than fabricated.' },
+    ],
+    features: [
+      'Gemini 3 Pro Image (Nano Banana Pro) — native 4K output, 94–96% in-image text accuracy',
+      'Nano Banana 2 (Gemini 3.1 Flash Image) — faster, cheaper everyday editing',
+      'Character and object consistency across up to 5 subjects, 14 reference images',
+      'Real-time Search grounding for factually accurate infographics and data visuals',
+      'Conversational, multi-turn editing — no masks, no prompt-engineering syntax required',
+    ],
+    pros: [
+      'Best-in-class text rendering inside images (94–96% vs roughly 71–78% for Midjourney/DALL-E 3)',
+      'Native 4K output with strong multi-subject character consistency across edits',
+      'Genuinely free tier to try before paying — no credit card required',
+      'Fastest iteration cycle of any major image model via the Nano Banana 2 lane',
+    ],
+    cons: [
+      'Free and Google AI Plus tiers add a visible Gemini watermark to outputs',
+      'No standalone subscription — access is bundled inside broader Google AI plans, which is confusing to shop for',
+      'Free-tier daily image cap (2–3/day) is too low for regular content production',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: '~2–3 images/day, visible watermark, no card required' },
+      { tier: 'Google AI Plus', price: '$7.99/month', highlight: 'Higher daily quota, watermark still applied on some outputs' },
+      { tier: 'Google AI Pro', price: '$19.99/month', highlight: '~100 images/day at native 4K, no watermark' },
+      { tier: 'Google AI Ultra', price: '$249.99/month', highlight: '~1,000 images/day at 4K + Gemini Ultra model access + 30TB storage' },
+      { tier: 'API (Gemini 3 Pro Image)', price: '$0.134/image (1K–2K) · $0.24/image (4K)', highlight: 'Pay-as-you-go; Batch API is 50% off' },
+    ],
+  },
+
   // IMAGE
   {
     id: 'i5', slug: 'stable-diffusion',
@@ -2351,5 +2402,16 @@ Object.assign(TOOL_FAQS, {
     { q: 'Emergent vs Lovable vs Bolt — which should I use?', a: 'Lovable is the cheaper, more predictable entry point for non-developers building a full-stack MVP with Supabase built in. Bolt is more developer-oriented for rapid frontend prototyping. Emergent covers similar full-stack ground to Lovable but is reported as more credit-hungry per action — better suited to well-scoped, higher-budget builds than frequent small tweaks.' },
     { q: 'Does Emergent have an affiliate program?', a: 'Yes — Emergent runs its own affiliate program at partners.emergent.sh (20% recurring commission for 6 months), separate from any third-party network.' },
     { q: 'What is the 1M-token context window on Emergent Pro actually useful for?', a: 'It lets the AI keep a much larger amount of your project — code, prior instructions, and context — "in view" at once, which matters most on complex, multi-step builds where losing earlier context causes the AI to contradict or break its own earlier work. For small, simple apps it makes little practical difference; it becomes valuable as project complexity grows.' },
+  ],
+});
+
+// ── Nano Banana Pro (Google Gemini 3 Pro Image) FAQs — added July 2026, mirrors prerender.mjs TOOL_FAQS ──
+Object.assign(TOOL_FAQS, {
+  'nano-banana-pro': [
+    { q: 'Is Nano Banana Pro free to use?', a: 'Yes, on a limited basis — the Gemini app free tier gives roughly 2–3 images per day at lower resolution with a visible Gemini watermark. Removing the watermark and unlocking native 4K output requires Google AI Pro at $19.99/month or higher.' },
+    { q: "What's the difference between Nano Banana 2 and Nano Banana Pro?", a: 'Nano Banana 2 (Gemini 3.1 Flash Image) is the faster, cheaper option built for high-volume everyday edits and near-Pro quality. Nano Banana Pro (Gemini 3 Pro Image) is a slower "thinking" model that reasons through composition, lighting, and spatial logic first — it wins on complex multi-element scenes, dense typography, and native 4K output.' },
+    { q: 'Is Nano Banana Pro better than Midjourney for realistic photos?', a: 'For text accuracy, editing control, and photorealistic commercial work, yes — independent benchmarks put its text rendering at 94–96% versus roughly 71% for Midjourney V7. For stylised, cinematic, or artistically distinctive imagery, Midjourney still produces more visually striking default output.' },
+    { q: 'Can I use Nano Banana Pro for commercial work?', a: 'Yes, images generated on paid Google AI plans can be used commercially, and paid-tier outputs drop the visible watermark (a SynthID digital watermark remains embedded regardless of tier for AI-content transparency).' },
+    { q: 'Does Nano Banana Pro work in India, and is it free there?', a: 'Yes — the free tier is accessible through the Gemini app with no card required, and paid Google AI plans bill in USD-equivalent INR through Google One/Play Store, accepting UPI and Indian cards. No India-specific discounted pricing has been confirmed as of this review.' },
   ],
 });

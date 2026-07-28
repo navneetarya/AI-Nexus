@@ -14,6 +14,15 @@
       "detail": "served directly at the bare URL, no redirect needed"
     },
     {
+      "canonical_url": "https://ainexustools.online/about/",
+      "tested_url": "https://ainexustools.online/about",
+      "status": 200,
+      "final_url": "https://ainexustools.online/about/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/about/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/disclosure/",
       "tested_url": "https://ainexustools.online/disclosure",
       "status": 200,
@@ -23,13 +32,22 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/disclosure/"
     },
     {
-      "canonical_url": "https://ainexustools.online/about/",
-      "tested_url": "https://ainexustools.online/about",
+      "canonical_url": "https://ainexustools.online/contact/",
+      "tested_url": "https://ainexustools.online/contact",
       "status": 200,
-      "final_url": "https://ainexustools.online/about/",
+      "final_url": "https://ainexustools.online/contact/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/about/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/contact/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/editorial-policy/",
+      "tested_url": "https://ainexustools.online/editorial-policy",
+      "status": 200,
+      "final_url": "https://ainexustools.online/editorial-policy/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/editorial-policy/"
     },
     {
       "canonical_url": "https://ainexustools.online/methodology/",
@@ -59,24 +77,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/terms/"
     },
     {
-      "canonical_url": "https://ainexustools.online/editorial-policy/",
-      "tested_url": "https://ainexustools.online/editorial-policy",
-      "status": 200,
-      "final_url": "https://ainexustools.online/editorial-policy/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/editorial-policy/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/contact/",
-      "tested_url": "https://ainexustools.online/contact",
-      "status": 200,
-      "final_url": "https://ainexustools.online/contact/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/contact/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/how-we-analyze-ai-tools/",
       "tested_url": "https://ainexustools.online/how-we-analyze-ai-tools",
       "status": 200,
@@ -95,6 +95,15 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/best-ai-tools-india/"
     },
     {
+      "canonical_url": "https://ainexustools.online/glossary/",
+      "tested_url": "https://ainexustools.online/glossary",
+      "status": 200,
+      "final_url": "https://ainexustools.online/glossary/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/glossary/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/best-free-ai-tools/",
       "tested_url": "https://ainexustools.online/best-free-ai-tools",
       "status": 200,
@@ -104,13 +113,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/best-free-ai-tools/"
     },
     {
-      "canonical_url": "https://ainexustools.online/glossary/",
-      "tested_url": "https://ainexustools.online/glossary",
+      "canonical_url": "https://ainexustools.online/best-ai-logo-makers/",
+      "tested_url": "https://ainexustools.online/best-ai-logo-makers",
       "status": 200,
-      "final_url": "https://ainexustools.online/glossary/",
+      "final_url": "https://ainexustools.online/best-ai-logo-makers/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/glossary/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/best-ai-logo-makers/"
     },
     {
       "canonical_url": "https://ainexustools.online/best-ai-writing-tools/",
@@ -140,15 +149,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/best-ai-image-tools/"
     },
     {
-      "canonical_url": "https://ainexustools.online/best-ai-logo-makers/",
-      "tested_url": "https://ainexustools.online/best-ai-logo-makers",
-      "status": 200,
-      "final_url": "https://ainexustools.online/best-ai-logo-makers/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/best-ai-logo-makers/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/best-ai-audio-tools/",
       "tested_url": "https://ainexustools.online/best-ai-audio-tools",
       "status": 200,
@@ -176,24 +176,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/best-ai-design-tools/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/",
-      "tested_url": "https://ainexustools.online/blog",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/best-ai-productivity-tools/",
-      "tested_url": "https://ainexustools.online/best-ai-productivity-tools",
-      "status": 200,
-      "final_url": "https://ainexustools.online/best-ai-productivity-tools/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/best-ai-productivity-tools/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/best-ai-coding-tools/",
       "tested_url": "https://ainexustools.online/best-ai-coding-tools",
       "status": 200,
@@ -201,15 +183,6 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/best-ai-coding-tools/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/emergent-ai-explained-2026/",
-      "tested_url": "https://ainexustools.online/blog/emergent-ai-explained-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/emergent-ai-explained-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/emergent-ai-explained-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-voice-agent-small-business-2026/",
@@ -221,6 +194,15 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-voice-agent-small-business-2026/"
     },
     {
+      "canonical_url": "https://ainexustools.online/blog/emergent-ai-explained-2026/",
+      "tested_url": "https://ainexustools.online/blog/emergent-ai-explained-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/emergent-ai-explained-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/emergent-ai-explained-2026/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/",
       "tested_url": "https://ainexustools.online/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
       "status": 200,
@@ -228,6 +210,15 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/best-ai-productivity-tools/",
+      "tested_url": "https://ainexustools.online/best-ai-productivity-tools",
+      "status": 200,
+      "final_url": "https://ainexustools.online/best-ai-productivity-tools/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/best-ai-productivity-tools/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-resume-builder-tools-2026/",
@@ -239,15 +230,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-resume-builder-tools-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-voice-dictation-tools-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-voice-dictation-tools-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-voice-dictation-tools-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-voice-dictation-tools-2026/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/blog/ai-contract-analysis-tools-2026/",
       "tested_url": "https://ainexustools.online/blog/ai-contract-analysis-tools-2026",
       "status": 200,
@@ -257,6 +239,24 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-contract-analysis-tools-2026/"
     },
     {
+      "canonical_url": "https://ainexustools.online/blog/",
+      "tested_url": "https://ainexustools.online/blog",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/best-ai-voice-dictation-tools-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-voice-dictation-tools-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/best-ai-voice-dictation-tools-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-voice-dictation-tools-2026/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026/",
       "tested_url": "https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026",
       "status": 200,
@@ -264,15 +264,6 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-grammarly-alternatives/",
@@ -293,15 +284,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-podcastle-alternatives/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-social-media-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-tools-for-social-media-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-tools-for-social-media-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-social-media-2026/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/blog/how-to-use-rytr-to-write-blog-posts/",
       "tested_url": "https://ainexustools.online/blog/how-to-use-rytr-to-write-blog-posts",
       "status": 200,
@@ -309,6 +291,15 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/how-to-use-rytr-to-write-blog-posts/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-freelancers-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-podcast-tools-2026/",
@@ -320,22 +311,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-podcast-tools-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/ai-tools-for-students-free-2026/",
-      "tested_url": "https://ainexustools.online/blog/ai-tools-for-students-free-2026",
+      "canonical_url": "https://ainexustools.online/blog/best-notion-ai-alternatives-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-notion-ai-alternatives-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/ai-tools-for-students-free-2026/",
+      "final_url": "https://ainexustools.online/blog/best-notion-ai-alternatives-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-tools-for-students-free-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/best-invideo-alternatives-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-invideo-alternatives-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-invideo-alternatives-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-invideo-alternatives-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-notion-ai-alternatives-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/how-to-use-ai-for-content-creation-2026/",
@@ -347,76 +329,31 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/how-to-use-ai-for-content-creation-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/jasper-ai-alternatives/",
-      "tested_url": "https://ainexustools.online/blog/jasper-ai-alternatives",
+      "canonical_url": "https://ainexustools.online/blog/best-invideo-alternatives-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-invideo-alternatives-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/jasper-ai-alternatives/",
+      "final_url": "https://ainexustools.online/blog/best-invideo-alternatives-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/jasper-ai-alternatives/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-invideo-alternatives-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-notion-ai-alternatives-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-notion-ai-alternatives-2026",
+      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-social-media-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-tools-for-social-media-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-notion-ai-alternatives-2026/",
+      "final_url": "https://ainexustools.online/blog/best-ai-tools-for-social-media-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-notion-ai-alternatives-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-social-media-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/chatgpt-alternatives-free-2026/",
-      "tested_url": "https://ainexustools.online/blog/chatgpt-alternatives-free-2026",
+      "canonical_url": "https://ainexustools.online/blog/ai-tools-for-students-free-2026/",
+      "tested_url": "https://ainexustools.online/blog/ai-tools-for-students-free-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/chatgpt-alternatives-free-2026/",
+      "final_url": "https://ainexustools.online/blog/ai-tools-for-students-free-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/chatgpt-alternatives-free-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-marketing-tools-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-marketing-tools-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-marketing-tools-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-marketing-tools-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-in-india-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-tools-in-india-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-tools-in-india-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-in-india-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/ai-tools-for-teachers-2026/",
-      "tested_url": "https://ainexustools.online/blog/ai-tools-for-teachers-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/ai-tools-for-teachers-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-tools-for-teachers-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/best-midjourney-alternatives-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-midjourney-alternatives-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-midjourney-alternatives-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-midjourney-alternatives-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026/",
-      "tested_url": "https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-tools-for-students-free-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-coding-tools-2026/",
@@ -428,6 +365,15 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-coding-tools-2026/"
     },
     {
+      "canonical_url": "https://ainexustools.online/blog/jasper-ai-alternatives/",
+      "tested_url": "https://ainexustools.online/blog/jasper-ai-alternatives",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/jasper-ai-alternatives/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/jasper-ai-alternatives/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/blog/best-ai-logo-makers-free-2026/",
       "tested_url": "https://ainexustools.online/blog/best-ai-logo-makers-free-2026",
       "status": 200,
@@ -437,13 +383,49 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-logo-makers-free-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/leonardo-vs-midjourney-2026/",
-      "tested_url": "https://ainexustools.online/blog/leonardo-vs-midjourney-2026",
+      "canonical_url": "https://ainexustools.online/blog/best-ai-marketing-tools-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-marketing-tools-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/leonardo-vs-midjourney-2026/",
+      "final_url": "https://ainexustools.online/blog/best-ai-marketing-tools-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/leonardo-vs-midjourney-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-marketing-tools-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/chatgpt-alternatives-free-2026/",
+      "tested_url": "https://ainexustools.online/blog/chatgpt-alternatives-free-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/chatgpt-alternatives-free-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/chatgpt-alternatives-free-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/ai-tools-for-teachers-2026/",
+      "tested_url": "https://ainexustools.online/blog/ai-tools-for-teachers-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/ai-tools-for-teachers-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-tools-for-teachers-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-in-india-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-tools-in-india-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/best-ai-tools-in-india-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-in-india-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/best-midjourney-alternatives-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-midjourney-alternatives-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/best-midjourney-alternatives-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-midjourney-alternatives-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-free-ai-tools-for-students-in-india-2026/",
@@ -455,22 +437,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-free-ai-tools-for-students-in-india-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-writing-tools-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-writing-tools-2026",
+      "canonical_url": "https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026/",
+      "tested_url": "https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-writing-tools-2026/",
+      "final_url": "https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-writing-tools-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/",
-      "tested_url": "https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/taskade-vs-notion-vs-asana-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-freelancers-india-2026/",
@@ -482,13 +455,40 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-freelancers-india-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/google-gemini-ai-review-2026/",
-      "tested_url": "https://ainexustools.online/blog/google-gemini-ai-review-2026",
+      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/google-gemini-ai-review-2026/",
+      "final_url": "https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/google-gemini-ai-review-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/best-ai-writing-tools-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-writing-tools-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/best-ai-writing-tools-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-writing-tools-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/leonardo-vs-midjourney-2026/",
+      "tested_url": "https://ainexustools.online/blog/leonardo-vs-midjourney-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/leonardo-vs-midjourney-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/leonardo-vs-midjourney-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/",
+      "tested_url": "https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/claude-code-vs-github-copilot-vs-replit-2026/",
@@ -500,13 +500,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/claude-code-vs-github-copilot-vs-replit-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026",
+      "canonical_url": "https://ainexustools.online/blog/google-gemini-ai-review-2026/",
+      "tested_url": "https://ainexustools.online/blog/google-gemini-ai-review-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026/",
+      "final_url": "https://ainexustools.online/blog/google-gemini-ai-review-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-content-creators-free-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/google-gemini-ai-review-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/perplexity-ai-review-2026/",
@@ -518,13 +518,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/perplexity-ai-review-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-automation-engineers-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-tools-for-automation-engineers-2026",
+      "canonical_url": "https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/",
+      "tested_url": "https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-tools-for-automation-engineers-2026/",
+      "final_url": "https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-automation-engineers-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026/",
@@ -545,6 +545,15 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-developers-2026/"
     },
     {
+      "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-automation-engineers-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-tools-for-automation-engineers-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/best-ai-tools-for-automation-engineers-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-automation-engineers-2026/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-youtubers-2026/",
       "tested_url": "https://ainexustools.online/blog/best-ai-tools-for-youtubers-2026",
       "status": 200,
@@ -552,15 +561,6 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-youtubers-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/",
-      "tested_url": "https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-tools-for-startups-2026/",
@@ -572,15 +572,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-tools-for-startups-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-free-ai-tool-plans-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-free-ai-tool-plans-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-free-ai-tool-plans-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-free-ai-tool-plans-2026/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/blog/ai-api-pricing-comparison-2026/",
       "tested_url": "https://ainexustools.online/blog/ai-api-pricing-comparison-2026",
       "status": 200,
@@ -590,13 +581,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-api-pricing-comparison-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/is-grammarly-premium-worth-it-2026/",
-      "tested_url": "https://ainexustools.online/blog/is-grammarly-premium-worth-it-2026",
+      "canonical_url": "https://ainexustools.online/blog/best-free-ai-tool-plans-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-free-ai-tool-plans-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/is-grammarly-premium-worth-it-2026/",
+      "final_url": "https://ainexustools.online/blog/best-free-ai-tool-plans-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/is-grammarly-premium-worth-it-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-free-ai-tool-plans-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/cheapest-ai-coding-tools-2026/",
@@ -617,13 +608,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/fastest-growing-ai-startups-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-free-ai-writing-tools-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-free-ai-writing-tools-2026",
+      "canonical_url": "https://ainexustools.online/blog/ai-ecosystem-growth-report-2026/",
+      "tested_url": "https://ainexustools.online/blog/ai-ecosystem-growth-report-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-free-ai-writing-tools-2026/",
+      "final_url": "https://ainexustools.online/blog/ai-ecosystem-growth-report-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-free-ai-writing-tools-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-ecosystem-growth-report-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-chatbot-2026/",
@@ -635,22 +626,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-chatbot-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/",
-      "tested_url": "https://ainexustools.online/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",
+      "canonical_url": "https://ainexustools.online/blog/best-free-ai-writing-tools-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-free-ai-writing-tools-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/",
+      "final_url": "https://ainexustools.online/blog/best-free-ai-writing-tools-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/ai-ecosystem-growth-report-2026/",
-      "tested_url": "https://ainexustools.online/blog/ai-ecosystem-growth-report-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/ai-ecosystem-growth-report-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-ecosystem-growth-report-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-free-ai-writing-tools-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-vibe-coding-tools-2026/",
@@ -662,6 +644,24 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-vibe-coding-tools-2026/"
     },
     {
+      "canonical_url": "https://ainexustools.online/blog/is-grammarly-premium-worth-it-2026/",
+      "tested_url": "https://ainexustools.online/blog/is-grammarly-premium-worth-it-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/is-grammarly-premium-worth-it-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/is-grammarly-premium-worth-it-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/",
+      "tested_url": "https://ainexustools.online/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/blog/best-ai-headshot-tools-linkedin-2026/",
       "tested_url": "https://ainexustools.online/blog/best-ai-headshot-tools-linkedin-2026",
       "status": 200,
@@ -669,6 +669,15 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-headshot-tools-linkedin-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/cursor-ai-review-2026/",
+      "tested_url": "https://ainexustools.online/blog/cursor-ai-review-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/cursor-ai-review-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/cursor-ai-review-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-email-marketing-tools-2026/",
@@ -698,15 +707,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-meeting-tools-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026/",
-      "tested_url": "https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/blog/best-ai-agents-for-small-business-2026/",
       "tested_url": "https://ainexustools.online/blog/best-ai-agents-for-small-business-2026",
       "status": 200,
@@ -725,15 +725,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/what-is-mcp-model-context-protocol-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/cursor-ai-review-2026/",
-      "tested_url": "https://ainexustools.online/blog/cursor-ai-review-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/cursor-ai-review-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/cursor-ai-review-2026/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/blog/n8n-vs-make-vs-zapier-2026/",
       "tested_url": "https://ainexustools.online/blog/n8n-vs-make-vs-zapier-2026",
       "status": 200,
@@ -743,13 +734,22 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/n8n-vs-make-vs-zapier-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-recruitment-tools-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-recruitment-tools-2026",
+      "canonical_url": "https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026/",
+      "tested_url": "https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-recruitment-tools-2026/",
+      "final_url": "https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-recruitment-tools-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/ai-tools-cost-roi-calculator-2026/",
@@ -759,15 +759,6 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-tools-cost-roi-calculator-2026/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-coding-agents-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-coding-agents-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-coding-agents-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-coding-agents-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-agents-customer-service-2026/",
@@ -788,22 +779,22 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/ai-tools-for-solopreneurs-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-ai-video-generators-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-ai-video-generators-2026",
+      "canonical_url": "https://ainexustools.online/blog/best-ai-recruitment-tools-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-recruitment-tools-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-ai-video-generators-2026/",
+      "final_url": "https://ainexustools.online/blog/best-ai-recruitment-tools-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-video-generators-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-recruitment-tools-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026/",
-      "tested_url": "https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026",
+      "canonical_url": "https://ainexustools.online/blog/best-ai-coding-agents-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-coding-agents-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026/",
+      "final_url": "https://ainexustools.online/blog/best-ai-coding-agents-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-coding-agents-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/best-ai-presentation-tools-2026/",
@@ -824,13 +815,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/relevance-ai-vs-lindy-vs-gumloop-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/blog/llm-api-pricing-comparison-2026/",
-      "tested_url": "https://ainexustools.online/blog/llm-api-pricing-comparison-2026",
+      "canonical_url": "https://ainexustools.online/blog/best-ai-video-generators-2026/",
+      "tested_url": "https://ainexustools.online/blog/best-ai-video-generators-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/blog/llm-api-pricing-comparison-2026/",
+      "final_url": "https://ainexustools.online/blog/best-ai-video-generators-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/llm-api-pricing-comparison-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/best-ai-video-generators-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/claude-code-alternatives-2026/",
@@ -840,6 +831,24 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/blog/claude-code-alternatives-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/blog/llm-api-pricing-comparison-2026/",
+      "tested_url": "https://ainexustools.online/blog/llm-api-pricing-comparison-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/blog/llm-api-pricing-comparison-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/blog/llm-api-pricing-comparison-2026/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/compare/grammarly-vs-quillbot/",
+      "tested_url": "https://ainexustools.online/compare/grammarly-vs-quillbot",
+      "status": 200,
+      "final_url": "https://ainexustools.online/compare/grammarly-vs-quillbot/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/grammarly-vs-quillbot/"
     },
     {
       "canonical_url": "https://ainexustools.online/blog/multi-agent-ai-systems-explained-2026/",
@@ -869,15 +878,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/rytr-vs-writesonic/"
     },
     {
-      "canonical_url": "https://ainexustools.online/compare/grammarly-vs-quillbot/",
-      "tested_url": "https://ainexustools.online/compare/grammarly-vs-quillbot",
-      "status": 200,
-      "final_url": "https://ainexustools.online/compare/grammarly-vs-quillbot/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/grammarly-vs-quillbot/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/compare/podcastle-vs-descript/",
       "tested_url": "https://ainexustools.online/compare/podcastle-vs-descript",
       "status": 200,
@@ -903,6 +903,15 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/leonardo-vs-midjourney/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/compare/replit-vs-github-copilot/",
+      "tested_url": "https://ainexustools.online/compare/replit-vs-github-copilot",
+      "status": 200,
+      "final_url": "https://ainexustools.online/compare/replit-vs-github-copilot/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/replit-vs-github-copilot/"
     },
     {
       "canonical_url": "https://ainexustools.online/compare/taskade-vs-notion/",
@@ -941,15 +950,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/taskade-vs-asana/"
     },
     {
-      "canonical_url": "https://ainexustools.online/compare/replit-vs-github-copilot/",
-      "tested_url": "https://ainexustools.online/compare/replit-vs-github-copilot",
-      "status": 200,
-      "final_url": "https://ainexustools.online/compare/replit-vs-github-copilot/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/replit-vs-github-copilot/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/compare/photoroom-vs-remove-bg/",
       "tested_url": "https://ainexustools.online/compare/photoroom-vs-remove-bg",
       "status": 200,
@@ -957,15 +957,6 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/photoroom-vs-remove-bg/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/compare/writesonic-vs-jasper/",
-      "tested_url": "https://ainexustools.online/compare/writesonic-vs-jasper",
-      "status": 200,
-      "final_url": "https://ainexustools.online/compare/writesonic-vs-jasper/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/writesonic-vs-jasper/"
     },
     {
       "canonical_url": "https://ainexustools.online/compare/grammarly-vs-prowritingaid/",
@@ -977,15 +968,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/grammarly-vs-prowritingaid/"
     },
     {
-      "canonical_url": "https://ainexustools.online/compare/gamma-vs-beautiful-ai/",
-      "tested_url": "https://ainexustools.online/compare/gamma-vs-beautiful-ai",
-      "status": 200,
-      "final_url": "https://ainexustools.online/compare/gamma-vs-beautiful-ai/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/gamma-vs-beautiful-ai/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/compare/leonardo-ai-vs-stable-diffusion/",
       "tested_url": "https://ainexustools.online/compare/leonardo-ai-vs-stable-diffusion",
       "status": 200,
@@ -995,13 +977,22 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/leonardo-ai-vs-stable-diffusion/"
     },
     {
-      "canonical_url": "https://ainexustools.online/compare/invideo-vs-pictory/",
-      "tested_url": "https://ainexustools.online/compare/invideo-vs-pictory",
+      "canonical_url": "https://ainexustools.online/compare/writesonic-vs-jasper/",
+      "tested_url": "https://ainexustools.online/compare/writesonic-vs-jasper",
       "status": 200,
-      "final_url": "https://ainexustools.online/compare/invideo-vs-pictory/",
+      "final_url": "https://ainexustools.online/compare/writesonic-vs-jasper/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/invideo-vs-pictory/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/writesonic-vs-jasper/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/compare/gamma-vs-beautiful-ai/",
+      "tested_url": "https://ainexustools.online/compare/gamma-vs-beautiful-ai",
+      "status": 200,
+      "final_url": "https://ainexustools.online/compare/gamma-vs-beautiful-ai/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/gamma-vs-beautiful-ai/"
     },
     {
       "canonical_url": "https://ainexustools.online/compare/claude-code-vs-github-copilot-vs-replit/",
@@ -1022,6 +1013,15 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/chatgpt-vs-claude/"
     },
     {
+      "canonical_url": "https://ainexustools.online/compare/invideo-vs-pictory/",
+      "tested_url": "https://ainexustools.online/compare/invideo-vs-pictory",
+      "status": 200,
+      "final_url": "https://ainexustools.online/compare/invideo-vs-pictory/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/invideo-vs-pictory/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/compare/cursor-vs-windsurf/",
       "tested_url": "https://ainexustools.online/compare/cursor-vs-windsurf",
       "status": 200,
@@ -1040,15 +1040,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/gemini-vs-perplexity/"
     },
     {
-      "canonical_url": "https://ainexustools.online/compare/claude-vs-gemini-coding/",
-      "tested_url": "https://ainexustools.online/compare/claude-vs-gemini-coding",
-      "status": 200,
-      "final_url": "https://ainexustools.online/compare/claude-vs-gemini-coding/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/claude-vs-gemini-coding/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/compare/lovable-vs-bolt-vs-v0/",
       "tested_url": "https://ainexustools.online/compare/lovable-vs-bolt-vs-v0",
       "status": 200,
@@ -1056,6 +1047,15 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/lovable-vs-bolt-vs-v0/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/compare/claude-vs-gemini-coding/",
+      "tested_url": "https://ainexustools.online/compare/claude-vs-gemini-coding",
+      "status": 200,
+      "final_url": "https://ainexustools.online/compare/claude-vs-gemini-coding/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/claude-vs-gemini-coding/"
     },
     {
       "canonical_url": "https://ainexustools.online/compare/perplexity-vs-chatgpt/",
@@ -1085,15 +1085,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/make-vs-zapier/"
     },
     {
-      "canonical_url": "https://ainexustools.online/compare/best-ai-tools-for-freelancers-india-2026/",
-      "tested_url": "https://ainexustools.online/compare/best-ai-tools-for-freelancers-india-2026",
-      "status": 200,
-      "final_url": "https://ainexustools.online/compare/best-ai-tools-for-freelancers-india-2026/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/best-ai-tools-for-freelancers-india-2026/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/compare/best-ai-tools-for-teachers-india-2026/",
       "tested_url": "https://ainexustools.online/compare/best-ai-tools-for-teachers-india-2026",
       "status": 200,
@@ -1103,13 +1094,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/compare/best-ai-tools-for-teachers-india-2026/"
     },
     {
-      "canonical_url": "https://ainexustools.online/compare/ai-tools-case-study-india-seo-2026/",
-      "tested_url": "https://ainexustools.online/compare/ai-tools-case-study-india-seo-2026",
+      "canonical_url": "https://ainexustools.online/compare/best-ai-tools-for-freelancers-india-2026/",
+      "tested_url": "https://ainexustools.online/compare/best-ai-tools-for-freelancers-india-2026",
       "status": 200,
-      "final_url": "https://ainexustools.online/compare/ai-tools-case-study-india-seo-2026/",
+      "final_url": "https://ainexustools.online/compare/best-ai-tools-for-freelancers-india-2026/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/ai-tools-case-study-india-seo-2026/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/best-ai-tools-for-freelancers-india-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/grammarly/",
@@ -1119,15 +1110,6 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/grammarly/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/tools/rytr/",
-      "tested_url": "https://ainexustools.online/tools/rytr",
-      "status": 200,
-      "final_url": "https://ainexustools.online/tools/rytr/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/rytr/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/writesonic/",
@@ -1175,13 +1157,22 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/photoroom/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/looka/",
-      "tested_url": "https://ainexustools.online/tools/looka",
+      "canonical_url": "https://ainexustools.online/tools/rytr/",
+      "tested_url": "https://ainexustools.online/tools/rytr",
       "status": 200,
-      "final_url": "https://ainexustools.online/tools/looka/",
+      "final_url": "https://ainexustools.online/tools/rytr/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/looka/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/rytr/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/compare/ai-tools-case-study-india-seo-2026/",
+      "tested_url": "https://ainexustools.online/compare/ai-tools-case-study-india-seo-2026",
+      "status": 200,
+      "final_url": "https://ainexustools.online/compare/ai-tools-case-study-india-seo-2026/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/compare/ai-tools-case-study-india-seo-2026/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/pictory/",
@@ -1191,6 +1182,15 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/pictory/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/tools/looka/",
+      "tested_url": "https://ainexustools.online/tools/looka",
+      "status": 200,
+      "final_url": "https://ainexustools.online/tools/looka/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/looka/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/opus-clip/",
@@ -1211,15 +1211,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/invideo/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/murf-ai/",
-      "tested_url": "https://ainexustools.online/tools/murf-ai",
-      "status": 200,
-      "final_url": "https://ainexustools.online/tools/murf-ai/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/murf-ai/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/tools/podcastle/",
       "tested_url": "https://ainexustools.online/tools/podcastle",
       "status": 200,
@@ -1229,13 +1220,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/podcastle/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/gamma/",
-      "tested_url": "https://ainexustools.online/tools/gamma",
+      "canonical_url": "https://ainexustools.online/tools/murf-ai/",
+      "tested_url": "https://ainexustools.online/tools/murf-ai",
       "status": 200,
-      "final_url": "https://ainexustools.online/tools/gamma/",
+      "final_url": "https://ainexustools.online/tools/murf-ai/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/gamma/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/murf-ai/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/beautiful-ai/",
@@ -1245,6 +1236,15 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/beautiful-ai/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/tools/gamma/",
+      "tested_url": "https://ainexustools.online/tools/gamma",
+      "status": 200,
+      "final_url": "https://ainexustools.online/tools/gamma/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/gamma/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/ocoya/",
@@ -1265,15 +1265,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/replit/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/taskade/",
-      "tested_url": "https://ainexustools.online/tools/taskade",
-      "status": 200,
-      "final_url": "https://ainexustools.online/tools/taskade/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/taskade/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/tools/notion-ai/",
       "tested_url": "https://ainexustools.online/tools/notion-ai",
       "status": 200,
@@ -1283,13 +1274,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/notion-ai/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/elevenlabs/",
-      "tested_url": "https://ainexustools.online/tools/elevenlabs",
+      "canonical_url": "https://ainexustools.online/tools/taskade/",
+      "tested_url": "https://ainexustools.online/tools/taskade",
       "status": 200,
-      "final_url": "https://ainexustools.online/tools/elevenlabs/",
+      "final_url": "https://ainexustools.online/tools/taskade/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/elevenlabs/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/taskade/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/jasper/",
@@ -1310,6 +1301,15 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/descript/"
     },
     {
+      "canonical_url": "https://ainexustools.online/tools/cursor/",
+      "tested_url": "https://ainexustools.online/tools/cursor",
+      "status": 200,
+      "final_url": "https://ainexustools.online/tools/cursor/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/cursor/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/tools/perplexity/",
       "tested_url": "https://ainexustools.online/tools/perplexity",
       "status": 200,
@@ -1317,6 +1317,15 @@
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/perplexity/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/tools/elevenlabs/",
+      "tested_url": "https://ainexustools.online/tools/elevenlabs",
+      "status": 200,
+      "final_url": "https://ainexustools.online/tools/elevenlabs/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/elevenlabs/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/canva-ai/",
@@ -1328,24 +1337,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/canva-ai/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/cursor/",
-      "tested_url": "https://ainexustools.online/tools/cursor",
-      "status": 200,
-      "final_url": "https://ainexustools.online/tools/cursor/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/cursor/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/tools/emergent/",
-      "tested_url": "https://ainexustools.online/tools/emergent",
-      "status": 200,
-      "final_url": "https://ainexustools.online/tools/emergent/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/emergent/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/tools/lovable/",
       "tested_url": "https://ainexustools.online/tools/lovable",
       "status": 200,
@@ -1355,13 +1346,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/lovable/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/chatgpt/",
-      "tested_url": "https://ainexustools.online/tools/chatgpt",
+      "canonical_url": "https://ainexustools.online/tools/emergent/",
+      "tested_url": "https://ainexustools.online/tools/emergent",
       "status": 200,
-      "final_url": "https://ainexustools.online/tools/chatgpt/",
+      "final_url": "https://ainexustools.online/tools/emergent/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/chatgpt/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/emergent/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/windsurf/",
@@ -1382,6 +1373,24 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/grok-ai/"
     },
     {
+      "canonical_url": "https://ainexustools.online/tools/chatgpt/",
+      "tested_url": "https://ainexustools.online/tools/chatgpt",
+      "status": 200,
+      "final_url": "https://ainexustools.online/tools/chatgpt/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/chatgpt/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/tools/claude-ai/",
+      "tested_url": "https://ainexustools.online/tools/claude-ai",
+      "status": 200,
+      "final_url": "https://ainexustools.online/tools/claude-ai/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/claude-ai/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/tools/midjourney/",
       "tested_url": "https://ainexustools.online/tools/midjourney",
       "status": 200,
@@ -1400,15 +1409,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/stable-diffusion/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/v0/",
-      "tested_url": "https://ainexustools.online/tools/v0",
-      "status": 200,
-      "final_url": "https://ainexustools.online/tools/v0/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/v0/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/tools/bolt/",
       "tested_url": "https://ainexustools.online/tools/bolt",
       "status": 200,
@@ -1418,22 +1418,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/bolt/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/claude-ai/",
-      "tested_url": "https://ainexustools.online/tools/claude-ai",
+      "canonical_url": "https://ainexustools.online/tools/v0/",
+      "tested_url": "https://ainexustools.online/tools/v0",
       "status": 200,
-      "final_url": "https://ainexustools.online/tools/claude-ai/",
+      "final_url": "https://ainexustools.online/tools/v0/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/claude-ai/"
-    },
-    {
-      "canonical_url": "https://ainexustools.online/tools/claude-code/",
-      "tested_url": "https://ainexustools.online/tools/claude-code",
-      "status": 200,
-      "final_url": "https://ainexustools.online/tools/claude-code/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/claude-code/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/v0/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/github-copilot/",
@@ -1445,15 +1436,6 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/github-copilot/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/headshotpro/",
-      "tested_url": "https://ainexustools.online/tools/headshotpro",
-      "status": 200,
-      "final_url": "https://ainexustools.online/tools/headshotpro/",
-      "redirect_hops": 1,
-      "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/headshotpro/"
-    },
-    {
       "canonical_url": "https://ainexustools.online/tools/getresponse/",
       "tested_url": "https://ainexustools.online/tools/getresponse",
       "status": 200,
@@ -1463,13 +1445,13 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/getresponse/"
     },
     {
-      "canonical_url": "https://ainexustools.online/tools/munch/",
-      "tested_url": "https://ainexustools.online/tools/munch",
+      "canonical_url": "https://ainexustools.online/tools/headshotpro/",
+      "tested_url": "https://ainexustools.online/tools/headshotpro",
       "status": 200,
-      "final_url": "https://ainexustools.online/tools/munch/",
+      "final_url": "https://ainexustools.online/tools/headshotpro/",
       "redirect_hops": 1,
       "verdict": "REDIRECTS",
-      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/munch/"
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/headshotpro/"
     },
     {
       "canonical_url": "https://ainexustools.online/tools/basedlabs/",
@@ -1490,6 +1472,24 @@
       "detail": "1 hop(s) before landing on https://ainexustools.online/tools/narrato/"
     },
     {
+      "canonical_url": "https://ainexustools.online/tools/claude-code/",
+      "tested_url": "https://ainexustools.online/tools/claude-code",
+      "status": 200,
+      "final_url": "https://ainexustools.online/tools/claude-code/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/claude-code/"
+    },
+    {
+      "canonical_url": "https://ainexustools.online/tools/munch/",
+      "tested_url": "https://ainexustools.online/tools/munch",
+      "status": 200,
+      "final_url": "https://ainexustools.online/tools/munch/",
+      "redirect_hops": 1,
+      "verdict": "REDIRECTS",
+      "detail": "1 hop(s) before landing on https://ainexustools.online/tools/munch/"
+    },
+    {
       "canonical_url": "https://ainexustools.online/tools/fireflies/",
       "tested_url": "https://ainexustools.online/tools/fireflies",
       "status": 200,
@@ -1500,61 +1500,6 @@
     }
   ],
   "bare_url_redirect_count": 165,
-  "internal_link_issues": [
-    {
-      "on_page": "https://ainexustools.online/blog/best-ai-voice-agent-small-business-2026/",
-      "bad_link": "https://ainexustools.online/tools/elevenlabs",
-      "should_be": "https://ainexustools.online/tools/elevenlabs/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/best-ai-voice-agent-small-business-2026/",
-      "bad_link": "https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026",
-      "should_be": "https://ainexustools.online/blog/best-no-code-ai-automation-tools-2026/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/best-ai-voice-agent-small-business-2026/",
-      "bad_link": "https://ainexustools.online/blog/best-ai-agents-customer-service-2026",
-      "should_be": "https://ainexustools.online/blog/best-ai-agents-customer-service-2026/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/emergent-ai-explained-2026/",
-      "bad_link": "https://ainexustools.online/blog/multi-agent-ai-systems-explained-2026",
-      "should_be": "https://ainexustools.online/blog/multi-agent-ai-systems-explained-2026/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/emergent-ai-explained-2026/",
-      "bad_link": "https://ainexustools.online/blog/what-is-mcp-model-context-protocol-2026",
-      "should_be": "https://ainexustools.online/blog/what-is-mcp-model-context-protocol-2026/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/emergent-ai-explained-2026/",
-      "bad_link": "https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026",
-      "should_be": "https://ainexustools.online/blog/ai-agents-vs-ai-automation-difference-2026/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/emergent-ai-explained-2026/",
-      "bad_link": "https://ainexustools.online/blog/best-ai-chatbot-2026",
-      "should_be": "https://ainexustools.online/blog/best-ai-chatbot-2026/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/best-ai-email-marketing-tools-2026/",
-      "bad_link": "https://ainexustools.online/best-ai-marketing-tools",
-      "should_be": "https://ainexustools.online/best-ai-marketing-tools/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/best-ai-tools-for-youtube-creators-2026/",
-      "bad_link": "https://ainexustools.online/best-ai-video-tools",
-      "should_be": "https://ainexustools.online/best-ai-video-tools/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/best-ai-meeting-tools-2026/",
-      "bad_link": "https://ainexustools.online/best-ai-productivity-tools",
-      "should_be": "https://ainexustools.online/best-ai-productivity-tools/"
-    },
-    {
-      "on_page": "https://ainexustools.online/blog/best-ai-video-generators-2026/",
-      "bad_link": "https://ainexustools.online/best-ai-video-tools",
-      "should_be": "https://ainexustools.online/best-ai-video-tools/"
-    }
-  ]
+  "strict_bare_redirects": false,
+  "internal_link_issues": []
 }

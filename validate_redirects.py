@@ -33,6 +33,9 @@ Options
     --timeout N           Per-request timeout in seconds (default: 15)
     --out FILE            JSON report path (default: redirect_report.json)
     --crawl-links / --no-crawl-links   Toggle step 4 (default: on)
+    --strict-bare-redirects / --no-strict-bare-redirects
+                        Count bare no-slash -> slash redirects as failures
+                        (default: off; they are warnings only)
 """
 
 import argparse
@@ -175,6 +178,19 @@ def main():
     ap.add_argument("--out", default="redirect_report.json")
     ap.add_argument("--crawl-links", dest="crawl_links", action="store_true", default=True)
     ap.add_argument("--no-crawl-links", dest="crawl_links", action="store_false")
+    ap.add_argument(
+        "--strict-bare-redirects",
+        dest="strict_bare_redirects",
+        action="store_true",
+        default=False,
+        help="Fail when bare URLs redirect to trailing-slash canonicals",
+    )
+    ap.add_argument(
+        "--no-strict-bare-redirects",
+        dest="strict_bare_redirects",
+        action="store_false",
+        help="Do not fail on bare URL redirects (warning-only mode)",
+    )
     args = ap.parse_args()
 
     site = args.site.rstrip("/")
@@ -275,18 +291,34 @@ def main():
         "canonical_url_issues": canonical_bad,
         "bare_url_checks": slash_results,
         "bare_url_redirect_count": len(redirecting),
+        "strict_bare_redirects": args.strict_bare_redirects,
         "internal_link_issues": link_issues,
     }
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
 
-    total_problems = len(canonical_bad) + len(redirecting) + len(link_issues)
+    hard_problems = len(canonical_bad) + len(link_issues)
+    if args.strict_bare_redirects:
+        hard_problems += len(redirecting)
+
+    warning_count = 0 if args.strict_bare_redirects else len(redirecting)
+
     print("─" * 60)
-    if total_problems == 0:
-        print("✅ No redirect issues found.")
+    if warning_count:
+        print(
+            f"⚠️  {warning_count} bare URL redirect warning(s) observed "
+            "(expected when canonical URLs include trailing slash)."
+        )
+
+    if hard_problems == 0:
+        print("✅ No hard redirect issues found.")
     else:
-        print(f"❌ {total_problems} total issue(s) found. Full details in {args.out}")
+        print(f"❌ {hard_problems} hard issue(s) found. Full details in {args.out}")
     print("─" * 60)
+
+    if hard_problems > 0:
+        sys.exit(1)
+    sys.exit(0)
 
 
 if __name__ == "__main__":
