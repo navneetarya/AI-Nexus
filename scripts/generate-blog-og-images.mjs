@@ -227,6 +227,9 @@ const POSTS = [
   { slug: 'perplexity-ai-review-2026',                   title: 'Perplexity AI Review 2026: Worth It vs Google?' },
   { slug: 'perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026', title: 'Perplexity Pro vs ChatGPT Plus vs Claude Pro 2026' },
 
+  // Added Jul 28, 2026 — new post from this session, run script to generate
+  { slug: 'best-nano-banana-pro-alternatives-2026',      title: 'Best Nano Banana Pro Alternatives 2026' },
+
   // No ogImage field at all — completely missing
   { slug: 'ai-api-pricing-comparison-2026',              title: 'AI API Pricing Comparison 2026' },
   { slug: 'ai-ecosystem-growth-report-2026',             title: 'AI Ecosystem Growth Report 2026' },
