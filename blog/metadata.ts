@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-nano-banana-pro-alternatives-2026",
+    "title": "Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)",
+    "seoTitle": "Best Nano Banana Pro Alternatives 2026: Ranked",
+    "metaDescription": "Best Nano Banana Pro alternatives for 2026 — Midjourney, Leonardo AI, PhotoRoom, and Canva AI compared on pricing, quality, and free plans.",
+    "datePublished": "2026-07-28",
+    "dateModified": "2026-07-28",
+    "author": "Navneet Arya",
+    "category": "Image",
+    "readTime": "12 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-nano-banana-pro-alternatives-2026.webp",
+    "excerpt": "Nano Banana Pro (Google's Gemini 3 Pro Image) leads on in-image text accuracy and native 4K output, but its confusing multi-tier Google AI pricing and watermarked free plan send a lot of people looking for alternatives. Here are the four that actually deserve a look — and when each one beats Nano Banana Pro outright."
+  },
+  {
     "slug": "best-ai-voice-agent-small-business-2026",
     "title": "Best AI Voice Agent Platforms for Small Business in 2026 (Real Costs, Tested)",
     "seoTitle": "Best AI Voice Agent for Small Business 2026",

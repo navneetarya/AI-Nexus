@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-07-25
+# Updated: 2026-07-28
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -21,6 +21,7 @@
 - [Frase.io Review 2026](https://ainexustools.online/tools/frase): Research, write & optimise SEO content. AI content briefs, SERP analysis. From $15/month.
 
 ### Image Tools
+- [Nano Banana Pro Review 2026](https://ainexustools.online/tools/nano-banana-pro): Google Gemini's flagship AI image model. Best-in-class in-image text accuracy, native 4K. Free (limited) + from $7.99/month.
 - [Leonardo.ai Review 2026](https://ainexustools.online/tools/leonardo-ai): Production-quality AI image generation. Custom model training, consistent characters. Free + from $12/month.
 - [PhotoRoom Review 2026](https://ainexustools.online/tools/photoroom): AI product photography used by 150 million people. Background removal, product photos. Free + $9.99/month.
 - [Looka Review 2026](https://ainexustools.online/tools/looka): AI logo and brand identity design. From $20 one-time.
@@ -55,6 +56,7 @@
 
 ## Blog Posts
 
+- [Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)](https://ainexustools.online/blog/best-nano-banana-pro-alternatives-2026): Midjourney, Leonardo.ai, PhotoRoom, and Canva AI compared as Nano Banana Pro alternatives on pricing, quality, and free plans.
 - [Best AI Voice Agent Platforms for Small Business in 2026 (Real Costs, Tested)](https://ainexustools.online/blog/best-ai-voice-agent-small-business-2026): Retell AI, Vapi, Bland, ElevenLabs & Synthflow compared on real cost and small-business fit — verified July 2026, includes Synthflow's pricing pivot to Enterprise-only.
 - [What Is Emergent AI? Emergent Abilities Explained (2026 Guide)](https://ainexustools.online/blog/emergent-ai-explained-2026): Emergent AI explained in plain English — real examples of emergent abilities, the 2023 Stanford "mirage" rebuttal, and what emergent behavior in AI agents means for multi-agent workflows in 2026.
 - [ChatGPT Atlas vs Perplexity Comet vs Dia: AI Browser Comparison 2026](https://ainexustools.online/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026): ChatGPT Atlas, Perplexity Comet, and Dia compared on agentic browsing, pricing, and security — which AI browser is actually safe and worth using in 2026.
