@@ -178,8 +178,17 @@ import post71 from './emergent-ai-explained-2026';
 // Day 21 (Jul 25) — Best AI Voice Agent Platforms for Small Business 2026 — freelancer/small-business angle,
 // includes verified Synthflow enterprise-only pricing pivot finding
 import post72 from './best-ai-voice-agent-small-business-2026';
+// Day 22 (Jul 28) — Best Nano Banana Pro Alternatives 2026 — BUGFIX: this post already existed in
+// prerender.mjs, deploy.yml, llms.txt, metadata.ts, and loaders.ts, but was missing from this file —
+// found during the Day 23 loop's Gate 8 cross-file audit. Registered here as post73.
+import post73 from './best-nano-banana-pro-alternatives-2026';
+// Day 23 (Jul 30) — Best AI Ad Creative Generator Tools 2026 — budget/solo-founder angle,
+// AdCreative.ai / Creatify / Topview AI / Shhots AI / PhotoRoom compared
+import post74 from './best-ai-ad-creative-generator-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post74, // Day 23 (Jul 30) — Best AI Ad Creative Generator Tools 2026 — pinned first for freshness
+  post73, // Day 22 (Jul 28) — Best Nano Banana Pro Alternatives 2026 — BUGFIX: was live everywhere else but missing from this array, re-added 2026-07-30
   post72, // Day 21 (Jul 25) — Best AI Voice Agent Platforms for Small Business 2026 — pinned first for freshness
   post71, // Day 20 (Jul 23) — What Is Emergent AI? Emergent Abilities Explained — pillar/explainer, low competition — pinned first for freshness
   post70, // Day 19 (Jul 21) — ChatGPT Atlas vs Perplexity Comet vs Dia — AI browser comparison, security angle — pinned first for freshness
