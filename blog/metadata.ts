@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-ad-creative-generator-tools-2026",
+    "title": "Best AI Ad Creative Generator Tools 2026 (Tested for Solo Founders & Small Teams)",
+    "seoTitle": "Best AI Ad Creative Generator Tools 2026",
+    "metaDescription": "AdCreative.ai, Creatify, Topview AI, Shhots AI & PhotoRoom compared on real pricing — best ai ad creative generator picks for solo founders 2026.",
+    "datePublished": "2026-07-30",
+    "dateModified": "2026-07-30",
+    "author": "Navneet Arya",
+    "category": "Marketing",
+    "readTime": "10 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-ad-creative-generator-tools-2026.webp",
+    "excerpt": "AdCreative.ai is the strongest all-round pick if you can absorb its no-free-plan pricing, Shhots AI is the cheapest real entry point at $5 with no subscription, and PhotoRoom covers static product-photo ads for free — while Creatify and Topview AI sit in between on video-first workflows."
+  },
+  {
     "slug": "best-nano-banana-pro-alternatives-2026",
     "title": "Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)",
     "seoTitle": "Best Nano Banana Pro Alternatives 2026: Ranked",
