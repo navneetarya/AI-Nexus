@@ -182,6 +182,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  { slug: 'best-ai-photo-upscaler-tools-2026',           title: 'Best AI Image Upscaler Tools 2026' },
   // ── Batch 1 — original 27 (already generated; re-running is safe) ──────────
   { slug: 'best-ai-writing-tools-2026',                  title: 'Best AI Writing Tools 2026' },
   { slug: 'best-ai-writing-tools-for-beginners-2026',    title: '7 Best AI Writing Tools for Beginners 2026' },

@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-07-30
+# Updated: 2026-07-31
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -56,6 +56,7 @@
 
 ## Blog Posts
 
+- [Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration](https://ainexustools.online/blog/best-ai-photo-upscaler-tools-2026): PhotoRoom, Topaz Photo AI, Let's Enhance, Upscale.media, and Remini compared on real pricing and ecommerce fit — verified July 2026, includes Topaz's September 2025 shift away from its one-time $99 license.
 - [Best AI Ad Creative Generator Tools 2026 (Tested for Solo Founders & Small Teams)](https://ainexustools.online/blog/best-ai-ad-creative-generator-tools-2026): AdCreative.ai, Creatify, Topview AI, Shhots AI, and PhotoRoom compared on real pricing and free plans — verified July 2026, includes AdCreative.ai's 6x video-tier price jump.
 - [Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)](https://ainexustools.online/blog/best-nano-banana-pro-alternatives-2026): Midjourney, Leonardo.ai, PhotoRoom, and Canva AI compared as Nano Banana Pro alternatives on pricing, quality, and free plans.
 - [Best AI Voice Agent Platforms for Small Business in 2026 (Real Costs, Tested)](https://ainexustools.online/blog/best-ai-voice-agent-small-business-2026): Retell AI, Vapi, Bland, ElevenLabs & Synthflow compared on real cost and small-business fit — verified July 2026, includes Synthflow's pricing pivot to Enterprise-only.

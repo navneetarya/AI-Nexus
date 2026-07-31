@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-photo-upscaler-tools-2026",
+    "title": "Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration",
+    "seoTitle": "Best AI Image Upscaler Tools 2026 — Compared & Ranked",
+    "metaDescription": "PhotoRoom, Topaz Photo AI, Let's Enhance, Upscale.media & Remini — best ai image upscaler tools 2026. Real pricing, ecommerce fit, honest verdict.",
+    "datePublished": "2026-07-31",
+    "dateModified": "2026-07-31",
+    "author": "Navneet Arya",
+    "category": "Image",
+    "readTime": "10 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-photo-upscaler-tools-2026.webp",
+    "excerpt": "PhotoRoom is the strongest pick for ecommerce sellers who need background removal and upscaling in one tool, Topaz Photo AI wins on raw upscale quality if you can afford a subscription, and Upscale.media is the best genuinely free option — while Remini remains the fastest way to restore an old family photo."
+  },
+  {
     "slug": "best-ai-ad-creative-generator-tools-2026",
     "title": "Best AI Ad Creative Generator Tools 2026 (Tested for Solo Founders & Small Teams)",
     "seoTitle": "Best AI Ad Creative Generator Tools 2026",

@@ -185,8 +185,13 @@ import post73 from './best-nano-banana-pro-alternatives-2026';
 // Day 23 (Jul 30) — Best AI Ad Creative Generator Tools 2026 — budget/solo-founder angle,
 // AdCreative.ai / Creatify / Topview AI / Shhots AI / PhotoRoom compared
 import post74 from './best-ai-ad-creative-generator-tools-2026';
+// Day 24 (Jul 31) — Best AI Image Upscaler Tools 2026 — ecommerce-seller + photo-restoration angle,
+// PhotoRoom / Topaz Photo AI / Let's Enhance / Upscale.media / Remini compared;
+// callout: Topaz discontinued its $99 one-time Gigapixel license in Sept 2025, subscription-only now
+import post75 from './best-ai-photo-upscaler-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post75, // Day 24 (Jul 31) — Best AI Image Upscaler Tools 2026 — pinned first for freshness
   post74, // Day 23 (Jul 30) — Best AI Ad Creative Generator Tools 2026 — pinned first for freshness
   post73, // Day 22 (Jul 28) — Best Nano Banana Pro Alternatives 2026 — BUGFIX: was live everywhere else but missing from this array, re-added 2026-07-30
   post72, // Day 21 (Jul 25) — Best AI Voice Agent Platforms for Small Business 2026 — pinned first for freshness
