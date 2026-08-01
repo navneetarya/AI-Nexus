@@ -189,8 +189,13 @@ import post74 from './best-ai-ad-creative-generator-tools-2026';
 // PhotoRoom / Topaz Photo AI / Let's Enhance / Upscale.media / Remini compared;
 // callout: Topaz discontinued its $99 one-time Gigapixel license in Sept 2025, subscription-only now
 import post75 from './best-ai-photo-upscaler-tools-2026';
+// Day 25 (Aug 1) — Best AI Receptionist for Small Business 2026 — consumer/product angle,
+// AIRA / Smith.ai / Rosie / Dialzara / Goodcall compared; differentiated from post72's dev/API voice-agent
+// platforms (Retell/Vapi/Bland) by targeting non-technical small business owners instead of builders
+import post76 from './best-ai-receptionist-small-business-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post76, // Day 25 (Aug 1) — Best AI Receptionist for Small Business 2026 — pinned first for freshness
   post75, // Day 24 (Jul 31) — Best AI Image Upscaler Tools 2026 — pinned first for freshness
   post74, // Day 23 (Jul 30) — Best AI Ad Creative Generator Tools 2026 — pinned first for freshness
   post73, // Day 22 (Jul 28) — Best Nano Banana Pro Alternatives 2026 — BUGFIX: was live everywhere else but missing from this array, re-added 2026-07-30

@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-receptionist-small-business-2026",
+    "title": "Best AI Receptionist for Small Business in 2026 (Pricing & Feature Comparison)",
+    "seoTitle": "Best AI Receptionist for Small Business 2026",
+    "metaDescription": "AIRA, Smith.ai, Rosie, Dialzara & Goodcall compared on real pricing and small-business fit — verified July 2026, includes hidden overage costs.",
+    "datePublished": "2026-08-01",
+    "dateModified": "2026-08-01",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "11 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-receptionist-small-business-2026.webp",
+    "excerpt": "AIRA offers the strongest price-to-feature ratio for most small businesses, Smith.ai is the pick if you need real human backup on complex calls, and Rosie is purpose-built for trades and home services — while Goodcall's and Rosie's billing models both hide real costs behind their headline price."
+  },
+  {
     "slug": "best-ai-photo-upscaler-tools-2026",
     "title": "Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration",
     "seoTitle": "Best AI Image Upscaler Tools 2026 — Compared & Ranked",

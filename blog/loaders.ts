@@ -3,6 +3,7 @@ import type { BlogPost } from './types';
 type BlogPostModule = { default: BlogPost };
 
 const BLOG_POST_LOADERS: Record<string, () => Promise<BlogPostModule>> = {
+  'best-ai-receptionist-small-business-2026': () => import('./best-ai-receptionist-small-business-2026'),
   'best-ai-photo-upscaler-tools-2026': () => import('./best-ai-photo-upscaler-tools-2026'),
   'best-ai-ad-creative-generator-tools-2026': () => import('./best-ai-ad-creative-generator-tools-2026'),
   'best-nano-banana-pro-alternatives-2026': () => import('./best-nano-banana-pro-alternatives-2026'),

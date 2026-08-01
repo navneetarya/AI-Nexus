@@ -541,6 +541,8 @@ const TOOL_REVIEWS = [
 // ─── Blog Posts ────────────────────────────────────────────────────────────────
 
 const BLOG_POSTS = [
+  // ── AI Agents / Small Business ───────────────────────────────────────────
+  { title: 'Best AI Receptionist for Small Business in 2026 (Pricing & Feature Comparison)', url: 'https://ainexustools.online/blog/best-ai-receptionist-small-business-2026', summary: 'AIRA, Smith.ai, Rosie, Dialzara, and Goodcall compared on real pricing and small-business fit. AIRA wins on price-to-feature ratio at $24.95/month; Smith.ai is best for human backup on complex calls; Rosie is purpose-built for trades.' },
   // ── AI Writing ────────────────────────────────────────────────────────────
   { title: 'Best AI Writing Tools for Beginners 2026', url: 'https://ainexustools.online/blog/best-ai-writing-tools-for-beginners-2026', summary: 'Comparison of the best AI writing tools for beginners in 2026. Covers Rytr, Grammarly, Quillbot, and Writesonic with free plan options highlighted. Start with Grammarly free and add Rytr for draft generation.' },
   { title: 'Best AI Writing Tools 2026', url: 'https://ainexustools.online/blog/best-ai-writing-tools-2026', summary: 'The 6 best AI writing tools ranked by use case: Grammarly for editing, Rytr for fast drafts, QuillBot for paraphrasing, Writesonic for SEO blogs, Jasper for enterprise teams, and Frase for data-driven content briefs.' },
