@@ -193,8 +193,14 @@ import post75 from './best-ai-photo-upscaler-tools-2026';
 // AIRA / Smith.ai / Rosie / Dialzara / Goodcall compared; differentiated from post72's dev/API voice-agent
 // platforms (Retell/Vapi/Bland) by targeting non-technical small business owners instead of builders
 import post76 from './best-ai-receptionist-small-business-2026';
+// Day 26 (Aug 2) — Best AI Sales Tools for Founders 2026 — under-20-reps angle,
+// Apollo / Clay / Instantly / Smartlead / Lavender compared; callouts: Clay's March 2026
+// pricing overhaul (Starter/Explorer/Pro replaced by Launch $185/mo + Growth $495/mo) and
+// Instantly's modular pricing (lead database + CRM sold separately from the $37.60/mo base)
+import post77 from './best-ai-sales-tools-for-founders-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post77, // Day 26 (Aug 2) — Best AI Sales Tools for Founders 2026 — pinned first for freshness
   post76, // Day 25 (Aug 1) — Best AI Receptionist for Small Business 2026 — pinned first for freshness
   post75, // Day 24 (Jul 31) — Best AI Image Upscaler Tools 2026 — pinned first for freshness
   post74, // Day 23 (Jul 30) — Best AI Ad Creative Generator Tools 2026 — pinned first for freshness
