@@ -44,17 +44,34 @@ const post: BlogPost = {
 <h3>AI Search & Research</h3>
 <p><strong>Perplexity AI</strong> is the standout growth story in AI search. The company reportedly crossed 100 million monthly active users in 2025-2026, growing from 10M in early 2024. Revenue has grown through a combination of Perplexity Pro subscriptions ($20/month) and an enterprise API product. The company's positioning — AI search with citations rather than chatbot responses — differentiated it clearly from ChatGPT and drove word-of-mouth among researchers, students, and professionals who found AI hallucinations unacceptable for research work.</p>
 <p>The growth driver: a specific use case (verified, cited answers) that served a real user need that ChatGPT didn't address well.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://perplexity.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 
 <h3>AI Coding Tools</h3>
 <p><strong>Cursor</strong> achieved significant growth in the developer tools segment, reportedly reaching $100M ARR in 2025 — a milestone that took it less than two years. The key differentiator was treating the IDE as the primary product rather than adding AI as a plugin to an existing editor. Cursor's @Codebase feature and Composer for multi-file editing gave it capabilities that GitHub Copilot (as a VS Code extension) couldn't match without Microsoft restructuring the entire extension model.</p>
 <p><strong>Windsurf</strong> (formerly Codeium) also saw strong growth, with a differentiated positioning around a more aggressive free plan than Cursor and the Cascade agentic feature.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://cursor.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Cursor →</a>
+  <a href="https://windsurf.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Windsurf →</a>
+</div>
 
 <h3>AI Voice & Audio</h3>
 <p><strong>ElevenLabs</strong> became the dominant AI voice platform in 2025-2026, driven primarily by voice cloning adoption. The ability to create a convincing voice clone from a 1-minute audio sample opened use cases across content creation, accessibility tools, and entertainment that previous voice synthesis couldn't address. ElevenLabs' API became the standard voice synthesis integration for third-party apps — a distribution flywheel that accelerated growth beyond their own consumer products.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+</div>
 
 <h3>Foundation Model Companies</h3>
 <p><strong>Anthropic</strong> had one of the most significant growth trajectories among foundation model companies in 2025-2026. Claude 3.5 Sonnet's coding capabilities drove enterprise adoption, particularly among development teams. Major investments from Amazon and Google provided both capital and distribution through AWS Bedrock and Google Cloud partnerships.</p>
 <p><strong>Mistral AI</strong> established itself as the leading European AI company, with strong enterprise adoption driven by data sovereignty concerns — particularly relevant for European companies that couldn't use US-domiciled AI providers for sensitive data processing.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude →</a>
+  <a href="https://mistral.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Mistral AI →</a>
+</div>
 
 <h2>Growth Patterns: What Successful AI Startups Have in Common</h2>
 <p><strong>Clear differentiation from foundation model access</strong>: The startups that struggled in 2025-2026 were those whose primary value proposition was "we give you access to GPT-4/Claude." Foundation model API costs have dropped, making access less of a differentiator. Successful startups built domain expertise, workflow integration, or proprietary data on top of foundation models.</p>

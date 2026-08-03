@@ -127,9 +127,17 @@ const post: BlogPost = {
 
 <h3>Development Tools: Cursor, Windsurf, VS Code</h3>
 <p><strong>Cursor</strong> and <strong>Windsurf</strong> — the two AI-native code editors most frequently compared against GitHub Copilot — both added MCP support to let their AI agents call external tools mid-task: querying a database for a schema before writing a migration, checking a project management tool for ticket context, or pulling live API documentation without leaving the editor. <strong>VS Code</strong> gained MCP support through GitHub Copilot's tool-calling layer, putting the protocol inside the most widely used code editor in the world rather than only in dedicated AI-native forks. For developers, the practical effect is that an MCP server built once — say, for a company's internal API — works across whichever of these editors a team happens to use.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://cursor.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Cursor →</a>
+  <a href="https://windsurf.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Windsurf →</a>
+</div>
 
 <h3>Automation Platforms: n8n, Zapier, Activepieces</h3>
 <p><strong>n8n</strong> has the deepest MCP integration of the major automation platforms: an MCP Client node lets n8n workflows call external MCP servers, an MCP Server Trigger node exposes a single n8n workflow as a callable tool for any AI host, and a first-party instance-level MCP server (shipped April 2026) lets an AI client build, validate, and publish entire n8n workflows from a plain-English prompt. <strong>Zapier</strong> ships Zapier MCP, which exposes its existing catalogue of app connections to any MCP-compatible AI host — letting an AI assistant trigger a Zap-connected action without Zapier rebuilding the integration for each AI vendor. <strong>Activepieces</strong>, the open-source Zapier alternative, has built MCP support natively into its "pieces" architecture, meaning each of its integrations functions simultaneously as a workflow building block and a callable MCP server.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://n8n.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit n8n →</a>
+  <a href="https://zapier.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Zapier →</a>
+</div>
 <p>For a deeper comparison of how these three platforms differ on pricing and AI-native capability beyond MCP support, see <a href="/blog/best-no-code-ai-automation-tools-2026/">our automation platform breakdown</a> — and for the broader question of when automation is the right tool versus when you need genuine agent reasoning, see <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a></p>
 
 <h3>Data and Research Platforms Adopting MCP</h3>

@@ -167,8 +167,15 @@ const post: BlogPost = {
 
 <h2>Which AI Contract Analysis Tool Should You Actually Use?</h2>
 <p><strong>Choose Claude or ChatGPT if:</strong> you review contracts occasionally, want to understand a clause in plain English before signing, and don't need a persistent negotiation playbook — this is the highest-value starting point for almost every freelancer and small business owner.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude →</a>
+  <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ChatGPT →</a>
+</div>
 <p><strong>Add a purpose-built freelancer-tier reviewer if:</strong> you sign enough contracts regularly that structured risk scoring and reusable negotiation language save real time — budget $13-$30/month and verify current reviews before committing.</p>
 <p><strong>Consider Spellbook if:</strong> you're a solo lawyer or very small firm that drafts contracts as a core part of daily work inside Microsoft Word — not a good fit for most non-lawyer freelancers or small businesses.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.spellbook.legal" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Spellbook Trial →</a>
+</div>
 <p><strong>Skip Harvey AI and Luminance entirely</strong> unless you're evaluating software on behalf of a law firm or a legal department with real procurement authority — both are priced and sold for a buyer that isn't the audience of this guide.</p>
 <p>For the broader AI toolkit a freelancer or small business is likely already assembling, see AI Nexus's <a href="/blog/best-ai-tools-for-freelancers-2026/">Best AI Tools for Freelancers</a> roundup, the <a href="/blog/ai-tools-for-solopreneurs-2026/">AI for Solopreneurs</a> complete stack guide, and <a href="/blog/best-ai-tools-for-startups-2026/">Best AI Tools for Startups</a> for adjacent operational tooling beyond contracts.</p>
 
