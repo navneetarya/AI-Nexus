@@ -116,12 +116,21 @@ const post: BlogPost = {
 <p><strong>Commercial rights:</strong> Leonardo's paid plans include full commercial use. Importantly, the free plan also grants commercial rights for outputs — more permissive than many competitors.</p>
 <p><a href="/tools/leonardo-ai/" style="color:#0D9488;font-weight:600;">→ Full Leonardo.ai review</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>Midjourney — The Gold Standard for Raw Image Quality</h2>
 <p>Midjourney's output quality at its best is still unmatched. The v6 and v6.1 models produce images with a painterly depth, natural light handling, and compositional intelligence that other tools are still catching up to. For portfolio pieces, hero images, and creative inspiration, it remains the benchmark.</p>
 <p><strong>The web app</strong> (released in 2024) moved the experience out of Discord and into a proper browser interface. Image history, favourites, and generation controls are now accessible without navigating a Discord server.</p>
 <p>Midjourney requires learning its prompt vocabulary to get consistently good results. Experienced users who invest the time produce outputs that are difficult to distinguish from commissioned illustration. But there's no shortcut — the learning curve is real.</p>
 <p><strong>Where Midjourney struggles:</strong> Hands and text are still inconsistently rendered. There's no custom model training — every generation starts fresh. And there's no free plan — subscriptions start at $10/month for 200 images. On the Basic plan, your images appear in the Midjourney community gallery; you need the Pro plan ($60/month) for stealth mode and full privacy.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://midjourney.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Midjourney →</a>
+</div>
 <h2>Who Should Choose Which</h2>
 <p><strong>Choose Leonardo.ai if:</strong></p>
 <ul style="margin:12px 0 12px 24px;line-height:2.0;">

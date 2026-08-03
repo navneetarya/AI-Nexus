@@ -111,6 +111,12 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> Content creators, marketers, and anyone who needs regular AI images without a subscription</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>2. Stable Diffusion — Best for Unlimited Free Generation</h2>
 <p><strong>Rating: 4.6/5 · Free (self-hosted) · Cloud options vary</strong></p>
 <p>Stable Diffusion is the only truly unlimited, free AI image generator — but there's a catch: you need to run it yourself. The open-source model runs locally on your computer (requires a GPU with 8GB+ VRAM) or through cloud interfaces like ComfyUI, Automatic1111, or various hosted platforms.</p>
@@ -122,6 +128,9 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> Technical users, artists, and power users who generate hundreds of images</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://stability.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Stable Diffusion →</a>
+</div>
 <h2>3. DALL-E 3 — Best for Beginners and Prompt Accuracy</h2>
 <p><strong>Rating: 4.4/5 · Free via ChatGPT · Full access: $20/month (ChatGPT Plus)</strong></p>
 <p>DALL-E 3 takes the opposite approach from Stable Diffusion. Instead of maximum control, it optimises for ease of use. Describe what you want in plain English — no prompt engineering, no negative prompts, no settings to tweak — and DALL-E generates it. The results are consistently good, even with simple prompts that would produce mediocre output on other tools.</p>

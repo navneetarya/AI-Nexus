@@ -103,6 +103,9 @@ const post: BlogPost = {
   <li><strong>Best subscription:</strong> ChatGPT Plus — $20/month</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ChatGPT →</a>
+</div>
 <h2>Claude Opus 4.8 — The Deepest Thinker</h2>
 <p><strong>Best for: Long documents, nuanced writing, complex reasoning, and coding with full context</strong></p>
 <p>Claude Opus 4.8 is Anthropic's most powerful model and, by most independent benchmarks in mid-2026, the best reasoning model available to general consumers. On tasks that require holding a large amount of information in context — analysing a 200-page report, reviewing a full codebase, or writing a well-structured 3,000-word article — Claude Opus 4.8 produces outputs that are consistently better than GPT-5.5 and significantly better than Grok 4.</p>
@@ -114,6 +117,9 @@ const post: BlogPost = {
   <li><strong>Best subscription:</strong> Claude Pro — $20/month</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude →</a>
+</div>
 <h2>Grok 4 — The Real-Time Research Model</h2>
 <p><strong>Best for: Current events, social media research, and X/Twitter-integrated workflows</strong></p>
 <p>Grok 4 is xAI's fourth-generation model and represents a genuine leap over Grok 3. Its core advantage is real-time information access — Grok 4 has live web search, live X/Twitter feed access, and can surface information from the last hour rather than a training cutoff months in the past. For journalists, social media managers, investors, and researchers whose work depends on current data, this is a meaningful advantage that GPT-5.5 and Claude Opus 4.8 cannot fully replicate.</p>
@@ -125,6 +131,9 @@ const post: BlogPost = {
   <li><strong>Best subscription:</strong> X Premium+ — $16/month</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://grok.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Grok →</a>
+</div>
 <h2>Which One Should You Actually Pay For?</h2>
 <p>The honest answer depends on what you do with AI daily.</p>
 <p><strong>Choose Claude Pro (Opus 4.8)</strong> if your primary use cases are long-form writing, in-depth research, document analysis, or serious coding work. The depth advantage is real and meaningful. At $20/month it is the highest-value single subscription for knowledge workers who push AI hard.</p>

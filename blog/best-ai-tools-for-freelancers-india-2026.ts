@@ -112,6 +112,12 @@ const post: BlogPost = {
 <p>India-specific note: Grammarly now accepts UPI payments and offers annual billing in INR (₹699/month when billed annually = ₹8,388/year). That's significantly cheaper than the USD price and avoids forex charges entirely.</p>
 <p><a href="/tools/grammarly/" style="color:#0D9488;font-weight:600;">→ Full Grammarly review with free vs Premium breakdown</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://grammarly.com?affiliateId=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>2. Rytr — Best AI Writing Tool for Indian Content Freelancers</h2>
 <p><strong>Category: AI Writing · Free plan: 10,000 characters/month · INR pricing: ~₹750/month</strong></p>
 <p>Rytr is the AI writing tool with the best value-to-quality ratio for Indian freelancers. The free plan gives you 10,000 characters per month — enough for 2–3 complete blog drafts or 8–10 social media posts. The paid Saver plan (~₹750/month) removes limits entirely.</p>
@@ -119,12 +125,24 @@ const post: BlogPost = {
 <p>Honest limitation: Rytr's output for highly technical niches (fintech, legal, medical) needs significant editing. For general content work — which is the majority of Indian freelance content briefs — it cuts first-draft time by 60% or more.</p>
 <p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review</a> &nbsp;·&nbsp; <a href="/compare/rytr-vs-writesonic/" style="color:#0D9488;font-weight:600;">→ Rytr vs Writesonic — which AI writer wins for Indian freelancers?</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>3. Canva AI — Best Free Design Tool for Indian Freelancers</h2>
 <p><strong>Category: Design · Free plan: Full access to templates · INR pricing: ₹499/month (Pro) · UPI accepted</strong></p>
 <p>Canva is the most-used design tool among Indian freelancers, and for good reason. The free plan is genuinely comprehensive — hundreds of templates for social media graphics, presentations, thumbnails, and marketing materials, all customisable with your client's branding. The AI features (Magic Design, text-to-image, background removal) are available on the free plan with limited credits.</p>
 <p>Canva Pro at ₹499/month (UPI accepted) is worth it the moment you take on a client who needs commercial downloads, brand kits, or custom fonts. The INR pricing makes it one of the most accessible professional design subscriptions available to Indian freelancers.</p>
 <p>The ecosystem advantage: once your client's branding is in Canva, every deliverable — social posts, decks, email headers, ad creatives — can be produced from the same brand kit in minutes. For retainer-based social media freelancers, this alone saves 3–4 hours per client per month.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>4. Taskade — Best for Freelancers Managing Multiple Client Projects</h2>
 <p><strong>Category: Productivity · Free plan: Available · Pricing: USD (check for INR availability)</strong></p>
 <p>Taskade combines project management, AI-generated task breakdowns, and client communication in one tool. The feature that matters most for Indian freelancers managing multiple clients is the AI Workflow Generator — describe a client project in one sentence and Taskade generates a full task breakdown with subtasks, timelines, and notes.</p>
@@ -132,12 +150,24 @@ const post: BlogPost = {
 <p>Note: Taskade's paid plans are currently USD-priced. The free tier is sufficient for freelancers managing 1–3 clients. Verify INR availability directly on their pricing page before upgrading.</p>
 <p><a href="/tools/taskade/" style="color:#0D9488;font-weight:600;">→ Full Taskade review</a> &nbsp;·&nbsp; <a href="/compare/taskade-vs-notion/" style="color:#0D9488;font-weight:600;">→ Taskade vs Notion — which is better for Indian freelancers?</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>5. Perplexity — Best Free Research Tool for Brief-Heavy Freelance Work</h2>
 <p><strong>Category: Research · Free plan: Unlimited searches · Pricing: Free to start</strong></p>
 <p>Perplexity is an AI-powered search engine that provides cited, sourced answers — not <a href="/glossary/#hallucination" style="color:var(--a1);font-weight:600;">AI hallucinations</a>. For freelancers who write research-heavy content (industry reports, explainer articles, technical blogs), Perplexity is the fastest way to gather accurate background information before writing.</p>
 <p>The key difference from ChatGPT for research: Perplexity cites its sources with live links. You can verify every claim before putting it in a client deliverable. For Indian freelancers writing for international clients who fact-check content, this citation trail is essential.</p>
 <p>The free plan has no meaningful limits for research purposes. It's the one tool on this list where there's no reason to pay unless you need the Pro tier's advanced model access.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>The India-Specific Freelance AI Stack — Starting Free</h2>
 <p>Based on the research, the optimal starting stack for an Indian freelancer who wants to use AI tools without spending anything upfront:</p>
 <ol style="margin:12px 0 12px 24px;line-height:2.2;">

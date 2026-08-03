@@ -136,6 +136,12 @@ const post: BlogPost = {
 <p><strong>Payment &amp; access:</strong> Sign up with any Indian email address at grammarly.com — no credit card, no dollar payment. The browser extension installs in under 2 minutes. The Pro plan (tone detection, plagiarism checker, vocabulary enhancement) is approximately ₹999/month when billed annually; UPI-linked cards and Indian debit cards are accepted at checkout via the Google Play Store if the main site payment fails.</p>
 <p><a href="/tools/grammarly/" style="color:#0D9488;font-weight:600;">→ Full Grammarly review with free plan breakdown</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://grammarly.com?affiliateId=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>2. Rytr — Best Free AI Writing Tool with Hindi Support</h2>
 <p><strong>Free plan: 10,000 characters/month · Hindi output supported · No credit card</strong></p>
 <p>Rytr is the only AI writing tool in this list that generates content directly in Hindi from the free plan. Select Hindi from the Language dropdown before generating, and Rytr produces Hindi output — usable for drafts, social posts, and short assignments in Hindi medium. The quality reads like translated English rather than native Hindi prose, so proofread carefully for idioms and phrasing, but the structural draft is a solid starting point.</p>
@@ -144,6 +150,12 @@ const post: BlogPost = {
 <p><strong>INR pricing:</strong> The Saver plan is approximately ₹750/month (unlimited characters, all 40+ use cases). The free plan requires no card at all.</p>
 <p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review — free plan, Hindi support &amp; pricing</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>3. QuillBot — Best Free Tool for Paraphrasing Research</h2>
 <p><strong>Free plan: 125 words/paraphrase · Summariser up to 1,200 words · No credit card</strong></p>
 <p>QuillBot is the most practical tool for the most common student pain point: paraphrasing source material for essays without accidentally plagiarising. The free plan's paraphraser rewrites up to 125 words at a time in Standard mode — enough for a paragraph from a journal article or textbook. The Standard and Fluency modes are both available free; the more powerful Creative and Formal modes require Premium.</p>
@@ -152,6 +164,12 @@ const post: BlogPost = {
 <p><strong>INR pricing:</strong> QuillBot Premium is approximately ₹830/month (removes word limits, unlocks all paraphrase modes, adds Plagiarism Checker).</p>
 <p><a href="/tools/quillbot/" style="color:#0D9488;font-weight:600;">→ Full QuillBot review — free plan &amp; what Premium actually adds</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://quillbot.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>4. Perplexity — Best Free AI Research Tool for Indian Students</h2>
 <p><strong>Free plan: Unlimited daily searches · No credit card · Understands Hindi queries</strong></p>
 <p>Perplexity is an AI search engine that reads current web sources and cites them in its answers. For students, this is more useful than ChatGPT for research because every answer links to the source — you can verify the claim and follow the reference directly. The free plan allows unlimited daily searches with no character or session limits.</p>
@@ -159,12 +177,24 @@ const post: BlogPost = {
 <p><strong>UPSC preparation use case:</strong> Ask Perplexity "What were the major Supreme Court judgements in India in the last 6 months relevant to UPSC GS-2?" and it returns a structured list with source links — a research task that would otherwise take 45 minutes of manual searching done in 30 seconds.</p>
 <p><strong>Hindi support:</strong> Type your query in Hindi and Perplexity responds in Hindi when asked. Useful for students who think more clearly in Hindi and want AI assistance in their stronger language.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>5. Gamma — Best Free Tool for Presentation Slides</h2>
 <p><strong>Free plan: 400 AI credits on sign-up · 4–5 complete presentations · No credit card</strong></p>
 <p>Gamma generates a complete, visually polished slide deck from a topic prompt or outline in under 3 minutes. For Indian students who regularly need presentations for seminars, project submissions, viva preparation, or college festivals, Gamma removes the design work entirely — you provide the content, Gamma handles structure, layout, and visual formatting.</p>
 <p>The 400 free credits cover 4–5 complete presentations. Practical advice: use the credits for important submissions rather than practice decks. Export the final presentation as a PDF or PowerPoint file to submit — the exported file has no Gamma branding on the free plan.</p>
 <p><strong>Specific use case for Indian students:</strong> Paste your essay or research notes into Gamma's prompt box and select "Create a presentation from this text." It restructures your written content into a slide format with headings, bullet points, and visual hierarchy — useful for converting a written seminar paper into a slideshow without rewriting everything from scratch.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>6. Taskade — Best Free AI Tool for Study Planning</h2>
 <p><strong>Free plan: Unlimited projects · AI task generation · No credit card · Hindi supported</strong></p>
 <p>Taskade combines task management, notes, mind maps, and AI generation in one workspace. For students, the most useful feature is the AI Project Generator: describe your assignment or exam preparation goal in one sentence and Taskade generates a full breakdown with subtasks, suggested timelines, and notes. For a student preparing for end-semester exams across 5 subjects, this takes the planning work off your plate in under 2 minutes.</p>
@@ -172,6 +202,12 @@ const post: BlogPost = {
 <p><strong>INR pricing:</strong> The Pro plan is approximately ₹650/month if you need unlimited AI runs for heavier workloads.</p>
 <p><a href="/tools/taskade/" style="color:#0D9488;font-weight:600;">→ Full Taskade review — free plan &amp; student use cases</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>The Zero-Cost Student Stack for India — How to Build It</h2>
 <p>You can have a fully functional AI-powered study setup in India at ₹0/month. Here is the exact order to build it:</p>
 <ul style="margin:12px 0 16px 24px;line-height:2.6;">

@@ -118,12 +118,24 @@ const post: BlogPost = {
 <p>Where Jasper beats Writesonic: team collaboration, brand voice enforcement across multiple users, and a more polished document editor for long-form revision sessions. If you manage a content team of 3+, Jasper's collaboration features justify the premium.</p>
 <p><strong>Bottom line:</strong> For individual bloggers, freelancers, and content marketers writing 4–10 posts per month, Writesonic at $19/month is the right Jasper replacement.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>2. Rytr — Best Cheap Jasper Alternative for Short-Form Copy</h2>
 <p><strong>Price:</strong> $9/month (Saver, unlimited) · <strong>Free plan:</strong> 10,000 characters/month</p>
 <p>Rytr is the right Jasper alternative if your primary output is short-form copy: social captions, email subject lines, ad variations, product descriptions, and blog outlines. At $9/month for unlimited characters, it costs 80% less than Jasper and handles 80% of what most solo creators actually produce.</p>
 <p>The key limitation: Rytr generates 300–500 word outputs per prompt. It doesn't have a long-form blog post writer in the same sense as Writesonic or Jasper. Writers who need to produce full 1,500–2,500 word SEO articles should look at Writesonic instead.</p>
 <p>The free plan (10,000 characters/month) is genuinely functional — enough to write 3–4 social media batches or a week of email subject lines. It's the best way to test AI writing tools before committing money.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>3. Copy.ai — Best Free Jasper Alternative</h2>
 <p><strong>Price:</strong> Free forever (short-form) · Paid from $49/month (Teams)</p>
 <p>Copy.ai's free plan is the most generous in the category for short-form copy. Unlimited words on 90+ templates including product descriptions, social captions, blog intros, email subject lines, and ad copy. The free plan has no word limit — just a monthly "workflow run" limit on more complex automations.</p>
@@ -136,6 +148,12 @@ const post: BlogPost = {
 <p>Frase beats Jasper on SEO research depth. Jasper has a Surfer SEO integration, but Frase's native research workflow is more seamless for writers optimising for search. The trade-off: Frase's generative AI produces shorter, more structured outputs — better for briefs and outlines than full long-form drafts.</p>
 <p>The $15/month Solo plan limits you to 4 SEO documents per month. For writers publishing 1 post per week, this is a tight constraint — move to the Basic plan at $45/month for 30 documents if you're publishing regularly.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://frase.io?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>Which Jasper Alternative Should You Choose?</h2>
 <p>The right Jasper alternative depends entirely on what you're writing:</p>
 <p><strong>Long-form SEO blog posts → Writesonic ($19/month).</strong> Same blog post quality as Jasper's Creator plan at $49/month. Unlimited words. Article Writer 6.0 handles keyword research, outline, and draft in one workflow.</p>

@@ -124,6 +124,12 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> Startups and small businesses willing to invest ₹1,650–₹7,900 in their brand identity</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://looka.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Looka →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>2. Canva AI — Best Free Logo Maker (Top Pick for Indian Creators)</h2>
 <p><strong>Rating: 4.5/5 · Free plan: Full logo creation and PNG download · Pro: ₹499/month · UPI accepted</strong></p>
 <p>Canva has evolved from a simple graphic design tool into a full AI-powered design suite, and its logo maker is genuinely impressive on the free plan. You can start from hundreds of logo templates, customise every element, and download in PNG format — completely free, with no credit card required.</p>
@@ -135,6 +141,12 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> Indian freelancers and creators who want a professional logo and brand kit at low cost</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>3. Leonardo.ai — Best for Unique AI-Generated Logo Imagery</h2>
 <p><strong>Rating: 4.2/5 · Free plan: 150 tokens/day · Paid: $12/month (~₹990)</strong></p>
 <p>Leonardo.ai is the most creative option on this list — and the most unpredictable. Instead of templates, you write a text prompt describing the logo you want (for example: "minimalist fox icon for a tech company, flat design, teal and white") and Leonardo generates completely original imagery using its AI models.</p>
@@ -146,6 +158,12 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> Creative professionals who want a unique brand mark and can iterate on prompts</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>4. Hatchful by Shopify — Best Completely Free Option (No Signup Required)</h2>
 <p><strong>Rating: 3.8/5 · Completely free · No account needed</strong></p>
 <p>Hatchful is Shopify's free logo maker, and its main advantage is total simplicity. Pick your industry, select a visual style, choose your colours, and Hatchful generates logo options in under a minute. You can download high-resolution files for free — no account required, no watermarks, no upsells, no credit card.</p>

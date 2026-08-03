@@ -57,29 +57,59 @@ const post: BlogPost = {
 <p>The workflow that works: Use Ocoya's AI to write 5–7 captions in one sitting for the week → pair each with a visual template → schedule them all. For a social media manager handling 3–5 client accounts, this eliminates the most time-consuming parts of the job. Verified user reports show workflows going from 6 hours/week to 90 minutes with this approach.</p>
 <p><strong>The honest limitation:</strong> Ocoya doesn't have a permanent free plan. The $15/month Starter tier covers 1 workspace and 5 social profiles, which is fine for one brand. If you manage 10+ accounts, you'll need a higher tier. Compare with Buffer or Hootsuite in our <a href="/compare/ocoya-vs-buffer-vs-hootsuite/" style="color:var(--a1);font-weight:600;">Ocoya vs Buffer vs Hootsuite comparison</a>.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://www.ocoya.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Ocoya Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>2. Opus Clip — Turn Long Videos into Short Clips Automatically</h2>
 <p><strong>Category: Video · Rating: 4.3/5 · Pricing: Free + from $19/month · <a href="/tools/opus-clip/" style="color:var(--a1);font-weight:600;">Full Opus Clip Review →</a></strong></p>
 <p>If you create any long-form video content — YouTube videos, webinars, podcast recordings, Zoom calls — Opus Clip is the most valuable social media AI tool you can add to your stack. You paste a video URL (YouTube, Loom, or upload a file), and Opus Clip uses AI to identify the most engaging moments, cut them into short clips, add captions, and reformat for vertical (Reels/TikTok) or horizontal delivery.</p>
 <p>The AI scoring system is surprisingly accurate at finding the "hook" moments in a longer video — the clips it picks outperform manually selected excerpts based on community and user reports. The free plan gives you 60 minutes of processing per month, which is enough for 1–2 long videos.</p>
 <p><strong>Who it's for:</strong> Any creator who already makes long-form content and wants to extend its life across Instagram Reels, TikTok, YouTube Shorts, and LinkedIn without spending 4 hours in CapCut per video.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>3. Leonardo.ai — AI Image Generation for Organic Social Posts</h2>
 <p><strong>Category: Image · Rating: 4.5/5 · Pricing: Free + from $12/month · <a href="/tools/leonardo-ai/" style="color:var(--a1);font-weight:600;">Full Leonardo.ai Review →</a></strong></p>
 <p>For social media managers who need original images — not stock photos, not overused Canva templates — Leonardo.ai is the best free option available. The free plan gives 150 credits per day, which translates to roughly 75–150 images depending on the generation settings. That's more than enough for a full week of social content created in one session.</p>
 <p>The Image-to-Image mode is the most practically useful feature for social: you upload a rough layout or brand reference image, and Leonardo renders a polished version in your chosen style. This is faster than rebuilding templates from scratch and more original than reusing the same Canva design for the 40th time.</p>
 <p><strong>Practical workflow:</strong> Keep a "brand style prompt" saved in Leonardo (describing your color palette, mood, and aesthetic). Use it at the start of every generation session. Your images stay consistent without requiring manual template adjustment every time.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>4. InVideo AI — Faceless Video Content for Social Media</h2>
 <p><strong>Category: Video · Rating: 4.0/5 · Pricing: Free + from $20/month · <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">Full InVideo AI Review →</a></strong></p>
 <p>InVideo AI targets a specific use case: you type a topic or script, and the AI builds a complete short video with stock footage, voiceover, captions, and music. It's designed for faceless YouTube channels and social media accounts that publish educational or informational content without showing a person on camera.</p>
 <p>For social media teams that need to publish video content at high volume without a filming setup, InVideo reduces a 4-hour production task to a 20-minute edit. The AI chooses relevant stock footage, but manual review and clip swapping is recommended — about 20–30% of auto-selected footage misses the mark based on verified user reports.</p>
 <p><strong>Free plan note:</strong> The free tier limits you to 10 exports per week with a watermark. Sufficient for testing; remove the watermark at $20/month.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://invideo.sjv.io/c/5629153/883681/12258" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>5. Rytr — Fast AI Captions When You Need a Quick Draft</h2>
 <p><strong>Category: Writing · Rating: 4.0/5 · Pricing: Free + $9/month · <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">Full Rytr Review →</a></strong></p>
 <p>Rytr has a dedicated "Social Media Post" template that generates platform-specific captions (Instagram, Facebook, LinkedIn, Twitter) from a brief description. The free plan gives 10,000 characters per month — roughly 80–100 individual captions — which covers most solo creators' needs entirely.</p>
 <p>Where Rytr excels over Ocoya's caption tool is flexibility: you can run multiple tone variations, change the CTA, and ask for longer LinkedIn posts or shorter punchy Twitter hooks from the same brief. Ocoya is better when you want captions + scheduling integrated; Rytr is better when you just need raw caption copy fast and plan to schedule it yourself.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>Building Your Social Media AI Stack</h2>
 <p>You don't need all five tools. The right combination depends on your volume and content type:</p>
 <ul style="margin:12px 0 16px 24px;line-height:2.3;">

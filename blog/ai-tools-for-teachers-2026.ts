@@ -112,6 +112,12 @@ const post: BlogPost = {
   <li><strong>Time saved:</strong> 2-3 hours per presentation reduced to 15-30 minutes of editing</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>2. Grammarly — Streamline Feedback and Communication</h2>
 <p><strong>Rating: 4.5/5 · Free plan: Unlimited · Paid: $12/month</strong></p>
 <p>Teachers write more than most professionals — report card comments, parent emails, student feedback, assignment instructions, referral letters. Grammarly works silently in the background across all of these, catching errors, improving clarity, and suggesting better phrasing.</p>
@@ -123,6 +129,12 @@ const post: BlogPost = {
   <li><strong>Time saved:</strong> 30-60 minutes per grading session through faster, cleaner writing</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://grammarly.com?affiliateId=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>3. Notion AI — The Ultimate Lesson Planning System</h2>
 <p><strong>Rating: 4.3/5 · Limited trial · Paid: $10/month add-on</strong></p>
 <p>Notion is already the best organisation tool for teachers — its databases, templates, and linked pages make lesson planning, curriculum mapping, and resource tracking intuitive. Adding Notion AI to the mix turns it into a planning powerhouse.</p>
@@ -134,6 +146,12 @@ const post: BlogPost = {
   <li><strong>Time saved:</strong> 1-2 hours per week on lesson planning and curriculum organisation</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>4. Rytr — Quick Worksheet and Content Generation</h2>
 <p><strong>Rating: 4.0/5 · Free plan: 10,000 characters/month · Paid: $9/month</strong></p>
 <p>Rytr is the most straightforward tool on this list — and for many teaching tasks, straightforward is exactly what you want. Need 10 comprehension questions for a reading passage? A vocabulary matching exercise? A writing prompt with scaffolding? Type the topic into Rytr, pick the use case, and you get usable content in seconds.</p>
@@ -145,6 +163,12 @@ const post: BlogPost = {
   <li><strong>Time saved:</strong> 30-60 minutes per week on worksheet and content creation</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>My Recommended AI Stack for Teachers</h2>
 <p>Here's the exact setup I'd recommend based on budget:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">

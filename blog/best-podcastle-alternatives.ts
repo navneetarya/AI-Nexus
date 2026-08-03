@@ -100,6 +100,12 @@ const post: BlogPost = {
 <p><strong>Free plan:</strong> 1 hour of transcription per month, basic audio and video editing, watermarked exports. Paid Creator plan at $12/month removes limits.</p>
 <p><a href="/compare/podcastle-vs-descript/" style="color:#0D9488;font-weight:600;">→ See full Podcastle vs Descript comparison</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://descript.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>#2 Riverside.fm — Best for Remote Guest Recording Quality</h2>
 <p>Riverside.fm ($15/month) is the most direct competitor to Podcastle for remote podcast recording — and it does the core job slightly better. Where Podcastle records locally and uploads, Riverside also records locally but adds 4K video recording per participant, uncompressed WAV audio tracks, and a more polished in-browser guest experience.</p>
 <p><strong>Why recording quality matters here:</strong> Remote guest interviews are where audio quality most often breaks down. Internet instability during a Zoom call produces degraded audio. Riverside and Podcastle both solve this by recording on the guest's local device — but Riverside's track quality and upload reliability is marginally better based on verified user reports.</p>

@@ -90,23 +90,47 @@ const post: BlogPost = {
 <p>What makes Claude particularly valuable for startups is output quality for nuanced tasks. Where simpler AI tools produce generic responses, Claude handles context-rich requests — "I'm a B2B SaaS startup targeting mid-market HR teams, draft an email to a prospect VP of HR who mentioned budget constraints on LinkedIn" — with specificity and relevance that actually gets responses.</p>
 <p>The 200K token context window means Claude can read and analyse an entire business plan, competitor document, or lengthy legal agreement in one session. For startup founders who regularly need thorough analysis of complex documents, this is practically useful, not just a spec number.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude →</a>
+</div>
 <h2>2. Gamma — Pitch Decks in Under 30 Minutes</h2>
 <p>Building a pitch deck for a fundraise or client presentation from scratch in PowerPoint or Google Slides takes 3–6 hours. With Gamma, you describe your startup and what the deck should cover, and it generates a complete structured presentation — slide by slide, with visual design — in under 2 minutes. You spend 20–25 minutes refining rather than building from a blank canvas.</p>
 <p>For startups that pitch regularly — investors, enterprise customers, accelerator applications — the time savings compound quickly. Gamma's free plan includes 400 AI credits (roughly 10 full deck generations), which is enough for several months of occasional use. The $8/month Plus plan covers regular pitch deck work without limits.</p>
 <p>The interactive deck format (web-published URL, no file download required) is also a practical advantage for investor outreach — a live link rather than a PDF attachment opens more reliably and allows tracking whether it was viewed.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>3. Canva AI — Design Without Hiring a Designer</h2>
 <p>Most early-stage startups can't justify hiring a designer. Canva's free plan and AI features have made professional-looking marketing assets, social posts, presentations, and one-pagers accessible without design training. The Magic Design feature generates complete branded templates from your content. Magic Write assists with copy for marketing assets. The background remover and AI image generator handle product photography and visual content without external tools.</p>
 <p>Canva Pro at $15/month adds Brand Kit (consistent colours, fonts, logos applied automatically), 100M+ stock assets, and one-click resize for different platform formats — essential for startups producing content across multiple channels. For a startup with marketing activity, the Pro plan pays for itself quickly in saved design time.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>4. Notion AI — Build Your Startup's Knowledge Base</h2>
 <p>Notion is the operational backbone for many startups — product roadmaps, meeting notes, customer research, technical documentation, and team wikis all live in one flexible workspace. Notion AI ($8/month add-on) brings AI directly into that workspace: summarise meeting notes, extract action items, draft documentation, and query your existing Notion content in plain language.</p>
 <p>For a startup scaling from 2 to 10 people, Notion's knowledge base prevents the "everything lives in someone's head" problem. AI that can quickly surface relevant existing documentation and generate consistent documentation templates makes the system easier to maintain as the team grows.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>5. GitHub Copilot — For Technical Founders Building Product</h2>
 <p>For technical founders who write code themselves, GitHub Copilot at $10/month is among the best investments available. Copilot's in-editor autocomplete handles boilerplate, suggests implementations, and writes tests — accelerating solo development velocity meaningfully. For a founder building an MVP while also managing sales, marketing, and fundraising, every hour saved in coding has high opportunity cost value.</p>
 <p>The business case is straightforward: if Copilot saves one hour per day of coding time (a conservative estimate for regular users), it saves the equivalent of 20+ hours per month for $10. There are few investments with that ROI at this stage.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://github.com/features/copilot" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit GitHub Copilot →</a>
+</div>
 <h2>Building the Right AI Stack for Your Startup</h2>
 <p>The principle is leverage per dollar, not completeness. Don't subscribe to every AI tool — subscribe to the ones that directly address your highest-friction workflows.</p>
 <p>For most early-stage startups, the highest-leverage starting point is: <strong>Claude</strong> for writing and research, <strong>Gamma</strong> for presentations, and <strong>Canva AI</strong> for design. Total monthly cost: $35–43. Test for two months and add Notion AI and GitHub Copilot only if the workflow need is clear.</p>

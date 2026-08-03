@@ -92,6 +92,9 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> Solopreneurs, marketers, and non-developers who need a working app deployed — not a prototype</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://lovable.dev" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Lovable →</a>
+</div>
 <h2>2. Bolt — Best for Frontend-Heavy Projects and Framework Flexibility</h2>
 <p><strong>Rating: 4.3/5 · Free: Limited tokens · Paid: from $20/month</strong></p>
 <p>Bolt (by StackBlitz) is Lovable's closest competitor and the better choice for frontend-heavy JavaScript projects. Where Lovable defaults to React + Supabase, Bolt offers wider framework support — Next.js, Nuxt, SvelteKit, Astro, and more. For developers (or technical non-developers) who know which framework they want and care about the generated code quality, Bolt produces cleaner, more idiomatic output.</p>
@@ -103,6 +106,9 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> Technical-leaning solopreneurs, frontend developers wanting AI-assisted scaffolding</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://bolt.new" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Bolt →</a>
+</div>
 <h2>3. v0 by Vercel — Best for UI Components, Not Full Apps</h2>
 <p><strong>Rating: 4.2/5 · Free: 200 credits/month · Paid: from $20/month</strong></p>
 <p>v0 is fundamentally different from Lovable and Bolt — it is a UI component generator, not an app builder. You describe a UI element (a pricing table, a hero section, a settings form) and v0 generates the React + Tailwind + shadcn/ui code for it. You then copy-paste or import that code into your existing Next.js project.</p>
@@ -114,6 +120,9 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> Developers already in the Vercel/Next.js ecosystem who want polished UI components</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://v0.dev" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit v0 →</a>
+</div>
 <h2>Which Vibe Coding Tool Should You Use?</h2>
 <p>The decision is straightforward if you are honest about your starting point:</p>
 <p><strong>No coding experience at all?</strong> Use Lovable. It is the only tool in this comparison that takes you from zero to a deployed, database-backed application without any technical steps in between. The 5 free messages/day is enough to decide if it works for your use case before committing $25/month.</p>

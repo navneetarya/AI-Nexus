@@ -116,6 +116,12 @@ const post: BlogPost = {
 <p>The <strong>Grammar Checker</strong> in QuillBot catches errors that Grammarly misses on technical subject matter, because it is trained on academic writing styles. Running your essay through both Grammarly and QuillBot's grammar checker before submission catches issues that either tool alone would miss.</p>
 <p><strong>Honest limitation:</strong> The free paraphraser is capped at 125 words per run. For longer passages, break them into chunks manually. The $9.95/month Premium removes all limits and adds a plagiarism checker — worth it during dissertation season, but the free plan is sufficient for regular coursework.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://quillbot.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>2. Grammarly — Best for Essays & Writing Quality</h2>
 <p><strong>Category: Writing · Free Plan: Permanent · Paid: from $12/month · <a href="/tools/grammarly/" style="color:var(--a1);font-weight:600;">Full Grammarly Review →</a></strong></p>
 <p>Grammarly is non-negotiable for anyone submitting written work. The free plan catches grammar errors, spelling mistakes, and punctuation issues that spell-checkers miss — and it works inside Google Docs, Microsoft Word, and your browser, so you do not have to copy-paste anything. Install the browser extension once and it is active everywhere you type.</p>
@@ -123,6 +129,12 @@ const post: BlogPost = {
 <p>The free plan also flags <strong>overly complex sentences</strong> and <strong>passive voice</strong> — two of the most common issues that lose marks on university essays. Passive voice in particular is a deeply embedded habit that is hard to self-catch; Grammarly highlights every instance and suggests active alternatives.</p>
 <p><strong>Best workflow:</strong> Write your draft in Google Docs with the Grammarly extension active. It underlines issues in real time. Review all suggestions before submitting — do not auto-accept everything, especially for subject-specific terminology Grammarly may not recognise correctly.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://grammarly.com?affiliateId=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>3. Rytr — Best for Essay Drafts & Outlines</h2>
 <p><strong>Category: Writing · Free Plan: 10,000 characters/month · Paid: from $9/month · <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">Full Rytr Review →</a></strong></p>
 <p>Rytr is the most practical free AI writing tool for students who need to get a first draft started. The free plan gives 10,000 characters per month — roughly one complete essay draft — with no credit card required. There is no 7-day countdown; it renews monthly indefinitely.</p>
@@ -130,6 +142,12 @@ const post: BlogPost = {
 <p>Rytr also includes a <strong>Paraphrase</strong> use case that rewrites text in your chosen tone — useful for sections you have drafted manually but want to sound more academic. The output quality in Formal tone is consistently better than Standard tone for academic contexts.</p>
 <p><strong>Important caveat:</strong> Rytr generates first drafts, not finished essays. Every output needs your analysis, specific examples, and citations added. Using AI output without your own argument and evidence produces a generic, low-quality submission regardless of how polished it looks at first glance. Use Rytr to break writer's block and structure your ideas — not to replace the intellectual work your course is designed to teach.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>4. Gamma — Best for Presentation Slides (Zero Design Skill Required)</h2>
 <p><strong>Category: Presentations · Free Plan: 400 credits on sign-up · Paid: from $8/month · <a href="/tools/gamma/" style="color:var(--a1);font-weight:600;">Full Gamma Review →</a></strong></p>
 <p>Gamma lets you build a complete, professionally designed presentation from a text prompt or outline in under 3 minutes. You describe your topic — or paste your essay plan directly — choose a visual theme, and Gamma generates every slide with structure, content, and layout already handled. No PowerPoint wrestling. No Canva template hunting at 1am the night before your seminar.</p>
@@ -137,6 +155,12 @@ const post: BlogPost = {
 <p>Gamma also handles <strong>image placement automatically</strong> — it selects and positions relevant visuals from a built-in stock library based on your content. For STEM presentations, review each slide and swap out any images that are not relevant. For humanities and business presentations, the auto-selected images are usually appropriate and save significant slide design time.</p>
 <p>The free plan gives 400 AI credits — enough for 4–5 full presentations. For a semester's worth of seminars and group project presentations, the $8/month paid plan is worth it, but 400 credits covers most of first term without any payment.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>5. Replit — Best for Coding Assignments & Debugging</h2>
 <p><strong>Category: Coding · Free Plan: Unlimited projects + AI assist · Paid: from $25/month · <a href="/tools/replit/" style="color:var(--a1);font-weight:600;">Full Replit Review →</a></strong></p>
 <p>Replit is a browser-based code editor with a built-in AI assistant — no installation, no environment setup, no "it works on my machine" debugging. You open a browser, create a project, and start coding. The AI assistant explains errors in plain English, suggests fixes, and completes code snippets based on your comments. For students learning to code or working on assignments in Python, JavaScript, or Java, this eliminates the most time-consuming part of the workflow: interpreting cryptic error messages.</p>
@@ -144,6 +168,12 @@ const post: BlogPost = {
 <p>Replit supports 50+ programming languages on the free plan — Python, JavaScript, HTML/CSS, Java, C++, and Ruby are all fully supported with working runtimes. You can build, run, and share projects directly from the browser, making assignment submission as simple as sharing a Replit link.</p>
 <p><strong>For students with GitHub Student Developer Pack access</strong> (free through your student email): GitHub Copilot is included, giving AI code completion inside VS Code and JetBrains. If you are comfortable with a local development environment, Copilot is more powerful for complex tasks. But for students who need something that works immediately without setup, Replit is the faster path.</p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>Free Plan Comparison — At a Glance</h2>
 <div style="overflow-x:auto;margin:16px 0 24px;">
   <table style="width:100%;border-collapse:collapse;font-size:13px;">

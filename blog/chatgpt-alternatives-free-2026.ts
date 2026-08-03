@@ -114,6 +114,9 @@ const post: BlogPost = {
   <li><strong>Paid plan:</strong> Gemini Advanced at $19.99/month adds the Ultra model and 1TB Google storage</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://gemini.google.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Gemini →</a>
+</div>
 <h2>2. Perplexity — The Best Free Alternative for Research</h2>
 <p><strong>Rating: 4.6/5 · Free plan: Unlimited basic searches, 5 Pro searches/day</strong></p>
 <p>Perplexity isn't trying to be ChatGPT. It's an AI-powered research engine — and it's the best one available. Every answer comes with numbered citations linking to the source material. This alone makes it superior to ChatGPT for any task where accuracy matters.</p>
@@ -125,6 +128,12 @@ const post: BlogPost = {
   <li><strong>Paid plan:</strong> Perplexity Pro at $20/month adds unlimited Pro searches and file analysis</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>3. Rytr — The Best Free Alternative for Quick Content</h2>
 <p><strong>Rating: 4.0/5 · Free plan: 10,000 characters/month</strong></p>
 <p>Rytr occupies a different niche from chat-based alternatives. It's a structured content generator with 40+ use-case templates — blog intros, product descriptions, ad copy, email subjects, social media posts. You fill in a brief, pick a tone, and Rytr generates 2-3 options.</p>
@@ -136,6 +145,12 @@ const post: BlogPost = {
   <li><strong>Paid plan:</strong> Saver at $9/month (100K chars), Unlimited at $29/month</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>4. Writesonic — The Best Free Alternative for SEO Blogging</h2>
 <p><strong>Rating: 4.2/5 · Free plan: ~1 article/month</strong></p>
 <p>Writesonic's Chatsonic feature is a direct ChatGPT competitor with one key advantage: built-in web search. You can ask it about today's news, recent product launches, or current pricing — and it pulls real-time data. It also has a dedicated AI Article Writer that generates structured, SEO-ready blog posts with headings, intros, and conclusions.</p>
@@ -147,6 +162,12 @@ const post: BlogPost = {
   <li><strong>Paid plan:</strong> Individual at $16/month, Professional at $33/month</li>
 </ul>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>Which Free ChatGPT Alternative Should You Pick?</h2>
 <p>After testing all four extensively, here's my honest recommendation:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">

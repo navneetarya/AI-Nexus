@@ -114,6 +114,9 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">General-purpose tasks where no single AI is better · Image analysis and understanding · Quick code snippets and debugging · Social captions requiring variety across formats</p>
 </div>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ChatGPT →</a>
+</div>
 <h2>Claude Free (Claude 3.5 Sonnet)</h2>
 <p>Claude's free plan is arguably the strongest writing tool available at zero cost in 2026. Unlike ChatGPT's free tier where you access a premium model up to a limit before degrading to a weaker one, Claude Free gives you Claude 3.5 Sonnet consistently — one of the best publicly available language models for writing tasks — up to its daily usage limit.</p>
 <p><strong>Strengths on the free tier:</strong> Writing quality is the standout. Claude produces prose that requires less editing before publication — more varied sentence structure, more natural paragraph flow, and a stronger ability to adopt a specific voice when given examples. The 200K token context window (available even on free) means you can paste in a full brief, a competitor article for reference, your brand guidelines, and your draft notes — all in a single conversation.</p>
@@ -123,6 +126,9 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">Blog post first drafts · Detailed analysis and professional writing · Long-form content requiring consistent quality · Nuanced, high-context tasks where you supply the information</p>
 </div>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude →</a>
+</div>
 <h2>Gemini Free</h2>
 <p>Gemini's free tier runs on Gemini 1.5 Flash — not Google's most capable model, but surprisingly functional for everyday tasks. The standout advantage is real-time Google Search integration: Gemini Free can access current information, making it the only free AI that can meaningfully research and write simultaneously.</p>
 <p><strong>Strengths on the free tier:</strong> Google ecosystem integration is Gemini's unique free-tier advantage. If you work in Google Docs, Gmail, or Drive, Gemini can summarise documents, draft email replies, and process spreadsheet data natively — capabilities that neither ChatGPT nor Claude can match on their free tiers. The 1 million token context window on Gemini 1.5 Flash means you can feed it extraordinarily long documents. For research tasks and document summarisation, this is genuinely powerful.</p>
@@ -132,6 +138,9 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">Research tasks requiring current data · Summarising long documents and PDFs · Google Workspace users (Docs, Gmail, Drive integration) · Any task requiring web search and text generation together</p>
 </div>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://gemini.google.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Gemini →</a>
+</div>
 <h2>5 freelance tasks: which free plan wins each?</h2>
 <p>The same five tasks were run through all three free tiers to produce a practical verdict. Each task was completed in a fresh session with the same prompt.</p>
 

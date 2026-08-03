@@ -112,6 +112,12 @@ const post: BlogPost = {
 <p><strong>Pricing:</strong> From $19/month. 3-video free trial (no credit card) — enough to test whether it fits your content workflow before committing.</p>
 <p><a href="/tools/pictory/" style="color:#0D9488;font-weight:600;">→ Read the full Pictory review</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://pictory.ai?fpr=navneet24" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pictory Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>#2 Opus Clip — Best for Short-Form Clips from Long Videos</h2>
 <p>Opus Clip solves a completely different problem to InVideo AI — and it's important to understand the distinction before choosing. InVideo AI <em>creates</em> new videos from text prompts. Opus Clip <em>repurposes</em> existing long-form video into short clips for TikTok, Reels, and YouTube Shorts.</p>
 <p>If you have a YouTube channel, podcast, webinar, or any long-form video content, Opus Clip automatically finds the most engaging 60–90 second segments, cuts them, adds animated captions, reformats the aspect ratio for vertical platforms, and assigns each clip a "virality score" based on its predicted engagement. You upload a 40-minute video and get 8–12 ready-to-post short clips in about 15 minutes.</p>
@@ -121,6 +127,12 @@ const post: BlogPost = {
 <p><strong>Free plan:</strong> 60 minutes of video processing per month — enough to clip 2–3 videos at no cost. The $19/month Pro plan removes the monthly limit and adds premium caption styles and auto-post scheduling.</p>
 <p><a href="/tools/opus-clip/" style="color:#0D9488;font-weight:600;">→ Read the full Opus Clip review</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>#3 Murf AI — Best When You Want a Better Voice on Your Videos</h2>
 <p>If you're staying with InVideo AI or Pictory but hate how the AI voiceovers sound, Murf AI is the fix. Murf has 120+ AI voices across 20 languages — the selection is meaningfully wider than InVideo's built-in voices, and the quality of Murf's studio voices is noticeably more natural on longer scripts.</p>
 <p><strong>The use case:</strong> Generate your video in InVideo AI or Pictory, export the script and timing, then produce the voiceover in Murf and swap it in. Murf integrates directly with Google Slides, Canva, and Descript for this reason — it's designed to be a voiceover layer on top of other video workflows, not a standalone video creator.</p>
@@ -128,6 +140,12 @@ const post: BlogPost = {
 <p><strong>Pricing:</strong> Free plan with limited exports. Paid from $19/month for Creator, which includes 24 voices, 2 hours of voice generation, and commercial rights — important if you're monetising your YouTube channel.</p>
 <p><a href="/tools/murf-ai/" style="color:#0D9488;font-weight:600;">→ Read the full Murf AI review</a></p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <h2>The Honest Verdict: Which InVideo Alternative Should You Use?</h2>
 <p><strong>Building a faceless YouTube channel from scratch with blog content or scripts you already have?</strong> → <strong>Pictory</strong>. It's the fastest path from written content to a published YouTube video with branded, consistent output.</p>
 <p><strong>You already make long-form YouTube videos or podcasts and want short-form clips?</strong> → <strong>Opus Clip</strong>. The free plan covers real work, and the virality score genuinely helps prioritise what to post.</p>
