@@ -1557,7 +1557,7 @@ const BLOG_OG_MAP = {
   'claude-code-alternatives-2026':                `${SITE}/og-compare.webp`,
   // Day 13 (Jul 3): Relevance AI vs Lindy vs Gumloop — Fastest Win, 800/mo, KD 5
   'relevance-ai-vs-lindy-vs-gumloop-2026':        `${SITE}/og-compare.webp`,
-  'llm-api-pricing-comparison-2026':              `${SITE}/og-compare.webp`,
+  'llm-api-pricing-comparison-2026':              `${SITE}/og/blog/llm-api-pricing-comparison-2026.webp`,
   // Day 12 (Jul 2): Multi-Agent AI Systems Explained — Technical/GEO, 1,600/mo, KD 9
   'multi-agent-ai-systems-explained-2026':        `${SITE}/og-tool-review.webp`,
   'best-ai-presentation-tools-2026':              `${SITE}/og-compare.webp`,
@@ -4851,7 +4851,7 @@ for (const post of BLOG_POSTS) {
       : []),
     // AEO-02 Audit Fix: Dataset schema for best-* and comparison posts — helps AI
     // engines parse structured comparison data (pricing, features, ratings) from tables.
-    ...(post.slug.startsWith('best-') || post.slug.includes('-vs-')
+    ...(post.slug.startsWith('best-') || post.slug.includes('-vs-') || post.slug === 'llm-api-pricing-comparison-2026'
       ? [{
           '@context': 'https://schema.org',
           '@type': 'Dataset',

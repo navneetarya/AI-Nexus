@@ -5,6 +5,10 @@
 User-agent: *
 Allow: /
 
+
+Disallow: /*?category=
+Disallow: /*?search=
+
 # ── Content Signals (contentsignals.org / IETF draft-romm-aipref-contentsignals) ──
 # Independent of crawl access above: declares how this content may be used.
 # search=yes  -> ok to index for search results
