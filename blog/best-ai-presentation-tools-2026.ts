@@ -143,10 +143,9 @@ const post: BlogPost = {
 <p>The free plan gives 400 one-time AI credits — enough for roughly 8 to 15 full presentations depending on length — but every free export carries a visible "Made with Gamma" watermark, and unlike most freemium tools, those credits do not refresh monthly.</p>
 <p>The Plus plan at $8/month (billed annually; $10/month if billed monthly) removes the watermark, unlocks PowerPoint and PDF export, and gives 1,000 monthly AI credits. The Pro plan at $18/month annual ($20/month monthly) adds unlimited generation, viewer analytics, and access to premium AI image models — worth it once you are creating more than a few presentations a week.</p>
 <p>The honest limitation: PowerPoint export is genuinely the weakest part of Gamma. Across multiple independent reviews and user reports, charts shift position, fonts get substituted, and animations disappear when a Gamma deck is exported to .pptx and opened in PowerPoint. If your final deliverable must be a pixel-perfect PowerPoint file for a client who will edit it further, budget time for cleanup — or consider sharing the Gamma web link directly instead of exporting at all.</p>
-<div style="background:rgba(13,148,136,.07);border:1px solid rgba(13,148,136,.18);border-radius:10px;padding:18px 22px;margin:28px 0;text-align:center">
-  <p style="margin:0 0 10px;font-weight:600">Gamma — try the free plan first</p>
-  <p style="margin:0 0 14px;font-size:14px;color:#555">400 free AI credits, no credit card required to start.</p>
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:#0D9488;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Gamma Free →</a>
+<p><strong>Gamma — try the free plan first.</strong> 400 free AI credits, no credit card required to start.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -159,10 +158,9 @@ const post: BlogPost = {
 <p>The single biggest thing to know before trying Beautiful.ai: there is no permanent free plan. Every signup starts a 14-day trial that requires a credit card upfront and auto-charges the full annual rate if you don't cancel before day 14.</p>
 <p>The Pro plan runs $12/month if you commit to annual billing ($45/month if you pay monthly — nearly 4x more), and includes unlimited AI-generated content, unlimited Smart Slides, and PowerPoint export. Collaboration features — shared libraries, version history, and real-time co-editing — are locked to the Team plan at $40/user/month annual, a steep jump from the individual Pro price that becomes expensive fast for any team beyond 2–3 people.</p>
 <p>Where Beautiful.ai genuinely wins: PowerPoint export quality. Across multiple independent tests, Beautiful.ai's .pptx exports were consistently rated among the most reliable in the category — a meaningful advantage over Gamma if your decks routinely need to leave the platform as editable PowerPoint files.</p>
-<div style="background:rgba(13,148,136,.07);border:1px solid rgba(13,148,136,.18);border-radius:10px;padding:18px 22px;margin:28px 0;text-align:center">
-  <p style="margin:0 0 10px;font-weight:600">Beautiful.ai — 14-day Pro trial</p>
-  <p style="margin:0 0 14px;font-size:14px;color:#555">Full Pro access for 14 days. Note: requires a card upfront.</p>
-  <a href="https://beautiful.ai?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:#0D9488;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Beautiful.ai →</a>
+<p><strong>Beautiful.ai — 14-day Pro trial.</strong> Full Pro access for 14 days. Note: requires a card upfront.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://beautiful.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Beautiful.ai →</a>
 </div>
 
 <h2>Canva AI — Best if You Already Live in Canva</h2>
@@ -171,10 +169,9 @@ const post: BlogPost = {
 <h3>Why Canva still makes this list</h3>
 <p>What Canva offers that none of the other three tools do is bundling. If you already pay $15/month for Canva Pro to handle social media graphics, brand assets, and marketing materials, AI-generated presentations come at zero marginal cost inside a subscription you already have — versus paying for a second, dedicated presentation tool on top. The free plan includes 200 Magic Studio AI credits per month across all of Canva's AI features (not presentations specifically), plus 5 Dream Lab image generations, which is workable for occasional decks but will not cover regular weekly use.</p>
 <p>Pick Canva AI if presentations are one of several design tasks you handle weekly inside the same platform. Pick a dedicated tool (Gamma or Beautiful.ai) if presentations specifically — not general design — are the actual job.</p>
-<div style="background:rgba(13,148,136,.07);border:1px solid rgba(13,148,136,.18);border-radius:10px;padding:18px 22px;margin:28px 0;text-align:center">
-  <p style="margin:0 0 10px;font-weight:600">Canva AI — try Magic Design free</p>
-  <p style="margin:0 0 14px;font-size:14px;color:#555">200 free AI credits/month, no card required to start.</p>
-  <a href="https://canva.com?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:#0D9488;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Canva AI Free →</a>
+<p><strong>Canva AI — try Magic Design free.</strong> 200 free AI credits/month, no card required to start.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 
 <h2>NotebookLM — Best Free Option for Turning Documents Into Slides</h2>

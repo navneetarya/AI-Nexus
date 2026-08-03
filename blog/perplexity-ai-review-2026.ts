@@ -167,6 +167,12 @@ const post: BlogPost = {
 </table>
 </div>
 <p>The annual plan at $200/year works out to $16.67/month — a reasonable discount for users who know they will use Pro consistently. The free plan is genuinely useful and not artificially crippled, which is worth noting: many knowledge workers will find standard searches on the free tier sufficient for daily use.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 
 <h2>Is Perplexity Replacing Google?</h2>
 <p>The honest answer is: partially, for specific users. Among the researchers, journalists, and content professionals I spoke with while preparing this review, the pattern was consistent: they use Perplexity for research-intensive queries (anywhere from 30% to 80% of their daily searches) and Google for navigational, local, and shopping queries. Nobody had abandoned Google entirely.</p>

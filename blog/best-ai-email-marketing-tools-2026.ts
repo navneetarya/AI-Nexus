@@ -177,6 +177,12 @@ const post: BlogPost = {
   <li>❌ USD billing only — Indian users need international card (no UPI)</li>
   <li>❌ Interface is feature-dense — initial learning curve for absolute beginners</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.getresponse.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GetResponse Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 
 <h2 id="brevo">#2 Brevo — Best Value and Best Free Plan</h2>
 <p><strong>Rating: 4.5/5 · Free plan: Unlimited contacts, 300 emails/day · Paid: from $25/month</strong></p>

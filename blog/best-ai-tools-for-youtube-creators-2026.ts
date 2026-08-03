@@ -178,6 +178,12 @@ const post: BlogPost = {
   <li>❌ Full feedback-loop intelligence requires consistent publishing history to fully activate</li>
   <li>❌ Less streamlined for pure YouTube Shorts volume compared to Opus.pro's speed</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.getmunch.ai/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Munch AI Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 
 <h2 id="elevenlabs">#2 ElevenLabs — Best AI Voice Cloning for YouTube Narration</h2>
 <p><strong>Rating: 4.8/5 · Free: 10 min/month · Paid: from $5/month · <a href="https://elevenlabs.io/?via=navneet" style="color:#0ea5e9;font-weight:600;" target="_blank" rel="noopener sponsored">Try ElevenLabs →</a></strong></p>
@@ -193,6 +199,9 @@ const post: BlogPost = {
   <li>❌ 30 minutes/month on Creator plan limits high-volume creators</li>
   <li>❌ Output works best for scripted narration — not for conversational unscripted delivery</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="https://elevenlabs.io/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+</div>
 
 <h2 id="opus-pro">#3 Opus.pro — Best Automated YouTube Shorts Pipeline</h2>
 <p><strong>Rating: 4.6/5 · Free: 60 min/month · Paid: from $19/month · <a href="https://www.opus.pro/?via=navneet" style="color:#0ea5e9;font-weight:600;" target="_blank" rel="noopener sponsored">Try Opus.pro →</a></strong></p>
@@ -207,6 +216,9 @@ const post: BlogPost = {
   <li>❌ Less strategic depth than Munch AI — clip selection is energy-based, not transcript-semantic</li>
   <li>❌ Brand voice consistency less developed than Munch AI's learning model</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.opus.pro/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus.pro Free →</a>
+</div>
 
 <h2 id="invideo-ai">#4 InVideo AI — Best for Faceless YouTube Channels</h2>
 <p><strong>Rating: 4.4/5 · Free: Limited exports · Paid: from $20/month</strong></p>

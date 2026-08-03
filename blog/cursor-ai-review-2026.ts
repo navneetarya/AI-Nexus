@@ -242,6 +242,9 @@ const post: BlogPost = {
 </table>
 </div>
 <p>The free plan is genuinely useful for evaluation — 2,000 completions is enough to understand what Cursor does and whether it fits your workflow. The jump to $20/month is significant compared to GitHub Copilot Individual at $10/month, but the feature gap (Composer, Agent mode, multi-model access) justifies the difference for professional use. Developers who previously subscribed to both GitHub Copilot and Claude Pro separately are getting more capability from Cursor Pro at the same or lower combined cost.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://cursor.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Cursor →</a>
+</div>
 
 <h2 id="pros-cons">Pros and Cons</h2>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0;">

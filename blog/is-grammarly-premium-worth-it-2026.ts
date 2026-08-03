@@ -115,6 +115,12 @@ const post: BlogPost = {
   <li><strong>Non-native English speakers writing in English professionally</strong> — The combination of tone detection, style suggestions, and full-sentence rewrites provides a level of writing coaching unavailable at this price point elsewhere.</li>
   <li><strong>Students submitting graded academic work</strong> — The plagiarism checker alone justifies the cost if you're producing academic writing regularly.</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="https://grammarly.com?affiliateId=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 
 <h2>Who Should Stay on Grammarly Free</h2>
 <ul style="margin:8px 0 16px 24px;line-height:2.2;">

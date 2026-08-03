@@ -94,36 +94,36 @@ const post: BlogPost = {
 <p>AIRA's pitch is simple: every plan, including the $24.95/month Starter tier, includes full bilingual support across 31 languages, 24/7 answering, appointment booking, and CRM integrations with HubSpot, Pipedrive, and Zapier. That's a meaningfully different structure from most of this list, where cheaper tiers strip out the features that actually make a receptionist useful. With roughly 41 million US residents speaking Spanish at home, and Spanish-preferring callers making up an estimated 25\u201340% of inbound calls for service businesses in Texas, California, Florida, New York, and Illinois, bilingual support at no surcharge is a real differentiator rather than a marketing line.</p>
 <p>The honest caveat: AIRA's own blog is extremely SEO-aggressive and dominates a large share of the search results for "best ai receptionist" queries, which makes independent, third-party verification of its claims harder to find than for competitors with a longer public review history. Overage runs $0.75\u2013$1.50 per call once you exceed your plan's included volume.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">Bilingual support and every integration included from $24.95/month — no feature gating between tiers.</p>
-  <a href="https://www.getaira.io" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try AIRA \u2192</a>
+<p>Bilingual support and every integration included from $24.95/month — no feature gating between tiers.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.getaira.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try AIRA \u2192</a>
 </div>
 
 <h3>Smith.ai — best for human backup on complex calls</h3>
 <p>Smith.ai runs two separate products under one brand: a pure AI Receptionist starting at $95/month for roughly 50 included calls, and a hybrid Virtual Receptionist with a live human on every call starting at $292.50/month for 30 calls. The customer base skews heavily toward legal — roughly 84% of its G2 reviews for the Virtual Receptionist product come from law firms — and its deepest integrations are with legal-specific CRMs like Clio, MyCase, and PracticePanther, alongside 7,000+ apps via Zapier.</p>
 <p>This is the right choice when a missed nuance actually costs you a client — intake calls for a personal injury firm or a same-day medical appointment are the kind of calls where a live-agent escalation option (billed separately at roughly $3/call) is worth paying for. For a routine service business, the AI-only tier is more than enough, and it's still priced above every other tool on this list.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">AI-only from $95/month, or add live human agents for high-stakes calls at $292.50/month.</p>
-  <a href="https://smith.ai" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Smith.ai \u2192</a>
+<p>AI-only from $95/month, or add live human agents for high-stakes calls at $292.50/month.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://smith.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Smith.ai \u2192</a>
 </div>
 
 <h3>Rosie — best for trades and home services</h3>
 <p>Rosie is built specifically for HVAC, plumbing, electrical, roofing, and similar trades where the phone rings while the owner is on a ladder or under a sink. The $49/month Professional plan covers 250 minutes and answers calls with a natural-sounding voice, but here's the catch most reviews gloss over: it only texts the caller a booking link rather than completing the appointment during the call itself. Real-time booking with warm transfers requires the $149/month Scale plan, which most trades businesses running 80\u2013150 calls a month end up needing anyway once they factor in that 250 minutes goes fast.</p>
 <p>Rosie claims 1,700+ businesses and 1.4 million-plus calls handled, though independent review coverage on G2, Capterra, and Trustpilot is still thin since the product only launched in 2024 — treat vendor-reported adoption numbers with appropriate caution until third-party review volume catches up.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">Purpose-built for trades — from $49/month, real-time booking requires the $149/month Scale plan.</p>
-  <a href="https://heyrosie.com" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Rosie \u2192</a>
+<p>Purpose-built for trades — from $49/month, real-time booking requires the $149/month Scale plan.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://heyrosie.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rosie \u2192</a>
 </div>
 
 <h3>Dialzara — cheapest genuine entry point</h3>
 <p>Dialzara's Business Lite plan at $29/month for 60 receptionist minutes is the lowest all-in entry price in this comparison that still includes appointment booking, spam screening, and call summaries — not a stripped demo tier. Setup runs about 15 minutes through a self-serve, four-step flow, and it supports 10+ languages with 88+ pre-built industry prompts. The trade-off is that those prompts are generalist templates rather than the managed, custom-trained vertical agents you get from Rosie (trades) or AIRA (bilingual, healthcare-adjacent) — Dialzara publishes no native dental, legal, or healthcare practice-management integrations.</p>
 <p>This is the right pick for a solo operator or a brand-new business that wants to test whether an AI receptionist is worth paying for at all before committing to a pricier, more specialized tool. Overage runs $0.48/minute once you exceed your plan's allowance.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">The cheapest full-featured entry point — $29/month, live in about 15 minutes, no setup fee.</p>
-  <a href="https://dialzara.com" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Dialzara \u2192</a>
+<p>The cheapest full-featured entry point — $29/month, live in about 15 minutes, no setup fee.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://dialzara.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Dialzara \u2192</a>
 </div>
 
 <p style="font-size:12px;color:var(--text-muted,#888);margin:4px 0 24px;text-align:center">
@@ -134,9 +134,9 @@ const post: BlogPost = {
 <p>Goodcall's core differentiator is its pricing model: you're charged per unique customer served per month, not per minute or per call, so a customer who calls back ten times in a month still counts as one "unique customer." Starter runs $79/month per agent for 100 unique customers, Growth is $129/month for 250, and Scale is $249/month for 500, with a $0.50 overage fee per additional customer beyond the cap. Every tier includes unlimited call minutes and AI tokens once you're within your unique-customer allowance, which is the opposite trade-off of Rosie's minute-metered model.</p>
 <p>Read the fine print before you sign up for multiple locations: each Goodcall "agent" is tied to one phone number, so a business with three locations on separate lines pays three times the base tier, not once. Aggregate third-party review scores sit around 3.4/5, with the most common complaints centering on unpredictable cost spikes during a busy marketing push and, somewhat ironically for a phone-answering company, difficulty reaching a human for support.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">Unlimited minutes, billed per unique customer instead of per call — from $79/month per agent.</p>
-  <a href="https://www.goodcall.com" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Goodcall \u2192</a>
+<p>Unlimited minutes, billed per unique customer instead of per call — from $79/month per agent.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.goodcall.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Goodcall \u2192</a>
 </div>
 
 <h2>ai receptionist pricing — is it worth it?</h2>

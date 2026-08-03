@@ -112,7 +112,13 @@ const post: BlogPost = {
 <h2>Which Rytr Plan Do You Need?</h2>
 <p>The <strong>free plan</strong> (10,000 characters/month) is enough for 1 blog post per month and plenty to test the workflow. If you're publishing 2+ posts per week, the <strong>$9/month Saver plan</strong> gives you unlimited characters and access to the plagiarism checker — it pays for itself within the first post if your time is worth anything.</p>
 <p>The $29/month Unlimited plan adds custom use cases and priority support. Unless you're building a content agency workflow, the Saver plan is the right stopping point for individual bloggers.</p>
-<p>Ready to start? <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="noopener noreferrer" style="color:var(--a1);font-weight:700;">Try Rytr free →</a> No credit card required. Or read our <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">full Rytr review</a> for a deeper look at everything the platform offers.</p>
+<p>Ready to start? No credit card required for the free plan. Or read our <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">full Rytr review</a> for a deeper look at everything the platform offers.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
   `.trim(),
 };
 

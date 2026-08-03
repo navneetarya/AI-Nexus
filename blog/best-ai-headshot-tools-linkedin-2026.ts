@@ -176,7 +176,12 @@ const post: BlogPost = {
   <li>❌ Output quality drops if input selfies have poor lighting or backgrounds</li>
 </ul>
 <p><strong>Best for:</strong> Professionals, job seekers, freelancers, and remote teams who need a polished LinkedIn photo without booking a photographer. The Premium plan at $59 is the recommended pick if you want maximum style variety for multiple platforms.</p>
-<p style="margin:16px 0;"><a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="noopener sponsored" style="display:inline-block;background:#0ea5e9;color:#fff;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:15px;">Get HeadshotPro →</a> <span style="font-size:12px;color:#888;margin-left:8px;">(affiliate link — helps keep this site free)</span></p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get HeadshotPro →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 
 <h2 id="aragon-ai">#2 Aragon AI — Best for Creative &amp; Lifestyle Headshots</h2>
 <p><strong>Rating: 4.6/5 · From $29 one-time · 30–90 minute delivery</strong></p>

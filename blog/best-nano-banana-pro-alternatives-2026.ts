@@ -161,10 +161,9 @@ const post: BlogPost = {
 <h3>Leonardo.ai — Best for Creative Control and Free Credits</h3>
 <p>If you're searching for the best AI image generator for beginners specifically, Leonardo.ai is the strongest free alternative on this list by a wide margin. Its 150 free credits per day translate to roughly 15–25 images depending on which model you use, with no watermark on free-tier output — a meaningfully more generous starting point than Nano Banana Pro's 2–3 images/day.</p>
 <p>Leonardo also gives more creative control than either Nano Banana Pro or Midjourney: custom model training, a real-time canvas, and motion generation on top of standard text-to-image. The tradeoff is a steeper learning curve — the interface has more moving parts, and getting consistently good output requires learning negative prompts and style presets rather than just typing a plain-language description.</p>
-<div style="background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.18);border-radius:10px;padding:18px 22px;margin:28px 0;text-align:center">
-  <p style="margin:0 0 10px;font-weight:600">Leonardo.ai — try the free plan first</p>
-  <p style="margin:0 0 14px;font-size:14px;color:#555">150 free credits/day, no credit card required to start.</p>
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:#f59e0b;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Leonardo.ai Free →</a>
+<p><strong>Leonardo.ai — try the free plan first.</strong> 150 free credits/day, no credit card required to start.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -173,10 +172,9 @@ const post: BlogPost = {
 <h3>PhotoRoom — Best for E-Commerce Product Photos</h3>
 <p>PhotoRoom isn't a direct Nano Banana Pro competitor in the way Midjourney and Leonardo are — it's purpose-built for background removal and product photography specifically, used by over 150 million people, mostly e-commerce sellers, marketers, and social creators. If your actual need is turning a phone photo of a product into a clean, professional listing image, PhotoRoom will get there faster and more reliably than any general-purpose image generator on this list.</p>
 <p>It's also the most independently well-reviewed tool in this comparison: 4.6/5 on Trustpilot across nearly 2,900 reviews and 4.7/5 on G2 across 94 reviews, both meaningfully higher than the editorial ratings available for Nano Banana Pro and Midjourney (which have no external platform listings to draw on). The free plan carries a watermark; the $9.99/month paid tier removes it.</p>
-<div style="background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.18);border-radius:10px;padding:18px 22px;margin:28px 0;text-align:center">
-  <p style="margin:0 0 10px;font-weight:600">PhotoRoom — try the free plan first</p>
-  <p style="margin:0 0 14px;font-size:14px;color:#555">Free background removal, upgrade for no watermark.</p>
-  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:#f59e0b;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try PhotoRoom Free →</a>
+<p><strong>PhotoRoom — try the free plan first.</strong> Free background removal, upgrade for no watermark.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -185,10 +183,9 @@ const post: BlogPost = {
 <h3>Canva AI — Best If You Want It Built Into a Design Tool You Already Use</h3>
 <p>Canva AI's appeal isn't that its image generation beats Nano Banana Pro or Midjourney on raw quality — by most accounts it doesn't. The appeal is bundling: if you already pay $15/month for Canva Pro to handle social graphics, brand assets, and marketing materials, AI image generation comes at zero marginal cost inside a subscription you already have, instead of paying for a second, dedicated tool on top.</p>
 <p>The free plan includes a workable but limited slice of Canva's AI features alongside its much larger 250,000+ template library. If image generation is one of several design tasks you handle weekly inside the same platform, Canva AI is the practical, low-friction choice. If image generation specifically — not general design — is the actual job, one of the dedicated tools above will outperform it.</p>
-<div style="background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.18);border-radius:10px;padding:18px 22px;margin:28px 0;text-align:center">
-  <p style="margin:0 0 10px;font-weight:600">Canva AI — try Magic Studio free</p>
-  <p style="margin:0 0 14px;font-size:14px;color:#555">Generous free template library, limited free AI credits.</p>
-  <a href="https://canva.com?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:#f59e0b;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Canva AI Free →</a>
+<p><strong>Canva AI — try Magic Studio free.</strong> Generous free template library, limited free AI credits.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

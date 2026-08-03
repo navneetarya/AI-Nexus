@@ -61,8 +61,14 @@ const post: BlogPost = {
 <p>Podcastle is the closest thing to a complete podcast studio in a browser. You get high-quality remote recording (up to 4K audio with local track recording for each participant), AI noise removal called Magic Dust, automatic transcription, filler word detection, and a basic multi-track editor — all in one platform without downloading software.</p>
 <p>The feature that makes Podcastle stand out from competitors is the combination of <strong>AI Magic Dust + local track recording</strong>. When you record a remote interview, each participant's audio is recorded locally on their own device (not through the internet stream) and uploaded after the session. This eliminates the audio quality degradation that makes most remote podcast recordings sound like Zoom calls. Magic Dust then removes any remaining noise from each local track independently.</p>
 <p>For a podcast that interviews guests remotely — which covers the majority of podcasts in 2026 — this workflow produces results that previously required a professional recording engineer to achieve.</p>
-<p><strong>Free plan reality:</strong> The free plan covers up to 10 recording hours per month and 3 published episodes. For a weekly podcast, that's under capacity — you'd need the $11.99/month Basic plan. For a bi-weekly or monthly show, the free plan is genuinely workable long-term. Full affiliate link: <a href="https://podcastle.ai/?ref=ymi1ntf" style="color:var(--a1);font-weight:600;">Try Podcastle free →</a></p>
+<p><strong>Free plan reality:</strong> The free plan covers up to 10 recording hours per month and 3 published episodes. For a weekly podcast, that's under capacity — you'd need the $11.99/month Basic plan. For a bi-weekly or monthly show, the free plan is genuinely workable long-term.</p>
 <p>Compare Podcastle to its nearest competitor in our <a href="/compare/podcastle-vs-descript/" style="color:var(--a1);font-weight:600;">Podcastle vs Descript breakdown →</a></p>
+<div style="margin:14px 0 24px;">
+  <a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 
 <h2>2. Adobe Podcast Enhance — Best Free Audio Cleanup Tool</h2>
 <p><strong>Category: Audio Enhancement · Pricing: Free (Enhance Speech) · Paid: Adobe Creative Cloud</strong></p>

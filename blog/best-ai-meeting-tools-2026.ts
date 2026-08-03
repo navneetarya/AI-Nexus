@@ -176,6 +176,12 @@ const post: BlogPost = {
   <li>❌ USD billing only — no INR payment option for Indian users</li>
   <li>❌ Bot joining via calendar invite can feel intrusive in informal or sensitive calls</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="https://fireflies.ai/?fpr=navneet89" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Fireflies.ai Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 
 <h2 id="otter">#2 Otter.ai — Best for Real-Time Live Transcription</h2>
 <p><strong>Rating: 4.5/5 · Free plan: 300 minutes/month, 30 min/conversation · Paid: from $16.99/seat/month</strong></p>

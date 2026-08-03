@@ -164,6 +164,9 @@ const post: BlogPost = {
 </table>
 </div>
 <p>The $19.99/month price point bundles Gemini Pro with 2TB of Drive storage — meaning if you already pay for Google One storage, the AI upgrade is effectively free. For heavy Google Workspace users, this is an unusually good value proposition compared to standalone AI subscriptions.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://gemini.google.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Gemini →</a>
+</div>
 
 <h2>Who Should Use Gemini in 2026</h2>
 <p><strong>Use Gemini if you:</strong> Write primarily inside Google Docs and Gmail, need live web-grounded research in your content, are already paying for Google One storage, or want a single AI that handles email, docs, and research without switching apps.</p>

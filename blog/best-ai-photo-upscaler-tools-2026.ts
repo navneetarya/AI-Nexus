@@ -154,10 +154,9 @@ const post: BlogPost = {
 <h2 id="photoroom">#1 PhotoRoom — best for ecommerce product photos</h2>
 <p><a href="/tools/photoroom" style="color:#0ea5e9;font-weight:600;">PhotoRoom</a> is built around a different question than the other four tools here: not "how do I upscale one image?" but "how do I get a listing-ready product photo in one pass?" As an <strong>ai photo enhancer for ecommerce</strong> use specifically, its Image Enhancer is included on every paid plan alongside background removal, shadow generation, and AI Fill — which matters because most sellers upscaling a product photo also need the background pulled and a shadow added, and doing that across three separate tools costs real time.</p>
 <p>PhotoRoom runs a five-tier structure in 2026: Free, Pro at $7.50/month (annual billing), Max at $20.99/month, a newer Ultra tier from $82.50/month, and custom Enterprise pricing. The free plan works fine to test output quality, but it stamps a watermark on exports and blocks commercial use — any real seller needs at least the Pro tier. First-time upgraders get a 7-day free trial on a paid plan, applied once per customer.</p>
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:18px 22px;margin:28px 0;text-align:center">
-  <p style="margin:0 0 10px;font-weight:600">PhotoRoom — best for ecommerce sellers</p>
-  <p style="margin:0 0 14px;font-size:14px;color:#555">Free plan available; Pro unlocks commercial use from $7.50/month.</p>
-  <a href="https://www.photoroom.com?via=ainexus" target="_blank" rel="noopener sponsored" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try PhotoRoom Free →</a>
+<p><strong>PhotoRoom — best for ecommerce sellers.</strong> Free plan available; Pro unlocks commercial use from $7.50/month.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center"><a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.</p>
 
@@ -166,10 +165,9 @@ const post: BlogPost = {
 <p>Current pricing runs standalone Gigapixel at roughly $29/month (or about $99–149/year on annual billing) and Photo AI at roughly $39/month (about $199/year). The full Topaz Studio bundle, which adds Video AI and the rest of the suite, runs $69/month month-to-month or roughly $33–45/month on an annual commitment. There is no free tier on any of these.</p>
 <p>What you get for that price is genuinely the sharpest detail recovery in this comparison — Gigapixel's nine specialized upscale models run locally on your own GPU, which also means no per-image cloud cost once you own the subscription.</p>
 <p>That local-processing model is also why Topaz isn't the pick if you're looking for a <strong>best free ai image upscaler</strong> option — there's no trial tier at all, so you're committing to a subscription before you've even tested your own images. Topaz does run its own affiliate program (commissions reported between 20% and 30% depending on the source), but AI Nexus hasn't joined it yet, so the link below goes to Topaz's official site.</p>
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:18px 22px;margin:28px 0;text-align:center">
-  <p style="margin:0 0 10px;font-weight:600">Topaz Photo AI — best for print-resolution detail</p>
-  <p style="margin:0 0 14px;font-size:14px;color:#555">No free tier; subscription-only since September 2025.</p>
-  <a href="https://www.topazlabs.com/" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">See Topaz Photo AI →</a>
+<p><strong>Topaz Photo AI — best for print-resolution detail.</strong> No free tier; subscription-only since September 2025.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.topazlabs.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See Topaz Photo AI →</a>
 </div>
 
 <h2 id="letsenhance">#3 Let's Enhance — best for batch processing</h2>

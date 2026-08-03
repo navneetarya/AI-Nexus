@@ -177,10 +177,9 @@ const post: BlogPost = {
 <h2>Final Verdict: Relevance AI vs Lindy vs Gumloop</h2>
 <p>There's no single winner here because these three platforms aren't really competing for the same job. If forced to a single recommendation for most small teams starting from zero: begin with <strong>Relevance AI</strong>'s free tier — it's the most representative of what serious multi-agent work looks like, and the $19/month entry price is the lowest committed cost of the three. Add <strong>Lindy</strong> once a specific recurring task (inbox, scheduling) justifies its higher flat fee, and bring in <strong>Gumloop</strong> when a workflow starts looking more like a data pipeline than an assistant. None of the three is a mistake — the mistake is picking based on marketing language ("AI agent," "AI employee," "AI workforce") instead of the actual shape of the work.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:18px 22px;margin:28px 0;text-align:center;">
-  <p style="margin:0 0 10px;font-weight:600;">Relevance AI — Free Tier, Multi-Agent Orchestration</p>
-  <p style="margin:0 0 14px;font-size:14px;color:#555;">Start free with 200 Actions/month, no card required, before deciding whether Pro's $19/month is worth it.</p>
-  <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="noopener noreferrer nofollow" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600;">Try Relevance AI Free →</a>
+<p><strong>Relevance AI — Free Tier, Multi-Agent Orchestration.</strong> Start free with 200 Actions/month, no card required, before deciding whether Pro's $19/month is worth it.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center;">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

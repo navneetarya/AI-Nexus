@@ -110,34 +110,34 @@ const post: BlogPost = {
 <p>Retell AI is the most transparent platform in this category on pricing \u2014 its pricing page publishes a per-component breakdown and includes a live calculator so you can see the real cost before you build anything. The pay-as-you-go plan starts at $0.07/minute for the voice-agent layer, with no monthly platform fee, a $10 starting credit, and 20 free concurrent calls, which is enough headroom for genuine small-business testing rather than a token demo.</p>
 <p>Reddit threads in developer communities describe Retell as a common choice for small agencies deploying voice receptionists across multiple client businesses, largely because the per-minute math stays predictable at moderate volume. G2 lists it at 4.8/5 across roughly 780 reviews, among the highest-rated platforms in the category. The trade-off: it's still a build-it-yourself tool, so a non-technical owner will likely need a few hours of setup help even with its guided flows before it functions as a reliable ai receptionist for small business use.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">$10 free credit, 20 free concurrent calls, no monthly minimum, no card required to explore the builder.</p>
-  <a href="https://www.retellai.com" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Retell AI Free \u2192</a>
+<p>$10 free credit, 20 free concurrent calls, no monthly minimum, no card required to explore the builder.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.retellai.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Retell AI Free \u2192</a>
 </div>
 
 <h3>Vapi \u2014 best for developers and technical freelancers</h3>
 <p>Vapi is infrastructure, not a finished product \u2014 it gives you the orchestration layer and expects you to bring your own speech-to-text, LLM, and text-to-speech providers, or use its defaults. That makes it the strongest option for a freelance developer who wants a fully custom voice workflow wired into their own stack, but a poor fit for a business owner who doesn't want to touch an API.</p>
 <p>The headline $0.05/minute platform fee is genuinely just the platform fee; real-world setups land between $0.12 and $0.26/minute once STT, LLM, and TTS are added. A $10 free credit lets you validate the build before spending anything real. If you're weighing <strong>vapi vs retell vs synthflow</strong> specifically, the honest split is: Vapi for control, Retell for predictability, and Synthflow no longer for small business at all.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">$10 free credit to validate your build \u2014 full control over STT, LLM, and TTS providers.</p>
-  <a href="https://vapi.ai" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Vapi Free \u2192</a>
+<p>$10 free credit to validate your build \u2014 full control over STT, LLM, and TTS providers.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://vapi.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Vapi Free \u2192</a>
 </div>
 
 <h3>Bland AI \u2014 best for outbound sales campaigns</h3>
 <p>Bland is built specifically for outbound calling at scale \u2014 lead callbacks, appointment reminders, and cold-outreach campaigns \u2014 at a connected-call rate of roughly $0.09/minute. It's the strongest option here if your use case is dialing out rather than answering in, but it leans enterprise in its documentation and support model, and I couldn't confirm a small-business-friendly free tier the way Retell and Vapi both offer. Worth shortlisting specifically for outbound; skip it if your main need is an always-on receptionist.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">Best suited to outbound-heavy campaigns \u2014 lead callbacks, reminders, and cold outreach at scale.</p>
-  <a href="https://www.bland.ai" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Bland AI \u2192</a>
+<p>Best suited to outbound-heavy campaigns \u2014 lead callbacks, reminders, and cold outreach at scale.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.bland.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Bland AI \u2192</a>
 </div>
 
 <h3>ElevenLabs \u2014 best voice quality, as an add-on layer</h3>
 <p>ElevenLabs isn't a full voice-agent platform on its own \u2014 it's a voice-generation engine that Retell, Vapi, and most competitors let you plug in as the text-to-speech layer for a noticeably more natural-sounding agent. If voice realism matters to your use case (a client-facing receptionist, for example, where a robotic voice undermines trust), pairing ElevenLabs with Retell or Vapi is a common combination. ElevenLabs' own free plan covers 10,000 characters/month with no commercial license, and paid plans start at $5/month. See our full <a href="/tools/elevenlabs/">ElevenLabs review</a> for pricing tiers beyond the voice-agent use case.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">Free plan covers 10,000 characters/month \u2014 pair with Retell or Vapi for a more natural-sounding agent.</p>
-  <a href="https://elevenlabs.io" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try ElevenLabs Free \u2192</a>
+<p>Free plan covers 10,000 characters/month \u2014 pair with Retell or Vapi for a more natural-sounding agent.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://elevenlabs.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free \u2192</a>
 </div>
 
 <p style="font-size:12px;color:var(--text-muted,#888);margin:4px 0 24px;text-align:center">

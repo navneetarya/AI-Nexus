@@ -105,18 +105,18 @@ const post: BlogPost = {
 <p>AdCreative.ai is the most established name in this category, rated 4.3/5 on G2 across roughly 790 reviews and holding a "Leader" badge in G2's Creative Management category. Its standout feature is Creative Scoring — every generated static ad gets a predicted-conversion score before you spend a dollar on it, trained on a proprietary library the company describes as covering millions of real ad performance data points.</p>
 <p>There's no permanent free plan; you get a 7-day trial with 10 credits and a card is required to activate it, though you aren't charged until the trial ends. Entry-level pricing runs around $39/month for two users on the Starter tier, with the trap noted above: video generation requires the $249/month Professional tier. AdCreative.ai does run its own affiliate program — mentioned favorably by users in G2 reviews — though I couldn't independently verify its exact commission terms, so the link below goes to the official site.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">7-day trial, 10 credits — card required, no charge until the trial ends.</p>
-  <a href="https://www.adcreative.ai" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try AdCreative.ai →</a>
+<p>7-day trial, 10 credits — card required, no charge until the trial ends.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.adcreative.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try AdCreative.ai →</a>
 </div>
 
 <h2>Creatify — best for URL-to-video UGC-style ads</h2>
 <p>Creatify's core workflow is genuinely simple: paste a product page URL, and it pulls the images, description, and features to generate an AI-scripted video with an avatar presenter, no filming required. G2 rates it 4.8/5 across roughly 1,299 reviews, the highest of any tool in this comparison, with reviewers specifically praising realistic avatars and fast turnaround for ecommerce and dropshipping use cases.</p>
 <p>Pricing is reported inconsistently across sources as of this guide — G2 lists a $19–49/month range, while other aggregators list a $39 Starter / $99 Pro structure with a limited free tier. Verify current tiers directly at creatify.ai/pricing before committing, and budget for the 2-month credit expiry noted above regardless of which tier you land on. Creatify does run a confirmed affiliate program: 25% recurring commission for the first year, a 30-day cookie window, and a $20 minimum payout via PayPal.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">Free trial available — paste a product URL to generate your first video ad.</p>
-  <a href="https://creatify.ai" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Creatify →</a>
+<p>Free trial available — paste a product URL to generate your first video ad.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://creatify.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Creatify →</a>
 </div>
 
 <h2>Topview AI — best budget pick for video ads</h2>
@@ -124,27 +124,27 @@ const post: BlogPost = {
 <p>It integrates with the TikTok Ad Library for competitor research directly inside the tool, which is a genuinely useful shortcut for a solo founder who doesn't have time to manually screenshot competitor ads.</p>
 <p>I couldn't confirm a self-serve affiliate program for Topview AI as of this guide's research — third-party sites reference "affiliate marketers" as a target user, not a referral program for promoting Topview itself. The link below goes to the official site.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">Ongoing free tier — 10 credits, watermarked, no subscription required to start.</p>
-  <a href="https://www.topview.ai" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Topview AI Free →</a>
+<p>Ongoing free tier — 10 credits, watermarked, no subscription required to start.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.topview.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Topview AI Free →</a>
 </div>
 
 <h2>Shhots AI — cheapest real entry point</h2>
 <p>Shhots AI is built specifically for Shopify and ecommerce sellers: upload 2–5 product photos or paste a product URL, and it generates product videos, AI UGC-style ads, and image ads without a subscription. Every credit pack is a one-time purchase — the $5 Mini Plan gives 500 credits (enough to test every core feature, including 4K upscaling), and credits never expire, which is the most founder-friendly pricing structure in this entire comparison.</p>
 <p>The trade-off: I couldn't find a verified Trustpilot or G2 rating for Shhots AI as of this guide's research, so the ⭐ 3.9/5 in the comparison table above is an editorial estimate based on feature completeness and pricing transparency, not an independently sourced platform rating — treat it accordingly, and check recent reviews yourself before committing a larger credit pack. No confirmed affiliate program was found either; the link below goes to the official site.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">$5 one-time Mini Plan, 500 credits, no subscription, credits never expire.</p>
-  <a href="https://shhots.ai" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try Shhots AI →</a>
+<p>$5 one-time Mini Plan, 500 credits, no subscription, credits never expire.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://shhots.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Shhots AI →</a>
 </div>
 
 <h2>PhotoRoom — best free pick for static product-photo ads</h2>
 <p>PhotoRoom isn't a full ad-creative platform, but it's worth including precisely because it's the only genuinely free tool here. If your ad format is a clean product photo rather than a video or a heavily designed banner, PhotoRoom's background removal and AI background generation get you a usable static ad image at zero cost, with a paid tier at $9.99/month removing the watermark and unlocking batch editing and brand kits.</p>
 <p>It's rated 4.6/5 on Trustpilot across nearly 2,891 reviews and 4.7/5 on G2 — the highest independently verified rating of any tool in this comparison. See our full <a href="/tools/photoroom/">PhotoRoom review</a> for the complete feature breakdown.</p>
 
-<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:16px 20px;margin:20px 0;text-align:center">
-  <p style="margin:0 0 12px;font-size:14px;color:#555">Free plan available — background removal and AI product photos, watermarked.</p>
-  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:#6366f1;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600">Try PhotoRoom Free →</a>
+<p>Free plan available — background removal and AI product photos, watermarked.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
