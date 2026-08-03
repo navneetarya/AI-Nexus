@@ -44,30 +44,51 @@ const post: BlogPost = {
 <h3>1. Perplexity AI — Unlimited Research With Sources</h3>
 <p>Perplexity's free plan is exceptional: unlimited standard web searches with source citations, daily limits on Pro Search (approximately 5 per day), and no time limit. For research, fact-checking, and information retrieval — the tasks where you want verified, cited answers rather than AI-generated guesses — Perplexity free covers 90% of individual use cases.</p>
 <p>The citation-first design means you can use it for research that needs attribution without worrying that AI is hallucinating. This is genuinely rare at the free tier. <strong>Best for:</strong> Students, researchers, anyone who fact-checks heavily.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+</div>
 
 <h3>2. Leonardo.ai — 150 Image Tokens Per Day</h3>
 <p>Leonardo.ai's free plan gives 150 generation tokens per day — enough for approximately 30–40 images at standard resolution. This is not a trial; it renews daily. For content creators, social media managers, and designers who need regular AI image generation, 30–40 images per day is a functional professional allocation.</p>
 <p>The free plan also permits commercial use of generated images, which is more permissive than some competitors. <strong>Best for:</strong> Creators and marketers who need regular image generation without paying subscription fees.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+</div>
 
 <h3>3. Grammarly — Unlimited Grammar Checking</h3>
 <p>Grammarly's free plan has no word limit. It checks grammar, spelling, and punctuation across Gmail, Google Docs, LinkedIn, Twitter, and 500+ other apps via the browser extension. For everyday professional writing — emails, social posts, documents — the free plan catches a high percentage of meaningful errors without requiring any payment.</p>
 <p>The limitations (no tone detection, no clarity rewrites, no plagiarism checker) are real but don't prevent the core use case: making your writing error-free. <strong>Best for:</strong> Everyone who writes regularly in English.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://grammarly.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
+</div>
 
 <h3>4. Canva — Generous Design Features</h3>
 <p>Canva's free plan is among the most functional in any category. Access to 250,000+ templates, 100+ design types, basic photo editing, and a limited selection of stock photos and graphics. The Magic Write AI (limited uses per month) assists with copy. For individuals and small businesses producing marketing materials, social media content, and presentations without a designer, Canva free is a complete solution.</p>
 <p><strong>Best for:</strong> Non-designers who need professional-looking visuals regularly.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.canva.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva Free →</a>
+</div>
 
 <h3>5. Gamma — 400 AI Presentation Credits</h3>
 <p>Gamma's free plan includes 400 AI credits — roughly 10 full presentation generations. Presentations made on the free plan include Gamma branding on exports, but web-shared decks work without branding. For students, freelancers, and professionals who need occasional pitch decks or presentations, 400 credits is enough for several months of regular use.</p>
 <p><strong>Best for:</strong> Anyone who creates presentations occasionally and wants AI-generated structure and design without paying monthly.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+</div>
 
 <h3>6. Replit — Unlimited Public Projects With AI</h3>
 <p>Replit's free plan provides unlimited public projects and 3 private projects, basic Ghostwriter AI assistance, and full browser-based IDE functionality. For learners, students, and developers prototyping ideas, this is a genuinely functional development environment at zero cost. The AI has access to your full project context — not just the current file.</p>
 <p><strong>Best for:</strong> Students learning to code, developers prototyping ideas, anyone who wants a zero-setup coding environment.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
+</div>
 
 <h3>7. Taskade — Unlimited Projects With Basic AI</h3>
 <p>Taskade's free plan provides unlimited projects, unlimited tasks, 5 workspaces, and 5 AI agent runs per month. The AI project generation (which creates a full task list from a goal description) works on the free plan — you just get fewer runs. For individual freelancers and solopreneurs managing their own projects, the free plan is functional for daily task management.</p>
 <p><strong>Best for:</strong> Freelancers and solopreneurs who want AI-assisted project management without a subscription.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+</div>
 
 <h2>Free Plans That Are Less Useful Than They Seem</h2>
 <p>Not every "free plan" is worth listing. Several prominent AI tools have free plans that are effectively non-functional for ongoing use:</p>

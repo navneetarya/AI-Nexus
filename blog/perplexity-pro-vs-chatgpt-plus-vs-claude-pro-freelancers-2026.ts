@@ -202,6 +202,11 @@ const post: BlogPost = {
 
 <h3>Not sure where to start?</h3>
 <p>Run the same test I did. Pick the three tasks most representative of your actual workload. Use the free tiers of all three tools. Pay for whichever one saves you the most time on those specific tasks. That's the only data point that matters.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ChatGPT →</a>
+  <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Claude →</a>
+</div>
   `.trim(),
 };
 

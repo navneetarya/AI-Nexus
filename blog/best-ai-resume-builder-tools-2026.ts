@@ -142,6 +142,9 @@ const post: BlogPost = {
 <p>What sets Teal apart from the other three tools here isn't the resume builder itself — it's the job-application tracker, which organizes every application by stage (saved, applied, interviewing, offer) and keeps each tailored resume version linked to the specific posting it was written for. For a job seeker managing more than a handful of applications at once, that tracking layer is arguably more valuable day-to-day than the AI writing features.</p>
 <p>Teal's AI tailoring works by pulling in a job description's text and rewriting your existing bullet points to echo the language and priorities of that specific posting, rather than generating a resume from a blank page. That makes it better suited to someone refining an existing resume across many similar applications than someone starting from zero with no work history documented anywhere yet.</p>
 <p>The free plan's biggest practical limitation is a cap on AI tailoring runs per month — enough for occasional use, but active daily job seekers will likely hit it and face the upgrade decision within the first couple of weeks.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.tealhq.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Teal Free →</a>
+</div>
 
 <h2>Rezi — the strictest ATS-safe formatting on the market</h2>
 <p><strong>Rezi</strong> takes a content-first, design-second approach: single-column templates, standard section headers, no icons or color blocks, built specifically to parse cleanly through Workday, Greenhouse, Taleo, and iCIMS. Its free tier allows one resume with limited AI credits; Pro unlocks unlimited AI writing and ATS scoring at $29/month or a $149 one-time lifetime plan — a meaningfully better deal than a monthly subscription for anyone job-searching longer than five months.</p>
@@ -149,16 +152,25 @@ const post: BlogPost = {
 <h3>The AI Agent is Rezi's real edge over a static scoring tool</h3>
 <p>Rezi's AI Agent feature is worth calling out specifically — unlike a static scoring tool, it functions closer to a chat-based resume coach, letting you ask direct questions about phrasing, section order, or how to describe an unusual career gap, and getting a structured answer back rather than just a numeric score.</p>
 <p>That conversational layer is the main thing separating Rezi from a pure ATS-checker like Jobscan, and it's the feature most cited in positive reviews from users who found other tools' AI output too generic or repetitive across resume sections.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.rezi.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rezi Free →</a>
+</div>
 
 <h2>Kickresume — the strongest template design, at the highest ongoing monthly price</h2>
 <p><strong>Kickresume</strong> is the most visually polished builder in this comparison, with 40+ templates, a built-in personal-website generator that turns your resume into a shareable portfolio page with one click, and a GPT-powered AI writer. Its free tier is the thinnest of the four — only 4 templates and no AI writing at all — pushing free users toward an upgrade quickly.</p>
 <p>Premium runs $24/month, dropping to roughly $18/month billed quarterly ($54 every 3 months) or $8/month billed yearly ($96/year), making the annual plan the clear value pick if you'll use it beyond a single application cycle. A recurring complaint across independent reviews is usage-cap frustration on the monthly plan — several Trustpilot reviewers report hitting undisclosed AI-generation limits mid-billing-cycle despite "unlimited AI" marketing, worth knowing before committing to the $24/month tier specifically.</p>
 <p>One genuinely useful feature unique to Kickresume in this comparison: students and teachers can access Premium at no cost with ISIC, ITIC, or UNiDAYS verification, one of the more generous student policies among AI job-search tools. For students or recent graduates specifically, that free-with-verification path removes the pricing tradeoff entirely and makes Kickresume's design strength available without the $24/month or $96/year decision most other users face.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.kickresume.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Kickresume →</a>
+</div>
 
 <h2>Jobscan — the deepest per-job ATS diagnostic, at the highest price</h2>
 <p><strong>Jobscan</strong> is not primarily a resume builder — it's a scanner that compares a resume you've already written against a specific job description and named ATS platform, scoring keyword match, formatting risk, and section completeness across 20+ checks. That depth is genuinely differentiated: no other tool in this list names the specific ATS platform (Workday vs. Greenhouse vs. Taleo) your resume is being tested against.</p>
 <p>The cost reflects that specialization — $49.95/month for unlimited scans, the highest recurring price in this comparison, against a free tier capped at 5 scans/month. For most job seekers applying to a handful of roles per week, the free tier is enough; Jobscan earns its price mainly for someone running a high-volume, multi-track job search where keyword precision matters on every single application.</p>
 <p>Jobscan also publishes its own aggregate data on what typically breaks a resume's ATS score, which functions as a genuinely useful free diagnostic checklist even for people who never subscribe: overly complex tables and columns, headers or footers containing contact information the parser can't reliably extract, and non-standard section titles (like "Where I've Been" instead of "Experience") are the most commonly cited formatting failures across its published scan data. Even without paying, reviewing that checklist against your own resume before running it through any tool in this guide is a reasonable first step.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.jobscan.co" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jobscan →</a>
+</div>
 
 <h2>How ATS screening actually works, briefly</h2>
 <p>An applicant tracking system doesn't read a resume the way a human does — it parses the document into structured fields (name, dates, job titles, skills) and then ranks or filters candidates based on keyword and requirement matches against the job posting, before a recruiter ever opens the file.</p>

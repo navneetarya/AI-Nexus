@@ -141,18 +141,30 @@ const post: BlogPost = {
 <h3>Wispr Flow — Best for Cross-Platform AI Cleanup</h3>
 <p><strong>Wispr Flow</strong> is a cloud-based AI dictation app for Mac, Windows, iOS, and Android that goes beyond raw transcription — it removes filler words, adds punctuation, and reformats output based on which app you're dictating into (professional tone for Gmail, casual for Slack). Its Command Mode lets you select existing text and speak an editing instruction, like "make this more concise," without touching the keyboard.</p>
 <p>The free Basic plan caps out at 2,000 words per week on desktop and 1,000 on iPhone — roughly 13-15 minutes of natural speech — which most regular users exhaust within a few days. Flow Pro removes the cap and unlocks Command Mode for $15/month, or $12/month billed annually ($144/year).</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://wisprflow.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Wispr Flow →</a>
+</div>
 
 <h3>Superwhisper — Best for Mac Privacy and One-Time Pricing</h3>
 <p>Looking for the best dictation app for Mac specifically, rather than a cross-platform tool? <strong>Superwhisper</strong> runs OpenAI's Whisper and Parakeet models locally on Apple Silicon Macs, meaning audio never leaves your device by default. Its free tier is genuinely unlimited for small local models — not a time-boxed trial — though accuracy is noticeably better on the paid tier, which unlocks larger models and cloud options.</p>
 <p>Pro costs $8.49/month, $84.99/year, or a $249.99 one-time lifetime license that pays for itself against the annual plan in under three years. The tradeoff is platform: Superwhisper is Mac-only, so Windows and Android users need a different tool entirely.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://superwhisper.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Superwhisper →</a>
+</div>
 
 <h3>Otter.ai — Best If You Mainly Need Meeting Transcripts, Not Dictation</h3>
 <p><strong>Otter.ai</strong> belongs in a different category than the other five tools here — it's built around a bot that joins Zoom, Google Meet, or Microsoft Teams calls and transcribes the conversation, not around system-wide dictation for writing emails or documents. If your actual need is capturing and summarizing meetings, Otter is a strong purpose-built option.</p>
 <p>The free Basic plan includes 300 transcription minutes per month (capped at 30 minutes per conversation), and Pro at $16.99/month ($8.33/month annual) lifts that to 1,200 minutes. It is the wrong tool if what you actually want is to dictate a blog post or an email — for that job, Wispr Flow or Superwhisper are the better fit.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://otter.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Otter.ai →</a>
+</div>
 
 <h3>Dragon Professional v16 — Best for Legal/Medical Specialized Vocabulary</h3>
 <p><strong>Dragon Professional v16</strong>, now owned by Microsoft after its 2022 acquisition of Nuance, remains the accuracy benchmark among AI dictation software for specialized professional vocabulary — legal briefs, medical documentation, industry-specific terminology that general AI models sometimes miss. It's a one-time $699.99 purchase, Windows-only, and processes speech mostly on-device after initial voice-profile setup.</p>
 <p>The catch: no major Dragon Professional version has shipped since 2023, and Nuance's own consumer Dragon Home tier was discontinued the same year, signaling a shift toward enterprise healthcare rather than general dictation. Unless your workflow specifically demands legal or medical vocabulary accuracy on Windows, a modern Whisper-based tool at a fraction of the price will cover most needs just as well.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.nuance.com/dragon.html" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See Dragon Professional →</a>
+</div>
 
 <h3>Apple Dictation & Google Docs Voice Typing — Best Free Options</h3>
 <p>For light, occasional dictation, the two options built into tools you likely already have are genuinely good enough. <strong>Apple Dictation</strong>, built into every Mac and iPhone, works fully offline with no word limit — press Fn twice and start speaking. <strong>Google Docs Voice Typing</strong> works inside any Google Doc (Tools → Voice Typing), supports over 100 languages, and recognizes basic spoken formatting commands like "new paragraph" and "bold."</p>

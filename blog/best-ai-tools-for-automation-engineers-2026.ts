@@ -49,20 +49,33 @@ const post: BlogPost = {
 <h3>Claude 3.5 Sonnet — Architecture and debugging partner</h3>
 <p>For complex problems — framework architecture decisions, debugging non-deterministic test failures, optimising slow test suites, or designing a data-driven testing strategy — Claude 3.5 Sonnet is the strongest AI partner available.</p>
 <p>Unlike GitHub Copilot (which works on what you're currently writing), Claude handles architectural conversations: "I have 3,000 Selenium tests and they're taking 4 hours to run — help me design a parallelisation strategy for our Jenkins pipeline." The quality of these higher-level conversations is significantly better than other AI models tested in 2026.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://github.com/features/copilot" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GitHub Copilot →</a>
+  <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Claude →</a>
+</div>
 
 <h2>Category 2: AI-Native Testing Platforms</h2>
 
 <h3>Testim — Self-healing tests that maintain themselves</h3>
 <p>Testim is built around AI-powered test stability. Traditional automation tests break every time a developer changes a CSS class, renames an ID, or restructures a form. Testim's AI identifies UI elements by multiple signals simultaneously — not just an XPath or CSS selector, but the element's visual appearance, text content, location, and surrounding context. When the UI changes, Testim's AI automatically updates the test locator.</p>
 <p>For QA teams maintaining large automated test suites, self-healing locators eliminate the most time-consuming maintenance work: tracking down and updating broken selectors after every UI release. Teams report 60–80% reduction in test maintenance time after switching to Testim.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.testim.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Testim →</a>
+</div>
 
 <h3>Applitools — Visual AI testing at scale</h3>
 <p>Applitools uses Visual AI to compare screenshots intelligently. Unlike pixel-by-pixel comparison (which fails on font rendering differences and dynamic content), Applitools' Visual AI understands what constitutes a meaningful visual regression versus an acceptable rendering difference.</p>
 <p>For teams doing cross-browser testing, visual regression testing, and responsive design validation, Applitools integrates with Selenium, Playwright, Cypress, and Appium. The AI baseline comparison means you catch real visual bugs without drowning in false positives from dynamic content like timestamps and ads.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://applitools.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Applitools →</a>
+</div>
 
 <h3>Mabl — End-to-end AI testing platform</h3>
 <p>Mabl combines test recording, AI test generation, and intelligent test maintenance in one platform. You can generate tests by walking through your application, and Mabl records the workflow, generates the test, and monitors for regressions with each deployment. The AI also analyses test failures to distinguish real bugs from environmental flakiness.</p>
 <p>For teams without dedicated automation engineers who still need comprehensive test coverage, Mabl's low-code approach makes automation accessible without deep Selenium or Playwright expertise.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.mabl.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Mabl →</a>
+</div>
 
 <h2>The Automation Engineer AI Toolkit in 2026</h2>
 <p>The most effective automation engineers are combining tools: <strong>GitHub Copilot</strong> for daily test code writing, <strong>Claude</strong> for architecture and complex debugging, and a specialist AI testing platform (<strong>Testim, Applitools, or Mabl</strong>) for the production test infrastructure.</p>

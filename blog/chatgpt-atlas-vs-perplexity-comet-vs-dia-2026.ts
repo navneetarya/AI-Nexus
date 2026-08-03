@@ -5,7 +5,7 @@
 // Angle: security/permissions trade-off most roundups skip, alongside standard feature comparison
 // Internal links: /tools/chatgpt, /tools/perplexity, /best-ai-productivity-tools
 // Word count: ~2,400 words | Published: 2026-07-21 | Author: Navneet Arya
-// No affiliate program found for Atlas, Comet, or Dia in this session — no affiliate links or disclosure in this post.
+// No affiliate program found for Atlas, Comet, or Dia — CTAs use direct official URLs (rel="noopener", no affiliate disclosure needed).
 
 import { BlogPost } from './types';
 
@@ -221,6 +221,11 @@ const post: BlogPost = {
 <p><strong>Skip all three</strong> if you regularly log into banking, healthcare, or other high-sensitivity accounts in the same browser profile you'd use for agentic browsing — none has a long enough independent security track record yet to recommend blending those use cases. <strong>Skip Atlas</strong> if you're not already paying for ChatGPT Plus and don't want to start just for a browser.</p>
 <p><strong>Skip Dia</strong> if you're on Windows or an Intel Mac, or if broad data collection is a dealbreaker for you — read the actual privacy policy, not just the marketing page, before installing. <strong>Skip Comet</strong> if you're not comfortable using a browser with a publicly documented credential-extraction vulnerability until you've confirmed the specific fix status for your installed version.</p>
 <p>For more on where Perplexity and ChatGPT fit as standalone AI tools beyond the browser, see the <a href="/tools/perplexity/" style="color:#6366f1;">Perplexity Pro review</a> and the <a href="/tools/chatgpt/" style="color:#6366f1;">ChatGPT review</a> on AI Nexus. For broader productivity tool context, the <a href="/best-ai-productivity-tools/" style="color:#6366f1;">best AI productivity tools 2026 guide</a> covers where browsers fit alongside task and research tools.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://chatgpt.com/atlas" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ChatGPT Atlas →</a>
+  <a href="https://www.perplexity.ai/comet" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Perplexity Comet →</a>
+  <a href="https://www.diabrowser.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Dia →</a>
+</div>
 
 <h2 id="final-verdict">Final verdict — worth it in 2026?</h2>
 <p>The AI browser category is real and moving fast, but "worth switching your default browser today" is a higher bar than "worth testing." Perplexity Comet clears that bar most easily — the free tier is genuinely complete, and the research-synthesis use case is immediately useful with low downside, provided you're deliberate about which sessions you let the agent touch.</p>
