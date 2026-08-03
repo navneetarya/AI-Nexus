@@ -60,7 +60,7 @@ CTA_PATTERN = re.compile(
 
 # Numbered ranking heading, e.g. "1. Intercom Fin — Best AI-First ..."
 TOOL_HEADING_PATTERN = re.compile(
-    r'<h[23][^>]*>\s*\d+\.\s+([A-Z][A-Za-z0-9.\'&\s]+?)\s+[—–-]\s',
+    r'<h[23][^>]*>\s*\d+\.\s+([A-Z][A-Za-z0-9.\'&\s]+?)(?:\s*[:—–-]\s*|\s*<)',
 )
 
 # `content` is a template literal that may or may not be the last field in
