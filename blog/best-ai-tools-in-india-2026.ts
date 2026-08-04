@@ -52,7 +52,8 @@ const post: BlogPost = {
 
   content: `
 <h2>What Are the Best AI Tools in India in 2026?</h2>
-<p>The best AI tools in India in 2026 are Rytr for writing, Grammarly for editing on a permanently free plan, Canva AI for design, Perplexity for research with cited sources on its free tier, and Leonardo.ai for free AI image generation — and every one of these works without a dollar card, a VPN, or a hidden USD-only paywall. Every "best AI tools" roundup I've read lists prices in USD, assumes you're paying with a US card, and doesn't mention GST once. As someone running an AI tools site from Noida, I kept getting the same questions from readers: Does this work in India? What's the actual INR price? Do I need a VPN? Can it write in Hindi?</p>
+<p>The best AI tools in India in 2026 are Rytr for writing, Grammarly for editing on a permanently free plan, and Canva AI for design. Perplexity offers research with cited sources on its free tier, and Leonardo.ai gives free AI image generation. Every one of these works without a dollar card, a VPN, or a hidden USD-only paywall.</p>
+<p>Every "best AI tools" roundup I've read lists prices in USD, assumes you're paying with a US card, and doesn't mention GST once. As someone running an AI tools site from Noida, I kept getting the same questions from readers: Does this work in India? What's the actual INR price? Do I need a VPN? Can it write in Hindi?</p>
 <!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
@@ -75,36 +76,36 @@ const post: BlogPost = {
 
 <p>This guide answers those questions specifically. Every tool below is accessible from India without a VPN, has been checked for INR pricing at checkout, and includes honest notes on Hindi/regional language support where relevant.</p>
 
-<h2>1. Rytr — Best AI Writing Tool for Indian Creators</h2>
-<p><strong>Category: Writing · Free: 10,000 chars/month · Paid: ~₹750/month (Saver) · ~₹1,660/month (Unlimited)</strong></p>
-<p>Rytr is the most practical AI writing tool for Indian creators for three reasons: it has a genuine free plan, it supports Hindi output, and its paid plan is priced accessibly in Indian rupees. The Saver plan at around ₹750/month (pricing varies slightly with exchange rate) gives you unlimited characters — more than enough for daily blog posts, social media content, or freelance writing work.</p>
+<h2>1. Rytr : Best AI Writing Tool for Indian Creators</h2>
+<p><strong>Category: Writing · Free: 10,000 chars/month · Paid: ~₹750/month (Saver) · ~₹1,660/month (Unlimited).</strong></p>
+<p>Rytr is the most practical AI writing tool for Indian creators for three reasons. It has a genuine free plan, it supports Hindi output, and its paid plan is priced accessibly in Indian rupees. The Saver plan at around ₹750/month (pricing varies slightly with exchange rate) gives you unlimited characters, more than enough for daily blog posts, social media content, or freelance writing work.</p>
 <p>The Hindi support is worth testing before you buy: set the output language to Hindi in the Language dropdown, paste a topic, and Rytr generates Hindi content directly. The quality is usable for drafts and short social posts, though it reads more like translated English than natural Hindi prose. For English content creation, Rytr is consistently strong and competes with tools that cost 3–4x more.</p>
-<p><strong>Free plan reality:</strong> 10,000 characters/month is genuinely useful — enough for two 600-word blog posts or around 20 Instagram captions. No credit card required to sign up.</p>
+<p><strong>Free plan reality:</strong> 10,000 characters/month is genuinely useful, enough for two 600-word blog posts or around 20 Instagram captions. No credit card required to sign up.</p>
 <p><strong>GST note:</strong> GST is added at checkout on the paid plan. Budget approximately 18% over the listed price.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
-  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
-<h2>2. Grammarly — Best AI Editing Tool (Permanently Free)</h2>
-<p><strong>Category: Writing · Free: Unlimited grammar checking · Pro: ~₹999/month (billed annually)</strong></p>
-<p>Grammarly's free plan is the highest-value free AI tool available to Indian users. The browser extension works across Gmail, Google Docs, LinkedIn, and most web-based editors — every piece of writing you produce in English gets real-time grammar, spelling, and clarity suggestions with zero character limit on the free tier.</p>
-<p>Grammarly Pro adds tone detection, vocabulary suggestions, and a plagiarism checker. At approximately ₹999/month billed annually (check final price at checkout — exchange rate fluctuations affect this), it's worth it if you write client-facing content professionally. For students and casual writers, the free plan handles everything you need.</p>
+<h2>2. Grammarly : Best AI Editing Tool (Permanently Free)</h2>
+<p><strong>Category: Writing · Free: Unlimited grammar checking · Pro: ~₹999/month (billed annually).</strong></p>
+<p>Grammarly's free plan is the highest-value free AI tool available to Indian users. The browser extension works across Gmail, Google Docs, LinkedIn, and most web-based editors. Every piece of writing you produce in English gets real-time grammar, spelling, and clarity suggestions with zero character limit on the free tier.</p>
+<p>Grammarly Pro adds tone detection, vocabulary suggestions, and a plagiarism checker. At approximately ₹999/month billed annually (check final price at checkout, since exchange rate fluctuations affect this), it's worth it if you write client-facing content professionally. For students and casual writers, the free plan handles everything you need.</p>
 <p><strong>Hindi support:</strong> Grammarly checks English only. It will not correct Hindi text.</p>
-<p><strong>Payment:</strong> Accepts Indian debit cards, credit cards, and UPI-linked payment methods in most cases. If your card is declined, try the Grammarly app via the Google Play Store — it uses Google Play's payment system, which handles Indian payment methods reliably.</p>
+<p><strong>Payment:</strong> Accepts Indian debit cards, credit cards, and UPI-linked payment methods in most cases. If your card is declined, try the Grammarly app via the Google Play Store. It uses Google Play's payment system, which handles Indian payment methods reliably.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="https://grammarly.com?affiliateId=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
-  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
-<h2>3. Canva AI — Best Free Design Tool with AI Features</h2>
-<p><strong>Category: Design · Free: robust free plan · Pro: ~₹3,999/year (~₹333/month equivalent)</strong></p>
-<p>Canva is already widely used in India, and its AI features — Magic Write (text generation), Magic Design (template generation from prompts), Magic Eraser (background removal), and AI image generation — are available on both free and Pro plans. For Indian social media creators, small businesses, and students, Canva AI is the most practical design tool on this list.</p>
-<p>Magic Write supports Hindi reasonably well when prompted in Hindi, though you'll want to proofread the output. The design templates are particularly good for Instagram posts, YouTube thumbnails, and educational materials — common use cases for Indian creators.</p>
+<h2>3. Canva AI : Best Free Design Tool with AI Features</h2>
+<p><strong>Category: Design · Free: robust free plan · Pro: ~₹3,999/year (~₹333/month equivalent).</strong></p>
+<p>Canva is already widely used in India, and its AI features are available on both free and Pro plans. That includes Magic Write (text generation), Magic Design (template generation from prompts), Magic Eraser (background removal), and AI image generation. For Indian social media creators, small businesses, and students, Canva AI is the most practical design tool on this list.</p>
+<p>Magic Write supports Hindi reasonably well when prompted in Hindi, though you'll want to proofread the output. The design templates are particularly good for Instagram posts, YouTube thumbnails, and educational materials, all common use cases for Indian creators.</p>
 <p>At ₹3,999/year for Pro (approximately ₹333/month), Canva Pro is the best-value premium design tool for Indian users. It includes 100+ million stock photos, videos, and audio assets, plus Magic Resize for automatically reformatting designs across platforms.</p>
 <p><strong>GST note:</strong> Canva typically adds 18% GST for Indian subscribers. The annual Pro plan works out to approximately ₹4,700 after GST.</p>
 
@@ -112,24 +113,24 @@ const post: BlogPost = {
   <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
-  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
-<h2>4. Perplexity — Best AI Research Tool (Free Plan is Genuinely Excellent)</h2>
-<p><strong>Category: Research · Free: unlimited searches · Pro: ~₹1,660/month</strong></p>
+<h2>4. Perplexity : Best AI Research Tool (Free Plan is Genuinely Excellent)</h2>
+<p><strong>Category: Research · Free: unlimited searches · Pro: ~₹1,660/month.</strong></p>
 <p>Perplexity is an AI search engine that answers questions by reading current web sources and citing them. For Indian students, researchers, and freelancers who need accurate, up-to-date information, it is significantly more useful than a standard search engine for research tasks.</p>
-<p>The free plan gives unlimited basic searches — you can use it every day for research without paying anything. Perplexity Pro unlocks advanced models (GPT-4o, Claude) and higher-quality answers, but the free tier is genuinely powerful for everyday research and fact-checking.</p>
-<p>One practical use for Indian users: Perplexity handles queries about Indian-specific topics (GST rules, SEBI regulations, UPSC preparation topics) better than most AI tools because it searches current web sources rather than relying purely on training data.</p>
+<p>The free plan gives unlimited basic searches, so you can use it every day for research without paying anything. Perplexity Pro unlocks advanced models (GPT-4o, Claude) and higher-quality answers, but the free tier is genuinely powerful for everyday research and fact-checking.</p>
+<p>One practical use for Indian users: Perplexity handles queries about Indian-specific topics (GST rules, SEBI regulations, UPSC preparation topics) better than most AI tools. That's because it searches current web sources rather than relying purely on training data.</p>
 <p><strong>No VPN needed:</strong> Fully accessible from India. The free plan requires only an email signup.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
-  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
-<h2>5. Leonardo.ai — Best Free AI Image Generator</h2>
-<p><strong>Category: Image · Free: 150 credits/day · Paid: from ~$12/month (no INR pricing currently)</strong></p>
-<p>Leonardo.ai offers the most generous free AI image generation plan available — 150 credits per day, which translates to roughly 30–50 images daily depending on settings. No credit card required. The image quality rivals Midjourney for most use cases, and the browser-based interface works from India without any restrictions.</p>
+<h2>5. Leonardo.ai : Best Free AI Image Generator</h2>
+<p><strong>Category: Image · Free: 150 credits/day · Paid: from ~$12/month (no INR pricing currently).</strong></p>
+<p>Leonardo.ai offers the most generous free AI image generation plan available: 150 credits per day, which translates to roughly 30–50 images daily depending on settings. No credit card required. The image quality rivals Midjourney for most use cases, and the browser-based interface works from India without any restrictions.</p>
 <p>For Indian creators making social media graphics, YouTube thumbnails, blog cover images, or presentation visuals, Leonardo's free plan covers most daily needs without any cost. The paid plan is currently USD-only, but the free tier is substantial enough that most Indian creators won't need to upgrade.</p>
 <p><strong>Hindi prompts:</strong> Leonardo accepts prompts in English. It can generate images depicting Indian cultural contexts, Indian fashion, and Indian settings when described specifically in English prompts.</p>
 
@@ -137,54 +138,54 @@ const post: BlogPost = {
   <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
-  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
-<h2>6. Gamma — Best Free AI Presentation Tool</h2>
-<p><strong>Category: Design/Presentations · Free: 400 AI credits · Paid: ~$10/month (USD only)</strong></p>
+<h2>6. Gamma : Best Free AI Presentation Tool</h2>
+<p><strong>Category: Design/Presentations · Free: 400 AI credits · Paid: ~$10/month (USD only).</strong></p>
 <p>Gamma generates complete, visually polished presentations from a topic prompt in under 2 minutes. For Indian students, educators, and startup founders who regularly need slide decks, this is the fastest tool on this list for producing professional-looking presentations.</p>
-<p>The free plan includes 400 AI credits — enough for 4–5 full presentations. After that, additional credits require a paid plan. The output quality is significantly above what most people produce manually in PowerPoint or Google Slides from scratch, and it handles Indian educational and business topics well.</p>
+<p>The free plan includes 400 AI credits, enough for 4–5 full presentations. After that, additional credits require a paid plan. The output quality is significantly above what most people produce manually in PowerPoint or Google Slides from scratch, and it handles Indian educational and business topics well.</p>
 <p><strong>Use case for India:</strong> UPSC preparation notes, college project presentations, startup pitch decks, and teacher lesson materials are all strong use cases where Gamma saves substantial time.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
-  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
-<h2>7. Notion AI — Best AI Productivity Tool for Notes and Planning</h2>
-<p><strong>Category: Productivity · Free Notion: available · AI add-on: ~₹660/month</strong></p>
-<p>Notion is a notes and project management tool, and the Notion AI add-on gives you AI writing, summarisation, and Q&A inside your existing Notion workspace. If you already use Notion for notes, study planning, or freelance project management, the AI add-on at approximately ₹660/month is a low-cost way to add AI assistance to your existing workflow.</p>
+<h2>7. Notion AI : Best AI Productivity Tool for Notes and Planning</h2>
+<p><strong>Category: Productivity · Free Notion: available · AI add-on: ~₹660/month.</strong></p>
+<p>Notion is a notes and project management tool, and the Notion AI add-on gives you AI writing, summarisation, and Q&A inside your existing Notion workspace. If you already use Notion for notes, study planning, or freelance project management, the AI add-on is a low-cost way to extend your workflow. It runs approximately ₹660/month.</p>
 <p>For Indian students managing multiple subjects, Notion AI can summarise lecture notes, generate quiz questions from content, and write structured study plans on command. For freelancers, it drafts project proposals and client update emails directly from your project notes.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
-  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
-<h2>8. Taskade — Best Free AI Project Management Tool</h2>
-<p><strong>Category: Productivity · Free: full-featured free plan · Paid: from ~₹650/month</strong></p>
-<p>Taskade combines task management, notes, and AI generation into one tool. The free plan is genuinely full-featured — you get AI-generated task lists, project plans, and workflow templates without paying. For Indian freelancers managing multiple client projects, or students tracking coursework, Taskade's AI Workflow Generator (describe a project, get a full task breakdown) is one of the most practically useful free AI features available.</p>
+<h2>8. Taskade : Best Free AI Project Management Tool</h2>
+<p><strong>Category: Productivity · Free: full-featured free plan · Paid: from ~₹650/month.</strong></p>
+<p>Taskade combines task management, notes, and AI generation into one tool. The free plan is genuinely full-featured: you get AI-generated task lists, project plans, and workflow templates without paying. For Indian freelancers managing multiple client projects, or students tracking coursework, Taskade's AI Workflow Generator is one of the most practically useful free AI features available. Describe a project and it returns a full task breakdown.</p>
 <p>The paid plan unlocks unlimited AI usage, but the free tier covers most personal and small-team needs.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
-  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 <h2>AI Tools with the Best Free Plans for Indian Users</h2>
 <p>If you want to build an AI stack with zero cost to start:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
-  <li><strong>Grammarly</strong> — Unlimited grammar checking, free forever</li>
-  <li><strong>Perplexity</strong> — Unlimited research searches, free forever</li>
-  <li><strong>Rytr</strong> — 10,000 characters/month (1–2 blog posts), no credit card</li>
-  <li><strong>Leonardo.ai</strong> — 150 image credits/day, no credit card</li>
-  <li><strong>Canva AI</strong> — Magic Write + Magic Design on free plan</li>
-  <li><strong>Gamma</strong> — 400 AI presentation credits on signup</li>
-  <li><strong>Taskade</strong> — Full-featured free project planning with AI</li>
+  <li><strong>Grammarly</strong>: Unlimited grammar checking, free forever.</li>
+  <li><strong>Perplexity</strong>: Unlimited research searches, free forever.</li>
+  <li><strong>Rytr</strong>: 10,000 characters/month (1–2 blog posts), no credit card.</li>
+  <li><strong>Leonardo.ai</strong>: 150 image credits/day, no credit card.</li>
+  <li><strong>Canva AI</strong>: Magic Write + Magic Design on free plan.</li>
+  <li><strong>Gamma</strong>: 400 AI presentation credits on signup.</li>
+  <li><strong>Taskade</strong>: Full-featured free project planning with AI.</li>
 </ul>
-<p>Start with Grammarly (install the browser extension today — it improves everything you write immediately) and Perplexity (replace your Google searches for research tasks). These two tools alone, both free, will noticeably improve your daily output quality and research speed within the first week.</p>
+<p>Start with Grammarly (install the browser extension today, since it improves everything you write immediately) and Perplexity (replace your Google searches for research tasks). These two tools alone, both free, will noticeably improve your daily output quality and research speed within the first week.</p>
 
 <h2>INR Pricing Quick Reference</h2>
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;">
@@ -211,8 +212,8 @@ const post: BlogPost = {
 <h2>More India-Specific Guides</h2>
 <p>This guide covers the full AI stack for Indian users. If you're looking for something more specific, these two guides go deeper:</p>
 <ul style="margin:12px 0 16px 24px;line-height:2.6;">
-  <li><a href="/blog/best-free-ai-tools-for-students-in-india-2026/" style="color:#0D9488;font-weight:600;">Best Free AI Tools for Students in India 2026</a> — Every tool has a permanent free plan that works without a VPN or dollar card. Covers essays, research, presentations, and coding with INR pricing notes.</li>
-  <li><a href="/blog/best-ai-tools-for-freelancers-india-2026/" style="color:#0D9488;font-weight:600;">Best AI Tools for Indian Freelancers 2026</a> — Built specifically for freelancers billing in INR. Covers writing, design, project management, and client communication tools with honest ROI calculations.</li>
+  <li><a href="/blog/best-free-ai-tools-for-students-in-india-2026/" style="color:#0D9488;font-weight:600;">Best Free AI Tools for Students in India 2026</a>: Every tool has a permanent free plan that works without a VPN or dollar card. Covers essays, research, presentations, and coding with INR pricing notes.</li>
+  <li><a href="/blog/best-ai-tools-for-freelancers-india-2026/" style="color:#0D9488;font-weight:600;">Best AI Tools for Indian Freelancers 2026</a>: Built specifically for freelancers billing in INR. Covers writing, design, project management, and client communication tools with honest ROI calculations.</li>
 </ul>
 
 <h2>Final Verdict: Where to Start as an Indian Creator</h2>
@@ -220,7 +221,7 @@ const post: BlogPost = {
 <p><strong>Day 1 (free, 10 minutes):</strong> Install the Grammarly browser extension. Every email and document you write in English improves immediately at zero cost.</p>
 <p><strong>Day 2 (free, 5 minutes):</strong> Sign up for Perplexity. Replace your Google searches for research, fact-checking, and summarisation tasks.</p>
 <p><strong>Week 1 (free, 15 minutes):</strong> Sign up for Rytr's free plan. Use it to draft your next blog post, social caption, or client proposal. See if it saves you time on a real task before deciding whether to upgrade.</p>
-<p>The AI tools market in India is growing fast, and INR pricing options are improving every month. The advantage Indian creators have right now is that the competition for India-specific AI content — reviews, comparisons, tutorials written from an Indian perspective — is nearly zero. That gap won't last.</p>
+<p>The AI tools market in India is growing fast, and INR pricing options are improving every month. The advantage Indian creators have right now is that the competition for India-specific AI content, reviews, comparisons, and tutorials written from an Indian perspective, is nearly zero. That gap won't last.</p>
   `.trim(),
 };
 

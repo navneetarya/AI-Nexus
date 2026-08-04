@@ -32,11 +32,11 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Key Finding</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">AI API costs vary by over 100x between models. Choosing the right model tier for each use case — rather than defaulting to the most capable model — is the single biggest cost optimisation lever for AI-powered applications in 2026.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">AI API costs vary by over 100x between models. Choosing the right model tier for each use case, rather than defaulting to the most capable model, is the single biggest cost optimisation lever for AI-powered applications in 2026.</p>
 </div>
 
 <h2>How Does AI API Pricing Compare Across Providers in 2026?</h2>
-<p>AI API pricing across OpenAI, Anthropic, Google, and Meta in 2026 differs by more than 100x depending on which model tier a project defaults to — and that single decision is usually the largest line item in any AI product's running costs. In 2024, AI API pricing was primarily relevant to enterprise teams. In 2026, developers at every level are building AI-powered products — from solo indie developers to funded startups to enterprise teams processing millions of requests per day. Understanding pricing isn't optional; it's a core architectural decision.</p>
+<p>AI API pricing across OpenAI, Anthropic, Google, and Meta in 2026 differs by more than 100x depending on which model tier a project defaults to. That single decision is usually the largest line item in any AI product's running costs. In 2024, AI API pricing was primarily relevant to enterprise teams. In 2026, developers at every level are building AI-powered products: solo indie developers, funded startups, and enterprise teams processing millions of requests per day. Understanding pricing isn't optional; it's a core architectural decision.</p>
 <p>This analysis covers real pricing data for the major AI API providers as of May 2026, translated into practical cost comparisons for the workflows developers actually build.</p>
 
 <h2>AI API Pricing Comparison — May 2026</h2>
@@ -127,19 +127,19 @@ const post: BlogPost = {
 <h2>Which Model for Which Use Case</h2>
 <p><strong>High-stakes reasoning (code generation, analysis, complex Q&A):</strong> GPT-4o, Claude 3.5 Sonnet, or Gemini 1.5 Pro. These are the strongest models for tasks where quality matters most and request volume is moderate.</p>
 <p><strong>High-volume, simpler tasks (classification, summarisation, extraction):</strong> GPT-4o mini, Claude 3 Haiku, or Gemini 1.5 Flash. Roughly 10–50x cheaper with quality that is more than sufficient for structured tasks.</p>
-<p><strong>Very large context (long documents, entire codebases):</strong> Gemini 1.5 Pro or Flash — the 1M token context window is genuinely differentiated and available at reasonable cost.</p>
+<p><strong>Very large context (long documents, entire codebases):</strong> Gemini 1.5 Pro or Flash. The 1M token context window is genuinely differentiated and available at reasonable cost.</p>
 <p><strong>Privacy-sensitive applications:</strong> Self-hosted Llama 3 (no data leaves your infrastructure) or private cloud deployments via AWS Bedrock / Azure OpenAI.</p>
 
 <h2>The Tiered Model Strategy</h2>
-<p>The most cost-effective AI applications in 2026 use a tiered model approach: route simple, structured queries to cheaper models (Gemini Flash, GPT-4o mini, Haiku) and escalate only complex queries requiring higher reasoning to expensive models (GPT-4o, Claude Sonnet). A well-designed routing layer can reduce API costs by 60–80% compared to routing everything to the most capable model.</p>
-<p>This is not a compromise on quality — it's using the right tool for each job. Classifying customer support tickets doesn't need GPT-4o. Drafting a complex legal document summary does.</p>
+<p>The most cost-effective AI applications in 2026 use a tiered model approach. They route simple, structured queries to cheaper models (Gemini Flash, GPT-4o mini, Haiku) and escalate only complex queries requiring higher reasoning to expensive models (GPT-4o, Claude Sonnet). A well-designed routing layer can reduce API costs by 60–80% compared to routing everything to the most capable model.</p>
+<p>This is not a compromise on quality. It's using the right tool for each job. Classifying customer support tickets doesn't need GPT-4o. Drafting a complex legal document summary does.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://platform.openai.com/docs/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit OpenAI API →</a>
   <a href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Anthropic API →</a>
   <a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Google AI Studio →</a>
 </div>
-<p>If you're calling these APIs from inside a no-code workflow rather than custom code, the automation platform you choose affects this cost calculus directly — n8n, Make, and Zapier each handle model routing and API calls differently, with very different pricing models layered on top. See our comparison: <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier: AI Automation Platform Comparison 2026</a>.</p>
-<p><em>Note: this comparison reflects pricing and model availability as of May 2026. For current per-token rates on the latest model generations — including GPT-4o's removal from OpenAI's active pricing page — see the updated <a href="/blog/llm-api-pricing-comparison-2026/">LLM API Pricing Comparison: Cost Per Token 2026</a>.</em></p>
+<p>If you're calling these APIs from inside a no-code workflow rather than custom code, the automation platform you choose affects this cost calculus directly. n8n, Make, and Zapier each handle model routing and API calls differently, with very different pricing models layered on top. See our comparison: <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier: AI Automation Platform Comparison 2026</a>.</p>
+<p><em>Note: this comparison reflects pricing and model availability as of May 2026. For current per-token rates on the latest model generations, including GPT-4o's removal from OpenAI's active pricing page, see the updated <a href="/blog/llm-api-pricing-comparison-2026/">LLM API Pricing Comparison: Cost Per Token 2026</a>.</em></p>
 `
 };
 
