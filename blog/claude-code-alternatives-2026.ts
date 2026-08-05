@@ -56,7 +56,7 @@ const post: BlogPost = {
     },
     {
       q: 'Which terminal AI coding agent is cheapest for developers in India?',
-      a: 'OpenCode and Aider are the cheapest starting points for Indian developers. Both are free to run and let you route requests through a lower-cost model provider or a local Ollama model with no subscription at all. For a bundled-subscription option, OpenAI Codex CLI included with a ChatGPT Plus subscription works out to roughly the same ₹1,700–₹1,900/month range as Claude Pro. That's after typical forex card fees. Neither OpenAI nor Anthropic bills directly in INR or accepts UPI. None of the tools in this guide offer India-specific pricing; every option is billed in USD.',
+      a: "OpenCode and Aider are the cheapest starting points for Indian developers. Both are free to run and let you route requests through a lower-cost model provider or a local Ollama model with no subscription at all. For a bundled-subscription option, OpenAI Codex CLI included with a ChatGPT Plus subscription works out to roughly the same ₹1,700–₹1,900/month range as Claude Pro. That's after typical forex card fees. Neither OpenAI nor Anthropic bills directly in INR or accepts UPI. None of the tools in this guide offer India-specific pricing; every option is billed in USD.",
     },
   ],
   content: `
