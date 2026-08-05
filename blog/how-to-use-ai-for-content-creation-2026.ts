@@ -63,7 +63,7 @@ const post: BlogPost = {
 
 <h3>Step 1: Generate Your Outline with Rytr</h3>
 <p>The fastest way to start any written content piece with AI is to generate a structured outline first, not a finished draft. Open <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">Rytr</a>, select the "Blog Idea & Outline" use case, enter your topic and primary keyword, set tone to "Informational," and generate. Rytr returns a 6–8 point outline in about 15 seconds.</p>
-<p>The outline is your real deliverable here, not the text. Review it, reorder sections based on what you know your audience cares about most, add or remove points, and write the brief for each section in your own words. This human-shaped outline is what separates AI-assisted content from AI-generated noise. The AI gives you structure and completeness; you add priority and judgment.</p>
+<p>The outline is your real deliverable here, not the text. Review it and reorder sections based on what you know your audience cares about most. Add or remove points, then write the brief for each section in your own words. This human-shaped outline is what separates AI-assisted content from AI-generated noise. The AI gives you structure and completeness; you add priority and judgment.</p>
 <p>Rytr's free plan gives 10,000 characters per month, enough for 3–4 complete outlines plus first draft sections. The $9/month Unlimited plan removes the cap entirely, which is the practical threshold if you are publishing more than once a week.</p>
 
 <h3>Step 2: Draft Section by Section, Not All at Once</h3>
@@ -77,7 +77,7 @@ const post: BlogPost = {
 </p>
 
 <h3>Step 3: Run Everything Through Grammarly Before Publishing</h3>
-<p><a href="/tools/grammarly/" style="color:var(--a1);font-weight:600;">Grammarly</a>'s free plan catches the grammatical errors and passive voice that AI writing tools consistently introduce, and flags tone inconsistencies when your edited sections don't match in register. Install the Grammarly browser extension and it works directly inside your CMS, no copy-pasting required.</p>
+<p><a href="/tools/grammarly/" style="color:var(--a1);font-weight:600;">Grammarly</a>'s free plan catches the grammatical errors and passive voice that AI writing tools consistently introduce. It also flags tone inconsistencies when your edited sections don't match in register. Install the Grammarly browser extension and it works directly inside your CMS, no copy-pasting required.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://grammarly.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
 </div>
@@ -121,8 +121,8 @@ const post: BlogPost = {
 
 <h3>Generating Feature Images and Thumbnails with Leonardo.ai</h3>
 <p><a href="/tools/leonardo-ai/" style="color:var(--a1);font-weight:600;">Leonardo.ai</a> is the most practically useful AI image generator for content creators in 2026. That's largely because of its free plan: 150 generation credits per day, producing 30–75 images depending on resolution. For a content creator publishing 3–5 pieces per week, you will almost never exhaust this allowance.</p>
-<p>For blog feature images, the workflow is simple. Write a detailed prompt describing the concept, mood, and style you want. Example: "flat vector illustration of a person using a laptop with AI interface, teal and dark colour scheme, minimalist, no text." Generate 4 variations, pick the best, download at full resolution. The entire process takes under 3 minutes once you are comfortable writing prompts.</p>
-<p>The model selection inside Leonardo matters: for illustrations and conceptual images, the <strong>Flux Dev</strong> and <strong>Leonardo Diffusion XL</strong> models give the cleanest, most consistent results for content creator use cases. Avoid the default "Leonardo Creative" model for professional-looking images. It adds stylistic flourishes that make images look AI-generated at a glance.</p>
+<p>For blog feature images, the workflow is simple. Write a detailed prompt describing the concept, mood, and style you want. Example: "flat vector illustration of a person using a laptop with AI interface, teal and dark colour scheme, minimalist, no text". Generate 4 variations, pick the best, download at full resolution. The entire process takes under 3 minutes once you are comfortable writing prompts.</p>
+<p>The model selection inside Leonardo matters. For illustrations and conceptual images, the <strong>Flux Dev</strong> and <strong>Leonardo Diffusion XL</strong> models give the cleanest, most consistent results for content creators. Avoid the default "Leonardo Creative" model for professional-looking images. It adds stylistic flourishes that make images look AI-generated at a glance.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
@@ -145,7 +145,7 @@ const post: BlogPost = {
 </div>
 
 <h3>Short-Form Video from Text Prompts with InVideo AI</h3>
-<p>For Reels, YouTube Shorts, and TikTok, <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">InVideo AI</a> takes a text prompt or topic and produces a complete short-form video with footage, voiceover, captions, and music in under 5 minutes. The free plan includes 10 video exports per month with an InVideo watermark, enough to test the workflow before committing to the $25/month paid plan.</p>
+<p>For Reels, YouTube Shorts, and TikTok, <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">InVideo AI</a> takes a text prompt or topic and produces a complete short-form video in under 5 minutes. Footage, voiceover, captions, and music are all included. The free plan includes 10 video exports per month with an InVideo watermark, enough to test the workflow before committing to the $25/month paid plan.</p>
 <p>The highest-quality use of InVideo for content creators is repurposing key sections from longer articles into 60-second short-form videos that drive traffic back to the full post. Enter the key point from your article as a prompt, set the duration to 60 seconds, and let InVideo generate. Then spend 5 minutes adjusting the script and swapping out any footage that does not fit. The result is a platform-native short video that would otherwise take 45–90 minutes to produce manually.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://invideo.sjv.io/c/5629153/883681/12258" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>
@@ -155,7 +155,7 @@ const post: BlogPost = {
 <p><strong>Tools covered: <a href="/tools/podcastle/" style="color:var(--a1);font-weight:600;">Podcastle</a> · <a href="/tools/murf-ai/" style="color:var(--a1);font-weight:600;">Murf AI</a></strong></p>
 
 <h3>Recording and Editing Podcasts with Podcastle</h3>
-<p><a href="/tools/podcastle/" style="color:var(--a1);font-weight:600;">Podcastle</a> is the simplest end-to-end podcast recording and editing tool with AI built in. Record directly in the browser at up to 48kHz quality, and Podcastle's AI removes background noise, levels volume, and cleans up filler words like "um" and "uh" automatically. The free plan supports up to 3 hours of recording, enough for a monthly podcast series without paying anything.</p>
+<p><a href="/tools/podcastle/" style="color:var(--a1);font-weight:600;">Podcastle</a> is the simplest end-to-end podcast recording and editing tool with AI built in. Record directly in the browser at up to 48kHz quality. Podcastle's AI removes background noise, levels volume, and cleans up filler words like "um" and "uh" automatically. The free plan supports up to 3 hours of recording, enough for a monthly podcast series without paying anything.</p>
 <p>For content creators who want to repurpose their written articles as podcast episodes, Podcastle's AI voice cloning feature (paid plan) is the answer. After a 30-minute training recording, it lets you generate a narrated audio version of any article in your own voice. This means the article-to-podcast workflow becomes: paste the article text, click generate, export the audio file. The quality on current models is indistinguishable from a live recording for most listening environments.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
