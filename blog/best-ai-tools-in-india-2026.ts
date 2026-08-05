@@ -78,7 +78,7 @@ const post: BlogPost = {
 
 <h2>1. Rytr : Best AI Writing Tool for Indian Creators</h2>
 <p><strong>Category: Writing · Free: 10,000 chars/month · Paid: ~₹750/month (Saver) · ~₹1,660/month (Unlimited).</strong></p>
-<p>Rytr is the most practical AI writing tool for Indian creators for three reasons. It has a genuine free plan, it supports Hindi output, and its paid plan is priced accessibly in Indian rupees. The Saver plan at around ₹750/month (pricing varies slightly with exchange rate) gives you unlimited characters, more than enough for daily blog posts, social media content, or freelance writing work.</p>
+<p>Rytr is the most practical AI writing tool for Indian creators for three reasons. It has a genuine free plan, it supports Hindi output, and its paid plan is priced accessibly in Indian rupees. The Saver plan at around ₹750/month (pricing varies slightly with exchange rate) gives you unlimited characters. That's more than enough for daily blog posts, social media content, or freelance writing work.</p>
 <p>The Hindi support is worth testing before you buy: set the output language to Hindi in the Language dropdown, paste a topic, and Rytr generates Hindi content directly. The quality is usable for drafts and short social posts, though it reads more like translated English than natural Hindi prose. For English content creation, Rytr is consistently strong and competes with tools that cost 3–4x more.</p>
 <p><strong>Free plan reality:</strong> 10,000 characters/month is genuinely useful, enough for two 600-word blog posts or around 20 Instagram captions. No credit card required to sign up.</p>
 <p><strong>GST note:</strong> GST is added at checkout on the paid plan. Budget approximately 18% over the listed price.</p>

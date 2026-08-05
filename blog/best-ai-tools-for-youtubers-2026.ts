@@ -110,7 +110,7 @@ const post: BlogPost = {
 </p>
 <h2>3. Descript — Edit Video by Editing Text</h2>
 <p>Descript's text-based editing is the most genuinely novel editing paradigm available to YouTube creators. Record your video, get an automatic transcript, then edit the video by editing the text: delete a word in the transcript and the corresponding video clip disappears. Finding and removing every "um" in a 20-minute interview takes 5 minutes, not 50.</p>
-<p>For interview-format channels, podcast-style content, and any video where the spoken word drives the edit, Descript saves substantial time. The Studio Sound AI cleanup improves audio quality automatically. The Overdub voice cloning lets you re-record individual words using an AI clone of your voice, so there's no need to re-record an entire take to fix a mispronounced word.</p>
+<p>For interview-format channels, podcast-style content, and any video where the spoken word drives the edit, Descript saves substantial time. The Studio Sound AI cleanup improves audio quality automatically. The Overdub voice cloning lets you re-record individual words using an AI clone of your voice. There's no need to re-record an entire take just to fix a mispronounced word.</p>
 <p>The free plan covers 1 hour of transcription per month, enough for light use. Creator plan at $12/month works for regular YouTube production.</p>
 
 <div style="margin:14px 0 24px;">
