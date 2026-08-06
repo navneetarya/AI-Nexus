@@ -46,7 +46,7 @@ const post: BlogPost = {
     },
     {
       q: 'Does Gemini have a daily message limit on the free plan?',
-      a: 'No. Gemini\\'s free plan does not cap the number of conversations you can have. Very heavy use in a short window can trigger temporary rate limiting, but for normal daily use there is no hard cap the way ChatGPT\\'s free tier throttles GPT-4o access during peak hours.',
+      a: "No. Gemini's free plan does not cap the number of conversations you can have. Very heavy use in a short window can trigger temporary rate limiting, but for normal daily use there is no hard cap the way ChatGPT's free tier throttles GPT-4o access during peak hours.",
     },
     {
       q: 'Can I use these tools instead of ChatGPT Plus for coding?',
@@ -54,11 +54,11 @@ const post: BlogPost = {
     },
     {
       q: 'Is Rytr or Writesonic better for a beginner blogger?',
-      a: 'Rytr is easier to start with because its templates need less setup and the free tier is more forgiving to experiment with. Writesonic\\'s Article Writer produces more polished, SEO-structured drafts, but the free plan only covers about one article a month.',
+      a: "Rytr is easier to start with because its templates need less setup and the free tier is more forgiving to experiment with. Writesonic's Article Writer produces more polished, SEO-structured drafts, but the free plan only covers about one article a month.",
     },
     {
       q: 'Do free ChatGPT alternatives support the Indian rupee for paid plans?',
-      a: 'Most bill in US dollars through Stripe or a similar processor, which Indian debit and credit cards can pay in INR automatically at the card network\\'s exchange rate. None of the four tools here have a dedicated INR pricing page, so budget for a small currency-conversion fee if you upgrade.',
+      a: "Most bill in US dollars through Stripe or a similar processor, which Indian debit and credit cards can pay in INR automatically at the card network's exchange rate. None of the four tools here have a dedicated INR pricing page, so budget for a small currency-conversion fee if you upgrade.",
     },
   ],
   proscons: {
