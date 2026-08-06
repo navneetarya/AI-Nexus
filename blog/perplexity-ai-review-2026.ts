@@ -20,6 +20,8 @@ const post: BlogPost = {
   readTime: '9 min read',
   ogImage: 'https://ainexustools.online/og/blog/perplexity-ai-review-2026.webp',
   excerpt: 'Search interest in "Perplexity vs Google" is up 280% in 30 days. As Google Search leans further into AI Overviews, and Perplexity adds Pro Search with access to GPT-4o and Claude 3.5, millions of users are asking whether traditional search is still the right tool. This review tests Perplexity against Google across eight real-world search scenarios and gives you a straight answer.',
+  quickAnswer: 'Perplexity is worth it for research-heavy work — questions that require pulling together information from multiple sources, like academic research, technical comparisons, or competitive analysis. Google still wins for navigational searches, local results, breaking news, and shopping. The free plan handles most everyday research adequately; Perplexity Pro at $20/month is justified for heavy users who need GPT-4o, Claude 3.5, Deep Research, and Spaces. Most people end up using both tools for different query types.',
+  myTake: 'I ran the same eight query types through both tools rather than relying on impressions, and the pattern held every time: Perplexity wins the moment a question needs synthesis across sources, and loses the moment it needs freshness, location, or a specific website — know which kind of question you\'re asking before you pick a tool.',
   faqs: [
     {
       q: 'Is Perplexity better than Google Search in 2026?',
@@ -41,6 +43,26 @@ const post: BlogPost = {
       q: 'Is Perplexity Pro worth the $20/month?',
       a: 'Perplexity Pro is worth $20/month if you use it for research-heavy work — academic writing, competitive intelligence, technical documentation, or any task that currently requires opening 10+ tabs and synthesising information manually. For casual users doing 5–10 standard searches per day, the free plan is sufficient. The main upgrade benefits are the more capable AI models (especially for complex reasoning), Deep Research for multi-source synthesis, and Spaces for ongoing research sessions with document context.',
     },
+    {
+      q: 'How accurate are Perplexity\'s citations?',
+      a: 'Perplexity\'s citations are generally reliable for direct facts pulled from a single source, but accuracy drops for claims that are synthesised across multiple sources — the citation attached can sometimes reflect the closest match rather than the exact origin of a specific number or quote. Treat Perplexity\'s answer as a well-organised starting point, not a final source. For anything used professionally or published, click through to the cited page and verify the specific claim before relying on it.',
+    },
+    {
+      q: 'Can Perplexity replace ChatGPT or Claude for writing tasks?',
+      a: 'No. Perplexity is built for research and synthesis, not content generation — it can gather and organise information effectively, but it is not designed to draft long-form articles, marketing copy, or creative writing the way ChatGPT or Claude are. The practical pairing many knowledge workers use is Perplexity for research and fact-gathering, then a dedicated writing tool for turning that research into a finished piece.',
+    },
+    {
+      q: 'Does Perplexity work well for coding and technical questions?',
+      a: 'Yes, particularly with Pro Search using Claude 3.5 or GPT-4o for the underlying reasoning. Perplexity can explain error messages, compare library approaches, and pull in current documentation links alongside its answer, which is useful when a bug involves a recently changed API or a less common framework. It is not a full coding assistant like Claude Code or GitHub Copilot — it answers questions well but does not write and test code inside your project.',
+    },
+    {
+      q: 'Is there a difference between Perplexity\'s free model and the paid models?',
+      a: 'Yes, and it matters for complex questions. The free plan uses Perplexity\'s own model, which handles straightforward research and everyday questions well but can miss nuance on multi-step reasoning tasks. Pro Search lets you pick GPT-4o, Claude 3.5, or Gemini Ultra for the underlying reasoning, which noticeably improves quality on technical comparisons, ambiguous questions, and anything requiring careful logical steps rather than simple information retrieval.',
+    },
+    {
+      q: 'How does Perplexity handle privacy compared to Google?',
+      a: 'Perplexity states that it does not sell personal data to third parties and offers an incognito-style mode for searches that are not saved to history, similar in spirit to Google\'s private browsing options. Neither company\'s privacy practices should be taken at face value without reading the current policy — verify the specifics on Perplexity\'s official privacy page before making a decision based on privacy alone, since policies are updated periodically.',
+    },
   ],
   proscons: {
     pros: [
@@ -53,16 +75,53 @@ const post: BlogPost = {
     ],
   },
 
+  outboundCitations: [
+    { url: 'https://www.perplexity.ai', label: 'Perplexity AI — official product site' },
+    { url: 'https://trends.google.com', label: 'Google Trends — search interest data' },
+    { url: 'https://www.reddit.com/r/perplexity_ai/', label: 'r/perplexity_ai — community discussion' },
+  ],
+  wordCount: 1660,
+
   content: `
+<div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
+  <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Perplexity is worth it for research-heavy work — questions that require pulling together information from multiple sources, like academic research, technical comparisons, or competitive analysis. Google still wins for navigational searches, local results, breaking news, and shopping. The free plan handles most everyday research adequately; <strong>Perplexity Pro at $20/month</strong> is justified for heavy users who need GPT-4o, Claude 3.5, Deep Research, and Spaces. Most people end up using both tools for different query types.</p>
+</div>
+<blockquote style="border-left:3px solid #0D9488;padding:4px 0 4px 16px;margin:0 0 24px;font-style:italic;color:var(--text-secondary,#555);">
+  I ran the same eight query types through both tools rather than relying on impressions, and the pattern held every time: Perplexity wins the moment a question needs synthesis across sources, and loses the moment it needs freshness, location, or a specific website — know which kind of question you're asking before you pick a tool.
+  <footer style="font-style:normal;font-size:13px;margin-top:6px;color:var(--text-muted,#888);">— Navneet Arya, AI Nexus</footer>
+</blockquote>
+
 <h2>Is Perplexity Worth It vs Google Search in 2026?</h2>
-<p>Perplexity is worth it for research-heavy work: questions that require pulling together information from multiple sources. Google still wins for navigational searches, local results, breaking news, and shopping, so the honest answer is that most people end up using both. For two years, Perplexity operated as a power-user tool, known in tech communities but largely ignored by the mainstream. That has changed.</p>
-<p>Google Trends shows a 280% spike in "Perplexity vs Google" searches in May 2026. The reasons are converging. Google's AI Overviews have made traditional search results harder to navigate. Perplexity added Deep Research with access to premium models. A growing number of knowledge workers have switched to it as their primary search tool and reported measurable time savings.</p>
+<p>Perplexity is worth it for research-heavy work: questions that require pulling together information from multiple sources. Google still wins for navigational searches, local results, breaking news, and shopping.</p>
+<p>So the honest answer is that most people end up using both. For two years, Perplexity operated as a power-user tool, known in tech communities but largely ignored by the mainstream. That has changed.</p>
+<div style="margin:14px 0 20px;">
+  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-8px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
+<p>Google Trends shows a 280% spike in "Perplexity vs Google" searches in May 2026. The reasons are converging. Google's AI Overviews have made traditional search results harder to navigate.</p>
+<p>Perplexity added Deep Research with access to premium models. A growing number of knowledge workers have switched to it as their primary search tool and reported measurable time savings.</p>
 <p>This review tests Perplexity against Google across eight specific search scenarios to answer one question: should you actually switch?</p>
+
+<h2>How to Decide: 3 Steps</h2>
+<ol style="margin:12px 0 20px 24px;line-height:1.9;">
+  <li><strong>Classify your query.</strong> Multi-source research, comparisons, and how-to guides favour Perplexity. Navigational, local, and breaking-news queries favour Google.</li>
+  <li><strong>Start on the free plan.</strong> Run your next five real research questions through Perplexity's free tier before paying anything, and compare the time saved against your usual Google workflow.</li>
+  <li><strong>Upgrade only if Deep Research or Spaces solves a recurring problem.</strong> If you regularly spend 30+ minutes synthesising sources for one task, the $20/month Pro plan pays for itself quickly.</li>
+</ol>
 
 <h2>What Is Perplexity, and How Does It Work?</h2>
 <p>Perplexity is an AI-powered search engine. You type a question, and instead of returning a ranked list of links, it searches the web in real time, reads the relevant pages, and synthesises the information. It returns a direct answer with inline citations showing exactly which sources it used.</p>
-<p>The key difference from Google is the last step: Perplexity does the reading for you. A Google search for "best noise-cancelling headphones under $200 in 2026" returns 10 links you have to open and read. Perplexity returns a structured comparison table with the top options, pricing, pros and cons, and links to each source, in about 3 seconds.</p>
+<p>The key difference from Google is the last step: Perplexity does the reading for you. A Google search for "best noise-cancelling headphones under $200 in 2026" returns 10 links you have to open and read.</p>
+<p>Perplexity returns a structured comparison table with the top options, pricing, pros and cons, and links to each source, in about 3 seconds.</p>
 <p>This sounds like Google's AI Overviews, and the surface-level experience is similar. The difference is depth. Perplexity's citations are more granular, and its follow-up question feature lets you drill deeper without starting a new search. Pro Search with GPT-4o or Claude 3.5 handles complex reasoning tasks that Google's AI Overviews cannot.</p>
+
+<div style="background:rgba(217,119,6,.08);border-left:4px solid #d97706;padding:14px 18px;border-radius:8px;margin:20px 0;">
+  <strong style="color:#d97706;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">💡 Pro Tip</strong>
+  <p style="margin:8px 0 0;font-size:14px;line-height:1.6;">Use Perplexity's follow-up question suggestions instead of retyping a new search. They preserve the context of your original query, which produces noticeably better answers on multi-step research than starting a fresh search each time.</p>
+</div>
 
 <h2>Perplexity vs Google: Head-to-Head on 8 Query Types</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -122,8 +181,12 @@ const post: BlogPost = {
 <h2>Test Scenario: Competitive Research Task</h2>
 <p><strong>Query:</strong> "What are the pricing differences between Notion AI, Taskade, and Coda AI in 2026, and which is best for a solo freelancer?"</p>
 <p><strong>Google result:</strong> Ten links: a mix of each tool's pricing page, two review articles from late 2025, and a Reddit thread. To get the answer, I opened four tabs, read three pricing pages, scanned the review articles, and assembled the comparison myself. Time: about 7 minutes.</p>
-<p><strong>Perplexity result:</strong> A structured comparison table with all three tools, their current pricing tiers, key features, and a two-sentence recommendation for a solo freelancer. Sources cited inline included the tools' own pricing pages, confirming the data was current. Follow-up question suggested: "What are the main limitations of Notion AI's free plan?" I could tap it to continue the research thread. Time: about 40 seconds to read the answer.</p>
-<p>For research-heavy workflows, think content briefs, competitive analysis, industry deep-dives, this time saving compounds across dozens of queries per day.</p>
+<p><strong>Perplexity result:</strong> A structured comparison table with all three tools, their current pricing tiers, key features, and a two-sentence recommendation for a solo freelancer. Sources cited inline included the tools' own pricing pages, confirming the data was current.</p>
+<p>Follow-up question suggested: "What are the main limitations of Notion AI's free plan?" I could tap it to continue the research thread. Time: about 40 seconds to read the answer.</p>
+<p>For research-heavy workflows — content briefs, competitive analysis, industry deep-dives — this time saving compounds across dozens of queries per day.</p>
+<div style="margin:14px 0 24px;">
+  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+</div>
 
 <h2>Perplexity Deep Research: When to Use It</h2>
 <p>Perplexity Deep Research (Pro feature) takes 2–5 minutes to complete and produces multi-section reports for complex queries. The Deep Research feature was tested on: "What is the current regulatory landscape for AI-generated content in the EU and US, and what does it mean for content creators?"</p>
@@ -177,7 +240,8 @@ const post: BlogPost = {
 
 <h2>Is Perplexity Replacing Google?</h2>
 <p>The honest answer is: partially, for specific users. Among the researchers, journalists, and content professionals I spoke with while preparing this review, the pattern was consistent. They use Perplexity for research-intensive queries, anywhere from 30% to 80% of their daily searches, and Google for navigational, local, and shopping queries. Nobody had abandoned Google entirely.</p>
-<p>What is changing is the <em>type</em> of query that goes to Google. The research-heavy, multi-source synthesis queries that used to require 10 open tabs now go to Perplexity. Simple, navigational, or time-sensitive queries still go to Google. Both tools are being used. But Perplexity is capturing the queries that Google used to answer poorly, the ones where a list of links was never really the right format for the answer.</p>
+<p>What is changing is the <em>type</em> of query that goes to Google. The research-heavy, multi-source synthesis queries that used to require 10 open tabs now go to Perplexity.</p>
+<p>Simple, navigational, or time-sensitive queries still go to Google. Both tools are being used. But Perplexity is capturing the queries that Google used to answer poorly, the ones where a list of links was never really the right format for the answer.</p>
 <p>For a comparison of Perplexity's AI capabilities against ChatGPT and other writing-focused AI tools, see the <a href="/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/" style="color:rgb(13,148,136);">Grok 4 vs ChatGPT vs Claude comparison for content creators</a>. You can also explore the full <a href="/tools/perplexity/" style="color:rgb(13,148,136);">Perplexity AI tool review</a> on AI Nexus.</p>
 
 <h2>Final Verdict</h2>
