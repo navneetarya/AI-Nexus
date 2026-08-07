@@ -262,7 +262,6 @@ const post: BlogPost = {
       a: 'Bland AI is purpose-built for outbound at scale — lead callbacks, reminders, and cold-outreach campaigns — and its documentation and support model both lean toward that use case specifically. Retell AI supports outbound calling too, but it\'s optimized more broadly for both inbound and outbound, with a stronger track record as an always-on receptionist. If outbound sales volume is your primary use case rather than answering incoming calls, Bland is the more specialized choice.',
     },
   ],
-  ],
 
   myTake: 'I checked every pricing page directly rather than trusting third-party summaries. That\u2019s the only reason I caught that Synthflow, the platform most roundups still recommend for small business, has quietly moved to $30,000-a-year Enterprise contracts only.',
 
