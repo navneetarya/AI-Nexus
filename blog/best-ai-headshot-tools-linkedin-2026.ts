@@ -75,6 +75,7 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://www.linkedin.com/business/talent/blog/product-tips/tips-to-improve-your-linkedin-profile', label: 'LinkedIn — profile photo best practices' },
     { url: 'https://www.trustpilot.com/review/headshotpro.com', label: 'Trustpilot — HeadshotPro reviews' },
+    { url: 'https://www.trustpilot.com/review/aragon.ai', label: 'Trustpilot — Aragon AI reviews' },
   ],
 
   content: `
@@ -219,11 +220,15 @@ const post: BlogPost = {
   <li>❌ Formal corporate output slightly less consistent than HeadshotPro</li>
   <li>❌ No free plan</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="https://aragon.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Aragon AI →</a>
+</div>
 
 <h2 id="remini">#3 Remini: Best Free Option (With Limitations)</h2>
 <p><strong>Rating: 4.3/5 · Free plan available · Paid from $9.99/month</strong></p>
 <p>Remini is the only tool on this list with a meaningful free tier. Its core feature is AI photo enhancement (sharpening, upscaling, and restoring blurry or low-resolution images), and it has added a "Professional Photos" feature that generates AI headshots from selfies.</p>
-<p>The free plan gives a limited number of AI headshot generations per month. Quality is noticeably lower than HeadshotPro or Aragon. Remini's strength is enhancement rather than generation, and the headshot backgrounds and formal styling are less polished than dedicated headshot tools. The $9.99/month subscription unlocks unlimited generations but the subscription model makes it more expensive than HeadshotPro over time if you only need headshots once.</p>
+<p>The free plan gives a limited number of AI headshot generations per month. Quality is noticeably lower than HeadshotPro or Aragon.</p>
+<p>Remini's strength is enhancement rather than generation, and the headshot backgrounds and formal styling are less polished than dedicated headshot tools. The $9.99/month subscription unlocks unlimited generations but the subscription model makes it more expensive than HeadshotPro over time if you only need headshots once.</p>
 <p>Remini is the right choice if you want to test AI headshots before committing money. It also works well if you primarily need photo enhancement, such as sharpening old photos or restoring low-res images, with headshot generation as a secondary use.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
   <li>✅ Free tier, the only option for zero-budget users</li>
@@ -243,6 +248,9 @@ const post: BlogPost = {
   <li>❌ Less style variety than HeadshotPro or Aragon</li>
   <li>❌ Slightly longer delivery window (up to 3 hours)</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="https://tryitonai.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Try It On AI →</a>
+</div>
 
 <h2 id="fotor-ai">#5 Fotor AI: Best for General Photo Editing + Basic Headshots</h2>
 <p><strong>Rating: 4.0/5 · Free plan available · Paid from $8.99/month</strong></p>
