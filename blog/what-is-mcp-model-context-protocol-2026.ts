@@ -11,7 +11,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'what-is-mcp-model-context-protocol-2026',
   title: 'What is MCP (Model Context Protocol)? The AI Integration Standard Explained',
-  seoTitle: 'What Is MCP? The AI Integration Standard Explained',
+  seoTitle: 'What Is MCP? The AI Integration Standard Explained (2026)',
   metaDescription: 'MCP (Model Context Protocol) is Anthropic\'s open standard connecting AI models to external tools. See 2026 adoption and which platforms support it.',
   quickAnswer: 'MCP (Model Context Protocol) is an open standard Anthropic introduced in November 2024 that lets AI models connect to external tools and data through one shared interface instead of a custom connector per model-tool pair. By mid-2026 it is supported by Claude, ChatGPT, Cursor, Windsurf, VS Code, n8n, Zapier, and over 10,000 community-built servers.',
   datePublished: '2026-06-18',
