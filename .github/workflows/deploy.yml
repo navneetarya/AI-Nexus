@@ -70,6 +70,7 @@ jobs:
           # The sync check below will fail the build with a reminder if a
           # post is added to blog/ without a matching entry here.
           BLOG_SLUGS=(
+            best-ai-website-builders-2026
             best-ai-sales-tools-for-founders-2026
             best-ai-receptionist-small-business-2026
             best-ai-photo-upscaler-tools-2026

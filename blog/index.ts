@@ -198,8 +198,10 @@ import post76 from './best-ai-receptionist-small-business-2026';
 // pricing overhaul (Starter/Explorer/Pro replaced by Launch $185/mo + Growth $495/mo) and
 // Instantly's modular pricing (lead database + CRM sold separately from the $37.60/mo base)
 import post77 from './best-ai-sales-tools-for-founders-2026';
+import post78 from './best-ai-website-builders-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post78, // Day 27 (Aug 8) — Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web) — pinned first for freshness
   post77, // Day 26 (Aug 2) — Best AI Sales Tools for Founders 2026 — pinned first for freshness
   post76, // Day 25 (Aug 1) — Best AI Receptionist for Small Business 2026 — pinned first for freshness
   post75, // Day 24 (Jul 31) — Best AI Image Upscaler Tools 2026 — pinned first for freshness

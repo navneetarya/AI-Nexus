@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-08-02
+# Updated: 2026-08-08
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -56,6 +56,7 @@
 
 ## Blog Posts
 
+- [Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web)](https://ainexustools.online/blog/best-ai-website-builders-2026): Wix, Framer, Durable, Hostinger, and 10Web compared on real August 2026 pricing and ratings — includes a US-specific ADA accessibility risk section and Framer's G2 4.5/5 vs Trustpilot 1.6/5 rating split.
 - [Best AI Sales Tools for Founders 2026 (Apollo vs Clay vs Instantly vs Smartlead)](https://ainexustools.online/blog/best-ai-sales-tools-for-founders-2026): Apollo, Clay, Instantly, Smartlead, and Lavender compared on real pricing for teams under 20 reps — verified August 2026, includes Clay's March 2026 pricing overhaul and Instantly's modular hidden costs.
 - [Best AI Receptionist for Small Business in 2026 (Pricing & Feature Comparison)](https://ainexustools.online/blog/best-ai-receptionist-small-business-2026): AIRA, Smith.ai, Rosie, Dialzara, and Goodcall compared on real pricing and small-business fit — verified July 2026, includes hidden overage costs behind headline pricing.
 - [Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration](https://ainexustools.online/blog/best-ai-photo-upscaler-tools-2026): PhotoRoom, Topaz Photo AI, Let's Enhance, Upscale.media, and Remini compared on real pricing and ecommerce fit — verified July 2026, includes Topaz's September 2025 shift away from its one-time $99 license.

@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-website-builders-2026",
+    "title": "Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web)",
+    "seoTitle": "Best AI Website Builders 2026: 5 Tools Ranked",
+    "metaDescription": "Wix, Framer, Durable, Hostinger, and 10Web compared on real August 2026 pricing and ratings — the best ai website builder for your business, by use case.",
+    "datePublished": "2026-08-08",
+    "dateModified": "2026-08-08",
+    "author": "Navneet Arya",
+    "category": "Design",
+    "readTime": "12 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-website-builders-2026.webp",
+    "excerpt": "Wix is the best all-around AI website builder for most small businesses, Framer wins on pure design quality, and Hostinger is the cheapest way to get a live site — though its promo price jumps hard at renewal."
+  },
+  {
     "slug": "best-ai-sales-tools-for-founders-2026",
     "title": "Best AI Sales Tools for Founders 2026 (Apollo vs Clay vs Instantly vs Smartlead)",
     "seoTitle": "Best AI Sales Tools for Founders 2026",
