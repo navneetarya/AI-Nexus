@@ -39,7 +39,7 @@ function accentColor(slug, title) {
     return { hex: '#8B5CF6', r: 139, g: 92,  b: 246 }; // violet — Coding/Dev
   if (t.includes('student') || t.includes('teacher') || t.includes('education') || t.includes('free'))
     return { hex: '#3B82F6', r: 59,  g: 130, b: 246 }; // blue — Education/Free
-  if (t.includes('logo') || t.includes('image') || t.includes('midjourney') || t.includes('leonardo') || t.includes('design') || t.includes('canva') || t.includes('headshot') || t.includes('photo'))
+  if (t.includes('logo') || t.includes('image') || t.includes('midjourney') || t.includes('leonardo') || t.includes('design') || t.includes('canva') || t.includes('headshot') || t.includes('photo') || t.includes('website') || t.includes('builder'))
     return { hex: '#06B6D4', r: 6,   g: 182, b: 212 }; // cyan — Image/Design/Headshot
   if (t.includes('productivity') || t.includes('notion') || t.includes('taskade') || t.includes('asana') || t.includes('meeting') || t.includes('startup') || t.includes('ecosystem') || t.includes('growth'))
     return { hex: '#14B8A6', r: 20,  g: 184, b: 166 }; // teal — Productivity/Business
@@ -82,6 +82,7 @@ function categoryLabel(slug, title) {
   if (t.includes('india') || t.includes('inr'))                                return 'AI Tools India';
   if (t.includes('freelancer'))                                                 return 'For Freelancers';
   if (t.includes('chatbot') || t.includes('vs') || t.includes('compare') || t.includes('pricing')) return 'AI Comparison';
+  if (t.includes('website') || t.includes('builder') || t.includes('design'))  return 'AI Website Builders';
   return 'AI Writing';
 }
 
@@ -182,6 +183,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  { slug: 'best-ai-website-builders-2026',               title: 'Best AI Website Builders 2026' },
   { slug: 'best-ai-receptionist-small-business-2026',    title: 'Best AI Receptionist for Small Business 2026' },
   { slug: 'best-ai-photo-upscaler-tools-2026',           title: 'Best AI Image Upscaler Tools 2026' },
   // ── Batch 1 — original 27 (already generated; re-running is safe) ──────────
