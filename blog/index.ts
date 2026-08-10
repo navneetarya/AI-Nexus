@@ -199,8 +199,14 @@ import post76 from './best-ai-receptionist-small-business-2026';
 // Instantly's modular pricing (lead database + CRM sold separately from the $37.60/mo base)
 import post77 from './best-ai-sales-tools-for-founders-2026';
 import post78 from './best-ai-website-builders-2026';
+// Day 28 (Aug 10) — Best AI Music Generator Tools 2026 — Suno / Udio / ElevenLabs Music /
+// Soundraw / AIVA compared; new Audio sub-niche, zero prior coverage; callouts: Suno's 1.6/5
+// Trustpilot vs 4.9/5 App Store split, Udio's export lockout during its UMG transition, and
+// the active Sony/UMG litigation against Suno and Udio (US-specific copyright-risk angle)
+import post79 from './best-ai-music-generator-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post79, // Day 28 (Aug 10) — Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA) — pinned first for freshness
   post78, // Day 27 (Aug 8) — Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web) — pinned first for freshness
   post77, // Day 26 (Aug 2) — Best AI Sales Tools for Founders 2026 — pinned first for freshness
   post76, // Day 25 (Aug 1) — Best AI Receptionist for Small Business 2026 — pinned first for freshness

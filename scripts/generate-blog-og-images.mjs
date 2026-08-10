@@ -27,7 +27,7 @@ fs.mkdirSync(OUT, { recursive: true });
 // ── Accent colours by content category ───────────────────────────────────────
 function accentColor(slug, title) {
   const t = (slug + title).toLowerCase();
-  if (t.includes('podcast') || t.includes('audio') || t.includes('voice') || t.includes('podcastle') || t.includes('descript') || t.includes('elevenlabs') || t.includes('murf'))
+  if (t.includes('podcast') || t.includes('audio') || t.includes('voice') || t.includes('podcastle') || t.includes('descript') || t.includes('elevenlabs') || t.includes('murf') || t.includes('music') || t.includes('suno') || t.includes('udio'))
     return { hex: '#EC4899', r: 236, g: 72,  b: 153 }; // pink  — Audio
   if (t.includes('video') || t.includes('invideo') || t.includes('pictory') || t.includes('opus') || t.includes('youtube') || t.includes('youtuber'))
     return { hex: '#F59E0B', r: 245, g: 158, b: 11  }; // amber — Video/YouTube
@@ -67,7 +67,7 @@ function wrapText(text, maxChars = 36) {
 // ── Determine category label ──────────────────────────────────────────────────
 function categoryLabel(slug, title) {
   const t = (slug + title).toLowerCase();
-  if (t.includes('podcast') || t.includes('audio') || t.includes('voice'))   return 'Audio & Podcast';
+  if (t.includes('podcast') || t.includes('audio') || t.includes('voice') || t.includes('music') || t.includes('suno') || t.includes('udio'))   return 'Audio & Podcast';
   if (t.includes('video') || t.includes('youtube') || t.includes('youtuber')) return 'AI Video';
   if (t.includes('email'))                                                      return 'Email Marketing';
   if (t.includes('social') || t.includes('marketing'))                         return 'Marketing';
@@ -183,6 +183,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  { slug: 'best-ai-music-generator-tools-2026',            title: 'Best AI Music Generators 2026' },
   { slug: 'best-ai-website-builders-2026',               title: 'Best AI Website Builders 2026' },
   { slug: 'best-ai-receptionist-small-business-2026',    title: 'Best AI Receptionist for Small Business 2026' },
   { slug: 'best-ai-photo-upscaler-tools-2026',           title: 'Best AI Image Upscaler Tools 2026' },
