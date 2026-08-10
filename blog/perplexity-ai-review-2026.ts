@@ -180,6 +180,8 @@ const post: BlogPost = {
 
 <h2>Test Scenario: Competitive Research Task</h2>
 <p><strong>Query:</strong> "What are the pricing differences between Notion AI, Taskade, and Coda AI in 2026, and which is best for a solo freelancer?"</p>
+<p><a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
+<p><a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a></p>
 <p><strong>Google result:</strong> Ten links: a mix of each tool's pricing page, two review articles from late 2025, and a Reddit thread. To get the answer, I opened four tabs, read three pricing pages, scanned the review articles, and assembled the comparison myself. Time: about 7 minutes.</p>
 <p><strong>Perplexity result:</strong> A structured comparison table with all three tools, their current pricing tiers, key features, and a two-sentence recommendation for a solo freelancer. Sources cited inline included the tools' own pricing pages, confirming the data was current.</p>
 <p>Follow-up question suggested: "What are the main limitations of Notion AI's free plan?" I could tap it to continue the research thread. Time: about 40 seconds to read the answer.</p>
@@ -203,6 +205,7 @@ const post: BlogPost = {
   <li><strong>It cannot replace Google for local search.</strong> For "best coffee near me," Google wins every time. Perplexity has no location awareness or real-time business data comparable to Google Maps.</li>
   <li><strong>Breaking news is slower.</strong> Google News indexes new articles within minutes. Perplexity's refresh cycle for very recent news is slower, and it can miss stories from smaller publications that Google indexes quickly.</li>
   <li><strong>It does not create content.</strong> Perplexity is a research and synthesis tool. It can help you gather and organise information, but it is not a writing assistant in the way that ChatGPT or <a href="/tools/writesonic/" style="color:rgb(13,148,136);">Writesonic</a> are. For writing workflows, pair Perplexity's research with a dedicated writing tool.</li>
+<p><a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
   <li><strong>Citations can be imperfect.</strong> Perplexity sometimes cites a source for a claim it actually inferred or synthesised across multiple sources. Always verify specific statistics and claims against the linked source before using them professionally.</li>
 </ul>
 

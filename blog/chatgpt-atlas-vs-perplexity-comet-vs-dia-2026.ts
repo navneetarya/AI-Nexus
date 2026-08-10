@@ -126,7 +126,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best overall:</strong> Perplexity Comet, with full agentic features free and citation-backed answers.<br><strong>Best for task automation:</strong> ChatGPT Atlas, if you already pay for ChatGPT Plus or higher.<br><strong>Best for Mac power users:</strong> Dia, but read the privacy policy first.<br><strong>Biggest risk:</strong> Comet's known credential-extraction vulnerability (PleaseFix, March 2026).<br><strong>Verdict:</strong> Worth testing, not worth blindly trusting with your logins yet.</p>
 </div>
 <div style="margin:0 0 24px;">
-  <a href="https://www.perplexity.ai/comet" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Comet Free →</a>
+  <a href="https://www.perplexity.ai/comet?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Comet Free →</a>
 </div>
 
 <h2 id="what-is-agentic">What is an agentic browser, and why does it exist now?</h2>
@@ -256,7 +256,7 @@ const post: BlogPost = {
 <p>For how these underlying models compare on subscription value alone, see <a href="/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/" style="color:#6366f1;">GPT-5.5 vs Claude Opus 4.8 vs Grok 4</a>, and for the free tiers behind Atlas and Comet, see <a href="/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026/" style="color:#6366f1;">ChatGPT Free vs Claude Free vs Gemini Free</a>.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://chatgpt.com/atlas" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ChatGPT Atlas →</a>
-  <a href="https://www.perplexity.ai/comet" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Perplexity Comet →</a>
+  <a href="https://www.perplexity.ai/comet?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Perplexity Comet →</a>
   <a href="https://www.diabrowser.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Dia →</a>
 </div>
 

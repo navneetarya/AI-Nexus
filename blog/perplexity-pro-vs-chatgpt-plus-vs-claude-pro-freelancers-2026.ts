@@ -169,6 +169,7 @@ const post: BlogPost = {
 
 <p>This is Perplexity's home territory, and it showed. The output included numbered citations from recent articles, review sites, and official tool pages, all clickable, all checkable.</p>
 <p>The synthesis was accurate and the pricing was current. It had even picked up the Rytr pricing from a recent review. The structure was easy to turn into an actual section. Three of the citations were independently checked. They held up.</p>
+<p><a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
 
 <p>What stood out about ChatGPT Plus here: with browsing enabled, it got close, but two of the five pricing figures were slightly off. Not wildly wrong, just one version behind. It presented them with the same confidence as the accurate ones, which is the part that matters.</p>
 <p>Without independent verification, that would have meant publishing incorrect information. ChatGPT's browsing is useful but can't be trusted without verification in a way that Perplexity's citation model actively encourages.</p>

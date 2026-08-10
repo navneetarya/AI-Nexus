@@ -164,6 +164,7 @@ const post: BlogPost = {
   <li><strong>Casual writers</strong>: If you write 2–3 emails a day and an occasional document, the free plan handles everything you need.</li>
   <li><strong>Students on a budget who only need error checking</strong>: The free plan catches the errors that affect grades. Premium coaching is a nice-to-have, not a necessity.</li>
   <li><strong>Writers who primarily generate new content (rather than edit)</strong>. Is your bottleneck writing speed, not writing quality? Then $9/month on Rytr's content generation is a better use of the same budget.</li>
+<p><a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
 </ul>
 
 <h2>Cheaper Alternatives to Grammarly Premium</h2>
@@ -186,6 +187,7 @@ const post: BlogPost = {
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 14px;font-weight:600;">QuillBot Premium</td>
+<p><a href="https://quillbot.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Quillbot Free →</a></p>
       <td style="padding:10px 14px;">$9.95/mo</td>
       <td style="padding:10px 14px;">Paraphrasing &amp; rewriting existing text</td>
       <td style="padding:10px 14px;">✅ 125 words/pass free</td>

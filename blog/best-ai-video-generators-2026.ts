@@ -119,6 +119,7 @@ const post: BlogPost = {
 <p>I'm Navneet Arya, and this guide ranks the five text-to-video and image-to-video tools that are genuinely worth paying for right now. It's based on verified June 2026 pricing, hands-on community reporting from Reddit's r/VideoEditing and r/ArtificialIntelligence, and the credit-math gotchas that pricing pages rarely make obvious.</p>
 <p>"AI video generator" covers a specific job: turning a text prompt or a still image into a short video clip, usually 5 to 15 seconds. It uses a model trained to predict motion, lighting, and physics, frame by frame.</p>
 <p>If what you're picturing when you search for text to video AI is a prompt in, a video out, that's a different job. AI video editors like InVideo or Opus Clip repurpose footage you already have instead.</p>
+<p><a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a></p>
 <p>None of the five tools below existed in AI Nexus's coverage before this post. If you're looking for editing or repurposing tools instead, see our <a href="/blog/best-invideo-alternatives-2026/">InVideo alternatives guide</a> or the full <a href="/best-ai-video-tools/">AI video tools category page</a>.</p>
 
 <h2>#1 Google Veo 3.1 — Best for Photorealism and Native Audio</h2>

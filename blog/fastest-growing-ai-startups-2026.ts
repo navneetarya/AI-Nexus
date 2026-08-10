@@ -172,6 +172,7 @@ const post: BlogPost = {
 <p>One vertical worth flagging is AI-powered recruitment and hiring. Several early-stage startups are applying the same playbook that worked for Perplexity in search and Cursor in coding. Instead of a general-purpose assistant, they focus on one painful workflow, like sourcing candidates, screening resumes, or scheduling interviews, applied to hiring.</p>
 <p>Recruitment still involves a lot of manual, repetitive work, so this is a category we expect meaningful growth from over the next year. See our <a href="/blog/best-ai-recruitment-tools-2026/">Best AI Recruitment Tools 2026</a> comparison for a full breakdown of who's leading it.</p>
 <p>The agent-versus-automation distinction covered in <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a> is directly relevant to evaluating these tools. <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a> already covers several agent platforms, including Lindy, that smaller teams are adapting for candidate outreach and screening today.</p>
+<p><a href="https://www.lindy.ai/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try lindy Free →</a></p>
 `
 };
 

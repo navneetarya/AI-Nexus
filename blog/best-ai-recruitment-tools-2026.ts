@@ -126,7 +126,7 @@ const post: BlogPost = {
 </table>
 </div>
 <p><strong>India pricing note:</strong> Juicebox Starter costs about ₹6,600/month. There's no local payment gateway, so you need a USD card or international Razorpay. Candidate coverage is strong in Tier 1 cities — Bengaluru, Hyderabad, Mumbai, Pune, Delhi NCR. Tier 2 city coverage is thinner than LinkedIn Recruiter's.</p>
-<p><strong>Best for:</strong> Technical and specialised roles where Boolean search quality has become the bottleneck. Engineering, data science, and product management hiring at companies running 5–30 open roles per quarter. <strong>Apply affiliate:</strong> <a href="https://juicebox.ai/?via=c6add3" target="_blank" rel="noopener sponsored">Juicebox (affiliate link)</a>.</p>
+<p><strong>Best for:</strong> Technical and specialised roles where Boolean search quality has become the bottleneck. Engineering, data science, and product management hiring at companies running 5–30 open roles per quarter. <strong>Apply affiliate:</strong> <a href="https://juicebox.ai/?via=c6add3" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Juicebox (affiliate link)</a>.</p>
 
 <h3>2. Greenhouse: Best Enterprise ATS with AI Screening</h3>
 <p>Greenhouse is the enterprise ATS standard for companies that take structured hiring seriously. It's the most connected platform on the market, with pre-built links to 450+ HR tools, job boards, and HRIS systems.</p>

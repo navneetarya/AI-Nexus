@@ -194,6 +194,7 @@ const post: BlogPost = {
   <tbody>
     <tr style="border-bottom:1px solid rgba(99,102,241,.08);">
       <td style="padding:10px 14px;">Multi-file editing</td>
+<p><a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a></p>
       <td style="padding:10px 14px;font-weight:600;color:#22c55e;">✓ Composer</td>
       <td style="padding:10px 14px;">Limited (Copilot Edits)</td>
       <td style="padding:10px 14px;font-weight:600;color:#22c55e;">✓ Cascade</td>

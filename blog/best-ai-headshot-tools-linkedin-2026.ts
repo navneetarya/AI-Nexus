@@ -106,7 +106,7 @@ const post: BlogPost = {
 
 <div style="background:rgba(14,165,233,.08);border-left:4px solid #0ea5e9;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
   <p style="margin:0;font-weight:700;font-size:15px;">TL;DR: Best AI Headshot Tool for LinkedIn 2026</p>
-  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best overall:</strong> <a href="https://www.headshotpro.com/?via=navneet" style="color:#0ea5e9;font-weight:600;" target="_blank" rel="noopener sponsored">HeadshotPro</a>, $29 one-time, 120+ headshots, 1–2 hr delivery, 4.8/5 Trustpilot.<br><strong>Best for style variety:</strong> Aragon AI, $29–$49, creative angles and lifestyle shots.<br><strong>Best free option:</strong> Remini, free tier available, lower dedicated quality.<br><strong>Best budget:</strong> Try It On AI, $14.99 entry point.</p>
+  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best overall:</strong> <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a>, $29 one-time, 120+ headshots, 1–2 hr delivery, 4.8/5 Trustpilot.<br><strong>Best for style variety:</strong> Aragon AI, $29–$49, creative angles and lifestyle shots.<br><strong>Best free option:</strong> Remini, free tier available, lower dedicated quality.<br><strong>Best budget:</strong> Try It On AI, $14.99 entry point.</p>
 </div>
 
 <h2 id="key-takeaways">Key Takeaways</h2>
@@ -285,11 +285,11 @@ const post: BlogPost = {
 </ol>
 
 <h2 id="final-verdict">Final Verdict: Best AI Headshot Tools for LinkedIn 2026</h2>
-<p>For most professionals updating their LinkedIn or job application headshot in 2026, <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="noopener sponsored" style="color:#0ea5e9;font-weight:600;">HeadshotPro</a> is the clearest choice. At $29–$59 one-time, it delivers the best combination of output quality, style volume, and formal LinkedIn-ready results available. It backs that up with a 4.8/5 Trustpilot score from 2,100+ verified reviews.</p>
+<p>For most professionals updating their LinkedIn or job application headshot in 2026, <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a> is the clearest choice. At $29–$59 one-time, it delivers the best combination of output quality, style volume, and formal LinkedIn-ready results available. It backs that up with a 4.8/5 Trustpilot score from 2,100+ verified reviews.</p>
 <p>Aragon AI is the better pick for creative professionals and personal branding. It offers more style variety per dollar and a faster turnaround. Try It On AI at $14.99 is the lowest-risk entry point for first-time users. If budget is zero, Remini's free plan provides basic headshot generation at lower quality.</p>
 
 <ol style="margin:12px 0 12px 24px;line-height:2.4;">
-  <li><strong>Best overall for LinkedIn:</strong> <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="noopener sponsored" style="color:#0ea5e9;font-weight:600;">HeadshotPro</a> — $29–$59, 120+ headshots, 4.8/5 rating</li>
+  <li><strong>Best overall for LinkedIn:</strong> <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a> — $29–$59, 120+ headshots, 4.8/5 rating</li>
   <li><strong>Best for creative professionals:</strong> Aragon AI, $29–$49, wider style range, 30–90 min delivery</li>
   <li><strong>Best budget:</strong> Try It On AI, $14.99, good quality for the price</li>
   <li><strong>Best free option:</strong> Remini, limited quality but zero cost to start</li>

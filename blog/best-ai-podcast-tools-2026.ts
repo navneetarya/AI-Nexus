@@ -161,7 +161,7 @@ const post: BlogPost = {
 <p>Overdub mode can re-record a single word or phrase using an AI clone of your own voice. That fixes one stumble without re-recording the whole segment.</p>
 <p>The free plan gives 1 hour of transcription a month with watermarked exports. The $12/month Creator plan raises that to 10 hours with clean exports — enough for a weekly 30-minute show. See our full <a href="/compare/podcastle-vs-descript/" style="color:var(--a1);font-weight:600;">Podcastle vs Descript comparison</a> to see which fits your workflow better.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.descript.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
+  <a href="https://descript.com?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
 </div>
 
 <h2>4. Murf AI: Best for Podcast Intros, Outros & Ad Reads</h2>

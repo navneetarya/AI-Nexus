@@ -139,7 +139,7 @@ const post: BlogPost = {
 <p>For individuals and small businesses producing marketing materials, social media content, and presentations without a designer, Canva free is a complete solution. See our <a href="/tools/canva-ai/" style="color:var(--a1);font-weight:600;">full Canva AI review →</a> for the paid-tier breakdown.</p>
 <p><strong>Best for:</strong> Non-designers who need professional-looking visuals regularly.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.canva.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva Free →</a>
+  <a href="https://canva.com?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva Free →</a>
 </div>
 
 <h3>5. Gamma: 400 AI Presentation Credits</h3>
@@ -166,9 +166,12 @@ const post: BlogPost = {
 <h2>Free Plans That Are Less Useful Than They Seem</h2>
 <p>Not every "free plan" is worth listing. Several prominent AI tools have free plans that are effectively non-functional for ongoing use:</p>
 <ul>
-  <li><strong>Jasper:</strong> 7-day trial only, no permanent free plan.</li>
-  <li><strong>Writesonic:</strong> 25 one-time credits, not renewable, effectively a trial.</li>
-  <li><strong>Beautiful.ai:</strong> 14-day trial only.</li>
+  <li><strong>Jasper:</strong>
+<p><a href="https://jasper.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p> 7-day trial only, no permanent free plan.</li>
+  <li><strong>Writesonic:</strong>
+<p><a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p> 25 one-time credits, not renewable, effectively a trial.</li>
+  <li><strong>Beautiful.ai:</strong>
+<p><a href="https://beautiful.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Beautiful.ai Free →</a></p> 14-day trial only.</li>
   <li><strong>Murf AI:</strong> 10 minutes of voiceover per month, enough for testing, not production use.</li>
 </ul>
 <div style="margin:14px 0 24px;">

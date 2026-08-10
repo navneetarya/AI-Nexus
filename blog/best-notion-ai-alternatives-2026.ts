@@ -79,7 +79,8 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Taskade</strong> is the best overall Notion AI alternative (free plan, AI agents). <strong>Writesonic</strong> wins for content creators (longer drafts, web access). <strong>Frase.io</strong> wins for SEO writers (ranks content against live Google data). All three beat Notion AI's $10/month add-on.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Taskade</strong> is the best overall Notion AI alternative (free plan, AI agents). <strong>Writesonic</strong>
+<p><a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a></p> wins for content creators (longer drafts, web access). <strong>Frase.io</strong> wins for SEO writers (ranks content against live Google data). All three beat Notion AI's $10/month add-on.</p>
 </div>
 
 <h2>What Are the Best Notion AI Alternatives in 2026?</h2>

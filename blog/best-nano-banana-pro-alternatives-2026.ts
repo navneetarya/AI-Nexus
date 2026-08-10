@@ -189,7 +189,7 @@ const post: BlogPost = {
 <p>It automatically applies dramatic lighting, rich color grading, and compositional flair even to a bare-bones prompt.</p>
 <p>The tradeoff is real. Midjourney has no free tier at all; the Basic plan at $10/month is the only way to generate a first image. It also has no official API, ruling it out for developers building image generation into an app.</p>
 <p>Text rendering is also noticeably weaker, at roughly 71% accuracy on independent benchmarks versus Nano Banana Pro's 94–96%. Avoid Midjourney for packaging, signage, or anything where legible in-image text matters.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-4px;">No public affiliate programme for Midjourney: <a href="https://www.midjourney.com/pricing" target="_blank" rel="noopener">official pricing page</a>.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-4px;">No public affiliate programme for Midjourney: <a href="https://www.midjourney.com/pricing" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">official pricing page</a>.</p>
 
 <h3>Leonardo.ai: Best for Creative Control and Free Credits</h3>
 <p>If you're searching for the best AI image generator for beginners specifically, Leonardo.ai is the strongest free alternative on this list by a wide margin. Its 150 free credits per day translate to roughly 15–25 images depending on which model you use, with no watermark on free-tier output.</p>

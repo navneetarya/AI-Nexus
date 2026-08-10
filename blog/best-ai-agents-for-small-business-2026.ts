@@ -126,7 +126,7 @@ const post: BlogPost = {
 
 <p><strong>Lindy.ai</strong> operates on a "personal AI team" model. Each agent ("Lindy") has defined goals, access to specific tools (Gmail, Slack, Salesforce, Notion, and 3,000+ integrations), and instructions written in plain language. Lindy agents can independently manage an inbox: reading, categorising, drafting replies, and escalating flagged messages.</p>
 <p>Or they can handle inbound lead qualification. That means asking screening questions, scoring responses against your criteria, and routing qualified leads to the right team member. The free plan includes limited monthly tasks; paid plans start around $20/month.</p>
-<p>For non-technical SMB owners who need a working agent without building a workflow, Lindy is the lowest-friction Tier 1 entry point. <a href="https://www.lindy.ai/" target="_blank" rel="noopener">Lindy.ai ↗</a> <!-- TODO: Replace href with your PartnerStack referral URL --></p>
+<p>For non-technical SMB owners who need a working agent without building a workflow, Lindy is the lowest-friction Tier 1 entry point. <a href="https://www.lindy.ai/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Lindy.ai ↗</a> <!-- TODO: Replace href with your PartnerStack referral URL --></p>
 <div style="margin:14px 0 24px;">
   <a href="https://www.lindy.ai/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lindy.ai Free →</a>
 </div>
@@ -149,13 +149,13 @@ const post: BlogPost = {
 
 <p><strong>n8n</strong> is an open-source automation platform with mature AI agent nodes. Its LLM nodes support tool use, memory, and multi-step reasoning, enabling genuinely capable agents built directly in the workflow editor.</p>
 <p>The self-hosted Community edition is free; the managed Cloud Starter plan starts at approximately €20/month. n8n is the top choice for technical SMB teams that want maximum control and self-hosting.</p>
-<p>It also lets you write custom agent logic without platform restrictions. <a href="https://n8n.io/" target="_blank" rel="noopener">n8n ↗</a> <!-- TODO: Replace href with your PartnerStack referral URL --></p>
+<p>It also lets you write custom agent logic without platform restrictions. <a href="https://n8n.io/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">n8n ↗</a> <!-- TODO: Replace href with your PartnerStack referral URL --></p>
 <div style="margin:14px 0 24px;">
   <a href="https://n8n.io/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit n8n →</a>
 </div>
 
 <p><strong>Make.com</strong> provides visual workflow automation with a drag-and-drop UI. Its AI-integrated modules cover OpenAI, Anthropic, and Google AI services, and the library keeps growing. The free plan includes 1,000 operations per month — enough for testing and light production use.</p>
-<p>The Core plan starts at $9/month. For SMBs already running Make automations who want to add AI reasoning steps without platform migration, Make represents the lowest-friction upgrade path. <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer">Make.com →</a></p>
+<p>The Core plan starts at $9/month. For SMBs already running Make automations who want to add AI reasoning steps without platform migration, Make represents the lowest-friction upgrade path. <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Make.com →</a></p>
 <div style="margin:14px 0 24px;">
   <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com Free →</a>
 </div>

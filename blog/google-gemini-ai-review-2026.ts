@@ -127,6 +127,7 @@ const post: BlogPost = {
     <tr>
       <td style="padding:10px 14px;">Grammar + editing</td>
       <td style="padding:10px 14px;font-weight:600;">Neither — use <a href="/tools/grammarly/" style="color:rgb(13,148,136);">Grammarly</a></td>
+<p><a href="https://grammarly.com" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a></p>
       <td style="padding:10px 14px;">Inline real-time editing is a different job</td>
     </tr>
   </tbody>
