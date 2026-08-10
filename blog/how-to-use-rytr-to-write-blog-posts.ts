@@ -7,6 +7,7 @@
 // extra CTAs, callout box, extra internal links added — see validate_blog_quality.py notes
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'how-to-use-rytr-to-write-blog-posts',
@@ -89,11 +90,43 @@ const post: BlogPost = {
 <p>This workflow has been used across dozens of published posts. Here's exactly how it works.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+
+<h2>Rytr Plans Compared</h2>
+<div style="overflow-x:auto;margin:24px 0;">
+<table style="width:100%;border-collapse:collapse;font-size:14px;">
+  <thead>
+    <tr style="background:rgba(13,148,136,.1);">
+      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Plan</th>
+      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Price</th>
+      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
+      <td style="padding:10px 14px;font-weight:600;">Free</td>
+      <td style="padding:10px 14px;">$0</td>
+      <td style="padding:10px 14px;">10,000 characters/month — about 1 blog post</td>
+    </tr>
+    <tr style="background:rgba(13,148,136,.03);border-bottom:1px solid rgba(13,148,136,.08);">
+      <td style="padding:10px 14px;font-weight:600;">Saver</td>
+      <td style="padding:10px 14px;">$9/month</td>
+      <td style="padding:10px 14px;">Unlimited characters + plagiarism checker — 2+ posts/week</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;font-weight:600;">Unlimited</td>
+      <td style="padding:10px 14px;">$29/month</td>
+      <td style="padding:10px 14px;">Custom use cases + priority support — agency workflows</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>The <strong>free plan</strong> is enough for 1 blog post per month and plenty to test the workflow. If you're publishing 2+ posts per week, the <strong>Saver plan</strong> gives you unlimited characters and the plagiarism checker.</p>
+<p>It pays for itself within the first post if your time is worth anything. Unless you're building a content agency workflow, Saver is the right stopping point for individual bloggers.</p>
 
 <h2>Step 1: Sign Up and Set Up Your Account</h2>
 <p>Go to <strong>rytr.me</strong> and click "Get started for free." No credit card is required for the free plan. You get 10,000 characters per month immediately upon signup, roughly one complete blog post.</p>
@@ -130,7 +163,7 @@ const post: BlogPost = {
 <p><strong>The rewrite step is non-negotiable.</strong> AI-generated paragraphs tend to be accurate but bland. They lack your personal examples, specific data, and voice. Treat the AI output as a structured rough draft to edit, not a finished paragraph to copy.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 
 <h2>Step 4: Write Your Introduction Last</h2>
@@ -146,7 +179,6 @@ const post: BlogPost = {
   <li><strong>Add personal examples:</strong> Anywhere the AI wrote "for example" followed by a generic scenario, replace it with something from your actual experience. One real example is worth ten AI-generated hypotheticals.</li>
   <li><strong>Fact-check specific claims:</strong> Rytr occasionally generates plausible-sounding statistics that are wrong or outdated. Any number, study reference, or specific claim should be verified before you publish it.</li>
   <li><strong>Run a plagiarism check:</strong> Use <a href="/tools/grammarly/" style="color:var(--a1);font-weight:600;">Grammarly's</a> plagiarism checker (free with Grammarly Basic) or Copyscape. AI-generated content rarely plagiarises verbatim, but it's a good habit before publishing.</li>
-<p><a href="https://grammarly.com" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a></p>
 </ul>
 
 <h2>The Full Time Breakdown</h2>
@@ -160,42 +192,9 @@ const post: BlogPost = {
 </ul>
 <p>The editing phase is where your value as a writer shows. Don't skip it to save time. The difference between a Rytr post edited well and one published raw is significant. Google's helpful content guidelines penalise low-quality AI content; edited, personalised AI content is fine.</p>
 
-<h2>Rytr Plans Compared</h2>
-<div style="overflow-x:auto;margin:24px 0;">
-<table style="width:100%;border-collapse:collapse;font-size:14px;">
-  <thead>
-    <tr style="background:rgba(13,148,136,.1);">
-      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Plan</th>
-      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Price</th>
-      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Best For</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Free</td>
-      <td style="padding:10px 14px;">$0</td>
-      <td style="padding:10px 14px;">10,000 characters/month — about 1 blog post</td>
-    </tr>
-    <tr style="background:rgba(13,148,136,.03);border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Saver</td>
-      <td style="padding:10px 14px;">$9/month</td>
-      <td style="padding:10px 14px;">Unlimited characters + plagiarism checker — 2+ posts/week</td>
-    </tr>
-    <tr>
-      <td style="padding:10px 14px;font-weight:600;">Unlimited</td>
-      <td style="padding:10px 14px;">$29/month</td>
-      <td style="padding:10px 14px;">Custom use cases + priority support — agency workflows</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<p>The <strong>free plan</strong> is enough for 1 blog post per month and plenty to test the workflow. If you're publishing 2+ posts per week, the <strong>Saver plan</strong> gives you unlimited characters and the plagiarism checker.</p>
-<p>It pays for itself within the first post if your time is worth anything. Unless you're building a content agency workflow, Saver is the right stopping point for individual bloggers.</p>
-
 <p>Ready to start? No credit card required for the free plan. Or read our <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">full Rytr review</a> for a deeper look at everything the platform offers, see how it stacks up in our <a href="/compare/rytr-vs-writesonic/" style="color:var(--a1);font-weight:600;">Rytr vs Writesonic comparison</a>, or browse the full <a href="/best-ai-writing-tools/" style="color:var(--a1);font-weight:600;">best AI writing tools category</a> for more options.</p>
-<p><a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
   `.trim(),
 };

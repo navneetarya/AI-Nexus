@@ -456,8 +456,11 @@ def score_conversion(fields, raw, html, word_count):
     else:
         issues.append("proscons missing")
 
-    # CTA button presence + count (4 pts) — canonical gradient button pattern
-    cta_count = len(re.findall(r"<a[^>]+href=\"https?://[^\"]+\"[^>]*>.*?(?:Try|Get|Start|Visit).*?</a>", html, re.I))
+    # CTA button presence + count (4 pts) — canonical gradient button pattern.
+    # href can be a literal URL OR a centralized reference like
+    # ${AFFILIATE_LINKS['slug']} (see lib/affiliate-links.ts) — match both.
+    CTA_HREF = r"(?:https?://[^\"]+|\$\{AFFILIATE_LINKS\[[^\]]+\]\})"
+    cta_count = len(re.findall(r"<a[^>]+href=\"" + CTA_HREF + r"\"[^>]*>.*?(?:Try|Get|Start|Visit).*?</a>", html, re.I))
     if cta_count >= 3:
         pts += 4
     elif cta_count >= 1:
@@ -470,8 +473,8 @@ def score_conversion(fields, raw, html, word_count):
     if cta_count >= 2:
         # crude split check
         half = len(html) // 2
-        first_half_ctas = len(re.findall(r"<a[^>]+href=\"https?://", html[:half]))
-        second_half_ctas = len(re.findall(r"<a[^>]+href=\"https?://", html[half:]))
+        first_half_ctas = len(re.findall(r"<a[^>]+href=\"" + CTA_HREF, html[:half]))
+        second_half_ctas = len(re.findall(r"<a[^>]+href=\"" + CTA_HREF, html[half:]))
         if first_half_ctas and second_half_ctas:
             pts += 2
         else:

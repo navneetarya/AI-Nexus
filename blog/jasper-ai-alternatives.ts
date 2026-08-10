@@ -5,6 +5,7 @@
 // Affiliate stack: Writesonic, Rytr, Copy.ai CTAs throughout
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'jasper-ai-alternatives',
@@ -77,13 +78,13 @@ const post: BlogPost = {
   content: `
 <h2>What Are the Best Jasper AI Alternatives in 2026?</h2>
 <p>The best Jasper AI alternatives in 2026 are four. Writesonic for long-form content at a fraction of Jasper's $49/month. Rytr for short-form copy at $9/month. Copy.ai if you want a genuinely usable free plan. And Frase if SEO research and writing need to happen in the same tool.</p>
-<p><a href="https://jasper.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p>
 <p>Jasper AI is one of the most well-known AI writing tools, but at $49/month for the Creator plan, it's also one of the most expensive. That price point made sense in 2022, when Jasper led the market.</p>
 <p>In 2026, the gap has closed. Writesonic, Rytr, and Copy.ai now match Jasper's core output quality at 40–80% lower prices — see our full <a href="/blog/best-ai-writing-tools-2026/">best AI writing tools comparison</a> for how they stack up against the wider market.</p>
 <p>The three most common reasons people look for Jasper alternatives:</p>
 <p><strong>Price:</strong> $49/month is steep when Writesonic offers unlimited words at $19/month and Rytr charges $9/month. For freelancers and solopreneurs, the content quality difference doesn't justify a $30–40/month premium.</p>
 <p><strong>Complexity:</strong> Jasper's document editor, Boss Mode workflows, and template library have a learning curve. Writers who want to start producing content in 10 minutes, not 2 hours, often find simpler alternatives more productive.</p>
 <p><strong>Use case mismatch:</strong> Jasper is optimised for brand teams with established tone guides. Solo bloggers, social media managers, and students often only need 20% of what Jasper offers, and don't want to pay for the other 80%.</p>
+<p>Still, for brand teams that need Jasper's Brand Voice and multi-user workflows, it remains the strongest option in that specific niche: <a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p>
 
 <h2>Quick Comparison: Best Jasper AI Alternatives 2026</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -146,7 +147,7 @@ const post: BlogPost = {
 <p><a href="/tools/writesonic/" style="color:#0D9488;font-weight:600;">→ Full Writesonic review</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a>
+  <a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -159,7 +160,7 @@ const post: BlogPost = {
 <p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review</a> &nbsp;·&nbsp; <a href="/blog/best-free-ai-writing-tools-2026/" style="color:#0D9488;font-weight:600;">→ Best free AI writing tools 2026</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -178,7 +179,7 @@ const post: BlogPost = {
 <p><a href="/tools/frase/" style="color:#0D9488;font-weight:600;">→ Full Frase review</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://frase.io?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase Free →</a>
+  <a href="${AFFILIATE_LINKS['frase']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.

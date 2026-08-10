@@ -118,6 +118,27 @@ def _load_affiliate_link_domains() -> dict:
 
 AFFILIATE_LINK_DOMAINS = _load_affiliate_link_domains()
 
+# Some tools' real tracked/affiliate link lives on a completely different
+# domain than the one people cite them by in prose (e.g. a CJ/sovrn/Impact
+# tracking subdomain). Map those citation-domain aliases to the same tool so
+# CTA-COVERAGE doesn't flag a tool as "missing a button" when the button is
+# actually there, just under its tracked domain. Add an entry here whenever
+# validate_blog_structure.py reports a false positive for a tool that
+# genuinely has a CTA in the post.
+CITATION_DOMAIN_ALIASES = {
+    "invideo.io": "invideo.sjv.io",
+    "murf.ai": "get.murf.ai",
+}
+
+# CTA-COVERAGE only makes sense for domains the site actually has an
+# affiliate/referral relationship with — you can't (and shouldn't) put a
+# `rel="sponsored"` button on a citation to Reddit, GitHub Docs, a
+# competitor's homepage, or a government portal. Anything not in this set is
+# a plain reference link and is exempt from the check.
+KNOWN_AFFILIATE_DOMAINS = set(AFFILIATE_LINK_DOMAINS.values()) | set(
+    CITATION_DOMAIN_ALIASES.keys()
+)
+
 
 def get_domain(url: str) -> str:
     tmpl = AFFILIATE_LINKS_TEMPLATE_PATTERN.match(url.strip())
@@ -213,7 +234,19 @@ def check_cta_coverage(slug, content_html, full_text, failures):
         )
         return
 
-    missing_domains = cited_domains - cta_domains
+    # Resolve known citation-domain aliases (a tool cited by its plain
+    # marketing domain but whose real tracked CTA link lives on a
+    # different domain, e.g. a CJ/sovrn tracking subdomain) before diffing.
+    resolved_cited_domains = {CITATION_DOMAIN_ALIASES.get(d, d) for d in cited_domains}
+
+    missing_domains = resolved_cited_domains - cta_domains
+
+    # Only cited domains we actually have an affiliate/referral relationship
+    # with are actionable here — everything else is a plain citation
+    # (official docs, competitor mentions, benchmarks, government portals)
+    # that was never meant to carry a CTA button.
+    missing_domains = {d for d in missing_domains if d in KNOWN_AFFILIATE_DOMAINS}
+
     if missing_domains:
         failures.append(
             (
