@@ -4,18 +4,29 @@ window.gtag = function gtag() {
 };
 window.gtag('js', new Date());
 
+// Kept in sync with lib/affiliate-links.ts (constants.ts TOOLS +
+// SUPPLEMENTARY_LINKS) — this must list the actual domain each tracked
+// affiliate/referral URL resolves to, not just the tool's marketing
+// domain. Two real bugs fixed here on 2026-08-10:
+//   1. InVideo's real tracked link is on invideo.sjv.io (a CJ/sovrn
+//      tracking domain), not invideo.io — the plain invideo.io domain
+//      was listed instead, so every real revenue click on the CTA button
+//      was silently missing the affiliate_click Key Event. invideo.io
+//      itself is only ever used for plain, non-affiliate citation links
+//      in blog prose, so it's intentionally left off this list.
+//   2. getmunch.ai was misspelled here — the real tool is getmunch.com.
 var affiliateDomains = [
   'get.murf.ai', 'try.elevenlabs.io', 'elevenlabs.io',
   'rytr.me', 'podcastle.ai', 'ocoya.com', 'taskade.com',
   'writesonic.com', 'quillbot.com', 'frase.io', 'jasper.ai',
-  'invideo.io', 'pictory.ai', 'opus.pro', 'descript.com',
+  'invideo.sjv.io', 'pictory.ai', 'opus.pro', 'descript.com',
   'leonardo.ai', 'photoroom.com', 'looka.com', 'gamma.app',
   'beautiful.ai', 'notion.so', 'perplexity.ai', 'canva.com',
   'replit.com', 'grammarly.com', 'cursor.com', 'lovable.dev',
   'getresponse.com', 'headshotpro.com',
   'fireflies.ai', 'narrato.io', 'make.com', 'lindy.ai',
   'relevanceai.com', 'n8n.io', 'windsurf.com',
-  'tidio.com', 'getmunch.ai', 'juicebox.ai', 'vidiq.com'
+  'tidio.com', 'getmunch.com', 'juicebox.ai', 'vidiq.com'
 ];
 
 function bindAffiliateClickTracking() {

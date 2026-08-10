@@ -33,6 +33,15 @@ export interface Tool {
   cons?: string[];
   features?: string[];
 
+  /** External entity links (Wikidata, Crunchbase, Product Hunt, etc.) — helps
+   * AI engines/Knowledge Graph disambiguate the tool as a company vs. the
+   * review of it on this page. Used in sameAs schema markup. */
+  sameAs?: string[];
+
+  /** Longer editorial review text used in Review schema reviewBody / on-page copy. */
+  reviewBody?: string;
+
+
   // ── Week 2: Affiliate page expansion fields ──────────────────────────────
   /** Pricing tier breakdown — renders a visual pricing table on the tool page */
   pricingBreakdown?: {

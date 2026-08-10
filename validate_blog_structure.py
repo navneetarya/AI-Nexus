@@ -77,10 +77,54 @@ OUTBOUND_CITATIONS_PATTERN = re.compile(
 )
 CITATION_URL_PATTERN = re.compile(r"url:\s*'([^']+)'")
 
+# CTA hrefs are no longer hardcoded URLs — they're centralized references
+# like ${AFFILIATE_LINKS['grammarly']} (see lib/affiliate-links.ts). To keep
+# domain-matching working, resolve each slug back to its real URL/domain by
+# reading the same single source of truth the site itself uses, instead of
+# duplicating the link list here.
+AFFILIATE_LINKS_TEMPLATE_PATTERN = re.compile(r"^\$\{AFFILIATE_LINKS\['([^']+)'\]\}$")
+
+
+def _domain_from_url(url: str) -> str:
+    m = re.search(r"https?://(?:www\.)?([^/?#]+)", url)
+    return m.group(1).lower() if m else url.lower()
+
+
+def _load_affiliate_link_domains() -> dict:
+    """Parse constants.ts TOOLS[].{slug,affiliateLink} plus the
+    SUPPLEMENTARY_LINKS block in lib/affiliate-links.ts, mirroring what
+    AFFILIATE_LINKS resolves to at runtime, so slug → domain stays correct
+    even after constants.ts links are edited."""
+    domains = {}
+
+    constants_src = (ROOT / "constants.ts").read_text(encoding="utf-8", errors="replace")
+    for m in re.finditer(
+        r"slug:\s*'([^']+)'.*?affiliateLink:\s*'([^']*)'", constants_src, re.S
+    ):
+        slug, url = m.group(1), m.group(2)
+        if url:
+            domains[slug] = _domain_from_url(url)
+
+    lib_path = ROOT / "lib" / "affiliate-links.ts"
+    if lib_path.exists():
+        lib_src = lib_path.read_text(encoding="utf-8", errors="replace")
+        supp_match = re.search(r"SUPPLEMENTARY_LINKS[^{]*\{(.*?)\n\};", lib_src, re.S)
+        if supp_match:
+            for m in re.finditer(r"['\"]?([\w-]+)['\"]?:\s*'([^']+)'", supp_match.group(1)):
+                domains.setdefault(m.group(1), _domain_from_url(m.group(2)))
+
+    return domains
+
+
+AFFILIATE_LINK_DOMAINS = _load_affiliate_link_domains()
+
 
 def get_domain(url: str) -> str:
-    m = re.search(r"https?://(?:www\.)?([^/]+)", url)
-    return m.group(1).lower() if m else url.lower()
+    tmpl = AFFILIATE_LINKS_TEMPLATE_PATTERN.match(url.strip())
+    if tmpl:
+        slug = tmpl.group(1)
+        return AFFILIATE_LINK_DOMAINS.get(slug, slug)
+    return _domain_from_url(url)
 
 
 def load_posts(slug_filter: str = None):
