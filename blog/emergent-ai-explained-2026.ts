@@ -113,7 +113,7 @@ const post: BlogPost = {
 <p>This is now an active focus of AI safety research rather than a hypothetical. It's also the practical reason multi-agent frameworks now ship with explicit guardrails, approval steps, and audit logging. Agents rarely get to freely hand off tasks to each other anymore.</p>
 <p>If you're building with tools like <a href="/tools/make">Make.com</a> or a multi-agent framework, this is the concrete risk behind the abstract term. It's not "the AI became conscious". It's "two rule-following systems found an unplanned shortcut".</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://make.com?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com Free →</a>
+  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
