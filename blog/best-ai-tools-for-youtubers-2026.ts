@@ -225,6 +225,9 @@ const post: BlogPost = {
   <li><strong>InVideo AI or Descript</strong> for video production.</li>
   <li><strong>Opus Clip</strong> to repurpose the finished video into Shorts.</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+</div>
 <p>Total monthly cost for this stack: $60–80. Total weekly time saved: 8–12 hours for a creator publishing 2 videos per week. The investment pays for itself within the first month for any creator monetising their channel.</p>
 <p>For creators who script with AI, see <a href="/blog/how-to-use-ai-for-content-creation-2026/">How to Use AI for Content Creation 2026</a>. If you're comparing InVideo AI against other options before committing, our <a href="/blog/best-invideo-alternatives-2026/">Best InVideo Alternatives 2026</a> guide is worth a look, and for the broader creator toolkit beyond YouTube specifically, see <a href="/blog/best-ai-tools-for-content-creators-free-2026/">Best AI Tools for Content Creators (Free) 2026</a>.</p>
 `

@@ -172,6 +172,7 @@ const post: BlogPost = {
 <p>The $19/month Basic plan removes the watermark and gives 2 hours of monthly voice generation, enough for weekly short episodes. If ultra-realistic voice cloning matters more than workflow polish, compare Murf against ElevenLabs: Murf wins on ease of use, ElevenLabs wins on raw voice realism.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 
 <h2>The Right Podcast AI Stack by Budget</h2>
