@@ -3,6 +3,7 @@ import React, { useEffect, useMemo, lazy, Suspense } from 'react';
 // Shield icon removed — T1.7 author strip now uses plain "About the reviewer →" anchor
 import { SharedNav } from './SharedNav';
 import type { BlogPost } from '../blog/types';
+import { BLOG_POSTS_META } from '../blog/metadata';
 import { SITE_CONFIG, TOOLS } from '../constants';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
@@ -44,6 +45,28 @@ const BLOG_RELATED_TOOLS: Record<string, string[]> = {
   'fastest-growing-ai-startups-2026':                ['perplexity', 'replit', 'taskade'],
   'cheapest-ai-coding-tools-2026':                   ['replit', 'notion-ai', 'taskade'],
   'ai-ecosystem-growth-report-2026':                 ['grammarly', 'canva-ai', 'leonardo-ai'],
+};
+
+// ── Related blog posts (blog → blog cross-linking) ──────────────────────────
+// Fixes the "orphan post" gap found by validate_engagement_tracking.py: posts
+// with zero internal links to other blog content, which also means they can
+// never contribute a second-pageview "engaged session" in GA4. Currently
+// covers the posts the audit flagged as orphans; extend this as new posts
+// are published so none launch with zero cross-links.
+const BLOG_RELATED_POSTS: Record<string, string[]> = {
+  'ai-tools-for-students-free-2026':                 ['best-free-ai-tools-for-students-in-india-2026', 'ai-tools-for-teachers-2026', 'best-free-ai-writing-tools-2026'],
+  'best-ai-marketing-tools-2026':                    ['best-ai-email-marketing-tools-2026', 'best-ai-tools-for-social-media-2026', 'best-ai-sales-tools-for-founders-2026'],
+  'best-ai-podcast-tools-2026':                      ['best-podcastle-alternatives', 'best-ai-video-generators-2026', 'best-ai-voice-dictation-tools-2026'],
+  'best-ai-tools-for-content-creators-free-2026':    ['best-ai-tools-for-youtube-creators-2026', 'best-ai-tools-for-social-media-2026', 'how-to-use-ai-for-content-creation-2026'],
+  'best-ai-tools-for-social-media-2026':             ['best-ai-marketing-tools-2026', 'best-ai-tools-for-content-creators-free-2026', 'best-ai-video-generators-2026'],
+  'best-free-ai-tool-plans-2026':                    ['best-free-ai-writing-tools-2026', 'chatgpt-free-vs-claude-free-vs-gemini-free-2026', 'best-free-ai-tools-for-students-in-india-2026'],
+  'best-grammarly-alternatives':                     ['is-grammarly-premium-worth-it-2026', 'best-ai-writing-tools-2026', 'best-free-ai-writing-tools-2026'],
+  'best-invideo-alternatives-2026':                  ['best-ai-video-generators-2026', 'best-ai-tools-for-youtubers-2026', 'leonardo-vs-midjourney-2026'],
+  'best-notion-ai-alternatives-2026':                ['taskade-vs-notion-vs-asana-2026', 'best-ai-tools-for-freelancers-2026', 'best-ai-tools-for-startups-2026'],
+  'chatgpt-alternatives-free-2026':                  ['chatgpt-free-vs-claude-free-vs-gemini-free-2026', 'perplexity-ai-review-2026', 'best-ai-chatbot-2026'],
+  'how-to-use-ai-for-content-creation-2026':         ['best-ai-tools-for-content-creators-free-2026', 'best-ai-writing-tools-2026', 'how-to-use-rytr-to-write-blog-posts'],
+  'how-to-use-rytr-to-write-blog-posts':             ['best-ai-writing-tools-2026', 'jasper-ai-alternatives', 'best-grammarly-alternatives'],
+  'taskade-vs-notion-vs-asana-2026':                 ['best-notion-ai-alternatives-2026', 'best-ai-tools-for-freelancers-2026', 'best-ai-tools-for-startups-2026'],
 };
 
 // ── H5 (SEO-High): Auto-link tool name mentions to /tools/{slug} pages ────────
@@ -721,6 +744,71 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             </div>
           </section>
         )}
+
+        {/* ── Related Posts — blog-to-blog cross-links from BLOG_RELATED_POSTS map ──
+            Placed before Related Reviews so a reader who isn't ready to click an
+            affiliate/tool link yet still has a same-site next step, which also
+            gives the session a shot at the GA4 "2+ pageviews = engaged" path. ── */}
+        {(() => {
+          const relatedPostSlugs = BLOG_RELATED_POSTS[post.slug] || [];
+          const relatedPosts = relatedPostSlugs
+            .map(slug => BLOG_POSTS_META.find(p => p.slug === slug))
+            .filter(Boolean) as typeof BLOG_POSTS_META;
+          if (relatedPosts.length === 0) return null;
+          return (
+            <section style={{ marginTop: 52 }}>
+              <h2 style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: 18, fontWeight: 800,
+                color: C.txt, marginBottom: 16,
+                letterSpacing: '-0.02em',
+              }}>
+                Related Posts
+              </h2>
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+                gap: 12,
+              }}>
+                {relatedPosts.map(p => (
+                  <button
+                    key={p.slug}
+                    onClick={() => navigate(`/blog/${p.slug}/`)}
+                    style={{
+                      background: C.surf,
+                      border: `1px solid ${C.brd}`,
+                      borderRadius: 12,
+                      padding: '16px 18px',
+                      textAlign: 'left' as const,
+                      cursor: 'pointer',
+                      display: 'flex',
+                      flexDirection: 'column' as const,
+                      gap: 6,
+                      transition: 'border-color .15s',
+                    }}
+                    onMouseEnter={e => (e.currentTarget.style.borderColor = C.a1)}
+                    onMouseLeave={e => (e.currentTarget.style.borderColor = C.brd)}
+                  >
+                    <span style={{
+                      fontSize: 13, fontWeight: 700,
+                      color: C.txt, fontFamily: "'Inter', sans-serif",
+                      lineHeight: 1.35,
+                    }}>
+                      {p.title}
+                    </span>
+                    <span style={{
+                      fontSize: 12, color: C.a1,
+                      fontFamily: "'Inter', sans-serif",
+                      marginTop: 2,
+                    }}>
+                      Read post →
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
 
         {/* ── W3-T16: Related Reviews — 3 tool cards from BLOG_RELATED_TOOLS map ── */}
         {(() => {
