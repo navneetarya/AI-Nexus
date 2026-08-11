@@ -204,8 +204,14 @@ import post78 from './best-ai-website-builders-2026';
 // Trustpilot vs 4.9/5 App Store split, Udio's export lockout during its UMG transition, and
 // the active Sony/UMG litigation against Suno and Udio (US-specific copyright-risk angle)
 import post79 from './best-ai-music-generator-tools-2026';
+// Day 29 (Aug 11) — Best AI SEO Content Optimization Tools 2026 — Surfer vs Frase vs
+// Clearscope vs MarketMuse compared; zero prior coverage of this sub-niche, verified live
+// pricing pulled directly from vendor pages (Frase confirmed via direct fetch); callout:
+// MarketMuse pricing now demo-gated post-Siteimprove acquisition (Nov 2024)
+import post80 from './best-ai-seo-content-optimization-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post80, // Day 29 (Aug 11) — Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse) — pinned first for freshness
   post79, // Day 28 (Aug 10) — Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA) — pinned first for freshness
   post78, // Day 27 (Aug 8) — Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web) — pinned first for freshness
   post77, // Day 26 (Aug 2) — Best AI Sales Tools for Founders 2026 — pinned first for freshness
