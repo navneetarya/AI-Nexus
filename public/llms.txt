@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-08-11
+# Updated: 2026-08-12
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -56,6 +56,7 @@
 
 ## Blog Posts
 
+- [Best AI Interview Prep Tools 2026: Practice Tools vs Live Copilots, Ranked](https://ainexustools.online/blog/best-ai-interview-prep-tools-2026): Final Round AI, Yoodli, Big Interview, Pramp, and Huru compared on real August 2026 pricing and Trustpilot ratings — separates practice tools from live-copilot tools on employer-policy and offer-rescission risk, and covers Google's April 2026 retirement of Interview Warmup in favor of Gemini Live.
 - [Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)](https://ainexustools.online/blog/best-ai-seo-content-optimization-tools-2026): Surfer SEO, Frase, Clearscope, and MarketMuse compared on verified August 2026 pricing pulled directly from vendor pages, plus G2 ratings — includes a callout on MarketMuse's paid pricing now being gated behind a sales demo since its Siteimprove acquisition.
 - [Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)](https://ainexustools.online/blog/best-ai-music-generator-tools-2026): Suno, Udio, ElevenLabs Music, Soundraw, and AIVA compared on real August 2026 pricing and Trustpilot ratings — includes a US-specific copyright/RIAA-litigation risk section and Suno's 4.9/5 App Store vs 1.6/5 Trustpilot rating split.
 - [Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web)](https://ainexustools.online/blog/best-ai-website-builders-2026): Wix, Framer, Durable, Hostinger, and 10Web compared on real August 2026 pricing and ratings — includes a US-specific ADA accessibility risk section and Framer's G2 4.5/5 vs Trustpilot 1.6/5 rating split.

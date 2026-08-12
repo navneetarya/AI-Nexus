@@ -209,9 +209,14 @@ import post79 from './best-ai-music-generator-tools-2026';
 // pricing pulled directly from vendor pages (Frase confirmed via direct fetch); callout:
 // MarketMuse pricing now demo-gated post-Siteimprove acquisition (Nov 2024)
 import post80 from './best-ai-seo-content-optimization-tools-2026';
+// Day 30 (Aug 12) — Best AI Interview Prep Tools 2026 — career-search cluster post #2,
+// pairs with post69 (resume builder); separates practice tools from live-copilot tools
+// on cheating/employer-policy risk, an angle most competing roundups skip
+import post81 from './best-ai-interview-prep-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
-  post80, // Day 29 (Aug 11) — Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse) — pinned first for freshness
+  post81, // Day 30 (Aug 12) — Best AI Interview Prep Tools 2026 (Final Round AI vs Yoodli vs Big Interview vs Pramp vs Huru) — pinned first for freshness
+  post80, // Day 29 (Aug 11) — Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)
   post79, // Day 28 (Aug 10) — Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA) — pinned first for freshness
   post78, // Day 27 (Aug 8) — Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web) — pinned first for freshness
   post77, // Day 26 (Aug 2) — Best AI Sales Tools for Founders 2026 — pinned first for freshness

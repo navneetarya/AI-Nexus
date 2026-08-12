@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-interview-prep-tools-2026",
+    "title": "Best AI Interview Prep Tools 2026: Practice Tools vs Live Copilots, Ranked",
+    "seoTitle": "Best AI Interview Prep Tools 2026: 5 Ranked",
+    "metaDescription": "Final Round AI, Yoodli, Big Interview, Pramp & Huru compared on 2026 pricing and the cheating risk most guides skip. Best ai interview prep tools, ranked.",
+    "datePublished": "2026-08-12",
+    "dateModified": "2026-08-12",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "12 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-interview-prep-tools-2026.webp",
+    "excerpt": "Yoodli is the best AI interview prep tool for fixing how you actually sound, Pramp is the strongest free option for real practice reps, and Final Round AI is powerful but comes with real billing complaints and employer-policy risk most guides don't mention."
+  },
+  {
     "slug": "best-ai-seo-content-optimization-tools-2026",
     "title": "Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)",
     "seoTitle": "Best AI SEO Content Optimization Tools 2026",
