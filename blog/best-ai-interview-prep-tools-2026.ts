@@ -144,7 +144,7 @@ const post: BlogPost = {
 <p>Since Exponent's acquisition of Pramp, the free tier now caps at 5 peer-mock credits per month, down from effectively unlimited in earlier years. Going past that requires an Exponent subscription: $79/month, or $12/month billed annually, which also unlocks Exponent's course library and a private community.</p>
 <p>The trade-off is variance: your partner might be sharp and generous with feedback, or a no-show. For zero dollars, that's still a reasonable bet. Being on the interviewer side at least once is genuinely useful, too. You learn what a strong answer sounds like faster by grading one than by giving one.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.tryexponent.com/practice-interviews" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pramp Free →</a>
+  <a href="https://www.tryexponent.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Exponent (Pramp) Free →</a>
 </div>
 
 <h3>3. Big Interview: best structured, curriculum-based prep</h3>
