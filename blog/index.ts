@@ -217,8 +217,12 @@ import post81 from './best-ai-interview-prep-tools-2026';
 // first of 9 new posts (2 pillars, 2 alternatives, 5 use-case pages) that complete the cluster
 // alongside the already-live /tools/elevenlabs/, /tools/murf-ai/, and /compare/murf-ai-vs-elevenlabs/
 import post82 from './best-ai-voice-generators-2026';
+// Day 32 (Aug 13) — Best Text-to-Speech Software 2026 — second pillar of the AI Voice/TTS cluster,
+// same 4 tools from a software/API angle (languages, latency, API access) rather than creator angle
+import post83 from './best-text-to-speech-software-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post83, // Day 32 (Aug 13) — Best Text-to-Speech Software 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript, API/language angle) — pinned first for freshness
   post82, // Day 31 (Aug 13) — Best AI Voice Generators 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript) — pinned first for freshness
   post81, // Day 30 (Aug 12) — Best AI Interview Prep Tools 2026 (Final Round AI vs Yoodli vs Big Interview vs Pramp vs Huru) — pinned first for freshness
   post80, // Day 29 (Aug 11) — Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)
