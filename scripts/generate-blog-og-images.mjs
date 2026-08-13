@@ -183,6 +183,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  { slug: 'best-ai-voice-generators-2026',               title: 'Best AI Voice Generators 2026' },
   { slug: 'best-ai-interview-prep-tools-2026',            title: 'Best AI Interview Prep Tools 2026' },
   { slug: 'best-ai-seo-content-optimization-tools-2026', title: 'Best AI SEO Content Optimization Tools 2026' },
   { slug: 'best-ai-music-generator-tools-2026',            title: 'Best AI Music Generators 2026' },

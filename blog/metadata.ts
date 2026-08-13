@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-voice-generators-2026",
+    "title": "Best AI Voice Generators 2026: 5 Tools Compared (Free & Paid)",
+    "seoTitle": "Best AI Voice Generators 2026: 5 Tools Ranked",
+    "metaDescription": "The 5 best AI voice generators in 2026, compared on real pricing and voice quality. ElevenLabs, Murf AI, Podcastle & Descript — free plans tested, honest verdict.",
+    "datePublished": "2026-08-13",
+    "dateModified": "2026-08-13",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "13 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-voice-generators-2026.webp",
+    "excerpt": "ElevenLabs is the best AI voice generator overall for realism and cloning. Murf AI wins for structured video voiceovers, and Podcastle is the strongest pick if you record podcasts too."
+  },
+  {
     "slug": "best-ai-interview-prep-tools-2026",
     "title": "Best AI Interview Prep Tools 2026: Practice Tools vs Live Copilots, Ranked",
     "seoTitle": "Best AI Interview Prep Tools 2026: 5 Ranked",

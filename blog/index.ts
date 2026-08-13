@@ -213,8 +213,13 @@ import post80 from './best-ai-seo-content-optimization-tools-2026';
 // pairs with post69 (resume builder); separates practice tools from live-copilot tools
 // on cheating/employer-policy risk, an angle most competing roundups skip
 import post81 from './best-ai-interview-prep-tools-2026';
+// Day 31 (Aug 13) — Best AI Voice Generators 2026 — traffic pillar for the AI Voice/TTS cluster,
+// first of 9 new posts (2 pillars, 2 alternatives, 5 use-case pages) that complete the cluster
+// alongside the already-live /tools/elevenlabs/, /tools/murf-ai/, and /compare/murf-ai-vs-elevenlabs/
+import post82 from './best-ai-voice-generators-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post82, // Day 31 (Aug 13) — Best AI Voice Generators 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript) — pinned first for freshness
   post81, // Day 30 (Aug 12) — Best AI Interview Prep Tools 2026 (Final Round AI vs Yoodli vs Big Interview vs Pramp vs Huru) — pinned first for freshness
   post80, // Day 29 (Aug 11) — Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)
   post79, // Day 28 (Aug 10) — Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA) — pinned first for freshness
