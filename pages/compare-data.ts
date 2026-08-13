@@ -478,12 +478,12 @@ The tools are complementary more than competitive. Some serious podcast teams us
     ],
     winnerSlug: 'podcastle',
     winnerName: 'Podcastle',
-    winnerAffiliateLink: 'https://podcastle.ai/?via=navneet',
+    winnerAffiliateLink: 'https://podcastle.ai/?ref=ymi1ntf',
     winnerAffiliateText: 'Try Podcastle free',
     pricing: {
       tools: [
-        { name: 'Podcastle', free: true, startingPrice: '$0', paidFrom: '$11.99/mo', bestPlanFor: 'Podcasters wanting all-in-one recording + AI', affiliateLink: 'https://podcastle.ai/?via=navneet' },
-        { name: 'Descript', free: true, startingPrice: '$0', paidFrom: '$12/mo', bestPlanFor: 'Text-based video & podcast editing', affiliateLink: 'https://descript.com' },
+        { name: 'Podcastle', free: true, startingPrice: '$0', paidFrom: '$11.99/mo', bestPlanFor: 'Podcasters wanting all-in-one recording + AI', affiliateLink: 'https://podcastle.ai/?ref=ymi1ntf' },
+        { name: 'Descript', free: true, startingPrice: '$0', paidFrom: '$12/mo', bestPlanFor: 'Text-based video & podcast editing', affiliateLink: 'https://descript.com?via=ainexus' },
       ],
     },
     faqs: [
