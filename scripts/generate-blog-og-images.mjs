@@ -67,7 +67,7 @@ function wrapText(text, maxChars = 36) {
 // ── Determine category label ──────────────────────────────────────────────────
 function categoryLabel(slug, title) {
   const t = (slug + title).toLowerCase();
-  if (t.includes('podcast') || t.includes('audio') || t.includes('voice') || t.includes('music') || t.includes('suno') || t.includes('udio') || t.includes('speech') || t.includes('tts'))   return 'Audio & Podcast';
+  if (t.includes('podcast') || t.includes('audio') || t.includes('voice') || t.includes('podcastle') || t.includes('descript') || t.includes('elevenlabs') || t.includes('murf') || t.includes('music') || t.includes('suno') || t.includes('udio') || t.includes('speech') || t.includes('tts'))   return 'Audio & Podcast';
   if (t.includes('video') || t.includes('youtube') || t.includes('youtuber')) return 'AI Video';
   if (t.includes('email'))                                                      return 'Email Marketing';
   if (t.includes('social') || t.includes('marketing'))                         return 'Marketing';
@@ -89,7 +89,7 @@ function categoryLabel(slug, title) {
 // ── Build SVG for a single post ───────────────────────────────────────────────
 function buildSvg({ slug, title }) {
   const ac   = accentColor(slug, title);
-  const lines = wrapText(title.replace(/ — /, '\n').split('\n')[0].replace(/ — .*/,'').trim(), 34);
+  const lines = wrapText(title.replace(/ — /, '\n').split('\n')[0].replace(/ — .*/,'').trim(), 30);
   const cat  = categoryLabel(slug, title);
 
   // Font sizes
@@ -183,6 +183,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  { slug: 'elevenlabs-alternatives-2026',              title: 'ElevenLabs Alternatives 2026' },
   { slug: 'best-text-to-speech-software-2026',          title: 'Best Text-to-Speech Software' },
   { slug: 'best-ai-voice-generators-2026',               title: 'Best AI Voice Generators 2026' },
   { slug: 'best-ai-interview-prep-tools-2026',            title: 'Best AI Interview Prep Tools 2026' },

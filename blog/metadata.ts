@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "elevenlabs-alternatives-2026",
+    "title": "ElevenLabs Alternatives 2026: 5 Tools Worth Switching To (and 2 Not To)",
+    "seoTitle": "ElevenLabs Alternatives 2026: 5 Tools Worth It",
+    "metaDescription": "The best ElevenLabs alternatives in 2026, compared by actual use case. Murf AI, Cartesia, Resemble AI, Play.ht & WellSaid Labs — real pricing, no fluff.",
+    "datePublished": "2026-08-14",
+    "dateModified": "2026-08-14",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "12 min read",
+    "ogImage": "https://ainexustools.online/og/blog/elevenlabs-alternatives-2026.webp",
+    "excerpt": "ElevenLabs is the best all-round AI voice tool, but it is not the right fit for every job. Murf AI wins for video, Cartesia for voice agents, and Resemble AI for deepfake protection."
+  },
+  {
     "slug": "best-text-to-speech-software-2026",
     "title": "Best Text-to-Speech Software 2026: 5 Tools Tested on API, Languages & Price",
     "seoTitle": "Best Text-to-Speech Software 2026: 5 Tools Tested",

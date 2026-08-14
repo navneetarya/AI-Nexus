@@ -220,8 +220,12 @@ import post82 from './best-ai-voice-generators-2026';
 // Day 32 (Aug 13) — Best Text-to-Speech Software 2026 — second pillar of the AI Voice/TTS cluster,
 // same 4 tools from a software/API angle (languages, latency, API access) rather than creator angle
 import post83 from './best-text-to-speech-software-2026';
+// Day 33 (Aug 14) — ElevenLabs Alternatives 2026 — third post in the AI Voice/TTS cluster,
+// high-intent post covering Murf AI, Cartesia, Resemble AI, Play.ht, WellSaid Labs
+import post84 from './elevenlabs-alternatives-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post84, // Day 33 (Aug 14) — ElevenLabs Alternatives 2026 (Murf AI, Cartesia, Resemble AI, Play.ht, WellSaid Labs) — pinned first for freshness
   post83, // Day 32 (Aug 13) — Best Text-to-Speech Software 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript, API/language angle) — pinned first for freshness
   post82, // Day 31 (Aug 13) — Best AI Voice Generators 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript) — pinned first for freshness
   post81, // Day 30 (Aug 12) — Best AI Interview Prep Tools 2026 (Final Round AI vs Yoodli vs Big Interview vs Pramp vs Huru) — pinned first for freshness
