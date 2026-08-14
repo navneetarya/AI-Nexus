@@ -223,8 +223,12 @@ import post83 from './best-text-to-speech-software-2026';
 // Day 33 (Aug 14) — ElevenLabs Alternatives 2026 — third post in the AI Voice/TTS cluster,
 // high-intent post covering Murf AI, Cartesia, Resemble AI, Play.ht, WellSaid Labs
 import post84 from './elevenlabs-alternatives-2026';
+// Day 34 (Aug 15) — Murf AI Alternatives 2026 — fourth post in the AI Voice/TTS cluster,
+// completes the alternatives pair covering ElevenLabs, Synthesia, Speechify Studio, WellSaid Labs
+import post85 from './murf-ai-alternatives-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post85, // Day 34 (Aug 15) — Murf AI Alternatives 2026 (ElevenLabs, Synthesia, Speechify Studio, WellSaid Labs) — pinned first for freshness
   post84, // Day 33 (Aug 14) — ElevenLabs Alternatives 2026 (Murf AI, Cartesia, Resemble AI, Play.ht, WellSaid Labs) — pinned first for freshness
   post83, // Day 32 (Aug 13) — Best Text-to-Speech Software 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript, API/language angle) — pinned first for freshness
   post82, // Day 31 (Aug 13) — Best AI Voice Generators 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript) — pinned first for freshness
