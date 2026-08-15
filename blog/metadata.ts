@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-voice-for-faceless-youtube-channels",
+    "title": "Best AI Voice for Faceless YouTube Channels 2026: The Full Workflow",
+    "seoTitle": "Best AI Voice for Faceless YouTube Channels 2026",
+    "metaDescription": "The best AI voice for faceless YouTube channels in 2026, plus the full niche-to-export workflow. ElevenLabs vs Murf AI compared on cloning, cost, and consistency.",
+    "datePublished": "2026-08-17",
+    "dateModified": "2026-08-17",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "10 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-voice-for-faceless-youtube-channels.webp",
+    "excerpt": "A faceless channel lives or dies on its voice, since there is no face to build viewer trust. Here is the full workflow, from niche to export, and which AI voice tool actually fits it."
+  },
+  {
     "slug": "best-ai-voice-generators-for-youtube-2026",
     "title": "Best AI Voice Generators for YouTube 2026: 2 Tools, 4 Real Use Cases",
     "seoTitle": "Best AI Voice Generator for YouTube 2026",

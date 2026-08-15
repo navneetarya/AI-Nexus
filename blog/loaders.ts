@@ -3,6 +3,7 @@ import type { BlogPost } from './types';
 type BlogPostModule = { default: BlogPost };
 
 const BLOG_POST_LOADERS: Record<string, () => Promise<BlogPostModule>> = {
+  'best-ai-voice-for-faceless-youtube-channels': () => import('./best-ai-voice-for-faceless-youtube-channels'),
   'best-ai-voice-generators-for-youtube-2026': () => import('./best-ai-voice-generators-for-youtube-2026'),
   'murf-ai-alternatives-2026': () => import('./murf-ai-alternatives-2026'),
   'elevenlabs-alternatives-2026': () => import('./elevenlabs-alternatives-2026'),
