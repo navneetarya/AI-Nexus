@@ -78,7 +78,7 @@ const post: BlogPost = {
   <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 
-<img src="https://images.unsplash.com/photo-1714846201700-35b42d937158?auto=format&fit=crop&w=1200&q=80" alt="A computer screen with multiple research windows open, representing niche research" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1769794371055-54436b54577e?auto=format&fit=crop&w=1200&q=80" alt="A late-night research desk with an open notebook and reference books, representing niche research" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>This step also sets your voice tone before you touch a voice tool. A true-crime channel needs a different pace and register than a tech-explainer channel, and picking that tone early saves regenerating the whole script later.</p>
 
