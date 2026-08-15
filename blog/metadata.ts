@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-voice-generators-for-youtube-2026",
+    "title": "Best AI Voice Generators for YouTube 2026: 2 Tools, 4 Real Use Cases",
+    "seoTitle": "Best AI Voice Generator for YouTube 2026",
+    "metaDescription": "The best AI voice generator for YouTube in 2026, tested across short-form, long-form, explainer, and faceless channel formats. ElevenLabs vs Murf AI, real pricing.",
+    "datePublished": "2026-08-16",
+    "dateModified": "2026-08-16",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "11 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-voice-generators-for-youtube-2026.webp",
+    "excerpt": "ElevenLabs and Murf AI both work well for YouTube, but they fit different channel formats. Here is which one to use for short-form, long-form, explainer, and faceless content."
+  },
+  {
     "slug": "murf-ai-alternatives-2026",
     "title": "Murf AI Alternatives 2026: 4 Tools Worth Considering (and When to Stay)",
     "seoTitle": "Murf AI Alternatives 2026: 4 Tools Worth It",

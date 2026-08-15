@@ -226,8 +226,12 @@ import post84 from './elevenlabs-alternatives-2026';
 // Day 34 (Aug 15) — Murf AI Alternatives 2026 — fourth post in the AI Voice/TTS cluster,
 // completes the alternatives pair covering ElevenLabs, Synthesia, Speechify Studio, WellSaid Labs
 import post85 from './murf-ai-alternatives-2026';
+// Day 35 (Aug 16) — Best AI Voice Generators for YouTube 2026 — fifth post in the AI Voice/TTS
+// cluster, first use-case page: ElevenLabs vs Murf AI across short-form/long-form/faceless formats
+import post86 from './best-ai-voice-generators-for-youtube-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post86, // Day 35 (Aug 16) — Best AI Voice Generators for YouTube 2026 (ElevenLabs vs Murf AI by channel format) — pinned first for freshness
   post85, // Day 34 (Aug 15) — Murf AI Alternatives 2026 (ElevenLabs, Synthesia, Speechify Studio, WellSaid Labs) — pinned first for freshness
   post84, // Day 33 (Aug 14) — ElevenLabs Alternatives 2026 (Murf AI, Cartesia, Resemble AI, Play.ht, WellSaid Labs) — pinned first for freshness
   post83, // Day 32 (Aug 13) — Best Text-to-Speech Software 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript, API/language angle) — pinned first for freshness

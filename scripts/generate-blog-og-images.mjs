@@ -183,6 +183,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  { slug: 'best-ai-voice-generators-for-youtube-2026', title: 'Best AI Voice Generators for YouTube' },
   { slug: 'murf-ai-alternatives-2026',                 title: 'Murf AI Alternatives 2026' },
   { slug: 'elevenlabs-alternatives-2026',              title: 'ElevenLabs Alternatives 2026' },
   { slug: 'best-text-to-speech-software-2026',          title: 'Best Text-to-Speech Software' },
