@@ -25,7 +25,7 @@ const post: BlogPost = {
   myTake: "I'm Navneet Arya, and for this guide I checked API docs, language-coverage pages, and live pricing directly rather than relying on marketing copy. If your build needs a real API, ElevenLabs is the only tool here with genuinely production-ready endpoints.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&q=80" alt="Sound waveform visualization representing text-to-speech audio output" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1630524274689-2950ac0fc91e?auto=format&fit=crop&w=1200&q=80" alt="A coding workstation representing a text-to-speech API integration" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>"Text-to-speech software" and "AI voice generator" get used the same way, but they're not quite the same search. TTS software usually implies something more specific: an API you can build on, or a tool judged on language coverage and latency, not just how good one demo voice sounds.</p>
 
@@ -85,7 +85,7 @@ const post: BlogPost = {
 
 <p>Every tool here can turn a sentence into audio. The real gap between them shows up under three conditions. A script written in a second language. A live tool that can't tolerate any delay. And a monthly bill once you're past the free tier.</p>
 
-<img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&q=80" alt="A developer testing an API on a laptop screen" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1758873268745-dd2cf0d677b5?auto=format&fit=crop&w=1200&q=80" alt="A team collaborating around a laptop in an office" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h3>Language and accent coverage</h3>
 
@@ -114,7 +114,7 @@ const post: BlogPost = {
 
 <p>Murf AI treats text-to-speech as one step in a finished production, not the whole product. Its script-to-video sync feature times a generated voiceover to an existing video timeline on its own, which saves real editing time on commercial work.</p>
 
-<img src="https://images.unsplash.com/photo-1626544827763-d516dce335e2?auto=format&fit=crop&w=1200&q=80" alt="A voiceover script being edited alongside a video timeline" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1714079761488-e0c9b9ac4138?auto=format&fit=crop&w=1200&q=80" alt="A person wearing a headset at a laptop, representing real-time voice API use" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Its voice library spans 120+ voices across 20 languages. The free plan includes 10 minutes of voiceover monthly, and paid plans start at $19/month.</p>
 
@@ -207,7 +207,7 @@ const post: BlogPost = {
   </table>
 </div>
 
-<img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1200&q=80" alt="A pricing comparison chart on a screen" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80" alt="A white robot, representing AI voice technology pricing tiers" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Pricing: what text-to-speech software actually costs at scale</h2>
 
