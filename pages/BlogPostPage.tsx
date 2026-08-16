@@ -686,25 +686,14 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           </section>
         )}
 
-        {/* M6: Inline newsletter CTA */}
-        <div style={{
-          margin: '40px 0',
-          padding: '24px 28px',
-          background: `linear-gradient(135deg, var(--a1-card), var(--surf))`,
-          border: `1px solid var(--a1-brd)`,
-          borderRadius: 14,
-          textAlign: 'center' as const,
-        }}>
-          <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 6 }}>
-            Get weekly AI tool updates
-          </div>
-          <div style={{ fontSize: 13, color: C.mut, marginBottom: 14 }}>
-            New reviews, free tool alerts, and workflow tips — every Tuesday.
-          </div>
-          <Suspense fallback={<div style={{ minHeight: 60 }} />}>
-            <BeehiivForm />
-          </Suspense>
-        </div>
+        {/* M6: Inline newsletter CTA — ArticleCard renders its own self-contained
+            header, so no outer header/background wrapper here (that previously
+            duplicated the headline with a mismatched "every Tuesday" claim
+            against ArticleCard's own "every Friday" line, and force-centered
+            text that wasn't designed for center alignment). */}
+        <Suspense fallback={<div style={{ minHeight: 140, margin: '40px 0' }} />}>
+          <BeehiivForm variant="article" />
+        </Suspense>
 
         {/* FAQ Section — bounce-audit fix: this used to be immediately preceded by
             a "Readers Also Ask" accordion rendering the exact same post.faqs array,

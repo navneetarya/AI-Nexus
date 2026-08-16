@@ -626,7 +626,7 @@ function ArticleCard() {
             Get the 3 best new AI tools every Friday
           </div>
           <div style={{ fontSize: 12.5, color: 'var(--mut)', marginTop: 2 }}>
-            Independently researched by Navneet Arya · Independent AI Tools Researcher · No spam
+            By Navneet Arya · Independent AI tools research
           </div>
         </div>
       </div>
