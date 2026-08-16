@@ -232,8 +232,12 @@ import post86 from './best-ai-voice-generators-for-youtube-2026';
 // Day 36 (Aug 17) — Best AI Voice for Faceless YouTube Channels — sixth post in the AI Voice/TTS
 // cluster, workflow-style use-case page: niche -> script -> voice -> narration -> music -> export
 import post87 from './best-ai-voice-for-faceless-youtube-channels';
+// Day 37 (Aug 18) — Best AI Voice Cloning Tools 2026 — seventh post in the AI Voice/TTS cluster,
+// high-intent capability page: ElevenLabs vs Descript vs Resemble AI vs Play.ht, plus consent rules
+import post88 from './best-ai-voice-cloning-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post88, // Day 37 (Aug 18) — Best AI Voice Cloning Tools 2026 (ElevenLabs vs Descript vs Resemble AI vs Play.ht) — pinned first for freshness
   post87, // Day 36 (Aug 17) — Best AI Voice for Faceless YouTube Channels (full niche-to-export workflow) — pinned first for freshness
   post86, // Day 35 (Aug 16) — Best AI Voice Generators for YouTube 2026 (ElevenLabs vs Murf AI by channel format) — pinned first for freshness
   post85, // Day 34 (Aug 15) — Murf AI Alternatives 2026 (ElevenLabs, Synthesia, Speechify Studio, WellSaid Labs) — pinned first for freshness

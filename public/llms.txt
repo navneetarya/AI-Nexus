@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-08-16
+# Updated: 2026-08-18
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -56,6 +56,7 @@
 
 ## Blog Posts
 
+- [Best AI Voice Cloning Tools 2026: 4 Options, Tested on Quality and Consent](https://ainexustools.online/blog/best-ai-voice-cloning-tools-2026): ElevenLabs, Descript, Resemble AI, and Play.ht compared on clone quality, languages, and pricing, plus the consent rules that matter more than the tool — seventh post in the AI Voice/TTS cluster.
 - [Best AI Voice for Faceless YouTube Channels 2026: The Full Workflow](https://ainexustools.online/blog/best-ai-voice-for-faceless-youtube-channels): The complete niche-to-export workflow for faceless YouTube channels, with ElevenLabs vs Murf AI compared on voice cloning, cost, and channel identity — sixth post in the AI Voice/TTS cluster.
 - [Best AI Voice Generators for YouTube 2026: 2 Tools, 4 Real Use Cases](https://ainexustools.online/blog/best-ai-voice-generators-for-youtube-2026): ElevenLabs vs Murf AI tested across short-form, long-form, explainer, and faceless YouTube formats — fifth post in the AI Voice/TTS cluster, covers channel-format fit and real monthly cost at upload volume.
 - [Murf AI Alternatives 2026: 4 Tools Worth Considering (and When to Stay)](https://ainexustools.online/blog/murf-ai-alternatives-2026): ElevenLabs, Synthesia, Speechify Studio, and WellSaid Labs compared against Murf AI by actual use case — fourth post in the AI Voice/TTS cluster, covers voice cloning, on-screen avatars, and enterprise contract pricing Murf doesn't address.

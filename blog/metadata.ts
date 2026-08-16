@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-voice-cloning-tools-2026",
+    "title": "Best AI Voice Cloning Tools 2026: 4 Options, Tested on Quality and Consent",
+    "seoTitle": "Best AI Voice Cloning Tools 2026: 4 Ranked",
+    "metaDescription": "The best AI voice cloning tools in 2026, ranked on clone quality and pricing. ElevenLabs, Descript, Resemble AI & Play.ht compared, plus consent rules.",
+    "datePublished": "2026-08-18",
+    "dateModified": "2026-08-18",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "11 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-voice-cloning-tools-2026.webp",
+    "excerpt": "ElevenLabs remains the strongest AI voice cloning tool for quality and language coverage. Descript wins if cloning is just one part of a bigger editing job, and consent rules matter more than the tool you pick."
+  },
+  {
     "slug": "best-ai-voice-for-faceless-youtube-channels",
     "title": "Best AI Voice for Faceless YouTube Channels 2026: The Full Workflow",
     "seoTitle": "Best AI Voice for Faceless YouTube Channels 2026",

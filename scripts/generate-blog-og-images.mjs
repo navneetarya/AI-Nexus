@@ -183,6 +183,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  { slug: 'best-ai-voice-cloning-tools-2026',           title: 'Best AI Voice Cloning Tools 2026' },
   { slug: 'best-ai-voice-for-faceless-youtube-channels', title: 'Best AI Voice for Faceless YouTube' },
   { slug: 'best-ai-voice-generators-for-youtube-2026', title: 'Best AI Voice Generators for YouTube' },
   { slug: 'murf-ai-alternatives-2026',                 title: 'Murf AI Alternatives 2026' },
