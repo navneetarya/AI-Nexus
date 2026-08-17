@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-voice-generators-for-podcasts-2026",
+    "title": "Best AI Voice Generators for Podcasts 2026: Intros, Fixes & Dubbing",
+    "seoTitle": "Best AI Voice Generators for Podcasts 2026",
+    "metaDescription": "The best AI voice generators for podcasts in 2026: fixing flubbed lines, generating intros, and dubbing episodes into new languages, compared.",
+    "datePublished": "2026-08-19",
+    "dateModified": "2026-08-19",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "9 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-voice-generators-for-podcasts-2026.webp",
+    "excerpt": "Podcasters use AI voice generators for a narrower job than most guides suggest: fixing a flubbed line, generating a consistent intro, or dubbing an episode, not replacing the whole show."
+  },
+  {
     "slug": "best-ai-voice-cloning-tools-2026",
     "title": "Best AI Voice Cloning Tools 2026: 4 Options, Tested on Quality and Consent",
     "seoTitle": "Best AI Voice Cloning Tools 2026: 4 Ranked",
