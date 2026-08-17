@@ -33,7 +33,7 @@ const post: BlogPost = {
   myTake: "I'm Navneet Arya, and this guide focuses on the actual jobs podcasters use voice generation for, not a repeat of our broader podcast tools guide. Fixing one bad line beats a full re-record almost every time.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1593697909683-bccb1b9e68a4?auto=format&fit=crop&w=1200&q=80" alt="A podcaster sitting in front of a microphone in a recording studio" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1593697909683-bccb1b9e68a4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A podcaster sitting in front of a microphone in a recording studio" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>How much editing time does one bad take really cost? Most podcasters don't need an AI voice tool to replace their voice. They need one for three smaller jobs. Fixing a mistake without a full re-record. Making a steady intro or ad read. And now and then, dubbing an episode into another language.</p>
 
@@ -76,7 +76,7 @@ const post: BlogPost = {
 
 <p>This is the top reason podcasters reach for a voice tool. Did you stumble over a guest's name mid-sentence? Or fluff a sponsor read three minutes into a segment? You no longer need to re-record the whole segment.</p>
 
-<img src="https://images.unsplash.com/photo-1574717025179-0b6d03d4d86f?auto=format&fit=crop&w=1200&q=80" alt="An audio editing timeline with waveforms shown on a computer monitor" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1574717025179-0b6d03d4d86f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="An audio editing timeline with waveforms shown on a computer monitor" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Podcastle's Revoice redoes a single line in your own AI-modeled voice, right inside the same recording session. Descript's Overdub does the same thing through its transcript editor: type the corrected line, and it's spoken in your trained voice, dropped right into the existing timeline.</p>
 
@@ -106,7 +106,7 @@ const post: BlogPost = {
 
 <p>Translating a podcast into a second language used to mean hiring a new voice actor for each one. Cloning changes that math: the same cloned voice can read a translated script in any of ElevenLabs' 29 languages.</p>
 
-<img src="https://images.unsplash.com/photo-1594450281353-5a7a067358cc?auto=format&fit=crop&w=1200&q=80" alt="A desk globe representing multi-language podcast dubbing" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1594450281353-5a7a067358cc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A desk globe representing multi-language podcast dubbing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:8px;padding:16px 20px;margin:20px 0;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">⚠ Translation Quality Note</strong>
@@ -122,10 +122,6 @@ const post: BlogPost = {
   <li>A steady intro or ad read: ElevenLabs, from $22/month once cloning is unlocked.</li>
   <li>Multi-language dubbing: ElevenLabs, using the same cloned voice across 29 languages.</li>
 </ol>
-
-<h2>Pros and cons</h2>
-
-<p>No single tool covers every podcast voice-generation job well. Here's the honest trade-off.</p>
 
 <h2>Final verdict</h2>
 

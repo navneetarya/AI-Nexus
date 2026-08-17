@@ -26,7 +26,7 @@ const post: BlogPost = {
   myTake: "I'm Navneet Arya, and I checked live pricing pages and third-party benchmarks for every tool here as of August 2026, since two of these companies changed their pricing models entirely this year. If your job is a real-time voice agent, Cartesia genuinely beats ElevenLabs on speed, and that is worth knowing before you commit to one platform.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1620322068252-e6f8ee316ecb?auto=format&fit=crop&w=1200&q=80" alt="Corded headphones on a desk, representing AI voice technology" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1620322068252-e6f8ee316ecb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Corded headphones on a desk, representing AI voice technology" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>ElevenLabs earns its name. It's the most realistic AI voice tool out there, and for most people asking about alternatives, the honest answer is that ElevenLabs is still the right pick. But "most people" isn't everyone.</p>
 
@@ -87,7 +87,7 @@ const post: BlogPost = {
 
 <p>Three reasons come up again and again. Cost, since ElevenLabs' per-character pricing scales fast at high volume. Latency, since ElevenLabs was built for content, not real-time conversation. And specific features ElevenLabs simply doesn't offer, like deepfake watermarking or a finished video-sync workflow.</p>
 
-<img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80" alt="A white robot, representing AI voice alternatives to ElevenLabs" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A white robot, representing AI voice alternatives to ElevenLabs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Murf AI: best for finished video and e-learning output</h2>
 
@@ -108,7 +108,7 @@ const post: BlogPost = {
 
 <p>Cartesia was built for a job ElevenLabs was never built for: live, back-and-forth conversation. Its Sonic model uses a different design than a standard model, which gets time-to-first-audio down to roughly 40 to 90 milliseconds.</p>
 
-<img src="https://images.unsplash.com/photo-1574607383077-47ddc2dc51c4?auto=format&fit=crop&w=1200&q=80" alt="A calculator representing real-time voice agent pricing" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1574607383077-47ddc2dc51c4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A calculator representing real-time voice agent pricing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>That speed is why it shows up in phone agents, customer service bots, and other latency-sensitive products. It offers a free tier for testing.</p>
 
@@ -225,10 +225,6 @@ const post: BlogPost = {
   <li>Tight budget, need many languages: Play.ht, for library size and price.</li>
   <li>Enterprise team, English-only content: WellSaid Labs, for consistency at scale.</li>
 </ol>
-
-<h2>Pros and cons</h2>
-
-<p>No alternative beats ElevenLabs on every axis. Here's the honest trade-off across the group.</p>
 
 <h2>Final verdict</h2>
 

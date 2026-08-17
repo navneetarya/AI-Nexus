@@ -25,7 +25,7 @@ const post: BlogPost = {
   myTake: 'I\'m Navneet Arya, and after checking every pricing page and Trustpilot thread directly for this guide, ElevenLabs is the one I\'d start with — the free tier is real enough to test on an actual project before you pay anything.',
 
   content: `
-<img src="https://images.unsplash.com/photo-1567596296091-0a257a028e72?auto=format&fit=crop&w=1200&q=80" alt="A condenser microphone set up for podcast or voiceover recording" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1567596296091-0a257a028e72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone set up for podcast or voiceover recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Every "best AI voice generator" list published in the last year recommends the same handful of names. Few of them tell you which one actually fits your workflow, not just which one sounds the most human.</p>
 
@@ -87,7 +87,7 @@ const post: BlogPost = {
 
 <p>Five years ago, AI voices sounded robotic and flat. That gap has closed fast. On a good voice from ElevenLabs or Murf AI, most listeners can't tell it's synthetic without being told first.</p>
 
-<img src="https://images.unsplash.com/photo-1620322068252-e6f8ee316ecb?auto=format&fit=crop&w=1200&q=80" alt="Corded headphones on a desk, representing AI voice generator audio output" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1620322068252-e6f8ee316ecb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Corded headphones on a desk, representing AI voice generator audio output" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Best AI voice generators 2026: what actually separates them</h2>
 
@@ -122,7 +122,7 @@ const post: BlogPost = {
 
 <p>Murf AI isn't just a voice engine. It's a full voiceover studio built around one job: getting a finished, timed voiceover onto a video without hiring a voice actor.</p>
 
-<img src="https://images.unsplash.com/photo-1731909888065-0c5a117b0af7?auto=format&fit=crop&w=1200&q=80" alt="A creative studio desk with multiple screens for video and audio editing" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1731909888065-0c5a117b0af7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creative studio desk with multiple screens for video and audio editing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Its script-to-video sync feature splits a voiceover into segments that match your video timeline automatically, which removes hours of manual alignment work. The voice library covers 120+ voices across 20 languages, with genuinely strong accent variety rather than just American English with small tweaks.</p>
 
@@ -168,7 +168,7 @@ const post: BlogPost = {
 
 <p>WellSaid Labs focuses on enterprise narration with a smaller, curated voice set built for consistency across large teams. Neither has the free-tier accessibility of ElevenLabs or Murf AI, so most individual creators are better served starting with the four tools above.</p>
 
-<img src="https://images.unsplash.com/photo-1563371351-e53ebb744a1f?auto=format&fit=crop&w=1200&q=80" alt="A person holding a tablet, comparing AI voice generator apps" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1563371351-e53ebb744a1f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person holding a tablet, comparing AI voice generator apps" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Best AI voice generators 2026: full comparison</h2>
 
@@ -231,7 +231,7 @@ const post: BlogPost = {
 
 <p>For regular use, paid plans start becoming worth it fast. Once you're producing weekly content, Murf's $19/month plan or ElevenLabs' $5/month Starter tier both pay for themselves in saved editing time. If you're in India, all four tools accept Indian cards and UPI through their standard checkout, and pricing is billed in USD with no separate India tier.</p>
 
-<img src="https://images.unsplash.com/photo-1574607383077-47ddc2dc51c4?auto=format&fit=crop&w=1200&q=80" alt="A calculator representing AI voice generator subscription costs" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1574607383077-47ddc2dc51c4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A calculator representing AI voice generator subscription costs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Which AI voice generator should you use?</h2>
 
@@ -252,10 +252,6 @@ const post: BlogPost = {
 <h3>Best for businesses and e-learning</h3>
 
 <p>Murf AI's collaboration features and consistent voice library suit training content and corporate video at scale. ElevenLabs' API is the stronger pick if you're building a voice feature into your own product rather than producing one-off videos.</p>
-
-<h2>Pros and cons</h2>
-
-<p>No single tool wins on every dimension. Here's the honest trade-off across the category as a whole.</p>
 
 <h2>Final verdict: best AI voice generator in 2026</h2>
 

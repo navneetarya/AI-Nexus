@@ -28,7 +28,7 @@ const post: BlogPost = {
   myTake: "I'm Navneet Arya, and I checked each tool's cloning requirements and consent policies directly for this guide. The tool comparison matters less here than most guides suggest, since the real risk in this category is consent, not quality.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1615661434109-739052a73003?auto=format&fit=crop&w=1200&q=80" alt="A studio microphone on a stand, used for recording a voice sample" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1615661434109-739052a73003?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A studio microphone on a stand, used for recording a voice sample" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Voice cloning went from a research demo to a one-minute setup in about two years. Anyone can now train a usable clone of their own voice on a laptop, no studio or engineer required.</p>
 
@@ -114,7 +114,7 @@ const post: BlogPost = {
 
 <p>Resemble AI dropped its subscription plans in 2026 in favor of pure pay-per-use pricing, at roughly $0.0005 per second of generated audio. It also bundles deepfake detection, a feature none of the other three tools offer.</p>
 
-<img src="https://images.unsplash.com/photo-1512660029633-769b8fba8557?auto=format&fit=crop&w=1200&q=80" alt="A desk globe representing multi-language voice cloning coverage" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1512660029633-769b8fba8557?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A desk globe representing multi-language voice cloning coverage" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Play.ht needs the least source audio of any tool here, around 30 seconds. Its cloning sits on paid tiers alongside one of the largest voice libraries in this category. Neither tool quite matches ElevenLabs on clone realism, but both cost less at low usage.</p>
 
@@ -122,7 +122,7 @@ const post: BlogPost = {
 
 <p>Every fair use of voice cloning starts with one rule: only clone your own voice, or a voice you have explicit, documented permission to use. Cloning someone else's voice without consent breaks every major tool's rules.</p>
 
-<img src="https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79?auto=format&fit=crop&w=1200&q=80" alt="A person signing a document, representing consent for voice cloning" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person signing a document, representing consent for voice cloning" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>It can also bring real legal trouble depending on where you live, separate from any platform ban. If you're cloning a voice actor, colleague, or client's voice for a project, get written consent first, before you upload a single sample.</p>
 
@@ -139,10 +139,6 @@ const post: BlogPost = {
   <li>Lowest cost at low volume: Resemble AI, for pay-per-use pricing.</li>
   <li>Smallest sample required: Play.ht, for cloning from just 30 seconds of audio.</li>
 </ol>
-
-<h2>Pros and cons</h2>
-
-<p>No tool wins on every axis here. Here's the honest trade-off across the category.</p>
 
 <h2>Final verdict</h2>
 

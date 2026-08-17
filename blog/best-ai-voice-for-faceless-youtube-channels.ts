@@ -29,7 +29,7 @@ const post: BlogPost = {
   myTake: "I'm Navneet Arya, and I mapped this guide against the real niche-to-export workflow faceless creators actually use, not just a tool comparison. The voice decision matters more here than on any other YouTube format, since it is the only thing carrying the channel's identity.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=1200&q=80" alt="A person at a computer wearing an anonymous mask, representing a faceless YouTube creator" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person at a computer wearing an anonymous mask, representing a faceless YouTube creator" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Why do some faceless channels build a loyal audience while dozens of near-identical ones disappear after a few uploads? A faceless channel has one job the voice has to do that a talking-head channel doesn't: carry the whole feel of the brand.</p>
 
@@ -78,7 +78,7 @@ const post: BlogPost = {
   <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 
-<img src="https://images.unsplash.com/photo-1769794371055-54436b54577e?auto=format&fit=crop&w=1200&q=80" alt="A late-night research desk with an open notebook and reference books, representing niche research" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1769794371055-54436b54577e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A late-night research desk with an open notebook and reference books, representing niche research" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>This step also sets your voice tone before you touch a voice tool. A true-crime channel needs a different pace and register than a tech-explainer channel, and picking that tone early saves regenerating the whole script later.</p>
 
@@ -86,7 +86,7 @@ const post: BlogPost = {
 
 <p>Write for the ear, not the eye. Short sentences read aloud more smoothly than the dense paragraphs a blog post might use. Both ElevenLabs and Murf AI handle short, punchy sentences with better pacing than long, clause-heavy ones.</p>
 
-<img src="https://images.unsplash.com/photo-1676287571982-611b20c9752f?auto=format&fit=crop&w=1200&q=80" alt="A desk with a content strategy planner and notebook, representing script planning" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1676287571982-611b20c9752f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A desk with a content strategy planner and notebook, representing script planning" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Plan pauses on purpose. A comma or period placed where you want a natural breath makes a real difference in how human the final narration sounds. That matters more than any setting inside the voice tool itself.</p>
 
@@ -120,7 +120,7 @@ const post: BlogPost = {
 
 <p>Background music needs to sit under the voice, not compete with it. A narration track peaking around -3dB with music ducked underneath at -18 to -20dB is a reasonable starting point for most faceless content.</p>
 
-<img src="https://images.unsplash.com/photo-1502665607786-eaa3cd100809?auto=format&fit=crop&w=1200&q=80" alt="A close-up of hands adjusting an audio mixing board" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1502665607786-eaa3cd100809?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A close-up of hands adjusting an audio mixing board" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Murf's built-in timeline makes this mixing step faster since voice and music already sit on the same editor. With ElevenLabs, plan on exporting the raw voice track into a separate video or audio editor for the final mix.</p>
 
@@ -145,10 +145,6 @@ const post: BlogPost = {
   <li>Explainer-style content with heavier video editing: Murf AI, for the built-in timeline sync.</li>
   <li>Multi-language faceless channel: ElevenLabs, for the wider 29-language coverage.</li>
 </ol>
-
-<h2>Pros and cons</h2>
-
-<p>Neither tool is automatically right for every faceless format. Here's the honest trade-off.</p>
 
 <h2>Final verdict</h2>
 

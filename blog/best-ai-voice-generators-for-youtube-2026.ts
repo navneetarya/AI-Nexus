@@ -29,7 +29,7 @@ const post: BlogPost = {
   myTake: "I'm Navneet Arya, and I tested both tools against the same four YouTube formats for this guide. The honest answer is that your channel format decides the winner here more than raw voice quality does.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1760768550727-00f5e02feb72?auto=format&fit=crop&w=1200&q=80" alt="A camera on a tripod set up in a minimalist studio for filming" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1760768550727-00f5e02feb72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A camera on a tripod set up in a minimalist studio for filming" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>YouTube creators ask about AI voice generators for one of two reasons. Either they don't want to be on camera, or they need narration faster than recording it themselves allows.</p>
 
@@ -105,7 +105,7 @@ const post: BlogPost = {
 
 <p>Murf AI's advantage shows up on longer videos. Its script-to-video sync times the voiceover to your existing footage on its own, which turns a manual alignment job into a single click.</p>
 
-<img src="https://images.unsplash.com/photo-1533749871411-5e21e14bcc7d?auto=format&fit=crop&w=1200&q=80" alt="A man writing an explainer script and outline on a whiteboard" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1533749871411-5e21e14bcc7d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A man writing an explainer script and outline on a whiteboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>The voice library spans 120+ voices across 20 languages, useful if your channel covers several regions. The free plan gives 10 minutes of voiceover a month, and paid plans start at $19/month. For a 15-minute explainer video published weekly, that entry tier covers the workload with room to spare.</p>
 
@@ -119,7 +119,7 @@ const post: BlogPost = {
 
 <p>Short-form videos live or die on the first two seconds, so voice pacing and energy matter more than perfect pronunciation of every word. ElevenLabs handles that snappy delivery well, and its free tier is generous enough to test a whole week of Shorts scripts before paying anything.</p>
 
-<img src="https://images.unsplash.com/photo-1505695044222-61d7ff153f23?auto=format&fit=crop&w=1200&q=80" alt="A person holding a smartphone, filming a short vertical video" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1505695044222-61d7ff153f23?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person holding a smartphone, filming a short vertical video" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Long-form content works differently. Viewers tolerate a slightly more even, less punchy delivery over 10 to 20 minutes. Murf's video-sync feature matters far more here, since a manually aligned 15-minute voiceover eats real editing time every single week.</p>
 
@@ -127,7 +127,7 @@ const post: BlogPost = {
 
 <p>Faceless channels depend entirely on the voice for personality, since there's no face on screen to carry viewer trust. That's exactly why ElevenLabs' cloning feature earns its price here: a distinct, consistent voice becomes the channel's whole identity.</p>
 
-<img src="https://images.unsplash.com/photo-1632318901408-b9322722abac?auto=format&fit=crop&w=1200&q=80" alt="A streaming desk setup with a microphone and two monitors" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1632318901408-b9322722abac?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A streaming desk setup with a microphone and two monitors" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Some faceless creators use a generic stock voice instead of cloning their own, which works but blends in with dozens of other channels using the same default voice. Cloning costs more but is the difference between a channel viewers can recognize and one they can't.</p>
 
@@ -135,7 +135,7 @@ const post: BlogPost = {
 
 <p>Voice choice affects retention more than most creators realize, and it's worth checking against your own analytics rather than guessing. If average view duration drops sharply in the first 15 seconds, the voice pacing is often the first thing worth testing before you touch the script.</p>
 
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Analytics graphs shown on a laptop screen, representing YouTube channel performance" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Analytics graphs shown on a laptop screen, representing YouTube channel performance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Both tools let you regenerate a line with a different pacing or tone in seconds. That makes A/B testing the opening few seconds of a script cost almost nothing beyond a little extra time.</p>
 
@@ -143,7 +143,7 @@ const post: BlogPost = {
 
 <p>Neither ElevenLabs nor Murf replaces a proper audio pass before publishing. Background music levels, breath sounds, and pacing between sentences still need a quick mixing check in your editor.</p>
 
-<img src="https://images.unsplash.com/photo-1754435636014-35ffa02f297a?auto=format&fit=crop&w=1200&q=80" alt="Audio recording and mixing software shown on a computer screen" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1754435636014-35ffa02f297a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio recording and mixing software shown on a computer screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Murf's built-in timeline makes this step faster since the voiceover already sits where it needs to on the video. With ElevenLabs, plan on dropping the exported audio into your existing editor and adjusting levels there.</p>
 
@@ -202,10 +202,6 @@ const post: BlogPost = {
   <li>Multi-language audience: ElevenLabs, for the wider 29-language coverage.</li>
   <li>Corporate or e-learning-style channel: Murf AI, for its professional voice library.</li>
 </ol>
-
-<h2>Pros and cons</h2>
-
-<p>Neither tool wins on every format. Here's the honest trade-off for YouTube specifically.</p>
 
 <h2>Final verdict</h2>
 
