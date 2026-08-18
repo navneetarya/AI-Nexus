@@ -116,7 +116,7 @@ const post: BlogPost = {
 <p>If you want a deeper look at Frase specifically, see our full <a href="/tools/frase">Frase review</a>.</p>
 
 <h3>3. Clearscope: best for larger teams thanks to unlimited seats</h3>
-<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A marketing team collaborating around a laptop reviewing content grades" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A larger marketing team collaborating around a laptop reviewing content grades" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Clearscope takes the simplest approach of the four. Paste in a keyword, and it returns an A++ to F content grade with a weighted list of terms to include, checked against the top-ranking pages. There's no AI-writing agent bolted on and no site-wide strategy modeling. It's just a clean scoring workflow with a well-regarded Google Docs sidebar.</p>
 <p>Pricing starts at Essentials for $129/month, covering 20 AI Drafts, 20 Topic Explorations, 20 AI Tracked Topics, and 50 Content Inventory pages. Business runs $399/month with higher caps across the board, and Enterprise pricing is custom. There's no published free trial on Clearscope's current pricing page, though monthly plans can be cancelled anytime with no contract.</p>
 <p>The detail that changes the value math for a growing team: every Clearscope plan, including the $129/month entry tier, includes unlimited users. Surfer caps Discovery at 1 seat and doesn't reach 5 seats until its $182/month Pro tier. For a 4-person content team, Clearscope's flat per-tier price can work out cheaper than Surfer's per-seat scaling.</p>
@@ -154,7 +154,7 @@ const post: BlogPost = {
 </ol>
 
 <h2>Pricing breakdown 2026</h2>
-<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A spreadsheet comparing monthly SaaS subscription costs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A pricing spreadsheet comparing monthly SaaS subscription costs for 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Here's what each tool actually costs once you move past the free tier or trial, based on official vendor pricing checked in August 2026. Monthly billing typically runs 17–25% higher than annual across all four.</p>
 <ul style="margin:8px 0 24px;padding-left:22px;line-height:1.9;">
   <li><strong>Surfer SEO:</strong> No free plan → $49/month Discovery → $99/month Standard → $182/month Pro → $299/month Peace of Mind → $999/month Enterprise</li>

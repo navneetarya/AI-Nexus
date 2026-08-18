@@ -210,7 +210,7 @@ const post: BlogPost = {
 <p>Teams adopting MCP at scale increasingly treat server connections the way they'd treat a new employee's permissions. Least-privilege by default, with logging on what was queried and when. That beats connecting every available server simply because it exists.</p>
 <p>For builders weighing whether to invest engineering time in MCP server support, the open-specification model lowers the cost of that bet by a lot. A server built once is immediately usable by every MCP-compatible AI client, including Claude, ChatGPT, Cursor, Windsurf, and whatever new AI host launches next.</p>
 <p>There's no need to renegotiate the integration for each one.</p>
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Software code representing an AI integration connecting to external tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Software code representing MCP adoption and AI integrations connecting to external tools in the SaaS market" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="margin:14px 0 24px;">
   <a href="/blog/ai-agents-vs-ai-automation-difference-2026/" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Read: AI Agents vs AI Automation →</a>
 </div>

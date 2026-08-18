@@ -206,7 +206,7 @@ const post: BlogPost = {
 </div>
 
 <h2>How ATS screening actually works, briefly</h2>
-<img src="https://images.unsplash.com/photo-1586685983433-9c6711e498f6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A job application form being filled out on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1586685983433-9c6711e498f6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A job application being filled out on a laptop before it goes through ATS screening" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>An applicant tracking system doesn't read a resume the way a human does. It parses the document into structured fields: name, dates, job titles, skills. It then ranks or filters candidates based on keyword and requirement matches against the job posting, before a recruiter ever opens the file.</p>
 <p>Roughly 99% of Fortune 500 companies use some form of ATS. Industry estimates commonly cited across recruiting research put the share of resumes filtered out before human review above 70% at large companies.</p>
 <p>That's the actual problem all four tools in this guide are solving. Not "does this resume sound good," but "will the parsing software correctly extract and rank the content in the first place."</p>

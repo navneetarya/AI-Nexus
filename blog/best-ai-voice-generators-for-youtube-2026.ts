@@ -127,7 +127,7 @@ const post: BlogPost = {
 
 <p>Faceless channels depend entirely on the voice for personality, since there's no face on screen to carry viewer trust. That's exactly why ElevenLabs' cloning feature earns its price here: a distinct, consistent voice becomes the channel's whole identity.</p>
 
-<img src="https://images.unsplash.com/photo-1632318901408-b9322722abac?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A streaming desk setup with a microphone and two monitors" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1632318901408-b9322722abac?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A streaming desk setup with a microphone and two monitors, typical of faceless YouTube channel production" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Some faceless creators use a generic stock voice instead of cloning their own, which works but blends in with dozens of other channels using the same default voice. Cloning costs more but is the difference between a channel viewers can recognize and one they can't.</p>
 
@@ -135,7 +135,7 @@ const post: BlogPost = {
 
 <p>Voice choice affects retention more than most creators realize, and it's worth checking against your own analytics rather than guessing. If average view duration drops sharply in the first 15 seconds, the voice pacing is often the first thing worth testing before you touch the script.</p>
 
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Analytics graphs shown on a laptop screen, representing YouTube channel performance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Analytics graphs shown on a laptop screen, measuring what actually works for YouTube channel performance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Both tools let you regenerate a line with a different pacing or tone in seconds. That makes A/B testing the opening few seconds of a script cost almost nothing beyond a little extra time.</p>
 

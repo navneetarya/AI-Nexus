@@ -82,7 +82,7 @@ const post: BlogPost = {
 
 <p>Three reasons come up most. Voice cloning, since Murf gates it behind an Enterprise plan. Budget, since Murf's $19/month entry price is higher than some competitors. And a need that goes beyond voice, like an on-screen AI presenter rather than just narration.</p>
 
-<img src="https://images.unsplash.com/photo-1758691737124-05c5bffe46f0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A diverse team collaborating around a laptop in an office" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1758691737124-05c5bffe46f0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A diverse team collaborating around a laptop, discussing why they're looking for a Murf AI alternative" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>ElevenLabs: best for voice cloning and realism</h2>
 

@@ -76,7 +76,7 @@ const post: BlogPost = {
 
 <p>This is the top reason podcasters reach for a voice tool. Did you stumble over a guest's name mid-sentence? Or fluff a sponsor read three minutes into a segment? You no longer need to re-record the whole segment.</p>
 
-<img src="https://images.unsplash.com/photo-1574717025179-0b6d03d4d86f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="An audio editing timeline with waveforms shown on a computer monitor" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1574717025179-0b6d03d4d86f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="An audio editing timeline with waveforms, used to fix a flubbed line without a full re-record" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Podcastle's Revoice redoes a single line in your own AI-modeled voice, right inside the same recording session. Descript's Overdub does the same thing through its transcript editor: type the corrected line, and it's spoken in your trained voice, dropped right into the existing timeline.</p>
 

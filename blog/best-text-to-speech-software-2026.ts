@@ -85,7 +85,7 @@ const post: BlogPost = {
 
 <p>Every tool here can turn a sentence into audio. The real gap between them shows up under three conditions. A script written in a second language. A live tool that can't tolerate any delay. And a monthly bill once you're past the free tier.</p>
 
-<img src="https://images.unsplash.com/photo-1758873268745-dd2cf0d677b5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team collaborating around a laptop in an office" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1758873268745-dd2cf0d677b5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team collaborating around a laptop in an office, evaluating what makes text-to-speech software good" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h3>Language and accent coverage</h3>
 
@@ -207,7 +207,7 @@ const post: BlogPost = {
   </table>
 </div>
 
-<img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A white robot, representing AI voice technology pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A white robot, representing the best text-to-speech software pricing tiers in 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Pricing: what text-to-speech software actually costs at scale</h2>
 

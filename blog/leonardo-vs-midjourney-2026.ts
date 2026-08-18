@@ -72,7 +72,7 @@ const post: BlogPost = {
 
   content: `
 <h2>Leonardo.ai vs Midjourney: Which Is Worth It in 2026?</h2>
-<img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="AI-generated digital artwork on a screen, comparing image generator styles" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="AI-generated digital artwork on a screen, comparing Leonardo.ai and Midjourney image generator styles" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 <p>Leonardo.ai is worth it for most creators in 2026. It gives 150 free credits a day with no credit card, plus creative control and consistent style across a project. Midjourney is worth its $10/month minimum only if you need the highest possible aesthetic quality for one-off standout images.</p>
 <p>Leonardo.ai and Midjourney are both AI image generators, but they're built for different kinds of creative work. Treating them as direct substitutes leads to choosing the wrong tool and being disappointed by the result.</p>
 <p>Midjourney's strength is <strong>aesthetic quality</strong>. Give it a well-structured prompt and the output is frequently stunning, painterly, cinematic, or hyperrealistic in ways other tools still struggle to match. But it's a black box. You describe what you want, it generates something, and iteration is prompt-based trial and error. And it costs $10/month minimum with no free tier.</p>
@@ -183,7 +183,7 @@ const post: BlogPost = {
 </ul>
 
 <h2>Practical Advice</h2>
-<img src="https://images.unsplash.com/photo-1635776062360-af423602aff3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creator comparing AI-generated image outputs side by side" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1635776062360-af423602aff3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creator comparing AI-generated image outputs side by side, following practical advice on choosing a tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ol style="margin:12px 0 12px 24px;line-height:2.0;">
   <li><strong>Start with Leonardo.ai's free plan.</strong> Generate 50–100 images across a week using different models, since switching models changes the output more than any prompt tweak.</li>
   <li><strong>Judge the output against your actual bottleneck.</strong> If it doesn't reach the quality level you need, and aesthetic quality is really the limitation, move to step 3.</li>

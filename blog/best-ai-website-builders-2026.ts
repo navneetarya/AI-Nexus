@@ -112,7 +112,7 @@ const post: BlogPost = {
 
 <h3>2. Framer: best for design-led sites</h3>
 <p>Framer produces the most visually polished output of the five tools here, and its G2 score (4.5/5 from 139+ reviews) backs that up. Designers and agencies consistently praise its animation tools and Figma integration.</p>
-<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A designer reviewing a website layout on a large monitor" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A designer reviewing a design-led website layout on a large monitor" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Here's the split worth flagging: Framer's Trustpilot rating sits at just 1.6/5 from over 100 reviews, with 73% one-star. That gap between G2 and Trustpilot likely reflects two different audiences. G2 skews toward the designers Framer is built for, while Trustpilot complaints cluster around billing and support for less technical buyers.</p>
 <p>Pricing runs Free, then $10/month for Basic (annual, custom domain included since a January 2026 change), $30/month for Pro, and $100/month for Scale, billed annually. Editor seats beyond the first are billed separately, which can add $15-20 per extra collaborator.</p>
 <div style="text-align:center;margin:20px 0">
@@ -193,7 +193,7 @@ const post: BlogPost = {
 </ul>
 
 <h2>Who should use an AI website builder</h2>
-<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A freelancer working on a laptop in a home office" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A freelancer working on a laptop in a home office, building a site with an AI website builder" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h3>Best for</h3>
 <p>Small business owners, freelancers, and solo founders who need a professional site live in days, not weeks, and don't have a dedicated web developer on staff. These five tools collectively cover almost every common use case in that group.</p>
 <p>If you're building out a wider toolkit alongside your website, see our guides on <a href="/blog/best-ai-tools-for-startups-2026/">Best AI Tools for Startups</a> and <a href="/blog/best-ai-tools-for-freelancers-2026/">Best AI Tools for Freelancers</a>.</p>
