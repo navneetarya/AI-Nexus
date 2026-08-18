@@ -27,7 +27,7 @@ const post: BlogPost = {
   myTake: "I'm Navneet Arya, and I checked live pricing for every tool here as of August 2026. Murf is genuinely good at what it does, so most of these switches only make sense for one specific reason, not because Murf is bad.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1731909888065-0c5a117b0af7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creative studio desk with multiple screens, representing AI voice production" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1779896412277-c4fd15c7a89c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creative professional editing video on multiple computer monitors, representing AI voice production" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Murf AI does one job very well: turning a script into a finished, timed voiceover for video or e-learning, without hiring a voice actor. Most people who search for alternatives aren't unhappy with Murf. They've just hit one specific limit it wasn't built to solve.</p>
 
@@ -82,7 +82,7 @@ const post: BlogPost = {
 
 <p>Three reasons come up most. Voice cloning, since Murf gates it behind an Enterprise plan. Budget, since Murf's $19/month entry price is higher than some competitors. And a need that goes beyond voice, like an on-screen AI presenter rather than just narration.</p>
 
-<img src="https://images.unsplash.com/photo-1758873268745-dd2cf0d677b5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team collaborating around a laptop in an office" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1758691737124-05c5bffe46f0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A diverse team collaborating around a laptop in an office" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>ElevenLabs: best for voice cloning and realism</h2>
 
@@ -103,7 +103,7 @@ const post: BlogPost = {
 
 <p>Synthesia solves a different problem than Murf. Instead of just generating a voiceover, it puts a full AI avatar on screen speaking your script. That's useful for training videos where a talking presenter works better than narration over slides.</p>
 
-<img src="https://images.unsplash.com/photo-1714079761488-e0c9b9ac4138?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person wearing a headset at a laptop, representing an AI avatar workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1752650733337-cb0189176fb9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A woman waving during a video call on her laptop, representing an AI avatar workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:8px;padding:16px 20px;margin:20px 0;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">⚠ Pricing Note</strong>
