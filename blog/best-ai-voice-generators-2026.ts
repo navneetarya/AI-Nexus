@@ -87,7 +87,7 @@ const post: BlogPost = {
 
 <p>Five years ago, AI voices sounded robotic and flat. That gap has closed fast. On a good voice from ElevenLabs or Murf AI, most listeners can't tell it's synthetic without being told first.</p>
 
-<img src="https://images.unsplash.com/photo-1620322068252-e6f8ee316ecb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Corded headphones on a desk, representing AI voice generator audio output" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Corded headphones on a desk, representing AI voice generator audio output" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Best AI voice generators 2026: what actually separates them</h2>
 
