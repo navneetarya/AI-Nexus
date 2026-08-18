@@ -114,7 +114,7 @@ const post: BlogPost = {
 
 <p>Murf AI treats text-to-speech as one step in a finished production, not the whole product. Its script-to-video sync feature times a generated voiceover to an existing video timeline on its own, which saves real editing time on commercial work.</p>
 
-<img src="https://images.unsplash.com/photo-1714079761488-e0c9b9ac4138?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person wearing a headset at a laptop, representing real-time voice API use" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1714079761488-e0c9b9ac4138?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A voiceover artist reviewing a commercial script at a laptop, recording with Murf AI" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Its voice library spans 120+ voices across 20 languages. The free plan includes 10 minutes of voiceover monthly, and paid plans start at $19/month.</p>
 

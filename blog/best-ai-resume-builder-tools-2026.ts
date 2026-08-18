@@ -86,7 +86,7 @@ const post: BlogPost = {
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 
-<img src="https://images.unsplash.com/photo-1698047681432-006d2449c631?auto=format&fit=crop&w=1200&q=80" alt="A resume being reviewed at a desk during a job search" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1698047681432-006d2449c631?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A resume being reviewed at a desk during a job search" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <blockquote style="border-left:3px solid #0D9488;padding-left:16px;margin:24px 0;font-style:italic;color:#444;">The honest pattern across this category: nearly every tool markets itself as "the best AI resume builder," but they are not really competing on the same thing. Teal and Rezi compete on value and ATS substance. Kickresume competes on visual polish, and Jobscan competes on diagnostic depth. Pick based on which of those three problems you actually have, not the loudest homepage claim.<br/><span style="font-style:normal;font-size:13px;color:#888;">— Navneet Arya, AI Nexus</span></blockquote>
 
@@ -206,7 +206,7 @@ const post: BlogPost = {
 </div>
 
 <h2>How ATS screening actually works, briefly</h2>
-<img src="https://images.unsplash.com/photo-1586685983433-9c6711e498f6?auto=format&fit=crop&w=1200&q=80" alt="A job application form being filled out on a laptop" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1586685983433-9c6711e498f6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A job application form being filled out on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>An applicant tracking system doesn't read a resume the way a human does. It parses the document into structured fields: name, dates, job titles, skills. It then ranks or filters candidates based on keyword and requirement matches against the job posting, before a recruiter ever opens the file.</p>
 <p>Roughly 99% of Fortune 500 companies use some form of ATS. Industry estimates commonly cited across recruiting research put the share of resumes filtered out before human review above 70% at large companies.</p>
 <p>That's the actual problem all four tools in this guide are solving. Not "does this resume sound good," but "will the parsing software correctly extract and rank the content in the first place."</p>

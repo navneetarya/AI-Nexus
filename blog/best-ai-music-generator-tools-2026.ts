@@ -32,7 +32,7 @@ const post: BlogPost = {
   content: `<p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="A music producer working with AI-generated tracks on a laptop" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1769867303328-818dc70f87d6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A music producer working with AI-generated tracks on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 <p>Type a sentence, get a finished song back in under two minutes. That is the pitch behind every <strong>ai music generator</strong> on this list. In 2026 it mostly works.</p>
 <p>I'm Navneet Arya. I spent this session checking pricing pages, Trustpilot data, and legal fine print behind five of the biggest names in the category. The marketing pages skip the parts that actually change your decision.</p>
 <p>Two of these tools are being sued by every major record label right now. One of them just disabled downloads for months. None of that shows up on a features comparison chart, but it should change which tool you pick.</p>
@@ -111,7 +111,7 @@ const post: BlogPost = {
 </div>
 
 <h3>2. Udio: best vocal fidelity, but exports are locked right now</h3>
-<img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1200&q=80" alt="Someone wearing headphones while producing a song on a laptop" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1758598304642-54de59f8de4a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Someone wearing headphones while producing a song on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Udio consistently wins blind listening comparisons on vocal realism. It handles breath sounds and vocal fry with more nuance than Suno in genres like soul and jazz. Its section-level "inpainting" feature can also regenerate one part of a track without touching the rest, an editing capability none of the other four tools offer.</p>
 <p>The free plan gives 10 daily credits with a 100/month cap, limited to three two-minute songs per day, non-commercial only. Standard runs $10/month ($8 annual) for 2,400 credits; Pro is $30/month ($24 annual) for 6,000 credits and five concurrent generation slots.</p>
 <p>Here is the trap most guides skip: as of this guide's research, Udio has disabled audio, video, and stem downloads for most users. This follows its Universal Music Group settlement, restricting the product to in-platform streaming. If you need to actually export and use your song, verify current download status directly on Udio's site before subscribing.</p>
@@ -147,7 +147,7 @@ const post: BlogPost = {
 </div>
 
 <h2>The copyright risk every AI music guide should mention</h2>
-<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80" alt="A gavel and law books representing music copyright law" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1618771623063-6c3faa854a61?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A gavel and law books representing music copyright law" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>This is the part most "best AI music generator" roundups skip entirely. It's specifically a US problem for anyone monetizing content built on these tools.</p>
 <p>Suno faces active litigation from Sony Music and Universal Music Group, alongside its separate Warner Music Group licensing settlement from November 2025. Udio still faces an active Sony case in New York federal court, even after settling separately with Universal Music Group.</p>
 <p>What that means practically: a "commercial rights" license from Suno or Udio's paid tiers covers your use of their platform output. It does not eliminate the underlying legal uncertainty around what the models were trained on.</p>
@@ -166,14 +166,14 @@ const post: BlogPost = {
 </ol>
 
 <h2>Free tier reality check: how far $0 actually gets you</h2>
-<img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80" alt="A content creator reviewing a monthly subscription bill on a laptop" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1772588627327-1eeddcf73c11?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A content creator reviewing a monthly subscription bill on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Every tool here has some kind of free tier. But "free" means very different things depending on which one you pick. Suno's free plan is the most generous for casual experimentation: 50 credits daily, forever, no card required. That's enough to learn prompting and test styles for a week or two before deciding whether Pro is worth $8 to $10.</p>
 <p>Udio's free plan is tighter: 10 daily credits with a hard cap of three two-minute songs per day, non-commercial only. ElevenLabs Music's free allowance stretches to roughly 11 minutes a month, once you account for its 900-credit-per-minute music cost. That's workable for testing, not for regular content production.</p>
 <p>Soundraw and AIVA sit at opposite extremes. Soundraw lets you generate and preview endlessly for free, but blocks every download behind a paid plan. You can't actually use anything until you subscribe. AIVA's free plan is more usable for testing real output: 3 full downloads a month, though every one carries a watermark and stays non-commercial.</p>
 <p>None of these free plans are a substitute for reading the commercial-use terms before you publish anything built on them.</p>
 
 <h2>Pricing breakdown 2026</h2>
-<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="A pricing spreadsheet comparing monthly software costs" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1759752393975-7ca7b302fcc6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A pricing spreadsheet comparing monthly software costs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Here is what each tool actually costs once you move past the free tier, based on annual billing where it is offered. Monthly billing typically runs 20-25% higher across all five.</p>
 <ul style="margin:8px 0 24px;padding-left:22px;line-height:1.9;">
   <li><strong>Suno:</strong> $0 Free → $8/month Pro (annual) → $24/month Premier (annual)</li>
@@ -184,7 +184,7 @@ const post: BlogPost = {
 </ul>
 
 <h2>Who should use an ai music generator</h2>
-<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80" alt="A YouTuber recording content with headphones and a microphone" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1764664035176-8e92ff4f128e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A YouTuber recording content with headphones and a microphone" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h3>Best for</h3>
 <p>YouTubers, podcasters, indie game developers, and social content creators who need original background music or full vocal tracks fast, without hiring a composer or licensing stock music for every project. These five tools collectively cover almost every common content use case in that group.</p>
 <p>If you are building a wider content-creation toolkit alongside music, see our guides on <a href="/blog/best-ai-podcast-tools-2026/">Best AI Podcast Tools</a> and <a href="/blog/best-ai-tools-for-youtube-creators-2026/">Best AI Tools for YouTube Creators</a>. For the wider audio-tool landscape beyond music generation, see <a href="/best-ai-audio-tools/">Best AI Audio Tools</a>.</p>

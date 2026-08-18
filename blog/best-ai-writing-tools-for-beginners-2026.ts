@@ -76,7 +76,7 @@ const post: BlogPost = {
 
   content: `
 <h2>What Are the Best AI Writing Tools for Beginners in 2026?</h2>
-<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80" alt="A beginner writing on a laptop with an AI writing tool open" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A beginner writing on a laptop with an AI writing tool open" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 <p>The best AI writing tools for beginners in 2026 are Grammarly, Rytr, and QuillBot. Grammarly handles free grammar and tone checking in every app you already use. Rytr generates new content once editing alone isn't enough. QuillBot handles paraphrasing and rewriting.</p>
 <p>Start with Grammarly's free plan: it needs no setup and works inside Gmail and Google Docs immediately. There are now more than 200 AI writing tools on the market. Most beginners either pick the most expensive one they've seen advertised, or they try five tools in a week and abandon all of them because nothing feels right.</p>
 <p>Every tool in this guide has been independently researched and compared across real beginner use cases, not demo prompts. The focus: what works for writing blog posts, emails, and social content when you're just starting out.</p>

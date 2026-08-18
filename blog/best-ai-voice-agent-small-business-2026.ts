@@ -28,7 +28,7 @@ const post: BlogPost = {
   content: `<p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80" alt="A small business owner taking a phone call at a desk" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business owner taking a phone call at a desk" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 <p>Every "best AI voice agent" roundup published in the last few months recommends the same four or five names. At least one of them just stopped being an option for a small business.</p>
 <p>I'm Navneet Arya, and when I checked pricing pages directly for this guide, I found something notable. Synthflow, the platform most often called the "no-code pick for small teams," now shows a single $30,000-a-year Enterprise plan on its live pricing page.</p>
 <p>Most of the comparison posts still online haven't caught up. This guide covers the best ai voice agent for small business options actually available to a freelancer or solo agency today.</p>
@@ -129,7 +129,7 @@ const post: BlogPost = {
 <p>One more line item worth budgeting separately: concurrency. Most pay-as-you-go plans cap how many calls can run at once before charging extra per additional line. That's fine for a single-location small business, but worth checking if you're planning to white-label the same platform across multiple clients at once.</p>
 
 <h3>Retell AI: best overall for small business</h3>
-<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80" alt="A dashboard showing call pricing and usage data" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A dashboard showing call pricing and usage data" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Retell AI is the most transparent platform in this category on pricing. Its pricing page publishes a per-component breakdown and includes a live calculator so you can see the real cost before you build anything.</p>
 <p>The pay-as-you-go plan starts at $0.07/minute for the voice-agent layer, with no monthly platform fee, a $10 starting credit, and 20 free concurrent calls. That's enough headroom for genuine small-business testing rather than a token demo.</p>
 <p>Reddit threads in developer communities describe Retell as a common choice for small agencies deploying voice receptionists across multiple client businesses. That's largely because the per-minute math stays predictable at moderate volume. G2 lists it at 4.8/5 across roughly 780 reviews, among the highest-rated platforms in the category.</p>

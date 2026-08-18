@@ -92,7 +92,7 @@ const post: BlogPost = {
 <h2>The 4 tools compared in depth</h2>
 
 <h3>1. Surfer SEO: best all-in-one for content teams</h3>
-<img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=1200&q=80" alt="A content strategist reviewing SEO analytics on a laptop screen" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A content strategist reviewing SEO analytics on a laptop screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Surfer SEO built its reputation on the Content Editor: a live score that updates as you type, pulled from an NLP analysis of the top-ranking pages for your target keyword. It's still the deepest real-time editor in this category, and it's why teams that publish 10 or more articles a month keep coming back to it.</p>
 <p>Surfer renamed its entire plan lineup in 2026. The current tiers, verified from surferseo.com, are Discovery at $49/month, Standard at $99/month, Pro at $182/month, Peace of Mind at $299/month, and Enterprise from $999/month. Annual billing knocks roughly 17% off each tier. There's no free plan and, as of this check, no stated free trial either. Surfer's "Start for Free" buttons lead straight into paid checkout.</p>
 <p>The catch worth knowing before you pick a tier: Discovery only includes the Content Editor and AI writing assistant. Keyword research, the Topical Map, SERP Analyzer, and content audits are the features that turn Surfer into a planning tool rather than just a scoring tool. They only unlock starting on Standard at $99/month.</p>
@@ -116,7 +116,7 @@ const post: BlogPost = {
 <p>If you want a deeper look at Frase specifically, see our full <a href="/tools/frase">Frase review</a>.</p>
 
 <h3>3. Clearscope: best for larger teams thanks to unlimited seats</h3>
-<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="A marketing team collaborating around a laptop reviewing content grades" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A marketing team collaborating around a laptop reviewing content grades" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Clearscope takes the simplest approach of the four. Paste in a keyword, and it returns an A++ to F content grade with a weighted list of terms to include, checked against the top-ranking pages. There's no AI-writing agent bolted on and no site-wide strategy modeling. It's just a clean scoring workflow with a well-regarded Google Docs sidebar.</p>
 <p>Pricing starts at Essentials for $129/month, covering 20 AI Drafts, 20 Topic Explorations, 20 AI Tracked Topics, and 50 Content Inventory pages. Business runs $399/month with higher caps across the board, and Enterprise pricing is custom. There's no published free trial on Clearscope's current pricing page, though monthly plans can be cancelled anytime with no contract.</p>
 <p>The detail that changes the value math for a growing team: every Clearscope plan, including the $129/month entry tier, includes unlimited users. Surfer caps Discovery at 1 seat and doesn't reach 5 seats until its $182/month Pro tier. For a 4-person content team, Clearscope's flat per-tier price can work out cheaper than Surfer's per-seat scaling.</p>
@@ -127,7 +127,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">No public affiliate program was found for Clearscope during this research session. The link above is a direct, non-tracked link to its official site.</p>
 
 <h3>4. MarketMuse: best for enterprise topical authority, now demo-gated on price</h3>
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="An analyst reviewing a topical content map on a large monitor" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="An analyst reviewing a topical content map on a large monitor" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>MarketMuse works differently from the other three. Instead of starting from one keyword, it crawls your entire domain first, builds a topical authority model, and tells you which content clusters to build on versus which gaps to fill. That makes it closer to a site-wide content strategy tool than a per-article optimizer. Its "First Draft" feature can also scaffold an AI draft up to 5,000 words from that same analysis.</p>
 <p>Here's the part most comparison posts get wrong in 2026: MarketMuse was acquired by Siteimprove in November 2024. Its public pricing page no longer lists monthly dollar figures for its paid tiers.</p>
 <p>What remains public is a Free plan limited to 1 user and 10 queries a month, useful only for evaluating the interface, not for real content work. Getting an actual price for Optimize, Research, or Strategy-level access now requires booking a demo directly with MarketMuse.</p>
@@ -139,7 +139,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">No public affiliate program was found for MarketMuse during this research session. The link above is a direct, non-tracked link to its official site.</p>
 
 <h2>AI content optimization tools vs AI writing tools — what's the difference</h2>
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="A writer's desk with a laptop open to a content editing dashboard" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A writer's desk with a laptop open to a content editing dashboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>This is a mix-up that trips up a lot of first-time buyers in this category. Tools like Jasper or Writesonic are primarily <strong>generation</strong> tools. You give them a prompt, and they produce draft copy. Surfer, Frase, Clearscope, and MarketMuse are primarily <strong>optimization</strong> tools. You bring a draft, written by you or generated elsewhere, and they score it against what's already ranking, then tell you what to add, cut, or restructure.</p>
 <p>The lines have blurred. All four tools in this comparison now include some form of AI drafting: Surfer has Surfy, Frase has its AI Agent, and even Clearscope offers AI Drafts on its paid tiers. But the core value proposition is still the scoring and research layer, not the writing layer.</p>
 <p>If your bottleneck is generating first drafts fast, a dedicated writing tool like <a href="/tools/writesonic">Writesonic</a> or our <a href="/blog/best-ai-writing-tools-2026/">best AI writing tools guide</a> is the more direct fit. If your bottleneck is turning decent drafts into pages that actually rank, that's exactly what these four tools are built for.</p>
@@ -154,7 +154,7 @@ const post: BlogPost = {
 </ol>
 
 <h2>Pricing breakdown 2026</h2>
-<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80" alt="A spreadsheet comparing monthly SaaS subscription costs" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A spreadsheet comparing monthly SaaS subscription costs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Here's what each tool actually costs once you move past the free tier or trial, based on official vendor pricing checked in August 2026. Monthly billing typically runs 17–25% higher than annual across all four.</p>
 <ul style="margin:8px 0 24px;padding-left:22px;line-height:1.9;">
   <li><strong>Surfer SEO:</strong> No free plan → $49/month Discovery → $99/month Standard → $182/month Pro → $299/month Peace of Mind → $999/month Enterprise</li>

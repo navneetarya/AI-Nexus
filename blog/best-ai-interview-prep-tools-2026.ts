@@ -57,7 +57,7 @@ const post: BlogPost = {
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 
-<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="A job seeker practicing for a video interview on a laptop" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A job seeker practicing for a video interview on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>An estimated 93% of job seekers report real anxiety before an interview, and roughly 4 in 10 recent interview-integrity checks now flag some form of AI assistance. Both of those things are true about the same category of software: <strong>ai interview prep tools</strong>.</p>
 
@@ -139,7 +139,7 @@ const post: BlogPost = {
 </div>
 
 <h3>2. Pramp (Exponent): best free real practice</h3>
-<img src="https://images.unsplash.com/photo-1573497491765-dccce02b29df?auto=format&fit=crop&w=1200&q=80" alt="Two people practicing a mock interview over a video call" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1573497491765-dccce02b29df?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Two people practicing a mock interview over a video call" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Pramp pairs you with another real candidate preparing for a similar role. You take turns interviewing each other across coding, system design, product management, and behavioral formats, guided by a structured feedback rubric. It's the closest thing to a live human mock interview that costs nothing.</p>
 <p>Since Exponent's acquisition of Pramp, the free tier now caps at 5 peer-mock credits per month, down from effectively unlimited in earlier years. Going past that requires an Exponent subscription: $79/month, or $12/month billed annually, which also unlocks Exponent's course library and a private community.</p>
 <p>The trade-off is variance: your partner might be sharp and generous with feedback, or a no-show. For zero dollars, that's still a reasonable bet. Being on the interviewer side at least once is genuinely useful, too. You learn what a strong answer sounds like faster by grading one than by giving one.</p>
@@ -177,7 +177,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Is using an AI interview copilot considered cheating?</h2>
-<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80" alt="A split screen showing a video interview in progress on a laptop" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A split screen showing a video interview in progress on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>This is the question most "best AI interview prep tools" roundups skip, and it's the one people actually search for before they hand over a card number.</p>
 <p>There's a real line in this category, and it isn't about which tool is "better." <strong>Practice tools</strong> (Yoodli, Pramp, Big Interview, Huru) run before the interview. You rehearse, get scored, improve, and walk in on your own. No interviewer ever interacts with the tool.</p>
 <p><strong>Live copilots</strong>, such as Final Round AI's Interview Copilot mode and similar products elsewhere, run <em>during</em> the interview instead. They feed you suggested answers while a real person is evaluating you.</p>
@@ -185,7 +185,7 @@ const post: BlogPost = {
 <p>Worth noting on the free side: Google retired its long-running free Interview Warmup tool in April 2026. The link now redirects to a Grow with Google article. Google's current recommendation is Gemini Live inside the Gemini app: free, no-signup conversational interview practice, and a reasonable zero-cost starting point before you pay for anything on this list.</p>
 <p>Our take: use a practice tool without hesitation. If you're weighing a live copilot, read your target employer's interview policy first. Many now state explicitly that real-time AI assistance is prohibited. Understand you're accepting real risk to the offer, not just paying a subscription fee.</p>
 
-<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80" alt="A person taking notes while researching software pricing on a laptop" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person taking notes while researching software pricing on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h2>How we compared these five tools</h2>
 <p>Ranking five interview-prep products fairly means applying the same process to each one. Here's exactly how this guide reached its verdicts.</p>
 <ol style="margin:8px 0 24px;padding-left:22px;line-height:1.9;">
@@ -202,7 +202,7 @@ const post: BlogPost = {
 <p>Big Interview and Huru don't offer meaningful ongoing free access. Big Interview's free layer is a question-bank preview, and Huru's is a limited trial.</p>
 <p>Both expect you to pay once you've decided the format fits, though Big Interview's institutional and Google Career Certificate routes are worth checking before you do. For more genuinely free AI software across categories, see our guide to <a href="/blog/best-free-ai-tool-plans-2026/">best free AI tool plans</a>.</p>
 
-<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="A pricing spreadsheet comparing monthly software costs" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A pricing spreadsheet comparing monthly software costs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h2>Pricing breakdown 2026</h2>
 <p>Here's what each tool actually costs once you move past the free tier, based on the lowest published rate, usually annual billing where offered.</p>
 <ul style="margin:8px 0 24px;padding-left:22px;line-height:1.9;">
@@ -213,7 +213,7 @@ const post: BlogPost = {
   <li><strong>Final Round AI:</strong> $0 Free (basic Copilot) → $25/month (annual, $500/yr) → $149/month (monthly, no refunds)</li>
 </ul>
 
-<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80" alt="A confident job candidate shaking hands after an interview" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A confident job candidate shaking hands after an interview" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h2>Who should use an ai interview prep tool</h2>
 <h3>Best for</h3>
 <p>Job seekers actively interviewing who want to rehearse before the real thing. That includes new grads preparing for first professional interviews and career changers building unfamiliar answer frameworks. It also includes anyone who knows a specific weakness (rambling, filler words, weak structure) they haven't fixed through self-practice alone.</p>

@@ -34,7 +34,7 @@ const post: BlogPost = {
   content: `<p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="A founder reviewing sales pipeline data on a laptop" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1507209696998-3c532be9b2b5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A founder reviewing sales pipeline data on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 <p>Most "best AI sales tools" roundups in 2026 are written for a RevOps team with a dedicated GTM engineer and a five-figure monthly stack budget. I'm Navneet Arya, and most of the founders and small teams I hear from have neither.</p>
 <p>They have a product, a handful of hours a week for outbound, and a real ceiling on what they can spend before a single deal has closed.</p>
 <p>This guide checks five AI sales tools for founders against their actual, current pricing pages, not the "starting at" number the homepage leads with. It's built specifically for teams under 20 reps, not enterprise GTM orgs.</p>
@@ -169,7 +169,7 @@ const post: BlogPost = {
 <h2>Getting started — realistic setup time</h2>
 <p>Apollo is the fastest to a first sent email. Connect a Gmail or Outlook inbox, pull a list from its database with a few filters, and a first sequence can realistically go out within an hour. That includes account setup and basic personalization tokens.</p>
 <p>Lavender is nearly as fast: install the Chrome extension, connect your inbox, and it starts scoring emails immediately with no separate list-building step required.</p>
-<img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1200&q=80" alt="A workflow table showing outbound sales data being enriched" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A workflow table showing outbound sales data being enriched" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Clay takes meaningfully longer on the front end. Building your first waterfall enrichment table means choosing which data providers to query in what order, mapping fields, and testing against a sample list.</p>
 <p>That realistically takes a half-day for a first-timer, longer if you're also wiring in HTTP API calls or a CRM sync. That upfront time investment is exactly why Clay makes more sense as a second tool. Add it once a specific data-quality problem exists, rather than as a founder's first purchase in this category.</p>
 <p>Instantly and Smartlead sit in between. Both require a proper domain warm-up period. This typically means two to four weeks of gradually ramping sending volume on a fresh domain, before high-volume cold email is safe to run without tanking deliverability.</p>

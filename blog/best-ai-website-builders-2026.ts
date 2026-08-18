@@ -33,7 +33,7 @@ const post: BlogPost = {
   content: `<p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&q=80" alt="A small business owner building a website on a laptop" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business owner building a website on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 <p>Five different "best AI website builder" roundups will give you five different answers this month. Is that frustrating? I'm Navneet Arya. I checked the actual pricing pages behind each claim, and found out why. Most guides never separate "best for a designer" from "best for a plumber who needs a site by Friday."</p>
 <p>Those are not the same buyer. A tool that wins one loses the other badly.</p>
 <p>This guide compares five AI website builders (Wix, Framer, Durable, Hostinger, and 10Web) against their real, current pricing and independent review data, not just the number on the homepage.</p>
@@ -112,7 +112,7 @@ const post: BlogPost = {
 
 <h3>2. Framer: best for design-led sites</h3>
 <p>Framer produces the most visually polished output of the five tools here, and its G2 score (4.5/5 from 139+ reviews) backs that up. Designers and agencies consistently praise its animation tools and Figma integration.</p>
-<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&q=80" alt="A designer reviewing a website layout on a large monitor" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A designer reviewing a website layout on a large monitor" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Here's the split worth flagging: Framer's Trustpilot rating sits at just 1.6/5 from over 100 reviews, with 73% one-star. That gap between G2 and Trustpilot likely reflects two different audiences. G2 skews toward the designers Framer is built for, while Trustpilot complaints cluster around billing and support for less technical buyers.</p>
 <p>Pricing runs Free, then $10/month for Basic (annual, custom domain included since a January 2026 change), $30/month for Pro, and $100/month for Scale, billed annually. Editor seats beyond the first are billed separately, which can add $15-20 per extra collaborator.</p>
 <div style="text-align:center;margin:20px 0">
@@ -156,7 +156,7 @@ const post: BlogPost = {
 </ul>
 
 <h2>ADA accessibility: the US-specific risk most guides skip</h2>
-<img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1200&q=80" alt="A person using a screen reader to browse a website" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A visually impaired user navigating a website with assistive screen-reader software, illustrating ADA accessibility compliance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>This is the part almost every AI website builder roundup leaves out, and it's specifically a US problem. Federal courts have consistently applied the Americans with Disabilities Act to commercial websites, and filings keep climbing. Industry trackers put 2026 on pace for over 5,500 federal ADA website lawsuits, the highest total on record.</p>
 <p>Small businesses aren't the exception here. They're the main target. Roughly 77% of ADA website lawsuits are filed against companies under $25 million in revenue.</p>
 <p>Plaintiff firms often prefer small sites specifically because compliance gaps are common there, and settlements are cheap for them to pursue. Typical demand-letter settlements run $5,000 to $20,000, before you've even paid to fix the underlying site.</p>
@@ -175,14 +175,14 @@ const post: BlogPost = {
 </ol>
 
 <h2>Support and reliability: what happens when something breaks</h2>
-<img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1200&q=80" alt="A customer support agent responding to a live chat" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A customer support agent responding to a live chat" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>All five vendors offer some form of support, but the depth varies a lot once you actually need help. Wix and Hostinger both run 24/7 support with live chat, backed by their large support teams and correspondingly large review volumes on Trustpilot.</p>
 <p>Framer's support is smaller and slower by most accounts, consistent with its lower Trustpilot score. Reviewers who cited support delays specifically called out billing questions and site-migration help as the weak points, not the core design tool itself.</p>
 <p>Durable bundles support into its all-in-one platform, and its 4.7/5 Trustpilot score suggests that's working well for its target buyer. 10Web's managed WordPress hosting means it also handles security patching and uptime monitoring, tasks a standard website builder doesn't take on.</p>
 <p>If your business truly can't afford downtime, weigh support quality alongside price. A $3/month plan with a two-day support queue costs more than it looks like on paper if your site goes down during a launch.</p>
 
 <h2>Pricing breakdown 2026</h2>
-<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="A pricing spreadsheet comparing monthly software costs" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1772588627527-db42040f3a8b?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A calculator and cost breakdown, comparing monthly website builder pricing plans" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Here's what each tool actually costs once you move past the free tier, based on annual billing where available. Monthly billing typically runs 15-30% higher across all five.</p>
 <ul style="margin:8px 0 24px;padding-left:22px;line-height:1.9;">
   <li><strong>Wix:</strong> $17/month Light → $29/month Core (e-commerce) → $36/month Business → $159/month Business Elite</li>
@@ -193,7 +193,7 @@ const post: BlogPost = {
 </ul>
 
 <h2>Who should use an AI website builder</h2>
-<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80" alt="A freelancer working on a laptop in a home office" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A freelancer working on a laptop in a home office" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h3>Best for</h3>
 <p>Small business owners, freelancers, and solo founders who need a professional site live in days, not weeks, and don't have a dedicated web developer on staff. These five tools collectively cover almost every common use case in that group.</p>
 <p>If you're building out a wider toolkit alongside your website, see our guides on <a href="/blog/best-ai-tools-for-startups-2026/">Best AI Tools for Startups</a> and <a href="/blog/best-ai-tools-for-freelancers-2026/">Best AI Tools for Freelancers</a>.</p>

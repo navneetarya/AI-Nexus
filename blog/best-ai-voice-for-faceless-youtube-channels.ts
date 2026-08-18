@@ -86,7 +86,7 @@ const post: BlogPost = {
 
 <p>Write for the ear, not the eye. Short sentences read aloud more smoothly than the dense paragraphs a blog post might use. Both ElevenLabs and Murf AI handle short, punchy sentences with better pacing than long, clause-heavy ones.</p>
 
-<img src="https://images.unsplash.com/photo-1676287571982-611b20c9752f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A desk with a content strategy planner and notebook, representing script planning" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1676287571982-611b20c9752f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A notebook outline for a faceless YouTube video script, laid out before recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Plan pauses on purpose. A comma or period placed where you want a natural breath makes a real difference in how human the final narration sounds. That matters more than any setting inside the voice tool itself.</p>
 

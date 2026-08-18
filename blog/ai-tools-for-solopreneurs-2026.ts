@@ -107,7 +107,7 @@ const post: BlogPost = {
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 
-<img src="https://images.unsplash.com/photo-1751257983922-a627088d4c21?auto=format&fit=crop&w=1200&q=80" alt="A solopreneur's laptop workspace set up for daily work" style="width:100%;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1751257983922-a627088d4c21?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A solopreneur's laptop workspace set up for daily work" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <h2>The Solopreneur Problem: Nine Jobs, One Person</h2>
 <p>A solopreneur is not a small business with a small team. One person does the work of a founder, marketer, support rep, project manager, bookkeeper, and content creator, all at once. Most "best AI tools" roundups are written for teams.</p>
@@ -305,7 +305,7 @@ const post: BlogPost = {
 <p>The practical recommendation for a solopreneur in 2026: pick an invoicing tool based on its core features and your local payment rails. Razorpay or UPI integration matters more for Indian solopreneurs than any AI feature. Treat AI bookkeeping as a convenience layer, not a primary selection criterion.</p>
 <p>This is also the one function where a general-purpose AI assistant, Claude or ChatGPT, really helps in the meantime. Pasting a month of transaction descriptions and asking for expense categorisation by hand works well enough as a free stopgap, before a dedicated tool earns its price.</p>
 
-<img src="https://images.unsplash.com/photo-1743385779347-1549dabf1320?auto=format&fit=crop&w=1200&q=80" alt="A workflow diagram showing how a solopreneur's tools connect together" style="width:100%;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1743385779347-1549dabf1320?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A workflow diagram showing how a solopreneur's tools connect together" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>The Complete Solopreneur AI Stack: Monthly Cost Breakdown</h2>
 <div style="overflow-x:auto;margin:16px 0 24px;">
