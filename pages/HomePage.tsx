@@ -128,6 +128,30 @@ const AFFILIATE_SLUGS = [
 ];
 const CATEGORIES = ['All', 'Writing', 'Image', 'Video', 'Audio', 'Marketing', 'Design', 'Coding', 'Productivity'];
 
+// ── Task 04: Homepage authority hub ──────────────────────────────────────────
+// Our best-positioned pages per Search Console (lowest avg. position first) — the
+// site's actual proven strength, not a traffic guess. Grammarly is hardcoded since
+// it's a Tool, not a BlogPost; the rest resolve live against BLOG_POSTS_META so
+// copy stays in sync with each post's own title/excerpt.
+const STRONGEST_BLOG_SLUGS: { slug: string; kicker: string; icon: any }[] = [
+  { slug: 'best-ai-voice-dictation-tools-2026',            kicker: 'Roundup',     icon: Zap },
+  { slug: 'best-ai-music-generator-tools-2026',             kicker: 'Roundup',     icon: Mic },
+  { slug: 'chatgpt-atlas-vs-perplexity-comet-vs-dia-2026',  kicker: 'Compare',     icon: Scale },
+  { slug: 'best-ai-voice-for-faceless-youtube-channels',    kicker: 'Guide',       icon: VideoIcon },
+  { slug: 'best-podcastle-alternatives',                    kicker: 'Alternatives',icon: Mic },
+];
+
+// "Start here" quick paths by use-case — routes a first-time visitor straight to
+// the strongest entry point for their specific need instead of the full catalog.
+const USE_CASE_PATHS: { label: string; to: string; icon: any }[] = [
+  { label: 'Writing & editing',        to: '/tools/grammarly/',                                       icon: PenLine },
+  { label: 'Faceless YouTube',          to: '/blog/best-ai-voice-for-faceless-youtube-channels/',      icon: VideoIcon },
+  { label: 'AI music generation',       to: '/blog/best-ai-music-generator-tools-2026/',                icon: Mic },
+  { label: 'Voice dictation',           to: '/blog/best-ai-voice-dictation-tools-2026/',                icon: Zap },
+  { label: 'Picking an AI browser',     to: '/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/',    icon: Scale },
+  { label: 'Podcasting',                to: '/blog/best-podcastle-alternatives/',                       icon: Mic },
+];
+
 // Estimated read time for compare articles (minutes)
 const READ_TIME: Record<string, number> = {
   'rytr-vs-writesonic': 6, 'podcastle-vs-descript': 7,
@@ -729,6 +753,122 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               </button>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* ── Author credibility strip (Task 04: reinforced trust anchor) ──── */}
+      <div style={{ background:C.a1card, borderBottom:`1px solid ${C.a1brd}` }}>
+        <div style={{ maxWidth:1200, margin:'0 auto', padding:'12px 24px', display:'flex',
+          alignItems:'center', justifyContent:'center', gap:12, flexWrap:'wrap' as const }}>
+          <img src="/author-photo.jpg" alt="Navneet Arya, AI tools researcher"
+            width={32} height={32}
+            style={{ width:32, height:32, borderRadius:'50%', objectFit:'cover' as const,
+              border:`2px solid ${C.a1}`, flexShrink:0 }} />
+          <p style={{ fontSize:12.5, color:C.txt, margin:0, textAlign:'center' as const, lineHeight:1.5,
+            fontFamily:"'Inter', system-ui, sans-serif" }}>
+            <strong>Navneet Arya</strong> — AI Automation &amp; Performance Testing Leader at BOLD · researching AI tools since 2022 · 33+ independently reviewed
+          </p>
+          <div style={{ display:'flex', gap:10, alignItems:'center', flexShrink:0 }}>
+            <button onClick={() => navigate('/about')}
+              style={{ fontSize:12, fontWeight:700, color:C.a1, background:'transparent', border:'none',
+                cursor:'pointer', textDecoration:'underline', padding:0, fontFamily:"'Inter', system-ui, sans-serif" }}>
+              About
+            </button>
+            <span style={{ color:C.a1brd, fontSize:12 }}>·</span>
+            <button onClick={() => navigate('/methodology')}
+              style={{ fontSize:12, fontWeight:700, color:C.a1, background:'transparent', border:'none',
+                cursor:'pointer', textDecoration:'underline', padding:0, fontFamily:"'Inter', system-ui, sans-serif" }}>
+              Methodology
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* ── Start Here — Authority Hub (Task 04) ──────────────────────────
+          Homepage sits at avg. position 51.5 in GSC vs. several blog posts
+          ranking top-15 — treat it as an internal-linking/trust anchor
+          instead of competing for broad terms. Surfaces the 6 strongest-
+          positioned pages above the fold plus use-case quick paths. ──── */}
+      <div style={{ maxWidth:1200, margin:'0 auto', padding:'40px 24px 8px' }}>
+        <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19,
+          color:C.txt, letterSpacing:'-0.025em', marginBottom:8 }}>
+          Start Here — Our Most-Researched Guides
+        </h2>
+        <p style={{ fontSize:13, color:C.mut, margin:'0 0 20px', lineHeight:1.55, maxWidth:640 }}>
+          Our best-verified reviews and comparisons, picked from independent research — not a traffic guess.
+        </p>
+
+        {/* Use-case quick nav */}
+        <div style={{ display:'flex', gap:8, flexWrap:'wrap' as const, marginBottom:26 }}>
+          {USE_CASE_PATHS.map(uc => (
+            <button key={uc.label} onClick={() => navigate(uc.to)}
+              style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:12.5, fontWeight:600,
+                color:C.mut, padding:'8px 14px', borderRadius:100, background:C.surf,
+                border:`1px solid var(--brd-lg)`, cursor:'pointer', fontFamily:"'Inter', system-ui, sans-serif" }}>
+              <uc.icon size={13} color={C.a1} /> {uc.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Strongest-page cards */}
+        <div className="tool-grid" style={{ display:'grid',
+          gridTemplateColumns:'repeat(auto-fill, minmax(280px, 1fr))', gap:14, marginBottom:12 }}>
+          {/* Grammarly — best-value tool at pos. 25, currently buried below the fold */}
+          <div onClick={() => navigate('/tools/grammarly/')}
+            style={{ background:C.surf, border:`1.5px solid var(--brd-xs)`, borderRadius:14,
+              padding:'16px 18px', cursor:'pointer', transition:'box-shadow .15s, transform .15s' }}
+            onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 20px ${C.a1}22`; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; }}>
+            <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:8 }}>
+              <div style={{ width:28, height:28, borderRadius:8, background:C.a1card, border:`1px solid ${C.a1brd}`,
+                display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+                <Award size={13} color={C.a1} />
+              </div>
+              <span style={{ fontSize:10, fontWeight:700, color:C.a1, letterSpacing:'0.07em',
+                textTransform:'uppercase' as const }}>Tool Review</span>
+            </div>
+            <div style={{ fontSize:14, fontWeight:700, color:C.txt, lineHeight:1.4, marginBottom:6 }}>
+              Grammarly Review 2026: Is Premium Worth $12/Month?
+            </div>
+            <div style={{ fontSize:12, color:C.mut, lineHeight:1.5 }}>
+              Free plan vs. Premium tested — tone detection, plagiarism checks, and who should actually upgrade.
+            </div>
+            <div style={{ display:'flex', alignItems:'center', gap:4, marginTop:10, fontSize:12, fontWeight:600, color:C.a1 }}>
+              Read review <ArrowRight size={11} />
+            </div>
+          </div>
+
+          {STRONGEST_BLOG_SLUGS.map(cfg => {
+            const post = BLOG_POSTS_META.find(p => p.slug === cfg.slug);
+            if (!post) return null;
+            const Icon = cfg.icon;
+            const blurb = (post.excerpt || post.metaDescription || '').slice(0, 110);
+            return (
+              <div key={cfg.slug} onClick={() => navigate(`/blog/${cfg.slug}/`)}
+                style={{ background:C.surf, border:`1.5px solid var(--brd-xs)`, borderRadius:14,
+                  padding:'16px 18px', cursor:'pointer', transition:'box-shadow .15s, transform .15s' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 20px ${C.a1}22`; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; }}>
+                <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:8 }}>
+                  <div style={{ width:28, height:28, borderRadius:8, background:C.a1card, border:`1px solid ${C.a1brd}`,
+                    display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+                    <Icon size={13} color={C.a1} />
+                  </div>
+                  <span style={{ fontSize:10, fontWeight:700, color:C.a1, letterSpacing:'0.07em',
+                    textTransform:'uppercase' as const }}>{cfg.kicker}</span>
+                </div>
+                <div style={{ fontSize:14, fontWeight:700, color:C.txt, lineHeight:1.4, marginBottom:6 }}>
+                  {post.seoTitle || post.title}
+                </div>
+                <div style={{ fontSize:12, color:C.mut, lineHeight:1.5 }}>
+                  {blurb}{blurb.length >= 110 ? '…' : ''}
+                </div>
+                <div style={{ display:'flex', alignItems:'center', gap:4, marginTop:10, fontSize:12, fontWeight:600, color:C.a1 }}>
+                  Read guide <ArrowRight size={11} />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 

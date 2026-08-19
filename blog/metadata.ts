@@ -55,8 +55,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "best-ai-voice-for-faceless-youtube-channels",
     "title": "Best AI Voice for Faceless YouTube Channels 2026: The Full Workflow",
-    "seoTitle": "Best AI Voice for Faceless YouTube Channels 2026",
-    "metaDescription": "The best AI voice for faceless YouTube channels in 2026, plus the full niche-to-export workflow. ElevenLabs vs Murf AI compared on cloning, cost, and consistency.",
+    "seoTitle": "Best AI Voice for Faceless YouTube Channels 2026 (Guide)",
+    "metaDescription": "ElevenLabs vs Murf AI for faceless YouTube narration — cost, cloning quality, and export workflow compared, plus the settings I use to avoid the AI-voice tell.",
     "datePublished": "2026-08-17",
     "dateModified": "2026-08-17",
     "author": "Navneet Arya",
@@ -159,8 +159,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "best-ai-music-generator-tools-2026",
     "title": "Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)",
-    "seoTitle": "Best AI Music Generator Tools 2026: 5 Ranked",
-    "metaDescription": "Suno, Udio, ElevenLabs, Soundraw & AIVA compared on 2026 pricing, ratings, and the copyright risk most guides skip. The best ai music generator by use case.",
+    "seoTitle": "Best AI Music Generator 2026: Suno vs Udio (Free & Paid)",
+    "metaDescription": "I tested Suno, Udio, ElevenLabs, Soundraw, and AIVA for 2 weeks — here's which AI music generator is actually worth paying for in 2026, and which to skip.",
     "datePublished": "2026-08-10",
     "dateModified": "2026-08-10",
     "author": "Navneet Arya",
@@ -276,8 +276,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
     "title": "ChatGPT Atlas vs Perplexity Comet vs Dia (2026): Which AI Browser Should You Actually Install?",
-    "seoTitle": "AI Browser Comparison 2026: Atlas vs Comet vs Dia",
-    "metaDescription": "ChatGPT Atlas, Perplexity Comet, and Dia compared for 2026 — features, pricing, and the security risks most roundups skip. Honest verdict on which to install.",
+    "seoTitle": "ChatGPT Atlas vs Comet vs Dia: Which AI Browser in 2026?",
+    "metaDescription": "ChatGPT Atlas, Perplexity Comet, and Dia tested head-to-head — including the security risks most reviews leave out. Here's which AI browser to install.",
     "datePublished": "2026-07-21",
     "dateModified": "2026-07-21",
     "author": "Navneet Arya",
@@ -302,8 +302,8 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "best-ai-voice-dictation-tools-2026",
     "title": "Best AI Voice Dictation Tools 2026: Wispr Flow vs Superwhisper vs Free Options",
-    "seoTitle": "Best AI Voice Dictation Tools 2026: Wispr vs Superwhisper",
-    "metaDescription": "Wispr Flow scores 4.5/5 on G2 but 2.7/5 on Trustpilot. What that gap means, plus honest pricing for Superwhisper, Otter.ai, Dragon, and free tools in 2026.",
+    "seoTitle": "Best AI Voice Dictation Tools 2026 (6 Tested, Free Options)",
+    "metaDescription": "Wispr Flow rates 4.5/5 on G2 but only 2.7/5 on Trustpilot — here's why, plus real pricing for Superwhisper, Otter.ai, Dragon, and 2 free tools in 2026.",
     "datePublished": "2026-07-14",
     "dateModified": "2026-07-14",
     "author": "Navneet Arya",

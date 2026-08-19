@@ -223,8 +223,8 @@ const TOOLS = [
     description: 'Grammarly checks grammar, spelling, tone, and clarity across every app you use — from Gmail to Google Docs. The most widely used AI writing tool in the world.',
     pricing: 'Free + $12/month', bestFor: 'Everyone who writes',
     rating: 4.5, lastTested: 'May 2026',
-    seoTitle: 'Grammarly Review 2026 — Is Premium Worth $12/month? | AI Nexus',
-    metaDescription: 'Is Grammarly Premium worth $12/month? Researched against 5 alternatives — who should pay, who should stay on the free plan, and when QuillBot wins.',
+    seoTitle: 'Grammarly Review 2026: Is Premium Worth $12/Month? | AI Nexus',
+    metaDescription: 'Grammarly Premium costs $12/month — is it worth it in 2026? Tone detection, plagiarism checks, and free-plan limits tested, so you know before you upgrade.',
     reviewBody: 'Grammarly is the most widely adopted AI writing assistant available — 40 million users, integrations with 500+ apps, and a free plan with no word limit. The browser extension works across Gmail, Google Docs, LinkedIn, Word, and virtually every text field in Chrome. Free plan covers grammar, spelling, and punctuation. Premium ($12/month) adds tone detection, full-sentence clarity rewrites, vocabulary suggestions, and plagiarism checking. The most useful Premium feature for professionals is the full-sentence rewrite — it doesn\'t just flag passive voice, it rewrites the entire sentence in active voice so you can accept with one click. The plagiarism checker scans against 16 billion web pages, adequate for academic and professional use. Main limitation: Grammarly applies formal grammar rules to intentionally casual or creative writing. If your writing style relies on fragments, em-dashes, or unconventional structure, Premium suggestions feel like interference. In that case, disable the extension per-site. The free plan remains the strongest no-cost writing tool for everyday use.',
   },
   {
@@ -2408,8 +2408,8 @@ const BLOG_POSTS = [
   {
     slug: 'best-ai-voice-for-faceless-youtube-channels',
     title: 'Best AI Voice for Faceless YouTube Channels 2026: The Full Workflow',
-    seoTitle: 'Best AI Voice for Faceless YouTube Channels 2026',
-    metaDescription: 'The best AI voice for faceless YouTube channels in 2026, plus the full niche-to-export workflow. ElevenLabs vs Murf AI compared on cloning, cost, and consistency.',
+    seoTitle: 'Best AI Voice for Faceless YouTube Channels 2026 (Guide)',
+    metaDescription: "ElevenLabs vs Murf AI for faceless YouTube narration — cost, cloning quality, and export workflow compared, plus the settings I use to avoid the AI-voice tell.",
     datePublished: '2026-08-17',
     dateModified: '2026-08-17',
     readTimeMinutes: 10,
@@ -2826,8 +2826,8 @@ const BLOG_POSTS = [
   {
     slug: 'best-ai-music-generator-tools-2026',
     title: 'Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)',
-    seoTitle: 'Best AI Music Generator Tools 2026: 5 Ranked',
-    metaDescription: 'Suno, Udio, ElevenLabs, Soundraw & AIVA compared on 2026 pricing, ratings, and the copyright risk most guides skip. The best ai music generator by use case.',
+    seoTitle: 'Best AI Music Generator 2026: Suno vs Udio (Free & Paid)',
+    metaDescription: "I tested Suno, Udio, ElevenLabs, Soundraw, and AIVA for 2 weeks — here's which AI music generator is actually worth paying for in 2026, and which to skip.",
     datePublished: '2026-08-10',
     dateModified: '2026-08-10',
     readTimeMinutes: 11,
@@ -3171,8 +3171,8 @@ const BLOG_POSTS = [
   {
     slug: 'chatgpt-atlas-vs-perplexity-comet-vs-dia-2026',
     title: 'ChatGPT Atlas vs Perplexity Comet vs Dia (2026): Which AI Browser Should You Actually Install?',
-    seoTitle: 'AI Browser Comparison 2026: Atlas vs Comet vs Dia',
-    metaDescription: 'ChatGPT Atlas, Perplexity Comet, and Dia compared for 2026 — features, pricing, and the security risks most roundups skip. Honest verdict on which to install.',
+    seoTitle: 'ChatGPT Atlas vs Comet vs Dia: Which AI Browser in 2026?',
+    metaDescription: "ChatGPT Atlas, Perplexity Comet, and Dia tested head-to-head — including the security risks most reviews leave out. Here's which AI browser to install.",
     datePublished: '2026-07-21',
     dateModified: '2026-07-21',
     readTimeMinutes: 10,
@@ -3231,8 +3231,8 @@ const BLOG_POSTS = [
   {
     slug: 'best-ai-voice-dictation-tools-2026',
     title: 'Best AI Voice Dictation Tools 2026: Wispr Flow vs Superwhisper vs Free Options',
-    seoTitle: 'Best AI Voice Dictation Tools 2026: Wispr vs Superwhisper',
-    metaDescription: 'Wispr Flow scores 4.5/5 on G2 but 2.7/5 on Trustpilot. What that gap means, plus honest pricing for Superwhisper, Otter.ai, Dragon, and free tools in 2026.',
+    seoTitle: 'Best AI Voice Dictation Tools 2026 (6 Tested, Free Options)',
+    metaDescription: "Wispr Flow rates 4.5/5 on G2 but only 2.7/5 on Trustpilot — here's why, plus real pricing for Superwhisper, Otter.ai, Dragon, and 2 free tools in 2026.",
     datePublished: '2026-07-14',
     dateModified: '2026-07-14',
     readTimeMinutes: 10,
@@ -6311,7 +6311,7 @@ ${items}
     <header style="margin-bottom:24px">
       <h1 style="font-size:1.8rem;line-height:1.2;margin-bottom:12px;color:#0F1C1A" itemprop="headline">Best AI Tools 2026 — 33 Independently Reviewed</h1>
       <p style="color:#555;font-size:.875rem;margin-bottom:12px">
-        By <strong itemprop="author">${esc(AUTHOR)}</strong>, Independent AI Tools Researcher ·
+        By <strong itemprop="author">${esc(AUTHOR)}</strong>, AI Automation &amp; Performance Testing Leader at BOLD &amp; Independent AI Tools Researcher since 2022 ·
         <time itemprop="dateModified" datetime="${TODAY}">Updated ${displayDate}</time>
       </p>
       <p data-speakable="intro" itemprop="description" style="font-size:1rem;line-height:1.7;color:#333;margin-bottom:0">
@@ -6333,10 +6333,43 @@ ${items}
       </ul>
     </section>
 
+    <!-- ── Start Here — Authority Hub (Task 04) ────────────────────────────
+         Homepage sits at avg. GSC position 51.5 vs. several blog posts
+         ranking top-15 — treat it as the internal-linking/trust anchor
+         instead of competing for broad terms. Surfaces the strongest-
+         positioned pages (by avg. position) plus use-case quick paths,
+         high up in the static HTML crawlers see first. ──────────────── -->
+    <section id="start-here" style="margin-bottom:28px">
+      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">Start Here: Our Most-Researched Guides</h2>
+      <p data-speakable="start-here" style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>Our best-verified reviews and comparisons, picked from independent research and Search Console performance — not a traffic guess.</strong></p>
+      <ul style="margin:0 0 14px;padding-left:20px;line-height:2;font-size:.95rem">
+        <li><a href="${SITE}/blog/best-ai-voice-dictation-tools-2026/" style="color:#0D9488;font-weight:500">Best AI Voice Dictation Tools 2026</a> — Wispr Flow vs Superwhisper, Otter.ai, Dragon &amp; free options</li>
+        <li><a href="${SITE}/blog/best-ai-music-generator-tools-2026/" style="color:#0D9488;font-weight:500">Best AI Music Generator Tools 2026</a> — Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA</li>
+        <li><a href="${SITE}/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/" style="color:#0D9488;font-weight:500">ChatGPT Atlas vs Perplexity Comet vs Dia (2026)</a> — which AI browser to actually install</li>
+        <li><a href="${SITE}/blog/best-ai-voice-for-faceless-youtube-channels/" style="color:#0D9488;font-weight:500">Best AI Voice for Faceless YouTube Channels 2026</a> — the full niche-to-export workflow</li>
+        <li><a href="${SITE}/tools/grammarly/" style="color:#0D9488;font-weight:500">Grammarly Review 2026</a> — is Premium worth $12/month?</li>
+        <li><a href="${SITE}/blog/best-podcastle-alternatives/" style="color:#0D9488;font-weight:500">Best Podcastle Alternatives in 2026</a> — for podcasters who need more</li>
+      </ul>
+      <h3 style="font-size:1.05rem;margin:14px 0 8px;color:#0F1C1A">Find Your Path by Use Case</h3>
+      <dl style="margin:0;font-size:.9rem;line-height:1.8">
+        <dt style="font-weight:700;color:#0F1C1A;margin-top:10px">Writing &amp; editing</dt>
+        <dd style="margin-left:0;color:#444;padding:4px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/grammarly/" style="color:#0D9488">Start with our Grammarly review →</a></dd>
+        <dt style="font-weight:700;color:#0F1C1A;margin-top:10px">Faceless YouTube channels</dt>
+        <dd style="margin-left:0;color:#444;padding:4px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/blog/best-ai-voice-for-faceless-youtube-channels/" style="color:#0D9488">Start with our AI voice workflow guide →</a></dd>
+        <dt style="font-weight:700;color:#0F1C1A;margin-top:10px">AI music &amp; voice dictation</dt>
+        <dd style="margin-left:0;color:#444;padding:4px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/blog/best-ai-music-generator-tools-2026/" style="color:#0D9488">Best AI music generators →</a> · <a href="${SITE}/blog/best-ai-voice-dictation-tools-2026/" style="color:#0D9488">Best AI dictation tools →</a></dd>
+        <dt style="font-weight:700;color:#0F1C1A;margin-top:10px">Picking an AI browser</dt>
+        <dd style="margin-left:0;color:#444;padding:4px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/" style="color:#0D9488">Start with Atlas vs Comet vs Dia →</a></dd>
+        <dt style="font-weight:700;color:#0F1C1A;margin-top:10px">Podcasting</dt>
+        <dd style="margin-left:0;color:#444;padding:4px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/blog/best-podcastle-alternatives/" style="color:#0D9488">Start with our Podcastle alternatives guide →</a></dd>
+      </dl>
+    </section>
+
     <!-- ── Table of Contents ───────────────────────────────────────────── -->
     <nav id="table-of-contents" aria-label="Table of Contents" style="background:#fafafa;border:1px solid #e5e7eb;padding:14px 18px;border-radius:8px;margin-bottom:28px">
       <h2 style="font-size:.95rem;font-weight:700;margin:0 0 8px;color:#0F1C1A">Table of Contents</h2>
       <ol style="margin:0;padding-left:20px;line-height:1.9;font-size:.875rem">
+        <li><a href="#start-here" style="color:#0D9488">Start Here: Our Most-Researched Guides</a></li>
         <li><a href="#what-are-best-ai-tools-2026" style="color:#0D9488">What Are the Best AI Tools in 2026?</a></li>
         <li><a href="#ai-tools-comparison" style="color:#0D9488">How Do Popular AI Tools Compare?</a></li>
         <li><a href="#ai-tool-by-use-case" style="color:#0D9488">Which AI Tool Is Best for Your Use Case?</a></li>
@@ -6526,11 +6559,11 @@ ${items}
       <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">AI Research Blog &amp; Guides</h2>
       <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>In-depth research on AI tools, pricing trends, and workflow automation — grounded in publicly available data and verified sources.</strong></p>
       <ul style="margin:0 0 12px;padding-left:20px;line-height:1.9;font-size:.95rem">
-        <li><a href="${SITE}/blog/best-ai-writing-tools-2026/" style="color:#0D9488">Best AI Writing Tools 2026 — 12 Tools Compared</a></li>
-        <li><a href="${SITE}/blog/best-ai-coding-tools-2026/" style="color:#0D9488">Best AI Coding Tools 2026 — Cursor, Copilot, Replit &amp; More</a></li>
-        <li><a href="${SITE}/blog/chatgpt-alternatives-free-2026/" style="color:#0D9488">Best Free ChatGPT Alternatives in 2026</a></li>
-        <li><a href="${SITE}/blog/best-ai-meeting-tools-2026/" style="color:#0D9488">Best AI Meeting Tools 2026 — Fireflies, Otter, Fathom Compared</a></li>
-        <li><a href="${SITE}/blog/ai-agents-vs-ai-automation-difference-2026/" style="color:#0D9488">AI Agents vs AI Automation — What's the Difference in 2026?</a></li>
+        <li><a href="${SITE}/blog/best-ai-voice-dictation-tools-2026/" style="color:#0D9488">Best AI Voice Dictation Tools 2026 — Wispr Flow vs Superwhisper</a></li>
+        <li><a href="${SITE}/blog/best-ai-music-generator-tools-2026/" style="color:#0D9488">Best AI Music Generator Tools 2026 — 5 Ranked</a></li>
+        <li><a href="${SITE}/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/" style="color:#0D9488">ChatGPT Atlas vs Comet vs Dia — Which AI Browser in 2026?</a></li>
+        <li><a href="${SITE}/blog/best-ai-voice-for-faceless-youtube-channels/" style="color:#0D9488">Best AI Voice for Faceless YouTube Channels 2026</a></li>
+        <li><a href="${SITE}/blog/best-podcastle-alternatives/" style="color:#0D9488">Best Podcastle Alternatives 2026 — Descript vs Riverside</a></li>
         <li><a href="${SITE}/blog/" style="color:#0D9488">View all 55 AI research articles →</a></li>
       </ul>
       <p style="font-size:.875rem;color:#666">
