@@ -7,7 +7,11 @@ import { TOOLS, SITE_CONFIG } from '../constants';
 import { Category, Tool } from '../types';
 import { ExternalLink, Star, ArrowRight, Zap, BookOpen } from 'lucide-react';
 import { SharedNav } from './SharedNav';
-import { BLOG_POSTS } from '../blog/index';
+// Perf: use the lightweight metadata list (no full post `content`) so this
+// route's bundle doesn't pull in every blog post's HTML body just to render
+// the "From the blog" cards. Full content is only needed on /blog/:slug itself,
+// which loads it via blog/loaders.ts (loadBlogPostBySlug).
+import { BLOG_POSTS_META as BLOG_POSTS } from '../blog/metadata';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 const C = {

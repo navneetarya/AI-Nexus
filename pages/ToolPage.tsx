@@ -4,7 +4,11 @@ import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDo
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS, TOOLS } from '../constants';
 import { SharedNav } from './SharedNav';
 import { COMPARE_ARTICLES } from './compare-data';
-import { BLOG_POSTS } from '../blog/index';
+// Perf: use the lightweight metadata list (no full post `content`) so this
+// route's bundle doesn't pull in every blog post's HTML body just to render
+// two related-post cards. Full content is only needed on /blog/:slug itself,
+// which loads it via blog/loaders.ts (loadBlogPostBySlug).
+import { BLOG_POSTS_META as BLOG_POSTS } from '../blog/metadata';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 const C = {
