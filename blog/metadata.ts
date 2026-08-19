@@ -14,6 +14,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-voice-generators-for-voiceovers-2026",
+    "title": "Best AI Voice Generators for Voiceovers 2026: Studio Workflow Tested",
+    "seoTitle": "Best AI Voice Generator for Voiceovers 2026",
+    "metaDescription": "The best AI voice generator for professional voiceovers in 2026. Murf AI vs ElevenLabs tested on commercial scripts, corporate video, and e-learning narration.",
+    "datePublished": "2026-08-20",
+    "dateModified": "2026-08-20",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "11 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-voice-generators-for-voiceovers-2026.webp",
+    "excerpt": "Murf AI and ElevenLabs both produce broadcast-quality voiceovers, but they fit different production workflows. Here is which one to use for commercials, corporate video, and e-learning."
+  },
+  {
     "slug": "best-ai-voice-generators-for-podcasts-2026",
     "title": "Best AI Voice Generators for Podcasts 2026: Intros, Fixes & Dubbing",
     "seoTitle": "Best AI Voice Generators for Podcasts 2026",
