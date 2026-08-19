@@ -25,7 +25,7 @@ import { Category } from './types';
 
 const post: BlogPost = {
   slug: 'best-ai-resume-builder-tools-2026',
-  title: 'Best AI Resume Builder Tools 2026: ATS-Tested and Ranked',
+  title: 'Best AI Resume Builder Tools 2026: ATS Compatibility Ranked',
   seoTitle: 'Best AI Resume Builder Tools 2026: ATS Ranked',
   metaDescription: 'Teal, Rezi, Kickresume, and Jobscan all claim the ATS crown. Real 2026 pricing, who each tool actually fits, and which one is worth paying for.',
   datePublished: '2026-07-17',

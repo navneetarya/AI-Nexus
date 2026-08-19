@@ -63,9 +63,13 @@ Every task now has explicit PASS/FAIL criteria. Track these daily.
 [Number/Adjective] + [Tool names] + (2026) + [Differentiator] + [Brand]
 
 Examples:
-✓ "Grammarly vs QuillBot (2026): I Tested Both for 30 Days — Here's the Actual Winner"
-✓ "7 Best AI Email Marketing Tools (2026) — Tested on Real Campaigns"
+✓ "Grammarly vs QuillBot (2026): Compared Over 30 Days — Here's the Actual Winner"
+✓ "7 Best AI Email Marketing Tools (2026) — Pricing & Features Compared"
 ✗ "Grammarly vs QuillBot Comparison" (too generic)
+✗ "I Tested Both for 30 Days" / any first-person "I tested / we tested" claim — do not use this
+  phrasing unless a real, documented hands-on test was actually performed. It reads as a trust
+  signal but is a fabricated-testing risk if the underlying test never happened. Use "compared,"
+  "researched," or "based on documented usage" instead.
 ```
 
 **Acceptance Criteria — PASS if ALL true:**
@@ -299,7 +303,7 @@ Examples:
 
 **Strategy:**
 - 5 Quora answers on "vibe coding tools," "cursor AI alternatives," "n8n vs Make" — link to compare pages
-- 1 guest post on dev.to or Hashnode — "I tested 5 vibe coders for a month" — link to /compare/lovable-vs-bolt-vs-v0
+- 1 guest post on dev.to or Hashnode — "5 Vibe Coding Tools Compared for Solo Builders" — link to /compare/lovable-vs-bolt-vs-v0
 - 1 IndieHackers submission — "AI Nexus Tools" in #tools section — link to homepage
 - 3 outreach emails to "AI tools roundup" blog authors — request feature mention
 - 1 community mention in relevant Slack/Discord (ProductHunt Ship, GrowthX, etc.)
@@ -394,7 +398,7 @@ Examples:
   - ≥1500 words, beginner-friendly
   - Explainer for non-technical audience
   - Schema: NewsArticle + FAQPage
-- [ ] Publish: "Best MCP Clients & Tools 2026 — Tested"
+- [ ] Publish: "Best MCP Clients & Tools 2026 — Compared"
   - Tool reviews: Claude.ai, Cursor, Replit, etc.
   - Affiliate links where available
   - Pricing, free plans, performance comparisons

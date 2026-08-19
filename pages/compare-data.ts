@@ -1743,11 +1743,11 @@ If you're creating new video content from ideas: InVideo AI. If you're repurposi
       },
       {
         heading: 'Output comparison: same topic, both tools',
-        content: `Both tools were tested on the same topic — "5 best AI tools for freelancers in 2026" — to document how each handles the workflow.
+        content: `Here's how each tool typically handles the same topic — "5 best AI tools for freelancers in 2026" — based on documented workflows and user reports.
 
-**InVideo AI:** A prompt was entered with the topic. InVideo wrote a 7-minute script covering five tools with brief descriptions, selected matching footage for each tool, added an AI voiceover, and produced a complete video in 4 minutes. The output was a usable YouTube video with minor editing needed — swapping a few stock clips and tightening the intro. Total time from prompt to upload-ready: 25 minutes.
+**InVideo AI:** Given a topic prompt, InVideo writes a script covering the tools with brief descriptions, selects matching footage for each one, adds an AI voiceover, and produces a complete rough-cut video in a few minutes. The output is generally usable as a YouTube video with minor editing needed — swapping a few stock clips and tightening the intro.
 
-**Pictory:** A 1,200-word blog post on the same topic was used as source material. Pictory broke it into 12 scenes, matched footage, added text overlays highlighting key points, and produced a 3-minute social video. The output was well-suited for LinkedIn and Instagram — punchy, caption-forward, and branded. Total time: 15 minutes (plus the time already spent writing the blog post).
+**Pictory:** Starting from an existing blog post as source material, Pictory breaks it into scenes, matches footage, adds text overlays highlighting key points, and produces a short social video. The output tends to suit LinkedIn and Instagram well — punchy, caption-forward, and branded — but depends on already having written source content.
 
 **Quality comparison:** InVideo AI's output felt like a YouTube explainer. Pictory's output felt like a social media highlight reel of a blog post. Both were good at their intended format — but they're not interchangeable. InVideo AI produces longer, narration-driven content. Pictory produces shorter, text-overlay-driven clips.
 
@@ -2455,9 +2455,9 @@ The short answer: Lovable is the strongest choice for non-developers who want a 
         heading: 'Lovable — full-stack app building without writing code',
         content: `Lovable's defining feature is the Supabase integration that happens automatically. You describe an app, and Lovable handles the React frontend, the PostgreSQL database schema, the Supabase authentication, and a live deployment — without you touching any of it. For non-developers, this removes the hardest parts of building software: configuring a database and wiring it to a frontend.
 
-**Lead capture page test:** Lovable generated a live page with a form that saved to a Supabase table in two prompts and under four minutes. The form was Tailwind-styled, mobile-responsive, and the Supabase row inserts worked without any configuration. Tested with real submissions — 40+ rows appeared in the database in real time.
+**Lead capture page example:** Lovable can generate a live page with a form that saves to a Supabase table in just a couple of prompts. The form comes out Tailwind-styled and mobile-responsive, with Supabase row inserts working without manual configuration.
 
-**Task manager test:** A task manager with email/password login, a dashboard showing tasks with due dates and priority flags, and the ability to mark tasks complete — built in five prompts over 15 minutes. Working Supabase Auth was included. This is the kind of app that takes a solo developer two to three days from scratch.
+**Task manager example:** A task manager with email/password login, a dashboard showing tasks with due dates and priority flags, and the ability to mark tasks complete is well within reach in a handful of prompts, with working Supabase Auth included. This is the kind of app that takes a solo developer two to three days from scratch.
 
 **Where Lovable falls short:** The free plan's five messages per day limit becomes a real constraint during iteration. Complex UI customisations often require three to four messages to get exactly right. The architecture is tightly coupled to Supabase — moving to a different backend requires a developer. And generated code at scale needs a developer review before going to production with real users.
 
@@ -2597,7 +2597,7 @@ The bottom line: most "which one should I use?" questions come down to one quest
     slug: 'perplexity-vs-chatgpt',
     title: 'Perplexity vs ChatGPT (2026): Which AI Search Tool Actually Wins?',
     seoTitle: 'Perplexity vs ChatGPT (2026): AI Search vs AI Chatbot — Honest Test',
-    metaDescription: 'Perplexity vs ChatGPT compared for 2026 — AI search engine vs general chatbot. Free plans tested, reasoning modes compared, and honest verdict on which you should use.',
+    metaDescription: 'Perplexity vs ChatGPT compared for 2026 — AI search engine vs general chatbot. Free plans compared, reasoning modes compared, and honest verdict on which you should use.',
     keyword: 'perplexity vs chatgpt',
     publishDate: 'June 2026',
     lastUpdated: '2026-06-22',
@@ -2678,7 +2678,7 @@ ChatGPT's reasoning is sharper. It understands context better. It can think thro
     slug: 'headshotpro-vs-aragon',
     title: 'HeadshotPro vs Aragon (2026): Which AI Headshot Generator Wins?',
     seoTitle: 'HeadshotPro vs Aragon (2026): Best AI Headshots for LinkedIn',
-    metaDescription: 'HeadshotPro vs Aragon compared for LinkedIn headshots and professional photos in 2026. Quality tested, pricing compared, and honest verdict.',
+    metaDescription: 'HeadshotPro vs Aragon compared for LinkedIn headshots and professional photos in 2026. Quality compared, pricing compared, and honest verdict.',
     keyword: 'headshotpro vs aragon',
     publishDate: 'June 2026',
     lastUpdated: '2026-06-22',
@@ -2741,7 +2741,7 @@ Aragon: Upload photo → Configure style/setting → Generate variations → Rev
     slug: 'make-vs-zapier',
     title: 'Make vs Zapier (2026): Which No-Code Automation Platform Wins?',
     seoTitle: 'Make vs Zapier (2026): Honest Pricing + Feature Comparison',
-    metaDescription: 'Make vs Zapier compared for 2026 — no-code automation platforms tested. Pricing, app integrations, automation builder, and honest verdict on which is better.',
+    metaDescription: 'Make vs Zapier compared for 2026 — no-code automation platforms compared. Pricing, app integrations, automation builder, and honest verdict on which is better.',
     keyword: 'make vs zapier',
     publishDate: 'June 2026',
     lastUpdated: '2026-06-22',
@@ -2815,7 +2815,7 @@ Winner: Zapier for breadth, Make for flexibility.`,
     slug: 'best-ai-tools-for-freelancers-india-2026',
     title: 'Best AI Tools for Freelancers in India 2026: Free & Cheap Tools',
     seoTitle: 'Best AI Tools for Freelancers India 2026 — Free + Cheap (₹500–₹2000/mo)',
-    metaDescription: 'AI tools for Indian freelancers with free plans, affordable paid tiers (₹500–2000/month), and INR payment methods. ChatGPT, Perplexity, Grammarly, Canva tested for writers, designers, developers.',
+    metaDescription: 'AI tools for Indian freelancers with free plans, affordable paid tiers (₹500–2000/month), and INR payment methods. ChatGPT, Perplexity, Grammarly, Canva compared for writers, designers, developers.',
     keyword: 'best ai tools for freelancers india',
     publishDate: 'June 2026',
     lastUpdated: '2026-06-25',
