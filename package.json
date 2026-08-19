@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.mjs && node scripts/generate-llms-full.mjs",
+    "build": "node scripts/generate-blog-meta.mjs && vite build && node scripts/prerender.mjs && node scripts/generate-llms-full.mjs",
+    "generate:blog-meta": "node scripts/generate-blog-meta.mjs",
     "generate:llms": "node scripts/generate-llms-full.mjs",
     "verify-prerender": "node scripts/verify-prerender.mjs",
     "preview": "vite preview"
