@@ -80,6 +80,7 @@ export const TOOLS: Tool[] = [
     ],
     notForYou: 'Grammarly is not the right tool if your primary need is content generation (generating first drafts from a topic brief — Rytr or Writesonic do that), paraphrasing and rewriting existing text heavily (QuillBot\'s 7 paraphrase modes are built for this, Grammarly has one rewrite mode), or deep stylistic analysis for fiction writing (ProWritingAid\'s 25+ style reports go far deeper into pacing, dialogue, and narrative flow). Grammarly also occasionally over-corrects intentional stylistic choices — if your writing voice depends on fragments, em-dashes, or unconventional sentence structures, Premium suggestions will feel like interference rather than help. For those cases, using Grammarly on a sentence-by-sentence basis rather than in always-on mode works better.',
     titleTemplate: 'Grammarly Review 2026: Is Premium Worth $12/Month? | AI Nexus',
+    metaDescription: 'Grammarly Premium costs $12/month — is it worth it in 2026? Tone detection, plagiarism checks, and free-plan limits tested, so you know before you upgrade.',
     lastTestedISO: '2026-05-01',
     researchSources: {
       trustpilot: { rating: 4.3, count: 7842, url: 'https://www.trustpilot.com/review/www.grammarly.com' },

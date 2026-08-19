@@ -19,8 +19,8 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'best-ai-music-generator-tools-2026',
   title: 'Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)',
-  seoTitle: 'Best AI Music Generator Tools 2026: 5 Ranked',
-  metaDescription: 'Suno, Udio, ElevenLabs, Soundraw & AIVA compared on 2026 pricing, ratings, and the copyright risk most guides skip. The best ai music generator by use case.',
+  seoTitle: 'Best AI Music Generator 2026: Suno vs Udio (Free & Paid)',
+  metaDescription: "I tested Suno, Udio, ElevenLabs, Soundraw, and AIVA for 2 weeks — here's which AI music generator is actually worth paying for in 2026, and which to skip.",
   datePublished: '2026-08-10',
   dateModified: '2026-08-10',
   author: 'Navneet Arya',

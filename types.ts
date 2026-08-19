@@ -76,6 +76,13 @@ export interface Tool {
   titleTemplate?: string;
 
   /**
+   * Optional custom meta description for the tool page. When present, App.tsx uses this
+   * instead of the generic "[Tool] review 2026 — Researched by [author]. [tagline]..." pattern.
+   * Use to call out a specific price, stat, or rating gap for higher CTR.
+   */
+  metaDescription?: string;
+
+  /**
    * W2-T1 (no-screenshot variant): Research basis data shown as a visible citation bar
    * on the tool page. Replaces the screenshot requirement by surfacing the independent
    * data sources that back up the review — satisfying EEAT Trustworthiness for quality raters.

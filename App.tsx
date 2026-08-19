@@ -216,7 +216,7 @@ function LazyToolRoute({
 
   updateMeta(
     tool.titleTemplate ?? `${tool.name} Review ${currentYear} — Independently Researched | AI Nexus`,
-    `${tool.name} review 2026 — Researched by ${SITE_CONFIG.authorName}. ${tool.tagline}. Pricing, pros, cons, and who it's actually for.`,
+    tool.metaDescription ?? `${tool.name} review 2026 — Researched by ${SITE_CONFIG.authorName}. ${tool.tagline}. Pricing, pros, cons, and who it's actually for.`,
     `${SITE_CONFIG.siteUrl}/tools/${tool.slug}/`
   );
 

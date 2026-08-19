@@ -16,8 +16,8 @@ import { Category } from './types';
 const post: BlogPost = {
   slug: 'best-ai-voice-for-faceless-youtube-channels',
   title: 'Best AI Voice for Faceless YouTube Channels 2026: The Full Workflow',
-  seoTitle: 'Best AI Voice for Faceless YouTube Channels 2026',
-  metaDescription: 'The best AI voice for faceless YouTube channels in 2026, plus the full niche-to-export workflow. ElevenLabs vs Murf AI compared on cloning, cost, and consistency.',
+  seoTitle: 'Best AI Voice for Faceless YouTube Channels 2026 (Guide)',
+  metaDescription: "ElevenLabs vs Murf AI for faceless YouTube narration — cost, cloning quality, and export workflow compared, plus the settings I use to avoid the AI-voice tell.",
   datePublished: '2026-08-17',
   dateModified: '2026-08-17',
   author: 'Navneet Arya',
