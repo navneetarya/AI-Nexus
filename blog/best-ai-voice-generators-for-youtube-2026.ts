@@ -205,7 +205,9 @@ const post: BlogPost = {
 
 <h2>Final verdict</h2>
 
-<p>For most new faceless or short-form channels, start with ElevenLabs. The free plan is generous enough to test real scripts, and a cloned voice becomes your channel's identity faster than most creators expect. For explainer or tutorial channels built around longer videos, Murf AI's video-sync feature will save more time than the extra few dollars a month costs.</p>
+<p>For most new faceless or short-form channels, start with ElevenLabs. The free plan is generous enough to test real scripts, and a cloned voice becomes your channel's identity faster than most creators expect. For explainer or tutorial channels built around longer videos, Murf AI's video-sync feature saves more time than the extra cost.</p>
+
+<p>Still deciding between the two? The full <a href="/compare/murf-ai-vs-elevenlabs/">Murf AI vs ElevenLabs comparison</a> breaks down pricing, cloning, and language coverage side by side.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>

@@ -5,8 +5,9 @@
 import React, { lazy, Suspense } from 'react';
 import { TOOLS, SITE_CONFIG } from '../constants';
 import { Category, Tool } from '../types';
-import { ExternalLink, Star, ArrowRight, Zap } from 'lucide-react';
+import { ExternalLink, Star, ArrowRight, Zap, BookOpen } from 'lucide-react';
 import { SharedNav } from './SharedNav';
+import { BLOG_POSTS } from '../blog/index';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 const C = {
@@ -434,6 +435,10 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
   }
 
   const filteredTools = TOOLS.filter(t => t.category === category);
+  const relatedPosts = BLOG_POSTS
+    .filter(p => p.category === category)
+    .sort((a, b) => b.datePublished.localeCompare(a.datePublished))
+    .slice(0, 9);
 
   return (
     <div style={{ background: C.bg, minHeight: '100vh', color: C.txt }}>
@@ -543,6 +548,37 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
           </div>
         )}
       </div>
+
+      {/* ── From the blog (Day 1 fix: hub → cluster internal linking) ─────── */}
+      {relatedPosts.length > 0 && (
+        <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px 32px' }}>
+          <h2 style={{
+            fontFamily: "'Inter',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 6,
+            display: 'flex', alignItems: 'center', gap: 8,
+          }}>
+            <BookOpen size={18} color={meta.color} /> From the blog
+          </h2>
+          <p style={{ fontSize: 13, color: C.mut, margin: '0 0 16px', lineHeight: 1.65 }}>
+            In-depth guides covering {meta.title.replace('Best AI ', '').replace(' 2026', '').toLowerCase()} — tested and written by Navneet Arya.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 12 }}>
+            {relatedPosts.map((p, i) => (
+              <div key={i}
+                onClick={() => navigate(`/blog/${p.slug}/`)}
+                style={{
+                  padding: '16px 18px', background: C.surf, borderRadius: 12,
+                  border: `1px solid ${C.barBrd}`, cursor: 'pointer',
+                }}>
+                <div style={{ fontSize: 14, fontWeight: 600, color: C.txt, marginBottom: 6, lineHeight: 1.4 }}>{p.title}</div>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontSize: 12, color: C.mut }}>{p.readTime} · {p.datePublished}</span>
+                  <span style={{ fontSize: 12, fontWeight: 600, color: meta.color, whiteSpace: 'nowrap' as const }}>Read post →</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* ── FAQ section ──────────────────────────────────────────────────── */}
       <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px 48px' }}>

@@ -432,7 +432,7 @@ Video sync feature: Verified users document the video sync workflow: import a 47
 
 Free plan limits: The 10-minute monthly limit is documented as sufficient for testing 2–3 voice samples and evaluating quality across categories. Reviewers note that watermarked exports cannot be used for commercial or client-facing work. The Creator plan at $19/month is documented as the practical entry point — 2 hours of narration covers 10–15 YouTube videos per month.`,
     verdict: "The best balance of voice naturalness and production workflow in AI voiceover tools. The video sync feature alone distinguishes it from every other tool in the category. More expensive than some alternatives, but the output quality and time saving on video production justifies it for professional use.",
-    relatedBlogSlugs: ['best-ai-podcast-tools-2026', 'best-ai-tools-for-content-creators-free-2026', 'best-ai-tools-for-youtubers-2026'],
+    relatedBlogSlugs: ['best-ai-voice-generators-for-voiceovers-2026', 'murf-ai-alternatives-2026', 'best-ai-voice-for-faceless-youtube-channels'],
     rating: 4.4, lastTested: "January 2026", lastTestedISO: "2026-01-15", datePublished: "2026-01-08", timeUsed: "Researched Jan 2026",
   },
   // W1-T2: ElevenLabs full TOOL_CONTENT — P1 keyword: "elevenlabs review" (1,600/mo)
@@ -457,7 +457,7 @@ Free plan limits: The 10-minute monthly limit is documented as sufficient for te
       { q: "ElevenLabs vs Murf AI — which is better?", a: "ElevenLabs produces better voice quality, especially for voice cloning and emotional delivery. Murf AI includes a full production studio with video sync and background music — better for structured eLearning and corporate voiceover workflows. For pure voice generation quality, ElevenLabs wins. For an all-in-one voiceover production environment, Murf is more practical." },
     ],
     verdict: "The best AI voice generator in 2026, and it's not close. The voice quality, cloning accuracy, and free tier generosity make it the default starting point for any creator or developer who needs realistic speech output. The $5/month Starter plan is one of the best value upgrades in the entire AI tools category.",
-    relatedBlogSlugs: ['best-ai-podcast-tools-2026', 'best-ai-tools-for-developers-2026', 'best-ai-tools-for-content-creators-free-2026'],
+    relatedBlogSlugs: ['best-ai-voice-generators-for-voiceovers-2026', 'elevenlabs-alternatives-2026', 'best-ai-voice-cloning-tools-2026'],
     rating: 4.7, lastTested: "April 2026", lastTestedISO: "2026-04-10", datePublished: "2026-04-05", timeUsed: "Researched Apr 2026",
   },
   // W1-T4: Descript full TOOL_CONTENT — P1 keyword: "descript review" (1,200/mo)
