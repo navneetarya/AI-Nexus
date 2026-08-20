@@ -1,5 +1,5 @@
 // pages/BlogPostPage.tsx
-import React, { useEffect, useMemo, lazy, Suspense } from 'react';
+import React, { useEffect, useMemo, useState, lazy, Suspense } from 'react';
 // Shield icon removed — T1.7 author strip now uses plain "About the reviewer →" anchor
 import { SharedNav } from './SharedNav';
 import type { BlogPost } from '../blog/types';
@@ -216,6 +216,40 @@ interface BlogPostPageProps {
   toggleTheme: () => void;
 }
 
+// Collapsible FAQ row — click the +/− control to expand or collapse the answer.
+function FAQAccordionItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void; key?: React.Key }) {
+  return (
+    <div
+      style={{
+        background: C.surf,
+        border: `1px solid ${open ? C.a1brd : C.brd}`,
+        borderRadius: 12,
+        overflow: 'hidden',
+        transition: 'border-color .15s',
+      }}
+    >
+      <button
+        onClick={onToggle}
+        aria-expanded={open}
+        style={{
+          width: '100%', textAlign: 'left' as const, padding: '18px 22px',
+          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+          background: 'none', border: 'none', cursor: 'pointer', gap: 12,
+          fontFamily: "'Inter', sans-serif", fontSize: 15, fontWeight: 700, color: C.txt,
+        }}
+      >
+        <span>{q}</span>
+        <span style={{ color: C.a1, fontSize: 20, lineHeight: 1, flexShrink: 0 }}>{open ? '\u2212' : '+'}</span>
+      </button>
+      {open && (
+        <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.65, margin: 0, padding: '0 22px 18px' }}>
+          {a}
+        </p>
+      )}
+    </div>
+  );
+}
+
 const C = {
   bg:   'var(--bg)',
   surf: 'var(--surf)',
@@ -230,6 +264,9 @@ const C = {
 };
 
 export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPageProps) {
+  // Which FAQ accordion row is expanded (null = all collapsed)
+  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
+
   // Extract h2 headings from raw content for the Table of Contents
   const tocItems = useMemo(() => {
     const matches = [...post.content.matchAll(/<h2[^>]*>(.*?)<\/h2>/gi)];
@@ -710,25 +747,13 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 14 }}>
               {post.faqs.map(({ q, a }, i) => (
-                <div
+                <FAQAccordionItem
                   key={i}
-                  style={{
-                    background: C.surf,
-                    border: `1px solid ${C.brd}`,
-                    borderRadius: 12,
-                    padding: '18px 22px',
-                  }}
-                >
-                  <h3 style={{
-                    fontSize: 15, fontWeight: 700,
-                    color: C.txt, marginBottom: 8,
-                  }}>
-                    {q}
-                  </h3>
-                  <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.65, margin: 0 }}>
-                    {a}
-                  </p>
-                </div>
+                  q={q}
+                  a={a}
+                  open={openFaqIdx === i}
+                  onToggle={() => setOpenFaqIdx(openFaqIdx === i ? null : i)}
+                />
               ))}
             </div>
           </section>

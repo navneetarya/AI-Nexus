@@ -2,7 +2,7 @@
 // Dynamic category landing pages — /best-ai-writing-tools/, /best-ai-image-tools/, etc.
 // Each category targets a high-volume keyword with unique editorial intro + FAQ.
 
-import React, { lazy, Suspense } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { TOOLS, SITE_CONFIG } from '../constants';
 import { Category, Tool } from '../types';
 import { ExternalLink, Star, ArrowRight, Zap, BookOpen } from 'lucide-react';
@@ -27,6 +27,30 @@ const C = {
   barBg:  'var(--bar-bg)',
   barBrd: 'var(--bar-brd)',
 };
+
+// Collapsible FAQ row — click the +/− control to expand or collapse the answer.
+function FAQAccordionItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void; key?: React.Key }) {
+  return (
+    <div style={{ borderBottom: `1px solid ${C.barBrd}` }}>
+      <button
+        onClick={onToggle}
+        aria-expanded={open}
+        style={{
+          width: '100%', textAlign: 'left' as const, padding: '18px 0',
+          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+          background: 'none', border: 'none', cursor: 'pointer', gap: 12,
+          fontFamily: "'Inter',sans-serif", fontSize: 14, fontWeight: 700, color: C.txt,
+        }}
+      >
+        <span>{q}</span>
+        <span style={{ color: C.a1, fontSize: 20, lineHeight: 1, flexShrink: 0 }}>{open ? '\u2212' : '+'}</span>
+      </button>
+      {open && (
+        <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, margin: '0 0 18px' }}>{a}</p>
+      )}
+    </div>
+  );
+}
 
 // ── Category SEO metadata ────────────────────────────────────────────────────
 
@@ -423,6 +447,8 @@ interface Props {
 }
 
 export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props) {
+  // Which FAQ accordion row is expanded (null = all collapsed)
+  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
   const meta = CATEGORY_META[category];
 
   // Fallback if category not found
@@ -590,12 +616,13 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
           Frequently Asked Questions
         </h2>
         {meta.faqs.map(({ q, a }, i) => (
-          <div key={i} style={{ borderBottom: `1px solid ${C.barBrd}`, padding: '18px 0' }}>
-            <h3 style={{ fontFamily: "'Inter',sans-serif", fontSize: 14, fontWeight: 700, color: C.txt, marginBottom: 8 }}>
-              {q}
-            </h3>
-            <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, margin: 0 }}>{a}</p>
-          </div>
+          <FAQAccordionItem
+            key={i}
+            q={q}
+            a={a}
+            open={openFaqIdx === i}
+            onToggle={() => setOpenFaqIdx(openFaqIdx === i ? null : i)}
+          />
         ))}
       </div>
 

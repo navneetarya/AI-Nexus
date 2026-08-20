@@ -1,6 +1,6 @@
 # AI Nexus — Full Content Export
 # https://ainexustools.online
-# Generated: 2026-08-19
+# Generated: 2026-08-20
 # Author: Navneet Arya
 # Purpose: Machine-readable flat-text for AI crawler ingestion (llms-full.txt standard)
 # All tool reviews are independently researched. Affiliate links disclosed on every page.
