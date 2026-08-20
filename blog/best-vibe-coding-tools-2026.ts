@@ -63,7 +63,6 @@ const post: BlogPost = {
 </blockquote>
 
 <h2>Which Vibe Coding Tool Should You Use — Lovable, Bolt, or v0?</h2>
-<img src="https://images.unsplash.com/photo-1659083725992-9d88c12e719c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone on a boom arm in a developer's studio setup" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Lovable, Bolt, and v0 each win at a different job in 2026. Lovable is the best choice for complete beginners building a full-stack MVP. Bolt is strongest for frontend-heavy projects where you want framework flexibility. v0 by Vercel is built for generating UI components, rather than entire applications.</p>
 <p>In February 2025, Andrej Karpathy — former Tesla AI director and OpenAI founding member — coined the phrase "vibe coding." It describes a new way of building software.</p>
 <p>Instead of writing code line by line, you describe what you want in plain English. An AI handles the implementation. You keep refining by chatting, and you never touch the source directly.</p>
@@ -75,6 +74,8 @@ const post: BlogPost = {
   <strong style="color:#d97706;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">⚠ Before You Start</strong>
   <p style="margin:8px 0 0;font-size:14px;line-height:1.6;">None of these three tools has caught up to a professional developer on security review. If your app touches payments, health data, or personal information at any real scale, budget for a developer to audit the generated code before launch — see the FAQ on data safety below.</p>
 </div>
+
+<img src="https://images.unsplash.com/photo-1555066931-bf19f8fd1085?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop running an AI-assisted vibe coding tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>How to Pick a Vibe Coding Tool in 3 Steps</h2>
 <ol style="margin:12px 0 20px 24px;line-height:1.9;">
@@ -88,6 +89,8 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+
+<img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop screen showing generated code from an AI coding tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Quick Comparison: Best Vibe Coding Tools 2026</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -127,6 +130,8 @@ const post: BlogPost = {
 </table>
 </div>
 
+<img src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop used for building an app with AI coding assistance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>1. Lovable — Best for Complete Beginners and Full-Stack MVPs</h2>
 <p><strong>Rating: 4.6/5 · Free: 5 messages/day · Paid: $25/month · Affiliate: 30% recurring</strong></p>
 <p>Lovable is the most complete vibe coding tool for people who have never written code. You describe your app in a chat interface, and Lovable generates the full stack: React frontend, Supabase backend (PostgreSQL database + authentication), and a deployed subdomain, all from a single prompt.</p>
@@ -148,6 +153,8 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A MacBook with lines of code on a busy desk" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>2. Bolt — Best for Frontend-Heavy Projects and Framework Flexibility</h2>
 <p><strong>Rating: 4.3/5 · Free: Limited tokens · Paid: from $20/month</strong></p>
 <p><a href="/tools/bolt/" style="color:rgb(13,148,136);">Bolt</a> (by StackBlitz) is Lovable's closest competitor and the better choice for frontend-heavy JavaScript projects. Where Lovable defaults to React + Supabase, Bolt offers wider framework support — Next.js, Nuxt, SvelteKit, Astro, and more.</p>

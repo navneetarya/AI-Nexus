@@ -101,6 +101,8 @@ const post: BlogPost = {
   </table>
 </div>
 
+<img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A computer monitor displaying a sales dashboard used to track outbound leads" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+
 <h2>What is an AI sales tool, and does a solo founder actually need one?</h2>
 <p>An AI sales tool automates some part of the outbound sales process. It can find verified contact data and enrich it with firmographic and buying-signal context. It can also write and send personalized email sequences, or score which emails are likely to get a reply before you hit send.</p>
 <p>The five tools in this guide each specialize in one part of that process:</p>
@@ -114,6 +116,8 @@ const post: BlogPost = {
 <p>For a founder doing their own outbound, the honest answer is that you don't need all five categories on day one. You need a contact database and a way to send emails, full stop.</p>
 <p>Everything else in this guide is a layer you add once a specific bottleneck shows up: bad data, low reply rates, or too many mailboxes to manage by hand.</p>
 <p>The category has consolidated hard in the last year. Salesloft and Clari completed a roughly $450M ARR merger in December 2025. Most of the standalone tools that survive as strong founder picks in 2026 are the ones that stayed narrow and cheap rather than trying to become a full RevOps suite.</p>
+
+<img src="https://images.unsplash.com/photo-1758556549027-879615701c61?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop and notebook used to compare sales tool pricing plans" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <h2>Pricing — the two headline numbers that changed in 2026</h2>
 <p>Clay's March 11, 2026 pricing overhaul is the single most important update in this category for budget-conscious buyers. The old three-tier self-serve structure is gone for new signups: Starter at $149/month, Explorer at $349/month, Pro at $800/month.</p>
@@ -175,6 +179,8 @@ const post: BlogPost = {
 <p>Instantly and Smartlead sit in between. Both require a proper domain warm-up period. This typically means two to four weeks of gradually ramping sending volume on a fresh domain, before high-volume cold email is safe to run without tanking deliverability.</p>
 <p>Skipping or rushing that warm-up period is the single most common mistake founders report on both platforms' G2 reviews. That's true regardless of how "instant" either product's name suggests the process should be.</p>
 
+<img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A MacBook Pro running a sales automation workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+
 <h2>India pricing and access</h2>
 <p>All five tools bill in USD by credit card. None of the pricing pages checked for this guide mention UPI, Razorpay, or other India-specific payment methods. Per-seat pricing on Apollo and Instantly's higher tiers compounds fast when converted from INR.</p>
 <p>For an Indian founder or small team, Apollo's genuine free plan and Lavender's free 5-emails-a-month tier are the lowest-friction ways to test this category. You can try it before committing a card to a recurring international subscription.</p>
@@ -184,6 +190,8 @@ const post: BlogPost = {
 <p>Across the category as a whole, not any single tool, here's the honest trade-off a founder is making by adopting an AI sales stack instead of manual prospecting.</p>
 
 <h2>Who should use an AI sales tool stack</h2>
+<img src="https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A founder's laptop set up for daily outbound sales work" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h3>Best for</h3>
 <p>Solo founders and small teams under 20 reps who are past the "cold-email 20 people a week by hand" stage. These are teams that need to scale outbound without hiring a dedicated SDR. Apollo alone covers most of this group's needs for the first several months.</p>
 <p>Many of these same founders are also assembling a wider toolkit — see <a href="/blog/best-ai-tools-for-freelancers-2026/">Best AI Tools for Freelancers</a> and <a href="/blog/best-ai-marketing-tools-2026/">Best AI Marketing Tools 2026</a> for the categories this guide doesn't cover.</p>
@@ -192,6 +200,8 @@ const post: BlogPost = {
 <h3>Skip if</h3>
 <p>You're pre-product-market-fit and don't yet have a repeatable offer to test outbound against. A $49–495/month recurring bill is the wrong first purchase before you know what message actually converts.</p>
 <p>You also need INR billing or local payment support, which none of the five tools here currently offer. If your list is under 100 contacts, a free Apollo account and a personal Gmail account will outperform any paid stack until volume really requires automation.</p>
+
+<img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop screen showing a completed sales stack ready to run" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <h2>Final verdict — worth it in 2026?</h2>
 <p>Yes, but sequence the purchases to match your actual bottleneck instead of buying the full stack on day one:</p>

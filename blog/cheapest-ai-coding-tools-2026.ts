@@ -105,6 +105,8 @@ const post: BlogPost = {
 </table>
 </div>
 
+<img src="https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A MacBook Air open to a budget AI coding assistant" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>How to Pick the Cheapest Tool for Your Workflow</h2>
 <p>Price alone doesn't tell you which tool fits. Use these four steps to narrow it down fast.</p>
 <ol style="margin:16px 0;padding-left:24px;line-height:1.9;font-size:14.5px;">
@@ -113,6 +115,8 @@ const post: BlogPost = {
   <li><strong>Match the upgrade to the limit.</strong> If completions are the bottleneck, GitHub Copilot ($10) solves it. If codebase context is the bottleneck, Cursor ($20) or Windsurf ($15) solve it.</li>
   <li><strong>Re-check every 6 months.</strong> Pricing and free-tier limits change often in this category. Confirm the current terms on the official page before renewing.</li>
 </ol>
+
+<img src="https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop screen showing an affordable AI coding tool in use" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>The Free Options That Actually Work</h2>
 

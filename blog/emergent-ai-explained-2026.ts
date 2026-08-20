@@ -64,6 +64,8 @@ const post: BlogPost = {
   <a href="/best-ai-productivity-tools/" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Compare AI Productivity Tools →</a>
 </div>
 
+<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A group reviewing AI model behavior together on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>What is emergent AI?</h2>
 <p>The term comes from complex systems research, not AI originally. Physicist Philip Anderson described emergence in 1972. It's what happens when quantitative changes in a system produce qualitative changes in behavior. Water molecules don't "flow" on their own, but enough of them together do.</p>
 <p>Applied to AI, researchers define an ability as emergent if it's missing in smaller models but present in larger ones. And the jump can't be predicted just by extrapolating the smaller model's performance curve.</p>
@@ -75,6 +77,8 @@ const post: BlogPost = {
 <p>AI researchers borrowed the word deliberately, because the pattern looked similar. It's a property of the whole system that you couldn't predict just by studying its smaller parts alone.</p>
 <p>What makes emergent AI different from ordinary "the new model is better" marketing is specificity. A capability isn't emergent just because GPT-5.5 scores higher than GPT-4o on a benchmark. That's expected, gradual improvement.</p>
 <p>It's emergent when a task sits at or near zero success for every smaller model you test. Then it jumps to well above chance the moment you cross a particular size, with nothing hinting at the jump beforehand. That's the part researchers find truly surprising, and the part that's hardest to plan around when building a product on these models.</p>
+
+<img src="https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A researcher sitting beside a monitor analyzing AI outputs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Real examples of emergent abilities in AI</h2>
 <p>Emergence isn't one thing — it shows up in a few distinct forms depending on what changed about the model.</p>
@@ -91,6 +95,8 @@ const post: BlogPost = {
 <p>Emergence isn't limited to text. When models gained the ability to process images alongside text, in tools like GPT-4V, Gemini, and Claude's vision-capable versions, new behaviors showed up at the intersection. None of these were directly trained for either modality alone.</p>
 <p>Examples include reading handwriting in a photo, reasoning about a chart the model never saw labeled, and reading the emotional tone of a scene from visual cues. None of these abilities were on their own programmed. They came from combining scale with multimodal training.</p>
 
+<img src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People sitting in front of computer monitors studying AI systems" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>How would you actually notice emergent abilities in AI tools?</h2>
 <p>You won't see a changelog entry announcing it directly. It shows up as a capability the previous version couldn't do at all, not one it did worse. A few practical signals worth watching for:</p>
 <p><strong>The tool suddenly handles a task class it used to refuse or fail outright on.</strong> This isn't a case of the summary being written a bit better. It's the tool following a five-step conditional instruction it used to lose track of by step three.</p>
@@ -99,12 +105,16 @@ const post: BlogPost = {
 <p><strong>The vendor's own marketing starts using words like "reasoning," "planning," or "autonomous"</strong> for a feature that used to be described as generation. Vendors tend to reach for this language right around a real capability jump, even when they don't use the word "emergent" themselves.</p>
 <p>None of these signals prove genuine emergence in the strict research sense. They're consumer-facing symptoms of the same underlying pattern. They're useful, though, for deciding whether to re-test a tool you dismissed a year ago.</p>
 
+<img src="https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person using a laptop to research emergent AI behavior" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Is emergent AI real, or a "mirage"?</h2>
 <p>This is the honest, unresolved part, and any guide that skips it is oversimplifying. In 2023, Stanford researchers Rylan Schaeffer, Brando Miranda, and Sanmi Koyejo published a widely discussed rebuttal. They argued that many claimed emergent abilities are a "mirage": an artifact of the metrics researchers chose, not a real property of the models.</p>
 <p>Their argument: score a task all-or-nothing, where every digit of a sum must be exactly right or it scores zero, and performance looks like a sudden jump. Switch to a metric that gives partial credit, and the same model shows smooth, predictable improvement with scale instead. There's no jump at all.</p>
 <p>Researchers on the other side of the debate have pushed back with counterexamples. These include tasks with a hard minimum-complexity requirement, where a model truly cannot solve the problem below a certain internal capacity, no matter how you score it. That argues against emergence being purely a measurement choice.</p>
 <p>The honest position in 2026 is that this debate is still open. What isn't in dispute: large models have capabilities smaller models lack, and nobody directly programmed those specific capabilities in.</p>
 <p>Whether you call that "emergence" or "a scaling curve that looks sudden under the wrong metric" doesn't change what it means for you as a tool user. Model updates can still surprise you in both directions.</p>
+
+<img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Two computer monitors used to compare AI model outputs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Emergent behavior in AI agents — the riskier, 2026 version</h2>
 <p>The version of this getting real attention in 2026 isn't about one model getting bigger. It's about what happens when two or more AI agents interact. Predicting what a single model will suddenly be able to do is already hard. Predicting what two capable agents will jointly figure out when coordinating is exponentially harder.</p>
@@ -125,6 +135,8 @@ const post: BlogPost = {
 <p>This is also where the distinction between <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI agents and plain automation</a> earns its keep. A rules-based automation, trigger leads to fixed action, cannot exhibit emergent behavior by definition. It does exactly what it was configured to do, every time.</p>
 <p>The risk profile described here is specific to systems that reason and adapt at each step. That's exactly the category marketed as "AI agents" rather than automation.</p>
 
+<img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person using a computer to test an AI model" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Why this actually matters if you use AI tools</h2>
 <p>You don't need to follow the research debate to get practical value from the concept. Four things follow directly from it:</p>
 <ol style="margin:12px 0 12px 24px;line-height:2;">
@@ -133,6 +145,8 @@ const post: BlogPost = {
   <li><strong>Your automation can develop behavior you didn't design.</strong> If you're chaining agents in a workflow tool, treat unplanned coordination as a real possibility. Add human checkpoints on anything consequential, like payments, external messages, or deleting data.</li>
   <li><strong>Prompting technique effectiveness isn't universal.</strong> A trick like asking a model to plan before answering can work brilliantly on a frontier model and do nothing on a smaller one in the same family. If a tutorial technique isn't working, the model may simply sit below the threshold where it produces a gain.</li>
 </ol>
+
+<img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Lines of code representing the training process behind an AI model" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>What this means for prompt engineering specifically</h2>
 <p>Prompt engineering as a discipline exists largely because of in-context learning, an emergent ability in its own right. Techniques like few-shot examples, chain-of-thought instructions, and role-based framing only became reliable, teachable skills once models crossed the scale where they could actually use them.</p>
@@ -178,6 +192,8 @@ const post: BlogPost = {
   </table>
 </div>
 
+<img src="https://images.unsplash.com/photo-1673767298248-b128f17f89af?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person using a phone alongside a laptop to test an AI tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Common misconceptions about emergent AI</h2>
 <p><strong>"Emergent means the AI is becoming conscious or self-aware."</strong> No credible researcher on either side of the mirage debate makes this claim. Emergent abilities describe measurable task performance: solving arithmetic, following multi-step instructions, coordinating with another agent. They don't describe subjective experience. Conflating the two is where most of the overheated headlines about this topic come from.</p>
 <p><strong>"If a capability is emergent, it's permanent and stable."</strong> Not necessarily. Some capabilities that appeared emergent in earlier model generations have been reproduced more smoothly in later ones, once training methods improved. The sharp jump was partly an artifact of that specific generation's training recipe, not a fixed law about model behavior.</p>
@@ -195,7 +211,7 @@ const post: BlogPost = {
 
 <div style="margin:14px 0 24px;">
   <a href="/blog/multi-agent-ai-systems-explained-2026" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Read: How Multi-Agent AI Systems Work →</a>
-  <a href="https://perplexity.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Test a Frontier Model Yourself →</a>
+  <a href="https://perplexity.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity's Frontier Model Free →</a>
 </div>
 
 <h2>So, is emergent AI real, in the end?</h2>

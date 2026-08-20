@@ -79,6 +79,8 @@ const post: BlogPost = {
 <p>Indian freelancers on Fiverr, Upwork, and local platforms like Internshala or Truelancer face a different reality. USD pricing eats into margins, some platforms won't take Indian cards, and briefs often want regional language awareness.</p>
 <p>This guide was researched just for that context. Every tool below was checked for India-specific pricing and free-tier access without a credit card. We also looked at real usage patterns in Indian freelancer communities on Reddit (r/india, r/freelanceIndia) and Quora India.</p>
 
+<img src="https://images.unsplash.com/photo-1621293954908-907159247fc8?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A freelancer working from a home office setup" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Quick Comparison: India-Ready AI Tools for Freelancers</h2>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
@@ -131,6 +133,8 @@ const post: BlogPost = {
 </table>
 </div>
 
+<img src="https://images.unsplash.com/photo-1535953472862-9cc610a70f8a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A freelancer's desk with a laptop used for client work" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>1. Grammarly: The Non-Negotiable for Every Indian Freelancer</h2>
 <p><strong>Type: Writing &amp; editing. Free plan: yes. INR price: ₹699/month (yearly). UPI accepted.</strong></p>
 <p>If you communicate with clients in English, and on Fiverr and Upwork you always do, Grammarly is the single highest-ROI tool you can add to your workflow. The free plan catches grammar errors, spelling issues, and basic tone problems. That alone is worth it for every proposal, client update, and deliverable you send.</p>
@@ -144,6 +148,8 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+<img src="https://images.unsplash.com/photo-1646446812442-d070b28dcd54?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop on a bed used for freelance work from home" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>2. Rytr: Best AI Writing Tool for Indian Content Freelancers</h2>
 <p><strong>Type: AI writing. Free plan: 10,000 characters a month. INR price: about ₹750/month.</strong></p>
 <p>Rytr is the AI writing tool with the best value-to-quality ratio for Indian freelancers. The free plan gives you 10,000 characters per month, enough for 2–3 complete blog drafts or 8–10 social media posts. The paid Saver plan (~₹750/month) removes limits entirely.</p>

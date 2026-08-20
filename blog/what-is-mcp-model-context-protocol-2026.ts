@@ -125,6 +125,8 @@ const post: BlogPost = {
 </ol>
 <p>This entire exchange happens over a standard, stateful connection, defined by the spec's <strong>2025-11-25 revision</strong>. It uses JSON-RPC 2.0, the same lightweight remote-procedure-call format used across much of current web infrastructure. That's a shared standard, not a proprietary format unique to MCP.</p>
 
+<img src="https://images.unsplash.com/photo-1531668383211-64743e924c66?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A blue LAN cable plugged into a router, representing a protocol connection" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>MCP vs Traditional APIs: A Technical Comparison for Non-Developers</h2>
 <p>MCP does not replace APIs. It standardises how AI models discover and call them. An MCP server is typically a thin layer that wraps an API, or a database connection, or a file system.</p>
 <p>It puts that resource in a format an AI model can understand and use without custom code on the AI application's side. The clearest way to see the difference is side by side.</p>
@@ -169,6 +171,8 @@ const post: BlogPost = {
 <p>For a non-developer, the real takeaway is simpler than the architecture diagram suggests.</p>
 <p><strong>MCP means an AI assistant can be told to "connect to my database" or "read my GitHub issues" through a setup step rather than a custom-built feature.</strong> That shift is what made AI coding assistants able to act on live project data in 2026, rather than only the code visible in the current file.</p>
 
+<img src="https://images.unsplash.com/photo-1691435828932-911a7801adfb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A close-up of network wires connected together" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Which AI Platforms Currently Support MCP (June 2026)</h2>
 <p>MCP adoption accelerated through 2025 and into 2026 across three distinct categories of tools: development environments, automation platforms, and data or research products. Search interest in "MCP" and "Model Context Protocol" rose sharply over the past month. That tracks the pace at which mainstream tools outside Anthropic's own ecosystem added native support.</p>
 
@@ -197,6 +201,8 @@ const post: BlogPost = {
 <p>Beyond coding and automation, MCP servers now exist for a wide range of data and business platforms. Think CRMs, analytics tools (Google Ads, GA4, Ahrefs, Semrush among the most common), spreadsheet and database connectors, and project management tools.</p>
 <p>The real pattern is simple: any platform with an API can be exposed as an MCP server. A growing number of SaaS vendors are building first-party servers rather than waiting for the community to reverse-engineer one.</p>
 <p>By early 2026, industry estimates placed the number of publicly available MCP servers above 10,000. That spans everything from internal company tools to consumer SaaS products, with the ecosystem still accelerating rather than plateauing.</p>
+
+<img src="https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A bundle of blue network wires connected to each other" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>What MCP Adoption Means for the AI SaaS Market in 2026</h2>
 <p>MCP's spread changes the calculus for SaaS products in a specific way. A tool's value to AI-native workflows is increasingly determined by whether it has a usable MCP server. That matters more now than the quality of its traditional API documentation.</p>

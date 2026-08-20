@@ -29,10 +29,12 @@ const post: BlogPost = {
   content: `<p>A missed call at a small business isn't just a missed call. It's a customer who called the next name on the list instead of leaving a voicemail. Finding the <strong>best ai receptionist for small business</strong> use in 2026 means looking past the headline price.</p>
 <p>The category has gone from a handful of clunky IVR bots to genuinely conversational AI. That AI books appointments, qualifies leads, and answers on the first ring, 24/7.</p>
 <p>I'm Navneet Arya, and for this guide I checked pricing pages directly for five of the most-recommended AI receptionists: AIRA, Smith.ai, Rosie, Dialzara, and Goodcall. Nearly every comparison post online quotes a starting price that doesn't match what a real business ends up paying once overages and per-location fees are added.</p>
-<p>This is deliberately a different category from voice-agent platforms like Retell AI or Vapi, covered separately in our <a href="/blog/best-ai-voice-agent-small-business-2026/">best AI voice agent for small business guide</a>. Those are developer tools you configure yourself. Everything below is a done-for-you <strong>ai answering service for small business</strong>: sign up, connect a phone number, and it answers calls without you touching an API.</p>
+<p>This is deliberately a different category from voice-agent platforms like Retell AI or Vapi, covered separately in our <a href="/blog/best-ai-voice-agent-small-business-2026/">best AI voice agent for small business guide</a>. Those are developer tools you configure yourself.</p>
+<p>Everything below is a done-for-you <strong>ai answering service for small business</strong>: sign up, connect a phone number, and it answers calls without you touching an API.</p>
+
+<img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business owner checking missed calls on a smartphone at the front desk" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>TL;DR — best ai receptionist for small business in 30 seconds</h2>
-<img src="https://images.unsplash.com/photo-1606836591695-4d58a73eba1e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Colleagues having a business meeting in an office room" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>AIRA is the best overall pick for most small businesses in 2026. At $24.95/month, you get bilingual (English/Spanish plus 29 other languages) support, appointment booking, and CRM integrations with no feature gating between tiers.</p>
 <p>Smith.ai is the strongest choice if you want a real human to step in on complex calls, starting at $95/month for its AI-only tier. Rosie is purpose-built for HVAC, plumbing, electrical, and similar trades, starting at $49/month.</p>
 <p>Real-time appointment booking requires its $149/month Scale plan, though. Dialzara is the cheapest genuine entry point at $29/month for solopreneurs testing the category. Goodcall charges per unique customer rather than per minute, starting at $79/month per agent. That model suits predictable-volume, multi-location businesses.</p>
@@ -99,7 +101,10 @@ const post: BlogPost = {
 </div>
 
 <h3>AIRA — best overall value</h3>
-<p>AIRA's pitch is simple: every plan, including the $24.95/month Starter tier, includes full bilingual support across 31 languages. That means 24/7 answering, appointment booking, and CRM integrations with HubSpot, Pipedrive, and Zapier, on every tier. It's a meaningfully different structure from most of this list, where cheaper tiers strip out the features that actually make a receptionist useful.</p>
+<p>AIRA's pitch is simple: every plan, including the $24.95/month Starter tier, includes full bilingual support across 31 languages. That means 24/7 answering, appointment booking, and CRM integrations with HubSpot, Pipedrive, and Zapier, on every tier.</p>
+<p>It's a meaningfully different structure from most of this list, where cheaper tiers strip out the features that actually make a receptionist useful.</p>
+
+<img src="https://images.unsplash.com/photo-1522241112606-b5d35a468795?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop and pen next to a business calendar used for booking client appointments" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Roughly 41 million US residents speak Spanish at home. Spanish-preferring callers make up an estimated 25–40% of inbound calls for service businesses in Texas, California, Florida, New York, and Illinois. Bilingual support at no surcharge is a real differentiator here, not just a marketing line.</p>
 <p>The honest caveat: AIRA's own blog is extremely SEO-aggressive and dominates a large share of the search results for "best ai receptionist" queries. That makes independent, third-party verification of its claims harder to find than for competitors with a longer public review history. Overage runs $0.75–$1.50 per call once you exceed your plan's included volume.</p>
 
@@ -144,7 +149,10 @@ const post: BlogPost = {
 </p>
 
 <h3>Goodcall — best for predictable multi-location billing</h3>
-<p>Goodcall's core differentiator is its pricing model: you're charged per unique customer served per month, not per minute or per call. A customer who calls back ten times in a month still counts as one unique customer, not ten. Starter runs $79/month per agent for 100 unique customers, Growth is $129/month for 250, and Scale is $249/month for 500.</p>
+<p>Goodcall's core differentiator is its pricing model: you're charged per unique customer served per month, not per minute or per call. A customer who calls back ten times in a month still counts as one unique customer, not ten.</p>
+<p>Starter runs $79/month per agent for 100 unique customers, Growth is $129/month for 250, and Scale is $249/month for 500.</p>
+
+<img src="https://images.unsplash.com/photo-1470290378698-263fa7ca60ab?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A modern reception counter representing a multi-location business billing setup" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>There's a $0.50 overage fee per additional customer beyond the cap. Every tier includes unlimited call minutes and AI tokens once you're within your unique-customer allowance. That's the opposite trade-off of Rosie's minute-metered model.</p>
 <p>Read the fine print before you sign up for multiple locations: each Goodcall "agent" is tied to one phone number. A business with three locations on separate lines pays three times the base tier, not once.</p>
 <p>Aggregate third-party review scores sit around 3.4/5. The most common complaints center on unpredictable cost spikes during a busy marketing push and, somewhat ironically for a phone-answering company, difficulty reaching a human for support.</p>
@@ -156,6 +164,10 @@ const post: BlogPost = {
 
 <h2>ai receptionist pricing: is it worth it?</h2>
 <p>Run the comparison against what it replaces, not just against the other tools on this list. A full-time human receptionist typically costs $3,000–$4,400 a month once salary and overhead are counted.</p>
+
+<div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;border-radius:8px;padding:14px 18px;margin:8px 0 24px;">
+  <p style="margin:0;"><strong>💡 Pro tip:</strong> Before you sign up for any ai receptionist for small business, ask the sales rep for the exact overage rate in writing. Rosie's minute pool and Goodcall's per-customer cap both look generous on the pricing page, but the real monthly bill only shows up once you cross that line.</p>
+</div>
 <p>A traditional live answering service or virtual receptionist for small business use, like Ruby or AnswerConnect, runs $235–$800+/month. That's for a fraction of the call volume most of these AI tools include.</p>
 <p>Against that baseline, even Smith.ai's premium hybrid tier at $292.50/month for 30 calls is a discount. The budget-tier ai phone answering service options (Dialzara at $29, Rosie at $49) are a rounding error by comparison.</p>
 <p>The real math to run is missed-call cost, not sticker price. Industry research on home-service businesses specifically found that contractors miss 60–80% of incoming calls. A single captured $3,500–$4,000 job pays for a full year of any tool on this list.</p>
@@ -165,11 +177,13 @@ const post: BlogPost = {
 
 <h2>Setup time — how technical does this get?</h2>
 <p>One reason the best ai receptionist for small business shortlist skews toward these five specifically: none of them require touching an API or writing a prompt from scratch. Here's roughly what the process looks like across all five tools:</p>
+
+<img src="https://images.unsplash.com/photo-1705909773284-bcbbad9a4023?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A reception desk with a laptop set up for a quick, guided onboarding flow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ol style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Connect a phone number.</strong> Either port an existing business line or get a new one from the provider — takes a few minutes on Dialzara and AIRA's guided flow.</li>
   <li><strong>Describe your business.</strong> Enter hours, services, and common questions. Rosie's onboarding can scan your existing website to pre-fill this step automatically, which shortens setup further for a trades business that already has a working site.</li>
   <li><strong>Pick a voice and connect your calendar.</strong> Most providers offer a handful of voice options and a one-click Google Calendar or Outlook connection for booking.</li>
-  <li><strong>Test with real calls and refine.</strong> Budget 30–60 minutes over the first week catching edge cases — Goodcall's forms-and-flows system and Smith.ai's custom intake scripts reward this extra setup time if you want the AI to qualify leads by industry-specific criteria, rather than just take a message.</li>
+  <li><strong>Test with real calls and refine.</strong> Budget 30–60 minutes over the first week catching edge cases. Goodcall's forms-and-flows system and Smith.ai's custom intake scripts reward this extra setup time. Use it if you want the AI to qualify leads by industry-specific criteria, rather than just take a message.</li>
 </ol>
 <p>None of the five require a developer at any point. That's the core distinction versus the build-it-yourself voice-agent platforms covered separately below.</p>
 
@@ -177,6 +191,8 @@ const post: BlogPost = {
 <p>It's worth being explicit about the difference, since the two categories get lumped together in a lot of listicles. Every tool in this guide is a finished consumer product: sign up, connect a number, and it works.</p>
 <p>Our separate <a href="/blog/best-ai-voice-agent-small-business-2026/">best ai voice agent for small business</a> guide covers Retell AI, Vapi, and Bland instead. That's developer-facing infrastructure that a technical freelancer or agency configures and often resells under their own brand. If you want something running today without touching an API, everything above is the right category.</p>
 <p>If you're a developer building a productized offering for multiple clients, the voice-agent platforms give you more control at a lower per-minute cost. That comes in exchange for real setup time.</p>
+
+<img src="https://images.unsplash.com/photo-1608979827489-2b855e79debe?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A bright modern office reception area representing an India-based small business" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <h2>India pricing and access</h2>
 <p>None of the five tools in this comparison publish INR-specific pricing, and none of their pricing pages mention UPI or Razorpay support. All billing runs in USD via credit card. That's a meaningful limitation for Indian small businesses and freelancers, since it adds currency-conversion and international card fees on top of the US dollar prices quoted above.</p>
@@ -187,6 +203,8 @@ const post: BlogPost = {
 
 <h2>Who should use an ai receptionist for small business</h2>
 
+<img src="https://images.unsplash.com/photo-1553369728-15ec6971afaf?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A solo tradesperson working while their phone line stays covered by an AI receptionist" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+
 <h3>Best for</h3>
 <p>Service businesses that lose leads to missed calls outside business hours. Solo operators who are also the one doing the work (plumber, stylist, consultant) and can't answer the phone mid-job.</p>
 <p>Multi-location businesses that want predictable monthly billing instead of per-minute surprises. If you're already comfortable with broader automation tooling, this pairs naturally with the platforms covered in our <a href="/blog/best-no-code-ai-automation-tools-2026/">best no-code AI automation tools</a> guide.</p>
@@ -194,6 +212,8 @@ const post: BlogPost = {
 <h3>Skip if</h3>
 <p>Your call volume is low enough that a shared inbox or basic voicemail transcription genuinely covers it. Or your real need is chat-based support rather than phone calls: our <a href="/blog/best-ai-agents-customer-service-2026/">AI agents for customer service comparison</a> covers that adjacent, often cheaper category instead.</p>
 <p>Also skip any of these if you specifically need INR billing or local payment support, since none currently offer it.</p>
+
+<img src="https://images.unsplash.com/photo-1660557989695-14fac79c086d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A polished reception desk symbolizing a small business finally staffed around the clock" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <h2>Final verdict: worth it in 2026?</h2>
 <p>Yes, and the price-to-feature math has genuinely improved this year. AIRA is the clearest starting point for most small businesses. It offers full features on every tier, bilingual support included at no surcharge, and the lowest full-featured entry price in this comparison at $24.95/month.</p>

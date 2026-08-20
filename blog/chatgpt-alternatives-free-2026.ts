@@ -75,10 +75,10 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0d9488;border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;">
   <p style="font-weight:600;margin:0 0 8px;color:#0d9488;font-size:13px;text-transform:uppercase;letter-spacing:.04em;">Quick Verdict</p>
-  <p style="margin:0;line-height:1.7;"><strong>Best overall:</strong> Gemini, with an unlimited free plan, real-time web access, and no rate limits. <strong>Best for research:</strong> Perplexity, where every answer has clickable source citations. <strong>Best for content creation:</strong> Rytr, with template-guided writing that's easier than a blank prompt. <strong>Best for SEO blogging:</strong> Writesonic, with structured article output and built-in SEO formatting. All four are permanently free with no credit card required.</p>
+  <p style="margin:0;line-height:1.7;"><strong>Best overall:</strong> Gemini, with an unlimited free plan, real-time web access, and no rate limits. <strong>Best for research:</strong> Perplexity, where every answer has clickable source citations.</p>
+  <p style="margin:8px 0 0;line-height:1.7;"><strong>Best for content creation:</strong> Rytr, with template-guided writing that's easier than a blank prompt. <strong>Best for SEO blogging:</strong> Writesonic, with structured article output and built-in SEO formatting. All four are permanently free with no credit card required.</p>
 </div>
 <h2>What Are the Best Free ChatGPT Alternatives in 2026?</h2>
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People sitting at a table holding pens during a comparison discussion" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The best free ChatGPT alternatives in 2026 are Gemini overall, Perplexity for research, Rytr for template-guided content creation, and Writesonic for SEO-structured blog drafts. Gemini wins on its unlimited free plan and real-time web access, while Perplexity's edge is clickable citations. All four are permanently free with no credit card required.</p>
 <p>ChatGPT is the default AI chatbot for most people, and for good reason. But its free plan has real limits in 2026. Rate limits kick in during busy hours. Real-time web search isn't available on the free tier. And GPT-4o access slows down when demand spikes.</p>
 <p>This analysis covers every serious free alternative evaluated on the same set of tasks: writing blog intros, researching niche topics, summarising articles, generating code snippets, and brainstorming content ideas. Some of these tools aren't just "good enough." They're genuinely better than free ChatGPT for specific use cases.</p>
@@ -89,6 +89,8 @@ const post: BlogPost = {
   <p style="margin:0;line-height:1.7;">Don't pick just one. Most heavy AI users on Reddit run two tools side by side — a chat-style model like Gemini for brainstorming, and a citation-based tool like Perplexity for anything that needs to be fact-checked. That combo alone replaces 90% of what ChatGPT Plus is used for.</p>
 </div>
 
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A MacBook Pro screen showing an AI chatbot interface" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>How to Pick the Right Free ChatGPT Alternative</h2>
 <p>Not sure which one fits your workflow? Work through these four questions in order.</p>
 <ol style="margin:12px 0 12px 24px;line-height:2;">
@@ -97,6 +99,8 @@ const post: BlogPost = {
   <li><strong>Are you intimidated by blank prompt boxes?</strong> Rytr's templates remove the guesswork for short-form content.</li>
   <li><strong>Is your main output long-form blog content?</strong> Writesonic's Article Writer is built specifically for that.</li>
 </ol>
+
+<img src="https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop open to a free AI chat tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Quick Comparison: Free ChatGPT Alternatives</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -143,6 +147,8 @@ const post: BlogPost = {
 </table>
 </div>
 
+<img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop screen used to compare free AI chatbots" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>1. Gemini: The Best All-Round Free Alternative</h2>
 <p><strong>Rating: 4.5/5 · Free plan: Unlimited conversations</strong></p>
 <p>Google's Gemini is the closest thing to a free ChatGPT replacement. It handles writing, brainstorming, coding, and research without any conversation caps on the free tier.</p>
@@ -158,6 +164,8 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://gemini.google.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Gemini →</a>
 </div>
+<img src="https://images.unsplash.com/photo-1608306448197-e83633f1261c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop displaying a blue-lit AI assistant interface" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>2. Perplexity: The Best Free Alternative for Research</h2>
 <p><strong>Rating: 4.6/5 · Free plan: Unlimited basic searches, 5 Pro searches/day</strong></p>
 <p>Perplexity isn't trying to be ChatGPT. It's a research engine, and it's the best one you can get for free. Every answer comes with numbered links back to the source. That alone beats ChatGPT for any task where facts matter. See our full <a href="/tools/perplexity" style="color:var(--a1);font-weight:600;">Perplexity review</a> for pricing tiers and hands-on notes.</p>
