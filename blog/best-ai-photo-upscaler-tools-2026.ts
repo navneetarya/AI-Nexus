@@ -100,8 +100,9 @@ const post: BlogPost = {
   </ol>
 </nav>
 
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="An unpaired red sneaker photographed for an ecommerce product listing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+
 <h2 id="quick-summary">Best AI Image Upscaler in 2026</h2>
-<img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A turned-on iMac with Apple Magic Keyboard and mouse on a table" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>I'm Navneet Arya, and most "best AI image upscaler" roundups are written for photographers preparing gallery prints. That's a real use case, but it's not the one bringing most people to this page. You're probably an ecommerce seller looking for an <strong>ai photo enhancer for ecommerce</strong> listing photos.</p>
 <p>Or you're trying to rescue a scanned family photo before it's the only copy left. This guide independently researches five AI image upscaler tools against both of those goals, verified against official pricing pages as of July 2026.</p>
 <p>The short version: PhotoRoom is the strongest all-round pick for <strong>ai upscaler for product photos</strong> because it bundles upscaling into a wider ecommerce editing workflow. Topaz Photo AI produces the sharpest raw detail if you're willing to pay a recurring subscription, and Upscale.media is the best genuinely free option if your needs are occasional.</p>
@@ -169,10 +170,13 @@ const post: BlogPost = {
   </table>
 </div>
 
+<img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A pair of athletic shoes staged on a white box for an ecommerce listing photo" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2 id="photoroom">#1 PhotoRoom: best for ecommerce product photos</h2>
 <p><a href="/tools/photoroom" style="color:#0ea5e9;font-weight:600;">PhotoRoom</a> is built around a different question than the other four tools here. Not "how do I upscale one image?" but "how do I get a listing-ready product photo in one pass?"</p>
 <p>As an <strong>ai photo enhancer for ecommerce</strong> use specifically, its Image Enhancer is included on every paid plan alongside background removal, shadow generation, and AI Fill. That matters because most sellers upscaling a product photo also need the background pulled and a shadow added, and doing that across three separate tools costs real time.</p>
-<p>PhotoRoom runs a five-tier structure in 2026. That's Free, Pro at $7.50/month (annual billing), Max at $20.99/month, a newer Ultra tier from $82.50/month, and custom Enterprise pricing. The free plan works fine to test output quality, but it stamps a watermark on exports and blocks commercial use, so any real seller needs at least the Pro tier.</p>
+<p>PhotoRoom runs a five-tier structure in 2026. That's Free, Pro at $7.50/month (annual billing), Max at $20.99/month, a newer Ultra tier from $82.50/month, and custom Enterprise pricing.</p>
+<p>The free plan works fine to test output quality, but it stamps a watermark on exports and blocks commercial use, so any real seller needs at least the Pro tier.</p>
 <p>First-time upgraders get a 7-day free trial on a paid plan, applied once per customer.</p>
 <p><strong>PhotoRoom: best for ecommerce sellers.</strong> Free plan available; Pro unlocks commercial use from $7.50/month.</p>
 <div style="margin:14px 0 24px;">
@@ -180,10 +184,13 @@ const post: BlogPost = {
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center"><a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.</p>
 
+<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A space gray Apple Watch photographed in sharp detail to test raw upscale quality" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2 id="topaz">#2 Topaz Photo AI / Gigapixel: best raw upscale quality</h2>
 <p>Topaz built its reputation on being the "pay once" upscaler, and if you've researched this category before, you likely remember the $99 Gigapixel license. That era ended in September 2025, when Topaz Labs discontinued perpetual licenses entirely.</p>
 <p>Every option in the current lineup, including Photo AI, Gigapixel, and the full Studio bundle, is now subscription-only. Existing owners of the old license keep their installed version, but new customers can no longer buy it outright.</p>
-<p>Current pricing runs standalone Gigapixel at roughly $29/month (or about $99–149/year on annual billing) and Photo AI at roughly $39/month (about $199/year). The full Topaz Studio bundle, which adds Video AI and the rest of the suite, runs $69/month month-to-month or roughly $33–45/month on an annual commitment. There is no free tier on any of these.</p>
+<p>Current pricing runs standalone Gigapixel at roughly $29/month (or about $99–149/year on annual billing) and Photo AI at roughly $39/month (about $199/year).</p>
+<p>The full Topaz Studio bundle, which adds Video AI and the rest of the suite, runs $69/month month-to-month or roughly $33–45/month on an annual commitment. There is no free tier on any of these.</p>
 <p>What you get for that price is genuinely the sharpest detail recovery in this comparison. Gigapixel's nine specialized upscale models run locally on your own GPU, which also means no per-image cloud cost once you own the subscription.</p>
 <p>That local-processing model is also why Topaz isn't the pick if you're looking for a <strong>best free ai image upscaler</strong> option. There's no trial tier at all, so you're committing to a subscription before you've even tested your own images.</p>
 <p>Topaz does run its own affiliate program, with commissions reported between 20% and 30% depending on the source. AI Nexus hasn't joined it yet, so the link below goes to Topaz's official site.</p>
@@ -191,6 +198,8 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://www.topazlabs.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See Topaz Photo AI →</a>
 </div>
+
+<img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A bottle and two jars stacked together, representing a batch of product photos processed at once" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2 id="letsenhance">#3 Let's Enhance: best for batch processing</h2>
 <p>Let's Enhance is a credit-based upscaler (1 image = 1 credit) with six specialized super-resolution models for photos, old scans, digital art, and product shots specifically. Its standout feature against every other tool here is credit rollover.</p>
@@ -205,6 +214,8 @@ const post: BlogPost = {
 <p>It's free forever, with no credit card required, for 2 to 3 upscales per month, capped at roughly 2x resolution. That's meaningfully more usable than a one-time trial credit pack, because it renews every month rather than expiring like Let's Enhance's or PhotoRoom's trial credits.</p>
 <p>Paid plans start at $9.99/month for 100 credits, scaling to $25.99/month for 1,000 credits, with better value on annual billing. Output quality tops out around 4x–8x depending on the source. The interface is deliberately simple: drag, drop, done.</p>
 <p>There are no separate editing tools beyond basic face enhancement and batch processing on paid tiers. No verifiable affiliate program was found for Upscale.media as of this research, so the link below goes to their official pricing page.</p>
+
+<img src="https://images.unsplash.com/photo-1528569937393-ee892b976859?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person opening a photo album to look through old grayscale family photos" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2 id="remini">#5 Remini: best for old & family photo restoration</h2>
 <p>Remini is a mobile-first app, not a web-based batch tool, and that distinction matters. It's built for one photo at a time, tapped through on a phone. That makes it the fastest option here for a specific job: rescuing a single old, blurry, or damaged family photo.</p>
