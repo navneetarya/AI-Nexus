@@ -48,6 +48,7 @@ const post: BlogPost = {
 </div>
 
 <h2>How to Spot the Next Fast-Growing AI Startup: 4 Signals</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Three founders sitting near a table discussing startup growth" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ol style="margin:12px 0;padding-left:20px;line-height:1.9;">
   <li><strong>Check for a moat beyond model access.</strong> If the pitch is "we give you GPT-4 with a nicer UI," that's not a moat. Look for proprietary data, deep workflow integration, or real domain expertise.</li>
   <li><strong>Look for one specific use case, not a general assistant.</strong> Perplexity won research. Cursor won coding. A startup trying to be everything to everyone rarely outgrows the model it's built on.</li>

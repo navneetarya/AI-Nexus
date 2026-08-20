@@ -92,6 +92,7 @@ const post: BlogPost = {
 </div>
 
 <h2>The Real State of AI Tool Spending in 2026</h2>
+<img src="https://images.unsplash.com/photo-1528109966604-5a6a4a964e8d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person working on a MacBook Pro at a desk, tracking AI tool costs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The AI tools market crossed $200 billion in annual software spend in 2026. The growth is not driven by enterprise procurement. It's driven by individuals and small teams buying $20/month subscriptions they found on Twitter.</p>
 <p>The problem is that most of those subscriptions are bought on demo excitement, not calculated ROI.</p>
 <p>What I consistently find when auditing AI tool stacks for small businesses: the average team is running 6–8 AI subscriptions. Of those, 3–4 overlap in function, and only 1–2 are genuinely positive-ROI.</p>

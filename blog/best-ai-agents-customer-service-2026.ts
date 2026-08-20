@@ -88,6 +88,7 @@ const post: BlogPost = {
 </div>
 
 <h2>How AI Agents Reshaped Customer Service in 2026</h2>
+<img src="https://images.unsplash.com/photo-1609619385002-f40f1df9b7eb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A customer service dashboard shown on a workstation" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Customer service volume hit a breaking point in 2024–2025. Tickets grew faster than hiring budgets. The cost of handling each ticket by hand kept rising past what most companies could sustain. The market didn't just patch old rule-based chatbots.</p>
 <p>It moved to a new kind of AI agent — one that reads conversation context, pulls live backend data, and writes real answers without a human in the loop.</p>
 <p>The tech behind this jump is retrieval-augmented generation, or RAG. These AI models don't just answer from training data. They pull facts from your own help centre articles, product docs, and past resolved tickets, then reason over them.</p>

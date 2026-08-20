@@ -116,6 +116,7 @@ const post: BlogPost = {
 </nav>
 
 <h2 id="tldr">TL;DR: the AI browser war in 30 seconds</h2>
+<img src="https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People at a conference table listening to a colleague present browser options" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Yes, the AI browser comparison for 2026 has a clear shape. ChatGPT Atlas, Perplexity Comet, and Dia are the three agentic browsers worth evaluating. None of them is a safe default replacement for your current browser without understanding what you're handing over.</p>
 <p>Comet is the most feature-complete for free. Atlas has the most carefully guardrailed agent mode. Dia has the most personal, memory-driven experience, and it collects the most data to deliver it. Navneet Arya has spent the past few weeks testing all three across daily research and browsing tasks for this AI browser comparison.</p>
 <p>The short version of the chatgpt atlas vs perplexity comet debate is simple. The "winner" depends entirely on whether you value guardrails or free full functionality more.</p>

@@ -63,6 +63,7 @@ const post: BlogPost = {
 </blockquote>
 
 <h2>Which Vibe Coding Tool Should You Use — Lovable, Bolt, or v0?</h2>
+<img src="https://images.unsplash.com/photo-1659083725992-9d88c12e719c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone on a boom arm in a developer's studio setup" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Lovable, Bolt, and v0 each win at a different job in 2026. Lovable is the best choice for complete beginners building a full-stack MVP. Bolt is strongest for frontend-heavy projects where you want framework flexibility. v0 by Vercel is built for generating UI components, rather than entire applications.</p>
 <p>In February 2025, Andrej Karpathy — former Tesla AI director and OpenAI founding member — coined the phrase "vibe coding." It describes a new way of building software.</p>
 <p>Instead of writing code line by line, you describe what you want in plain English. An AI handles the implementation. You keep refining by chatting, and you never touch the source directly.</p>

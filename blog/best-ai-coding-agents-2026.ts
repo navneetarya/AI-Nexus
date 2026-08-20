@@ -92,6 +92,7 @@ const post: BlogPost = {
 </div>
 
 <h2>What Changed in AI Coding in 2026: Agents vs Assistants</h2>
+<img src="https://images.unsplash.com/photo-1502209877429-d7c6df9eb3f9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A developer's iMac with Apple Magic Keyboard and mouse" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The dominant narrative in AI coding tools shifted in 2025–2026 from assistants to agents. The distinction matters practically. An AI coding assistant (GitHub Copilot, Tabnine, Codeium) sits beside the developer, completing lines, suggesting functions, and answering questions. The developer still has to start every action.</p>
 <p>An AI coding agent, in contrast, receives a task and breaks it into steps. It runs those steps on its own and checks the results (test failures, compiler errors, lint warnings). It then fixes its own mistakes and delivers an output, often without any human input between start and review.</p>
 <p>This capability shift was enabled by two developments. First, LLMs got much better at reading code. Claude Sonnet 4.6 surpassed 50% on SWE-bench Verified in agentic settings, meaning it autonomously resolves more than half of real GitHub issues.</p>

@@ -74,6 +74,7 @@ const post: BlogPost = {
 
   content: `
 <h2>What Are the Best Grammarly Alternatives in 2026?</h2>
+<img src="https://images.unsplash.com/photo-1615458318132-1f151a3d18f4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black and silver audio mixer board on a desk" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The best Grammarly alternatives in 2026 are QuillBot, LanguageTool, and Rytr. QuillBot is free and best for paraphrasing and rewriting. LanguageTool is a free pick if you write primarily in a language other than English. Rytr costs $9/month and is the pick if you need to generate new content rather than just edit.</p>
 <p><a href="https://grammarly.com" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a></p>
 <p>None of them fully match Grammarly's real-time tone detection, but all three cost less. Grammarly is the most well-known writing assistant on the market, and for good reason — but it's not the right tool for everyone.</p>

@@ -87,6 +87,7 @@ const post: BlogPost = {
 </div>
 
 <h2>How AI Reshaped Recruitment in 2026</h2>
+<img src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People talking while sitting beside a table during a hiring discussion" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Hiring changed a lot between 2023 and 2026. Applications per open role jumped roughly 300%, since AI writing tools made it easier to apply. That made a recruiter's job harder — more noise per role — and made AI screening tools the only real way to filter it.</p>
 <p>LinkedIn Recruiter's Boolean search was the industry standard for passive sourcing for fifteen years. It hit a wall once most good engineers stopped updating their profiles. Instead, they left signal elsewhere: GitHub activity, conference talks, open-source work, and technical writing.</p>
 <p>Two kinds of AI recruitment tools grew out of this pressure. The first is <strong>AI sourcing intelligence</strong>. These platforms use language models to read recruiter intent, like a request for a fintech backend engineer with payment processing experience. They scan many public sources at once to surface candidates that Boolean search misses.</p>

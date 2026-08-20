@@ -115,6 +115,7 @@ const post: BlogPost = {
 
 
 <h2>Best AI Video Generators 2026: What's Actually New</h2>
+<img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black microphone mounted on an arm, part of a video production setup" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>OpenAI shut down the consumer Sora web and app on April 26, 2026, with the developer API scheduled to follow on September 24, 2026. That single decision reshuffled the entire category. It's the reason "best AI video generators 2026" searches have spiked over the past two months.</p>
 <p>I'm Navneet Arya, and this guide ranks the five text-to-video and image-to-video tools that are genuinely worth paying for right now. It's based on verified June 2026 pricing, hands-on community reporting from Reddit's r/VideoEditing and r/ArtificialIntelligence, and the credit-math gotchas that pricing pages rarely make obvious.</p>
 <p>"AI video generator" covers a specific job: turning a text prompt or a still image into a short video clip, usually 5 to 15 seconds. It uses a model trained to predict motion, lighting, and physics, frame by frame.</p>
