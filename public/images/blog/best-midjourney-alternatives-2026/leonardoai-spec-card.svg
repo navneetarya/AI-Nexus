@@ -1,0 +1,18 @@
+<svg viewBox="0 0 640 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Leonardo.ai — Best Overall · 4.5/5 — Free / $12/mo">
+  <defs>
+    <linearGradient id="g0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="190" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="0" y="0" width="10" height="190" rx="5" fill="url(#g0)"/>
+  <circle cx="580" cy="48" r="34" fill="url(#g0)" opacity="0.12"/>
+  <circle cx="580" cy="48" r="22" fill="url(#g0)"/>
+  <text x="580" y="55" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Le</text>
+  <text x="28" y="46" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="800" fill="#111827">Leonardo.ai</text>
+  <text x="28" y="70" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="#0D9488" letter-spacing="0.4">BEST OVERALL · 4.5/5</text>
+  <rect x="28" y="86" width="1" height="0" fill="none"/>
+  <text x="28" y="112" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="800" fill="#111827">Free / $12/mo</text>
+  <text x="28" y="146" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#4b5563">Web-based, generous free tier, multiple art</text><text x="28" y="166" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#4b5563">models.</text>
+</svg>

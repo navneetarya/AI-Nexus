@@ -1,0 +1,14 @@
+<svg viewBox="0 0 640 228" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three Places Emergence Shows Up">
+  <defs>
+    <linearGradient id="d2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DB2777"/>
+      <stop offset="100%" stop-color="#9d174d"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="228" rx="16" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="0" y="0" width="640" height="46" rx="16" fill="url(#d2)"/>
+  <rect x="0" y="30" width="640" height="16" fill="url(#d2)"/>
+  <text x="24" y="30" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="800" fill="#ffffff">Three Places Emergence Shows Up</text>
+  <circle cx="34" cy="92" r="4" fill="#DB2777"/><text x="50" y="97" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">In-context learning — picks up a new rule from examples</text><circle cx="34" cy="122" r="4" fill="#DB2777"/><text x="50" y="127" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">Multi-step reasoning — chain-of-thought suddenly helps</text><circle cx="34" cy="152" r="4" fill="#DB2777"/><text x="50" y="157" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">Multimodal jumps — image + text skills neither had alone</text>
+  <text x="28" y="210" font-family="Arial,Helvetica,sans-serif" font-size="13" font-style="italic" fill="#6b7280">Each type appeared only past a certain model scale</text>
+</svg>

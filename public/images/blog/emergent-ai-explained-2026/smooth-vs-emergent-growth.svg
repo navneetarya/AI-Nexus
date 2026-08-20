@@ -1,0 +1,14 @@
+<svg viewBox="0 0 640 258" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Smooth Improvement vs. an Emergent Jump">
+  <defs>
+    <linearGradient id="d1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="258" rx="16" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="0" y="0" width="640" height="46" rx="16" fill="url(#d1)"/>
+  <rect x="0" y="30" width="640" height="16" fill="url(#d1)"/>
+  <text x="24" y="30" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="800" fill="#ffffff">Smooth Improvement vs. an Emergent Jump</text>
+  <circle cx="34" cy="92" r="4" fill="#7C3AED"/><text x="50" y="97" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">Most skills: score rises gradually as models get bigger</text><circle cx="34" cy="122" r="4" fill="#7C3AED"/><text x="50" y="127" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">Emergent skills: score stays near zero for a while</text><circle cx="34" cy="152" r="4" fill="#7C3AED"/><text x="50" y="157" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">Then jumps sharply past one size threshold</text><circle cx="34" cy="182" r="4" fill="#7C3AED"/><text x="50" y="187" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">No warning sign in the smaller models&#x27; behavior</text>
+  <text x="28" y="240" font-family="Arial,Helvetica,sans-serif" font-size="13" font-style="italic" fill="#6b7280">This jump-shaped curve is the core claim researchers debate</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg viewBox="0 0 640 258" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Emergent AI, at a Glance">
+  <defs>
+    <linearGradient id="d0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="258" rx="16" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="0" y="0" width="640" height="46" rx="16" fill="url(#d0)"/>
+  <rect x="0" y="30" width="640" height="16" fill="url(#d0)"/>
+  <text x="24" y="30" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="800" fill="#ffffff">Emergent AI, at a Glance</text>
+  <circle cx="34" cy="92" r="4" fill="#0D9488"/><text x="50" y="97" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">Skill appears suddenly at a size threshold</text><circle cx="34" cy="122" r="4" fill="#0D9488"/><text x="50" y="127" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">Not directly trained in as its own skill</text><circle cx="34" cy="152" r="4" fill="#0D9488"/><text x="50" y="157" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">Smaller versions of the model can&#x27;t do it at all</text><circle cx="34" cy="182" r="4" fill="#0D9488"/><text x="50" y="187" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">2026: same pattern now shows up between AI agents</text>
+  <text x="28" y="240" font-family="Arial,Helvetica,sans-serif" font-size="13" font-style="italic" fill="#6b7280">Source: 2022 Google/DeepMind emergent-abilities paper</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg viewBox="0 0 640 228" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="3 Signals an Update Gained a Real Ability">
+  <defs>
+    <linearGradient id="d3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="228" rx="16" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="0" y="0" width="640" height="46" rx="16" fill="url(#d3)"/>
+  <rect x="0" y="30" width="640" height="16" fill="url(#d3)"/>
+  <text x="24" y="30" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="800" fill="#ffffff">3 Signals an Update Gained a Real Ability</text>
+  <circle cx="34" cy="92" r="4" fill="#2563EB"/><text x="50" y="97" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">A task it used to fail outright, it now handles cleanly</text><circle cx="34" cy="122" r="4" fill="#2563EB"/><text x="50" y="127" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">The cheap tier fails completely, the paid tier nails it</text><circle cx="34" cy="152" r="4" fill="#2563EB"/><text x="50" y="157" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#374151">Vendor language shifts to &quot;reasoning&quot; or &quot;autonomous&quot;</text>
+  <text x="28" y="210" font-family="Arial,Helvetica,sans-serif" font-size="13" font-style="italic" fill="#6b7280">None of these prove emergence, but they&#x27;re worth re-testing</text>
+</svg>
