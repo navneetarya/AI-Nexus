@@ -84,6 +84,7 @@ const post: BlogPost = {
 <blockquote style="border-left:3px solid #0D9488;padding-left:16px;margin:24px 0;font-style:italic;color:#444;">Lindy quietly dropped its free tier at some point this year. Its own pricing page now offers only a 7-day trial, though plenty of "best AI agent" roundups still list a free plan that no longer exists. If you want to test-drive an AI agent builder without paying, start with Relevance AI or Gumloop instead.<br/><span style="font-style:normal;font-size:13px;color:#888;">— Navneet Arya, AI Nexus</span></blockquote>
 
 <h2>Relevance AI vs Lindy vs Gumloop: Why These Three Get Compared</h2>
+<img src="https://images.unsplash.com/photo-1622675205169-901710ac8643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People in a meeting discussing which AI agent platform fits their workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 <p>Relevance AI, Lindy, and Gumloop all get called "AI agent builders," and all three show up on the same shortlists. But they were built to solve different problems, and treating them as interchangeable is the fastest way to pick the wrong one.</p>
 <p>Navneet Arya has tracked all three since covering the broader agent-versus-automation split in an earlier <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation</a> post. The gap between these platforms has only widened as each one has specialized further in 2026.</p>
 <p><strong>Lindy</strong> is assistant-first. Describe a job in plain English — manage my inbox, prep me for meetings, qualify inbound leads — and Lindy hands you a working "AI employee" fast.</p>
@@ -103,6 +104,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Relevance AI vs Lindy vs Gumloop Pricing: Verified July 2026</h2>
+<img src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People sitting at a table reviewing pricing tiers for AI agent platforms" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Pricing across all three changed meaningfully in the past year, and this is where most existing comparisons are already stale. Relevance AI restructured its whole model in September 2025. Lindy removed its free tier a few months back.</p>
 <p>Gumloop's old plan names ("Solo," "Team") that still circulate online were retired for a simpler Free/Pro/Enterprise setup. Here's what each platform's own pricing page shows today.</p>
 
@@ -121,6 +123,7 @@ const post: BlogPost = {
 <p>A standard AI call costs 2 credits, while an advanced call using a frontier model like GPT-4.1 or Claude costs roughly 20 credits. Heavy AI-reasoning workflows burn through the free tier faster than simple data-moving ones.</p>
 
 <h2>Architecture Comparison: What Each Platform Is Actually Built For</h2>
+<img src="https://images.unsplash.com/photo-1758873268877-3cd8ed329ed8?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People mapping out an agent workflow on a whiteboard in a modern office" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Price alone doesn't answer which tool fits. The underlying architecture determines what kind of work each platform is good at, and where it starts to strain.</p>
 
 <h3>Relevance AI's Tools + Agents Framework</h3>
@@ -137,18 +140,21 @@ const post: BlogPost = {
 <p>It's a weaker fit for conversational or inbox-centric agent use cases than Lindy. AI-heavy or enrichment-heavy nodes (roughly 60 credits per contact) can also burn through the free tier faster than the price tag suggests.</p>
 
 <h2>Integration Ecosystem: App Count Isn't the Whole Story</h2>
+<img src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A diverse business team collaborating on integrating an AI agent into their existing workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Raw integration counts vary widely across the three, and the number alone can mislead. <strong>Relevance AI</strong> claims the broadest reach: over 9,000 integration tools, spanning email, calendar, CRM, and spreadsheet connections, per its own G2 listing.</p>
 <p><strong>Lindy</strong> connects to 3,000–4,000+ apps depending on the source, with deep, purpose-built links to Gmail, Outlook, Calendar, Slack, Salesforce, and Notion. That's the exact stack a solo operator or small ops team already runs.</p>
 <p><strong>Gumloop</strong> has the smallest native integration count of the three, at roughly 125 apps. That sounds like a real gap until you account for its MCP (Model Context Protocol) server hosting on the Pro plan.</p>
 <p>MCP is a newer, standard way for AI systems to reach external tools without a dedicated connector built for each one. For most day-to-day business apps, more native connectors still means less setup friction. For teams already comfortable with MCP-based tooling, though, Gumloop's smaller list matters less than it first appears.</p>
 
 <h2>User Reviews and Reliability: What G2 Ratings Actually Show</h2>
+<img src="https://images.unsplash.com/photo-1573164574511-73c773193279?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team meeting to review user feedback and ratings for AI agent platforms" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Third-party review volume differs a lot across these three, which matters for how much weight to put on any single rating. <strong>Lindy</strong> carries the largest, most established review base on G2: 4.9/5 across 168+ reviews. That reflects its longer time on the market and bigger non-technical user base.</p>
 <p><strong>Relevance AI</strong> sits at 4.3/5 from a smaller pool of roughly 20 reviews. Reviewers praise its tool breadth (9,000+ integrations, per its own listing) but flag the learning curve for complex multi-agent setups.</p>
 <p><strong>Gumloop</strong> is the newest and least-reviewed of the three: 4.8/5 from just 6 verified G2 reviews as of mid-2026. That's a genuinely good early sign, but too small a sample to treat as solid the way Lindy's number is.</p>
 <p>Reddit sentiment across r/AI_Agents and r/automation is more mixed for all three than G2 alone suggests. Common complaints: unpredictable credit use at scale (Relevance AI, Gumloop), plus Lindy's roughly 20-second startup delay per task and limited debugging visibility when an agent loop misbehaves.</p>
 
 <h2>A Worked Cost Example: The Same Workflow on All Three Platforms</h2>
+<img src="https://images.unsplash.com/photo-1758691737138-7b9b1884b1db?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team celebrating after calculating cost savings from an AI agent workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Consider a common small-business case. An agent researches 200 inbound leads a month, drafts a personal outreach email for each, and logs the result to a CRM. That's three AI-touching steps per lead, 600 AI actions total a month.</p>
 <p>On <strong>Relevance AI's</strong> Pro plan, each step uses one Action. 600 Actions/month sits comfortably within the 2,500-Action allowance at $19/month, with Vendor Credits covering the underlying model cost.</p>
 <p>On <strong>Gumloop</strong>, the same workflow built as three nodes per lead uses roughly 2–20 credits per AI node, depending on model tier. That lands somewhere between 1,200 and 12,000 credits a month, and likely needs the $37/month Pro tier once research and drafting both use higher-tier models.</p>

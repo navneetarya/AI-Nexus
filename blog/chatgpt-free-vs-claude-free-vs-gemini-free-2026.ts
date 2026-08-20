@@ -76,8 +76,9 @@ const post: BlogPost = {
 
   content: `
 <h2>Which Free AI Plan Actually Works for Freelancers in 2026?</h2>
+<img src="https://images.unsplash.com/photo-1675865254433-6ba341f0f00b?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="The ChatGPT interface showing example prompts and capabilities on a dark screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 <p>No single free plan wins outright for freelancers in 2026. ChatGPT, Claude, and Gemini free tiers each win different tasks.</p>
-<p>Running all three together covers roughly 80% of a freelancer's AI needs without spending anything. Before diving into task-by-task results, here is where each free plan stands in mid-2026 — and if you're weighing the paid tiers behind these three, see our full <a href="/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/">GPT-5.5 vs Claude Opus 4.8 vs Grok 4 comparison</a>.</p>
+<p>Running all three together covers roughly 80% of a freelancer's AI needs without spending anything. Here is where each free plan stands in mid-2026. If you're weighing the paid tiers behind these three, see our full <a href="/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/">GPT-5.5 vs Claude Opus 4.8 vs Grok 4 comparison</a>.</p>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -146,6 +147,7 @@ const post: BlogPost = {
   <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ChatGPT →</a>
 </div>
 <h2>Claude Free (Claude 3.5 Sonnet)</h2>
+<img src="https://images.unsplash.com/photo-1676573408178-a5f280c3a320?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A computer screen filled with AI-generated text, representing a free-tier chatbot writing session" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Claude's free plan is arguably the strongest writing tool available at zero cost in 2026. Unlike ChatGPT's free tier, where you access a premium model up to a limit before degrading to a weaker one, Claude Free gives you Claude 3.5 Sonnet consistently.</p>
 <p>It's one of the best publicly available language models for writing tasks, up to its daily usage limit.</p>
 <p><strong>Strengths on the free tier:</strong> Writing quality is the standout. Claude produces prose that requires less editing before publication. It has more varied sentence structure, more natural paragraph flow, and a stronger ability to adopt a specific voice when given examples.</p>
@@ -161,6 +163,7 @@ const post: BlogPost = {
   <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude →</a>
 </div>
 <h2>Gemini Free</h2>
+<img src="https://images.unsplash.com/photo-1746608943132-065d1d4b3c5d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A smartphone showing an AI assistant's interface, representing a free mobile chatbot app" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Gemini's free tier runs on Gemini 1.5 Flash. It's not Google's most capable model, but it's surprisingly functional for everyday tasks. The standout advantage is real-time Google Search integration. Gemini Free can access current information, making it the only free AI that can meaningfully research and write at the same time.</p>
 <p><strong>Strengths on the free tier:</strong> Google ecosystem integration is Gemini's unique free-tier advantage. If you work in Google Docs, Gmail, or Drive, Gemini can summarise documents, draft email replies, and process spreadsheet data natively.</p>
 <p>Neither ChatGPT nor Claude can match that on their free tiers. The 1 million token context window on Gemini 1.5 Flash means you can feed it extraordinarily long documents. For research tasks and document summarisation, this is genuinely powerful.</p>
@@ -198,6 +201,7 @@ const post: BlogPost = {
 <p>ChatGPT's ideas had slightly more variety in format, including listicles, case studies, and opinion pieces. Claude's ideas had slightly more depth per idea. For brainstorming, either works well; use whichever you have messages left on.</p>
 
 <h2>When the Free Plan Stops Being Enough</h2>
+<img src="https://images.unsplash.com/photo-1682941664177-7920d0e59418?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person holding a phone with a chat app open, representing occasional freelance AI use" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Free plans are genuinely useful for most freelancers doing under 10 substantive AI interactions per day. The upgrade case is clear when any of these apply:</p>
 <ol style="margin:16px 0;padding-left:24px;line-height:1.9;font-size:14.5px;">
   <li><strong>You hit ChatGPT's daily limit before lunch:</strong> you are a genuine power user and $20/month for ChatGPT Plus is worth the consistent GPT-5.5 access.</li>
@@ -205,7 +209,7 @@ const post: BlogPost = {
   <li><strong>You need Gemini's full capabilities inside Google Workspace:</strong> Google One AI Premium at $19.99/month unlocks Gemini 3.1 Pro in Docs, Gmail, and Sheets. That's genuinely powerful for document-heavy work.</li>
   <li><strong>Your editing time exceeds the subscription cost:</strong> if you spend 2+ hours editing AI outputs weekly on weak free-model quality, the math on $20/month is easy.</li>
 </ol>
-<p>For most freelancers doing occasional AI work, such as a few blog posts and email drafts per week, the three free tiers together cover every task without paying anything.</p>
+<p>For most freelancers doing occasional AI work, such as a few blog posts and email drafts per week, the three free tiers together cover every task at no cost.</p>
 <p>The stack that works: <strong>Claude for all writing first drafts, ChatGPT for images, code, and social content, and Gemini for anything requiring current research.</strong> For a full breakdown of what you get once you do upgrade, see our <a href="/blog/best-ai-chatbot-2026/">best AI chatbot comparison for 2026</a>.</p>
 <p style="font-size:12px;color:var(--text-muted,#888);">This comparison is independent research — AI Nexus is not sponsored by OpenAI, Anthropic, or Google. See our <a href="/disclosure/">disclosure policy</a> and <a href="/methodology/">editorial methodology</a>.</p>
 `,
