@@ -108,6 +108,7 @@ const post: BlogPost = {
 </div>
 
 <h2 id="key-takeaways">Key Takeaways</h2>
+<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Key Takeaways" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
   <li>AI meeting tools save <strong>30–90 minutes per week</strong> in post-meeting note-taking and action item follow-up for a typical professional</li>
   <li><strong>Fireflies.ai</strong> leads on meeting intelligence depth: richer AI summaries, CRM sync (HubSpot, Salesforce), and a searchable archive across all past meetings make it the strongest choice for teams</li>
@@ -176,6 +177,7 @@ const post: BlogPost = {
 </div>
 
 <h2 id="fireflies">#1 Fireflies.ai: Best Overall AI Meeting Tool</h2>
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #1 Fireflies.ai: Best Overall AI Meeting Tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Rating: 4.7/5 · Free plan: 800 minutes storage, 3 AI summaries/month · Paid: from $10/seat/month</strong></p>
 <p>Fireflies.ai is the most complete AI meeting intelligence platform available in 2026. Its automated "Notetaker" bot joins your scheduled Zoom, Google Meet, Microsoft Teams, or Webex meetings via calendar invite without any manual intervention.</p>
 <p>The meeting starts, Fireflies joins, and it records. Within minutes of the call ending, you receive an email with a full transcript, an AI-generated summary, and a list of named action items pulled from the discussion.</p>
@@ -231,6 +233,7 @@ const post: BlogPost = {
 </div>
 
 <h2 id="fathom">#3 Fathom: Best Free AI Meeting Recorder for Individuals</h2>
+<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #3 Fathom: Best Free AI Meeting Recorder for Individuals" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Rating: 4.8/5 (G2) · Free plan: Unlimited recordings &amp; transcripts · Paid: from $19/seat/month</strong></p>
 <p>Fathom stands apart from every other AI meeting tool in 2026 for one reason: its free plan is genuinely unlimited. There are no minute caps, no recording limits, and no credit card required. Individual users can record and transcribe unlimited Zoom, Google Meet, and Teams meetings forever at no cost. No other major platform in this category matches that offer.</p>
 <p>On the free tier, Fathom provides full meeting transcripts and a highlight clipping tool that lets you mark important moments during the call. It also generates an AI summary after each session.</p>
@@ -264,6 +267,7 @@ const post: BlogPost = {
 </ul>
 
 <h2 id="pricing">Pricing Comparison 2026</h2>
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Pricing Comparison 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -384,6 +388,7 @@ const post: BlogPost = {
 </div>
 
 <h2 id="alternatives">Alternatives to Consider</h2>
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Alternatives to Consider" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Beyond the top three, two tools are worth evaluating for specific scenarios:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
   <li><strong>Avoma:</strong> The most purpose-built revenue intelligence platform in the AI meeting tools category. Avoma goes beyond transcription and summaries into full conversation intelligence. That includes call scoring, coaching scorecards, deal health tracking, and pipeline risk signals based on what was said (or not said) in sales meetings. It integrates with 20+ CRMs. The Starter plan at $19/seat/month is reasonable, but the full revenue intelligence stack requires the Growth plan at $59/seat/month. Best for scaling sales organisations with a dedicated revenue operations function; overkill for general teams.</li>

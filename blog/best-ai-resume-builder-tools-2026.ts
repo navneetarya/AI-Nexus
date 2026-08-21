@@ -97,6 +97,7 @@ const post: BlogPost = {
 <p>Ratings below follow AI Nexus's standard research-synthesis method: a 5-point rubric scoring core feature reliability, pricing value, ease of use, output quality, and India accessibility. It's built from official pricing pages, published Trustpilot and G2 review data, and independent 2026 testing coverage, not first-party hands-on trials.</p>
 
 <h2>What actually matters when picking an AI resume builder</h2>
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for What actually matters when picking an AI resume builder" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The marketing across this category tends to blur together. Every tool claims "AI-powered," "ATS-optimized," and "used by thousands of job seekers." Underneath that, four things actually differ meaningfully between platforms. Knowing which one you care about most narrows the choice fast:</p>
 <ul style="margin:8px 0 24px;padding-left:22px;line-height:1.8;">
   <li><strong>Free-tier depth.</strong> Some tools give you a really usable free plan (Teal); others give you a taste designed to expire quickly (Kickresume's 4-template, no-AI free tier). If budget is the deciding factor, this matters more than any feature comparison.</li>
@@ -159,6 +160,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:#777;margin-top:-12px;">Pricing verified against each platform's official pricing page as of July 2026 — verify current rates before subscribing, as job-search software pricing changes frequently.</p>
 
 <h2>Teal — best overall value and the only real job tracker in this list</h2>
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Teal — best overall value and the only real job tracker in this list" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Teal</strong>'s free-forever plan is especially generous for the category. It includes unlimited resume creation, 10 templates, and a Chrome-extension job tracker that saves postings directly from LinkedIn and other job boards. Basic AI content suggestions are included too, all at $0 with no credit card required.</p>
 <p>Teal+ at $29/month unlocks unlimited AI resume tailoring per job description, advanced analytics, and premium templates.</p>
 <h3>The job tracker, not the resume builder, is Teal's real differentiator</h3>
@@ -183,6 +185,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Kickresume — the strongest template design, at the highest ongoing monthly price</h2>
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Kickresume — the strongest template design, at the highest ongoing monthly price" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Kickresume</strong> is the most visually polished builder in this comparison. It offers 40+ templates, a built-in personal-website generator that turns your resume into a shareable portfolio page with one click, and a GPT-powered AI writer.</p>
 <p>Its free tier is the thinnest of the four: only 4 templates and no AI writing at all. That pushes free users toward an upgrade quickly.</p>
 <p>Premium runs $24/month, dropping to roughly $18/month billed quarterly ($54 every 3 months), or $8/month billed yearly ($96/year). The annual plan is the clear value pick if you'll use it beyond a single application cycle.</p>
@@ -206,6 +209,7 @@ const post: BlogPost = {
 </div>
 
 <h2>How ATS screening actually works, briefly</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How ATS screening actually works, briefly" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <img src="https://images.unsplash.com/photo-1586685983433-9c6711e498f6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A job application being filled out on a laptop before it goes through ATS screening" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>An applicant tracking system doesn't read a resume the way a human does. It parses the document into structured fields: name, dates, job titles, skills. It then ranks or filters candidates based on keyword and requirement matches against the job posting, before a recruiter ever opens the file.</p>
 <p>Roughly 99% of Fortune 500 companies use some form of ATS. Industry estimates commonly cited across recruiting research put the share of resumes filtered out before human review above 70% at large companies.</p>
@@ -221,6 +225,7 @@ const post: BlogPost = {
 <p>It simply can't answer that with any reliability, because it has no access to how that specific parsing software actually extracts fields. That's not a prompt-engineering problem. It's the core reason a dedicated category of resume-specific AI tools exists at all, rather than everyone just using a general chatbot.</p>
 
 <h2>Which AI resume builder should you actually use?</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Which AI resume builder should you actually use?" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Choose Teal if:</strong> you want the best free tier and need to track multiple applications, not just write one resume. This is the highest-value starting point for almost every job seeker in this guide.</p>
 <p><strong>Choose Rezi if:</strong> you're applying primarily to large companies with strict ATS platforms and want the safest possible formatting. This fits if you're searching long enough that the $149 lifetime plan beats a monthly subscription.</p>
 <p><strong>Choose Kickresume if:</strong> the role or industry rewards visual presentation, such as design, creative, or smaller-company applications reviewed by a human. This works best if you commit to the yearly plan rather than the pricier monthly one.</p>

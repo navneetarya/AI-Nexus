@@ -88,6 +88,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Quick Comparison: Best Grammarly Alternatives</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Quick Comparison: Best Grammarly Alternatives" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -147,6 +148,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>#2 Writesonic: Best for Generating New Content</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #2 Writesonic: Best for Generating New Content" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Writesonic ($16/month) does something Grammarly doesn't: it generates content from scratch. Article Writer, Chatsonic AI chatbot, and a built-in SEO checker make it the better choice for anyone who needs to produce long-form content regularly. It's not just for polishing existing writing.</p>
 <p><strong>The Article Writer</strong> generates 1,500–2,500 word drafts that are usable starting points rather than rough placeholders. For bloggers targeting Google, Writesonic's keyword integration and structured output is a meaningful advantage over Grammarly's correction-only approach.</p>
 <p><strong>Chatsonic</strong>, Writesonic's AI chatbot with real-time web access, is included in all paid plans. For research-heavy content, this is genuinely useful; Grammarly has no equivalent.</p>

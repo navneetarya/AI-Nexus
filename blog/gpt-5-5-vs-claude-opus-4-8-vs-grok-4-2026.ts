@@ -55,10 +55,13 @@ const post: BlogPost = {
 <h2>Which AI Is Best: GPT-5.5, Claude Opus 4.8, or Grok 4?</h2>
 <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A monitor displaying a model comparison dashboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Three of the most capable AI models ever built are now available to anyone with a $20/month subscription. GPT-5.5 (OpenAI), Claude Opus 4.8 (Anthropic), and Grok 4 (xAI) each represent a different philosophy about what an AI assistant should be. Choosing wrong means leaving serious capability on the table.</p>
-<p>Which one is best depends on the job. GPT-5.5 is the most versatile all-rounder for mixed creative, coding, and research work. Claude Opus 4.8 is the strongest choice for long-document analysis and nuanced writing. Grok 4 leads on real-time web research. For most individual users, Claude Opus 4.8 or GPT-5.5 gives the best value for $20/month.</p>
-<p>The same set of 8 real-world tasks was independently researched across all three models over two weeks in June 2026. These were not cherry-picked benchmarks. They were the actual tasks that come up in a week of content creation, research, and coding work. Here is what the research found. If you're weighing the raw API cost of each provider instead of the flat-rate subscription, see our <a href="/blog/ai-api-pricing-comparison-2026/">AI API pricing comparison</a>.</p>
+<p>Which one is best depends on the job. GPT-5.5 is the most versatile all-rounder for mixed creative, coding, and research work. Claude Opus 4.8 is the strongest choice for long-document analysis and nuanced writing. Grok 4 leads on real-time web research.</p>
+<p>For most individual users, Claude Opus 4.8 or GPT-5.5 gives the best value for $20/month.</p>
+<p>The same set of 8 real-world tasks was independently researched across all three models over two weeks in June 2026. These were not cherry-picked benchmarks. They were the actual tasks that come up in a week of content creation, research, and coding work. Here is what the research found.</p>
+<p>If you're weighing the raw API cost of each provider instead of the flat-rate subscription, see our <a href="/blog/ai-api-pricing-comparison-2026/">AI API pricing comparison</a>.</p>
 
 <h2>Quick Verdict: GPT-5.5 vs Claude Opus 4.8 vs Grok 4</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Quick Verdict: GPT-5.5 vs Claude Opus 4.8 vs Grok 4" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -114,7 +117,8 @@ const post: BlogPost = {
 <p><strong>Best for: Mixed workflows, writing, coding, research, and image generation in one place</strong></p>
 <p>GPT-5.5 is OpenAI's most capable model to date and the version that powers ChatGPT Plus in June 2026. The jump from GPT-4o to GPT-5.5 is meaningful, particularly in multi-step reasoning tasks where GPT-4o would sometimes lose track of context across a long conversation.</p>
 <p>GPT-5.5 maintains coherence over much longer exchanges and handles complex, multi-part prompts more reliably.</p>
-<p>Where GPT-5.5 genuinely leads the field is breadth. No other subscription model does as many things competently in one interface. That covers long-form writing, Python and JavaScript coding, image generation (via DALL-E 4 integration), web search, PDF analysis, and voice. For someone who does not want to switch tools for different tasks, ChatGPT Plus is still the most logical single subscription.</p>
+<p>Where GPT-5.5 genuinely leads the field is breadth. No other subscription model does as many things competently in one interface. That covers long-form writing, Python and JavaScript coding, image generation (via DALL-E 4 integration), web search, PDF analysis, and voice.</p>
+<p>For someone who does not want to switch tools for different tasks, ChatGPT Plus is still the most logical single subscription.</p>
 <p>The limitation is depth. It shows on tasks that require truly deep reasoning: a 40,000-word document analysis, a complex multi-file code refactor, or an ethically nuanced argument. On those, Claude Opus 4.8 produces noticeably better outputs. GPT-5.5 is excellent; Claude Opus 4.8 is occasionally extraordinary.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Strengths:</strong> Best breadth of any subscription AI, DALL-E 4 image generation, strong memory and personalisation features</li>
@@ -127,9 +131,11 @@ const post: BlogPost = {
   <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ChatGPT →</a>
 </div>
 <h2>Claude Opus 4.8: The Deepest Thinker</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Claude Opus 4.8: The Deepest Thinker" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Best for: Long documents, nuanced writing, complex reasoning, and coding with full context</strong></p>
 <p>Claude Opus 4.8 is Anthropic's most powerful model and, by most independent benchmarks in mid-2026, the best reasoning model available to general consumers. It shows most clearly on tasks that require holding a lot of information in context — think analysing a 200-page report, reviewing a full codebase, or writing a well-structured 3,000-word article.</p>
-<p>On those tasks, Claude Opus 4.8 produces outputs that are consistently better than GPT-5.5 and significantly better than Grok 4. The writing quality difference is particularly stark in long-form content: Claude's outputs at Opus level have a coherence and stylistic consistency that's hard to pin on a single feature. For professional writers, researchers, and analysts, this quality gap is the defining reason to choose Claude Pro.</p>
+<p>On those tasks, Claude Opus 4.8 produces outputs that are consistently better than GPT-5.5 and significantly better than Grok 4. The writing quality difference is particularly stark in long-form content.</p>
+<p>Claude's outputs at Opus level have a coherence and stylistic consistency that's hard to pin on a single feature. For professional writers, researchers, and analysts, this quality gap is the defining reason to choose Claude Pro.</p>
 <p>Claude Opus 4.8 is also the strongest coding model of the three. It scores highest on SWE-bench, handles TypeScript typing correctly, and follows multi-step instructions without losing the thread. Paired with <a href="/tools/cursor/" style="color:#0D9488;font-weight:600;">Cursor</a>, it is one of the most capable AI development workflows available in 2026 — see our full <a href="/blog/best-ai-coding-tools-2026/">best AI coding tools comparison</a>.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Strengths:</strong> Best reasoning depth, best long-document analysis, best long-form writing, top coding benchmark scores</li>
@@ -144,7 +150,8 @@ const post: BlogPost = {
 <h2>Grok 4: The Real-Time Research Model</h2>
 <p><strong>Best for: Current events, social media research, and X/Twitter-integrated workflows</strong></p>
 <p>Grok 4 is xAI's fourth-generation model and represents a genuine leap over Grok 3. Its core advantage is real-time information access. Grok 4 has live web search, live X/Twitter feed access, and can surface information from the last hour rather than a training cutoff months in the past.</p>
-<p>For journalists, social media managers, investors, and researchers whose work depends on current data, this is a real advantage GPT-5.5 and Claude Opus 4.8 can't fully replicate. On reasoning and writing tasks that do not require real-time data, Grok 4 trails the other two — it's noticeably better than Grok 3, but the writing is less nuanced than Claude's and the coding less reliable than either rival on complex tasks.</p>
+<p>For journalists, social media managers, investors, and researchers whose work depends on current data, this is a real advantage GPT-5.5 and Claude Opus 4.8 can't fully replicate.</p>
+<p>On reasoning and writing tasks that do not require real-time data, Grok 4 trails the other two. It's noticeably better than Grok 3, but the writing is less nuanced than Claude's and the coding less reliable than either rival on complex tasks.</p>
 <p>At $16/month via X Premium+ (versus $20/month for the other two), Grok 4 is also the most affordable of the three frontier models. One consideration: access comes bundled with X Premium+, which you may or may not want on its own.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Strengths:</strong> Best real-time data access, lowest price of the three, excellent for social media and news research</li>
@@ -163,7 +170,8 @@ const post: BlogPost = {
   <li><strong>Choose ChatGPT Plus (GPT-5.5)</strong> if you need one tool that handles writing, coding, images, voice, and web browsing without switching apps. If you've never used Claude and want the most familiar, feature-complete experience, Plus is the logical default.</li>
   <li><strong>Choose X Premium+ (Grok 4)</strong> if you work in journalism, finance, social media, or any field where knowing what happened in the last 12 hours is a professional requirement.</li>
 </ol>
-<p>If you are building AI into a workflow and money is not the constraint, Claude Pro and ChatGPT Plus together cover essentially every use case. See our related guide on <a href="/blog/how-to-use-ai-for-content-creation-2026/">using AI for content creation</a> for how these models fit into a full production workflow. The $40/month combined is the strongest AI setup available to an individual in mid-2026.</p>
+<p>If you are building AI into a workflow and money is not the constraint, Claude Pro and ChatGPT Plus together cover essentially every use case.</p>
+<p>See our related guide on <a href="/blog/how-to-use-ai-for-content-creation-2026/">using AI for content creation</a> for how these models fit into a full production workflow. The $40/month combined is the strongest AI setup available to an individual in mid-2026.</p>
 <p style="font-size:12px;color:var(--text-muted,#888);">Independent research — AI Nexus is not sponsored by OpenAI, Anthropic, or xAI. See our <a href="/disclosure/">disclosure policy</a>.</p>
 
 <h2>Final Rankings by Use Case</h2>

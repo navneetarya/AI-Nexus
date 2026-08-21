@@ -84,6 +84,7 @@ const post: BlogPost = {
 <p>The best results come from understanding which tool solves which problem, not from trying to find one tool that does everything mediocrely. Every tool in this guide has been independently researched and cross-referenced against verified user reviews on G2, Product Hunt, and Reddit. Here's what's actually worth adding to your stack.</p>
 
 <h2>Social Media AI Tools at a Glance</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Social Media AI Tools at a Glance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
@@ -141,6 +142,7 @@ const post: BlogPost = {
 </ol>
 
 <h2>1. Ocoya: AI Captions + Scheduling in One Platform</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 1. Ocoya: AI Captions + Scheduling in One Platform" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Social Media · Rating: 4.0/5 · Pricing: From $15/month · <a href="/tools/ocoya/" style="color:var(--a1);font-weight:600;">Full Ocoya Review →</a></strong></p>
 <p>Ocoya is the closest thing to a complete social media AI stack in a single product. You get an AI caption writer (describe a post, pick a tone, get 3 options with hashtags) and a visual creator with Canva-style templates. It also schedules posts to Instagram, LinkedIn, Twitter/X, TikTok, Facebook, and Pinterest.</p>
 <p>The workflow that works: use Ocoya's AI to write 5–7 captions in one sitting for the week, pair each with a visual template, then schedule them all.</p>
@@ -167,6 +169,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>3. Leonardo.ai: AI Image Generation for Organic Social Posts</h2>
+<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3. Leonardo.ai: AI Image Generation for Organic Social Posts" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Image · Rating: 4.5/5 · Pricing: Free + from $12/month · <a href="/tools/leonardo-ai/" style="color:var(--a1);font-weight:600;">Full Leonardo.ai Review →</a></strong></p>
 <p>For social media managers who need original images, not stock photos or overused Canva templates, Leonardo.ai is the best free option available. The free plan gives 150 credits per day, which translates to roughly 75–150 images depending on the generation settings. That's more than enough for a full week of social content created in one session.</p>
 <p>The Image-to-Image mode is the most practically useful feature for social. Upload a rough layout or brand reference image, and Leonardo renders a polished version in your chosen style. This is faster than rebuilding templates from scratch and more original than reusing the same Canva design for the 40th time.</p>

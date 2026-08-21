@@ -78,6 +78,7 @@ const post: BlogPost = {
 <p>This analysis covers real marketing workflows through each tool: SEO-optimised blog posts, social media content scheduling, competitor strategy analysis, and content performance tracking. Here's what works and what's overhyped based on verified data.</p>
 
 <h2>How to Choose the Right Tool in 3 Steps</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Choose the Right Tool in 3 Steps" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ol style="margin:10px 0 16px 24px;line-height:2.2;">
   <li><strong>Identify your primary channel.</strong> SEO-driven businesses need <a href="/tools/frase/" style="color:#0D9488;font-weight:600;">Frase</a>'s content research first. Social-first brands should start with <a href="/tools/ocoya/" style="color:#0D9488;font-weight:600;">Ocoya</a>.</li>
   <li><strong>Match your team size to the tool.</strong> Solo marketers get better value from Frase or <a href="/tools/writesonic/" style="color:#0D9488;font-weight:600;">Writesonic</a>. Teams and agencies needing brand-voice consistency should budget for <a href="/tools/jasper/" style="color:#0D9488;font-weight:600;">Jasper</a>.</li>
@@ -130,6 +131,7 @@ const post: BlogPost = {
 </div>
 
 <h2>1. Frase: Best for SEO Content Strategy</h2>
+<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 1. Frase: Best for SEO Content Strategy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Rating: 4.6/5 · Trial available · Paid: $15/month</strong></p>
 <p>Frase is the tool that changes how content marketers approach content strategy. Instead of guessing what to write about, Frase analyses the top 20 Google results for your target keyword. It extracts every topic, question, and heading they cover, then builds a content brief that tells you exactly what your article needs to include to compete.</p>
 <p>The workflow is streamlined. Enter a keyword, and Frase generates a content brief with suggested headings, word count, topics to cover, and questions to answer. Write your article in Frase's editor with a real-time SEO score, then publish. Verified user reports describe average ranking improvements of 15-20 positions after adopting Frase for every article.</p>

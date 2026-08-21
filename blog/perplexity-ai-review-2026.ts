@@ -107,6 +107,7 @@ const post: BlogPost = {
 <p>This review tests Perplexity against Google across eight specific search scenarios to answer one question: should you actually switch?</p>
 
 <h2>How to Decide: 3 Steps</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Decide: 3 Steps" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ol style="margin:12px 0 20px 24px;line-height:1.9;">
   <li><strong>Classify your query.</strong> Multi-source research, comparisons, and how-to guides favour Perplexity. Navigational, local, and breaking-news queries favour Google.</li>
   <li><strong>Start on the free plan.</strong> Run your next five real research questions through Perplexity's free tier before paying anything, and compare the time saved against your usual Google workflow.</li>
@@ -125,6 +126,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Perplexity vs Google: Head-to-Head on 8 Query Types</h2>
+<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Perplexity vs Google: Head-to-Head on 8 Query Types" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -192,6 +194,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Perplexity Deep Research: When to Use It</h2>
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Perplexity Deep Research: When to Use It" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Perplexity Deep Research (Pro feature) takes 2–5 minutes to complete and produces multi-section reports for complex queries. The Deep Research feature was tested on: "What is the current regulatory landscape for AI-generated content in the EU and US, and what does it mean for content creators?"</p>
 <p>The result was a 2,800-word report covering the EU AI Act's content provisions, US Section 230 implications, platform-level enforcement policies, and practical guidance for creators. It included 22 citations linking to primary sources. This is a research task that would realistically take a human 2–3 hours. Deep Research completed it in 4 minutes.</p>
 <p>Deep Research is not flawless. It can miss nuance, occasionally surfaces lower-quality sources, and requires fact-checking on specific claims before publishing. But as a starting point for complex research tasks, generating a structured overview you then verify and expand, it is genuinely transformative for knowledge workers.</p>

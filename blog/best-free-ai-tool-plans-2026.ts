@@ -54,6 +54,7 @@ const post: BlogPost = {
 <p>This guide focuses only on free plans that are <em>actually useful for ongoing work</em>, not just testing. Every tool on this list can be used well without paying. For paid-tier context, see our <a href="/best-ai-writing-tools/" style="color:var(--a1);">best AI writing tools</a> and <a href="/best-ai-design-tools/" style="color:var(--a1);">best AI design tools</a> category pages.</p>
 
 <h2>Free AI Plans at a Glance</h2>
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Free AI Plans at a Glance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
@@ -165,6 +166,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Free Plans That Are Less Useful Than They Seem</h2>
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Free Plans That Are Less Useful Than They Seem" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Not every "free plan" is worth listing. Several prominent AI tools have free plans that are effectively non-functional for ongoing use:</p>
 <ul>
   <li><strong>Jasper:</strong>

@@ -79,6 +79,9 @@ const post: BlogPost = {
 </div>
 
 <h2>What Are the Best InVideo AI Alternatives in 2026?</h2>
+<div style="margin:14px 0 24px;">
+  <a href="https://pictory.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Pictory →</a>
+</div>
 <img src="https://images.unsplash.com/photo-1668605335684-c97ce92cbd76?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person wearing headphones discussing a video project on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The best InVideo AI alternatives in 2026 solve three different problems. Pictory turns existing blog or script content into faceless videos. Opus Clip cuts long videos into short-form clips. Murf AI is the fix if your main complaint about InVideo is the voiceover quality.</p>
 <p><a href="https://invideo.io" target="_blank" rel="noopener">InVideo AI</a> is a genuinely capable tool. It generates complete faceless YouTube videos from a single text prompt: script, stock footage, AI voiceover, and captions, all in one workflow. But it's not the right tool for every video creator, and it has real limitations that push people to look for alternatives.</p>
@@ -86,6 +89,7 @@ const post: BlogPost = {
 <p>The good news: the three alternatives in this guide each solve one of those specific problems better than InVideo AI. Each one is better than InVideo at a specific job.</p>
 
 <h2>How to Pick the Right Alternative in 3 Steps</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Pick the Right Alternative in 3 Steps" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ol style="margin:10px 0 16px 24px;line-height:2.2;">
   <li><strong>Identify your starting point.</strong> Do you already have written content (a blog post, script, or transcript) you want turned into video? Or existing long-form video you want cut into short clips? Or a finished video that just needs a better voice?</li>
   <li><strong>Match that to the tool built for it.</strong> Written content → Pictory. Existing long-form video → Opus Clip. Voiceover only → Murf AI layered on top of whatever you already use.</li>
@@ -138,6 +142,7 @@ const post: BlogPost = {
 </div>
 
 <h2>#1 Pictory: Best for Faceless YouTube from Existing Content</h2>
+<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #1 Pictory: Best for Faceless YouTube from Existing Content" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Pictory is the top recommendation here for faceless YouTube creators who already produce written content: blog posts, newsletters, scripts, or transcripts.</p>
 <p>The workflow is simple: paste your article URL or upload a script, and Pictory automatically pulls relevant stock footage for each sentence, adds captions, and generates an AI voiceover. The result is a complete branded video ready for YouTube in 10–15 minutes.</p>
 <p><strong>Where Pictory beats InVideo for faceless YouTube specifically:</strong> Pictory's stock footage matching is more contextually accurate. InVideo AI generates footage selections based on a broad prompt, and results can feel generic when you're producing videos consistently.</p>
@@ -184,6 +189,9 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+<div style="margin:14px 0 24px;">
+  <a href="https://pictory.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Pictory →</a>
+</div>
 <h2>The Honest Verdict: Which InVideo Alternative Should You Use?</h2>
 <p><strong>Building a faceless YouTube channel from scratch with blog content or scripts you already have?</strong> → <strong>Pictory</strong>. It's the fastest path from written content to a published YouTube video with branded, consistent output.</p>
 <p><strong>You already make long-form YouTube videos or podcasts and want short-form clips?</strong> → <strong>Opus Clip</strong>. The free plan covers real work, and the virality score genuinely helps prioritise what to post.</p>

@@ -87,6 +87,13 @@ const post: BlogPost = {
 </div>
 
 <h2>How AI Reshaped Recruitment in 2026</h2>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.manatal.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Manatal →</a>
+</div>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.manatal.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Manatal →</a>
+</div>
+<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How AI Reshaped Recruitment in 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <img src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People talking while sitting beside a table during a hiring discussion" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Hiring changed a lot between 2023 and 2026. Applications per open role jumped roughly 300%, since AI writing tools made it easier to apply. That made a recruiter's job harder — more noise per role — and made AI screening tools the only real way to filter it.</p>
 <p>LinkedIn Recruiter's Boolean search was the industry standard for passive sourcing for fifteen years. It hit a wall once most good engineers stopped updating their profiles. Instead, they left signal elsewhere: GitHub activity, conference talks, open-source work, and technical writing.</p>
@@ -95,6 +102,7 @@ const post: BlogPost = {
 <p>This guide covers both types: eight platforms, ranked on sourcing quality, AI maturity, pricing, integration depth, and which team size each one actually fits.</p>
 
 <h2>What AI Recruitment Tools Actually Do: 5 Functions</h2>
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for What AI Recruitment Tools Actually Do: 5 Functions" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Before we rank platforms, let's be clear on which hiring task each AI tool actually handles. The market uses "AI recruitment tool" to mean five very different things:</p>
 <ul style="margin:12px 0;padding-left:20px;line-height:1.9;">
   <li><strong>Passive candidate sourcing:</strong> Finding people who haven't applied but fit the role. Seen in Juicebox and SeekOut. Scans LinkedIn, GitHub, publications, and other public databases.</li>
@@ -107,6 +115,7 @@ const post: BlogPost = {
 
 <h2>The 8 Best AI Recruitment Tools in 2026</h2>
 
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for The 8 Best AI Recruitment Tools in 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h3>1. Juicebox (PeopleGPT): Best for AI Talent Sourcing</h3>
 <p>Juicebox, sold under the brand PeopleGPT, is the strongest AI-native sourcing tool in 2026 for teams that have already hit the ceiling of Boolean search. The core idea is simple. Recruiters describe the candidate they need in plain language, like a senior Golang engineer in Bengaluru with fintech experience and open-source payment work.</p>
 <p>That kind of query can also surface people who worked at a company as it scaled from 50 to 500 staff. Juicebox then returns a ranked list, and a reasoning layer explains why each name made the cut.</p>
@@ -181,6 +190,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> Large enterprises running structured graduate intake, formal assessment centre processes, or high-volume professional screening at scale. Not appropriate for smaller teams or roles where structured video assessment would create candidate drop-off.</p>
 
 <h2>AI Recruitment Tools Comparison: 2026</h2>
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for AI Recruitment Tools Comparison: 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:13px;">
   <thead>
@@ -254,6 +264,7 @@ const post: BlogPost = {
 </div>
 
 <h2>AI Recruitment Tools in India: Pricing and Availability (2026)</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for AI Recruitment Tools in India: Pricing and Availability (2026)" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The India-specific picture for AI recruitment tooling is notably different from the global market. Most enterprise platforms (Greenhouse, Lever, HireVue, SeekOut) are USD-denominated with no INR pricing, India-specific job board integrations, or local payment options. For Indian teams, whether startup, mid-market, or enterprise, this creates both a cost and a workflow gap.</p>
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:13px;">
@@ -302,6 +313,7 @@ const post: BlogPost = {
 <p>For Indian startups and SMBs, the practical recommendation is Manatal as the primary ATS. Its pricing is accessible, and its roadmap for India-specific job board integration (Naukri, Shine) is the strongest of any international ATS platform. For enterprise Indian companies with US-parity budgets, Greenhouse + Juicebox is the strongest combination for structured hiring with high-quality technical sourcing.</p>
 
 <h2>How to Choose the Right AI Recruitment Tool</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Choose the Right AI Recruitment Tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Match the tool to your hiring stage and volume, not the feature list:</p>
 <ol style="margin:12px 0 20px 24px;line-height:1.9;">
   <li><strong>Start with your ATS.</strong> If you don't have a working applicant pipeline yet, deploy Manatal (SMB) or Greenhouse (enterprise) before adding any sourcing tool. A sourcing tool amplifies a working process; it does not fix a broken one.</li>
@@ -359,6 +371,9 @@ const post: BlogPost = {
 </table>
 </div>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://www.manatal.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Manatal →</a>
+</div>
 <h2>The Recruitment AI Stack That Works in Practice</h2>
 <p>The companies getting the most value from AI recruitment tooling in 2026 are not using a single platform. They're running a two-layer stack. A sourcing intelligence tool builds candidate pipelines for specialised roles, and an ATS manages the workflow, screening, and analytics for all inbound applications.</p>
 <p>The most common combination at mid-market companies is <strong>Juicebox for outbound sourcing + Lever or Ashby as the ATS</strong>. Juicebox surfaces candidates that recruiters could not find manually; Lever or Ashby manages the pipeline, coordination, and hiring analytics.</p>

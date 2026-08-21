@@ -85,6 +85,9 @@ const post: BlogPost = {
 
 
 <h2>What "No-Code AI Automation" Actually Means in 2026 (and What It Doesn't)</h2>
+<div style="margin:14px 0 24px;">
+  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make Free →</a>
+</div>
 <img src="https://images.unsplash.com/photo-1581547848545-a75a2634ba23?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person holding a microphone on a stand while presenting a workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>"No-code AI automation" gets used loosely enough in 2026 marketing copy that it's worth being precise about what it actually buys you. At its core, it means building a working software process: connect this app to that app, run this logic, take this action.</p>
 <p>That happens entirely through a visual interface, with AI doing part of the thinking, rather than every step being a fixed, human-defined rule.</p>
@@ -98,6 +101,7 @@ const post: BlogPost = {
 <p>Most platforms in this guide sit somewhere on that spectrum rather than at either extreme. Where exactly a platform sits matters more for buyer fit than its marketing copy does.</p>
 
 <h2>How to Pick a Platform in 4 Steps</h2>
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Pick a Platform in 4 Steps" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ol style="margin:10px 0 16px 24px;line-height:2.2;">
   <li><strong>Define the job.</strong> Is this a fixed sequence of steps (connect app A to app B), or does it need to make its own decisions toward a goal? The first is automation; the second is an agent.</li>
   <li><strong>Check your technical bench.</strong> No developer on the team points toward Zapier, Make, Lindy, or Bardeen. Some developer comfort opens up n8n, Activepieces self-hosting, and Pipedream.</li>
@@ -109,6 +113,7 @@ const post: BlogPost = {
 <p>The platforms below were evaluated on AI-native capability (not just "has an AI step somewhere"), true cost at realistic monthly volume, and integration breadth. Technical comfort required was judged by what each genuinely demands, not what its onboarding flow claims.</p>
 
 <h2>1. Zapier — Best Ecosystem, Highest Cost Per Task at Scale</h2>
+<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 1. Zapier — Best Ecosystem, Highest Cost Per Task at Scale" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Zapier's advantage has always been raw integration count: roughly 8,000+ pre-built app connections, the largest library of any platform on this list by a wide margin. That remains decisive for teams that need to connect a specific niche SaaS tool without writing any code.</p>
 <p>Its core product is rule-based: a linear Zap with a trigger and a sequence of action steps, with AI surfaced through AI-assisted steps inside that sequence. Separately, a newer product called Zapier Agents handles genuinely autonomous behaviour.</p>
 <p>The free plan covers around 100 tasks per month, single-step only. Paid plans start near $19.99/month for roughly 750 tasks. Because billing is per task, with each action step counted separately, multi-step or AI-heavy Zaps get expensive faster than the headline price suggests.</p>
@@ -121,6 +126,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> teams that have outgrown Zapier's simplicity but don't want the operational overhead of self-hosting. This fits especially well for workflows with real branching logic or multiple data transformation steps. <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Make.com →</a></p>
 
 <h2>3. n8n — Best AI-Native Platform, Requires Some Technical Comfort</h2>
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3. n8n — Best AI-Native Platform, Requires Some Technical Comfort" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>n8n has the deepest AI-native architecture of any platform in this guide. It has a dedicated AI Agent node with tool use and memory, plus the most comprehensive MCP (Model Context Protocol) support available. That includes an MCP Client node, an MCP Server Trigger, and an instance-level server that can build and publish entire workflows from a prompt.</p>
 <p>Billing is execution-based (per whole workflow run, not per step), which tends to stay cheap even as workflows get complex. The Community Edition is free to self-host, and n8n Cloud starts around €20/month.</p>
 <p>The real cost is technical: self-hosting needs Docker and basic server administration. Even the Cloud version's AI Agent capability rewards genuine technical fluency more than the other platforms here do.</p>
@@ -133,6 +139,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> non-technical owners and small teams who want a working agent, not a workflow diagram to design, running within a few hours of signup. <a href="https://www.lindy.ai/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Lindy.ai →</a></p>
 
 <h2>5. Activepieces — Best Free, Open-Source, Self-Hostable Option</h2>
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 5. Activepieces — Best Free, Open-Source, Self-Hostable Option" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Activepieces is an actively maintained, open-source Zapier/Make alternative built around the same kind of visual, piece-by-piece workflow canvas, with a growing library of AI integrations.</p>
 <p>The self-hosted Community Edition is free with no operation or task caps. That makes it the most cost-effective option on this list, for teams with the technical capacity to run it themselves. A managed cloud plan is also available for teams that would rather not.</p>
 <p>It doesn't yet match n8n's AI-agent depth or Make's polish. But as a genuinely free, no-vendor-lock-in alternative for cost-constrained teams, it's the strongest option in that specific lane.</p>
@@ -145,6 +152,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> sales, research, and ops teams pulling structured data out of websites and portals that don't expose a usable API.</p>
 
 <h2>7. Gumloop — Best for AI-Native Data Pipelines</h2>
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 7. Gumloop — Best for AI-Native Data Pipelines" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Gumloop sits between traditional automation tools and agent-native platforms. It's a visual canvas like Make's, but with AI steps treated as first-class pipeline stages rather than an add-on module.</p>
 <p>It's particularly suited to content and research workflows that chain several AI-dependent steps together: scrape a source, summarise the content, draft a section, publish through an API. Each stage needs to feed cleanly into the next.</p>
 <p>It's a weaker fit for conversational or inbox-centric use cases than Lindy, but a stronger one for structured, multi-stage data processing.</p>

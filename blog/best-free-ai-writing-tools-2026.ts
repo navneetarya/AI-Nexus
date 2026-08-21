@@ -85,6 +85,7 @@ const post: BlogPost = {
 <p>Five tools make that cut in 2026. Here is what each one actually gives you for free, and where each free plan runs out.</p>
 
 <h2>Quick Comparison: Best Free AI Writing Tools 2026</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Quick Comparison: Best Free AI Writing Tools 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -159,6 +160,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>#2 Rytr: Best Free AI Writing Tool for Content Generation</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #2 Rytr: Best Free AI Writing Tool for Content Generation" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Free plan: 10,000 characters/month · No credit card required · Paid: $9/month</strong></p>
 <p>Rytr is the best free option if you need to <em>generate</em> new content rather than improve existing writing. The 10,000 free characters per month is roughly 1,500–2,000 words. That covers a small but real volume: 3–4 blog introductions, a week of social media captions, or an email sequence draft.</p>
 <p>More importantly, Rytr's 40+ use-case templates (blog section writing, product descriptions, ad copy, email subject lines) make the generation process faster and more structured than a blank chatbot prompt.</p>
@@ -203,6 +205,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>#4 Writesonic: Free Plan for Occasional Short-Form Copy</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #4 Writesonic: Free Plan for Occasional Short-Form Copy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Free plan: 25 generations/month · No credit card required · Paid: $16/month</strong></p>
 <p>Writesonic's free plan is the most limited on this list. 25 generations per month is a tight allowance for a tool primarily designed for long-form blog content.</p>
 <p>That said, the free plan does provide real access to Writesonic's short-form templates: ad copy, product descriptions, email subjects, taglines, and social captions. If you occasionally need polished marketing copy rather than regular blog content, 25 generations stretches further than it sounds.</p>
