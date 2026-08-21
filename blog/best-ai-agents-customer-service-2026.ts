@@ -95,7 +95,9 @@ const post: BlogPost = {
 <p>Intercom launched Fin in 2023 on GPT-4 and reported resolution rates above 40% in production. That set a new bar for the category.</p>
 <p>By mid-2026, every major customer service platform has a native AI agent layer — Zendesk, Freshdesk, Salesforce, and Kustomer among them. The question isn't "does it have AI" anymore. It's "what resolution rate does it hit in production, and how clean is the escalation when it fails?"</p>
 <p>This report checks 8 platforms on the numbers that matter in production: autonomous resolution rate on real deployment data, and escalation quality (does the human agent get full context?). It also covers pricing transparency, and which team size and stack each platform actually fits.</p>
-<p>For teams weighing whether to automate customer service at all versus using a broader AI automation platform, see our <a href="/blog/best-no-code-ai-automation-tools-2026/">best no-code AI automation tools</a> guide, and browse the wider <a href="/best-ai-productivity-tools/">best AI productivity tools</a> category for adjacent workflow tools.</p>
+<p>Weighing whether to automate customer service at all versus using a broader AI automation platform? See our <a href="/blog/best-no-code-ai-automation-tools-2026/">best no-code AI automation tools</a> guide. You can also browse the wider <a href="/best-ai-productivity-tools/">best AI productivity tools</a> category for adjacent workflow tools.</p>
+
+<img src="https://images.unsplash.com/photo-1553775282-20af80779df7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Black and brown support headset resting next to a laptop computer" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>What AI Customer Service Agents Actually Do: 4 Core Functions</h2>
 <p>Before we rank platforms, let's be clear on what "AI customer service agent" actually means. The term covers very different levels of capability:</p>
@@ -223,6 +225,8 @@ const post: BlogPost = {
 <p><strong>Pricing:</strong> Forethought is mid-market to enterprise positioned, with custom pricing from about $1,500–$5,000/month depending on conversation volume and features. A free trial is available; no published self-serve pricing.</p>
 <p><strong>Best for:</strong> Support teams at SaaS companies or technical product companies where knowledge base depth is the primary quality lever and where continuous knowledge improvement is a strategic priority. Best deployed alongside an existing ticketing platform (Zendesk, Freshdesk, Intercom) as an AI layer rather than as a platform replacement.</p>
 
+<img src="https://images.unsplash.com/photo-1686061593213-98dad7c599b9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Analytics dashboard on a computer screen showing support performance data" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>AI Customer Service Agent Comparison: 2026</h2>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:13px;">
@@ -297,6 +301,8 @@ const post: BlogPost = {
 </div>
 <p style="font-size:12px;color:#888;margin-top:-12px;"><em>AI resolution rates are indicative ranges from published case studies and verified review data (G2, Trustpilot, Gartner Peer Insights). Actual rates vary greatly based on knowledge base quality, query type mix, and deployment setup. Rates above assume a well-maintained knowledge base and standard e-commerce/SaaS query distribution.</em></p>
 
+<img src="https://images.unsplash.com/photo-1686061592689-312bbfb5c055?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Computer screen showing a bar chart dashboard for tracking support metrics" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>How to Choose: Decision Framework by Team Size</h2>
 <p>The right AI customer service agent in 2026 is almost always determined first by team size and existing stack, and only second by AI resolution quality:</p>
 <ul style="margin:12px 0;padding-left:20px;line-height:1.9;">
@@ -314,7 +320,7 @@ const post: BlogPost = {
   <li><strong>Resolution rate on your query mix, not the vendor's benchmark.</strong> Every vendor publishes aggregate resolution rate figures from their best-performing customers. Request a pilot with your actual historical support tickets, or run a 30-day pilot on live traffic, and measure the rate yourself. A platform claiming 60% resolution rate in case studies may deliver 28% on your specific query distribution if your tickets are more complex than average.</li>
   <li><strong>Escalation context quality.</strong> When the AI cannot resolve a conversation and escalates to a human agent, what does the agent receive? The minimum acceptable handoff includes the full conversation transcript, the customer's account data, a summary of what the AI attempted, and suggested next steps. Platforms that pass a bare transcript without AI-generated context are adding friction, not reducing it.</li>
   <li><strong>Knowledge base maintenance burden.</strong> AI agents are only as good as the knowledge they can retrieve. Ask the vendor how the AI surfaces knowledge gaps, and what update cycle is required to maintain resolution rate quality. A platform with good knowledge gap detection (Forethought, Intercom) is worth more than a slightly higher raw resolution rate on a clean knowledge base.</li>
-  <li><strong>Total cost at your actual conversation volume.</strong> Per-resolution pricing (Intercom Fin: $0.99; Agentforce: $2.00) looks cheap per unit but scales quickly. Seat-based pricing (Zendesk, Freshdesk) is predictable but expensive as your team grows. Model your actual projected monthly AI conversation volume at each pricing structure before committing to an annual contract. For a broader look at where AI agents fit versus rule-based automation, see our <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation</a> explainer, and our <a href="/blog/multi-agent-ai-systems-explained-2026/">Multi-Agent AI Systems</a> report for how these platforms' underlying architecture compares to newer agentic frameworks.</li>
+  <li><strong>Total cost at your actual conversation volume.</strong> Per-resolution pricing (Intercom Fin: $0.99; Agentforce: $2.00) looks cheap per unit but scales quickly. Seat-based pricing (Zendesk, Freshdesk) is predictable but expensive as your team grows. Model your actual projected monthly AI conversation volume at each pricing structure before committing to an annual contract. For a broader look at where AI agents fit versus rule-based automation, see our <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation</a> explainer. Our <a href="/blog/multi-agent-ai-systems-explained-2026/">Multi-Agent AI Systems</a> report also covers how these platforms' architecture compares to newer agentic frameworks.</li>
 </ol>
 
 <h2>Verdict: Which AI Customer Service Agent to Choose in 2026</h2>
