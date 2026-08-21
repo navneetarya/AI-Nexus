@@ -93,6 +93,9 @@ const post: BlogPost = {
 
 
 <h2>What Is MCP and Why Did Anthropic Create It?</h2>
+<div style="margin:14px 0 24px;">
+  <a href="https://cursor.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Cursor →</a>
+</div>
 <p>Before MCP, every AI application that needed to read a database, query a CRM, or call an external API had to ship a purpose-built integration for that exact pairing.</p>
 <p>A coding assistant that wanted to read your GitHub issues needed a GitHub-specific integration.</p>
 <p>The same assistant wanting to query a Postgres database needed an entirely separate, Postgres-specific integration.</p>

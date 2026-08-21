@@ -36,6 +36,9 @@ const post: BlogPost = {
 
 <h2>TL;DR: best AI voice cloning tools in 30 seconds</h2>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+</div>
 <p>ElevenLabs leads on cloning quality, building a usable voice from about one minute of clean audio across 29 languages. Descript's Overdub feature clones your voice specifically to fix mistakes in existing recordings. Resemble AI and Play.ht both offer cloning at different price points, useful if ElevenLabs' pricing doesn't fit your volume.</p>
 
 <div style="overflow-x:auto;margin:28px 0">

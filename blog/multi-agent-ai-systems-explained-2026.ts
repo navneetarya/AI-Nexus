@@ -95,6 +95,9 @@ const post: BlogPost = {
 
 <h2>What Is a Multi-Agent AI System?</h2>
 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Multiple code windows on monitors, representing coordinated AI agents working on a task" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<div style="margin:14px 0 24px;">
+  <a href="https://www.langchain.com/langgraph" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit LangGraph →</a>
+</div>
 <p>Navneet Arya here. A <strong>multi-agent AI system</strong> is an AI setup where a task is split among two or more AI agents. Each agent runs its own reasoning loop, holds its own context, and typically calls its own set of tools, instead of one model doing the entire task start to finish.</p>
 <p>An orchestrator agent, or a peer-to-peer protocol depending on the setup, coordinates the handoffs. It breaks a request into subtasks, assigns each one to the agent best suited for it, and merges the results into a final output.</p>
 <p>The idea itself is not new. Multi-agent systems research goes back decades in academic AI and robotics. What changed in 2025 and 2026: large language models became capable enough, and agentic tool-use frameworks matured enough. Multi-agent setups moved from research demos into real production software.</p>

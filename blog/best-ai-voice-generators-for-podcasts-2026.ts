@@ -41,6 +41,9 @@ const post: BlogPost = {
 
 <h2>TL;DR: which tool for which podcast job</h2>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
+</div>
 <p>ElevenLabs wins for making intros, ad reads, and multi-language dubbing, thanks to its 29-language coverage. Podcastle's Revoice and Descript's Overdub both fit better if the fix needs to happen inside an existing recording or transcript-editing session, not as a standalone generation task.</p>
 
 <div style="overflow-x:auto;margin:28px 0">
