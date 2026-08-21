@@ -66,11 +66,14 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For <strong>LLM API pricing</strong> as of July 2026, <strong>Claude Sonnet 5</strong> is the cheapest frontier-tier model. It costs $2/$10 per million input/output tokens (introductory, through August 31). <strong>Gemini 3.5 Flash</strong> costs $1.50/$9, and <strong>GPT-5.4</strong> costs $2.50/$15. <strong>GPT-4o</strong> no longer appears on OpenAI's official pricing page. GPT-5.4 and GPT-5.5 are its direct successors for any 2026 API pricing comparison.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For <strong>LLM API pricing</strong> as of July 2026, <strong>Claude Sonnet 5</strong> is the cheapest frontier-tier model. It costs $2/$10 per million input/output tokens (introductory, through August 31). <strong>Gemini 3.5 Flash</strong> costs $1.50/$9, and <strong>GPT-5.4</strong> costs $2.50/$15.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>GPT-4o</strong> no longer appears on OpenAI's official pricing page. GPT-5.4 and GPT-5.5 are its direct successors for any 2026 API pricing comparison.</p>
 </div>
 
 <blockquote style="border-left:3px solid #0D9488;padding-left:16px;margin:24px 0;font-style:italic;color:#444;">The "GPT-4o vs Claude vs Gemini" search habit hasn't caught up with reality. GPT-4o has been retired from ChatGPT entirely and dropped off OpenAI's own pricing table. The real 2026 comparison is GPT-5.4/5.5 vs Claude Sonnet 5 vs Gemini 3.5 Flash. Sonnet 5's introductory $2/$10 rate through August 31 makes it the one worth routing to right now if quality-per-dollar is the goal. Its heavier tokenizer does eat into that headline discount on real workloads, though.<br/><span style="font-style:normal;font-size:13px;color:#888;">— Navneet Arya, AI Nexus</span></blockquote>
 <p style="font-size:12px;color:var(--text-muted,#888);">This is a developer reference post with no affiliate links — every "Visit API" link below goes straight to the vendor. See our <a href="/disclosure/">affiliate disclosure</a> for how we handle sponsored links elsewhere on the site.</p>
+
+<img src="https://images.unsplash.com/photo-1636115837651-6f2a5c7ef01a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A close-up of a bunch of money, representing API cost comparison" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>How to Pick the Right Model for Cost</h2>
 <ol style="margin:16px 0;padding-left:24px;line-height:1.9;font-size:14.5px;">
@@ -84,6 +87,8 @@ const post: BlogPost = {
   <a href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Anthropic API →</a>
 </div>
 
+<img src="https://images.unsplash.com/photo-1711606815631-38d32cdaec3e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A calculator sitting on a table next to a laptop, used to compare API pricing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Why "GPT-4o vs Claude vs Gemini" Is the Wrong Question in July 2026</h2>
 <p>GPT-4o is still the model most people type into a search bar when they want to compare LLM API pricing. For most of 2024 and 2025 that made sense: it was OpenAI's default workhorse model. That is no longer true.</p>
 <p>OpenAI retired GPT-4o from ChatGPT in two stages. Consumer access was cut on February 13, 2026. The last bit, through Custom GPTs on Business, Enterprise, and Edu plans, ended April 3, 2026.</p>
@@ -91,6 +96,8 @@ const post: BlogPost = {
 <p>That leaves a gap between what people search for and what providers actually publish.</p>
 <p>That matters for anyone budgeting an <strong>LLM API</strong> project in 2026. A lot of "GPT-4o vs Claude vs Gemini" posts online still quote its old $2.50/$10.00 rate, as if that were still OpenAI's flagship price. It is not.</p>
 <p>This guide uses the numbers OpenAI, Anthropic, and Google publish today, checked against each provider's own pricing page. It treats GPT-5.4 and GPT-5.5 as GPT-4o's real successors for cost comparison purposes.</p>
+
+<img src="https://images.unsplash.com/photo-1651341050677-24dba59ce0fd?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A graphical user interface application showing usage data on screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>LLM API Pricing Comparison — Verified July 2026</h2>
 <p>Every model below bills per million tokens, split into input (what you send) and output (what it generates back). Rates shown are standard, non-batch, non-cached — the starting point, before any of the cost-cutting levers covered below.</p>
@@ -174,7 +181,7 @@ const post: BlogPost = {
 </div>
 
 <h3>OpenAI: GPT-5.5 and GPT-5.4 Replace GPT-4o</h3>
-<p>OpenAI's current flagship lineup has two tiers. GPT-5.5 runs $5.00 input / $30.00 output per million tokens, with a $0.50 cached-input rate. GPT-5.4 is the mid-tier option at $2.50/$15.00. Both roughly double their rate once a request crosses a long-context threshold — around 270,000 tokens for GPT-5.5/5.4.</p>
+<p>OpenAI's current flagship lineup has two tiers. GPT-5.5 runs $5.00 input / $30.00 output per million tokens, with a $0.50 cached-input rate. GPT-5.4 is the mid-tier option at $2.50/$15.00.</p><p>Both roughly double their rate once a request crosses a long-context threshold — around 270,000 tokens for GPT-5.5/5.4.</p>
 <p>For budget routing, GPT-5.4 mini ($0.75/$4.50) and GPT-5.4 nano ($0.20/$1.25) exist below the flagship tier. GPT-4o isn't listed in OpenAI's current pricing docs at all. That's a real shift from earlier in 2026, when it still showed up as a legacy option.</p>
 
 <h3>Anthropic: Claude Sonnet 5's Introductory Window</h3>
@@ -184,8 +191,8 @@ const post: BlogPost = {
 <p>Anthropic is also the only one of the three providers with a full 1 million token context window at flat, standard pricing. There's no long-context surcharge, unlike with OpenAI and Google.</p>
 
 <h3>Google: Gemini 3.5 Flash Undercuts the Pro Tier</h3>
-<p>Google's Gemini API splits into a Pro tier and a Flash tier with meaningfully different economics. Gemini 3.1 Pro Preview costs $2.00/$12.00 per million tokens up to a 200,000-token prompt, stepping to $4.00/$18.00 above that threshold. It has been paid-only since April 1, 2026, when Google removed free-tier access to its Pro-class models.</p>
-<p>Gemini 3.5 Flash, launched at Google I/O 2026, costs $1.50/$9.00 with no context-length pricing tiers. It also has a genuine free tier with lower rate limits — something neither OpenAI's nor Anthropic's flagship models offer. For the cheapest possible routing tier, Gemini 2.5 Flash-Lite at $0.10/$0.40 remains available with a free tier as well.</p>
+<p>Google's Gemini API splits into a Pro tier and a Flash tier with meaningfully different economics. Gemini 3.1 Pro Preview costs $2.00/$12.00 per million tokens up to a 200,000-token prompt, stepping to $4.00/$18.00 above that threshold.</p><p>It has been paid-only since April 1, 2026, when Google removed free-tier access to its Pro-class models.</p>
+<p>Gemini 3.5 Flash, launched at Google I/O 2026, costs $1.50/$9.00 with no context-length pricing tiers. It also has a genuine free tier with lower rate limits — something neither OpenAI's nor Anthropic's flagship models offer.</p><p>For the cheapest possible routing tier, Gemini 2.5 Flash-Lite at $0.10/$0.40 remains available with a free tier as well.</p>
 
 <h3>How These Prices Have Moved Since Early 2026</h3>
 <p>LLM API pricing hasn't stood still this year, and the direction differs by provider. OpenAI's flagship rate actually rose in 2026: GPT-5.5 at $5.00/$30.00 costs twice as much per input token as GPT-4o's old $2.50 rate.</p>
@@ -193,17 +200,23 @@ const post: BlogPost = {
 <p>Anthropic moved the opposite way at the flagship level. Opus dropped from $15.00/$75.00 (Opus 4.1) to $5.00/$25.00 across Opus 4.5 through 4.8 — a 3x cut across four straight releases.</p>
 <p>Google's biggest 2026 change wasn't a price cut. It was a free-tier restriction: Gemini Pro-class models lost free access entirely on April 1, 2026. That pushed anyone prototyping with Gemini 3.1 Pro onto a paid account, though Flash and Flash-Lite kept a reduced free tier.</p>
 
+<img src="https://images.unsplash.com/photo-1579532582937-16c108930bf6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A close-up of a paper covered in numbers, representing token cost math" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Cost Per Token, Explained</h2>
 <p>Every major LLM API bills in units of one million tokens, split into input tokens and output tokens. Input tokens cover the prompt, system instructions, and any context you send.</p>
 <p>Output tokens are what the model generates back, including internal reasoning tokens on extended-thinking models. A token is roughly four characters, or 0.75 words in English — so 1,000 tokens is close to 750 words.</p>
 <p>Output tokens always cost more than input tokens, usually 5 to 6 times more. Generating text just takes more compute per token than reading it. That's why output-heavy work — long-form writing, code, detailed answers — costs a lot more than input-heavy work like classification or summarizing, even on the same model.</p>
 <p>The formula for any request is simple: (input tokens ÷ 1,000,000 × input price) + (output tokens ÷ 1,000,000 × output price). The real complexity comes from what's layered on top: long-context surcharges, caching discounts, and batch discounts. That's where the real cost differences between providers show up.</p>
 
+<img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person using a MacBook Pro to test long-context prompt caching" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Long Context and Prompt Caching: The Hidden Multipliers</h2>
-<p>Two structural differences between the three providers matter more than the headline per-token rate for most production workloads. The first is <strong>long-context pricing</strong>. OpenAI's GPT-5.4/5.5 family and Google's Gemini 3.1 Pro both roughly double their price once a request crosses a context-length threshold. That's around 270K tokens for OpenAI, 200K tokens for Gemini 3.1 Pro.</p>
+<p>Two structural differences between the three providers matter more than the headline per-token rate for most production workloads. The first is <strong>long-context pricing</strong>. OpenAI's GPT-5.4/5.5 family and Google's Gemini 3.1 Pro both roughly double their price once a request crosses a context-length threshold.</p><p>That's around 270K tokens for OpenAI, 200K tokens for Gemini 3.1 Pro.</p>
 <p>Anthropic's current Claude models — Sonnet 5, Sonnet 4.6, Opus 4.8, Opus 4.7, Opus 4.6 — all get the full 1M token window at flat, standard pricing. There's no premium tier. That's a real difference for any app working with big codebases, long documents, or long chat history.</p>
-<p>The second is <strong>prompt caching</strong>, which every one of the three providers now offers. A cache hit on Anthropic costs 10% of the standard input price, a 90% discount. OpenAI's cached-input rate for GPT-5.4/5.5 runs at roughly the same 10% of standard input. Google's Gemini context caching costs about 10% of standard input too, plus a small per-hour storage fee.</p>
+<p>The second is <strong>prompt caching</strong>, which every one of the three providers now offers. A cache hit on Anthropic costs 10% of the standard input price, a 90% discount. OpenAI's cached-input rate for GPT-5.4/5.5 runs at roughly the same 10% of standard input.</p><p>Google's Gemini context caching costs about 10% of standard input too, plus a small per-hour storage fee.</p>
 <p>Most chatbots and coding assistants send the same system prompt, examples, or reference doc on every single request. For that kind of app, turning on caching is usually a bigger cost lever than which provider you pick at all. All three providers also offer a 50% batch-processing discount for asynchronous, non-time-sensitive workloads.</p>
+
+<img src="https://images.unsplash.com/photo-1636115798885-68e47c928729?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A stack of money sitting on top of a laptop computer, representing a worked cost example" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>A Worked Cost Example: Same Workload, Three Providers</h2>
 <p>Here's a concrete example: a mid-size app processing 10 million input tokens and 3 million output tokens a month. That's a realistic volume for a chatbot or coding assistant with moderate traffic, before caching or batch discounts kick in.</p>
@@ -278,6 +291,8 @@ const post: BlogPost = {
 <p>At this volume, the spread between the cheapest budget-tier model and the priciest flagship is roughly 64x. That's a bigger swing than most teams expect until they run the numbers.</p>
 <p>Note: this table skips Sonnet 5's ~30% tokenizer overhead versus older Claude models. Real cost lands a bit higher than the raw math shows. It also excludes caching. A chatbot with an 80% cache-hit rate on a shared system prompt could cut most of these totals by a third or more.</p>
 
+<img src="https://images.unsplash.com/photo-1726137570000-70ae29f0ba01?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A hand holding a credit card next to a phone, representing billing for API usage in India" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Which LLM API Is Cheapest for Indian Developers?</h2>
 <p>None of the three providers bill in INR or accept UPI for direct API usage. OpenAI, Anthropic, and Google all charge in USD through an international card, which adds 2–3.5% in forex fees. GST-registered Indian businesses also pay 18% GST on top of the converted amount.</p>
 <p>From the example above, a $50/month Sonnet 5 bill at the intro rate works out to roughly ₹4,150–₹4,300 after forex fees, before GST. That's competitive with Gemini 3.5 Flash's $42/month bill at similar conversion overhead.</p>
@@ -298,8 +313,10 @@ const post: BlogPost = {
   <a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Google AI Studio →</a>
 </div>
 
+<img src="https://images.unsplash.com/photo-1516159754081-f01c990481dd?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A vintage adding machine, representing the final cost verdict" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Final Verdict: LLM API Pricing in July 2026</h2>
-<p>The clearest takeaway from the official pricing pages, not recycled charts: GPT-4o is no longer part of this conversation. Any pricing table that still centers it is working from stale data. The real three-way comparison in July 2026 is GPT-5.4/5.5 versus Claude Sonnet 5/Opus 4.8 versus Gemini 3.1 Pro/3.5 Flash.</p>
+<p>The clearest takeaway from the official pricing pages, not recycled charts: GPT-4o is no longer part of this conversation. Any pricing table that still centers it is working from stale data.</p><p>The real three-way comparison in July 2026 is GPT-5.4/5.5 versus Claude Sonnet 5/Opus 4.8 versus Gemini 3.1 Pro/3.5 Flash.</p>
 <p>On that comparison, Sonnet 5's intro rate and Gemini 3.5 Flash are the two best-value options near the frontier tier. Claude and Gemini both beat OpenAI, on flat long-context pricing and free-tier access respectively. Every provider now offers roughly the same caching and batch discounts too.</p>
 <p>The single biggest cost lever, whichever provider you pick, is still routing simple tasks to a cheaper model. Turning on prompt caching for a repeated system prompt is the other one.</p>
   `.trim(),

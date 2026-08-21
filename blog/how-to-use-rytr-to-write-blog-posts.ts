@@ -78,6 +78,7 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://rytr.me/pricing', label: 'Rytr official pricing page' },
     { url: 'https://developers.google.com/search/blog/2022/02/google-doc-helpful-content-update', label: 'Google Search Central — helpful content guidance' },
+    { url: 'https://developers.google.com/search/docs/fundamentals/using-gen-ai-content', label: 'Google Search Central — guidance on generative AI content' },
   ],
 
   wordCount: 1550,
@@ -95,6 +96,8 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+
+<img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person using a MacBook Pro to draft a blog post" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Rytr Plans Compared</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -136,6 +139,8 @@ const post: BlogPost = {
   <li><strong>Tone of voice:</strong> Rytr has 20+ tones. For blog posts, "Informative" and "Conversational" produce the most useful drafts. Avoid "Humorous" for anything professional — it tends to produce low-quality puns.</li>
 </ul>
 
+<img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person writing on a wooden table near a ceramic mug, outlining a blog post" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Step 2: Generate a Blog Outline</h2>
 <p>This is the most important step. Don't try to write sections until you have an outline. You'll waste credits going in the wrong direction.</p>
 <ol style="margin:8px 0 14px 24px;line-height:2.4;">
@@ -173,6 +178,8 @@ const post: BlogPost = {
 <h2>Step 5: Generate a Conclusion and CTA</h2>
 <p>Select the <strong>"Conclusion"</strong> use case. Paste a 1-sentence summary of your post's main takeaway into the brief. Generate 3 options and pick the most direct one. Rytr's conclusions tend to over-summarise what you already said. Trim aggressively and end with a single clear CTA: subscribe, read a related post, or try the tool via affiliate link.</p>
 
+<img src="https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person writing with a pen, editing and fact-checking a draft" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Step 6: Edit, Add Your Examples, Check Facts</h2>
 <p>Before publishing, do three passes:</p>
 <ul style="margin:8px 0 14px 24px;line-height:2.4;">
@@ -192,7 +199,7 @@ const post: BlogPost = {
 </ul>
 <p>The editing phase is where your value as a writer shows. Don't skip it to save time. The difference between a Rytr post edited well and one published raw is significant. Google's helpful content guidelines penalise low-quality AI content; edited, personalised AI content is fine.</p>
 
-<p>Ready to start? No credit card required for the free plan. Or read our <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">full Rytr review</a> for a deeper look at everything the platform offers, see how it stacks up in our <a href="/compare/rytr-vs-writesonic/" style="color:var(--a1);font-weight:600;">Rytr vs Writesonic comparison</a>, or browse the full <a href="/best-ai-writing-tools/" style="color:var(--a1);font-weight:600;">best AI writing tools category</a> for more options.</p>
+<p>Ready to start? No credit card required for the free plan. Read our <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">full Rytr review</a> for a deeper look at everything the platform offers, or see how it stacks up in our <a href="/compare/rytr-vs-writesonic/" style="color:var(--a1);font-weight:600;">Rytr vs Writesonic comparison</a>. You can also browse the full <a href="/best-ai-writing-tools/" style="color:var(--a1);font-weight:600;">best AI writing tools category</a> for more options.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>

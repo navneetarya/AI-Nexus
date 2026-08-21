@@ -63,7 +63,8 @@ const post: BlogPost = {
 <p style="font-size:16px;font-weight:600;margin-bottom:16px;">Is the tool you're paying for actually an "AI agent" — or is it automation with a single LLM step bolted on? Here's the 3-question test that tells you which one you actually need.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>AI automation</strong> follows rules: trigger → action. If a form is submitted, send a welcome email. <strong>AI agents</strong> pursue goals: given an objective, plan and execute the steps needed to reach it, adapting when intermediate results change. The confusion between these two categories is expensive. Most tasks sold as "agent use cases" are more reliably and cheaply solved with well-configured automation. But when inputs are variable and multi-step decision-making is required, automation hits its ceiling fast and agents become the right tool.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>AI automation</strong> follows rules: trigger → action. If a form is submitted, send a welcome email. <strong>AI agents</strong> pursue goals: given an objective, plan and execute the steps needed to reach it, adapting when intermediate results change.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The confusion between these two categories is expensive. Most tasks sold as "agent use cases" are more reliably and cheaply solved with well-configured automation. But when inputs are variable and multi-step decision-making is required, automation hits its ceiling fast and agents become the right tool.</p>
 </div>
 <!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
@@ -93,6 +94,8 @@ const post: BlogPost = {
 <p>Conversely, teams build fragile 40-step automation workflows for tasks that break on every edge case, when a supervised agent would handle the variability at lower maintenance cost. Getting the category right is not an academic distinction. It is a budget and architecture decision with recurring consequences.</p>
 <p>The single most useful distinction: <strong>automation reacts to events by following rules; agents reason toward goals by making decisions.</strong> Everything else follows from this.</p>
 
+<img src="https://images.unsplash.com/photo-1773332585815-f106a5d6ed6c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person working at a desk with a laptop and books, setting up a rule-based workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>What AI Automation Actually Is</h2>
 <p>Traditional automation, and what most platforms still deliver even with AI modules added, is structured around a fixed execution pattern. A trigger event fires, conditions are checked, and a defined action executes.</p>
 <p>The process is deterministic. There is no reasoning about what to do next, no adaptation when inputs fall outside defined parameters, and no goal-tracking across multiple executions.</p>
@@ -105,7 +108,7 @@ const post: BlogPost = {
   <li><strong>Action:</strong> Execute something fixed: send an email, create a CRM record, post a Slack message, add a spreadsheet row, or call an API endpoint.</li>
 </ul>
 <p><strong>Make.com</strong>, <strong>n8n</strong>, <strong>Zapier</strong>, and <strong>Activepieces</strong> all operate on this model at their core. The AI-augmented versions of these platforms add LLM-powered steps within the workflow.</p>
-<p>A classification step might tag an incoming email as "sales inquiry" or "support request," and a generation step might draft a personalised response. But the overall execution path is still designed by a human and follows a fixed sequence. The AI provides capability within a step; it does not determine what happens next. For a full head-to-head on the three biggest automation platforms, see <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier: AI Automation Platform Comparison 2026</a>.</p>
+<p>A classification step might tag an incoming email as "sales inquiry" or "support request," and a generation step might draft a personalised response. But the overall execution path is still designed by a human and follows a fixed sequence. The AI provides capability within a step; it does not determine what happens next.</p><p>For a full head-to-head on the three biggest automation platforms, see <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier: AI Automation Platform Comparison 2026</a>.</p>
 <p>This architecture is extremely well-suited for high-volume, predictable workflows. Contact form submitted → tag lead source → add to CRM → send welcome email. Product return requested → check order ID → generate refund confirmation → notify warehouse.</p>
 <p>These workflows execute reliably at scale because the input space is fully known and every decision is pre-specified as a rule. <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Make.com →</a> · <a href="https://n8n.io/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">n8n ↗</a></p>
 <div style="margin:14px 0 24px;">
@@ -117,6 +120,8 @@ const post: BlogPost = {
 </p>
 <p>The ceiling appears when inputs become unpredictable. A form submission containing an ambiguous request the workflow has no category for. An inbound email that requires a nuanced reply falling outside the four defined templates.</p>
 <p>A data entry in an unexpected format that breaks a downstream conditional. At this boundary, automation requires either more rules, which make the workflow increasingly complex and brittle, or human intervention. Neither scales.</p>
+
+<img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person working on blue and white paper on a board, planning an agent's decision path" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>What an AI Agent Actually Is</h2>
 <p>An AI agent takes a <em>goal</em> as input, not a trigger. It determines, executes, and adapts a plan to reach that goal, using an LLM to reason about what steps to take, in what order, and with which tools.</p>
@@ -138,6 +143,8 @@ const post: BlogPost = {
 </div>
 <p>The capability gain is real. The tradeoffs are also real. Agents are harder to audit when they make wrong decisions, cost more per execution than deterministic automation steps, and require careful specification of goal criteria and acceptable decision boundaries.</p>
 <p>Agent deployment is not a drop-in replacement for automation. It is a different paradigm with different requirements.</p>
+
+<img src="https://images.unsplash.com/photo-1646617747563-4f080bddf282?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person drawing a diagram on paper, mapping out levels of autonomy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>The Four Levels: From Rule-Based to Autonomous</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -180,6 +187,8 @@ const post: BlogPost = {
 </div>
 <p>Level 2 and Level 3 are where most viable business deployments in 2026 operate. Level 4 requires testing infrastructure and oversight that most organisations are not yet equipped to manage in production.</p>
 
+<img src="https://images.unsplash.com/photo-1769731738826-a51acd5bddc7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A hand drawing a decision diagram on a whiteboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>How to Choose: The Three-Question Framework</h2>
 
 <h3>Question 1: Are the inputs predictable?</h3>
@@ -188,11 +197,13 @@ const post: BlogPost = {
 
 <h3>Question 2: Does the task require multi-step decisions?</h3>
 <p>A task requiring more than three or four conditional branches, or requiring re-evaluation based on intermediate results, is structurally suited to an agent. Automations handle complex branching poorly.</p>
-<p>Every new edge case adds branches, and the workflow becomes increasingly difficult to maintain and debug. Agents handle this naturally because they reason about what to do next at each step rather than following a predetermined path. The practical signal: if your automation has been modified more than five times to handle edge cases you didn't anticipate, it's a candidate for replacement by an agent.</p>
+<p>Every new edge case adds branches, and the workflow becomes increasingly difficult to maintain and debug. Agents handle this naturally because they reason about what to do next at each step rather than following a predetermined path.</p><p>The practical signal: if your automation has been modified more than five times to handle edge cases you didn't anticipate, it's a candidate for replacement by an agent.</p>
 
 <h3>Question 3: What's the cost of an error?</h3>
 <p>Automation errors are predictable and auditable: the workflow logs exactly which step failed and what the input was. Agent errors are harder to diagnose because the reasoning is implicit in the LLM's output.</p>
 <p>For workflows where errors have significant consequences, automation's predictability is a feature, not a limitation. Think financial transactions, customer-facing communications sent without review, or data mutations in production systems. Introduce agents only where the cost of an incorrect output is recoverable and where human review of outputs can be built into the process.</p>
+
+<img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person sitting in front of a laptop, running through a deployment checklist" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>The Practical Deployment Sequence</h2>
 <p>For most organisations deploying AI workflow automation for the first time in 2026, the recommended sequence is:</p>
@@ -206,7 +217,7 @@ const post: BlogPost = {
 <p>Every major software vendor is calling its product an "AI agent" in 2026, including tools that are, at their core, workflow automation with an LLM step embedded. This is partly marketing, partly genuine capability ambiguity as LLM-native features get added to automation platforms that weren't built for them.</p>
 <p>The practical filter: when a vendor says "AI agent," ask how the system determines what to do next. If the answer is "it follows the workflow you configure," it's AI-augmented automation.</p>
 <p>If the answer is "it uses an LLM to reason about the next step based on the current state," it's a genuine agent. Both are useful. Neither is inherently superior. The question is which one matches your actual use case, and whether the pricing reflects that match.</p>
-<p>For a full platform comparison across agent-native and automation-native tools, including pricing, autonomy levels, and SMB deployment fit, see <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a>. If you're an automation or QA engineer, you may be evaluating how agentic AI fits alongside test frameworks and CI pipelines — <a href="/blog/best-ai-tools-for-automation-engineers-2026/">Best AI Tools for Automation Engineers 2026</a> covers the code-generation and test-intelligence tools that sit alongside these platforms. And if the agent you're evaluating needs to pull live data mid-task, see <a href="/blog/what-is-mcp-model-context-protocol-2026/">What Is MCP (Model Context Protocol)?</a> for how that connective layer works.</p>
+<p>For a full platform comparison across agent-native and automation-native tools, including pricing, autonomy levels, and SMB deployment fit, see <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a>.</p><p>If you're an automation or QA engineer, you may be evaluating how agentic AI fits alongside test frameworks and CI pipelines. <a href="/blog/best-ai-tools-for-automation-engineers-2026/">Best AI Tools for Automation Engineers 2026</a> covers the code-generation and test-intelligence tools that sit alongside these platforms.</p><p>And if the agent you're evaluating needs to pull live data mid-task, see <a href="/blog/what-is-mcp-model-context-protocol-2026/">What Is MCP (Model Context Protocol)?</a> for how that connective layer works.</p>
 <p style="font-size:12px;color:var(--text-muted,#888);">This analysis is independent research. See our <a href="/disclosure/">affiliate disclosure</a> and <a href="/methodology/">editorial methodology</a>.</p>
 `,
   wordCount: 1820,

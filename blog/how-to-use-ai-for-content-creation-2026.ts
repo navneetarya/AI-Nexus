@@ -92,6 +92,8 @@ const post: BlogPost = {
   </ol>
 </div>
 
+<img src="https://images.unsplash.com/photo-1773332598413-a6d5279d1ae8?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person working on a laptop at a wooden desk, drafting written content" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Part 1: AI for Written Content (Articles, Blog Posts, Social Captions)</h2>
 <p><strong>Tools covered: <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">Rytr</a> · <a href="/tools/grammarly/" style="color:var(--a1);font-weight:600;">Grammarly</a></strong></p>
 
@@ -152,12 +154,14 @@ const post: BlogPost = {
   </table>
 </div>
 
+<img src="https://images.unsplash.com/photo-1558655146-605d86ed31b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person drawing a sketch on a graphics tablet for a blog thumbnail" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Part 2: AI for Images (Blog Thumbnails, Social Visuals, Product Graphics)</h2>
 <p><strong>Tools covered: <a href="/tools/leonardo-ai/" style="color:var(--a1);font-weight:600;">Leonardo.ai</a> · <a href="/tools/photoroom/" style="color:var(--a1);font-weight:600;">PhotoRoom</a></strong></p>
 
 <h3>Generating Feature Images and Thumbnails with Leonardo.ai</h3>
 <p><a href="/tools/leonardo-ai/" style="color:var(--a1);font-weight:600;">Leonardo.ai</a> is the most practically useful AI image generator for content creators in 2026. That's largely because of its free plan: 150 generation credits per day, producing 30–75 images depending on resolution. For a content creator publishing 3–5 pieces per week, you will almost never exhaust this allowance.</p>
-<p>For blog feature images, the workflow is simple. Write a detailed prompt describing the concept, mood, and style you want. Example: "flat vector illustration of a person using a laptop with AI interface, teal and dark colour scheme, minimalist, no text". Generate 4 variations, pick the best, download at full resolution. The entire process takes under 3 minutes once you are comfortable writing prompts.</p>
+<p>For blog feature images, the workflow is simple. Write a detailed prompt describing the concept, mood, and style you want. Example: "flat vector illustration of a person using a laptop with AI interface, teal and dark colour scheme, minimalist, no text". Generate 4 variations, pick the best, download at full resolution.</p><p>The entire process takes under 3 minutes once you are comfortable writing prompts.</p>
 <p>The model selection inside Leonardo matters. For illustrations and conceptual images, the <strong>Flux Dev</strong> and <strong>Leonardo Diffusion XL</strong> models give the cleanest, most consistent results for content creators. Avoid the default "Leonardo Creative" model for professional-looking images. It adds stylistic flourishes that make images look AI-generated at a glance.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
@@ -170,19 +174,21 @@ const post: BlogPost = {
   <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
 </div>
 
+<img src="https://images.unsplash.com/photo-1531178625044-cc2a0fb353a9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A monitor displaying a video editing timeline used for short-form clips" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Part 3: AI for Video (Blog-to-Video, Short-Form Clips)</h2>
 <p><strong>Tools covered: <a href="/tools/pictory/" style="color:var(--a1);font-weight:600;">Pictory</a> · <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">InVideo AI</a></strong></p>
 
 <h3>Turning Blog Posts into Videos with Pictory</h3>
-<p><a href="/tools/pictory/" style="color:var(--a1);font-weight:600;">Pictory</a> converts existing blog posts and scripts into narrated videos automatically. Paste your article URL or the full text. Pictory breaks it into scenes, selects stock footage for each scene, generates a voiceover, and adds captions, all without you touching a video editor. For a 1,000-word blog post, Pictory produces a 4–6 minute video in approximately 8–12 minutes.</p>
-<p>This is the highest-leverage video workflow for solo content creators: you write the article once, and Pictory produces a YouTube and LinkedIn video from the same content. One piece of content, two distribution channels, with roughly 15 minutes of additional work. Pictory starts at $19/month, the practical threshold where the time saved justifies the cost if you are publishing video content weekly.</p>
+<p><a href="/tools/pictory/" style="color:var(--a1);font-weight:600;">Pictory</a> converts existing blog posts and scripts into narrated videos automatically. Paste your article URL or the full text. Pictory breaks it into scenes, selects stock footage for each scene, generates a voiceover, and adds captions, all without you touching a video editor.</p><p>For a 1,000-word blog post, Pictory produces a 4–6 minute video in approximately 8–12 minutes.</p>
+<p>This is the highest-leverage video workflow for solo content creators: you write the article once, and Pictory produces a YouTube and LinkedIn video from the same content. One piece of content, two distribution channels, with roughly 15 minutes of additional work.</p><p>Pictory starts at $19/month, the practical threshold where the time saved justifies the cost if you are publishing video content weekly.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://pictory.ai?fpr=navneet24" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pictory Free →</a>
 </div>
 
 <h3>Short-Form Video from Text Prompts with InVideo AI</h3>
 <p>For Reels, YouTube Shorts, and TikTok, <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">InVideo AI</a> takes a text prompt or topic and produces a complete short-form video in under 5 minutes. Footage, voiceover, captions, and music are all included. The free plan includes 10 video exports per month with an InVideo watermark, enough to test the workflow before committing to the $25/month paid plan.</p>
-<p>The highest-quality use of InVideo for content creators is repurposing key sections from longer articles into 60-second short-form videos that drive traffic back to the full post. Enter the key point from your article as a prompt, set the duration to 60 seconds, and let InVideo generate. Then spend 5 minutes adjusting the script and swapping out any footage that does not fit. The result is a platform-native short video that would otherwise take 45–90 minutes to produce manually.</p>
+<p>The highest-quality use of InVideo for content creators is repurposing key sections from longer articles into 60-second short-form videos that drive traffic back to the full post. Enter the key point from your article as a prompt, set the duration to 60 seconds, and let InVideo generate.</p><p>Then spend 5 minutes adjusting the script and swapping out any footage that does not fit. The result is a platform-native short video that would otherwise take 45–90 minutes to produce manually.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://invideo.sjv.io/c/5629153/883681/12258" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>
 </div>
@@ -191,7 +197,7 @@ const post: BlogPost = {
 <p><strong>Tools covered: <a href="/tools/podcastle/" style="color:var(--a1);font-weight:600;">Podcastle</a> · <a href="/tools/murf-ai/" style="color:var(--a1);font-weight:600;">Murf AI</a></strong></p>
 
 <h3>Recording and Editing Podcasts with Podcastle</h3>
-<p><a href="/tools/podcastle/" style="color:var(--a1);font-weight:600;">Podcastle</a> is the simplest end-to-end podcast recording and editing tool with AI built in. Record directly in the browser at up to 48kHz quality. Podcastle's AI removes background noise, levels volume, and cleans up filler words like "um" and "uh" automatically. The free plan supports up to 3 hours of recording, enough for a monthly podcast series without paying anything.</p>
+<p><a href="/tools/podcastle/" style="color:var(--a1);font-weight:600;">Podcastle</a> is the simplest end-to-end podcast recording and editing tool with AI built in. Record directly in the browser at up to 48kHz quality. Podcastle's AI removes background noise, levels volume, and cleans up filler words like "um" and "uh" automatically.</p><p>The free plan supports up to 3 hours of recording, enough for a monthly podcast series without paying anything.</p>
 <p>For content creators who want to repurpose their written articles as podcast episodes, Podcastle's AI voice cloning feature (paid plan) is the answer. After a 30-minute training recording, it lets you generate a narrated audio version of any article in your own voice.</p>
 <p>The article-to-podcast workflow becomes: paste the article text, click generate, export the audio file. The quality on current models is indistinguishable from a live recording for most listening environments.</p>
 <div style="margin:14px 0 24px;">
@@ -199,11 +205,13 @@ const post: BlogPost = {
 </div>
 
 <h3>Professional Voiceover for Videos with Murf AI</h3>
-<p><a href="/tools/murf-ai/" style="color:var(--a1);font-weight:600;">Murf AI</a> generates studio-quality voiceovers from text in 120+ voices across 20 languages. For content creators who do not want to record their own voice, Murf's AI voices are the most natural-sounding option available in 2026. They're significantly ahead of where text-to-speech was 18 months ago. The free plan allows 10 minutes of voiceover per month, which is enough for 2–3 short video voiceovers. Paid plans start at $19/month for 2 hours per month.</p>
+<p><a href="/tools/murf-ai/" style="color:var(--a1);font-weight:600;">Murf AI</a> generates studio-quality voiceovers from text in 120+ voices across 20 languages. For content creators who do not want to record their own voice, Murf's AI voices are the most natural-sounding option available in 2026. They're significantly ahead of where text-to-speech was 18 months ago.</p><p>The free plan allows 10 minutes of voiceover per month, which is enough for 2–3 short video voiceovers. Paid plans start at $19/month for 2 hours per month.</p>
 <p>The practical workflow: write your video script in a Google Doc, paste it into Murf, and select a voice that matches your brand tone. Generate, then export the audio file directly into Pictory or InVideo for video assembly. This eliminates microphone setup, room acoustics issues, and re-recording for verbal mistakes. The AI narrates perfectly on the first generation.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
+
+<img src="https://images.unsplash.com/photo-1588800347304-ec7e6f353327?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black microphone with stand on a white background, set up for podcast recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Putting It All Together: The Complete Content Creation System</h2>
 <p>The four workflows above are not independent. They form a single production system where one piece of source content produces output across multiple formats and distribution channels.</p>
@@ -245,6 +253,8 @@ const post: BlogPost = {
     </tbody>
   </table>
 </div>
+
+<img src="https://images.unsplash.com/photo-1621009063622-4467e453c3c1?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black iPad on a wooden table, part of a complete content creation workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>The Honest Limitations</h2>
 <p>AI content creation tools in 2026 are genuinely useful, but they have real limitations that honest reviews should state clearly. AI writing tools hallucinate facts, statistics, and quotes — every factual claim in AI-generated text needs to be verified before publishing, because confident-sounding false information is the single biggest reputational risk of AI content.</p>
