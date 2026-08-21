@@ -88,7 +88,8 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The average SMB spends <strong>$150–$400/month</strong> across 4–6 AI tools in 2026. Only tools that replace recurring labour (meeting notes, email drafts, code review) reliably return positive ROI. This guide breaks down exact costs by category and flags the four hidden fees most buyers miss. It also gives you a five-step framework to calculate your own ROI before you buy.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The average SMB spends <strong>$150–$400/month</strong> across 4–6 AI tools in 2026. Only tools that replace recurring labour (meeting notes, email drafts, code review) reliably return positive ROI.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">This guide breaks down exact costs by category and flags the four hidden fees most buyers miss. It also gives you a five-step framework to calculate your own ROI before you buy.</p>
 </div>
 
 <h2>The Real State of AI Tool Spending in 2026</h2>
@@ -99,6 +100,8 @@ const post: BlogPost = {
 <p>The rest are sunk costs that survive monthly billing reviews because no one wants to be the person who cancelled the AI tool.</p>
 <p>This guide is the framework I use. It won't tell you which specific AI tool to buy; for that, see our category-specific comparisons below. What it will do is give you the analytical layer to evaluate any AI tool purchase on its actual business case.</p>
 
+<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A single U.S. dollar banknote, representing monthly AI tool spending" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>The 5-Step ROI Framework, at a Glance</h2>
 <ol style="margin:12px 0 20px 24px;line-height:1.9;">
   <li><strong>Map your current stack.</strong> List every active AI subscription and its monthly cost — most teams have a spend blind spot.</li>
@@ -107,6 +110,8 @@ const post: BlogPost = {
   <li><strong>Find the four hidden costs.</strong> Seat minimums, usage overages, integration fees, and adoption time all erode projected ROI.</li>
   <li><strong>Apply Keep, Consolidate, or Cut.</strong> Sort every tool into one of three buckets and act on it this billing cycle.</li>
 </ol>
+
+<img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person stacking coins on a table, mapping out a monthly tool budget" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Step 1: Map Your Current AI Tool Stack and Monthly Spend</h2>
 <p>Before calculating ROI, you need visibility into what you're paying. Most teams have a spend blind spot: subscriptions buried in personal cards, tool overlap discovered only at audit time, and free trials converted to paid plans without review.</p>
@@ -150,6 +155,8 @@ const post: BlogPost = {
 <p>The ROI formula: <code style="background:rgba(13,148,136,.1);padding:2px 8px;border-radius:4px;">(Hours saved × Hourly rate − Tool cost) ÷ Tool cost × 100 = ROI%</code></p>
 <p>Any tool returning below 100% ROI, where you save less than you spend, is a candidate for cutting. Any tool returning above 500% ROI is a tool you should be using more, not questioning.</p>
 
+<img src="https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Focus photography of a person counting dollar banknotes to calculate ROI" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Step 3: Category-by-Category Cost Reality Check</h2>
 <p>Here is what AI tools in each major category actually cost in 2026: not the headline price, but the price at realistic usage levels for a small team or individual.</p>
 
@@ -165,7 +172,7 @@ const post: BlogPost = {
 <h3>AI Automation Platforms ($0–$150/month)</h3>
 <p>This is the category with the widest ROI spread. At the low end, n8n's self-hosted community edition is free and handles most automation use cases for technically capable teams. At the high end, Make.com enterprise or Zapier Professional can run $100–$300/month for teams with complex multi-step workflows.</p>
 <p><a href="https://n8n.io/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try n8n Free →</a></p>
-<p>The ROI calculation for automation tools is different from other categories. You're not measuring time saved per use, you're measuring the total annual value of the workflows you've automated. A single workflow that automates a 30-minute daily task ($50/hour rate) is worth $7,500/year. A $100/month automation tool that enables that workflow has a 525% annual ROI.</p>
+<p>The ROI calculation for automation tools is different from other categories. You're not measuring time saved per use, you're measuring the total annual value of the workflows you've automated. A single workflow that automates a 30-minute daily task ($50/hour rate) is worth $7,500/year.</p><p>A $100/month automation tool that enables that workflow has a 525% annual ROI.</p>
 <p>See the full comparison in our <a href="/blog/n8n-vs-make-vs-zapier-2026/" style="color:#0D9488;">n8n vs Make vs Zapier 2026</a> breakdown, and <a href="/blog/best-no-code-ai-automation-tools-2026/" style="color:#0D9488;">Best No-Code AI Automation Tools</a> for platforms that don't require engineering ability. Understand the strategic layer at <a href="/blog/ai-agents-vs-ai-automation-difference-2026/" style="color:#0D9488;">AI Agents vs AI Automation</a> before committing to a platform.</p>
 <p><strong>INR pricing:</strong> n8n community free · Make.com Core ~₹830/month · Zapier Professional ~₹8,300/month at current USD/INR rates plus GST.</p>
 
@@ -211,6 +218,8 @@ const post: BlogPost = {
 <p>See our full breakdown in <a href="/blog/best-ai-coding-tools-2026/" style="color:#0D9488;">Best AI Coding Tools 2026</a> and our independent <a href="/blog/cursor-ai-review-2026/" style="color:#0D9488;">Cursor AI Review</a>. Also see our comparison in <a href="/blog/claude-code-vs-github-copilot-vs-replit-2026/" style="color:#0D9488;">Claude Code vs GitHub Copilot vs Replit</a>, and the low-code option in <a href="/blog/best-vibe-coding-tools-2026/" style="color:#0D9488;">Best Vibe Coding Tools 2026</a>. If cost is the primary concern, <a href="/blog/cheapest-ai-coding-tools-2026/" style="color:#0D9488;">Cheapest AI Coding Tools 2026</a> covers the budget options.</p>
 <p><strong>INR pricing:</strong> GitHub Copilot Individual ~₹830/month · Cursor Pro ~₹1,660/month. Both charge in USD; Indian developers often purchase on international cards with monthly FX exposure.</p>
 
+<img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A fan of 100 US dollar banknotes, representing hidden costs that add up" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Step 4: The Four Hidden Costs That Break ROI Calculations</h2>
 <p>Most AI tool ROI calculations underperform against projections. The reason is almost always one of four hidden cost categories that buyers consistently underestimate at purchase time.</p>
 
@@ -229,6 +238,8 @@ const post: BlogPost = {
 <h3>Hidden Cost 4: Adoption Time</h3>
 <p>The first month of any AI tool subscription should be counted as a training cost, not a productivity gain. Most tools take 2–4 weeks of daily use before the workflow is fast enough to generate measurable time savings.</p>
 <p>For tools that require prompt engineering (general-purpose AI assistants, content tools), the learning curve extends to 4–8 weeks for non-technical users. Budget the first month as setup cost; only measure ROI from month 2.</p>
+
+<img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A green plant in a clear glass cup, symbolizing a tool worth keeping and growing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Step 5: The Decision Framework: Keep, Cut, or Consolidate</h2>
 <p>After running the ROI calculation for every tool in your stack, apply this three-bucket decision framework:</p>
@@ -250,10 +261,12 @@ const post: BlogPost = {
 
 <p>The most common consolidation opportunity: three separate subscriptions for AI writing (Jasper), AI chatbot (ChatGPT Plus), and AI SEO (Surfer AI) that collectively cost $100–$150/month. One well-configured Claude Pro account at $20/month can handle 80% of the combined function for a solo content creator.</p>
 
+<img src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A miniature figure sitting on a stack of coins reading a newspaper, representing ROI by business type" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>AI Tool ROI by Business Type</h2>
 
 <h3>Freelancers and Solo Operators</h3>
-<p>The optimal AI stack for a freelancer is 2–3 tools at $40–$80/month total. Pick one general-purpose AI assistant (Claude Pro or ChatGPT Plus) and one writing or design tool relevant to your service offering. Optionally add one meeting intelligence tool if you run client calls. See our full stack recommendation in <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:#0D9488;">Best AI Tools for Freelancers 2026</a>.</p>
+<p>The optimal AI stack for a freelancer is 2–3 tools at $40–$80/month total. Pick one general-purpose AI assistant (Claude Pro or ChatGPT Plus) and one writing or design tool relevant to your service offering. Optionally add one meeting intelligence tool if you run client calls.</p><p>See our full stack recommendation in <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:#0D9488;">Best AI Tools for Freelancers 2026</a>.</p>
 <p>Indian freelancers: our <a href="/blog/best-ai-tools-for-freelancers-india-2026/" style="color:#0D9488;">India-specific freelancer guide</a> covers INR pricing and which tools offer localised plans.</p>
 
 <h3>Small and Medium Businesses (5–50 employees)</h3>
@@ -272,7 +285,9 @@ const post: BlogPost = {
 <p>Two forces are reshaping AI tool pricing in 2026:</p>
 <p><strong>Costs falling:</strong> The underlying model API pricing has dropped 80–90% since 2023. GPT-4-level capability now costs roughly $0.002/1,000 tokens versus $0.03 in early 2023.</p>
 <p>This is flowing through to end users as improved free tiers, lower per-seat pricing, and higher usage limits at the same price point. Compare the <a href="/blog/ai-api-pricing-comparison-2026/" style="color:#0D9488;">current AI API pricing</a> against historical benchmarks to understand the magnitude of this change.</p>
-<p><strong>Costs rising:</strong> Platform differentiation and proprietary model costs (tools that fine-tune on your company's data, or deploy specialised domain models) are becoming premium add-ons. Enterprise features, including SAML SSO, audit logs, custom data residency, and dedicated support SLAs, are increasingly behind $500–$2,000+/month price gates. The gap between SMB and enterprise AI tooling cost is widening, not narrowing.</p>
+<p><strong>Costs rising:</strong> Platform differentiation and proprietary model costs (tools that fine-tune on your company's data, or deploy specialised domain models) are becoming premium add-ons. Enterprise features, including SAML SSO, audit logs, custom data residency, and dedicated support SLAs, are increasingly behind $500–$2,000+/month price gates.</p><p>The gap between SMB and enterprise AI tooling cost is widening, not narrowing.</p>
+
+<img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person sitting at a table with a laptop, reviewing India-specific cost considerations" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>India-Specific Cost Considerations</h2>
 <p>Indian businesses face three AI tool cost issues that don't affect USD-denominated buyers:</p>
