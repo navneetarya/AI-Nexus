@@ -131,12 +131,12 @@ const post: BlogPost = {
 </div>
 
 <h2>ChatGPT Free (GPT-4o)</h2>
-<p>ChatGPT's free tier gives access to GPT-4o, the same model that powers ChatGPT Plus, until you hit the daily usage cap. That cap sits at roughly 10–15 substantive messages before the platform reverts to GPT-3.5, which is noticeably weaker for writing tasks.</p>
+<p>ChatGPT's free tier gives access to GPT-4o, the same model that powers ChatGPT Plus. This lasts until you hit the daily usage cap. That cap sits at roughly 10–15 substantive messages. After that, the platform reverts to GPT-3.5, which is noticeably weaker for writing tasks.</p>
 <p>If you start your day with ChatGPT free, you can typically get through 2–3 quality content sessions before the model degrades.</p>
-<p><strong>Strengths on the free tier:</strong> ChatGPT free handles the widest range of task types. That includes text writing, image understanding (upload a screenshot and ask questions about it), basic web browsing via Browse, and code generation.</p>
+<p><strong>Strengths on the free tier:</strong> ChatGPT free handles the widest range of task types. It covers text writing, image understanding (upload a screenshot and ask questions about it), basic web browsing via Browse, and code generation.</p>
 <p>The breadth is unmatched. For freelancers with varied work, this versatility means you only need one tool for a morning session.</p>
-<p><strong>Weaknesses on the free tier:</strong> The GPT-4o daily limit is the main frustration. Heavy users hit it by mid-morning, which forces a downgrade to GPT-3.5 or a reset the next day.</p>
-<p>The writing quality on GPT-3.5 is noticeably worse, with more filler phrases, more over-structured outputs, and less nuance. On the free tier, you are essentially renting quality rather than owning consistent access.</p>
+<p><strong>Weaknesses on the free tier:</strong> The GPT-4o daily limit is the main frustration. Heavy users hit it by mid-morning. That forces a downgrade to GPT-3.5, or a reset the next day.</p>
+<p>GPT-3.5 writing is noticeably worse. It has more filler phrases, more over-structured outputs, and less nuance. On the free tier, you rent quality rather than own consistent access.</p>
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:8px;padding:16px 20px;margin:20px 0;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">ChatGPT Free Best For</strong>
   <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">General-purpose tasks where no single AI is better · Image analysis and understanding · Quick code snippets and debugging · Social captions requiring variety across formats</p>
@@ -148,11 +148,11 @@ const post: BlogPost = {
 </div>
 <h2>Claude Free (Claude 3.5 Sonnet)</h2>
 <img src="https://images.unsplash.com/photo-1676573408178-a5f280c3a320?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A computer screen filled with AI-generated text, representing a free-tier chatbot writing session" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p>Claude's free plan is arguably the strongest writing tool available at zero cost in 2026. Unlike ChatGPT's free tier, where you access a premium model up to a limit before degrading to a weaker one, Claude Free gives you Claude 3.5 Sonnet consistently.</p>
+<p>Claude's free plan is arguably the strongest writing tool available at zero cost in 2026. ChatGPT's free tier gives you a premium model, but only up to a limit, then drops to a weaker one. Claude Free is different: it gives you Claude 3.5 Sonnet consistently.</p>
 <p>It's one of the best publicly available language models for writing tasks, up to its daily usage limit.</p>
-<p><strong>Strengths on the free tier:</strong> Writing quality is the standout. Claude produces prose that requires less editing before publication. It has more varied sentence structure, more natural paragraph flow, and a stronger ability to adopt a specific voice when given examples.</p>
-<p>The 200K token context window, available even on free, means you can paste in a full brief, a competitor article for reference, your brand guidelines, and your draft notes, all in a single conversation.</p>
-<p><strong>Weaknesses on the free tier:</strong> No web search. Claude Free cannot access current information, which limits it for research-backed content, trend pieces, or anything requiring up-to-date facts. You also cannot generate images. For freelancers who need their AI to research as well as write, Claude Free must be paired with a search tool.</p>
+<p><strong>Strengths on the free tier:</strong> Writing quality is the standout. Claude produces prose that needs less editing before publication. It has more varied sentence structure and more natural paragraph flow. It's also better at matching a specific voice when you give it examples.</p>
+<p>The 200K token context window is available even on free. That means you can paste in a full brief, a competitor article for reference, your brand guidelines, and your draft notes, all in one conversation.</p>
+<p><strong>Weaknesses on the free tier:</strong> No web search. Claude Free cannot access current information. That limits it for research-backed content, trend pieces, or anything needing up-to-date facts. You also cannot generate images. If you need your AI to research as well as write, pair Claude Free with a search tool.</p>
 <div style="background:rgba(139,92,246,.06);border-left:3px solid #8b5cf6;border-radius:8px;padding:16px 20px;margin:20px 0;">
   <strong style="color:#8b5cf6;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Claude Free Best For</strong>
   <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">Blog post first drafts · Detailed analysis and professional writing · Long-form content requiring consistent quality · Nuanced, high-context tasks where you supply the information</p>
@@ -164,10 +164,10 @@ const post: BlogPost = {
 </div>
 <h2>Gemini Free</h2>
 <img src="https://images.unsplash.com/photo-1746608943132-065d1d4b3c5d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A smartphone showing an AI assistant's interface, representing a free mobile chatbot app" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p>Gemini's free tier runs on Gemini 1.5 Flash. It's not Google's most capable model, but it's surprisingly functional for everyday tasks. The standout advantage is real-time Google Search integration. Gemini Free can access current information, making it the only free AI that can meaningfully research and write at the same time.</p>
+<p>Gemini's free tier runs on Gemini 1.5 Flash. It's not Google's most capable model, but it's surprisingly functional for everyday tasks. The standout advantage is real-time Google Search integration. Gemini Free can access current information. That makes it the only free AI that can meaningfully research and write at the same time.</p>
 <p><strong>Strengths on the free tier:</strong> Google ecosystem integration is Gemini's unique free-tier advantage. If you work in Google Docs, Gmail, or Drive, Gemini can summarise documents, draft email replies, and process spreadsheet data natively.</p>
-<p>Neither ChatGPT nor Claude can match that on their free tiers. The 1 million token context window on Gemini 1.5 Flash means you can feed it extraordinarily long documents. For research tasks and document summarisation, this is genuinely powerful.</p>
-<p><strong>Weaknesses on the free tier:</strong> Writing quality for creative and brand-voice content is less consistent than Claude or ChatGPT. Gemini tends toward a more informational, neutral tone that can feel flat for social media, newsletter writing, or editorial content.</p>
+<p>Neither ChatGPT nor Claude can match that on their free tiers. The 1 million token context window on Gemini 1.5 Flash means you can feed it very long documents. For research tasks and document summarisation, this is genuinely powerful.</p>
+<p><strong>Weaknesses on the free tier:</strong> Writing quality for creative and brand-voice content is less consistent than Claude or ChatGPT. Gemini tends toward a more informational, neutral tone. That can feel flat for social media, newsletter writing, or editorial content.</p>
 <p>The personality and warmth that Claude brings to prose is noticeably absent. For tasks where voice matters more than information, Gemini's free tier underdelivers.</p>
 <div style="background:rgba(59,130,246,.06);border-left:3px solid #3b82f6;border-radius:8px;padding:16px 20px;margin:20px 0;">
   <strong style="color:#3b82f6;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Gemini Free Best For</strong>
@@ -182,11 +182,11 @@ const post: BlogPost = {
 <p>The same five tasks were run through all three free tiers to produce a practical verdict. Each task was completed in a fresh session with the same prompt.</p>
 
 <h3>Task 1: Write a blog post intro (300 words, casual-professional tone)</h3>
-<p><strong>Winner: Claude.</strong> Claude's intro had a clear narrative hook, moved naturally into the problem, and set up the article structure without announcing it.</p>
-<p>ChatGPT's version opened with a leading question, a reliable tell for AI-generated content, and over-structured the opening with bullet points. Gemini's version was factually correct but tonally flat. For first-draft blog writing, Claude Free wins clearly.</p>
+<p><strong>Winner: Claude.</strong> Claude's intro had a clear narrative hook. It moved naturally into the problem and set up the article structure without announcing it.</p>
+<p>ChatGPT's version opened with a leading question — a reliable tell for AI-generated content. It also over-structured the opening with bullet points. Gemini's version was factually correct but tonally flat. For first-draft blog writing, Claude Free wins clearly.</p>
 
 <h3>Task 2: Write 5 Instagram captions for a productivity app (varied hooks)</h3>
-<p><strong>Winner: ChatGPT.</strong> ChatGPT produced five genuinely different captions, varying hooks, CTAs, and length, without prompting for variety.</p>
+<p><strong>Winner: ChatGPT.</strong> ChatGPT produced five genuinely different captions. Hooks, CTAs, and length all varied, without prompting for variety.</p>
 <p>Claude's captions were well-written but two were too long for Instagram's above-fold display. Gemini's captions were technically correct but lacked the energy and wit that social content requires. For caption volume and variety, ChatGPT free wins.</p>
 
 <h3>Task 3: Research summary: "5 AI tools for freelancers launched in 2026"</h3>
@@ -205,7 +205,7 @@ const post: BlogPost = {
 <p>Free plans are genuinely useful for most freelancers doing under 10 substantive AI interactions per day. The upgrade case is clear when any of these apply:</p>
 <ol style="margin:16px 0;padding-left:24px;line-height:1.9;font-size:14.5px;">
   <li><strong>You hit ChatGPT's daily limit before lunch:</strong> you are a genuine power user and $20/month for ChatGPT Plus is worth the consistent GPT-5.5 access.</li>
-  <li><strong>You need Claude for more than ~25 messages/day:</strong> Claude Pro at $20/month removes limits and adds Projects, persistent context across sessions, which is valuable for ongoing client work.</li>
+  <li><strong>You need Claude for more than ~25 messages/day:</strong> Claude Pro at $20/month removes limits and adds Projects. That gives persistent context across sessions, which is valuable for ongoing client work.</li>
   <li><strong>You need Gemini's full capabilities inside Google Workspace:</strong> Google One AI Premium at $19.99/month unlocks Gemini 3.1 Pro in Docs, Gmail, and Sheets. That's genuinely powerful for document-heavy work.</li>
   <li><strong>Your editing time exceeds the subscription cost:</strong> if you spend 2+ hours editing AI outputs weekly on weak free-model quality, the math on $20/month is easy.</li>
 </ol>
