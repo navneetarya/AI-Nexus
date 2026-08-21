@@ -78,6 +78,8 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://blog.google/products/gemini/', label: 'Google Gemini official product blog' },
     { url: 'https://one.google.com/about/ai-premium/', label: 'Google One AI Premium plan details' },
+    { url: 'https://deepmind.google/technologies/gemini/', label: 'Google DeepMind — Gemini model overview' },
+    { url: 'https://support.google.com/docs/answer/13447291', label: 'Google Docs Help — using Gemini in Docs' },
   ],
 
   wordCount: 2450,
@@ -87,6 +89,8 @@ const post: BlogPost = {
 <p>For most writing tasks, ChatGPT (GPT-5.5) still produces more consistently polished prose than Gemini 3.1 Pro. Gemini pulls ahead specifically for anyone who writes inside Google Docs and Gmail, or needs research baked directly into the output.</p>
 <p>Google Trends shows a 550% spike in searches for "Gemini AI review" over the past 30 days. Gemini 3.1 Pro, Google's most capable model to date, launched recently with a 2-million-token context window and deep Workspace integration. Writers who use Google Docs daily are asking the obvious question: <strong>do I still need ChatGPT?</strong></p>
 <p>This review answers that directly. Both tools were independently researched through five real writing tasks — the same tasks most content creators face every week. No synthetic benchmarks, no vague capability claims. Here is what the documented output looks like, and where each tool wins.</p>
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Laptop screen showing a document draft, representing AI writing tools like Gemini and ChatGPT" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <h2>Quick Verdict: Gemini vs ChatGPT for Writers</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -151,11 +155,16 @@ const post: BlogPost = {
   <p style="margin:0;font-size:14px;line-height:1.6;"><strong>💡 Pro Tip:</strong> If you already pay for Google One storage (2TB or more), check your existing plan before subscribing separately. Many storage plans upgrade in place to AI Premium for the same $19.99/month, so you may already be one click away from Gemini 3.1 Pro instead of starting a brand-new subscription.</p>
 </div>
 
+<img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Desk workspace with a laptop and coffee, set up for testing AI writing tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>Test 1: 800-Word Blog Introduction</h2>
 <p><strong>Brief:</strong> Write an 800-word introduction for a blog post titled "Best Project Management Tools for Freelancers 2026." Tone: conversational, first-person. Include a brief comparison table. Target keyword: "project management tools for freelancers."</p>
-<p><strong>Gemini result:</strong> Produced a well-structured 820-word draft in about 12 seconds. The opening hook was competent but generic. The comparison table rendered correctly with accurate pricing data pulled from live search. The keyword appeared naturally in the first paragraph and once more in the table header. The main weakness was slightly formal tone with occasional passive voice that needed editing.</p>
+<p><strong>Gemini result:</strong> Produced a well-structured 820-word draft in about 12 seconds. The opening hook was fine but a bit plain. The table rendered correctly with real pricing data pulled from live search.</p>
+<p>The keyword showed up in the first line and again in the table header. The main flaw was a stiff, formal tone with some passive voice that needed a quick edit.</p>
 <p><strong>ChatGPT (GPT-5.5) result:</strong> Produced a sharper opening hook and a more consistent first-person tone throughout. The comparison table required a second prompt to get the pricing right, since GPT-5.5 has a training cutoff and Gemini has live search. Overall prose quality was slightly higher, with fewer filler phrases and more natural sentence rhythm.</p>
 <p><strong>Edge: ChatGPT</strong> on pure prose quality. <strong>Edge: Gemini</strong> on pricing accuracy without extra prompting.</p>
+
+<img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Close-up of hands typing on a laptop keyboard, drafting an email reply" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Test 2: Gmail Reply to a Client Brief</h2>
 <p><strong>Brief:</strong> A client sent a vague project brief. Draft a professional reply asking three clarifying questions and proposing a timeline.</p>
@@ -187,6 +196,8 @@ const post: BlogPost = {
 <h2>Does Gemini Replace Grammarly?</h2>
 <p>Short answer: no, and it never will. <a href="/tools/grammarly/" style="color:rgb(13,148,136);">Grammarly</a> works inline as you type. It checks your own writing in real time, catching grammar errors, improving clarity, and flagging tone issues across every app you use — Gmail, Google Docs, Notion, LinkedIn, and hundreds more. Gemini generates content when you prompt it.</p>
 <p>These are complementary tools solving different problems. The practical workflow for most writers: use Gemini, <a href="/tools/chatgpt/" style="color:rgb(13,148,136);">ChatGPT</a>, or <a href="/tools/writesonic/" style="color:rgb(13,148,136);">Writesonic</a> to generate a first draft, then run the draft through Grammarly to polish it before publishing. Pairing Gemini inside Google Docs with Grammarly's browser extension is one of the most efficient writing setups available in 2026.</p>
+
+<img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Abstract visualization representing AI model reasoning and pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Gemini Pricing in 2026</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -226,6 +237,11 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+
+<h2>The Short Version</h2>
+<p>Still not sure which tool to pick? Here is the plain take. If you live in Gmail and Docs all day, go with Gemini. It sits right where you work. You will not need a new tab or a new app.</p>
+<p>If you write long posts or need the best prose, use ChatGPT or Claude. They are still the top pick for pure writing quality. Use Grammarly on top of either one to catch typos and fix tone.</p>
+<p>Most writers do not need to pick just one tool. Many of us use two or three at once, each for a different job.</p>
 
 <h2>Final Verdict</h2>
 <p>Gemini 3.1 Pro is a genuinely useful writing tool in 2026. Not because it writes better prose than ChatGPT, but because it is embedded where writers already work.</p>

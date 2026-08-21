@@ -71,6 +71,8 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://www.grammarly.com/premium', label: 'Grammarly Premium official pricing page' },
     { url: 'https://www.grammarly.com/business', label: 'Grammarly Business official pricing page' },
+    { url: 'https://www.g2.com/products/grammarly/reviews', label: 'Grammarly user reviews on G2' },
+    { url: 'https://www.trustpilot.com/review/grammarly.com', label: 'Grammarly reviews on Trustpilot' },
   ],
 
   wordCount: 1150,
@@ -108,6 +110,8 @@ const post: BlogPost = {
 <p><strong>No, for casual or student writers.</strong> If you primarily write occasional emails, assignments, or personal content, the free plan catches the errors that matter most. The Premium features are genuinely useful. They're just not useful enough to justify $144/year for infrequent writing.</p>
 <p>The honest answer depends on one question: are you hitting the limits of the free plan? If the answer is yes, upgrade. If you haven't noticed what the free plan is missing, you don't need Premium yet.</p>
 
+<img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Person typing on a laptop keyboard, checking their writing with Grammarly" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+
 <h2>What Grammarly Free Includes</h2>
 <p>Grammarly's free plan is more capable than most users realise. It provides:</p>
 <ul style="margin:8px 0 16px 24px;line-height:2.2;">
@@ -119,6 +123,8 @@ const post: BlogPost = {
   <li><strong>No word limit</strong>: no cap on how much text it checks</li>
 </ul>
 <p>For a large proportion of writers, anyone whose goal is error-free, readable output, the free plan genuinely solves the problem. The case for upgrading is not that the free plan is broken. It is that Premium adds a qualitatively different layer: style coaching, not just error correction.</p>
+
+<img src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Person reviewing a document on a tablet, checking tone and clarity suggestions" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>What Grammarly Premium Adds</h2>
 <p>At $12/month (annual billing, $30/month if billed monthly), Grammarly Premium adds four capabilities that go beyond error correction:</p>
@@ -166,6 +172,8 @@ const post: BlogPost = {
   <li><strong>Writers who primarily generate new content (rather than edit)</strong>. Is your bottleneck writing speed, not writing quality? Then $9/month on Rytr's content generation is a better use of the same budget.</li>
 <p><a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
 </ul>
+
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Close-up of text on a screen, representing writing tool comparisons and editing features" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Cheaper Alternatives to Grammarly Premium</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -216,6 +224,11 @@ const post: BlogPost = {
 <p>The most relevant comparison is <a href="/tools/quillbot/" style="color:#0D9488;font-weight:600;">QuillBot</a> at $9.95/month. It is cheaper than Grammarly Premium and stronger for paraphrasing and rewriting.</p>
 <p>But it doesn't replace Grammarly for real-time writing assistance across your apps. The question of Grammarly vs QuillBot ultimately comes down to whether you need to <em>improve what you write</em> (Grammarly) or <em>rewrite what already exists</em> (QuillBot).</p>
 <p><a href="/compare/grammarly-vs-quillbot/" style="color:#0D9488;font-weight:600;">→ Grammarly vs QuillBot: full feature comparison and which to pick</a></p>
+
+<h2>The Short Version</h2>
+<p>Still not sure? Here is the plain take. Use the free plan if you just want clean, error-free text. It does that job well, and it costs nothing.</p>
+<p>Pay for Premium only once you need more than that. Do you send emails that must land the right way? Do you write for work every day? Then the $12 a month is easy to justify. If not, skip it for now. You can always upgrade later.</p>
+<p>One more tip: try the free trial first. Use it for a week. See if tone checks change what you send. If yes, pay. If not, stay free. It is that simple.</p>
 
 <h2>Final Verdict</h2>
 <p><strong>Grammarly Premium is worth $12/month if:</strong> you write professionally every day, and you need tone awareness for client or stakeholder communication. It's also worth it if you want full-sentence rewrites and style coaching, not just error correction.</p>
