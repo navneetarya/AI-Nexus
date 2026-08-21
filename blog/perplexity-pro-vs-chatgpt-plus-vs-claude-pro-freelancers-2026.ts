@@ -70,6 +70,8 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://www.perplexity.ai/hub/faq/what-is-perplexity-pro', label: 'Perplexity Pro official FAQ' },
     { url: 'https://openai.com/chatgpt/pricing/', label: 'ChatGPT Plus official pricing page' },
+    { url: 'https://www.anthropic.com/pricing', label: 'Claude Pro official pricing page' },
+    { url: 'https://www.g2.com/products/perplexity-ai/reviews', label: 'Perplexity AI user reviews on G2' },
   ],
 
   wordCount: 2350,
@@ -150,6 +152,7 @@ const post: BlogPost = {
 <p>The Pro upgrade is mainly about model quality (GPT-4o vs the default Perplexity model) and search volume. For some freelancers, the free tier genuinely covers their research needs. I'll come back to this in the recommendation section.</p>
 
 <h2>Task 1: Write a 500-word blog intro from a brief</h2>
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Laptop screen showing a document draft, representing an AI-written blog intro test" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The prompt: <em>"Write a compelling intro for an article about the best AI writing tools for freelancers in 2026. Target audience: mid-career freelance writers who are skeptical of AI hype. Tone: direct, informative, not salesy."</em></p>
 
 <p><strong>ChatGPT Plus</strong> produced clean, well-structured prose. The sentences varied in length, the opener had a decent hook. But there was something a bit formulaic about it. Every paragraph started with a topic sentence, and the transitions were smooth but predictable.</p>
@@ -165,6 +168,7 @@ const post: BlogPost = {
 <p><strong>Winner: Claude Pro for writing first drafts.</strong> It captures editorial intent better than the other two when given a nuanced brief.</p>
 
 <h2>Task 2: Research a topic with sources</h2>
+<img src="https://images.unsplash.com/photo-1571677208775-fb3873222504?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Person reviewing research sources on a tablet, representing a citation-backed research task" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The prompt: <em>"What are the top 5 AI writing tools for freelancers in 2026 and why? I need to include specific pricing, features, and reasons why each one is worth using."</em></p>
 
 <p>This is Perplexity's home territory, and it showed. The output included numbered citations from recent articles, review sites, and official tool pages, all clickable, all checkable.</p>
@@ -180,6 +184,7 @@ const post: BlogPost = {
 <p><strong>Winner: Perplexity Pro for research tasks.</strong> Cited, verifiable, current. Nothing else comes close for fact-finding.</p>
 
 <h2>Task 3: Rewrite a weak paragraph</h2>
+<img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Overhead view of a desk workspace, representing an editing and rewriting task" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>All three tools were given this original paragraph to improve:</p>
 
 <blockquote style="border-left:3px solid rgba(13,148,136,.4);padding:12px 18px;margin:16px 0;background:rgba(13,148,136,.04);border-radius:0 8px 8px 0;font-style:italic;color:var(--mut);">
@@ -203,6 +208,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Task 4: Generate 10 social media captions</h2>
+<img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Close-up of hands typing on a laptop keyboard, drafting social media captions" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The prompt: <em>"Write 10 social media captions for a post promoting a blog article about the best AI writing tools for freelancers. Mix of LinkedIn (professional), Instagram (casual), and Twitter/X (punchy). Include relevant hashtags."</em></p>
 
 <p>ChatGPT Plus knocked this out cleanly and fast. The LinkedIn captions had a professional opener and a clear CTA. The Instagram captions used line breaks well and had good emoji placement.</p>
@@ -215,6 +221,7 @@ const post: BlogPost = {
 <p><strong>Winner: ChatGPT Plus for high-volume content generation.</strong> Consistent, platform-aware, and fast across different tones and formats.</p>
 
 <h2>Task 5: Summarise a long document</h2>
+<img src="https://images.unsplash.com/photo-1590650046871-92c887180603?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Freelancer working on a laptop, representing a document summarisation task" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>A 4,200-word client research brief was submitted to all three tools: <em>"Summarise this document in 5 bullet points. Each bullet should be one sentence max. Focus on the key decisions and action items."</em></p>
 
 <p>All three handled this reasonably well, which is worth noting. Basic document summarisation is a solved problem at this price tier. The differences were in nuance.</p>
@@ -228,6 +235,7 @@ const post: BlogPost = {
 <p><strong>Winner: Claude Pro, by a small margin.</strong> ChatGPT is close, but Claude's handling of document structure and context relationships edges it for complex source material.</p>
 
 <h2>Pricing breakdown + what you actually get</h2>
+<img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Clean desk workspace with a laptop, representing a pricing and value comparison" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h3>ChatGPT Plus: $20/month</h3>
 <p>GPT-4o (flagship model) comes with higher rate limits than free. Add DALL-E image generation, file uploads, Advanced Data Analysis (code interpreter), Custom GPT access, browsing, and early access to new OpenAI features.</p>
@@ -260,6 +268,13 @@ const post: BlogPost = {
 
 <h3>Not sure where to start?</h3>
 <p>Run the same test I did. Pick the three tasks most representative of your actual workload. Use the free tiers of all three tools. Pay for whichever one saves you the most time on those specific tasks. That's the only data point that matters.</p>
+
+<h3>The Short Version</h3>
+<p>Still not sure? Here is the plain take. Write a lot of prose? Pick Claude. Its words read the best, and it wins the writing tasks by a real margin.</p>
+<p>Need fast, checked facts with real sources? Pick Perplexity. It cites its work, so you do not have to guess if it is right.</p>
+<p>Pump out short posts and captions all day? Pick ChatGPT. It is fast, it knows each platform's rules, and it does not run long.</p>
+<p>On a tight budget? Stack the free tiers first. Perplexity free plus Claude free covers most of what you need. Pay only once you feel the limit.</p>
+
 <div style="margin:14px 0 24px;">
   <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
   <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ChatGPT →</a>
