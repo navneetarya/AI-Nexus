@@ -206,6 +206,7 @@ const post: BlogPost = {
 </div>
 
 <h2>2. AI Task & Project Management: Taskade</h2>
+<img src="https://images.unsplash.com/photo-1746729798021-129315426424?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A kanban board used for solopreneur task management" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The moment a solopreneur has more than two active clients or projects, mental task-tracking breaks down. A generic to-do app without AI still means breaking every project into subtasks by hand. Taskade solves this directly.</p>
 <p>Paste a client brief into a project, and its AI agent builds a full task breakdown with subtasks and realistic due dates in under 10 seconds. That replaces what used to be 15–20 minutes of manual planning per new project.</p>
 <p>The free plan is especially generous for a solo operator. It includes unlimited projects, every view type (list, kanban, mind map, calendar), and 5 AI agent runs a month at no cost.</p>
@@ -246,6 +247,7 @@ const post: BlogPost = {
 </p>
 
 <h2>5. AI Customer Support: Tidio</h2>
+<img src="https://images.unsplash.com/photo-1664575197229-3bbebc281874?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A solopreneur using a laptop to manage customer support" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>A one-person business cannot staff a support inbox around the clock, but customers and prospects do not limit their questions to business hours. Tidio adds an AI chat layer to a website or storefront that answers common questions instantly: pricing, shipping, availability, basic troubleshooting.</p>
 <p>It escalates to you directly for anything it cannot resolve confidently. That beats leaving a visitor waiting hours for a reply that costs you the sale.</p>
 <p>The free plan covers 50 live chat conversations a month, enough for a solopreneur with light inbound traffic to test whether AI chat is worth investing in further. The Starter plan at $29/month adds Lyro AI, Tidio's conversational agent, for 50 AI-resolved conversations. That's a meaningful jump from basic live chat to real autonomous resolution.</p>
@@ -259,6 +261,7 @@ const post: BlogPost = {
 </p>
 
 <h2>6. AI Meeting Notes & Transcription: Fireflies.ai</h2>
+<img src="https://images.unsplash.com/photo-1752650733337-cb0189176fb9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A woman on a video call at her desk during a client meeting" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Client calls, discovery calls, and vendor meetings consume hours a solopreneur could otherwise spend producing work. Manual note-taking during a call splits attention between listening and writing. Fireflies.ai joins the call and transcribes it. It writes a summary with action items afterward, so you stay fully present in the conversation instead of typing through it.</p>
 <p>The free plan stores 800 minutes of transcribed audio with basic features, enough for several months of typical solopreneur call volume. The Pro tier at $10/month adds unlimited storage, AI-generated summaries, and searchable transcripts across past calls. That's useful for pulling up exactly what a client agreed to three months earlier, without re-listening to the recording.</p>
 <p>Full category coverage, including Otter.ai and Fathom, is in <a href="/blog/best-ai-meeting-tools-2026/">Best AI Meeting Tools 2026</a>.</p>
@@ -396,7 +399,7 @@ const post: BlogPost = {
   <li><strong>Week 1 — Free tier only:</strong> Set up Claude or ChatGPT Free, Taskade Free, and Perplexity Free. These three cover thinking, planning, and research at zero cost. They also reveal which tool you actually reach for daily, versus which one sits unused.</li>
   <li><strong>Week 2 — Add structure:</strong> If Taskade's free tier hits its 5 AI-agent-run limit before the week is out, upgrade to Pro ($8/month). Hitting that limit is the signal the tool has earned the upgrade, not a guess. Add Canva Free for any client-facing visual asset.</li>
   <li><strong>Week 3 — Client-facing layer:</strong> Once you have a live website or storefront, add Tidio's free tier for support coverage outside working hours. If you are running discovery or client calls, add Fireflies Free for transcription.</li>
-  <li><strong>Week 4 — Automate the repetition:</strong> By this point you will have noticed at least one repetitive cross-tool task, maybe a new Tidio chat that should become a Taskade follow-up, or a form submission that should trigger an email. That specific, observed pain point is what Make.com's Core plan ($9/month) should solve, not a hypothetical future workflow. Add Ocoya only once content output volume really requires scheduling automation, typically once you're posting 3+ times a week across more than one platform.</li>
+  <li><strong>Week 4 — Automate the repetition:</strong> By this point you will have noticed at least one repetitive cross-tool task. Maybe a new Tidio chat should become a Taskade follow-up. Maybe a form submission should trigger an email. That specific, observed pain point is what Make.com's Core plan ($9/month) should solve, not a hypothetical future workflow. Add Ocoya only once content volume really needs scheduling automation — typically once you're posting 3+ times a week across more than one platform.</li>
 </ol>
 
 <h2>What to Skip: Tools Solopreneurs Don't Need Yet</h2>

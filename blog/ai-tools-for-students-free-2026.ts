@@ -19,7 +19,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/ai-tools-for-students-free-2026.webp',
   excerpt: 'The best free AI tools for students in 2026 are: Grammarly (free grammar and tone checker for essays — no credit card), QuillBot (free paraphrasing and summarisation tool), Perplexity (free AI search engine with cited sources for research), and Replit (free browser-based coding environment for CS assignments). All four have permanent free plans — not trials — that cover real student workloads without a subscription.',
   quickAnswer: 'The best free AI tools for students in 2026 are QuillBot (paraphrasing and summarising, permanent free plan), Grammarly (grammar and tone checking, unlimited free), Rytr (essay drafts and outlines, 10,000 characters/month free), Gamma (presentation slides, 400 free credits), and Replit (coding assignments, unlimited free projects). None require a credit card. Combined, they cover essays, research, presentations, and coding without a single paid subscription for most coursework.',
-  myTake: 'I checked whether each "free plan" was actually permanent or just a disguised trial before including it here, and that distinction matters more than any feature comparison — a tool that expires before your next deadline isn\'t free, it\'s a countdown.',
+  myTake: 'I checked whether each "free plan" was actually permanent or just a disguised trial before including it here. That distinction matters more than any feature comparison — a tool that expires before your next deadline isn\'t free, it\'s a countdown.',
   faqs: [
     {
       q: 'What is the best free AI tool for students writing essays?',
@@ -80,10 +80,11 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best free AI tools for students in 2026 are <strong>QuillBot</strong> (paraphrasing and summarising, permanent free plan), <strong>Grammarly</strong> (grammar and tone checking, unlimited free), <strong>Rytr</strong> (essay drafts and outlines, 10,000 characters/month free), <strong>Gamma</strong> (presentation slides, 400 free credits), and <strong>Replit</strong> (coding assignments, unlimited free projects). None require a credit card. Combined, they cover essays, research, presentations, and coding without a single paid subscription for most coursework.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best free AI tools for students in 2026 are <strong>QuillBot</strong> (paraphrasing and summarising, permanent free plan), <strong>Grammarly</strong> (grammar and tone checking, unlimited free), and <strong>Rytr</strong> (essay drafts and outlines, 10,000 characters/month free). Also useful: <strong>Gamma</strong> (presentation slides, 400 free credits) and <strong>Replit</strong> (coding assignments, unlimited free projects). None require a credit card.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Combined, they cover essays, research, presentations, and coding without a single paid subscription for most coursework.</p>
 </div>
 <blockquote style="border-left:3px solid #0D9488;padding:4px 0 4px 16px;margin:0 0 24px;font-style:italic;color:var(--text-secondary,#555);">
-  I checked whether each "free plan" was actually permanent or just a disguised trial before including it here, and that distinction matters more than any feature comparison — a tool that expires before your next deadline isn't free, it's a countdown.
+  I checked whether each "free plan" was actually permanent or just a disguised trial before including it here. That distinction matters more than any feature comparison — a tool that expires before your next deadline isn't free, it's a countdown.
   <footer style="font-style:normal;font-size:13px;margin-top:6px;color:var(--text-muted,#888);">— Navneet Arya, AI Nexus</footer>
 </blockquote>
 
@@ -159,6 +160,7 @@ const post: BlogPost = {
 </div>
 
 <h2>1. QuillBot — Best for Paraphrasing & Summarising Research</h2>
+<img src="https://images.unsplash.com/photo-1724985284026-dd2451e4857a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A student writing notes with a laptop open in the background" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Research · Free Plan: Permanent · Paid: from $9.95/month · <a href="/tools/quillbot/" style="color:var(--a1);font-weight:600;">Full QuillBot Review →</a></strong></p>
 <p>QuillBot is the most-used AI tool among students, and for good reason. It solves two of the most common student writing problems at once: paraphrasing source material and summarising long readings. Both are core research skills that take significant time manually, and QuillBot cuts that time by 60–70% on the free plan.</p>
 <p>The <strong>Paraphraser</strong> rewrites text in Standard, Fluency, and Formal modes on the free plan. For research papers where you need to cite ideas from a source without copying the original phrasing, this is the most practically useful feature.</p>
@@ -189,6 +191,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 <h2>3. Rytr — Best for Essay Drafts & Outlines</h2>
+<img src="https://images.unsplash.com/photo-1758270705518-b61b40527e76?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A diverse group of students collaborating around a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Writing · Free Plan: 10,000 characters/month · Paid: from $9/month · <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">Full Rytr Review →</a></strong></p>
 <p>Rytr is the most practical free AI writing tool for students who need to get a first draft started. The free plan gives 10,000 characters per month, roughly one complete essay draft, with no credit card required. There is no 7-day countdown. It renews monthly indefinitely.</p>
 <p>Three Rytr templates matter most for students. The <strong>Blog Idea & Outline</strong> template generates a structured 6–8 point essay plan from your topic and thesis.</p>
@@ -204,6 +207,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 <h2>4. Gamma — Best for Presentation Slides (Zero Design Skill Required)</h2>
+<img src="https://images.unsplash.com/photo-1758270705290-62b6294dd044?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A diverse group of students gathered around a laptop in a lecture hall" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Presentations · Free Plan: 400 credits on sign-up · Paid: from $8/month · <a href="/tools/gamma/" style="color:var(--a1);font-weight:600;">Full Gamma Review →</a></strong></p>
 <p>Gamma lets you build a complete, professionally designed presentation from a text prompt or outline in under 3 minutes. Describe your topic, or paste your essay plan directly, choose a visual theme, and Gamma generates every slide with structure, content, and layout already handled. No PowerPoint wrestling. No Canva template hunting at 1am the night before your seminar.</p>
 <p>For students, the most valuable use case is converting a completed essay or research summary into a presentation. Paste your essay outline into Gamma, and it creates a slide for each section automatically, pulling the key points as concise bullets.</p>
@@ -218,6 +222,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 <h2>5. Replit — Best for Coding Assignments & Debugging</h2>
+<img src="https://images.unsplash.com/photo-1758270705317-3ef6142d306f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A student team discussing a project on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Coding · Free Plan: Unlimited projects + AI assist · Paid: from $25/month · <a href="/tools/replit/" style="color:var(--a1);font-weight:600;">Full Replit Review →</a></strong></p>
 <p>Replit is a browser-based code editor with a built-in AI assistant. No installation, no environment setup, no "it works on my machine" debugging. You open a browser, create a project, and start coding.</p>
 <p>The AI assistant explains errors in plain English, suggests fixes, and completes code snippets based on your comments. For students learning to code or working on assignments in Python, JavaScript, or Java, this eliminates the most time-consuming part of the workflow: interpreting cryptic error messages.</p>

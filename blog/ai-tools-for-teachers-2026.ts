@@ -19,7 +19,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/ai-tools-for-teachers-2026.webp',
   excerpt: 'Teachers are drowning in admin work. Four AI tools compared across real teaching tasks — lesson planning, presentations, feedback, and worksheet creation — to find which ones actually save time.',
   quickAnswer: 'The best AI tools for teachers in 2026 are Gamma for turning lesson notes into presentations in minutes, Grammarly for fast, tone-aware feedback on student writing, Notion AI for organising lesson plans, and Rytr for generating worksheet content. All four have usable free plans. A full free-tier stack costs $0/month; adding one paid tier (Rytr Saver or Gamma Plus) runs $9–10/month for teachers who exceed free-tier limits.',
-  myTake: 'This comparison looks at each tool against actual teaching tasks rather than generic demos, and the time saved is real but uneven — Gamma\'s presentation generation is the closest thing to a genuine hour-back-in-your-week win, while the others save smaller, steadier chunks of time across a week.',
+  myTake: 'This comparison looks at each tool against actual teaching tasks rather than generic demos. The time saved is real but uneven — Gamma\'s presentation generation is the closest thing to a genuine hour-back-in-your-week win, while the others save smaller, steadier chunks of time across a week.',
   faqs: [
     {
       q: 'What is the best AI tool for teachers in 2026?',
@@ -84,10 +84,11 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI tools for teachers in 2026 are <strong>Gamma</strong> for turning lesson notes into presentations in minutes, <strong>Grammarly</strong> for fast, tone-aware feedback on student writing, <strong>Notion AI</strong> for organising lesson plans, and <strong>Rytr</strong> for generating worksheet content. All four have usable free plans. A full free-tier stack costs $0/month; adding one paid tier (Rytr Saver or Gamma Plus) runs $9–10/month for teachers who exceed free-tier limits.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI tools for teachers in 2026 are <strong>Gamma</strong> for turning lesson notes into presentations in minutes and <strong>Grammarly</strong> for fast, tone-aware feedback on student writing. Also useful: <strong>Notion AI</strong> for organising lesson plans and <strong>Rytr</strong> for generating worksheet content. All four have usable free plans.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">A full free-tier stack costs $0/month; adding one paid tier (Rytr Saver or Gamma Plus) runs $9–10/month for teachers who exceed free-tier limits.</p>
 </div>
 <blockquote style="border-left:3px solid #0D9488;padding:4px 0 4px 16px;margin:0 0 24px;font-style:italic;color:var(--text-secondary,#555);">
-  This comparison looks at each tool against actual teaching tasks rather than generic demos, and the time saved is real but uneven — Gamma's presentation generation is the closest thing to a genuine hour-back-in-your-week win, while the others save smaller, steadier chunks of time across a week.
+  This comparison looks at each tool against actual teaching tasks rather than generic demos. The time saved is real but uneven — Gamma's presentation generation is the closest thing to a genuine hour-back-in-your-week win, while the others save smaller, steadier chunks of time across a week.
   <footer style="font-style:normal;font-size:13px;margin-top:6px;color:var(--text-muted,#888);">— Navneet Arya, AI Nexus</footer>
 </blockquote>
 
@@ -175,6 +176,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 <h2>2. Grammarly — Streamline Feedback and Communication</h2>
+<img src="https://images.unsplash.com/photo-1758685848174-e061c6486651?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A teacher working on a laptop in front of a chalkboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Rating: 4.5/5 · Free plan: Unlimited · Paid: $12/month</strong></p>
 <p>Teachers write more than most professionals: report card comments, parent emails, student feedback, assignment instructions, referral letters. <a href="/tools/grammarly/" style="color:rgb(13,148,136);">Grammarly</a> works silently in the background across all of these, catching errors, improving clarity, and suggesting better phrasing.</p>
 <p>The real power for teachers is the <strong>tone detection feature</strong> (paid plan). When you're writing feedback on a struggling student's essay, Grammarly flags when your tone shifts from constructive to critical.</p>
@@ -193,6 +195,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 <h2>3. Notion AI — The Ultimate Lesson Planning System</h2>
+<img src="https://images.unsplash.com/photo-1758685848142-06e158cf64bc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A female teacher smiling at her desk with a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Rating: 4.3/5 · Limited trial · Paid: $10/month add-on</strong></p>
 <p><a href="/tools/notion-ai/" style="color:rgb(13,148,136);">Notion</a> is already the best organisation tool for teachers. Its databases, templates, and linked pages make lesson planning, curriculum mapping, and resource tracking intuitive. Adding Notion AI to the mix turns it into a planning powerhouse.</p>
 <p>Here's the workflow that works: create a lesson plan template in Notion with sections for objectives, materials, activities, assessment, and differentiation.</p>
@@ -211,6 +214,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 <h2>4. Rytr — Quick Worksheet and Content Generation</h2>
+<img src="https://images.unsplash.com/photo-1758270705031-ebd46917a454?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A teacher instructing students in a classroom setting" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Rating: 4.0/5 · Free plan: 10,000 characters/month · Paid: $9/month</strong></p>
 <p><a href="/tools/rytr/" style="color:rgb(13,148,136);">Rytr</a> is the most straightforward tool on this list, and for many teaching tasks, straightforward is exactly what you want. Need 10 comprehension questions for a reading passage? A vocabulary matching exercise? A writing prompt with scaffolding? Type the topic into Rytr, pick the use case, and you get usable content in seconds.</p>
 <p>Rytr generates practice problems, discussion questions, rubric descriptions, and parent newsletter content on demand. Verified user reports consistently show quality that is "good enough with light editing." That's exactly the right bar for materials that take 5 minutes to create instead of 45.</p>
