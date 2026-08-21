@@ -104,14 +104,6 @@ function bindAffiliateClickTracking() {
 // immediately at script-parse time instead of waiting.
 bindAffiliateClickTracking();
 
-function onIdle(cb) {
-  if ('requestIdleCallback' in window) {
-    window.requestIdleCallback(cb, { timeout: 1500 });
-    return;
-  }
-  setTimeout(cb, 900);
-}
-
 window.trackAffiliate = function trackAffiliate(toolName, destinationUrl) {
   if (typeof window.gtag === 'function') {
     window.gtag('event', 'affiliate_click', {
@@ -126,23 +118,27 @@ window.trackAffiliate = function trackAffiliate(toolName, destinationUrl) {
   }, 150);
 };
 
-// Loading gtag.js itself can stay deferred until idle — dataLayer.push()
-// calls made before it loads are queued and processed once it's ready,
-// so no clicks are lost even though the library loads late.
-window.addEventListener('load', function () {
-  onIdle(function () {
-    var scriptEl = document.createElement('script');
-    scriptEl.src = 'https://www.googletagmanager.com/gtag/js?id=G-9M7R4GGEEK';
-    scriptEl.async = true;
-    scriptEl.onload = function () {
-      window.gtag('config', 'G-9M7R4GGEEK', {
-        send_page_view: false,
-        custom_map: {
-          dimension1: 'page_type',
-          dimension2: 'tool_name',
-        },
-      });
-    };
-    document.head.appendChild(scriptEl);
+// FIX (2026-08-21): gtag.js used to load only after window.load + an idle
+// callback (900ms-1.5s+ after load). Combined with send_page_view: false,
+// any visitor who bounced before that idle callback fired — a fast-bouncing
+// direct/organic/AI-assistant landing, exactly the sessions GA4 was showing
+// as "(not set)" with 0% engagement — never got measured at all, because
+// gtag() itself didn't exist yet when App.tsx tried to call it.
+// This script already runs on `defer` (see index.html), so the DOM is
+// already parsed by the time we get here — load gtag.js immediately instead
+// of waiting for load+idle. dataLayer.push() calls made before this
+// <script> finishes downloading are still safely queued and flushed once
+// it's ready, so nothing is lost by loading it eagerly.
+var scriptEl = document.createElement('script');
+scriptEl.src = 'https://www.googletagmanager.com/gtag/js?id=G-9M7R4GGEEK';
+scriptEl.async = true;
+scriptEl.onload = function () {
+  window.gtag('config', 'G-9M7R4GGEEK', {
+    send_page_view: false,
+    custom_map: {
+      dimension1: 'page_type',
+      dimension2: 'tool_name',
+    },
   });
-});
+};
+document.head.appendChild(scriptEl);

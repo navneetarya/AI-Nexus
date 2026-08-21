@@ -266,26 +266,48 @@ function App() {
     registerWebMCPTools();
   }, []);
 
+  // GA4-2: shared so both the initial mount and SPA navigation tag pages
+  // the same way.
+  const getPageType = (url: string) => (
+    url.startsWith('/tools/') ? 'tool_page'
+      : url.startsWith('/blog/') ? 'blog_post'
+      : url.startsWith('/compare/') ? 'compare'
+      : url.startsWith('/best-') ? 'category'
+      : url === '/' ? 'homepage' : 'static'
+  );
+
+  const fireGaPageView = (url: string) => {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', 'page_view', {
+      page_title: document.title,
+      page_location: window.location.href,
+      page_path: url,
+      page_type: getPageType(url),
+    });
+  };
+
+  // FIX (2026-08-21): navigate() only ever fired on SPA route changes, so
+  // a visitor's very first page (direct hit, organic landing, backlink,
+  // AI-assistant referral) never sent a page_view — GA4 showed these as
+  // "(not set)" landing pages and 0% engagement. Fire one page_view for
+  // the entry URL as soon as the app mounts.
+  useEffect(() => {
+    // Wait a tick so document.title (set by the route's <Helmet>/head logic)
+    // has updated before we read it, without delaying beyond first paint.
+    const id = window.setTimeout(() => {
+      fireGaPageView(window.location.pathname);
+    }, 0);
+    return () => window.clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const navigate = (to: string) => {
     const url = to !== '/' && !to.endsWith('/') ? to + '/' : to;
     window.history.pushState({}, '', url);
     setPath(normalizePath(to));
     window.scrollTo(0, 0);
     // C4 Fix: Fire GA4 page_view for SPA navigation
-    // GA4-2: Include page_type custom dimension for SEO analysis
-    if (typeof window.gtag === 'function') {
-      const pageType = url.startsWith('/tools/') ? 'tool_page'
-        : url.startsWith('/blog/') ? 'blog_post'
-        : url.startsWith('/compare/') ? 'compare'
-        : url.startsWith('/best-') ? 'category'
-        : url === '/' ? 'homepage' : 'static';
-      window.gtag('event', 'page_view', {
-        page_title: document.title,
-        page_location: window.location.href,
-        page_path: url,
-        page_type: pageType,
-      });
-    }
+    fireGaPageView(url);
   };
 
   const themeProps = { isDark, toggleTheme };
