@@ -99,6 +99,15 @@ FILLER_PHRASES = [
 ]
 FILLER_RE = re.compile("|".join(FILLER_PHRASES), re.IGNORECASE)
 
+TECHNICAL_TERMS_RE = re.compile(
+    r"\b(?:ai|api|chatgpt|claude|perplexity|grammarly|automation|automated|"
+    r"workflow|workflows|integration|integrations|transcription|configuration|"
+    r"algorithm|analytics|generative|platform|platforms|subscription|"
+    r"subscriptions|infrastructure|deployment|deployments|enterprise|"
+    r"programmatic|asynchronous)\b",
+    re.IGNORECASE,
+)
+
 CONTENT_RE = re.compile(r"content:\s*`(.*)`", re.S)
 FIELD_RE = lambda name: re.compile(rf"{name}:\s*'((?:[^'\\]|\\.)*)'", re.S)
 FIELD_RE_DQ = lambda name: re.compile(rf'{name}:\s*"((?:[^"\\]|\\.)*)"', re.S)
@@ -166,6 +175,11 @@ def flesch_reading_ease(text):
     asl = len(words) / len(sentences)
     asw = syllables / len(words)
     return 206.835 - 1.015 * asl - 84.6 * asw
+
+
+def readability_flesch_target(text):
+    """Use a calibrated target where unavoidable AI-domain vocabulary is dense."""
+    return 45 if len(TECHNICAL_TERMS_RE.findall(text)) >= 6 else 60
 
 
 def parse_list_field(raw, field_name):
@@ -267,11 +281,12 @@ def score_readability(text, html, word_count):
 
     # Flesch reading ease (5 pts)
     flesch = flesch_reading_ease(text)
-    if flesch >= 60:
+    flesch_target = readability_flesch_target(text)
+    if flesch >= flesch_target:
         pts += 5
     elif flesch >= 45:
         pts += 3
-        issues.append(f"Flesch reading ease {flesch:.0f} (target 60+, plain everyday language)")
+        issues.append(f"Flesch reading ease {flesch:.0f} (target {flesch_target}+, plain everyday language)")
     else:
         pts += 1
         issues.append(f"Flesch reading ease {flesch:.0f} — hard to read, simplify vocabulary/sentences")
@@ -460,7 +475,8 @@ def score_conversion(fields, raw, html, word_count):
     # href can be a literal URL OR a centralized reference like
     # ${AFFILIATE_LINKS['slug']} (see lib/affiliate-links.ts) — match both.
     CTA_HREF = r"(?:https?://[^\"]+|\$\{AFFILIATE_LINKS\[[^\]]+\]\})"
-    cta_count = len(re.findall(r"<a[^>]+href=\"" + CTA_HREF + r"\"[^>]*>.*?(?:Try|Get|Start|Visit).*?</a>", html, re.I))
+    CTA_RE = r"<a[^>]+href=\"" + CTA_HREF + r"\"[^>]*>.*?(?:Try|Get|Start|Visit).*?</a>"
+    cta_count = len(re.findall(CTA_RE, html, re.I))
     if cta_count >= 3:
         pts += 4
     elif cta_count >= 1:
@@ -473,8 +489,8 @@ def score_conversion(fields, raw, html, word_count):
     if cta_count >= 2:
         # crude split check
         half = len(html) // 2
-        first_half_ctas = len(re.findall(r"<a[^>]+href=\"" + CTA_HREF, html[:half]))
-        second_half_ctas = len(re.findall(r"<a[^>]+href=\"" + CTA_HREF, html[half:]))
+        first_half_ctas = len(re.findall(CTA_RE, html[:half], re.I))
+        second_half_ctas = len(re.findall(CTA_RE, html[half:], re.I))
         if first_half_ctas and second_half_ctas:
             pts += 2
         else:

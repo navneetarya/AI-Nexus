@@ -90,6 +90,9 @@ const post: BlogPost = {
 </blockquote>
 
 <h2>What Are the Best AI Tools for YouTubers in 2026?</h2>
+<div style="margin:14px 0 24px;">
+  <a href="https://invideo.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit InVideo AI →</a>
+</div>
 <img src="https://images.unsplash.com/photo-1531651008558-ed1740375b39?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone beside a pop filter for voiceover recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The best AI tools for YouTubers in 2026 are InVideo AI for faceless video creation and Opus Clip for repurposing long videos into Shorts. Also worth adding: Descript for editing by editing the transcript, Murf AI for AI voiceover, and VidIQ for keyword research and channel SEO.</p>
 <p>A solo YouTube creator in 2026, with the right AI tools, can produce content that would have required a small team two years ago. AI handles the time-consuming parts: script drafting, B-roll selection, voiceover, caption generation, Shorts repurposing, and SEO optimisation.</p>
@@ -102,6 +105,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Comparison: Best AI Tools for YouTubers</h2>
+<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Comparison: Best AI Tools for YouTubers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -155,6 +159,7 @@ const post: BlogPost = {
 </ol>
 
 <h2>1. InVideo AI: Complete Faceless YouTube Videos in Minutes</h2>
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 1. InVideo AI: Complete Faceless YouTube Videos in Minutes" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>InVideo AI is the tool that has most changed what's possible for solo faceless YouTube channels. Describe a video topic, for example "10-minute explainer on the best productivity apps for remote workers, educational tone, 2026," and InVideo AI produces a complete video.</p>
 <p>The output includes an AI-written script, matched stock footage for every scene, AI voiceover narration, captions, background music, and transitions. Time from prompt to export: under 10 minutes.</p>
 <p>The output is not perfect. You'll spend another 15–20 minutes swapping out 3–4 clips and tightening the opening hook. But that's 30 minutes total for a video that would have taken 3–4 hours to produce manually.</p>
@@ -217,6 +222,9 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 
+<div style="margin:14px 0 24px;">
+  <a href="https://invideo.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit InVideo AI →</a>
+</div>
 <h2>The Complete YouTuber AI Workflow</h2>
 <p>The YouTube creators getting the most from AI in 2026 use a stacked workflow across five tools.</p>
 <ul style="margin:10px 0 16px 24px;line-height:2.1;">

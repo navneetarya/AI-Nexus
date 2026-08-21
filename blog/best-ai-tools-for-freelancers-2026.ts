@@ -145,6 +145,7 @@ const post: BlogPost = {
 </div>
 
 <h2>1. Rytr: AI Writing for Freelance Writers and Copywriters</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 1. Rytr: AI Writing for Freelance Writers and Copywriters" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Writing · Rating: 4.0/5 · Free: 10K chars/month · Paid: from $9/month</strong></p>
 <p>If you're a freelance writer or copywriter, Rytr is the most practical AI writing tool in your price range. The use-case templates (40+ options including blog intros, product descriptions, email sequences, and ad copy) mean you can generate a working draft in under 2 minutes.</p>
 <p>The workflow that works: Use Rytr to generate 3 draft variations of any section → pick the best one → rewrite it in your voice. This process cuts first-draft time by 60–70% on any content piece under 800 words.</p>
@@ -171,6 +172,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>3. Taskade: AI Productivity for Every Type of Freelancer</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3. Taskade: AI Productivity for Every Type of Freelancer" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Productivity · Rating: 4.1/5 · Free: available · Paid: from $8/month</strong></p>
 <p>Taskade is a project management and notes tool with AI built into every feature. You can generate a project plan from a single sentence, create SOPs for recurring client work, summarise meeting notes, and manage tasks, all within one app.</p>
 <p>For freelancers, the most valuable feature is the AI Workflow Generator. Describe a project ("create a 4-week content strategy for a skincare brand") and Taskade generates a full task breakdown with subtasks, timelines, and notes. It's not perfect, but it's a 10-minute starting point that saves you from building briefs from scratch.</p>
@@ -195,6 +197,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>5. Replit: AI Coding for Freelance Developers</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 5. Replit: AI Coding for Freelance Developers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Coding · Rating: 4.3/5 · Free: available · Paid: from $20/month</strong></p>
 <p>Replit is an online IDE with an AI pair programmer built in. For freelance developers, the AI Agent feature is the most relevant. Describe a feature in plain English, and the AI writes the code, explains it, and runs it in a live environment without any local setup.</p>
 <p>This is particularly valuable for solo freelancers who work across multiple languages or frameworks. Instead of spending 30 minutes setting up an unfamiliar codebase, you can have Replit scaffold it in 5 minutes and then take over for the custom logic.</p>
@@ -220,6 +223,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>Building Your Freelance AI Stack: Where to Start</h2>
+<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Building Your Freelance AI Stack: Where to Start" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Don't try to adopt five new tools at once. Pick the one that solves your biggest time drain right now:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
   <li>You spend too long on writing → <strong>Rytr</strong></li>

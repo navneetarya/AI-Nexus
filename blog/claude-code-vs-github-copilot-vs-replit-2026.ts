@@ -106,6 +106,7 @@ const post: BlogPost = {
 <p>This comparison is built for both audiences. All three tools were analyzed on the same coding tasks: a React component build, an API integration, a debugging session, and a refactor. The goal was tracking where each tool actually saves time versus where it creates more work.</p>
 
 <h2>How to Choose in 3 Steps</h2>
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Choose in 3 Steps" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ol style="margin:12px 0 20px 24px;line-height:1.9;">
   <li><strong>Identify your role.</strong> Delegating full tasks and reviewing the result points to Claude Code. Writing code actively, line by line, points to Copilot. No coding background points to Replit.</li>
   <li><strong>Check your setup tolerance.</strong> Claude Code needs a terminal and a local codebase. Copilot needs an IDE plugin install. Replit needs nothing beyond a browser.</li>
@@ -165,6 +166,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Claude Code: The Agentic Coding Agent</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Claude Code: The Agentic Coding Agent" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Claude Code is fundamentally different from the other two tools. It is not an IDE plugin. It is not a browser-based editor. It is a command-line agent that you run inside your terminal, pointed at your existing codebase. See the <a href="/tools/replit/" style="color:rgb(13,148,136);">Replit tool page</a> for how the browser-based approach compares.</p>
 <p>Once launched, Claude Code reads your entire project: all files, your directory structure, your package dependencies. Then you give it a task in natural language. "Add rate limiting to the /api/login endpoint." "Refactor the user authentication module to use JWT instead of session cookies." "Write tests for all the untested functions in utils.js."</p>
 <p>Claude Code then plans the task, edits the relevant files, runs the tests, reads the error output, and iterates. You never type a single line of code. This is qualitatively different from Copilot's autocomplete model.</p>
@@ -197,6 +199,7 @@ const post: BlogPost = {
   <a href="https://github.com/features/copilot" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit GitHub Copilot →</a>
 </div>
 <h2>Replit: The Best Option for Non-Developers</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Replit: The Best Option for Non-Developers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><a href="/tools/replit/" style="color:rgb(13,148,136);">Replit</a> operates in a different category than the other two. It is a full browser-based development environment, not an AI plugin for an existing workflow. You open Replit in a browser and describe what you want to build in plain English.</p>
 <p>Replit's AI, powered by a mix of models including Claude, scaffolds the project and writes the initial code. It then runs everything in a sandboxed environment you can share with a link.</p>
 <p>For non-developers — content creators building automations, marketers prototyping tools, students learning to code — Replit removes every friction point that makes Claude Code and Copilot inaccessible.</p>

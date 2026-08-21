@@ -90,6 +90,7 @@ const post: BlogPost = {
 </div>
 
 <h2>3 Steps to Set Up Your Free AI Stack Today</h2>
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3 Steps to Set Up Your Free AI Stack Today" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ol style="margin:12px 0 24px 24px;line-height:2.2;font-size:14px;">
   <li><strong>Install Grammarly first.</strong> It takes under 2 minutes and improves every email, assignment, or form you fill in from that point on, at zero cost.</li>
   <li><strong>Swap Perplexity in for Google on your next research task.</strong> You'll get cited answers instead of a list of links to sort through yourself.</li>
@@ -163,6 +164,7 @@ const post: BlogPost = {
 </div>
 
 <h2>1. Grammarly: Best Free AI Tool for Essays and Assignments</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 1. Grammarly: Best Free AI Tool for Essays and Assignments" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Free plan: Unlimited grammar, spelling &amp; clarity checks · No credit card · Works in Google Docs &amp; Gmail</strong></p>
 <p>Grammarly's free browser extension is the single highest-ROI tool any Indian student can install today. It works silently in the background across every text field in Chrome.</p>
 <p>That covers your Google Docs work, Gmail notes to professors, LinkedIn internship applications, and any form you fill in a browser. The free tier catches grammar slips, spelling mistakes, run-on sentences, and missing punctuation, with no character limit and no expiry date.</p>
@@ -195,6 +197,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>3. QuillBot: Best Free Tool for Paraphrasing Research</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3. QuillBot: Best Free Tool for Paraphrasing Research" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Free plan: 125 words/paraphrase · Summariser up to 1,200 words · No credit card</strong></p>
 <p>QuillBot is the go-to tool for the most common student problem: paraphrasing source material for essays without slipping into plagiarism. The free plan's paraphraser rewrites up to 125 words at a time in Standard mode, enough for a paragraph from a journal article or textbook.</p>
 <p>The Standard and Fluency modes are both free; the stronger Creative and Formal modes need Premium.</p>
@@ -225,6 +228,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>5. Gamma: Best Free Tool for Presentation Slides</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 5. Gamma: Best Free Tool for Presentation Slides" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Free plan: 400 AI credits on sign-up · 4–5 complete presentations · No credit card</strong></p>
 <p>Gamma builds a full, polished slide deck from a topic prompt or outline in under 3 minutes. For Indian students who often need slides for seminars, project submissions, viva prep, or college fests, Gamma cuts out the design work entirely. You provide the content; Gamma handles structure, layout, and visual formatting.</p>
 <p>The 400 free credits cover 4–5 complete presentations. Practical advice: use the credits for important submissions rather than practice decks. Export the final presentation as a PDF or PowerPoint file to submit; the exported file has no Gamma branding on the free plan.</p>
@@ -251,6 +255,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>The Zero-Cost Student Stack for India: How to Build It</h2>
+<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for The Zero-Cost Student Stack for India: How to Build It" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>You can have a fully functional AI-powered study setup in India at ₹0/month. Here is the exact order to build it:</p>
 <ul style="margin:12px 0 16px 24px;line-height:2.6;">
   <li><strong>Day 1: Install Grammarly free.</strong> Go to grammarly.com, sign up with your college email, install the Chrome extension. Every assignment you write from this point gets real-time grammar and clarity feedback at no cost.</li>

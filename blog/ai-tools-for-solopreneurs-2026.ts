@@ -117,6 +117,7 @@ const post: BlogPost = {
 <p>For each one, you get the specific tool that fits, real pricing including INR costs, and a practical rollout order. The goal is simple: don't buy a $120/month stack in week one, before the business has made its first sale.</p>
 
 <h2>The 9 Functions a Solopreneur Stack Needs to Cover</h2>
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for The 9 Functions a Solopreneur Stack Needs to Cover" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Before the pricing tables and the tool-by-tool breakdown, here is the full list at a glance. Each function maps to one tool covered in detail further down this guide:</p>
 <ul style="margin:8px 0 24px;padding-left:22px;line-height:1.8;">
   <li><strong>Thinking and writing</strong> — a general AI assistant for drafting, planning, and decisions</li>
@@ -193,6 +194,7 @@ const post: BlogPost = {
 </div>
 
 <h2>1. AI Thinking Partner: Claude or ChatGPT</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 1. AI Thinking Partner: Claude or ChatGPT" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Every other tool in this stack executes a task. This is the one that helps you decide what the task should be. A general-purpose AI assistant is the closest thing a solopreneur has to a co-founder.</p>
 <p>It's a place to think through pricing decisions, draft a client proposal, or debug an awkward email. It's also useful for a second opinion on positioning before you publish anything. Claude AI and ChatGPT are the two realistic options in 2026. The honest answer: both are strong enough that the choice rarely matters as much as people assume.</p>
 <p>Claude tends to produce stronger long-form writing and more careful reasoning on nuanced business questions. That's useful for proposals, policy drafting, and content that needs a consistent voice. ChatGPT has the broader plugin and integration ecosystem, plus Sora video generation built into the same subscription. That matters more if you're already producing video content.</p>
@@ -223,6 +225,7 @@ const post: BlogPost = {
 </p>
 
 <h2>3. AI Research & Fact-Checking: Perplexity</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3. AI Research & Fact-Checking: Perplexity" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>A solopreneur doing the job a research analyst would normally do, like competitive analysis or pricing benchmarks, loses real time to manual search and tab-hopping. So does fact-checking a claim before it goes into a client deliverable. Perplexity replaces that with a single cited answer.</p>
 <p>Ask a question and get a direct response with numbered source links you can click to verify. That beats ten blue links you have to read yourself.</p>
 <p>The free plan includes 5 Pro searches a day plus unlimited basic search, enough for occasional research. Perplexity Pro at $20/month removes the daily cap and adds access to multiple underlying models, plus file upload for analysing PDFs and reports. That's really useful for reviewing a contract or a competitor's pricing page without reading the whole document by hand.</p>

@@ -77,6 +77,7 @@ const post: BlogPost = {
 <blockquote style="border-left:3px solid #0D9488;padding-left:16px;margin:24px 0;font-style:italic;color:#444;">The honest reason to look past Claude Code in 2026 is not quality. Opus 4.8 still leads the pack on SWE-bench Pro. It is that the terminal-agent category has closed most of the capability gap while undercutting Claude Code heavily on price. Two of the strongest alternatives here, Codex CLI and OpenCode, cost nothing beyond a subscription you may already have or your own API key. That changes the calculus for anyone not already locked into a Max plan.<br/><span style="font-style:normal;font-size:13px;color:#888;">Navneet Arya, AI Nexus</span></blockquote>
 
 <h2>Why Look Beyond Claude Code in July 2026</h2>
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Why Look Beyond Claude Code in July 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Three colleagues sitting with laptops watching a presentation on coding tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Claude Code</strong> is Anthropic's terminal-based agentic coding tool, and it remains the developer consensus pick for raw multi-file reasoning on large codebases. But "the best coding agent" and "the only terminal agent worth running" stopped being the same claim sometime in early 2026.</p>
 <p>That's when OpenAI open-sourced a Rust rewrite of Codex and Google shipped a fresh CLI to replace the retiring Gemini CLI. Around the same time, the open-source OpenCode project quietly overtook Claude Code's own GitHub star count.</p>
@@ -85,6 +86,7 @@ const post: BlogPost = {
 <p>This guide ranks 7 terminal AI coding agents against Claude Code on price, license, and the two benchmarks the field actually tracks. Those are Terminal-Bench 2.1 (task completion inside a real terminal) and SWE-bench Pro (resolving real GitHub issues). Every figure below is verified against each vendor's own documentation or pricing page as of July 9, 2026.</p>
 
 <h2>Terminal AI Coding Agents Compared: July 2026</h2>
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Terminal AI Coding Agents Compared: July 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:13px;">
   <thead>
@@ -159,6 +161,7 @@ const post: BlogPost = {
 
 <h2>The 7 Claude Code Alternatives, Ranked</h2>
 
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for The 7 Claude Code Alternatives, Ranked" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h3>1. OpenAI Codex CLI: Best Overall Free Alternative</h3>
 <p>Codex CLI is OpenAI's terminal coding agent, rewritten in Rust and released as fully open source under an Apache 2.0 license. It reads a codebase, proposes multi-file changes, and executes shell commands inside a sandbox that disables network access by default. That means it can run destructive-looking commands during a session without risking your actual environment or credentials.</p>
 <p>The cost story is what puts it at the top of this list. The CLI itself is free to download and run against your own OpenAI API key. Separately, Codex usage is bundled into every ChatGPT tier from Free up through Enterprise, with usage limits that scale by plan.</p>
@@ -205,6 +208,7 @@ const post: BlogPost = {
 <p>AWS is steering new developers toward <strong>Kiro</strong>, its newer spec-driven agentic development environment, instead. If you already have an active Q Developer subscription, you can keep using it and adding seats. But it is not a tool worth setting up from scratch in mid-2026.</p>
 
 <h2>Terminal-Bench and SWE-bench: What the Benchmarks Actually Show</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Terminal-Bench and SWE-bench: What the Benchmarks Actually Show" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Two benchmarks dominate how these agents get compared publicly. <strong>Terminal-Bench 2.1</strong> scores an agent-plus-model pairing on real, multi-step terminal tasks. That's not just code generation, but the full loop of reading a repo, planning, executing shell commands, and verifying the result.</p>
 <p><strong>SWE-bench Pro</strong>, maintained by Scale AI, is a contamination-resistant set of real GitHub issues. It's used to measure how often a model resolves an actual reported bug or feature request end to end.</p>
 <p>On the most recent verified Terminal-Bench 2.1 snapshot, Codex CLI running GPT-5.5 topped the leaderboard. Claude Code on Opus 4.8 was the strongest usable Claude pairing, close behind. On SWE-bench Pro, the ranking flips. Claude Opus 4.8 leads at roughly 69%, a meaningful jump from Opus 4.7's score, ahead of GPT-5.5 and Gemini 3.1 Pro.</p>
@@ -216,6 +220,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Free vs Paid: What You Actually Get Without a Credit Card</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Free vs Paid: What You Actually Get Without a Credit Card" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>If budget is the deciding factor, three tools stand out for genuinely free use rather than a time-limited trial. <strong>OpenCode</strong> and <strong>Aider</strong> are free indefinitely because they are bring-your-own-key. You only pay for the model tokens you consume, which can be $0 on a local Ollama model.</p>
 <p><strong>OpenAI Codex CLI</strong> is free as a tool and comes bundled with every ChatGPT tier, including the Free plan. Usage limits do scale down at the lowest tiers.</p>
 <p><strong>Antigravity CLI</strong> and <strong>Warp's</strong> base tier are also free, but both come with caveats. Antigravity's free-tier limits are reportedly tighter than the CLI it replaced. Warp's free tier includes a limited monthly AI credit allowance, not unlimited agent usage.</p>

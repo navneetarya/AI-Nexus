@@ -21,7 +21,7 @@ const post: BlogPost = {
   readTime: '7 min read',
   ogImage: 'https://ainexustools.online/og/blog/best-ai-writing-tools-for-beginners-2026.webp',
   excerpt: 'The best AI writing tools for beginners in 2026 are Grammarly (free grammar and tone checker — works in every app), Rytr (best for generating new content — 10,000 free characters/month), and QuillBot (best for paraphrasing and rewriting). Start with Grammarly\'s free plan — no credit card needed, and it works inside Gmail, Google Docs, and your browser immediately. Add Rytr when you need to write first drafts faster.',
-  quickAnswer: 'The best AI writing tools for beginners in 2026 are Grammarly (free grammar and tone checker, works in every app), Rytr (best for generating first drafts, 10,000 free characters/month), and QuillBot (best for paraphrasing and rewriting, free up to 125 words per pass). Start with Grammarly\'s free plan — no credit card needed, and it works inside Gmail, Google Docs, and your browser right away. Add Rytr once you need to write first drafts faster, and QuillBot when you need to rewrite or summarise existing text.',
+  quickAnswer: 'The best AI writing tools for beginners in 2026 are Grammarly for free grammar and tone checks, Rytr for first drafts, and QuillBot for paraphrasing. Start with Grammarly\'s free plan: it needs no card and works in Gmail, Google Docs, and your browser. Add Rytr for faster drafts and QuillBot when you need to rewrite existing text.',
   myTake: 'Most beginners overthink this decision and end up paying for a tool that duplicates something a free plan already covers. Grammarly, Rytr, and QuillBot solve three genuinely different problems — fixing your own writing, generating a first draft, and rewriting existing text — and every one of them has a usable free tier. Install all three for free before paying for any of them; the paid upgrade only becomes worth it once a specific free-tier limit is actually slowing you down.',
   faqs: [
     {
@@ -82,6 +82,7 @@ const post: BlogPost = {
 <p>Every tool in this guide has been independently researched and compared across real beginner use cases, not demo prompts. The focus: what works for writing blog posts, emails, and social content when you're just starting out.</p>
 
 <h2>Quick Comparison: Best AI Writing Tools for Beginners</h2>
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Quick Comparison: Best AI Writing Tools for Beginners" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -141,6 +142,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>2. Rytr: Best for Generating Drafts Without Any Learning Curve</h2>
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 2. Rytr: Best for Generating Drafts Without Any Learning Curve" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Rating: 4.0/5 · Free plan: 10,000 characters/month</strong></p>
 <p>Rytr is the simplest AI content generator available in 2026. You pick a use case from a dropdown (blog idea, product description, email, bio, and 40+ other options), type a few keywords, and Rytr generates 2–3 versions in seconds.</p>
 <p>For beginners, this structure is a gift. You're not staring at a blank page wondering what to prompt. Rytr's use-case templates act as training wheels: they teach you how to brief an AI by showing you exactly what inputs produce good outputs.</p>

@@ -84,6 +84,7 @@ const post: BlogPost = {
 <p>Every tool below was independently researched across features, pricing, free plan limits, and verified user feedback. Here is what is actually worth using, and what to skip.</p>
 
 <h2>AI Podcast Tools at a Glance</h2>
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for AI Podcast Tools at a Glance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Here's how the four tools compare on price, free plan, and best-fit use case before the full breakdown below:</p>
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
@@ -142,6 +143,7 @@ const post: BlogPost = {
 </p>
 
 <h2>2. Adobe Podcast Enhance: Best Free Audio Cleanup Tool</h2>
+<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 2. Adobe Podcast Enhance: Best Free Audio Cleanup Tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Audio Enhancement · Pricing: Free (Enhance Speech) · Paid: Adobe Creative Cloud</strong></p>
 <p>Adobe Podcast's Enhance Speech tool is the most impressive free AI podcast feature available in 2026. Upload any audio file: a laptop microphone recording, a phone recording, or one made in a noisy room. Adobe's AI returns a cleaned version that sounds like it was recorded in a studio.</p>
 <p>Results are genuinely strong. Background hum, room reverb, keyboard clicks, traffic noise, and air conditioning are stripped out while your voice stays clear. According to verified user reports, a recording made in a kitchen with a laptop mic can come out cleaner than one made with a $150 USB microphone in an untreated room.</p>
@@ -165,6 +167,7 @@ const post: BlogPost = {
 </div>
 
 <h2>4. Murf AI: Best for Podcast Intros, Outros & Ad Reads</h2>
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 4. Murf AI: Best for Podcast Intros, Outros & Ad Reads" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Audio · Rating: 4.4/5 · Pricing: Free + from $19/month · <a href="/tools/murf-ai/" style="color:var(--a1);font-weight:600;">Full Murf AI Review →</a></strong></p>
 <p>Murf AI turns text into realistic AI voiceovers. For podcasters, that's useful in three ways. First, a professional intro or outro you never need to re-record. Second, sponsor ad reads in one consistent voice. Third, narration for solo "explainer" episodes where you've written a script but don't want to read it yourself.</p>
 <p>The voice library has 120+ AI voices across 20+ languages, with a range of accents, genders, and tones. The Studio interface lets you adjust speaking rate, pitch, and emphasis on individual words. That keeps the output from sounding like flat, robotic text-to-speech.</p>

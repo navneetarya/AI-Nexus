@@ -116,6 +116,7 @@ const post: BlogPost = {
 </nav>
 
 <h2 id="tldr">TL;DR: the AI browser war in 30 seconds</h2>
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for TL;DR: the AI browser war in 30 seconds" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <img src="https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People at a conference table listening to a colleague present browser options" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Yes, the AI browser comparison for 2026 has a clear shape. ChatGPT Atlas, Perplexity Comet, and Dia are the three agentic browsers worth evaluating. None of them is a safe default replacement for your current browser without understanding what you're handing over.</p>
 <p>Comet is the most feature-complete for free. Atlas has the most carefully guardrailed agent mode. Dia has the most personal, memory-driven experience, and it collects the most data to deliver it. Navneet Arya has spent the past few weeks testing all three across daily research and browsing tasks for this AI browser comparison.</p>
@@ -131,6 +132,7 @@ const post: BlogPost = {
 </div>
 
 <h2 id="what-is-agentic">What is an agentic browser, and why does it exist now?</h2>
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for What is an agentic browser, and why does it exist now?" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>An agentic browser is a browser with an AI agent built into the core browsing engine, not bolted on as an extension. It can read a page, act across your open tabs, and complete multi-step tasks on your behalf. That means researching a topic, comparing products, filling out a form, or finishing a purchase.</p>
 <p>This is the defining shift of 2026's browser market. Chrome is adding Gemini, Edge has Copilot Mode, and Opera has Neon. But Atlas, Comet, and Dia are built from the ground up around agentic behavior, rather than added onto an existing browsing experience.</p>
 <p>The reason this matters now, in mid-2026, is simple. All three products have moved from invite-only betas to public, free-to-download releases within the past year.</p>
@@ -138,6 +140,7 @@ const post: BlogPost = {
 <p>Atlassian acquired The Browser Company, the maker of Dia, for $610 million in September 2025. This is no longer an experimental corner of the browser market. Real money and real user bases are behind all three.</p>
 
 <h2 id="key-features">ChatGPT Atlas, Perplexity Comet, and Dia: key features</h2>
+<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for ChatGPT Atlas, Perplexity Comet, and Dia: key features" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h3>Agent mode and task automation</h3>
 <p>Atlas's Agent Mode is the most careful of the three by design. It can research topics, plan events, compare items, and handle repetitive multi-step tasks. But OpenAI built in hard capability restrictions: Agent Mode cannot run code, install extensions, or download files.</p>
 <p>It also pauses on sensitive sites, like your bank's login page, to confirm you really intend the action. It's gated to ChatGPT Plus ($20/month) and higher; the free tier gets browsing and sidebar chat, not autonomous task execution.</p>
@@ -158,6 +161,7 @@ const post: BlogPost = {
 <p>Unlike Atlas, there's no prominent per-item memory-deletion control surfaced in the interface as of this review. Granular control over what an AI browser remembers may matter more to you than the feature set itself. If so, that alone may decide which of the three is right for you.</p>
 
 <h2 id="pricing">Pricing: is any of these worth paying for?</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Pricing: is any of these worth paying for?" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Perplexity Comet is the clear value leader on paper. The entire agentic feature set, including unlimited AI search, citations, and cross-tab context, is free. The optional Comet Plus tier is $5/month and only adds premium publisher content (The New York Times, Wired, and similar partners). That's a nice-to-have, not a functional upgrade to the browser itself.</p>
 <p>ChatGPT Atlas is free to download and use for basic browsing on any ChatGPT plan. But the feature that really makes it an "agentic browser," Agent Mode, requires Plus ($20/month) or higher.</p>
 <p>If you're already paying for ChatGPT Plus for other reasons, Atlas effectively comes at no extra cost. If you're not, the $20/month is a real ask for a browser.</p>
@@ -165,6 +169,7 @@ const post: BlogPost = {
 <p><strong>India note:</strong> none of the three publishes India-specific pricing, INR billing, or UPI/Razorpay support. All three bill globally in USD through their parent company's standard payment stack. Indian users pay the same dollar-denominated price, converted at your card issuer's exchange rate, as anyone else.</p>
 
 <h2 id="comparison-table">ChatGPT Atlas vs Perplexity Comet vs Dia: comparison table</h2>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for ChatGPT Atlas vs Perplexity Comet vs Dia: comparison table" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:28px 0">
   <table style="width:100%;border-collapse:collapse;font-size:14px">
     <thead>

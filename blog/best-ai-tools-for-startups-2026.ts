@@ -54,6 +54,7 @@ const post: BlogPost = {
 <p>Startups that understand this, and build AI into every workflow from day one, get a structural operating advantage over the ones that don't. This isn't about replacing people. It's about doing more with the team you have.</p>
 
 <h2>The Startup AI Stack: What Actually Matters</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for The Startup AI Stack: What Actually Matters" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -109,6 +110,7 @@ const post: BlogPost = {
   <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude →</a>
 </div>
 <h2>2. Gamma – Pitch Decks in Under 30 Minutes</h2>
+<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 2. Gamma – Pitch Decks in Under 30 Minutes" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Building a pitch deck from scratch in PowerPoint or Google Slides takes 3–6 hours, whether it's for a fundraise or a client presentation. With Gamma, you describe your startup and what the deck should cover.</p>
 <p>It generates a complete presentation, slide by slide with visual design, in under 2 minutes. You spend 20–25 minutes refining instead of building from a blank canvas.</p>
 <p>For startups that pitch often, to investors, enterprise customers, or accelerators, the time savings add up fast. Gamma's free plan includes 400 AI credits, roughly 10 full deck generations, which covers several months of occasional use. The $8/month Plus plan handles regular pitch deck work with no limits.</p>
