@@ -243,7 +243,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Your Listing Photos Free →</a>
 </div>
-<p>For related picks, see our guides to the <a href="/best-ai-image-tools/" style="color:#0ea5e9;font-weight:600;">best AI image generators</a> and <a href="/blog/best-ai-headshot-tools-linkedin-2026/" style="color:#0ea5e9;font-weight:600;">best AI headshot tools for LinkedIn</a>.</p>
+<p>For related picks, see our guides to the <a href="/best-ai-image-tools/" style="color:#0ea5e9;font-weight:600;">best AI image generators</a> and <a href="/blog/best-ai-headshot-tools-linkedin-2026/" style="color:#0ea5e9;font-weight:600;">best AI headshot tools for LinkedIn</a>. If you're comparing full image-generation platforms rather than upscalers specifically, see our <a href="/blog/best-midjourney-alternatives-2026/" style="color:#0ea5e9;font-weight:600;">best Midjourney alternatives</a> roundup.</p>
   `.trim(),
 
   myTake: 'Skip Topaz entirely unless you specifically need print-resolution output. For everyone else asking "how do I make this photo look better," PhotoRoom\'s bundled workflow or Upscale.media\'s honest free tier will solve the actual problem faster and cheaper.',

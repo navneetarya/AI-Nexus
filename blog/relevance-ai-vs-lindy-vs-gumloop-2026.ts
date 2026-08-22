@@ -228,7 +228,7 @@ const post: BlogPost = {
   <a href="https://www.gumloop.com/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gumloop Free →</a>
   <a href="https://www.lindy.ai/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See Lindy Pricing →</a>
 </div>
-<p>For a broader look at agent platforms built for SMB operations specifically, see <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a>. For the wider automation category these tools sit alongside, see <a href="/blog/best-no-code-ai-automation-tools-2026/">Best No-Code AI Automation Tools 2026</a>.</p>
+<p>For a broader look at agent platforms built for SMB operations specifically, see <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a>. For the wider automation category these tools sit alongside, see <a href="/blog/best-no-code-ai-automation-tools-2026/">Best No-Code AI Automation Tools 2026</a>. If you need a straightforward workflow-automation platform rather than an AI-agent builder, our <a href="/blog/n8n-vs-make-vs-zapier-2026/" style="color:#0D9488;font-weight:600;">n8n vs Make vs Zapier comparison</a> covers that simpler tier.</p>
 
 <h2>Final Verdict: Relevance AI vs Lindy vs Gumloop</h2>
 <p>There's no single winner here because these three platforms aren't really competing for the same job.</p>

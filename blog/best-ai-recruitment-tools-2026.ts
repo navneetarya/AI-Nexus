@@ -321,7 +321,7 @@ const post: BlogPost = {
   <li><strong>Add scheduling automation only at volume.</strong> Paradox only pays for itself once you're running high-volume frontline or hourly hiring — under 500 hires/year, the ROI case is weak.</li>
   <li><strong>Layer in video intelligence last, and only if regulated.</strong> HireVue is worth evaluating for formal graduate intake or assessment-centre programmes at large enterprises — not a fit for smaller or informal hiring processes.</li>
 </ol>
-<p>For a broader look at where automation ends and true AI agents begin in a hiring workflow, see <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: The Real Difference</a>.</p>
+<p>For a broader look at where automation ends and true AI agents begin in a hiring workflow, see <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: The Real Difference</a>. Once candidates reach the interview stage, our <a href="/blog/best-ai-interview-prep-tools-2026/" style="color:#0D9488;font-weight:600;">best AI interview prep tools</a> guide covers the tools candidates themselves are using — worth knowing as an interviewer.</p>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>

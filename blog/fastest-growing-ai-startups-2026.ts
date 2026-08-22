@@ -174,7 +174,7 @@ const post: BlogPost = {
 <h2>The Startups Worth Watching in Late 2026</h2>
 <p>Based on current growth signals and product direction, three categories look most likely to produce the headline AI startups of 2027:</p>
 <ul>
-  <li>AI agents built for specific work in law, medicine, and finance.</li>
+  <li>AI agents built for specific work in law, medicine, and finance — see our <a href="/blog/multi-agent-ai-systems-explained-2026/" style="color:#0D9488;font-weight:600;">multi-agent AI systems explainer</a> for how these are architected.</li>
   <li>AI infrastructure companies that cut the cost and complexity of AI deployment.</li>
   <li>Multimodal companies that combine vision, audio, and text in production-grade apps.</li>
 </ul>
