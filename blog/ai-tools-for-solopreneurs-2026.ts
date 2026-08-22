@@ -110,7 +110,7 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1751257983922-a627088d4c21?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A solopreneur's laptop workspace set up for daily work" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <h2>The Solopreneur Problem: Nine Jobs, One Person</h2>
-<p>A solopreneur is not a small business with a small team. One person does the work of a founder, marketer, support rep, project manager, bookkeeper, and content creator, all at once. Most "best AI tools" roundups are written for teams.</p>
+<p>A solopreneur is not a small business with a small team. One person does the work of a founder, marketer, support rep, project manager, bookkeeper, and content creator, all at once. Most "best AI tools" roundups are written for teams. A solo tool stack needs to cover all of those roles without the monthly cost of a team-sized subscription.</p>
 <p>They assume someone else handles sales while you handle delivery. Or that a dedicated person owns social media while you focus on the product. That assumption breaks down for a one-person business, where every hour spent on admin is an hour not spent on paid work.</p>
 <p>The right AI stack for a solopreneur is not the same as the right stack for a 10-person startup. Many of the same tools appear on both lists, but the fit differs. A solopreneur needs tools that work well on the free or near-free tier, with no onboarding time for a second user.</p>
 <p>They also need to cover the widest range of tasks per subscription dollar, since there is no team to split the workload or the cost across. This guide covers the 9 functional categories that matter for a one-person business in 2026.</p>

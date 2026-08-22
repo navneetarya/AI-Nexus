@@ -31,7 +31,7 @@ const post: BlogPost = {
   content: `
 <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person at a computer wearing an anonymous mask, representing a faceless YouTube creator" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
-<p>Why do some faceless channels build a loyal audience while dozens of near-identical ones disappear after a few uploads? A faceless channel has one job the voice has to do that a talking-head channel doesn't: carry the whole feel of the brand.</p>
+<p>Why do some faceless channels build a loyal audience while dozens of near-identical ones disappear after a few uploads? A faceless channel has one job the voice has to do that a talking-head channel doesn't: carry the whole feel of the brand. Get that one choice wrong and no amount of editing or thumbnail work fixes it.</p>
 
 <p>There's no face on screen to build trust, so the voice becomes the whole identity.</p>
 

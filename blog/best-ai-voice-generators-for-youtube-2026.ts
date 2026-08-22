@@ -31,7 +31,7 @@ const post: BlogPost = {
   content: `
 <img src="https://images.unsplash.com/photo-1760768550727-00f5e02feb72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A camera on a tripod set up in a minimalist studio for filming" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
-<p>YouTube creators ask about AI voice generators for one of two reasons. Either they don't want to be on camera, or they need narration faster than recording it themselves allows.</p>
+<p>YouTube creators ask about AI voice generators for one of two reasons. Either they don't want to be on camera, or they need narration faster than recording it themselves allows. Either way, the right tool depends on whether you need a natural-sounding narrator voice or your own cloned voice at scale.</p>
 
 <p>Both are valid, and both point to the same short list of tools: which one actually fits your channel's format?</p>
 

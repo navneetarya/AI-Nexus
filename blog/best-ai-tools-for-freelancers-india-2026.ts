@@ -73,7 +73,7 @@ const post: BlogPost = {
 
   content: `
 <h2>What Are the Best AI Tools for Freelancers in India in 2026?</h2>
-<p>The best AI tools for freelancers in India in 2026 cover four jobs. Grammarly is the non-negotiable baseline for every client message. Rytr writes content faster without needing a dollar card.</p>
+<p>The best AI tools for freelancers in India in 2026 cover four jobs. Grammarly is the non-negotiable baseline for every client message. Rytr writes content faster without needing a dollar card. The other two jobs — project delivery and getting paid without losing money to conversion fees — are covered further down.</p>
 <p>Canva AI covers free design work, and Taskade handles juggling multiple client projects. All of them have INR-friendly or genuinely free tiers, which most global guides never mention.</p>
 <p>Search for AI tools for freelancers and you'll find lists built for US and European readers. They're priced in USD, require a credit card, and centre on Western client workflows.</p>
 <p>Indian freelancers on Fiverr, Upwork, and local platforms like Internshala or Truelancer face a different reality. USD pricing eats into margins, some platforms won't take Indian cards, and briefs often want regional language awareness.</p>

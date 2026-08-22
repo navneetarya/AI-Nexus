@@ -29,7 +29,7 @@ const post: BlogPost = {
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business owner taking a phone call at a desk" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
-<p>Every "best AI voice agent" roundup published in the last few months recommends the same four or five names. At least one of them just stopped being an option for a small business.</p>
+<p>Every "best AI voice agent" roundup published in the last few months recommends the same four or five names. At least one of them just stopped being an option for a small business. Pricing and availability in this category shift fast enough that a six-month-old recommendation can already be wrong.</p>
 <p>I'm Navneet Arya, and when I checked pricing pages directly for this guide, I found something notable. Synthflow, the platform most often called the "no-code pick for small teams," now shows a single $30,000-a-year Enterprise plan. That plan sits right on its live pricing page.</p>
 <p>Most of the comparison posts still online haven't caught up. This guide covers the best ai voice agent for small business options actually available to a freelancer or solo agency today.</p>
 <p>That includes which ones still work as an <strong>ai phone agent for freelancers</strong> on a real budget. It also covers the true cost once you stop reading the headline per-minute rate.</p>

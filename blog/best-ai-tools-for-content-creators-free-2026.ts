@@ -87,7 +87,7 @@ const post: BlogPost = {
 </div>
 
 <h2>What Are the Best Free AI Tools for Content Creators in 2026?</h2>
-<p>The best free AI tools for content creators in 2026 fall into four jobs. Grammarly handles editing for every caption and script. Canva AI covers design work that would otherwise need a freelancer.</p>
+<p>The best free AI tools for content creators in 2026 fall into four jobs. Grammarly handles editing for every caption and script. Canva AI covers design work that would otherwise need a freelancer. CapCut handles video editing, and ElevenLabs' free tier covers voiceover and narration for shorter clips.</p>
 <p>Rytr covers short-form copy when you're stuck, and Podcastle covers recording and cleaning up audio. Every one of these has a free plan generous enough for daily use, not just a trial.</p>
 <p>Most AI tool round-ups rank tools by feature count or star rating. That's useless for content creators who need to know one thing: <strong>what can I do for free, starting today?</strong></p>
 <p>Every tool in this guide was independently researched based on its free plan. Research documents exactly what the free tier does and doesn't include: not the marketing copy version, but what a new user actually encounters.</p>

@@ -85,7 +85,7 @@ const post: BlogPost = {
 
 <h2>Relevance AI vs Lindy vs Gumloop: Why These Three Get Compared</h2>
 <img src="https://images.unsplash.com/photo-1622675205169-901710ac8643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People in a meeting discussing which AI agent platform fits their workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
-<p>Relevance AI, Lindy, and Gumloop all get called "AI agent builders," and all three show up on the same shortlists. But they were built to solve different problems, and treating them as interchangeable is the fastest way to pick the wrong one.</p>
+<p>Relevance AI, Lindy, and Gumloop all get called "AI agent builders," and all three show up on the same shortlists. But they were built to solve different problems, and treating them as interchangeable is the fastest way to pick the wrong one. Relevance AI leans toward data-heavy workflows, Lindy toward non-technical setup, and Gumloop toward developer-controlled logic.</p>
 <p>Navneet Arya has tracked all three since covering the broader agent-versus-automation split in an earlier <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation</a> post. The gap between these platforms has only widened as each one has specialized further in 2026.</p>
 <p><strong>Lindy</strong> is assistant-first. Describe a job in plain English — manage my inbox, prep me for meetings, qualify inbound leads — and Lindy hands you a working "AI employee" fast.</p>
 <p><strong>Relevance AI</strong> is workforce-first — a structured "Tools + Agents" setup where several agents share context and hand off work toward one goal. It's built for teams that need auditable, multi-step reasoning.</p>

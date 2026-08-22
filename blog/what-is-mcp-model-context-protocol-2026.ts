@@ -96,7 +96,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://cursor.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Cursor →</a>
 </div>
-<p>Before MCP, every AI application that needed to read a database, query a CRM, or call an external API had to ship a purpose-built integration for that exact pairing.</p>
+<p>Before MCP, every AI application that needed to read a database, query a CRM, or call an external API had to ship a purpose-built integration for that exact pairing. MCP replaces that one-off wiring with a single open standard, so any MCP-compatible AI tool can connect to any MCP-compatible data source without custom code.</p>
 <p>A coding assistant that wanted to read your GitHub issues needed a GitHub-specific integration.</p>
 <p>The same assistant wanting to query a Postgres database needed an entirely separate, Postgres-specific integration.</p>
 <p>Multiply that by every tool a team uses: Slack, Notion, Stripe, internal databases, ticketing systems. The result is what developers call the <strong>N×M integration problem</strong>.</p>
@@ -127,6 +127,17 @@ const post: BlogPost = {
   <li><strong>Execution and response.</strong> The server executes the actual work, such as querying GitHub's API, and returns the result to the client. The client feeds it back into the model's context so it can answer the user.</li>
 </ol>
 <p>This entire exchange happens over a standard, stateful connection, defined by the spec's <strong>2025-11-25 revision</strong>. It uses JSON-RPC 2.0, the same lightweight remote-procedure-call format used across much of current web infrastructure. That's a shared standard, not a proprietary format unique to MCP.</p>
+<p>In practice, connecting a server usually means adding a short block to a host application's config file. The shape is consistent across most MCP-compatible clients:</p>
+<pre style="background:#0f172a;color:#e2e8f0;padding:16px;border-radius:10px;overflow-x:auto;font-size:13px;line-height:1.6;"><code>{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": { "GITHUB_TOKEN": "your-token-here" }
+    }
+  }
+}</code></pre>
+<p>That's the entire integration — no custom client code, no per-tool SDK. The host reads this block, launches the server, and the discovery step described above takes it from there.</p>
 
 <img src="https://images.unsplash.com/photo-1531668383211-64743e924c66?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A blue LAN cable plugged into a router, representing a protocol connection" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 

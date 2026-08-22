@@ -86,7 +86,7 @@ const post: BlogPost = {
 
   content: `
 <h2>Is Gemini Better Than ChatGPT for Writing in 2026?</h2>
-<p>For most writing tasks, ChatGPT (GPT-5.5) still produces more consistently polished prose than Gemini 3.1 Pro. Gemini pulls ahead specifically for anyone who writes inside Google Docs and Gmail, or needs research baked directly into the output.</p>
+<p>For most writing tasks, ChatGPT (GPT-5.5) still produces more consistently polished prose than Gemini 3.1 Pro. Gemini pulls ahead specifically for anyone who writes inside Google Docs and Gmail, or needs research baked directly into the output. Neither model wins every category outright — the right pick depends on which ecosystem the rest of your work already lives in.</p>
 <p>Google Trends shows a 550% spike in searches for "Gemini AI review" over the past 30 days. Gemini 3.1 Pro, Google's most capable model to date, launched recently with a 2-million-token context window and deep Workspace integration. Writers who use Google Docs daily are asking the obvious question: <strong>do I still need ChatGPT?</strong></p>
 <p>This review answers that directly. Both tools were independently researched through five real writing tasks — the same tasks most content creators face every week. No synthetic benchmarks, no vague capability claims. Here is what the documented output looks like, and where each tool wins.</p>
 

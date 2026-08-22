@@ -77,7 +77,7 @@ const post: BlogPost = {
 
   content: `
 <h2>How Do You Use AI for Content Creation in 2026?</h2>
-<p>Using AI for content creation in 2026 means running one idea through four AI-assisted stages: writing, images, video, and audio. The right workflow can cut the time between an idea and a finished piece of content by 60–80%.</p>
+<p>Using AI for content creation in 2026 means running one idea through four AI-assisted stages: writing, images, video, and audio. The right workflow can cut the time between an idea and a finished piece of content by 60–80%. The bottleneck usually isn't any single tool — it's the handoffs between them.</p>
 <p>Two years ago, "AI content creation" meant pasting a rough ChatGPT output into a blog post and hoping no one noticed. In 2026, the tooling has matured. A solo creator can now produce a written article, a custom feature image, a repurposed video version, and a podcast episode, all from the same source idea, in a single working afternoon.</p>
 <p>This site has run exactly this workflow for the past eight months, and the breakdown below reflects the recommended system. This guide is structured by content format — jump to the section that matches what you are making, or read through for the full picture of how the formats connect.</p>
 

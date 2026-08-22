@@ -77,7 +77,7 @@ const post: BlogPost = {
   content: `
 <h2>Which Free AI Plan Actually Works for Freelancers in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1675865254433-6ba341f0f00b?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="The ChatGPT interface showing example prompts and capabilities on a dark screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
-<p>No single free plan wins outright for freelancers in 2026. ChatGPT, Claude, and Gemini free tiers each win different tasks.</p>
+<p>No single free plan wins outright for freelancers in 2026. ChatGPT, Claude, and Gemini free tiers each win different tasks. ChatGPT's free tier leads on image generation and web browsing, Claude leads on long-document reasoning, and Gemini leads on generous daily limits — the right pick depends on which task eats the most of your week.</p>
 <p>Running all three together covers roughly 80% of a freelancer's AI needs without spending anything. Here is where each free plan stands in mid-2026. If you're weighing the paid tiers behind these three, see our full <a href="/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/">GPT-5.5 vs Claude Opus 4.8 vs Grok 4 comparison</a>.</p>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">

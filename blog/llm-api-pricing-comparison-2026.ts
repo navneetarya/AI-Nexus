@@ -90,7 +90,7 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1711606815631-38d32cdaec3e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A calculator sitting on a table next to a laptop, used to compare API pricing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Why "GPT-4o vs Claude vs Gemini" Is the Wrong Question in July 2026</h2>
-<p>GPT-4o is still the model most people type into a search bar when they want to compare LLM API pricing. For most of 2024 and 2025 that made sense: it was OpenAI's default workhorse model. That is no longer true.</p>
+<p>GPT-4o is still the model most people type into a search bar when they want to compare LLM API pricing. For most of 2024 and 2025 that made sense: it was OpenAI's default workhorse model. That is no longer true. Anthropic, Google, and open-weight providers have all shipped models that beat it on price, speed, or both for specific workloads.</p>
 <p>OpenAI retired GPT-4o from ChatGPT in two stages. Consumer access was cut on February 13, 2026. The last bit, through Custom GPTs on Business, Enterprise, and Edu plans, ended April 3, 2026.</p>
 <p>Check OpenAI's own pricing page today and GPT-4o is nowhere in the current tables, next to GPT-5.5 and GPT-5.4. It has effectively moved off the price list that OpenAI actively maintains for new integrations.</p>
 <p>That leaves a gap between what people search for and what providers actually publish.</p>

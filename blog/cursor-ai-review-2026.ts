@@ -116,7 +116,7 @@ const post: BlogPost = {
 </nav>
 
 <h2 id="quick-summary">Is Cursor the Best AI Code Editor in 2026?</h2>
-<p>Yes. Cursor is the best standalone AI code editor in 2026. The $20/month Pro plan is worth it for anyone who codes more than two hours a day.</p>
+<p>Yes. Cursor is the best standalone AI code editor in 2026. The $20/month Pro plan is worth it for anyone who codes more than two hours a day. Below that, the free tier's limited fast-request allowance is usually enough, and a lighter tool costs less.</p>
 <p>That's thanks to Composer's multi-file editing and an Agent mode that can carry out coding tasks with minimal supervision.</p>
 <p>Cursor is an AI-first code editor built on VS Code, developed by Anysphere. It launched publicly in 2023 and has become a dominant AI code editor in 2026.</p>
 <p>It's popular with full-time coders, freelancers, and solo founders who want AI built into their workflow, not bolted on as an add-on.</p>

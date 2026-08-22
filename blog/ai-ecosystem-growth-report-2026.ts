@@ -48,7 +48,7 @@ const post: BlogPost = {
 
 <h2>What Is the State of the AI Tools Market in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1592495989226-03f88104f8cc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A bar chart showing steadily increasing values, representing overall AI tool market growth" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
-<p>The AI tools space crossed $50 billion in annual revenue in 2026. Growth is not spread evenly. It is concentrated in app-layer tools, AI coding assistants, and niche AI agents.</p>
+<p>The AI tools space crossed $50 billion in annual revenue in 2026. Growth is not spread evenly. It is concentrated in app-layer tools, AI coding assistants, and niche AI agents. The infrastructure layer below them — model providers and cloud compute — is growing too, but slower and with far thinner margins.</p>
 <p>The AI tools market in 2026 has moved from hype to real, everyday tech. Tools that were novelties in 2023 are now part of daily work for hundreds of millions of people. The market has matured enough to produce winners and losers. Some segments are narrowing around 2–3 top tools. Others stay spread out.</p>
 <p>This report covers market size estimates and growth by segment. It also looks at use trends and the core shifts shaping what comes next.</p>
 

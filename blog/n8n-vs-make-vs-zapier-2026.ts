@@ -103,7 +103,7 @@ const post: BlogPost = {
 
 <h2>Why the AI Automation Platform Decision Matters More Than Before in 2026</h2>
 <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Team reviewing an automation workflow on a laptop screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p>This comparison would have looked very different eighteen months ago. n8n, Make, and Zapier all started as the same basic product category: visual, trigger-based automation connecting SaaS apps.</p>
+<p>This comparison would have looked very different eighteen months ago. n8n, Make, and Zapier all started as the same basic product category: visual, trigger-based automation connecting SaaS apps. Today each has pulled in a different direction — one toward AI-native agent behaviour, one toward visual polish, one toward sheer integration count — so "which is best" now depends entirely on which of those three you actually need.</p>
 <p>For years the decision mostly came down to price and app coverage. That's no longer true. AI has split the category.</p>
 <p>These platforms are no longer just executing pre-defined rules. They're becoming the layer through which AI agents reach the rest of a company's software stack.</p>
 <p>The clearest signal of how seriously the market takes this shift came in May 2026, when SAP took a strategic stake in n8n at a <strong>$5.2 billion valuation</strong>. That's more than double the $2.5 billion mark n8n had reached just seven months earlier, in its October 2025 Series C.</p>
