@@ -15,7 +15,7 @@ const post: BlogPost = {
   metaDescription: 'MCP (Model Context Protocol) is Anthropic\'s open standard connecting AI models to external tools. See 2026 adoption and which platforms support it.',
   quickAnswer: 'MCP (Model Context Protocol) is an open standard Anthropic introduced in November 2024 that lets AI models connect to external tools and data through one shared interface instead of a custom connector per model-tool pair. By mid-2026 it is supported by Claude, ChatGPT, Cursor, Windsurf, VS Code, n8n, Zapier, and over 10,000 community-built servers.',
   datePublished: '2026-06-18',
-  dateModified: '2026-06-18',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',
@@ -66,21 +66,23 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>MCP (Model Context Protocol)</strong> is an open standard introduced by Anthropic in November 2024. It lets AI models connect to external tools, files, and live data sources through one shared interface. It replaces a custom-built connector for every model-and-tool pairing.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">By June 2026 it has been adopted by Anthropic's own Claude products and OpenAI's ChatGPT. The AI-native code editors Cursor and Windsurf, VS Code, and automation platforms including n8n, Zapier, and Activepieces support it too. Over 10,000 MCP servers now exist, making MCP the closest thing the AI industry has to a universal integration layer.</p>
 </div>
-<!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Component</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Role</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Examples</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">MCP Server</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Exposes a tool or data source to AI models</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Zapier MCP, n8n MCP Server Trigger, community GitHub/Postgres connectors</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;font-weight:600;">MCP Client</td>
+      <td style="padding:10px 14px;">Lets an AI application call MCP servers on the model's behalf</td>
+      <td style="padding:10px 14px;">Claude Desktop, Cursor, Windsurf, ChatGPT</td>
     </tr>
   </tbody>
 </table>

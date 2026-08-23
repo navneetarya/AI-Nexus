@@ -19,7 +19,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Video Generators 2026: Runway vs Veo vs Kling Ranked',
   metaDescription: 'Best AI video generators 2026 ranked: Veo 3.1, Runway Gen-4.5, Kling AI 3.0, Pika & Luma compared on pricing, quality, and the best Sora alternative.',
   datePublished: '2026-06-30',
-  dateModified: '2026-06-30',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Video',
   readTime: '13 min read',
@@ -93,21 +93,38 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI video generators in 2026: <strong>Google Veo 3.1</strong> for best photorealism and native audio, from $19.99/month. <strong>Runway Gen-4.5</strong> wins on camera control and editing workspace, from $12/month. <strong>Kling AI 3.0</strong> offers the best value and multilingual lip-sync, from roughly $7/month.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Pika</strong> is best for fast stylized social clips, from $8/month. And <strong>Luma Dream Machine</strong> offers the best multi-model bundle, from $30/month.</p>
 </div>
-<!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Platform</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Entry Price</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Best For</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Google Veo 3.1</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$19.99/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Photorealism + native audio</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Runway Gen-4.5</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$12/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Camera control + editing workspace</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Kling AI 3.0</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">~$7/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Value + multilingual lip-sync</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Pika</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$8/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Fast, stylized social clips</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;font-weight:600;">Luma Dream Machine</td>
+      <td style="padding:10px 14px;">$30/mo</td>
+      <td style="padding:10px 14px;">Multi-model bundle</td>
     </tr>
   </tbody>
 </table>

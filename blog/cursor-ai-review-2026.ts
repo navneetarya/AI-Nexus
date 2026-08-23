@@ -15,7 +15,7 @@ const post: BlogPost = {
   seoTitle: 'Cursor AI Review 2026: Still Worth $20/mo?',
   metaDescription: 'Cursor AI reviewed for 2026: pricing, free plan, Tab completion, Composer, and Agent mode compared against GitHub Copilot. Is it worth $20/month?',
   datePublished: '2026-05-25',
-  dateModified: '2026-06-14',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '10 min read',
@@ -81,21 +81,28 @@ const post: BlogPost = {
   content: `
 <nav aria-label="Table of contents" style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#6366f1;">Table of Contents</p>
-<!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Plan</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Price</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What You Get</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Hobby (Free)</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$0</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">2,000 Tab completions/mo, 50 slow premium requests</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Pro</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$20/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Unlimited Tab completions, 500 premium model requests</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;font-weight:600;">Business</td>
+      <td style="padding:10px 14px;">$40/user/mo</td>
+      <td style="padding:10px 14px;">Enforced Privacy Mode, SSO for enterprise compliance</td>
     </tr>
   </tbody>
 </table>

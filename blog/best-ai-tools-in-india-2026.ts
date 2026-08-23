@@ -11,7 +11,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools in India 2026 — INR Pricing',
   metaDescription: 'The best AI tools available in India for 2026 — with INR pricing, free plan details, and Hindi support info. No VPN needed. See honest picks.',
   datePublished: '2026-05-08',
-  dateModified: '2026-06-14',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',
@@ -82,21 +82,38 @@ const post: BlogPost = {
 <p>Every one of these works without a dollar card, a VPN, or a hidden USD-only paywall.</p>
 <p>Every "best AI tools" roundup I've read lists prices in USD. It assumes you're paying with a US card. It doesn't mention GST once. As someone running an AI tools site from Noida, I kept getting the same questions from readers.</p>
 <p>Does this work in India? What's the actual INR price? Do I need a VPN? Can it write in Hindi?</p>
-<!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Tool</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Category</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">INR Price</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Free Plan</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Rytr</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Writing</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">~₹750/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — 10,000 chars/mo</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Grammarly</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Editing</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Free forever</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — unlimited grammar checks</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Canva AI</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Design</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">~₹333/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — limited AI credits</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;font-weight:600;">Perplexity</td>
+      <td style="padding:10px 14px;">Research</td>
+      <td style="padding:10px 14px;">Free</td>
+      <td style="padding:10px 14px;">Yes — cited answers, no VPN needed</td>
     </tr>
   </tbody>
 </table>

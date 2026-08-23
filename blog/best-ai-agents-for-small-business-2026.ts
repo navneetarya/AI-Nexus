@@ -19,7 +19,7 @@ const post: BlogPost = {
     { url: 'https://docs.n8n.io/', label: 'n8n documentation — self-hosting and workflow setup' },
   ],
   datePublished: '2026-06-11',
-  dateModified: '2026-06-19',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '10 min read',
@@ -81,21 +81,38 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Four platforms lead the way for small businesses in 2026. <strong>Lindy.ai</strong> is best for non-technical owners, handling email, scheduling, and lead qualification from ~$20/mo. <strong>Relevance AI</strong> is best for custom, easy-to-check agent workflows, from $19/mo.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Make.com</strong> is the best automation-native option with AI modules, from $9/mo. <strong>n8n</strong> is best for technical teams and is free to self-host. Eight platforms are compared below on autonomy level, pricing, and fit for SMBs.</p>
 </div>
-<!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Platform</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Free Plan</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Entry Price</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Best For</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Focus on your main use case, budget limit, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Lindy.ai</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">No — 7-day trial only</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">~$20/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Non-technical owners — email & scheduling</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Relevance AI</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — 100 credits/day</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$19/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Auditable, custom agent workflows</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Make.com</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — 1,000 ops/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$9/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Automation-native teams adding AI</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;font-weight:600;">n8n</td>
+      <td style="padding:10px 14px;">Yes — free self-hosted</td>
+      <td style="padding:10px 14px;">Free (self-host)</td>
+      <td style="padding:10px 14px;">Technical teams wanting full control</td>
     </tr>
   </tbody>
 </table>

@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'AI Agents vs AI Automation (2026): The Real Difference',
   metaDescription: 'AI agents and AI automation are not the same thing. One follows rules; the other reasons. Here is the clearest explanation of the difference — and when to use each.',
   datePublished: '2026-06-19',
-  dateModified: '2026-06-19',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '10 min read',
@@ -66,21 +66,26 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>AI automation</strong> follows rules: trigger → action. If a form is submitted, send a welcome email. <strong>AI agents</strong> pursue goals: given an objective, plan and execute the steps needed to reach it, adapting when intermediate results change.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The confusion between these two categories is expensive. Most tasks sold as "agent use cases" are more reliably and cheaply solved with well-configured automation. But when inputs are variable and multi-step decision-making is required, automation hits its ceiling fast and agents become the right tool.</p>
 </div>
-<!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Category</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Execution Model</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Best For</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Example Platforms</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">AI Automation</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Fixed trigger → action, deterministic</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Predictable, high-volume workflows</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Zapier, Make.com, Activepieces</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;font-weight:600;">AI Agents</td>
+      <td style="padding:10px 14px;">Goal-driven reasoning, adapts at each step</td>
+      <td style="padding:10px 14px;">Variable inputs, multi-step decisions</td>
+      <td style="padding:10px 14px;">Lindy.ai, Relevance AI, n8n (AI Agent node)</td>
     </tr>
   </tbody>
 </table>

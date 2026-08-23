@@ -15,7 +15,7 @@ const post: BlogPost = {
   seoTitle: 'ChatGPT Atlas vs Comet vs Dia: Which AI Browser in 2026?',
   metaDescription: "ChatGPT Atlas, Perplexity Comet, and Dia tested head-to-head — including the security risks most reviews leave out. Here's which AI browser to install.",
   datePublished: '2026-07-21',
-  dateModified: '2026-07-21',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '10 min read',
@@ -82,22 +82,32 @@ const post: BlogPost = {
   content: `
 <nav aria-label="Table of contents" style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#6366f1;">Table of Contents</p>
-<!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Browser</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Price</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Best For</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">ChatGPT Atlas</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Free browsing; Agent Mode needs Plus ($20/mo)</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Task automation for existing ChatGPT Plus users</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Perplexity Comet</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Free (core features)</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Research-heavy work with citations</td>
     </tr>
+    <tr>
+      <td style="padding:10px 14px;font-weight:600;">Dia</td>
+      <td style="padding:10px 14px;">Free tier; Dia Pro $20/mo</td>
+      <td style="padding:10px 14px;">Mac-only, personal-assistant feel</td>
+    </tr>
+  </tbody>
+</table>
+</div>
   </tbody>
 </table>
 </div>

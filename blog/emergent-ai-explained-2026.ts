@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'What Is Emergent AI? Emergent Abilities Explained 2026',
   metaDescription: 'Emergent AI explained in plain English — real examples, the "mirage" research debate, and what emergent behavior in AI agents means for your workflow in 2026.',
   datePublished: '2026-07-23',
-  dateModified: '2026-07-23',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '12 min read',
@@ -29,21 +29,23 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://perplexity.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity's Frontier Reasoning Free →</a>
 </div>
-<!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Position</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Core Claim</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Status in 2026</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Emergent abilities (2022 Google/DeepMind)</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Capabilities appear suddenly in larger models, absent in smaller versions</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Widely cited, actively debated</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;font-weight:600;">"Mirage" rebuttal (2023 Stanford)</td>
+      <td style="padding:10px 14px;">Apparent jumps are partly a scoring/metric artifact, not a true capability discontinuity</td>
+      <td style="padding:10px 14px;">Influential, but does not fully settle the debate</td>
     </tr>
   </tbody>
 </table>

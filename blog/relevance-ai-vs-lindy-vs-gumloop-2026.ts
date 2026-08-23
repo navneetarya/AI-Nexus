@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Relevance AI vs Lindy vs Gumloop (2026): Which Wins?',
   metaDescription: 'Relevance AI vs Lindy vs Gumloop compared on pricing, architecture, and fit. Verified July 2026 — includes Lindy\'s dropped free tier.',
   datePublished: '2026-07-03',
-  dateModified: '2026-07-03',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '11 min read',
@@ -64,17 +64,29 @@ const post: BlogPost = {
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Platform</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Free Plan</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Entry Paid Price</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Best For</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Relevance AI</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — 200 Actions/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$19/mo (Pro)</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Auditable multi-agent teams (sales/ops)</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Lindy</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">No — 7-day trial only</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$49.99/mo (Plus)</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Fastest setup — inbox and scheduling</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;font-weight:600;">Gumloop</td>
+      <td style="padding:10px 14px;">Yes — 5,000 credits/mo</td>
+      <td style="padding:10px 14px;">$37/mo (Pro)</td>
+      <td style="padding:10px 14px;">Node-based AI data pipelines</td>
     </tr>
   </tbody>
 </table>

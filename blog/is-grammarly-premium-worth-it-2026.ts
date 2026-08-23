@@ -11,7 +11,7 @@ const post: BlogPost = {
   seoTitle: 'Is Grammarly Premium Worth It 2026? — Honest Verdict',
   metaDescription: 'Is Grammarly Premium worth $12/month in 2026? We analysed 400+ reviews and compared it to 5 alternatives. See the honest verdict and answer.',
   datePublished: '2026-05-16',
-  dateModified: '2026-06-14',
+  dateModified: '2026-08-23',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '7 min read',
@@ -87,21 +87,28 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<!-- ai-nexus:early-comparison-table -->
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Quick Comparison</th>
-    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">What To Check First</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Plan</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Price</th>
+    <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Best For</th>
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best-fit option</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Prioritize your primary use case, budget ceiling, and integration needs</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Free</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$0</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Grammar, spelling, basic punctuation</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;">Final shortlist</td>
-      <td style="padding:10px 14px;">Compare pricing tiers, limits, and support quality before committing</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Premium</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$12/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Tone detection, full-sentence rewrites, plagiarism checker</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px;font-weight:600;">Business</td>
+      <td style="padding:10px 14px;">Higher per-seat rate</td>
+      <td style="padding:10px 14px;">Teams of 3+ writers needing shared style guides</td>
     </tr>
   </tbody>
 </table>
