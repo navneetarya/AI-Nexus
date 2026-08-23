@@ -494,7 +494,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "n8n vs Make vs Zapier (2026): Which Scales Best?",
     "metaDescription": "Independent pricing, AI capability, and workflow analysis of n8n, Make, and Zapier. Which automation platform wins for AI-first workflows in 2026?",
     "datePublished": "2026-06-20",
-    "dateModified": "2026-06-20",
+    "dateModified": "2026-08-23",
     "author": "Navneet Arya",
     "category": "Productivity",
     "readTime": "12 min read",

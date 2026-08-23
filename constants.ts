@@ -1893,6 +1893,155 @@ export const TOOLS: Tool[] = [
     ],
   },
 
+  // PRODUCTIVITY (automation platforms — added August 2026)
+  {
+    id: 'p9', slug: 'n8n',
+    name: 'n8n', tagline: 'AI-native, self-hostable workflow automation with the deepest MCP support of any platform',
+    description: 'n8n is a workflow automation platform built around a fundamentally different economics model: the Community Edition is free and self-hosted, with no per-execution charge at all, while n8n Cloud offers managed hosting from roughly €20/month. It bills by the execution (one whole workflow run, regardless of step count) rather than per task or per step, which keeps costs flat as workflows grow more complex. n8n also ships the deepest Model Context Protocol implementation of any automation platform — an MCP Client node, an MCP Server Trigger node, and a first-party instance-level server that can build and publish entire workflows from a plain-English prompt — plus a native AI Agent node with tool use and memory built directly into the visual editor.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://n8n.io/', // n8n runs a self-serve affiliate program (30% commission, 12 months) at n8n.io/affiliates — application/approval pending, replace once live
+    iconName: 'GitBranch', color: '#EA4B71', accentColor: '#D63A5F',
+    userBadge: 'Deepest AI-native automation', pricing: 'Free (self-hosted) + ~€20–50/month (Cloud)', bestFor: 'Technical teams building AI agent workflows who want execution-based pricing that stays flat at scale',
+    notForYou: 'Anyone with zero developer resources who needs something live today — Zapier is the faster starting point by a wide margin. Also reconsider if you need thousands of pre-built one-click integrations out of the box; n8n ships a few hundred official nodes versus Zapier\'s 8,000+, compensating with a generic HTTP Request node and custom code rather than native connectors. Self-hosting the Community Edition also means you own uptime, updates, and Docker/server administration — real ongoing work, not a one-time setup cost.',
+    lastTestedISO: '2026-08-23',
+    researchSources: {
+      g2: { rating: 4.7, count: 301 },
+      reddit: 'Strongly positive on flexibility and value — reviewers consistently cite the self-hosted Community Edition\'s near-zero cost and the ability to mix deterministic nodes with custom JavaScript/Python as the standout strengths; the recurring criticism across G2 and Capterra is a steep learning curve for anyone unfamiliar with APIs or advanced branching logic, and debugging complex multi-node workflows taking real time',
+      lastVerified: '2026-08-23',
+    },
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free forever if self-hosted (Community Edition) — no execution limit, no time cap, run it on any VPS',
+      paid: 'Cloud Starter ~₹1,750/month + GST (at €20/month); Cloud Pro ~₹4,400/month + GST (at €50/month)',
+      note: 'Self-hosting is the standout option for India-based users specifically: a $5/month VPS (widely available from Indian providers in INR) removes per-execution billing entirely. n8n Cloud is billed in EUR via international card, with no confirmed UPI support as of August 2026.',
+    },
+    updateLog: [
+      { date: 'August 2026', note: 'Tool entry created. Pricing and architecture verified against n8n\'s own documentation and the site\'s existing n8n vs Make vs Zapier comparison post: free self-hosted Community Edition (no execution cap), Cloud Starter €20/month, Cloud Pro €50/month, custom Enterprise pricing. G2 rating confirmed at 4.7/5 from 301 verified reviews on n8n GmbH\'s official G2 seller page (a G2 head-to-head comparison page separately showed 4.8/5 from 219 reviews — both figures are cited here for transparency since G2\'s review counts update continuously).' },
+    ],
+    features: [
+      'Free, self-hosted Community Edition with no execution limit and no per-run charge',
+      'Deepest MCP implementation of any automation platform — Client node, Server Trigger node, and a first-party instance-level server that builds workflows from a prompt',
+      'Native AI Agent node with tool use, conversational memory, and LangChain integration built into the visual editor',
+      'Generic HTTP Request node plus custom JavaScript/Python code steps that can call any API with a public endpoint',
+      'Execution-based billing on Cloud — one workflow run counts as one unit regardless of step count',
+    ],
+    pros: [
+      'Free self-hosted Community Edition removes per-execution cost entirely — often the cheapest option of any major automation platform at real volume',
+      'Deepest MCP support available anywhere, including the ability for an AI assistant to author new workflow logic from a plain-English prompt, not just trigger existing automations',
+      'Native AI Agent node gives genuine tool-use and memory inside a workflow step, rather than a single LLM API call',
+      'Execution-based pricing on Cloud doesn\'t penalize complex, multi-step workflows the way Zapier\'s task-based model does',
+    ],
+    cons: [
+      'Steepest learning curve of the three major automation platforms — real comfort with APIs, webhooks, and branching logic is expected',
+      'Only a few hundred official pre-built integrations versus Zapier\'s 8,000+, so niche SaaS connections often require manual HTTP Request configuration',
+      'Self-hosting shifts real ongoing work onto your team — server provisioning, Docker/Kubernetes setup, SSL, and monthly maintenance, not just a one-time install',
+      'Debugging failures across many interconnected nodes can take real time, especially with inconsistent third-party API responses',
+    ],
+    pricingBreakdown: [
+      { tier: 'Community Edition (self-hosted)', price: 'Free', highlight: 'No execution limit, no time cap — you provide the server (a $5/month VPS is typically enough)' },
+      { tier: 'Cloud Starter', price: '€20/month', highlight: 'Managed hosting, no server administration required' },
+      { tier: 'Cloud Pro', price: '€50/month', highlight: 'Higher execution volume and additional collaboration features' },
+      { tier: 'Enterprise', price: 'Custom', highlight: 'SSO, advanced access control, dedicated support' },
+    ],
+  },
+  {
+    id: 'p10', slug: 'make',
+    name: 'Make', tagline: 'Visual, node-based automation with the best power-to-price ratio for moderate-complexity workflows',
+    description: 'Make (formerly Integromat) is a visual, no-code automation platform that bills by the operation — each module run inside a scenario — rather than Zapier\'s per-task model, which typically delivers a significantly higher usable allowance for a comparable monthly fee. The free plan includes 1,000 operations/month, and the Core plan runs roughly $9/month for 10,000 operations. Make ships an official first-party MCP server that lets AI systems run existing scenarios and manage account contents, plus pre-built AI-integrated modules for OpenAI, Anthropic, and Google AI that drop into any scenario for classification, summarization, or generation at a specific step.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://www.make.com/en/register?pc=navneet', // Live affiliate link
+    iconName: 'Layers', color: '#6D00CC', accentColor: '#5800A3',
+    userBadge: 'Best power-to-price for branching workflows', pricing: 'Free (1,000 ops/mo) + ~$9–$16+/month (Core, Pro)', bestFor: 'Teams that have outgrown Zapier\'s lower tiers and need real branching logic without the overhead of self-hosting',
+    notForYou: 'Anyone who wants the single largest app library available — Zapier\'s 8,000+ pre-built connectors still outnumber Make\'s. Also reconsider if your workflows need genuine AI agent behavior (autonomous, multi-step reasoning with tool use); Make offers AI-integrated modules you drop into a scenario, not a dedicated reasoning/agent node the way n8n does — the execution path around those modules is still entirely human-designed.',
+    lastTestedISO: '2026-08-23',
+    researchSources: {
+      g2: { rating: 4.6, count: 270 },
+      reddit: 'Consistently positive on setup speed and affordability — reviewers repeatedly describe getting a working scenario live within minutes and highlight the catalog of off-the-shelf integrations as covering the large majority of mainstream business tools; the most common critique is a smaller native integration library than Zapier, with HTTP/webhook modules needed to fill gaps for less common services',
+      lastVerified: '2026-08-23',
+    },
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free forever (1,000 operations/month, enough for light testing or a handful of simple scenarios)',
+      paid: 'Core ~₹750/month + GST (at $9/month) — the lowest entry-level paid price of the three major automation platforms reviewed on this site',
+      note: 'Billed in USD via international card — no confirmed INR billing or UPI support as of August 2026. Make\'s operation-based pricing tends to deliver more usable volume per rupee than Zapier\'s task-based tiers at comparable spend.',
+    },
+    updateLog: [
+      { date: 'August 2026', note: 'Tool entry created. Pricing and architecture verified against Make\'s own pricing page and the site\'s existing n8n vs Make vs Zapier comparison post: Free (1,000 ops/month), Core ~$9/month (10,000 ops), higher Pro/Teams tiers available, Enterprise custom. G2 rating confirmed at 4.6/5 from 270 reviews via G2\'s head-to-head comparison pages as of August 2026.' },
+    ],
+    features: [
+      'Visual, node-based scenario builder with real branching logic, not just linear trigger-action chains',
+      'Operation-based billing (per module run) that typically delivers a higher usable allowance than Zapier\'s task-based pricing at a comparable price point',
+      'Official first-party MCP server (documented at developers.make.com) letting AI systems run existing scenarios and manage account contents via OAuth or an MCP token',
+      'Pre-built AI-integrated modules for OpenAI, Anthropic, and Google AI services, droppable into any scenario step',
+      'Substantial native integration library covering the large majority of mainstream business tools, with HTTP/webhook modules for the rest',
+    ],
+    pros: [
+      'Best power-to-price ratio of the three major platforms for workflows with real branching logic or moderate-to-high volume',
+      'Operation-based pricing is widely regarded as more generous than Zapier\'s task-based model — often 60–80% cheaper at comparable volume',
+      'Genuinely fast onboarding — multiple independent reviews cite getting a working scenario live within minutes',
+      'Official, supported first-party MCP server, not a community workaround, for AI systems to run existing scenarios',
+    ],
+    cons: [
+      'No dedicated AI agent/reasoning node — AI capability is limited to pre-built modules dropped into a still-entirely-human-designed execution path',
+      'Smaller native integration library than Zapier\'s 8,000+, requiring HTTP/webhook modules for less mainstream services',
+      'No self-hosting option, unlike n8n — you\'re dependent on Make\'s cloud infrastructure and uptime',
+      'Support quality is solid but live chat is more limited on lower tiers compared to Zapier\'s more mature support infrastructure',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '1,000 operations/month' },
+      { tier: 'Core', price: '~$9/month (annual)', highlight: '10,000 operations/month' },
+      { tier: 'Pro / Teams', price: 'Higher tiers, ~$16+/month', highlight: 'Increased operation allowance, added collaboration and priority execution features' },
+      { tier: 'Enterprise', price: 'Custom', highlight: 'Custom volume, dedicated support, advanced governance' },
+    ],
+  },
+  {
+    id: 'p11', slug: 'zapier',
+    name: 'Zapier', tagline: 'The largest app library and the fastest onboarding for non-technical teams',
+    description: 'Zapier is the longest-established of the major automation platforms, built around raw integration breadth — roughly 8,000+ pre-built app connections, the largest of any platform in this category — and the gentlest learning curve, with a linear trigger-action builder that gets non-technical users live in minutes. It bills by the task (every action step in a Zap, each time it runs), which is straightforward at low volume but escalates quickly for multi-step or high-volume workflows. Genuine AI agent behavior — autonomous, multi-step reasoning rather than a single LLM-assisted step — lives in a separate product, Zapier Agents, launched in late 2024, sitting alongside rather than inside the classic Zap builder. Zapier MCP exposes its full app catalog to any MCP-compatible AI host.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://zapier.com/', // No standard blogger affiliate program confirmed as of August 2026 — Zapier's referral paths run through its Solution Partner / Experts program instead, which is oriented at consultants and agencies, not content sites
+    iconName: 'Zap', color: '#FF4A00', accentColor: '#E23F00',
+    userBadge: 'Fastest onboarding, largest app library', pricing: 'Free (~100 tasks/mo) + $19.99+/month (Starter, Professional, Team)', bestFor: 'Non-technical teams who need to be live today, with simple, low-to-moderate volume workflows',
+    notForYou: 'Anyone running high-volume or multi-step workflows on a budget — task-based billing means a 5-action Zap burns 5 tasks per run, so a 750-task Starter allowance can be exhausted in as few as 150 runs of a moderately complex workflow. Also reconsider if you need genuine AI agent reasoning inside your core automation; that capability sits in the separate Zapier Agents product, not the classic Zap builder most users interact with day to day.',
+    lastTestedISO: '2026-08-23',
+    researchSources: {
+      g2: { rating: 4.5, count: 1806 },
+      reddit: 'Very high overall satisfaction with a consistent split — reviewers overwhelmingly praise ease of use, the drag-and-drop Trigger → Action logic, and the unmatched app library, with roughly three-quarters of G2 reviewers giving 5 stars; the recurring and specific criticism is cost, with users reporting the task-based model escalating into $500–$2,000/month in overages once volume passes roughly 100,000 tasks/month',
+      lastVerified: '2026-08-23',
+    },
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free forever (~100 tasks/month, single-step Zaps only)',
+      paid: 'Starter ~₹1,650/month + GST (at $19.99/month, annual billing, ~750 tasks, unlocks multi-step Zaps)',
+      note: 'Billed in USD via international card — no confirmed INR billing or UPI support as of August 2026. Of the three major platforms reviewed on this site, Zapier\'s task-based pricing is the most expensive at real multi-step volume — model your actual workflow\'s task consumption before committing to a tier.',
+    },
+    updateLog: [
+      { date: 'August 2026', note: 'Tool entry created. Pricing and architecture verified against Zapier\'s own pricing page and the site\'s existing n8n vs Make vs Zapier comparison post: Free (~100 tasks/month, single-step only), Starter $19.99/month (~750 tasks, multi-step unlocked), Professional and Team tiers scale from there, Enterprise custom. G2 rating confirmed at 4.5/5 from 1,806 reviews via G2\'s head-to-head comparison pages as of August 2026 — the largest verified review base of any tool on this site.' },
+    ],
+    features: [
+      'Largest integration catalog of any automation platform in this comparison — roughly 8,000+ pre-built app connections',
+      'Linear, trigger-action Zap builder — the gentlest learning curve and fastest time-to-first-automation of the three major platforms',
+      'Zapier MCP exposes the full app catalog to any MCP-compatible AI host, letting an AI assistant trigger any action a human could configure in a Zap',
+      'Zapier Agents — a separate product for autonomous, multi-step AI agent behavior distinct from classic rule-based Zaps',
+      'The most mature support infrastructure of the three platforms, including live chat on paid plans',
+    ],
+    pros: [
+      'Fastest onboarding of any major automation platform — non-technical users routinely ship a working automation in under 15 minutes',
+      'Largest app library by a wide margin, minimizing the chance of hitting an unsupported integration',
+      'Most mature support and documentation ecosystem, backed by the largest third-party tutorial community',
+      'Zapier MCP gives any MCP-compatible AI assistant access to the full 8,000+ app catalog without custom integration work',
+    ],
+    cons: [
+      'Task-based pricing punishes multi-step and high-volume workflows specifically — the same automation can cost roughly 8–10x more on Zapier than on Make at meaningful volume',
+      'No dedicated AI agent/reasoning node inside the core product — genuine agent behavior requires the separate Zapier Agents product',
+      'No self-hosting option and the least favorable unit economics at scale of the three major platforms',
+      'Reviewers consistently flag debugging complexity once a Zap library grows large enough that it becomes unclear why a given automation triggered',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '~100 tasks/month, single-step Zaps only' },
+      { tier: 'Starter', price: '$19.99/month (annual)', highlight: '~750 tasks/month, multi-step Zaps unlocked' },
+      { tier: 'Professional / Team', price: '$69–$100+/month', highlight: 'Higher task volume, team collaboration, premium app access' },
+      { tier: 'Enterprise', price: 'Custom', highlight: 'Custom volume, SSO, advanced admin controls' },
+    ],
+  },
+
   // IMAGE
   {
     id: 'i4', slug: 'midjourney',
@@ -2294,6 +2443,28 @@ Object.assign(TOOL_FAQS, {
     { q: 'Is Gumloop good for non-technical users?', a: 'Yes for straightforward flows — reviewers consistently describe the drag-and-drop canvas as more pleasant and intuitive than older tools like n8n. The learning curve shows up once workflows get more complex: understanding all the node types and conditional logic can take a few weeks to feel comfortable with, per G2 and Reddit feedback.' },
     { q: 'How mature is Gumloop compared to Relevance AI and Lindy?', a: 'Gumloop is the newest and least-reviewed of the three, with just 6 verified G2 reviews (4.8/5) as of mid-2026 — a genuinely good early signal, but too small a sample to treat with the same confidence as Lindy\'s 170+ reviews. It\'s also the smallest by native integration count. What it offers in exchange is the strongest fit of the three for structured, multi-stage AI data pipelines.' },
   ],
+  // Added August 2026 — n8n / Make / Zapier automation cluster
+  n8n: [
+    { q: 'Is n8n really free?', a: 'Yes, if you self-host. The Community Edition is free with no execution limit and no time cap — you run it on your own server, and a $5/month VPS is enough for moderate use. The tradeoff is that server administration (updates, uptime, Docker/Kubernetes setup) becomes your responsibility. n8n Cloud, the managed alternative that removes that burden, starts at roughly €20/month.' },
+    { q: 'How does n8n\'s pricing compare to Make and Zapier?', a: 'n8n bills by the execution — one whole workflow run counts as one unit regardless of how many steps it contains — which is the opposite of Zapier\'s per-task-step penalty. A 10-step workflow running 10,000 times costs the same on n8n as a 2-step workflow running 10,000 times. Combined with free self-hosting, this makes n8n frequently the cheapest option of the three at real production volume, though n8n Cloud\'s €20–50/month tiers land in a similar range to Make when you\'d rather not self-host.' },
+    { q: 'What makes n8n\'s AI support different from Zapier or Make?', a: 'n8n ships the deepest Model Context Protocol implementation of the three: an MCP Client node, an MCP Server Trigger node, and — since April 2026 — a first-party instance-level MCP server that lets an AI assistant build, validate, and publish an entire n8n workflow directly from a plain-English prompt. It also has a native AI Agent node with tool use, memory, and LangChain integration built into the visual editor, rather than a single LLM-call step. See our full <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier comparison</a> for the full architecture breakdown.' },
+    { q: 'Can n8n replace Zapier?', a: 'For most workflows, yes. n8n can replicate the large majority of what a typical Zapier user builds, and goes further with self-hosting, custom code nodes, and native AI agent capability that Zapier\'s classic Zaps don\'t offer. The tradeoff is setup complexity — n8n workflows generally need to be rebuilt rather than imported, and teams with zero technical resources will feel the learning curve immediately. Budget one to two weeks to migrate an established 30-Zap account.' },
+    { q: 'Who should not use n8n?', a: 'Teams with no developer on staff who need something working today. n8n has the steepest learning curve of the three major automation platforms, ships only a few hundred official pre-built integrations (versus Zapier\'s 8,000+), and self-hosting requires real comfort with Docker or server administration. For that profile, Zapier remains the faster starting point.' },
+  ],
+  make: [
+    { q: 'Is Make.com cheaper than Zapier?', a: 'Yes, generally. Zapier charges per task (each action step in a Zap, every time it runs), which punishes multi-step or high-volume workflows. Make charges per operation (each module run) and is widely regarded as more generous at comparable price points — Make\'s Core plan runs roughly $9/month for 10,000 operations, while a similar volume on Zapier\'s task-based pricing typically costs significantly more. The gap widens further at scale, with Make often landing 60–80% cheaper than the equivalent Zapier tier.' },
+    { q: 'Does Make support AI natively?', a: 'Make offers pre-built AI-integrated modules for OpenAI, Anthropic, and Google AI that you drop into any scenario step to classify, summarize, or generate content — but it doesn\'t have a dedicated AI reasoning/agent node the way n8n does. The execution path around those modules stays entirely human-designed. Make does ship an official first-party MCP server, letting AI systems run existing scenarios and manage account contents via OAuth or an MCP token.' },
+    { q: 'Is Make good for non-technical users?', a: 'Yes — multiple independent reviews cite getting a working scenario live within minutes of signing up, and the visual, drag-and-drop builder doesn\'t require code for the large majority of use cases. The learning curve is moderate: more powerful than Zapier\'s linear builder, but still meaningfully easier than n8n\'s node-and-code approach.' },
+    { q: 'How does Make compare to n8n and Zapier?', a: 'Make sits in the middle of the three: more powerful and better-priced than Zapier for workflows with real branching logic, but without n8n\'s self-hosting option or native AI agent node. It\'s the consistent recommendation for teams that have outgrown Zapier\'s lower tiers but aren\'t ready to manage a self-hosted platform. Full breakdown in our <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier comparison</a>.' },
+    { q: 'Does Make have an affiliate or referral program?', a: 'Yes. This site is a participant in Make\'s affiliate program — links to Make on AI Nexus may earn a commission at no extra cost to you. See our <a href="/disclosure/">affiliate disclosure</a> for details.' },
+  ],
+  zapier: [
+    { q: 'How does Zapier\'s task-based pricing actually work?', a: 'Every action step in a Zap consumes one task, each time the Zap runs. A 1-trigger, 4-action Zap consumes 4 tasks per run — so a 750-task Starter allowance ($19.99/month) can be exhausted in as few as 150 runs of a moderately complex workflow. This is the core reason Zapier gets expensive fast at real volume: the pricing model penalizes both complexity and volume simultaneously, unlike Make\'s per-operation or n8n\'s per-execution billing.' },
+    { q: 'Does Zapier support AI agents?', a: 'Genuine autonomous AI agent behavior lives in a separate product, Zapier Agents, launched in late 2024 — distinct from the classic Zap builder most users interact with day to day. Classic Zaps remain deterministic, rule-based automation that can optionally call an LLM at a given step. Zapier MCP separately exposes Zapier\'s full ~8,000+ app catalog to any MCP-compatible AI host, letting an assistant trigger any action a human could configure in a Zap.' },
+    { q: 'Why is Zapier still worth using if it\'s the most expensive option?', a: 'Because for non-technical teams with simple, low-volume workflows, the task-based pricing penalty never gets large enough to matter, and Zapier\'s roughly 8,000+ pre-built app connections plus the gentlest learning curve of the three platforms mean the fastest path from zero to a working automation — often under 15 minutes. The cost problem is specifically a multi-step, high-volume problem, not a universal one.' },
+    { q: 'How does Zapier compare to Make and n8n?', a: 'Zapier wins on raw app breadth and onboarding speed; it loses on unit economics the moment workflows get complex or run at real volume. Make delivers better value for moderate branching workflows, and n8n is cheaper still at scale (especially self-hosted) with deeper native AI-agent capability. See the full <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier comparison</a> for a worked cost example across all three.' },
+    { q: 'Does Zapier have an affiliate program for bloggers?', a: 'Not a standard, easy-to-join blogger affiliate program as of August 2026 — Zapier\'s referral paths run primarily through its Solution Partner and Experts programs, which are oriented at consultants and implementation agencies rather than content or review sites. Some third-party affiliate networks list Zapier commissions, but terms are inconsistent and unconfirmed directly with Zapier; always verify current terms at zapier.com/partners before relying on them.' },
+  ],
 });
 
 // ── Comparison tables per tool ─────────────────────────────────────────────
@@ -2370,6 +2541,25 @@ export const TOOL_COMPARISONS: Record<string, Array<{
     { name: 'n8n', price: 'Free (self-host)–$50/mo', freeplan: true, bestFor: 'Self-hosted, complex branching logic', ourPick: false },
     { name: 'Make', price: 'Free–$29/mo', freeplan: true, bestFor: 'Cheaper visual automation, less AI-native', ourPick: false },
   ],
+  n8n: [
+    { name: 'n8n', price: 'Free (self-host)–€50/mo', freeplan: true, bestFor: 'AI-native, execution-based pricing, deepest MCP support', ourPick: true },
+    { name: 'Make', price: 'Free–$9+/mo', freeplan: true, bestFor: 'Best power-to-price for branching workflows', ourPick: false },
+    { name: 'Zapier', price: 'Free–$19.99+/mo', freeplan: true, bestFor: 'Largest app library, fastest onboarding', ourPick: false },
+    { name: 'Relevance AI', price: 'Free–$349/mo', freeplan: true, bestFor: 'Multi-agent orchestration', ourPick: false },
+    { name: 'Gumloop', price: 'Free–$37/mo', freeplan: true, bestFor: 'Node-based AI data pipelines', ourPick: false },
+  ],
+  make: [
+    { name: 'Make', price: 'Free–$9+/mo', freeplan: true, bestFor: 'Best power-to-price for branching workflows', ourPick: true },
+    { name: 'n8n', price: 'Free (self-host)–€50/mo', freeplan: true, bestFor: 'AI-native, cheapest at high volume', ourPick: false },
+    { name: 'Zapier', price: 'Free–$19.99+/mo', freeplan: true, bestFor: 'Largest app library, fastest onboarding', ourPick: false },
+    { name: 'Gumloop', price: 'Free–$37/mo', freeplan: true, bestFor: 'Node-based AI data pipelines', ourPick: false },
+  ],
+  zapier: [
+    { name: 'Zapier', price: 'Free–$19.99+/mo', freeplan: true, bestFor: 'Largest app library, fastest onboarding', ourPick: true },
+    { name: 'Make', price: 'Free–$9+/mo', freeplan: true, bestFor: 'Cheaper, better for branching workflows', ourPick: false },
+    { name: 'n8n', price: 'Free (self-host)–€50/mo', freeplan: true, bestFor: 'Cheapest at scale, AI-native, self-hostable', ourPick: false },
+    { name: 'Relevance AI', price: 'Free–$349/mo', freeplan: true, bestFor: 'Multi-agent orchestration', ourPick: false },
+  ],
 };
 
 Object.assign(TOOL_COMPARISONS, {
@@ -2426,6 +2616,9 @@ export const TOOL_KEYWORDS: Record<string, string[]> = {
   'relevance-ai': ['relevance ai review', 'relevance ai vs lindy', 'relevance ai vs gumloop', 'best multi agent ai builder 2026', 'relevance ai pricing 2026'],
   lindy: ['lindy ai review', 'lindy ai vs relevance ai', 'lindy free plan 2026', 'best ai executive assistant 2026', 'lindy ai pricing'],
   gumloop: ['gumloop review', 'gumloop vs zapier', 'gumloop vs relevance ai', 'best ai workflow automation 2026', 'gumloop pricing 2026'],
+  n8n: ['n8n review', 'n8n vs zapier', 'n8n vs make', 'n8n pricing 2026', 'n8n self hosted free', 'is n8n free'],
+  make: ['make.com review', 'make vs zapier', 'make vs n8n', 'make.com pricing 2026', 'integromat review'],
+  zapier: ['zapier review', 'zapier vs make', 'zapier vs n8n', 'zapier pricing 2026', 'zapier task pricing explained'],
 };
 
 // ── Week 1: TOOL_KEYWORDS for Cursor + Lovable ────────────────────────────

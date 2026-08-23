@@ -577,6 +577,39 @@ const TOOLS = [
     reviewBody: "Gumloop is a drag-and-drop, node-based automation canvas — closer to an AI-native successor to Zapier or Make than to a chat-based assistant. AI calls (GPT, Claude, Gemini) are first-class node types alongside scraping, API calls, and data transforms, making it the strongest of the major agent/automation builders for structured, multi-stage work: scrape a source, summarize with AI, pull structured fields, write to a database. The Free plan (5,000 credits/month, 1 seat, 1 active trigger, 2 concurrent runs) is genuinely usable for real workflows, and Pro at $37/month adds 20,000+ credits, unlimited seats, and one hosted MCP server for standardized external-tool access without a dedicated connector per app. Reviews are strongly positive but the sample is thin — Gumloop holds 4.8/5 from just 6 verified G2 reviews and 4.8/5 from 144 Product Hunt reviews as of August 2026 — with reviewers consistently praising the visual builder as more intuitive than older tools like n8n, alongside fast, responsive support. The recurring criticism is a genuine learning curve once workflows move past simple flows: understanding the full node system and conditional logic takes real time, often described as a few weeks. A more specific cost pattern: AI-heavy and enrichment nodes (roughly 60 credits per contact) consume credits considerably faster than simple data-moving steps, meaning the 5,000-credit free-tier headline is optimistic for AI-heavy use cases specifically — bringing your own API key on Pro cuts that cost by roughly 95%. Gumloop is the right pick for teams whose AI job looks like ETL — scraping, enrichment, structured output — rather than a conversation; for that, it's a stronger fit than Lindy's assistant model or Relevance AI's multi-agent framework, though it has the smallest native integration count (roughly 125 apps) of the three.",
   },
 
+  // PRODUCTIVITY — automation platforms, added August 2026. Same 404-to-Googlebot
+  // risk as the agent-builder cluster above if these entries are skipped.
+  {
+    slug: 'n8n', name: 'n8n', category: 'Productivity',
+    tagline: 'AI-native, self-hostable workflow automation with the deepest MCP support of any platform',
+    description: 'n8n bills by the execution rather than per task or step, and the Community Edition is free and self-hosted with no execution limit. n8n Cloud starts at roughly €20/month. It ships the deepest MCP implementation of any automation platform plus a native AI Agent node with tool use and memory.',
+    pricing: 'Free (self-hosted) + ~€20–50/month (Cloud)', bestFor: 'Technical teams building AI agent workflows who want execution-based pricing that stays flat at scale',
+    rating: 4.7, lastTested: 'August 2026',
+    seoTitle: 'n8n Review 2026 — Pricing, Free Self-Hosting & Is It Worth It? | AI Nexus',
+    metaDescription: 'n8n 2026: free self-hosted Community Edition, €20/month Cloud pricing, and a 4.7 G2 rating reviewed. See how it compares to Make and Zapier on cost and AI capability.',
+    reviewBody: "n8n is a workflow automation platform built around a fundamentally different economics model than Zapier or Make: the Community Edition is free and self-hosted with no per-execution charge at all, while n8n Cloud offers managed hosting from roughly €20/month (Starter) to €50/month (Pro). It bills by the execution — one whole workflow run, regardless of step count — which keeps costs flat as workflows grow more complex, the opposite of Zapier's per-action-step task penalty. n8n also ships the deepest Model Context Protocol implementation of any automation platform: an MCP Client node, an MCP Server Trigger node, and, since April 2026, a first-party instance-level server that can build and publish entire workflows from a plain-English prompt. A native AI Agent node gives a workflow step genuine LLM-driven reasoning with tool use, conversational memory, and LangChain integration built directly into the visual editor — a capability neither Make nor classic Zapier Zaps offer natively. G2 reviewers rate n8n at 4.7/5 from 301 verified reviews as of August 2026, consistently praising flexibility (mixing deterministic nodes with custom JavaScript/Python) and the free self-hosted tier's near-zero cost — one reviewer specifically cited cutting automation overhead by nearly 80% compared to Zapier. The recurring criticism is a steep learning curve: complex workflows become harder to manage as they grow, and debugging failures across many interconnected nodes takes real time, especially with inconsistent third-party API data. n8n ships only a few hundred official pre-built integrations versus Zapier's 8,000+, compensating with a generic HTTP Request node and full custom-code support that can reach almost any API. n8n is the right pick for technical teams building AI-native, execution-heavy workflows who want the lowest cost at real volume and are comfortable with the setup tradeoff; teams with zero developer resources who need something working today should start with Zapier instead.",
+  },
+  {
+    slug: 'make', name: 'Make', category: 'Productivity',
+    tagline: 'Visual, node-based automation with the best power-to-price ratio for moderate-complexity workflows',
+    description: 'Make bills by the operation rather than Zapier\'s per-task model, typically delivering a significantly higher usable allowance for a comparable fee. Free plan: 1,000 operations/month. Core plan runs roughly $9/month for 10,000 operations. Ships an official first-party MCP server.',
+    pricing: 'Free (1,000 ops/mo) + ~$9–$16+/month (Core, Pro)', bestFor: 'Teams that have outgrown Zapier\'s lower tiers and need real branching logic without self-hosting overhead',
+    rating: 4.6, lastTested: 'August 2026',
+    seoTitle: 'Make.com Review 2026 — Pricing vs Zapier & Is It Worth It? | AI Nexus',
+    metaDescription: 'Make.com 2026: $9/month Core pricing, a 1,000-operation free tier, and a 4.6 G2 rating reviewed. See why it beats Zapier on power-to-price for branching workflows.',
+    reviewBody: "Make (formerly Integromat) is a visual, no-code automation platform that bills by the operation — each module run inside a scenario — rather than Zapier's per-task model, which typically delivers a significantly higher usable allowance for a comparable monthly fee. The Free plan includes 1,000 operations/month, and the Core plan runs roughly $9/month for 10,000 operations, with Pro/Teams tiers scaling from there and custom Enterprise pricing available. Make ships an official first-party MCP server, documented at developers.make.com, letting AI systems run existing scenarios and manage account contents via OAuth or an MCP token, plus pre-built AI-integrated modules for OpenAI, Anthropic, and Google AI that drop into any scenario step for classification, summarization, or generation. G2 reviewers rate Make at 4.6/5 from 270 reviews as of August 2026, with a G2 head-to-head comparison against Relay.app specifically noting Make's affordability and wide integration range as standout strengths. Reviewers consistently describe getting a working scenario live within minutes of signing up, and the catalog of off-the-shelf integrations covers the large majority of mainstream business tools, with HTTP/webhook modules filling gaps for less common services. The most common critique is a smaller native integration library than Zapier's roughly 8,000+, and the absence of a dedicated AI reasoning/agent node — AI capability in Make stays limited to pre-built modules dropped into an otherwise human-designed execution path, unlike n8n's tool-using AI Agent node. Make is the consistent recommendation for teams that have outgrown Zapier's lower tiers but aren't ready to manage self-hosted infrastructure: same visual, no-code building experience as Zapier, at materially better unit economics — a five-step workflow running 2,000 times a month costs roughly $9/month on Make versus $69–$100+/month on Zapier.",
+  },
+  {
+    slug: 'zapier', name: 'Zapier', category: 'Productivity',
+    tagline: 'The largest app library and the fastest onboarding for non-technical teams',
+    description: 'Zapier bills per task — every action step in a Zap, each time it runs — which is straightforward at low volume but escalates quickly for multi-step or high-volume workflows. Roughly 8,000+ pre-built app connections, the largest of any automation platform. Free plan available; Starter from $19.99/month.',
+    pricing: 'Free (~100 tasks/mo) + $19.99+/month (Starter, Professional, Team)', bestFor: 'Non-technical teams who need to be live today with simple, low-to-moderate volume workflows',
+    rating: 4.5, lastTested: 'August 2026',
+    seoTitle: 'Zapier Review 2026 — Pricing, Task-Based Costs Explained | AI Nexus',
+    metaDescription: 'Zapier 2026: $19.99/month Starter pricing, 8,000+ app integrations, and a 4.5 G2 rating from 1,806 reviews. Full pricing breakdown and honest cost-at-scale verdict.',
+    reviewBody: "Zapier is the longest-established of the major automation platforms, built around raw integration breadth — roughly 8,000+ pre-built app connections, the largest of any platform in this category — and the gentlest learning curve of the three, with a linear trigger-action Zap builder that gets non-technical users live in minutes. The Free plan allows roughly 100 tasks/month on single-step Zaps only; the Starter plan at $19.99/month (annual billing) unlocks multi-step Zaps with around 750 tasks, and Professional/Team tiers run $69–$100+/month depending on volume and billing terms. The billing unit that defines Zapier's economics is the task: every action step in a Zap consumes one task, every time it runs, so a 1-trigger, 4-action Zap consumes 4 tasks per run — meaning a moderately complex workflow can exhaust a 750-task allowance in as few as 150 runs. Genuine autonomous AI agent behavior lives in a separate product, Zapier Agents, launched in late 2024, distinct from the classic rule-based Zap builder most users interact with; Zapier MCP separately exposes the full app catalog to any MCP-compatible AI host. G2 reviewers rate Zapier at 4.5/5 from 1,806 reviews as of August 2026 — the largest verified review base of any automation platform — with roughly three-quarters giving 5 stars and reviewers overwhelmingly citing ease of use and the Trigger → Action logic as standout strengths; a G2-sourced grid report separately scores Zapier at 89% for cross-system integration. The consistent, specific criticism is cost at scale: task-based billing escalating into real budget territory, with some reviewers reporting $500–$2,000/month in overages once volume passes roughly 100,000 tasks/month. Zapier is the right pick for non-technical teams with simple, low-volume workflows who need to be live today; teams with real branching logic or meaningful volume get better economics from Make, and teams with developer resources needing AI-native agent behavior at the lowest cost should evaluate n8n.",
+  },
+
   // IMAGE — 60K+/mo
   {
     slug: 'midjourney', name: 'Midjourney', category: 'Image',
@@ -4521,6 +4554,24 @@ const RELATED_LINKS = {
     ['/tools/relevance-ai/', 'Relevance AI Review'],
     ['/tools/lindy/', 'Lindy Review'],
     ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
+  ],
+  'n8n': [
+    ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: Full Comparison'],
+    ['/tools/make/', 'Make Review'],
+    ['/tools/zapier/', 'Zapier Review'],
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
+  ],
+  'make': [
+    ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: Full Comparison'],
+    ['/tools/n8n/', 'n8n Review'],
+    ['/tools/zapier/', 'Zapier Review'],
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
+  ],
+  'zapier': [
+    ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: Full Comparison'],
+    ['/tools/n8n/', 'n8n Review'],
+    ['/tools/make/', 'Make Review'],
+    ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
   ],
   // ── Writing tools ─────────────────────────────────────────────────────────
   'grammarly': [
