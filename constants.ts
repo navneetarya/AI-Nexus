@@ -1745,6 +1745,154 @@ export const TOOLS: Tool[] = [
     ],
   },
 
+  // PRODUCTIVITY (AI agent builders — added August 2026)
+  {
+    id: 'p6', slug: 'relevance-ai',
+    name: 'Relevance AI', tagline: 'Multi-agent "Tools + Agents" builder for auditable sales and ops workflows',
+    description: 'Relevance AI is a no-code platform for building multi-agent AI workflows, splitting work into "Tools" (single actions like searching a CRM or drafting outreach) and "Agents" that chain Tools together toward a goal. Several agents can share context and hand off work in sequence, which makes agent decisions auditable rather than a black box — a real advantage for sales, revenue-operations, and compliance-sensitive workflows. Pricing runs on two metered dimensions: Actions (what an agent does) and Vendor Credits (model cost, passed through with no markup), starting free at 200 Actions/month and scaling to $19/month on Pro.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://relevanceai.com/?via=navneet', // Live affiliate link since Day 1
+    iconName: 'Users', color: '#6366f1', accentColor: '#4f46e5',
+    userBadge: 'Auditable multi-agent teams', pricing: 'Free (200 Actions/mo) + $19–$349/month (Pro, Team)', bestFor: 'Sales and revenue-ops teams that need several specialized agents handing off work with a visible audit trail',
+    notForYou: 'Anyone who wants a single assistant live in an hour with zero configuration — Lindy is faster to a working agent. Also reconsider if your job looks like a data pipeline (scrape, transform, publish) rather than agent-to-agent handoffs — Gumloop\'s node canvas fits that shape better. Agency owners running many isolated client environments should note the shared-workspace model makes credential isolation harder than a dedicated multi-tenant tool.',
+    lastTestedISO: '2026-08-22',
+    researchSources: {
+      g2: { rating: 4.3, count: 20 },
+      reddit: 'Mixed-to-positive — praised for integration breadth (9,000+ tools claimed) and the Tools + Agents audit trail; recurring complaints on Reddit and G2 center on unpredictable credit/Action consumption at production volume and a real learning curve for multi-agent conditional logic',
+      lastVerified: '2026-08-22',
+    },
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free forever (200 Actions/month + one-time 1,000 Vendor Credits, no card required)',
+      paid: 'Pro ~₹1,580/month + GST (at $19/month, annual billing)',
+      note: 'Billed in USD via international card — no confirmed INR billing or UPI support as of August 2026. A forex-enabled card or a fintech prepaid card (Niyo, Scapia) avoids repeated cross-border conversion fees.',
+    },
+    updateLog: [
+      { date: 'August 2026', note: 'Tool entry created. Pricing verified against Relevance AI\'s own pricing page: Free (200 Actions/mo + 1,000 Vendor Credits once), Pro $19/month annual (2,500 Actions + $20 Vendor Credits), Team $234/month annual or $349/month monthly (7,000 Actions + $70 Vendor Credits), Enterprise custom. G2 rating confirmed at 4.3/5 from 20 reviews.' },
+    ],
+    features: [
+      '"Tools + Agents" framework — Tools perform single actions, Agents chain Tools toward a goal',
+      'Multi-agent handoff — one agent\'s output becomes the next agent\'s input, with an auditable trail',
+      'Over 9,000 claimed integration tools spanning email, calendar, CRM, and spreadsheets',
+      'Bring-your-own-API-key support on paid plans to bypass Vendor Credit markup',
+      'Vendor Credits pass through model cost with no markup layered on top',
+    ],
+    pros: [
+      'Genuine ongoing free tier (200 Actions/month) — enough to build and test a real multi-agent workflow, not just a demo',
+      'Two-layer Tools + Agents structure makes multi-step agent decisions auditable, which matters for sales, compliance, and quality control',
+      'Lowest committed monthly cost of the major multi-agent builders at $19/month',
+      'Bring-your-own-API-key on paid plans can materially cut model cost for teams already managing OpenAI/Anthropic spend directly',
+    ],
+    cons: [
+      'Multi-agent workflows with conditional logic take real configuration time — 3–6 hours to a working setup, slower than Lindy',
+      'Shared-workspace model makes credential isolation harder for agencies managing several separate client environments',
+      'Credit/Action usage can escalate sharply once workflows run at production volume, per recurring G2 and Reddit complaints',
+      'Smaller G2 review base (20 reviews) than Lindy\'s — a good early signal, but a thinner sample to judge long-term reliability from',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '200 Actions/month + one-time 1,000 Vendor Credits, no card required' },
+      { tier: 'Pro', price: '$19/month (annual)', highlight: '2,500 Actions + $20 Vendor Credits/month · bring your own API key' },
+      { tier: 'Team', price: '$234/month annual or $349/month monthly', highlight: '7,000 Actions + $70 Vendor Credits/month' },
+      { tier: 'Enterprise', price: 'Custom', highlight: 'Custom Action/credit volume, SSO, and dedicated support' },
+    ],
+  },
+  {
+    id: 'p7', slug: 'lindy',
+    name: 'Lindy', tagline: 'Natural-language "AI employee" for inbox, scheduling, and meeting prep',
+    description: 'Lindy is an AI executive-assistant platform: describe a job in plain English — manage my inbox, prep me for meetings, qualify inbound leads — and Lindy builds a working agent from that instruction, no visual builder or code required. It relaunched in February 2026 as a personal AI assistant focused on Gmail/Outlook triage, meeting scheduling, and call prep, with approvals built in so nothing sends without review. Lindy dropped its free plan during 2026\'s repricing; the only way to try it now is a 7-day trial, after which plans run from $49.99/month.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://www.lindy.ai/', // PartnerStack referral application pending approval — replace with tracked link once live
+    iconName: 'Mail', color: '#f97316', accentColor: '#ea580c',
+    userBadge: 'Fastest to a working agent', pricing: 'No free plan — 7-day trial, then $49.99–$199.99/month', bestFor: 'Solo operators and small ops teams who want a working inbox or scheduling assistant live within a couple of hours',
+    notForYou: 'Anyone who wants to test an AI agent builder before paying — Lindy\'s only ongoing free option is now Relevance AI or Gumloop, not Lindy itself. Also reconsider if your workflow needs several specialized agents handing off work to each other (Relevance AI\'s Tools + Agents model fits that better) or if predictable, published usage quotas matter to you — Lindy\'s "standard / 3x / 7x" tier multipliers aren\'t broken down into a hard number anywhere on its own pricing page.',
+    lastTestedISO: '2026-08-22',
+    researchSources: {
+      g2: { rating: 4.9, count: 170 },
+      reddit: 'Sharply split by platform rather than by user — G2\'s 4.9/5 (170+ reviews, 125 of which cite ease of use as the top strength) sits next to a roughly 1.7–2.0/5 Trustpilot score, with the negative reviews concentrated almost entirely on billing surprises, cancellation friction, and overage charges rather than core agent quality',
+      lastVerified: '2026-08-22',
+    },
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'No free plan — 7-day free trial with full Plus-tier access',
+      paid: 'Plus ~₹4,150/month + GST (at $49.99/month)',
+      note: 'Billed in USD via international card only — no confirmed INR billing or UPI support as of August 2026. This is the most expensive entry point of the major AI agent builders reviewed on this site.',
+    },
+    updateLog: [
+      { date: 'August 2026', note: 'Tool entry created. Pricing verified against Lindy\'s own pricing page: no free plan (7-day trial only), Plus $49.99/month, Pro $99.99/month (~3x usage, adds computer-use/browser automation), Max $199.99/month (~7x usage), Enterprise custom (adds SSO, SCIM, HIPAA, audit logs). G2 rating confirmed at 4.9/5 from 170+ reviews; Trustpilot rating confirmed as markedly lower, concentrated on billing complaints.' },
+    ],
+    features: [
+      'Natural-language goal setup — describe the job, Lindy builds the agent, no visual canvas required',
+      'Gmail/Outlook inbox triage with drafted replies in your voice and built-in approval before sending',
+      'Meeting prep, scheduling, and call recording/summarization (Google Meet, Zoom)',
+      'iMessage-style interface for texting your assistant directly',
+      '5,000+ claimed integrations, with deep native links to Gmail, Outlook, Calendar, Slack, and Salesforce',
+    ],
+    pros: [
+      'Fastest of the major agent builders to a working assistant — most users live within 1–3 hours from a plain-language goal',
+      'Ease of use is the single most-cited strength across 170+ G2 reviews (mentioned in 125 of them)',
+      'Deep, purpose-built integrations with the exact stack a solo operator or small ops team already runs (Gmail, Outlook, Slack, Salesforce)',
+      'Approvals built into the workflow, so agents don\'t send or act without a review step',
+    ],
+    cons: [
+      'No ongoing free plan — only a 7-day trial, the most expensive entry point among the major agent builders compared here',
+      'Trustpilot rating (~1.7–2.0/5) is dramatically lower than its G2 score, with billing and cancellation complaints appearing repeatedly and specifically',
+      'Usage quotas behind the "standard / 3x / 7x" tier multipliers are not published as hard numbers, making cost hard to estimate in advance',
+      'Lower ceiling for complex, multi-step business logic than Relevance AI\'s Tools + Agents model — built for one assistant, not a chain of specialized agents',
+    ],
+    pricingBreakdown: [
+      { tier: '7-day trial', price: '$0', highlight: 'Full Plus-tier access, no ongoing free plan afterward' },
+      { tier: 'Plus', price: '$49.99/month', highlight: 'Standard usage · up to 2 connected inboxes' },
+      { tier: 'Pro', price: '$99.99/month', highlight: '~3x usage · up to 3 inboxes · adds computer-use/browser automation' },
+      { tier: 'Max', price: '$199.99/month', highlight: '~7x usage · up to 5 inboxes' },
+    ],
+  },
+  {
+    id: 'p8', slug: 'gumloop',
+    name: 'Gumloop', tagline: 'Node-based visual canvas for AI-heavy data pipelines',
+    description: 'Gumloop is a drag-and-drop, node-based automation canvas — closer to an AI-native successor to Zapier or Make than to a chat-based assistant. AI calls (GPT, Claude, Gemini) are first-class node types alongside scraping, API calls, and data transforms, making it the strongest fit for structured, multi-stage work: scrape a source, summarize with AI, pull structured fields, write to a database. Pricing runs on credits, with a genuinely usable free tier (5,000 credits/month) and Pro starting at $37/month for 20,000+ credits.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://www.gumloop.com/', // Creator/Advocate affiliate program (20% recurring) is approval-gated — application pending, replace once approved
+    iconName: 'Workflow', color: '#10b981', accentColor: '#059669',
+    userBadge: 'Best for data pipelines', pricing: 'Free (5,000 credits/mo) + $37/month (Pro)', bestFor: 'Teams whose AI workflow looks like ETL — scraping, enrichment, and structured data output — rather than a conversation',
+    notForYou: 'Anyone who wants a conversational or inbox-centric assistant — Lindy fits that shape far better than a node canvas. Also reconsider if you need the broadest native integration count out of the box: Gumloop\'s roughly 125 native apps is the smallest of the major agent/automation builders, though its hosted MCP server support on Pro narrows that gap for teams comfortable with MCP-based tooling. AI-heavy or enrichment-heavy nodes (~60 credits per contact) can also burn through the free tier faster than the headline number suggests.',
+    lastTestedISO: '2026-08-22',
+    researchSources: {
+      g2: { rating: 4.8, count: 6 },
+      reddit: 'Positive but thin — G2 (4.8/5, 6 reviews) and Product Hunt (4.8/5, 144 reviews) both skew strongly positive, with reviewers praising the visual builder and fast support; the recurring criticism across G2, Capterra, and Reddit is a real learning curve once workflows move past simple scrape-and-summarize flows, plus rapid credit consumption on AI-heavy nodes',
+      lastVerified: '2026-08-22',
+    },
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free forever (5,000 credits/month, 1 seat, 1 active trigger, 2 concurrent workflow runs)',
+      paid: 'Pro ~₹3,070/month + GST (at $37/month)',
+      note: 'Billed in USD via international card — no confirmed INR billing or UPI support as of August 2026. Bring-your-own-API-key on Pro cuts AI node cost by roughly 95%, which meaningfully changes the real monthly cost for India-based heavy users.',
+    },
+    updateLog: [
+      { date: 'August 2026', note: 'Tool entry created. Pricing verified against Gumloop\'s own live pricing page: Free (5,000 credits/mo, 1 seat), Pro $37/month (20,000+ credits, unlimited seats, hosted MCP server), Enterprise custom (RBAC, SCIM/SAML, audit logs, VPC). Old "Solo/Team" plan names and the $97/month Starter tier confirmed retired. G2 rating confirmed at 4.8/5 from 6 verified reviews — a genuinely good early signal but a small sample.' },
+    ],
+    features: [
+      'Visual, node-based canvas — AI calls are a first-class step type alongside scraping, API calls, and transforms',
+      'Hosted MCP (Model Context Protocol) server on the Pro plan for standardized tool access without a dedicated connector per app',
+      'Bring-your-own-API-key support that cuts AI node cost by roughly 95% on paid plans',
+      'Team analytics and guardrails for monitoring workflow runs across a shared workspace',
+      'Dark mode canvas and a growing community template library',
+    ],
+    pros: [
+      'Genuinely usable free tier (5,000 credits/month) with unlimited seats included even on the Pro plan',
+      'Strongest of the major agent/automation builders for structured, multi-stage data work — scraping, enrichment, structured output',
+      'Bring-your-own-API-key option is the deepest cost lever of the three tools compared on this site, cutting AI node cost ~95%',
+      'Consistently praised for a cleaner, more pleasant builder experience than older tools like n8n or Zapier',
+    ],
+    cons: [
+      'Smallest native integration count of the major builders (~125 apps) — MCP support narrows but doesn\'t close this gap for non-technical teams',
+      'Real learning curve once workflows move past simple flows — expect a few weeks to get comfortable with complex node conditioning',
+      'AI-heavy or enrichment-heavy nodes (~60 credits/contact) can exhaust the free tier faster than the 5,000-credit headline suggests',
+      'Thin public review base (6 G2 reviews) — a good early sign but too small a sample to treat as settled the way Lindy\'s 170+ reviews can be',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0/month', highlight: '5,000 credits/month · 1 seat · 1 active trigger · 2 concurrent runs' },
+      { tier: 'Pro', price: '$37/month', highlight: '20,000+ credits · unlimited seats · 5 concurrent runs · hosted MCP server' },
+      { tier: 'Enterprise', price: 'Custom', highlight: 'RBAC, SCIM/SAML, audit logs, custom retention, VPC option' },
+    ],
+  },
+
   // IMAGE
   {
     id: 'i4', slug: 'midjourney',
@@ -2124,6 +2272,28 @@ Object.assign(TOOL_FAQS, {
     { q: 'Can Lovable build a real app or just demos?', a: 'Lovable builds real, deployed applications — not demos or mockups. The generated apps are hosted on a live subdomain, backed by a real Supabase PostgreSQL database, with working authentication. Documented use cases include newsletter lead capture forms where submissions hit the database in real-time. That said, Lovable is best for apps with straightforward logic. Complex business rules, custom API integrations, and high-traffic production workloads still benefit from a developer reviewing and extending the generated code.' },
     { q: 'Does Lovable have an affiliate programme?', a: 'Yes — Lovable pays 30% recurring commission via its referral programme. You earn 30% of every monthly payment from referred customers, for as long as they stay subscribed. For a tool in a fast-growing category with genuine word-of-mouth growth, this is one of the strongest recurring commission rates in the AI tools space. Sign up at lovable.dev and find the referral section in your account dashboard.' },
   ],
+  // Added August 2026 — AI agent builder cluster
+  'relevance-ai': [
+    { q: 'Does Relevance AI have a free plan?', a: 'Yes. Relevance AI\'s Free plan includes 200 Actions per month plus a one-time 1,000 Vendor Credits, no card required. That\'s enough to build and test a real multi-agent workflow, not just click through a demo. Paid plans start at $19/month (Pro, annual billing) for 2,500 Actions.' },
+    { q: 'What is the "Tools + Agents" framework?', a: 'Relevance AI splits work into two layers: "Tools" perform a single action (search a CRM, classify intent, draft outreach), and "Agents" chain several Tools together toward a goal, often handing work off between multiple specialized agents. One agent might research a prospect, hand enriched data to a second agent that drafts outreach, then a third agent schedules the follow-up. This two-layer structure is what makes agent decisions auditable rather than a black box.' },
+    { q: 'How does Relevance AI compare to Lindy and Gumloop?', a: 'Relevance AI is workforce-first — built for teams of agents handing off work with an auditable trail, which suits sales and revenue-ops use cases. Lindy is assistant-first — a single natural-language "AI employee" that\'s the fastest of the three to set up. Gumloop is canvas-first — a visual node builder best for data pipelines (scrape, transform, publish). See our full <a href="/blog/relevance-ai-vs-lindy-vs-gumloop-2026/">Relevance AI vs Lindy vs Gumloop comparison</a> for a worked cost example.' },
+    { q: 'Is Relevance AI worth the learning curve?', a: 'For simple single-agent tasks, most users get productive quickly. Complex multi-agent workflows with conditional logic and handoffs take real configuration — expect 3–6 hours to a working setup, not minutes. G2 and Reddit reviewers consistently note this trade-off: the audit trail and multi-agent coordination are worth the setup time for sales/compliance workflows, but overkill if you just need one assistant managing an inbox.' },
+    { q: 'What is the biggest complaint about Relevance AI?', a: 'Cost unpredictability at scale. Both G2 and Reddit reviews flag that Action and Vendor Credit usage can escalate sharply once workflows run at production volume, and agency owners specifically report that the shared-workspace model makes isolating credentials across multiple client environments harder than a dedicated multi-tenant tool would.' },
+  ],
+  lindy: [
+    { q: 'Does Lindy have a free plan in 2026?', a: 'No. As of Lindy\'s own pricing page, there is no free tier — only a 7-day free trial with full access to the Plus plan\'s features. This is a change from earlier in Lindy\'s history when a limited free plan existed. After the trial, plans run Plus at $49.99/month, Pro at $99.99/month (~3x usage, adds computer-use/browser automation), and Max at $199.99/month (~7x usage), plus custom Enterprise pricing.' },
+    { q: 'Why is Lindy\'s G2 rating so different from its Trustpilot rating?', a: 'Lindy holds a 4.9/5 on G2 from 170+ reviews but sits around 1.7–2.0/5 on Trustpilot. Both are telling the truth about different moments in the customer journey: G2 reviewers (125 of 170+ specifically cite ease of use) are largely evaluating the product experience of building and running an agent. Trustpilot\'s lower score concentrates almost entirely on billing surprises, cancellation friction, and overage charges — not the core agent quality. Read the fine print on usage quotas and cancellation before subscribing.' },
+    { q: 'How fast can I get a working Lindy agent?', a: 'Lindy is the fastest of the major AI agent builders to a working setup — most users have an inbox or scheduling agent live within 1–3 hours from a plain-language goal description, since there\'s no visual builder or code required. Compare that to 3–6 hours for Relevance AI\'s multi-agent setups.' },
+    { q: 'What changed with Lindy in 2026?', a: 'Lindy relaunched in February 2026, shifting from a general no-code "AI employee" builder toward a personal AI executive assistant focused on Gmail/Outlook inbox triage, meeting prep, scheduling, and call recording/summarization. The free plan was dropped during this repricing, replaced by a 7-day trial.' },
+    { q: 'Is Lindy or Relevance AI better for a small business?', a: 'It depends on the job. If the task is "manage my inbox" or "prep me for meetings," Lindy is faster to a working result and better suited to a single assistant handling recurring tasks. If the task needs several specialized agents handing off work — researching a prospect, then drafting outreach, then scheduling — Relevance AI\'s Tools + Agents model is the better architectural fit, and it\'s also the only one of the two with an ongoing free tier to test before paying.' },
+  ],
+  gumloop: [
+    { q: 'Is Gumloop actually free to use?', a: 'Yes — Gumloop\'s Free plan includes 5,000 credits/month, 1 seat, 1 active trigger, and 2 concurrent workflow runs, ongoing with no time limit. That\'s enough to build and test real workflows. A standard AI call costs about 2 credits; an advanced call using a frontier model like GPT-4.1 or Claude costs roughly 20 credits, so AI-heavy workflows burn through the free tier faster than simple data-moving ones.' },
+    { q: 'How does Gumloop compare to Zapier, Make, and n8n?', a: 'Gumloop looks and feels closer to Zapier or Make than to a chatbot, but treats AI calls as first-class node types rather than an add-on — making it stronger for data-heavy pipelines that combine scraping, AI summarization, and structured output in one flow. It has fewer native integrations (~125) than Zapier or Make, but its hosted MCP server on the Pro plan is a newer, standardized way to reach external tools without a dedicated connector for each one.' },
+    { q: 'What is the biggest hidden cost on Gumloop?', a: 'Enrichment and AI-heavy nodes. A standard AI call is cheap (~2 credits), but advanced-model calls and enrichment nodes (roughly 60 credits per contact) can exhaust the 5,000-credit free tier much faster than the headline number suggests. Bringing your own API key on a paid plan cuts AI node cost by roughly 95% and is worth doing the moment you\'re running workflows regularly.' },
+    { q: 'Is Gumloop good for non-technical users?', a: 'Yes for straightforward flows — reviewers consistently describe the drag-and-drop canvas as more pleasant and intuitive than older tools like n8n. The learning curve shows up once workflows get more complex: understanding all the node types and conditional logic can take a few weeks to feel comfortable with, per G2 and Reddit feedback.' },
+    { q: 'How mature is Gumloop compared to Relevance AI and Lindy?', a: 'Gumloop is the newest and least-reviewed of the three, with just 6 verified G2 reviews (4.8/5) as of mid-2026 — a genuinely good early signal, but too small a sample to treat with the same confidence as Lindy\'s 170+ reviews. It\'s also the smallest by native integration count. What it offers in exchange is the strongest fit of the three for structured, multi-stage AI data pipelines.' },
+  ],
 });
 
 // ── Comparison tables per tool ─────────────────────────────────────────────
@@ -2179,6 +2349,27 @@ export const TOOL_COMPARISONS: Record<string, Array<{
     { name: 'Replit', price: 'Free–$20/mo', freeplan: true, bestFor: 'Browser IDE + deploy for learners', ourPick: false },
     { name: 'Bubble', price: 'Free–$29/mo', freeplan: true, bestFor: 'No-code apps with visual editor', ourPick: false },
   ],
+  'relevance-ai': [
+    { name: 'Relevance AI', price: 'Free–$349/mo', freeplan: true, bestFor: 'Auditable multi-agent teams (sales/ops)', ourPick: true },
+    { name: 'Lindy', price: '$49.99–$199.99/mo', freeplan: false, bestFor: 'Single AI assistant, fastest setup', ourPick: false },
+    { name: 'Gumloop', price: 'Free–$37/mo', freeplan: true, bestFor: 'Node-based data pipelines', ourPick: false },
+    { name: 'n8n', price: 'Free (self-host)–$50/mo', freeplan: true, bestFor: 'Complex branching, self-hosted', ourPick: false },
+    { name: 'Zapier', price: 'Free–$69/mo', freeplan: true, bestFor: 'Simple linear automations', ourPick: false },
+  ],
+  lindy: [
+    { name: 'Lindy', price: 'No free plan–$199.99/mo', freeplan: false, bestFor: 'Fastest AI assistant setup (inbox/scheduling)', ourPick: true },
+    { name: 'Relevance AI', price: 'Free–$349/mo', freeplan: true, bestFor: 'Multi-agent orchestration', ourPick: false },
+    { name: 'Gumloop', price: 'Free–$37/mo', freeplan: true, bestFor: 'Data pipeline automation', ourPick: false },
+    { name: 'Zapier', price: 'Free–$69/mo', freeplan: true, bestFor: 'Simple trigger-action workflows', ourPick: false },
+    { name: 'Make', price: 'Free–$29/mo', freeplan: true, bestFor: 'Visual automation, cheaper than Lindy', ourPick: false },
+  ],
+  gumloop: [
+    { name: 'Gumloop', price: 'Free–$37/mo', freeplan: true, bestFor: 'AI-native node canvas for data pipelines', ourPick: true },
+    { name: 'Relevance AI', price: 'Free–$349/mo', freeplan: true, bestFor: 'Multi-agent orchestration', ourPick: false },
+    { name: 'Lindy', price: 'No free plan–$199.99/mo', freeplan: false, bestFor: 'Conversational AI assistant', ourPick: false },
+    { name: 'n8n', price: 'Free (self-host)–$50/mo', freeplan: true, bestFor: 'Self-hosted, complex branching logic', ourPick: false },
+    { name: 'Make', price: 'Free–$29/mo', freeplan: true, bestFor: 'Cheaper visual automation, less AI-native', ourPick: false },
+  ],
 };
 
 Object.assign(TOOL_COMPARISONS, {
@@ -2231,6 +2422,10 @@ export const TOOL_KEYWORDS: Record<string, string[]> = {
   descript: ['descript review', 'descript vs podcastle', 'text based audio editor ai', 'descript overdub review', 'best podcast editing software 2026'],
   perplexity: ['perplexity ai review', 'perplexity vs chatgpt', 'best ai search engine 2026', 'perplexity pro worth it', 'ai research tool with citations'],
   'canva-ai': ['canva ai review', 'canva ai tools 2026', 'canva magic write review', 'canva vs adobe express ai', 'best ai design tool free'],
+  // Added August 2026 — AI agent builder cluster
+  'relevance-ai': ['relevance ai review', 'relevance ai vs lindy', 'relevance ai vs gumloop', 'best multi agent ai builder 2026', 'relevance ai pricing 2026'],
+  lindy: ['lindy ai review', 'lindy ai vs relevance ai', 'lindy free plan 2026', 'best ai executive assistant 2026', 'lindy ai pricing'],
+  gumloop: ['gumloop review', 'gumloop vs zapier', 'gumloop vs relevance ai', 'best ai workflow automation 2026', 'gumloop pricing 2026'],
 };
 
 // ── Week 1: TOOL_KEYWORDS for Cursor + Lovable ────────────────────────────
