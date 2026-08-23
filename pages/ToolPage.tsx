@@ -35,9 +35,9 @@ const AFFILIATE_SLUGS = [
   // Added August 2026 — only Relevance AI has a live tracked affiliate link so far.
   // Lindy and Gumloop are NOT in this list on purpose: both link to their official
   // site with no tracking param (PartnerStack/Creator program approval pending).
-  // Add 'lindy' and 'gumloop' here the moment their tracked referral links go live.
+  // Add lindy and gumloop here the moment their tracked referral links go live.
   'relevance-ai',
-  // Added August 2026 — n8n/Make/Zapier cluster. 'make' has a live tracked
+  // Added August 2026 — n8n/Make/Zapier cluster. make has a live tracked
   // affiliate link (?pc=navneet) and is included. n8n's affiliate application
   // is pending (self-serve program at n8n.io/affiliates, 30%/12mo). Zapier has
   // no standard blogger affiliate program — neither is in this list yet.

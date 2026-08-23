@@ -124,7 +124,7 @@ const AFFILIATE_SLUGS = [
   'pictory', 'opus-clip', 'invideo', 'murf-ai', 'podcastle', 'gamma', 'beautiful-ai',
   'ocoya', 'replit', 'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',
   'notion-ai', 'taskade', 'headshotpro', 'getresponse', 'munch', 'basedlabs',
-  'narrato', 'fireflies',
+  'narrato', 'fireflies', 'relevance-ai', 'make',
 ];
 const CATEGORIES = ['All', 'Writing', 'Image', 'Video', 'Audio', 'Marketing', 'Design', 'Coding', 'Productivity'];
 
