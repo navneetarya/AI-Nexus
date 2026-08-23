@@ -4503,6 +4503,25 @@ const BLOG_POSTS = [
 
 // ── H4 Fix: Related links map — internal links between tool pages and blog/compare pages ──
 const RELATED_LINKS = {
+  // ── AI agent builders — added August 2026 ──────────────────────────────────
+  'relevance-ai': [
+    ['/blog/relevance-ai-vs-lindy-vs-gumloop-2026/', 'Relevance AI vs Lindy vs Gumloop: Full Comparison'],
+    ['/tools/lindy/', 'Lindy Review'],
+    ['/tools/gumloop/', 'Gumloop Review'],
+    ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
+  ],
+  'lindy': [
+    ['/blog/relevance-ai-vs-lindy-vs-gumloop-2026/', 'Relevance AI vs Lindy vs Gumloop: Full Comparison'],
+    ['/tools/relevance-ai/', 'Relevance AI Review'],
+    ['/tools/gumloop/', 'Gumloop Review'],
+    ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
+  ],
+  'gumloop': [
+    ['/blog/relevance-ai-vs-lindy-vs-gumloop-2026/', 'Relevance AI vs Lindy vs Gumloop: Full Comparison'],
+    ['/tools/relevance-ai/', 'Relevance AI Review'],
+    ['/tools/lindy/', 'Lindy Review'],
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
+  ],
   // ── Writing tools ─────────────────────────────────────────────────────────
   'grammarly': [
     ['/blog/best-grammarly-alternatives/', 'Best Grammarly Alternatives 2026'],

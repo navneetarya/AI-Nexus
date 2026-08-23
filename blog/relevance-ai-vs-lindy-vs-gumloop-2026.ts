@@ -101,9 +101,8 @@ const post: BlogPost = {
 </ol>
 <div style="margin:14px 0 24px;">
   <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
+  <a href="/tools/relevance-ai/" style="display:inline-block;color:#0D9488;padding:10px 4px;margin:6px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Relevance AI review →</a>
 </div>
-
-<h2>Relevance AI vs Lindy vs Gumloop Pricing: Verified July 2026</h2>
 <img src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People sitting at a table reviewing pricing tiers for AI agent platforms" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Pricing across all three changed meaningfully in the past year, and this is where most existing comparisons are already stale. Relevance AI restructured its whole model in September 2025. Lindy removed its free tier a few months back.</p>
 <p>Gumloop's old plan names ("Solo," "Team") that still circulate online were retired for a simpler Free/Pro/Enterprise setup. Here's what each platform's own pricing page shows today.</p>
@@ -227,6 +226,9 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://www.gumloop.com/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gumloop Free →</a>
   <a href="https://www.lindy.ai/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See Lindy Pricing →</a>
+  <br/>
+  <a href="/tools/gumloop/" style="display:inline-block;color:#0D9488;padding:10px 4px 0 0;margin:6px 8px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Gumloop review →</a>
+  <a href="/tools/lindy/" style="display:inline-block;color:#0D9488;padding:10px 4px 0 0;margin:6px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Lindy review →</a>
 </div>
 <p>For a broader look at agent platforms built for SMB operations specifically, see <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a>. For the wider automation category these tools sit alongside, see <a href="/blog/best-no-code-ai-automation-tools-2026/">Best No-Code AI Automation Tools 2026</a>. If you need a straightforward workflow-automation platform rather than an AI-agent builder, our <a href="/blog/n8n-vs-make-vs-zapier-2026/" style="color:#0D9488;font-weight:600;">n8n vs Make vs Zapier comparison</a> covers that simpler tier.</p>
 
@@ -238,6 +240,7 @@ const post: BlogPost = {
 <p><strong>Relevance AI — Free Tier, Multi-Agent Orchestration.</strong> Start free with 200 Actions/month, no card required, before deciding whether Pro's $19/month is worth it.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
+  <a href="/tools/relevance-ai/" style="display:inline-block;color:#0D9488;padding:10px 4px;margin:6px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Relevance AI review →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center;">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
