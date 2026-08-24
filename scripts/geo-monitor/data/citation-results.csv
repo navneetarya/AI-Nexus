@@ -1,0 +1,61 @@
+query_id,query,cluster,category,engine,cited,competitor_domains,target_page_hint
+q1,"What are the best AI writing tools in 2026?",cluster-writing,writing,gemini,false,"",/category/writing
+q2,"Best AI writing tool for beginners?",cluster-writing,writing,gemini,false,"",/category/writing
+q3,"Which AI writing tool is worth paying for?",cluster-writing,writing,gemini,false,"",/category/writing
+q4,"Cheapest AI writing tool with a free plan?",cluster-writing,writing,gemini,false,"",/category/writing
+q5,"What AI writing tool should a small business use?",cluster-writing,writing,gemini,false,"",/category/writing
+q6,"Best AI writing tool for solopreneurs and freelancers?",cluster-writing,writing,gemini,false,"",/category/writing
+q7,"Is Writesonic worth it in 2026?",cluster-writing,writing,gemini,false,"",/tools/writesonic
+q8,"Writesonic pricing and features — is it good?",cluster-writing,writing,gemini,false,"",/tools/writesonic
+q9,"Is Rytr worth it in 2026?",cluster-writing,writing,gemini,false,"",/tools/rytr
+q10,"Rytr pricing and features — is it good?",cluster-writing,writing,gemini,false,"",/tools/rytr
+q11,"Writesonic vs Rytr — which is better?",cluster-writing,writing,gemini,false,"",/compare/writesonic-vs-rytr
+q12,"What are the best AI image tools in 2026?",cluster-image,image,gemini,false,"",/category/image
+q13,"Best AI image tool for beginners?",cluster-image,image,gemini,false,"",/category/image
+q14,"Which AI image tool is worth paying for?",cluster-image,image,gemini,false,"",/category/image
+q15,"Cheapest AI image tool with a free plan?",cluster-image,image,gemini,false,"",/category/image
+q16,"What AI image tool should a small business use?",cluster-image,image,gemini,false,"",/category/image
+q17,"Best AI image tool for solopreneurs and freelancers?",cluster-image,image,gemini,false,"",/category/image
+q18,"Is Leonardo.ai worth it in 2026?",cluster-image,image,gemini,false,"",/tools/leonardo-ai
+q19,"Leonardo.ai pricing and features — is it good?",cluster-image,image,gemini,false,"",/tools/leonardo-ai
+q20,"Is PhotoRoom worth it in 2026?",cluster-image,image,gemini,false,"",/tools/photoroom
+q21,"PhotoRoom pricing and features — is it good?",cluster-image,image,gemini,false,"",/tools/photoroom
+q22,"Leonardo.ai vs PhotoRoom — which is better?",cluster-image,image,gemini,false,"",/compare/leonardo-ai-vs-photoroom
+q23,"What are the best AI video tools in 2026?",cluster-video,video,gemini,false,"",/category/video
+q24,"Best AI video tool for beginners?",cluster-video,video,gemini,false,"",/category/video
+q25,"Which AI video tool is worth paying for?",cluster-video,video,gemini,false,"",/category/video
+q26,"Cheapest AI video tool with a free plan?",cluster-video,video,gemini,false,"",/category/video
+q27,"What AI video tool should a small business use?",cluster-video,video,gemini,false,"",/category/video
+q28,"Best AI video tool for solopreneurs and freelancers?",cluster-video,video,gemini,false,"",/category/video
+q29,"Is Pictory worth it in 2026?",cluster-video,video,gemini,false,"",/tools/pictory
+q30,"Pictory pricing and features — is it good?",cluster-video,video,gemini,false,"",/tools/pictory
+q31,"Is Opus Clip worth it in 2026?",cluster-video,video,gemini,false,"",/tools/opus-clip
+q32,"Opus Clip pricing and features — is it good?",cluster-video,video,gemini,false,"",/tools/opus-clip
+q33,"Pictory vs Opus Clip — which is better?",cluster-video,video,gemini,false,"",/compare/pictory-vs-opus-clip
+q34,"What are the best AI audio tools in 2026?",cluster-audio,audio,gemini,false,"",/category/audio
+q35,"Best AI audio tool for beginners?",cluster-audio,audio,gemini,false,"",/category/audio
+q36,"Which AI audio tool is worth paying for?",cluster-audio,audio,gemini,false,"",/category/audio
+q37,"Cheapest AI audio tool with a free plan?",cluster-audio,audio,gemini,false,"",/category/audio
+q38,"What AI audio tool should a small business use?",cluster-audio,audio,gemini,false,"",/category/audio
+q39,"Best AI audio tool for solopreneurs and freelancers?",cluster-audio,audio,gemini,false,"",/category/audio
+q40,"Is Murf AI worth it in 2026?",cluster-audio,audio,gemini,false,"",/tools/murf-ai
+q41,"Murf AI pricing and features — is it good?",cluster-audio,audio,gemini,false,"",/tools/murf-ai
+q42,"Is Podcastle worth it in 2026?",cluster-audio,audio,gemini,false,"",/tools/podcastle
+q43,"Podcastle pricing and features — is it good?",cluster-audio,audio,gemini,false,"",/tools/podcastle
+q44,"Murf AI vs Podcastle — which is better?",cluster-audio,audio,gemini,false,"",/compare/murf-ai-vs-podcastle
+q45,"What are the best AI design tools in 2026?",cluster-design,design,gemini,false,"",/category/design
+q46,"Best AI design tool for beginners?",cluster-design,design,gemini,false,"",/category/design
+q47,"Which AI design tool is worth paying for?",cluster-design,design,gemini,false,"",/category/design
+q48,"Cheapest AI design tool with a free plan?",cluster-design,design,gemini,false,"",/category/design
+q49,"What AI design tool should a small business use?",cluster-design,design,gemini,false,"",/category/design
+q50,"Best AI design tool for solopreneurs and freelancers?",cluster-design,design,gemini,false,"",/category/design
+q51,"Is Gamma worth it in 2026?",cluster-design,design,gemini,false,"",/tools/gamma
+q52,"Gamma pricing and features — is it good?",cluster-design,design,gemini,false,"",/tools/gamma
+q53,"Is Beautiful.ai worth it in 2026?",cluster-design,design,gemini,false,"",/tools/beautiful-ai
+q54,"Beautiful.ai pricing and features — is it good?",cluster-design,design,gemini,false,"",/tools/beautiful-ai
+q55,"Gamma vs Beautiful.ai — which is better?",cluster-design,design,gemini,false,"",/compare/gamma-vs-beautiful-ai
+q56,"What are the best AI marketing tools in 2026?",cluster-marketing,marketing,gemini,false,"",/category/marketing
+q57,"Best AI marketing tool for beginners?",cluster-marketing,marketing,gemini,false,"",/category/marketing
+q58,"Which AI marketing tool is worth paying for?",cluster-marketing,marketing,gemini,false,"",/category/marketing
+q59,"Cheapest AI marketing tool with a free plan?",cluster-marketing,marketing,gemini,false,"",/category/marketing
+q60,"What AI marketing tool should a small business use?",cluster-marketing,marketing,gemini,false,"",/category/marketing
