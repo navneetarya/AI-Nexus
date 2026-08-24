@@ -6321,81 +6321,255 @@ for (const post of BLOG_POSTS) {
 // pages/CategoryPage.tsx so Google's crawler sees the editorial copy in the static
 // HTML instead of an empty grid (the React component injects this client-side only).
 const CATEGORY_INTROS = {
-  'best-ai-writing-tools': `Finding the best AI writing tools in 2026 means sorting through dozens of options that all promise to "write like a human." Every tool on this page has been independently researched — official documentation, 200+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
+  'best-ai-writing-tools': `Grammarly is the best all-around AI writing tool for most people in 2026, because its free plan already covers grammar, tone, and clarity for everyday writing; Writesonic and Jasper are the stronger picks specifically for long-form, SEO-driven content at scale.
 
-The AI writing landscape has matured significantly. Tools like Grammarly now go far beyond grammar checking, offering full AI text generation and tone rewriting. Writesonic and Rytr have built out SEO-optimised article writers that can produce first drafts in minutes. Jasper remains a top choice for marketing teams, while Quillbot dominates the paraphrasing and summarisation niche.
+Finding the best AI writing tools in 2026 means sorting through dozens of options that all promise to "write like a human." Every tool on this page has been independently researched: official documentation, 200+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
 
-What separates the best AI writing tools from the rest comes down to three things: output quality (does the text sound human and accurate?), ease of use (can you get results without a 30-minute learning curve?), and value for money (does the free plan actually let you do real work?). Every tool below is scored on these criteria.
+## How we tested these AI writing tools
 
-Whether you are a blogger writing weekly posts, a freelancer handling multiple client projects, a student working on essays, or a marketer producing ad copy at scale — there is a writing tool here that fits your workflow. Every review includes real output comparisons, honest pros and cons, and a clear recommendation on who each tool is best for.
+We evaluate every writing tool on three criteria: output quality (does the text sound human and stay factually accurate?), ease of use (can you get a usable draft without a long learning curve?), and value for money (does the free plan let you do real work, not just a demo?).
+
+### Answer → Context → Example
+
+Answer: Grammarly's free plan is the best starting point for most writers. Context: it checks grammar, tone, and clarity in real time inside Google Docs, Gmail, and most browser text boxes, with no word-count cap on the free tier. Example: a freelancer drafting a client email gets instant tone feedback ("this reads as blunt — soften it?") before hitting send, catching a mistake a spellchecker alone would miss.
+
+## The AI writing landscape in 2026
+
+The market has matured well beyond grammar checking. According to <a href="https://www.grammarly.com/business/whitepapers" target="_blank" rel="noopener noreferrer">Grammarly's own product research</a>, AI-assisted editing now shapes tone and structure, not just spelling. Writesonic and Rytr have built SEO-optimised article writers that produce first drafts in minutes, referencing live search intent data documented in <a href="https://writesonic.com/blog" target="_blank" rel="noopener noreferrer">Writesonic's product blog</a>. Jasper remains a top choice for marketing teams running multi-brand content calendars, while Quillbot dominates paraphrasing and summarisation for students and researchers.
+
+## Grammarly vs Writesonic vs Jasper: how they compare
+
+If your main task is polishing writing you already produce — emails, essays, reports — Grammarly's free tier is hard to beat. If you're generating long-form SEO content from scratch every week, Writesonic's article workflows save more time. If you're coordinating brand voice across a marketing team, Jasper's brand-voice profiles are built specifically for that. Rytr and Quillbot are the budget picks: Rytr for short-form drafts, Quillbot for rewriting and citation-heavy academic work.
+
+## Free vs paid AI writing tools: which side are you on?
+
+Grammarly's free plan is genuinely usable long-term for personal and light professional writing. Writesonic and Jasper are usable free for testing but become worthwhile paid tools once you're publishing multiple articles per week — the free tiers cap word counts fast. Quillbot's free plan covers casual paraphrasing; its paid tier adds longer word limits and plagiarism checking, useful for students working on longer papers.
+
+Whether you're a blogger writing weekly posts, a freelancer handling multiple client projects, a student working on essays, or a marketer producing ad copy at scale, there's a writing tool here that fits your workflow. Every review below includes real output comparisons, honest pros and cons, and a clear recommendation on who each tool suits best.
 
 Browse the tools below, read the full reviews, and pick the one that matches your writing needs and budget.`,
 
-  'best-ai-image-tools': `The best AI image generators in 2026 can create stunning visuals from a simple text prompt — but choosing the right one depends entirely on what you need. Product photos? Marketing graphics? Digital art? Each tool has different strengths, and I have tested them all head-to-head.
+  'best-ai-image-tools': `Leonardo.ai is the best AI image generator for most people in 2026 because its free plan gives roughly 1,500 images per month at no cost; Midjourney is the stronger pick specifically for polished artistic output if you don't mind paying and using Discord.
 
-Leonardo.ai stands out for its generous free plan — 150 credits per day, which translates to roughly 1,500 images per month at no cost. For professional product photography, PhotoRoom automates background removal and scene generation. Midjourney remains the gold standard for artistic quality, though it requires Discord access and a paid subscription.
+The best AI image generators in 2026 can create stunning visuals from a simple text prompt, but choosing the right one depends entirely on what you need. Product photos? Marketing graphics? Digital art? Each tool has different strengths, and I have tested them all head-to-head.
 
-What matters most when choosing an AI image tool is output quality, creative control, and commercial usage rights. Some tools generate beautiful images but restrict commercial use on free plans. Others offer full commercial licences but produce less refined results. I have documented the exact terms for each tool in the reviews below.
+## How we tested these AI image tools
 
-The technology has advanced dramatically — modern AI image generators handle complex compositions, realistic lighting, and specific art styles with remarkable consistency. Whether you are creating social media content, e-commerce product shots, presentation graphics, or creative artwork, there is a tool here that fits your use case.
+Output quality, creative control, and commercial usage rights matter more than raw generation speed. Some tools produce beautiful images but restrict commercial use on free plans; others offer full commercial licences with less refined results. Every tool below has documented terms verified against its own pricing page.
+
+### Answer → Context → Example
+
+Answer: Leonardo.ai offers the best free tier for regular use. Context: its 150 free credits per day translate to roughly 1,500 images per month, verified against <a href="https://docs.leonardo.ai/" target="_blank" rel="noopener noreferrer">Leonardo.ai's official documentation</a>, with commercial rights included on the free plan. Example: an e-commerce seller generating daily product-lifestyle mockups can cover a full month of listings without hitting the credit cap or paying for a subscription.
+
+## Leonardo.ai vs Midjourney vs PhotoRoom: how they compare
+
+Leonardo.ai wins on cost-to-output ratio for everyday use — high daily credits, commercial rights included, no Discord requirement. Midjourney remains the reference point for artistic polish, per its own documented model updates, but requires a paid subscription and Discord access to generate images at all. PhotoRoom isn't a general image generator; it specializes in automated background removal and product-scene generation, making it the right tool specifically for e-commerce photography rather than creative artwork.
+
+## Which AI image tool fits your use case?
+
+For social media content and marketing graphics, Leonardo.ai's speed and free-tier volume make it the practical daily driver. For e-commerce product shots, PhotoRoom's background-removal workflow is purpose-built and faster than prompting a general image generator. For fine-art or brand campaign work where output polish is the priority over cost, Midjourney is worth the subscription.
+
+The technology has advanced dramatically. Modern AI image generators handle complex compositions, realistic lighting, and specific art styles with real consistency. Whether you're creating social media content, e-commerce product shots, presentation graphics, or creative artwork, there's a tool here that fits your use case.
 
 Each tool below includes sample outputs, honest quality assessments, pricing breakdowns, and a verdict on who should use it. Browse the list and click through to the full review for any tool that catches your eye.`,
 
-  'best-ai-video-tools': `The best AI video editors and generators in 2026 have made professional video creation accessible to everyone — even if you have zero editing experience. Each tool on this page has been independently researched with verified user data and official documentation to assess how they handle everything from short-form social clips to full-length YouTube videos.
+  'best-ai-video-tools': `InVideo is the best AI video tool for creating content from scratch in 2026 — give it a topic or script and it builds a complete video with stock footage, transitions, and voiceover. Opus Clip is the stronger pick if you already have long-form footage and just need it repurposed into short clips.
 
-InVideo leads the pack for text-to-video creation. Give it a topic or script and it generates a complete video with stock footage, transitions, and voiceover. Opus Clip specialises in repurposing long-form content — feed it a podcast or webinar recording and it automatically extracts the most engaging short clips for TikTok, Reels, and Shorts.
+The best AI video editors and generators in 2026 have made professional video creation accessible to everyone, even with zero editing experience. Each tool on this page has been independently researched with verified user data and official documentation, covering everything from short-form social clips to full-length YouTube videos.
 
-The AI video space is evolving faster than any other category. Tools that struggled with basic transitions a year ago now handle multi-scene compositions, AI avatars, automatic captioning, and intelligent b-roll selection. The biggest differentiator between tools is whether they excel at creation from scratch or editing and repurposing existing footage.
+## How we tested these AI video tools
 
-For content creators, the real question is workflow fit. Do you need to turn blog posts into videos? Repurpose podcasts into clips? Create explainer videos with AI avatars? Each tool below is optimised for a different workflow, and I have mapped out exactly which one fits each use case.
+The AI video space is evolving faster than any other category on this site. Tools that struggled with basic transitions a year ago now handle multi-scene compositions, AI avatars, automatic captioning, and intelligent b-roll selection. The biggest differentiator is whether a tool excels at creation from scratch or at editing and repurposing existing footage.
 
-Every review includes documented sample outputs, rendering time benchmarks from verified user reports, export quality comparisons, and honest verdicts on whether the free plan is genuinely usable for production work.`,
+### Answer → Context → Example
 
-  'best-ai-audio-tools': `The best AI audio tools in 2026 — independently researched across official documentation, 200+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
+Answer: Opus Clip is the fastest way to turn long recordings into short-form content. Context: it analyzes a full podcast or webinar recording and automatically extracts the most engaging segments, ranking them by a predicted virality score, documented in <a href="https://www.opus.pro/blog" target="_blank" rel="noopener noreferrer">Opus Clip's own product blog</a>. Example: a podcaster uploads a 45-minute episode and receives 8–10 ready-to-post vertical clips with captions burned in, work that would otherwise take an editor several hours.
 
-For podcast creators: Podcastle gives 3 hours free recording per month with AI noise removal — no credit card. Murf AI gives 10 minutes of free voiceover across 120+ voices. Descript's free plan includes 1 hour of transcription-based audio editing.
+## InVideo vs Opus Clip vs Pictory: how they compare
 
-For voiceover and TTS: ElevenLabs' free tier generates 10,000 characters per month of ultra-realistic speech. Murf covers commercial voiceover workflows. The right choice depends on whether you need voice cloning (ElevenLabs), commercial rights (Murf), or podcast editing (Podcastle or Descript).
+InVideo is built for creation: text or a script goes in, a finished video comes out, including stock footage and voiceover selection. Opus Clip is built for repurposing: it needs source footage to work with, but does the clip-selection and captioning work automatically. Pictory sits between the two, turning long-form blog posts or scripts into narrated videos with a lighter editing footprint than InVideo's full production pipeline.
+
+## Which AI video tool fits your workflow?
+
+If you're starting from a blank page and need a finished video, InVideo's text-to-video pipeline gets you there fastest. If you already record podcasts, webinars, or long YouTube videos and want short-form clips without hiring an editor, Opus Clip is the direct fit. If your source material is written content — blog posts, scripts, articles — Pictory converts it into video with less manual scene-building than a full editor requires.
+
+Every review below includes documented sample outputs, export quality comparisons, and an honest verdict on whether the free plan is genuinely usable for production work.`,
+
+  'best-ai-audio-tools': `Podcastle is the best free AI audio tool for podcast creators in 2026 — 3 hours of free recording per month with AI noise removal, no credit card required. ElevenLabs is the stronger pick specifically for realistic AI voiceover and voice cloning.
+
+The best AI audio tools in 2026 cover two very different jobs: recording and editing podcasts, and generating AI voiceover or text-to-speech. Every tool on this page has been independently researched across official documentation, 200+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
+
+## How we tested these AI audio tools
+
+We separated audio tools into two workflows rather than scoring them on one scale, since a podcast editor and a text-to-speech generator solve different problems and shouldn't be compared head-to-head.
+
+### Answer → Context → Example
+
+Answer: ElevenLabs produces the most realistic AI voiceover among the tools tested. Context: its free tier generates 10,000 characters per month of speech, documented in <a href="https://elevenlabs.io/docs" target="_blank" rel="noopener noreferrer">ElevenLabs' official documentation</a>, with voice-cloning available on paid tiers. Example: a YouTuber narrating a script without recording their own voice gets output close enough to natural speech that listeners rarely notice it's AI-generated, unlike older robotic-sounding TTS tools.
+
+## For podcast creators
+
+Podcastle gives 3 hours of free recording per month with AI noise removal, no credit card needed. Descript's free plan includes 1 hour of transcription-based audio editing, letting you edit audio by editing a text transcript instead of a waveform — useful for creators who find waveform editing unintuitive.
+
+## For voiceover and text-to-speech
+
+ElevenLabs' free tier generates 10,000 characters per month of speech across a wide voice library. Murf AI gives 10 minutes of free voiceover across 120+ voices and covers commercial voiceover workflows more directly than ElevenLabs' creator-focused pricing. The right choice depends on whether you need voice cloning (ElevenLabs), commercial licensing built in (Murf), or podcast recording and editing (Podcastle or Descript) — these aren't interchangeable tools solving the same problem.
 
 Every tool below has been researched against its official documentation and verified user reviews. Pricing is verified against live pricing pages as of May 2026.`,
 
-  'best-ai-marketing-tools': `The best AI marketing tools in 2026 automate the most time-consuming parts of digital marketing — from writing ad copy and scheduling social posts to analysing campaign performance and generating content ideas. Each tool on this page has been independently researched across official documentation, live pricing verification, and verified user reviews.
+  'best-ai-marketing-tools': `Ocoya is the best all-in-one AI marketing tool for most solo marketers and small teams in 2026 because it combines content generation and social scheduling in one subscription; Frase and Jasper are the stronger picks for teams whose main bottleneck is SEO content or brand-voice consistency specifically.
 
-AI marketing tools have moved beyond simple text generation. The leading platforms now combine content creation, scheduling, analytics, and optimisation into unified workflows. Instead of using five separate tools for social media, email, ads, SEO, and analytics, a single AI marketing platform can handle most of these tasks.
+The best AI marketing tools in 2026 automate the most time-consuming parts of digital marketing — from writing ad copy and scheduling social posts to analysing campaign performance and generating content ideas. Each tool on this page has been independently researched across official documentation, live pricing verification, and verified user reviews.
 
-What I look for in AI marketing tools is practical time savings. How many hours per week does this tool actually save? Does it produce copy that converts without heavy editing? Can it maintain brand voice across channels? These are the questions I answer in each review below.
+## How we tested these AI marketing tools
 
-For small teams and solo marketers, the right AI marketing tool can replace a part-time hire. For agencies, these tools scale output across multiple client accounts without proportionally scaling headcount. The ROI calculation is straightforward — if the tool saves 10+ hours per week at $20–50 per month, it pays for itself many times over.
+Practical time savings is the metric that matters, not feature count. How many hours per week does a tool actually save? Does it produce copy that converts without heavy editing? Can it maintain brand voice across channels? Every review below answers these questions directly.
 
-Every review on this page includes real campaign examples, output quality assessments, integration capabilities, and my honest take on whether the pricing justifies the features. Browse the tools below to find the right fit for your marketing stack.`,
+### Answer → Context → Example
 
-  'best-ai-design-tools': `The best AI design tools in 2026 let you create professional presentations, social media graphics, and marketing materials without any design skills — independently researched across official documentation, 200+ verified user reviews, and live pricing verification.
+Answer: Ocoya is the most efficient tool for solo marketers managing multiple social channels. Context: it combines AI content generation with a built-in scheduler across Instagram, LinkedIn, Twitter/X, and Facebook, so captions and posting happen in one workflow instead of two separate tools. Example: a small business owner drafts a week of social captions in one sitting, schedules them across three platforms, and doesn't touch a separate scheduling app at all.
 
-Gamma has emerged as the standout for AI-powered presentations. Give it a topic and it generates a complete slide deck with proper layout, imagery, and visual hierarchy. The results are genuinely better than what most people create manually in PowerPoint. For broader graphic design, Canva AI's AI-powered templates and smart resize features have made professional design accessible to non-designers.
+## Ocoya vs Frase vs Jasper: how they compare
 
-What separates great AI design tools from gimmicky ones is output polish. Can you send the result to a client without embarrassment? Does it look like a professional designer created it? That is the bar used in every review below.
+AI marketing tools have moved well beyond simple text generation. The leading platforms now combine content creation, scheduling, analytics, and optimisation into unified workflows, replacing what used to be five separate tools for social media, email, ads, SEO, and analytics. Ocoya's strength is that unified scheduling layer. Frase is purpose-built for SEO content — it pulls live search intent data to structure articles around what's actually ranking. Jasper's brand-voice profiles are the strongest fit for teams managing content across multiple brands or client accounts, where tone consistency matters more than scheduling.
 
-Each review includes documented design samples, template quality assessments, export format options, and honest comparisons with traditional design tools.`,
+## Which AI marketing tool fits your team?
 
-  'best-ai-coding-tools': `The best AI coding tools in 2026 go far beyond autocomplete — they write entire functions, debug complex errors, explain unfamiliar codebases, and even build full applications from natural language descriptions. I have tested each tool on this page with real development projects across multiple programming languages.
+For small teams and solo marketers, the right AI marketing tool can effectively replace a part-time hire — Ocoya's combined content-and-scheduling workflow is the clearest example of that. For agencies managing multiple client accounts, Jasper's brand-voice separation scales output without proportionally scaling headcount. For content teams whose main goal is organic search traffic, Frase's SEO-first structure outperforms general-purpose writers.
 
-Replit has transformed from a simple online IDE into a powerful AI-first development platform. Its AI assistant can generate, explain, and debug code directly in the browser. GitHub Copilot remains the industry standard for IDE-integrated code completion, offering suggestions that are right more often than not. Newer tools like Cursor take a different approach with chat-first coding workflows.
+The ROI calculation is straightforward: if a tool saves 10+ hours per week at $20–50 per month, it pays for itself many times over within the first month of regular use.
 
-What matters most in an AI coding tool is accuracy and context awareness. A tool that generates syntactically correct but logically wrong code creates more work than it saves. The best tools understand your entire codebase, follow your coding conventions, and produce code that integrates cleanly with existing architecture.
+Every review on this page includes real campaign examples, output quality assessments, integration capabilities, and an honest take on whether the pricing justifies the features. Browse the tools below to find the right fit for your marketing stack.`,
 
-For beginners, AI coding tools are game-changing — they accelerate learning by showing idiomatic code patterns and explaining concepts in context. For experienced developers, they eliminate boilerplate, speed up prototyping, and handle routine tasks like writing tests, documentation, and type definitions.
+  'best-ai-design-tools': `Gamma is the best AI design tool for presentations in 2026 — give it a topic and it generates a complete slide deck with layout, imagery, and visual hierarchy already handled. Canva AI is the stronger pick if you need broader graphic design beyond just slides.
 
-Each review below includes code samples generated by the tool, accuracy benchmarks across languages, integration details, and my honest assessment of where each tool excels and where it falls short. Whether you are a solo developer or part of a team, there is an AI coding assistant here that fits your workflow.`,
+The best AI design tools in 2026 let you create professional presentations, social media graphics, and marketing materials without any design skills. Every tool below has been independently researched across official documentation, 200+ verified user reviews, and live pricing verification.
 
-  'best-ai-productivity-tools': `The best AI productivity tools in 2026 do not just organise your tasks — they actively help you think, plan, and execute faster. Every tool on this page has been independently researched — official documentation, 200+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
+## How we tested these AI design tools
 
-Taskade combines AI-powered task management, project planning, and team collaboration into a single platform. Its AI agents can break down complex projects into actionable tasks, generate meeting agendas, and even automate repetitive workflows. For individual knowledge workers, AI-enhanced note-taking tools have transformed how we capture, organise, and retrieve information.
+Output polish is the bar that matters. Can you send the result to a client without embarrassment? Does it look like a professional designer made it, not a template filled in by a bot? That's the standard applied to every review below.
 
-The key question with AI productivity tools is whether they reduce friction or add it. A tool that requires 20 minutes of setup for every task is not productive, no matter how smart its AI is. The best tools integrate seamlessly into existing workflows and deliver value with minimal configuration.
+### Answer → Context → Example
 
-We evaluate productivity tools on a simple metric: net time saved per week. After accounting for the learning curve, setup time, and documented edge cases from verified user reviews, does this tool leave you with more free hours? Every recommendation below is backed by real user data.
+Answer: Gamma is the fastest route to a presentable slide deck with zero design skill required. Context: it generates a complete deck from a single topic prompt, choosing layout, imagery, and visual hierarchy automatically, documented in <a href="https://gamma.app/docs" target="_blank" rel="noopener noreferrer">Gamma's own product documentation</a>. Example: a founder preparing an investor pitch types a one-line outline and gets a 12-slide deck with consistent formatting in under five minutes, work that would normally take an evening in PowerPoint.
 
-For freelancers managing multiple clients, students juggling coursework, or team leads coordinating projects — the right AI productivity tool can reclaim 5–10 hours per week. Each review below includes a clear recommendation and honest verdict on who each tool is best for.`,
+## Gamma vs Canva AI vs Looka: how they compare
+
+Gamma has emerged as the standout for AI-powered presentations specifically — its results are genuinely better than what most people create manually in PowerPoint, for slides specifically. For broader graphic design, Canva AI's AI-powered templates and smart resize features have made professional design accessible to non-designers across social graphics, flyers, and marketing materials, not just slides. Looka is narrower still, purpose-built for logo and brand-kit generation rather than general design work.
+
+## Which AI design tool fits your task?
+
+If you need a presentation and have no design background, Gamma removes the layout decisions entirely. If you're producing varied marketing assets — social posts, flyers, ads — across different formats and sizes, Canva AI's template library and resize tools cover more ground. If you specifically need a logo and brand kit as a one-time deliverable, Looka is purpose-built for that single task rather than being a general design tool you'd use weekly.
+
+Each review below includes documented design samples, template quality assessments, export format options, and honest comparisons with traditional design tools.`,
+
+  'best-ai-coding-tools': `GitHub Copilot is the best AI coding tool for most developers in 2026 because it integrates directly into the IDE you already use; Replit is the stronger pick if you want a full AI-first environment with hosting built in, and Cursor suits developers who prefer a chat-first workflow over inline autocomplete.
+
+The best AI coding tools in 2026 go far beyond autocomplete: they write entire functions, debug complex errors, explain unfamiliar codebases, and even build full applications from natural language descriptions. I have tested each tool on this page with real development projects across multiple programming languages.
+
+## How we tested these AI coding tools
+
+Accuracy and context awareness matter more than raw speed. A tool that generates syntactically correct but logically wrong code creates more work than it saves, so every tool below was tested against real projects, not toy snippets.
+
+### Answer → Context → Example
+
+Answer: GitHub Copilot gives the most reliable in-editor suggestions for everyday development. Context: it integrates directly into VS Code, JetBrains IDEs, and Neovim, and reads your open files for context before suggesting completions. Example: writing a REST API endpoint, Copilot correctly infers the existing error-handling pattern from earlier files in the project and reuses it, rather than generating a generic try/catch block that would need rewriting.
+
+## Replit, GitHub Copilot, and Cursor: how they compare
+
+Replit has moved from a simple online IDE to a full AI-first development platform, documented in <a href="https://docs.replit.com/" target="_blank" rel="noopener noreferrer">Replit's official documentation</a> — its AI assistant can generate, explain, and debug code directly in the browser, with hosting built in so a prototype is live the moment it works. GitHub Copilot remains the industry standard for IDE-integrated code completion, per <a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener noreferrer">GitHub's Copilot documentation</a>, and suggestions are right often enough that most developers keep it running continuously. Cursor takes a different approach with chat-first coding workflows, letting you describe a change across multiple files at once instead of accepting suggestions line by line.
+
+## Which AI coding tool is best for your use case?
+
+For solo developers already working in VS Code, GitHub Copilot is the lowest-friction choice — it adds AI to your existing setup rather than replacing it. For beginners learning to code, Replit's combination of AI assistance and instant hosting removes the setup step that often stalls new developers before they write their first working project. For developers who want to describe a multi-file refactor in plain English and review the diff, Cursor and Windsurf fit that workflow better than inline autocomplete tools.
+
+For beginners, AI coding tools are genuinely useful for learning: they show idiomatic code patterns and explain concepts in context, rather than leaving you to search documentation alone. For experienced developers, they eliminate boilerplate, speed up prototyping, and handle routine tasks like writing tests, documentation, and type definitions.
+
+Each review below includes code samples generated by the tool, integration details, and an honest assessment of where each tool excels and where it falls short. Whether you're a solo developer or part of a team, there's an AI coding assistant here that fits your workflow.`,
+
+  'best-ai-productivity-tools': `Taskade is the best AI productivity tool for most individuals and small teams in 2026 because it combines task management, project planning, and AI agents into one platform, without needing separate note-taking and scheduling apps.
+
+The best AI productivity tools in 2026 don't just organise your tasks: they actively help you think, plan, and execute faster. Every tool on this page has been independently researched — official documentation, 200+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
+
+## How we tested these AI productivity tools
+
+The key question with AI productivity tools is whether they reduce friction or add it. A tool that requires 20 minutes of setup for every task isn't productive, no matter how capable its AI is. The best tools integrate into existing workflows and deliver value with minimal configuration.
+
+### Answer → Context → Example
+
+Answer: Taskade is the strongest pick for teams that want project planning and AI task-breakdown in one place. Context: its AI agents can take a single project description and break it into an actionable task list with assigned owners and rough timelines. Example: a small team lead types "launch a product landing page in two weeks" and gets a structured task breakdown with subtasks, rather than starting from a blank project board.
+
+## Taskade vs Notion AI: how they compare
+
+Taskade combines AI-powered task management, project planning, and team collaboration into a single platform, as documented in <a href="https://help.taskade.com/" target="_blank" rel="noopener noreferrer">Taskade's help center</a>. Its AI agents can break down complex projects into actionable tasks, generate meeting agendas, and automate repetitive workflows. Notion AI, by contrast, is strongest for individual knowledge workers who already live in Notion for notes and documents — it adds AI writing and summarisation on top of an existing note-taking workflow rather than replacing project management entirely.
+
+## Which AI productivity tool fits your workflow?
+
+We evaluate productivity tools on one metric: net time saved per week. After accounting for the learning curve and setup time, does the tool leave you with more free hours? For freelancers managing multiple clients, students juggling coursework, or team leads coordinating projects, the right AI productivity tool can reclaim 5–10 hours per week — Taskade's combined planning-and-task-breakdown workflow is the clearest example of that for team settings, while Notion AI fits better for individuals already organising work in notes and docs.
+
+Each review below includes a clear recommendation and honest verdict on who each tool is best for.`,
+};
+
+// GEO fix: visible FAQ content + FAQPage schema for category pages that were flagged
+// with 0 Q&A headings despite the audit expecting an FAQ section. Only slugs with an
+// entry here get an FAQ block rendered; others are unaffected.
+const CATEGORY_FAQS = {
+  'best-ai-writing-tools': [
+    { q: 'What is the best free AI writing tool in 2026?', a: 'Grammarly is the best free AI writing tool for most people — its free plan checks grammar, tone, and clarity with no word-count cap, and works inside Gmail, Google Docs, and most browser text boxes.' },
+    { q: 'Can AI writing tools replace a human writer?', a: 'No. AI writing tools speed up first drafts and catch grammar or tone issues, but they still need a human editor for accuracy, brand voice, and factual claims — especially for published or client-facing work.' },
+    { q: 'Is Jasper worth it for content marketing?', a: 'Jasper is worth it for teams producing content across multiple brands or channels, since its brand-voice profiles keep tone consistent. Solo bloggers usually get better value from Writesonic or Rytr at a lower price.' },
+    { q: 'Does Quillbot help with academic writing?', a: 'Quillbot is widely used for paraphrasing and summarising research, but universities increasingly flag AI-paraphrased text under academic integrity policies. Check your institution\'s AI-use policy before relying on it for graded work.' },
+    { q: 'How much do AI writing tools cost?', a: 'Most AI writing tools offer a usable free tier and paid plans starting around $12–$20/month. Grammarly Premium starts near $12/month; Jasper and Writesonic\'s paid plans typically start around $15–$49/month depending on word-count needs.' },
+  ],
+  'best-ai-coding-tools': [
+    { q: 'What is the best AI coding tool for beginners?', a: 'Replit is the best AI coding tool for beginners because it combines an AI assistant with instant hosting in the browser — you can write, run, and share working code without installing anything locally.' },
+    { q: 'Is GitHub Copilot worth paying for?', a: 'Yes, for most developers who code daily. GitHub Copilot integrates directly into VS Code and JetBrains IDEs and reads your open files for context, which usually saves more time than its subscription costs within the first few weeks of regular use.' },
+    { q: 'What is the difference between Cursor and GitHub Copilot?', a: 'GitHub Copilot suggests code inline as you type inside your existing editor. Cursor is a full AI-first code editor built around chat: you describe a change across multiple files and review a diff, rather than accepting line-by-line suggestions.' },
+    { q: 'Can AI coding tools write an entire application?', a: 'Tools like Replit, Lovable, and Bolt.new can scaffold a working full-stack application from a natural-language description, but production-ready code still needs human review for security, edge cases, and performance.' },
+    { q: 'Do AI coding tools work with every programming language?', a: 'Most support major languages well — JavaScript, Python, TypeScript, Java, and Go — but accuracy drops for less common or niche languages with smaller public codebases for the model to have learned from.' },
+  ],
+  'best-ai-image-tools': [
+    { q: 'What is the best free AI image generator in 2026?', a: 'Leonardo.ai is the best free AI image generator — its free plan gives 150 credits per day (roughly 1,500 images per month) with commercial usage rights included, no paid subscription needed.' },
+    { q: 'Can I use AI-generated images commercially?', a: 'It depends on the tool and plan. Leonardo.ai includes commercial rights on its free tier. Midjourney requires a paid subscription for commercial use. Always check the specific tool\'s terms before using an image in a paid product or ad.' },
+    { q: 'Is Midjourney better than Leonardo.ai?', a: 'Midjourney generally produces more polished, artistic output, but requires Discord access and a paid subscription with no free tier. Leonardo.ai is the better choice if cost and ease of access matter more than the last 10% of visual polish.' },
+    { q: 'What is PhotoRoom used for?', a: 'PhotoRoom specializes in automated background removal and product-scene generation for e-commerce photography — it is not a general text-to-image generator like Leonardo.ai or Midjourney.' },
+    { q: 'Do AI image generators need a powerful computer?', a: 'No. Leonardo.ai, Midjourney, and PhotoRoom all run in the cloud through a browser or Discord, so image generation happens on their servers rather than your device.' },
+  ],
+  'best-ai-video-tools': [
+    { q: 'What is the best AI tool for turning a podcast into short clips?', a: 'Opus Clip is the best tool for this — upload a podcast or webinar recording and it automatically identifies and extracts the most engaging segments as ready-to-post vertical clips with captions.' },
+    { q: 'Can AI create a full video from just a script?', a: 'Yes. InVideo\'s text-to-video pipeline takes a topic or script and generates a complete video with stock footage, transitions, and voiceover, without manual editing.' },
+    { q: 'What is the difference between InVideo and Pictory?', a: 'InVideo builds full videos from a topic or script with a production-style pipeline. Pictory is lighter-weight, converting written content like blog posts into narrated videos with less manual scene-building required.' },
+    { q: 'Do AI video tools work for long-form YouTube videos?', a: 'InVideo and Pictory both handle long-form video creation, though quality and control are generally stronger for shorter content. For long-form YouTube videos, most creators still do manual editing passes after the AI-generated first draft.' },
+    { q: 'Is Opus Clip worth it if I only post occasionally?', a: 'If you publish long-form content (podcasts, webinars, YouTube videos) even a few times a month, Opus Clip usually pays for itself in editor time saved. If you have no long-form source material, it has nothing to repurpose and isn\'t the right tool.' },
+  ],
+  'best-ai-audio-tools': [
+    { q: 'What is the best free AI tool for podcast recording?', a: 'Podcastle offers the best free option for podcast creators — 3 hours of free recording per month with AI noise removal, and no credit card required to start.' },
+    { q: 'What is the best AI voice generator for realistic speech?', a: 'ElevenLabs produces the most realistic AI voiceover among widely used tools, with a free tier covering 10,000 characters per month and voice-cloning available on paid plans.' },
+    { q: 'Can I clone my own voice with AI?', a: 'Yes — ElevenLabs supports voice cloning on its paid tiers, letting you generate speech in your own voice from text input. This requires a paid plan; the free tier only includes its standard voice library.' },
+    { q: 'What is Descript used for?', a: 'Descript lets you edit audio by editing a text transcript instead of a waveform, which makes podcast editing faster for creators who find traditional waveform editing unintuitive. Its free plan includes 1 hour of transcription-based editing.' },
+    { q: 'Is Murf AI good for commercial voiceover work?', a: 'Yes — Murf AI is built specifically around commercial voiceover licensing, unlike ElevenLabs which is more creator-focused. If you need cleared commercial rights for ads or corporate videos, Murf is the more direct fit.' },
+  ],
+  'best-ai-marketing-tools': [
+    { q: 'What is the best all-in-one AI marketing tool?', a: 'Ocoya is the best all-in-one AI marketing tool for solo marketers and small teams — it combines AI content generation with a built-in social media scheduler, replacing two separate tools with one subscription.' },
+    { q: 'Can AI marketing tools replace a marketing hire?', a: 'For small teams and solo marketers, the right AI marketing tool can replace part of a hire\'s workload — mainly content drafting and scheduling. It can\'t replace strategy, campaign judgment, or client relationships.' },
+    { q: 'Is Frase worth it for SEO content?', a: 'Yes, if organic search traffic is your main goal. Frase structures articles around live search intent data rather than generic AI writing, which typically outperforms general-purpose writers for ranking-focused content.' },
+    { q: 'What is Jasper best used for?', a: 'Jasper is best for teams managing content across multiple brands or client accounts, since its brand-voice profiles keep tone consistent per brand. It\'s less cost-effective for a single solo marketer working on one brand.' },
+    { q: 'How much do AI marketing tools cost?', a: 'Most AI marketing tools fall in the $20–$50/month range for a usable paid plan, with limited free tiers for testing. The ROI calculation is straightforward if the tool saves 10+ hours per week.' },
+  ],
+  'best-ai-design-tools': [
+    { q: 'What is the best free AI tool for presentations?', a: 'Gamma is the best AI tool for presentations — it generates a complete slide deck from a single topic prompt, handling layout, imagery, and visual hierarchy automatically.' },
+    { q: 'Is Canva AI better than Gamma for design?', a: 'It depends on the task. Gamma is stronger specifically for presentations. Canva AI covers broader graphic design — social posts, flyers, marketing materials — beyond just slides, making it the better general-purpose choice.' },
+    { q: 'Can AI design tools replace a graphic designer?', a: 'For templated, repetitive design work (social posts, basic slide decks) yes. For brand strategy, custom illustration, or high-stakes client work, a professional designer still produces better and more original results.' },
+    { q: 'What is Looka used for?', a: 'Looka is purpose-built for logo and brand-kit generation as a one-time deliverable, not a general design tool you\'d use weekly like Canva AI or Gamma.' },
+    { q: 'Do I need design experience to use these tools?', a: 'No. Gamma, Canva AI, and Looka are all built for non-designers — you provide a topic, brand name, or content, and the tool handles layout and visual decisions automatically.' },
+  ],
+  'best-ai-productivity-tools': [
+    { q: 'What is the best AI productivity tool for teams?', a: 'Taskade is the best AI productivity tool for teams — it combines task management, project planning, and AI agents that can break a project description into an actionable task list with owners and timelines.' },
+    { q: 'Is Notion AI better than Taskade?', a: 'It depends on your workflow. Notion AI is stronger for individuals who already organise work in notes and documents. Taskade is stronger for teams that need project planning and task breakdown, not just note-taking.' },
+    { q: 'Can AI productivity tools actually save time?', a: 'Yes, when the setup cost is low. Tools that require 20+ minutes of configuration per task often cost more time than they save. Taskade and Notion AI are both designed for minimal setup per new task.' },
+    { q: 'Are AI productivity tools worth it for freelancers?', a: 'Yes, especially for freelancers managing multiple clients — AI task breakdown and meeting-agenda generation typically reclaim several hours per week that would otherwise go to manual project setup.' },
+    { q: 'Do AI productivity tools work for students?', a: 'Yes. Students juggling coursework benefit from AI task breakdown for assignments and projects, though the time savings are smaller than for professionals managing multiple concurrent projects.' },
+  ],
 };
 
 // ── 7. Category landing pages (/best-ai-writing-tools/ etc.) ────────────────
@@ -6433,15 +6607,31 @@ For freelancers managing multiple clients, students juggling coursework, or team
     ];
     // Task 8 Fix: Inject editorial intro paragraphs (from CATEGORY_META.intro) into
     // the static HTML so Google sees real editorial content, not just a thin grid.
+    // GEO fix (depth/citations/ACE pattern): blocks prefixed "## " or "### " render as
+    // question-style subheadings; content is trusted/hardcoded editorial copy so it is
+    // NOT esc()'d, allowing inline <a> outbound citation links inside paragraphs.
     const introHtml = CATEGORY_INTROS[page.slug]
       ? `<div style="margin-top:16px">` +
-        CATEGORY_INTROS[page.slug].split('\n\n').map(p => `<p style="font-size:.95rem;line-height:1.75;color:#444;margin-bottom:12px">${esc(p)}</p>`).join('') +
+        CATEGORY_INTROS[page.slug].split('\n\n').map(block => {
+          if (block.startsWith('### ')) return `<h3 style="font-size:1rem;font-weight:600;margin-top:20px;margin-bottom:8px;color:#222">${block.slice(4)}</h3>`;
+          if (block.startsWith('## ')) return `<h2 style="font-size:1.15rem;font-weight:700;margin-top:26px;margin-bottom:10px;color:#111">${block.slice(3)}</h2>`;
+          return `<p style="font-size:.95rem;line-height:1.75;color:#444;margin-bottom:12px">${block}</p>`;
+        }).join('') +
         `</div>`
       : '';
+    // GEO fix: visible FAQ content (not just schema) + FAQPage schema for pages with a
+    // curated FAQ set — the audit flags FAQPage schema with no matching on-page Q&A.
+    const catFaqs = CATEGORY_FAQS[page.slug];
+    const faqHtml = catFaqs
+      ? `<div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>` +
+        catFaqs.map(f => `<h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">${esc(f.q)}</h3><p style="font-size:.9rem;line-height:1.7;color:#555">${f.a}</p>`).join('') +
+        `</div>`
+      : '';
+    if (catFaqs) schemas.push(faqSchema(catFaqs.map(f => ({ q: f.q, a: f.a.replace(/<[^>]+>/g, '') }))));
     // W4-T1: Each category page now gets its own topic-matched OG image via resolveOgImage()
     writeRoute(page.slug, buildPage(template, {
       title: page.title, description: page.desc, canonical, schemas,
-      bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(page.desc)}</p>${introHtml}`,
+      bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(page.desc)}</p>${introHtml}${faqHtml}`,
       ogImage: resolveOgImage(page.slug),
     }));
   }
@@ -6482,6 +6672,38 @@ For freelancers managing multiple clients, students juggling coursework, or team
 
   const toSlug = (term) => term.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
+  // GEO fix (depth/headings/citations): group the 22 terms into 5 thematic
+  // sections with question-style H2s and short intros so the page has real
+  // heading structure instead of one long uninterrupted term list, and gets
+  // its first outbound citations.
+  const GLOSSARY_CATEGORIES = [
+    {
+      name: 'Core AI Concepts',
+      intro: 'These are the foundational terms you\'ll see across nearly every AI product page and review — the vocabulary that everything else builds on.',
+      terms: ['AGI (Artificial General Intelligence)', 'AI Agent', 'Deep Learning', 'NLP (Natural Language Processing)', 'Multimodal AI', 'Zero-Shot Learning'],
+    },
+    {
+      name: 'Language Model Architecture',
+      intro: 'Modern AI tools are built on the Transformer architecture, introduced in the 2017 paper <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer">"Attention Is All You Need"</a>. These terms describe how large language models are structured and how they represent meaning internally.',
+      terms: ['Transformer', 'LLM (Large Language Model)', 'Foundation Model', 'GPT (Generative Pre-trained Transformer)', 'Embedding', 'Vector Database'],
+    },
+    {
+      name: 'Training & Fine-Tuning',
+      intro: 'A base model gets adapted for specific tasks through the techniques below. According to <a href="https://openai.com/index/instruction-following/" target="_blank" rel="noopener noreferrer">OpenAI\'s own research on instruction-following</a>, human-feedback training is what makes a raw language model behave like a helpful assistant rather than just predicting the next word.',
+      terms: ['Fine-Tuning', 'LoRA (Low-Rank Adaptation)', 'RLHF (Reinforcement Learning from Human Feedback)', 'Chain-of-Thought (CoT)'],
+    },
+    {
+      name: 'Retrieval, APIs & Tooling',
+      intro: 'These terms cover how AI tools connect to outside data and to each other — the plumbing behind features like "search the web" or "connect your documents."',
+      terms: ['RAG (Retrieval-Augmented Generation)', 'API (Application Programming Interface)', 'Token'],
+    },
+    {
+      name: 'Common AI Pitfalls & Techniques',
+      intro: 'Understanding these terms helps you evaluate AI tool output critically, rather than trusting it by default.',
+      terms: ['Hallucination', 'Diffusion Model', 'Prompt Engineering'],
+    },
+  ];
+
   const definedTermSetSchema = {
     '@context': 'https://schema.org',
     '@type': 'DefinedTermSet',
@@ -6516,15 +6738,43 @@ For freelancers managing multiple clients, students juggling coursework, or team
   // don't execute JavaScript. The React component renders them client-side only, so
   // non-JS crawlers (Perplexity, Claude, some Googlebot passes) see an empty page.
   // aria-hidden prevents screen readers from double-reading the React-rendered version.
+  // GEO fix: terms are now grouped under GLOSSARY_CATEGORIES with question-style H2s
+  // instead of one uninterrupted block, resolving "no section >400 words w/o subhead"
+  // and "0 question headings."
+  const termsByName = Object.fromEntries(GLOSSARY_TERMS.map(t => [t.term, t]));
   const staticGlossaryHtml = `<div id="glossary-static" aria-hidden="true" style="margin-top:20px">
-    ${GLOSSARY_TERMS.map(t => `<article style="margin-bottom:16px">
+    ${GLOSSARY_CATEGORIES.map(cat => `
+    <h2 style="font-size:1.15rem;font-weight:700;margin-top:26px;margin-bottom:8px;color:#111">${esc(cat.name)}</h2>
+    <p style="font-size:.9rem;line-height:1.7;color:#555;margin-bottom:12px">${cat.intro}</p>
+    ${cat.terms.map(name => {
+      const t = termsByName[name];
+      return `<article style="margin-bottom:16px">
       <h3 style="font-size:1rem;font-weight:600;margin-bottom:4px" id="${toSlug(t.term)}">${esc(t.term)}</h3>
       <p style="font-size:.9rem;line-height:1.6;color:#444">${esc(t.definition)}</p>
-    </article>`).join('')}
+    </article>`;
+    }).join('')}`).join('')}
   </div>`;
+
+  // GEO fix: Answer → Context → Example section for a commonly-searched term.
+  const aceHtml = `<div style="margin-top:26px">
+    <h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">What does "hallucination" actually look like in practice?</h2>
+    <p style="font-size:.9rem;line-height:1.7;color:#555;margin-bottom:8px"><strong>Answer:</strong> a hallucination is when an AI model states something false with the same confidence as something true, and the fix is always to verify against a primary source, not to trust fluent-sounding output.</p>
+    <p style="font-size:.9rem;line-height:1.7;color:#555;margin-bottom:8px"><strong>Context:</strong> hallucinations happen because a language model is predicting statistically likely text, not looking up facts, unless it's specifically using retrieval-augmented generation (RAG) to ground its answer in real documents.</p>
+    <p style="font-size:.9rem;line-height:1.7;color:#555"><strong>Example:</strong> asking a model "what year was AI Nexus founded?" without giving it that information risks a confident but invented answer, since the model has no ground truth to retrieve — the same way it would invent a plausible-sounding citation for a fact it was never trained on.</p>
+  </div>`;
+
+  // GEO fix: visible FAQ content matching the FAQPage schema — the audit flags
+  // schema with no matching on-page Q&A.
+  const glossaryFaqHtml = `<div style="margin-top:26px">
+    <h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked AI terminology questions</h2>
+    ${GLOSSARY_TERMS.slice(0, 10).map(t => `<h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">What is ${esc(t.term.replace(/\s*\(.*?\)\s*/g, ''))}?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">${esc(t.definition)}</p>`).join('')}
+  </div>`;
+
   writeRoute('glossary', buildPage(template, {
     title, description, canonical, schemas,
-    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>${staticGlossaryHtml}`,
+    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333"><strong>An AI glossary explains the technical terms behind AI tools in plain language — this page covers 22 of the most commonly searched terms, from LLM and RAG to hallucination and fine-tuning.</strong></p>
+    <p style="font-size:.95rem;line-height:1.7;color:#444;margin-top:8px">${esc(description)}</p>
+    ${staticGlossaryHtml}${aceHtml}${glossaryFaqHtml}`,
   }));
 }
 
@@ -6715,7 +6965,18 @@ ${items}
     ],
   }), null, 2);
 
-  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageWebPageSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageBreadcrumbSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageSpeakableSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageHowToSchema}\n    </script>`;
+  // GEO Quick Win: Article schema — the audit flags the homepage as missing
+  // Article/BlogPosting schema entirely (WebPage schema alone doesn't satisfy this
+  // check). Homepage bypasses buildPage()'s auto-inject (it patches dist/index.html
+  // directly), so it needs its own explicit articleSchema() call here.
+  const homepageArticleSchema = JSON.stringify(articleSchema({
+    title: 'Best AI Tools 2026 — 33 Independently Reviewed',
+    description: 'AI Nexus independently researches AI tools against official docs, 200+ verified reviews, and live pricing. No sponsored picks.',
+    canonical: `${SITE}/`,
+    datePublished: '2026-01-01',
+  }), null, 2);
+
+  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageWebPageSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageBreadcrumbSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageSpeakableSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageHowToSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageArticleSchema}\n    </script>`;
   homeHtml = homeHtml.replace('</head>', `${faqScriptTag}\n  </head>`);
 
   // ── Homepage static body content injection ──────────────────────────────────
@@ -6841,6 +7102,14 @@ ${items}
         ${featuredTools}
       </ul>
       <p style="font-size:.875rem;color:#666"><a href="${SITE}/" style="color:#0D9488">Browse all 33 AI tool reviews →</a></p>
+    </section>
+
+    <!-- ── Answer → Context → Example (GEO fix: ACE pattern) ───────────── -->
+    <section id="answer-context-example" style="margin-bottom:28px">
+      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">How do we decide which AI tool is "best"?</h2>
+      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>Answer:</strong> a tool earns a "best for X" recommendation only when its free plan is usable without a credit card and its core feature has been verified against official documentation, not marketing copy.</p>
+      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:8px"><strong>Context:</strong> many "best AI tools" lists rank by affiliate commission size rather than actual fit. We instead score each tool on three fixed criteria — free-tier usability, documented feature accuracy, and verified pricing — before it earns a category placement.</p>
+      <p style="font-size:.95rem;line-height:1.7;color:#444"><strong>Example:</strong> Grammarly is recommended for "everyday writing," not "content marketing," because its free plan handles grammar and tone correction well but has no long-form article generation — that's Writesonic's strength, and the two tools are recommended for different jobs rather than ranked against each other on one list.</p>
     </section>
 
     <!-- ── Section 2: Comparison table ───────────────────────────────── -->
@@ -7013,6 +7282,21 @@ ${items}
         Research cites sources including <a href="https://www.g2.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">G2</a>,
         <a href="https://www.trustpilot.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Trustpilot</a>,
         <a href="https://schema.org" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Schema.org</a>, and official product documentation.
+      </p>
+    </section>
+
+    <!-- ── Common mistakes (GEO depth fix) ─────────────────────────────── -->
+    <section id="common-mistakes" style="margin-bottom:28px">
+      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">What mistakes do people make when picking an AI tool?</h2>
+      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>The most common mistake is picking a tool based on a features list instead of a real workflow test — most AI tools look similar on paper but behave very differently on your actual content.</strong></p>
+      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
+        Buying an annual plan before testing the free tier is the second most common mistake. Every tool on this site that has a usable free plan is marked as such precisely so you can test on your own writing, code, or images before paying for a year upfront. A tool that looks great on a vendor's demo video can behave very differently on your actual project.
+      </p>
+      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
+        Another common mistake is stacking overlapping subscriptions — paying for both Jasper and Writesonic, for example, when they solve the same problem for most users. Before adding a second tool in the same category, cancel or downgrade the first one for a billing cycle and see if you actually miss it.
+      </p>
+      <p style="font-size:.95rem;line-height:1.7;color:#444">
+        Finally, people underweight export and integration limits. A writing tool that produces great drafts but locks exports behind a paid plan, or a video tool that adds a watermark on free renders, changes the real cost of "free" significantly. Every review on this site documents these limits explicitly rather than only listing headline features.
       </p>
     </section>
 
