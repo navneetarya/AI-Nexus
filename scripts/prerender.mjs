@@ -5466,7 +5466,25 @@ console.log('\nStatic pages:');
       [2, `About ${AUTHOR}`, canonical],
     ]),
   ];
-  writeRoute('about', buildPage(template, { title, description, canonical, schemas }));
+  const aboutBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333">I'm Navneet Arya — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools for real-world workflows first, then write about them. I've systematically researched 24+ tools across writing, audio, video, design, coding, and productivity since 2022, selecting tools for actual workflows before recommending them to others.</p>
+    <p style="font-size:1rem;line-height:1.7;color:#333;margin-top:14px">I built AI Nexus because every "best AI tools" article I found was clearly written by someone who had never actually opened the products. Review sites were copying marketing pages and calling it a review. I got frustrated and decided to build something where every review is based on independent research — official documentation, verified user reviews, and real pricing data.</p>
+    <p style="font-size:1rem;line-height:1.7;color:#333;margin-top:14px">Every tool on this site is independently researched — verified against official documentation, aggregated from 100+ verified user reviews on Trustpilot, G2, and Capterra, and cross-referenced with Reddit community sentiment before I write about it. I focus on what works for solo creators, freelancers, and small teams — not enterprise buyers with unlimited budgets.</p>
+    <h2 style="font-size:1.2rem;margin-top:28px">What I've researched</h2>
+    <p style="font-size:.95rem;line-height:1.6;color:#555">Independently researched AI tools across 8 categories, verified against official docs, user reviews, and live pricing data since 2022: Writing tools (Grammarly, Rytr, QuillBot, Writesonic, Jasper, Frase, ProWritingAid), AI image tools (Leonardo.ai, PhotoRoom, Midjourney, Looka, Canva AI, Adobe Firefly), Video AI tools (InVideo AI, Pictory, Opus Clip, Descript, Kapwing), Podcast &amp; audio (Podcastle, Murf AI, ElevenLabs, Riverside.fm, Adobe Podcast), Productivity apps (Taskade, Notion AI, Perplexity, Otter.ai, Motion, Reclaim), Marketing tools (Ocoya, Buffer, Hootsuite, Beehiiv, Mailchimp), Coding platforms (Replit, GitHub Copilot, Cursor, v0), and Design tools (Gamma, Beautiful.ai, Canva AI, Figma AI).</p>
+    <h2 style="font-size:1.2rem;margin-top:28px">Research methodology — how every review is done</h2>
+    <p style="font-size:.95rem;line-height:1.6;color:#555">Every review is based on independent research: official documentation review, aggregated verified user feedback (Trustpilot, G2, Capterra), Reddit community sentiment analysis, and live pricing verification. INR equivalents are included for the India market. Reviews are updated when tools change their pricing or features.</p>
+    <ol style="font-size:.95rem;line-height:1.7;color:#555;padding-left:20px">
+      <li><strong>Official documentation review</strong> — Every feature claim is verified against the tool's official documentation and changelog, not marketing copy.</li>
+      <li><strong>Verified user review aggregation</strong> — A minimum of 100 verified reviews from Trustpilot, G2, and Capterra per tool, plus Reddit community sentiment analysis.</li>
+      <li><strong>Pricing verification</strong> — All pricing verified against the tool's live pricing page at time of publication, with INR equivalents for the India market.</li>
+      <li><strong>Competitor benchmarking</strong> — Each tool compared against its 2–3 closest alternatives on feature parity, pricing, and use-case fit.</li>
+      <li><strong>Review freshness</strong> — Reviews are updated when tools change pricing or ship significant new features.</li>
+    </ol>
+    <h2 style="font-size:1.2rem;margin-top:28px">Full transparency on how this site earns money</h2>
+    <p style="font-size:.95rem;line-height:1.6;color:#555">This site earns money through affiliate commissions. When you click a link and sign up for a paid plan, I earn a commission — typically 20–30% of the subscription payment, recurring. This does not affect my reviews. I recommend tools because they're genuinely good, not because the commission is high. I only list tools that I have independently researched and would recommend to a friend, and I have turned down sponsorships from tools I don't think are worth recommending. See the <a href="/disclosure/">full affiliate disclosure</a>.</p>
+  `;
+  writeRoute('about', buildPage(template, { title, description, canonical, schemas, bodyHtml: aboutBodyHtml }));
 }
 
 // ── 4. Disclosure page ────────────────────────────────────────────────────────
@@ -5474,12 +5492,25 @@ console.log('\nStatic pages:');
   const canonical = `${SITE}/disclosure/`;
   const title = 'Affiliate Disclosure | AI Nexus';
   const description = `Full affiliate disclosure for AI Nexus. ${AUTHOR} earns a commission when you purchase through links on this site, at no extra cost to you.`;
+  const disclosureBodyHtml = `
+    <h2 style="font-size:1.15rem">What are affiliate links?</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Some links on this website are affiliate links. This means that if you click a link and make a purchase or sign up for a paid plan, AI Nexus may earn a commission. This comes at no additional cost to you.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Does this affect our reviews?</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">No. Tools are reviewed through independent research — official documentation, verified user reviews (Trustpilot, G2, Reddit), and pricing analysis — combined with honest, unsponsored assessment. We have written negative reviews of tools that have affiliate programs, and positive reviews of tools where we earn no commission. The affiliate relationship does not influence the content of any review.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Which tools have affiliate links?</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Some tools featured on AI Nexus contain affiliate or referral links. We may earn a commission if you purchase through these links, at no extra cost to you. However, many tools are included purely because they are useful to our readers. Affiliate partnerships do not influence our reviews, rankings, or recommendations.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Compliance</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">This disclosure complies with the FTC guidelines on endorsements and testimonials, and international standards for affiliate marketing disclosures including ASA (UK) and ACCC (Australia) guidelines.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Contact</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">If you have any questions about our affiliate relationships, contact us at hello@ainexustools.online. See also our <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms of Service</a>.</p>
+  `;
   writeRoute('disclosure', buildPage(template, {
     title,
     description,
     canonical,
     robots: 'index, follow, nosnippet',
     schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Disclosure', canonical]])],
+    bodyHtml: disclosureBodyHtml,
   }));
 }
 
@@ -5502,7 +5533,18 @@ console.log('\nStatic pages:');
       { q: 'Are there any sponsored reviews on AI Nexus?', a: `No. AI Nexus does not accept payment from tool companies to publish positive reviews or adjust ratings. All editorial content reflects ${AUTHOR}'s independent assessment.` },
     ]),
   ];
-  writeRoute('methodology', buildPage(template, { title, description, canonical, schemas }));
+  const methodologyBodyHtml = `
+    <ol style="font-size:.95rem;line-height:1.75;color:#555;padding-left:20px">
+      <li style="margin-bottom:14px"><strong>Official documentation review</strong> — Every feature claim is verified against the tool's official documentation and changelog, not marketing copy or third-party summaries. If the official docs say a feature is paid-only, limited, or in beta, that's what the review reflects.</li>
+      <li style="margin-bottom:14px"><strong>Verified user review aggregation</strong> — A minimum of 100 verified reviews from Trustpilot, G2, and Capterra are analysed for each tool before publication. Reddit communities are also analysed for real-world sentiment that doesn't appear in structured review platforms.</li>
+      <li style="margin-bottom:14px"><strong>Pricing verification</strong> — All pricing is verified against the tool's live pricing page at the time of publication, not cached data or third-party aggregators. Free plan limitations are documented explicitly, and INR equivalents are included for Indian creators and freelancers.</li>
+      <li style="margin-bottom:14px"><strong>Competitor benchmarking</strong> — No tool is reviewed in isolation. Each tool is compared against its 2–3 closest alternatives on feature parity, pricing, and use-case fit using the same evaluation criteria.</li>
+      <li style="margin-bottom:14px"><strong>Review freshness — updated on tool changes</strong> — Each review is updated when tools ship significant new features, change their pricing, or discontinue features the review relies on. Reviews not updated in over 6 months are flagged for re-verification.</li>
+    </ol>
+    <h2 style="font-size:1.15rem;margin-top:24px">The 6-step research process, quantified</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Step 1 — Official documentation &amp; interface research (~20 min): free account access and official documentation are used to research standard workflows, with every feature claim cross-referenced against official docs. Step 2 — Free plan claim verification (~15 min): every free-tier claim is independently checked against what the tool actually delivers, including whether a credit card is required and where "free" features are rate-limited. Step 3 — Analysis of 200+ verified user reviews (~45 min): a minimum of 200 verified reviews from Trustpilot, G2, and Capterra are pulled and tagged for recurring complaints and praise. Step 4 — Reddit sentiment check (~20 min): the top posts in relevant subreddits over the past year are read for long-term user frustrations that don't surface on review platforms for months. Step 5 — Live pricing page verification (~10 min): every tier's exact price, billing frequency, and cancellation terms are documented directly from the pricing page. Step 6 — Feature comparison against 3 nearest competitors (~30 min): the tool's key features are mapped against its closest alternatives to generate the comparison tables used in every review.</p>
+  `;
+  writeRoute('methodology', buildPage(template, { title, description, canonical, schemas, bodyHtml: methodologyBodyHtml }));
 }
 
 // ── Editorial Policy page ─────────────────────────────────────────────────────
@@ -5510,11 +5552,27 @@ console.log('\nStatic pages:');
   const canonical = `${SITE}/editorial-policy/`;
   const title = 'Editorial Policy | AI Nexus';
   const description = 'AI Nexus editorial standards: independent research, no sponsored reviews, verified pricing, and transparent methodology.';
+  const editorialPolicyBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333">AI Nexus publishes independent AI tool research and comparisons. This page explains how content is created, what standards apply, and how commercial relationships are handled.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Independence — No Sponsored Reviews</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Every review and comparison on AI Nexus is written independently. No tool company pays for inclusion, favourable coverage, or ranking position. If a review includes affiliate links (disclosed at the top of the page), those links do not influence the verdict, the rating, or the ranking.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Research Standards</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Every tool is researched using the same 6-step process: official documentation review, free plan verification, analysis of 200+ verified user reviews from Trustpilot, G2, and Capterra, Reddit sentiment analysis, live pricing verification, and competitor benchmarking. Tools are never recommended based solely on their marketing materials.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Pricing Accuracy</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">All pricing is verified against the tool's live pricing page at the time of publication. Reviews are updated when tools change their pricing or features. INR pricing for Indian readers is included where the tool has local pricing.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Affiliate Disclosure</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Some pages include affiliate links. When you click an affiliate link and make a purchase, AI Nexus may receive a commission at no extra cost to you. Affiliate status never influences tool selection, ranking, or the content of a review. See the full <a href="/disclosure/">Disclosure page</a> for details.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Correction Policy</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">If a review contains an inaccuracy, reach out via the contact details on the <a href="/about/">About page</a>. Verified corrections are applied within 48 hours and noted in the review with a date. Pricing corrections are applied immediately upon verification.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Author Expertise</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">AI Nexus is run by Navneet Arya, an AI Automation &amp; Performance Testing professional since 2022. Research is based on official documentation, verified reviews, and public usage data, not fabricated testing or sponsored data.</p>
+  `;
   writeRoute('editorial-policy', buildPage(template, {
     title,
     description,
     canonical,
     schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Editorial Policy', canonical]])],
+    bodyHtml: editorialPolicyBodyHtml,
   }));
 }
 
@@ -5523,11 +5581,23 @@ console.log('\nStatic pages:');
   const canonical = `${SITE}/how-we-analyze-ai-tools/`;
   const title = 'How We Analyze AI Tools — 6-Step Research Process | AI Nexus';
   const description = 'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, 200+ reviews, live pricing verification.';
+  const howWeAnalyzeBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333">Every AI tool reviewed on AI Nexus goes through a consistent 6-step research process. Here's exactly what that looks like.</p>
+    <ol style="font-size:.95rem;line-height:1.75;color:#555;padding-left:20px">
+      <li style="margin-bottom:14px"><strong>Official Documentation Review</strong> — We read every word of the tool's official docs, changelog, and API reference before writing a single sentence. This means reading the actual feature documentation, not the homepage or pricing page — checking what features exist at each tier, what the API limits are, and what changed in recent versions.</li>
+      <li style="margin-bottom:14px"><strong>Free Plan Verification</strong> — Every tool's free tier is tested against what it advertises. Limitations, watermarks, export restrictions, and rate limits are all documented, since many tools advertise "free forever" but hide critical limitations.</li>
+      <li style="margin-bottom:14px"><strong>Review Aggregation (200+ Reviews)</strong> — We analyze verified user reviews from Trustpilot, G2, Capterra, and Reddit, reading the text of 200+ reviews to find recurring complaints, praise patterns, and use-case fit rather than relying on a star average.</li>
+      <li style="margin-bottom:14px"><strong>Reddit Sentiment Analysis</strong> — Real conversations in r/artificial, r/ChatGPT, r/MachineLearning and tool-specific subreddits reveal pain points, workarounds, and deal-breakers that polished review sites miss.</li>
+      <li style="margin-bottom:14px"><strong>Live Pricing Verification</strong> — All pricing is verified against the live pricing page on the day of publication, screenshotted with a date. INR pricing is verified separately for Indian audience articles.</li>
+      <li style="margin-bottom:14px"><strong>Competitor Benchmarking</strong> — Every tool is compared against 2–4 direct competitors using the same criteria: features, pricing, limitations, and target use case.</li>
+    </ol>
+  `;
   writeRoute('how-we-analyze-ai-tools', buildPage(template, {
     title,
     description,
     canonical,
     schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'How We Analyze AI Tools', canonical]])],
+    bodyHtml: howWeAnalyzeBodyHtml,
   }));
 }
 
@@ -5536,11 +5606,23 @@ console.log('\nStatic pages:');
   const canonical = `${SITE}/contact/`;
   const title = 'Contact AI Nexus — Editorial, Research & Press Enquiries';
   const description = 'Contact Navneet Arya at AI Nexus for editorial enquiries, research collaboration, press contact, and affiliate partnership questions.';
+  const contactBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333">For editorial enquiries, research collaboration, press contact, and affiliate partnership questions, email us directly at <a href="mailto:hello@ainexustools.online">hello@ainexustools.online</a>. We aim to respond within 2–3 business days.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Editorial Enquiries</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Questions about a specific review, factual corrections, or concerns about how a tool has been covered? Reach out and include the tool name and the specific detail you'd like addressed. All correction requests are reviewed within 2–3 business days.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Research Collaboration</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Researchers, academics, or journalists working on AI tool adoption, freelancer workflows, or the creator economy are welcome to get in touch. I can provide data points, commentary, or background for relevant projects.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Press Contact</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Media enquiries, interview requests, and requests for expert commentary on AI productivity tools can be sent directly to the address above. Please include your publication name and deadline in the subject line.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">Affiliate Partnerships</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">AI Nexus only accepts direct affiliate programmes from tools that have been independently researched and meet our editorial standards. If you represent an AI tool and want to explore a partnership, send a brief overview of the tool and its programme details.</p>
+  `;
   writeRoute('contact', buildPage(template, {
     title,
     description,
     canonical,
     schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Contact', canonical]])],
+    bodyHtml: contactBodyHtml,
   }));
 }
 
@@ -5549,11 +5631,36 @@ console.log('\nStatic pages:');
   const canonical = `${SITE}/privacy/`;
   const title = 'Privacy Policy | AI Nexus';
   const description = 'Privacy policy for AI Nexus (ainexustools.online). How we handle data, Google Analytics usage, cookies, and your rights.';
+  const privacyBodyHtml = `
+    <h2 style="font-size:1.1rem">1. What information we collect</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">AI Nexus does not require account registration and does not collect personally identifiable information directly. Usage data is collected automatically via Google Analytics 4 (GA4): pages visited, time on page, device type, browser, approximate geographic location (country/city level), and referring URL. This data is anonymised and aggregated. We do not collect your name, email address, or payment information unless you voluntarily contact us at hello@ainexustools.online.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">2. How we use your information</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Usage data collected via Google Analytics is used solely to understand which content is useful to readers and to improve the site. We do not sell your data to third parties or use it for advertising targeting.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">3. Google Analytics (GA4)</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">This site uses Google Analytics 4 (GA4) with IP anonymisation enabled. Data is processed by Google in accordance with their Privacy Policy. You can opt out of Google Analytics tracking by installing the Google Analytics Opt-out Browser Add-on.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">4. Cookies</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Google Analytics sets first-party analytics cookies to distinguish unique visitors and sessions. No advertising or third-party tracking cookies are used on this site.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">5. Affiliate links</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">This site contains affiliate links. Clicking these links and making a purchase may result in AI Nexus earning a commission from the tool provider, at no additional cost to you. Affiliate links do not install any tracking software on your device. Full details are in our <a href="/disclosure/">Affiliate Disclosure</a>.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">6. Third-party links</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">This site links to external websites including tool providers, review platforms, and documentation sources. AI Nexus is not responsible for the privacy practices of external websites.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">7. Data retention</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Google Analytics data is retained for 14 months by default, after which it is automatically deleted. We do not store any other personal data.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">8. Your rights</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">If you are in the European Union (GDPR) or California (CCPA), you have the right to request access to, correction of, or deletion of any personal data we hold about you. Since we collect only anonymised analytics data and do not maintain user accounts, most requests can be satisfied by clearing your browser cookies. For specific requests, contact us at hello@ainexustools.online.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">9. Children's privacy</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">This site is not directed at children under 13 years of age. We do not knowingly collect personal information from children.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">10. Changes to this policy</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. Continued use of the site after changes constitutes acceptance of the updated policy.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">11. Contact</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">If you have any questions about this Privacy Policy, please contact us at hello@ainexustools.online. See also our <a href="/terms/">Terms of Service</a> and <a href="/disclosure/">Affiliate Disclosure</a>.</p>
+  `;
   writeRoute('privacy', buildPage(template, {
     title,
     description,
     canonical,
     schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Privacy Policy', canonical]])],
+    bodyHtml: privacyBodyHtml,
   }));
 }
 
@@ -5562,11 +5669,34 @@ console.log('\nStatic pages:');
   const canonical = `${SITE}/terms/`;
   const title = 'Terms of Service | AI Nexus';
   const description = 'Terms of Service for AI Nexus (ainexustools.online): acceptable use, disclaimers, and legal terms for site content.';
+  const termsBodyHtml = `
+    <h2 style="font-size:1.1rem">1. Acceptance of Terms</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">By using ${SITE}, you agree to these Terms of Service. If you do not agree, please stop using the site.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">2. Content Purpose</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">AI Nexus publishes independent reviews, comparisons, and educational content about AI tools. All content is provided for informational purposes and should not be treated as legal, tax, investment, or professional advice.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">3. Editorial Independence and Affiliate Links</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Some links are affiliate links. If you purchase through them, AI Nexus may earn a commission at no additional cost to you. Rankings and conclusions are based on independent research, not sponsorship.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">4. Accuracy and Updates</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Pricing, product features, and policies can change quickly. While we aim for accuracy, we cannot guarantee that every detail remains current at all times. Always verify critical details on the official provider website before purchasing.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">5. Intellectual Property</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">All original AI Nexus content, including text, layouts, graphics, and branding, is protected by copyright and applicable law. You may quote short excerpts with clear attribution and a link back to the original page.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">6. Prohibited Use</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">You agree not to misuse the website, attempt unauthorized access, disrupt service operations, scrape content at abusive rates, or use content in a way that violates law or third-party rights.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">7. External Services and Third-Party Links</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">This site links to third-party tools and services. AI Nexus is not responsible for third-party content, availability, pricing changes, or data handling practices. Review each service's terms and privacy policy directly.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">8. Limitation of Liability</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">To the fullest extent permitted by law, AI Nexus and its author are not liable for losses or damages resulting from your use of this site or reliance on its content. Your use of the site is at your own risk.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">9. Changes to Terms</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">We may update these terms periodically. Material updates will be reflected by a revised last-updated date. Continued use of the website after updates means you accept the revised terms.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">10. Contact</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Questions about these terms can be sent to hello@ainexustools.online. See also our <a href="/privacy/">Privacy Policy</a> and <a href="/disclosure/">Affiliate Disclosure</a>.</p>
+  `;
   writeRoute('terms', buildPage(template, {
     title,
     description,
     canonical,
     schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Terms of Service', canonical]])],
+    bodyHtml: termsBodyHtml,
   }));
 }
 
@@ -5593,7 +5723,16 @@ console.log('\nBlog pages:');
       })),
     }),
   ];
-  writeRoute('blog', buildPage(template, { title, description, canonical, schemas }));
+  const blogListItemsHtml = BLOG_POSTS.map(p => `
+    <li style="margin-bottom:16px;list-style:none">
+      <a href="/blog/${p.slug}/" style="font-size:1rem;font-weight:600;color:#0D9488;text-decoration:none">${esc(p.title)}</a>
+      <p style="font-size:.9rem;line-height:1.6;color:#555;margin:4px 0 0">${esc(p.metaDescription)}</p>
+    </li>`).join('');
+  const blogBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333">In-depth AI tool guides and reviews by ${esc(AUTHOR)}. Every post is independently researched — official documentation, verified user reviews, and live pricing — with no sponsored posts.</p>
+    <ul style="padding:0;margin-top:20px">${blogListItemsHtml}</ul>
+  `;
+  writeRoute('blog', buildPage(template, { title, description, canonical, schemas, bodyHtml: blogBodyHtml }));
 }
 
 // ── Week 3: Individual blog post pages (/blog/:slug) ──────────────────────────
