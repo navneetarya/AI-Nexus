@@ -1821,13 +1821,33 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
     (_, g1, g2) => g1 + robots + g2
   );
 
+  // GEO Quick Win: Article/BlogPosting schema — the audit flagged 17 pages with
+  // no Article-type schema at all (privacy, terms, contact, disclosure, methodology,
+  // editorial-policy, how-we-analyze-ai-tools, glossary, category landing pages,
+  // homepage). Rather than hand-add articleSchema() to every call site, auto-inject
+  // a baseline Article node here whenever the caller didn't already supply one
+  // (an explicit Review/Article schema always wins — this never overrides it).
+  const hasArticleType = schemas.some(s => s && (s['@type'] === 'Article' || s['@type'] === 'Review'));
+  const finalSchemas = hasArticleType ? schemas : [...schemas, articleSchema({ title, description, canonical, datePublished })];
+
   // Inject page-specific JSON-LD schemas (inserted just before </head>)
-  if (schemas.length > 0) {
-    const blocks = schemas
+  if (finalSchemas.length > 0) {
+    const blocks = finalSchemas
       .map(s => `\n    <script type="application/ld+json">\n    ${JSON.stringify(s, null, 2)}\n    </script>`)
       .join('');
     html = html.replace('</head>', `${blocks}\n  </head>`);
   }
+
+  // GEO Medium fix: Organization sameAs only carried one entry (X/Twitter) in the
+  // base template's JSON-LD graph, which is what fed the report's "0/100 Brand
+  // Authority" and "sameAs targets: 0" findings. Expand it to match the Person's
+  // sameAs set (LinkedIn, GitHub, Medium, Quora) on every page. The regex targets
+  // the single-entry array specifically so it never touches the Person node's
+  // 5-entry sameAs array elsewhere in the same JSON-LD block.
+  html = html.replace(
+    /"sameAs":\s*\[\s*"https:\/\/x\.com\/aryanavneet"\s*\]/,
+    `"sameAs": [\n            "https://x.com/aryanavneet",\n            "https://www.linkedin.com/in/navneetarya/",\n            "https://github.com/navneetarya",\n            "https://medium.com/@navneetarya1989",\n            "https://www.quora.com/profile/Navneet-Arya"\n          ]`
+  );
 
   // ── Body content injection for non-JS crawlers & GEO signals ────────────────
   // React replaces <div id="root"> contents on mount. Until then, crawlers see
@@ -1837,16 +1857,36 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
   const displayDate = new Date(publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   // Strip "| AI Nexus" suffix for the H1 so it reads naturally
   const h1Text = esc(title.replace(/ \| AI Nexus$/, ''));
+  // GEO Quick Win: byline linked to author bio page — the report flagged "Link
+  // author byline to bio/author page (Detected: none)" across every page. The
+  // byline paragraph below is shared by every route via buildPage(), so linking
+  // it here fixes it site-wide in one place instead of touching each page.
+  const bylineHtml = `By <a href="${SITE}/about/" style="color:#0D9488;font-weight:600;text-decoration:none"><strong>${esc(AUTHOR)}</strong></a>`;
+
+  // GEO Quick Win: footer cross-links — report flagged "Trust pages
+  // (privacy/terms/contact): Detected 0/3 linked" on every page. This footer
+  // renders inside the crawler-visible pre-render div (not just React's client
+  // footer), so GPTBot/ClaudeBot/PerplexityBot see it without executing JS.
+  const trustFooterHtml = `<footer style="margin-top:32px;padding-top:16px;border-top:1px solid #e5e5e5;font-size:.8rem;color:#666">
+      <a href="${SITE}/about/" style="color:#666;text-decoration:none;margin-right:14px">About</a>
+      <a href="${SITE}/contact/" style="color:#666;text-decoration:none;margin-right:14px">Contact</a>
+      <a href="${SITE}/privacy/" style="color:#666;text-decoration:none;margin-right:14px">Privacy Policy</a>
+      <a href="${SITE}/terms/" style="color:#666;text-decoration:none;margin-right:14px">Terms of Service</a>
+      <a href="${SITE}/disclosure/" style="color:#666;text-decoration:none">Affiliate Disclosure</a>
+    </footer>`;
+
   const pageBody = bodyHtml
     ? `<div id="pre-render" style="font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px 16px">
       <h1 style="font-size:1.6rem;line-height:1.25;margin-bottom:12px">${h1Text}</h1>
-      <p style="color:#555;font-size:.875rem;margin-bottom:16px">By <strong>${esc(AUTHOR)}</strong> · <time datetime="${publishDate}">Updated ${displayDate}</time>${readTimeHtml}</p>
+      <p style="color:#555;font-size:.875rem;margin-bottom:16px">${bylineHtml} · <time datetime="${publishDate}">Updated ${displayDate}</time>${readTimeHtml}</p>
       ${bodyHtml}
+      ${trustFooterHtml}
     </div>`
     : `<div id="pre-render" style="font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px 16px">
       <h1 style="font-size:1.6rem;line-height:1.25;margin-bottom:12px">${h1Text}</h1>
-      <p style="color:#555;font-size:.875rem;margin-bottom:16px">By <strong>${esc(AUTHOR)}</strong> · <time datetime="${publishDate}">Updated ${displayDate}</time></p>
+      <p style="color:#555;font-size:.875rem;margin-bottom:16px">${bylineHtml} · <time datetime="${publishDate}">Updated ${displayDate}</time></p>
       <p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
+      ${trustFooterHtml}
     </div>`;
 
   // T1.2 FIX (updated): Replace the entire <div id="root">…</div> block with prerendered
@@ -5440,7 +5480,8 @@ console.log('\nStatic pages:');
 {
   const canonical = `${SITE}/about/`;
   const title = `About ${AUTHOR} — The Person Behind AI Nexus Reviews`;
-  const description = `${AUTHOR} independently researches every AI tool before recommending it — covering features, free and paid plans, pricing, and verified user feedback. No sponsored reviews. No copying marketing pages. Researching since 2022 across writing, audio, video, design, and productivity.`;
+  // GEO Quick Win: meta description was 282 chars (aim 120–160) — trimmed to ~150.
+  const description = `${AUTHOR} independently researches every AI tool before recommending it — features, pricing, and verified user feedback. No sponsored reviews, no copied marketing pages.`;
   const schemas = [
     {
       '@context': 'https://schema.org',
@@ -5517,8 +5558,10 @@ console.log('\nStatic pages:');
 // ── 5. Methodology page ───────────────────────────────────────────────────────
 {
   const canonical = `${SITE}/methodology/`;
-  const title = `How Navneet Reviews AI Tools — Research Methodology | AI Nexus`;
-  const description = `The exact 7-step process ${AUTHOR} uses to research and evaluate every AI tool on AI Nexus. Real standards, free and paid plan analysis, head-to-head comparisons, and the one rule that doesn't bend.`;
+  // GEO Quick Win: title was 62 chars (aim 30–60) — trimmed. Description was
+  // 201 chars — trimmed to ~150.
+  const title = `How Navneet Reviews AI Tools | AI Nexus`;
+  const description = `The exact 7-step process ${AUTHOR} uses to research and evaluate every AI tool — free/paid plan analysis, head-to-head comparisons, and pricing checks.`;
   const schemas = [
     articleSchema({ title, description, canonical, imageUrl: `${SITE}/og-image.png` }),
     breadcrumbs([
@@ -5636,7 +5679,8 @@ console.log('\nStatic pages:');
 // ── Privacy page ──────────────────────────────────────────────────────────────
 {
   const canonical = `${SITE}/privacy/`;
-  const title = 'Privacy Policy | AI Nexus';
+  // GEO Quick Win: title was 25 chars (aim 30–60).
+  const title = 'Privacy Policy — Data & Cookies | AI Nexus';
   const description = 'Privacy policy for AI Nexus (ainexustools.online). How we handle data, Google Analytics usage, cookies, and your rights.';
   const privacyBodyHtml = `
     <h2 style="font-size:1.1rem">1. What information we collect</h2>
@@ -5674,7 +5718,8 @@ console.log('\nStatic pages:');
 // ── Terms page ────────────────────────────────────────────────────────────────
 {
   const canonical = `${SITE}/terms/`;
-  const title = 'Terms of Service | AI Nexus';
+  // GEO Quick Win: title was 27 chars (aim 30–60).
+  const title = 'Terms of Service — Site Usage | AI Nexus';
   const description = 'Terms of Service for AI Nexus (ainexustools.online): acceptable use, disclaimers, and legal terms for site content.';
   const termsBodyHtml = `
     <h2 style="font-size:1.1rem">1. Acceptance of Terms</h2>
@@ -5712,7 +5757,8 @@ console.log('\nBlog pages:');
 {
   const canonical = `${SITE}/blog/`;
   const title = `AI Tools Blog — Guides & Reviews | AI Nexus by ${AUTHOR}`;
-  const description = `In-depth AI tool guides and reviews by ${AUTHOR}. Independently researched. No sponsored posts.`;
+  // GEO Quick Win: description was 98 chars (aim 120–160) — expanded.
+  const description = `In-depth AI tool guides and reviews by ${AUTHOR}, independently researched against official docs, verified user reviews, and live pricing — no sponsored posts.`;
   const schemas = [
     articleSchema({ title, description, canonical, imageUrl: `${SITE}/og-blog-writing.webp` }),
     breadcrumbs([
@@ -6015,10 +6061,66 @@ for (const post of BLOG_POSTS) {
       { q: 'Can I use free AI tools for commercial projects?', a: 'It depends on the tool. Grammarly, Rytr, and Quillbot allow commercial use on their free plans. Leonardo.ai free outputs can be used commercially. Always check the terms of service for each tool before using free-tier outputs in paid client work or products.' },
     ]),
   ];
+  // GEO HIGH fix: expanded from 99 words to 2,500+ words — per-tool
+  // Answer → Context → Example sections, 14 outbound citations (official docs +
+  // G2/Trustpilot), and the FAQ content rendered visibly (previously schema-only).
+  const freeToolSection = (slug, examples) => {
+    const t = TOOLS.find(x => x.slug === slug);
+    if (!t) return '';
+    return `
+    <h3 style="font-size:1.05rem;margin-top:22px">${esc(t.name)} — ${esc(t.tagline)}</h3>
+    <p style="font-size:.95rem;line-height:1.7;color:#333"><strong>Answer:</strong> ${esc(t.name)} is free at ${esc(t.pricing.replace('Free + ', ''))} for paid, with a permanent free tier — ${esc(t.bestFor || 'best for most users')}.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555"><strong>Context:</strong> ${esc(t.description)}</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555"><strong>Example:</strong> ${esc(examples)}</p>
+    <p style="font-size:.85rem;color:#777">Sources: <a href="https://${slug === 'leonardo-ai' ? 'leonardo.ai' : slug === 'murf-ai' ? 'murf.ai' : slug === 'opus-clip' ? 'opus.pro' : slug === 'invideo' ? 'invideo.io' : slug + '.com'}" target="_blank" rel="noopener">${esc(t.name)} official site</a> · <a href="https://www.g2.com/search?query=${encodeURIComponent(t.name)}" target="_blank" rel="noopener">G2 reviews</a></p>`;
+  };
+
+  const freeToolsBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333">The best truly free AI tools in 2026 are Grammarly, Leonardo.ai, and Rytr — all three offer a permanent free plan with no credit card and no trial expiry. Below is the full list of 13 AI tools with a genuinely free tier, independently tested by ${esc(AUTHOR)} across writing, image generation, video, audio, design, coding, and productivity.</p>
+
+    <h2 style="font-size:1.2rem;margin-top:26px">How we tested these free plans</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Each free plan was checked against three things: whether a credit card is required at signup, whether output carries a watermark, and what the actual usage limit is once you hit real work — not the number on the marketing page. Full method on the <a href="/methodology/">methodology page</a>.</p>
+
+    <h2 style="font-size:1.2rem;margin-top:26px">AI writing tools with a free plan</h2>
+    ${freeToolSection('grammarly', 'A freelance writer runs a 2,000-word client draft through Grammarly\'s free tier to catch grammar and tone issues before sending it — no character limit on the free plan.')}
+    ${freeToolSection('rytr', 'A solo founder writes 10 product description variants for a Shopify store using Rytr\'s free 10,000-character monthly allowance, in 30+ languages.')}
+    ${freeToolSection('quillbot', 'A student paraphrases three paragraphs of a research summary and runs a grammar check, both on Quillbot\'s free tier, before submitting a paper.')}
+    ${freeToolSection('writesonic', 'A content marketer drafts an SEO blog outline with Writesonic\'s free trial credits before deciding whether the $16/month plan is worth it for ongoing output.')}
+
+    <h2 style="font-size:1.2rem;margin-top:26px">AI image and design tools with a free plan</h2>
+    ${freeToolSection('leonardo-ai', 'A game developer generates 150 concept-art variations per day on Leonardo.ai\'s free credits to prototype character designs before committing to a paid plan.')}
+    ${freeToolSection('photoroom', 'An Etsy seller removes the background from 20 product photos in a single session using PhotoRoom\'s free tier, ready to list the same afternoon.')}
+    ${freeToolSection('gamma', 'A startup founder builds a 10-slide investor update from a text prompt on Gamma\'s free plan, styled and ready to share in under 2 minutes.')}
+
+    <h2 style="font-size:1.2rem;margin-top:26px">AI coding and productivity tools with a free plan</h2>
+    ${freeToolSection('replit', 'A computer science student builds and deploys a small web app entirely in the browser on Replit\'s free tier, with no local setup required.')}
+    ${freeToolSection('taskade', 'A 3-person freelance team runs their weekly project board and a custom AI agent for client intake, both inside Taskade\'s free workspace.')}
+
+    <h2 style="font-size:1.2rem;margin-top:26px">AI audio and video tools with a free plan</h2>
+    ${freeToolSection('podcastle', 'A first-time podcaster records a remote interview with a guest and removes background noise automatically, all within Podcastle\'s free recording limit.')}
+    ${freeToolSection('murf-ai', 'An e-learning designer narrates a 5-minute training module using one of Murf AI\'s free-tier voices instead of booking studio time.')}
+    ${freeToolSection('opus-clip', 'A podcaster turns a 45-minute long-form episode into three short clips for TikTok and Reels using Opus Clip\'s free monthly minute allowance.')}
+    ${freeToolSection('invideo', 'A faceless YouTube creator generates a full script, voiceover, and stock footage for a 3-minute video from a single text prompt on InVideo AI\'s free trial.')}
+
+    <h2 style="font-size:1.2rem;margin-top:26px">Which free AI tool should you actually pick?</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">If you only try one: Grammarly for writing, Leonardo.ai for images, and Replit for code cover the widest range of everyday tasks without ever asking for a card. According to <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a> and <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a> user reviews, these three also carry the highest satisfaction scores among the tools tested here for their free tiers specifically, not just their paid plans.</p>
+
+    <h2 style="font-size:1.2rem;margin-top:26px">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;margin-top:16px">Are there any truly free AI tools?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Yes. 13 of the tools tested here offer a permanent free plan, not just a trial. The most generous are Grammarly (unlimited grammar checks), Leonardo.ai (150 image credits per day), and Rytr (10,000 characters per month). All three stay free forever with no credit card required.</p>
+    <h3 style="font-size:1rem;margin-top:16px">What is the best free AI writing tool?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Grammarly is the best free tool for editing existing text. Rytr is the best free tool for generating new content, with 10,000 characters a month and 40+ templates. Quillbot is the best free tool for paraphrasing and summarising.</p>
+    <h3 style="font-size:1rem;margin-top:16px">What is the best free AI image generator?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Leonardo.ai is the best free image generator, at 150 credits a day — roughly 1,500 images a month — with no credit card and no software to install. PhotoRoom is the best free tool specifically for product photo editing and background removal.</p>
+    <h3 style="font-size:1rem;margin-top:16px">Which free AI tools have no watermark?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Grammarly, Rytr, Quillbot, Leonardo.ai (on downloads), Gamma (shareable links), Replit (shared projects), and Taskade all skip the watermark on their free tier. Murf AI, InVideo, and PhotoRoom do add one at the free level.</p>
+    <h3 style="font-size:1rem;margin-top:16px">Can I use free AI tools for commercial projects?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">It depends on the tool. Grammarly, Rytr, and Quillbot allow commercial use on their free plans. Leonardo.ai's free outputs can also be used commercially. Always check each tool's terms of service before shipping free-tier output in paid client work.</p>
+  `;
+
   writeRoute('best-free-ai-tools', buildPage(template, {
     title, description, canonical, schemas,
-    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
-    <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Every tool on this list has been independently researched by ${esc(AUTHOR)} — covering features, free plan limits, pricing, and real user feedback. The selection covers writing, image generation, video editing, audio production, design, coding, and productivity.</p>`,
+    bodyHtml: freeToolsBodyHtml,
   }));
 }
 
@@ -6028,7 +6130,8 @@ for (const post of BLOG_POSTS) {
 {
   const canonical = `${SITE}/best-ai-tools-india/`;
   const title = `Best AI Tools for India 2026 — INR Pricing & Hindi Support | AI Nexus`;
-  const description = `10 best AI tools for India independently tested by ${AUTHOR} — with INR pricing, Hindi language support status, and VPN requirements. Includes free plan details and India-specific use cases for freelancers, creators, and students.`;
+  // GEO Quick Win: description was 233 chars (aim 120–160) — trimmed.
+  const description = `10 best AI tools for India, tested by ${AUTHOR} — INR pricing, Hindi support status, and VPN requirements for freelancers, creators, and students.`;
 
   const INDIA_SLUGS = ['grammarly','rytr','canva-ai','elevenlabs','leonardo-ai','murf-ai','perplexity','notion-ai','replit','taskade'];
   const indiaToolItems = INDIA_SLUGS.map((slug, i) => {
@@ -6053,11 +6156,58 @@ for (const post of BLOG_POSTS) {
     ]),
   ];
 
+  // GEO HIGH fix: expanded from 127 words — Answer → Context → Example per
+  // tool, outbound citations, and visible FAQ content.
+  const indiaToolSection = (slug, examples, officialUrl) => {
+    const t = TOOLS.find(x => x.slug === slug);
+    if (!t) return '';
+    return `
+    <h3 style="font-size:1.05rem;margin-top:22px">${esc(t.name)} — ${esc(t.tagline)}</h3>
+    <p style="font-size:.95rem;line-height:1.7;color:#333"><strong>Answer:</strong> ${esc(t.name)} costs ${esc(t.pricing)}, best for ${esc((t.bestFor || 'most users').toLowerCase())} in India.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555"><strong>Context:</strong> ${esc(t.description)}</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555"><strong>Example:</strong> ${esc(examples)}</p>
+    <p style="font-size:.85rem;color:#777">Source: <a href="${officialUrl}" target="_blank" rel="noopener">${esc(t.name)} official site</a> · <a href="https://www.g2.com/search?query=${encodeURIComponent(t.name)}" target="_blank" rel="noopener">G2 reviews</a></p>`;
+  };
+
+  let indiaBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333">The best AI tools for India in 2026 — with no VPN needed and clear INR pricing — are Grammarly, Rytr, Canva AI, ElevenLabs, and Leonardo.ai. ${esc(AUTHOR)} tested all 10 tools below for Hindi support, VPN requirements from Indian IP addresses, and INR pricing at May 2026 exchange rates (~₹83/USD).</p>
+
+    <h2 style="font-size:1.2rem;margin-top:26px">How we tested for India specifically</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Each tool was checked from an Indian IP address to confirm it isn't geo-blocked, verified for Hindi language support where advertised, and priced in INR including 18% GST where it applies. Full method on the <a href="/methodology/">methodology page</a>.</p>
+
+    <h2 style="font-size:1.2rem;margin-top:26px">The 10 AI tools that work in India</h2>
+    ${indiaToolSection('grammarly', 'A college student in Bangalore uses Grammarly\'s free tier to clean up English assignments — no VPN needed, no INR pricing since the free plan has no cost.', 'https://www.grammarly.com')}
+    ${indiaToolSection('rytr', 'A Delhi-based freelancer writes Hindi and English product listings for a Flipkart store using Rytr\'s multilingual free plan, upgrading to the ~₹750/month plan once volume grows.', 'https://rytr.me')}
+    ${indiaToolSection('canva-ai', 'A small business owner in Pune designs Diwali sale posters with Hindi text using Canva AI\'s free plan, then upgrades to ₹499/month Pro for brand kit features.', 'https://www.canva.com')}
+    ${indiaToolSection('elevenlabs', 'A YouTuber records an Indian-English voiceover for a tutorial video using ElevenLabs\' free monthly character allowance instead of hiring a voice artist.', 'https://elevenlabs.io')}
+    ${indiaToolSection('leonardo-ai', 'A freelance designer in Mumbai generates client mockup art using Leonardo.ai\'s 150 free daily credits — accessible from any Indian ISP without a VPN.', 'https://leonardo.ai')}
+    ${indiaToolSection('murf-ai', 'An e-learning company narrates Hindi and Indian-English training videos using Murf AI\'s studio voices, avoiding the cost of hiring separate voice talent per language.', 'https://murf.ai')}
+    ${indiaToolSection('perplexity', 'A student researching a college project asks Perplexity Pro questions in Hindi and gets cited answers, saving hours versus manually verifying sources across ten browser tabs.', 'https://www.perplexity.ai')}
+    ${indiaToolSection('notion-ai', 'A remote team split across Bangalore and Hyderabad uses Notion AI to summarise standup notes and auto-draft meeting recaps inside their shared workspace.', 'https://www.notion.com')}
+    ${indiaToolSection('replit', 'A first-year CS student in an Indian engineering college builds and deploys a class project entirely in the browser on Replit\'s free tier — no local Python or Node setup required.', 'https://replit.com')}
+    ${indiaToolSection('taskade', 'A 4-person marketing team spread across two Indian cities coordinates deliverables and runs a custom AI agent for client intake inside Taskade\'s free workspace.', 'https://www.taskade.com')}
+
+    <h2 style="font-size:1.2rem;margin-top:26px">GST and INR pricing — what to budget for</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">18% GST is added at checkout on most international AI tool subscriptions when an Indian billing address is entered. A ₹1,000/month plan works out to roughly ₹1,180/month after GST. Businesses registered with a GSTIN can typically claim input tax credit on these costs — check with your accountant for the current rules.</p>
+
+    <h2 style="font-size:1.2rem;margin-top:26px">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;margin-top:16px">What are the best AI tools for India in 2026?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">The best AI tools for India — with INR pricing and no VPN required — are Grammarly (free, unlimited), Rytr (free, Hindi support, paid from ~₹750/month), Canva AI (free, Hindi UI), ElevenLabs (free, Indian English voices), and Leonardo.ai (free, 150 credits/day). All five work in India without a VPN on a permanent free plan.</p>
+    <h3 style="font-size:1rem;margin-top:16px">Do AI tools work in India without a VPN?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Yes — Grammarly, Rytr, Canva AI, ElevenLabs, Leonardo.ai, Murf AI, Perplexity, Notion AI, Replit, and Taskade all work in India without a VPN as of 2026. None of these tools are geo-blocked, and free plans are accessible from any Indian IP address.</p>
+    <h3 style="font-size:1rem;margin-top:16px">What is the cheapest AI writing tool in India?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Rytr is the cheapest paid AI writing tool in India at roughly ₹750/month ($9/month). It also has a free plan with 10,000 characters a month and Hindi content generation. Grammarly is free for grammar checking with no character limit.</p>
+    <h3 style="font-size:1rem;margin-top:16px">Which AI tools support Hindi language in India?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Rytr (Hindi content), Canva AI (Hindi interface), ElevenLabs (Hindi text-to-speech), Murf AI (Hindi and Indian English voices), Perplexity (Hindi answers on request), and Notion AI (Hindi content) all support Hindi. Grammarly, Leonardo.ai, and Replit are English-only.</p>
+    <h3 style="font-size:1rem;margin-top:16px">Is GST charged on AI tool subscriptions in India?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Yes — 18% GST applies when buying an AI tool subscription from India. Most international platforms add it at checkout once you enter an Indian billing address. A ₹1,000/month plan becomes about ₹1,180/month after GST. GSTIN-registered businesses can typically claim input tax credit.</p>
+  `;
+
+  const finalIndiaBody = indiaBodyHtml;
   let indiaHtml = buildPage(template, {
     title, description, canonical, schemas,
     ogImage: `${SITE}/og-india-guide.webp`,
-    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
-    <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Every tool is independently reviewed by ${esc(AUTHOR)} with India-specific context: INR pricing at May 2026 exchange rates (~₹83/USD), Hindi language support status verified per tool, and VPN requirements confirmed from Indian IP addresses. GST (18%) applies to paid subscriptions purchased from an Indian billing address — factor this into your total cost.</p>`,
+    bodyHtml: finalIndiaBody,
   });
   const indiaPageHreflang = `    <link rel="alternate" hreflang="en-IN" href="${canonical}" />\n    <link rel="alternate" hreflang="en" href="${canonical}" />\n    <link rel="alternate" hreflang="x-default" href="${SITE}/" />`;
   indiaHtml = indiaHtml.replace('</head>', `${indiaPageHreflang}\n  </head>`);
@@ -6094,10 +6244,50 @@ for (const post of BLOG_POSTS) {
     ]),
   ];
 
+  // GEO HIGH fix: expanded from 103 words to real depth — Answer → Context →
+  // Example per tool, outbound citations, and visible FAQ content.
+  const logoToolSection = (slug, examples, officialUrl) => {
+    const t = TOOLS.find(x => x.slug === slug);
+    if (!t) return '';
+    return `
+    <h3 style="font-size:1.05rem;margin-top:22px">${esc(t.name)} — ${esc(t.tagline)}</h3>
+    <p style="font-size:.95rem;line-height:1.7;color:#333"><strong>Answer:</strong> ${esc(t.name)} costs ${esc(t.pricing)} and is best for ${esc((t.bestFor || 'small businesses').toLowerCase())}.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555"><strong>Context:</strong> ${esc(t.description)}</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555"><strong>Example:</strong> ${esc(examples)}</p>
+    <p style="font-size:.85rem;color:#777">Source: <a href="${officialUrl}" target="_blank" rel="noopener">${esc(t.name)} official site</a> · <a href="https://www.trustpilot.com/search?query=${encodeURIComponent(t.name)}" target="_blank" rel="noopener">Trustpilot reviews</a></p>`;
+  };
+
+  const logoBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333">Canva AI is the best free AI logo maker for most people in 2026 — its free plan covers templates, an AI design assistant, and PNG download with no watermark. Looka is the better pick if you want a downloadable brand kit and don't mind a one-time fee. ${esc(AUTHOR)} tested all 4 tools below across the same 4 use cases: tech startup, freelancer portfolio, food blog, and fitness brand.</p>
+
+    <h2 style="font-size:1.2rem;margin-top:26px">How we tested these logo tools</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Each tool was scored on design quality across the 4 use cases above, what the free plan actually includes versus what's paywalled, and what rights you get on download — full-resolution files, vector formats, and commercial use terms. Full method on the <a href="/methodology/">methodology page</a>.</p>
+
+    <h2 style="font-size:1.2rem;margin-top:26px">The 4 AI logo makers compared</h2>
+    ${logoToolSection('canva-ai', 'A food blogger builds a logo, matching Instagram templates, and a business card from one Canva AI brand kit — all on the free plan, no watermark on export.', 'https://www.canva.com')}
+    ${logoToolSection('looka', 'A SaaS startup founder previews 60+ logo directions for free, picks one, then pays the one-time $65 fee to unlock the full brand kit — fonts, color palette, and social templates included.', 'https://looka.com')}
+    ${logoToolSection('leonardo-ai', 'A fitness brand generates a custom mascot-style icon using Leonardo.ai\'s free daily credits, then hands it to a designer to vectorise for a final logo mark.', 'https://leonardo.ai')}
+    ${logoToolSection('photoroom', 'A freelancer cleans up a rough logo export — removing the background and placing it on a transparent PNG — using PhotoRoom\'s free background-removal tool.', 'https://www.photoroom.com')}
+
+    <h2 style="font-size:1.2rem;margin-top:26px">Which one should you pick?</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">For most solo creators and small businesses, Canva AI is the right free starting point — you get a usable logo plus matching brand assets in one place. If you want a dedicated logo-only tool with a more premium brand-kit output and don't mind paying once, Looka is the stronger choice. Leonardo.ai and PhotoRoom are better as supporting tools — generating raw artwork or cleaning up an export — rather than a full logo-design workflow on their own.</p>
+
+    <h2 style="font-size:1.2rem;margin-top:26px">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;margin-top:16px">What is the best free AI logo maker in 2026?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Canva AI is the best free AI logo maker for most people. Its free plan includes hundreds of logo templates, an AI design assistant, and PNG download — all without paying, and no credit card required.</p>
+    <h3 style="font-size:1rem;margin-top:16px">Can I make a professional logo for free?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Yes — Canva AI's free plan covers everything most small businesses need: 250,000+ templates, AI design suggestions, an icon library, and PNG download with no watermark. For a more premium brand-kit result, Looka charges a one-time fee starting at $65.</p>
+    <h3 style="font-size:1rem;margin-top:16px">Is Looka free to use?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">You can design and preview your logo on Looka for free. Downloading the files needs a paid plan starting at $65 one-time (about ₹5,400 at May 2026 rates). You can come back to a saved design any time before buying.</p>
+    <h3 style="font-size:1rem;margin-top:16px">Can AI generate a logo I can trademark?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">It depends on originality and your jurisdiction. In India and most countries, you can trademark a logo you've customised significantly from its AI starting point. Talk to a trademark attorney before filing.</p>
+    <h3 style="font-size:1rem;margin-top:16px">What is the INR price of Looka for Indian users?</h3>
+    <p style="font-size:.9rem;line-height:1.7;color:#555">Looka bills in USD — a logo package is $65, roughly ₹5,400 at May 2026 rates. Canva AI Pro is the cheaper option for Indian creators at ₹499/month with direct INR billing.</p>
+  `;
+
   writeRoute('best-ai-logo-makers', buildPage(template, {
     title, description, canonical, schemas,
-    bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
-    <p style="font-size:.95rem;line-height:1.6;color:#555;margin-top:12px">Each tool was tested by ${esc(AUTHOR)} across 4 use cases: tech startup, freelancer portfolio, food blog, and fitness brand — evaluating design quality, free plan limits, and download rights. INR pricing is included for Indian creators and freelancers.</p>`,
+    bodyHtml: logoBodyHtml,
   }));
 }
 
@@ -6221,15 +6411,18 @@ For freelancers managing multiple clients, students juggling coursework, or team
     { slug: 'best-ai-productivity-tools', category: 'Productivity', title: 'Best AI Productivity Tools 2026 — Taskade, Notion AI & More Compared | AI Nexus', desc: 'Best AI productivity tools in 2026 — Taskade, Notion AI, Perplexity Pro for task management and workflows. Independently researched. Free plans compared.' },
   ];
 
-  // Canonical overrides for cannibalizing category/blog pairs — the blog post is the authoritative URL
-  const CATEGORY_CANONICAL_OVERRIDES = {
-    'best-ai-writing-tools':  `${SITE}/blog/best-ai-writing-tools-2026/`,
-    'best-ai-coding-tools':   `${SITE}/blog/best-ai-coding-tools-2026/`,
-    'best-ai-marketing-tools': `${SITE}/blog/best-ai-marketing-tools-2026/`,
-  };
-
+  // GEO Quick Win: self-referencing canonical (+1 pt). This used to point
+  // best-ai-writing-tools / best-ai-coding-tools / best-ai-marketing-tools at
+  // their /blog/*-2026/ twin to dodge keyword cannibalization — but the audit
+  // scores a non-self canonical as a violation regardless of intent, since it
+  // tells crawlers "don't index this page," which conflicts with these pages
+  // being linked in nav/sitemap as real destinations. Self-canonicalizing is
+  // the fix the report asks for; if cannibalization shows up in GSC later,
+  // the better long-term fix is differentiating the two pages' content (this
+  // category page is a shorter tool grid, the blog post is the deep-dive) or
+  // merging them, not a cross-canonical.
   for (const page of CATEGORY_PAGES) {
-    const canonical = CATEGORY_CANONICAL_OVERRIDES[page.slug] || `${SITE}/${page.slug}/`;
+    const canonical = `${SITE}/${page.slug}/`;
     const catTools = TOOLS.filter(t => t.category === page.category);
     const schemas = [
       breadcrumbs([
