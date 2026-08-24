@@ -1,0 +1,1469 @@
+{
+  "generated_at": "2026-08-24T09:18:36.919Z",
+  "base_url": "https://ainexustools.online",
+  "pages_sampled": 15,
+  "sitemap_url_count": 191,
+  "overall_score": 90,
+  "site_wide": {
+    "score": 100,
+    "checks": [
+      {
+        "id": "robots-reachable",
+        "label": "robots.txt reachable",
+        "pass": true,
+        "weight": 3,
+        "detail": "HTTP 200"
+      },
+      {
+        "id": "robots-GPTBot",
+        "label": "GPTBot not blocked",
+        "pass": true,
+        "weight": 1,
+        "detail": "GPTBot explicitly allowed"
+      },
+      {
+        "id": "robots-ChatGPT-User",
+        "label": "ChatGPT-User not blocked",
+        "pass": true,
+        "weight": 1,
+        "detail": "ChatGPT-User explicitly allowed"
+      },
+      {
+        "id": "robots-OAI-SearchBot",
+        "label": "OAI-SearchBot not blocked",
+        "pass": true,
+        "weight": 1,
+        "detail": "OAI-SearchBot explicitly allowed"
+      },
+      {
+        "id": "robots-ClaudeBot",
+        "label": "ClaudeBot not blocked",
+        "pass": true,
+        "weight": 1,
+        "detail": "ClaudeBot explicitly allowed"
+      },
+      {
+        "id": "robots-anthropic-ai",
+        "label": "anthropic-ai not blocked",
+        "pass": true,
+        "weight": 1,
+        "detail": "anthropic-ai explicitly allowed"
+      },
+      {
+        "id": "robots-PerplexityBot",
+        "label": "PerplexityBot not blocked",
+        "pass": true,
+        "weight": 1,
+        "detail": "PerplexityBot explicitly allowed"
+      },
+      {
+        "id": "robots-Google-Extended",
+        "label": "Google-Extended not blocked",
+        "pass": true,
+        "weight": 1,
+        "detail": "Google-Extended explicitly allowed"
+      },
+      {
+        "id": "robots-Bytespider",
+        "label": "Bytespider not blocked",
+        "pass": true,
+        "weight": 1,
+        "detail": "Bytespider explicitly allowed"
+      },
+      {
+        "id": "robots-DuckAssistBot",
+        "label": "DuckAssistBot not blocked",
+        "pass": true,
+        "weight": 1,
+        "detail": "DuckAssistBot explicitly allowed"
+      },
+      {
+        "id": "robots-sitemap-ref",
+        "label": "robots.txt references sitemap.xml",
+        "pass": true,
+        "weight": 2,
+        "detail": "found"
+      },
+      {
+        "id": "robots-content-signal",
+        "label": "Content-Signal (AI usage preferences) declared",
+        "pass": true,
+        "weight": 1,
+        "detail": "found"
+      },
+      {
+        "id": "sitemap-reachable",
+        "label": "sitemap.xml reachable",
+        "pass": true,
+        "weight": 3,
+        "detail": "HTTP 200"
+      },
+      {
+        "id": "sitemap-nonempty",
+        "label": "sitemap.xml has URLs",
+        "pass": true,
+        "weight": 1,
+        "detail": "191 <loc> entries"
+      },
+      {
+        "id": "llms-txt-reachable",
+        "label": "/llms.txt reachable (AI crawler discovery index)",
+        "pass": true,
+        "weight": 3,
+        "detail": "HTTP 200"
+      },
+      {
+        "id": "llms-full-txt-reachable",
+        "label": "/llms-full.txt reachable",
+        "pass": true,
+        "weight": 1,
+        "detail": "HTTP 200"
+      },
+      {
+        "id": "llms-txt-fresh",
+        "label": "llms.txt updated within 45 days",
+        "pass": true,
+        "weight": 1,
+        "detail": "last updated 2026-08-24 (0d ago)"
+      }
+    ]
+  },
+  "per_page": [
+    {
+      "url": "https://ainexustools.online/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "8 block(s): WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "13 H2, 3 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "5 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": true,
+          "weight": 1,
+          "detail": "1 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 13,
+        "h3Count": 3,
+        "tableCount": 1,
+        "questionHeaders": 5,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "FAQPage",
+          "ItemList",
+          "WebPage",
+          "BreadcrumbList",
+          "HowTo"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/tools/grammarly/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "3 H2, 5 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "5 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 3,
+        "h3Count": 5,
+        "tableCount": 0,
+        "questionHeaders": 5,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Review",
+          "ClaimReview",
+          "BreadcrumbList",
+          "WebPage",
+          "SoftwareApplication",
+          "FAQPage"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/tools/writesonic/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "3 H2, 5 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "5 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 3,
+        "h3Count": 5,
+        "tableCount": 0,
+        "questionHeaders": 5,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Review",
+          "ClaimReview",
+          "BreadcrumbList",
+          "WebPage",
+          "SoftwareApplication",
+          "FAQPage"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/tools/rytr/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "3 H2, 5 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "5 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 3,
+        "h3Count": 5,
+        "tableCount": 0,
+        "questionHeaders": 5,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Review",
+          "ClaimReview",
+          "BreadcrumbList",
+          "WebPage",
+          "SoftwareApplication",
+          "FAQPage"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/tools/quillbot/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "3 H2, 5 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "5 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 3,
+        "h3Count": 5,
+        "tableCount": 0,
+        "questionHeaders": 5,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Review",
+          "ClaimReview",
+          "BreadcrumbList",
+          "WebPage",
+          "SoftwareApplication",
+          "FAQPage"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/tools/frase/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Review, ClaimReview, BreadcrumbList, WebPage, SoftwareApplication, FAQPage"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "3 H2, 5 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "5 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 3,
+        "h3Count": 5,
+        "tableCount": 0,
+        "questionHeaders": 5,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Review",
+          "ClaimReview",
+          "BreadcrumbList",
+          "WebPage",
+          "SoftwareApplication",
+          "FAQPage"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/blog/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "4 block(s): WebSite, Organization, Person, Article, BreadcrumbList, ItemList"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, ItemList"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, ItemList"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 H2, 0 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 0,
+        "h3Count": 0,
+        "tableCount": 0,
+        "questionHeaders": 0,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Article",
+          "BreadcrumbList",
+          "ItemList"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/blog/best-ai-voice-generators-for-voiceovers-2026/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "11 H2, 10 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "10 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": true,
+          "weight": 1,
+          "detail": "2 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 11,
+        "h3Count": 10,
+        "tableCount": 2,
+        "questionHeaders": 10,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Article",
+          "BreadcrumbList",
+          "WebPage",
+          "FAQPage",
+          "ItemList",
+          "Dataset"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/blog/best-ai-voice-generators-for-podcasts-2026/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "8 H2, 10 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "10 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": true,
+          "weight": 1,
+          "detail": "1 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 8,
+        "h3Count": 10,
+        "tableCount": 1,
+        "questionHeaders": 10,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Article",
+          "BreadcrumbList",
+          "WebPage",
+          "FAQPage",
+          "ItemList",
+          "Dataset"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/blog/best-ai-voice-cloning-tools-2026/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "10 H2, 10 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "10 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": true,
+          "weight": 1,
+          "detail": "1 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 10,
+        "h3Count": 10,
+        "tableCount": 1,
+        "questionHeaders": 10,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Article",
+          "BreadcrumbList",
+          "WebPage",
+          "FAQPage",
+          "ItemList",
+          "Dataset"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/blog/best-ai-voice-for-faceless-youtube-channels/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "12 H2, 10 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "10 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": true,
+          "weight": 1,
+          "detail": "1 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 12,
+        "h3Count": 10,
+        "tableCount": 1,
+        "questionHeaders": 10,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Article",
+          "BreadcrumbList",
+          "WebPage",
+          "FAQPage",
+          "ItemList",
+          "Dataset"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/compare/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "3 block(s): WebSite, Organization, Person, BreadcrumbList, ItemList"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, BreadcrumbList, ItemList"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": false,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, BreadcrumbList, ItemList"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 H2, 0 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 0,
+        "h3Count": 0,
+        "tableCount": 0,
+        "questionHeaders": 0,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "BreadcrumbList",
+          "ItemList"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/compare/rytr-vs-writesonic/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, ItemList, Dataset, FAQPage, WebPage"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, ItemList, Dataset, FAQPage, WebPage"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, ItemList, Dataset, FAQPage, WebPage"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 H2, 0 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 0,
+        "h3Count": 0,
+        "tableCount": 0,
+        "questionHeaders": 0,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Article",
+          "BreadcrumbList",
+          "ItemList",
+          "Dataset",
+          "FAQPage",
+          "WebPage"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/compare/grammarly-vs-quillbot/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, ItemList, Dataset, FAQPage, WebPage"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, ItemList, Dataset, FAQPage, WebPage"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, ItemList, Dataset, FAQPage, WebPage"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 H2, 0 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 0,
+        "h3Count": 0,
+        "tableCount": 0,
+        "questionHeaders": 0,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Article",
+          "BreadcrumbList",
+          "ItemList",
+          "Dataset",
+          "FAQPage",
+          "WebPage"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/about/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "3 block(s): WebSite, Organization, Person, AboutPage, BreadcrumbList"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, AboutPage, BreadcrumbList"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": false,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, AboutPage, BreadcrumbList"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 H2, 0 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": false,
+          "weight": 1,
+          "detail": "0 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 0,
+        "h3Count": 0,
+        "tableCount": 0,
+        "questionHeaders": 0,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "AboutPage",
+          "BreadcrumbList"
+        ]
+      }
+    }
+  ],
+  "page_avg_score": 89,
+  "top_failures": [
+    {
+      "id": "schema-article-or-review",
+      "label": "Article/Review/FAQPage schema present",
+      "pass": false,
+      "weight": 2,
+      "detail": "WebSite, Organization, Person, BreadcrumbList, ItemList"
+    },
+    {
+      "id": "schema-article-or-review",
+      "label": "Article/Review/FAQPage schema present",
+      "pass": false,
+      "weight": 2,
+      "detail": "WebSite, Organization, Person, AboutPage, BreadcrumbList"
+    },
+    {
+      "id": "has-table",
+      "label": "Has at least one comparison/data table",
+      "pass": false,
+      "weight": 1,
+      "detail": "0 table(s)"
+    },
+    {
+      "id": "has-table",
+      "label": "Has at least one comparison/data table",
+      "pass": false,
+      "weight": 1,
+      "detail": "0 table(s)"
+    },
+    {
+      "id": "has-table",
+      "label": "Has at least one comparison/data table",
+      "pass": false,
+      "weight": 1,
+      "detail": "0 table(s)"
+    },
+    {
+      "id": "has-table",
+      "label": "Has at least one comparison/data table",
+      "pass": false,
+      "weight": 1,
+      "detail": "0 table(s)"
+    },
+    {
+      "id": "has-table",
+      "label": "Has at least one comparison/data table",
+      "pass": false,
+      "weight": 1,
+      "detail": "0 table(s)"
+    },
+    {
+      "id": "heading-structure",
+      "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+      "pass": false,
+      "weight": 1,
+      "detail": "0 H2, 0 H3"
+    },
+    {
+      "id": "question-headers",
+      "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+      "pass": false,
+      "weight": 1,
+      "detail": "0 question heading(s)"
+    },
+    {
+      "id": "has-table",
+      "label": "Has at least one comparison/data table",
+      "pass": false,
+      "weight": 1,
+      "detail": "0 table(s)"
+    }
+  ]
+}
