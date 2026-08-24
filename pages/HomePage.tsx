@@ -286,7 +286,7 @@ const NexusIcon = ({ size = 20 }: { size?: number }) => (
 
 interface HomePageProps { navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
 
-function DeferredSection({ children }: { children: React.ReactNode }) {
+function DeferredSection({ children }: { children: React.ReactNode; minHeight?: number }) {
   // Keep sections rendering immediately to avoid visible vertical gaps.
   return <>{children}</>;
 }

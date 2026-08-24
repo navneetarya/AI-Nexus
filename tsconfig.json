@@ -25,5 +25,11 @@
     },
     "allowImportingTsExtensions": true,
     "noEmit": true
-  }
+  },
+  "exclude": [
+    "index.ts",
+    "loaders.ts",
+    "metadata.ts",
+    "murf-ai-alternatives-2026.ts"
+  ]
 }

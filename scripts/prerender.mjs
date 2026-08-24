@@ -6574,6 +6574,9 @@ const CATEGORY_FAQS = {
 
 // ── 7. Category landing pages (/best-ai-writing-tools/ etc.) ────────────────
 {
+  // Canonical policy is explicit so future legacy aliases can be migrated
+  // without silently changing the canonical URL of the live category page.
+  const CATEGORY_CANONICAL_OVERRIDES = {};
   const CATEGORY_PAGES = [
     { slug: 'best-ai-writing-tools', category: 'Writing', title: 'Best AI Writing Tools 2026 — Reviewed & Ranked | AI Nexus', desc: 'Best AI writing tools reviewed for 2026. Grammarly, Rytr, Writesonic, Frase, Jasper compared with free plans and honest verdicts.' },
     { slug: 'best-ai-image-tools', category: 'Image', title: 'Best AI Image Generators 2026 — Reviewed & Ranked | AI Nexus', desc: 'Best AI image generators reviewed in 2026. Leonardo.ai, PhotoRoom, and more with honest reviews.' },

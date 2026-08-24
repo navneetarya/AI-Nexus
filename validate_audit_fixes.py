@@ -136,14 +136,15 @@ check("C-04", f"dist/llms.txt lists blog posts ({blog_count_in_llms} found, expe
       blog_count_in_llms >= blog_ts_count,
       "generateLlmsTxt() must include all BLOG_POSTS entries")
 
-# C-05: Category canonical overrides (code already existed, verify it's still there)
+# C-05: Category canonical policy is explicit and live category pages remain self-canonical.
 check("C-05", "CATEGORY_CANONICAL_OVERRIDES exists in prerender.mjs",
       "CATEGORY_CANONICAL_OVERRIDES" in prerender,
-      "Add CATEGORY_CANONICAL_OVERRIDES map to category page rendering in prerender.mjs")
+      "Add CATEGORY_CANONICAL_OVERRIDES map beside category page rendering in prerender.mjs")
 
-check("C-05", "best-ai-writing-tools category → blog canonical",
-      "'best-ai-writing-tools'" in prerender and "best-ai-writing-tools-2026" in prerender,
-      "Set best-ai-writing-tools category canonical to blog post URL in CATEGORY_CANONICAL_OVERRIDES")
+writing_category_html = read(DIST / "best-ai-writing-tools" / "index.html")
+check("C-05", "best-ai-writing-tools category uses a self-referencing canonical",
+      'rel="canonical" href="https://ainexustools.online/best-ai-writing-tools/"' in writing_category_html,
+      "Keep the live category page canonical pointed at its own URL")
 
 # C-06: No code check (Cloudflare CDN — external infrastructure)
 print(f"  {INFO}  [C-06] Cloudflare CDN setup is an external infrastructure task (no code check)")
