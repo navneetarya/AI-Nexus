@@ -388,14 +388,14 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "best-ai-presentation-tools-2026",
     "title": "Best AI Presentation Tools 2026: Gamma vs Beautiful.ai vs Canva AI vs NotebookLM",
     "seoTitle": "Best AI Presentation Tools 2026: Reviewed & Ranked",
-    "metaDescription": "Best AI presentation tools 2026 compared: Gamma, Beautiful.ai, Canva AI, NotebookLM. Tome shut down in 2025 — what to use instead, with verified pricing.",
+    "metaDescription": "Best AI presentation tools 2026 compared: Gamma, Prezi AI, Beautiful.ai, Canva AI, NotebookLM, plus ChatGPT/Copilot native options. Tome shut down in 2025 — what to use instead, with verified pricing.",
     "datePublished": "2026-06-30",
-    "dateModified": "2026-06-30",
+    "dateModified": "2026-08-24",
     "author": "Navneet Arya",
     "category": "Design",
-    "readTime": "11 min read",
+    "readTime": "13 min read",
     "ogImage": "https://ainexustools.online/og-compare.webp",
-    "excerpt": "Tome — the tool nearly every \"best AI presentation tool\" list still recommends — shut down its Slides product in April 2025. Gamma, Beautiful.ai, Canva AI, and a surprising free entrant from Google (NotebookLM) are the four tools actually worth using in 2026, compared here on pricing, output quality, and PowerPoint export."
+    "excerpt": "Tome — the tool nearly every \"best AI presentation tool\" list still recommends — shut down its Slides product in April 2025. Gamma, Prezi AI, Beautiful.ai, Canva AI, NotebookLM, and the native ChatGPT/Copilot/Gemini options are the tools actually worth using in 2026, compared here on pricing, output quality, and PowerPoint export."
   },
   {
     "slug": "best-ai-video-generators-2026",
@@ -598,7 +598,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "5 Best AI Headshot Tools for LinkedIn (2026)",
     "metaDescription": "HeadshotPro, Aragon AI, Remini & more — best AI headshot tools for LinkedIn 2026. Pricing, output quality, and honest verdict from independent research.",
     "datePublished": "2026-05-28",
-    "dateModified": "2026-06-14",
+    "dateModified": "2026-08-24",
     "author": "Navneet Arya",
     "category": "image",
     "readTime": "9 min read",
