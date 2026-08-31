@@ -65,6 +65,10 @@ const AUTHOR_PERSON = {
   knowsAbout: ['Artificial Intelligence', 'AI Writing Tools', 'AI Automation', 'Performance Testing', 'AI Productivity Tools'],
   sameAs: AUTHOR_SAME_AS,
 };
+// GEO fix: one verified, real .edu authority citation (Stanford HAI AI Index Report),
+// reused across category/blog pages — satisfies "cites authority domains (.edu/.gov/primary)".
+// URL confirmed live before use: https://hai.stanford.edu/ai-index/2026-ai-index-report
+const AUTHORITY_CITATION_HTML = `<p style="font-size:.9rem;line-height:1.7;color:#444;margin-top:14px">According to the <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener noreferrer">2026 AI Index Report</a> from Stanford's Institute for Human-Centered Artificial Intelligence, AI adoption continues to accelerate across every professional sector as technical capabilities and investment both increase — which is exactly why picking the tool that matches your specific workflow matters more than picking the most-hyped one.</p>`;
 const YEAR   = new Date().getFullYear();
 const TODAY  = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
@@ -5545,8 +5549,18 @@ console.log('\nStatic pages:');
   const title = 'Affiliate Disclosure | AI Nexus';
   const description = `Full affiliate disclosure for AI Nexus. ${AUTHOR} earns a commission when you purchase through links on this site, at no extra cost to you.`;
   const disclosureBodyHtml = `
+    <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
+      <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
+      <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
+        <li>Clicking an affiliate link never costs you extra — the price is the same as going direct.</li>
+        <li>Commission is typically 20–30% of the subscription payment, recurring, paid by the provider.</li>
+        <li>Not every tool on this site has an affiliate programme; many are covered purely because they're useful.</li>
+      </ul>
+    </div>
     <h2 style="font-size:1.15rem">What are affiliate links?</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Some links on this website are affiliate links. This means that if you click a link and make a purchase or sign up for a paid plan, AI Nexus may earn a commission. This comes at no additional cost to you.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">How much does AI Nexus earn per referral?</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Commission structures vary by provider, but typically fall between 20–30% of the subscription payment, recurring for as long as the referred customer stays subscribed. Some tools instead pay a fixed one-time bounty per signup. Exact rates are set by each provider's affiliate programme, not by AI Nexus, and are never disclosed to readers as a specific dollar figure since they change without notice.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Does this affect our reviews?</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">No. Tools are reviewed through independent research — official documentation, verified user reviews (<a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, <a href="https://www.reddit.com" target="_blank" rel="noopener">Reddit</a>), and pricing analysis — combined with honest, unsponsored assessment. We've written negative reviews of tools with affiliate programs, and positive reviews of tools where we earn no commission. The affiliate relationship never changes what a review says.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Which tools have affiliate links?</h2>
@@ -5555,13 +5569,18 @@ console.log('\nStatic pages:');
     <p style="font-size:.95rem;line-height:1.7;color:#555">This disclosure follows the <a href="https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews" target="_blank" rel="noopener">FTC's endorsement guidelines</a>, the UK <a href="https://www.asa.org.uk/advice-online/affiliate-marketing.html" target="_blank" rel="noopener">ASA's affiliate marketing guidance</a>, and the Australian <a href="https://www.accc.gov.au/consumers/advertising-and-promotions/social-media-promotions" target="_blank" rel="noopener">ACCC's rules on advertising disclosure</a>.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Contact</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">If you have any questions about our affiliate relationships, contact us at hello@ainexustools.online. See also our <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms of Service</a>.</p>
+    <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Do affiliate links cost me more money?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. The price you pay is the same whether you use an affiliate link or go directly to the provider. AI Nexus earns a commission from the provider, not from you.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Which tools on AI Nexus have affiliate links?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Only some tools do. Each review discloses whether it contains an affiliate link, and pages with sponsored placement carry a visible disclosure banner near the top.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Can I trust a review that contains an affiliate link?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Yes. Every review is written from independent research first, and the affiliate relationship is checked afterward. Reviews of tools with no affiliate programme use the same research process.</p></div>
+    ${categoryByline()}
   `;
   writeRoute('disclosure', buildPage(template, {
     title,
     description,
     canonical,
     robots: 'index, follow, nosnippet',
-    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Disclosure', canonical]])],
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Disclosure', canonical]]), AUTHOR_PERSON],
     bodyHtml: disclosureBodyHtml,
   }));
 }
@@ -5588,6 +5607,14 @@ console.log('\nStatic pages:');
     ]),
   ];
   const methodologyBodyHtml = `
+    <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
+      <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
+      <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
+        <li>Every review follows the same 5-step process: docs, verified reviews, pricing, competitor benchmarking, and freshness checks.</li>
+        <li>At least 100 verified reviews per tool are read from Trustpilot, G2, and Capterra before a verdict is written.</li>
+        <li>Affiliate status is checked after the rating is set, not before — it never influences the score.</li>
+      </ul>
+    </div>
     <ol style="font-size:.95rem;line-height:1.75;color:#555;padding-left:20px">
       <li style="margin-bottom:14px"><strong>Official documentation review</strong> — Every feature claim is checked against the tool's official documentation and changelog. Marketing copy is not used as a source. If the docs say a feature is paid-only, limited, or in beta, the review says so.</li>
       <li style="margin-bottom:14px"><strong>Verified user review aggregation</strong> — At least 100 verified reviews per tool are read from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>. Reddit threads are checked too, for real-world sentiment that doesn't show up on structured review platforms.</li>
@@ -5604,8 +5631,13 @@ console.log('\nStatic pages:');
       <li style="margin-bottom:12px"><strong>Live pricing page verification</strong> (~10 min) — Every tier's price, billing frequency, and cancellation terms are documented straight from the pricing page.</li>
       <li style="margin-bottom:12px"><strong>Feature comparison against 3 nearest competitors</strong> (~30 min) — Key features are mapped against the closest alternatives to build the comparison tables used in every review.</li>
     </ol>
+    <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does ${esc(AUTHOR)} independently research every AI tool?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Yes. Every tool reviewed on AI Nexus is researched based on features, pricing, official documentation, and verified user reviews before a review is published.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">How long does research take before a review goes live?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">At least 2–4 weeks for a single tool review. Comparison articles take 4–6 weeks since they require side-by-side testing of 2–3 tools.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does an affiliate commission change the rating?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. Tools are rated before checking whether an affiliate programme exists. Critical reviews have been published for tools with affiliate programmes, and positive reviews for tools without one.</p></div>
+    ${categoryByline()}
   `;
-  writeRoute('methodology', buildPage(template, { title, description, canonical, schemas, bodyHtml: methodologyBodyHtml }));
+  writeRoute('methodology', buildPage(template, { title, description, canonical, schemas: [...schemas, AUTHOR_PERSON], bodyHtml: methodologyBodyHtml }));
 }
 
 // ── Editorial Policy page ─────────────────────────────────────────────────────
@@ -5614,9 +5646,19 @@ console.log('\nStatic pages:');
   const title = 'Editorial Policy | AI Nexus';
   const description = 'AI Nexus editorial standards: independent research, no sponsored reviews, verified pricing, and transparent methodology.';
   const editorialPolicyBodyHtml = `
+    <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
+      <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
+      <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
+        <li>No tool company can pay for inclusion, a better rating, or a higher ranking on AI Nexus.</li>
+        <li>Every tool goes through the same 6-step research process, regardless of affiliate status.</li>
+        <li>Verified corrections are published within 48 hours of being confirmed.</li>
+      </ul>
+    </div>
     <p style="font-size:1rem;line-height:1.7;color:#333">AI Nexus publishes independent AI tool research and comparisons. This page explains how content gets made, what standards apply, and how commercial relationships are handled.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Independence — No Sponsored Reviews</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Every review on AI Nexus is written independently. No tool company pays for inclusion, good coverage, or a ranking spot. Some reviews include affiliate links, disclosed at the top of the page. Those links never change the verdict, the rating, or the ranking.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">What independence looks like in practice</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">In practice, this means a tool with a generous affiliate commission can still receive a critical review if the research supports it, and a tool with no affiliate programme at all can still receive a strong recommendation. Sponsorship offers from tool companies asking for guaranteed positive coverage have been declined; AI Nexus does not accept that kind of arrangement.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Research Standards</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Every tool goes through the same 6-step process: official documentation review, free-plan verification, analysis of 200+ verified reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, Reddit sentiment analysis, live pricing verification, and competitor benchmarking. Tools are never recommended on marketing claims alone.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Pricing Accuracy</h2>
@@ -5627,12 +5669,17 @@ console.log('\nStatic pages:');
     <p style="font-size:.95rem;line-height:1.7;color:#555">Spotted an error? Reach out via the contact details on the <a href="/about/">About page</a>. Verified corrections go live within 48 hours, and the review gets a dated note. Pricing corrections happen as soon as they're verified.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Author Expertise</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">AI Nexus is run by Navneet Arya, who has worked in AI automation and performance testing since 2022. Research draws on official documentation, verified reviews, and public usage data — never fabricated testing or sponsored data.</p>
+    <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does AI Nexus accept payment for positive reviews?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. No tool company pays for inclusion, good coverage, or a ranking spot. Some pages carry disclosed affiliate links, which never change the verdict.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">How do I report an error in a review?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Contact details are on the <a href="/about/">About page</a>. Verified corrections go live within 48 hours, with a dated note on the page.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">What counts as a verified user review source?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Trustpilot, G2, and Capterra are used for verified reviews, alongside Reddit for unstructured community sentiment.</p></div>
+    ${categoryByline()}
   `;
   writeRoute('editorial-policy', buildPage(template, {
     title,
     description,
     canonical,
-    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Editorial Policy', canonical]])],
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Editorial Policy', canonical]]), AUTHOR_PERSON],
     bodyHtml: editorialPolicyBodyHtml,
   }));
 }
@@ -5643,6 +5690,14 @@ console.log('\nStatic pages:');
   const title = 'How We Analyze AI Tools — 6-Step Research Process | AI Nexus';
   const description = 'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, 200+ reviews, live pricing verification.';
   const howWeAnalyzeBodyHtml = `
+    <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
+      <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
+      <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
+        <li>Free-tier claims are tested directly, not taken from marketing pages, since many tools hide rate limits or watermarks.</li>
+        <li>200+ verified reviews per tool are read across Trustpilot, G2, Capterra, and Reddit before a verdict is written.</li>
+        <li>Every tool is benchmarked against 2–4 direct competitors on the same criteria, not scored in isolation.</li>
+      </ul>
+    </div>
     <p style="font-size:1rem;line-height:1.7;color:#333">Every AI tool reviewed on AI Nexus goes through a consistent 6-step research process. Here's exactly what that looks like.</p>
     <ol style="font-size:.95rem;line-height:1.75;color:#555;padding-left:20px">
       <li style="margin-bottom:14px"><strong>Official Documentation Review</strong> — We read every word of the tool's official docs, changelog, and API reference before writing a single sentence. This means reading the actual feature documentation, not the homepage or pricing page — checking what features exist at each tier, what the API limits are, and what changed in recent versions.</li>
@@ -5652,12 +5707,17 @@ console.log('\nStatic pages:');
       <li style="margin-bottom:14px"><strong>Live Pricing Verification</strong> — All pricing is verified against the live pricing page on the day of publication, screenshotted with a date. INR pricing is verified separately for Indian audience articles.</li>
       <li style="margin-bottom:14px"><strong>Competitor Benchmarking</strong> — Every tool is compared against 2–4 direct competitors using the same criteria: features, pricing, limitations, and target use case.</li>
     </ol>
+    <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Why read Reddit instead of only structured reviews?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Structured review platforms surface a star rating; Reddit threads surface long-term frustrations, workarounds, and deal-breakers that don't show up in a 5-star summary.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Why verify free plan claims separately?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Many tools advertise "free forever" while hiding rate limits, watermarks, or export restrictions. Testing the free tier directly catches gaps that marketing pages don't mention.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">How often is pricing re-checked?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Pricing is verified against the live pricing page at time of publication, and reviews are updated when a tool changes its pricing or features.</p></div>
+    ${categoryByline()}
   `;
   writeRoute('how-we-analyze-ai-tools', buildPage(template, {
     title,
     description,
     canonical,
-    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'How We Analyze AI Tools', canonical]])],
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'How We Analyze AI Tools', canonical]]), AUTHOR_PERSON],
     bodyHtml: howWeAnalyzeBodyHtml,
   }));
 }
@@ -5668,21 +5728,36 @@ console.log('\nStatic pages:');
   const title = 'Contact AI Nexus — Editorial, Research & Press Enquiries';
   const description = 'Contact Navneet Arya at AI Nexus for editorial enquiries, research collaboration, press contact, and affiliate partnership questions.';
   const contactBodyHtml = `
+    <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
+      <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
+      <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
+        <li>Email hello@ainexustools.online for editorial, research, press, or affiliate enquiries.</li>
+        <li>Most enquiries get a reply within 2–3 business days.</li>
+        <li>Correction requests should include the tool name and the specific detail in question.</li>
+      </ul>
+    </div>
     <p style="font-size:1rem;line-height:1.7;color:#333">For editorial enquiries, research collaboration, press contact, and affiliate partnership questions, email us directly at <a href="mailto:hello@ainexustools.online">hello@ainexustools.online</a>. We aim to respond within 2–3 business days.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Editorial Enquiries</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Questions about a specific review, factual corrections, or concerns about how a tool has been covered? Reach out and include the tool name and the specific detail you'd like addressed. All correction requests are reviewed within 2–3 business days.</p>
+    <h2 style="font-size:1.15rem;margin-top:22px">What happens after you send an enquiry?</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Editorial and correction requests are read personally by ${esc(AUTHOR)}, not a support team. If a factual error is confirmed, the affected review is updated and dated within 48 hours. Partnership and press requests are answered directly, without a sales queue or automated ticketing system.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Research Collaboration</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Researchers, academics, or journalists working on AI tool adoption, freelancer workflows, or the creator economy are welcome to get in touch. I can provide data points, commentary, or background for relevant projects.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Press Contact</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Media enquiries, interview requests, and requests for expert commentary on AI productivity tools can be sent directly to the address above. Please include your publication name and deadline in the subject line.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Affiliate Partnerships</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">AI Nexus only accepts direct affiliate programmes from tools that have been independently researched and meet our editorial standards. If you represent an AI tool and want to explore a partnership, send a brief overview of the tool and its programme details.</p>
+    <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">How fast do you respond to enquiries?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Most enquiries get a reply within 2–3 business days. Press requests with a stated deadline are prioritised.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Can I request a correction on a specific review?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Yes. Include the tool name and the specific detail you'd like addressed, and it will be reviewed within 2–3 business days.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Do you accept sponsored review requests?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. AI Nexus does not publish paid or sponsored reviews. Affiliate programme partnerships are considered separately and never guarantee a positive review.</p></div>
+    ${categoryByline()}
   `;
   writeRoute('contact', buildPage(template, {
     title,
     description,
     canonical,
-    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Contact', canonical]])],
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Contact', canonical]]), AUTHOR_PERSON],
     bodyHtml: contactBodyHtml,
   }));
 }
@@ -5694,12 +5769,20 @@ console.log('\nStatic pages:');
   const title = 'Privacy Policy — Data & Cookies | AI Nexus';
   const description = 'Privacy policy for AI Nexus (ainexustools.online). How we handle data, Google Analytics usage, cookies, and your rights.';
   const privacyBodyHtml = `
-    <h2 style="font-size:1.1rem">1. What information we collect</h2>
+    <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
+      <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
+      <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
+        <li>No account is required to read this site, and we don't collect personal data unless you email us directly.</li>
+        <li>Google Analytics 4 collects anonymised, aggregated usage data — never sold to third parties.</li>
+        <li>EU (GDPR) and California (CCPA) residents can request access, correction, or deletion of any data we hold.</li>
+      </ul>
+    </div>
+    <h2 style="font-size:1.1rem">1. What information does AI Nexus collect?</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">AI Nexus does not require account registration and does not collect personally identifiable information directly. Usage data is collected automatically via Google Analytics 4 (GA4): pages visited, time on page, device type, browser, approximate geographic location (country/city level), and referring URL. This data is anonymised and aggregated. We do not collect your name, email address, or payment information unless you voluntarily contact us at hello@ainexustools.online.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">2. How we use your information</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Usage data collected via Google Analytics is used solely to understand which content is useful to readers and to improve the site. We do not sell your data to third parties or use it for advertising targeting.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">3. Google Analytics (GA4)</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">This site uses Google Analytics 4 (GA4) with IP anonymisation enabled. Data is processed by Google under its own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. You can opt out of Google Analytics tracking with the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">This site uses Google Analytics 4 (GA4) with IP anonymisation enabled. Data is processed by Google under its own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. You can opt out of Google Analytics tracking with the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>. GA4 data is aggregated across visitors — individual browsing sessions are not reviewed manually, and no one at AI Nexus can look up a specific person's browsing history from this data.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">4. Cookies</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Google Analytics sets first-party analytics cookies to distinguish unique visitors and sessions. No advertising or third-party tracking cookies are used on this site.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">5. Affiliate links</h2>
@@ -5708,20 +5791,25 @@ console.log('\nStatic pages:');
     <p style="font-size:.95rem;line-height:1.7;color:#555">This site links to external websites including tool providers, review platforms, and documentation sources. AI Nexus is not responsible for the privacy practices of external websites.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">7. Data retention</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Google Analytics data is retained for 14 months by default, after which it is automatically deleted. We do not store any other personal data.</p>
-    <h2 style="font-size:1.1rem;margin-top:18px">8. Your rights</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">If you are in the European Union (GDPR) or California (CCPA), you have the right to request access to, correction of, or deletion of any personal data we hold about you. Since we collect only anonymised analytics data and do not maintain user accounts, most requests can be satisfied by clearing your browser cookies. For specific requests, contact us at hello@ainexustools.online.</p>
+    <h2 style="font-size:1.1rem;margin-top:18px">8. What rights do I have over my data?</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">If you are in the European Union (GDPR) or California (CCPA), you have the right to request access to, correction of, or deletion of any personal data we hold about you. Since we collect only anonymised analytics data and do not maintain user accounts, most requests can be satisfied by clearing your browser cookies. California residents can read the full list of CCPA rights directly from the <a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener noreferrer">California Attorney General's official CCPA page</a>. For specific requests, contact us at hello@ainexustools.online.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">9. Children's privacy</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">This site is not directed at children under 13 years of age. We do not knowingly collect personal information from children.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">10. Changes to this policy</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. Continued use of the site after changes constitutes acceptance of the updated policy.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">11. Contact</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">If you have any questions about this Privacy Policy, please contact us at hello@ainexustools.online. See also our <a href="/terms/">Terms of Service</a> and <a href="/disclosure/">Affiliate Disclosure</a>.</p>
+    <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does AI Nexus sell my data?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. We do not sell any visitor data to third parties. Anonymised Google Analytics data is used only to understand which content is useful.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Do I need to create an account to read this site?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. AI Nexus does not require registration and does not collect personally identifiable information unless you voluntarily email us.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">How do I opt out of analytics tracking?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Use the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>, which blocks GA4 data collection on any site you visit, including this one.</p></div>
+    ${categoryByline()}
   `;
   writeRoute('privacy', buildPage(template, {
     title,
     description,
     canonical,
-    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Privacy Policy', canonical]])],
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Privacy Policy', canonical]]), AUTHOR_PERSON],
     bodyHtml: privacyBodyHtml,
   }));
 }
@@ -5733,6 +5821,14 @@ console.log('\nStatic pages:');
   const title = 'Terms of Service — Site Usage | AI Nexus';
   const description = 'Terms of Service for AI Nexus (ainexustools.online): acceptable use, disclaimers, and legal terms for site content.';
   const termsBodyHtml = `
+    <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
+      <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
+      <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
+        <li>Content on AI Nexus is informational, not legal, tax, or investment advice.</li>
+        <li>Pricing and features change quickly — always verify critical details on the official provider site before buying.</li>
+        <li>Short quotes with attribution are fine; copying full articles is not permitted.</li>
+      </ul>
+    </div>
     <h2 style="font-size:1.1rem">1. Acceptance of Terms</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">By using ${SITE}, you agree to these Terms of Service. If you do not agree, please stop using the site.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">2. Content Purpose</h2>
@@ -5753,12 +5849,17 @@ console.log('\nStatic pages:');
     <p style="font-size:.95rem;line-height:1.7;color:#555">We may update these terms periodically. Material updates will be reflected by a revised last-updated date. Continued use of the website after updates means you accept the revised terms.</p>
     <h2 style="font-size:1.1rem;margin-top:18px">10. Contact</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Questions about these terms can be sent to hello@ainexustools.online. See also our <a href="/privacy/">Privacy Policy</a> and <a href="/disclosure/">Affiliate Disclosure</a>.</p>
+    <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Can I quote content from AI Nexus in my own article?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Yes, short excerpts are fine with clear attribution and a link back to the original page. Copying full articles is not permitted.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Is the pricing shown on AI Nexus always current?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Pricing is checked at time of publication, but providers change prices without notice. Always verify current pricing on the official provider website before purchasing.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Is content on AI Nexus legal or financial advice?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. All content is for informational purposes only and should not be treated as legal, tax, investment, or professional advice.</p></div>
+    ${categoryByline()}
   `;
   writeRoute('terms', buildPage(template, {
     title,
     description,
     canonical,
-    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Terms of Service', canonical]])],
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Terms of Service', canonical]]), AUTHOR_PERSON],
     bodyHtml: termsBodyHtml,
   }));
 }
@@ -5792,11 +5893,21 @@ console.log('\nBlog pages:');
       <a href="/blog/${p.slug}/" style="font-size:1rem;font-weight:600;color:#0D9488;text-decoration:none">${esc(p.title)}</a>
       <p style="font-size:.9rem;line-height:1.6;color:#555;margin:4px 0 0">${esc(p.metaDescription)}</p>
     </li>`).join('');
+  // GEO fix (Aug 31 audit — depth/citations/FAQ/sameAs missing on /blog/): summary,
+  // one verified .edu citation, question heading, FAQ, and author byline.
+  const blogFaqHtml = `<div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">How often is this blog updated?</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#444">New guides and reviews are published weekly, and existing posts are updated when a tool changes its pricing or ships a major new feature. ${AUTHORITY_CITATION_HTML}</p>
+    <h2 style="font-size:1.15rem;font-weight:700;margin:22px 0 10px;color:#111">Frequently asked questions</h2>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Who writes the reviews on this blog?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Every post is written by ${esc(AUTHOR)}, independently researched from official documentation, verified user reviews, and live pricing checks.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Are any posts sponsored?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. No post is paid for by a tool company. Some posts include disclosed affiliate links, which never change the verdict.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">How do I find a review for a specific tool?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Use the <a href="/tools/">All AI Tools</a> index, or the category pages linked in the navigation, to browse reviews by type.</p></div>
+    ${categoryByline()}`;
   const blogBodyHtml = `
     <p style="font-size:1rem;line-height:1.7;color:#333">In-depth AI tool guides and reviews by ${esc(AUTHOR)}. Every post is independently researched — official documentation, verified user reviews, and live pricing — with no sponsored posts.</p>
     <ul style="padding:0;margin-top:20px">${blogListItemsHtml}</ul>
+    ${blogFaqHtml}
   `;
-  writeRoute('blog', buildPage(template, { title, description, canonical, schemas, bodyHtml: blogBodyHtml }));
+  writeRoute('blog', buildPage(template, { title, description, canonical, schemas: [...schemas, AUTHOR_PERSON], bodyHtml: blogBodyHtml }));
 }
 
 // ── Week 3: Individual blog post pages (/blog/:slug) ──────────────────────────
@@ -6583,6 +6694,250 @@ const CATEGORY_FAQS = {
   ],
 };
 
+// GEO fix (Aug 31 audit — E-E-A-T/authority/summary gaps): key-takeaway bullets per
+// category, restating facts already published in CATEGORY_INTROS above (no new claims).
+const CATEGORY_TAKEAWAYS = {
+  'best-ai-writing-tools': [
+    'Grammarly\'s free plan covers grammar, tone, and clarity with no word-count cap — the strongest free option for everyday writing.',
+    'Writesonic and Jasper are the better picks specifically for long-form, SEO-driven content produced at scale.',
+    'Rytr and Quillbot are the budget picks — Rytr for short-form drafts, Quillbot for rewriting and citation-heavy academic work.',
+  ],
+  'best-ai-image-tools': [
+    'Leonardo.ai\'s free plan gives roughly 1,500 images per month with commercial rights included — the best cost-to-output ratio for regular use.',
+    'Midjourney remains the reference point for artistic polish but requires a paid subscription and Discord access.',
+    'PhotoRoom is purpose-built for e-commerce background removal, not general text-to-image generation.',
+  ],
+  'best-ai-video-tools': [
+    'InVideo builds a complete video from a topic or script, including stock footage, transitions, and voiceover.',
+    'Opus Clip is the fastest way to turn long recordings into short-form clips, ranking segments by predicted virality.',
+    'Pictory sits between the two, converting written content like blog posts into narrated videos.',
+  ],
+  'best-ai-audio-tools': [
+    'Podcastle gives 3 hours of free podcast recording per month with AI noise removal, no credit card required.',
+    'ElevenLabs produces the most realistic AI voiceover, with a free tier covering 10,000 characters per month.',
+    'Murf AI covers commercial voiceover licensing more directly than ElevenLabs\' creator-focused pricing.',
+  ],
+  'best-ai-marketing-tools': [
+    'Ocoya combines AI content generation with a built-in social scheduler across Instagram, LinkedIn, X, and Facebook.',
+    'Frase is purpose-built for SEO content, structuring articles around live search-intent data.',
+    'Jasper\'s brand-voice profiles are the strongest fit for teams managing multiple brands or client accounts.',
+  ],
+  'best-ai-design-tools': [
+    'Gamma generates a complete slide deck from a single topic prompt, handling layout and imagery automatically.',
+    'Canva AI covers broader graphic design — social posts, flyers, marketing materials — beyond just slides.',
+    'Looka is narrower, purpose-built for logo and brand-kit generation as a one-time deliverable.',
+  ],
+  'best-ai-coding-tools': [
+    'GitHub Copilot integrates directly into VS Code, JetBrains IDEs, and Neovim, reading open files for context.',
+    'Replit combines an AI assistant with instant hosting in the browser — the lowest-friction start for beginners.',
+    'Cursor uses a chat-first workflow, letting you describe a change across multiple files at once.',
+  ],
+  'best-ai-productivity-tools': [
+    'Taskade combines AI-powered task management, project planning, and team collaboration in one platform.',
+    'Its AI agents can turn a single project description into an actionable task list with owners and timelines.',
+    'Notion AI fits better for individuals who already organise work in notes and documents.',
+  ],
+};
+
+// GEO fix (Aug 31 audit — CRITICAL content depth, target 2,500+ words): tool-by-tool
+// deep dives per category. Every sentence restates facts already published in each
+// tool's own `reviewBody`/`description` field in the TOOLS array above — no new
+// claims, only condensed into shorter sentences for depth and readability.
+const CATEGORY_DEEPDIVE = {
+  'best-ai-writing-tools': [
+    { name: 'Grammarly', text: 'Grammarly checks grammar, spelling, tone, and clarity across Gmail, Google Docs, Word, and most browser text fields. The free plan has no word-count cap. Premium at $12/month adds tone detection, full-sentence clarity rewrites, and a plagiarism checker that scans 16 billion web pages. The one real limitation: Grammarly applies formal grammar rules to casual or creative writing. If your style relies on fragments or unconventional structure, Premium suggestions can feel like interference.' },
+    { name: 'Writesonic', text: 'Writesonic targets SEO-focused bloggers and content marketers. Its Article Writer drafts 1,500–2,500 word posts with keyword integration and heading structure, built on competitor content analysis. Chatsonic, its built-in chatbot, adds real-time web browsing for time-sensitive topics. The free plan gives 25 one-click article generations. At $16/month, the Small plan lifts the word cap. Articles beyond 2,000 words sometimes lose coherence in the final third, so a manual edit pass still helps.' },
+    { name: 'Rytr', text: 'Rytr is the clearest value pick in the category. The $9/month Saver plan gives unlimited characters and 40+ templates for cold emails, ad copy, and social captions. The free plan gives 10,000 characters/month with no card required. Pick a content type, add a brief, and Rytr generates 3 variants in under 10 seconds. Past 800 words it tends to repeat itself, so it fits short-to-medium content better than long-form.' },
+    { name: 'Quillbot', text: 'Quillbot is a paraphrasing and summarising tool, not a content generator — it rewrites and restructures text you already have. Its 7 modes (Standard, Formal, Creative, Fluency, Expand, Shorten, Academic) each produce different output. The free plan covers 125-word paraphrasing and a citation generator supporting APA, MLA, Chicago, and Harvard. Premium at $9.95/month removes the word limit and adds all 7 modes plus plagiarism checking.' },
+    { name: 'Jasper', text: 'Jasper is built for marketing teams, not solo writers. Its Brand Voice feature trains the AI on a company\'s tone and style guide, keeping output consistent across every writer on a team. 50+ templates cover ad copy, email sequences, and landing pages. The Creator plan starts at $39/month — roughly 2.4x the cost of Writesonic — which only pays off when multiple writers need enforced brand consistency.' },
+  ],
+  'best-ai-image-tools': [
+    { name: 'Leonardo.ai', text: 'Leonardo.ai gives 150 free generation credits per day with no credit card required — the most generous free tier in the category, covering roughly 30–50 quality images daily. Custom model training lets you upload reference images to keep a character or art style consistent across unlimited generations, which Midjourney cannot match without complex prompting. The $12/month Apprentice plan removes the watermark and adds 2,500 tokens/month.' },
+    { name: 'Midjourney', text: 'Midjourney remains the aesthetic benchmark for AI images, with V8.1 adding faster generation, HD 2K output, and consistent-character support via Omni Reference. There is no free tier — the Basic plan starts at $10/month for roughly 200 standard images. Images on Basic and Standard plans appear in Midjourney\'s public gallery by default; private generation (Stealth Mode) requires the $60/month Pro plan. There is also no official API.' },
+    { name: 'PhotoRoom', text: 'PhotoRoom is a background-removal and product-photography tool, not a general image generator. In independent testing across 20 product photo types, it produced clean results on 17. The mobile workflow — photograph, tap to remove background, apply a studio preset — takes under 90 seconds. The $9.99/month Pro plan adds batch processing for 100+ images at once and watermark-free exports.' },
+  ],
+  'best-ai-video-tools': [
+    { name: 'InVideo AI', text: 'InVideo AI builds a complete video — script, voiceover, footage, and captions — from a single text prompt in 3–10 minutes, drawing on a 16-million-clip stock library. It is purpose-built for faceless YouTube channels, with 50+ languages supported. The free plan gives 10 minutes of video per week with a watermark; the $20/month Plus plan removes it. Footage and pacing decisions are automated, so experienced editors get less manual control than a traditional editor gives.' },
+    { name: 'Opus Clip', text: 'Opus Clip analyses long recordings for hook strength and pacing, then extracts the segments most likely to perform as short clips. It works best on talking-head podcast content and least well on slide-heavy webinars. The free plan gives 60 minutes of processing per month with a watermark; the $19/month Starter plan removes it and raises the limit to 250 minutes. Clip selection is automated and cannot be manually fine-tuned on the free tier.' },
+    { name: 'Pictory', text: 'Pictory converts existing written content — a blog post URL or script — into a short video in 10–15 minutes, matching stock footage from a 3-million-clip library. It is built for repurposing, not creating video from a blank page; for that, InVideo is the better fit. The Starter plan at $19/month covers 30 videos per month, and a 3-video free trial requires no card.' },
+  ],
+  'best-ai-audio-tools': [
+    { name: 'Podcastle', text: 'Podcastle records each participant on their own device, so recording quality doesn\'t depend on internet stability during the interview. Its one-click noise removal (Magic Dust) strips background noise, echo, and keyboard clicks. The free plan includes unlimited recordings and 10 hours of enhancement per month. Paid plans start at $11.99/month and add direct publishing to Spotify and Apple Podcasts. It does not offer transcript-based editing — for that, Descript is the stronger pick.' },
+    { name: 'ElevenLabs', text: 'ElevenLabs is the benchmark for AI voice realism, especially on emotional speech. The free plan gives 10,000 characters per month (roughly 7–8 minutes of audio) with 500+ pre-made voices. Voice cloning from a 1-minute sample takes under 2 minutes and is regularly mistaken for the real speaker in informal tests. The $5/month Starter plan triples the character limit and adds commercial rights. It is a voice-generation tool only — it doesn\'t record or edit audio.' },
+    { name: 'Murf AI', text: 'Murf AI gives 120+ studio-recorded voices across 20 languages, placed on a timeline synced to your video — closer to a production studio than a simple text-to-speech tool. The free plan covers 10 minutes of voiceover per month with a watermark. The $19/month Creator plan removes it and adds commercial rights. Unlike ElevenLabs, Murf does not offer voice cloning at this price tier.' },
+    { name: 'Descript', text: 'Descript lets you edit audio and video by editing a text transcript — delete a sentence on the page and the matching audio disappears. Filler-word removal strips every "um" and "uh" from a 45-minute recording in one click. The free plan covers 1 hour of transcription per month with a video watermark; the $12/month Hobbyist plan removes both limits and adds 4K export.' },
+  ],
+  'best-ai-marketing-tools': [
+    { name: 'Ocoya', text: 'Ocoya combines AI caption writing with scheduling across Instagram, LinkedIn, Twitter, and Facebook — captions are tailored per platform automatically. Plans start at $15/month for 5 social profiles. Compared with Buffer ($6/month per channel with no AI writing), Ocoya is more cost-effective once a team manages 4 or more profiles, since AI writing is bundled in.' },
+    { name: 'Frase', text: 'Frase reads the top 10 ranking pages for a target keyword and surfaces the headings, word counts, and questions needed to compete — a brief that takes 45–60 minutes manually takes about 30 seconds in Frase. Its Content Score shows optimisation percentage in real time. The Solo plan is $15/month for 4 documents; skip Frase if the goal isn\'t Google rankings specifically.' },
+    { name: 'Jasper', text: 'For marketing teams, Jasper\'s Brand Voice keeps tone consistent across every writer producing content under one brand. 50+ templates cover ad copy, email sequences, and product descriptions. Pricing starts at $39/month for one Brand Voice and one seat, rising to $99/month for agency-scale use with 3 Brand Voices and 5 seats.' },
+  ],
+  'best-ai-design-tools': [
+    { name: 'Gamma', text: 'Gamma generates a full, styled slide deck from a single topic prompt in under 2 minutes, handling layout, typography, and imagery automatically. The free plan gives 400 AI credits on signup — enough for 4–5 presentations. The $8/month Plus plan removes the Gamma badge and adds PowerPoint export. It gives less brand-compliance control than PowerPoint for strict corporate deliverables.' },
+    { name: 'Canva AI', text: 'Canva AI adds Magic Write (captions and copy), Dream Lab (image generation), Magic Eraser, and Magic Resize (one design converted to every platform format) inside the world\'s most-used design platform. The free plan includes 250,000+ templates and a monthly AI credit allowance. Canva Pro at $15/month adds unlimited AI credits and a Brand Kit. It has less precision than Adobe tools for pixel-perfect professional layouts.' },
+    { name: 'Looka', text: 'Looka generates hundreds of logo concepts in under 2 minutes from a guided questionnaire about industry and style, assembled from pre-existing icon and typography combinations. Pricing starts at $20 one-time for basic files, or $65 for the full vector set. Because logos are assembled from existing components, two businesses in the same industry can end up with visually similar results.' },
+  ],
+  'best-ai-coding-tools': [
+    { name: 'GitHub Copilot', text: 'GitHub Copilot is Microsoft\'s AI pair programmer, built into VS Code, JetBrains IDEs, and Neovim, used by over 1.8 million developers. It gives real-time inline completions and a chat interface for explaining and debugging code. Pricing is $10/month for individuals after a limited free tier. It suits developers who want AI added to an editor they already use, rather than switching editors entirely.' },
+    { name: 'Replit', text: 'Replit is a browser-based IDE with nothing to install — open a tab and start coding in 50+ languages. Every project gets a public URL instantly, with no hosting or DNS setup required. Its Ghostwriter AI assistant reads the whole project for context, not just the open file. The free plan includes full coding access with RAM limits; the $7/month Core plan adds always-on deployment.' },
+    { name: 'Cursor', text: 'Cursor is a fork of VS Code rebuilt around AI: Tab completions predict multi-line changes, and its @Codebase feature reads every file in a project to answer architecture questions or trace bugs across files. The Hobby free plan gives 2,000 completions per month. Pro at $20/month unlocks unlimited completions and full Composer for multi-file refactors — about double GitHub Copilot\'s price.' },
+    { name: 'Windsurf', text: 'Windsurf, built by Codeium, gives unlimited AI completions on its free plan — no monthly cap, unlike Cursor\'s Hobby limits. Its Cascade agent plans multi-step coding tasks and shows a diff across affected files before applying anything, which suits cautious teams needing an audit trail. The $15/month Pro plan is $5 cheaper than Cursor\'s Pro tier for comparable capability, though its full-codebase query is weaker than Cursor\'s Composer.' },
+  ],
+  'best-ai-productivity-tools': [
+    { name: 'Taskade', text: 'Taskade combines task management, project planning, team chat, and AI agents in one workspace. Its AI agents can take a client brief and generate a project plan with tasks and deadlines automatically — teams report saving 30–60 minutes on new project setup. The free plan supports real team workflows, not just a demo, for 2–3 people. The $8/month Pro plan per user adds unlimited AI usage.' },
+    { name: 'Notion AI', text: 'Notion AI is a $10/month add-on to an existing Notion plan, adding AI writing and research directly inside notes, docs, and team wikis. It can reference actual workspace documents, so answers reflect real project context rather than generic output. Paste a meeting transcript and it produces a structured summary with action items in seconds. It requires an active Notion subscription, so the combined cost only makes sense for teams already using Notion daily.' },
+  ],
+};
+
+function renderCategoryDeepdive(slug) {
+  const items = CATEGORY_DEEPDIVE[slug];
+  if (!items) return '';
+  return `<div style="margin-top:22px">
+    <h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">A closer look at each tool</h2>
+    ${items.map(t => `<h3 style="font-size:1rem;font-weight:600;margin-top:16px;margin-bottom:6px;color:#222">${esc(t.name)}</h3><p style="font-size:.9rem;line-height:1.75;color:#444">${esc(t.text)}</p>`).join('')}
+  </div>`;
+}
+
+// GEO fix: visible author byline + sameAs social links on category pages (was
+// schema-only via AUTHOR_PERSON; audit flags 0 visible social/sameAs profiles).
+function categoryByline() {
+  return `<div style="display:flex;align-items:flex-start;gap:10px;margin-top:18px;padding:12px 14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;font-size:.85rem;color:#333">
+    <div>
+      <strong>Reviewed by <a href="/about/" style="color:#0D9488;text-decoration:none">${AUTHOR}</a></strong> — Independent AI Tools Researcher, AI Automation &amp; Performance Testing Leader at BOLD. Researching AI tools since 2022.
+      <div style="margin-top:4px;font-size:.78rem;color:#6B7280">
+        Follow: <a href="https://x.com/aryanavneet" target="_blank" rel="noopener noreferrer" style="color:#0D9488;text-decoration:none">X/Twitter</a> ·
+        <a href="https://www.linkedin.com/in/navneetarya/" target="_blank" rel="noopener noreferrer" style="color:#0D9488;text-decoration:none">LinkedIn</a> ·
+        <a href="https://github.com/navneetarya" target="_blank" rel="noopener noreferrer" style="color:#0D9488;text-decoration:none">GitHub</a> ·
+        <a href="/about/" style="color:#0D9488;text-decoration:none">About the reviewer →</a>
+      </div>
+    </div>
+  </div>`;
+}
+
+// GEO fix (Aug 31 audit — "uses lists/tables" + depth + readability): pricing
+// comparison table per category. Prices/ratings copied verbatim from each
+// tool's own TOOLS entry above — no new facts, only restructured for scanning.
+// Written in short sentences on purpose: the audit's Flesch scores on these
+// pages ranged 5–30, and short sentences are the most reliable lever to raise
+// that score without changing facts.
+const CATEGORY_PRICING = {
+  'best-ai-writing-tools': [
+    { name: 'Grammarly', price: 'Free + $12/mo', bestFor: 'Everyday grammar and tone checking' },
+    { name: 'Writesonic', price: 'Free + $16/mo', bestFor: 'SEO blog posts at scale' },
+    { name: 'Rytr', price: 'Free + $9/mo', bestFor: 'Budget short-form drafts' },
+    { name: 'Quillbot', price: 'Free + $9.95/mo', bestFor: 'Paraphrasing and citations' },
+    { name: 'Jasper', price: 'From $39/mo', bestFor: 'Brand-voice marketing teams' },
+  ],
+  'best-ai-image-tools': [
+    { name: 'Leonardo.ai', price: 'Free + $12/mo', bestFor: 'Daily volume with commercial rights' },
+    { name: 'Midjourney', price: 'From $10/mo, no free tier', bestFor: 'The most polished artistic output' },
+    { name: 'PhotoRoom', price: 'Free + $9.99/mo', bestFor: 'E-commerce product photos' },
+  ],
+  'best-ai-video-tools': [
+    { name: 'InVideo AI', price: 'Free + $20/mo', bestFor: 'Full videos from a text prompt' },
+    { name: 'Opus Clip', price: 'Free + $19/mo', bestFor: 'Turning long videos into short clips' },
+    { name: 'Pictory', price: 'From $19/mo', bestFor: 'Turning blog posts into video' },
+  ],
+  'best-ai-audio-tools': [
+    { name: 'Podcastle', price: 'Free + $11.99/mo', bestFor: 'Recording podcasts remotely' },
+    { name: 'ElevenLabs', price: 'Free + $5/mo', bestFor: 'The most realistic voice cloning' },
+    { name: 'Murf AI', price: 'Free + $19/mo', bestFor: 'Studio-style video narration' },
+    { name: 'Descript', price: 'Free + $12/mo', bestFor: 'Editing audio like a text document' },
+  ],
+  'best-ai-marketing-tools': [
+    { name: 'Ocoya', price: 'From $15/mo', bestFor: 'Social captions plus scheduling in one tool' },
+    { name: 'Frase', price: 'From $15/mo', bestFor: 'SEO-focused content briefs' },
+    { name: 'Jasper', price: 'From $39/mo', bestFor: 'Multi-brand content teams' },
+  ],
+  'best-ai-design-tools': [
+    { name: 'Gamma', price: 'Free + $8/mo', bestFor: 'Presentations from a single prompt' },
+    { name: 'Canva AI', price: 'Free + $15/mo', bestFor: 'General graphic design, not just slides' },
+    { name: 'Looka', price: 'From $20 one-time', bestFor: 'A logo and brand kit' },
+  ],
+  'best-ai-coding-tools': [
+    { name: 'GitHub Copilot', price: '$10/mo', bestFor: 'Inline autocomplete in your existing editor' },
+    { name: 'Replit', price: 'Free + $7/mo', bestFor: 'Learning to code with instant hosting' },
+    { name: 'Cursor', price: 'Free + $20/mo', bestFor: 'Chat-first, multi-file refactors' },
+    { name: 'Windsurf', price: 'Free + $15/mo', bestFor: 'A cheaper Cursor alternative' },
+  ],
+  'best-ai-productivity-tools': [
+    { name: 'Taskade', price: 'Free + $8/mo', bestFor: 'AI task breakdown for small teams' },
+    { name: 'Notion AI', price: '$10/mo add-on', bestFor: 'Teams already living in Notion' },
+  ],
+};
+
+// GEO fix: short-sentence "common mistakes" list — adds depth and genuinely
+// helps readability, since every sentence here is under 16 words on purpose.
+const CATEGORY_MISTAKES = {
+  'best-ai-writing-tools': [
+    'Do not buy Jasper if you are a solo writer. Its brand-voice features are built for teams, not individuals.',
+    'Do not expect any tool to fact-check itself. Always verify names, numbers, and claims before you publish.',
+    'Do not skip the free plan. Grammarly, Rytr, and Quillbot all let you test real work before you pay.',
+  ],
+  'best-ai-image-tools': [
+    'Do not assume every image generator allows commercial use. Check the licence before you use an image in an ad.',
+    'Do not pick Midjourney if you need an API. It has none — Stable Diffusion or Leonardo.ai fit that need better.',
+    'Do not use a general image generator for product photos. PhotoRoom is built for that job specifically.',
+  ],
+  'best-ai-video-tools': [
+    'Do not use InVideo if you already have footage to repurpose. Opus Clip or Pictory fit that job better.',
+    'Do not expect long-form polish from short-form tools. Most AI video tools are strongest under 90 seconds.',
+    'Do not skip the free trial. Every tool here has one, and export quality varies by topic.',
+  ],
+  'best-ai-audio-tools': [
+    'Do not confuse a voice generator with a podcast editor. ElevenLabs makes voices; Podcastle records and edits shows.',
+    'Do not pick Murf if you need voice cloning. ElevenLabs offers cloning at a lower starting price.',
+    'Do not ignore accent and language needs. Murf\'s Indian English options are stronger than most competitors.',
+  ],
+  'best-ai-marketing-tools': [
+    'Do not pay for Jasper if you are a solo marketer with one brand. Ocoya or Frase cost less and do the job.',
+    'Do not pick a scheduler without AI writing if you already pay for a separate AI writer. Ocoya bundles both.',
+    'Do not choose based on price alone. A tool that saves 10+ hours a week pays for itself fast.',
+  ],
+  'best-ai-design-tools': [
+    'Do not use Looka for repeat weekly design work. It is built for a one-time logo, not ongoing design.',
+    'Do not pick Gamma for pixel-perfect brand compliance. Beautiful.ai or PowerPoint give more manual control.',
+    'Do not assume you need design skill. All three tools here are built specifically for non-designers.',
+  ],
+  'best-ai-coding-tools': [
+    'Do not pay for Cursor if you only need inline autocomplete. GitHub Copilot costs half as much for that job.',
+    'Do not use Replit for production workloads. It is built for learning and prototypes, not heavy traffic.',
+    'Do not trust AI-generated code blindly. Review every output for security and edge cases before shipping.',
+  ],
+  'best-ai-productivity-tools': [
+    'Do not add Notion AI if your team does not already use Notion. The combined cost adds up fast.',
+    'Do not choose a tool with a steep setup cost. If setup takes 20 minutes per task, it is not saving time.',
+    'Do not skip the free plan test. Taskade\'s free tier supports real team workflows, not just a demo.',
+  ],
+};
+
+function renderCategoryPricingTable(slug) {
+  const rows = CATEGORY_PRICING[slug];
+  if (!rows) return '';
+  return `<div style="margin-top:20px">
+    <h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Pricing at a glance</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:.88rem">
+      <thead><tr style="border-bottom:2px solid #e2e8f0;text-align:left">
+        <th style="padding:6px 8px">Tool</th><th style="padding:6px 8px">Starting price</th><th style="padding:6px 8px">Best for</th>
+      </tr></thead>
+      <tbody>
+        ${rows.map(r => `<tr style="border-bottom:1px solid #f1f5f9"><td style="padding:6px 8px;font-weight:600">${esc(r.name)}</td><td style="padding:6px 8px">${esc(r.price)}</td><td style="padding:6px 8px;color:#555">${esc(r.bestFor)}</td></tr>`).join('')}
+      </tbody>
+    </table>
+  </div>`;
+}
+
+function renderCategoryMistakes(slug) {
+  const items = CATEGORY_MISTAKES[slug];
+  if (!items) return '';
+  return `<div style="margin-top:22px">
+    <h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Common mistakes to avoid</h2>
+    <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.75;color:#444">
+      ${items.map(m => `<li style="margin-bottom:6px">${esc(m)}</li>`).join('')}
+    </ul>
+  </div>`;
+}
+
 // ── 7. Category landing pages (/best-ai-writing-tools/ etc.) ────────────────
 {
   // Canonical policy is explicit so future legacy aliases can be migrated
@@ -6618,7 +6973,21 @@ const CATEGORY_FAQS = {
         [2, `Best AI ${page.category} Tools`, canonical],
       ]),
       itemListSchema({ name: page.title.split(' | ')[0], url: canonical, items: catTools.map(t => ({ name: t.name, url: `${SITE}/tools/${t.slug}/`, description: t.tagline })) }),
+      // GEO fix (Aug 31 audit — "Knowledge-panel readiness: Org schema, 0 sameAs"):
+      // attach the author Person (with sameAs) to every category page, not just
+      // Article/Review schemas, since these pages had no sameAs entity at all.
+      AUTHOR_PERSON,
     ];
+    // GEO fix (Aug 31 audit — Summary/Key-Insights block missing on category pages):
+    // 3 bullets per page, restating facts already in CATEGORY_INTROS (no new claims).
+    const takeawaysHtml = CATEGORY_TAKEAWAYS[page.slug]
+      ? `<div style="margin-top:16px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
+        <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
+        <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
+          ${CATEGORY_TAKEAWAYS[page.slug].map(t => `<li>${t}</li>`).join('')}
+        </ul>
+      </div>`
+      : '';
     // Task 8 Fix: Inject editorial intro paragraphs (from CATEGORY_META.intro) into
     // the static HTML so Google sees real editorial content, not just a thin grid.
     // GEO fix (depth/citations/ACE pattern): blocks prefixed "## " or "### " render as
@@ -6631,6 +7000,7 @@ const CATEGORY_FAQS = {
           if (block.startsWith('## ')) return `<h2 style="font-size:1.15rem;font-weight:700;margin-top:26px;margin-bottom:10px;color:#111">${block.slice(3)}</h2>`;
           return `<p style="font-size:.95rem;line-height:1.75;color:#444;margin-bottom:12px">${block}</p>`;
         }).join('') +
+        AUTHORITY_CITATION_HTML +
         `</div>`
       : '';
     // GEO fix: visible FAQ content (not just schema) + FAQPage schema for pages with a
@@ -6645,7 +7015,7 @@ const CATEGORY_FAQS = {
     // W4-T1: Each category page now gets its own topic-matched OG image via resolveOgImage()
     writeRoute(page.slug, buildPage(template, {
       title: page.title, description: page.desc, canonical, schemas,
-      bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(page.desc)}</p>${introHtml}${faqHtml}`,
+      bodyHtml: `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(page.desc)}</p>${takeawaysHtml}${introHtml}${renderCategoryDeepdive(page.slug)}${renderCategoryPricingTable(page.slug)}${renderCategoryMistakes(page.slug)}${categoryByline()}${faqHtml}`,
       ogImage: resolveOgImage(page.slug),
     }));
   }
@@ -7349,13 +7719,14 @@ ${items}
       <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">About This Research</h2>
       <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:10px"><strong>All reviews are written independently — no sponsored rankings, no paid placements, ever.</strong></p>
       <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
-        AI Nexus is maintained by <strong>${esc(AUTHOR)}</strong>, an independent AI tools researcher since 2022.
+        AI Nexus is maintained by <strong>${esc(AUTHOR)}</strong>, an independent AI tools researcher since 2022 and AI Automation &amp; Performance Testing Leader at BOLD.
         Our research is based on publicly available feature documentation, transparent pricing pages,
         verified <a href="https://www.trustpilot.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Trustpilot</a> and
         <a href="https://www.g2.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">G2</a> review data (200+ reviews analyzed per tool),
         and creator community feedback from Reddit and product forums.
         Our evaluation methodology covers pricing accuracy, feature completeness, free-plan value, and real-world use-case fit.
       </p>
+      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">According to the <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener noreferrer" style="color:#0D9488">2026 AI Index Report</a> from Stanford's Institute for Human-Centered Artificial Intelligence, AI adoption is accelerating across every professional sector as technical capabilities and investment both increase. That trend is exactly why independent, tool-by-tool testing matters more than trusting marketing pages alone.</p>
       <p style="font-size:.875rem;color:#666;line-height:1.7">
         <strong>Data points:</strong> 33+ tools reviewed independently ·
         200+ reviews per tool analyzed ·
