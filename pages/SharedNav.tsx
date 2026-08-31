@@ -527,7 +527,7 @@ export function SharedNav({
           padding: '0 20px', display: 'flex', alignItems: 'center', gap: 8,
         }}>
           <img
-            src="/author-avatar.png"
+            src="/author-avatar.webp"
             alt="Navneet Arya"
             width={20} height={20}
             style={{ borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
