@@ -906,7 +906,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           marginTop: 52,
         }}>
           <img
-            src="/author-avatar.png"
+            src="/author-avatar.webp"
             alt={`${post.author} — AI tools reviewer and founder of AI Nexus`}
             width={48} height={48}
             style={{ borderRadius: '50%', flexShrink: 0 }}
