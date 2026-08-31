@@ -5366,10 +5366,21 @@ for (const tool of TOOLS) {
     ${tool.reviewType === 'deep-research' ? '· <strong>Independently researched</strong>' : '· Research-based review'}
   </div>`;
 
+  // AEO-T1 (crawler-visible parity): the React ToolPage component renders a
+  // "Quick Answer" box from TOOL_CONTENT.whatIs, but that data isn't available
+  // to this script — so we reuse tool.description (already a 1-2 sentence
+  // "what is this tool" summary) under the same heading, so crawlers/curl see
+  // the same Quick Answer signal without JS execution.
+  const quickAnswerHtml = `<section aria-label="Quick Answer" itemscope itemtype="https://schema.org/Answer" style="margin-top:16px;padding:16px 20px;background:#f0fdfa;border:1.5px solid #99f6e4;border-radius:12px">
+      <h2 style="font-size:.8rem;font-weight:700;color:#0D9488;letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">⚡ Quick Answer: What is ${esc(tool.name)}?</h2>
+      <p itemprop="text" style="font-size:.95rem;line-height:1.7;color:#333;margin:0">${esc(tool.description)}</p>
+    </section>`;
+
   const toolBodyHtml = `
     <p data-speakable="summary" style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
     ${lastTestedHtml}
     ${methodologyBadgeHtml}
+    ${quickAnswerHtml}
     <div data-speakable="verdict" style="margin-top:16px">
       <h2 style="font-size:1.2rem;margin-bottom:8px">Our Research</h2>
       <p style="font-size:.95rem;line-height:1.7;color:#333">${esc(tool.reviewBody || tool.description)}</p>
