@@ -1686,6 +1686,51 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           </div>
         )}
 
+        {/* ── AEO-T1: Quick Answer for AI Overview targeting ──
+             Direct answer to "What is [Tool]?" for Google AI Overviews,
+             Perplexity, and ChatGPT citation extraction. Placed immediately
+             after hero section for above-the-fold visibility. */}
+        {content?.whatIs && (
+          <section
+            aria-label="Quick Answer"
+            itemScope
+            itemType="https://schema.org/Answer"
+            style={{
+              background: cardBg,
+              border: `1.5px solid ${cardBrd}`,
+              borderRadius: 12,
+              padding: '16px 20px',
+              marginBottom: '24px',
+            }}
+          >
+            <div style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+              <div style={{ flexShrink: 0, fontSize: 18, lineHeight: 1 }}>⚡</div>
+              <div>
+                <h2 style={{
+                  fontSize: 13,
+                  fontWeight: 700,
+                  color: accent,
+                  letterSpacing: '0.04em',
+                  margin: '0 0 6px',
+                  fontFamily: "'Inter', system-ui, sans-serif",
+                  textTransform: 'uppercase' as const,
+                }}>
+                  Quick Answer: What is {tool.name}?
+                </h2>
+                <p itemProp="text" style={{
+                  fontSize: 14,
+                  color: C.txt,
+                  lineHeight: 1.7,
+                  margin: 0,
+                  fontWeight: 300,
+                }}>
+                  {content.whatIs}
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* ── W4-H2: Independent research summary section ── */}
         {content && (
           <div style={{ background: C.surf, border: `1px solid var(--brd-sm)`, borderRadius: 12, padding: '16px 20px', marginBottom: 24 }}>
