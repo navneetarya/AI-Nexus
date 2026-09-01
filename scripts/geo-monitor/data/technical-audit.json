@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-24T09:18:36.919Z",
+  "generated_at": "2026-09-01T10:53:34.898Z",
   "base_url": "https://ainexustools.online",
   "pages_sampled": 15,
   "sitemap_url_count": 191,
-  "overall_score": 90,
+  "overall_score": 93,
   "site_wide": {
     "score": 100,
     "checks": [
@@ -124,7 +124,7 @@
         "label": "llms.txt updated within 45 days",
         "pass": true,
         "weight": 1,
-        "detail": "last updated 2026-08-24 (0d ago)"
+        "detail": "last updated 2026-09-01 (0d ago)"
       }
     ]
   },
@@ -137,21 +137,21 @@
           "label": "JSON-LD schema present",
           "pass": true,
           "weight": 2,
-          "detail": "8 block(s): WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo"
+          "detail": "9 block(s): WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo, Article"
         },
         {
           "id": "schema-organization-or-person",
           "label": "Organization/Person entity schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo"
+          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo, Article"
         },
         {
           "id": "schema-article-or-review",
           "label": "Article/Review/FAQPage schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo"
+          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo, Article"
         },
         {
           "id": "canonical-present",
@@ -172,14 +172,14 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "13 H2, 3 H3"
+          "detail": "15 H2, 3 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
           "pass": true,
           "weight": 1,
-          "detail": "5 question heading(s)"
+          "detail": "7 question heading(s)"
         },
         {
           "id": "has-table",
@@ -197,10 +197,10 @@
         }
       ],
       "meta": {
-        "h2Count": 13,
+        "h2Count": 15,
         "h3Count": 3,
         "tableCount": 1,
-        "questionHeaders": 5,
+        "questionHeaders": 7,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -209,7 +209,8 @@
           "ItemList",
           "WebPage",
           "BreadcrumbList",
-          "HowTo"
+          "HowTo",
+          "Article"
         ]
       }
     },
@@ -256,14 +257,14 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "3 H2, 5 H3"
+          "detail": "4 H2, 5 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
           "pass": true,
           "weight": 1,
-          "detail": "5 question heading(s)"
+          "detail": "6 question heading(s)"
         },
         {
           "id": "has-table",
@@ -281,10 +282,10 @@
         }
       ],
       "meta": {
-        "h2Count": 3,
+        "h2Count": 4,
         "h3Count": 5,
         "tableCount": 0,
-        "questionHeaders": 5,
+        "questionHeaders": 6,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -341,14 +342,14 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "3 H2, 5 H3"
+          "detail": "4 H2, 5 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
           "pass": true,
           "weight": 1,
-          "detail": "5 question heading(s)"
+          "detail": "6 question heading(s)"
         },
         {
           "id": "has-table",
@@ -366,10 +367,10 @@
         }
       ],
       "meta": {
-        "h2Count": 3,
+        "h2Count": 4,
         "h3Count": 5,
         "tableCount": 0,
-        "questionHeaders": 5,
+        "questionHeaders": 6,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -426,14 +427,14 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "3 H2, 5 H3"
+          "detail": "4 H2, 5 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
           "pass": true,
           "weight": 1,
-          "detail": "5 question heading(s)"
+          "detail": "6 question heading(s)"
         },
         {
           "id": "has-table",
@@ -451,10 +452,10 @@
         }
       ],
       "meta": {
-        "h2Count": 3,
+        "h2Count": 4,
         "h3Count": 5,
         "tableCount": 0,
-        "questionHeaders": 5,
+        "questionHeaders": 6,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -511,14 +512,14 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "3 H2, 5 H3"
+          "detail": "4 H2, 5 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
           "pass": true,
           "weight": 1,
-          "detail": "5 question heading(s)"
+          "detail": "6 question heading(s)"
         },
         {
           "id": "has-table",
@@ -536,10 +537,10 @@
         }
       ],
       "meta": {
-        "h2Count": 3,
+        "h2Count": 4,
         "h3Count": 5,
         "tableCount": 0,
-        "questionHeaders": 5,
+        "questionHeaders": 6,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -596,14 +597,14 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "3 H2, 5 H3"
+          "detail": "4 H2, 5 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
           "pass": true,
           "weight": 1,
-          "detail": "5 question heading(s)"
+          "detail": "6 question heading(s)"
         },
         {
           "id": "has-table",
@@ -621,10 +622,10 @@
         }
       ],
       "meta": {
-        "h2Count": 3,
+        "h2Count": 4,
         "h3Count": 5,
         "tableCount": 0,
-        "questionHeaders": 5,
+        "questionHeaders": 6,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -646,7 +647,7 @@
           "label": "JSON-LD schema present",
           "pass": true,
           "weight": 2,
-          "detail": "4 block(s): WebSite, Organization, Person, Article, BreadcrumbList, ItemList"
+          "detail": "5 block(s): WebSite, Organization, Person, Article, BreadcrumbList, ItemList"
         },
         {
           "id": "schema-organization-or-person",
@@ -679,16 +680,16 @@
         {
           "id": "heading-structure",
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
-          "pass": false,
+          "pass": true,
           "weight": 1,
-          "detail": "0 H2, 0 H3"
+          "detail": "2 H2, 3 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
-          "pass": false,
+          "pass": true,
           "weight": 1,
-          "detail": "0 question heading(s)"
+          "detail": "4 question heading(s)"
         },
         {
           "id": "has-table",
@@ -706,10 +707,10 @@
         }
       ],
       "meta": {
-        "h2Count": 0,
-        "h3Count": 0,
+        "h2Count": 2,
+        "h3Count": 3,
         "tableCount": 0,
-        "questionHeaders": 0,
+        "questionHeaders": 4,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -1068,21 +1069,21 @@
           "label": "JSON-LD schema present",
           "pass": true,
           "weight": 2,
-          "detail": "3 block(s): WebSite, Organization, Person, BreadcrumbList, ItemList"
+          "detail": "4 block(s): WebSite, Organization, Person, BreadcrumbList, ItemList, Article"
         },
         {
           "id": "schema-organization-or-person",
           "label": "Organization/Person entity schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, BreadcrumbList, ItemList"
+          "detail": "WebSite, Organization, Person, BreadcrumbList, ItemList, Article"
         },
         {
           "id": "schema-article-or-review",
           "label": "Article/Review/FAQPage schema present",
-          "pass": false,
+          "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, BreadcrumbList, ItemList"
+          "detail": "WebSite, Organization, Person, BreadcrumbList, ItemList, Article"
         },
         {
           "id": "canonical-present",
@@ -1137,7 +1138,8 @@
           "Organization",
           "Person",
           "BreadcrumbList",
-          "ItemList"
+          "ItemList",
+          "Article"
         ]
       }
     },
@@ -1319,21 +1321,21 @@
           "label": "JSON-LD schema present",
           "pass": true,
           "weight": 2,
-          "detail": "3 block(s): WebSite, Organization, Person, AboutPage, BreadcrumbList"
+          "detail": "4 block(s): WebSite, Organization, Person, AboutPage, BreadcrumbList, Article"
         },
         {
           "id": "schema-organization-or-person",
           "label": "Organization/Person entity schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, AboutPage, BreadcrumbList"
+          "detail": "WebSite, Organization, Person, AboutPage, BreadcrumbList, Article"
         },
         {
           "id": "schema-article-or-review",
           "label": "Article/Review/FAQPage schema present",
-          "pass": false,
+          "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, AboutPage, BreadcrumbList"
+          "detail": "WebSite, Organization, Person, AboutPage, BreadcrumbList, Article"
         },
         {
           "id": "canonical-present",
@@ -1352,9 +1354,9 @@
         {
           "id": "heading-structure",
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
-          "pass": false,
+          "pass": true,
           "weight": 1,
-          "detail": "0 H2, 0 H3"
+          "detail": "3 H2, 0 H3"
         },
         {
           "id": "question-headers",
@@ -1379,7 +1381,7 @@
         }
       ],
       "meta": {
-        "h2Count": 0,
+        "h2Count": 3,
         "h3Count": 0,
         "tableCount": 0,
         "questionHeaders": 0,
@@ -1388,26 +1390,20 @@
           "Organization",
           "Person",
           "AboutPage",
-          "BreadcrumbList"
+          "BreadcrumbList",
+          "Article"
         ]
       }
     }
   ],
-  "page_avg_score": 89,
+  "page_avg_score": 92,
   "top_failures": [
     {
-      "id": "schema-article-or-review",
-      "label": "Article/Review/FAQPage schema present",
+      "id": "has-table",
+      "label": "Has at least one comparison/data table",
       "pass": false,
-      "weight": 2,
-      "detail": "WebSite, Organization, Person, BreadcrumbList, ItemList"
-    },
-    {
-      "id": "schema-article-or-review",
-      "label": "Article/Review/FAQPage schema present",
-      "pass": false,
-      "weight": 2,
-      "detail": "WebSite, Organization, Person, AboutPage, BreadcrumbList"
+      "weight": 1,
+      "detail": "0 table(s)"
     },
     {
       "id": "has-table",
@@ -1464,6 +1460,13 @@
       "pass": false,
       "weight": 1,
       "detail": "0 table(s)"
+    },
+    {
+      "id": "heading-structure",
+      "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+      "pass": false,
+      "weight": 1,
+      "detail": "0 H2, 0 H3"
     }
   ]
 }
