@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T09:19:06.230Z",
+  "generated_at": "2026-09-01T10:54:03.855Z",
   "engines": [
     "gemini"
   ],
@@ -17,7 +17,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q2",
@@ -32,7 +32,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q3",
@@ -47,7 +47,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q4",
@@ -62,7 +62,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q5",
@@ -77,7 +77,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q6",
@@ -92,7 +92,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q7",
@@ -107,7 +107,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q8",
@@ -122,7 +122,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q9",
@@ -137,7 +137,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q10",
@@ -152,7 +152,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q11",
@@ -167,7 +167,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q12",
@@ -182,7 +182,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q13",
@@ -197,7 +197,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q14",
@@ -212,7 +212,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q15",
@@ -227,7 +227,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q16",
@@ -242,7 +242,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q17",
@@ -257,7 +257,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q18",
@@ -272,7 +272,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q19",
@@ -287,7 +287,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q20",
@@ -302,7 +302,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q21",
@@ -317,7 +317,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q22",
@@ -332,7 +332,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q23",
@@ -347,7 +347,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q24",
@@ -362,7 +362,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q25",
@@ -377,7 +377,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q26",
@@ -392,7 +392,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q27",
@@ -407,7 +407,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q28",
@@ -422,7 +422,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q29",
@@ -437,7 +437,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q30",
@@ -452,7 +452,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q31",
@@ -467,7 +467,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q32",
@@ -482,7 +482,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q33",
@@ -497,7 +497,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q34",
@@ -512,7 +512,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q35",
@@ -527,7 +527,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q36",
@@ -542,7 +542,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q37",
@@ -557,7 +557,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q38",
@@ -572,7 +572,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q39",
@@ -587,7 +587,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q40",
@@ -602,7 +602,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q41",
@@ -617,7 +617,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q42",
@@ -632,7 +632,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q43",
@@ -647,7 +647,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q44",
@@ -662,7 +662,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q45",
@@ -677,7 +677,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q46",
@@ -692,7 +692,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q47",
@@ -707,7 +707,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q48",
@@ -722,7 +722,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q49",
@@ -737,7 +737,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q50",
@@ -752,7 +752,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q51",
@@ -767,7 +767,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q52",
@@ -782,7 +782,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q53",
@@ -797,7 +797,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q54",
@@ -812,7 +812,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q55",
@@ -827,7 +827,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q56",
@@ -842,7 +842,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q57",
@@ -857,7 +857,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q58",
@@ -872,7 +872,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q59",
@@ -887,7 +887,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "query_id": "q60",
@@ -902,7 +902,7 @@
       "cited_in_sources": false,
       "competitor_domains": "",
       "answer_excerpt": "",
-      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements."
+      "error": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     }
   ]
 }
