@@ -1971,6 +1971,106 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           <BeehiivForm variant="article" />
         </Suspense>
 
+        {/* ── Related tools in same category (H9 — internal linking) ──
+             Moved up from the bottom of the page (was after 10+ sections,
+             below pricing/FAQ/"who should NOT use this") so it's visible to
+             visitors who bounce early — e.g. tools with no affiliate
+             programme of their own (see tool.affiliateLink), where routing
+             traffic toward a monetizable review is this page's only job. */}
+        {(() => {
+          const sameCat = TOOLS.filter(t => t.category === tool.category && t.slug !== tool.slug).slice(0, 3);
+          if (sameCat.length === 0) return null;
+          return section(
+            <>
+              {sectionTitle(`More ${tool.category} tools`)}
+              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 14px', lineHeight: 1.65, fontWeight: 300 }}>
+                Other {tool.category.toLowerCase()} tools worth comparing before you decide.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
+                {sameCat.map((t, i) => (
+                  <div key={i}
+                    onClick={() => navigate(`/tools/${t.slug}/`)}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      padding: '14px 18px', background: cardBg, borderRadius: 12,
+                      border: `1px solid ${cardBrd}`, gap: 12, cursor: 'pointer',
+                      flexWrap: 'wrap' as const,
+                    }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                      <div style={{ width: 36, height: 36, borderRadius: 10, background: '#fff',
+                        border: `1.5px solid ${accent}28`, display: 'flex', alignItems: 'center',
+                        justifyContent: 'center', flexShrink: 0, overflow: 'hidden' }}>
+                        <img src={`/logos/${t.slug}.png`} alt={t.name}
+                          width={26} height={26}
+                          style={{ objectFit: 'contain', borderRadius: 6 }}
+                          loading="lazy"
+                          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                        />
+                      </div>
+                      <div>
+                        <div style={{ fontSize: 14, fontWeight: 600, color: C.txt }}>{t.name}</div>
+                        <div style={{ fontSize: 12, color: C.mut2, marginTop: 2 }}>{t.pricing}</div>
+                      </div>
+                    </div>
+                    <span style={{ fontSize: 13, fontWeight: 600, color: accent, display: 'flex', alignItems: 'center', gap: 4 }}>
+                      <Layers size={13} /> Read review →
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </>
+          );
+        })()}
+
+        {/* ── Related blog posts (H9 — internal linking) — moved up alongside "More X tools", same reasoning ── */}
+        {(() => {
+          const relatedPosts = BLOG_POSTS
+            .filter(p =>
+              (content?.relatedBlogSlugs?.includes(p.slug)) ||
+              p.category === tool.category ||
+              p.category === 'General'
+            )
+            // Pinned slugs first, then by published date desc
+            .sort((a, b) => {
+              const aPinned = content?.relatedBlogSlugs?.includes(a.slug) ? 0 : 1;
+              const bPinned = content?.relatedBlogSlugs?.includes(b.slug) ? 0 : 1;
+              if (aPinned !== bPinned) return aPinned - bPinned;
+              return b.datePublished.localeCompare(a.datePublished);
+            })
+            .slice(0, 2);
+          if (relatedPosts.length === 0) return null;
+          return section(
+            <>
+              {sectionTitle('From the blog')}
+              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 14px', lineHeight: 1.65, fontWeight: 300 }}>
+                In-depth guides covering {tool.category.toLowerCase()} tools — tested and written by Navneet Arya.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
+                {relatedPosts.map((p, i) => (
+                  <div key={i}
+                    onClick={() => navigate(`/blog/${p.slug}/`)}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      padding: '14px 18px', background: cardBg, borderRadius: 12,
+                      border: `1px solid ${cardBrd}`, gap: 12, cursor: 'pointer',
+                      flexWrap: 'wrap' as const,
+                    }}>
+                    <div>
+                      <div style={{ fontSize: 14, fontWeight: 600, color: C.txt, marginBottom: 3 }}>{p.title}</div>
+                      <div style={{ fontSize: 12, color: C.mut2, display: 'flex', alignItems: 'center', gap: 6 }}>
+                        <BookOpen size={11} /> {p.readTime} · {p.datePublished}
+                      </div>
+                    </div>
+                    <span style={{ fontSize: 13, fontWeight: 600, color: accent, display: 'flex', alignItems: 'center', gap: 4, flexShrink: 0, whiteSpace: 'nowrap' as const }}>
+                      Read post →
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </>
+          );
+        })()}
+
         {/* ── Features grid ── */}
         {tool.features && tool.features.length > 0 && (
           section(
@@ -2518,102 +2618,6 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                       }}>
                       Read comparison →
                     </button>
-                  </div>
-                ))}
-              </div>
-            </>
-          );
-        })()}
-
-
-        {/* ── Related tools in same category (H9 — internal linking) ── */}
-        {(() => {
-          const sameCat = TOOLS.filter(t => t.category === tool.category && t.slug !== tool.slug).slice(0, 3);
-          if (sameCat.length === 0) return null;
-          return section(
-            <>
-              {sectionTitle(`More ${tool.category} tools`)}
-              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 14px', lineHeight: 1.65, fontWeight: 300 }}>
-                Other {tool.category.toLowerCase()} tools worth comparing before you decide.
-              </p>
-              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
-                {sameCat.map((t, i) => (
-                  <div key={i}
-                    onClick={() => navigate(`/tools/${t.slug}/`)}
-                    style={{
-                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                      padding: '14px 18px', background: cardBg, borderRadius: 12,
-                      border: `1px solid ${cardBrd}`, gap: 12, cursor: 'pointer',
-                      flexWrap: 'wrap' as const,
-                    }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                      <div style={{ width: 36, height: 36, borderRadius: 10, background: '#fff',
-                        border: `1.5px solid ${accent}28`, display: 'flex', alignItems: 'center',
-                        justifyContent: 'center', flexShrink: 0, overflow: 'hidden' }}>
-                        <img src={`/logos/${t.slug}.png`} alt={t.name}
-                          width={26} height={26}
-                          style={{ objectFit: 'contain', borderRadius: 6 }}
-                          loading="lazy"
-                          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-                        />
-                      </div>
-                      <div>
-                        <div style={{ fontSize: 14, fontWeight: 600, color: C.txt }}>{t.name}</div>
-                        <div style={{ fontSize: 12, color: C.mut2, marginTop: 2 }}>{t.pricing}</div>
-                      </div>
-                    </div>
-                    <span style={{ fontSize: 13, fontWeight: 600, color: accent, display: 'flex', alignItems: 'center', gap: 4 }}>
-                      <Layers size={13} /> Read review →
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </>
-          );
-        })()}
-
-        {/* ── Related blog posts (H9 — internal linking) ── */}
-        {(() => {
-          const relatedPosts = BLOG_POSTS
-            .filter(p =>
-              (content?.relatedBlogSlugs?.includes(p.slug)) ||
-              p.category === tool.category ||
-              p.category === 'General'
-            )
-            // Pinned slugs first, then by published date desc
-            .sort((a, b) => {
-              const aPinned = content?.relatedBlogSlugs?.includes(a.slug) ? 0 : 1;
-              const bPinned = content?.relatedBlogSlugs?.includes(b.slug) ? 0 : 1;
-              if (aPinned !== bPinned) return aPinned - bPinned;
-              return b.datePublished.localeCompare(a.datePublished);
-            })
-            .slice(0, 2);
-          if (relatedPosts.length === 0) return null;
-          return section(
-            <>
-              {sectionTitle('From the blog')}
-              <p style={{ fontSize: 13, color: C.mut, margin: '0 0 14px', lineHeight: 1.65, fontWeight: 300 }}>
-                In-depth guides covering {tool.category.toLowerCase()} tools — tested and written by Navneet Arya.
-              </p>
-              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
-                {relatedPosts.map((p, i) => (
-                  <div key={i}
-                    onClick={() => navigate(`/blog/${p.slug}/`)}
-                    style={{
-                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                      padding: '14px 18px', background: cardBg, borderRadius: 12,
-                      border: `1px solid ${cardBrd}`, gap: 12, cursor: 'pointer',
-                      flexWrap: 'wrap' as const,
-                    }}>
-                    <div>
-                      <div style={{ fontSize: 14, fontWeight: 600, color: C.txt, marginBottom: 3 }}>{p.title}</div>
-                      <div style={{ fontSize: 12, color: C.mut2, display: 'flex', alignItems: 'center', gap: 6 }}>
-                        <BookOpen size={11} /> {p.readTime} · {p.datePublished}
-                      </div>
-                    </div>
-                    <span style={{ fontSize: 13, fontWeight: 600, color: accent, display: 'flex', alignItems: 'center', gap: 4, flexShrink: 0, whiteSpace: 'nowrap' as const }}>
-                      Read post →
-                    </span>
                   </div>
                 ))}
               </div>

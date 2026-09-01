@@ -386,6 +386,41 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
           </div>
         </section>
 
+        {/* Winner CTA (top) — duplicate of the end-of-page winner CTA, placed
+            directly under the Quick Answer so high-intent visitors who don't
+            scroll the full comparison still see a button, not just text.
+            Tracked with cta_position: 'top' (vs 'verdict' below) so GA4 can
+            show which position actually converts. */}
+        <div style={{ background: C.surf, border: `1px solid ${C.a1brd}`, borderRadius: 14, padding: '1.1rem 1.25rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
+          <div>
+            <div style={{ fontSize: 12, fontWeight: 700, color: C.mut, textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: 2 }}>
+              🏆 Our pick: {article.winnerName}
+            </div>
+            <div style={{ fontSize: 13, color: C.mut }}>
+              Best for solo creators &amp; small businesses. Try free, no credit card required.
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', flexShrink: 0 }}>
+            <a
+              href={article.winnerAffiliateLink}
+              target="_blank"
+              rel="sponsored nofollow noopener noreferrer"
+              onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: article.winnerName, cta_position: 'top', page_path: window.location.pathname }); } }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: C.a1, color: '#fff', padding: '0.65rem 1.25rem', borderRadius: 10, fontWeight: 700, fontSize: 14, textDecoration: 'none', whiteSpace: 'nowrap' }}
+            >
+              {article.winnerAffiliateText} <ExternalLink size={14} />
+            </a>
+            {winnerHasToolPage && (
+              <button
+                onClick={() => navigate(`/tools/${article.winnerSlug}/`)}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'none', border: `1.5px solid ${C.a1brd}`, color: C.a1, padding: '0.65rem 1.1rem', borderRadius: 10, fontWeight: 600, fontSize: 14, cursor: 'pointer', whiteSpace: 'nowrap' }}
+              >
+                Full review <ChevronRight size={14} />
+              </button>
+            )}
+          </div>
+        </div>
+
         {/* W4-T4: Pricing Comparison Table — answers buyer's #1 question immediately */}
         {article.pricing && <PricingTable pricing={article.pricing} />}
 
