@@ -2394,7 +2394,7 @@ The practical recommendation: use Claude for your main development AI workflow. 
       { name: 'Claude 3.5 Sonnet', price: 'Free + $20/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Best code quality + deep debugging', platforms: 'Web + API + IDE plugins', bestFor: 'Daily coding & debugging', ourPick: true },
       { name: 'Google Gemini', price: 'Free + $19.99/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Google ecosystem + 1M context', platforms: 'Web + API + Workspace', bestFor: 'Google ecosystem & large context', ourPick: false },
     ],
-    winnerSlug: 'claude',
+    winnerSlug: 'claude-ai',
     winnerName: 'Claude 3.5 Sonnet',
     winnerAffiliateLink: 'https://claude.ai',
     winnerAffiliateText: 'Try Claude free',

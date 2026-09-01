@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { ArrowLeft, ExternalLink, Check, X, ChevronRight } from 'lucide-react';
-import { SITE_CONFIG } from '../constants';
+import { SITE_CONFIG, TOOLS } from '../constants';
 import { SharedNav } from './SharedNav';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
@@ -269,6 +269,11 @@ function FAQSection({ faqs, a1, a1card, a1brd, txt, mut }: {
 }
 
 export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: Props) {
+  // Some compare articles (e.g. case studies) declare a winnerSlug that isn't
+  // an actual tool page — only render the "Full review" button when it
+  // resolves to a real /tools/ route, so we never link to a 404.
+  const winnerHasToolPage = TOOLS.some(t => t.slug === article.winnerSlug);
+
   // Track which tool names have been linked already — only link first mention per page
   const linked = React.useRef(new Set<string>()).current;
   // Reset on article change
@@ -536,12 +541,14 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
             >
               {article.winnerAffiliateText} <ExternalLink size={15} />
             </a>
-            <button
-              onClick={() => navigate(`/tools/${article.winnerSlug}/`)}
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'none', border: `1.5px solid ${C.a1brd}`, color: C.a1, padding: '0.75rem 1.25rem', borderRadius: 10, fontWeight: 600, fontSize: 15, cursor: 'pointer' }}
-            >
-              Full review <ChevronRight size={15} />
-            </button>
+            {winnerHasToolPage && (
+              <button
+                onClick={() => navigate(`/tools/${article.winnerSlug}/`)}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'none', border: `1.5px solid ${C.a1brd}`, color: C.a1, padding: '0.75rem 1.25rem', borderRadius: 10, fontWeight: 600, fontSize: 15, cursor: 'pointer' }}
+              >
+                Full review <ChevronRight size={15} />
+              </button>
+            )}
           </div>
           <div style={{ fontSize: 11, color: C.mut2, marginTop: '0.75rem' }}>
             Affiliate link — we earn a commission at no extra cost to you. <span style={{ cursor: 'pointer', textDecoration: 'underline', color: C.mut }} onClick={() => navigate('/disclosure')}>Disclosure</span>
