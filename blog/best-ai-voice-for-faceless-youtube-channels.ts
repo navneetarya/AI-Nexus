@@ -63,7 +63,7 @@ const post: BlogPost = {
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Starting price</td>
-        <td style="padding:10px 14px">$5/month</td>
+        <td style="padding:10px 14px">$6/month</td>
         <td style="padding:10px 14px">$19/month</td>
       </tr>
     </tbody>
@@ -94,7 +94,7 @@ const post: BlogPost = {
 
 <p>This is where ElevenLabs earns its place. Cloning a single, consistent voice from about a minute of clean audio means every video sounds like the same show. That matters far more for faceless content than for a channel where the creator's face already anchors trust.</p>
 
-<p>The free plan gives 10,000 characters a month, enough to test a full script before paying. Paid plans start at $5/month, and the Creator tier at $22/month unlocks full cloning. Murf AI is the better call if the channel is closer to explainer or tutorial format, since its script-to-video sync handles heavier editing needs.</p>
+<p>The free plan gives 10,000 characters a month, enough to test a full script before paying. Paid plans start at $6/month, and the Creator tier at $22/month unlocks full cloning. Murf AI is the better call if the channel is closer to explainer or tutorial format, since its script-to-video sync handles heavier editing needs.</p>
 
 <p><strong>Best for cloning:</strong> Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or see the direct <a href="/blog/elevenlabs-alternatives-2026/">ElevenLabs alternatives comparison</a> if cloning isn't your top priority.</p>
 
@@ -165,7 +165,7 @@ const post: BlogPost = {
     { q: "Do I need to clone my own voice for a faceless channel?", a: "It's not required, but it's the single biggest upgrade available. A generic stock voice works and costs less effort, but it also sounds like dozens of other faceless channels using the same default option. Cloning costs more time upfront but pays off as channel identity over many uploads." },
     { q: "Is it legal to clone a voice for a faceless YouTube channel?", a: "Cloning your own voice, or a voice you have explicit permission to use, is standard practice and legal. Cloning someone else's voice without consent violates most AI tools' terms of service and can carry real legal consequences depending on jurisdiction. Only clone voices you own or are authorized to use." },
     { q: "What is the full workflow for a faceless YouTube video?", a: "Pick a narrow niche, write a script built for the ear rather than the eye, generate the voice, fix any mispronounced terms, mix in background music under the narration, then export and do a final listen-through on a phone speaker before publishing." },
-    { q: "How much does an AI voice cost for a faceless YouTube channel?", a: "ElevenLabs' free plan covers light testing, and the $5/month Starter tier works for occasional uploads. A channel publishing several videos weekly will likely need the $22/month Creator tier once cloning and higher character limits become necessary." },
+    { q: "How much does an AI voice cost for a faceless YouTube channel?", a: "ElevenLabs' free plan covers light testing, and the $6/month Starter tier works for occasional uploads. A channel publishing several videos weekly will likely need the $22/month Creator tier once cloning and higher character limits become necessary." },
     { q: "Can AI voices sound natural enough for a full faceless channel?", a: "Yes, for most niches. Both ElevenLabs and Murf AI produce narration that holds up well over a full video, as long as the script is written for the ear and the pacing is checked first. The most common giveaway isn't the voice itself, it's mispronounced proper nouns, which both tools let you fix directly." },
     { q: "Should a faceless channel use the same AI voice for every video?", a: "Yes, consistency is the entire point. Switching voices between uploads undermines the one thing a faceless channel has to build viewer recognition with. Cloning a single voice once and reusing it across every video is worth the setup time." },
     { q: "What is the biggest mistake new faceless YouTube creators make with AI voices?", a: "Using a generic stock voice indefinitely instead of investing in a cloned one early. It's cheaper to start with a stock voice, but switching voices later, after viewers have gotten used to one, disrupts the exact consistency a faceless channel depends on most." },

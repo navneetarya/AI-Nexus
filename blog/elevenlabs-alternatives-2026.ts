@@ -58,7 +58,7 @@ const post: BlogPost = {
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Cartesia</td>
         <td style="padding:10px 14px">Real-time voice agents</td>
-        <td style="padding:10px 14px">~$5/month</td>
+        <td style="padding:10px 14px">~$6/month</td>
         <td style="padding:10px 14px">Yes, limited credits</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -112,7 +112,7 @@ const post: BlogPost = {
 
 <p>That speed is why it shows up in phone agents, customer service bots, and other latency-sensitive products. It offers a free tier for testing.</p>
 
-<p>Paid access starts around $5/month for light commercial use, scaling into custom pricing for big teams for high call volume. It's built for developers, not everyday creators, so expect an API-first setup rather than a polished web app.</p>
+<p>Paid access starts around $6/month for light commercial use, scaling into custom pricing for big teams for high call volume. It's built for developers, not everyday creators, so expect an API-first setup rather than a polished web app.</p>
 
 <p><strong>Switch to Cartesia if:</strong> you're building a voice agent, IVR system, or any live product where a half-second delay breaks the experience. This is the one case where ElevenLabs genuinely isn't the right tool for the job.</p>
 
@@ -198,7 +198,7 @@ const post: BlogPost = {
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Starting price</td>
         <td style="padding:10px 14px">$19/month</td>
-        <td style="padding:10px 14px">~$5/month</td>
+        <td style="padding:10px 14px">~$6/month</td>
         <td style="padding:10px 14px">Pay-per-use</td>
         <td style="padding:10px 14px">~$31/month</td>
       </tr>
@@ -210,7 +210,7 @@ const post: BlogPost = {
 
 <p><p>It's worth saying plainly: for most creators, podcasters, and developers, ElevenLabs remains the strongest all-round choice.</p>
 
-<p>Its free plan gives 10,000 characters a month, and paid plans start at $5/month. No other tool here matches its mix of voice realism, 29-language coverage, and cloning quality. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or the direct <a href="/blog/best-text-to-speech-software-2026/">text-to-speech software comparison</a> if you haven't ruled it out yet.</p>
+<p>Its free plan gives 10,000 characters a month, and paid plans start at $6/month. No other tool here matches its mix of voice realism, 29-language coverage, and cloning quality. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or the direct <a href="/blog/best-text-to-speech-software-2026/">text-to-speech software comparison</a> if you haven't ruled it out yet.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>

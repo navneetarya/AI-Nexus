@@ -90,7 +90,7 @@ const post: BlogPost = {
 
 <p>ElevenLabs remains the benchmark for cloning quality. It builds a usable clone from roughly one minute of clean audio. The Professional tier trains more accurate clones from 30-plus minutes of source material for higher-stakes use.</p>
 
-<p>Cloning unlocks on the Creator tier at $22/month. The free plan and $5/month Starter tier don't include cloning, only pre-built voices. Coverage spans 29 languages, the widest in this comparison.</p>
+<p>Cloning unlocks on the Creator tier at $22/month. The free plan and $6/month Starter tier don't include cloning, only pre-built voices. Coverage spans 29 languages, the widest in this comparison.</p>
 
 <p><strong>Best for:</strong> Anyone who wants clone accuracy and many languages over low cost. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or the <a href="/blog/elevenlabs-alternatives-2026/">ElevenLabs alternatives comparison</a> if the price doesn't fit.</p>
 

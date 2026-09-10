@@ -72,7 +72,7 @@ const post: BlogPost = {
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Starting price</td>
         <td style="padding:10px 14px">$19/month</td>
-        <td style="padding:10px 14px">$5/month</td>
+        <td style="padding:10px 14px">$6/month</td>
       </tr>
     </tbody>
   </table>
@@ -105,7 +105,7 @@ const post: BlogPost = {
 
 <p>ElevenLabs takes a different approach. Instead of a built-in video workflow, it focuses on the voice itself. That's especially true for cloning a specific voice for a brand or client who wants the same narrator across every piece of content.</p>
 
-<p>The free plan gives 10,000 characters a month, and paid plans start at $5/month, cheaper than Murf's entry tier. Cloning unlocks at $22/month on the Creator plan. What you lose is the timeline sync, so a separate video editor still has to line the voiceover up with footage.</p>
+<p>The free plan gives 10,000 characters a month, and paid plans start at $6/month, cheaper than Murf's entry tier. Cloning unlocks at $22/month on the Creator plan. What you lose is the timeline sync, so a separate video editor still has to line the voiceover up with footage.</p>
 
 <p><strong>Best for:</strong> Brand voiceover work where a consistent cloned voice matters more than an automated video-sync step. See our <a href="/blog/murf-ai-alternatives-2026/">Murf AI alternatives comparison</a> for the reverse angle.</p>
 
@@ -163,7 +163,7 @@ const post: BlogPost = {
 
 <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small plant growing from a pile of coins, representing return on investment" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
-<p>Against hiring a voice actor per project, either tool pays for itself within the first one or two commercial jobs. The real cost comparison is Murf's $19/month against ElevenLabs' $5 to $22/month range, decided by whether the sync feature or the cloning feature matters more to your workflow.</p>
+<p>Against hiring a voice actor per project, either tool pays for itself within the first one or two commercial jobs. The real cost comparison is Murf's $19/month against ElevenLabs' $6 to $22/month range, decided by whether the sync feature or the cloning feature matters more to your workflow.</p>
 
 <h2>Which pick fits your voiceover work</h2>
 
@@ -171,7 +171,7 @@ const post: BlogPost = {
   <li>Video ads and finished commercial spots: Murf AI, for the automatic timeline sync.</li>
   <li>E-learning and training content: Murf AI, for fast single-line revisions.</li>
   <li>Consistent brand voice across many videos: ElevenLabs, for cloning quality.</li>
-  <li>Budget-first freelance work: ElevenLabs, for the lower $5/month entry price.</li>
+  <li>Budget-first freelance work: ElevenLabs, for the lower $6/month entry price.</li>
 </ol>
 
 <h2>Final verdict</h2>
@@ -186,7 +186,7 @@ const post: BlogPost = {
   faqs: [
     { q: "What is the best AI voice generator for commercial voiceovers?", a: "Murf AI is the strongest choice for commercial voiceover work, thanks to its script-to-video sync feature, which times narration to existing footage on its own. This matters more for commercial work than raw voice quality alone, since most commercial voiceovers need to match a video timeline, not just sound good on their own." },
     { q: "Is Murf AI or ElevenLabs better for e-learning voiceovers?", a: "Murf AI tends to work better for e-learning specifically, since training content gets revised often and Murf lets you regenerate a single line without redoing the whole module. ElevenLabs is a stronger pick if the course needs a distinct, cloned narrator voice across many modules rather than a library voice." },
-    { q: "How much does an AI voiceover generator cost for commercial use?", a: "Murf AI's Creator plan starts at $19/month and covers most freelance and small-agency commercial workloads. ElevenLabs starts cheaper at $5/month, though voice cloning for a consistent brand voice unlocks separately at $22/month on its Creator tier." },
+    { q: "How much does an AI voiceover generator cost for commercial use?", a: "Murf AI's Creator plan starts at $19/month and covers most freelance and small-agency commercial workloads. ElevenLabs starts cheaper at $6/month, though voice cloning for a consistent brand voice unlocks separately at $22/month on its Creator tier." },
     { q: "Can AI voiceovers replace hiring a voice actor?", a: "For many commercial projects, yes, particularly ad reads, e-learning narration, and corporate training where budget and turnaround time matter more than a specific human performer. High-stakes brand campaigns or projects requiring a recognizable celebrity or character voice still typically call for a real voice actor." },
     { q: "Does Murf AI sync voiceovers to video automatically?", a: "Yes, this is Murf AI's core differentiator. Its script-to-video sync feature times a generated voiceover to match an existing video timeline, removing the manual step that tools without this feature, ElevenLabs included, leave to a separate video editor." },
     { q: "What languages does Murf AI support for voiceovers?", a: "Murf AI covers 20 languages across its 120-plus voice library, with especially strong Indian English, British English, and Australian accent options. ElevenLabs covers more languages at 29, though through voice cloning, not a pre-built commercial voice library." },

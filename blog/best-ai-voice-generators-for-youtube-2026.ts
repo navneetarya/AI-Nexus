@@ -83,13 +83,13 @@ const post: BlogPost = {
 
 <p>ElevenLabs' strength for YouTube is consistency. Once you clone a voice, every video sounds like the same narrator, which matters more for channel identity than most creators expect starting out.</p>
 
-<p>The free plan gives 10,000 characters a month, roughly enough for a handful of short-form scripts to test quality before paying. Paid plans start at $5/month for 30,000 characters.</p>
+<p>The free plan gives 10,000 characters a month, roughly enough for a handful of short-form scripts to test quality before paying. Paid plans start at $6/month for 30,000 characters.</p>
 
 <p>The Creator tier at $22/month unlocks full voice cloning. For a channel posting Shorts daily, expect to land on at least the Creator tier once you're past the testing phase.</p>
 
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:8px;padding:16px 20px;margin:20px 0;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">⚠ Character Budget Tip</strong>
-  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">A typical 60-second Short runs roughly 700 to 900 characters of script. At 30,000 characters a month, that's about 35 to 40 Shorts before you'd need to upgrade past the $5/month Starter tier.</p>
+  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">A typical 60-second Short runs roughly 700 to 900 characters of script. At 30,000 characters a month, that's about 35 to 40 Shorts before you'd need to upgrade past the $6/month Starter tier.</p>
 </div>
 
 <p><strong>Best for:</strong> Short-form creators and faceless channels that need one consistent voice across dozens of uploads a month. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or see <a href="/blog/elevenlabs-alternatives-2026/">what to use instead</a> if cloning isn't your priority.</p>
@@ -176,7 +176,7 @@ const post: BlogPost = {
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Starting price</td>
-        <td style="padding:10px 14px">$5/month</td>
+        <td style="padding:10px 14px">$6/month</td>
         <td style="padding:10px 14px">$19/month</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -219,7 +219,7 @@ const post: BlogPost = {
     { q: "What is the best AI voice generator for YouTube Shorts?", a: "ElevenLabs is the best fit for YouTube Shorts and other short-form content. Its free plan gives 10,000 characters a month, enough to test a week's worth of short scripts, and cloning keeps the voice consistent across dozens of uploads. Murf AI works too, but its video-sync strength matters less on videos under a minute." },
     { q: "Can I use the same AI voice on every YouTube video for channel consistency?", a: "Yes, and it's one of the strongest reasons to use voice cloning specifically. ElevenLabs builds a usable clone from about one minute of audio, and every video generated from it sounds like the same narrator. This matters most for faceless channels, where the voice is the primary way viewers recognize the channel." },
     { q: "Is Murf AI or ElevenLabs better for long-form YouTube explainer videos?", a: "Murf AI tends to work better for long-form explainers, mainly because its script-to-video sync times the voiceover to your footage automatically. On a 15 to 20 minute video, that saves real editing time compared to manually aligning an ElevenLabs export in a separate editor." },
-    { q: "How much does an AI voice generator cost for a daily YouTube Shorts channel?", a: "For daily Shorts, expect to land on ElevenLabs' Creator tier at $22/month once past initial testing, since the free plan's 10,000 characters get used up quickly across dozens of short scripts a month. The $5/month Starter tier can work for a lower-volume schedule of a few Shorts a week." },
+    { q: "How much does an AI voice generator cost for a daily YouTube Shorts channel?", a: "For daily Shorts, expect to land on ElevenLabs' Creator tier at $22/month once past initial testing, since the free plan's 10,000 characters get used up quickly across dozens of short scripts a month. The $6/month Starter tier can work for a lower-volume schedule of a few Shorts a week." },
     { q: "Do AI voice generators work well for faceless YouTube channels?", a: "Yes, and faceless channels are one of the strongest use cases for voice cloning specifically. Since there's no face on screen, the voice carries the channel's entire personality and viewer trust. A cloned, consistent voice through ElevenLabs tends to perform better here than a generic stock voice that overlaps with other channels." },
     { q: "Which AI voice generator supports the most languages for a global YouTube audience?", a: "ElevenLabs supports 29 languages, the wider coverage between the two main tools for YouTube. Murf AI covers 20 languages, with particularly strong Indian, British, and Australian English accents. For a channel targeting a specific non-English market, checking both tools' accent in that language first is worth the extra step." },
     { q: "Can I clone my own voice for YouTube narration?", a: "Yes. ElevenLabs builds a usable voice clone from roughly one minute of clean audio, which is enough for most YouTube narration use cases. Murf AI also offers cloning, but only on its Enterprise plan, making ElevenLabs the more accessible option for individual creators and small channels." },

@@ -53,7 +53,7 @@ const post: BlogPost = {
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">ElevenLabs</td>
         <td style="padding:10px 14px">Voice cloning & realism</td>
-        <td style="padding:10px 14px">$5/month</td>
+        <td style="padding:10px 14px">$6/month</td>
         <td style="padding:10px 14px">Yes, 10,000 chars/month</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -88,7 +88,7 @@ const post: BlogPost = {
 
 <p>If the one thing you want from Murf but can't get is a cloned version of your own voice, ElevenLabs is the direct answer. It builds a usable clone from about one minute of clean audio, something Murf only offers on its Enterprise tier.</p>
 
-<p>The free plan gives 10,000 characters a month, and paid plans start at $5/month, cheaper than Murf's $19/month entry point. It also covers 29 languages against Murf's 20. What you lose is Murf's script-to-video sync, so you'll need a separate editor to line the voiceover up with footage.</p>
+<p>The free plan gives 10,000 characters a month, and paid plans start at $6/month, cheaper than Murf's $19/month entry point. It also covers 29 languages against Murf's 20. What you lose is Murf's script-to-video sync, so you'll need a separate editor to line the voiceover up with footage.</p>
 
 <p><strong>Switch to ElevenLabs if:</strong> cloning quality and voice realism matter more than a built-in video workflow. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or the direct <a href="/blog/elevenlabs-alternatives-2026/">ElevenLabs alternatives comparison</a> if you want the reverse angle.</p>
 
@@ -169,7 +169,7 @@ const post: BlogPost = {
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Starting price</td>
-        <td style="padding:10px 14px">$5/month</td>
+        <td style="padding:10px 14px">$6/month</td>
         <td style="padding:10px 14px">$29/month</td>
         <td style="padding:10px 14px">$19/month</td>
       </tr>
@@ -207,7 +207,7 @@ const post: BlogPost = {
 
   faqs: [
     { q: "What is the best free alternative to Murf AI?", a: "ElevenLabs has the most usable free plan among true Murf alternatives, with 10,000 characters a month and no credit card required. Synthesia's free plan gives 10 minutes of watermarked video monthly, useful for testing the avatar feature. Speechify Studio's free tier is more limited and works best as a quick trial before upgrading." },
-    { q: "Is there a cheaper alternative to Murf AI?", a: "ElevenLabs starts at $5/month, well under Murf's $19/month entry price, though it lacks Murf's video-sync workflow. Speechify Studio starts around $19/month, similar to Murf, but includes voice cloning that Murf reserves for its Enterprise tier." },
+    { q: "Is there a cheaper alternative to Murf AI?", a: "ElevenLabs starts at $6/month, well under Murf's $19/month entry price, though it lacks Murf's video-sync workflow. Speechify Studio starts around $19/month, similar to Murf, but includes voice cloning that Murf reserves for its Enterprise tier." },
     { q: "Which Murf AI alternative offers voice cloning on a cheaper plan?", a: "ElevenLabs is the clearest answer. It offers usable voice cloning starting on its Creator tier at $22/month, while Murf gates cloning behind a custom-quoted Enterprise plan. Speechify Studio also includes cloning on its paid tiers, at a similar price point to Murf." },
     { q: "Is Synthesia better than Murf AI for training videos?", a: "It depends on the format. Synthesia is better if you want an on-screen AI presenter delivering the training, which tends to hold attention better than narration alone. Murf is better if your training content is narration over slides or existing footage, since its script-to-video sync handles that specific workflow more directly than Synthesia does." },
     { q: "Does any Murf AI alternative work better for enterprise teams?", a: "WellSaid Labs is built specifically for enterprise buyers, with contract-based pricing and a focus on consistent, artifact-free narration across very long training content. It costs more than Murf at the entry level, but the enterprise-specific features and support are why some larger teams choose it over Murf's self-serve plans." },

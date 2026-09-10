@@ -1056,7 +1056,7 @@ On price alone, ElevenLabs is the clear winner for anyone whose priority is the 
 
 The practical advice: start with Murf AI's free plan (10 minutes total, no commercial use) to test whether AI voiceover fits your workflow. If you find yourself wanting your own voice, higher emotional realism, or simply the lowest-cost commercial license, try ElevenLabs' $6/month Starter plan for a month. Most users find that one of these two workflows clearly suits how they work.`,
     comparisonTable: [
-      { name: 'Murf AI', price: 'Free–$99/mo', priceUSD: 'Free tier ✓ (no commercial use)', freeplan: true, aiContent: 'Studio workflow + video sync', platforms: 'Web', bestFor: 'YouTubers & corporate video', ourPick: true },
+      { name: 'Murf AI', price: 'Free–$39/mo', priceUSD: 'Free tier ✓ (no commercial use)', freeplan: true, aiContent: 'Studio workflow + video sync', platforms: 'Web', bestFor: 'YouTubers & corporate video', ourPick: true },
       { name: 'ElevenLabs', price: 'Free–$99/mo', priceUSD: 'Free tier ✓ (no commercial use)', freeplan: true, aiContent: 'Ultra-realistic voices + cloning', platforms: 'Web + API', bestFor: 'Podcasters & cheapest commercial license', ourPick: false },
     ],
     winnerSlug: 'murf-ai',
