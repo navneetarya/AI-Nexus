@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { ArrowLeft, ExternalLink, Check, X, ChevronRight } from 'lucide-react';
 import { SITE_CONFIG, TOOLS } from '../constants';
+import { trackAffiliateClick } from '../lib/subid-tracking';
 import { SharedNav } from './SharedNav';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
@@ -93,7 +94,7 @@ function PricingTable({ pricing }: { pricing: ComparePricing }) {
                 <td style={{ padding: '10px 14px', fontWeight: 700, color: C.a1 }}>
                   {tool.affiliateLink ? (
                     <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
-                      onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, link_url: tool.affiliateLink, cta_position: 'pricing_table', page_path: window.location.pathname }); } }}
+                      onClick={(e) => trackAffiliateClick(e, { toolName: tool.name, ctaPosition: 'pricing_table' })}
                       style={{ color: C.a1, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 5 }}>
                       {tool.name} <ExternalLink size={11} />
                     </a>
@@ -406,7 +407,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
               href={article.winnerAffiliateLink}
               target="_blank"
               rel="sponsored nofollow noopener noreferrer"
-              onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: article.winnerName, link_url: article.winnerAffiliateLink, cta_position: 'top', page_path: window.location.pathname }); } }}
+              onClick={(e) => trackAffiliateClick(e, { toolName: article.winnerName, ctaPosition: 'top' })}
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: C.a1, color: '#fff', padding: '0.65rem 1.25rem', borderRadius: 10, fontWeight: 700, fontSize: 14, textDecoration: 'none', whiteSpace: 'nowrap' }}
             >
               {article.winnerAffiliateText} <ExternalLink size={14} />
@@ -572,7 +573,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
               href={article.winnerAffiliateLink}
               target="_blank"
               rel="sponsored nofollow noopener noreferrer"
-              onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: article.winnerName, link_url: article.winnerAffiliateLink, cta_position: 'verdict', page_path: window.location.pathname }); } }}
+              onClick={(e) => trackAffiliateClick(e, { toolName: article.winnerName, ctaPosition: 'verdict' })}
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: C.a1, color: '#fff', padding: '0.75rem 1.5rem', borderRadius: 10, fontWeight: 700, fontSize: 15, textDecoration: 'none' }}
             >
               {article.winnerAffiliateText} <ExternalLink size={15} />

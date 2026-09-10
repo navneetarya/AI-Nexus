@@ -5,6 +5,7 @@ import { SharedNav } from './SharedNav';
 import type { BlogPost } from '../blog/types';
 import { BLOG_POSTS_META } from '../blog/metadata';
 import { SITE_CONFIG, TOOLS } from '../constants';
+import { trackAffiliateClickOnElement } from '../lib/subid-tracking';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 // ── W3-T16: Related tool reviews per blog post ─────────────────────────────
@@ -418,16 +419,10 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
   // actual link_url, closing the PartnerStack-vs-GA4 click-count gap for blog posts.
   const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const link = (e.target as HTMLElement).closest('a[rel*="sponsored"]') as HTMLAnchorElement | null;
-    if (!link || typeof window.gtag !== 'function') return;
+    if (!link) return;
     let toolName = 'unknown';
     try { toolName = new URL(link.href).hostname.replace(/^(www|try|get|app)\./, '').split('.')[0]; } catch { /* leave 'unknown' */ }
-    window.gtag('event', 'affiliate_click', {
-      tool_name: toolName,
-      link_url: link.href,
-      cta_position: 'blog_body',
-      post_slug: post.slug,
-      page_path: window.location.pathname,
-    });
+    trackAffiliateClickOnElement(link, { toolName, ctaPosition: 'blog_body', postSlug: post.slug });
   };
 
   return (
