@@ -242,8 +242,14 @@ import post89 from './best-ai-voice-generators-for-podcasts-2026';
 // AI Voice/TTS cluster, positions Murf AI around its studio/video-sync workflow strength
 import post90 from './best-ai-voice-generators-for-voiceovers-2026';
 import post91 from './gamma-ai-review-2026';
+// Priority 3 (Item 9) — GA audit follow-up: ElevenLabs pricing/credits breakdown, high commercial intent
+import post92 from './elevenlabs-pricing-character-credits-2026';
+// Priority 3 (Item 10) — GA audit follow-up: ElevenLabs YouTube commercial rights + monetization rules
+import post93 from './elevenlabs-youtube-commercial-rights-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post93, // Sep 10 — Can I Use ElevenLabs for YouTube? Commercial Rights Guide 2026 — pinned first for freshness
+  post92, // Sep 10 — ElevenLabs Pricing: The Real Cost of Character Credits 2026
   post91, // Sep 9 — Gamma AI Review 2026 (single-tool deep dive, closes GEO 0/1 citation gap on /tools/gamma) — pinned first for freshness
   post90, // Day 39 (Aug 20) — Best AI Voice Generators for Voiceovers 2026 (Murf AI studio/video-sync vs ElevenLabs cloning)
   post89, // Day 38 (Aug 19) — Best AI Voice Generators for Podcasts 2026 (ElevenLabs, Podcastle Revoice, Descript Overdub) — pinned first for freshness

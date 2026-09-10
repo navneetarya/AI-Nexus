@@ -178,12 +178,99 @@ import post71 from './emergent-ai-explained-2026';
 // Day 21 (Jul 25) — Best AI Voice Agent Platforms for Small Business 2026 — freelancer/small-business angle,
 // includes verified Synthflow enterprise-only pricing pivot finding
 import post72 from './best-ai-voice-agent-small-business-2026';
-// Day 22 (Jul 28) — Best Nano Banana Pro Alternatives 2026 — breakout AI image model trend,
-// new nano-banana-pro tool page added same session
+// Day 22 (Jul 28) — Best Nano Banana Pro Alternatives 2026 — BUGFIX: this post already existed in
+// prerender.mjs, deploy.yml, llms.txt, metadata.ts, and loaders.ts, but was missing from this file —
+// found during the Day 23 loop's Gate 8 cross-file audit. Registered here as post73.
 import post73 from './best-nano-banana-pro-alternatives-2026';
+// Day 23 (Jul 30) — Best AI Ad Creative Generator Tools 2026 — budget/solo-founder angle,
+// AdCreative.ai / Creatify / Topview AI / Shhots AI / PhotoRoom compared
+import post74 from './best-ai-ad-creative-generator-tools-2026';
+// Day 24 (Jul 31) — Best AI Image Upscaler Tools 2026 — ecommerce-seller + photo-restoration angle,
+// PhotoRoom / Topaz Photo AI / Let's Enhance / Upscale.media / Remini compared;
+// callout: Topaz discontinued its $99 one-time Gigapixel license in Sept 2025, subscription-only now
+import post75 from './best-ai-photo-upscaler-tools-2026';
+// Day 25 (Aug 1) — Best AI Receptionist for Small Business 2026 — consumer/product angle,
+// AIRA / Smith.ai / Rosie / Dialzara / Goodcall compared; differentiated from post72's dev/API voice-agent
+// platforms (Retell/Vapi/Bland) by targeting non-technical small business owners instead of builders
+import post76 from './best-ai-receptionist-small-business-2026';
+// Day 26 (Aug 2) — Best AI Sales Tools for Founders 2026 — under-20-reps angle,
+// Apollo / Clay / Instantly / Smartlead / Lavender compared; callouts: Clay's March 2026
+// pricing overhaul (Starter/Explorer/Pro replaced by Launch $185/mo + Growth $495/mo) and
+// Instantly's modular pricing (lead database + CRM sold separately from the $37.60/mo base)
+import post77 from './best-ai-sales-tools-for-founders-2026';
+import post78 from './best-ai-website-builders-2026';
+// Day 28 (Aug 10) — Best AI Music Generator Tools 2026 — Suno / Udio / ElevenLabs Music /
+// Soundraw / AIVA compared; new Audio sub-niche, zero prior coverage; callouts: Suno's 1.6/5
+// Trustpilot vs 4.9/5 App Store split, Udio's export lockout during its UMG transition, and
+// the active Sony/UMG litigation against Suno and Udio (US-specific copyright-risk angle)
+import post79 from './best-ai-music-generator-tools-2026';
+// Day 29 (Aug 11) — Best AI SEO Content Optimization Tools 2026 — Surfer vs Frase vs
+// Clearscope vs MarketMuse compared; zero prior coverage of this sub-niche, verified live
+// pricing pulled directly from vendor pages (Frase confirmed via direct fetch); callout:
+// MarketMuse pricing now demo-gated post-Siteimprove acquisition (Nov 2024)
+import post80 from './best-ai-seo-content-optimization-tools-2026';
+// Day 30 (Aug 12) — Best AI Interview Prep Tools 2026 — career-search cluster post #2,
+// pairs with post69 (resume builder); separates practice tools from live-copilot tools
+// on cheating/employer-policy risk, an angle most competing roundups skip
+import post81 from './best-ai-interview-prep-tools-2026';
+// Day 31 (Aug 13) — Best AI Voice Generators 2026 — traffic pillar for the AI Voice/TTS cluster,
+// first of 9 new posts (2 pillars, 2 alternatives, 5 use-case pages) that complete the cluster
+// alongside the already-live /tools/elevenlabs/, /tools/murf-ai/, and /compare/murf-ai-vs-elevenlabs/
+import post82 from './best-ai-voice-generators-2026';
+// Day 32 (Aug 13) — Best Text-to-Speech Software 2026 — second pillar of the AI Voice/TTS cluster,
+// same 4 tools from a software/API angle (languages, latency, API access) rather than creator angle
+import post83 from './best-text-to-speech-software-2026';
+// Day 33 (Aug 14) — ElevenLabs Alternatives 2026 — third post in the AI Voice/TTS cluster,
+// high-intent post covering Murf AI, Cartesia, Resemble AI, Play.ht, WellSaid Labs
+import post84 from './elevenlabs-alternatives-2026';
+// Day 34 (Aug 15) — Murf AI Alternatives 2026 — fourth post in the AI Voice/TTS cluster,
+// completes the alternatives pair covering ElevenLabs, Synthesia, Speechify Studio, WellSaid Labs
+import post85 from './murf-ai-alternatives-2026';
+// Day 35 (Aug 16) — Best AI Voice Generators for YouTube 2026 — fifth post in the AI Voice/TTS
+// cluster, first use-case page: ElevenLabs vs Murf AI across short-form/long-form/faceless formats
+import post86 from './best-ai-voice-generators-for-youtube-2026';
+// Day 36 (Aug 17) — Best AI Voice for Faceless YouTube Channels — sixth post in the AI Voice/TTS
+// cluster, workflow-style use-case page: niche -> script -> voice -> narration -> music -> export
+import post87 from './best-ai-voice-for-faceless-youtube-channels';
+// Day 37 (Aug 18) — Best AI Voice Cloning Tools 2026 — seventh post in the AI Voice/TTS cluster,
+// high-intent capability page: ElevenLabs vs Descript vs Resemble AI vs Play.ht, plus consent rules
+import post88 from './best-ai-voice-cloning-tools-2026';
+// Day 38 (Aug 19) — Best AI Voice Generators for Podcasts 2026 — eighth post in the AI Voice/TTS
+// cluster, narrow-job angle: fixing lines, generating intros, multi-language dubbing
+import post89 from './best-ai-voice-generators-for-podcasts-2026';
+// Day 39 (Aug 20) — Best AI Voice Generators for Voiceovers 2026 — ninth and final post in the
+// AI Voice/TTS cluster, positions Murf AI around its studio/video-sync workflow strength
+import post90 from './best-ai-voice-generators-for-voiceovers-2026';
+import post91 from './gamma-ai-review-2026';
+// Priority 3 (Item 9) — Sep 10 — ElevenLabs Pricing: credit-to-minute breakdown, direct-answer format
+// for high buyer-intent "elevenlabs pricing" searches; GA audit follow-up (0 affiliate sign-ups fix)
+import post92 from './elevenlabs-pricing-character-credits-2026';
+// Priority 3 (Item 10) — Sep 10 — Can I Use ElevenLabs for YouTube: commercial rights + AI disclosure
+// checklist; targets "can i use elevenlabs for youtube" — GA audit follow-up
+import post93 from './elevenlabs-youtube-commercial-rights-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
-  post73, // Day 22 (Jul 28) — Best Nano Banana Pro Alternatives 2026 — pinned first for freshness
+  post93, // Sep 10 — Can I Use ElevenLabs for YouTube? (Commercial Rights Guide) — pinned first for freshness
+  post92, // Sep 10 — ElevenLabs Pricing: The Real Cost of Character Credits (2026) — pinned first for freshness
+  post91, // Sep 9 — Gamma AI Review 2026 (single-tool deep dive, closes GEO 0/1 citation gap on /tools/gamma) — pinned first for freshness
+  post90, // Day 39 (Aug 20) — Best AI Voice Generators for Voiceovers 2026 (Murf AI studio/video-sync vs ElevenLabs cloning)
+  post89, // Day 38 (Aug 19) — Best AI Voice Generators for Podcasts 2026 (ElevenLabs, Podcastle Revoice, Descript Overdub) — pinned first for freshness
+  post88, // Day 37 (Aug 18) — Best AI Voice Cloning Tools 2026 (ElevenLabs vs Descript vs Resemble AI vs Play.ht) — pinned first for freshness
+  post87, // Day 36 (Aug 17) — Best AI Voice for Faceless YouTube Channels (full niche-to-export workflow) — pinned first for freshness
+  post86, // Day 35 (Aug 16) — Best AI Voice Generators for YouTube 2026 (ElevenLabs vs Murf AI by channel format) — pinned first for freshness
+  post85, // Day 34 (Aug 15) — Murf AI Alternatives 2026 (ElevenLabs, Synthesia, Speechify Studio, WellSaid Labs) — pinned first for freshness
+  post84, // Day 33 (Aug 14) — ElevenLabs Alternatives 2026 (Murf AI, Cartesia, Resemble AI, Play.ht, WellSaid Labs) — pinned first for freshness
+  post83, // Day 32 (Aug 13) — Best Text-to-Speech Software 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript, API/language angle) — pinned first for freshness
+  post82, // Day 31 (Aug 13) — Best AI Voice Generators 2026 (ElevenLabs vs Murf AI vs Podcastle vs Descript) — pinned first for freshness
+  post81, // Day 30 (Aug 12) — Best AI Interview Prep Tools 2026 (Final Round AI vs Yoodli vs Big Interview vs Pramp vs Huru) — pinned first for freshness
+  post80, // Day 29 (Aug 11) — Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)
+  post79, // Day 28 (Aug 10) — Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA) — pinned first for freshness
+  post78, // Day 27 (Aug 8) — Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web) — pinned first for freshness
+  post77, // Day 26 (Aug 2) — Best AI Sales Tools for Founders 2026 — pinned first for freshness
+  post76, // Day 25 (Aug 1) — Best AI Receptionist for Small Business 2026 — pinned first for freshness
+  post75, // Day 24 (Jul 31) — Best AI Image Upscaler Tools 2026 — pinned first for freshness
+  post74, // Day 23 (Jul 30) — Best AI Ad Creative Generator Tools 2026 — pinned first for freshness
+  post73, // Day 22 (Jul 28) — Best Nano Banana Pro Alternatives 2026 — BUGFIX: was live everywhere else but missing from this array, re-added 2026-07-30
   post72, // Day 21 (Jul 25) — Best AI Voice Agent Platforms for Small Business 2026 — pinned first for freshness
   post71, // Day 20 (Jul 23) — What Is Emergent AI? Emergent Abilities Explained — pillar/explainer, low competition — pinned first for freshness
   post70, // Day 19 (Jul 21) — ChatGPT Atlas vs Perplexity Comet vs Dia — AI browser comparison, security angle — pinned first for freshness

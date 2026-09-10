@@ -76,6 +76,17 @@ export interface Tool {
   titleTemplate?: string;
 
   /**
+   * Priority 4 (Item 14) — GA audit follow-up, Sep 2026: optional research-framed CTA
+   * button label. When present, ToolPage.tsx uses this instead of the generic
+   * "Try [Tool] Free" / "Get [Tool] Free" copy across all affiliate CTA positions
+   * (hero, post_verdict, pricing_card_text). Use for tools where a "continue your
+   * research" framing converts better than a bare signup push — e.g. "See ElevenLabs'
+   * $6 Starter Plan" instead of "Try ElevenLabs Free". Keep under ~40 characters so it
+   * fits the pill-button layout without wrapping.
+   */
+  ctaText?: string;
+
+  /**
    * Optional custom meta description for the tool page. When present, App.tsx uses this
    * instead of the generic "[Tool] review 2026 — Researched by [author]. [tagline]..." pattern.
    * Use to call out a specific price, stat, or rating gap for higher CTR.

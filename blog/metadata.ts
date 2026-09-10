@@ -21,6 +21,32 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "elevenlabs-youtube-commercial-rights-2026",
+    "title": "Can I Use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)",
+    "seoTitle": "ElevenLabs for YouTube: Commercial Rights Guide 2026",
+    "metaDescription": "Can you monetize YouTube videos made with ElevenLabs? A plain yes/no breakdown by plan tier, plus what YouTube's AI disclosure policy requires for synthetic voiceovers.",
+    "datePublished": "2026-09-10",
+    "dateModified": "2026-09-10",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "8 min read",
+    "ogImage": "https://ainexustools.online/og/blog/elevenlabs-youtube-commercial-rights-2026.webp",
+    "excerpt": "Two separate rulebooks decide whether your ElevenLabs voiceover is safe to monetize: ElevenLabs' own commercial license terms, and YouTube's AI content disclosure policy."
+  },
+  {
+    "slug": "elevenlabs-pricing-character-credits-2026",
+    "title": "ElevenLabs Pricing: The Real Cost of Character Credits (2026)",
+    "seoTitle": "ElevenLabs Pricing 2026: Real Cost Per Credit Explained",
+    "metaDescription": "ElevenLabs pricing broken down by credits, not marketing copy. Exactly how many minutes of audio each plan buys, what triggers overage charges, and which tier to pick.",
+    "datePublished": "2026-09-10",
+    "dateModified": "2026-09-10",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "9 min read",
+    "ogImage": "https://ainexustools.online/og/blog/elevenlabs-pricing-character-credits-2026.webp",
+    "excerpt": "ElevenLabs sells plans in \"credits,\" not minutes or dollars, which makes the pricing page harder to compare than it should be. Here is what each plan actually buys."
+  },
+  {
     "slug": "gamma-ai-review-2026",
     "title": "Gamma AI Review 2026: Is It Worth $8/Month for Presentations?",
     "seoTitle": "Gamma AI Review 2026: Is It Worth $8/Month?",

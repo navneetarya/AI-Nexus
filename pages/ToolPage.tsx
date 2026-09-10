@@ -1660,7 +1660,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
                 onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, link_url: tool.affiliateLink, cta_position: 'hero', page_path: window.location.pathname }); } }}
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
-                Try {tool.name} Free <ExternalLink size={14} />
+                {tool.ctaText || `Try ${tool.name} Free`} <ExternalLink size={14} />
               </a>
               {tool.pricing && (
                 <span style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: C.mut2 }}>
@@ -1962,7 +1962,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                 flexShrink: 0,
               }}
             >
-              Get {tool.name} Free → <ExternalLink size={13} />
+              {tool.ctaText ? `${tool.ctaText} →` : `Get ${tool.name} Free →`} <ExternalLink size={13} />
             </a>
           </div>
         )}
@@ -2491,8 +2491,8 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               <div style={{ marginTop: 16 }}>
                 <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
                   onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, link_url: tool.affiliateLink, cta_position: 'pricing_card_text', page_path: window.location.pathname }); } }}
-                  style={{ fontSize: 13, color: accent, fontWeight: 600, textDecoration: 'none' }}>
-                  Start free — no credit card required →
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '10px 20px', fontSize: 13, fontWeight: 700, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
+                  {tool.ctaText || `Start free — no credit card required`} <ExternalLink size={13} />
                 </a>
               </div>
             </>
