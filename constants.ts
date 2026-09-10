@@ -2345,10 +2345,10 @@ export const TOOL_FAQS: Record<string, Array<{ q: string; a: string }>> = {
 // ── Week 8: FAQs for 5 new tools ──────────────────────────────────────────
 Object.assign(TOOL_FAQS, {
   elevenlabs: [
-    { q: "Is ElevenLabs free to use?", a: "Yes — ElevenLabs' free plan gives you 10,000 characters per month (roughly 7–8 minutes of audio) with access to all pre-made voices. No credit card is required. The Starter plan at $5/month triples the limit and adds commercial use rights." },
+    { q: "Is ElevenLabs free to use?", a: "Yes — ElevenLabs' free plan gives you 10,000 characters per month (roughly 7–8 minutes of audio) with access to all pre-made voices. No credit card is required. The Starter plan at $6/month triples the limit and adds commercial use rights." },
     { q: "How realistic are ElevenLabs voices?", a: "ElevenLabs consistently ranks as the most realistic AI voice generator available. In blind listening tests, the premium voices are regularly mistaken for real human recordings. The quality gap between ElevenLabs and other tools is significant — particularly for emotional range and natural pacing." },
     { q: "How do I clone my own voice with ElevenLabs?", a: "Go to Voices → Add Voice → Instant Voice Clone. Upload a clean 1-minute recording of yourself speaking naturally (no background noise). ElevenLabs processes it in under 2 minutes and creates a voice model you can use to generate any text. Professional Voice Clone (Creator plan) uses longer samples for even higher accuracy." },
-    { q: "Can I use ElevenLabs voices commercially?", a: "Commercial use requires the Starter plan ($5/month) or above. The free tier is for personal and non-commercial use only. All paid plans include a commercial licence for content monetised on YouTube, sold as products, or used in client work." },
+    { q: "Can I use ElevenLabs voices commercially?", a: "Commercial use requires the Starter plan ($6/month) or above. The free tier is for personal and non-commercial use only. All paid plans include a commercial licence for content monetised on YouTube, sold as products, or used in client work." },
     { q: "How does ElevenLabs compare to Murf AI?", a: "ElevenLabs produces better-sounding voices, especially for voice cloning and emotional speech. Murf AI has a more polished production studio with video sync and background music built in. If pure voice quality is your priority, ElevenLabs wins. If you need a full voiceover production workflow in one app, Murf is more practical." },
   ],
   jasper: [
