@@ -241,9 +241,11 @@ import post89 from './best-ai-voice-generators-for-podcasts-2026';
 // Day 39 (Aug 20) — Best AI Voice Generators for Voiceovers 2026 — ninth and final post in the
 // AI Voice/TTS cluster, positions Murf AI around its studio/video-sync workflow strength
 import post90 from './best-ai-voice-generators-for-voiceovers-2026';
+import post91 from './gamma-ai-review-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
-  post90, // Day 39 (Aug 20) — Best AI Voice Generators for Voiceovers 2026 (Murf AI studio/video-sync vs ElevenLabs cloning) — pinned first for freshness
+  post91, // Sep 9 — Gamma AI Review 2026 (single-tool deep dive, closes GEO 0/1 citation gap on /tools/gamma) — pinned first for freshness
+  post90, // Day 39 (Aug 20) — Best AI Voice Generators for Voiceovers 2026 (Murf AI studio/video-sync vs ElevenLabs cloning)
   post89, // Day 38 (Aug 19) — Best AI Voice Generators for Podcasts 2026 (ElevenLabs, Podcastle Revoice, Descript Overdub) — pinned first for freshness
   post88, // Day 37 (Aug 18) — Best AI Voice Cloning Tools 2026 (ElevenLabs vs Descript vs Resemble AI vs Play.ht) — pinned first for freshness
   post87, // Day 36 (Aug 17) — Best AI Voice for Faceless YouTube Channels (full niche-to-export workflow) — pinned first for freshness

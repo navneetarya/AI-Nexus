@@ -183,6 +183,7 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  { slug: 'gamma-ai-review-2026',                        title: 'Gamma AI Review 2026' },
   { slug: 'best-ai-voice-generators-for-voiceovers-2026', title: 'Best AI Voice Generators for Voiceovers' },
   { slug: 'best-ai-voice-generators-for-podcasts-2026', title: 'Best AI Voice Generators for Podcasts' },
   { slug: 'best-ai-voice-cloning-tools-2026',           title: 'Best AI Voice Cloning Tools 2026' },

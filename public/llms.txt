@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-08-20
+# Updated: 2026-09-09
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -56,6 +56,7 @@
 
 ## Blog Posts
 
+- [Gamma AI Review 2026: Is It Worth $8/Month for Presentations?](https://ainexustools.online/blog/gamma-ai-review-2026): Single-tool deep dive on Gamma — the 400-credit free plan, one-click restyling, PowerPoint export quality, and per-seat pricing — benchmarked against Beautiful.ai and Canva AI, with an honest verdict on the $8/month Plus upgrade.
 - [Best AI Voice Generators for Voiceovers 2026: Murf AI vs the Field](https://ainexustools.online/blog/best-ai-voice-generators-for-voiceovers-2026): Murf AI's script-to-video sync compared against ElevenLabs for commercial and e-learning voiceover work — ninth and final post in the AI Voice/TTS cluster, covers agency workflows and real pricing at commercial volume.
 - [Best AI Voice Generators for Podcasts 2026: Intros, Fixes & Dubbing](https://ainexustools.online/blog/best-ai-voice-generators-for-podcasts-2026): The three real podcast jobs voice generation solves — fixing flubbed lines, generating consistent intros, and multi-language dubbing — with ElevenLabs, Podcastle Revoice, and Descript Overdub compared. Eighth post in the AI Voice/TTS cluster.
 - [Best AI Voice Cloning Tools 2026: 4 Options, Tested on Quality and Consent](https://ainexustools.online/blog/best-ai-voice-cloning-tools-2026): ElevenLabs, Descript, Resemble AI, and Play.ht compared on clone quality, languages, and pricing, plus the consent rules that matter more than the tool — seventh post in the AI Voice/TTS cluster.

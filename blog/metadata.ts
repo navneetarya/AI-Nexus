@@ -21,6 +21,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "gamma-ai-review-2026",
+    "title": "Gamma AI Review 2026: Is It Worth $8/Month for Presentations?",
+    "seoTitle": "Gamma AI Review 2026: Is It Worth $8/Month?",
+    "metaDescription": "Gamma AI reviewed for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai and Canva AI. Worth $8/month?",
+    "datePublished": "2026-09-09",
+    "dateModified": "2026-09-09",
+    "author": "Navneet Arya",
+    "category": "Design",
+    "readTime": "10 min read",
+    "ogImage": "https://ainexustools.online/og/blog/gamma-ai-review-2026.webp",
+    "excerpt": "Gamma is the AI presentation tool most people switch to after Tome shut down in 2025. This review tests the free plan's 400-credit limit, the $8/month Plus tier, and one-click restyling against Beautiful.ai and Canva AI, with an honest verdict on whether it earns a paid upgrade."
+  },
+  {
     "slug": "best-ai-voice-generators-for-voiceovers-2026",
     "title": "Best AI Voice Generators for Voiceovers 2026: Murf AI vs the Field",
     "seoTitle": "Best AI Voice Generators for Voiceovers 2026",
