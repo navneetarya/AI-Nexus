@@ -116,6 +116,7 @@ jobs:
             jasper-ai-alternatives leonardo-vs-midjourney-2026 llm-api-pricing-comparison-2026 multi-agent-ai-systems-explained-2026 n8n-vs-make-vs-zapier-2026 perplexity-ai-review-2026
             perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026 relevance-ai-vs-lindy-vs-gumloop-2026 taskade-vs-notion-vs-asana-2026
             what-is-mcp-model-context-protocol-2026
+            elevenlabs-pricing-character-credits-2026 elevenlabs-youtube-commercial-rights-2026
           )
 
           # Sync check — fails if blog post files were added/removed without
