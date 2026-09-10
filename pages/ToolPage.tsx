@@ -1658,7 +1658,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' as const }}>
               {/* W4-T2: rel="sponsored nofollow" added for FTC/Google compliance */}
               <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
-                onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, cta_position: 'hero', page_path: window.location.pathname }); } }}
+                onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, link_url: tool.affiliateLink, cta_position: 'hero', page_path: window.location.pathname }); } }}
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '12px 24px', fontSize: 14, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
                 Try {tool.name} Free <ExternalLink size={14} />
               </a>
@@ -1952,6 +1952,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               href={tool.affiliateLink}
               target="_blank"
               rel="sponsored nofollow noopener noreferrer"
+              onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, link_url: tool.affiliateLink, cta_position: 'post_verdict', page_path: window.location.pathname }); } }}
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
                 background: C.a1, color: '#fff',
@@ -2365,6 +2366,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                         <td style={{ padding: '12px 12px' }}>
                           {row.ourPick && (
                             <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
+                              onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, link_url: tool.affiliateLink, cta_position: 'comparison_table', page_path: window.location.pathname }); } }}
                               style={{ fontSize: 11, padding: '4px 10px', borderRadius: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', fontWeight: 600, textDecoration: 'none', whiteSpace: 'nowrap' as const }}>
                               Try free →
                             </a>
@@ -2422,6 +2424,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               ))}
               <div style={{ marginTop: 8 }}>
                 <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
+                  onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, link_url: tool.affiliateLink, cta_position: 'pricing_card', page_path: window.location.pathname }); } }}
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '10px 20px', fontSize: 13, fontWeight: 600, textDecoration: 'none' }}>
                   Start free — no credit card required <ExternalLink size={13} />
                 </a>
@@ -2487,6 +2490,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               </div>
               <div style={{ marginTop: 16 }}>
                 <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
+                  onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, link_url: tool.affiliateLink, cta_position: 'pricing_card_text', page_path: window.location.pathname }); } }}
                   style={{ fontSize: 13, color: accent, fontWeight: 600, textDecoration: 'none' }}>
                   Start free — no credit card required →
                 </a>
@@ -2660,6 +2664,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               Start with the free plan — no credit card required. Upgrade only if it delivers value.
             </p>
             <a href={tool.affiliateLink} target="_blank" rel="sponsored nofollow noopener noreferrer"
+              onClick={() => { if (typeof window.gtag === 'function') { window.gtag('event', 'affiliate_click', { tool_name: tool.name, link_url: tool.affiliateLink, cta_position: 'bottom_final', page_path: window.location.pathname }); } }}
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: `linear-gradient(135deg,${C.a1},${C.a2})`, color: '#fff', borderRadius: 100, padding: '14px 32px', fontSize: 15, fontWeight: 600, fontFamily: "'Inter', sans-serif", textDecoration: 'none' }}>
               Start free with {tool.name} <ExternalLink size={15} />
             </a>

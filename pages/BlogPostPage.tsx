@@ -410,6 +410,26 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
     return () => window.removeEventListener('scroll', handleScroll);
   }, [post.slug]);
 
+  // GA-audit fix (Sep 2026): blog-body affiliate CTAs (the teal gradient buttons
+  // inside post.content, rendered via dangerouslySetInnerHTML) previously had
+  // ZERO click tracking — a plain <a rel="sponsored ..."> has no onClick handler
+  // to attach in raw HTML. This delegates from the rendered container so every
+  // affiliate/sponsored link inside blog content fires affiliate_click with the
+  // actual link_url, closing the PartnerStack-vs-GA4 click-count gap for blog posts.
+  const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const link = (e.target as HTMLElement).closest('a[rel*="sponsored"]') as HTMLAnchorElement | null;
+    if (!link || typeof window.gtag !== 'function') return;
+    let toolName = 'unknown';
+    try { toolName = new URL(link.href).hostname.replace(/^(www|try|get|app)\./, '').split('.')[0]; } catch { /* leave 'unknown' */ }
+    window.gtag('event', 'affiliate_click', {
+      tool_name: toolName,
+      link_url: link.href,
+      cta_position: 'blog_body',
+      post_slug: post.slug,
+      page_path: window.location.pathname,
+    });
+  };
+
   return (
     <div style={{ minHeight: '100vh', background: C.bg }}>
       <SharedNav
@@ -596,6 +616,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
         <div
           style={{ color: C.txt, lineHeight: 1.75, fontSize: 16 }}
           className="blog-content"
+          onClick={handleContentClick}
           dangerouslySetInnerHTML={{ __html: contentBeforeTable }}
         />
 
@@ -683,6 +704,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           <div
             style={{ color: C.txt, lineHeight: 1.75, fontSize: 16 }}
             className="blog-content"
+            onClick={handleContentClick}
             dangerouslySetInnerHTML={{ __html: contentAfterTable }}
           />
         )}
