@@ -246,9 +246,12 @@ import post91 from './gamma-ai-review-2026';
 import post92 from './elevenlabs-pricing-character-credits-2026';
 // Priority 3 (Item 10) — GA audit follow-up: ElevenLabs YouTube commercial rights + monetization rules
 import post93 from './elevenlabs-youtube-commercial-rights-2026';
+// Sep 14 — job-seeker pain-point piece completing the resume/interview/recruitment cluster; funnels into best-ai-resume-builder-tools-2026
+import post94 from './how-to-beat-ats-resume-screening-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
-  post93, // Sep 10 — Can I Use ElevenLabs for YouTube? Commercial Rights Guide 2026 — pinned first for freshness
+  post94, // Sep 14 — How to Beat ATS Resume Screening in 2026 (What Actually Works) — pinned first for freshness
+  post93, // Sep 10 — Can I Use ElevenLabs for YouTube? Commercial Rights Guide 2026
   post92, // Sep 10 — ElevenLabs Pricing: The Real Cost of Character Credits 2026
   post91, // Sep 9 — Gamma AI Review 2026 (single-tool deep dive, closes GEO 0/1 citation gap on /tools/gamma) — pinned first for freshness
   post90, // Day 39 (Aug 20) — Best AI Voice Generators for Voiceovers 2026 (Murf AI studio/video-sync vs ElevenLabs cloning)

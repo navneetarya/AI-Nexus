@@ -21,6 +21,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "how-to-beat-ats-resume-screening-2026",
+    "title": "How to Beat ATS Resume Screening in 2026 (What Actually Works)",
+    "seoTitle": "How to Beat ATS Resume Screening in 2026",
+    "metaDescription": "Most resumes are rejected by software before a human ever sees them. Here is what actually gets a resume past 2026-era ATS screening — and what is just myth.",
+    "datePublished": "2026-09-14",
+    "dateModified": "2026-09-14",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "10 min read",
+    "ogImage": "https://ainexustools.online/og-compare.webp",
+    "excerpt": "Applicant Tracking Systems filter out most resumes before a recruiter ever opens them. Here is how 2026-era ATS software actually works, the formatting mistakes that trigger an auto-rejection, and the free checks worth running before you submit."
+  },
+  {
     "slug": "elevenlabs-youtube-commercial-rights-2026",
     "title": "Can I Use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)",
     "seoTitle": "ElevenLabs for YouTube: Commercial Rights Guide 2026",
