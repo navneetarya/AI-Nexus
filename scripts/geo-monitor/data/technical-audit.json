@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T10:53:34.898Z",
+  "generated_at": "2026-09-15T10:47:02.609Z",
   "base_url": "https://ainexustools.online",
   "pages_sampled": 15,
-  "sitemap_url_count": 191,
+  "sitemap_url_count": 195,
   "overall_score": 93,
   "site_wide": {
     "score": 100,
@@ -103,7 +103,7 @@
         "label": "sitemap.xml has URLs",
         "pass": true,
         "weight": 1,
-        "detail": "191 <loc> entries"
+        "detail": "195 <loc> entries"
       },
       {
         "id": "llms-txt-reachable",
@@ -124,7 +124,7 @@
         "label": "llms.txt updated within 45 days",
         "pass": true,
         "weight": 1,
-        "detail": "last updated 2026-09-01 (0d ago)"
+        "detail": "last updated 2026-09-15 (0d ago)"
       }
     ]
   },
@@ -722,28 +722,28 @@
       }
     },
     {
-      "url": "https://ainexustools.online/blog/best-ai-voice-generators-for-voiceovers-2026/",
+      "url": "https://ainexustools.online/blog/how-to-beat-ats-resume-screening-2026/",
       "checks": [
         {
           "id": "schema-present",
           "label": "JSON-LD schema present",
           "pass": true,
           "weight": 2,
-          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+          "detail": "5 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
         },
         {
           "id": "schema-organization-or-person",
           "label": "Organization/Person entity schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
         },
         {
           "id": "schema-article-or-review",
           "label": "Article/Review/FAQPage schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
         },
         {
           "id": "canonical-present",
@@ -764,7 +764,90 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "11 H2, 10 H3"
+          "detail": "10 H2, 8 H3"
+        },
+        {
+          "id": "question-headers",
+          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
+          "pass": true,
+          "weight": 1,
+          "detail": "8 question heading(s)"
+        },
+        {
+          "id": "has-table",
+          "label": "Has at least one comparison/data table",
+          "pass": true,
+          "weight": 1,
+          "detail": "1 table(s)"
+        },
+        {
+          "id": "author-byline",
+          "label": "Author byline visible in page content",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        }
+      ],
+      "meta": {
+        "h2Count": 10,
+        "h3Count": 8,
+        "tableCount": 1,
+        "questionHeaders": 8,
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "Person",
+          "Article",
+          "BreadcrumbList",
+          "WebPage",
+          "FAQPage"
+        ]
+      }
+    },
+    {
+      "url": "https://ainexustools.online/blog/gamma-ai-review-2026/",
+      "checks": [
+        {
+          "id": "schema-present",
+          "label": "JSON-LD schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "5 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
+        },
+        {
+          "id": "schema-organization-or-person",
+          "label": "Organization/Person entity schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
+        },
+        {
+          "id": "schema-article-or-review",
+          "label": "Article/Review/FAQPage schema present",
+          "pass": true,
+          "weight": 2,
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
+        },
+        {
+          "id": "canonical-present",
+          "label": "Canonical tag present",
+          "pass": true,
+          "weight": 1,
+          "detail": "found"
+        },
+        {
+          "id": "not-noindexed",
+          "label": "Page not noindexed",
+          "pass": true,
+          "weight": 3,
+          "detail": "indexable"
+        },
+        {
+          "id": "heading-structure",
+          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
+          "pass": true,
+          "weight": 1,
+          "detail": "12 H2, 12 H3"
         },
         {
           "id": "question-headers",
@@ -789,8 +872,8 @@
         }
       ],
       "meta": {
-        "h2Count": 11,
-        "h3Count": 10,
+        "h2Count": 12,
+        "h3Count": 12,
         "tableCount": 2,
         "questionHeaders": 10,
         "schemaTypes": [
@@ -800,35 +883,33 @@
           "Article",
           "BreadcrumbList",
           "WebPage",
-          "FAQPage",
-          "ItemList",
-          "Dataset"
+          "FAQPage"
         ]
       }
     },
     {
-      "url": "https://ainexustools.online/blog/best-ai-voice-generators-for-podcasts-2026/",
+      "url": "https://ainexustools.online/blog/elevenlabs-youtube-commercial-rights-2026/",
       "checks": [
         {
           "id": "schema-present",
           "label": "JSON-LD schema present",
           "pass": true,
           "weight": 2,
-          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+          "detail": "5 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
         },
         {
           "id": "schema-organization-or-person",
           "label": "Organization/Person entity schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
         },
         {
           "id": "schema-article-or-review",
           "label": "Article/Review/FAQPage schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
         },
         {
           "id": "canonical-present",
@@ -849,14 +930,14 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "8 H2, 10 H3"
+          "detail": "7 H2, 6 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
           "pass": true,
           "weight": 1,
-          "detail": "10 question heading(s)"
+          "detail": "8 question heading(s)"
         },
         {
           "id": "has-table",
@@ -874,10 +955,10 @@
         }
       ],
       "meta": {
-        "h2Count": 8,
-        "h3Count": 10,
+        "h2Count": 7,
+        "h3Count": 6,
         "tableCount": 1,
-        "questionHeaders": 10,
+        "questionHeaders": 8,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -885,35 +966,33 @@
           "Article",
           "BreadcrumbList",
           "WebPage",
-          "FAQPage",
-          "ItemList",
-          "Dataset"
+          "FAQPage"
         ]
       }
     },
     {
-      "url": "https://ainexustools.online/blog/best-ai-voice-cloning-tools-2026/",
+      "url": "https://ainexustools.online/blog/elevenlabs-pricing-character-credits-2026/",
       "checks": [
         {
           "id": "schema-present",
           "label": "JSON-LD schema present",
           "pass": true,
           "weight": 2,
-          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+          "detail": "5 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
         },
         {
           "id": "schema-organization-or-person",
           "label": "Organization/Person entity schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
         },
         {
           "id": "schema-article-or-review",
           "label": "Article/Review/FAQPage schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
+          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage"
         },
         {
           "id": "canonical-present",
@@ -934,14 +1013,14 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "10 H2, 10 H3"
+          "detail": "10 H2, 7 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
           "pass": true,
           "weight": 1,
-          "detail": "10 question heading(s)"
+          "detail": "7 question heading(s)"
         },
         {
           "id": "has-table",
@@ -960,9 +1039,9 @@
       ],
       "meta": {
         "h2Count": 10,
-        "h3Count": 10,
+        "h3Count": 7,
         "tableCount": 1,
-        "questionHeaders": 10,
+        "questionHeaders": 7,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -970,94 +1049,7 @@
           "Article",
           "BreadcrumbList",
           "WebPage",
-          "FAQPage",
-          "ItemList",
-          "Dataset"
-        ]
-      }
-    },
-    {
-      "url": "https://ainexustools.online/blog/best-ai-voice-for-faceless-youtube-channels/",
-      "checks": [
-        {
-          "id": "schema-present",
-          "label": "JSON-LD schema present",
-          "pass": true,
-          "weight": 2,
-          "detail": "7 block(s): WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
-        },
-        {
-          "id": "schema-organization-or-person",
-          "label": "Organization/Person entity schema present",
-          "pass": true,
-          "weight": 2,
-          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
-        },
-        {
-          "id": "schema-article-or-review",
-          "label": "Article/Review/FAQPage schema present",
-          "pass": true,
-          "weight": 2,
-          "detail": "WebSite, Organization, Person, Article, BreadcrumbList, WebPage, FAQPage, ItemList, Dataset"
-        },
-        {
-          "id": "canonical-present",
-          "label": "Canonical tag present",
-          "pass": true,
-          "weight": 1,
-          "detail": "found"
-        },
-        {
-          "id": "not-noindexed",
-          "label": "Page not noindexed",
-          "pass": true,
-          "weight": 3,
-          "detail": "indexable"
-        },
-        {
-          "id": "heading-structure",
-          "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
-          "pass": true,
-          "weight": 1,
-          "detail": "12 H2, 10 H3"
-        },
-        {
-          "id": "question-headers",
-          "label": "Has at least one question-style heading (FAQ/AEO pattern)",
-          "pass": true,
-          "weight": 1,
-          "detail": "10 question heading(s)"
-        },
-        {
-          "id": "has-table",
-          "label": "Has at least one comparison/data table",
-          "pass": true,
-          "weight": 1,
-          "detail": "1 table(s)"
-        },
-        {
-          "id": "author-byline",
-          "label": "Author byline visible in page content",
-          "pass": true,
-          "weight": 1,
-          "detail": "found"
-        }
-      ],
-      "meta": {
-        "h2Count": 12,
-        "h3Count": 10,
-        "tableCount": 1,
-        "questionHeaders": 10,
-        "schemaTypes": [
-          "WebSite",
-          "Organization",
-          "Person",
-          "Article",
-          "BreadcrumbList",
-          "WebPage",
-          "FAQPage",
-          "ItemList",
-          "Dataset"
+          "FAQPage"
         ]
       }
     },

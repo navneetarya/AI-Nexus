@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T10:53:34.005Z",
-  "count": 186,
+  "generated_at": "2026-09-15T10:47:01.459Z",
+  "count": 190,
   "queries": [
     {
       "id": "q1",
@@ -772,6 +772,38 @@
     },
     {
       "id": "q97",
+      "cluster": "blog-how-to-beat-ats-resume-screening-2026",
+      "category": "Productivity",
+      "query": "What is the How to Beat ATS Resume Screening in 2026 (What Actually Works)?",
+      "target_page_hint": "/blog/how-to-beat-ats-resume-screening-2026",
+      "source": "blog-title-template"
+    },
+    {
+      "id": "q98",
+      "cluster": "blog-elevenlabs-youtube-commercial-rights-2026",
+      "category": "Audio",
+      "query": "What is the Can I Use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)?",
+      "target_page_hint": "/blog/elevenlabs-youtube-commercial-rights-2026",
+      "source": "blog-title-template"
+    },
+    {
+      "id": "q99",
+      "cluster": "blog-elevenlabs-pricing-character-credits-2026",
+      "category": "Audio",
+      "query": "What is the ElevenLabs Pricing?",
+      "target_page_hint": "/blog/elevenlabs-pricing-character-credits-2026",
+      "source": "blog-title-template"
+    },
+    {
+      "id": "q100",
+      "cluster": "blog-gamma-ai-review-2026",
+      "category": "Design",
+      "query": "What is the Gamma AI Review?",
+      "target_page_hint": "/blog/gamma-ai-review-2026",
+      "source": "blog-title-template"
+    },
+    {
+      "id": "q101",
       "cluster": "blog-best-ai-voice-generators-for-voiceovers-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Generators for Voiceovers?",
@@ -779,7 +811,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q98",
+      "id": "q102",
       "cluster": "blog-best-ai-voice-generators-for-podcasts-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Generators for Podcasts?",
@@ -787,7 +819,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q99",
+      "id": "q103",
       "cluster": "blog-best-ai-voice-cloning-tools-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Cloning Tools?",
@@ -795,7 +827,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q100",
+      "id": "q104",
       "cluster": "blog-best-ai-voice-for-faceless-youtube-channels",
       "category": "Audio",
       "query": "What are the Best AI Voice for Faceless YouTube Channels?",
@@ -803,7 +835,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q101",
+      "id": "q105",
       "cluster": "blog-best-ai-voice-generators-for-youtube-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Generators for YouTube?",
@@ -811,7 +843,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q102",
+      "id": "q106",
       "cluster": "blog-murf-ai-alternatives-2026",
       "category": "Audio",
       "query": "What is the Murf AI Alternatives?",
@@ -819,7 +851,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q103",
+      "id": "q107",
       "cluster": "blog-elevenlabs-alternatives-2026",
       "category": "Audio",
       "query": "What is the ElevenLabs Alternatives?",
@@ -827,7 +859,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q104",
+      "id": "q108",
       "cluster": "blog-best-text-to-speech-software-2026",
       "category": "Audio",
       "query": "What are the Best Text-to-Speech Software?",
@@ -835,7 +867,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q105",
+      "id": "q109",
       "cluster": "blog-best-ai-voice-generators-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Generators?",
@@ -843,7 +875,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q106",
+      "id": "q110",
       "cluster": "blog-best-ai-interview-prep-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Interview Prep Tools?",
@@ -851,7 +883,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q107",
+      "id": "q111",
       "cluster": "blog-best-ai-seo-content-optimization-tools-2026",
       "category": "Marketing",
       "query": "What are the Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)?",
@@ -859,7 +891,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q108",
+      "id": "q112",
       "cluster": "blog-best-ai-music-generator-tools-2026",
       "category": "Audio",
       "query": "What are the Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)?",
@@ -867,7 +899,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q109",
+      "id": "q113",
       "cluster": "blog-best-ai-website-builders-2026",
       "category": "Design",
       "query": "What are the Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web)?",
@@ -875,7 +907,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q110",
+      "id": "q114",
       "cluster": "blog-best-ai-sales-tools-for-founders-2026",
       "category": "Marketing",
       "query": "What are the Best AI Sales Tools for Founders 2026 (Apollo vs Clay vs Instantly vs Smartlead)?",
@@ -883,7 +915,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q111",
+      "id": "q115",
       "cluster": "blog-best-ai-receptionist-small-business-2026",
       "category": "Productivity",
       "query": "What are the Best AI Receptionist for Small Business in 2026 (Pricing & Feature Comparison)?",
@@ -891,7 +923,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q112",
+      "id": "q116",
       "cluster": "blog-best-ai-photo-upscaler-tools-2026",
       "category": "Image",
       "query": "What are the Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration?",
@@ -899,7 +931,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q113",
+      "id": "q117",
       "cluster": "blog-best-ai-ad-creative-generator-tools-2026",
       "category": "Marketing",
       "query": "What are the Best AI Ad Creative Generator Tools 2026 (Tested for Solo Founders & Small Teams)?",
@@ -907,7 +939,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q114",
+      "id": "q118",
       "cluster": "blog-best-nano-banana-pro-alternatives-2026",
       "category": "Image",
       "query": "What are the Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)?",
@@ -915,7 +947,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q115",
+      "id": "q119",
       "cluster": "blog-best-ai-voice-agent-small-business-2026",
       "category": "Productivity",
       "query": "What are the Best AI Voice Agent Platforms for Small Business in 2026 (2026 Pricing & Feature Comparison)?",
@@ -923,7 +955,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q116",
+      "id": "q120",
       "cluster": "blog-emergent-ai-explained-2026",
       "category": "Productivity",
       "query": "What is the What Is Emergent AI? Emergent Abilities Explained (2026 Guide)?",
@@ -931,7 +963,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q117",
+      "id": "q121",
       "cluster": "blog-chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
       "category": "Productivity",
       "query": "What is the ChatGPT Atlas vs Perplexity Comet vs Dia (2026)?",
@@ -939,7 +971,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q118",
+      "id": "q122",
       "cluster": "blog-best-ai-resume-builder-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Resume Builder Tools?",
@@ -947,7 +979,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q119",
+      "id": "q123",
       "cluster": "blog-best-ai-voice-dictation-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Voice Dictation Tools?",
@@ -955,7 +987,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q120",
+      "id": "q124",
       "cluster": "blog-ai-contract-analysis-tools-2026",
       "category": "Productivity",
       "query": "What is the AI Contract Analysis Tools?",
@@ -963,7 +995,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q121",
+      "id": "q125",
       "cluster": "blog-claude-code-alternatives-2026",
       "category": "Coding",
       "query": "What is the Claude Code Alternatives?",
@@ -971,7 +1003,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q122",
+      "id": "q126",
       "cluster": "blog-llm-api-pricing-comparison-2026",
       "category": "Coding",
       "query": "What is the Claude vs GPT vs Gemini API Pricing (Aug 2026)?",
@@ -979,7 +1011,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q123",
+      "id": "q127",
       "cluster": "blog-relevance-ai-vs-lindy-vs-gumloop-2026",
       "category": "Productivity",
       "query": "What is the Relevance AI vs Lindy vs Gumloop?",
@@ -987,7 +1019,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q124",
+      "id": "q128",
       "cluster": "blog-multi-agent-ai-systems-explained-2026",
       "category": "Coding",
       "query": "What is the Multi-Agent AI Systems Explained?",
@@ -995,7 +1027,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q125",
+      "id": "q129",
       "cluster": "blog-best-ai-presentation-tools-2026",
       "category": "Design",
       "query": "What are the Best AI Presentation Tools?",
@@ -1003,7 +1035,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q126",
+      "id": "q130",
       "cluster": "blog-best-ai-video-generators-2026",
       "category": "Video",
       "query": "What are the Best AI Video Generators?",
@@ -1011,7 +1043,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q127",
+      "id": "q131",
       "cluster": "blog-ai-tools-for-solopreneurs-2026",
       "category": "Productivity",
       "query": "What is the AI for Solopreneurs?",
@@ -1019,7 +1051,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q128",
+      "id": "q132",
       "cluster": "blog-best-ai-coding-agents-2026",
       "category": "Coding",
       "query": "What are the Best AI Coding Agents?",
@@ -1027,7 +1059,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q129",
+      "id": "q133",
       "cluster": "blog-best-ai-agents-customer-service-2026",
       "category": "Productivity",
       "query": "What are the Best AI Agents for Customer Service?",
@@ -1035,7 +1067,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q130",
+      "id": "q134",
       "cluster": "blog-ai-tools-cost-roi-calculator-2026",
       "category": "Productivity",
       "query": "What is the AI Tools ROI Calculator?",
@@ -1043,7 +1075,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q131",
+      "id": "q135",
       "cluster": "blog-best-ai-recruitment-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Recruitment Tools?",
@@ -1051,7 +1083,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q132",
+      "id": "q136",
       "cluster": "blog-best-no-code-ai-automation-tools-2026",
       "category": "Productivity",
       "query": "What are the Best No-Code AI Automation Tools 2026 — 9 Platforms Ranked?",
@@ -1059,7 +1091,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q133",
+      "id": "q137",
       "cluster": "blog-n8n-vs-make-vs-zapier-2026",
       "category": "Productivity",
       "query": "What is the n8n vs Make vs Zapier?",
@@ -1067,7 +1099,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q134",
+      "id": "q138",
       "cluster": "blog-what-is-mcp-model-context-protocol-2026",
       "category": "Productivity",
       "query": "What is the What is MCP (Model Context Protocol)? The AI Integration Standard Explained?",
@@ -1075,7 +1107,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q135",
+      "id": "q139",
       "cluster": "blog-ai-agents-vs-ai-automation-difference-2026",
       "category": "Productivity",
       "query": "What is the AI Agents vs AI Automation?",
@@ -1083,7 +1115,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q136",
+      "id": "q140",
       "cluster": "blog-best-ai-agents-for-small-business-2026",
       "category": "Productivity",
       "query": "What are the Best AI Agents for Small Business 2026 — Ranked & Compared?",
@@ -1091,7 +1123,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q137",
+      "id": "q141",
       "cluster": "blog-best-ai-meeting-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Meeting Tools 2026 — Ranked & Compared?",
@@ -1099,7 +1131,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q138",
+      "id": "q142",
       "cluster": "blog-best-ai-tools-for-youtube-creators-2026",
       "category": "Video",
       "query": "What are the Best AI Tools for YouTube Creators 2026 — Expert Picks?",
@@ -1107,7 +1139,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q139",
+      "id": "q143",
       "cluster": "blog-best-ai-email-marketing-tools-2026",
       "category": "Marketing",
       "query": "What are the Best AI Email Marketing Tools 2026 — Ranked?",
@@ -1115,7 +1147,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q140",
+      "id": "q144",
       "cluster": "blog-cursor-ai-review-2026",
       "category": "Coding",
       "query": "What is the Cursor AI Review?",
@@ -1123,7 +1155,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q141",
+      "id": "q145",
       "cluster": "blog-best-ai-headshot-tools-linkedin-2026",
       "category": "image",
       "query": "What are the Best AI Headshot Tools for LinkedIn in 2026 — Researched & Ranked?",
@@ -1131,7 +1163,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q142",
+      "id": "q146",
       "cluster": "blog-best-vibe-coding-tools-2026",
       "category": "Coding",
       "query": "What are the Best Vibe Coding Tools?",
@@ -1139,7 +1171,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q143",
+      "id": "q147",
       "cluster": "blog-gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",
       "category": "AI Chatbots",
       "query": "What is the GPT-5.5 vs Claude Opus 4.8 vs Grok 4?",
@@ -1147,7 +1179,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q144",
+      "id": "q148",
       "cluster": "blog-ai-ecosystem-growth-report-2026",
       "category": "Research",
       "query": "What is the AI Ecosystem Growth Report 2026 — Market Trends & Tool Adoption?",
@@ -1155,7 +1187,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q145",
+      "id": "q149",
       "cluster": "blog-cheapest-ai-coding-tools-2026",
       "category": "Coding",
       "query": "What is the Cheapest AI Coding Tools in 2026 — Real Pricing, Compared?",
@@ -1163,7 +1195,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q146",
+      "id": "q150",
       "cluster": "blog-fastest-growing-ai-startups-2026",
       "category": "Research",
       "query": "What is the Fastest Growing AI Startups in 2026 — Independent Research?",
@@ -1171,7 +1203,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q147",
+      "id": "q151",
       "cluster": "blog-best-free-ai-tool-plans-2026",
       "category": "Research",
       "query": "What are the Best Free AI Tool Plans in 2026 — What You Actually Get for Nothing?",
@@ -1179,7 +1211,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q148",
+      "id": "q152",
       "cluster": "blog-ai-api-pricing-comparison-2026",
       "category": "Research",
       "query": "What is the AI API Pricing Comparison 2026 — OpenAI vs Anthropic vs Google vs Meta?",
@@ -1187,7 +1219,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q149",
+      "id": "q153",
       "cluster": "blog-best-ai-tools-for-startups-2026",
       "category": "Productivity",
       "query": "What are the Best AI Tools for Startups in 2026 — Build Faster With Less?",
@@ -1195,7 +1227,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q150",
+      "id": "q154",
       "cluster": "blog-best-ai-tools-for-youtubers-2026",
       "category": "Video",
       "query": "What are the Best AI Tools for YouTubers in 2026 — Reviewed for Creators?",
@@ -1203,7 +1235,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q151",
+      "id": "q155",
       "cluster": "blog-best-ai-tools-for-automation-engineers-2026",
       "category": "Coding",
       "query": "What are the Best AI Tools for Automation Engineers in 2026 — Independently Reviewed?",
@@ -1211,7 +1243,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q152",
+      "id": "q156",
       "cluster": "blog-best-ai-tools-for-developers-2026",
       "category": "Coding",
       "query": "What are the Best AI Tools for Developers in 2026 — Reviewed & Ranked?",
@@ -1219,7 +1251,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q153",
+      "id": "q157",
       "cluster": "blog-chatgpt-free-vs-claude-free-vs-gemini-free-2026",
       "category": "AI Comparison",
       "query": "What is the ChatGPT Free vs Claude Free vs Gemini Free?",
@@ -1227,7 +1259,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q154",
+      "id": "q158",
       "cluster": "blog-perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026",
       "category": "Productivity",
       "query": "What is the Perplexity Pro vs ChatGPT Plus vs Claude Pro?",
@@ -1235,7 +1267,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q155",
+      "id": "q159",
       "cluster": "blog-best-ai-writing-tools-for-beginners-2026",
       "category": "Writing",
       "query": "What are the Best AI Writing Tools for Beginners 2026 — Reviewed & Ranked?",
@@ -1243,7 +1275,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q156",
+      "id": "q160",
       "cluster": "blog-best-ai-tools-for-freelancers-2026",
       "category": "Productivity",
       "query": "What are the Best AI Tools for Freelancers 2026 — Work Faster, Earn More?",
@@ -1251,7 +1283,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q157",
+      "id": "q161",
       "cluster": "blog-best-grammarly-alternatives",
       "category": "Writing",
       "query": "What are the Best Grammarly Alternatives in 2026 — Reviewed & Ranked?",
@@ -1259,7 +1291,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q158",
+      "id": "q162",
       "cluster": "blog-best-podcastle-alternatives",
       "category": "Audio",
       "query": "What are the Best Podcastle Alternatives in 2026 — For Podcasters Who Need More?",
@@ -1267,7 +1299,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q159",
+      "id": "q163",
       "cluster": "blog-best-ai-tools-for-social-media-2026",
       "category": "Social Media",
       "query": "What are the Best AI Tools for Social Media 2026 — Create, Schedule & Grow Faster?",
@@ -1275,7 +1307,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q160",
+      "id": "q164",
       "cluster": "blog-how-to-use-rytr-to-write-blog-posts",
       "category": "Writing",
       "query": "What is the How to Use Rytr to Write Blog Posts (Step-by-Step, 2026)?",
@@ -1283,7 +1315,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q161",
+      "id": "q165",
       "cluster": "blog-ai-tools-for-students-free-2026",
       "category": "Students",
       "query": "What are the Best Free AI Tools for Students 2026 — Essays, Research, Coding & Presentations?",
@@ -1291,7 +1323,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q162",
+      "id": "q166",
       "cluster": "blog-best-ai-podcast-tools-2026",
       "category": "Audio",
       "query": "What are the Best AI Podcast Tools 2026 — Record, Edit & Enhance Your Show?",
@@ -1299,7 +1331,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q163",
+      "id": "q167",
       "cluster": "blog-best-notion-ai-alternatives-2026",
       "category": "Productivity",
       "query": "What are the Best Notion AI Alternatives 2026 — Independently Reviewed & Ranked?",
@@ -1307,7 +1339,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q164",
+      "id": "q168",
       "cluster": "blog-best-invideo-alternatives-2026",
       "category": "Video",
       "query": "What are the Best InVideo AI Alternatives 2026 — Reviewed for Faceless YouTube?",
@@ -1315,7 +1347,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q165",
+      "id": "q169",
       "cluster": "blog-jasper-ai-alternatives",
       "category": "Writing",
       "query": "What are the Best Jasper AI Alternatives in 2026 — Cheaper & Reviewed?",
@@ -1323,7 +1355,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q166",
+      "id": "q170",
       "cluster": "blog-chatgpt-alternatives-free-2026",
       "category": "Writing",
       "query": "What are the Best Free ChatGPT Alternatives in?",
@@ -1331,7 +1363,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q167",
+      "id": "q171",
       "cluster": "blog-best-ai-coding-tools-2026",
       "category": "Coding",
       "query": "What are the Best AI Coding Tools in 2026 — Independently Reviewed & Ranked?",
@@ -1339,7 +1371,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q168",
+      "id": "q172",
       "cluster": "blog-best-ai-logo-makers-free-2026",
       "category": "india",
       "query": "What are the Best Free AI Logo Makers in 2026 — Including INR Pricing for India?",
@@ -1347,7 +1379,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q169",
+      "id": "q173",
       "cluster": "blog-best-ai-marketing-tools-2026",
       "category": "Marketing",
       "query": "What are the Best AI Marketing Tools in 2026 — For SEO, Social & Content?",
@@ -1355,7 +1387,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q170",
+      "id": "q174",
       "cluster": "blog-ai-tools-for-teachers-2026",
       "category": "Productivity",
       "query": "What are the Best AI Tools for Teachers in 2026 — Save Hours Every Week?",
@@ -1363,7 +1395,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q171",
+      "id": "q175",
       "cluster": "blog-best-midjourney-alternatives-2026",
       "category": "Image",
       "query": "What are the Best Midjourney Alternatives in 2026 — Free & Paid Options Compared?",
@@ -1371,7 +1403,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q172",
+      "id": "q176",
       "cluster": "blog-how-to-use-ai-for-content-creation-2026",
       "category": "Guides",
       "query": "What is the How to Use AI for Content Creation in 2026 — Full Workflow (Writing, Images, Video & Audio)?",
@@ -1379,7 +1411,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q173",
+      "id": "q177",
       "cluster": "blog-best-ai-tools-in-india-2026",
       "category": "Productivity",
       "query": "What are the Best AI Tools in India 2026 — INR Pricing, Free Plans & Honest Reviews?",
@@ -1387,7 +1419,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q174",
+      "id": "q178",
       "cluster": "blog-best-ai-tools-for-freelancers-india-2026",
       "category": "india",
       "query": "What are the Best AI Tools for Freelancers in India 2026 — Free Plans, INR Pricing & What Actually Works?",
@@ -1395,7 +1427,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q175",
+      "id": "q179",
       "cluster": "blog-best-free-ai-tools-for-students-in-india-2026",
       "category": "Students",
       "query": "What are the Best Free AI Tools for Students in India 2026 — No Dollar Card, No VPN?",
@@ -1403,7 +1435,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q176",
+      "id": "q180",
       "cluster": "blog-best-ai-tools-for-content-creators-free-2026",
       "category": "Marketing",
       "query": "What are the Best Free AI Tools for Content Creators 2026 — Reviewed?",
@@ -1411,7 +1443,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q177",
+      "id": "q181",
       "cluster": "blog-taskade-vs-notion-vs-asana-2026",
       "category": "Productivity",
       "query": "What is the Taskade vs Notion vs Asana 2026 — 3-Way Comparison for Freelancers?",
@@ -1419,7 +1451,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q178",
+      "id": "q182",
       "cluster": "blog-leonardo-vs-midjourney-2026",
       "category": "Image",
       "query": "What is the Leonardo.ai vs Midjourney 2026 — Free Plan Comparison (Which Is Worth It?)?",
@@ -1427,7 +1459,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q179",
+      "id": "q183",
       "cluster": "blog-best-ai-writing-tools-2026",
       "category": "Writing",
       "query": "What are the Best AI Writing Tools 2026 — Reviewed, Ranked & Compared?",
@@ -1435,7 +1467,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q180",
+      "id": "q184",
       "cluster": "blog-best-free-ai-writing-tools-2026",
       "category": "Writing",
       "query": "What are the Best Free AI Writing Tools 2026 — 5 Tools With No Credit Card Required?",
@@ -1443,7 +1475,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q181",
+      "id": "q185",
       "cluster": "blog-is-grammarly-premium-worth-it-2026",
       "category": "Writing",
       "query": "What is the Is Grammarly Premium Worth It in 2026? — Honest Answer After 400+ Reviews?",
@@ -1451,7 +1483,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q182",
+      "id": "q186",
       "cluster": "blog-grok-4-vs-chatgpt-vs-claude-content-creators-2026",
       "category": "Writing",
       "query": "What is the Grok 4 vs ChatGPT vs Claude?",
@@ -1459,7 +1491,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q183",
+      "id": "q187",
       "cluster": "blog-google-gemini-ai-review-2026",
       "category": "Writing",
       "query": "What is the Google Gemini AI Review?",
@@ -1467,7 +1499,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q184",
+      "id": "q188",
       "cluster": "blog-claude-code-vs-github-copilot-vs-replit-2026",
       "category": "Coding",
       "query": "What is the Claude Code vs GitHub Copilot vs Replit?",
@@ -1475,7 +1507,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q185",
+      "id": "q189",
       "cluster": "blog-perplexity-ai-review-2026",
       "category": "Productivity",
       "query": "What is the Perplexity AI Review?",
@@ -1483,7 +1515,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q186",
+      "id": "q190",
       "cluster": "blog-best-ai-chatbot-2026",
       "category": "Guides",
       "query": "What are the Best AI Chatbot?",
