@@ -70,6 +70,7 @@ jobs:
           # The sync check below will fail the build with a reminder if a
           # post is added to blog/ without a matching entry here.
           BLOG_SLUGS=(
+            murf-ai-pricing-2026
             how-to-beat-ats-resume-screening-2026
             gamma-ai-review-2026
             best-ai-interview-prep-tools-2026

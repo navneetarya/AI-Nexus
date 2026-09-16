@@ -21,6 +21,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "murf-ai-pricing-2026",
+    "title": "Murf AI Pricing: What Each Plan Actually Buys You (2026)",
+    "seoTitle": "Murf AI Pricing 2026: Free, Creator & Business Costs",
+    "metaDescription": "Murf AI pricing broken down by generation hours, not marketing copy. Exactly what Free, Creator, Business and Enterprise buy, where voice cloning lives, and which tier to pick.",
+    "datePublished": "2026-09-16",
+    "dateModified": "2026-09-16",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "9 min read",
+    "ogImage": "https://ainexustools.online/og/blog/murf-ai-pricing-2026.webp",
+    "excerpt": "Murf AI sells plans in hours of generation, not characters or credits, which makes it easy to underestimate what a real production schedule actually needs. Here is what each plan buys."
+  },
+  {
     "slug": "how-to-beat-ats-resume-screening-2026",
     "title": "How to Beat ATS Resume Screening in 2026 (What Actually Works)",
     "seoTitle": "How to Beat ATS Resume Screening in 2026",

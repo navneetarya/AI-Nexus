@@ -248,8 +248,12 @@ import post92 from './elevenlabs-pricing-character-credits-2026';
 import post93 from './elevenlabs-youtube-commercial-rights-2026';
 // Sep 14 — job-seeker pain-point piece completing the resume/interview/recruitment cluster; funnels into best-ai-resume-builder-tools-2026
 import post94 from './how-to-beat-ats-resume-screening-2026';
+// Sep 16 — Murf AI Pricing 2026 — pricing pillar for the AI Voice/TTS cluster, mirrors
+// elevenlabs-pricing-character-credits-2026; funnels into the live Murf AI affiliate link
+import post95 from './murf-ai-pricing-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post95, // Sep 16 — Murf AI Pricing: What Each Plan Actually Buys You (2026) — pinned first for freshness
   post94, // Sep 14 — How to Beat ATS Resume Screening in 2026 (What Actually Works) — pinned first for freshness
   post93, // Sep 10 — Can I Use ElevenLabs for YouTube? Commercial Rights Guide 2026
   post92, // Sep 10 — ElevenLabs Pricing: The Real Cost of Character Credits 2026

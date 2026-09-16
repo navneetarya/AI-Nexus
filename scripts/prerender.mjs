@@ -2356,6 +2356,30 @@ function faqSchema(faqs) {
 // IMPORTANT: Every entry here must match the slug and metadata in blog/*.ts
 // When adding new blog posts, add them here AND in blog/index.ts
 const BLOG_POSTS = [
+  // —— Sep 16: Murf AI Pricing 2026 — pricing pillar for the AI Voice/TTS cluster ——
+  // Target keyword: "murf ai pricing" — mirrors elevenlabs-pricing-character-credits-2026,
+  // funnels traffic toward the live Murf AI affiliate link (get.murf.ai/ilypoqhxvxsj).
+  {
+    slug: 'murf-ai-pricing-2026',
+    title: 'Murf AI Pricing: What Each Plan Actually Buys You (2026)',
+    seoTitle: 'Murf AI Pricing 2026: Free, Creator & Business Costs',
+    metaDescription: 'Murf AI pricing broken down by generation hours, not marketing copy. Exactly what Free, Creator, Business and Enterprise buy, where voice cloning lives, and which tier to pick.',
+    datePublished: '2026-09-16',
+    dateModified: '2026-09-16',
+    readTimeMinutes: 9,
+    ogImage: 'https://ainexustools.online/og/blog/murf-ai-pricing-2026.webp',
+    quickAnswer: 'Murf AI costs $0 (Free, 10 minutes total, no downloads or commercial rights), $19/mo annual or $29/mo monthly (Creator, 24 hours/year), $66/mo annual or $99/mo monthly (Business, roughly 8 hours/month), and custom-quoted Enterprise pricing. Commercial usage rights start on Creator. Voice cloning is locked to Enterprise only — the single biggest gap versus ElevenLabs, which offers cloning from its $6/month Starter plan.',
+    faqs: [
+      { q: 'How much does Murf AI cost per month?', a: 'Murf AI\'s Free plan costs $0 but only includes 10 minutes of total generation with no downloads or commercial rights. The first usable paid tier, Creator, costs $19/month on annual billing or $29/month billed monthly, and includes roughly 24 hours of generation a year with full commercial usage rights. Business runs $66/month annual or $99/month monthly for a larger, team-oriented allowance. Enterprise is custom-quoted.' },
+      { q: 'Is Murf AI free to use?', a: 'Murf has a permanent free tier, but it is a preview, not a working plan — 10 minutes of total voice generation (not monthly), access to all 200+ voices for testing, but no downloads and no commercial usage rights. Any real project needs at least the Creator plan.' },
+      { q: 'Does Murf AI offer voice cloning, and how much does it cost?', a: 'Yes, but only on the Enterprise plan, which is custom-quoted and typically runs from roughly $1,000 to $5,000-plus a year depending on usage and support needs. There is no lower-cost or self-serve way to clone a voice on Murf, unlike ElevenLabs, which offers instant voice cloning starting on its $6/month Starter plan.' },
+      { q: 'Is Murf AI Creator or Business plan better?', a: 'Creator ($19/month annual) is the right fit for a solo creator publishing occasional finished content — one or two videos a month. Business ($66/month annual) makes sense once you need multiple seats and shared project collaboration, or once Creator\'s roughly 2-hour monthly generation budget genuinely runs out, not just because more hours sound useful.' },
+      { q: 'How does Murf AI\'s pricing compare to ElevenLabs?', a: 'Murf meters usage in generation hours; ElevenLabs meters in shared credits. The more consequential difference is where commercial rights begin: ElevenLabs\' commercial license starts at $6/month, while Murf\'s starts at $19/month on annual billing — roughly three times more, though Murf\'s price includes a fuller production studio with video sync and slide-deck integrations.' },
+      { q: 'Does Murf AI charge separately for API access?', a: 'Yes. Murf\'s API is billed independently of any Studio subscription — roughly $0.03 per 1,000 characters for Studio-quality text-to-speech and $0.01 per 1,000 characters for the Falcon conversational model, with a small monthly credit typically included for testing.' },
+      { q: 'Does Murf AI\'s free plan let me download audio?', a: 'No. The Free plan blocks downloads entirely — it exists to let you preview voice quality in the browser, not to produce anything you can export or publish. Downloads and commercial rights both start on the paid Creator plan.' },
+    ],
+    mentionedTools: ['murf-ai', 'elevenlabs'],
+  },
   // —— Sep 14: How to Beat ATS Resume Screening in 2026 — job-seeker pain-point piece ——
   // Target keyword: "how to beat ats resume screening 2026" — completes the resume/interview/
   // recruitment cluster, funnels into best-ai-resume-builder-tools-2026 as its money page.
