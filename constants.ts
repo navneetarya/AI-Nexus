@@ -208,7 +208,7 @@ export const TOOLS: Tool[] = [
     id: 'w5', slug: 'frase',
     name: 'Frase.io', tagline: 'Research, write & optimise SEO content in minutes',
     description: 'Frase helps you create SEO-optimised content fast. Research top-ranking pages, generate AI content briefs, and write articles that rank — all in one workflow.',
-    category: Category.WRITING, affiliateLink: 'https://frase.io?via=ainexus',
+    category: Category.WRITING, affiliateLink: 'https://www.frase.io/pricing/?via=navneet66',
     iconName: 'Search', color: '#2dd4bf', accentColor: '#0d9488',
     userBadge: 'SEO pick', pricing: 'From $15/month', bestFor: 'SEO writers & bloggers',
     features: ['SERP analysis', 'AI content briefs', 'Topic scoring', 'AI writer'],

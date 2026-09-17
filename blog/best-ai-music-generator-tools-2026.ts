@@ -9,9 +9,9 @@
 //   App Store) and a US-specific copyright/RIAA-lawsuit risk section most competing roundups skip
 // Internal links: /best-ai-audio-tools/, /blog/best-ai-podcast-tools-2026/, /blog/best-ai-tools-for-youtube-creators-2026/,
 //   /blog/best-ai-tools-for-content-creators-free-2026/
-// Affiliate note: only ElevenLabs has a confirmed, tracked affiliate program in AI Nexus's reference
-//   table. No confirmed public affiliate program was found in this research session for Suno, Udio,
-//   Soundraw, or AIVA — official URLs used for those four, honestly noted here per pipeline Gate 2.
+// Affiliate note: ElevenLabs and Soundraw (ref=pvxxfrzw, added Sep 2026) have confirmed, tracked
+//   affiliate/referral programs. No confirmed public affiliate program was found in this research
+//   session for Suno, Udio, or AIVA — official URLs used for those three, honestly noted here per pipeline Gate 2.
 // Word count: ~2,560 words (prose, excludes table cells) | Published: 2026-08-10 | Author: Navneet Arya
 
 import { BlogPost } from './types';
@@ -135,7 +135,7 @@ const post: BlogPost = {
 <p>There is no permanent free tier for downloads. You can generate and preview tracks, but downloading requires the Creator plan at $16.99/month, which includes unlimited downloads and a full commercial license. An Artist-tier plan exists for creators who want to distribute tracks to Spotify and Apple Music, though it requires modifying the AI output before release.</p>
 <p>The limitation: no vocals, a narrower genre range than Suno or Udio, and no permanent free download tier to test with first.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://soundraw.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Soundraw →</a>
+  <a href="https://soundraw.io/?ref=pvxxfrzw" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Soundraw →</a>
 </div>
 
 <h3>5. AIVA: best for cinematic, orchestral, and game scores</h3>

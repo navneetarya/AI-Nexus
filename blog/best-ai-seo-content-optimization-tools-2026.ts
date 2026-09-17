@@ -11,7 +11,7 @@
 //   lineup in 2026, which is why so many "current" price lists online are already stale.
 // Internal links: /best-ai-marketing-tools/, /tools/frase, /tools/writesonic, /blog/best-ai-writing-tools-2026/
 // Affiliate note: Frase has a confirmed, tracked affiliate link in AI Nexus's reference table
-//   (https://frase.io?via=ainexus). Surfer SEO has an active PartnerStack affiliate program (25%
+//   (https://www.frase.io/pricing/?via=navneet66). Surfer SEO has an active PartnerStack affiliate program (25%
 //   recurring, 60-day cookie) that has not yet been applied for — official link used, noted here per
 //   pipeline Gate 2. No public affiliate program was found in this research session for Clearscope or
 //   MarketMuse — official URLs used for both, honestly noted here per pipeline Gate 2.
@@ -110,7 +110,7 @@ const post: BlogPost = {
 <p>Frase doesn't offer a permanent free plan. But its 7-day free trial needs no credit card and runs on Professional's full feature set. It's capped at 5 articles and 3 seats to test with.</p>
 <p>What makes Frase stand out from Surfer at the same $49 entry price: AI-visibility tracking across ChatGPT and Google AI comes included from Starter. It's not gated to a higher tier. Frase holds a 4.8/5 rating on G2, matching Surfer, and is used by teams at Oracle, Coursera, and GitLab according to its own customer list.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://frase.io?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase Free →</a>
+  <a href="https://www.frase.io/pricing/?via=navneet66" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
