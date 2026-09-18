@@ -21,6 +21,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-dubbing-tools-2026",
+    "title": "Best AI Dubbing Tools 2026: 5 Options Compared (Real Pricing)",
+    "seoTitle": "Best AI Dubbing Tools 2026: 5 Options Compared",
+    "metaDescription": "The best AI dubbing tools in 2026, compared honestly. ElevenLabs, HeyGen, Rask AI, Synthesia & Dubverse — real pricing, languages, and who each fits.",
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "11 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-dubbing-tools-2026.webp",
+    "excerpt": "ElevenLabs wins for audio-only dubbing with voice preservation across 29 languages, HeyGen wins if you need lip-synced talking-head video, and Dubverse is the strongest pick for Indian and Asian languages specifically."
+  },
+  {
     "slug": "murf-ai-pricing-2026",
     "title": "Murf AI Pricing: What Each Plan Actually Buys You (2026)",
     "seoTitle": "Murf AI Pricing 2026: Free, Creator & Business Costs",

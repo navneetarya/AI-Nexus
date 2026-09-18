@@ -7,6 +7,7 @@ import type { BlogPost } from './types';
 type BlogPostModule = { default: BlogPost };
 
 const BLOG_POST_LOADERS: Record<string, () => Promise<BlogPostModule>> = {
+  'best-ai-dubbing-tools-2026': () => import('./best-ai-dubbing-tools-2026'),
   'murf-ai-pricing-2026': () => import('./murf-ai-pricing-2026'),
   'how-to-beat-ats-resume-screening-2026': () => import('./how-to-beat-ats-resume-screening-2026'),
   'elevenlabs-youtube-commercial-rights-2026': () => import('./elevenlabs-youtube-commercial-rights-2026'),

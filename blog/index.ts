@@ -251,8 +251,12 @@ import post94 from './how-to-beat-ats-resume-screening-2026';
 // Sep 16 — Murf AI Pricing 2026 — pricing pillar for the AI Voice/TTS cluster, mirrors
 // elevenlabs-pricing-character-credits-2026; funnels into the live Murf AI affiliate link
 import post95 from './murf-ai-pricing-2026';
+// T4.6: Best AI Dubbing Tools 2026 — new category, zero prior overlap on this site.
+// Target keyword: "best ai dubbing tools 2026". ElevenLabs is the only affiliate tool.
+import post96 from './best-ai-dubbing-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post96, // Sep 18 — Best AI Dubbing Tools 2026 (ElevenLabs, HeyGen, Rask AI, Synthesia, Dubverse) — pinned first for freshness
   post95, // Sep 16 — Murf AI Pricing: What Each Plan Actually Buys You (2026) — pinned first for freshness
   post94, // Sep 14 — How to Beat ATS Resume Screening in 2026 (What Actually Works) — pinned first for freshness
   post93, // Sep 10 — Can I Use ElevenLabs for YouTube? Commercial Rights Guide 2026
