@@ -3,7 +3,7 @@ import { BlogPost } from './types';
 // ── Affiliate links used in this post ────────────────────────────────────────
 // Cursor           : Affiliate active — https://cursor.com (verify referral link)
 // Replit           : Affiliate active — https://replit.com/refer/navneet (verify exact ref)
-// Lovable          : Affiliate active — https://lovable.dev/?via=navneet (verify exact ref)
+// Lovable          : Affiliate active — https://lovablelabs.pxf.io/c/5629153/3903956/49205
 // Devin            : No affiliate — linked to main site only (cognition.ai)
 // Claude Code      : No affiliate — Anthropic direct (anthropic.com/claude-code)
 // SWE-Agent        : No affiliate — open source (swe-agent.com / princeton)

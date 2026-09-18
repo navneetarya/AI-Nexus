@@ -2576,11 +2576,11 @@ The bottom line: most "which one should I use?" questions come down to one quest
     ],
     winnerSlug: 'lovable',
     winnerName: 'Lovable',
-    winnerAffiliateLink: 'https://lovable.dev/?via=navneet',
+    winnerAffiliateLink: 'https://lovablelabs.pxf.io/c/5629153/3903956/49205',
     winnerAffiliateText: 'Try Lovable free',
     pricing: {
       tools: [
-        { name: 'Lovable', free: true, startingPrice: '$0', paidFrom: '$25/mo', bestPlanFor: 'Non-developers building full-stack MVPs with database + auth', affiliateLink: 'https://lovable.dev/?via=navneet' },
+        { name: 'Lovable', free: true, startingPrice: '$0', paidFrom: '$25/mo', bestPlanFor: 'Non-developers building full-stack MVPs with database + auth', affiliateLink: 'https://lovablelabs.pxf.io/c/5629153/3903956/49205' },
         { name: 'Bolt.new', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'JavaScript developers wanting framework flexibility', affiliateLink: 'https://bolt.new' },
         { name: 'v0 by Vercel', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'React/Next.js developers generating UI components', affiliateLink: 'https://v0.dev' },
       ],
