@@ -7783,7 +7783,7 @@ ${items}
         <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Writing Tool</dt>
         <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/grammarly/" style="color:#0D9488">Grammarly</a> — grammar, tone detection, and full-sentence rewrites. Used by 40 million+ people globally. Free plan has no word limit.</dd>
         <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Coding Tool</dt>
-        <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/cursor/" style="color:#0D9488">Cursor</a> — multi-file AI refactoring, @Codebase context, VS Code-compatible. Rated #1 for complex codebase tasks in 2026.</dd>
+        <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/cursor/" style="color:#0D9488">Cursor</a> — multi-file AI refactoring, @Codebase context, VS Code-compatible.</dd>
         <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Image Generator</dt>
         <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/leonardo-ai/" style="color:#0D9488">Leonardo.ai</a> — 150 free credits per day, custom model training, no watermark on free plan. Best free-tier image generator available.</dd>
         <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Video Tool</dt>
@@ -7820,7 +7820,7 @@ ${items}
         <li><a href="${SITE}/compare/cursor-vs-github-copilot/" style="color:#0D9488">Cursor vs GitHub Copilot — AI Code Editor Comparison</a></li>
         <li><a href="${SITE}/compare/podcastle-vs-descript/" style="color:#0D9488">Podcastle vs Descript — AI Podcast Tool Comparison</a></li>
         <li><a href="${SITE}/compare/chatgpt-vs-claude/" style="color:#0D9488">ChatGPT vs Claude — Which AI Assistant Wins in 2026?</a></li>
-        <li><a href="${SITE}/compare/" style="color:#0D9488">View all 28 AI tool comparisons →</a></li>
+        <li><a href="${SITE}/compare/" style="color:#0D9488">View all ${COMPARE_ARTICLES.length} AI tool comparisons →</a></li>
       </ul>
     </section>
 
@@ -7881,7 +7881,7 @@ ${items}
         <li><a href="${SITE}/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/" style="color:#0D9488">ChatGPT Atlas vs Comet vs Dia — Which AI Browser in 2026?</a></li>
         <li><a href="${SITE}/blog/best-ai-voice-for-faceless-youtube-channels/" style="color:#0D9488">Best AI Voice for Faceless YouTube Channels 2026</a></li>
         <li><a href="${SITE}/blog/best-podcastle-alternatives/" style="color:#0D9488">Best Podcastle Alternatives 2026 — Descript vs Riverside</a></li>
-        <li><a href="${SITE}/blog/" style="color:#0D9488">View all 55 AI research articles →</a></li>
+        <li><a href="${SITE}/blog/" style="color:#0D9488">View all ${BLOG_POSTS.length} AI research articles →</a></li>
       </ul>
       <p style="font-size:.875rem;color:#666">
         Research cites sources including <a href="https://www.g2.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">G2</a>,
