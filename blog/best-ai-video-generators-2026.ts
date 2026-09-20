@@ -186,6 +186,14 @@ const post: BlogPost = {
   <a href="https://pika.art" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pika →</a>
 </div>
 
+<h3>Also worth considering: PixVerse</h3>
+<p><a href="${AFFILIATE_LINKS['pixverse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">PixVerse</a> sits in the same lane as Pika: fast, template-driven, stylized clips rather than cinematic realism. Its V6 model added native audio and 20+ camera-control presets, and it handles multi-character lip-sync in one pass, which Pika does not offer today.</p>
+<p>Pricing is credit-based across five tiers: Free (90 signup credits plus 60 that refresh daily, watermarked output), Standard at $10/month, Pro at $30/month, Premium at $60/month, and Ultra at $249/month for heavy daily use. That undercuts Pika and Runway at the entry tiers, though the free plan's daily credits expire if unused, so they don't bank up the way Kling's do.</p>
+<p>Same trade-off as Pika: strong for short, stylized social clips, weaker than Veo 3.1 or Kling 3.0 on complex physics and longer narrative sequences.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['pixverse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PixVerse →</a>
+</div>
+
 <h2>#5 Luma Dream Machine — Best Multi-Model Bundle</h2>
 <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #5 Luma Dream Machine — Best Multi-Model Bundle" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Luma's pitch is different from the other four. Rather than competing purely on its own Ray3 model, Luma Agents bundles access to Ray3 and Ray3.14 (Luma's HDR-capable tier). It also bundles third-party models, including Veo 3.1, Kling 3.0, Seedance 2.0, and ElevenLabs audio. All of it draws from one credit pool starting at roughly $30/month for the Plus plan.</p>

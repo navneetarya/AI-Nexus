@@ -39,6 +39,7 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   tidio: 'https://www.tidio.com/?via=ainexus',
   juicebox: 'https://juicebox.ai/?via=c6add3',
   vidiq: 'https://vidiq.com?via=ainexus',
+  pixverse: 'https://motivaiprivatelimited.sjv.io/0GKm6Y', // Impact — added Sep 2026, no dedicated tool page yet
 };
 
 const TOOL_LINKS: Record<string, string> = Object.fromEntries(

@@ -212,6 +212,7 @@ const post: BlogPost = {
   <li><strong>Social media manager, multiple clients:</strong> Ocoya (captions + scheduling) + Opus Clip (video) = $34/month</li>
   <li><strong>Faceless content creator:</strong> InVideo AI (video production) + Leonardo.ai (thumbnails) = $20/month</li>
   <li><strong>Repurposing existing long-form content:</strong> Opus Clip only = free for moderate volume</li>
+  <li><strong>Fast, stylized short clips (TikTok/Reels):</strong> <a href="${AFFILIATE_LINKS['pixverse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">PixVerse</a> = Free–$10/month</li>
 </ul>
 <p>The single highest-ROI tool for most social media managers is Ocoya. It eliminates the most painful part of the job (writing captions for each platform separately) and adds scheduling on top. Start there, then layer in video tools as your content strategy expands into short-form video.</p>
 
