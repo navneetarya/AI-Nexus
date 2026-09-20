@@ -260,6 +260,15 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
     "keyword": "india seo strategy",
     "publishDate": "July 2026",
     "winnerName": "India-Targeted SEO Strategy"
+  },
+  {
+    "slug": "creao-ai-vs-flowith",
+    "title": "CREAO vs Flowith (2026): Agent Builder or Agent Workspace?",
+    "seoTitle": "CREAO vs Flowith 2026 — Which AI Agent Tool?",
+    "metaDescription": "CREAO vs Flowith compared for 2026: a no-code agent builder against an infinite-canvas AI workspace. Real pricing, credit costs, and which one fits your work.",
+    "keyword": "creao vs flowith",
+    "publishDate": "September 2026",
+    "winnerName": "Flowith"
   }
 ] as CompareArticleMeta[];
 

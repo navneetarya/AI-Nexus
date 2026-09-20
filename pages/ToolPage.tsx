@@ -1354,6 +1354,8 @@ const TOOL_COMPARE_MAP: Record<string, string[]> = {
   'leonardo-ai': ['leonardo-vs-midjourney'],
   replit:        ['replit-vs-github-copilot'],
   taskade:       ['taskade-vs-notion', 'taskade-vs-asana'],
+  'creao-ai':    ['creao-ai-vs-flowith'],
+  flowith:       ['creao-ai-vs-flowith'],
 };
 
 interface ToolPageProps { tool: Tool; navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
