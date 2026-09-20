@@ -7867,7 +7867,7 @@ ${items}
       </blockquote>
       <p style="font-size:.875rem;color:#666">
         For the full breakdown behind these recommendations, see our <a href="${SITE}/methodology/" style="color:#0D9488">evaluation methodology</a> or
-        <a href="${SITE}/" style="color:#0D9488">browse all 33 independently reviewed AI tools →</a>.
+        <a href="${SITE}/" style="color:#0D9488">browse all ${TOOLS.length} researched AI tools →</a>.
       </p>
     </section>
 
