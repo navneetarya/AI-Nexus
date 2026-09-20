@@ -7,6 +7,7 @@
 // Word count: ~2,200 words
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'claude-code-vs-github-copilot-vs-replit-2026',
@@ -206,6 +207,10 @@ const post: BlogPost = {
 <p>There's no terminal, no local environment setup, and no IDE configuration. You can go from "I want a tool that scrapes product prices from three websites" to a running script in under 20 minutes, with no prior coding experience.</p>
 <p><strong>Replit's limitations:</strong> the AI features are less powerful than Claude Code for complex existing codebases, and the free plan limits you to public projects and slower compute.</p>
 <p>For serious professional development, Replit's browser-based environment introduces friction that local development does not have. But for the "I need to build something and I'm not a developer" use case, it is the strongest option in the market. It also shares some DNA with vibe coding tools — see how it compares in the <a href="/blog/best-vibe-coding-tools-2026/" style="color:rgb(13,148,136);">Lovable vs Bolt vs v0 comparison</a>.</p>
+<p>Of that group, <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">Lovable</a> is the closest direct alternative to Replit for non-developers, building a full-stack app with database and auth from a plain-language description rather than a general-purpose coding environment.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lovable Free →</a>
+</div>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Pros:</strong> zero local setup, generous free tier, most accessible for non-developers</li>
   <li><strong>Cons:</strong> less powerful for complex existing codebases, free tier compute is slower</li>

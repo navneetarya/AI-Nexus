@@ -1,4 +1,5 @@
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
 // Google Veo (Gemini)  : No affiliate — Google direct (gemini.google.com)
@@ -301,6 +302,10 @@ const post: BlogPost = {
 <h3>Skip these tools if you need a faceless-video pipeline</h3>
 <p>None of the five tools in this guide are built for the script-to-finished-video workflow that faceless YouTube channels typically need. That workflow needs narration, captions, and stock-footage assembly in one pass.</p>
 <p>For that use case, see our existing coverage of <a href="/blog/best-invideo-alternatives-2026/">InVideo alternatives</a> and the wider <a href="/blog/best-ai-tools-for-youtube-creators-2026/">AI tools for YouTube creators guide</a>. Both cover script-to-video and repurposing tools, rather than raw generation models.</p>
+<p><a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">InVideo AI</a> is the most direct fit for that gap — it generates a complete faceless video from a text prompt, script, stock footage, AI voiceover, and captions included, in one pass.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI →</a>
+</div>
 
 <div style="margin:14px 0 24px;">
   <a href="https://runwayml.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Runway →</a>

@@ -8,6 +8,7 @@
 // Word count: ~2,000 words | Published: 2026-05-25 | Author: Navneet Arya
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'cursor-ai-review-2026',
@@ -337,6 +338,10 @@ const post: BlogPost = {
 <p>Students who qualify for GitHub Copilot free through GitHub Education get far more free completions than Cursor's free plan gives. And if your team leans hard on GitHub's built-in tools (Actions, Issues, PR review), Copilot's tight GitHub links may matter more than Cursor's standalone strengths.</p>
 
 <p>For coders building with vibe coding tools like Lovable or Bolt, Cursor fills the gaps those platforms can't handle. That means custom business logic, API hookups, and complex state that need a real editor, not just a chat box.</p>
+<p>If you haven't started yet and want the vibe-coding route instead of a traditional editor, <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">Lovable</a> builds the initial full-stack app, database and auth included, from a plain-language description.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lovable Free →</a>
+</div>
 <p>See the <a href="/blog/best-vibe-coding-tools-2026/" style="color:#6366f1;">Best Vibe Coding Tools 2026 comparison</a> for context on where Cursor fits in that stack.</p>
 
 <h2 id="alternatives">Alternatives to Cursor</h2>
