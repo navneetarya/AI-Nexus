@@ -258,8 +258,10 @@ import post96 from './best-ai-dubbing-tools-2026';
 // Target keyword: "best ai transcription software 2026" — Transkriptor, Otter.ai, Descript, Fireflies, Rev
 // Affiliates: Transkriptor (Impact) + Descript + Fireflies.ai (all active) — Otter.ai + Rev linked direct
 import post97 from './best-ai-transcription-software-2026';
+import post98 from './best-ai-spreadsheet-tools-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post98, // Sep 20 — Best AI Spreadsheet Tools 2026 (PopAi Sheets, Numerous.ai, Coefficient, Copilot, Gemini) — pinned first for freshness
   post97, // Sep 20 — Best AI Transcription Software 2026 (Transkriptor, Otter.ai, Descript, Fireflies, Rev) — pinned first for freshness
   post96, // Sep 18 — Best AI Dubbing Tools 2026 (ElevenLabs, HeyGen, Rask AI, Synthesia, Dubverse) — pinned first for freshness
   post95, // Sep 16 — Murf AI Pricing: What Each Plan Actually Buys You (2026) — pinned first for freshness

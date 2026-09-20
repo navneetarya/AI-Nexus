@@ -21,6 +21,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-spreadsheet-tools-2026",
+    "title": "Best AI Spreadsheet Tools 2026: PopAi Sheets vs Numerous.ai vs Coefficient vs Copilot vs Gemini",
+    "seoTitle": "Best AI Spreadsheet Tools 2026: 5 Tools Compared",
+    "metaDescription": "Best AI spreadsheet tools 2026 compared: PopAi Sheets, Numerous.ai, Coefficient, Microsoft Copilot in Excel, and Gemini in Google Sheets — pricing, what each one actually does, and which fits your workflow.",
+    "datePublished": "2026-09-20",
+    "dateModified": "2026-09-20",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "10 min read",
+    "ogImage": "https://ainexustools.online/og-tool-review.webp",
+    "excerpt": "\"AI spreadsheet tool\" covers at least three unrelated jobs in 2026: turning messy PDFs and receipts into structured tables, running an AI formula inside a single cell across thousands of rows, and pulling live data from other business tools straight into a sheet. PopAi Sheets, Numerous.ai, Coefficient, Microsoft Copilot in Excel, and Gemini in Google Sheets each solve a different one. Here is which fits which job, with real 2026 pricing."
+  },
+  {
     "slug": "best-ai-transcription-software-2026",
     "title": "Best AI Transcription Software 2026: Transkriptor vs Otter.ai vs Descript vs Fireflies vs Rev",
     "seoTitle": "Best AI Transcription Software 2026: 5 Tools Compared",
