@@ -249,6 +249,20 @@ const post: BlogPost = {
       <td style="padding:10px 12px;">Gentle</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
+      <td style="padding:10px 12px;font-weight:600;color:#0D9488;">Gumloop</td>
+      <td style="padding:10px 12px;">Credits (per pipeline step)</td>
+      <td style="padding:10px 12px;">1,000 credits/mo, 1 seat</td>
+      <td style="padding:10px 12px;">~$97/mo Starter, 30,000 credits</td>
+      <td style="padding:10px 12px;">Moderate</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
+      <td style="padding:10px 12px;font-weight:600;color:#0D9488;">Pipedream</td>
+      <td style="padding:10px 12px;">Credits (per execution)</td>
+      <td style="padding:10px 12px;">100 credits/mo, 3 workflows</td>
+      <td style="padding:10px 12px;">$29/mo Basic, 2,000 credits</td>
+      <td style="padding:10px 12px;">Steepest</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 12px;font-weight:600;color:#0D9488;">Relevance AI</td>
       <td style="padding:10px 12px;">Credits (per Tool/Agent run)</td>
       <td style="padding:10px 12px;">100 credits/day</td>
@@ -258,7 +272,7 @@ const post: BlogPost = {
   </tbody>
 </table>
 </div>
-<p>The pattern that holds across most platforms here: task-based and credit-based billing (Zapier, Lindy, Bardeen, Relevance AI, CREAO, Flowith) is the easiest to understand up front. It's also the most punishing once a workflow involves several AI steps in sequence, since each step typically consumes a full unit of billing.</p>
+<p>The pattern that holds across most platforms here: task-based and credit-based billing (Zapier, Lindy, Bardeen, Gumloop, Pipedream, Relevance AI, CREAO, Flowith) is the easiest to understand up front. It's also the most punishing once a workflow involves several AI steps in sequence, since each step typically consumes a full unit of billing.</p>
 <p>Operation-based billing (Make) and execution-based billing (n8n) tend to stay cheaper as complexity grows. A multi-step internal process can still count as a small number of billed units. Self-hosted, free options (Activepieces, n8n Community Edition) remove the billing question entirely, in exchange for taking on the server-maintenance work yourself.</p>
 
 <h2>Decision Guide: Matching Platform to Use Case &amp; Technical Level</h2>

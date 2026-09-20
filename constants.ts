@@ -2234,7 +2234,7 @@ export const TOOLS: Tool[] = [
     notForYou: 'Teams with genuinely variable monthly volume — a 50-hour month and a 3-hour month cost the same under a fixed subscription, so a pay-per-hour service works out cheaper. Also reconsider if your recordings are consistently multi-speaker with overlapping dialogue, where correction time can cancel out the time saved.',
     lastTestedISO: '2026-09-18',
     researchSources: {
-      trustpilot: { rating: 4.6, count: 1807, url: 'https://www.trustpilot.com/review/transkriptor.com' },
+      trustpilot: { rating: 4.5, count: 1510, url: 'https://www.trustpilot.com/review/transkriptor.com' },
       reddit: 'Mixed — praised for speed and language coverage, criticised for editor friction',
       lastVerified: '2026-09-18',
     },
@@ -2246,6 +2246,7 @@ export const TOOLS: Tool[] = [
     ],
     updateLog: [
       { date: 'September 2026', note: 'Page created. Pricing tiers and language claims verified against Transkriptor\'s published pricing page and independent review aggregators.' },
+      { date: 'September 2026', note: 'Trustpilot score re-checked and corrected from 4.6/1,807 to 4.5/1,510 to match the live listing.' },
     ],
     reviewType: 'research-based',
   },
