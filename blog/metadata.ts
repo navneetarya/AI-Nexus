@@ -30,7 +30,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "author": "Navneet Arya",
     "category": "Productivity",
     "readTime": "10 min read",
-    "ogImage": "https://ainexustools.online/og-tool-review.webp",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-spreadsheet-tools-2026.webp",
     "excerpt": "\"AI spreadsheet tool\" covers at least three unrelated jobs in 2026: turning messy PDFs and receipts into structured tables, running an AI formula inside a single cell across thousands of rows, and pulling live data from other business tools straight into a sheet. PopAi Sheets, Numerous.ai, Coefficient, Microsoft Copilot in Excel, and Gemini in Google Sheets each solve a different one. Here is which fits which job, with real 2026 pricing."
   },
   {
@@ -43,7 +43,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "author": "Navneet Arya",
     "category": "Audio",
     "readTime": "11 min read",
-    "ogImage": "https://ainexustools.online/og-tool-review.webp",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-transcription-software-2026.webp",
     "excerpt": "\"AI transcription\" now covers five genuinely different jobs — live meeting notes, text-based video editing, CRM-connected call recording, 100+ language file transcription, and human-verified legal accuracy. Transkriptor, Otter.ai, Descript, Fireflies.ai, and Rev each own one of those jobs. Here is which one actually fits yours, with real 2026 pricing."
   },
   {

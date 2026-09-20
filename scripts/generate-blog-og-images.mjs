@@ -27,6 +27,10 @@ fs.mkdirSync(OUT, { recursive: true });
 // ── Accent colours by content category ───────────────────────────────────────
 function accentColor(slug, title) {
   const t = (slug + title).toLowerCase();
+  if (t.includes('transcription') || t.includes('transkriptor'))
+    return { hex: '#EC4899', r: 236, g: 72,  b: 153 }; // pink  — Transcription (audio family)
+  if (t.includes('spreadsheet') || t.includes('excel'))
+    return { hex: '#14B8A6', r: 20,  g: 184, b: 166 }; // teal  — Spreadsheet/Productivity
   if (t.includes('podcast') || t.includes('audio') || t.includes('voice') || t.includes('podcastle') || t.includes('descript') || t.includes('elevenlabs') || t.includes('murf') || t.includes('music') || t.includes('suno') || t.includes('udio') || t.includes('speech') || t.includes('tts'))
     return { hex: '#EC4899', r: 236, g: 72,  b: 153 }; // pink  — Audio
   if (t.includes('video') || t.includes('invideo') || t.includes('pictory') || t.includes('opus') || t.includes('youtube') || t.includes('youtuber'))
@@ -67,6 +71,8 @@ function wrapText(text, maxChars = 36) {
 // ── Determine category label ──────────────────────────────────────────────────
 function categoryLabel(slug, title) {
   const t = (slug + title).toLowerCase();
+  if (t.includes('transcription') || t.includes('transkriptor'))              return 'AI Transcription';
+  if (t.includes('spreadsheet') || t.includes('excel'))                       return 'Productivity';
   if (t.includes('podcast') || t.includes('audio') || t.includes('voice') || t.includes('podcastle') || t.includes('descript') || t.includes('elevenlabs') || t.includes('murf') || t.includes('music') || t.includes('suno') || t.includes('udio') || t.includes('speech') || t.includes('tts'))   return 'Audio & Podcast';
   if (t.includes('video') || t.includes('youtube') || t.includes('youtuber')) return 'AI Video';
   if (t.includes('email'))                                                      return 'Email Marketing';
@@ -183,6 +189,9 @@ function escSvg(s) {
 
 // ── Blog posts to generate ────────────────────────────────────────────────────
 const POSTS = [
+  // ── Step D (Phase 1 affiliate plan), Sep 2026 ──
+  { slug: 'best-ai-transcription-software-2026',       title: 'Best AI Transcription Software 2026' },
+  { slug: 'best-ai-spreadsheet-tools-2026',            title: 'Best AI Spreadsheet Tools Compared 2026' },
   { slug: 'gamma-ai-review-2026',                        title: 'Gamma AI Review 2026' },
   { slug: 'best-ai-voice-generators-for-voiceovers-2026', title: 'Best AI Voice Generators for Voiceovers' },
   { slug: 'best-ai-voice-generators-for-podcasts-2026', title: 'Best AI Voice Generators for Podcasts' },

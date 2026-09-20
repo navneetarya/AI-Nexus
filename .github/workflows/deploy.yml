@@ -148,7 +148,7 @@ jobs:
             fi
           done
 
-          for slug in rytr-vs-writesonic grammarly-vs-quillbot podcastle-vs-descript; do
+          for slug in rytr-vs-writesonic grammarly-vs-quillbot podcastle-vs-descript creao-ai-vs-flowith; do
             if [ ! -f "dist/compare/$slug/index.html" ]; then
               echo "❌ Missing: dist/compare/$slug/index.html"
               MISSING=$((MISSING+1))

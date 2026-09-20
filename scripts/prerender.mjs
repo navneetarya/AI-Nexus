@@ -1231,6 +1231,23 @@ const TOOL_FAQS = {
 
 // ── Compare articles ──────────────────────────────────────────────────────────
 const COMPARE_ARTICLES = [
+  // —— Sep 20: CREAO vs Flowith — Step D of Phase 1 affiliate plan. Both tools are
+  // Impact affiliates with dedicated tool pages, so the slug resolves to real
+  // TOOLS entries ('creao-ai', 'flowith') for compare Product schema. ——
+  {
+    slug: 'creao-ai-vs-flowith',
+    title: 'CREAO vs Flowith (2026): Agent Builder or Agent Workspace?',
+    seoTitle: 'CREAO vs Flowith 2026 — Which AI Agent Tool?',
+    metaDescription: 'CREAO vs Flowith compared for 2026: a no-code agent builder against an infinite-canvas AI workspace. Real pricing, credit costs, and which one fits your work.',
+    faqs: [
+      { q: 'What is the difference between CREAO and Flowith?', a: 'CREAO is a no-code agent builder: you describe a repeatable task in plain language, it writes and runs the code in a sandbox, and you save the result as an agent you can re-run or schedule. Flowith is an infinite-canvas AI workspace where every prompt and reply is a node you can branch and compare, built for long exploratory projects rather than repeated ones. CREAO is for work you will do again; Flowith is for work you are thinking through once.' },
+      { q: 'Is CREAO or Flowith cheaper?', a: 'The entry paid tiers are effectively identical — CREAO Pro is $20/month (about $16 annually) and Flowith Pro is $19.90/month (about $17.91 annually). The free tiers differ more than the paid ones: CREAO gives daily bonus credits that keep refreshing, while Flowith\'s starter credits are one-time and do not renew. For open-ended free evaluation, CREAO costs less.' },
+      { q: 'Does Flowith have a free plan?', a: 'Flowith has a free Starter tier, but the credits are granted once rather than monthly, so it works as an extended trial rather than a permanently usable plan. Pro at $19.90/month is the first tier suited to regular use, and Ultimate at $49.90/month takes designated top models off the credit meter for heavier workloads.' },
+      { q: 'Can CREAO agents run on a schedule?', a: 'Yes — scheduled and recurring runs are a core part of the product, which is the main reason to choose it over a chat-based tool. A saved agent can run automatically for recurring reports and briefings without anyone triggering it manually. Credit allowances still apply, so heavier scheduled tasks draw down the monthly pool faster.' },
+      { q: 'Are CREAO and Flowith safe for business-critical work in 2026?', a: 'Both are early-stage relative to established tools, with thin independent review coverage, and neither publishes compliance certifications such as HIPAA on its public site. That makes them reasonable for individuals and small teams automating their own work, and a poor fit for regulated data or workflows a business cannot afford to have fail. Evaluate on a non-critical task first.' },
+      { q: 'Which is better for a solo founder?', a: 'It depends on the bottleneck. If the same job eats an hour every week — a report, a data pull, a briefing — CREAO turns it into a scheduled agent and pays back from the second run. If the bottleneck is one large project needing research, comparison and revision, Flowith\'s canvas and persistent Knowledge Garden context handle that better than a linear chat.' },
+    ],
+  },
   {
     slug: 'rytr-vs-writesonic',
     title: 'Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?',
@@ -1795,8 +1812,9 @@ const CATEGORY_OG_MAP = {
 // resolveOgImage() checks this map first before falling through to category images.
 // To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
 const BLOG_OG_MAP = {
-  // Step D (Phase 1 plan): Best AI Transcription Software 2026 — no dedicated OG image yet, fallback
-  'best-ai-transcription-software-2026': `${SITE}/og-tool-review.webp`,
+  // Step D (Phase 1 plan): dedicated OG images generated via scripts/generate-blog-og-images.mjs
+  'best-ai-spreadsheet-tools-2026': `${SITE}/og/blog/best-ai-spreadsheet-tools-2026.webp`,
+  'best-ai-transcription-software-2026': `${SITE}/og/blog/best-ai-transcription-software-2026.webp`,
   'best-ai-dubbing-tools-2026': `${SITE}/og/blog/best-ai-dubbing-tools-2026.webp`,
   'how-to-beat-ats-resume-screening-2026': `${SITE}/og-compare.webp`,
   'gamma-ai-review-2026': `${SITE}/og/blog/gamma-ai-review-2026.webp`,
@@ -2544,7 +2562,9 @@ function faqSchema(faqs) {
 // IMPORTANT: Every entry here must match the slug and metadata in blog/*.ts
 // When adding new blog posts, add them here AND in blog/index.ts
 const BLOG_POSTS = [
-  // ── Sep 20: Best AI Spreadsheet Tools 2026 — PopAi Sheets pillar/money page ──
+  // —— Sep 20: Best AI Spreadsheet Tools 2026 — Step D of Phase 1 affiliate plan; PopAi Sheets's
+  // dedicated pillar/money page. Numerous.ai, Coefficient, Copilot in Excel and Gemini in Sheets
+  // have no affiliate program here — linked direct. ——
   {
     slug: 'best-ai-spreadsheet-tools-2026',
     title: 'Best AI Spreadsheet Tools 2026: PopAi Sheets vs Numerous.ai vs Coefficient vs Copilot vs Gemini',
@@ -2553,19 +2573,45 @@ const BLOG_POSTS = [
     datePublished: '2026-09-20',
     dateModified: '2026-09-20',
     readTimeMinutes: 10,
-    wordCount: 2400,
-    ogImage: 'https://ainexustools.online/og-tool-review.webp',
+    ogImage: 'https://ainexustools.online/og/blog/best-ai-spreadsheet-tools-2026.webp',
     quickAnswer: 'Best AI spreadsheet tools 2026: PopAi Sheets (free tier + paid plans) wins for turning messy PDFs, receipts, and CSVs into structured tables, for Excel and Google Sheets. Numerous.ai (from $8/month annual) wins for AI-powered formulas you drop into a cell and drag down thousands of rows. Coefficient (free + from $49/month) wins for pulling live data from CRMs, ad platforms, and databases straight into a sheet. Microsoft Copilot in Excel (~$30/user/month as a Microsoft 365 add-on) wins if you live in Excel and want AI without leaving it. Gemini in Google Sheets (included with Google Workspace) wins if your team is already on Google Workspace and wants AI at no extra line-item cost.',
     faqs: [
-      { q: 'What is the best free AI spreadsheet tool in 2026?', a: 'Gemini in Google Sheets has the lowest real cost if your team already pays for Google Workspace, since it is included rather than billed as a separate line item. For a standalone free tier with no existing subscription required, PopAi Sheets and Coefficient both offer usable free plans for testing - PopAi Sheets for document extraction, Coefficient for pulling in a limited amount of live business data. Numerous.ai\'s free tier is thin, and Microsoft Copilot in Excel has no free tier.' },
-      { q: 'Is PopAi Sheets actually hallucination-free, as it claims?', a: 'PopAi markets its extraction as 100% hallucination-free, but that is a vendor claim, not an independently verified result. Treat it as marketing language and spot-check extracted figures against the source document, particularly for financial data.' },
-      { q: 'Numerous.ai vs Coefficient - which is better?', a: 'They solve different problems. Numerous.ai puts an AI function inside individual spreadsheet cells for tasks such as classifying rows. Coefficient connects your spreadsheet to live data from CRMs, ad platforms, and databases. Use Numerous.ai for analyzing data you already have and Coefficient for keeping source data current.' },
-      { q: 'Do I need a separate AI spreadsheet tool if I already have Microsoft Copilot or Gemini?', a: 'Usually not for everyday formula help, summarizing a table, or building a pivot. A separate tool becomes worthwhile for a specific job the native assistant does not handle: PopAi Sheets for document extraction, Numerous.ai for purpose-built AI functions across many rows, or Coefficient for automated data connections.' },
-      { q: 'Can AI spreadsheet tools work with both Excel and Google Sheets?', a: 'PopAi Sheets, Numerous.ai, and Coefficient work across both Excel and Google Sheets. Microsoft Copilot in Excel and Gemini in Google Sheets are each locked to their respective ecosystems.' },
-      { q: 'How much does Numerous.ai cost per month?', a: 'Numerous.ai\'s Personal plan runs $8 per month on annual billing, or $19 per month billed monthly, for roughly 1 million characters of AI processing a month.' },
-      { q: 'What does Coefficient cost, and what does the free plan include?', a: 'Coefficient has a free plan covering limited data connections and refreshes. Paid plans start at $49 per month for more connectors, more frequent automatic refreshes, and team-sharing features.' },
-      { q: 'Is Microsoft Copilot in Excel worth the extra cost?', a: 'It depends on how much of your day already runs through Excel. Copilot in Excel costs roughly $30 per user per month on top of an existing Microsoft 365 subscription. For occasional spreadsheet work, free tools or Gemini in an existing Workspace subscription cover most of the same ground.' },
-      { q: 'Does Gemini in Google Sheets cost extra on top of Google Workspace?', a: 'No. Gemini\'s spreadsheet features are included with a standard Google Workspace subscription rather than billed as a separate add-on.' },
+      {
+        q: 'What is the best free AI spreadsheet tool in 2026?',
+        a: 'Gemini in Google Sheets has the lowest real cost if your team already pays for Google Workspace, since it\'s included rather than billed as a separate line item. For a standalone free tier with no existing subscription required, PopAi Sheets and Coefficient both offer usable free plans for testing — PopAi Sheets for document extraction, Coefficient for pulling in a limited amount of live business data. Numerous.ai\'s free tier is thin (roughly 60 tokens, enough to test but not to run a real workflow), and Microsoft Copilot in Excel has no free tier at all — it requires an existing Microsoft 365 subscription plus the Copilot add-on.',
+      },
+      {
+        q: 'Is PopAi Sheets actually hallucination-free, as it claims?',
+        a: 'PopAi markets its extraction as "100% hallucination-free," but that is a vendor claim, not an independently verified result — no current AI system can guarantee zero errors on arbitrary documents. Treat it as marketing language and spot-check extracted figures against the source document, particularly for financial data, where a single misread number carries real consequences. The extraction quality is still genuinely useful; the claim of perfection is the part to be skeptical of, not the tool itself.',
+      },
+      {
+        q: 'Numerous.ai vs Coefficient — which is better?',
+        a: 'They solve different problems entirely. Numerous.ai puts an AI function inside individual spreadsheet cells — write =AI("classify this review") next to a row, drag it down, and every row gets processed. It has no ability to pull in outside data on its own. Coefficient does the opposite: it connects your spreadsheet to live data from CRMs like Salesforce or HubSpot, ad platforms, and databases, refreshing automatically, but it doesn\'t offer row-by-row AI classification or generation the way Numerous.ai does. If your problem is analyzing or tagging data you already have, use Numerous.ai. If your problem is getting current data into the sheet in the first place, use Coefficient.',
+      },
+      {
+        q: 'Do I need a separate AI spreadsheet tool if I already have Microsoft Copilot or Gemini?',
+        a: 'Usually not for everyday formula help, summarizing a table, or building a pivot — that\'s exactly what Copilot in Excel and Gemini in Sheets are built for, and both read the structure of your existing sheet well. A separate tool becomes worth paying for only for a specific job the native assistant doesn\'t do: PopAi Sheets for turning documents into structured tables in the first place, Numerous.ai for a purpose-built AI function you can drag across thousands of rows without prompting each one individually, or Coefficient for automated, refreshing data connections from outside business tools.',
+      },
+      {
+        q: 'Can AI spreadsheet tools work with both Excel and Google Sheets?',
+        a: 'PopAi Sheets, Numerous.ai, and Coefficient all work across both Excel and Google Sheets, which matters for any team split between the two. Microsoft Copilot in Excel and Gemini in Google Sheets are each locked to their own ecosystem by design — Copilot requires Microsoft 365, and Gemini requires Google Workspace — since both are native features of their respective suites rather than standalone add-ins.',
+      },
+      {
+        q: 'How much does Numerous.ai cost per month?',
+        a: 'Numerous.ai\'s Personal plan runs $8/month on annual billing, or $19/month billed monthly, for roughly 1 million characters of AI processing a month — both the text you send and the answer that comes back count toward that limit. A typical row (a 100-character prompt plus a 400-character answer) uses about 500 characters, which works out to roughly 2,000 processed rows a month on the Personal plan before you\'d need a higher tier.',
+      },
+      {
+        q: 'What does Coefficient cost, and what does the free plan include?',
+        a: 'Coefficient has a free plan covering a limited number of data connections and refreshes, enough to test whether the live-data workflow fits your process. Paid plans start at $49/month for more connectors, more frequent automatic refreshes, and team-sharing features. Pricing scales with the number of external data sources (CRM, ad platforms, databases) you connect and how often each one refreshes.',
+      },
+      {
+        q: 'Is Microsoft Copilot in Excel worth the extra cost?',
+        a: 'It depends on how much of your day already runs through Excel. Copilot in Excel is billed as part of the Microsoft 365 Copilot add-on, at roughly $30/user/month on top of an existing Microsoft 365 subscription — a meaningful per-seat cost for a team. For someone who spends significant time each week writing formulas, summarizing tables, or building pivots inside Excel specifically, it removes real friction. For occasional spreadsheet work, a free tool like PopAi Sheets\'s free tier or Google\'s Gemini (if already on Workspace) covers most of the same ground without the added subscription cost.',
+      },
+      {
+        q: 'Does Gemini in Google Sheets cost extra on top of Google Workspace?',
+        a: 'No — Gemini\'s spreadsheet features are included with a standard Google Workspace subscription rather than billed as a separate add-on, unlike Microsoft\'s approach with Copilot. That makes it the lowest-friction native option for any team already paying for Google Workspace, since there\'s no additional line item to justify or budget for separately.',
+      },
     ],
     mentionedTools: ['popai-sheets'],
   },
@@ -2579,7 +2625,7 @@ const BLOG_POSTS = [
     datePublished: '2026-09-20',
     dateModified: '2026-09-20',
     readTimeMinutes: 11,
-    ogImage: 'https://ainexustools.online/og-tool-review.webp',
+    ogImage: 'https://ainexustools.online/og/blog/best-ai-transcription-software-2026.webp',
     quickAnswer: 'Best AI transcription software 2026: Transkriptor (free trial, from $9.99/month) wins for transcribing audio/video files and live Zoom, Teams and Meet calls across 100+ languages. Otter.ai (free 300 min/month, from $8.33/month annual) wins for live, in-meeting notes with real-time captions. Descript (free, from $16/month annual) wins if you need to edit the recording itself, not just get a transcript. Fireflies.ai (free, from $10/month) wins for CRM-connected meeting recording with automatic action items. Rev (free 45 min/month AI, human transcription from $1.99/minute) wins when 99%+ accuracy for a legal or compliance record matters more than speed or price.',
     faqs: [
       { q: 'What is the most accurate AI transcription software in 2026?', a: 'On clean, single-speaker English audio, Transkriptor, Otter.ai, Descript, and Fireflies.ai all land in a similar high-90s percent accuracy range. Accuracy drops on every AI tool with overlapping speakers, background noise, and strong accents. Rev is the outlier: its human transcription tier, at $1.99/minute, is the only option here with a 99%+ guaranteed accuracy figure, because an actual person reviews the file.' },
@@ -5220,6 +5266,14 @@ const RELATED_LINKS = {
 // ── Task 5/6 Fix: Related links map for blog posts — links pillar posts to their
 // satellite/cluster posts (and vice versa) for internal authority distribution.
 const BLOG_RELATED_LINKS = {
+  // —— Sep 20: Best AI Spreadsheet Tools 2026 — links into the automation roundup (adjacent
+  // "get data moving without code" intent), the solopreneur stack, and PopAi Sheets' tool page ——
+  'best-ai-spreadsheet-tools-2026': [
+    ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
+    ['/blog/ai-tools-for-solopreneurs-2026/', 'AI Tools for Solopreneurs 2026'],
+    ['/tools/popai-sheets/', 'PopAi Sheets Review'],
+  ],
+
   // —— Sep 20: Best AI Transcription Software 2026 — links back to the meeting-tools comparison,
   // the voice-dictation post (adjacent audio-to-text intent), and Transkriptor's own tool page ——
   'best-ai-transcription-software-2026': [

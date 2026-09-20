@@ -72,6 +72,78 @@ export interface CompareRow {
 
 export const COMPARE_ARTICLES: CompareArticle[] = [
 
+  // ── creao-ai-vs-flowith ──────────────────────────────────────────────────
+  // Step D (Phase 1 affiliate plan) — both tools are Impact affiliates and both
+  // have dedicated tool pages (constants.ts: 'creao-ai', 'flowith'). Links go
+  // through AFFILIATE_LINKS[...] so the build's hardcoded-link check passes.
+  {
+    slug: 'creao-ai-vs-flowith',
+    title: 'CREAO vs Flowith (2026): Agent Builder or Agent Workspace?',
+    seoTitle: 'CREAO vs Flowith 2026 — Which AI Agent Tool?',
+    metaDescription: 'CREAO vs Flowith compared for 2026: a no-code agent builder against an infinite-canvas AI workspace. Real pricing, credit costs, and which one fits your work.',
+    keyword: 'creao vs flowith',
+    publishDate: 'September 2026',
+    lastUpdated: '2026-09-20',
+    quickAnswer: 'CREAO and Flowith solve different problems. CREAO (free, from $20/month) is a no-code agent builder — describe a repeatable task in plain language, it writes and runs the code, and you save the result as an agent anyone can re-run or schedule. Flowith (free starter credits, from $19.90/month) is an infinite-canvas AI workspace for exploratory, multi-step work you branch and compare rather than repeat. Pick CREAO to automate the same job weekly; pick Flowith to think through a sprawling project once.',
+    intro: `Both tools get filed under "AI agents", and that label hides the actual difference. CREAO is about repetition: you build something once and re-run it. Flowith is about exploration: you spread a project across a canvas, branch it, and compare directions side by side.\n\nThis comparison is research-based, drawn from each vendor's published pricing and documentation plus the available independent reviews — which are thin for both, so it deliberately makes fewer performance claims than a comparison of two mature tools would. Both pages were last verified in September 2026.`,
+    sections: [
+      {
+        heading: 'The real difference: repeatable vs exploratory',
+        content: `CREAO's core unit is a **saved agent**. You describe a task in plain language, CREAO writes and executes code in a sandbox, and once the output is right you save it as a reusable asset — one click to re-run, or put it on a schedule. The value shows up the second, fifth and fiftieth time you run it.\n\nFlowith's core unit is a **node on a canvas**. Every prompt and reply is a block you can branch from, so three approaches to the same problem sit next to each other instead of scrolling past each other in a chat log. Its agent, Neo, breaks a broad instruction into visible subtasks and works through them where you can inspect each step.\n\nThe question that separates them: will you run this task again next week? If yes, CREAO. If this is one large project you need to think your way through, Flowith.`,
+      },
+      {
+        heading: 'CREAO — describe a workflow, get an agent',
+        content: `CREAO runs entirely in the browser with no code required.\n\n**What it actually does:** Plain-language agent building, real code execution in a sandboxed environment, scheduled and recurring runs, third-party tool and API connections, and agents that can be shared across a team.\n\n**Pricing:** Free with no credit card and daily bonus credits — genuinely enough to build and test a first agent rather than a countdown trial. Pro is $20/month (about $16 billed annually) and is the cheapest business-usable tier. Higher tiers run to roughly $150/month for larger credit pools and more concurrency.\n\n**The honest cautions:** the public review base is very thin — roughly a dozen independent reviews on a single platform — so there is far less outside evidence here than for an established tool. Reviewers report multi-turn conversation handling gets confused on complex prompts, credit allowances on the entry paid tier run down quickly on heavier tasks, and parts of the builder are still visibly rough. No compliance certifications such as HIPAA are published on the public site.\n\n**Who it fits:** solo founders and small ops teams automating repeatable work — a weekly report, a recurring data pull, a scheduled briefing.`,
+      },
+      {
+        heading: 'Flowith — an infinite canvas instead of a chat box',
+        content: `Flowith replaces the linear chat window entirely.\n\n**What it actually does:** A branching infinite-canvas workspace, Agent Neo for long multi-step tasks, several frontier models available inside one workspace without separate subscriptions, and Knowledge Garden for reusable context that persists across projects instead of being re-pasted each session. Desktop and mobile apps ship alongside the web version.\n\n**Pricing:** Starter is free, but the credits are one-time rather than a renewing monthly allowance — worth knowing before you plan around it. Pro is $19.90/month (about $17.91 annually) and is the practical tier for a solo creator or researcher. Ultimate at $49.90/month takes designated top models off the credit meter and adds top-up packs for heavier video work. Infinite, at $499.90/month, is the studio and team tier.\n\n**The honest cautions:** credit-based pricing burns fast, and video generation in particular consumes credits quickly. The canvas has a real learning curve and is not self-explanatory on day one. Independent review volume is thin compared with mainstream AI tools, and Flowith is a broad generalist rather than a specialist at any single job.\n\n**Who it fits:** researchers, creators and power users running long, context-heavy, multi-step work where comparing directions matters more than repeating a process.`,
+      },
+      {
+        heading: 'Cost: two different meters',
+        content: `Headline prices are nearly identical — $20/month against $19.90/month — but the meters underneath behave differently.\n\n**CREAO** gives daily bonus credits on the free plan, so evaluation costs nothing and can run as long as you need. On Pro, a monthly credit allowance covers scheduled runs; heavier tasks draw it down faster than the tier suggests.\n\n**Flowith** gives one-time starter credits on the free plan. Once they are gone they do not refresh, so free-tier evaluation has a hard end. On paid tiers, credits are consumed per task and per model, and the heaviest formats — video especially — move the meter fastest.\n\nFor predictable monthly spend on a known, repeating workload, CREAO's model is easier to forecast. For variable exploratory work, Flowith's Ultimate tier, which takes designated models off the meter, is the more predictable option — at more than double the entry price.`,
+      },
+      {
+        heading: 'Where neither is the right answer',
+        content: `Both tools are early relative to the established AI stack, and both should be treated that way.\n\nIf you need compliance guarantees, audit trails, or a vendor with published certifications, neither qualifies today — CREAO publishes none, and Flowith's positioning is consumer and prosumer rather than enterprise.\n\nIf your automation need is a connector problem rather than a reasoning problem — move a row from a form into a CRM, post to Slack when a deal closes — a dedicated automation platform will be cheaper and more reliable than either. The **[best no-code AI automation tools](/blog/best-no-code-ai-automation-tools-2026/)** roundup covers that category properly.\n\nAnd if you want a straightforward chat assistant, both are more machinery than the job needs.`,
+      },
+    ],
+    verdict: `Choose CREAO if the task repeats. The payoff is a saved, schedulable agent, and the free tier with daily credits lets you prove the idea before paying anything. Go in expecting an early-stage product: thin outside evidence, rough edges in the builder, and credits that move faster than the tier implies. That is an acceptable trade for a small team automating their own work; it is not yet a safe default for business-critical workflows.\n\nChoose Flowith if the work is a sprawling one-off. The canvas earns its learning curve on projects where three directions need comparing at once, and having several frontier models plus persistent project context in one subscription is real value against paying for them separately. Budget for credit burn, and check the current allowances before subscribing — they change frequently.\n\nIf you are only trying one, Flowith is the safer first purchase: a clearer product with more of it finished, and an annual price under $18/month. CREAO is the better bet specifically when you already know which task you want running every Monday morning.`,
+    comparisonTable: [
+      { name: 'Flowith', price: 'Free credits + $19.90/mo', priceUSD: 'Free–$19.90', freeplan: true, aiContent: 'Canvas workspace, Agent Neo, multi-model', platforms: 'Web + desktop + mobile', bestFor: 'Long exploratory multi-step projects', ourPick: true },
+      { name: 'CREAO', price: 'Free + $20/mo', priceUSD: 'Free–$20', freeplan: true, aiContent: 'No-code agent builder, code execution', platforms: 'Web', bestFor: 'Automating repeatable tasks', ourPick: false },
+    ],
+    winnerSlug: 'flowith',
+    winnerName: 'Flowith',
+    winnerAffiliateLink: AFFILIATE_LINKS['flowith'],
+    winnerAffiliateText: 'Try Flowith free',
+    pricing: {
+      tools: [
+        { name: 'Flowith', free: true, startingPrice: '$0 (one-time credits)', paidFrom: '$19.90/mo', bestPlanFor: 'Researchers and creators running long projects', affiliateLink: AFFILIATE_LINKS['flowith'] },
+        { name: 'CREAO', free: true, startingPrice: '$0 (daily credits)', paidFrom: '$20/mo', bestPlanFor: 'Solo founders automating recurring tasks', affiliateLink: AFFILIATE_LINKS['creao-ai'] },
+      ],
+    },
+    faqs: [
+      { q: 'What is the difference between CREAO and Flowith?', a: 'CREAO is a no-code agent builder: you describe a repeatable task in plain language, it writes and runs the code in a sandbox, and you save the result as an agent you can re-run or schedule. Flowith is an infinite-canvas AI workspace where every prompt and reply is a node you can branch and compare, built for long exploratory projects rather than repeated ones. CREAO is for work you will do again; Flowith is for work you are thinking through once.' },
+      { q: 'Is CREAO or Flowith cheaper?', a: 'The entry paid tiers are effectively identical — CREAO Pro is $20/month (about $16 annually) and Flowith Pro is $19.90/month (about $17.91 annually). The free tiers differ more than the paid ones: CREAO gives daily bonus credits that keep refreshing, while Flowith\'s starter credits are one-time and do not renew. For open-ended free evaluation, CREAO costs less.' },
+      { q: 'Does Flowith have a free plan?', a: 'Flowith has a free Starter tier, but the credits are granted once rather than monthly, so it works as an extended trial rather than a permanently usable plan. Pro at $19.90/month is the first tier suited to regular use, and Ultimate at $49.90/month takes designated top models off the credit meter for heavier workloads.' },
+      { q: 'Can CREAO agents run on a schedule?', a: 'Yes — scheduled and recurring runs are a core part of the product, which is the main reason to choose it over a chat-based tool. A saved agent can run automatically for recurring reports and briefings without anyone triggering it manually. Credit allowances still apply, so heavier scheduled tasks draw down the monthly pool faster.' },
+      { q: 'Are CREAO and Flowith safe for business-critical work in 2026?', a: 'Both are early-stage relative to established tools, with thin independent review coverage, and neither publishes compliance certifications such as HIPAA on its public site. That makes them reasonable for individuals and small teams automating their own work, and a poor fit for regulated data or workflows a business cannot afford to have fail. Evaluate on a non-critical task first.' },
+      { q: 'Which is better for a solo founder?', a: 'It depends on the bottleneck. If the same job eats an hour every week — a report, a data pull, a briefing — CREAO turns it into a scheduled agent and pays back from the second run. If the bottleneck is one large project needing research, comparison and revision, Flowith\'s canvas and persistent Knowledge Garden context handle that better than a linear chat.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',            toolA: 'Yes (one-time credits)',      toolB: 'Yes (daily credits)',        winner: 'B' },
+      { feature: 'Paid pricing',          toolA: 'From $19.90/mo',              toolB: 'From $20/mo',                winner: 'tie' },
+      { feature: 'Core model',            toolA: 'Branching canvas workspace',  toolB: 'Saved reusable agents',      winner: 'tie' },
+      { feature: 'Scheduled runs',        toolA: 'No',                          toolB: 'Yes',                        winner: 'B' },
+      { feature: 'Multi-model access',    toolA: 'Several frontier models',     toolB: 'Not a stated feature',       winner: 'A' },
+      { feature: 'Persistent context',    toolA: 'Knowledge Garden',            toolB: 'Saved agents only',          winner: 'A' },
+      { feature: 'Apps beyond web',       toolA: 'Desktop + mobile',            toolB: 'Web only',                   winner: 'A' },
+      { feature: 'Learning curve',        toolA: 'Steep (canvas)',              toolB: 'Moderate (plain language)',  winner: 'B' },
+      { feature: 'Best for',              toolA: 'Exploratory one-off projects', toolB: 'Repeatable scheduled tasks', winner: 'tie' },
+    ],
+  },
+
   // ── rytr-vs-writesonic ───────────────────────────────────────────────────
   {
     slug: 'rytr-vs-writesonic',
