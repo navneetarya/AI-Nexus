@@ -18,6 +18,13 @@
 //
 // This file intentionally contains ZERO hardcoded links for tools that
 // already live in constants.ts — it only re-exports them.
+//
+// ENFORCEMENT: `scripts/check-affiliate-links.mjs` runs as the first step of
+// `npm run build` and fails the build if a raw affiliate URL appears outside
+// constants.ts or this file. impact.com links (sjv.io / pxf.io) are blocking
+// with zero tolerance. Legacy `?via=` / `?fpr=` links that predate this rule
+// are recorded in scripts/affiliate-links-baseline.json — that list may only
+// shrink, so adding a new hardcoded link anywhere fails the build.
 
 import { TOOLS } from '../constants';
 

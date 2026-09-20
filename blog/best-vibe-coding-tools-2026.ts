@@ -5,6 +5,7 @@
 // Word count: ~1,900 words | Category: Coding
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-vibe-coding-tools-2026',
@@ -84,7 +85,7 @@ const post: BlogPost = {
   <li><strong>Test on the free tier first.</strong> Build one real task — not a demo — on each tool's free plan before paying. The task manager test below took under 10 minutes on Lovable and is a good benchmark to repeat yourself.</li>
 </ol>
 <div style="margin:14px 0 24px;">
-  <a href="https://lovablelabs.pxf.io/c/5629153/3903956/49205" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lovable Free →</a>
+  <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lovable Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -148,7 +149,7 @@ const post: BlogPost = {
 </ul>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://lovablelabs.pxf.io/c/5629153/3903956/49205" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Lovable →</a>
+  <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Lovable →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -205,7 +206,7 @@ const post: BlogPost = {
   <li><strong>v0 pros/cons:</strong> Highest visual polish per component, but it never produces a deployable app on its own.</li>
 </ul>
 <div style="margin:14px 0 0;">
-  <a href="https://lovablelabs.pxf.io/c/5629153/3903956/49205" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Building with Lovable →</a>
+  <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Building with Lovable →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:4px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

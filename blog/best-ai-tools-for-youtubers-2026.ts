@@ -4,6 +4,7 @@
 // numbered list, and more internal links for the site's blog-quality gate.
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-tools-for-youtubers-2026',
@@ -166,7 +167,7 @@ const post: BlogPost = {
 <p>The free plan allows testing the workflow. Paid plans from $20/month remove watermarks and increase generation volume. Most serious faceless channel operators upgrade quickly, since the productivity gain justifies the cost in the first week.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://invideo.sjv.io/c/5629153/883681/12258" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>
+  <a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.

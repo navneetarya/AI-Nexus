@@ -56,12 +56,49 @@ export function getGaClientId(): string | null {
   return `${parts[2]}.${parts[3]}`;
 }
 
-/** Appends `sid=<clientId>` to a URL, respecting any existing query string
- *  (e.g. `https://gamma.app?via=ainexus` becomes
- *  `https://gamma.app?via=ainexus&sid=...`). */
+/** Affiliate networks each use their own Sub ID query param. Sending the
+ *  wrong one means the value is silently dropped and attribution is lost.
+ *
+ *  - PartnerStack  → `sid`     (ElevenLabs, Murf AI, etc.)
+ *  - impact.com    → `subId1`  (InVideo, Lovable, Creao AI, Flowith, Wegic,
+ *                               Transkriptor, PopAi Sheets — all Impact)
+ *                    Confirmed: help.impact.com "Sub ID & Shared ID
+ *                    Parameters Explained for Partners" — the documented
+ *                    format is `...?subId1=<value>`. Impact ignores `sid`.
+ *
+ *  Impact issues each brand its own vanity tracking domain, so detection is
+ *  by known Impact domain suffix rather than by a single hostname. */
+const IMPACT_TRACKING_DOMAINS = [
+  'sjv.io',
+  'pxf.io',
+  'ojrq.net',
+  '7eer.net',
+  'evyy.net',
+  'ojmp.net',
+  'prf.hn',
+];
+
+export function getSubIdParam(url: string): string {
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    const isImpact = IMPACT_TRACKING_DOMAINS.some(
+      (d) => host === d || host.endsWith(`.${d}`)
+    );
+    return isImpact ? 'subId1' : 'sid';
+  } catch {
+    return 'sid';
+  }
+}
+
+/** Appends the network-correct Sub ID param to a URL, respecting any existing
+ *  query string (e.g. `https://gamma.app?via=ainexus` becomes
+ *  `https://gamma.app?via=ainexus&sid=...`, while
+ *  `https://invideo.sjv.io/k42zM3` becomes
+ *  `https://invideo.sjv.io/k42zM3?subId1=...`). */
 export function appendSubId(url: string, clientId: string): string {
   const separator = url.includes('?') ? '&' : '?';
-  return `${url}${separator}sid=${encodeURIComponent(clientId)}`;
+  const param = getSubIdParam(url);
+  return `${url}${separator}${param}=${encodeURIComponent(clientId)}`;
 }
 
 interface TrackArgs {
@@ -90,6 +127,7 @@ function applyTracking(link: HTMLAnchorElement, args: TrackArgs): void {
       link_url: finalUrl,
       cta_position: args.ctaPosition,
       sid: clientId || 'unavailable',
+      sid_param: getSubIdParam(link.href),
       ...(args.postSlug ? { post_slug: args.postSlug } : {}),
       page_path: window.location.pathname,
     });

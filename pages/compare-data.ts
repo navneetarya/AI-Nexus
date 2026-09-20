@@ -1,3 +1,5 @@
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
+
 // ── Compare article data ───────────────────────────────────────────────────
 
 /** W4-T4: Pricing table data for each tool in a comparison */
@@ -1781,11 +1783,11 @@ The deciding question: are you creating new video content or repurposing existin
     ],
     winnerSlug: 'invideo',
     winnerName: 'InVideo AI',
-    winnerAffiliateLink: 'https://invideo.sjv.io/c/5629153/883681/12258',
+    winnerAffiliateLink: AFFILIATE_LINKS['invideo'],
     winnerAffiliateText: 'Try InVideo AI free',
     pricing: {
       tools: [
-        { name: 'InVideo AI', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'Content creators turning scripts into video', affiliateLink: 'https://invideo.sjv.io/c/5629153/883681/12258' },
+        { name: 'InVideo AI', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'Content creators turning scripts into video', affiliateLink: AFFILIATE_LINKS['invideo'] },
         { name: 'Pictory', free: true, startingPrice: '$0 (trial)', paidFrom: '$19/mo', bestPlanFor: 'Bloggers repurposing written content to video', affiliateLink: 'https://pictory.ai?fpr=navneet24' },
       ],
     },
@@ -2576,11 +2578,11 @@ The bottom line: most "which one should I use?" questions come down to one quest
     ],
     winnerSlug: 'lovable',
     winnerName: 'Lovable',
-    winnerAffiliateLink: 'https://lovablelabs.pxf.io/c/5629153/3903956/49205',
+    winnerAffiliateLink: AFFILIATE_LINKS['lovable'],
     winnerAffiliateText: 'Try Lovable free',
     pricing: {
       tools: [
-        { name: 'Lovable', free: true, startingPrice: '$0', paidFrom: '$25/mo', bestPlanFor: 'Non-developers building full-stack MVPs with database + auth', affiliateLink: 'https://lovablelabs.pxf.io/c/5629153/3903956/49205' },
+        { name: 'Lovable', free: true, startingPrice: '$0', paidFrom: '$25/mo', bestPlanFor: 'Non-developers building full-stack MVPs with database + auth', affiliateLink: AFFILIATE_LINKS['lovable'] },
         { name: 'Bolt.new', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'JavaScript developers wanting framework flexibility', affiliateLink: 'https://bolt.new' },
         { name: 'v0 by Vercel', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'React/Next.js developers generating UI components', affiliateLink: 'https://v0.dev' },
       ],

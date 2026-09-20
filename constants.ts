@@ -334,7 +334,7 @@ export const TOOLS: Tool[] = [
     id: 'v3', slug: 'invideo',
     name: 'InVideo AI', tagline: 'Create faceless YouTube videos from a text prompt',
     description: 'InVideo AI generates complete videos from a text prompt — script, voiceover, stock footage, and captions included. Perfect for creating faceless YouTube channels at scale.',
-    category: Category.VIDEO, affiliateLink: 'https://invideo.sjv.io/c/5629153/883681/12258',
+    category: Category.VIDEO, affiliateLink: 'https://invideo.sjv.io/k42zM3',
     iconName: 'Video', color: '#10b981', accentColor: '#059669',
     userBadge: 'Free plan ✓', pricing: 'Free + from $20/month', bestFor: 'Faceless YouTube creators',
     features: ['Text to video AI', 'AI script writer', 'AI voiceover', '16M+ media library'],
@@ -916,7 +916,7 @@ export const TOOLS: Tool[] = [
     slug: 'lovable', id: 'c3',
     name: 'Lovable', tagline: 'Build full-stack apps from prompts — no code required',
     description: 'Lovable is an AI vibe-coding platform that turns natural language prompts into full-stack web applications. Describe what you want to build, and Lovable generates React + Supabase apps that are instantly deployed and production-ready — without writing a single line of code.',
-    category: Category.CODING, affiliateLink: 'https://lovablelabs.pxf.io/c/5629153/3903956/49205', // 30% recurring affiliate available
+    category: Category.CODING, affiliateLink: 'https://lovablelabs.pxf.io/xJ6y5d', // 30% recurring affiliate available
     iconName: 'Sparkles', color: '#ec4899', accentColor: '#db2777',
     userBadge: 'Vibe coding 🔥', pricing: 'Free + $25/month', bestFor: 'Non-developers, solopreneurs & rapid prototypers',
     notForYou: 'Teams building complex enterprise-grade SaaS with custom infrastructure, legacy backend integrations, advanced state management, or strict code quality standards. Lovable is for rapid prototyping and MVPs — generated code needs developer review for high-traffic or sensitive-data apps.',
@@ -2201,6 +2201,206 @@ export const TOOLS: Tool[] = [
       { tier: 'Stability API', price: '~$0.002–$0.04/image', highlight: 'Pay-per-generation API · SDXL cheapest, Stable Image Ultra most expensive per credit · integrate into your own apps' },
     ],
   },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // Phase 1 Step B (Sep 2026) — five new affiliate tool pages.
+  // All five run on impact.com. Links live here and here only; blog posts and
+  // compare pages read them through AFFILIATE_LINKS['<slug>'].
+  // Every entry is reviewType: 'research-based' — written from official
+  // documentation and public review platforms, not hands-on testing.
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // AUDIO
+  {
+    id: 'a5', slug: 'transkriptor',
+    name: 'Transkriptor', tagline: 'AI transcription for audio, video and live meetings',
+    description: 'Transkriptor converts audio files, video files and live Zoom, Teams and Google Meet calls into searchable, editable text across 100+ languages. It adds speaker separation, timestamps, subtitle export and an AI chat layer over the finished transcript.',
+    category: Category.AUDIO, affiliateLink: 'https://textintelfze.pxf.io/9VdAzj',
+    iconName: 'FileAudio', color: '#0ea5e9', accentColor: '#0284c7',
+    userBadge: '100+ languages', pricing: 'Free trial + from $9.99/month', bestFor: 'Researchers, students, journalists and meeting-heavy teams',
+    features: ['100+ language transcription', 'Zoom / Teams / Meet meeting recording', 'Speaker separation and timestamps', 'Subtitle and multi-format export', 'AI chat and summaries over transcripts'],
+    pros: [
+      'Broad language coverage — well beyond the English-first tools in this category',
+      'Handles both uploaded files and live meeting capture in one subscription',
+      'Cheapest entry tier in the category at $9.99/month',
+      'Export flexibility: DOCX, TXT, SRT and PDF from the same transcript',
+    ],
+    cons: [
+      'Monthly hour caps rather than pay-as-you-go — unused hours do not roll over',
+      'Accuracy drops noticeably on overlapping speakers, heavy accents and noisy audio',
+      'Reviewers consistently report the editor needs manual correction passes',
+      'Pricing is high relative to local purchasing power in some countries',
+    ],
+    notForYou: 'Teams with genuinely variable monthly volume — a 50-hour month and a 3-hour month cost the same under a fixed subscription, so a pay-per-hour service works out cheaper. Also reconsider if your recordings are consistently multi-speaker with overlapping dialogue, where correction time can cancel out the time saved.',
+    lastTestedISO: '2026-09-18',
+    researchSources: {
+      trustpilot: { rating: 4.6, count: 1807, url: 'https://www.trustpilot.com/review/transkriptor.com' },
+      reddit: 'Mixed — praised for speed and language coverage, criticised for editor friction',
+      lastVerified: '2026-09-18',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: 'Limited trial minutes · web editor · basic export — enough to test accuracy on your own audio' },
+      { tier: 'Lite', price: '$9.99/month', highlight: '5 transcription hours per month · core editor and export' },
+      { tier: 'Pro', price: '$19.99/month ($8.33/mo billed annually)', highlight: '40 hours/month · 100+ languages · translation · AI chat and note-taking' },
+      { tier: 'Team', price: '$30/user/month ($20 billed annually)', highlight: '50 hours per seat · shared workspace and transcript access' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. Pricing tiers and language claims verified against Transkriptor\'s published pricing page and independent review aggregators.' },
+    ],
+    reviewType: 'research-based',
+  },
+
+  // DESIGN
+  {
+    id: 'd4', slug: 'wegic',
+    name: 'Wegic', tagline: 'Build a website by chatting with an AI design team',
+    description: 'Wegic builds websites through conversation rather than a drag-and-drop editor. You describe the business, it asks follow-up questions, then generates a responsive multi-page site you keep refining by chat. Sites are mobile-optimised automatically and the underlying code can be exported.',
+    category: Category.DESIGN, affiliateLink: 'https://wegic-ai.pxf.io/QYdJnx',
+    iconName: 'Globe', color: '#8b5cf6', accentColor: '#7c3aed',
+    userBadge: 'Chat to build', pricing: 'Free credits + $2.99 trial + paid plans', bestFor: 'Non-designers who need a business site or landing page live fast',
+    features: ['Conversational site generation', 'Automatic mobile optimisation', 'Multilingual site support', 'Code export — no hard platform lock-in', 'Custom domain on higher tiers'],
+    pros: [
+      'Genuinely fast — a first full draft typically arrives in around a minute',
+      'No editor learning curve: the whole workflow is a conversation',
+      'Code export is a real exit path, which most AI site builders do not offer',
+      'Low-risk entry point via free starter credits and a one-time paid trial',
+    ],
+    cons: [
+      'Credit-based pricing — credits are consumed even by edits that fail',
+      'Credits do not roll over between months',
+      'Conversational-only editing frustrates anyone who wants pixel-level control',
+      'Pricing has been restructured several times, so published figures date quickly',
+      'Weak e-commerce compared with dedicated store builders',
+    ],
+    notForYou: 'Designers and developers who want precise control over layout, or anyone building a serious online store. Wegic is strongest for simple business sites, portfolios and landing pages. If you need complex commerce, custom app logic or exact design fidelity, a conventional builder or a vibe-coding tool like Lovable will fit better.',
+    lastTestedISO: '2026-09-18',
+    researchSources: {
+      reddit: 'Positive on speed and interface; recurring complaints about credit burn on failed edits',
+      lastVerified: '2026-09-18',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: 'Starter credits on signup · limited pages and monthly visitors · Wegic badge stays visible' },
+      { tier: 'Trial', price: '$2.99 one-time', highlight: 'One full website generation — the cheapest way to judge real output quality' },
+      { tier: 'Entry paid tier', price: 'from ~$11.90/month', highlight: 'Monthly credits · more pages and visitors · badge removed · code download' },
+      { tier: 'Higher tier', price: 'from ~$19.90/month', highlight: 'Larger credit pool · custom domain · Google Analytics · advanced design control' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. Wegic has restructured pricing more than once and published figures vary between sources — tiers below are indicative; confirm current rates on Wegic\'s own pricing page before buying.' },
+    ],
+    reviewType: 'research-based',
+  },
+
+  // PRODUCTIVITY
+  {
+    id: 'p12', slug: 'creao-ai',
+    name: 'CREAO', tagline: 'Describe a workflow in plain language, get a reusable AI agent',
+    description: 'CREAO is a no-code AI agent builder that runs in the browser. You describe a task in plain language, it writes and executes the code in a sandbox, and once the result is right you save it as a reusable agent anyone can re-run with one click — or put it on a schedule.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://creaoailimited.sjv.io/KBdJXy',
+    iconName: 'Bot', color: '#f59e0b', accentColor: '#d97706',
+    userBadge: 'Free plan ✓', pricing: 'Free + from $20/month', bestFor: 'Solo founders and small ops teams automating repeatable tasks',
+    features: ['Natural-language agent builder', 'Code execution in a sandboxed environment', 'Scheduled and recurring agent runs', 'Third-party tool and API connections', 'Reusable agents shareable across a team'],
+    pros: [
+      'Turns one-off prompts into saved, re-runnable assets rather than throwaway chats',
+      'Runs real code and produces real files, not just text answers',
+      'Free tier is usable for evaluation rather than a short trial',
+      'Scheduling makes recurring reports and briefings genuinely hands-off',
+    ],
+    cons: [
+      'Very thin public review base — far less independent evidence than established tools',
+      'Reviewers report multi-turn conversation handling gets confused on complex prompts',
+      'Credit allowances on the entry paid tier run down quickly on heavier tasks',
+      'Parts of the builder are still visibly rough',
+      'No compliance certifications such as HIPAA published on the public site',
+    ],
+    notForYou: 'Enterprises with strict compliance requirements, and anyone who wants a finished product rather than an early-stage one. CREAO is a reasonable bet for individuals and small teams who enjoy building their own automations; it is not yet a safe default for business-critical workflows.',
+    lastTestedISO: '2026-09-18',
+    researchSources: {
+      reddit: 'Limited — early-stage coverage only; positive on the no-code builder, critical of multi-turn context handling',
+      lastVerified: '2026-09-18',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: 'No credit card · daily bonus credits · enough to build and test a first agent' },
+      { tier: 'Pro', price: '$20/month (~$16 billed annually)', highlight: 'Monthly credit allowance · scheduled runs · the cheapest business-usable tier' },
+      { tier: 'Higher tiers', price: 'up to ~$150/month', highlight: 'Larger credit pools and higher concurrency for heavier automation' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. CREAO has a small public review base — roughly a dozen independent reviews across a single platform — so this review deliberately makes fewer performance claims than pages for established tools.' },
+    ],
+    reviewType: 'research-based',
+  },
+  {
+    id: 'p13', slug: 'flowith',
+    name: 'Flowith', tagline: 'An AI agent workspace on an infinite canvas, not a chat box',
+    description: 'Flowith replaces the linear chat window with an infinite canvas where every prompt and reply is a node you can branch, compare and reuse. Its agent, Neo, breaks a broad instruction into visible subtasks and works through them, while Knowledge Garden stores reusable context across projects.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://flowith.sjv.io/qW6AxN',
+    iconName: 'Workflow', color: '#06b6d4', accentColor: '#0891b2',
+    userBadge: 'Infinite canvas', pricing: 'Free credits + from $19.90/month', bestFor: 'Researchers, creators and power users running long multi-step work',
+    features: ['Branching infinite-canvas workspace', 'Agent Neo for long multi-step tasks', 'Multiple frontier models in one workspace', 'Knowledge Garden for reusable context', 'Desktop and mobile apps alongside web'],
+    pros: [
+      'Branching beats linear chat when you want to compare several directions side by side',
+      'Agent runs are inspectable — you can see the plan and each intermediate step',
+      'Several frontier models available without separate subscriptions',
+      'Knowledge Garden keeps project context across sessions instead of re-pasting it',
+    ],
+    cons: [
+      'Credit-based pricing burns fast, and the free starter credits are one-time rather than monthly',
+      'Real learning curve — the canvas is not self-explanatory on day one',
+      'Thin independent review volume compared with mainstream AI tools',
+      'Video generation in particular consumes credits quickly',
+      'A broad generalist rather than a specialist at any single job',
+    ],
+    notForYou: 'Anyone who wants a simple chat assistant, or a team that needs predictable per-outcome costs. If your work is one narrow repeated job — customer support replies, say, or bulk copywriting — a specialist tool will be cheaper and better. Flowith earns its price on sprawling, context-heavy projects.',
+    lastTestedISO: '2026-09-18',
+    researchSources: {
+      reddit: 'Enthusiastic about the canvas concept; the most consistent criticism is credit burn',
+      lastVerified: '2026-09-18',
+    },
+    pricingBreakdown: [
+      { tier: 'Starter', price: '$0', highlight: 'One-time starter credits · limited task allowance · credits do not renew monthly' },
+      { tier: 'Pro', price: '$19.90/month (~$17.91 billed annually)', highlight: 'The practical tier for a solo creator or researcher' },
+      { tier: 'Ultimate', price: '$49.90/month (~$42.42 billed annually)', highlight: 'Designated top models off the credit meter · top-up packs · heavier video work' },
+      { tier: 'Infinite', price: '$499.90/month', highlight: 'Studio and team tier — maximum concurrency and speed' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. Pricing verified against Flowith\'s published tiers; credit allowances and included models change frequently, so check before subscribing.' },
+    ],
+    reviewType: 'research-based',
+  },
+  {
+    id: 'p14', slug: 'popai-sheets',
+    name: 'PopAi Sheets', tagline: 'Turn messy PDFs and CSVs into structured spreadsheets',
+    description: 'PopAi Sheets is a standalone AI spreadsheet editor for Excel and Google Sheets. You describe what you need in plain English or upload PDFs, receipts and messy CSVs, and it extracts the data into a structured table — then drafts a report from the findings if you want one.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://sheetspopaipro.sjv.io/jR6zy6',
+    iconName: 'FileText', color: '#22c55e', accentColor: '#16a34a',
+    userBadge: 'PDF → table', pricing: 'Free tier + paid plans', bestFor: 'Anyone pulling numbers out of documents into spreadsheets',
+    features: ['Natural-language spreadsheet editing', 'Data extraction from PDFs and messy CSVs', 'Real-time web search into structured tables', 'Excel, CSV and PDF export', 'Automatic report drafting from extracted data'],
+    pros: [
+      'Extraction-first design — stronger on getting data out of documents than on formula help alone',
+      'Works with both Excel and Google Sheets rather than committing to one',
+      'Report generation from the extracted table saves a separate write-up step',
+      'Free tier available to test on your own documents before paying',
+    ],
+    cons: [
+      'The marketed "100% hallucination-free" extraction claim is a vendor claim, not an independently verified result — always spot-check extracted figures',
+      'Far less independent review coverage than Copilot, Gemini or the established spreadsheet add-ins',
+      'Separate product from the main PopAi workspace, with its own premium features and billing',
+      'Native assistants in Excel and Sheets have closed much of the gap on general formula help',
+    ],
+    notForYou: 'Teams already committed to Microsoft 365 Copilot or Gemini in Workspace for governed, in-suite AI, and anyone who needs live syncing from a CRM or data warehouse into their sheet — that is a different category of tool. PopAi Sheets is for document-to-table extraction, not live business-data plumbing.',
+    lastTestedISO: '2026-09-18',
+    researchSources: {
+      reddit: 'Limited independent coverage — most available material is vendor-published',
+      lastVerified: '2026-09-18',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: 'Limited usage — enough to test extraction quality on your own files' },
+      { tier: 'Paid', price: 'see current pricing', highlight: 'AI Sheets is billed as a standalone product with its own premium tier, separate from the main PopAi workspace subscription' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. PopAi Sheets is a standalone product at sheets.popai.pro and is billed separately from the main PopAi workspace; pricing was not fully published at the time of writing, so tiers are left deliberately general.' },
+    ],
+    reviewType: 'research-based',
+  },
 ];
 
 // ── FAQ data per tool — powers FAQPage schema + visible accordions ─────────
@@ -2805,4 +3005,51 @@ Object.assign(TOOL_FAQS, {
     { q: 'Can I use Nano Banana Pro for commercial work?', a: 'Yes, images generated on paid Google AI plans can be used commercially, and paid-tier outputs drop the visible watermark (a SynthID digital watermark remains embedded regardless of tier for AI-content transparency).' },
     { q: 'Does Nano Banana Pro work in India, and is it free there?', a: 'Yes — the free tier is accessible through the Gemini app with no card required, and paid Google AI plans bill in USD-equivalent INR through Google One/Play Store, accepting UPI and Indian cards. No India-specific discounted pricing has been confirmed as of this review.' },
   ],
+});
+
+
+// ── Phase 1 Step B (Sep 2026): FAQs for the five new affiliate tool pages ──
+Object.assign(TOOL_FAQS, {
+  transkriptor: [
+    { q: 'Is Transkriptor free?', a: "Transkriptor has a free tier, but it is a limited trial rather than a permanently usable plan — you get a restricted number of transcription minutes plus access to the web editor and basic export. It is enough to test accuracy on your own audio before paying. Paid plans start at $9.99/month for the Lite tier with 5 hours of transcription per month." },
+    { q: 'How accurate is Transkriptor?', a: "Accuracy depends heavily on the recording. Clear, single-speaker English audio is the best case and reviewers consistently rate it highly there. Accuracy drops on overlapping speakers, heavy background noise and strong regional accents, where manual correction is needed. Transkriptor supports domain vocabulary for medical, legal and IT terminology, which narrows the gap on technical recordings with clean audio. For less widely spoken languages, test a sample before committing to a plan." },
+    { q: 'How many languages does Transkriptor support?', a: "Transkriptor supports 100+ languages for transcription, with translation available on paid tiers. That breadth is its clearest advantage over English-first competitors. Quality is not uniform across all 100+ — major languages perform best, so run a sample file in your target language before subscribing." },
+    { q: 'Can Transkriptor record Zoom and Teams meetings?', a: "Yes. Transkriptor can join and record meetings on Zoom, Microsoft Teams and Google Meet, then transcribe them alongside uploaded audio and video files. This is what separates it from upload-only transcription tools — one subscription covers both live meetings and your existing file backlog." },
+    { q: 'Transkriptor vs pay-per-hour transcription — which is cheaper?', a: "It depends entirely on how consistent your volume is. Transkriptor charges a fixed monthly subscription with an hour cap, so a heavy month and a light month cost the same and unused hours do not roll over. If you transcribe a steady amount each month, the subscription is good value — the Pro tier works out at roughly $0.50 per hour at full usage. If your volume swings wildly, a pay-per-hour service will usually cost less." },
+  ],
+  wegic: [
+    { q: 'Is Wegic free?', a: "Wegic gives new accounts a batch of starter credits, and there is a $2.99 one-time trial that includes one full website generation. Neither is a permanently free plan: credits are consumed by generations and edits, free-tier sites keep the Wegic badge, and published sites go offline without a paid subscription. Treat the free credits as evaluation, not as a long-term hosting option." },
+    { q: 'How does Wegic actually work?', a: "Instead of opening a blank editor, you describe your project in a chat. Wegic asks follow-up questions about the business, style, colours and requirements, then generates a responsive multi-page draft. From there you keep refining by conversation rather than by dragging elements. A first full draft typically takes around a minute." },
+    { q: 'Can I export my site from Wegic?', a: "Yes — Wegic supports code download, which is unusual in this category. Most AI website builders keep you on their platform; being able to export the underlying code means you can migrate elsewhere if you outgrow it. Code export sits on the paid tiers." },
+    { q: 'What is the catch with Wegic credits?', a: "Two things. Credits are consumed even when an AI edit fails or produces something you reject, which is the single most documented complaint from users. And credits do not roll over between months. Budget by how often you expect to generate and revise, not by the headline monthly price — the working cost can be meaningfully higher than the sticker price suggests." },
+    { q: 'Wegic vs Lovable — which should I use?', a: "They solve different problems. Wegic builds marketing sites, portfolios and landing pages through conversation, with no code required and no expectation that you will read the output. Lovable builds functional full-stack web applications with a database and authentication. If you need pages, use Wegic. If you need an app with logic and user accounts, use Lovable." },
+  ],
+  'creao-ai': [
+    { q: 'Is CREAO free?', a: "Yes — CREAO has a free plan with no credit card required, plus small daily bonus credits that accumulate over a month. It is generous enough to build and test a real agent rather than just click through a demo. The cheapest business-usable tier is Pro at $20/month (around $16 billed annually)." },
+    { q: 'What can a CREAO agent actually do?', a: "CREAO runs generated code in a sandboxed environment, so agents produce real outputs rather than text descriptions of outputs. Documented uses include scraping a site into a comparison table, analysing a dataset and generating charts, drafting formatted reports, building PDFs and sending results to a connected channel. Agents can be saved and re-run with one click, or scheduled to run automatically." },
+    { q: 'How is CREAO different from Make or Zapier?', a: "Make and Zapier connect pre-built app integrations through a visual node editor — mature, reliable, and constrained to what the integrations expose. CREAO writes and runs code from a plain-language description, so it can handle tasks nobody built an integration for. The trade-off is maturity: Make and Zapier are established and dependable, while CREAO is early-stage with a visibly rough edge in places." },
+    { q: 'Is CREAO reliable enough for business-critical work?', a: "Not yet, as a default. The public review base is small — roughly a dozen independent reviews across a single platform — so there is little evidence about sustained reliability, uptime or support responsiveness. Reviewers also report that multi-turn conversation handling gets confused on complex prompts. It is a reasonable tool for individual and small-team automation where a failed run is an inconvenience rather than a problem." },
+  ],
+  flowith: [
+    { q: 'Is Flowith free?', a: "Flowith has a free Starter plan, but its credits are a one-time allocation rather than a monthly refill. Once they are spent you need a paid plan to continue. Paid tiers start at $19.90/month for Pro, with Ultimate at $49.90/month and Infinite at $499.90/month. Annual billing reduces the effective monthly rate." },
+    { q: 'What is Agent Neo?', a: "Agent Neo is Flowith's autonomous agent. Given a broad instruction it breaks the work into a visible sequence of subtasks, picks tools, creates intermediate nodes on the canvas and adapts its plan as it runs. The advantage over a black-box agent is inspectability — you can see each step and intervene rather than waiting for a final answer. Outputs still need source-checking and human approval." },
+    { q: 'Why use a canvas instead of a chat?', a: "In a linear chat, exploring a second approach means losing or burying the first. On Flowith's canvas every prompt and reply is a node you can branch from, so you can run several directions in parallel and compare them side by side. For research and creative work with many possible paths, that structure is a genuine advantage. For a single quick question it is unnecessary overhead." },
+    { q: 'Which Flowith plan should I pick?', a: "Pro at $19.90/month is the practical choice for a solo creator or researcher. Ultimate at $49.90/month is worth it if you generate video regularly, because designated top models come off the credit meter and top-up packs become available. Infinite at $499.90/month is a studio and team tier that most individuals and small teams should skip." },
+    { q: 'What is the main downside of Flowith?', a: "Credit burn. It is the most consistent criticism across independent reviews: credits go faster than expected, video generation in particular drains them, and the free starter credits do not renew. The second issue is the learning curve — the canvas is powerful but not self-explanatory, so budget real time before judging whether it fits your work." },
+  ],
+  'popai-sheets': [
+    { q: 'What is PopAi Sheets?', a: "PopAi Sheets is an AI spreadsheet editor for Excel and Google Sheets, sold as a standalone product separate from the main PopAi workspace. Its focus is extraction: you upload PDFs, receipts or messy CSVs, or describe what you need in plain English, and it produces a structured table you can export to Excel, CSV or PDF. It can also draft a report from the data it extracted." },
+    { q: 'Is PopAi Sheets really hallucination-free?', a: "PopAi markets the extraction as \"100% hallucination-free\". That is a vendor claim, not an independently verified result, and no current AI system can guarantee zero errors on arbitrary documents. Treat it as a marketing statement and spot-check extracted figures against the source — particularly for financial data, where a single misread number carries real consequences." },
+    { q: 'PopAi Sheets vs Copilot in Excel — which is better?', a: "They are built for different jobs. Microsoft 365 Copilot is the governed, in-suite option: tied to your organisation's identity and admin controls, and strong at general formula help, cleanup and analysis inside Excel. PopAi Sheets is narrower and extraction-first — pulling structured data out of PDFs and messy files. If your bottleneck is documents rather than formulas, that focus is the reason to use it." },
+    { q: 'Does PopAi Sheets work with Google Sheets?', a: "Yes — it covers both Excel and Google Sheets rather than committing to one, and exports to Excel, CSV and PDF formats. That makes it workable for teams split across both environments, which several native assistants are not." },
+  ],
+});
+
+// ── Phase 1 Step B (Sep 2026): keywords for the five new tool pages ────────
+Object.assign(TOOL_KEYWORDS, {
+  transkriptor: ['transkriptor review', 'transkriptor pricing', 'ai transcription software', 'transcribe audio to text', 'meeting transcription tool'],
+  wegic: ['wegic review', 'wegic ai website builder', 'ai website builder', 'chat to build website', 'wegic pricing'],
+  'creao-ai': ['creao ai review', 'no-code ai agent builder', 'creao pricing', 'ai workflow automation', 'build ai agents without code'],
+  flowith: ['flowith review', 'flowith pricing', 'agent neo', 'ai agent workspace', 'ai canvas tool'],
+  'popai-sheets': ['popai sheets review', 'ai spreadsheet tool', 'pdf to excel ai', 'ai data extraction', 'ai for google sheets'],
 });
