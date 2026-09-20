@@ -6,6 +6,7 @@
 // Internal links: rytr, grammarly, leonardo-ai, photoroom, pictory, invideo, podcastle, murf-ai
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'how-to-use-ai-for-content-creation-2026',
@@ -190,7 +191,7 @@ const post: BlogPost = {
 <p>For Reels, YouTube Shorts, and TikTok, <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">InVideo AI</a> takes a text prompt or topic and produces a complete short-form video in under 5 minutes. Footage, voiceover, captions, and music are all included. The free plan includes 10 video exports per month with an InVideo watermark, enough to test the workflow before committing to the $25/month paid plan.</p>
 <p>The highest-quality use of InVideo for content creators is repurposing key sections from longer articles into 60-second short-form videos that drive traffic back to the full post. Enter the key point from your article as a prompt, set the duration to 60 seconds, and let InVideo generate.</p><p>Then spend 5 minutes adjusting the script and swapping out any footage that does not fit. The result is a platform-native short video that would otherwise take 45–90 minutes to produce manually.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://invideo.sjv.io/c/5629153/883681/12258" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>
+  <a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>
 </div>
 
 <h2>Part 4: AI for Audio (Podcasting, Voiceover, <a href="/glossary/#text-to-speech" style="color:var(--a1);font-weight:600;">Text-to-Speech</a>)</h2>

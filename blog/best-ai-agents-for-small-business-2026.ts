@@ -1,4 +1,5 @@
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
 // Relevance AI   : https://relevanceai.com/?via=navneet  ✅
@@ -11,7 +12,7 @@ const post: BlogPost = {
   slug: 'best-ai-agents-for-small-business-2026',
   title: 'Best AI Agents for Small Business 2026 — Ranked & Compared',
   seoTitle: 'Best AI Agents for Small Business 2026, Ranked',
-  metaDescription: 'Analysis of 8 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Updated June 2026.',
+  metaDescription: 'Analysis of 10 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Updated June 2026.',
   quickAnswer: 'The best AI agents for small business in 2026 are Lindy.ai for non-technical owners (email, scheduling, lead qualification from ~$20/mo), Relevance AI for auditable custom workflows (from $19/mo), Make.com for automation-native teams adding AI (from $9/mo), and n8n for technical teams that want to self-host for free. Pick based on your technical capacity, not just price.',
   outboundCitations: [
     { url: 'https://relevanceai.com/pricing', label: 'Relevance AI pricing and plan details (official)' },
@@ -79,7 +80,7 @@ const post: BlogPost = {
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Four platforms lead the way for small businesses in 2026. <strong>Lindy.ai</strong> is best for non-technical owners, handling email, scheduling, and lead qualification from ~$20/mo. <strong>Relevance AI</strong> is best for custom, easy-to-check agent workflows, from $19/mo.</p>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Make.com</strong> is the best automation-native option with AI modules, from $9/mo. <strong>n8n</strong> is best for technical teams and is free to self-host. Eight platforms are compared below on autonomy level, pricing, and fit for SMBs.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Make.com</strong> is the best automation-native option with AI modules, from $9/mo. <strong>n8n</strong> is best for technical teams and is free to self-host. Ten platforms are compared below on autonomy level, pricing, and fit for SMBs.</p>
 </div>
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
@@ -141,7 +142,7 @@ const post: BlogPost = {
 <h2>How the AI Agent Market Is Structured for SMBs in 2026</h2>
 <p>Two clear tiers have emerged in the SMB AI agent market. The split comes from design approach, not price.</p>
 
-<h3>Tier 1: General-Purpose Agents (Lindy, Relevance AI, Gumloop)</h3>
+<h3>Tier 1: General-Purpose Agents (Lindy, Relevance AI, Gumloop, CREAO, Flowith)</h3>
 <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Professionals in a meeting workspace discussing which AI agent tool fits their workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>These platforms were built for agent-first work. They offer agent creation through no-code or low-code tools. Business owners and operations managers can set them up without any engineering help.</p>
 
@@ -164,6 +165,18 @@ const post: BlogPost = {
 
 <p><strong>Gumloop</strong> is a visual automation platform with native AI nodes. It sits between traditional automation tools and agent-native platforms. It suits content teams and research workflows, where AI steps sit within a bigger pipeline. A typical flow: scrape a source, summarise it, draft a section, then publish via API.</p>
 <p>Less suited to conversational or inbox-centric use cases. It's stronger for structured data work, with AI embedded in specific pipeline steps.</p>
+
+<p><strong><a href="/tools/creao-ai/" style="color:rgb(13,148,136);">CREAO</a></strong> takes the lightest-weight approach in this tier: describe a task in plain language and it writes and runs the code in a sandbox, then saves the result as a reusable, one-click agent you can schedule. There's no workflow diagram to build — the whole setup is a conversation, closer to a personal automation assistant than an agent-orchestration platform.</p>
+<p>The free plan is usable for real evaluation, not just a short trial, and the entry paid tier starts at $20/month. Worth knowing before relying on it: CREAO's independent review base is thin, roughly a dozen reviews on a single platform, so treat it as a promising early-stage tool rather than a proven default for anything business-critical yet.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['creao-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try CREAO Free →</a>
+</div>
+
+<p><strong><a href="/tools/flowith/" style="color:rgb(13,148,136);">Flowith</a></strong> replaces the linear chat window with a branching, infinite-canvas workspace where every prompt and reply is a node you can compare and reuse. Its agent, Neo, breaks a broad instruction into visible subtasks and works through them in the open, while a Knowledge Garden feature keeps reusable context across projects instead of you re-pasting it.</p>
+<p>It's a poor fit for simple app-to-app triggers — that's what the Tier 2 tools below are for — but it earns its place on sprawling, context-heavy work: research that branches in several directions, long content projects, anything one narrow linear chat can't hold at once. Pricing is credit-based and the starter credits are one-time rather than monthly, so budget accordingly. Plans start at $19.90/month.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['flowith']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Flowith Free →</a>
+</div>
 
 <h3>Tier 2: Automation-Native Agents (n8n, Make.com, Zapier, Bardeen, Activepieces)</h3>
 <p>These platforms started as workflow automation tools and later added AI features. They offer bigger app libraries and lower per-task pricing. Most ops teams already know how to use them. Agent behaviour, though, is an add-on layer. It sits on top of an automation-first setup, not at its core.</p>
@@ -231,6 +244,22 @@ const post: BlogPost = {
       <td style="padding:10px 12px;">⚡ Partial</td>
       <td style="padding:10px 12px;">✅ Yes</td>
       <td style="padding:10px 12px;">Content &amp; data pipelines</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
+      <td style="padding:10px 12px;font-weight:600;color:#0D9488;">CREAO</td>
+      <td style="padding:10px 12px;">✅ Usable free tier</td>
+      <td style="padding:10px 12px;">$20/mo</td>
+      <td style="padding:10px 12px;">✅ Yes</td>
+      <td style="padding:10px 12px;">✅ Yes</td>
+      <td style="padding:10px 12px;">Solo founders, thin review base</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
+      <td style="padding:10px 12px;font-weight:600;color:#0D9488;">Flowith</td>
+      <td style="padding:10px 12px;">✅ One-time credits</td>
+      <td style="padding:10px 12px;">$19.90/mo</td>
+      <td style="padding:10px 12px;">✅ Yes</td>
+      <td style="padding:10px 12px;">✅ Yes</td>
+      <td style="padding:10px 12px;">Branching research &amp; content work</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
       <td style="padding:10px 12px;font-weight:600;color:#0D9488;">n8n</td>

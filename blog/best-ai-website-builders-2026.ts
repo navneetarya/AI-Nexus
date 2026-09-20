@@ -16,6 +16,7 @@
 // Word count: ~2,340 words (prose, excludes table cells) | Published: 2026-08-08 | Author: Navneet Arya
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-website-builders-2026',
@@ -201,6 +202,13 @@ const post: BlogPost = {
 <h3>Skip if</h3>
 <p>You need a complex web application with user logins, a database, or custom backend logic. None of these five tools are built for that; a code-first platform is the better fit there.</p>
 <p>You also run a large e-commerce catalog with complex inventory needs. Wix and 10Web can handle basic stores, but a dedicated platform will scale better past a few hundred products.</p>
+
+<h3>Also worth considering: Wegic</h3>
+<p><a href="/tools/wegic/" style="color:var(--a1);font-weight:600;">Wegic</a> takes a different approach from all five tools above: instead of a drag-and-drop editor, you build the site entirely by chatting with it. Describe the business, answer a few follow-up questions, and a responsive multi-page site comes back, usually within a minute.</p>
+<p>It's a fit for a non-designer who wants the fastest possible path to a simple business site or landing page and doesn't want to touch an editor at all. It's a weaker fit for e-commerce or anyone who wants precise control over layout — pricing is credit-based, and Wegic's rates have shifted more than once, so confirm the current tier on its own pricing page before buying.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['wegic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Wegic →</a>
+</div>
 
 <h2>Final verdict: best ai website builder in 2026</h2>
 <p>Match the tool to your actual situation instead of chasing one universal "best":</p>

@@ -182,6 +182,77 @@ const esc = s => String(s)
 // ── C1 Fix: Load blog post full content from .ts source files ────────────────
 // Blog .ts files have a `content` template literal with full article HTML.
 // This function extracts it so prerendered pages include the complete article.
+
+// ── Sep 2026 fix: resolve ${AFFILIATE_LINKS['<slug>']} interpolations ────────
+// Blog .ts content fields are template literals evaluated by the React SPA at
+// runtime, but this script extracts them as raw text (see loadBlogContent
+// below), so any ${...} expression was previously left in the prerendered
+// HTML verbatim — the literal string "${AFFILIATE_LINKS['wegic']}" rather
+// than the actual URL. Every blog post interpolation follows this one exact
+// pattern (verified: `grep -oP '\$\{[^}]+\}' blog/*.ts` returns nothing else),
+// so resolving that single pattern here closes the gap without needing a real
+// TS/JS evaluator. The map itself is built by parsing constants.ts's TOOLS
+// array (slug → affiliateLink, the same source lib/affiliate-links.ts reads
+// at runtime) plus lib/affiliate-links.ts's SUPPLEMENTARY_LINKS, so there is
+// still exactly one place to edit a link — this script never hardcodes one.
+function loadAffiliateLinksMap() {
+  const links = {};
+
+  // 1) constants.ts TOOLS array: pair each `slug: '...'` with the nearest
+  //    `affiliateLink: '...'` that follows it (and precedes the next slug).
+  const constantsSrc = fs.readFileSync(path.join(ROOT, 'constants.ts'), 'utf-8');
+  const toolsStart = constantsSrc.indexOf('export const TOOLS');
+  const toolsEnd = constantsSrc.indexOf('export const TOOL_FAQS');
+  const toolsSrc = toolsStart !== -1 && toolsEnd !== -1 ? constantsSrc.slice(toolsStart, toolsEnd) : constantsSrc;
+
+  const slugRe = /slug:\s*'([^']+)'/g;
+  const slugMatches = [...toolsSrc.matchAll(slugRe)];
+  const linkRe = /affiliateLink:\s*'([^']+)'/g;
+  const linkMatches = [...toolsSrc.matchAll(linkRe)];
+
+  for (let i = 0; i < slugMatches.length; i++) {
+    const slug = slugMatches[i][1];
+    const rangeStart = slugMatches[i].index;
+    const rangeEnd = i + 1 < slugMatches.length ? slugMatches[i + 1].index : toolsSrc.length;
+    const link = linkMatches.find(lm => lm.index > rangeStart && lm.index < rangeEnd);
+    if (link) links[slug] = link[1];
+  }
+
+  // 2) lib/affiliate-links.ts SUPPLEMENTARY_LINKS: simple `key: 'url'` pairs
+  //    (key may or may not be quoted — e.g. `make:` vs `'relevance-ai':`).
+  const affiliateLibSrc = fs.readFileSync(path.join(ROOT, 'lib', 'affiliate-links.ts'), 'utf-8');
+  const suppStart = affiliateLibSrc.indexOf('SUPPLEMENTARY_LINKS');
+  const suppEnd = affiliateLibSrc.indexOf('};', suppStart);
+  const suppSrc = suppStart !== -1 && suppEnd !== -1 ? affiliateLibSrc.slice(suppStart, suppEnd) : '';
+  const suppRe = /^\s*'?([a-zA-Z0-9_-]+)'?:\s*'([^']+)'/gm;
+  let sm;
+  while ((sm = suppRe.exec(suppSrc)) !== null) {
+    links[sm[1]] = sm[2];
+  }
+
+  return links;
+}
+
+const AFFILIATE_LINKS_MAP = loadAffiliateLinksMap();
+
+// Replaces every ${AFFILIATE_LINKS['<slug>']} in extracted blog content with
+// its resolved URL. Throws on an unresolved slug rather than silently
+// shipping a broken href — the whole point of this fix is that a broken
+// interpolation should fail the build loudly, not reach Googlebot quietly.
+function resolveAffiliateInterpolations(content, slug) {
+  if (!content) return content;
+  return content.replace(/\$\{AFFILIATE_LINKS\[['"]([^'"]+)['"]\]\}/g, (match, toolSlug) => {
+    const resolved = AFFILIATE_LINKS_MAP[toolSlug];
+    if (!resolved) {
+      throw new Error(
+        `[prerender] blog/${slug}.ts references AFFILIATE_LINKS['${toolSlug}'], but no matching ` +
+        `affiliateLink was found in constants.ts TOOLS or lib/affiliate-links.ts SUPPLEMENTARY_LINKS.`
+      );
+    }
+    return resolved;
+  });
+}
+
 function loadBlogContent(slug) {
   const filePath = path.join(ROOT, 'blog', `${slug}.ts`);
   if (!fs.existsSync(filePath)) return null;
@@ -203,7 +274,8 @@ function loadBlogContent(slug) {
     i++;
   }
   const content = src.slice(backtickStart + 1, i);
-  return content.trim() || null;
+  const resolved = resolveAffiliateInterpolations(content.trim(), slug);
+  return resolved || null;
 }
 
 // I-21 Fix: Inline share/newsletter CTA inside the blog post body.

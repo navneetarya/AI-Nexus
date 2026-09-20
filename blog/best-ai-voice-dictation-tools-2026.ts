@@ -24,6 +24,7 @@
 
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-voice-dictation-tools-2026',
@@ -96,6 +97,10 @@ const post: BlogPost = {
 <p>That's the meaningful difference from older voice to text AI tools: it's not just transcription, it's transcription plus an editing pass. That editing pass arrives in the second or two after you stop speaking.</p>
 <p>Whether you need one comes down to volume. If you write a handful of short messages a day, a free built-in option easily covers it. If you're drafting long emails, articles, or code comments for hours daily, the AI cleanup layer becomes the actual time-saver.</p>
 <p>It's not the raw speaking speed that matters, but the editing work it removes from your afternoon.</p>
+<p>Worth separating from all of this: <a href="/tools/transkriptor/" style="color:rgb(13,148,136);">Transkriptor</a> is a transcription tool, not a dictation tool, and the distinction matters. Dictation tools like the ones below turn your live speech into clean text as you talk, for writing into whatever app is open. Transkriptor instead processes an existing recording — a meeting, an interview, an uploaded audio file — after the fact, across 100+ languages. If what you need is "type this document by talking," pick from the comparison below. If what you need is "get a written transcript of a recording I already have," that's Transkriptor's job, not this category's.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['transkriptor']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Transkriptor →</a>
+</div>
 
 <h2>Best AI Voice Dictation Tools 2026 — Compared</h2>
 <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Best AI Voice Dictation Tools 2026 — Compared" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />

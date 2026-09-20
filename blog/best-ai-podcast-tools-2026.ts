@@ -5,6 +5,7 @@
 // Word count: ~1,150 words
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-podcast-tools-2026',
@@ -184,7 +185,11 @@ const post: BlogPost = {
   <li><strong>$12/month:</strong> Podcastle Basic (record, no episode limit) + Descript Creator (transcript editing). A complete record-to-publish workflow.</li>
   <li><strong>$31/month:</strong> Podcastle Basic + Descript Creator + Murf AI Basic (intros, outros, ad reads). The full professional stack.</li>
   <li><strong>Single-tool simplicity:</strong> Podcastle Basic ($11.99/month) handles recording, noise removal, transcription, and basic editing in one place. Best if you want to keep your toolset small.</li>
+  <li><strong>Add for show-note transcripts:</strong> If you need a clean written transcript for SEO show notes or a non-English audience, <a href="/tools/transkriptor/" style="color:rgb(13,148,136);">Transkriptor</a> ($9.99/month) covers 100+ languages, wider than any tool above. It's a transcription add-on for existing recordings, not a replacement for Podcastle's record-and-edit workflow.</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['transkriptor']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Transkriptor →</a>
+</div>
 
 <h2>What to Skip</h2>
 <p>Two categories are worth avoiding. The first is any AI tool that promises to auto-publish and distribute your podcast for you. Dedicated podcast hosts like Buzzsprout, Transistor, or Spotify for Podcasters already handle distribution better than a general AI tool.</p>

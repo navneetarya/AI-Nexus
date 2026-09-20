@@ -555,16 +555,16 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-no-code-ai-automation-tools-2026",
-    "title": "Best No-Code AI Automation Tools 2026 — 9 Platforms Ranked",
-    "seoTitle": "Best No-Code AI Automation Tools 2026 — 9 Ranked",
-    "metaDescription": "Market analysis of 9 no-code AI automation platforms. Pricing tiers, AI-native features, and use-case fit for non-technical teams. June 2026 edition.",
+    "title": "Best No-Code AI Automation Tools 2026 — 11 Platforms Ranked",
+    "seoTitle": "Best No-Code AI Automation Tools 2026 — 11 Ranked",
+    "metaDescription": "Market analysis of 11 no-code AI automation platforms. Pricing tiers, AI-native features, and use-case fit for non-technical teams. June 2026 edition.",
     "datePublished": "2026-06-17",
     "dateModified": "2026-08-23",
     "author": "Navneet Arya",
     "category": "Productivity",
     "readTime": "11 min read",
     "ogImage": "https://ainexustools.online/og-compare.webp",
-    "excerpt": "Nine no-code AI automation platforms compared for non-technical teams in 2026. Zapier wins on integration breadth, Make.com on price-to-power ratio, and n8n on AI-native depth for teams with some technical comfort. The right platform depends on workflow complexity and team skill level, not which vendor markets loudest."
+    "excerpt": "Eleven no-code AI automation platforms compared for non-technical teams in 2026. Zapier wins on integration breadth, Make.com on price-to-power ratio, and n8n on AI-native depth for teams with some technical comfort. The right platform depends on workflow complexity and team skill level, not which vendor markets loudest."
   },
   {
     "slug": "n8n-vs-make-vs-zapier-2026",
@@ -609,7 +609,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "best-ai-agents-for-small-business-2026",
     "title": "Best AI Agents for Small Business 2026 — Ranked & Compared",
     "seoTitle": "Best AI Agents for Small Business 2026, Ranked",
-    "metaDescription": "Analysis of 8 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Updated June 2026.",
+    "metaDescription": "Analysis of 10 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Updated June 2026.",
     "datePublished": "2026-06-11",
     "dateModified": "2026-08-23",
     "author": "Navneet Arya",

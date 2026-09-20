@@ -6,6 +6,7 @@
 // Internal links: /blog/best-ai-tools-for-freelancers-2026 · /blog/taskade-vs-notion-vs-asana-2026 · /blog/best-ai-tools-for-startups-2026 · /tools/fireflies · /compare
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-meeting-tools-2026',
@@ -393,7 +394,11 @@ const post: BlogPost = {
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
   <li><strong>Avoma:</strong> The most purpose-built revenue intelligence platform in the AI meeting tools category. Avoma goes beyond transcription and summaries into full conversation intelligence. That includes call scoring, coaching scorecards, deal health tracking, and pipeline risk signals based on what was said (or not said) in sales meetings. It integrates with 20+ CRMs. The Starter plan at $19/seat/month is reasonable, but the full revenue intelligence stack requires the Growth plan at $59/seat/month. Best for scaling sales organisations with a dedicated revenue operations function; overkill for general teams.</li>
   <li><strong>tl;dv:</strong> A strong alternative for asynchronous and globally distributed teams. tl;dv's core differentiator is video highlight clips. You mark key moments during a Zoom or Meet call, and tl;dv generates a shareable short video clip of that segment. This is useful for sending a 90-second summary of a 60-minute meeting to a stakeholder who could not attend. The free plan includes unlimited recordings and transcripts (matching Fathom). Paid plans start at $18/seat/month with HubSpot and Salesforce sync. Less powerful than Fireflies for action item extraction but uniquely useful for video-first teams.</li>
+  <li><strong><a href="/tools/transkriptor/" style="color:#0ea5e9;">Transkriptor</a>:</strong> Worth a look if your meeting load spans more than English — it covers 100+ languages, well beyond what most of the tools above prioritise. It also handles standalone audio and video file uploads, not just live meeting capture, which matters if you're transcribing recorded interviews or webinars alongside regular calls. Plans start at $9.99/month, but hours are capped monthly rather than pooled, and multi-speaker overlap needs a manual correction pass.</li>
 </ul>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['transkriptor']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Transkriptor →</a>
+</div>
 
 <h2 id="final-verdict">Final Verdict: Best AI Meeting Tools 2026</h2>
 <p>For most teams and businesses recording more than 4–5 meetings per week in 2026, <a href="https://fireflies.ai/?fpr=navneet89" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Fireflies.ai</a> offers the strongest combination of meeting intelligence depth, CRM integration, and cost efficiency.</p>

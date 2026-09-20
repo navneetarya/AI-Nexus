@@ -7,6 +7,7 @@
 // Internal links: /blog/best-ai-tools-for-youtubers-2026 · /blog/best-ai-tools-for-content-creators-free-2026 · /blog/best-ai-podcast-tools-2026 · /best-ai-video-tools · /compare/murf-ai-vs-elevenlabs
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-tools-for-youtube-creators-2026',
@@ -271,6 +272,9 @@ const post: BlogPost = {
 <p>InVideo AI then produces a full video, with an AI-generated script, matched stock footage for every scene, AI voiceover narration, animated captions, background music, and scene transitions. The output needs 15–20 minutes of review and clip-swapping, but that gives you a YouTube-ready video in 30–40 minutes total.</p>
 <p>For creators running topic-driven informational channels, top 10 lists, explainers, news commentary, finance content, InVideo AI enables publishing 3–4 videos a week with no proportional time cost. The voiceover quality is functional but noticeably below ElevenLabs for narration-forward channels.</p>
 <p>For those channels, pairing InVideo's video generation with ElevenLabs voice gives a meaningfully better output. For high-volume faceless channels where voice quality matters less than content quantity and SEO, InVideo's built-in voice is enough. Explore how AI tools handle content creation workflows in our <a href="/blog/best-ai-tools-for-content-creators-free-2026/" style="color:#0ea5e9;font-weight:600;">best free AI tools for content creators →</a></p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>
+</div>
 
 <img src="https://images.unsplash.com/photo-1726066012749-f81bf4422d4e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creator holding a phone in front of a laptop for content planning" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 

@@ -205,6 +205,7 @@ const post: BlogPost = {
   <li><strong>Bolt pros/cons:</strong> Best framework flexibility and code quality, but backend setup is manual work.</li>
   <li><strong>v0 pros/cons:</strong> Highest visual polish per component, but it never produces a deployable app on its own.</li>
 </ul>
+<p>Two adjacent tools are worth knowing about even though neither is a vibe-coding app builder in this sense: <a href="/tools/wegic/" style="color:rgb(13,148,136);">Wegic</a> covers the narrower case of a chat-built marketing site rather than a full-stack app with a database, and <a href="/tools/creao-ai/" style="color:rgb(13,148,136);">CREAO</a> is for saving a repeatable task as a reusable agent, not building app UI.</p>
 <div style="margin:14px 0 0;">
   <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Building with Lovable →</a>
 </div>

@@ -1,4 +1,5 @@
 ﻿import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-tools-for-startups-2026',
@@ -152,6 +153,14 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://github.com/features/copilot" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit GitHub Copilot →</a>
 </div>
+
+<h2>Also Worth Considering: Wegic for a Pre-Launch Site</h2>
+<p>Before any of the five tools above matter, most early founders need one thing live fast: a simple site to point investors, waitlist signups, or early customers to. <a href="/tools/wegic/" style="color:var(--a1);font-weight:600;">Wegic</a> builds that by conversation rather than a drag-and-drop editor — describe the company, answer a few follow-ups, and a responsive site comes back in about a minute, with the underlying code exportable if you outgrow it.</p>
+<p>It's not a fit for a product with real application logic — that's a job for a code-first tool or one of the vibe-coding builders in <a href="/blog/best-vibe-coding-tools-2026/" style="color:var(--a1);">Best Vibe Coding Tools 2026</a>. But for a landing page or a simple marketing site while the actual product is still being built, it's the fastest path there. Pricing is credit-based and has shifted more than once, so confirm current rates before buying.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['wegic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Wegic →</a>
+</div>
+
 <h2>How to Roll Out an AI Stack Without Wasting a Subscription</h2>
 <p>Most startups overbuy AI tools in month one and use a fraction of what they pay for. A better sequence:</p>
 <ol style="margin:12px 0 12px 24px;line-height:2;">
