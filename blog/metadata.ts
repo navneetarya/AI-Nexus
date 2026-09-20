@@ -21,6 +21,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-transcription-software-2026",
+    "title": "Best AI Transcription Software 2026: Transkriptor vs Otter.ai vs Descript vs Fireflies vs Rev",
+    "seoTitle": "Best AI Transcription Software 2026: 5 Tools Compared",
+    "metaDescription": "Best AI transcription software 2026 compared: Transkriptor, Otter.ai, Descript, Fireflies.ai, and Rev — real pricing, accuracy, language support, and which one fits your workflow.",
+    "datePublished": "2026-09-20",
+    "dateModified": "2026-09-20",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "11 min read",
+    "ogImage": "https://ainexustools.online/og-tool-review.webp",
+    "excerpt": "\"AI transcription\" now covers five genuinely different jobs — live meeting notes, text-based video editing, CRM-connected call recording, 100+ language file transcription, and human-verified legal accuracy. Transkriptor, Otter.ai, Descript, Fireflies.ai, and Rev each own one of those jobs. Here is which one actually fits yours, with real 2026 pricing."
+  },
+  {
     "slug": "best-ai-dubbing-tools-2026",
     "title": "Best AI Dubbing Tools 2026: 5 Options Compared (Real Pricing)",
     "seoTitle": "Best AI Dubbing Tools 2026: 5 Options Compared",

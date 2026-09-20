@@ -1795,6 +1795,8 @@ const CATEGORY_OG_MAP = {
 // resolveOgImage() checks this map first before falling through to category images.
 // To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
 const BLOG_OG_MAP = {
+  // Step D (Phase 1 plan): Best AI Transcription Software 2026 — no dedicated OG image yet, fallback
+  'best-ai-transcription-software-2026': `${SITE}/og-tool-review.webp`,
   'best-ai-dubbing-tools-2026': `${SITE}/og/blog/best-ai-dubbing-tools-2026.webp`,
   'how-to-beat-ats-resume-screening-2026': `${SITE}/og-compare.webp`,
   'gamma-ai-review-2026': `${SITE}/og/blog/gamma-ai-review-2026.webp`,
@@ -2542,6 +2544,31 @@ function faqSchema(faqs) {
 // IMPORTANT: Every entry here must match the slug and metadata in blog/*.ts
 // When adding new blog posts, add them here AND in blog/index.ts
 const BLOG_POSTS = [
+  // —— Sep 20: Best AI Transcription Software 2026 — Step D of Phase 1 affiliate plan; Transkriptor's
+  // dedicated pillar/money page. Otter.ai and Rev have no confirmed affiliate program — linked direct. ——
+  {
+    slug: 'best-ai-transcription-software-2026',
+    title: 'Best AI Transcription Software 2026: Transkriptor vs Otter.ai vs Descript vs Fireflies vs Rev',
+    seoTitle: 'Best AI Transcription Software 2026: 5 Tools Compared',
+    metaDescription: 'Best AI transcription software 2026 compared: Transkriptor, Otter.ai, Descript, Fireflies.ai, and Rev — real pricing, accuracy, language support, and which one fits your workflow.',
+    datePublished: '2026-09-20',
+    dateModified: '2026-09-20',
+    readTimeMinutes: 11,
+    ogImage: 'https://ainexustools.online/og-tool-review.webp',
+    quickAnswer: 'Best AI transcription software 2026: Transkriptor (free trial, from $9.99/month) wins for transcribing audio/video files and live Zoom, Teams and Meet calls across 100+ languages. Otter.ai (free 300 min/month, from $8.33/month annual) wins for live, in-meeting notes with real-time captions. Descript (free, from $16/month annual) wins if you need to edit the recording itself, not just get a transcript. Fireflies.ai (free, from $10/month) wins for CRM-connected meeting recording with automatic action items. Rev (free 45 min/month AI, human transcription from $1.99/minute) wins when 99%+ accuracy for a legal or compliance record matters more than speed or price.',
+    faqs: [
+      { q: 'What is the most accurate AI transcription software in 2026?', a: 'On clean, single-speaker English audio, Transkriptor, Otter.ai, Descript, and Fireflies.ai all land in a similar high-90s percent accuracy range. Accuracy drops on every AI tool with overlapping speakers, background noise, and strong accents. Rev is the outlier: its human transcription tier, at $1.99/minute, is the only option here with a 99%+ guaranteed accuracy figure, because an actual person reviews the file.' },
+      { q: 'Is there a free AI transcription tool that is actually usable?', a: 'Otter.ai\'s free Basic plan is the most usable free tier: 300 transcription minutes a month with live captioning, though each conversation caps at 30 minutes. Fireflies.ai and Descript also have free plans. Transkriptor and Rev offer a free trial (Rev: 45 AI minutes/month indefinitely) rather than an ongoing generous free plan.' },
+      { q: 'Otter.ai vs Transkriptor — which is better?', a: 'Otter.ai is built around joining a live meeting and generating notes in real time. Transkriptor works both ways — it joins live calls like Otter, but is also built to handle a backlog of existing audio/video files across 100+ languages. If your problem is a folder of old recordings in multiple languages, Transkriptor is the better fit.' },
+      { q: 'Can Descript actually transcribe audio, or is it just an editor?', a: 'Both. Descript transcribes any audio or video file as its first step, then lets you edit the recording by editing that transcript directly. If all you need is a plain transcript with no editing, a dedicated tool like Transkriptor or Otter.ai is simpler and usually cheaper.' },
+      { q: 'What is the cheapest AI transcription tool in 2026?', a: 'Otter.ai and Rev both have usable free plans. For the cheapest paid tier with real monthly volume, Transkriptor\'s Lite plan at $9.99/month for 5 hours is the lowest entry price among the paid plans compared here.' },
+      { q: 'Does any AI transcription tool guarantee 99% accuracy?', a: 'Only Rev, and only on its human transcription tier ($1.99/minute), which routes audio to an actual person for review. Every AI-only tool, including Transkriptor, Otter.ai, Descript, and Fireflies, publishes accuracy in the low-to-mid 90s percent range on clean audio with no 99%+ guarantee.' },
+      { q: 'Which transcription tool supports the most languages?', a: 'Transkriptor, at 100+ supported languages, has the broadest stated coverage among the tools compared here. Fireflies.ai supports 30+ languages for meetings. Otter.ai and Descript are strongest in English and a handful of other major languages.' },
+      { q: 'Can these tools transcribe Zoom, Teams, or Google Meet calls automatically?', a: 'Transkriptor, Otter.ai, and Fireflies.ai can all join and record live meetings across Zoom, Teams, and Google Meet automatically. Descript and Rev are primarily upload-based, requiring a separate recording step first.' },
+      { q: 'Is AI transcription good enough for legal or medical use in 2026?', a: 'Not on its own in most cases. None of the pure-AI options here publish an accuracy guarantee high enough for a defensible legal or medical record. Rev is the exception, offering human review at $1.99/minute specifically for that use case.' },
+    ],
+    mentionedTools: ['transkriptor', 'descript', 'fireflies'],
+  },
   // —— Sep 18: Best AI Dubbing Tools 2026 — new category, zero prior overlap on this site ——
   // Target keyword: "best ai dubbing tools 2026" — ElevenLabs is the only affiliate tool in this post;
   // HeyGen, Rask AI, Synthesia, and Dubverse have no affiliate program and are linked honestly.
@@ -5168,6 +5195,14 @@ const RELATED_LINKS = {
 // ── Task 5/6 Fix: Related links map for blog posts — links pillar posts to their
 // satellite/cluster posts (and vice versa) for internal authority distribution.
 const BLOG_RELATED_LINKS = {
+  // —— Sep 20: Best AI Transcription Software 2026 — links back to the meeting-tools comparison,
+  // the voice-dictation post (adjacent audio-to-text intent), and Transkriptor's own tool page ——
+  'best-ai-transcription-software-2026': [
+    ['/blog/best-ai-meeting-tools-2026/', 'Best AI Meeting Tools 2026'],
+    ['/blog/best-ai-voice-dictation-tools-2026/', 'Best AI Voice Dictation Tools 2026'],
+    ['/tools/transkriptor/', 'Transkriptor Review'],
+  ],
+
   // —— Sep 18: Best AI Dubbing Tools 2026 — new category; links to the audio category page,
   // the ElevenLabs alternatives/pricing posts, and the Murf vs ElevenLabs compare page ——
   'best-ai-dubbing-tools-2026': [

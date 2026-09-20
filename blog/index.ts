@@ -254,8 +254,13 @@ import post95 from './murf-ai-pricing-2026';
 // T4.6: Best AI Dubbing Tools 2026 — new category, zero prior overlap on this site.
 // Target keyword: "best ai dubbing tools 2026". ElevenLabs is the only affiliate tool.
 import post96 from './best-ai-dubbing-tools-2026';
+// Step D (Phase 1 plan) — Best AI Transcription Software 2026 — Transkriptor pillar/money page
+// Target keyword: "best ai transcription software 2026" — Transkriptor, Otter.ai, Descript, Fireflies, Rev
+// Affiliates: Transkriptor (Impact) + Descript + Fireflies.ai (all active) — Otter.ai + Rev linked direct
+import post97 from './best-ai-transcription-software-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post97, // Sep 20 — Best AI Transcription Software 2026 (Transkriptor, Otter.ai, Descript, Fireflies, Rev) — pinned first for freshness
   post96, // Sep 18 — Best AI Dubbing Tools 2026 (ElevenLabs, HeyGen, Rask AI, Synthesia, Dubverse) — pinned first for freshness
   post95, // Sep 16 — Murf AI Pricing: What Each Plan Actually Buys You (2026) — pinned first for freshness
   post94, // Sep 14 — How to Beat ATS Resume Screening in 2026 (What Actually Works) — pinned first for freshness
