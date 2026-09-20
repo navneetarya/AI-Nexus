@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Recruitment Tools 2026: 8 Platforms for Smarter Hiring',
   metaDescription: 'Independent analysis of 8 AI recruitment platforms in 2026 — sourcing, ATS, screening, interview intelligence. Pricing and INR costs compared by team size.',
   datePublished: '2026-06-26',
-  dateModified: '2026-06-26',
+  dateModified: '2026-08-22',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '11 min read',

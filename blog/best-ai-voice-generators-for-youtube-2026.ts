@@ -19,7 +19,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Generator for YouTube 2026',
   metaDescription: 'The best AI voice generator for YouTube in 2026, compared across short-form, long-form, explainer, and faceless channel formats. ElevenLabs vs Murf AI, real pricing.',
   datePublished: '2026-08-16',
-  dateModified: '2026-08-16',
+  dateModified: '2026-09-10',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '11 min read',

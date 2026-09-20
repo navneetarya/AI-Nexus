@@ -15,7 +15,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Coding Agents 2026: Devin vs Claude Code Ranked',
   metaDescription: 'Independent analysis of 6 AI coding agents in 2026: Devin, Claude Code, SWE-Agent, Cursor Agent, and more. SWE-bench scores, pricing, and autonomy compared.',
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-09-18',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '13 min read',

@@ -10,7 +10,7 @@ const post: BlogPost = {
   seoTitle: 'Perplexity vs ChatGPT vs Claude 2026: Best $20 AI Tool',
   metaDescription: 'Perplexity Pro, ChatGPT Plus, and Claude Pro all cost $20/month. Ran all three through the same 5 freelance tasks — here\'s the honest verdict by use case.',
   datePublished: '2026-05-19',
-  dateModified: '2026-08-06',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '12 min read',

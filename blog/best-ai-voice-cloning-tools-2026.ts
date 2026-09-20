@@ -18,7 +18,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Cloning Tools 2026: 4 Ranked',
   metaDescription: 'The best AI voice cloning tools in 2026, ranked on clone quality and pricing. ElevenLabs, Descript, Resemble AI & Play.ht compared, plus consent rules.',
   datePublished: '2026-08-18',
-  dateModified: '2026-08-18',
+  dateModified: '2026-09-10',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '11 min read',

@@ -39,7 +39,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Interview Prep Tools 2026: 5 Ranked',
   metaDescription: 'Final Round AI, Yoodli, Big Interview, Pramp & Huru compared on 2026 pricing and the cheating risk most guides skip. Best ai interview prep tools, ranked.',
   datePublished: '2026-08-12',
-  dateModified: '2026-08-12',
+  dateModified: '2026-08-18',
   author: 'Navneet Arya',
   category: Category.PRODUCTIVITY,
   readTime: '12 min read',

@@ -70,10 +70,44 @@ const AUTHOR_PERSON = {
 // URL confirmed live before use: https://hai.stanford.edu/ai-index/2026-ai-index-report
 const AUTHORITY_CITATION_HTML = `<p style="font-size:.9rem;line-height:1.7;color:#444;margin-top:14px">According to the <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener noreferrer">2026 AI Index Report</a> from Stanford's Institute for Human-Centered Artificial Intelligence, AI adoption continues to accelerate across every professional sector as technical capabilities and investment both increase — which is exactly why picking the tool that matches your specific workflow matters more than picking the most-hyped one.</p>`;
 const YEAR   = new Date().getFullYear();
-const TODAY  = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+const TODAY  = new Date().toISOString().split('T')[0]; // YYYY-MM-DD — build logs ONLY, never a freshness signal
+
+// ── Freshness dates: real edit dates only, never the build date ──────────────
+// Every dateModified / sitemap <lastmod> / "Updated …" label now comes from a real edit:
+//   • blog posts   → post.dateModified (written by scripts/update-blog-date-modified.mjs from git history)
+//   • tool pages   → LAST_MODIFIED[slug], else the tool's own "Last verified" month
+//   • compare      → lastUpdated in pages/compare-data.ts
+//   • static pages → PAGE_LAST_UPDATED below — BUMP THE DATE when you change that page's content
+const STABLE_FALLBACK_DATE = '2026-05-01';
+const PAGE_LAST_UPDATED = {
+  home:        '2026-09-20',
+  about:       '2026-09-20',
+  methodology: '2026-09-20',
+};
+const MONTH_NUMBERS = {
+  January:'01', February:'02', March:'03', April:'04', May:'05', June:'06',
+  July:'07', August:'08', September:'09', October:'10', November:'11', December:'12',
+};
+// compare-data.ts is the source of truth for compare-article edit dates (read at build time)
+const COMPARE_LAST_UPDATED = (() => {
+  try {
+    const src = fs.readFileSync(path.join(ROOT, 'pages', 'compare-data.ts'), 'utf8');
+    const out = {};
+    for (const chunk of src.split("\n    slug: '").slice(1)) {
+      const slug = chunk.slice(0, chunk.indexOf("'"));
+      const m = chunk.match(/lastUpdated:\s*'(\d{4}-\d{2}-\d{2})'/);
+      if (m) out[slug] = m[1];
+    }
+    return out;
+  } catch { return {}; }
+})();
+function monthLabelToISO(label) {
+  const parts = String(label || '').split(' ');
+  return parts.length === 2 && MONTH_NUMBERS[parts[0]] ? `${parts[1]}-${MONTH_NUMBERS[parts[0]]}-01` : STABLE_FALLBACK_DATE;
+}
 
 // Task 7: Per-tool last-modified dates — used for sitemap <lastmod> on tool pages
-// Slugs not listed here fall back to TODAY (build date)
+// Slugs not listed here fall back to the tool's own "Last verified" month (never the build date)
 const LAST_MODIFIED = {
   'grammarly':   '2026-05-23',
   'rytr':        '2026-05-23',
@@ -279,7 +313,7 @@ const TOOLS = [
     description: 'PhotoRoom removes backgrounds and creates professional product photos in seconds. The go-to tool for e-commerce sellers, marketers, and social media creators.',
     pricing: 'Free + $9.99/month', bestFor: 'E-commerce sellers & creators',
     rating: 4.6, lastTested: 'March 2026',
-    reviewBody: 'PhotoRoom is the most accurate background removal and product photography tool available in 2026 — used by 150 million people including e-commerce sellers on Amazon, Flipkart, and Meesho. In independent testing across 20 product photo types, PhotoRoom produced clean results in 17 of 20 cases, correctly handling hair, transparent objects, mesh textures, and reflective surfaces that competing tools mishandled. The mobile app is the standout workflow: photograph a product in natural light, tap to remove the background, select a white studio preset, and have a publish-ready product image in under 90 seconds — no studio equipment needed. The free plan includes background removal with a watermark, which is sufficient for testing. The Pro plan at $9.99/month unlocks batch processing (100+ images processed simultaneously), brand kit with saved backgrounds and colour settings, and watermark-free commercial exports. For Indian e-commerce sellers with large catalogues, batch processing compresses what would be days of manual work into minutes. Main limitation: AI-generated lifestyle backgrounds occasionally look synthetic when the source image has a strong directional light source. For white and solid-colour backgrounds, the output is consistently professional-grade.',
+    reviewBody: 'PhotoRoom is the most accurate background removal and product photography tool available in 2026 — used by 150 million people including e-commerce sellers on Amazon, Flipkart, and Meesho. PhotoRoom is built specifically for product photography, with background removal aimed at hair, transparent objects, mesh textures, and reflective surfaces. The mobile app is the standout workflow: photograph a product in natural light, tap to remove the background, select a white studio preset, and have a publish-ready product image in under 90 seconds — no studio equipment needed. The free plan includes background removal with a watermark, which is sufficient for testing. The Pro plan at $9.99/month unlocks batch processing (100+ images processed simultaneously), brand kit with saved backgrounds and colour settings, and watermark-free commercial exports. For Indian e-commerce sellers with large catalogues, batch processing compresses what would be days of manual work into minutes. Main limitation: AI-generated lifestyle backgrounds occasionally look synthetic when the source image has a strong directional light source. For white and solid-colour backgrounds, the output is consistently professional-grade.',
   },
   {
     slug: 'looka', name: 'Looka', category: 'Image',
@@ -461,7 +495,7 @@ const TOOLS = [
     pricing: 'Free + $25/month', bestFor: 'Non-developers, solopreneurs & rapid prototypers',
     rating: 4.5, lastTested: 'June 2026',
     seoTitle: 'Lovable Review 2026 — Vibe Coding, Free Plan & Real App Test | AI Nexus',
-    metaDescription: 'Lovable review 2026 — full-stack React apps from prompts. Free plan tested, $25/month Starter pricing, and who should use it instead of hiring a developer.',
+    metaDescription: 'Lovable review 2026 — full-stack React apps from prompts. Free plan limits checked, $25/month Starter pricing, and who should use it instead of hiring a developer.',
     reviewBody: 'Lovable is the fastest path from idea to deployed full-stack web application in 2026 — no code, no setup, no developer required. Type a description of what you want to build ("a task manager with login, task list, due dates, and a dashboard") and Lovable generates a complete React + Supabase application with authentication, database, and responsive UI in under 2 minutes. The deployment is immediate: every app gets a live subdomain before you touch a setting. For non-developers, solopreneurs, and rapid prototypers, this eliminates the biggest barrier to building digital tools. The GitHub sync feature means developers can take the generated codebase and iterate manually — the output is a real React repo, not a locked proprietary format. The 30% recurring affiliate commission is the strongest in the vibe-coding category, making Lovable the most attractive tool to recommend for creators with developer audiences. The free plan gives 5 messages per day with no credit card — enough to prototype a real app and evaluate the quality before committing. The Starter plan at $25/month gives 100 messages per month, 3 private projects, custom domain support, and full Supabase integration. The main limitation is complexity ceiling: for applications requiring advanced state management, custom infrastructure, or strict data security compliance, generated code needs a developer to review. Lovable is built for MVPs and rapid prototyping — the fastest path to a working demo, not a production-hardened enterprise system. For established businesses with complex requirements, a developer reviewing and extending the generated code is the right workflow.',
   },
 
@@ -1770,7 +1804,7 @@ function resolveOgImage(slug) {
   return `${SITE}/og-image.png`; // homepage/static pages keep existing PNG
 }
 
-function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, bodyHtml = null, readTimeHtml = '', ogImage = null, ogType = 'website' }) {
+function buildPage(template, { title, description, canonical, schemas = [], robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', datePublished = null, dateModified = null, bodyHtml = null, readTimeHtml = '', ogImage = null, ogType = 'website' }) {
   let html = template;
 
   // Title
@@ -1835,7 +1869,7 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
   // a baseline Article node here whenever the caller didn't already supply one
   // (an explicit Review/Article schema always wins — this never overrides it).
   const hasArticleType = schemas.some(s => s && (s['@type'] === 'Article' || s['@type'] === 'Review'));
-  const finalSchemas = hasArticleType ? schemas : [...schemas, articleSchema({ title, description, canonical, datePublished })];
+  const finalSchemas = hasArticleType ? schemas : [...schemas, articleSchema({ title, description, canonical, datePublished, dateModified })];
 
   // Inject page-specific JSON-LD schemas (inserted just before </head>)
   if (finalSchemas.length > 0) {
@@ -1845,23 +1879,16 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
     html = html.replace('</head>', `${blocks}\n  </head>`);
   }
 
-  // GEO Medium fix: Organization sameAs only carried one entry (X/Twitter) in the
-  // base template's JSON-LD graph, which is what fed the report's "0/100 Brand
-  // Authority" and "sameAs targets: 0" findings. Expand it to match the Person's
-  // sameAs set (LinkedIn, GitHub, Medium, Quora) on every page. The regex targets
-  // the single-entry array specifically so it never touches the Person node's
-  // 5-entry sameAs array elsewhere in the same JSON-LD block.
-  html = html.replace(
-    /"sameAs":\s*\[\s*"https:\/\/x\.com\/aryanavneet"\s*\]/,
-    `"sameAs": [\n            "https://x.com/aryanavneet",\n            "https://www.linkedin.com/in/navneetarya/",\n            "https://github.com/navneetarya",\n            "https://medium.com/@navneetarya1989",\n            "https://www.quora.com/profile/Navneet-Arya"\n          ]`
-  );
+  // Organization sameAs now lives directly in index.html (single source of truth) —
+  // the old build-time regex patch was removed because it silently no-ops if that array changes.
 
   // ── Body content injection for non-JS crawlers & GEO signals ────────────────
   // React replaces <div id="root"> contents on mount. Until then, crawlers see
   // a real H1, author byline, datePublished, and description — boosting GEO score
   // signals: H1 (+10%), Author (+10%), Date (+5%), Content depth (+5%).
-  const publishDate = datePublished || TODAY;
-  const displayDate = new Date(publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  const publishDate = datePublished || STABLE_FALLBACK_DATE;
+  const modifiedDate = dateModified || publishDate;   // real edit date — never the build date
+  const displayDate = new Date(modifiedDate + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   // Strip "| AI Nexus" suffix for the H1 so it reads naturally
   const h1Text = esc(title.replace(/ \| AI Nexus$/, ''));
   // GEO Quick Win: byline linked to author bio page — the report flagged "Link
@@ -1885,13 +1912,13 @@ function buildPage(template, { title, description, canonical, schemas = [], robo
   const pageBody = bodyHtml
     ? `<div id="pre-render" style="font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px 16px">
       <h1 style="font-size:1.6rem;line-height:1.25;margin-bottom:12px">${h1Text}</h1>
-      <p style="color:#555;font-size:.875rem;margin-bottom:16px">${bylineHtml} · <time datetime="${publishDate}">Updated ${displayDate}</time>${readTimeHtml}</p>
+      <p style="color:#555;font-size:.875rem;margin-bottom:16px">${bylineHtml} · <time datetime="${modifiedDate}">Updated ${displayDate}</time>${readTimeHtml}</p>
       ${bodyHtml}
       ${trustFooterHtml}
     </div>`
     : `<div id="pre-render" style="font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px 16px">
       <h1 style="font-size:1.6rem;line-height:1.25;margin-bottom:12px">${h1Text}</h1>
-      <p style="color:#555;font-size:.875rem;margin-bottom:16px">${bylineHtml} · <time datetime="${publishDate}">Updated ${displayDate}</time></p>
+      <p style="color:#555;font-size:.875rem;margin-bottom:16px">${bylineHtml} · <time datetime="${modifiedDate}">Updated ${displayDate}</time></p>
       <p style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
       ${trustFooterHtml}
     </div>`;
@@ -2051,7 +2078,7 @@ function reviewSchema(tool, canonical) {
     September:'09', October:'10', November:'11', December:'12',
   };
   const parts = (tool.lastTested || '').split(' ');
-  const publishDate = parts.length === 2 ? `${parts[1]}-${months[parts[0]] || '01'}-01` : TODAY;
+  const publishDate = parts.length === 2 ? `${parts[1]}-${months[parts[0]] || '01'}-01` : STABLE_FALLBACK_DATE;
 
   return {
     '@context': 'https://schema.org',
@@ -2060,7 +2087,7 @@ function reviewSchema(tool, canonical) {
     description: `${AUTHOR}'s personal review of ${tool.name}: ${tool.tagline}`,
     url: canonical,
     datePublished: publishDate,
-    dateModified: TODAY,
+    dateModified: LAST_MODIFIED[tool.slug] ?? publishDate,
     author: AUTHOR_PERSON,
     publisher: {
       '@type': 'Organization',
@@ -2121,7 +2148,7 @@ function claimReviewSchema(tool, canonical) {
     September:'09', October:'10', November:'11', December:'12',
   };
   const parts = (tool.lastTested || '').split(' ');
-  const publishDate = parts.length === 2 ? `${parts[1]}-${months[parts[0]] || '01'}-01` : TODAY;
+  const publishDate = parts.length === 2 ? `${parts[1]}-${months[parts[0]] || '01'}-01` : STABLE_FALLBACK_DATE;
 
   return {
     '@context': 'https://schema.org',
@@ -2154,15 +2181,15 @@ function claimReviewSchema(tool, canonical) {
 }
 
 // FIX 2 (SEO-High): Added wordCount + image — both recommended by Google's Article spec
-function articleSchema({ title, description, canonical, wordCount, imageUrl, datePublished, inLanguage = 'en-US', areaServed = null }) {
+function articleSchema({ title, description, canonical, wordCount, imageUrl, datePublished, dateModified = null, inLanguage = 'en-US', areaServed = null }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
     description,
     url: canonical,
-    datePublished: datePublished || TODAY,
-    dateModified: TODAY,
+    datePublished: datePublished || STABLE_FALLBACK_DATE,
+    dateModified: dateModified || datePublished || STABLE_FALLBACK_DATE,
     inLanguage,
     ...(areaServed ? { areaServed } : {}),
     wordCount: wordCount || 1500,
@@ -2258,31 +2285,31 @@ function generateSitemap() {
 
   // Homepage
   blocks.push(urlBlock({
-    loc: `${SITE}/`, priority: '1.0', freq: 'weekly', mod: TODAY,
+    loc: `${SITE}/`, priority: '1.0', freq: 'weekly', mod: PAGE_LAST_UPDATED.home,
     images: [{ loc: `${SITE}/og-image.png`, title: 'AI Nexus — Independently Researched AI Tool Reviews' }],
   }));
 
   // Static pages
-  blocks.push(urlBlock({ loc: `${SITE}/about/`,            priority: '0.7', freq: 'monthly', mod: '2026-05-01' }));
+  blocks.push(urlBlock({ loc: `${SITE}/about/`,            priority: '0.7', freq: 'monthly', mod: PAGE_LAST_UPDATED.about }));
   blocks.push(urlBlock({ loc: `${SITE}/contact/`,          priority: '0.5', freq: 'yearly',  mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/privacy/`,          priority: '0.4', freq: 'yearly',  mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/terms/`,            priority: '0.4', freq: 'yearly',  mod: '2026-06-26' }));
   blocks.push(urlBlock({ loc: `${SITE}/disclosure/`,        priority: '0.3', freq: 'yearly',  mod: '2026-05-01' }));
-  blocks.push(urlBlock({ loc: `${SITE}/methodology/`,       priority: '0.7', freq: 'monthly', mod: '2026-05-01' }));
+  blocks.push(urlBlock({ loc: `${SITE}/methodology/`,       priority: '0.7', freq: 'monthly', mod: PAGE_LAST_UPDATED.methodology }));
   blocks.push(urlBlock({ loc: `${SITE}/editorial-policy/`,  priority: '0.4', freq: 'yearly',  mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/how-we-analyze-ai-tools/`, priority: '0.5', freq: 'yearly', mod: '2026-05-01' }));
-  blocks.push(urlBlock({ loc: `${SITE}/glossary/`,          priority: '0.8', freq: 'monthly', mod: TODAY }));
-  blocks.push(urlBlock({ loc: `${SITE}/best-free-ai-tools/`,priority: '0.9', freq: 'weekly',  mod: TODAY,
+  blocks.push(urlBlock({ loc: `${SITE}/glossary/`,          priority: '0.8', freq: 'monthly', mod: STABLE_FALLBACK_DATE }));
+  blocks.push(urlBlock({ loc: `${SITE}/best-free-ai-tools/`,priority: '0.9', freq: 'weekly',  mod: '2026-05-15',
     images: [{ loc: `${SITE}/og-image.png`, title: 'Best Free AI Tools 2026 — AI Nexus' }],
   }));
 
   // W3-T15: India landing page — priority 0.9, weekly — targets "best AI tools India 2026" (2,800/mo KD 16)
-  blocks.push(urlBlock({ loc: `${SITE}/best-ai-tools-india/`, priority: '0.9', freq: 'weekly', mod: TODAY,
+  blocks.push(urlBlock({ loc: `${SITE}/best-ai-tools-india/`, priority: '0.9', freq: 'weekly', mod: '2026-05-15',
     images: [{ loc: `${SITE}/og-india-guide.webp`, title: 'Best AI Tools for India 2026 — INR Pricing — AI Nexus' }],
   }));
 
   // Keyword gap landing page — "best ai logo maker free" (4,400/mo KD 16)
-  blocks.push(urlBlock({ loc: `${SITE}/best-ai-logo-makers/`, priority: '0.85', freq: 'monthly', mod: TODAY }));
+  blocks.push(urlBlock({ loc: `${SITE}/best-ai-logo-makers/`, priority: '0.85', freq: 'monthly', mod: '2026-05-19' }));
 
   // Category landing pages
   const CATEGORY_SLUGS = [
@@ -2290,14 +2317,14 @@ function generateSitemap() {
     'best-ai-marketing-tools', 'best-ai-design-tools', 'best-ai-coding-tools', 'best-ai-productivity-tools',
   ];
   for (const slug of CATEGORY_SLUGS) {
-    blocks.push(urlBlock({ loc: `${SITE}/${slug}/`, priority: '0.9', freq: 'weekly', mod: TODAY,
+    blocks.push(urlBlock({ loc: `${SITE}/${slug}/`, priority: '0.9', freq: 'weekly', mod: STABLE_FALLBACK_DATE,
       images: [{ loc: `${SITE}/og-image.png`, title: `${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} 2026` }],
     }));
   }
 
   // Blog list + individual blog posts
   blocks.push(urlBlock({
-    loc: `${SITE}/blog/`, priority: '0.8', freq: 'weekly', mod: TODAY,
+    loc: `${SITE}/blog/`, priority: '0.8', freq: 'weekly', mod: BLOG_POSTS.map(p => p.dateModified).filter(Boolean).sort().pop() || STABLE_FALLBACK_DATE,
     images: [{ loc: `${SITE}/og-image.png`, title: 'AI Nexus Blog — AI Tool Reviews and Guides' }],
   }));
   for (const post of BLOG_POSTS) {
@@ -2308,10 +2335,10 @@ function generateSitemap() {
   }
 
   // Compare pages — include the /compare/ index page
-  blocks.push(urlBlock({ loc: `${SITE}/compare/`, priority: '0.8', freq: 'weekly', mod: TODAY }));
+  blocks.push(urlBlock({ loc: `${SITE}/compare/`, priority: '0.8', freq: 'weekly', mod: Object.values(COMPARE_LAST_UPDATED).sort().pop() || STABLE_FALLBACK_DATE }));
   for (const a of COMPARE_ARTICLES) {
     blocks.push(urlBlock({
-      loc: `${SITE}/compare/${a.slug}/`, priority: '0.95', freq: 'monthly', mod: TODAY,
+      loc: `${SITE}/compare/${a.slug}/`, priority: '0.95', freq: 'monthly', mod: COMPARE_LAST_UPDATED[a.slug] || STABLE_FALLBACK_DATE,
       images: [{ loc: `${SITE}/og-image.png`, title: a.title }],
     }));
   }
@@ -2322,7 +2349,7 @@ function generateSitemap() {
       loc: `${SITE}/tools/${t.slug}/`,
       priority: affiliatePicks.has(t.slug) ? '0.9' : '0.8',
       freq: 'monthly',
-      mod: LAST_MODIFIED[t.slug] ?? TODAY,
+      mod: LAST_MODIFIED[t.slug] ?? monthLabelToISO(t.lastTested),
       images: [{ loc: `${SITE}/logos/${t.slug}.png`, title: `${t.name} — ${t.tagline}` }],
     }));
   }
@@ -5594,7 +5621,7 @@ for (const tool of TOOLS) {
     // Track C (GSC India Fix): new tools added in Track A — need en-IN hreflang on tool pages
     'bolt','v0','github-copilot','claude-code',
   ]);
-  let toolPageHtml = buildPage(template, { title, description, canonical, schemas, bodyHtml: toolBodyHtml, ogImage: resolveOgImage(`tools/${tool.slug}`), ogType: 'product' });
+  let toolPageHtml = buildPage(template, { title, description, canonical, schemas, dateModified: LAST_MODIFIED[tool.slug] ?? monthLabelToISO(tool.lastTested), bodyHtml: toolBodyHtml, ogImage: resolveOgImage(`tools/${tool.slug}`), ogType: 'product' });
   if (INDIA_TOOL_SLUGS.has(tool.slug)) {
     const indiaHreflang = `    <link rel="alternate" hreflang="en-IN" href="${canonical}" />\n    <link rel="alternate" hreflang="en" href="${canonical}" />\n    <link rel="alternate" hreflang="x-default" href="${SITE}/" />`;
     toolPageHtml = toolPageHtml.replace('</head>', `${indiaHreflang}\n  </head>`);
@@ -5632,7 +5659,7 @@ for (const art of COMPARE_ARTICLES) {
   const canonical = `${SITE}/compare/${art.slug}/`;
   const productListSchema = compareProductListSchema(art.slug, canonical);
   const schemas = [
-    articleSchema({ title: art.title, description: art.metaDescription, canonical, imageUrl: resolveOgImage(`compare/${art.slug}`), areaServed: 'IN' }),
+    articleSchema({ title: art.title, description: art.metaDescription, canonical, dateModified: COMPARE_LAST_UPDATED[art.slug] || STABLE_FALLBACK_DATE, imageUrl: resolveOgImage(`compare/${art.slug}`), areaServed: 'IN' }),
 	
     breadcrumbs([
       [1, 'AI Nexus', SITE],
@@ -5655,7 +5682,7 @@ if (art.faqs && art.faqs.length > 0) {
   // H7 (SEO-High): use seoTitle (≤60 chars) for <title> tag if defined
   writeRoute(
     `compare/${art.slug}`,
-    buildPage(template, { title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas, ogImage: resolveOgImage(`compare/${art.slug}`), ogType: 'article' })
+    buildPage(template, { dateModified: COMPARE_LAST_UPDATED[art.slug] || STABLE_FALLBACK_DATE, title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas, ogImage: resolveOgImage(`compare/${art.slug}`), ogType: 'article' })
   );
 }
 
@@ -5715,9 +5742,9 @@ console.log('\nStatic pages:');
     ]),
   ];
   const aboutBodyHtml = `
-    <p style="font-size:1rem;line-height:1.7;color:#333">I'm Navneet Arya — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools for real-world workflows first, then write about them. I've systematically researched 24+ tools across writing, audio, video, design, coding, and productivity since 2022, selecting tools for actual workflows before recommending them to others.</p>
+    <p style="font-size:1rem;line-height:1.7;color:#333">I'm Navneet Arya — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools with real-world workflows in mind before writing about them. I've researched ${TOOLS.length} tools across writing, audio, video, design, coding, and productivity, comparing official documentation, verified user reviews, and pricing before recommending any of them.</p>
     <p style="font-size:1rem;line-height:1.7;color:#333;margin-top:14px">I built AI Nexus because every "best AI tools" article I found was clearly written by someone who had never actually opened the products. Review sites were copying marketing pages and calling it a review. I got frustrated and decided to build something where every review is based on independent research — official documentation, verified user reviews, and real pricing data.</p>
-    <p style="font-size:1rem;line-height:1.7;color:#333;margin-top:14px">Every tool on this site is independently researched — verified against official documentation, aggregated from 100+ verified user reviews on Trustpilot, G2, and Capterra, and cross-referenced with Reddit community sentiment before I write about it. I focus on what works for solo creators, freelancers, and small teams — not enterprise buyers with unlimited budgets.</p>
+    <p style="font-size:1rem;line-height:1.7;color:#333;margin-top:14px">Every tool on this site is researched from public sources — verified against official documentation, aggregated from 100+ verified user reviews on Trustpilot, G2, and Capterra, and cross-referenced with Reddit community sentiment before I write about it. I focus on what works for solo creators, freelancers, and small teams — not enterprise buyers with unlimited budgets.</p>
     <h2 style="font-size:1.2rem;margin-top:28px">What I've researched</h2>
     <p style="font-size:.95rem;line-height:1.6;color:#555">Independently researched AI tools across 8 categories, verified against official docs, user reviews, and live pricing data since 2022: Writing tools (Grammarly, Rytr, QuillBot, Writesonic, Jasper, Frase, ProWritingAid), AI image tools (Leonardo.ai, PhotoRoom, Midjourney, Looka, Canva AI, Adobe Firefly), Video AI tools (InVideo AI, Pictory, Opus Clip, Descript, Kapwing), Podcast &amp; audio (Podcastle, Murf AI, ElevenLabs, Riverside.fm, Adobe Podcast), Productivity apps (Taskade, Notion AI, Perplexity, Otter.ai, Motion, Reclaim), Marketing tools (Ocoya, Buffer, Hootsuite, Beehiiv, Mailchimp), Coding platforms (Replit, GitHub Copilot, Cursor, v0), and Design tools (Gamma, Beautiful.ai, Canva AI, Figma AI).</p>
     <h2 style="font-size:1.2rem;margin-top:28px">Research methodology — how every review is done</h2>
@@ -5732,7 +5759,7 @@ console.log('\nStatic pages:');
     <h2 style="font-size:1.2rem;margin-top:28px">Full transparency on how this site earns money</h2>
     <p style="font-size:.95rem;line-height:1.6;color:#555">This site earns money through affiliate commissions. When you click a link and sign up for a paid plan, I earn a commission — typically 20–30% of the subscription payment, recurring. This does not affect my reviews. I recommend tools because they're genuinely good, not because the commission is high. I only list tools that I have independently researched and would recommend to a friend, and I have turned down sponsorships from tools I don't think are worth recommending. See the <a href="/disclosure/">full affiliate disclosure</a>.</p>
   `;
-  writeRoute('about', buildPage(template, { title, description, canonical, schemas, bodyHtml: aboutBodyHtml }));
+  writeRoute('about', buildPage(template, { title, description, canonical, schemas, datePublished: '2026-05-01', dateModified: PAGE_LAST_UPDATED.about, bodyHtml: aboutBodyHtml }));
 }
 
 // ── 4. Disclosure page ────────────────────────────────────────────────────────
@@ -5818,7 +5845,7 @@ console.log('\nStatic pages:');
     <ol style="font-size:.95rem;line-height:1.75;color:#555;padding-left:20px">
       <li style="margin-bottom:12px"><strong>Official documentation &amp; interface research</strong> (~20 min) — Free account access and official docs are used to research standard workflows. Every feature claim is checked against the docs before it goes in a review.</li>
       <li style="margin-bottom:12px"><strong>Free plan claim verification</strong> (~15 min) — Each free-tier claim is checked against what the tool actually delivers: whether a card is required, and where "free" features are rate-limited.</li>
-      <li style="margin-bottom:12px"><strong>Analysis of 200+ verified user reviews</strong> (~45 min) — At least 200 verified reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a> are pulled and tagged for recurring complaints and praise.</li>
+      <li style="margin-bottom:12px"><strong>Analysis of 100+ verified user reviews</strong> (~45 min) — At least 100 verified reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a> are pulled and tagged for recurring complaints and praise.</li>
       <li style="margin-bottom:12px"><strong>Reddit sentiment check</strong> (~20 min) — The top posts in relevant subreddits from the past year are read for long-term frustrations that don't surface on review platforms for months.</li>
       <li style="margin-bottom:12px"><strong>Live pricing page verification</strong> (~10 min) — Every tier's price, billing frequency, and cancellation terms are documented straight from the pricing page.</li>
       <li style="margin-bottom:12px"><strong>Feature comparison against 3 nearest competitors</strong> (~30 min) — Key features are mapped against the closest alternatives to build the comparison tables used in every review.</li>
@@ -5829,7 +5856,7 @@ console.log('\nStatic pages:');
     <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does an affiliate commission change the rating?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. Tools are rated before checking whether an affiliate programme exists. Critical reviews have been published for tools with affiliate programmes, and positive reviews for tools without one.</p></div>
     ${categoryByline()}
   `;
-  writeRoute('methodology', buildPage(template, { title, description, canonical, schemas: [...schemas, AUTHOR_PERSON], bodyHtml: methodologyBodyHtml }));
+  writeRoute('methodology', buildPage(template, { title, description, canonical, schemas: [...schemas, AUTHOR_PERSON], datePublished: '2026-05-01', dateModified: PAGE_LAST_UPDATED.methodology, bodyHtml: methodologyBodyHtml }));
 }
 
 // ── Editorial Policy page ─────────────────────────────────────────────────────
@@ -5852,7 +5879,7 @@ console.log('\nStatic pages:');
     <h2 style="font-size:1.15rem;margin-top:22px">What independence looks like in practice</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">In practice, this means a tool with a generous affiliate commission can still receive a critical review if the research supports it, and a tool with no affiliate programme at all can still receive a strong recommendation. Sponsorship offers from tool companies asking for guaranteed positive coverage have been declined; AI Nexus does not accept that kind of arrangement.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Research Standards</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">Every tool goes through the same 6-step process: official documentation review, free-plan verification, analysis of 200+ verified reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, Reddit sentiment analysis, live pricing verification, and competitor benchmarking. Tools are never recommended on marketing claims alone.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Every tool goes through the same 6-step process: official documentation review, free-plan verification, analysis of 100+ verified reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, Reddit sentiment analysis, live pricing verification, and competitor benchmarking. Tools are never recommended on marketing claims alone.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Pricing Accuracy</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Pricing is checked on the tool's live pricing page at the time of publication. Reviews get updated when a tool changes its pricing or features. INR pricing is included for Indian readers wherever the tool sets local pricing.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Affiliate Disclosure</h2>
@@ -5880,13 +5907,13 @@ console.log('\nStatic pages:');
 {
   const canonical = `${SITE}/how-we-analyze-ai-tools/`;
   const title = 'How We Analyze AI Tools — 6-Step Research Process | AI Nexus';
-  const description = 'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, 200+ reviews, live pricing verification.';
+  const description = 'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, 100+ reviews, live pricing verification.';
   const howWeAnalyzeBodyHtml = `
     <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
       <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
       <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
         <li>Free-tier claims are tested directly, not taken from marketing pages, since many tools hide rate limits or watermarks.</li>
-        <li>200+ verified reviews per tool are read across Trustpilot, G2, Capterra, and Reddit before a verdict is written.</li>
+        <li>100+ verified reviews per tool are read across Trustpilot, G2, Capterra, and Reddit before a verdict is written.</li>
         <li>Every tool is benchmarked against 2–4 direct competitors on the same criteria, not scored in isolation.</li>
       </ul>
     </div>
@@ -5894,7 +5921,7 @@ console.log('\nStatic pages:');
     <ol style="font-size:.95rem;line-height:1.75;color:#555;padding-left:20px">
       <li style="margin-bottom:14px"><strong>Official Documentation Review</strong> — We read every word of the tool's official docs, changelog, and API reference before writing a single sentence. This means reading the actual feature documentation, not the homepage or pricing page — checking what features exist at each tier, what the API limits are, and what changed in recent versions.</li>
       <li style="margin-bottom:14px"><strong>Free Plan Verification</strong> — Every tool's free tier is tested against what it advertises. Limitations, watermarks, export restrictions, and rate limits are all documented, since many tools advertise "free forever" but hide critical limitations.</li>
-      <li style="margin-bottom:14px"><strong>Review Aggregation (200+ Reviews)</strong> — We read verified user reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, and Reddit — 200+ per tool — to find recurring complaints and praise patterns rather than relying on a star average.</li>
+      <li style="margin-bottom:14px"><strong>Review Aggregation (100+ Reviews)</strong> — We read verified user reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, and Reddit — 200+ per tool — to find recurring complaints and praise patterns rather than relying on a star average.</li>
       <li style="margin-bottom:14px"><strong>Reddit Sentiment Analysis</strong> — Real conversations on <a href="https://www.reddit.com" target="_blank" rel="noopener">Reddit</a> (r/artificial, r/ChatGPT, r/MachineLearning, and tool-specific subreddits) reveal pain points, workarounds, and deal-breakers that polished review sites miss.</li>
       <li style="margin-bottom:14px"><strong>Live Pricing Verification</strong> — All pricing is verified against the live pricing page on the day of publication, screenshotted with a date. INR pricing is verified separately for Indian audience articles.</li>
       <li style="margin-bottom:14px"><strong>Competitor Benchmarking</strong> — Every tool is compared against 2–4 direct competitors using the same criteria: features, pricing, limitations, and target use case.</li>
@@ -6334,6 +6361,7 @@ for (const post of BLOG_POSTS) {
     canonical,
     schemas,
     datePublished: post.datePublished,
+    dateModified: post.dateModified,
     bodyHtml: fullBodyHtml,
     readTimeHtml: readTime,
     ogImage: resolveOgImage(`blog/${post.slug}`),
@@ -6390,10 +6418,10 @@ for (const post of BLOG_POSTS) {
   };
 
   const freeToolsBodyHtml = `
-    <p style="font-size:1rem;line-height:1.7;color:#333">The best truly free AI tools in 2026 are Grammarly, Leonardo.ai, and Rytr — all three offer a permanent free plan with no credit card and no trial expiry. Below is the full list of 13 AI tools with a genuinely free tier, independently tested by ${esc(AUTHOR)} across writing, image generation, video, audio, design, coding, and productivity.</p>
+    <p style="font-size:1rem;line-height:1.7;color:#333">The best truly free AI tools in 2026 are Grammarly, Leonardo.ai, and Rytr — all three offer a permanent free plan with no credit card and no trial expiry. Below is the full list of 13 AI tools with a genuinely free tier, researched by ${esc(AUTHOR)} across writing, image generation, video, audio, design, coding, and productivity.</p>
 
-    <h2 style="font-size:1.2rem;margin-top:26px">How we tested these free plans</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">Each free plan was checked against three things: whether a credit card is required at signup, whether output carries a watermark, and what the actual usage limit is once you hit real work — not the number on the marketing page. Full method on the <a href="/methodology/">methodology page</a>.</p>
+    <h2 style="font-size:1.2rem;margin-top:26px">How we researched these free plans</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Each free plan was checked against official documentation and verified user reports on three things: whether a credit card is required at signup, whether output carries a watermark, and what the documented usage limit is — cross-checked with what users report once they hit real work, not just the number on the marketing page. Full method on the <a href="/methodology/">methodology page</a>.</p>
 
     <h2 style="font-size:1.2rem;margin-top:26px">AI writing tools with a free plan</h2>
     ${freeToolSection('grammarly', 'A freelance writer runs a 2,000-word client draft through Grammarly\'s free tier to catch grammar and tone issues before sending it — no character limit on the free plan.')}
@@ -6445,7 +6473,7 @@ for (const post of BLOG_POSTS) {
   const canonical = `${SITE}/best-ai-tools-india/`;
   const title = `Best AI Tools for India 2026 — INR Pricing & Hindi Support | AI Nexus`;
   // GEO Quick Win: description was 233 chars (aim 120–160) — trimmed.
-  const description = `10 best AI tools for India, tested by ${AUTHOR} — INR pricing, Hindi support status, and VPN requirements for freelancers, creators, and students.`;
+  const description = `10 best AI tools for India, researched by ${AUTHOR} — INR pricing, Hindi support status, and VPN requirements for freelancers, creators, and students.`;
 
   const INDIA_SLUGS = ['grammarly','rytr','canva-ai','elevenlabs','leonardo-ai','murf-ai','perplexity','notion-ai','replit','taskade'];
   const indiaToolItems = INDIA_SLUGS.map((slug, i) => {
@@ -6486,8 +6514,8 @@ for (const post of BLOG_POSTS) {
   let indiaBodyHtml = `
     <p style="font-size:1rem;line-height:1.7;color:#333">The best AI tools for India in 2026 — with no VPN needed and clear INR pricing — are Grammarly, Rytr, Canva AI, ElevenLabs, and Leonardo.ai. ${esc(AUTHOR)} tested all 10 tools below for Hindi support, VPN requirements from Indian IP addresses, and INR pricing at May 2026 exchange rates (~₹83/USD).</p>
 
-    <h2 style="font-size:1.2rem;margin-top:26px">How we tested for India specifically</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">Each tool was checked from an Indian IP address to confirm it isn't geo-blocked, verified for Hindi language support where advertised, and priced in INR including 18% GST where it applies. Full method on the <a href="/methodology/">methodology page</a>.</p>
+    <h2 style="font-size:1.2rem;margin-top:26px">How we researched this for India specifically</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Each tool's India availability was checked against official documentation and user reports (geo-restrictions, Hindi language support where advertised), and priced in INR including 18% GST where it applies. Full method on the <a href="/methodology/">methodology page</a>.</p>
 
     <h2 style="font-size:1.2rem;margin-top:26px">The 10 AI tools that work in India</h2>
     ${indiaToolSection('grammarly', 'A college student in Bangalore uses Grammarly\'s free tier to clean up English assignments — no VPN needed, no INR pricing since the free plan has no cost.', 'https://www.grammarly.com')}
@@ -6534,7 +6562,7 @@ for (const post of BLOG_POSTS) {
 {
   const canonical = `${SITE}/best-ai-logo-makers/`;
   const title = `Best Free AI Logo Makers 2026 — Reviewed & Compared | AI Nexus`;
-  const description = `4 AI logo tools independently tested by ${AUTHOR} — Looka, Canva AI, Leonardo.ai, and PhotoRoom. Free plan limits, INR pricing, and honest verdicts for solo creators and freelancers.`;
+  const description = `4 AI logo tools researched by ${AUTHOR} — Looka, Canva AI, Leonardo.ai, and PhotoRoom. Free plan limits, INR pricing, and honest verdicts for solo creators and freelancers.`;
 
   const LOGO_SLUGS = ['looka', 'canva-ai', 'leonardo-ai', 'photoroom'];
   const logoToolItems = LOGO_SLUGS.map((slug, i) => {
@@ -6574,8 +6602,8 @@ for (const post of BLOG_POSTS) {
   const logoBodyHtml = `
     <p style="font-size:1rem;line-height:1.7;color:#333">Canva AI is the best free AI logo maker for most people in 2026 — its free plan covers templates, an AI design assistant, and PNG download with no watermark. Looka is the better pick if you want a downloadable brand kit and don't mind a one-time fee. ${esc(AUTHOR)} tested all 4 tools below across the same 4 use cases: tech startup, freelancer portfolio, food blog, and fitness brand.</p>
 
-    <h2 style="font-size:1.2rem;margin-top:26px">How we tested these logo tools</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">Each tool was scored on design quality across the 4 use cases above, what the free plan actually includes versus what's paywalled, and what rights you get on download — full-resolution files, vector formats, and commercial use terms. Full method on the <a href="/methodology/">methodology page</a>.</p>
+    <h2 style="font-size:1.2rem;margin-top:26px">How we researched these logo tools</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Each tool was compared on design quality as reported in verified user reviews across the 4 use cases above, what the free plan includes versus what's paywalled, and what rights you get on download — full-resolution files, vector formats, and commercial use terms. Full method on the <a href="/methodology/">methodology page</a>.</p>
 
     <h2 style="font-size:1.2rem;margin-top:26px">The 4 AI logo makers compared</h2>
     ${logoToolSection('canva-ai', 'A food blogger builds a logo, matching Instagram templates, and a business card from one Canva AI brand kit — all on the free plan, no watermark on export.', 'https://www.canva.com')}
@@ -6637,9 +6665,9 @@ for (const post of BLOG_POSTS) {
 const CATEGORY_INTROS = {
   'best-ai-writing-tools': `Grammarly is the best all-around AI writing tool for most people in 2026, because its free plan already covers grammar, tone, and clarity for everyday writing; Writesonic and Jasper are the stronger picks specifically for long-form, SEO-driven content at scale.
 
-Finding the best AI writing tools in 2026 means sorting through dozens of options that all promise to "write like a human." Every tool on this page has been independently researched: official documentation, 200+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
+Finding the best AI writing tools in 2026 means sorting through dozens of options that all promise to "write like a human." Every tool on this page has been independently researched: official documentation, 100+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
 
-## How we tested these AI writing tools
+## How we researched these AI writing tools
 
 We evaluate every writing tool on three criteria: output quality (does the text sound human and stay factually accurate?), ease of use (can you get a usable draft without a long learning curve?), and value for money (does the free plan let you do real work, not just a demo?).
 
@@ -6667,7 +6695,7 @@ Browse the tools below, read the full reviews, and pick the one that matches you
 
 The best AI image generators in 2026 can create stunning visuals from a simple text prompt, but choosing the right one depends entirely on what you need. Product photos? Marketing graphics? Digital art? Each tool has different strengths, and I have tested them all head-to-head.
 
-## How we tested these AI image tools
+## How we researched these AI image tools
 
 Output quality, creative control, and commercial usage rights matter more than raw generation speed. Some tools produce beautiful images but restrict commercial use on free plans; others offer full commercial licences with less refined results. Every tool below has documented terms verified against its own pricing page.
 
@@ -6691,7 +6719,7 @@ Each tool below includes sample outputs, honest quality assessments, pricing bre
 
 The best AI video editors and generators in 2026 have made professional video creation accessible to everyone, even with zero editing experience. Each tool on this page has been independently researched with verified user data and official documentation, covering everything from short-form social clips to full-length YouTube videos.
 
-## How we tested these AI video tools
+## How we researched these AI video tools
 
 The AI video space is evolving faster than any other category on this site. Tools that struggled with basic transitions a year ago now handle multi-scene compositions, AI avatars, automatic captioning, and intelligent b-roll selection. The biggest differentiator is whether a tool excels at creation from scratch or at editing and repurposing existing footage.
 
@@ -6711,9 +6739,9 @@ Every review below includes documented sample outputs, export quality comparison
 
   'best-ai-audio-tools': `Podcastle is the best free AI audio tool for podcast creators in 2026 — 3 hours of free recording per month with AI noise removal, no credit card required. ElevenLabs is the stronger pick specifically for realistic AI voiceover and voice cloning.
 
-The best AI audio tools in 2026 cover two very different jobs: recording and editing podcasts, and generating AI voiceover or text-to-speech. Every tool on this page has been independently researched across official documentation, 200+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
+The best AI audio tools in 2026 cover two very different jobs: recording and editing podcasts, and generating AI voiceover or text-to-speech. Every tool on this page has been independently researched across official documentation, 100+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
 
-## How we tested these AI audio tools
+## How we researched these AI audio tools
 
 We separated audio tools into two workflows rather than scoring them on one scale, since a podcast editor and a text-to-speech generator solve different problems and shouldn't be compared head-to-head.
 
@@ -6735,7 +6763,7 @@ Every tool below has been researched against its official documentation and veri
 
 The best AI marketing tools in 2026 automate the most time-consuming parts of digital marketing — from writing ad copy and scheduling social posts to analysing campaign performance and generating content ideas. Each tool on this page has been independently researched across official documentation, live pricing verification, and verified user reviews.
 
-## How we tested these AI marketing tools
+## How we researched these AI marketing tools
 
 Practical time savings is the metric that matters, not feature count. How many hours per week does a tool actually save? Does it produce copy that converts without heavy editing? Can it maintain brand voice across channels? Every review below answers these questions directly.
 
@@ -6757,9 +6785,9 @@ Every review on this page includes real campaign examples, output quality assess
 
   'best-ai-design-tools': `Gamma is the best AI design tool for presentations in 2026 — give it a topic and it generates a complete slide deck with layout, imagery, and visual hierarchy already handled. Canva AI is the stronger pick if you need broader graphic design beyond just slides.
 
-The best AI design tools in 2026 let you create professional presentations, social media graphics, and marketing materials without any design skills. Every tool below has been independently researched across official documentation, 200+ verified user reviews, and live pricing verification.
+The best AI design tools in 2026 let you create professional presentations, social media graphics, and marketing materials without any design skills. Every tool below has been independently researched across official documentation, 100+ verified user reviews, and live pricing verification.
 
-## How we tested these AI design tools
+## How we researched these AI design tools
 
 Output polish is the bar that matters. Can you send the result to a client without embarrassment? Does it look like a professional designer made it, not a template filled in by a bot? That's the standard applied to every review below.
 
@@ -6781,7 +6809,7 @@ Each review below includes documented design samples, template quality assessmen
 
 The best AI coding tools in 2026 go far beyond autocomplete: they write entire functions, debug complex errors, explain unfamiliar codebases, and even build full applications from natural language descriptions. I have tested each tool on this page with real development projects across multiple programming languages.
 
-## How we tested these AI coding tools
+## How we researched these AI coding tools
 
 Accuracy and context awareness matter more than raw speed. A tool that generates syntactically correct but logically wrong code creates more work than it saves, so every tool below was tested against real projects, not toy snippets.
 
@@ -6803,9 +6831,9 @@ Each review below includes code samples generated by the tool, integration detai
 
   'best-ai-productivity-tools': `Taskade is the best AI productivity tool for most individuals and small teams in 2026 because it combines task management, project planning, and AI agents into one platform, without needing separate note-taking and scheduling apps.
 
-The best AI productivity tools in 2026 don't just organise your tasks: they actively help you think, plan, and execute faster. Every tool on this page has been independently researched — official documentation, 200+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
+The best AI productivity tools in 2026 don't just organise your tasks: they actively help you think, plan, and execute faster. Every tool on this page has been independently researched — official documentation, 100+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
 
-## How we tested these AI productivity tools
+## How we researched these AI productivity tools
 
 The key question with AI productivity tools is whether they reduce friction or add it. A tool that requires 20 minutes of setup for every task isn't productive, no matter how capable its AI is. The best tools integrate into existing workflows and deliver value with minimal configuration.
 
@@ -6946,7 +6974,7 @@ const CATEGORY_DEEPDIVE = {
   'best-ai-image-tools': [
     { name: 'Leonardo.ai', text: 'Leonardo.ai gives 150 free generation credits per day with no credit card required — the most generous free tier in the category, covering roughly 30–50 quality images daily. Custom model training lets you upload reference images to keep a character or art style consistent across unlimited generations, which Midjourney cannot match without complex prompting. The $12/month Apprentice plan removes the watermark and adds 2,500 tokens/month.' },
     { name: 'Midjourney', text: 'Midjourney remains the aesthetic benchmark for AI images, with V8.1 adding faster generation, HD 2K output, and consistent-character support via Omni Reference. There is no free tier — the Basic plan starts at $10/month for roughly 200 standard images. Images on Basic and Standard plans appear in Midjourney\'s public gallery by default; private generation (Stealth Mode) requires the $60/month Pro plan. There is also no official API.' },
-    { name: 'PhotoRoom', text: 'PhotoRoom is a background-removal and product-photography tool, not a general image generator. In independent testing across 20 product photo types, it produced clean results on 17. The mobile workflow — photograph, tap to remove background, apply a studio preset — takes under 90 seconds. The $9.99/month Pro plan adds batch processing for 100+ images at once and watermark-free exports.' },
+    { name: 'PhotoRoom', text: 'PhotoRoom is a background-removal and product-photography tool, not a general image generator. It is built for e-commerce product photos rather than open-ended image generation. The mobile workflow — photograph, tap to remove background, apply a studio preset — is designed for fast turnaround. The $9.99/month Pro plan adds batch processing for 100+ images at once and watermark-free exports.' },
   ],
   'best-ai-video-tools': [
     { name: 'InVideo AI', text: 'InVideo AI builds a complete video — script, voiceover, footage, and captions — from a single text prompt in 3–10 minutes, drawing on a 16-million-clip stock library. It is purpose-built for faceless YouTube channels, with 50+ languages supported. The free plan gives 10 minutes of video per week with a watermark; the $20/month Plus plan removes it. Footage and pacing decisions are automated, so experienced editors get less manual control than a traditional editor gives.' },
@@ -7139,7 +7167,7 @@ function renderCategoryMistakes(slug) {
     { slug: 'best-ai-writing-tools', category: 'Writing', title: 'Best AI Writing Tools 2026 — Reviewed & Ranked | AI Nexus', desc: 'Best AI writing tools reviewed for 2026. Grammarly, Rytr, Writesonic, Frase, Jasper compared with free plans and honest verdicts.' },
     { slug: 'best-ai-image-tools', category: 'Image', title: 'Best AI Image Generators 2026 — Reviewed & Ranked | AI Nexus', desc: 'Best AI image generators reviewed in 2026. Leonardo.ai, PhotoRoom, and more with honest reviews.' },
     { slug: 'best-ai-video-tools', category: 'Video', title: '4 Best AI Video Tools 2026: InVideo vs Opus Clip vs Pictory | AI Nexus', desc: 'Best AI video tools reviewed in 2026. InVideo AI, Pictory, Opus Clip compared for faceless YouTube and Shorts.' },
-    { slug: 'best-ai-audio-tools', category: 'Audio', title: 'Best AI Audio Tools 2026 — Podcast, Voiceover & TTS Compared | AI Nexus', desc: 'Best AI audio tools in 2026 — Podcastle, Murf AI, ElevenLabs, Descript. Independently researched across 200+ verified reviews. Free plans compared. Podcast and voiceover picks.' },
+    { slug: 'best-ai-audio-tools', category: 'Audio', title: 'Best AI Audio Tools 2026 — Podcast, Voiceover & TTS Compared | AI Nexus', desc: 'Best AI audio tools in 2026 — Podcastle, Murf AI, ElevenLabs, Descript. Independently researched across 100+ verified reviews. Free plans compared. Podcast and voiceover picks.' },
     { slug: 'best-ai-marketing-tools', category: 'Marketing', title: 'Best AI Marketing Tools 2026 — SEO, Social & Content AI Compared | AI Nexus', desc: 'Best AI marketing tools in 2026 — Ocoya, Frase, Jasper, Writesonic for SEO and social media marketing. Independently researched. Free plans and pricing compared.' },
     { slug: 'best-ai-design-tools', category: 'Design', title: 'Best AI Design Tools 2026 — Logo, Presentation & Graphic AI Compared | AI Nexus', desc: 'Best AI design tools in 2026 — Canva AI, Looka, Gamma, Beautiful.ai. Free plans, pricing, and honest comparisons. No design experience needed.' },
     { slug: 'best-ai-coding-tools', category: 'Coding', title: 'Best AI Coding Tools 2026 — GitHub Copilot, Replit & Cursor Compared | AI Nexus', desc: 'Best AI coding tools in 2026 — Replit, GitHub Copilot, Cursor compared for beginners and professionals. Free plans, pricing, and honest verdicts.' },
@@ -7458,11 +7486,11 @@ ${items}
     '@type': 'WebPage',
     '@id': `${SITE}/#webpage`,
     url: `${SITE}/`,
-    name: 'Best AI Tools 2026 — 33 Independently Reviewed | AI Nexus',
-    description: 'AI Nexus independently researches AI tools against official docs, 200+ verified reviews, and live pricing. No sponsored picks.',
+    name: 'Best AI Tools 2026 — Researched & Compared | AI Nexus',
+    description: 'AI Nexus researches and compares AI tools using official docs, 100+ aggregated user reviews, and live pricing. No sponsored picks.',
     inLanguage: 'en-US',
     datePublished: '2026-01-01',
-    dateModified: TODAY,
+    dateModified: PAGE_LAST_UPDATED.home,
     // GEO Fix (Task 2): author needs jobTitle + description (not just name/url)
     // for "No author schema — add for AI trust signals" / "Author lacks
     // credentials" GEO audit failures. '@id' links this node to the same
@@ -7470,7 +7498,7 @@ ${items}
     // @graph, so AI systems treat it as one consistent entity, not a duplicate.
     author: {
       ...AUTHOR_PERSON,
-      description: `${AUTHOR} independently researches AI tools since 2022 — covering pricing, features, and real-world use cases across 33+ products. No sponsored rankings.`,
+      description: `${AUTHOR} researches AI tools — covering pricing, features, and real-world use cases across ${TOOLS.length} products. No sponsored rankings.`,
     },
     isPartOf: { '@id': `${SITE}/#website` },
     breadcrumb: {
@@ -7546,10 +7574,11 @@ ${items}
   // check). Homepage bypasses buildPage()'s auto-inject (it patches dist/index.html
   // directly), so it needs its own explicit articleSchema() call here.
   const homepageArticleSchema = JSON.stringify(articleSchema({
-    title: 'Best AI Tools 2026 — 33 Independently Reviewed',
-    description: 'AI Nexus independently researches AI tools against official docs, 200+ verified reviews, and live pricing. No sponsored picks.',
+    title: 'Best AI Tools 2026 — Researched & Compared',
+    description: 'AI Nexus independently researches AI tools against official docs, 100+ verified reviews, and live pricing. No sponsored picks.',
     canonical: `${SITE}/`,
     datePublished: '2026-01-01',
+    dateModified: PAGE_LAST_UPDATED.home,
   }), null, 2);
 
   const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageWebPageSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageBreadcrumbSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageSpeakableSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageHowToSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageArticleSchema}\n    </script>`;
@@ -7561,7 +7590,7 @@ ${items}
   // React replaces this on hydration; crawlers see it immediately.
   // Fixes: No H1, No H2, Thin content (38 words), 0 internal links, no external
   // links, no author byline, no About/Contact/Privacy links.
-  const displayDate = new Date(TODAY + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  const displayDate = new Date(PAGE_LAST_UPDATED.home + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
   // Build a list of up to 8 featured tool links for the static content
   const featuredTools = TOOLS.slice(0, 8).map(t =>
@@ -7589,13 +7618,13 @@ ${items}
 
     <!-- ── Header ──────────────────────────────────────────────────────── -->
     <header style="margin-bottom:24px">
-      <h1 style="font-size:1.8rem;line-height:1.2;margin-bottom:12px;color:#0F1C1A" itemprop="headline">Best AI Tools 2026 — 33 Independently Reviewed</h1>
+      <h1 style="font-size:1.8rem;line-height:1.2;margin-bottom:12px;color:#0F1C1A" itemprop="headline">Best AI Tools 2026 — Researched &amp; Compared</h1>
       <p style="color:#555;font-size:.875rem;margin-bottom:12px">
         By <strong itemprop="author">${esc(AUTHOR)}</strong>, AI Automation &amp; Performance Testing Leader at BOLD &amp; Independent AI Tools Researcher since 2022 ·
-        <time itemprop="dateModified" datetime="${TODAY}">Updated ${displayDate}</time>
+        <time itemprop="dateModified" datetime="${PAGE_LAST_UPDATED.home}">Updated ${displayDate}</time>
       </p>
       <p data-speakable="intro" itemprop="description" style="font-size:1rem;line-height:1.7;color:#333;margin-bottom:0">
-        We independently test and compare 33+ AI tools for creators, freelancers, developers, and modern teams —
+        We research and compare ${TOOLS.length} AI tools for creators, freelancers, developers, and modern teams —
         with no sponsored placements or paid rankings. Every review covers verified pricing, verified feature analysis,
         and honest use-case guidance based on publicly available data and real community feedback.
       </p>
@@ -7608,7 +7637,7 @@ ${items}
         <li>Best free AI tools: <a href="${SITE}/tools/grammarly/" style="color:#0D9488">Grammarly</a> (writing), <a href="${SITE}/tools/leonardo-ai/" style="color:#0D9488">Leonardo.ai</a> (images, 150 credits/day), <a href="${SITE}/tools/rytr/" style="color:#0D9488">Rytr</a> (10K chars/month)</li>
         <li>Best value paid tier: $8–$20/month covers Rytr Saver, Canva Pro, ChatGPT Plus, and Claude Pro</li>
         <li>Top coding AI: <a href="${SITE}/tools/cursor/" style="color:#0D9488">Cursor</a> leads on multi-file refactoring; <a href="${SITE}/tools/github-copilot/" style="color:#0D9488">GitHub Copilot</a> for inline autocomplete at $10/month</li>
-        <li>All 33 tools verified against official docs, G2 &amp; Trustpilot review data, and current live pricing</li>
+        <li>All ${TOOLS.length} tools verified against official docs, G2 &amp; Trustpilot review data, and current live pricing</li>
         <li>Research methodology aligns with <a href="https://schema.org/Review" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Schema.org Review</a> standards and <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Google's helpful content guidelines</a></li>
       </ul>
     </section>
@@ -7668,7 +7697,7 @@ ${items}
       <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">What Are the Best AI Tools in 2026?</h2>
       <p data-speakable="tools-answer" style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>The best AI tools in 2026 are Grammarly (writing), Cursor (coding), Leonardo.ai (images), Opus Clip (video), and ChatGPT (general use).</strong></p>
       <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
-        You'll find 33+ independently researched reviews below, each with verified pricing, feature breakdowns, and honest use-case guidance.
+        You'll find ${TOOLS.length} researched reviews below, each with verified pricing, feature breakdowns, and honest use-case guidance.
         We cross-reference official documentation, community feedback from Reddit, and verified review data from
         <a href="https://www.g2.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">G2</a> and
         <a href="https://www.trustpilot.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Trustpilot</a> —
@@ -7677,7 +7706,7 @@ ${items}
       <ul style="margin:0 0 14px;padding-left:20px;line-height:1.9;font-size:.95rem">
         ${featuredTools}
       </ul>
-      <p style="font-size:.875rem;color:#666"><a href="${SITE}/" style="color:#0D9488">Browse all 33 AI tool reviews →</a></p>
+      <p style="font-size:.875rem;color:#666"><a href="${SITE}/" style="color:#0D9488">Browse all ${TOOLS.length} AI tool reviews →</a></p>
     </section>
 
     <!-- ── Answer → Context → Example (GEO fix: ACE pattern) ───────────── -->
@@ -7743,7 +7772,7 @@ ${items}
           </tbody>
         </table>
       </div>
-      <p style="font-size:.8rem;color:#888">Pricing verified against official pages. Last updated: <time datetime="${TODAY}">${displayDate}</time></p>
+      <p style="font-size:.8rem;color:#888">Pricing verified against official pages. Last updated: <time datetime="${PAGE_LAST_UPDATED.home}">${displayDate}</time></p>
     </section>
 
     <!-- ── Section 3: Best for use case (dl) ────────────────────────── -->
@@ -7914,14 +7943,14 @@ ${items}
         AI Nexus is maintained by <strong>${esc(AUTHOR)}</strong>, an independent AI tools researcher since 2022 and AI Automation &amp; Performance Testing Leader at BOLD.
         Our research is based on publicly available feature documentation, transparent pricing pages,
         verified <a href="https://www.trustpilot.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Trustpilot</a> and
-        <a href="https://www.g2.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">G2</a> review data (200+ reviews analyzed per tool),
+        <a href="https://www.g2.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">G2</a> review data (100+ reviews aggregated per tool),
         and creator community feedback from Reddit and product forums.
         Our evaluation methodology covers pricing accuracy, feature completeness, free-plan value, and real-world use-case fit.
       </p>
-      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">According to the <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener noreferrer" style="color:#0D9488">2026 AI Index Report</a> from Stanford's Institute for Human-Centered Artificial Intelligence, AI adoption is accelerating across every professional sector as technical capabilities and investment both increase. That trend is exactly why independent, tool-by-tool testing matters more than trusting marketing pages alone.</p>
+      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">According to the <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener noreferrer" style="color:#0D9488">2026 AI Index Report</a> from Stanford's Institute for Human-Centered Artificial Intelligence, AI adoption is accelerating across every professional sector as technical capabilities and investment both increase. That trend is exactly why independent, tool-by-tool research matters more than trusting marketing pages alone.</p>
       <p style="font-size:.875rem;color:#666;line-height:1.7">
-        <strong>Data points:</strong> 33+ tools reviewed independently ·
-        200+ reviews per tool analyzed ·
+        <strong>Data points:</strong> ${TOOLS.length} tools researched ·
+        100+ reviews per tool aggregated ·
         Pricing verified quarterly against official pages ·
         No sponsored rankings ·
         Research ongoing since 2022 ·
@@ -7990,7 +8019,7 @@ function generateLlmsTxt() {
   const lines = [
     `# AI Nexus — ${SITE}`,
     `# llms.txt — auto-generated at build time by scripts/prerender.mjs`,
-    `# Updated: ${TODAY}`,
+    `# Updated: ${PAGE_LAST_UPDATED.home}`,
     `# Tools reviewed: ${TOOLS.length} | Blog posts: ${BLOG_POSTS.length}`,
     '',
     '## About',

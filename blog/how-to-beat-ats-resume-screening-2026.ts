@@ -24,7 +24,7 @@ const post: BlogPost = {
   seoTitle: 'How to Beat ATS Resume Screening in 2026',
   metaDescription: 'Most resumes are rejected by software before a human ever sees them. Here is what actually gets a resume past 2026-era ATS screening — and what is just myth.',
   datePublished: '2026-09-14',
-  dateModified: '2026-09-14',
+  dateModified: '2026-09-15',
   author: 'Navneet Arya',
   category: Category.PRODUCTIVITY,
   readTime: '10 min read',

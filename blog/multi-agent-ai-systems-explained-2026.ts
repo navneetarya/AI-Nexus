@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Multi-Agent AI Systems Explained 2026: Architecture & Tools',
   metaDescription: 'Multi-agent AI systems explained: architecture, the 6 frameworks that matter in 2026 (LangGraph, CrewAI, AutoGen & more), MCP vs A2A, and real use cases.',
   datePublished: '2026-07-02',
-  dateModified: '2026-07-02',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '12 min read',

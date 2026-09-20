@@ -653,14 +653,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               fontSize:'clamp(30px,6vw,52px)', lineHeight:1.07, color:C.txt,
               margin:'0 0 16px', letterSpacing:'-0.025em' }}>
             Best AI Tools 2026
-            <span style={{ color:C.a1, fontStyle:'italic' }}> Independently Reviewed</span>
+            <span style={{ color:C.a1, fontStyle:'italic' }}> Researched &amp; Compared</span>
           </h1>
 
           {/* GEO: content image with descriptive ALT text */}
           <div className="anim-fade-up d2" style={{ margin:'0 auto 14px', maxWidth:480 }}>
             <img
               src="/og-tool-review.webp"
-              alt="AI Nexus — independent AI tools research dashboard showing 33 reviewed tools across writing, coding, audio, video, and image categories for 2026"
+              alt="AI Nexus — independent AI tools research dashboard covering AI writing, coding, audio, video, and image tools for 2026"
               width={480}
               height={252}
               loading="eager"
@@ -677,7 +677,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           </p>
 
           <div className="anim-fade-up d3" style={{ display:'flex', justifyContent:'center', gap:14, flexWrap:'wrap' as const, marginTop:14, marginBottom:22 }}>
-            {['200+ tools analyzed', '33 in-depth reviews', 'Updated weekly'].map(item => (
+            {['Tools researched across 8 categories', '100+ reviews aggregated per tool', 'Pricing verified from official pages'].map(item => (
               <span key={item} style={{ fontSize:11.5, color:C.mut2, fontWeight:600,
                 background:'var(--chip-bg)', border:'1px solid var(--brd-xs)',
                 padding:'5px 10px', borderRadius:100 }}>{item}</span>
@@ -766,7 +766,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               border:`2px solid ${C.a1}`, flexShrink:0 }} />
           <p style={{ fontSize:12.5, color:C.txt, margin:0, textAlign:'center' as const, lineHeight:1.5,
             fontFamily:"'Inter', system-ui, sans-serif" }}>
-            <strong>Navneet Arya</strong> — AI Automation &amp; Performance Testing Leader at BOLD · researching AI tools since 2022 · 33+ independently reviewed
+            <strong>Navneet Arya</strong> — AI Automation &amp; Performance Testing Leader at BOLD · researching AI tools since 2022 · every review built from public sources
           </p>
           <div style={{ display:'flex', gap:10, alignItems:'center', flexShrink:0 }}>
             <button onClick={() => navigate('/about')}
@@ -831,7 +831,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
               Grammarly Review 2026: Is Premium Worth $12/Month?
             </div>
             <div style={{ fontSize:12, color:C.mut, lineHeight:1.5 }}>
-              Free plan vs. Premium tested — tone detection, plagiarism checks, and who should actually upgrade.
+              Free plan vs. Premium compared — tone detection, plagiarism checks, and who should actually upgrade.
             </div>
             <div style={{ display:'flex', alignItems:'center', gap:4, marginTop:10, fontSize:12, fontWeight:600, color:C.a1 }}>
               Read review <ArrowRight size={11} />
@@ -883,7 +883,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           </h2>
           {/* GEO + AEO: Concise answer paragraph right after H2 */}
           <p style={{ fontSize:13, color:C.mut, margin:'0 0 14px', lineHeight:1.55 }}>
-            Browse <strong>AI Nexus</strong>'s collection of independently-reviewed tools. Read detailed reviews, compare features, and find the best AI software for your workflow across all categories.
+            Browse <strong>AI Nexus</strong>'s collection of independently-researched tools. Read detailed reviews, compare features, and find the best AI software for your workflow across all categories.
           </p>
           {/* Sub-section heading with more detail */}
           <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:14,
@@ -1390,7 +1390,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
                     background:'rgba(13,148,136,.10)', border:'1px solid rgba(13,148,136,.22)',
                     padding:'2px 8px', borderRadius:5,
                     marginTop:5, display:'inline-flex', alignItems:'center', gap:3 }}>
-                    ✓ Free plan tested · {fmtTested(tool.lastTestedISO)}
+                    ✓ Pricing verified · {fmtTested(tool.lastTestedISO)}
                   </div>
                 )}
               </div>
@@ -1526,7 +1526,7 @@ function ToolCard({ tool, navigate, isAffiliatePick, idx }: {
                 background:'rgba(13,148,136,.10)', border:'1px solid rgba(13,148,136,.22)',
                 padding:'2px 8px', borderRadius:5,
                 marginTop:5, display:'inline-flex', alignItems:'center', gap:3 }}>
-                ✓ Free plan tested · {fmtTested(tool.lastTestedISO)}
+                ✓ Pricing verified · {fmtTested(tool.lastTestedISO)}
               </div>
             )}
           </div>

@@ -17,7 +17,7 @@ const post: BlogPost = {
   seoTitle: 'Murf AI Alternatives 2026: 4 Tools Worth It',
   metaDescription: 'The best Murf AI alternatives in 2026, sorted by what you actually need. ElevenLabs, Synthesia, Speechify Studio & WellSaid Labs — real pricing, no fluff.',
   datePublished: '2026-08-15',
-  dateModified: '2026-08-15',
+  dateModified: '2026-09-10',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '11 min read',

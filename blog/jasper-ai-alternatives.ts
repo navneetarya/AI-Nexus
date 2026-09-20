@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Best Jasper AI Alternatives 2026 — Reviewed',
   metaDescription: 'Jasper AI costs $49/month — too pricey for most creators. Writesonic, Rytr, Copy.ai, and Frase compared as alternatives for every budget in 2026.',
   datePublished: '2026-05-07',
-  dateModified: '2026-06-14',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '9 min read',

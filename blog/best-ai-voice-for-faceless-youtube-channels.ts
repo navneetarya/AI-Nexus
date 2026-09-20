@@ -19,7 +19,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice for Faceless YouTube Channels 2026 (Guide)',
   metaDescription: "ElevenLabs vs Murf AI for faceless YouTube narration — cost, cloning quality, and export workflow compared, plus the settings I use to avoid the AI-voice tell.",
   datePublished: '2026-08-17',
-  dateModified: '2026-08-17',
+  dateModified: '2026-09-10',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '10 min read',

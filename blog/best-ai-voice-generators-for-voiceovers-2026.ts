@@ -24,7 +24,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Generators for Voiceovers 2026',
   metaDescription: 'The best AI voice generators for commercial voiceovers in 2026. Murf AI leads on studio workflow and video sync — compared against ElevenLabs, real pricing included.',
   datePublished: '2026-08-20',
-  dateModified: '2026-08-20',
+  dateModified: '2026-09-10',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '10 min read',

@@ -28,7 +28,7 @@ const post: BlogPost = {
   seoTitle: 'AI for Solopreneurs 2026: The Complete Tool Stack',
   metaDescription: 'The complete AI tool stack for solopreneurs in 2026 — 9 categories, real pricing, and INR costs for Indian founders, in one guide.',
   datePublished: '2026-06-30',
-  dateModified: '2026-08-06',
+  dateModified: '2026-08-22',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '12 min read',

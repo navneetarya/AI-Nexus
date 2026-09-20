@@ -22,7 +22,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Music Generator 2026: Suno vs Udio (Free & Paid)',
   metaDescription: "Compare Suno, Udio, ElevenLabs, Soundraw, and AIVA in 2026 using current pricing, licensing, and independent review data to find the right AI music generator.",
   datePublished: '2026-08-10',
-  dateModified: '2026-08-10',
+  dateModified: '2026-09-17',
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '11 min read',

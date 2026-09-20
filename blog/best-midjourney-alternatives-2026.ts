@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Best Midjourney Alternatives 2026 — Reviewed',
   metaDescription: 'Leonardo.ai, Stable Diffusion, DALL-E, and Adobe Firefly compared as Midjourney alternatives for 2026. See which offers better quality and pricing.',
   datePublished: '2026-05-02',
-  dateModified: '2026-06-14',
+  dateModified: '2026-08-20',
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '9 min read',

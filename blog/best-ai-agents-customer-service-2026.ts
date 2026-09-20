@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Agents for Customer Service 2026: 8 Platforms Ranked',
   metaDescription: 'Independent comparison of 8 AI customer service agents in 2026 — Intercom Fin, Zendesk AI, Freshdesk Freddy, Tidio, Ada CX & more. Resolution rates and pricing.',
   datePublished: '2026-06-28',
-  dateModified: '2026-06-28',
+  dateModified: '2026-08-22',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '12 min read',

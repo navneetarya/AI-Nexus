@@ -24,7 +24,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Image Upscaler Tools 2026 — Compared & Ranked',
   metaDescription: 'PhotoRoom, Topaz Photo AI, Let\'s Enhance, Upscale.media & Remini — best ai image upscaler tools 2026. Real pricing, ecommerce fit, honest verdict.',
   datePublished: '2026-07-31',
-  dateModified: '2026-07-31',
+  dateModified: '2026-08-22',
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '10 min read',

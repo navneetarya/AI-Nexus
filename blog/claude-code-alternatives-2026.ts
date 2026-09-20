@@ -21,7 +21,7 @@ const post: BlogPost = {
   seoTitle: 'Claude Code Alternatives 2026: Terminal AI Agents Ranked',
   metaDescription: '7 terminal AI coding agents ranked against Claude Code: pricing, open-source status, and Terminal-Bench scores for Codex CLI, OpenCode, Aider, and more.',
   datePublished: '2026-07-09',
-  dateModified: '2026-07-09',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '12 min read',

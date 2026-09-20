@@ -2,71 +2,100 @@
 /**
  * scripts/update-blog-date-modified.mjs
  *
- * T8 (EEAT-Medium): Batch-update `dateModified` across every blog post .ts file.
+ * Sets each blog post's `dateModified` to the date it was REALLY last edited —
+ * never "today" for every post.
  *
- * Most posts currently have `dateModified === datePublished` — a stale
- * freshness signal to Google. This script sets `dateModified` on every
- * post in blog/*.ts (excluding index.ts and types.ts) to the date the
- * script is run, signalling a content refresh across the entire blog.
+ * Why: the previous version stamped the run date on every post, which tells
+ * Google (and AI engines) that the whole blog was refreshed when it wasn't.
+ * Google's guidance is to change dates only when content changes significantly.
  *
- * Usage:
- *   node scripts/update-blog-date-modified.mjs
+ * How the real date is found, per blog/<slug>.ts:
+ *   1. Uncommitted content edits          -> today (a real edit in progress)
+ *   2. Otherwise the newest git commit whose diff changed something OTHER than a
+ *      dateModified line (so earlier date-only commits never count as edits)
+ *   3. Never earlier than datePublished, never later than today
  *
- * Optional — pin to a specific date instead of "today":
- *   node scripts/update-blog-date-modified.mjs 2026-06-14
+ * Usage (needs FULL git history — run locally, not on a shallow CI checkout):
+ *   node scripts/update-blog-date-modified.mjs --dry-run   # preview changes
+ *   node scripts/update-blog-date-modified.mjs             # apply
  *
- * Safe to re-run — it only rewrites the `dateModified: '...'` line and
- * leaves `datePublished` and everything else untouched.
+ * Safe to re-run: it only rewrites the `dateModified: '...'` line.
  */
 
-import fs   from 'node:fs';
+import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT  = path.join(__dir, '..');
 const BLOG  = path.join(ROOT, 'blog');
+const DRY   = process.argv.includes('--dry-run');
+const TODAY = new Date().toISOString().slice(0, 10);
 
-// Allow an optional date override as the first CLI arg, else use today (UTC).
-const override = process.argv[2];
-const today = override || new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+function git(args) {
+  return execFileSync('git', args, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 64 * 1024 * 1024 });
+}
 
-if (!/^\d{4}-\d{2}-\d{2}$/.test(today)) {
-  console.error(`Invalid date "${today}" — expected format YYYY-MM-DD`);
+try {
+  if (git(['rev-parse', '--is-shallow-repository']).trim() === 'true') {
+    console.error('This is a shallow clone — git history is incomplete, so real edit dates cannot be derived.\nRun `git fetch --unshallow` first (or run this script in a full local clone).');
+    process.exit(1);
+  }
+} catch {
+  console.error('Not a git repository (or git is unavailable) — cannot derive real edit dates.');
   process.exit(1);
 }
 
-const SKIP = new Set(['index.ts', 'types.ts']);
+const SKIP = new Set(['index.ts', 'types.ts', 'metadata.ts', 'loaders.ts']);
 const DATE_MODIFIED_RE = /dateModified:\s*'(\d{4}-\d{2}-\d{2})'/;
+const DATE_PUBLISHED_RE = /datePublished:\s*'(\d{4}-\d{2}-\d{2})'/;
 
-const files = fs.readdirSync(BLOG).filter(f => f.endsWith('.ts') && !SKIP.has(f));
-
-let updated = 0;
-let skipped = 0;
-
-for (const file of files) {
-  const filePath = path.join(BLOG, file);
-  const src = fs.readFileSync(filePath, 'utf8');
-
-  if (!DATE_MODIFIED_RE.test(src)) {
-    console.warn(`⚠️  No dateModified field found in ${file} — skipped`);
-    skipped++;
-    continue;
-  }
-
-  const next = src.replace(DATE_MODIFIED_RE, (match, oldDate) => {
-    if (oldDate === today) return match; // already up to date
-    return `dateModified: '${today}'`;
-  });
-
-  if (next !== src) {
-    fs.writeFileSync(filePath, next, 'utf8');
-    console.log(`✅ ${file} → dateModified: '${today}'`);
-    updated++;
-  } else {
-    console.log(`↪️  ${file} already '${today}' — no change`);
-  }
+/** true if a unified diff (-U0) changes any line other than a dateModified line */
+function hasContentChange(diffText) {
+  return diffText
+    .split('\n')
+    .filter(l => (l.startsWith('+') || l.startsWith('-')) && !l.startsWith('+++') && !l.startsWith('---'))
+    .some(l => !/dateModified/.test(l));
 }
 
-console.log(`\nDone. Updated ${updated}/${files.length} post(s) to dateModified: '${today}'.`);
-if (skipped) console.log(`Skipped ${skipped} file(s) with no dateModified field.`);
+function realEditDate(rel) {
+  // 1. uncommitted content edits
+  const dirty = git(['status', '--porcelain', '--', rel]).trim();
+  if (dirty) {
+    const wt = git(['diff', 'HEAD', '-U0', '--', rel]);
+    if (!wt || hasContentChange(wt)) return TODAY;
+  }
+  // 2. newest commit with a real content change
+  const log = git(['log', '--format=%H %cs', '--', rel]).trim();
+  if (!log) return null;
+  for (const line of log.split('\n')) {
+    const [sha, date] = line.split(' ');
+    const diff = git(['show', '--format=', '-U0', sha, '--', rel]);
+    if (hasContentChange(diff)) return date;
+  }
+  return null;
+}
+
+const files = fs.readdirSync(BLOG).filter(f => f.endsWith('.ts') && !SKIP.has(f)).sort();
+let changed = 0, same = 0, skipped = 0;
+
+for (const file of files) {
+  const abs = path.join(BLOG, file);
+  const rel = path.posix.join('blog', file);
+  const src = fs.readFileSync(abs, 'utf8');
+  const cur = src.match(DATE_MODIFIED_RE);
+  const pub = src.match(DATE_PUBLISHED_RE);
+  if (!cur || !pub) { console.warn(`skip  ${file} — no dateModified/datePublished field`); skipped++; continue; }
+
+  let real = realEditDate(rel) || pub[1];
+  if (real < pub[1]) real = pub[1];   // never before publication
+  if (real > TODAY)  real = TODAY;    // never in the future
+
+  if (real === cur[1]) { same++; continue; }
+  console.log(`${DRY ? 'would set' : 'set'}  ${file}: ${cur[1]} -> ${real}`);
+  if (!DRY) fs.writeFileSync(abs, src.replace(DATE_MODIFIED_RE, `dateModified: '${real}'`));
+  changed++;
+}
+
+console.log(`\n${DRY ? '[dry run] ' : ''}${changed} changed, ${same} already correct, ${skipped} skipped (${files.length} posts).`);

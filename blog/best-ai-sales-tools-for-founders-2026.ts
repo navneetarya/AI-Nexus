@@ -24,7 +24,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Sales Tools for Founders in 2026: Full Guide',
   metaDescription: 'Apollo, Clay, Instantly, Smartlead & Lavender compared on real 2026 pricing — best ai sales tools for founders and small outbound teams under 20 reps.',
   datePublished: '2026-08-02',
-  dateModified: '2026-08-02',
+  dateModified: '2026-08-22',
   author: 'Navneet Arya',
   category: 'Marketing',
   readTime: '11 min read',

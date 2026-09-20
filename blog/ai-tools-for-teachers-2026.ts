@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Teachers 2026 — Free Plans Compared',
   metaDescription: 'Grammarly, Canva AI, and 5 other tools compared for lesson planning and grading. Free-first breakdown of what actually works for teachers in 2026.',
   datePublished: '2026-05-03',
-  dateModified: '2026-06-14',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',

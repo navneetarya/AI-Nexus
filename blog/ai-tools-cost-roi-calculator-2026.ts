@@ -22,7 +22,7 @@ const post: BlogPost = {
   seoTitle: 'AI Tools ROI Calculator 2026: Real Costs & Payback Time',
   metaDescription: 'What do AI tools actually cost your business in 2026? Cost breakdown by category, an ROI framework, hidden fees, and India INR pricing.',
   datePublished: '2026-06-27',
-  dateModified: '2026-06-27',
+  dateModified: '2026-08-22',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '12 min read',

@@ -23,7 +23,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Generators for Podcasts 2026',
   metaDescription: 'The best AI voice generators for podcasts in 2026: fixing flubbed lines, generating intros, and dubbing episodes into new languages, compared.',
   datePublished: '2026-08-19',
-  dateModified: '2026-08-19',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '9 min read',

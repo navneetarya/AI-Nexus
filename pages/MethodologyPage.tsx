@@ -56,13 +56,13 @@ const RESEARCH_STEPS = [
     icon: ShieldCheck,
     step: 'Step 2',
     action: 'Free plan claim verification',
-    detail: 'Every free tier claim is independently verified against what the tool actually delivers — not what its marketing page promises. This step specifically documents: whether a credit card is required to access the free plan, whether "free" features are actually rate-limited or watermarked, and where advertised free capabilities require a paid upgrade to use in practice. INR equivalents are included for Indian creators, since USD pricing does not reflect local purchasing power. This is the step that catches the most common deceptive pattern in AI tool marketing: advertising a feature as free when it is only available on a paid plan.',
+    detail: 'Every free tier claim is checked against the tool\'s official documentation, pricing page, and verified user reports — not just what its marketing page promises. This step specifically documents: whether a credit card is required to access the free plan, whether "free" features are actually rate-limited or watermarked, and where advertised free capabilities require a paid upgrade to use in practice. INR equivalents are included for Indian creators, since USD pricing does not reflect local purchasing power. This is the step that catches the most common deceptive pattern in AI tool marketing: advertising a feature as free when it is only available on a paid plan.',
     time: '15 min',
   },
   {
     icon: Search,
     step: 'Step 3',
-    action: 'Analysis of 200+ verified user reviews',
+    action: 'Analysis of 100+ verified user reviews',
     detail: 'Pull a minimum of 200 verified reviews from Trustpilot, G2, and Capterra combined. Filter for verified-purchase reviews only. Tag recurring complaints (support, billing, feature gaps) and recurring praise points. This cross-platform aggregation prevents any single platform\'s review distribution from skewing the verdict.',
     time: '45 min',
   },
@@ -95,7 +95,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: `How I Review AI Tools — Testing Methodology | AI Nexus`,
-    description: `The exact 6-step process ${SITE_CONFIG.authorName} uses to independently research every AI tool on AI Nexus. Official documentation review, 200+ verified reviews per tool, live pricing verification, Reddit sentiment analysis, and competitor benchmarking.`,
+    description: `The exact 6-step process ${SITE_CONFIG.authorName} uses to independently research every AI tool on AI Nexus. Official documentation review, 100+ verified reviews per tool, live pricing verification, Reddit sentiment analysis, and competitor benchmarking.`,
     url: `${SITE_CONFIG.siteUrl}/methodology`,
     author: {
       '@type': 'Person',
@@ -107,7 +107,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
       name: 'AI Nexus',
       url: SITE_CONFIG.siteUrl,
     },
-    dateModified: '2026-05-14',
+    dateModified: '2026-09-20',
   };
 
   return (
@@ -130,7 +130,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: `${C.a1}12`, border: `1.5px solid ${C.a1}30`, borderRadius: 100, padding: '5px 14px' }}>
                 <div style={{ width: 7, height: 7, borderRadius: '50%', background: C.a1, flexShrink: 0 }} />
                 <span style={{ fontSize: 11, fontWeight: 600, color: C.a1, fontFamily: "'Inter', sans-serif", letterSpacing: '0.01em' }}>
-                  Last verified: May 2026 &middot; 24 tools
+                  Methodology last updated: September 2026
                 </span>
               </div>
             </div>
@@ -152,10 +152,10 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             {/* T2.4: Stats strip — quantified proof of research depth */}
             <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 10, marginTop: 22 }}>
               {[
-                { label: 'Tools researched', value: '24' },
+                { label: 'Categories covered', value: '8' },
                 { label: 'Avg research time / tool', value: '4–6 hrs' },
                 { label: 'Reviews analysed / tool', value: '200+' },
-                { label: 'Methodology last updated', value: 'May 2026' },
+                { label: 'Methodology last updated', value: 'September 2026' },
               ].map(({ label, value }) => (
                 <div key={label} style={{ background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 10, padding: '8px 14px', textAlign: 'center' as const }}>
                   <div style={{ fontSize: 16, fontWeight: 700, color: C.a1 }}>{value}</div>
@@ -172,7 +172,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             The 5-step research process
           </h2>
           {/* AEO: concise answer paragraph after H2 (40-200 chars) */}
-          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 24px', fontWeight: 300 }}>Applied to every tool before a review is published — verified docs, 200+ reviews, live pricing, Reddit sentiment, and competitor benchmarking.</p>
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 24px', fontWeight: 300 }}>Applied to every tool before a review is published — verified docs, 100+ reviews, live pricing, Reddit sentiment, and competitor benchmarking.</p>
 
           {STEPS.map(({ icon: Icon, title, body }, i) => (
             <div key={i} style={{ display: 'flex', gap: 14, marginBottom: i < STEPS.length - 1 ? 22 : 0, alignItems: 'flex-start' }}>
@@ -211,7 +211,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
               <code>{`Research Process Breakdown:
   Step 1: Docs review        = 20 min  // verify features
   Step 2: Free plan check    = 15 min  // test credit card requirement
-  Step 3: Review analysis    = 45 min  // 200+ verified reviews
+  Step 3: Review analysis    = 45 min  // 100+ verified reviews
   Step 4: Reddit sentiment   = 20 min  // real-world frustrations
   Step 5: Live pricing       = 10 min  // never cached data
   Step 6: Competitor compare = 30 min  // feature matrix
@@ -270,7 +270,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             The ratings (out of 5) are an independent assessment across five dimensions: output quality (based on documented user feedback), ease of use (based on G2/Capterra usability scores), pricing fairness, free plan generosity, and reliability (based on verified user reports over time).
           </p>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>
-            When a tool updates significantly after publication — a major pricing change, a new model, a feature that changes my verdict — I update the review and change the "last tested" date at the top of the page.
+            When a tool updates significantly after publication — a major pricing change, a new model, a feature that changes my verdict — I update the review and change the "last verified" date at the top of the page.
           </p>
         </div>
 
@@ -373,7 +373,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             {([
               { label: 'Background', val: '13+ years enterprise tech, AI automation, and product testing' },
               { label: 'AI Research', val: 'Independently evaluating AI tools since 2022' },
-              { label: 'Tools Evaluated', val: '200+ AI tools tested across all categories' },
+              { label: 'Tools Evaluated', val: 'AI tools researched across 8 categories' },
               { label: 'Review Process', val: '4–6 hours minimum research per tool (documented methodology)' },
               { label: 'Standards', val: 'Zero sponsored reviews, independent verification only' },
               { label: 'Current Role', val: 'AI Automation & Performance Testing Leader, BOLD' },
@@ -385,7 +385,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             ))}
           </dl>
           <p style={{ fontSize: 13, color: C.mut, lineHeight: 1.7, marginTop: 14 }}>
-            All reviews on this site reflect independent research verified against official documentation, live pricing, and 200+ verified user reviews per tool. No tool receives preferential ranking based on commission structure or affiliate relationships.
+            All reviews on this site reflect independent research verified against official documentation, live pricing, and 100+ verified user reviews per tool. No tool receives preferential ranking based on commission structure or affiliate relationships.
           </p>
         </div>
 

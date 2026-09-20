@@ -15,7 +15,7 @@ const post: BlogPost = {
   seoTitle: 'Best Text-to-Speech Software 2026: 5 Tools Tested',
   metaDescription: 'The best text-to-speech software in 2026, tested on API access, language coverage, latency, and real pricing. ElevenLabs, Murf AI, Podcastle & Descript compared.',
   datePublished: '2026-08-13',
-  dateModified: '2026-08-13',
+  dateModified: '2026-09-10',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '13 min read',

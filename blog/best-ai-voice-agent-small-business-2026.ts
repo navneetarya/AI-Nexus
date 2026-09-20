@@ -18,7 +18,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Agent for Small Business 2026',
   metaDescription: 'Retell AI, Vapi, Bland, ElevenLabs & Synthflow compared on real cost and small-business fit — verified July 2026, includes Synthflow\u2019s pricing pivot.',
   datePublished: '2026-07-25',
-  dateModified: '2026-07-25',
+  dateModified: '2026-09-10',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '11 min read',

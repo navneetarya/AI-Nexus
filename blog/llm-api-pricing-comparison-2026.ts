@@ -17,7 +17,7 @@ const post: BlogPost = {
   seoTitle: 'Claude vs GPT vs Gemini API Pricing (Aug 2026)',
   metaDescription: 'Claude Sonnet 5 ($2/$10), GPT-5.4 ($2.50/$15), Gemini 3.5 Flash ($1.50/$9) per million tokens — verified pricing plus a worked cost example.',
   datePublished: '2026-07-06',
-  dateModified: '2026-08-03',
+  dateModified: '2026-08-22',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '12 min read',

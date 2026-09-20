@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'ElevenLabs Alternatives 2026: 5 Tools Worth It',
   metaDescription: 'The best ElevenLabs alternatives in 2026, compared by actual use case. Murf AI, Cartesia, Resemble AI, Play.ht & WellSaid Labs — real pricing, no fluff.',
   datePublished: '2026-08-14',
-  dateModified: '2026-08-14',
+  dateModified: '2026-09-10',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '12 min read',

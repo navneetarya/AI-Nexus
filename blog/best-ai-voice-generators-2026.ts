@@ -15,7 +15,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Generators 2026: 5 Tools Ranked',
   metaDescription: 'The 5 best AI voice generators in 2026, compared on real pricing and voice quality. ElevenLabs, Murf AI, Podcastle & Descript — free plans tested, honest verdict.',
   datePublished: '2026-08-13',
-  dateModified: '2026-08-13',
+  dateModified: '2026-09-10',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '13 min read',

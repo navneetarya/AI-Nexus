@@ -19,7 +19,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Ad Creative Generator Tools 2026',
   metaDescription: 'AdCreative.ai, Creatify, Topview AI, Shhots AI & PhotoRoom compared on real pricing — best ai ad creative generator picks for solo founders 2026.',
   datePublished: '2026-07-30',
-  dateModified: '2026-07-30',
+  dateModified: '2026-08-22',
   author: 'Navneet Arya',
   category: 'Marketing',
   readTime: '10 min read',

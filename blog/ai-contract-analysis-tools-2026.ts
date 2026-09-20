@@ -28,7 +28,7 @@ const post: BlogPost = {
   seoTitle: 'AI Contract Analysis Tools 2026: Freelancer & SMB Guide',
   metaDescription: 'Harvey AI and Luminance are enterprise-only. Here is what AI contract analysis tools actually cost in 2026, and what freelancers should use instead.',
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: Category.PRODUCTIVITY,
   readTime: '11 min read',

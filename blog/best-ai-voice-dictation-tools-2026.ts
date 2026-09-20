@@ -31,7 +31,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Dictation Tools 2026 (6 Tested, Free Options)',
   metaDescription: "Wispr Flow rates 4.5/5 on G2 but only 2.7/5 on Trustpilot — here's why, plus real pricing for Superwhisper, Otter.ai, Dragon, and 2 free tools in 2026.",
   datePublished: '2026-07-14',
-  dateModified: '2026-07-14',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: Category.PRODUCTIVITY,
   readTime: '10 min read',

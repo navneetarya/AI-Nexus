@@ -19,7 +19,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Receptionist for Small Business 2026',
   metaDescription: 'AIRA, Smith.ai, Rosie, Dialzara & Goodcall compared on real pricing and small-business fit — verified July 2026, includes hidden overage costs.',
   datePublished: '2026-08-01',
-  dateModified: '2026-08-01',
+  dateModified: '2026-08-22',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '11 min read',

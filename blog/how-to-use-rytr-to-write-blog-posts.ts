@@ -15,7 +15,7 @@ const post: BlogPost = {
   seoTitle: 'How to Use Rytr to Write Blog Posts 2026',
   metaDescription: 'How to use Rytr to write blog posts in 2026: a step-by-step guide covering setup, the best templates, and a workflow to cut first-draft time by 60%.',
   datePublished: '2026-05-02',
-  dateModified: '2026-08-06',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '7 min read',

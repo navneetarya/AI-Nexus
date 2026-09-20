@@ -26,7 +26,7 @@ const post: BlogPost = {
   seoTitle: 'Best Nano Banana Pro Alternatives 2026: Ranked',
   metaDescription: 'Best Nano Banana Pro alternatives for 2026 — Midjourney, Leonardo AI, PhotoRoom, and Canva AI compared on pricing, quality, and free plans.',
   datePublished: '2026-07-28',
-  dateModified: '2026-07-28',
+  dateModified: '2026-08-21',
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '12 min read',

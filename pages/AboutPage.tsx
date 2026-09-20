@@ -21,7 +21,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
     "@type": "ProfilePage",
     "name": "About Navneet Arya — AI Tools Researcher | AI Nexus",
     "url": `${SITE_CONFIG.siteUrl}/about`,
-    "dateModified": "2026-05-25",
+    "dateModified": "2026-09-20",
     "mainEntity": {
       "@type": "Person",
       "@id": `${SITE_CONFIG.siteUrl}/about#author`,
@@ -91,7 +91,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 <div style={{ width: 80, height: 80, borderRadius: '50%', background: `linear-gradient(135deg,${C.a1},${C.a2})`, padding: 3, boxShadow: `0 0 0 3px ${C.a1card}, 0 4px 16px rgba(13,148,136,.25)` }}>
                   <img
                     src="/author-photo.jpg"
-                    alt="Navneet Arya, independent AI tools researcher and founder of AI Nexus — researched 25+ AI writing, audio, and video tools since 2022"
+                    alt="Navneet Arya, independent AI tools researcher and founder of AI Nexus — researching AI writing, audio, video, and productivity tools since 2022"
                     width={74} height={74}
                     style={{ width: 74, height: 74, borderRadius: '50%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
                   />
@@ -104,15 +104,15 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
                 <h1 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 'clamp(22px,4vw,32px)', color: C.txt, margin: '0 0 4px', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
                   {SITE_CONFIG.authorName}
                 </h1>
-                <div style={{ fontSize: 13, color: C.mut2 }}>Independent AI Tools Researcher &nbsp;|&nbsp; Researching AI tools since 2022 · 25+ tools reviewed</div>
+                <div style={{ fontSize: 13, color: C.mut2 }}>Independent AI Tools Researcher &nbsp;|&nbsp; Researching AI tools since 2022 · Independent of tool vendors</div>
               </div>
             </div>
 
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
-              I'm Navneet Arya — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools for real-world workflows first, then write about them. I've systematically researched 24+ tools across writing, audio, video, design, coding, and productivity since 2022, selecting tools for actual workflows before recommending them to others.
+              I'm Navneet Arya — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools with real-world workflows in mind before writing about them. I've researched tools across writing, audio, video, design, coding, and productivity, comparing official documentation, verified user reviews, and pricing before recommending any of them.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
-              I built AI Nexus because every "best AI tools" article I found was clearly written by someone who had never actually opened the products. Review sites were copying marketing pages and calling it a review. I got frustrated and decided to build something where every review is based on independent research — official documentation, verified user reviews, and real pricing data.
+              I built AI Nexus because every "best AI tools" article I found was clearly built on recycled marketing copy with no visible sourcing. Review sites were copying vendor pages and calling it a review. I got frustrated and decided to build something where every review is based on independent research — official documentation, verified user reviews, and real pricing data.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>
               Every tool on this site is independently researched — verified against official documentation, aggregated from 100+ verified user reviews on Trustpilot, G2, and Capterra, and cross-referenced with Reddit community sentiment before I write about it. I focus on what works for <strong style={{ color: C.txt }}>solo creators, freelancers, and small teams</strong> — not enterprise buyers with unlimited budgets. Every tool on this site is useful regardless of where you're based.
@@ -161,8 +161,8 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
             {[
               { n: '200+',    label: 'verified reviews analysed per tool' },
               { n: 'May 2026', label: 'live pricing verified against official pages' },
-              { n: '✓',       label: 'tools independently analyzed with free plan verification' },
-              { n: '22+ / 16 / 25+', label: 'reviews · comparisons · blog posts published' },
+              { n: '8',       label: 'categories researched from official docs, reviews, and documented free-plan limits' },
+              { n: 'Public sources', label: 'every review is built from official docs, user reviews, and pricing pages' },
             ].map(({ n, label }, i) => (
               <div key={i} style={{ padding: '16px', borderRadius: 12, background: `${i % 2 === 0 ? C.a1 : C.a2}08`, border: `1px solid ${i % 2 === 0 ? C.a1 : C.a2}20`, textAlign: 'center' as const }}>
                 <div style={{ fontSize: 20, fontWeight: 800, color: i % 2 === 0 ? C.a1 : C.a2, lineHeight: 1.15, marginBottom: 4 }}>{n}</div>
@@ -180,11 +180,11 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
             </h2>
             {/* W4-T3 (Task 21): Prominent last-verified badge — Google quality raters check for
                 freshness signals on YMYL-adjacent pages. Small muted text is insufficient.
-                Badge format: "Research last updated: May 2026 · 24 tools verified" */}
+                Badge format: "Page last reviewed: <Month YYYY>" */}
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: `${C.a1}12`, border: `1.5px solid ${C.a1}30`, borderRadius: 100, padding: '5px 14px' }}>
               <div style={{ width: 7, height: 7, borderRadius: '50%', background: C.a1, flexShrink: 0 }} />
               <span style={{ fontSize: 12, fontWeight: 600, color: C.a1, fontFamily: "'Inter', sans-serif", letterSpacing: '0.01em' }}>
-                Research last updated: May 2026 &middot; 24 tools verified
+                Page last reviewed: September 2026
               </span>
             </div>
           </div>

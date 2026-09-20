@@ -25,7 +25,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI SEO Content Optimization Tools 2026',
   metaDescription: 'Surfer, Frase, Clearscope & MarketMuse compared on verified 2026 pricing and G2 ratings. The best ai seo content optimization tools 2026, by team size.',
   datePublished: '2026-08-11',
-  dateModified: '2026-08-11',
+  dateModified: '2026-09-17',
   author: 'Navneet Arya',
   category: 'Marketing',
   readTime: '11 min read',
