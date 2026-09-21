@@ -2256,7 +2256,7 @@ export const TOOLS: Tool[] = [
     id: 'd4', slug: 'wegic',
     name: 'Wegic', tagline: 'Build a website by chatting with an AI design team',
     description: 'Wegic builds websites through conversation rather than a drag-and-drop editor. You describe the business, it asks follow-up questions, then generates a responsive multi-page site you keep refining by chat. Sites are mobile-optimised automatically and the underlying code can be exported.',
-    category: Category.DESIGN, affiliateLink: 'https://wegic-ai.pxf.io/QYdJnx',
+    category: Category.DESIGN, affiliateLink: 'https://wegic-ai.pxf.io/jR6ybZ',
     iconName: 'Globe', color: '#8b5cf6', accentColor: '#7c3aed',
     userBadge: 'Chat to build', pricing: 'Free credits + $2.99 trial + paid plans', bestFor: 'Non-designers who need a business site or landing page live fast',
     features: ['Conversational site generation', 'Automatic mobile optimisation', 'Multilingual site support', 'Code export — no hard platform lock-in', 'Custom domain on higher tiers'],

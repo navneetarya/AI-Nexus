@@ -286,7 +286,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "Best AI Website Builders 2026: 5 Tools Ranked",
     "metaDescription": "Wix, Framer, Durable, Hostinger, and 10Web compared on real August 2026 pricing and ratings — the best ai website builder for your business, by use case.",
     "datePublished": "2026-08-08",
-    "dateModified": "2026-08-18",
+    "dateModified": "2026-09-21",
     "author": "Navneet Arya",
     "category": "Design",
     "readTime": "12 min read",
