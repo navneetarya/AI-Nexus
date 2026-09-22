@@ -15,8 +15,14 @@
 // Prezi AI     : No affiliate confirmed — plain outbound link, verify before adding sponsored rel
 // ChatGPT for PowerPoint / Copilot / Gemini : No affiliate — vendor-direct products, plain links
 // Links: connects to /best-ai-design-tools/, /compare/gamma-vs-beautiful-ai/, /blog/best-ai-marketing-tools-2026/
-// mentionedTools (for prerender.mjs BLOG_POSTS entry): gamma, beautiful-ai, canva-ai
+// mentionedTools (for prerender.mjs BLOG_POSTS entry): gamma, beautiful-ai, canva-ai, presentation-intelligence
 // Word count: ~2,340 words | Published: 2026-06-30 | Author: Navneet Arya
+// ── 2026-09-22 revision ── Added Presentation Intelligence (Pi) as a new tool: table row,
+// a full "Pi" section, and a fix to the "cheapest paid tool" FAQ, which previously called
+// Gamma the cheapest at $8/month — Pi's Basic plan undercuts it at $7.50/month annualised.
+// Uses ${AFFILIATE_LINKS['presentation-intelligence']} for the CTA link (Impact/sjv.io link,
+// must be sourced through lib/affiliate-links.ts, never hardcoded — see build enforcement notes
+// in lib/affiliate-links.ts).
 // ── 2026-08-24 revision ── GA4 showed strong engagement (5:46 avg, 66.67% engagement rate)
 // but low reach (6 sessions) — the page was too narrow versus competitors now covering
 // 8–17 tools for this query. Added Prezi AI (a competitor is now naming it #1 over Gamma
@@ -30,14 +36,15 @@
 // this one.
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-presentation-tools-2026',
   title: 'Best AI Presentation Tools 2026: Gamma vs Beautiful.ai vs Canva AI vs NotebookLM',
   seoTitle: 'Best AI Presentation Tools 2026: Reviewed & Ranked',
-  metaDescription: 'Best AI presentation tools 2026 compared: Gamma, Prezi AI, Beautiful.ai, Canva AI, NotebookLM, plus ChatGPT/Copilot native options. Tome shut down in 2025 — what to use instead, with verified pricing.',
+  metaDescription: 'Best AI presentation tools 2026 compared: Gamma, Pi, Prezi AI, Beautiful.ai, Canva AI, NotebookLM, plus ChatGPT/Copilot native options. Tome shut down in 2025 — what to use instead, with verified pricing.',
   datePublished: '2026-06-30',
-  dateModified: '2026-08-24',
+  dateModified: '2026-09-22',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '13 min read',
@@ -52,7 +59,7 @@ const post: BlogPost = {
     },
     {
       q: 'What is the best free AI presentation tool in 2026?',
-      a: 'NotebookLM (Google) is the strongest genuinely free option — there is no paid tier at all for its slide-generation feature, and because it builds presentations from documents you upload rather than from a prompt, the content is grounded in your actual material instead of AI-invented filler. Gamma\'s free plan is the best free option if you are starting from a blank page rather than existing documents — it gives 400 one-time AI credits (roughly 8–15 full presentations) before you hit a paywall, though every free Gamma deck carries a "Made with Gamma" watermark. Canva\'s free plan includes a usable slice of its Magic Design AI (200 credits/month) bundled with its much larger free template library. Beautiful.ai has no permanent free plan — only a 14-day trial that requires a credit card and auto-charges if you forget to cancel.',
+      a: 'NotebookLM (Google) is the strongest genuinely free option — there is no paid tier at all for its slide-generation feature, and because it builds presentations from documents you upload rather than from a prompt, the content is grounded in your actual material instead of AI-invented filler. Pi (Presentation Intelligence) is the strongest free option among the prompt-based tools — its free plan is forever free and exports with no watermark, unlike Gamma\'s, though it caps out at roughly 40 AI credits. Gamma\'s free plan gives the largest one-time credit allowance if you want to start from a blank page — 400 one-time AI credits (roughly 8–15 full presentations) before you hit a paywall, though every free Gamma deck carries a "Made with Gamma" watermark. Canva\'s free plan includes a usable slice of its Magic Design AI (200 credits/month) bundled with its much larger free template library. Beautiful.ai has no permanent free plan — only a 14-day trial that requires a credit card and auto-charges if you forget to cancel.',
     },
     {
       q: 'Is Gamma or Beautiful.ai better for presentations?',
@@ -72,7 +79,7 @@ const post: BlogPost = {
     },
     {
       q: 'What is the cheapest paid AI presentation tool in 2026?',
-      a: 'Gamma Plus, at $8/month on annual billing, is the cheapest paid option among the four tools compared here that still gives unlimited generation and removes the watermark. Beautiful.ai\'s Pro plan is close at $12/month annual, but it has no permanent free plan to fall back on, unlike Gamma. Canva Pro at $15/month is priced higher, though it bundles a full design suite beyond just presentations. NotebookLM is not "cheap" but genuinely free with no paid tier at all, so it wins outright if budget is the only factor.',
+      a: 'Pi (Presentation Intelligence), at $7.50/month on annual billing ($89.90/year), is the cheapest paid option among the tools compared here that gives unlimited generation. Gamma Plus is close behind at $8/month on annual billing. Beautiful.ai\'s Pro plan runs $12/month annual and has no permanent free plan to fall back on, unlike Gamma or Pi. Canva Pro at $15/month is priced higher, though it bundles a full design suite beyond just presentations. NotebookLM is not "cheap" but genuinely free with no paid tier at all, so it wins outright if budget is the only factor.',
     },
     {
       q: 'Do AI presentation tools support UPI or direct INR billing for Indian users?',
@@ -117,9 +124,10 @@ const post: BlogPost = {
     { url: 'https://www.canva.com/en/pricing/', label: 'Canva — Official Pricing' },
     { url: 'https://notebooklm.google', label: 'NotebookLM — Google' },
     { url: 'https://prezi.com/pricing/', label: 'Prezi AI — Official Pricing' },
+    { url: 'https://www.pi.inc/pricing', label: 'Pi (Presentation Intelligence) — Official Pricing' },
     { url: 'https://venturebeat.com/ai/tomes-founders-ditch-viral-presentation-app-with-20m-users-to-build-ai', label: 'VentureBeat — Tome Founders Pivot to Lightfield' },
   ],
-  wordCount: 3050,
+  wordCount: 3320,
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
@@ -183,6 +191,13 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">$15/month (Pro)</td>
       <td style="padding:10px 14px;">Existing Canva users, broad design needs</td>
       <td style="padding:10px 14px;">⭐ 4.3/5</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
+      <td style="padding:10px 14px;font-weight:600;">Pi (Presentation Intelligence)</td>
+      <td style="padding:10px 14px;">Yes: forever free, ~40 credits, no watermark</td>
+      <td style="padding:10px 14px;">$7.50/month (annual Basic)</td>
+      <td style="padding:10px 14px;">Turning a document, PDF or webpage into a deck cheaply</td>
+      <td style="padding:10px 14px;">⭐ 3.8/5</td>
     </tr>
     <tr>
       <td style="padding:10px 14px;font-weight:600;">ChatGPT for PowerPoint / Copilot / Gemini</td>
@@ -276,6 +291,21 @@ const post: BlogPost = {
   <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 
+<h2>Pi (Presentation Intelligence): Best Cheap Option for Turning a Document Into a Deck</h2>
+<p>Pi, short for Presentation Intelligence and built by DeepVinci, takes the widest range of source material of any tool in this comparison. Feed it a prompt, a PDF, a Word document, a PowerPoint file, a webpage URL, or an image, and its Design Engine generates content and visual layout together, rather than dropping AI-written text into a fixed template.</p>
+<p>The free plan is the most generous in this guide on one specific point: it's forever free, not a trial, and exports carry no watermark — a real difference from Gamma's free tier. The trade-off is a smaller credit allowance, roughly 40 AI generation credits, versus Gamma's 400 one-time credits.</p>
+<h3>Pi pricing and free plan</h3>
+<p>The free plan includes custom templates and font uploads alongside those ~40 credits, and additional credits can be earned through referrals, daily logins, or sharing documents. The paid Basic plan costs $9.90/month, or $89.90/year (about $7.50/month annualised) — slightly undercutting Gamma's $8/month Plus plan — and removes the credit cap entirely.</p>
+<p>Pi also includes built-in analytics on shared decks (how often a link was opened, per-page reading data over the past 30 days), a feature that usually sits behind a higher tier on competing tools.</p>
+<p>The honest limitation: Pi's independent review base is thin. No G2 reviews exist for it as of this guide, and the Trustpilot listing under "PI" belongs to a different product, the pi.ai chatbot, not this tool. There's also no public team or enterprise tier, so it isn't the right pick for a company-wide rollout needing SSO or admin controls.</p>
+<p><strong>Pi: try the free plan first.</strong> Forever free, no watermark, no credit card required to start.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['presentation-intelligence']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pi Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
+</p>
+
 <h2>ChatGPT for PowerPoint, Copilot &amp; Gemini: Best If You Want AI Inside Your Existing Tool</h2>
 <p>Every tool above generates a deck in its own separate app, which means an export step before your presentation lives in PowerPoint or Google Slides. A growing share of searches for this topic are actually looking for the opposite: AI that works inside the tool they already use.</p>
 <p>Three options cover this intent. <strong>ChatGPT for PowerPoint</strong> is OpenAI's official add-in — it generates and edits slides directly inside a PowerPoint file, so there's no separate export or format conversion at any point. <strong>Microsoft Copilot</strong> does the same natively across Microsoft 365, at a meaningfully higher price (roughly $30/user/month as an add-on to an existing Microsoft 365 subscription). <strong>Google's Gemini</strong> plays the equivalent role inside Google Slides for teams already on Google Workspace.</p>
@@ -322,6 +352,7 @@ const post: BlogPost = {
 <p><strong>Use Beautiful.ai if:</strong> you manage a sales or marketing team where 10+ people create client-facing decks on their own. Brand consistency matters more to you than design flexibility. Budget for the $40/seat/month Team plan once you need collaboration features, not just the $12/month individual Pro.</p>
 <p><strong>Use Prezi AI if:</strong> you present live to an audience and want built-in polls, quizzes, or real-time viewer analytics during the talk itself — a feature no other tool in this guide offers.</p>
 <p><strong>Use Canva AI if:</strong> you already pay for Canva Pro for other design work, like social posts, brand assets, or marketing graphics. You want an AI presentation tool bundled in. That beats paying for a second subscription.</p>
+<p><strong>Use Pi (Presentation Intelligence) if:</strong> you want to turn an existing PDF, Word doc, or webpage into a deck cheaply, and a genuinely free, watermark-free plan matters more to you than a large body of independent reviews to check first.</p>
 <p><strong>Use ChatGPT for PowerPoint, Copilot, or Gemini if:</strong> staying inside PowerPoint or Google Slides matters more than getting the boldest possible first draft, and you or your team already have a license for one of them.</p>
 <p>For a closer look at how two of these tools stack up feature-by-feature, see the <a href="/compare/gamma-vs-beautiful-ai/">full Gamma vs Beautiful.ai comparison</a> on AI Nexus. For the broader AI design tools landscape, the <a href="/best-ai-design-tools/">best AI design tools 2026 category page</a> covers logo makers, image generators, and other adjacent categories.</p>
 <p>For Indian users, Gamma, Beautiful.ai, Canva AI, and Prezi AI all bill in USD with no UPI or direct INR support. Gamma Plus runs roughly ₹670/month, Canva Pro roughly ₹1,250/month, and Beautiful.ai Pro roughly ₹1,000/month at current exchange rates.</p>

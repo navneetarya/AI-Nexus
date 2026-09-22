@@ -1481,6 +1481,7 @@ const TOOL_RADAR: Record<string, [number, number, number, number, number]> = {
   'creao-ai':      [3.8, 3.8, 3.9, 4.2, 3.0],
   'flowith':       [3.4, 4.3, 3.4, 2.8, 3.5],
   'popai-sheets':  [4.2, 3.7, 3.6, 3.2, 3.2],
+  'presentation-intelligence': [4.4, 4.0, 4.3, 3.6, 3.0],
 };
 
 const RADAR_AXES = ['Ease of Use', 'Output Quality', 'Value', 'Free Plan', 'Support'] as const;

@@ -11,17 +11,23 @@
 // Internal links: /best-ai-design-tools/, /tools/gamma, /tools/beautiful-ai, /tools/canva-ai,
 // /blog/best-ai-presentation-tools-2026/, /compare/gamma-vs-beautiful-ai/
 // Affiliate links used in this post: Gamma — confirmed, tracked — https://gamma.app?via=ainexus
+//   Pi (Presentation Intelligence) — Impact/sjv.io link, sourced via AFFILIATE_LINKS['presentation-intelligence']
 // Word count: ~2,250 words | Published: 2026-09-09 | Author: Navneet Arya
+// ── 2026-09-22 revision ── Added Pi (Presentation Intelligence) to the Alternatives to
+// Gamma section — it undercuts Gamma's $8/month "cheapest" price point at $7.50/month
+// annualised and has a genuinely watermark-free free plan, which is a real contrast worth
+// naming next to Gamma's watermarked free tier.
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'gamma-ai-review-2026',
   title: 'Gamma AI Review 2026: Is It Worth $8/Month for Presentations?',
   seoTitle: 'Gamma AI Review 2026: Is It Worth $8/Month?',
-  metaDescription: 'Gamma AI reviewed for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai and Canva AI. Worth $8/month?',
+  metaDescription: 'Gamma AI reviewed for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai, Canva AI and Pi. Worth $8/month?',
   datePublished: '2026-09-09',
-  dateModified: '2026-09-10',
+  dateModified: '2026-09-22',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '10 min read',
@@ -311,6 +317,7 @@ const post: BlogPost = {
   <li><strong>Beautiful.ai ($12/month, no free plan):</strong> Locked Smart Slide layouts guarantee visual consistency across a team, at the cost of Gamma's creative range and permanent free tier.</li>
   <li><strong>Canva AI (free–$15/month):</strong> Weaker slide-specific intelligence than Gamma, but a natural fit if you already pay for a Canva subscription.</li>
   <li><strong>NotebookLM (completely free):</strong> Builds slides from documents you upload rather than a prompt, so content is grounded in your actual material instead of AI-invented filler. PPTX export is newer and less mature than Gamma's.</li>
+  <li><strong>Pi / Presentation Intelligence (forever-free plan + $7.50/month Basic):</strong> Slightly undercuts Gamma's price and its free plan exports with no watermark, unlike Gamma's — but it's a newer entrant with a much thinner independent review base, so treat it as a budget alternative worth testing rather than a proven swap.</li>
   <li><strong>ChatGPT for PowerPoint / Microsoft Copilot / Gemini in Slides:</strong> The right call if you want AI inside software you already use daily, rather than a separate standalone app.</li>
 </ul>
 <p>For the full field compared side by side, see the <a href="/blog/best-ai-presentation-tools-2026/" style="color:#6366f1;">best AI presentation tools 2026 guide</a>, and browse the wider category on <a href="/best-ai-design-tools/" style="color:#6366f1;">AI Nexus's best AI design tools page</a>.</p>

@@ -1,4 +1,6 @@
-﻿import { BlogPost } from './types';
+﻿// ── 2026-09-22 revision ── Added a Pi (Presentation Intelligence) mention inside the Gamma
+// pitch-deck section as a cheaper alternative — uses ${AFFILIATE_LINKS['presentation-intelligence']}.
+import { BlogPost } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
@@ -7,7 +9,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Startups 2026 — Reviewed',
   metaDescription: 'The best AI tools for startups in 2026: Notion AI, Gamma, Claude, Canva AI, and Grammarly compared. Build product, content, and pitches faster with these tools.',
   datePublished: '2026-05-23',
-  dateModified: '2026-08-22',
+  dateModified: '2026-09-22',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',
@@ -123,6 +125,10 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
+<p>If budget is tighter than time, <a href="/tools/presentation-intelligence/" style="color:#0D9488;">Pi (Presentation Intelligence)</a> is worth a look too: its free plan is forever free with no watermark, and the paid Basic tier runs about $7.50/month annualised, a touch cheaper than Gamma Plus. It also accepts an existing pitch memo or one-pager as a starting document, not just a text prompt. The trade-off is a much smaller independent review base than Gamma's, so it's a reasonable budget pick, not yet a proven default.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['presentation-intelligence']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pi Free →</a>
+</div>
 <h2>3. Canva AI – Design Without Hiring a Designer</h2>
 <p>Most early-stage startups can't justify hiring a designer. Canva's free plan and AI features make professional-looking marketing assets, social posts, presentations, and one-pagers possible with no design training.</p>
 <p>The Magic Design feature builds complete branded templates from your content. Magic Write helps with copy for marketing assets. The background remover and AI image generator handle product photography and visuals with no extra tools.</p>

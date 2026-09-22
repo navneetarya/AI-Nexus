@@ -2290,6 +2290,41 @@ export const TOOLS: Tool[] = [
     ],
     reviewType: 'research-based',
   },
+  {
+    id: 'd5', slug: 'presentation-intelligence',
+    name: 'Presentation Intelligence (Pi)', tagline: 'An AI presentation generator that designs while it writes',
+    description: 'Pi (Presentation Intelligence) turns a prompt, PDF, Word doc, PowerPoint file, webpage or image into a fully designed slide deck. Its Design Engine generates content and visual layout together rather than dropping AI text into a fixed template, and decks render responsively across desktop, tablet and mobile without a separate mobile version.',
+    category: Category.DESIGN, affiliateLink: 'https://deepvincilimited.sjv.io/WOQd7Z',
+    iconName: 'Layers', color: '#f97316', accentColor: '#ea580c',
+    userBadge: 'Free plan ✓', pricing: 'Free (forever) + $9.90/month', bestFor: 'Anyone turning an existing document, PDF or webpage into a deck fast',
+    features: ['Generates content and design together, not text-into-template', 'Accepts PDF, DOCX, PPTX, webpages and images as source material', 'Responsive rendering across desktop, tablet and mobile', 'Built-in analytics on shared decks (opens, per-page reading time)', 'Custom templates and font uploads on the free plan'],
+    pros: [
+      'Free plan is unusually generous for the category: no watermark and custom templates included, not just a locked-down trial',
+      'Wide input range — a PDF, Word file, PowerPoint, webpage or image can all become a starting deck',
+      'Basic plan at $9.90/month ($89.90/year, ~$7.50/month annualised) undercuts most direct competitors',
+      'Built-in per-deck viewer analytics, which usually sits behind a higher tier on rival tools',
+    ],
+    cons: [
+      'Very thin independent review base — no G2 reviews found, and the Trustpilot listing under "PI" belongs to the unrelated pi.ai chatbot, not this product',
+      'Free tier is capped at roughly 40 AI generation credits; heavy use requires upgrading',
+      'No public team or enterprise tier — no SSO or seat management, only two plans (Free and Basic)',
+      'Large source files (400+ page PDFs) and some image uploads have been reported to fail on import',
+      'Newer entrant than Gamma or Beautiful.ai, so less third-party testing and community troubleshooting exists',
+    ],
+    notForYou: 'Teams that need SSO, admin controls or a published security/compliance package for a company-wide rollout — Pi has no public enterprise tier, so Gamma or Beautiful.ai are the safer picks there. Also skip it if you want a large, independently verified review base to lean on before buying; Pi\'s public review footprint is still very small.',
+    lastTestedISO: '2026-09-21',
+    researchSources: {
+      lastVerified: '2026-09-21',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0 (forever free)', highlight: '~40 AI generation credits · custom templates · font upload · no watermark on export' },
+      { tier: 'Basic', price: '$9.90/month, or $89.90/year (~$7.50/mo)', highlight: 'Unlimited AI generation, editing, image creation and export' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. Free-plan credit count and watermark status verified against pi.inc/pricing and cross-checked against two independent reviews after earlier sources conflicted (one claimed 400 credits with downloads locked). Ratings intentionally omitted from schema — no G2 reviews and no matching Trustpilot listing exist for this product as of this review.' },
+    ],
+    reviewType: 'research-based',
+  },
 
   // PRODUCTIVITY
   {
@@ -3053,4 +3088,18 @@ Object.assign(TOOL_KEYWORDS, {
   'creao-ai': ['creao ai review', 'no-code ai agent builder', 'creao pricing', 'ai workflow automation', 'build ai agents without code'],
   flowith: ['flowith review', 'flowith pricing', 'agent neo', 'ai agent workspace', 'ai canvas tool'],
   'popai-sheets': ['popai sheets review', 'ai spreadsheet tool', 'pdf to excel ai', 'ai data extraction', 'ai for google sheets'],
+});
+
+// ── Presentation Intelligence (Pi) — added Sep 2026, mirrors prerender.mjs TOOL_FAQS ──
+Object.assign(TOOL_FAQS, {
+  'presentation-intelligence': [
+    { q: 'Is Presentation Intelligence (Pi) free?', a: "Yes — the free plan is forever free, not a time-limited trial. It includes roughly 40 AI generation credits, custom templates and font uploads, and exports with no watermark. Once those credits run out you either wait for extra credits (earned through referrals, daily login or document sharing) or upgrade to Basic at $9.90/month for unlimited generation." },
+    { q: 'How much does Pi cost?', a: "Pi has two public plans: Free ($0, ~40 credits) and Basic at $9.90/month, or $89.90/year, which works out to roughly $7.50/month billed annually. There is no publicly listed team or enterprise tier — larger deployments are handled as custom arrangements on request." },
+    { q: 'What can I upload to Pi to build a deck?', a: "Pi accepts a plain text prompt, PDFs, Word documents, PowerPoint files, webpage URLs and images as source material, then produces a complete deck with structure, copy, layout and matched imagery already in place. Very large PDFs (400+ pages) and some image uploads have been reported to fail, so split oversized files before uploading." },
+    { q: 'Is Pi better than Gamma?', a: "Both generate a designed deck from a prompt, and Pi's Basic plan is slightly cheaper than Gamma's Plus plan on annual billing ($7.50/month vs $8/month). Pi's free plan is more generous on watermarking (none, versus Gamma's watermarked free exports) but capped at fewer credits. Gamma has a far larger independent review base and a more established track record; Pi is the newer, less-tested option, so treat it as a lower-cost alternative worth a look rather than a like-for-like replacement." },
+    { q: 'Is Pi (Presentation Intelligence) a trustworthy pick given the limited reviews?', a: "Treat it as an early-stage bet rather than an established default. There are no G2 reviews for Pi, and the Trustpilot listing under \"PI\" belongs to a different product (the pi.ai chatbot), not this tool — so there isn't yet an independent review base to verify vendor claims against. The free plan is genuinely usable for testing output quality before committing money, which is the lowest-risk way to judge it yourself." },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  'presentation-intelligence': ['presentation intelligence review', 'pi ai presentation', 'pi.inc pricing', 'ai presentation generator', 'best gamma alternative'],
 });
