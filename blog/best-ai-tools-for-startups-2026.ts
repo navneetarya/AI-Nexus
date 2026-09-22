@@ -166,7 +166,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['wegic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Wegic →</a>
 </div>
-<p>Whichever site tool you use, you'll still need a domain and a business email that matches it rather than a personal Gmail address — <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Spaceship</a> covers both. If you'd rather skip the site builder entirely, WordPress.com hosting from <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Automattic</a> is a common fallback for founders who already know WordPress.</p>
+<p>Whichever site tool you use, you'll still need a <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer">domain</a> and a <a href="${AFFILIATE_LINKS['spaceship-email']}" target="_blank" rel="sponsored nofollow noopener noreferrer">business email</a> that matches it rather than a personal Gmail address — Spaceship covers both. If you'd rather skip the site builder entirely, WordPress.com hosting from <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Automattic</a> is a common fallback for founders who already know WordPress.</p>
 
 <h2>How to Roll Out an AI Stack Without Wasting a Subscription</h2>
 <p>Most startups overbuy AI tools in month one and use a fraction of what they pay for. A better sequence:</p>

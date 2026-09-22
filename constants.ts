@@ -2329,7 +2329,7 @@ export const TOOLS: Tool[] = [
     id: 'd6', slug: 'alf-website-studio',
     name: 'Alf Website Studio', tagline: 'Spaceship\'s AI assistant builds your site through chat',
     description: 'Alf Website Studio is Spaceship\'s conversational website builder. You describe the site to Alf the same way you would brief a web developer, it generates the copy, branding and images, and you refine it by asking for changes or editing directly in the visual editor. Hosting, domain connection and an SSL certificate are handled automatically.',
-    category: Category.DESIGN, affiliateLink: 'https://spaceship.sjv.io/X49n7b',
+    category: Category.DESIGN, affiliateLink: 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2Falf-website-builder%2F', // Impact deep link — see lib/affiliate-links.ts caveat on Spaceship deep-linking; verify in Impact dashboard, else fall back to https://spaceship.sjv.io/X49n7b
     iconName: 'Wand2', color: '#0ea5e9', accentColor: '#0284c7',
     userBadge: '30-day free trial', pricing: 'Free 30-day trial + $5/month', bestFor: 'Spaceship domain owners who want a simple business site or portfolio live fast',
     features: ['Conversational site generation from a plain-language brief', 'Visual editor for manual tweaks alongside chat edits', 'Fully managed hosting included', 'Automatic domain connection and free SSL certificate', 'Automatic platform updates and security'],

@@ -40,7 +40,15 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   juicebox: 'https://juicebox.ai/?via=c6add3',
   vidiq: 'https://vidiq.com?via=ainexus',
   pixverse: 'https://motivaiprivatelimited.sjv.io/0GKm6Y', // Impact — added Sep 2026, no dedicated tool page yet
-  spaceship: 'https://spaceship.sjv.io/X49n7b', // Impact — domains + business email; Alf Website Studio has its own tool page in constants.ts
+  // Spaceship (Impact) — deep-linked with the standard ?u={encoded landing page} pattern so each
+  // mention lands on the actual product page rather than the generic homepage. CAVEAT: this only
+  // works if Spaceship has "Allow Partners to deep link" turned on for spaceship.com in their Impact
+  // program settings. Verify in the Impact partner dashboard before this goes live — if deep linking
+  // isn't enabled, Impact sends the click to a dead-end page instead of Spaceship's site. If that's
+  // the case, strip everything from '?u=' onward on all three lines below to fall back to the plain
+  // base link (https://spaceship.sjv.io/X49n7b), which is confirmed working.
+  spaceship: 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2F', // domains
+  'spaceship-email': 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2Fbusiness-email', // Spacemail business email
   automattic: 'https://automattic.pxf.io/3k0mxk', // Impact — WordPress.com / Pressable hosting; Jetpack AI Assistant has its own tool page in constants.ts
 };
 

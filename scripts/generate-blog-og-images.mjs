@@ -270,6 +270,9 @@ const POSTS = [
   { slug: 'best-free-ai-tool-plans-2026',                title: 'Best Free AI Tool Plans 2026' },
   { slug: 'cheapest-ai-coding-tools-2026',               title: 'Cheapest AI Coding Tools in 2026' },
   { slug: 'fastest-growing-ai-startups-2026',            title: 'Fastest Growing AI Startups 2026' },
+
+  // Added Sep 2026 — new comparison post, no OG image existed yet
+  { slug: 'best-gamma-alternatives-2026',                title: 'Best Gamma Alternatives 2026' },
 ];
 
 // ── Generate ─────────────────────────────────────────────────────────────────
