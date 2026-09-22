@@ -1,8 +1,12 @@
 ﻿// blog/ai-tools-for-teachers-2026.ts
 // Target keyword: "ai tools for teachers" — 1,600/mo
 // Word count: ~1,500 words
+// ── 2026-09-22 revision ── Added a Pi (Presentation Intelligence) callout after the Gamma
+// section — a forever-free, watermark-free fallback for teachers who exceed Gamma's one-time
+// credit allowance mid-term.
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'ai-tools-for-teachers-2026',
@@ -12,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Teachers 2026 — Free Plans Compared',
   metaDescription: 'Grammarly, Canva AI, and 5 other tools compared for lesson planning and grading. Free-first breakdown of what actually works for teachers in 2026.',
   datePublished: '2026-05-03',
-  dateModified: '2026-08-21',
+  dateModified: '2026-09-22',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',
@@ -79,7 +83,7 @@ const post: BlogPost = {
     { url: 'https://www.notion.so', label: 'Notion AI — official product site' },
     { url: 'https://www.reddit.com/r/Teachers/', label: 'r/Teachers — verified teacher feedback on AI tools' },
   ],
-  wordCount: 1580,
+  wordCount: 1660,
 
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
@@ -175,6 +179,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
+<p><strong>If Gamma's free credits run out before the term does:</strong> <a href="${AFFILIATE_LINKS['presentation-intelligence']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">Pi (Presentation Intelligence)</a> is worth a look. Its free plan is forever free rather than a one-time credit bank, and it exports without a watermark, which matters if you're printing handouts or sharing decks with a department. It's a newer, less-reviewed tool than Gamma, so treat it as a backup for the months your Gamma credits run dry, not a wholesale replacement.</p>
 <h2>2. Grammarly — Streamline Feedback and Communication</h2>
 <img src="https://images.unsplash.com/photo-1758685848174-e061c6486651?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A teacher working on a laptop in front of a chalkboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Rating: 4.5/5 · Free plan: Unlimited · Paid: $12/month</strong></p>

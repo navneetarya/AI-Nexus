@@ -6,8 +6,11 @@
 // Word count: ~2,100 words
 // Internal links: /blog/best-ai-tools-in-india-2026 · /blog/ai-tools-for-students-free-2026
 //                 /tools/grammarly · /tools/rytr · /tools/quillbot · /tools/taskade
+// ── 2026-09-22 revision ── Added a Pi (Presentation Intelligence) callout after the Gamma
+// section — forever-free, watermark-free fallback once Gamma's one-time credits run out.
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-free-ai-tools-for-students-in-india-2026',
@@ -15,7 +18,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Tools for Students in India 2026',
   metaDescription: 'Best free AI tools for students in India 2026 — works without a VPN or dollar card. Covers essays, research, presentations and coding with INR pricing notes.',
   datePublished: '2026-05-09',
-  dateModified: '2026-08-21',
+  dateModified: '2026-09-22',
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '8 min read',
@@ -240,6 +243,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+<p><strong>Watermark-free alternative:</strong> <a href="${AFFILIATE_LINKS['presentation-intelligence']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">Pi (Presentation Intelligence)</a> bills in USD like Gamma but its free plan is forever-free and exports without any watermark. It bills fewer credits per month than Gamma's one-time 400, so it works best as a second free option once you're out of Gamma credits mid-semester, not a full replacement.</p>
 <h2>6. Taskade: Best Free AI Tool for Study Planning</h2>
 <p><strong>Free plan: Unlimited projects · AI task generation · No credit card · Hindi supported</strong></p>
 <p>Taskade combines task lists, notes, mind maps, and AI in one workspace. For students, the top feature is the AI Project Generator.</p>

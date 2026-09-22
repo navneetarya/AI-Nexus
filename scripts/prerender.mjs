@@ -1830,6 +1830,8 @@ const CATEGORY_OG_MAP = {
 // resolveOgImage() checks this map first before falling through to category images.
 // To add a new post: run `node scripts/generate-blog-og-images.mjs` then add the slug here.
 const BLOG_OG_MAP = {
+  // Sep 22: Best Gamma AI Alternatives 2026 — run scripts/generate-blog-og-images.mjs to generate
+  'best-gamma-alternatives-2026': `${SITE}/og/blog/best-gamma-alternatives-2026.webp`,
   // Step D (Phase 1 plan): dedicated OG images generated via scripts/generate-blog-og-images.mjs
   'best-ai-spreadsheet-tools-2026': `${SITE}/og/blog/best-ai-spreadsheet-tools-2026.webp`,
   'best-ai-transcription-software-2026': `${SITE}/og/blog/best-ai-transcription-software-2026.webp`,
@@ -2580,6 +2582,30 @@ function faqSchema(faqs) {
 // IMPORTANT: Every entry here must match the slug and metadata in blog/*.ts
 // When adding new blog posts, add them here AND in blog/index.ts
 const BLOG_POSTS = [
+  // —— Sep 22: Best Gamma AI Alternatives 2026 — Pi, Beautiful.ai, Canva AI, NotebookLM compared;
+  // feeds off the Pi (Presentation Intelligence) rollout across the presentation cluster ——
+  {
+    slug: 'best-gamma-alternatives-2026',
+    title: 'Best Gamma AI Alternatives 2026 — Beautiful.ai vs Canva AI vs NotebookLM vs Pi',
+    seoTitle: 'Best Gamma AI Alternatives 2026 — Compared',
+    metaDescription: 'Beautiful.ai, Canva AI, NotebookLM, and Pi compared as Gamma alternatives in 2026 — which wins on price, the free-tier watermark, and design consistency.',
+    datePublished: '2026-09-22',
+    dateModified: '2026-09-22',
+    readTimeMinutes: 9,
+    ogImage: 'https://ainexustools.online/og/blog/best-gamma-alternatives-2026.webp',
+    mentionedTools: ['gamma', 'beautiful-ai', 'canva-ai', 'presentation-intelligence'],
+    quickAnswer: "Best Gamma AI alternatives in 2026: Pi (Presentation Intelligence) wins on price and free-plan generosity — forever-free with no watermark, and $7.50/month on annual billing undercuts Gamma's $8/month Plus tier. Beautiful.ai wins for teams that need every deck to look consistent regardless of who built it. Canva AI wins if you already pay for Canva. NotebookLM wins if you want slides grounded in documents you actually uploaded, not AI-invented filler.",
+    faqs: [
+      { q: 'What is the best free Gamma alternative in 2026?', a: "NotebookLM is the only genuinely free option with no paid tier at all — but it builds slides from documents you upload rather than a prompt, so it suits a narrower workflow than Gamma. Among prompt-based tools, Pi (Presentation Intelligence) has the strongest free plan: it's forever-free, not a time-limited trial, and exports with no watermark, which is a real advantage over Gamma's free tier. Gamma's own free plan gives the largest one-time allowance (400 AI credits, roughly 8–15 decks) but every free-tier deck carries a \"Made with Gamma\" watermark until you upgrade." },
+      { q: 'Which Gamma alternative has no watermark on the free plan?', a: "Pi is the clearest answer here. Its forever-free plan (about 40 credits) exports without a watermark, which directly fixes the most common complaint about Gamma's free tier. NotebookLM has no watermark either, since it has no paid tier to gate features behind in the first place. Gamma and Canva AI both watermark free-tier output until you upgrade to a paid plan." },
+      { q: 'Is Beautiful.ai better than Gamma?', a: "It depends on what you're optimizing for. Gamma is faster and more visually varied — type a prompt and get a complete, styled deck in under a minute. Beautiful.ai is more rigid by design: its Smart Slide layouts constrain every slide to a small library of professionally designed templates, so a team of 20 people producing decks independently will all produce decks that look like they came from the same design system. Gamma gives more creative range but needs more editing to make export-ready. Beautiful.ai is harder to make look unprofessional but has no permanent free plan, only a 14-day trial that requires a credit card." },
+      { q: 'Can NotebookLM replace Gamma?', a: "For one specific workflow, yes: turning documents you already have into slides. NotebookLM builds presentations from PDFs, notes, or reports you upload, so the content is grounded in your actual material rather than AI-invented filler — something Gamma can't guarantee on data-heavy prompts. Where NotebookLM falls short is generation from scratch: if you don't have source documents to upload, there's nothing for it to work from, and Gamma's prompt-to-deck flow is the better fit. NotebookLM's native PPTX export is also newer and less mature than Gamma's." },
+      { q: 'What is the cheapest paid Gamma alternative?', a: "Pi, at $7.50/month on annual billing ($89.90/year), is the cheapest paid alternative compared here that offers unlimited generation — it slightly undercuts Gamma's own $8/month Plus plan. Beautiful.ai's Pro plan runs $12/month annual and has no free plan to fall back on. Canva Pro is $15/month but bundles a full design suite beyond just presentations. NotebookLM has no paid tier at all, so it wins outright on price if that's the only factor, with the tradeoff of needing source documents to work from." },
+      { q: 'Is Canva AI a good Gamma alternative?', a: "Canva AI's Magic Design is genuinely AI-driven, not just a folder of pre-made templates, but its slide-specific intelligence is noticeably weaker than Gamma's since presentations are one feature inside a much broader design platform rather than the entire product. The real case for Canva AI isn't that it beats Gamma at making slides — it's that if you already pay for Canva for social graphics or brand assets, getting presentations included in a subscription you already have is a genuine advantage over paying for a second tool." },
+      { q: 'Does Pi (Presentation Intelligence) have independent reviews like Gamma?', a: "Not yet at the same scale. Gamma is rated 4.5/5 on Trustpilot (892 reviews) and 4.7/5 on G2 (452 reviews) as of the site's most recent verification. Pi currently shows zero reviews on G2, and its Trustpilot listing under \"PI\" is actually a different product (the pi.ai chatbot), not this tool. That thinner independent review base is the main reason to treat Pi as a budget alternative worth testing rather than a fully proven swap for Gamma, even though its free-plan terms are genuinely better on paper." },
+      { q: 'Do any of these Gamma alternatives require a credit card for the free plan?', a: "No. NotebookLM's free tier, Pi's forever-free plan, and Gamma's own 400-credit free plan all work without entering payment information. Canva's free plan is the same. Beautiful.ai is the exception — its 14-day trial requires a credit card upfront and auto-charges if you forget to cancel, which is worth knowing before you sign up to just \"try it out.\"" },
+    ],
+  },
   // —— Sep 20: Best AI Spreadsheet Tools 2026 — Step D of Phase 1 affiliate plan; PopAi Sheets's
   // dedicated pillar/money page. Numerous.ai, Coefficient, Copilot in Excel and Gemini in Sheets
   // have no affiliate program here — linked direct. ——
@@ -5285,6 +5311,14 @@ const RELATED_LINKS = {
 // ── Task 5/6 Fix: Related links map for blog posts — links pillar posts to their
 // satellite/cluster posts (and vice versa) for internal authority distribution.
 const BLOG_RELATED_LINKS = {
+  // —— Sep 22: Best Gamma AI Alternatives 2026 — links back to the Gamma review, the full
+  // presentation-tools roundup, and the Gamma vs Beautiful.ai compare page ——
+  'best-gamma-alternatives-2026': [
+    ['/blog/gamma-ai-review-2026/', 'Gamma AI Review 2026'],
+    ['/blog/best-ai-presentation-tools-2026/', 'Best AI Presentation Tools 2026 — Full Roundup'],
+    ['/compare/gamma-vs-beautiful-ai/', 'Gamma vs Beautiful.ai — Full Comparison'],
+  ],
+
   // —— Sep 20: Best AI Spreadsheet Tools 2026 — links into the automation roundup (adjacent
   // "get data moving without code" intent), the solopreneur stack, and PopAi Sheets' tool page ——
   'best-ai-spreadsheet-tools-2026': [

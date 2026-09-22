@@ -3,8 +3,12 @@
 // Target keyword: "AI tools for students free" — 22,000/mo, Easy difficulty
 // Additions: "Top 5 by Task" comparison table, expanded per-tool sections, Replit added for coding
 // Word count: ~2,200 words
+// ── 2026-09-22 revision ── Added a Pi (Presentation Intelligence) callout after the Gamma
+// section — forever-free, watermark-free free-tier alternative for students who want a
+// submission-ready export without upgrading.
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'ai-tools-for-students-free-2026',
@@ -12,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Tools for Students 2026 (No Card Needed)',
   metaDescription: '5 AI tools every student should bookmark in 2026 — all permanently free, no credit card needed. Compared for essays, research, coding, and slides.',
   datePublished: '2026-04-30',
-  dateModified: '2026-08-21',
+  dateModified: '2026-09-22',
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '9 min read',
@@ -75,7 +79,7 @@ const post: BlogPost = {
     { url: 'https://replit.com', label: 'Replit — official product site' },
     { url: 'https://education.github.com/pack', label: 'GitHub Student Developer Pack — official page' },
   ],
-  wordCount: 2190,
+  wordCount: 2260,
 
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
@@ -221,6 +225,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
+<p><strong>If you'd rather skip the watermark entirely:</strong> <a href="${AFFILIATE_LINKS['presentation-intelligence']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">Pi (Presentation Intelligence)</a> has a forever-free plan that exports with no watermark, unlike Gamma's free tier. It has fewer credits per month and a much smaller review base than Gamma, so it's a solid free backup for a submission-ready deck rather than a full swap.</p>
 <h2>5. Replit — Best for Coding Assignments & Debugging</h2>
 <img src="https://images.unsplash.com/photo-1758270705317-3ef6142d306f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A student team discussing a project on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Coding · Free Plan: Unlimited projects + AI assist · Paid: from $25/month · <a href="/tools/replit/" style="color:var(--a1);font-weight:600;">Full Replit Review →</a></strong></p>

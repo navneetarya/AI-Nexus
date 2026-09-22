@@ -259,8 +259,12 @@ import post96 from './best-ai-dubbing-tools-2026';
 // Affiliates: Transkriptor (Impact) + Descript + Fireflies.ai (all active) — Otter.ai + Rev linked direct
 import post97 from './best-ai-transcription-software-2026';
 import post98 from './best-ai-spreadsheet-tools-2026';
+// Sep 22 — Best Gamma AI Alternatives 2026 — Pi, Beautiful.ai, Canva AI, NotebookLM compared;
+// feeds off the Pi (Presentation Intelligence) rollout across the presentation cluster
+import post99 from './best-gamma-alternatives-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post99, // Sep 22 — Best Gamma AI Alternatives 2026 (Pi, Beautiful.ai, Canva AI, NotebookLM) — pinned first for freshness
   post98, // Sep 20 — Best AI Spreadsheet Tools 2026 (PopAi Sheets, Numerous.ai, Coefficient, Copilot, Gemini) — pinned first for freshness
   post97, // Sep 20 — Best AI Transcription Software 2026 (Transkriptor, Otter.ai, Descript, Fireflies, Rev) — pinned first for freshness
   post96, // Sep 18 — Best AI Dubbing Tools 2026 (ElevenLabs, HeyGen, Rask AI, Synthesia, Dubverse) — pinned first for freshness
