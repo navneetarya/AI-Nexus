@@ -2325,6 +2325,75 @@ export const TOOLS: Tool[] = [
     ],
     reviewType: 'research-based',
   },
+  {
+    id: 'd6', slug: 'alf-website-studio',
+    name: 'Alf Website Studio', tagline: 'Spaceship\'s AI assistant builds your site through chat',
+    description: 'Alf Website Studio is Spaceship\'s conversational website builder. You describe the site to Alf the same way you would brief a web developer, it generates the copy, branding and images, and you refine it by asking for changes or editing directly in the visual editor. Hosting, domain connection and an SSL certificate are handled automatically.',
+    category: Category.DESIGN, affiliateLink: 'https://spaceship.sjv.io/X49n7b',
+    iconName: 'Wand2', color: '#0ea5e9', accentColor: '#0284c7',
+    userBadge: '30-day free trial', pricing: 'Free 30-day trial + $5/month', bestFor: 'Spaceship domain owners who want a simple business site or portfolio live fast',
+    features: ['Conversational site generation from a plain-language brief', 'Visual editor for manual tweaks alongside chat edits', 'Fully managed hosting included', 'Automatic domain connection and free SSL certificate', 'Automatic platform updates and security'],
+    pros: [
+      'No separate hosting purchase — hosting, domain connection and SSL are bundled into the $5/month price',
+      'Dual editing: switch between chat-based generation and a visual editor rather than being locked into one workflow',
+      '30-day free trial is long enough to actually build and judge a real site, not just a demo',
+      'Deep integration with Spaceship domains removes the usual DNS/nameserver setup friction for existing Spaceship customers',
+    ],
+    cons: [
+      'External (non-Spaceship) domains must be pointed to Spaceship nameservers to get SSL and full functionality, which is real setup work for anyone domained elsewhere',
+      'Restricted to Spaceship\'s own hosting — there is no code export or migration path to another host, unlike Wegic',
+      'A newer, narrower product than established AI site builders, with a much smaller independent review base',
+      'Product-selling (e-commerce) websites are not yet supported',
+    ],
+    notForYou: 'Anyone who wants to keep ownership of the underlying code or migrate hosts later — Alf has no export path, unlike Wegic. Also skip it if you need an online store today; product-selling sites are not yet supported. It fits best as a fast, bundled site for someone already using Spaceship for domains who does not want a separate hosting decision.',
+    lastTestedISO: '2026-09-22',
+    researchSources: {
+      lastVerified: '2026-09-22',
+    },
+    pricingBreakdown: [
+      { tier: 'Free trial', price: '$0 for 30 days', highlight: 'Full access to Alf generation and the visual editor · requires Spaceship nameservers for external domains' },
+      { tier: 'Standard', price: '$5/month after trial', highlight: 'Fully managed hosting · auto domain connection · free SSL · automatic updates and security' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. Pricing and feature set verified against Spaceship\'s own Alf Website Studio product page and knowledge base.' },
+    ],
+    reviewType: 'research-based',
+  },
+  {
+    id: 'w7', slug: 'jetpack-ai-assistant',
+    name: 'Jetpack AI Assistant', tagline: 'AI content generation built into the WordPress editor',
+    description: 'Jetpack AI Assistant puts prompt-based writing directly inside the WordPress block editor. It generates posts, product descriptions, titles and summaries, adjusts tone, corrects spelling and grammar, and translates content into multiple languages — all without leaving the page you are editing.',
+    category: Category.WRITING, affiliateLink: 'https://automattic.pxf.io/3k0mxk',
+    iconName: 'PenTool', color: '#069e08', accentColor: '#04780a',
+    userBadge: 'Built into WordPress', pricing: 'Free (20 requests) + $4.95/month', bestFor: 'WordPress and WordPress.com site owners writing posts and pages in the native editor',
+    features: ['Prompt-based content generation inside the WordPress editor', 'Tone adjustment across the same draft', 'Spelling and grammar correction', 'Title and summary generation', 'Translation into 12+ languages'],
+    pros: [
+      'No separate app or tab — generation happens inline in the editor you are already using',
+      'Genuinely useful free tier for occasional writers: 20 requests with every feature unlocked, not a stripped-down trial',
+      'Translation into a dozen-plus languages is included rather than a separate paid add-on',
+      'Included at no extra cost inside Jetpack\'s Security, Growth and Complete bundles for existing Jetpack customers',
+    ],
+    cons: [
+      'Only useful if your site already runs on WordPress or WordPress.com — it is not a standalone writing app',
+      'Free tier is a fixed 20-request allowance, not a recurring monthly quota, so it runs out for anyone posting regularly',
+      'Narrower feature set than dedicated AI writing tools like Grammarly or Writesonic, which is expected of an in-editor add-on rather than a specialist product',
+      'Requires the Jetpack plugin (and its data connection to WordPress.com) to be installed and active',
+    ],
+    notForYou: 'Anyone not already running WordPress — this only works inside the WordPress block editor, so a standalone writing tool like Grammarly or Rytr fits better for any other platform. Also skip it if you need deep, specialist writing features (long-form outlining, dedicated plagiarism checking, brand tone profiles); Jetpack AI Assistant is a convenient in-editor add-on, not a full-featured writing suite.',
+    lastTestedISO: '2026-09-22',
+    researchSources: {
+      lastVerified: '2026-09-22',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0 (20 requests total)', highlight: 'Every feature unlocked — content generation, tone adjustment, grammar fixes, translation — for a fixed 20-request allowance' },
+      { tier: 'AI Assistant', price: '$4.95/month billed yearly (~$9.95/month month-to-month)', highlight: 'Unlimited requests, no upper cap on usage' },
+      { tier: 'Bundled', price: 'Included in Security, Growth and Complete Jetpack bundles', highlight: 'No extra charge for AI Assistant if you already subscribe to one of these Jetpack plans' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. Pricing verified against Jetpack\'s own AI Assistant pricing page; free-tier request count and bundle inclusion cross-checked against Automattic\'s public announcement.' },
+    ],
+    reviewType: 'research-based',
+  },
 
   // PRODUCTIVITY
   {
@@ -3102,4 +3171,26 @@ Object.assign(TOOL_FAQS, {
 });
 Object.assign(TOOL_KEYWORDS, {
   'presentation-intelligence': ['presentation intelligence review', 'pi ai presentation', 'pi.inc pricing', 'ai presentation generator', 'best gamma alternative'],
+});
+
+// ── Alf Website Studio + Jetpack AI Assistant — added Sep 2026 (Spaceship + Automattic) ──
+Object.assign(TOOL_FAQS, {
+  'alf-website-studio': [
+    { q: 'Is Alf Website Studio free?', a: "Alf Website Studio has a 30-day free trial with full access to chat-based generation and the visual editor. After the trial it is $5/month, which includes fully managed hosting, domain connection and a free SSL certificate — you are not paying for hosting separately." },
+    { q: 'Can I use Alf Website Studio with a domain from another registrar?', a: "Yes, but external domains need to be pointed to Spaceship's nameservers before the SSL certificate and full functionality will work. If your domain is already registered with Spaceship, this step is automatic." },
+    { q: 'Can I export my site or move it to another host?', a: "No — unlike Wegic, Alf Website Studio does not offer code export. It is built to run on Spaceship's own managed hosting, so there is no migration path if you decide to move to a different host later." },
+    { q: 'Can I sell products on a site built with Alf?', a: "Not yet. Spaceship's own documentation lists product-selling websites as coming soon rather than currently supported, so Alf is best suited to informational, portfolio and service sites for now." },
+    { q: 'Alf Website Studio vs Wegic — which should I use?', a: "Both build a site through conversation with an AI, but they differ on lock-in. Wegic supports code export, so you can migrate elsewhere later. Alf Website Studio has no export path and only runs on Spaceship's hosting, but bundles hosting, domain connection and SSL into one $5/month price with no separate hosting decision to make. If you already use Spaceship for domains and want the simplest possible setup, Alf is the more convenient pick; if you want to keep an exit option, Wegic is the safer one." },
+  ],
+  'jetpack-ai-assistant': [
+    { q: 'Is Jetpack AI Assistant free?', a: "There is a free tier with every feature unlocked for a fixed allowance of 20 requests total — it is not a recurring monthly quota, so it runs out for anyone posting regularly. After that, AI Assistant is $4.95/month billed yearly (around $9.95/month month-to-month) for unlimited requests." },
+    { q: 'Do I need the paid version if I already pay for Jetpack?', a: "Not necessarily. AI Assistant is included at no extra cost inside Jetpack's Security, Growth and Complete bundles. If you are only on a free or single-product Jetpack plan, AI Assistant is billed separately." },
+    { q: 'What can Jetpack AI Assistant actually do?', a: "It generates posts, product descriptions, titles and summaries from a prompt inside the WordPress block editor, adjusts the tone of existing text, corrects spelling and grammar, and translates content into more than a dozen languages — all without leaving the page you are editing." },
+    { q: 'Does Jetpack AI Assistant work outside WordPress?', a: "No. It is a WordPress block-editor feature that requires the Jetpack plugin (and its connection to a WordPress.com account) to be active. It is not a standalone app, so it only makes sense if your site already runs on WordPress or WordPress.com." },
+    { q: 'How does Jetpack AI Assistant compare to Grammarly or Rytr?', a: "It is narrower by design — an in-editor convenience rather than a dedicated writing suite. Grammarly works across 500+ apps and goes deeper on grammar and tone; Rytr is a dedicated content generator with more templates. Jetpack AI Assistant's advantage is that it never requires leaving the WordPress editor, which matters most if nearly all of your writing already happens there." },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  'alf-website-studio': ['alf website studio review', 'alf website builder', 'spaceship ai website builder', 'chat to build website', 'alf pricing'],
+  'jetpack-ai-assistant': ['jetpack ai assistant review', 'wordpress ai writing tool', 'jetpack ai pricing', 'ai content generator wordpress', 'wordpress editor ai'],
 });

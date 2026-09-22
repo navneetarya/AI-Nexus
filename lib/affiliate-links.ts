@@ -40,6 +40,8 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   juicebox: 'https://juicebox.ai/?via=c6add3',
   vidiq: 'https://vidiq.com?via=ainexus',
   pixverse: 'https://motivaiprivatelimited.sjv.io/0GKm6Y', // Impact — added Sep 2026, no dedicated tool page yet
+  spaceship: 'https://spaceship.sjv.io/X49n7b', // Impact — domains + business email; Alf Website Studio has its own tool page in constants.ts
+  automattic: 'https://automattic.pxf.io/3k0mxk', // Impact — WordPress.com / Pressable hosting; Jetpack AI Assistant has its own tool page in constants.ts
 };
 
 const TOOL_LINKS: Record<string, string> = Object.fromEntries(

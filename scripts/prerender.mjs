@@ -912,6 +912,27 @@ const TOOLS = [
     metaDescription: 'Pi (Presentation Intelligence) 2026 review: forever-free plan with no watermark, Basic at $9.90/month. Verified pricing, inputs accepted, and who it fits.',
     reviewBody: 'Pi, short for Presentation Intelligence and built by DeepVinci, is an AI-native presentation generator whose Design Engine produces content and visual layout together rather than filling a fixed template with AI text, and its Smart Fluid Content Framework renders decks responsively across desktop, tablet and mobile. It accepts an unusually wide range of source material — a text prompt, PDF, Word document, PowerPoint file, webpage URL or image — and returns a complete deck with structure, copy, layout and matched imagery already in place. The free plan is more generous than most competitors\' in this category: it is forever free, includes roughly 40 AI generation credits, custom templates and font uploads, and exports with no watermark, which is a meaningfully lower-risk way to evaluate output quality than a time-limited trial. The paid Basic plan costs $9.90/month, or $89.90/year (roughly $7.50/month annualised), which undercuts several established competitors and unlocks unlimited generation, editing, AI image creation and export. Pi\'s independent review footprint is thin: no G2 reviews were found, and the Trustpilot listing under "PI" belongs to a different product, the pi.ai chatbot, not this tool — so vendor claims about quality and reliability are harder to verify against outside sources than for more established competitors. There is no publicly listed team or enterprise tier, no SSO, and large source files (400+ page PDFs) and some image uploads have been reported to fail on import. A reasonable pick for individuals who want a cheap, watermark-free way to turn an existing document into a deck; a weaker fit for teams needing admin controls or a large body of independent reviews to lean on first.',
   },
+  // ── Alf Website Studio + Jetpack AI Assistant — added Sep 2026. Mirrors matching entries in constants.ts TOOLS. ──
+  {
+    slug: 'alf-website-studio', name: 'Alf Website Studio', category: 'Design',
+    tagline: 'Spaceship\'s AI assistant builds your site through chat',
+    description: 'Alf Website Studio is Spaceship\'s conversational website builder. Describe the site, refine by chat or in a visual editor, and hosting, domain connection and an SSL certificate are handled automatically.',
+    pricing: 'Free 30-day trial + $5/month', bestFor: 'Spaceship domain owners who want a simple business site or portfolio live fast',
+    rating: 3.9, lastTested: 'September 2026',
+    seoTitle: 'Alf Website Studio Review 2026: Spaceship\'s AI Site Builder | AI Nexus',
+    metaDescription: 'Alf Website Studio 2026 review: chat-built sites with bundled hosting from $5/month. 30-day trial, dual editing, and where the lock-in matters.',
+    reviewBody: 'Alf Website Studio is Spaceship\'s conversational website builder: describe the site the way you would brief a web developer, and Alf generates copy, branding and images, then refines the draft as you ask for changes or edit directly in a visual editor. Its clearest advantage is bundling — hosting, automatic domain connection and a free SSL certificate all come included in the price, removing the separate hosting decision most AI site builders leave to you. A 30-day free trial gives full access to both the chat generation and the visual editor before the $5/month price kicks in. The trade-off is lock-in: unlike Wegic, Alf offers no code export, so the site only runs on Spaceship\'s own managed hosting with no migration path if you later want to move elsewhere. External domains need to be pointed to Spaceship\'s nameservers to get SSL and full functionality, which is real setup work for anyone domained elsewhere. Product-selling (e-commerce) sites are not yet supported. As a newer entrant, Alf also has a much smaller independent review base than established AI site builders. Best suited to Spaceship domain customers who want the simplest possible bundled setup for a business site, portfolio or landing page, and who do not need an exit path or an online store.',
+  },
+  {
+    slug: 'jetpack-ai-assistant', name: 'Jetpack AI Assistant', category: 'Writing',
+    tagline: 'AI content generation built into the WordPress editor',
+    description: 'Jetpack AI Assistant adds prompt-based writing, tone adjustment, grammar correction and translation directly inside the WordPress block editor, without leaving the page being edited.',
+    pricing: 'Free (20 requests) + $4.95/month', bestFor: 'WordPress and WordPress.com site owners writing posts and pages in the native editor',
+    rating: 3.9, lastTested: 'September 2026',
+    seoTitle: 'Jetpack AI Assistant Review 2026: Worth $4.95/Month? | AI Nexus',
+    metaDescription: 'Jetpack AI Assistant 2026 review: in-editor WordPress AI writing, 20 free requests, then $4.95/month. Features, limits, and who actually needs it.',
+    reviewBody: 'Jetpack AI Assistant puts prompt-based content generation directly inside the WordPress block editor: it drafts posts, product descriptions, titles and summaries, adjusts the tone of existing text, corrects spelling and grammar, and translates content into more than a dozen languages, all without switching to a separate app or tab. The free tier is a fixed allowance of 20 requests with every feature unlocked rather than a stripped-down trial, which is genuinely useful for occasional writers, though it is not a recurring monthly quota and runs out quickly for anyone posting regularly. Beyond that, AI Assistant costs $4.95/month billed yearly (around $9.95/month month-to-month) for unlimited requests, and is included at no extra cost inside Jetpack\'s Security, Growth and Complete bundles for existing Jetpack subscribers. Its core limitation is scope: it only works inside the WordPress block editor and requires the Jetpack plugin and its WordPress.com connection to be active, so it is irrelevant outside the WordPress ecosystem, and its feature set is narrower than dedicated writing tools such as Grammarly or Writesonic. Best suited to WordPress and WordPress.com site owners who want AI assistance without leaving their existing editor, rather than anyone shopping for a standalone writing app.',
+  },
   {
     slug: 'creao-ai', name: 'CREAO', category: 'Productivity',
     tagline: 'Describe a workflow in plain language, get a reusable AI agent',
@@ -1460,6 +1481,19 @@ const COMPARE_ARTICLES = [
       { q: 'Is Beautiful.ai better for corporate presentations?', a: 'Beautiful.ai has stronger corporate templates and brand consistency controls. If you present to enterprise clients regularly and need pixel-perfect brand compliance, Beautiful.ai is worth the higher price.' },
       { q: 'Which generates presentations faster?', a: 'Gamma generates a complete presentation in under 2 minutes from a topic prompt. Beautiful.ai takes 3-4 minutes and requires more manual template selection. Gamma wins on speed.' },
       { q: 'Can Gamma create websites?', a: 'Yes — Gamma creates scrollable one-page websites and documents using the same AI workflow. Beautiful.ai is limited to slide presentations only.' },
+    ],
+  },
+  // ── wegic-vs-alf-website-studio ─────────────────────────────────────────
+  {
+    slug: 'wegic-vs-alf-website-studio',
+    title: 'Wegic vs Alf Website Studio (2026): Which Chat-Built Site Should You Use?',
+    seoTitle: 'Wegic vs Alf Website Studio 2026 — Compared',
+    metaDescription: 'Wegic vs Alf Website Studio compared: pricing, code export, hosting lock-in, and which AI chat-based website builder wins in 2026.',
+    faqs: [
+      { q: 'Is Wegic better than Alf Website Studio?', a: 'For most people, yes — Wegic supports code export, so you can migrate to another host later if you need to. Alf Website Studio has no export path and keeps you on Spaceship\'s hosting permanently. Alf\'s advantage is bundled simplicity: one flat $5/month covers hosting, domain connection and SSL, which suits existing Spaceship customers who want the least possible setup.' },
+      { q: 'Does Alf Website Studio have a free plan?', a: 'Alf Website Studio has a 30-day free trial with full feature access rather than a permanent free tier. After the trial it is a flat $5/month. Wegic\'s free tier is starter credits on signup plus a $2.99 one-time trial for one full site generation.' },
+      { q: 'Can I export my site from Alf Website Studio like I can with Wegic?', a: 'No. Wegic supports code download so you can move your site to another host. Alf Website Studio has no export feature and only runs on Spaceship\'s own managed hosting — there is no migration path if you decide to leave.' },
+      { q: 'Which one should I use if I don\'t have a domain yet?', a: 'If you\'re registering a new domain anyway, Alf Website Studio\'s bundled hosting, domain connection and SSL remove a setup step. If your domain is already with another registrar, Wegic avoids the extra work of pointing nameservers to Spaceship, which Alf requires for external domains.' },
     ],
   },
   // ── invideo-vs-pictory ───────────────────────────────────────────────────

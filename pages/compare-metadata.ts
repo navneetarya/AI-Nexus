@@ -10,6 +10,15 @@ export interface CompareArticleMeta {
 
 export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
+    "slug": "wegic-vs-alf-website-studio",
+    "title": "Wegic vs Alf Website Studio (2026): Which Chat-Built Site Should You Use?",
+    "seoTitle": "Wegic vs Alf Website Studio 2026 — Compared",
+    "metaDescription": "Wegic vs Alf Website Studio compared: pricing, code export, hosting lock-in, and which AI chat-based website builder wins in 2026.",
+    "keyword": "wegic vs alf website studio",
+    "publishDate": "September 2026",
+    "winnerName": "Wegic"
+  },
+  {
     "slug": "rytr-vs-writesonic",
     "title": "Rytr vs Writesonic (2026): Which AI Writing Tool Is Actually Worth It?",
     "seoTitle": "Rytr vs Writesonic (2026): Pick the Right One",

@@ -206,6 +206,7 @@ const post: BlogPost = {
   <li><strong>Hostinger:</strong> ~$2.99/month promo → renews ~$10.99/month</li>
   <li><strong>10Web:</strong> $10/month single site → $24-60/month agency plans</li>
 </ul>
+<p>None of these prices include a custom domain or a matching business email address if you don't already have one — those are usually a separate purchase from a registrar like <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Spaceship</a>, worth budgeting for alongside whichever builder you pick.</p>
 
 <h2>Who should use an AI website builder</h2>
 <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A freelancer working on a laptop in a home office, building a site with an AI website builder" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />

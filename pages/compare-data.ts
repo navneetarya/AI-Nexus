@@ -1772,6 +1772,103 @@ The simple test: create a pitch deck in Gamma's free plan. If the output quality
     ],
   },
 
+  // ── wegic-vs-alf-website-studio ─────────────────────────────────────────
+  // Both tools have dedicated tool pages (constants.ts: 'wegic', 'alf-website-studio').
+  // Links go through AFFILIATE_LINKS[...] so the build's hardcoded-link check passes.
+  {
+    slug: 'wegic-vs-alf-website-studio',
+    title: 'Wegic vs Alf Website Studio (2026): Which Chat-Built Site Should You Use?',
+    seoTitle: 'Wegic vs Alf Website Studio 2026 — Compared',
+    metaDescription: 'Wegic vs Alf Website Studio compared: pricing, code export, hosting lock-in, and which AI chat-based website builder wins in 2026.',
+    keyword: 'wegic vs alf website studio',
+    publishDate: 'September 2026',
+    quickAnswer: 'Wegic is the better default for most people — it supports code export, so you keep an exit path if you outgrow it or want to migrate hosts. Alf Website Studio is the better pick if you already use Spaceship for your domain and want hosting, domain connection and SSL bundled into one flat $5/month with nothing else to configure.',
+    intro: `Both tools build a complete website by chatting with an AI rather than dragging elements onto a canvas. Describe the business, answer a few follow-up questions, and a responsive site comes back — usually within a minute or two. Beyond that starting point, though, they make very different bets about lock-in and pricing.
+
+The short answer: Wegic is the more flexible tool because it lets you export the underlying code, so you're not permanently tied to its platform. Alf Website Studio trades that flexibility for simplicity — a single $5/month price that bundles hosting, domain connection, and SSL, with no separate hosting decision to make, but no way out once you're in.`,
+    sections: [
+      {
+        heading: 'The fundamental trade-off: exit path vs bundled simplicity',
+        content: `Wegic generates a site through conversation and lets you download the code once you're done — an unusual feature among AI website builders, most of which keep you locked to their platform indefinitely. That means Wegic is a low-risk experiment: if you outgrow it, you migrate the exported code elsewhere instead of starting over.
+
+Alf Website Studio makes the opposite bet. It has no code export, and it only runs on Spaceship's own managed hosting. What you get in exchange is genuine simplicity: no separate hosting purchase, automatic domain connection, and a free SSL certificate, all folded into a single $5/month price after a 30-day free trial.
+
+If keeping an exit option matters to you, Wegic wins outright. If you'd rather never think about hosting again and are fine staying on Spaceship's platform, Alf's bundle is the more convenient path.`,
+      },
+      {
+        heading: 'Wegic — fast, chat-built sites with a real exit path',
+        content: `Wegic's core pitch is speed with no lock-in: describe the business, answer Wegic's follow-up questions about style and requirements, and a full multi-page draft typically arrives in about a minute. From there you keep refining entirely by conversation rather than dragging elements around an editor.
+
+**Code export** is the standout feature. Most AI site builders — Alf Website Studio included — keep your site permanently on their own platform. Wegic lets you download the underlying code, which means you can migrate to another host if you outgrow it, need custom logic Wegic doesn't support, or simply want to own your infrastructure.
+
+**Where Wegic falls short:** pricing is credit-based, and credits are consumed even by edits that fail or get rejected — a documented, recurring complaint. Credits also don't roll over month to month. E-commerce support is weak compared with dedicated store builders.
+
+**Pricing:** Free starter credits on signup, plus a $2.99 one-time trial for one full site generation. Paid tiers start around $11.90/month (code download, badge removed) and $19.90/month (custom domain, larger credit pool, advanced design control).
+
+**Who it's for:** Non-designers who want a simple business site or landing page live fast, and who value having an exit path if their needs outgrow the tool.`,
+      },
+      {
+        heading: 'Alf Website Studio — bundled hosting with zero separate setup',
+        content: `Alf Website Studio is Spaceship's take on the same idea: tell Alf what kind of site you need the way you'd brief a web developer, and it generates the branding, copy and images. You can refine by asking for changes in chat, or switch to a visual editor for manual tweaks — a dual-editing option Wegic doesn't offer.
+
+**Bundled infrastructure** is Alf's real advantage. There's no separate hosting purchase, domain connection is automatic, SSL is included, and updates and security are handled for you. For someone who already registers domains through Spaceship, that removes an entire category of setup decisions.
+
+**Where Alf falls short:** there is no code export and no path to another host — you're committed to Spaceship's platform for as long as the site is live. External domains must be pointed to Spaceship's nameservers to get SSL and full functionality, which is real setup work if your domain lives elsewhere. Product-selling (e-commerce) sites aren't supported yet, and the independent review base is much smaller than Wegic's, being a newer product.
+
+**Pricing:** 30-day free trial with full feature access, then a flat $5/month.
+
+**Who it's for:** Existing Spaceship domain customers who want the simplest possible bundled setup and don't need an exit path or e-commerce.`,
+      },
+      {
+        heading: 'Head-to-head: what actually differs',
+        content: `**Lock-in:** Wegic wins clearly. Code export means you're never fully stuck; Alf has no equivalent and keeps you on Spaceship's hosting indefinitely.
+
+**Price simplicity:** Alf wins. One flat $5/month covers hosting, domain connection and SSL together. Wegic's credit-based pricing requires more attention — credits burn on failed edits and don't roll over, and the all-in cost is harder to predict.
+
+**Editing flexibility:** Alf wins on paper — it offers a visual editor alongside chat, while Wegic is conversation-only. If pixel-level control matters to you, neither is a great fit, but Alf gives you slightly more room to adjust manually.
+
+**E-commerce:** Neither is strong here. Wegic is described as weak for serious online stores; Alf doesn't support product-selling sites at all yet.
+
+**Domain flexibility:** Wegic doesn't require a specific registrar. Alf requires Spaceship nameservers for external domains to get SSL, which is friction if you're domained elsewhere.`,
+      },
+    ],
+    verdict: `For most people building a first simple site — a landing page, portfolio, or small business site — Wegic is the safer default because of the exported code. You're not betting your site permanently on one company's platform, and the free starter credits plus the $2.99 trial are a low-risk way to judge the output before paying anything.
+
+Alf Website Studio earns its place specifically for people who are already Spaceship domain customers and want the absolute simplest possible setup: one flat monthly price, no separate hosting decision, no configuration. That convenience is real, but it comes at the cost of being locked to Spaceship's platform with no way to leave later.
+
+The simple test: if you can picture ever wanting to move your site to a different host, use Wegic. If you're committed to Spaceship anyway and just want a site live with the least possible fuss, Alf is the more convenient choice.`,
+    comparisonTable: [
+      { name: 'Wegic', price: 'Free credits–$19.90/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Chat-built site + code export', platforms: 'Web', bestFor: 'Anyone who wants an exit path', ourPick: true },
+      { name: 'Alf Website Studio', price: '30-day free trial → $5/mo', priceUSD: 'Free trial ✓', freeplan: false, aiContent: 'Chat-built site + visual editor', platforms: 'Web (Spaceship-hosted)', bestFor: 'Existing Spaceship domain customers', ourPick: false },
+    ],
+    winnerSlug: 'wegic',
+    winnerName: 'Wegic',
+    winnerAffiliateLink: AFFILIATE_LINKS['wegic'],
+    winnerAffiliateText: 'Try Wegic free',
+    pricing: {
+      tools: [
+        { name: 'Wegic', free: true, startingPrice: '$0', paidFrom: '$11.90/mo', bestPlanFor: 'Anyone who wants a chat-built site with an exit path', affiliateLink: AFFILIATE_LINKS['wegic'] },
+        { name: 'Alf Website Studio', free: true, startingPrice: '$0 (30-day trial)', paidFrom: '$5/mo', bestPlanFor: 'Existing Spaceship domain customers wanting bundled hosting', affiliateLink: AFFILIATE_LINKS['alf-website-studio'] },
+      ],
+    },
+    faqs: [
+      { q: 'Is Wegic better than Alf Website Studio?', a: 'For most people, yes — Wegic supports code export, so you can migrate to another host later if you need to. Alf Website Studio has no export path and keeps you on Spaceship\'s hosting permanently. Alf\'s advantage is bundled simplicity: one flat $5/month covers hosting, domain connection and SSL, which suits existing Spaceship customers who want the least possible setup.' },
+      { q: 'Does Alf Website Studio have a free plan?', a: 'Alf Website Studio has a 30-day free trial with full feature access rather than a permanent free tier. After the trial it is a flat $5/month. Wegic\'s free tier is starter credits on signup plus a $2.99 one-time trial for one full site generation.' },
+      { q: 'Can I export my site from Alf Website Studio like I can with Wegic?', a: 'No. Wegic supports code download so you can move your site to another host. Alf Website Studio has no export feature and only runs on Spaceship\'s own managed hosting — there is no migration path if you decide to leave.' },
+      { q: 'Which one should I use if I don\'t have a domain yet?', a: 'If you\'re registering a new domain anyway, Alf Website Studio\'s bundled hosting, domain connection and SSL remove a setup step. If your domain is already with another registrar, Wegic avoids the extra work of pointing nameservers to Spaceship, which Alf requires for external domains.' },
+    ],
+    featureRows: [
+      { feature: 'Free plan',        toolA: 'Starter credits + $2.99 trial', toolB: '30-day free trial',        winner: 'tie' },
+      { feature: 'Paid pricing',     toolA: 'From $11.90/mo',                toolB: 'Flat $5/mo',                winner: 'B' },
+      { feature: 'Code export',      toolA: 'Yes',                          toolB: 'No',                        winner: 'A' },
+      { feature: 'Editing mode',     toolA: 'Chat only',                    toolB: 'Chat + visual editor',      winner: 'B' },
+      { feature: 'Hosting',          toolA: 'Separate/external',            toolB: 'Bundled, fully managed',    winner: 'B' },
+      { feature: 'E-commerce',       toolA: 'Weak',                         toolB: 'Not supported yet',         winner: 'A' },
+      { feature: 'Domain flexibility', toolA: 'Any registrar',              toolB: 'Needs Spaceship nameservers for external domains', winner: 'A' },
+      { feature: 'Best for',         toolA: 'Wanting an exit path',         toolB: 'Existing Spaceship customers', winner: 'tie' },
+    ],
+  },
+
   // ── invideo-vs-pictory ────────────────────────────────────────────────────
   {
     slug: 'invideo-vs-pictory',
