@@ -3,6 +3,42 @@
   <head>
 	<meta name="impact-site-verification" content="cccd36a8-4472-4e8f-8280-bd06f1498f21" />
     <meta charset="UTF-8" />
+    <!--
+      C3/C4 Fix (2026-09-26): this MUST run first, synchronously, before any
+      other script. It used to live in /js/route-rewrite.js loaded with
+      `defer`, while the app entry (/index.tsx) loads as an ES module with
+      `async`. Per the HTML spec, an async module executes as soon as it's
+      fetched+parsed — independent of document order and NOT guaranteed to
+      wait for other `defer` scripts. In practice the small entry module
+      finished first, so React mounted (and fired its first GA4 page_view
+      using window.location.pathname) while the URL still read
+      "/?p=%2Fsome%2Fpath%2F" from the 404.html SPA-fallback redirect.
+      Two real bugs followed from that race:
+        1. GA4 landing page for every one of these sessions was blank/
+           unattributable ("(not set)"), because page_path was read as "/"
+           with an un-decoded query string instead of the restored path.
+        2. React's `path` state was initialized from that same wrong
+           pathname and NEVER re-read afterwards — history.replaceState()
+           does not fire a `popstate` event, so the app just kept rendering
+           the homepage instead of the page the visitor actually wanted.
+           Any organic-search click on an old/renamed URL silently bounced
+           the visitor to the homepage, which is why Organic Search showed
+           0% engagement despite every other channel looking normal.
+      Running this inline, with no `defer`/`async`, guarantees it executes
+      before the parser reaches ga-init.js or the index.tsx module tag
+      below, so window.location.pathname is already correct by the time
+      either one reads it. /js/route-rewrite.js is no longer loaded (see
+      bottom of <body>) but is left in the repo for reference.
+    -->
+    <script>
+      (function () {
+        var p = window.location.search.slice(1);
+        if (p && p.indexOf('p=') === 0) {
+          var decoded = decodeURIComponent(p.slice(2));
+          history.replaceState(null, '', decoded);
+        }
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -485,7 +521,7 @@
         height: auto;
       }
     </style>
-    <script src="/js/route-rewrite.js" defer></script>
+    <!-- route-rewrite logic now runs inline in <head> above — see C3/C4 Fix comment -->
     <script type="module" src="/index.tsx" async></script>
 
   </body>

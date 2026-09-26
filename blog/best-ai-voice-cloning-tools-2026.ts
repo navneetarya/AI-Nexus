@@ -147,6 +147,8 @@ const post: BlogPost = {
 
 <p>For most people cloning a voice for the first time, ElevenLabs remains the strongest starting point on quality alone. If cloning is a small part of a bigger editing job rather than the whole point, Descript's Overdub saves a separate step. Whichever tool you pick, the consent question matters more than which one you choose.</p>
 
+<p>If the cloned voiceover is narrating a pitch rather than a podcast or video, see our <a href="/blog/best-ai-presentation-tools-2026/">Best AI Presentation Tools 2026</a> roundup for tools that build the deck around it.</p>
+
 <div style="margin:14px 0 24px;">
   <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
