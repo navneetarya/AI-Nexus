@@ -334,7 +334,7 @@ export const TOOLS: Tool[] = [
     id: 'v3', slug: 'invideo',
     name: 'InVideo AI', tagline: 'Create faceless YouTube videos from a text prompt',
     description: 'InVideo AI generates complete videos from a text prompt — script, voiceover, stock footage, and captions included. Perfect for creating faceless YouTube channels at scale.',
-    category: Category.VIDEO, affiliateLink: 'https://invideo.sjv.io/k42zM3',
+    category: Category.VIDEO, affiliateLink: 'https://invideo.sjv.io/k42zM3?utm_source=invideo&utm_medium=affiliate',
     iconName: 'Video', color: '#10b981', accentColor: '#059669',
     userBadge: 'Free plan ✓', pricing: 'Free + from $20/month', bestFor: 'Faceless YouTube creators',
     features: ['Text to video AI', 'AI script writer', 'AI voiceover', '16M+ media library'],
@@ -916,7 +916,7 @@ export const TOOLS: Tool[] = [
     slug: 'lovable', id: 'c3',
     name: 'Lovable', tagline: 'Build full-stack apps from prompts — no code required',
     description: 'Lovable is an AI vibe-coding platform that turns natural language prompts into full-stack web applications. Describe what you want to build, and Lovable generates React + Supabase apps that are instantly deployed and production-ready — without writing a single line of code.',
-    category: Category.CODING, affiliateLink: 'https://lovablelabs.pxf.io/xJ6y5d', // 30% recurring affiliate available
+    category: Category.CODING, affiliateLink: 'https://lovablelabs.pxf.io/xJ6y5d?utm_source=lovable&utm_medium=affiliate', // 30% recurring affiliate available
     iconName: 'Sparkles', color: '#ec4899', accentColor: '#db2777',
     userBadge: 'Vibe coding 🔥', pricing: 'Free + $25/month', bestFor: 'Non-developers, solopreneurs & rapid prototypers',
     notForYou: 'Teams building complex enterprise-grade SaaS with custom infrastructure, legacy backend integrations, advanced state management, or strict code quality standards. Lovable is for rapid prototyping and MVPs — generated code needs developer review for high-traffic or sensitive-data apps.',
@@ -2215,7 +2215,7 @@ export const TOOLS: Tool[] = [
     id: 'a5', slug: 'transkriptor',
     name: 'Transkriptor', tagline: 'AI transcription for audio, video and live meetings',
     description: 'Transkriptor converts audio files, video files and live Zoom, Teams and Google Meet calls into searchable, editable text across 100+ languages. It adds speaker separation, timestamps, subtitle export and an AI chat layer over the finished transcript.',
-    category: Category.AUDIO, affiliateLink: 'https://textintelfze.pxf.io/9VdAzj',
+    category: Category.AUDIO, affiliateLink: 'https://textintelfze.pxf.io/9VdAzj?utm_source=transkriptor&utm_medium=affiliate',
     iconName: 'FileAudio', color: '#0ea5e9', accentColor: '#0284c7',
     userBadge: '100+ languages', pricing: 'Free trial + from $9.99/month', bestFor: 'Researchers, students, journalists and meeting-heavy teams',
     features: ['100+ language transcription', 'Zoom / Teams / Meet meeting recording', 'Speaker separation and timestamps', 'Subtitle and multi-format export', 'AI chat and summaries over transcripts'],
@@ -2256,7 +2256,7 @@ export const TOOLS: Tool[] = [
     id: 'd4', slug: 'wegic',
     name: 'Wegic', tagline: 'Build a website by chatting with an AI design team',
     description: 'Wegic builds websites through conversation rather than a drag-and-drop editor. You describe the business, it asks follow-up questions, then generates a responsive multi-page site you keep refining by chat. Sites are mobile-optimised automatically and the underlying code can be exported.',
-    category: Category.DESIGN, affiliateLink: 'https://wegic-ai.pxf.io/jR6ybZ',
+    category: Category.DESIGN, affiliateLink: 'https://wegic-ai.pxf.io/jR6ybZ?utm_source=wegic&utm_medium=affiliate',
     iconName: 'Globe', color: '#8b5cf6', accentColor: '#7c3aed',
     userBadge: 'Chat to build', pricing: 'Free credits + $2.99 trial + paid plans', bestFor: 'Non-designers who need a business site or landing page live fast',
     features: ['Conversational site generation', 'Automatic mobile optimisation', 'Multilingual site support', 'Code export — no hard platform lock-in', 'Custom domain on higher tiers'],
@@ -2294,7 +2294,7 @@ export const TOOLS: Tool[] = [
     id: 'd5', slug: 'presentation-intelligence',
     name: 'Presentation Intelligence (Pi)', tagline: 'An AI presentation generator that designs while it writes',
     description: 'Pi (Presentation Intelligence) turns a prompt, PDF, Word doc, PowerPoint file, webpage or image into a fully designed slide deck. Its Design Engine generates content and visual layout together rather than dropping AI text into a fixed template, and decks render responsively across desktop, tablet and mobile without a separate mobile version.',
-    category: Category.DESIGN, affiliateLink: 'https://deepvincilimited.sjv.io/WOQd7Z',
+    category: Category.DESIGN, affiliateLink: 'https://deepvincilimited.sjv.io/WOQd7Z?utm_source=presentation-intelligence&utm_medium=affiliate',
     iconName: 'Layers', color: '#f97316', accentColor: '#ea580c',
     userBadge: 'Free plan ✓', pricing: 'Free (forever) + $9.90/month', bestFor: 'Anyone turning an existing document, PDF or webpage into a deck fast',
     features: ['Generates content and design together, not text-into-template', 'Accepts PDF, DOCX, PPTX, webpages and images as source material', 'Responsive rendering across desktop, tablet and mobile', 'Built-in analytics on shared decks (opens, per-page reading time)', 'Custom templates and font uploads on the free plan'],
@@ -2329,7 +2329,7 @@ export const TOOLS: Tool[] = [
     id: 'd6', slug: 'alf-website-studio',
     name: 'Alf Website Studio', tagline: 'Spaceship\'s AI assistant builds your site through chat',
     description: 'Alf Website Studio is Spaceship\'s conversational website builder. You describe the site to Alf the same way you would brief a web developer, it generates the copy, branding and images, and you refine it by asking for changes or editing directly in the visual editor. Hosting, domain connection and an SSL certificate are handled automatically.',
-    category: Category.DESIGN, affiliateLink: 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2Falf-website-builder%2F', // Impact deep link — see lib/affiliate-links.ts caveat on Spaceship deep-linking; verify in Impact dashboard, else fall back to https://spaceship.sjv.io/X49n7b
+    category: Category.DESIGN, affiliateLink: 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2Falf-website-builder%2F&utm_source=alf-website-studio&utm_medium=affiliate', // Impact deep link — see lib/affiliate-links.ts caveat on Spaceship deep-linking; verify in Impact dashboard, else fall back to https://spaceship.sjv.io/X49n7b
     iconName: 'Wand2', color: '#0ea5e9', accentColor: '#0284c7',
     userBadge: '30-day free trial', pricing: 'Free 30-day trial + $5/month', bestFor: 'Spaceship domain owners who want a simple business site or portfolio live fast',
     features: ['Conversational site generation from a plain-language brief', 'Visual editor for manual tweaks alongside chat edits', 'Fully managed hosting included', 'Automatic domain connection and free SSL certificate', 'Automatic platform updates and security'],
@@ -2363,7 +2363,7 @@ export const TOOLS: Tool[] = [
     id: 'd7', slug: 'aippt',
     name: 'AiPPT.com', tagline: 'Turn a prompt, document or outline into a full slide deck fast',
     description: 'AiPPT.com is an AI presentation generator that builds a complete, designed slide deck from a text prompt, an uploaded Word/PDF file, a pasted outline, or a webpage URL. It ships several generation modes — a fast one-shot "Classic" builder, an agent-driven "Flow" mode that adapts structure as it works, and a "Visual" mode focused on image-heavy slides — plus a large template library and one-click export to PPT, PDF or image.',
-    category: Category.DESIGN, affiliateLink: 'https://megadreamslimited.sjv.io/6kMjRq',
+    category: Category.DESIGN, affiliateLink: 'https://megadreamslimited.sjv.io/6kMjRq?utm_source=aippt&utm_medium=affiliate',
     iconName: 'Layout', color: '#2563eb', accentColor: '#1d4ed8',
     userBadge: 'Free plan ✓', pricing: 'Free (140 credits) + paid Plus/Pro plans', bestFor: 'Fast, template-heavy decks from a prompt, document or outline, including a Lifetime option',
     features: ['Generates decks from a prompt, Word/PDF upload, outline or webpage URL', 'Three generation modes: Classic (one-shot), Flow (agent-driven), and Visual (image-heavy)', 'Large categorized template library filterable by theme, industry and style', 'One-click export to PPT, PDF or image formats', 'Lifetime (one-time payment) plan alongside monthly/annual subscriptions'],
@@ -2396,47 +2396,10 @@ export const TOOLS: Tool[] = [
     reviewType: 'research-based',
   },
   {
-    id: 'v5', slug: 'renderforest',
-    name: 'Renderforest', tagline: 'One subscription for AI video, logo, mockups and a website — not four separate tools',
-    description: 'Renderforest is an all-in-one AI platform that bundles video creation, an AI logo maker, mockup generation and a no-code website builder into a single account. Pick a template category — intros, slideshows, explainers, presentations, music visualisations — describe or upload your content, and Renderforest assembles a branded first draft in minutes, with the same account also covering logo design and a basic site.',
-    category: Category.VIDEO, affiliateLink: 'https://renderforest.pxf.io/WOQ5PA',
-    iconName: 'Clapperboard', color: '#f97316', accentColor: '#ea580c',
-    userBadge: 'Free plan ✓', pricing: 'Free (watermarked, 360p) + Lite/Amateur/Pro subscriptions from ~$9–13/month', bestFor: 'Small businesses and freelancers who want video, logo and a basic website covered by one subscription instead of three',
-    features: ['AI video maker covering intros, explainers, slideshows and presentations', 'AI logo maker with a machine-learning brief step and 20,000+ exclusive artwork assets', 'No-code website builder bundled into the same account', 'Product, apparel and print mockup generator', 'Per-export, pay-once pricing available as an alternative to a monthly subscription'],
-    pros: [
-      'Genuinely covers three separate tool categories — video, logo, website — under one login and one subscription, which is unusual in this comparison set',
-      'Free plan is not just a locked preview: it gives unlimited 360p video exports and a downloadable (if low-resolution) logo PNG, both watermarked',
-      'Strong independent review base for this category — 4.8/5 on Capterra across 407 reviews, with 97% positive sentiment, well above most single-purpose competitors',
-      'A one-time, pay-per-export option exists for anyone who only needs a single HD video or logo and doesn\'t want a recurring subscription',
-    ],
-    cons: [
-      'Free plan output is capped at 360p video and a low-resolution, non-commercial-use logo PNG — genuinely usable for a first look, not for a live client deliverable',
-      'Multiple independent listings (GetApp, G2) show noticeably different monthly prices for the same Lite and Pro tiers, so treat any published dollar figure as approximate until confirmed at checkout',
-      'Capterra reviewers who mention pricing describe the tier structure as confusing to compare against single-purpose competitors',
-      'Design range is templated rather than fully generative — output looks polished fast, but is less distinctive than a tool built around one category alone',
-    ],
-    notForYou: 'Anyone who only needs one of the three categories and wants the single best tool in that category specifically — a dedicated video repurposing tool like Pictory, or a dedicated logo tool with a larger template range like Looka or Canva AI, will likely out-perform Renderforest\'s version of that one feature. Also skip it if a watermark-free, production-ready asset on the free plan is a hard requirement — Renderforest\'s free tier is a genuine evaluation tier, not a free-forever production plan.',
-    lastTestedISO: '2026-09-26',
-    researchSources: {
-      capterra: { rating: 4.8, count: 407, url: 'https://www.capterra.com/p/141544/Renderforest/' },
-      lastVerified: '2026-09-26',
-    },
-    pricingBreakdown: [
-      { tier: 'Free', price: '$0', highlight: '300MB storage · unlimited 360p video exports (watermarked) · up to 1-minute videos · low-res logo PNG' },
-      { tier: 'Lite', price: 'from ~$9–13/month (varies by source and billing term)', highlight: '10GB storage · 10 HD720 video exports/month · no watermark on HD · up to 5-minute videos' },
-      { tier: 'Amateur', price: '~$19.64/month (annual billing)', highlight: '20GB storage · 30 HD720 exports/month · 500k+ stock videos · up to 15-minute videos' },
-      { tier: 'Pro', price: 'from ~$19–39/month (varies by source and billing term)', highlight: 'Highest storage and export caps · full commercial music library · custom domain on the website builder' },
-    ],
-    updateLog: [
-      { date: 'September 2026', note: 'Page created. Free-plan limits (300MB storage, unlimited 360p exports, watermarked) and the Capterra rating (4.8/5, 407 reviews, 97% positive) verified directly against Capterra\'s listing. Lite and Pro monthly pricing varies meaningfully between GetApp ($13.09/$39.29) and G2 ($9/$19) listings — neither was confirmed against Renderforest\'s own live pricing page at review time, so treat the figures here as an approximate range and confirm the current price at checkout before buying.' },
-    ],
-    reviewType: 'research-based',
-  },
-  {
     id: 'w7', slug: 'jetpack-ai-assistant',
     name: 'Jetpack AI Assistant', tagline: 'AI content generation built into the WordPress editor',
     description: 'Jetpack AI Assistant puts prompt-based writing directly inside the WordPress block editor. It generates posts, product descriptions, titles and summaries, adjusts tone, corrects spelling and grammar, and translates content into multiple languages — all without leaving the page you are editing.',
-    category: Category.WRITING, affiliateLink: 'https://automattic.pxf.io/3k0mxk',
+    category: Category.WRITING, affiliateLink: 'https://automattic.pxf.io/3k0mxk?utm_source=jetpack-ai-assistant&utm_medium=affiliate',
     iconName: 'PenTool', color: '#069e08', accentColor: '#04780a',
     userBadge: 'Built into WordPress', pricing: 'Free (20 requests) + $4.95/month', bestFor: 'WordPress and WordPress.com site owners writing posts and pages in the native editor',
     features: ['Prompt-based content generation inside the WordPress editor', 'Tone adjustment across the same draft', 'Spelling and grammar correction', 'Title and summary generation', 'Translation into 12+ languages'],
@@ -2473,7 +2436,7 @@ export const TOOLS: Tool[] = [
     id: 'p12', slug: 'creao-ai',
     name: 'CREAO', tagline: 'Describe a workflow in plain language, get a reusable AI agent',
     description: 'CREAO is a no-code AI agent builder that runs in the browser. You describe a task in plain language, it writes and executes the code in a sandbox, and once the result is right you save it as a reusable agent anyone can re-run with one click — or put it on a schedule.',
-    category: Category.PRODUCTIVITY, affiliateLink: 'https://creaoailimited.sjv.io/KBdJXy',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://creaoailimited.sjv.io/KBdJXy?utm_source=creao-ai&utm_medium=affiliate',
     iconName: 'Bot', color: '#f59e0b', accentColor: '#d97706',
     userBadge: 'Free plan ✓', pricing: 'Free + from $20/month', bestFor: 'Solo founders and small ops teams automating repeatable tasks',
     features: ['Natural-language agent builder', 'Code execution in a sandboxed environment', 'Scheduled and recurring agent runs', 'Third-party tool and API connections', 'Reusable agents shareable across a team'],
@@ -2510,7 +2473,7 @@ export const TOOLS: Tool[] = [
     id: 'p13', slug: 'flowith',
     name: 'Flowith', tagline: 'An AI agent workspace on an infinite canvas, not a chat box',
     description: 'Flowith replaces the linear chat window with an infinite canvas where every prompt and reply is a node you can branch, compare and reuse. Its agent, Neo, breaks a broad instruction into visible subtasks and works through them, while Knowledge Garden stores reusable context across projects.',
-    category: Category.PRODUCTIVITY, affiliateLink: 'https://flowith.sjv.io/qW6AxN',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://flowith.sjv.io/qW6AxN?utm_source=flowith&utm_medium=affiliate',
     iconName: 'Workflow', color: '#06b6d4', accentColor: '#0891b2',
     userBadge: 'Infinite canvas', pricing: 'Free credits + from $19.90/month', bestFor: 'Researchers, creators and power users running long multi-step work',
     features: ['Branching infinite-canvas workspace', 'Agent Neo for long multi-step tasks', 'Multiple frontier models in one workspace', 'Knowledge Garden for reusable context', 'Desktop and mobile apps alongside web'],
@@ -2548,7 +2511,7 @@ export const TOOLS: Tool[] = [
     id: 'p14', slug: 'popai-sheets',
     name: 'PopAi Sheets', tagline: 'Turn messy PDFs and CSVs into structured spreadsheets',
     description: 'PopAi Sheets is a standalone AI spreadsheet editor for Excel and Google Sheets. You describe what you need in plain English or upload PDFs, receipts and messy CSVs, and it extracts the data into a structured table — then drafts a report from the findings if you want one.',
-    category: Category.PRODUCTIVITY, affiliateLink: 'https://sheetspopaipro.sjv.io/jR6zy6',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://sheetspopaipro.sjv.io/jR6zy6?utm_source=popai-sheets&utm_medium=affiliate',
     iconName: 'FileText', color: '#22c55e', accentColor: '#16a34a',
     userBadge: 'PDF → table', pricing: 'Free tier + paid plans', bestFor: 'Anyone pulling numbers out of documents into spreadsheets',
     features: ['Natural-language spreadsheet editing', 'Data extraction from PDFs and messy CSVs', 'Real-time web search into structured tables', 'Excel, CSV and PDF export', 'Automatic report drafting from extracted data'],
@@ -3280,18 +3243,4 @@ Object.assign(TOOL_FAQS, {
 });
 Object.assign(TOOL_KEYWORDS, {
   aippt: ['aippt review', 'aippt.com pricing', 'ai presentation generator', 'ai ppt maker', 'megadreams aippt', 'document to slides ai'],
-});
-
-// ── Renderforest — added Sep 2026 ──
-Object.assign(TOOL_FAQS, {
-  renderforest: [
-    { q: 'Is Renderforest free?', a: "There is a free plan, and it is a real evaluation tier rather than a locked preview: 300MB of storage, unlimited 360p video exports, and up to 1-minute videos, plus a downloadable logo PNG. Every free export — video or logo — carries a watermark, and the logo download is capped at low resolution for non-commercial use. Removing the watermark and unlocking HD exports requires a paid Lite plan or above." },
-    { q: 'How much does Renderforest cost?', a: "Independent listings disagree on exact figures: GetApp lists Lite at $13.09/month, Amateur at $19.64/month and Pro at $39.29/month, while G2's listing shows Lite at $9/month and Pro at $19/month. Neither was confirmed against Renderforest's own live pricing page at review time, so treat any published dollar figure — including ours — as approximate and check the current price at checkout. A pay-per-export option also exists as an alternative to a monthly subscription for anyone who only needs one HD video or logo." },
-    { q: 'What can I actually build with Renderforest?', a: "Renderforest bundles four tools into one account: an AI video maker for intros, explainers, slideshows, presentations and music visualisations; an AI logo maker that generates concepts from a business brief; a mockup generator for apparel, product and print assets; and a no-code website builder. Most competitors in this comparison set cover only one of these categories." },
-    { q: 'Is Renderforest good for making a logo, or just video?', a: "Both, but the logo maker is the smaller half of the product. It describes your business and preferred style, generates a set of concepts, and lets you customise typography, colour and icon placement — with a low-resolution PNG download free for non-commercial use. Dedicated logo-only tools with a larger template range, such as Looka or Canva AI, generally produce more polished results if a logo is the only thing you need." },
-    { q: 'Is Renderforest trustworthy given the mixed pricing information online?', a: "The product itself has a solid independent review base — 4.8/5 on Capterra across 407 reviews, with 97% positive sentiment and users specifically praising speed and ease of use. The inconsistency is in third-party pricing listings, not in review sentiment: GetApp and G2 show materially different monthly prices for the same tiers, which several Capterra reviewers also flag as a confusing part of evaluating the product. Verify the current price directly on Renderforest's pricing page before subscribing." },
-  ],
-});
-Object.assign(TOOL_KEYWORDS, {
-  renderforest: ['renderforest review', 'renderforest pricing', 'ai video maker', 'ai logo maker', 'all in one branding platform', 'renderforest free plan'],
 });
