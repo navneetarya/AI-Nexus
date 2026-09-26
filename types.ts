@@ -101,6 +101,7 @@ export interface Tool {
   researchSources?: {
     trustpilot?: { rating: number; count: number; url: string };
     g2?: { rating: number; count: number };
+    capterra?: { rating: number; count: number; url: string };
     reddit?: string;          // e.g. "Positive — r/Blogging, r/freelanceWriters"
     lastVerified: string;     // ISO 8601 — "2026-05-12"
   };

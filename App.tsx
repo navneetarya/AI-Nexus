@@ -533,7 +533,7 @@ function App() {
   if (path === '/best-ai-logo-makers') {
     updateMeta(
       `Best Free AI Logo Makers ${CURRENT_YEAR} — Researched & Compared | AI Nexus`,
-      `4 AI logo tools independently analyzed — Looka, Canva AI, Leonardo.ai, and PhotoRoom. Free plan limits, INR pricing, and honest verdicts for solo creators and freelancers.`,
+      `5 AI logo tools independently analyzed — Looka, Canva AI, Leonardo.ai, PhotoRoom, and Renderforest. Free plan limits, INR pricing, and honest verdicts for solo creators and freelancers.`,
       `${SITE_CONFIG.siteUrl}/best-ai-logo-makers/`
     );
     return (
