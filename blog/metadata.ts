@@ -21,6 +21,32 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "ai-voice-cloning-pricing-comparison-2026",
+    "title": "AI Voice Cloning Pricing Compared 2026: ElevenLabs vs Murf vs Descript vs Resemble",
+    "seoTitle": "AI Voice Cloning Pricing Compared 2026",
+    "metaDescription": "ElevenLabs vs Murf AI vs Descript vs Resemble AI voice cloning pricing compared for 2026: cheapest entry point, per-minute cost, and which plan actually unlocks cloning.",
+    "datePublished": "2026-09-26",
+    "dateModified": "2026-09-26",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "9 min read",
+    "ogImage": "https://ainexustools.online/og/blog/ai-voice-cloning-pricing-comparison-2026.webp",
+    "excerpt": "ElevenLabs unlocks voice cloning from $6/month. Descript needs $24/month, Resemble AI charges per second used, and Murf locks cloning entirely to a custom-quoted Enterprise plan."
+  },
+  {
+    "slug": "best-ai-voice-cloning-for-podcasts-2026",
+    "title": "Best AI Voice Cloning for Podcasts 2026: Should You Clone Your Voice?",
+    "seoTitle": "Best AI Voice Cloning for Podcasts 2026",
+    "metaDescription": "AI voice cloning for podcasts in 2026: the 3 jobs it actually solves for a show, what ElevenLabs and Descript Overdub cost, and when cloning is worth it.",
+    "datePublished": "2026-09-26",
+    "dateModified": "2026-09-26",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "8 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-voice-cloning-for-podcasts-2026.webp",
+    "excerpt": "Cloning your voice for a podcast only pays off for three specific jobs — consistent reads, fast flub fixes, and multi-language dubbing. ElevenLabs is the strongest starting point for all three."
+  },
+  {
     "slug": "best-ai-tool-lifetime-deals-appsumo-2026",
     "title": "Best AI Tool Lifetime Deals on AppSumo in 2026 — How to Actually Save Money",
     "seoTitle": "Best AI Tool Deals on AppSumo 2026 — What to Buy & Avoid",

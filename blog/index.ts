@@ -265,8 +265,14 @@ import post99 from './best-gamma-alternatives-2026';
 // Sep 26 — Best AI Tool Lifetime Deals on AppSumo 2026 — new marketplace/deals content type,
 // AppSumo affiliate link (no dedicated tool page — see lib/affiliate-links.ts SUPPLEMENTARY_LINKS)
 import post100 from './best-ai-tool-lifetime-deals-appsumo-2026';
+// Priority 3 — GA audit follow-up, Voice Cloning follow-up posts (1 of 2 and 2 of 2):
+// funnel more traffic to the ElevenLabs tool page, the site's highest-converting page (30% conversion)
+import post101 from './best-ai-voice-cloning-for-podcasts-2026';
+import post102 from './ai-voice-cloning-pricing-comparison-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post102, // Sep 26 — AI Voice Cloning Pricing Compared 2026 (ElevenLabs vs Murf vs Descript vs Resemble AI) — pinned first for freshness
+  post101, // Sep 26 — Best AI Voice Cloning for Podcasts 2026 (should-you-clone decision guide) — pinned first for freshness
   post100, // Sep 26 — Best AI Tool Lifetime Deals on AppSumo 2026 — pinned first for freshness
   post99, // Sep 22 — Best Gamma AI Alternatives 2026 (Pi, Beautiful.ai, Canva AI, NotebookLM) — pinned first for freshness
   post98, // Sep 20 — Best AI Spreadsheet Tools 2026 (PopAi Sheets, Numerous.ai, Coefficient, Copilot, Gemini) — pinned first for freshness

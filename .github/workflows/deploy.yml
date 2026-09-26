@@ -70,6 +70,8 @@ jobs:
           # The sync check below will fail the build with a reminder if a
           # post is added to blog/ without a matching entry here.
           BLOG_SLUGS=(
+            best-ai-voice-cloning-for-podcasts-2026
+            ai-voice-cloning-pricing-comparison-2026
             best-gamma-alternatives-2026
             best-ai-spreadsheet-tools-2026
             best-ai-transcription-software-2026
