@@ -39,6 +39,7 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   tidio: 'https://www.tidio.com/?via=ainexus',
   juicebox: 'https://juicebox.ai/?via=c6add3',
   vidiq: 'https://vidiq.com?via=ainexus',
+  appsumo: 'https://appsumo.com/', // Marketplace link; no dedicated tool page
   pixverse: 'https://motivaiprivatelimited.sjv.io/0GKm6Y?utm_source=pixverse&utm_medium=affiliate', // Impact — added Sep 2026, no dedicated tool page yet
   // Spaceship (Impact) — deep-linked with the standard ?u={encoded landing page} pattern so each
   // mention lands on the actual product page rather than the generic homepage. CAVEAT: this only
