@@ -2396,6 +2396,43 @@ export const TOOLS: Tool[] = [
     reviewType: 'research-based',
   },
   {
+    id: 'v5', slug: 'renderforest',
+    name: 'Renderforest', tagline: 'One subscription for AI video, logo, mockups and a website — not four separate tools',
+    description: 'Renderforest is an all-in-one AI platform that bundles video creation, an AI logo maker, mockup generation and a no-code website builder into a single account. Pick a template category — intros, slideshows, explainers, presentations, music visualisations — describe or upload your content, and Renderforest assembles a branded first draft in minutes, with the same account also covering logo design and a basic site.',
+    category: Category.VIDEO, affiliateLink: 'https://renderforest.pxf.io/WOQ5PA',
+    iconName: 'Clapperboard', color: '#f97316', accentColor: '#ea580c',
+    userBadge: 'Free plan ✓', pricing: 'Free (watermarked, 360p) + Lite/Amateur/Pro subscriptions from ~$9–13/month', bestFor: 'Small businesses and freelancers who want video, logo and a basic website covered by one subscription instead of three',
+    features: ['AI video maker covering intros, explainers, slideshows and presentations', 'AI logo maker with a machine-learning brief step and 20,000+ exclusive artwork assets', 'No-code website builder bundled into the same account', 'Product, apparel and print mockup generator', 'Per-export, pay-once pricing available as an alternative to a monthly subscription'],
+    pros: [
+      'Genuinely covers three separate tool categories — video, logo, website — under one login and one subscription, which is unusual in this comparison set',
+      'Free plan is not just a locked preview: it gives unlimited 360p video exports and a downloadable (if low-resolution) logo PNG, both watermarked',
+      'Strong independent review base for this category — 4.8/5 on Capterra across 407 reviews, with 97% positive sentiment, well above most single-purpose competitors',
+      'A one-time, pay-per-export option exists for anyone who only needs a single HD video or logo and doesn\'t want a recurring subscription',
+    ],
+    cons: [
+      'Free plan output is capped at 360p video and a low-resolution, non-commercial-use logo PNG — genuinely usable for a first look, not for a live client deliverable',
+      'Multiple independent listings (GetApp, G2) show noticeably different monthly prices for the same Lite and Pro tiers, so treat any published dollar figure as approximate until confirmed at checkout',
+      'Capterra reviewers who mention pricing describe the tier structure as confusing to compare against single-purpose competitors',
+      'Design range is templated rather than fully generative — output looks polished fast, but is less distinctive than a tool built around one category alone',
+    ],
+    notForYou: 'Anyone who only needs one of the three categories and wants the single best tool in that category specifically — a dedicated video repurposing tool like Pictory, or a dedicated logo tool with a larger template range like Looka or Canva AI, will likely out-perform Renderforest\'s version of that one feature. Also skip it if a watermark-free, production-ready asset on the free plan is a hard requirement — Renderforest\'s free tier is a genuine evaluation tier, not a free-forever production plan.',
+    lastTestedISO: '2026-09-26',
+    researchSources: {
+      capterra: { rating: 4.8, count: 407, url: 'https://www.capterra.com/p/141544/Renderforest/' },
+      lastVerified: '2026-09-26',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: '300MB storage · unlimited 360p video exports (watermarked) · up to 1-minute videos · low-res logo PNG' },
+      { tier: 'Lite', price: 'from ~$9–13/month (varies by source and billing term)', highlight: '10GB storage · 10 HD720 video exports/month · no watermark on HD · up to 5-minute videos' },
+      { tier: 'Amateur', price: '~$19.64/month (annual billing)', highlight: '20GB storage · 30 HD720 exports/month · 500k+ stock videos · up to 15-minute videos' },
+      { tier: 'Pro', price: 'from ~$19–39/month (varies by source and billing term)', highlight: 'Highest storage and export caps · full commercial music library · custom domain on the website builder' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. Free-plan limits (300MB storage, unlimited 360p exports, watermarked) and the Capterra rating (4.8/5, 407 reviews, 97% positive) verified directly against Capterra\'s listing. Lite and Pro monthly pricing varies meaningfully between GetApp ($13.09/$39.29) and G2 ($9/$19) listings — neither was confirmed against Renderforest\'s own live pricing page at review time, so treat the figures here as an approximate range and confirm the current price at checkout before buying.' },
+    ],
+    reviewType: 'research-based',
+  },
+  {
     id: 'w7', slug: 'jetpack-ai-assistant',
     name: 'Jetpack AI Assistant', tagline: 'AI content generation built into the WordPress editor',
     description: 'Jetpack AI Assistant puts prompt-based writing directly inside the WordPress block editor. It generates posts, product descriptions, titles and summaries, adjusts tone, corrects spelling and grammar, and translates content into multiple languages — all without leaving the page you are editing.',
@@ -3243,4 +3280,18 @@ Object.assign(TOOL_FAQS, {
 });
 Object.assign(TOOL_KEYWORDS, {
   aippt: ['aippt review', 'aippt.com pricing', 'ai presentation generator', 'ai ppt maker', 'megadreams aippt', 'document to slides ai'],
+});
+
+// ── Renderforest — added Sep 2026 ──
+Object.assign(TOOL_FAQS, {
+  renderforest: [
+    { q: 'Is Renderforest free?', a: "There is a free plan, and it is a real evaluation tier rather than a locked preview: 300MB of storage, unlimited 360p video exports, and up to 1-minute videos, plus a downloadable logo PNG. Every free export — video or logo — carries a watermark, and the logo download is capped at low resolution for non-commercial use. Removing the watermark and unlocking HD exports requires a paid Lite plan or above." },
+    { q: 'How much does Renderforest cost?', a: "Independent listings disagree on exact figures: GetApp lists Lite at $13.09/month, Amateur at $19.64/month and Pro at $39.29/month, while G2's listing shows Lite at $9/month and Pro at $19/month. Neither was confirmed against Renderforest's own live pricing page at review time, so treat any published dollar figure — including ours — as approximate and check the current price at checkout. A pay-per-export option also exists as an alternative to a monthly subscription for anyone who only needs one HD video or logo." },
+    { q: 'What can I actually build with Renderforest?', a: "Renderforest bundles four tools into one account: an AI video maker for intros, explainers, slideshows, presentations and music visualisations; an AI logo maker that generates concepts from a business brief; a mockup generator for apparel, product and print assets; and a no-code website builder. Most competitors in this comparison set cover only one of these categories." },
+    { q: 'Is Renderforest good for making a logo, or just video?', a: "Both, but the logo maker is the smaller half of the product. It describes your business and preferred style, generates a set of concepts, and lets you customise typography, colour and icon placement — with a low-resolution PNG download free for non-commercial use. Dedicated logo-only tools with a larger template range, such as Looka or Canva AI, generally produce more polished results if a logo is the only thing you need." },
+    { q: 'Is Renderforest trustworthy given the mixed pricing information online?', a: "The product itself has a solid independent review base — 4.8/5 on Capterra across 407 reviews, with 97% positive sentiment and users specifically praising speed and ease of use. The inconsistency is in third-party pricing listings, not in review sentiment: GetApp and G2 show materially different monthly prices for the same tiers, which several Capterra reviewers also flag as a confusing part of evaluating the product. Verify the current price directly on Renderforest's pricing page before subscribing." },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  renderforest: ['renderforest review', 'renderforest pricing', 'ai video maker', 'ai logo maker', 'all in one branding platform', 'renderforest free plan'],
 });

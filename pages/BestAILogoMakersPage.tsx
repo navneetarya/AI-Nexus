@@ -23,7 +23,7 @@ const C = {
 };
 
 // Logo tool slugs in display order (matches request specification)
-const LOGO_SLUGS = ['looka', 'canva-ai', 'leonardo-ai', 'photoroom'] as const;
+const LOGO_SLUGS = ['looka', 'canva-ai', 'leonardo-ai', 'photoroom', 'renderforest'] as const;
 
 // What each tool gives you on the free plan — freePlan: false means preview-only
 const LOGO_FREE_DETAILS: Record<string, { gets: string; limit: string; freePlan: boolean; note: string }> = {
@@ -31,6 +31,7 @@ const LOGO_FREE_DETAILS: Record<string, { gets: string; limit: string; freePlan:
   'canva-ai':    { gets: 'Full logo creation + PNG download', limit: 'Unlimited free — no watermark', freePlan: true,  note: 'Best free option' },
   'leonardo-ai': { gets: 'AI-generated logo concepts from text', limit: '150 credits/day', freePlan: true,  note: 'Requires design refinement after generation' },
   'photoroom':   { gets: 'AI background removal for logo files', limit: '3 exports/day (watermarked)', freePlan: true,  note: 'Best for cleaning up generated logos' },
+  'renderforest':{ gets: 'AI logo generation + low-res PNG download', limit: 'Free PNG capped at low resolution, non-commercial use', freePlan: true,  note: 'Bundles video, mockups & a website builder in the same account' },
 };
 
 // Context-specific "Best for" labels (logo workflow framing, not the general tool.bestFor)
@@ -39,6 +40,7 @@ const LOGO_BEST_FOR: Record<string, string> = {
   'canva-ai':    'Best overall free logo maker',
   'leonardo-ai': 'Best for custom AI-generated logo art',
   'photoroom':   'Best for logo background removal & cleanup',
+  'renderforest':'Best if you also need video & a website in one account',
 };
 
 // Summarised paid pricing for quick display
@@ -47,6 +49,7 @@ const LOGO_PAID_PRICE: Record<string, string> = {
   'canva-ai':    '$15/mo (Pro), ₹499/mo India',
   'leonardo-ai': '$12/mo (Apprentice)',
   'photoroom':   '$9.99/mo (Pro)',
+  'renderforest':'from ~$9–13/mo (Lite, varies by source)',
 };
 
 // Domains for Clearbit logo fallback
@@ -55,6 +58,7 @@ const TOOL_DOMAIN: Record<string, string> = {
   'canva-ai':    'canva.com',
   'leonardo-ai': 'leonardo.ai',
   'photoroom':   'photoroom.com',
+  'renderforest':'renderforest.com',
 };
 
 // ── Schema ───────────────────────────────────────────────────────────────────
@@ -278,7 +282,7 @@ export function BestAILogoMakersPage({ navigate, isDark, toggleTheme }: Props) {
             color: '#a78bfa', fontSize: 11, fontWeight: 700, letterSpacing: '.1em',
             padding: '5px 14px', borderRadius: 100, marginBottom: 20,
           }}>
-            <Zap size={11} /> 🎨 4 TOOLS ANALYZED — FREE PLANS VERIFIED
+            <Zap size={11} /> 🎨 5 TOOLS ANALYZED — FREE PLANS VERIFIED
           </div>
 
           <h1 style={{
@@ -291,13 +295,13 @@ export function BestAILogoMakersPage({ navigate, isDark, toggleTheme }: Props) {
           </h1>
 
           <p style={{ color: 'rgba(255,255,255,.55)', fontSize: 15, lineHeight: 1.7, maxWidth: 580, margin: '0 auto 28px' }}>
-            4 AI logo tools independently analyzed. One is completely free — no design skills required. Here's exactly what you get on each free plan before spending anything.
+            5 AI logo tools independently analyzed. One is completely free — no design skills required. Here's exactly what you get on each free plan before spending anything.
           </p>
 
           {/* Stats row */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: 32, flexWrap: 'wrap' }}>
             {[
-              { n: '4',  label: 'tools analyzed' },
+              { n: '5',  label: 'tools analyzed' },
               { n: '1',  label: 'truly free' },
               { n: '₹0', label: 'to start' },
             ].map(({ n, label }) => (
@@ -352,7 +356,7 @@ export function BestAILogoMakersPage({ navigate, isDark, toggleTheme }: Props) {
           fontFamily: "'Inter',sans-serif", fontSize: 20, fontWeight: 800,
           color: C.txt, marginBottom: 6,
         }}>
-          4 Best AI Logo Maker Tools — Free Plans Compared
+          5 Best AI Logo Maker Tools — Free Plans Compared
         </h2>
         <p style={{ fontSize: 14, color: C.mut, marginBottom: 22 }}>
           Ordered by research score. Canva AI is the only tool on this list with unlimited, watermark-free logo downloads on a
@@ -390,7 +394,7 @@ export function BestAILogoMakersPage({ navigate, isDark, toggleTheme }: Props) {
             <tbody>
               {logoTools.map((t, idx) => {
                 const detail        = LOGO_FREE_DETAILS[t.slug];
-                const canDownload   = t.slug === 'canva-ai' || t.slug === 'leonardo-ai';
+                const canDownload   = t.slug === 'canva-ai' || t.slug === 'leonardo-ai' || t.slug === 'renderforest';
                 const hasWatermark  = t.slug === 'photoroom';
                 return (
                   <tr key={t.id} style={{ background: idx % 2 === 0 ? C.surf : C.bg }}>
@@ -454,6 +458,10 @@ export function BestAILogoMakersPage({ navigate, isDark, toggleTheme }: Props) {
           {
             q: 'What is the INR price of Looka for Indian users?',
             a: "Looka charges in USD — a logo package is $65 (approximately ₹5,400 at May 2026 rates). Payments via international credit/debit cards are accepted. Canva AI Pro is significantly more affordable at ₹499/month with INR billing, making it the recommended option for Indian creators on a budget.",
+          },
+          {
+            q: 'Is Renderforest a good free logo maker?',
+            a: "It's a reasonable free option if you also want video and website tools in the same account — the free plan includes a downloadable logo PNG, capped at low resolution and non-commercial use. If a logo is the only thing you need, Canva AI's free plan gives a higher-resolution, watermark-free download without that cap.",
           },
         ].map(({ q, a }, i) => (
           <div key={i} style={{ borderBottom: `1px solid ${C.barBrd}`, padding: '18px 0' }}>
