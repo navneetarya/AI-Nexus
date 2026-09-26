@@ -2360,6 +2360,42 @@ export const TOOLS: Tool[] = [
     reviewType: 'research-based',
   },
   {
+    id: 'd7', slug: 'aippt',
+    name: 'AiPPT.com', tagline: 'Turn a prompt, document or outline into a full slide deck fast',
+    description: 'AiPPT.com is an AI presentation generator that builds a complete, designed slide deck from a text prompt, an uploaded Word/PDF file, a pasted outline, or a webpage URL. It ships several generation modes — a fast one-shot "Classic" builder, an agent-driven "Flow" mode that adapts structure as it works, and a "Visual" mode focused on image-heavy slides — plus a large template library and one-click export to PPT, PDF or image.',
+    category: Category.DESIGN, affiliateLink: 'https://megadreamslimited.sjv.io/6kMjRq',
+    iconName: 'Layout', color: '#2563eb', accentColor: '#1d4ed8',
+    userBadge: 'Free plan ✓', pricing: 'Free (140 credits) + paid Plus/Pro plans', bestFor: 'Fast, template-heavy decks from a prompt, document or outline, including a Lifetime option',
+    features: ['Generates decks from a prompt, Word/PDF upload, outline or webpage URL', 'Three generation modes: Classic (one-shot), Flow (agent-driven), and Visual (image-heavy)', 'Large categorized template library filterable by theme, industry and style', 'One-click export to PPT, PDF or image formats', 'Lifetime (one-time payment) plan alongside monthly/annual subscriptions'],
+    pros: [
+      'Genuinely wide input range — a prompt, an existing Word or PDF file, a pasted outline, or a webpage can all become a starting deck',
+      'A one-time Lifetime plan exists alongside monthly billing, which most competitors in this category do not offer',
+      'Template library is large and filterable by industry, theme and visual style, useful for anyone who wants a specific look rather than a generic default',
+      'Free plan requires no credit card and gives a real, if limited, first test of output quality',
+    ],
+    cons: [
+      'Independent, verifiable reviews are scarce — no G2 review base exists for the product as of this write-up, and pricing figures vary noticeably between third-party listing sites, so treat any published dollar amount as approximate until confirmed at checkout',
+      'Free plan is a one-time 140-credit allocation capped at 10 slides per deck, not a recurring monthly amount',
+      'Free-tier output uses AiPPT\'s base generation model rather than its more capable models, which are reserved for paid tiers',
+      'A newer, less-reviewed entrant than Gamma or Beautiful.ai, so there is less independent track record to check claims against',
+    ],
+    notForYou: 'Anyone who needs a large, independently verified review base to check a vendor\'s claims against before paying — AiPPT\'s public review footprint is thin. Also skip it if you specifically need document-grounded generation with built-in analytics (Presentation Intelligence covers that) or a large team rollout with SSO; AiPPT\'s plans are built around individual credit allowances, not enterprise administration.',
+    lastTestedISO: '2026-09-25',
+    researchSources: {
+      lastVerified: '2026-09-25',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0 (140 credits, one-time)', highlight: 'Up to 10 slides per deck · base generation model · PPT/PDF/image export' },
+      { tier: 'Plus', price: 'from ~$3–9/month (varies by billing term and region)', highlight: '600 credits/month · up to 20 slides per deck · advanced generation model' },
+      { tier: 'Pro', price: 'from ~$4–11.49/month (varies by billing term and region)', highlight: '1,200 credits/month · up to 50 slides per deck · state-of-the-art model access' },
+      { tier: 'Lifetime', price: '~$108–140 one-time (reported; verify at checkout)', highlight: 'One-time payment alternative to a recurring Plus/Pro subscription' },
+    ],
+    updateLog: [
+      { date: 'September 2026', note: 'Page created. Credit allowances and slide caps per tier (Free: 140 credits/10 slides; Plus: 600 credits/month/20 slides; Pro: 1,200 credits/month/50 slides) verified directly against aippt.com/price. Dollar pricing for Plus, Pro and Lifetime varies across third-party listing sites and was not independently confirmed on the live pricing page at review time — treat the figures here as an approximate range and confirm the current price at checkout before buying.' },
+    ],
+    reviewType: 'research-based',
+  },
+  {
     id: 'w7', slug: 'jetpack-ai-assistant',
     name: 'Jetpack AI Assistant', tagline: 'AI content generation built into the WordPress editor',
     description: 'Jetpack AI Assistant puts prompt-based writing directly inside the WordPress block editor. It generates posts, product descriptions, titles and summaries, adjusts tone, corrects spelling and grammar, and translates content into multiple languages — all without leaving the page you are editing.',
@@ -3193,4 +3229,18 @@ Object.assign(TOOL_FAQS, {
 Object.assign(TOOL_KEYWORDS, {
   'alf-website-studio': ['alf website studio review', 'alf website builder', 'spaceship ai website builder', 'chat to build website', 'alf pricing'],
   'jetpack-ai-assistant': ['jetpack ai assistant review', 'wordpress ai writing tool', 'jetpack ai pricing', 'ai content generator wordpress', 'wordpress editor ai'],
+});
+
+// ── AiPPT.com (Megadreams) — added Sep 2026 ──
+Object.assign(TOOL_FAQS, {
+  aippt: [
+    { q: 'Is AiPPT.com free?', a: "There is a free plan, but it is a one-time allocation rather than a recurring monthly amount: 140 AI credits total, capped at 10 slides per deck, using AiPPT's base generation model. Once those credits are spent you either wait (there is no stated refresh) or upgrade to Plus or Pro for a monthly credit refill and higher slide limits." },
+    { q: 'How much does AiPPT.com cost?', a: "AiPPT.com has three tiers: Free (140 one-time credits), Plus (600 credits/month, 20 slides per deck), and Pro (1,200 credits/month, 50 slides per deck, access to state-of-the-art generation models). Published dollar prices for Plus and Pro vary noticeably across third-party listing sites and were not independently confirmed on the live pricing page at review time, so treat any figure you see — including ours — as approximate and check the current price at checkout. A one-time Lifetime plan is also offered as an alternative to a recurring subscription." },
+    { q: 'What can I use to generate a deck in AiPPT.com?', a: "AiPPT.com accepts a text prompt, an uploaded Word or PDF document, a pasted outline, Markdown or a mind map, or a webpage URL as source material, then builds a complete deck with structure, copy and layout in place. It also ships standalone one-off tools for converting JPG, PNG, PDF or Excel files into a PPT, and for exporting a PPT back out to PDF, JPG or PNG." },
+    { q: 'What are AiPPT.com\'s different generation modes?', a: "AiPPT.com offers three ways to build a deck: a fast one-shot \"Classic\" generator for a complete deck in one pass, an agent-driven \"Flow\" mode that adapts the deck's structure as it works, and a \"Visual\" mode weighted toward image-heavy, design-forward slides. Which mode fits best depends on whether you want speed, adaptability, or visual polish as the priority." },
+    { q: 'Is AiPPT.com trustworthy given the limited independent reviews?', a: "Treat it as an early-stage evaluation rather than an established default. There is no meaningful G2 review base for AiPPT.com as of this write-up, and third-party pricing listings disagree with each other on exact dollar figures — a sign the published pricing page may vary by region or has changed since those listings were last updated. The free plan is a reasonable, no-card-required way to judge output quality yourself before committing to a paid tier." },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  aippt: ['aippt review', 'aippt.com pricing', 'ai presentation generator', 'ai ppt maker', 'megadreams aippt', 'document to slides ai'],
 });
