@@ -50,6 +50,7 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   spaceship: 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2F', // domains
   'spaceship-email': 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2Fbusiness-email', // Spacemail business email
   automattic: 'https://automattic.pxf.io/3k0mxk', // Impact — WordPress.com / Pressable hosting; Jetpack AI Assistant has its own tool page in constants.ts
+  appsumo: 'https://appsumo.8odi.net/2R0DB7', // Marketplace affiliate, no dedicated tool page (no single pricing/feature set) — used in blog/best-ai-tool-lifetime-deals-appsumo-2026.ts
 };
 
 const TOOL_LINKS: Record<string, string> = Object.fromEntries(

@@ -262,8 +262,12 @@ import post98 from './best-ai-spreadsheet-tools-2026';
 // Sep 22 — Best Gamma AI Alternatives 2026 — Pi, Beautiful.ai, Canva AI, NotebookLM compared;
 // feeds off the Pi (Presentation Intelligence) rollout across the presentation cluster
 import post99 from './best-gamma-alternatives-2026';
+// Sep 26 — Best AI Tool Lifetime Deals on AppSumo 2026 — new marketplace/deals content type,
+// AppSumo affiliate link (no dedicated tool page — see lib/affiliate-links.ts SUPPLEMENTARY_LINKS)
+import post100 from './best-ai-tool-lifetime-deals-appsumo-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post100, // Sep 26 — Best AI Tool Lifetime Deals on AppSumo 2026 — pinned first for freshness
   post99, // Sep 22 — Best Gamma AI Alternatives 2026 (Pi, Beautiful.ai, Canva AI, NotebookLM) — pinned first for freshness
   post98, // Sep 20 — Best AI Spreadsheet Tools 2026 (PopAi Sheets, Numerous.ai, Coefficient, Copilot, Gemini) — pinned first for freshness
   post97, // Sep 20 — Best AI Transcription Software 2026 (Transkriptor, Otter.ai, Descript, Fireflies, Rev) — pinned first for freshness
