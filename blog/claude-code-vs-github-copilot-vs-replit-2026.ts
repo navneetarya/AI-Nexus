@@ -140,7 +140,7 @@ const post: BlogPost = {
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 14px;font-weight:600;">Paid from</td>
-      <td style="padding:10px 14px;">~$20–50/mo (API usage)</td>
+      <td style="padding:10px 14px;">~$10–30/mo light use (API usage)</td>
       <td style="padding:10px 14px;">$10/mo individual</td>
       <td style="padding:10px 14px;">$25/mo (Core plan)</td>
     </tr>
@@ -172,7 +172,7 @@ const post: BlogPost = {
 <p>Once launched, Claude Code reads your entire project: all files, your directory structure, your package dependencies. Then you give it a task in natural language. "Add rate limiting to the /api/login endpoint." "Refactor the user authentication module to use JWT instead of session cookies." "Write tests for all the untested functions in utils.js."</p>
 <p>Claude Code then plans the task, edits the relevant files, runs the tests, reads the error output, and iterates. You never type a single line of code. This is qualitatively different from Copilot's autocomplete model.</p>
 <p><strong>What Claude Code does well:</strong> multi-file refactors, adding features to existing codebases, debugging sessions where the root cause spans multiple files, and writing test suites.</p>
-<p>In testing, a refactor task that would have taken me 40 minutes took about 8 minutes with Claude Code handling the mechanical work. I reviewed and approved each change rather than writing it.</p>
+<p>The typical workflow is supervision rather than typing: Claude Code handles the mechanical edits, and the developer reviews and approves each change instead of writing it. Time savings vary widely with the task and the codebase.</p>
 <p><strong>Where Claude Code struggles:</strong> cost unpredictability. Claude Code is billed on API token usage, not a flat monthly rate. A complex agentic session involving many file reads and long context can consume $5–$15 of API credits.</p>
 <p>For developers running many sessions daily, monthly costs can reach $50–$100+. Unlike Copilot's flat $10/month, Claude Code requires active cost management.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">

@@ -876,21 +876,24 @@ export const TOOLS: Tool[] = [
       lastVerified: '2026-06-01',
     },
     indiaPricing: {
-      free: 'Free (2,000 completions/month)',
+      free: 'Free (limited Agent requests and Tab completions)',
       paid: '₹1,670/month Pro',
-      note: 'International credit card required. Free plan requires no payment — full Cmd+K and Composer access at reduced quota.',
+      note: 'International credit card required for paid plans. The free Hobby plan requires no card.',
     },
     reviewType: 'research-based',
     updateLog: [
-      { date: 'June 2026', note: 'Tool entry created. Pricing verified: Hobby free, Pro $20/mo, Business $40/user/mo. Tested Cmd+K and Composer on a TypeScript project.' },
+      { date: 'June 2026', note: 'Tool entry created. Pricing researched: Hobby free, Pro $20/mo, Business $40/user/mo.' },
+      { date: 'September 2026', note: 'Pricing updated to Cursor\'s credit-based plans: Hobby free, Pro $20/mo, Pro+ $60/mo, Ultra $200/mo, Teams $40/user/mo. Removed outdated 500-fast-requests figure.' },
     ],
     features: ['Cmd+K inline AI edits', 'Tab multi-line completions', 'Composer: multi-file agent', 'Codebase-wide AI chat', 'VS Code extension compatibility'],
-    pros: ['Fastest inline AI edits of any editor — Cmd+K rewrites selected code in seconds', 'Full VS Code extension library works unchanged', 'Codebase-aware chat understands your entire project', 'Free plan is genuinely useful with 2,000 completions/month'],
+    pros: ['Fastest inline AI edits of any editor — Cmd+K rewrites selected code in seconds', 'Full VS Code extension library works unchanged', 'Codebase-aware chat understands your entire project', 'Free Hobby plan needs no card, so you can evaluate Cursor before paying'],
     cons: ['No affiliate programme yet — zero direct monetisation for referrers', 'Pro plan at $20/month is pricier than GitHub Copilot ($10)', 'Some VS Code power users report minor keymap friction in early weeks'],
     pricingBreakdown: [
-      { tier: 'Hobby', price: '$0/month', highlight: '2,000 completions · 50 slow requests · Basic Composer · All VS Code extensions · No card required' },
-      { tier: 'Pro', price: '$20/month', highlight: 'Unlimited completions · 500 fast requests · Claude 3.5 & GPT-4o · Advanced Composer' },
-      { tier: 'Business', price: '$40/month per user', highlight: 'Everything in Pro · Centralised billing · Admin dashboard · SSO · Priority support' },
+      { tier: 'Hobby', price: '$0/month', highlight: 'Limited Agent requests · Limited Tab completions · All VS Code extensions · No card required' },
+      { tier: 'Pro', price: '$20/month', highlight: 'Extended Agent limits · Monthly credit pool · Overages billed on top' },
+      { tier: 'Pro+', price: '$60/month', highlight: 'More headroom for heavy Agent users · Larger monthly credit pool' },
+      { tier: 'Ultra', price: '$200/month', highlight: 'Highest usage limits for power users · Largest monthly credit pool' },
+      { tier: 'Teams', price: '$40/month per user', highlight: 'Centralised billing · Admin controls · SSO' },
     ],
     setupSteps: [
       'Download Cursor from cursor.com — installs on macOS, Windows, Linux. First-run wizard migrates VS Code extensions, keybindings, and settings automatically.',
@@ -899,8 +902,8 @@ export const TOOLS: Tool[] = [
       'Open Composer (Cmd+Shift+I) for multi-file tasks. Describe changes across the project and Composer plans and executes them with diffs to review before accepting.',
     ],
     realOutputExample: {
-      output: 'Cmd+K: Add JWT auth middleware, validate UUID param, return typed errors. Cursor rewrote a 40-line handler in 4 seconds. Compiled cleanly first attempt.',
-      editorialNote: 'Cursor beats Copilot Chat on targeted refactors: Cmd+K uses full file context plus imported types — never breaks TypeScript. Copilot Chat missed UUID validation; Cursor caught it.',
+      output: 'Example prompt: Cmd+K: Add JWT auth middleware, validate UUID param, return typed errors. Cursor rewrites the selected handler inline and shows a diff to accept or reject.',
+      editorialNote: 'User reports commonly credit Cmd+K for targeted refactors because it draws on full file context plus imported types.',
     },
     dailyUseCases: [
       'Refactoring with Cmd+K — executes across files in under 30 seconds.',
@@ -2750,12 +2753,12 @@ Object.assign(TOOL_FAQS, {
 // ── Week 1: FAQs for Cursor + Lovable ─────────────────────────────────────
 Object.assign(TOOL_FAQS, {
   cursor: [
-    { q: 'Is Cursor AI free to use?', a: 'Yes. Cursor\'s Hobby plan is permanently free — it includes 2,000 code completions and 50 slow AI requests per month. That\'s enough to evaluate the tool properly and build small projects. The Pro plan ($20/month) unlocks unlimited completions and fast requests using Claude 3.5 and GPT-4o.' },
+    { q: 'Is Cursor AI free to use?', a: 'Yes. Cursor\'s Hobby plan is free and needs no credit card, with limited Agent requests and Tab completions. That\'s enough to evaluate the tool properly and build small projects. The Hobby plan includes limited Agent requests and Tab completions. Pro ($20/month) adds extended Agent limits and a monthly credit pool, and Cursor now bills by credits rather than a fixed request count, so check cursor.com/pricing for current limits.' },
     { q: 'How does Cursor compare to GitHub Copilot?', a: 'Cursor and GitHub Copilot are both excellent but solve the problem differently. Copilot is a plugin that enhances your existing VS Code or JetBrains setup. Cursor is a standalone editor (VS Code fork) with AI built into every feature. Cursor\'s Cmd+K inline editing and Composer multi-file agent are more powerful than anything in Copilot today. Copilot wins if you\'re in JetBrains or need GitHub-native integration. For VS Code users, Cursor is the better experience at $20/month vs $10/month.' },
     { q: 'Does Cursor work with my existing VS Code extensions?', a: 'Yes — almost all VS Code extensions work in Cursor unchanged because Cursor is a fork of VS Code built on the same extension API. Your themes, language support, formatters (Prettier, ESLint), debuggers, and most marketplace extensions transfer automatically when you first open Cursor.' },
     { q: 'Is Cursor good for non-developers or beginners?', a: 'Cursor is built for developers — it assumes you understand code and want AI to accelerate your workflow. It\'s not a no-code tool. If you want to build apps without writing code, Lovable or Replit are better starting points. For developers who already write code and want to go 2–3x faster, Cursor is one of the best investments in 2026.' },
-    { q: 'What AI models does Cursor use?', a: 'Cursor Pro gives access to Claude 3.5 Sonnet (Anthropic), GPT-4o (OpenAI), and Cursor\'s own fine-tuned models. You can switch models per task — Claude 3.5 is generally best for complex refactoring and explanation tasks; GPT-4o is fast for short completions. The Hobby (free) plan uses slower model access with a monthly quota.' },
-    { q: 'Is my code safe in Cursor?', a: 'Cursor has a Privacy Mode — when enabled, your code is not stored or used for model training. In Privacy Mode, prompts are sent to the AI model for inference only and are not logged. For enterprise users on the Business plan, Cursor offers zero-data-retention agreements. If you work with sensitive proprietary code, enable Privacy Mode in Settings before using AI features.' },
+    { q: 'What AI models does Cursor use?', a: 'Cursor gives access to frontier models from providers such as Anthropic and OpenAI, plus its own models, and you can switch models per task. Because billing is credit-based, model choice, agent usage, and context size decide how far your monthly credit pool goes. The available model list changes often, so check cursor.com/pricing and the in-app model picker for the current lineup.' },
+    { q: 'Is my code safe in Cursor?', a: 'Cursor has a Privacy Mode — when enabled, your code is not stored or used for model training. In Privacy Mode, prompts are sent to the AI model for inference only and are not logged. For organisations on the Teams plan, Cursor offers zero-data-retention agreements. If you work with sensitive proprietary code, enable Privacy Mode in Settings before using AI features.' },
   ],
   lovable: [
     { q: 'What is vibe coding and how does Lovable fit in?', a: 'Vibe coding is the practice of building software by describing what you want in plain English and letting an AI generate and iterate on the code for you — without writing the code yourself. Lovable is currently the leading vibe-coding platform for full-stack web apps. You describe your app, Lovable generates React + Supabase code, deploys it instantly, and you keep refining by chatting. The term was coined by Andrej Karpathy in early 2025 and the category grew by over 400% in search volume through 2026.' },
@@ -2850,7 +2853,7 @@ export const TOOL_COMPARISONS: Record<string, Array<{
     { name: 'Monday.com', price: '$9–$16/mo', freeplan: false, bestFor: 'Visual project tracking', ourPick: false },
   ],
   cursor: [
-    { name: 'Cursor', price: 'Free–$40/mo', freeplan: true, bestFor: 'AI-native code editor (VS Code fork)', ourPick: true },
+    { name: 'Cursor', price: 'Free–$200/mo', freeplan: true, bestFor: 'AI-native code editor (VS Code fork)', ourPick: true },
     { name: 'GitHub Copilot', price: '$10–$19/mo', freeplan: true, bestFor: 'IDE plugin for VS Code + JetBrains', ourPick: false },
     { name: 'Windsurf', price: 'Free–$15/mo', freeplan: true, bestFor: 'Lightweight AI editor (Codeium)', ourPick: false },
     { name: 'Replit', price: 'Free–$20/mo', freeplan: true, bestFor: 'Browser-based coding + deploy', ourPick: false },
