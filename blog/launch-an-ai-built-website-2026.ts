@@ -36,6 +36,18 @@ const post: BlogPost = {
       a: 'Yes. The domain registrar and hosting provider do not have to be the same company. You connect them by changing DNS records or nameservers. Keep a written record of the DNS values and do not change them until you know which service should receive web and email traffic.',
     },
     {
+      q: 'Can an AI website builder provide hosting and SSL?',
+      a: 'Some can. Readdy and WordToSite describe managed publishing with hosting or SSL features in their official product information. Check the exact plan because included services vary by builder and tier.',
+    },
+    {
+      q: 'What should I record before changing DNS?',
+      a: 'Record the current nameservers, A records, CNAME records, MX records, and TTL values. Keep a copy of the existing configuration so you can restore website or email service if the new connection fails.',
+    },
+    {
+      q: 'Is BigRock suitable for India-focused websites?',
+      a: 'BigRock publishes India-specific domain and hosting pages with prices in rupees and India selected as a region. Confirm taxes, term length, renewal prices, and support terms at checkout before buying.',
+    },
+    {
       q: 'What should I check before an AI-built site goes live?',
       a: 'Check the custom domain, HTTPS, mobile layout, forms, email delivery, analytics, redirects, sitemap, robots settings, contact details, and every AI-generated claim. Publish only after a human verifies the pages and legal information.',
     },
@@ -69,20 +81,22 @@ const post: BlogPost = {
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">An AI builder creates the first version of the site, but launch still means connecting a domain, confirming hosting, enabling HTTPS, checking email, and reviewing every generated claim. Decide which of those services your builder already includes before buying anything twice.</p>
 </div>
+<div style="overflow-x:auto;margin:20px 0 28px;"><table style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr style="background:rgba(13,148,136,.1);"><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Need</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Choose first</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Verify</th></tr></thead><tbody><tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Small marketing site</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Builder hosting</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Domain and SSL inclusion</td></tr><tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">WordPress export</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Managed WordPress host</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Backups, DNS, and database</td></tr><tr><td style="padding:10px;">Separate certificate</td><td style="padding:10px;">SSL provider</td><td style="padding:10px;">Validation and renewal</td></tr></tbody></table></div>
+<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start with a domain check →</a></div>
 <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team planning the launch of a new website" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <h2>The AI build is only the first half of a launch</h2>
-<p>AI website builders are good at producing a first draft quickly. They can suggest page structures, write draft copy, choose images, and create a visual system. The operational work begins after the draft looks finished.</p>
+<p>Launching an AI-built website requires 3 decisions: domain, hosting, and SSL. AI website builders can produce a first draft quickly. The operational work begins after that draft looks finished.</p>
 <p>A public website needs an address that people can remember, a server or platform that serves the files, and an encrypted connection. It also needs working forms, a real contact address, a clear privacy policy, and a human review of any claims the AI wrote. Those decisions are related, but they are not the same purchase.</p>
-<p>The first question is simple: does your builder include hosting and SSL? Readdy's official product pages describe hosting, custom domains, SSL, and publishing in the platform. WordToSite describes managed WordPress previews and domain, DNS, and SSL handling on its paid site plan. If your builder makes the same promise, do not buy a second hosting package until you understand what is included.</p>
+<p>The first question is simple: does your builder include hosting and SSL?</p><p>Readdy's official product pages describe hosting, custom domains, SSL, and publishing. WordToSite describes managed WordPress previews and domain, DNS, and SSL handling on its paid plan.</p><p>If your builder makes the same promise, do not buy a second hosting package until you understand what is included.</p>
 
 <h2>Step 1: choose the domain</h2>
 <p>Your domain is the public address. It is separate from the page design, and moving it later can be inconvenient because email, redirects, analytics, and printed material may already depend on it.</p>
 <p>Choose a name that matches the business rather than the AI builder. Check spelling, pronunciation, trademark risk, and the renewal price. A low first-year promotion is not the same as a low long-term cost. The official checkout is the right place to confirm the exact TLD price, taxes, privacy options, and renewal terms.</p>
 
 <h3>BigRock: India-focused domains and hosting</h3>
-<p>BigRock's India domain page currently shows .com starting at Rs 749 and .in starting at Rs 549 in the visible pricing panel. The same page presents BigRock as an ICANN-accredited registrar and includes domain management, DNS management, forwarding, and a 30-day Titan email trial with a domain purchase. Promotions can change, so treat those numbers as a dated observation rather than a permanent price.</p>
-<p>BigRock's India hosting page shows Linux hosting from Rs 69/month, with the Standard plan displayed as renewing at Rs 409/month. It also lists Business at Rs 159/month renewing at Rs 649/month and Pro at Rs 199/month renewing at Rs 759/month. The plans include features such as NVMe storage, email accounts, databases, cPanel, and a free Let's Encrypt SSL. Read the term length carefully: the monthly-looking number may depend on the purchase period.</p>
+<p>BigRock's India domain page shows .com starting at Rs 749 and .in at Rs 549 in its visible pricing panel. It also presents BigRock as an ICANN-accredited registrar.</p><p>The page lists domain management, DNS management, forwarding, and a 30-day Titan email trial. Promotions can change, so treat those numbers as dated observations.</p>
+<p>BigRock's India hosting page shows Linux hosting from Rs 69/month. Standard is displayed as renewing at Rs 409/month.</p><p>Business is listed at Rs 159/month and renews at Rs 649/month. Pro is listed at Rs 199/month and renews at Rs 759/month. Read the term length carefully because the monthly-looking number may depend on the purchase period.</p>
 <div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['bigrock']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit BigRock India</a></div>
 
 <h3>Spaceship: domain plus business email</h3>
@@ -90,21 +104,24 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Compare Spaceship Domains</a></div>
 
 <h3>Domain.com and Network Solutions: verify the exact bundle</h3>
-<p>Domain.com and Network Solutions are both broad web-presence providers rather than domain-only shops. Newfold Digital's official brand page lists Network Solutions and BigRock among its brands. For Domain.com and Network Solutions, check the exact product page and checkout path you are using: domain registration, hosting, SSL, email, and website-builder products can have separate prices and renewal terms.</p>
+<p>Domain.com and Network Solutions are broad web-presence providers rather than domain-only shops. Newfold Digital's official brand page lists Network Solutions and BigRock among its brands.</p><p>Check the exact product page and checkout path. Domain registration, hosting, SSL, email, and website-builder products can have separate prices and renewal terms.</p>
 <p>Do not assume that an advertised first-year domain price is the full cost of ownership. Record the first-year price, renewal price, privacy fee, and any required add-ons before you publish a recommendation.</p>
 <div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['domain-com']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Check Domain.com</a><a href="${AFFILIATE_LINKS['network-solutions']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Check Network Solutions</a></div>
 
 <h2>Step 2: confirm hosting</h2>
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Server infrastructure representing website hosting" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Hosting is where the site runs. A hosted AI builder usually hides this layer. An exported WordPress or static site does not. Before you purchase hosting, identify the output format: proprietary hosted site, WordPress site, or exportable files. The answer determines whether you need a separate host and how portable the project will be.</p>
 <p>For a simple brochure site, the cheapest working setup is often the builder's included hosting. For WordPress, look for storage, backups, SSL, a control panel, database support, and a clear migration path. For a custom app, a normal shared-hosting plan may be the wrong product entirely.</p>
 <p>Test the site on a temporary URL before changing DNS. Confirm the homepage, contact form, images, redirects, and mobile layout. Only then point the permanent domain at the new host. This makes rollback possible if the AI-generated build has a problem.</p>
 
 <h2>Step 3: decide whether you need separate SSL</h2>
+<img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Secure padlock on a website connection representing SSL protection" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>HTTPS encrypts the connection between a visitor and the website. Many builders and hosting plans include a certificate automatically. BigRock's hosting page lists a free Let's Encrypt SSL in its hosting plans, and Readdy describes automatic SSL when a site is published.</p>
 <p>A separate certificate is mainly relevant when your host does not include one, when you need a particular validation or coverage type, or when you manage certificates for several domains outside an all-in-one platform. Do not buy an SSL merely because the browser shows HTTPS as a feature; first check whether it is already included.</p>
 <h3>SSLs.com: certificates for separate certificate purchases</h3>
-<p>SSLs.com publishes certificates with domain, organization, and extended validation options. Its product pages describe standard domain validation, wildcard coverage for subdomains, and multi-domain certificates. The site currently shows a Standard Wildcard SSL at $38.53/year against a $64.99 list price, and a Standard SSL at $3.75/year against a $7.99 list price in the product menu. Confirm the current product, term, renewal, and validation requirements before purchasing.</p>
-<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['ssls']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Compare SSLs.com Certificates</a></div>
+<p>SSLs.com publishes domain, organization, and extended validation certificates. Its pages also describe wildcard and multi-domain coverage.</p><p>The product menu shows a Standard Wildcard SSL at $38.53/year against a $64.99 list price. It shows a Standard SSL at $3.75/year against a $7.99 list price. Confirm the current product, term, renewal, and validation requirements before purchasing.</p>
+<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['ssls']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit SSLs.com Certificates</a></div>
+<p>For the builder decision, read <a href="/blog/best-ai-website-builders-2026/" style="color:var(--a1);font-weight:600;">Best AI Website Builders 2026</a>. For a startup workflow, see <a href="/blog/best-ai-tools-for-startups-2026/" style="color:var(--a1);font-weight:600;">Best AI Tools for Startups</a>.</p>
 
 <h2>Launch checklist for an AI-built site</h2>
 <ol style="margin:12px 0 24px;padding-left:22px;line-height:1.9;">
@@ -126,8 +143,10 @@ const post: BlogPost = {
 <p><strong>Use SSLs.com</strong> when you have a genuine need for a separately managed certificate. If your builder or host already supplies HTTPS, keep the setup simpler and avoid paying for a duplicate certificate.</p>
 
 <h2>Final rule: verify the handoff, not just the AI draft</h2>
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team reviewing a website launch checklist" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>An AI-generated site can look finished while still having a broken form, a missing email record, an incorrect price, or a private page that search engines cannot crawl. Treat the generated content as a draft and the launch as an operational handoff.</p>
 <p>Buy the smallest setup that meets the actual requirement, record renewal costs, test the public URL from a phone, and keep the domain account separate from the person who created the first AI prompt. That discipline matters more than which provider has the most attractive first-year banner.</p>
+<p>For a freelancer-focused tool stack, see <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:var(--a1);font-weight:600;">Best AI Tools for Freelancers</a>.</p>
 `
 };
 
