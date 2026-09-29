@@ -86,7 +86,7 @@ const post: BlogPost = {
       'Numerous.ai has no data-import capability of its own; it only processes data already in the sheet',
       'Coefficient\'s pricing scales with connector count and refresh frequency, which can climb quickly for data-heavy teams',
       'Microsoft Copilot in Excel adds a real per-seat cost (~$30/user/month) on top of an existing Microsoft 365 subscription',
-      'Independent review coverage is thin for PopAi Sheets and Numerous.ai compared to the established native assistants',
+      'Independent review coverage is thin for PopAi Sheets and Numerous.aThe comparison covers to the established native assistants',
     ],
   },
   outboundCitations: [
@@ -105,7 +105,7 @@ const post: BlogPost = {
 
 <h2>Best AI Spreadsheet Tools 2026: Three Jobs Hiding Under One Search Term</h2>
 <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop displaying a spreadsheet full of data, representing AI spreadsheet tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
-<p>I'm Navneet Arya, and I run this site's independent tool research. "AI spreadsheet tool" is a broad, slightly misleading search term in 2026, because it covers at least three unrelated jobs, and most people searching it only need one.</p>
+<p> and This site publishes independent tool research. "AI spreadsheet tool" is a broad, slightly misleading search term in 2026, because it covers at least three unrelated jobs, and most people searching it only need one.</p>
 <p>Someone drowning in PDF invoices and receipts they're manually retyping needs an extraction tool. Someone with a spreadsheet full of customer reviews they want tagged and classified needs a row-by-row AI function. Someone tired of exporting a CSV from Salesforce every Monday morning needs a live data connection, not AI at all in the traditional sense.</p>
 <p>This guide compares five tools that each own a distinct piece of that landscape: PopAi Sheets (document-to-table extraction), Numerous.ai (AI formulas inside cells), Coefficient (live business-data connections), Microsoft Copilot in Excel, and Gemini in Google Sheets (the two native, in-suite options). The right pick depends on which job you actually have.</p>
 

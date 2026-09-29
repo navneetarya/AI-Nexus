@@ -35,14 +35,14 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/ai-voice-cloning-pricing-comparison-2026.webp',
   excerpt: 'ElevenLabs unlocks voice cloning from $6/month. Descript needs $24/month, Resemble AI charges per second used, and Murf locks cloning entirely to a custom-quoted Enterprise plan.',
   quickAnswer: 'ElevenLabs is the cheapest way to start cloning a voice in 2026, unlocking Instant Voice Cloning at $6/month (Starter) and Professional Voice Cloning at $22/month (Creator). Descript\'s Overdub cloning is included at $24/month (Creator). Resemble AI uses pay-per-use pricing at roughly $0.0005 per second generated, no subscription required. Murf AI locks cloning entirely to its custom-quoted Enterprise plan, typically $1,000 or more a year, with no self-serve option below it.',
-  myTake: "I'm Navneet Arya, and I pulled every figure here straight from each tool's live pricing page rather than reusing older cached numbers, since Starter and Creator pricing on ElevenLabs specifically has moved before. The gap that surprised me most preparing this: Murf, a genuinely strong voiceover tool otherwise, doesn't offer cloning to anyone below Enterprise.",
+  myTake: " The figures come straight from each tool's live pricing page rather than reusing older cached numbers, since Starter and Creator pricing on ElevenLabs specifically has moved before. The gap that surprised me most preparing this: Murf, a genuinely strong voiceover tool otherwise, doesn't offer cloning to anyone below Enterprise.",
 
   content: `
 <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio mixing console dials, representing AI voice cloning pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>"How much does it actually cost to clone a voice?" has a different answer depending on which tool you ask. ElevenLabs sells cloning as a monthly-plan feature. Resemble AI charges per second of audio generated. Descript bundles it into an editing subscription. And Murf, despite selling voiceovers to everyone, doesn't sell cloning to almost anyone. Here's what each one actually charges.</p>
 
-<p>I'm Navneet Arya, and I checked each tool's live pricing page directly for this comparison. For a feature-by-feature look at cloning quality rather than just price, see our <a href="/blog/best-ai-voice-cloning-tools-2026/">best AI voice cloning tools guide</a>.</p>
+<p>This guide uses each tool's live pricing page directly for this comparison. For a feature-by-feature look at cloning quality rather than just price, see our <a href="/blog/best-ai-voice-cloning-tools-2026/">best AI voice cloning tools guide</a>.</p>
 
 <h2>TL;DR: cloning pricing at a glance</h2>
 

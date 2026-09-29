@@ -25,7 +25,7 @@ const post: BlogPost = {
   slug: 'gamma-ai-review-2026',
   title: 'Gamma AI Review 2026: Is It Worth $8/Month for Presentations?',
   seoTitle: 'Gamma AI Review 2026: Is It Worth $8/Month?',
-  metaDescription: 'Gamma AI reviewed for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai, Canva AI and Pi. Worth $8/month?',
+  metaDescription: 'Gamma AThe review covers for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai, Canva AI and Pi. Worth $8/month?',
   datePublished: '2026-09-09',
   dateModified: '2026-09-22',
   author: 'Navneet Arya',

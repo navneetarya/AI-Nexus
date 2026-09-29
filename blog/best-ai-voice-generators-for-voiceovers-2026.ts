@@ -31,14 +31,14 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/best-ai-voice-generators-for-voiceovers-2026.webp',
   excerpt: 'Murf AI is built for one job: turning a script into a finished, timed voiceover without hiring a voice actor. For commercial and e-learning work, that studio workflow beats a raw voice API.',
   quickAnswer: 'Murf AI is the best AI voice generator for commercial voiceovers in 2026, thanks to its script-to-video sync and 120-plus voice library built for finished production work, not just raw audio. ElevenLabs is the better pick if voice cloning matters more than a studio workflow. Most commercial voiceover work, ads, e-learning, corporate video, fits Murf AI\'s $19/month plan comfortably.',
-  myTake: "I'm Navneet Arya, and I checked live pricing for both tools as of August 2026. Murf wins this specific comparison because commercial voiceover work is a production job, not just a voice generation task, and Murf is built around the whole job.",
+  myTake: "This guide uses live pricing for both tools as of August 2026. Murf wins this specific comparison because commercial voiceover work is a production job, not just a voice generation task, and Murf is built around the whole job.",
 
   content: `
 <img src="https://images.unsplash.com/photo-1638389746768-fd3020d35add?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A voiceover artist recording a script with a condenser microphone and headphones" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Commercial voiceover work has a different shape than most AI voice jobs. It's not one script generated once. It's dozens of ad reads, training modules, or explainer clips, each one needing to line up with a timeline someone else already built. That makes timing precision and re-recording flexibility more important than raw voice realism alone.</p>
 
-<p>I'm Navneet Arya, and I checked live pricing for this guide as of August 2026. For the full voice generator comparison across every use case, see our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>. This one focuses only on commercial and e-learning voiceover work.</p>
+<p>This guide uses live pricing for this guide as of August 2026. For the full voice generator comparison across every use case, see our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>. This one focuses only on commercial and e-learning voiceover work.</p>
 
 <h2>TL;DR: Murf AI vs ElevenLabs for voiceover work</h2>
 

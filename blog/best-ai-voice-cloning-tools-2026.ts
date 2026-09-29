@@ -25,14 +25,14 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/best-ai-voice-cloning-tools-2026.webp',
   excerpt: 'ElevenLabs remains the strongest AI voice cloning tool for quality and language coverage. Descript wins if cloning is just one part of a bigger editing job, and consent rules matter more than the tool you pick.',
   quickAnswer: 'ElevenLabs is the best AI voice cloning tool in 2026, building a usable clone from about one minute of clean audio across 29 languages. Descript is the better pick if cloning is just one feature inside a bigger editing workflow, through its Overdub feature. Resemble AI and Play.ht both offer cloning too, at different price points. Every fair use means cloning only your own voice, or one you have clear permission to use.',
-  myTake: "I'm Navneet Arya, and I checked each tool's cloning requirements and consent policies directly for this guide. The tool comparison matters less here than most guides suggest, since the real risk in this category is consent, not quality.",
+  myTake: "This guide uses each tool's cloning requirements and consent policies directly for this guide. The tool comparison matters less here than most guides suggest, since the real risk in this category is consent, not quality.",
 
   content: `
 <img src="https://images.unsplash.com/photo-1615661434109-739052a73003?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A studio microphone on a stand, used for recording a voice sample" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Voice cloning went from a research demo to a one-minute setup in about two years. Anyone can now train a usable clone of their own voice on a laptop, no studio or engineer required. The tools below differ mainly in cloning speed, output naturalness, and whether they're built for consent-safe commercial use.</p>
 
-<p>I'm Navneet Arya, and I checked cloning quality, language coverage, and consent policies directly for each tool in this guide. For the broader voice generator comparison, see our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>. This one focuses only on cloning specifically.</p>
+<p>This guide uses cloning quality, language coverage, and consent policies directly for each tool in this guide. For the broader voice generator comparison, see our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>. This one focuses only on cloning specifically.</p>
 
 <h2>TL;DR: best AI voice cloning tools in 30 seconds</h2>
 

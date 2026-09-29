@@ -30,14 +30,14 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/best-ai-voice-generators-for-podcasts-2026.webp',
   excerpt: 'Podcasters use AI voice generators for a narrower job than most guides suggest: fixing a flubbed line, generating a consistent intro, or dubbing an episode, not replacing the whole show.',
   quickAnswer: 'ElevenLabs is the best AI voice generator for podcast intros and multi-language dubbing, thanks to its 29-language coverage and cloning quality. Podcastle and Descript both fit better if voice generation needs to sit inside a recording or editing workflow, through Revoice and Overdub. Most podcasters only need voice generation for a narrow job, not full episode narration.',
-  myTake: "I'm Navneet Arya, and this guide focuses on the actual jobs podcasters use voice generation for, not a repeat of our broader podcast tools guide. Fixing one bad line beats a full re-record almost every time.",
+  myTake: "This guide focuses on the actual jobs podcasters use voice generation for, not a repeat of our broader podcast tools guide. Fixing one bad line beats a full re-record almost every time.",
 
   content: `
 <img src="https://images.unsplash.com/photo-1593697909683-bccb1b9e68a4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A podcaster sitting in front of a microphone in a recording studio" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>How much editing time does one bad take really cost? Most podcasters don't need an AI voice tool to replace their voice. They need one for three smaller jobs. Fixing a mistake without a full re-record. Making a steady intro or ad read. And now and then, dubbing an episode into another language.</p>
 
-<p>I'm Navneet Arya, and this guide covers voice generation specifically. For recording and editing tools more broadly, see our <a href="/blog/best-ai-podcast-tools-2026/">best AI podcast tools guide</a>. And if Podcastle itself isn't the right fit, our <a href="/blog/best-podcastle-alternatives/">Podcastle alternatives comparison</a> covers Descript and Riverside in depth.</p>
+<p>This guide covers voice generation specifically. For recording and editing tools more broadly, see our <a href="/blog/best-ai-podcast-tools-2026/">best AI podcast tools guide</a>. And if Podcastle itself isn't the right fit, our <a href="/blog/best-podcastle-alternatives/">Podcastle alternatives comparison</a> covers Descript and Riverside in depth.</p>
 
 <h2>TL;DR: which tool for which podcast job</h2>
 

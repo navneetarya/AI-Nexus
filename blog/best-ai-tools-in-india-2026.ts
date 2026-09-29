@@ -18,7 +18,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-in-india-2026.webp',
   excerpt: 'Most AI tool roundups list USD prices and ignore Indian creators entirely. This one is written from India, with INR pricing, GST notes, and honest answers to questions Indian users actually ask.',
   quickAnswer: 'The best AI tools in India in 2026 are Rytr (writing, ~₹750/month, Hindi support), Grammarly (editing, free forever), and Canva AI (design, ~₹333/month). All work without a VPN or a dollar card, and GST (18%) is added at checkout on most paid plans. Start with Grammarly and Perplexity, both free, before paying for anything.',
-  myTake: 'I run this site from Noida and pay these exact INR prices every month — the GST line item alone is the detail every USD-focused roundup misses, and it changes the real cost by close to a fifth.',
+  myTake: 'The India-focused pricing section uses current INR prices — the GST line item alone is the detail every USD-focused roundup misses, and it changes the real cost by close to a fifth.',
   faqs: [
     {
       q: 'Do I need a VPN to use AI tools in India?',

@@ -186,7 +186,7 @@ import post73 from './best-nano-banana-pro-alternatives-2026';
 // AdCreative.ai / Creatify / Topview AI / Shhots AI / PhotoRoom compared
 import post74 from './best-ai-ad-creative-generator-tools-2026';
 // Day 24 (Jul 31) — Best AI Image Upscaler Tools 2026 — ecommerce-seller + photo-restoration angle,
-// PhotoRoom / Topaz Photo AI / Let's Enhance / Upscale.media / Remini compared;
+// PhotoRoom / Topaz Photo AI / Let's Enhance / Upscale.media / ReminThe comparison covers;
 // callout: Topaz discontinued its $99 one-time Gigapixel license in Sept 2025, subscription-only now
 import post75 from './best-ai-photo-upscaler-tools-2026';
 // Day 25 (Aug 1) — Best AI Receptionist for Small Business 2026 — consumer/product angle,
@@ -269,8 +269,10 @@ import post100 from './best-ai-tool-lifetime-deals-appsumo-2026';
 // funnel more traffic to the ElevenLabs tool page, the site's highest-converting page (30% conversion)
 import post101 from './best-ai-voice-cloning-for-podcasts-2026';
 import post102 from './ai-voice-cloning-pricing-comparison-2026';
+import post103 from './launch-an-ai-built-website-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post103, // Sep 29 — Launch an AI-built website: domain, hosting, and SSL guide
   post102, // Sep 26 — AI Voice Cloning Pricing Compared 2026 (ElevenLabs vs Murf vs Descript vs Resemble AI) — pinned first for freshness
   post101, // Sep 26 — Best AI Voice Cloning for Podcasts 2026 (should-you-clone decision guide) — pinned first for freshness
   post100, // Sep 26 — Best AI Tool Lifetime Deals on AppSumo 2026 — pinned first for freshness
@@ -280,7 +282,7 @@ export const BLOG_POSTS: BlogPost[] = [
   post96, // Sep 18 — Best AI Dubbing Tools 2026 (ElevenLabs, HeyGen, Rask AI, Synthesia, Dubverse) — pinned first for freshness
   post95, // Sep 16 — Murf AI Pricing: What Each Plan Actually Buys You (2026) — pinned first for freshness
   post94, // Sep 14 — How to Beat ATS Resume Screening in 2026 (What Actually Works) — pinned first for freshness
-  post93, // Sep 10 — Can I Use ElevenLabs for YouTube? Commercial Rights Guide 2026
+  post93, // Sep 10 — Can I use ElevenLabs for YouTube? Commercial Rights Guide 2026
   post92, // Sep 10 — ElevenLabs Pricing: The Real Cost of Character Credits 2026
   post91, // Sep 9 — Gamma AI Review 2026 (single-tool deep dive, closes GEO 0/1 citation gap on /tools/gamma) — pinned first for freshness
   post90, // Day 39 (Aug 20) — Best AI Voice Generators for Voiceovers 2026 (Murf AI studio/video-sync vs ElevenLabs cloning)

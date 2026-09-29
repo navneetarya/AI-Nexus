@@ -24,14 +24,14 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/murf-ai-alternatives-2026.webp',
   excerpt: 'Murf AI is a strong pick for finished video voiceovers, but it is not built for everyone. ElevenLabs wins on cloning, Synthesia adds a full avatar, and Speechify Studio wins on price.',
   quickAnswer: 'The best Murf AI alternative depends on what Murf does not do well for you. ElevenLabs beats Murf on voice cloning and realism. Synthesia adds a full AI avatar on top of the voiceover, useful for training videos. Speechify Studio costs less at the entry tier. WellSaid Labs suits enterprise teams that want contract-based pricing over a self-serve plan.',
-  myTake: "I'm Navneet Arya, and I checked live pricing for every tool here as of August 2026. Murf is genuinely good at what it does, so most of these switches only make sense for one specific reason, not because Murf is bad.",
+  myTake: "This guide uses live pricing for every tool here as of August 2026. Murf is genuinely good at what it does, so most of these switches only make sense for one specific reason, not because Murf is bad.",
 
   content: `
 <img src="https://images.unsplash.com/photo-1731909888065-0c5a117b0af7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creative studio desk with multiple screens, representing AI voice production" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Murf AI does one job very well: turning a script into a finished, timed voiceover for video or e-learning, without hiring a voice actor. Most people who search for alternatives aren't unhappy with Murf. They've just hit one specific limit it wasn't built to solve.</p>
 
-<p>I'm Navneet Arya, and I checked live pricing for this guide as of August 2026. If you haven't compared Murf against the wider field yet, start with our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>. This one assumes you already know Murf and want to know exactly what beats it, and for which job.</p>
+<p>This guide uses live pricing for this guide as of August 2026. If you haven't compared Murf against the wider field yet, start with our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>. This one assumes you already know Murf and want to know exactly what beats it, and for which job.</p>
 
 <h2>TL;DR: when to actually switch from Murf AI</h2>
 

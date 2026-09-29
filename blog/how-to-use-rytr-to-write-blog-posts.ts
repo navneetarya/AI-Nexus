@@ -22,7 +22,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/how-to-use-rytr-to-write-blog-posts.webp',
   excerpt: 'Rytr can cut your blog post first-draft time by 60% if you know which templates to use and how to brief it properly. Here\'s the exact step-by-step recommended workflow.',
   quickAnswer: 'To use Rytr for blog posts: generate an outline with the Blog Idea & Outline template, write each section with Blog Section Writing, draft the intro last, then generate a conclusion. This order cuts first-draft time by roughly 60%, from 2–3 hours to under an hour. The free plan handles one post a month; the $9/month Saver plan suits 4+ posts.',
-  myTake: 'I\'ve used this exact section-by-section workflow for dozens of published posts — the "write the intro last" step alone saves more editing time than any prompt trick I\'ve tried.',
+  myTake: 'This section-by-section workflow is suitable for repeatable publishing; writing the introduction last can reduce editing time.',
   faqs: [
     {
       q: 'Can Rytr write a full blog post?',

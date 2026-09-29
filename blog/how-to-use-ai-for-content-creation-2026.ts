@@ -21,7 +21,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/how-to-use-ai-for-content-creation-2026.webp',
   excerpt: 'AI content creation in 2026 is not about replacing your ideas. It is about cutting the production time between your idea and a finished piece of content by 60–80%. Here is the full recommended workflow, broken down by content type.',
   quickAnswer: 'Using AI for content creation in 2026 means running one idea through four stages: writing (Rytr + Grammarly), images (Leonardo.ai + PhotoRoom), video (Pictory + InVideo AI), and audio (Podcastle + Murf AI). A human edits at every stage. This workflow cuts production time between an idea and a finished, multi-format piece of content by 60–80% compared to building each format from scratch.',
-  myTake: 'I run this exact four-stage workflow on this site every week — the biggest time-saver isn\'t any single tool, it\'s treating AI output as a first draft you edit, never as a final draft you publish.',
+  myTake: 'A four-stage workflow can be applied to this site — the biggest time-saver isn\'t any single tool, it\'s treating AI output as a first draft you edit, never as a final draft you publish.',
   faqs: [
     {
       q: 'What is the best AI tool for content creation in 2026?',

@@ -12,7 +12,7 @@ const post: BlogPost = {
   slug: 'perplexity-ai-review-2026',
   title: 'Perplexity AI Review 2026: Is It Worth It vs Google Search?',
   seoTitle: 'Perplexity AI Review 2026: Is It Worth It vs Google Search?',
-  metaDescription: 'Perplexity AI reviewed for 2026 — tested against Google Search on research and everyday queries. Is it worth $20/month? See the honest verdict.',
+  metaDescription: 'Perplexity AThe review covers for 2026 — tested against Google Search on research and everyday queries. Is it worth $20/month? See the honest verdict.',
   datePublished: '2026-05-15',
   dateModified: '2026-08-22',
   author: 'Navneet Arya',
@@ -21,7 +21,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/perplexity-ai-review-2026.webp',
   excerpt: 'Search interest in "Perplexity vs Google" is up 280% in 30 days. As Google Search leans further into AI Overviews, and Perplexity adds Pro Search with access to GPT-4o and Claude 3.5, millions of users are asking whether traditional search is still the right tool. This review tests Perplexity against Google across eight real-world search scenarios and gives you a straight answer.',
   quickAnswer: 'Perplexity is worth it for research-heavy work — questions that require pulling together information from multiple sources, like academic research, technical comparisons, or competitive analysis. Google still wins for navigational searches, local results, breaking news, and shopping. The free plan handles most everyday research adequately; Perplexity Pro at $20/month is justified for heavy users who need GPT-4o, Claude 3.5, Deep Research, and Spaces. Most people end up using both tools for different query types.',
-  myTake: 'I ran the same eight query types through both tools rather than relying on impressions, and the pattern held every time: Perplexity wins the moment a question needs synthesis across sources, and loses the moment it needs freshness, location, or a specific website — know which kind of question you\'re asking before you pick a tool.',
+  myTake: 'The comparison uses the same eight query types across both tools rather than relying on impressions, and the pattern held every time: Perplexity wins the moment a question needs synthesis across sources, and loses the moment it needs freshness, location, or a specific website — know which kind of question you\'re asking before you pick a tool.',
   faqs: [
     {
       q: 'Is Perplexity better than Google Search in 2026?',
@@ -88,7 +88,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Perplexity is worth it for research-heavy work — questions that require pulling together information from multiple sources, like academic research, technical comparisons, or competitive analysis. Google still wins for navigational searches, local results, breaking news, and shopping. The free plan handles most everyday research adequately; <strong>Perplexity Pro at $20/month</strong> is justified for heavy users who need GPT-4o, Claude 3.5, Deep Research, and Spaces. Most people end up using both tools for different query types.</p>
 </div>
 <blockquote style="border-left:3px solid #0D9488;padding:4px 0 4px 16px;margin:0 0 24px;font-style:italic;color:var(--text-secondary,#555);">
-  I ran the same eight query types through both tools rather than relying on impressions, and the pattern held every time: Perplexity wins the moment a question needs synthesis across sources, and loses the moment it needs freshness, location, or a specific website — know which kind of question you're asking before you pick a tool.
+  The comparison uses the same eight query types across both tools rather than relying on impressions, and the pattern held every time: Perplexity wins the moment a question needs synthesis across sources, and loses the moment it needs freshness, location, or a specific website — know which kind of question you're asking before you pick a tool.
   <footer style="font-style:normal;font-size:13px;margin-top:6px;color:var(--text-muted,#888);">— Navneet Arya, AI Nexus</footer>
 </blockquote>
 

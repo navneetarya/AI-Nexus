@@ -326,7 +326,7 @@ const post: BlogPost = {
 </ul>
 
 <h2>What to Look for Before You Buy</h2>
-<p>Before committing to any AI customer service agent, run these four checks during your trial or proof-of-concept:</p>
+<p>Before committing to any AI customer service agent, run these fthe comparisons during your trial or proof-of-concept:</p>
 <ol style="margin:10px 0 16px 24px;line-height:2.2;">
   <li><strong>Resolution rate on your query mix, not the vendor's benchmark.</strong> Every vendor publishes aggregate resolution rate figures from their best-performing customers. Request a pilot with your actual historical support tickets, or run a 30-day pilot on live traffic, and measure the rate yourself. A platform claiming 60% resolution rate in case studies may deliver 28% on your specific query distribution if your tickets are more complex than average.</li>
   <li><strong>Escalation context quality.</strong> When the AI cannot resolve a conversation and escalates to a human agent, what does the agent receive? The minimum acceptable handoff includes the full conversation transcript, the customer's account data, a summary of what the AI attempted, and suggested next steps. Platforms that pass a bare transcript without AI-generated context are adding friction, not reducing it.</li>

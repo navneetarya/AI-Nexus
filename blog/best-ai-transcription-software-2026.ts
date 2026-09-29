@@ -107,7 +107,7 @@ const post: BlogPost = {
 
 <h2>Best AI Transcription Software 2026: Five Different Jobs, One Search Term</h2>
 <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A microphone on a desk in front of a laptop, representing an audio recording being prepared for transcription" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
-<p>I'm Navneet Arya, and I run this site's independent tool research. "AI transcription software" is one of the more misleading search terms in this category, because it covers at least five genuinely different jobs, and most roundups compare tools as if they're interchangeable.</p>
+<p> and This site publishes independent tool research. "AI transcription software" is one of the more misleading search terms in this category, because it covers at least five genuinely different jobs, and most roundups compare tools as if they're interchangeable.</p>
 <p>A journalist with a backlog of interview recordings in three languages needs something different from a sales team that wants every Zoom call auto-logged into a CRM. A podcaster editing a two-hour episode needs something different again from a law firm that needs a transcript that can survive cross-examination.</p>
 <p>This guide compares five tools that each own a distinct piece of that landscape: Transkriptor (file and live-call transcription across 100+ languages), Otter.ai (live meeting notes), Descript (transcript-based audio/video editing), Fireflies.ai (CRM-connected meeting recording), and Rev (human-verified accuracy for compliance work). The right one depends on which job you actually have, not which tool has the highest star rating.</p>
 

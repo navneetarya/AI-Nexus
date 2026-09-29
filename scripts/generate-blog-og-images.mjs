@@ -206,6 +206,7 @@ const POSTS = [
   { slug: 'best-ai-seo-content-optimization-tools-2026', title: 'Best AI SEO Content Optimization Tools 2026' },
   { slug: 'best-ai-music-generator-tools-2026',            title: 'Best AI Music Generators 2026' },
   { slug: 'best-ai-website-builders-2026',               title: 'Best AI Website Builders 2026' },
+  { slug: 'launch-an-ai-built-website-2026',             title: 'How to Launch an AI-Built Website in 2026' },
   { slug: 'best-ai-receptionist-small-business-2026',    title: 'Best AI Receptionist for Small Business 2026' },
   { slug: 'best-ai-photo-upscaler-tools-2026',           title: 'Best AI Image Upscaler Tools 2026' },
   // ── Batch 1 — original 27 (already generated; re-running is safe) ──────────

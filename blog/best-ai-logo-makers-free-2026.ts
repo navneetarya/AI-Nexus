@@ -18,7 +18,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/best-ai-logo-makers-free-2026.webp',
   excerpt: 'The best free AI logo makers of 2026 — compared across design quality, customisation, and free plan limits. Now includes INR pricing and India-specific guidance for creators and freelancers.',
   quickAnswer: 'Canva AI is the best free AI logo maker for most people in 2026 — hundreds of templates, an AI design helper, and free PNG downloads with no credit card. For India, Canva accepts UPI for Pro at ₹499/month. Hatchful by Shopify is the best fully free option. Looka gives the highest design quality but charges to download, and Leonardo.ai suits original AI-generated logo art for ₹990/month.',
-  myTake: 'I ran the same five brief types through all four tools rather than relying on their marketing pages, and the real split isn\'t "which looks best" — it\'s free-to-design-but-paid-to-download (Looka) versus genuinely free end to end (Canva, Hatchful). For most Indian freelancers, that distinction matters more than any style preference.',
+  myTake: 'The comparison uses the same five brief types across all four tools rather than relying on marketing pages, and the real split isn\'t "which looks best" — it\'s free-to-design-but-paid-to-download (Looka) versus genuinely free end to end (Canva, Hatchful). For most Indian freelancers, that distinction matters more than any style preference.',
   faqs: [
     {
       q: 'What is the best free AI logo maker in 2026?',

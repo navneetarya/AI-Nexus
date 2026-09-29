@@ -61,7 +61,7 @@ const post: BlogPost = {
 
 <p>An estimated 93% of job seekers report real anxiety before an interview, and roughly 4 in 10 recent interview-integrity checks now flag some form of AI assistance. Both of those things are true about the same category of software: <strong>ai interview prep tools</strong>.</p>
 
-<p>I'm Navneet Arya. I spent this session checking pricing pages and Trustpilot data. I also checked something more important here than in most tool categories: what each tool is actually built for.</p>
+<p>This guide The research covered pricing pages and Trustpilot data. I also checked something more important here than in most tool categories: what each tool is actually built for.</p>
 <p>Some of these are rehearsal tools you use before the real thing. Others sit beside you during the actual interview and feed you answers in real time. Treating them as one category is where most "best AI interview prep tools" roundups go wrong.</p>
 
 <p>This guide compares Final Round AI, Yoodli, Big Interview, Pramp, and Huru on real 2026 pricing and independent review data. It also covers the part most guides skip: whether using each tool is something you'd want to disclose if asked. For the wider job-search AI toolkit beyond interview prep, see our roundup of <a href="/best-ai-productivity-tools/">best AI productivity tools</a>.</p>
@@ -231,7 +231,7 @@ const post: BlogPost = {
   <li><strong>Choose Huru</strong> if you're applying to many different roles and want practice questions matched to each specific posting on your phone.</li>
   <li><strong>Consider Final Round AI's mock-interview mode</strong> for practice, but weigh the live-Copilot feature's real employer-policy and billing risk carefully before subscribing for that reason alone.</li>
 </ol>
-<p>My own take after checking every pricing page and reading the complaint patterns directly: Yoodli is the tool I'd recommend to most job seekers first. It's cheap, honest about what it does, and the improvement is measurable rather than promised.</p>
+<p>Editorial verdict based on every pricing page and reading the complaint patterns directly: Yoodli is the tool I'd recommend to most job seekers first. It's cheap, honest about what it does, and the improvement is measurable rather than promised.</p>
 <p>Verify each platform's current pricing and refund terms directly before you subscribe to anything, whichever tool you land on.</p>
 `,
 

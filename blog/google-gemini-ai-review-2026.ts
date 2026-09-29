@@ -22,7 +22,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/google-gemini-ai-review-2026.webp',
   excerpt: 'Gemini 3.1 Pro launched recently and search interest is up 550%. The big question for writers: can Gemini replace ChatGPT — and maybe Grammarly too — for your daily writing workflow? After testing both tools across five real writing tasks, here is the honest answer.',
   quickAnswer: 'ChatGPT still writes more polished long-form prose than Gemini 3.1 Pro in 2026. Gemini wins for Google Docs and Gmail users, and for research-backed writing thanks to live Google Search grounding. Neither replaces Grammarly for editing. Pick Gemini if you live in Google Workspace; pick ChatGPT or Claude for standalone long-form content.',
-  myTake: 'I run both tools side by side every week, and Gemini earns its place for one reason: it never makes me leave Gmail or Docs. That workflow speed, not prose quality, is why it stays installed.',
+  myTake: 'A side-by-side workflow comparison shows, and Gemini earns its place for one reason: it never makes me leave Gmail or Docs. That workflow speed, not prose quality, is why it stays installed.',
   faqs: [
     {
       q: 'Is Google Gemini better than ChatGPT for writing in 2026?',

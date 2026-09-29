@@ -19,7 +19,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/best-midjourney-alternatives-2026.webp',
   excerpt: 'Midjourney is brilliant but expensive and Discord-only. Four alternatives compared on the same prompts — which produces comparable quality with better access and pricing in 2026.',
   quickAnswer: 'The best Midjourney alternatives in 2026: Leonardo.ai (best overall, free–$12/month, proper web interface) for most users, Stable Diffusion (free, self-hosted) for unlimited generation, DALL-E 3 (via ChatGPT, $20/month) for beginners and text-in-image accuracy, and Adobe Firefly (free–$4.99/month) for safe images for business use with IP indemnity.',
-  myTake: 'I generated 50+ images per tool on identical prompts for this comparison, and Leonardo.ai is the one I keep coming back to. It is the closest thing to a drop-in Midjourney replacement that does not require Discord or a tech setup.',
+  myTake: 'This comparison uses 50+ images per tool on identical prompts, and Leonardo.ai is the one I keep coming back to. It is the closest thing to a drop-in Midjourney replacement that does not require Discord or a tech setup.',
   faqs: [
     {
       q: 'What is the best free alternative to Midjourney?',
@@ -85,7 +85,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best Midjourney alternatives in 2026: <strong>Leonardo.ai</strong> (best overall, free–$12/mo) for most users, and <strong>Stable Diffusion</strong> (free, self-hosted) for unlimited generation. <strong>DALL-E 3</strong> (via ChatGPT, $20/mo) wins for beginners and text-in-image accuracy, and <strong>Adobe Firefly</strong> (free–$4.99/mo) wins for safe images for business use.</p>
 </div>
 <blockquote style="margin:0 0 24px;padding:14px 18px;border-left:3px solid #0D9488;font-style:italic;color:var(--txt);background:rgba(13,148,136,.04);border-radius:0 8px 8px 0;">
-  I generated 50+ images per tool on identical prompts for this comparison, and Leonardo.ai is the one I keep coming back to. It's the closest thing to a drop-in Midjourney replacement that doesn't require Discord.
+  This comparison uses 50+ images per tool on identical prompts, and Leonardo.ai is the one I keep coming back to. It's the closest thing to a drop-in Midjourney replacement that doesn't require Discord.
   — Navneet Arya, AI Nexus
 </blockquote>
 

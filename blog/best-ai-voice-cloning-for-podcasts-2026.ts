@@ -35,14 +35,14 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/best-ai-voice-cloning-for-podcasts-2026.webp',
   excerpt: 'Cloning your voice for a podcast only pays off for three specific jobs — consistent reads, fast flub fixes, and multi-language dubbing. ElevenLabs is the strongest starting point for all three.',
   quickAnswer: 'ElevenLabs is the best AI voice cloning tool for podcasters in 2026, building a usable clone from about one minute of audio and unlocking Professional Voice Cloning on its $22/month Creator tier (Instant Voice Cloning starts on the $6/month Starter tier). Descript\'s Overdub is the better pick if cloning just needs to fix a flubbed line inside a transcript-editing workflow you already use. Most podcasters only need cloning for a narrow job — a steady intro, a fast fix, or dubbing — not full-episode narration.',
-  myTake: "I'm Navneet Arya, and this guide starts from a different question than most cloning posts: not \"which tool clones best\" but \"does your show actually need this yet\". For most podcasts under 20 episodes, the honest answer is not yet — past that, ElevenLabs is where I'd start.",
+  myTake: "This guide starts from a different question than most cloning posts: not \"which tool clones best\" but \"does your show actually need this yet\". For most podcasts under 20 episodes, the honest answer is not yet — past that, ElevenLabs is where I'd start.",
 
   content: `
 <img src="https://images.unsplash.com/photo-1615661434109-739052a73003?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A studio microphone on a stand, used for recording a voice sample for podcast voice cloning" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Should you clone your own voice for your podcast? For most shows, the honest answer is: not yet, and maybe never. Voice cloning for podcasters only earns its cost for three specific jobs — a consistent scripted read, fixing a flub without a re-record, or dubbing an episode into another language. Everything else, your real voice does better and cheaper.</p>
 
-<p>I'm Navneet Arya, and this guide focuses specifically on the podcast use case, not a general tool shootout. For the broader cloning comparison across all four major tools, see our <a href="/blog/best-ai-voice-cloning-tools-2026/">best AI voice cloning tools guide</a>. For voice generation jobs beyond cloning specifically, see our <a href="/blog/best-ai-voice-generators-for-podcasts-2026/">AI voice generators for podcasts guide</a>.</p>
+<p>This guide focuses specifically on the podcast use case, not a general tool shootout. For the broader cloning comparison across all four major tools, see our <a href="/blog/best-ai-voice-cloning-tools-2026/">best AI voice cloning tools guide</a>. For voice generation jobs beyond cloning specifically, see our <a href="/blog/best-ai-voice-generators-for-podcasts-2026/">AI voice generators for podcasts guide</a>.</p>
 
 <h2>TL;DR: does your podcast need voice cloning?</h2>
 

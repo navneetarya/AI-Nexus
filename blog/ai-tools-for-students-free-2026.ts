@@ -23,7 +23,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/ai-tools-for-students-free-2026.webp',
   excerpt: 'The best free AI tools for students in 2026 are: Grammarly (free grammar and tone checker for essays — no credit card), QuillBot (free paraphrasing and summarisation tool), Perplexity (free AI search engine with cited sources for research), and Replit (free browser-based coding environment for CS assignments). All four have permanent free plans — not trials — that cover real student workloads without a subscription.',
   quickAnswer: 'The best free AI tools for students in 2026 are QuillBot (paraphrasing and summarising, permanent free plan), Grammarly (grammar and tone checking, unlimited free), Rytr (essay drafts and outlines, 10,000 characters/month free), Gamma (presentation slides, 400 free credits), and Replit (coding assignments, unlimited free projects). None require a credit card. Combined, they cover essays, research, presentations, and coding without a single paid subscription for most coursework.',
-  myTake: 'I checked whether each "free plan" was actually permanent or just a disguised trial before including it here. That distinction matters more than any feature comparison — a tool that expires before your next deadline isn\'t free, it\'s a countdown.',
+  myTake: 'The guide checks whether each "free plan" was actually permanent or just a disguised trial before including it here. That distinction matters more than any feature comparison — a tool that expires before your next deadline isn\'t free, it\'s a countdown.',
   faqs: [
     {
       q: 'What is the best free AI tool for students writing essays?',
@@ -88,7 +88,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Combined, they cover essays, research, presentations, and coding without a single paid subscription for most coursework.</p>
 </div>
 <blockquote style="border-left:3px solid #0D9488;padding:4px 0 4px 16px;margin:0 0 24px;font-style:italic;color:var(--text-secondary,#555);">
-  I checked whether each "free plan" was actually permanent or just a disguised trial before including it here. That distinction matters more than any feature comparison — a tool that expires before your next deadline isn't free, it's a countdown.
+  The guide checks whether each "free plan" was actually permanent or just a disguised trial before including it here. That distinction matters more than any feature comparison — a tool that expires before your next deadline isn't free, it's a countdown.
   <footer style="font-style:normal;font-size:13px;margin-top:6px;color:var(--text-muted,#888);">— Navneet Arya, AI Nexus</footer>
 </blockquote>
 

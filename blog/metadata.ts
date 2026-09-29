@@ -21,6 +21,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "launch-an-ai-built-website-2026",
+    "title": "How to Launch an AI-Built Website in 2026: Domain, Hosting, and SSL",
+    "seoTitle": "How to Launch an AI-Built Website in 2026",
+    "metaDescription": "A practical guide to choosing a domain, hosting, and SSL after an AI website builder creates your site. Current official pricing and setup trade-offs.",
+    "datePublished": "2026-09-29",
+    "dateModified": "2026-09-29",
+    "author": "Navneet Arya",
+    "category": "Design",
+    "readTime": "8 min read",
+    "ogImage": "https://ainexustools.online/og/blog/launch-an-ai-built-website-2026.webp",
+    "excerpt": "An AI builder can create the pages, but a real launch still needs a domain, hosting, HTTPS, email, and a renewal plan. This guide separates those decisions and compares the providers with current official information."
+  },
+  {
     "slug": "ai-voice-cloning-pricing-comparison-2026",
     "title": "AI Voice Cloning Pricing Compared 2026: ElevenLabs vs Murf vs Descript vs Resemble",
     "seoTitle": "AI Voice Cloning Pricing Compared 2026",
@@ -63,7 +76,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "best-gamma-alternatives-2026",
     "title": "Best Gamma AI Alternatives 2026 — Beautiful.ai vs Canva AI vs NotebookLM vs Pi",
     "seoTitle": "Best Gamma AI Alternatives 2026 — Compared",
-    "metaDescription": "Beautiful.ai, Canva AI, NotebookLM, and Pi compared as Gamma alternatives in 2026 — which wins on price, the free-tier watermark, and design consistency.",
+    "metaDescription": "Beautiful.ai, Canva AI, NotebookLM, and PThe comparison covers as Gamma alternatives in 2026 — which wins on price, the free-tier watermark, and design consistency.",
     "datePublished": "2026-09-22",
     "dateModified": "2026-09-22",
     "author": "Navneet Arya",
@@ -139,7 +152,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "elevenlabs-youtube-commercial-rights-2026",
-    "title": "Can I Use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)",
+    "title": "Can I use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)",
     "seoTitle": "ElevenLabs for YouTube: Commercial Rights Guide 2026",
     "metaDescription": "Can you monetize YouTube videos made with ElevenLabs? A plain yes/no breakdown by plan tier, plus what YouTube's AI disclosure policy requires for synthetic voiceovers.",
     "datePublished": "2026-09-10",
@@ -167,7 +180,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "gamma-ai-review-2026",
     "title": "Gamma AI Review 2026: Is It Worth $8/Month for Presentations?",
     "seoTitle": "Gamma AI Review 2026: Is It Worth $8/Month?",
-    "metaDescription": "Gamma AI reviewed for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai, Canva AI and Pi. Worth $8/month?",
+    "metaDescription": "Gamma AThe review covers for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai, Canva AI and Pi. Worth $8/month?",
     "datePublished": "2026-09-09",
     "dateModified": "2026-09-22",
     "author": "Navneet Arya",
@@ -219,7 +232,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "best-ai-voice-for-faceless-youtube-channels",
     "title": "Best AI Voice for Faceless YouTube Channels 2026: The Full Workflow",
     "seoTitle": "Best AI Voice for Faceless YouTube Channels 2026 (Guide)",
-    "metaDescription": "ElevenLabs vs Murf AI for faceless YouTube narration — cost, cloning quality, and export workflow compared, plus the settings I use to avoid the AI-voice tell.",
+    "metaDescription": "ElevenLabs vs Murf AI for faceless YouTube narration — cost, cloning quality, and export workflow compared, plus the commonly used settings to avoid the AI-voice tell.",
     "datePublished": "2026-08-17",
     "dateModified": "2026-09-10",
     "author": "Navneet Arya",
@@ -334,16 +347,16 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-ai-website-builders-2026",
-    "title": "Best AI Website Builders 2026 (Wix vs Framer vs Durable vs Hostinger vs 10Web)",
-    "seoTitle": "Best AI Website Builders 2026: 5 Tools Ranked",
-    "metaDescription": "Wix, Framer, Durable, Hostinger, and 10Web compared on real August 2026 pricing and ratings — the best ai website builder for your business, by use case.",
+    "title": "Best AI Website Builders 2026: 7 Tools Compared by Use Case",
+    "seoTitle": "Best AI Website Builders 2026: 7 Tools Compared",
+    "metaDescription": "Wix, Framer, Durable, Hostinger, 10Web, Readdy, and WordToSite compared by use case, pricing, and the type of site each builder can deliver.",
     "datePublished": "2026-08-08",
     "dateModified": "2026-09-21",
     "author": "Navneet Arya",
     "category": "Design",
     "readTime": "12 min read",
     "ogImage": "https://ainexustools.online/og/blog/best-ai-website-builders-2026.webp",
-    "excerpt": "Wix is the best all-around AI website builder for most small businesses, Framer wins on pure design quality, and Hostinger is the cheapest way to get a live site — though its promo price jumps hard at renewal."
+    "excerpt": "Wix is the broadest all-around choice, Framer wins on design-led sites, Readdy handles no-code business builds, and WordToSite is aimed at agencies and freelancers delivering client-ready WordPress sites."
   },
   {
     "slug": "best-ai-sales-tools-for-founders-2026",
@@ -401,7 +414,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "best-nano-banana-pro-alternatives-2026",
     "title": "Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)",
     "seoTitle": "Best Nano Banana Pro Alternatives 2026: Ranked",
-    "metaDescription": "Best Nano Banana Pro alternatives for 2026 — Midjourney, Leonardo AI, PhotoRoom, and Canva AI compared on pricing, quality, and free plans.",
+    "metaDescription": "Best Nano Banana Pro alternatives for 2026 — Midjourney, Leonardo AI, PhotoRoom, and Canva AThe comparison covers on pricing, quality, and free plans.",
     "datePublished": "2026-07-28",
     "dateModified": "2026-08-21",
     "author": "Navneet Arya",
@@ -739,7 +752,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "cursor-ai-review-2026",
     "title": "Cursor AI Review 2026: Is It the Best AI Code Editor?",
     "seoTitle": "Cursor AI Review 2026: Still Worth $20/mo?",
-    "metaDescription": "Cursor AI reviewed for 2026: pricing, free plan, Tab completion, Composer, and Agent mode compared against GitHub Copilot. Is it worth $20/month?",
+    "metaDescription": "Cursor AThe review covers for 2026: pricing, free plan, Tab completion, Composer, and Agent mode compared against GitHub Copilot. Is it worth $20/month?",
     "datePublished": "2026-05-25",
     "dateModified": "2026-08-23",
     "author": "Navneet Arya",
@@ -1051,7 +1064,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "best-invideo-alternatives-2026",
     "title": "Best InVideo AI Alternatives 2026 — Reviewed for Faceless YouTube",
     "seoTitle": "Best InVideo AI Alternatives 2026 — Compared",
-    "metaDescription": "Pictory, Opus Clip, and Murf AI compared as InVideo alternatives in 2026 — which wins for faceless YouTube, short-form clips, and video repurposing.",
+    "metaDescription": "Pictory, Opus Clip, and Murf AThe comparison covers as InVideo alternatives in 2026 — which wins for faceless YouTube, short-form clips, and video repurposing.",
     "datePublished": "2026-05-04",
     "dateModified": "2026-08-21",
     "author": "Navneet Arya",
@@ -1292,7 +1305,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "category": "Writing",
     "readTime": "11 min read",
     "ogImage": "https://ainexustools.online/og/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026.webp",
-    "excerpt": "Grok 4.3 launched April 30, 2026. GPT-5.5 launched April 23. Millions of content creators are asking the same question right now: which one should I use for my writing workflow? The short answer: Claude for quality-first long-form drafts, ChatGPT for versatile everyday content, and Grok 4 for real-time research-backed writing. Here is the full breakdown by use case."
+    "excerpt": "Grok 4.3 launched April 30, 2026. GPT-5.5 launched April 23. Millions of content creators are asking the same question right now: which one Should I use for my writing workflow? The short answer: Claude for quality-first long-form drafts, ChatGPT for versatile everyday content, and Grok 4 for real-time research-backed writing. Here is the full breakdown by use case."
   },
   {
     "slug": "google-gemini-ai-review-2026",
@@ -1324,7 +1337,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "perplexity-ai-review-2026",
     "title": "Perplexity AI Review 2026: Is It Worth It vs Google Search?",
     "seoTitle": "Perplexity AI Review 2026: Is It Worth It vs Google Search?",
-    "metaDescription": "Perplexity AI reviewed for 2026 — tested against Google Search on research and everyday queries. Is it worth $20/month? See the honest verdict.",
+    "metaDescription": "Perplexity AThe review covers for 2026 — tested against Google Search on research and everyday queries. Is it worth $20/month? See the honest verdict.",
     "datePublished": "2026-05-15",
     "dateModified": "2026-08-22",
     "author": "Navneet Arya",

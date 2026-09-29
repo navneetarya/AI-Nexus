@@ -14,7 +14,7 @@ const post: BlogPost = {
   slug: 'cursor-ai-review-2026',
   title: 'Cursor AI Review 2026: Is It the Best AI Code Editor?',
   seoTitle: 'Cursor AI Review 2026: Still Worth $20/mo?',
-  metaDescription: 'Cursor AI reviewed for 2026: pricing, free plan, Tab completion, Composer, and Agent mode compared against GitHub Copilot. Is it worth $20/month?',
+  metaDescription: 'Cursor AThe review covers for 2026: pricing, free plan, Tab completion, Composer, and Agent mode compared against GitHub Copilot. Is it worth $20/month?',
   datePublished: '2026-05-25',
   dateModified: '2026-08-23',
   author: 'Navneet Arya',

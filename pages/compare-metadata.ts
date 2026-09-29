@@ -148,7 +148,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
     "slug": "gamma-vs-beautiful-ai",
     "title": "Gamma vs Beautiful.ai (2026): Which AI Presentation Tool Should You Use?",
     "seoTitle": "Gamma vs Beautiful.ai 2026 — Compared",
-    "metaDescription": "Gamma vs Beautiful.ai compared for founders, students, and professionals. Free plans, AI generation speed, design quality, and which presentation tool wins in 2026.",
+    "metaDescription": "Gamma vs Beautiful.aThe comparison covers for founders, students, and professionals. Free plans, AI generation speed, design quality, and which presentation tool wins in 2026.",
     "keyword": "gamma vs beautiful ai",
     "publishDate": "May 2026",
     "winnerName": "Gamma"
@@ -193,7 +193,7 @@ export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
     "slug": "gemini-vs-perplexity",
     "title": "Google Gemini vs Perplexity AI (2026): Which AI Search Tool Should You Use?",
     "seoTitle": "Gemini vs Perplexity AI 2026 — Honest Comparison",
-    "metaDescription": "Google Gemini vs Perplexity AI compared for research, daily use, and Google Workspace. Free plan breakdown and honest verdict on which AI tool wins in 2026.",
+    "metaDescription": "Google Gemini vs Perplexity AThe comparison covers for research, daily use, and Google Workspace. Free plan breakdown and honest verdict on which AI tool wins in 2026.",
     "keyword": "gemini vs perplexity",
     "publishDate": "May 2026",
     "winnerName": "Perplexity AI"

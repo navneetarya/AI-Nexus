@@ -20,7 +20,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/jasper-ai-alternatives.webp',
   excerpt: "Jasper is powerful — but at $49/month it's one of the most expensive AI writing tools on the market. Every major alternative compared so you can get the same quality output for less.",
   quickAnswer: 'The best Jasper AI alternatives in 2026 are Writesonic ($19/mo) for long-form SEO blog posts, Rytr ($9/mo) for short-form copy, Copy.ai (free forever) for marketing copy on a budget, and Frase ($15/mo) for SEO research plus writing in one tool. All three undercut Jasper\'s $49/month Creator plan while matching its core output quality for solo writers.',
-  myTake: 'I switched most of my own short-form writing from Jasper to Rytr and haven\'t missed the $40/month difference — Jasper only earns its price back once you\'re actually using the team and brand-voice features, not just the writing engine.',
+  myTake: 'Switching short-form writing from Jasper to Rytr can and haven\'t missed the $40/month difference — Jasper only earns its price back once you\'re actually using the team and brand-voice features, not just the writing engine.',
   faqs: [
     {
       q: 'What is the best free alternative to Jasper AI?',

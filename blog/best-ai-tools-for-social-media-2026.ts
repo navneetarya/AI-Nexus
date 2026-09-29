@@ -63,7 +63,7 @@ const post: BlogPost = {
     ],
   },
   quickAnswer: 'Best AI tools for social media in 2026: Ocoya is the top all-in-one pick for caption writing plus scheduling. Opus Clip automatically turns long videos into short-form Reels and TikTok clips. Leonardo.ai generates original images with 150 free credits a day. InVideo AI builds faceless videos from a script, and Rytr is the fastest option for a quick caption draft.',
-  myTake: "Navneet's take: Ocoya is the tool I'd point most social media managers to first — folding caption writing and scheduling into one $15/month platform removes more weekly hours than any single-purpose tool on this list. For a solo creator on zero budget, Rytr plus Leonardo.ai gets you 90% of the way there for free.",
+  myTake: "Navneet's take: Ocoya is the tool is a strong choice for most social media managers to first — folding caption writing and scheduling into one $15/month platform removes more weekly hours than any single-purpose tool on this list. For a solo creator on zero budget, Rytr plus Leonardo.ai gets you 90% of the way there for free.",
   outboundCitations: [
     { url: 'https://www.ocoya.com/pricing', label: 'Ocoya — Official Pricing' },
     { url: 'https://www.opus.pro/pricing', label: 'Opus Clip — Official Pricing' },

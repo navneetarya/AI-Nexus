@@ -17,7 +17,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026.webp',
   excerpt: 'All three cost $20/month. All three promise to transform your workflow. But after running Perplexity Pro, ChatGPT Plus, and Claude Pro through the same five freelance tasks on the same day, it\'s clear they are not interchangeable. Here\'s which one wins for writing, research, editing, social media, and document summarisation — and the honest truth about which tier is actually worth paying for.',
   quickAnswer: 'No single $20/month AI wins every freelance task. Claude Pro writes the strongest first drafts and edits prose best. Perplexity Pro wins research tasks needing citations. ChatGPT Plus wins high-volume content like social captions. Pick based on which task eats most of your week, or combine a paid tier with the other two tools\' free plans.',
-  myTake: 'I run all three subscriptions myself, and the task-based split holds up in daily use: Claude for anything I\'m publishing under my own name, Perplexity the moment a client asks "where did that number come from."',
+  myTake: 'A task-based comparison shows, and the task-based split holds up in daily use: Claude for anything I\'m publishing under my own name, Perplexity the moment a client asks "where did that number come from."',
   faqs: [
     {
       q: 'Can I use Perplexity free instead of paying $20/month?',

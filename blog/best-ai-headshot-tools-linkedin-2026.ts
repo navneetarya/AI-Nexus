@@ -27,7 +27,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/best-ai-headshot-tools-linkedin-2026.webp',
   excerpt: 'The best AI headshot tools for LinkedIn in 2026 — compared across output quality, speed, pricing, and free plan availability. HeadshotPro leads, but the right pick depends on your budget and use case.',
   quickAnswer: 'HeadshotPro is the best AI headshot tool for LinkedIn in 2026 — $29 one-time for 120+ headshots in 1–2 hours, with a 4.8/5 Trustpilot score from 2,100+ reviews. Aragon AI ($29–$49) is the closest rival and wins for creative or lifestyle variety. If you need results in minutes rather than hours, Pose AI delivers in under 10 seconds. BetterPic ($39–$79) is the pick for premium 4K output. Try It On AI ($14.99) is the cheapest dedicated tool. Remini and Fotor AI have free tiers but noticeably lower headshot quality.',
-  myTake: 'I\'ve reviewed every tool in this comparison against the same input photos — HeadshotPro is the one I\'d actually send a friend for a job-search-ready LinkedIn photo. Aragon only pulls ahead if you want variety beyond formal corporate shots. On the "will people know it\'s AI" question below: with any of the top three tools here, in my research the honest answer is no, as long as your input photos are decent.',
+  myTake: 'This comparison uses the same input-photo basis for every tool; HeadshotPro is the strongest fit for a job-search-ready LinkedIn photo. Aragon only pulls ahead for greater variety beyond formal corporate shots.',
   faqs: [
     {
       q: 'What is the best AI headshot tool for LinkedIn in 2026?',

@@ -18,7 +18,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/is-grammarly-premium-worth-it-2026.webp',
   excerpt: 'Grammarly Premium is worth it for writers who send high-stakes communication daily — professionals writing client emails, reports, and proposals who need tone detection and full-sentence rewrites, not just error correction. For casual writers, the free plan is sufficient and the $12/month upgrade does not add enough to justify the cost.',
   quickAnswer: 'Grammarly Premium is worth $12/month if you write professionally every day and need tone detection, full-sentence rewrites, and a plagiarism checker. It is not worth it for casual writers or students who only need grammar and spelling caught — the free plan already covers that at zero cost.',
-  myTake: 'I kept my own Grammarly on the free plan for over a year and only upgraded once tone detection started catching client emails that read colder than I intended — that single feature is what earns the $12, not the extras around it.',
+  myTake: 'Grammarly becomes worth upgrading when tone detection catches client emails that read colder than intended; that feature matters more than the surrounding extras.',
   faqs: [
     {
       q: 'Is Grammarly Premium worth it in 2026?',

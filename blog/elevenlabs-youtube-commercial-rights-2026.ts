@@ -1,6 +1,6 @@
 // blog/elevenlabs-youtube-commercial-rights-2026.ts
 // Priority 3 (Item 10) — GA audit follow-up, Sep 2026
-// Target keyword: "can i use elevenlabs for youtube" / "elevenlabs commercial rights" — high buyer intent,
+// Target keyword: "Can I use elevenlabs for youtube" / "elevenlabs commercial rights" — high buyer intent,
 // direct yes/no question format matching actual search phrasing.
 // Secondary keywords: "elevenlabs youtube monetization", "elevenlabs commercial license", "ai voice
 // disclosure youtube", "elevenlabs terms of service youtube"
@@ -20,7 +20,7 @@ import { Category } from './types';
 
 const post: BlogPost = {
   slug: 'elevenlabs-youtube-commercial-rights-2026',
-  title: 'Can I Use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)',
+  title: 'Can I use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)',
   seoTitle: 'ElevenLabs for YouTube: Commercial Rights Guide 2026',
   metaDescription: 'Can you monetize YouTube videos made with ElevenLabs? A plain yes/no breakdown by plan tier, plus what YouTube\'s AI disclosure policy requires for synthetic voiceovers.',
   datePublished: '2026-09-10',
@@ -31,7 +31,7 @@ const post: BlogPost = {
   ogImage: 'https://ainexustools.online/og/blog/elevenlabs-youtube-commercial-rights-2026.webp',
   excerpt: 'Two separate rulebooks decide whether your ElevenLabs voiceover is safe to monetize: ElevenLabs\' own commercial license terms, and YouTube\'s AI content disclosure policy.',
   quickAnswer: 'Yes, you can use ElevenLabs for monetized YouTube videos — but only on a paid plan. The Free plan explicitly prohibits commercial use and requires attribution. Starter ($6/month) and above include full commercial rights. Separately, YouTube does not require an AI-disclosure label for a standard AI voiceover — disclosure is only mandatory if you clone a real, identifiable person\'s voice without it being obviously your own.',
-  myTake: "I'm Navneet Arya, and the thing that trips up most creators researching this isn't ElevenLabs' terms — it's that they conflate two completely separate questions: \"am I allowed to sell this?\" (ElevenLabs' license) and \"do I have to tell YouTube I used AI?\" (YouTube's disclosure policy). They have different answers, and getting either one wrong risks either a licensing dispute or a demonetized video.",
+  myTake: "The issue that trips up most creators researching this is not ElevenLabs' terms — it's that they conflate two completely separate questions: \"am I allowed to sell this?\" (ElevenLabs' license) and \"do I have to tell YouTube I used AI?\" (YouTube's disclosure policy). They have different answers, and getting either one wrong risks either a licensing dispute or a demonetized video.",
 
   content: `
 <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="YouTube Studio dashboard on a laptop screen, representing content monetization and policy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
