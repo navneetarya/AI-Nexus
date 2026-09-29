@@ -51,6 +51,15 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   spaceship: 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2F&utm_source=spaceship&utm_medium=affiliate', // domains
   'spaceship-email': 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2Fbusiness-email&utm_source=spaceship-email&utm_medium=affiliate', // Spacemail business email
   automattic: 'https://automattic.pxf.io/3k0mxk?utm_source=automattic&utm_medium=affiliate', // Impact — WordPress.com / Pressable hosting; Jetpack AI Assistant has its own tool page in constants.ts
+  // Added Sep 29 2026 — website-creation + domain/hosting/SSL programs (all Impact).
+  // No dedicated tool pages yet: Readdy + WordToSite target the website-builder posts;
+  // the four domain/hosting/SSL programs are meant for one combined "launch your site" article.
+  wordtosite: 'https://wordtosite.sjv.io/2R9k07?utm_source=wordtosite&utm_medium=affiliate',
+  readdy: 'https://interactivelinkpteltd.sjv.io/KB3KdN?utm_source=readdy&utm_medium=affiliate', // Interactive Link PTE. LTD. (readdy.ai)
+  bigrock: 'https://bigrock-in.sjv.io/3krA0M?utm_source=bigrock&utm_medium=affiliate',
+  'domain-com': 'https://domain.mno8.net/vDqz6v?utm_source=domain-com&utm_medium=affiliate', // mno8.net — now covered by scripts/check-affiliate-links.mjs
+  'network-solutions': 'https://network-solutions.7eer.net/yZQg63?utm_source=network-solutions&utm_medium=affiliate',
+  ssls: 'https://ssls.sjv.io/m4VRyM?utm_source=ssls&utm_medium=affiliate',
 };
 
 const TOOL_LINKS: Record<string, string> = Object.fromEntries(

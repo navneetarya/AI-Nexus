@@ -12,7 +12,7 @@
  * is a one-line edit instead of a site-wide find-and-replace.
  *
  * TWO SEVERITIES
- *   BLOCKING  — impact.com tracking domains (sjv.io, pxf.io, ojrq.net, …).
+ *   BLOCKING  — impact.com tracking domains (sjv.io, pxf.io, ojrq.net, mno8.net, 8odi.net, …).
  *               These are the newest programs and are 100% clean today, so
  *               any occurrence outside the allowed files fails the build.
  *   BASELINED — legacy `?via=` / `?fpr=` style referral URLs. ~230 of these
@@ -56,7 +56,7 @@ const PATTERNS = [
   {
     name: 'impact.com tracking link',
     blocking: true,
-    re: /https?:\/\/[^\s'"`)<]*\b(?:sjv\.io|pxf\.io|ojrq\.net|7eer\.net|evyy\.net|ojmp\.net|prf\.hn)\b[^\s'"`)<]*/gi,
+    re: /https?:\/\/[^\s'"`)<]*\b(?:sjv\.io|pxf\.io|ojrq\.net|7eer\.net|evyy\.net|ojmp\.net|prf\.hn|mno8\.net|8odi\.net)\b[^\s'"`)<]*/gi,
   },
   {
     name: 'referral query param (?via=)',
