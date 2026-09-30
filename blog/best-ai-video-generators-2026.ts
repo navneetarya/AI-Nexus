@@ -314,6 +314,10 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI →</a>
 </div>
+<p>For template-based business video rather than generated footage, <a href="/tools/renderforest/" style="color:rgb(13,148,136);">Renderforest</a> is the simpler option. You pick a template for an intro, explainer, slideshow or promo, add your text and media, and it assembles the video. The same account also includes a logo maker and a basic website builder. Free exports are 360p and watermarked, and paid pricing varies between listings, so check the price at checkout.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['renderforest']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Renderforest Free</a>
+</div>
 
 <div style="margin:14px 0 24px;">
   <a href="https://runwayml.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Runway →</a>

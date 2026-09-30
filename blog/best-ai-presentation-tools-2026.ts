@@ -334,6 +334,11 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
+<h3>Plan the deck first with a mind map: GitMind</h3>
+<p>AiPPT.com accepts a mind map as input, and many decks go better when you outline the structure first. <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> generates a mind map with AI from text, a file or a link, and supports real-time collaboration for group projects. The free plan allows up to 10 mind maps and 20 AI attempts. Check GitMind's site for current paid pricing.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GitMind Free</a>
+</div>
 
 <h2>ChatGPT for PowerPoint, Copilot &amp; Gemini: Best If You Want AI Inside Your Existing Tool</h2>
 <p>Every tool above generates a deck in its own separate app, which means an export step before your presentation lives in PowerPoint or Google Slides. A growing share of searches for this topic are actually looking for the opposite: AI that works inside the tool they already use.</p>

@@ -1306,6 +1306,21 @@ const TOOL_FAQS = {
 
 // ── Compare articles ──────────────────────────────────────────────────────────
 const COMPARE_ARTICLES = [
+  // —— Sep 30: SITE123 vs Wix. SITE123 is blog-only (no constants.ts tool page),
+  // Wix has no affiliate program — mirrors pages/compare-data.ts. ——
+  {
+    slug: 'site123-vs-wix',
+    title: 'SITE123 vs Wix (2026): Simple Builder or AI-Native Platform?',
+    seoTitle: 'SITE123 vs Wix 2026 — Which Should You Use?',
+    metaDescription: 'SITE123 vs Wix compared: pricing, free plans, AI generation, and e-commerce. SITE123 wins on price and simplicity; Wix wins on AI and growth room.',
+    faqs: [
+      { q: 'Is SITE123 an AI website builder?', a: 'No. Sources reviewed for this comparison could not verify any AI feature on SITE123 — it is a plain drag-and-drop builder: pick a template, add your content, and publish. Wix, by contrast, has an AI builder (Harmony) that generates a full draft site from a text prompt.' },
+      { q: 'Is SITE123 cheaper than Wix?', a: "Yes, by a wide margin at the entry tier. SITE123 Premium is $5.80/month with a free domain for the first year. Wix's cheapest ad-free plan, Light, is $17/month — nearly three times the price before any e-commerce or app-store add-ons." },
+      { q: 'Does SITE123 include a free domain?', a: "Yes — SITE123's Premium plan includes a free domain for the first year, based on its own pricing page. The free plan runs on a SITE123 subdomain only, with no custom domain option." },
+      { q: 'Is Wix better than SITE123 for an online store?', a: "Likely, though this comparison did not verify SITE123's store depth against Wix's. Wix's $29/month Core plan is a mature e-commerce platform with payment gateways, inventory, and marketing tools built out. SITE123 lists a 'Store' feature on its Premium plan, but check its own documentation before relying on it for a serious online store." },
+      { q: 'Which one should a total beginner choose?', a: "If the goal is the cheapest, simplest small site with the fewest decisions, choose SITE123 — there's no AI feature to configure and no app store to get lost in. If a beginner specifically wants AI to write and lay out the site for them, or expects to sell products later, Wix is worth the higher price from the start." },
+    ],
+  },
   // —— Sep 20: CREAO vs Flowith — Step D of Phase 1 affiliate plan. Both tools are
   // Impact affiliates with dedicated tool pages, so the slug resolves to real
   // TOOLS entries ('creao-ai', 'flowith') for compare Product schema. ——

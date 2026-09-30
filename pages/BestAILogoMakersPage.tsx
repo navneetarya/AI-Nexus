@@ -213,7 +213,7 @@ const LogoToolCard: React.FC<{ tool: Tool; navigate: (to: string) => void }> = (
         <a
           href={tool.affiliateLink}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored nofollow noopener noreferrer"
           style={{
             flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
             background: C.a1, color: '#fff', borderRadius: 8,

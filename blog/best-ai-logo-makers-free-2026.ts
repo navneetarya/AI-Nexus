@@ -4,6 +4,7 @@
 // Word count: ~1,800 words
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-logo-makers-free-2026',
@@ -213,6 +214,23 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> MVPs, side projects, and anyone who needs a logo in under 5 minutes for free</li>
 </ul>
 
+<h2>5. Renderforest: Best If You Also Need Video and a Website</h2>
+<p><strong>Free plan: low-res logo PNG (non-commercial) · Paid: from ~$9–13/month (varies by source)</strong></p>
+<p><a href="/tools/renderforest/" style="color:#0D9488;font-weight:600;">Renderforest</a> is not only a logo maker. The same account also covers an AI video maker, a mockup generator and a no-code website builder. You describe your business and style, it generates logo concepts, and you adjust the typography, colour and icon placement.</p>
+<p>The free plan lets you download a logo PNG, but it is low resolution and for non-commercial use only. Third-party listings disagree on paid pricing, so check the current price at checkout. Renderforest bills in USD, so Indian users will pay forex charges.</p>
+<ul style="margin:12px 0 12px 24px;line-height:2;">
+  <li><strong>Pros:</strong> Logo, intro video, mockups and a basic website under one login</li>
+  <li><strong>Cons:</strong> Free logo is low-res and non-commercial; dedicated logo tools like Looka and Canva give more polished results</li>
+  <li><strong>Best for:</strong> Small businesses that want the logo and a brand intro video from the same tool</li>
+</ul>
+
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['renderforest']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Renderforest Free</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
+
 <h2>India-Exact Guide: Which AI Logo Maker Should Indian Creators Use?</h2>
 <p>If you are based in India, the payment and pricing question matters as much as design quality. Here is the India-first decision tree:</p>
 <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Silver MacBook Air on a desk near an iMac, used to plan a logo maker decision tree for India" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -250,6 +268,7 @@ const post: BlogPost = {
   <li><strong>Best quality (paid):</strong> Looka, if you are willing to spend ₹1,650+, the design quality and brand kit output are unmatched</li>
   <li><strong>Most creative:</strong> Leonardo.ai, for unique AI-made brand marks, nothing else on this list comes close</li>
   <li><strong>Fastest and simplest:</strong> Hatchful, 5 minutes from brief to downloaded logo, fully free, no account needed</li>
+  <li><strong>Best all-in-one:</strong> Renderforest, if you want the logo, a brand video and a basic website from one account</li>
 </ol>
 <p>The recommended approach: start with Canva AI free. It is free, the learning curve is minimal, and you get a expert logo plus matching brand assets without spending anything.</p>
 <p>If you want a more unique mark, use Leonardo.ai to make the icon concept, then bring it into Canva for the final layout. That combination covers both quality and creativity at minimal cost.</p>

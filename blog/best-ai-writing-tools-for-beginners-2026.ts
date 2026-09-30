@@ -8,6 +8,7 @@
 // Word count: ~1,450 words
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-writing-tools-for-beginners-2026',
@@ -189,6 +190,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+<p><strong>Starting the blog itself:</strong> you need a domain, hosting and HTTPS. <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">WordPress.com</a> bundles hosting and SSL, and <a href="/tools/jetpack-ai-assistant/" style="color:rgb(13,148,136);">Jetpack AI Assistant</a> adds AI writing inside its editor. For the domain, <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">Spaceship</a> is one registrar option. Check the renewal price before you buy. See our <a href="/blog/launch-an-ai-built-website-2026/">website launch guide</a> for the full checklist.</p>
 <h2>The Recommended Stack for Beginners in 2026</h2>
 <p>Here's the exact stack worth starting with at a $0 budget:</p>
 <ol style="margin:12px 0 12px 24px;line-height:2.2;">

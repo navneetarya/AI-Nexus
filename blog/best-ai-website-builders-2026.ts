@@ -151,6 +151,11 @@ const post: BlogPost = {
 <div style="text-align:center;margin:20px 0">
   <a href="https://10web.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try 10Web →</a>
 </div>
+<p>If you want WordPress without running your own hosting, WordPress.com (from Automattic, the company behind WordPress.com and Jetpack) hosts the site for you. Pair it with <a href="/tools/jetpack-ai-assistant/" style="color:var(--a1);font-weight:600;">Jetpack AI Assistant</a> to draft and edit pages inside the WordPress editor. Jetpack AI has a free tier of 20 requests and costs $4.95/month billed yearly after that.</p>
+<div style="text-align:center;margin:20px 0">
+  <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See WordPress.com Plans</a>
+  <a href="${AFFILIATE_LINKS['jetpack-ai-assistant']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jetpack AI Free</a>
+</div>
 
 <h3>6. Wegic: fastest for chat-based site building</h3>
 <p><a href="/tools/wegic/" style="color:var(--a1);font-weight:600;">Wegic</a> takes a different approach from the five tools above: instead of a drag-and-drop editor, you build the site entirely by chatting with it. Describe the business, answer a few follow-up questions, and a responsive multi-page site comes back, usually within a minute.</p>
@@ -173,6 +178,14 @@ const post: BlogPost = {
 <p>Choose WordToSite for agency or freelancer sales demos and WordPress handoff workflows. It is a narrower fit than Wix or Readdy for someone who simply wants to maintain one personal site.</p>
 <div style="text-align:center;margin:20px 0">
   <a href="${AFFILIATE_LINKS['wordtosite']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try WordToSite Free →</a>
+</div>
+
+<h3>A simple, non-AI alternative: SITE123</h3>
+<p>Not everyone needs AI generation. SITE123 is a plain drag-and-drop website builder that suits a first personal or small-business site. You pick a layout, add your content, and publish.</p>
+<p>The free plan runs on a SITE123 subdomain with 250MB of storage and bandwidth. Premium is $5.80/month (checked on SITE123's own pricing page) and includes a domain free for the first year, 3GB storage and bandwidth, and removal of the SITE123 tag. All premium plans carry a 14-day money-back guarantee.</p>
+<p>Choose SITE123 when you want a simple site with few decisions to make. Skip it if you want AI to write the first draft for you. Wix, Durable and Wegic all do that — see our <a href="/compare/site123-vs-wix/" style="color:var(--a1);font-weight:600;">SITE123 vs Wix comparison</a> for the full price and feature breakdown.</p>
+<div style="text-align:center;margin:20px 0">
+  <a href="${AFFILIATE_LINKS['site123']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try SITE123 Free</a>
 </div>
 
 <h2>What the AI actually generates vs. what you still have to fix</h2>
@@ -243,6 +256,7 @@ const post: BlogPost = {
   <li><strong>Choose Hostinger</strong> if budget is the deciding factor, and calendar-remind yourself before the promo period ends.</li>
   <li><strong>Choose 10Web</strong> if WordPress compatibility is a hard requirement, not a nice-to-have.</li>
   <li><strong>Choose Wegic</strong> if you'd rather describe your site in a chat than touch an editor at all, and don't need e-commerce or pixel-level control.</li>
+  <li><strong>Choose SITE123</strong> if you don't need AI at all and just want a simple drag-and-drop site with a free first-year domain on paid plans.</li>
 </ol>
 <p>Editorial verdict based on every pricing page directly: Wix earns "best overall" honestly. But Hostinger's renewal jump from under $3 to nearly $11 a month is the one trap in this category that a headline price alone won't warn you about.</p>
 <p>Verify the renewal price before you commit a card, whichever tool you land on.</p>

@@ -3,6 +3,7 @@
 // Word count: ~1,250 words
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-tools-for-freelancers-2026',
@@ -231,6 +232,7 @@ const post: BlogPost = {
   <li>You spend too long on project planning → <strong>Taskade</strong></li>
   <li>You manage client social media → <strong>Ocoya</strong></li>
   <li>You build things and hit unfamiliar tech → <strong>Replit</strong></li>
+  <li>You retype receipts, bank PDFs or client data into spreadsheets → <strong><a href="${AFFILIATE_LINKS['popai-sheets']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">PopAi Sheets</a></strong> (free tier; spot-check extracted numbers)</li>
 </ul>
 <p>Use the free plan for 2–3 weeks. If it saves you more than 2–3 hours per week, the paid plan pays for itself. If it doesn't, move on. Not every tool fits every workflow.</p>
 

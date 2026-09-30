@@ -188,6 +188,13 @@ const post: BlogPost = {
   <li><strong>Run a plagiarism check:</strong> Use <a href="/tools/grammarly/" style="color:var(--a1);font-weight:600;">Grammarly's</a> plagiarism checker (free with Grammarly Basic) or Copyscape. AI-generated content rarely plagiarises verbatim, but it's a good habit before publishing.</li>
 </ul>
 
+<h3>Where to publish: domain, hosting and SSL</h3>
+<p>If you don't have a blog yet, you need three things: a domain, somewhere to host the blog, and HTTPS. <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">WordPress.com</a> covers hosting and SSL in one account, so you can paste your edited Rytr draft straight into the WordPress editor. Buy the domain from a registrar such as <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">Spaceship</a>, and check the renewal price, not just the first-year price. Most blog hosts include SSL, so you rarely need to buy a certificate separately. Our <a href="/blog/launch-an-ai-built-website-2026/">website launch guide</a> covers each decision in detail.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See WordPress.com Plans</a>
+  <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Check a Domain</a>
+</div>
+
 <h2>The Full Time Breakdown</h2>
 <p>Here's the realistic time investment for a 1,000-word blog post using this workflow:</p>
 <ul style="margin:8px 0 14px 24px;line-height:2.4;">

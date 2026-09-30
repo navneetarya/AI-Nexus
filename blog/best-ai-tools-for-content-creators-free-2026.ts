@@ -6,6 +6,7 @@
 // Structure: Quick Answer → comparison table → per-tool sections (300w each) → FAQ schema
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-tools-for-content-creators-free-2026',
@@ -253,6 +254,10 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+<p><strong>Need short video clips too?</strong> <a href="${AFFILIATE_LINKS['pixverse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">PixVerse</a> turns a prompt or image into a short, stylized clip for Reels or TikTok. Its free plan gives daily credits with watermarked output, and paid plans start at $10/month.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['pixverse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PixVerse Free</a>
+</div>
 <h2>How to Build Your Free AI Content Creator Stack</h2>
 <p>You don't need to pay for AI tools to start. Here's a handy free stack based on content type:</p>
 

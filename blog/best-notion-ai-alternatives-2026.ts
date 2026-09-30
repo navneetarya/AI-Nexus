@@ -5,6 +5,7 @@
 // Word count: ~1,600 words
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-notion-ai-alternatives-2026',
@@ -160,6 +161,10 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
+<p><strong>If brainstorming is your main Notion use:</strong> <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> is a dedicated AI mind-map tool. It builds a mind map from text, a file or a link, and several people can edit it at once. The free plan covers up to 10 mind maps and 20 AI attempts, which is enough to test it before paying.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GitMind Free</a>
+</div>
 <h2>#2 Writesonic: Best for Content Creators Who Write in Notion</h2>
 <p>If you use Notion mainly as a writing workspace — drafting blog posts, building content calendars, writing newsletters — Writesonic is a better investment than Notion AI. Notion AI edits what you've already written.</p>
 <p>Writesonic writes full articles and SEO-structured content. Every paid tier also includes Chatsonic, an AI chatbot with real-time web access.</p>

@@ -10,6 +10,15 @@ export interface CompareArticleMeta {
 
 export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
+    "slug": "site123-vs-wix",
+    "title": "SITE123 vs Wix (2026): Simple Builder or AI-Native Platform?",
+    "seoTitle": "SITE123 vs Wix 2026 — Which Should You Use?",
+    "metaDescription": "SITE123 vs Wix compared: pricing, free plans, AI generation, and e-commerce. SITE123 wins on price and simplicity; Wix wins on AI and growth room.",
+    "keyword": "site123 vs wix",
+    "publishDate": "September 2026",
+    "winnerName": "SITE123"
+  },
+  {
     "slug": "wegic-vs-alf-website-studio",
     "title": "Wegic vs Alf Website Studio (2026): Which Chat-Built Site Should You Use?",
     "seoTitle": "Wegic vs Alf Website Studio 2026 — Compared",

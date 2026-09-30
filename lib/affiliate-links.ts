@@ -39,7 +39,7 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   tidio: 'https://www.tidio.com/?via=ainexus',
   juicebox: 'https://juicebox.ai/?via=c6add3',
   vidiq: 'https://vidiq.com?via=ainexus',
-  appsumo: 'https://appsumo.com/', // Marketplace link; no dedicated tool page
+  appsumo: 'https://appsumo.8odi.net/2R0DB7?utm_source=appsumo&utm_medium=affiliate', // Impact — marketplace link; no dedicated tool page
   pixverse: 'https://motivaiprivatelimited.sjv.io/0GKm6Y?utm_source=pixverse&utm_medium=affiliate', // Impact — added Sep 2026, no dedicated tool page yet
   // Spaceship (Impact) — deep-linked with the standard ?u={encoded landing page} pattern so each
   // mention lands on the actual product page rather than the generic homepage. CAVEAT: this only
@@ -60,6 +60,10 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   'domain-com': 'https://domain.mno8.net/vDqz6v?utm_source=domain-com&utm_medium=affiliate', // mno8.net — now covered by scripts/check-affiliate-links.mjs
   'network-solutions': 'https://network-solutions.7eer.net/yZQg63?utm_source=network-solutions&utm_medium=affiliate',
   ssls: 'https://ssls.sjv.io/m4VRyM?utm_source=ssls&utm_medium=affiliate',
+  // Added Sep 30 2026 (Impact). SITE123 is positioned as a simple drag-and-drop builder, not an AI builder.
+  site123: 'https://site123ltd.sjv.io/enPqkZ?utm_source=site123&utm_medium=affiliate',
+  gitmind: 'https://gitmindcom.sjv.io/2R0Vqa?utm_source=gitmind&utm_medium=affiliate',
+  // Renderforest has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['renderforest']).
 };
 
 const TOOL_LINKS: Record<string, string> = Object.fromEntries(

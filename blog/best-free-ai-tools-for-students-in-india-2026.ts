@@ -258,6 +258,10 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+<p><strong>For revision mind maps:</strong> <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> turns your notes, a PDF chapter or a link into an AI mind map, and your study group can edit it together. The free plan allows up to 10 mind maps and 20 AI attempts, which is enough for one subject's revision.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GitMind Free</a>
+</div>
 <h2>The Zero-Cost Student Stack for India: How to Build It</h2>
 <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for The Zero-Cost Student Stack for India: How to Build It" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>You can have a fully functional AI-powered study setup in India at ₹0/month. Here is the exact order to build it:</p>
@@ -268,6 +272,11 @@ const post: BlogPost = {
   <li><strong>Before your next presentation: Sign up for Gamma.</strong> Use the 400 free credits on your most important presentation of the semester. You will never make slides manually again.</li>
   <li><strong>Before exam season: Set up Taskade.</strong> Create a new project for each subject, use the AI generator to build a revision task list from your syllabus, and track progress in the kanban view.</li>
 </ul>
+<p><strong>Want a portfolio site for internships?</strong> A simple site with your projects and CV helps on applications. <a href="${AFFILIATE_LINKS['site123']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">SITE123</a> has a free plan on a SITE123 subdomain. When you want your own name.in or name.com domain, <a href="${AFFILIATE_LINKS['bigrock']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">BigRock</a> shows domain prices in rupees. Most site builders and hosts include SSL, so don't buy a separate certificate unless yours doesn't. Our <a href="/blog/launch-an-ai-built-website-2026/">website launch guide</a> explains the domain, hosting and SSL steps.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['site123']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try SITE123 Free</a>
+  <a href="${AFFILIATE_LINKS['bigrock']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Check a .in Domain</a>
+</div>
 
 <h2>Frequently Asked: GST on Paid AI Tool Plans</h2>
 <p>If you upgrade any of these tools to a paid plan, 18% GST is typically added at checkout for Indian billing addresses. Budget approximately 18% above the listed price.</p>

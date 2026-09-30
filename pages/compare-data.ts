@@ -72,6 +72,101 @@ export interface CompareRow {
 
 export const COMPARE_ARTICLES: CompareArticle[] = [
 
+  // ── site123-vs-wix ───────────────────────────────────────────────────────
+  // SITE123 is blog-only (SUPPLEMENTARY_LINKS['site123'] in lib/affiliate-links.ts) —
+  // no dedicated tool page, so winnerSlug='site123' hides the "Full review" button
+  // (see pages/CompareArticlePage.tsx winnerHasToolPage check). Wix has no affiliate
+  // program as of this write-up, so its pricing row has no affiliateLink.
+  // SITE123 pricing checked live on site123.com/pricing 2026-09-30. Wix pricing matches
+  // the already-published figures in blog/best-ai-website-builders-2026.ts (checked Aug 2026).
+  {
+    slug: 'site123-vs-wix',
+    title: 'SITE123 vs Wix (2026): Simple Builder or AI-Native Platform?',
+    seoTitle: 'SITE123 vs Wix 2026 — Which Should You Use?',
+    metaDescription: 'SITE123 vs Wix compared: pricing, free plans, AI generation, and e-commerce. SITE123 wins on price and simplicity; Wix wins on AI and growth room.',
+    keyword: 'site123 vs wix',
+    publishDate: 'September 2026',
+    lastUpdated: '2026-09-30',
+    quickAnswer: 'SITE123 is the simpler, cheaper pick for a first small site — Premium is $5.80/month with a free domain for the first year, and it makes no AI claims at all. Wix is the more capable platform: its Harmony AI builder drafts a full site from a prompt, e-commerce unlocks on the $29/month Core plan, and a large app store extends it well past a basic brochure site. Choose SITE123 for the cheapest, simplest way to get a small site live with no AI involved. Choose Wix if you want an AI-generated first draft, an online store, or room to grow the site later.',
+    intro: `SITE123 isn't trying to out-feature Wix. It makes no AI claims at all — its pitch is picking a template, dropping in your content, and publishing, without weighing a dozen apps and add-ons first. Wix does the opposite: an AI builder that drafts a full site from a prompt, a large app store, and enough depth to run a real online store.
+
+Pricing below was checked directly on site123.com/pricing on 2026-09-30. Wix figures match the already-published pricing in our <a href="/blog/best-ai-website-builders-2026/" style="color:var(--a1);font-weight:600;">Best AI Website Builders 2026</a> guide, checked against Wix's own pricing page in August 2026. Confirm current prices at checkout before buying either — both vendors adjust pricing and promotions without much notice.`,
+    sections: [
+      {
+        heading: 'The real difference: a plain builder vs an AI-native platform',
+        content: `SITE123 has one job: get a small site online fast, without asking you to choose a design system, connect a page builder to a theme, or decide whether you need an app for bookings. You pick a template, add your pages, and publish. There is no AI copywriting, no AI image generation, and no AI layout assistance anywhere in the product — sources agree on this, so don't expect one to appear.
+
+Wix is built around the opposite bet: that most people would rather describe what they want and have an AI produce a working first draft. Its Harmony AI builder takes a text prompt and returns a multi-page site in about five minutes, which you then edit in Wix's drag-and-drop editor. Wix also carries a large app store, booking tools, and full e-commerce — categories SITE123 doesn't compete in at all.
+
+If your test is "get five pages live for the least money and the least decision-making," SITE123 wins outright. If your test is "generate a first draft with AI, then grow into a store or booking system later," Wix is the only one of the two built for that.`,
+      },
+      {
+        heading: 'SITE123 — pick a template, add content, publish',
+        content: `SITE123's free plan runs on a SITE123 subdomain with 250MB of storage and 250MB of bandwidth — enough to test the editor and publish a small site, not enough for a growing one. There is no custom domain and no store on the free tier.
+
+The Premium plan is $5.80/month (SITE123's own pricing page lists it as the "Most Popular" tier) and includes a free domain for the first year, 3GB of storage and bandwidth, removal of the SITE123 floating tag, the ability to connect your own domain, and store functionality. All premium plans carry a 14-day money-back guarantee.
+
+**What SITE123 doesn't do:** generate copy, images, or layout with AI. Sources reviewed for this comparison could not verify any AI feature on the platform, so this guide doesn't call it one — treat any "AI" claim about SITE123 you see elsewhere with suspicion until you can verify it on SITE123's own site.
+
+**Who it's for:** anyone who wants the cheapest, simplest way to get a small business, portfolio, or personal site live, and doesn't want to make design or app-store decisions along the way.`,
+      },
+      {
+        heading: 'Wix — an AI first draft, e-commerce, and a large app store',
+        content: `Wix's free plan gives a real AI-generated site, but it carries Wix branding, a Wix subdomain, and no e-commerce. Its Harmony AI builder blends a natural-language prompt with the classic drag-and-drop editor — in independent testing, a first draft took about five minutes to generate.
+
+Paid pricing starts at $17/month for the ad-free Light plan (annual billing). E-commerce unlocks on the $29/month Core plan, with advanced automation on the $36/month Business plan and a $159/month Business Elite tier above that. Wix's Trustpilot rating sits at 3.5/5 across 29,000+ reviews — the largest independent review base of any tool in this comparison, though the score itself is middling.
+
+**What Wix doesn't do well:** page speed. Wix generates dynamic pages that can take 4–6 seconds to load, noticeably slower than a static-HTML builder like SITE123's output — worth knowing if search ranking depends on page speed for your site.
+
+**Who it's for:** anyone who wants an AI-generated first draft, plans to sell products, or wants a large app store to add booking, membership, or marketing tools later.`,
+      },
+      {
+        heading: 'Price test: what a small site actually costs to launch',
+        content: `For a simple 5-page site with a custom domain and no store: SITE123 Premium at $5.80/month, with the domain free for the first year, is the cheapest path to a live, de-branded site of the two. Wix's cheapest ad-free tier is Light at $17/month — nearly three times the price for the equivalent starting point, before any app-store add-ons.
+
+For a site that needs to sell products: Wix's $29/month Core plan is the realistic starting price. SITE123's Premium plan lists "Store" as an included feature, but this comparison did not verify SITE123's e-commerce depth (payment gateways, inventory limits, tax handling) against Wix's, so don't assume parity — check SITE123's own store documentation before committing to it for a serious online store.
+
+Neither vendor's headline price is guaranteed to hold at renewal. Check the renewal price on both pricing pages, not just the promotional first-term price, before you commit a card.`,
+      },
+    ],
+    verdict: `For the reader this comparison is really written for — someone who wants a small site online at the lowest possible cost, with the fewest decisions along the way — SITE123 is the better pick. $5.80/month with a free first-year domain is hard to beat, and not having AI features to configure or second-guess is a genuine simplicity advantage for a first site.
+
+Wix is the better tool the moment your needs grow past a brochure site: an AI-generated first draft, real e-commerce, booking tools, or a large app store to extend the site later. That capability costs roughly three times SITE123's entry price, and the trade-off is slower page loads on Wix's dynamic pages.
+
+The simple test: if you can describe your site in one sentence and just need it live cheaply, use SITE123. If you want AI to draft it for you, or you expect to sell something on it eventually, use Wix and budget for the higher price from the start.`,
+    comparisonTable: [
+      { name: 'SITE123', price: 'Free–$5.80/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'None — plain drag-and-drop builder', platforms: 'Web', bestFor: 'Cheapest, simplest small site', ourPick: true },
+      { name: 'Wix', price: 'Free–$159/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Harmony AI — full site from a prompt', platforms: 'Web', bestFor: 'AI draft, e-commerce & app store', ourPick: false },
+    ],
+    winnerSlug: 'site123',
+    winnerName: 'SITE123',
+    winnerAffiliateLink: AFFILIATE_LINKS['site123'],
+    winnerAffiliateText: 'Try SITE123 Free',
+    pricing: {
+      tools: [
+        { name: 'SITE123', free: true, startingPrice: '$0', paidFrom: '$5.80/mo', bestPlanFor: 'Cheapest way to a live, de-branded small site', affiliateLink: AFFILIATE_LINKS['site123'] },
+        { name: 'Wix', free: true, startingPrice: '$0', paidFrom: '$17/mo', bestPlanFor: 'AI-generated first draft, e-commerce & app store' },
+      ],
+    },
+    faqs: [
+      { q: 'Is SITE123 an AI website builder?', a: 'No. Sources reviewed for this comparison could not verify any AI feature on SITE123 — it is a plain drag-and-drop builder: pick a template, add your content, and publish. Wix, by contrast, has an AI builder (Harmony) that generates a full draft site from a text prompt.' },
+      { q: 'Is SITE123 cheaper than Wix?', a: "Yes, by a wide margin at the entry tier. SITE123 Premium is $5.80/month with a free domain for the first year. Wix's cheapest ad-free plan, Light, is $17/month — nearly three times the price before any e-commerce or app-store add-ons." },
+      { q: 'Does SITE123 include a free domain?', a: "Yes — SITE123's Premium plan includes a free domain for the first year, based on its own pricing page. The free plan runs on a SITE123 subdomain only, with no custom domain option." },
+      { q: 'Is Wix better than SITE123 for an online store?', a: "Likely, though this comparison did not verify SITE123's store depth against Wix's. Wix's $29/month Core plan is a mature e-commerce platform with payment gateways, inventory, and marketing tools built out. SITE123 lists a 'Store' feature on its Premium plan, but check its own documentation before relying on it for a serious online store." },
+      { q: 'Which one should a total beginner choose?', a: "If the goal is the cheapest, simplest small site with the fewest decisions, choose SITE123 — there's no AI feature to configure and no app store to get lost in. If a beginner specifically wants AI to write and lay out the site for them, or expects to sell products later, Wix is worth the higher price from the start." },
+    ],
+    featureRows: [
+      { feature: 'Free plan',        toolA: 'Yes (subdomain, 250MB)',      toolB: 'Yes (subdomain, ads shown)', winner: 'tie' },
+      { feature: 'Paid pricing',     toolA: 'From $5.80/mo',               toolB: 'From $17/mo',               winner: 'A' },
+      { feature: 'Free domain',      toolA: 'Yes (1st year, Premium)',     toolB: 'No (separate purchase)',    winner: 'A' },
+      { feature: 'AI generation',    toolA: 'None',                        toolB: 'Yes (Harmony AI)',          winner: 'B' },
+      { feature: 'E-commerce',       toolA: 'Listed on Premium (unverified depth)', toolB: 'Mature (from $29/mo)', winner: 'B' },
+      { feature: 'App ecosystem',    toolA: 'None',                        toolB: 'Large app store',           winner: 'B' },
+      { feature: 'Page speed',       toolA: 'Static, faster',              toolB: 'Dynamic, 4–6s reported',    winner: 'A' },
+      { feature: 'Best for',         toolA: 'Cheapest simple site',        toolB: 'AI draft & growth room',    winner: 'tie' },
+    ],
+  },
+
   // ── creao-ai-vs-flowith ──────────────────────────────────────────────────
   // Step D (Phase 1 affiliate plan) — both tools are Impact affiliates and both
   // have dedicated tool pages (constants.ts: 'creao-ai', 'flowith'). Links go

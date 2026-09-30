@@ -224,6 +224,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
+<p><strong>Planning a new offer or client project?</strong> Taskade's mind-map view covers basic brainstorming. For a dedicated tool, <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> turns a pasted brief, file or link into an AI mind map you can share with a client. The free plan allows up to 10 mind maps and 20 AI attempts.</p>
 
 <h2>3. AI Research & Fact-Checking: Perplexity</h2>
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3. AI Research & Fact-Checking: Perplexity" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -299,6 +300,10 @@ const post: BlogPost = {
 <p><a href="https://n8n.io/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try n8n Free →</a></p>
 <p><strong>India pricing note:</strong> About ₹750/month for the Core plan at current exchange rates; no India-specific discount is currently offered.</p>
 <p><strong>Best for:</strong> Solopreneurs who have already validated 2–3 manual, repetitive cross-tool tasks worth automating. It's not a starting-point tool, but the highest-leverage addition once the rest of the stack is in place.</p>
+<p><strong>If a task has no ready-made integration:</strong> <a href="/tools/creao-ai/" style="color:rgb(13,148,136);">CREAO</a> lets you describe the job in plain language, runs the code for you, and saves it as an agent you can re-run or schedule. It has a free plan with no card required. It is early-stage, so keep business-critical workflows on Make.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['creao-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try CREAO Free</a>
+</div>
 <div style="margin:14px 0 24px;">
   <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com Free →</a>
 </div>
@@ -311,6 +316,9 @@ const post: BlogPost = {
 <p>Wave, FreshBooks, and Bonsai each include incremental AI features for expense categorisation and recurring invoice generation. None currently offers an AI capability strong enough to be the deciding factor over the others. The choice still comes down to invoicing workflow, payment processor support, and price.</p>
 <p>The practical recommendation for a solopreneur in 2026: pick an invoicing tool based on its core features and your local payment rails. Razorpay or UPI integration matters more for Indian solopreneurs than any AI feature. Treat AI bookkeeping as a convenience layer, not a primary selection criterion.</p>
 <p>This is also the one function where a general-purpose AI assistant, Claude or ChatGPT, really helps in the meantime. Pasting a month of transaction descriptions and asking for expense categorisation by hand works well enough as a free stopgap, before a dedicated tool earns its price. If your actual bottleneck is getting numbers out of receipts, bank PDFs, or a messy expense CSV in the first place, <a href="/tools/popai-sheets/" style="color:rgb(13,148,136);">PopAi Sheets</a> is built specifically for that extraction step, not for invoicing itself — just spot-check anything it pulls from a document before it goes into a return.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['popai-sheets']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PopAi Sheets Free</a>
+</div>
 
 <img src="https://images.unsplash.com/photo-1743385779347-1549dabf1320?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A workflow diagram showing how a solopreneur's bookkeeping and invoicing tools connect together" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 

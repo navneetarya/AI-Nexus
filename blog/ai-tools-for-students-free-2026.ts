@@ -226,6 +226,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 <p><strong>If you'd rather skip the watermark entirely:</strong> <a href="${AFFILIATE_LINKS['presentation-intelligence']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">Pi (Presentation Intelligence)</a> has a forever-free plan that exports with no watermark, unlike Gamma's free tier. It has fewer credits per month and a much smaller review base than Gamma, so it's a solid free backup for a submission-ready deck rather than a full swap.</p>
+<p><strong>Outline before you build slides:</strong> <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> turns lecture notes, a PDF or a link into an AI mind map that a project group can edit together. The free plan allows up to 10 mind maps and 20 AI attempts.</p>
 <h2>5. Replit — Best for Coding Assignments & Debugging</h2>
 <img src="https://images.unsplash.com/photo-1758270705317-3ef6142d306f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A student team discussing a project on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Category: Coding · Free Plan: Unlimited projects + AI assist · Paid: from $25/month · <a href="/tools/replit/" style="color:var(--a1);font-weight:600;">Full Replit Review →</a></strong></p>

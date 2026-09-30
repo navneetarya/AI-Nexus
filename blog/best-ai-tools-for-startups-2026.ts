@@ -169,6 +169,10 @@ const post: BlogPost = {
 <p>Whichever site tool you use, you'll still need a <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer">domain</a> and a <a href="${AFFILIATE_LINKS['spaceship-email']}" target="_blank" rel="sponsored nofollow noopener noreferrer">business email</a> that matches it rather than a personal Gmail address — Spaceship covers both. Our <a href="/blog/launch-an-ai-built-website-2026/">AI-built website launch guide</a> explains the domain, hosting, and SSL decisions separately. If you'd rather skip the site builder entirely, WordPress.com hosting from <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Automattic</a> is a common fallback for founders who already know WordPress.</p>
 
 <h2>How to Roll Out an AI Stack Without Wasting a Subscription</h2>
+<p><strong>For repeatable ops work:</strong> <a href="/tools/creao-ai/" style="color:var(--a1);font-weight:600;">CREAO</a> turns a plain-language task, such as a weekly competitor price table or a metrics report, into a saved agent that runs on a schedule. The free plan needs no card, and Pro is $20/month. Its review base is still small, so test it on low-risk tasks first.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['creao-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try CREAO Free</a>
+</div>
 <p>Most startups overbuy AI tools in month one and use a fraction of what they pay for. A better sequence:</p>
 <ol style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Pick your single biggest bottleneck first.</strong> If it's investor communication, start with Claude. If it's getting a deck ready for a demo day, start with Gamma.</li>
