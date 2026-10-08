@@ -6,6 +6,7 @@
 //                 /compare/taskade-vs-notion, /blog/best-ai-tools-in-india-2026
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-tools-for-freelancers-india-2026',
@@ -212,6 +213,15 @@ const post: BlogPost = {
   <li><strong>Project management:</strong> Taskade free, covers 1–3 clients comfortably</li>
 </ol>
 <p>Total monthly cost to start: ₹0. Total monthly cost at full stack: ₹1,948/month. That's the equivalent of one mid-tier Fiverr order recovered in AI productivity savings.</p>
+<h3>Beyond the AI stack: mobile data when client work takes you abroad</h3>
+<p>One cost sits outside the stack above and is not included in those totals: mobile data when a client meeting, conference or work trip takes you abroad. Esimatic is a prepaid travel eSIM app that, according to its official site, covers 200+ countries, installs by QR code or in-app, allows hotspot sharing for laptop work, and describes its plans as having no hidden fees or roaming charges. Its site also says activation involves no KYC process and lists longer-validity plans of up to 180 days.</p>
+<p>It needs an eSIM-compatible phone, so check your handset against Esimatic's compatible-device list before buying, and compare the plan for your exact destination because coverage and pricing vary by country.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['esimatic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Check Esimatic plans →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 <p>For more India-specific AI tool recommendations, see: <a href="/blog/best-ai-tools-in-india-2026/" style="color:#0D9488;font-weight:600;">Best AI Tools in India 2026: Full Guide</a></p>
   `.trim(),
 };

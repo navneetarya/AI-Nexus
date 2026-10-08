@@ -1351,6 +1351,75 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
     relatedBlogSlugs: ['best-ai-presentation-tools-2026'],
     rating: 3.9, lastTested: "September 2026", lastTestedISO: "2026-09-25", datePublished: "2026-09-25", timeUsed: "Researched Sep 2026",
   },
+  'presentation-intelligence': {
+    whatIs: "Presentation Intelligence, branded Pi and hosted at pi.inc, is an AI presentation generator that turns a prompt, PDF, Word file, PowerPoint, webpage or image into a fully designed slide deck. Its Design Engine generates content and layout together rather than pouring AI text into a fixed template. A free plan and a $9.90 per month Basic plan are published.",
+    whoIsItFor: "People who already have source material, such as a report, PDF, webpage or rough notes, and want a designed first-draft deck quickly. It suits freelancers, students and small teams who want a free tier without a watermark and do not need enterprise controls.",
+    whoShouldSkip: "Teams that need SSO, admin controls or a published security and compliance package, because Pi lists only a Free and a Basic plan with no public enterprise tier. Also skip it if you want a large, independently verified review base before buying: Pi is a newer entrant than Gamma or Beautiful.ai, and public third-party coverage is still small.",
+    myTake: "This review draws on Pi's published pricing and product pages, cross-checked against the limited independent coverage available. No first-hand testing is claimed.\n\nThe free plan is the headline. Published figures describe roughly 40 AI generation credits, custom templates, font upload and no watermark on exported decks. A no-watermark free tier is unusual in this category, which makes Pi a low-risk place to judge output quality before paying anything.\n\nThe second distinctive point is input range. Pi accepts a PDF, Word document, PowerPoint file, webpage or image as the starting point, so it fits the common job of turning something that already exists into slides. Built-in analytics on shared decks, such as opens and per-page reading time, are described as part of the product rather than a premium add-on.\n\nThe honest caveat is evidence. Independent review coverage is thin, and the Trustpilot listing under the name PI belongs to the unrelated pi.ai chatbot, not this product. Reviewers also report that very large source files, such as 400-plus-page PDFs, and some image uploads can fail on import. Credits on the free plan are capped, so heavy users will hit the Basic upgrade quickly.\n\nTreat the pricing below as indicative and confirm it on pi.inc before buying, since Pi is a young product and plans can change.",
+    useCases: [
+      "Turning a PDF report or Word document into a first-draft deck",
+      "Converting a webpage or article into a presentation outline",
+      "Building a pitch or class deck on the free plan without a watermark",
+      "Sharing a deck link and reading per-page engagement analytics",
+      "Producing responsive decks that render on desktop, tablet and mobile",
+    ],
+    pricingSection: "**Pi pricing (verify on pi.inc):**\n- Free: forever free, roughly 40 AI generation credits, custom templates and font upload, no watermark on exported decks.\n- Basic: $9.90 per month, or $89.90 per year (about $7.50 per month), described as unlimited AI generation, editing, image creation and export.\n\nNo team or enterprise tier is published. Figures come from Pi's own pricing page as checked in September 2026 and are consistent with independent listings, but plan limits for young products change, so confirm before you subscribe.",
+    verdict: "A generous free tier, a wide range of input formats and a low-priced paid plan make Pi an easy tool to try for turning existing material into slides. The constraint is evidence and maturity, not concept: reviews are thin, large imports can fail, and there is no enterprise tier. Good for individuals and small teams; not the safe pick for a company-wide rollout.",
+    relatedBlogSlugs: ['best-ai-presentation-tools-2026', 'ai-tools-for-solopreneurs-2026'],
+    rating: 3.9, lastTested: "September 2026", lastTestedISO: "2026-09-21", datePublished: "2026-09-21", timeUsed: "Researched Sep 2026",
+  },
+  'renderforest': {
+    whatIs: "Renderforest is an all-in-one AI creative platform covering video, images, audio, logos, mockups and a website builder under one account. It offers 1,200+ video templates plus AI generators that run on models such as Google Veo 3.1, Kling 3.0 Omni and Seedance 2.5 alongside Renderforest's own engine. It has a free plan and Lite, Pro and Business paid plans.",
+    whoIsItFor: "Small businesses, freelancers, marketers and content creators who want promo videos, explainers, intros, logos and simple branded assets from one subscription instead of several tools. It suits people who start from a template or a short prompt and want a polished draft without editing software.",
+    whoShouldSkip: "Anyone who wants the single best tool in one category, because dedicated video, logo or image tools will beat Renderforest at that one job. Renderforest's own FAQ says it is best for structured and semi-custom content, not full-scale cinematic production. Also skip it if you need exports without a watermark on a free plan, since free exports carry one.",
+    myTake: "This review draws on Renderforest's published product and pricing pages and its public FAQ, alongside third-party review listings. No first-hand testing is claimed.\n\nBreadth is the point. One login covers template-based videos, AI text-to-video and image-to-video, an AI image generator, voice generation and voice cloning, a logo maker, a mockup generator and a website builder. For a small business that produces a mix of assets, consolidating these under a single subscription is the real argument for the platform.\n\nThe model lineup is worth noting. Renderforest describes a hybrid stack that combines its own engine with third-party video and image models, including Google Veo 3.1, Kling 3.0 Omni, Seedance 2.5, Pixverse V6, Nano Banana Pro, GPT Image 2 and Grok Imagine. Which models you can use may depend on your plan, so check the plan details.\n\nPlan structure has changed. The current pricing page lists Lite, Pro and Business tiers, with Business including a reseller license, and it states that paid tiers have no watermark. Earlier third-party listings used different tier names and disagreed on prices, so older comparisons may be out of date.\n\nRenderforest displays a 4.8 rating across G2, Trustpilot and Capterra on its homepage; that is a vendor-presented figure, so read the review platforms directly. The consistent trade-off is that a bundled platform is rarely the best at any single task.",
+    useCases: [
+      "Making a branded promo or explainer video from a template in an afternoon",
+      "Generating an AI video from a text prompt or a still image",
+      "Creating a logo and matching mockups for a new small business",
+      "Producing intro videos and logo animations for a YouTube channel",
+      "Building a simple website and its launch video from one account",
+    ],
+    pricingSection: "**Renderforest pricing (verify on renderforest.com/subscription):**\n- Free: access to basic templates and tools; exports carry a Renderforest watermark and are limited in resolution.\n- Lite, Pro and Business: paid tiers that remove the watermark and enable higher-quality exports, including Full HD and 4K. Commercial usage rights are included on paid plans, and Business adds a reseller license.\n\nMonthly prices vary by tier and billing period and are not reproduced here because third-party listings disagree; confirm the current rate at checkout. Upgrade when you need watermark-free HD or 4K output or commercial use.",
+    verdict: "A sensible choice when you want video, images, logos and a basic website covered by one subscription and are happy with template-led, semi-custom output. It is not the strongest tool in any single category and it is not built for cinematic production, so pick a specialist if one task dominates your work. Start on the free plan to judge output quality, then upgrade only when you need watermark-free exports.",
+    relatedBlogSlugs: ['best-ai-video-generators-2026', 'best-ai-logo-makers-free-2026', 'best-invideo-alternatives-2026'],
+    rating: 4.0, lastTested: "October 2026", lastTestedISO: "2026-10-08", datePublished: "2026-09-30", timeUsed: "Researched Oct 2026",
+  },
+  'alf-website-studio': {
+    whatIs: "Alf Website Studio is Spaceship's conversational website builder. You describe the site to Alf, Spaceship's AI assistant, which generates the pages, copy, branding and images; you then refine the result by chat or in a visual editor. Hosting, domain connection and an SSL certificate are handled for you. Spaceship's published pricing is a 30-day free trial, then $5 per month.",
+    whoIsItFor: "Entrepreneurs, freelancers and small businesses, especially people who already hold a domain at Spaceship and want a simple business site or portfolio live without separate hosting decisions. Spaceship's own documentation positions it for non-technical users who do not want to write HTML or CSS.",
+    whoShouldSkip: "Anyone who wants to host the site elsewhere. Spaceship's documentation says Alf Website Studio uses its own hosting service and cannot be connected to other Spaceship hosting products such as shared hosting or VPS, or to external hosting providers. Domains registered elsewhere must also be pointed to Spaceship nameservers to connect the SSL certificate and enable the product fully. Check the documentation on moving or exporting a site before building something you may want to relocate.",
+    myTake: "This review draws on Spaceship's own product page, knowledge base, launch announcement and release notes. No first-hand testing is claimed.\n\nThe bundling is the appeal. Domains, hosting and SSL certificates are connected automatically, and the published price after the 30-day trial is $5 per month. For someone who would otherwise buy a builder, hosting and a certificate separately, that simplicity is the whole pitch.\n\nEditing works two ways. You can ask Alf for changes in plain language or switch to a visual editor for manual tweaks, so you are not forced into chat-only editing.\n\nThe product is moving quickly, which makes older reviews unreliable. Spaceship's release notes describe multi-page site management through chat, new dark themes and a Contact Me form feature added in June 2026. They also describe e-commerce support: site owners can connect a Stripe account and create products with payment links. That is a lighter model than a full store platform, so anyone with a large catalogue should still compare dedicated commerce tools, but it means statements that Alf cannot sell products are out of date.\n\nThe trade-off is lock-in to Spaceship's hosting and, for outside domains, to Spaceship nameservers. Independent third-party coverage of this newer product is limited, so lean on Spaceship's documentation and verify details before committing.",
+    useCases: [
+      "Getting a small business site or portfolio live from a chat brief",
+      "Launching a simple site on a domain already registered with Spaceship",
+      "Adding a Contact Me form so visitors can email the site owner",
+      "Selling a few products through Stripe payment links",
+      "Managing a multi-page site by asking Alf to edit the active page",
+    ],
+    pricingSection: "**Alf Website Studio pricing (verify on spaceship.com):**\n- Free trial: 30 days at $0.\n- After the trial: $5 per month, including fully managed hosting, automatic domain connection and an SSL certificate.\n\nExternal domains need Spaceship nameservers, and the product uses only its own included hosting. Stripe payment processing for product sales is a separate Stripe relationship with its own fees.",
+    verdict: "A low-friction option for non-technical users who want a site, hosting and SSL bundled at a fixed $5 per month, with both chat and visual editing. It gets stronger the more your domain already lives at Spaceship and weaker if you want hosting flexibility or an easy way out. Run the free trial with a real brief before deciding, and read the documentation on hosting limits first.",
+    vsVerdict: { tool: "Wegic", summary: "Alf Website Studio bundles hosting, domain connection and SSL at $5 per month and keeps you inside Spaceship's ecosystem. Wegic is a stand-alone chat-built site generator with credit-based pricing. Choose Alf if you already use Spaceship and want one bill; compare Wegic if you want a builder that is not tied to one registrar. The full comparison is in the linked article.", compareSlug: "wegic-vs-alf-website-studio" },
+    relatedBlogSlugs: ['launch-an-ai-built-website-2026', 'best-ai-website-builders-2026', 'ai-tools-for-solopreneurs-2026'],
+    rating: 3.8, lastTested: "October 2026", lastTestedISO: "2026-10-08", datePublished: "2026-09-22", timeUsed: "Researched Oct 2026",
+  },
+  'jetpack-ai-assistant': {
+    whatIs: "Jetpack AI Assistant is the AI writing feature built into the Jetpack plugin for WordPress. Jetpack describes it as generating post drafts, titles, translations and summaries inside the editor, and third-party guides add tone adjustment and spelling and grammar correction. Jetpack's pricing page lists 20 requests on the Free, Security and Growth plans and high request capacity on the Complete bundle.",
+    whoIsItFor: "WordPress site owners, bloggers and small publishers who already use Jetpack and want occasional drafting, titling, summarising or translation help without leaving the editor. It suits people who value having AI inside the page they are editing over a feature-rich standalone writing app.",
+    whoShouldSkip: "Anyone not running WordPress, because it works through the Jetpack plugin in the WordPress editor. Also skip it if you need a deep writing suite with long-form outlining, plagiarism checking or brand voice profiles; this is a convenient add-on, not a specialist tool. Jetpack also requires a connected free WordPress.com account, a publicly accessible site and XML-RPC enabled, which some security setups block.",
+    myTake: "This review draws on Jetpack's published pricing and plan comparison page and its documentation, alongside third-party descriptions of the feature. No first-hand testing is claimed.\n\nThe value is convenience. Generation happens inside the WordPress editor, so there is no separate app, tab or copy-paste step. For occasional drafts, titles, summaries and translations, that integration is the main reason to use it.\n\nThe free allowance is small. Jetpack's current plan comparison shows 20 requests on Free, Security and Growth, and high request capacity only on the Complete bundle. In other words, buying the Security or Growth bundle does not raise the AI Assistant cap, which is a detail older guides often get wrong. Jetpack's page does not say whether the 20 requests renew monthly, and third-party descriptions treat it as a total allowance, so assume it runs out.\n\nComplete is priced at $24.95 per month for the first year on yearly billing, rising to $49.95 per month afterwards, according to Jetpack's pricing page. A separate AI-only paid tier has been reported by third parties at about $9.95 per month on yearly billing; confirm that on Jetpack's AI page, since promotional rates differ.\n\nThe feature set is also basic compared with dedicated AI writing tools, which is expected of an in-editor add-on.",
+    useCases: [
+      "Drafting a first version of a blog post inside the block editor",
+      "Generating titles and summaries for existing posts",
+      "Translating a post into another language for a wider audience",
+      "Checking occasional spelling and grammar in a WordPress draft",
+      "Trying AI writing on a Jetpack site before paying for anything",
+    ],
+    pricingSection: "**Jetpack AI Assistant pricing (verify on jetpack.com):**\n- Free, Security and Growth plans: 20 requests.\n- Complete bundle: high request capacity. Listed at $24.95 per month for the first year on yearly billing, then $49.95 per month, per Jetpack's pricing page.\n- AI-only paid tier: reported by third parties at roughly $9.95 per month on yearly billing; confirm the current rate and any promotion on Jetpack's AI page.\n\nJetpack offers a 14-day refund on yearly plans and 7 days on monthly plans. Free usage is a small fixed allowance, so budget for a paid option if you publish regularly.",
+    verdict: "A handy in-editor shortcut for WordPress users who want occasional AI help without leaving the page. The 20-request free allowance is enough to try it, and only the Complete bundle raises the cap on Jetpack's current plan table. Choose a standalone writing tool if you are not on WordPress or need advanced writing features.",
+    relatedBlogSlugs: ['best-ai-writing-tools-for-beginners-2026', 'best-ai-website-builders-2026'],
+    rating: 3.5, lastTested: "October 2026", lastTestedISO: "2026-10-08", datePublished: "2026-09-22", timeUsed: "Researched Oct 2026",
+  },
 };
 
 const TODAY = new Date().toISOString().split('T')[0];
@@ -1373,6 +1442,8 @@ const TOOL_COMPARE_MAP: Record<string, string[]> = {
   taskade:       ['taskade-vs-notion', 'taskade-vs-asana'],
   'creao-ai':    ['creao-ai-vs-flowith'],
   flowith:       ['creao-ai-vs-flowith'],
+  wegic:         ['wegic-vs-alf-website-studio'],
+  'alf-website-studio': ['wegic-vs-alf-website-studio'],
 };
 
 interface ToolPageProps { tool: Tool; navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
@@ -1501,6 +1572,8 @@ const TOOL_RADAR: Record<string, [number, number, number, number, number]> = {
   'presentation-intelligence': [4.4, 4.0, 4.3, 3.6, 3.0],
   'aippt':                    [4.3, 3.9, 3.9, 3.4, 2.8],
   'renderforest':             [4.4, 4.0, 3.7, 3.8, 4.0],
+  'alf-website-studio':       [4.5, 3.7, 4.3, 3.4, 3.6],
+  'jetpack-ai-assistant':     [4.4, 3.5, 3.8, 3.0, 3.6],
 };
 
 const RADAR_AXES = ['Ease of Use', 'Output Quality', 'Value', 'Free Plan', 'Support'] as const;

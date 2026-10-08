@@ -63,6 +63,9 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   // Added Sep 30 2026 (Impact). SITE123 is positioned as a simple drag-and-drop builder, not an AI builder.
   site123: 'https://site123ltd.sjv.io/enPqkZ?utm_source=site123&utm_medium=affiliate',
   gitmind: 'https://gitmindcom.sjv.io/2R0Vqa?utm_source=gitmind&utm_medium=affiliate',
+  // Added Oct 8 2026 (Impact). Esimatic is a travel eSIM app, off-niche for an AI tools site: use only as a
+  // contextual mention (e.g. India / remote-work content), not as a tool page or comparison.
+  esimatic: 'https://esimsia.sjv.io/n4JDe7?utm_source=esimatic&utm_medium=affiliate',
   // Renderforest has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['renderforest']).
 };
 
