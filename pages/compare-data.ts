@@ -72,6 +72,157 @@ export interface CompareRow {
 
 export const COMPARE_ARTICLES: CompareArticle[] = [
 
+  // ── aippt-vs-presentation-intelligence ─────────────────────────────────────────────────────────
+  // Both tools have dedicated tool pages (constants.ts). Links go through AFFILIATE_LINKS[...].
+  // Figures read from the vendors' own pages on 2026-10-08 (see section text for what could not be verified).
+  {
+    slug: 'aippt-vs-presentation-intelligence',
+    title: "AiPPT vs Pi (Presentation Intelligence) 2026: Which AI Slide Maker Fits?",
+    seoTitle: "AiPPT vs Pi (Presentation Intelligence) 2026",
+    metaDescription: "AiPPT vs Pi (Presentation Intelligence) compared for 2026: free-plan credits, slide caps, export, input formats, and which AI slide maker suits which job.",
+    keyword: "aippt vs pi presentation intelligence",
+    publishDate: 'October 2026',
+    lastUpdated: '2026-10-08',
+    quickAnswer: "Pi is the better first try: its own materials describe a watermark-free free plan, and Basic is $9.90 a month. AiPPT is the better fit for longer or repeated work: paid plans allow 20 or 50 slides per deck and ten concurrent tasks, and a one-time Lifetime plan exists. Pi's figures are vendor-published, so test its free export first.",
+    intro: "Both tools promise the same thing: give an AI a prompt, a PDF or a Word file and get back a designed slide deck. The limits underneath are different enough to matter, and the evidence behind them is uneven. AiPPT publishes a readable plan table with credit and slide-count limits. Pi's pricing page does not render for automated readers, so most of Pi's plan details below come from Pi's own published material plus one independent review, and are flagged as such.\n\nSingle-tool write-ups: [Pi review](/tools/presentation-intelligence/) and [AiPPT review](/tools/aippt/). For the wider field, see [best AI presentation tools](/blog/best-ai-presentation-tools-2026/).",
+    sections: [
+      {
+        heading: "The real difference: a simple offer vs a plan ladder with published limits",
+        content: "Pi's offer is simple: a free plan and one paid plan. According to Pi's own articles, Free includes roughly 40 AI generation credits, custom templates, font upload and no watermark. Basic is $9.90 a month ($89.90 a year, about $7.50 a month) with unlimited AI generation, editing, image creation and export. Pi's pricing FAQ adds that extra credits can be earned through daily login, inviting friends and sharing documents.\n\nAiPPT is a ladder. Its price page shows Free (140 credits, one-time), Plus (600 credits a month) and Pro (1,200 credits a month). The caps rise by tier: 10, 20 and 50 slides per AI-generated deck, with better generation models at each step. A one-time Lifetime membership also exists, according to its FAQ.\n\nSo the choice is between simplicity and a ceiling you can see in advance. Pi has fewer decisions to make. AiPPT tells you exactly where each plan stops.",
+      },
+      {
+        heading: "Pi: content and design generated together",
+        content: "Pi describes itself as AI-native. It generates the content and the layout together instead of pouring text into a fixed template, and its own articles quote generation times of 10 to 15 seconds. Accepted starting points include a prompt, PDF, Word document, PowerPoint file, webpage or image. Decks are described as responsive across desktop, tablet and mobile, and shared decks include viewer analytics such as opens and per-page reading time, as noted in our review.\n\n**Where it falls short:** Most public material on Pi's pricing and performance is written by Pi itself, including several \"best AI presentation tools\" lists that rank Pi first. That is useful for numbers but weak as independent evidence. One third-party review we found says the free plan starts with 400 credits at roughly 40 per deck (about ten decks), while Pi's own articles say about 40 credits. The same review says file export requires Basic, while Pi's articles say free decks carry no watermark. Both can be true if free decks can be built and viewed without a watermark but not exported as files, and nothing we could read settles which applies today.\n\n**Who it's for:** Individuals and small teams turning existing documents into first-draft decks who want to pay nothing until they know it works.",
+      },
+      {
+        heading: "AiPPT: three modes, credit meters and slide caps",
+        content: "AiPPT's homepage describes three ways to build: Classic (one-shot), Flow (agent-driven) and Visual (image-heavy). It says it accepts PDF, Word, PowerPoint and Excel files, images and URLs, with conversational editing afterwards. Its price page lists import from Google Drive, URLs, Markdown and mind maps, reference files, merge-slides and add-slide-with-AI tools, and export to PPT, PDF and image. Tier-by-tier availability of those features did not render when we read the page. Image generation is advertised across models including Flux, Imagen, Seedream and Nano Banana.\n\nThe limits are on the price page: AI credits (140 one-time on Free, 600 a month on Plus, 1,200 a month on Pro), concurrent agent tasks (1 on Free, 10 on Plus and Pro), slides per AI-generated deck (10, 20 and 50), and a 20-slide cap in Visual mode on every plan.\n\n**Where it falls short:** The dollar prices for Plus and Pro did not appear on the page when read, and third-party listings disagree on them, so confirm at checkout. Independent reviews are scarce, and our earlier check found no meaningful G2 presence.\n\n**Who it's for:** People who want longer decks, several decks at once, a visible plan ladder, or a one-time payment instead of a subscription.",
+      },
+      {
+        heading: "Credits and slide caps: the numbers that decide it",
+        content: "Three practical consequences follow from the published limits.\n\n**Deck length.** On AiPPT's free plan an AI-generated deck is capped at 10 slides, and at 20 on Plus. A 15-slide proposal needs Plus or has to be built in stages. We found no published per-deck slide cap for Pi, which is not the same as there being none.\n\n**How long the free tier lasts.** AiPPT's 140 free credits are a one-time pool that does not refill. Pi's credits can be earned over time, though the amounts per action are not shown on the page we could read. If you generate a few decks a month, Pi's free tier may last longer. If you generate a lot in one sitting, AiPPT's paid plans give you a visible monthly meter.\n\n**Batch work.** AiPPT lists 10 concurrent agent tasks on paid plans. Pi's published material does not mention concurrency. If you produce several decks at once, for a class or a client roster, that line matters more than the model list.\n\nNone of this measures output quality. Both vendors' design claims are marketing until you test them on your own material.",
+      },
+      {
+        heading: "What neither tool settles for you",
+        content: "**Teams.** Pi's FAQ says team collaboration happens through sharing and co-editing, with more advanced team features available by contacting support. AiPPT's price page lists no team or enterprise plan. Neither publishes SSO or admin controls on the pages we read, so neither is a safe pick for a company-wide rollout.\n\n**Prices.** Pi's $9.90 and $89.90 figures come from Pi's own articles, because its pricing page did not render for automated readers. AiPPT's dollar prices for Plus, Pro and Lifetime were not visible at all. Check both at checkout before committing.\n\n**Evidence.** Both tools are newer than Gamma or Beautiful.ai, and independent review coverage of each is thin. Treat any score or ranking, including ours, as research-based rather than the result of long hands-on use.",
+      },
+    ],
+    verdict: "Start with Pi if you have a document or webpage to turn into slides and want to spend nothing until you have seen the output. It is the simpler offer, its paid plan is a single published price, and our rating radar puts it slightly ahead of AiPPT on all five axes. That lead is narrow and rests largely on vendor-published numbers, so run the free plan through a real export before trusting it.\n\nChoose AiPPT if you regularly build decks longer than ten slides, run several at once, or would rather pay once than subscribe. Its limits are published, its modes (Classic, Flow, Visual) give some control over speed versus polish, and its Lifetime plan has no published equivalent at Pi.\n\nTest both on the same source document. The free plans cost nothing, comparing outputs takes minutes, and the deck you would rather present is a better tie-breaker than any table here.",
+    comparisonTable: [
+      { name: "Presentation Intelligence (Pi)", price: "Free + $9.90/mo ($89.90/yr)", priceUSD: "Free to $9.90", freeplan: true, aiContent: "Content and design generated together; PDF, Word, PowerPoint, web and image input", platforms: "Web", bestFor: "First-draft decks from existing documents", ourPick: true },
+      { name: "AiPPT.com", price: "Free (140 credits) + Plus/Pro + Lifetime", priceUSD: "Free; paid prices: check price page", freeplan: true, aiContent: "Classic, Flow and Visual modes; document and URL import", platforms: "Web", bestFor: "Longer decks, batch work, one-time payment", ourPick: false },
+    ],
+    winnerSlug: 'presentation-intelligence',
+    winnerName: "Presentation Intelligence (Pi)",
+    winnerAffiliateLink: AFFILIATE_LINKS['presentation-intelligence'],
+    winnerAffiliateText: "Try Pi free",
+    pricing: {
+      tools: [
+        { name: "Presentation Intelligence (Pi)", free: true, startingPrice: "$0 (credit-limited)", paidFrom: "$9.90/mo or $89.90/yr (Pi-published)", bestPlanFor: "Turning one document into a first-draft deck", affiliateLink: AFFILIATE_LINKS['presentation-intelligence'] },
+        { name: "AiPPT.com", free: true, startingPrice: "$0 (140 credits, one-time)", paidFrom: "Plus or Pro: see aippt.com/price", bestPlanFor: "Longer decks and several decks at once", affiliateLink: AFFILIATE_LINKS['aippt'] },
+      ],
+    },
+    faqs: [
+      { q: "Is Pi or AiPPT better?", a: "Pi is the better first try for turning a single document into a deck, because its free plan costs nothing and its paid plan is one published price. AiPPT is the better fit for decks over ten slides, several decks at once, or buyers who prefer a one-time payment. Pi's figures are largely vendor-published, so test both on the same source file." },
+      { q: "Is AiPPT.com free?", a: "Yes, with limits. The free plan is 140 credits as a one-time allocation, up to 10 slides per AI-generated deck, on the base generation model. Plus adds 600 credits a month and 20 slides per deck, and Pro adds 1,200 credits a month and 50 slides per deck." },
+      { q: "Does Pi's free plan add a watermark?", a: "Pi's own articles say free decks have no watermark. One independent review says file export requires the Basic plan. Generate a deck and export it on the free plan before you depend on it." },
+      { q: "Which is cheaper, Pi or AiPPT?", a: "Pi's own materials list Basic at $9.90 a month or $89.90 a year. AiPPT's Plus and Pro dollar prices were not readable on its price page, and third-party listings disagree, so confirm at checkout. AiPPT also offers a one-time Lifetime membership, which suits people who build decks often and dislike subscriptions." },
+      { q: "Can both import a PDF or Word file?", a: "Yes. AiPPT says it accepts PDF, Word, PowerPoint and Excel files, images and URLs. Pi's published description lists a prompt, PDF, Word document, PowerPoint file, webpage or image as starting points." },
+      { q: "Are Pi and AiPPT suitable for team use?", a: "Not for a formal rollout. Pi's FAQ says teams collaborate by sharing and co-editing, with advanced team features available on request. AiPPT's price page lists no team or enterprise plan. Neither shows SSO or admin controls on the pages we read." },
+    ],
+    featureRows: [
+      { feature: "Free plan", toolA: "Forever free (about 40 credits per Pi; one review says 400)", toolB: "140 credits, one-time", winner: 'tie' },
+      { feature: "Earn extra credits", toolA: "Yes (daily login, referrals, sharing)", toolB: "Not listed on price page", winner: 'A' },
+      { feature: "Paid entry price", toolA: "$9.90/mo or $89.90/yr (Pi-published)", toolB: "Not readable; verify at checkout", winner: 'tie' },
+      { feature: "One-time Lifetime plan", toolA: "Not published", toolB: "Yes", winner: 'B' },
+      { feature: "Per-deck slide cap (AI generation)", toolA: "Not published", toolB: "10 / 20 / 50 by tier", winner: 'tie' },
+      { feature: "Concurrent tasks", toolA: "Not published", toolB: "1 on Free, 10 on paid", winner: 'B' },
+      { feature: "Input formats", toolA: "Prompt, PDF, Word, PowerPoint, webpage, image", toolB: "Prompt, PDF, Word, PowerPoint, Excel, images, URLs, Markdown", winner: 'B' },
+      { feature: "Export", toolA: "Included on Basic; free-plan export unconfirmed", toolB: "PPT, PDF, image", winner: 'B' },
+      { feature: "Viewer analytics", toolA: "Opens and per-page reading time", toolB: "Not listed", winner: 'A' },
+      { feature: "Team features", toolA: "Share and co-edit; more on request", toolB: "No team plan listed", winner: 'A' },
+      { feature: "Independent evidence", toolA: "Thin, mostly vendor-authored", toolB: "Thin, no G2 presence found", winner: 'tie' },
+      { feature: "Best for", toolA: "First-draft decks from documents", toolB: "Longer decks and batch work", winner: 'tie' },
+    ],
+  },
+
+  // ── fireflies-vs-transkriptor ─────────────────────────────────────────────────────────
+  // Both tools have dedicated tool pages (constants.ts). Links go through AFFILIATE_LINKS[...].
+  // Figures read from the vendors' own pages on 2026-10-08 (see section text for what could not be verified).
+  {
+    slug: 'fireflies-vs-transkriptor',
+    title: "Fireflies.ai vs Transkriptor (2026): Which AI Transcription Tool Fits How You Work?",
+    seoTitle: "Fireflies.ai vs Transkriptor 2026: Which to Pick?",
+    metaDescription: "Fireflies.ai vs Transkriptor compared for 2026: unlimited transcription vs minute-capped plans, real pricing, free tiers, and which wins for meetings or files.",
+    keyword: "fireflies vs transkriptor",
+    publishDate: 'October 2026',
+    lastUpdated: '2026-10-08',
+    quickAnswer: "Fireflies.ai is the better default for recurring meetings: transcription is unlimited on paid plans, and Pro is $10 per seat a month on annual billing. Transkriptor suits batches of recorded files such as interviews and lectures: Pro covers 40 hours a month, with AI summaries, from $8.33 a month billed annually.",
+    intro: "Both tools turn speech into searchable text, join Zoom, Google Meet and Microsoft Teams calls, and add AI summaries on top. On paper the feature lists look almost the same in 2026, which is why most comparisons end in a coin flip. What actually decides the choice is what each plan limits.\n\nFireflies.ai leaves transcription itself unlimited and caps storage and AI features instead. Transkriptor caps the hours of audio you can process each month, and unused minutes expire. Everything below uses the vendors' own pricing pages, read on 8 October 2026, with the break-even arithmetic worked out where it matters. Single-tool write-ups: [Fireflies.ai review](/tools/fireflies/) and [Transkriptor review](/tools/transkriptor/).",
+    sections: [
+      {
+        heading: "The real difference: what each plan limits",
+        content: "Fireflies.ai's pricing page lists unlimited transcription across its plans, with an asterisk on the free tier that the page does not expand. What changes between plans is storage (400 minutes per team on Free, 8,000 minutes per seat on Pro, unlimited from Business), the AI credit allowance (20 on Free and Pro, 30 on Business, 50 on Enterprise), and which features unlock. Video recording, downloads and AI Skills arrive at Pro. Conversation intelligence and team analytics arrive at Business.\n\nTranskriptor works the other way round. Its plans are sold in transcription minutes per month: 300 on Lite, 2,400 on Pro and 3,000 per seat on Team. Its FAQ states that unused minutes expire one month after payment, so a quiet month wastes the allowance instead of banking it.\n\nThat gives each tool a different failure mode. With Fireflies you hit a wall when stored meetings pile up, which is a stock limit. With Transkriptor you hit a wall in a heavy month, which is a flow limit. If your volume is steady, either works. If it swings, such as a research project with a burst of interviews, a monthly cap bites harder.",
+      },
+      {
+        heading: "Fireflies.ai: a meeting recorder first",
+        content: "Fireflies is built around the calendar-joined bot. Invite it or let it auto-join, and each meeting becomes a transcript with a summary, action items and a searchable archive. On the free plan its pricing page lists Zoom, Google Meet and Teams recording, transcription in 100+ languages, real-time notes, meeting search, its AskFred assistant, audio and video upload, desktop and mobile apps, a Chrome extension and API access.\n\n**What the paid tiers add:** Pro ($18 per seat monthly, $10 on annual billing) adds unlimited AI summaries, video recording, downloads, action-item management and unlimited integrations. Business ($29 monthly, $19 annual) adds unlimited storage, conversation intelligence, team analytics for admins and a multi-language mode. Enterprise ($39, annual only) adds SSO and SCIM, audit logs, private storage and HIPAA compliance.\n\n**Where it falls short:** The plan cards link to rate limits, so \"unlimited\" is not literally boundless. AI credits are a separate allowance (20 on Pro), and the page we read does not say which features draw on it. An older figure of 800 minutes of free storage still appears in many guides; the pricing page now shows 400 minutes per team.\n\n**Who it's for:** Remote teams, recruiters and sales reps whose audio comes from live calls every week, and who care about integrations and conversation analytics more than the lowest possible price per hour.",
+      },
+      {
+        heading: "Transkriptor: a file transcriber with a meeting bot",
+        content: "Transkriptor sells transcription time. You upload audio or video, paste a YouTube link, or use its meeting bot on Zoom, Google Meet and Microsoft Teams, and the minutes come out of a monthly allowance. Its feature list covers speaker identification, editable text, folders and workspaces, subtitles from video, recording and translation in 100+ languages, WhatsApp message transcription on mobile, Google Drive integration, and web, iOS and Android apps. Exports include TXT, SRT and Word.\n\n**Plans:** Lite is $9.99 a month for 300 minutes (five hours). Pro is $19.99 monthly, or $8.33 a month on annual billing ($99.99 a year), for 2,400 minutes (40 hours) plus AI summaries, custom summary templates, AI chat and a knowledge base. Team is $30 per seat monthly or $20 annual, for 3,000 minutes per seat with custom vocabulary, call analysis such as talk time and sentiment, and a customisable meeting-bot name and avatar. A 50% education discount and bulk hour packs (100 hours at $60 a month) are also listed.\n\n**Where it falls short:** AI summaries are listed as a Pro feature, so the entry Lite tier is transcription only. Allowances expire monthly. The pricing page lists no SSO, HIPAA or audit-log tier, so regulated teams would need to ask the vendor directly.\n\n**Who it's for:** Researchers, students, journalists and podcasters who transcribe batches of recorded files, and anyone who wants AI summaries at the lowest annual price.",
+      },
+      {
+        heading: "The price comparison flips depending on how you pay",
+        content: "Take the cheapest tier that includes AI summaries on each side: Fireflies Pro and Transkriptor Pro.\n\n**Billed monthly:** Fireflies Pro is $18 per seat. Transkriptor Pro is $19.99. Fireflies is cheaper and has no monthly hour cap on transcription.\n\n**Billed annually:** Fireflies Pro is $10 per seat per month. Transkriptor Pro is $8.33. Transkriptor is cheaper, with a cap of 40 hours a month. If you use the whole allowance that is about 21 cents per audio hour ($8.33 divided by 40), against roughly 50 cents ($19.99 divided by 40) on monthly billing.\n\n**Teams:** The gap nearly disappears. Fireflies Business is $29 monthly or $19 annual per seat, and Transkriptor Team is $30 monthly or $20 annual per seat. At that point the question is features: Fireflies Business adds unlimited storage and conversation intelligence, while Transkriptor Team caps at 3,000 minutes (50 hours) per seat.\n\nThe per-hour arithmetic is ours, worked from the published prices. It ignores taxes, currency conversion and promotional discounts.",
+      },
+      {
+        heading: "Free plans: what you can actually test",
+        content: "Fireflies' free plan is the more usable trial for meetings. Transcription is listed as unlimited (with the asterisk), AI summaries are limited, storage is 400 minutes per team, and there are 20 AI credits. That is enough to run it on a few real calls and judge summary quality.\n\nTranskriptor's free allowance is smaller. Its cancellation FAQ names a \"Free - 90 Minutes\" plan, though the pricing page does not spell out the terms. That is roughly one long recording, enough to test accuracy on your own audio.\n\nAccuracy is where every transcription tool varies most, and neither vendor's claims were independently verified for this comparison. Our tool reviews record the same caution for both: accuracy falls on overlapping speakers, heavy accents and noisy audio. Run the same difficult recording through both free plans before paying for either.",
+      },
+      {
+        heading: "Privacy, compliance and team controls",
+        content: "Fireflies lists SOC 2 Type II and GDPR compliance on its pricing page and states that customer data is never used for AI training. It reserves HIPAA compliance, SSO and SCIM, private storage and audit logs for the Enterprise tier ($39 per seat, annual only). Transkriptor states on its Pro plan and above that your data will not be used for training. Its pricing page does not mention SOC 2, HIPAA or SSO.\n\nFor ordinary business use the difference is small. For anything legally privileged, clinical or regulated, check the vendor's security documentation directly instead of relying on a comparison page. Both are cloud services.",
+      },
+    ],
+    verdict: "Choose Fireflies.ai if your audio mostly comes from live meetings and you want transcription that does not count down against a monthly allowance. Its free plan is the better trial, its monthly price is lower at the mid tier, and its Business and Enterprise tiers carry the integrations, analytics and compliance options that team rollouts need.\n\nChoose Transkriptor if you transcribe batches of recorded files, want AI summaries at the lowest annual price, and your monthly volume stays inside 40 hours. On annual billing it is the cheaper mid-tier plan, and its hour packs make larger one-off projects predictable.\n\nIf you cannot decide, the deciding variable is the shape of your volume. Steady weekly meetings favour Fireflies. Bursty file work favours Transkriptor, as long as the burst fits inside the cap. Either way, run the same difficult recording through both free plans first.",
+    comparisonTable: [
+      { name: "Fireflies.ai", price: "Free + $10 to $39/seat/mo", priceUSD: "Free to $39", freeplan: true, aiContent: "Meeting bot, AI summaries, AskFred assistant, conversation intelligence", platforms: "Web, desktop, iOS, Android, Chrome", bestFor: "Recurring live meetings", ourPick: true },
+      { name: "Transkriptor", price: "Free (90 min) + $9.99 to $30/mo", priceUSD: "Free to $30", freeplan: true, aiContent: "File and meeting transcription, AI summary and chat (Pro and up)", platforms: "Web, iOS, Android", bestFor: "Batches of recorded files", ourPick: false },
+    ],
+    winnerSlug: 'fireflies',
+    winnerName: "Fireflies.ai",
+    winnerAffiliateLink: AFFILIATE_LINKS['fireflies'],
+    winnerAffiliateText: "Try Fireflies.ai free",
+    pricing: {
+      tools: [
+        { name: "Fireflies.ai", free: true, startingPrice: "$0", paidFrom: "$10/seat/mo (annual) or $18 monthly", bestPlanFor: "Teams with recurring live meetings", affiliateLink: AFFILIATE_LINKS['fireflies'] },
+        { name: "Transkriptor", free: true, startingPrice: "$0 (90 min)", paidFrom: "$9.99/mo (Lite) or $19.99/mo (Pro)", bestPlanFor: "Batches of recorded files within 40 hours a month", affiliateLink: AFFILIATE_LINKS['transkriptor'] },
+      ],
+    },
+    faqs: [
+      { q: "Is Fireflies.ai or Transkriptor cheaper?", a: "It depends on billing. Billed monthly, Fireflies Pro is $18 per seat and Transkriptor Pro is $19.99. Billed annually, Fireflies Pro is $10 per seat a month and Transkriptor Pro is $8.33. The catch is the cap: Transkriptor Pro covers 2,400 minutes (40 hours) a month, while Fireflies lists transcription as unlimited." },
+      { q: "Does Fireflies.ai have unlimited transcription on the free plan?", a: "Its pricing page lists unlimited transcription on Free with an asterisk, alongside limited AI summaries, 400 minutes of storage per team and 20 AI credits. Treat it as a trial tier. Storage and summary limits are where it runs out first." },
+      { q: "Does Transkriptor have a meeting bot?", a: "Yes. It lists a meeting bot for Zoom, Google Meet and Microsoft Teams, along with file upload, YouTube links, Google Drive integration and WhatsApp message transcription on mobile. Bot minutes come out of the same monthly allowance as uploads, and unused minutes expire after a month." },
+      { q: "Which one supports more languages?", a: "Both list 100+ languages. Fireflies' free plan lists transcription in 100+ languages, and Transkriptor lists recording and translation in 100+. Language count no longer separates them, so test your own language and accent on each free plan." },
+      { q: "Which is better for interviews, lectures or podcasts?", a: "Transkriptor is sold by the hour of audio and lists subtitle creation, SRT export and YouTube-link transcription, which suits batches of recorded files. Fireflies also accepts uploads, but it is built around calendar-joined meetings." },
+      { q: "Is either tool HIPAA compliant?", a: "Fireflies lists HIPAA compliance as an Enterprise-tier feature ($39 per seat, billed annually only). Transkriptor's pricing page does not list HIPAA, so ask the vendor before using it for protected health information." },
+    ],
+    featureRows: [
+      { feature: "Free plan", toolA: "Unlimited transcription*, 400 min storage/team, 20 AI credits", toolB: "\"Free - 90 Minutes\" plan named in FAQ", winner: 'A' },
+      { feature: "Mid-tier price (billed monthly)", toolA: "Pro $18/seat", toolB: "Pro $19.99", winner: 'A' },
+      { feature: "Mid-tier price (billed annually)", toolA: "Pro $10/seat/mo", toolB: "Pro $8.33/mo", winner: 'B' },
+      { feature: "Transcription cap", toolA: "Listed as unlimited (rate limits apply)", toolB: "2,400 min/mo on Pro (40 hours)", winner: 'A' },
+      { feature: "Unused allowance", toolA: "No monthly expiry (storage-based limit)", toolB: "Expires after one month", winner: 'A' },
+      { feature: "AI summaries on entry paid tier", toolA: "Unlimited on Pro", toolB: "Pro only (Lite has none)", winner: 'A' },
+      { feature: "Languages", toolA: "100+", toolB: "100+ (record and translate)", winner: 'tie' },
+      { feature: "Live meeting bot", toolA: "Zoom, Meet, Teams", toolB: "Zoom, Meet, Teams", winner: 'tie' },
+      { feature: "Team analytics", toolA: "Business: conversation intelligence", toolB: "Team: talk time, sentiment", winner: 'tie' },
+      { feature: "HIPAA / SSO", toolA: "Enterprise tier", toolB: "Not listed on pricing page", winner: 'A' },
+      { feature: "Best for", toolA: "Recurring live meetings", toolB: "Batches of recorded files", winner: 'tie' },
+    ],
+  },
+
   // ── site123-vs-wix ───────────────────────────────────────────────────────
   // SITE123 is blog-only (SUPPLEMENTARY_LINKS['site123'] in lib/affiliate-links.ts) —
   // no dedicated tool page, so winnerSlug='site123' hides the "Full review" button

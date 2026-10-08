@@ -10,6 +10,24 @@ export interface CompareArticleMeta {
 
 export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
+    "slug": "aippt-vs-presentation-intelligence",
+    "title": "AiPPT vs Pi (Presentation Intelligence) 2026: Which AI Slide Maker Fits?",
+    "seoTitle": "AiPPT vs Pi (Presentation Intelligence) 2026",
+    "metaDescription": "AiPPT vs Pi (Presentation Intelligence) compared for 2026: free-plan credits, slide caps, export, input formats, and which AI slide maker suits which job.",
+    "keyword": "aippt vs pi presentation intelligence",
+    "publishDate": "October 2026",
+    "winnerName": "Presentation Intelligence (Pi)"
+  },
+  {
+    "slug": "fireflies-vs-transkriptor",
+    "title": "Fireflies.ai vs Transkriptor (2026): Which AI Transcription Tool Fits How You Work?",
+    "seoTitle": "Fireflies.ai vs Transkriptor 2026: Which to Pick?",
+    "metaDescription": "Fireflies.ai vs Transkriptor compared for 2026: unlimited transcription vs minute-capped plans, real pricing, free tiers, and which wins for meetings or files.",
+    "keyword": "fireflies vs transkriptor",
+    "publishDate": "October 2026",
+    "winnerName": "Fireflies.ai"
+  },
+  {
     "slug": "site123-vs-wix",
     "title": "SITE123 vs Wix (2026): Simple Builder or AI-Native Platform?",
     "seoTitle": "SITE123 vs Wix 2026 — Which Should You Use?",

@@ -1306,6 +1306,34 @@ const TOOL_FAQS = {
 
 // ── Compare articles ──────────────────────────────────────────────────────────
 const COMPARE_ARTICLES = [
+  { // ── aippt-vs-presentation-intelligence ── Oct 8 2026
+    slug: 'aippt-vs-presentation-intelligence',
+    title: "AiPPT vs Pi (Presentation Intelligence) 2026: Which AI Slide Maker Fits?",
+    seoTitle: "AiPPT vs Pi (Presentation Intelligence) 2026",
+    metaDescription: "AiPPT vs Pi (Presentation Intelligence) compared for 2026: free-plan credits, slide caps, export, input formats, and which AI slide maker suits which job.",
+    faqs: [
+      { q: "Is Pi or AiPPT better?", a: "Pi is the better first try for turning a single document into a deck, because its free plan costs nothing and its paid plan is one published price. AiPPT is the better fit for decks over ten slides, several decks at once, or buyers who prefer a one-time payment. Pi's figures are largely vendor-published, so test both on the same source file." },
+      { q: "Is AiPPT.com free?", a: "Yes, with limits. The free plan is 140 credits as a one-time allocation, up to 10 slides per AI-generated deck, on the base generation model. Plus adds 600 credits a month and 20 slides per deck, and Pro adds 1,200 credits a month and 50 slides per deck." },
+      { q: "Does Pi's free plan add a watermark?", a: "Pi's own articles say free decks have no watermark. One independent review says file export requires the Basic plan. Generate a deck and export it on the free plan before you depend on it." },
+      { q: "Which is cheaper, Pi or AiPPT?", a: "Pi's own materials list Basic at $9.90 a month or $89.90 a year. AiPPT's Plus and Pro dollar prices were not readable on its price page, and third-party listings disagree, so confirm at checkout. AiPPT also offers a one-time Lifetime membership, which suits people who build decks often and dislike subscriptions." },
+      { q: "Can both import a PDF or Word file?", a: "Yes. AiPPT says it accepts PDF, Word, PowerPoint and Excel files, images and URLs. Pi's published description lists a prompt, PDF, Word document, PowerPoint file, webpage or image as starting points." },
+      { q: "Are Pi and AiPPT suitable for team use?", a: "Not for a formal rollout. Pi's FAQ says teams collaborate by sharing and co-editing, with advanced team features available on request. AiPPT's price page lists no team or enterprise plan. Neither shows SSO or admin controls on the pages we read." },
+    ],
+  },
+  { // ── fireflies-vs-transkriptor ── Oct 8 2026
+    slug: 'fireflies-vs-transkriptor',
+    title: "Fireflies.ai vs Transkriptor (2026): Which AI Transcription Tool Fits How You Work?",
+    seoTitle: "Fireflies.ai vs Transkriptor 2026: Which to Pick?",
+    metaDescription: "Fireflies.ai vs Transkriptor compared for 2026: unlimited transcription vs minute-capped plans, real pricing, free tiers, and which wins for meetings or files.",
+    faqs: [
+      { q: "Is Fireflies.ai or Transkriptor cheaper?", a: "It depends on billing. Billed monthly, Fireflies Pro is $18 per seat and Transkriptor Pro is $19.99. Billed annually, Fireflies Pro is $10 per seat a month and Transkriptor Pro is $8.33. The catch is the cap: Transkriptor Pro covers 2,400 minutes (40 hours) a month, while Fireflies lists transcription as unlimited." },
+      { q: "Does Fireflies.ai have unlimited transcription on the free plan?", a: "Its pricing page lists unlimited transcription on Free with an asterisk, alongside limited AI summaries, 400 minutes of storage per team and 20 AI credits. Treat it as a trial tier. Storage and summary limits are where it runs out first." },
+      { q: "Does Transkriptor have a meeting bot?", a: "Yes. It lists a meeting bot for Zoom, Google Meet and Microsoft Teams, along with file upload, YouTube links, Google Drive integration and WhatsApp message transcription on mobile. Bot minutes come out of the same monthly allowance as uploads, and unused minutes expire after a month." },
+      { q: "Which one supports more languages?", a: "Both list 100+ languages. Fireflies' free plan lists transcription in 100+ languages, and Transkriptor lists recording and translation in 100+. Language count no longer separates them, so test your own language and accent on each free plan." },
+      { q: "Which is better for interviews, lectures or podcasts?", a: "Transkriptor is sold by the hour of audio and lists subtitle creation, SRT export and YouTube-link transcription, which suits batches of recorded files. Fireflies also accepts uploads, but it is built around calendar-joined meetings." },
+      { q: "Is either tool HIPAA compliant?", a: "Fireflies lists HIPAA compliance as an Enterprise-tier feature ($39 per seat, billed annually only). Transkriptor's pricing page does not list HIPAA, so ask the vendor before using it for protected health information." },
+    ],
+  },
   // —— Sep 30: SITE123 vs Wix. SITE123 is blog-only (no constants.ts tool page),
   // Wix has no affiliate program — mirrors pages/compare-data.ts. ——
   {

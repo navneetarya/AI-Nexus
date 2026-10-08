@@ -1444,6 +1444,10 @@ const TOOL_COMPARE_MAP: Record<string, string[]> = {
   flowith:       ['creao-ai-vs-flowith'],
   wegic:         ['wegic-vs-alf-website-studio'],
   'alf-website-studio': ['wegic-vs-alf-website-studio'],
+  fireflies:     ['fireflies-vs-transkriptor'],
+  transkriptor:  ['fireflies-vs-transkriptor'],
+  'presentation-intelligence': ['aippt-vs-presentation-intelligence'],
+  aippt:         ['aippt-vs-presentation-intelligence'],
 };
 
 interface ToolPageProps { tool: Tool; navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
