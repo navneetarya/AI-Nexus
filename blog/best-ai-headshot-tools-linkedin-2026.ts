@@ -13,6 +13,7 @@
 // Trustpilot count but says so explicitly rather than ignoring the counter-claim.
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-headshot-tools-linkedin-2026',
@@ -96,6 +97,17 @@ const post: BlogPost = {
   ],
 
   content: `
+<div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
+  <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Our top pick</strong>
+  <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">HeadshotPro for most LinkedIn profiles</p>
+  <p style="margin:6px 0 0;font-size:15px;line-height:1.6;">$29 one-time for 120+ headshots in 1–2 hours, with a 4.8/5 Trustpilot score from 2,100+ reviews. If you need results in minutes, jump to the comparison table for Pose AI.</p>
+  <div style="margin:10px 0 0;">
+    
+<a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try HeadshotPro →</a>
+  </div>
+  <p style="margin:10px 0 0;font-size:12px;opacity:.75;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
+</div>
+
 <nav aria-label="Table of contents" style="background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#0ea5e9;">Table of Contents</p>
   <ol style="margin:0;padding-left:20px;line-height:2.2;font-size:14px;">
@@ -123,12 +135,12 @@ const post: BlogPost = {
 <p>AI headshot tools solve all three problems. In 2026, tools like HeadshotPro can turn 10–20 casual selfies into 120+ studio-quality professional headshots across multiple backgrounds and styles.</p>
 <p>Delivery takes under 2 hours from $29 one-time — or under 10 seconds if you pick an instant tool. This guide independently researches the seven best options based on user reviews, pricing verification, and documented output quality, and directly addresses the question most people searching this actually have: will anyone be able to tell it's AI?</p>
 <div style="margin:0 0 20px;">
-  <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See HeadshotPro Pricing →</a>
+  <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See HeadshotPro Pricing →</a>
 </div>
 
 <div style="background:rgba(14,165,233,.08);border-left:4px solid #0ea5e9;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
   <p style="margin:0;font-weight:700;font-size:15px;">TL;DR: Best AI Headshot Tool for LinkedIn 2026</p>
-  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best overall:</strong> <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a>, $29 one-time, 120+ headshots, 1–2 hr delivery, 4.8/5 Trustpilot.<br><strong>Best for style variety:</strong> Aragon AI, $29–$49, creative angles and lifestyle shots.<br><strong>Fastest (instant):</strong> Pose AI, from $12/week, results in under 10 seconds.<br><strong>Best premium 4K:</strong> BetterPic, $39–$79 per pack.<br><strong>Best free option:</strong> Remini, free tier available, lower dedicated quality.<br><strong>Best budget:</strong> Try It On AI, $14.99 entry point.</p>
+  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best overall:</strong> <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a>, $29 one-time, 120+ headshots, 1–2 hr delivery, 4.8/5 Trustpilot.<br><strong>Best for style variety:</strong> Aragon AI, $29–$49, creative angles and lifestyle shots.<br><strong>Fastest (instant):</strong> Pose AI, from $12/week, results in under 10 seconds.<br><strong>Best premium 4K:</strong> BetterPic, $39–$79 per pack.<br><strong>Best free option:</strong> Remini, free tier available, lower dedicated quality.<br><strong>Best budget:</strong> Try It On AI, $14.99 entry point.</p>
 </div>
 
 <h2 id="key-takeaways">Key Takeaways</h2>
@@ -250,7 +262,7 @@ const post: BlogPost = {
 </ul>
 <p><strong>Best for:</strong> Professionals, job seekers, freelancers, and remote teams who need a polished LinkedIn photo without booking a photographer. The Premium plan at $59 is the recommended pick if you want maximum style variety for multiple platforms.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get HeadshotPro →</a>
+  <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get HeadshotPro →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you. See our full <a href="/tools/headshotpro/">HeadshotPro tool profile</a> for the complete feature breakdown.
@@ -382,12 +394,12 @@ const post: BlogPost = {
 </ol>
 
 <h2 id="final-verdict">Final Verdict: Best AI Headshot Tools for LinkedIn 2026</h2>
-<p>For most professionals updating their LinkedIn or job application headshot in 2026, <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a> is the clearest choice. At $29–$59 one-time, it delivers the best combination of output quality, style volume, and formal LinkedIn-ready results available. It backs that up with a 4.8/5 Trustpilot score from 2,100+ verified reviews.</p>
+<p>For most professionals updating their LinkedIn or job application headshot in 2026, <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a> is the clearest choice. At $29–$59 one-time, it delivers the best combination of output quality, style volume, and formal LinkedIn-ready results available. It backs that up with a 4.8/5 Trustpilot score from 2,100+ verified reviews.</p>
 <p>Aragon AI is the better pick for creative professionals and personal branding. It offers more style variety per dollar and a faster turnaround. Pose AI is the pick if speed is the deciding factor — under 10 seconds versus 1–2 hours for the top picks. BetterPic is worth the extra cost for a true 4K hero-shot use case. Try It On AI at $14.99 is the lowest-risk entry point for first-time users. If budget is zero, Remini's free plan provides basic headshot generation at lower quality.</p>
 <p>On the question that actually drives most of these searches — will it look obviously AI? — the answer with any of the top four tools here is no, provided your input photos are decent. See the <a href="#recruiter-detection" style="color:#0ea5e9;">recruiter-detection section above</a> for the specific artifacts to watch for.</p>
 
 <ol style="margin:12px 0 12px 24px;line-height:2.4;">
-  <li><strong>Best overall for LinkedIn:</strong> <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a> — $29–$59, 120+ headshots, 4.8/5 rating</li>
+  <li><strong>Best overall for LinkedIn:</strong> <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a> — $29–$59, 120+ headshots, 4.8/5 rating</li>
   <li><strong>Best for creative professionals:</strong> Aragon AI, $29–$49, wider style range, 30–90 min delivery</li>
   <li><strong>Fastest:</strong> Pose AI, under 10 seconds, from $12/week</li>
   <li><strong>Best premium 4K:</strong> BetterPic, $39–$79 per pack</li>
@@ -398,7 +410,7 @@ const post: BlogPost = {
 
 <p>For the full HeadshotPro feature breakdown, see our <a href="/tools/headshotpro/" style="color:#0ea5e9;font-weight:600;">HeadshotPro tool profile</a>. For AI image tools beyond headshots, see <a href="/best-ai-image-tools/" style="color:#0ea5e9;font-weight:600;">Best AI Image Generators 2026</a>.</p>
 <div style="margin:20px 0 0;">
-  <a href="https://www.headshotpro.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get HeadshotPro →</a>
+  <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get HeadshotPro →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:8px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you. See our <a href="/methodology/">editorial methodology</a>.

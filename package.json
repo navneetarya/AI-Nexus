@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/check-affiliate-links.mjs && node scripts/generate-blog-meta.mjs && vite build && node scripts/prerender.mjs && node scripts/generate-llms-full.mjs",
+    "build": "node scripts/check-affiliate-links.mjs && node scripts/generate-blog-meta.mjs && node scripts/generate-blog-og-images.mjs --check --warn && vite build && node scripts/prerender.mjs && node scripts/generate-llms-full.mjs",
     "check:affiliate-links": "node scripts/check-affiliate-links.mjs",
     "check:affiliate-links:update": "node scripts/check-affiliate-links.mjs --update-baseline",
     "generate:blog-meta": "node scripts/generate-blog-meta.mjs",
+    "generate:og": "node scripts/generate-blog-og-images.mjs",
+    "check:og": "node scripts/generate-blog-og-images.mjs --check",
     "generate:llms": "node scripts/generate-llms-full.mjs",
     "verify-prerender": "node scripts/verify-prerender.mjs",
     "preview": "vite preview"

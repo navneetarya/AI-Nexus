@@ -29,6 +29,17 @@ const post: BlogPost = {
   myTake: "This guide uses each tool's cloning requirements and consent policies directly for this guide. The tool comparison matters less here than most guides suggest, since the real risk in this category is consent, not quality.",
 
   content: `
+<div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
+  <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Our top pick</strong>
+  <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">ElevenLabs for voice cloning</p>
+  <p style="margin:6px 0 0;font-size:15px;line-height:1.6;">Builds a usable clone from about one minute of clean audio across 29 languages. Clone only your own voice or one you have clear permission to use.</p>
+  <div style="margin:10px 0 0;">
+    
+<a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs →</a>
+  </div>
+  <p style="margin:10px 0 0;font-size:12px;opacity:.75;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
+</div>
+
 <img src="https://images.unsplash.com/photo-1615661434109-739052a73003?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A studio microphone on a stand, used for recording a voice sample" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Voice cloning went from a research demo to a one-minute setup in about two years. Anyone can now train a usable clone of their own voice on a laptop, no studio or engineer required. The tools below differ mainly in cloning speed, output naturalness, and whether they're built for consent-safe commercial use.</p>

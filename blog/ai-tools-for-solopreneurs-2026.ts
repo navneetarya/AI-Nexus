@@ -99,6 +99,17 @@ const post: BlogPost = {
   ],
   wordCount: 3140,
   content: `
+<div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
+  <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Where to start</strong>
+  <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">Start the stack with Taskade and Make.com</p>
+  <p style="margin:6px 0 0;font-size:15px;line-height:1.6;">Taskade covers task management (free to $8/month) and Make.com is the automation glue (from $9/month). Start on the free plans and upgrade only when you hit a limit.</p>
+  <div style="margin:10px 0 0;">
+    
+<a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>    <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com →</a>
+  </div>
+  <p style="margin:10px 0 0;font-size:12px;opacity:.75;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
+</div>
+
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The complete AI tool stack for solopreneurs in 2026 covers eight jobs. <strong>Claude or ChatGPT</strong> (thinking partner, $20/month) and <strong>Taskade</strong> (task management, free–$8/month) cover thinking and planning. <strong>Perplexity</strong> (research, free–$20/month) and <strong>Ocoya</strong> (social scheduling, from $15/month) cover research and marketing.</p>

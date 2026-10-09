@@ -77,6 +77,17 @@ const post: BlogPost = {
   },
 
   content: `
+<div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
+  <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick picks</strong>
+  <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">Match the agent to the owner</p>
+  <p style="margin:6px 0 0;font-size:15px;line-height:1.6;">Lindy.ai suits non-technical owners (from ~$20/mo). Relevance AI suits custom, auditable workflows (from $19/mo). Make.com is the best automation-native option, from $9/mo.</p>
+  <div style="margin:10px 0 0;">
+    
+<a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI →</a>    <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com →</a>    <a href="${AFFILIATE_LINKS['lindy']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Lindy.ai →</a>
+  </div>
+  <p style="margin:10px 0 0;font-size:12px;opacity:.75;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
+</div>
+
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Four platforms lead the way for small businesses in 2026. <strong>Lindy.ai</strong> is best for non-technical owners, handling email, scheduling, and lead qualification from ~$20/mo. <strong>Relevance AI</strong> is best for custom, easy-to-check agent workflows, from $19/mo.</p>

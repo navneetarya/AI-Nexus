@@ -2,27 +2,72 @@
 /**
  * scripts/generate-blog-og-images.mjs
  *
- * Generates 1200x630 WebP OG images for every blog post.
- * Run once: node scripts/generate-blog-og-images.mjs
- * Images are written to public/og/blog/<slug>.webp
+ * Generates 1200x630 WebP OG images for blog posts -> public/og/blog/<slug>.webp
+ *
+ * PHASE 2 REFACTOR: there is no hardcoded POSTS list any more.
+ * The post list is read from blog/metadata.ts (auto-generated from blog/index.ts),
+ * so a new post only needs `npm run generate:og` -- no script edit, and
+ * scripts/prerender.mjs picks the file up automatically.
+ *
+ * Usage:
+ *   node scripts/generate-blog-og-images.mjs                 # create only MISSING images (default, safe)
+ *   node scripts/generate-blog-og-images.mjs --force         # regenerate every image
+ *   node scripts/generate-blog-og-images.mjs --slug a,b      # (re)generate only these slugs
+ *   node scripts/generate-blog-og-images.mjs --check         # report missing images, write nothing, exit 1 if any
+ *   node scripts/generate-blog-og-images.mjs --check --warn  # same, but always exit 0 (used inside `npm run build`)
  *
  * Design: dark navy gradient + left accent bar + wrapped title +
- *         category pill + AI Nexus branding.
- * Uses `sharp` (already in devDependencies) — no extra packages needed.
+ *         category pill + AI Nexus branding. Uses `sharp` (already a devDependency).
  */
 
 import fs   from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createRequire } from 'node:module';
 import sharp from 'sharp';
+import ts from 'typescript';
 
 const __dir  = path.dirname(fileURLToPath(import.meta.url));
 const ROOT   = path.join(__dir, '..');
 const OUT    = path.join(ROOT, 'public', 'og', 'blog');
+const META   = path.join(ROOT, 'blog', 'metadata.ts');
 const SITE   = 'ainexustools.online';
 const W = 1200, H = 630;
 
-fs.mkdirSync(OUT, { recursive: true });
+const args  = process.argv.slice(2);
+const FORCE = args.includes('--force');
+const CHECK = args.includes('--check');
+const WARN  = args.includes('--warn');
+const slugArgIdx = args.indexOf('--slug');
+const ONLY  = slugArgIdx >= 0 && args[slugArgIdx + 1]
+  ? new Set(args[slugArgIdx + 1].split(',').map(s => s.trim()).filter(Boolean))
+  : null;
+
+// ── Read the post list from blog/metadata.ts (no regex: transpile + evaluate) ─
+function loadPosts() {
+  if (!fs.existsSync(META)) {
+    console.error('✗  blog/metadata.ts not found. Run `npm run generate:blog-meta` first.');
+    process.exit(1);
+  }
+  const js = ts.transpileModule(fs.readFileSync(META, 'utf8'), {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 },
+  }).outputText;
+  const mod = { exports: {} };
+  new Function('module', 'exports', 'require', js)(mod, mod.exports, createRequire(import.meta.url));
+  const list = mod.exports.BLOG_POSTS_META;
+  if (!Array.isArray(list) || !list.length) {
+    console.error('✗  BLOG_POSTS_META is empty or missing in blog/metadata.ts');
+    process.exit(1);
+  }
+  return list.map(p => ({ slug: p.slug, title: p.seoTitle || p.title }));
+}
+
+// Long SEO titles ("Foo 2026: Bar Baz Ranked") look cramped on a card -> keep the headline part.
+function headline(title) {
+  const t = String(title).trim();
+  const m = t.match(/^(.{15,}?)(?::\s| — | – )/);
+  return (m ? m[1] : t).trim();
+}
 
 // ── Accent colours by content category ───────────────────────────────────────
 function accentColor(slug, title) {
@@ -39,6 +84,10 @@ function accentColor(slug, title) {
     return { hex: '#F97316', r: 249, g: 115, b: 22  }; // orange — India
   if (t.includes('social') || t.includes('marketing') || t.includes('ocoya') || t.includes('buffer') || t.includes('email'))
     return { hex: '#10B981', r: 16,  g: 185, b: 129 }; // emerald — Marketing/Email
+  if (!t.includes('coding') && !t.includes('claude code') && (t.includes('agent') || t.includes('mcp') || t.includes('n8n') || t.includes('no-code')))
+    return { hex: '#8B5CF6', r: 139, g: 92,  b: 246 }; // violet — Agents/Automation
+  if (t.includes('resume') || t.includes('ats-') || t.includes('recruit') || t.includes('contract'))
+    return { hex: '#F43F5E', r: 244, g: 63,  b: 94  }; // rose — Career/HR/Legal
   if (t.includes('coding') || t.includes('replit') || t.includes('github') || t.includes('developer') || t.includes('vibe') || t.includes('cursor') || t.includes('copilot') || t.includes('claude code') || t.includes('api') || t.includes('automation'))
     return { hex: '#8B5CF6', r: 139, g: 92,  b: 246 }; // violet — Coding/Dev
   if (t.includes('student') || t.includes('teacher') || t.includes('education') || t.includes('free'))
@@ -65,6 +114,7 @@ function wrapText(text, maxChars = 36) {
     }
   }
   if (line) lines.push(line);
+  if (lines.length > 3) lines[2] = lines[2].replace(/[ ,;:.-]*$/, '') + '…'; // overflow -> ellipsis
   return lines.slice(0, 3); // max 3 lines
 }
 
@@ -77,6 +127,9 @@ function categoryLabel(slug, title) {
   if (t.includes('video') || t.includes('youtube') || t.includes('youtuber')) return 'AI Video';
   if (t.includes('email'))                                                      return 'Email Marketing';
   if (t.includes('social') || t.includes('marketing'))                         return 'Marketing';
+  if (!t.includes('coding') && !t.includes('claude code') && (t.includes('agent') || t.includes('mcp') || t.includes('n8n') || t.includes('no-code'))) return 'AI Agents';
+  if (t.includes('resume') || t.includes('ats-') || t.includes('recruit'))     return 'Career & Hiring';
+  if (t.includes('contract'))                                                   return 'AI Legal';
   if (t.includes('cursor') || t.includes('copilot') || t.includes('vibe') || t.includes('claude code')) return 'AI Coding';
   if (t.includes('coding') || t.includes('developer') || t.includes('replit') || t.includes('api') || t.includes('automation')) return 'AI Coding';
   if (t.includes('student') || t.includes('teacher'))                          return 'Education';
@@ -95,7 +148,7 @@ function categoryLabel(slug, title) {
 // ── Build SVG for a single post ───────────────────────────────────────────────
 function buildSvg({ slug, title }) {
   const ac   = accentColor(slug, title);
-  const lines = wrapText(title.replace(/ — /, '\n').split('\n')[0].replace(/ — .*/,'').trim(), 30);
+  const lines = wrapText(headline(title), 30);
   const cat  = categoryLabel(slug, title);
 
   // Font sizes
@@ -187,100 +240,34 @@ function escSvg(s) {
     .replace(/"/g, '&quot;');
 }
 
-// ── Blog posts to generate ────────────────────────────────────────────────────
-const POSTS = [
-  // ── Step D (Phase 1 affiliate plan), Sep 2026 ──
-  { slug: 'best-ai-transcription-software-2026',       title: 'Best AI Transcription Software 2026' },
-  { slug: 'best-ai-spreadsheet-tools-2026',            title: 'Best AI Spreadsheet Tools Compared 2026' },
-  { slug: 'gamma-ai-review-2026',                        title: 'Gamma AI Review 2026' },
-  { slug: 'best-ai-voice-generators-for-voiceovers-2026', title: 'Best AI Voice Generators for Voiceovers' },
-  { slug: 'best-ai-voice-generators-for-podcasts-2026', title: 'Best AI Voice Generators for Podcasts' },
-  { slug: 'best-ai-voice-cloning-tools-2026',           title: 'Best AI Voice Cloning Tools 2026' },
-  { slug: 'best-ai-voice-for-faceless-youtube-channels', title: 'Best AI Voice for Faceless YouTube' },
-  { slug: 'best-ai-voice-generators-for-youtube-2026', title: 'Best AI Voice Generators for YouTube' },
-  { slug: 'murf-ai-alternatives-2026',                 title: 'Murf AI Alternatives 2026' },
-  { slug: 'elevenlabs-alternatives-2026',              title: 'ElevenLabs Alternatives 2026' },
-  { slug: 'best-text-to-speech-software-2026',          title: 'Best Text-to-Speech Software' },
-  { slug: 'best-ai-voice-generators-2026',               title: 'Best AI Voice Generators 2026' },
-  { slug: 'best-ai-interview-prep-tools-2026',            title: 'Best AI Interview Prep Tools 2026' },
-  { slug: 'best-ai-seo-content-optimization-tools-2026', title: 'Best AI SEO Content Optimization Tools 2026' },
-  { slug: 'best-ai-music-generator-tools-2026',            title: 'Best AI Music Generators 2026' },
-  { slug: 'best-ai-website-builders-2026',               title: 'Best AI Website Builders 2026' },
-  { slug: 'launch-an-ai-built-website-2026',             title: 'How to Launch an AI-Built Website in 2026' },
-  { slug: 'best-ai-receptionist-small-business-2026',    title: 'Best AI Receptionist for Small Business 2026' },
-  { slug: 'best-ai-photo-upscaler-tools-2026',           title: 'Best AI Image Upscaler Tools 2026' },
-  // ── Batch 1 — original 27 (already generated; re-running is safe) ──────────
-  { slug: 'best-ai-writing-tools-2026',                  title: 'Best AI Writing Tools 2026' },
-  { slug: 'best-ai-writing-tools-for-beginners-2026',    title: '7 Best AI Writing Tools for Beginners 2026' },
-  { slug: 'best-ai-tools-for-freelancers-2026',          title: 'Best AI Tools for Freelancers 2026' },
-  { slug: 'best-grammarly-alternatives',                  title: 'Best Grammarly Alternatives 2026' },
-  { slug: 'best-podcastle-alternatives',                  title: 'Best Podcastle Alternatives 2026' },
-  { slug: 'best-ai-tools-for-social-media-2026',         title: 'Best AI Tools for Social Media 2026' },
-  { slug: 'how-to-use-rytr-to-write-blog-posts',         title: 'How to Use Rytr to Write Blog Posts' },
-  { slug: 'ai-tools-for-students-free-2026',             title: 'Best Free AI Tools for Students 2026' },
-  { slug: 'best-ai-podcast-tools-2026',                  title: 'Best AI Podcast Tools 2026' },
-  { slug: 'best-notion-ai-alternatives-2026',            title: 'Best Notion AI Alternatives 2026' },
-  { slug: 'how-to-use-ai-for-content-creation-2026',     title: 'How to Use AI for Content Creation 2026' },
-  { slug: 'best-invideo-alternatives-2026',              title: 'Best InVideo AI Alternatives 2026' },
-  { slug: 'jasper-ai-alternatives',                       title: 'Best Jasper AI Alternatives 2026' },
-  { slug: 'chatgpt-alternatives-free-2026',              title: 'Best Free ChatGPT Alternatives 2026' },
-  { slug: 'best-ai-coding-tools-2026',                   title: 'Best AI Coding Tools 2026' },
-  { slug: 'best-ai-logo-makers-free-2026',               title: 'Best Free AI Logo Makers 2026' },
-  { slug: 'best-ai-marketing-tools-2026',                title: 'Best AI Marketing Tools 2026' },
-  { slug: 'ai-tools-for-teachers-2026',                  title: 'Best AI Tools for Teachers 2026' },
-  { slug: 'best-midjourney-alternatives-2026',           title: 'Best Midjourney Alternatives 2026' },
-  { slug: 'best-ai-tools-in-india-2026',                 title: 'Best AI Tools in India 2026' },
-  { slug: 'taskade-vs-notion-vs-asana-2026',             title: 'Taskade vs Notion vs Asana 2026' },
-  { slug: 'leonardo-vs-midjourney-2026',                 title: 'Leonardo AI vs Midjourney 2026' },
-  { slug: 'best-free-ai-tools-for-students-in-india-2026', title: 'Best Free AI Tools for Students in India 2026' },
-  { slug: 'best-ai-tools-for-freelancers-india-2026',    title: 'Best AI Tools for Freelancers in India 2026' },
-  { slug: 'best-ai-tools-for-content-creators-free-2026', title: 'Best Free AI Tools for Content Creators 2026' },
-  { slug: 'best-free-ai-writing-tools-2026',             title: 'Best Free AI Writing Tools 2026' },
-  { slug: 'is-grammarly-premium-worth-it-2026',          title: 'Is Grammarly Premium Worth It in 2026?' },
-
-  // ── Batch 2 — 23 new/missing posts (Week 1–4 additions) ───────────────────
-
-  // Fix: had ogImage field but .webp file was missing (404 on social share)
-  { slug: 'best-vibe-coding-tools-2026',                 title: 'Best Vibe Coding Tools 2026: Lovable vs Bolt vs v0' },
-  { slug: 'gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026',  title: 'GPT-5.5 vs Claude Opus 4.8 vs Grok 4 (2026)' },
-
-  // Had ogImage pointing to generic webp — now get unique images
-  { slug: 'best-ai-chatbot-2026',                        title: 'Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini' },
-  { slug: 'chatgpt-free-vs-claude-free-vs-gemini-free-2026', title: 'ChatGPT Free vs Claude Free vs Gemini Free 2026' },
-  { slug: 'claude-code-vs-github-copilot-vs-replit-2026', title: 'Claude Code vs GitHub Copilot vs Replit 2026' },
-  { slug: 'cursor-ai-review-2026',                       title: 'Cursor AI Review 2026: Best AI Code Editor?' },
-  { slug: 'google-gemini-ai-review-2026',                title: 'Google Gemini AI Review 2026' },
-  { slug: 'grok-4-vs-chatgpt-vs-claude-content-creators-2026', title: 'Grok 4 vs ChatGPT vs Claude for Creators 2026' },
-  { slug: 'perplexity-ai-review-2026',                   title: 'Perplexity AI Review 2026: Worth It vs Google?' },
-  { slug: 'perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026', title: 'Perplexity Pro vs ChatGPT Plus vs Claude Pro 2026' },
-
-  // Added Jul 28, 2026 — new post from this session, run script to generate
-  { slug: 'best-nano-banana-pro-alternatives-2026',      title: 'Best Nano Banana Pro Alternatives 2026' },
-
-  // No ogImage field at all — completely missing
-  { slug: 'ai-api-pricing-comparison-2026',              title: 'AI API Pricing Comparison 2026' },
-  { slug: 'ai-ecosystem-growth-report-2026',             title: 'AI Ecosystem Growth Report 2026' },
-  { slug: 'best-ai-email-marketing-tools-2026',          title: 'Best AI Email Marketing Tools 2026' },
-  { slug: 'best-ai-headshot-tools-linkedin-2026',        title: 'Best AI Headshot Tools for LinkedIn 2026' },
-  { slug: 'best-ai-meeting-tools-2026',                  title: 'Best AI Meeting Tools 2026' },
-  { slug: 'best-ai-tools-for-automation-engineers-2026', title: 'Best AI Tools for Automation Engineers 2026' },
-  { slug: 'best-ai-tools-for-developers-2026',           title: 'Best AI Tools for Developers 2026' },
-  { slug: 'best-ai-tools-for-startups-2026',             title: 'Best AI Tools for Startups 2026' },
-  { slug: 'best-ai-tools-for-youtube-creators-2026',     title: 'Best AI Tools for YouTube Creators 2026' },
-  { slug: 'best-ai-tools-for-youtubers-2026',            title: 'Best AI Tools for YouTubers 2026' },
-  { slug: 'best-free-ai-tool-plans-2026',                title: 'Best Free AI Tool Plans 2026' },
-  { slug: 'cheapest-ai-coding-tools-2026',               title: 'Cheapest AI Coding Tools in 2026' },
-  { slug: 'fastest-growing-ai-startups-2026',            title: 'Fastest Growing AI Startups 2026' },
-
-  // Added Sep 2026 — new comparison post, no OG image existed yet
-  { slug: 'best-gamma-alternatives-2026',                title: 'Best Gamma Alternatives 2026' },
-];
-
 // ── Generate ─────────────────────────────────────────────────────────────────
-console.log(`\n🎨  Generating ${POSTS.length} blog OG images → public/og/blog/\n`);
+fs.mkdirSync(OUT, { recursive: true });
+
+const all    = loadPosts();
+const wanted = ONLY ? all.filter(p => ONLY.has(p.slug)) : all;
+if (ONLY) {
+  const known = new Set(all.map(p => p.slug));
+  for (const s of ONLY) if (!known.has(s)) console.warn(`⚠  --slug ${s}: not found in blog/metadata.ts`);
+}
+const exists  = p => fs.existsSync(path.join(OUT, `${p.slug}.webp`));
+const todo    = wanted.filter(p => FORCE || ONLY || !exists(p));
+
+if (CHECK) {
+  const missing = all.filter(p => !exists(p));
+  if (!missing.length) {
+    console.log(`✅  All ${all.length} blog posts have a dedicated OG image.`);
+    process.exit(0);
+  }
+  console.warn(`⚠  ${missing.length} of ${all.length} blog posts have no dedicated OG image (they share a generic one on social cards):`);
+  missing.forEach(p => console.warn(`   - ${p.slug}`));
+  console.warn('   Fix: npm run generate:og   then commit public/og/blog/');
+  process.exit(WARN ? 0 : 1);
+}
+
+console.log(`\n🎨  ${all.length} posts in metadata, ${all.filter(exists).length} already have images, generating ${todo.length}\n`);
 
 let ok = 0, fail = 0;
-for (const post of POSTS) {
+for (const post of todo) {
   const outPath = path.join(OUT, `${post.slug}.webp`);
   try {
     const svg = buildSvg(post);
@@ -296,5 +283,6 @@ for (const post of POSTS) {
   }
 }
 
-console.log(`\n✅  Done. ${ok} images generated${fail ? `, ${fail} failed` : ''}.`);
-console.log(`   All images written to public/og/blog/\n`);
+console.log(`\n✅  Done. ${ok} generated${fail ? `, ${fail} failed` : ''}. Output: public/og/blog/`);
+if (todo.length) console.log('   Commit the new .webp files -- the build does not generate them.\n');
+process.exit(fail ? 1 : 0);

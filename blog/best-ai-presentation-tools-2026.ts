@@ -138,6 +138,17 @@ const post: BlogPost = {
   ],
   wordCount: 3620,
   content: `
+<div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
+  <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Our top pick</strong>
+  <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">Gamma for most people</p>
+  <p style="margin:6px 0 0;font-size:15px;line-height:1.6;">Fastest web-native decks, from free to $18/month. If your slides must stay grounded in your own documents, NotebookLM is the free alternative covered below.</p>
+  <div style="margin:10px 0 0;">
+    
+<a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  </div>
+  <p style="margin:10px 0 0;font-size:12px;opacity:.75;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
+</div>
+
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI presentation tools in 2026: <strong>Gamma</strong> (fastest web-native decks, free–$18/month) wins for speed and design quality. <strong>NotebookLM</strong> (completely free) wins for document-grounded slides that can't invent statistics. <strong>Beautiful.ai</strong> (from $12/month, no free plan) wins for guaranteed-polished team decks. <strong>Prezi AI</strong> wins for live audience polls and viewer analytics.</p>
