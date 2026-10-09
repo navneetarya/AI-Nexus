@@ -213,6 +213,7 @@ const post: BlogPost = {
   <li><strong>Project management:</strong> Taskade free, covers 1–3 clients comfortably</li>
 </ol>
 <p>Total monthly cost to start: ₹0. Total monthly cost at full stack: ₹1,948/month. That's the equivalent of one mid-tier Fiverr order recovered in AI productivity savings.</p>
+<p>For client agreements, <a href="${AFFILIATE_LINKS['signnow']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:#0D9488;font-weight:600;">signNow</a> handles e-signatures (not AI): 7-day trial, no free plan.</p>
 <h3>Beyond the AI stack: mobile data when client work takes you abroad</h3>
 <p>One cost sits outside the stack above and is not included in those totals: mobile data when a client meeting, conference or work trip takes you abroad. Esimatic is a prepaid travel eSIM app that, according to its official site, covers 200+ countries, installs by QR code or in-app, allows hotspot sharing for laptop work, and describes its plans as having no hidden fees or roaming charges. Its site also says activation involves no KYC process and lists longer-validity plans of up to 180 days.</p>
 <p>It needs an eSIM-compatible phone, so check your handset against Esimatic's compatible-device list before buying, and compare the plan for your exact destination because coverage and pricing vary by country.</p>

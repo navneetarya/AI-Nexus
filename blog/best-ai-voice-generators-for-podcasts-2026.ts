@@ -16,6 +16,7 @@
 // against every photo ID used anywhere in blog/*.ts — zero repeats across the whole site.
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-voice-generators-for-podcasts-2026',
@@ -102,7 +103,7 @@ const post: BlogPost = {
 <p><strong>Best for this job:</strong> ElevenLabs, for the steady tone a cloned intro voice gives. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or the broader <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 
 <h2>Dubbing an episode into another language</h2>

@@ -17,6 +17,7 @@
 
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'elevenlabs-youtube-commercial-rights-2026',
@@ -86,7 +87,7 @@ const post: BlogPost = {
 <p>The Free plan is a poor fit for a monetized channel. It can show whether you like the voice quality.</p><p>It cannot confirm your real use case. Paid rights begin only after you upgrade.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ElevenLabs' commercial plans →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ElevenLabs' commercial plans →</a>
 </div>
 
 <h2>Question 2: Does YouTube require you to disclose an AI voiceover?</h2>
@@ -111,7 +112,7 @@ const post: BlogPost = {
 <p>A creator on Starter using a stock voice is covered on both fronts. ElevenLabs grants commercial rights, and YouTube usually does not require disclosure for a stock voice.</p><p>This is the simplest case for faceless channels and explainer videos.</p>
 
 <p>Voice cloning needs more care when it targets a specific person. This includes a co-host "character" made from your voice or a licensed voice clone.</p><p>Check ElevenLabs' consent rules and YouTube's disclosure toggle before publishing.</p>
-<div style="margin:14px 0 24px;"><a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs with commercial rights →</a></div>
+<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs with commercial rights →</a></div>
 
 <h2>What YouTube does if you get disclosure wrong</h2>
 <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A video creator checking a platform policy notice before publishing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -133,7 +134,7 @@ const post: BlogPost = {
 <p>Yes, ElevenLabs can be used for monetized YouTube content on a paid plan. Commercial rights are binary by tier.</p><p>The disclosure rule is narrower. Generic narration usually needs no label. A clone of a specific real person usually does. Use consented or licensed voices and check both policies before publishing.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs' Starter plan →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs' Starter plan →</a>
 </div>
 `,
 

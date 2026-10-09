@@ -195,7 +195,7 @@ const post: BlogPost = {
 <p><a href="/tools/murf-ai/" style="color:#0D9488;font-weight:600;">→ Read the full Murf AI review</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

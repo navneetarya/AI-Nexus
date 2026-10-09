@@ -15,6 +15,7 @@
 // Word count: ~2,560 words (prose, excludes table cells) | Published: 2026-08-10 | Author: Navneet Arya
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-music-generator-tools-2026',
@@ -124,7 +125,7 @@ const post: BlogPost = {
 <p>Music generation is credit-hungry at roughly 900 credits per minute. The free plan's 10,000 monthly credits only stretch to about 11 minutes of music, non-commercial. Starter unlocks commercial rights at $6/month for 30,000 credits, and Creator at $22/month adds professional voice cloning alongside its 121,000-credit pool.</p>
 <p>ElevenLabs' G2 score is a strong 4.5/5 from 1,140+ reviews. Its Trustpilot score drops to 3.0/5 from over 600 reviews, a gap driven mostly by billing complaints. The biggest one: unused credits get forfeited on a plan downgrade, not an audio-quality issue.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

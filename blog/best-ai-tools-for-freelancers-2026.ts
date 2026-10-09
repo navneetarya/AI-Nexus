@@ -233,6 +233,7 @@ const post: BlogPost = {
   <li>You manage client social media → <strong>Ocoya</strong></li>
   <li>You build things and hit unfamiliar tech → <strong>Replit</strong></li>
   <li>You retype receipts, bank PDFs or client data into spreadsheets → <strong><a href="${AFFILIATE_LINKS['popai-sheets']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">PopAi Sheets</a></strong> (free tier; spot-check extracted numbers)</li>
+  <li>You send client contracts and need them signed → <strong><a href="${AFFILIATE_LINKS['signnow']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">signNow</a></strong> (e-signature, not an AI tool; 7-day free trial, no permanent free plan)</li>
 </ul>
 <p>Use the free plan for 2–3 weeks. If it saves you more than 2–3 hours per week, the paid plan pays for itself. If it doesn't, move on. Not every tool fits every workflow.</p>
 

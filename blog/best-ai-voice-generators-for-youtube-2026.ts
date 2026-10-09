@@ -12,6 +12,7 @@
 // any image used in this cluster or the other 85 posts on the site.
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-voice-generators-for-youtube-2026',
@@ -95,7 +96,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> Short-form creators and faceless channels that need one consistent voice across dozens of uploads a month. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or see <a href="/blog/elevenlabs-alternatives-2026/">what to use instead</a> if cloning isn't your priority.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -112,7 +113,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> Explainer channels, tutorials, and e-learning-style long-form content where the video timeline matters as much as the voice. See our full <a href="/tools/murf-ai/">Murf AI review</a> or the direct <a href="/blog/murf-ai-alternatives-2026/">Murf AI alternatives comparison</a>.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
 
 <h2>Short-form vs long-form: the real difference</h2>
@@ -210,8 +211,8 @@ const post: BlogPost = {
 <p>Still deciding between the two? The full <a href="/compare/murf-ai-vs-elevenlabs/">Murf AI vs ElevenLabs comparison</a> breaks down pricing, cloning, and language coverage side by side.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
 `,
 

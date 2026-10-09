@@ -1,3 +1,4 @@
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 ﻿import { BlogPost } from './types';
 
 const post: BlogPost = {
@@ -178,7 +179,7 @@ const post: BlogPost = {
   <li><strong>Murf AI:</strong> 10 minutes of voiceover per month, enough for testing, not production use.</li>
 </ul>
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
 <p>The distinction matters: a free plan should allow ongoing productive use without an expiry or a de facto limit that forces upgrade after the first week.</p>
 

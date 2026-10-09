@@ -59,6 +59,14 @@ const PATTERNS = [
     re: /https?:\/\/[^\s'"`)<]*\b(?:sjv\.io|pxf\.io|ojrq\.net|7eer\.net|evyy\.net|ojmp\.net|prf\.hn|mno8\.net|8odi\.net)\b[^\s'"`)<]*/gi,
   },
   {
+    // Oct 2026: ElevenLabs and Murf AI are PartnerStack links (try.elevenlabs.io/<id>, get.murf.ai/<id>)
+    // that used to be hardcoded in ~25 posts and were invisible to this guard. They now live only in
+    // constants.ts. The {10,} length keeps plain pages such as get.murf.ai/pricing from matching.
+    name: 'PartnerStack tracking link (try.elevenlabs.io / get.murf.ai)',
+    blocking: true,
+    re: /https?:\/\/(?:try\.elevenlabs\.io|get\.murf\.ai)\/[a-z0-9]{10,}[^\s'"`)<]*/gi,
+  },
+  {
     name: 'referral query param (?via=)',
     blocking: false,
     re: /https?:\/\/[^\s'"`)<]*[?&]via=[^\s'"`)<]*/gi,
@@ -153,7 +161,7 @@ let failed = false;
 
 if (blocking.length > 0) {
   failed = true;
-  console.error('\n✖ BLOCKING: hardcoded impact.com affiliate link(s) found.\n');
+  console.error('\n✖ BLOCKING: hardcoded impact.com / PartnerStack affiliate link(s) found.\n');
   for (const v of blocking) {
     console.error(`  ${v.rel}:${v.line}\n    ${v.url}\n`);
   }
@@ -191,7 +199,7 @@ if (regressions.length > 0) {
 if (failed) process.exit(1);
 
 const legacyTotal = Object.values(current).reduce((a, b) => a + b, 0);
-console.log('✓ check-affiliate-links: no hardcoded impact.com links, no new violations.');
+console.log('✓ check-affiliate-links: no hardcoded impact.com / PartnerStack links, no new violations.');
 if (legacyTotal > 0) {
   console.log(
     `  (${legacyTotal} legacy ?via=/?fpr= link(s) still baselined — migrate over time, ` +

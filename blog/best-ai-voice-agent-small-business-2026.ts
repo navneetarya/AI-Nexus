@@ -11,6 +11,7 @@
 // Word count: ~2,900 words | Published: 2026-07-25 | Author: Navneet Arya
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-voice-agent-small-business-2026',
@@ -170,7 +171,7 @@ const post: BlogPost = {
 
 <p>Free plan covers 10,000 characters/month \u2014 pair with Retell or Vapi for a more natural-sounding agent.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free \u2192</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free \u2192</a>
 </div>
 
 <p style="font-size:12px;color:var(--text-muted,#888);margin:4px 0 24px;text-align:center">

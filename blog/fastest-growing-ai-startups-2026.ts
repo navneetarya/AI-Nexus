@@ -1,3 +1,4 @@
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 ﻿import { BlogPost } from './types';
 
 const post: BlogPost = {
@@ -152,7 +153,7 @@ const post: BlogPost = {
 <p>Older voice synthesis tools couldn't touch that level of realism.</p>
 <p>ElevenLabs' API also became the standard voice integration for third-party apps. That gave it a distribution flywheel, pushing growth well beyond its own consumer products.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 
 <h3>Foundation Model Companies</h3>

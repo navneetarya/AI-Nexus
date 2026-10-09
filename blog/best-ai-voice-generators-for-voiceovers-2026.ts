@@ -17,6 +17,7 @@
 // so no redundant heading is written here (lesson learned from the other 8 cluster posts).
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-voice-generators-for-voiceovers-2026',
@@ -95,7 +96,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> Ad reads, e-learning modules, and any commercial video where the voiceover needs to land on an exact timeline. Read our full <a href="/tools/murf-ai/">Murf AI review</a> or the direct <a href="/compare/murf-ai-vs-elevenlabs/">Murf AI vs ElevenLabs comparison</a>.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -110,7 +111,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> Brand voiceover work where a consistent cloned voice matters more than an automated video-sync step. See our <a href="/blog/murf-ai-alternatives-2026/">Murf AI alternatives comparison</a> for the reverse angle.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 
 <h2>E-learning and corporate training voiceovers</h2>
@@ -179,7 +180,7 @@ const post: BlogPost = {
 <p>For most commercial voiceover work, Murf AI is the stronger starting point. The script-to-video sync solves a real production problem ElevenLabs simply doesn't address, and $19/month is a reasonable cost against what a voice actor would charge per project. Reach for ElevenLabs specifically when a cloned, consistent brand voice matters more than the production workflow around it.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
 `,
 

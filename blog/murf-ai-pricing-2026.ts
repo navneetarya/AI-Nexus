@@ -28,6 +28,7 @@
 
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'murf-ai-pricing-2026',
@@ -56,7 +57,7 @@ const post: BlogPost = {
 </div>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Murf AI's current plans →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Murf AI's current plans →</a>
   <a href="/tools/murf-ai/" style="display:inline-block;color:#0D9488;padding:10px 4px 0 0;margin:6px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Murf AI review →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
@@ -119,7 +120,7 @@ const post: BlogPost = {
 </div>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start with Murf's free plan →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start with Murf's free plan →</a>
 </div>
 
 <h2>Where the free plan actually stops being usable</h2>
@@ -175,7 +176,7 @@ const post: BlogPost = {
 <p>Enterprise also adds unlimited generation, the Falcon API, SSO, and compliance certifications — SOC 2, ISO 27001, HIPAA, GDPR, and ISO 42001. That's why its pricing lives in a completely different bracket from the self-serve tiers.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI's Creator plan →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI's Creator plan →</a>
 </div>
 
 <h2>Murf's API pricing is a separate cost entirely</h2>
@@ -223,7 +224,7 @@ const post: BlogPost = {
 <p>And if voice cloning is the actual feature you're after, no Murf plan below Enterprise gets you there. That single fact should decide the comparison before price does.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Murf AI's pricing page →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Murf AI's pricing page →</a>
 </div>
   `.trim(),
 

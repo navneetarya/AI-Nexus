@@ -10,6 +10,7 @@
 // elevenlabs-alternatives-2026.ts, verified the same week.
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'murf-ai-alternatives-2026',
@@ -93,7 +94,7 @@ const post: BlogPost = {
 <p><strong>Switch to ElevenLabs if:</strong> cloning quality and voice realism matter more than a built-in video workflow. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or the direct <a href="/blog/elevenlabs-alternatives-2026/">ElevenLabs alternatives comparison</a> if you want the reverse angle.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -184,7 +185,7 @@ const post: BlogPost = {
 <p>Its free plan gives 10 minutes of voiceover a month, paid plans start at $19/month, and the 120-plus voice library across 20 languages covers most commercial needs. See our full <a href="/tools/murf-ai/">Murf AI review</a> if you haven't ruled it out yet.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
 
 <h2>Which pick fits your use case</h2>
@@ -201,7 +202,7 @@ const post: BlogPost = {
 <p>Most people comparing Murf alternatives don't need to leave Murf entirely. The switch only makes sense when Murf is missing one specific thing you need, cloning, an avatar, a lower price, or enterprise terms. For everyone else, Murf's video-sync workflow is still hard to beat.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 `,
 

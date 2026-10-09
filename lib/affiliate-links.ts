@@ -66,6 +66,9 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   // Added Oct 8 2026 (Impact). Esimatic is a travel eSIM app, off-niche for an AI tools site: use only as a
   // contextual mention (e.g. India / remote-work content), not as a tool page or comparison.
   esimatic: 'https://esimsia.sjv.io/n4JDe7?utm_source=esimatic&utm_medium=affiliate',
+  // Added Oct 9 2026 (Impact). signNow is an e-signature tool, NOT an AI contract analyzer: use it only for the
+  // "after review, sign it" step (contract-analysis post, freelancer posts). No tool page.
+  signnow: 'https://signnow.sjv.io/OYJYXA?utm_source=signnow&utm_medium=affiliate',
   // Renderforest has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['renderforest']).
 };
 

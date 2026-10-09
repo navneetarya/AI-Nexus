@@ -15,12 +15,17 @@
 //   - https://www.harvey.ai/roi-calculator/law-firm (Harvey — enterprise-only positioning)
 //   - https://www.luminance.com/ (Luminance — enterprise contract platform)
 //   - https://www.spellbook.legal/partners (Spellbook — Partner/Channel Program, not self-serve affiliate)
+// Oct 9 2026: added signNow (Impact) as a contextual "review -> sign" step only. signNow is an e-signature
+// product, not a contract analyzer, so the copy makes no AI-review claim about it. Facts used: 7-day free trial,
+// no permanent free tier (per third-party reviews + signNow's own pricing page); price is deliberately not quoted
+// because independent sources disagree (roughly $8-$50/month depending on plan) - verify on signNow's pricing page.
 // Third-party per-seat pricing estimates (Spellbook, Harvey, Luminance all withhold public
 // pricing) are cross-referenced across multiple independent industry-analysis sources and
 // presented as ranges, not single figures, consistent with how those sources report them.
 
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'ai-contract-analysis-tools-2026',
@@ -64,6 +69,10 @@ const post: BlogPost = {
     {
       q: 'What should a freelancer or small business in India use for AI contract review?',
       a: "None of Harvey AI, Luminance, or Spellbook publish India-specific or INR pricing — all three bill in USD through enterprise or Word-add-in sales channels, and none is a realistic fit for an individual freelancer's budget regardless of country. The more practical starting point for Indian freelancers is the same one that works globally: Claude or ChatGPT's free or low-cost tiers for a first-pass, plain-English read of a contract before signing, with a qualified advocate brought in for anything involving significant money, IP assignment, or terms you don't fully understand. As of July 2026, $1 trades at roughly ₹95, so even a $12-20/month purpose-built reviewer works out to about ₹1,150-₹1,900/month — inexpensive relative to a one-off attorney consultation.",
+    },
+    {
+      q: 'Once an AI tool has reviewed my contract, how do I sign it electronically?',
+      a: "AI review and signing are separate steps. Contract-analysis tools read and flag clauses; an e-signature service such as signNow handles the signing itself, with signature fields, a sending workflow and an audit trail. signNow offers a 7-day free trial but no permanent free plan, and independent sources report different prices by plan, so check its official pricing page before you subscribe. Whichever tool you use, finish your clause review and any negotiation before the document goes out for signature."
     },
     {
       q: 'Can an AI contract tool replace a lawyer entirely?',
@@ -182,6 +191,16 @@ const post: BlogPost = {
 <p>For a freelancer signing 5-20 contracts a year worth $1,000-$50,000 each, this combination works well. Use general-purpose AI for quick reads, plus a purpose-built tool for structured negotiation help on anything that matters.</p><p>It covers the realistic need at $0-$40/month total, against Spellbook's $89+/month floor and Harvey or Luminance's five-figure-plus annual minimums.</p>
 <p>See <a href="/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/">Perplexity Pro vs ChatGPT Plus vs Claude Pro for Freelancers</a> if you're still deciding which general-purpose subscription to pair with a reviewer.</p>
 <p><a href="https://perplexity.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Pro Free →</a></p>
+
+<h2>From Review to Signature: Sending the Final Contract</h2>
+<p>Everything above covers reading a contract. Once the clauses are settled, you still have to get it signed, and that is a different job from analysis.</p>
+<p>An e-signature service handles that second step: placing signature fields, sending the document to the other party, and keeping a record of who signed and when. <strong>signNow</strong> is one option for freelancers and small businesses. It is a signing tool, not a contract analyzer, so it does not replace the review step.</p>
+<p>Two practical points before you pick it. signNow offers a 7-day free trial but no permanent free plan, so it suits people who sign contracts regularly rather than once a year. Independent sources also report different prices depending on the plan, so confirm current pricing on its official page.</p>
+<p>Whatever you choose, finish your review and negotiation first. Sending a document for signature before the clauses are settled just creates a harder conversation later.</p>
+<p><a href="${AFFILIATE_LINKS['signnow']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try signNow Free for 7 Days →</a></p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-4px">
+  <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
+</p>
 
 <h2>General-Purpose AI vs. Purpose-Built Contract Review</h2>
 <p>The honest case for general-purpose AI is that it does most of what a freelancer needs for free or near-free. The honest case against it is narrower than most comparisons admit.</p>

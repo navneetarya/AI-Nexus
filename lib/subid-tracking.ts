@@ -68,6 +68,9 @@ export function getGaClientId(): string | null {
  *
  *  Impact issues each brand its own vanity tracking domain, so detection is
  *  by known Impact domain suffix rather than by a single hostname. */
+// Keep this list identical to the impact.com pattern in scripts/check-affiliate-links.mjs.
+// Oct 2026 fix: `mno8.net` (Domain.com) and `8odi.net` (AppSumo) were missing here, so clicks
+// on those two programs were tagged with `sid`, which impact.com silently ignores.
 const IMPACT_TRACKING_DOMAINS = [
   'sjv.io',
   'pxf.io',
@@ -76,7 +79,47 @@ const IMPACT_TRACKING_DOMAINS = [
   'evyy.net',
   'ojmp.net',
   'prf.hn',
+  'mno8.net',
+  '8odi.net',
 ];
+
+/** Hosts known to be PartnerStack-tracked in this repo. Anything else that is not impact.com is
+ *  reported as `direct` (programs with their own `?via=` / `?ref=` style links). */
+const PARTNERSTACK_HOSTS = ['try.elevenlabs.io', 'get.murf.ai', 'partnerlinks.io'];
+
+export type AffiliateNetwork = 'impact' | 'partnerstack' | 'direct';
+
+export function getAffiliateNetwork(url: string): AffiliateNetwork {
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    if (IMPACT_TRACKING_DOMAINS.some((d) => host === d || host.endsWith(`.${d}`))) return 'impact';
+    if (
+      PARTNERSTACK_HOSTS.includes(host) ||
+      host === 'partnerstack.com' ||
+      host.endsWith('.partnerstack.com')
+    ) {
+      return 'partnerstack';
+    }
+    return 'direct';
+  } catch {
+    return 'direct';
+  }
+}
+
+/** Stable tool name for GA4 reporting. Every affiliate link on the site carries
+ *  `utm_source=<slug>`, so prefer that. The hostname fallback is only for legacy links:
+ *  impact.com vanity hosts like `bigrock-in.sjv.io` or `textintelfze.pxf.io` would otherwise
+ *  show up in GA4 under the company's tracking subdomain instead of the tool's name. */
+export function deriveToolName(url: string): string {
+  try {
+    const u = new URL(url);
+    const utm = u.searchParams.get('utm_source');
+    if (utm) return utm.toLowerCase();
+    return u.hostname.replace(/^(www|try|get|app)\./, '').split('.')[0] || 'unknown';
+  } catch {
+    return 'unknown';
+  }
+}
 
 export function getSubIdParam(url: string): string {
   try {
@@ -96,8 +139,11 @@ export function getSubIdParam(url: string): string {
  *  `https://invideo.sjv.io/k42zM3` becomes
  *  `https://invideo.sjv.io/k42zM3?subId1=...`). */
 export function appendSubId(url: string, clientId: string): string {
-  const separator = url.includes('?') ? '&' : '?';
   const param = getSubIdParam(url);
+  // Idempotent: the click handler rewrites the anchor's href in place, so a second click on the
+  // same link used to append the Sub ID twice. If it is already there, leave the URL alone.
+  if (new RegExp(`[?&]${param}=`).test(url)) return url;
+  const separator = url.includes('?') ? '&' : '?';
   return `${url}${separator}${param}=${encodeURIComponent(clientId)}`;
 }
 
@@ -121,9 +167,15 @@ function applyTracking(link: HTMLAnchorElement, args: TrackArgs): void {
   const clientId = getGaClientId();
   const finalUrl = clientId ? appendSubId(link.href, clientId) : link.href;
   link.href = finalUrl;
+  const toolName =
+    args.toolName && args.toolName !== 'unknown' ? args.toolName : deriveToolName(finalUrl);
+  let linkDomain = 'unknown';
+  try { linkDomain = new URL(finalUrl).hostname.toLowerCase(); } catch { /* leave 'unknown' */ }
   if (typeof window.gtag === 'function') {
     window.gtag('event', 'affiliate_click', {
-      tool_name: args.toolName,
+      tool_name: toolName,
+      network: getAffiliateNetwork(finalUrl),
+      link_domain: linkDomain,
       link_url: finalUrl,
       cta_position: args.ctaPosition,
       sid: clientId || 'unavailable',

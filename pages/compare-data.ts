@@ -1381,12 +1381,12 @@ The practical advice: start with Murf AI's free plan (10 minutes total, no comme
     ],
     winnerSlug: 'murf-ai',
     winnerName: 'Murf AI',
-    winnerAffiliateLink: 'https://get.murf.ai/ilypoqhxvxsj',
+    winnerAffiliateLink: AFFILIATE_LINKS['murf-ai'],
     winnerAffiliateText: 'Try Murf AI free',
     pricing: {
       tools: [
-        { name: 'Murf AI', free: true, startingPrice: '$0', paidFrom: '$19/mo (annual) or $29/mo (monthly)', bestPlanFor: 'Studio-quality voiceovers with video sync', affiliateLink: 'https://get.murf.ai/ilypoqhxvxsj' },
-        { name: 'ElevenLabs', free: true, startingPrice: '$0', paidFrom: '$6/mo', bestPlanFor: 'Hyper-realistic voice cloning & the cheapest commercial license', affiliateLink: 'https://try.elevenlabs.io/earuakibkmz9' },
+        { name: 'Murf AI', free: true, startingPrice: '$0', paidFrom: '$19/mo (annual) or $29/mo (monthly)', bestPlanFor: 'Studio-quality voiceovers with video sync', affiliateLink: AFFILIATE_LINKS['murf-ai'] },
+        { name: 'ElevenLabs', free: true, startingPrice: '$0', paidFrom: '$6/mo', bestPlanFor: 'Hyper-realistic voice cloning & the cheapest commercial license', affiliateLink: AFFILIATE_LINKS['elevenlabs'] },
       ],
     },
     faqs: [

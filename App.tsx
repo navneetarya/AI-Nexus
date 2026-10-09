@@ -19,6 +19,7 @@ import { COMPARE_META_BY_SLUG } from './pages/compare-metadata';
 import { BLOG_POST_META_BY_SLUG } from './blog/metadata';
 import { loadBlogPostBySlug } from './blog/loaders';
 import { registerWebMCPTools } from './lib/webmcp';
+import { startHumanEngagement } from './lib/human-engagement';
 
 // ── Lazy page components — each becomes its own JS chunk ────────────────────
 // These are only downloaded when the user actually navigates to that route,
@@ -284,6 +285,9 @@ function App() {
       page_path: url,
       page_type: getPageType(url),
     });
+    // Oct 2026: fires `engaged_human` once the visitor has been on the page 10s (tab visible) AND
+    // produced a real input event. Gives GA4 a bot-resistant "human" segment. See lib/human-engagement.ts.
+    startHumanEngagement(url, getPageType(url));
   };
 
   // FIX (2026-08-21): navigate() only ever fired on SPA route changes, so

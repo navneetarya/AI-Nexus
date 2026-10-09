@@ -5,7 +5,7 @@ import { SharedNav } from './SharedNav';
 import type { BlogPost } from '../blog/types';
 import { BLOG_POSTS_META } from '../blog/metadata';
 import { SITE_CONFIG, TOOLS } from '../constants';
-import { trackAffiliateClickOnElement } from '../lib/subid-tracking';
+import { trackAffiliateClickOnElement, deriveToolName } from '../lib/subid-tracking';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 // ── W3-T16: Related tool reviews per blog post ─────────────────────────────
@@ -420,8 +420,9 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
   const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const link = (e.target as HTMLElement).closest('a[rel*="sponsored"]') as HTMLAnchorElement | null;
     if (!link) return;
-    let toolName = 'unknown';
-    try { toolName = new URL(link.href).hostname.replace(/^(www|try|get|app)\./, '').split('.')[0]; } catch { /* leave 'unknown' */ }
+    // Oct 2026: use utm_source (set on every affiliate link) instead of the hostname, so impact.com
+    // vanity hosts such as bigrock-in.sjv.io report as `bigrock`, not the tracking subdomain.
+    const toolName = deriveToolName(link.href);
     trackAffiliateClickOnElement(link, { toolName, ctaPosition: 'blog_body', postSlug: post.slug });
   };
 

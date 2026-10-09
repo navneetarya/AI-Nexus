@@ -15,6 +15,7 @@
 
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'elevenlabs-pricing-character-credits-2026',
@@ -106,7 +107,7 @@ const post: BlogPost = {
 </div>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ElevenLabs' current plans →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ElevenLabs' current plans →</a>
 </div>
 
 <h2>What a "credit" actually buys you</h2>
@@ -131,7 +132,7 @@ const post: BlogPost = {
 <p>Creator costs $22/month after a first-month $11 promotion. Treat the discount as temporary when budgeting.</p><p>Its 121,000 credits cover about 121 minutes. Creator suits a weekly podcast or steady short-form schedule. It is also the first tier with Professional Voice Cloning.</p>
 
 <p>The practical break-even: if you're regularly generating more than about 25–30 minutes of finished audio a month, or you need cloning quality beyond a quick instant clone, Creator's $22/month is cheaper than staying on Starter and paying per-minute overage charges once you exceed 30,000 credits.</p>
-<div style="margin:14px 0 24px;"><a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Creator →</a></div>
+<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Creator →</a></div>
 
 <h2>What happens when you run out of credits</h2>
 <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Calculator and notes representing monthly audio pricing calculations" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -160,7 +161,7 @@ const post: BlogPost = {
 <p>Most individual creators choose between Starter ($6/month) and Creator ($22/month, with $11 for month one). Starter fits occasional output.</p><p>Creator fits monthly output above 25–30 finished minutes or Professional Voice Cloning. Pro and above are business-scale tiers driven by seats and volume.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs' Starter plan →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs' Starter plan →</a>
 </div>
 `,
 

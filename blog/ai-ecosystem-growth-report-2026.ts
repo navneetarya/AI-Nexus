@@ -1,4 +1,5 @@
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'ai-ecosystem-growth-report-2026',
@@ -137,8 +138,8 @@ const post: BlogPost = {
 <p><a href="/tools/elevenlabs/" style="color:#0D9488;font-weight:600;">ElevenLabs</a> has become the top AI voice platform by both developer API use and everyday product use. Murf AI leads in structured voiceover work (eLearning, corporate video). This segment is growing fast.</p>
 <p>AI voiceover is now the default for faceless YouTube channels, corporate explainer videos, and podcasts. A narrowing to 2–3 winners is likely in 2026-2027. See how creators are using these tools in our <a href="/blog/best-ai-podcast-tools-2026/" style="color:#0D9488;font-weight:600;">AI podcast tools guide</a>.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
-  <a href="https://get.murf.ai/ilypoqhxvxsj" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
 
 <h2>Usage Patterns: Who Is Using AI Tools</h2>

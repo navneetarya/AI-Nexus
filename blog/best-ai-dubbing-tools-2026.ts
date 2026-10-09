@@ -13,6 +13,7 @@
 // Synthesia pricing reused from murf-ai-alternatives-2026.ts ($29/mo Starter), verified the same week.
 import { BlogPost } from './types';
 import { Category } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-dubbing-tools-2026',
@@ -136,7 +137,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> podcasters, audiobook producers, and any faceless or narration-first video going multilingual, where lip sync isn't relevant. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or see how it stacks up on price against the field in our <a href="/blog/elevenlabs-alternatives-2026/">ElevenLabs alternatives comparison</a>.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -216,7 +217,7 @@ const post: BlogPost = {
 <p>The lesson holds across the whole category. An entry-tier price answers whether you can try a tool, not what you'll actually pay once you're publishing on a real schedule. Budget against your real monthly minutes of finished output, not the number on the pricing page's first card.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start with ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start with ElevenLabs Free →</a>
 </div>
 
 <h2>Who should use which AI dubbing tool</h2>
@@ -258,7 +259,7 @@ const post: BlogPost = {
 <p>For most creators reading this, narration, podcasts, faceless YouTube, ElevenLabs is the practical starting point. It has the cheapest commercial entry, the strongest voice preservation, and no wasted spend on lip-sync features a non-visible speaker doesn't need.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://try.elevenlabs.io/earuakibkmz9" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 
 `,
