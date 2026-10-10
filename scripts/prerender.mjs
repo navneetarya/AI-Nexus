@@ -5642,6 +5642,28 @@ const RELATED_LINKS = {
 
 // ── Task 5/6 Fix: Related links map for blog posts — links pillar posts to their
 // satellite/cluster posts (and vice versa) for internal authority distribution.
+// Phase 5: curated direct-answer blocks + 'last verified' dates (shared with pages/BlogPostPage.tsx)
+const ANSWER_BLOCKS = JSON.parse(fs.readFileSync(path.join(ROOT, 'blog', 'answer-blocks.json'), 'utf8'));
+
+// ── Freshness sync (Oct 2026) ─────────────────────────────────────────────────
+// BLOG_POSTS above is a hand-maintained mirror whose dateModified had drifted behind the real post files
+// (sitemap <lastmod> and JSON-LD dateModified read this mirror, so Google saw stale dates for edited posts).
+// blog/metadata.ts is regenerated from the post files on every build, so it is the source of truth.
+// Effective date = newest of: metadata dateModified, and the answer block's 'updated' date (a visible edit).
+{
+  const metaSrc = fs.readFileSync(path.join(ROOT, 'blog', 'metadata.ts'), 'utf8');
+  const metaDates = {};
+  for (const m of metaSrc.matchAll(/"slug":\s*"([^"]+)"[\s\S]{0,3000}?"dateModified":\s*"(\d{4}-\d{2}-\d{2})"/g)) metaDates[m[1]] = m[2];
+  let synced = 0;
+  for (const post of BLOG_POSTS) {
+    const candidates = [metaDates[post.slug], ANSWER_BLOCKS[post.slug] && ANSWER_BLOCKS[post.slug].updated, post.dateModified].filter(Boolean);
+    const newest = candidates.sort().pop();
+    // never earlier than the mirror's own datePublished, never in the future
+    if (newest && newest !== post.dateModified && newest >= post.datePublished && newest <= TODAY) { post.dateModified = newest; synced++; }
+  }
+  console.log(`   ↻ freshness sync: ${synced} post dateModified value(s) updated from blog/metadata.ts + answer-blocks`);
+}
+
 const BLOG_RELATED_LINKS = {
   // —— Oct 9 (Phase 4): domain renewal price comparison — links to the launch guide, builders roundup and builder comparison ——
   'domain-renewal-prices-compared-2026': [
@@ -6153,8 +6175,6 @@ const BLOG_RELATED_LINKS = {
 
 // ── Load the base template from dist/index.html ──────────────────────────
 // This HTML will be cloned and customised for each route (tools, blog, etc)
-// Phase 5: curated direct-answer blocks + 'last verified' dates (shared with pages/BlogPostPage.tsx)
-const ANSWER_BLOCKS = JSON.parse(fs.readFileSync(path.join(ROOT, 'blog', 'answer-blocks.json'), 'utf8'));
 function formatVerified(iso) {
   return new Date(iso + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
