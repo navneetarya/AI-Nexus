@@ -1,0 +1,20 @@
+<svg viewBox="0 0 640 292" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five-year .com cost (1 domain, USD)">
+  <defs><linearGradient id="d0" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0D9488"/><stop offset="100%" stop-color="#0f766e"/></linearGradient></defs>
+  <rect x="0" y="0" width="640" height="292" rx="16" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="0" y="0" width="640" height="46" rx="16" fill="url(#d0)"/>
+  <rect x="0" y="30" width="640" height="16" fill="url(#d0)"/>
+  <text x="24" y="30" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="800" fill="#ffffff">Five-year .com cost (1 domain, USD)</text>
+  <text x="24" y="95" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#374151">Spaceship (promo)</text>
+  <rect x="190" y="76" width="110" height="26" rx="6" fill="#14b8a6"/>
+  <text x="308" y="95" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#111827">$43.62</text>
+  <text x="24" y="139" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#374151">Spaceship (regular)</text>
+  <rect x="190" y="120" width="126" height="26" rx="6" fill="#0D9488"/>
+  <text x="324" y="139" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#111827">$49.80</text>
+  <text x="24" y="183" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#374151">Domain.com</text>
+  <rect x="190" y="164" width="245" height="26" rx="6" fill="#f59e0b"/>
+  <text x="443" y="183" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#111827">$96.96</text>
+  <text x="24" y="227" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#374151">Network Solutions</text>
+  <rect x="190" y="208" width="358" height="26" rx="6" fill="#ef4444"/>
+  <text x="556" y="227" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#111827">$141.55</text>
+  <text x="24" y="274" font-family="Arial,Helvetica,sans-serif" font-size="13" font-style="italic" fill="#6b7280">First year + four renewals. Tracker prices, May to Oct 2026.</text>
+</svg>

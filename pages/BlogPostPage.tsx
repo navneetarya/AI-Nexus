@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useState, lazy, Suspense } from 'react';
 import { SharedNav } from './SharedNav';
 import type { BlogPost } from '../blog/types';
 import { BLOG_POSTS_META } from '../blog/metadata';
+import ANSWER_BLOCKS from '../blog/answer-blocks.json';
 import { SITE_CONFIG, TOOLS } from '../constants';
 import { trackAffiliateClickOnElement, deriveToolName } from '../lib/subid-tracking';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
@@ -265,6 +266,8 @@ const C = {
 };
 
 export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPageProps) {
+  // Phase 5: curated direct-answer block + 'last verified' date (blog/answer-blocks.json)
+  const answerBlock = (ANSWER_BLOCKS as Record<string, any>)[post.slug] as { answer?: string; verified?: string | null } | undefined;
   // Which FAQ accordion row is expanded (null = all collapsed)
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
 
@@ -517,7 +520,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             Google AI Overviews + Perplexity pull the first direct-answer paragraph.
             This styled excerpt box (class="post-excerpt") is also targeted by Speakable schema
             in prerender.mjs so AI engines know exactly which element to cite. */}
-        {post.excerpt && (
+        {(answerBlock?.answer || post.excerpt) && (
           <div
             className="post-excerpt"
             style={{
@@ -534,7 +537,15 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             <span className="qa-label" style={{ fontWeight: 700, color: C.a1, marginRight: 6 }}>
               Quick Answer:
             </span>
-            {post.excerpt}
+            {answerBlock?.answer || post.excerpt}
+            {answerBlock?.verified && (
+              <div style={{ fontSize: 12, color: C.mut, marginTop: 8 }}>
+                Last verified:{' '}
+                <time dateTime={answerBlock.verified}>
+                  {new Date(answerBlock.verified + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}
+                </time>
+              </div>
+            )}
           </div>
         )}
 

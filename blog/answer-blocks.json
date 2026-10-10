@@ -1,0 +1,43 @@
+{
+  "_readme": "Direct-answer blocks for the top posts. 'verified' is the date the price/plan facts in 'answer' were checked against vendor pages or dated trackers. Use null when the answer makes no checkable price or plan claims; no date is shown then. Update 'verified' only after re-checking the facts.",
+  "best-ai-headshot-tools-linkedin-2026": {
+    "answer": "HeadshotPro is our top pick for LinkedIn headshots. Its docs list three one-time packages: Basic $29 for 30 headshots in about 2 hours, Professional $39 for 50 in about 30 minutes, and Executive $59 for 70 in 4K. All three include a money-back guarantee. Compare alternatives before you pay.",
+    "verified": "2026-10-09"
+  },
+  "claude-code-alternatives-2026": {
+    "answer": "Claude Code has no free tier. It comes with a Claude Pro subscription at $20 a month ($17 on annual billing) or a Max plan. Cheaper or free options include OpenCode, which is open source and model-agnostic, and Aider, a git-native terminal tool. Cursor Pro also costs $20 a month.",
+    "verified": "2026-10-09"
+  },
+  "best-ai-agents-for-small-business-2026": {
+    "answer": "Lindy suits non-technical owners but has no free plan and starts at $49.99 a month on most listings. Relevance AI has a free plan and Pro from $19 a month billed annually ($29 monthly). Make.com suits teams adding AI to automations, and n8n can be self-hosted free. Choose by technical skill first.",
+    "verified": "2026-10-09"
+  },
+  "best-ai-presentation-tools-2026": {
+    "answer": "Gamma is the fastest pick for web-style AI decks. It has a free plan with 400 one-time credits, then Plus from about $10 a month ($8 on annual billing). NotebookLM suits decks built from your own documents, and Beautiful.ai suits polished team decks. Listings differ on Gamma's price, so confirm on its page.",
+    "verified": "2026-10-09"
+  },
+  "ai-ecosystem-growth-report-2026": {
+    "answer": "This report tracks how the AI tools market is shifting in 2026. Coding tools lead adoption, image generation has gone mainstream, and writing tools are consolidating into fewer, more integrated platforms. Market-size figures vary widely by definition, so treat them as rough estimates, not settled facts.",
+    "verified": null
+  },
+  "ai-tools-for-solopreneurs-2026": {
+    "answer": "A lean solopreneur stack needs a general assistant such as Claude or ChatGPT, plus tools for tasks, research, scheduling, customer support, meeting notes, design and automation. Free tiers can cover a starter stack. Paid plans add up, so add one tool at a time and check each plan's current price.",
+    "verified": null
+  },
+  "chatgpt-free-vs-claude-free-vs-gemini-free-2026": {
+    "answer": "No single free AI assistant wins every task. Claude's free plan is our pick for writing tone, ChatGPT's free plan for versatility, and Gemini's for research with Google Search. Free limits and models change often, so check each provider's current limits before relying on one.",
+    "verified": null
+  },
+  "relevance-ai-vs-lindy-vs-gumloop-2026": {
+    "answer": "Relevance AI has a free plan (200 actions a month) and Pro from $19 a month billed annually, or $29 monthly. Lindy has no free plan, only a 7-day trial, and starts at $49.99 on most listings. Relevance suits agent teams, Lindy suits email and scheduling, and Gumloop suits node-based data pipelines.",
+    "verified": "2026-10-09"
+  },
+  "best-ai-voice-cloning-tools-2026": {
+    "answer": "ElevenLabs is our top pick for voice cloning. Instant Voice Cloning starts on the Starter plan ($5 a month on annual billing, $6 monthly), which includes a commercial license. Professional Voice Cloning needs Creator at $22 a month. The free plan cannot clone voices. Clone only your own voice or one you have permission to use.",
+    "verified": "2026-10-09"
+  },
+  "best-ai-coding-agents-2026": {
+    "answer": "Claude Code and Cursor Pro each start at $20 a month, and Claude Code has no free tier. Devin is the most autonomous option and is billed by usage, so check its pricing page before committing. SWE-Agent is open source and runs on your own API keys. Pick by how much you want to hand off.",
+    "verified": "2026-10-09"
+  }
+}

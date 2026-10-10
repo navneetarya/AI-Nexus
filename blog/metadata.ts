@@ -21,6 +21,32 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "lovable-vs-wegic-vs-readdy-vs-creao-2026",
+    "title": "Lovable vs Wegic vs Readdy vs CREAO 2026: Which AI Builder Fits Your Project?",
+    "seoTitle": "Lovable vs Wegic vs Readdy vs CREAO (2026)",
+    "metaDescription": "Lovable, Wegic, Readdy and CREAO compared on what each builds, current plan prices, credit limits and who each suits. Pricing checked October 2026.",
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09",
+    "author": "Navneet Arya",
+    "category": "Design",
+    "readTime": "9 min read",
+    "ogImage": "https://ainexustools.online/og/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026.webp",
+    "excerpt": "Lovable, Wegic, Readdy and CREAO all promise to build something from a chat prompt, but they build different things. This guide compares what each makes, what the free and paid plans include, and which job each one suits."
+  },
+  {
+    "slug": "domain-renewal-prices-compared-2026",
+    "title": "Domain Renewal Prices Compared 2026: Spaceship vs Domain.com vs Network Solutions vs BigRock",
+    "seoTitle": "Domain Renewal Prices Compared 2026 (India Guide)",
+    "metaDescription": "Spaceship, Domain.com, Network Solutions and BigRock compared on first-year vs renewal price, plus SSLs.com certificates and an India angle. Dated Oct 2026.",
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09",
+    "author": "Navneet Arya",
+    "category": "Design",
+    "readTime": "9 min read",
+    "ogImage": "https://ainexustools.online/og/blog/domain-renewal-prices-compared-2026.webp",
+    "excerpt": "A cheap first-year domain price tells you little. This guide compares .com renewal costs at Spaceship, Domain.com and Network Solutions, adds BigRock for India and SSLs.com for certificates, and shows the five-year cost of each."
+  },
+  {
     "slug": "launch-an-ai-built-website-2026",
     "title": "How to Launch an AI-Built Website in 2026: Domain, Hosting, and SSL",
     "seoTitle": "How to Launch an AI-Built Website in 2026",

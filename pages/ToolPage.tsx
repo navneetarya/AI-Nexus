@@ -28,6 +28,8 @@ const C = {
 // NOTE: keep in sync with constants.ts — any new affiliateLink with a tracking param
 // must be added here or its disclosure banner will not render.
 const AFFILIATE_SLUGS = [
+  // Added Oct 2026 (Phase 5): tracked-link tools the disclosure banner was missing for (validate_critical_fixes.py)
+  'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence',
   'writesonic', 'rytr', 'quillbot', 'frase', 'leonardo-ai', 'photoroom', 'looka',
   'pictory', 'opus-clip', 'invideo', 'murf-ai', 'podcastle', 'gamma', 'beautiful-ai',
   'ocoya', 'replit', 'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',

@@ -270,8 +270,13 @@ import post100 from './best-ai-tool-lifetime-deals-appsumo-2026';
 import post101 from './best-ai-voice-cloning-for-podcasts-2026';
 import post102 from './ai-voice-cloning-pricing-comparison-2026';
 import post103 from './launch-an-ai-built-website-2026';
+// Phase 4 (growth plan, Week 3): the "launch" content cluster — registrar renewal prices + AI builder comparison
+import post104 from './domain-renewal-prices-compared-2026';
+import post105 from './lovable-vs-wegic-vs-readdy-vs-creao-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post105, // Oct 9 — Lovable vs Wegic vs Readdy vs CREAO — AI app and site builder comparison
+  post104, // Oct 9 — Domain Renewal Prices Compared 2026 (Spaceship, Domain.com, Network Solutions, BigRock, SSLs.com)
   post103, // Sep 29 — Launch an AI-built website: domain, hosting, and SSL guide
   post102, // Sep 26 — AI Voice Cloning Pricing Compared 2026 (ElevenLabs vs Murf vs Descript vs Resemble AI) — pinned first for freshness
   post101, // Sep 26 — Best AI Voice Cloning for Podcasts 2026 (should-you-clone decision guide) — pinned first for freshness
