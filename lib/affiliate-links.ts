@@ -40,7 +40,7 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   juicebox: 'https://juicebox.ai/?via=c6add3',
   vidiq: 'https://vidiq.com?via=ainexus',
   appsumo: 'https://appsumo.8odi.net/2R0DB7?utm_source=appsumo&utm_medium=affiliate', // Impact — marketplace link; no dedicated tool page
-  pixverse: 'https://motivaiprivatelimited.sjv.io/0GKm6Y?utm_source=pixverse&utm_medium=affiliate', // Impact — added Sep 2026, no dedicated tool page yet
+  // PixVerse has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['pixverse']).
   // Spaceship (Impact) — deep-linked with the standard ?u={encoded landing page} pattern so each
   // mention lands on the actual product page rather than the generic homepage. CAVEAT: this only
   // works if Spaceship has "Allow Partners to deep link" turned on for spaceship.com in their Impact
@@ -69,6 +69,7 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   // Added Oct 9 2026 (Impact). signNow is an e-signature tool, NOT an AI contract analyzer: use it only for the
   // "after review, sign it" step (contract-analysis post, freelancer posts). No tool page.
   signnow: 'https://signnow.sjv.io/OYJYXA?utm_source=signnow&utm_medium=affiliate',
+  soundraw: 'https://soundraw.io/?ref=pvxxfrzw',
   // Renderforest has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['renderforest']).
 };
 

@@ -26,7 +26,8 @@ var affiliateDomains = [
   'getresponse.com', 'headshotpro.com',
   'fireflies.ai', 'narrato.io', 'make.com', 'lindy.ai',
   'relevanceai.com', 'n8n.io', 'windsurf.com',
-  'tidio.com', 'getmunch.com', 'juicebox.ai', 'vidiq.com'
+  'tidio.com', 'getmunch.com', 'juicebox.ai', 'vidiq.com',
+  'soundraw.io', 'motivaiprivatelimited.sjv.io'
 ];
 
 function bindAffiliateClickTracking() {

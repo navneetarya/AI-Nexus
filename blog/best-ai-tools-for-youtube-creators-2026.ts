@@ -68,7 +68,7 @@ const post: BlogPost = {
   quickAnswer: 'Best AI tools for YouTube creators in 2026: Munch AI wins for repurposing intelligence that tells you what to publish next, with clip selection tied to your brand voice. ElevenLabs wins for voice cloning and narration realistic enough to replace a voice actor. Opus.pro wins for an automated Shorts pipeline that turns one long video into 8-12 clips in minutes.',
   myTake: "Navneet's take: Munch AI is the one is a strong choice for serious channel builders to first — the brand-voice learning loop is a genuine differentiator once you have a publishing history to feed it, not just marketing language. For a channel just starting out, that intelligence layer is wasted money; ElevenLabs plus Opus.pro's free plan covers the real bottleneck at that stage for under $10 a month.",
   outboundCitations: [
-    { url: 'https://www.getmunch.ai/pricing', label: 'Munch AI — Official Pricing' },
+    { url: 'https://www.getmunch.com/pricing', label: 'Munch AI — Official Pricing' },
     { url: 'https://elevenlabs.io/pricing', label: 'ElevenLabs — Official Pricing' },
     { url: 'https://www.opus.pro/pricing', label: 'Opus.pro — Official Pricing' },
     { url: 'https://vidiq.com/pricing/', label: 'VidIQ — Official Pricing' },
@@ -105,7 +105,7 @@ const post: BlogPost = {
 <div style="background:rgba(14,165,233,.08);border-left:4px solid #0ea5e9;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
   <p style="margin:0;font-weight:700;font-size:15px;">TL;DR — Best AI Tools for YouTube Creators 2026</p>
   <p style="margin:8px 0 0;font-size:14px;line-height:1.9;">
-    <strong>Best for repurposing intelligence:</strong> <a href="https://www.getmunch.ai/?via=navneet" style="color:#0ea5e9;font-weight:600;" target="_blank" rel="noopener sponsored">Munch AI</a>. AI clip selection plus engagement analytics from $49/mo.<br>
+    <strong>Best for repurposing intelligence:</strong> <a href="${AFFILIATE_LINKS['munch']}" style="color:#0ea5e9;font-weight:600;" target="_blank" rel="noopener sponsored">Munch AI</a>. AI clip selection plus engagement analytics from $49/mo.<br>
     <strong>Best for voice cloning &amp; narration:</strong> <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">ElevenLabs</a>. Ultra-realistic AI voice, clone your own voice from $6/mo.
   </p>
   <p style="margin:8px 0 0;font-size:14px;line-height:1.9;">
@@ -144,7 +144,7 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
-      <td style="padding:10px 14px;font-weight:600;"><a href="https://www.getmunch.ai/?via=navneet" style="color:#0ea5e9;" target="_blank" rel="noopener sponsored">Munch AI</a></td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['munch']}" style="color:#0ea5e9;" target="_blank" rel="noopener sponsored">Munch AI</a></td>
       <td style="padding:10px 14px;">Repurposing intelligence &amp; analytics</td>
       <td style="padding:10px 14px;">✅ Trial available</td>
       <td style="padding:10px 14px;">$49/mo</td>
@@ -190,7 +190,7 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1627244714766-94dab62ed964?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creator sitting in front of a screen editing footage" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2 id="munch-ai">#1 Munch AI: Best AI Repurposing Intelligence for YouTube Creators</h2>
-<p><strong>Rating: 4.6/5 · Free: Trial available · Paid: from $49/month · <a href="https://www.getmunch.ai/?via=navneet" style="color:#0ea5e9;font-weight:600;" target="_blank" rel="noopener sponsored">Try Munch AI →</a></strong></p>
+<p><strong>Rating: 4.6/5 · Free: Trial available · Paid: from $49/month · <a href="${AFFILIATE_LINKS['munch']}" style="color:#0ea5e9;font-weight:600;" target="_blank" rel="noopener sponsored">Try Munch AI →</a></strong></p>
 <p>Munch AI is the most strategically sophisticated video repurposing tool available to YouTube creators in 2026. Most repurposing tools focus on mechanical clip extraction. Munch AI layers in genuine content intelligence instead.</p>
 <p>It analyses your video transcript for key talking points, and matches clip selection to your channel's established brand voice. It also scores each clip for predicted engagement, and generates a cross-platform publishing calendar from a single long-form upload.</p>
 <p>The core workflow is markedly different from Opus.pro or similar tools. You upload a long-form video, or paste a YouTube URL, and Munch AI's AI does three things at once.</p>
@@ -215,7 +215,7 @@ const post: BlogPost = {
   <li>❌ Less streamlined for pure YouTube Shorts volume compared to Opus.pro's speed</li>
 </ul>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.getmunch.ai/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Munch AI Free →</a>
+  <a href="${AFFILIATE_LINKS['munch']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Munch AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -285,7 +285,7 @@ const post: BlogPost = {
 
 <h2 id="best-for">Best For: Quick Match Guide</h2>
 <ul style="margin:12px 0 12px 24px;line-height:2.6;">
-  <li><strong>Best for cross-platform repurposing intelligence:</strong> <a href="https://www.getmunch.ai/?via=navneet" style="color:#0ea5e9;font-weight:600;" target="_blank" rel="noopener sponsored">Munch AI</a>, for strategic clip selection with brand voice matching</li>
+  <li><strong>Best for cross-platform repurposing intelligence:</strong> <a href="${AFFILIATE_LINKS['munch']}" style="color:#0ea5e9;font-weight:600;" target="_blank" rel="noopener sponsored">Munch AI</a>, for strategic clip selection with brand voice matching</li>
   <li><strong>Best for voiceover-driven or faceless channels:</strong> <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">ElevenLabs</a>, for the most realistic AI narration, and cloning your own voice</li>
   <li><strong>Best for automating YouTube Shorts at volume:</strong> <a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Opus.pro</a>, for the fastest pipeline, virality scoring, and animated captions</li>
   <li><strong>Best for generating full faceless videos fast:</strong> InVideo AI, for a full video from a text prompt in under 30 minutes</li>
@@ -428,12 +428,12 @@ const post: BlogPost = {
 </div>
 
 <h2 id="final-verdict">Final Verdict: Best AI Tools for YouTube Creators 2026</h2>
-<p>For YouTube creators building a serious channel in 2026, three tools deliver the highest measurable ROI. <a href="https://www.getmunch.ai/?via=navneet" target="_blank" rel="noopener sponsored" style="color:#0ea5e9;font-weight:600;">Munch AI</a> for repurposing intelligence, <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">ElevenLabs</a> for scalable narration, and <a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Opus.pro</a> for automated Shorts.</p>
+<p>For YouTube creators building a serious channel in 2026, three tools deliver the highest measurable ROI. <a href="${AFFILIATE_LINKS['munch']}" target="_blank" rel="noopener sponsored" style="color:#0ea5e9;font-weight:600;">Munch AI</a> for repurposing intelligence, <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">ElevenLabs</a> for scalable narration, and <a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Opus.pro</a> for automated Shorts.</p>
 <p>These tools target the three highest-effort parts of the YouTube creator workflow: deciding what to repurpose, producing narration at scale, and keeping up a Shorts publishing cadence. Each one compresses its part of the job from hours to minutes.</p>
 <p>The most efficient budget entry is ElevenLabs Starter ($6/month) plus Opus.pro's free plan (60 min/month): a full narration and Shorts pipeline under $10/month. As your channel grows, adding Munch AI's repurposing intelligence layer unlocks the strategic advantage that separates channels growing to 100K subscribers from those that plateau.</p>
 
 <ol style="margin:12px 0 12px 24px;line-height:2.4;">
-  <li><strong>Best repurposing intelligence:</strong> <a href="https://www.getmunch.ai/?via=navneet" target="_blank" rel="noopener sponsored" style="color:#0ea5e9;font-weight:600;">Munch AI</a>, for semantic clip selection, brand voice AI, and a cross-platform calendar</li>
+  <li><strong>Best repurposing intelligence:</strong> <a href="${AFFILIATE_LINKS['munch']}" target="_blank" rel="noopener sponsored" style="color:#0ea5e9;font-weight:600;">Munch AI</a>, for semantic clip selection, brand voice AI, and a cross-platform calendar</li>
   <li><strong>Best voice cloning &amp; narration:</strong> <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">ElevenLabs</a>, ultra-realistic, clone your own voice from $6/month</li>
   <li><strong>Best auto-Shorts pipeline:</strong> <a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Opus.pro</a>, for the fastest clips, animated captions, and virality scoring</li>
   <li><strong>Best faceless video creation:</strong> InVideo AI, for a full video from a text brief in 30 minutes</li>

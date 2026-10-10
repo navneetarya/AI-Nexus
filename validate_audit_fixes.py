@@ -100,7 +100,7 @@ check("C-02", "YouTube synonym canonical still in place",
 
 # C-03: TRUSTPILOT_COUNTS for new tools
 tp_section = prerender.split("TRUSTPILOT_COUNTS")[1].split("};")[0] if "TRUSTPILOT_COUNTS" in prerender else ""
-for slug, expected_count in [("cursor", 312), ("lovable", 143), ("headshotpro", 2143),
+for slug, expected_count in [("cursor", 312), ("lovable", 143), ("headshotpro", 3584),
                                ("narrato", 248), ("fireflies", 892), ("windsurf", 78)]:
     check("C-03", f"TRUSTPILOT_COUNTS has '{slug}' ({expected_count} reviews)",
           f"'{slug}'" in tp_section,

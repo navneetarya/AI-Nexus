@@ -624,12 +624,12 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "Best AI Coding Agents 2026: Devin vs Claude Code Ranked",
     "metaDescription": "Independent analysis of 6 AI coding agents in 2026: Devin, Claude Code, SWE-Agent, Cursor Agent, and more. SWE-bench scores, pricing, and autonomy compared.",
     "datePublished": "2026-06-29",
-    "dateModified": "2026-09-18",
+    "dateModified": "2026-10-10",
     "author": "Navneet Arya",
     "category": "Coding",
     "readTime": "13 min read",
     "ogImage": "https://ainexustools.online/og-tool-review.webp",
-    "excerpt": "The strongest AI coding agents in 2026 split by autonomy level: Devin (Cognition AI) for fully autonomous multi-session engineering tasks at $150–$500/month, Claude Code for complex codebase reasoning in the terminal at $20/month, and SWE-Agent for open-source benchmark-driven workflows. Cursor Agent sits in the middle — IDE-native agentic loops at $20/month that most working developers find the most practical entry point. This report covers 6 agents on SWE-bench performance, real-world autonomy, pricing, and which workflow each is actually built for."
+    "excerpt": "The strongest AI coding agents in 2026 split by autonomy level: Devin (Cognition AI) for fully autonomous multi-session engineering tasks (free plan, Pro $20/month, Max $200/month), Claude Code for complex codebase reasoning in the terminal at $20/month, and SWE-Agent for open-source benchmark-driven workflows. Cursor Agent sits in the middle — IDE-native agentic loops at $20/month that most working developers find the most practical entry point. This report covers 6 agents on SWE-bench performance, real-world autonomy, pricing, and which workflow each is actually built for."
   },
   {
     "slug": "best-ai-agents-customer-service-2026",
@@ -728,7 +728,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "Best AI Agents for Small Business 2026, Ranked",
     "metaDescription": "Analysis of 10 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Updated June 2026.",
     "datePublished": "2026-06-11",
-    "dateModified": "2026-08-23",
+    "dateModified": "2026-10-10",
     "author": "Navneet Arya",
     "category": "Productivity",
     "readTime": "10 min read",
@@ -793,7 +793,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "5 Best AI Headshot Tools for LinkedIn (2026)",
     "metaDescription": "HeadshotPro, Aragon AI, Remini & more — best AI headshot tools for LinkedIn 2026. Pricing, output quality, and honest verdict from independent research.",
     "datePublished": "2026-05-28",
-    "dateModified": "2026-08-24",
+    "dateModified": "2026-10-10",
     "author": "Navneet Arya",
     "category": "image",
     "readTime": "9 min read",
@@ -947,14 +947,14 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "chatgpt-free-vs-claude-free-vs-gemini-free-2026",
     "title": "ChatGPT Free vs Claude Free vs Gemini Free: Which AI Actually Works for Freelancers in 2026?",
     "seoTitle": "ChatGPT Free vs Claude Free vs Gemini Free (2026)",
-    "metaDescription": "ChatGPT, Claude, and Gemini free plans tested on 5 real freelance tasks — message limits, output quality, and when to upgrade. See the verdict.",
+    "metaDescription": "ChatGPT, Claude and Gemini free plans compared from official plan pages: limits, web search, image tools and when to upgrade. Updated October 2026.",
     "datePublished": "2026-05-20",
-    "dateModified": "2026-08-22",
+    "dateModified": "2026-10-10",
     "author": "Navneet Arya",
     "category": "AI Comparison",
-    "readTime": "10 min read",
+    "readTime": "8 min read",
     "ogImage": "https://ainexustools.online/og/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026.webp",
-    "excerpt": "ChatGPT, Claude, and Gemini all offer free plans with genuinely useful capabilities in 2026. Tested all three on the same five freelance tasks — blog writing, social captions, research summaries, email drafting, and brainstorming — to find out which free tier actually delivers. The honest verdict: use all three together and cover 80% of your freelance AI needs without spending a penny."
+    "excerpt": "ChatGPT, Claude and Gemini all have useful free plans in 2026, but each one caps something different. This comparison uses each provider's own plan pages to show what the free tiers include, where they fall short, and when upgrading makes sense for freelancers."
   },
   {
     "slug": "perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026",

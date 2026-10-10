@@ -136,7 +136,7 @@ const post: BlogPost = {
 <p>There is no permanent free tier for downloads. You can generate and preview tracks, but downloading requires the Creator plan at $16.99/month, which includes unlimited downloads and a full commercial license. An Artist-tier plan exists for creators who want to distribute tracks to Spotify and Apple Music, though it requires modifying the AI output before release.</p>
 <p>The limitation: no vocals, a narrower genre range than Suno or Udio, and no permanent free download tier to test with first.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://soundraw.io/?ref=pvxxfrzw" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Soundraw →</a>
+  <a href="${AFFILIATE_LINKS['soundraw']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Soundraw →</a>
 </div>
 
 <h3>5. AIVA: best for cinematic, orchestral, and game scores</h3>

@@ -29,7 +29,7 @@ const C = {
 // must be added here or its disclosure banner will not render.
 const AFFILIATE_SLUGS = [
   // Added Oct 2026 (Phase 5): tracked-link tools the disclosure banner was missing for (validate_critical_fixes.py)
-  'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence',
+  'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence', 'pixverse',
   'writesonic', 'rytr', 'quillbot', 'frase', 'leonardo-ai', 'photoroom', 'looka',
   'pictory', 'opus-clip', 'invideo', 'murf-ai', 'podcastle', 'gamma', 'beautiful-ai',
   'ocoya', 'replit', 'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',
@@ -1132,7 +1132,7 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
       "Refreshing freelancer marketplace profiles with a more professional look",
       "Replacing an outdated resume or portfolio profile photo cheaply",
     ],
-    pricingSection: "**HeadshotPro pricing (2026):**\n- Basic ($29 one-time): 40 headshots and 4 styles.\n- Standard ($39 one-time): 80 headshots and more variety.\n- Premium ($59 one-time): 120+ headshots and the widest style range.\n\nStart with Basic unless you know you need more outfit and background variation. There is no subscription and no free plan.",
+    pricingSection: "**HeadshotPro pricing (2026):**\n- Basic ($29 one-time): 30 headshots in about 2 hours.\n- Professional ($39 one-time): 50 headshots in about 30 minutes, plus a free redo.\n- Executive ($59 one-time): 70 headshots in 4K in about 15 minutes, plus a free redo.\n\nProfessional is the best value for most people; pick Executive if you need 4K files. There is no subscription and no free plan, but every package has a money-back Realism Guarantee.",
     verdict: "HeadshotPro is worth it when you need a professional profile image quickly and cheaply. It does not replace a premium custom photoshoot, but it does replace the need for one in many everyday professional use cases.",
     rating: 4.6, lastTested: "May 2026", lastTestedISO: "2026-05-28", datePublished: "2026-05-28", timeUsed: "Researched May 2026",
   },
@@ -1387,6 +1387,23 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
     relatedBlogSlugs: ['best-ai-video-generators-2026', 'best-ai-logo-makers-free-2026', 'best-invideo-alternatives-2026'],
     rating: 4.0, lastTested: "October 2026", lastTestedISO: "2026-10-08", datePublished: "2026-09-30", timeUsed: "Researched Oct 2026",
   },
+  'pixverse': {
+    whatIs: "PixVerse is an AI video generator for short clips. You type a prompt or upload an image, and its own models, led by PixVerse V6, turn it into a video. The same account adds effect templates, lip sync, consistent characters, an AI agent, a node-based Canvas, mini-apps and mobile apps. Pro and higher plans also unlock third-party video models such as Seedance, Kling and Sora 2.",
+    whoIsItFor: "Social media creators, YouTubers and small marketing teams who need short, eye-catching clips for Reels, Shorts, TikTok, ads and B-roll. It suits people who want to start free and pay only when they need watermark-free or higher-resolution output.",
+    whoShouldSkip: "Anyone who needs long, cinematic scenes with complex physics or a full template-led explainer video. Also skip it if you want refunds on results you don't like: PixVerse says it does not refund for dissatisfaction with generated output.",
+    myTake: "This review draws on PixVerse's official pricing page and product site, checked in October 2026. No first-hand testing is claimed.\n\nThe free plan is the hook. You get 60 starting credits plus 30 more every day, so you can keep testing without paying. The catch is that free output is watermarked, capped at 540p and limited to PixVerse's own models.\n\nStandard at $10/month is the realistic entry point for anything you publish. It removes the watermark, raises output to 720p and adds 1,200 credits every 30 days. Pro at $30/month is where 4K and the third-party model library open up.\n\nCredits are the thing to watch. Daily credits expire at the end of each day, and membership credits reset every 30 days. Only bonus credits from packs and promotions carry over.\n\nPixVerse's own homepage cites an Artificial Analysis image-to-video ranking that places V6 near the top at a lower per-minute API cost than several rivals. That is a vendor-presented figure, so check the leaderboard directly.",
+    useCases: [
+      "Turning a product photo into a short animated ad",
+      "Making scroll-stopping hooks for Reels, Shorts and TikTok",
+      "Generating B-roll and cutaways for YouTube videos",
+      "Adding lip-synced dialogue to a short character clip",
+      "Testing several visual ideas quickly with free daily credits",
+    ],
+    pricingSection: "**PixVerse pricing (verify on app.pixverse.ai/subscribe):**\n- Free: 60 starting credits + 30 daily credits, up to 540p, watermarked, PixVerse models only.\n- Standard ($10/month, or $8/month yearly): 1,200 credits every 30 days + 60 daily, up to 720p, no watermark.\n- Pro ($30/month, or $24/month yearly): 6,000 credits every 30 days, up to 4K, third-party video models.\n- Premium and Ultra: 15,000 and 25,000 credits every 30 days; check the current price on the pricing page.\n\nCredit packs start at $5 for 500 credits. Daily and membership credits expire if unused, so pick a plan that matches how often you actually generate.",
+    verdict: "A strong, low-cost pick for short, stylized social clips, with one of the more usable free plans in AI video. Start free to judge the output, then move to Standard once you need watermark-free 720p. Pick a cinematic model or a template video tool instead if your work centres on long scenes or full explainers.",
+    relatedBlogSlugs: ['best-ai-video-generators-2026', 'best-ai-tools-for-youtube-creators-2026', 'best-ai-tools-for-content-creators-free-2026', 'best-ai-tools-for-social-media-2026'],
+    rating: 4.1, lastTested: "October 2026", lastTestedISO: "2026-10-10", datePublished: "2026-10-10", timeUsed: "Researched Oct 2026",
+  },
   'alf-website-studio': {
     whatIs: "Alf Website Studio is Spaceship's conversational website builder. You describe the site to Alf, Spaceship's AI assistant, which generates the pages, copy, branding and images; you then refine the result by chat or in a visual editor. Hosting, domain connection and an SSL certificate are handled for you. Spaceship's published pricing is a 30-day free trial, then $5 per month.",
     whoIsItFor: "Entrepreneurs, freelancers and small businesses, especially people who already hold a domain at Spaceship and want a simple business site or portfolio live without separate hosting decisions. Spaceship's own documentation positions it for non-technical users who do not want to write HTML or CSS.",
@@ -1578,6 +1595,7 @@ const TOOL_RADAR: Record<string, [number, number, number, number, number]> = {
   'presentation-intelligence': [4.4, 4.0, 4.3, 3.6, 3.0],
   'aippt':                    [4.3, 3.9, 3.9, 3.4, 2.8],
   'renderforest':             [4.4, 4.0, 3.7, 3.8, 4.0],
+  'pixverse':                 [4.5, 4.1, 4.2, 3.6, 3.2],
   'alf-website-studio':       [4.5, 3.7, 4.3, 3.4, 3.6],
   'jetpack-ai-assistant':     [4.4, 3.5, 3.8, 3.0, 3.6],
 };

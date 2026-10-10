@@ -96,7 +96,7 @@ const post: BlogPost = {
 
 <h2>Step 1: choose the domain</h2>
 <p>Your domain is the public address. It is separate from the page design, and moving it later can be inconvenient because email, redirects, analytics, and printed material may already depend on it.</p>
-<p>Choose a name that matches the business rather than the AI builder. Check spelling, pronunciation, trademark risk, and the renewal price. A low first-year promotion is not the same as a low long-term cost. The official checkout is the right place to confirm the exact TLD price, taxes, privacy options, and renewal terms.</p>
+<p>Choose a name that matches the business rather than the AI builder. Check spelling, pronunciation, trademark risk, and the renewal price. A low first-year promotion is not the same as a low long-term cost. Our <a href="/blog/domain-renewal-prices-compared-2026/" style="color:var(--a1);font-weight:600;">domain renewal prices comparison</a> lines up first-year and renewal prices across Spaceship, Domain.com, Network Solutions and BigRock. The official checkout is the right place to confirm the exact TLD price, taxes, privacy options, and renewal terms.</p>
 
 <h3>BigRock: India-focused domains and hosting</h3>
 <p>BigRock's India domain page shows .com starting at Rs 749 and .in at Rs 549 in its visible pricing panel. It also presents BigRock as an ICANN-accredited registrar.</p><p>The page lists domain management, DNS management, forwarding, and a 30-day Titan email trial. Promotions can change, so treat those numbers as dated observations.</p>
@@ -143,12 +143,12 @@ const post: BlogPost = {
 </ol>
 
 <h2>Which route should you take?</h2>
-<p><strong>Use included builder hosting</strong> when you need a small site quickly and the builder provides the domain connection, SSL, backups, and publishing tools you need. This is usually the least complicated route.</p>
+<p><strong>Use included builder hosting</strong> when you need a small site quickly and the builder provides the domain connection, SSL, backups, and publishing tools you need. This is usually the least complicated route. If you haven't picked the builder yet, our <a href="/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026/" style="color:var(--a1);font-weight:600;">Lovable vs Wegic vs Readdy vs CREAO comparison</a> puts four AI builders side by side.</p>
 <p><strong>Use SITE123</strong> when you are a beginner who wants the builder, hosting, SSL and a first-year domain in one account, and you do not need AI to write the pages.</p>
 <p><strong>Use WordPress.com</strong> when your builder exports WordPress and you want managed hosting instead of running a server yourself.</p>
 <p><strong>Use BigRock</strong> when India-specific rupee pricing, domain registration, and conventional hosting are important. Its visible hosting plans include renewal prices, which makes the promotion-to-renewal comparison easier to inspect than a headline price alone.</p>
 <p><strong>Use Spaceship</strong> when domain management and business email are the main decisions, and you are comfortable connecting the domain to an external builder or host.</p>
-<p><strong>Use Domain.com or Network Solutions</strong> only after checking the exact product bundle and renewal terms you are buying. They are broad providers, so the checkout details matter more than a generic brand comparison.</p>
+<p><strong>Use Domain.com or Network Solutions</strong> only after checking the exact product bundle and renewal terms you are buying. They are broad providers, so the checkout details matter more than a generic brand comparison. See the <a href="/blog/domain-renewal-prices-compared-2026/" style="color:var(--a1);font-weight:600;">renewal price comparison</a> before you commit.</p>
 <p><strong>Use SSLs.com</strong> when you have a genuine need for a separately managed certificate. If your builder or host already supplies HTTPS, keep the setup simpler and avoid paying for a duplicate certificate.</p>
 
 <h2>Final rule: verify the handoff, not just the AI draft</h2>

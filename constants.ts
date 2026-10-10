@@ -386,6 +386,43 @@ export const TOOLS: Tool[] = [
     ],
     reviewType: 'research-based',
   },
+  // PixVerse — mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'v6', slug: 'pixverse',
+    name: 'PixVerse', tagline: 'Short, stylized AI video clips from a prompt or image, with a daily free allowance',
+    description: 'PixVerse is an AI video generator that turns a text prompt or a still image into short clips. It runs its own PixVerse models, with V6 as the current flagship, and adds third-party video models on Pro and above. Templates, lip sync, an AI agent, a node-based Canvas and mobile apps sit in the same account.',
+    category: Category.VIDEO, affiliateLink: 'https://motivaiprivatelimited.sjv.io/0GKm6Y?utm_source=pixverse&utm_medium=affiliate',
+    iconName: 'Film', color: '#8b5cf6', accentColor: '#7c3aed',
+    userBadge: 'Free plan ✓', pricing: 'Free (daily credits, watermarked, up to 540p) + Standard from $10/month', bestFor: 'Creators who need short, stylized clips for Reels, Shorts, TikTok and ads',
+    features: ['Text-to-video and image-to-video with PixVerse V6', 'Ready-made effect templates and mini-apps', 'Lip sync and consistent characters', 'AI agent and node-based Canvas workflows', 'Third-party video models (Seedance, Kling, Sora 2 and more) on Pro and above'],
+    pros: [
+      'Free plan refreshes credits daily, so you can keep testing without paying',
+      'Standard at $10/month removes the watermark and unlocks 720p',
+      'Pro and above add third-party video models in the same credit system',
+      'Web, iOS and Android apps plus an API and CLI',
+    ],
+    cons: [
+      'Free output is watermarked and capped at 540p',
+      'Daily and membership credits expire if unused',
+      'No refunds for dissatisfaction with generated results',
+      'Built for short clips, not long narrative scenes',
+    ],
+    notForYou: 'Anyone who needs long, cinematic scenes with complex physics, or who wants a template-led editor for full explainer videos. A dedicated cinematic model or a template video tool like Renderforest will fit better.',
+    lastTestedISO: '2026-10-10',
+    researchSources: {
+      lastVerified: '2026-10-10',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: '60 starting credits + 30 daily credits · up to 540p · watermarked · PixVerse models only' },
+      { tier: 'Standard', price: '$10/month ($8/month billed yearly)', highlight: '1,200 credits every 30 days + 60 daily · up to 720p · no watermark · 3 concurrent generations' },
+      { tier: 'Pro', price: '$30/month ($24/month billed yearly)', highlight: '6,000 credits every 30 days · up to 4K · third-party video models · 5 concurrent generations' },
+      { tier: 'Premium / Ultra', price: 'Check pricing page', highlight: '15,000 or 25,000 credits every 30 days · up to 4K · larger credit-pack bonuses' },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: 'Page created from PixVerse\'s official pricing page and product site. No first-hand testing is claimed.' },
+    ],
+    reviewType: 'research-based',
+  },
 
   // AUDIO
   {
@@ -1321,15 +1358,15 @@ export const TOOLS: Tool[] = [
   {
     id: 'h1', slug: 'headshotpro',
     name: 'HeadshotPro', tagline: 'AI professional headshots in minutes — no photographer needed',
-    description: 'HeadshotPro generates studio-quality professional headshots from selfies using AI. Upload 10–20 casual photos and receive 120+ polished headshots in under 2 hours — used by over 50,000 professionals for LinkedIn, CVs, and company directories.',
+    description: 'HeadshotPro generates studio-quality professional headshots from selfies using AI. Upload a few casual photos and receive 30–70 polished headshots in 15 minutes to 2 hours — used by over 50,000 professionals for LinkedIn, CVs, and company directories.',
     category: Category.HEADSHOT, affiliateLink: 'https://www.headshotpro.com/?via=navneet',
     iconName: 'Camera', color: '#0ea5e9', accentColor: '#0284c7',
     userBadge: 'No photographer needed', pricing: 'From $29 one-time', bestFor: 'Professionals, job seekers & LinkedIn users',
-    features: ['120+ AI headshots per session', 'Multiple backgrounds & outfits', 'Same-day delivery (avg 1–2 hrs)', 'Commercial usage rights included'],
+    features: ['30–70 AI headshots per shoot', 'Multiple backgrounds & outfits', 'Delivery in ~15 min to ~2 hrs by package', 'Money-back Realism Guarantee'],
     pros: [
       'Dramatically cheaper than a professional photographer ($29 vs $150–$500)',
       'Multiple styles in one session — formal, casual, outdoor, studio',
-      'Fast turnaround: most orders delivered within 2 hours',
+      'Fast turnaround: about 30 minutes on Professional, 15 on Executive',
       'No travel, no scheduling — works from existing selfies',
     ],
     cons: [
@@ -1338,19 +1375,19 @@ export const TOOLS: Tool[] = [
       'AI can occasionally distort fine details (glasses, earrings)',
     ],
     pricingBreakdown: [
-      { tier: 'Basic', price: '$29 one-time', highlight: '40 headshots · 4 styles · 2–3 hr delivery · Commercial rights included' },
-      { tier: 'Standard', price: '$39 one-time', highlight: '80 headshots · 8 styles · 2–3 hr delivery · More background variety' },
-      { tier: 'Premium', price: '$59 one-time', highlight: '120+ headshots · 15+ styles · Priority 1–2 hr delivery · Full commercial rights' },
+      { tier: 'Basic', price: '$29 one-time', highlight: '30 headshots · 6 photo credits · ~2 hr delivery' },
+      { tier: 'Professional', price: '$39 one-time', highlight: '50 headshots · 26 photo credits · 1 free redo · ~30 min delivery' },
+      { tier: 'Executive', price: '$59 one-time', highlight: '70 headshots in 4K · 46 photo credits · 1 free redo · ~15 min delivery' },
     ],
     setupSteps: [
-      'Go to headshotpro.com and choose a plan (Basic $29 / Standard $39 / Premium $59). One-time payment, no subscription required.',
+      'Go to headshotpro.com and choose a package (Basic $29 / Professional $39 / Executive $59). One-time payment, no subscription required.',
       'Upload 10–20 clear, well-lit selfies showing your face at different angles. Avoid sunglasses, hats, or heavy filters — the AI needs clear facial data to generate accurate results.',
-      'Select your preferred styles — formal business, smart casual, outdoor, or executive studio. Premium plan includes 15+ background and outfit combinations.',
-      'Wait 1–2 hours for delivery. HeadshotPro emails you when the batch is ready. Download all variations and pick your favourites for LinkedIn, your CV, or your company directory.',
+      'Select your preferred backdrops and outfits from the style library, or let HeadshotPro choose for you.',
+      'Wait for delivery — about 2 hours on Basic, 30 minutes on Professional, 15 minutes on Executive. HeadshotPro emails you when the batch is ready. Download all variations and pick your favourites for LinkedIn, your CV, or your company directory.',
     ],
     realOutputExample: {
-      output: 'Input: 15 casual smartphone selfies (mixed lighting, various backgrounds). Output: 120 headshots across 15 style variations — dark studio background, light neutral, outdoor blur, corporate white. Best results: neutral-background formal shots were indistinguishable from a professional studio session at the thumbnail sizes LinkedIn and most job portals use.',
-      editorialNote: 'Based on published user reviews across Trustpilot (4.8, 2,100+ reviews) and Reddit (r/LinkedInTips, r/jobs). The most consistent finding: output quality correlates directly with input quality. Photos taken in good natural light with a plain background produce headshots that regularly fool colleagues into asking for the photographer\'s name. Shots taken in dim indoor lighting produce noticeably softer, slightly uncanny results. The $29 Basic plan is the right starting point — upgrade only if you need style variety.',
+      output: 'Input: 15 casual smartphone selfies (mixed lighting, various backgrounds). Output: a full set of headshots across several backdrop and outfit variations — dark studio background, light neutral, outdoor blur, corporate white. Best results: neutral-background formal shots were indistinguishable from a professional studio session at the thumbnail sizes LinkedIn and most job portals use.',
+      editorialNote: 'Based on published user reviews across Trustpilot (4.7, 3,500+ reviews) and Reddit (r/LinkedInTips, r/jobs). The most consistent finding: output quality correlates directly with input quality. Photos taken in good natural light with a plain background produce headshots that regularly fool colleagues into asking for the photographer\'s name. Shots taken in dim indoor lighting produce noticeably softer, slightly uncanny results. The $29 Basic plan is the cheapest starting point; the $39 Professional plan adds 20 headshots, a free redo and much faster delivery.',
     },
     dailyUseCases: [
       'LinkedIn profile update — the #1 use case: a professional headshot increases LinkedIn profile views by up to 14x according to LinkedIn\'s own data.',
@@ -3013,8 +3050,8 @@ Object.assign(TOOL_KEYWORDS, {
 // ── Week 2: HeadshotPro — HEADSHOT category launch ────────────────────────
 Object.assign(TOOL_FAQS, {
   headshotpro: [
-    { q: 'How much does HeadshotPro cost?', a: 'HeadshotPro is a one-time payment with no subscription. The Basic plan is $29 for 40 headshots across 4 styles. Standard is $39 for 80 headshots across 8 styles. Premium is $59 for 120+ headshots across 15+ styles. All plans include commercial usage rights and 1–2 hour delivery. No free plan or trial is available.' },
-    { q: 'How good are HeadshotPro AI headshots for LinkedIn?', a: 'Based on 2,100+ Trustpilot reviews (rated 4.8/5), HeadshotPro headshots consistently pass as professional photography at the thumbnail sizes LinkedIn uses. Profile views increase by up to 14x with a professional headshot versus a casual selfie according to LinkedIn\'s own published data. The caveat: input photo quality matters — well-lit selfies on plain backgrounds produce the best results.' },
+    { q: 'How much does HeadshotPro cost?', a: 'HeadshotPro is a one-time payment with no subscription. Basic is $29 for 30 headshots in about 2 hours. Professional is $39 for 50 headshots in about 30 minutes, with a free redo. Executive is $59 for 70 headshots in 4K in about 15 minutes. Every package is covered by a money-back Realism Guarantee. There is no free plan.' },
+    { q: 'How good are HeadshotPro AI headshots for LinkedIn?', a: 'With a 4.7/5 rating from 3,500+ Trustpilot reviews, HeadshotPro headshots consistently pass as professional photography at the thumbnail sizes LinkedIn uses. Profile views increase by up to 14x with a professional headshot versus a casual selfie according to LinkedIn\'s own published data. The caveat: input photo quality matters — well-lit selfies on plain backgrounds produce the best results.' },
     { q: 'How many photos do I need to upload to HeadshotPro?', a: 'HeadshotPro requires 10–20 clear selfies for best results. Photos should show your face clearly, feature good lighting, and avoid accessories like sunglasses or hats. Variety helps — different angles, slight head turns, and a few photos with and without glasses if you wear them. The more varied your input set, the more accurate and natural the AI output.' },
     { q: 'How long does HeadshotPro take to deliver headshots?', a: 'Most HeadshotPro orders are delivered within 1–2 hours. The website states up to 2 hours for standard orders; Premium plan orders are prioritised. Delivery is by email — you receive a download link when the batch is ready. Orders placed during off-peak hours are often faster.' },
     { q: 'Does HeadshotPro work for Indian users?', a: 'Yes — HeadshotPro works globally including India. Payment is in USD ($29–$59), so an international credit or debit card is required. UPI is not currently supported and forex charges apply. At current exchange rates, the Basic plan is approximately ₹2,415. The output quality is identical regardless of where you are located.' },
@@ -3297,4 +3334,18 @@ Object.assign(TOOL_FAQS, {
 });
 Object.assign(TOOL_KEYWORDS, {
   renderforest: ['renderforest review', 'renderforest pricing', 'renderforest free plan', 'ai logo and video maker', 'renderforest alternatives'],
+});
+
+// ── PixVerse — added Oct 2026, mirrors prerender.mjs TOOL_FAQS ──
+Object.assign(TOOL_FAQS, {
+  pixverse: [
+    { q: 'Is PixVerse free?', a: 'Yes. The free plan gives 60 starting credits plus 30 credits that refresh every day. Free videos are watermarked, capped at 540p and limited to PixVerse\'s own models. Daily credits expire at the end of the day if unused.' },
+    { q: 'How much does PixVerse cost?', a: 'Standard is $10/month, or $8/month billed yearly, for 1,200 credits every 30 days, 720p output and no watermark. Pro is $30/month, or $24/month billed yearly, for 6,000 credits, up to 4K and access to third-party video models. Premium and Ultra add 15,000 and 25,000 credits. Credit packs start at $5 for 500 credits.' },
+    { q: 'Can I use PixVerse videos commercially?', a: 'Paid plans remove the watermark, which most commercial use needs. Read PixVerse\'s terms of service for the current licensing rules before using clips in paid ads or client work.' },
+    { q: 'Does PixVerse offer refunds?', a: 'Only in narrow cases. PixVerse says it does not refund because of dissatisfaction with generated results, and credit packs are non-refundable. An unused subscription that is still within its validity period can be refunded in full. Use the free daily credits to judge quality before paying.' },
+    { q: 'What is PixVerse best for?', a: 'Short, stylized clips: social hooks, B-roll, product teasers and effect-driven Reels or Shorts. It is a weaker fit for long, cinematic scenes with complex physics.' },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  pixverse: ['pixverse review', 'pixverse pricing', 'pixverse free plan', 'pixverse v6', 'pixverse alternatives', 'ai short video generator'],
 });

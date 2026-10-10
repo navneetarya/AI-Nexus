@@ -188,8 +188,8 @@ const post: BlogPost = {
 
 <h3>Also worth considering: PixVerse</h3>
 <p><a href="${AFFILIATE_LINKS['pixverse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">PixVerse</a> sits in the same lane as Pika: fast, template-driven, stylized clips rather than cinematic realism. Its V6 model added native audio and 20+ camera-control presets, and it handles multi-character lip-sync in one pass, which Pika does not offer today.</p>
-<p>Pricing is credit-based across five tiers: Free (90 signup credits plus 60 that refresh daily, watermarked output), Standard at $10/month, Pro at $30/month, Premium at $60/month, and Ultra at $249/month for heavy daily use. That undercuts Pika and Runway at the entry tiers, though the free plan's daily credits expire if unused, so they don't bank up the way Kling's do.</p>
-<p>Same trade-off as Pika: strong for short, stylized social clips, weaker than Veo 3.1 or Kling 3.0 on complex physics and longer narrative sequences.</p>
+<p>Pricing is credit-based across five tiers: Free (60 starting credits plus 30 that refresh daily, watermarked output up to 540p), Standard at $10/month, Pro at $30/month, Premium at $60/month, and Ultra at $249/month for heavy daily use. That undercuts Pika and Runway at the entry tiers, though daily credits expire if unused, so they don't bank up the way Kling's do.</p>
+<p>Same trade-off as Pika: strong for short, stylized social clips, weaker than Veo 3.1 or Kling 3.0 on complex physics and longer narrative sequences. See our <a href="/tools/pixverse/" style="color:rgb(13,148,136);font-weight:600;">PixVerse review</a> for the full plan breakdown.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['pixverse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PixVerse →</a>
 </div>
