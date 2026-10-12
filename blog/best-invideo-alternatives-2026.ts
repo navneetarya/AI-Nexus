@@ -14,7 +14,7 @@ const post: BlogPost = {
   metaDescription:
     'Pictory, Opus Clip, and Murf AThe comparison covers as InVideo alternatives in 2026 — which wins for faceless YouTube, short-form clips, and video repurposing.',
   datePublished: '2026-05-04',
-  dateModified: '2026-08-21',
+  dateModified: '2026-10-09',
   author: 'Navneet Arya',
   category: 'Video',
   readTime: '7 min read',

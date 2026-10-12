@@ -54,7 +54,7 @@ const post: BlogPost = {
     },
     {
       q: 'How long does it take to get AI headshots?',
-      a: 'Most multi-photo AI headshot tools deliver results within 15 minutes to 2 hours. HeadshotPro quotes about 2 hours on Basic, about 30 minutes on Professional and about 15 minutes on Executive. Aragon AI says its first set arrives in under 30 minutes on average, while third-party reviews report 15 minutes to 2 hours depending on the pack. Remini and Fotor generate results immediately but with lower quality.',
+      a: 'Most multi-photo AI headshot tools deliver results within 15 minutes to 2 hours. HeadshotPro quotes about 2 hours on Basic, about 30 minutes on Professional and about 15 minutes on Executive. Aragon AI puts delivery at about 45, 30 and 15 minutes by pack, while third-party reviews report 15 minutes to 2 hours. Remini and Fotor generate results immediately but with lower quality.',
     },
     {
       q: 'Do AI headshot tools work for Indian users?',
@@ -70,7 +70,7 @@ const post: BlogPost = {
     },
     {
       q: 'What is the fastest AI headshot tool available?',
-      a: 'Pose AI is the fastest tool in this comparison, generating a full set of styled headshots from a single selfie in under 10 seconds. Among multi-photo tools, HeadshotPro Executive (about 15 minutes) and Professional (about 30 minutes) are the fastest; Aragon AI averages under 30 minutes by its own account, and Try It On AI is reported at roughly 1–3 hours. Speed is a real trade-off: instant tools work from one input photo, so output variety and consistency are generally lower than tools that train on 10–20 photos over a longer processing window.',
+      a: 'Pose AI is the fastest tool in this comparison, generating a full set of styled headshots from a single selfie in under 10 seconds. Among multi-photo tools, HeadshotPro Executive (about 15 minutes) and Professional (about 30 minutes) are the fastest; Aragon AI quotes about 15 to 45 minutes depending on pack, and Try It On AI is reported at roughly 1–3 hours. Speed is a real trade-off: instant tools work from one input photo, so output variety and consistency are generally lower than tools that train on 10–20 photos over a longer processing window.',
     },
     {
       q: 'Do AI headshots come with commercial usage rights?',
@@ -102,7 +102,10 @@ const post: BlogPost = {
     { url: 'https://support.betterpic.io/en/article/can-i-request-a-refund-for-my-purchase-1y9qz8b/', label: 'BetterPic — refund policy' },
     { url: 'https://www.aragon.ai/terms', label: 'Aragon AI — terms of service' },
     { url: 'https://www.aragon.ai/privacy', label: 'Aragon AI — privacy policy' },
-    { url: 'https://pose.ai/terms', label: 'Pose AI — terms of service' },
+    { url: 'https://pose.ai/terms-conditions', label: 'Pose AI — terms of service' },
+    { url: 'https://support.betterpic.io/en/article/who-owns-the-pictures-1oj455b/', label: 'BetterPic — ownership, license and data retention' },
+    { url: 'https://support.betterpic.io/en/article/how-long-does-it-take-to-get-headshots-csnxca/', label: 'BetterPic — delivery times by package' },
+    { url: 'https://www.aragon.ai/faqs', label: 'Aragon AI — FAQ (delivery time)' },
   ],
 
   content: `
@@ -124,7 +127,7 @@ const post: BlogPost = {
     <li><a href="#key-takeaways" style="color:#0ea5e9;text-decoration:none;">Key Takeaways</a></li>
     <li><a href="#recruiter-detection" style="color:#0ea5e9;text-decoration:none;">Can Recruiters Tell It's AI?</a></li>
     <li><a href="#comparison-table" style="color:#0ea5e9;text-decoration:none;">Comparison Table</a></li>
-    <li><a href="#official-terms" style="color:#0ea5e9;text-decoration:none;">Price, Refund, Data &amp; Rights (Official Pages)</a></li>
+    <li><a href="#official-terms" style="color:#0ea5e9;text-decoration:none;">Price, Speed, Refund, Data &amp; Rights (Official Pages)</a></li>
     <li><a href="#headshotpro" style="color:#0ea5e9;text-decoration:none;">#1 HeadshotPro</a></li>
     <li><a href="#aragon-ai" style="color:#0ea5e9;text-decoration:none;">#2 Aragon AI</a></li>
     <li><a href="#pose-ai" style="color:#0ea5e9;text-decoration:none;">#3 Pose AI (Fastest)</a></li>
@@ -197,7 +200,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Creative &amp; lifestyle headshots</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">$35–$75 one-time</td>
-      <td style="padding:10px 14px;">~30 min avg (per Aragon)</td>
+      <td style="padding:10px 14px;">~15–45 min by pack (per Aragon)</td>
       <td style="padding:10px 14px;">4.6/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
@@ -213,7 +216,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">4K hero shots, wide wardrobe range</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">$35–$79 per pack</td>
-      <td style="padding:10px 14px;">Under 2 hours</td>
+      <td style="padding:10px 14px;">About 1–2 hours</td>
       <td style="padding:10px 14px;">4.5/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);background:rgba(14,165,233,.02);">
@@ -244,14 +247,15 @@ const post: BlogPost = {
 </table>
 </div>
 
-<h2 id="official-terms">Price, Refund, Data &amp; Rights: What the Official Pages Say</h2>
-<p>Price and speed are easy to compare. Refund rules, data handling and usage rights are where these tools differ most, so this table is built from each vendor's own pages as read on 12 October 2026 (BetterPic's terms and privacy pages would not load, so those cells stay unverified). "Not verified" means we could not read the vendor's own page for that item, so confirm it yourself before paying.</p>
+<h2 id="official-terms">Price, Speed, Refund, Data &amp; Rights: What the Official Pages Say</h2>
+<p>Price and speed are easy to compare. Refund rules, data handling and usage rights are where these tools differ most, so this table is built from each vendor's own pages as read on 12 October 2026. BetterPic's cells come from its support pages rather than its full terms, and third-party reviews describe its retention period differently, so confirm it with BetterPic before paying. "Not verified" means we could not read the vendor's own page for that item.</p>
 <div style="overflow-x:auto;margin:24px 0;">
-<table style="width:100%;border-collapse:collapse;font-size:13px;min-width:760px;">
+<table style="width:100%;border-collapse:collapse;font-size:13px;min-width:900px;">
   <thead>
     <tr style="background:rgba(14,165,233,.1);">
       <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Tool</th>
       <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Price (official or noted)</th>
+      <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Turnaround</th>
       <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Refund policy</th>
       <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Data retention &amp; AI training</th>
       <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Commercial use</th>
@@ -261,6 +265,7 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);background:rgba(14,165,233,.04);">
       <td style="padding:10px 12px;font-weight:700;">HeadshotPro</td>
       <td style="padding:10px 12px;">$29 / $39 / $59 one-time for 30 / 50 / 70 headshots (<a href="https://www.headshotpro.com/pricing" target="_blank" rel="noopener noreferrer">pricing page</a>)</td>
+      <td style="padding:10px 12px;">About 2 hours (Basic), 30 minutes (Professional), 15 minutes (Executive) per the <a href="https://www.headshotpro.com/pricing" target="_blank" rel="noopener noreferrer">pricing page</a></td>
       <td style="padding:10px 12px;">Realism Guarantee: redo or full refund if it does not look like you. Terms tie the 14-day full refund to not downloading photos (<a href="https://www.headshotpro.com/refund" target="_blank" rel="noopener noreferrer">refund policy</a>)</td>
       <td style="padding:10px 12px;">Uploads and results auto-delete after 30 days; download links last 7 days; photos are not used to train AI models</td>
       <td style="padding:10px 12px;">Terms grant personal and commercial use and assign its rights in your headshots to you</td>
@@ -268,6 +273,7 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
       <td style="padding:10px 12px;font-weight:600;">Aragon AI</td>
       <td style="padding:10px 12px;">From $35 for 40+ headshots, up to 100 images (Aragon's own LinkedIn guide); tier prices of $35 / $45 / $75 come from third-party reviews</td>
+      <td style="padding:10px 12px;">About 45 / 30 / 15 minutes by pack per <a href="https://aragon.ai/blog/headshotpro-vs-aragon-which-ai-headshot-generator-has-better-results" target="_blank" rel="noopener noreferrer">Aragon's own comparison</a>; its <a href="https://www.aragon.ai/faqs" target="_blank" rel="noopener noreferrer">FAQ</a> says allow 60 minutes, plus 1-2 more hours when servers are busy</td>
       <td style="padding:10px 12px;">Complimentary redo or 100% refund if requested within 14 calendar days; downloading counts as using the product (<a href="https://www.aragon.ai/refund-policy" target="_blank" rel="noopener noreferrer">refund policy</a>)</td>
       <td style="padding:10px 12px;">Photos deleted or anonymized within 30 days of the earliest trigger: delivery, a deletion request, account closure or one year after upload. Its AI providers are barred from using face data to train generalized models (<a href="https://www.aragon.ai/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a>)</td>
       <td style="padding:10px 12px;">Terms allow personal or commercial use of outputs and assign Aragon's rights in them (if any) to you; outputs may resemble other users' (<a href="https://www.aragon.ai/terms" target="_blank" rel="noopener noreferrer">terms</a>)</td>
@@ -275,20 +281,23 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
       <td style="padding:10px 12px;font-weight:600;">Pose AI</td>
       <td style="padding:10px 12px;">Weekly auto-renewing plans of $12 / $16 / $20 on the US App Store listing, with a 3-day trial that is watermarked</td>
-      <td style="padding:10px 12px;">Not verified; App Store purchases follow Apple's refund process</td>
-      <td style="padding:10px 12px;">Terms say it does not use your content to train AI models; no retention period is stated in the terms (<a href="https://pose.ai/terms" target="_blank" rel="noopener noreferrer">terms</a>)</td>
+      <td style="padding:10px 12px;">Seconds from a single selfie, as described in the Pose AI review below; not re-checked on Pose's own pages</td>
+      <td style="padding:10px 12px;">Not stated on its <a href="https://pose.ai/terms-conditions" target="_blank" rel="noopener noreferrer">terms page</a> as read (the billing section did not render); App Store purchases follow Apple's refund process</td>
+      <td style="padding:10px 12px;">Terms say it does not use your content to train AI models; no retention period is stated in the terms (<a href="https://pose.ai/terms-conditions" target="_blank" rel="noopener noreferrer">terms</a>)</td>
       <td style="padding:10px 12px;">Its terms grant personal, non-commercial use of the service and content and prohibit commercial use, so confirm with Pose before using a result for business</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
       <td style="padding:10px 12px;font-weight:600;">BetterPic</td>
       <td style="padding:10px 12px;">$35 (20 headshots) to $79 (120) per BetterPic's own comparison page</td>
+      <td style="padding:10px 12px;">About 2 hours (Basic), 1.5 hours (Pro), 1 hour (Expert) per its <a href="https://support.betterpic.io/en/article/how-long-does-it-take-to-get-headshots-csnxca/" target="_blank" rel="noopener noreferrer">support article</a></td>
       <td style="padding:10px 12px;">Full refund within 7 days if no model is trained; 10% withheld once trained; nothing back after downloading an image (<a href="https://support.betterpic.io/en/article/can-i-request-a-refund-for-my-purchase-1y9qz8b/" target="_blank" rel="noopener noreferrer">support article</a>)</td>
-      <td style="padding:10px 12px;">Not verified</td>
-      <td style="padding:10px 12px;">Not verified</td>
+      <td style="padding:10px 12px;">Support pages say input photos are kept 7 days and the trained model 30 days; results stay in your account until you ask support to delete them. No AI-training statement found on those pages, and third-party reviews give different retention periods (<a href="https://support.betterpic.io/en/article/who-owns-the-pictures-1oj455b/" target="_blank" rel="noopener noreferrer">support article</a>)</td>
+      <td style="padding:10px 12px;">Support page: you own the photos and get a full commercial license for personal or professional use (<a href="https://support.betterpic.io/en/article/who-owns-the-pictures-1oj455b/" target="_blank" rel="noopener noreferrer">support article</a>)</td>
     </tr>
     <tr>
       <td style="padding:10px 12px;font-weight:600;">Try It On AI</td>
       <td style="padding:10px 12px;">Not confirmed: an older $14.99 listing conflicts with recent third-party prices of about $21–$35</td>
+      <td style="padding:10px 12px;">Not verified; third-party reports of 1-3 hours</td>
       <td style="padding:10px 12px;">Not verified; a competitor's review reports no refunds once an order is processed</td>
       <td style="padding:10px 12px;">Not verified</td>
       <td style="padding:10px 12px;">Not verified</td>
@@ -336,9 +345,9 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A shallow focus portrait of a woman in a gray jacket, styled like a creative headshot" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2 id="aragon-ai">#2 Aragon AI: Best for Creative &amp; Lifestyle Headshots</h2>
-<p><strong>Rating: 4.6/5 · From $35 one-time · About 30 minutes on average (per Aragon)</strong></p>
+<p><strong>Rating: 4.6/5 · From $35 one-time · About 15–45 minutes by pack (per Aragon)</strong></p>
 <p>Aragon AI is the strongest alternative to HeadshotPro and the better pick if you want more creative or lifestyle-oriented headshots alongside traditional studio portraits. Where HeadshotPro focuses on formal, LinkedIn-ready outputs, Aragon generates a broader range of settings. Rooftop terraces, bookshelves, and casual office environments all work well for personal branding beyond LinkedIn.</p>
-<p>Aragon says the first set arrives in under 30 minutes on average, though third-party reviews report 15 minutes to 2 hours depending on the pack. It also includes a face-retouching control that lets you specify how much skin smoothing to apply, a useful option that HeadshotPro does not offer directly. Aragon's own LinkedIn guide lists its entry pack at $35 for 40+ headshots, against $29 for 30 on HeadshotPro Basic, so Aragon gives slightly more headshots per dollar at the entry level.</p>
+<p>Aragon's own comparison puts delivery at about 45, 30 and 15 minutes on its three packs, and its FAQ allows 60 minutes (longer when servers are busy). Third-party reviews report 15 minutes to 2 hours. It also includes a face-retouching control that lets you specify how much skin smoothing to apply, a useful option that HeadshotPro does not offer directly. Aragon's own LinkedIn guide lists its entry pack at $35 for 40+ headshots, against $29 for 30 on HeadshotPro Basic, so Aragon gives slightly more headshots per dollar at the entry level.</p>
 <p>The trade-off: Aragon's formal studio-background results are marginally less consistent than HeadshotPro for pure LinkedIn use. Users in creative fields and personal branding consultants tend to prefer Aragon; professionals in finance, law, and corporate sectors report better results with HeadshotPro's formal output.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
   <li>✅ More creative style variety per dollar than HeadshotPro</li>

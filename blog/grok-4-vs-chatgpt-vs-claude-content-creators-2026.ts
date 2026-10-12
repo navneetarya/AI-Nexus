@@ -9,6 +9,7 @@
 //                 /blog/chatgpt-alternatives-free-2026, /blog/best-ai-writing-tools-2026
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'grok-4-vs-chatgpt-vs-claude-content-creators-2026',
@@ -292,7 +293,7 @@ const post: BlogPost = {
 <h2>Related Reading</h2>
 <p>For a broader look at dedicated AI writing tools built for content creation workflows, see the full <a href="/blog/best-ai-writing-tools-2026/" style="color:#0D9488;font-weight:600;">Best AI Writing Tools 2026</a> guide. It covers tools like <a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">Rytr</a> and <a href="/tools/grammarly/" style="color:#0D9488;font-weight:600;">Grammarly</a> that sit alongside these general models.</p>
 <p><a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
-<p><a href="https://grammarly.com" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['grammarly']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a></p>
 <p>If budget is a hard constraint, the <a href="/blog/chatgpt-alternatives-free-2026/" style="color:#0D9488;font-weight:600;">best free ChatGPT alternatives</a> guide covers everything available at zero cost. And for the broader chatbot landscape beyond content creation, see <a href="/blog/best-ai-chatbot-2026/" style="color:#0D9488;font-weight:600;">Best AI Chatbot 2026</a>.</p>
 `,
 };

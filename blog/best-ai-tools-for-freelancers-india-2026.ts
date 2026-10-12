@@ -14,7 +14,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Freelancers India 2026 — INR Pricing',
   metaDescription: 'AI tools for Indian freelancers 2026 — INR pricing, free tiers without a credit card, Fiverr and Upwork India picks. Independently researched.',
   datePublished: '2026-05-09',
-  dateModified: '2026-08-22',
+  dateModified: '2026-10-09',
   author: 'Navneet Arya',
   category: 'india',
   readTime: '7 min read',

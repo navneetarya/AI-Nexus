@@ -25,7 +25,7 @@ const post: BlogPost = {
   seoTitle: 'ElevenLabs for YouTube: Commercial Rights Guide 2026',
   metaDescription: 'Can you monetize YouTube videos made with ElevenLabs? Plan-by-plan commercial rights and YouTube AI disclosure rules explained.',
   datePublished: '2026-09-10',
-  dateModified: '2026-09-10',
+  dateModified: '2026-10-09',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '8 min read',

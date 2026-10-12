@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Cursor AI Review 2026: Still Worth $20/mo?',
   metaDescription: 'Cursor AThe review covers for 2026: pricing, free plan, Tab completion, Composer, and Agent mode compared against GitHub Copilot. Is it worth $20/month?',
   datePublished: '2026-05-25',
-  dateModified: '2026-08-23',
+  dateModified: '2026-09-29',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '10 min read',

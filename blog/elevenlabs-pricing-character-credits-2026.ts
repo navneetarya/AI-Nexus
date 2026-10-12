@@ -23,7 +23,7 @@ const post: BlogPost = {
   seoTitle: 'ElevenLabs Pricing 2026: Real Cost Per Credit Explained',
   metaDescription: 'ElevenLabs pricing explained by credits: minutes per plan, overage charges, commercial rights, and the tier that fits your audio workload.',
   datePublished: '2026-09-10',
-  dateModified: '2026-09-10',
+  dateModified: '2026-10-09',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '9 min read',

@@ -28,7 +28,7 @@ const post: BlogPost = {
   seoTitle: 'AI Voice Cloning Pricing Compared 2026',
   metaDescription: 'ElevenLabs vs Murf AI vs Descript vs Resemble AI voice cloning pricing compared for 2026: cheapest entry point, per-minute cost, and which plan actually unlocks cloning.',
   datePublished: '2026-09-26',
-  dateModified: '2026-09-26',
+  dateModified: '2026-09-29',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '9 min read',

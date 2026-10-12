@@ -33,7 +33,11 @@ import { TOOLS } from '../constants';
 // a real tool page, move its link into constants.ts and delete it here.
 const SUPPLEMENTARY_LINKS: Record<string, string> = {
   make: 'https://www.make.com/en/register?pc=navneet',
-  lindy: 'https://www.lindy.ai/', // TODO: Lindy has no referral/tracking param issued yet
+  // Lindy runs a public PartnerStack program (market.partnerstack.com/page/lindy). Our application is recorded as pending in
+  // constants.ts, so this link stays plain until a tracked link is issued. Rates differ between Lindy's network listings, so confirm
+  // terms in the PartnerStack dashboard before quoting a commission anywhere. NOTE: this entry overrides the Lindy TOOLS entry in
+  // constants.ts (SUPPLEMENTARY wins), so when the tracked link arrives change it HERE and update the constants.ts comment, not just one of them.
+  lindy: 'https://www.lindy.ai/',
   'relevance-ai': 'https://relevanceai.com/?via=navneet',
   n8n: 'https://n8n.io/', // TODO: n8n has no public affiliate program as of 2026
   tidio: 'https://www.tidio.com/?via=ainexus',

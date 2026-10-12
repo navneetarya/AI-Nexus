@@ -168,7 +168,7 @@ const post: BlogPost = {
 <p>The cost story is what puts it at the top of this list. The CLI itself is free to download and run against your own OpenAI API key. Separately, Codex usage is bundled into every ChatGPT tier from Free up through Enterprise, with usage limits that scale by plan.</p>
 <p>Most developers already paying for ChatGPT Plus get real Codex CLI capacity at no additional cost. On the current Terminal-Bench 2.1 leaderboard, Codex CLI running GPT-5.5 sits at the top of the ranked table. That puts it ahead of Claude Code's best usable Opus 4.8 pairing.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://developers.openai.com/codex/cli" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Codex CLI →</a>
+  <a href="https://developers.openai.com/codex/cli" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Codex CLI →</a>
 </div>
 
 <h3>2. OpenCode: Best Free, Fully Open-Source, Model-Agnostic Pick</h3>
@@ -177,7 +177,7 @@ const post: BlogPost = {
 <p>Because OpenCode is bring-your-own-key, its actual monthly cost is whatever the underlying model calls cost, including $0 if you route to a local Ollama model. That flexibility is the entire pitch.</p>
 <p>You can start a session on a cheap model for exploration. Then switch to Claude Opus or GPT-5.5 only for the parts of a task that need frontier-level reasoning, all inside the same tool.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://opencode.ai/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get OpenCode →</a>
+  <a href="https://opencode.ai/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get OpenCode →</a>
 </div>
 
 <h3>3. Aider: Best for a Git-Native Workflow</h3>
@@ -185,7 +185,7 @@ const post: BlogPost = {
 <p>It is free, open source under Apache 2.0, and works with any model provider you configure. There is no vendor lock-in and no bundled subscription to manage.</p>
 <p>The tradeoff is that Aider is intentionally narrower in scope than Codex CLI or OpenCode. It is built specifically for the edit-review-commit loop rather than broader agentic tasks like autonomous multi-hour refactors or CI/CD integration. For a developer who wants AI pair programming to behave like a disciplined human collaborator, that narrowness is the appeal, not a limitation.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://aider.chat/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Aider →</a>
+  <a href="https://aider.chat/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Aider →</a>
 </div>
 
 <h3>4. Google Antigravity CLI: What Replaced Gemini CLI</h3>
@@ -217,7 +217,7 @@ const post: BlogPost = {
 <p>It is also worth reading these scores as agent-plus-model pairs, not model scores in isolation. Every bring-your-own-key tool on this list, OpenCode, Aider, Warp, inherits whatever model you point it at.</p>
 <p>So an OpenCode session running Claude Opus 4.8 should perform close to Claude Code running the same model on the underlying reasoning. That's true even though the two tools built around it differ in workflow.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Antigravity CLI →</a>
+  <a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Antigravity CLI →</a>
 </div>
 
 <h2>Free vs Paid: What You Actually Get Without a Credit Card</h2>
@@ -256,7 +256,7 @@ const post: BlogPost = {
 <!-- ai-nexus:tool-cta-block -->
 <div style="margin:30px 0 12px;padding:16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
   <p style="margin:0 0 8px;font-size:14px;line-height:1.6;"><strong>Compare official pages before deciding:</strong></p>
-  <div style="display:inline-block;"><a href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Compare vs Claude Code Pricing →</a></div>  <div style="display:inline-block;"><a href="https://aws.amazon.com/blogs/devops/amazon-q-developer-end-of-support-announcement/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Amazon Q Developer End-of-Support Notice →</a></div>
+  <div style="display:inline-block;"><a href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Compare vs Claude Code Pricing →</a></div>  <div style="display:inline-block;"><a href="https://aws.amazon.com/blogs/devops/amazon-q-developer-end-of-support-announcement/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Amazon Q Developer End-of-Support Notice →</a></div>
   <p style="margin:10px 0 0;font-size:11px;color:#6b7280;">Affiliate disclosure: some links may be affiliate links at no extra cost to you.</p>
 </div>
 

@@ -135,7 +135,7 @@ const post: BlogPost = {
 <p>If you want to see where your current resume stands before reading further, a quick free scan against a real job posting is the fastest way to find out.</p>
 <div style="margin:14px 0 24px;">
   <!-- PLACEHOLDER: replace with confirmed/tracked Jobscan affiliate link — see file header note -->
-  <a href="https://www.jobscan.co" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get your free ATS match score →</a>
+  <a href="https://www.jobscan.co" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get your free ATS match score →</a>
 </div>
 
 <h2>How ATS software actually screens a resume in 2026</h2>
@@ -173,12 +173,12 @@ const post: BlogPost = {
 <p><strong>Jobscan</strong> offers 5 free ATS match scans per month, checked against a specific job posting and, in some cases, a named ATS platform your target company may use. For most people applying to a handful of roles a week, that free allotment is enough without ever paying.</p>
 <div style="margin:14px 0 24px;">
   <!-- PLACEHOLDER: replace with confirmed/tracked Jobscan affiliate link — see file header note -->
-  <a href="https://www.jobscan.co" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jobscan's free scan →</a>
+  <a href="https://www.jobscan.co" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jobscan's free scan →</a>
 </div>
 <p><strong>Teal</strong>'s free-forever plan bundles basic keyword-matching guidance with a resume builder and an application tracker, at no cost and with no credit card required. It's useful if you're managing applications to more than a couple of companies at once, not just checking one resume.</p>
 <div style="margin:14px 0 24px;">
   <!-- PLACEHOLDER: replace with confirmed/tracked Teal affiliate link — see file header note -->
-  <a href="https://www.tealhq.com" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Teal's free plan →</a>
+  <a href="https://www.tealhq.com" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Teal's free plan →</a>
 </div>
 <p>A simpler manual check works too, and costs nothing: copy your resume's text directly out of the exported PDF and paste it into a blank document. If the sentence order, spacing, or contact details come out garbled or out of sequence, a parser is very likely seeing the same broken version you just saw.</p>
 
@@ -210,7 +210,7 @@ const post: BlogPost = {
 <p>If large enterprises with strict ATS platforms are your main target, Rezi's plain, single-column templates are built specifically to parse reliably across every major system.</p>
 <div style="margin:14px 0 24px;">
   <!-- PLACEHOLDER: replace with confirmed/tracked Rezi affiliate link — see file header note -->
-  <a href="https://www.rezi.ai" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Rezi's ATS-safe templates →</a>
+  <a href="https://www.rezi.ai" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Rezi's ATS-safe templates →</a>
 </div>
 <p>The honest summary: there's no trick that reliably beats a modern ATS. The tools that actually work are the boring ones — a clean, parseable format, language that genuinely matches what the role is asking for, and a free check before you hit submit.</p>
 <p>Save the paid tools for once you've confirmed, specifically, which gap they're closing for you.</p>

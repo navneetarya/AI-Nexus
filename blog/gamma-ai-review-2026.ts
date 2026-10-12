@@ -27,7 +27,7 @@ const post: BlogPost = {
   seoTitle: 'Gamma AI Review 2026: Is It Worth $8/Month?',
   metaDescription: 'Gamma AThe review covers for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai, Canva AI and Pi. Worth $8/month?',
   datePublished: '2026-09-09',
-  dateModified: '2026-09-22',
+  dateModified: '2026-09-29',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '10 min read',

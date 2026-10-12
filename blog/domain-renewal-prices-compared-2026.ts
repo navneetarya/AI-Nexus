@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Domain Renewal Prices Compared 2026 (India Guide)',
   metaDescription: 'Spaceship, Domain.com, Network Solutions and BigRock compared on first-year vs renewal price, plus SSLs.com certificates and an India angle. Dated Oct 2026.',
   datePublished: '2026-10-09',
-  dateModified: '2026-10-09',
+  dateModified: '2026-10-10',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '9 min read',

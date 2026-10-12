@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Lovable vs Wegic vs Readdy vs CREAO (2026)',
   metaDescription: 'Lovable, Wegic, Readdy and CREAO compared on what each builds, current plan prices, credit limits and who each suits. Pricing checked October 2026.',
   datePublished: '2026-10-09',
-  dateModified: '2026-10-09',
+  dateModified: '2026-10-10',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '9 min read',

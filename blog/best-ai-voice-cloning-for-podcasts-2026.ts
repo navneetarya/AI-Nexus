@@ -28,7 +28,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Cloning for Podcasts 2026',
   metaDescription: 'AI voice cloning for podcasts in 2026: the 3 jobs it actually solves for a show, what ElevenLabs and Descript Overdub cost, and when cloning is worth it.',
   datePublished: '2026-09-26',
-  dateModified: '2026-09-26',
+  dateModified: '2026-09-29',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '8 min read',

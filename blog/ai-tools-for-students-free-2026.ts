@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Tools for Students 2026 (No Card Needed)',
   metaDescription: '5 AI tools every student should bookmark in 2026 — all permanently free, no credit card needed. Compared for essays, research, coding, and slides.',
   datePublished: '2026-04-30',
-  dateModified: '2026-09-22',
+  dateModified: '2026-09-30',
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '9 min read',

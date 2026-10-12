@@ -21,7 +21,7 @@ const post: BlogPost = {
     { url: 'https://docs.n8n.io/', label: 'n8n documentation — self-hosting and workflow setup' },
   ],
   datePublished: '2026-06-11',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-12',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '10 min read',

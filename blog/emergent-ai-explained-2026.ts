@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'What Is Emergent AI? Emergent Abilities Explained 2026',
   metaDescription: 'Emergent AI explained in plain English — real examples, the "mirage" research debate, and what emergent behavior in AI agents means for your workflow in 2026.',
   datePublished: '2026-07-23',
-  dateModified: '2026-08-23',
+  dateModified: '2026-09-29',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '12 min read',

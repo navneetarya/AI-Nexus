@@ -19,7 +19,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tool Deals on AppSumo 2026 — What to Buy & Avoid',
   metaDescription: 'How AppSumo lifetime deals for AI tools actually work in 2026, what to check before buying, and a category-by-category guide to which deals are worth it.',
   datePublished: '2026-09-26',
-  dateModified: '2026-09-26',
+  dateModified: '2026-09-29',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '8 min read',

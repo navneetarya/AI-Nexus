@@ -24,7 +24,7 @@ const post: BlogPost = {
     seoTitle: 'Best AI Website Builders 2026: 7 Tools Compared',
     metaDescription: 'Wix, Framer, Durable, Hostinger, 10Web, Readdy, and WordToSite compared by use case, pricing, and the type of site each builder can deliver.',
   datePublished: '2026-08-08',
-  dateModified: '2026-09-21',
+  dateModified: '2026-10-10',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '12 min read',

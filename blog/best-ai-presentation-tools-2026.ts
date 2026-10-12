@@ -53,7 +53,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Presentation Tools 2026: Reviewed & Ranked',
   metaDescription: 'Best AI presentation tools 2026: Gamma, Pi, AiPPT, Beautiful.ai, Canva AI & NotebookLM compared. Tome shut down in 2025 — verified pricing for what to use instead.',
   datePublished: '2026-06-30',
-  dateModified: '2026-09-25',
+  dateModified: '2026-10-12',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '13 min read',

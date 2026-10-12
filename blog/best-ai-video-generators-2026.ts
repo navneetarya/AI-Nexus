@@ -20,7 +20,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Video Generators 2026: Runway vs Veo vs Kling Ranked',
   metaDescription: 'Best AI video generators 2026 ranked: Veo 3.1, Runway Gen-4.5, Kling AI 3.0, Pika & Luma compared on pricing, quality, and the best Sora alternative.',
   datePublished: '2026-06-30',
-  dateModified: '2026-08-23',
+  dateModified: '2026-10-10',
   author: 'Navneet Arya',
   category: 'Video',
   readTime: '13 min read',

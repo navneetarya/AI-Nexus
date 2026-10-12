@@ -26,7 +26,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Spreadsheet Tools 2026: 5 Tools Compared',
   metaDescription: 'Best AI spreadsheet tools 2026: PopAi Sheets, Numerous.ai, Coefficient, Copilot, and Gemini compared by pricing and workflow fit.',
   datePublished: '2026-09-20',
-  dateModified: '2026-09-20',
+  dateModified: '2026-09-29',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '10 min read',

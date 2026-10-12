@@ -7,7 +7,7 @@ const post: BlogPost = {
   seoTitle: 'AI Ecosystem Growth Report 2026 — Research',
   metaDescription: 'Independent analysis of the AI tools ecosystem in 2026 — market size, adoption trends, and the fastest growing categories. See the full report.',
   datePublished: '2026-05-26',
-  dateModified: '2026-08-22',
+  dateModified: '2026-10-09',
   author: 'Navneet Arya',
   category: 'Research',
   readTime: '11 min read',

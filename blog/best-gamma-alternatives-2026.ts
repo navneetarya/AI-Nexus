@@ -27,7 +27,7 @@ const post: BlogPost = {
   metaDescription:
     'Beautiful.ai, Canva AI, NotebookLM, and PThe comparison covers as Gamma alternatives in 2026 — which wins on price, the free-tier watermark, and design consistency.',
   datePublished: '2026-09-22',
-  dateModified: '2026-09-22',
+  dateModified: '2026-09-29',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '9 min read',

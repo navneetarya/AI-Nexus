@@ -27,7 +27,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Transcription Software 2026: 5 Tools Compared',
   metaDescription: 'Best AI transcription software 2026 compared: Transkriptor, Otter.ai, Descript, Fireflies.ai, and Rev — real pricing, accuracy, language support, and which one fits your workflow.',
   datePublished: '2026-09-20',
-  dateModified: '2026-09-20',
+  dateModified: '2026-09-29',
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '11 min read',

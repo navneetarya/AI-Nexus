@@ -3,7 +3,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
 // Relevance AI : AFFILIATE_LINKS['relevance-ai']  ✅ (live since Day 1)
-// Lindy.ai     : https://www.lindy.ai/pricing  ← plain link, no affiliate program confirmed; swap in a referral URL only after approval
+// Lindy.ai     : AFFILIATE_LINKS['lindy']  ← still a plain link: Lindy has a public PartnerStack program, our application is pending; the tracked link goes in lib/affiliate-links.ts once issued
 // Gumloop      : https://www.gumloop.com/pricing  ← plain link; approval-gated program, application pending
 // Pricing figures re-checked 12 Oct 2026: Lindy + Gumloop official pricing pages; Relevance AI official docs
 // (relevanceai.com/docs/get-started/pricing — its /pricing page rendered no plan prices).

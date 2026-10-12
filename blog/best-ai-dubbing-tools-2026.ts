@@ -21,7 +21,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Dubbing Tools 2026: 5 Options Compared',
   metaDescription: 'The best AI dubbing tools in 2026, compared honestly. ElevenLabs, HeyGen, Rask AI, Synthesia & Dubverse — real pricing, languages, and who each fits.',
   datePublished: '2026-09-18',
-  dateModified: '2026-09-19',
+  dateModified: '2026-10-09',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '11 min read',

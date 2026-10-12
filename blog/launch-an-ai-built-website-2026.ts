@@ -10,7 +10,7 @@ const post: BlogPost = {
   seoTitle: 'How to Launch an AI-Built Website in 2026',
   metaDescription: 'A practical guide to choosing a domain, hosting, and SSL after an AI website builder creates your site. Current official pricing and setup trade-offs.',
   datePublished: '2026-09-29',
-  dateModified: '2026-09-29',
+  dateModified: '2026-10-10',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '8 min read',
