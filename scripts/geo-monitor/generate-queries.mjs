@@ -9,6 +9,12 @@
 // Usage:
 //   node scripts/geo-monitor/generate-queries.mjs
 //   node scripts/geo-monitor/generate-queries.mjs --per-cluster 8
+//   node scripts/geo-monitor/generate-queries.mjs --priority-only   # only the GA-priority posts
+//
+// ORDER MATTERS: citation-test.mjs --limit N tests the FIRST N queries. The old order put
+// every /category/* and /compare/* query first, so a --limit 60 run never reached a blog post
+// (0/60 citations, all against category/compare pages). Blog-post queries now come first,
+// GA-priority posts at the very top, so a small --limit run tests the pages that matter.
 //
 // Output: scripts/geo-monitor/data/queries.json
 //
@@ -29,6 +35,50 @@ const OUT_FILE = path.join(OUT_DIR, 'queries.json');
 const args = process.argv.slice(2);
 const perClusterFlag = args.indexOf('--per-cluster');
 const PER_CLUSTER = perClusterFlag !== -1 ? parseInt(args[perClusterFlag + 1], 10) : 6;
+const PRIORITY_ONLY = args.includes('--priority-only');
+const CUSTOM_FILE = path.join(OUT_DIR, 'queries.custom.json');
+
+// Posts that GA shows AI assistants already send traffic to, plus the posts being reworked in
+// the Oct 2026 conversion plan. Queries are phrased the way a person asks an AI assistant;
+// each one maps to a question the post actually answers. Edit freely: these are test prompts,
+// not claims. Slugs must exist in blog/metadata.ts (checked at run time).
+const PRIORITY_POSTS = {
+  'best-ai-presentation-tools-2026': [
+    'What are the best AI presentation makers in 2026?',
+    'Gamma vs other AI presentation tools: which one should I use?',
+    'Is there a free AI tool that makes PowerPoint slides from a prompt?',
+    'Which AI presentation tool is best for a business pitch deck?',
+  ],
+  'best-ai-headshot-tools-linkedin-2026': [
+    'What is the best AI headshot generator for LinkedIn?',
+    'Are AI headshots good enough for a professional LinkedIn profile?',
+    'HeadshotPro vs Aragon vs BetterPic: which AI headshot tool is best?',
+    'Which AI headshot generators have a refund policy?',
+  ],
+  'best-ai-agents-for-small-business-2026': [
+    'What are the best AI agents for a small business in 2026?',
+    'Which AI agent platform is easiest for a non-technical small business owner?',
+    'Can a small business automate customer support and lead follow-up with AI agents?',
+  ],
+  'relevance-ai-vs-lindy-vs-gumloop-2026': [
+    'Relevance AI vs Lindy vs Gumloop: which is better?',
+    'Lindy vs Gumloop for no-code AI workflows',
+    'Is Relevance AI worth it for building AI agents without code?',
+  ],
+  'best-ai-music-generator-tools-2026': [
+    'What is the best AI music generator in 2026?',
+    'Can I use Suno or Udio music commercially?',
+    'Which AI music generator is safe to use for YouTube videos?',
+  ],
+  'best-ai-voice-generators-2026': [
+    'What is the best AI voice generator in 2026?',
+    'ElevenLabs vs Murf: which AI voice generator should I choose?',
+    'Do free AI voice generators allow commercial use?',
+  ],
+  'ai-tools-for-solopreneurs-2026': [
+    'What AI tools should a solopreneur use in 2026?',
+  ],
+};
 
 function readText(p) {
   return fs.readFileSync(p, 'utf-8');
@@ -99,8 +149,29 @@ function buildQueries() {
   const posts = extractBlogPosts();
   const toolsByCat = groupByCategory(tools);
 
-  const queries = [];
-  let qid = 1;
+  const priorityQs = [];
+  const blogQs = [];
+  const queries = []; // cluster / tool / comparison queries (appended last)
+  const knownSlugs = new Set(posts.map((p) => p.slug));
+
+  // 1) GA-priority posts: hand-phrased queries, tested first.
+  for (const [slug, qs] of Object.entries(PRIORITY_POSTS)) {
+    if (!knownSlugs.has(slug)) {
+      console.warn(`  ! priority slug not found in blog/metadata.ts, skipped: ${slug}`);
+      continue;
+    }
+    const post = posts.find((p) => p.slug === slug);
+    qs.forEach((q) =>
+      priorityQs.push({
+        cluster: `blog-${slug}`,
+        category: post.category,
+        query: q,
+        target_page_hint: `/blog/${slug}`,
+        source: 'priority-post',
+        priority: true,
+      })
+    );
+  }
 
   for (const [cat, catTools] of Object.entries(toolsByCat)) {
     const humanCat = humanCategory(cat);
@@ -108,7 +179,6 @@ function buildQueries() {
 
     CLUSTER_TEMPLATES.slice(0, PER_CLUSTER).forEach((tpl) => {
       queries.push({
-        id: `q${qid++}`,
         cluster: clusterId,
         category: humanCat,
         query: tpl(humanCat),
@@ -121,8 +191,7 @@ function buildQueries() {
     catTools.slice(0, 2).forEach((tool) => {
       TOOL_TEMPLATES.slice(0, 2).forEach((tpl) => {
         queries.push({
-          id: `q${qid++}`,
-          cluster: clusterId,
+            cluster: clusterId,
           category: humanCat,
           query: tpl(tool.name),
           target_page_hint: `/tools/${tool.slug}`,
@@ -134,7 +203,6 @@ function buildQueries() {
     // "X vs Y" comparison queries for the top 2 tools in a cluster.
     if (catTools.length >= 2) {
       queries.push({
-        id: `q${qid++}`,
         cluster: clusterId,
         category: humanCat,
         query: `${catTools[0].name} vs ${catTools[1].name} — which is better?`,
@@ -154,8 +222,7 @@ function buildQueries() {
     const naturalQuery = /^best\s/i.test(cleanTitle)
       ? `What are the ${cleanTitle}?`
       : `What is the ${cleanTitle}?`;
-    queries.push({
-      id: `q${qid++}`,
+    blogQs.push({
       cluster: `blog-${post.slug}`,
       category: post.category,
       query: naturalQuery,
@@ -164,7 +231,32 @@ function buildQueries() {
     });
   }
 
-  return queries;
+  // Optional hand-kept additions (see README): data/queries.custom.json = { "queries": [ {query, target_page_hint, ...} ] }
+  let customQs = [];
+  if (fs.existsSync(CUSTOM_FILE)) {
+    try {
+      const raw = JSON.parse(readText(CUSTOM_FILE));
+      customQs = (Array.isArray(raw) ? raw : raw.queries || []).map((q) => ({
+        cluster: q.cluster || 'custom',
+        category: q.category || 'custom',
+        source: 'custom',
+        ...q,
+      }));
+    } catch (e) {
+      console.warn(`  ! could not read queries.custom.json: ${e.message}`);
+    }
+  }
+
+  // Order: priority posts -> custom -> other blog posts -> cluster/tool/comparison.
+  // Drop exact-duplicate query text (a priority query can match a title-derived one).
+  const seen = new Set();
+  const ordered = (PRIORITY_ONLY ? [...priorityQs] : [...priorityQs, ...customQs, ...blogQs, ...queries]).filter((q) => {
+    const k = q.query.trim().toLowerCase();
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+  return ordered.map((q, i) => ({ id: `q${i + 1}`, ...q }));
 }
 
 function main() {
@@ -172,6 +264,7 @@ function main() {
   const queries = buildQueries();
   fs.writeFileSync(OUT_FILE, JSON.stringify({ generated_at: new Date().toISOString(), count: queries.length, queries }, null, 2));
   console.log(`✓ Generated ${queries.length} GEO test queries -> ${path.relative(ROOT, OUT_FILE)}`);
+  console.log(`  Priority-post queries (tested first): ${queries.filter((q) => q.priority).length}`);
   console.log(`  Clusters: ${new Set(queries.map(q => q.cluster)).size}`);
   console.log(`  Edit this file by hand to add/remove specific prompts before running citation-test.mjs.`);
 }
