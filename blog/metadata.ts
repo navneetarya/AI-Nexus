@@ -557,14 +557,14 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "relevance-ai-vs-lindy-vs-gumloop-2026",
     "title": "Relevance AI vs Lindy vs Gumloop: AI Agent Builder Comparison",
     "seoTitle": "Relevance AI vs Lindy vs Gumloop (2026): Which Wins?",
-    "metaDescription": "Relevance AI vs Lindy vs Gumloop compared on pricing, architecture, and fit. Verified July 2026 — includes Lindy's dropped free tier.",
+    "metaDescription": "Relevance AI vs Lindy vs Gumloop compared on pricing, architecture, and fit. Pricing checked October 2026, including who still has a free plan.",
     "datePublished": "2026-07-03",
     "dateModified": "2026-08-23",
     "author": "Navneet Arya",
     "category": "Productivity",
     "readTime": "11 min read",
     "ogImage": "https://ainexustools.online/og-compare.webp",
-    "excerpt": "Relevance AI, Lindy, and Gumloop all build AI agents, but they solve different problems: a coordinated AI workforce, a ready-made AI assistant, and a node-based AI pipeline canvas. Here's what each actually costs as of July 2026, and which one fits your use case."
+    "excerpt": "Relevance AI, Lindy, and Gumloop all build AI agents, but they solve different problems: a coordinated AI workforce, a ready-made AI assistant, and a node-based AI pipeline canvas. Here's what each actually costs as of October 2026, and which one fits your use case."
   },
   {
     "slug": "multi-agent-ai-systems-explained-2026",
@@ -726,7 +726,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "best-ai-agents-for-small-business-2026",
     "title": "Best AI Agents for Small Business 2026 — Ranked & Compared",
     "seoTitle": "Best AI Agents for Small Business 2026, Ranked",
-    "metaDescription": "Analysis of 10 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Updated June 2026.",
+    "metaDescription": "Analysis of 10 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Pricing checked October 2026.",
     "datePublished": "2026-06-11",
     "dateModified": "2026-10-10",
     "author": "Navneet Arya",

@@ -2,18 +2,19 @@ import { BlogPost } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
-// Relevance AI   : https://relevanceai.com/?via=navneet  ✅
-// Make.com       : https://www.make.com/en/register?pc=navneet  ✅
-// Lindy.ai       : TODO — replace with PartnerStack referral URL when approved
-// n8n            : TODO — replace with PartnerStack referral URL when approved
+// Relevance AI   : AFFILIATE_LINKS['relevance-ai']  ✅
+// Make.com       : AFFILIATE_LINKS['make']  ✅
+// Lindy.ai       : plain link (no confirmed program) — swap in a referral URL only after approval
+// n8n            : plain link (no confirmed program)
 // Zapier         : No affiliate — linked to main site only
+// Relevance AI / Lindy / Gumloop pricing re-checked 12 Oct 2026 (see relevance-ai-vs-lindy-vs-gumloop-2026.ts).
 
 const post: BlogPost = {
   slug: 'best-ai-agents-for-small-business-2026',
   title: 'Best AI Agents for Small Business 2026 — Ranked & Compared',
   seoTitle: 'Best AI Agents for Small Business 2026, Ranked',
-  metaDescription: 'Analysis of 10 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Updated June 2026.',
-  quickAnswer: 'The best AI agents for small business in 2026 are Lindy.ai for non-technical owners (email, scheduling, lead qualification; $49.99/user/mo after $50 in free trial credits), Relevance AI for auditable custom workflows (from $19/mo), Make.com for automation-native teams adding AI (from $9/mo), and n8n for technical teams that want to self-host for free. Pick based on your technical capacity, not just price.',
+  metaDescription: 'Analysis of 10 AI agent platforms reshaping SMB operations in 2026. Independent pricing, autonomy levels, and ROI benchmarks. Pricing checked October 2026.',
+  quickAnswer: 'The best AI agents for small business in 2026 are Lindy.ai for non-technical owners (email, scheduling, lead qualification; $49.99/user/mo after $50 in free trial credits), Relevance AI for auditable custom workflows (from $19/mo billed annually, no free plan per its docs), Make.com for automation-native teams adding AI (from $9/mo), and n8n for technical teams that want to self-host for free. Pick based on your technical capacity, not just price.',
   outboundCitations: [
     { url: 'https://relevanceai.com/pricing', label: 'Relevance AI pricing and plan details (official)' },
     { url: 'https://www.make.com/en/pricing', label: 'Make.com pricing tiers (official)' },
@@ -34,7 +35,7 @@ const post: BlogPost = {
     },
     {
       q: 'How much do AI agents cost for small businesses?',
-      a: 'Agent platforms in 2026 range from free self-hosted tiers (n8n, Activepieces) to $500+/month for enterprise configurations. Most SMBs land at $20–$150/month for meaningful agent capability. Lindy.ai\'s Team plan is $49.99 per user per month after $50 in free credits that last 7 days; Relevance AI\'s Team plan starts at $19/month; Make.com\'s Core plan starts at $9/month. n8n is free to self-host on your own server. Hidden costs — setup time, integration configuration, and prompt engineering — typically exceed the subscription cost for a first deployment.',
+      a: 'Agent platforms in 2026 range from free self-hosted tiers (n8n, Activepieces) to $500+/month for enterprise configurations. Most SMBs land at $20–$150/month for meaningful agent capability. Lindy.ai\'s Team plan is $49.99 per month for 5,000 credits after $50 in free credits that last 7 days; Relevance AI\'s Pro plan is $19/month billed annually ($29 monthly); Make.com\'s Core plan starts at $9/month. n8n is free to self-host on your own server. Hidden costs — setup time, integration configuration, and prompt engineering — typically exceed the subscription cost for a first deployment.',
     },
     {
       q: 'What tasks can AI agents handle for a small business?',
@@ -42,7 +43,7 @@ const post: BlogPost = {
     },
     {
       q: 'Is Relevance AI good for small businesses?',
-      a: 'Relevance AI is a strong choice for small businesses that need structured, auditable agent workflows — particularly sales and operations teams that want to document what their agents are doing and why. Its "Tools + Agents" framework requires more upfront configuration than Lindy but produces more consistent, repeatable agent behaviour. The free tier includes 100 credits/day, sufficient for building and testing a first agent. The Team plan at $19/month is priced accessibly for SMBs.',
+      a: 'Relevance AI is a strong choice for small businesses that need structured, auditable agent workflows — particularly sales and operations teams that want to document what their agents are doing and why. Its \"Tools + Agents\" framework requires more upfront configuration than Lindy but produces more consistent, repeatable agent behaviour. Its docs say the Free plan is retired, so budget for a paid plan: Pro is $19/month billed annually ($29 monthly) for 2,500 Actions, which suits a first agent.',
     },
     {
       q: 'What is the difference between an AI agent and a chatbot?',
@@ -93,6 +94,16 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Four platforms lead the way for small businesses in 2026. <strong>Lindy.ai</strong> is best for non-technical owners, handling email, scheduling, and lead qualification at $49.99/user/mo. <strong>Relevance AI</strong> is best for custom, easy-to-check agent workflows, from $19/mo.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Make.com</strong> is the best automation-native option with AI modules, from $9/mo. <strong>n8n</strong> is best for technical teams and is free to self-host. Ten platforms are compared below on autonomy level, pricing, and fit for SMBs.</p>
 </div>
+<div class="decision-block" style="border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
+  <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Decide in 30 seconds</strong>
+  <ul style="margin:10px 0 0;padding-left:20px;line-height:1.8;font-size:15px;">
+    <li>You want an assistant for inbox and scheduling and have no technical help: <strong>Lindy.ai</strong> ($49.99/user/mo after $50 in credits for 7 days).</li>
+    <li>You need agents that follow documented steps, such as lead qualification with an audit trail: <strong>Relevance AI</strong> (Pro from $19/mo billed annually).</li>
+    <li>You already run automations and want to add AI steps: <strong>Make.com</strong> (free plan, paid from $9/mo).</li>
+    <li>You have a developer and want full control: <strong>n8n</strong> (free to self-host).</li>
+    <li>Not sure: start with one email task on one platform and run it supervised for two to four weeks. For a head-to-head on the three agent-native builders, see <a href="/blog/relevance-ai-vs-lindy-vs-gumloop-2026/">Relevance AI vs Lindy vs Gumloop</a>.</li>
+  </ul>
+</div>
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead><tr style="background:rgba(13,148,136,.1);">
@@ -110,8 +121,8 @@ const post: BlogPost = {
     </tr>
     <tr>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Relevance AI</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — 100 credits/day</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$19/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">No — Free plan retired</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$19/mo (annual billing)</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Auditable, custom agent workflows</td>
     </tr>
     <tr>
@@ -159,16 +170,16 @@ const post: BlogPost = {
 
 <p><strong>Lindy.ai</strong> operates on a "personal AI team" model. Each agent ("Lindy") has a defined goal and access to specific tools (Gmail, Slack, Salesforce, Notion, and 1,500+ integrations). Its instructions are written in plain language. Lindy agents can run an inbox on their own: reading, sorting, drafting replies, and flagging urgent messages.</p>
 <p>Or they can handle inbound lead qualification. That means asking screening questions and scoring responses against your criteria. Qualified leads then get routed to the right team member. New accounts get $50 in free credits that last 7 days, with no card required. After that, the Team plan is $49.99 per user per month for 5,000 credits.</p>
-<p>Lindy is the easiest Tier 1 option to start with. It suits non-technical SMB owners who need a working agent without building a workflow. <a href="https://www.lindy.ai/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Lindy.ai ↗</a> <!-- TODO: Replace href with your PartnerStack referral URL --></p>
+<p>Lindy is the easiest Tier 1 option to start with. It suits non-technical SMB owners who need a working agent without building a workflow. <a href="https://www.lindy.ai/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Lindy.ai ↗</a></p>
 <div style="margin:14px 0 24px;">
   <a href="https://www.lindy.ai/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lindy.ai Free →</a>
 </div>
 
 <p><strong>Relevance AI</strong> uses a structured "Tools + Agents" framework. Tools are individual AI-powered functions, such as "search CRM for contact", "classify email intent", or "draft outreach message". Agents are layers that chain Tools together to reach a defined goal.</p>
-<p>This two-level setup gives steadier, easier-to-check agent behaviour than instruction-only tools. The trade-off is more setup time upfront. The free tier includes 100 credits/day, enough to build and test a first agent. The Team plan starts at $19/month.</p>
+<p>This two-level setup gives steadier, easier-to-check agent behaviour than instruction-only tools. The trade-off is more setup time upfront. Relevance AI's docs say its Free plan is retired, so plan on a paid tier: Pro is $19/month billed annually ($29 billed monthly) for 2,500 Actions.</p>
 <p><strong>Relevance AI</strong> is the most reliable Tier 1 pick for sales teams and customer service teams. It also suits any SMB that needs to log agent decisions for compliance or quality checks. <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Relevance AI →</a></p>
 <div style="margin:14px 0 24px;">
-  <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
+  <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -194,7 +205,7 @@ const post: BlogPost = {
 
 <p><strong>n8n</strong> is an open-source automation platform with mature AI agent nodes. Its LLM nodes support tool use, memory, and multi-step reasoning. This lets you build genuinely capable agents directly in the workflow editor.</p>
 <p>The self-hosted Community edition is free. The managed Cloud Starter plan starts at about €20/month. n8n is the top choice for technical SMB teams that want maximum control and self-hosting.</p>
-<p>It also lets you write custom agent logic without platform restrictions. <a href="https://n8n.io/" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">n8n ↗</a> <!-- TODO: Replace href with your PartnerStack referral URL --></p>
+<p>It also lets you write custom agent logic without platform restrictions. <a href="https://n8n.io/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">n8n ↗</a></p>
 <div style="margin:14px 0 24px;">
   <a href="https://n8n.io/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit n8n →</a>
 </div>
@@ -218,7 +229,7 @@ const post: BlogPost = {
 <p><strong>Activepieces</strong> is an actively maintained open-source Make.com alternative that is free to self-host. For budget-limited SMBs that need automation without per-use fees, Activepieces is a solid base.</p>
 <p>Its AI library keeps growing. The self-hosted community edition is free. A managed cloud plan is also available, for teams that prefer not to run their own server.</p>
 
-<h2>Agent Platform Comparison: Pricing &amp; Capability Matrix (June 2026)</h2>
+<h2>Agent Platform Comparison: Pricing &amp; Capability Matrix</h2>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:13px;">
   <thead>
@@ -242,16 +253,16 @@ const post: BlogPost = {
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
       <td style="padding:10px 12px;font-weight:600;color:#0D9488;">Relevance AI</td>
-      <td style="padding:10px 12px;">✅ 100 credits/day</td>
-      <td style="padding:10px 12px;">$19/mo</td>
+      <td style="padding:10px 12px;">❌ Free plan retired</td>
+      <td style="padding:10px 12px;">$19/mo (annual)</td>
       <td style="padding:10px 12px;">✅ Yes</td>
       <td style="padding:10px 12px;">✅ Low-code</td>
       <td style="padding:10px 12px;">Sales &amp; ops teams</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 12px;font-weight:600;color:#0D9488;">Gumloop</td>
-      <td style="padding:10px 12px;">✅ Limited</td>
-      <td style="padding:10px 12px;">~$97/mo</td>
+      <td style="padding:10px 12px;">⚡ 14-day Pro trial</td>
+      <td style="padding:10px 12px;">$37/mo</td>
       <td style="padding:10px 12px;">⚡ Partial</td>
       <td style="padding:10px 12px;">✅ Yes</td>
       <td style="padding:10px 12px;">Content &amp; data pipelines</td>
@@ -315,6 +326,7 @@ const post: BlogPost = {
   </tbody>
 </table>
 </div>
+<p style="font-size:13px;color:var(--text-muted,#888);margin:-8px 0 24px;">Relevance AI, Lindy and Gumloop rows were re-checked against official pages on 12 October 2026. Other rows were last checked in June 2026, so confirm them on the vendor page before you buy.</p>
 
 <h2>Real SMB Deployment Costs: Beyond the Subscription Fee</h2>
 <img src="https://images.unsplash.com/photo-1771646752336-c5254f4199d5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop displaying an automation script on screen, representing the setup work behind an AI agent deployment" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
