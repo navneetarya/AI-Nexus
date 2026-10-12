@@ -8,6 +8,8 @@
 // Added: Pose AI + BetterPic (instant/premium tiers missing from original 5-tool set),
 // a dedicated recruiter-detection section (the actual anxiety behind this search),
 // edge-case subsection (glasses/facial hair/skin tone/age), real proscons, internal links.
+// ── 2026-10-12 revision (T7) ── Added sourced "official terms" table (price, refund, data, rights) from vendor pages read 2026-10-12.
+// Corrected Aragon pricing ($35+, was $29), BetterPic entry ($35), removed unconfirmed Try It On AI $14.99 claims, removed blanket commercial-rights claim.
 // Verify Aragon AI's user-count/rating claims periodically — competing posts increasingly
 // position Aragon ahead of HeadshotPro; this revision keeps HeadshotPro #1 on verified
 // Trustpilot count but says so explicitly rather than ignoring the counter-claim.
@@ -27,7 +29,7 @@ const post: BlogPost = {
   readTime: '9 min read',
   ogImage: 'https://ainexustools.online/og/blog/best-ai-headshot-tools-linkedin-2026.webp',
   excerpt: 'The best AI headshot tools for LinkedIn in 2026 — compared across output quality, speed, pricing, and free plan availability. HeadshotPro leads, but the right pick depends on your budget and use case.',
-  quickAnswer: 'HeadshotPro is the best AI headshot tool for LinkedIn in 2026 — one-time packages of $29 (30 headshots), $39 (50) or $59 (70 in 4K), with a money-back guarantee and a 4.7/5 Trustpilot score from 3,500+ reviews. Aragon AI ($29–$49) is the closest rival and wins for creative or lifestyle variety. If you need results in seconds, Pose AI delivers in under 10 seconds from one selfie. BetterPic ($39–$79) is an alternative for 4K output with a wider wardrobe range. Try It On AI ($14.99) is the cheapest dedicated tool. Remini and Fotor AI have free tiers but noticeably lower headshot quality.',
+  quickAnswer: 'HeadshotPro is the best AI headshot tool for LinkedIn in 2026 — one-time packages of $29 (30 headshots), $39 (50) or $59 (70 in 4K), with a money-back guarantee and a 4.7/5 Trustpilot score from 3,500+ reviews. Aragon AI ($35–$75) is the closest rival and wins for creative or lifestyle variety. If you need results in seconds, Pose AI delivers in under 10 seconds from one selfie. BetterPic ($35–$79) is an alternative for 4K output with a wider wardrobe range. Try It On AI is positioned as a budget option, but we could not confirm its current price. Remini and Fotor AI have free tiers but noticeably lower headshot quality.',
   myTake: 'This comparison uses the same input-photo basis for every tool; HeadshotPro is the strongest fit for a job-search-ready LinkedIn photo. Aragon only pulls ahead for greater variety beyond formal corporate shots.',
   faqs: [
     {
@@ -36,7 +38,7 @@ const post: BlogPost = {
     },
     {
       q: 'How much do AI professional headshots cost?',
-      a: 'AI headshot tools typically charge a one-time fee ranging from $14.99 (Try It On AI) to $59 (HeadshotPro Executive). Most tools deliver 30–70 headshots per session across multiple backgrounds and styles. This compares favourably to a professional photographer, who typically charges $150–$500 per session for a single style.',
+      a: 'AI headshot tools typically charge a one-time fee ranging from $29 (HeadshotPro Basic) to $75 (the largest Aragon AI pack). Try It On AI is often listed as a cheaper option, but we could not confirm its current price. Most tools deliver 30–70 headshots per session across multiple backgrounds and styles. This compares favourably to a professional photographer, who typically charges $150–$500 per session for a single style.',
     },
     {
       q: 'Are AI-generated headshots good enough for a job application?',
@@ -44,7 +46,7 @@ const post: BlogPost = {
     },
     {
       q: 'Is there a free AI headshot tool?',
-      a: 'Remini and Fotor AI offer free plans that include basic AI photo enhancement and limited headshot generation. However, dedicated AI headshot tools like HeadshotPro, Aragon AI, and Try It On AI do not offer free plans — they use one-time payments starting from $14.99. The free options produce noticeably lower quality results compared to dedicated headshot tools.',
+      a: 'Remini and Fotor AI offer free plans that include basic AI photo enhancement and limited headshot generation. However, dedicated AI headshot tools like HeadshotPro, Aragon AI, and Try It On AI do not offer free plans — they use one-time payments, with verified entry packs starting at $29 (HeadshotPro) and $35 (Aragon). The free options produce noticeably lower quality results compared to dedicated headshot tools.',
     },
     {
       q: 'How many selfies do I need for AI headshots?',
@@ -52,7 +54,7 @@ const post: BlogPost = {
     },
     {
       q: 'How long does it take to get AI headshots?',
-      a: 'Most multi-photo AI headshot tools deliver results within 15 minutes to 2 hours. HeadshotPro quotes about 2 hours on Basic, about 30 minutes on Professional and about 15 minutes on Executive. Aragon AI typically takes 30–90 minutes. Remini and Fotor generate results immediately but with lower quality.',
+      a: 'Most multi-photo AI headshot tools deliver results within 15 minutes to 2 hours. HeadshotPro quotes about 2 hours on Basic, about 30 minutes on Professional and about 15 minutes on Executive. Aragon AI says its first set arrives in under 30 minutes on average, while third-party reviews report 15 minutes to 2 hours depending on the pack. Remini and Fotor generate results immediately but with lower quality.',
     },
     {
       q: 'Do AI headshot tools work for Indian users?',
@@ -68,20 +70,20 @@ const post: BlogPost = {
     },
     {
       q: 'What is the fastest AI headshot tool available?',
-      a: 'Pose AI is the fastest tool in this comparison, generating a full set of styled headshots from a single selfie in under 10 seconds. Among multi-photo tools, HeadshotPro Executive (about 15 minutes) and Professional (about 30 minutes) are the fastest; Aragon AI takes 30–90 minutes and Try It On AI 1–3 hours. Speed is a real trade-off: instant tools work from one input photo, so output variety and consistency are generally lower than tools that train on 10–20 photos over a longer processing window.',
+      a: 'Pose AI is the fastest tool in this comparison, generating a full set of styled headshots from a single selfie in under 10 seconds. Among multi-photo tools, HeadshotPro Executive (about 15 minutes) and Professional (about 30 minutes) are the fastest; Aragon AI averages under 30 minutes by its own account, and Try It On AI is reported at roughly 1–3 hours. Speed is a real trade-off: instant tools work from one input photo, so output variety and consistency are generally lower than tools that train on 10–20 photos over a longer processing window.',
     },
     {
       q: 'Do AI headshots come with commercial usage rights?',
-      a: 'Yes. All the paid tools in this comparison — HeadshotPro, Aragon AI, Try It On AI, Remini, and Fotor AI — grant commercial usage rights on their paid plans, meaning the headshots are safe to use on LinkedIn, resumes, company websites, and other public professional profiles.',
+      a: 'HeadshotPro\'s terms grant a personal and commercial use license and assign its rights in your generated headshots to you, though it notes the generator may produce similar outputs for other users. We could not confirm the equivalent wording for Aragon AI, BetterPic, Pose AI or Try It On AI from their own pages, so read each tool\'s terms before using a headshot commercially, such as on a company website or in paid advertising.',
     },
     {
       q: 'Can I get a refund if I don\'t like my AI headshots?',
-      a: 'Policies vary by tool. HeadshotPro covers every package with a money-back Realism Guarantee: if the results don\'t look like you, you get a redo or a full refund. Other tools handle quality complaints differently, so read each tool\'s refund policy before ordering if this is a concern.',
+      a: 'Policies differ a lot. HeadshotPro covers every package with a money-back Realism Guarantee (a redo or a full refund if the results do not look like you), and its terms tie the 14-day full refund to not having downloaded any photos. Aragon AI offers a complimentary redo or a 100% refund if you ask within 14 calendar days, but downloading your photos counts as using the product. BetterPic gives a full refund within 7 days only if no model has been trained, withholds 10% once it has, and refunds nothing after you download an image. Preview your results before you download anything.',
     },
   ],
   proscons: {
     pros: [
-      'Seven tools compared head-to-head, from $14.99 budget picks to premium 4K output and instant (under-10-second) generation',
+      'Seven tools compared head-to-head, from $29 entry packs to premium 4K output and instant (under-10-second) generation',
       'Directly addresses whether AI headshots pass as real photos to recruiters, not just pricing and style',
       'Covers one-time-payment tools, subscriptions, and free tiers so the comparison works at any budget',
     ],
@@ -95,6 +97,9 @@ const post: BlogPost = {
     { url: 'https://www.trustpilot.com/review/headshotpro.com', label: 'Trustpilot — HeadshotPro reviews' },
     { url: 'https://www.headshotpro.com/pricing', label: 'HeadshotPro — official pricing' },
     { url: 'https://www.trustpilot.com/review/aragon.ai', label: 'Trustpilot — Aragon AI reviews' },
+    { url: 'https://www.headshotpro.com/refund', label: 'HeadshotPro — refund policy' },
+    { url: 'https://www.aragon.ai/refund-policy', label: 'Aragon AI — refund policy' },
+    { url: 'https://support.betterpic.io/en/article/can-i-request-a-refund-for-my-purchase-1y9qz8b/', label: 'BetterPic — refund policy' },
   ],
 
   content: `
@@ -116,12 +121,13 @@ const post: BlogPost = {
     <li><a href="#key-takeaways" style="color:#0ea5e9;text-decoration:none;">Key Takeaways</a></li>
     <li><a href="#recruiter-detection" style="color:#0ea5e9;text-decoration:none;">Can Recruiters Tell It's AI?</a></li>
     <li><a href="#comparison-table" style="color:#0ea5e9;text-decoration:none;">Comparison Table</a></li>
+    <li><a href="#official-terms" style="color:#0ea5e9;text-decoration:none;">Price, Refund, Data &amp; Rights (Official Pages)</a></li>
     <li><a href="#headshotpro" style="color:#0ea5e9;text-decoration:none;">#1 HeadshotPro</a></li>
     <li><a href="#aragon-ai" style="color:#0ea5e9;text-decoration:none;">#2 Aragon AI</a></li>
     <li><a href="#pose-ai" style="color:#0ea5e9;text-decoration:none;">#3 Pose AI (Fastest)</a></li>
     <li><a href="#betterpic" style="color:#0ea5e9;text-decoration:none;">#4 BetterPic (Premium 4K)</a></li>
     <li><a href="#remini" style="color:#0ea5e9;text-decoration:none;">#5 Remini</a></li>
-    <li><a href="#try-it-on-ai" style="color:#0ea5e9;text-decoration:none;">#6 Try It On AI</a></li>
+    <li><a href="#try-it-on-ai" style="color:#0ea5e9;text-decoration:none;">#6 Try It On AI (Verify Price)</a></li>
     <li><a href="#fotor-ai" style="color:#0ea5e9;text-decoration:none;">#7 Fotor AI</a></li>
     <li><a href="#edge-cases" style="color:#0ea5e9;text-decoration:none;">Edge Cases: Glasses, Facial Hair, Skin Tone, Age</a></li>
     <li><a href="#how-to-choose" style="color:#0ea5e9;text-decoration:none;">How to Choose</a></li>
@@ -141,7 +147,7 @@ const post: BlogPost = {
 
 <div style="background:rgba(14,165,233,.08);border-left:4px solid #0ea5e9;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
   <p style="margin:0;font-weight:700;font-size:15px;">TL;DR: Best AI Headshot Tool for LinkedIn 2026</p>
-  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best overall:</strong> <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a>, $29–$59 one-time, 30–70 headshots, 15 min–2 hr delivery, 4.7/5 Trustpilot.<br><strong>Best for style variety:</strong> Aragon AI, $29–$49, creative angles and lifestyle shots.<br><strong>Fastest (instant):</strong> Pose AI, from $12/week, results in under 10 seconds.<br><strong>4K alternative:</strong> BetterPic, $39–$79 per pack, wider wardrobe range.<br><strong>Best free option:</strong> Remini, free tier available, lower dedicated quality.<br><strong>Best budget:</strong> Try It On AI, $14.99 entry point.</p>
+  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best overall:</strong> <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a>, $29–$59 one-time, 30–70 headshots, 15 min–2 hr delivery, 4.7/5 Trustpilot.<br><strong>Best for style variety:</strong> Aragon AI, $35–$75, creative angles and lifestyle shots.<br><strong>Fastest (instant):</strong> Pose AI, from $12/week, results in under 10 seconds.<br><strong>4K alternative:</strong> BetterPic, $35–$79 per pack, wider wardrobe range.<br><strong>Best free option:</strong> Remini, free tier available, lower dedicated quality.<br><strong>Budget option:</strong> Try It On AI, price not confirmed (check its site).</p>
 </div>
 
 <h2 id="key-takeaways">Key Takeaways</h2>
@@ -150,7 +156,7 @@ const post: BlogPost = {
   <li><strong>HeadshotPro</strong> leads for LinkedIn-specific output: formal studio backgrounds, consistent lighting, and delivery in as little as 15 minutes on its top package</li>
   <li>Input quality directly determines output quality: well-lit selfies on plain backgrounds are essential</li>
   <li>No tool in this category offers a meaningful free plan; budget at least $15–$29 for usable results</li>
-  <li>All tools grant <strong>commercial usage rights</strong> on paid plans, meaning headshots are safe for public professional profiles</li>
+  <li><strong>HeadshotPro</strong>'s terms allow commercial use of your headshots; check the other tools' terms before commercial use (see the table below)</li>
   <li>With a premium tool and decent input photos, most reviewers — including recruiters — cannot reliably tell the result is AI-generated (see below)</li>
   <li>A new instant tier has entered the category: <strong>Pose AI</strong> delivers in under 10 seconds from a single selfie, trading some output variety for speed</li>
 </ul>
@@ -187,8 +193,8 @@ const post: BlogPost = {
       <td style="padding:10px 14px;font-weight:600;">Aragon AI</td>
       <td style="padding:10px 14px;">Creative &amp; lifestyle headshots</td>
       <td style="padding:10px 14px;">❌ No</td>
-      <td style="padding:10px 14px;">$29–$49 one-time</td>
-      <td style="padding:10px 14px;">30–90 min</td>
+      <td style="padding:10px 14px;">$35–$75 one-time</td>
+      <td style="padding:10px 14px;">~30 min avg (per Aragon)</td>
       <td style="padding:10px 14px;">4.6/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
@@ -203,7 +209,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;font-weight:600;">BetterPic</td>
       <td style="padding:10px 14px;">4K hero shots, wide wardrobe range</td>
       <td style="padding:10px 14px;">❌ No</td>
-      <td style="padding:10px 14px;">$39–$79 per pack</td>
+      <td style="padding:10px 14px;">$35–$79 per pack</td>
       <td style="padding:10px 14px;">Under 2 hours</td>
       <td style="padding:10px 14px;">4.5/5</td>
     </tr>
@@ -219,8 +225,8 @@ const post: BlogPost = {
       <td style="padding:10px 14px;font-weight:600;">Try It On AI</td>
       <td style="padding:10px 14px;">Budget entry point</td>
       <td style="padding:10px 14px;">❌ No</td>
-      <td style="padding:10px 14px;">$14.99 one-time</td>
-      <td style="padding:10px 14px;">1–3 hours</td>
+      <td style="padding:10px 14px;">Not confirmed</td>
+      <td style="padding:10px 14px;">Reported 1–3 hours</td>
       <td style="padding:10px 14px;">4.1/5</td>
     </tr>
     <tr>
@@ -234,6 +240,60 @@ const post: BlogPost = {
   </tbody>
 </table>
 </div>
+
+<h2 id="official-terms">Price, Refund, Data &amp; Rights: What the Official Pages Say</h2>
+<p>Price and speed are easy to compare. Refund rules, data handling and usage rights are where these tools differ most, so this table is built from each vendor's own pages as read on 12 October 2026. "Not verified" means we could not read the vendor's own page for that item, so confirm it yourself before paying.</p>
+<div style="overflow-x:auto;margin:24px 0;">
+<table style="width:100%;border-collapse:collapse;font-size:13px;min-width:760px;">
+  <thead>
+    <tr style="background:rgba(14,165,233,.1);">
+      <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Tool</th>
+      <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Price (official or noted)</th>
+      <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Refund policy</th>
+      <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Data retention &amp; AI training</th>
+      <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Commercial use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom:1px solid rgba(14,165,233,.08);background:rgba(14,165,233,.04);">
+      <td style="padding:10px 12px;font-weight:700;">HeadshotPro</td>
+      <td style="padding:10px 12px;">$29 / $39 / $59 one-time for 30 / 50 / 70 headshots (<a href="https://www.headshotpro.com/pricing" target="_blank" rel="noopener noreferrer">pricing page</a>)</td>
+      <td style="padding:10px 12px;">Realism Guarantee: redo or full refund if it does not look like you. Terms tie the 14-day full refund to not downloading photos (<a href="https://www.headshotpro.com/refund" target="_blank" rel="noopener noreferrer">refund policy</a>)</td>
+      <td style="padding:10px 12px;">Uploads and results auto-delete after 30 days; download links last 7 days; photos are not used to train AI models</td>
+      <td style="padding:10px 12px;">Terms grant personal and commercial use and assign its rights in your headshots to you</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
+      <td style="padding:10px 12px;font-weight:600;">Aragon AI</td>
+      <td style="padding:10px 12px;">From $35 for 40+ headshots, up to 100 images (Aragon's own LinkedIn guide); tier prices of $35 / $45 / $75 come from third-party reviews</td>
+      <td style="padding:10px 12px;">Complimentary redo or 100% refund if requested within 14 calendar days; downloading counts as using the product (<a href="https://www.aragon.ai/refund-policy" target="_blank" rel="noopener noreferrer">refund policy</a>)</td>
+      <td style="padding:10px 12px;">Not verified from Aragon's pages (it shows a SOC 2 Type II badge)</td>
+      <td style="padding:10px 12px;">Not verified; read Aragon's terms</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
+      <td style="padding:10px 12px;font-weight:600;">Pose AI</td>
+      <td style="padding:10px 12px;">Weekly auto-renewing plans of $12 / $16 / $20 on the US App Store listing, with a 3-day trial that is watermarked</td>
+      <td style="padding:10px 12px;">Not verified; App Store purchases follow Apple's refund process</td>
+      <td style="padding:10px 12px;">Not verified; see Pose's privacy policy</td>
+      <td style="padding:10px 12px;">Not verified</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
+      <td style="padding:10px 12px;font-weight:600;">BetterPic</td>
+      <td style="padding:10px 12px;">$35 (20 headshots) to $79 (120) per BetterPic's own comparison page</td>
+      <td style="padding:10px 12px;">Full refund within 7 days if no model is trained; 10% withheld once trained; nothing back after downloading an image (<a href="https://support.betterpic.io/en/article/can-i-request-a-refund-for-my-purchase-1y9qz8b/" target="_blank" rel="noopener noreferrer">support article</a>)</td>
+      <td style="padding:10px 12px;">Not verified</td>
+      <td style="padding:10px 12px;">Not verified</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;font-weight:600;">Try It On AI</td>
+      <td style="padding:10px 12px;">Not confirmed: an older $14.99 listing conflicts with recent third-party prices of about $21–$35</td>
+      <td style="padding:10px 12px;">Not verified; a competitor's review reports no refunds once an order is processed</td>
+      <td style="padding:10px 12px;">Not verified</td>
+      <td style="padding:10px 12px;">Not verified</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>The download trap:</strong> HeadshotPro's terms, Aragon and BetterPic all tie refunds to not having downloaded your photos. Preview your results in the dashboard first, and download only the shots you plan to keep. Remini and Fotor AI are subscription photo editors, so they are not in this table.</p>
 
 <img src="https://images.unsplash.com/photo-1627161683077-e34782c24d81?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A woman in a red cardigan smiling for a professional-style headshot" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
@@ -273,13 +333,13 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A shallow focus portrait of a woman in a gray jacket, styled like a creative headshot" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2 id="aragon-ai">#2 Aragon AI: Best for Creative &amp; Lifestyle Headshots</h2>
-<p><strong>Rating: 4.6/5 · From $29 one-time · 30–90 minute delivery</strong></p>
+<p><strong>Rating: 4.6/5 · From $35 one-time · About 30 minutes on average (per Aragon)</strong></p>
 <p>Aragon AI is the strongest alternative to HeadshotPro and the better pick if you want more creative or lifestyle-oriented headshots alongside traditional studio portraits. Where HeadshotPro focuses on formal, LinkedIn-ready outputs, Aragon generates a broader range of settings. Rooftop terraces, bookshelves, and casual office environments all work well for personal branding beyond LinkedIn.</p>
-<p>Aragon's delivery is typically 30–90 minutes, faster than HeadshotPro Basic but slower than its Professional and Executive packages. It also includes a face-retouching control that lets you specify how much skin smoothing to apply, a useful option that HeadshotPro does not offer directly. The Essential plan at $29 delivers 40 headshots across 10 styles, which is more headshots per dollar than HeadshotPro's Basic plan.</p>
+<p>Aragon says the first set arrives in under 30 minutes on average, though third-party reviews report 15 minutes to 2 hours depending on the pack. It also includes a face-retouching control that lets you specify how much skin smoothing to apply, a useful option that HeadshotPro does not offer directly. Aragon's own LinkedIn guide lists its entry pack at $35 for 40+ headshots, against $29 for 30 on HeadshotPro Basic, so Aragon gives slightly more headshots per dollar at the entry level.</p>
 <p>The trade-off: Aragon's formal studio-background results are marginally less consistent than HeadshotPro for pure LinkedIn use. Users in creative fields and personal branding consultants tend to prefer Aragon; professionals in finance, law, and corporate sectors report better results with HeadshotPro's formal output.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
   <li>✅ More creative style variety per dollar than HeadshotPro</li>
-  <li>✅ More headshots on the entry plan (40 vs 30 at $29)</li>
+  <li>✅ More headshots on the entry plan (40+ at $35 vs 30 at $29 on HeadshotPro)</li>
   <li>✅ Skin retouching control slider (unique feature)</li>
   <li>❌ Formal corporate output slightly less consistent than HeadshotPro</li>
   <li>❌ No free plan</li>
@@ -294,7 +354,7 @@ const post: BlogPost = {
 <p>The trade-off for that speed is input data: Pose AI works from a single photo instead of the 10–20 photos HeadshotPro and Aragon require, so output consistency and variety are lower. It's the right pick when you genuinely need a photo today, not the right pick if you have time to get the highest possible quality.</p>
 <p>Pricing is subscription-based rather than one-time, which matters if you only need one headshot update — a one-time tool works out cheaper for a single use.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
-  <li>✅ By far the fastest tool tested — results in under 10 seconds</li>
+  <li>✅ By far the fastest tool in this comparison, with results in under 10 seconds</li>
   <li>✅ 200+ styles and mobile apps for both iOS and Android</li>
   <li>❌ Single-photo input means less consistency than multi-photo tools</li>
   <li>❌ Subscription pricing costs more than a one-time tool for a single use</li>
@@ -306,15 +366,16 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1629425733761-caae3b5f2e50?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A man in a black zip-up jacket photographed for a free headshot option" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2 id="betterpic">#4 BetterPic: 4K Output with the Widest Wardrobe Range</h2>
-<p><strong>Rating: 4.5/5 · $39–$79 per pack · Under 2 hour delivery</strong></p>
+<p><strong>Rating: 4.5/5 · $35–$79 per pack · Under 2 hour delivery</strong></p>
 <p>BetterPic is the premium option in this comparison, delivering 4K-resolution headshots from 10–20 uploaded selfies across 200+ backdrop and wardrobe styles. Output realism is consistently rated above the AI-headshot mid-tier — closer to a real photo than a stylized portrait.</p>
 <p>It's the right choice specifically when you don't have any usable recent photo of yourself and need a complete, high-resolution set for a hero-shot use case: a company website bio, a speaker profile, or a press kit, where image quality matters more than speed or price.</p>
-<p>At $39–$79, it overlaps HeadshotPro's range. HeadshotPro's $59 Executive package also delivers 4K, so BetterPic's edge is its wardrobe and backdrop range rather than resolution alone.</p>
+<p>At $35–$79 per BetterPic's own comparison page, it overlaps HeadshotPro's range. HeadshotPro's $59 Executive package also delivers 4K, so BetterPic's edge is its wardrobe and backdrop range rather than resolution alone.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
   <li>✅ True 4K output on every pack</li>
   <li>✅ 200+ backdrop and wardrobe style combinations</li>
   <li>❌ Priced above HeadshotPro and Aragon for a comparable headshot count</li>
   <li>❌ No free plan or trial</li>
+  <li>❌ Strict refund terms: nothing back once you download an image</li>
 </ul>
 <div style="margin:14px 0 24px;">
   <a href="https://betterpic.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try BetterPic →</a>
@@ -335,13 +396,13 @@ const post: BlogPost = {
 
 <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A man wearing a black notched lapel suit jacket in a budget-friendly headshot style" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
-<h2 id="try-it-on-ai">#6 Try It On AI: Best Budget Entry Point</h2>
-<p><strong>Rating: 4.1/5 · $14.99 one-time</strong></p>
-<p>Try It On AI is the cheapest dedicated AI headshot tool in this comparison at $14.99 for a single session. It delivers approximately 40 headshots across 4–6 background styles. The price makes it the most accessible option for first-time users who want to test AI headshots without committing to $29+.</p>
-<p>Output quality is solid for the price but falls below HeadshotPro and Aragon in style variety and background realism. Based on user reviews, the formal portrait styles work well; lifestyle and creative backgrounds are less convincing. Delivery is 1–3 hours.</p>
+<h2 id="try-it-on-ai">#6 Try It On AI: Budget Option (Verify Price First)</h2>
+<p><strong>Rating: 4.1/5 · Price not confirmed · Reported 1–3 hour delivery</strong></p>
+<p>Try It On AI is positioned as the budget option in this comparison. We previously listed it at $14.99 for a single session, but we could not confirm that on an official page, and recent third-party listings show higher prices (roughly $21–$35 for its express packs). Check its site for the current price before you buy.</p>
+<p>Output quality is solid for the price but falls below HeadshotPro and Aragon in style variety and background realism. Based on user reviews, the formal portrait styles work well; lifestyle and creative backgrounds are less convincing. Delivery is reported at roughly 1–3 hours. A competitor's review also reports that it offers no refunds once an order is processed, so confirm the refund terms on Try It On AI's own site first.</p>
 <p>Best used as a low-risk entry point to AI headshots. If results impress, upgrade to HeadshotPro for the next round when you need more variety or a higher-stakes update (new job, new business launch).</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
-  <li>✅ Cheapest one-time option at $14.99</li>
+  <li>✅ Positioned as a low-cost option (price not confirmed)</li>
   <li>✅ Good quality for the price; solid basic professional headshots</li>
   <li>❌ Less style variety than HeadshotPro or Aragon</li>
   <li>❌ Slightly longer delivery window (up to 3 hours)</li>
@@ -381,7 +442,7 @@ const post: BlogPost = {
   <li><strong>Need it in seconds, from one selfie:</strong> Pose AI, results in under 10 seconds</li>
   <li><strong>Want 4K files for a hero-shot use case:</strong> HeadshotPro Executive ($59) or BetterPic, which adds 200+ wardrobe and backdrop styles</li>
   <li><strong>Zero budget, will accept lower quality:</strong> Remini or Fotor AI free plan, with limited generations and noticeably lower polish</li>
-  <li><strong>First-time user, want to test cheaply before committing:</strong> Try It On AI at $14.99, solid results for the price, upgrade later if needed</li>
+  <li><strong>First-time user, want to test cheaply before committing:</strong> Try It On AI, but confirm the current price and refund terms first</li>
   <li><strong>Indian users (UPI/INR):</strong> Fotor AI and Remini support Indian payment methods. HeadshotPro and Aragon require international cards (~₹2,415 for HeadshotPro Basic)</li>
 </ul>
 
@@ -397,15 +458,15 @@ const post: BlogPost = {
 
 <h2 id="final-verdict">Final Verdict: Best AI Headshot Tools for LinkedIn 2026</h2>
 <p>For most professionals updating their LinkedIn or job application headshot in 2026, <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a> is the clearest choice. At $29–$59 one-time for 30–70 headshots, it delivers the best combination of output quality and formal LinkedIn-ready results available. It backs that up with a money-back guarantee and a 4.7/5 Trustpilot score from 3,500+ reviews.</p>
-<p>Aragon AI is the better pick for creative professionals and personal branding. It offers more headshots per dollar on its entry plan and wider lifestyle styling. Pose AI is the pick if speed is the deciding factor — under 10 seconds versus 15 minutes to 2 hours for the multi-photo tools. BetterPic is worth a look if you want 4K with a wider wardrobe range. Try It On AI at $14.99 is the lowest-risk entry point for first-time users. If budget is zero, Remini's free plan provides basic headshot generation at lower quality.</p>
+<p>Aragon AI is the better pick for creative professionals and personal branding. It offers slightly more headshots per dollar on its entry pack and wider lifestyle styling. Pose AI is the pick if speed is the deciding factor — under 10 seconds versus 15 minutes to 2 hours for the multi-photo tools. BetterPic is worth a look if you want 4K with a wider wardrobe range. Try It On AI is a budget option for first-time users, but confirm its price and refund terms first. If budget is zero, Remini's free plan provides basic headshot generation at lower quality.</p>
 <p>On the question that actually drives most of these searches — will it look obviously AI? — the answer with any of the top four tools here is no, provided your input photos are decent. See the <a href="#recruiter-detection" style="color:#0ea5e9;">recruiter-detection section above</a> for the specific artifacts to watch for.</p>
 
 <ol style="margin:12px 0 12px 24px;line-height:2.4;">
   <li><strong>Best overall for LinkedIn:</strong> <a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">HeadshotPro</a> — $29–$59, 30–70 headshots, 4.7/5 rating</li>
-  <li><strong>Best for creative professionals:</strong> Aragon AI, $29–$49, wider style range, 30–90 min delivery</li>
+  <li><strong>Best for creative professionals:</strong> Aragon AI, $35–$75, wider style range, about 30 min average delivery</li>
   <li><strong>Fastest:</strong> Pose AI, under 10 seconds, from $12/week</li>
-  <li><strong>4K alternative:</strong> BetterPic, $39–$79 per pack</li>
-  <li><strong>Best budget:</strong> Try It On AI, $14.99, good quality for the price</li>
+  <li><strong>4K alternative:</strong> BetterPic, $35–$79 per pack</li>
+  <li><strong>Budget option:</strong> Try It On AI, price not confirmed (check its site)</li>
   <li><strong>Best free option:</strong> Remini, limited quality but zero cost to start</li>
   <li><strong>Best for multi-purpose photo editing:</strong> Fotor AI, $8.99/mo with headshots as one feature</li>
 </ol>

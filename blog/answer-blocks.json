@@ -2,7 +2,7 @@
   "_readme": "Direct-answer blocks for the top posts. 'verified' = date the price/plan facts in 'answer' were checked (shown to readers; null = no checkable claims, no date shown). 'updated' = date the visible answer text last changed (used for sitemap lastmod / dateModified). Re-check facts before changing 'verified'. Optional 'cta' = { tool, label } renders one affiliate button under the Quick Answer box; 'tool' must be a key of AFFILIATE_LINKS (lib/affiliate-links.ts). Do not put a raw URL here.",
   "best-ai-headshot-tools-linkedin-2026": {
     "answer": "HeadshotPro is our top pick for LinkedIn headshots. Its docs list three one-time packages: Basic $29 for 30 headshots in about 2 hours, Professional $39 for 50 in about 30 minutes, and Executive $59 for 70 in 4K. All three include a money-back guarantee. Compare alternatives before you pay.",
-    "verified": "2026-10-09",
+    "verified": "2026-10-12",
     "updated": "2026-10-09",
     "cta": {
       "tool": "headshotpro",
