@@ -6,7 +6,13 @@ import type { BlogPost } from '../blog/types';
 import { BLOG_POSTS_META } from '../blog/metadata';
 import ANSWER_BLOCKS from '../blog/answer-blocks.json';
 import { SITE_CONFIG, TOOLS } from '../constants';
-import { trackAffiliateClickOnElement, deriveToolName } from '../lib/subid-tracking';
+import {
+  trackAffiliateClickOnElement,
+  trackOutboundClickOnElement,
+  deriveToolName,
+  getContentPositionBucket,
+  isExternalLink,
+} from '../lib/subid-tracking';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 // ── W3-T16: Related tool reviews per blog post ─────────────────────────────
@@ -421,12 +427,23 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
   // affiliate/sponsored link inside blog content fires affiliate_click with the
   // actual link_url, closing the PartnerStack-vs-GA4 click-count gap for blog posts.
   const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    const link = (e.target as HTMLElement).closest('a[rel*="sponsored"]') as HTMLAnchorElement | null;
+    const link = (e.target as HTMLElement).closest('a[href]') as HTMLAnchorElement | null;
     if (!link) return;
-    // Oct 2026: use utm_source (set on every affiliate link) instead of the hostname, so impact.com
-    // vanity hosts such as bigrock-in.sjv.io report as `bigrock`, not the tracking subdomain.
-    const toolName = deriveToolName(link.href);
-    trackAffiliateClickOnElement(link, { toolName, ctaPosition: 'blog_body', postSlug: post.slug });
+    const contentPosition = getContentPositionBucket(link);
+    const rel = (link.getAttribute('rel') || '').toLowerCase();
+    if (rel.includes('sponsored')) {
+      // Oct 2026: use utm_source (set on every affiliate link) instead of the hostname, so impact.com
+      // vanity hosts such as bigrock-in.sjv.io report as `bigrock`, not the tracking subdomain.
+      // Every sponsored link keeps firing `affiliate_click`; the event now also carries `link_type`
+      // (affiliate | plain) and `content_position` (0_15 | 15_50 | 50_85 | 85_100).
+      const toolName = deriveToolName(link.href);
+      trackAffiliateClickOnElement(link, { toolName, ctaPosition: 'blog_body', contentPosition, postSlug: post.slug });
+      return;
+    }
+    // Non-sponsored external links (plain competitor links, citations) fire `outbound_click`.
+    if (isExternalLink(link)) {
+      trackOutboundClickOnElement(link, { contentPosition, postSlug: post.slug });
+    }
   };
 
   return (

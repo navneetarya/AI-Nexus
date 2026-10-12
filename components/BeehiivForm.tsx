@@ -24,7 +24,21 @@ interface NotionFormProps {
   variant?: 'hero' | 'article';
 }
 
-function useSubscribeForm() {
+/** Where on the site the signup form was rendered. Sent with the `newsletter_signup` GA4 event. */
+type SignupSource = 'sticky_bar' | 'hero_strip' | 'scroll_popup' | 'article_card';
+
+/** Fires one GA4 `newsletter_signup` event. Safe when gtag is blocked (ad blockers). */
+function trackNewsletterSignup(source: SignupSource): void {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+  const path = window.location.pathname;
+  window.gtag('event', 'newsletter_signup', {
+    signup_source: source,
+    page_path: path,
+    ...(path.startsWith('/blog/') ? { post_slug: path.replace(/^\/blog\//, '').replace(/\/+$/, '') } : {}),
+  });
+}
+
+function useSubscribeForm(source: SignupSource) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [state, setState] = useState<SubmitState>('idle');
@@ -50,6 +64,7 @@ function useSubscribeForm() {
       }
 
       setState('success');
+      trackNewsletterSignup(source);
       setName('');
       setEmail('');
     } catch (err: any) {
@@ -204,7 +219,7 @@ export { NotionForm as BeehiivForm };
 
 export function StickyNewsletterBar() {
   const [dismissed, setDismissed] = React.useState(false);
-  const formState = useSubscribeForm();
+  const formState = useSubscribeForm('sticky_bar');
 
   if (dismissed) return null;
 
@@ -315,7 +330,7 @@ export function StickyNewsletterBar() {
 // ─────────────────────────────────────────────────────────────────────────────
 
 function HeroStrip() {
-  const formState = useSubscribeForm();
+  const formState = useSubscribeForm('hero_strip');
 
   return (
     <div style={{
@@ -394,7 +409,7 @@ function isEligiblePage(): boolean {
 export function ScrollNewsletterPopup() {
   const [visible, setVisible] = React.useState(false);
   const [exiting, setExiting] = React.useState(false);
-  const formState = useSubscribeForm();
+  const formState = useSubscribeForm('scroll_popup');
 
   // Reset visibility whenever the user navigates to a new page
   React.useEffect(() => {
@@ -601,7 +616,7 @@ export function ScrollNewsletterPopup() {
 }
 
 function ArticleCard() {
-  const formState = useSubscribeForm();
+  const formState = useSubscribeForm('article_card');
 
   return (
     <div style={{

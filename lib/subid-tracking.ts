@@ -147,11 +147,92 @@ export function appendSubId(url: string, clientId: string): string {
   return `${url}${separator}${param}=${encodeURIComponent(clientId)}`;
 }
 
+// ── Click classification & position (T2/T3, Oct 2026) ───────────────────────
+// Blog posts mark some NON-affiliate links with rel="sponsored" too (e.g. a plain
+// https://www.lindy.ai/ link). Those used to be indistinguishable from real affiliate links in
+// GA4. `link_type` lets reports filter to real affiliate clicks. The event NAME stays
+// `affiliate_click` for every sponsored link, so existing reports keep working.
+
+export type LinkType = 'affiliate' | 'plain';
+
+/** Query params that mark a link as a referral/affiliate link. Best-effort heuristic. */
+const AFFILIATE_QUERY_PARAMS = [
+  'via', 'ref', 'pc', 'fpr', 'aff', 'affid', 'aff_id', 'affiliate', 'affiliateid',
+  'referral', 'referrer', 'utm_source',
+];
+
+/**
+ * Best-effort classification. Impact.com and PartnerStack hosts are always `affiliate`. For other
+ * hosts a known referral query param or a /refer/-style path counts as `affiliate`, anything else
+ * is `plain`. Override any single link in post HTML with data-link-type="affiliate" | "plain".
+ * Classification only labels the GA4 event; it never changes the link or its rel attribute.
+ */
+export function classifyLinkType(link: HTMLAnchorElement): LinkType {
+  const override = link.getAttribute('data-link-type');
+  if (override === 'affiliate' || override === 'plain') return override;
+  const url = link.href;
+  if (getAffiliateNetwork(url) !== 'direct') return 'affiliate';
+  try {
+    const u = new URL(url);
+    for (const key of u.searchParams.keys()) {
+      if (AFFILIATE_QUERY_PARAMS.includes(key.toLowerCase())) return 'affiliate';
+    }
+    if (/\/(refer|referral|ref|invite)\//i.test(u.pathname)) return 'affiliate';
+  } catch { /* fall through */ }
+  return 'plain';
+}
+
+export type ContentPositionBucket = '0_15' | '15_50' | '50_85' | '85_100' | 'unknown';
+
+/**
+ * Where a link sits within the whole article body, as a percentage bucket. A blog post's body is
+ * rendered in up to two `.blog-content` blocks (split around the comparison table), so the span
+ * is measured from the top of the first block to the bottom of the last one.
+ */
+export function getContentPositionBucket(link: HTMLElement): ContentPositionBucket {
+  try {
+    const article = link.closest('article');
+    if (!article) return 'unknown';
+    const blocks = article.querySelectorAll<HTMLElement>('.blog-content');
+    if (blocks.length === 0) return 'unknown';
+    const start = blocks[0].getBoundingClientRect().top;
+    const end = blocks[blocks.length - 1].getBoundingClientRect().bottom;
+    const span = end - start;
+    if (span <= 0) return 'unknown';
+    const pct = ((link.getBoundingClientRect().top - start) / span) * 100;
+    if (pct < 15) return '0_15';
+    if (pct < 50) return '15_50';
+    if (pct < 85) return '50_85';
+    return '85_100';
+  } catch {
+    return 'unknown';
+  }
+}
+
+/** Hostnames that count as this site even when written as absolute URLs inside post HTML. */
+const OWN_HOSTS = ['ainexustools.online'];
+
+/** True for http(s) links that leave this site. */
+export function isExternalLink(link: HTMLAnchorElement): boolean {
+  try {
+    const u = new URL(link.href);
+    if (u.protocol !== 'http:' && u.protocol !== 'https:') return false;
+    const strip = (h: string) => h.toLowerCase().replace(/^www\./, '');
+    const host = strip(u.hostname);
+    if (OWN_HOSTS.includes(host)) return false;
+    return host !== strip(window.location.hostname);
+  } catch {
+    return false;
+  }
+}
+
 interface TrackArgs {
   toolName: string;
   ctaPosition: string;
   /** Blog post slug, when the click originated from inside blog content. */
   postSlug?: string;
+  /** Position bucket of the link within the article body (see getContentPositionBucket). */
+  contentPosition?: string;
 }
 
 /**
@@ -164,6 +245,8 @@ interface TrackArgs {
  * either way.
  */
 function applyTracking(link: HTMLAnchorElement, args: TrackArgs): void {
+  // Classify BEFORE the href is rewritten with the Sub ID below.
+  const linkType = classifyLinkType(link);
   const clientId = getGaClientId();
   const finalUrl = clientId ? appendSubId(link.href, clientId) : link.href;
   link.href = finalUrl;
@@ -178,6 +261,8 @@ function applyTracking(link: HTMLAnchorElement, args: TrackArgs): void {
       link_domain: linkDomain,
       link_url: finalUrl,
       cta_position: args.ctaPosition,
+      link_type: linkType,
+      ...(args.contentPosition ? { content_position: args.contentPosition } : {}),
       sid: clientId || 'unavailable',
       sid_param: getSubIdParam(link.href),
       ...(args.postSlug ? { post_slug: args.postSlug } : {}),
@@ -214,4 +299,27 @@ export function trackAffiliateClickOnElement(
   args: TrackArgs
 ): void {
   applyTracking(link, args);
+}
+
+/**
+ * Fires `outbound_click` for a NON-sponsored external link inside blog content (e.g. a plain link
+ * to a competitor). It does not touch the href and adds no Sub ID. This shows which alternatives
+ * readers actually choose. Named differently from GA4's own enhanced-measurement `click` event.
+ */
+export function trackOutboundClickOnElement(
+  link: HTMLAnchorElement,
+  args: { postSlug?: string; contentPosition?: string; ctaPosition?: string }
+): void {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+  let linkDomain = 'unknown';
+  try { linkDomain = new URL(link.href).hostname.toLowerCase(); } catch { /* leave 'unknown' */ }
+  window.gtag('event', 'outbound_click', {
+    tool_name: deriveToolName(link.href),
+    link_domain: linkDomain,
+    link_url: link.href,
+    cta_position: args.ctaPosition || 'blog_body',
+    ...(args.contentPosition ? { content_position: args.contentPosition } : {}),
+    ...(args.postSlug ? { post_slug: args.postSlug } : {}),
+    page_path: window.location.pathname,
+  });
 }
