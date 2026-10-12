@@ -74,7 +74,7 @@ const post: BlogPost = {
     },
     {
       q: 'Do AI headshots come with commercial usage rights?',
-      a: 'HeadshotPro\'s terms grant a personal and commercial use license and assign its rights in your generated headshots to you, though it notes the generator may produce similar outputs for other users. We could not confirm the equivalent wording for Aragon AI, BetterPic, Pose AI or Try It On AI from their own pages, so read each tool\'s terms before using a headshot commercially, such as on a company website or in paid advertising.',
+      a: 'HeadshotPro\'s terms grant a personal and commercial use license and assign its rights in your generated headshots to you, though it notes the generator may produce similar outputs for other users. Aragon AI\'s terms also allow personal or commercial use of outputs. Pose AI\'s terms grant personal, non-commercial use and prohibit commercial use. We could not read BetterPic\'s or Try It On AI\'s terms, so check them before using a headshot commercially, such as on a company website or in paid advertising.',
     },
     {
       q: 'Can I get a refund if I don\'t like my AI headshots?',
@@ -100,6 +100,9 @@ const post: BlogPost = {
     { url: 'https://www.headshotpro.com/refund', label: 'HeadshotPro — refund policy' },
     { url: 'https://www.aragon.ai/refund-policy', label: 'Aragon AI — refund policy' },
     { url: 'https://support.betterpic.io/en/article/can-i-request-a-refund-for-my-purchase-1y9qz8b/', label: 'BetterPic — refund policy' },
+    { url: 'https://www.aragon.ai/terms', label: 'Aragon AI — terms of service' },
+    { url: 'https://www.aragon.ai/privacy', label: 'Aragon AI — privacy policy' },
+    { url: 'https://pose.ai/terms', label: 'Pose AI — terms of service' },
   ],
 
   content: `
@@ -156,7 +159,7 @@ const post: BlogPost = {
   <li><strong>HeadshotPro</strong> leads for LinkedIn-specific output: formal studio backgrounds, consistent lighting, and delivery in as little as 15 minutes on its top package</li>
   <li>Input quality directly determines output quality: well-lit selfies on plain backgrounds are essential</li>
   <li>No tool in this category offers a meaningful free plan; budget at least $15–$29 for usable results</li>
-  <li><strong>HeadshotPro</strong>'s terms allow commercial use of your headshots; check the other tools' terms before commercial use (see the table below)</li>
+  <li><strong>HeadshotPro</strong>'s and Aragon's terms allow commercial use of your headshots, while Pose AI's terms restrict it; check each tool's terms before commercial use (see the table below)</li>
   <li>With a premium tool and decent input photos, most reviewers — including recruiters — cannot reliably tell the result is AI-generated (see below)</li>
   <li>A new instant tier has entered the category: <strong>Pose AI</strong> delivers in under 10 seconds from a single selfie, trading some output variety for speed</li>
 </ul>
@@ -242,7 +245,7 @@ const post: BlogPost = {
 </div>
 
 <h2 id="official-terms">Price, Refund, Data &amp; Rights: What the Official Pages Say</h2>
-<p>Price and speed are easy to compare. Refund rules, data handling and usage rights are where these tools differ most, so this table is built from each vendor's own pages as read on 12 October 2026. "Not verified" means we could not read the vendor's own page for that item, so confirm it yourself before paying.</p>
+<p>Price and speed are easy to compare. Refund rules, data handling and usage rights are where these tools differ most, so this table is built from each vendor's own pages as read on 12 October 2026 (BetterPic's terms and privacy pages would not load, so those cells stay unverified). "Not verified" means we could not read the vendor's own page for that item, so confirm it yourself before paying.</p>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:13px;min-width:760px;">
   <thead>
@@ -266,15 +269,15 @@ const post: BlogPost = {
       <td style="padding:10px 12px;font-weight:600;">Aragon AI</td>
       <td style="padding:10px 12px;">From $35 for 40+ headshots, up to 100 images (Aragon's own LinkedIn guide); tier prices of $35 / $45 / $75 come from third-party reviews</td>
       <td style="padding:10px 12px;">Complimentary redo or 100% refund if requested within 14 calendar days; downloading counts as using the product (<a href="https://www.aragon.ai/refund-policy" target="_blank" rel="noopener noreferrer">refund policy</a>)</td>
-      <td style="padding:10px 12px;">Not verified from Aragon's pages (it shows a SOC 2 Type II badge)</td>
-      <td style="padding:10px 12px;">Not verified; read Aragon's terms</td>
+      <td style="padding:10px 12px;">Photos deleted or anonymized within 30 days of the earliest trigger: delivery, a deletion request, account closure or one year after upload. Its AI providers are barred from using face data to train generalized models (<a href="https://www.aragon.ai/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a>)</td>
+      <td style="padding:10px 12px;">Terms allow personal or commercial use of outputs and assign Aragon's rights in them (if any) to you; outputs may resemble other users' (<a href="https://www.aragon.ai/terms" target="_blank" rel="noopener noreferrer">terms</a>)</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
       <td style="padding:10px 12px;font-weight:600;">Pose AI</td>
       <td style="padding:10px 12px;">Weekly auto-renewing plans of $12 / $16 / $20 on the US App Store listing, with a 3-day trial that is watermarked</td>
       <td style="padding:10px 12px;">Not verified; App Store purchases follow Apple's refund process</td>
-      <td style="padding:10px 12px;">Not verified; see Pose's privacy policy</td>
-      <td style="padding:10px 12px;">Not verified</td>
+      <td style="padding:10px 12px;">Terms say it does not use your content to train AI models; no retention period is stated in the terms (<a href="https://pose.ai/terms" target="_blank" rel="noopener noreferrer">terms</a>)</td>
+      <td style="padding:10px 12px;">Its terms grant personal, non-commercial use of the service and content and prohibit commercial use, so confirm with Pose before using a result for business</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
       <td style="padding:10px 12px;font-weight:600;">BetterPic</td>
