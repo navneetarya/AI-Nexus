@@ -166,9 +166,9 @@ const post: BlogPost = {
 
 <p><strong>Relevance AI</strong> uses a structured "Tools + Agents" framework. Tools are individual AI-powered functions, such as "search CRM for contact", "classify email intent", or "draft outreach message". Agents are layers that chain Tools together to reach a defined goal.</p>
 <p>This two-level setup gives steadier, easier-to-check agent behaviour than instruction-only tools. The trade-off is more setup time upfront. The free tier includes 100 credits/day, enough to build and test a first agent. The Team plan starts at $19/month.</p>
-<p><strong>Relevance AI</strong> is the most reliable Tier 1 pick for sales teams and customer service teams. It also suits any SMB that needs to log agent decisions for compliance or quality checks. <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer">Relevance AI →</a></p>
+<p><strong>Relevance AI</strong> is the most reliable Tier 1 pick for sales teams and customer service teams. It also suits any SMB that needs to log agent decisions for compliance or quality checks. <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Relevance AI →</a></p>
 <div style="margin:14px 0 24px;">
-  <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
+  <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -200,9 +200,9 @@ const post: BlogPost = {
 </div>
 
 <p><strong>Make.com</strong> provides visual workflow automation with a drag-and-drop UI. Its AI-integrated modules cover OpenAI, Anthropic, and Google AI services, and the library keeps growing. The free plan includes 1,000 operations per month — enough for testing and light production use.</p>
-<p>The Core plan starts at $9/month. For SMBs already running Make automations, Make is the easiest upgrade path. You can add AI reasoning steps without switching platforms. <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Make.com →</a></p>
+<p>The Core plan starts at $9/month. For SMBs already running Make automations, Make is the easiest upgrade path. You can add AI reasoning steps without switching platforms. <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Make.com →</a></p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com Free →</a>
+  <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com Free →</a>
 </div>
 
 <p><strong>Zapier</strong> launched its Agents product in late 2024. It lets agents watch triggers and run multi-step actions on their own. This works across Zapier's 6,000+ app integrations. For SMBs already invested in the Zapier ecosystem, Agents adds new behaviour on its own, without switching platforms. Starter plans begin at $19.99/month. <a href="https://zapier.com/" target="_blank" rel="noopener">Zapier</a></p>

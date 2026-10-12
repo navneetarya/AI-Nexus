@@ -259,7 +259,7 @@ const post: BlogPost = {
 <p>If your final file must be a pixel-perfect PowerPoint deck for a client who will edit it further, budget time for cleanup. Or just share the Gamma web link instead of exporting at all.</p>
 <p><strong>Gamma: try the free plan first.</strong> 400 free AI credits, no credit card required to start.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -286,7 +286,7 @@ const post: BlogPost = {
 <p>Where Beautiful.ai genuinely wins: PowerPoint export quality. Across multiple independent tests, Beautiful.ai's .pptx exports were consistently rated among the most reliable in the category. That's a real advantage over Gamma if your decks need to leave the platform as editable PowerPoint files.</p>
 <p><strong>Beautiful.ai: 14-day Pro trial.</strong> Full Pro access for 14 days. Note: requires a card upfront.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://beautiful.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Beautiful.ai →</a>
+  <a href="${AFFILIATE_LINKS['beautiful-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Beautiful.ai →</a>
 </div>
 
 <h2>Prezi AI: Best for Live Audience Engagement</h2>
@@ -315,7 +315,7 @@ const post: BlogPost = {
 <p>Pick Canva AI if presentations are one of several design tasks you handle weekly inside the same platform. Pick a dedicated tool (Gamma or Beautiful.ai) if presentations specifically, not general design, are the actual job.</p>
 <p><strong>Canva AI: try Magic Design free.</strong> 200 free AI credits/month, no card required to start.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
+  <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 
 <h2>Pi (Presentation Intelligence): Best Cheap Option for Turning a Document Into a Deck</h2>

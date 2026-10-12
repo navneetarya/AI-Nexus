@@ -1,4 +1,5 @@
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
 // Relevance AI : https://relevanceai.com/?via=navneet  ✅ (live since Day 1)
@@ -112,7 +113,7 @@ const post: BlogPost = {
   <li><strong>Start free wherever you can.</strong> Relevance AI's or Gumloop's free tier will tell you more in an afternoon than another comparison post will.</li>
 </ol>
 <div style="margin:14px 0 24px;">
-  <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
+  <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
   <a href="/tools/relevance-ai/" style="display:inline-block;color:#0D9488;padding:10px 4px;margin:6px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Relevance AI review →</a>
 </div>
 <img src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="People sitting at a table reviewing pricing tiers for AI agent platforms" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -251,7 +252,7 @@ const post: BlogPost = {
 
 <p><strong>Relevance AI — Free Tier, Multi-Agent Orchestration.</strong> Start free with 200 Actions/month, no card required, before deciding whether Pro's $19/month is worth it.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
+  <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
   <a href="/tools/relevance-ai/" style="display:inline-block;color:#0D9488;padding:10px 4px;margin:6px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Relevance AI review →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center;">

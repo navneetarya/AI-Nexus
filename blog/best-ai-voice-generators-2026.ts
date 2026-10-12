@@ -146,7 +146,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> Podcasters who want recording, noise cleanup, and voice correction in a single, beginner-friendly tool. Full details are in our <a href="/tools/podcastle/">Podcastle review</a>, and our <a href="/blog/best-ai-podcast-tools-2026/">best AI podcast tools guide</a> covers where it fits against other recording options.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
+  <a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
 </div>
 
 <h2>Descript: best for text-based audio and video editing</h2>
@@ -160,7 +160,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> Video podcasters and creators who want text-based editing more than a standalone voice generator. Our <a href="/tools/descript/">Descript review</a> covers the full editing workflow.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://descript.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
+  <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
 </div>
 
 <h2>Other AI voice generators worth knowing</h2>

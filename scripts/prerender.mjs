@@ -7048,6 +7048,16 @@ for (const post of BLOG_POSTS) {
         <p style="font-size:.95rem;line-height:1.6;margin:0">${esc(answerText)}</p>${verifiedHtml}
       </div>`
     : '';
+  // T5: optional quick-pick CTA from answer-blocks.json, rendered AFTER (outside) the speakable box.
+  // Mirrors pages/BlogPostPage.tsx. The URL is resolved from AFFILIATE_LINKS_MAP, never from the JSON.
+  let quickCtaHtml = '';
+  if (answerText && answerBlock && answerBlock.cta) {
+    const ctaHref = AFFILIATE_LINKS_MAP[answerBlock.cta.tool];
+    if (!ctaHref) {
+      throw new Error(`[prerender] answer-blocks.json cta.tool '${answerBlock.cta.tool}' for ${post.slug} has no entry in AFFILIATE_LINKS.`);
+    }
+    quickCtaHtml = `<div data-quick-cta-wrap="true" style="margin:-4px 0 16px"><a href="${esc(ctaHref)}" target="_blank" rel="sponsored nofollow noopener noreferrer" data-quick-cta="true" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none">${esc(answerBlock.cta.label)}</a><div style="font-size:11px;color:#6B7280;margin-top:6px">Affiliate link: we may earn a commission at no extra cost to you.</div></div>`;
+  }
 
   // E-02 Audit Fix: Author byline injected into prerendered HTML — quality raters and
   // crawlers need to see "By Navneet Arya" before reading the content.
@@ -7079,8 +7089,8 @@ for (const post of BLOG_POSTS) {
       `</ul></div>`
     : '';
   const fullBodyHtml = blogContent
-    ? `${authorBylineHtml}${quickAnswerHtml}<div data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333;margin-bottom:20px">${esc(post.metaDescription)}</div>${blogContent}${faqHtml}${blogRelatedHtml}`
-    : `${authorBylineHtml}${quickAnswerHtml}<p data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>${faqHtml}${blogRelatedHtml}`;
+    ? `${authorBylineHtml}${quickAnswerHtml}${quickCtaHtml}<div data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333;margin-bottom:20px">${esc(post.metaDescription)}</div>${blogContent}${faqHtml}${blogRelatedHtml}`
+    : `${authorBylineHtml}${quickAnswerHtml}${quickCtaHtml}<p data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>${faqHtml}${blogRelatedHtml}`;
 
   let html = buildPage(template, {
     title: `${post.title} | AI Nexus`,

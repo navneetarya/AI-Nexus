@@ -6,7 +6,9 @@ import type { BlogPost } from '../blog/types';
 import { BLOG_POSTS_META } from '../blog/metadata';
 import ANSWER_BLOCKS from '../blog/answer-blocks.json';
 import { SITE_CONFIG, TOOLS } from '../constants';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 import {
+  trackAffiliateClick,
   trackAffiliateClickOnElement,
   trackOutboundClickOnElement,
   deriveToolName,
@@ -273,7 +275,12 @@ const C = {
 
 export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPageProps) {
   // Phase 5: curated direct-answer block + 'last verified' date (blog/answer-blocks.json)
-  const answerBlock = (ANSWER_BLOCKS as Record<string, any>)[post.slug] as { answer?: string; verified?: string | null } | undefined;
+  const answerBlock = (ANSWER_BLOCKS as Record<string, any>)[post.slug] as { answer?: string; verified?: string | null; cta?: { tool: string; label: string } } | undefined;
+  // Oct 2026 (T5): optional single "quick pick" CTA under the Quick Answer box. The URL always comes from
+  // AFFILIATE_LINKS (never from the JSON), so link changes stay a one-place edit.
+  const quickCta = answerBlock?.cta && AFFILIATE_LINKS[answerBlock.cta.tool]
+    ? { href: AFFILIATE_LINKS[answerBlock.cta.tool], label: answerBlock.cta.label, tool: answerBlock.cta.tool }
+    : null;
   // Which FAQ accordion row is expanded (null = all collapsed)
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
 
@@ -563,6 +570,42 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
                 </time>
               </div>
             )}
+          </div>
+        )}
+
+        {/* T5 quick-pick CTA: sits OUTSIDE the .post-excerpt div on purpose, so Speakable/AI-cited
+            answer text contains no button label. Mirrored in scripts/prerender.mjs. */}
+        {quickCta && (
+          <div style={{ margin: '-4px 0 16px' }}>
+            <a
+              href={quickCta.href}
+              target="_blank"
+              rel="sponsored nofollow noopener noreferrer"
+              data-quick-cta="true"
+              onClick={(e) =>
+                trackAffiliateClick(e, {
+                  toolName: deriveToolName(quickCta.href),
+                  ctaPosition: 'quick_answer',
+                  contentPosition: '0_15',
+                  postSlug: post.slug,
+                })
+              }
+              style={{
+                display: 'inline-block',
+                background: 'linear-gradient(135deg,#0D9488,#0f766e)',
+                color: '#fff',
+                padding: '10px 16px',
+                borderRadius: 10,
+                fontWeight: 700,
+                fontSize: 14,
+                textDecoration: 'none',
+              }}
+            >
+              {quickCta.label}
+            </a>
+            <div style={{ fontSize: 11, color: C.mut, marginTop: 6 }}>
+              Affiliate link: we may earn a commission at no extra cost to you.
+            </div>
           </div>
         )}
 
