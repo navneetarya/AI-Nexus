@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Social Media 2026 — Ranked & Reviewed',
   metaDescription: 'Ocoya writes captions, Opus Clip turns videos into Reels, Canva AI designs in seconds. See the 6 social media AI tools that cut publishing time.',
   datePublished: '2026-05-01',
-  dateModified: '2026-09-29',
+  dateModified: '2026-10-13',
   author: 'Navneet Arya',
   category: 'Social Media',
   readTime: '7 min read',
@@ -213,6 +213,7 @@ const post: BlogPost = {
   <li><strong>Faceless content creator:</strong> InVideo AI (video production) + Leonardo.ai (thumbnails) = $20/month</li>
   <li><strong>Repurposing existing long-form content:</strong> Opus Clip only = free for moderate volume</li>
   <li><strong>Fast, stylized short clips (TikTok/Reels):</strong> <a href="${AFFILIATE_LINKS['pixverse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">PixVerse</a> = Free–$10/month</li>
+  <li><strong>Quick photo fixes (upscale, remove an object, change a background):</strong> <a href="${AFFILIATE_LINKS['youcam']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">YouCam Online Editor</a> = 5 free credits to start, then credit-based plans. <a href="/tools/youcam/" style="color:var(--a1);font-weight:600;">Read our YouCam review →</a></li>
 </ul>
 <p>The single highest-ROI tool for most social media managers is Ocoya. It eliminates the most painful part of the job (writing captions for each platform separately) and adds scheduling on top. Start there, then layer in video tools as your content strategy expands into short-form video.</p>
 

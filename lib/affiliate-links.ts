@@ -73,12 +73,11 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   // Added Oct 9 2026 (Impact). signNow is an e-signature tool, NOT an AI contract analyzer: use it only for the
   // "after review, sign it" step (contract-analysis post, freelancer posts). No tool page.
   signnow: 'https://signnow.sjv.io/OYJYXA?utm_source=signnow&utm_medium=affiliate',
-  // Added Oct 13 2026 (Impact). Photo-editing programs, no tool pages yet. Plain base links (no ?u= deep link):
+  // Added Oct 13 2026 (Impact). Photo-editing programs. Plain base links (no ?u= deep link):
   // deep-link permission has not been confirmed in the Impact dashboard for either program.
-  // YouCam Online Editor (yce.perfectcorp.com, Perfect Corp): browser-based AI photo/video editor, credit-based plans.
+  // YouCam Online Editor now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['youcam']).
   // Retouch4me (retouch4.me): professional AI retouching plugins for Photoshop/Lightroom etc. (perpetual licences + yearly plans).
-  // When either gets a /tools/<slug>/ page, move its link into constants.ts and delete it here.
-  youcam: 'https://perfectmobilecorp.pxf.io/bkeBPm?utm_source=youcam&utm_medium=affiliate',
+  // When Retouch4me gets a /tools/<slug>/ page, move its link into constants.ts and delete it here.
   retouch4me: 'https://relu0u.pxf.io/OYJDOK?utm_source=retouch4me&utm_medium=affiliate',
   soundraw: 'https://soundraw.io/?ref=pvxxfrzw',
   // Renderforest has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['renderforest']).

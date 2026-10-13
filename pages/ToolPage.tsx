@@ -29,7 +29,7 @@ const C = {
 // must be added here or its disclosure banner will not render.
 const AFFILIATE_SLUGS = [
   // Added Oct 2026 (Phase 5): tracked-link tools the disclosure banner was missing for (validate_critical_fixes.py)
-  'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence', 'pixverse',
+  'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence', 'pixverse', 'youcam',
   'writesonic', 'rytr', 'quillbot', 'frase', 'leonardo-ai', 'photoroom', 'looka',
   'pictory', 'opus-clip', 'invideo', 'murf-ai', 'podcastle', 'gamma', 'beautiful-ai',
   'ocoya', 'replit', 'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',
@@ -1404,6 +1404,23 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
     relatedBlogSlugs: ['best-ai-video-generators-2026', 'best-ai-tools-for-youtube-creators-2026', 'best-ai-tools-for-content-creators-free-2026', 'best-ai-tools-for-social-media-2026'],
     rating: 4.1, lastTested: "October 2026", lastTestedISO: "2026-10-10", datePublished: "2026-10-10", timeUsed: "Researched Oct 2026",
   },
+  'youcam': {
+    whatIs: "YouCam Online Editor is a browser-based AI photo editor from Perfect Corp, so there is nothing to download. Its photo tools include a Photo Enhancer that upscales to 4K, an Object Remover, background removal and change, Photo Repair for old photos, Face Retouch, Face Reshape, AI Lighting, Colorize, an Image Extender and an AI Headshot Generator. The same account adds video tools and an AI agent that edits by chat.",
+    whoIsItFor: "Casual users, social media creators and small online sellers who want quick AI fixes to photos without installing software or learning layers and masks. It suits anyone who wants to try a tool on a few images first: new users get 5 free credits and no credit card is needed.",
+    whoShouldSkip: "Professional photographers who retouch inside Photoshop, Lightroom, Capture One or Affinity Photo. Retouch4me's plug-ins are built for that workflow and YouCam is not. Also skip it if you need a fixed monthly price before you start: advanced tools run on credits, and we could not confirm a current official plan table.",
+    myTake: "This review draws on YouCam Online Editor's official site and product pages, checked in October 2026. No first-hand testing is claimed.\n\nThe pitch is breadth in a browser. One account covers a 4K Photo Enhancer that handles up to 50 photos at once, an Object Remover, background removal and change, Photo Repair, Colorize, an Image Extender, face tools and an AI Headshot Generator. For casual editing, that replaces several single-purpose sites.\n\nThe free start is small. New users get 5 free credits with no credit card, and advanced tools run on credits that you buy individually or through a membership. That is enough to judge the output on a few of your own photos, not to finish a project.\n\nWe do not quote plan prices. We could not find a current official plan table, and third-party listings disagree with each other, so check the pricing page before you pay.\n\nOn privacy, YouCam says it does not train on your images without consent and deletes files after a short period. That is the vendor's own statement, so read the privacy policy before uploading anything sensitive.\n\nYouCam lists an AI Headshot Generator, but we have not seen enough independent evidence on its quality to rank it against dedicated headshot tools.",
+    useCases: [
+      "Upscaling a low-resolution photo to 4K",
+      "Enhancing a batch of up to 50 photos in one go",
+      "Removing an unwanted object or person from a picture",
+      "Repairing and colorizing an old family photo",
+      "Changing or removing a photo background for social posts",
+    ],
+    pricingSection: "**YouCam Online Editor pricing (verify on yce.perfectcorp.com):**\n- Free start: new users get 5 free credits, with no credit card needed.\n- Credits: advanced tools run on credits, which you can buy individually.\n- Membership: a credit-based membership is also offered.\n\nWe do not quote a monthly price. We could not find a current official plan table, and third-party listings disagree. Check the official pricing page, and judge the output on your free credits first.",
+    verdict: "A convenient browser tool for quick AI photo fixes, with a wide toolset and a small free start. Try the 5 free credits on your own photos, then check the official pricing page before you commit. Professionals who retouch in Photoshop or Lightroom should look at plug-in tools such as Retouch4me instead.",
+    relatedBlogSlugs: ['best-ai-photo-upscaler-tools-2026', 'best-ai-headshot-tools-linkedin-2026', 'best-ai-tools-for-social-media-2026', 'best-ai-tools-for-content-creators-free-2026'],
+    rating: 3.7, lastTested: "October 2026", lastTestedISO: "2026-10-13", datePublished: "2026-10-13", timeUsed: "Researched Oct 2026",
+  },
   'alf-website-studio': {
     whatIs: "Alf Website Studio is Spaceship's conversational website builder. You describe the site to Alf, Spaceship's AI assistant, which generates the pages, copy, branding and images; you then refine the result by chat or in a visual editor. Hosting, domain connection and an SSL certificate are handled for you. Spaceship's published pricing is a 30-day free trial, then $5 per month.",
     whoIsItFor: "Entrepreneurs, freelancers and small businesses, especially people who already hold a domain at Spaceship and want a simple business site or portfolio live without separate hosting decisions. Spaceship's own documentation positions it for non-technical users who do not want to write HTML or CSS.",
@@ -1596,6 +1613,7 @@ const TOOL_RADAR: Record<string, [number, number, number, number, number]> = {
   'aippt':                    [4.3, 3.9, 3.9, 3.4, 2.8],
   'renderforest':             [4.4, 4.0, 3.7, 3.8, 4.0],
   'pixverse':                 [4.5, 4.1, 4.2, 3.6, 3.2],
+  'youcam':                   [4.5, 3.9, 3.4, 3.0, 3.0],
   'alf-website-studio':       [4.5, 3.7, 4.3, 3.4, 3.6],
   'jetpack-ai-assistant':     [4.4, 3.5, 3.8, 3.0, 3.6],
 };

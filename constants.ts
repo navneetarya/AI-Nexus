@@ -291,6 +291,44 @@ export const TOOLS: Tool[] = [
     reviewType: 'research-based',
   },
 
+  // YouCam Online Editor — mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  // Page created Oct 13 2026 from the vendor's official site only. No plan prices are quoted (unconfirmed).
+  {
+    id: 'i7', slug: 'youcam',
+    name: 'YouCam Online Editor', tagline: 'Browser-based AI photo editor with a 4K enhancer, object remover and photo repair',
+    description: 'YouCam Online Editor, from Perfect Corp, is an AI photo editor that runs in the browser with no download. It covers photo enhancing and upscaling, object removal, background removal and change, old-photo repair, face retouching, AI lighting, colorizing, image extending and an AI headshot generator. Video tools and an AI agent that edits by chat sit in the same account.',
+    category: Category.IMAGE, affiliateLink: 'https://perfectmobilecorp.pxf.io/bkeBPm?utm_source=youcam&utm_medium=affiliate',
+    iconName: 'Image', color: '#38bdf8', accentColor: '#0284c7',
+    pricing: 'Free to start (5 credits for new users) + credit-based plans', bestFor: 'Casual and social creators who want quick AI photo fixes and upscaling in a browser',
+    ctaText: 'Try YouCam Free',
+    features: ['Photo Enhancer that upscales to 4K, up to 50 photos at once', 'Object Remover, plus background removal and change', 'Photo Repair and Colorize for old photos', 'Face Retouch, Face Reshape and AI Lighting', 'Image Extender and an AI Headshot Generator', 'Video tools and an AI agent for editing by chat'],
+    pros: [
+      'Runs in the browser, so there is nothing to download or install',
+      'One account covers enhancing, object removal, background changes, photo repair, retouching and headshots',
+      'Batch enhancing of up to 50 photos at once',
+      'New users get 5 free credits with no credit card needed',
+    ],
+    cons: [
+      'Advanced tools run on credits, so the real cost depends on how much you edit',
+      'No current official plan table could be confirmed, and third-party listings disagree on price',
+      'The free start is small: 5 credits for new users',
+      'It is a browser editor, not a plug-in for Photoshop or Lightroom',
+    ],
+    notForYou: 'Professional photographers who retouch inside Photoshop, Lightroom, Capture One or Affinity Photo and want plug-in tools; Retouch4me is built for that workflow. Also skip it if you need a fixed, published monthly price before you sign up.',
+    lastTestedISO: '2026-10-13',
+    researchSources: {
+      lastVerified: '2026-10-13',
+    },
+    pricingBreakdown: [
+      { tier: 'Free start', price: '5 credits for new users', highlight: 'No credit card needed · advanced tools consume credits' },
+      { tier: 'Credits (à la carte)', price: 'Check pricing page', highlight: 'Buy credits individually for the advanced tools you use' },
+      { tier: 'Membership', price: 'Check pricing page', highlight: 'Credit-based membership · third-party listings disagree on the monthly price, so confirm the current plan table' },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: 'Page created from YouCam Online Editor\'s official site. No first-hand testing is claimed. Current plan prices were not confirmed, so none are quoted.' },
+    ],
+    reviewType: 'research-based',
+  },
   // VIDEO
   {
     id: 'v1', slug: 'pictory',
@@ -3348,4 +3386,18 @@ Object.assign(TOOL_FAQS, {
 });
 Object.assign(TOOL_KEYWORDS, {
   pixverse: ['pixverse review', 'pixverse pricing', 'pixverse free plan', 'pixverse v6', 'pixverse alternatives', 'ai short video generator'],
+});
+
+// ── YouCam Online Editor — added Oct 2026, mirrors prerender.mjs TOOL_FAQS ──
+Object.assign(TOOL_FAQS, {
+  youcam: [
+    { q: 'Is YouCam Online Editor free?', a: 'You can start free. YouCam says new users get 5 free credits and no credit card is needed. Advanced tools run on credits, which you buy individually or through a membership, so check the official pricing page for current plans before you pay.' },
+    { q: 'How much does YouCam Online Editor cost?', a: 'No price is quoted here, because we could not confirm a current official plan table and third-party listings disagree with each other. YouCam uses credits that you can buy individually or through a membership. Check the official pricing page for the current figures.' },
+    { q: 'What can YouCam Online Editor do?', a: 'It is a browser-based AI photo editor with no download. Its photo tools include a Photo Enhancer that upscales to 4K and handles up to 50 photos at once, an Object Remover, background removal and change, Photo Repair for old photos, Face Retouch, Face Reshape, AI Lighting, Colorize, an Image Extender and an AI Headshot Generator. It also has video tools and an AI agent for editing by chat.' },
+    { q: 'Is it safe to upload my photos to YouCam?', a: 'YouCam says it does not train on your images without consent and deletes files after a short period. That is the vendor\'s own statement and we have not tested it, so read the privacy policy before uploading sensitive photos.' },
+    { q: 'Is YouCam good for LinkedIn headshots?', a: 'YouCam lists an AI Headshot Generator among its tools. We have not found enough independent evidence on its headshot quality to rank it against dedicated headshot tools, so treat it as an option to try with the free credits rather than a proven pick.' },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  youcam: ['youcam online editor review', 'youcam online editor pricing', 'youcam free credits', 'youcam photo enhancer', 'ai photo editor online', 'ai photo upscaler'],
 });

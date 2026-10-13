@@ -443,7 +443,7 @@ const post: BlogPost = {
 
 <h3 id="youcam-online-editor">Also worth knowing: YouCam Online Editor</h3>
 <p>YouCam Online Editor is a browser-based AI photo editor from Perfect Corp. It fits the same slot as Fotor rather than competing with the dedicated headshot tools above. Its site lists an AI Headshot Generator alongside Face Retouch, background change, and photo enhancement.</p>
-<p>It is not ranked here because there is not enough independent evidence on its headshot quality yet. New users get 5 free credits, and advanced tools run on credits or a membership, so check its pricing page before you rely on it for a LinkedIn photo.</p>
+<p>It is not ranked here because there is not enough independent evidence on its headshot quality yet. New users get 5 free credits, and advanced tools run on credits or a membership, so check its pricing page before you rely on it for a LinkedIn photo. Our <a href="/tools/youcam/" style="color:#0ea5e9;font-weight:600;">YouCam Online Editor review</a> lists everything it offers and what we could not confirm.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['youcam']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try YouCam Online Editor →</a>
 </div>
