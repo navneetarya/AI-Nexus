@@ -10,6 +10,9 @@
 // edge-case subsection (glasses/facial hair/skin tone/age), real proscons, internal links.
 // ── 2026-10-12 revision (T7) ── Added sourced "official terms" table (price, refund, data, rights) from vendor pages read 2026-10-12.
 // Corrected Aragon pricing ($35+, was $29), BetterPic entry ($35), removed unconfirmed Try It On AI $14.99 claims, removed blanket commercial-rights claim.
+// ── 2026-10-13 revision ── Added an unranked YouCam Online Editor H3 under Fotor, a new "retouching" H2 (Retouch4me) and one
+// how-to-choose bullet. Both are Impact affiliates (AFFILIATE_LINKS['youcam'] / ['retouch4me']); facts read from the vendors' official
+// pages on 2026-10-13. Neither is ranked: no independent evidence yet on YouCam headshot quality, and Retouch4me is not a headshot generator.
 // Verify Aragon AI's user-count/rating claims periodically — competing posts increasingly
 // position Aragon ahead of HeadshotPro; this revision keeps HeadshotPro #1 on verified
 // Trustpilot count but says so explicitly rather than ignoring the counter-claim.
@@ -23,7 +26,7 @@ const post: BlogPost = {
   seoTitle: '5 Best AI Headshot Tools for LinkedIn (2026)',
   metaDescription: 'HeadshotPro, Aragon AI, Remini & more — best AI headshot tools for LinkedIn 2026. Pricing, output quality, and honest verdict from independent research.',
   datePublished: '2026-05-28',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-13',
   author: 'Navneet Arya',
   category: 'image',
   readTime: '9 min read',
@@ -136,6 +139,7 @@ const post: BlogPost = {
     <li><a href="#try-it-on-ai" style="color:#0ea5e9;text-decoration:none;">#6 Try It On AI (Verify Price)</a></li>
     <li><a href="#fotor-ai" style="color:#0ea5e9;text-decoration:none;">#7 Fotor AI</a></li>
     <li><a href="#edge-cases" style="color:#0ea5e9;text-decoration:none;">Edge Cases: Glasses, Facial Hair, Skin Tone, Age</a></li>
+    <li><a href="#retouching" style="color:#0ea5e9;text-decoration:none;">Already Have a Photo? Retouching</a></li>
     <li><a href="#how-to-choose" style="color:#0ea5e9;text-decoration:none;">How to Choose</a></li>
     <li><a href="#final-verdict" style="color:#0ea5e9;text-decoration:none;">Final Verdict</a></li>
   </ol>
@@ -437,6 +441,14 @@ const post: BlogPost = {
   <li>❌ Monthly subscription not cost-effective for one-time headshot use</li>
 </ul>
 
+<h3 id="youcam-online-editor">Also worth knowing: YouCam Online Editor</h3>
+<p>YouCam Online Editor is a browser-based AI photo editor from Perfect Corp. It fits the same slot as Fotor rather than competing with the dedicated headshot tools above. Its site lists an AI Headshot Generator alongside Face Retouch, background change, and photo enhancement.</p>
+<p>It is not ranked here because there is not enough independent evidence on its headshot quality yet. New users get 5 free credits, and advanced tools run on credits or a membership, so check its pricing page before you rely on it for a LinkedIn photo.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['youcam']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try YouCam Online Editor →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center"><a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.</p>
+
 <h2 id="edge-cases">Edge Cases: Glasses, Facial Hair, Skin Tone &amp; Age</h2>
 <p>Most comparisons treat "does it work for me" as a footnote. It's often the deciding factor, so here's the detail by category:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
@@ -445,6 +457,16 @@ const post: BlogPost = {
   <li><strong>Skin tone:</strong> The leading tools have improved substantially on this in the last two years and now produce reliable results across a wide range of skin tones in user-submitted examples. Free or lower-tier tools (Remini, Fotor AI free plan) show more inconsistency here — lightening or evening out skin tone in ways users report as inaccurate.</li>
   <li><strong>Age:</strong> All tools in this guide are trained to preserve rather than alter apparent age, but results are more reliable with a varied input set. If you're specifically concerned about an age-accurate result, avoid single-photo instant tools and use a multi-photo tool with a mix of angles and expressions.</li>
 </ul>
+
+<h2 id="retouching">Already Have a Photo? Where Retouching Software Fits</h2>
+<p>Everything above generates a new headshot from selfies. If a photographer already shot your portrait, the next step is retouching, and that calls for a different kind of tool.</p>
+<p>Retouch4me sells AI retouching plugins for Photoshop, Lightroom, Capture One, and Affinity Photo. Its site says the plugins keep natural skin texture and preserve Photoshop layers, so you stay in control of the result. It is professional software, not a headshot generator.</p>
+<p>Its official pricing page lists yearly plans from $169 and one-time licenses, with the photo plugin collection from $145. It also lists two free plugins, and new sign-ups can try 20 images free in its online retouch tool.</p>
+<p>That makes it relevant mainly if you shoot or edit portraits for others, such as a photographer, a studio, or an in-house marketing team. For one personal LinkedIn photo, a generator like HeadshotPro is the simpler route.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['retouch4me']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See Retouch4me →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center"><a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.</p>
 
 <h2 id="how-to-choose">How to Choose the Right AI Headshot Tool</h2>
 <p>The right tool depends on your budget, the quality level you need, and how often you update your professional photo:</p>
@@ -455,6 +477,7 @@ const post: BlogPost = {
   <li><strong>Want 4K files for a hero-shot use case:</strong> HeadshotPro Executive ($59) or BetterPic, which adds 200+ wardrobe and backdrop styles</li>
   <li><strong>Zero budget, will accept lower quality:</strong> Remini or Fotor AI free plan, with limited generations and noticeably lower polish</li>
   <li><strong>First-time user, want to test cheaply before committing:</strong> Try It On AI, but confirm the current price and refund terms first</li>
+  <li><strong>Photographer retouching portraits you already shot:</strong> Retouch4me, which is professional retouching software rather than a headshot generator</li>
   <li><strong>Indian users (UPI/INR):</strong> Fotor AI and Remini support Indian payment methods. HeadshotPro and Aragon require international cards (~₹2,415 for HeadshotPro Basic)</li>
 </ul>
 

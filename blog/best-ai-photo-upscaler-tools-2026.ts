@@ -10,13 +10,17 @@
 //   Calls out the pricing trap this category hides: Topaz killed its one-time $99 perpetual license in
 //   September 2025 and moved fully to subscriptions — a real shift most competing roundups don't lead with.
 // Internal links: /best-ai-image-tools, /tools/photoroom, /blog/best-ai-headshot-tools-linkedin-2026
-// Word count: ~2,769 words | Published: 2026-07-31 | Author: Navneet Arya
+// Word count: ~2,922 words | Published: 2026-07-31 | Author: Navneet Arya
 // PhotoRoom — affiliate link: https://photoroom.com?via=ainexus (existing program)
 // Let's Enhance and Topaz Labs both run real affiliate programs (20–30% recurring) that AI Nexus has not
 //   yet joined — official links used for both, stated honestly in the pricing sections below.
 // Remini and Upscale.media: no verifiable affiliate program found — official links used.
+// ── 2026-10-13 revision ── Added an unranked "Also worth a look" H3 for YouCam Online Editor (Impact affiliate,
+//   AFFILIATE_LINKS['youcam']). Facts taken from yce.perfectcorp.com on 2026-10-13; plan prices deliberately NOT quoted
+//   (no current official price table found). Kept outside the five ranked tools so scores and the India-billing claim stay accurate.
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-photo-upscaler-tools-2026',
@@ -24,7 +28,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Image Upscaler Tools 2026 — Compared & Ranked',
   metaDescription: 'PhotoRoom, Topaz Photo AI, Let\'s Enhance, Upscale.media & Remini — best ai image upscaler tools 2026. Real pricing, ecommerce fit, honest verdict.',
   datePublished: '2026-07-31',
-  dateModified: '2026-09-29',
+  dateModified: '2026-10-13',
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '10 min read',
@@ -225,6 +229,15 @@ const post: BlogPost = {
 <h3>Where Remini falls short</h3>
 <p>No batch processing, no fine-grained control over enhancement strength, and results can occasionally over-smooth skin texture or tone. Treat it as a restoration tool for irreplaceable photos, not a production workflow for ongoing ecommerce or content needs.</p>
 
+<h3 id="youcam-also-consider">Also worth a look: YouCam Online Editor</h3>
+<p>YouCam Online Editor sits outside the five ranked tools above, so the ratings and the India billing note in this guide do not cover it. It is a browser-based editor from Perfect Corp, with nothing to download.</p>
+<p>Per YouCam's own site, its Photo Enhancer sharpens blurry photos and upscales to 4K, with batches of up to 50 photos at once. The same editor lists photo repair for scratched or faded prints, colorization for black-and-white photos, and an object remover.</p>
+<p>New users get 5 free credits, and advanced tools run on credits bought individually or through a membership. Check the current plan prices on YouCam's pricing page before you buy. YouCam also says the enhancer can sharpen detail but cannot recover a subject that was never in focus.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['youcam']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try YouCam Online Editor →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center"><a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.</p>
+
 <h2 id="photoroom-vs-topaz">photoroom vs topaz gigapixel: which one actually</h2>
 <p>These two get compared constantly because they represent opposite philosophies. PhotoRoom is workflow-first: upscaling is one feature inside a broader ecommerce editing tool, priced from $7.50/month, with a usable free tier to start.</p>
 <p>Topaz Gigapixel is quality-first. It does one thing, upscaling, better than anything else in this comparison, running locally on your GPU with no per-image cloud dependency. But it costs more and has no free plan at all.</p>
@@ -254,7 +267,7 @@ const post: BlogPost = {
     { url: 'https://www.topazlabs.com/', label: 'Topaz Labs: official site' },
   ],
 
-  wordCount: 2769,
+  wordCount: 2922,
 };
 
 export default post;
