@@ -2365,6 +2365,44 @@ export const TOOLS: Tool[] = [
     ],
     reviewType: 'research-based',
   },
+  {
+    id: 'a6', slug: 'notta',
+    name: 'Notta', tagline: 'AI transcription and meeting notes in 58 languages',
+    description: 'Notta is an AI transcription and meeting-notes service that turns recorded audio, video, live online meetings and in-person conversations into searchable text with summaries. It supports 58 transcription languages, works with Zoom, Google Meet and Microsoft Teams, and adds speaker identification and AI summaries. Translation is included on paid plans, while real-time translation and bilingual transcription are sold as add-ons.',
+    category: Category.AUDIO, affiliateLink: 'https://notta.pxf.io/VOWMzj?utm_source=notta&utm_medium=affiliate',
+    iconName: 'FileAudio', color: '#8b5cf6', accentColor: '#7c3aed',
+    pricing: 'Free (120 min/month) + from $8.17/month billed annually', bestFor: 'Multilingual professionals, students and meeting-heavy users who want a large monthly allowance at a low annual price',
+    ctaText: 'Try Notta Free',
+    features: ['58 transcription languages', 'Zoom, Google Meet and Microsoft Teams meeting capture', 'Speaker identification and AI summaries', 'Upload audio and video files for transcription', 'Translation on paid plans, real-time translation as an add-on'],
+    pros: [
+      'Low entry price: Pro is $8.17/month billed annually for 1,800 transcription minutes a month',
+      'Business removes the monthly minute cap for teams that transcribe heavily',
+      'Covers 58 languages, with translation included on paid plans',
+      'Handles uploaded files and live meeting capture in one account',
+    ],
+    cons: [
+      'The Free plan caps each recording at three minutes and restricts export, so it works only as a demo',
+      'Real-time translation and bilingual transcription cost extra on top of a paid plan',
+      'Several Trustpilot reviewers report being charged for an annual plan after a trial ended, and describe slow or missing refund responses',
+      'Review write-ups note that accuracy drops on poor audio, background noise, strong accents and overlapping speakers',
+    ],
+    notForYou: 'Anyone planning to rely on the Free plan: the three-minute recording cap makes it unusable for real meetings. Also skip it if you need more than 58 languages (Transkriptor lists 100+), or if you would be unable to absorb an unexpected annual charge: read the billing terms before you start any trial and set a reminder before it ends.',
+    lastTestedISO: '2026-10-14',
+    researchSources: {
+      g2: { rating: 4.4, count: 236 },
+      lastVerified: '2026-10-14',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: '120 transcription minutes per month · 3-minute cap per recording · 10 AI summaries per month · limited export' },
+      { tier: 'Pro', price: '$8.17/month billed annually ($97.99/year)', highlight: '1,800 transcription minutes per month · translation included · monthly billing costs more (several listings show about $13.61-$13.99)' },
+      { tier: 'Business', price: '$16.67/seat/month billed annually ($199.99/year)', highlight: 'Unlimited transcription minutes · team features and CRM integrations · monthly billing is listed at about $27.34-$27.99' },
+      { tier: 'Enterprise', price: 'Custom', highlight: 'Negotiated directly with Notta sales · larger deployments' },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: 'Page created from Notta\'s published pricing and product information, 2026 pricing guides and review platforms. No first-hand testing is claimed. Prices vary by region and billing currency, so confirm on notta.ai/pricing.' },
+    ],
+    reviewType: 'research-based',
+  },
 
   // DESIGN
   {
@@ -3400,4 +3438,18 @@ Object.assign(TOOL_FAQS, {
 });
 Object.assign(TOOL_KEYWORDS, {
   youcam: ['youcam online editor review', 'youcam online editor pricing', 'youcam free credits', 'youcam photo enhancer', 'ai photo editor online', 'ai photo upscaler'],
+});
+
+// ── Notta — added Oct 2026, mirrors prerender.mjs TOOL_FAQS ──
+Object.assign(TOOL_FAQS, {
+  notta: [
+    { q: 'Is Notta free?', a: 'Yes, but the free plan is a demo rather than a working tier. It gives 120 transcription minutes a month and 10 AI summaries a month, caps each recording at three minutes and restricts export. To transcribe a full meeting you need a paid plan. Test accuracy on a short clip of your own audio first.' },
+    { q: 'How much does Notta cost?', a: 'Pro is $8.17/month billed annually ($97.99 a year) for 1,800 transcription minutes a month. Business is $16.67/seat/month billed annually ($199.99 a year) with unlimited minutes. Enterprise is custom. Monthly billing costs more, and several 2026 listings show roughly $13.61 to $13.99 for Pro and $27.34 to $27.99 for Business. Real-time translation and bilingual transcription are paid add-ons from about $6/month. Prices vary by region, so confirm on notta.ai/pricing.' },
+    { q: 'How many languages does Notta support?', a: 'Notta lists 58 transcription languages. That is narrower than Transkriptor, which supports 100+ languages, so check that your language is covered and test accuracy on your own recording before paying.' },
+    { q: 'Does Notta work with Zoom, Google Meet and Teams?', a: 'Yes. Notta describes itself as able to schedule and transcribe Zoom, Google Meet and Microsoft Teams meetings, and it also transcribes uploaded audio and video files.' },
+    { q: 'Are there billing complaints about Notta?', a: 'Several Trustpilot reviewers say they were charged for an annual plan after a free trial ended and had trouble getting a refund, while Notta\'s public replies point people to its support email. These are reported experiences that we have not verified. Read the billing terms before starting a trial, set a calendar reminder before it ends, and keep your receipts.' },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  notta: ['notta review', 'notta pricing', 'notta free plan', 'is notta free', 'notta alternatives', 'ai transcription 58 languages'],
 });

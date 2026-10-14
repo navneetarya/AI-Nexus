@@ -29,7 +29,7 @@ const C = {
 // must be added here or its disclosure banner will not render.
 const AFFILIATE_SLUGS = [
   // Added Oct 2026 (Phase 5): tracked-link tools the disclosure banner was missing for (validate_critical_fixes.py)
-  'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence', 'pixverse', 'youcam',
+  'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence', 'pixverse', 'youcam', 'notta',
   'writesonic', 'rytr', 'quillbot', 'frase', 'leonardo-ai', 'photoroom', 'looka',
   'pictory', 'opus-clip', 'invideo', 'murf-ai', 'podcastle', 'gamma', 'beautiful-ai',
   'ocoya', 'replit', 'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',
@@ -1267,6 +1267,23 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
     relatedBlogSlugs: ['best-ai-meeting-tools-2026', 'best-ai-voice-dictation-tools-2026', 'best-ai-podcast-tools-2026'],
     rating: 4.3, lastTested: "September 2026", lastTestedISO: "2026-09-18", datePublished: "2026-09-18", timeUsed: "Researched Sep 2026",
   },
+  notta: {
+    whatIs: "Notta is an AI transcription and meeting-notes service that turns recorded audio, video, live online meetings and in-person conversations into searchable text with summaries. It supports 58 transcription languages, works with Zoom, Google Meet and Microsoft Teams, and adds speaker identification and AI summaries. Translation is included on paid plans, while real-time translation and bilingual transcription are sold as add-ons.",
+    whoIsItFor: "Multilingual professionals, journalists, students and meeting-heavy workers who want a low annual price for a large monthly transcription allowance. Pro's 1,800 minutes (30 hours) a month covers most individual workloads, and teams that need no minute cap can move to Business.",
+    whoShouldSkip: "Anyone planning to rely on the Free plan, because the three-minute recording cap makes it a demo. Also skip it if you need more than 58 languages (Transkriptor lists 100+), or if you could not absorb an unexpected annual charge: several Trustpilot reviewers report being billed for a year after a trial ended.",
+    myTake: "This review synthesises Notta's published pricing and product pages with 2026 pricing guides and review platforms (G2, Trustpilot, Capterra), checked in October 2026. No first-hand testing is claimed.\n\nThe case for Notta is price and allowance. Pro starts at $8.17/month billed annually ($97.99 a year) for 1,800 transcription minutes a month, and Business at $16.67/seat/month billed annually removes the minute cap. It supports 58 transcription languages, which is fewer than Transkriptor's 100+, and it covers both uploaded files and live Zoom, Google Meet and Teams meetings.\n\nThe free plan is a demo. It allows 120 minutes a month but caps each recording at three minutes and restricts export, so it is good for judging accuracy on a short clip and not much else.\n\nThe caution is billing and support. On Trustpilot, several reviewers describe being charged for an annual plan (about $98, or about 83 euros) after a free trial ended and say refund requests went unanswered, while Notta's public replies direct people to its support email. One regional Trustpilot page also shows the company's overall rating as unavailable, so we quote no Trustpilot score. Treat these as reported experiences that we have not verified, and read the billing terms before you start a trial.\n\nOn G2, a comparison page lists Notta at 4.4 out of 5 across 236 reviews. Review write-ups note that accuracy drops on poor audio, background noise, strong accents and overlapping speakers, so judge it on your own worst recording.",
+    useCases: [
+      "Transcribing recorded interviews and lectures into searchable text",
+      "Capturing Zoom, Google Meet and Teams calls without taking notes",
+      "Turning meetings into AI summaries for teammates who missed them",
+      "Working across several languages in one account",
+      "Giving a team an uncapped transcription allowance on the Business plan",
+    ],
+    pricingSection: "**Notta pricing (US figures; prices vary by region and billing currency, so verify on notta.ai/pricing):**\n- Free: $0. 120 transcription minutes per month, 3-minute cap per recording, 10 AI summaries per month, limited export.\n- Pro: $8.17/month billed annually ($97.99 a year) for 1,800 minutes per month. Monthly billing costs more; several listings show about $13.61 to $13.99.\n- Business: $16.67/seat/month billed annually ($199.99 a year) with unlimited minutes, team features and CRM integrations. Monthly billing is listed at about $27.34 to $27.99.\n- Enterprise: custom pricing.\n- Add-ons: real-time translation and bilingual transcription are paid add-ons from about $6/month.\n\nOlder review sites quote different figures, so confirm the current plan table before you pay.",
+    verdict: "A low-cost transcription tool with a generous Pro allowance and 58-language support. Test it on a short clip of your own audio, read the billing terms and set a reminder before any trial ends. Choose Transkriptor instead if you need 100+ languages.",
+    relatedBlogSlugs: ['best-ai-meeting-tools-2026', 'best-ai-transcription-software-2026', 'best-ai-podcast-tools-2026'],
+    rating: 3.8, lastTested: "October 2026", lastTestedISO: "2026-10-14", datePublished: "2026-10-14", timeUsed: "Researched Oct 2026",
+  },
   wegic: {
     whatIs: "Wegic is an AI website builder that works through conversation instead of a drag-and-drop editor. You describe your business, it asks follow-up questions about style and requirements, then generates a responsive multi-page site you keep refining by chat. Sites are mobile-optimised automatically, and the underlying code can be exported.",
     whoIsItFor: "Non-designers who need a professional-looking business site, portfolio or landing page live quickly — freelancers, solopreneurs, small business owners, and agencies wanting a fast first draft for client review. It suits people who would rather describe what they want than learn an editor.",
@@ -1614,6 +1631,7 @@ const TOOL_RADAR: Record<string, [number, number, number, number, number]> = {
   'renderforest':             [4.4, 4.0, 3.7, 3.8, 4.0],
   'pixverse':                 [4.5, 4.1, 4.2, 3.6, 3.2],
   'youcam':                   [4.5, 3.9, 3.4, 3.0, 3.0],
+  'notta':                    [4.3, 3.9, 4.2, 2.5, 2.8],
   'alf-website-studio':       [4.5, 3.7, 4.3, 3.4, 3.6],
   'jetpack-ai-assistant':     [4.4, 3.5, 3.8, 3.0, 3.6],
 };
