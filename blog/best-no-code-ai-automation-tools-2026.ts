@@ -97,8 +97,9 @@ const post: BlogPost = {
 
 
 <h2>What "No-Code AI Automation" Actually Means in 2026 (and What It Doesn't)</h2>
-<div style="margin:14px 0 24px;">
-  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make Free →</a>
+<p style="font-size:12px;opacity:.75;margin:14px 0 6px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
+<div style="margin:6px 0 24px;">
+  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make Free →</a>
 </div>
 <img src="https://images.unsplash.com/photo-1581547848545-a75a2634ba23?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person holding a microphone on a stand while presenting a workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>"No-code AI automation" gets used loosely enough in 2026 marketing copy that it's worth being precise about what it actually buys you. At its core, it means building a working software process: connect this app to that app, run this logic, take this action.</p>
@@ -178,7 +179,7 @@ const post: BlogPost = {
 <h2>9. Relevance AI — Best for No-Code AI Agent Teams</h2>
 <p>Relevance AI uses a structured "Tools + Agents" framework. Tools are individual AI-powered functions, such as searching a CRM, classifying intent, or drafting outreach, and Agents orchestrate Tools together toward a defined goal. This two-layer architecture produces more auditable, repeatable agent behaviour than instruction-only platforms like Lindy, at the cost of more upfront configuration.</p>
 <p>The free tier includes 100 credits per day, enough to build and test a first agent, and the Team plan starts at $19/month. Some teams need to document what an agent is doing and why, a compliance or quality-control requirement in sales and operations contexts. For them, Relevance AI's auditability is the differentiator.</p>
-<p><strong>Best for:</strong> sales and operations teams that need structured, auditable AI agent behaviour rather than a black-box instruction-following agent.</p>
+<p><strong>Best for:</strong> sales and operations teams that need structured, auditable AI agent behaviour rather than a black-box instruction-following agent. <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI →</a></p>
 
 <h2>10. CREAO — Best for Turning a One-Off Prompt into a Reusable Agent</h2>
 <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 10. CREAO — Best for Turning a One-Off Prompt into a Reusable Agent" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />

@@ -48,6 +48,8 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The most genuinely useful free AI plans: <strong>Perplexity</strong> (unlimited searches), <strong>Leonardo.ai</strong> (150 tokens/day), <strong>Grammarly</strong> (unlimited grammar), <strong>Canva</strong> (generous design), <strong>Gamma</strong> (400 AI credits), <strong>Replit</strong> (unlimited projects).</p>
 </div>
 
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
+
 <h2>What Are the Best Free AI Tool Plans in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1619490287893-862fd1808407?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black and silver microphone against a wall" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Six free AI plans stand out in 2026 as truly useful, not just trials in disguise. Perplexity offers unlimited research searches. Leonardo.ai gives 150 free image credits a day. Grammarly checks grammar with no word limit. Canva covers design. Gamma handles AI slides. Replit supports unlimited coding projects.</p>
@@ -142,7 +144,7 @@ const post: BlogPost = {
 <p>For individuals and small businesses producing marketing materials, social media content, and presentations without a designer, Canva free is a complete solution. See our <a href="/tools/canva-ai/" style="color:var(--a1);font-weight:600;">full Canva AI review →</a> for the paid-tier breakdown.</p>
 <p><strong>Best for:</strong> Non-designers who need professional-looking visuals regularly.</p>
 <div style="margin:14px 0 24px;">
-  <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva Free →</a>
+  <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva Free →</a>
 </div>
 
 <h3>5. Gamma: 400 AI Presentation Credits</h3>

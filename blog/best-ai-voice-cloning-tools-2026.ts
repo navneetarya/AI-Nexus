@@ -155,6 +155,8 @@ const post: BlogPost = {
   <li>Smallest sample required: Play.ht, for cloning from just 30 seconds of audio.</li>
 </ol>
 
+<p><strong>Go deeper:</strong> if you produce podcasts, see our <a href="/blog/best-ai-voice-cloning-for-podcasts-2026/" style="color:#0D9488;font-weight:600;">best AI voice cloning for podcasts</a>. To compare what each plan costs side by side, use the <a href="/blog/ai-voice-cloning-pricing-comparison-2026/" style="color:#0D9488;font-weight:600;">AI voice cloning pricing comparison</a>. And to carry a cloned voice into other languages, read our guide to the <a href="/blog/best-ai-dubbing-tools-2026/" style="color:#0D9488;font-weight:600;">best AI dubbing tools</a>.</p>
+
 <h2>Final verdict</h2>
 
 <p>For most people cloning a voice for the first time, ElevenLabs remains the strongest starting point on quality alone. If cloning is a small part of a bigger editing job rather than the whole point, Descript's Overdub saves a separate step. Whichever tool you pick, the consent question matters more than which one you choose.</p>

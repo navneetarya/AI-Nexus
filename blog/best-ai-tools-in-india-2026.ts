@@ -78,6 +78,7 @@ const post: BlogPost = {
   wordCount: 1950,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 <h2>What Are the Best AI Tools in India in 2026?</h2>
 <p>The best AI tools in India in 2026 are Rytr for writing, Grammarly for editing on a forever free plan, and Canva AI for design. Perplexity offers research with cited sources on its free tier, and Leonardo.ai gives free AI image generation. Local payment support and INR billing matter as much as raw features for most of these picks.</p>
 <p>Every one of these works without a dollar card, a VPN, or a hidden USD-only paywall.</p>

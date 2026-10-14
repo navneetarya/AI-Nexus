@@ -83,6 +83,7 @@ const post: BlogPost = {
   wordCount: 1550,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 <h2>What Are the Best Podcastle Alternatives in 2026?</h2>
 <p>The best Podcastle alternative in 2026 is Descript, especially for transcript-based editing. Riverside.fm is the pick if studio-quality remote recording matters most. Adobe Podcast Enhance works if all you need is free AI audio cleanup on top of your existing setup.</p>
 <p><a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a></p>

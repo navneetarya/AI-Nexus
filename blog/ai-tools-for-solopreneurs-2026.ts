@@ -416,6 +416,8 @@ const post: BlogPost = {
 </div>
 <p>The most accessible starting point for Indian solopreneurs combines the two tools that accept UPI and Indian cards directly: Perplexity Pro and Canva AI Pro. Add ChatGPT Go's discounted local tier for research, design, and a thinking partner. The total comes to under ₹3,000/month, before needing a forex card for anything else in the stack.</p>
 
+<p><strong>Go deeper on specific gaps:</strong> if your numbers live in spreadsheets, see the <a href="/blog/best-ai-spreadsheet-tools-2026/" style="color:#0D9488;font-weight:600;">best AI spreadsheet tools</a>. If missed calls cost you clients, compare the <a href="/blog/best-ai-receptionist-small-business-2026/" style="color:#0D9488;font-weight:600;">best AI receptionist for small business</a>. To build a simple app without hiring a developer, read <a href="/blog/emergent-ai-explained-2026/" style="color:#0D9488;font-weight:600;">Emergent AI explained</a>. For the bigger market picture, see the <a href="/blog/ai-ecosystem-growth-report-2026/" style="color:#0D9488;font-weight:600;">AI ecosystem growth report</a>.</p>
+
 <h2>Your 30-Day Rollout Plan: Don't Buy the Whole Stack at Once</h2>
 <p>The single most common AI tooling mistake among new solopreneurs is subscribing to 6–8 tools in the first week of business, before any of them have proven their value against real work. A staged rollout produces a better outcome and a lower bill.</p>
 <ol style="margin:8px 0 24px;padding-left:22px;line-height:1.9;">

@@ -88,7 +88,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Hatchful</strong> by Shopify is the best fully free pick, with no watermarks or account needed. <strong>Looka</strong> makes the top-quality designs but charges (~₹1,650+) to download, and <strong>Leonardo.ai</strong> suits truly unique AI logo art for ₹990/month.</p>
 </div>
 <blockquote style="border-left:3px solid #0D9488;padding:4px 0 4px 16px;margin:0 0 24px;font-style:italic;color:var(--text-secondary,#555);">
-  I ran the same five brief types through all four tools myself, rather than trusting their marketing pages. The real split isn't "which looks best" — it's free-to-design-but-paid-to-download (Looka) versus truly free end to end (Canva, Hatchful). For most Indian freelancers, that gap matters more than any style choice.
+  I compared how all four tools handle five common brief types using vendor documentation, pricing pages and G2/Trustpilot reviews, rather than trusting their marketing pages. The real split isn't "which looks best" — it's free-to-design-but-paid-to-download (Looka) versus truly free end to end (Canva, Hatchful). For most Indian freelancers, that gap matters more than any style choice.
   <footer style="font-style:normal;font-size:13px;margin-top:6px;color:var(--text-muted,#888);">— Navneet Arya, AI Nexus</footer>
 </blockquote>
 

@@ -82,7 +82,7 @@ const post: BlogPost = {
     { url: 'https://www.getapp.com/website-ecommerce-software/a/wegic/', label: 'Wegic listing on GetApp' },
     { url: 'https://bestguide.com/review/wegic/', label: 'Wegic review with pricing notes' },
     { url: 'https://www.b12.io/ai-directory/creao/', label: 'CREAO directory listing with plan details' },
-    { url: 'https://toolquestor.com/vs/creao-vs-lovable', label: 'CREAO vs Lovable plan comparison' },
+    { url: 'https://docs.lovable.dev/introduction/plans-and-credits', label: 'Lovable plans and credits (official docs)' },
   ],
   wordCount: 2000,
   content: `

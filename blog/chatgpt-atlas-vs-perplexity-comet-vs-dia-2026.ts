@@ -8,6 +8,7 @@
 // No affiliate program found for Atlas, Comet, or Dia — CTAs use direct official URLs (rel="noopener", no affiliate disclosure needed).
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'chatgpt-atlas-vs-perplexity-comet-vs-dia-2026',
@@ -80,6 +81,7 @@ const post: BlogPost = {
   ],
   wordCount: 2260,
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 <nav aria-label="Table of contents" style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#6366f1;">Table of Contents</p>
 <div style="overflow-x:auto;margin:16px 0 24px;">
@@ -138,7 +140,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best overall:</strong> Perplexity Comet, with full agentic features free and citation-backed answers.<br><strong>Best for task automation:</strong> ChatGPT Atlas, if you already pay for ChatGPT Plus or higher.<br><strong>Best for Mac power users:</strong> Dia, but read the privacy policy first.<br><strong>Biggest risk:</strong> Comet's known credential-extraction vulnerability (PleaseFix, March 2026).<br><strong>Verdict:</strong> Worth testing, not worth blindly trusting with your logins yet.</p>
 </div>
 <div style="margin:0 0 24px;">
-  <a href="https://www.perplexity.ai/comet?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Comet Free →</a>
+  <a href="https://www.perplexity.ai/comet?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Comet Free →</a>
 </div>
 
 <h2 id="what-is-agentic">What is an agentic browser, and why does it exist now?</h2>
@@ -173,6 +175,9 @@ const post: BlogPost = {
 <h2 id="pricing">Pricing: is any of these worth paying for?</h2>
 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Pricing: is any of these worth paying for?" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Perplexity Comet is the clear value leader on paper. The entire agentic feature set, including unlimited AI search, citations, and cross-tab context, is free. The optional Comet Plus tier is $5/month and only adds premium publisher content (The New York Times, Wired, and similar partners). That's a nice-to-have, not a functional upgrade to the browser itself.</p>
+<div style="margin:6px 0 20px;">
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Pro →</a>
+</div>
 <p>ChatGPT Atlas is free to download and use for basic browsing on any ChatGPT plan. But the feature that really makes it an "agentic browser," Agent Mode, requires Plus ($20/month) or higher.</p>
 <p>If you're already paying for ChatGPT Plus for other reasons, Atlas effectively comes at no extra cost. If you're not, the $20/month is a real ask for a browser.</p>
 <p>Dia's free tier has usage limits, with Dia Pro at $20/month unlocking expanded AI feature access. Dia's platform support is narrower (Apple Silicon Mac only) and its independent review base is thin. That makes it the hardest of the three to justify paying for today. That's especially true unless you're already committed to the Mac-only workflow it's built around.</p>
@@ -272,7 +277,7 @@ const post: BlogPost = {
 <p>For how these underlying models compare on subscription value alone, see <a href="/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/" style="color:#6366f1;">GPT-5.5 vs Claude Opus 4.8 vs Grok 4</a>, and for the free tiers behind Atlas and Comet, see <a href="/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026/" style="color:#6366f1;">ChatGPT Free vs Claude Free vs Gemini Free</a>.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://chatgpt.com/atlas" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ChatGPT Atlas →</a>
-  <a href="https://www.perplexity.ai/comet?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Perplexity Comet →</a>
+  <a href="https://www.perplexity.ai/comet?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Perplexity Comet →</a>
   <a href="https://www.diabrowser.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Dia →</a>
 </div>
 
