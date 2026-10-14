@@ -1211,7 +1211,7 @@ def run_live(site: Site, A: Analyzer, args):
             if re.search(r"pric|plans|buy", u, re.I): price_pages[(s, u)] = labels.get(u, "")
         for l in p.links:
             h = l["href"]
-            if not h.startswith("http") or host_of(h) == own: continue
+            if not h.startswith("http") or host_of(h) == own or "UNDEFINED-AFFILIATE-KEY" in h: continue
             (aff_urls if site.is_affiliate_href(h) else out_urls)[h].add(s)
     for k, u in site.aff_links.items():
         if site.is_tracked(u): aff_urls[u]  # ensure checked even if unused

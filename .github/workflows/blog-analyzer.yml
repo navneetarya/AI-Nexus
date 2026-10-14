@@ -1,0 +1,41 @@
+# Save as .github/workflows/blog-analyzer.yml
+# 1) Every PR touching blog/ or affiliate files: static gate that fails only on NEW critical issues
+#    (uses analyzer-baseline.json, created once with:  python3 blog_analyzer.py --write-baseline analyzer-baseline.json)
+# 2) Every Monday: full live audit (broken links, affiliate-link health, vendor pricing drift) + HTML dashboard artifact
+name: blog-analyzer
+on:
+  pull_request:
+    paths: ["blog/**", "constants.ts", "lib/affiliate-links.ts", "public/**", "blog_analyzer.py"]
+  schedule:
+    - cron: "30 3 * * 1"      # Monday 09:00 IST
+  workflow_dispatch:
+
+jobs:
+  gate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python3 blog_analyzer.py --ci --baseline analyzer-baseline.json --min-score 75
+
+  weekly-live-audit:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: >
+          python3 blog_analyzer.py --live
+          --html analyzer-report.html --json analyzer-report.json
+          --csv analyzer-posts.csv --checklist analyzer-fixes.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: blog-analyzer-report
+          path: |
+            analyzer-report.html
+            analyzer-report.json
+            analyzer-posts.csv
+            analyzer-fixes.md
