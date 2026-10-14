@@ -15,6 +15,8 @@
 // Affiliate links used in this post: Gamma, Beautiful.ai, Canva AI — confirmed, tracked, all via
 // AFFILIATE_LINKS[slug] (constants.ts). Pi (Presentation Intelligence) — Impact/sjv.io link via
 // AFFILIATE_LINKS['presentation-intelligence']. NotebookLM has no affiliate program — linked direct.
+// ── 2026-10-14 revision ── Added an unranked "Also Worth a Look: AiPPT.com" H2 before the verdict (Impact link via
+// AFFILIATE_LINKS['aippt']). Facts from the AiPPT tool page in constants.ts; no dollar prices quoted.
 // Word count: ~1,450 words | Published: 2026-09-22 | Author: Navneet Arya
 
 import { BlogPost } from './types';
@@ -205,6 +207,17 @@ const post: BlogPost = {
 <p><strong>One limitation to plan around:</strong> NotebookLM's native PPTX (PowerPoint) export is newer and less mature than Gamma's, so budget time for a manual cleanup pass on image-heavy decks before sending a client-facing file.</p>
 <p><strong>Pricing:</strong> Completely free, no paid tier at all.</p>
 <p><a href="/blog/best-ai-presentation-tools-2026/" style="color:#6366f1;font-weight:600;">→ See NotebookLM compared against Gamma in the full presentation tools roundup</a></p>
+
+<h2>Also Worth a Look: AiPPT.com</h2>
+<p>AiPPT.com sits outside the four ranked alternatives above, so the comparison table and the verdict do not cover it. It generates a designed deck from a prompt, an uploaded Word or PDF file, a pasted outline or a webpage, and offers three generation modes: Classic (one-shot), Flow (agent-driven) and Visual (image-heavy).</p>
+<p>Its free plan is a one-time allocation of 140 credits, capped at 10 slides per deck, so it works as a test rather than a recurring free tier. Paid plans add monthly credits and larger decks, and a one-time Lifetime plan is also offered. Published dollar prices vary between listings, so confirm them at checkout.</p>
+<p><strong>Worth knowing:</strong> independent reviews of AiPPT.com are scarce, so treat the feature list as the vendor's own description. Our <a href="/tools/aippt/" style="color:#6366f1;font-weight:600;">AiPPT.com review</a> has the plan details, and the <a href="/blog/best-ai-presentation-tools-2026/" style="color:#6366f1;font-weight:600;">full presentation tools roundup</a> places it next to Gamma.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['aippt']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try AiPPT.com Free</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a> - we may earn a commission at no extra cost to you.
+</p>
 
 <h2>The Honest Verdict: Which Gamma Alternative Should You Use?</h2>
 <p><strong>Your main objection to Gamma is the watermark or the $8/month price?</strong> \u2192 <strong>Pi</strong>. It's the closest thing to a direct, cheaper, watermark-free swap-in, with the caveat that its independent review base is still thin.</p>

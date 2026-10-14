@@ -3,6 +3,8 @@
 // Secondary: "fireflies ai review 2026", "otter ai vs fireflies", "best ai meeting recorder 2026", "fathom ai review 2026", "ai transcription tool for meetings"
 // Word count: ~2,200 words | Published: 2026-06-09 | Author: Navneet Arya
 // Affiliate: Fireflies.ai (#1 pick) — https://fireflies.ai/?fpr=navneet89 — 20% recurring commission
+// Notta added Oct 2026 — alternatives list, pricing row and FAQ only (research-based, no testing claims).
+//   Link goes through AFFILIATE_LINKS['notta'] (constants.ts TOOLS entry), never hardcoded.
 // Internal links: /blog/best-ai-tools-for-freelancers-2026 · /blog/taskade-vs-notion-vs-asana-2026 · /blog/best-ai-tools-for-startups-2026 · /tools/fireflies · /compare
 
 import { BlogPost } from './types';
@@ -14,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Meeting Tools 2026 — Ranked & Compared',
   metaDescription: 'Fireflies.ai, Otter.ai & Fathom — best AI meeting tools 2026. Auto-transcription, action items, summaries & pricing. Independent research.',
   datePublished: '2026-06-09',
-  dateModified: '2026-09-20',
+  dateModified: '2026-10-14',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',
@@ -52,6 +54,10 @@ const post: BlogPost = {
     {
       q: 'How accurate is AI meeting transcription in 2026?',
       a: 'Transcription accuracy for clear, single-speaker English audio on Fireflies, Otter, and Fathom is typically above 90% in 2026. Accuracy drops with heavy accents, technical jargon, overlapping speakers, or poor audio quality — all three tools handle these cases better than they did in 2023–2024, but none is perfect. Reviewing the AI summary against the raw transcript for high-stakes meetings (legal, contracts, sensitive HR conversations) is still worth the extra few minutes.',
+    },
+    {
+      q: 'Is Notta a good alternative to Fireflies.ai?',
+      a: 'Notta suits a different buyer. It lists 58 transcription languages, handles uploaded files as well as live Zoom, Google Meet and Teams meetings, and Pro costs $8.17 a month billed annually for 1,800 minutes. Fireflies.ai is stronger for CRM sync and cross-meeting search on team workflows. Notta\'s free plan is a demo with a three-minute cap per recording, and some Trustpilot reviewers report billing and refund problems after trials, so read the terms before you start one. This assessment is research-based, with no first-hand testing.',
     },
   ],
   proscons: {
@@ -316,10 +322,17 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">$59/seat/mo (Business)</td>
       <td style="padding:10px 14px;">Pro+: HubSpot, Salesforce</td>
     </tr>
+    <tr style="border-bottom:1px solid rgba(14,165,233,.08);background:rgba(14,165,233,.03);">
+      <td style="padding:10px 14px;font-weight:600;">Notta</td>
+      <td style="padding:10px 14px;">120 min/mo, 3 min per recording</td>
+      <td style="padding:10px 14px;">$8.17/mo (Pro, annual)</td>
+      <td style="padding:10px 14px;">$16.67/seat/mo (Business, annual)</td>
+      <td style="padding:10px 14px;">Business: CRM integrations</td>
+    </tr>
   </tbody>
 </table>
 </div>
-<p style="font-size:13px;color:#64748b;margin-top:-8px;">All prices shown for annual billing. Monthly billing typically 20–25% higher. Prices verified as of June 2026.</p>
+<p style="font-size:13px;color:#64748b;margin-top:-8px;">All prices shown for annual billing. Monthly billing typically 20–25% higher. Prices verified as of June 2026, except the Notta row, which was added in October 2026 from Notta&apos;s published plans and 2026 pricing guides. Confirm it on notta.ai/pricing before you buy.</p>
 
 <h2 id="pros-cons">Pros &amp; Cons: Top 3 Picks</h2>
 
@@ -390,14 +403,16 @@ const post: BlogPost = {
 
 <h2 id="alternatives">Alternatives to Consider</h2>
 <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Alternatives to Consider" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p>Beyond the top three, two tools are worth evaluating for specific scenarios:</p>
+<p>Beyond the top three, a few more tools are worth evaluating for specific scenarios:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
   <li><strong>Avoma:</strong> The most purpose-built revenue intelligence platform in the AI meeting tools category. Avoma goes beyond transcription and summaries into full conversation intelligence. That includes call scoring, coaching scorecards, deal health tracking, and pipeline risk signals based on what was said (or not said) in sales meetings. It integrates with 20+ CRMs. The Starter plan at $19/seat/month is reasonable, but the full revenue intelligence stack requires the Growth plan at $59/seat/month. Best for scaling sales organisations with a dedicated revenue operations function; overkill for general teams.</li>
   <li><strong>tl;dv:</strong> A strong alternative for asynchronous and globally distributed teams. tl;dv's core differentiator is video highlight clips. You mark key moments during a Zoom or Meet call, and tl;dv generates a shareable short video clip of that segment. This is useful for sending a 90-second summary of a 60-minute meeting to a stakeholder who could not attend. The free plan includes unlimited recordings and transcripts (matching Fathom). Paid plans start at $18/seat/month with HubSpot and Salesforce sync. Less powerful than Fireflies for action item extraction but uniquely useful for video-first teams.</li>
   <li><strong><a href="/tools/transkriptor/" style="color:#0ea5e9;">Transkriptor</a>:</strong> Worth a look if your meeting load spans more than English — it covers 100+ languages, well beyond what most of the tools above prioritise. It also handles standalone audio and video file uploads, not just live meeting capture, which matters if you're transcribing recorded interviews or webinars alongside regular calls. Plans start at $9.99/month, but hours are capped monthly rather than pooled, and multi-speaker overlap needs a manual correction pass.</li>
+  <li><strong><a href="/tools/notta/" style="color:#0ea5e9;">Notta</a>:</strong> A lower-priced option if you transcribe uploaded files and live Zoom, Google Meet or Teams calls in more than English. It lists 58 transcription languages, speaker identification and AI summaries. Pro is $8.17/month billed annually for 1,800 minutes a month, and Business removes the monthly minute cap. Two cautions: the free plan caps each recording at three minutes, so it works as a demo, and some Trustpilot reviewers report being charged for an annual plan after a trial ended. Read the billing terms before you start one. Our view is research-based, with no first-hand testing. See <a href="/compare/notta-vs-transkriptor/" style="color:#0ea5e9;">Notta vs Transkriptor</a> for the direct comparison.</li>
 </ul>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['transkriptor']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Transkriptor →</a>
+  <a href="${AFFILIATE_LINKS['notta']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notta Free →</a>
 </div>
 
 <h2 id="final-verdict">Final Verdict: Best AI Meeting Tools 2026</h2>

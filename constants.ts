@@ -2404,6 +2404,194 @@ export const TOOLS: Tool[] = [
     reviewType: 'research-based',
   },
 
+  // Readdy — added Oct 2026, mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'd8', slug: 'readdy',
+    name: 'Readdy', tagline: 'No-code AI website builder with a visual editor, built-in backend and a lead-capture agent',
+    description: 'Readdy is a no-code AI website builder from Interactive Link PTE. LTD. (readdy.ai). It generates a site from plain-language instructions, templates, screenshots or a reference URL, then lets you refine it in a visual editor. Paid plans add Readdy Backend (databases, functions and forms), custom domain support, publishing with hosting and SSL, and an AI Receptionist that captures leads.',
+    category: Category.DESIGN, affiliateLink: 'https://interactivelinkpteltd.sjv.io/KB3KdN?utm_source=readdy&utm_medium=affiliate',
+    iconName: 'Layout', color: '#0d9488', accentColor: '#0f766e',
+    userBadge: 'Free plan ✓', pricing: 'Free (250 credits/month) + from $15/month billed yearly', bestFor: 'Small businesses and freelancers who want a no-code marketing site with hosting, forms and lead capture built in',
+    ctaText: 'Try Readdy Free',
+    features: ['Generates a site from text, templates, screenshots or a reference URL', 'Visual editor for refining pages after generation', 'Readdy Backend: databases, functions and forms on paid plans', 'Custom domain support and publishing with hosting and SSL', 'AI Receptionist agent that captures leads', 'Agency plans with client management and white-label options'],
+    pros: [
+      'Hosting, custom domain support, forms and a backend sit in the same plan as the builder',
+      'A visual editor means you are not limited to editing by chat prompt',
+      'Accepts a screenshot or reference URL as the starting point, not only a text brief',
+      'Free plan gives 250 credits a month with no payment needed to test the output',
+    ],
+    cons: [
+      'Pricing is credit-based: Readdy lists 25 credits per generation or edit, so the free allowance covers roughly 10 actions a month',
+      'Each extra live site costs $10 a month on the Starter and Pro plans',
+      'Yearly prices ($15 Starter, $24 Pro) are per-month averages for annual billing, so the monthly rates are $25 and $40',
+      'We found no independent review base to check the vendor\'s claims against',
+    ],
+    notForYou: 'Anyone who wants a conventional WordPress workflow, or a product with user accounts and deep application logic: Lovable is the closer fit for that. Also skip it if you cannot budget for credit use, because iterating on a design consumes credits on every edit.',
+    lastTestedISO: '2026-10-14',
+    researchSources: {
+      lastVerified: '2026-10-14',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: '250 credits per month · core website generation · no payment details needed to start' },
+      { tier: 'Starter', price: '$25/month ($15/month on yearly billing)', highlight: '2,500 credits · Readdy Backend · custom domain support · publishing · AI Receptionist · 1 live site (extra sites $10/month)' },
+      { tier: 'Pro', price: '$40/month ($24/month on yearly billing)', highlight: '6,000 credits · higher limits for forms, storage and collaboration · AI SEO Analysis · branded email · 2 live sites' },
+      { tier: 'Agency and Ultimate', price: 'From $80/month ($48/month on yearly billing) up to $1,299/month', highlight: 'More credits, projects and live sites · client management · white-label features on the Agency Pro tiers' },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: 'Page created from Readdy\'s pricing page and plans documentation, checked in October 2026. No first-hand testing is claimed. Plan details change, so verify credits and live-site limits on readdy.ai/pricing before you pay.' },
+    ],
+    reviewType: 'research-based',
+  },
+  // GitMind — added Oct 2026, mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'p15', slug: 'gitmind',
+    name: 'GitMind', tagline: 'AI mind-map maker that turns text, files and links into editable maps',
+    description: 'GitMind is a browser-based mind-mapping tool with AI generation. It builds a mind map from text, a file or a link, supports real-time collaboration, and offers templates for mind maps, flowcharts, org charts and infographics. Maps export to PNG, PDF or text, and individual nodes can carry tasks, notes and priorities.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://gitmindcom.sjv.io/2R0Vqa?utm_source=gitmind&utm_medium=affiliate',
+    iconName: 'Network', color: '#f97316', accentColor: '#ea580c',
+    userBadge: 'Free plan ✓', pricing: 'Free (10 mind maps) + from $4.08/month billed annually', bestFor: 'Students, planners and small teams who want to outline ideas, notes or a deck structure as a mind map',
+    ctaText: 'Try GitMind Free',
+    features: ['AI-generated mind maps from text, files or links', 'Real-time collaboration and commenting', 'Templates for mind maps, flowcharts, org charts and infographics', 'Cloud access in the browser with auto-save and link sharing', 'Export to PNG, PDF or text', 'Tasks, notes and priorities inside nodes'],
+    pros: [
+      'Turns a document, pasted text or a link into a first-draft mind map',
+      'The annual price is low: $4.08/month billed annually',
+      'The free Basic plan has no watermark and covers up to 10 mind maps or whiteboards',
+      'Real-time collaboration makes it usable for group brainstorming and planning',
+    ],
+    cons: [
+      'AI features use credits, and the pricing page does not list the AI allowance, so test it on the free plan first',
+      'Reviewers note limited advanced formatting for complex maps and occasional lag during collaboration',
+      'Monthly billing is $9, more than twice the annual per-month rate',
+      'GitMind says no lifetime plan is offered, and several pricing details need confirming at checkout',
+    ],
+    notForYou: 'Teams that need a full whiteboard and diagramming workspace with heavy layout control: a dedicated whiteboard tool suits that better. Also skip it if you need to know the exact AI allowance before you pay, because GitMind\'s pricing page does not state it.',
+    lastTestedISO: '2026-10-14',
+    researchSources: {
+      lastVerified: '2026-10-14',
+    },
+    pricingBreakdown: [
+      { tier: 'Basic (free)', price: '$0', highlight: 'Up to 10 mind maps or whiteboards · no watermark · regular-format export · 1 planet with up to 5 members' },
+      { tier: 'Monthly', price: '$9/month', highlight: 'Unlimited mind maps and whiteboards · 500 images per mind map · up to 5 planets with 30 members each · HD export · priority support' },
+      { tier: 'Annual', price: '$4.08/month billed annually', highlight: 'Same features as Monthly at the lower annual rate' },
+      { tier: 'Metered licence', price: 'Contact sales', highlight: 'GitMind credits for separate features · no prices listed' },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: 'Page created from GitMind\'s pricing page and a Digital Project Manager review last updated 30 September 2026. No first-hand testing is claimed. AI credit limits are not stated on the pricing page, so verify them before you pay.' },
+    ],
+    reviewType: 'research-based',
+  },
+  // Retouch4me — added Oct 2026, mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'i8', slug: 'retouch4me',
+    name: 'Retouch4me', tagline: 'Professional AI retouching plug-ins that keep skin texture, sold per tool',
+    description: 'Retouch4me sells AI retouching plug-ins for professional photographers, built around Photoshop. Each plug-in does one job: Heal removes blemishes, Skin Tone evens redness, Dodge & Burn smooths skin while keeping texture, and others cover stray hairs, eyes, teeth, fabric and studio backdrops. Most plug-ins are sold individually, and a few tools are free.',
+    category: Category.IMAGE, affiliateLink: 'https://relu0u.pxf.io/OYJDOK?utm_source=retouch4me&utm_medium=affiliate',
+    iconName: 'Image', color: '#a855f7', accentColor: '#7e22ce',
+    userBadge: 'Demos available', pricing: 'Per plug-in, mostly $145 (store prices; some free tools and demos)', bestFor: 'Portrait, wedding and beauty photographers who retouch in Photoshop and want natural-looking skin work',
+    ctaText: 'See Retouch4me',
+    features: ['Single-purpose plug-ins: Heal, Skin Tone, Dodge & Burn, Stray Hairs, Eyes, White Teeth, Fabric, Clean Backdrop', 'Free tools: Apex, Panel for Photoshop and Arams', 'Demo versions available for many paid plug-ins', 'Keeps skin texture and works on layers for easy adjustment', 'On-device processing, with a credit-based cloud option', 'Arams standalone app for culling and batch retouching'],
+    pros: [
+      'Reviewers describe subtle, natural-looking results rather than an over-smoothed look',
+      'Plug-ins are sold per tool, so you buy only the jobs you need',
+      'Many paid plug-ins have a demo, and several tools are free',
+      'Fstoppers reports perpetual licences with free updates, and local processing that keeps files off the cloud',
+    ],
+    cons: [
+      'Cost adds up: most plug-ins are about $145 each, and Fstoppers estimated around $500 for the four tools it considered essential',
+      'Some plug-ins are weaker than others: LensVid found Clean Backdrop and Fabric too weak on bigger problems',
+      'Fstoppers found Face Make can reshape faces strongly, so use it with care',
+      'It is retouching software for existing photos, not a headshot generator or a quick online editor',
+    ],
+    notForYou: 'Casual users who want quick one-off fixes in a browser: YouCam Online Editor suits that better. Also skip it if you want a subscription rather than per-plug-in purchases, or an AI headshot generator, which Retouch4me is not.',
+    lastTestedISO: '2026-10-14',
+    researchSources: {
+      lastVerified: '2026-10-14',
+    },
+    pricingBreakdown: [
+      { tier: 'Free tools', price: '$0', highlight: 'Apex, Panel for Photoshop, Arams, Frequency Separation, Color Match Free and HSL Masking Panel are listed as free' },
+      { tier: 'Individual plug-ins', price: 'Mostly $145 each', highlight: 'Heal, Skin Tone, Stray Hairs, Face Make, Eyes Bundle, Fabric, Portrait Volumes, Mattifier and White Teeth are listed at $145' },
+      { tier: 'Premium plug-ins', price: '$179 each', highlight: 'Dodge & Burn and Clean Backdrop are listed at $179' },
+      { tier: 'Add-ons', price: '$29 to $145', highlight: 'Mask Anything is $29 and Lab (colour grading) is $145' },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: 'Page created from Retouch4me\'s official store page (checked 14 October 2026) and independent reviews by Fstoppers (April 2025) and LensVid (2023, modified October 2026). No first-hand testing is claimed. Store prices change, so verify them before buying.' },
+    ],
+    reviewType: 'research-based',
+  },
+  // WordToSite — added Oct 2026, mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'd9', slug: 'wordtosite',
+    name: 'WordToSite', tagline: 'AI-built, client-ready WordPress sites for agencies and freelancers',
+    description: 'WordToSite describes itself as client-ready WordPress sites, built by AI. You supply your content, and the platform fills in AI-written text and AI-generated images on one of 200 ready-made designs, then publishes a live preview. It is aimed at web studios, agencies and freelancers who need to show a prospective client a finished-looking site quickly.',
+    category: Category.DESIGN, affiliateLink: 'https://wordtosite.sjv.io/2R9k07?utm_source=wordtosite&utm_medium=affiliate',
+    iconName: 'Globe', color: '#2563eb', accentColor: '#1d4ed8',
+    userBadge: 'Free plan ✓', pricing: 'Free (one site, expires after 7 days) + from $12/month', bestFor: 'Agencies and freelancers who need client-ready WordPress site demos and handoffs quickly',
+    ctaText: 'Try WordToSite Free',
+    features: ['200 ready-made designs', 'AI-written text and AI-generated images', 'Live preview URL without setting up hosting first', 'Own domain, DNS and SSL on paid plans', 'Content Bank access on paid plans', 'Plans for one site, five live sites or twenty'],
+    pros: [
+      'A free plan lets you build and preview one live site before paying',
+      'Built for the agency workflow: a finished-looking draft you can show a client',
+      'AI text and images on a ready-made design cut the blank-page step',
+      'Single Site plan starts at $12 a month with your own domain, DNS and SSL',
+    ],
+    cons: [
+      'The free site expires after 7 days and carries a WordToSite badge in the footer',
+      'Extra live sites are billed per day: $0.50 on Single Site, $0.40 on Pro and $0.30 on Business',
+      'It is a narrow fit for someone who only wants to maintain one personal site',
+      'We could not find independent reviews, so this page relies on the vendor\'s own pricing and product pages',
+    ],
+    notForYou: 'Anyone who just wants to run one personal or business site with the broadest feature set: a general builder such as Wix is a closer fit. Also skip it if you need independent review evidence before paying, because we could not find any.',
+    lastTestedISO: '2026-10-14',
+    researchSources: {
+      lastVerified: '2026-10-14',
+    },
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: 'One live site that expires after 7 days · all 200 designs · live preview URL · WordToSite badge in the footer' },
+      { tier: 'Single Site', price: '$12/month', highlight: 'One live site that does not expire · your own domain, DNS and SSL · AI texts and images · designs without platform branding · extra live sites $0.50/day each' },
+      { tier: 'Pro', price: '$49/month', highlight: 'Five live sites · unlimited new sites per month · AI texts and images on every site · extra live sites $0.40/day each' },
+      { tier: 'Business', price: '$99/month', highlight: 'Twenty live sites · everything in Pro · priority support · extra live sites $0.30/day each' },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: 'Page created from WordToSite\'s official pricing and product pages, checked in October 2026. No first-hand testing is claimed. We could not confirm a one-time licence on the pricing page, so none is quoted here.' },
+    ],
+    reviewType: 'research-based',
+  },
+  // signNow — added Oct 2026, mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'p16', slug: 'signnow',
+    name: 'signNow', tagline: 'E-signature service for sending, signing and tracking contracts after AI review',
+    description: 'signNow is an e-signature service for placing signature fields on a document, sending it to the other party and keeping a record of who signed and when. It is not an AI tool and does not review contracts. We list it for the step that follows AI contract review: signing the finished document. It offers a 7-day free trial and no permanent free plan.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://signnow.sjv.io/OYJYXA?utm_source=signnow&utm_medium=affiliate',
+    iconName: 'FileSignature', color: '#0ea5e9', accentColor: '#0369a1',
+    userBadge: '7-day free trial', pricing: '7-day free trial, no permanent free plan; paid plans vary (verify)', bestFor: 'Freelancers and small businesses that send contracts for signature regularly',
+    ctaText: 'Try signNow',
+    features: ['Signature fields placed on a document', 'Sending workflow to the other party', 'Record of who signed and when', 'Suited to contracts finished after AI review', 'Free trial before any paid plan'],
+    pros: [
+      'Covers the signing step that AI contract-analysis tools leave out',
+      'Gives you a record of who signed and when',
+      'A 7-day free trial lets you test the flow with a real contract',
+      'Fits freelancers and small businesses that send contracts regularly',
+    ],
+    cons: [
+      'It is an e-signature service, not an AI tool, and it does not analyse or review contract clauses',
+      'There is no permanent free plan, so occasional signers may find it poor value',
+      'Independent sources disagree on prices, so you must check the official pricing page',
+      'Third-party listings say the free trial excludes some features such as reusable templates and cloud storage, so confirm what the trial includes',
+    ],
+    notForYou: 'Anyone who signs a contract only once or twice a year and wants a permanent free plan: a free signing option may be enough. Also skip it if you want AI clause review, which signNow does not offer; use a contract-analysis tool first.',
+    lastTestedISO: '2026-10-14',
+    researchSources: {
+      lastVerified: '2026-10-14',
+    },
+    pricingBreakdown: [
+      { tier: 'Free trial', price: '7 days', highlight: 'Time-limited trial of the product · no permanent free plan' },
+      { tier: 'Paid plans', price: 'Varies by plan', highlight: 'Independent listings show roughly $8 to $50 a month depending on plan and disagree with each other · verify on the official pricing page' },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: 'Page created from signNow\'s official information and third-party pricing listings, checked in October 2026. No first-hand testing is claimed. Prices are deliberately not quoted because independent sources disagree.' },
+    ],
+    reviewType: 'research-based',
+  },
   // DESIGN
   {
     id: 'd4', slug: 'wegic',
@@ -3452,4 +3640,50 @@ Object.assign(TOOL_FAQS, {
 });
 Object.assign(TOOL_KEYWORDS, {
   notta: ['notta review', 'notta pricing', 'notta free plan', 'is notta free', 'notta alternatives', 'ai transcription 58 languages'],
+});
+
+// ── Readdy, GitMind, Retouch4me, WordToSite, signNow — added Oct 2026, mirrors prerender.mjs TOOL_FAQS ──
+Object.assign(TOOL_FAQS, {
+  readdy: [
+    { q: 'Is Readdy free?', a: 'Yes. Readdy\'s free plan gives 250 credits a month and core website generation. Readdy\'s documentation lists 25 credits per generation or edit, so that is about 10 actions a month. Live publishing with a custom domain needs a paid plan.' },
+    { q: 'How much does Readdy cost?', a: 'Starter is $25/month, or $15/month on yearly billing, for 2,500 credits. Pro is $40/month, or $24/month on yearly billing, for 6,000 credits. Agency and Ultimate tiers run from $80 to $1,299 a month. Verify the current plan table on readdy.ai/pricing before you pay.' },
+    { q: 'What can Readdy build?', a: 'Websites, mainly marketing and small-business sites. It generates from text, templates, screenshots or a reference URL and adds a visual editor, forms and a backend on paid plans. It is not aimed at apps with user accounts and deep logic.' },
+    { q: 'Does Readdy include hosting?', a: 'Paid plans include publishing with hosting and custom domain support, with a limited number of live sites per plan. Extra live sites on Starter and Pro cost $10 a month each.' },
+    { q: 'Readdy or Lovable?', a: 'Choose Readdy for a website with a visual editor, forms and lead capture. Choose Lovable when the project needs user accounts or a database. See our four-way comparison with Wegic and CREAO for the credit limits side by side.' },
+  ],
+  gitmind: [
+    { q: 'Is GitMind free?', a: 'Yes. The free Basic plan allows up to 10 mind maps or whiteboards with no watermark and regular-format export. Paid plans lift the map limit and add HD export and priority support.' },
+    { q: 'How much does GitMind cost?', a: 'Monthly billing is $9 a month and annual billing is $4.08 a month, billed annually, according to GitMind\'s pricing page. GitMind says no lifetime plan is offered. Confirm current prices at checkout.' },
+    { q: 'Can GitMind create a mind map with AI?', a: 'Yes. It can generate a mind map from text, a file or a link. AI features use credits, and the pricing page does not list the allowance, so test it on the free plan.' },
+    { q: 'Can several people edit a GitMind map at once?', a: 'Yes. GitMind supports real-time collaboration and commenting, though reviewers mention occasional lag during collaboration sessions.' },
+    { q: 'What can I export from GitMind?', a: 'Maps export to PNG, PDF or text. The free plan offers regular-format export and paid plans add HD export.' },
+  ],
+  retouch4me: [
+    { q: 'Is Retouch4me free?', a: 'Some tools are free, including Apex, Panel for Photoshop and Arams. Most plug-ins are paid, with demos available for many of them. Trial terms are not stated on the store page.' },
+    { q: 'How much does Retouch4me cost?', a: 'Store prices are mostly $145 per plug-in, with Dodge & Burn and Clean Backdrop at $179. Fstoppers (April 2025) reports perpetual licences with free updates. Prices change, so verify on the store before buying.' },
+    { q: 'Does Retouch4me work in Lightroom?', a: 'The store page we checked tags most plug-ins for Photoshop. Retouch4me\'s own site also lists other host apps, so confirm that the product you want supports your host app before buying.' },
+    { q: 'Is Retouch4me an AI headshot generator?', a: 'No. It retouches photos you have already taken, so it suits photographers rather than people who want a headshot made from selfies.' },
+    { q: 'Retouch4me or YouCam?', a: 'Retouch4me is for photographers who retouch in Photoshop and want per-plug-in control. YouCam Online Editor is a browser tool for quick fixes on a credit system.' },
+  ],
+  wordtosite: [
+    { q: 'Is WordToSite free?', a: 'Yes, but the free plan is a trial. It gives one live site that expires after seven days, access to all 200 designs and a live preview URL, with a WordToSite badge in the footer.' },
+    { q: 'How much does WordToSite cost?', a: 'Single Site is $12/month, Pro is $49/month for five live sites, and Business is $99/month for twenty, all billed monthly. Extra live sites are billed per day. Verify on wordtosite.com/pricing before you pay.' },
+    { q: 'Is WordToSite an AI website builder?', a: 'Yes. It generates AI-written text and AI-generated images on ready-made designs and publishes WordPress sites, with a focus on agencies and freelancers.' },
+    { q: 'Who is WordToSite for?', a: 'Web studios, agencies and freelancers who need to show prospective clients a finished-looking WordPress site quickly. It is a narrower fit for someone maintaining one personal site.' },
+    { q: 'Are there independent reviews of WordToSite?', a: 'We could not find independent reviews, so this page relies on WordToSite\'s own pricing and product pages. Test the free plan before you commit.' },
+  ],
+  signnow: [
+    { q: 'Is signNow free?', a: 'No permanent free plan. signNow offers a 7-day free trial, and independent listings say the trial leaves out some features, so check what it includes before relying on it.' },
+    { q: 'How much does signNow cost?', a: 'Independent sources show roughly $8 to $50 a month depending on plan, and they disagree, so we do not quote a price. Check the official pricing page and whether prices are per user.' },
+    { q: 'Is signNow an AI tool?', a: 'No. It is an e-signature service. It handles signing, not clause review, so pair it with a contract-analysis tool or a lawyer for the review step.' },
+    { q: 'Does signNow review contracts?', a: 'No. It places signature fields, sends the document and keeps a record of who signed and when. Finish your review and negotiation before the document goes out for signature.' },
+    { q: 'Who is signNow for?', a: 'Freelancers and small businesses that send contracts for signature regularly. If you sign once or twice a year, a free signing option may be enough.' },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  readdy: ['readdy review', 'readdy pricing', 'readdy free plan', 'readdy ai website builder', 'readdy alternatives', 'no-code ai website builder'],
+  gitmind: ['gitmind review', 'gitmind pricing', 'gitmind free plan', 'gitmind ai mind map', 'gitmind alternatives', 'ai mind map generator'],
+  retouch4me: ['retouch4me review', 'retouch4me pricing', 'retouch4me plugins', 'retouch4me free', 'ai skin retouching photoshop', 'retouch4me alternatives'],
+  wordtosite: ['wordtosite review', 'wordtosite pricing', 'wordtosite free plan', 'ai wordpress site builder', 'wordtosite alternatives', 'ai website builder for agencies'],
+  signnow: ['signnow review', 'signnow pricing', 'signnow free trial', 'is signnow free', 'signnow alternatives', 'esignature for freelancers'],
 });

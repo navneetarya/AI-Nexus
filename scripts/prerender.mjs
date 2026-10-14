@@ -903,6 +903,56 @@ const TOOLS = [
     reviewBody: 'Notta is an AI transcription and meeting-notes service that turns recorded audio, video, live online meetings and in-person conversations into searchable text with summaries. It supports 58 transcription languages, works with Zoom, Google Meet and Microsoft Teams, and adds speaker identification and AI summaries. Translation is included on paid plans, while real-time translation and bilingual transcription are sold as add-ons. Pro is $8.17/month billed annually for 1,800 transcription minutes a month; Business removes the minute cap. The free plan caps each recording at three minutes, and some Trustpilot reviewers report billing and refund problems after trials, so read the billing terms first. This review is research-based and claims no first-hand testing.',
   },
   {
+    slug: 'readdy', name: 'Readdy', category: 'Design',
+    tagline: 'No-code AI website builder with a visual editor, built-in backend and a lead-capture agent',
+    description: 'Readdy is a no-code AI website builder from Interactive Link PTE. LTD. (readdy.ai). It generates a site from plain-language instructions, templates, screenshots or a reference URL, then lets you refine it in a visual editor. Paid plans add Readdy Backend (databases, functions and forms), custom domain support, publishing with hosting and SSL, and an AI Receptionist that captures leads.',
+    pricing: 'Free (250 credits/month) + from $15/month billed yearly', bestFor: 'Small businesses and freelancers who want a no-code marketing site with hosting, forms and lead capture built in',
+    rating: 3.9, lastTested: 'October 2026',
+    seoTitle: 'Readdy Review 2026: Pricing, Credits & Free Plan | AI Nexus',
+    metaDescription: 'Readdy 2026 review: no-code AI website builder with a visual editor and hosting. Free 250 credits, Starter from $15/month on yearly billing. Limits and fit.',
+    reviewBody: 'Readdy is a no-code AI website builder from Interactive Link PTE. LTD. (readdy.ai). It generates a site from plain-language instructions, templates, screenshots or a reference URL, then lets you refine it in a visual editor. Paid plans add Readdy Backend (databases, functions and forms), custom domain support, publishing with hosting and SSL, and an AI Receptionist that captures leads. A sensible no-code option for a small business site that needs hosting, forms and lead capture in one place. Spend the free credits on one real page, count how many edits you need, then compare the credit cost against a simpler builder. Choose Lovable if the project needs logins or a database, or a WordPress-based builder if you need that workflow.',
+  },
+  {
+    slug: 'gitmind', name: 'GitMind', category: 'Productivity',
+    tagline: 'AI mind-map maker that turns text, files and links into editable maps',
+    description: 'GitMind is a browser-based mind-mapping tool with AI generation. It builds a mind map from text, a file or a link, supports real-time collaboration, and offers templates for mind maps, flowcharts, org charts and infographics. Maps export to PNG, PDF or text, and individual nodes can carry tasks, notes and priorities.',
+    pricing: 'Free (10 mind maps) + from $4.08/month billed annually', bestFor: 'Students, planners and small teams who want to outline ideas, notes or a deck structure as a mind map',
+    rating: 3.8, lastTested: 'October 2026',
+    seoTitle: 'GitMind Review 2026: AI Mind Maps, Pricing & Free Plan | AI Nexus',
+    metaDescription: 'GitMind 2026 review: AI mind maps from text, files and links. Free plan with 10 maps, $4.08/month billed annually. AI credit caveats and who it fits.',
+    reviewBody: 'GitMind is a browser-based mind-mapping tool with AI generation. It builds a mind map from text, a file or a link, supports real-time collaboration, and offers templates for mind maps, flowcharts, org charts and infographics. Maps export to PNG, PDF or text, and individual nodes can carry tasks, notes and priorities. A low-cost mind-mapping tool with a usable free plan and AI generation from text, files or links. Test the AI on the free plan, check the credit rules, and only then take the annual plan. Pick a full whiteboard tool instead if you need detailed diagram control.',
+  },
+  {
+    slug: 'retouch4me', name: 'Retouch4me', category: 'Image',
+    tagline: 'Professional AI retouching plug-ins that keep skin texture, sold per tool',
+    description: 'Retouch4me sells AI retouching plug-ins for professional photographers, built around Photoshop. Each plug-in does one job: Heal removes blemishes, Skin Tone evens redness, Dodge & Burn smooths skin while keeping texture, and others cover stray hairs, eyes, teeth, fabric and studio backdrops. Most plug-ins are sold individually, and a few tools are free.',
+    pricing: 'Per plug-in, mostly $145 (store prices; some free tools and demos)', bestFor: 'Portrait, wedding and beauty photographers who retouch in Photoshop and want natural-looking skin work',
+    rating: 4.1, lastTested: 'October 2026',
+    seoTitle: 'Retouch4me Review 2026: AI Retouching Plugins & Pricing | AI Nexus',
+    metaDescription: 'Retouch4me 2026 review: AI retouching plug-ins for Photoshop, mostly $145 each. Free tools, demos, what reviewers praise and criticise, and who should buy.',
+    reviewBody: 'Retouch4me sells AI retouching plug-ins for professional photographers, built around Photoshop. Each plug-in does one job: Heal removes blemishes, Skin Tone evens redness, Dodge & Burn smooths skin while keeping texture, and others cover stray hairs, eyes, teeth, fabric and studio backdrops. Most plug-ins are sold individually, and a few tools are free. A strong choice for photographers who retouch portraits in Photoshop and want natural-looking results, with demos to test first. It is expensive if you want several plug-ins, and it is not for casual users. Start with the free tools and one demo, and buy only the plug-in that fixes your most repeated problem.',
+  },
+  {
+    slug: 'wordtosite', name: 'WordToSite', category: 'Design',
+    tagline: 'AI-built, client-ready WordPress sites for agencies and freelancers',
+    description: 'WordToSite describes itself as client-ready WordPress sites, built by AI. You supply your content, and the platform fills in AI-written text and AI-generated images on one of 200 ready-made designs, then publishes a live preview. It is aimed at web studios, agencies and freelancers who need to show a prospective client a finished-looking site quickly.',
+    pricing: 'Free (one site, expires after 7 days) + from $12/month', bestFor: 'Agencies and freelancers who need client-ready WordPress site demos and handoffs quickly',
+    rating: 3.7, lastTested: 'October 2026',
+    seoTitle: 'WordToSite Review 2026: AI WordPress Sites & Pricing | AI Nexus',
+    metaDescription: 'WordToSite 2026 review: AI-built, client-ready WordPress sites for agencies. Free 7-day site, Single Site $12/month, Pro $49, Business $99. Limits and fit.',
+    reviewBody: 'WordToSite describes itself as client-ready WordPress sites, built by AI. You supply your content, and the platform fills in AI-written text and AI-generated images on one of 200 ready-made designs, then publishes a live preview. It is aimed at web studios, agencies and freelancers who need to show a prospective client a finished-looking site quickly. A focused tool for agencies and freelancers who sell WordPress sites and want a finished-looking demo fast. Build one test site on the free plan and check the handoff before paying. A general website builder is the better pick if you only need to run one site.',
+  },
+  {
+    slug: 'signnow', name: 'signNow', category: 'Productivity',
+    tagline: 'E-signature service for sending, signing and tracking contracts after AI review',
+    description: 'signNow is an e-signature service for placing signature fields on a document, sending it to the other party and keeping a record of who signed and when. It is not an AI tool and does not review contracts. We list it for the step that follows AI contract review: signing the finished document. It offers a 7-day free trial and no permanent free plan.',
+    pricing: '7-day free trial, no permanent free plan; paid plans vary (verify)', bestFor: 'Freelancers and small businesses that send contracts for signature regularly',
+    rating: 3.6, lastTested: 'October 2026',
+    seoTitle: 'signNow Review 2026: E-Signature Pricing & Free Trial | AI Nexus',
+    metaDescription: 'signNow 2026 review: e-signature service with a 7-day free trial and no permanent free plan. Who it fits, price caveats, and how it follows AI contract review.',
+    reviewBody: 'signNow is an e-signature service for placing signature fields on a document, sending it to the other party and keeping a record of who signed and when. It is not an AI tool and does not review contracts. We list it for the step that follows AI contract review: signing the finished document. It offers a 7-day free trial and no permanent free plan. A practical e-signature step for people who send contracts regularly, best used after you have finished contract review. It is not an AI tool and has no permanent free plan. Use the 7-day trial on a real contract, and check current prices before you subscribe.',
+  },
+  {
     slug: 'wegic', name: 'Wegic', category: 'Design',
     tagline: 'Build a website by chatting with an AI design team',
     description: 'Wegic builds websites through conversation instead of a drag-and-drop editor. Describe the business, answer a few follow-up questions, and it generates a responsive multi-page site you refine by chat — with code export available.',
@@ -1330,6 +1380,41 @@ const TOOL_FAQS = {
     { q: 'Does Notta work with Zoom, Google Meet and Teams?', a: "Yes. Notta describes itself as able to schedule and transcribe Zoom, Google Meet and Microsoft Teams meetings, and it also transcribes uploaded audio and video files." },
     { q: 'Are there billing complaints about Notta?', a: "Several Trustpilot reviewers say they were charged for an annual plan after a free trial ended and had trouble getting a refund, while Notta's public replies point people to its support email. These are reported experiences that we have not verified. Read the billing terms before starting a trial, set a calendar reminder before it ends, and keep your receipts." },
   ],
+  readdy: [
+    { q: 'Is Readdy free?', a: "Yes. Readdy's free plan gives 250 credits a month and core website generation. Readdy's documentation lists 25 credits per generation or edit, so that is about 10 actions a month. Live publishing with a custom domain needs a paid plan." },
+    { q: 'How much does Readdy cost?', a: "Starter is $25/month, or $15/month on yearly billing, for 2,500 credits. Pro is $40/month, or $24/month on yearly billing, for 6,000 credits. Agency and Ultimate tiers run from $80 to $1,299 a month. Verify the current plan table on readdy.ai/pricing before you pay." },
+    { q: 'What can Readdy build?', a: "Websites, mainly marketing and small-business sites. It generates from text, templates, screenshots or a reference URL and adds a visual editor, forms and a backend on paid plans. It is not aimed at apps with user accounts and deep logic." },
+    { q: 'Does Readdy include hosting?', a: "Paid plans include publishing with hosting and custom domain support, with a limited number of live sites per plan. Extra live sites on Starter and Pro cost $10 a month each." },
+    { q: 'Readdy or Lovable?', a: "Choose Readdy for a website with a visual editor, forms and lead capture. Choose Lovable when the project needs user accounts or a database. See our four-way comparison with Wegic and CREAO for the credit limits side by side." },
+  ],
+  gitmind: [
+    { q: 'Is GitMind free?', a: "Yes. The free Basic plan allows up to 10 mind maps or whiteboards with no watermark and regular-format export. Paid plans lift the map limit and add HD export and priority support." },
+    { q: 'How much does GitMind cost?', a: "Monthly billing is $9 a month and annual billing is $4.08 a month, billed annually, according to GitMind's pricing page. GitMind says no lifetime plan is offered. Confirm current prices at checkout." },
+    { q: 'Can GitMind create a mind map with AI?', a: "Yes. It can generate a mind map from text, a file or a link. AI features use credits, and the pricing page does not list the allowance, so test it on the free plan." },
+    { q: 'Can several people edit a GitMind map at once?', a: "Yes. GitMind supports real-time collaboration and commenting, though reviewers mention occasional lag during collaboration sessions." },
+    { q: 'What can I export from GitMind?', a: "Maps export to PNG, PDF or text. The free plan offers regular-format export and paid plans add HD export." },
+  ],
+  retouch4me: [
+    { q: 'Is Retouch4me free?', a: "Some tools are free, including Apex, Panel for Photoshop and Arams. Most plug-ins are paid, with demos available for many of them. Trial terms are not stated on the store page." },
+    { q: 'How much does Retouch4me cost?', a: "Store prices are mostly $145 per plug-in, with Dodge & Burn and Clean Backdrop at $179. Fstoppers (April 2025) reports perpetual licences with free updates. Prices change, so verify on the store before buying." },
+    { q: 'Does Retouch4me work in Lightroom?', a: "The store page we checked tags most plug-ins for Photoshop. Retouch4me's own site also lists other host apps, so confirm that the product you want supports your host app before buying." },
+    { q: 'Is Retouch4me an AI headshot generator?', a: "No. It retouches photos you have already taken, so it suits photographers rather than people who want a headshot made from selfies." },
+    { q: 'Retouch4me or YouCam?', a: "Retouch4me is for photographers who retouch in Photoshop and want per-plug-in control. YouCam Online Editor is a browser tool for quick fixes on a credit system." },
+  ],
+  wordtosite: [
+    { q: 'Is WordToSite free?', a: "Yes, but the free plan is a trial. It gives one live site that expires after seven days, access to all 200 designs and a live preview URL, with a WordToSite badge in the footer." },
+    { q: 'How much does WordToSite cost?', a: "Single Site is $12/month, Pro is $49/month for five live sites, and Business is $99/month for twenty, all billed monthly. Extra live sites are billed per day. Verify on wordtosite.com/pricing before you pay." },
+    { q: 'Is WordToSite an AI website builder?', a: "Yes. It generates AI-written text and AI-generated images on ready-made designs and publishes WordPress sites, with a focus on agencies and freelancers." },
+    { q: 'Who is WordToSite for?', a: "Web studios, agencies and freelancers who need to show prospective clients a finished-looking WordPress site quickly. It is a narrower fit for someone maintaining one personal site." },
+    { q: 'Are there independent reviews of WordToSite?', a: "We could not find independent reviews, so this page relies on WordToSite's own pricing and product pages. Test the free plan before you commit." },
+  ],
+  signnow: [
+    { q: 'Is signNow free?', a: "No permanent free plan. signNow offers a 7-day free trial, and independent listings say the trial leaves out some features, so check what it includes before relying on it." },
+    { q: 'How much does signNow cost?', a: "Independent sources show roughly $8 to $50 a month depending on plan, and they disagree, so we do not quote a price. Check the official pricing page and whether prices are per user." },
+    { q: 'Is signNow an AI tool?', a: "No. It is an e-signature service. It handles signing, not clause review, so pair it with a contract-analysis tool or a lawyer for the review step." },
+    { q: 'Does signNow review contracts?', a: "No. It places signature fields, sends the document and keeps a record of who signed and when. Finish your review and negotiation before the document goes out for signature." },
+    { q: 'Who is signNow for?', a: "Freelancers and small businesses that send contracts for signature regularly. If you sign once or twice a year, a free signing option may be enough." },
+  ],
   'presentation-intelligence': [
     { q: 'Is Presentation Intelligence (Pi) free?', a: "Yes — the free plan is forever free, not a time-limited trial. It includes roughly 40 AI generation credits, custom templates and font uploads, and exports with no watermark. Once those credits run out you either wait for extra credits (earned through referrals, daily login or document sharing) or upgrade to Basic at $9.90/month for unlimited generation." },
     { q: 'How much does Pi cost?', a: "Pi has two public plans: Free ($0, ~40 credits) and Basic at $9.90/month, or $89.90/year, which works out to roughly $7.50/month billed annually. There is no publicly listed team or enterprise tier — larger deployments are handled as custom arrangements on request." },
@@ -1360,6 +1445,20 @@ const TOOL_FAQS = {
 
 // ── Compare articles ──────────────────────────────────────────────────────────
 const COMPARE_ARTICLES = [
+  { // ── notta-vs-transkriptor ── Oct 14 2026 (mirrors pages/compare-data.ts)
+    slug: 'notta-vs-transkriptor',
+    title: "Notta vs Transkriptor (2026): Which AI Transcription Tool Fits Your Audio?",
+    seoTitle: "Notta vs Transkriptor 2026: Which to Pick?",
+    metaDescription: "Notta vs Transkriptor compared for 2026: 58 vs 100+ languages, monthly minute limits, annual vs monthly pricing, free plans and billing cautions.",
+    faqs: [
+      { q: "Is Notta or Transkriptor cheaper?", a: "It depends on billing and volume. On annual billing Notta Pro is $8.17 a month for 1,800 minutes and Transkriptor Pro is $8.33 a month for 2,400 minutes, so Transkriptor is cheaper per hour of audio. On monthly billing Notta Pro is about $13.99 against Transkriptor's $19.99. For heavy team use, Notta Business is $16.67 per seat annually with unlimited minutes." },
+      { q: "Which supports more languages, Notta or Transkriptor?", a: "Transkriptor lists 100+ languages and Notta lists 58. If your audio is in a less common language, check that it is supported on the vendor's own page and test a short clip before paying." },
+      { q: "Does Notta have a free plan?", a: "Yes, but it works as a demo. It gives 120 transcription minutes a month and 10 AI summaries, caps each recording at three minutes and restricts export. To transcribe a full meeting you need a paid plan." },
+      { q: "Are there billing complaints about Notta?", a: "Several Trustpilot reviewers say they were charged for an annual plan after a free trial ended and had trouble getting a refund. These are reported experiences that we have not verified. Read the billing terms, set a reminder before any trial ends and keep your receipts." },
+      { q: "Which is better for team use?", a: "Notta Business is cheaper and uncapped for heavy use at $16.67 per seat a month on annual billing. Transkriptor Team is $20 per user annually and caps each seat at 50 hours a month. Check admin and security needs directly with each vendor." },
+      { q: "Do both join Zoom, Google Meet and Teams meetings?", a: "Yes. Both describe support for Zoom, Google Meet and Microsoft Teams meetings, and both also transcribe uploaded audio and video files. Live meeting minutes come out of the same monthly allowance as uploads." },
+    ],
+  },
   { // ── aippt-vs-presentation-intelligence ── Oct 8 2026
     slug: 'aippt-vs-presentation-intelligence',
     title: "AiPPT vs Pi (Presentation Intelligence) 2026: Which AI Slide Maker Fits?",
@@ -2786,6 +2885,7 @@ const BLOG_POSTS = [
       { q: "Can I use my own domain with these builders?", a: "Usually on a paid plan. Lovable lists custom domains on paid plans, and Readdy lists publishing with a custom domain on Starter. Wegic lists a custom domain on its higher tier. Confirm the exact plan, then see our domain guide for registrar renewal prices." },
       { q: "Do unused credits roll over?", a: "Not always. Lovable says unused monthly plan credits expire two months after they are issued. Wegic credits do not roll over between months according to reviews. Readdy credits refresh each month on monthly plans. Check the rules before you buy a larger bundle." },
       { q: "Can I export the code from these builders?", a: "Sometimes. Lovable supports GitHub export according to our vibe coding guide, and Readdy lists code download on its Starter plan. Wegic reviews describe code export that can use credits. Check the export rules before you build anything you cannot afford to lose." },
+      { q: "Where does Alf Website Studio fit next to these four?", a: "Alf Website Studio is Spaceship's chat-based site builder and sits closest to Wegic. It lists a 30-day free trial and $5 a month with hosting, domain connection and SSL included. It has no code export and does not yet support product-selling sites, so it suits people who already use Spaceship for their domain." },
     ],
   },
   {
@@ -2825,6 +2925,7 @@ const BLOG_POSTS = [
       { q: 'Which provider is most relevant for an India-based website?', a: 'BigRock has India-specific domain and hosting pages with prices shown in rupees, including .com and .in domain offers and hosting plans with India selected. Check the current checkout total, taxes, and renewal terms before purchase.' },
       { q: 'Can I use a domain from one provider with hosting from another?', a: 'Yes. The domain registrar and hosting provider do not have to be the same company. You connect them by changing DNS records or nameservers.' },
       { q: 'What should I check before an AI-built site goes live?', a: 'Check the custom domain, HTTPS, mobile layout, forms, email delivery, analytics, redirects, sitemap, robots settings, contact details, and every AI-generated claim. Publish only after a human verifies the pages and legal information.' },
+      { q: "Does Alf Website Studio include hosting and SSL?", a: "Spaceship lists hosting, domain connection and an SSL certificate as handled automatically on Alf Website Studio, which costs $5 a month after a 30-day free trial. A domain registered elsewhere has to use Spaceship nameservers to get SSL and full functionality, and Alf has no code export or migration path, so confirm those terms before you build." },
     ],
   },
   // —— Sep 26: Best AI Tool Lifetime Deals on AppSumo 2026 — new marketplace/deals content
@@ -2979,7 +3080,7 @@ const BLOG_POSTS = [
     dateModified: '2026-09-22',
     readTimeMinutes: 9,
     ogImage: 'https://ainexustools.online/og/blog/best-gamma-alternatives-2026.webp',
-    mentionedTools: ['gamma', 'beautiful-ai', 'canva-ai', 'presentation-intelligence'],
+    mentionedTools: ['gamma', 'beautiful-ai', 'canva-ai', 'presentation-intelligence', 'aippt'],
     quickAnswer: "Best Gamma AI alternatives in 2026: Pi (Presentation Intelligence) wins on price and free-plan generosity — forever-free with no watermark, and $7.50/month on annual billing undercuts Gamma's $8/month Plus tier. Beautiful.ai wins for teams that need every deck to look consistent regardless of who built it. Canva AI wins if you already pay for Canva. NotebookLM wins if you want slides grounded in documents you actually uploaded, not AI-invented filler.",
     faqs: [
       { q: 'What is the best free Gamma alternative in 2026?', a: "NotebookLM is the only genuinely free option with no paid tier at all — but it builds slides from documents you upload rather than a prompt, so it suits a narrower workflow than Gamma. Among prompt-based tools, Pi (Presentation Intelligence) has the strongest free plan: it's forever-free, not a time-limited trial, and exports with no watermark, which is a real advantage over Gamma's free tier. Gamma's own free plan gives the largest one-time allowance (400 AI credits, roughly 8–15 decks) but every free-tier deck carries a \"Made with Gamma\" watermark until you upgrade." },
@@ -3067,8 +3168,9 @@ const BLOG_POSTS = [
       { q: 'Which transcription tool supports the most languages?', a: 'Transkriptor, at 100+ supported languages, has the broadest stated coverage among the tools compared here. Fireflies.ai supports 30+ languages for meetings. Otter.ai and Descript are strongest in English and a handful of other major languages.' },
       { q: 'Can these tools transcribe Zoom, Teams, or Google Meet calls automatically?', a: 'Transkriptor, Otter.ai, and Fireflies.ai can all join and record live meetings across Zoom, Teams, and Google Meet automatically. Descript and Rev are primarily upload-based, requiring a separate recording step first.' },
       { q: 'Is AI transcription good enough for legal or medical use in 2026?', a: 'Not on its own in most cases. None of the pure-AI options here publish an accuracy guarantee high enough for a defensible legal or medical record. Rev is the exception, offering human review at $1.99/minute specifically for that use case.' },
+      { q: 'How does Notta compare with Transkriptor?', a: "On annual billing the prices are close: Notta Pro is $8.17 a month for 1,800 minutes, and Transkriptor Pro is $8.33 a month for 2,400 minutes. Transkriptor lists 100+ languages against Notta's 58. Notta Business removes the monthly minute cap from $16.67 a seat on annual billing, which can suit heavy team use. Some Trustpilot reviewers report billing and refund problems with Notta after trials, so read its terms first. Both assessments here are research-based." },
     ],
-    mentionedTools: ['transkriptor', 'descript', 'fireflies'],
+    mentionedTools: ['transkriptor', 'descript', 'fireflies', 'notta'],
   },
   // —— Sep 18: Best AI Dubbing Tools 2026 — new category, zero prior overlap on this site ——
   // Target keyword: "best ai dubbing tools 2026" — ElevenLabs is the only affiliate tool in this post;
@@ -3917,6 +4019,7 @@ const BLOG_POSTS = [
       q: 'Do any of these AI website builders offer INR pricing for Indian users?',
       a: 'None of the five publish India-specific INR pricing on their main plans as of this guide\'s research. All five bill in USD by default; Wix and Hostinger both accept major Indian credit and debit cards for USD billing. If local currency billing is a hard requirement, confirm current payment options directly on each tool\'s pricing page before subscribing.',
     },
+      { q: "Is Alf Website Studio worth considering as an AI website builder?", a: "It is worth considering in one narrow case: you already use Spaceship for your domain and want a simple site with hosting, domain connection and SSL bundled into one plan. Spaceship lists a 30-day free trial and then $5 a month. The trade-offs are no code export, no support yet for product-selling sites, and a newer product with a small independent review base." },
     ],
   },
   {
@@ -5103,6 +5206,7 @@ const BLOG_POSTS = [
       { q: 'How does Otter.ai compare to Fireflies.ai in 2026?', a: 'Otter.ai and Fireflies.ai overlap on core features — both transcribe Zoom, Meet, and Teams calls — but differ in focus. Otter.ai\'s strength is real-time live transcription: the transcript appears on-screen as the meeting happens, which is valuable for accessibility, live note-taking, and in-person meetings via mobile. Fireflies.ai\'s strength is post-meeting intelligence: richer AI summaries, better CRM integrations (HubSpot, Salesforce), and a more searchable archive across meetings. For sales and revenue teams, Fireflies delivers more value. For educators, accessibility users, and in-person meetings, Otter.ai has a meaningful edge.' },
       { q: 'Is there a free AI meeting transcription tool in 2026?', a: 'Yes — three tools offer functional free plans for AI meeting transcription. Fireflies.ai\'s free plan includes 800 minutes of meeting storage, transcription credits, and 3 AI summaries per month — enough for occasional use. Otter.ai\'s free plan gives 300 minutes of transcription per month with a 30-minute per-conversation limit — sufficient for short meetings. Fathom offers the most generous free tier: unlimited recordings and transcripts with no time caps for individual users, making it the strongest free option if you don\'t need CRM integrations. All three require no credit card to start.' },
       { q: 'What should I look for in an AI meeting tool in 2026?', a: 'When evaluating AI meeting tools in 2026, prioritise five criteria: (1) Integration coverage — does it auto-join your specific meeting platform (Zoom, Google Meet, Teams, Webex)? (2) Transcription accuracy — especially for accents, technical terminology, and multiple speakers. (3) Action item extraction — does the AI reliably identify named tasks and owners, or just highlight keywords? (4) Search capability — can you find a decision from a meeting 3 months ago by searching a keyword? (5) Pricing model — per-seat fees add up fast for large teams; check whether the free plan covers your realistic monthly meeting volume before committing to a subscription.' },
+      { q: 'Is Notta a good alternative to Fireflies.ai?', a: "Notta suits a different buyer. It lists 58 transcription languages, handles uploaded files as well as live Zoom, Google Meet and Teams meetings, and Pro costs $8.17 a month billed annually for 1,800 minutes. Fireflies.ai is stronger for CRM sync and cross-meeting search on team workflows. Notta's free plan is a demo with a three-minute cap per recording, and some Trustpilot reviewers report billing and refund problems after trials, so read the terms before you start one. This assessment is research-based, with no first-hand testing." },
     ],
   },
   // ── Week 5: best-ai-agents-for-small-business-2026 ───────────────────────
@@ -5741,12 +5845,14 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-website-builders-2026/', 'Best AI Website Builders 2026'],
     ['/blog/launch-an-ai-built-website-2026/', 'How to Launch an AI-Built Website in 2026'],
     ['/blog/domain-renewal-prices-compared-2026/', 'Domain Renewal Prices Compared 2026'],
+    ['/tools/alf-website-studio/', 'Alf Website Studio Review'],
   ],
   'launch-an-ai-built-website-2026': [
     ['/blog/best-ai-website-builders-2026/', 'Best AI Website Builders 2026'],
     ['/blog/best-ai-tools-for-startups-2026/', 'Best AI Tools for Startups 2026'],
     ['/blog/domain-renewal-prices-compared-2026/', 'Domain Renewal Prices Compared 2026'],
     ['/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026/', 'Lovable vs Wegic vs Readdy vs CREAO 2026'],
+    ['/tools/alf-website-studio/', 'Alf Website Studio Review'],
   ],
   // —— Sep 22: Best Gamma AI Alternatives 2026 — links back to the Gamma review, the full
   // presentation-tools roundup, and the Gamma vs Beautiful.ai compare page ——
@@ -5754,6 +5860,7 @@ const BLOG_RELATED_LINKS = {
     ['/blog/gamma-ai-review-2026/', 'Gamma AI Review 2026'],
     ['/blog/best-ai-presentation-tools-2026/', 'Best AI Presentation Tools 2026 — Full Roundup'],
     ['/compare/gamma-vs-beautiful-ai/', 'Gamma vs Beautiful.ai — Full Comparison'],
+    ['/tools/aippt/', 'AiPPT.com Review 2026'],
   ],
 
   // —— Sep 20: Best AI Spreadsheet Tools 2026 — links into the automation roundup (adjacent
@@ -5770,6 +5877,17 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-meeting-tools-2026/', 'Best AI Meeting Tools 2026'],
     ['/blog/best-ai-voice-dictation-tools-2026/', 'Best AI Voice Dictation Tools 2026'],
     ['/tools/transkriptor/', 'Transkriptor Review'],
+    ['/tools/notta/', 'Notta Review'],
+    ['/compare/notta-vs-transkriptor/', 'Notta vs Transkriptor'],
+  ],
+
+  // —— Oct 14: Best AI Meeting Tools 2026 — Notta added to the alternatives list; links to the transcription
+  // roundup, Notta's tool page and the two transcription compare pages ——
+  'best-ai-meeting-tools-2026': [
+    ['/blog/best-ai-transcription-software-2026/', 'Best AI Transcription Software 2026'],
+    ['/tools/notta/', 'Notta Review'],
+    ['/compare/fireflies-vs-transkriptor/', 'Fireflies.ai vs Transkriptor'],
+    ['/compare/notta-vs-transkriptor/', 'Notta vs Transkriptor'],
   ],
 
   // —— Sep 18: Best AI Dubbing Tools 2026 — new category; links to the audio category page,
@@ -5885,6 +6003,7 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-tools-for-freelancers-2026/', 'Best AI Tools for Freelancers 2026'],
     ['/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026/', 'Lovable vs Wegic vs Readdy vs CREAO 2026'],
     ['/blog/domain-renewal-prices-compared-2026/', 'Domain Renewal Prices Compared 2026'],
+    ['/tools/alf-website-studio/', 'Alf Website Studio Review'],
   ],
 
   // ── Day 26 (Aug 2): Best AI Sales Tools for Founders — links to adjacent agents/automation cluster ──
@@ -5906,6 +6025,7 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-headshot-tools-linkedin-2026/', 'Best AI Headshot Tools for LinkedIn 2026'],
     ['/blog/best-nano-banana-pro-alternatives-2026/', 'Best Nano Banana Pro Alternatives 2026'],
     ['/blog/best-ai-ad-creative-generator-tools-2026/', 'Best AI Ad Creative Generator Tools 2026'],
+    ['/tools/retouch4me/', 'Retouch4me Review 2026'],
   ],
 
   // ── Day 23 (Jul 30): Best AI Ad Creative Generator Tools — links to adjacent marketing/creative cluster ──

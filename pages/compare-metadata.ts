@@ -10,6 +10,15 @@ export interface CompareArticleMeta {
 
 export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
+    "slug": "notta-vs-transkriptor",
+    "title": "Notta vs Transkriptor (2026): Which AI Transcription Tool Fits Your Audio?",
+    "seoTitle": "Notta vs Transkriptor 2026: Which to Pick?",
+    "metaDescription": "Notta vs Transkriptor compared for 2026: 58 vs 100+ languages, monthly minute limits, annual vs monthly pricing, free plans and billing cautions.",
+    "keyword": "notta vs transkriptor",
+    "publishDate": "October 2026",
+    "winnerName": "Transkriptor"
+  },
+  {
     "slug": "aippt-vs-presentation-intelligence",
     "title": "AiPPT vs Pi (Presentation Intelligence) 2026: Which AI Slide Maker Fits?",
     "seoTitle": "AiPPT vs Pi (Presentation Intelligence) 2026",

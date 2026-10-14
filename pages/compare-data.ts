@@ -72,6 +72,88 @@ export interface CompareRow {
 
 export const COMPARE_ARTICLES: CompareArticle[] = [
 
+  // ── notta-vs-transkriptor ─────────────────────────────────────────────────────────
+  // Both tools have dedicated tool pages (constants.ts). Links go through AFFILIATE_LINKS[...].
+  // Figures come from the Notta and Transkriptor tool pages (constants.ts), checked 2026-10-14. Notta prices are from
+  // 2026 pricing guides, not a direct read of notta.ai/pricing: confirm there. No first-hand testing is claimed.
+  // NOTE: pages/../scripts/prerender.mjs reads `slug: '...'` and `lastUpdated: '...'` with single quotes: keep that style.
+  {
+    slug: 'notta-vs-transkriptor',
+    title: "Notta vs Transkriptor (2026): Which AI Transcription Tool Fits Your Audio?",
+    seoTitle: "Notta vs Transkriptor 2026: Which to Pick?",
+    metaDescription: "Notta vs Transkriptor compared for 2026: 58 vs 100+ languages, monthly minute limits, annual vs monthly pricing, free plans and billing cautions.",
+    keyword: "notta vs transkriptor",
+    publishDate: 'October 2026',
+    lastUpdated: '2026-10-14',
+    quickAnswer: "Transkriptor is the better default for most individuals: annual Pro is $8.33 a month for 2,400 minutes against Notta's $8.17 for 1,800, and it lists 100+ languages to Notta's 58. Notta suits heavy team use, as Business removes the minute cap from $16.67 a seat. Read Notta's billing terms before any trial.",
+    intro: "Both tools turn recordings and live meetings into searchable text with speaker labels and AI summaries, and both sell it as a subscription with a monthly minute allowance. On paper they look alike. The differences that matter are the size of that allowance, the number of languages, and how each company handles billing after a trial.\n\nEverything below uses the figures on our own tool pages ([Notta review](/tools/notta/) and [Transkriptor review](/tools/transkriptor/)), which draw on each vendor's published pricing and independent review platforms, with the arithmetic worked out. No first-hand testing is claimed for either tool, and Notta's prices should be confirmed on notta.ai/pricing before you pay.",
+    sections: [
+      {
+        heading: "The real difference: allowance, languages and billing risk",
+        content: "Notta and Transkriptor price almost identically on annual billing, so the choice rests on what you get for that money. Notta Pro is $8.17 a month billed annually ($97.99 a year) for 1,800 transcription minutes, which is 30 hours. Transkriptor Pro is $8.33 a month billed annually ($99.99 a year) for 2,400 minutes, which is 40 hours. For about two dollars more a year, Transkriptor gives you a third more audio.\n\nLanguage coverage differs too. Notta lists 58 transcription languages, and Transkriptor lists 100+. If your recordings are in a less common language, check that it is supported before you compare prices at all.\n\nThe third difference is risk rather than features. Several Trustpilot reviewers describe being charged for an annual Notta plan after a free trial ended and struggling to get a refund. We have not verified those reports. The criticism recorded on our Transkriptor page is about editor correction passes, not billing, though that is a summary and not a guarantee, so read recent reviews of both.",
+      },
+      {
+        heading: "Notta: a large allowance at a low annual price",
+        content: "Notta handles uploaded audio and video files and live Zoom, Google Meet and Microsoft Teams meetings in one account, adding speaker identification and AI summaries. Translation is included on paid plans, while real-time translation and bilingual transcription are paid add-ons from about $6 a month.\n\n**Plans:** Free is $0 for 120 minutes a month, capped at three minutes per recording, with 10 AI summaries a month and limited export. Pro is $8.17 a month billed annually for 1,800 minutes. Business is $16.67 per seat a month billed annually with unlimited transcription minutes, team features and CRM integrations. Enterprise is custom.\n\n**Where it is weaker:** The free plan is a demo, because a three-minute cap cannot cover a real meeting. Review write-ups also note that accuracy drops on poor audio, background noise, strong accents and overlapping speakers. A comparison page lists Notta at 4.4 out of 5 on G2 from 236 reviews.",
+      },
+      {
+        heading: "Transkriptor: more languages and more minutes on Pro",
+        content: "Transkriptor sells transcription time. You upload audio or video, or use its meeting bot on Zoom, Google Meet and Microsoft Teams, and the minutes come out of a monthly allowance. It lists 100+ languages, speaker separation, timestamps, subtitle export and an AI chat layer over finished transcripts.\n\n**Plans:** Lite is $9.99 a month for 300 minutes (five hours). Pro is $19.99 monthly, or $8.33 a month billed annually, for 2,400 minutes (40 hours) with AI summaries. Team is $30 per user monthly, or $20 billed annually, with 3,000 minutes (50 hours) per seat.\n\n**Where it is weaker:** Unused minutes expire after a month, and reviewers report that the editor needs manual correction passes, especially with overlapping speakers, heavy accents and noisy audio.",
+      },
+      {
+        heading: "The price comparison depends on how you pay",
+        content: "Take each tool's mid-tier plan.\n\n**Billed annually:** Notta Pro is $8.17 a month for 1,800 minutes, about 27 cents per audio hour if you use the whole allowance ($8.17 divided by 30). Transkriptor Pro is $8.33 for 2,400 minutes, about 21 cents per hour ($8.33 divided by 40). Notta is 16 cents a month cheaper in total, but Transkriptor is cheaper per hour of audio.\n\n**Billed monthly:** Notta Pro is listed at about $13.61 to $13.99 across 2026 listings, roughly 45 to 47 cents per hour. Transkriptor Pro is $19.99, about 50 cents per hour. Notta costs about $6 less a month and is slightly cheaper per hour.\n\n**Teams:** Notta Business is $16.67 per seat on annual billing, and listings show about $27.34 to $27.99 monthly, with unlimited minutes. Transkriptor Team is $20 per user annually and $30 monthly, capped at 50 hours a seat. For heavy team use, Notta is cheaper and uncapped, which is where it clearly wins.",
+      },
+      {
+        heading: "Free plans: what you can actually test",
+        content: "Neither free plan is a working tier for real meetings. Notta's gives 120 minutes a month but caps each recording at three minutes, so you can only judge accuracy on a short clip. Transkriptor's own material names a 90-minute free plan, though its terms are not spelled out on the pricing page, so treat that as unconfirmed.\n\nIf you want to test on a full-length recording, Transkriptor's trial looks more promising on paper. Whichever you try, use your own worst audio, because accuracy is where every transcription tool varies most and neither vendor's claims were independently verified here.",
+      },
+      {
+        heading: "Billing and trust: read this before starting a trial",
+        content: "Notta's complaint pattern is specific. Reviewers say a free trial turned into an annual charge of about $98 (or about 83 euros) and that refund requests went unanswered, while Notta's public replies point people to its support email. These are reported experiences that we have not verified. One regional Trustpilot page also shows the company's overall rating as unavailable, so we quote no Trustpilot score for Notta.\n\nThe practical protection is simple. Read the billing terms before you enter a card, set a calendar reminder for the day before any trial ends, screenshot the plan you selected, and consider monthly billing for the first month so a mistake costs about $14 instead of $98. Our Transkriptor page records a Trustpilot score of 4.5 from 1,510 reviews, checked in September 2026, but the same precautions apply to any subscription.",
+      },
+      {
+        heading: "What we could not verify",
+        content: "We did not test either tool. Notta's prices come from 2026 pricing guides and its published information rather than a direct read of its pricing page, and listings disagree on the monthly figures, so confirm them on notta.ai/pricing before paying. Independent accuracy comparisons between the two were not available, and neither vendor's accuracy claims were verified. Privacy and compliance terms were not reviewed for Notta, so check each vendor's security documentation before using either for sensitive recordings.",
+      },
+    ],
+    verdict: "Choose Transkriptor if you are an individual or a small group transcribing files and meetings, especially in languages beyond Notta's 58. On annual billing it gives 40 hours a month for about the same money as Notta's 30, and the criticism recorded on our tool page is about editor corrections rather than billing.\n\nChoose Notta if you have a heavy team workload and want Business's unlimited minutes at $16.67 a seat on annual billing, or if you prefer the lower monthly-billed price. Read its billing terms before you start any trial.\n\nIf you cannot decide, run the same short clip through both free plans and compare the output. Notta's three-minute cap is enough for that test, and the result will tell you more than the price table.",
+    comparisonTable: [
+      { name: "Notta", price: "Free + $8.17 to $27.99/seat/mo", priceUSD: "Free to $28", freeplan: true, aiContent: "Transcripts, AI summaries, speaker identification, translation on paid plans", platforms: "Zoom, Google Meet, Teams, file upload", bestFor: "Heavy team volume and low-cost multilingual use", ourPick: false },
+      { name: "Transkriptor", price: "Free trial + $8.33 to $30/mo", priceUSD: "Free to $30", freeplan: true, aiContent: "File and meeting transcription, AI summary and chat (Pro and up)", platforms: "Web, iOS, Android", bestFor: "Individuals and small groups, 100+ languages", ourPick: true },
+    ],
+    winnerSlug: 'transkriptor',
+    winnerName: "Transkriptor",
+    winnerAffiliateLink: AFFILIATE_LINKS['transkriptor'],
+    winnerAffiliateText: "Try Transkriptor",
+    pricing: {
+      tools: [
+        { name: "Notta", free: true, startingPrice: "$0", paidFrom: "$8.17/mo (Pro, annual) or about $13.99 monthly", bestPlanFor: "Heavy team volume (Business, unlimited minutes)", affiliateLink: AFFILIATE_LINKS['notta'] },
+        { name: "Transkriptor", free: true, startingPrice: "$0 (limited trial)", paidFrom: "$8.33/mo (Pro, annual) or $19.99 monthly", bestPlanFor: "Individuals within 40 hours a month", affiliateLink: AFFILIATE_LINKS['transkriptor'] },
+      ],
+    },
+    faqs: [
+      { q: "Is Notta or Transkriptor cheaper?", a: "It depends on billing and volume. On annual billing Notta Pro is $8.17 a month for 1,800 minutes and Transkriptor Pro is $8.33 a month for 2,400 minutes, so Transkriptor is cheaper per hour of audio. On monthly billing Notta Pro is about $13.99 against Transkriptor's $19.99. For heavy team use, Notta Business is $16.67 per seat annually with unlimited minutes." },
+      { q: "Which supports more languages, Notta or Transkriptor?", a: "Transkriptor lists 100+ languages and Notta lists 58. If your audio is in a less common language, check that it is supported on the vendor's own page and test a short clip before paying." },
+      { q: "Does Notta have a free plan?", a: "Yes, but it works as a demo. It gives 120 transcription minutes a month and 10 AI summaries, caps each recording at three minutes and restricts export. To transcribe a full meeting you need a paid plan." },
+      { q: "Are there billing complaints about Notta?", a: "Several Trustpilot reviewers say they were charged for an annual plan after a free trial ended and had trouble getting a refund. These are reported experiences that we have not verified. Read the billing terms, set a reminder before any trial ends and keep your receipts." },
+      { q: "Which is better for team use?", a: "Notta Business is cheaper and uncapped for heavy use at $16.67 per seat a month on annual billing. Transkriptor Team is $20 per user annually and caps each seat at 50 hours a month. Check admin and security needs directly with each vendor." },
+      { q: "Do both join Zoom, Google Meet and Teams meetings?", a: "Yes. Both describe support for Zoom, Google Meet and Microsoft Teams meetings, and both also transcribe uploaded audio and video files. Live meeting minutes come out of the same monthly allowance as uploads." },
+    ],
+    featureRows: [
+      { feature: "Free plan", toolA: "120 min/month, 3-minute cap per recording, 10 AI summaries", toolB: "\"Free - 90 Minutes\" plan named in FAQ; terms unconfirmed", winner: 'tie' },
+      { feature: "Mid-tier price (billed annually)", toolA: "Pro $8.17/mo", toolB: "Pro $8.33/mo", winner: 'A' },
+      { feature: "Mid-tier price (billed monthly)", toolA: "Pro about $13.61 to $13.99", toolB: "Pro $19.99", winner: 'A' },
+      { feature: "Monthly allowance on mid tier", toolA: "1,800 min (30 hours)", toolB: "2,400 min (40 hours)", winner: 'B' },
+      { feature: "Cost per audio hour (annual, full use)", toolA: "About 27 cents", toolB: "About 21 cents", winner: 'B' },
+      { feature: "Languages", toolA: "58", toolB: "100+", winner: 'B' },
+      { feature: "Live meeting bot", toolA: "Zoom, Meet, Teams", toolB: "Zoom, Meet, Teams", winner: 'tie' },
+      { feature: "Team plan (billed annually)", toolA: "Business $16.67/seat, unlimited minutes", toolB: "Team $20/user, 50 hours per seat", winner: 'A' },
+      { feature: "Billing and refund reports", toolA: "Trustpilot reviewers report trial-to-annual charges (unverified)", toolB: "Tool page records 4.5/5 from 1,510 reviews; editor complaints", winner: 'B' },
+      { feature: "Best for", toolA: "Heavy team volume", toolB: "Individuals and small groups", winner: 'tie' },
+    ],
+  },
+
   // ── aippt-vs-presentation-intelligence ─────────────────────────────────────────────────────────
   // Both tools have dedicated tool pages (constants.ts). Links go through AFFILIATE_LINKS[...].
   // Figures read from the vendors' own pages on 2026-10-08 (see section text for what could not be verified).

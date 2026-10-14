@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Lovable vs Wegic vs Readdy vs CREAO (2026)',
   metaDescription: 'Lovable, Wegic, Readdy and CREAO compared on what each builds, current plan prices, credit limits and who each suits. Pricing checked October 2026.',
   datePublished: '2026-10-09',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-14',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '9 min read',
@@ -53,6 +53,10 @@ const post: BlogPost = {
     {
       q: 'Can I export the code from these builders?',
       a: 'Sometimes. Lovable supports GitHub export according to our vibe coding guide, and Readdy lists code download on its Starter plan. Wegic reviews describe code export that can use credits. Check the export rules before you build anything you cannot afford to lose.',
+    },
+    {
+      q: 'Where does Alf Website Studio fit next to these four?',
+      a: 'Alf Website Studio is Spaceship\'s chat-based site builder and sits closest to Wegic. It lists a 30-day free trial and $5 a month with hosting, domain connection and SSL included. It has no code export and does not yet support product-selling sites, so it suits people who already use Spaceship for their domain.',
     },
   ],
   proscons: {
@@ -99,7 +103,7 @@ const post: BlogPost = {
 </tbody></table></div>
 <img src="/images/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026/which-builder-for-which-job.svg" alt="Summary card showing which AI builder suits which job" width="640" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:14px 0 20px;border-radius:12px;" />
 <h3>How this was researched</h3>
-<p>AI Nexus did not run hands-on builds with these tools for this guide. Lovable and Readdy figures come from their own pricing pages and documentation where readable. Wegic and CREAO figures come from dated third-party listings, and they conflict, so ranges are shown.</p>
+<p>AI Nexus did not run hands-on builds with these tools for this guide. Lovable and Readdy figures come from their own pricing pages and documentation where readable. Wegic and CREAO figures come from dated third-party listings, and they conflict, so ranges are shown. The Alf Website Studio figures come from our Alf review, which was checked against Spaceship's own product page and knowledge base.</p>
 
 <h2>What each tool actually builds</h2>
 <h3>Lovable: full-stack apps with a database and logins</h3>
@@ -124,6 +128,11 @@ const post: BlogPost = {
 <p>CREAO is not a website builder. You describe a task, it runs the work in a sandbox, and you can save a good result as a reusable agent. See the <a href="/tools/creao-ai/" style="color:var(--a1);font-weight:600;">CREAO review</a> for the details.</p>
 <p>The free plan lists 30 credits a month with no card. Pro is listed at $20 or $25 a month depending on the source, with 250 credits at the higher figure. The review base is small, so test it on low-risk tasks first.</p>
 <div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['creao-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try CREAO Free</a></div>
+
+<h3>Also worth knowing: Alf Website Studio, with hosting bundled</h3>
+<p>Alf Website Studio is Spaceship's chat-based site builder, and it sits closest to Wegic. You brief Alf the way you would brief a web developer, it drafts the copy, branding and images, and you refine by chat or in a visual editor. Our <a href="/tools/alf-website-studio/" style="color:var(--a1);font-weight:600;">Alf review</a> has the detail.</p>
+<p>Spaceship lists a 30-day free trial and then $5 a month, with hosting, domain connection and an SSL certificate handled automatically. The trade-offs are no code export, no support yet for product-selling sites, and a requirement to use Spaceship nameservers if your domain is registered elsewhere. See <a href="/compare/wegic-vs-alf-website-studio/" style="color:var(--a1);font-weight:600;">Wegic vs Alf Website Studio</a> for the lock-in comparison.</p>
+<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['alf-website-studio']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Alf Website Studio</a></div>
 
 <h2>What the free plans give you</h2>
 <p>Free plans are enough to judge the workflow. They are rarely enough to ship a finished project.</p>
@@ -151,6 +160,7 @@ const post: BlogPost = {
   <li><strong>Choose Lovable</strong> if your project needs user accounts, stored data or app logic, not only pages.</li>
   <li><strong>Choose Wegic</strong> if you want a simple business site drafted by chat with no editor to learn.</li>
   <li><strong>Choose Readdy</strong> if you want a site with a visual editor, forms and a chat or voice lead-capture agent.</li>
+  <li><strong>Choose Alf Website Studio</strong> if you already use Spaceship for domains and want hosting, domain connection and SSL bundled into one $5 a month plan.</li>
   <li><strong>Choose CREAO</strong> if the goal is an agent or a repeatable workflow, not a public website.</li>
   <li><strong>Choose a traditional builder</strong> if you need a full online store. See our <a href="/blog/best-ai-website-builders-2026/" style="color:var(--a1);font-weight:600;">AI website builder roundup</a>.</li>
 </ul>

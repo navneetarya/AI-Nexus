@@ -9,7 +9,7 @@
 //   and bury the two things normal people actually search for: fixing a product photo or fixing an old photo.
 //   Calls out the pricing trap this category hides: Topaz killed its one-time $99 perpetual license in
 //   September 2025 and moved fully to subscriptions — a real shift most competing roundups don't lead with.
-// Internal links: /best-ai-image-tools, /tools/photoroom, /tools/youcam/, /blog/best-ai-headshot-tools-linkedin-2026
+// Internal links: /best-ai-image-tools, /tools/photoroom, /tools/youcam/, /tools/retouch4me/, /blog/best-ai-headshot-tools-linkedin-2026
 // Word count: ~2,922 words | Published: 2026-07-31 | Author: Navneet Arya
 // PhotoRoom — affiliate link: https://photoroom.com?via=ainexus (existing program)
 // Let's Enhance and Topaz Labs both run real affiliate programs (20–30% recurring) that AI Nexus has not
@@ -18,6 +18,8 @@
 // ── 2026-10-13 revision ── Added an unranked "Also worth a look" H3 for YouCam Online Editor (Impact affiliate,
 //   AFFILIATE_LINKS['youcam']). Facts taken from yce.perfectcorp.com on 2026-10-13; plan prices deliberately NOT quoted
 //   (no current official price table found). Kept outside the five ranked tools so scores and the India-billing claim stay accurate.
+// ── 2026-10-14 revision ── Added an unranked "Also worth a look" H3 for Retouch4me (Impact affiliate, AFFILIATE_LINKS['retouch4me']).
+//   It is a retouching tool, not an upscaler, and the section says so. Store prices read 2026-10-14.
 
 import { BlogPost } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
@@ -235,6 +237,15 @@ const post: BlogPost = {
 <p>New users get 5 free credits, and advanced tools run on credits bought individually or through a membership. Check the current plan prices on YouCam's pricing page before you buy. YouCam also says the enhancer can sharpen detail but cannot recover a subject that was never in focus. Our <a href="/tools/youcam/" style="color:#0ea5e9;font-weight:600;">YouCam Online Editor review</a> covers the full toolset and the open pricing questions.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['youcam']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try YouCam Online Editor →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center"><a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.</p>
+
+<h3 id="retouch4me-also-consider">Also worth a look: Retouch4me (for retouching, not upscaling)</h3>
+<p>Retouch4me is not an upscaler, and it sits outside the five ranked tools, so the ratings above do not cover it. It sells AI retouching plug-ins for professional photographers, built around Photoshop. Each plug-in does one job, such as blemish removal, evening out skin tone, or cleaning up stray hairs.</p>
+<p>It fits a different problem from the tools above. If your photo is too small or blurry, use one of the upscalers. If a portrait is already sharp and you need skin cleanup, Retouch4me is the closer match. Reviewers at Fstoppers and LensVid describe subtle, natural-looking results, and also describe the cost as the main drawback.</p>
+<p>Most plug-ins are listed at $145 each on Retouch4me's store, with a few free tools and demos for many of the paid ones. Check current prices and licence terms before you buy. Our <a href="/tools/retouch4me/" style="color:#a855f7;font-weight:600;">Retouch4me review</a> covers the plug-ins, prices and reviewer criticism.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['retouch4me']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See Retouch4me →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center"><a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.</p>
 

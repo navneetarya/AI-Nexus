@@ -56,29 +56,25 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   'spaceship-email': 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2Fbusiness-email&utm_source=spaceship-email&utm_medium=affiliate', // Spacemail business email
   automattic: 'https://automattic.pxf.io/3k0mxk?utm_source=automattic&utm_medium=affiliate', // Impact — WordPress.com / Pressable hosting; Jetpack AI Assistant has its own tool page in constants.ts
   // Added Sep 29 2026 — website-creation + domain/hosting/SSL programs (all Impact).
-  // No dedicated tool pages yet: Readdy + WordToSite target the website-builder posts;
-  // the four domain/hosting/SSL programs are meant for one combined "launch your site" article.
-  wordtosite: 'https://wordtosite.sjv.io/2R9k07?utm_source=wordtosite&utm_medium=affiliate',
-  readdy: 'https://interactivelinkpteltd.sjv.io/KB3KdN?utm_source=readdy&utm_medium=affiliate', // Interactive Link PTE. LTD. (readdy.ai)
+  // Readdy and WordToSite now have tool pages, so their links live in constants.ts TOOLS (AFFILIATE_LINKS['readdy'] / ['wordtosite']).
+  // The four domain/hosting/SSL programs are meant for one combined "launch your site" article.
   bigrock: 'https://bigrock-in.sjv.io/3krA0M?utm_source=bigrock&utm_medium=affiliate',
   'domain-com': 'https://domain.mno8.net/vDqz6v?utm_source=domain-com&utm_medium=affiliate', // mno8.net — now covered by scripts/check-affiliate-links.mjs
   'network-solutions': 'https://network-solutions.7eer.net/yZQg63?utm_source=network-solutions&utm_medium=affiliate',
   ssls: 'https://ssls.sjv.io/m4VRyM?utm_source=ssls&utm_medium=affiliate',
   // Added Sep 30 2026 (Impact). SITE123 is positioned as a simple drag-and-drop builder, not an AI builder.
   site123: 'https://site123ltd.sjv.io/enPqkZ?utm_source=site123&utm_medium=affiliate',
-  gitmind: 'https://gitmindcom.sjv.io/2R0Vqa?utm_source=gitmind&utm_medium=affiliate',
+  // GitMind now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['gitmind']).
   // Added Oct 8 2026 (Impact). Esimatic is a travel eSIM app, off-niche for an AI tools site: use only as a
   // contextual mention (e.g. India / remote-work content), not as a tool page or comparison.
   esimatic: 'https://esimsia.sjv.io/n4JDe7?utm_source=esimatic&utm_medium=affiliate',
   // Added Oct 9 2026 (Impact). signNow is an e-signature tool, NOT an AI contract analyzer: use it only for the
-  // "after review, sign it" step (contract-analysis post, freelancer posts). No tool page.
-  signnow: 'https://signnow.sjv.io/OYJYXA?utm_source=signnow&utm_medium=affiliate',
+  // "after review, sign it" step (contract-analysis post, freelancer posts). It now has a short tool page, so its
+  // link lives in constants.ts TOOLS (AFFILIATE_LINKS['signnow']).
   // Added Oct 13 2026 (Impact). Photo-editing programs. Plain base links (no ?u= deep link):
   // deep-link permission has not been confirmed in the Impact dashboard for either program.
   // YouCam Online Editor now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['youcam']).
-  // Retouch4me (retouch4.me): professional AI retouching plugins for Photoshop/Lightroom etc. (perpetual licences + yearly plans).
-  // When Retouch4me gets a /tools/<slug>/ page, move its link into constants.ts and delete it here.
-  retouch4me: 'https://relu0u.pxf.io/OYJDOK?utm_source=retouch4me&utm_medium=affiliate',
+  // Retouch4me now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['retouch4me']).
   soundraw: 'https://soundraw.io/?ref=pvxxfrzw',
   // Renderforest has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['renderforest']).
 };
