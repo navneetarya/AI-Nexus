@@ -1,4 +1,5 @@
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
 // This post is an Internal Link Hub — no new affiliate programs required.
@@ -162,9 +163,9 @@ const post: BlogPost = {
 
 <h3>AI Writing and Content Tools ($15–$100/month)</h3>
 <p>This is the most commoditised AI tool category. Jasper, Copy.ai, Writesonic, and Rytr have converged on similar underlying models and differentiate on workflow integration, templates, and team features. The pricing ladder is predictable: free tier (severely limited), individual plan ($20–$40/month), and team plan ($50–$150+/month).</p>
-<p><a href="https://jasper.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p>
-<p><a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
-<p><a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
 <p>The hidden cost in this category is overconsumption: buying a $49/month "unlimited" plan when you generate 4 blog posts per month. A $20/month plan with word limits is often sufficient and forces intentional use.</p>
 <p>See our <a href="/blog/best-ai-writing-tools-2026/" style="color:#0D9488;">Best AI Writing Tools 2026</a> comparison for the exact plan breakdowns, and <a href="/blog/best-free-ai-writing-tools-2026/" style="color:#0D9488;">Best Free AI Writing Tools</a> if you want to validate before paying. For beginners just starting out, <a href="/blog/best-ai-writing-tools-for-beginners-2026/" style="color:#0D9488;">our beginners guide</a> covers the minimum-viable entry point.</p>
 <p><strong>INR pricing:</strong> ₹1,660–₹8,300/month. Most tools charge in USD; expect +18% GST for Indian business accounts.</p>
@@ -181,7 +182,7 @@ const post: BlogPost = {
 <p>At $19/month for a Fireflies.ai Pro plan: if you attend 8 meetings per week and save 40 minutes each, you save 53 hours/month of meeting admin.</p>
 <p>At a $50/hour effective rate, that is $2,650 in value for $19 in cost, a 13,847% ROI. This is not a rounding error. Meeting intelligence tools are genuinely the most underpriced AI category available to small businesses in 2026.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://fireflies.ai/?fpr=navneet89" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Fireflies.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['fireflies']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Fireflies.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -192,7 +193,7 @@ const post: BlogPost = {
 <h3>AI Email Marketing ($20–$100/month)</h3>
 <p>Email marketing AI tools have two components: the AI writing layer (generating subject lines, body copy, segmentation logic) and the platform itself (list management, deliverability, analytics). The pricing varies enormously based on list size.</p>
 <p>A business with a 2,000-subscriber list running 2 campaigns per week will pay $25–$50/month on GetResponse or Mailchimp with AI features enabled. A business with a 50,000-subscriber list running daily automations will pay $300–$600/month.</p>
-<p><a href="https://www.getresponse.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GetResponse Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['getresponse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GetResponse Free →</a></p>
 <p>The ROI calculation here must compare against the cost of a human copywriter producing the same volume. At $75–$150/hour for a freelance email copywriter, AI-assisted production at even 50% quality parity generates positive ROI above ~5 campaigns/month.</p>
 <p>See our <a href="/blog/best-ai-email-marketing-tools-2026/" style="color:#0D9488;">Best AI Email Marketing Tools 2026</a> comparison for platform-by-platform cost analysis.</p>
 <p><strong>INR pricing:</strong> GetResponse Email Marketing plan ~₹1,250–₹6,640/month depending on list size.</p>
@@ -202,7 +203,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude →</a>
   <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ChatGPT →</a>
-  <a href="https://perplexity.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 <p>The question is which to choose, not whether. See our direct comparison in <a href="/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/" style="color:#0D9488;">Perplexity Pro vs ChatGPT Plus vs Claude Pro for freelancers</a>. Also see our free-plan analysis in <a href="/blog/chatgpt-free-vs-claude-free-vs-gemini-free-2026/" style="color:#0D9488;">ChatGPT Free vs Claude Free vs Gemini Free</a>. Our Grok 4 comparison in <a href="/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/" style="color:#0D9488;">GPT-5.5 vs Claude Opus 4.8 vs Grok 4</a> covers the newest models.</p>
 <p><strong>INR pricing:</strong> All three at ~₹1,660/month per tool plus 18% GST = ~₹1,960/month. A user running all three pays ~₹5,880/month. Evaluate whether you actually use more than one before stacking.</p>
@@ -295,7 +296,7 @@ const post: BlogPost = {
 <p>Indian businesses face three AI tool cost issues that don't affect USD-denominated buyers:</p>
 <ul style="margin:12px 0;padding-left:20px;line-height:1.9;">
   <li><strong>Currency risk:</strong> Most AI tools price in USD. A 5% INR depreciation against USD increases your effective AI tool spend by 5% with no change in the tool's value. Prefer tools with INR-denominated plans (Canva Pro, Notion AI) or annual plans where you can lock in at a known FX rate.</li>
-<p><a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a></p>
   <li><strong>GST compliance:</strong> B2B AI tool subscriptions purchased from foreign entities require reverse-charge GST treatment for Indian businesses. Factor the compliance overhead, or your CA's time, into the full cost of any foreign-vendor AI subscription.</li>
   <li><strong>Payment access:</strong> Not all international AI tools accept UPI or Indian debit cards. Razorpay-linked international cards, or credit cards with USD billing, are required for tools that don't have local payment integration.</li>
 </ul>

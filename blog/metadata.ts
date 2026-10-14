@@ -390,7 +390,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "Best AI Website Builders 2026: 7 Tools Compared",
     "metaDescription": "Wix, Framer, Durable, Hostinger, 10Web, Readdy, and WordToSite compared by use case, pricing, and the type of site each builder can deliver.",
     "datePublished": "2026-08-08",
-    "dateModified": "2026-10-10",
+    "dateModified": "2026-10-14",
     "author": "Navneet Arya",
     "category": "Design",
     "readTime": "12 min read",

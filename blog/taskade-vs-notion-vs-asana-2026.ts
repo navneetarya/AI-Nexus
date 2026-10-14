@@ -5,6 +5,7 @@
 // All pricing data sourced from compare-data.ts (taskade-vs-notion and taskade-vs-asana articles)
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'taskade-vs-notion-vs-asana-2026',
@@ -98,7 +99,7 @@ const post: BlogPost = {
 <p style="margin:-8px 0 20px;">Building out a wider toolkit at the same time? See our picks for the <a href="/blog/best-ai-tools-for-startups-2026/" style="color:#0D9488;font-weight:600;">best AI tools for startups</a> for how project management fits alongside the rest of an early-stage stack.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+  <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
 </div>
 
 <h2>Quick Comparison: The Core Difference</h2>
@@ -171,7 +172,7 @@ const post: BlogPost = {
 <p><a href="/tools/taskade/" style="color:#0D9488;font-weight:600;">→ Full Taskade review</a> &nbsp;·&nbsp; <a href="/blog/best-ai-agents-for-small-business-2026/" style="color:#0D9488;font-weight:600;">→ Best AI agents for small business</a> — how Taskade's agents stack up against dedicated agent platforms</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+  <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -189,7 +190,7 @@ const post: BlogPost = {
 <p>Notion's AI features are solid, but they're clearly an add-on. They aren't an integrated system the way Taskade's agents are.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a>
+  <a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

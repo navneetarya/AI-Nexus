@@ -165,7 +165,7 @@ const post: BlogPost = {
 <p><a href="/tools/pictory/" style="color:#0D9488;font-weight:600;">→ Read the full Pictory review</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://pictory.ai?fpr=navneet24" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pictory Free →</a>
+  <a href="${AFFILIATE_LINKS['pictory']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pictory Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -181,7 +181,7 @@ const post: BlogPost = {
 <p><a href="/tools/opus-clip/" style="color:#0D9488;font-weight:600;">→ Read the full Opus Clip review</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a>
+  <a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -189,7 +189,7 @@ const post: BlogPost = {
 <h2>#3 Murf AI: Best When You Want a Better Voice on Your Videos</h2>
 <p>If you're staying with InVideo AI or Pictory but hate how the AI voiceovers sound, Murf AI is the fix. Murf has 120+ AI voices across 20 languages. The selection is meaningfully wider than InVideo's built-in voices, and the quality of Murf's studio voices is noticeably more natural on longer scripts.</p>
 <p><strong>The use case:</strong> Generate your video in InVideo AI or Pictory, export the script and timing, then produce the voiceover in Murf and swap it in. Murf integrates directly with Google Slides, Canva, and Descript for this reason: it's designed to be a voiceover layer on top of other video workflows, not a standalone video creator.</p>
-<p><a href="https://descript.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a></p>
 <p><strong>Real difference in voice quality:</strong> Independent comparisons of InVideo's default AI voice against Murf's "Marcus" (US English, professional) consistently favour Murf. It has more natural pacing, realistic breaths, and less flat monotone on longer sentences. For faceless YouTube channels where the voiceover is the main presenter, this quality difference is audible and matters for viewer retention.</p>
 <p><strong>Pricing:</strong> Free plan with limited exports. Paid from $19/month for Creator, which includes 24 voices, 2 hours of voice generation, and commercial rights, important if you're monetising your YouTube channel.</p>
 <p><a href="/tools/murf-ai/" style="color:#0D9488;font-weight:600;">→ Read the full Murf AI review</a></p>

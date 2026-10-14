@@ -194,7 +194,7 @@ const post: BlogPost = {
 <p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review: free plan, Hindi support &amp; pricing</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -211,7 +211,7 @@ const post: BlogPost = {
 <p><a href="/tools/quillbot/" style="color:#0D9488;font-weight:600;">→ Full QuillBot review: free plan &amp; what Premium actually adds</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://quillbot.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
+  <a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -225,7 +225,7 @@ const post: BlogPost = {
 <p><strong>Hindi support:</strong> Type your query in Hindi and Perplexity responds in Hindi when asked. Useful for students who think more clearly in Hindi and want AI assistance in their stronger language.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -238,7 +238,7 @@ const post: BlogPost = {
 <p><strong>Specific use case for Indian students:</strong> Paste your essay or research notes into Gamma's prompt box and pick the option to build a presentation from that text. Gamma turns your written content into slides with headings, bullet points, and clear structure. Handy for turning a written seminar paper into a slideshow without rewriting it from scratch.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -253,7 +253,7 @@ const post: BlogPost = {
 <p><a href="/tools/taskade/" style="color:#0D9488;font-weight:600;">→ Full Taskade review: free plan &amp; student use cases</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+  <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

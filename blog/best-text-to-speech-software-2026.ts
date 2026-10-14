@@ -150,7 +150,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> Creators who need to fix mistakes in existing audio without a full re-record. Our <a href="/tools/descript/">Descript review</a> covers the full editing workflow.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://descript.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
+  <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
 </div>
 
 <h2>Best text-to-speech software 2026: full comparison</h2>

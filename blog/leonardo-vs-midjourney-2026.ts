@@ -5,6 +5,7 @@
 // All pricing and feature data sourced from compare-data.ts (leonardo-vs-midjourney article)
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'leonardo-vs-midjourney-2026',
@@ -85,7 +86,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">If you need creative control, consistent style across a project, or want to start for free: <strong>Leonardo.ai</strong> is the better choice for most creators in 2026. If you need the highest possible aesthetic quality for one-off standout images, and can pay $10/month from day one, <strong>Midjourney</strong> is worth it for that use case.</p>
 </div>
 <div style="margin:14px 0 24px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Free on Leonardo.ai →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Free on Leonardo.ai →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -152,7 +153,7 @@ const post: BlogPost = {
 <p><a href="/tools/leonardo-ai/" style="color:#0D9488;font-weight:600;">→ Full Leonardo.ai review</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -201,7 +202,7 @@ const post: BlogPost = {
 <p>For the full head-to-head technical comparison, see: <a href="/compare/leonardo-vs-midjourney/" style="color:#0D9488;font-weight:600;">Leonardo.ai vs Midjourney: full comparison</a></p>
 <p>Looking for more free alternatives? See: <a href="/blog/best-midjourney-alternatives-2026/" style="color:#0D9488;font-weight:600;">Best Midjourney Alternatives 2026: Free Options Tested</a></p>
 <div style="margin:20px 0 14px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Free on Leonardo.ai →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Free on Leonardo.ai →</a>
   <a href="https://midjourney.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Midjourney →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">

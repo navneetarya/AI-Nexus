@@ -12,6 +12,7 @@
 // Word count: ~2,850 words | Published: 2026-07-30 | Author: Navneet Arya
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-ad-creative-generator-tools-2026',
@@ -167,7 +168,7 @@ const post: BlogPost = {
 
 <p>Free plan available — background removal and AI product photos, watermarked.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
+  <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.

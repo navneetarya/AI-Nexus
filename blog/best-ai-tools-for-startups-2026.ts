@@ -120,7 +120,7 @@ const post: BlogPost = {
 <p>The interactive deck format is also handy for investor outreach: it's a web-published URL, not a file download. A live link opens more reliably than a PDF attachment, and it lets you track whether it was viewed.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -135,7 +135,7 @@ const post: BlogPost = {
 <p>Canva Pro at $15/month adds a Brand Kit (colors, fonts, and logos applied automatically), 100M+ stock assets, and one-click resize for different platform formats. That's essential for startups producing content across multiple channels. For a startup with any marketing activity, Pro pays for itself fast in saved design time.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
+  <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -146,7 +146,7 @@ const post: BlogPost = {
 <p>For a startup scaling from 2 to 10 people, Notion's knowledge base heads off the "everything lives in someone's head" problem. AI that can quickly surface the right existing doc, and generate consistent documentation templates, keeps the system easy to maintain as the team grows.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a>
+  <a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.

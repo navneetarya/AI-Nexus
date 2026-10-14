@@ -18,6 +18,7 @@
 // Word count: ~2,780 words (prose, excludes table cells) | Published: 2026-08-11 | Author: Navneet Arya
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-seo-content-optimization-tools-2026',
@@ -110,7 +111,7 @@ const post: BlogPost = {
 <p>Frase doesn't offer a permanent free plan. But its 7-day free trial needs no credit card and runs on Professional's full feature set. It's capped at 5 articles and 3 seats to test with.</p>
 <p>What makes Frase stand out from Surfer at the same $49 entry price: AI-visibility tracking across ChatGPT and Google AI comes included from Starter. It's not gated to a higher tier. Frase holds a 4.8/5 rating on G2, matching Surfer, and is used by teams at Oracle, Coursera, and GitLab according to its own customer list.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.frase.io/pricing/?via=navneet66" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase Free →</a>
+  <a href="${AFFILIATE_LINKS['frase']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

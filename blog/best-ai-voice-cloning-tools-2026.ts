@@ -122,7 +122,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> Podcasters and video editors who need cloning bundled into a transcript-editing workflow. See our full <a href="/tools/descript/">Descript review</a> for pricing details.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://descript.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
+  <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
 </div>
 
 <h2>Resemble AI and Play.ht: cloning at different price points</h2>

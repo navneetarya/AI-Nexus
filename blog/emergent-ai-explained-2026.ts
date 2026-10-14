@@ -9,6 +9,7 @@
 // Word count: ~3,000 words | Published: 2026-07-23 | Author: Navneet Arya
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'emergent-ai-explained-2026',
@@ -27,7 +28,7 @@ const post: BlogPost = {
 <p> This guide follows model releases add capabilities nobody directly trained them to have. This guide explains what that actually means, whether it's real, and why it matters even if you never read a research paper.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity's Frontier Reasoning Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity's Frontier Reasoning Free →</a>
 </div>
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
@@ -204,7 +205,7 @@ const post: BlogPost = {
 
 <div style="margin:14px 0 24px;">
   <a href="/blog/multi-agent-ai-systems-explained-2026" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Read: How Multi-Agent AI Systems Work →</a>
-  <a href="https://perplexity.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try a Frontier Model Yourself →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try a Frontier Model Yourself →</a>
 </div>
 
 <h2>So, is emergent AI real, in the end?</h2>

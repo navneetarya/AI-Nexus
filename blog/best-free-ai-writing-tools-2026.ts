@@ -10,6 +10,7 @@
 // T3.1: Free AI writing tools — 4,200/mo, KD 22 — "no credit card" angle
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-free-ai-writing-tools-2026',
@@ -177,7 +178,7 @@ const post: BlogPost = {
 <p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review: free plan limits, templates, and whether $9/month is worth it</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -199,7 +200,7 @@ const post: BlogPost = {
 <p><a href="/tools/quillbot/" style="color:#0D9488;font-weight:600;">→ Full QuillBot review: all 7 paraphrase modes and premium plan breakdown</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://quillbot.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
+  <a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -222,7 +223,7 @@ const post: BlogPost = {
 <p><a href="/tools/writesonic/" style="color:#0D9488;font-weight:600;">→ Full Writesonic review: Article Writer 6.0, Chatsonic, and whether $16/month is worth it</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a>
+  <a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

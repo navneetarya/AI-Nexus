@@ -136,7 +136,7 @@ const post: BlogPost = {
   <li>No desktop app: Gamma runs entirely in the <strong>browser</strong>, with no offline mode</li>
 </ul>
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -229,7 +229,7 @@ const post: BlogPost = {
 <p>PDF export is clean and matches the on-screen deck closely. PowerPoint export is functional but not perfect. Gamma's card-based layouts don't map one-to-one onto PowerPoint's fixed slide-and-placeholder model. Manual cleanup after export is normal on image-heavy decks.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 
 <img src="https://images.unsplash.com/photo-1745030368616-153bb15ba95d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A wavy, colorful gradient background representative of AI-generated design output" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -277,7 +277,7 @@ const post: BlogPost = {
 <p>The jump to Plus is small in absolute terms: $8/month is less than most people spend on a single streaming subscription. The value only shows up once you're generating regularly, so someone who builds one deck a year has no real reason to upgrade.</p>
 <p>Per-seat pricing is the thing to watch for teams. A 3-person team on Plus runs about $24/month. The Business tier's 10-seat minimum at $40/seat makes it a bigger jump once an organization grows past a handful of regular users.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 
 <h2 id="pros-cons">Pros and Cons</h2>
@@ -329,7 +329,7 @@ const post: BlogPost = {
 <p>If you're building decks regularly, whether that's investor updates, classroom lectures, or client pitches, the upgrade to Plus is a straightforward call. It's worth it once you find yourself budgeting credits instead of just building.</p>
 <p>Explore the full <a href="/tools/gamma/" style="color:#6366f1;">Gamma review on AI Nexus</a>, and see how it stacks up directly against <a href="/tools/beautiful-ai/" style="color:#6366f1;">Beautiful.ai</a> and <a href="/tools/canva-ai/" style="color:#6366f1;">Canva AI</a> on their respective tool pages.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 `,
 };

@@ -109,7 +109,7 @@ const post: BlogPost = {
 <p>The key discipline here is editing each section before generating the next. Letting AI generate the full article in one pass results in content that reads as a generic summary of the topic.</p>
 <p>It's technically accurate, but it lacks the specific details and honest takes that make content worth reading and ranking for. Section-by-section generation with human editing in between produces substantially better output.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -165,14 +165,14 @@ const post: BlogPost = {
 <p>For blog feature images, the workflow is simple. Write a detailed prompt describing the concept, mood, and style you want. Example: "flat vector illustration of a person using a laptop with AI interface, teal and dark colour scheme, minimalist, no text". Generate 4 variations, pick the best, download at full resolution.</p><p>The entire process takes under 3 minutes once you are comfortable writing prompts.</p>
 <p>The model selection inside Leonardo matters. For illustrations and conceptual images, the <strong>Flux Dev</strong> and <strong>Leonardo Diffusion XL</strong> models give the cleanest, most consistent results for content creators. Avoid the default "Leonardo Creative" model for professional-looking images. It adds stylistic flourishes that make images look AI-generated at a glance.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 
 <h3>Background Removal and Product Images with PhotoRoom</h3>
 <p><a href="/tools/photoroom/" style="color:var(--a1);font-weight:600;">PhotoRoom</a> solves a different image problem: removing backgrounds from screenshots, product photos, and tool UI captures to use them cleanly in blog posts and social graphics. The free plan handles background removal on up to 3 images per day with a small watermark. The paid plan at $9.99/month removes the watermark and raises the limit to unlimited.</p>
 <p>For content creators reviewing software tools, the practical use case is simple. Take a screenshot of the tool interface, upload it to PhotoRoom, remove the background, and place it on your brand-coloured backdrop for a clean feature image. This takes 60 seconds and produces a consistently styled thumbnail format across all posts.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
+  <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
 </div>
 
 <img src="https://images.unsplash.com/photo-1531178625044-cc2a0fb353a9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A monitor displaying a video editing timeline used for short-form clips" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -184,7 +184,7 @@ const post: BlogPost = {
 <p><a href="/tools/pictory/" style="color:var(--a1);font-weight:600;">Pictory</a> converts existing blog posts and scripts into narrated videos automatically. Paste your article URL or the full text. Pictory breaks it into scenes, selects stock footage for each scene, generates a voiceover, and adds captions, all without you touching a video editor.</p><p>For a 1,000-word blog post, Pictory produces a 4–6 minute video in approximately 8–12 minutes.</p>
 <p>This is the highest-leverage video workflow for solo content creators: you write the article once, and Pictory produces a YouTube and LinkedIn video from the same content. One piece of content, two distribution channels, with roughly 15 minutes of additional work.</p><p>Pictory starts at $19/month, the practical threshold where the time saved justifies the cost if you are publishing video content weekly.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://pictory.ai?fpr=navneet24" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pictory Free →</a>
+  <a href="${AFFILIATE_LINKS['pictory']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pictory Free →</a>
 </div>
 
 <h3>Short-Form Video from Text Prompts with InVideo AI</h3>

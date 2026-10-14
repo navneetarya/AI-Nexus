@@ -175,7 +175,7 @@ const post: BlogPost = {
 <p><strong>Honest limitation:</strong> The free paraphraser is capped at 125 words per run. For longer passages, break them into chunks manually. The $9.95/month Premium removes all limits and adds a plagiarism checker. It's worth it during dissertation season, but the free plan is sufficient for regular coursework.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://quillbot.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
+  <a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -205,7 +205,7 @@ const post: BlogPost = {
 <p>Using AI output without your own argument and evidence produces a generic, low-quality submission regardless of how polished it looks at first glance. Use Rytr to break writer's block and structure your ideas, not to replace the intellectual work your course is designed to teach.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -220,7 +220,7 @@ const post: BlogPost = {
 <p>The free plan gives 400 AI credits, enough for 4–5 full presentations. For a semester's worth of seminars and group project presentations, the $8/month paid plan is worth it, but 400 credits covers most of first term without any payment.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.

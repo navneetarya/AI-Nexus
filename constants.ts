@@ -2684,9 +2684,9 @@ export const TOOLS: Tool[] = [
       'External (non-Spaceship) domains must be pointed to Spaceship nameservers to get SSL and full functionality, which is real setup work for anyone domained elsewhere',
       'Restricted to Spaceship\'s own hosting — there is no code export or migration path to another host, unlike Wegic',
       'A newer, narrower product than established AI site builders, with a much smaller independent review base',
-      'Product-selling (e-commerce) websites are not yet supported',
+      'Selling products is limited to Stripe payment links (added May 2026), a lighter model than a full store platform',
     ],
-    notForYou: 'Anyone who wants to keep ownership of the underlying code or migrate hosts later — Alf has no export path, unlike Wegic. Also skip it if you need an online store today; product-selling sites are not yet supported. It fits best as a fast, bundled site for someone already using Spaceship for domains who does not want a separate hosting decision.',
+    notForYou: 'Anyone who wants to keep ownership of the underlying code or migrate hosts later — Alf has no export path, unlike Wegic. Also skip it if you need a full online store with a large catalogue: selling is limited to Stripe payment links, added in May 2026. It fits best as a fast, bundled site for someone already using Spaceship for domains who does not want a separate hosting decision.',
     lastTestedISO: '2026-09-22',
     researchSources: {
       lastVerified: '2026-09-22',
@@ -3556,7 +3556,7 @@ Object.assign(TOOL_FAQS, {
     { q: 'Is Alf Website Studio free?', a: "Alf Website Studio has a 30-day free trial with full access to chat-based generation and the visual editor. After the trial it is $5/month, which includes fully managed hosting, domain connection and a free SSL certificate — you are not paying for hosting separately." },
     { q: 'Can I use Alf Website Studio with a domain from another registrar?', a: "Yes, but external domains need to be pointed to Spaceship's nameservers before the SSL certificate and full functionality will work. If your domain is already registered with Spaceship, this step is automatic." },
     { q: 'Can I export my site or move it to another host?', a: "No — unlike Wegic, Alf Website Studio does not offer code export. It is built to run on Spaceship's own managed hosting, so there is no migration path if you decide to move to a different host later." },
-    { q: 'Can I sell products on a site built with Alf?', a: "Not yet. Spaceship's own documentation lists product-selling websites as coming soon rather than currently supported, so Alf is best suited to informational, portfolio and service sites for now." },
+    { q: 'Can I sell products on a site built with Alf?', a: "In a limited way. Spaceship's May 2026 update added e-commerce: you connect a Stripe account and create products with payment links, and its August 2026 notes say product displays update without republishing. It is a lighter model than a full store platform, so check Stripe fees and your catalogue size before relying on it." },
     { q: 'Alf Website Studio vs Wegic — which Should I use?', a: "Both build a site through conversation with an AI, but they differ on lock-in. Wegic supports code export, so you can migrate elsewhere later. Alf Website Studio has no export path and only runs on Spaceship's hosting, but bundles hosting, domain connection and SSL into one $5/month price with no separate hosting decision to make. If you already use Spaceship for domains and want the simplest possible setup, Alf is the more convenient pick; if you want to keep an exit option, Wegic is the safer one." },
   ],
   'jetpack-ai-assistant': [

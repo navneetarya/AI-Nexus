@@ -7,6 +7,7 @@
 // Word count: ~2,200 words
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'perplexity-ai-review-2026',
@@ -97,7 +98,7 @@ const post: BlogPost = {
 <p>Perplexity is worth it for research-heavy work: questions that require pulling together information from multiple sources. Google still wins for navigational searches, local results, breaking news, and shopping. The two aren't really competing for the same query — they're solving different information needs.</p>
 <p>So the honest answer is that most people end up using both. For two years, Perplexity operated as a power-user tool, known in tech communities but largely ignored by the mainstream. That has changed.</p>
 <div style="margin:14px 0 20px;">
-  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-8px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -183,14 +184,14 @@ const post: BlogPost = {
 
 <h2>Test Scenario: Competitive Research Task</h2>
 <p><strong>Query:</strong> "What are the pricing differences between Notion AI, Taskade, and Coda AI in 2026, and which is best for a solo freelancer?"</p>
-<p><a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
-<p><a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a></p>
 <p><strong>Google result:</strong> Ten links: a mix of each tool's pricing page, two review articles from late 2025, and a Reddit thread. To get the answer, I opened four tabs, read three pricing pages, scanned the review articles, and assembled the comparison myself. Time: about 7 minutes.</p>
 <p><strong>Perplexity result:</strong> A structured comparison table with all three tools, their current pricing tiers, key features, and a two-sentence recommendation for a solo freelancer. Sources cited inline included the tools' own pricing pages, confirming the data was current.</p>
 <p>Follow-up question suggested: "What are the main limitations of Notion AI's free plan?" I could tap it to continue the research thread. Time: about 40 seconds to read the answer.</p>
 <p>For research-heavy workflows — content briefs, competitive analysis, industry deep-dives — this time saving compounds across dozens of queries per day.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 
 <h2>Perplexity Deep Research: When to Use It</h2>
@@ -209,7 +210,7 @@ const post: BlogPost = {
   <li><strong>It cannot replace Google for local search.</strong> For "best coffee near me," Google wins every time. Perplexity has no location awareness or real-time business data comparable to Google Maps.</li>
   <li><strong>Breaking news is slower.</strong> Google News indexes new articles within minutes. Perplexity's refresh cycle for very recent news is slower, and it can miss stories from smaller publications that Google indexes quickly.</li>
   <li><strong>It does not create content.</strong> Perplexity is a research and synthesis tool. It can help you gather and organise information, but it is not a writing assistant in the way that ChatGPT or <a href="/tools/writesonic/" style="color:rgb(13,148,136);">Writesonic</a> are. For writing workflows, pair Perplexity's research with a dedicated writing tool.</li>
-<p><a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
   <li><strong>Citations can be imperfect.</strong> Perplexity sometimes cites a source for a claim it actually inferred or synthesised across multiple sources. Always verify specific statistics and claims against the linked source before using them professionally.</li>
 </ul>
 
@@ -239,7 +240,7 @@ const post: BlogPost = {
 </div>
 <p>The annual plan at $200/year works out to $16.67/month, a reasonable discount for users who know they will use Pro consistently. The free plan is genuinely useful and not artificially crippled, which is worth noting: many knowledge workers will find standard searches on the free tier sufficient for daily use.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

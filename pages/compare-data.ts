@@ -545,12 +545,12 @@ The mistake is paying Writesonic prices for Rytr-level output needs. Be honest a
     ],
     winnerSlug: 'rytr',
     winnerName: 'Rytr',
-    winnerAffiliateLink: 'https://rytr.me/?via=navneet-arya',
+    winnerAffiliateLink: AFFILIATE_LINKS['rytr'],
     winnerAffiliateText: 'Try Rytr free',
     pricing: {
       tools: [
-        { name: 'Rytr', free: true, startingPrice: '$0', paidFrom: '$9/mo', bestPlanFor: 'Unlimited short-form copy', affiliateLink: 'https://rytr.me/?via=navneet-arya' },
-        { name: 'Writesonic', free: true, startingPrice: '$0', paidFrom: '$16/mo', bestPlanFor: 'SEO long-form blog posts', affiliateLink: 'https://writesonic.com?via=ainexus' },
+        { name: 'Rytr', free: true, startingPrice: '$0', paidFrom: '$9/mo', bestPlanFor: 'Unlimited short-form copy', affiliateLink: AFFILIATE_LINKS['rytr'] },
+        { name: 'Writesonic', free: true, startingPrice: '$0', paidFrom: '$16/mo', bestPlanFor: 'SEO long-form blog posts', affiliateLink: AFFILIATE_LINKS['writesonic'] },
       ],
     },
     faqs: [
@@ -641,7 +641,7 @@ The best setup if budget allows: use both. Grammarly while you write, QuillBot w
     pricing: {
       tools: [
         { name: 'Grammarly', free: true, startingPrice: '$0', paidFrom: '$12/mo', bestPlanFor: 'Professional writers & anyone who writes', affiliateLink: 'https://grammarly.com?affiliateId=ainexus' },
-        { name: 'QuillBot', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Students & paraphrasing-heavy workflows', affiliateLink: 'https://quillbot.com?via=ainexus' },
+        { name: 'QuillBot', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Students & paraphrasing-heavy workflows', affiliateLink: AFFILIATE_LINKS['quillbot'] },
       ],
     },
     faqs: [
@@ -764,11 +764,11 @@ The question that simplifies the choice: do you already have a reliable way to w
     ],
     winnerSlug: 'ocoya',
     winnerName: 'Ocoya',
-    winnerAffiliateLink: 'https://www.ocoya.com/?via=navneet',
+    winnerAffiliateLink: AFFILIATE_LINKS['ocoya'],
     winnerAffiliateText: 'Try Ocoya free',
     pricing: {
       tools: [
-        { name: 'Ocoya', free: false, startingPrice: '$15/mo', paidFrom: '$15/mo', bestPlanFor: 'AI captions + scheduling for creators', affiliateLink: 'https://www.ocoya.com/?via=navneet' },
+        { name: 'Ocoya', free: false, startingPrice: '$15/mo', paidFrom: '$15/mo', bestPlanFor: 'AI captions + scheduling for creators', affiliateLink: AFFILIATE_LINKS['ocoya'] },
         { name: 'Buffer', free: true, startingPrice: '$0', paidFrom: '$6/mo', bestPlanFor: 'Simple scheduling on a budget', affiliateLink: 'https://buffer.com' },
         { name: 'Hootsuite', free: false, startingPrice: '$99/mo', paidFrom: '$99/mo', bestPlanFor: 'Agencies managing multiple clients' },
       ],
@@ -885,7 +885,7 @@ The tools are complementary more than competitive. Some serious podcast teams us
     pricing: {
       tools: [
         { name: 'Podcastle', free: true, startingPrice: '$0', paidFrom: '$11.99/mo', bestPlanFor: 'Podcasters wanting all-in-one recording + AI', affiliateLink: 'https://podcastle.ai/?ref=ymi1ntf' },
-        { name: 'Descript', free: true, startingPrice: '$0', paidFrom: '$12/mo', bestPlanFor: 'Text-based video & podcast editing', affiliateLink: 'https://descript.com?via=ainexus' },
+        { name: 'Descript', free: true, startingPrice: '$0', paidFrom: '$12/mo', bestPlanFor: 'Text-based video & podcast editing', affiliateLink: AFFILIATE_LINKS['descript'] },
       ],
     },
     faqs: [
@@ -989,11 +989,11 @@ The practical advice: start with Leonardo.ai's free plan. If you consistently fi
     ],
     winnerSlug: 'leonardo-ai',
     winnerName: 'Leonardo.ai',
-    winnerAffiliateLink: 'https://leonardo.ai?via=ainexus',
+    winnerAffiliateLink: AFFILIATE_LINKS['leonardo-ai'],
     winnerAffiliateText: 'Try Leonardo.ai free',
     pricing: {
       tools: [
-        { name: 'Leonardo.ai', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Creators wanting volume & fine-tuning', affiliateLink: 'https://leonardo.ai?via=ainexus' },
+        { name: 'Leonardo.ai', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Creators wanting volume & fine-tuning', affiliateLink: AFFILIATE_LINKS['leonardo-ai'] },
         { name: 'Midjourney', free: false, startingPrice: '$10/mo', paidFrom: '$10/mo', bestPlanFor: 'Highest quality artistic image generation' },
       ],
     },
@@ -1218,11 +1218,11 @@ The most common mistake: choosing Notion for execution work (where the setup ove
     ],
     winnerSlug: 'taskade',
     winnerName: 'Taskade',
-    winnerAffiliateLink: 'https://taskade.com/?via=rlqcxz',
+    winnerAffiliateLink: AFFILIATE_LINKS['taskade'],
     winnerAffiliateText: 'Try Taskade free',
     pricing: {
       tools: [
-        { name: 'Taskade', free: true, startingPrice: '$0', paidFrom: '$8/mo', bestPlanFor: 'Freelancers & small teams wanting AI + tasks', affiliateLink: 'https://taskade.com/?via=rlqcxz' },
+        { name: 'Taskade', free: true, startingPrice: '$0', paidFrom: '$8/mo', bestPlanFor: 'Freelancers & small teams wanting AI + tasks', affiliateLink: AFFILIATE_LINKS['taskade'] },
         { name: 'Notion AI', free: true, startingPrice: '$0', paidFrom: '$8/mo add-on', bestPlanFor: 'Existing Notion users adding AI to their workspace', affiliateLink: 'https://notion.so' },
       ],
     },
@@ -1344,7 +1344,7 @@ The mistake to avoid: buying Writesonic's paid tier expecting it to fix your gra
     pricing: {
       tools: [
         { name: 'Grammarly', free: true, startingPrice: '$0', paidFrom: '$12/mo', bestPlanFor: 'Professional writers & anyone who writes', affiliateLink: 'https://grammarly.com?affiliateId=ainexus' },
-        { name: 'QuillBot', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Students & paraphrasing-heavy workflows', affiliateLink: 'https://quillbot.com?via=ainexus' },
+        { name: 'QuillBot', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Students & paraphrasing-heavy workflows', affiliateLink: AFFILIATE_LINKS['quillbot'] },
       ],
     },
     faqs: [
@@ -1586,11 +1586,11 @@ The switching cost is low enough to test: Taskade's free plan is functional and 
     ],
     winnerSlug: 'taskade',
     winnerName: 'Taskade',
-    winnerAffiliateLink: 'https://www.taskade.com/?via=rlqcxz',
+    winnerAffiliateLink: AFFILIATE_LINKS['taskade'],
     winnerAffiliateText: 'Try Taskade free',
     pricing: {
       tools: [
-        { name: 'Taskade', free: true, startingPrice: '$0', paidFrom: '$8/mo', bestPlanFor: 'Freelancers & small teams wanting AI + tasks', affiliateLink: 'https://taskade.com/?via=rlqcxz' },
+        { name: 'Taskade', free: true, startingPrice: '$0', paidFrom: '$8/mo', bestPlanFor: 'Freelancers & small teams wanting AI + tasks', affiliateLink: AFFILIATE_LINKS['taskade'] },
         { name: 'Notion AI', free: true, startingPrice: '$0', paidFrom: '$8/mo add-on', bestPlanFor: 'Existing Notion users adding AI to their workspace', affiliateLink: 'https://notion.so' },
       ],
     },
@@ -1650,11 +1650,11 @@ The switching cost is low enough to test: Taskade's free plan is functional and 
     ],
     winnerSlug: 'photoroom',
     winnerName: 'PhotoRoom',
-    winnerAffiliateLink: 'https://photoroom.com?via=ainexus',
+    winnerAffiliateLink: AFFILIATE_LINKS['photoroom'],
     winnerAffiliateText: 'Try PhotoRoom free',
     pricing: {
       tools: [
-        { name: 'PhotoRoom', free: true, startingPrice: '$0', paidFrom: '$9.99/mo', bestPlanFor: 'E-commerce sellers & product photographers', affiliateLink: 'https://photoroom.com?via=ainexus' },
+        { name: 'PhotoRoom', free: true, startingPrice: '$0', paidFrom: '$9.99/mo', bestPlanFor: 'E-commerce sellers & product photographers', affiliateLink: AFFILIATE_LINKS['photoroom'] },
         { name: 'Remove.bg', free: true, startingPrice: '$0 (limited)', paidFrom: '$9/mo', bestPlanFor: 'Quick one-off background removal' },
       ],
     },
@@ -1753,11 +1753,11 @@ The mistake most people make: paying Jasper prices for individual use. If you're
     ],
     winnerSlug: 'writesonic',
     winnerName: 'Writesonic',
-    winnerAffiliateLink: 'https://writesonic.com?via=ainexus',
+    winnerAffiliateLink: AFFILIATE_LINKS['writesonic'],
     winnerAffiliateText: 'Try Writesonic free',
     pricing: {
       tools: [
-        { name: 'Writesonic', free: true, startingPrice: '$0', paidFrom: '$16/mo', bestPlanFor: 'SEO bloggers & content marketers', affiliateLink: 'https://writesonic.com?via=ainexus' },
+        { name: 'Writesonic', free: true, startingPrice: '$0', paidFrom: '$16/mo', bestPlanFor: 'SEO bloggers & content marketers', affiliateLink: AFFILIATE_LINKS['writesonic'] },
         { name: 'Jasper', free: false, startingPrice: '$39/mo', paidFrom: '$39/mo', bestPlanFor: 'Marketing teams needing brand voice control' },
       ],
     },
@@ -1861,7 +1861,7 @@ Many serious writers use both: Grammarly in the browser for everyday writing, Pr
     pricing: {
       tools: [
         { name: 'Grammarly', free: true, startingPrice: '$0', paidFrom: '$12/mo', bestPlanFor: 'Professional writers & anyone who writes', affiliateLink: 'https://grammarly.com?affiliateId=ainexus' },
-        { name: 'QuillBot', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Students & paraphrasing-heavy workflows', affiliateLink: 'https://quillbot.com?via=ainexus' },
+        { name: 'QuillBot', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Students & paraphrasing-heavy workflows', affiliateLink: AFFILIATE_LINKS['quillbot'] },
       ],
     },
     faqs: [
@@ -1965,11 +1965,11 @@ The practical path: start with Leonardo.ai's free plan. If you find yourself hit
     ],
     winnerSlug: 'leonardo-ai',
     winnerName: 'Leonardo.ai',
-    winnerAffiliateLink: 'https://leonardo.ai?via=ainexus',
+    winnerAffiliateLink: AFFILIATE_LINKS['leonardo-ai'],
     winnerAffiliateText: 'Try Leonardo.ai free',
     pricing: {
       tools: [
-        { name: 'Leonardo.ai', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Creators wanting volume & fine-tuning', affiliateLink: 'https://leonardo.ai?via=ainexus' },
+        { name: 'Leonardo.ai', free: true, startingPrice: '$0', paidFrom: '$10/mo', bestPlanFor: 'Creators wanting volume & fine-tuning', affiliateLink: AFFILIATE_LINKS['leonardo-ai'] },
         { name: 'Midjourney', free: false, startingPrice: '$10/mo', paidFrom: '$10/mo', bestPlanFor: 'Highest quality artistic image generation' },
       ],
     },
@@ -2074,11 +2074,11 @@ The simple test: create a pitch deck in Gamma's free plan. If the output quality
     ],
     winnerSlug: 'gamma',
     winnerName: 'Gamma',
-    winnerAffiliateLink: 'https://gamma.app?via=ainexus',
+    winnerAffiliateLink: AFFILIATE_LINKS['gamma'],
     winnerAffiliateText: 'Try Gamma free',
     pricing: {
       tools: [
-        { name: 'Gamma', free: true, startingPrice: '$0', paidFrom: '$8/mo', bestPlanFor: 'Anyone who makes slides & wants to save time', affiliateLink: 'https://gamma.app?via=ainexus' },
+        { name: 'Gamma', free: true, startingPrice: '$0', paidFrom: '$8/mo', bestPlanFor: 'Anyone who makes slides & wants to save time', affiliateLink: AFFILIATE_LINKS['gamma'] },
         { name: 'Beautiful.ai', free: false, startingPrice: '$12/mo', paidFrom: '$12/mo', bestPlanFor: 'Teams needing brand-consistent presentations' },
       ],
     },
@@ -2141,7 +2141,7 @@ If keeping an exit option matters to you, Wegic wins outright. If you'd rather n
 
 **Bundled infrastructure** is Alf's real advantage. There's no separate hosting purchase, domain connection is automatic, SSL is included, and updates and security are handled for you. For someone who already registers domains through Spaceship, that removes an entire category of setup decisions.
 
-**Where Alf falls short:** there is no code export and no path to another host — you're committed to Spaceship's platform for as long as the site is live. External domains must be pointed to Spaceship's nameservers to get SSL and full functionality, which is real setup work if your domain lives elsewhere. Product-selling (e-commerce) sites aren't supported yet, and the independent review base is much smaller than Wegic's, being a newer product.
+**Where Alf falls short:** there is no code export and no path to another host — you're committed to Spaceship's platform for as long as the site is live. External domains must be pointed to Spaceship's nameservers to get SSL and full functionality, which is real setup work if your domain lives elsewhere. Selling is limited to Stripe payment links (added May 2026) rather than a full store platform, and the independent review base is much smaller than Wegic's, being a newer product.
 
 **Pricing:** 30-day free trial with full feature access, then a flat $5/month.
 
@@ -2155,7 +2155,7 @@ If keeping an exit option matters to you, Wegic wins outright. If you'd rather n
 
 **Editing flexibility:** Alf wins on paper — it offers a visual editor alongside chat, while Wegic is conversation-only. If pixel-level control matters to you, neither is a great fit, but Alf gives you slightly more room to adjust manually.
 
-**E-commerce:** Neither is strong here. Wegic is described as weak for serious online stores; Alf doesn't support product-selling sites at all yet.
+**E-commerce:** Neither is strong here. Wegic is described as weak for serious online stores; Alf can sell products through Stripe payment links (added May 2026), a lighter model than a full store platform.
 
 **Domain flexibility:** Wegic doesn't require a specific registrar. Alf requires Spaceship nameservers for external domains to get SSL, which is friction if you're domained elsewhere.`,
       },
@@ -2285,7 +2285,7 @@ The deciding question: are you creating new video content or repurposing existin
     pricing: {
       tools: [
         { name: 'InVideo AI', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'Content creators turning scripts into video', affiliateLink: AFFILIATE_LINKS['invideo'] },
-        { name: 'Pictory', free: true, startingPrice: '$0 (trial)', paidFrom: '$19/mo', bestPlanFor: 'Bloggers repurposing written content to video', affiliateLink: 'https://pictory.ai?fpr=navneet24' },
+        { name: 'Pictory', free: true, startingPrice: '$0 (trial)', paidFrom: '$19/mo', bestPlanFor: 'Bloggers repurposing written content to video', affiliateLink: AFFILIATE_LINKS['pictory'] },
       ],
     },
     faqs: [
@@ -2514,7 +2514,7 @@ If you only pay for one: choose based on your primary use case. Writers and rese
     ],
     winnerSlug: 'perplexity',
     winnerName: 'Perplexity Pro',
-    winnerAffiliateLink: 'https://perplexity.ai?via=ainexus',
+    winnerAffiliateLink: AFFILIATE_LINKS['perplexity'],
     winnerAffiliateText: 'Try Perplexity (uses both GPT-4o + Claude)',
     pricing: {
       tools: [
@@ -3222,7 +3222,7 @@ Aragon: Upload photo → Configure style/setting → Generate variations → Rev
     ],
     winnerSlug: 'headshotpro',
     winnerName: 'HeadshotPro',
-    winnerAffiliateLink: 'https://www.headshotpro.com/?via=navneet',
+    winnerAffiliateLink: AFFILIATE_LINKS['headshotpro'],
     winnerAffiliateText: 'Get HeadshotPro $25 off',
     pricing: {
       tools: [
@@ -3297,7 +3297,7 @@ Winner: Zapier for breadth, Make for flexibility.`,
     ],
     winnerSlug: 'make',
     winnerName: 'Make',
-    winnerAffiliateLink: 'https://www.make.com/?via=navneet',
+    winnerAffiliateLink: AFFILIATE_LINKS['make'],
     winnerAffiliateText: 'Try Make free',
     pricing: {
       tools: [

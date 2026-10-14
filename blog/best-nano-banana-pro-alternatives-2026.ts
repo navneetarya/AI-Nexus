@@ -19,6 +19,7 @@
 // Word count: ~2,200 words | Published: 2026-07-28 | Author: Navneet Arya
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-nano-banana-pro-alternatives-2026',
@@ -206,7 +207,7 @@ const post: BlogPost = {
 <p>The tradeoff is a steeper learning curve. The interface has more moving parts, and getting consistently good output requires learning negative prompts and style presets rather than just typing a plain-language description.</p>
 <p><strong>Leonardo.ai: try the free plan first.</strong> 150 free credits/day, no credit card required to start.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -218,7 +219,7 @@ const post: BlogPost = {
 <p>It's also the most independently well-reviewed tool in this comparison: 4.6/5 on Trustpilot across nearly 2,900 reviews, and 4.7/5 on G2 across 94 reviews. Both are meaningfully higher than the editorial ratings available for Nano Banana Pro and Midjourney, which have no external platform listings to draw on. The free plan carries a watermark; the $9.99/month paid tier removes it.</p>
 <p><strong>PhotoRoom: try the free plan first.</strong> Free background removal, upgrade for no watermark.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
+  <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -231,7 +232,7 @@ const post: BlogPost = {
 <p>If image generation specifically, not general design, is the actual job, one of the dedicated tools above will outperform it.</p>
 <p><strong>Canva AI: try Magic Studio free.</strong> Generous free template library, limited free AI credits.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
+  <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.

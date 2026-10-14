@@ -4,6 +4,7 @@
 // Word count: ~1,900 words — written specifically for Indian audience, near-zero competition
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-tools-in-india-2026',
@@ -136,7 +137,7 @@ const post: BlogPost = {
 <p><strong>GST note:</strong> GST is added at checkout on the paid plan. Budget about 18% over the listed price.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a>: we may earn a fee at no extra cost to you.
@@ -166,7 +167,7 @@ const post: BlogPost = {
 <p><strong>GST note:</strong> Canva typically adds 18% GST for Indian subscribers. The annual Pro plan works out to about ₹4,700 after GST.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
+  <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a>: we may earn a fee at no extra cost to you.
@@ -180,7 +181,7 @@ const post: BlogPost = {
 <p><strong>No VPN needed:</strong> Fully easy to use from India. The free plan requires only an email signup.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a>: we may earn a fee at no extra cost to you.
@@ -193,7 +194,7 @@ const post: BlogPost = {
 <p><strong>Hindi prompts:</strong> Leonardo accepts prompts in English. It can generate images depicting Indian cultural contexts, Indian fashion, and Indian settings when described exactly in English prompts.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a>: we may earn a fee at no extra cost to you.
@@ -206,7 +207,7 @@ const post: BlogPost = {
 <p><strong>Use case for India:</strong> UPSC preparation notes, college project presentations, startup pitch decks, and teacher lesson materials are all strong use cases where Gamma saves substantial time.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a>: we may earn a fee at no extra cost to you.
@@ -219,7 +220,7 @@ const post: BlogPost = {
 <p>For Indian students managing multiple subjects, Notion AI can summarise lecture notes, generate quiz questions from content, and write structured study plans on command. For freelancers, it drafts project proposals and client update emails directly from your project notes.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://notion.so?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a>
+  <a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a>: we may earn a fee at no extra cost to you.
@@ -232,7 +233,7 @@ const post: BlogPost = {
 <p>The paid plan unlocks unlimited AI usage, but the free tier covers most personal and small-team needs.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+  <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a>: we may earn a fee at no extra cost to you.

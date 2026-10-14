@@ -117,7 +117,7 @@ const post: BlogPost = {
 <p>Perplexity's free plan is exceptional: unlimited standard web searches with source citations, daily limits on Pro Search (approximately 5 per day), and no time limit. For research, fact-checking, and information retrieval, where you want verified, cited answers rather than AI-generated guesses, Perplexity free covers 90% of individual use cases.</p>
 <p>The citation-first design means you can use it for research that needs attribution without worrying that AI is hallucinating. This is genuinely rare at the free tier. <strong>Best for:</strong> Students, researchers, anyone who fact-checks heavily. See our <a href="/tools/perplexity/" style="color:var(--a1);font-weight:600;">full Perplexity review →</a></p>
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -127,7 +127,7 @@ const post: BlogPost = {
 <p>Leonardo.ai's free plan gives 150 generation tokens per day, enough for approximately 30–40 images at standard resolution. This is not a trial; it renews daily. For content creators, social media managers, and designers who need regular AI image generation, 30–40 images per day is a functional professional allocation.</p>
 <p>The free plan also permits commercial use of generated images, which is more permissive than some competitors. <strong>Best for:</strong> Creators and marketers who need regular image generation without paying subscription fees. Full <a href="/tools/leonardo-ai/" style="color:var(--a1);font-weight:600;">Leonardo.ai review →</a></p>
 <div style="margin:14px 0 24px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 
 <h3>3. Grammarly: Unlimited Grammar Checking</h3>
@@ -142,14 +142,14 @@ const post: BlogPost = {
 <p>For individuals and small businesses producing marketing materials, social media content, and presentations without a designer, Canva free is a complete solution. See our <a href="/tools/canva-ai/" style="color:var(--a1);font-weight:600;">full Canva AI review →</a> for the paid-tier breakdown.</p>
 <p><strong>Best for:</strong> Non-designers who need professional-looking visuals regularly.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://canva.com?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva Free →</a>
+  <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva Free →</a>
 </div>
 
 <h3>5. Gamma: 400 AI Presentation Credits</h3>
 <p>Gamma's free plan includes 400 AI credits, roughly 10 full presentation generations. Presentations made on the free plan include Gamma branding on exports, but web-shared decks work without branding. For students, freelancers, and professionals who need occasional pitch decks or presentations, 400 credits is enough for several months of regular use.</p>
 <p><strong>Best for:</strong> Anyone who creates presentations occasionally and wants AI-generated structure and design without paying monthly.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://gamma.app?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
+  <a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a>
 </div>
 
 <h3>6. Replit: Unlimited Public Projects With AI</h3>
@@ -163,7 +163,7 @@ const post: BlogPost = {
 <p>Taskade's free plan provides unlimited projects, unlimited tasks, 5 workspaces, and 5 AI agent runs per month. The AI project generation (which creates a full task list from a goal description) works on the free plan — you just get fewer runs. For individual freelancers and solopreneurs managing their own projects, the free plan is functional for daily task management.</p>
 <p><strong>Best for:</strong> Freelancers and solopreneurs who want AI-assisted project management without a subscription.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+  <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
 </div>
 
 <h2>Free Plans That Are Less Useful Than They Seem</h2>
@@ -171,11 +171,11 @@ const post: BlogPost = {
 <p>Not every "free plan" is worth listing. Several prominent AI tools have free plans that are effectively non-functional for ongoing use:</p>
 <ul>
   <li><strong>Jasper:</strong>
-<p><a href="https://jasper.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p> 7-day trial only, no permanent free plan.</li>
+<p><a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p> 7-day trial only, no permanent free plan.</li>
   <li><strong>Writesonic:</strong>
-<p><a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p> 25 one-time credits, not renewable, effectively a trial.</li>
+<p><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p> 25 one-time credits, not renewable, effectively a trial.</li>
   <li><strong>Beautiful.ai:</strong>
-<p><a href="https://beautiful.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Beautiful.ai Free →</a></p> 14-day trial only.</li>
+<p><a href="${AFFILIATE_LINKS['beautiful-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Beautiful.ai Free →</a></p> 14-day trial only.</li>
   <li><strong>Murf AI:</strong> 10 minutes of voiceover per month, enough for testing, not production use.</li>
 </ul>
 <div style="margin:14px 0 24px;">

@@ -229,8 +229,8 @@ const post: BlogPost = {
 <p><strong>India pricing note:</strong> Taskade's free plan is fully accessible with no card required; the paid Plus tier is about ₹665/month via international card. Notion AI's add-on runs about ₹830/month on top of a Notion workspace subscription.</p>
 <p><strong>Best for:</strong> Solopreneurs juggling 3 or more active clients or projects who need automated task breakdowns rather than manual list-building. See also: <a href="/tools/taskade/">Taskade tool profile</a>.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
-  <a href="https://notion.so/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI →</a>
+  <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+  <a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -245,7 +245,7 @@ const post: BlogPost = {
 <p><strong>India pricing note:</strong> Perplexity is one of the few tools in this stack that accepts UPI and Indian cards directly. It runs about ₹1,250/month for Pro, with no international card workaround required. For full coverage, see the <a href="/blog/perplexity-ai-review-2026/">Perplexity AI Review 2026</a>.</p>
 <p><strong>Best for:</strong> Solopreneurs in consulting, content, or client-facing work where fact accuracy matters. Time spent researching is time not spent billing or building.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 
 <h2>4. AI Social Media Management: Ocoya</h2>
@@ -256,7 +256,7 @@ const post: BlogPost = {
 <p><strong>India pricing note:</strong> About ₹1,250/month for the Bronze tier, international credit card required — no UPI support currently.</p>
 <p><strong>Best for:</strong> Solopreneurs who post often, 3 or more times a week, across more than one platform. Ocoya bundles scheduling and caption generation into one workflow instead of two separate tools.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.ocoya.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Ocoya Trial →</a>
+  <a href="${AFFILIATE_LINKS['ocoya']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Ocoya Trial →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -270,7 +270,7 @@ const post: BlogPost = {
 <p>For a full comparison against other customer service AI platforms, including Intercom Fin and Zendesk AI, see <a href="/blog/best-ai-agents-customer-service-2026/">Best AI Agents for Customer Service 2026</a>.</p>
 <p><strong>Best for:</strong> Solopreneurs running an e-commerce store, SaaS product, or service business with a website. Tidio fits best where prospects have pre-purchase questions outside your working hours.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.tidio.com/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Tidio Free →</a>
+  <a href="${AFFILIATE_LINKS['tidio']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Tidio Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -284,7 +284,7 @@ const post: BlogPost = {
 <p><strong>India pricing note:</strong> About ₹833/month for Pro at current exchange rates, billed in USD with no UPI support. GST may apply for Indian business billing.</p>
 <p><strong>Best for:</strong> Solopreneurs running 3 or more client calls a week who need a reliable record of what was discussed, without manual note-taking.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://fireflies.ai/?fpr=navneet89" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Fireflies.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['fireflies']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Fireflies.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -297,7 +297,7 @@ const post: BlogPost = {
 <p><strong>India pricing note:</strong> About ₹1,250/month for Pro, with UPI and Indian card support directly. No international card workaround is needed, and a Hindi UI option is available.</p>
 <p><strong>Best for:</strong> Every solopreneur producing client-facing visual material. It's the category with the lowest barrier to entry, and the broadest day-to-day usefulness per dollar in this entire stack.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
+  <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

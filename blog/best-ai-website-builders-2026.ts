@@ -26,7 +26,7 @@ const post: BlogPost = {
     seoTitle: 'Best AI Website Builders 2026: 7 Tools Compared',
     metaDescription: 'Wix, Framer, Durable, Hostinger, 10Web, Readdy, and WordToSite compared by use case, pricing, and the type of site each builder can deliver.',
   datePublished: '2026-08-08',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-14',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '12 min read',
@@ -182,6 +182,14 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['wordtosite']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try WordToSite Free →</a>
 </div>
 
+<h3>9. Alf Website Studio: chat-based builder with hosting bundled</h3>
+<p><a href="/tools/alf-website-studio/" style="color:var(--a1);font-weight:600;">Alf Website Studio</a> is Spaceship's conversational site builder. You brief Alf the way you would brief a web developer, it drafts the copy, branding and images, and you refine by chat or in a visual editor. It sits closest to Wegic.</p>
+<p>Spaceship lists a 30-day free trial and then $5 a month, with hosting, domain connection and an SSL certificate handled automatically. Selling is limited to Stripe payment links, which Spaceship added in May 2026, so it is a lighter model than a full store platform.</p>
+<p>The trade-offs are lock-in and age. There is no code export, the site runs only on Spaceship's own hosting, and a domain registered elsewhere has to point to Spaceship nameservers. It is also a newer product with a small independent review base. See <a href="/compare/wegic-vs-alf-website-studio/" style="color:var(--a1);font-weight:600;">Wegic vs Alf Website Studio</a> for the lock-in comparison.</p>
+<div style="text-align:center;margin:20px 0">
+  <a href="${AFFILIATE_LINKS['alf-website-studio']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Alf Website Studio →</a>
+</div>
+
 <h3>A simple, non-AI alternative: SITE123</h3>
 <p>Not everyone needs AI generation. SITE123 is a plain drag-and-drop website builder that suits a first personal or small-business site. You pick a layout, add your content, and publish.</p>
 <p>The free plan runs on a SITE123 subdomain with 250MB of storage and bandwidth. Premium is $5.80/month (checked on SITE123's own pricing page) and includes a domain free for the first year, 3GB storage and bandwidth, and removal of the SITE123 tag. All premium plans carry a 14-day money-back guarantee.</p>
@@ -265,6 +273,10 @@ const post: BlogPost = {
 `,
 
   faqs: [
+    {
+      q: 'Is Alf Website Studio worth considering as an AI website builder?',
+      a: 'It is worth considering in one narrow case: you already use Spaceship for your domain and want a simple site with hosting, domain connection and SSL bundled into one plan. Spaceship lists a 30-day free trial and then $5 a month. The trade-offs are no code export, selling limited to Stripe payment links, and a newer product with a small independent review base.',
+    },
     {
       q: 'What is the best free AI website builder in 2026?',
       a: 'Wix has the most usable free plan among these five: a full AI-generated site with no time limit, though it carries Wix branding, a subdomain, and no e-commerce. Framer and Durable also offer genuine free tiers, but Framer\u2019s caps out at one page-limited site, and Durable\u2019s free plan doesn\u2019t include a custom domain. Hostinger and 10Web only offer trials rather than a permanent free tier.',

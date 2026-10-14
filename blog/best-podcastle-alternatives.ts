@@ -6,6 +6,7 @@
 // internal links added — see validate_blog_quality.py notes
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-podcastle-alternatives',
@@ -146,7 +147,7 @@ const post: BlogPost = {
 <p><a href="/compare/podcastle-vs-descript/" style="color:#0D9488;font-weight:600;">→ See full Podcastle vs Descript comparison</a> or read our <a href="/tools/descript/" style="color:#0D9488;font-weight:600;">on its own Descript review</a>.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://descript.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
+  <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a>: we may earn a fee at no extra cost to you.

@@ -151,7 +151,7 @@ const post: BlogPost = {
 <p><strong>The honest limitation:</strong> Ocoya doesn't have a permanent free plan. The $15/month Starter tier covers 1 workspace and 5 social profiles, which is fine for one brand. If you manage 10+ accounts, you'll need a higher tier. Compare with Buffer or Hootsuite in our <a href="/compare/ocoya-vs-buffer-vs-hootsuite/" style="color:var(--a1);font-weight:600;">Ocoya vs Buffer vs Hootsuite comparison</a>.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.ocoya.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Ocoya Free →</a>
+  <a href="${AFFILIATE_LINKS['ocoya']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Ocoya Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -164,7 +164,7 @@ const post: BlogPost = {
 <p><strong>Who it's for:</strong> Any creator who already makes long-form content and wants to extend its life across Instagram Reels, TikTok, YouTube Shorts, and LinkedIn. No need to spend 4 hours in CapCut per video.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a>
+  <a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -177,7 +177,7 @@ const post: BlogPost = {
 <p><strong>Practical workflow:</strong> Keep a "brand style prompt" saved in Leonardo (describing your color palette, mood, and aesthetic). Use it at the start of every generation session. Your images stay consistent without requiring manual template adjustment every time.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -200,7 +200,7 @@ const post: BlogPost = {
 <p>Where Rytr excels over Ocoya's caption tool is flexibility. You can run multiple tone variations, change the CTA, and ask for longer LinkedIn posts or shorter punchy Twitter hooks from the same brief. Ocoya is better when you want captions + scheduling integrated; Rytr is better when you just need raw caption copy fast and plan to schedule it yourself.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

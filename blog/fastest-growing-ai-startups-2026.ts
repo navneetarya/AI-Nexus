@@ -132,7 +132,7 @@ const post: BlogPost = {
 <p>The company's positioning stood out: AI search with citations, not chatbot answers. That difference from ChatGPT drove strong word-of-mouth among researchers, students, and professionals who couldn't accept AI hallucinations in their research.</p>
 <p>The growth driver: a specific use case (verified, cited answers) that served a real user need that ChatGPT didn't address well.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

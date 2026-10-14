@@ -80,7 +80,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">60–80% of knowledge workers</td>
       <td style="padding:10px 14px;">Consolidating</td>
       <td style="padding:10px 14px;">Grammarly, Jasper, Rytr</td>
-<p><a href="https://jasper.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p>
     </tr>
     <tr>
       <td style="padding:10px 14px;font-weight:600;">AI Voice Tools</td>
@@ -118,7 +118,7 @@ const post: BlogPost = {
 <p>Each serves a different group. Leonardo suits creators who need volume and free access. Midjourney is known for look and feel. Adobe Firefly offers safe, commercial use inside enterprise workflows. Browse the full category on our <a href="/best-ai-image-tools/" style="color:#0D9488;font-weight:600;">best AI image tools</a> page, or see how the two biggest names stack up head-to-head in our <a href="/blog/leonardo-vs-midjourney-2026/" style="color:#0D9488;font-weight:600;">Leonardo vs Midjourney comparison</a>.</p>
 <p>The key shift: image generation is no longer mostly used for fun, one-off outputs. In 2026, it's part of everyday marketing, e-commerce product photos, and game-dev work at scale.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -127,11 +127,11 @@ const post: BlogPost = {
 <h3>AI Writing Tools: Narrowing Around Leaders</h3>
 <p>The AI writing tools market is narrowing. Grammarly holds the grammar and editing space. It has strong network effects and built-in access at the OS and browser level.</p>
 <p>For AI-drafted content, <a href="/tools/jasper/" style="color:#0D9488;font-weight:600;">Jasper</a> leads the enterprise side. Writesonic and Rytr compete for small business and solo users. The long tail of AI writing tools (200+ launched in 2023-2024) is thinning. Users are cutting down on subscriptions. See the full category on our <a href="/best-ai-writing-tools/" style="color:#0D9488;font-weight:600;">best AI writing tools</a> page, with rankings in our <a href="/blog/best-ai-writing-tools-2026/" style="color:#0D9488;font-weight:600;">best AI writing tools 2026 guide</a>.</p>
-<p><a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
 <p>The driver here: users realised that tool #3 and tool #4 in their AI writing stack solved the same problem. The quality gap between them was small. Subscription fatigue is pushing users toward fewer, better-connected tools.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://grammarly.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 
 <h3>AI Voice: Fast Growth, Narrowing Ahead</h3>
@@ -155,7 +155,7 @@ const post: BlogPost = {
 <ol style="margin:10px 0 16px 24px;line-height:2.2;">
   <li><strong>Built-in tools over standalone apps:</strong> The best-growing AI tools in 2026 are increasingly built into existing workflows. Think GitHub Copilot in VS Code, Grammarly in Gmail, or Adobe Firefly in Photoshop. Standalone tools that don't plug into existing workflows are growing more slowly. Tools that meet users where they already work are growing faster.</li>
   <li><strong>Agent skills opening new markets:</strong> Agentic AI is opening up new product types. These are tools that can run multi-step tasks on their own. <a href="/tools/claude-code/" style="color:#0D9488;font-weight:600;">Claude Code</a>, Cursor Composer, and <a href="/tools/taskade/" style="color:#0D9488;font-weight:600;">Taskade</a> AI agents are early examples. This space is young but growing fast as model skills improve. For a deeper look at how these systems actually work, see our explainer on <a href="/blog/multi-agent-ai-systems-explained-2026/" style="color:#0D9488;font-weight:600;">multi-agent AI systems</a>.</li>
-<p><a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
   <li><strong>Faster growth in emerging markets:</strong> India, Southeast Asia, and Latin America are the fastest-growing markets by new AI tool users in 2026. English-language AI tools are the main entry point. But local language support (Hindi, Bahasa, Spanish) matters more and more for the next 100 million users.</li>
 </ol>
 `

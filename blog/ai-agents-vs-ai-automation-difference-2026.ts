@@ -142,9 +142,9 @@ const post: BlogPost = {
   <li><strong>Adaptation:</strong> If an intermediate step fails or produces an unexpected result, the agent reasons about what to do next. It does not stop because a condition wasn't matched. Instead, it reassesses and continues toward the goal.</li>
 </ul>
 <p><strong>Lindy.ai</strong> and <strong>Relevance AI</strong> are the clearest agent-native platforms in 2026. A Lindy agent manages an inbox. It reads each email, classifies intent, decides whether a response is warranted, drafts one if appropriate, and escalates anything that matches defined urgency criteria.</p>
-<p>All of this happens from a single goal instruction, without a human designing the step-by-step workflow. Relevance AI's Tools + Agents framework structures this reasoning more explicitly, which makes agent decision-making auditable and particularly valuable for sales and compliance-sensitive workflows. <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer">Relevance AI →</a> · <a href="${AFFILIATE_LINKS['lindy']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Lindy.ai ↗</a></p>
+<p>All of this happens from a single goal instruction, without a human designing the step-by-step workflow. Relevance AI's Tools + Agents framework structures this reasoning more explicitly, which makes agent decision-making auditable and particularly valuable for sales and compliance-sensitive workflows. <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Relevance AI →</a> · <a href="${AFFILIATE_LINKS['lindy']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Lindy.ai ↗</a></p>
 <div style="margin:14px 0 24px;">
-  <a href="https://relevanceai.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
+  <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI Free →</a>
   <a href="https://www.lindy.ai/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Lindy.ai →</a>
 </div>
 <p>The capability gain is real. The tradeoffs are also real. Agents are harder to audit when they make wrong decisions, cost more per execution than deterministic automation steps, and require careful specification of goal criteria and acceptable decision boundaries.</p>
@@ -242,7 +242,7 @@ const post: BlogPost = {
     ],
   },
   outboundCitations: [
-    { url: 'https://relevanceai.com/?via=navneet', label: 'Relevance AI — Agent Platform' },
+    { url: AFFILIATE_LINKS['relevance-ai'], label: 'Relevance AI — Agent Platform' },
     { url: 'https://www.lindy.ai/', label: 'Lindy.ai — AI Agent Platform' },
     { url: 'https://www.make.com/en/register?pc=navneet', label: 'Make.com — Automation Platform' },
     { url: 'https://n8n.io/', label: 'n8n — Open-Source Automation' },

@@ -3,6 +3,7 @@
 // Angle: same 5 tasks, 3 AIs, honest task-by-task verdict — no single winner
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026',
@@ -129,7 +130,7 @@ const post: BlogPost = {
 <p>Three different winners. None of them wins everything. That's the honest answer, and it's actually the most useful one if you're trying to decide where your $20/month goes.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -173,7 +174,7 @@ const post: BlogPost = {
 
 <p>This is Perplexity's home territory, and it showed. The output included numbered citations from recent articles, review sites, and official tool pages, all clickable, all checkable.</p>
 <p>The synthesis was accurate and the pricing was current. It had even picked up the Rytr pricing from a recent review. The structure was easy to turn into an actual section. Three of the citations were independently checked. They held up.</p>
-<p><a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
 
 <p>What stood out about ChatGPT Plus here: with browsing enabled, it got close, but two of the five pricing figures were slightly off. Not wildly wrong, just one version behind. It presented them with the same confidence as the accurate ones, which is the part that matters.</p>
 <p>Without independent verification, that would have meant publishing incorrect information. ChatGPT's browsing is useful but can't be trusted without verification in a way that Perplexity's citation model actively encourages.</p>
@@ -276,7 +277,7 @@ const post: BlogPost = {
 <p>On a tight budget? Stack the free tiers first. Perplexity free plus Claude free covers most of what you need. Pay only once you feel the limit.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://perplexity.ai/?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
   <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ChatGPT →</a>
   <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Claude →</a>
 </div>

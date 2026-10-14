@@ -90,10 +90,10 @@ const post: BlogPost = {
 
 <h2>How AI Agents Reshaped Customer Service in 2026</h2>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.tidio.com/?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Tidio Free →</a>
+  <a href="${AFFILIATE_LINKS['tidio']}" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Tidio Free →</a>
 </div>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.tidio.com/?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Tidio Free →</a>
+  <a href="${AFFILIATE_LINKS['tidio']}" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Tidio Free →</a>
 </div>
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How AI Agents Reshaped Customer Service in 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <img src="https://images.unsplash.com/photo-1609619385002-f40f1df9b7eb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A customer service dashboard shown on a workstation" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -336,7 +336,7 @@ const post: BlogPost = {
 </ol>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.tidio.com/?via=ainexus" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Tidio Free →</a>
+  <a href="${AFFILIATE_LINKS['tidio']}" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Tidio Free →</a>
 </div>
 <h2>Verdict: Which AI Customer Service Agent to Choose in 2026</h2>
 <p>For most teams evaluating this category fresh in mid-2026, the decision comes down to three scenarios:</p>

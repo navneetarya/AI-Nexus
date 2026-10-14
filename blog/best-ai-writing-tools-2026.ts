@@ -7,6 +7,7 @@
 // Word count: ~2,100 words
 
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-writing-tools-2026',
@@ -188,7 +189,7 @@ const post: BlogPost = {
 <p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review</a> &nbsp;·&nbsp; <a href="/compare/rytr-vs-writesonic/" style="color:#0D9488;font-weight:600;">→ Rytr vs Writesonic: which AI writer wins in 2026?</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a> — we may earn a fee at no extra cost to you.
@@ -204,7 +205,7 @@ const post: BlogPost = {
 <p><a href="/tools/quillbot/" style="color:#0D9488;font-weight:600;">→ Full QuillBot review</a> &nbsp;·&nbsp; <a href="/compare/grammarly-vs-quillbot/" style="color:#0D9488;font-weight:600;">→ Grammarly vs QuillBot: which tool do you actually need?</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://quillbot.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
+  <a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a> — we may earn a fee at no extra cost to you.
@@ -220,7 +221,7 @@ const post: BlogPost = {
 <p><a href="/blog/jasper-ai-alternatives/" style="color:#0D9488;font-weight:600;">→ Jasper alternatives: Writesonic, Rytr, and Copy.aThe comparison covers for solo creators</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a>
+  <a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a> — we may earn a fee at no extra cost to you.
@@ -235,7 +236,7 @@ const post: BlogPost = {
 <p><strong>Who should use Frase:</strong> Content marketers and SEO writers who publish at least 4–8 posts per month. It's the right fit if you need every post optimised for a specific target keyword. The $15/month Solo plan (4 documents/month) is tight, so consider the Basic plan at $45/month if you publish weekly.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.frase.io/pricing/?via=navneet66" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase Free →</a>
+  <a href="${AFFILIATE_LINKS['frase']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a> — we may earn a fee at no extra cost to you.
@@ -250,7 +251,7 @@ const post: BlogPost = {
 <p><a href="/tools/jasper/" style="color:#0D9488;font-weight:600;">→ Full Jasper review: pricing tiers, Brand Voice, and who it's actually worth it for</a> &nbsp;·&nbsp; <a href="/blog/jasper-ai-alternatives/" style="color:#0D9488;font-weight:600;">→ Jasper alternatives, cheaper options ranked</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://jasper.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a>
+  <a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Ad disclosure</a> — we may earn a fee at no extra cost to you.

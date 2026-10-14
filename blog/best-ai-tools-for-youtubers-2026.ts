@@ -180,7 +180,7 @@ const post: BlogPost = {
 <p>The free plan gives 60 minutes of processing per month, enough to test on 1–2 videos. The paid plan at $19/month covers serious channel operations with higher monthly limits.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://opus.pro?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a>
+  <a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -193,7 +193,7 @@ const post: BlogPost = {
 <p>The free plan covers 1 hour of transcription per month, enough for light use. The Creator plan at $12/month works for regular YouTube production.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://descript.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
+  <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -217,7 +217,7 @@ const post: BlogPost = {
 <p>The free plan provides basic keyword data and channel analytics. The paid plans ($7.50–$49/month) add competitor tracking, advanced keyword analysis, and AI coaching based on your channel's performance data. For channels serious about organic growth, VidIQ provides the data foundation for content decisions.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://vidiq.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try VidIQ Free →</a>
+  <a href="${AFFILIATE_LINKS['vidiq']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try VidIQ Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.

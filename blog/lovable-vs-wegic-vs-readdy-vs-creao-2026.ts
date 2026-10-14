@@ -56,7 +56,7 @@ const post: BlogPost = {
     },
     {
       q: 'Where does Alf Website Studio fit next to these four?',
-      a: 'Alf Website Studio is Spaceship\'s chat-based site builder and sits closest to Wegic. It lists a 30-day free trial and $5 a month with hosting, domain connection and SSL included. It has no code export and does not yet support product-selling sites, so it suits people who already use Spaceship for their domain.',
+      a: 'Alf Website Studio is Spaceship\'s chat-based site builder and sits closest to Wegic. It lists a 30-day free trial and $5 a month with hosting, domain connection and SSL included. It has no code export, and selling is limited to Stripe payment links, so it suits people who already use Spaceship for their domain.',
     },
   ],
   proscons: {
@@ -131,7 +131,7 @@ const post: BlogPost = {
 
 <h3>Also worth knowing: Alf Website Studio, with hosting bundled</h3>
 <p>Alf Website Studio is Spaceship's chat-based site builder, and it sits closest to Wegic. You brief Alf the way you would brief a web developer, it drafts the copy, branding and images, and you refine by chat or in a visual editor. Our <a href="/tools/alf-website-studio/" style="color:var(--a1);font-weight:600;">Alf review</a> has the detail.</p>
-<p>Spaceship lists a 30-day free trial and then $5 a month, with hosting, domain connection and an SSL certificate handled automatically. The trade-offs are no code export, no support yet for product-selling sites, and a requirement to use Spaceship nameservers if your domain is registered elsewhere. See <a href="/compare/wegic-vs-alf-website-studio/" style="color:var(--a1);font-weight:600;">Wegic vs Alf Website Studio</a> for the lock-in comparison.</p>
+<p>Spaceship lists a 30-day free trial and then $5 a month, with hosting, domain connection and an SSL certificate handled automatically. The trade-offs are no code export, selling limited to Stripe payment links (added May 2026), and a requirement to use Spaceship nameservers if your domain is registered elsewhere. See <a href="/compare/wegic-vs-alf-website-studio/" style="color:var(--a1);font-weight:600;">Wegic vs Alf Website Studio</a> for the lock-in comparison.</p>
 <div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['alf-website-studio']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Alf Website Studio</a></div>
 
 <h2>What the free plans give you</h2>

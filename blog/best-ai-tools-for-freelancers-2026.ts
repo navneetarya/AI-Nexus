@@ -76,8 +76,8 @@ const post: BlogPost = {
   content: `
 <h2>What Are the Best AI Tools for Freelancers in 2026?</h2>
 <p>The best AI tools for freelancers in 2026 cover four jobs. Grammarly polishes every client email and deliverable. Rytr writes proposals and content roughly three times faster. Canva AI covers design work without hiring a designer, and PhotoRoom turns a phone photo into a professional product shot.</p>
-<p><a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a></p>
-<p><a href="https://canva.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a></p>
 <p><a href="${AFFILIATE_LINKS['grammarly']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a></p>
 <p>Most freelancers I talk to have tried one or two AI tools, found them underwhelming for their specific work, and gone back to doing everything manually. The problem is usually tool selection — they tried a general-purpose chatbot when they needed a specialist tool.</p>
 <p>The right AI tools don't replace what you do. They handle the boring, repetitive parts — first drafts, background removal, scheduling, boilerplate code — so you can spend more time on the high-value work clients actually pay for.</p>
@@ -152,10 +152,10 @@ const post: BlogPost = {
 <p>The workflow that works: Use Rytr to generate 3 draft variations of any section → pick the best one → rewrite it in your voice. This process cuts first-draft time by 60–70% on any content piece under 800 words.</p>
 <p><strong>Honest limitation:</strong> Rytr struggles with highly technical or niche content. If you write for B2B SaaS clients or specialist industries, you'll spend more time editing than you save. In that case, pair it with Grammarly and treat it as a structural prompt rather than a content generator.</p>
 <p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review</a> &nbsp;·&nbsp; <a href="/compare/rytr-vs-writesonic/" style="color:#0D9488;font-weight:600;">→ Rytr vs Writesonic: which AI writer wins for freelancers?</a></p>
-<p><a href="https://writesonic.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://rytr.me/?via=navneet-arya" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -167,7 +167,7 @@ const post: BlogPost = {
 <p><strong>Freelance use case:</strong> A freelance brand designer can use Leonardo to generate 20 concept variations in an afternoon that would otherwise take 3 days of manual work. Show clients more options faster, close projects faster.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://leonardo.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -180,7 +180,7 @@ const post: BlogPost = {
 <p><a href="/tools/taskade/" style="color:#0D9488;font-weight:600;">→ Full Taskade review</a> &nbsp;·&nbsp; <a href="/compare/taskade-vs-notion/" style="color:#0D9488;font-weight:600;">→ Taskade vs Notion: which is better for freelancers?</a> &nbsp;·&nbsp; <a href="/compare/taskade-vs-asana/" style="color:#0D9488;font-weight:600;">→ Taskade vs Asana — full comparison</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.taskade.com/?via=rlqcxz" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
+  <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -192,7 +192,7 @@ const post: BlogPost = {
 <p><strong>Pricing reality check:</strong> At $15/month for 1 workspace and 5 social profiles, Ocoya makes sense if you're charging clients for social media management. If you're just managing your own accounts, the free plan of Buffer is probably enough.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.ocoya.com/?via=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Ocoya Free →</a>
+  <a href="${AFFILIATE_LINKS['ocoya']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Ocoya Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -218,7 +218,7 @@ const post: BlogPost = {
 <p><a href="/tools/jasper/" style="color:#0D9488;font-weight:600;">→ Full Jasper review: is it worth $39/month for freelancers?</a> &nbsp;·&nbsp; <a href="/blog/jasper-ai-alternatives/" style="color:#0D9488;font-weight:600;">→ Jasper AI alternatives for freelancers on a budget</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://jasper.ai?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a>
+  <a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

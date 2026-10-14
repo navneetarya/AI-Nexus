@@ -116,10 +116,10 @@ const post: BlogPost = {
 
 <div style="background:rgba(14,165,233,.08);border-left:4px solid #0ea5e9;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
   <p style="margin:0;font-weight:700;font-size:15px;">TL;DR: Best AI Image Upscaler 2026</p>
-  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best for ecommerce:</strong> <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">PhotoRoom</a>, free plan, Pro from $7.50/month.<br><strong>Best raw quality:</strong> Topaz Photo AI, from ~$39/month, no free tier.<br><strong>Best batch processing:</strong> Let's Enhance, from $9/month, credits roll over.<br><strong>Best free option:</strong> Upscale.media, free forever, 2–3 upscales/month.<br><strong>Best for old photos:</strong> Remini, free daily credits, $6.99/week Pro.</p>
+  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best for ecommerce:</strong> <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">PhotoRoom</a>, free plan, Pro from $7.50/month.<br><strong>Best raw quality:</strong> Topaz Photo AI, from ~$39/month, no free tier.<br><strong>Best batch processing:</strong> Let's Enhance, from $9/month, credits roll over.<br><strong>Best free option:</strong> Upscale.media, free forever, 2–3 upscales/month.<br><strong>Best for old photos:</strong> Remini, free daily credits, $6.99/week Pro.</p>
 </div>
 <div style="margin:14px 0 24px;">
-  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
+  <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
 </div>
 
 <h2 id="comparison-table">best ai image upscaler tools: 5 platforms compared</h2>
@@ -186,7 +186,7 @@ const post: BlogPost = {
 <p>First-time upgraders get a 7-day free trial on a paid plan, applied once per customer.</p>
 <p><strong>PhotoRoom: best for ecommerce sellers.</strong> Free plan available; Pro unlocks commercial use from $7.50/month.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
+  <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px;text-align:center"><a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.</p>
 
@@ -261,11 +261,11 @@ const post: BlogPost = {
 <p>For casual use as an <strong>ai upscaler for product photos</strong> or social content, this rarely matters. For archival, forensic, or documentary work, always keep the original file alongside the AI-enhanced version, and treat any upscaled result as an enhancement, not a restoration of ground truth.</p>
 
 <h2 id="final-verdict">Final verdict: worth it in 2026?</h2>
-<p>Yes, for the specific job each tool is built for. If you're a solo ecommerce seller trying to make product photos look listing-ready without hiring a photographer, start with <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">PhotoRoom's free plan</a>.</p>
+<p>Yes, for the specific job each tool is built for. If you're a solo ecommerce seller trying to make product photos look listing-ready without hiring a photographer, start with <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">PhotoRoom's free plan</a>.</p>
 <p>Upgrade to Pro once watermarks become the blocker. If raw upscale quality for print is the priority and you're comfortable paying a recurring subscription, Topaz Photo AI is the sharpest option here.</p>
 <p>If you just need to test the category for free before committing to anything, Upscale.media's genuinely free monthly tier beats every one-time trial credit pack in this comparison. And if the job is rescuing one irreplaceable old photo rather than a production workflow, Remini remains the fastest path to a usable result.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://photoroom.com?via=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Your Listing Photos Free →</a>
+  <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Your Listing Photos Free →</a>
 </div>
 <p>For related picks, see our guides to the <a href="/best-ai-image-tools/" style="color:#0ea5e9;font-weight:600;">best AI image generators</a> and <a href="/blog/best-ai-headshot-tools-linkedin-2026/" style="color:#0ea5e9;font-weight:600;">best AI headshot tools for LinkedIn</a>. If you're comparing full image-generation platforms rather than upscalers specifically, see our <a href="/blog/best-midjourney-alternatives-2026/" style="color:#0ea5e9;font-weight:600;">best Midjourney alternatives</a> roundup.</p>
   `.trim(),
