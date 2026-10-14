@@ -72,7 +72,11 @@ AFFILIATE_LINK_RE = re.compile(r"affiliateLink:\s*'([^']+)'")
 TRACKING_MARKERS = [
     r"[?&](via|ref|fpr|pc)=",   # query-param tracking codes
     r"/refer/",                  # path-based referral codes
-    r"\.sjv\.io",                # impact.com / partner-network subdomains
+    # impact.com tracking domains. Keep in sync with the blocking pattern in
+    # scripts/check-affiliate-links.mjs (sjv.io, pxf.io, ojrq.net, 7eer.net, evyy.net,
+    # ojmp.net, prf.hn, mno8.net, 8odi.net). pxf.io was missing, so YouCam, Retouch4me
+    # and Notta were wrongly reported as "no tracked link".
+    r"\.(?:sjv\.io|pxf\.io|ojrq\.net|7eer\.net|evyy\.net|ojmp\.net|prf\.hn|mno8\.net|8odi\.net)\b",
     r"get\.murf\.ai",
     r"try\.elevenlabs\.io",
 ]

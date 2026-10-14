@@ -31,6 +31,8 @@ const AFFILIATE_SLUGS = [
   // Added Oct 2026 (Phase 5): tracked-link tools the disclosure banner was missing for (validate_critical_fixes.py)
   'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence', 'pixverse', 'youcam', 'notta',
   'readdy', 'gitmind', 'retouch4me', 'wordtosite', 'signnow',
+  // Added Oct 14 2026: Impact (pxf.io) tools the disclosure banner was missing for, found once validate_critical_fixes.py learned the pxf.io domain
+  'lovable', 'wegic', 'transkriptor', 'renderforest', 'jetpack-ai-assistant',
   'writesonic', 'rytr', 'quillbot', 'frase', 'leonardo-ai', 'photoroom', 'looka',
   'pictory', 'opus-clip', 'invideo', 'murf-ai', 'podcastle', 'gamma', 'beautiful-ai',
   'ocoya', 'replit', 'elevenlabs', 'jasper', 'descript', 'perplexity', 'canva-ai',

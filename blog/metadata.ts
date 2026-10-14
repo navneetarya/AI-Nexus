@@ -21,6 +21,19 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "best-ai-photo-retouching-tools-2026",
+    "title": "Best AI Photo Retouching Tools 2026: Retouch4me vs YouCam vs PhotoRoom vs Topaz vs Remini",
+    "seoTitle": "Best AI Photo Retouching Tools 2026 (Compared)",
+    "metaDescription": "Retouch4me, YouCam, PhotoRoom, Topaz Photo AI and Remini compared by job: skin retouching, quick fixes, product photos and restoration. Pricing dated Oct 2026.",
+    "datePublished": "2026-10-14",
+    "dateModified": "2026-10-14",
+    "author": "Navneet Arya",
+    "category": "Image",
+    "readTime": "9 min read",
+    "ogImage": "https://ainexustools.online/og/blog/best-ai-photo-retouching-tools-2026.webp",
+    "excerpt": "Retouch4me is the pick for professional skin retouching in Photoshop, YouCam Online Editor is the easy browser option for quick fixes, PhotoRoom suits product photos, Topaz Photo AI recovers detail, and Remini rescues old face photos."
+  },
+  {
     "slug": "lovable-vs-wegic-vs-readdy-vs-creao-2026",
     "title": "Lovable vs Wegic vs Readdy vs CREAO 2026: Which AI Builder Fits Your Project?",
     "seoTitle": "Lovable vs Wegic vs Readdy vs CREAO (2026)",
@@ -39,7 +52,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "Domain Renewal Prices Compared 2026 (India Guide)",
     "metaDescription": "Spaceship, Domain.com, Network Solutions and BigRock compared on first-year vs renewal price, plus SSLs.com certificates and an India angle. Dated Oct 2026.",
     "datePublished": "2026-10-09",
-    "dateModified": "2026-10-10",
+    "dateModified": "2026-10-14",
     "author": "Navneet Arya",
     "category": "Design",
     "readTime": "9 min read",

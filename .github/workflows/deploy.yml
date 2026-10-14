@@ -70,6 +70,7 @@ jobs:
           # The sync check below will fail the build with a reminder if a
           # post is added to blog/ without a matching entry here.
           BLOG_SLUGS=(
+            best-ai-photo-retouching-tools-2026
             lovable-vs-wegic-vs-readdy-vs-creao-2026
             domain-renewal-prices-compared-2026
             best-ai-voice-cloning-for-podcasts-2026

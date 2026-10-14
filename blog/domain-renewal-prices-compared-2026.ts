@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Domain Renewal Prices Compared 2026 (India Guide)',
   metaDescription: 'Spaceship, Domain.com, Network Solutions and BigRock compared on first-year vs renewal price, plus SSLs.com certificates and an India angle. Dated Oct 2026.',
   datePublished: '2026-10-09',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-14',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '9 min read',
@@ -82,7 +82,7 @@ const post: BlogPost = {
     { url: 'https://domainoffer.net/tld/com/networksolutions', label: 'Price tracker: Network Solutions .com (26 May 2026)' },
     { url: 'https://domainoffer.net/tld/in/bigrock', label: 'Price tracker: BigRock .in (2026)' },
   ],
-  wordCount: 2100,
+  wordCount: 2800,
   content: `
 <p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> - we may earn a commission at no extra cost to you.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
@@ -175,6 +175,18 @@ const post: BlogPost = {
   <li><strong>Transfer:</strong> learn the transfer fee and the 60-day lock on new domains before you need them.</li>
   <li><strong>DNS:</strong> save a copy of your DNS records before changing nameservers.</li>
 </ol>
+
+<h2>Domain, hosting and SSL: who covers what</h2>
+<p>A domain is only one of three things a live site needs. The other two are hosting and HTTPS. This summary shows where each provider in this guide stands, using the details already covered above and in our launch guide.</p>
+<div style="overflow-x:auto;margin:20px 0 28px;"><table style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr style="background:rgba(13,148,136,.1);"><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Provider</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Domain</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Hosting</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">HTTPS</th></tr></thead><tbody>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Spaceship</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Yes, lowest renewal here</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Alf Website Studio at $5 a month after a 30-day trial</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Connected automatically by Alf</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">BigRock</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Yes, rupee pricing and .in</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Hosting plans in rupees</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Free Let's Encrypt on hosting plans</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Domain.com and Network Solutions</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Yes, higher renewal</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Check the exact bundle</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Check the exact bundle</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">WordPress.com (Automattic)</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Not the focus here</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Managed WordPress</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Handled by the host</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">SSLs.com</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">No</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">No</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Separate certificates</td></tr>
+</tbody></table></div>
+<p>The simplest route for a small site is a builder that includes hosting and HTTPS. <a href="/tools/alf-website-studio/" style="color:var(--a1);font-weight:600;">Alf Website Studio</a> is Spaceship's version of that. Its documentation says it uses Spaceship's own hosting, so a domain registered elsewhere has to point to Spaceship nameservers.</p>
+<p>If your site runs on WordPress, <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">WordPress.com</a> is a managed host from Automattic that handles updates, security and SSL. Buy a separate certificate only when your host does not provide HTTPS.</p>
 
 <h2>Where this fits in a full website launch</h2>
 <p>A domain is one of three launch decisions. The others are hosting and HTTPS, and many AI builders include both. Read <a href="/blog/launch-an-ai-built-website-2026/" style="color:var(--a1);font-weight:600;">How to Launch an AI-Built Website</a> for the full sequence.</p>
