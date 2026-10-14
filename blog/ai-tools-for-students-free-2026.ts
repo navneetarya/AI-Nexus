@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Tools for Students 2026 (No Card Needed)',
   metaDescription: '5 AI tools every student should bookmark in 2026 — all permanently free, no credit card needed. Compared for essays, research, coding, and slides.',
   datePublished: '2026-04-30',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-14',
   author: 'Navneet Arya',
   category: 'Students',
   readTime: '9 min read',
@@ -82,6 +82,7 @@ const post: BlogPost = {
   wordCount: 2260,
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
@@ -230,7 +231,7 @@ const post: BlogPost = {
 <p><strong>Outline before you build slides:</strong> <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> turns lecture notes, a PDF or a link into an AI mind map that a project group can edit together. The free plan allows up to 10 mind maps and 20 AI attempts.</p>
 <h2>5. Replit — Best for Coding Assignments & Debugging</h2>
 <img src="https://images.unsplash.com/photo-1758270705317-3ef6142d306f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A student team discussing a project on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p><strong>Category: Coding · Free Plan: Unlimited projects + AI assist · Paid: from $25/month · <a href="/tools/replit/" style="color:var(--a1);font-weight:600;">Full Replit Review →</a></strong></p>
+<p><strong>Category: Coding · Free Plan: Unlimited projects + AI assist · Paid: from $20/month · <a href="/tools/replit/" style="color:var(--a1);font-weight:600;">Full Replit Review →</a></strong></p>
 <p>Replit is a browser-based code editor with a built-in AI assistant. No installation, no environment setup, no "it works on my machine" debugging. You open a browser, create a project, and start coding.</p>
 <p>The AI assistant explains errors in plain English, suggests fixes, and completes code snippets based on your comments. For students learning to code or working on assignments in Python, JavaScript, or Java, this eliminates the most time-consuming part of the workflow: interpreting cryptic error messages.</p>
 <p>The <strong>Replit AI explain feature</strong> is particularly useful for learning: highlight any block of code and Replit explains what each line does in plain English. For students reading provided starter code or example solutions, this converts "I have no idea what this does" into genuine understanding in 30 seconds.</p>
@@ -308,7 +309,9 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Quillbot →</a>
 </div>
 
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/ai-tools-for-teachers-2026/">Best AI Tools for Teachers in 2026</a>, <a href="/blog/is-grammarly-premium-worth-it-2026/">Is Grammarly Premium Worth It in 2026?</a>.</p>
+`.trim(),
 };
 
 export default post;

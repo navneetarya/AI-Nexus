@@ -76,6 +76,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>Which AI Is Best for Content Creators: Grok 4, ChatGPT, or Claude?</h2>
 <p>For content creators in 2026, Claude is the best choice for quality-first long-form drafts. <a href="/tools/chatgpt/">ChatGPT</a> is the most versatile option for everyday content across formats. Grok 4 is the strongest pick when a piece depends on real-time, research-backed information.</p>
@@ -301,6 +302,8 @@ const post: BlogPost = {
 <p><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
 <p><a href="${AFFILIATE_LINKS['grammarly']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a></p>
 <p>If budget is a hard constraint, the <a href="/blog/chatgpt-alternatives-free-2026/" style="color:#0D9488;font-weight:600;">best free ChatGPT alternatives</a> guide covers everything available at zero cost. And for the broader chatbot landscape beyond content creation, see <a href="/blog/best-ai-chatbot-2026/" style="color:#0D9488;font-weight:600;">Best AI Chatbot 2026</a>.</p>
+
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-seo-content-optimization-tools-2026/">Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)</a>.</p>
 `,
 };
 

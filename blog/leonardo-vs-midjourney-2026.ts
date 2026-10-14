@@ -74,6 +74,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>Leonardo.ai vs Midjourney: Which Is Worth It in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="AI-generated digital artwork on a screen, comparing Leonardo.ai and Midjourney image generator styles" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
@@ -99,7 +100,7 @@ const post: BlogPost = {
   <thead>
     <tr style="background:rgba(13,148,136,.1);">
       <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Feature</th>
-      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Leonardo.ai</th>
+      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);"><a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Leonardo.ai</a></th>
       <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Midjourney</th>
     </tr>
   </thead>

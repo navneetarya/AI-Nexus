@@ -74,6 +74,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Are the Best Grammarly Alternatives in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1615458318132-1f151a3d18f4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black and silver audio mixer board on a desk" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -188,6 +189,8 @@ const post: BlogPost = {
 <p>For most people looking for a Grammarly alternative: <strong>start with QuillBot</strong>. The free plan is genuinely functional, it does things Grammarly doesn't (paraphrasing, summarising, citations), and the $9.95/month premium is cheaper than Grammarly. If you write original content AND need real-time app integration, consider running both — many writers use Grammarly while typing and QuillBot to refine drafts.</p>
 <p>If your main need is content generation rather than error correction: Rytr ($9/month) or Writesonic ($16/month) solve a different problem than Grammarly entirely. They're not replacements. They're different tools for a different job.</p>
 <p>If you're a serious author wanting deep editorial analysis: ProWritingAid's one-time pricing ($120/year lifetime deal sometimes offered) makes it competitive with Grammarly's annual plan. It also provides significantly more depth for long-form writing craft.</p>
+
+<p><strong>Related reading:</strong> <a href="/blog/is-grammarly-premium-worth-it-2026/">Is Grammarly Premium Worth It in 2026?</a>.</p>
 `,
 };
 

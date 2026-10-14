@@ -38,6 +38,7 @@ const post: BlogPost = {
   myTake: " The figures come straight from each tool's live pricing page rather than reusing older cached numbers, since Starter and Creator pricing on ElevenLabs specifically has moved before. The gap that surprised me most preparing this: Murf, a genuinely strong voiceover tool otherwise, doesn't offer cloning to anyone below Enterprise.",
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio mixing console dials, representing AI voice cloning pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
@@ -93,6 +94,7 @@ const post: BlogPost = {
 <h2>ElevenLabs: the cheapest self-serve entry point</h2>
 
 <p>ElevenLabs splits cloning into two tiers. Instant Voice Cloning unlocks on the $6/month Starter plan, using about one minute of clean sample audio for a fast, usable clone. Professional Voice Cloning, a higher-fidelity clone across all 29 supported languages, unlocks on the $22/month Creator plan (discounted to $11 for the first month). See our <a href="/blog/elevenlabs-pricing-character-credits-2026/">full ElevenLabs pricing breakdown</a> for the exact credit allowances behind each tier.</p>
+<p><a style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;" href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Try Murf AI free →</a></p>
 
 <p><strong>Best for:</strong> anyone who wants to start cloning today without a large upfront commitment. Read the full <a href="/tools/elevenlabs/">ElevenLabs review</a>.</p>
 
@@ -155,6 +157,8 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript →</a>
 </div>
 
+
+<p><strong>Related reading:</strong> <a href="/blog/llm-api-pricing-comparison-2026/">Claude vs GPT vs Gemini API Pricing (Aug 2026)</a>.</p>
 `,
 
   faqs: [

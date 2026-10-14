@@ -34,6 +34,7 @@ const post: BlogPost = {
   myTake: "This guide focuses on the actual jobs podcasters use voice generation for, not a repeat of our broader podcast tools guide. Fixing one bad line beats a full re-record almost every time.",
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img src="https://images.unsplash.com/photo-1593697909683-bccb1b9e68a4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A podcaster sitting in front of a microphone in a recording studio" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
@@ -136,6 +137,8 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle →</a>
 </div>
 
+
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-voice-generators-for-voiceovers-2026/">Best AI Voice Generators for Voiceovers 2026</a>, <a href="/blog/best-ai-voice-generators-for-youtube-2026/">Best AI Voice Generators for YouTube 2026</a>.</p>
 `,
 
   faqs: [

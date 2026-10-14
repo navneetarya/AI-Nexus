@@ -513,7 +513,9 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:8px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you. See our <a href="/methodology/">editorial methodology</a>.
 </p>
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-photo-retouching-tools-2026/">Best AI Photo Retouching Tools 2026</a>.</p>
+`.trim(),
 };
 
 export default post;

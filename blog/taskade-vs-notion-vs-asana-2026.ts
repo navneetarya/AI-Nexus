@@ -115,7 +115,7 @@ const post: BlogPost = {
   <thead>
     <tr style="background:rgba(13,148,136,.1);">
       <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Feature</th>
-      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Taskade</th>
+      <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);"><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Taskade</a></th>
       <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Notion</th>
       <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Asana</th>
     </tr>
@@ -262,7 +262,9 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade →</a>
 </div>
 
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/best-notion-ai-alternatives-2026/">Best Notion AI Alternatives 2026</a>.</p>
+`.trim(),
 };
 
 export default post;

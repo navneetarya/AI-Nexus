@@ -84,6 +84,7 @@ const post: BlogPost = {
   wordCount: 1660,
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Perplexity is worth it for research-heavy work — questions that require pulling together information from multiple sources, like academic research, technical comparisons, or competitive analysis. Google still wins for navigational searches, local results, breaking news, and shopping. The free plan handles most everyday research adequately; <strong>Perplexity Pro at $20/month</strong> is justified for heavy users who need GPT-4o, Claude 3.5, Deep Research, and Spaces. Most people end up using both tools for different query types.</p>
@@ -255,6 +256,8 @@ const post: BlogPost = {
 <h2>Final Verdict</h2>
 <p>Perplexity is the best tool available in 2026 for research-intensive queries. If your work involves regularly synthesising information from multiple sources, writing research reports, building competitive analyses, answering complex technical questions, the free plan alone will save you meaningful time. Perplexity Pro at $20/month is justified for heavy users.</p>
 <p>It is not a Google replacement. It is a Google supplement that handles the search jobs Google has always done poorly. The users getting the most value from Perplexity are those who have stopped trying to make it replace everything. Instead they route specific query types to it, the ones where a synthesised answer beats ten links every time.</p>
+
+<p><strong>Related reading:</strong> <a href="/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/">ChatGPT Atlas vs Perplexity Comet vs Dia (2026)</a>, <a href="/blog/best-notion-ai-alternatives-2026/">Best Notion AI Alternatives 2026</a>.</p>
 `,
 };
 

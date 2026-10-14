@@ -52,6 +52,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Is the Best AI Chatbot in 2026?</h2>
 <p>The best AI chatbot in 2026 depends on the job. <a href="/tools/chatgpt/">ChatGPT</a> (GPT-5.5) is the strongest all-rounder, and Claude 3.5 Sonnet is the sharpest for writing and analysis. Gemini pulls ahead on live data and Google Workspace integration, and <a href="/tools/perplexity/">Perplexity</a> wins when the real job is research with citations, not conversation.</p>
@@ -173,6 +174,8 @@ const post: BlogPost = {
 <h2>Related Reading</h2>
 <p>Want a closer look at two of these tools head-to-head? See our full <a href="/blog/perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026/">Perplexity Pro vs ChatGPT Plus vs Claude Pro comparison for freelancers</a>. We also have a standalone <a href="/blog/perplexity-ai-review-2026/">Perplexity AI review</a> and a full <a href="/blog/google-gemini-ai-review-2026/">Google Gemini review</a>.</p>
 <p>If budget is the deciding factor, the <a href="/blog/chatgpt-alternatives-free-2026/">best free ChatGPT alternatives</a> guide covers zero-cost options. Content creators should also read <a href="/blog/grok-4-vs-chatgpt-vs-claude-content-creators-2026/">Grok 4 vs ChatGPT vs Claude for content creators</a> for a use-case-specific breakdown.</p>
+
+<p><strong>Related reading:</strong> <a href="/blog/ai-contract-analysis-tools-2026/">AI Contract Analysis Tools 2026</a>.</p>
 `,
 };
 

@@ -1,4 +1,5 @@
 ﻿import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-tools-for-developers-2026',
@@ -43,6 +44,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For daily coding in VS Code: <strong><a href="/tools/github-copilot/">GitHub Copilot</a> ($10/mo)</strong>. For an AI-native IDE: <strong><a href="/tools/cursor/">Cursor</a> ($20/mo)</strong>. For complex debugging and code explanation: <strong>Claude 3.5 Sonnet ($20/mo)</strong>. For browser-based development without setup: <strong>Replit (free)</strong>.</p>
@@ -100,7 +102,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">$20/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Replit</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Replit</a></td>
       <td style="padding:10px 14px;">Browser-based development</td>
       <td style="padding:10px 14px;">✅ Functional</td>
       <td style="padding:10px 14px;">$7/mo</td>

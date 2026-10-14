@@ -430,8 +430,10 @@ const post: BlogPost = {
 </ol>
 
 <p>For more AI productivity tool recommendations, see: <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Freelancers 2026</a>, <a href="/blog/best-ai-tools-for-startups-2026/" style="color:#0ea5e9;font-weight:600;">Best AI Tools for Startups 2026</a>, and <a href="/blog/taskade-vs-notion-vs-asana-2026/" style="color:#0ea5e9;font-weight:600;">Taskade vs Notion vs Asana 2026</a>. You can also review the full <a href="/tools/fireflies/" style="color:#0ea5e9;font-weight:600;">Fireflies.ai tool page</a> or explore all <a href="/best-ai-productivity-tools/" style="color:#0ea5e9;font-weight:600;">AI Productivity Tools</a> reviewed on AI Nexus.</p>
-<p><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
-  `.trim(),
+<p><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a> <a href="/tools/taskade/" style="font-size:13px;color:#0D9488;font-weight:600;">Read our Taskade review</a></p>
+  
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-transcription-software-2026/">Best AI Transcription Software 2026</a>.</p>
+`.trim(),
 };
 
 export default post;

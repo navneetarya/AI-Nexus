@@ -33,6 +33,7 @@ const post: BlogPost = {
   myTake: "The figures come from ElevenLabs' live pricing page and independent pricing breakdowns. The key decision is whether your monthly output exceeds 30 minutes, because that is where Creator becomes more economical than Starter.",
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Sound waveform on a screen, representing AI voice generation pricing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 <p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.</p>
 
@@ -112,7 +113,8 @@ const post: BlogPost = {
 
 <h2>What a "credit" actually buys you</h2>
 
-<p>One credit is not a fixed amount. Its value depends on the ElevenLabs product.</p><p>On Multilingual v2, one input character costs one credit. A 150-word script has roughly 900 characters, so it costs about 900 credits. The Free plan covers roughly ten such scripts before the monthly reset.</p>
+<p>One credit is not a fixed amount. Its value depends on the ElevenLabs product.</p>
+<p><a style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;" href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Try Murf AI free →</a></p><p>On Multilingual v2, one input character costs one credit. A 150-word script has roughly 900 characters, so it costs about 900 credits. The Free plan covers roughly ten such scripts before the monthly reset.</p>
 
 <p>Flash and Turbo prioritize lower latency over maximum realism. They cost roughly half a credit per character.</p><p>The same script costs about 450 credits on Flash instead of 900 on Multilingual v2. This can double the value of a plan for real-time agents, first drafts, or internal review copies.</p>
 
@@ -163,6 +165,8 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs' Starter plan →</a>
 </div>
+
+<p><strong>Related reading:</strong> <a href="/blog/llm-api-pricing-comparison-2026/">Claude vs GPT vs Gemini API Pricing (Aug 2026)</a>, <a href="/blog/murf-ai-pricing-2026/">Murf AI Pricing</a>.</p>
 `,
 
   faqs: [

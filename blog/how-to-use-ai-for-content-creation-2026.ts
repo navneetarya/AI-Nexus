@@ -14,7 +14,7 @@ const post: BlogPost = {
   seoTitle: 'How to Use AI for Content Creation in 2026',
   metaDescription: 'Write an article, generate an image, repurpose it as a video, and create a podcast — all in one afternoon. See the AI content workflow for 2026.',
   datePublished: '2026-05-05',
-  dateModified: '2026-10-09',
+  dateModified: '2026-10-14',
   author: 'Navneet Arya',
   category: 'Guides',
   readTime: '10 min read',
@@ -77,6 +77,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>How Do You Use AI for Content Creation in 2026?</h2>
 <p>Using AI for content creation in 2026 means running one idea through four AI-assisted stages: writing, images, video, and audio. The right workflow can cut the time between an idea and a finished piece of content by 60–80%. The bottleneck usually isn't any single tool — it's the handoffs between them.</p>
@@ -189,7 +190,7 @@ const post: BlogPost = {
 </div>
 
 <h3>Short-Form Video from Text Prompts with InVideo AI</h3>
-<p>For Reels, YouTube Shorts, and TikTok, <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">InVideo AI</a> takes a text prompt or topic and produces a complete short-form video in under 5 minutes. Footage, voiceover, captions, and music are all included. The free plan includes 10 video exports per month with an InVideo watermark, enough to test the workflow before committing to the $25/month paid plan.</p>
+<p>For Reels, YouTube Shorts, and TikTok, <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">InVideo AI</a> takes a text prompt or topic and produces a complete short-form video in under 5 minutes. Footage, voiceover, captions, and music are all included. The free plan includes 10 video exports per month with an InVideo watermark, enough to test the workflow before committing to the $20/month paid plan.</p>
 <p>The highest-quality use of InVideo for content creators is repurposing key sections from longer articles into 60-second short-form videos that drive traffic back to the full post. Enter the key point from your article as a prompt, set the duration to 60 seconds, and let InVideo generate.</p><p>Then spend 5 minutes adjusting the script and swapping out any footage that does not fit. The result is a platform-native short video that would otherwise take 45–90 minutes to produce manually.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>
@@ -267,7 +268,9 @@ const post: BlogPost = {
 <p>The workflow in this guide minimises these failure modes by keeping humans in the editing loop at each stage. The tools handle volume and production speed; you handle accuracy, brand voice, and editorial judgment.</p>
 <p>That division of labour is what makes AI content creation genuinely useful in 2026. It's also what separates creators who get results from those who do not.</p>
 <p style="font-size:12px;color:var(--text-muted,#888);">This guide reflects independent, hands-on workflow testing. See our <a href="/disclosure/">affiliate disclosure</a> and <a href="/methodology/">editorial methodology</a>.</p>
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-seo-content-optimization-tools-2026/">Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)</a>, <a href="/blog/how-to-use-rytr-to-write-blog-posts/">How to Use Rytr to Write Blog Posts (Step-by-Step, 2026)</a>, <a href="/blog/best-invideo-alternatives-2026/">Best InVideo AI Alternatives 2026</a>.</p>
+`.trim(),
 };
 
 export default post;

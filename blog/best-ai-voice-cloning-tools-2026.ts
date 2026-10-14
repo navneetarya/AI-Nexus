@@ -29,6 +29,7 @@ const post: BlogPost = {
   myTake: "This guide uses each tool's cloning requirements and consent policies directly for this guide. The tool comparison matters less here than most guides suggest, since the real risk in this category is consent, not quality.",
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Our top pick</strong>
   <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">ElevenLabs for voice cloning</p>

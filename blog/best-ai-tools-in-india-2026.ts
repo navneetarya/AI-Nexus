@@ -295,7 +295,9 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Pro →</a>
 </div>
 
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/best-nano-banana-pro-alternatives-2026/">Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)</a>, <a href="/blog/ai-tools-for-teachers-2026/">Best AI Tools for Teachers in 2026</a>, <a href="/blog/best-ai-logo-makers-free-2026/">Best Free AI Logo Makers in 2026</a>.</p>
+`.trim(),
 };
 
 export default post;

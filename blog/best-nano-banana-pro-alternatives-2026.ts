@@ -97,6 +97,7 @@ const post: BlogPost = {
   ],
   wordCount: 2206,
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(245,158,11,.08);border-left:4px solid #f59e0b;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#f59e0b;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
@@ -299,6 +300,8 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom →</a>
 </div>
 
+
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-photo-upscaler-tools-2026/">Best AI Image Upscaler Tools 2026</a>.</p>
 `,
 };
 

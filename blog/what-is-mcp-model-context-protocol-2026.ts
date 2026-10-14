@@ -236,7 +236,9 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="/blog/ai-agents-vs-ai-automation-difference-2026/" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Read: AI Agents vs AI Automation →</a>
 </div>
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/how-to-beat-ats-resume-screening-2026/">How to Beat ATS Resume Screening in 2026 (What Actually Works)</a>.</p>
+`.trim(),
   wordCount: 1890,
   proscons: {
     pros: [

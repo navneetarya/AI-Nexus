@@ -30,6 +30,7 @@ const post: BlogPost = {
   myTake: "This comparison covers both tools against the same four YouTube formats. The honest answer is that channel format decides the winner more than raw voice quality.",
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <img src="https://images.unsplash.com/photo-1760768550727-00f5e02feb72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A camera on a tripod set up in a minimalist studio for filming" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>YouTube creators ask about AI voice generators for one of two reasons. Either they don't want to be on camera, or they need narration faster than recording it themselves allows. Either way, the right tool depends on whether you need a natural-sounding narrator voice or your own cloned voice at scale.</p>
@@ -37,6 +38,7 @@ const post: BlogPost = {
 <p>Both are valid, and both point to the same short list of tools: which one actually fits your channel's format?</p>
 
 <p>This guide compares ElevenLabs and Murf AI against four real YouTube formats: short-form, long-form, explainer, and faceless content. For the full tool breakdown, see our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>. This one focuses only on what matters for YouTube specifically.</p>
+<p><a style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;" href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Try ElevenLabs free →</a></p>
 
 <h2>TL;DR: which AI voice fits your channel</h2>
 
@@ -54,17 +56,17 @@ const post: BlogPost = {
     <tbody>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Short-form (Shorts, Reels-style)</td>
-        <td style="padding:10px 14px">ElevenLabs</td>
+        <td style="padding:10px 14px"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></td>
         <td style="padding:10px 14px">Fast turnaround, consistent voice at volume</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Long-form explainer</td>
-        <td style="padding:10px 14px">Murf AI</td>
+        <td style="padding:10px 14px"><a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Murf AI</a></td>
         <td style="padding:10px 14px">Script-to-video sync saves editing time</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Faceless channel</td>
-        <td style="padding:10px 14px">ElevenLabs</td>
+        <td style="padding:10px 14px"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></td>
         <td style="padding:10px 14px">Cloned voice builds channel identity</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -155,8 +157,8 @@ const post: BlogPost = {
     <thead>
       <tr style="background:rgba(13,148,136,.08)">
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Feature</th>
-        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">ElevenLabs</th>
-        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Murf AI</th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600"><a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Murf AI</a></th>
       </tr>
     </thead>
     <tbody>
@@ -214,6 +216,8 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
   <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
+
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-voice-for-faceless-youtube-channels/">Best AI Voice for Faceless YouTube Channels 2026</a>, <a href="/blog/best-ai-voice-generators-for-voiceovers-2026/">Best AI Voice Generators for Voiceovers 2026</a>, <a href="/blog/best-ai-voice-generators-for-podcasts-2026/">Best AI Voice Generators for Podcasts 2026</a>.</p>
 `,
 
   faqs: [

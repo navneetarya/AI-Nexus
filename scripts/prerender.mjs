@@ -4588,7 +4588,7 @@ const BLOG_POSTS = [
       { q: 'What is the best Jasper AI alternative?', a: "Writesonic is the best Jasper alternative for long-form blog content at $19/month vs Jasper's $39/month. For short-form writing, Rytr at $9/month unlimited is significantly cheaper. For SEO-specific content, Frase at $15/month offers SERP analysis that Jasper doesn't include." },
       { q: 'Why are people looking for Jasper alternatives?', a: "The most common reasons are: (1) Jasper's pricing starts at $39/month — expensive for solo creators. (2) Jasper's output quality has been matched by newer, cheaper tools. (3) Jasper removed the free trial. (4) Many users only need specific features that cheaper tools cover better." },
       { q: 'Is Writesonic better than Jasper?', a: "For blog content creation, Writesonic matches Jasper's output quality at less than half the price. Jasper is better for enterprise teams needing brand voice training and team collaboration features. For individual creators and small teams, Writesonic is the better value." },
-      { q: 'What is the cheapest Jasper alternative?', a: "Rytr at $9/month unlimited is the cheapest full-featured Jasper alternative. It covers 40+ use cases in 30+ languages. The free plan (10,000 characters/month) lets you test before paying. For enterprise features at a lower price, Writesonic at $19/month is the next step up." },
+      { q: 'What is the cheapest Jasper alternative?', a: "Rytr at $9/month unlimited is the cheapest full-featured Jasper alternative. It covers 40+ use cases in 30+ languages. The free plan (10,000 characters/month) lets you test before paying. For enterprise features at a lower price, Writesonic at $16/month is the next step up." },
     ],
   },
   // Week 2 blog posts — H7, H9, H10, H15, M8, M9
@@ -8006,7 +8006,7 @@ const CATEGORY_PRICING = {
     { name: 'Podcastle', price: 'Free + $11.99/mo', bestFor: 'Recording podcasts remotely' },
     { name: 'ElevenLabs', price: 'Free + $5/mo', bestFor: 'The most realistic voice cloning' },
     { name: 'Murf AI', price: 'Free + $19/mo', bestFor: 'Studio-style video narration' },
-    { name: 'Descript', price: 'Free + $12/mo', bestFor: 'Editing audio like a text document' },
+    { name: 'Descript', price: 'Free + $16/mo', bestFor: 'Editing audio like a text document' },
   ],
   'best-ai-marketing-tools': [
     { name: 'Ocoya', price: 'From $15/mo', bestFor: 'Social captions plus scheduling in one tool' },

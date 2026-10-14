@@ -44,14 +44,15 @@ const post: BlogPost = {
 <h2>TL;DR: Murf AI vs ElevenLabs for voiceover work</h2>
 
 <p>Murf AI wins for finished commercial voiceovers because its script-to-video sync times narration to existing footage on its own, a step <a href="/tools/elevenlabs/">ElevenLabs</a> leaves for a separate editor. ElevenLabs wins if voice cloning matters more than that production workflow.</p>
+<p><a style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;" href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Try ElevenLabs free →</a></p>
 
 <div style="overflow-x:auto;margin:28px 0">
   <table style="width:100%;border-collapse:collapse;font-size:14px">
     <thead>
       <tr style="background:rgba(13,148,136,.08)">
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Factor</th>
-        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Murf AI</th>
-        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">ElevenLabs</th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600"><a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Murf AI</a></th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></th>
       </tr>
     </thead>
     <tbody>
@@ -141,17 +142,17 @@ const post: BlogPost = {
     <tbody>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Video ad voiceover</td>
-        <td style="padding:10px 14px">Murf AI</td>
+        <td style="padding:10px 14px"><a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Murf AI</a></td>
         <td style="padding:10px 14px">Timeline sync matches footage automatically</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">E-learning modules</td>
-        <td style="padding:10px 14px">Murf AI</td>
+        <td style="padding:10px 14px"><a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Murf AI</a></td>
         <td style="padding:10px 14px">Easy single-line revisions on long content</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Consistent brand voice</td>
-        <td style="padding:10px 14px">ElevenLabs</td>
+        <td style="padding:10px 14px"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></td>
         <td style="padding:10px 14px">Cloning keeps one voice across every piece</td>
       </tr>
     </tbody>
@@ -182,6 +183,8 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
 </div>
+
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-voice-generators-for-podcasts-2026/">Best AI Voice Generators for Podcasts 2026</a>.</p>
 `,
 
   faqs: [

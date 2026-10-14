@@ -78,6 +78,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Are the Best Free AI Writing Tools in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Two black headphones resting on a wooden table" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -263,7 +264,9 @@ const post: BlogPost = {
   <li><strong>Writesonic → $16/month:</strong> When you need Article Writer 6.0 for long-form SEO blog posts</li>
 </ul>
 <p>See also: <a href="/blog/best-ai-writing-tools-2026/" style="color:#0D9488;font-weight:600;">→ Best AI writing tools 2026: full paid plans compared</a> and <a href="/blog/best-ai-writing-tools-for-beginners-2026/" style="color:#0D9488;font-weight:600;">→ Best AI writing tools for beginners</a> if you're new to the category and want a simpler starting point.</p>
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/how-to-use-rytr-to-write-blog-posts/">How to Use Rytr to Write Blog Posts (Step-by-Step, 2026)</a>.</p>
+`.trim(),
 };
 
 export default post;

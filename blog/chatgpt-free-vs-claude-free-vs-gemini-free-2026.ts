@@ -217,6 +217,8 @@ const post: BlogPost = {
 </ol>
 <p>The free stack that covers most weeks: <strong>Claude for drafts, ChatGPT for mixed tasks and images, and Gemini for research.</strong> For what you get once you upgrade, see our <a href="/blog/best-ai-chatbot-2026/">best AI chatbot comparison for 2026</a>.</p>
 <p style="font-size:12px;color:var(--text-muted,#888);">This comparison is independent research — AI Nexus is not sponsored by OpenAI, Anthropic, or Google. Plan details were taken from official plan pages on 10 October 2026 and can change without notice. See our <a href="/disclosure/">disclosure policy</a> and <a href="/methodology/">editorial methodology</a>.</p>
+
+<p><strong>Related reading:</strong> <a href="/blog/google-gemini-ai-review-2026/">Google Gemini AI Review 2026</a>.</p>
 `,
 };
 

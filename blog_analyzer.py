@@ -338,6 +338,9 @@ class Site:
         if not url: return False
         u = urlparse(url)
         if any(host_of(url).endswith(d) for d in AFF_DOMAINS): return True
+        # PartnerStack-style vanity hosts (try.<vendor>, get.<vendor>) with a short code path, and /refer/<code> referral links
+        if re.match(r"^(?:try|get|go|join|partner|refer)\.", host_of(url)) and len(u.path.strip("/")) >= 6: return True
+        if re.match(r"^/refer/[A-Za-z0-9_-]{4,}", u.path): return True
         q = {k.lower() for k in parse_qs(u.query)}
         if q & AFF_PARAMS: return True
         return "utm_medium=affiliate" in url
@@ -736,7 +739,10 @@ class Analyzer:
             weak = [l for l in aff if l["anchor"].strip().lower() in GENERIC_ANCHORS or len(l["anchor"].strip()) < 4]
             if weak: self.add(p, "cta-anchor-weak", "revenue", "low", f"{len(weak)} CTA(s) use generic/empty anchor text.", "Use action+benefit anchors: 'Try Gamma free →'.", "S", key=str(len(weak)), snippet=weak[0]["raw"][:160])
             tables = re.findall(r"<table.*?</table>", p.content, re.S | re.I)
-            if tables and kind in ("roundup", "comparison", "alternatives", "pricing") and not any(site.is_affiliate_href(h) for t in tables for h in re.findall(r'href="([^"]+)"', t)):
+            tbl_text = " ".join(re.sub(r"<[^>]+>", " ", t) for t in tables)
+            tbl_has_tracked_tool = any(re.search(r"(?<![A-Za-z0-9])" + re.escape(tm["name"]) + r"(?![A-Za-z0-9])", tbl_text, re.I)
+                                       for sl, tm in site.tools.items() if site.is_tracked(site.aff_links.get(sl, "")) and len(tm["name"]) >= 4)
+            if tables and tbl_has_tracked_tool and kind in ("roundup", "comparison", "alternatives", "pricing") and not any(site.is_affiliate_href(h) for t in tables for h in re.findall(r'href="([^"]+)"', t)):
                 self.add(p, "cta-table", "revenue", "medium", "The comparison table has no affiliate links — it's the highest-attention zone on the page.", "Link tool names (or add a 'Try free' column) with ${AFFILIATE_LINKS[...]}.", "S")
         # missing CTAs per tool
         missing_ct, leak = [], 0
@@ -1087,6 +1093,8 @@ def site_analysis(site: Site, A: Analyzer):
     for fname, label in (("llms.txt", "llms.txt"), ("llms-full.txt", "llms-full.txt"), ("rss.xml", "rss.xml")):
         txt = read(pub / fname)
         if not txt: continue
+        # rss.xml is regenerated from BLOG_POSTS on every build (scripts/prerender.mjs → dist/rss.xml); the copy in public/ is only a stale placeholder
+        if fname == "rss.xml" and "generateRssFeed" in read(site.root / "scripts" / "prerender.mjs"): continue
         missing = [s for s in posts if s not in txt]
         if missing and len(missing) / len(posts) > 0.05:
             site_issue(site, f"coverage-{label}", "ai", "medium" if label != "rss.xml" else "low", f"{len(missing)}/{len(posts)} posts are absent from {label}: {', '.join(missing[:5])}{'…' if len(missing) > 5 else ''}.",
@@ -1147,11 +1155,19 @@ class Fetcher:
             if gap > 0: time.sleep(gap)
             self.host_t[host] = time.time()
 
-    def _req(self, url, method):
+    BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+
+    def _opener(self, insecure=False):
+        if not insecure: return self.opener
+        import ssl
+        ctx = ssl.create_default_context(); ctx.check_hostname = False; ctx.verify_mode = ssl.CERT_NONE
+        return urllib.request.build_opener(urllib.request.HTTPRedirectHandler(), urllib.request.HTTPSHandler(context=ctx))
+
+    def _req(self, url, method, browser=False, insecure=False):
         self._wait(host_of(url))
-        req = urllib.request.Request(url, method=method, headers={"User-Agent": self.UA, "Accept": "text/html,application/xhtml+xml,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"})
+        req = urllib.request.Request(url, method=method, headers={"User-Agent": self.BROWSER_UA if browser else self.UA, "Accept": "text/html,application/xhtml+xml,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"})
         try:
-            with self.opener.open(req, timeout=self.timeout) as r:
+            with self._opener(insecure).open(req, timeout=self.timeout) as r:
                 body = r.read(250_000) if method == "GET" else b""
                 return r.status, r.geturl(), body, ""
         except urllib.error.HTTPError as e:
@@ -1171,6 +1187,15 @@ class Fetcher:
             st, final, data, err = self._req(url, "GET")
         if st == 0 and not err.startswith("HTTP"):  # one retry for flaky networks
             time.sleep(1.0); st, final, data, err = self._req(url, "GET")
+        # Connection reset / dropped by the server → many sites (and Impact/affiliate trackers) block non-browser UAs
+        if st == 0 and re.search(r"10054|forcibly closed|reset by peer|RemoteDisconnected|EOF occurred|Connection aborted", err, re.I):
+            st, final, data, err = self._req(url, "GET", browser=True)
+        # Local certificate-store problems (common on Windows, and on gov.in sites with incomplete chains):
+        # retry without verification purely to learn whether the page is alive. Browsers handle these fine.
+        if st == 0 and "CERTIFICATE_VERIFY_FAILED" in err:
+            st2, final2, data2, err2 = self._req(url, "GET", browser=True, insecure=True)
+            if st2:  # page is alive; cert chain is only a local-trust problem
+                st, final, data, err = st2, final2, data2, ""
         text = data.decode("utf-8", errors="replace") if data else ""
         res = {"url": url, "status": st, "final": final, "error": err, "ms": int((time.time() - t0) * 1000), "ts": time.time(),
                "text": strip_tags(text)[:60000] if body else "", "title": (re.search(r"<title[^>]*>(.*?)</title>", text, re.S | re.I) or [None, ""])[1].strip()[:140] if text else ""}
@@ -1211,7 +1236,7 @@ def run_live(site: Site, A: Analyzer, args):
             if re.search(r"pric|plans|buy", u, re.I): price_pages[(s, u)] = labels.get(u, "")
         for l in p.links:
             h = l["href"]
-            if not h.startswith("http") or host_of(h) == own or "UNDEFINED-AFFILIATE-KEY" in h: continue
+            if not h.startswith("http") or host_of(h) == own: continue
             (aff_urls if site.is_affiliate_href(h) else out_urls)[h].add(s)
     for k, u in site.aff_links.items():
         if site.is_tracked(u): aff_urls[u]  # ensure checked even if unused

@@ -91,6 +91,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <div style="background:rgba(99,102,241,.08);border-left:4px solid #6366f1;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#6366f1;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best <a href="/tools/gamma/">Gamma</a> AI alternatives in 2026: <strong>Pi</strong> wins on price and free-plan generosity \u2014 forever-free with no watermark, undercutting Gamma's $8/month Plus tier. <strong><a href="/tools/beautiful-ai/">Beautiful.ai</a></strong> wins for locked-down team design consistency. <strong>Canva AI</strong> wins if you already pay for Canva. <strong>NotebookLM</strong> wins if you want slides grounded in your own documents, not AI-invented filler.</p>

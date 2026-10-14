@@ -78,6 +78,7 @@ const post: BlogPost = {
   wordCount: 2350,
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <h2>Which $20/Month AI Is Worth It for Freelancers: Perplexity Pro, ChatGPT Plus, or Claude Pro?</h2>
 <p>None of the three wins every task. Perplexity Pro is worth it for research with sources, ChatGPT Plus for writing first drafts and brainstorming, and Claude Pro for editing and document summarisation. So the $20/month that's "worth it" depends entirely on which of those five tasks eats most of your week.</p>
 <p>Three tools. Same five tasks. One honest table.</p>
@@ -87,7 +88,7 @@ const post: BlogPost = {
   <thead>
     <tr style="background:rgba(13,148,136,.08);">
       <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:700;">Task</th>
-      <th style="padding:10px 14px;text-align:center;border-bottom:2px solid rgba(13,148,136,.2);font-weight:700;">Perplexity Pro</th>
+      <th style="padding:10px 14px;text-align:center;border-bottom:2px solid rgba(13,148,136,.2);font-weight:700;"><a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Perplexity Pro</a></th>
       <th style="padding:10px 14px;text-align:center;border-bottom:2px solid rgba(13,148,136,.2);font-weight:700;">ChatGPT Plus</th>
       <th style="padding:10px 14px;text-align:center;border-bottom:2px solid rgba(13,148,136,.2);font-weight:700;">Claude Pro</th>
     </tr>
@@ -281,7 +282,9 @@ const post: BlogPost = {
   <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ChatGPT →</a>
   <a href="https://claude.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Claude →</a>
 </div>
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/best-nano-banana-pro-alternatives-2026/">Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)</a>, <a href="/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/">ChatGPT Atlas vs Perplexity Comet vs Dia (2026)</a>, <a href="/blog/perplexity-ai-review-2026/">Perplexity AI Review 2026</a>.</p>
+`.trim(),
 };
 
 export default post;

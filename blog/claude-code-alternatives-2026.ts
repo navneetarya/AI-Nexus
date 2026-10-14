@@ -266,6 +266,8 @@ const post: BlogPost = {
   <p style="margin:10px 0 0;font-size:11px;color:#6b7280;">Affiliate disclosure: some links may be affiliate links at no extra cost to you.</p>
 </div>
 
+
+<p><strong>Related reading:</strong> <a href="/blog/cursor-ai-review-2026/">Cursor AI Review 2026</a>.</p>
 `.trim(),
   wordCount: 2390,
   proscons: {

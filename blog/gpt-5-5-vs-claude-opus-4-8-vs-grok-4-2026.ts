@@ -48,6 +48,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Key Finding</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">There is no single winner. GPT-5.5 wins on breadth, Claude Opus 4.8 wins on depth, and Grok 4 wins on real-time data — the right pick depends on which of those three you need most.</p>

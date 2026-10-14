@@ -1,5 +1,6 @@
 import { BlogPost } from './types';
 
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'cheapest-ai-coding-tools-2026',
   title: 'Cheapest AI Coding Tools in 2026 — Real Pricing, Compared',
@@ -44,6 +45,7 @@ const post: BlogPost = {
   wordCount: 847,
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Free:</strong> Codeium (unlimited, individual). <strong>Under $10/mo:</strong> Replit Core ($7). <strong>Under $15/mo:</strong> GitHub Copilot Individual ($10), Cursor Free tier. <strong>Best value overall:</strong> GitHub Copilot at $10/mo for professional developers.</p>
@@ -72,7 +74,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Shared codebase context, team features</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Replit</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Replit</a></td>
       <td style="padding:10px 14px;">✅ Basic AI</td>
       <td style="padding:10px 14px;">$7/mo (Core)</td>
       <td style="padding:10px 14px;">More compute, unlimited AI, deployments</td>
@@ -160,6 +162,8 @@ const post: BlogPost = {
 <h2>Related Reading</h2>
 <p>See our <a href="/best-ai-coding-tools/" style="color:#0D9488;font-weight:600;">full guide to the best AI coding tools</a> for a broader ranked list beyond just price. Compare specific pairs directly in our <a href="/compare/cursor-vs-windsurf/" style="color:#0D9488;font-weight:600;">Cursor vs Windsurf</a> and <a href="/compare/replit-vs-github-copilot/" style="color:#0D9488;font-weight:600;">Replit vs GitHub Copilot</a> breakdowns.</p>
 <p>For agentic coding workflows beyond autocomplete, read our guide to <a href="/blog/best-ai-coding-agents-2026/" style="color:#0D9488;font-weight:600;">the best AI coding agents in 2026</a>. If you're weighing Claude-based tooling specifically, see <a href="/blog/claude-code-alternatives-2026/" style="color:#0D9488;font-weight:600;">Claude Code alternatives</a>. Tool pages for <a href="/tools/replit/" style="color:#0D9488;font-weight:600;">Replit</a>, <a href="/tools/github-copilot/" style="color:#0D9488;font-weight:600;">GitHub Copilot</a>, and <a href="/tools/cursor/" style="color:#0D9488;font-weight:600;">Cursor</a> have full independent reviews with pricing history.</p>
+
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-voice-dictation-tools-2026/">Best AI Voice Dictation Tools 2026</a>.</p>
 `
 };
 

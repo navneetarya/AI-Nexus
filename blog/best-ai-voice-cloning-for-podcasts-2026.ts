@@ -38,6 +38,7 @@ const post: BlogPost = {
   myTake: "This guide starts from a different question than most cloning posts: not \"which tool clones best\" but \"does your show actually need this yet\". For most podcasts under 20 episodes, the honest answer is not yet — past that, ElevenLabs is where I'd start.",
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img src="https://images.unsplash.com/photo-1615661434109-739052a73003?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A studio microphone on a stand, used for recording a voice sample for podcast voice cloning" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 

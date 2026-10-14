@@ -51,7 +51,7 @@ const post: BlogPost = {
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">Murf AI</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Murf AI</a></td>
         <td style="padding:10px 14px">Video & e-learning voiceovers</td>
         <td style="padding:10px 14px">$19/month</td>
         <td style="padding:10px 14px">Yes, 10 min/month</td>
@@ -161,7 +161,7 @@ const post: BlogPost = {
     <thead>
       <tr style="background:rgba(13,148,136,.08)">
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Feature</th>
-        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Murf AI</th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600"><a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Murf AI</a></th>
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Cartesia</th>
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Resemble AI</th>
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Play.ht</th>
@@ -237,6 +237,8 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
+
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-music-generator-tools-2026/">Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)</a>, <a href="/blog/murf-ai-alternatives-2026/">Murf AI Alternatives 2026</a>, <a href="/blog/elevenlabs-youtube-commercial-rights-2026/">Can I use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)</a>.</p>
 `,
 
   faqs: [

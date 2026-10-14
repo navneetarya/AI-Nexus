@@ -61,6 +61,7 @@ const post: BlogPost = {
     },
   ],
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>n8n</strong> wins on AI-native depth and cost at scale. It has the deepest MCP support, a native AI Agent node, and execution-based pricing that stays cheap as workflows get complex, though the learning curve is steeper.</p>
@@ -94,7 +95,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">AI agents, deepest MCP, cheapest at scale</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Make</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;"><a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Make</a></td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Operation (per module)</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">~$9/mo for 10,000 ops</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Branching logic, best power-to-price</td>
@@ -209,7 +210,7 @@ const post: BlogPost = {
     <tr style="background:rgba(13,148,136,.1);">
       <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Capability</th>
       <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">n8n</th>
-      <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Make</th>
+      <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);"><a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Make</a></th>
       <th style="padding:10px 12px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Zapier</th>
     </tr>
   </thead>

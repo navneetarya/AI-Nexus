@@ -46,6 +46,7 @@ const post: BlogPost = {
 <h2>TL;DR: best AI dubbing tools in 2026</h2>
 
 <p>Pick ElevenLabs if lip movement doesn't matter: podcasts, audiobooks, narrated explainers, faceless YouTube. Pick HeyGen if a real person's face is on screen and the mouth needs to match the new language.</p>
+<p><a style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;" href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Try ElevenLabs free →</a></p>
 
 <p>Pick Rask AI if you're dubbing high volume across many languages at once. Pick Synthesia if you need a full AI presenter, not just a dub of existing footage. Pick Dubverse specifically for Hindi, Tamil, Telugu, or other Indian-language audiences on a tighter budget.</p>
 
@@ -65,7 +66,7 @@ const post: BlogPost = {
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">ElevenLabs</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></td>
         <td style="padding:10px 14px">Audio-only dubbing, voice cloning</td>
         <td style="padding:10px 14px">No</td>
         <td style="padding:10px 14px">29</td>

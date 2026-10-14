@@ -331,6 +331,8 @@ const post: BlogPost = {
 <p>If you arrived here specifically searching for a sora alternative 2026, because your existing workflow broke in April, the migration path is straightforward. Veo 3.1 for narrative quality, Runway for editing control, Kling for budget.</p>
 <p>Whichever tool you choose, treat Sora's shutdown as the reminder it is. Build workflows around the model, not the platform, since this category has shown it can change leadership within a single quarter.</p>
 <p>Video generation is one piece of a broader AI content stack. If you're building out the rest of it, our <a href="/blog/best-ai-marketing-tools-2026/">best AI marketing tools</a> roundup covers the campaign and copy side, and <a href="/best-ai-video-tools/">the full AI video tools category</a> has coverage of editing and repurposing tools beyond raw generation.</p>
+
+<p><strong>Related reading:</strong> <a href="/blog/best-ai-tools-for-youtubers-2026/">Best AI Tools for YouTubers in 2026</a>.</p>
 `,
 };
 

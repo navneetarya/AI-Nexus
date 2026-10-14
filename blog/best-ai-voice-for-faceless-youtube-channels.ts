@@ -47,8 +47,8 @@ const post: BlogPost = {
     <thead>
       <tr style="background:rgba(13,148,136,.08)">
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Factor</th>
-        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">ElevenLabs</th>
-        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Murf AI</th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600"><a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Murf AI</a></th>
       </tr>
     </thead>
     <tbody>

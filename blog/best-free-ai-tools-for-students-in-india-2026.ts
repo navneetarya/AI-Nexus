@@ -259,7 +259,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<p><strong>For revision mind maps:</strong> <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> turns your notes, a PDF chapter or a link into an AI mind map, and your study group can edit it together. The free plan allows up to 10 mind maps and 20 AI attempts, which is enough for one subject's revision.</p>
+<p><strong>For revision mind maps:</strong> <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> <a href="/tools/gitmind/" style="font-size:13px;color:#0D9488;font-weight:600;">Read our GitMind review</a> turns your notes, a PDF chapter or a link into an AI mind map, and your study group can edit it together. The free plan allows up to 10 mind maps and 20 AI attempts, which is enough for one subject's revision.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GitMind Free</a>
 </div>

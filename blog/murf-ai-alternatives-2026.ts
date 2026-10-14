@@ -31,6 +31,7 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1731909888065-0c5a117b0af7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creative studio desk with multiple screens, representing AI voice production" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Murf AI does one job very well: turning a script into a finished, timed voiceover for video or e-learning, without hiring a voice actor. Most people who search for alternatives aren't unhappy with Murf. They've just hit one specific limit it wasn't built to solve.</p>
+<p><a style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;" href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Try Murf AI free →</a></p>
 
 <p>This guide uses live pricing for this guide as of August 2026. If you haven't compared Murf against the wider field yet, start with our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>. This one assumes you already know Murf and want to know exactly what beats it, and for which job.</p>
 
@@ -52,7 +53,7 @@ const post: BlogPost = {
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">ElevenLabs</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></td>
         <td style="padding:10px 14px">Voice cloning & realism</td>
         <td style="padding:10px 14px">$6/month</td>
         <td style="padding:10px 14px">Yes, 10,000 chars/month</td>
@@ -138,7 +139,7 @@ const post: BlogPost = {
     <thead>
       <tr style="background:rgba(13,148,136,.08)">
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Feature</th>
-        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">ElevenLabs</th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></th>
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Synthesia</th>
         <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);font-weight:600">Speechify Studio</th>
       </tr>
@@ -204,6 +205,8 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
+
+<p><strong>Related reading:</strong> <a href="/blog/murf-ai-pricing-2026/">Murf AI Pricing</a>.</p>
 `,
 
   faqs: [

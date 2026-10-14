@@ -79,6 +79,7 @@ const post: BlogPost = {
   wordCount: 1150,
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <h2>Quick Verdict: Is Grammarly Premium Worth It?</h2>
 <p><strong>Yes, for daily professional writers.</strong> Do you send important emails, write client proposals, or produce content that represents your brand? Grammarly Premium's tone detection and full-sentence rewrite features justify $12/month for that. Casual users who mostly send quick messages rarely see enough value to justify upgrading from the free tier.</p>
 <p>The upgrade pays for itself the first time it stops you sending a message that reads as dismissive when you meant to sound direct.</p>
@@ -246,7 +247,9 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://grammarly.com?affiliateId=ainexus" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a>
 </div>
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/best-grammarly-alternatives/">Best Grammarly Alternatives in 2026</a>.</p>
+`.trim(),
 };
 
 export default post;

@@ -67,6 +67,7 @@ const post: BlogPost = {
 <p>Murf AI doesn't sell you characters or credits. It sells you <strong>hours of voice generation</strong>, shared across your account.</p>
 
 <p>Every render draws down that hour budget. So does every re-render, including the one where you fix a mispronounced word or adjust the pacing. That's simpler than <a href="/tools/elevenlabs/">ElevenLabs</a>' credit system on paper. But it hides its own trap: an hour of generation disappears faster in a real production workflow than it sounds like it should.</p>
+<p><a style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;" href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Try ElevenLabs free →</a></p>
 
 <p>This guide translates Murf's 2026 plan structure into plain numbers. What each tier actually lets you produce. Where the free plan stops being usable. And the one feature — voice cloning — that's locked away from almost everyone.</p>
 

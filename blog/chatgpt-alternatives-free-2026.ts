@@ -74,6 +74,7 @@ const post: BlogPost = {
   },
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0d9488;border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;">
   <p style="font-weight:600;margin:0 0 8px;color:#0d9488;font-size:13px;text-transform:uppercase;letter-spacing:.04em;">Quick Verdict</p>
@@ -236,7 +237,9 @@ const post: BlogPost = {
 <p>The era of ChatGPT being the obvious default is over. Gemini's unlimited free plan with web access makes it the best general-purpose alternative. Perplexity's citation-backed research is something ChatGPT still can't match. And for content creators, Rytr and Writesonic offer more structured workflows than a blank chat window.</p>
 <p>All four are free to start. Try them on your actual work, not demo prompts, and you'll likely find at least one that fits your workflow better than ChatGPT does.</p>
 <p>Still building your AI toolkit? Compare more options in our <a href="/blog/best-free-ai-writing-tools-2026/" style="color:var(--a1);font-weight:600;">best free AI writing tools</a> roundup, or check <a href="/tools/chatgpt/" style="color:var(--a1);font-weight:600;">our ChatGPT review</a> to see exactly what the paid tier adds over these free picks.</p>
-  `.trim(),
+  
+<p><strong>Related reading:</strong> <a href="/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/">ChatGPT Atlas vs Perplexity Comet vs Dia (2026)</a>.</p>
+`.trim(),
 };
 
 export default post;

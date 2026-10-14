@@ -99,6 +99,7 @@ const post: BlogPost = {
   ],
   wordCount: 3140,
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Where to start</strong>
   <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">Start the stack with Taskade and <a href="/tools/make/">Make.com</a></p>
@@ -433,6 +434,8 @@ const post: BlogPost = {
 <p>A solopreneur without a team, and without a repeatable process yet to automate, gets little marginal value from these tools over Make.com's simpler scenario builder. They also cost meaningfully more.</p>
 <p>Similarly, premium AI headshot tools, dedicated AI logo makers, and enterprise-tier design suites are worth deferring. Wait until the business has a validated offer and at least a handful of paying clients. Canva AI's free tier covers professional-enough visual assets for the validation phase. The same logic applies to a chat-built site from a tool like <a href="/tools/wegic/" style="color:rgb(13,148,136);">Wegic</a> — genuinely fast for a first business site, but credit-based, so it's worth having an actual offer ready before you start burning credits on revisions.</p>
 <p>The pattern across all of these: pay for a tool only once its free tier becomes a genuine bottleneck on real work. Don't pay in anticipation of a need that hasn't materialised yet. A solopreneur's biggest cost risk isn't under-tooling in month one. It's over-subscribing to a stack that outpaces the business's actual current complexity.</p>
+
+<p><strong>Related reading:</strong> <a href="/blog/ai-contract-analysis-tools-2026/">AI Contract Analysis Tools 2026</a>, <a href="/blog/best-notion-ai-alternatives-2026/">Best Notion AI Alternatives 2026</a>, <a href="/blog/relevance-ai-vs-lindy-vs-gumloop-2026/">Relevance AI vs Lindy vs Gumloop</a>.</p>
 `,
 };
 

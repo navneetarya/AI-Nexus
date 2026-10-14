@@ -78,6 +78,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
@@ -162,7 +163,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
-<p><strong>If brainstorming is your main Notion use:</strong> <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> is a dedicated AI mind-map tool. It builds a mind map from text, a file or a link, and several people can edit it at once. The free plan covers up to 10 mind maps and 20 AI attempts, which is enough to test it before paying.</p>
+<p><strong>If brainstorming is your main Notion use:</strong> <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">GitMind</a> <a href="/tools/gitmind/" style="font-size:13px;color:#0D9488;font-weight:600;">Read our GitMind review</a> is a dedicated AI mind-map tool. It builds a mind map from text, a file or a link, and several people can edit it at once. The free plan covers up to 10 mind maps and 20 AI attempts, which is enough to test it before paying.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GitMind Free</a>
 </div>
@@ -201,6 +202,8 @@ const post: BlogPost = {
 <p>If you use Notion primarily for writing and content creation: <strong>Writesonic</strong>. It generates longer, more useful drafts and includes real-time web access through Chatsonic.</p>
 <p>If you're a blogger or SEO writer: <strong>Frase.io</strong>. No other tool on this list helps you rank on Google. That's a distinct capability worth paying for separately.</p>
 <p>The only scenario where Notion AI is the right call: you're already deeply embedded in a Notion workspace. You want AI that works within your existing pages, without switching apps. Even then, at $10/month per user it's expensive for what it does. For most people reading this, one of the three alternatives above is a better use of that $10.</p>
+
+<p><strong>Related reading:</strong> <a href="/blog/taskade-vs-notion-vs-asana-2026/">Taskade vs Notion vs Asana 2026</a>.</p>
 `,
 };
 

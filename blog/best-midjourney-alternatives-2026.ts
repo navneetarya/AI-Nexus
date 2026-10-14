@@ -81,6 +81,7 @@ const post: BlogPost = {
   wordCount: 1750,
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best <a href="/tools/midjourney/">Midjourney</a> alternatives in 2026: <strong>Leonardo.ai</strong> (best overall, free–$12/mo) for most users, and <strong>Stable Diffusion</strong> (free, self-hosted) for unlimited generation. <strong>DALL-E 3</strong> (via <a href="/tools/chatgpt/">ChatGPT</a>, $20/mo) wins for beginners and text-in-image accuracy, and <strong>Adobe Firefly</strong> (free–$4.99/mo) wins for safe images for business use.</p>

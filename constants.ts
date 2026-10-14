@@ -3157,7 +3157,7 @@ export const TOOL_COMPARISONS: Record<string, Array<{
 }>> = {
   podcastle: [
     { name: 'Podcastle', price: 'Free–$23.99/mo', freeplan: true, bestFor: 'Recording + AI cleanup', ourPick: true },
-    { name: 'Descript', price: '$12–$24/mo', freeplan: true, bestFor: 'Text-based editing', ourPick: false },
+    { name: 'Descript', price: '$16–$24/mo', freeplan: true, bestFor: 'Text-based editing', ourPick: false },
     { name: 'Riverside.fm', price: '$15–$24/mo', freeplan: true, bestFor: 'High-quality remote recording', ourPick: false },
     { name: 'Buzzsprout', price: 'Free–$12/mo', freeplan: true, bestFor: 'Hosting & distribution only', ourPick: false },
     { name: 'Audacity', price: 'Free', freeplan: true, bestFor: 'Manual editing (technical)', ourPick: false },
@@ -3250,7 +3250,7 @@ Object.assign(TOOL_COMPARISONS, {
   elevenlabs: [
     { name: 'ElevenLabs', price: 'Free–$99/mo', freeplan: true, bestFor: 'Realistic voice & cloning', ourPick: true },
     { name: 'Murf AI', price: 'Free–$39/mo', freeplan: true, bestFor: 'Studio voiceover workflow', ourPick: false },
-    { name: 'Descript Overdub', price: '$12–$24/mo', freeplan: true, bestFor: 'Podcast editing + voice fix', ourPick: false },
+    { name: 'Descript Overdub', price: '$16–$24/mo', freeplan: true, bestFor: 'Podcast editing + voice fix', ourPick: false },
     { name: 'Play.ht', price: 'Free–$39/mo', freeplan: true, bestFor: 'Blog-to-audio publishing', ourPick: false },
     { name: 'Speechify', price: 'Free–$139/yr', freeplan: true, bestFor: 'Personal listening & TTS', ourPick: false },
   ],

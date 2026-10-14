@@ -84,7 +84,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">\u2b50 3.7/5</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">ElevenLabs</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></td>
         <td style="padding:10px 14px">Yes \u2014 10,000 characters/month</td>
         <td style="padding:10px 14px">$6/month</td>
         <td style="padding:10px 14px">Voice quality layer, not a full agent</td>
