@@ -84,9 +84,10 @@ const post: BlogPost = {
     },
   ],
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For most freelancers and small businesses, the practical 2026 answer is <strong>Claude or ChatGPT</strong> (free–$20/month) for a first-pass plain-English read of a contract. Add a purpose-built freelancer-tier reviewer under $20/month for structured risk flags.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For most freelancers and small businesses, the practical 2026 answer is <strong>Claude or <a href="/tools/chatgpt/">ChatGPT</a></strong> (free–$20/month) for a first-pass plain-English read of a contract. Add a purpose-built freelancer-tier reviewer under $20/month for structured risk flags.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Harvey AI</strong> and <strong>Luminance</strong> are enterprise-only: no public pricing, seat minimums, five-to-six-figure annual contracts. <strong>Spellbook</strong> sits in between at roughly $89–$400/user/month (quote-based) but is built for lawyers drafting in Word, not occasional contract review.</p>
 </div>
 
@@ -194,7 +195,7 @@ const post: BlogPost = {
 
 <h2>From Review to Signature: Sending the Final Contract</h2>
 <p>Everything above covers reading a contract. Once the clauses are settled, you still have to get it signed, and that is a different job from analysis.</p>
-<p>An e-signature service handles that second step: placing signature fields, sending the document to the other party, and keeping a record of who signed and when. <strong>signNow</strong> is one option for freelancers and small businesses. It is a signing tool, not a contract analyzer, so it does not replace the review step.</p>
+<p>An e-signature service handles that second step: placing signature fields, sending the document to the other party, and keeping a record of who signed and when. <strong><a href="/tools/signnow/">signNow</a></strong> is one option for freelancers and small businesses. It is a signing tool, not a contract analyzer, so it does not replace the review step.</p>
 <p>Two practical points before you pick it. signNow offers a 7-day free trial but no permanent free plan, so it suits people who sign contracts regularly rather than once a year. Independent sources also report different prices depending on the plan, so confirm current pricing on its official page.</p>
 <p>Whatever you choose, finish your review and negotiation first. Sending a document for signature before the clauses are settled just creates a harder conversation later.</p>
 <p><a href="${AFFILIATE_LINKS['signnow']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try signNow Free for 7 Days →</a></p>

@@ -90,6 +90,7 @@ const post: BlogPost = {
     ],
   },
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <nav aria-label="Table of contents" style="background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#0ea5e9;">Table of Contents</p>
   <ol style="margin:0;padding-left:20px;line-height:2.2;font-size:14px;">
@@ -138,7 +139,7 @@ const post: BlogPost = {
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">PhotoRoom</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer">PhotoRoom</a></td>
         <td style="padding:10px 14px">Yes, watermarked, no commercial use</td>
         <td style="padding:10px 14px">$7.50/month (annual)</td>
         <td style="padding:10px 14px">Ecommerce product photos</td>
@@ -179,7 +180,7 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A pair of athletic shoes staged on a white box for an ecommerce listing photo" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2 id="photoroom">#1 PhotoRoom: best for ecommerce product photos</h2>
-<p><a href="/tools/photoroom" style="color:#0ea5e9;font-weight:600;">PhotoRoom</a> is built around a different question than the other four tools here. Not "how do I upscale one image?" but "how do I get a listing-ready product photo in one pass?"</p>
+<p><a href="/tools/photoroom/" style="color:#0ea5e9;font-weight:600;">PhotoRoom</a> is built around a different question than the other four tools here. Not "how do I upscale one image?" but "how do I get a listing-ready product photo in one pass?"</p>
 <p>As an <strong>ai photo enhancer for ecommerce</strong> use specifically, its Image Enhancer is included on every paid plan alongside background removal, shadow generation, and AI Fill. That matters because most sellers upscaling a product photo also need the background pulled and a shadow added, and doing that across three separate tools costs real time.</p>
 <p>PhotoRoom runs a five-tier structure in 2026. That's Free, Pro at $7.50/month (annual billing), Max at $20.99/month, a newer Ultra tier from $82.50/month, and custom Enterprise pricing.</p>
 <p>The free plan works fine to test output quality, but it stamps a watermark on exports and blocks commercial use, so any real seller needs at least the Pro tier.</p>
@@ -280,7 +281,7 @@ const post: BlogPost = {
     { url: 'https://www.topazlabs.com/', label: 'Topaz Labs: official site' },
   ],
 
-  wordCount: 2936,
+  wordCount: 2252,
 };
 
 export default post;

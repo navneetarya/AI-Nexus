@@ -27,7 +27,7 @@ const post: BlogPost = {
   title: 'Best Gamma AI Alternatives 2026 — Beautiful.ai vs Canva AI vs NotebookLM vs Pi',
   seoTitle: 'Best Gamma AI Alternatives 2026 — Compared',
   metaDescription:
-    'Beautiful.ai, Canva AI, NotebookLM, and PThe comparison covers as Gamma alternatives in 2026 — which wins on price, the free-tier watermark, and design consistency.',
+    'Beautiful.ai, Canva AI, NotebookLM, and Pi compared as Gamma alternatives in 2026 — which wins on price, the free-tier watermark, and design consistency.',
   datePublished: '2026-09-22',
   dateModified: '2026-09-29',
   author: 'Navneet Arya',
@@ -93,7 +93,7 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(99,102,241,.08);border-left:4px solid #6366f1;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#6366f1;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best Gamma AI alternatives in 2026: <strong>Pi</strong> wins on price and free-plan generosity \u2014 forever-free with no watermark, undercutting Gamma's $8/month Plus tier. <strong>Beautiful.ai</strong> wins for locked-down team design consistency. <strong>Canva AI</strong> wins if you already pay for Canva. <strong>NotebookLM</strong> wins if you want slides grounded in your own documents, not AI-invented filler.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best <a href="/tools/gamma/">Gamma</a> AI alternatives in 2026: <strong>Pi</strong> wins on price and free-plan generosity \u2014 forever-free with no watermark, undercutting Gamma's $8/month Plus tier. <strong><a href="/tools/beautiful-ai/">Beautiful.ai</a></strong> wins for locked-down team design consistency. <strong>Canva AI</strong> wins if you already pay for Canva. <strong>NotebookLM</strong> wins if you want slides grounded in your own documents, not AI-invented filler.</p>
 </div>
 
 <h2>What Are the Best Gamma AI Alternatives in 2026?</h2>
@@ -134,14 +134,14 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Best price and free-plan terms</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(99,102,241,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Beautiful.ai</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['beautiful-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Beautiful.ai</a></td>
       <td style="padding:10px 14px;">Locked team design consistency</td>
       <td style="padding:10px 14px;">\u2717 14-day trial, card required</td>
       <td style="padding:10px 14px;">$12/mo (annual)</td>
       <td style="padding:10px 14px;">Best for brand-consistent teams</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(99,102,241,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Canva AI</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Canva AI</a></td>
       <td style="padding:10px 14px;">Existing Canva subscribers</td>
       <td style="padding:10px 14px;">\u2705 200 credits/mo</td>
       <td style="padding:10px 14px;">$15/mo</td>
@@ -164,7 +164,7 @@ const post: BlogPost = {
 <p><strong>Pricing:</strong> Pi's Basic plan runs $9.90/month billed monthly, or $89.90/year (about $7.50/month annualized), which slightly undercuts Gamma's own $8/month Plus plan billed annually.</p>
 <p><strong>The tradeoff to know about:</strong> Pi is a newer entrant with a much thinner independent review base than Gamma. It shows zero reviews on G2, and its Trustpilot listing under "PI" is actually a different product (the pi.ai chatbot), not this tool. Treat Pi as a strong budget alternative worth testing rather than a fully proven, battle-tested swap for Gamma.</p>
 <p><strong>Who this is for:</strong> Anyone whose main objection to Gamma is the watermark on free decks or the $8/month price tag. Students, freelancers, and anyone testing whether an AI presentation tool fits their workflow before committing to a paid plan get real, unwatermarked value here at zero cost.</p>
-<p><a href="/blog/best-ai-presentation-tools-2026/" style="color:#6366f1;font-weight:600;">→ See PThe comparison covers against Gamma, Beautiful.ai, and Canva AI in the full roundup</a></p>
+<p><a href="/blog/best-ai-presentation-tools-2026/" style="color:#6366f1;font-weight:600;">→ See Pi compared against Gamma, Beautiful.ai, and Canva AI in the full roundup</a></p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['presentation-intelligence']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pi Free \u2192</a>

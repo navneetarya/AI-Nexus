@@ -83,10 +83,10 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai', label: 'McKinsey State of AI 2026' },
     { url: 'https://www.gartner.com/en/articles/ai-software-market-outlook', label: 'Gartner AI Software Spending Forecast 2026' },
-    { url: 'https://hbr.org/2025/11/the-right-way-to-measure-ai-roi', label: 'Harvard Business Review: Measuring AI ROI' },
   ],
   wordCount: 3010,
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The average SMB spends <strong>$150–$400/month</strong> across 4–6 AI tools in 2026. Only tools that replace recurring labour (meeting notes, email drafts, code review) reliably return positive ROI.</p>
@@ -122,7 +122,7 @@ const post: BlogPost = {
   <li><strong>AI automation platforms</strong> — workflow automation, no-code integrations, agent builders</li>
   <li><strong>AI meeting intelligence</strong> — transcription, summarisation, action item tracking</li>
   <li><strong>AI marketing and email</strong> — email campaign AI, ad copy generators, personalisation engines</li>
-  <li><strong>General-purpose AI assistants</strong> — ChatGPT Plus, Claude Pro, Perplexity Pro</li>
+  <li><strong>General-purpose AI assistants</strong> — <a href="/tools/chatgpt/">ChatGPT</a> Plus, Claude Pro, <a href="/tools/perplexity/">Perplexity Pro</a></li>
 </ul>
 <p>List every active subscription with its monthly cost before proceeding to the ROI calculation in Step 2.</p>
 
@@ -162,7 +162,7 @@ const post: BlogPost = {
 <p>Here is what AI tools in each major category actually cost in 2026: not the headline price, but the price at realistic usage levels for a small team or individual.</p>
 
 <h3>AI Writing and Content Tools ($15–$100/month)</h3>
-<p>This is the most commoditised AI tool category. Jasper, Copy.ai, Writesonic, and Rytr have converged on similar underlying models and differentiate on workflow integration, templates, and team features. The pricing ladder is predictable: free tier (severely limited), individual plan ($20–$40/month), and team plan ($50–$150+/month).</p>
+<p>This is the most commoditised AI tool category. <a href="/tools/jasper/">Jasper</a>, Copy.ai, <a href="/tools/writesonic/">Writesonic</a>, and Rytr have converged on similar underlying models and differentiate on workflow integration, templates, and team features. The pricing ladder is predictable: free tier (severely limited), individual plan ($20–$40/month), and team plan ($50–$150+/month).</p>
 <p><a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p>
 <p><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
 <p><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
@@ -171,15 +171,20 @@ const post: BlogPost = {
 <p><strong>INR pricing:</strong> ₹1,660–₹8,300/month. Most tools charge in USD; expect +18% GST for Indian business accounts.</p>
 
 <h3>AI Automation Platforms ($0–$150/month)</h3>
-<p>This is the category with the widest ROI spread. At the low end, n8n's self-hosted community edition is free and handles most automation use cases for technically capable teams. At the high end, Make.com enterprise or Zapier Professional can run $100–$300/month for teams with complex multi-step workflows.</p>
+<p>This is the category with the widest ROI spread. At the low end, <a href="/tools/n8n/">n8n</a>'s self-hosted community edition is free and handles most automation use cases for technically capable teams. At the high end, <a href="/tools/make/">Make.com</a> enterprise or <a href="/tools/zapier/">Zapier</a> Professional can run $100–$300/month for teams with complex multi-step workflows.</p>
 <p><a href="https://n8n.io/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try n8n Free →</a></p>
-<p>The ROI calculation for automation tools is different from other categories. You're not measuring time saved per use, you're measuring the total annual value of the workflows you've automated. A single workflow that automates a 30-minute daily task ($50/hour rate) is worth $7,500/year.</p><p>A $100/month automation tool that enables that workflow has a 525% annual ROI.</p>
+<p>The ROI calculation for automation tools is different from other categories. You're not measuring time saved per use, you're measuring the total annual value of the workflows you've automated. A single workflow that automates a 30-minute daily task ($50/hour rate) is worth $7,500/year.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Want to try Make?</strong></p>
+  <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make →</a>
+</div>
+<p>A $100/month automation tool that enables that workflow has a 525% annual ROI.</p>
 <p>See the full comparison in our <a href="/blog/n8n-vs-make-vs-zapier-2026/" style="color:#0D9488;">n8n vs Make vs Zapier 2026</a> breakdown, and <a href="/blog/best-no-code-ai-automation-tools-2026/" style="color:#0D9488;">Best No-Code AI Automation Tools</a> for platforms that don't require engineering ability. Understand the strategic layer at <a href="/blog/ai-agents-vs-ai-automation-difference-2026/" style="color:#0D9488;">AI Agents vs AI Automation</a> before committing to a platform.</p>
 <p><strong>INR pricing:</strong> n8n community free · Make.com Core ~₹830/month · Zapier Professional ~₹8,300/month at current USD/INR rates plus GST.</p>
 
 <h3>AI Meeting Intelligence ($10–$30/user/month)</h3>
 <p>This is the highest-ROI category per dollar spent of any AI tool category in 2026. The calculation is simple: the average knowledge worker attends 5–8 meetings per week. Each meeting generates 30–60 minutes of post-meeting work: note consolidation, action item extraction, follow-up email drafting. An AI meeting tool eliminates almost all of that work.</p>
-<p>At $19/month for a Fireflies.ai Pro plan: if you attend 8 meetings per week and save 40 minutes each, you save 53 hours/month of meeting admin.</p>
+<p>At $19/month for a <a href="/tools/fireflies/">Fireflies</a>.ai Pro plan: if you attend 8 meetings per week and save 40 minutes each, you save 53 hours/month of meeting admin.</p>
 <p>At a $50/hour effective rate, that is $2,650 in value for $19 in cost, a 13,847% ROI. This is not a rounding error. Meeting intelligence tools are genuinely the most underpriced AI category available to small businesses in 2026.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['fireflies']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Fireflies.ai Free →</a>
@@ -192,7 +197,7 @@ const post: BlogPost = {
 
 <h3>AI Email Marketing ($20–$100/month)</h3>
 <p>Email marketing AI tools have two components: the AI writing layer (generating subject lines, body copy, segmentation logic) and the platform itself (list management, deliverability, analytics). The pricing varies enormously based on list size.</p>
-<p>A business with a 2,000-subscriber list running 2 campaigns per week will pay $25–$50/month on GetResponse or Mailchimp with AI features enabled. A business with a 50,000-subscriber list running daily automations will pay $300–$600/month.</p>
+<p>A business with a 2,000-subscriber list running 2 campaigns per week will pay $25–$50/month on <a href="/tools/getresponse/">GetResponse</a> or Mailchimp with AI features enabled. A business with a 50,000-subscriber list running daily automations will pay $300–$600/month.</p>
 <p><a href="${AFFILIATE_LINKS['getresponse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GetResponse Free →</a></p>
 <p>The ROI calculation here must compare against the cost of a human copywriter producing the same volume. At $75–$150/hour for a freelance email copywriter, AI-assisted production at even 50% quality parity generates positive ROI above ~5 campaigns/month.</p>
 <p>See our <a href="/blog/best-ai-email-marketing-tools-2026/" style="color:#0D9488;">Best AI Email Marketing Tools 2026</a> comparison for platform-by-platform cost analysis.</p>
@@ -209,7 +214,7 @@ const post: BlogPost = {
 <p><strong>INR pricing:</strong> All three at ~₹1,660/month per tool plus 18% GST = ~₹1,960/month. A user running all three pays ~₹5,880/month. Evaluate whether you actually use more than one before stacking.</p>
 
 <h3>AI Coding Tools ($10–$40/user/month)</h3>
-<p>GitHub Copilot Individual, Cursor Pro, and Replit AI are the dominant options for developers. ROI for coding tools is the most measurable of any category because it's directly tied to output: lines of code written, features shipped, bugs caught before review. Studies from Anthropic and GitHub independently found 30–55% productivity increases for developers using AI code assistants daily.</p>
+<p><a href="/tools/github-copilot/">GitHub Copilot</a> Individual, <a href="/tools/cursor/">Cursor</a> Pro, and <a href="/tools/replit/">Replit</a> AI are the dominant options for developers. ROI for coding tools is the most measurable of any category because it's directly tied to output: lines of code written, features shipped, bugs caught before review. Studies from Anthropic and GitHub independently found 30–55% productivity increases for developers using AI code assistants daily.</p>
 <p>At a $50/hour developer rate, a 30% productivity increase on a 160-hour/month schedule is $2,400 in additional output value, against $19–$40/month tool cost. This gives coding tools a 6,000–12,000% ROI for regular users. The ROI drops sharply for occasional users. Developers who open Cursor once a week won't see these numbers.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://github.com/features/copilot" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit GitHub Copilot →</a>

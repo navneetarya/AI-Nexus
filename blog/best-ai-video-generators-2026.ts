@@ -89,6 +89,7 @@ const post: BlogPost = {
   },
   wordCount: 2900,
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI video generators in 2026: <strong>Google Veo 3.1</strong> for best photorealism and native audio, from $19.99/month. <strong>Runway Gen-4.5</strong> wins on camera control and editing workspace, from $12/month. <strong>Kling AI 3.0</strong> offers the best value and multilingual lip-sync, from roughly $7/month.</p>
@@ -140,7 +141,7 @@ const post: BlogPost = {
 <p>OpenAI shut down the consumer Sora web and app on April 26, 2026, with the developer API scheduled to follow on September 24, 2026. That single decision reshuffled the entire category. It's the reason "best AI video generators 2026" searches have spiked over the past two months.</p>
 <p>This guide ranks the five text-to-video and image-to-video tools that are genuinely worth paying for right now. It's based on verified June 2026 pricing, hands-on community reporting from Reddit's r/VideoEditing and r/ArtificialIntelligence, and the credit-math gotchas that pricing pages rarely make obvious.</p>
 <p>"AI video generator" covers a specific job: turning a text prompt or a still image into a short video clip, usually 5 to 15 seconds. It uses a model trained to predict motion, lighting, and physics, frame by frame.</p>
-<p>If what you're picturing when you search for text to video AI is a prompt in, a video out, that's a different job. AI video editors like InVideo or Opus Clip repurpose footage you already have instead.</p>
+<p>If what you're picturing when you search for text to video AI is a prompt in, a video out, that's a different job. AI video editors like <a href="/tools/invideo/">InVideo</a> or <a href="/tools/opus-clip/">Opus Clip</a> repurpose footage you already have instead.</p>
 <p><a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a></p>
 <p>None of the five tools below existed in AI Nexus's coverage before this post. If you're looking for editing or repurposing tools instead, see our <a href="/blog/best-invideo-alternatives-2026/">InVideo alternatives guide</a> or the full <a href="/best-ai-video-tools/">AI video tools category page</a>.</p>
 

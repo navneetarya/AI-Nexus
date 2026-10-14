@@ -23,7 +23,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'best-ai-website-builders-2026',
     title: 'Best AI Website Builders 2026: 7 Tools Compared by Use Case',
-    seoTitle: 'Best AI Website Builders 2026: 7 Tools Compared',
+    seoTitle: 'Best AI Website Builder 2026: 7 Tools Compared',
     metaDescription: 'Wix, Framer, Durable, Hostinger, 10Web, Readdy, and WordToSite compared by use case, pricing, and the type of site each builder can deliver.',
   datePublished: '2026-08-08',
   dateModified: '2026-10-14',
@@ -99,7 +99,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">⭐ 4.3/5 (2,000+ reviews)</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">Wegic</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['wegic']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Wegic</a></td>
         <td style="padding:10px 14px">Yes — starter credits, Wegic badge</td>
         <td style="padding:10px 14px">$2.99 one-time trial (paid plans from ~$11.90/mo)</td>
         <td style="padding:10px 14px">Fastest chat-based build, no editor needed</td>
@@ -342,7 +342,7 @@ const post: BlogPost = {
     { url: 'https://10web.io/pricing/', label: '10Web — official pricing page' },
   ],
 
-  wordCount: 2480,
+  wordCount: 3288,
 };
 
 export default post;

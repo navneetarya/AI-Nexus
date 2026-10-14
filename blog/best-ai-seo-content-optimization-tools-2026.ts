@@ -68,7 +68,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">⭐ 4.8/5 (544+ reviews)</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">Frase</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['frase']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Frase</a></td>
         <td style="padding:10px 14px">No — 7-day free trial only</td>
         <td style="padding:10px 14px">$49/month ($39 annual)</td>
         <td style="padding:10px 14px">Solo writers, budget teams</td>
@@ -116,7 +116,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<p>If you want a deeper look at Frase specifically, see our full <a href="/tools/frase">Frase review</a>.</p>
+<p>If you want a deeper look at Frase specifically, see our full <a href="/tools/frase/">Frase review</a>.</p>
 
 <h3>3. Clearscope: best for larger teams thanks to unlimited seats</h3>
 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A larger marketing team collaborating around a laptop reviewing content grades" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -145,7 +145,7 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A writer's desk with a laptop open to a content editing dashboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>This is a mix-up that trips up a lot of first-time buyers in this category. Tools like Jasper or Writesonic are primarily <strong>generation</strong> tools. You give them a prompt, and they produce draft copy. Surfer, Frase, Clearscope, and MarketMuse are primarily <strong>optimization</strong> tools.</p><p>You bring a draft, written by you or generated elsewhere. They score it against what's already ranking. Then they tell you what to add, cut, or restructure.</p>
 <p>The lines have blurred. All four tools in this comparison now include some form of AI drafting. Surfer has Surfy, Frase has its AI Agent, and even Clearscope offers AI Drafts on its paid tiers. But the core value is still the scoring and research layer, not the writing layer.</p>
-<p>If your bottleneck is generating first drafts fast, a dedicated writing tool like <a href="/tools/writesonic">Writesonic</a> or our <a href="/blog/best-ai-writing-tools-2026/">best AI writing tools guide</a> is the more direct fit. If your bottleneck is turning decent drafts into pages that actually rank, that's exactly what these four tools are built for.</p>
+<p>If your bottleneck is generating first drafts fast, a dedicated writing tool like <a href="/tools/writesonic/">Writesonic</a> or our <a href="/blog/best-ai-writing-tools-2026/">best AI writing tools guide</a> is the more direct fit. If your bottleneck is turning decent drafts into pages that actually rank, that's exactly what these four tools are built for.</p>
 
 <h2>How we compared these four tools</h2>
 <p>Ranking four SEO content optimization tools fairly means applying the same process to each one. Here's exactly how this guide reached its conclusions.</p>
@@ -184,6 +184,11 @@ const post: BlogPost = {
 </ol>
 <p>Editorial verdict based on every pricing page directly: Surfer earns "best overall" on sheer feature depth. But Frase is the one I'd actually point a solo operator or lean team toward first. It matches Surfer's entry price without gating the useful features to a higher tier.</p>
 <p>Whichever tool you pick, verify current pricing directly on the vendor's site before subscribing. Three of the four tools in this guide changed their plan names, tiers, or pricing model within the past 18 months.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Frase.io.</strong></p>
+  <a href="${AFFILIATE_LINKS['frase']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Frase.io →</a>
+</div>
+
 `,
 
   faqs: [

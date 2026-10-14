@@ -64,7 +64,7 @@ const post: BlogPost = {
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>MCP (Model Context Protocol)</strong> is an open standard introduced by Anthropic in November 2024. It lets AI models connect to external tools, files, and live data sources through one shared interface. It replaces a custom-built connector for every model-and-tool pairing.</p>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">By June 2026 it has been adopted by Anthropic's own Claude products and OpenAI's ChatGPT. The AI-native code editors Cursor and Windsurf, VS Code, and automation platforms including n8n, Zapier, and Activepieces support it too. Over 10,000 MCP servers now exist, making MCP the closest thing the AI industry has to a universal integration layer.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">By June 2026 it has been adopted by Anthropic's own Claude products and OpenAI's <a href="/tools/chatgpt/">ChatGPT</a>. The AI-native code editors <a href="/tools/cursor/">Cursor</a> and <a href="/tools/windsurf/">Windsurf</a>, VS Code, and automation platforms including <a href="/tools/n8n/">n8n</a>, <a href="/tools/zapier/">Zapier</a>, and Activepieces support it too. Over 10,000 MCP servers now exist, making MCP the closest thing the AI industry has to a universal integration layer.</p>
 </div>
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
@@ -193,7 +193,7 @@ const post: BlogPost = {
 <p>MCP adoption accelerated through 2025 and into 2026 across three distinct categories of tools: development environments, automation platforms, and data or research products. Search interest in "MCP" and "Model Context Protocol" rose sharply over the past month. That tracks the pace at which mainstream tools outside Anthropic's own ecosystem added native support.</p>
 
 <h3>Development Tools: Cursor, Windsurf, VS Code</h3>
-<p><strong>Cursor</strong> and <strong>Windsurf</strong> are the two AI-native code editors most frequently compared against GitHub Copilot. Both added MCP support to let their AI agents call external tools mid-task.</p>
+<p><strong>Cursor</strong> and <strong>Windsurf</strong> are the two AI-native code editors most frequently compared against <a href="/tools/github-copilot/">GitHub Copilot</a>. Both added MCP support to let their AI agents call external tools mid-task.</p>
 <p>That means querying a database for a schema before writing a migration. It also means checking a project management tool for ticket context, or pulling live API documentation without leaving the editor.</p>
 <p><strong>VS Code</strong> gained MCP support through GitHub Copilot's tool-calling layer. This puts the protocol inside the most widely used code editor in the world, not just in dedicated AI-native forks.</p>
 <p>For developers, the real effect is that an MCP server built once, say, for a company's internal API, works across whichever of these editors a team happens to use.</p>

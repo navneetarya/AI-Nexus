@@ -38,7 +38,7 @@ const post: BlogPost = {
 <p>Type a sentence, get a finished song back in under two minutes. That is the pitch behind every <strong>ai music generator</strong> on this list. In 2026 it mostly works. Quality now clears the bar for background tracks, ads, and social content — it doesn't yet replace a producer for a commercial release.</p>
 <p>The research behind this guide covered pricing pages, Trustpilot data, and licensing terms for five of the biggest names in the category. The marketing pages skip the parts that actually change your decision.</p>
 <p>Two of these tools are still being sued by major record labels, and one has reportedly restricted downloads while it moves to a licensed platform. None of that shows up on a features comparison chart, but it should change which tool you pick.</p>
-<p>This guide compares Suno, Udio, ElevenLabs Music, Soundraw, and AIVA on real, current pricing and independent review data. It also covers the licensing risk each one actually carries, not just the number on the homepage.</p>
+<p>This guide compares Suno, Udio, <a href="/tools/elevenlabs/">ElevenLabs</a> Music, Soundraw, and AIVA on real, current pricing and independent review data. It also covers the licensing risk each one actually carries, not just the number on the homepage.</p>
 <p>One thing worth flagging early: Suno's App Store rating looks outstanding. It sits at 4.9 out of 5 from over 363,000 reviews.</p>
 <p>Its Trustpilot score, though, is just 1.6 out of 5 from 667 reviews. That split is real. Which one matters more depends on whether you're generating songs for fun, or relying on customer support for a paid plan. More on that below.</p>
 
@@ -94,7 +94,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">⭐ 3.0/5 (600+ reviews)</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">Soundraw</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['soundraw']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Soundraw</a></td>
         <td style="padding:10px 14px">No — generate only, downloads need a paid plan</td>
         <td style="padding:10px 14px">$16.99/month (Creator, monthly billing)</td>
         <td style="padding:10px 14px">Royalty-free background music</td>
@@ -314,6 +314,11 @@ const post: BlogPost = {
 </ol>
 <p>Editorial verdict based on every pricing page and every active lawsuit directly: Suno earns "best overall" on pure speed and output quality. But Soundraw is the one I'd actually recommend to a creator who can't afford legal uncertainty on a monetized channel.</p>
 <p>Verify each platform's current commercial-use and download terms before you publish anything, whichever tool you land on.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Soundraw.</strong></p>
+  <a href="${AFFILIATE_LINKS['soundraw']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Soundraw →</a>
+</div>
+
 `,
 
   faqs: [

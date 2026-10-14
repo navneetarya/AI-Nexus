@@ -173,7 +173,7 @@ const post: BlogPost = {
 <p>The prompt: <em>"What are the top 5 AI writing tools for freelancers in 2026 and why? I need to include specific pricing, features, and reasons why each one is worth using."</em></p>
 
 <p>This is Perplexity's home territory, and it showed. The output included numbered citations from recent articles, review sites, and official tool pages, all clickable, all checkable.</p>
-<p>The synthesis was accurate and the pricing was current. It had even picked up the Rytr pricing from a recent review. The structure was easy to turn into an actual section. Three of the citations were independently checked. They held up.</p>
+<p>The synthesis was accurate and the pricing was current. It had even picked up the <a href="/tools/rytr/">Rytr</a> pricing from a recent review. The structure was easy to turn into an actual section. Three of the citations were independently checked. They held up.</p>
 <p><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
 
 <p>What stood out about ChatGPT Plus here: with browsing enabled, it got close, but two of the five pricing figures were slightly off. Not wildly wrong, just one version behind. It presented them with the same confidence as the accurate ones, which is the part that matters.</p>

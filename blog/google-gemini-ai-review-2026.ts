@@ -80,14 +80,20 @@ const post: BlogPost = {
     { url: 'https://blog.google/products/gemini/', label: 'Google Gemini official product blog' },
     { url: 'https://one.google.com/about/ai-premium/', label: 'Google One AI Premium plan details' },
     { url: 'https://deepmind.google/technologies/gemini/', label: 'Google DeepMind — Gemini model overview' },
-    { url: 'https://support.google.com/docs/answer/13447291', label: 'Google Docs Help — using Gemini in Docs' },
+    { url: 'https://workspace.google.com/solutions/ai/', label: 'Google Workspace — Gemini in Docs and Gmail' },
   ],
 
-  wordCount: 2450,
+  wordCount: 1667,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>Is Gemini Better Than ChatGPT for Writing in 2026?</h2>
 <p>For most writing tasks, ChatGPT (GPT-5.5) still produces more consistently polished prose than Gemini 3.1 Pro. Gemini pulls ahead specifically for anyone who writes inside Google Docs and Gmail, or needs research baked directly into the output. Neither model wins every category outright — the right pick depends on which ecosystem the rest of your work already lives in.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Short on time? Our top pick here is Writesonic.</strong></p>
+  <a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic →</a>
+</div>
+
 <p>Google Trends shows a 550% spike in searches for "Gemini AI review" over the past 30 days. Gemini 3.1 Pro, Google's most capable model to date, launched recently with a 2-million-token context window and deep Workspace integration. Writers who use Google Docs daily are asking the obvious question: <strong>do I still need ChatGPT?</strong></p>
 <p>This review answers that directly. Both tools were independently researched through five real writing tasks — the same tasks most content creators face every week. No synthetic benchmarks, no vague capability claims. Here is what the documented output looks like, and where each tool wins.</p>
 

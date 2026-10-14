@@ -18,7 +18,7 @@ const post: BlogPost = {
   slug: 'best-ai-voice-generators-for-youtube-2026',
   title: 'Best AI Voice Generators for YouTube 2026: 2 Tools, 4 Real Use Cases',
   seoTitle: 'Best AI Voice Generator for YouTube 2026',
-  metaDescription: 'The best AI voice generator for YouTube in 2026, compared across short-form, long-form, explainer, and faceless channel formats. ElevenLabs vs Murf AI, real pricing.',
+  metaDescription: 'Best AI voice generator for YouTube in 2026, compared across short-form, long-form, explainer, and faceless formats. ElevenLabs vs Murf AI, real pricing.',
   datePublished: '2026-08-16',
   dateModified: '2026-10-09',
   author: 'Navneet Arya',
@@ -251,7 +251,7 @@ const post: BlogPost = {
     { url: 'https://support.google.com/youtube/answer/1311392', label: 'YouTube — Monetization Policies' },
   ],
 
-  wordCount: 2450,
+  wordCount: 1155,
 };
 
 export default post;

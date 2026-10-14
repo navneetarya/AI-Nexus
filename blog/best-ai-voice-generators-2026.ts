@@ -26,6 +26,7 @@ const post: BlogPost = {
   myTake: 'Published pricing and review evidence make ElevenLabs the strongest starting point; its free tier is substantial enough to evaluate before paying.',
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img src="https://images.unsplash.com/photo-1567596296091-0a257a028e72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone set up for podcast or voiceover recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Every "best AI voice generator" list published in the last year recommends the same handful of names. Few of them tell you which one actually fits your workflow, not just which one sounds the most human. The right pick depends on whether you need narration, cloned voices, or real-time conversational speech.</p>
@@ -72,7 +73,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">⭐ 4.5/5</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">Descript</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a></td>
         <td style="padding:10px 14px">Yes — limited; check current limits</td>
         <td style="padding:10px 14px">$16/month billed yearly ($24 monthly)</td>
         <td style="padding:10px 14px">Text-based audio & video editing</td>
@@ -330,6 +331,11 @@ const post: BlogPost = {
 <p>If you only pick one tool from this guide, start with ElevenLabs. The free plan is generous enough to test on a real project. The voice quality is the best available today. And the $6/month Starter tier is cheap enough that upgrading isn't a hard decision.</p>
 
 <p>If your work is video-first rather than voice-first, Murf AI is worth the $19/month (billed yearly) instead. And if voice generation is just one piece of a bigger podcast or video-editing workflow, Podcastle and Descript are the better fit. Both save more time than a standalone voice tool ever could on its own.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Descript.</strong></p>
+  <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript →</a>
+</div>
+
 `,
 
   faqs: [
@@ -369,7 +375,7 @@ const post: BlogPost = {
     { url: 'https://www.trustpilot.com/review/elevenlabs.io', label: 'ElevenLabs — Trustpilot Reviews' },
   ],
 
-  wordCount: 3300,
+  wordCount: 2300,
 };
 
 export default post;

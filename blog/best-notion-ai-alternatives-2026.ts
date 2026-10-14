@@ -78,6 +78,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Taskade</strong> is the best overall Notion AI alternative (free plan, AI agents). <strong>Writesonic</strong>
@@ -120,21 +121,21 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Best overall alternative</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Writesonic</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Writesonic</a></td>
       <td style="padding:10px 14px;">AI writing &amp; blog generation</td>
       <td style="padding:10px 14px;">✅ Yes</td>
       <td style="padding:10px 14px;">$16/mo</td>
       <td style="padding:10px 14px;">Best for content creators</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Frase.io</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['frase']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Frase.io</a></td>
       <td style="padding:10px 14px;">SEO content research &amp; writing</td>
       <td style="padding:10px 14px;">❌ Trial only</td>
       <td style="padding:10px 14px;">$15/mo</td>
       <td style="padding:10px 14px;">Best for SEO writers</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;">Notion AI</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Notion AI</a></td>
       <td style="padding:10px 14px;">AI inside existing Notion workspace</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">$10/mo add-on</td>

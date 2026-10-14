@@ -194,7 +194,7 @@ const post: BlogPost = {
 <p>The catch: no major Dragon Professional version has shipped since 2023, and Nuance's own consumer Dragon Home tier was discontinued the same year. That signals a shift toward enterprise healthcare rather than general dictation.</p>
 <p>Unless your workflow specifically demands legal or medical vocabulary accuracy on Windows, a modern Whisper-based tool at a fraction of the price will cover most needs just as well.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.nuance.com/dragon.html" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See Dragon Professional →</a>
+  <a href="https://www.nuance.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">See Dragon Professional →</a>
 </div>
 
 <h3>Apple Dictation & Google Docs Voice Typing — Best Free Options</h3>
@@ -235,7 +235,7 @@ const post: BlogPost = {
 <p>The reliability concerns above still apply equally, though, regardless of which pricing tier you're on.</p>
 
 <h2>Who Should Use an AI Dictation Tool?</h2>
-<p><strong>Best for:</strong> writers, freelancers, and content creators who produce a high daily volume of emails, drafts, or messages and want to reduce typing strain. It's also a fit for developers who want to speak prompts and commit messages into AI coding tools like Cursor or Claude Code.</p>
+<p><strong>Best for:</strong> writers, freelancers, and content creators who produce a high daily volume of emails, drafts, or messages and want to reduce typing strain. It's also a fit for developers who want to speak prompts and commit messages into AI coding tools like Cursor or <a href="/tools/claude-code/">Claude Code</a>.</p>
 <p>Both Wispr Flow and Superwhisper now offer editor-specific integrations for that use case. And it suits anyone managing RSI, a physical disability, or a workflow where hands-free input is a genuine accessibility need.</p>
 <p><strong>Skip if:</strong> you dictate only occasionally, since a free built-in option covers this without a subscription. Skip it too if your work involves confidential or regulated data and your organization prohibits cloud-processed audio.</p>
 <p>Superwhisper's local mode or Dragon's on-device processing are the safer starting points there. And be cautious if you're specifically drawn to Wispr Flow's marketing without having weighed its Trustpilot pattern against your own tolerance for post-trial reliability risk.</p>
@@ -260,6 +260,11 @@ const post: BlogPost = {
 <p>But its 2.7/5 Trustpilot rating and documented post-trial reliability complaints are a real cost of that convenience, not a minor asterisk.</p>
 <p>Superwhisper is the more defensible default for Mac-only users who value privacy and want to avoid a recurring subscription entirely. Otter.ai and Dragon Professional remain the right calls for their specific, narrower jobs — meeting capture and specialized professional vocabulary, respectively — rather than general-purpose replacements for the other four.</p>
 <p>And for anyone who dictates lightly, Apple Dictation or Google Docs Voice Typing remove the decision altogether at zero cost. Start free, and only pay once you've confirmed the habit sticks over a real week of use, not a rushed five-minute trial.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Transkriptor.</strong></p>
+  <a href="${AFFILIATE_LINKS['transkriptor']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Transkriptor →</a>
+</div>
+
   `.trim(),
   wordCount: 2601,
   proscons: {

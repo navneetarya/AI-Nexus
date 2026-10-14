@@ -45,7 +45,7 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The most genuinely useful free AI plans: <strong>Perplexity</strong> (unlimited searches), <strong>Leonardo.ai</strong> (150 tokens/day), <strong>Grammarly</strong> (unlimited grammar), <strong>Canva</strong> (generous design), <strong>Gamma</strong> (400 AI credits), <strong>Replit</strong> (unlimited projects).</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The most genuinely useful free AI plans: <strong>Perplexity</strong> (unlimited searches), <strong>Leonardo.ai</strong> (150 tokens/day), <strong>Grammarly</strong> (unlimited grammar), <strong>Canva</strong> (generous design), <strong>Gamma</strong> (400 AI credits), <strong><a href="/tools/replit/">Replit</a></strong> (unlimited projects).</p>
 </div>
 
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
@@ -74,7 +74,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Research, fact-checking</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Leonardo.ai</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Leonardo.ai</a></td>
       <td style="padding:10px 14px;">150 image tokens/day</td>
       <td style="padding:10px 14px;">Daily</td>
       <td style="padding:10px 14px;">Regular AI image generation</td>
@@ -92,7 +92,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Non-designers, marketing visuals</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Gamma</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Gamma</a></td>
       <td style="padding:10px 14px;">400 one-time AI credits</td>
       <td style="padding:10px 14px;">One-time</td>
       <td style="padding:10px 14px;">Occasional presentations</td>
@@ -104,7 +104,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Learning to code, prototyping</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;">Taskade</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Taskade</a></td>
       <td style="padding:10px 14px;">Unlimited projects, 5 AI runs/month</td>
       <td style="padding:10px 14px;">Monthly (AI runs)</td>
       <td style="padding:10px 14px;">Freelancer project management</td>
@@ -162,7 +162,7 @@ const post: BlogPost = {
 </div>
 
 <h3>7. Taskade: Unlimited Projects With Basic AI</h3>
-<p>Taskade's free plan provides unlimited projects, unlimited tasks, 5 workspaces, and 5 AI agent runs per month. The AI project generation (which creates a full task list from a goal description) works on the free plan — you just get fewer runs. For individual freelancers and solopreneurs managing their own projects, the free plan is functional for daily task management.</p>
+<p><a href="/tools/taskade/">Taskade</a>'s free plan provides unlimited projects, unlimited tasks, 5 workspaces, and 5 AI agent runs per month. The AI project generation (which creates a full task list from a goal description) works on the free plan — you just get fewer runs. For individual freelancers and solopreneurs managing their own projects, the free plan is functional for daily task management.</p>
 <p><strong>Best for:</strong> Freelancers and solopreneurs who want AI-assisted project management without a subscription.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a>
@@ -172,13 +172,13 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Free Plans That Are Less Useful Than They Seem" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Not every "free plan" is worth listing. Several prominent AI tools have free plans that are effectively non-functional for ongoing use:</p>
 <ul>
-  <li><strong>Jasper:</strong>
+  <li><strong><a href="/tools/jasper/">Jasper</a>:</strong>
 <p><a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p> 7-day trial only, no permanent free plan.</li>
-  <li><strong>Writesonic:</strong>
+  <li><strong><a href="/tools/writesonic/">Writesonic</a>:</strong>
 <p><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p> 25 one-time credits, not renewable, effectively a trial.</li>
-  <li><strong>Beautiful.ai:</strong>
+  <li><strong><a href="/tools/beautiful-ai/">Beautiful.ai</a>:</strong>
 <p><a href="${AFFILIATE_LINKS['beautiful-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Beautiful.ai Free →</a></p> 14-day trial only.</li>
-  <li><strong>Murf AI:</strong> 10 minutes of voiceover per month, enough for testing, not production use.</li>
+  <li><strong><a href="/tools/murf-ai/">Murf AI</a>:</strong> 10 minutes of voiceover per month, enough for testing, not production use.</li>
 </ul>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>

@@ -86,6 +86,7 @@ const post: BlogPost = {
   wordCount: 1660,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI tools for teachers in 2026 are <strong>Gamma</strong> for turning lesson notes into presentations in minutes and <strong>Grammarly</strong> for fast, tone-aware feedback on student writing. Also useful: <strong>Notion AI</strong> for organising lesson plans and <strong>Rytr</strong> for generating worksheet content. All four have usable free plans.</p>
@@ -130,7 +131,7 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Gamma</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Gamma</a></td>
       <td style="padding:10px 14px;">Presentations &amp; slides</td>
       <td style="padding:10px 14px;">✅ Free credits</td>
       <td style="padding:10px 14px;">$10/mo</td>
@@ -144,14 +145,14 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">⭐ 4.5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Notion AI</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Notion AI</a></td>
       <td style="padding:10px 14px;">Lesson planning &amp; organisation</td>
       <td style="padding:10px 14px;">✅ Limited trial</td>
       <td style="padding:10px 14px;">$10/mo add-on</td>
       <td style="padding:10px 14px;">⭐ 4.3</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;">Rytr</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
       <td style="padding:10px 14px;">Worksheets &amp; content</td>
       <td style="padding:10px 14px;">✅ 10K chars/mo</td>
       <td style="padding:10px 14px;">$9/mo</td>

@@ -101,7 +101,7 @@ const post: BlogPost = {
 </div>
 
 <h3>AIRA — best overall value</h3>
-<p>AIRA's pitch is simple: every plan, including the $24.95/month Starter tier, includes full bilingual support across 31 languages. That means 24/7 answering, appointment booking, and CRM integrations with HubSpot, Pipedrive, and Zapier, on every tier.</p>
+<p>AIRA's pitch is simple: every plan, including the $24.95/month Starter tier, includes full bilingual support across 31 languages. That means 24/7 answering, appointment booking, and CRM integrations with HubSpot, Pipedrive, and <a href="/tools/zapier/">Zapier</a>, on every tier.</p>
 <p>That's a very different setup from most of this list. Cheaper tiers on other tools often strip out the features that actually make a receptionist useful.</p>
 
 <img src="https://images.unsplash.com/photo-1522241112606-b5d35a468795?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop and pen next to a business calendar used for booking client appointments" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />

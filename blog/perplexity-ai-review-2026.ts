@@ -13,7 +13,7 @@ const post: BlogPost = {
   slug: 'perplexity-ai-review-2026',
   title: 'Perplexity AI Review 2026: Is It Worth It vs Google Search?',
   seoTitle: 'Perplexity AI Review 2026: Is It Worth It vs Google Search?',
-  metaDescription: 'Perplexity AThe review covers for 2026 — tested against Google Search on research and everyday queries. Is it worth $20/month? See the honest verdict.',
+  metaDescription: 'Perplexity AI review for 2026 — tested against Google Search on research and everyday queries. Is it worth $20/month? See the honest verdict.',
   datePublished: '2026-05-15',
   dateModified: '2026-09-29',
   author: 'Navneet Arya',
@@ -140,12 +140,12 @@ const post: BlogPost = {
   <tbody>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 14px;">Multi-source research (academic, technical)</td>
-      <td style="padding:10px 14px;font-weight:600;">Perplexity</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Perplexity</a></td>
       <td style="padding:10px 14px;">Synthesises across sources, saves tab-switching</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
       <td style="padding:10px 14px;">Product comparisons + buying decisions</td>
-      <td style="padding:10px 14px;font-weight:600;">Perplexity</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Perplexity</a></td>
       <td style="padding:10px 14px;">Structured comparison tables with current pricing</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
@@ -165,12 +165,12 @@ const post: BlogPost = {
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
       <td style="padding:10px 14px;">How-to guides (step-by-step)</td>
-      <td style="padding:10px 14px;font-weight:600;">Perplexity</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Perplexity</a></td>
       <td style="padding:10px 14px;">Direct steps with sources; no recipe-blog preamble</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 14px;">Code help + technical debugging</td>
-      <td style="padding:10px 14px;font-weight:600;">Perplexity (Pro)</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Perplexity</a> (Pro)</td>
       <td style="padding:10px 14px;">Pro Search with Claude/GPT-4o reasons through errors</td>
     </tr>
     <tr>
@@ -183,7 +183,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Test Scenario: Competitive Research Task</h2>
-<p><strong>Query:</strong> "What are the pricing differences between Notion AI, Taskade, and Coda AI in 2026, and which is best for a solo freelancer?"</p>
+<p><strong>Query:</strong> "What are the pricing differences between <a href="/tools/notion-ai/">Notion AI</a>, <a href="/tools/taskade/">Taskade</a>, and Coda AI in 2026, and which is best for a solo freelancer?"</p>
 <p><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
 <p><a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Notion AI Free →</a></p>
 <p><strong>Google result:</strong> Ten links: a mix of each tool's pricing page, two review articles from late 2025, and a Reddit thread. To get the answer, I opened four tabs, read three pricing pages, scanned the review articles, and assembled the comparison myself. Time: about 7 minutes.</p>
@@ -209,7 +209,7 @@ const post: BlogPost = {
 <ul>
   <li><strong>It cannot replace Google for local search.</strong> For "best coffee near me," Google wins every time. Perplexity has no location awareness or real-time business data comparable to Google Maps.</li>
   <li><strong>Breaking news is slower.</strong> Google News indexes new articles within minutes. Perplexity's refresh cycle for very recent news is slower, and it can miss stories from smaller publications that Google indexes quickly.</li>
-  <li><strong>It does not create content.</strong> Perplexity is a research and synthesis tool. It can help you gather and organise information, but it is not a writing assistant in the way that ChatGPT or <a href="/tools/writesonic/" style="color:rgb(13,148,136);">Writesonic</a> are. For writing workflows, pair Perplexity's research with a dedicated writing tool.</li>
+  <li><strong>It does not create content.</strong> Perplexity is a research and synthesis tool. It can help you gather and organise information, but it is not a writing assistant in the way that <a href="/tools/chatgpt/">ChatGPT</a> or <a href="/tools/writesonic/" style="color:rgb(13,148,136);">Writesonic</a> are. For writing workflows, pair Perplexity's research with a dedicated writing tool.</li>
 <p><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
   <li><strong>Citations can be imperfect.</strong> Perplexity sometimes cites a source for a claim it actually inferred or synthesised across multiple sources. Always verify specific statistics and claims against the linked source before using them professionally.</li>
 </ul>

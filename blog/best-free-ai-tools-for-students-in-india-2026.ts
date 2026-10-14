@@ -82,8 +82,9 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Are the Best Free AI Tools for Students in India in 2026?</h2>
-<p>The best free AI tools for students in India in 2026 are Grammarly, Rytr, QuillBot, and Perplexity. Grammarly handles essays and assignments. Rytr writes with Hindi-language support. QuillBot paraphrases research papers. Perplexity gives cited research answers. Every one of them works from a normal Indian college campus without a VPN or a dollar card.</p>
+<p>The best free AI tools for students in India in 2026 are Grammarly, Rytr, QuillBot, and <a href="/tools/perplexity/">Perplexity</a>. Grammarly handles essays and assignments. Rytr writes with Hindi-language support. QuillBot paraphrases research papers. Perplexity gives cited research answers. Every one of them works from a normal Indian college campus without a VPN or a dollar card.</p>
 <p>Most "best free AI tools for students" lists are written for US or UK audiences. They recommend tools that require a dollar card to activate the free plan. They suggest options blocked in India, or list prices only in USD without any note on GST or exchange-rate impact.</p>
 <p>This guide is written just for students in India. Every tool here works from an Indian IP with no VPN, every free plan needs only an email, and INR pricing is added where it applies.</p>
 <p>For a broader list of AI tools for Indian creators of all types, see the <a href="/blog/best-ai-tools-in-india-2026/" style="color:#0D9488;font-weight:600;">best AI tools in India 2026 guide</a>. For a non-India-specific student tool comparison, see <a href="/blog/ai-tools-for-students-free-2026/" style="color:#0D9488;font-weight:600;">best free AI tools for students 2026</a>. This post covers the intersection: free tools that work specifically well for students studying and writing from India.</p>
@@ -123,7 +124,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px;color:var(--txt);">~₹999/month</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(128,128,128,0.15);background:var(--bg);">
-        <td style="padding:10px 14px;font-weight:600;color:var(--txt);">Rytr</td>
+        <td style="padding:10px 14px;font-weight:600;color:var(--txt);"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
         <td style="padding:10px 14px;color:var(--txt);">Drafts &amp; Hindi content</td>
         <td style="padding:10px 14px;color:var(--txt);">10,000 chars/month</td>
         <td style="padding:10px 14px;color:var(--a1);font-weight:600;">No</td>
@@ -131,7 +132,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px;color:var(--txt);">~₹750/month</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(128,128,128,0.15);background:var(--surf);">
-        <td style="padding:10px 14px;font-weight:600;color:var(--txt);">QuillBot</td>
+        <td style="padding:10px 14px;font-weight:600;color:var(--txt);"><a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer">QuillBot</a></td>
         <td style="padding:10px 14px;color:var(--txt);">Paraphrasing &amp; summarising</td>
         <td style="padding:10px 14px;color:var(--txt);">125 words/paraphrase</td>
         <td style="padding:10px 14px;color:var(--a1);font-weight:600;">No</td>
@@ -139,7 +140,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px;color:var(--txt);">~₹830/month</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(128,128,128,0.15);background:var(--bg);">
-        <td style="padding:10px 14px;font-weight:600;color:var(--txt);">Perplexity</td>
+        <td style="padding:10px 14px;font-weight:600;color:var(--txt);"><a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Perplexity</a></td>
         <td style="padding:10px 14px;color:var(--txt);">Research &amp; UPSC prep</td>
         <td style="padding:10px 14px;color:var(--txt);">Unlimited searches</td>
         <td style="padding:10px 14px;color:var(--a1);font-weight:600;">No</td>
@@ -147,7 +148,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px;color:var(--txt);">~₹1,660/month</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(128,128,128,0.15);background:var(--surf);">
-        <td style="padding:10px 14px;font-weight:600;color:var(--txt);">Gamma</td>
+        <td style="padding:10px 14px;font-weight:600;color:var(--txt);"><a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Gamma</a></td>
         <td style="padding:10px 14px;color:var(--txt);">Presentations &amp; slides</td>
         <td style="padding:10px 14px;color:var(--txt);">400 AI credits on signup</td>
         <td style="padding:10px 14px;color:var(--a1);font-weight:600;">No</td>
@@ -155,7 +156,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px;color:var(--txt);">USD only</td>
       </tr>
       <tr style="background:var(--bg);">
-        <td style="padding:10px 14px;font-weight:600;color:var(--txt);">Taskade</td>
+        <td style="padding:10px 14px;font-weight:600;color:var(--txt);"><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Taskade</a></td>
         <td style="padding:10px 14px;color:var(--txt);">Study planning &amp; notes</td>
         <td style="padding:10px 14px;color:var(--txt);">Full AI features free</td>
         <td style="padding:10px 14px;color:var(--a1);font-weight:600;">No</td>

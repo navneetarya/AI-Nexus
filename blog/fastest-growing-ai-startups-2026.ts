@@ -43,6 +43,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Research Note</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">AI startup growth data in 2026 is a mix of company-disclosed figures, analyst estimates, and secondary research. Where exact figures are not publicly confirmed, this analysis uses verified ranges from public reporting. All claims are independently researched.</p>
@@ -54,8 +55,8 @@ const post: BlogPost = {
 </div>
 <ol style="margin:12px 0;padding-left:20px;line-height:1.9;">
   <li><strong>Check for a moat beyond model access.</strong> If the pitch is "we give you GPT-4 with a nicer UI," that's not a moat. Look for proprietary data, deep workflow integration, or real domain expertise.</li>
-  <li><strong>Look for one specific use case, not a general assistant.</strong> Perplexity won research. Cursor won coding. A startup trying to be everything to everyone rarely outgrows the model it's built on.</li>
-  <li><strong>Check if developers are building on top of it.</strong> A real API and active developer community, like ElevenLabs', creates distribution no ad budget can buy.</li>
+  <li><strong>Look for one specific use case, not a general assistant.</strong> Perplexity won research. <a href="/tools/cursor/">Cursor</a> won coding. A startup trying to be everything to everyone rarely outgrows the model it's built on.</li>
+  <li><strong>Check if developers are building on top of it.</strong> A real API and active developer community, like <a href="/tools/elevenlabs/">ElevenLabs</a>', creates distribution no ad budget can buy.</li>
   <li><strong>Test the free plan for real value, not a crippled trial.</strong> The best free tiers show genuine value and let paid limits kick in naturally as usage grows.</li>
 </ol>
 
@@ -94,7 +95,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px;color:var(--txt);">Built as its own IDE, not a plugin</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(128,128,128,0.15);background:var(--surf);">
-        <td style="padding:10px 14px;font-weight:600;color:var(--txt);">Windsurf</td>
+        <td style="padding:10px 14px;font-weight:600;color:var(--txt);"><a href="/tools/windsurf/">Windsurf</a></td>
         <td style="padding:10px 14px;color:var(--txt);">AI Coding</td>
         <td style="padding:10px 14px;color:var(--txt);">Fast user growth, no public ARR</td>
         <td style="padding:10px 14px;color:var(--txt);">Generous free plan, agentic Cascade</td>
@@ -129,7 +130,7 @@ const post: BlogPost = {
 <h3>AI Search & Research</h3>
 <p><strong>Perplexity AI</strong> is the standout growth story in AI search. The company reportedly crossed 100 million monthly active users in 2025-2026, up from 10M in early 2024.</p>
 <p>Revenue has grown through Perplexity Pro subscriptions ($20/month) and an enterprise API product.</p>
-<p>The company's positioning stood out: AI search with citations, not chatbot answers. That difference from ChatGPT drove strong word-of-mouth among researchers, students, and professionals who couldn't accept AI hallucinations in their research.</p>
+<p>The company's positioning stood out: AI search with citations, not chatbot answers. That difference from <a href="/tools/chatgpt/">ChatGPT</a> drove strong word-of-mouth among researchers, students, and professionals who couldn't accept AI hallucinations in their research.</p>
 <p>The growth driver: a specific use case (verified, cited answers) that served a real user need that ChatGPT didn't address well.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
@@ -181,7 +182,7 @@ const post: BlogPost = {
 </ul>
 <p>One vertical worth flagging is AI-powered recruitment and hiring. Several early-stage startups are applying the same playbook that worked for Perplexity in search and Cursor in coding. Instead of a general-purpose assistant, they focus on one painful workflow, like sourcing candidates, screening resumes, or scheduling interviews, applied to hiring.</p>
 <p>Recruitment still involves a lot of manual, repetitive work, so this is a category we expect meaningful growth from over the next year. See our <a href="/blog/best-ai-recruitment-tools-2026/">Best AI Recruitment Tools 2026</a> comparison for a full breakdown of who's leading it.</p>
-<p>The agent-versus-automation distinction covered in <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a> is directly relevant to evaluating these tools. <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a> already covers several agent platforms, including Lindy, that smaller teams are adapting for candidate outreach and screening today.</p>
+<p>The agent-versus-automation distinction covered in <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a> is directly relevant to evaluating these tools. <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a> already covers several agent platforms, including <a href="/tools/lindy/">Lindy</a>, that smaller teams are adapting for candidate outreach and screening today.</p>
 <p><a href="${AFFILIATE_LINKS['lindy']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try lindy Free →</a></p>
 `
 };

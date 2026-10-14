@@ -246,7 +246,7 @@ const post: BlogPost = {
   <li>Skip ElevenLabs if lip sync is genuinely required. It's excellent for audio, but it doesn't touch video at all.</li>
 </ul>
 
-<p>If you're already comparing ElevenLabs against Murf AI for the voice side of this decision rather than dubbing specifically, our <a href="/compare/murf-ai-vs-elevenlabs/">Murf AI vs ElevenLabs comparison</a> covers that separately. Murf doesn't have a dedicated dubbing product, so it's not part of this list.</p>
+<p>If you're already comparing ElevenLabs against <a href="/tools/murf-ai/">Murf AI</a> for the voice side of this decision rather than dubbing specifically, our <a href="/compare/murf-ai-vs-elevenlabs/">Murf AI vs ElevenLabs comparison</a> covers that separately. Murf doesn't have a dedicated dubbing product, so it's not part of this list.</p>
 
 <p>For the wider AI video and voice toolkit most YouTube creators end up assembling, see our <a href="/blog/best-ai-tools-for-youtube-creators-2026/">AI tools for YouTube creators guide</a>. Browse every independently researched audio tool on the <a href="/best-ai-audio-tools/">AI audio tools category page</a>.</p>
 

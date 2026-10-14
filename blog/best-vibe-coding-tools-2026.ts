@@ -54,6 +54,7 @@ const post: BlogPost = {
   wordCount: 1720,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Lovable</strong> is best for beginners who need a full-stack app with a working database and login, live in minutes. <strong>Bolt</strong> suits builders who want framework flexibility and cleaner frontend code. <strong>v0 by Vercel</strong> isn't an app builder — it generates polished React UI components for developers already working in Next.js. Most solo builders start with Lovable.</p>
@@ -107,7 +108,7 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Lovable</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Lovable</a></td>
       <td style="padding:10px 14px;">Full-stack apps for non-developers</td>
       <td style="padding:10px 14px;">✅ 5 msg/day</td>
       <td style="padding:10px 14px;">$25/mo</td>

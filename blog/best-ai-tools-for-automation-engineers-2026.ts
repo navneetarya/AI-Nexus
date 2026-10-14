@@ -43,7 +43,7 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For writing automation test code: <strong>GitHub Copilot ($10/mo)</strong>. For self-healing web tests: <strong>Testim</strong>. For visual AI testing: <strong>Applitools</strong>. For AI-driven test generation: <strong>Mabl</strong>. For complex test architecture discussions: <strong>Claude 3.5 Sonnet ($20/mo)</strong>.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For writing automation test code: <strong><a href="/tools/github-copilot/">GitHub Copilot</a> ($10/mo)</strong>. For self-healing web tests: <strong>Testim</strong>. For visual AI testing: <strong>Applitools</strong>. For AI-driven test generation: <strong>Mabl</strong>. For complex test architecture discussions: <strong>Claude 3.5 Sonnet ($20/mo)</strong>.</p>
 </div>
 
 <h2>What Are the Best AI Tools for Automation Engineers in 2026?</h2>

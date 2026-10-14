@@ -74,6 +74,7 @@ const post: BlogPost = {
   },
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0d9488;border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;">
   <p style="font-weight:600;margin:0 0 8px;color:#0d9488;font-size:13px;text-transform:uppercase;letter-spacing:.04em;">Quick Verdict</p>
   <p style="margin:0;line-height:1.7;"><strong>Best overall:</strong> Gemini, with an unlimited free plan, real-time web access, and no rate limits. <strong>Best for research:</strong> Perplexity, where every answer has clickable source citations.</p>
@@ -127,21 +128,21 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">⭐ 4.5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;">Perplexity</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Perplexity</a></td>
       <td style="padding:10px 14px;">Research with citations</td>
       <td style="padding:10px 14px;">✅ Unlimited basic</td>
       <td style="padding:10px 14px;">✅ Yes</td>
       <td style="padding:10px 14px;">⭐ 4.6</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Rytr</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
       <td style="padding:10px 14px;">Short-form content</td>
       <td style="padding:10px 14px;">✅ 10K chars/mo</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">⭐ 4.0</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;">Writesonic</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Writesonic</a></td>
       <td style="padding:10px 14px;">SEO blog content</td>
       <td style="padding:10px 14px;">✅ 1 article/mo</td>
       <td style="padding:10px 14px;">✅ Via Chatsonic</td>
@@ -172,7 +173,7 @@ const post: BlogPost = {
 
 <h2>2. Perplexity: The Best Free Alternative for Research</h2>
 <p><strong>Rating: 4.6/5 · Free plan: Unlimited basic searches, 5 Pro searches/day</strong></p>
-<p>Perplexity isn't trying to be ChatGPT. It's a research engine, and it's the best one you can get for free. Every answer comes with numbered links back to the source. That alone beats ChatGPT for any task where facts matter. See our full <a href="/tools/perplexity" style="color:var(--a1);font-weight:600;">Perplexity review</a> for pricing tiers and hands-on notes.</p>
+<p>Perplexity isn't trying to be ChatGPT. It's a research engine, and it's the best one you can get for free. Every answer comes with numbered links back to the source. That alone beats ChatGPT for any task where facts matter. See our full <a href="/tools/perplexity/" style="color:var(--a1);font-weight:600;">Perplexity review</a> for pricing tiers and hands-on notes.</p>
 <p>Perplexity was used as the primary research tool for a two-week evaluation. For gathering information about AI tools, competitors, pricing, and features, it saved hours compared to manual Google searches. The "Focus" modes let you search specific domains: Academic, YouTube, Reddit, or the whole web.</p>
 <p><strong>Why it wins for research:</strong> When ChatGPT tells you something, you have to trust it or manually verify. When Perplexity tells you something, you can click the citation and check immediately. For freelancers, students, and anyone writing content, this is transformative.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
@@ -190,7 +191,7 @@ const post: BlogPost = {
 <h2>3. Rytr: The Best Free Alternative for Quick Content</h2>
 <p><strong>Rating: 4.0/5 · Free plan: 10,000 characters/month</strong></p>
 <p>Rytr occupies a different niche from chat-based alternatives. It's a structured content generator with 40+ use-case templates: blog intros, product descriptions, ad copy, email subjects, social media posts. You fill in a brief, pick a tone, and Rytr generates 2-3 options.</p>
-<p>For beginners who find ChatGPT's blank prompt box intimidating, Rytr's template approach is far more approachable. You don't need to learn <a href="/glossary/#prompt-engineering" style="color:var(--a1);font-weight:600;">prompt engineering</a>. Just pick "Blog Section" from the dropdown, type your topic, and you get usable copy in seconds. Full breakdown in our <a href="/tools/rytr" style="color:var(--a1);font-weight:600;">Rytr review</a>.</p>
+<p>For beginners who find ChatGPT's blank prompt box intimidating, Rytr's template approach is far more approachable. You don't need to learn <a href="/glossary/#prompt-engineering" style="color:var(--a1);font-weight:600;">prompt engineering</a>. Just pick "Blog Section" from the dropdown, type your topic, and you get usable copy in seconds. Full breakdown in our <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">Rytr review</a>.</p>
 <p>The 10,000 character free limit is tight, roughly 2-3 blog sections per month. Even so, it's enough to test whether AI writing works for your workflow before committing to the $9/month Saver plan.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
   <li><strong>Pros:</strong> Template-guided writing, beginner-friendly, affordable upgrade</li>
@@ -206,7 +207,7 @@ const post: BlogPost = {
 </p>
 <h2>4. Writesonic: The Best Free Alternative for SEO Blogging</h2>
 <p><strong>Rating: 4.2/5 · Free plan: ~1 article/month</strong></p>
-<p>Writesonic's <a href="/tools/writesonic" style="color:var(--a1);font-weight:600;">Chatsonic feature</a> is a direct ChatGPT competitor with one key advantage: built-in web search. You can ask it about today's news, recent product launches, or current pricing, and it pulls real-time data. It also has a dedicated AI Article Writer that generates structured, SEO-ready blog posts with headings, intros, and conclusions.</p>
+<p>Writesonic's <a href="/tools/writesonic/" style="color:var(--a1);font-weight:600;">Chatsonic feature</a> is a direct ChatGPT competitor with one key advantage: built-in web search. You can ask it about today's news, recent product launches, or current pricing, and it pulls real-time data. It also has a dedicated AI Article Writer that generates structured, SEO-ready blog posts with headings, intros, and conclusions.</p>
 <p>The Article Writer produces noticeably more structured output than ChatGPT from a generic blog post prompt. Headings are logical, word count hits 1,500+ words consistently, and SEO formatting is solid out of the box. Verified across multiple blog topics in user-reported feedback on G2 and Reddit.</p>
 <p><strong>The limitation:</strong> The free plan is stingy. You get roughly one full article before the credits run out. But if SEO content is your focus, the $16/month Individual plan is worth it for the unlimited Article Writer access alone.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
@@ -234,7 +235,7 @@ const post: BlogPost = {
 <h2>Final Verdict</h2>
 <p>The era of ChatGPT being the obvious default is over. Gemini's unlimited free plan with web access makes it the best general-purpose alternative. Perplexity's citation-backed research is something ChatGPT still can't match. And for content creators, Rytr and Writesonic offer more structured workflows than a blank chat window.</p>
 <p>All four are free to start. Try them on your actual work, not demo prompts, and you'll likely find at least one that fits your workflow better than ChatGPT does.</p>
-<p>Still building your AI toolkit? Compare more options in our <a href="/blog/best-free-ai-writing-tools-2026" style="color:var(--a1);font-weight:600;">best free AI writing tools</a> roundup, or check <a href="/tools/chatgpt" style="color:var(--a1);font-weight:600;">our ChatGPT review</a> to see exactly what the paid tier adds over these free picks.</p>
+<p>Still building your AI toolkit? Compare more options in our <a href="/blog/best-free-ai-writing-tools-2026/" style="color:var(--a1);font-weight:600;">best free AI writing tools</a> roundup, or check <a href="/tools/chatgpt/" style="color:var(--a1);font-weight:600;">our ChatGPT review</a> to see exactly what the paid tier adds over these free picks.</p>
   `.trim(),
 };
 

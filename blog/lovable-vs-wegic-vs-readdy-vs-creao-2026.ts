@@ -84,22 +84,22 @@ const post: BlogPost = {
     { url: 'https://www.b12.io/ai-directory/creao/', label: 'CREAO directory listing with plan details' },
     { url: 'https://docs.lovable.dev/introduction/plans-and-credits', label: 'Lovable plans and credits (official docs)' },
   ],
-  wordCount: 2000,
+  wordCount: 1331,
   content: `
 <p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> - we may earn a commission at no extra cost to you.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">You can start any of these 4 builders free, but they build 3 different things. Lovable builds full-stack apps. Wegic builds simple websites by chat. Readdy builds websites with a visual editor, hosting and a lead-capture agent. CREAO builds AI agents and workflows, not websites. Choose by the job, then compare credit limits.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">You can start any of these 4 builders free, but they build 3 different things. Lovable builds full-stack apps. Wegic builds simple websites by chat. <a href="/tools/readdy/">Readdy</a> builds websites with a visual editor, hosting and a lead-capture agent. CREAO builds AI agents and workflows, not websites. Choose by the job, then compare credit limits.</p>
 </div>
 
 <h2>The short answer: four tools, three different jobs</h2>
 <p>All four tools sell a similar promise. You describe what you want in plain language and the AI builds it. The output is very different.</p>
 <p>Use this table to find your job first. Prices are monthly list prices checked on 9 October 2026, and some are ranges because sources disagree.</p>
 <div style="overflow-x:auto;margin:20px 0 28px;"><table style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr style="background:rgba(13,148,136,.1);"><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Tool</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Builds</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Free plan</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Entry paid plan</th></tr></thead><tbody>
-<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Lovable</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Full-stack web apps</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">5 daily credits, 30 a month</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Pro $25, 100 credits</td></tr>
-<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Wegic</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Websites built by chat</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Starter credits, $2.99 trial</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">About $10 to $40, sources differ</td></tr>
-<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Readdy</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Websites with editor and lead agent</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">250 credits a month, 2 projects</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Starter $25 ($15 on yearly billing)</td></tr>
-<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">CREAO</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">AI agents and workflow apps</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">30 credits a month, no card</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Pro $20 to $25, 250 credits</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);"><a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Lovable</a></td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Full-stack web apps</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">5 daily credits, 30 a month</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Pro $25, 100 credits</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);"><a href="${AFFILIATE_LINKS['wegic']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Wegic</a></td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Websites built by chat</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Starter credits, $2.99 trial</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">About $10 to $40, sources differ</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);"><a href="${AFFILIATE_LINKS['readdy']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Readdy</a></td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Websites with editor and lead agent</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">250 credits a month, 2 projects</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Starter $25 ($15 on yearly billing)</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);"><a href="${AFFILIATE_LINKS['creao-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">CREAO</a></td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">AI agents and workflow apps</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">30 credits a month, no card</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Pro $20 to $25, 250 credits</td></tr>
 </tbody></table></div>
 <img src="/images/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026/which-builder-for-which-job.svg" alt="Summary card showing which AI builder suits which job" width="640" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:14px 0 20px;border-radius:12px;" />
 <h3>How this was researched</h3>
@@ -108,6 +108,11 @@ const post: BlogPost = {
 <h2>What each tool actually builds</h2>
 <h3>Lovable: full-stack apps with a database and logins</h3>
 <p>Lovable turns a prompt into a web app. Our <a href="/blog/best-vibe-coding-tools-2026/" style="color:var(--a1);font-weight:600;">vibe coding comparison</a> describes it as a React front end with a Supabase back end, deployed to a live address. Read our <a href="/tools/lovable/" style="color:var(--a1);font-weight:600;">Lovable review</a> for the longer view.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Want to try Spaceship?</strong></p>
+  <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Spaceship →</a>
+</div>
+
 <p>The free plan gives 5 build credits a day, capped at 30 a month. Pro is $25 a month for 100 monthly credits, and Business is $50 for the same credit count with team features. Top-up credits are priced extra.</p>
 <p>Lovable's pricing page says unused monthly plan credits expire two months after they are issued. Choose it when your project needs user accounts or stored data, not just pages.</p>
 <div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lovable Free</a></div>
@@ -177,6 +182,11 @@ const post: BlogPost = {
 <h2>After the build: domain, hosting and HTTPS</h2>
 <p>A finished draft is not a launched site. You still need a domain, a connection to the builder, and HTTPS. Many builders include hosting and a certificate on paid plans, so check before you buy them twice.</p>
 <p>Start with <a href="/blog/launch-an-ai-built-website-2026/" style="color:var(--a1);font-weight:600;">How to Launch an AI-Built Website</a>, then compare registrars in <a href="/blog/domain-renewal-prices-compared-2026/" style="color:var(--a1);font-weight:600;">Domain Renewal Prices Compared</a>. If you are weighing coding tools instead, read <a href="/blog/claude-code-alternatives-2026/" style="color:var(--a1);font-weight:600;">Claude Code Alternatives</a>.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Wegic.</strong></p>
+  <a href="${AFFILIATE_LINKS['wegic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Wegic →</a>
+</div>
+
 `
 };
 

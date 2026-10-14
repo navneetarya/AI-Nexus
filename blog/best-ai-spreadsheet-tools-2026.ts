@@ -95,11 +95,12 @@ const post: BlogPost = {
     { url: 'https://coefficient.io/pricing', label: 'Coefficient — Official Pricing' },
     { url: 'https://www.microsoft.com/en-us/microsoft-365/microsoft-copilot', label: 'Microsoft 365 Copilot — Official Pricing' },
   ],
-  wordCount: 2400,
+  wordCount: 1904,
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI spreadsheet tools in 2026: <strong>PopAi Sheets</strong> (free tier + paid plans) wins for turning messy PDFs, receipts, and CSVs into structured tables. <strong>Numerous.ai</strong> (from $8/month annual) wins for AI formulas you drop into a cell and drag down thousands of rows. <strong>Coefficient</strong> (free + from $49/month) wins for pulling live CRM, ad-platform, and database data straight into a sheet.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI spreadsheet tools in 2026: <strong><a href="/tools/popai-sheets/">PopAi Sheets</a></strong> (free tier + paid plans) wins for turning messy PDFs, receipts, and CSVs into structured tables. <strong>Numerous.ai</strong> (from $8/month annual) wins for AI formulas you drop into a cell and drag down thousands of rows. <strong>Coefficient</strong> (free + from $49/month) wins for pulling live CRM, ad-platform, and database data straight into a sheet.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Microsoft Copilot in Excel</strong> (~$30/user/month add-on) suits teams that live in Excel. <strong>Gemini in Google Sheets</strong> is included with Google Workspace and suits teams already on Workspace.</p>
 </div>
 
@@ -123,7 +124,7 @@ const post: BlogPost = {
   </tr></thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.05);">
-      <td style="padding:10px 14px;font-weight:700;color:#0D9488;">PopAi Sheets ⭐ Best overall</td>
+      <td style="padding:10px 14px;font-weight:700;color:#0D9488;"><a href="${AFFILIATE_LINKS['popai-sheets']}" target="_blank" rel="sponsored nofollow noopener noreferrer">PopAi Sheets</a> ⭐ Best overall</td>
       <td style="padding:10px 14px;">Yes: limited usage</td>
       <td style="padding:10px 14px;">See current pricing</td>
       <td style="padding:10px 14px;">Turning PDFs/receipts/CSVs into tables</td>
@@ -246,6 +247,11 @@ const post: BlogPost = {
 <p>There's no single winner here, because "AI spreadsheet tool" bundles three unrelated jobs under one search term. PopAi Sheets is the strongest pick specifically for document-to-table extraction — a real, tedious problem the native assistants aren't built to solve, since they work inside a sheet you've already built rather than creating one from a PDF.</p>
 <p>Numerous.ai earns its place for batch AI processing across rows you already have — classification, tagging, short-text generation — without writing a script or paying for a bigger, more general tool. Coefficient is worth it once a recurring manual export from a CRM or ad platform is eating real time every week.</p>
 <p>For everyday formula help inside a spreadsheet you're already working in, Microsoft Copilot in Excel and Gemini in Google Sheets remain the right default — both read your sheet's structure well, and one of them is likely already included in a subscription you're paying for. Reach for a dedicated tool only for the specific job the native assistant genuinely doesn't cover.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with PopAi Sheets.</strong></p>
+  <a href="${AFFILIATE_LINKS['popai-sheets']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PopAi Sheets →</a>
+</div>
+
 `,
 };
 

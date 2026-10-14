@@ -72,6 +72,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best AI tools for social media in 2026: <strong>Ocoya</strong> is the top all-in-one pick for caption writing plus scheduling. <strong>Opus Clip</strong> automatically turns long videos into short-form Reels and TikTok clips.</p>
@@ -104,28 +105,28 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">⭐ 4.0/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Opus Clip</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Opus Clip</a></td>
       <td style="padding:10px 14px;">Long video → short clips</td>
       <td style="padding:10px 14px;">Yes: 60 min/month</td>
       <td style="padding:10px 14px;">$19/month</td>
       <td style="padding:10px 14px;">⭐ 4.3/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Leonardo.ai</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Leonardo.ai</a></td>
       <td style="padding:10px 14px;">Original image generation</td>
       <td style="padding:10px 14px;">Yes: 150 credits/day</td>
       <td style="padding:10px 14px;">$12/month</td>
       <td style="padding:10px 14px;">⭐ 4.5/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">InVideo AI</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer">InVideo AI</a></td>
       <td style="padding:10px 14px;">Faceless video content</td>
       <td style="padding:10px 14px;">Yes: 10 exports/week, watermarked</td>
       <td style="padding:10px 14px;">$20/month</td>
       <td style="padding:10px 14px;">⭐ 4.0/5</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;">Rytr</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
       <td style="padding:10px 14px;">Fast caption drafts</td>
       <td style="padding:10px 14px;">Yes: 10,000 characters/month</td>
       <td style="padding:10px 14px;">$9/month</td>

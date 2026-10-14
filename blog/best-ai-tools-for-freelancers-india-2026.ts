@@ -73,9 +73,10 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Are the Best AI Tools for Freelancers in India in 2026?</h2>
 <p>The best AI tools for freelancers in India in 2026 cover four jobs. Grammarly is the non-negotiable baseline for every client message. Rytr writes content faster without needing a dollar card. The other two jobs — project delivery and getting paid without losing money to conversion fees — are covered further down.</p>
-<p>Canva AI covers free design work, and Taskade handles juggling multiple client projects. All of them have INR-friendly or genuinely free tiers, which most global guides never mention.</p>
+<p><a href="/tools/canva-ai/">Canva AI</a> covers free design work, and Taskade handles juggling multiple client projects. All of them have INR-friendly or genuinely free tiers, which most global guides never mention.</p>
 <p>Search for AI tools for freelancers and you'll find lists built for US and European readers. They're priced in USD, require a credit card, and centre on Western client workflows.</p>
 <p>Indian freelancers on Fiverr, Upwork, and local platforms like Internshala or Truelancer face a different reality. USD pricing eats into margins, some platforms won't take Indian cards, and briefs often want regional language awareness.</p>
 <p>This guide was researched just for that context. Every tool below was checked for India-specific pricing and free-tier access without a credit card. We also looked at real usage patterns in Indian freelancer communities on Reddit (r/india, r/freelanceIndia) and Quora India.</p>
@@ -103,28 +104,28 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">❌ No — UPI accepted</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;">Rytr</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
       <td style="padding:10px 14px;">AI copywriting, content drafts</td>
       <td style="padding:10px 14px;">✅ 10K chars/month</td>
       <td style="padding:10px 14px;">✅ ~₹750/mo</td>
       <td style="padding:10px 14px;">❌ No</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Canva AI</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Canva AI</a></td>
       <td style="padding:10px 14px;">Design, social graphics, decks</td>
       <td style="padding:10px 14px;">✅ Fully free</td>
       <td style="padding:10px 14px;">✅ ₹499/mo (Pro)</td>
       <td style="padding:10px 14px;">❌ No — UPI accepted</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;">Taskade</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Taskade</a></td>
       <td style="padding:10px 14px;">Project management, client SOPs</td>
       <td style="padding:10px 14px;">✅ Free tier</td>
       <td style="padding:10px 14px;">⚠ USD only (check)</td>
       <td style="padding:10px 14px;">⚠ Yes for paid</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;">Perplexity</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Perplexity</a></td>
       <td style="padding:10px 14px;">Research, fact-checking briefs</td>
       <td style="padding:10px 14px;">✅ Fully free</td>
       <td style="padding:10px 14px;">N/A (free is enough)</td>
@@ -193,7 +194,7 @@ const post: BlogPost = {
 </p>
 <h2>5. Perplexity: Best Free Research Tool for Brief-Heavy Freelance Work</h2>
 <p><strong>Type: Research. Free plan: unlimited searches. Price: free to start.</strong></p>
-<p>Perplexity is an AI-powered search engine that gives cited, sourced answers, not <a href="/glossary/#hallucination" style="color:var(--a1);font-weight:600;">AI hallucinations</a>. For freelancers writing research-heavy content (industry reports, explainers, technical blogs), Perplexity is the fastest way to gather solid background before you write.</p>
+<p><a href="/tools/perplexity/">Perplexity</a> is an AI-powered search engine that gives cited, sourced answers, not <a href="/glossary/#hallucination" style="color:var(--a1);font-weight:600;">AI hallucinations</a>. For freelancers writing research-heavy content (industry reports, explainers, technical blogs), Perplexity is the fastest way to gather solid background before you write.</p>
 <p>The key gap versus ChatGPT for research: Perplexity links its sources live. You can check every claim before it goes into a client deliverable. For Indian freelancers writing for international clients who fact-check content, this citation trail is essential.</p>
 <p>The free plan has no meaningful limits for research purposes. It's the one tool on this list where there's no reason to pay unless you need the Pro tier's advanced model access.</p>
 

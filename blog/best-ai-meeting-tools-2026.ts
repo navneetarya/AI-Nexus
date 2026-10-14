@@ -80,6 +80,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <nav aria-label="Table of contents" style="background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#0ea5e9;">Table of Contents</p>
   <ol style="margin:0;padding-left:20px;line-height:2.2;font-size:14px;">

@@ -78,6 +78,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Are the Best Free AI Writing Tools in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Two black headphones resting on a wooden table" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The best free AI writing tools in 2026 are Grammarly, Rytr, and QuillBot. Grammarly gives unlimited grammar checking. Rytr gives 10,000 free characters of content generation each month. QuillBot paraphrases up to 125 words per pass. None of them require a credit card, a 7-day trial, or usage that resets and disappears.</p>
@@ -107,28 +108,28 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">$12/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Rytr</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
       <td style="padding:10px 14px;">10,000 chars/month</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">Short-form draft generation</td>
       <td style="padding:10px 14px;">$9/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;">QuillBot</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer">QuillBot</a></td>
       <td style="padding:10px 14px;">125 words/paraphrase pass</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">Paraphrasing &amp; summarising</td>
       <td style="padding:10px 14px;">$9.95/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Writesonic</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Writesonic</a></td>
       <td style="padding:10px 14px;">25 generations/month</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">Occasional short-form copy</td>
       <td style="padding:10px 14px;">$16/mo</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;">ChatGPT (wildcard)</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="/tools/chatgpt/">ChatGPT</a> (wildcard)</td>
       <td style="padding:10px 14px;">Unlimited (GPT-3.5)</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">General content generation</td>

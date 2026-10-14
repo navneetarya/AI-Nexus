@@ -45,7 +45,7 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For daily coding in VS Code: <strong>GitHub Copilot ($10/mo)</strong>. For an AI-native IDE: <strong>Cursor ($20/mo)</strong>. For complex debugging and code explanation: <strong>Claude 3.5 Sonnet ($20/mo)</strong>. For browser-based development without setup: <strong>Replit (free)</strong>.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For daily coding in VS Code: <strong><a href="/tools/github-copilot/">GitHub Copilot</a> ($10/mo)</strong>. For an AI-native IDE: <strong><a href="/tools/cursor/">Cursor</a> ($20/mo)</strong>. For complex debugging and code explanation: <strong>Claude 3.5 Sonnet ($20/mo)</strong>. For browser-based development without setup: <strong>Replit (free)</strong>.</p>
 </div>
 
 <h2>What Are the Best AI Tools for Developers in 2026?</h2>

@@ -82,6 +82,7 @@ const post: BlogPost = {
   wordCount: 1650,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Canva AI</strong> is the best free AI logo maker for most people in 2026 — hundreds of templates, an AI design helper, and free PNG downloads with no credit card. For India, Canva accepts UPI for Pro at ₹499/month.</p>
@@ -115,7 +116,7 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Looka</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['looka']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Looka</a></td>
       <td style="padding:10px 14px;">Full brand identity kits</td>
       <td style="padding:10px 14px;">✅ Design free (pay to download)</td>
       <td style="padding:10px 14px;">$20 one-time (~₹1,650)</td>
@@ -123,7 +124,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">⭐ 4.4</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;">Canva AI</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Canva AI</a></td>
       <td style="padding:10px 14px;">All-purpose design + logos</td>
       <td style="padding:10px 14px;">✅ Fully free</td>
       <td style="padding:10px 14px;">₹499/mo (Pro)</td>
@@ -131,7 +132,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">⭐ 4.5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Leonardo.ai</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Leonardo.ai</a></td>
       <td style="padding:10px 14px;">Unique AI-generated imagery</td>
       <td style="padding:10px 14px;">✅ 150 tokens/day</td>
       <td style="padding:10px 14px;">$12/mo (~₹990)</td>
@@ -272,6 +273,11 @@ const post: BlogPost = {
 </ol>
 <p>The recommended approach: start with Canva AI free. It is free, the learning curve is minimal, and you get a expert logo plus matching brand assets without spending anything.</p>
 <p>If you want a more unique mark, use Leonardo.ai to make the icon concept, then bring it into Canva for the final layout. That combination covers both quality and creativity at minimal cost.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Looka.</strong></p>
+  <a href="${AFFILIATE_LINKS['looka']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Looka →</a>
+</div>
+
   `.trim(),
 };
 

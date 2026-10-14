@@ -79,14 +79,14 @@ const post: BlogPost = {
       <td style="padding:10px 14px;font-weight:600;">AI Writing Tools</td>
       <td style="padding:10px 14px;">60–80% of knowledge workers</td>
       <td style="padding:10px 14px;">Consolidating</td>
-      <td style="padding:10px 14px;">Grammarly, Jasper, Rytr</td>
+      <td style="padding:10px 14px;">Grammarly, Jasper, <a href="/tools/rytr/">Rytr</a></td>
 <p><a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a></p>
     </tr>
     <tr>
       <td style="padding:10px 14px;font-weight:600;">AI Voice Tools</td>
       <td style="padding:10px 14px;">Default for faceless video/podcasts</td>
       <td style="padding:10px 14px;">Fast growth, narrowing ahead</td>
-      <td style="padding:10px 14px;">ElevenLabs, Murf AI</td>
+      <td style="padding:10px 14px;">ElevenLabs, <a href="/tools/murf-ai/">Murf AI</a></td>
     </tr>
   </tbody>
 </table>
@@ -126,7 +126,7 @@ const post: BlogPost = {
 
 <h3>AI Writing Tools: Narrowing Around Leaders</h3>
 <p>The AI writing tools market is narrowing. Grammarly holds the grammar and editing space. It has strong network effects and built-in access at the OS and browser level.</p>
-<p>For AI-drafted content, <a href="/tools/jasper/" style="color:#0D9488;font-weight:600;">Jasper</a> leads the enterprise side. Writesonic and Rytr compete for small business and solo users. The long tail of AI writing tools (200+ launched in 2023-2024) is thinning. Users are cutting down on subscriptions. See the full category on our <a href="/best-ai-writing-tools/" style="color:#0D9488;font-weight:600;">best AI writing tools</a> page, with rankings in our <a href="/blog/best-ai-writing-tools-2026/" style="color:#0D9488;font-weight:600;">best AI writing tools 2026 guide</a>.</p>
+<p>For AI-drafted content, <a href="/tools/jasper/" style="color:#0D9488;font-weight:600;">Jasper</a> leads the enterprise side. <a href="/tools/writesonic/">Writesonic</a> and Rytr compete for small business and solo users. The long tail of AI writing tools (200+ launched in 2023-2024) is thinning. Users are cutting down on subscriptions. See the full category on our <a href="/best-ai-writing-tools/" style="color:#0D9488;font-weight:600;">best AI writing tools</a> page, with rankings in our <a href="/blog/best-ai-writing-tools-2026/" style="color:#0D9488;font-weight:600;">best AI writing tools 2026 guide</a>.</p>
 <p><a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a></p>
 <p>The driver here: users realised that tool #3 and tool #4 in their AI writing stack solved the same problem. The quality gap between them was small. Subscription fatigue is pushing users toward fewer, better-connected tools.</p>
 <div style="margin:14px 0 24px;">

@@ -74,8 +74,9 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Are the Best AI Tools for Freelancers in 2026?</h2>
-<p>The best AI tools for freelancers in 2026 cover four jobs. Grammarly polishes every client email and deliverable. Rytr writes proposals and content roughly three times faster. Canva AI covers design work without hiring a designer, and PhotoRoom turns a phone photo into a professional product shot.</p>
+<p>The best AI tools for freelancers in 2026 cover four jobs. Grammarly polishes every client email and deliverable. Rytr writes proposals and content roughly three times faster. <a href="/tools/canva-ai/">Canva AI</a> covers design work without hiring a designer, and <a href="/tools/photoroom/">PhotoRoom</a> turns a phone photo into a professional product shot.</p>
 <p><a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a></p>
 <p><a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a></p>
 <p><a href="${AFFILIATE_LINKS['grammarly']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Grammarly Free →</a></p>
@@ -87,10 +88,10 @@ const post: BlogPost = {
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Picks by Bottleneck</strong>
   <ol style="margin:10px 0 0 20px;line-height:1.9;font-size:15px;">
     <li>Too much writing → <strong>Rytr</strong> ($9/mo)</li>
-    <li>Too much design work → <strong>Leonardo.ai</strong> (free)</li>
+    <li>Too much design work → <strong><a href="/tools/leonardo-ai/">Leonardo.ai</a></strong> (free)</li>
     <li>Disorganised project planning → <strong>Taskade</strong> ($8/mo)</li>
-    <li>Managing client social media → <strong>Ocoya</strong> ($15/mo)</li>
-    <li>Coding outside your core stack → <strong>Replit</strong> ($20/mo)</li>
+    <li>Managing client social media → <strong><a href="/tools/ocoya/">Ocoya</a></strong> ($15/mo)</li>
+    <li>Coding outside your core stack → <strong><a href="/tools/replit/">Replit</a></strong> ($20/mo)</li>
   </ol>
 </div>
 
@@ -106,25 +107,25 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Rytr</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
       <td style="padding:10px 14px;">Writing & copywriting</td>
       <td style="padding:10px 14px;">10K chars/mo</td>
       <td style="padding:10px 14px;">$9/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;">Leonardo.ai</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Leonardo.ai</a></td>
       <td style="padding:10px 14px;">Design & visuals</td>
       <td style="padding:10px 14px;">150 credits/day</td>
       <td style="padding:10px 14px;">$12/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Taskade</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Taskade</a></td>
       <td style="padding:10px 14px;">Project planning</td>
       <td style="padding:10px 14px;">Yes</td>
       <td style="padding:10px 14px;">$8/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;">Ocoya</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['ocoya']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Ocoya</a></td>
       <td style="padding:10px 14px;">Client social media</td>
       <td style="padding:10px 14px;">Trial</td>
       <td style="padding:10px 14px;">$15/mo</td>
@@ -136,7 +137,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">$20/mo</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;">Jasper</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Jasper</a></td>
       <td style="padding:10px 14px;">High-volume branded content</td>
       <td style="padding:10px 14px;">7-day trial</td>
       <td style="padding:10px 14px;">$39/mo</td>

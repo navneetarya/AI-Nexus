@@ -34,6 +34,7 @@ const post: BlogPost = {
   myTake: "This guide focuses on the actual jobs podcasters use voice generation for, not a repeat of our broader podcast tools guide. Fixing one bad line beats a full re-record almost every time.",
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img src="https://images.unsplash.com/photo-1593697909683-bccb1b9e68a4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A podcaster sitting in front of a microphone in a recording studio" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>How much editing time does one bad take really cost? Most podcasters don't need an AI voice tool to replace their voice. They need one for three smaller jobs. Fixing a mistake without a full re-record. Making a steady intro or ad read. And now and then, dubbing an episode into another language.</p>
@@ -43,7 +44,7 @@ const post: BlogPost = {
 <h2>TL;DR: which tool for which podcast job</h2>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
+  <a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
 </div>
 <p>ElevenLabs wins for making intros, ad reads, and multi-language dubbing, thanks to its 29-language coverage. Podcastle's Revoice and Descript's Overdub both fit better if the fix needs to happen inside an existing recording or transcript-editing session, not as a standalone generation task.</p>
 
@@ -59,7 +60,7 @@ const post: BlogPost = {
     <tbody>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Fixing a flubbed line</td>
-        <td style="padding:10px 14px">Podcastle or Descript</td>
+        <td style="padding:10px 14px"><a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Podcastle</a> or Descript</td>
         <td style="padding:10px 14px">$11.99–$24/month</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -87,7 +88,7 @@ const post: BlogPost = {
 <p><strong>Best for this job:</strong> Podcastle if you're already recording there, Descript if you're already editing a transcript. Read our full <a href="/tools/podcastle/">Podcastle review</a> or <a href="/tools/descript/">Descript review</a> for pricing.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
+  <a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
   <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
@@ -130,6 +131,11 @@ const post: BlogPost = {
 <h2>Final verdict</h2>
 
 <p>Most podcasters need voice generation for one specific job, not a full replacement of the show's voice. Start with Podcastle's Revoice or Descript's Overdub if fixing mistakes is the priority, since both sit inside a workflow you're likely already using. Reach for ElevenLabs when a steady tone or multi-language reach matters more than editing ease.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Podcastle.</strong></p>
+  <a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle →</a>
+</div>
+
 `,
 
   faqs: [
@@ -167,7 +173,7 @@ const post: BlogPost = {
     { url: 'https://elevenlabs.io/pricing', label: 'ElevenLabs — Official Pricing' },
   ],
 
-  wordCount: 1250,
+  wordCount: 664,
 };
 
 export default post;

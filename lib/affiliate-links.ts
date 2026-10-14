@@ -33,6 +33,8 @@ import { TOOLS } from '../constants';
 // a real tool page, move its link into constants.ts and delete it here.
 const SUPPLEMENTARY_LINKS: Record<string, string> = {
   make: 'https://www.make.com/en/register?pc=navneet',
+  // Perplexity Comet browser deep link (same ?via=ainexus program as the Perplexity tool page).
+  'perplexity-comet': 'https://www.perplexity.ai/comet?via=ainexus',
   // Lindy runs a public PartnerStack program (market.partnerstack.com/page/lindy). Our application is recorded as pending in
   // constants.ts, so this link stays plain until a tracked link is issued. Rates differ between Lindy's network listings, so confirm
   // terms in the PartnerStack dashboard before quoting a commission anywhere. NOTE: this entry overrides the Lindy TOOLS entry in

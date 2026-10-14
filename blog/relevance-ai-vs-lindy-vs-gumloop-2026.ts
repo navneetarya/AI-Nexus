@@ -57,6 +57,7 @@ const post: BlogPost = {
     },
   ],
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Relevance AI</strong> (Pro from $19/month billed annually, $29 monthly; no free plan per its docs) wins for building a coordinated team of sales and ops agents. <strong>Lindy</strong> (Team $49.99/month; $50 in credits for 7 days) is the fastest path to a working AI assistant for email and scheduling.</p>
@@ -73,7 +74,7 @@ const post: BlogPost = {
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Relevance AI</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;"><a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Relevance AI</a></td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">No — Free plan retired</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$19/mo annual ($29 monthly)</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Auditable multi-agent teams (sales/ops)</td>
@@ -113,7 +114,7 @@ const post: BlogPost = {
 <p>Navneet Arya has tracked all three since covering the broader agent-versus-automation split in an earlier <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation</a> post. The gap between these platforms has only widened as each one has specialized further in 2026.</p>
 <p><strong>Lindy</strong> is assistant-first. Describe a job in plain English — manage my inbox, prep me for meetings, qualify inbound leads — and Lindy hands you a working "AI employee" fast.</p>
 <p><strong>Relevance AI</strong> is workforce-first — a structured "Tools + Agents" setup where several agents share context and hand off work toward one goal. It's built for teams that need auditable, multi-step reasoning.</p>
-<p><strong>Gumloop</strong> is canvas-first — a visual, node-based builder where AI is just one step in a data pipeline (scrape, transform, enrich, publish). It's closer to an AI-native successor to Zapier or Make than to a chat-based assistant.</p>
+<p><strong>Gumloop</strong> is canvas-first — a visual, node-based builder where AI is just one step in a data pipeline (scrape, transform, enrich, publish). It's closer to an AI-native successor to <a href="/tools/zapier/">Zapier</a> or Make than to a chat-based assistant.</p>
 
 <h2>How to Pick the Right One in 5 Minutes</h2>
 <ol style="margin:16px 0;padding-left:24px;line-height:1.9;font-size:14.5px;">

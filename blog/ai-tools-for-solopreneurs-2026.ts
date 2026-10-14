@@ -101,7 +101,7 @@ const post: BlogPost = {
   content: `
 <div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Where to start</strong>
-  <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">Start the stack with Taskade and Make.com</p>
+  <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">Start the stack with Taskade and <a href="/tools/make/">Make.com</a></p>
   <p style="margin:6px 0 0;font-size:15px;line-height:1.6;">Taskade covers task management (free to $8/month) and Make.com is the automation glue (from $9/month). Start on the free plans and upgrade only when you hit a limit.</p>
   <div style="margin:10px 0 0;">
     
@@ -112,8 +112,8 @@ const post: BlogPost = {
 
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The complete AI tool stack for solopreneurs in 2026 covers eight jobs. <strong>Claude or ChatGPT</strong> (thinking partner, $20/month) and <strong>Taskade</strong> (task management, free–$8/month) cover thinking and planning. <strong>Perplexity</strong> (research, free–$20/month) and <strong>Ocoya</strong> (social scheduling, from $15/month) cover research and marketing.</p>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Tidio</strong> (customer support, free–$29/month) and <strong>Fireflies.ai</strong> (meeting notes, free–$10/month) cover support and calls. <strong>Canva AI</strong> (design, free–$15/month) and <strong>Make.com</strong> (automation glue, from $9/month) cover design and automation. A lean free-tier stack costs $0/month. A full paid stack runs roughly $90–120/month — still cheaper than one part-time hire.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The complete AI tool stack for solopreneurs in 2026 covers eight jobs. <strong>Claude or <a href="/tools/chatgpt/">ChatGPT</a></strong> (thinking partner, $20/month) and <strong>Taskade</strong> (task management, free–$8/month) cover thinking and planning. <strong><a href="/tools/perplexity/">Perplexity</a></strong> (research, free–$20/month) and <strong><a href="/tools/ocoya/">Ocoya</a></strong> (social scheduling, from $15/month) cover research and marketing.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Tidio</strong> (customer support, free–$29/month) and <strong><a href="/tools/fireflies/">Fireflies</a>.ai</strong> (meeting notes, free–$10/month) cover support and calls. <strong><a href="/tools/canva-ai/">Canva AI</a></strong> (design, free–$15/month) and <strong>Make.com</strong> (automation glue, from $9/month) cover design and automation. A lean free-tier stack costs $0/month. A full paid stack runs roughly $90–120/month — still cheaper than one part-time hire.</p>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin:-12px 0 24px;">
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -225,7 +225,7 @@ const post: BlogPost = {
 <p>Paste a client brief into a project, and its AI agent builds a full task breakdown with subtasks and realistic due dates in under 10 seconds. That replaces what used to be 15–20 minutes of manual planning per new project.</p>
 <p>The free plan is especially generous for a solo operator. It includes unlimited projects, every view type (list, kanban, mind map, calendar), and 5 AI agent runs a month at no cost.</p>
 <p>The Pro tier at $8/month removes the agent-run cap entirely and adds video calls inside tasks. That's useful for client check-ins without switching to a separate Zoom link.</p>
-<p>Solopreneurs who prefer a documentation-first workspace over a task-first one may like Notion AI better. See the full <a href="/blog/taskade-vs-notion-vs-asana-2026/">Taskade vs Notion vs Asana comparison</a> to check which fits your workflow.</p>
+<p>Solopreneurs who prefer a documentation-first workspace over a task-first one may like <a href="/tools/notion-ai/">Notion AI</a> better. See the full <a href="/blog/taskade-vs-notion-vs-asana-2026/">Taskade vs Notion vs Asana comparison</a> to check which fits your workflow.</p>
 <p><strong>India pricing note:</strong> Taskade's free plan is fully accessible with no card required; the paid Plus tier is about ₹665/month via international card. Notion AI's add-on runs about ₹830/month on top of a Notion workspace subscription.</p>
 <p><strong>Best for:</strong> Solopreneurs juggling 3 or more active clients or projects who need automated task breakdowns rather than manual list-building. See also: <a href="/tools/taskade/">Taskade tool profile</a>.</p>
 <div style="margin:14px 0 24px;">
@@ -307,7 +307,7 @@ const post: BlogPost = {
 <p>Every tool above this point operates independently unless something connects them. Think of a new Tidio conversation that should create a Taskade task, or a form submission that should trigger a Fireflies follow-up email.</p>
 <p>Make.com is the glue layer: a visual, no-code automation builder that connects apps with branching logic. It needs no development resources a solopreneur doesn't have.</p>
 <p>Make's pricing model charges per "operation," one action inside a scenario, rather than per completed automation run. That keeps costs predictable for moderate-complexity workflows. The Core plan starts at $9/month and covers roughly 10,000 operations. That's comfortably enough for a solopreneur connecting 3–5 tools with a handful of automated workflows.</p>
-<p>For solopreneurs comfortable with more technical setup who want the lowest cost at higher volume, n8n's self-hosted free tier is the stronger long-term option. Anyone whose work is closer to long, branching research or content projects than fixed workflow triggers might prefer <a href="/tools/flowith/" style="color:rgb(13,148,136);">Flowith</a>'s canvas-based agent instead — a different shape of tool aimed at multi-step thinking rather than app-to-app automation. The full tradeoff analysis is in <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier 2026</a> and <a href="/blog/best-no-code-ai-automation-tools-2026/">Best No-Code AI Automation Tools 2026</a>.</p>
+<p>For solopreneurs comfortable with more technical setup who want the lowest cost at higher volume, <a href="/tools/n8n/">n8n</a>'s self-hosted free tier is the stronger long-term option. Anyone whose work is closer to long, branching research or content projects than fixed workflow triggers might prefer <a href="/tools/flowith/" style="color:rgb(13,148,136);">Flowith</a>'s canvas-based agent instead — a different shape of tool aimed at multi-step thinking rather than app-to-app automation. The full tradeoff analysis is in <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier 2026</a> and <a href="/blog/best-no-code-ai-automation-tools-2026/">Best No-Code AI Automation Tools 2026</a>.</p>
 <p><a href="https://n8n.io/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try n8n Free →</a></p>
 <p><strong>India pricing note:</strong> About ₹750/month for the Core plan at current exchange rates; no India-specific discount is currently offered.</p>
 <p><strong>Best for:</strong> Solopreneurs who have already validated 2–3 manual, repetitive cross-tool tasks worth automating. It's not a starting-point tool, but the highest-leverage addition once the rest of the stack is in place.</p>
@@ -316,7 +316,7 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['creao-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try CREAO Free</a>
 </div>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com Free →</a>
+  <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -428,7 +428,7 @@ const post: BlogPost = {
 </ol>
 
 <h2>What to Skip: Tools Solopreneurs Don't Need Yet</h2>
-<p>Just as important as what to add is what to defer. AI agent builders like Lindy.ai and Relevance AI, covered in <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a>, solve a scaling problem: coordinating multiple repeatable processes across a team.</p>
+<p>Just as important as what to add is what to defer. AI agent builders like <a href="/tools/lindy/">Lindy</a>.ai and Relevance AI, covered in <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a>, solve a scaling problem: coordinating multiple repeatable processes across a team.</p>
 <p><a href="${AFFILIATE_LINKS['lindy']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try lindy Free →</a></p>
 <p>A solopreneur without a team, and without a repeatable process yet to automate, gets little marginal value from these tools over Make.com's simpler scenario builder. They also cost meaningfully more.</p>
 <p>Similarly, premium AI headshot tools, dedicated AI logo makers, and enterprise-tier design suites are worth deferring. Wait until the business has a validated offer and at least a handful of paying clients. Canva AI's free tier covers professional-enough visual assets for the validation phase. The same logic applies to a chat-built site from a tool like <a href="/tools/wegic/" style="color:rgb(13,148,136);">Wegic</a> — genuinely fast for a first business site, but credit-based, so it's worth having an actual offer ready before you start burning credits on revisions.</p>

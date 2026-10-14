@@ -45,9 +45,10 @@ const post: BlogPost = {
   },
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best startup AI stack, under $70/month for a team. <strong>Claude ($20/mo)</strong> for writing, <strong>Gamma (free to $8/mo)</strong> for pitch decks, <strong>Canva AI (free to $15/mo)</strong> for design. Round it out with <strong>Notion AI ($10/mo add-on)</strong> for documentation and <strong>GitHub Copilot ($10/mo)</strong> for technical founders.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best startup AI stack, under $70/month for a team. <strong>Claude ($20/mo)</strong> for writing, <strong>Gamma (free to $8/mo)</strong> for pitch decks, <strong>Canva AI (free to $15/mo)</strong> for design. Round it out with <strong>Notion AI ($10/mo add-on)</strong> for documentation and <strong><a href="/tools/github-copilot/">GitHub Copilot</a> ($10/mo)</strong> for technical founders.</p>
 </div>
 
 <h2>What Are the Best AI Tools for Startups in 2026?</h2>
@@ -76,19 +77,19 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">$20/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Gamma</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Gamma</a></td>
       <td style="padding:10px 14px;">Pitch decks & presentations</td>
       <td style="padding:10px 14px;">✅ 400 credits</td>
       <td style="padding:10px 14px;">$8/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Canva AI</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Canva AI</a></td>
       <td style="padding:10px 14px;">Design without a designer</td>
       <td style="padding:10px 14px;">✅ Generous</td>
       <td style="padding:10px 14px;">$15/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Notion AI</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['notion-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Notion AI</a></td>
       <td style="padding:10px 14px;">Docs, wiki, knowledge base</td>
       <td style="padding:10px 14px;">✅ Base free</td>
       <td style="padding:10px 14px;">$8/mo add-on</td>
@@ -185,7 +186,7 @@ const post: BlogPost = {
 <p>The principle is leverage per dollar, not completeness. Don't subscribe to every AI tool. Subscribe to the ones that directly fix your highest-friction workflows.</p>
 <p>For most early-stage startups, the highest-leverage starting point is <strong>Claude</strong> for writing and research, <strong>Gamma</strong> for presentations, and <strong>Canva AI</strong> for design. Total monthly cost: $35–43. Test that for two months, and add Notion AI and GitHub Copilot only once the workflow need is clear.</p>
 <p>The startups that struggle with AI tools are usually the ones that subscribe to everything and use none of it consistently. Pick three tools, work them deeply into your daily routine, and expand from there.</p>
-<p>If your startup is weighing AI automation platforms (like Make.com, n8n) against full AI agent platforms (like Lindy.ai, Relevance AI), two guides can help.</p>
+<p>If your startup is weighing AI automation platforms (like Make.com, <a href="/tools/n8n/">n8n</a>) against full AI agent platforms (like <a href="/tools/lindy/">Lindy</a>.ai, Relevance AI), two guides can help.</p>
 <p><a href="https://n8n.io/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try n8n Free →</a></p>
 <p><a href="${AFFILIATE_LINKS['lindy']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try lindy Free →</a></p>
 <p><a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a> compares the leading platforms on autonomy, pricing, and deployment fit. <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a> explains which category fits which use case. Worth reading before you commit budget to either.</p>

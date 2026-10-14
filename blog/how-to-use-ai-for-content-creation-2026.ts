@@ -77,6 +77,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>How Do You Use AI for Content Creation in 2026?</h2>
 <p>Using AI for content creation in 2026 means running one idea through four AI-assisted stages: writing, images, video, and audio. The right workflow can cut the time between an idea and a finished piece of content by 60–80%. The bottleneck usually isn't any single tool — it's the handoffs between them.</p>
 <p>Two years ago, "AI content creation" meant pasting a rough ChatGPT output into a blog post and hoping no one noticed. In 2026, the tooling has matured. A solo creator can now produce a written article, a custom feature image, a repurposed video version, and a podcast episode, all from the same source idea, in a single working afternoon.</p>
@@ -202,7 +203,7 @@ const post: BlogPost = {
 <p>For content creators who want to repurpose their written articles as podcast episodes, Podcastle's AI voice cloning feature (paid plan) is the answer. After a 30-minute training recording, it lets you generate a narrated audio version of any article in your own voice.</p>
 <p>The article-to-podcast workflow becomes: paste the article text, click generate, export the audio file. The quality on current models is indistinguishable from a live recording for most listening environments.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
+  <a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
 </div>
 
 <h3>Professional Voiceover for Videos with Murf AI</h3>

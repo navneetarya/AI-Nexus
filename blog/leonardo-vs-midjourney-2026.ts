@@ -74,9 +74,10 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>Leonardo.ai vs Midjourney: Which Is Worth It in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="AI-generated digital artwork on a screen, comparing Leonardo.ai and Midjourney image generator styles" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
-<p>Leonardo.ai is worth it for most creators in 2026. It gives 150 free credits a day with no credit card, plus creative control and consistent style across a project. Midjourney is worth its $10/month minimum only if you need the highest possible aesthetic quality for one-off standout images.</p>
+<p>Leonardo.ai is worth it for most creators in 2026. It gives 150 free credits a day with no credit card, plus creative control and consistent style across a project. <a href="/tools/midjourney/">Midjourney</a> is worth its $10/month minimum only if you need the highest possible aesthetic quality for one-off standout images.</p>
 <p>Leonardo.ai and Midjourney are both AI image generators, but they're built for different kinds of creative work. Treating them as direct substitutes leads to choosing the wrong tool and being disappointed by the result.</p>
 <p>Midjourney's strength is <strong>aesthetic quality</strong>. Give it a well-structured prompt and the output is frequently stunning, painterly, cinematic, or hyperrealistic in ways other tools still struggle to match. But it's a black box. You describe what you want, it generates something, and iteration is prompt-based trial and error. And it costs $10/month minimum with no free tier.</p>
 <p>Leonardo.ai's strength is <strong>control and consistency</strong>. You can select from 150+ fine-tuned models, each trained for different styles. You can train your own custom model on your art style. You get precise sliders and settings. The output is more predictable, which is often exactly what you need for professional project work. And it has a functional free plan.</p>

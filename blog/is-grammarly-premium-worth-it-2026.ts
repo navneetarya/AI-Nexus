@@ -177,7 +177,7 @@ const post: BlogPost = {
 <ul style="margin:8px 0 16px 24px;line-height:2.2;">
   <li><strong>Casual writers</strong>: If you write 2–3 emails a day and an occasional document, the free plan handles everything you need.</li>
   <li><strong>Students on a budget who only need error checking</strong>: The free plan catches the errors that affect grades. Premium coaching is a nice-to-have, not a necessity.</li>
-  <li><strong>Writers who primarily generate new content (rather than edit)</strong>. Is your bottleneck writing speed, not writing quality? Then $9/month on Rytr's content generation is a better use of the same budget.</li>
+  <li><strong>Writers who primarily generate new content (rather than edit)</strong>. Is your bottleneck writing speed, not writing quality? Then $9/month on <a href="/tools/rytr/">Rytr</a>'s content generation is a better use of the same budget.</li>
 <p><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a></p>
 </ul>
 

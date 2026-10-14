@@ -78,6 +78,7 @@ const post: BlogPost = {
   wordCount: 1420,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <blockquote style="border-left:3px solid #0D9488;padding:4px 0 4px 16px;margin:0 0 24px;font-style:italic;color:var(--text-secondary,#555);">
   I priced out the same team of 4 across all three tools. I didn't just compare feature lists. The workspace-vs-per-user pricing gap alone tells the story: $8/month on Taskade versus $43.96/month on Asana. That gap should settle this for most solo freelancers before a single feature comparison even matters.
   <footer style="font-style:normal;font-size:13px;margin-top:6px;color:var(--text-muted,#888);">— Navneet Arya, AI Nexus</footer>
@@ -256,6 +257,11 @@ const post: BlogPost = {
 <p>Most freelancers choosing between these three should start with Taskade. Its mix of AI-native execution, workspace pricing, and a functional free plan makes it the right starting point in 2026. Some freelancers should go straight to Notion instead. That's true if your main work is research, documentation, and knowledge management, not task execution.</p>
 <p>Running a one-person business rather than a small team? Our <a href="/blog/ai-tools-for-solopreneurs-2026/" style="color:#0D9488;font-weight:600;">complete AI tool stack for solopreneurs</a> covers where a project tool like Taskade fits alongside the rest of your stack.</p>
 <p>See the full head-to-head details: <a href="/compare/taskade-vs-notion/" style="color:#0D9488;font-weight:600;">Taskade vs Notion: full comparison</a> &nbsp;·&nbsp; <a href="/compare/taskade-vs-asana/" style="color:#0D9488;font-weight:600;">Taskade vs Asana: full comparison</a></p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Taskade.</strong></p>
+  <a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade →</a>
+</div>
+
   `.trim(),
 };
 

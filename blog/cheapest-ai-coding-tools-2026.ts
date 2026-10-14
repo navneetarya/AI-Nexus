@@ -41,7 +41,7 @@ const post: BlogPost = {
     { url: 'https://replit.com/pricing', label: 'Replit official pricing page' },
     { url: 'https://www.cursor.com/pricing', label: 'Cursor official pricing page' },
   ],
-  wordCount: 1750,
+  wordCount: 847,
 
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
@@ -90,7 +90,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Unlimited Claude/GPT-4o requests, @Codebase</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Windsurf</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="/tools/windsurf/">Windsurf</a></td>
       <td style="padding:10px 14px;">✅ More generous than Cursor</td>
       <td style="padding:10px 14px;">$15/mo (Pro)</td>
       <td style="padding:10px 14px;">Unlimited Cascade flows, priority model access</td>

@@ -77,11 +77,11 @@ const post: BlogPost = {
 
   outboundCitations: [
     { url: 'https://rytr.me/pricing', label: 'Rytr official pricing page' },
-    { url: 'https://developers.google.com/search/blog/2022/02/google-doc-helpful-content-update', label: 'Google Search Central — helpful content guidance' },
+    { url: 'https://developers.google.com/search/blog/2022/08/helpful-content-update', label: 'Google Search Central — helpful content guidance' },
     { url: 'https://developers.google.com/search/docs/fundamentals/using-gen-ai-content', label: 'Google Search Central — guidance on generative AI content' },
   ],
 
-  wordCount: 1550,
+  wordCount: 1218,
 
   content: `
 <h2>How Do You Use Rytr to Write a Blog Post Step by Step?</h2>

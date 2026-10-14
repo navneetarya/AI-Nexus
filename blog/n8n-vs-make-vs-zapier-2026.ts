@@ -1,4 +1,5 @@
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
 // Affiliate Stack (per brief): n8n · Make.com · Zapier · Activepieces
@@ -67,7 +68,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Zapier</strong> remains the fastest path to a working automation for non-technical teams, with the largest app library, though its task-based pricing punishes multi-step workflows at scale. There is no universal winner. The right platform depends on technical comfort, workflow complexity, and volume.</p>
 </div>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make Free →</a>
+  <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make Free →</a>
   <a href="https://n8n.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit n8n →</a>
   <br/>
   <a href="/tools/make/" style="display:inline-block;color:#0D9488;padding:10px 4px 0 0;margin:6px 8px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Make review →</a>
@@ -284,7 +285,7 @@ const post: BlogPost = {
 <p>You do not have to choose just one, either. Many teams run two of these tools side by side, each for what it does best. Test first. Pick later. Trust what you see in your own build, not the sales page. Keep it simple and move on.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make Free →</a>
+  <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make Free →</a>
   <a href="https://n8n.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit n8n →</a>
   <a href="https://zapier.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Zapier →</a>
   <br/>

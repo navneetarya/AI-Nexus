@@ -25,7 +25,7 @@ const post: BlogPost = {
   slug: 'gamma-ai-review-2026',
   title: 'Gamma AI Review 2026: Is It Worth $8/Month for Presentations?',
   seoTitle: 'Gamma AI Review 2026: Is It Worth $8/Month?',
-  metaDescription: 'Gamma AThe review covers for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai, Canva AI and Pi. Worth $8/month?',
+  metaDescription: 'Gamma AI review for 2026: pricing, the 400-credit free plan, restyling, and PowerPoint export tested against Beautiful.ai, Canva AI and Pi. Worth $8/month?',
   datePublished: '2026-09-09',
   dateModified: '2026-09-29',
   author: 'Navneet Arya',
@@ -94,6 +94,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <nav aria-label="Table of contents" style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#6366f1;">Table of Contents</p>
   <ol style="margin:0;padding-left:20px;line-height:2.2;font-size:14px;">
@@ -112,6 +113,16 @@ const post: BlogPost = {
 
 <h2 id="quick-summary">Gamma AI Review 2026: Quick Verdict</h2>
 <p>Yes. Gamma AI is worth using in 2026, and worth the $8/month Plus upgrade once you're building presentations regularly. The free plan's 400 one-time AI credits, roughly 8 to 15 full decks, are generous enough to test it properly before spending anything.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Want to try Canva AI?</strong></p>
+  <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI →</a>
+</div>
+
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Want to try Beautiful.ai?</strong></p>
+  <a href="${AFFILIATE_LINKS['beautiful-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Beautiful.ai →</a>
+</div>
+
 <p>Navneet Arya has been tracking Gamma since it became the default recommendation after Tome shut down its presentation product in April 2025. What separates Gamma from a template library with an AI label bolted on is how it treats generation as the entire product, not an add-on feature.</p>
 <p>Type a one-line prompt and Gamma returns a complete, styled deck, web page, or document in under a minute: headline, body copy, layout, and imagery included. That single capability is what has made Gamma the most-referenced AI presentation tool on the site's own <a href="/blog/best-ai-presentation-tools-2026/" style="color:#6366f1;">best AI presentation tools roundup</a>.</p>
 

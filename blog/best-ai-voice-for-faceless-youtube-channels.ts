@@ -18,7 +18,7 @@ const post: BlogPost = {
   slug: 'best-ai-voice-for-faceless-youtube-channels',
   title: 'Best AI Voice for Faceless YouTube Channels 2026: The Full Workflow',
   seoTitle: 'Best AI Voice for Faceless YouTube Channels 2026 (Guide)',
-  metaDescription: "ElevenLabs vs Murf AI for faceless YouTube narration — cost, cloning quality, and export workflow compared, plus the commonly used settings to avoid the AI-voice tell.",
+  metaDescription: "ElevenLabs vs Murf AI for faceless YouTube narration: cost, cloning quality, and export workflow, plus settings that avoid the AI-voice tell.",
   datePublished: '2026-08-17',
   dateModified: '2026-10-09',
   author: 'Navneet Arya',
@@ -196,7 +196,7 @@ const post: BlogPost = {
     { url: 'https://support.google.com/youtube/answer/1311392', label: 'YouTube — Monetization Policies' },
   ],
 
-  wordCount: 1750,
+  wordCount: 980,
 };
 
 export default post;

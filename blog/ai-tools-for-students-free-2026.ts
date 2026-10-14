@@ -82,6 +82,7 @@ const post: BlogPost = {
   wordCount: 2260,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best free AI tools for students in 2026 are <strong>QuillBot</strong> (paraphrasing and summarising, permanent free plan), <strong>Grammarly</strong> (grammar and tone checking, unlimited free), and <strong>Rytr</strong> (essay drafts and outlines, 10,000 characters/month free). Also useful: <strong>Gamma</strong> (presentation slides, 400 free credits) and <strong>Replit</strong> (coding assignments, unlimited free projects). None require a credit card.</p>
@@ -126,7 +127,7 @@ const post: BlogPost = {
     <tbody>
       <tr style="border-bottom:1px solid rgba(128,128,128,0.15);background:var(--surf);">
         <td style="padding:10px 14px;font-weight:600;color:var(--txt);">Essay writing &amp; drafts</td>
-        <td style="padding:10px 14px;color:var(--txt);">Rytr</td>
+        <td style="padding:10px 14px;color:var(--txt);"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
         <td style="padding:10px 14px;color:var(--txt);">10,000 characters/month</td>
         <td style="padding:10px 14px;color:var(--a1);font-weight:600;">No</td>
         <td style="padding:10px 14px;color:var(--txt);">$9/month</td>
@@ -140,14 +141,14 @@ const post: BlogPost = {
       </tr>
       <tr style="border-bottom:1px solid rgba(128,128,128,0.15);background:var(--surf);">
         <td style="padding:10px 14px;font-weight:600;color:var(--txt);">Research &amp; paraphrasing</td>
-        <td style="padding:10px 14px;color:var(--txt);">QuillBot</td>
+        <td style="padding:10px 14px;color:var(--txt);"><a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer">QuillBot</a></td>
         <td style="padding:10px 14px;color:var(--txt);">125 words/paraphrase · 1,200 words/summary</td>
         <td style="padding:10px 14px;color:var(--a1);font-weight:600;">No</td>
         <td style="padding:10px 14px;color:var(--txt);">$9.95/month</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(128,128,128,0.15);background:var(--bg);">
         <td style="padding:10px 14px;font-weight:600;color:var(--txt);">Presentations &amp; slides</td>
-        <td style="padding:10px 14px;color:var(--txt);">Gamma</td>
+        <td style="padding:10px 14px;color:var(--txt);"><a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Gamma</a></td>
         <td style="padding:10px 14px;color:var(--txt);">400 AI credits on sign-up</td>
         <td style="padding:10px 14px;color:var(--a1);font-weight:600;">No</td>
         <td style="padding:10px 14px;color:var(--txt);">$8/month</td>
@@ -302,6 +303,11 @@ const post: BlogPost = {
 <p>These tools are used by millions of students and are not inherently academic misconduct. Grammar checkers, paraphrasers, outline generators, and coding assistants are productivity tools.</p>
 <p>Using them is similar to using a thesaurus, a dictionary, or asking a teaching assistant to explain an error in your code. The line is clear: if you are submitting AI-generated analysis, arguments, or conclusions as your own original thinking without disclosing it, that is the problem, not the tools themselves.</p>
 <p>Check your institution's specific AI policy before any submission. Policies are evolving rapidly in 2026 and vary significantly between institutions and even departments within the same university. When in doubt, disclose your use of AI tools in your submission notes. Most examiners in 2026 consider this a sign of academic maturity rather than a red flag.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Quillbot.</strong></p>
+  <a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Quillbot →</a>
+</div>
+
   `.trim(),
 };
 

@@ -69,9 +69,15 @@ const post: BlogPost = {
     },
   ],
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best free <strong>Claude Code alternative</strong> in July 2026 is <strong>OpenAI Codex CLI</strong>. It's open source, included with any ChatGPT plan, and currently #1 on the Terminal-Bench 2.1 leaderboard. <strong>OpenCode</strong> is the strongest fully open-source, model-agnostic pick (160,000+ GitHub stars).</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best free <strong><a href="/tools/claude-code/">Claude Code</a> alternative</strong> in July 2026 is <strong>OpenAI Codex CLI</strong>. It's open source, included with any <a href="/tools/chatgpt/">ChatGPT</a> plan, and currently #1 on the Terminal-Bench 2.1 leaderboard. <strong>OpenCode</strong> is the strongest fully open-source, model-agnostic pick (160,000+ GitHub stars).</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Short on time? Our top pick here is Lovable.</strong></p>
+  <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lovable →</a>
+</div>
+
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Aider</strong> remains the safest git-native default. Claude Code still leads on codebase reasoning depth, but Pro starts at $20/month with no free tier.</p>
 </div>
 
@@ -244,7 +250,7 @@ const post: BlogPost = {
 </ol>
 <p>For developers weighing terminal agents against full IDE tools like <a href="/tools/cursor/">Cursor</a> or <a href="/tools/windsurf/">Windsurf</a>, see AI Nexus's <a href="/best-ai-coding-tools/">best AI coding tools</a> roundup. It also covers browser options like <a href="/tools/replit/">Replit</a>. The <a href="/blog/claude-code-vs-github-copilot-vs-replit-2026/">Claude Code vs GitHub Copilot vs Replit</a> comparison also covers non-terminal alternatives.</p>
 <p><a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a></p>
-<p>Not a developer? If you would rather describe an app in plain English and get a working prototype than run a terminal agent, a <a href="/blog/best-vibe-coding-tools-2026/">vibe-coding tool</a> like Lovable is the better fit. It has a free tier, so you can test one real task before paying.</p>
+<p>Not a developer? If you would rather describe an app in plain English and get a working prototype than run a terminal agent, a <a href="/blog/best-vibe-coding-tools-2026/">vibe-coding tool</a> like <a href="/tools/lovable/">Lovable</a> is the better fit. It has a free tier, so you can test one real task before paying.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lovable Free →</a>
 </div>

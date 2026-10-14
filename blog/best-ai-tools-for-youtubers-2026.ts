@@ -78,12 +78,13 @@ const post: BlogPost = {
     { url: 'https://murf.ai', label: 'Murf AI — AI Voice Generator' },
     { url: 'https://vidiq.com', label: 'VidIQ — YouTube SEO and Analytics' },
   ],
-  wordCount: 1600,
+  wordCount: 1297,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For faceless YouTube videos: <strong>InVideo AI ($20/mo)</strong>. For repurposing long-form into Shorts: <strong>Opus Clip (free–$19/mo)</strong>. For video editing with transcripts: <strong>Descript ($12/mo)</strong>. For AI voiceover: <strong>Murf AI ($19/mo)</strong>. For YouTube SEO: <strong>VidIQ (free–$49/mo)</strong>.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For faceless YouTube videos: <strong>InVideo AI ($20/mo)</strong>. For repurposing long-form into Shorts: <strong>Opus Clip (free–$19/mo)</strong>. For video editing with transcripts: <strong><a href="/tools/descript/">Descript</a> ($12/mo)</strong>. For AI voiceover: <strong><a href="/tools/murf-ai/">Murf AI</a> ($19/mo)</strong>. For YouTube SEO: <strong>VidIQ (free–$49/mo)</strong>.</p>
 </div>
 <blockquote style="margin:0 0 24px;padding:14px 18px;border-left:3px solid #0D9488;font-style:italic;color:var(--txt);background:rgba(13,148,136,.04);border-radius:0 8px 8px 0;">
   This guide compares these tools against long-form and Shorts creator workflows, not just demo videos. Most solo creators don't need all five running at once from day one.
@@ -119,19 +120,19 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">InVideo AI</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer">InVideo AI</a></td>
       <td style="padding:10px 14px;">Faceless video creation</td>
       <td style="padding:10px 14px;">✅ Limited</td>
       <td style="padding:10px 14px;">$20/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Opus Clip</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Opus Clip</a></td>
       <td style="padding:10px 14px;">Long-form to Shorts</td>
       <td style="padding:10px 14px;">✅ 60 min/mo</td>
       <td style="padding:10px 14px;">$19/mo</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Descript</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a></td>
       <td style="padding:10px 14px;">Text-based video editing</td>
       <td style="padding:10px 14px;">✅ 1hr/mo</td>
       <td style="padding:10px 14px;">$12/mo</td>
@@ -143,7 +144,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">$19/mo</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">VidIQ</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['vidiq']}" target="_blank" rel="sponsored nofollow noopener noreferrer">VidIQ</a></td>
       <td style="padding:10px 14px;">YouTube SEO & analytics</td>
       <td style="padding:10px 14px;">✅ Basic</td>
       <td style="padding:10px 14px;">$7.50/mo</td>
@@ -231,7 +232,7 @@ const post: BlogPost = {
 <ul style="margin:10px 0 16px 24px;line-height:2.1;">
   <li><strong>VidIQ</strong> to identify video topics and keywords.</li>
   <li><strong>ChatGPT or Claude</strong> for script drafting.</li>
-  <li><strong>Murf AI or ElevenLabs</strong> for voiceover.</li>
+  <li><strong>Murf AI or <a href="/tools/elevenlabs/">ElevenLabs</a></strong> for voiceover.</li>
   <li><strong>InVideo AI or Descript</strong> for video production.</li>
   <li><strong>Opus Clip</strong> to repurpose the finished video into Shorts.</li>
 </ul>

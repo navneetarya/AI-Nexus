@@ -80,7 +80,7 @@ const post: BlogPost = {
     { url: 'https://a2a-protocol.org', label: 'Agent2Agent (A2A) Protocol — Official Specification' },
     { url: 'https://modelcontextprotocol.io', label: 'Model Context Protocol (MCP) — Official Specification' },
   ],
-  wordCount: 2980,
+  wordCount: 3773,
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
@@ -223,7 +223,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Claude Agent SDK</td>
       <td style="padding:10px 14px;">Tool-use chain with sub-agents, MCP-native</td>
       <td style="padding:10px 14px;">Low–Medium</td>
-      <td style="padding:10px 14px;">Teams building on Claude — the same architecture powering Claude Code</td>
+      <td style="padding:10px 14px;">Teams building on Claude — the same architecture powering <a href="/tools/claude-code/">Claude Code</a></td>
       <td style="padding:10px 14px;">Free (SDK) — Claude API costs only</td>
     </tr>
   </tbody>
@@ -325,7 +325,7 @@ const post: BlogPost = {
   <li><strong>Start with CrewAI</strong> if the goal is testing whether a multi-agent approach helps at all. Its low setup cost makes it cheap to be wrong quickly.</li>
   <li><strong>Migrate to LangGraph</strong> once the system needs to run in production with checkpointing, audit trails, and human approval steps.</li>
   <li><strong>Layer in MCP for tool access,</strong> and add A2A only once you need agents from different frameworks or vendors to work together. Neither protocol is strictly necessary for a single-framework, single-team system.</li>
-  <li><strong>Check whether you need a multi-agent rebuild at all.</strong> If your existing automation stack (n8n, Make, Zapier) already covers the use case, start there. See <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier 2026</a> and <a href="/blog/best-no-code-ai-automation-tools-2026/">Best No-Code AI Automation Tools 2026</a> before reaching for a multi-agent framework.</li>
+  <li><strong>Check whether you need a multi-agent rebuild at all.</strong> If your existing automation stack (<a href="/tools/n8n/">n8n</a>, Make, <a href="/tools/zapier/">Zapier</a>) already covers the use case, start there. See <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier 2026</a> and <a href="/blog/best-no-code-ai-automation-tools-2026/">Best No-Code AI Automation Tools 2026</a> before reaching for a multi-agent framework.</li>
 <p><a href="https://n8n.io/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try n8n Free →</a></p>
 </ol>
 <p style="font-size:12px;color:var(--text-muted,#888);">

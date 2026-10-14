@@ -71,7 +71,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">29</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">Descript (Overdub)</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a> (Overdub)</td>
         <td style="padding:10px 14px">~10 minutes</td>
         <td style="padding:10px 14px">$24/month</td>
         <td style="padding:10px 14px">English-focused</td>
@@ -166,6 +166,11 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Descript.</strong></p>
+  <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript →</a>
+</div>
+
 `,
 
   faqs: [
@@ -203,7 +208,7 @@ const post: BlogPost = {
     { url: 'https://elevenlabs.io/safety', label: 'ElevenLabs — Safety and Consent Policy' },
   ],
 
-  wordCount: 1700,
+  wordCount: 940,
 };
 
 export default post;

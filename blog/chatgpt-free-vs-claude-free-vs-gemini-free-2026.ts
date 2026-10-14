@@ -135,7 +135,7 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 14px;font-weight:600;">Coding</td>
       <td style="padding:10px 14px;">Limited Codex access</td>
-      <td style="padding:10px 14px;">Runs code in chat; no Claude Code</td>
+      <td style="padding:10px 14px;">Runs code in chat; no <a href="/tools/claude-code/">Claude Code</a></td>
       <td style="padding:10px 14px;">In chat only</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">

@@ -27,7 +27,7 @@ const post: BlogPost = {
   slug: 'best-ai-transcription-software-2026',
   title: 'Best AI Transcription Software 2026: Transkriptor vs Otter.ai vs Descript vs Fireflies vs Rev',
   seoTitle: 'Best AI Transcription Software 2026: 5 Tools Compared',
-  metaDescription: 'Best AI transcription software 2026 compared: Transkriptor, Otter.ai, Descript, Fireflies.ai, and Rev — real pricing, accuracy, language support, and which one fits your workflow.',
+  metaDescription: 'Best AI transcription software 2026: Transkriptor, Otter.ai, Descript, Fireflies.ai and Rev compared on real pricing, accuracy, and languages.',
   datePublished: '2026-09-20',
   dateModified: '2026-10-14',
   author: 'Navneet Arya',
@@ -105,10 +105,11 @@ const post: BlogPost = {
   ],
   wordCount: 2460,
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI transcription software in 2026: <strong>Transkriptor</strong> (free trial, from $9.99/month) wins for transcribing files and live calls across 100+ languages. <strong>Otter.ai</strong> (free 300 min/month, from $8.33/month annual) wins for live, in-meeting notes and captions. <strong>Descript</strong> (free, from $16/month annual) wins if you need to edit the recording by editing its transcript.</p>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Fireflies.ai</strong> (free, from $10/month) wins for CRM-connected meeting recording with automatic action items. <strong>Rev</strong> (free 45 min/month AI, human transcription from $1.99/minute) wins when 99%+ accuracy for a legal or compliance record matters more than speed or price.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI transcription software in 2026: <strong><a href="/tools/transkriptor/">Transkriptor</a></strong> (free trial, from $9.99/month) wins for transcribing files and live calls across 100+ languages. <strong>Otter.ai</strong> (free 300 min/month, from $8.33/month annual) wins for live, in-meeting notes and captions. <strong><a href="/tools/descript/">Descript</a></strong> (free, from $16/month annual) wins if you need to edit the recording by editing its transcript.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong><a href="/tools/fireflies/">Fireflies</a>.ai</strong> (free, from $10/month) wins for CRM-connected meeting recording with automatic action items. <strong>Rev</strong> (free 45 min/month AI, human transcription from $1.99/minute) wins when 99%+ accuracy for a legal or compliance record matters more than speed or price.</p>
 </div>
 
 <h2>Best AI Transcription Software 2026: Five Different Jobs, One Search Term</h2>
@@ -144,14 +145,14 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">⭐ 4.3/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Descript</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a></td>
       <td style="padding:10px 14px;">Yes: limited</td>
       <td style="padding:10px 14px;">$16/month (annual Hobbyist)</td>
       <td style="padding:10px 14px;">Editing audio/video by editing text</td>
       <td style="padding:10px 14px;">⭐ 4.4/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Fireflies.ai</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['fireflies']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Fireflies.ai</a></td>
       <td style="padding:10px 14px;">Yes: limited storage</td>
       <td style="padding:10px 14px;">~$10/month</td>
       <td style="padding:10px 14px;">CRM-connected meeting recording</td>

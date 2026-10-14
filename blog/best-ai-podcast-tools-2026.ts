@@ -114,7 +114,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">—</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Descript</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a></td>
       <td style="padding:10px 14px;">Yes: 1 hr/month transcription, watermarked</td>
       <td style="padding:10px 14px;">$12/month (Creator)</td>
       <td style="padding:10px 14px;">Editing by transcript</td>
@@ -139,7 +139,7 @@ const post: BlogPost = {
 <p><strong>Free plan reality:</strong> The free plan covers up to 10 recording hours a month and 3 published episodes. A weekly show will outgrow that and need the $11.99/month Basic plan. A bi-weekly or monthly show can stay on the free plan long-term.</p>
 <p>Compare Podcastle to its nearest competitor in our <a href="/compare/podcastle-vs-descript/" style="color:var(--a1);font-weight:600;">Podcastle vs Descript breakdown →</a></p>
 <div style="margin:14px 0 24px;">
-  <a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
+  <a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
@@ -175,7 +175,7 @@ const post: BlogPost = {
 <p>Murf AI turns text into realistic AI voiceovers. For podcasters, that's useful in three ways. First, a professional intro or outro you never need to re-record. Second, sponsor ad reads in one consistent voice. Third, narration for solo "explainer" episodes where you've written a script but don't want to read it yourself.</p>
 <p>The voice library has 120+ AI voices across 20+ languages, with a range of accents, genders, and tones. The Studio interface lets you adjust speaking rate, pitch, and emphasis on individual words. That keeps the output from sounding like flat, robotic text-to-speech.</p>
 <p><strong>Free plan:</strong> 10 minutes of voiceover generation a month, with a watermark. That's enough to test the tool, but not enough for ongoing production.</p>
-<p>The $19/month Basic plan removes the watermark and gives 2 hours of monthly voice generation, enough for weekly short episodes. If ultra-realistic voice cloning matters more than workflow polish, compare Murf against ElevenLabs: Murf wins on ease of use, ElevenLabs wins on raw voice realism.</p>
+<p>The $19/month Basic plan removes the watermark and gives 2 hours of monthly voice generation, enough for weekly short episodes. If ultra-realistic voice cloning matters more than workflow polish, compare Murf against <a href="/tools/elevenlabs/">ElevenLabs</a>: Murf wins on ease of use, ElevenLabs wins on raw voice realism.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>

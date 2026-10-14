@@ -154,7 +154,7 @@ const post: BlogPost = {
 <h2>How this compares to Murf AI's pricing</h2>
 <p>For a broader voice-tool comparison, see our <a href="/blog/best-ai-voice-generators-2026/" style="color:var(--a1);font-weight:600;">best AI voice generators guide</a> and the <a href="/blog/best-text-to-speech-software-2026/" style="color:var(--a1);font-weight:600;">best text-to-speech software comparison</a>.</p>
 
-<p>If you're weighing ElevenLabs against Murf AI, the pricing structures differ. Murf meters generation hours rather than credits.</p><p>Murf's commercial license starts at $19/month annually or $29/month monthly. ElevenLabs starts at $6/month. Our full <a href="/compare/murf-ai-vs-elevenlabs/">Murf AI vs ElevenLabs comparison</a> breaks down the workflow fit.</p>
+<p>If you're weighing ElevenLabs against <a href="/tools/murf-ai/">Murf AI</a>, the pricing structures differ. Murf meters generation hours rather than credits.</p><p>Murf's commercial license starts at $19/month annually or $29/month monthly. ElevenLabs starts at $6/month. Our full <a href="/compare/murf-ai-vs-elevenlabs/">Murf AI vs ElevenLabs comparison</a> breaks down the workflow fit.</p>
 
 <h2>Bottom line</h2>
 
@@ -198,7 +198,7 @@ const post: BlogPost = {
     { url: 'https://get.murf.ai/pricing', label: 'Murf AI — Official Pricing' },
   ],
 
-  wordCount: 2100,
+  wordCount: 1103,
 };
 
 export default post;

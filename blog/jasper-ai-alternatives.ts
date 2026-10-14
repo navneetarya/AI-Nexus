@@ -76,6 +76,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Are the Best Jasper AI Alternatives in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A data reporting dashboard shown on a laptop screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>The best Jasper AI alternatives in 2026 are four. Writesonic for long-form content at a fraction of Jasper's $49/month. Rytr for short-form copy at $9/month. Copy.ai if you want a genuinely usable free plan. And Frase if SEO research and writing need to happen in the same tool.</p>
@@ -109,7 +110,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Same blog post quality, 60% cheaper</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:700;">Rytr</td>
+      <td style="padding:10px 14px;font-weight:700;"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
       <td style="padding:10px 14px;">Short-form copy, social, email</td>
       <td style="padding:10px 14px;">✅ 10k chars/mo</td>
       <td style="padding:10px 14px;">$9/mo</td>
@@ -123,7 +124,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Free plan covers most short-form needs</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:700;">Frase</td>
+      <td style="padding:10px 14px;font-weight:700;"><a href="${AFFILIATE_LINKS['frase']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Frase</a></td>
       <td style="padding:10px 14px;">SEO content briefs + writing</td>
       <td style="padding:10px 14px;">❌ $1 trial</td>
       <td style="padding:10px 14px;">$15/mo</td>

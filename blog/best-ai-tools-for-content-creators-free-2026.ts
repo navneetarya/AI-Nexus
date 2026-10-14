@@ -81,6 +81,7 @@ const post: BlogPost = {
   wordCount: 2647,
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:10px;padding:16px 20px;margin:0 0 28px;">
   <div style="font-size:11px;font-weight:700;color:#0D9488;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;">⚡ Quick Answer</div>
   <p style="font-size:14px;color:inherit;margin:0;line-height:1.7;">The best free AI tools for content creators in 2026: <strong>Grammarly</strong> (writing, no word limit free) and <strong>Canva AI</strong> (design + AI copy, 250K templates free). Also strong: <strong>Rytr</strong> (10,000 chars/month free writing), <strong>Podcastle</strong> (10hrs/month free podcast recording) and <strong>Ocoya</strong> (social posting, paid from $15/month).</p>
@@ -140,21 +141,21 @@ const post: BlogPost = {
       <td style="padding:12px 14px;color:rgba(228,238,234,.68);">$15/month</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(228,238,234,.07);">
-      <td style="padding:12px 14px;font-weight:600;color:inherit;">QuillBot</td>
+      <td style="padding:12px 14px;font-weight:600;color:inherit;"><a href="/tools/quillbot/">QuillBot</a></td>
 <p><a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Quillbot Free →</a></p>
       <td style="padding:12px 14px;color:rgba(228,238,234,.68);">Paraphrasing · rewriting · citations</td>
       <td style="padding:12px 14px;color:#F59E0B;font-weight:600;">125 words/paraphrase limit</td>
       <td style="padding:12px 14px;color:rgba(228,238,234,.68);">$9.95/month</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(228,238,234,.07);">
-      <td style="padding:12px 14px;font-weight:600;color:inherit;">Gamma</td>
+      <td style="padding:12px 14px;font-weight:600;color:inherit;"><a href="/tools/gamma/">Gamma</a></td>
 <p><a href="${AFFILIATE_LINKS['gamma']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Gamma Free →</a></p>
       <td style="padding:12px 14px;color:rgba(228,238,234,.68);">AI presentations · decks · documents</td>
       <td style="padding:12px 14px;color:#F59E0B;font-weight:600;">400 AI credits on signup</td>
       <td style="padding:12px 14px;color:rgba(228,238,234,.68);">$8/month</td>
     </tr>
     <tr>
-      <td style="padding:12px 14px;font-weight:600;color:inherit;">Taskade</td>
+      <td style="padding:12px 14px;font-weight:600;color:inherit;"><a href="/tools/taskade/">Taskade</a></td>
 <p><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
       <td style="padding:12px 14px;color:rgba(228,238,234,.68);">Content planning · AI project briefs</td>
       <td style="padding:12px 14px;color:#22C55E;font-weight:600;">Free with limited AI credits</td>
@@ -232,7 +233,7 @@ const post: BlogPost = {
 <p><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a></p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
+  <a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

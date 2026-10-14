@@ -94,7 +94,7 @@ const post: BlogPost = {
   </tr></thead>
   <tbody>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Rytr</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;"><a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Rytr</a></td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Writing</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">~₹750/mo</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — 10,000 chars/mo</td>
@@ -106,13 +106,13 @@ const post: BlogPost = {
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — unlimited grammar checks</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Canva AI</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;"><a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Canva AI</a></td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Design</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">~₹333/mo</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — limited AI credits</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;font-weight:600;">Perplexity</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Perplexity</a></td>
       <td style="padding:10px 14px;">Research</td>
       <td style="padding:10px 14px;">Free</td>
       <td style="padding:10px 14px;">Yes — cited answers, no VPN needed</td>
@@ -290,6 +290,11 @@ const post: BlogPost = {
 </ol>
 <p>The AI tools market in India is growing fast, and INR pricing options are improving every month.</p>
 <p>Indian creators have a real advantage right now. Competition for India-specific AI content — reviews, comparisons, tutorials written from an Indian perspective — is nearly zero. That gap won't last.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Perplexity Pro.</strong></p>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Pro →</a>
+</div>
+
   `.trim(),
 };
 

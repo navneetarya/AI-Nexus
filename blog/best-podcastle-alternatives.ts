@@ -80,13 +80,13 @@ const post: BlogPost = {
     { url: 'https://www.descript.com/pricing', label: 'Descript official pricing page' },
   ],
 
-  wordCount: 1550,
+  wordCount: 1287,
 
   content: `
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 <h2>What Are the Best Podcastle Alternatives in 2026?</h2>
 <p>The best Podcastle alternative in 2026 is Descript, especially for transcript-based editing. Riverside.fm is the pick if studio-quality remote recording matters most. Adobe Podcast Enhance works if all you need is free AI audio cleanup on top of your existing setup.</p>
-<p><a href="https://podcastle.ai/?ref=ymi1ntf" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle Free →</a></p>
 <p>Podcastle is one of the best podcast recording tools ready to use. The Magic Dust AI audio cleanup is truly impressive, the remote recording is solid, and the free plan is more generous than most competitors. But there are real situations where an alternative makes more sense. Here are the three most common ones.</p>
 <ul style="margin:8px 0 14px 24px;line-height:2.2;">
   <li><strong>You need text-based editing.</strong> Podcastle's editing tools are basic. If you record 60-minute interview episodes and want to remove filler words by searching a transcript, Podcastle isn't built for that. Descript is.</li>
@@ -108,7 +108,7 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.05);">
-      <td style="padding:10px 14px;font-weight:700;color:#0D9488;">Descript ⭐ Top Pick</td>
+      <td style="padding:10px 14px;font-weight:700;color:#0D9488;"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a> ⭐ Top Pick</td>
       <td style="padding:10px 14px;">Text-based editing + video</td>
       <td style="padding:10px 14px;">✅ 1hr/mo</td>
       <td style="padding:10px 14px;">$12/mo</td>
@@ -190,6 +190,11 @@ const post: BlogPost = {
 <p><strong>Switch to Riverside.fm if:</strong> Remote guest recording quality is your primary concern and you want the cleanest possible separate tracks from each participant. Riverside edges out Podcastle on raw recording quality, especially for video-enabled recordings.</p>
 <p><strong>Add Adobe Podcast if:</strong> You're happy with your current recording platform but want better audio cleanup. Enhance Speech is a useful addition to Podcastle, Descript, Riverside, or any other workflow, not a replacement for them.</p>
 <p>For a broader roundup of recording, editing, and publishing tools beyond just Podcastle alternatives, see our full <a href="/blog/best-ai-podcast-tools-2026/" style="color:#0D9488;font-weight:600;">best AI podcast tools guide</a> or browse the full <a href="/best-ai-audio-tools/" style="color:#0D9488;font-weight:600;">best AI audio tools category</a>. And if you're still deciding whether to leave Podcastle at all, our <a href="/tools/podcastle/" style="color:#0D9488;font-weight:600;">on its own Podcastle review</a> covers what it still does best.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Podcastle.</strong></p>
+  <a href="${AFFILIATE_LINKS['podcastle']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Podcastle →</a>
+</div>
+
 `,
 };
 

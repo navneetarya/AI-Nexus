@@ -78,7 +78,7 @@ const post: BlogPost = {
     { url: 'https://www.ssls.com/ssl-certificate', label: 'SSLs.com official SSL information' },
     { url: 'https://www.newfold.com/brands', label: 'Newfold Digital official brand list' },
   ],
-  wordCount: 1377,
+  wordCount: 1820,
   content: `
 <p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> - we may earn a commission at no extra cost to you.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
@@ -127,7 +127,7 @@ const post: BlogPost = {
 
 <h2>Step 3: decide whether you need separate SSL</h2>
 <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Secure padlock on a website connection representing SSL protection" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p>HTTPS encrypts the connection between a visitor and the website. Many builders and hosting plans include a certificate automatically. BigRock's hosting page lists a free Let's Encrypt SSL in its hosting plans, and Readdy describes automatic SSL when a site is published.</p>
+<p>HTTPS encrypts the connection between a visitor and the website. Many builders and hosting plans include a certificate automatically. BigRock's hosting page lists a free Let's Encrypt SSL in its hosting plans, and <a href="/tools/readdy/">Readdy</a> describes automatic SSL when a site is published.</p>
 <p>A separate certificate is mainly relevant when your host does not include one, when you need a particular validation or coverage type, or when you manage certificates for several domains outside an all-in-one platform. Do not buy an SSL merely because the browser shows HTTPS as a feature; first check whether it is already included.</p>
 <h3>SSLs.com: certificates for separate certificate purchases</h3>
 <p>SSLs.com publishes domain, organization, and extended validation certificates. Its pages also describe wildcard and multi-domain coverage.</p><p>The product menu shows a Standard Wildcard SSL at $38.53/year against a $64.99 list price. It shows a Standard SSL at $3.75/year against a $7.99 list price. Confirm the current product, term, renewal, and validation requirements before purchasing.</p>

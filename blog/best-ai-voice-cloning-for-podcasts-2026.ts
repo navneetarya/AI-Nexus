@@ -38,6 +38,7 @@ const post: BlogPost = {
   myTake: "This guide starts from a different question than most cloning posts: not \"which tool clones best\" but \"does your show actually need this yet\". For most podcasts under 20 episodes, the honest answer is not yet — past that, ElevenLabs is where I'd start.",
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img src="https://images.unsplash.com/photo-1615661434109-739052a73003?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A studio microphone on a stand, used for recording a voice sample for podcast voice cloning" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
 <p>Should you clone your own voice for your podcast? For most shows, the honest answer is: not yet, and maybe never. Voice cloning for podcasters only earns its cost for three specific jobs — a consistent scripted read, fixing a flub without a re-record, or dubbing an episode into another language. Everything else, your real voice does better and cheaper.</p>
@@ -49,7 +50,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
-<p>If your show has a scripted intro, sponsor reads that need to sound identical every week, or an audience in more than one language, ElevenLabs' cloning pays for itself quickly. If cloning is only for the occasional flubbed line, Descript's Overdub fits better since it sits inside the transcript editor you're likely already using.</p>
+<p>If your show has a scripted intro, sponsor reads that need to sound identical every week, or an audience in more than one language, ElevenLabs' cloning pays for itself quickly. If cloning is only for the occasional flubbed line, <a href="/tools/descript/">Descript</a>'s Overdub fits better since it sits inside the transcript editor you're likely already using.</p>
 
 <div style="overflow-x:auto;margin:28px 0">
   <table style="width:100%;border-collapse:collapse;font-size:14px">
@@ -68,7 +69,7 @@ const post: BlogPost = {
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Fixing a flubbed line</td>
-        <td style="padding:10px 14px">Descript (Overdub)</td>
+        <td style="padding:10px 14px"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a> (Overdub)</td>
         <td style="padding:10px 14px">$24/mo (Creator)</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -139,6 +140,11 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Descript.</strong></p>
+  <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript →</a>
+</div>
+
 `,
 
   faqs: [
@@ -177,7 +183,7 @@ const post: BlogPost = {
     { url: 'https://elevenlabs.io/safety', label: 'ElevenLabs — Safety and Consent Policy' },
   ],
 
-  wordCount: 1450,
+  wordCount: 807,
 };
 
 export default post;

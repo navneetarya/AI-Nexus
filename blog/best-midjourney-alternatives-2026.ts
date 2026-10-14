@@ -83,7 +83,7 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best Midjourney alternatives in 2026: <strong>Leonardo.ai</strong> (best overall, free–$12/mo) for most users, and <strong>Stable Diffusion</strong> (free, self-hosted) for unlimited generation. <strong>DALL-E 3</strong> (via ChatGPT, $20/mo) wins for beginners and text-in-image accuracy, and <strong>Adobe Firefly</strong> (free–$4.99/mo) wins for safe images for business use.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best <a href="/tools/midjourney/">Midjourney</a> alternatives in 2026: <strong>Leonardo.ai</strong> (best overall, free–$12/mo) for most users, and <strong>Stable Diffusion</strong> (free, self-hosted) for unlimited generation. <strong>DALL-E 3</strong> (via <a href="/tools/chatgpt/">ChatGPT</a>, $20/mo) wins for beginners and text-in-image accuracy, and <strong>Adobe Firefly</strong> (free–$4.99/mo) wins for safe images for business use.</p>
 </div>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 <blockquote style="margin:0 0 24px;padding:14px 18px;border-left:3px solid #0D9488;font-style:italic;color:var(--txt);background:rgba(13,148,136,.04);border-radius:0 8px 8px 0;">
@@ -116,7 +116,7 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 14px;font-weight:600;">Leonardo.ai</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Leonardo.ai</a></td>
       <td style="padding:10px 14px;">Free daily AI image generation</td>
       <td style="padding:10px 14px;">✅ 150 tokens/day</td>
       <td style="padding:10px 14px;">$12/mo</td>
@@ -237,6 +237,11 @@ const post: BlogPost = {
 <h2>Final Verdict</h2>
 <p>Midjourney is still the aesthetic king for artistic, dreamy, cinematic images. But for daily use, such as content, marketing, and product images, the alternatives have caught up or surpassed it.</p>
 <p>Leonardo.ai offers better free access. Stable Diffusion offers unlimited generation. DALL-E 3 offers easier prompting. Adobe Firefly offers legal safety. Unless you exactly need Midjourney's artistic style, there's a better, and often cheaper, alternative for your use case.</p>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Leonardo.ai.</strong></p>
+  <a href="${AFFILIATE_LINKS['leonardo-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Leonardo.ai →</a>
+</div>
+
   `.trim(),
 };
 

@@ -87,8 +87,8 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Five agents lead the field in 2026. <strong>Claude Code</strong> has the best codebase reasoning and is terminal-native, at $20/month via Claude Pro. <strong>Cursor Agent</strong> has the best IDE-integrated agent loop, also $20/month. <strong>Devin</strong> is the most autonomous. It runs the full software engineering cycle, with a free plan, Pro at $20/month and Max at $200/month.</p>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>SWE-Agent</strong> is the best open-source option with no vendor lock-in. <strong>GitHub Copilot Workspace</strong> is best for GitHub-native teams. This report compares 6 agents on SWE-bench scores, real-world autonomy, and INR pricing for Indian developers.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Five agents lead the field in 2026. <strong><a href="/tools/claude-code/">Claude Code</a></strong> has the best codebase reasoning and is terminal-native, at $20/month via Claude Pro. <strong><a href="/tools/cursor/">Cursor</a> Agent</strong> has the best IDE-integrated agent loop, also $20/month. <strong>Devin</strong> is the most autonomous. It runs the full software engineering cycle, with a free plan, Pro at $20/month and Max at $200/month.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>SWE-Agent</strong> is the best open-source option with no vendor lock-in. <strong><a href="/tools/github-copilot/">GitHub Copilot</a> Workspace</strong> is best for GitHub-native teams. This report compares 6 agents on SWE-bench scores, real-world autonomy, and INR pricing for Indian developers.</p>
 </div>
 
 <h2>What Changed in AI Coding in 2026: Agents vs Assistants</h2>
@@ -330,7 +330,7 @@ const post: BlogPost = {
     </tr>
     <tr>
       <td style="padding:10px 14px;">No-code or low-code full-stack generation</td>
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Lovable / Bolt / v0</td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="/tools/lovable/">Lovable</a> / Bolt / <a href="/tools/v0/">v0</a></td>
       <td style="padding:10px 14px;">Vibe coding agents for UI generation — see <a href="/blog/best-vibe-coding-tools-2026/">Best Vibe Coding Tools 2026</a></td>
     </tr>
   </tbody>

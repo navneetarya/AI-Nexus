@@ -26,7 +26,7 @@ const post: BlogPost = {
   slug: 'ai-voice-cloning-pricing-comparison-2026',
   title: 'AI Voice Cloning Pricing Compared 2026: ElevenLabs vs Murf vs Descript vs Resemble',
   seoTitle: 'AI Voice Cloning Pricing Compared 2026',
-  metaDescription: 'ElevenLabs vs Murf AI vs Descript vs Resemble AI voice cloning pricing compared for 2026: cheapest entry point, per-minute cost, and which plan actually unlocks cloning.',
+  metaDescription: 'ElevenLabs vs Murf AI vs Descript vs Resemble AI voice cloning pricing for 2026: cheapest entry point, per-minute cost, and which plan unlocks cloning.',
   datePublished: '2026-09-26',
   dateModified: '2026-09-29',
   author: 'Navneet Arya',
@@ -38,9 +38,10 @@ const post: BlogPost = {
   myTake: " The figures come straight from each tool's live pricing page rather than reusing older cached numbers, since Starter and Creator pricing on ElevenLabs specifically has moved before. The gap that surprised me most preparing this: Murf, a genuinely strong voiceover tool otherwise, doesn't offer cloning to anyone below Enterprise.",
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio mixing console dials, representing AI voice cloning pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
 
-<p>"How much does it actually cost to clone a voice?" has a different answer depending on which tool you ask. ElevenLabs sells cloning as a monthly-plan feature. Resemble AI charges per second of audio generated. Descript bundles it into an editing subscription. And Murf, despite selling voiceovers to everyone, doesn't sell cloning to almost anyone. Here's what each one actually charges.</p>
+<p>"How much does it actually cost to clone a voice?" has a different answer depending on which tool you ask. ElevenLabs sells cloning as a monthly-plan feature. Resemble AI charges per second of audio generated. <a href="/tools/descript/">Descript</a> bundles it into an editing subscription. And Murf, despite selling voiceovers to everyone, doesn't sell cloning to almost anyone. Here's what each one actually charges.</p>
 
 <p>This guide uses each tool's live pricing page directly for this comparison. For a feature-by-feature look at cloning quality rather than just price, see our <a href="/blog/best-ai-voice-cloning-tools-2026/">best AI voice cloning tools guide</a>.</p>
 
@@ -68,7 +69,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">~1 minute</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">Descript (Overdub)</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a> (Overdub)</td>
         <td style="padding:10px 14px">$24/mo (Creator)</td>
         <td style="padding:10px 14px">Flat monthly</td>
         <td style="padding:10px 14px">~10 minutes</td>
@@ -80,7 +81,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">~10 minutes</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
-        <td style="padding:10px 14px;font-weight:500">Murf AI</td>
+        <td style="padding:10px 14px;font-weight:500"><a href="/tools/murf-ai/">Murf AI</a></td>
         <td style="padding:10px 14px">Enterprise only (custom-quoted)</td>
         <td style="padding:10px 14px">Annual contract, ~$1,000+</td>
         <td style="padding:10px 14px">Not self-serve</td>
@@ -149,6 +150,11 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
+<div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
+  <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Descript.</strong></p>
+  <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript →</a>
+</div>
+
 `,
 
   faqs: [
@@ -187,7 +193,7 @@ const post: BlogPost = {
     { url: 'https://murf.ai/pricing', label: 'Murf AI — Official Pricing' },
   ],
 
-  wordCount: 1550,
+  wordCount: 763,
 };
 
 export default post;

@@ -60,8 +60,8 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Zapier</strong> wins on integration breadth and onboarding speed. It has the largest app library and the fastest path to a working automation for non-technical teams, though task-based pricing gets expensive at scale.</p>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Make.com</strong> offers the best balance of AI capability and price for most teams: a visual canvas, native AI modules, and operation-based billing that stays reasonable as workflows grow. <strong>n8n</strong> has the deepest AI-native architecture, with a dedicated AI Agent node and the most comprehensive MCP support of any platform here, but it demands real technical comfort.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong><a href="/tools/zapier/">Zapier</a></strong> wins on integration breadth and onboarding speed. It has the largest app library and the fastest path to a working automation for non-technical teams, though task-based pricing gets expensive at scale.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong><a href="/tools/make/">Make.com</a></strong> offers the best balance of AI capability and price for most teams: a visual canvas, native AI modules, and operation-based billing that stays reasonable as workflows grow. <strong><a href="/tools/n8n/">n8n</a></strong> has the deepest AI-native architecture, with a dedicated AI Agent node and the most comprehensive MCP support of any platform here, but it demands real technical comfort.</p>
 <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The other six platforms in this guide each solve a narrower problem well: autonomous agents, browser automation, open-source self-hosting, and AI-native data pipelines.</p>
 </div>
 <div style="overflow-x:auto;margin:16px 0 24px;">
@@ -80,7 +80,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Integration breadth, fastest onboarding</td>
     </tr>
     <tr>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Make.com</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;"><a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Make.com</a></td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Operation-based</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$9/mo (Core)</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Best AI-to-price ratio</td>
@@ -99,14 +99,14 @@ const post: BlogPost = {
 <h2>What "No-Code AI Automation" Actually Means in 2026 (and What It Doesn't)</h2>
 <p style="font-size:12px;opacity:.75;margin:14px 0 6px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 <div style="margin:6px 0 24px;">
-  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make Free →</a>
+  <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make Free →</a>
 </div>
 <img src="https://images.unsplash.com/photo-1581547848545-a75a2634ba23?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person holding a microphone on a stand while presenting a workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>"No-code AI automation" gets used loosely enough in 2026 marketing copy that it's worth being precise about what it actually buys you. At its core, it means building a working software process: connect this app to that app, run this logic, take this action.</p>
 <p>That happens entirely through a visual interface, with AI doing part of the thinking, rather than every step being a fixed, human-defined rule.</p>
 <p>It does not mean zero setup time or zero learning curve. Nor does it mean every platform sold as "no-code" is equally accessible to someone with no technical background.</p>
 <p>The category has split sharply over the past two years. A platform like Zapier remains close to its original form. Trigger an action, run a sequence of steps, and occasionally let an AI step draft text or make a classification decision inside that sequence.</p>
-<p>A platform like Lindy or n8n's AI Agent node represents something genuinely different. It's software that plans its own steps toward a stated goal, adapting as it goes rather than following a path you laid out in advance. Both get marketed as "AI automation." Only one of them is actually agentic.</p>
+<p>A platform like <a href="/tools/lindy/">Lindy</a> or n8n's AI Agent node represents something genuinely different. It's software that plans its own steps toward a stated goal, adapting as it goes rather than following a path you laid out in advance. Both get marketed as "AI automation." Only one of them is actually agentic.</p>
 
 <h3>The Difference: Rule-Based Automation vs AI-Powered Dynamic Workflows</h3>
 <p>Rule-based automation follows a fixed path every time: if a form is submitted, send this email, then update this spreadsheet, then post this Slack message. AI involvement here is typically a single step, such as summarising text, classifying a ticket, or drafting a reply. That step is still bolted onto a sequence a human designed in full.</p>
@@ -136,7 +136,7 @@ const post: BlogPost = {
 <p>Make builds workflows ("scenarios") on a visual, node-based canvas that handles branching logic more naturally than Zapier's linear Zap builder. AI capability is delivered through dedicated integration modules for OpenAI, Anthropic, and Google AI models that drop directly into a scenario, rather than a separate agent product.</p>
 <p>Billing is per operation (each module run) rather than per task. The free tier includes 1,000 operations per month, and the Core paid plan runs roughly $9/month for 10,000 operations. That's a meaningfully better rate than a comparable Zapier tier once a workflow involves several steps.</p>
 <p>The tradeoff is a moderately steeper learning curve than Zapier's linear builder, though still well within reach for a non-developer willing to spend an afternoon with it.</p>
-<p><strong>Best for:</strong> teams that have outgrown Zapier's simplicity but don't want the operational overhead of self-hosting. This fits especially well for workflows with real branching logic or multiple data transformation steps. <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Make.com →</a></p>
+<p><strong>Best for:</strong> teams that have outgrown Zapier's simplicity but don't want the operational overhead of self-hosting. This fits especially well for workflows with real branching logic or multiple data transformation steps. <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Make.com →</a></p>
 
 <h2>3. n8n — Best AI-Native Platform, Requires Some Technical Comfort</h2>
 <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3. n8n — Best AI-Native Platform, Requires Some Technical Comfort" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -166,7 +166,7 @@ const post: BlogPost = {
 
 <h2>7. Gumloop — Best for AI-Native Data Pipelines</h2>
 <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 7. Gumloop — Best for AI-Native Data Pipelines" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p>Gumloop sits between traditional automation tools and agent-native platforms. It's a visual canvas like Make's, but with AI steps treated as first-class pipeline stages rather than an add-on module.</p>
+<p><a href="/tools/gumloop/">Gumloop</a> sits between traditional automation tools and agent-native platforms. It's a visual canvas like Make's, but with AI steps treated as first-class pipeline stages rather than an add-on module.</p>
 <p>It's particularly suited to content and research workflows that chain several AI-dependent steps together: scrape a source, summarise the content, draft a section, publish through an API. Each stage needs to feed cleanly into the next.</p>
 <p>It's a weaker fit for conversational or inbox-centric use cases than Lindy, but a stronger one for structured, multi-stage data processing.</p>
 <p><strong>Best for:</strong> content and research operations running multi-step pipelines where AI does substantive work at more than one stage.</p>
@@ -177,7 +177,7 @@ const post: BlogPost = {
 <p><strong>Best for:</strong> developers and technically comfortable operators who want the speed of a visual builder with the option to write custom code exactly where it's needed.</p>
 
 <h2>9. Relevance AI — Best for No-Code AI Agent Teams</h2>
-<p>Relevance AI uses a structured "Tools + Agents" framework. Tools are individual AI-powered functions, such as searching a CRM, classifying intent, or drafting outreach, and Agents orchestrate Tools together toward a defined goal. This two-layer architecture produces more auditable, repeatable agent behaviour than instruction-only platforms like Lindy, at the cost of more upfront configuration.</p>
+<p><a href="/tools/relevance-ai/">Relevance AI</a> uses a structured "Tools + Agents" framework. Tools are individual AI-powered functions, such as searching a CRM, classifying intent, or drafting outreach, and Agents orchestrate Tools together toward a defined goal. This two-layer architecture produces more auditable, repeatable agent behaviour than instruction-only platforms like Lindy, at the cost of more upfront configuration.</p>
 <p>The free tier includes 100 credits per day, enough to build and test a first agent, and the Team plan starts at $19/month. Some teams need to document what an agent is doing and why, a compliance or quality-control requirement in sales and operations contexts. For them, Relevance AI's auditability is the differentiator.</p>
 <p><strong>Best for:</strong> sales and operations teams that need structured, auditable AI agent behaviour rather than a black-box instruction-following agent. <a href="${AFFILIATE_LINKS['relevance-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Relevance AI →</a></p>
 
@@ -290,12 +290,12 @@ const post: BlogPost = {
 <!-- ai-nexus:tool-cta-block -->
 <div style="margin:30px 0 12px;padding:16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
   <p style="margin:0 0 8px;font-size:14px;line-height:1.6;"><strong>Compare official pages before deciding:</strong></p>
-  <a href="https://zapier.com" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit zapier</a>  <a href="https://www.make.com/en/register?pc=navneet" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit make</a>  <a href="https://n8n.io/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit n8n</a>  <a href="${AFFILIATE_LINKS['lindy']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Lindy: AI Agent Platform</a>  <a href="https://www.activepieces.com/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit activepieces</a>
+  <a href="https://zapier.com" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit zapier</a>  <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit make</a>  <a href="https://n8n.io/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit n8n</a>  <a href="${AFFILIATE_LINKS['lindy']}" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Lindy: AI Agent Platform</a>  <a href="https://www.activepieces.com/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit activepieces</a>
   <p style="margin:10px 0 0;font-size:11px;color:#6b7280;">Affiliate disclosure: some links may be affiliate links at no extra cost to you.</p>
 </div>
 
 `.trim(),
-  wordCount: 2364,
+  wordCount: 3064,
   proscons: {
     pros: [
       'Covers key options for this use case in one place',

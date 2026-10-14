@@ -108,7 +108,7 @@ const post: BlogPost = {
     { url: 'https://pose.ai/terms-conditions', label: 'Pose AI — terms of service' },
     { url: 'https://support.betterpic.io/en/article/who-owns-the-pictures-1oj455b/', label: 'BetterPic — ownership, license and data retention' },
     { url: 'https://support.betterpic.io/en/article/how-long-does-it-take-to-get-headshots-csnxca/', label: 'BetterPic — delivery times by package' },
-    { url: 'https://www.aragon.ai/faqs', label: 'Aragon AI — FAQ (delivery time)' },
+    { url: 'https://www.aragon.ai/', label: 'Aragon AI — official site' },
   ],
 
   content: `
@@ -192,7 +192,7 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);background:rgba(14,165,233,.04);">
-      <td style="padding:10px 14px;font-weight:700;">HeadshotPro ⭐ #1</td>
+      <td style="padding:10px 14px;font-weight:700;"><a href="${AFFILIATE_LINKS['headshotpro']}" target="_blank" rel="sponsored nofollow noopener noreferrer">HeadshotPro</a> ⭐ #1</td>
       <td style="padding:10px 14px;">LinkedIn &amp; professional profiles</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">$29–$59 one-time</td>
@@ -277,7 +277,7 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(14,165,233,.08);">
       <td style="padding:10px 12px;font-weight:600;">Aragon AI</td>
       <td style="padding:10px 12px;">From $35 for 40+ headshots, up to 100 images (Aragon's own LinkedIn guide); tier prices of $35 / $45 / $75 come from third-party reviews</td>
-      <td style="padding:10px 12px;">About 45 / 30 / 15 minutes by pack per <a href="https://aragon.ai/blog/headshotpro-vs-aragon-which-ai-headshot-generator-has-better-results" target="_blank" rel="noopener noreferrer">Aragon's own comparison</a>; its <a href="https://www.aragon.ai/faqs" target="_blank" rel="noopener noreferrer">FAQ</a> says allow 60 minutes, plus 1-2 more hours when servers are busy</td>
+      <td style="padding:10px 12px;">About 45 / 30 / 15 minutes by pack per <a href="https://aragon.ai/blog/headshotpro-vs-aragon-which-ai-headshot-generator-has-better-results" target="_blank" rel="noopener noreferrer">Aragon's own comparison</a>; its <a href="https://www.aragon.ai/" target="_blank" rel="noopener noreferrer">site</a> says allow 60 minutes, plus 1-2 more hours when servers are busy</td>
       <td style="padding:10px 12px;">Complimentary redo or 100% refund if requested within 14 calendar days; downloading counts as using the product (<a href="https://www.aragon.ai/refund-policy" target="_blank" rel="noopener noreferrer">refund policy</a>)</td>
       <td style="padding:10px 12px;">Photos deleted or anonymized within 30 days of the earliest trigger: delivery, a deletion request, account closure or one year after upload. Its AI providers are barred from using face data to train generalized models (<a href="https://www.aragon.ai/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a>)</td>
       <td style="padding:10px 12px;">Terms allow personal or commercial use of outputs and assign Aragon's rights in them (if any) to you; outputs may resemble other users' (<a href="https://www.aragon.ai/terms" target="_blank" rel="noopener noreferrer">terms</a>)</td>
@@ -460,7 +460,7 @@ const post: BlogPost = {
 
 <h2 id="retouching">Already Have a Photo? Where Retouching Software Fits</h2>
 <p>Everything above generates a new headshot from selfies. If a photographer already shot your portrait, the next step is retouching, and that calls for a different kind of tool.</p>
-<p>Retouch4me sells AI retouching plugins for Photoshop, Lightroom, Capture One, and Affinity Photo. Its site says the plugins keep natural skin texture and preserve Photoshop layers, so you stay in control of the result. It is professional software, not a headshot generator.</p>
+<p><a href="/tools/retouch4me/">Retouch4me</a> sells AI retouching plugins for Photoshop, Lightroom, Capture One, and Affinity Photo. Its site says the plugins keep natural skin texture and preserve Photoshop layers, so you stay in control of the result. It is professional software, not a headshot generator.</p>
 <p>Its official pricing page lists yearly plans from $169 and one-time licenses, with the photo plugin collection from $145. It also lists two free plugins, and new sign-ups can try 20 images free in its online retouch tool.</p>
 <p>That makes it relevant mainly if you shoot or edit portraits for others, such as a photographer, a studio, or an in-house marketing team. For one personal LinkedIn photo, a generator like HeadshotPro is the simpler route.</p>
 <div style="margin:14px 0 24px;">

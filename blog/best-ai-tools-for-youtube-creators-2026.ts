@@ -75,6 +75,7 @@ const post: BlogPost = {
   ],
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <nav aria-label="Table of contents" style="background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.18);border-radius:10px;padding:18px 22px;margin:0 0 32px;">
   <p style="margin:0 0 10px;font-weight:700;font-size:15px;color:#0ea5e9;">Table of Contents</p>
   <ol style="margin:0;padding-left:20px;line-height:2.2;font-size:14px;">
@@ -96,10 +97,10 @@ const post: BlogPost = {
 </nav>
 
 <h2 id="quick-summary">What Are the Best AI Tools for YouTube Creators in 2026?</h2>
-<p>The best AI tools for YouTube creators in 2026 are three. Munch AI for repurposing intelligence that tells you what to publish next. ElevenLabs for voice cloning and narration realistic enough to replace a voice actor. And Opus.pro for an automated Shorts pipeline that turns one long video into 8–12 clips in minutes.</p>
+<p>The best AI tools for YouTube creators in 2026 are three. <a href="/tools/munch/">Munch AI</a> for repurposing intelligence that tells you what to publish next. <a href="/tools/elevenlabs/">ElevenLabs</a> for voice cloning and narration realistic enough to replace a voice actor. And Opus.pro for an automated Shorts pipeline that turns one long video into 8–12 clips in minutes.</p>
 <p>YouTube in 2026 rewards creators who can produce more, repurpose smarter, and optimize faster than their competitors. AI tools have made all three of those things possible without a production team.</p>
 <p>The tools with the highest ROI aren't the ones with the longest feature lists. They're the tools that directly compress the most time-consuming parts of the creator workflow: scriptwriting, narration, video editing, repurposing for Shorts, and channel analytics.</p>
-<p>This guide independently researches five tools: Munch AI, ElevenLabs, Opus.pro, InVideo AI, and VidIQ. We use publicly verified pricing, official documentation, and aggregated user reviews from G2, Product Hunt, and YouTube creator communities.</p>
+<p>This guide independently researches five tools: Munch AI, ElevenLabs, Opus.pro, <a href="/tools/invideo/">InVideo AI</a>, and VidIQ. We use publicly verified pricing, official documentation, and aggregated user reviews from G2, Product Hunt, and YouTube creator communities.</p>
 <p>This post takes a different angle from our general <a href="/blog/best-ai-tools-for-youtubers-2026/" style="color:#0ea5e9;font-weight:600;">AI tools for YouTubers</a> guide. These five tools specifically serve creators focused on channel growth, voice-forward content, and cross-platform repurposing intelligence.</p>
 
 <div style="background:rgba(14,165,233,.08);border-left:4px solid #0ea5e9;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
@@ -230,7 +231,7 @@ const post: BlogPost = {
 <p>The voice cloning feature is what really changes things for existing YouTube creators. Upload 1–3 minutes of your own recorded voice, and ElevenLabs generates a high-fidelity AI clone.</p>
 <p>You can then type any script and generate it in your own voice, scaling content output with no need to record every take yourself. Verified user reports from YouTube creator communities consistently describe the output as indistinguishable from the creator's authentic voice on scripted content.</p>
 <p>The practical workflow for YouTube creators is simple. Write your script in a document tool (Google Docs, Notion), paste it into ElevenLabs, generate narration in your cloned voice, and drop the audio into your video editor.</p>
-<p>The entire process takes 2–3 minutes per script, replacing 20–30 minutes of recording setup, recording, and retake management. Compare ElevenLabs and Murf AI side by side in our <a href="/compare/murf-ai-vs-elevenlabs/" style="color:#0ea5e9;font-weight:600;">Murf AI vs ElevenLabs comparison →</a></p>
+<p>The entire process takes 2–3 minutes per script, replacing 20–30 minutes of recording setup, recording, and retake management. Compare ElevenLabs and <a href="/tools/murf-ai/">Murf AI</a> side by side in our <a href="/compare/murf-ai-vs-elevenlabs/" style="color:#0ea5e9;font-weight:600;">Murf AI vs ElevenLabs comparison →</a></p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
   <li>✅ Industry-leading voice realism: natural prosody, authentic pacing</li>
   <li>✅ Voice cloning from minimal sample audio (1–3 minutes)</li>
@@ -248,7 +249,7 @@ const post: BlogPost = {
 
 <h2 id="opus-pro">#3 Opus.pro: Best Automated YouTube Shorts Pipeline</h2>
 <p><strong>Rating: 4.6/5 · Free: 60 min/month · Paid: from $19/month · <a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus.pro →</a></strong></p>
-<p>Opus.pro (OpusClip) is the fastest and most widely adopted AI tool for automating the YouTube Shorts production pipeline in 2026. The value proposition is straightforward. Every long-form video you publish becomes a pool of Shorts candidates with no extra editing work.</p>
+<p>Opus.pro (<a href="/tools/opus-clip/">OpusClip</a>) is the fastest and most widely adopted AI tool for automating the YouTube Shorts production pipeline in 2026. The value proposition is straightforward. Every long-form video you publish becomes a pool of Shorts candidates with no extra editing work.</p>
 <p>Upload your video, or paste a YouTube URL. Opus.pro's AI extracts the most engaging moments, reframes them to vertical 9:16 format, adds AI-generated animated captions, and scores each clip by predicted virality. It typically produces 8–12 clip candidates from a 30-minute video in under 10 minutes.</p>
 <p>The AI caption system is notably strong. Captions are word-by-word animated, styled for mobile viewing, and positioned intelligently to avoid covering faces or key visual elements. The AI also generates short-form-optimised titles and descriptions for each clip, which differ meaningfully from the source video's long-form metadata. These platform-native titles directly impact Shorts discoverability.</p>
 <p>Compared to Munch AI, Opus.pro is faster, simpler, and cheaper. It's the right choice for creators whose main goal is volume and Shorts growth rather than strategic cross-platform intelligence. Many professional creators use Opus.pro for the Shorts automation and Munch AI for the strategic layer, combining both in a single workflow.</p>
@@ -414,7 +415,7 @@ const post: BlogPost = {
 <h2 id="alternatives">Alternatives to Consider</h2>
 <p>Beyond the five tools above, two alternatives serve specific creator niches worth knowing:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
-  <li><strong>Descript</strong>
+  <li><strong><a href="/tools/descript/">Descript</a></strong>
 <p><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a></p>: the best AI tool for interview-format or talking-head YouTube creators who do their own editing. Descript's text-based editor lets you cut video by editing a transcript. Delete a sentence from the transcript, and Descript removes it from the video. Particularly strong for podcast-to-YouTube repurposing workflows. From $12/month.</li>
   <li><strong>Murf AI</strong>: a strong alternative to ElevenLabs for creators who prioritise voice selection variety and workflow polish over maximum voice realism. Murf offers 120+ voices across 20+ languages with a more structured studio interface. The voice output is slightly less realistic than ElevenLabs on close listening, but more than good enough for YouTube. Compare both options in our <a href="/compare/murf-ai-vs-elevenlabs/" style="color:#0ea5e9;font-weight:600;">Murf AI vs ElevenLabs breakdown →</a></li>
 </ul>
