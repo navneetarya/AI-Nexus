@@ -1,61 +1,61 @@
 query_id,query,cluster,category,engine,cited,competitor_domains,target_page_hint
-q1,"What are the best AI writing tools in 2026?",cluster-writing,writing,gemini,false,"",/category/writing
-q2,"Best AI writing tool for beginners?",cluster-writing,writing,gemini,false,"",/category/writing
-q3,"Which AI writing tool is worth paying for?",cluster-writing,writing,gemini,false,"",/category/writing
-q4,"Cheapest AI writing tool with a free plan?",cluster-writing,writing,gemini,false,"",/category/writing
-q5,"What AI writing tool should a small business use?",cluster-writing,writing,gemini,false,"",/category/writing
-q6,"Best AI writing tool for solopreneurs and freelancers?",cluster-writing,writing,gemini,false,"",/category/writing
-q7,"Is Writesonic worth it in 2026?",cluster-writing,writing,gemini,false,"",/tools/writesonic
-q8,"Writesonic pricing and features — is it good?",cluster-writing,writing,gemini,false,"",/tools/writesonic
-q9,"Is Rytr worth it in 2026?",cluster-writing,writing,gemini,false,"",/tools/rytr
-q10,"Rytr pricing and features — is it good?",cluster-writing,writing,gemini,false,"",/tools/rytr
-q11,"Writesonic vs Rytr — which is better?",cluster-writing,writing,gemini,false,"",/compare/writesonic-vs-rytr
-q12,"What are the best AI image tools in 2026?",cluster-image,image,gemini,false,"",/category/image
-q13,"Best AI image tool for beginners?",cluster-image,image,gemini,false,"",/category/image
-q14,"Which AI image tool is worth paying for?",cluster-image,image,gemini,false,"",/category/image
-q15,"Cheapest AI image tool with a free plan?",cluster-image,image,gemini,false,"",/category/image
-q16,"What AI image tool should a small business use?",cluster-image,image,gemini,false,"",/category/image
-q17,"Best AI image tool for solopreneurs and freelancers?",cluster-image,image,gemini,false,"",/category/image
-q18,"Is Leonardo.ai worth it in 2026?",cluster-image,image,gemini,false,"",/tools/leonardo-ai
-q19,"Leonardo.ai pricing and features — is it good?",cluster-image,image,gemini,false,"",/tools/leonardo-ai
-q20,"Is PhotoRoom worth it in 2026?",cluster-image,image,gemini,false,"",/tools/photoroom
-q21,"PhotoRoom pricing and features — is it good?",cluster-image,image,gemini,false,"",/tools/photoroom
-q22,"Leonardo.ai vs PhotoRoom — which is better?",cluster-image,image,gemini,false,"",/compare/leonardo-ai-vs-photoroom
-q23,"What are the best AI video tools in 2026?",cluster-video,video,gemini,false,"",/category/video
-q24,"Best AI video tool for beginners?",cluster-video,video,gemini,false,"",/category/video
-q25,"Which AI video tool is worth paying for?",cluster-video,video,gemini,false,"",/category/video
-q26,"Cheapest AI video tool with a free plan?",cluster-video,video,gemini,false,"",/category/video
-q27,"What AI video tool should a small business use?",cluster-video,video,gemini,false,"",/category/video
-q28,"Best AI video tool for solopreneurs and freelancers?",cluster-video,video,gemini,false,"",/category/video
-q29,"Is Pictory worth it in 2026?",cluster-video,video,gemini,false,"",/tools/pictory
-q30,"Pictory pricing and features — is it good?",cluster-video,video,gemini,false,"",/tools/pictory
-q31,"Is Opus Clip worth it in 2026?",cluster-video,video,gemini,false,"",/tools/opus-clip
-q32,"Opus Clip pricing and features — is it good?",cluster-video,video,gemini,false,"",/tools/opus-clip
-q33,"Pictory vs Opus Clip — which is better?",cluster-video,video,gemini,false,"",/compare/pictory-vs-opus-clip
-q34,"What are the best AI audio tools in 2026?",cluster-audio,audio,gemini,false,"",/category/audio
-q35,"Best AI audio tool for beginners?",cluster-audio,audio,gemini,false,"",/category/audio
-q36,"Which AI audio tool is worth paying for?",cluster-audio,audio,gemini,false,"",/category/audio
-q37,"Cheapest AI audio tool with a free plan?",cluster-audio,audio,gemini,false,"",/category/audio
-q38,"What AI audio tool should a small business use?",cluster-audio,audio,gemini,false,"",/category/audio
-q39,"Best AI audio tool for solopreneurs and freelancers?",cluster-audio,audio,gemini,false,"",/category/audio
-q40,"Is Murf AI worth it in 2026?",cluster-audio,audio,gemini,false,"",/tools/murf-ai
-q41,"Murf AI pricing and features — is it good?",cluster-audio,audio,gemini,false,"",/tools/murf-ai
-q42,"Is Podcastle worth it in 2026?",cluster-audio,audio,gemini,false,"",/tools/podcastle
-q43,"Podcastle pricing and features — is it good?",cluster-audio,audio,gemini,false,"",/tools/podcastle
-q44,"Murf AI vs Podcastle — which is better?",cluster-audio,audio,gemini,false,"",/compare/murf-ai-vs-podcastle
-q45,"What are the best AI design tools in 2026?",cluster-design,design,gemini,false,"",/category/design
-q46,"Best AI design tool for beginners?",cluster-design,design,gemini,false,"",/category/design
-q47,"Which AI design tool is worth paying for?",cluster-design,design,gemini,false,"",/category/design
-q48,"Cheapest AI design tool with a free plan?",cluster-design,design,gemini,false,"",/category/design
-q49,"What AI design tool should a small business use?",cluster-design,design,gemini,false,"",/category/design
-q50,"Best AI design tool for solopreneurs and freelancers?",cluster-design,design,gemini,false,"",/category/design
-q51,"Is Gamma worth it in 2026?",cluster-design,design,gemini,false,"",/tools/gamma
-q52,"Gamma pricing and features — is it good?",cluster-design,design,gemini,false,"",/tools/gamma
-q53,"Is Beautiful.ai worth it in 2026?",cluster-design,design,gemini,false,"",/tools/beautiful-ai
-q54,"Beautiful.ai pricing and features — is it good?",cluster-design,design,gemini,false,"",/tools/beautiful-ai
-q55,"Gamma vs Beautiful.ai — which is better?",cluster-design,design,gemini,false,"",/compare/gamma-vs-beautiful-ai
-q56,"What are the best AI marketing tools in 2026?",cluster-marketing,marketing,gemini,false,"",/category/marketing
-q57,"Best AI marketing tool for beginners?",cluster-marketing,marketing,gemini,false,"",/category/marketing
-q58,"Which AI marketing tool is worth paying for?",cluster-marketing,marketing,gemini,false,"",/category/marketing
-q59,"Cheapest AI marketing tool with a free plan?",cluster-marketing,marketing,gemini,false,"",/category/marketing
-q60,"What AI marketing tool should a small business use?",cluster-marketing,marketing,gemini,false,"",/category/marketing
+q1,"What are the best AI presentation makers in 2026?",blog-best-ai-presentation-tools-2026,Design,gemini,false,"",/blog/best-ai-presentation-tools-2026
+q2,"Gamma vs other AI presentation tools: which one should I use?",blog-best-ai-presentation-tools-2026,Design,gemini,false,"",/blog/best-ai-presentation-tools-2026
+q3,"Is there a free AI tool that makes PowerPoint slides from a prompt?",blog-best-ai-presentation-tools-2026,Design,gemini,false,"",/blog/best-ai-presentation-tools-2026
+q4,"Which AI presentation tool is best for a business pitch deck?",blog-best-ai-presentation-tools-2026,Design,gemini,false,"",/blog/best-ai-presentation-tools-2026
+q5,"What is the best AI headshot generator for LinkedIn?",blog-best-ai-headshot-tools-linkedin-2026,image,gemini,false,"",/blog/best-ai-headshot-tools-linkedin-2026
+q6,"Are AI headshots good enough for a professional LinkedIn profile?",blog-best-ai-headshot-tools-linkedin-2026,image,gemini,false,"",/blog/best-ai-headshot-tools-linkedin-2026
+q7,"HeadshotPro vs Aragon vs BetterPic: which AI headshot tool is best?",blog-best-ai-headshot-tools-linkedin-2026,image,gemini,false,"",/blog/best-ai-headshot-tools-linkedin-2026
+q8,"Which AI headshot generators have a refund policy?",blog-best-ai-headshot-tools-linkedin-2026,image,gemini,false,"",/blog/best-ai-headshot-tools-linkedin-2026
+q9,"What are the best AI agents for a small business in 2026?",blog-best-ai-agents-for-small-business-2026,Productivity,gemini,false,"",/blog/best-ai-agents-for-small-business-2026
+q10,"Which AI agent platform is easiest for a non-technical small business owner?",blog-best-ai-agents-for-small-business-2026,Productivity,gemini,false,"",/blog/best-ai-agents-for-small-business-2026
+q11,"Can a small business automate customer support and lead follow-up with AI agents?",blog-best-ai-agents-for-small-business-2026,Productivity,gemini,false,"",/blog/best-ai-agents-for-small-business-2026
+q12,"Relevance AI vs Lindy vs Gumloop: which is better?",blog-relevance-ai-vs-lindy-vs-gumloop-2026,Productivity,gemini,false,"",/blog/relevance-ai-vs-lindy-vs-gumloop-2026
+q13,"Lindy vs Gumloop for no-code AI workflows",blog-relevance-ai-vs-lindy-vs-gumloop-2026,Productivity,gemini,false,"",/blog/relevance-ai-vs-lindy-vs-gumloop-2026
+q14,"Is Relevance AI worth it for building AI agents without code?",blog-relevance-ai-vs-lindy-vs-gumloop-2026,Productivity,gemini,false,"",/blog/relevance-ai-vs-lindy-vs-gumloop-2026
+q15,"What is the best AI music generator in 2026?",blog-best-ai-music-generator-tools-2026,Audio,gemini,false,"",/blog/best-ai-music-generator-tools-2026
+q16,"Can I use Suno or Udio music commercially?",blog-best-ai-music-generator-tools-2026,Audio,gemini,false,"",/blog/best-ai-music-generator-tools-2026
+q17,"Which AI music generator is safe to use for YouTube videos?",blog-best-ai-music-generator-tools-2026,Audio,gemini,false,"",/blog/best-ai-music-generator-tools-2026
+q18,"What is the best AI voice generator in 2026?",blog-best-ai-voice-generators-2026,Audio,gemini,false,"",/blog/best-ai-voice-generators-2026
+q19,"ElevenLabs vs Murf: which AI voice generator should I choose?",blog-best-ai-voice-generators-2026,Audio,gemini,false,"",/blog/best-ai-voice-generators-2026
+q20,"Do free AI voice generators allow commercial use?",blog-best-ai-voice-generators-2026,Audio,gemini,false,"",/blog/best-ai-voice-generators-2026
+q21,"What AI tools should a solopreneur use in 2026?",blog-ai-tools-for-solopreneurs-2026,Productivity,gemini,false,"",/blog/ai-tools-for-solopreneurs-2026
+q22,"What are the Best AI Photo Retouching Tools?",blog-best-ai-photo-retouching-tools-2026,Image,gemini,false,"",/blog/best-ai-photo-retouching-tools-2026
+q23,"What is the Lovable vs Wegic vs Readdy vs CREAO?",blog-lovable-vs-wegic-vs-readdy-vs-creao-2026,Design,gemini,false,"",/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026
+q24,"What is the Domain Renewal Prices Compared?",blog-domain-renewal-prices-compared-2026,Design,gemini,false,"",/blog/domain-renewal-prices-compared-2026
+q25,"What is the How to Launch an AI-Built Website in?",blog-launch-an-ai-built-website-2026,Design,gemini,false,"",/blog/launch-an-ai-built-website-2026
+q26,"What is the AI Voice Cloning Pricing Compared?",blog-ai-voice-cloning-pricing-comparison-2026,Audio,gemini,false,"",/blog/ai-voice-cloning-pricing-comparison-2026
+q27,"What are the Best AI Voice Cloning for Podcasts?",blog-best-ai-voice-cloning-for-podcasts-2026,Audio,gemini,false,"",/blog/best-ai-voice-cloning-for-podcasts-2026
+q28,"What are the Best AI Tool Lifetime Deals on AppSumo in 2026 — How to Actually Save Money?",blog-best-ai-tool-lifetime-deals-appsumo-2026,Productivity,gemini,false,"",/blog/best-ai-tool-lifetime-deals-appsumo-2026
+q29,"What are the Best Gamma AI Alternatives 2026 — Beautiful.ai vs Canva AI vs NotebookLM vs Pi?",blog-best-gamma-alternatives-2026,Design,gemini,false,"",/blog/best-gamma-alternatives-2026
+q30,"What are the Best AI Spreadsheet Tools?",blog-best-ai-spreadsheet-tools-2026,Productivity,gemini,false,"",/blog/best-ai-spreadsheet-tools-2026
+q31,"What are the Best AI Transcription Software?",blog-best-ai-transcription-software-2026,Audio,gemini,false,"",/blog/best-ai-transcription-software-2026
+q32,"What are the Best AI Dubbing Tools?",blog-best-ai-dubbing-tools-2026,Audio,gemini,false,"",/blog/best-ai-dubbing-tools-2026
+q33,"What is the Murf AI Pricing?",blog-murf-ai-pricing-2026,Audio,gemini,false,"",/blog/murf-ai-pricing-2026
+q34,"What is the How to Beat ATS Resume Screening in 2026 (What Actually Works)?",blog-how-to-beat-ats-resume-screening-2026,Productivity,gemini,false,"",/blog/how-to-beat-ats-resume-screening-2026
+q35,"What is the Can I use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)?",blog-elevenlabs-youtube-commercial-rights-2026,Audio,gemini,false,"",/blog/elevenlabs-youtube-commercial-rights-2026
+q36,"What is the ElevenLabs Pricing?",blog-elevenlabs-pricing-character-credits-2026,Audio,gemini,false,"",/blog/elevenlabs-pricing-character-credits-2026
+q37,"What is the Gamma AI Review?",blog-gamma-ai-review-2026,Design,gemini,false,"",/blog/gamma-ai-review-2026
+q38,"What are the Best AI Voice Generators for Voiceovers?",blog-best-ai-voice-generators-for-voiceovers-2026,Audio,gemini,false,"",/blog/best-ai-voice-generators-for-voiceovers-2026
+q39,"What are the Best AI Voice Generators for Podcasts?",blog-best-ai-voice-generators-for-podcasts-2026,Audio,gemini,false,"",/blog/best-ai-voice-generators-for-podcasts-2026
+q40,"What are the Best AI Voice Cloning Tools?",blog-best-ai-voice-cloning-tools-2026,Audio,gemini,false,"",/blog/best-ai-voice-cloning-tools-2026
+q41,"What are the Best AI Voice for Faceless YouTube Channels?",blog-best-ai-voice-for-faceless-youtube-channels,Audio,gemini,false,"",/blog/best-ai-voice-for-faceless-youtube-channels
+q42,"What are the Best AI Voice Generators for YouTube?",blog-best-ai-voice-generators-for-youtube-2026,Audio,gemini,false,"",/blog/best-ai-voice-generators-for-youtube-2026
+q43,"What is the Murf AI Alternatives?",blog-murf-ai-alternatives-2026,Audio,gemini,false,"",/blog/murf-ai-alternatives-2026
+q44,"What is the ElevenLabs Alternatives?",blog-elevenlabs-alternatives-2026,Audio,gemini,false,"",/blog/elevenlabs-alternatives-2026
+q45,"What are the Best Text-to-Speech Software?",blog-best-text-to-speech-software-2026,Audio,gemini,false,"",/blog/best-text-to-speech-software-2026
+q46,"What are the Best AI Voice Generators?",blog-best-ai-voice-generators-2026,Audio,gemini,false,"",/blog/best-ai-voice-generators-2026
+q47,"What are the Best AI Interview Prep Tools?",blog-best-ai-interview-prep-tools-2026,Productivity,gemini,false,"",/blog/best-ai-interview-prep-tools-2026
+q48,"What are the Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)?",blog-best-ai-seo-content-optimization-tools-2026,Marketing,gemini,false,"",/blog/best-ai-seo-content-optimization-tools-2026
+q49,"What are the Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)?",blog-best-ai-music-generator-tools-2026,Audio,gemini,false,"",/blog/best-ai-music-generator-tools-2026
+q50,"What are the Best AI Website Builders?",blog-best-ai-website-builders-2026,Design,gemini,false,"",/blog/best-ai-website-builders-2026
+q51,"What are the Best AI Sales Tools for Founders 2026 (Apollo vs Clay vs Instantly vs Smartlead)?",blog-best-ai-sales-tools-for-founders-2026,Marketing,gemini,false,"",/blog/best-ai-sales-tools-for-founders-2026
+q52,"What are the Best AI Receptionist for Small Business in 2026 (Pricing & Feature Comparison)?",blog-best-ai-receptionist-small-business-2026,Productivity,gemini,false,"",/blog/best-ai-receptionist-small-business-2026
+q53,"What are the Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration?",blog-best-ai-photo-upscaler-tools-2026,Image,gemini,false,"",/blog/best-ai-photo-upscaler-tools-2026
+q54,"What are the Best AI Ad Creative Generator Tools 2026 (Tested for Solo Founders & Small Teams)?",blog-best-ai-ad-creative-generator-tools-2026,Marketing,gemini,false,"",/blog/best-ai-ad-creative-generator-tools-2026
+q55,"What are the Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)?",blog-best-nano-banana-pro-alternatives-2026,Image,gemini,false,"",/blog/best-nano-banana-pro-alternatives-2026
+q56,"What are the Best AI Voice Agent Platforms for Small Business in 2026 (2026 Pricing & Feature Comparison)?",blog-best-ai-voice-agent-small-business-2026,Productivity,gemini,false,"",/blog/best-ai-voice-agent-small-business-2026
+q57,"What is the What Is Emergent AI? Emergent Abilities Explained (2026 Guide)?",blog-emergent-ai-explained-2026,Productivity,gemini,false,"",/blog/emergent-ai-explained-2026
+q58,"What is the ChatGPT Atlas vs Perplexity Comet vs Dia (2026)?",blog-chatgpt-atlas-vs-perplexity-comet-vs-dia-2026,Productivity,gemini,false,"",/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026
+q59,"What are the Best AI Resume Builder Tools?",blog-best-ai-resume-builder-tools-2026,Productivity,gemini,false,"",/blog/best-ai-resume-builder-tools-2026
+q60,"What are the Best AI Voice Dictation Tools?",blog-best-ai-voice-dictation-tools-2026,Productivity,gemini,false,"",/blog/best-ai-voice-dictation-tools-2026
