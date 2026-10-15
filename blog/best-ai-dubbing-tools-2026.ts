@@ -10,7 +10,7 @@
 // Research note: ElevenLabs Dubbing Studio pricing/language count reused from elevenlabs-pricing-character-credits-2026.ts
 // and elevenlabs-alternatives-2026.ts (verified Sep 2026, 29 languages, $6/mo Starter). HeyGen, Rask AI, and
 // Dubverse pricing verified via live web search (Sep 2026), no prior verified data existed on this site.
-// Synthesia pricing reused from murf-ai-alternatives-2026.ts ($29/mo Starter), verified the same week.
+// Synthesia pricing reused from murf-ai-alternatives-2026.ts ($22/mo Starter), verified the same week.
 import { BlogPost } from './types';
 import { Category } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
@@ -87,7 +87,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">High-volume localization</td>
         <td style="padding:10px 14px">Partial</td>
         <td style="padding:10px 14px">130+</td>
-        <td style="padding:10px 14px">$60/month</td>
+        <td style="padding:10px 14px">$22/month</td>
         <td style="padding:10px 14px">Limited trial</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -95,7 +95,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">Corporate / L&D avatar video</td>
         <td style="padding:10px 14px">Avatar-based</td>
         <td style="padding:10px 14px">29+</td>
-        <td style="padding:10px 14px">$29/month</td>
+        <td style="padding:10px 14px">$22/month</td>
         <td style="padding:10px 14px">Yes, 10 min/month</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -161,7 +161,7 @@ const post: BlogPost = {
 
 <p>Rask AI is built for people dubbing a lot of content across a lot of languages, not a single video occasionally. It covers 130+ languages with multi-speaker detection, which matters for interviews, panel content, or any video with more than one voice that needs to stay distinguishable after translation.</p>
 
-<p>Pricing starts around $60/month, noticeably higher than ElevenLabs' entry tier. That's the honest reason it's not the default pick for a solo creator testing the waters. Where it earns that price is throughput: batch-processing a backlog of videos across many target languages in one workflow, instead of dubbing one file at a time by hand.</p>
+<p>Pricing starts around $22/month, noticeably higher than ElevenLabs' entry tier. That's the honest reason it's not the default pick for a solo creator testing the waters. Where it earns that price is throughput: batch-processing a backlog of videos across many target languages in one workflow, instead of dubbing one file at a time by hand.</p>
 
 <p><strong>Best for:</strong> teams and agencies localizing a large existing video library across many languages at once, where per-video manual setup in a lighter tool would eat too much time. No affiliate program exists for Rask AI on this site.</p>
 
@@ -175,7 +175,7 @@ const post: BlogPost = {
 
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:8px;padding:16px 20px;margin:20px 0;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">⚠ Pricing Note</strong>
-  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">Synthesia's Starter plan runs roughly $29/month, well above ElevenLabs and Dubverse. Confirm the current rate on Synthesia's own pricing page. Like most tools in this category, the headline number often assumes annual billing.</p>
+  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">Synthesia's Starter plan runs roughly $22/month, well above ElevenLabs and Dubverse. Confirm the current rate on Synthesia's own pricing page. Like most tools in this category, the headline number often assumes annual billing.</p>
 </div>
 
 <p>The free plan gives 10 minutes of watermarked video a month, enough to judge avatar quality before committing. <strong>Best for:</strong> L&D and HR teams that want one script turned into localized, presenter-led training video across regions, not a straight dub of existing footage. Synthesia has no affiliate program on this site.</p>
@@ -214,7 +214,7 @@ const post: BlogPost = {
 
 <p>On ElevenLabs, that fits comfortably inside the $22/month Creator plan's roughly 121,000-credit allowance, with room to spare for retakes and transcript edits.</p>
 
-<p>On HeyGen, the same 80 minutes of lip-synced video runs at roughly 5 credits per minute. That burns through a starter allowance fast. Most creators at this volume land on a mid-tier plan closer to $50 to $60 a month rather than the $24 entry price.</p>
+<p>On HeyGen, the same 80 minutes of lip-synced video runs at roughly 5 credits per minute. That burns through a starter allowance fast. Most creators at this volume land on a mid-tier plan closer to $50 to $22 a month rather than the $24 entry price.</p>
 
 <p>The lesson holds across the whole category. An entry-tier price answers whether you can try a tool, not what you'll actually pay once you're publishing on a real schedule. Budget against your real monthly minutes of finished output, not the number on the pricing page's first card.</p>
 

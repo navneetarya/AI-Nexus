@@ -62,7 +62,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px;font-weight:500">Murf AI</td>
         <td style="padding:10px 14px">20 languages</td>
         <td style="padding:10px 14px">Yes, limited</td>
-        <td style="padding:10px 14px">$19/month</td>
+        <td style="padding:10px 14px">$22/month</td>
         <td style="padding:10px 14px">⭐ 4.5/5</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -118,7 +118,7 @@ const post: BlogPost = {
 
 <img src="https://images.unsplash.com/photo-1714079761488-e0c9b9ac4138?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A voiceover artist reviewing a commercial script at a laptop, recording with Murf AI" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
-<p>Its voice library spans 120+ voices across 20 languages. The free plan includes 10 minutes of voiceover monthly, and paid plans start at $19/month.</p>
+<p>Its voice library spans 120+ voices across 20 languages. The free plan includes 10 minutes of voiceover monthly, and paid plans start at $22/month.</p>
 
 <p>Murf does offer an API, but it's built for batch voiceover generation rather than live use. Trustpilot rates it 4.4 stars from 428 reviews, and G2 gives it 4.6 from 321 reviews.</p>
 
@@ -201,7 +201,7 @@ const post: BlogPost = {
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Starting paid price</td>
         <td style="padding:10px 14px">$6/month</td>
-        <td style="padding:10px 14px">$19/month</td>
+        <td style="padding:10px 14px">$22/month</td>
         <td style="padding:10px 14px">$11.99/month</td>
         <td style="padding:10px 14px">$12/month</td>
       </tr>
@@ -215,7 +215,7 @@ const post: BlogPost = {
 
 <p>Free plans work fine for testing. ElevenLabs' 10,000 free characters cover roughly 10 minutes of narration monthly. Once you're producing content weekly, the real cost comparison shifts to per-character and per-minute pricing.</p>
 
-<p>ElevenLabs' $6/month Starter tier and Murf's $19/month plan both stay reasonable for individual creators.</p>
+<p>ElevenLabs' $6/month Starter tier and Murf's $22/month plan both stay reasonable for individual creators.</p>
 
 <p>API-heavy use, like a voice feature inside your own product, scales in a different way, so check against ElevenLabs' usage-based API pricing directly before committing. India-based users can pay with standard cards and UPI on all four tools, billed in USD with no separate regional tier.</p>
 
@@ -232,7 +232,7 @@ const post: BlogPost = {
 
 <p>If you need software in the literal sense, an API you can build on, ElevenLabs is the clear pick. The language coverage is the widest available, the documentation is truly developer-ready, and the $6/month entry price makes testing low-risk.</p>
 
-<p>If your actual need is finished video voiceovers rather than an API, Murf AI's $19/month plan earns its price through the script-to-video sync alone. And if text-to-speech is really just one feature inside a bigger recording or editing job, Podcastle and Descript are the better fit. Both do more for you than a standalone TTS tool ever could.</p>
+<p>If your actual need is finished video voiceovers rather than an API, Murf AI's $22/month plan earns its price through the script-to-video sync alone. And if text-to-speech is really just one feature inside a bigger recording or editing job, Podcastle and Descript are the better fit. Both do more for you than a standalone TTS tool ever could.</p>
 <div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
   <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Descript.</strong></p>
   <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript →</a>

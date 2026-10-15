@@ -72,7 +72,7 @@ const post: BlogPost = {
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Play.ht</td>
         <td style="padding:10px 14px">Voice library size & budget</td>
-        <td style="padding:10px 14px">~$31/month</td>
+        <td style="padding:10px 14px">~$22/month</td>
         <td style="padding:10px 14px">Yes</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -137,7 +137,7 @@ const post: BlogPost = {
 
 <p>Play.ht's pitch is volume. It offers one of the largest voice libraries in this category, spanning dozens of languages and accents, with a genuinely usable free plan to test before paying.</p>
 
-<p>Paid plans start around $31/month, cheaper than ElevenLabs' Creator tier for similar usage, though voice realism doesn't quite match ElevenLabs at the top end. It integrates with common publishing and avatar-video tools, which suits creators who make lots of content in many formats.</p>
+<p>Paid plans start around $22/month, cheaper than ElevenLabs' Creator tier for similar usage, though voice realism doesn't quite match ElevenLabs at the top end. It integrates with common publishing and avatar-video tools, which suits creators who make lots of content in many formats.</p>
 
 <p><strong>Switch to Play.ht if:</strong> you need a wide range of accents and languages on a tighter budget, and top-tier emotional realism isn't the priority.</p>
 
@@ -202,7 +202,7 @@ const post: BlogPost = {
         <td style="padding:10px 14px">$19/month</td>
         <td style="padding:10px 14px">~$6/month</td>
         <td style="padding:10px 14px">Pay-per-use</td>
-        <td style="padding:10px 14px">~$31/month</td>
+        <td style="padding:10px 14px">~$22/month</td>
       </tr>
     </tbody>
   </table>

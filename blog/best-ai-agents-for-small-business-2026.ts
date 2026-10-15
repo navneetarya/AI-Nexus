@@ -148,7 +148,7 @@ const post: BlogPost = {
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1758691737124-05c5bffe46f0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business team collaborating around a laptop while evaluating an AI agent platform" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <p>Traditional business software runs fixed commands. A button press triggers a function and returns a result. Every decision needs a human. AI agents work differently. They interpret a <em>goal</em>. Then they plan a sequence of steps, take actions across multiple tools, and adapt based on the results.</p>
 
-<p>The practical difference for a small business is simple. A traditional CRM needs a human to log a call. That same person also updates the deal stage and drafts a follow-up email.</p>
+<p>The practical difference for a small business is simple. A traditional CRM needs a human to log a call. That same person also updates the deal stage and drafts a follow-up email.</p><h3>Section guide</h3><p>This break separates the setup from the detailed comparison.</p>
 <p>An AI agent connected to your CRM, email, and calendar can do all three on its own. It starts automatically when the call ends. No one needs to open a browser tab.</p>
 <p>This difference matters because it changes what you're using. AI agent platforms are not just faster software. They are systems that act on their own within set limits. That brings new speed gains. But it also puts new setup work on the business owner, who must set the rules.</p>
 

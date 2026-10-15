@@ -642,7 +642,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "category": "Coding",
     "readTime": "13 min read",
     "ogImage": "https://ainexustools.online/og-tool-review.webp",
-    "excerpt": "The strongest AI coding agents in 2026 split by autonomy level: Devin (Cognition AI) for fully autonomous multi-session engineering tasks (free plan, Pro $20/month, Max $200/month), Claude Code for complex codebase reasoning in the terminal at $20/month, and SWE-Agent for open-source benchmark-driven workflows. Cursor Agent sits in the middle — IDE-native agentic loops at $20/month that most working developers find the most practical entry point. This report covers 6 agents on SWE-bench performance, real-world autonomy, pricing, and which workflow each is actually built for."
+    "excerpt": "The strongest AI coding agents in 2026 split by autonomy level: Devin (Cognition AI) for fully autonomous multi-session engineering tasks (free plan, Pro $30/month, Max $300/month), Claude Code for complex codebase reasoning in the terminal at $30/month, and SWE-Agent for open-source benchmark-driven workflows. Cursor Agent sits in the middle — IDE-native agentic loops at $30/month that most working developers find the most practical entry point. This report covers 6 agents on SWE-bench performance, real-world autonomy, pricing, and which workflow each is actually built for."
   },
   {
     "slug": "best-ai-agents-customer-service-2026",
@@ -790,15 +790,15 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     "slug": "cursor-ai-review-2026",
     "title": "Cursor AI Review 2026: Is It the Best AI Code Editor?",
-    "seoTitle": "Cursor AI Review 2026: Still Worth $20/mo?",
-    "metaDescription": "Cursor AI review for 2026: pricing, free plan, Tab completion, Composer, and Agent mode compared against GitHub Copilot. Is it worth $20/month?",
+    "seoTitle": "Cursor AI Review 2026: Still Worth $10/mo?",
+    "metaDescription": "Cursor AI review for 2026: pricing, free plan, Tab completion, Composer, and Agent mode compared against GitHub Copilot. Is it worth $10/month?",
     "datePublished": "2026-05-25",
     "dateModified": "2026-09-29",
     "author": "Navneet Arya",
     "category": "Coding",
     "readTime": "10 min read",
     "ogImage": "https://ainexustools.online/og/blog/cursor-ai-review-2026.webp",
-    "excerpt": "Cursor is the most-discussed AI code editor of 2026. Search interest for \"cursor ai review\" has climbed steadily since its viral launch. Built on VS Code with deep model integration, it promises to replace GitHub Copilot for serious developers. This review covers pricing, the free vs Pro difference, Tab completion, Composer, and Agent mode, with an honest verdict on whether it is worth the $20/month."
+    "excerpt": "Cursor is the most-discussed AI code editor of 2026. Search interest for \"cursor ai review\" has climbed steadily since its viral launch. Built on VS Code with deep model integration, it promises to replace GitHub Copilot for serious developers. This review covers pricing, the free vs Pro difference, Tab completion, Composer, and Agent mode, with an honest verdict on whether it is worth the $10/month."
   },
   {
     "slug": "best-ai-headshot-tools-linkedin-2026",

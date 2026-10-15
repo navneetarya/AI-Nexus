@@ -84,6 +84,8 @@ const BLOG_RELATED_POSTS: Record<string, string[]> = {
   'best-ai-tools-2026':                         ['ai-voice-cloning-pricing-comparison-2026', 'best-ai-ad-creative-generator-tools-2026', 'best-ai-dubbing-tools-2026'],
   'best-ai-video-generators-2026':              ['best-ai-meeting-tools-2026', 'best-ai-photo-retouching-tools-2026', 'best-ai-tools-for-youtubers-2026'],
   'best-ai-tools-for-developers-2026':          ['best-ai-tools-for-automation-engineers-2026', 'best-ai-tools-for-social-media-2026', 'best-ai-transcription-software-2026'],
+  'best-ai-receptionist-small-business-2026':   MONEY_PAGE_CROSS_LINKS,
+  'best-ai-spreadsheet-tools-2026':             MONEY_PAGE_CROSS_LINKS,
   'best-no-code-ai-automation-tools-2026':      MONEY_PAGE_CROSS_LINKS,
   'ai-agents-vs-ai-automation-difference-2026': MONEY_PAGE_CROSS_LINKS,
   'best-ai-agents-for-small-business-2026':     MONEY_PAGE_CROSS_LINKS,

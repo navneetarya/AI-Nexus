@@ -1,5 +1,5 @@
 // blog/best-ai-voice-for-faceless-youtube-channels.ts
-// Target keyword: "ai voice generator for faceless youtube" — use-case post 6 of 9 in the
+// Target keyword: "faceless youtube narration workflow" — use-case post 6 of 9 in the
 //   AI Voice/TTS cluster
 // Secondary keywords: "faceless youtube channel voice", "ai narration faceless channel",
 //   "best voice for faceless youtube 2026"

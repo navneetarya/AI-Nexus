@@ -43,7 +43,7 @@ const post: BlogPost = {
     },
     {
       q: 'How much does Rytr\'s free plan give you per month?',
-      a: 'Rytr\'s free plan gives you 10,000 characters per month — roughly 1,500–2,000 words of generated content. This covers approximately 3–5 short blog introductions, 8–10 product descriptions, or a small batch of social media captions per month. The $9/month Saver plan removes the character limit entirely if you need more volume.',
+      a: 'Rytr\'s free plan gives you 10,000 characters per month — roughly 1,500–2,000 words of generated content. This covers approximately 3–5 short blog introductions, 8–10 product descriptions, or a small batch of social media captions per month. The $7.5/month Saver plan removes the character limit entirely if you need more volume.',
     },
     {
       q: 'Can I use ChatGPT as a free AI writing tool?',
@@ -164,7 +164,7 @@ const post: BlogPost = {
 </p>
 <h2>#2 Rytr: Best Free AI Writing Tool for Content Generation</h2>
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #2 Rytr: Best Free AI Writing Tool for Content Generation" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p><strong>Free plan: 10,000 characters/month · No credit card required · Paid: $9/month</strong></p>
+<p><strong>Free plan: 10,000 characters/month · No credit card required · Paid: $7.5/month</strong></p>
 <p>Rytr is the best free option if you need to <em>generate</em> new content rather than improve existing writing. The 10,000 free characters per month is roughly 1,500–2,000 words. That covers a small but real volume: 3–4 blog introductions, a week of social media captions, or an email sequence draft.</p>
 <p>More importantly, Rytr's 40+ use-case templates (blog section writing, product descriptions, ad copy, email subject lines) make the generation process faster and more structured than a blank chatbot prompt.</p>
 <p><strong>What the free plan includes:</strong></p>
@@ -176,8 +176,8 @@ const post: BlogPost = {
   <li>Basic document editor</li>
 </ul>
 <p><strong>The free plan limit in practice:</strong> 10,000 characters sounds like a lot. It isn't. A single 800-word blog post uses roughly 5,000 characters. Power users will exhaust the free tier in a few sessions. But for writers who need to generate content occasionally rather than daily, the free plan is genuinely functional.</p>
-<p><strong>Who the free plan is best for:</strong> Freelancers and students who need to break writer's block and generate occasional drafts but aren't ready to commit to a monthly subscription. Also useful as a trial before committing to the $9/month Saver plan.</p>
-<p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review: free plan limits, templates, and whether $9/month is worth it</a></p>
+<p><strong>Who the free plan is best for:</strong> Freelancers and students who need to break writer's block and generate occasional drafts but aren't ready to commit to a monthly subscription. Also useful as a trial before committing to the $7.5/month Saver plan.</p>
+<p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review: free plan limits, templates, and whether $7.5/month is worth it</a></p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
@@ -259,7 +259,7 @@ const post: BlogPost = {
 <p>The free plans above work indefinitely for occasional or light use. Upgrade when:</p>
 <ul style="margin:8px 0 12px 24px;line-height:2.2;">
   <li><strong>Grammarly → Premium ($12/month):</strong> When you want tone detection and full-sentence rewrites, not just error correction</li>
-  <li><strong>Rytr → $9/month:</strong> When you exhaust 10,000 characters in the first week of the month</li>
+  <li><strong>Rytr → $7.5/month:</strong> When you exhaust 10,000 characters in the first week of the month</li>
   <li><strong>QuillBot → $9.95/month:</strong> When the 125-word limit makes paraphrasing long documents too slow</li>
   <li><strong>Writesonic → from $79/month (annual billing):</strong> When you need Article Writer 6.0 for long-form SEO blog posts</li>
 </ul>
