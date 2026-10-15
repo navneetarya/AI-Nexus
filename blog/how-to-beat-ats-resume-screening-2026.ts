@@ -77,7 +77,7 @@ const post: BlogPost = {
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 
-<img src="https://images.unsplash.com/photo-1669490893279-4589b3b1cf4e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A home desk setup used for a focused job application session" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1669490893279-4589b3b1cf4e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A home desk setup used for a focused job application session" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <blockquote style="border-left:3px solid #0D9488;padding-left:16px;margin:24px 0;font-style:italic;color:#444;">Most ATS advice online has not caught up with 2026 systems. It still treats ATS like a dumb keyword scanner from 2015 — stuff the posting's exact words in and you're through. Modern ATS reads for context and skill clusters, not just word-matching. So the real fix is closer to "write a genuinely relevant resume in a parseable format" than "trick the robot."<br/><span style="font-style:normal;font-size:13px;color:#888;">— Navneet Arya, AI Nexus</span></blockquote>
 

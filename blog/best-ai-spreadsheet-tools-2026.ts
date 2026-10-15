@@ -106,7 +106,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Best AI Spreadsheet Tools 2026: Three Jobs Hiding Under One Search Term</h2>
-<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop displaying a spreadsheet full of data, representing AI spreadsheet tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop displaying a spreadsheet full of data, representing AI spreadsheet tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <p>This site publishes independent tool research. "AI spreadsheet tool" is a broad, slightly misleading search term in 2026, because it covers at least three unrelated jobs, and most people searching it only need one.</p>
 <ol style="margin:12px 0 24px;padding-left:22px;line-height:1.9;"><li>Choose extraction for PDFs, receipts, and unstructured files.</li><li>Choose cell formulas for classification or generation across rows.</li><li>Choose live connections when the problem is stale CRM or database data.</li></ol>
 <p>Someone drowning in PDF invoices and receipts they're manually retyping needs an extraction tool. Someone with a spreadsheet full of customer reviews they want tagged and classified needs a row-by-row AI function. Someone tired of exporting a CSV from Salesforce every Monday morning needs a live data connection, not AI at all in the traditional sense.</p>

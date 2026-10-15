@@ -81,7 +81,7 @@ const post: BlogPost = {
 <p>Indian freelancers on Fiverr, Upwork, and local platforms like Internshala or Truelancer face a different reality. USD pricing eats into margins, some platforms won't take Indian cards, and briefs often want regional language awareness.</p>
 <p>This guide was researched just for that context. Every tool below was checked for India-specific pricing and free-tier access without a credit card. We also looked at real usage patterns in Indian freelancer communities on Reddit (r/india, r/freelanceIndia) and Quora India.</p>
 
-<img src="https://images.unsplash.com/photo-1621293954908-907159247fc8?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A freelancer working from a home office setup" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1621293954908-907159247fc8?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A freelancer working from a home office setup" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>Quick Comparison: India-Ready AI Tools for Freelancers</h2>
 <div style="overflow-x:auto;margin:24px 0;">

@@ -40,7 +40,7 @@ const post: BlogPost = {
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
-<img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio mixing console dials, representing AI voice cloning pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio mixing console dials, representing AI voice cloning pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <p>"How much does it actually cost to clone a voice?" has a different answer depending on which tool you ask. ElevenLabs sells cloning as a monthly-plan feature. Resemble AI charges per second of audio generated. <a href="/tools/descript/">Descript</a> bundles it into an editing subscription. And Murf, despite selling voiceovers to everyone, doesn't sell cloning to almost anyone. Here's what each one actually charges.</p>
 

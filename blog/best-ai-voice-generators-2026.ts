@@ -27,7 +27,7 @@ const post: BlogPost = {
 
   content: `
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
-<img src="https://images.unsplash.com/photo-1567596296091-0a257a028e72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone set up for podcast or voiceover recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1567596296091-0a257a028e72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone set up for podcast or voiceover recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <p>Every "best AI voice generator" list published in the last year recommends the same handful of names. Few of them tell you which one actually fits your workflow, not just which one sounds the most human. The right pick depends on whether you need narration, cloned voices, or real-time conversational speech.</p>
 

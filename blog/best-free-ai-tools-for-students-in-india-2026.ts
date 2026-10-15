@@ -94,7 +94,7 @@ const post: BlogPost = {
 </div>
 
 <h2>3 Steps to Set Up Your Free AI Stack Today</h2>
-<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3 Steps to Set Up Your Free AI Stack Today" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 3 Steps to Set Up Your Free AI Stack Today" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <ol style="margin:12px 0 24px 24px;line-height:2.2;font-size:14px;">
   <li><strong>Install Grammarly first.</strong> It takes under 2 minutes and improves every email, assignment, or form you fill in from that point on, at zero cost.</li>
   <li><strong>Swap Perplexity in for Google on your next research task.</strong> You'll get cited answers instead of a list of links to sort through yourself.</li>

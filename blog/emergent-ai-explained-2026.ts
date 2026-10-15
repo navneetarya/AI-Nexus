@@ -62,7 +62,7 @@ const post: BlogPost = {
 <h2>TL;DR — emergent AI in 30 seconds</h2>
 <p>Emergent AI refers to capabilities that appear suddenly in large models once they cross a certain scale. They aren't directly programmed or trained in as a distinct skill. A smaller version of the same model architecture simply can't do the task at all.</p>
 <p>A larger one can, often well. Researchers are still split on whether this is genuine emergence or a side effect of how we measure performance.</p>
-<img src="/images/blog/emergent-ai-explained-2026/emergent-ai-at-a-glance.svg" alt="Emergent AI at a glance summary card" width="640" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:14px 0 20px;border-radius:12px;" />
+<img fetchpriority="high" src="/images/blog/emergent-ai-explained-2026/emergent-ai-at-a-glance.svg" alt="Emergent AI at a glance summary card" width="640" style="width:100%;height:auto;max-width:640px;margin:14px 0 20px;border-radius:12px;" />
 <p>In 2026, the more practical version of this idea has moved into AI agents. Two or more agents working together can develop coordination behavior neither one has individually. If you're evaluating <a href="/best-ai-productivity-tools/">AI productivity tools</a> for your own workflow, this concept explains a lot about why one tool suddenly leapfrogs another after an update.</p>
 
 <div style="margin:14px 0 24px;">

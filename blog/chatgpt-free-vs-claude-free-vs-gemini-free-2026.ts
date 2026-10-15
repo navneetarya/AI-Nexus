@@ -81,7 +81,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Which Free AI Plan Actually Works for Freelancers in 2026?</h2>
-<img src="https://images.unsplash.com/photo-1675865254433-6ba341f0f00b?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="The ChatGPT interface showing example prompts and capabilities on a dark screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1675865254433-6ba341f0f00b?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="The ChatGPT interface showing example prompts and capabilities on a dark screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <p>No single free plan wins every task. Each one caps something different.</p>
 <p>ChatGPT Free is the most versatile. Claude Free is built around writing and documents. Gemini Free bundles the most extra tools, but runs Google's lightweight model.</p>
 <p>Most freelancers get the most out of using two or three together. If you're weighing the paid tiers behind these plans, see our <a href="/blog/gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026/">GPT-5.5 vs Claude Opus 4.8 vs Grok 4 comparison</a>.</p>

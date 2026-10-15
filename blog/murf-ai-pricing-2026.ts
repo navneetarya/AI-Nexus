@@ -46,7 +46,7 @@ const post: BlogPost = {
   myTake: " The figures were cross-checked against several independent 2026 pricing breakdowns rather than relying on a single source, since Murf's own pricing page wasn't reachable during this research pass and third-party numbers occasionally drift. If you're deciding between Creator and Business, the real question isn't the monthly fee. It's whether 2 hours a month of generation time actually covers your production schedule once you count re-recording a line to fix a pronunciation, because that eats into the same hour budget.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio mixing console dials, representing AI voiceover pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio mixing console dials, representing AI voiceover pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>

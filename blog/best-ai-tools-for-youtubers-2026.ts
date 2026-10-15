@@ -96,7 +96,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://invideo.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit InVideo AI →</a>
 </div>
-<img src="https://images.unsplash.com/photo-1531651008558-ed1740375b39?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone beside a pop filter for voiceover recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1531651008558-ed1740375b39?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone beside a pop filter for voiceover recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>The best AI tools for YouTubers in 2026 are InVideo AI for faceless video creation and Opus Clip for repurposing long videos into Shorts. Also worth adding: Descript for editing by editing the transcript, Murf AI for AI voiceover, and VidIQ for keyword research and channel SEO.</p>
 <p>A solo YouTube creator in 2026, with the right AI tools, can produce content that would have required a small team two years ago. AI handles the time-consuming parts: script drafting, B-roll selection, voiceover, caption generation, Shorts repurposing, and SEO optimisation.</p>
 <p>That leaves creators free to focus on the ideas and personality that actually make a channel worth watching.</p>

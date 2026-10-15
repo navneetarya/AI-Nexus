@@ -67,9 +67,9 @@ const post: BlogPost = {
     },
   ],
   outboundCitations: [
-    { url: 'https://runwayml.com/pricing', label: 'Runway — Official Pricing Page' },
+    { url: 'https://runway.com/pricing', label: 'Runway — Official Pricing Page' },
     { url: 'https://gemini.google/subscriptions/', label: 'Google AI Pro & Ultra — Veo 3.1 Access' },
-    { url: 'https://klingai.com/global/', label: 'Kling AI — Official Site' },
+    { url: 'https://kling.ai/', label: 'Kling AI — Official Site' },
     { url: 'https://pika.art', label: 'Pika — Official Site' },
     { url: 'https://lumalabs.ai/pricing', label: 'Luma Dream Machine — Official Pricing' },
   ],
@@ -135,11 +135,11 @@ const post: BlogPost = {
 
 <h2>Best AI Video Generators 2026: What's Actually New</h2>
 <div style="margin:14px 0 24px;">
-  <a href="https://runwayml.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Runway →</a>
+  <a href="https://runway.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Runway →</a>
 </div>
-<img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black microphone mounted on an arm, part of a video production setup" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black microphone mounted on an arm, part of a video production setup" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>OpenAI shut down the consumer Sora web and app on April 26, 2026, with the developer API scheduled to follow on September 24, 2026. That single decision reshuffled the entire category. It's the reason "best AI video generators 2026" searches have spiked over the past two months.</p>
-<p>This guide ranks the five text-to-video and image-to-video tools that are genuinely worth paying for right now. It's based on verified June 2026 pricing, hands-on community reporting from Reddit's r/VideoEditing and r/ArtificialIntelligence, and the credit-math gotchas that pricing pages rarely make obvious.</p>
+<p>This guide ranks the five text-to-video and image-to-video tools that are genuinely worth paying for right now. It's based on verified June 2026 pricing, user reports from Reddit's r/VideoEditing and r/ArtificialIntelligence, and the credit-math gotchas that pricing pages rarely make obvious.</p>
 <p>"AI video generator" covers a specific job: turning a text prompt or a still image into a short video clip, usually 5 to 15 seconds. It uses a model trained to predict motion, lighting, and physics, frame by frame.</p>
 <p>If what you're picturing when you search for text to video AI is a prompt in, a video out, that's a different job. AI video editors like <a href="/tools/invideo/">InVideo</a> or <a href="/tools/opus-clip/">Opus Clip</a> repurpose footage you already have instead.</p>
 <p><a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Opus Clip Free →</a></p>
@@ -164,7 +164,7 @@ const post: BlogPost = {
 <p>For a freelancer or small creative team currently paying for two or three separate AI video subscriptions, that consolidation alone can justify the switch.</p>
 <p>The trade-off, flagged repeatedly across Reddit and independent pricing breakdowns, is that the credit system makes real monthly cost hard to predict. Most reviewers recommend starting on monthly billing, rather than committing annually until you've measured your own usage for a full cycle.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://runwayml.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Runway →</a>
+  <a href="https://runway.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Runway →</a>
 </div>
 
 <h2>#3 Kling AI 3.0 — Best Value and Multilingual Lip-Sync</h2>
@@ -175,7 +175,7 @@ const post: BlogPost = {
 <p>Independent cost analyses put Kling's per-clip price meaningfully below Runway's, at comparable output volume. That's why it shows up so often in budget-conscious creator threads. The honest caveat: review aggregators show a pattern of billing and cancellation complaints for Kling specifically, and credits do not roll over between billing cycles.</p>
 <p>Unused allowance simply expires. If you choose Kling, start on monthly billing and track your real usage before committing to an annual plan.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://klingai.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Kling AI →</a>
+  <a href="https://kling.ai/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Kling AI →</a>
 </div>
 
 <h2>#4 Pika — Best for Fast, Stylized Social Clips</h2>
@@ -321,7 +321,7 @@ const post: BlogPost = {
 </div>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://runwayml.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Runway →</a>
+  <a href="https://runway.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Runway →</a>
 </div>
 <h2>Final Verdict: Best AI Video Generator for 2026</h2>
 <p>There is no single best AI video generator in 2026. The honest verdict is that the right tool depends on whether audio, camera control, cost, or speed matters most for what you're making.</p>

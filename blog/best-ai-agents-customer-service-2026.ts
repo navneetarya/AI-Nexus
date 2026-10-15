@@ -73,7 +73,7 @@ const post: BlogPost = {
   },
 
   outboundCitations: [
-    { url: 'https://www.intercom.com/fin', label: 'Intercom Fin — AI Customer Service Agent' },
+    { url: 'https://fin.ai/', label: 'Intercom Fin — AI Customer Service Agent' },
     { url: 'https://www.zendesk.com/ai/', label: 'Zendesk AI — Enterprise Customer Service AI' },
     { url: 'https://www.freshworks.com/freshdesk/', label: 'Freshdesk Freddy AI — Customer Support Intelligence' },
     { url: 'https://www.tidio.com/', label: 'Tidio — AI Live Chat for E-commerce and SMBs' },
@@ -97,7 +97,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['tidio']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Tidio Free →</a>
 </div>
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How AI Agents Reshaped Customer Service in 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How AI Agents Reshaped Customer Service in 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <img src="https://images.unsplash.com/photo-1609619385002-f40f1df9b7eb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A customer service dashboard shown on a workstation" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Customer service volume hit a breaking point in 2024–2025. Tickets grew faster than hiring budgets. The cost of handling each ticket by hand kept rising past what most companies could sustain. The market didn't just patch old rule-based chatbots. It replaced them with a fundamentally different architecture built on retrieval and live backend data.</p>
 <p>It moved to a new kind of AI agent — one that reads conversation context, pulls live backend data, and writes real answers without a human in the loop.</p>
@@ -127,7 +127,7 @@ const post: BlogPost = {
 <p>Intercom Fin is the strongest pure-AI customer service agent in 2026, judged by production resolution rate. It runs on GPT-4o and connects to your knowledge sources: help centre articles, Notion docs, PDFs, past chat logs.</p>
 <p>Fin handles a question start to finish. It reads the chat, pulls the right knowledge, writes a reply, and confirms the fix, with no human involved.</p>
 <p>Only when Fin can't reach a confident answer does it escalate. It hands the human agent the full chat, the customer's history, and a short note on what it tried.</p>
-<p>In real deployments, resolution rate often lands between 45% and 65% for teams with a well-kept knowledge base. Intercom's case studies show this, and review sites back it up.</p>
+<p>In real deployments, resolution rate often lands between 45% and 65% for teams with a well-kept knowledge base. That range comes from Intercom's own published case studies, so treat it as a vendor-reported figure.</p>
 <p>The floor sits higher than most rivals because Fin is built to favor a right answer over a fast one. Faced with doubt, it asks a follow-up question instead of guessing.</p>
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
@@ -275,7 +275,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;color:#888;">21-day trial</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 14px;font-weight:600;">Tidio (Lyro)</td>
+      <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['tidio']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Tidio (Lyro)</a></td>
       <td style="padding:10px 14px;">30–40%</td>
       <td style="padding:10px 14px;">$29/month</td>
       <td style="padding:10px 14px;">SMB, Shopify e-commerce</td>
@@ -350,7 +350,7 @@ const post: BlogPost = {
 <!-- ai-nexus:tool-cta-block -->
 <div style="margin:30px 0 12px;padding:16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
   <p style="margin:0 0 8px;font-size:14px;line-height:1.6;"><strong>Compare official pages before deciding:</strong></p>
-  <a href="https://www.intercom.com/fin" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit intercom</a>  <a href="https://www.zendesk.com/ai/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit zendesk</a>  <a href="https://www.freshworks.com/freshdesk/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit freshworks</a>  <a href="${AFFILIATE_LINKS['tidio']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit tidio</a>  <a href="https://www.ada.cx/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ada</a>  <a href="https://www.gartner.com/en/customer-service-support/insights/ai-customer-service-trends" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit gartner</a>
+  <a href="https://fin.ai/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit intercom</a>  <a href="https://www.zendesk.com/ai/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit zendesk</a>  <a href="https://www.freshworks.com/freshdesk/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit freshworks</a>  <a href="${AFFILIATE_LINKS['tidio']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit tidio</a>  <a href="https://www.ada.cx/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit ada</a>  <a href="https://www.gartner.com/en/customer-service-support/insights/ai-customer-service-trends" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit gartner</a>
   <p style="margin:10px 0 0;font-size:11px;color:#6b7280;">Affiliate disclosure: some links may be affiliate links at no extra cost to you.</p>
 </div>
 

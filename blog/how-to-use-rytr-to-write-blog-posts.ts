@@ -97,7 +97,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 
-<img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person using a MacBook Pro to draft a blog post" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person using a MacBook Pro to draft a blog post" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>Rytr Plans Compared</h2>
 <div style="overflow-x:auto;margin:24px 0;">

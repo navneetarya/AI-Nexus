@@ -33,7 +33,7 @@ const post: BlogPost = {
 <p>This is a different category from voice-agent platforms like Retell AI or Vapi. We cover those separately in our <a href="/blog/best-ai-voice-agent-small-business-2026/">best AI voice agent for small business guide</a>. Those are developer tools you configure yourself.</p>
 <p>Everything below is a done-for-you <strong>ai answering service for small business</strong>. You sign up, connect a phone number, and it answers calls. You never touch an API.</p>
 
-<img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business owner checking missed calls on a smartphone at the front desk" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business owner checking missed calls on a smartphone at the front desk" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>TL;DR — best ai receptionist for small business in 30 seconds</h2>
 <p>AIRA is the best overall pick for most small businesses in 2026. At $24.95/month, you get bilingual (English/Spanish plus 29 other languages) support, appointment booking, and CRM integrations with no feature gating between tiers.</p>

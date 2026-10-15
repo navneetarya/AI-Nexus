@@ -41,7 +41,7 @@ const post: BlogPost = {
   <p style="margin:10px 0 0;font-size:12px;opacity:.75;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 </div>
 
-<img src="https://images.unsplash.com/photo-1615661434109-739052a73003?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A studio microphone on a stand, used for recording a voice sample" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1615661434109-739052a73003?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A studio microphone on a stand, used for recording a voice sample" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <p>Voice cloning went from a research demo to a one-minute setup in about two years. Anyone can now train a usable clone of their own voice on a laptop, no studio or engineer required. The tools below differ mainly in cloning speed, output naturalness, and whether they're built for consent-safe commercial use.</p>
 

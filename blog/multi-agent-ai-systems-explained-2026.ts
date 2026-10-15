@@ -76,7 +76,7 @@ const post: BlogPost = {
     { url: 'https://github.com/crewAIInc/crewAI', label: 'CrewAI — GitHub Repository' },
     { url: 'https://github.com/microsoft/autogen', label: 'Microsoft AutoGen / AG2 — GitHub Repository' },
     { url: 'https://openai.github.io/openai-agents-python/', label: 'OpenAI Agents SDK — Official Documentation' },
-    { url: 'https://google.github.io/adk-docs/', label: 'Google Agent Development Kit (ADK) — Official Documentation' },
+    { url: 'https://adk.dev/', label: 'Google Agent Development Kit (ADK) — Official Documentation' },
     { url: 'https://a2a-protocol.org', label: 'Agent2Agent (A2A) Protocol — Official Specification' },
     { url: 'https://modelcontextprotocol.io', label: 'Model Context Protocol (MCP) — Official Specification' },
   ],
@@ -94,7 +94,7 @@ const post: BlogPost = {
 </blockquote>
 
 <h2>What Is a Multi-Agent AI System?</h2>
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Multiple code windows on monitors, representing coordinated AI agents working on a task" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Multiple code windows on monitors, representing coordinated AI agents working on a task" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <div style="margin:14px 0 24px;">
   <a href="https://www.langchain.com/langgraph" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit LangGraph →</a>
 </div>
@@ -244,7 +244,7 @@ const post: BlogPost = {
   <a href="https://www.crewai.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit CrewAI →</a>
   <a href="https://github.com/ag2ai/ag2" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit AutoGen/AG2 →</a>
   <a href="https://openai.github.io/openai-agents-python/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit OpenAI Agents SDK →</a>
-  <a href="https://google.github.io/adk-docs/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Google ADK →</a>
+  <a href="https://adk.dev/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Google ADK →</a>
   <a href="https://docs.claude.com/en/api/agent-sdk/overview" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude Agent SDK →</a>
 </div>
 

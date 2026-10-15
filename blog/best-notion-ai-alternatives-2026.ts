@@ -93,7 +93,7 @@ const post: BlogPost = {
 <p>People searching for Notion AI alternatives tend to fall into three groups. Some want AI for free. Some need AI for content creation, not just notes. And some want their AI assistant to actually <em>do</em> things: automate tasks, manage projects, coordinate work. For all three groups, there are better options.</p>
 
 <h2>How to Pick the Right Alternative</h2>
-<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Pick the Right Alternative" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Pick the Right Alternative" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <ol style="margin:16px 0;padding-left:24px;line-height:1.9;font-size:14.5px;">
   <li><strong>Want a full Notion replacement?</strong> Go with Taskade — it covers tasks, docs, and team workspace, plus real AI agents.</li>
   <li><strong>Writing blog posts or newsletters in Notion?</strong> Writesonic drafts full articles instead of just editing your sentences.</li>

@@ -86,7 +86,7 @@ const post: BlogPost = {
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 
-<img src="https://images.unsplash.com/photo-1698047681432-006d2449c631?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A resume being reviewed at a desk during a job search" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1698047681432-006d2449c631?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A resume being reviewed at a desk during a job search" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <blockquote style="border-left:3px solid #0D9488;padding-left:16px;margin:24px 0;font-style:italic;color:#444;">The honest pattern across this category: nearly every tool markets itself as "the best AI resume builder," but they are not really competing on the same thing. Teal and Rezi compete on value and ATS substance. Kickresume competes on visual polish, and Jobscan competes on diagnostic depth. Pick based on which of those three problems you actually have, not the loudest homepage claim.<br/><span style="font-style:normal;font-size:13px;color:#888;">— Navneet Arya, AI Nexus</span></blockquote>
 

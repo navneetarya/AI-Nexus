@@ -76,7 +76,7 @@ const post: BlogPost = {
 
   outboundCitations: [
     { url: 'https://podcast.adobe.com/enhance', label: 'Adobe Podcast Enhance Speech (official)' },
-    { url: 'https://riverside.fm/pricing', label: 'Riverside.fm official pricing page' },
+    { url: 'https://riverside.com/pricing', label: 'Riverside.fm official pricing page' },
     { url: 'https://www.descript.com/pricing', label: 'Descript official pricing page' },
   ],
 
@@ -138,7 +138,7 @@ const post: BlogPost = {
 </div>
 
 <h2>#1 Descript — Best Podcastle Alternative Overall</h2>
-<img src="/images/blog/best-podcastle-alternatives/descript-spec-card.svg" alt="Descript pricing summary card" width="640" height="190" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:6px 0 14px;border-radius:12px;" />
+<img fetchpriority="high" src="/images/blog/best-podcastle-alternatives/descript-spec-card.svg" alt="Descript pricing summary card" width="640" height="190" style="width:100%;height:auto;max-width:640px;margin:6px 0 14px;border-radius:12px;" />
 <p>Descript ($16/month, billed annually) is the most functionally different alternative to Podcastle, and that's the point. Instead of improving on Podcastle's recording-and-enhance workflow, Descript offers a completely different editing paradigm: text-based editing.</p>
 <p><strong>How it works:</strong> Record or import your audio. Descript on its own transcribes it. You edit the transcript. Delete a word, and the corresponding audio disappears. Select a paragraph and cut it, and the audio cuts too. No scrubbing waveforms, no hunting for a timestamp. For interview-heavy podcasts with a lot of cleanup work, this is a real time-saver.</p>
 <p><strong>Filler word removal:</strong> Descript can on its own detect and remove every instance of "um," "uh," and "you know" across a full episode, in minutes instead of hours. Podcastle has no equivalent feature.</p>
@@ -165,7 +165,7 @@ const post: BlogPost = {
 <p><strong>Free plan:</strong> 2 hours of recording per month, up to 1080p video. Limited but enough to test the workflow.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://riverside.fm" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Riverside.fm →</a>
+  <a href="https://riverside.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Riverside.fm →</a>
 </div>
 
 <h2>#3 Adobe Podcast — Best for AI Audio Enhancement Only</h2>

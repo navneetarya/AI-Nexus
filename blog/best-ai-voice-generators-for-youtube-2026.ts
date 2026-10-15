@@ -30,8 +30,9 @@ const post: BlogPost = {
   myTake: "This comparison covers both tools against the same four YouTube formats. The honest answer is that channel format decides the winner more than raw voice quality.",
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 16px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
-<img src="https://images.unsplash.com/photo-1760768550727-00f5e02feb72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A camera on a tripod set up in a minimalist studio for filming" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1760768550727-00f5e02feb72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A camera on a tripod set up in a minimalist studio for filming" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <p>YouTube creators ask about AI voice generators for one of two reasons. Either they don't want to be on camera, or they need narration faster than recording it themselves allows. Either way, the right tool depends on whether you need a natural-sounding narrator voice or your own cloned voice at scale.</p>
 

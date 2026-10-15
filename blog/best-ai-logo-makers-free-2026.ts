@@ -100,7 +100,7 @@ const post: BlogPost = {
 <p>In 2026, the technology has truly caught up. The best AI logo makers now understand brand fit, colour psychology, and design principles well enough to produce logos that look like a human designer made them.</p>
 <p>Each tool in this guide was independently researched across the same five brief types: tech startup, bakery, fitness app, consulting firm, and personal blog. The research covered design quality, editing options, free plan limitations, and file export quality.</p>
 <p>India-specific pricing and payment options are included throughout. For a wider view of design-focused AI tools, see the <a href="/best-ai-design-tools/" style="color:#0D9488;font-weight:600;">best AI design tools</a> category page.</p>
-<img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Pen sketching early logo design concepts on white paper" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Pen sketching early logo design concepts on white paper" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>Quick Comparison: Free AI Logo Makers</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -211,7 +211,7 @@ const post: BlogPost = {
 <p>For Indian freelancers and small firms who need a logo quickly and cannot pay for any subscription, Hatchful is the cleanest zero-cost option. There is no payment needed at any stage.</p>
 <p>The trade-off is design sophistication. Hatchful logos look clean and expert, but they are template-based, so you will see similar designs on other Hatchful-built brands. Editing is limited to colours, fonts, and icon selection.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">
-  <li><strong>Pros:</strong> 100% free, no account or card needed, instant download, no watermarks</li>
+  <li><strong>Pros:</strong> free to use, no account or card needed, instant download, no watermarks</li>
   <li><strong>Cons:</strong> Template-based (less unique), limited editing, basic design quality</li>
   <li><strong>Best for:</strong> MVPs, side projects, and anyone who needs a logo in under 5 minutes for free</li>
 </ul>

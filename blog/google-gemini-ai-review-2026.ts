@@ -97,7 +97,7 @@ const post: BlogPost = {
 <p>Google Trends shows a 550% spike in searches for "Gemini AI review" over the past 30 days. Gemini 3.1 Pro, Google's most capable model to date, launched recently with a 2-million-token context window and deep Workspace integration. Writers who use Google Docs daily are asking the obvious question: <strong>do I still need ChatGPT?</strong></p>
 <p>This review answers that directly. Both tools were independently researched through five real writing tasks — the same tasks most content creators face every week. No synthetic benchmarks, no vague capability claims. Here is what the documented output looks like, and where each tool wins.</p>
 
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Laptop screen showing a document draft, representing AI writing tools like Gemini and ChatGPT" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Laptop screen showing a document draft, representing AI writing tools like Gemini and ChatGPT" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <h2>Quick Verdict: Gemini vs ChatGPT for Writers</h2>
 <div style="overflow-x:auto;margin:24px 0;">
@@ -252,7 +252,7 @@ const post: BlogPost = {
 
 <h2>Final Verdict</h2>
 <p>Gemini 3.1 Pro is a genuinely useful writing tool in 2026. Not because it writes better prose than ChatGPT, but because it is embedded where writers already work.</p>
-<p>The Gmail integration alone justifies trying it for professional correspondence. The live search grounding makes it the strongest AI for research-backed writing. For anyone already paying for Google One storage, the AI Premium tier is close to a no-brainer at the upgrade price.</p>
+<p>The Gmail integration alone justifies trying it for professional correspondence. The live search grounding makes it the strongest AI for research-backed writing. For anyone already paying for Google One storage, the AI Premium tier is an easy upgrade to justify at the price.</p>
 <p>It does not replace ChatGPT for standalone long-form writing, and it does not replace Grammarly for editing. But as part of a Google Workspace-centred writing stack, Gemini is the most frictionless AI tool available for writers who work inside Google's ecosystem.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://gemini.google.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Gemini →</a>

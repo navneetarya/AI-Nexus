@@ -57,7 +57,7 @@ const post: BlogPost = {
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
 
-<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A job seeker practicing for a video interview on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A job seeker practicing for a video interview on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <p>An estimated 93% of job seekers report real anxiety before an interview, and roughly 4 in 10 recent interview-integrity checks now flag some form of AI assistance. Both of those things are true about the same category of software: <strong>ai interview prep tools</strong>.</p>
 

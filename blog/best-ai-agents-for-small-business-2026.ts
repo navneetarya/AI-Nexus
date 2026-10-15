@@ -143,7 +143,7 @@ const post: BlogPost = {
 
 
 <h2>What Makes an AI Agent Different from Traditional Software (2026 Definition)</h2>
-<img src="https://images.unsplash.com/photo-1758691737124-05c5bffe46f0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business team collaborating around a laptop while evaluating an AI agent platform" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1758691737124-05c5bffe46f0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business team collaborating around a laptop while evaluating an AI agent platform" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <p>Traditional business software runs fixed commands. A button press triggers a function and returns a result. Every decision needs a human. AI agents work differently. They interpret a <em>goal</em>. Then they plan a sequence of steps, take actions across multiple tools, and adapt based on the results.</p>
 
 <p>The practical difference for a small business is simple. A traditional CRM needs a human to log a call. That same person also updates the deal stage and drafts a follow-up email.</p>

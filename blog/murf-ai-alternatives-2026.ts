@@ -28,7 +28,8 @@ const post: BlogPost = {
   myTake: "This guide uses live pricing for every tool here as of August 2026. Murf is genuinely good at what it does, so most of these switches only make sense for one specific reason, not because Murf is bad.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1731909888065-0c5a117b0af7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creative studio desk with multiple screens, representing AI voice production" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<p style="font-size:12px;opacity:.75;margin:0 0 16px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1731909888065-0c5a117b0af7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creative studio desk with multiple screens, representing AI voice production" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <p>Murf AI does one job very well: turning a script into a finished, timed voiceover for video or e-learning, without hiring a voice actor. Most people who search for alternatives aren't unhappy with Murf. They've just hit one specific limit it wasn't built to solve.</p>
 <p><a style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;" href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Try Murf AI free →</a></p>

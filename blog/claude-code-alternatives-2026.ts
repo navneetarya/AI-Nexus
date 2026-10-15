@@ -84,7 +84,7 @@ const post: BlogPost = {
 <blockquote style="border-left:3px solid #0D9488;padding-left:16px;margin:24px 0;font-style:italic;color:#444;">The honest reason to look past Claude Code in 2026 is not quality. Opus 4.8 still leads the pack on SWE-bench Pro. It is that the terminal-agent category has closed most of the capability gap while undercutting Claude Code heavily on price. Two of the strongest alternatives here, Codex CLI and OpenCode, cost nothing beyond a subscription you may already have or your own API key. That changes the calculus for anyone not already locked into a Max plan.<br/><span style="font-style:normal;font-size:13px;color:#888;">Navneet Arya, AI Nexus</span></blockquote>
 
 <h2>Why Look Beyond Claude Code in July 2026</h2>
-<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Why Look Beyond Claude Code in July 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Why Look Beyond Claude Code in July 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Three colleagues sitting with laptops watching a presentation on coding tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Claude Code</strong> is Anthropic's terminal-based agentic coding tool, and it remains the developer consensus pick for raw multi-file reasoning on large codebases. But "the best coding agent" and "the only terminal agent worth running" stopped being the same claim sometime in early 2026.</p>
 <p>That's when OpenAI open-sourced a Rust rewrite of Codex and Google shipped a fresh CLI to replace the retiring Gemini CLI. Around the same time, the open-source OpenCode project quietly overtook Claude Code's own GitHub star count.</p>
@@ -174,7 +174,7 @@ const post: BlogPost = {
 <p>The cost story is what puts it at the top of this list. The CLI itself is free to download and run against your own OpenAI API key. Separately, Codex usage is bundled into every ChatGPT tier from Free up through Enterprise, with usage limits that scale by plan.</p>
 <p>Most developers already paying for ChatGPT Plus get real Codex CLI capacity at no additional cost. On the current Terminal-Bench 2.1 leaderboard, Codex CLI running GPT-5.5 sits at the top of the ranked table. That puts it ahead of Claude Code's best usable Opus 4.8 pairing.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://developers.openai.com/codex/cli" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Codex CLI →</a>
+  <a href="https://learn.chatgpt.com/docs/codex/cli" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Codex CLI →</a>
 </div>
 
 <h3>2. OpenCode: Best Free, Fully Open-Source, Model-Agnostic Pick</h3>
@@ -249,14 +249,14 @@ const post: BlogPost = {
   <li><strong>Skip Amazon Q Developer CLI</strong> regardless of your budget. Build on <a href="/blog/best-ai-coding-agents-2026/">a currently supported agent</a> instead of one AWS has already announced an end-of-support date for.</li>
 </ol>
 <p>For developers weighing terminal agents against full IDE tools like <a href="/tools/cursor/">Cursor</a> or <a href="/tools/windsurf/">Windsurf</a>, see AI Nexus's <a href="/best-ai-coding-tools/">best AI coding tools</a> roundup. It also covers browser options like <a href="/tools/replit/">Replit</a>. The <a href="/blog/claude-code-vs-github-copilot-vs-replit-2026/">Claude Code vs GitHub Copilot vs Replit</a> comparison also covers non-terminal alternatives.</p>
-<p><a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a></p>
 <p>Not a developer? If you would rather describe an app in plain English and get a working prototype than run a terminal agent, a <a href="/blog/best-vibe-coding-tools-2026/">vibe-coding tool</a> like <a href="/tools/lovable/">Lovable</a> is the better fit. It has a free tier, so you can test one real task before paying.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Lovable Free →</a>
 </div>
 
 <h2>Final Verdict: Claude Code Alternatives in July 2026</h2>
-<p>Claude Code has not gotten worse. Opus 4.8 remains a top performer on real-issue-resolution benchmarks, and the tool's codebase reasoning is still widely cited as best-in-class. What has changed is that it is no longer the only serious option in the terminal. Two of its strongest challengers, OpenAI Codex CLI and OpenCode, are free.</p>
+<p>Claude Code has not gotten worse. Opus 4.8 remains a top performer on real-issue-resolution benchmarks, and the tool's codebase reasoning is still among the strongest in the category. What has changed is that it is no longer the only serious option in the terminal. Two of its strongest challengers, OpenAI Codex CLI and OpenCode, are free.</p>
 <p>For most developers evaluating a Claude Code alternative in 2026, the honest starting point is Codex CLI if you want the least setup. Choose OpenCode instead if you want the most control. Claude Code is still worth its $20/month for anyone whose daily work leans on its specific reasoning strength.</p>
 
 <!-- ai-nexus:tool-cta-block -->
@@ -286,7 +286,7 @@ const post: BlogPost = {
     ],
   },
   outboundCitations: [
-    { url: 'https://developers.openai.com/codex/cli', label: 'OpenAI: Codex CLI Official Docs' },
+    { url: 'https://learn.chatgpt.com/docs/codex/cli', label: 'OpenAI: Codex CLI Official Docs' },
     { url: 'https://platform.claude.com/docs/en/about-claude/pricing', label: 'Anthropic: Claude Code / API Pricing' },
     { url: 'https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/', label: 'Google: Gemini CLI to Antigravity CLI Transition' },
     { url: 'https://aider.chat/', label: 'Aider: Official Site & Docs' },

@@ -114,9 +114,9 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://leonardo.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Leonardo AI →</a>
 </div>
-<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for TL;DR: Nano Banana Pro alternatives in 30 seconds" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for TL;DR: Nano Banana Pro alternatives in 30 seconds" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <img src="https://images.unsplash.com/photo-1590602846989-e99596d2a6ee?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black and silver microphone against a white background" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p>This guide The research covers all five tools in this comparison against their official pricing pages, Reddit sentiment, and independent review platforms. Here's the short version: Nano Banana Pro (Google's Gemini 3 Pro Image) is the current best-in-class AI image model for in-image text accuracy and native 4K output.</p>
+<p>This guide The research covers all five tools in this comparison against their official pricing pages, Reddit sentiment, and independent review platforms. Here's the short version: Nano Banana Pro (Google's Gemini 3 Pro Image) is the strongest option in our research for in-image text accuracy and native 4K output.</p>
 <p>But its free tier is limited, and its paid pricing is bundled confusingly inside broader Google AI plans rather than sold as its own subscription.</p>
 <p>If that friction bothers you, the four alternatives below each solve a version of "I don't want this pricing model." One, PhotoRoom, isn't even competing on the same axis.</p>
 
@@ -248,7 +248,7 @@ const post: BlogPost = {
 <h2>Nano Banana Pro vs Midjourney vs Leonardo Comparison</h2>
 <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Nano Banana Pro vs Midjourney vs Leonardo Comparison" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>This AI image editor comparison for 2026 splits cleanly along one axis: literal accuracy versus stylistic flair versus creative control. Nano Banana Pro wins decisively on in-image text and factual grounding via Search.</p>
-<p>Midjourney wins on default visual polish and "wow factor" with zero prompt engineering. Leonardo wins on the combination of free-tier generosity and hands-on creative control (custom model training, real-time canvas) that neither of the other two offers.</p>
+<p>Midjourney wins on default visual polish and "wow factor" with zero prompt engineering. Leonardo wins on the combination of free-tier generosity and granular creative control (custom model training, real-time canvas) that neither of the other two offers.</p>
 <p>None of the three is objectively "best." The right pick depends entirely on whether your bottleneck is text accuracy, aesthetic quality, or budget-plus-control. For anyone starting from zero with no strong opinion yet, Leonardo's free tier is the lowest-risk way to find out. You can see which axis matters most for your work before spending anything.</p>
 
 <h2>Pros and Cons of Nano Banana Pro</h2>
@@ -257,7 +257,7 @@ const post: BlogPost = {
   <div style="background:rgba(34,197,94,.06);border:1px solid rgba(34,197,94,.2);border-radius:10px;padding:18px 20px;">
     <p style="margin:0 0 12px;font-weight:700;font-size:15px;color:#16a34a;">✓ Pros</p>
     <ul style="margin:0;padding-left:20px;line-height:2.2;font-size:14px;">
-      <li>Best-in-class in-image text accuracy (94–96% vs ~71–78% for Midjourney/DALL-E 3)</li>
+      <li>Strongest in-image text accuracy in our research (94–96% vs ~71–78% for Midjourney/DALL-E 3)</li>
       <li>Native 4K output with strong multi-subject character consistency</li>
       <li>Genuinely free tier to try before paying, no card required</li>
       <li>Fastest iteration cycle of any major image model via Nano Banana 2</li>

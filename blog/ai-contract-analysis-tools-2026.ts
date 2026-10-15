@@ -94,7 +94,7 @@ const post: BlogPost = {
 <blockquote style="border-left:3px solid #0D9488;padding-left:16px;margin:24px 0;font-style:italic;color:#444;">The honest story here is a mismatch. The highest-profile AI contract tools, Harvey and Luminance, are built and sold for firms with 20+ seat minimums and six-figure annual contracts. They're not built for the freelancer who needs to know if a client's NDA is safe to sign. For that job, Claude or ChatGPT plus a $10–20/month purpose-built reviewer gets you most of the way there, for a fraction of the cost. Knowing which tier you actually belong in before you book a demo saves everyone a wasted sales call.<br/><span style="font-style:normal;font-size:13px;color:#888;">— Navneet Arya, AI Nexus</span></blockquote>
 
 <h2>Why "AI Contract Analysis Tools" Suddenly Means Two Different Markets</h2>
-<img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A video editing timeline with blue and purple clips on a dark screen, representing document analysis workflows" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A video editing timeline with blue and purple clips on a dark screen, representing document analysis workflows" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>Search interest in <strong>AI contract analysis tools</strong> has climbed through 2026 for a straightforward reason: legal AI funding has been enormous. Headlines about it, like Harvey's $11 billion valuation and Luminance's enterprise rollouts, make it sound like there's now a single obvious tool every business should adopt.</p>
 <p>There isn't. The legal AI market split cleanly into two tiers in 2026, and almost nobody covering it makes the split explicit.</p>
 <p>One tier is enterprise legal AI. These are platforms sold to AmLaw 100 firms and corporate legal departments, priced through custom sales contracts, with seat minimums that assume you're buying for a department, not a person. The other tier is everything a freelancer, consultant, or small business owner actually needs.</p>
@@ -238,7 +238,7 @@ const post: BlogPost = {
 <p><strong>Add a purpose-built freelancer-tier reviewer if:</strong> you sign enough contracts regularly that structured risk scoring and reusable negotiation language save real time. Budget $13-$30/month and verify current reviews before committing.</p>
 <p><strong>Consider Spellbook if:</strong> you're a solo lawyer or very small firm that drafts contracts as a core part of daily work inside Microsoft Word. It's not a good fit for most non-lawyer freelancers or small businesses.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.spellbook.legal" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Spellbook Trial →</a>
+  <a href="https://spellbook.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Start Spellbook Trial →</a>
 </div>
 <p><strong>Skip Harvey AI and Luminance entirely</strong> unless you're evaluating software on behalf of a law firm or a legal department with real procurement authority. Both are priced and sold for a buyer that isn't the audience of this guide.</p>
 <p>For the broader AI toolkit a freelancer or small business is likely already assembling, see AI Nexus's <a href="/blog/best-ai-tools-for-freelancers-2026/">Best AI Tools for Freelancers</a> roundup and, for Indian freelancers specifically, <a href="/blog/best-ai-tools-for-freelancers-india-2026/">Best AI Tools for Freelancers in India</a>.</p>
@@ -271,7 +271,7 @@ const post: BlogPost = {
     { url: 'https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf', label: 'ABA — Formal Opinion 512, Generative Artificial Intelligence Tools' },
     { url: 'https://www.harvey.ai/roi-calculator/law-firm', label: 'Harvey AI — Official Site' },
     { url: 'https://www.luminance.com/', label: 'Luminance — Official Site' },
-    { url: 'https://www.spellbook.legal/partners', label: 'Spellbook — Partner Program' },
+    { url: 'https://spellbook.com/partners', label: 'Spellbook — Partner Program' },
   ],
 };
 

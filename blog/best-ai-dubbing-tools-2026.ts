@@ -31,13 +31,14 @@ const post: BlogPost = {
   myTake: "This guide uses live pricing and language coverage for every tool here as of September 2026. Most creators asking about AI dubbing already have a voice tool — the real decision is whether you need lip sync or not, and that one question rules out most of this list immediately.",
 
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 16px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 <p>YouTube's own data shows more than 40% of watch time on dubbed videos comes from viewers who don't speak the original language. That share keeps growing every year as recommendation engines increasingly surface localized content first.</p>
 
 <p>That's the real reason "best AI dubbing tools 2026" is a search people keep running. A video that only exists in English is leaving a large, measurable audience on the table.</p>
 
 <p>This guide uses pricing and language coverage for every tool below as of September 2026. This isn't a "these are all basically the same" list.</p>
 
-<img src="https://images.unsplash.com/photo-1636294155447-b1a63a5cb084?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A microphone and cord on a podcast studio desk, representing AI dubbing for audio content" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1636294155447-b1a63a5cb084?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A microphone and cord on a podcast studio desk, representing AI dubbing for audio content" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <p>The five tools here solve genuinely different jobs. Picking the wrong one usually means paying for a feature you never actually use, whether that's lip sync, an on-screen avatar, or a huge language count you don't need.</p>
 

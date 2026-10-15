@@ -48,7 +48,7 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://lovable.dev', label: 'Lovable — official product site' },
     { url: 'https://bolt.new', label: 'Bolt.new — official product site' },
-    { url: 'https://v0.dev', label: 'v0 by Vercel — official product site' },
+    { url: 'https://v0.app/', label: 'v0 by Vercel — official product site' },
     { url: 'https://www.reddit.com/r/nocode/', label: 'r/nocode — community discussion on vibe coding tools' },
   ],
   wordCount: 1720,
@@ -78,7 +78,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:14px;line-height:1.6;">None of these three tools has caught up to a professional developer on security review. If your app touches payments, health data, or personal information at any real scale, budget for a developer to audit the generated code before launch — see the FAQ on data safety below.</p>
 </div>
 
-<img src="https://images.unsplash.com/photo-1555066931-bf19f8fd1085?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop running an AI-assisted vibe coding tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1555066931-bf19f8fd1085?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop running an AI-assisted vibe coding tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>How to Pick a Vibe Coding Tool in 3 Steps</h2>
 <ol style="margin:12px 0 20px 24px;line-height:1.9;">
@@ -186,7 +186,7 @@ const post: BlogPost = {
 </ul>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://v0.dev" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit v0 →</a>
+  <a href="https://v0.app/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit v0 →</a>
 </div>
 <h2>Which Vibe Coding Tool Should You Use?</h2>
 <p>The decision is straightforward, if you are honest about your starting point:</p>
@@ -199,7 +199,7 @@ const post: BlogPost = {
 <p>The most effective approach, based on how each tool is designed: start with Lovable for the full-stack scaffold — database, auth, core UI. Use Bolt for any complex data visualisation or framework-specific features you need to add. Use v0 to polish individual UI components before shipping.</p>
 <p>That three-tool workflow cost less than $70/month total in June 2026. It replaced a developer at the prototype stage entirely. For solo founders and indie builders validating ideas, the economics are compelling.</p>
 <p>If you outgrow vibe coding tools altogether, compare full AI coding agents in the <a href="/blog/best-ai-coding-agents-2026/" style="color:rgb(13,148,136);">best AI coding agents 2026 guide</a>, or see how these tools stack up against <a href="/tools/replit/" style="color:rgb(13,148,136);">Replit</a> for a browser-based alternative.</p>
-<p><a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a></p>
+<p><a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a></p>
 
 <h2>Vibe Coding Tools: Pros and Cons at a Glance</h2>
 <ul style="margin:12px 0 12px 24px;line-height:2;">

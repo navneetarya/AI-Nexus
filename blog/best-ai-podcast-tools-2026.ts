@@ -88,7 +88,7 @@ const post: BlogPost = {
 <p>Every tool below was independently researched across features, pricing, free plan limits, and verified user feedback. Here is what is actually worth using, and what to skip.</p>
 
 <h2>AI Podcast Tools at a Glance</h2>
-<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for AI Podcast Tools at a Glance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for AI Podcast Tools at a Glance" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>Here's how the four tools compare on price, free plan, and best-fit use case before the full breakdown below:</p>
 <div style="overflow-x:auto;margin:16px 0 24px;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">

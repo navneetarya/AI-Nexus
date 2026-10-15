@@ -34,7 +34,7 @@ const post: BlogPost = {
   content: `<p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<img src="https://images.unsplash.com/photo-1769867303328-818dc70f87d6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A music producer working with AI-generated tracks on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1769867303328-818dc70f87d6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A music producer working with AI-generated tracks on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <p>Type a sentence, get a finished song back in under two minutes. That is the pitch behind every <strong>ai music generator</strong> on this list. In 2026 it mostly works. Quality now clears the bar for background tracks, ads, and social content — it doesn't yet replace a producer for a commercial release.</p>
 <p>The research behind this guide covered pricing pages, Trustpilot data, and licensing terms for five of the biggest names in the category. The marketing pages skip the parts that actually change your decision.</p>
 <p>Two of these tools are still being sued by major record labels, and one has reportedly restricted downloads while it moves to a licensed platform. None of that shows up on a features comparison chart, but it should change which tool you pick.</p>

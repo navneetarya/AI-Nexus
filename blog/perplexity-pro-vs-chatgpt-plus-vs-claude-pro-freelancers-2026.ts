@@ -70,8 +70,8 @@ const post: BlogPost = {
 
   outboundCitations: [
     { url: 'https://www.perplexity.ai/hub/faq/what-is-perplexity-pro', label: 'Perplexity Pro official FAQ' },
-    { url: 'https://openai.com/chatgpt/pricing/', label: 'ChatGPT Plus official pricing page' },
-    { url: 'https://www.anthropic.com/pricing', label: 'Claude Pro official pricing page' },
+    { url: 'https://chatgpt.com/pricing/', label: 'ChatGPT Plus official pricing page' },
+    { url: 'https://claude.com/pricing', label: 'Claude Pro official pricing page' },
     { url: 'https://www.g2.com/products/perplexity-ai/reviews', label: 'Perplexity AI user reviews on G2' },
   ],
 
@@ -154,7 +154,7 @@ const post: BlogPost = {
 <p>The Pro upgrade is mainly about model quality (GPT-4o vs the default Perplexity model) and search volume. For some freelancers, the free tier genuinely covers their research needs. I'll come back to this in the recommendation section.</p>
 
 <h2>Task 1: Write a 500-word blog intro from a brief</h2>
-<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Laptop screen showing a document draft, representing an AI-written blog intro test" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Laptop screen showing a document draft, representing an AI-written blog intro test" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>The prompt: <em>"Write a compelling intro for an article about the best AI writing tools for freelancers in 2026. Target audience: mid-career freelance writers who are skeptical of AI hype. Tone: direct, informative, not salesy."</em></p>
 
 <p><strong>ChatGPT Plus</strong> produced clean, well-structured prose. The sentences varied in length, the opener had a decent hook. But there was something a bit formulaic about it. Every paragraph started with a topic sentence, and the transitions were smooth but predictable.</p>

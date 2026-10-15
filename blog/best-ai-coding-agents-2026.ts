@@ -1,4 +1,5 @@
 import { BlogPost } from './types';
+import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
 // Cursor           : Affiliate active — https://cursor.com (verify referral link)
@@ -76,7 +77,7 @@ const post: BlogPost = {
 
   outboundCitations: [
     { url: 'https://devin.ai', label: 'Devin — Autonomous AI Software Engineer by Cognition AI' },
-    { url: 'https://www.anthropic.com/claude-code', label: 'Claude Code — Anthropic Terminal Coding Agent' },
+    { url: 'https://claude.com/product/claude-code', label: 'Claude Code — Anthropic Terminal Coding Agent' },
     { url: 'https://swe-agent.com', label: 'SWE-Agent — Princeton NLP Open-Source Coding Agent' },
     { url: 'https://www.swebench.com', label: 'SWE-bench — AI Coding Agent Benchmark Leaderboard' },
     { url: 'https://cursor.com', label: 'Cursor — AI-Native Code Editor with Agent Mode' },
@@ -85,6 +86,7 @@ const post: BlogPost = {
   ],
   wordCount: 3400,
   content: `
+<p style="font-size:12px;opacity:.75;margin:0 0 16px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Five agents lead the field in 2026. <strong><a href="/tools/claude-code/">Claude Code</a></strong> has the best codebase reasoning and is terminal-native, at $20/month via Claude Pro. <strong><a href="/tools/cursor/">Cursor</a> Agent</strong> has the best IDE-integrated agent loop, also $20/month. <strong>Devin</strong> is the most autonomous. It runs the full software engineering cycle, with a free plan, Pro at $20/month and Max at $200/month.</p>
@@ -92,7 +94,7 @@ const post: BlogPost = {
 </div>
 
 <h2>What Changed in AI Coding in 2026: Agents vs Assistants</h2>
-<img src="https://images.unsplash.com/photo-1502209877429-d7c6df9eb3f9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A developer's iMac with Apple Magic Keyboard and mouse" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1502209877429-d7c6df9eb3f9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A developer's iMac with Apple Magic Keyboard and mouse" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>The main story in AI coding tools shifted in 2025–2026. It moved from assistants to agents. The difference matters in real use. An AI coding assistant (GitHub Copilot, Tabnine, Codeium) sits beside the developer. It completes lines, suggests functions, and answers questions. The developer still has to start every action.</p>
 <p>An AI coding agent works differently. It gets a task and breaks it into steps. It runs those steps on its own. It checks the results (test failures, compiler errors, lint warnings). Then it fixes its own mistakes and gives an output. Often, no human is needed between start and review.</p>
 <p>Two changes made this shift possible. First, LLMs got much better at reading code. Claude Sonnet 4.6 passed 50% on SWE-bench Verified in agentic settings. That means it solves more than half of real GitHub issues on its own.</p>
@@ -185,9 +187,9 @@ const post: BlogPost = {
 <p>In tests across GitHub repos, it does best on tasks that need an understanding of how code links across files. It is less about tasks that involve writing one single function.</p>
 <p><strong>Best for:</strong> Backend developers, DevOps engineers, and senior developers working with large existing codebases. It's a good fit if you want terminal-native agent help without switching IDEs.</p>
 <p>It's not the right fit for developers who want visual IDE integration or vibe-coding-style UI generation. See also: <a href="/blog/best-ai-tools-for-developers-2026/">Best AI Tools for Developers 2026</a> and <a href="/blog/claude-code-vs-github-copilot-vs-replit-2026/">Claude Code vs GitHub Copilot vs Replit</a>.</p>
-<p><a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a> <a href="/tools/replit/" style="font-size:13px;color:#0D9488;font-weight:600;">Read our Replit review</a></p>
+<p><a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a> <a href="/tools/replit/" style="font-size:13px;color:#0D9488;font-weight:600;">Read our Replit review</a></p>
 <div style="margin:14px 0 24px;">
-  <a href="https://www.anthropic.com/claude-code" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Claude Code →</a>
+  <a href="https://claude.com/product/claude-code" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Claude Code →</a>
 </div>
 
 <img src="https://images.unsplash.com/photo-1516031190212-da133013de50?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Terminal window showing a git and command-line demo on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -330,7 +332,7 @@ const post: BlogPost = {
     </tr>
     <tr>
       <td style="padding:10px 14px;">No-code or low-code full-stack generation</td>
-      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="/tools/lovable/">Lovable</a> / Bolt / <a href="/tools/v0/">v0</a></td>
+      <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="/tools/lovable/">Lovable</a> / Bolt / <a href="/tools/v0/">v0</a><br><a href="${AFFILIATE_LINKS['lovable']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="font-size:12px;font-weight:600;">Try Lovable →</a></td>
       <td style="padding:10px 14px;">Vibe coding agents for UI generation — see <a href="/blog/best-vibe-coding-tools-2026/">Best Vibe Coding Tools 2026</a></td>
     </tr>
   </tbody>
@@ -396,6 +398,7 @@ const post: BlogPost = {
   <a href="https://swe-agent.com" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try SWE-Agent →</a>
   <a href="https://github.com/features/copilot/plans" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Copilot Workspace →</a>
   <a href="https://github.com/All-Hands-AI/OpenHands" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try OpenHands →</a>
+  <a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
   <p style="margin:10px 0 0;font-size:11px;color:#6b7280;">Affiliate disclosure: some links may be affiliate links at no extra cost to you.</p>
 </div>
 

@@ -150,7 +150,7 @@ const post: BlogPost = {
 
 <h2>1. Leonardo.ai: The Best Overall Midjourney Alternative</h2>
 <p><strong>Rating: 4.5/5 · Free plan: 150 tokens/day · Paid: $12/month</strong></p>
-<img src="/images/blog/best-midjourney-alternatives-2026/leonardoai-spec-card.svg" alt="Leonardo.ai rating and pricing summary card" width="640" height="190" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:6px 0 14px;border-radius:12px;" />
+<img fetchpriority="high" src="/images/blog/best-midjourney-alternatives-2026/leonardoai-spec-card.svg" alt="Leonardo.ai rating and pricing summary card" width="640" height="190" style="width:100%;height:auto;max-width:640px;margin:6px 0 14px;border-radius:12px;" />
 <p>Leonardo.ai is the Midjourney alternative I recommend to most people. It has a proper web interface, so no Discord is required. It also offers a big free tier, and image quality truly rivals Midjourney for most use cases.</p>
 <p>The platform offers multiple AI models, each with different strengths. Leonardo Diffusion XL produces photorealistic images. Leonardo Anime handles stylized illustration. DreamShaper is great for concept art and fantasy scenes. With Midjourney you're locked into one aesthetic; Leonardo lets you choose.</p>
 <p>The 150 daily tokens translate to roughly 15–30 images per day on the free plan, depending on resolution and model. That's a lot more generous than Midjourney's paid Basic plan at 200 images per month. For casual users and content creators, the free tier is truly enough.</p>
@@ -197,7 +197,7 @@ const post: BlogPost = {
 </ul>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://chat.openai.com" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try DALL-E 3 via ChatGPT →</a>
+  <a href="https://chatgpt.com/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try DALL-E 3 via ChatGPT →</a>
 </div>
 
 <h2>4. Adobe Firefly: Best for Commercial-Safe Images</h2>

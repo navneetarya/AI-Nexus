@@ -36,7 +36,7 @@ const post: BlogPost = {
   content: `<p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">
   This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business owner building a website on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A small business owner building a website on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <p>Five different "best AI website builder" roundups will give you five different answers this month. Is that frustrating? This guide The guide checks the actual pricing pages behind each claim, and found out why. Most guides never separate "best for a designer" from "best for a plumber who needs a site by Friday."</p>
 <p>Those are not the same buyer. A tool that wins one loses the other badly.</p>
 <p>This guide compares five AI website builders (Wix, Framer, Durable, Hostinger, and 10Web) against their real, current pricing and independent review data, not just the number on the homepage.</p>
@@ -135,7 +135,7 @@ const post: BlogPost = {
 <p>The free plan works for testing, but you'll need the Launch plan at $22/month (annual) for a custom domain. Durable also bundles a basic CRM and invoicing tool, features the other four builders here don't include.</p>
 <p>The catch: design customization is genuinely limited, e-commerce is basic, and SEO tools need more depth than a growing business will eventually want.</p>
 <div style="text-align:center;margin:20px 0">
-  <a href="https://durable.co" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Durable →</a>
+  <a href="https://durable.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Durable →</a>
 </div>
 
 <h3>4. Hostinger: cheapest AI website builder</h3>

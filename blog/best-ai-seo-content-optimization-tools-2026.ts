@@ -43,7 +43,7 @@ const post: BlogPost = {
 <p>Frase matches Surfer's $49/month entry price but includes SEO scoring, GEO/AI-visibility tracking, and a content-agent workflow at that tier. That makes it the strongest value pick for a solo writer or single-site operator.</p><p>Clearscope costs more at the entry level ($129/month), but it includes unlimited team seats on every plan. That changes the math fast for a 4-plus-person content team.</p>
 <p>MarketMuse is the strategic outlier. It's strong at modeling topical authority across an entire domain. But its paid tiers are demo-gated as of 2026. You can't get a self-serve monthly price without talking to sales.</p>
 
-<img src="https://images.unsplash.com/photo-1573567199032-50a155ba6de1?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A content strategist reviewing SEO metrics on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1573567199032-50a155ba6de1?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A content strategist reviewing SEO metrics on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>Best ai seo content optimization tools 2026: 4 tools compared</h2>
 <p>All four tools below were checked against their own official pricing pages in the second week of August 2026.</p>

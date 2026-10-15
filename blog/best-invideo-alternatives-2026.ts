@@ -84,7 +84,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://pictory.ai" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Pictory →</a>
 </div>
-<img src="https://images.unsplash.com/photo-1668605335684-c97ce92cbd76?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person wearing headphones discussing a video project on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1668605335684-c97ce92cbd76?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person wearing headphones discussing a video project on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>The best InVideo AI alternatives in 2026 solve three different problems. Pictory turns existing blog or script content into faceless videos. Opus Clip cuts long videos into short-form clips. Murf AI is the fix if your main complaint about InVideo is the voiceover quality.</p>
 <p><a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">InVideo AI</a> is a genuinely capable tool. It generates complete faceless YouTube videos from a single text prompt: script, stock footage, AI voiceover, and captions, all in one workflow. But it's not the right tool for every video creator, and it has real limitations that push people to look for alternatives.</p>
 <div style="margin:14px 0 24px;">

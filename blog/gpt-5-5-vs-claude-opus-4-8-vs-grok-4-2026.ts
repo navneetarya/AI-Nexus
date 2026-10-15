@@ -41,7 +41,7 @@ const post: BlogPost = {
     ],
   },
   outboundCitations: [
-    { url: 'https://openai.com/chatgpt/pricing/', label: 'OpenAI — ChatGPT Plus pricing' },
+    { url: 'https://chatgpt.com/pricing/', label: 'OpenAI — ChatGPT Plus pricing' },
     { url: 'https://claude.com/pricing', label: 'Anthropic — Claude Pro pricing' },
     { url: 'https://x.ai/grok', label: 'xAI — Grok model overview' },
     { url: 'https://www.swebench.com/', label: 'SWE-bench — coding benchmark leaderboard' },
@@ -54,7 +54,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">There is no single winner. GPT-5.5 wins on breadth, Claude Opus 4.8 wins on depth, and Grok 4 wins on real-time data — the right pick depends on which of those three you need most.</p>
 </div>
 <h2>Which AI Is Best: GPT-5.5, Claude Opus 4.8, or Grok 4?</h2>
-<img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A monitor displaying a model comparison dashboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A monitor displaying a model comparison dashboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>Three of the most capable AI models ever built are now available to anyone with a $20/month subscription. GPT-5.5 (OpenAI), Claude Opus 4.8 (Anthropic), and Grok 4 (xAI) each represent a different philosophy about what an AI assistant should be. Choosing wrong means leaving serious capability on the table.</p>
 <p>Which one is best depends on the job. GPT-5.5 is the most versatile all-rounder for mixed creative, coding, and research work. Claude Opus 4.8 is the strongest choice for long-document analysis and nuanced writing. Grok 4 leads on real-time web research.</p>
 <p>For most individual users, Claude Opus 4.8 or GPT-5.5 gives the best value for $20/month.</p>

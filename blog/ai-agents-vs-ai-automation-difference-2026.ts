@@ -101,7 +101,7 @@ const post: BlogPost = {
 <p>Conversely, teams build fragile 40-step automation workflows for tasks that break on every edge case, when a supervised agent would handle the variability at lower maintenance cost. Getting the category right is not an academic distinction. It is a budget and architecture decision with recurring consequences.</p>
 <p>The single most useful distinction: <strong>automation reacts to events by following rules; agents reason toward goals by making decisions.</strong> Everything else follows from this.</p>
 
-<img src="https://images.unsplash.com/photo-1773332585815-f106a5d6ed6c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person working at a desk with a laptop and books, setting up a rule-based workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1773332585815-f106a5d6ed6c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person working at a desk with a laptop and books, setting up a rule-based workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>What AI Automation Actually Is</h2>
 <p>Traditional automation, and what most platforms still deliver even with AI modules added, is structured around a fixed execution pattern. A trigger event fires, conditions are checked, and a defined action executes.</p>

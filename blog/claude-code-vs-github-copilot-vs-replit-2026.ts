@@ -77,7 +77,7 @@ const post: BlogPost = {
   },
 
   outboundCitations: [
-    { url: 'https://www.anthropic.com/claude-code', label: 'Claude Code — official product page' },
+    { url: 'https://claude.com/product/claude-code', label: 'Claude Code — official product page' },
     { url: 'https://github.com/features/copilot', label: 'GitHub Copilot — official product page' },
     { url: 'https://replit.com', label: 'Replit — official product site' },
     { url: 'https://www.reddit.com/r/ClaudeAI/', label: 'r/ClaudeAI — community discussion on Claude Code' },
@@ -98,7 +98,7 @@ const post: BlogPost = {
 </div>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Claude Code →</a>
+  <a href="https://claude.com/product/claude-code" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Claude Code →</a>
   <a href="https://github.com/features/copilot" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GitHub Copilot →</a>
 </div>
 <blockquote style="border-left:3px solid #0D9488;padding:4px 0 4px 16px;margin:0 0 24px;font-style:italic;color:var(--text-secondary,#555);">
@@ -107,7 +107,7 @@ const post: BlogPost = {
 </blockquote>
 
 <h2>Which Is Best: Claude Code, GitHub Copilot, or Replit?</h2>
-<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A group of developers using a laptop together to compare coding tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A group of developers using a laptop together to compare coding tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>Claude Code, GitHub Copilot, and Replit each lead for a different kind of user in 2026. Claude Code is the strongest agentic coding agent for autonomous multi-step tasks. GitHub Copilot remains the best IDE-integrated assistant for day-to-day coding. Replit is the easiest entry point if you're not a professional developer.</p>
 <p>Claude Code launched as generally available in early 2026 and immediately triggered a wave of developer forum discussions. Search interest in "claude code vs copilot" is up 380% in the past 30 days.</p>
 <p>The developer community is actively re-evaluating which tool belongs in their workflow. So is a growing group of non-developers trying to use AI to build scripts, automations, and small apps without a traditional coding background. If you're specifically weighing Claude Code against other agentic tools, see the <a href="/blog/claude-code-alternatives-2026/" style="color:rgb(13,148,136);">Claude Code alternatives guide</a>.</p>
@@ -189,7 +189,7 @@ const post: BlogPost = {
 </ul>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude Code →</a>
+  <a href="https://claude.com/product/claude-code" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Claude Code →</a>
 </div>
 <h2>GitHub Copilot: Still the Best IDE Integration</h2>
 <p>GitHub Copilot is the category leader for a reason. Its IDE integration is seamless, its completions are fast, and at $10/month it is the most predictable cost in the category. Two years of usage data have refined its completions to the point where experienced developers accept 30–40% of suggestions without modification.</p>
@@ -225,7 +225,7 @@ const post: BlogPost = {
 </ul>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
+  <a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
@@ -250,7 +250,7 @@ const post: BlogPost = {
 <p>The choice between them is not really about which tool is "better." It is about which role you need the AI to play in your coding process.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
+  <a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.

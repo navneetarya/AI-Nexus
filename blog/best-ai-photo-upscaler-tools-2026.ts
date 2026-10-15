@@ -107,7 +107,7 @@ const post: BlogPost = {
   </ol>
 </nav>
 
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="An unpaired red sneaker photographed for an ecommerce product listing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="An unpaired red sneaker photographed for an ecommerce product listing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <h2 id="quick-summary">Best AI Image Upscaler in 2026</h2>
 <p> and most "best AI image upscaler" roundups are written for photographers preparing gallery prints. That's a real use case, but it's not the one bringing most people to this page. You're probably an ecommerce seller looking for an <strong>ai photo enhancer for ecommerce</strong> listing photos.</p>

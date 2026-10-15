@@ -27,7 +27,7 @@ const post: BlogPost = {
 
   content: `
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
-<img src="https://images.unsplash.com/photo-1630524274689-2950ac0fc91e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A coding workstation representing a text-to-speech API integration" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1630524274689-2950ac0fc91e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A coding workstation representing a text-to-speech API integration" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <p>"Text-to-speech software" and "AI voice generator" get used the same way, but they're not quite the same search. TTS software usually implies something more specific: an API you can build on, or a tool judged on language coverage and latency, not just how good one demo voice sounds.</p>
 

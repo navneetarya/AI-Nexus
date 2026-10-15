@@ -44,8 +44,8 @@ const post: BlogPost = {
     ],
   },
   outboundCitations: [
-    { url: 'https://openai.com/chatgpt/pricing/', label: 'OpenAI — ChatGPT Pricing' },
-    { url: 'https://www.anthropic.com/pricing', label: 'Anthropic — Claude Pricing' },
+    { url: 'https://chatgpt.com/pricing/', label: 'OpenAI — ChatGPT Pricing' },
+    { url: 'https://claude.com/pricing', label: 'Anthropic — Claude Pricing' },
     { url: 'https://gemini.google.com/', label: 'Google — Gemini' },
     { url: 'https://x.ai/grok', label: 'xAI — Grok' },
     { url: 'https://www.perplexity.ai/pro', label: 'Perplexity — Pro Plan' },
@@ -56,11 +56,16 @@ const post: BlogPost = {
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Is the Best AI Chatbot in 2026?</h2>
 <p>The best AI chatbot in 2026 depends on the job. <a href="/tools/chatgpt/">ChatGPT</a> (GPT-5.5) is the strongest all-rounder, and Claude 3.5 Sonnet is the sharpest for writing and analysis. Gemini pulls ahead on live data and Google Workspace integration, and <a href="/tools/perplexity/">Perplexity</a> wins when the real job is research with citations, not conversation.</p>
+<div style="margin:14px 0 24px;">
+  <p style="margin:0 0 6px;font-size:14px;">If research with citations is your main use:</p>
+  <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
+</div>
+
 <p>Gemini 3.1 Pro is the obvious pick if your life runs on Google Workspace. Grok 4.3 is the one to reach for when a question depends on what's happening right now.</p>
 <p>The AI chatbot market in 2026 is no longer about one clear winner. GPT-5.5, Claude 3.5 Sonnet, Gemini 3.1 Pro, Grok 4.3, and Perplexity Pro are all genuinely strong at different things. Picking the "best" one comes down to what you're actually trying to get done.</p>
 <p>This guide is built from official pricing pages, documented feature lists, and aggregated user reviews on G2, Trustpilot, and Reddit, not a single first-hand test run. Here's the honest, side-by-side comparison.</p>
 
-<img src="https://images.unsplash.com/photo-1762328862557-e0a36587cd3c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Smartphone screen displaying an AI assistant chat interface" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1762328862557-e0a36587cd3c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Smartphone screen displaying an AI assistant chat interface" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>Quick Comparison Table</h2>
 <div style="overflow-x:auto;margin:24px 0;">

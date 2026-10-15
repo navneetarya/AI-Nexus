@@ -95,7 +95,7 @@ const post: BlogPost = {
   <p style="margin:0;line-height:1.7;">Don't pick just one. Most heavy AI users on Reddit run two tools side by side — a chat-style model like Gemini for brainstorming, and a citation-based tool like Perplexity for anything that needs to be fact-checked. That combo alone replaces 90% of what ChatGPT Plus is used for.</p>
 </div>
 
-<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A MacBook Pro screen showing an AI chatbot interface" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A MacBook Pro screen showing an AI chatbot interface" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>How to Pick the Right Free ChatGPT Alternative</h2>
 <p>Not sure which one fits your workflow? Work through these four questions in order.</p>
@@ -174,7 +174,7 @@ const post: BlogPost = {
 
 <h2>2. Perplexity: The Best Free Alternative for Research</h2>
 <p><strong>Rating: 4.6/5 · Free plan: Unlimited basic searches, 5 Pro searches/day</strong></p>
-<p>Perplexity isn't trying to be ChatGPT. It's a research engine, and it's the best one you can get for free. Every answer comes with numbered links back to the source. That alone beats ChatGPT for any task where facts matter. See our full <a href="/tools/perplexity/" style="color:var(--a1);font-weight:600;">Perplexity review</a> for pricing tiers and hands-on notes.</p>
+<p>Perplexity isn't trying to be ChatGPT. It's a research engine, and it's the best one you can get for free. Every answer comes with numbered links back to the source. That alone beats ChatGPT for any task where facts matter. See our full <a href="/tools/perplexity/" style="color:var(--a1);font-weight:600;">Perplexity review</a> for pricing tiers and feature notes.</p>
 <p>Perplexity was used as the primary research tool for a two-week evaluation. For gathering information about AI tools, competitors, pricing, and features, it saved hours compared to manual Google searches. The "Focus" modes let you search specific domains: Academic, YouTube, Reddit, or the whole web.</p>
 <p><strong>Why it wins for research:</strong> When ChatGPT tells you something, you have to trust it or manually verify. When Perplexity tells you something, you can click the citation and check immediately. For freelancers, students, and anyone writing content, this is transformative.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2;">

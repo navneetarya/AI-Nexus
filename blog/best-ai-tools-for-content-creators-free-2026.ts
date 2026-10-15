@@ -94,7 +94,7 @@ const post: BlogPost = {
 <p>Rytr covers short-form copy when you're stuck, and Podcastle covers recording and cleaning up audio. Every one of these has a free plan generous enough for daily use, not just a trial.</p>
 <p>Most AI tool round-ups rank tools by feature count or star rating. That's useless for content creators who need to know one thing: <strong>what can I do for free, starting today?</strong></p>
 <p>Every tool in this guide was independently researched based on its free plan. Research documents exactly what the free tier does and doesn't include: not the marketing copy version, but what a new user actually encounters.</p>
-<img src="https://images.unsplash.com/photo-1554200876-907f9286c2a1?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Black condenser microphone next to a laptop, representing a free AI content creator toolkit" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1554200876-907f9286c2a1?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Black condenser microphone next to a laptop, representing a free AI content creator toolkit" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>The free plan details below reflect what you'll encounter when you sign up today, not what the tools advertise in their pricing headers.</p>
 <p>Tools with no truly functional free plan are excluded. That means tools where "free" means a 14-day trial that needs a credit card. Every tool below has a free tier you can use indefinitely or with a meaningful monthly allowance.</p>
 

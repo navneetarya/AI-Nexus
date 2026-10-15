@@ -70,8 +70,8 @@ const post: BlogPost = {
     ],
   },
   outboundCitations: [
-    { url: 'https://openai.com/chatgpt/pricing/', label: 'OpenAI — ChatGPT Pricing' },
-    { url: 'https://www.anthropic.com/pricing', label: 'Anthropic — Claude Pricing' },
+    { url: 'https://chatgpt.com/pricing/', label: 'OpenAI — ChatGPT Pricing' },
+    { url: 'https://claude.com/pricing', label: 'Anthropic — Claude Pricing' },
     { url: 'https://x.ai/grok', label: 'xAI — Grok' },
   ],
 
@@ -161,7 +161,7 @@ const post: BlogPost = {
 
 <h2>What Each AI Does Best for Writing</h2>
 
-<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Content creator reviewing posts on a laptop, comparing Grok 4, ChatGPT, and Claude output" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Content creator reviewing posts on a laptop, comparing Grok 4, ChatGPT, and Claude output" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h3>Grok 4: The Real-Time Writing Advantage</h3>
 <p>Grok 4's biggest edge for content creators is its deep tie to live data. ChatGPT and Claude treat web search as a bolt-on feature. Grok 4 is wired straight into X (formerly Twitter) and reads trending posts in real time.</p>

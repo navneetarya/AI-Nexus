@@ -88,7 +88,7 @@ const post: BlogPost = {
 </table>
 </div>
 
-<img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A network of connected nodes representing a shared AI integration protocol" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A network of connected nodes representing a shared AI integration protocol" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <div style="margin:14px 0 24px;">
   <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Read the Official MCP Spec →</a>
 </div>

@@ -34,7 +34,7 @@ const post: BlogPost = {
 
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
-<img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Sound waveform on a screen, representing AI voice generation pricing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Sound waveform on a screen, representing AI voice generation pricing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.</p>
 
 <div style="background:rgba(217,119,6,.08);border-left:4px solid #d97706;padding:14px 18px;border-radius:8px;margin:20px 0;"><strong style="color:#d97706;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Pricing warning</strong><p style="margin:8px 0 0;line-height:1.6;">Treat the first-month Creator discount as a promotion, not the ongoing price. Check the current plan page before budgeting for a recurring workflow.</p></div>
@@ -47,6 +47,11 @@ const post: BlogPost = {
 <h2>TL;DR: the actual monthly cost by plan</h2>
 
 <ol style="margin:12px 0 24px;padding-left:22px;line-height:1.9;"><li>Estimate your finished audio minutes for a normal month.</li><li>Choose the plan whose credit allowance covers that volume.</li><li>Check commercial rights and overage pricing before publishing.</li></ol>
+
+<div style="margin:14px 0 24px;">
+  <p style="margin:0 0 6px;font-size:14px;">Check the plan that fits your volume against your own text:</p>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+</div>
 
 <div style="overflow-x:auto;margin:28px 0">
   <table style="width:100%;border-collapse:collapse;font-size:14px">

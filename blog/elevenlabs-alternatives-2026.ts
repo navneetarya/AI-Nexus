@@ -27,7 +27,8 @@ const post: BlogPost = {
   myTake: "This guide uses live pricing pages and third-party benchmarks for every tool here as of August 2026, since two of these companies changed their pricing models entirely this year. If your job is a real-time voice agent, Cartesia genuinely beats ElevenLabs on speed, and that is worth knowing before you commit to one platform.",
 
   content: `
-<img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Corded headphones on a desk, representing AI voice technology" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" loading="lazy" />
+<p style="font-size:12px;opacity:.75;margin:0 0 16px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Corded headphones on a desk, representing AI voice technology" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <p>ElevenLabs earns its name. It's the most realistic AI voice tool out there, and for most people asking about alternatives, the honest answer is that ElevenLabs is still the right pick. But "most people" isn't everyone. Budget, language coverage, and API-first workflows are the three reasons people look elsewhere.</p>
 

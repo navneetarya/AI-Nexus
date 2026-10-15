@@ -135,7 +135,7 @@ const post: BlogPost = {
   <p style="margin:6px 0 0;font-size:14px;line-height:1.7;"><strong>Verdict:</strong> The best starting point for AI presentations in 2026. Upgrade to Plus once you're building more than one deck a month.</p>
 </div>
 
-<img src="https://images.unsplash.com/photo-1758519289013-9442fb2aeac6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Two people reviewing charts and a deck on a laptop screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1758519289013-9442fb2aeac6?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Two people reviewing charts and a deck on a laptop screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2 id="key-takeaways">Key Takeaways</h2>
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">

@@ -75,7 +75,7 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://fireflies.ai/pricing', label: 'Fireflies.ai — Official Pricing' },
     { url: 'https://otter.ai/pricing', label: 'Otter.ai — Official Pricing' },
-    { url: 'https://fathom.video/pricing', label: 'Fathom — Official Pricing' },
+    { url: 'https://www.fathom.ai/pricing', label: 'Fathom — Official Pricing' },
     { url: 'https://www.avoma.com/pricing', label: 'Avoma — Official Pricing' },
   ],
 
@@ -99,7 +99,7 @@ const post: BlogPost = {
 </nav>
 
 <h2 id="quick-summary">What Is the Best AI Meeting Tool in 2026?</h2>
-<img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A collaborative team meeting around a table with laptops" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A collaborative team meeting around a table with laptops" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>The best AI meeting tool in 2026 is Fireflies.ai for full meeting intelligence with CRM sync. Otter.ai is the pick if real-time live transcription matters most, and Fathom works well if you want an unlimited free plan with no credit card required. Which one earns its subscription depends on whether your priority is CRM automation, live accuracy, or simply not paying anything.</p>
 <p>AI meeting tools have crossed from "useful experiment" to "essential infrastructure" for remote and hybrid teams in 2026. The average knowledge worker spends 21.5 hours per week in meetings. Without an AI recorder, a significant portion of every discussion disappears unless someone was actively taking notes.</p>
 <p>The three leading tools in this category, Fireflies.ai, Otter.ai, and Fathom, each solve the same core problem: automatic meeting transcription with AI-generated summaries and action items. But they take meaningfully different approaches to pricing, integrations, and intelligence depth.</p>
@@ -229,7 +229,7 @@ const post: BlogPost = {
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
   <li>✅ Best real-time live transcription, visible on screen during the meeting</li>
   <li>✅ In-person meeting transcription via mobile; no video platform required</li>
-  <li>✅ Best-in-class for accessibility and educational use cases</li>
+  <li>✅ Strong fit for accessibility and educational use cases</li>
   <li>✅ Live highlights and comments available during the meeting</li>
   <li>✅ Integrates with Zoom, Teams, and Meet for auto-join on paid plans</li>
   <li>❌ More expensive than Fireflies at equivalent functionality ($16.99 vs $10/month)</li>
@@ -259,7 +259,7 @@ const post: BlogPost = {
   <li>❌ Meeting archive search less powerful than Fireflies on comparable paid tiers</li>
 </ul>
 <div style="margin:14px 0 24px;">
-  <a href="https://fathom.video" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Fathom Free →</a>
+  <a href="https://www.fathom.ai/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Fathom Free →</a>
 </div>
 
 <h2 id="best-for">Best For: Quick Match Guide</h2>

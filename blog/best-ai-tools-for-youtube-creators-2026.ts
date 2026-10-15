@@ -68,7 +68,7 @@ const post: BlogPost = {
   quickAnswer: 'Best AI tools for YouTube creators in 2026: Munch AI wins for repurposing intelligence that tells you what to publish next, with clip selection tied to your brand voice. ElevenLabs wins for voice cloning and narration realistic enough to replace a voice actor. Opus.pro wins for an automated Shorts pipeline that turns one long video into 8-12 clips in minutes.',
   myTake: "Navneet's take: Munch AI is the one is a strong choice for serious channel builders to first — the brand-voice learning loop is a genuine differentiator once you have a publishing history to feed it, not just marketing language. For a channel just starting out, that intelligence layer is wasted money; ElevenLabs plus Opus.pro's free plan covers the real bottleneck at that stage for under $10 a month.",
   outboundCitations: [
-    { url: 'https://www.getmunch.com/pricing', label: 'Munch AI — Official Pricing' },
+    { url: 'https://www.munchstudio.com/pricing', label: 'Munch AI — Official Pricing' },
     { url: 'https://elevenlabs.io/pricing', label: 'ElevenLabs — Official Pricing' },
     { url: 'https://www.opus.pro/pricing', label: 'Opus.pro — Official Pricing' },
     { url: 'https://vidiq.com/pricing/', label: 'VidIQ — Official Pricing' },
@@ -116,7 +116,7 @@ const post: BlogPost = {
   </p>
 </div>
 
-<img src="https://images.unsplash.com/photo-1636971828014-0f3493cba88a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creator typing on a keyboard next to editing software" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1636971828014-0f3493cba88a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creator typing on a keyboard next to editing software" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2 id="key-takeaways">Key Takeaways</h2>
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
@@ -377,7 +377,7 @@ const post: BlogPost = {
     <ul style="margin:0;padding-left:18px;font-size:14px;line-height:2;">
       <li>Most realistic AI voice quality available — 4.8/5 rated</li>
       <li>Voice cloning from minimal clean audio sample</li>
-      <li>Starter plan at $6/month — unbeatable price entry</li>
+      <li>Starter plan at $6/month — a low-cost entry point</li>
       <li>29+ language support for multilingual creators</li>
     </ul>
   </div>

@@ -161,7 +161,7 @@ const post: BlogPost = {
 </table>
 </div>
 
-<img src="https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Hands holding sticky notes labeled To Do, Doing, and Done in a workspace" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Hands holding sticky notes labeled To Do, Doing, and Done in a workspace" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>Taskade: AI-Native Project Management for Freelancers</h2>
 <p><strong>Free plan: Yes · Paid: from $8/month per workspace (not per user)</strong></p>

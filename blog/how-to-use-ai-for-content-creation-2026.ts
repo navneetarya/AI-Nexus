@@ -95,7 +95,7 @@ const post: BlogPost = {
   </ol>
 </div>
 
-<img src="https://images.unsplash.com/photo-1773332598413-a6d5279d1ae8?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person working on a laptop at a wooden desk, drafting written content" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1773332598413-a6d5279d1ae8?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person working on a laptop at a wooden desk, drafting written content" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>Part 1: AI for Written Content (Articles, Blog Posts, Social Captions)</h2>
 <p><strong>Tools covered: <a href="/tools/rytr/" style="color:var(--a1);font-weight:600;">Rytr</a> · <a href="/tools/grammarly/" style="color:var(--a1);font-weight:600;">Grammarly</a></strong></p>
@@ -267,7 +267,7 @@ const post: BlogPost = {
 </div>
 <p>The workflow in this guide minimises these failure modes by keeping humans in the editing loop at each stage. The tools handle volume and production speed; you handle accuracy, brand voice, and editorial judgment.</p>
 <p>That division of labour is what makes AI content creation genuinely useful in 2026. It's also what separates creators who get results from those who do not.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);">This guide reflects independent, hands-on workflow testing. See our <a href="/disclosure/">affiliate disclosure</a> and <a href="/methodology/">editorial methodology</a>.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);">This guide reflects independent research based on vendor documentation, pricing pages and G2/Trustpilot data. See our <a href="/disclosure/">affiliate disclosure</a> and <a href="/methodology/">editorial methodology</a>.</p>
   
 <p><strong>Related reading:</strong> <a href="/blog/best-ai-seo-content-optimization-tools-2026/">Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)</a>, <a href="/blog/how-to-use-rytr-to-write-blog-posts/">How to Use Rytr to Write Blog Posts (Step-by-Step, 2026)</a>, <a href="/blog/best-invideo-alternatives-2026/">Best InVideo AI Alternatives 2026</a>.</p>
 `.trim(),

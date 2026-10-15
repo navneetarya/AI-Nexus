@@ -163,7 +163,7 @@ const post: BlogPost = {
 
 <h2>#1 Grammarly: Best AI Writing Tool for Improving Your Own Writing</h2>
 <p><strong>Rating: 4.5/5 · Free plan: Unlimited grammar checks · Paid: $12/month</strong></p>
-<img src="/images/blog/best-ai-writing-tools-2026/grammarly-spec-card.svg" alt="Grammarly rating and pricing summary card" width="640" height="190" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:6px 0 14px;border-radius:12px;" />
+<img fetchpriority="high" src="/images/blog/best-ai-writing-tools-2026/grammarly-spec-card.svg" alt="Grammarly rating and pricing summary card" width="640" height="190" style="width:100%;height:auto;max-width:640px;margin:6px 0 14px;border-radius:12px;" />
 <p>Grammarly is the most widely used AI writing tool in the world, and for good reason. It runs as a browser extension, a desktop app, and inside Google Docs, integrating with 500+ apps so it works wherever you write.</p>
 <p>The free plan checks grammar, spelling, and punctuation with no word limit. The paid Premium plan ($12/month) adds real-time tone checks, full-sentence rewrites, a clarity score, and word choice tips.</p>
 <p><strong>What Grammarly does better than any other tool:</strong> it works in context. When you're writing a difficult client email, Grammarly's tone detector flags blunt or passive phrasing in real time, before you hit send.</p>
@@ -233,7 +233,7 @@ const post: BlogPost = {
 <p>Frase is the only tool on this list that combines SEO research and AI writing in a single workflow. Before you write a word, Frase analyses the top 20 Google search results for your target keyword.</p>
 <p>It shows you the topics, headers, and questions your competitors cover, and scores how thoroughly your draft covers them. The AI writer then generates content informed by that competitive research.</p>
 <p>This matters because most AI writing tools generate content in a vacuum. They don't know what's ranking for your keyword or what gaps you could fill to outrank existing pages. Frase's research layer turns AI writing from content generation into content strategy.</p>
-<p><strong>The honest trade-off:</strong> Frase's AI generative output is weaker than Writesonic's for pure long-form drafts. It is stronger for content briefs, outlines, and question-targeting: the SEO research workflow is truly best-in-class. Many content teams use both: Frase for the brief and research, Writesonic or Jasper for the draft.</p>
+<p><strong>The honest trade-off:</strong> Frase's AI generative output is weaker than Writesonic's for pure long-form drafts. It is stronger for content briefs, outlines, and question-targeting: the SEO research workflow is among the strongest in this list. Many content teams use both: Frase for the brief and research, Writesonic or Jasper for the draft.</p>
 <p><strong>Who should use Frase:</strong> Content marketers and SEO writers who publish at least 4–8 posts per month. It's the right fit if you need every post optimised for a specific target keyword. The $15/month Solo plan (4 documents/month) is tight, so consider the Basic plan at $45/month if you publish weekly.</p>
 
 <div style="margin:14px 0 24px;">

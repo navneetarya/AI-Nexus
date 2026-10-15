@@ -95,7 +95,7 @@ const post: BlogPost = {
 </blockquote>
 
 <h2>What Are the Best Free AI Tools for Students in 2026?</h2>
-<img src="https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black laptop computer open on a desk, used for free AI study tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black laptop computer open on a desk, used for free AI study tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>The best free AI tools for students in 2026 are Grammarly for essay editing, QuillBot for paraphrasing and summarising research, Perplexity for cited research answers, and Replit for coding assignments. Unlike most "free" lists, all four run on permanent free plans rather than trials that expire before a deadline.</p>
 <p>Most "AI tools for students" lists recommend tools with 7-day free trials that expire before your next assignment deadline. Every tool in this guide has a permanent free plan that covers real, ongoing student workloads.</p>
 <p>Each has been independently researched across the use cases that actually come up in university life. Think last-minute essay drafts, long research paper summaries, citation-heavy paraphrasing, coding bugs at midnight, and tight presentation deadlines.</p>
@@ -239,7 +239,7 @@ const post: BlogPost = {
 <p><strong>For students with GitHub Student Developer Pack access</strong> (free through your student email): GitHub Copilot is included, giving AI code completion inside VS Code and JetBrains. If you are comfortable with a local development environment, Copilot is more powerful for complex tasks. But for students who need something that works immediately without setup, Replit is the faster path.</p>
 
 <div style="margin:14px 0 24px;">
-  <a href="https://replit.com/refer/navneetarya1989" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
+  <a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.

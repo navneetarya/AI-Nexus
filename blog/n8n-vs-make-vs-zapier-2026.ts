@@ -111,7 +111,7 @@ const post: BlogPost = {
 </div>
 
 <h2>How to Choose in 3 Steps</h2>
-<img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Close-up of a laptop screen showing connected workflow nodes" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Close-up of a laptop screen showing connected workflow nodes" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <ol style="margin:12px 0 20px 24px;line-height:1.9;">
   <li><strong>Check your technical resources.</strong> No developer on the team points to Zapier. A developer comfortable with Docker points to n8n self-hosted.</li>
   <li><strong>Estimate your monthly volume.</strong> Under a few hundred runs a month, pricing barely matters. Past a few thousand, Zapier's task-based billing gets expensive fast — model your real workflow against each platform's billing unit before committing.</li>

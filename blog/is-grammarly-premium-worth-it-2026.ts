@@ -119,7 +119,7 @@ const post: BlogPost = {
 <p><strong>No, for casual or student writers.</strong> If you primarily write occasional emails, assignments, or personal content, the free plan catches the errors that matter most. The Premium features are genuinely useful. They're just not useful enough to justify $144/year for infrequent writing.</p>
 <p>The honest answer depends on one question: are you hitting the limits of the free plan? If the answer is yes, upgrade. If you haven't noticed what the free plan is missing, you don't need Premium yet.</p>
 
-<img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Person typing on a laptop keyboard, checking their writing with Grammarly" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Person typing on a laptop keyboard, checking their writing with Grammarly" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
 <h2>What Grammarly Free Includes</h2>
 <p>Grammarly's free plan is more capable than most users realise. It provides:</p>
