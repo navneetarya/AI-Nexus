@@ -250,7 +250,8 @@ const post: BlogPost = {
 <p>Jobscan is a really powerful diagnostic most job seekers only need for a focused month, not a year-round subscription. Start free with Teal, and add Rezi or Jobscan once a specific gap appears. Treat any paid tier here as a short, targeted expense tied to an active search, not a permanent subscription line item.</p>
   
 <p><strong>Related reading:</strong> <a href="/blog/how-to-beat-ats-resume-screening-2026/">How to Beat ATS Resume Screening in 2026 (What Actually Works)</a>.</p>
-`.trim(),
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `.trim(),
   wordCount: 2695,
   proscons: {
     pros: [

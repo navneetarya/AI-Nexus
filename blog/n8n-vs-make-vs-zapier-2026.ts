@@ -294,6 +294,7 @@ const post: BlogPost = {
   <a href="/tools/n8n/" style="display:inline-block;color:#0D9488;padding:10px 4px 0 0;margin:6px 8px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full n8n review →</a>
   <a href="/tools/zapier/" style="display:inline-block;color:#0D9488;padding:10px 4px 0 0;margin:6px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Zapier review →</a>
 </div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
   `.trim(),
   wordCount: 2670,
   proscons: {

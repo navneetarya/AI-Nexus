@@ -159,7 +159,8 @@ const post: BlogPost = {
 <p><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
   <li><strong>Faster growth in emerging markets:</strong> India, Southeast Asia, and Latin America are the fastest-growing markets by new AI tool users in 2026. English-language AI tools are the main entry point. But local language support (Hindi, Bahasa, Spanish) matters more and more for the next 100 million users.</li>
 </ol>
-`
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `
 };
 
 export default post;

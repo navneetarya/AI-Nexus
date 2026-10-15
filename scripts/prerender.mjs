@@ -318,6 +318,39 @@ function injectMidArticleCTA(blogContent, post, canonical) {
   return blogContent.slice(0, target) + cta + blogContent.slice(target);
 }
 
+// ── T1: heading ids + "In this article" jump list for blog posts ───────────
+// Mirrors the logic in pages/BlogPostPage.tsx so crawlers and AI engines see the
+// same anchors and table of contents that readers get after hydration.
+// - Every H2/H3 gets an id (hand-written ids are kept; generated ids are de-duplicated).
+// - A jump list is returned when the post has 3+ H2s.
+function addHeadingIdsAndToc(html) {
+  if (!html) return { html, tocHtml: '' };
+  const used = new Set();
+  for (const m of html.matchAll(/<h[23]\b[^>]*\bid\s*=\s*["']([^"']+)["']/gi)) used.add(m[1]);
+  const toc = [];
+  const out = html.replace(/<(h[23])\b([^>]*)>([\s\S]*?)<\/\1>/gi, (full, tag, attrs, inner) => {
+    const text = inner.replace(/<[^>]+>/g, '').trim();
+    const existing = /\bid\s*=\s*["']([^"']+)["']/i.exec(attrs);
+    let id;
+    let outTag = full;
+    if (existing) {
+      id = existing[1];
+    } else {
+      const base = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'section';
+      id = base;
+      for (let n = 2; used.has(id); n++) id = `${base}-${n}`;
+      used.add(id);
+      outTag = `<${tag}${attrs} id="${id}">${inner}</${tag}>`;
+    }
+    if (tag.toLowerCase() === 'h2' && text) toc.push({ id, text });
+    return outTag;
+  });
+  const tocHtml = toc.length >= 3
+    ? `<nav aria-label="Table of contents" style="background:#f8fafa;border:1px solid #e5e7eb;border-radius:10px;padding:14px 20px;margin:0 0 28px;font-size:14px"><p style="font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:0 0 8px;color:#0F1C1A">In this article</p><ol style="margin:0;padding:0 0 0 18px;line-height:1.7">${toc.map(t => `<li><a href="#${t.id}" style="color:#0D9488;text-decoration:none">${t.text}</a></li>`).join('')}</ol></nav>`
+    : '';
+  return { html: out, tocHtml };
+}
+
 // ── Tool data (mirrors constants.ts) ─────────────────────────────────────────
 // Slug order matches constants.ts — do not reorder without updating that file.
 const TOOLS = [
@@ -7197,7 +7230,7 @@ for (const post of BLOG_POSTS) {
       [3, post.title, canonical],
     ]),
     // FIX 4 (GEO-Critical): Speakable — marks excerpt/intro for AI engine citation
-    speakableSchema(canonical, ['h1', '.post-excerpt', 'h2:first-of-type']),
+    speakableSchema(canonical, ['h1', '[data-speakable="quick-answer"]', '.post-excerpt', 'h2:first-of-type']),
     ...(post.faqs.length > 0 ? [faqSchema(post.faqs)] : []),
     // FIX 8 (AEO-Critical): HowTo schema — numbered step rich results for how-to posts
     ...(post.slug.startsWith('how-to-') && post.howToSteps?.length
@@ -7236,6 +7269,10 @@ for (const post of BLOG_POSTS) {
 
   // C1 Fix: Blog content was pre-loaded above (before schemas) to support TASK 1.
   // I-21 Fix: insert inline share/newsletter CTA at ~50% of post body
+  // T1: ids on every H2/H3 + jump list (runs before the mid-article CTA so the CTA's own heading is not listed)
+  const headingPass = addHeadingIdsAndToc(blogContent);
+  blogContent = headingPass.html;
+  const blogTocHtml = headingPass.tocHtml;
   blogContent = injectMidArticleCTA(blogContent, post, canonical);
 
   // H-01 Audit Fix: Quick Answer box — featured snippet target. If post has a quickAnswer
@@ -7292,7 +7329,7 @@ for (const post of BLOG_POSTS) {
       `</ul></div>`
     : '';
   const fullBodyHtml = blogContent
-    ? `${authorBylineHtml}${quickAnswerHtml}${quickCtaHtml}<div data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333;margin-bottom:20px">${esc(post.metaDescription)}</div>${blogContent}${faqHtml}${blogRelatedHtml}`
+    ? `${authorBylineHtml}${quickAnswerHtml}${quickCtaHtml}<div data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333;margin-bottom:20px">${esc(post.metaDescription)}</div>${blogTocHtml}${blogContent}${faqHtml}${blogRelatedHtml}`
     : `${authorBylineHtml}${quickAnswerHtml}${quickCtaHtml}<p data-speakable="summary" class="post-excerpt" style="font-size:1rem;line-height:1.6;color:#333">${esc(post.metaDescription)}</p>${faqHtml}${blogRelatedHtml}`;
 
   let html = buildPage(template, {

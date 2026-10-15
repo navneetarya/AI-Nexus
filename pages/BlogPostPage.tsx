@@ -297,25 +297,34 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
   // Which FAQ accordion row is expanded (null = all collapsed)
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
 
-  // Extract h2 headings from raw content for the Table of Contents
-  const tocItems = useMemo(() => {
-    const matches = [...post.content.matchAll(/<h2[^>]*>(.*?)<\/h2>/gi)];
-    return matches.map(m => {
-      const text = m[1].replace(/<[^>]+>/g, '').trim();
-      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      return { text, id };
-    });
-  }, [post.slug]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // H5: auto-linked blog content — memoised so it only re-runs when post changes
-  // Also injects id attributes into h2 tags for TOC anchor links
-  const linkedContent = useMemo(() => {
+  // H5 + T1: auto-linked blog content, plus an id on every H2/H3 and the Table of Contents list.
+  // Memoised so it only re-runs when the post changes. Mirrors addHeadingIdsAndToc() in
+  // scripts/prerender.mjs: hand-written ids are kept (the old code appended a second id attribute,
+  // so the TOC link could point at an id that did not exist), generated ids are de-duplicated,
+  // and H3s get ids too.
+  const { tocItems, linkedContent } = useMemo(() => {
     const withLinks = autoLinkToolMentions(post.content, C.a1);
-    return withLinks.replace(/<h2([^>]*)>(.*?)<\/h2>/gi, (_match, attrs, inner) => {
+    const used = new Set<string>();
+    for (const m of withLinks.matchAll(/<h[23]\b[^>]*\bid\s*=\s*["']([^"']+)["']/gi)) used.add(m[1]);
+    const toc: { text: string; id: string }[] = [];
+    const html = withLinks.replace(/<(h[23])\b([^>]*)>([\s\S]*?)<\/\1>/gi, (full: string, tag: string, attrs: string, inner: string) => {
       const text = inner.replace(/<[^>]+>/g, '').trim();
-      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      return `<h2${attrs} id="${id}">${inner}</h2>`;
+      const existing = /\bid\s*=\s*["']([^"']+)["']/i.exec(attrs);
+      let id: string;
+      let out = full;
+      if (existing) {
+        id = existing[1];
+      } else {
+        const base = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'section';
+        id = base;
+        for (let n = 2; used.has(id); n++) id = `${base}-${n}`;
+        used.add(id);
+        out = `<${tag}${attrs} id="${id}">${inner}</${tag}>`;
+      }
+      if (tag.toLowerCase() === 'h2' && text) toc.push({ text, id });
+      return out;
     });
+    return { tocItems: toc, linkedContent: html };
   }, [post.slug]); // eslint-disable-line react-hooks/exhaustive-deps
   // Bounce-audit fix: Pros & Cons should sit directly after the comparison table —
   // the point where a reader actually forms a decision — instead of always at the
@@ -560,6 +569,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
         {(answerBlock?.answer || post.excerpt) && (
           <div
             className="post-excerpt"
+            data-speakable="quick-answer"
             style={{
               background: C.a1card,
               border: `1px solid ${C.a1brd}`,

@@ -225,7 +225,8 @@ const post: BlogPost = {
 <p>The honest truth: most serious faceless YouTube creators end up using two of these tools in combination. Pictory or InVideo for video creation, Murf for voiceovers, and Opus Clip to generate short-form content from the same videos. At $19/month each, two of these tools still cost less than a single freelance video editor per video.</p>
 
 <p><strong>Related reading:</strong> <a href="/blog/best-ai-tools-for-youtubers-2026/">Best AI Tools for YouTubers in 2026</a>.</p>
-`,
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `,
 };
 
 export default post;

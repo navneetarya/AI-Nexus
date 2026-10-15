@@ -172,7 +172,8 @@ const post: BlogPost = {
 </div>
 
 <p><strong>Related reading:</strong> <a href="/blog/llm-api-pricing-comparison-2026/">Claude vs GPT vs Gemini API Pricing (Aug 2026)</a>, <a href="/blog/murf-ai-pricing-2026/">Murf AI Pricing</a>.</p>
-`,
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `,
 
   faqs: [
     { q: 'How many words is 10,000 ElevenLabs credits?', a: 'On the standard Multilingual v2 model, one character costs one credit, so 10,000 credits is roughly 10,000 characters — approximately 1,600–2,000 words of script, or about ten minutes of finished speech. Using the faster Flash model roughly doubles that, since Flash costs about half a credit per character.' },

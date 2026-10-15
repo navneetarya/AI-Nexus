@@ -137,7 +137,8 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs' Starter plan →</a>
 </div>
-`,
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `,
 
   faqs: [
     { q: 'Can I monetize a YouTube video that uses ElevenLabs\' free plan?', a: 'No. ElevenLabs\' Free plan explicitly excludes commercial usage rights and requires attribution on any output. You need at least the Starter plan ($6/month) to legally monetize a video using ElevenLabs-generated audio.' },

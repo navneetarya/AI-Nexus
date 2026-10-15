@@ -223,7 +223,8 @@ const post: BlogPost = {
 <p>Rosie is purpose-built for trades. But budget for its $149/month Scale tier if you actually need live appointment booking rather than a texted link. Dialzara remains the cheapest way to test the category at all. Goodcall's per-customer billing suits predictable-volume, multi-location operations best.</p>
 <p>Editorial verdict based on the pricing pages: the tool you pick matters less than reading the overage terms. Do that before you sign up. Rosie's minute pool and Goodcall's per-customer cap both look generous on the pricing page.</p>
 <p>Both get tight faster than the marketing copy implies. That happens once a business actually gets the call volume these tools are supposed to capture.</p>
-`,
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `,
 
   faqs: [
     {

@@ -258,7 +258,8 @@ const post: BlogPost = {
 <p>It is not a Google replacement. It is a Google supplement that handles the search jobs Google has always done poorly. The users getting the most value from Perplexity are those who have stopped trying to make it replace everything. Instead they route specific query types to it, the ones where a synthesised answer beats ten links every time.</p>
 
 <p><strong>Related reading:</strong> <a href="/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/">ChatGPT Atlas vs Perplexity Comet vs Dia (2026)</a>, <a href="/blog/best-notion-ai-alternatives-2026/">Best Notion AI Alternatives 2026</a>.</p>
-`,
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `,
 };
 
 export default post;

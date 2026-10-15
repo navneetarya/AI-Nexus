@@ -238,7 +238,8 @@ const post: BlogPost = {
 </div>
   
 <p><strong>Related reading:</strong> <a href="/blog/how-to-beat-ats-resume-screening-2026/">How to Beat ATS Resume Screening in 2026 (What Actually Works)</a>.</p>
-`.trim(),
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `.trim(),
   wordCount: 1890,
   proscons: {
     pros: [

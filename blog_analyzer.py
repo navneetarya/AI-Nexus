@@ -603,7 +603,9 @@ class Analyzer:
         dup = [t for t, n in c.items() if n > 1]
         if dup: self.add(p, "dup-headings", "organic", "low", f"Duplicate headings: {', '.join(d[:40] for d in dup[:3])}.", "Make headings unique.", "S", key="|".join(dup[:3]))
         with_id = sum(1 for h in hs if h[2])
-        if with_id >= len(hs) * 0.5 and len(hs) - with_id >= 2:
+        # T1: pages/BlogPostPage.tsx and scripts/prerender.mjs add an id to every H2/H3 at render time
+        # (addHeadingIdsAndToc), so hand-written ids are optional. Re-enable by changing False to True.
+        if False and with_id >= len(hs) * 0.5 and len(hs) - with_id >= 2:
             miss = [h[1][:40] for h in hs if not h[2]][:4]
             self.add(p, "heading-no-id", "organic", "low", f"{len(hs) - with_id} headings lack id attributes (no deep links/jump links).", "Add id=\"slug\" to every H2/H3.", "S", key=str(len(hs) - with_id), snippet=", ".join(miss))
         q = sum(1 for h in hs if h[1].rstrip().endswith("?") or h[1].lower().startswith(QUESTION_STEMS))
@@ -777,7 +779,10 @@ class Analyzer:
         else:
             n = len(words_of(qa))
             if n < 30 or n > 85: self.add(p, "qa-length", "ai", "low", f"quickAnswer is {n} words (ideal 40-60).", "Tighten/expand to 40-60 words.", "S", snippet=qa[:200], key=str(n))
-        if "data-speakable" not in p.content: self.add(p, "speakable", "ai", "low", "No data-speakable block in content.", "Wrap the quick answer in data-speakable=\"quick-answer\".", "S")
+        # T2: the quickAnswer / answer-blocks box is rendered with data-speakable="quick-answer" by
+        # BlogPostPage.tsx and prerender.mjs, and the Speakable schema targets it. Only flag posts with no such box.
+        has_rendered_qa = bool(qa) or bool((self.site.answer_blocks.get(p.slug) or {}).get("answer"))
+        if "data-speakable" not in p.content and not has_rendered_qa: self.add(p, "speakable", "ai", "low", "No data-speakable block in content.", "Wrap the quick answer in data-speakable=\"quick-answer\".", "S")
         need = 5 if kind in ("roundup", "comparison", "alternatives", "pricing", "review") else 3
         f = p.faqs
         if len(f) < 3: self.add(p, "faq-few", "ai", "high", f"Only {len(f)} FAQ(s).", f"Add FAQs to reach {need}+ (use real 'People also ask' queries).", "M", key=str(len(f)))
@@ -839,7 +844,9 @@ class Analyzer:
         lists = len(re.findall(r"<(?:ul|ol)\b", p.content, re.I))
         if p.words > 1000 and lists < 2: self.add(p, "few-lists", "reader", "low", f"Only {lists} list(s) in {p.words} words.", "Convert enumerations into bullet/numbered lists.", "S", key=str(lists))
         anchors = [l for l in p.links if l["href"].startswith("#")]
-        if p.words > 2500 and not anchors: self.add(p, "no-toc", "reader", "low", "Long post without a table of contents / jump links.", "Add a 'Jump to' list linking to H2 ids.", "S")
+        # T1: the renderer adds an "In this article" jump list to any post with 3+ H2s.
+        h2_count = len(re.findall(r"<h2\b", p.content, re.I))
+        if p.words > 2500 and not anchors and h2_count < 3: self.add(p, "no-toc", "reader", "low", "Long post without a table of contents / jump links.", "Add a 'Jump to' list linking to H2 ids.", "S")
         if kind in ("roundup", "comparison", "alternatives", "review") and not re.search(r"\b(?:cons|downsides?|limitations?|drawbacks?|who should (?:not|skip)|not for|skip (?:it|this) if)\b", p.text, re.I) and not p.has_proscons:
             self.add(p, "no-negatives", "trust", "high", "No cons/limitations anywhere — reads as a pure affiliate pitch.", "Add 'Cons / who should skip' per tool; balanced reviews convert and rank better.", "M")
         slop = []

@@ -214,6 +214,7 @@ const post: BlogPost = {
 </div>
 <p>The honest summary: there's no trick that reliably beats a modern ATS. The tools that actually work are the boring ones — a clean, parseable format, language that genuinely matches what the role is asking for, and a free check before you hit submit.</p>
 <p>Save the paid tools for once you've confirmed, specifically, which gap they're closing for you.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
   `.trim(),
   wordCount: 1990,
   proscons: {

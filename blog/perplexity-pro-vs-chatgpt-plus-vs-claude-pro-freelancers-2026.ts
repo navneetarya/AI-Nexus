@@ -284,7 +284,8 @@ const post: BlogPost = {
 </div>
   
 <p><strong>Related reading:</strong> <a href="/blog/best-nano-banana-pro-alternatives-2026/">Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)</a>, <a href="/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/">ChatGPT Atlas vs Perplexity Comet vs Dia (2026)</a>, <a href="/blog/perplexity-ai-review-2026/">Perplexity AI Review 2026</a>.</p>
-`.trim(),
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `.trim(),
 };
 
 export default post;

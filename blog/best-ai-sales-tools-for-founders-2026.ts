@@ -213,7 +213,8 @@ const post: BlogPost = {
 </ol>
 <p>Editorial verdict based on every pricing page directly: the biggest mistake in this category isn't picking the "wrong" tool among these five. The real mistake is signing up for Clay's $185/month Launch plan, or Instantly's full modular stack, before Apollo's free plan has even told you whether your outbound message works at all.</p>
 <p>Prove the message first, cheaply, then layer in the specialized tools once a specific, named bottleneck shows up.</p>
-`,
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+  `,
 
   faqs: [
     {
