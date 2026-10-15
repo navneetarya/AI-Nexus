@@ -1,777 +1,222 @@
 {
-  "generated_at": "2026-10-01T12:10:38.960Z",
-  "count": 199,
+  "generated_at": "2026-10-15T10:38:40.914Z",
+  "count": 223,
   "queries": [
     {
       "id": "q1",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "What are the best AI writing tools in 2026?",
-      "target_page_hint": "/category/writing",
-      "source": "cluster-template"
+      "cluster": "blog-best-ai-presentation-tools-2026",
+      "category": "Design",
+      "query": "What are the best AI presentation makers in 2026?",
+      "target_page_hint": "/blog/best-ai-presentation-tools-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q2",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "Best AI writing tool for beginners?",
-      "target_page_hint": "/category/writing",
-      "source": "cluster-template"
+      "cluster": "blog-best-ai-presentation-tools-2026",
+      "category": "Design",
+      "query": "Gamma vs other AI presentation tools: which one should I use?",
+      "target_page_hint": "/blog/best-ai-presentation-tools-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q3",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "Which AI writing tool is worth paying for?",
-      "target_page_hint": "/category/writing",
-      "source": "cluster-template"
+      "cluster": "blog-best-ai-presentation-tools-2026",
+      "category": "Design",
+      "query": "Is there a free AI tool that makes PowerPoint slides from a prompt?",
+      "target_page_hint": "/blog/best-ai-presentation-tools-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q4",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "Cheapest AI writing tool with a free plan?",
-      "target_page_hint": "/category/writing",
-      "source": "cluster-template"
+      "cluster": "blog-best-ai-presentation-tools-2026",
+      "category": "Design",
+      "query": "Which AI presentation tool is best for a business pitch deck?",
+      "target_page_hint": "/blog/best-ai-presentation-tools-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q5",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "What AI writing tool should a small business use?",
-      "target_page_hint": "/category/writing",
-      "source": "cluster-template"
+      "cluster": "blog-best-ai-headshot-tools-linkedin-2026",
+      "category": "image",
+      "query": "What is the best AI headshot generator for LinkedIn?",
+      "target_page_hint": "/blog/best-ai-headshot-tools-linkedin-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q6",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "Best AI writing tool for solopreneurs and freelancers?",
-      "target_page_hint": "/category/writing",
-      "source": "cluster-template"
+      "cluster": "blog-best-ai-headshot-tools-linkedin-2026",
+      "category": "image",
+      "query": "Are AI headshots good enough for a professional LinkedIn profile?",
+      "target_page_hint": "/blog/best-ai-headshot-tools-linkedin-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q7",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "Is Writesonic worth it in 2026?",
-      "target_page_hint": "/tools/writesonic",
-      "source": "tool-template"
+      "cluster": "blog-best-ai-headshot-tools-linkedin-2026",
+      "category": "image",
+      "query": "HeadshotPro vs Aragon vs BetterPic: which AI headshot tool is best?",
+      "target_page_hint": "/blog/best-ai-headshot-tools-linkedin-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q8",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "Writesonic pricing and features — is it good?",
-      "target_page_hint": "/tools/writesonic",
-      "source": "tool-template"
+      "cluster": "blog-best-ai-headshot-tools-linkedin-2026",
+      "category": "image",
+      "query": "Which AI headshot generators have a refund policy?",
+      "target_page_hint": "/blog/best-ai-headshot-tools-linkedin-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q9",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "Is Rytr worth it in 2026?",
-      "target_page_hint": "/tools/rytr",
-      "source": "tool-template"
+      "cluster": "blog-best-ai-agents-for-small-business-2026",
+      "category": "Productivity",
+      "query": "What are the best AI agents for a small business in 2026?",
+      "target_page_hint": "/blog/best-ai-agents-for-small-business-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q10",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "Rytr pricing and features — is it good?",
-      "target_page_hint": "/tools/rytr",
-      "source": "tool-template"
+      "cluster": "blog-best-ai-agents-for-small-business-2026",
+      "category": "Productivity",
+      "query": "Which AI agent platform is easiest for a non-technical small business owner?",
+      "target_page_hint": "/blog/best-ai-agents-for-small-business-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q11",
-      "cluster": "cluster-writing",
-      "category": "writing",
-      "query": "Writesonic vs Rytr — which is better?",
-      "target_page_hint": "/compare/writesonic-vs-rytr",
-      "source": "comparison-template"
+      "cluster": "blog-best-ai-agents-for-small-business-2026",
+      "category": "Productivity",
+      "query": "Can a small business automate customer support and lead follow-up with AI agents?",
+      "target_page_hint": "/blog/best-ai-agents-for-small-business-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q12",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "What are the best AI image tools in 2026?",
-      "target_page_hint": "/category/image",
-      "source": "cluster-template"
+      "cluster": "blog-relevance-ai-vs-lindy-vs-gumloop-2026",
+      "category": "Productivity",
+      "query": "Relevance AI vs Lindy vs Gumloop: which is better?",
+      "target_page_hint": "/blog/relevance-ai-vs-lindy-vs-gumloop-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q13",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "Best AI image tool for beginners?",
-      "target_page_hint": "/category/image",
-      "source": "cluster-template"
+      "cluster": "blog-relevance-ai-vs-lindy-vs-gumloop-2026",
+      "category": "Productivity",
+      "query": "Lindy vs Gumloop for no-code AI workflows",
+      "target_page_hint": "/blog/relevance-ai-vs-lindy-vs-gumloop-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q14",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "Which AI image tool is worth paying for?",
-      "target_page_hint": "/category/image",
-      "source": "cluster-template"
+      "cluster": "blog-relevance-ai-vs-lindy-vs-gumloop-2026",
+      "category": "Productivity",
+      "query": "Is Relevance AI worth it for building AI agents without code?",
+      "target_page_hint": "/blog/relevance-ai-vs-lindy-vs-gumloop-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q15",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "Cheapest AI image tool with a free plan?",
-      "target_page_hint": "/category/image",
-      "source": "cluster-template"
+      "cluster": "blog-best-ai-music-generator-tools-2026",
+      "category": "Audio",
+      "query": "What is the best AI music generator in 2026?",
+      "target_page_hint": "/blog/best-ai-music-generator-tools-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q16",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "What AI image tool should a small business use?",
-      "target_page_hint": "/category/image",
-      "source": "cluster-template"
+      "cluster": "blog-best-ai-music-generator-tools-2026",
+      "category": "Audio",
+      "query": "Can I use Suno or Udio music commercially?",
+      "target_page_hint": "/blog/best-ai-music-generator-tools-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q17",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "Best AI image tool for solopreneurs and freelancers?",
-      "target_page_hint": "/category/image",
-      "source": "cluster-template"
+      "cluster": "blog-best-ai-music-generator-tools-2026",
+      "category": "Audio",
+      "query": "Which AI music generator is safe to use for YouTube videos?",
+      "target_page_hint": "/blog/best-ai-music-generator-tools-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q18",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "Is Leonardo.ai worth it in 2026?",
-      "target_page_hint": "/tools/leonardo-ai",
-      "source": "tool-template"
+      "cluster": "blog-best-ai-voice-generators-2026",
+      "category": "Audio",
+      "query": "What is the best AI voice generator in 2026?",
+      "target_page_hint": "/blog/best-ai-voice-generators-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q19",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "Leonardo.ai pricing and features — is it good?",
-      "target_page_hint": "/tools/leonardo-ai",
-      "source": "tool-template"
+      "cluster": "blog-best-ai-voice-generators-2026",
+      "category": "Audio",
+      "query": "ElevenLabs vs Murf: which AI voice generator should I choose?",
+      "target_page_hint": "/blog/best-ai-voice-generators-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q20",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "Is PhotoRoom worth it in 2026?",
-      "target_page_hint": "/tools/photoroom",
-      "source": "tool-template"
+      "cluster": "blog-best-ai-voice-generators-2026",
+      "category": "Audio",
+      "query": "Do free AI voice generators allow commercial use?",
+      "target_page_hint": "/blog/best-ai-voice-generators-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q21",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "PhotoRoom pricing and features — is it good?",
-      "target_page_hint": "/tools/photoroom",
-      "source": "tool-template"
+      "cluster": "blog-ai-tools-for-solopreneurs-2026",
+      "category": "Productivity",
+      "query": "What AI tools should a solopreneur use in 2026?",
+      "target_page_hint": "/blog/ai-tools-for-solopreneurs-2026",
+      "source": "priority-post",
+      "priority": true
     },
     {
       "id": "q22",
-      "cluster": "cluster-image",
-      "category": "image",
-      "query": "Leonardo.ai vs PhotoRoom — which is better?",
-      "target_page_hint": "/compare/leonardo-ai-vs-photoroom",
-      "source": "comparison-template"
+      "cluster": "blog-best-ai-photo-retouching-tools-2026",
+      "category": "Image",
+      "query": "What are the Best AI Photo Retouching Tools?",
+      "target_page_hint": "/blog/best-ai-photo-retouching-tools-2026",
+      "source": "blog-title-template"
     },
     {
       "id": "q23",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "What are the best AI video tools in 2026?",
-      "target_page_hint": "/category/video",
-      "source": "cluster-template"
+      "cluster": "blog-lovable-vs-wegic-vs-readdy-vs-creao-2026",
+      "category": "Design",
+      "query": "What is the Lovable vs Wegic vs Readdy vs CREAO?",
+      "target_page_hint": "/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026",
+      "source": "blog-title-template"
     },
     {
       "id": "q24",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "Best AI video tool for beginners?",
-      "target_page_hint": "/category/video",
-      "source": "cluster-template"
+      "cluster": "blog-domain-renewal-prices-compared-2026",
+      "category": "Design",
+      "query": "What is the Domain Renewal Prices Compared?",
+      "target_page_hint": "/blog/domain-renewal-prices-compared-2026",
+      "source": "blog-title-template"
     },
     {
       "id": "q25",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "Which AI video tool is worth paying for?",
-      "target_page_hint": "/category/video",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q26",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "Cheapest AI video tool with a free plan?",
-      "target_page_hint": "/category/video",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q27",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "What AI video tool should a small business use?",
-      "target_page_hint": "/category/video",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q28",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "Best AI video tool for solopreneurs and freelancers?",
-      "target_page_hint": "/category/video",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q29",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "Is Pictory worth it in 2026?",
-      "target_page_hint": "/tools/pictory",
-      "source": "tool-template"
-    },
-    {
-      "id": "q30",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "Pictory pricing and features — is it good?",
-      "target_page_hint": "/tools/pictory",
-      "source": "tool-template"
-    },
-    {
-      "id": "q31",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "Is Opus Clip worth it in 2026?",
-      "target_page_hint": "/tools/opus-clip",
-      "source": "tool-template"
-    },
-    {
-      "id": "q32",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "Opus Clip pricing and features — is it good?",
-      "target_page_hint": "/tools/opus-clip",
-      "source": "tool-template"
-    },
-    {
-      "id": "q33",
-      "cluster": "cluster-video",
-      "category": "video",
-      "query": "Pictory vs Opus Clip — which is better?",
-      "target_page_hint": "/compare/pictory-vs-opus-clip",
-      "source": "comparison-template"
-    },
-    {
-      "id": "q34",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "What are the best AI audio tools in 2026?",
-      "target_page_hint": "/category/audio",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q35",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "Best AI audio tool for beginners?",
-      "target_page_hint": "/category/audio",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q36",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "Which AI audio tool is worth paying for?",
-      "target_page_hint": "/category/audio",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q37",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "Cheapest AI audio tool with a free plan?",
-      "target_page_hint": "/category/audio",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q38",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "What AI audio tool should a small business use?",
-      "target_page_hint": "/category/audio",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q39",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "Best AI audio tool for solopreneurs and freelancers?",
-      "target_page_hint": "/category/audio",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q40",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "Is Murf AI worth it in 2026?",
-      "target_page_hint": "/tools/murf-ai",
-      "source": "tool-template"
-    },
-    {
-      "id": "q41",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "Murf AI pricing and features — is it good?",
-      "target_page_hint": "/tools/murf-ai",
-      "source": "tool-template"
-    },
-    {
-      "id": "q42",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "Is Podcastle worth it in 2026?",
-      "target_page_hint": "/tools/podcastle",
-      "source": "tool-template"
-    },
-    {
-      "id": "q43",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "Podcastle pricing and features — is it good?",
-      "target_page_hint": "/tools/podcastle",
-      "source": "tool-template"
-    },
-    {
-      "id": "q44",
-      "cluster": "cluster-audio",
-      "category": "audio",
-      "query": "Murf AI vs Podcastle — which is better?",
-      "target_page_hint": "/compare/murf-ai-vs-podcastle",
-      "source": "comparison-template"
-    },
-    {
-      "id": "q45",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "What are the best AI design tools in 2026?",
-      "target_page_hint": "/category/design",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q46",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "Best AI design tool for beginners?",
-      "target_page_hint": "/category/design",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q47",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "Which AI design tool is worth paying for?",
-      "target_page_hint": "/category/design",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q48",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "Cheapest AI design tool with a free plan?",
-      "target_page_hint": "/category/design",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q49",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "What AI design tool should a small business use?",
-      "target_page_hint": "/category/design",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q50",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "Best AI design tool for solopreneurs and freelancers?",
-      "target_page_hint": "/category/design",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q51",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "Is Gamma worth it in 2026?",
-      "target_page_hint": "/tools/gamma",
-      "source": "tool-template"
-    },
-    {
-      "id": "q52",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "Gamma pricing and features — is it good?",
-      "target_page_hint": "/tools/gamma",
-      "source": "tool-template"
-    },
-    {
-      "id": "q53",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "Is Beautiful.ai worth it in 2026?",
-      "target_page_hint": "/tools/beautiful-ai",
-      "source": "tool-template"
-    },
-    {
-      "id": "q54",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "Beautiful.ai pricing and features — is it good?",
-      "target_page_hint": "/tools/beautiful-ai",
-      "source": "tool-template"
-    },
-    {
-      "id": "q55",
-      "cluster": "cluster-design",
-      "category": "design",
-      "query": "Gamma vs Beautiful.ai — which is better?",
-      "target_page_hint": "/compare/gamma-vs-beautiful-ai",
-      "source": "comparison-template"
-    },
-    {
-      "id": "q56",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "What are the best AI marketing tools in 2026?",
-      "target_page_hint": "/category/marketing",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q57",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "Best AI marketing tool for beginners?",
-      "target_page_hint": "/category/marketing",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q58",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "Which AI marketing tool is worth paying for?",
-      "target_page_hint": "/category/marketing",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q59",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "Cheapest AI marketing tool with a free plan?",
-      "target_page_hint": "/category/marketing",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q60",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "What AI marketing tool should a small business use?",
-      "target_page_hint": "/category/marketing",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q61",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "Best AI marketing tool for solopreneurs and freelancers?",
-      "target_page_hint": "/category/marketing",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q62",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "Is Ocoya worth it in 2026?",
-      "target_page_hint": "/tools/ocoya",
-      "source": "tool-template"
-    },
-    {
-      "id": "q63",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "Ocoya pricing and features — is it good?",
-      "target_page_hint": "/tools/ocoya",
-      "source": "tool-template"
-    },
-    {
-      "id": "q64",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "Is GetResponse worth it in 2026?",
-      "target_page_hint": "/tools/getresponse",
-      "source": "tool-template"
-    },
-    {
-      "id": "q65",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "GetResponse pricing and features — is it good?",
-      "target_page_hint": "/tools/getresponse",
-      "source": "tool-template"
-    },
-    {
-      "id": "q66",
-      "cluster": "cluster-marketing",
-      "category": "marketing",
-      "query": "Ocoya vs GetResponse — which is better?",
-      "target_page_hint": "/compare/ocoya-vs-getresponse",
-      "source": "comparison-template"
-    },
-    {
-      "id": "q67",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "What are the best AI coding tools in 2026?",
-      "target_page_hint": "/category/coding",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q68",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "Best AI coding tool for beginners?",
-      "target_page_hint": "/category/coding",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q69",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "Which AI coding tool is worth paying for?",
-      "target_page_hint": "/category/coding",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q70",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "Cheapest AI coding tool with a free plan?",
-      "target_page_hint": "/category/coding",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q71",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "What AI coding tool should a small business use?",
-      "target_page_hint": "/category/coding",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q72",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "Best AI coding tool for solopreneurs and freelancers?",
-      "target_page_hint": "/category/coding",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q73",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "Is Replit worth it in 2026?",
-      "target_page_hint": "/tools/replit",
-      "source": "tool-template"
-    },
-    {
-      "id": "q74",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "Replit pricing and features — is it good?",
-      "target_page_hint": "/tools/replit",
-      "source": "tool-template"
-    },
-    {
-      "id": "q75",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "Is Cursor worth it in 2026?",
-      "target_page_hint": "/tools/cursor",
-      "source": "tool-template"
-    },
-    {
-      "id": "q76",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "Cursor pricing and features — is it good?",
-      "target_page_hint": "/tools/cursor",
-      "source": "tool-template"
-    },
-    {
-      "id": "q77",
-      "cluster": "cluster-coding",
-      "category": "coding",
-      "query": "Replit vs Cursor — which is better?",
-      "target_page_hint": "/compare/replit-vs-cursor",
-      "source": "comparison-template"
-    },
-    {
-      "id": "q78",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "What are the best AI productivity tools in 2026?",
-      "target_page_hint": "/category/productivity",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q79",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "Best AI productivity tool for beginners?",
-      "target_page_hint": "/category/productivity",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q80",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "Which AI productivity tool is worth paying for?",
-      "target_page_hint": "/category/productivity",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q81",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "Cheapest AI productivity tool with a free plan?",
-      "target_page_hint": "/category/productivity",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q82",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "What AI productivity tool should a small business use?",
-      "target_page_hint": "/category/productivity",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q83",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "Best AI productivity tool for solopreneurs and freelancers?",
-      "target_page_hint": "/category/productivity",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q84",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "Is Taskade worth it in 2026?",
-      "target_page_hint": "/tools/taskade",
-      "source": "tool-template"
-    },
-    {
-      "id": "q85",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "Taskade pricing and features — is it good?",
-      "target_page_hint": "/tools/taskade",
-      "source": "tool-template"
-    },
-    {
-      "id": "q86",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "Is Fireflies.ai worth it in 2026?",
-      "target_page_hint": "/tools/fireflies",
-      "source": "tool-template"
-    },
-    {
-      "id": "q87",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "Fireflies.ai pricing and features — is it good?",
-      "target_page_hint": "/tools/fireflies",
-      "source": "tool-template"
-    },
-    {
-      "id": "q88",
-      "cluster": "cluster-productivity",
-      "category": "productivity",
-      "query": "Taskade vs Fireflies.ai — which is better?",
-      "target_page_hint": "/compare/taskade-vs-fireflies",
-      "source": "comparison-template"
-    },
-    {
-      "id": "q89",
-      "cluster": "cluster-headshot",
-      "category": "headshot",
-      "query": "What are the best AI headshot tools in 2026?",
-      "target_page_hint": "/category/headshot",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q90",
-      "cluster": "cluster-headshot",
-      "category": "headshot",
-      "query": "Best AI headshot tool for beginners?",
-      "target_page_hint": "/category/headshot",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q91",
-      "cluster": "cluster-headshot",
-      "category": "headshot",
-      "query": "Which AI headshot tool is worth paying for?",
-      "target_page_hint": "/category/headshot",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q92",
-      "cluster": "cluster-headshot",
-      "category": "headshot",
-      "query": "Cheapest AI headshot tool with a free plan?",
-      "target_page_hint": "/category/headshot",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q93",
-      "cluster": "cluster-headshot",
-      "category": "headshot",
-      "query": "What AI headshot tool should a small business use?",
-      "target_page_hint": "/category/headshot",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q94",
-      "cluster": "cluster-headshot",
-      "category": "headshot",
-      "query": "Best AI headshot tool for solopreneurs and freelancers?",
-      "target_page_hint": "/category/headshot",
-      "source": "cluster-template"
-    },
-    {
-      "id": "q95",
-      "cluster": "cluster-headshot",
-      "category": "headshot",
-      "query": "Is HeadshotPro worth it in 2026?",
-      "target_page_hint": "/tools/headshotpro",
-      "source": "tool-template"
-    },
-    {
-      "id": "q96",
-      "cluster": "cluster-headshot",
-      "category": "headshot",
-      "query": "HeadshotPro pricing and features — is it good?",
-      "target_page_hint": "/tools/headshotpro",
-      "source": "tool-template"
-    },
-    {
-      "id": "q97",
       "cluster": "blog-launch-an-ai-built-website-2026",
       "category": "Design",
       "query": "What is the How to Launch an AI-Built Website in?",
@@ -779,7 +224,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q98",
+      "id": "q26",
       "cluster": "blog-ai-voice-cloning-pricing-comparison-2026",
       "category": "Audio",
       "query": "What is the AI Voice Cloning Pricing Compared?",
@@ -787,7 +232,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q99",
+      "id": "q27",
       "cluster": "blog-best-ai-voice-cloning-for-podcasts-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Cloning for Podcasts?",
@@ -795,7 +240,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q100",
+      "id": "q28",
       "cluster": "blog-best-ai-tool-lifetime-deals-appsumo-2026",
       "category": "Productivity",
       "query": "What are the Best AI Tool Lifetime Deals on AppSumo in 2026 — How to Actually Save Money?",
@@ -803,7 +248,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q101",
+      "id": "q29",
       "cluster": "blog-best-gamma-alternatives-2026",
       "category": "Design",
       "query": "What are the Best Gamma AI Alternatives 2026 — Beautiful.ai vs Canva AI vs NotebookLM vs Pi?",
@@ -811,7 +256,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q102",
+      "id": "q30",
       "cluster": "blog-best-ai-spreadsheet-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Spreadsheet Tools?",
@@ -819,7 +264,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q103",
+      "id": "q31",
       "cluster": "blog-best-ai-transcription-software-2026",
       "category": "Audio",
       "query": "What are the Best AI Transcription Software?",
@@ -827,7 +272,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q104",
+      "id": "q32",
       "cluster": "blog-best-ai-dubbing-tools-2026",
       "category": "Audio",
       "query": "What are the Best AI Dubbing Tools?",
@@ -835,7 +280,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q105",
+      "id": "q33",
       "cluster": "blog-murf-ai-pricing-2026",
       "category": "Audio",
       "query": "What is the Murf AI Pricing?",
@@ -843,7 +288,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q106",
+      "id": "q34",
       "cluster": "blog-how-to-beat-ats-resume-screening-2026",
       "category": "Productivity",
       "query": "What is the How to Beat ATS Resume Screening in 2026 (What Actually Works)?",
@@ -851,7 +296,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q107",
+      "id": "q35",
       "cluster": "blog-elevenlabs-youtube-commercial-rights-2026",
       "category": "Audio",
       "query": "What is the Can I use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)?",
@@ -859,7 +304,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q108",
+      "id": "q36",
       "cluster": "blog-elevenlabs-pricing-character-credits-2026",
       "category": "Audio",
       "query": "What is the ElevenLabs Pricing?",
@@ -867,7 +312,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q109",
+      "id": "q37",
       "cluster": "blog-gamma-ai-review-2026",
       "category": "Design",
       "query": "What is the Gamma AI Review?",
@@ -875,7 +320,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q110",
+      "id": "q38",
       "cluster": "blog-best-ai-voice-generators-for-voiceovers-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Generators for Voiceovers?",
@@ -883,7 +328,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q111",
+      "id": "q39",
       "cluster": "blog-best-ai-voice-generators-for-podcasts-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Generators for Podcasts?",
@@ -891,7 +336,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q112",
+      "id": "q40",
       "cluster": "blog-best-ai-voice-cloning-tools-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Cloning Tools?",
@@ -899,7 +344,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q113",
+      "id": "q41",
       "cluster": "blog-best-ai-voice-for-faceless-youtube-channels",
       "category": "Audio",
       "query": "What are the Best AI Voice for Faceless YouTube Channels?",
@@ -907,7 +352,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q114",
+      "id": "q42",
       "cluster": "blog-best-ai-voice-generators-for-youtube-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Generators for YouTube?",
@@ -915,7 +360,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q115",
+      "id": "q43",
       "cluster": "blog-murf-ai-alternatives-2026",
       "category": "Audio",
       "query": "What is the Murf AI Alternatives?",
@@ -923,7 +368,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q116",
+      "id": "q44",
       "cluster": "blog-elevenlabs-alternatives-2026",
       "category": "Audio",
       "query": "What is the ElevenLabs Alternatives?",
@@ -931,7 +376,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q117",
+      "id": "q45",
       "cluster": "blog-best-text-to-speech-software-2026",
       "category": "Audio",
       "query": "What are the Best Text-to-Speech Software?",
@@ -939,7 +384,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q118",
+      "id": "q46",
       "cluster": "blog-best-ai-voice-generators-2026",
       "category": "Audio",
       "query": "What are the Best AI Voice Generators?",
@@ -947,7 +392,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q119",
+      "id": "q47",
       "cluster": "blog-best-ai-interview-prep-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Interview Prep Tools?",
@@ -955,7 +400,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q120",
+      "id": "q48",
       "cluster": "blog-best-ai-seo-content-optimization-tools-2026",
       "category": "Marketing",
       "query": "What are the Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)?",
@@ -963,7 +408,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q121",
+      "id": "q49",
       "cluster": "blog-best-ai-music-generator-tools-2026",
       "category": "Audio",
       "query": "What are the Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)?",
@@ -971,7 +416,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q122",
+      "id": "q50",
       "cluster": "blog-best-ai-website-builders-2026",
       "category": "Design",
       "query": "What are the Best AI Website Builders?",
@@ -979,7 +424,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q123",
+      "id": "q51",
       "cluster": "blog-best-ai-sales-tools-for-founders-2026",
       "category": "Marketing",
       "query": "What are the Best AI Sales Tools for Founders 2026 (Apollo vs Clay vs Instantly vs Smartlead)?",
@@ -987,7 +432,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q124",
+      "id": "q52",
       "cluster": "blog-best-ai-receptionist-small-business-2026",
       "category": "Productivity",
       "query": "What are the Best AI Receptionist for Small Business in 2026 (Pricing & Feature Comparison)?",
@@ -995,7 +440,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q125",
+      "id": "q53",
       "cluster": "blog-best-ai-photo-upscaler-tools-2026",
       "category": "Image",
       "query": "What are the Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration?",
@@ -1003,7 +448,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q126",
+      "id": "q54",
       "cluster": "blog-best-ai-ad-creative-generator-tools-2026",
       "category": "Marketing",
       "query": "What are the Best AI Ad Creative Generator Tools 2026 (Tested for Solo Founders & Small Teams)?",
@@ -1011,7 +456,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q127",
+      "id": "q55",
       "cluster": "blog-best-nano-banana-pro-alternatives-2026",
       "category": "Image",
       "query": "What are the Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)?",
@@ -1019,7 +464,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q128",
+      "id": "q56",
       "cluster": "blog-best-ai-voice-agent-small-business-2026",
       "category": "Productivity",
       "query": "What are the Best AI Voice Agent Platforms for Small Business in 2026 (2026 Pricing & Feature Comparison)?",
@@ -1027,7 +472,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q129",
+      "id": "q57",
       "cluster": "blog-emergent-ai-explained-2026",
       "category": "Productivity",
       "query": "What is the What Is Emergent AI? Emergent Abilities Explained (2026 Guide)?",
@@ -1035,7 +480,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q130",
+      "id": "q58",
       "cluster": "blog-chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
       "category": "Productivity",
       "query": "What is the ChatGPT Atlas vs Perplexity Comet vs Dia (2026)?",
@@ -1043,7 +488,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q131",
+      "id": "q59",
       "cluster": "blog-best-ai-resume-builder-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Resume Builder Tools?",
@@ -1051,7 +496,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q132",
+      "id": "q60",
       "cluster": "blog-best-ai-voice-dictation-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Voice Dictation Tools?",
@@ -1059,7 +504,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q133",
+      "id": "q61",
       "cluster": "blog-ai-contract-analysis-tools-2026",
       "category": "Productivity",
       "query": "What is the AI Contract Analysis Tools?",
@@ -1067,7 +512,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q134",
+      "id": "q62",
       "cluster": "blog-claude-code-alternatives-2026",
       "category": "Coding",
       "query": "What is the Claude Code Alternatives?",
@@ -1075,7 +520,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q135",
+      "id": "q63",
       "cluster": "blog-llm-api-pricing-comparison-2026",
       "category": "Coding",
       "query": "What is the Claude vs GPT vs Gemini API Pricing (Aug 2026)?",
@@ -1083,7 +528,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q136",
+      "id": "q64",
       "cluster": "blog-relevance-ai-vs-lindy-vs-gumloop-2026",
       "category": "Productivity",
       "query": "What is the Relevance AI vs Lindy vs Gumloop?",
@@ -1091,7 +536,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q137",
+      "id": "q65",
       "cluster": "blog-multi-agent-ai-systems-explained-2026",
       "category": "Coding",
       "query": "What is the Multi-Agent AI Systems Explained?",
@@ -1099,7 +544,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q138",
+      "id": "q66",
       "cluster": "blog-best-ai-presentation-tools-2026",
       "category": "Design",
       "query": "What are the Best AI Presentation Tools?",
@@ -1107,7 +552,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q139",
+      "id": "q67",
       "cluster": "blog-best-ai-video-generators-2026",
       "category": "Video",
       "query": "What are the Best AI Video Generators?",
@@ -1115,7 +560,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q140",
+      "id": "q68",
       "cluster": "blog-ai-tools-for-solopreneurs-2026",
       "category": "Productivity",
       "query": "What is the AI for Solopreneurs?",
@@ -1123,7 +568,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q141",
+      "id": "q69",
       "cluster": "blog-best-ai-coding-agents-2026",
       "category": "Coding",
       "query": "What are the Best AI Coding Agents?",
@@ -1131,7 +576,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q142",
+      "id": "q70",
       "cluster": "blog-best-ai-agents-customer-service-2026",
       "category": "Productivity",
       "query": "What are the Best AI Agents for Customer Service?",
@@ -1139,7 +584,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q143",
+      "id": "q71",
       "cluster": "blog-ai-tools-cost-roi-calculator-2026",
       "category": "Productivity",
       "query": "What is the AI Tools ROI Calculator?",
@@ -1147,7 +592,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q144",
+      "id": "q72",
       "cluster": "blog-best-ai-recruitment-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Recruitment Tools?",
@@ -1155,7 +600,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q145",
+      "id": "q73",
       "cluster": "blog-best-no-code-ai-automation-tools-2026",
       "category": "Productivity",
       "query": "What are the Best No-Code AI Automation Tools 2026 — 11 Platforms Ranked?",
@@ -1163,7 +608,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q146",
+      "id": "q74",
       "cluster": "blog-n8n-vs-make-vs-zapier-2026",
       "category": "Productivity",
       "query": "What is the n8n vs Make vs Zapier?",
@@ -1171,7 +616,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q147",
+      "id": "q75",
       "cluster": "blog-what-is-mcp-model-context-protocol-2026",
       "category": "Productivity",
       "query": "What is the What is MCP (Model Context Protocol)? The AI Integration Standard Explained?",
@@ -1179,7 +624,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q148",
+      "id": "q76",
       "cluster": "blog-ai-agents-vs-ai-automation-difference-2026",
       "category": "Productivity",
       "query": "What is the AI Agents vs AI Automation?",
@@ -1187,7 +632,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q149",
+      "id": "q77",
       "cluster": "blog-best-ai-agents-for-small-business-2026",
       "category": "Productivity",
       "query": "What are the Best AI Agents for Small Business 2026 — Ranked & Compared?",
@@ -1195,7 +640,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q150",
+      "id": "q78",
       "cluster": "blog-best-ai-meeting-tools-2026",
       "category": "Productivity",
       "query": "What are the Best AI Meeting Tools 2026 — Ranked & Compared?",
@@ -1203,7 +648,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q151",
+      "id": "q79",
       "cluster": "blog-best-ai-tools-for-youtube-creators-2026",
       "category": "Video",
       "query": "What are the Best AI Tools for YouTube Creators 2026 — Expert Picks?",
@@ -1211,7 +656,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q152",
+      "id": "q80",
       "cluster": "blog-best-ai-email-marketing-tools-2026",
       "category": "Marketing",
       "query": "What are the Best AI Email Marketing Tools 2026 — Ranked?",
@@ -1219,7 +664,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q153",
+      "id": "q81",
       "cluster": "blog-cursor-ai-review-2026",
       "category": "Coding",
       "query": "What is the Cursor AI Review?",
@@ -1227,7 +672,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q154",
+      "id": "q82",
       "cluster": "blog-best-ai-headshot-tools-linkedin-2026",
       "category": "image",
       "query": "What are the Best AI Headshot Tools for LinkedIn in 2026 — Researched & Ranked?",
@@ -1235,7 +680,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q155",
+      "id": "q83",
       "cluster": "blog-best-vibe-coding-tools-2026",
       "category": "Coding",
       "query": "What are the Best Vibe Coding Tools?",
@@ -1243,7 +688,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q156",
+      "id": "q84",
       "cluster": "blog-gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",
       "category": "AI Chatbots",
       "query": "What is the GPT-5.5 vs Claude Opus 4.8 vs Grok 4?",
@@ -1251,7 +696,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q157",
+      "id": "q85",
       "cluster": "blog-ai-ecosystem-growth-report-2026",
       "category": "Research",
       "query": "What is the AI Ecosystem Growth Report 2026 — Market Trends & Tool Adoption?",
@@ -1259,7 +704,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q158",
+      "id": "q86",
       "cluster": "blog-cheapest-ai-coding-tools-2026",
       "category": "Coding",
       "query": "What is the Cheapest AI Coding Tools in 2026 — Real Pricing, Compared?",
@@ -1267,7 +712,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q159",
+      "id": "q87",
       "cluster": "blog-fastest-growing-ai-startups-2026",
       "category": "Research",
       "query": "What is the Fastest Growing AI Startups in 2026 — Independent Research?",
@@ -1275,7 +720,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q160",
+      "id": "q88",
       "cluster": "blog-best-free-ai-tool-plans-2026",
       "category": "Research",
       "query": "What are the Best Free AI Tool Plans in 2026 — What You Actually Get for Nothing?",
@@ -1283,7 +728,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q161",
+      "id": "q89",
       "cluster": "blog-ai-api-pricing-comparison-2026",
       "category": "Research",
       "query": "What is the AI API Pricing Comparison 2026 — OpenAI vs Anthropic vs Google vs Meta?",
@@ -1291,7 +736,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q162",
+      "id": "q90",
       "cluster": "blog-best-ai-tools-for-startups-2026",
       "category": "Productivity",
       "query": "What are the Best AI Tools for Startups in 2026 — Build Faster With Less?",
@@ -1299,7 +744,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q163",
+      "id": "q91",
       "cluster": "blog-best-ai-tools-for-youtubers-2026",
       "category": "Video",
       "query": "What are the Best AI Tools for YouTubers in 2026 — Reviewed for Creators?",
@@ -1307,7 +752,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q164",
+      "id": "q92",
       "cluster": "blog-best-ai-tools-for-automation-engineers-2026",
       "category": "Coding",
       "query": "What are the Best AI Tools for Automation Engineers in 2026 — Independently Reviewed?",
@@ -1315,7 +760,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q165",
+      "id": "q93",
       "cluster": "blog-best-ai-tools-for-developers-2026",
       "category": "Coding",
       "query": "What are the Best AI Tools for Developers in 2026 — Reviewed & Ranked?",
@@ -1323,7 +768,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q166",
+      "id": "q94",
       "cluster": "blog-chatgpt-free-vs-claude-free-vs-gemini-free-2026",
       "category": "AI Comparison",
       "query": "What is the ChatGPT Free vs Claude Free vs Gemini Free?",
@@ -1331,7 +776,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q167",
+      "id": "q95",
       "cluster": "blog-perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026",
       "category": "Productivity",
       "query": "What is the Perplexity Pro vs ChatGPT Plus vs Claude Pro?",
@@ -1339,7 +784,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q168",
+      "id": "q96",
       "cluster": "blog-best-ai-writing-tools-for-beginners-2026",
       "category": "Writing",
       "query": "What are the Best AI Writing Tools for Beginners 2026 — Reviewed & Ranked?",
@@ -1347,7 +792,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q169",
+      "id": "q97",
       "cluster": "blog-best-ai-tools-for-freelancers-2026",
       "category": "Productivity",
       "query": "What are the Best AI Tools for Freelancers 2026 — Work Faster, Earn More?",
@@ -1355,7 +800,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q170",
+      "id": "q98",
       "cluster": "blog-best-grammarly-alternatives",
       "category": "Writing",
       "query": "What are the Best Grammarly Alternatives in 2026 — Reviewed & Ranked?",
@@ -1363,7 +808,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q171",
+      "id": "q99",
       "cluster": "blog-best-podcastle-alternatives",
       "category": "Audio",
       "query": "What are the Best Podcastle Alternatives in 2026 — For Podcasters Who Need More?",
@@ -1371,7 +816,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q172",
+      "id": "q100",
       "cluster": "blog-best-ai-tools-for-social-media-2026",
       "category": "Social Media",
       "query": "What are the Best AI Tools for Social Media 2026 — Create, Schedule & Grow Faster?",
@@ -1379,7 +824,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q173",
+      "id": "q101",
       "cluster": "blog-how-to-use-rytr-to-write-blog-posts",
       "category": "Writing",
       "query": "What is the How to Use Rytr to Write Blog Posts (Step-by-Step, 2026)?",
@@ -1387,7 +832,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q174",
+      "id": "q102",
       "cluster": "blog-ai-tools-for-students-free-2026",
       "category": "Students",
       "query": "What are the Best Free AI Tools for Students 2026 — Essays, Research, Coding & Presentations?",
@@ -1395,7 +840,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q175",
+      "id": "q103",
       "cluster": "blog-best-ai-podcast-tools-2026",
       "category": "Audio",
       "query": "What are the Best AI Podcast Tools 2026 — Record, Edit & Enhance Your Show?",
@@ -1403,7 +848,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q176",
+      "id": "q104",
       "cluster": "blog-best-notion-ai-alternatives-2026",
       "category": "Productivity",
       "query": "What are the Best Notion AI Alternatives 2026 — Independently Reviewed & Ranked?",
@@ -1411,7 +856,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q177",
+      "id": "q105",
       "cluster": "blog-best-invideo-alternatives-2026",
       "category": "Video",
       "query": "What are the Best InVideo AI Alternatives 2026 — Reviewed for Faceless YouTube?",
@@ -1419,7 +864,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q178",
+      "id": "q106",
       "cluster": "blog-jasper-ai-alternatives",
       "category": "Writing",
       "query": "What are the Best Jasper AI Alternatives in 2026 — Cheaper & Reviewed?",
@@ -1427,7 +872,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q179",
+      "id": "q107",
       "cluster": "blog-chatgpt-alternatives-free-2026",
       "category": "Writing",
       "query": "What are the Best Free ChatGPT Alternatives in?",
@@ -1435,7 +880,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q180",
+      "id": "q108",
       "cluster": "blog-best-ai-coding-tools-2026",
       "category": "Coding",
       "query": "What are the Best AI Coding Tools in 2026 — Independently Reviewed & Ranked?",
@@ -1443,7 +888,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q181",
+      "id": "q109",
       "cluster": "blog-best-ai-logo-makers-free-2026",
       "category": "india",
       "query": "What are the Best Free AI Logo Makers in 2026 — Including INR Pricing for India?",
@@ -1451,7 +896,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q182",
+      "id": "q110",
       "cluster": "blog-best-ai-marketing-tools-2026",
       "category": "Marketing",
       "query": "What are the Best AI Marketing Tools in 2026 — For SEO, Social & Content?",
@@ -1459,7 +904,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q183",
+      "id": "q111",
       "cluster": "blog-ai-tools-for-teachers-2026",
       "category": "Productivity",
       "query": "What are the Best AI Tools for Teachers in 2026 — Save Hours Every Week?",
@@ -1467,7 +912,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q184",
+      "id": "q112",
       "cluster": "blog-best-midjourney-alternatives-2026",
       "category": "Image",
       "query": "What are the Best Midjourney Alternatives in 2026 — Free & Paid Options Compared?",
@@ -1475,7 +920,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q185",
+      "id": "q113",
       "cluster": "blog-how-to-use-ai-for-content-creation-2026",
       "category": "Guides",
       "query": "What is the How to Use AI for Content Creation in 2026 — Full Workflow (Writing, Images, Video & Audio)?",
@@ -1483,7 +928,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q186",
+      "id": "q114",
       "cluster": "blog-best-ai-tools-in-india-2026",
       "category": "Productivity",
       "query": "What are the Best AI Tools in India 2026 — INR Pricing, Free Plans & Honest Reviews?",
@@ -1491,7 +936,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q187",
+      "id": "q115",
       "cluster": "blog-best-ai-tools-for-freelancers-india-2026",
       "category": "india",
       "query": "What are the Best AI Tools for Freelancers in India 2026 — Free Plans, INR Pricing & What Actually Works?",
@@ -1499,7 +944,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q188",
+      "id": "q116",
       "cluster": "blog-best-free-ai-tools-for-students-in-india-2026",
       "category": "Students",
       "query": "What are the Best Free AI Tools for Students in India 2026 — No Dollar Card, No VPN?",
@@ -1507,7 +952,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q189",
+      "id": "q117",
       "cluster": "blog-best-ai-tools-for-content-creators-free-2026",
       "category": "Marketing",
       "query": "What are the Best Free AI Tools for Content Creators 2026 — Reviewed?",
@@ -1515,7 +960,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q190",
+      "id": "q118",
       "cluster": "blog-taskade-vs-notion-vs-asana-2026",
       "category": "Productivity",
       "query": "What is the Taskade vs Notion vs Asana 2026 — 3-Way Comparison for Freelancers?",
@@ -1523,7 +968,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q191",
+      "id": "q119",
       "cluster": "blog-leonardo-vs-midjourney-2026",
       "category": "Image",
       "query": "What is the Leonardo.ai vs Midjourney 2026 — Free Plan Comparison (Which Is Worth It?)?",
@@ -1531,7 +976,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q192",
+      "id": "q120",
       "cluster": "blog-best-ai-writing-tools-2026",
       "category": "Writing",
       "query": "What are the Best AI Writing Tools 2026 — Reviewed, Ranked & Compared?",
@@ -1539,7 +984,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q193",
+      "id": "q121",
       "cluster": "blog-best-free-ai-writing-tools-2026",
       "category": "Writing",
       "query": "What are the Best Free AI Writing Tools 2026 — 5 Tools With No Credit Card Required?",
@@ -1547,7 +992,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q194",
+      "id": "q122",
       "cluster": "blog-is-grammarly-premium-worth-it-2026",
       "category": "Writing",
       "query": "What is the Is Grammarly Premium Worth It in 2026? — Honest Answer After 400+ Reviews?",
@@ -1555,7 +1000,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q195",
+      "id": "q123",
       "cluster": "blog-grok-4-vs-chatgpt-vs-claude-content-creators-2026",
       "category": "Writing",
       "query": "What is the Grok 4 vs ChatGPT vs Claude?",
@@ -1563,7 +1008,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q196",
+      "id": "q124",
       "cluster": "blog-google-gemini-ai-review-2026",
       "category": "Writing",
       "query": "What is the Google Gemini AI Review?",
@@ -1571,7 +1016,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q197",
+      "id": "q125",
       "cluster": "blog-claude-code-vs-github-copilot-vs-replit-2026",
       "category": "Coding",
       "query": "What is the Claude Code vs GitHub Copilot vs Replit?",
@@ -1579,7 +1024,7 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q198",
+      "id": "q126",
       "cluster": "blog-perplexity-ai-review-2026",
       "category": "Productivity",
       "query": "What is the Perplexity AI Review?",
@@ -1587,12 +1032,780 @@
       "source": "blog-title-template"
     },
     {
-      "id": "q199",
+      "id": "q127",
       "cluster": "blog-best-ai-chatbot-2026",
       "category": "Guides",
       "query": "What are the Best AI Chatbot?",
       "target_page_hint": "/blog/best-ai-chatbot-2026",
       "source": "blog-title-template"
+    },
+    {
+      "id": "q128",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "What are the best AI writing tools in 2026?",
+      "target_page_hint": "/category/writing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q129",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "Best AI writing tool for beginners?",
+      "target_page_hint": "/category/writing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q130",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "Which AI writing tool is worth paying for?",
+      "target_page_hint": "/category/writing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q131",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "Cheapest AI writing tool with a free plan?",
+      "target_page_hint": "/category/writing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q132",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "What AI writing tool should a small business use?",
+      "target_page_hint": "/category/writing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q133",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "Best AI writing tool for solopreneurs and freelancers?",
+      "target_page_hint": "/category/writing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q134",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "Is Writesonic worth it in 2026?",
+      "target_page_hint": "/tools/writesonic",
+      "source": "tool-template"
+    },
+    {
+      "id": "q135",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "Writesonic pricing and features — is it good?",
+      "target_page_hint": "/tools/writesonic",
+      "source": "tool-template"
+    },
+    {
+      "id": "q136",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "Is Rytr worth it in 2026?",
+      "target_page_hint": "/tools/rytr",
+      "source": "tool-template"
+    },
+    {
+      "id": "q137",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "Rytr pricing and features — is it good?",
+      "target_page_hint": "/tools/rytr",
+      "source": "tool-template"
+    },
+    {
+      "id": "q138",
+      "cluster": "cluster-writing",
+      "category": "writing",
+      "query": "Writesonic vs Rytr — which is better?",
+      "target_page_hint": "/compare/writesonic-vs-rytr",
+      "source": "comparison-template"
+    },
+    {
+      "id": "q139",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "What are the best AI image tools in 2026?",
+      "target_page_hint": "/category/image",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q140",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "Best AI image tool for beginners?",
+      "target_page_hint": "/category/image",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q141",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "Which AI image tool is worth paying for?",
+      "target_page_hint": "/category/image",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q142",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "Cheapest AI image tool with a free plan?",
+      "target_page_hint": "/category/image",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q143",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "What AI image tool should a small business use?",
+      "target_page_hint": "/category/image",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q144",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "Best AI image tool for solopreneurs and freelancers?",
+      "target_page_hint": "/category/image",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q145",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "Is Leonardo.ai worth it in 2026?",
+      "target_page_hint": "/tools/leonardo-ai",
+      "source": "tool-template"
+    },
+    {
+      "id": "q146",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "Leonardo.ai pricing and features — is it good?",
+      "target_page_hint": "/tools/leonardo-ai",
+      "source": "tool-template"
+    },
+    {
+      "id": "q147",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "Is PhotoRoom worth it in 2026?",
+      "target_page_hint": "/tools/photoroom",
+      "source": "tool-template"
+    },
+    {
+      "id": "q148",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "PhotoRoom pricing and features — is it good?",
+      "target_page_hint": "/tools/photoroom",
+      "source": "tool-template"
+    },
+    {
+      "id": "q149",
+      "cluster": "cluster-image",
+      "category": "image",
+      "query": "Leonardo.ai vs PhotoRoom — which is better?",
+      "target_page_hint": "/compare/leonardo-ai-vs-photoroom",
+      "source": "comparison-template"
+    },
+    {
+      "id": "q150",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "What are the best AI video tools in 2026?",
+      "target_page_hint": "/category/video",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q151",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "Best AI video tool for beginners?",
+      "target_page_hint": "/category/video",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q152",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "Which AI video tool is worth paying for?",
+      "target_page_hint": "/category/video",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q153",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "Cheapest AI video tool with a free plan?",
+      "target_page_hint": "/category/video",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q154",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "What AI video tool should a small business use?",
+      "target_page_hint": "/category/video",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q155",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "Best AI video tool for solopreneurs and freelancers?",
+      "target_page_hint": "/category/video",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q156",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "Is Pictory worth it in 2026?",
+      "target_page_hint": "/tools/pictory",
+      "source": "tool-template"
+    },
+    {
+      "id": "q157",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "Pictory pricing and features — is it good?",
+      "target_page_hint": "/tools/pictory",
+      "source": "tool-template"
+    },
+    {
+      "id": "q158",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "Is Opus Clip worth it in 2026?",
+      "target_page_hint": "/tools/opus-clip",
+      "source": "tool-template"
+    },
+    {
+      "id": "q159",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "Opus Clip pricing and features — is it good?",
+      "target_page_hint": "/tools/opus-clip",
+      "source": "tool-template"
+    },
+    {
+      "id": "q160",
+      "cluster": "cluster-video",
+      "category": "video",
+      "query": "Pictory vs Opus Clip — which is better?",
+      "target_page_hint": "/compare/pictory-vs-opus-clip",
+      "source": "comparison-template"
+    },
+    {
+      "id": "q161",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "What are the best AI audio tools in 2026?",
+      "target_page_hint": "/category/audio",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q162",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "Best AI audio tool for beginners?",
+      "target_page_hint": "/category/audio",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q163",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "Which AI audio tool is worth paying for?",
+      "target_page_hint": "/category/audio",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q164",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "Cheapest AI audio tool with a free plan?",
+      "target_page_hint": "/category/audio",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q165",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "What AI audio tool should a small business use?",
+      "target_page_hint": "/category/audio",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q166",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "Best AI audio tool for solopreneurs and freelancers?",
+      "target_page_hint": "/category/audio",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q167",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "Is Murf AI worth it in 2026?",
+      "target_page_hint": "/tools/murf-ai",
+      "source": "tool-template"
+    },
+    {
+      "id": "q168",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "Murf AI pricing and features — is it good?",
+      "target_page_hint": "/tools/murf-ai",
+      "source": "tool-template"
+    },
+    {
+      "id": "q169",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "Is Podcastle worth it in 2026?",
+      "target_page_hint": "/tools/podcastle",
+      "source": "tool-template"
+    },
+    {
+      "id": "q170",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "Podcastle pricing and features — is it good?",
+      "target_page_hint": "/tools/podcastle",
+      "source": "tool-template"
+    },
+    {
+      "id": "q171",
+      "cluster": "cluster-audio",
+      "category": "audio",
+      "query": "Murf AI vs Podcastle — which is better?",
+      "target_page_hint": "/compare/murf-ai-vs-podcastle",
+      "source": "comparison-template"
+    },
+    {
+      "id": "q172",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "What are the best AI design tools in 2026?",
+      "target_page_hint": "/category/design",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q173",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "Best AI design tool for beginners?",
+      "target_page_hint": "/category/design",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q174",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "Which AI design tool is worth paying for?",
+      "target_page_hint": "/category/design",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q175",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "Cheapest AI design tool with a free plan?",
+      "target_page_hint": "/category/design",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q176",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "What AI design tool should a small business use?",
+      "target_page_hint": "/category/design",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q177",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "Best AI design tool for solopreneurs and freelancers?",
+      "target_page_hint": "/category/design",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q178",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "Is Gamma worth it in 2026?",
+      "target_page_hint": "/tools/gamma",
+      "source": "tool-template"
+    },
+    {
+      "id": "q179",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "Gamma pricing and features — is it good?",
+      "target_page_hint": "/tools/gamma",
+      "source": "tool-template"
+    },
+    {
+      "id": "q180",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "Is Beautiful.ai worth it in 2026?",
+      "target_page_hint": "/tools/beautiful-ai",
+      "source": "tool-template"
+    },
+    {
+      "id": "q181",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "Beautiful.ai pricing and features — is it good?",
+      "target_page_hint": "/tools/beautiful-ai",
+      "source": "tool-template"
+    },
+    {
+      "id": "q182",
+      "cluster": "cluster-design",
+      "category": "design",
+      "query": "Gamma vs Beautiful.ai — which is better?",
+      "target_page_hint": "/compare/gamma-vs-beautiful-ai",
+      "source": "comparison-template"
+    },
+    {
+      "id": "q183",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "What are the best AI marketing tools in 2026?",
+      "target_page_hint": "/category/marketing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q184",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "Best AI marketing tool for beginners?",
+      "target_page_hint": "/category/marketing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q185",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "Which AI marketing tool is worth paying for?",
+      "target_page_hint": "/category/marketing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q186",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "Cheapest AI marketing tool with a free plan?",
+      "target_page_hint": "/category/marketing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q187",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "What AI marketing tool should a small business use?",
+      "target_page_hint": "/category/marketing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q188",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "Best AI marketing tool for solopreneurs and freelancers?",
+      "target_page_hint": "/category/marketing",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q189",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "Is Ocoya worth it in 2026?",
+      "target_page_hint": "/tools/ocoya",
+      "source": "tool-template"
+    },
+    {
+      "id": "q190",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "Ocoya pricing and features — is it good?",
+      "target_page_hint": "/tools/ocoya",
+      "source": "tool-template"
+    },
+    {
+      "id": "q191",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "Is GetResponse worth it in 2026?",
+      "target_page_hint": "/tools/getresponse",
+      "source": "tool-template"
+    },
+    {
+      "id": "q192",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "GetResponse pricing and features — is it good?",
+      "target_page_hint": "/tools/getresponse",
+      "source": "tool-template"
+    },
+    {
+      "id": "q193",
+      "cluster": "cluster-marketing",
+      "category": "marketing",
+      "query": "Ocoya vs GetResponse — which is better?",
+      "target_page_hint": "/compare/ocoya-vs-getresponse",
+      "source": "comparison-template"
+    },
+    {
+      "id": "q194",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "What are the best AI coding tools in 2026?",
+      "target_page_hint": "/category/coding",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q195",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "Best AI coding tool for beginners?",
+      "target_page_hint": "/category/coding",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q196",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "Which AI coding tool is worth paying for?",
+      "target_page_hint": "/category/coding",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q197",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "Cheapest AI coding tool with a free plan?",
+      "target_page_hint": "/category/coding",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q198",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "What AI coding tool should a small business use?",
+      "target_page_hint": "/category/coding",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q199",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "Best AI coding tool for solopreneurs and freelancers?",
+      "target_page_hint": "/category/coding",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q200",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "Is Replit worth it in 2026?",
+      "target_page_hint": "/tools/replit",
+      "source": "tool-template"
+    },
+    {
+      "id": "q201",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "Replit pricing and features — is it good?",
+      "target_page_hint": "/tools/replit",
+      "source": "tool-template"
+    },
+    {
+      "id": "q202",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "Is Cursor worth it in 2026?",
+      "target_page_hint": "/tools/cursor",
+      "source": "tool-template"
+    },
+    {
+      "id": "q203",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "Cursor pricing and features — is it good?",
+      "target_page_hint": "/tools/cursor",
+      "source": "tool-template"
+    },
+    {
+      "id": "q204",
+      "cluster": "cluster-coding",
+      "category": "coding",
+      "query": "Replit vs Cursor — which is better?",
+      "target_page_hint": "/compare/replit-vs-cursor",
+      "source": "comparison-template"
+    },
+    {
+      "id": "q205",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "What are the best AI productivity tools in 2026?",
+      "target_page_hint": "/category/productivity",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q206",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "Best AI productivity tool for beginners?",
+      "target_page_hint": "/category/productivity",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q207",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "Which AI productivity tool is worth paying for?",
+      "target_page_hint": "/category/productivity",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q208",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "Cheapest AI productivity tool with a free plan?",
+      "target_page_hint": "/category/productivity",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q209",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "What AI productivity tool should a small business use?",
+      "target_page_hint": "/category/productivity",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q210",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "Best AI productivity tool for solopreneurs and freelancers?",
+      "target_page_hint": "/category/productivity",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q211",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "Is Taskade worth it in 2026?",
+      "target_page_hint": "/tools/taskade",
+      "source": "tool-template"
+    },
+    {
+      "id": "q212",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "Taskade pricing and features — is it good?",
+      "target_page_hint": "/tools/taskade",
+      "source": "tool-template"
+    },
+    {
+      "id": "q213",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "Is Fireflies.ai worth it in 2026?",
+      "target_page_hint": "/tools/fireflies",
+      "source": "tool-template"
+    },
+    {
+      "id": "q214",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "Fireflies.ai pricing and features — is it good?",
+      "target_page_hint": "/tools/fireflies",
+      "source": "tool-template"
+    },
+    {
+      "id": "q215",
+      "cluster": "cluster-productivity",
+      "category": "productivity",
+      "query": "Taskade vs Fireflies.ai — which is better?",
+      "target_page_hint": "/compare/taskade-vs-fireflies",
+      "source": "comparison-template"
+    },
+    {
+      "id": "q216",
+      "cluster": "cluster-headshot",
+      "category": "headshot",
+      "query": "What are the best AI headshot tools in 2026?",
+      "target_page_hint": "/category/headshot",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q217",
+      "cluster": "cluster-headshot",
+      "category": "headshot",
+      "query": "Best AI headshot tool for beginners?",
+      "target_page_hint": "/category/headshot",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q218",
+      "cluster": "cluster-headshot",
+      "category": "headshot",
+      "query": "Which AI headshot tool is worth paying for?",
+      "target_page_hint": "/category/headshot",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q219",
+      "cluster": "cluster-headshot",
+      "category": "headshot",
+      "query": "Cheapest AI headshot tool with a free plan?",
+      "target_page_hint": "/category/headshot",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q220",
+      "cluster": "cluster-headshot",
+      "category": "headshot",
+      "query": "What AI headshot tool should a small business use?",
+      "target_page_hint": "/category/headshot",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q221",
+      "cluster": "cluster-headshot",
+      "category": "headshot",
+      "query": "Best AI headshot tool for solopreneurs and freelancers?",
+      "target_page_hint": "/category/headshot",
+      "source": "cluster-template"
+    },
+    {
+      "id": "q222",
+      "cluster": "cluster-headshot",
+      "category": "headshot",
+      "query": "Is HeadshotPro worth it in 2026?",
+      "target_page_hint": "/tools/headshotpro",
+      "source": "tool-template"
+    },
+    {
+      "id": "q223",
+      "cluster": "cluster-headshot",
+      "category": "headshot",
+      "query": "HeadshotPro pricing and features — is it good?",
+      "target_page_hint": "/tools/headshotpro",
+      "source": "tool-template"
     }
   ]
 }

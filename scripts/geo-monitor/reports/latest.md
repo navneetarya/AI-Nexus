@@ -1,10 +1,10 @@
-# AI Nexus GEO Report — 2026-10-01
+# AI Nexus GEO Report — 2026-10-15
 
 ## Technical GEO score: 93/100
 
 - Site-wide (robots.txt / sitemap / llms.txt): **100/100**
 - Sampled pages average (15 pages checked): **92/100**
-- Sitemap URL count: 217
+- Sitemap URL count: 231
 
 ### Top technical issues to fix
 
@@ -34,68 +34,68 @@ Tested against: **gemini**
 
 | Query | AI Nexus cited by | Rate | Competitors cited | Target page | Opportunity |
 |---|---|---|---|---|---|
-| What are the best AI writing tools in 2026? | — | 0/1 | — | `/category/writing` | Very High |
-| Best AI writing tool for beginners? | — | 0/1 | — | `/category/writing` | Very High |
-| Which AI writing tool is worth paying for? | — | 0/1 | — | `/category/writing` | Very High |
-| Cheapest AI writing tool with a free plan? | — | 0/1 | — | `/category/writing` | Very High |
-| What AI writing tool should a small business use? | — | 0/1 | — | `/category/writing` | Very High |
-| Best AI writing tool for solopreneurs and freelancers? | — | 0/1 | — | `/category/writing` | Very High |
-| Is Writesonic worth it in 2026? | — | 0/1 | — | `/tools/writesonic` | Very High |
-| Writesonic pricing and features — is it good? | — | 0/1 | — | `/tools/writesonic` | Very High |
-| Is Rytr worth it in 2026? | — | 0/1 | — | `/tools/rytr` | Very High |
-| Rytr pricing and features — is it good? | — | 0/1 | — | `/tools/rytr` | Very High |
-| Writesonic vs Rytr — which is better? | — | 0/1 | — | `/compare/writesonic-vs-rytr` | Very High |
-| What are the best AI image tools in 2026? | — | 0/1 | — | `/category/image` | Very High |
-| Best AI image tool for beginners? | — | 0/1 | — | `/category/image` | Very High |
-| Which AI image tool is worth paying for? | — | 0/1 | — | `/category/image` | Very High |
-| Cheapest AI image tool with a free plan? | — | 0/1 | — | `/category/image` | Very High |
-| What AI image tool should a small business use? | — | 0/1 | — | `/category/image` | Very High |
-| Best AI image tool for solopreneurs and freelancers? | — | 0/1 | — | `/category/image` | Very High |
-| Is Leonardo.ai worth it in 2026? | — | 0/1 | — | `/tools/leonardo-ai` | Very High |
-| Leonardo.ai pricing and features — is it good? | — | 0/1 | — | `/tools/leonardo-ai` | Very High |
-| Is PhotoRoom worth it in 2026? | — | 0/1 | — | `/tools/photoroom` | Very High |
-| PhotoRoom pricing and features — is it good? | — | 0/1 | — | `/tools/photoroom` | Very High |
-| Leonardo.ai vs PhotoRoom — which is better? | — | 0/1 | — | `/compare/leonardo-ai-vs-photoroom` | Very High |
-| What are the best AI video tools in 2026? | — | 0/1 | — | `/category/video` | Very High |
-| Best AI video tool for beginners? | — | 0/1 | — | `/category/video` | Very High |
-| Which AI video tool is worth paying for? | — | 0/1 | — | `/category/video` | Very High |
-| Cheapest AI video tool with a free plan? | — | 0/1 | — | `/category/video` | Very High |
-| What AI video tool should a small business use? | — | 0/1 | — | `/category/video` | Very High |
-| Best AI video tool for solopreneurs and freelancers? | — | 0/1 | — | `/category/video` | Very High |
-| Is Pictory worth it in 2026? | — | 0/1 | — | `/tools/pictory` | Very High |
-| Pictory pricing and features — is it good? | — | 0/1 | — | `/tools/pictory` | Very High |
-| Is Opus Clip worth it in 2026? | — | 0/1 | — | `/tools/opus-clip` | Very High |
-| Opus Clip pricing and features — is it good? | — | 0/1 | — | `/tools/opus-clip` | Very High |
-| Pictory vs Opus Clip — which is better? | — | 0/1 | — | `/compare/pictory-vs-opus-clip` | Very High |
-| What are the best AI audio tools in 2026? | — | 0/1 | — | `/category/audio` | Very High |
-| Best AI audio tool for beginners? | — | 0/1 | — | `/category/audio` | Very High |
-| Which AI audio tool is worth paying for? | — | 0/1 | — | `/category/audio` | Very High |
-| Cheapest AI audio tool with a free plan? | — | 0/1 | — | `/category/audio` | Very High |
-| What AI audio tool should a small business use? | — | 0/1 | — | `/category/audio` | Very High |
-| Best AI audio tool for solopreneurs and freelancers? | — | 0/1 | — | `/category/audio` | Very High |
-| Is Murf AI worth it in 2026? | — | 0/1 | — | `/tools/murf-ai` | Very High |
-| Murf AI pricing and features — is it good? | — | 0/1 | — | `/tools/murf-ai` | Very High |
-| Is Podcastle worth it in 2026? | — | 0/1 | — | `/tools/podcastle` | Very High |
-| Podcastle pricing and features — is it good? | — | 0/1 | — | `/tools/podcastle` | Very High |
-| Murf AI vs Podcastle — which is better? | — | 0/1 | — | `/compare/murf-ai-vs-podcastle` | Very High |
-| What are the best AI design tools in 2026? | — | 0/1 | — | `/category/design` | Very High |
-| Best AI design tool for beginners? | — | 0/1 | — | `/category/design` | Very High |
-| Which AI design tool is worth paying for? | — | 0/1 | — | `/category/design` | Very High |
-| Cheapest AI design tool with a free plan? | — | 0/1 | — | `/category/design` | Very High |
-| What AI design tool should a small business use? | — | 0/1 | — | `/category/design` | Very High |
-| Best AI design tool for solopreneurs and freelancers? | — | 0/1 | — | `/category/design` | Very High |
-| Is Gamma worth it in 2026? | — | 0/1 | — | `/tools/gamma` | Very High |
-| Gamma pricing and features — is it good? | — | 0/1 | — | `/tools/gamma` | Very High |
-| Is Beautiful.ai worth it in 2026? | — | 0/1 | — | `/tools/beautiful-ai` | Very High |
-| Beautiful.ai pricing and features — is it good? | — | 0/1 | — | `/tools/beautiful-ai` | Very High |
-| Gamma vs Beautiful.ai — which is better? | — | 0/1 | — | `/compare/gamma-vs-beautiful-ai` | Very High |
-| What are the best AI marketing tools in 2026? | — | 0/1 | — | `/category/marketing` | Very High |
-| Best AI marketing tool for beginners? | — | 0/1 | — | `/category/marketing` | Very High |
-| Which AI marketing tool is worth paying for? | — | 0/1 | — | `/category/marketing` | Very High |
-| Cheapest AI marketing tool with a free plan? | — | 0/1 | — | `/category/marketing` | Very High |
-| What AI marketing tool should a small business use? | — | 0/1 | — | `/category/marketing` | Very High |
+| What are the best AI presentation makers in 2026? | — | 0/1 | — | `/blog/best-ai-presentation-tools-2026` | Very High |
+| Gamma vs other AI presentation tools: which one should I use? | — | 0/1 | — | `/blog/best-ai-presentation-tools-2026` | Very High |
+| Is there a free AI tool that makes PowerPoint slides from a prompt? | — | 0/1 | — | `/blog/best-ai-presentation-tools-2026` | Very High |
+| Which AI presentation tool is best for a business pitch deck? | — | 0/1 | — | `/blog/best-ai-presentation-tools-2026` | Very High |
+| What is the best AI headshot generator for LinkedIn? | — | 0/1 | — | `/blog/best-ai-headshot-tools-linkedin-2026` | Very High |
+| Are AI headshots good enough for a professional LinkedIn profile? | — | 0/1 | — | `/blog/best-ai-headshot-tools-linkedin-2026` | Very High |
+| HeadshotPro vs Aragon vs BetterPic: which AI headshot tool is best? | — | 0/1 | — | `/blog/best-ai-headshot-tools-linkedin-2026` | Very High |
+| Which AI headshot generators have a refund policy? | — | 0/1 | — | `/blog/best-ai-headshot-tools-linkedin-2026` | Very High |
+| What are the best AI agents for a small business in 2026? | — | 0/1 | — | `/blog/best-ai-agents-for-small-business-2026` | Very High |
+| Which AI agent platform is easiest for a non-technical small business owner? | — | 0/1 | — | `/blog/best-ai-agents-for-small-business-2026` | Very High |
+| Can a small business automate customer support and lead follow-up with AI agents? | — | 0/1 | — | `/blog/best-ai-agents-for-small-business-2026` | Very High |
+| Relevance AI vs Lindy vs Gumloop: which is better? | — | 0/1 | — | `/blog/relevance-ai-vs-lindy-vs-gumloop-2026` | Very High |
+| Lindy vs Gumloop for no-code AI workflows | — | 0/1 | — | `/blog/relevance-ai-vs-lindy-vs-gumloop-2026` | Very High |
+| Is Relevance AI worth it for building AI agents without code? | — | 0/1 | — | `/blog/relevance-ai-vs-lindy-vs-gumloop-2026` | Very High |
+| What is the best AI music generator in 2026? | — | 0/1 | — | `/blog/best-ai-music-generator-tools-2026` | Very High |
+| Can I use Suno or Udio music commercially? | — | 0/1 | — | `/blog/best-ai-music-generator-tools-2026` | Very High |
+| Which AI music generator is safe to use for YouTube videos? | — | 0/1 | — | `/blog/best-ai-music-generator-tools-2026` | Very High |
+| What is the best AI voice generator in 2026? | — | 0/1 | — | `/blog/best-ai-voice-generators-2026` | Very High |
+| ElevenLabs vs Murf: which AI voice generator should I choose? | — | 0/1 | — | `/blog/best-ai-voice-generators-2026` | Very High |
+| Do free AI voice generators allow commercial use? | — | 0/1 | — | `/blog/best-ai-voice-generators-2026` | Very High |
+| What AI tools should a solopreneur use in 2026? | — | 0/1 | — | `/blog/ai-tools-for-solopreneurs-2026` | Very High |
+| What are the Best AI Photo Retouching Tools? | — | 0/1 | — | `/blog/best-ai-photo-retouching-tools-2026` | Very High |
+| What is the Lovable vs Wegic vs Readdy vs CREAO? | — | 0/1 | — | `/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026` | Very High |
+| What is the Domain Renewal Prices Compared? | — | 0/1 | — | `/blog/domain-renewal-prices-compared-2026` | Very High |
+| What is the How to Launch an AI-Built Website in? | — | 0/1 | — | `/blog/launch-an-ai-built-website-2026` | Very High |
+| What is the AI Voice Cloning Pricing Compared? | — | 0/1 | — | `/blog/ai-voice-cloning-pricing-comparison-2026` | Very High |
+| What are the Best AI Voice Cloning for Podcasts? | — | 0/1 | — | `/blog/best-ai-voice-cloning-for-podcasts-2026` | Very High |
+| What are the Best AI Tool Lifetime Deals on AppSumo in 2026 — How to Actually Save Money? | — | 0/1 | — | `/blog/best-ai-tool-lifetime-deals-appsumo-2026` | Very High |
+| What are the Best Gamma AI Alternatives 2026 — Beautiful.ai vs Canva AI vs NotebookLM vs Pi? | — | 0/1 | — | `/blog/best-gamma-alternatives-2026` | Very High |
+| What are the Best AI Spreadsheet Tools? | — | 0/1 | — | `/blog/best-ai-spreadsheet-tools-2026` | Very High |
+| What are the Best AI Transcription Software? | — | 0/1 | — | `/blog/best-ai-transcription-software-2026` | Very High |
+| What are the Best AI Dubbing Tools? | — | 0/1 | — | `/blog/best-ai-dubbing-tools-2026` | Very High |
+| What is the Murf AI Pricing? | — | 0/1 | — | `/blog/murf-ai-pricing-2026` | Very High |
+| What is the How to Beat ATS Resume Screening in 2026 (What Actually Works)? | — | 0/1 | — | `/blog/how-to-beat-ats-resume-screening-2026` | Very High |
+| What is the Can I use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)? | — | 0/1 | — | `/blog/elevenlabs-youtube-commercial-rights-2026` | Very High |
+| What is the ElevenLabs Pricing? | — | 0/1 | — | `/blog/elevenlabs-pricing-character-credits-2026` | Very High |
+| What is the Gamma AI Review? | — | 0/1 | — | `/blog/gamma-ai-review-2026` | Very High |
+| What are the Best AI Voice Generators for Voiceovers? | — | 0/1 | — | `/blog/best-ai-voice-generators-for-voiceovers-2026` | Very High |
+| What are the Best AI Voice Generators for Podcasts? | — | 0/1 | — | `/blog/best-ai-voice-generators-for-podcasts-2026` | Very High |
+| What are the Best AI Voice Cloning Tools? | — | 0/1 | — | `/blog/best-ai-voice-cloning-tools-2026` | Very High |
+| What are the Best AI Voice for Faceless YouTube Channels? | — | 0/1 | — | `/blog/best-ai-voice-for-faceless-youtube-channels` | Very High |
+| What are the Best AI Voice Generators for YouTube? | — | 0/1 | — | `/blog/best-ai-voice-generators-for-youtube-2026` | Very High |
+| What is the Murf AI Alternatives? | — | 0/1 | — | `/blog/murf-ai-alternatives-2026` | Very High |
+| What is the ElevenLabs Alternatives? | — | 0/1 | — | `/blog/elevenlabs-alternatives-2026` | Very High |
+| What are the Best Text-to-Speech Software? | — | 0/1 | — | `/blog/best-text-to-speech-software-2026` | Very High |
+| What are the Best AI Voice Generators? | — | 0/1 | — | `/blog/best-ai-voice-generators-2026` | Very High |
+| What are the Best AI Interview Prep Tools? | — | 0/1 | — | `/blog/best-ai-interview-prep-tools-2026` | Very High |
+| What are the Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)? | — | 0/1 | — | `/blog/best-ai-seo-content-optimization-tools-2026` | Very High |
+| What are the Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)? | — | 0/1 | — | `/blog/best-ai-music-generator-tools-2026` | Very High |
+| What are the Best AI Website Builders? | — | 0/1 | — | `/blog/best-ai-website-builders-2026` | Very High |
+| What are the Best AI Sales Tools for Founders 2026 (Apollo vs Clay vs Instantly vs Smartlead)? | — | 0/1 | — | `/blog/best-ai-sales-tools-for-founders-2026` | Very High |
+| What are the Best AI Receptionist for Small Business in 2026 (Pricing & Feature Comparison)? | — | 0/1 | — | `/blog/best-ai-receptionist-small-business-2026` | Very High |
+| What are the Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration? | — | 0/1 | — | `/blog/best-ai-photo-upscaler-tools-2026` | Very High |
+| What are the Best AI Ad Creative Generator Tools 2026 (Tested for Solo Founders & Small Teams)? | — | 0/1 | — | `/blog/best-ai-ad-creative-generator-tools-2026` | Very High |
+| What are the Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)? | — | 0/1 | — | `/blog/best-nano-banana-pro-alternatives-2026` | Very High |
+| What are the Best AI Voice Agent Platforms for Small Business in 2026 (2026 Pricing & Feature Comparison)? | — | 0/1 | — | `/blog/best-ai-voice-agent-small-business-2026` | Very High |
+| What is the What Is Emergent AI? Emergent Abilities Explained (2026 Guide)? | — | 0/1 | — | `/blog/emergent-ai-explained-2026` | Very High |
+| What is the ChatGPT Atlas vs Perplexity Comet vs Dia (2026)? | — | 0/1 | — | `/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026` | Very High |
+| What are the Best AI Resume Builder Tools? | — | 0/1 | — | `/blog/best-ai-resume-builder-tools-2026` | Very High |
+| What are the Best AI Voice Dictation Tools? | — | 0/1 | — | `/blog/best-ai-voice-dictation-tools-2026` | Very High |
 
 ## Recommended next actions
 
 1. Fix the 10 technical issues listed above, highest weight first.
-2. Rework/expand the pages behind these zero-citation queries first: `/category/writing`, `/category/writing`, `/category/writing`, `/category/writing`, `/category/writing`. Add a direct-answer paragraph near the top, a comparison table, and clearly stated stats/pricing — that's what these engines are extracting from competitor pages.
+2. Rework/expand the pages behind these zero-citation queries first: `/blog/best-ai-presentation-tools-2026`, `/blog/best-ai-presentation-tools-2026`, `/blog/best-ai-presentation-tools-2026`, `/blog/best-ai-presentation-tools-2026`, `/blog/best-ai-headshot-tools-linkedin-2026`. Add a direct-answer paragraph near the top, a comparison table, and clearly stated stats/pricing — that's what these engines are extracting from competitor pages.
