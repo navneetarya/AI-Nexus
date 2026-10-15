@@ -77,7 +77,7 @@ const post: BlogPost = {
     { url: 'https://appsumo.com/about', label: 'AppSumo — company information' },
     { url: 'https://appsumo.com/plus/', label: 'AppSumo — Plus membership' },
   ],
-  wordCount: 1550,
+  wordCount: 2031,
 
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>

@@ -14,7 +14,7 @@ const post: BlogPost = {
   seoTitle: 'How to Use AI for Content Creation in 2026',
   metaDescription: 'Write an article, generate an image, repurpose it as a video, and create a podcast — all in one afternoon. See the AI content workflow for 2026.',
   datePublished: '2026-05-05',
-  dateModified: '2026-10-14',
+  dateModified: '2026-10-15',
   author: 'Navneet Arya',
   category: 'Guides',
   readTime: '10 min read',
@@ -190,7 +190,7 @@ const post: BlogPost = {
 </div>
 
 <h3>Short-Form Video from Text Prompts with InVideo AI</h3>
-<p>For Reels, YouTube Shorts, and TikTok, <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">InVideo AI</a> takes a text prompt or topic and produces a complete short-form video in under 5 minutes. Footage, voiceover, captions, and music are all included. The free plan includes 10 video exports per month with an InVideo watermark, enough to test the workflow before committing to the $20/month paid plan.</p>
+<p>For Reels, YouTube Shorts, and TikTok, <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">InVideo AI</a> takes a text prompt or topic and produces a complete short-form video in under 5 minutes. Footage, voiceover, captions, and music are all included. The free plan includes 10 video exports per month with an InVideo watermark, enough to test the workflow before committing to a paid plan (from $9/month).</p>
 <p>The highest-quality use of InVideo for content creators is repurposing key sections from longer articles into 60-second short-form videos that drive traffic back to the full post. Enter the key point from your article as a prompt, set the duration to 60 seconds, and let InVideo generate.</p><p>Then spend 5 minutes adjusting the script and swapping out any footage that does not fit. The result is a platform-native short video that would otherwise take 45–90 minutes to produce manually.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['invideo']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try InVideo AI Free →</a>

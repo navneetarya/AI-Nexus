@@ -83,7 +83,7 @@ const post: BlogPost = {
     { url: 'https://www.notion.so', label: 'Notion AI — official product site' },
     { url: 'https://www.reddit.com/r/Teachers/', label: 'r/Teachers — verified teacher feedback on AI tools' },
   ],
-  wordCount: 1660,
+  wordCount: 2245,
 
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>

@@ -290,7 +290,7 @@ const post: BlogPost = {
     { url: 'https://openai.com/api/pricing/', label: 'OpenAI — API Pricing' },
   ],
 
-  wordCount: 1334,
+  wordCount: 1781,
 };
 
 export default post;

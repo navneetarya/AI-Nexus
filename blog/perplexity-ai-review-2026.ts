@@ -81,7 +81,7 @@ const post: BlogPost = {
     { url: 'https://trends.google.com', label: 'Google Trends — search interest data' },
     { url: 'https://www.reddit.com/r/perplexity_ai/', label: 'r/perplexity_ai — community discussion' },
   ],
-  wordCount: 1660,
+  wordCount: 2156,
 
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>

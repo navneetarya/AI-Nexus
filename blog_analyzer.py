@@ -215,7 +215,8 @@ def count_syllables(w: str) -> int:
 
 
 def sentences_of(text: str):
-    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9\"“(])", text)
+    # ✅/❌/✓/✗ start pros/cons list items; without them consecutive bullets merge into one "sentence".
+    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9\"“(✅❌✓✗#])", text)
     return [p.strip() for p in parts if len(words_of(p)) >= 3]
 
 

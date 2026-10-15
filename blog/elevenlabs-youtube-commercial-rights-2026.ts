@@ -192,7 +192,7 @@ const post: BlogPost = {
     { url: 'https://minimatters.com/youtube-altered-or-synthetic-content-disclosure/', label: 'MiniMatters — YouTube Synthetic Content Disclosure Policy' },
   ],
 
-  wordCount: 864,
+  wordCount: 1574,
 };
 
 export default post;

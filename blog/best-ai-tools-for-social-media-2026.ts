@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Tools for Social Media 2026 — Ranked & Reviewed',
   metaDescription: 'Ocoya writes captions, Opus Clip turns videos into Reels, Canva AI designs in seconds. See the 6 social media AI tools that cut publishing time.',
   datePublished: '2026-05-01',
-  dateModified: '2026-10-13',
+  dateModified: '2026-10-15',
   author: 'Navneet Arya',
   category: 'Social Media',
   readTime: '7 min read',
@@ -41,15 +41,15 @@ const post: BlogPost = {
     },
     {
       q: 'Is there a free AI tool for repurposing long videos into Reels?',
-      a: 'Yes — Opus Clip has a free plan that includes 60 minutes of video processing per month, enough to repurpose 1–2 long videos into short clips for TikTok, Reels, and YouTube Shorts. It automatically identifies the most engaging moments and adds captions. For higher volume, paid plans start at $20/month.',
+      a: 'Yes — Opus Clip has a free plan that includes 60 minutes of video processing per month, enough to repurpose 1–2 long videos into short clips for TikTok, Reels, and YouTube Shorts. It automatically identifies the most engaging moments and adds captions. For higher volume, paid plans start at $15/month (Starter).',
     },
     {
       q: 'Can AI tools help with faceless social media content?',
-      a: 'Yes. InVideo AI is built specifically for faceless content: you provide a topic or script, and it generates a complete video with stock footage, voiceover, captions, and music, no camera or filming setup needed. The free plan allows 10 exports per week with a watermark; removing the watermark requires the $20/month plan.',
+      a: 'Yes. InVideo AI is built specifically for faceless content: you provide a topic or script, and it generates a complete video with stock footage, voiceover, captions, and music, no camera or filming setup needed. The free plan allows 10 exports per week with a watermark; removing the watermark requires a paid plan, which starts at $9/month (Basic).',
     },
     {
       q: 'How much does a full social media AI tool stack cost?',
-      a: 'It depends on volume. A solo creator handling text and image content can run Rytr plus Leonardo.ai for around $9/month, or entirely free using both tools\u2019 free tiers. A social media manager handling multiple client accounts typically needs Ocoya plus Opus Clip, closer to $34/month combined. Faceless content creators pairing InVideo AI with Leonardo.ai land around $15/month.',
+      a: 'It depends on volume. A solo creator handling text and image content can run Rytr plus Leonardo.ai for around $9/month, or entirely free using both tools\u2019 free tiers. A social media manager handling multiple client accounts typically needs Ocoya plus Opus Clip, closer to $34/month combined. Faceless content creators pairing InVideo AI Basic with Leonardo.ai\u2019s free tier land around $9/month.',
     },
   ],
   proscons: {
@@ -159,7 +159,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>2. Opus Clip: Turn Long Videos into Short Clips Automatically</h2>
-<p><strong>Category: Video · Rating: 4.3/5 · Pricing: Free + from $20/month · <a href="/tools/opus-clip/" style="color:var(--a1);font-weight:600;">Full Opus Clip Review →</a></strong></p>
+<p><strong>Category: Video · Rating: 4.3/5 · Pricing: Free + from $15/month · <a href="/tools/opus-clip/" style="color:var(--a1);font-weight:600;">Full Opus Clip Review →</a></strong></p>
 <p>If you create any long-form video content (YouTube videos, webinars, podcast recordings, Zoom calls), Opus Clip is worth adding to your stack. It's the most valuable social media AI tool for that job.</p>
 <p>You paste a video URL (YouTube, Loom, or upload a file), and Opus Clip's AI identifies the most engaging moments. It cuts them into short clips, adds captions, and reformats for vertical (Reels/TikTok) or horizontal delivery.</p>
 <p>The AI scoring system is surprisingly accurate at finding the "hook" moments in a longer video. The clips it picks outperform manually selected excerpts, based on community and user reports. The free plan gives you 60 minutes of processing per month, which is enough for 1–2 long videos.</p>
@@ -185,7 +185,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>4. InVideo AI: Faceless Video Content for Social Media</h2>
-<p><strong>Category: Video · Rating: 4.0/5 · Pricing: Free + from $20/month · <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">Full InVideo AI Review →</a></strong></p>
+<p><strong>Category: Video · Rating: 4.0/5 · Pricing: Free + from $9/month · <a href="/tools/invideo/" style="color:var(--a1);font-weight:600;">Full InVideo AI Review →</a></strong></p>
 <p>InVideo AI targets a specific use case: you type a topic or script, and the AI builds a complete short video with stock footage, voiceover, captions, and music. It's designed for faceless YouTube channels and social media accounts that publish educational or informational content without showing a person on camera.</p>
 <p>For social media teams that need to publish video content at high volume without a filming setup, InVideo reduces a 4-hour production task to a 20-minute edit. The AI chooses relevant stock footage, but manual review and clip swapping is recommended. About 20–30% of auto-selected footage misses the mark, based on verified user reports.</p>
 <p><strong>Free plan note:</strong> The free tier limits you to 10 exports per week with a watermark. Sufficient for testing; remove the watermark at $20/month.</p>
@@ -212,7 +212,7 @@ const post: BlogPost = {
 <ul style="margin:12px 0 16px 24px;line-height:2.3;">
   <li><strong>Solo creator, text + image content:</strong> Rytr (captions) + Leonardo.ai (images) = ~$9/month or entirely free</li>
   <li><strong>Social media manager, multiple clients:</strong> Ocoya (captions + scheduling) + Opus Clip (video) = $34/month</li>
-  <li><strong>Faceless content creator:</strong> InVideo AI (video production) + Leonardo.ai (thumbnails) = $20/month</li>
+  <li><strong>Faceless content creator:</strong> InVideo AI Basic (video production) + Leonardo.ai free tier (thumbnails) = $9/month</li>
   <li><strong>Repurposing existing long-form content:</strong> Opus Clip only = free for moderate volume</li>
   <li><strong>Fast, stylized short clips (TikTok/Reels):</strong> <a href="${AFFILIATE_LINKS['pixverse']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">PixVerse</a> = Free–$10/month</li>
   <li><strong>Quick photo fixes (upscale, remove an object, change a background):</strong> <a href="${AFFILIATE_LINKS['youcam']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">YouCam Online Editor</a> = 5 free credits to start, then credit-based plans. <a href="/tools/youcam/" style="color:var(--a1);font-weight:600;">Read our YouCam review →</a></li>

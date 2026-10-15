@@ -265,7 +265,7 @@ const post: BlogPost = {
     { url: 'https://www.trustpilot.com/review/get.murf.ai', label: 'Murf AI — Trustpilot Reviews' },
   ],
 
-  wordCount: 1022,
+  wordCount: 1702,
 };
 
 export default post;

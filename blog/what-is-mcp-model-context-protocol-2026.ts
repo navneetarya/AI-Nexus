@@ -15,7 +15,7 @@ const post: BlogPost = {
   metaDescription: 'MCP (Model Context Protocol) is Anthropic\'s open standard connecting AI models to external tools. See 2026 adoption and which platforms support it.',
   quickAnswer: 'MCP (Model Context Protocol) is an open standard Anthropic introduced in November 2024 that lets AI models connect to external tools and data through one shared interface instead of a custom connector per model-tool pair. By mid-2026 it is supported by Claude, ChatGPT, Cursor, Windsurf, VS Code, n8n, Zapier, and over 10,000 community-built servers.',
   datePublished: '2026-06-18',
-  dateModified: '2026-08-23',
+  dateModified: '2026-10-15',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '9 min read',
@@ -98,38 +98,38 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="https://cursor.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Cursor →</a>
 </div>
-<p>Before MCP, every AI application that needed to read a database, query a CRM, or call an external API had to ship a purpose-built integration for that exact pairing. MCP replaces that one-off wiring with a single open standard, so any MCP-compatible AI tool can connect to any MCP-compatible data source without custom code.</p>
+<p>Before MCP, every AI app had to ship its own integration for each tool. That was true whenever it needed to read a database, query a CRM, or call an external API. Each one was built for that exact pairing. MCP replaces that one-off wiring with a single open standard. Now any MCP-compatible AI tool can connect to any MCP-compatible data source without custom code.</p>
 <p>A coding assistant that wanted to read your GitHub issues needed a GitHub-specific integration.</p>
-<p>The same assistant wanting to query a Postgres database needed an entirely separate, Postgres-specific integration.</p>
+<p>The same assistant wanting to query a Postgres database needed a whole separate, Postgres-specific integration.</p>
 <p>Multiply that by every tool a team uses: Slack, Notion, Stripe, internal databases, ticketing systems. The result is what developers call the <strong>N×M integration problem</strong>.</p>
-<p>N AI applications, each needing a custom connector for M external tools. That produces N×M pieces of bespoke integration code that someone has to build and maintain.</p>
-<p>Anthropic released the Model Context Protocol as an open specification in November 2024 to collapse that N×M problem into N+M. Instead of every AI application building a custom connector for every tool, a tool builder writes <strong>one MCP server</strong>. It exposes their data or feature in a standard format.</p>
-<p>Any MCP-compatible AI application can then call it without tool-specific integration work.</p>
-<p>The protocol is published openly. Anyone can build a server or a client without a partnership agreement or licensing fee from Anthropic. That's the primary reason adoption spread well beyond Anthropic's own products within a year of launch.</p>
+<p>N AI applications, each needing a custom connector for M external tools. That makes N×M pieces of custom integration code that someone has to build and maintain.</p>
+<p>Anthropic released the Model Context Protocol as an open spec in November 2024. The goal was to shrink that N×M problem into N+M. AI apps no longer each build a custom connector for every tool. Instead, a tool builder writes <strong>one MCP server</strong>. It shares their data or feature in a standard format.</p>
+<p>Any MCP-compatible AI app can then call it without extra work for each tool.</p>
+<p>The protocol is published openly. Anyone can build a server or a client without a partnership agreement or licensing fee from Anthropic. That's the main reason it spread well beyond Anthropic's own products within a year of launch.</p>
 <p style="font-size:12px;color:var(--text-muted,#888);">Editorial note: this article contains no affiliate or sponsored links. See our <a href="/disclosure/">disclosure policy</a> for how we handle sponsored content on posts that do include it.</p>
 
 <h3>The Problem MCP Solves: Bespoke API Integrations for Every AI Tool</h3>
-<p>The real cost of the pre-MCP world wasn't theoretical. Teams building AI-powered internal tools were rebuilding the same Slack connector, the same database query layer, and the same CRM integration inside every new AI application they shipped.</p>
-<p>Integration code written for one model's tool-calling format rarely transferred cleanly to another.</p>
-<p>A company with three internal AI tools that all needed Salesforce access typically maintained three separate Salesforce integrations. Each had its own authentication handling, its own error cases, and its own maintenance burden when Salesforce's API changed.</p>
-<p>MCP removes the duplication by standardising three roles in the system:</p>
+<p>The real cost of the pre-MCP world wasn't just in theory. Teams building AI-powered internal tools kept rebuilding the same parts. They rebuilt the same Slack connector, database query layer, and CRM integration inside every new AI app they shipped.</p>
+<p>Integration code written for one model's tool-calling format rarely moved cleanly to another.</p>
+<p>Say a company had three internal AI tools that all needed Salesforce access. It usually kept three separate Salesforce integrations. Each had its own auth handling and its own error cases. Each also needed its own fixes when Salesforce's API changed.</p>
+<p>MCP removes the repeat work by setting three standard roles in the system:</p>
 <ul style="margin:8px 0 24px;padding-left:22px;line-height:1.9;">
-  <li><strong>Host</strong> — the AI application the user interacts with, like Claude Desktop, Cursor, or ChatGPT</li>
-  <li><strong>Client</strong> — the component inside the host that manages one connection to one MCP server</li>
-  <li><strong>Server</strong> — the program that exposes a specific tool, dataset, or feature, such as a GitHub server, a Postgres server, or a Stripe server</li>
+  <li><strong>Host</strong> — the AI app the user works with, like Claude Desktop, Cursor, or ChatGPT</li>
+  <li><strong>Client</strong> — the part inside the host that runs one connection to one MCP server</li>
+  <li><strong>Server</strong> — the program that shares a specific tool, dataset, or feature. Examples are a GitHub server, a Postgres server, or a Stripe server</li>
 </ul>
-<p>Once a server exists for a given tool, every MCP-compatible host can use it immediately.</p>
-<p>The GitHub MCP server built for Claude Desktop works unmodified inside Cursor, Windsurf, or any other compliant client. That's because the protocol, not the specific AI model, defines how data and features are described and exchanged.</p>
+<p>Once a server exists for a given tool, every MCP-compatible host can use it right away.</p>
+<p>The GitHub MCP server built for Claude Desktop works as-is inside Cursor, Windsurf, or any other compliant client. That's because the protocol sets how data and features are described and shared, not the AI model.</p>
 
 <h3>How an MCP Connection Actually Works, Step by Step</h3>
-<p>The mechanics are simpler than the architecture diagram suggests. When a user connects an MCP server inside a host application, three things happen in sequence.</p>
+<p>The mechanics are simpler than the diagram suggests. When a user connects an MCP server inside a host app, three things happen in order.</p>
 <ol style="margin:12px 0 12px 24px;line-height:2;">
-  <li><strong>Discovery.</strong> The client asks the server what it can do. The server responds with a list of available tools. Each tool is described in a structured format the AI model can read: a name, a description, and the inputs it expects.</li>
-  <li><strong>Matching and calling.</strong> The AI model matches the user's request to one of those described features — for example, a question about what's in a GitHub backlog. It decides to call that specific tool, and the client sends a structured request to the server.</li>
-  <li><strong>Execution and response.</strong> The server executes the actual work, such as querying GitHub's API, and returns the result to the client. The client feeds it back into the model's context so it can answer the user.</li>
+  <li><strong>Discovery.</strong> The client asks the server what it can do. The server replies with a list of its tools. Each tool is described in a set format the AI model can read. That means a name, a description, and the inputs it expects.</li>
+  <li><strong>Matching and calling.</strong> The AI model matches the user's request to one of those features. For example, the user might ask what's in a GitHub backlog. The model decides to call that tool. The client then sends a structured request to the server.</li>
+  <li><strong>Execution and response.</strong> The server does the actual work, such as querying GitHub's API. It returns the result to the client. The client feeds it back into the model's context so it can answer the user.</li>
 </ol>
-<p>This entire exchange happens over a standard, stateful connection, defined by the spec's <strong>2025-11-25 revision</strong>. It uses JSON-RPC 2.0, the same lightweight remote-procedure-call format used across much of current web infrastructure. That's a shared standard, not a proprietary format unique to MCP.</p>
-<p>In practice, connecting a server usually means adding a short block to a host application's config file. The shape is consistent across most MCP-compatible clients:</p>
+<p>This whole exchange runs over a standard, stateful connection. The spec's <strong>2025-11-25 revision</strong> defines it. It uses JSON-RPC 2.0, a light remote-procedure-call format used across much of today's web. That's a shared standard, not a private format unique to MCP.</p>
+<p>In practice, connecting a server usually means adding a short block to a host app's config file. The shape is the same across most MCP-compatible clients:</p>
 <pre style="background:#0f172a;color:#e2e8f0;padding:16px;border-radius:10px;overflow-x:auto;font-size:13px;line-height:1.6;"><code>{
   "mcpServers": {
     "github": {
@@ -139,13 +139,13 @@ const post: BlogPost = {
     }
   }
 }</code></pre>
-<p>That's the entire integration — no custom client code, no per-tool SDK. The host reads this block, launches the server, and the discovery step described above takes it from there.</p>
+<p>That's the whole integration. There's no custom client code and no per-tool SDK. The host reads this block and launches the server. The discovery step above takes it from there.</p>
 
 <img src="https://images.unsplash.com/photo-1531668383211-64743e924c66?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A blue LAN cable plugged into a router, representing a protocol connection" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>MCP vs Traditional APIs: A Technical Comparison for Non-Developers</h2>
-<p>MCP does not replace APIs. It standardises how AI models discover and call them. An MCP server is typically a thin layer that wraps an API, or a database connection, or a file system.</p>
-<p>It puts that resource in a format an AI model can understand and use without custom code on the AI application's side. The clearest way to see the difference is side by side.</p>
+<p>MCP does not replace APIs. It sets a standard for how AI models find and call them. An MCP server is usually a thin layer that wraps an API, a database connection, or a file system.</p>
+<p>It puts that resource in a format an AI model can understand and use without custom code on the AI app's side. The clearest way to see the difference is side by side.</p>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:13px;">
   <thead>
@@ -185,18 +185,18 @@ const post: BlogPost = {
 </table>
 </div>
 <p>For a non-developer, the real takeaway is simpler than the architecture diagram suggests.</p>
-<p><strong>MCP means an AI assistant can be told to "connect to my database" or "read my GitHub issues" through a setup step rather than a custom-built feature.</strong> That shift is what made AI coding assistants able to act on live project data in 2026, rather than only the code visible in the current file.</p>
+<p><strong>MCP means an AI assistant can be told to "connect to my database" or "read my GitHub issues" through a setup step rather than a custom-built feature.</strong> That shift is what let AI coding assistants act on live project data in 2026. They were no longer limited to the code in the current file.</p>
 
 <img src="https://images.unsplash.com/photo-1691435828932-911a7801adfb?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A close-up of network wires connected together" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Which AI Platforms Currently Support MCP (June 2026)</h2>
-<p>MCP adoption accelerated through 2025 and into 2026 across three distinct categories of tools: development environments, automation platforms, and data or research products. Search interest in "MCP" and "Model Context Protocol" rose sharply over the past month. That tracks the pace at which mainstream tools outside Anthropic's own ecosystem added native support.</p>
+<p>MCP use sped up through 2025 and into 2026 across three kinds of tools. They are development environments, automation platforms, and data or research products. Search interest in "MCP" and "Model Context Protocol" rose sharply over the past month. That tracks how fast mainstream tools outside Anthropic's own ecosystem added native support.</p>
 
 <h3>Development Tools: Cursor, Windsurf, VS Code</h3>
-<p><strong>Cursor</strong> and <strong>Windsurf</strong> are the two AI-native code editors most frequently compared against <a href="/tools/github-copilot/">GitHub Copilot</a>. Both added MCP support to let their AI agents call external tools mid-task.</p>
-<p>That means querying a database for a schema before writing a migration. It also means checking a project management tool for ticket context, or pulling live API documentation without leaving the editor.</p>
+<p><strong>Cursor</strong> and <strong>Windsurf</strong> are the two AI-native code editors most often compared against <a href="/tools/github-copilot/">GitHub Copilot</a>. Both added MCP support to let their AI agents call external tools mid-task.</p>
+<p>That means querying a database for a schema before writing a migration. It also means checking a project management tool for ticket context, or pulling live API docs without leaving the editor.</p>
 <p><strong>VS Code</strong> gained MCP support through GitHub Copilot's tool-calling layer. This puts the protocol inside the most widely used code editor in the world, not just in dedicated AI-native forks.</p>
-<p>For developers, the real effect is that an MCP server built once, say, for a company's internal API, works across whichever of these editors a team happens to use.</p>
+<p>For developers, the real effect is simple. An MCP server built once, say for a company's internal API, works in whichever of these editors a team uses.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://cursor.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Cursor →</a>
   <a href="https://devin.ai/desktop" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Windsurf →</a>
@@ -204,33 +204,34 @@ const post: BlogPost = {
 
 <h3>Automation Platforms: n8n, Zapier, Activepieces</h3>
 <p><strong>n8n</strong> has the deepest MCP integration of the major automation platforms. An MCP Client node lets n8n workflows call external MCP servers. An MCP Server Trigger node exposes a single n8n workflow as a callable tool for any AI host.</p>
-<p>And a first-party instance-level MCP server, shipped April 2026, lets an AI client build, validate, and publish entire n8n workflows from a plain-English prompt.</p>
-<p><strong>Zapier</strong> ships Zapier MCP, which exposes its current catalogue of app connections to any MCP-compatible AI host. That lets an AI assistant trigger a Zap-connected action without Zapier rebuilding the integration for each AI vendor.</p>
-<p><strong>Activepieces</strong>, the open-source Zapier alternative, has built MCP support natively into its "pieces" architecture. Each of its integrations functions simultaneously as a workflow building block and a callable MCP server.</p>
+<p>A first-party instance-level MCP server also shipped in April 2026. It lets an AI client build, validate, and publish whole n8n workflows from a plain-English prompt.</p>
+<p><strong>Zapier</strong> ships Zapier MCP. It opens its current catalogue of app connections to any MCP-compatible AI host. That lets an AI assistant trigger a Zap-connected action without Zapier rebuilding the integration for each AI vendor.</p>
+<p><strong>Activepieces</strong>, the open-source Zapier alternative, has built MCP support right into its "pieces" design. Each of its integrations works as both a workflow building block and a callable MCP server.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://n8n.io" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit n8n →</a>
   <a href="https://zapier.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Zapier →</a>
 </div>
-<p>For a deeper comparison of how these three platforms differ on pricing and AI-native feature beyond MCP support, see <a href="/blog/best-no-code-ai-automation-tools-2026/">our automation platform breakdown</a>. For the broader question of when automation is the right tool versus when you need genuine agent reasoning, see <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a></p>
+<p>For a deeper comparison of how these three platforms differ on pricing and AI-native feature beyond MCP support, see <a href="/blog/best-no-code-ai-automation-tools-2026/">our automation platform breakdown</a>. When is automation the right tool, and when do you need real agent reasoning? For that broader question, see <a href="/blog/ai-agents-vs-ai-automation-difference-2026/">AI Agents vs AI Automation: What's the Real Difference?</a></p>
 
 <h3>Data and Research Platforms Adopting MCP</h3>
 <p>Beyond coding and automation, MCP servers now exist for a wide range of data and business platforms. Think CRMs, analytics tools (Google Ads, GA4, Ahrefs, Semrush among the most common), spreadsheet and database connectors, and project management tools.</p>
-<p>The real pattern is simple: any platform with an API can be exposed as an MCP server. A growing number of SaaS vendors are building first-party servers rather than waiting for the community to reverse-engineer one.</p>
-<p>By early 2026, industry estimates placed the number of publicly available MCP servers above 10,000. That spans everything from internal company tools to consumer SaaS products, with the ecosystem still accelerating rather than plateauing.</p>
+<p>The real pattern is simple: any platform with an API can be exposed as an MCP server. More and more SaaS vendors build first-party servers. They don't wait for the community to reverse-engineer one.</p>
+<p>By early 2026, industry estimates put the number of public MCP servers above 10,000. That spans everything from internal company tools to consumer SaaS products. The ecosystem is still speeding up, not leveling off.</p>
 
 <img src="https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A bundle of blue network wires connected to each other" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>What MCP Adoption Means for the AI SaaS Market in 2026</h2>
-<p>MCP's spread changes the calculus for SaaS products in a specific way. A tool's value to AI-native workflows is increasingly determined by whether it has a usable MCP server. That matters more now than the quality of its traditional API documentation.</p>
-<p>Platforms that shipped early, native MCP support, like n8n's instance-level server, Zapier MCP, and Cursor and Windsurf's editor integrations, became defaults for AI-native teams. That's largely because the integration friction other tools still carry simply doesn't exist for them.</p>
-<p>A team choosing between two otherwise-comparable automation platforms in mid-2026 increasingly treats MCP support as a baseline requirement rather than a nice-to-have.</p>
-<p>This also reframes the old "Zapier or n8n" question into a different one. Where in an AI workflow should the assistant sit, and how does it reach the tools you already use? Event-driven automation (a Zapier trigger, an n8n workflow) and MCP are complementary rather than competing.</p>
-<p>A real-world setup often uses both. A trigger fires a workflow on a defined event. Meanwhile, an MCP server lets an AI agent query that same system on demand, mid-conversation, when a user asks something the pre-built workflow wasn't designed to answer.</p>
-<p>For platforms evaluated in <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a> and <a href="/blog/best-ai-coding-tools-2026/">Best AI Coding Tools 2026</a>, MCP support is becoming a clear forward-looking signal. It shows which tools will keep pace with how AI-native teams actually work.</p>
-<p>The growth of MCP also raises a governance question businesses are still working through. Every MCP server a team connects is a new path through which an AI model can read or modify real data. The protocol itself does not dictate how that access is scoped or audited; that responsibility sits with whoever configures the server and the host.</p>
+<p>MCP's spread changes the math for SaaS products in one key way. A tool's value to AI-native workflows now depends more and more on whether it has a usable MCP server. That matters more now than the quality of its classic API docs.</p>
+<p>Some platforms shipped early, native MCP support. Examples are n8n's instance-level server, Zapier MCP, and Cursor and Windsurf's editor integrations. These became defaults for AI-native teams. That's mostly because they lack the integration friction other tools still carry.</p>
+<p>Picture a team choosing between two otherwise similar automation platforms in mid-2026. It now tends to treat MCP support as a baseline need, not a nice-to-have.</p>
+<p>This also reframes the old "Zapier or n8n" question into a different one. Where in an AI workflow should the assistant sit, and how does it reach the tools you already use? Event-driven automation (a Zapier trigger, an n8n workflow) and MCP work together rather than compete.</p>
+<p>A real-world setup often uses both. A trigger fires a workflow on a defined event. Meanwhile, an MCP server lets an AI agent query that same system on demand, mid-conversation. That helps when a user asks something the pre-built workflow wasn't built to answer.</p>
+<p>For platforms reviewed in <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a> and <a href="/blog/best-ai-coding-tools-2026/">Best AI Coding Tools 2026</a>, MCP support is now a clear signal of what's ahead. It shows which tools will keep pace with how AI-native teams actually work.</p>
+<h3>The Governance Question: Who Controls MCP Access?</h3>
+<p>The growth of MCP also raises a governance question businesses are still working through. Every MCP server a team connects is a new path for an AI model to read or change real data. The protocol itself does not set how that access is scoped or audited. That job sits with whoever sets up the server and the host.</p>
 <p>A server that exposes a CRM's full contact list to an AI assistant is doing exactly what it was built to do. Whether that's the right level of access for a given team is a decision the protocol does not make for you.</p>
-<p>Teams adopting MCP at scale increasingly treat server connections the way they'd treat a new employee's permissions. Least-privilege by default, with logging on what was queried and when. That beats connecting every available server simply because it exists.</p>
-<p>For builders weighing whether to invest engineering time in MCP server support, the open-specification model lowers the cost of that bet by a lot. A server built once is immediately usable by every MCP-compatible AI client, including Claude, ChatGPT, Cursor, Windsurf, and whatever new AI host launches next.</p>
+<p>Teams using MCP at scale now tend to treat server connections like a new employee's permissions. Least-privilege by default, with logging on what was queried and when. That beats connecting every server just because it exists.</p>
+<p>Some builders are weighing whether to spend engineering time on MCP server support. For them, the open-spec model makes that bet much cheaper. A server built once works right away with every MCP-compatible AI client. That includes Claude, ChatGPT, Cursor, Windsurf, and whatever new AI host launches next.</p>
 <p>There's no need to renegotiate the integration for each one.</p>
 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Software code representing MCP adoption and AI integrations connecting to external tools in the SaaS market" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="margin:14px 0 24px;">
@@ -238,7 +239,7 @@ const post: BlogPost = {
 </div>
   
 <p><strong>Related reading:</strong> <a href="/blog/how-to-beat-ats-resume-screening-2026/">How to Beat ATS Resume Screening in 2026 (What Actually Works)</a>.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor docs, published pricing pages and public review sites. We did not do hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
   
 <h3>How to evaluate the choice in real work</h3>
 <p>Start with one recurring task, not a feature checklist. Use a real file, prompt, campaign, or workflow that normally takes time. Record setup time and the amount of cleanup the result needs. A polished demo is useful only when it survives ordinary work.</p>
@@ -257,7 +258,7 @@ const post: BlogPost = {
 <h2>Decision checklist</h2>
 <p>Use the workflow, budget, and risk checks above before choosing a plan.</p>
 `.trim(),
-  wordCount: 1890,
+  wordCount: 2559,
   proscons: {
     pros: [
       'Open specification — anyone can build an MCP server or client with no licensing fee or partnership requirement from Anthropic',

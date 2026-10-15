@@ -282,7 +282,7 @@ const post: BlogPost = {
     { url: 'https://support.google.com/youtube/answer/1311392', label: 'YouTube — Monetization Policies' },
   ],
 
-  wordCount: 1155,
+  wordCount: 2175,
 };
 
 export default post;

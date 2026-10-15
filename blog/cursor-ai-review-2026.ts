@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Cursor AI Review 2026: Still Worth $10/mo?',
   metaDescription: 'Cursor AI review for 2026: pricing, free plan, Tab completion, Composer, and Agent mode compared against GitHub Copilot. Is it worth $10/month?',
   datePublished: '2026-05-25',
-  dateModified: '2026-09-29',
+  dateModified: '2026-10-15',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '10 min read',
@@ -354,9 +354,9 @@ const post: BlogPost = {
 <h2 id="alternatives">Alternatives to Cursor</h2>
 <ul style="margin:12px 0 24px 24px;line-height:2.4;">
   <li><strong>GitHub Copilot ($10–$19/month):</strong> Better GitHub ecosystem integration, lower price, free for students. Weaker multi-file editing and model variety.</li>
-  <li><strong>Windsurf ($10/month):</strong> Similar VS Code fork with Cascade multi-file editing. Smaller community and fewer model options, at the same $10 price point as Cursor Pro.</li>
+  <li><strong>Windsurf (see vendor pricing):</strong> Similar VS Code fork with Cascade multi-file editing. Smaller community and fewer model options.</li>
   <li><strong><a href="/tools/claude-code/">Claude Code</a> (CLI, usage-based):</strong> Anthropic's agentic coding tool. Better for complex refactors and long-context codebases; no GUI editor. Pairs well with Cursor for terminal-heavy tasks.</li>
-  <li><strong>Replit AI ($10/month):</strong> Browser-based; best for deployment-focused workflows, beginner-friendly. Not a VS Code replacement for professional local development.</li>
+  <li><strong>Replit Core ($20/month, $18 billed yearly):</strong> Browser-based; best for deployment-focused workflows, beginner-friendly. Not a VS Code replacement for professional local development.</li>
 </ul>
 <p>For a detailed side-by-side of Claude Code vs GitHub Copilot vs Replit, see the <a href="/blog/claude-code-vs-github-copilot-vs-replit-2026/" style="color:#6366f1;">full comparison on AI Nexus</a>.</p>
 <p>For broader context on the AI coding tools landscape, the <a href="/blog/best-ai-coding-tools-2026/" style="color:#6366f1;">best AI coding tools 2026 guide</a> covers all major options with pricing and use-case breakdowns. If budget is the deciding factor, see <a href="/blog/cheapest-ai-coding-tools-2026/" style="color:#6366f1;">cheapest AI coding tools 2026</a>.</p>

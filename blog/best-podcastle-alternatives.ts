@@ -80,7 +80,7 @@ const post: BlogPost = {
     { url: 'https://www.descript.com/pricing', label: 'Descript official pricing page' },
   ],
 
-  wordCount: 1287,
+  wordCount: 1724,
 
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>

@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Podcast Tools 2026 — Record & Edit',
   metaDescription: 'Podcastle records free for 3 hours/month, Descript edits by transcript, Murf AI writes voiceovers. See which AI podcast tool fits your workflow.',
   datePublished: '2026-05-01',
-  dateModified: '2026-10-09',
+  dateModified: '2026-10-15',
   author: 'Navneet Arya',
   category: 'Audio',
   readTime: '6 min read',
@@ -124,7 +124,7 @@ const post: BlogPost = {
     <tr>
       <td style="padding:10px 14px;font-weight:600;">Murf AI</td>
       <td style="padding:10px 14px;">Yes: 10 min/month, watermarked</td>
-      <td style="padding:10px 14px;">$19/month (Basic)</td>
+      <td style="padding:10px 14px;">$22/month billed yearly (Creator)</td>
       <td style="padding:10px 14px;">AI voiceovers, intros, ad reads</td>
       <td style="padding:10px 14px;">⭐ 4.4/5</td>
     </tr>
@@ -172,11 +172,11 @@ const post: BlogPost = {
 
 <h2>4. Murf AI: Best for Podcast Intros, Outros & Ad Reads</h2>
 <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 4. Murf AI: Best for Podcast Intros, Outros & Ad Reads" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p><strong>Category: Audio · Rating: 4.4/5 · Pricing: Free + from $19/month · <a href="/tools/murf-ai/" style="color:var(--a1);font-weight:600;">Full Murf AI Review →</a></strong></p>
+<p><strong>Category: Audio · Rating: 4.4/5 · Pricing: Free + from $22/month billed yearly · <a href="/tools/murf-ai/" style="color:var(--a1);font-weight:600;">Full Murf AI Review →</a></strong></p>
 <p>Murf AI turns text into realistic AI voiceovers. For podcasters, that's useful in three ways. First, a professional intro or outro you never need to re-record. Second, sponsor ad reads in one consistent voice. Third, narration for solo "explainer" episodes where you've written a script but don't want to read it yourself.</p>
 <p>The voice library has 120+ AI voices across 20+ languages, with a range of accents, genders, and tones. The Studio interface lets you adjust speaking rate, pitch, and emphasis on individual words. That keeps the output from sounding like flat, robotic text-to-speech.</p>
 <p><strong>Free plan:</strong> 10 minutes of voiceover generation a month, with a watermark. That's enough to test the tool, but not enough for ongoing production.</p>
-<p>The $19/month Basic plan removes the watermark and gives 2 hours of monthly voice generation, enough for weekly short episodes. If ultra-realistic voice cloning matters more than workflow polish, compare Murf against <a href="/tools/elevenlabs/">ElevenLabs</a>: Murf wins on ease of use, ElevenLabs wins on raw voice realism.</p>
+<p>The Creator plan ($22/month billed yearly, $29 monthly) removes the watermark and gives 2 hours of monthly voice generation, enough for weekly short episodes. If ultra-realistic voice cloning matters more than workflow polish, compare Murf against <a href="/tools/elevenlabs/">ElevenLabs</a>: Murf wins on ease of use, ElevenLabs wins on raw voice realism.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>

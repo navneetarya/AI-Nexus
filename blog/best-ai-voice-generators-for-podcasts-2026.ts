@@ -183,7 +183,7 @@ const post: BlogPost = {
     { url: 'https://elevenlabs.io/pricing', label: 'ElevenLabs — Official Pricing' },
   ],
 
-  wordCount: 664,
+  wordCount: 840,
 };
 
 export default post;

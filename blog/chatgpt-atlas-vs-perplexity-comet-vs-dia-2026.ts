@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'ChatGPT Atlas vs Comet vs Dia: Which AI Browser in 2026?',
   metaDescription: "ChatGPT Atlas, Perplexity Comet, and Dia tested head-to-head — including the security risks most reviews leave out. Here's which AI browser to install.",
   datePublished: '2026-07-21',
-  dateModified: '2026-08-23',
+  dateModified: '2026-10-15',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '10 min read',
@@ -34,7 +34,7 @@ const post: BlogPost = {
       a: 'An agentic browser is a web browser with an AI agent built into its core that can not only summarize or answer questions about a page, but take multi-step actions on your behalf: filling forms, comparing prices across tabs, booking appointments, or completing a purchase. ChatGPT Atlas, Perplexity Comet, and Dia are the three leading examples in 2026. The distinction from a browser with a bolted-on AI sidebar (like Chrome with Gemini, or Edge with Copilot) is that agent mode is built into the browsing engine itself. That gives the AI direct access to page content, your open tabs, and, in varying degrees, your stored credentials and browsing history.',
     },
     {
-      q: 'ChatGPT Atlas vs Dia browser: which is better for Mac users?',
+      q: 'Which is better for Mac users, ChatGPT Atlas or Dia?',
       a: 'For Mac users specifically, Dia has the more personal-assistant-style feature set. It auto-creates tab groups around meetings and calendar events, and its Memory feature learns facts from your browsing over time. Atlas has the edge on raw task automation through Agent Mode, plus hard guardrails: it cannot run code, install extensions, or download files, and it pauses for confirmation on sensitive sites like banking pages. Dia is Apple Silicon-only (no Intel Mac support, no Windows build yet), while Atlas at least has Windows, iOS, and Android versions confirmed as "coming soon." If Mac-only is fine for you, the choice comes down to whether you want Dia\'s memory-driven personal assistant or Atlas\'s more restrained, guardrailed agent.',
     },
     {

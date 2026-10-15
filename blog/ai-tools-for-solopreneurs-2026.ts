@@ -29,7 +29,7 @@ const post: BlogPost = {
   seoTitle: 'AI for Solopreneurs 2026: The Complete Tool Stack',
   metaDescription: 'The complete AI tool stack for solopreneurs in 2026 — 9 categories, real pricing, and INR costs for Indian founders, in one guide.',
   datePublished: '2026-06-30',
-  dateModified: '2026-08-22',
+  dateModified: '2026-10-15',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '12 min read',
@@ -40,7 +40,7 @@ const post: BlogPost = {
   faqs: [
     {
       q: 'What AI tools does a solopreneur actually need in 2026?',
-      a: 'A solopreneur needs AI coverage across nine functions, not nine separate subscriptions: a thinking and writing partner (ChatGPT or Claude) for drafting, planning, and decision support; a task manager with AI built in (Taskade) for project breakdowns and follow-ups; a research tool (Perplexity) for cited, fast answers instead of manual searching; a social media scheduler with AI captioning (Ocoya); a customer support layer (Tidio) so questions get answered outside working hours; a meeting transcription tool (Fireflies.ai) for client calls; a design tool (Canva AI) for graphics without hiring a designer; and an automation layer (Make.com) that connects the rest so data flows between tools without manual copy-paste. The honest starting point for most solopreneurs is 2–3 of these, not all 9 — see the 30-day rollout plan in this guide for the order that produces the fastest return.',
+      a: 'A solopreneur needs AI coverage across nine functions, not nine separate subscriptions. The honest starting point for most solopreneurs is 2–3 of these, not all 9. The core options: ChatGPT or Claude for drafting, planning, and decision support; Taskade for project breakdowns and follow-ups; Perplexity for cited, fast answers; Ocoya for social scheduling with AI captioning; Tidio so questions get answered outside working hours; Fireflies.ai for client calls; Canva AI for graphics without hiring a designer; and Make.com to connect the rest without manual copy-paste. See the 30-day rollout plan in this guide for the order that produces the fastest return.',
     },
     {
       q: 'How much does a complete AI tool stack cost for a solopreneur?',

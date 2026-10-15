@@ -28,7 +28,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Cloning for Podcasts 2026',
   metaDescription: 'AI voice cloning for podcasts in 2026: the 3 jobs it actually solves for a show, what ElevenLabs and Descript Overdub cost, and when cloning is worth it.',
   datePublished: '2026-09-26',
-  dateModified: '2026-09-29',
+  dateModified: '2026-10-15',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '8 min read',
@@ -160,7 +160,7 @@ const post: BlogPost = {
     { q: "Can AI voice cloning replace hosting a whole podcast episode?", a: "Technically yes, but few successful podcasts do this for the core conversation, since listeners respond to real, in-the-moment reactions that cloned narration doesn't reproduce well for interviews or discussion. Cloning works best supporting a real recording, on a scripted segment, not replacing the episode itself." },
     { q: "Does a cloned podcast intro sound noticeably different from a real recording?", a: "For a short, scripted segment like an intro or sponsor read, rarely, since the entire goal is matching your real voice closely enough that listeners can't tell. Full-episode AI narration is far more noticeable over a long stretch, which is part of why it's used for small, repeated segments rather than whole shows." },
     { q: "Do I need voice cloning for multi-language podcast dubbing?", a: "Not strictly, but it makes dubbing realistic at a fraction of the cost of hiring a new voice actor per language. ElevenLabs' cloned voice can narrate a translated script across any of its 29 supported languages, though the translation itself still needs a proper pass separate from the cloning tool." },
-    { q: "At what point should a new podcast start using voice cloning?", a: "There's no fixed episode count, but most shows don't need it in their first 20 episodes. It becomes worth considering once a scripted segment needs to sound identical every week, a flub-fixing workflow would save real editing time, or the audience has grown large enough in a second language to justify dubbing." },
+    { q: "When should a new podcast start using voice cloning?", a: "There's no fixed episode count, but most shows don't need it in their first 20 episodes. It becomes worth considering once a scripted segment needs to sound identical every week, a flub-fixing workflow would save real editing time, or the audience has grown large enough in a second language to justify dubbing." },
   ],
 
   proscons: {
