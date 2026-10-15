@@ -122,6 +122,8 @@ const post: BlogPost = {
 
 <h2>The 8 Best AI Customer Service Agents in 2026</h2>
 
+<h2>Customer Service Agent Setup Checklist</h2>
+
 <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for The 8 Best AI Customer Service Agents in 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <h3>1. Intercom Fin: Best AI-First Customer Service Agent</h3>
 <p>Intercom Fin is the strongest pure-AI customer service agent in 2026, judged by production resolution rate. It runs on GPT-4o and connects to your knowledge sources: help centre articles, Notion docs, PDFs, past chat logs.</p>

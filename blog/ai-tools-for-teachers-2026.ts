@@ -1,4 +1,4 @@
-﻿// blog/ai-tools-for-teachers-2026.ts
+// blog/ai-tools-for-teachers-2026.ts
 // Target keyword: "ai tools for teachers" — 1,600/mo
 // Word count: ~1,500 words
 // ── 2026-09-22 revision ── Added a Pi (Presentation Intelligence) callout after the Gamma
@@ -250,7 +250,14 @@ const post: BlogPost = {
 <p>AI tools won't make you a better teacher, but they will give you back hours of your week that you currently spend on admin tasks. Gamma transforms presentations from a 3-hour chore into a 20-minute edit.</p>
 <p>Grammarly makes feedback faster and more consistent. Notion AI turns lesson planning into a collaborative process with an AI assistant. Rytr handles the small content tasks that add up over a week.</p>
 <p>Start with the free plans. Every tool on this list has one. Use them for a week on your actual teaching tasks, and you'll quickly see which ones save you enough time to justify upgrading. If you also handle content creation outside the classroom, the <a href="/blog/ai-tools-for-students-free-2026/" style="color:rgb(13,148,136);">free AI tools for students guide</a> covers useful overlap for tutoring or after-school programs.</p>
-  `.trim(),
+  
+<h3>Workflow fit and operating cost</h3>
+<p>A useful comparison includes the work around the headline feature. Count setup time, review time, export time, and corrections. A tool that creates a result quickly can still lose its advantage if every output needs a manual cleanup pass.</p>
+<p>Check limits that appear only after regular use. Look for monthly credits, file-size caps, queue priority, team permissions, API access, and whether unused credits expire. Read the cancellation page before starting an annual plan. These checks turn a polished demo into a realistic buying decision.</p>
+<p>For professional work, confirm rights in writing. Check commercial use, client delivery, attribution, training use, and whether the vendor can reuse uploaded material. Keep a local copy of important inputs and outputs. That habit makes vendor changes easier to absorb.</p>
+<p>Use the smallest plan that supports one complete workflow. Upgrade when a measured limit blocks the work, not when a feature list sounds impressive. Revisit the choice after a month of normal use. The best tool is the one that keeps the whole process predictable.</p>
+<p>Compare the total monthly cost with the manual alternative. Include review time, storage, extra seats, taxes, and paid integrations. A cheap plan that requires several workarounds may cost more than a focused tool with a clearer workflow.</p>
+<p>Keep a fallback plan for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document the manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>`.trim(),
 };
 
 export default post;

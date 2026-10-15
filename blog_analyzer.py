@@ -330,8 +330,15 @@ class Site:
         for name, target in (("BLOG_RELATED_POSTS", self.related_posts), ("BLOG_RELATED_TOOLS", self.related_tools)):
             m = re.search(rf"{name}[^=]*=\s*\{{(.*?)\n\}};", page, re.S)
             if m:
+                arrays = {
+                    key: re.findall(r"'([a-z0-9\-]+)'", values)
+                    for key, values in re.findall(r"const\s+([A-Z][A-Z0-9_]*)\s*=\s*\[([^\]]*)\]", page, re.S)
+                }
                 for k, v in re.findall(r"'([a-z0-9\-]+)'\s*:\s*\[([^\]]*)\]", m.group(1)):
                     target[k] = re.findall(r"'([a-z0-9\-]+)'", v)
+                for k, ref in re.findall(r"'([a-z0-9\-]+)'\s*:\s*([A-Z][A-Z0-9_]*)", m.group(1)):
+                    if ref in arrays:
+                        target[k] = arrays[ref]
 
     # tool helpers
     def is_tracked(self, url: str) -> bool:
@@ -992,7 +999,7 @@ def site_analysis(site: Site, A: Analyzer):
             A.add(p, "weak-inbound", "organic", "medium", f"Only {p.inbound} post(s) link here.", "Add 2-3 contextual links from related posts.", "S", snippet=snip, key=str(p.inbound))
     set_importance(site, getattr(site, "traffic", None))
     for s, p in posts.items():
-        if p.intent == "transactional" and revenue_potential(site, p) >= 12 and p.pagerank < median_pr and p.inbound > 2:
+        if p.intent == "transactional" and revenue_potential(site, p) >= 12 and p.pagerank < median_pr and p.inbound <= 2:
             A.add(p, "money-underlinked", "revenue", "medium", "High-revenue-potential page with below-median internal authority.", "Link to it from your highest-PageRank posts with keyword-rich anchors.", "S", key="pr")
     # duplicate titles / metas
     for fld, label in (("seo_title", "seoTitle"), ("meta", "metaDescription"), ("title", "title")):

@@ -99,6 +99,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Pick the tool by the job, not by the brand</h2>
+<img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Portrait photographer reviewing a retouched image on a monitor" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>"AI photo retouching" covers three different jobs. Skin and portrait cleanup is one. Quick fixes to everyday photos is another. Rescuing a weak or damaged photo is the third.</p>
 <p>The five tools below are each built for one of those jobs. This guide matches them to the job instead of giving them one blended score, because a Photoshop plug-in and a phone app are not competing for the same customer.</p>
 <div style="overflow-x:auto;margin:20px 0 28px;"><table style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr style="background:rgba(14,165,233,.1);"><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Tool</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Best job</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Where it runs</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Free start</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Cost signal</th></tr></thead><tbody>

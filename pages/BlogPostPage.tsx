@@ -63,10 +63,40 @@ const BLOG_RELATED_TOOLS: Record<string, string[]> = {
 // never contribute a second-pageview "engaged session" in GA4. Currently
 // covers the posts the audit flagged as orphans; extend this as new posts
 // are published so none launch with zero cross-links.
+const MONEY_PAGE_CROSS_LINKS = [
+  'ai-tools-cost-roi-calculator-2026', 'ai-tools-for-teachers-2026',
+  'ai-voice-cloning-pricing-comparison-2026', 'best-ai-ad-creative-generator-tools-2026',
+  'best-ai-dubbing-tools-2026', 'best-ai-email-marketing-tools-2026',
+  'best-ai-headshot-tools-linkedin-2026', 'best-ai-logo-makers-free-2026',
+  'best-ai-photo-retouching-tools-2026', 'best-ai-photo-upscaler-tools-2026',
+  'best-ai-tools-for-freelancers-india-2026', 'best-ai-tools-for-youtubers-2026',
+  'best-ai-transcription-software-2026', 'best-ai-voice-for-faceless-youtube-channels',
+  'best-ai-voice-generators-for-podcasts-2026', 'best-ai-voice-generators-for-voiceovers-2026',
+  'best-ai-voice-generators-for-youtube-2026', 'best-ai-website-builders-2026',
+  'best-free-ai-tool-plans-2026', 'best-invideo-alternatives-2026',
+  'best-nano-banana-pro-alternatives-2026', 'best-notion-ai-alternatives-2026',
+  'best-podcastle-alternatives', 'chatgpt-alternatives-free-2026',
+  'chatgpt-atlas-vs-perplexity-comet-vs-dia-2026', 'domain-renewal-prices-compared-2026',
+  'lovable-vs-wegic-vs-readdy-vs-creao-2026', 'perplexity-ai-review-2026',
+  'perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026', 'taskade-vs-notion-vs-asana-2026',
+];
 const BLOG_RELATED_POSTS: Record<string, string[]> = {
+  'best-ai-tools-2026':                         ['ai-voice-cloning-pricing-comparison-2026', 'best-ai-ad-creative-generator-tools-2026', 'best-ai-dubbing-tools-2026'],
+  'best-ai-video-generators-2026':              ['best-ai-meeting-tools-2026', 'best-ai-photo-retouching-tools-2026', 'best-ai-tools-for-youtubers-2026'],
+  'best-ai-tools-for-developers-2026':          ['best-ai-tools-for-automation-engineers-2026', 'best-ai-tools-for-social-media-2026', 'best-ai-transcription-software-2026'],
+  'best-no-code-ai-automation-tools-2026':      MONEY_PAGE_CROSS_LINKS,
+  'ai-agents-vs-ai-automation-difference-2026': MONEY_PAGE_CROSS_LINKS,
+  'best-ai-agents-for-small-business-2026':     MONEY_PAGE_CROSS_LINKS,
+  'best-ai-podcast-tools-2026':                 MONEY_PAGE_CROSS_LINKS,
+  'elevenlabs-alternatives-2026':               MONEY_PAGE_CROSS_LINKS,
+  'best-ai-coding-tools-2026':                  MONEY_PAGE_CROSS_LINKS,
+  'best-ai-writing-tools-2026':                 MONEY_PAGE_CROSS_LINKS,
+  'best-ai-tools-for-youtubers-2026':           ['best-ai-voice-for-faceless-youtube-channels', 'best-ai-voice-generators-for-podcasts-2026', 'best-ai-voice-generators-for-voiceovers-2026'],
+  'best-ai-tools-for-freelancers-2026':         ['best-free-ai-tool-plans-2026', 'best-nano-banana-pro-alternatives-2026', 'best-notion-ai-alternatives-2026'],
+  'best-ai-tools-for-startups-2026':            ['best-podcastle-alternatives', 'chatgpt-alternatives-free-2026', 'murf-ai-pricing-2026'],
+  'best-ai-tools-in-india-2026':                ['best-ai-voice-cloning-tools-2026', 'best-ai-voice-cloning-for-podcasts-2026', 'perplexity-ai-review-2026'],
   'ai-tools-for-students-free-2026':                ['best-free-ai-tools-for-students-in-india-2026', 'ai-tools-for-teachers-2026', 'best-free-ai-writing-tools-2026'],
   'best-ai-marketing-tools-2026':                   ['best-ai-email-marketing-tools-2026', 'best-ai-tools-for-social-media-2026', 'best-ai-sales-tools-for-founders-2026', 'best-ai-seo-content-optimization-tools-2026', 'best-ai-ad-creative-generator-tools-2026'],
-  'best-ai-podcast-tools-2026':                     ['best-podcastle-alternatives', 'best-ai-video-generators-2026', 'best-ai-voice-dictation-tools-2026', 'best-ai-voice-cloning-for-podcasts-2026'],
   'best-ai-tools-for-content-creators-free-2026':   ['best-ai-tools-for-youtube-creators-2026', 'best-ai-tools-for-social-media-2026', 'how-to-use-ai-for-content-creation-2026'],
   'best-ai-tools-for-social-media-2026':            ['best-ai-marketing-tools-2026', 'best-ai-tools-for-content-creators-free-2026', 'best-ai-video-generators-2026', 'best-ai-ad-creative-generator-tools-2026'],
   'best-free-ai-tool-plans-2026':                   ['best-free-ai-writing-tools-2026', 'chatgpt-free-vs-claude-free-vs-gemini-free-2026', 'best-free-ai-tools-for-students-in-india-2026', 'ai-ecosystem-growth-report-2026'],
@@ -77,18 +107,14 @@ const BLOG_RELATED_POSTS: Record<string, string[]> = {
   'how-to-use-ai-for-content-creation-2026':        ['best-ai-tools-for-content-creators-free-2026', 'best-ai-writing-tools-2026', 'how-to-use-rytr-to-write-blog-posts'],
   'how-to-use-rytr-to-write-blog-posts':            ['best-ai-writing-tools-2026', 'jasper-ai-alternatives', 'best-grammarly-alternatives'],
   'taskade-vs-notion-vs-asana-2026':                ['best-notion-ai-alternatives-2026', 'best-ai-tools-for-freelancers-2026', 'best-ai-tools-for-startups-2026'],
-  'ai-agents-vs-ai-automation-difference-2026':     ['emergent-ai-explained-2026', 'best-ai-receptionist-small-business-2026', 'best-no-code-ai-automation-tools-2026'],
   'ai-tools-cost-roi-calculator-2026':              ['best-ai-receptionist-small-business-2026', 'ai-ecosystem-growth-report-2026', 'best-ai-spreadsheet-tools-2026'],
   'ai-tools-for-solopreneurs-2026':                 ['best-ai-spreadsheet-tools-2026', 'emergent-ai-explained-2026', 'best-ai-receptionist-small-business-2026'],
-  'best-ai-agents-for-small-business-2026':         ['best-ai-receptionist-small-business-2026', 'best-ai-agents-customer-service-2026', 'ai-agents-vs-ai-automation-difference-2026'],
   'best-ai-headshot-tools-linkedin-2026':           ['best-ai-photo-retouching-tools-2026', 'best-ai-photo-upscaler-tools-2026'],
   'best-ai-photo-upscaler-tools-2026':              ['best-ai-photo-retouching-tools-2026', 'best-ai-headshot-tools-linkedin-2026'],
-  'best-ai-tools-for-freelancers-2026':             ['ai-ecosystem-growth-report-2026', 'best-ai-spreadsheet-tools-2026', 'best-ai-ad-creative-generator-tools-2026'],
   'best-ai-tools-for-youtube-creators-2026':        ['ai-voice-cloning-pricing-comparison-2026', 'best-ai-dubbing-tools-2026', 'best-ai-tools-for-youtubers-2026'],
   'best-ai-voice-cloning-tools-2026':               ['best-ai-voice-cloning-for-podcasts-2026', 'ai-voice-cloning-pricing-comparison-2026', 'best-ai-dubbing-tools-2026', 'elevenlabs-alternatives-2026'],
-  'best-ai-voice-generators-2026':                  ['ai-voice-cloning-pricing-comparison-2026', 'best-ai-voice-cloning-for-podcasts-2026', 'best-ai-dubbing-tools-2026', 'best-ai-voice-cloning-tools-2026'],
+  'best-ai-voice-generators-2026':                  MONEY_PAGE_CROSS_LINKS,
   'best-ai-voice-generators-for-podcasts-2026':     ['best-ai-voice-cloning-for-podcasts-2026', 'best-ai-podcast-tools-2026', 'ai-voice-cloning-pricing-comparison-2026'],
-  'best-ai-writing-tools-2026':                     ['best-ai-seo-content-optimization-tools-2026', 'best-free-ai-writing-tools-2026', 'best-grammarly-alternatives'],
   'best-nano-banana-pro-alternatives-2026':         ['best-ai-photo-retouching-tools-2026', 'best-ai-ad-creative-generator-tools-2026'],
 };
 
@@ -876,7 +902,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
             affiliate/tool link yet still has a same-site next step, which also
             gives the session a shot at the GA4 "2+ pageviews = engaged" path. ── */}
         {(() => {
-          const relatedPostSlugs = BLOG_RELATED_POSTS[post.slug] || [];
+          const relatedPostSlugs = (BLOG_RELATED_POSTS[post.slug] || []).slice(0, 3);
           const relatedPosts = relatedPostSlugs
             .map(slug => BLOG_POSTS_META.find(p => p.slug === slug))
             .filter(Boolean) as typeof BLOG_POSTS_META;

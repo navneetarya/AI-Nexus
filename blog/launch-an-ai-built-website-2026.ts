@@ -158,7 +158,7 @@ const post: BlogPost = {
 <p><strong>Use SSLs.com</strong> when you have a genuine need for a separately managed certificate. If your builder or host already supplies HTTPS, keep the setup simpler and avoid paying for a duplicate certificate.</p>
 
 <h2>Final rule: verify the handoff, not just the AI draft</h2>
-<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team reviewing a website launch checklist" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropyp=entropy" alt="A team reviewing a website launch checklist" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>An AI-generated site can look finished while still having a broken form, a missing email record, an incorrect price, or a private page that search engines cannot crawl. Treat the generated content as a draft and the launch as an operational handoff.</p>
 <p>Buy the smallest setup that meets the actual requirement, record renewal costs, test the public URL from a phone, and keep the domain account separate from the person who created the first AI prompt. That discipline matters more than which provider has the most attractive first-year banner.</p>
 <p>For a freelancer-focused tool stack, see <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:var(--a1);font-weight:600;">Best AI Tools for Freelancers</a>.</p>

@@ -131,7 +131,7 @@ const post: BlogPost = {
     <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Key Features</th>
   </tr></thead>
   <tbody>
-    <tr style="border-bottom:1px solid rgba(13,148,136,.08);"><td style="padding:10px 14px;">Free</td><td style="padding:10px 14px;">$0</td><td style="padding:10px 14px;">Limited searches, profile previews: sufficient to evaluate quality before committing</td></tr>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);"><td style="padding:10px 14px;"><a href="${AFFILIATE_LINKS['juicebox']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Juicebox</a> Free</td><td style="padding:10px 14px;">$0</td><td style="padding:10px 14px;">Limited searches, profile previews: sufficient to evaluate quality before committing</td></tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);"><td style="padding:10px 14px;">Starter</td><td style="padding:10px 14px;">~$79/month</td><td style="padding:10px 14px;">Unlimited NL searches, 200 candidate exports/month, outreach sequencing</td></tr>
     <tr><td style="padding:10px 14px;">Pro / Team</td><td style="padding:10px 14px;">Custom</td><td style="padding:10px 14px;">ATS integrations (Greenhouse, Lever, Ashby), bulk exports, team seat management</td></tr>
   </tbody>

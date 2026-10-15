@@ -172,6 +172,8 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript →</a>
 </div>
 
+
+<p>Additional sources: <a href="https://www.g2.com/">G2 product reviews</a>, <a href="https://www.trustpilot.com/">Trustpilot reviews</a>, and <a href="https://www.capterra.com/">Capterra software comparisons</a>.</p>
 `,
 
   faqs: [
