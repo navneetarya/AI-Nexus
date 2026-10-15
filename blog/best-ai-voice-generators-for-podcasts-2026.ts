@@ -171,7 +171,7 @@ const post: BlogPost = {
   },
 
   outboundCitations: [
-    { url: 'https://podcastle.ai/pricing', label: 'Podcastle — Official Pricing' },
+    { url: 'https://async.com/pricing', label: 'Podcastle (now Async) — Official Pricing' },
     { url: 'https://www.descript.com/pricing', label: 'Descript — Official Pricing' },
     { url: 'https://elevenlabs.io/pricing', label: 'ElevenLabs — Official Pricing' },
   ],

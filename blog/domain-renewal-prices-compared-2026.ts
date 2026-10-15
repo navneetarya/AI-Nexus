@@ -76,7 +76,7 @@ const post: BlogPost = {
     { url: 'https://www.networksolutions.com/', label: 'Network Solutions official site' },
     { url: 'https://www.bigrock.in/domain-registration', label: 'BigRock India domain pricing' },
     { url: 'https://www.bigrock.in/web-hosting', label: 'BigRock India hosting pricing' },
-    { url: 'https://www.ssls.com/ssl-certificate', label: 'SSLs.com official SSL information' },
+    { url: 'https://www.ssls.com/domain-type/wildcard-ssl-certificates', label: 'SSLs.com wildcard SSL certificates' },
     { url: 'https://tldes.com/registrars/spaceship/com', label: 'Price tracker: Spaceship .com (updated 8 Oct 2026)' },
     { url: 'https://domainoffer.net/tld/com/domain-com', label: 'Price tracker: Domain.com .com (18 Aug 2026)' },
     { url: 'https://domainoffer.net/tld/com/networksolutions', label: 'Price tracker: Network Solutions .com (26 May 2026)' },

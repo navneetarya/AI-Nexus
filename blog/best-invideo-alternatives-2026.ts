@@ -40,7 +40,7 @@ const post: BlogPost = {
     },
     {
       q: 'What is the cheapest InVideo AI alternative?',
-      a: 'Opus Clip is the cheapest paid InVideo alternative at $19/month, with a functional free plan that gives you 60 minutes of processing per month. Pictory starts at $19/month with a 3-video free trial. InVideo AI\'s paid plan also starts at $20/month. All three are in a similar price range — the choice should be based on use case (creating new videos vs. repurposing existing ones vs. clipping long content) rather than price.',
+      a: 'Opus Clip is the cheapest paid InVideo alternative at $15/month (Starter), with a functional free plan that gives you 60 minutes of processing per month. Pictory starts at $19/month with a 3-video free trial. InVideo AI\'s paid plan also starts at $20/month. All three are in a similar price range — the choice should be based on use case (creating new videos vs. repurposing existing ones vs. clipping long content) rather than price.',
     },
     {
       q: 'Do any InVideo alternatives require a credit card for the free plan?',
@@ -125,7 +125,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Opus Clip</a></td>
       <td style="padding:10px 14px;">Long video → viral short clips</td>
       <td style="padding:10px 14px;">✅ 60 min/mo</td>
-      <td style="padding:10px 14px;">$19/mo</td>
+      <td style="padding:10px 14px;">$15/mo</td>
       <td style="padding:10px 14px;">Best for short-form repurposing</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
@@ -178,7 +178,7 @@ const post: BlogPost = {
 <p><strong>Who this is for:</strong> Creators who are already producing long-form video content and want to extract short-form without manually editing. If you're running a podcast and want a clip strategy for Reels and YouTube Shorts without hiring an editor, Opus Clip is the most efficient tool at this price point.</p>
 <p><strong>Who this is NOT for:</strong> Creators who don't have existing long-form video. If you want to build a faceless YouTube channel from scratch with no footage, Opus Clip doesn't help. You need InVideo AI or Pictory for that workflow.</p>
 <p><strong>The virality score:</strong> Opus Clip's AI analyses each potential clip for hooks, speaker energy, topic relevance, and pacing, then scores it. According to independent user reports, the top-scored clips consistently perform better on Reels than manually selected ones, picking moments that are easily overlooked in long-form content.</p>
-<p><strong>Free plan:</strong> 60 minutes of video processing per month, enough to clip 2-3 videos at no cost. The $19/month Pro plan removes the monthly limit and adds premium caption styles and auto-post scheduling.</p>
+<p><strong>Free plan:</strong> 60 minutes of video processing per month, enough to clip 2-3 videos at no cost. The Pro plan ($29/month, or $14.50/month billed annually) removes the monthly limit and adds premium caption styles and auto-post scheduling.</p>
 <p><a href="/tools/opus-clip/" style="color:#0D9488;font-weight:600;">→ Read the full Opus Clip review</a></p>
 
 <div style="margin:14px 0 24px;">
@@ -222,7 +222,7 @@ const post: BlogPost = {
 <p><strong>You already make long-form YouTube videos or podcasts and want short-form clips?</strong> → <strong>Opus Clip</strong>. The free plan covers real work, and the virality score genuinely helps prioritise what to post.</p>
 <p><strong>You're happy with InVideo AI but want better voiceovers?</strong> → <strong>Murf AI</strong>. It layers on top of your existing workflow rather than replacing it, and 120+ voices means you'll find one that fits your channel's tone.</p>
 <p><strong>You run a small business and want promo videos, a logo and a basic website from one account?</strong> → <strong>Renderforest</strong>. Its templates are faster than a prompt for standard intros and explainers.</p>
-<p>The honest truth: most serious faceless YouTube creators end up using two of these tools in combination. Pictory or InVideo for video creation, Murf for voiceovers, and Opus Clip to generate short-form content from the same videos. At $19/month each, two of these tools still cost less than a single freelance video editor per video.</p>
+<p>The honest truth: most serious faceless YouTube creators end up using two of these tools in combination. Pictory or InVideo for video creation, Murf for voiceovers, and Opus Clip to generate short-form content from the same videos. At roughly $15–$19/month each, two of these tools still cost less than a single freelance video editor per video.</p>
 
 <p><strong>Related reading:</strong> <a href="/blog/best-ai-tools-for-youtubers-2026/">Best AI Tools for YouTubers in 2026</a>.</p>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>

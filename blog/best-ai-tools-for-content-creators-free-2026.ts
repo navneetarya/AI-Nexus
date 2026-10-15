@@ -73,7 +73,7 @@ const post: BlogPost = {
 
   outboundCitations: [
     { url: 'https://www.canva.com/pricing/', label: 'Canva official pricing page' },
-    { url: 'https://podcastle.ai/pricing', label: 'Podcastle official pricing page' },
+    { url: 'https://async.com/pricing', label: 'Podcastle (now Async) official pricing page' },
     { url: 'https://www.grammarly.com/plans', label: 'Grammarly official pricing page' },
     { url: 'https://rytr.me/pricing', label: 'Rytr official pricing page' },
   ],

@@ -100,7 +100,7 @@ const post: BlogPost = {
     },
     {
       q: 'Can ChatGPT or Microsoft Copilot make PowerPoint presentations?',
-      a: 'Yes. ChatGPT for PowerPoint is OpenAI\'s official add-in that works inside PowerPoint itself, generating and editing slides in the file you\'re already working in rather than a separate app. Microsoft Copilot does the same natively within Microsoft 365, at a higher price point (roughly $30/user/month as an add-on). Google\'s Gemini plays the equivalent role inside Google Slides. The advantage of all three over Gamma, Beautiful.ai, or Canva AI is zero export friction — there\'s no separate file to convert, since the deck is native PowerPoint or Slides from the start. The trade-off is design ambition: these native tools are better at editing and reformatting existing content than at generating a bold, fully-designed deck from a blank prompt the way Gamma does. Pick a native tool if staying inside PowerPoint or Slides matters more than design output; pick a dedicated tool if the opposite is true.',
+      a: 'Yes. ChatGPT for PowerPoint is OpenAI\'s official add-in that works inside PowerPoint itself, generating and editing slides in the file you\'re already working in rather than a separate app. Microsoft Copilot does the same natively within Microsoft 365, at a higher price point than ChatGPT Plus ($20/month): Copilot is roughly $30/user/month as an add-on. Google\'s Gemini plays the equivalent role inside Google Slides. The advantage of all three over Gamma, Beautiful.ai, or Canva AI is zero export friction — there\'s no separate file to convert, since the deck is native PowerPoint or Slides from the start. The trade-off is design ambition: these native tools are better at editing and reformatting existing content than at generating a bold, fully-designed deck from a blank prompt the way Gamma does. Pick a native tool if staying inside PowerPoint or Slides matters more than design output; pick a dedicated tool if the opposite is true.',
     },
     {
       q: 'Which AI presentation tool has audience polls or live engagement features?',
@@ -230,7 +230,7 @@ const post: BlogPost = {
     <tr>
       <td style="padding:10px 14px;font-weight:600;">ChatGPT for PowerPoint / Copilot / Gemini</td>
       <td style="padding:10px 14px;">Varies (ChatGPT free tier limited; Copilot none)</td>
-      <td style="padding:10px 14px;">~$20–$30/month (Copilot add-on)</td>
+      <td style="padding:10px 14px;">ChatGPT Plus $20/month; Copilot add-on ~$30/user/month</td>
       <td style="padding:10px 14px;">Editing native PowerPoint/Slides, zero export friction</td>
       <td style="padding:10px 14px;">⭐ 3.9/5</td>
     </tr>
@@ -413,7 +413,7 @@ const post: BlogPost = {
 
 <h2>ChatGPT for PowerPoint, Copilot &amp; Gemini: Best If You Want AI Inside Your Existing Tool</h2>
 <p>Every tool above generates a deck in its own separate app, which means an export step before your presentation lives in PowerPoint or Google Slides. A growing share of searches for this topic are actually looking for the opposite: AI that works inside the tool they already use.</p>
-<p>Three options cover this intent. <strong>ChatGPT for PowerPoint</strong> is OpenAI's official add-in — it generates and edits slides directly inside a PowerPoint file, so there's no separate export or format conversion at any point. <strong>Microsoft Copilot</strong> does the same natively across Microsoft 365, at a meaningfully higher price (roughly $30/user/month as an add-on to an existing Microsoft 365 subscription). <strong>Google's Gemini</strong> plays the equivalent role inside Google Slides for teams already on Google Workspace.</p>
+<p>Three options cover this intent. <strong>ChatGPT for PowerPoint</strong> is OpenAI's official add-in — it generates and edits slides directly inside a PowerPoint file, so there's no separate export or format conversion at any point. <strong>Microsoft Copilot</strong> does the same natively across Microsoft 365, at a meaningfully higher price than ChatGPT Plus ($20/month): Copilot is roughly $30/user/month as an add-on to an existing Microsoft 365 subscription. <strong>Google's Gemini</strong> plays the equivalent role inside Google Slides for teams already on Google Workspace.</p>
 <p>The honest trade-off: none of these three match Gamma's ability to generate a bold, fully-designed deck from a blank prompt. They're strongest at editing, reformatting, and extending a deck that already has some structure, not at replacing the blank-page problem the way Gamma or Prezi does.</p>
 <p>Pick a native option if staying inside PowerPoint or Slides — and avoiding any export/format-conversion step — matters more to your workflow than getting the most visually ambitious first draft. Pick Gamma, Beautiful.ai, or Prezi AI if design output is the priority and you're comfortable exporting or sharing a link.</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">

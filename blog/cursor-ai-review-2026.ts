@@ -76,7 +76,7 @@ const post: BlogPost = {
     { url: 'https://cursor.com/pricing', label: 'Cursor — Official Pricing Page' },
     { url: 'https://github.com/features/copilot/plans', label: 'GitHub Copilot — Plans and Pricing' },
     { url: 'https://cursor.com/features', label: 'Cursor — Feature Documentation' },
-    { url: 'https://windsurf.com/pricing', label: 'Windsurf — Pricing' },
+    { url: 'https://devin.ai/pricing', label: 'Windsurf — Pricing' },
   ],
 
   content: `
@@ -255,7 +255,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">Paid pricing</td>
       <td style="padding:10px 14px;">$20/month Pro</td>
       <td style="padding:10px 14px;">$10–$19/month</td>
-      <td style="padding:10px 14px;">$15/month Pro</td>
+      <td style="padding:10px 14px;">$20/month Pro</td>
       <td style="padding:10px 14px;">$20/month <a href="/tools/replit/">Replit</a> Core</td>
     </tr>
     <tr>
@@ -354,7 +354,7 @@ const post: BlogPost = {
 <h2 id="alternatives">Alternatives to Cursor</h2>
 <ul style="margin:12px 0 24px 24px;line-height:2.4;">
   <li><strong>GitHub Copilot ($10–$19/month):</strong> Better GitHub ecosystem integration, lower price, free for students. Weaker multi-file editing and model variety.</li>
-  <li><strong>Windsurf ($15/month):</strong> Similar VS Code fork with Cascade multi-file editing. Smaller community, fewer model options, but competitive on price.</li>
+  <li><strong>Windsurf ($20/month):</strong> Similar VS Code fork with Cascade multi-file editing. Smaller community and fewer model options, at the same $20 price point as Cursor Pro.</li>
   <li><strong><a href="/tools/claude-code/">Claude Code</a> (CLI, usage-based):</strong> Anthropic's agentic coding tool. Better for complex refactors and long-context codebases; no GUI editor. Pairs well with Cursor for terminal-heavy tasks.</li>
   <li><strong>Replit AI ($20/month):</strong> Browser-based; best for deployment-focused workflows, beginner-friendly. Not a VS Code replacement for professional local development.</li>
 </ul>

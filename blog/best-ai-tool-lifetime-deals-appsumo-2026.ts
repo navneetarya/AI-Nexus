@@ -74,7 +74,7 @@ const post: BlogPost = {
 
   outboundCitations: [
     { url: 'https://appsumo.com', label: 'AppSumo — official marketplace' },
-    { url: 'https://appsumo.com/about/', label: 'AppSumo — company information' },
+    { url: 'https://appsumo.com/about', label: 'AppSumo — company information' },
     { url: 'https://appsumo.com/plus/', label: 'AppSumo — Plus membership' },
   ],
   wordCount: 1550,

@@ -199,7 +199,7 @@ const post: BlogPost = {
 <p>For developers, the real effect is that an MCP server built once, say, for a company's internal API, works across whichever of these editors a team happens to use.</p>
 <div style="margin:14px 0 24px;">
   <a href="https://cursor.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Cursor →</a>
-  <a href="https://windsurf.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Windsurf →</a>
+  <a href="https://devin.ai/desktop" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Windsurf →</a>
 </div>
 
 <h3>Automation Platforms: n8n, Zapier, Activepieces</h3>

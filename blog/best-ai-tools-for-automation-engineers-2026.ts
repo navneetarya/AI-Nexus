@@ -17,7 +17,7 @@ const post: BlogPost = {
   myTake: 'Across real CI/CD pipeline use cases rather than demo projects, the combination that actually holds up is Copilot for the boilerplate and a dedicated self-healing platform like Testim for anything customer-facing — trying to make one tool do both jobs well hasn\'t worked for any team I\'ve seen.',
   outboundCitations: [
     { url: 'https://docs.github.com/en/copilot', label: 'GitHub Copilot documentation (official)' },
-    { url: 'https://help.testim.io/', label: 'Testim help center — self-healing test locators (official)' },
+    { url: 'https://docs.tricentis.com/testim/content/home.htm', label: 'Testim help center — self-healing test locators (official)' },
     { url: 'https://applitools.com/docs/', label: 'Applitools documentation — Visual AI testing (official)' },
   ],
   faqs: [

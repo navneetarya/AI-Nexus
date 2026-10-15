@@ -51,7 +51,7 @@ const post: BlogPost = {
     },
     {
       q: 'Does Writesonic have a genuinely free plan, or just a trial?',
-      a: 'Writesonic has a genuine permanent free plan, not a trial \u2014 25 short-form generations per month, with no expiry date and no credit card required. The catch is that Article Writer 6.0, the tool\u2019s main long-form blog generator, is locked to paid plans starting at $16/month. The free plan is real for short-form copy (ad headlines, product descriptions, taglines) but only a preview of the tool\u2019s full long-form capability.',
+      a: 'Writesonic has a genuine permanent free plan, not a trial \u2014 25 short-form generations per month, with no expiry date and no credit card required. The catch is that Article Writer 6.0, the tool\u2019s main long-form blog generator, is locked to paid plans starting at $79/month billed annually. The free plan is real for short-form copy (ad headlines, product descriptions, taglines) but only a preview of the tool\u2019s full long-form capability.',
     },
     {
       q: 'What is the cheapest way to build a complete free AI writing workflow?',
@@ -127,7 +127,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">25 generations/month</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">Occasional short-form copy</td>
-      <td style="padding:10px 14px;">$16/mo</td>
+      <td style="padding:10px 14px;">$79/mo (annual)</td>
     </tr>
     <tr>
       <td style="padding:10px 14px;font-weight:600;"><a href="/tools/chatgpt/">ChatGPT</a> (wildcard)</td>
@@ -209,7 +209,7 @@ const post: BlogPost = {
 </p>
 <h2>#4 Writesonic: Free Plan for Occasional Short-Form Copy</h2>
 <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #4 Writesonic: Free Plan for Occasional Short-Form Copy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p><strong>Free plan: 25 generations/month · No credit card required · Paid: $16/month</strong></p>
+<p><strong>Free plan: 25 generations/month · No credit card required · Paid: from $79/month billed annually</strong></p>
 <p>Writesonic's free plan is the most limited on this list. 25 generations per month is a tight allowance for a tool primarily designed for long-form blog content.</p>
 <p>That said, the free plan does provide real access to Writesonic's short-form templates: ad copy, product descriptions, email subjects, taglines, and social captions. If you occasionally need polished marketing copy rather than regular blog content, 25 generations stretches further than it sounds.</p>
 <p><strong>What the free plan includes:</strong></p>
@@ -220,9 +220,9 @@ const post: BlogPost = {
   <li>No access to Article Writer 6.0 (the long-form blog post generator requires a paid plan)</li>
 </ul>
 <p><strong>The honest assessment:</strong> Writesonic's real strength, Article Writer 6.0 for long-form SEO content, is not available on the free plan. If long-form blog posts are your goal, the free plan is a preview rather than a working tool.</p>
-<p>For occasional short-form copy needs, the 25 monthly generations are useful. For regular publishing, the $16/month Individual plan is the entry point that unlocks the tool's full capability.</p>
+<p>For occasional short-form copy needs, the 25 monthly generations are useful. For regular publishing, the paid plans (from $79/month billed annually) are the entry point that unlocks the tool's full capability.</p>
 <p><strong>Who the free plan is best for:</strong> Marketers who occasionally need a polished tagline, ad headline, or product description. It suits anyone who doesn't want to commit to a subscription for infrequent copy needs.</p>
-<p><a href="/tools/writesonic/" style="color:#0D9488;font-weight:600;">→ Full Writesonic review: Article Writer 6.0, Chatsonic, and whether $16/month is worth it</a></p>
+<p><a href="/tools/writesonic/" style="color:#0D9488;font-weight:600;">→ Full Writesonic review: Article Writer 6.0, Chatsonic, and whether $79/month is worth it</a></p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['writesonic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Writesonic Free →</a>
@@ -261,7 +261,7 @@ const post: BlogPost = {
   <li><strong>Grammarly → Premium ($12/month):</strong> When you want tone detection and full-sentence rewrites, not just error correction</li>
   <li><strong>Rytr → $9/month:</strong> When you exhaust 10,000 characters in the first week of the month</li>
   <li><strong>QuillBot → $9.95/month:</strong> When the 125-word limit makes paraphrasing long documents too slow</li>
-  <li><strong>Writesonic → $16/month:</strong> When you need Article Writer 6.0 for long-form SEO blog posts</li>
+  <li><strong>Writesonic → from $79/month (annual billing):</strong> When you need Article Writer 6.0 for long-form SEO blog posts</li>
 </ul>
 <p>See also: <a href="/blog/best-ai-writing-tools-2026/" style="color:#0D9488;font-weight:600;">→ Best AI writing tools 2026: full paid plans compared</a> and <a href="/blog/best-ai-writing-tools-for-beginners-2026/" style="color:#0D9488;font-weight:600;">→ Best AI writing tools for beginners</a> if you're new to the category and want a simpler starting point.</p>
   

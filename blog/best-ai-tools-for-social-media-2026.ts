@@ -29,7 +29,7 @@ const post: BlogPost = {
     },
     {
       q: 'Is Ocoya worth it for social media management?',
-      a: 'Ocoya is worth it if you manage social media professionally — for yourself or clients. At $15/month, it replaces a separate AI writing tool, a Canva-style template library, and a scheduling platform like Buffer. If you only manage your own personal accounts, Buffer\'s free plan is probably sufficient.',
+      a: 'Ocoya is worth it if you manage social media professionally — for yourself or clients. At $29/month, it replaces a separate AI writing tool, a Canva-style template library, and a scheduling platform like Buffer. If you only manage your own personal accounts, Buffer\'s free plan is probably sufficient.',
     },
     {
       q: 'Does Leonardo.ai allow commercial use of AI-generated images on social media?',
@@ -41,7 +41,7 @@ const post: BlogPost = {
     },
     {
       q: 'Is there a free AI tool for repurposing long videos into Reels?',
-      a: 'Yes — Opus Clip has a free plan that includes 60 minutes of video processing per month, enough to repurpose 1–2 long videos into short clips for TikTok, Reels, and YouTube Shorts. It automatically identifies the most engaging moments and adds captions. For higher volume, paid plans start at $19/month.',
+      a: 'Yes — Opus Clip has a free plan that includes 60 minutes of video processing per month, enough to repurpose 1–2 long videos into short clips for TikTok, Reels, and YouTube Shorts. It automatically identifies the most engaging moments and adds captions. For higher volume, paid plans start at $15/month.',
     },
     {
       q: 'Can AI tools help with faceless social media content?',
@@ -63,7 +63,7 @@ const post: BlogPost = {
     ],
   },
   quickAnswer: 'Best AI tools for social media in 2026: Ocoya is the top all-in-one pick for caption writing plus scheduling. Opus Clip automatically turns long videos into short-form Reels and TikTok clips. Leonardo.ai generates original images with 150 free credits a day. InVideo AI builds faceless videos from a script, and Rytr is the fastest option for a quick caption draft.',
-  myTake: "Navneet's take: Ocoya is the tool is a strong choice for most social media managers to first — folding caption writing and scheduling into one $15/month platform removes more weekly hours than any single-purpose tool on this list. For a solo creator on zero budget, Rytr plus Leonardo.ai gets you 90% of the way there for free.",
+  myTake: "Navneet's take: Ocoya is the tool is a strong choice for most social media managers to first — folding caption writing and scheduling into one $29/month platform removes more weekly hours than any single-purpose tool on this list. For a solo creator on zero budget, Rytr plus Leonardo.ai gets you 90% of the way there for free.",
   outboundCitations: [
     { url: 'https://www.ocoya.com/pricing', label: 'Ocoya — Official Pricing' },
     { url: 'https://www.opus.pro/pricing', label: 'Opus Clip — Official Pricing' },
@@ -102,14 +102,14 @@ const post: BlogPost = {
       <td style="padding:10px 14px;font-weight:700;color:#0D9488;">Ocoya ⭐ Best overall</td>
       <td style="padding:10px 14px;">Captions + scheduling</td>
       <td style="padding:10px 14px;">No permanent free plan</td>
-      <td style="padding:10px 14px;">$15/month</td>
+      <td style="padding:10px 14px;">$29/month</td>
       <td style="padding:10px 14px;">⭐ 4.0/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['opus-clip']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Opus Clip</a></td>
       <td style="padding:10px 14px;">Long video → short clips</td>
       <td style="padding:10px 14px;">Yes: 60 min/month</td>
-      <td style="padding:10px 14px;">$19/month</td>
+      <td style="padding:10px 14px;">$15/month</td>
       <td style="padding:10px 14px;">⭐ 4.3/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
@@ -146,11 +146,11 @@ const post: BlogPost = {
 
 <h2>1. Ocoya: AI Captions + Scheduling in One Platform</h2>
 <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for 1. Ocoya: AI Captions + Scheduling in One Platform" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p><strong>Category: Social Media · Rating: 4.0/5 · Pricing: From $15/month · <a href="/tools/ocoya/" style="color:var(--a1);font-weight:600;">Full Ocoya Review →</a></strong></p>
+<p><strong>Category: Social Media · Rating: 4.0/5 · Pricing: From $29/month · <a href="/tools/ocoya/" style="color:var(--a1);font-weight:600;">Full Ocoya Review →</a></strong></p>
 <p>Ocoya is the closest thing to a complete social media AI stack in a single product. You get an AI caption writer (describe a post, pick a tone, get 3 options with hashtags) and a visual creator with Canva-style templates. It also schedules posts to Instagram, LinkedIn, Twitter/X, TikTok, Facebook, and Pinterest.</p>
 <p>The workflow that works: use Ocoya's AI to write 5–7 captions in one sitting for the week, pair each with a visual template, then schedule them all.</p>
 <p>For a social media manager handling 3–5 client accounts, this eliminates the most time-consuming parts of the job. Verified user reports show workflows going from 6 hours a week to 90 minutes with this approach.</p>
-<p><strong>The honest limitation:</strong> Ocoya doesn't have a permanent free plan. The $15/month Starter tier covers 1 workspace and 5 social profiles, which is fine for one brand. If you manage 10+ accounts, you'll need a higher tier. Compare with Buffer or Hootsuite in our <a href="/compare/ocoya-vs-buffer-vs-hootsuite/" style="color:var(--a1);font-weight:600;">Ocoya vs Buffer vs Hootsuite comparison</a>.</p>
+<p><strong>The honest limitation:</strong> Ocoya doesn't have a permanent free plan. The $29/month Starter tier (7-day free trial) covers 1 workspace and 5 social profiles, which is fine for one brand. If you manage 10+ accounts, you'll need a higher tier. Compare with Buffer or Hootsuite in our <a href="/compare/ocoya-vs-buffer-vs-hootsuite/" style="color:var(--a1);font-weight:600;">Ocoya vs Buffer vs Hootsuite comparison</a>.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['ocoya']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Ocoya Free →</a>
@@ -159,7 +159,7 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <h2>2. Opus Clip: Turn Long Videos into Short Clips Automatically</h2>
-<p><strong>Category: Video · Rating: 4.3/5 · Pricing: Free + from $19/month · <a href="/tools/opus-clip/" style="color:var(--a1);font-weight:600;">Full Opus Clip Review →</a></strong></p>
+<p><strong>Category: Video · Rating: 4.3/5 · Pricing: Free + from $15/month · <a href="/tools/opus-clip/" style="color:var(--a1);font-weight:600;">Full Opus Clip Review →</a></strong></p>
 <p>If you create any long-form video content (YouTube videos, webinars, podcast recordings, Zoom calls), Opus Clip is worth adding to your stack. It's the most valuable social media AI tool for that job.</p>
 <p>You paste a video URL (YouTube, Loom, or upload a file), and Opus Clip's AI identifies the most engaging moments. It cuts them into short clips, adds captions, and reformats for vertical (Reels/TikTok) or horizontal delivery.</p>
 <p>The AI scoring system is surprisingly accurate at finding the "hook" moments in a longer video. The clips it picks outperform manually selected excerpts, based on community and user reports. The free plan gives you 60 minutes of processing per month, which is enough for 1–2 long videos.</p>

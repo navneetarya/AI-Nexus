@@ -272,7 +272,7 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://elevenlabs.io/pricing', label: 'ElevenLabs — Official Pricing' },
     { url: 'https://get.murf.ai/pricing', label: 'Murf AI — Official Pricing' },
-    { url: 'https://podcastle.ai/pricing', label: 'Podcastle — Official Pricing' },
+    { url: 'https://async.com/pricing', label: 'Podcastle (now Async) — Official Pricing' },
     { url: 'https://www.descript.com/pricing', label: 'Descript — Official Pricing' },
     { url: 'https://www.trustpilot.com/review/elevenlabs.io', label: 'ElevenLabs — Trustpilot Reviews' },
   ],

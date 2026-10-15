@@ -66,7 +66,7 @@ const post: BlogPost = {
   quickAnswer: 'Best AI podcast tools 2026: Podcastle wins overall for all-in-one recording and editing, with a workable free plan up to 10 hours a month. Adobe Podcast Enhance cleans up noisy audio for free with no account needed. Descript is best for editing by transcript instead of a waveform. Murf AI covers AI voiceovers for intros, outros, and ad reads.',
   myTake: 'Navneet\'s take: Adobe Podcast Enhance is the one tool here I\'d tell any podcaster to bookmark regardless of what else they use — it\'s free, needs no account, and the noise cleanup is genuinely studio-grade. Podcastle earns the top spot because it solves recording and cleanup in one place, which matters most for a new show with a tight budget.',
   outboundCitations: [
-    { url: 'https://podcastle.ai/pricing', label: 'Podcastle — Official Pricing' },
+    { url: 'https://async.com/pricing', label: 'Podcastle (now Async) — Official Pricing' },
     { url: 'https://podcast.adobe.com/enhance', label: 'Adobe Podcast — Enhance Speech' },
     { url: 'https://www.descript.com/pricing', label: 'Descript — Official Pricing' },
     { url: 'https://get.murf.ai/pricing', label: 'Murf AI — Official Pricing' },

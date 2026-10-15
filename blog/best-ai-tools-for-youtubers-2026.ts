@@ -18,7 +18,7 @@ const post: BlogPost = {
   readTime: '9 min read',
   ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-for-youtubers-2026.webp',
   excerpt: 'AI has made YouTube content creation dramatically faster in 2026. These tools handle scripting, editing, voiceover, thumbnails, and SEO optimisation — saving creators 5–10 hours per video.',
-  quickAnswer: 'The best AI tools for YouTubers in 2026: InVideo AI ($20/month) for faceless video creation, Opus Clip (free–$19/month) for repurposing long videos into Shorts, Descript ($16/month) for text-based editing, Murf AI ($19/month) for voiceover, and VidIQ (free–$49/month) for SEO and channel analytics. A full stack runs $70–90/month and saves 8–12 hours per week.',
+  quickAnswer: 'The best AI tools for YouTubers in 2026: InVideo AI ($20/month) for faceless video creation, Opus Clip (free–$19/month) for repurposing long videos into Shorts, Descript (Hobbyist, $16/month billed annually) for text-based editing, Murf AI ($19/month) for voiceover, and VidIQ (free–$49/month) for SEO and channel analytics. A full stack runs $70–90/month and saves 8–12 hours per week.',
   myTake: 'This guide compares these tools against long-form and Shorts creator workflows, not just demo videos. The practical split is InVideo AI or Descript for production, plus one repurposing tool.',
   faqs: [
     {
@@ -85,7 +85,7 @@ const post: BlogPost = {
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For faceless YouTube videos: <strong>InVideo AI ($20/mo)</strong>. For repurposing long-form into Shorts: <strong>Opus Clip (free–$19/mo)</strong>. For video editing with transcripts: <strong><a href="/tools/descript/">Descript</a> ($16/mo)</strong>. For AI voiceover: <strong><a href="/tools/murf-ai/">Murf AI</a> ($19/mo)</strong>. For YouTube SEO: <strong>VidIQ (free–$49/mo)</strong>.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For faceless YouTube videos: <strong>InVideo AI ($20/mo)</strong>. For repurposing long-form into Shorts: <strong>Opus Clip (free–$19/mo)</strong>. For video editing with transcripts: <strong><a href="/tools/descript/">Descript</a> (Hobbyist, $16/mo billed annually)</strong>. For AI voiceover: <strong><a href="/tools/murf-ai/">Murf AI</a> ($19/mo)</strong>. For YouTube SEO: <strong>VidIQ (free–$49/mo)</strong>.</p>
 </div>
 <blockquote style="margin:0 0 24px;padding:14px 18px;border-left:3px solid #0D9488;font-style:italic;color:var(--txt);background:rgba(13,148,136,.04);border-radius:0 8px 8px 0;">
   This guide compares these tools against long-form and Shorts creator workflows, not just demo videos. Most solo creators don't need all five running at once from day one.
@@ -136,7 +136,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a></td>
       <td style="padding:10px 14px;">Text-based video editing</td>
       <td style="padding:10px 14px;">✅ 1hr/mo</td>
-      <td style="padding:10px 14px;">$12/mo</td>
+      <td style="padding:10px 14px;">$16/mo (Hobbyist, annual)</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
       <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Murf AI</td>
@@ -192,7 +192,7 @@ const post: BlogPost = {
 <p>Descript's text-based editing is the most genuinely novel editing paradigm available to YouTube creators. Record your video, get an automatic transcript, then edit the video by editing the text: delete a word in the transcript and the corresponding video clip disappears.</p>
 <p>Finding and removing every "um" in a 20-minute interview takes 5 minutes, not 50. For interview-format channels, podcast-style content, and any video where the spoken word drives the edit, Descript saves substantial time.</p>
 <p>The Studio Sound AI cleanup improves audio quality automatically. The Overdub voice cloning lets you re-record individual words using an AI clone of your voice, so there's no need to re-record an entire take to fix one mispronounced word.</p>
-<p>The free plan covers 1 hour of transcription per month, enough for light use. The Creator plan at $12/month works for regular YouTube production.</p>
+<p>The free plan covers 1 hour of transcription per month, enough for light use. The Hobbyist plan at $16/month (billed annually) works for regular YouTube production; the Creator tier is $24/month.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>

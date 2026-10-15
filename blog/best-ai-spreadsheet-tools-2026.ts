@@ -91,7 +91,7 @@ const post: BlogPost = {
   },
   outboundCitations: [
     { url: 'https://sheets.popai.pro', label: 'PopAi Sheets — Official Site' },
-    { url: 'https://numerous.ai/pricing', label: 'Numerous.ai — Official Pricing' },
+    { url: 'https://numerous.ai/', label: 'Numerous.ai — Official Pricing' },
     { url: 'https://coefficient.io/pricing', label: 'Coefficient — Official Pricing' },
     { url: 'https://www.microsoft.com/en-us/microsoft-365/microsoft-copilot', label: 'Microsoft 365 Copilot — Official Pricing' },
   ],
@@ -187,7 +187,7 @@ const post: BlogPost = {
 <p>The limitation: Numerous.ai has no ability to pull in outside data on its own — it only processes data already sitting in your sheet, and long columns process one row at a time rather than in parallel, so very large batch jobs take real time to finish.</p>
 <p><strong>Numerous.ai: check current plans.</strong> A limited free tier is available for testing the core function.</p>
 <div style="margin:14px 0 24px;">
-  <a href="https://numerous.ai/pricing" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Numerous.ai →</a>
+  <a href="https://numerous.ai/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Numerous.ai →</a>
 </div>
 
 <h2>Coefficient: Best for Live Business Data in a Sheet</h2>

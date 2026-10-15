@@ -75,7 +75,7 @@ const post: BlogPost = {
     { url: 'https://wordtosite.com/pricing', label: 'WordToSite official pricing' },
     { url: 'https://www.bigrock.in/domain-registration', label: 'BigRock India domain pricing' },
     { url: 'https://www.bigrock.in/web-hosting', label: 'BigRock India hosting pricing' },
-    { url: 'https://www.ssls.com/ssl-certificate', label: 'SSLs.com official SSL information' },
+    { url: 'https://www.ssls.com/domain-type/wildcard-ssl-certificates', label: 'SSLs.com wildcard SSL certificates' },
     { url: 'https://www.newfold.com/brands', label: 'Newfold Digital official brand list' },
   ],
   wordCount: 1820,

@@ -70,7 +70,7 @@ const post: BlogPost = {
   outboundCitations: [
     { url: 'https://github.com/features/copilot/plans', label: 'GitHub Copilot — official plans' },
     { url: 'https://cursor.com/pricing', label: 'Cursor — official pricing' },
-    { url: 'https://codeium.com/pricing', label: 'Codeium — official pricing' },
+    { url: 'https://devin.ai/pricing', label: 'Windsurf (formerly Codeium) — official pricing' },
   ],
 
   content: `
