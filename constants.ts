@@ -329,6 +329,85 @@ export const TOOLS: Tool[] = [
     ],
     reviewType: 'research-based',
   },
+  // Spaceship — page created Oct 16 2026 from the vendor's official pages. Mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'mk2', slug: 'spaceship',
+    name: 'Spaceship', tagline: 'Low-cost domain registrar with free privacy, plus hosting and business email in one account',
+    description: "Spaceship is a domain registrar that also sells hosting, business email and an AI site builder. Its domains page lists .com at $8.88 for the first year, $9.98 to renew and $9.48 to transfer, plus a $0.20 ICANN fee, and domain privacy is free on eligible domains. The same account covers shared hosting, managed WordPress, VPS, Spacemail business email and Alf Website Studio.",
+    category: Category.MARKETING, affiliateLink: 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2F&utm_source=spaceship&utm_medium=affiliate',
+    iconName: 'Globe', color: '#6366f1', accentColor: '#4338ca',
+    pricing: '.com from $8.88 first year, $9.98 renewal (+$0.20 ICANN fee)', bestFor: 'Owners who want a low, transparent .com price and free privacy, with hosting and email under one account',
+    ctaText: 'Search a Domain at Spaceship',
+    features: [".com listed at $8.88 for year one, $9.98 to renew and $9.48 to transfer", "Free domain privacy on eligible registrations and transfers", "Shared hosting, EasyWP managed WordPress, VPS and CDN in the same account", "Spacemail business email with a 30-day free trial", "Alf Website Studio, an AI site builder, from the same company", "A published refund policy that lists the rules for domains, hosting and email"],
+    pros: [
+      "The .com renewal price is close to the first-year price, so there is no large jump after year one",
+      "Domain privacy is free on eligible domains",
+      "Domains, hosting, business email and an AI site builder sit in one account",
+      "Refund rules are published in a plain-language policy rather than buried in terms",
+    ],
+    cons: [
+      "Domain registrations are generally non-refundable; a refund within 5 days is at Spaceship's discretion, and promotional purchases are not eligible",
+      "Some extensions cost far more than .com: a third-party tracker lists .ai at $79.98 a year and .io renewing at $51.75",
+      "Support is by email and chat; a third-party review says there is no phone line",
+      "A Spacemail subscription covers one domain and cannot be used with subdomains",
+    ],
+    notForYou: "Buyers who want phone support or prices in rupees; BigRock is the India-focused option. Also skip it if you need an .ai or .io domain on a tight budget, since both cost well above .com, or if you want a guaranteed refund window on a new domain.",
+    lastTestedISO: '2026-10-16',
+    researchSources: {
+      lastVerified: '2026-10-16',
+    },
+    pricingBreakdown: [
+      { tier: ".com registration", price: "$8.88 first year", highlight: "List price $9.66 · plus $0.20 ICANN fee · promotional purchases are not refund-eligible" },
+      { tier: ".com renewal", price: "$9.98 per year", highlight: "Plus $0.20 ICANN fee · renewals are generally non-refundable" },
+      { tier: ".com transfer", price: "$9.48", highlight: "List price $9.98 · free privacy on eligible transfers · failed transfers are refunded automatically" },
+      { tier: "Spacemail Pro", price: "$18.88 for 2 years", highlight: "1 mailbox, 5 GB · 30-day free trial · Business and Advanced tiers cost more" },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: "Page created from Spaceship's official domains, Spacemail and refund-policy pages. No first-hand testing is claimed. Prices are the figures shown on those pages in October 2026; they change often, so confirm the checkout total." },
+    ],
+    reviewType: 'research-based',
+  },
+
+  // BigRock — page created Oct 16 2026 from the vendor's official pages. Mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'mk3', slug: 'bigrock',
+    name: 'BigRock', tagline: 'India-focused domain registrar and web host with rupee pricing',
+    description: "BigRock is an ICANN-accredited domain registrar and web host aimed at Indian buyers, with prices shown in rupees. It sells domains, shared, WordPress, reseller and VPS hosting, dedicated servers, business email, SSL certificates and a website builder. Its headline offer is a .com or .in for ₹1 in the first year, but only on a three-year registration.",
+    category: Category.MARKETING, affiliateLink: 'https://bigrock-in.sjv.io/3krA0M?utm_source=bigrock&utm_medium=affiliate',
+    iconName: 'Globe', color: '#f97316', accentColor: '#c2410c',
+    pricing: '.com or .in ₹1 first year on a 3-year term, then ₹1,405 (.com) or ₹899 (.in) a year', bestFor: 'India-based site owners who want rupee pricing with domains and hosting in one account, and who will commit to a three-year term',
+    ctaText: 'Check BigRock Domain Prices',
+    features: ["Rupee pricing for domains and hosting", ".com and .in at ₹1 for year one on a three-year registration", "Shared hosting from ₹69 a month with free Let's Encrypt SSL and daily backups", "Two Titan email accounts, domain forwarding and domain theft protection with eligible domains", "WordPress, reseller, VPS and dedicated hosting, plus Google Workspace and SSL certificates", "24/7 live chat support, with phone lines for support and sales"],
+    pros: [
+      "Prices are shown in rupees, so Indian buyers do not have to convert dollars",
+      "The ₹1 first-year .com and .in offer makes the first bill very small",
+      "Domains, hosting, email and SSL are all sold in one place",
+      "A 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting",
+    ],
+    cons: [
+      "The ₹1 price needs a three-year registration; the three-year total is ₹2,811 for .com and ₹1,799 for .in",
+      "Renewal is far above the ₹1 first year: ₹1,405 a year on the three-year .com offer and ₹899 on .in",
+      "WHOIS privacy is not free: Domain Protect+ is a separate add-on, and without it contact details appear in WHOIS",
+      "The money-back guarantee does not list domains, and it excludes 1-month purchases",
+      "Figures differ between pages: the regular .in first-year price is ₹549 in one table and ₹579 in the FAQ, and VPS shows ₹289 or ₹329 a month",
+    ],
+    notForYou: "Buyers outside India who want dollar pricing, and anyone who wants domain privacy included at no cost or a refund window on a domain. Spaceship includes privacy free on eligible domains and is the simpler pick for a one-year .com.",
+    lastTestedISO: '2026-10-16',
+    researchSources: {
+      lastVerified: '2026-10-16',
+    },
+    pricingBreakdown: [
+      { tier: ".com, 3-year offer", price: "₹1 year one, then ₹1,405 a year", highlight: "Regular first-year price ₹749 · standard renewal ₹1,479 · three-year total ₹2,811" },
+      { tier: ".in, 3-year offer", price: "₹1 year one, then ₹899 a year", highlight: "Regular first-year price ₹549 (the FAQ says ₹579) · three-year total ₹1,799" },
+      { tier: ".ai", price: "₹4,699 first year", highlight: "Two-year purchase required" },
+      { tier: "Shared hosting", price: "From ₹69/month", highlight: "Free Let's Encrypt SSL and daily backups · 30-day money-back guarantee · term and renewal price not confirmed" },
+    ],
+    indiaPricing: { free: "No free plan; ₹1 first-year .com and .in offer on a 3-year term", paid: ".in ₹899/year; .com ₹1,405/year on the 3-year offer", note: "Prices are shown in rupees. Payment methods were not listed on the pages we checked, so confirm them and the final total, including any taxes, at checkout." },
+    updateLog: [
+      { date: 'October 2026', note: "Page created from BigRock's official homepage, domain and .com/.in offer pages. No first-hand testing is claimed. Prices are the figures shown in October 2026; the ₹1 offer is described as limited-time and some pages disagree on regular prices, so confirm at checkout." },
+    ],
+    reviewType: 'research-based',
+  },
   // VIDEO
   {
     id: 'v1', slug: 'pictory',
@@ -3626,6 +3705,28 @@ Object.assign(TOOL_FAQS, {
 });
 Object.assign(TOOL_KEYWORDS, {
   youcam: ['youcam online editor review', 'youcam online editor pricing', 'youcam free credits', 'youcam photo enhancer', 'ai photo editor online', 'ai photo upscaler'],
+});
+
+// ── Spaceship + BigRock — added Oct 2026, mirrors prerender.mjs TOOL_FAQS ──
+Object.assign(TOOL_FAQS, {
+  spaceship: [
+    { q: "How much does a .com cost at Spaceship?", a: "Spaceship's domains page lists .com at $8.88 for the first year (list price $9.66), $9.98 to renew and $9.48 to transfer, with a $0.20 ICANN fee added each year. We checked those figures in October 2026 and promotions change, so confirm the total at checkout. A price tracker that includes the ICANN fee lists $9.08 to register and $10.18 to renew." },
+    { q: "Is domain privacy free at Spaceship?", a: "Yes, on eligible registrations and transfers. Spaceship says the privacy service is provided by Withheld for Privacy and that terms apply, so check that your extension is eligible." },
+    { q: "Does Spaceship refund domain purchases?", a: "Generally not. Its refund policy says new registrations may be refunded at its discretion if you cancel for a valid reason within 5 days (120 hours), where the registry allows. Promotional purchases are not eligible, and renewals of .ai, .ca, .eu and .gg cannot be cancelled. Read the policy before you buy." },
+    { q: "Does Spaceship offer business email?", a: "Yes, through Spacemail. The page lists Pro at $18.88 for two years (one mailbox, 5 GB), Business at $28.68 (three mailboxes, 10 GB) and Advanced at $44.69 (five mailboxes, 15 GB), each with a 30-day free trial. One subscription covers one domain and cannot be used with subdomains." },
+    { q: "Is Spaceship the same company as Namecheap?", a: "Not exactly. A third-party review says Spaceship is its own ICANN-accredited registrar that sits in the same corporate group as Namecheap. We have not confirmed that with Spaceship, so check the company pages if the ownership matters to you." },
+  ],
+  bigrock: [
+    { q: "Is a BigRock domain really ₹1?", a: "For the first year only, and only on a longer term. BigRock's .com and .in pages say the ₹1 price needs a three-year registration. On .com, years two and three cost ₹1,405 each, ₹2,811 in total. On .in, they cost ₹899 each, ₹1,799 in total. The offer is described as limited-time." },
+    { q: "How much does BigRock charge to renew a domain?", a: "On the three-year offers, ₹1,405 a year for .com and ₹899 a year for .in. BigRock's .com page shows ₹1,479 as the standard renewal price. Figures differ slightly between pages, so check the total at checkout." },
+    { q: "Does BigRock include WHOIS privacy?", a: "Not free on the pages we checked. Domain Protect+ is a separate add-on, and BigRock says that without it your contact details appear in WHOIS. The price was not shown, so check it before you buy." },
+    { q: "Does BigRock offer refunds?", a: "Its 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting, and excludes 1-month purchases and other products. Domains are not listed, so ask support about a domain refund before you pay." },
+    { q: "What does BigRock sell besides domains?", a: "Shared, WordPress, reseller and VPS hosting, dedicated servers, Titan business email, Google Workspace, SSL certificates, a website builder and design and SEO services. Shared hosting starts at ₹69 a month with a free Let's Encrypt SSL certificate and daily backups." },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  spaceship: ["spaceship review", "spaceship domain registrar review", "spaceship .com renewal price", "spaceship domain privacy", "spaceship spacemail pricing", "spaceship vs namecheap"],
+  bigrock: ["bigrock review", "bigrock domain ₹1 offer", "bigrock renewal price", "bigrock hosting india", "bigrock domain privacy", "cheap domain registrar india"],
 });
 
 // ── Notta — added Oct 2026, mirrors prerender.mjs TOOL_FAQS ──

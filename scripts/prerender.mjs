@@ -1050,6 +1050,27 @@ const TOOLS = [
     metaDescription: 'YouCam Online Editor 2026 review: browser-based AI photo enhancer, object remover and photo repair. 5 free credits, credit-based plans, and who it fits.',
     reviewBody: 'YouCam Online Editor, from Perfect Corp, is an AI photo editor that runs in the browser, so there is nothing to download. Its photo tools include a Photo Enhancer that upscales to 4K and handles up to 50 photos at once, an Object Remover, background removal and change, Photo Repair for old photos, Face Retouch, Face Reshape, AI Lighting, Colorize, an Image Extender and an AI Headshot Generator. The same account adds video tools and an AI agent that edits by chat. New users get 5 free credits with no credit card needed, and advanced tools run on credits that you buy individually or through a membership. No plan prices are quoted here: a current official plan table could not be confirmed, and third-party listings disagree, so check the official pricing page before paying. YouCam says it does not train on your images without consent and deletes files after a short period; that is the vendor\'s own statement. Independent evidence on its AI Headshot Generator is thin, so it is not ranked against dedicated headshot tools. A convenient pick for casual and social photo fixes, and a weaker fit for professionals who retouch inside Photoshop or Lightroom and want plug-in tools. This review is based on YouCam\'s official site; no first-hand testing is claimed.',
   },
+  // ── Spaceship + BigRock — added Oct 2026. Mirrors matching entries in constants.ts TOOLS. ──
+  {
+    slug: "spaceship", name: "Spaceship", category: "Marketing",
+    tagline: "Low-cost domain registrar with free privacy, plus hosting and business email in one account",
+    description: "Spaceship is a domain registrar that also sells hosting, business email and an AI site builder. Its domains page lists .com at $8.88 for the first year, $9.98 to renew and $9.48 to transfer, plus a $0.20 ICANN fee, and domain privacy is free on eligible domains. The same account covers shared hosting, managed WordPress, VPS, Spacemail business email and Alf Website Studio.",
+    pricing: ".com from $8.88 first year, $9.98 renewal (+$0.20 ICANN fee)", bestFor: "Owners who want a low, transparent .com price and free privacy, with hosting and email under one account",
+    rating: 4.1, lastTested: 'October 2026',
+    seoTitle: "Spaceship Review 2026: .com Prices, Free Privacy & Refund Rules | AI Nexus",
+    metaDescription: "Spaceship 2026 review: .com from $8.88, $9.98 renewal, free domain privacy, Spacemail and hosting. Refund rules, trade-offs and who it fits.",
+    reviewBody: "Spaceship is a domain registrar that also sells hosting, business email and an AI site builder. Its domains page lists .com at $8.88 for the first year (list price $9.66), $9.98 to renew and $9.48 to transfer, with a $0.20 ICANN fee added each year. Domain privacy is free on eligible registrations and transfers. The same account covers shared hosting, EasyWP managed WordPress, VPS, a CDN, Spacemail business email and Alf Website Studio. Spacemail Pro is listed at $18.88 for two years with a 30-day free trial. Domain registrations are generally non-refundable: new registrations may be refunded at Spaceship's discretion within 5 days, promotional purchases are not eligible, and renewals of .ai, .ca, .eu and .gg cannot be cancelled. Other extensions cost more; a third-party tracker lists .ai at $79.98 a year. A third-party review says support is email and chat only and that Spaceship sits in the same corporate group as Namecheap. A good fit for owners who want a cheap .com with free privacy and everything in one account, and a weaker fit for buyers who want phone support or rupee pricing. This review is based on Spaceship's official pages; no first-hand testing is claimed.",
+  },
+  {
+    slug: "bigrock", name: "BigRock", category: "Marketing",
+    tagline: "India-focused domain registrar and web host with rupee pricing",
+    description: "BigRock is an ICANN-accredited domain registrar and web host aimed at Indian buyers, with prices shown in rupees. It sells domains, shared, WordPress, reseller and VPS hosting, dedicated servers, business email, SSL certificates and a website builder. Its headline offer is a .com or .in for ₹1 in the first year, but only on a three-year registration.",
+    pricing: ".com or .in ₹1 first year on a 3-year term, then ₹1,405 (.com) or ₹899 (.in) a year", bestFor: "India-based site owners who want rupee pricing with domains and hosting in one account, and who will commit to a three-year term",
+    rating: 3.5, lastTested: 'October 2026',
+    seoTitle: "BigRock Review 2026: ₹1 Domain Offer, Renewal Prices & Hosting | AI Nexus",
+    metaDescription: "BigRock 2026 review: ₹1 .com and .in first year on a 3-year term, renewal prices, hosting from ₹69/month and what the guarantee covers.",
+    reviewBody: "BigRock is an ICANN-accredited domain registrar and web host aimed at Indian buyers, with prices shown in rupees. It sells domains, shared, WordPress, reseller and VPS hosting, dedicated servers, business email, SSL certificates and a website builder. Its headline offer is a .com or .in for ₹1 in the first year, but only on a three-year registration. For .com, years two and three cost ₹1,405 each, a ₹2,811 total against ₹3,707 at regular one-year prices. For .in, years two and three cost ₹899 each, a ₹1,799 total. Domain privacy is not free: Domain Protect+ is a separate add-on. Shared hosting starts at ₹69 a month with a free Let's Encrypt SSL certificate and daily backups. A 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting but does not list domains. Support is 24/7 live chat plus phone lines. Some figures differ between pages, so confirm the total at checkout. A good fit for India-based owners who want rupee pricing and will commit to three years, and a weaker fit for buyers who want free privacy or one-year flexibility. This review is based on BigRock's official pages; no first-hand testing is claimed.",
+  },
   // ── Alf Website Studio + Jetpack AI Assistant — added Sep 2026. Mirrors matching entries in constants.ts TOOLS. ──
   {
     slug: 'alf-website-studio', name: 'Alf Website Studio', category: 'Design',
@@ -1398,6 +1419,20 @@ const TOOL_FAQS = {
     { q: 'Can I use PixVerse videos commercially?', a: "Paid plans remove the watermark, which most commercial use needs. Read PixVerse's terms of service for the current licensing rules before using clips in paid ads or client work." },
     { q: 'Does PixVerse offer refunds?', a: "Only in narrow cases. PixVerse says it does not refund because of dissatisfaction with generated results, and credit packs are non-refundable. An unused subscription that is still within its validity period can be refunded in full. Use the free daily credits to judge quality before paying." },
     { q: 'What is PixVerse best for?', a: "Short, stylized clips: social hooks, B-roll, product teasers and effect-driven Reels or Shorts. It is a weaker fit for long, cinematic scenes with complex physics." },
+  ],
+  spaceship: [
+    { q: "How much does a .com cost at Spaceship?", a: "Spaceship's domains page lists .com at $8.88 for the first year (list price $9.66), $9.98 to renew and $9.48 to transfer, with a $0.20 ICANN fee added each year. We checked those figures in October 2026 and promotions change, so confirm the total at checkout. A price tracker that includes the ICANN fee lists $9.08 to register and $10.18 to renew." },
+    { q: "Is domain privacy free at Spaceship?", a: "Yes, on eligible registrations and transfers. Spaceship says the privacy service is provided by Withheld for Privacy and that terms apply, so check that your extension is eligible." },
+    { q: "Does Spaceship refund domain purchases?", a: "Generally not. Its refund policy says new registrations may be refunded at its discretion if you cancel for a valid reason within 5 days (120 hours), where the registry allows. Promotional purchases are not eligible, and renewals of .ai, .ca, .eu and .gg cannot be cancelled. Read the policy before you buy." },
+    { q: "Does Spaceship offer business email?", a: "Yes, through Spacemail. The page lists Pro at $18.88 for two years (one mailbox, 5 GB), Business at $28.68 (three mailboxes, 10 GB) and Advanced at $44.69 (five mailboxes, 15 GB), each with a 30-day free trial. One subscription covers one domain and cannot be used with subdomains." },
+    { q: "Is Spaceship the same company as Namecheap?", a: "Not exactly. A third-party review says Spaceship is its own ICANN-accredited registrar that sits in the same corporate group as Namecheap. We have not confirmed that with Spaceship, so check the company pages if the ownership matters to you." },
+  ],
+  bigrock: [
+    { q: "Is a BigRock domain really ₹1?", a: "For the first year only, and only on a longer term. BigRock's .com and .in pages say the ₹1 price needs a three-year registration. On .com, years two and three cost ₹1,405 each, ₹2,811 in total. On .in, they cost ₹899 each, ₹1,799 in total. The offer is described as limited-time." },
+    { q: "How much does BigRock charge to renew a domain?", a: "On the three-year offers, ₹1,405 a year for .com and ₹899 a year for .in. BigRock's .com page shows ₹1,479 as the standard renewal price. Figures differ slightly between pages, so check the total at checkout." },
+    { q: "Does BigRock include WHOIS privacy?", a: "Not free on the pages we checked. Domain Protect+ is a separate add-on, and BigRock says that without it your contact details appear in WHOIS. The price was not shown, so check it before you buy." },
+    { q: "Does BigRock offer refunds?", a: "Its 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting, and excludes 1-month purchases and other products. Domains are not listed, so ask support about a domain refund before you pay." },
+    { q: "What does BigRock sell besides domains?", a: "Shared, WordPress, reseller and VPS hosting, dedicated servers, Titan business email, Google Workspace, SSL certificates, a website builder and design and SEO services. Shared hosting starts at ₹69 a month with a free Let's Encrypt SSL certificate and daily backups." },
   ],
   youcam: [
     { q: 'Is YouCam Online Editor free?', a: "You can start free. YouCam says new users get 5 free credits and no credit card is needed. Advanced tools run on credits, which you buy individually or through a membership, so check the official pricing page for current plans before you pay." },
@@ -5874,6 +5909,8 @@ const BLOG_RELATED_LINKS = {
     ['/blog/best-ai-website-builders-2026/', 'Best AI Website Builders 2026'],
     ['/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026/', 'Lovable vs Wegic vs Readdy vs CREAO 2026'],
     ['/tools/alf-website-studio/', 'Alf Website Studio Review'],
+    ['/tools/spaceship/', 'Spaceship Review 2026'],
+    ['/tools/bigrock/', 'BigRock Review 2026'],
   ],
   // —— Oct 9 (Phase 4): AI builder comparison — links to the vibe-coding roundup, builders roundup and launch cluster ——
   'lovable-vs-wegic-vs-readdy-vs-creao-2026': [
@@ -5889,6 +5926,8 @@ const BLOG_RELATED_LINKS = {
     ['/blog/domain-renewal-prices-compared-2026/', 'Domain Renewal Prices Compared 2026'],
     ['/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026/', 'Lovable vs Wegic vs Readdy vs CREAO 2026'],
     ['/tools/alf-website-studio/', 'Alf Website Studio Review'],
+    ['/tools/spaceship/', 'Spaceship Review 2026'],
+    ['/tools/bigrock/', 'BigRock Review 2026'],
   ],
   // —— Sep 22: Best Gamma AI Alternatives 2026 — links back to the Gamma review, the full
   // presentation-tools roundup, and the Gamma vs Beautiful.ai compare page ——

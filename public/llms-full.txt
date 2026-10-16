@@ -7,7 +7,7 @@
 
 ---
 
-# SECTION: TOOL REVIEWS (56 tools)
+# SECTION: TOOL REVIEWS (58 tools)
 
 ---
 ## TOOL REVIEW: Grammarly
@@ -869,6 +869,48 @@ New users get 5 free credits, no credit card needed. Advanced tools run on credi
 
 ### Reviewer's Honest Take
 The pitch is breadth in a browser: a 4K Photo Enhancer that handles up to 50 photos at once, an Object Remover, background removal and change, Photo Repair, Colorize, an Image Extender, face tools and an AI Headshot Generator in one account. The free start is small, so use it to judge output on your own photos. YouCam says it does not train on your images without consent; that is the vendor's own statement. Independent evidence on its headshot quality is thin, so it is not ranked against dedicated headshot tools.
+
+---
+## TOOL REVIEW: Spaceship
+**Rating:** 4.1/5 | **Category:** Domain Registrar | **Coverage:** research-based
+**URL:** https://ainexustools.online/tools/spaceship
+**Reviewed by:** Navneet Arya | ainexustools.online
+
+### Is Spaceship Worth It? — Quick Verdict
+A strong pick for a low-cost .com with free privacy and a modest renewal, with hosting and email in the same account. Treat every domain purchase as final and check the exact extension price at checkout. Look at BigRock instead if you want rupee pricing or phone support.
+
+### Who Should Use Spaceship
+Site owners, freelancers and small businesses who want a low .com price without a big renewal jump and like having domains, hosting and email under one login.
+
+### Who Should NOT Use Spaceship
+Buyers who want phone support, prices in rupees, a dependable refund window on a new domain, or an .ai or .io name on a small budget.
+
+### Spaceship Pricing 2026
+USD, verify on spaceship.com: .com $8.88 first year (list $9.66), $9.98 renewal, $9.48 transfer, plus a $0.20 ICANN fee. Domain privacy free on eligible domains. Spacemail Pro $18.88 for two years with a 30-day free trial. Domain registrations are generally non-refundable.
+
+### Reviewer's Honest Take
+The .com price curve is the appeal: a low first year followed by a modest renewal, with free privacy on eligible domains. The catch is the refund policy, since domain registrations are generally non-refundable and promotional purchases are not eligible. Other extensions can cost much more, so check the exact extension before you buy.
+
+---
+## TOOL REVIEW: BigRock
+**Rating:** 3.5/5 | **Category:** Domain Registrar & Hosting | **Coverage:** research-based
+**URL:** https://ainexustools.online/tools/bigrock
+**Reviewed by:** Navneet Arya | ainexustools.online
+
+### Is BigRock Worth It? — Quick Verdict
+A reasonable pick for India-based owners who want rupee pricing and will keep the domain for three years. Judge the offer by the renewal price, budget for privacy separately, and look at Spaceship instead if you want free privacy and one-year flexibility.
+
+### Who Should Use BigRock
+India-based site owners, students and small businesses who want rupee pricing and one place for a domain, hosting and email, and who will keep a .com or .in for three years.
+
+### Who Should NOT Use BigRock
+Buyers outside India who want dollar pricing, anyone who wants a one-year domain without a long commitment, free domain privacy, or a refund window on a domain.
+
+### BigRock Pricing 2026
+INR, verify on bigrock.in: .com ₹1 year one on a 3-year registration (regular ₹749), then ₹1,405 a year; .in ₹1 year one on a 3-year registration (regular ₹549), then ₹899 a year; .ai ₹4,699 with a 2-year purchase. Shared hosting from ₹69/month. Domain Protect+ is a separate add-on.
+
+### Reviewer's Honest Take
+The headline is a ₹1 first year, and the detail is the three-year term, so judge the offer by the renewal price. Privacy is not included, and the 30-day guarantee covers hosting rather than domains. Some figures differ between pages, so confirm the total at checkout.
 
 ---
 ## TOOL REVIEW: Notta

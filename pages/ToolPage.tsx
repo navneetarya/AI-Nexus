@@ -31,6 +31,8 @@ const AFFILIATE_SLUGS = [
   // Added Oct 2026 (Phase 5): tracked-link tools the disclosure banner was missing for (validate_critical_fixes.py)
   'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence', 'pixverse', 'youcam', 'notta',
   'readdy', 'gitmind', 'retouch4me', 'wordtosite', 'signnow',
+  // Added Oct 16 2026: Impact tools that now have review pages
+  'spaceship', 'bigrock',
   // Added Oct 14 2026: Impact (pxf.io) tools the disclosure banner was missing for, found once validate_critical_fixes.py learned the pxf.io domain
   'lovable', 'wegic', 'transkriptor', 'renderforest', 'jetpack-ai-assistant',
   'writesonic', 'rytr', 'quillbot', 'frase', 'leonardo-ai', 'photoroom', 'looka',
@@ -1501,6 +1503,40 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
     relatedBlogSlugs: ['best-ai-photo-upscaler-tools-2026', 'best-ai-headshot-tools-linkedin-2026', 'best-ai-tools-for-social-media-2026', 'best-ai-tools-for-content-creators-free-2026'],
     rating: 3.7, lastTested: "October 2026", lastTestedISO: "2026-10-13", datePublished: "2026-10-13", timeUsed: "Researched Oct 2026",
   },
+  "spaceship": {
+    whatIs: "Spaceship is a domain registrar that also sells web hosting, business email and an AI site builder. Its domains page lists .com at $8.88 for the first year, $9.98 to renew and $9.48 to transfer, with a $0.20 ICANN fee added each year. Domain privacy is free on eligible registrations and transfers. The same account covers shared hosting, EasyWP managed WordPress, VPS, a CDN, Spacemail business email and Alf Website Studio.",
+    whoIsItFor: "Site owners, freelancers and small businesses who want a low .com price without a big renewal jump, and who like having domains, hosting and email under one login. It also suits anyone who plans to use Alf Website Studio, since that builder runs on Spaceship's own hosting.",
+    whoShouldSkip: "Buyers who want phone support: a third-party review says support is email and chat only. Also skip it if you need prices in rupees (BigRock is built for that), if you want a dependable refund window on a new domain, or if you need an .ai or .io name on a small budget.",
+    myTake: "This review draws on Spaceship's official domains page, Spacemail page and refund policy, checked in October 2026, plus one third-party review for context. No first-hand testing is claimed.\n\nThe appeal is the .com price curve. The first year is listed at $8.88 and the renewal at $9.98, so the cheap first year is not followed by a steep jump, and a $0.20 ICANN fee is added each year. Free domain privacy on eligible domains removes one common add-on charge.\n\nThe catch is the refund policy. Domain registrations are generally non-refundable. New registrations and most renewals may be refunded at Spaceship's discretion if you cancel for a valid reason within 5 days, promotional purchases are not eligible, and renewals of .ai, .ca, .eu and .gg cannot be cancelled. Treat a domain purchase as final.\n\nExtensions other than .com can cost much more. A third-party tracker lists .ai at $79.98 a year and .io renewing at $51.75, so check the exact extension before you buy.\n\nThe same third-party review says Spaceship is a separate registrar that sits in the same corporate group as Namecheap, and that support is email and chat only. We have not confirmed either point with Spaceship.",
+    useCases: [
+      "Registering a .com for a new site and keeping the renewal price low",
+      "Transferring an existing domain in to get free privacy on an eligible domain",
+      "Setting up business email on your own domain with Spacemail",
+      "Hosting a small WordPress site on EasyWP or shared hosting at the same registrar",
+      "Pairing a domain with Alf Website Studio for an AI-built site",
+    ],
+    pricingSection: "**Spaceship pricing (USD; verify on spaceship.com before buying):**\n- .com registration: $8.88 for the first year (list price $9.66), plus a $0.20 ICANN fee.\n- .com renewal: $9.98 per year, plus the ICANN fee.\n- .com transfer: $9.48 (list price $9.98).\n- Domain privacy: free on eligible registrations and transfers.\n- Spacemail: Pro $18.88 for two years, Business $28.68 and Advanced $44.69, each with a 30-day free trial. Higher tiers show introductory discounts, so check renewal terms.\n\nDomains are generally non-refundable. Read the refund policy before you buy a promotional domain, because promotional purchases are not eligible for a refund.",
+    verdict: "A strong pick for a low-cost .com with free privacy and a modest renewal, with hosting and email available in the same account. Treat every domain purchase as final, check the exact extension price at checkout, and look at BigRock instead if you want rupee pricing or phone support.",
+    relatedBlogSlugs: ['domain-renewal-prices-compared-2026', 'launch-an-ai-built-website-2026', 'best-ai-website-builders-2026', 'ai-tools-for-solopreneurs-2026'],
+    rating: 4.1, lastTested: "October 2026", lastTestedISO: "2026-10-16", datePublished: "2026-10-16", timeUsed: "Researched Oct 2026",
+  },
+  "bigrock": {
+    whatIs: "BigRock is an ICANN-accredited domain registrar and web host aimed at Indian buyers, with prices shown in rupees. It sells domains, shared, WordPress, reseller and VPS hosting, dedicated servers, business email, SSL certificates and a website builder. Its pages say its platform powers over 6 million domains and that it has joined forces with HostGator India.",
+    whoIsItFor: "India-based site owners, students and small businesses who want rupee pricing and one place for a domain, hosting and email. The ₹1 first-year offer suits people who already know they will keep a .com or .in for three years.",
+    whoShouldSkip: "Buyers outside India who want dollar pricing, and anyone who wants a one-year domain without a long commitment. Also skip it if you want domain privacy included at no cost, or a refund window on a domain: the guarantee we found covers hosting, not domains.",
+    myTake: "This review draws on BigRock's official homepage and its .com and .in offer pages, checked in October 2026. No first-hand testing is claimed.\n\nThe headline is a ₹1 first year, and the detail is the three-year term. On .com, years two and three cost ₹1,405 each, which makes ₹2,811 over three years against ₹3,707 at regular one-year prices. On .in, years two and three cost ₹899 each, ₹1,799 in total. Judge the offer by the renewal price, not the ₹1.\n\nPrivacy is not included. Domain Protect+ is a separate add-on, and BigRock says that without it your contact details appear in WHOIS. The price was not shown on the pages we read.\n\nThe 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting. Domains are not listed, so ask support about a domain refund before you pay.\n\nSome figures differ between pages. The regular .in first-year price is ₹549 in one table and ₹579 in the FAQ, and VPS shows ₹289 a month in one place and ₹329 in another. Confirm the total at checkout, and note that Titan email is described as a free trial on one page and as free on others.",
+    useCases: [
+      "Registering a .in or .com for an Indian business or portfolio site",
+      "Keeping a domain for three years at a known renewal price",
+      "Hosting a small site on shared hosting with a free SSL certificate",
+      "Adding business email through Titan or Google Workspace on the same account",
+      "Moving a domain in, with one year added to its expiry at no extra cost",
+    ],
+    pricingSection: "**BigRock pricing (INR; verify on bigrock.in before buying):**\n- .com: ₹1 for year one on a three-year registration (regular first year ₹749), then ₹1,405 a year. Standard renewal is ₹1,479.\n- .in: ₹1 for year one on a three-year registration (regular first year ₹549), then ₹899 a year.\n- .ai: ₹4,699 for year one, two-year purchase required. .net ₹1,199 and .org ₹999 are shown in the site header.\n- Shared hosting: from ₹69 a month. VPS: ₹289 to ₹329 a month depending on the page. Google Workspace: ₹96 a month.\n- Domain Protect+ (contact-info hiding) is a separate add-on; no price was shown.\n\nThe ₹1 offer is limited-time, and some pages disagree on regular prices. Check the checkout total, including any taxes.",
+    verdict: "A reasonable pick for India-based owners who want rupee pricing and will keep the domain for three years. Judge the offer by the renewal price, budget for privacy separately, and look at Spaceship instead if you want free privacy and one-year flexibility.",
+    relatedBlogSlugs: ['domain-renewal-prices-compared-2026', 'launch-an-ai-built-website-2026', 'best-free-ai-tools-for-students-in-india-2026', 'best-ai-website-builders-2026'],
+    rating: 3.5, lastTested: "October 2026", lastTestedISO: "2026-10-16", datePublished: "2026-10-16", timeUsed: "Researched Oct 2026",
+  },
   'alf-website-studio': {
     whatIs: "Alf Website Studio is Spaceship's conversational website builder. You describe the site to Alf, Spaceship's AI assistant, which generates the pages, copy, branding and images; you then refine the result by chat or in a visual editor. Hosting, domain connection and an SSL certificate are handled for you. Spaceship's published pricing is a 30-day free trial, then $5 per month.",
     whoIsItFor: "Entrepreneurs, freelancers and small businesses, especially people who already hold a domain at Spaceship and want a simple business site or portfolio live without separate hosting decisions. Spaceship's own documentation positions it for non-technical users who do not want to write HTML or CSS.",
@@ -1703,6 +1739,8 @@ const TOOL_RADAR: Record<string, [number, number, number, number, number]> = {
   'signnow':                  [4.0, 3.8, 3.4, 1.5, 3.0],
   'alf-website-studio':       [4.5, 3.7, 4.3, 3.4, 3.6],
   'jetpack-ai-assistant':     [4.4, 3.5, 3.8, 3.0, 3.6],
+  'spaceship':                [4.3, 4.0, 4.5, 3.0, 3.5],
+  'bigrock':                  [3.6, 3.6, 3.4, 3.0, 3.5],
 };
 
 const RADAR_AXES = ['Ease of Use', 'Output Quality', 'Value', 'Free Plan', 'Support'] as const;

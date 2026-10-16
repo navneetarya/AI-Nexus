@@ -191,6 +191,7 @@ const post: BlogPost = {
 <h2>Where this fits in a full website launch</h2>
 <p>A domain is one of three launch decisions. The others are hosting and HTTPS, and many AI builders include both. Read <a href="/blog/launch-an-ai-built-website-2026/" style="color:var(--a1);font-weight:600;">How to Launch an AI-Built Website</a> for the full sequence.</p>
 <p>If you have not chosen a builder, start with <a href="/blog/best-ai-website-builders-2026/" style="color:var(--a1);font-weight:600;">Best AI Website Builders 2026</a>. To compare four AI builders on price and credits, see <a href="/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026/" style="color:var(--a1);font-weight:600;">Lovable vs Wegic vs Readdy vs CREAO</a>.</p>
+<p>For a closer look at each registrar, read our <a href="/tools/spaceship/" style="color:var(--a1);font-weight:600;">Spaceship review</a> (refund rules and Spacemail pricing) and our <a href="/tools/bigrock/" style="color:var(--a1);font-weight:600;">BigRock review</a> (the three-year terms behind its rupee offers).</p>
 <p>Prices change often. Re-check the cart total on the day you buy, and keep a note of the renewal date.</p>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
   

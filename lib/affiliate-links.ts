@@ -52,15 +52,15 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   // works if Spaceship has "Allow Partners to deep link" turned on for spaceship.com in their Impact
   // program settings. Verify in the Impact partner dashboard before this goes live — if deep linking
   // isn't enabled, Impact sends the click to a dead-end page instead of Spaceship's site. If that's
-  // the case, strip everything from '?u=' onward on all three lines below to fall back to the plain
+  // the case, strip everything from '?u=' onward on the 'spaceship-email' line below, the Spaceship and Alf entries in constants.ts TOOLS to fall back to the plain
   // base link (https://spaceship.sjv.io/X49n7b), which is confirmed working.
-  spaceship: 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2F&utm_source=spaceship&utm_medium=affiliate', // domains
+  // Spaceship now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['spaceship']). 'spaceship-email' stays here.
   'spaceship-email': 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2Fbusiness-email&utm_source=spaceship-email&utm_medium=affiliate', // Spacemail business email
   automattic: 'https://automattic.pxf.io/3k0mxk?utm_source=automattic&utm_medium=affiliate', // Impact — WordPress.com / Pressable hosting; Jetpack AI Assistant has its own tool page in constants.ts
   // Added Sep 29 2026 — website-creation + domain/hosting/SSL programs (all Impact).
   // Readdy and WordToSite now have tool pages, so their links live in constants.ts TOOLS (AFFILIATE_LINKS['readdy'] / ['wordtosite']).
   // The four domain/hosting/SSL programs are meant for one combined "launch your site" article.
-  bigrock: 'https://bigrock-in.sjv.io/3krA0M?utm_source=bigrock&utm_medium=affiliate',
+  // BigRock now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['bigrock']).
   'domain-com': 'https://domain.mno8.net/vDqz6v?utm_source=domain-com&utm_medium=affiliate', // mno8.net — now covered by scripts/check-affiliate-links.mjs
   'network-solutions': 'https://network-solutions.7eer.net/yZQg63?utm_source=network-solutions&utm_medium=affiliate',
   ssls: 'https://ssls.sjv.io/m4VRyM?utm_source=ssls&utm_medium=affiliate',
