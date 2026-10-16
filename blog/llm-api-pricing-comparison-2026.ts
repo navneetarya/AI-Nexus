@@ -300,9 +300,11 @@ const post: BlogPost = {
 <p>A forex-enabled card from an Indian bank, or a prepaid card from a fintech like Niyo or Scapia, helps too. Either cuts the repeated conversion fee versus a standard debit card, whichever provider you settle on.</p>
 
 <h2>Which LLM API Should You Actually Use?</h2>
-<p><strong>Choose Gemini 3.5 Flash or Claude Sonnet 5 if:</strong> cost-per-quality is the priority, and the task doesn't need the top reasoning tier. Sonnet 5's introductory rate is the better deal through August 31, 2026. Budget for the tokenizer overhead and the price hike after that, though.</p>
-<p><strong>Choose Claude Opus 4.8 or GPT-5.5 if:</strong> the task genuinely needs frontier-level reasoning. Think complex agents, hard coding tasks, or long-document work, where a cheaper model gives noticeably worse output. Opus 4.8's flat 1M-context pricing gives it an edge over GPT-5.5 for large-document workloads specifically.</p>
-<p><strong>Choose Gemini 3.1 Pro Preview if:</strong> your workload needs a bigger context window than Claude or GPT-5 offer at standard pricing. Gemini 3.1 Pro is the only one of the three with a context window reported up to 2 million tokens.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li><strong>Choose Gemini 3.5 Flash or Claude Sonnet 5 if:</strong> cost-per-quality is the priority, and the task doesn't need the top reasoning tier. Sonnet 5's introductory rate is the better deal through August 31, 2026. Budget for the tokenizer overhead and the price hike after that, though.</li>
+  <li><strong>Choose Claude Opus 4.8 or GPT-5.5 if:</strong> the task genuinely needs frontier-level reasoning. Think complex agents, hard coding tasks, or long-document work, where a cheaper model gives noticeably worse output. Opus 4.8's flat 1M-context pricing gives it an edge over GPT-5.5 for large-document workloads specifically.</li>
+  <li><strong>Choose Gemini 3.1 Pro Preview if:</strong> your workload needs a bigger context window than Claude or GPT-5 offer at standard pricing. Gemini 3.1 Pro is the only one of the three with a context window reported up to 2 million tokens.</li>
+</ul>
 <p><strong>Route to a budget-tier model (Gemini 2.5 Flash-Lite, Claude Haiku 4.5, or GPT-5.4 mini/nano) whenever the task allows it.</strong> Classification, extraction, and routing rarely need frontier-level reasoning. The cost gap at scale adds up fast.</p>
 <p>Building on these APIs, not just chatting with them? See a wider rundown in AI Nexus's <a href="/best-ai-coding-tools/">best AI coding tools</a> category. For a deeper look at where AI spend gets wasted on the wrong model tier, see the <a href="/blog/ai-tools-cost-roi-calculator-2026/">AI Tools Cost & ROI Calculator</a>.</p>
 

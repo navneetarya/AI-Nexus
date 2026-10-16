@@ -287,19 +287,21 @@ const post: BlogPost = {
 
 <h2>Multi-Agent Jargon, Explained in Plain English</h2>
 <p>New to this topic? Here are the main terms, in short, plain words.</p>
-<p><strong>Agent.</strong> An AI that can plan, use tools, and act on its own. Not just a chatbot that replies to you.</p>
-<p><strong>Orchestrator.</strong> The lead agent. It splits a big job into small parts. It hands each part to the right agent.</p>
-<p><strong>Coordination.</strong> How agents share work and avoid stepping on each other. Who goes first. Who checks the final result.</p>
-<p><strong>Framework.</strong> A code toolkit. It gives you the building blocks to make agents talk and work together. LangGraph and CrewAI are two examples.</p>
-<p><strong>Protocol.</strong> A shared rule set. It lets different tools and agents talk in a way both sides understand. MCP and A2A are two examples.</p>
-<p><strong>MCP.</strong> A rule set that lets an agent use outside tools. Think search, files, or a company database.</p>
-<p><strong>A2A.</strong> A rule set that lets one agent talk to another agent directly. No human in the middle.</p>
-<p><strong>Subagent.</strong> A smaller agent that works under a lead agent. It handles one part of the task.</p>
-<p><strong>Context window.</strong> How much text an AI model can hold in memory at once. Bigger windows mean it can read more before it forgets the start.</p>
-<p><strong>Handoff.</strong> The moment one agent passes work to another. This is where most bugs happen.</p>
-<p><strong>Tool use.</strong> When an agent calls outside code to do something. Search the web. Run a script. Read a file. It is not just chat.</p>
-<p><strong>Human-in-the-loop.</strong> A step where a person checks the work before it goes further. It slows things down a bit. But it catches costly mistakes early.</p>
-<p><strong>Governance.</strong> The rules a team sets for how agents may act. What they can touch. What needs sign-off. Who can turn them off if something goes wrong.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li><strong>Agent.</strong> An AI that can plan, use tools, and act on its own. Not just a chatbot that replies to you.</li>
+  <li><strong>Orchestrator.</strong> The lead agent. It splits a big job into small parts. It hands each part to the right agent.</li>
+  <li><strong>Coordination.</strong> How agents share work and avoid stepping on each other. Who goes first. Who checks the final result.</li>
+  <li><strong>Framework.</strong> A code toolkit. It gives you the building blocks to make agents talk and work together. LangGraph and CrewAI are two examples.</li>
+  <li><strong>Protocol.</strong> A shared rule set. It lets different tools and agents talk in a way both sides understand. MCP and A2A are two examples.</li>
+  <li><strong>MCP.</strong> A rule set that lets an agent use outside tools. Think search, files, or a company database.</li>
+  <li><strong>A2A.</strong> A rule set that lets one agent talk to another agent directly. No human in the middle.</li>
+  <li><strong>Subagent.</strong> A smaller agent that works under a lead agent. It handles one part of the task.</li>
+  <li><strong>Context window.</strong> How much text an AI model can hold in memory at once. Bigger windows mean it can read more before it forgets the start.</li>
+  <li><strong>Handoff.</strong> The moment one agent passes work to another. This is where most bugs happen.</li>
+  <li><strong>Tool use.</strong> When an agent calls outside code to do something. Search the web. Run a script. Read a file. It is not just chat.</li>
+  <li><strong>Human-in-the-loop.</strong> A step where a person checks the work before it goes further. It slows things down a bit. But it catches costly mistakes early.</li>
+  <li><strong>Governance.</strong> The rules a team sets for how agents may act. What they can touch. What needs sign-off. Who can turn them off if something goes wrong.</li>
+</ul>
 <p>Keep this list handy. You will see these words a lot as you read more on this topic. Learn them once. Skim the rest of this guide with ease.</p>
 
 <h2>Why 40%+ of Agentic AI Projects Are Expected to Fail</h2>

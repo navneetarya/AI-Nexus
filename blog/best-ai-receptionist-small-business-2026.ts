@@ -37,8 +37,12 @@ const post: BlogPost = {
 
 <h2>TL;DR — best ai receptionist for small business in 30 seconds</h2>
 <p>AIRA is the best overall pick for most small businesses in 2026. At $24.95/month, you get bilingual (English/Spanish plus 29 other languages) support, appointment booking, and CRM integrations with no feature gating between tiers.</p>
-<p>Smith.ai is the strongest choice if you want a real human to step in on complex calls. It starts at $95/month for its AI-only tier. Rosie is purpose-built for HVAC, plumbing, electrical, and similar trades, starting at $49/month.</p>
-<p>Real-time appointment booking requires its $149/month Scale plan, though. Dialzara is the cheapest genuine entry point at $29/month for solopreneurs testing the category. Goodcall charges per unique customer rather than per minute, starting at $79/month per agent. That model suits predictable-volume, multi-location businesses.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>Smith.ai is the strongest choice if you want a real human to step in on complex calls. It starts at $95/month for its AI-only tier.</li>
+  <li>Rosie is purpose-built for HVAC, plumbing, electrical, and similar trades, starting at $49/month. Real-time appointment booking requires its $149/month Scale plan, though.</li>
+  <li>Dialzara is the cheapest genuine entry point at $29/month for solopreneurs testing the category.</li>
+  <li>Goodcall charges per unique customer rather than per minute, starting at $79/month per agent. That model suits predictable-volume, multi-location businesses.</li>
+</ul>
 
 <h2>What is an ai receptionist for small business?</h2>
 <p>An AI receptionist is software that answers your business phone line in a natural-sounding voice, 24/7. No human is on the other end unless the call gets escalated. The better ones understand natural conversation rather than routing through a rigid phone-tree menu.</p>

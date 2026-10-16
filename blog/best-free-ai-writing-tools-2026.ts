@@ -176,8 +176,8 @@ const post: BlogPost = {
   <li>Basic document editor</li>
 </ul>
 <p><strong>The free plan limit in practice:</strong> 10,000 characters sounds like a lot. It isn't. A single 800-word blog post uses roughly 5,000 characters. Power users will exhaust the free tier in a few sessions. But for writers who need to generate content occasionally rather than daily, the free plan is genuinely functional.</p>
-<p><strong>Who the free plan is best for:</strong> Freelancers and students who need to break writer's block and generate occasional drafts but aren't ready to commit to a monthly subscription. Also useful as a trial before committing to the $7.5/month Saver plan.</p>
-<p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review: free plan limits, templates, and whether $9/month ($7.50 billed yearly) is worth it</a></p>
+<p><strong>Who the free plan is best for:</strong> Freelancers and students who need to break writer's block and generate occasional drafts but aren't ready to commit to a monthly subscription. Also useful as a trial before committing to the Saver plan ($7.50/month billed yearly, or $9 on month-to-month billing).</p>
+<p><a href="/tools/rytr/" style="color:#0D9488;font-weight:600;">→ Full Rytr review: free plan limits, templates, and whether the Saver plan ($7.50/month billed yearly, or $9 on month-to-month billing) is worth it</a></p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
@@ -259,7 +259,7 @@ const post: BlogPost = {
 <p>The free plans above work indefinitely for occasional or light use. Upgrade when:</p>
 <ul style="margin:8px 0 12px 24px;line-height:2.2;">
   <li><strong>Grammarly → Premium ($12/month):</strong> When you want tone detection and full-sentence rewrites, not just error correction</li>
-  <li><strong>Rytr → $9/month ($7.50 billed yearly):</strong> When you exhaust 10,000 characters in the first week of the month</li>
+  <li><strong>Rytr → Saver ($7.50/month billed yearly, or $9 month-to-month):</strong> When you exhaust 10,000 characters in the first week of the month</li>
   <li><strong>QuillBot → $9.95/month:</strong> When the 125-word limit makes paraphrasing long documents too slow</li>
   <li><strong>Writesonic → from $79/month (annual billing):</strong> When you need Article Writer 6.0 for long-form SEO blog posts</li>
 </ul>
@@ -273,7 +273,16 @@ const post: BlogPost = {
 <p>For professional work, confirm rights in writing. Check commercial use, client delivery, attribution, training use, and whether the vendor can reuse uploaded material. Keep a local copy of important inputs and outputs. That habit makes vendor changes easier to absorb.</p>
 <p>Use the smallest plan that supports one complete workflow. Upgrade when a measured limit blocks the work, not when a feature list sounds impressive. Revisit the choice after a month of normal use. The best tool is the one that keeps the whole process predictable.</p>
 <p>Compare the total monthly cost with the manual alternative. Include review time, storage, extra seats, taxes, and paid integrations. A cheap plan that requires several workarounds may cost more than a focused tool with a clearer workflow.</p>
-<p>Keep a fallback plan for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document the manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>`.trim(),
+<p>Keep a fallback plan for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document the manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>
+<p><strong>Ready to start?</strong> The free writing stack above pairs a drafting tool with a paraphraser, and both have free plans.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['rytr']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Rytr Free →</a>
+  <a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try QuillBot Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
+</p>
+`.trim(),
 };
 
 export default post;

@@ -185,7 +185,12 @@ const post: BlogPost = {
 
 <p>If you're evaluating Murf for a product integration rather than the Studio app, the API is billed independently of any subscription.</p>
 
-<p>Roughly $0.03 per 1,000 characters for Studio-quality text-to-speech. About $0.01 per 1,000 characters for the Falcon conversational model. $0.10 per minute for the Voice Changer. $0.02 per 1,000 characters for translation.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>Roughly $0.03 per 1,000 characters for Studio-quality text-to-speech.</li>
+  <li>About $0.01 per 1,000 characters for the Falcon conversational model.</li>
+  <li>$0.10 per minute for the Voice Changer.</li>
+  <li>$0.02 per 1,000 characters for translation.</li>
+</ul>
 
 <p>A small monthly API credit is typically included to test integration before committing to real volume. Budget this separately from a Studio plan — the two don't share an allowance.</p>
 

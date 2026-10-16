@@ -43,7 +43,10 @@ const post: BlogPost = {
 
 <h2>TL;DR: which AI voice fits your channel</h2>
 
-<p>ElevenLabs wins for short-form and faceless channels where a consistent, cloned voice across every video matters most. Murf AI wins for long-form explainer and e-learning-style content, where its script-to-video sync saves real editing time.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>ElevenLabs wins for short-form and faceless channels where a consistent, cloned voice across every video matters most.</li>
+  <li>Murf AI wins for long-form explainer and e-learning-style content, where its script-to-video sync saves real editing time.</li>
+</ul>
 
 <div style="overflow-x:auto;margin:28px 0">
   <table style="width:100%;border-collapse:collapse;font-size:14px">
@@ -245,7 +248,16 @@ const post: BlogPost = {
 <p>Privacy deserves the same attention as price. Read whether uploads train a shared model. Check retention periods and deletion controls. Teams should confirm whether administrators can remove workspace data. These details matter when the workflow handles customer records, private documents, or unreleased work.</p>
 <p>Compare plans at the same billing interval. Note the currency, tax treatment, usage cap, seat minimum, and overage rate. Annual pricing can look attractive while creating a large commitment. Monthly pricing can cost more but make an early experiment easier to stop.</p>
 <p>Keep a fallback for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>
-<p>Choose the smallest plan that supports one complete workflow. Upgrade when a measured limit blocks the work. Revisit the choice after a month of normal use. The best option is the one that keeps the whole process predictable.</p>`,
+<p>Choose the smallest plan that supports one complete workflow. Upgrade when a measured limit blocks the work. Revisit the choice after a month of normal use. The best option is the one that keeps the whole process predictable.</p>
+<p><strong>Ready to start?</strong> The final verdict above recommends ElevenLabs for most new channels and Murf AI for longer tutorial videos.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
+</p>
+`,
 
   faqs: [
     { q: "What is the best AI voice generator for YouTube Shorts?", a: "ElevenLabs is the best fit for YouTube Shorts and other short-form content. Its free plan gives 10,000 characters a month, enough to test a week's worth of short scripts, and cloning keeps the voice consistent across dozens of uploads. Murf AI works too, but its video-sync strength matters less on videos under a minute." },

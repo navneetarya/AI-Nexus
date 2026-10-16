@@ -214,7 +214,7 @@ const post: BlogPost = {
   <li><strong>Small agencies</strong> building white-labeled phone solutions for multiple clients</li>
   <li><strong>Freelance developers</strong> who want to add a productized voice-agent offering to their services</li>
 </ul>
-<p>An <strong>ai receptionist for small business</strong> use case, covering answering, booking, and routing, is the single clearest ROI case across everything covered in this guide. If you're already comfortable with no-code automation tools, this is a natural extension. See our guide to the <a href="/blog/best-no-code-ai-automation-tools-2026/">best no-code AI automation tools</a> for the broader toolkit this usually sits alongside.</p>
+<p>An <strong>ai receptionist for small business</strong> use case, covering answering, booking, and routing, is the single clearest ROI case across everything covered in this guide. For a side-by-side of dedicated receptionist products and their pricing, see our <a href="/blog/best-ai-receptionist-small-business-2026/">best AI receptionist for small business</a> comparison. If you're already comfortable with no-code automation tools, this is a natural extension. See our guide to the <a href="/blog/best-no-code-ai-automation-tools-2026/">best no-code AI automation tools</a> for the broader toolkit this usually sits alongside.</p>
 
 <h3>Skip if</h3>
 <p>Your monthly call volume may be low enough that a shared inbox or basic voicemail transcription handles it. Or you may need INR billing and local payment support, which none of these platforms currently offer.</p>

@@ -155,9 +155,11 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;"><a href="https://remini.ai/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:600;font-size:13px;text-decoration:none;border:1px solid rgba(14,165,233,.4);color:#0ea5e9;">See Remini</a></div>
 
 <h2>Which tool should you choose?</h2>
-<p><strong>Choose Retouch4me</strong> if you retouch portraits in Photoshop and want natural skin results. Start with the free panel and one demo, then buy only the plug-in that fixes your most repeated problem.</p>
-<p><strong>Choose YouCam Online Editor</strong> if you want quick fixes in a browser and no learning curve. Spend the 5 free credits on your own photos before you consider paying.</p>
-<p><strong>Choose PhotoRoom</strong> if the photos are products. <strong>Choose Topaz Photo AI</strong> if a good shot is too soft or small. <strong>Choose Remini</strong> if a face in an old photo is the whole point.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li><strong>Choose Retouch4me</strong> if you retouch portraits in Photoshop and want natural skin results. Start with the free panel and one demo, then buy only the plug-in that fixes your most repeated problem.</li>
+  <li><strong>Choose YouCam Online Editor</strong> if you want quick fixes in a browser and no learning curve. Spend the 5 free credits on your own photos before you consider paying.</li>
+  <li><strong>Choose PhotoRoom</strong> if the photos are products. <strong>Choose Topaz Photo AI</strong> if a good shot is too soft or small. <strong>Choose Remini</strong> if a face in an old photo is the whole point.</li>
+</ul>
 <p>If you want a professional-looking portrait without a camera session, a dedicated headshot generator is a different tool again. See our <a href="/blog/best-ai-headshot-tools-linkedin-2026/" style="color:var(--a1);font-weight:600;">best AI headshot tools guide</a> for that route.</p>
 
 <h2>A practical workflow: how the tools fit together</h2>

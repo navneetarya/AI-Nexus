@@ -36,8 +36,12 @@ const post: BlogPost = {
 
 <h2>TL;DR — best ai ad creative generator in 30 seconds</h2>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1551302175-952301267d19?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A digital video editing timeline with colored clips, representing ad creative production" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
-<p>AdCreative.ai is the best overall <strong>ai ad creative generator</strong> for static, conversion-scored ad creative, if you're willing to pay from day one. There's no free plan, only a 7-day trial. Shhots AI is the cheapest genuine entry point for ecommerce video and image ads, at $5 one-time with no subscription.</p>
-<p>Creatify and Topview AI both turn a product URL into short-form video ads, with Topview the only one of the two offering an ongoing free tier. PhotoRoom stays the strongest free pick if your ads are static product photography rather than full video creative.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>AdCreative.ai is the best overall <strong>ai ad creative generator</strong> for static, conversion-scored ad creative, if you're willing to pay from day one. There's no free plan, only a 7-day trial.</li>
+  <li>Shhots AI is the cheapest genuine entry point for ecommerce video and image ads, at $5 one-time with no subscription.</li>
+  <li>Creatify and Topview AI both turn a product URL into short-form video ads, with Topview the only one of the two offering an ongoing free tier.</li>
+  <li>PhotoRoom stays the strongest free pick if your ads are static product photography rather than full video creative.</li>
+</ul>
 
 <h2>best ai ad creative generator tools — 5 platforms compared</h2>
 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for best ai ad creative generator tools — 5 platforms compared" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />

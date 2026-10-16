@@ -117,7 +117,13 @@ const post: BlogPost = {
 
 <div style="background:rgba(14,165,233,.08);border-left:4px solid #0ea5e9;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
   <p style="margin:0;font-weight:700;font-size:15px;">TL;DR: Best AI Image Upscaler 2026</p>
-  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;"><strong>Best for ecommerce:</strong> <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">PhotoRoom</a>, free plan, Pro from $7.50/month.<br><strong>Best raw quality:</strong> Topaz Photo AI, from ~$39/month, no free tier.<br><strong>Best batch processing:</strong> Let's Enhance, from $9/month, credits roll over.<br><strong>Best free option:</strong> Upscale.media, free forever, 2–3 upscales/month.<br><strong>Best for old photos:</strong> Remini, free daily credits, $6.99/week Pro.</p>
+<ul style="margin:8px 0 0 20px;font-size:14px;line-height:1.7;">
+  <li><strong>Best for ecommerce:</strong> <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">PhotoRoom</a>, free plan, Pro from $7.50/month.</li>
+  <li><strong>Best raw quality:</strong> Topaz Photo AI, from ~$39/month, no free tier.</li>
+  <li><strong>Best batch processing:</strong> Let's Enhance, from $9/month, credits roll over.</li>
+  <li><strong>Best free option:</strong> Upscale.media, free forever, 2–3 upscales/month.</li>
+  <li><strong>Best for old photos:</strong> Remini, free daily credits, $6.99/week Pro.</li>
+</ul>
 </div>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['photoroom']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try PhotoRoom Free →</a>

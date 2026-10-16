@@ -203,10 +203,12 @@ const post: BlogPost = {
 
 <h2>#4 NotebookLM: Best for Document-Grounded Slides</h2>
 <p>NotebookLM fixes Gamma's most awkward failure mode: inventing plausible-sounding specifics on data-heavy prompts. Instead of generating content from scratch, NotebookLM builds presentations from documents you actually upload \u2014 PDFs, notes, reports \u2014 so the slide content is grounded in your real material rather than AI-filled gaps.</p>
-<p><strong>Who this is for:</strong> Anyone turning existing written work \u2014 a report, a research paper, a set of meeting notes \u2014 into a deck, where factual accuracy to the source material matters more than getting a polished deck from a bare one-line prompt.</p>
-<p><strong>Who this is NOT for:</strong> Anyone with no source documents to upload. If you're starting from a blank page with just a topic in mind, there's nothing for NotebookLM to ground itself in, and Gamma's prompt-to-deck flow is the better starting point.</p>
-<p><strong>One limitation to plan around:</strong> NotebookLM's native PPTX (PowerPoint) export is newer and less mature than Gamma's, so budget time for a manual cleanup pass on image-heavy decks before sending a client-facing file.</p>
-<p><strong>Pricing:</strong> Completely free, no paid tier at all.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li><strong>Who this is for:</strong> Anyone turning existing written work \u2014 a report, a research paper, a set of meeting notes \u2014 into a deck, where factual accuracy to the source material matters more than getting a polished deck from a bare one-line prompt.</li>
+  <li><strong>Who this is NOT for:</strong> Anyone with no source documents to upload. If you're starting from a blank page with just a topic in mind, there's nothing for NotebookLM to ground itself in, and Gamma's prompt-to-deck flow is the better starting point.</li>
+  <li><strong>One limitation to plan around:</strong> NotebookLM's native PPTX (PowerPoint) export is newer and less mature than Gamma's, so budget time for a manual cleanup pass on image-heavy decks before sending a client-facing file.</li>
+  <li><strong>Pricing:</strong> Completely free, no paid tier at all.</li>
+</ul>
 <p><a href="/blog/best-ai-presentation-tools-2026/" style="color:#6366f1;font-weight:600;">→ See NotebookLM compared against Gamma in the full presentation tools roundup</a></p>
 
 <h2>Also Worth a Look: AiPPT.com</h2>

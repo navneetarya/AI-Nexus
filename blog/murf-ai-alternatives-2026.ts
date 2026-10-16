@@ -83,7 +83,12 @@ const post: BlogPost = {
 
 <h2>Why people look for a Murf AI alternative</h2>
 
-<p>Three reasons come up most. Voice cloning, since Murf gates it behind an Enterprise plan. Budget, since Murf's $19/month entry price is higher than some competitors. And a need that goes beyond voice, like an on-screen AI presenter rather than just narration.</p>
+<p>Three reasons come up most:</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>Voice cloning, since Murf gates it behind an Enterprise plan.</li>
+  <li>Budget, since Murf's $19/month entry price is higher than some competitors.</li>
+  <li>A need that goes beyond voice, like an on-screen AI presenter rather than just narration.</li>
+</ul>
 
 <img src="https://images.unsplash.com/photo-1758873268745-dd2cf0d677b5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team collaborating around a laptop in an office" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
@@ -226,7 +231,16 @@ const post: BlogPost = {
 <p>For professional work, confirm rights in writing. Check commercial use, client delivery, attribution, training use, and whether the vendor can reuse uploaded material. Keep a local copy of important inputs and outputs. That habit makes vendor changes easier to absorb.</p>
 <p>Use the smallest plan that supports one complete workflow. Upgrade when a measured limit blocks the work, not when a feature list sounds impressive. Revisit the choice after a month of normal use. The best tool is the one that keeps the whole process predictable.</p>
 <p>Compare the total monthly cost with the manual alternative. Include review time, storage, extra seats, taxes, and paid integrations. A cheap plan that requires several workarounds may cost more than a focused tool with a clearer workflow.</p>
-<p>Keep a fallback plan for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document the manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>`,
+<p>Keep a fallback plan for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document the manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>
+<p><strong>Ready to start?</strong> For most readers the verdict above is to stay with Murf, and ElevenLabs is the alternative when cloning or a lower price matters.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
+</p>
+`,
 
   faqs: [
     { q: "What is the best free alternative to Murf AI?", a: "ElevenLabs has the most usable free plan among true Murf alternatives, with 10,000 characters a month and no credit card required. Synthesia's free plan gives 10 minutes of watermarked video monthly, useful for testing the avatar feature. Speechify Studio's free tier is more limited and works best as a quick trial before upgrading." },

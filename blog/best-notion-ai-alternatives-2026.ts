@@ -185,10 +185,12 @@ const post: BlogPost = {
 <h2>#3 Frase.io: Best for Writers Who Need to Rank on Google</h2>
 <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for #3 Frase.io: Best for Writers Who Need to Rank on Google" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>If your reason for using Notion AI is to write content that ranks in search engines, Frase.io does something none of the other tools here can. It tells you exactly what your content needs to cover, based on what's actually ranking on Google right now.</p>
-<p><strong>The SERP research workflow:</strong> You enter a target keyword. Frase pulls the top 20 ranking pages, analyses their headers, topics, word counts, and questions. It then builds a content brief: a structured outline showing what topics your article must include to be competitive. This is research that takes 2–3 hours manually, compressed to 3 minutes.</p>
-<p><strong>Where Frase beats Notion AI directly:</strong> For SEO-focused writing, Notion AI is genuinely not a useful tool. It has no knowledge of what ranks, no keyword integration, no content scoring. Frase has all three. The content optimizer scores your draft against the top-ranking pages as you write. It shows you when you've covered enough ground.</p>
-<p><strong>Honest limitation:</strong> Frase is a specialist SEO tool, not a general workspace. It doesn't replace Notion's project management or task features. It replaces the "AI writing" use case specifically, for writers building organic search traffic.</p>
-<p><strong>Pricing:</strong> From $15/month with a 5-day trial. No permanent free plan, but the trial is enough to test whether your content workflow benefits from it.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li><strong>The SERP research workflow:</strong> You enter a target keyword. Frase pulls the top 20 ranking pages, analyses their headers, topics, word counts, and questions. It then builds a content brief: a structured outline showing what topics your article must include to be competitive. This is research that takes 2–3 hours manually, compressed to 3 minutes.</li>
+  <li><strong>Where Frase beats Notion AI directly:</strong> For SEO-focused writing, Notion AI is genuinely not a useful tool. It has no knowledge of what ranks, no keyword integration, no content scoring. Frase has all three. The content optimizer scores your draft against the top-ranking pages as you write. It shows you when you've covered enough ground.</li>
+  <li><strong>Honest limitation:</strong> Frase is a specialist SEO tool, not a general workspace. It doesn't replace Notion's project management or task features. It replaces the "AI writing" use case specifically, for writers building organic search traffic.</li>
+  <li><strong>Pricing:</strong> From $15/month with a 5-day trial. No permanent free plan, but the trial is enough to test whether your content workflow benefits from it.</li>
+</ul>
 <p><a href="/tools/frase/" style="color:#0D9488;font-weight:600;">→ Read the full Frase.io review</a></p>
 
 <div style="margin:14px 0 24px;">

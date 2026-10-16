@@ -263,7 +263,12 @@ const post: BlogPost = {
 <p>AI content creation tools in 2026 are genuinely useful, but they have real limitations that honest reviews should state clearly. AI writing tools hallucinate facts, statistics, and quotes — every factual claim in AI-generated text needs to be verified before publishing, because confident-sounding false information is the single biggest reputational risk of AI content.</p>
 <div style="background:rgba(217,119,6,.08);border-left:4px solid #D97706;padding:14px 18px;border-radius:8px;margin:16px 0;">
   <strong style="color:#D97706;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Warning</strong>
-  <p style="margin:8px 0 0;font-size:14px;line-height:1.6;">AI image generators still struggle with accurate text rendering and realistic hands. AI video tools rely on stock footage that may not match your subject matter. AI voiceovers still have subtle prosody patterns that experienced listeners recognise. None of these are solved problems yet — plan your editing pass around them.</p>
+<ul style="margin:8px 0 8px 20px;font-size:14px;line-height:1.6;">
+  <li>AI image generators still struggle with accurate text rendering and realistic hands.</li>
+  <li>AI video tools rely on stock footage that may not match your subject matter.</li>
+  <li>AI voiceovers still have subtle prosody patterns that experienced listeners recognise.</li>
+</ul>
+<p style="margin:8px 0 0;font-size:14px;line-height:1.6;">None of these are solved problems yet — plan your editing pass around them.</p>
 </div>
 <p>The workflow in this guide minimises these failure modes by keeping humans in the editing loop at each stage. The tools handle volume and production speed; you handle accuracy, brand voice, and editorial judgment.</p>
 <p>That division of labour is what makes AI content creation genuinely useful in 2026. It's also what separates creators who get results from those who do not.</p>

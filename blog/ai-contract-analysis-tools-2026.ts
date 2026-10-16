@@ -260,10 +260,12 @@ const post: BlogPost = {
 <p>Keep a fallback for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>
 <p>Choose the smallest plan that supports one complete workflow. Upgrade when a measured limit blocks the work. Revisit the choice after a month of normal use. The best option is the one that keeps the whole process predictable.</p>
 <h3>Decision notes</h3>
-<p>Test the main job first. Use a real example. Keep the input small. Check the output by hand.</p>
-<p>Then check repeat use. Look at speed. Look at errors. Look at export quality. Look at the monthly limit.</p>
-<p>Read the privacy terms before uploading sensitive material. Check deletion controls. Check commercial use. Check client delivery rights.</p>
-<p>Compare monthly and annual prices separately. Include taxes, seats, credits, and overages. Keep a backup route for important work.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>Test the main job first. Use a real example. Keep the input small. Check the output by hand.</li>
+  <li>Then check repeat use. Look at speed. Look at errors. Look at export quality. Look at the monthly limit.</li>
+  <li>Read the privacy terms before uploading sensitive material. Check deletion controls. Check commercial use. Check client delivery rights.</li>
+  <li>Compare monthly and annual prices separately. Include taxes, seats, credits, and overages. Keep a backup route for important work.</li>
+</ul>
 <p>These checks make the final choice clearer. Pick the tool that saves time in the complete workflow, not only in the first demo.</p>`.trim(),
   wordCount: 3012,
   proscons: {

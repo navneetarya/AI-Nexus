@@ -231,7 +231,15 @@ const post: BlogPost = {
 <p>Then check repeat use. Look at speed. Look at errors. Look at export quality. Look at the monthly limit.</p>
 <p>Read the privacy terms before uploading sensitive material. Check deletion controls. Check commercial use. Check client delivery rights.</p>
 <p>Compare monthly and annual prices separately. Include taxes, seats, credits, and overages. Keep a backup route for important work.</p>
-<p>These checks make the final choice clearer. Pick the tool that saves time in the complete workflow, not only in the first demo.</p>`.trim(),
+<p>These checks make the final choice clearer. Pick the tool that saves time in the complete workflow, not only in the first demo.</p>
+<p><strong>Ready to start?</strong> Beginners and prototypers are the group the verdict above points to Replit for, since the zero-setup environment removes the install step.</p>
+<div style="margin:14px 0 24px;">
+  <a href="${AFFILIATE_LINKS['replit']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Replit Free →</a>
+</div>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
+  <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
+</p>
+`.trim(),
 };
 
 export default post;

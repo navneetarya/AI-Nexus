@@ -144,7 +144,14 @@ const post: BlogPost = {
 <h2>What happens when you run out of credits</h2>
 <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Calculator and notes representing monthly audio pricing calculations" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
-<p>Paid plans switch to per-minute overage billing after the monthly allowance. Rates fall as the tier rises.</p><p>Free overage is roughly $0.36 per minute. Starter is about $0.20. Creator is about $0.18. Pro, Scale, and Business are about $0.17.</p><p>A Creator user who exceeds 121 minutes by 20–30% may save money by moving to Pro. Check the current calculator before deciding.</p>
+<p>Paid plans switch to per-minute overage billing after the monthly allowance. Rates fall as the tier rises.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>Free overage is roughly $0.36 per minute.</li>
+  <li>Starter is about $0.20.</li>
+  <li>Creator is about $0.18.</li>
+  <li>Pro, Scale, and Business are about $0.17.</li>
+</ul>
+<p>A Creator user who exceeds 121 minutes by 20–30% may save money by moving to Pro. Check the current calculator before deciding.</p>
 
 <p>Unused credits on paid plans roll over for up to two months, which softens a slower month. But they don't keep piling up forever. Plan your usage around the current month's allowance rather than banking on a large rollover buffer.</p>
 

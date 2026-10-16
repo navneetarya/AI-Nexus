@@ -272,10 +272,13 @@ const post: BlogPost = {
 <p>Run the same test I did. Pick the three tasks most representative of your actual workload. Use the free tiers of all three tools. Pay for whichever one saves you the most time on those specific tasks. That's the only data point that matters.</p>
 
 <h3>The Short Version</h3>
-<p>Still not sure? Here is the plain take. Write a lot of prose? Pick Claude. Its words read the best, and it wins the writing tasks by a real margin.</p>
-<p>Need fast, checked facts with real sources? Pick Perplexity. It cites its work, so you do not have to guess if it is right.</p>
-<p>Pump out short posts and captions all day? Pick ChatGPT. It is fast, it knows each platform's rules, and it does not run long.</p>
-<p>On a tight budget? Stack the free tiers first. Perplexity free plus Claude free covers most of what you need. Pay only once you feel the limit.</p>
+<p>Still not sure? Here is the plain take.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>Write a lot of prose? Pick Claude. Its words read the best, and it wins the writing tasks by a real margin.</li>
+  <li>Need fast, checked facts with real sources? Pick Perplexity. It cites its work, so you do not have to guess if it is right.</li>
+  <li>Pump out short posts and captions all day? Pick ChatGPT. It is fast, it knows each platform's rules, and it does not run long.</li>
+  <li>On a tight budget? Stack the free tiers first. Perplexity free plus Claude free covers most of what you need. Pay only once you feel the limit.</li>
+</ul>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>

@@ -175,10 +175,12 @@ const post: BlogPost = {
 <p>Opus Clip solves a completely different problem to InVideo AI, and it's important to understand the distinction before choosing. InVideo AI <em>creates</em> new videos from text prompts. Opus Clip <em>repurposes</em> existing long-form video into short clips for TikTok, Reels, and YouTube Shorts.</p>
 <p>If you have a YouTube channel, podcast, webinar, or any long-form video content, Opus Clip automatically finds the most engaging 60–90 second segments and cuts them.</p>
 <p>It then adds animated captions, reformats the aspect ratio for vertical platforms, and assigns each clip a "virality score" based on its predicted engagement. You upload a 40-minute video and get 8–12 ready-to-post short clips in about 15 minutes.</p>
-<p><strong>Who this is for:</strong> Creators who are already producing long-form video content and want to extract short-form without manually editing. If you're running a podcast and want a clip strategy for Reels and YouTube Shorts without hiring an editor, Opus Clip is the most efficient tool at this price point.</p>
-<p><strong>Who this is NOT for:</strong> Creators who don't have existing long-form video. If you want to build a faceless YouTube channel from scratch with no footage, Opus Clip doesn't help. You need InVideo AI or Pictory for that workflow.</p>
-<p><strong>The virality score:</strong> Opus Clip's AI analyses each potential clip for hooks, speaker energy, topic relevance, and pacing, then scores it. According to independent user reports, the top-scored clips consistently perform better on Reels than manually selected ones, picking moments that are easily overlooked in long-form content.</p>
-<p><strong>Free plan:</strong> 60 minutes of video processing per month, enough to clip 2-3 videos at no cost. Starter ($15/month) removes the watermark. Pro ($29/month) adds the social media scheduler, bulk export and 100GB of storage.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li><strong>Who this is for:</strong> Creators who are already producing long-form video content and want to extract short-form without manually editing. If you're running a podcast and want a clip strategy for Reels and YouTube Shorts without hiring an editor, Opus Clip is the most efficient tool at this price point.</li>
+  <li><strong>Who this is NOT for:</strong> Creators who don't have existing long-form video. If you want to build a faceless YouTube channel from scratch with no footage, Opus Clip doesn't help. You need InVideo AI or Pictory for that workflow.</li>
+  <li><strong>The virality score:</strong> Opus Clip's AI analyses each potential clip for hooks, speaker energy, topic relevance, and pacing, then scores it. According to independent user reports, the top-scored clips consistently perform better on Reels than manually selected ones, picking moments that are easily overlooked in long-form content.</li>
+  <li><strong>Free plan:</strong> 60 minutes of video processing per month, enough to clip 2-3 videos at no cost. Starter ($15/month) removes the watermark. Pro ($29/month) adds the social media scheduler, bulk export and 100GB of storage.</li>
+</ul>
 <p><a href="/tools/opus-clip/" style="color:#0D9488;font-weight:600;">→ Read the full Opus Clip review</a></p>
 
 <div style="margin:14px 0 24px;">

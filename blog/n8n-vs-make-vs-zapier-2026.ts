@@ -197,6 +197,7 @@ const post: BlogPost = {
 
 <h3>A Worked Example: The Same Workflow on All Three Platforms</h3>
 <p>Take a realistic onboarding workflow. A new customer signs up, and the platform looks up their record in a CRM. It sends a personalised welcome email, posts a notification to a Slack channel, and adds a row to a reporting spreadsheet. That's five steps, running 2,000 times a month (a few dozen signups a day).</p>
+<p>If that reporting step is the real pain point, <a href="/blog/best-ai-spreadsheet-tools-2026/">AI spreadsheet tools</a> can handle the cleanup and formulas inside the sheet instead of adding another workflow step.</p>
 <p>On <strong>Zapier</strong>, that's a 1-trigger, 4-action Zap consuming 4 tasks per run, or 8,000 tasks/month. That's well beyond the 750-task Starter tier and into the Professional or Team tier, typically $69–$100+/month depending on the exact plan and whether annual billing applies.</p>
 <p>On <strong>Make</strong>, the same five-module scenario consumes roughly 5 operations per run, or 10,000 operations/month, landing comfortably inside the $9/month Core tier, with headroom to spare.</p>
 <p>On <strong>n8n self-hosted</strong>, the entire workflow counts as one execution regardless of step count. 2,000 executions/month runs without issue on the same ~$5/month VPS a single low-traffic workflow would use.</p>

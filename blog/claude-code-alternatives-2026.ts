@@ -229,9 +229,11 @@ const post: BlogPost = {
 <h2>Free vs Paid: What You Actually Get Without a Credit Card</h2>
 <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Free vs Paid: What You Actually Get Without a Credit Card" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>If budget is the deciding factor, three tools stand out for genuinely free use rather than a time-limited trial. <strong>OpenCode</strong> and <strong>Aider</strong> are free indefinitely because they are bring-your-own-key. You only pay for the model tokens you consume, which can be $0 on a local Ollama model.</p>
-<p><strong>OpenAI Codex CLI</strong> is free as a tool and comes bundled with every ChatGPT tier, including the Free plan. Usage limits do scale down at the lowest tiers.</p>
-<p><strong>Antigravity CLI</strong> and <strong>Warp's</strong> base tier are also free, but both come with caveats. Antigravity's free-tier limits are reportedly tighter than the CLI it replaced. Warp's free tier includes a limited monthly AI credit allowance, not unlimited agent usage.</p>
-<p>Claude Code and Amazon Q Developer CLI's Pro tier are the only two options here with no meaningful free path at all. Q Developer's free tier still exists for existing users, but new signups are closed entirely.</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li><strong>OpenAI Codex CLI</strong> is free as a tool and comes bundled with every ChatGPT tier, including the Free plan. Usage limits do scale down at the lowest tiers.</li>
+  <li><strong>Antigravity CLI</strong> and <strong>Warp's</strong> base tier are also free, but both come with caveats. Antigravity's free-tier limits are reportedly tighter than the CLI it replaced. Warp's free tier includes a limited monthly AI credit allowance, not unlimited agent usage.</li>
+  <li>Claude Code and Amazon Q Developer CLI's Pro tier are the only two options here with no meaningful free path at all. Q Developer's free tier still exists for existing users, but new signups are closed entirely.</li>
+</ul>
 
 <h2>What Actually Transfers When You Switch Tools</h2>
 <p>Switching terminal agents used to mean rebuilding your setup from scratch. Custom prompts, project instructions, and workflow automations were locked to whichever tool you started with. That has changed for two specific pieces of configuration.</p>

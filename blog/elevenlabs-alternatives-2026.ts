@@ -87,7 +87,12 @@ const post: BlogPost = {
 
 <h2>Why people look for an ElevenLabs alternative</h2>
 
-<p>Three reasons come up again and again. Cost, since ElevenLabs' per-character pricing scales fast at high volume. Latency, since ElevenLabs was built for content, not real-time conversation. And specific features ElevenLabs simply doesn't offer, like deepfake watermarking or a finished video-sync workflow.</p>
+<p>Three reasons come up again and again:</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>Cost, since ElevenLabs' per-character pricing scales fast at high volume.</li>
+  <li>Latency, since ElevenLabs was built for content, not real-time conversation.</li>
+  <li>Specific features ElevenLabs simply doesn't offer, like deepfake watermarking or a finished video-sync workflow.</li>
+</ul>
 
 <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A white robot, representing AI voice alternatives to ElevenLabs" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 

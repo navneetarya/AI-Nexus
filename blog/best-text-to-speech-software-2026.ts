@@ -85,7 +85,12 @@ const post: BlogPost = {
 
 <h2>What makes text-to-speech software good, not just usable</h2>
 
-<p>Every tool here can turn a sentence into audio. The real gap between them shows up under three conditions. A script written in a second language. A live tool that can't tolerate any delay. And a monthly bill once you're past the free tier.</p>
+<p>Every tool here can turn a sentence into audio. The real gap between them shows up under three conditions:</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>A script written in a second language.</li>
+  <li>A live tool that can't tolerate any delay.</li>
+  <li>A monthly bill once you're past the free tier.</li>
+</ul>
 
 <img src="https://images.unsplash.com/photo-1758873268745-dd2cf0d677b5?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A team collaborating around a laptop in an office, evaluating what makes text-to-speech software good" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
