@@ -183,7 +183,7 @@ const post: BlogPost = {
 </div>
 
 <h3>9. Alf Website Studio: chat-based builder with hosting bundled</h3>
-<p><a href="/tools/alf-website-studio/" style="color:var(--a1);font-weight:600;">Alf Website Studio</a> is Spaceship's conversational site builder. You brief Alf the way you would brief a web developer, it drafts the copy, branding and images, and you refine by chat or in a visual editor. It sits closest to Wegic.</p>
+<p><a href="/tools/alf-website-studio/" style="color:var(--a1);font-weight:600;">Alf Website Studio</a> is <a href="/tools/spaceship/" style="color:var(--a1);font-weight:600;">Spaceship</a>'s conversational site builder. You brief Alf the way you would brief a web developer, it drafts the copy, branding and images, and you refine by chat or in a visual editor. It sits closest to Wegic.</p>
 <p>Spaceship lists a 30-day free trial and then $5 a month, with hosting, domain connection and an SSL certificate handled automatically. Selling is limited to Stripe payment links, which Spaceship added in May 2026, so it is a lighter model than a full store platform.</p>
 <p>The trade-offs are lock-in and age. There is no code export, the site runs only on Spaceship's own hosting, and a domain registered elsewhere has to point to Spaceship nameservers. It is also a newer product with a small independent review base. See <a href="/compare/wegic-vs-alf-website-studio/" style="color:var(--a1);font-weight:600;">Wegic vs Alf Website Studio</a> for the lock-in comparison.</p>
 <div style="text-align:center;margin:20px 0">

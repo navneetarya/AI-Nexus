@@ -38,7 +38,7 @@ const post: BlogPost = {
 <p>Type a sentence, get a finished song back in under two minutes. That is the pitch behind every <strong>ai music generator</strong> on this list. In 2026 it mostly works. Quality now clears the bar for background tracks, ads, and social content — it doesn't yet replace a producer for a commercial release.</p>
 <p>The research behind this guide covered pricing pages, Trustpilot data, and licensing terms for five of the biggest names in the category. The marketing pages skip the parts that actually change your decision.</p>
 <p>Two of these tools are still being sued by major record labels, and one has reportedly restricted downloads while it moves to a licensed platform. None of that shows up on a features comparison chart, but it should change which tool you pick.</p>
-<p>This guide compares Suno, Udio, <a href="/tools/elevenlabs/">ElevenLabs</a> Music, Soundraw, and AIVA on real, current pricing and independent review data. It also covers the licensing risk each one actually carries, not just the number on the homepage.</p>
+<p>This guide compares Suno, Udio, <a href="/tools/elevenlabs/">ElevenLabs</a> Music, <a href="/tools/soundraw/">Soundraw</a>, and AIVA on real, current pricing and independent review data. It also covers the licensing risk each one actually carries, not just the number on the homepage.</p>
 <p>One thing worth flagging early: Suno's App Store rating looks outstanding. It sits at 4.9 out of 5 from over 363,000 reviews.</p>
 <p>Its Trustpilot score, though, is just 1.6 out of 5 from 667 reviews. That split is real. Which one matters more depends on whether you're generating songs for fun, or relying on customer support for a paid plan. More on that below.</p>
 

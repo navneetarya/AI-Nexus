@@ -18,7 +18,7 @@ const post: BlogPost = {
   seoTitle: 'Best Free AI Writing Tools 2026 — No Credit Card Required',
   metaDescription: 'The best free AI writing tools for 2026 — 5 tools with permanent free plans, no credit card needed. Grammarly, Rytr, QuillBot, and more compared.',
   datePublished: '2026-05-16',
-  dateModified: '2026-10-15',
+  dateModified: '2026-10-16',
   author: 'Navneet Arya',
   category: 'Writing',
   readTime: '8 min read',
@@ -113,7 +113,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;">10,000 chars/month</td>
       <td style="padding:10px 14px;">❌ No</td>
       <td style="padding:10px 14px;">Short-form draft generation</td>
-      <td style="padding:10px 14px;">$9/mo</td>
+      <td style="padding:10px 14px;">$9/mo ($7.50/mo billed yearly)</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
       <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['quillbot']}" target="_blank" rel="sponsored nofollow noopener noreferrer">QuillBot</a></td>

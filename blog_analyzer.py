@@ -1271,7 +1271,9 @@ def run_live(site: Site, A: Analyzer, args):
     for u, r in r_out.items():
         st, ps = r["status"], sorted(out_urls[u])
         cls = "ok"
-        if st in (404, 410) or (st == 0 and "timed out" not in r["error"].lower()): cls = "broken"
+        err_l = (r["error"] or "").lower()
+        if st == 0 and any(k in err_l for k in ("forcibly closed", "connection reset", "10054", "errno 104")): cls = "blocked"  # server drops scripted clients: bot-block, not a dead page
+        elif st in (404, 410) or (st == 0 and "timed out" not in err_l): cls = "broken"
         elif st == 0: cls = "timeout"
         elif st >= 500: cls = "server-error"
         elif st in (401, 403, 429, 999): cls = "blocked"

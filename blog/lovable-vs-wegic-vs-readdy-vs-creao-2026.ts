@@ -103,7 +103,7 @@ const post: BlogPost = {
 </tbody></table></div>
 <img fetchpriority="high" src="/images/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026/which-builder-for-which-job.svg" alt="Summary card showing which AI builder suits which job" width="640" style="width:100%;height:auto;max-width:640px;margin:14px 0 20px;border-radius:12px;" />
 <h3>How this was researched</h3>
-<p>AI Nexus did not run hands-on builds with these tools for this guide. Lovable and Readdy figures come from their own pricing pages and documentation where readable. Wegic and CREAO figures come from dated third-party listings, and they conflict, so ranges are shown. The Alf Website Studio figures come from our Alf review, which was checked against Spaceship's own product page and knowledge base.</p>
+<p>AI Nexus did not run hands-on builds with these tools for this guide. Lovable and Readdy figures come from their own pricing pages and documentation where readable. Wegic and CREAO figures come from dated third-party listings, and they conflict, so ranges are shown. The Alf Website Studio figures come from our Alf review, which was checked against <a href="/tools/spaceship/">Spaceship</a>'s own product page and knowledge base.</p>
 
 <h2>What each tool actually builds</h2>
 <h3>Lovable: full-stack apps with a database and logins</h3>
