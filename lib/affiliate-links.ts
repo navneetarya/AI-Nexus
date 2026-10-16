@@ -42,10 +42,10 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   lindy: 'https://www.lindy.ai/',
   'relevance-ai': 'https://relevanceai.com/?via=navneet',
   n8n: 'https://n8n.io/', // TODO: n8n has no public affiliate program as of 2026
-  tidio: 'https://www.tidio.com/?via=ainexus',
+  // Tidio now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['tidio']).
   juicebox: 'https://juicebox.ai/?via=c6add3',
-  vidiq: 'https://vidiq.com?via=ainexus',
-  appsumo: 'https://appsumo.8odi.net/2R0DB7?utm_source=appsumo&utm_medium=affiliate', // Impact — marketplace link; no dedicated tool page
+  // vidIQ now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['vidiq']).
+  // AppSumo now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['appsumo']).
   // PixVerse has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['pixverse']).
   // Spaceship (Impact) — deep-linked with the standard ?u={encoded landing page} pattern so each
   // mention lands on the actual product page rather than the generic homepage. CAVEAT: this only
@@ -77,7 +77,7 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   // deep-link permission has not been confirmed in the Impact dashboard for either program.
   // YouCam Online Editor now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['youcam']).
   // Retouch4me now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['retouch4me']).
-  soundraw: 'https://soundraw.io/?ref=pvxxfrzw',
+  // Soundraw now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['soundraw']).
   // Renderforest has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['renderforest']).
 };
 

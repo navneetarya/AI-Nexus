@@ -1071,6 +1071,48 @@ const TOOLS = [
     metaDescription: "BigRock 2026 review: ₹1 .com and .in first year on a 3-year term, renewal prices, hosting from ₹69/month and what the guarantee covers.",
     reviewBody: "BigRock is an ICANN-accredited domain registrar and web host aimed at Indian buyers, with prices shown in rupees. It sells domains, shared, WordPress, reseller and VPS hosting, dedicated servers, business email, SSL certificates and a website builder. Its headline offer is a .com or .in for ₹1 in the first year, but only on a three-year registration. For .com, years two and three cost ₹1,405 each, a ₹2,811 total against ₹3,707 at regular one-year prices. For .in, years two and three cost ₹899 each, a ₹1,799 total. Domain privacy is not free: Domain Protect+ is a separate add-on. Shared hosting starts at ₹69 a month with a free Let's Encrypt SSL certificate and daily backups. A 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting but does not list domains. Support is 24/7 live chat plus phone lines. Some figures differ between pages, so confirm the total at checkout. A good fit for India-based owners who want rupee pricing and will commit to three years, and a weaker fit for buyers who want free privacy or one-year flexibility. This review is based on BigRock's official pages; no first-hand testing is claimed.",
   },
+  // ── Tidio + Soundraw — added Oct 2026. Mirrors matching entries in constants.ts TOOLS. ──
+  {
+    slug: "tidio", name: "Tidio", category: "Marketing",
+    tagline: "Live chat, ticketing and the Lyro AI agent for small business sites, with a free plan",
+    description: "Tidio is a customer-service platform for small and mid-sized businesses. It puts live chat, ticketing, email and social conversations in one inbox, and adds Lyro, an AI agent that answers visitor questions, plus Flows, which automate chat prompts and follow-ups. A Free plan covers 50 billable conversations a month, and paid plans scale by conversation volume.",
+    pricing: "Free (50 billable conversations/month) + Starter from $24.17/month billed yearly", bestFor: "Small websites and online businesses that want live chat and an AI helper without a big support budget",
+    rating: 3.8, lastTested: 'October 2026',
+    seoTitle: "Tidio Review 2026: Free Plan, Lyro AI Pricing & Alternatives | AI Nexus",
+    metaDescription: "Tidio 2026 review: free plan with 50 billable conversations, Starter from $24.17/month, Lyro AI add-on, and the billing details to check first.",
+    reviewBody: "Tidio is a customer-service platform for small and mid-sized businesses. It combines live chat, ticketing, email and social conversations in one inbox, with Lyro, an AI agent that answers visitor questions, and Flows for automated chat prompts. The Free plan costs $0 and includes 50 billable conversations a month, 10 seats and the first 100 Flows visitors a month. Starter is $24.17 a month on annual billing and Growth is from $49.17, with Plus from $300 a month plus usage and Premium quote-only. Lyro is a separate add-on from $32.50 a month on annual billing, with a 7-day free trial, and removing Tidio branding costs $16.67 a month. Per-conversation overage rates and a refund policy were not published on the pages checked, and review sites report disputes over auto-upgrades and annual renewals, so confirm billing terms before paying. A sensible low-cost start for live chat on a small business site, and a weaker fit for larger teams that need guaranteed AI resolution rates. This review is based on Tidio's official pricing page and help center; no first-hand testing is claimed.",
+  },
+  {
+    slug: "soundraw", name: "Soundraw", category: "Audio",
+    tagline: "AI music generator for royalty-free background tracks, with unlimited downloads on the Creator plan",
+    description: "Soundraw is an AI music generator for royalty-free instrumental tracks. You choose a genre and mood, then use a browser mixer to switch instruments on and off and adjust intensity, tempo and length before downloading. The Creator plan targets background music for videos, podcasts and social posts, while Artist plans add beats to build songs on, with WAV and stems on higher tiers. Soundraw says its AI is trained only on music made in-house.",
+    pricing: "Creator from $16.99/month billed yearly; Artist plans from $29.99/month", bestFor: "Video creators and podcasters who need royalty-free background music with a clear commercial license",
+    rating: 3.6, lastTested: 'October 2026',
+    seoTitle: "Soundraw Review 2026: Pricing, License & Cancellation Rules | AI Nexus",
+    metaDescription: "Soundraw 2026 review: Creator from $16.99/month, unlimited downloads, YouTube license, Content ID rule and what happens to tracks after you cancel.",
+    reviewBody: "Soundraw is an AI music generator for royalty-free instrumental tracks. You choose a genre and mood, then adjust instruments, intensity, tempo and length in a browser mixer before downloading. The Creator plan is listed at $16.99 a month on yearly billing with unlimited mp3 downloads for background music, and Artist plans start at $29.99 a month, with WAV and stems on higher tiers. Paid plans allow commercial use including YouTube and Twitch monetization, but registering tracks with Content ID is not allowed. Soundraw says tracks downloaded and used while subscribed stay usable after you cancel, except music channels, lo-fi and meditation content and hold music. Prices on Soundraw's own pages disagree, no free plan is described on the pricing page, and refunds are limited to one week after renewal with no downloads since. A straightforward pick for background music with a clear license, and a weaker fit for anyone who wants AI vocals or a free plan. This review is based on Soundraw's official pages; no first-hand testing is claimed.",
+  },
+  // ── vidIQ + AppSumo — added Oct 2026. Mirrors matching entries in constants.ts TOOLS. ──
+  {
+    slug: "vidiq", name: "vidIQ", category: "Video",
+    tagline: "YouTube channel analytics, keyword research and AI coaching, with a free plan",
+    description: "vidIQ is a YouTube growth tool that combines keyword and trend research, video ideas, channel analytics and an AI Coach. The Free plan includes 150 AI credits a month, while Boost and Max raise that to 2,000 and 6,000 and are billed yearly. vidIQ also offers a Coaching plan and an Enterprise tier for teams managing more than three channels, and it lists an MCP connection for use inside Claude or ChatGPT.",
+    pricing: "Free (150 AI credits/month) + Boost from about $199/year (third-party figure)", bestFor: "YouTubers who want keyword research, video ideas and channel analytics in one tool",
+    rating: 3.6, lastTested: 'October 2026',
+    seoTitle: "vidIQ Review 2026: Free Plan, Boost & Max Pricing | AI Nexus",
+    metaDescription: "vidIQ 2026 review: free plan with 150 AI credits, Boost and Max billed yearly, what third-party trackers list for price, and who it fits.",
+    reviewBody: "vidIQ is a YouTube growth tool that combines keyword and niche trend research, data-backed video ideas, channel analytics and an AI Coach. The Free plan includes 150 AI credits a month, niche trends, content ideas and AI Coach tips. Boost has 2,000 credits and Max has 6,000, and both are billed yearly and listed as cancel-anytime. The plans page text we could read showed no Boost or Max prices, and third-party trackers disagree on monthly pricing, listing Boost at about $199 a year and Max at about $39 a month billed yearly, so confirm on vidiq.com. No refund policy was found, and a competitor guide says cancelling an annual plan stops renewal rather than refunding remaining months. Enterprise is sales-led for more than three channels. A reasonable starting point for YouTubers who want research and ideas in one tool, and a weaker fit for anyone who needs a published monthly price. This review is based on vidIQ's plans page and competitor pricing guides; no first-hand testing is claimed.",
+  },
+  {
+    slug: "appsumo", name: "AppSumo", category: "Productivity",
+    tagline: "Software deals marketplace known for one-time lifetime licenses, with a 60-day money-back guarantee",
+    description: "AppSumo is a digital marketplace for business software, founded in 2010 by Noah Kagan. It sells tools from software vendors at reduced prices, including lifetime deals that cost a one-time payment instead of a monthly fee. AppSumo advertises discounts of up to 95% and a 60-day money-back guarantee, and it sells an optional Plus membership. This page explains how the marketplace works and how to vet a deal. It does not rate any single tool.",
+    pricing: "No subscription needed: deals are one-time payments (Plus membership optional)", bestFor: "Founders and creators who want to buy software for a one-time price and are willing to vet each deal",
+    rating: 3.6, lastTested: 'October 2026',
+    seoTitle: "AppSumo Review 2026: Lifetime Deals, Refunds & Plus | AI Nexus",
+    metaDescription: "AppSumo 2026 review: how lifetime deals work, the 60-day money-back guarantee, shutdown risk, Plus membership and how to vet a deal.",
+    reviewBody: "AppSumo is a digital marketplace for business software, founded in 2010 by Noah Kagan. It sells tools from software vendors at reduced prices, including lifetime deals paid once instead of monthly, and advertises discounts of up to 95% and a 60-day money-back guarantee. A third-party review says lifetime means access for as long as the vendor operates and honors the deal, that refund windows are most commonly 60 days but set per deal with some listings excluded, and that shutdown cover after the window depends on product tag and Plus status. The optional Plus membership is listed by that review at $12 a month, $99 a year or $199 a year for Pro. AppSumo's own refund and help pages could not be read, so those details are labeled third-party. No specific deals are named because they change. A useful way to try software for a one-time price, and a weaker fit for anyone who needs long-term vendor guarantees. This page explains the marketplace and does not rate any single tool; no first-hand testing is claimed.",
+  },
   // ── Alf Website Studio + Jetpack AI Assistant — added Sep 2026. Mirrors matching entries in constants.ts TOOLS. ──
   {
     slug: 'alf-website-studio', name: 'Alf Website Studio', category: 'Design',
@@ -1433,6 +1475,34 @@ const TOOL_FAQS = {
     { q: "Does BigRock include WHOIS privacy?", a: "Not free on the pages we checked. Domain Protect+ is a separate add-on, and BigRock says that without it your contact details appear in WHOIS. The price was not shown, so check it before you buy." },
     { q: "Does BigRock offer refunds?", a: "Its 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting, and excludes 1-month purchases and other products. Domains are not listed, so ask support about a domain refund before you pay." },
     { q: "What does BigRock sell besides domains?", a: "Shared, WordPress, reseller and VPS hosting, dedicated servers, Titan business email, Google Workspace, SSL certificates, a website builder and design and SEO services. Shared hosting starts at ₹69 a month with a free Let's Encrypt SSL certificate and daily backups." },
+  ],
+  tidio: [
+    { q: "Is Tidio free?", a: "Yes. The Free plan costs $0 and includes 50 billable conversations a month, 10 seats and the first 100 Flows visitors a month. Tidio also offers a 7-day trial of paid features with no credit card, after which the account returns to Free unless you upgrade." },
+    { q: "How much does Tidio cost?", a: "Starter is $24.17 a month on annual billing and Growth is from $49.17 (both are annual equivalents; a third-party tracker lists $29 and $59 on monthly billing). Plus starts at $300 a month plus usage and Premium is quote-only. Lyro and Flows are priced as add-ons, so confirm the total on tidio.com/pricing." },
+    { q: "What is Lyro and does it cost extra?", a: "Lyro is Tidio's AI agent, which answers visitor questions. It is sold as an add-on from $32.50 a month on annual billing, with a 7-day free trial and quotas from 50 to 1,000 conversations. Starter includes 50 one-off Lyro conversations, and the Free plan lists 50 described as lifetime. Overage rates are not published." },
+    { q: "What counts as a billable conversation at Tidio?", a: "The pricing page text we checked does not define it. A third-party pricing guide says it is a chat, ticket, email or social conversation that includes a message from a human agent, and that Lyro replies do not count. Confirm the definition in Tidio's help center before you rely on it." },
+    { q: "Does Tidio offer refunds?", a: "We could not find a refund policy on Tidio's pricing page. Its help center has a Manage your subscription article, and third-party review sites report complaints about auto-upgrades and annual renewals. Those are customer reports that Tidio has not confirmed, so read the billing terms and track your usage before you commit to a year." },
+  ],
+  soundraw: [
+    { q: "Is Soundraw free?", a: "Soundraw has a Try for free link that leads to the generator, but its pricing page lists only paid plans and describes no free plan or trial. Its terms mention a Free Plan that covers a portion of the service. We could not confirm what it includes, so test the generator before paying." },
+    { q: "How much does Soundraw cost?", a: "Soundraw's licensing guide lists Creator at $16.99 a month and Artist plans at $29.99, $35.99 and about $50 a month, all on yearly billing. The Creator plan page shows $19.99 on monthly billing. The pricing page also shows lower figures such as $11.04 for Creator without labeling them, so confirm the checkout total." },
+    { q: "Can I monetize YouTube videos with Soundraw music?", a: "Yes. Soundraw says paid plans allow commercial use, including monetizing YouTube and Twitch content. Registering tracks with Content ID is not allowed, and Soundraw says you can dispute a claim by providing your subscription details. Video content you do not own, such as movies or TV, needs a separate sync license." },
+    { q: "What happens to my Soundraw tracks if I cancel?", a: "Soundraw says tracks you downloaded and used while subscribed stay usable and can still be monetized. The exceptions are music channels, lo-fi and meditation content and hold music, which must be removed when you unsubscribe. You lose new downloads, and unused credit works only until the renewal date." },
+    { q: "Does Soundraw offer refunds?", a: "Rarely. Its terms say paid plans auto-renew and cannot be cancelled mid-term, and a refund is offered only if you cancel within one week of the auto-renewal date and have not downloaded music since. Ending an annual plan early means paying the remaining fees, so stop auto-renewal before the renewal date if you do not want to continue." },
+  ],
+  vidiq: [
+    { q: "Is vidIQ free?", a: "Yes. The Free plan costs $0 and includes 150 AI credits a month, niche trends, content ideas, AI Coach tips and the vidIQ MCP connection. A competitor guide says the credits run out quickly once you generate titles or thumbnails, and it lists no standard free trial for paid plans." },
+    { q: "How much does vidIQ cost?", a: "vidIQ's plans page lists Boost and Max as billed yearly and cancel-anytime, but the page text we could read showed no prices. Third-party trackers list Boost at about $199 a year and Max at about $39 a month billed yearly, and they disagree on monthly pricing, so check the Monthly and Yearly toggle on vidiq.com/plans." },
+    { q: "What are vidIQ AI credits?", a: "AI credits are the monthly allowance for vidIQ's AI features. Free gives 150 a month, Boost 2,000 and Max 6,000. A third-party guide says credits reset monthly and do not roll over, so unused credits are lost." },
+    { q: "Does vidIQ refund annual plans?", a: "We could not find a refund policy. A competitor guide says annual plans are paid up front and that cancelling stops the next renewal rather than refunding the remaining months. Confirm the terms at checkout and in vidIQ's terms of service before paying for a year." },
+    { q: "Who needs the vidIQ Enterprise plan?", a: "vidIQ's FAQ says Enterprise is for managing more than three channels or giving several team members access. It lists roles and permissions, cross-channel insights and reporting, and priority onboarding and support, and it is priced through sales." },
+  ],
+  appsumo: [
+    { q: "Is AppSumo legit?", a: "AppSumo says it is a marketplace founded in 2010 by Noah Kagan and trusted by more than 1.25 million entrepreneurs; those are its own claims. The main risk is the vendors rather than the marketplace: lifetime access lasts only while the vendor operates and honors the deal." },
+    { q: "Does AppSumo have a 60-day refund?", a: "AppSumo advertises a 60-day money-back guarantee. A third-party review says the window is most commonly 60 days but is listed on each deal page, and that some listings, particularly digital downloads, are excluded. Check the Deal Terms section before you buy." },
+    { q: "What happens if an AppSumo vendor shuts down?", a: "Inside the refund window you can get a refund. After that, a third-party review says the We Got Your Back guarantee depends on the product tag, your Plus status and timing, with up to 100% in AppSumo credits in the best case and no credit in others. We could not read AppSumo's own terms on this, so check them before relying on it." },
+    { q: "What is AppSumo Plus and is it worth it?", a: "A third-party review lists Plus at $12 a month, $99 a year with $100 a year in store credit, and $199 a year for Pro, with 10% off deals and early access. It suggests Plus only for buyers making four or more purchases a year. Confirm current terms on AppSumo." },
+    { q: "How do I vet a lifetime deal?", a: "Check the vendor's own website first, read the deal's reviews and Q&A tab, and note whether it is tagged Select, LaunchPad or Radar, since that affects shutdown cover. A third-party review treats fewer than 100 reviews, or a launch in the last 30 days, as more uncertain. Buy only the tier you need now." },
   ],
   youcam: [
     { q: 'Is YouCam Online Editor free?', a: "You can start free. YouCam says new users get 5 free credits and no credit card is needed. Advanced tools run on credits, which you buy individually or through a membership, so check the official pricing page for current plans before you pay." },
@@ -6065,6 +6135,7 @@ const BLOG_RELATED_LINKS = {
 
   // ── Day 28 (Aug 10): Best AI Music Generator Tools — links to adjacent audio/creator-tooling cluster ──
   'best-ai-music-generator-tools-2026': [
+    ['/tools/soundraw/', 'Soundraw Review 2026'],
     ['/blog/best-ai-podcast-tools-2026/', 'Best AI Podcast Tools 2026 — Record, Edit & Enhance Your Show'],
     ['/blog/best-ai-tools-for-youtube-creators-2026/', 'Best AI Tools for YouTube Creators 2026 — Expert Picks'],
     ['/blog/best-ai-tools-for-content-creators-free-2026/', 'Best Free AI Tools for Content Creators 2026'],
@@ -6376,6 +6447,7 @@ const BLOG_RELATED_LINKS = {
 
   // ── Day 8 (Jun 28): Customer Service AI — connects to agents + SMB cluster ─
   'best-ai-agents-customer-service-2026': [
+    ['/tools/tidio/', 'Tidio Review 2026'],
     ['/blog/best-ai-receptionist-small-business-2026/', 'Best AI Receptionist for Small Business 2026'],
     ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
     ['/blog/ai-agents-vs-ai-automation-difference-2026/', 'AI Agents vs AI Automation: What\'s the Real Difference?'],
