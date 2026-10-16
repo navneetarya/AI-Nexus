@@ -193,6 +193,18 @@ const post: BlogPost = {
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
 <p><strong>Starting the blog itself:</strong> you need a domain, hosting and HTTPS. <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">WordPress.com</a> bundles hosting and SSL, and <a href="/tools/jetpack-ai-assistant/" style="color:rgb(13,148,136);">Jetpack AI Assistant</a> adds AI writing inside its editor. For the domain, <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">Spaceship</a> is one registrar option. Check the renewal price before you buy. See our <a href="/blog/launch-an-ai-built-website-2026/">website launch guide</a> for the full checklist.</p>
+<h2>How to Brief an AI Writing Tool: A Beginner's Method</h2>
+<p>Most weak AI drafts come from weak briefs. A short, specific brief gives any of these tools something to work with.</p>
+<ol style="margin:12px 0 12px 24px;line-height:1.9;">
+  <li><strong>State the reader.</strong> "Beginners who have never used a spreadsheet" produces better copy than "people".</li>
+  <li><strong>State the goal.</strong> Say whether the text should inform, persuade, or prompt a click.</li>
+  <li><strong>Give the key points.</strong> List three facts or ideas you want included, so the tool does not invent its own.</li>
+  <li><strong>Set the tone and length.</strong> For example, friendly and plain, about 150 words.</li>
+</ol>
+<h3>Edit Before You Publish</h3>
+<p>Treat every AI draft as a first draft. Read it aloud once. Cut sentences that say nothing. Replace vague claims with a specific example from your own experience. Check every number, name, and date against a trustworthy source, because writing tools can state wrong facts in a confident tone.</p>
+<p>Then run the edited text through Grammarly. The order matters: generate first, edit by hand second, proofread last. Skipping the middle step usually leaves text that reads smoothly but says little.</p>
+
 <h2>The Recommended Stack for Beginners in 2026</h2>
 <p>Here's the exact stack worth starting with at a $0 budget:</p>
 <ol style="margin:12px 0 12px 24px;line-height:2.2;">

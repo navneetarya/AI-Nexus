@@ -185,6 +185,23 @@ const post: BlogPost = {
 </div>
 <p>The distinction matters: a free plan should allow ongoing productive use without an expiry or a de facto limit that forces upgrade after the first week.</p>
 
+<h2>How to Tell a Real Free Plan From a Trial</h2>
+<p>Marketing pages use the word "free" for very different things. Four questions separate a plan you can live on from a trial in disguise.</p>
+<ol style="margin:12px 0 12px 24px;line-height:1.9;">
+  <li><strong>Does it renew?</strong> Daily or monthly allowances, like Leonardo.ai's tokens, keep working. One-time credits, like Gamma's 400, run out.</li>
+  <li><strong>Is there a time limit?</strong> A 7-day or 14-day trial ends whatever you do. That is the case for Jasper and Beautiful.ai in this guide.</li>
+  <li><strong>What does the free tier withhold?</strong> Grammarly keeps tone detection and plagiarism checks for Premium. Gamma adds its branding to exported decks. Check that the missing piece is not the one you need.</li>
+  <li><strong>What happens at the limit?</strong> Some tools stop until the next renewal. Others slow you down. Know which before you plan deadline work around it.</li>
+</ol>
+<h3>Which Free Plan to Start With</h3>
+<ul style="margin:12px 0 12px 24px;line-height:1.9;">
+  <li><strong>Students and researchers:</strong> Perplexity, because unlimited cited search covers most study and fact-checking.</li>
+  <li><strong>Creators and marketers:</strong> Leonardo.ai for images, plus Canva for layout.</li>
+  <li><strong>Writers and professionals:</strong> Grammarly, since it works inside the apps you already use.</li>
+  <li><strong>Developers and learners:</strong> Replit, because it needs no local setup.</li>
+</ul>
+<p>Pick one tool per job. Running two free plans for the same task splits your usage and hides which one you actually prefer.</p>
+
 <h2>Building a Full AI Workflow for Free</h2>
 <p>With strategic tool selection, you can build a genuinely productive AI workflow in 2026 at zero cost:</p>
 <ol style="margin:10px 0 16px 24px;line-height:2.2;">

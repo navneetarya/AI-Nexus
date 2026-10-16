@@ -165,6 +165,24 @@ const post: BlogPost = {
 <p>The free plan is fully functional. For developers who live in the terminal, Warp cuts down real time spent searching docs for command syntax.</p>
 <p><strong>Best for:</strong> Devs who live in the terminal and want AI help with shell commands, scripts, and admin tasks.</p>
 
+<h2>Where Each Tool Falls Short</h2>
+<p>Every tool above has a weak spot. Knowing it before you subscribe saves money and frustration.</p>
+<ul style="margin:12px 0 12px 24px;line-height:1.9;">
+  <li><strong>GitHub Copilot:</strong> It has less awareness of files outside your current context than codebase-indexed tools. On a large repository, expect to open or paste in the related files yourself.</li>
+  <li><strong>Cursor:</strong> It asks you to change editors. A team standardised on JetBrains may not want to move everyone to a VS Code fork for the sake of one feature.</li>
+  <li><strong>Claude:</strong> It lives in a chat window, not your editor. You carry context across by copying code in and answers out, which slows small edits.</li>
+  <li><strong>Replit:</strong> It suits prototypes and learning. Teams with existing repositories, CI pipelines, and internal tooling usually stay on local machines.</li>
+  <li><strong>Warp:</strong> It turns plain language into shell commands, but you still need to read each command before you run it. Anything that deletes or overwrites files deserves a second look.</li>
+</ul>
+<h3>A Review Checklist for AI-Generated Code</h3>
+<p>Speed only helps if the code is correct. Apply the same checks to AI output that you would apply to a pull request from a new teammate.</p>
+<ol style="margin:12px 0 12px 24px;line-height:1.9;">
+  <li><strong>Read the diff.</strong> Do not accept a multi-file change you have not read line by line.</li>
+  <li><strong>Run the tests.</strong> If the project has none for that code, ask the tool to write them, then review those tests too.</li>
+  <li><strong>Verify every dependency.</strong> AI tools sometimes suggest packages or functions that do not exist. Check the package registry or the official docs before installing anything unfamiliar.</li>
+  <li><strong>Keep secrets out of prompts.</strong> Do not paste API keys, tokens, or customer data into any chat or editor assistant.</li>
+</ol>
+
 <h2>The Developer AI Workflow in 2026</h2>
 <div style="margin:14px 0 24px;">
   <a href="https://cursor.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Cursor →</a>
