@@ -136,7 +136,7 @@ const post: BlogPost = {
 
 <p>Export the voice track at the highest quality your tool offers. Then do a final listen-through on the same device most viewers will use, a phone speaker, not studio headphones. Small pacing issues that pass on headphones often surface immediately on a phone speaker.</p>
 
-<h2>ElevenLabs vs Murf AI for faceless channels</h2>
+<h2>Is ElevenLabs or Murf AI better for faceless channels?</h2>
 
 <p>The table above covers the core decision, but a few details are worth spelling out. ElevenLabs supports 29 languages against Murf's 20, which matters if your faceless channel targets more than one region.</p>
 

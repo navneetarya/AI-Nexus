@@ -84,7 +84,7 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">A <strong>multi-agent AI system</strong> uses several AI agents at once. Each agent has its own role, its own tools, and its own reasoning loop. An orchestrator, or a peer-to-peer protocol, coordinates them, instead of one model doing the whole task alone.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Multi-agent AI systems explained in one line: a <strong>multi-agent AI system</strong> uses several AI agents at once. Each agent has its own role, its own tools, and its own reasoning loop. An orchestrator, or a peer-to-peer protocol, coordinates them, instead of one model doing the whole task alone.</p>
 <p style="margin:6px 0 0;font-size:15px;line-height:1.6;">The frameworks that matter in 2026: <strong>LangGraph</strong> (most production-ready), <strong>CrewAI</strong> (fastest to prototype), <strong>AutoGen/AG2</strong> (best for multi-agent debate), <strong>OpenAI Agents SDK</strong>, <strong>Google ADK</strong>, and <strong>Claude Agent SDK</strong>.</p>
 <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Two protocols connect them: <strong>MCP</strong> for tool access, and <strong>A2A</strong> for agent-to-agent coordination.</p>
 </div>

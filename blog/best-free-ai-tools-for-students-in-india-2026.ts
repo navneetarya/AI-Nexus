@@ -263,7 +263,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['gitmind']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try GitMind Free</a>
 </div>
-<h2>The Zero-Cost Student Stack for India: How to Build It</h2>
+<h2>How Do You Build a Zero-Cost AI Stack as a Student in India?</h2>
 <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for The Zero-Cost Student Stack for India: How to Build It" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>You can have a fully functional AI-powered study setup in India at ₹0/month. Here is the exact order to build it:</p>
 <ul style="margin:12px 0 16px 24px;line-height:2.6;">
@@ -279,7 +279,7 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['bigrock']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Check a .in Domain</a>
 </div>
 
-<h2>Frequently Asked: GST on Paid AI Tool Plans</h2>
+<h2>Do Indian Students Pay GST on Paid AI Tool Plans?</h2>
 <p>If you upgrade any of these tools to a paid plan, 18% GST is typically added at checkout for Indian billing addresses. Budget approximately 18% above the listed price.</p>
 <p>If you sign up through an institution (a college or university account), check whether it has a GST registration number. Entering the GSTIN at checkout on tools like Grammarly and Canva lets GST-registered entities claim input tax credit. Individual students can't claim ITC, but should still factor the 18% into their cost comparison.</p>
 <p>All free plans covered in this guide require no payment of any kind. The GST note applies only if you decide to upgrade.</p>

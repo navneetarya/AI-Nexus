@@ -87,7 +87,7 @@ const post: BlogPost = {
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For most freelancers and small businesses, the practical 2026 answer is <strong>Claude or <a href="/tools/chatgpt/">ChatGPT</a></strong> (free–$20/month) for a first-pass plain-English read of a contract. Add a purpose-built freelancer-tier reviewer under $20/month for structured risk flags.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For AI contract analysis, the practical 2026 answer for most freelancers and small businesses is <strong>Claude or <a href="/tools/chatgpt/">ChatGPT</a></strong> (free–$20/month) for a first-pass plain-English read of a contract. Add a purpose-built freelancer-tier reviewer under $20/month for structured risk flags.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Harvey AI</strong> and <strong>Luminance</strong> are enterprise-only: no public pricing, seat minimums, five-to-six-figure annual contracts. <strong>Spellbook</strong> sits in between at roughly $89–$400/user/month (quote-based) but is built for lawyers drafting in Word, not occasional contract review.</p>
 </div>
 

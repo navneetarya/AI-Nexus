@@ -359,7 +359,9 @@ class Site:
         return any(norm_url(v) == n for v in self.aff_links.values() if self.is_tracked(v))
 
     PATTERN_OVERRIDES = {"make": [r"Make\.com", r"Make (?:Pro|Core|Teams|Free|Enterprise)\b", r"(?<=vs )Make\b", r"(?<=vs\. )Make\b", r"\bMake's\b", r"\bMake (?:scenarios?|automations?|vs)\b"],
-                         "pi": [r"\bPi \(Presentation Intelligence\)", r"Presentation Intelligence"]}
+                         "pi": [r"\bPi \(Presentation Intelligence\)", r"Presentation Intelligence"],
+                         # "emergent" is also an everyday AI term (emergent behaviour/abilities); only count the tool, Emergent.sh
+                         "emergent": [r"Emergent\.sh", r"\bEmergent (?:review|pricing|vs\.?|credits|platform|app builder)\b"]}
 
     def tool_patterns(self):
         pats = {}

@@ -80,7 +80,7 @@ const post: BlogPost = {
   content: `
 <div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick picks</strong>
-  <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">Match the agent to the owner</p>
+  <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">Best AI agents for small business: match the agent to the owner</p>
   <p style="margin:6px 0 0;font-size:15px;line-height:1.6;"><a href="/tools/lindy/">Lindy</a>.ai suits non-technical owners ($49.99/user/mo). <a href="/tools/relevance-ai/">Relevance AI</a> suits custom, auditable workflows (from $19/mo). <a href="/tools/make/">Make.com</a> is the best automation-native option, from $9/mo.</p>
   <div style="margin:10px 0 0;">
     

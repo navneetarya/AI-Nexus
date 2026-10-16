@@ -216,7 +216,7 @@ const post: BlogPost = {
 
 <img src="https://images.unsplash.com/photo-1588800347304-ec7e6f353327?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black microphone with stand on a white background, set up for podcast recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
-<h2>Putting It All Together: The Complete Content Creation System</h2>
+<h2>How Do You Put the Complete AI Content Creation System Together?</h2>
 <p>The four workflows above are not independent. They form a single production system where one piece of source content produces output across multiple formats and distribution channels.</p>
 <div style="overflow-x:auto;margin:20px 0 28px;">
   <table style="width:100%;border-collapse:collapse;font-size:13px;">
@@ -259,7 +259,7 @@ const post: BlogPost = {
 
 <img src="https://images.unsplash.com/photo-1621009063622-4467e453c3c1?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A black iPad on a wooden table, part of a complete content creation workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
-<h2>The Honest Limitations</h2>
+<h2>What Are the Limitations of AI for Content Creation?</h2>
 <p>AI content creation tools in 2026 are genuinely useful, but they have real limitations that honest reviews should state clearly. AI writing tools hallucinate facts, statistics, and quotes — every factual claim in AI-generated text needs to be verified before publishing, because confident-sounding false information is the single biggest reputational risk of AI content.</p>
 <div style="background:rgba(217,119,6,.08);border-left:4px solid #D97706;padding:14px 18px;border-radius:8px;margin:16px 0;">
   <strong style="color:#D97706;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Warning</strong>

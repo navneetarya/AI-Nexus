@@ -40,7 +40,7 @@ const post: BlogPost = {
 
 <p>How much editing time does one bad take really cost? Most podcasters don't need an AI voice tool to replace their voice. They need one for three smaller jobs. Fixing a mistake without a full re-record. Making a steady intro or ad read. And now and then, dubbing an episode into another language.</p>
 
-<p>This guide covers voice generation specifically. For recording and editing tools more broadly, see our <a href="/blog/best-ai-podcast-tools-2026/">best AI podcast tools guide</a>. And if Podcastle itself isn't the right fit, our <a href="/blog/best-podcastle-alternatives/">Podcastle alternatives comparison</a> covers Descript and Riverside in depth.</p>
+<p>This guide ranks the best AI voice generators for podcasts, so it covers voice generation specifically. For recording and editing tools more broadly, see our <a href="/blog/best-ai-podcast-tools-2026/">best AI podcast tools guide</a>. And if Podcastle itself isn't the right fit, our <a href="/blog/best-podcastle-alternatives/">Podcastle alternatives comparison</a> covers Descript and Riverside in depth.</p>
 
 <h2>TL;DR: which tool for which podcast job</h2>
 
@@ -78,7 +78,7 @@ const post: BlogPost = {
   </table>
 </div>
 
-<h2>Fixing a flubbed line without a full re-record</h2>
+<h2>How do you fix a flubbed line without a full re-record?</h2>
 
 <p>This is the top reason podcasters reach for a voice tool. Did you stumble over a guest's name mid-sentence? Or fluff a sponsor read three minutes into a segment? You no longer need to re-record the whole segment.</p>
 
@@ -108,7 +108,7 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 
-<h2>Dubbing an episode into another language</h2>
+<h2>Can AI dub a podcast episode into another language?</h2>
 
 <p>Translating a podcast into a second language used to mean hiring a new voice actor for each one. Cloning changes that math: the same cloned voice can read a translated script in any of ElevenLabs' 29 languages.</p>
 

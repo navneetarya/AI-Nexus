@@ -99,7 +99,7 @@ const post: BlogPost = {
 </div>
 
 <h2>Pick the tool by the job, not by the brand</h2>
-<img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Portrait photographer reviewing a retouched image on a monitor" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Portrait photographer reviewing a retouched image on a monitor" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>"AI photo retouching" covers three different jobs. Skin and portrait cleanup is one. Quick fixes to everyday photos is another. Rescuing a weak or damaged photo is the third.</p>
 <p>The five tools below are each built for one of those jobs. This guide matches them to the job instead of giving them one blended score, because a Photoshop plug-in and a phone app are not competing for the same customer.</p>
 <div style="overflow-x:auto;margin:20px 0 28px;"><table style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr style="background:rgba(14,165,233,.1);"><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Tool</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Best job</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Where it runs</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Free start</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);">Cost signal</th></tr></thead><tbody>
@@ -137,6 +137,7 @@ const post: BlogPost = {
 <p>YouCam says the enhancer can sharpen detail but cannot recover a subject that was never in focus. It also says it does not train on your images without consent and deletes files after a short period. Both are the vendor's own statements.</p>
 
 <h2>PhotoRoom: the pick for product photos</h2>
+<img src="https://images.unsplash.com/photo-1693818552545-45ec4f250a74?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Packaged products on a table, the kind of product photo PhotoRoom turns into a listing-ready image" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>PhotoRoom answers a different question from the portrait tools. It is built to get a listing-ready product photo in one pass, with background removal, shadows, AI Fill and an Image Enhancer on every paid plan.</p>
 <p>As of our July 2026 check, paid plans start at $7.50 a month on annual billing. The free plan works for testing, but it watermarks exports and blocks commercial use, so a real seller needs a paid tier. First-time upgraders get a 7-day trial on a paid plan.</p>
 <p>It is not a skin retouching tool, and we would not use it to polish a portrait. For ecommerce sellers who also need more resolution, our <a href="/blog/best-ai-photo-upscaler-tools-2026/" style="color:var(--a1);font-weight:600;">image upscaler comparison</a> covers PhotoRoom against four rivals in more depth.</p>
@@ -165,6 +166,7 @@ const post: BlogPost = {
 <h2>A practical workflow: how the tools fit together</h2>
 <p>These tools are not mutually exclusive. Some people combine two of them, and the order matters more than the brand.</p>
 <h3>For a portrait or wedding set</h3>
+<img src="https://images.unsplash.com/photo-1677530410699-f692c94cf806?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A tablet showing a portrait next to a camera, illustrating a portrait retouching workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Fix the technical problems first, then retouch. If a frame is soft or noisy, sharpen or denoise it before any skin work, because retouching tools can exaggerate noise they were not built to handle.</p>
 <p>Then apply skin retouching on a separate layer, starting with the lowest effective strength. Judge the result at full size, and compare it with the original before exporting. A plug-in that looks natural on one face can look plastic on another.</p>
 <h3>For a small online shop</h3>

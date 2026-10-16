@@ -296,7 +296,7 @@ const post: BlogPost = {
   <li><strong>Best for Indian users (INR billing):</strong> Brevo or Mailchimp: both support Indian payment methods; GetResponse USD-only</li>
 </ul>
 
-<h2 id="pricing">Pricing Guide 2026</h2>
+<h2 id="pricing">How Much Do AI Email Marketing Tools Cost in 2026?</h2>
 <img src="https://images.unsplash.com/photo-1559163330-c30bac8c5031?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Man reviewing email marketing pricing plans on a laptop" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
@@ -417,7 +417,7 @@ const post: BlogPost = {
   </div>
 </div>
 
-<h2 id="alternatives">Alternatives to Consider</h2>
+<h2 id="alternatives">Which AI Email Marketing Alternatives Are Worth Considering?</h2>
 <p>The five tools above cover most use cases, but two alternatives are worth considering for specific situations:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
   <li><strong>Klaviyo</strong>: The best AI email marketing platform for e-commerce stores (Shopify, WooCommerce, BigCommerce). Its AI model looks at purchase history and website behavior to trigger highly personalized product recommendation emails. Pricing starts at $20/month for up to 500 contacts. Overkill for service firms; essential for high-volume e-commerce.</li>

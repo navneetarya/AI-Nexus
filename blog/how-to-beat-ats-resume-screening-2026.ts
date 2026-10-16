@@ -69,7 +69,7 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Most resumes never reach a human recruiter because <strong>Applicant Tracking System (ATS)</strong> software filters them out first. In 2026, the fix is not keyword-stuffing — it's a single-column, standard-header format the parser can actually read, language that matches the job posting's real requirements, and a free ATS check before you submit.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">To beat ATS resume screening, know this: most resumes never reach a human recruiter because <strong>Applicant Tracking System (ATS)</strong> software filters them out first. In 2026, the fix is not keyword-stuffing — it's a single-column, standard-header format the parser can actually read, language that matches the job posting's real requirements, and a free ATS check before you submit.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Claude</strong> and <strong>ChatGPT</strong> can help draft and tailor the content for free, but neither checks ATS-formatting compatibility on its own — that's a different, narrower job that tools like Jobscan and Teal are built around.</p>
 </div>
 

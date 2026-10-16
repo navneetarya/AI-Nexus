@@ -46,7 +46,7 @@ const post: BlogPost = {
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Research Note</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">AI startup growth data in 2026 is a mix of company-disclosed figures, analyst estimates, and secondary research. Where exact figures are not publicly confirmed, this analysis uses verified ranges from public reporting. All claims are independently researched.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Data on the fastest growing AI startups in 2026 is a mix of company-disclosed figures, analyst estimates, and secondary research. Where exact figures are not publicly confirmed, this analysis uses verified ranges from public reporting. All claims are independently researched.</p>
 </div>
 
 <h2>How to Spot the Next Fast-Growing AI Startup: 4 Signals</h2>

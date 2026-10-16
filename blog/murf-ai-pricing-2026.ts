@@ -50,7 +50,7 @@ const post: BlogPost = {
 
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Free</strong> is a preview only. 10 minutes of total generation, all 200+ voices unlocked, but no downloads and no commercial rights.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Murf AI pricing in short: <strong>Free</strong> is a preview only. 10 minutes of total generation, all 200+ voices unlocked, but no downloads and no commercial rights.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Creator</strong> ($22/mo annual, $29/mo monthly) is where commercial rights and downloads actually start. 24 hours of generation a year, roughly 2 hours a month.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Business</strong> ($66/mo annual, $99/mo monthly) roughly quadruples the generation budget and adds team collaboration.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Enterprise</strong> is the only tier with voice cloning, custom-quoted and generally $1,000+ a year. There is no free or low-cost way to clone your own voice on Murf.</p>
