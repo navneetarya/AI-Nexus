@@ -1071,6 +1071,37 @@ const TOOLS = [
     metaDescription: "BigRock 2026 review: ₹1 .com and .in first year on a 3-year term, renewal prices, hosting from ₹69/month and what the guarantee covers.",
     reviewBody: "BigRock is an ICANN-accredited domain registrar and web host aimed at Indian buyers, with prices shown in rupees. It sells domains, shared, WordPress, reseller and VPS hosting, dedicated servers, business email, SSL certificates and a website builder. Its headline offer is a .com or .in for ₹1 in the first year, but only on a three-year registration. For .com, years two and three cost ₹1,405 each, a ₹2,811 total against ₹3,707 at regular one-year prices. For .in, years two and three cost ₹899 each, a ₹1,799 total. Domain privacy is not free: Domain Protect+ is a separate add-on. Shared hosting starts at ₹69 a month with a free Let's Encrypt SSL certificate and daily backups. A 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting but does not list domains. Support is 24/7 live chat plus phone lines. Some figures differ between pages, so confirm the total at checkout. A good fit for India-based owners who want rupee pricing and will commit to three years, and a weaker fit for buyers who want free privacy or one-year flexibility. This review is based on BigRock's official pages; no first-hand testing is claimed.",
   },
+  //  SITE123 + Network Solutions + Perplexity Comet  added Oct 2026. Mirrors matching entries in constants.ts TOOLS.
+  {
+    slug: "site123", name: "SITE123", category: "Design",
+    tagline: "Drag-and-drop website builder with a free plan and 24/7 live support",
+    description: "SITE123 is a drag-and-drop website builder for beginners, not an AI site generator. Its pricing page lists a Free plan (250 MB storage, 250 MB bandwidth, SITE123 subdomain) and paid Premium plans that add a custom domain, more storage and bandwidth, removal of the SITE123 floating tag and store features. It states a 14-day money-back guarantee on Premium plans.",
+    pricing: "Free plan; paid plans vary by term (Basic read at about $10.80/month in one May 2026 snapshot)", bestFor: "Beginners who want a simple, non-AI site builder with a permanent free plan and live support",
+    rating: 3.7, lastTested: 'October 2026',
+    seoTitle: "SITE123 Review 2026: Free Plan, Pricing Tiers & Limits | AI Nexus",
+    metaDescription: "SITE123 2026 review: a drag-and-drop builder with a free plan, 14-day money-back guarantee on Premium, and plan prices that vary by term. Limits and who it fits.",
+    reviewBody: "SITE123 is a drag-and-drop website builder for beginners, not an AI site generator. Its pricing page lists a Free plan (250 MB storage, 250 MB bandwidth, SITE123 subdomain) and paid Premium plans that add a custom domain, more storage and bandwidth, removal of the SITE123 floating tag and store features. It states a 14-day money-back guarantee on Premium plans. Trade-offs: Pricing is hard to read: the public page shows Free and Premium, and reviewers say the other plans only appear after you create an account; Prices differ widely by term and by source, so the figure you pay depends on the length you commit to; The SITE123 floating tag and footer ads stay on lower plans, and removing all of them needs a higher paid plan. People who want an AI builder that drafts the site from a prompt (look at Alf Website Studio or Wegic), anyone who needs full design control or code export, and larger online stores that would hit the order limits on lower plans."
+  },
+  {
+    slug: "network-solutions", name: "Network Solutions", category: "Marketing",
+    tagline: "Long-established domain registrar and web host with a large gap between first-year and renewal prices",
+    description: "Network Solutions is a long-established domain registrar and web host that also sells website builders, business email and SSL certificates. A price tracker read on 26 May 2026 lists a .com at $9.59 for the first year and $32.99 to renew, and third-party reviews put the .com renewal between about $29 and $38, so the renewal bill is the number to plan around. Domain privacy is a paid add-on.",
+    pricing: ".com $9.59 first year, $32.99 renewal (tracker, 26 May 2026); privacy is extra", bestFor: "Owners who value an established brand and one account for domains, hosting, email and SSL, and who accept a high renewal price",
+    rating: 3.0, lastTested: 'October 2026',
+    seoTitle: "Network Solutions Review 2026: .com Renewal Price, Privacy & Alternatives | AI Nexus",
+    metaDescription: "Network Solutions 2026 review: .com first-year vs renewal price, paid domain privacy, what else it sells and who should look at cheaper registrars.",
+    reviewBody: "Network Solutions is a long-established domain registrar and web host that also sells website builders, business email and SSL certificates. A price tracker read on 26 May 2026 lists a .com at $9.59 for the first year and $32.99 to renew, and third-party reviews put the .com renewal between about $29 and $38, so the renewal bill is the number to plan around. Domain privacy is a paid add-on. Trade-offs: The .com renewal is more than three times the tracker's first-year price: $32.99 against $9.59; Reviews put the .com renewal between about $29 and $38 depending on the date, so the figure keeps moving; WHOIS privacy is a paid add-on, while several rivals include it at no charge. Price-sensitive buyers, anyone who wants free domain privacy, and owners who plan to keep a domain for years, since the renewal price compounds. Spaceship lists a much lower .com renewal with free privacy on eligible domains, and BigRock is the rupee-priced option for India."
+  },
+  {
+    slug: "perplexity-comet", name: "Perplexity Comet", category: "Productivity",
+    tagline: "Free Chromium-based AI browser with a built-in Perplexity assistant",
+    description: "Perplexity Comet is an AI web browser built on Chromium, with an assistant that reads the page you are on and can act for you. It launched in July 2025 for Perplexity Max subscribers and has been free for everyone since 2 October 2025. An optional Comet Plus add-on costs $5 a month and adds publisher content; it is included with Perplexity Pro and Max.",
+    pricing: "Browser free; Comet Plus $5/month (included with Perplexity Pro and Max)", bestFor: "People who already use Perplexity for research and want its assistant built into the browser",
+    rating: 3.9, lastTested: 'October 2026',
+    seoTitle: "Perplexity Comet Review 2026: Free AI Browser, Comet Plus & Limits | AI Nexus",
+    metaDescription: "Perplexity Comet 2026 review: the free Chromium-based AI browser, what Comet Plus adds for $5 a month, and who should try it over Chrome.",
+    reviewBody: "Perplexity Comet is an AI web browser built on Chromium, with an assistant that reads the page you are on and can act for you. It launched in July 2025 for Perplexity Max subscribers and has been free for everyone since 2 October 2025. An optional Comet Plus add-on costs $5 a month and adds publisher content; it is included with Perplexity Pro and Max. Trade-offs: On the free tier, reports at launch described the AI features as limited to the sidecar assistant; The background assistant was reserved for Max, which costs $200 a month; An assistant that can act on pages while you are signed in deserves careful permissions and review. Anyone who wants a browser with no AI assistant, people who are not comfortable letting an assistant read pages while they are signed in to sensitive accounts, and readers who only want a chatbot, for whom Perplexity's regular app or site is enough."
+  },
   // ── Tidio + Soundraw — added Oct 2026. Mirrors matching entries in constants.ts TOOLS. ──
   {
     slug: "tidio", name: "Tidio", category: "Marketing",
@@ -1475,6 +1506,27 @@ const TOOL_FAQS = {
     { q: "Does BigRock include WHOIS privacy?", a: "Not free on the pages we checked. Domain Protect+ is a separate add-on, and BigRock says that without it your contact details appear in WHOIS. The price was not shown, so check it before you buy." },
     { q: "Does BigRock offer refunds?", a: "Its 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting, and excludes 1-month purchases and other products. Domains are not listed, so ask support about a domain refund before you pay." },
     { q: "What does BigRock sell besides domains?", a: "Shared, WordPress, reseller and VPS hosting, dedicated servers, Titan business email, Google Workspace, SSL certificates, a website builder and design and SEO services. Shared hosting starts at ₹69 a month with a free Let's Encrypt SSL certificate and daily backups." },
+  ],
+  site123: [
+    { q: "Is SITE123 free?", a: "Yes. SITE123's pricing page lists a Free plan at $0 with 250 MB of storage and 250 MB of bandwidth on a SITE123 subdomain, and says every site is free to use indefinitely. A custom domain and more advanced features need a paid plan." },
+    { q: "How much does SITE123 cost?", a: "It depends on the plan and the term. One May 2026 reading of the pricing page shows the Basic plan from about $10.80 a month, while a third-party review lists Basic from $19 a month on a 3-month term to $5 on a 120-month term. Prices differ between sources, so confirm the total at checkout." },
+    { q: "Does SITE123 have a money-back guarantee?", a: "Yes. The pricing page says all Premium plans carry a 14-day money-back guarantee. Read the terms for what it covers before you buy." },
+    { q: "Is SITE123 an AI website builder?", a: "No. It is a template-based drag-and-drop builder. If you want a site drafted from a prompt, compare it with an AI builder such as Alf Website Studio or Wegic." },
+    { q: "Does SITE123 include a free domain?", a: "Third-party reviews say paid annual plans include a free domain for the first year, and that it is not included on the free plan. Check the plan details at checkout, because terms differ between sources." },
+  ],
+  "network-solutions": [
+    { q: "How much does a .com cost at Network Solutions?", a: "A price tracker read on 26 May 2026 listed a .com at $9.59 for the first year, $32.99 to renew and $10.99 to transfer. Other sources quote different numbers, with renewals between about $29 and $38, so confirm the total at checkout." },
+    { q: "Is domain privacy free at Network Solutions?", a: "Not on the sources we checked. Privacy is sold as a paid add-on, and several rivals include it at no charge. Check the add-on price before you buy." },
+    { q: "Why is the Network Solutions renewal price so high?", a: "The first-year price is often a promotion, and the renewal goes back to the standard rate. On the tracker figures the renewal is more than three times the first-year price, which is why we suggest budgeting for year two." },
+    { q: "What does Network Solutions sell besides domains?", a: "Hosting, website builders, business email and SSL certificates, plus paid domain-protection options." },
+    { q: "Is there a cheaper alternative to Network Solutions?", a: "Yes. Spaceship lists a .com renewal near $10 a year with free privacy on eligible domains, and BigRock is the rupee-priced option for India. See our domain renewal price comparison for the dated figures." },
+  ],
+  "perplexity-comet": [
+    { q: "Is Perplexity Comet free?", a: "Yes. Perplexity made the Comet browser free for everyone on 2 October 2025, after launching it in July for Max subscribers. Some features and the Comet Plus add-on are paid." },
+    { q: "What is Comet Plus and what does it cost?", a: "Comet Plus is a $5 a month add-on that brings publisher content into the browser. It is included at no extra cost with Perplexity Pro and Max." },
+    { q: "Is Comet based on Chromium?", a: "Yes. Reviews describe it as a Chromium-based browser built around an AI assistant that understands the page you are on." },
+    { q: "Is Comet safer or riskier than Chrome?", a: "We have not tested that. Because the assistant can act on pages while you are signed in, review what it is allowed to do and avoid using it on sensitive accounts until you are comfortable with its permissions." },
+    { q: "How does Comet compare with ChatGPT Atlas and Dia?", a: "See our comparison of the three AI browsers, which covers what each assistant does and what each costs." },
   ],
   tidio: [
     { q: "Is Tidio free?", a: "Yes. The Free plan costs $0 and includes 50 billable conversations a month, 10 seats and the first 100 Flows visitors a month. Tidio also offers a 7-day trial of paid features with no credit card, after which the account returns to Free unless you upgrade." },
@@ -5981,6 +6033,7 @@ const BLOG_RELATED_LINKS = {
     ['/tools/alf-website-studio/', 'Alf Website Studio Review'],
     ['/tools/spaceship/', 'Spaceship Review 2026'],
     ['/tools/bigrock/', 'BigRock Review 2026'],
+    ['/tools/network-solutions/', 'Network Solutions Review 2026'],
   ],
   // —— Oct 9 (Phase 4): AI builder comparison — links to the vibe-coding roundup, builders roundup and launch cluster ——
   'lovable-vs-wegic-vs-readdy-vs-creao-2026': [
@@ -5998,6 +6051,8 @@ const BLOG_RELATED_LINKS = {
     ['/tools/alf-website-studio/', 'Alf Website Studio Review'],
     ['/tools/spaceship/', 'Spaceship Review 2026'],
     ['/tools/bigrock/', 'BigRock Review 2026'],
+    ['/tools/network-solutions/', 'Network Solutions Review 2026'],
+    ['/tools/site123/', 'SITE123 Review 2026'],
   ],
   // —— Sep 22: Best Gamma AI Alternatives 2026 — links back to the Gamma review, the full
   // presentation-tools roundup, and the Gamma vs Beautiful.ai compare page ——

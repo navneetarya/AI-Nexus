@@ -408,6 +408,123 @@ export const TOOLS: Tool[] = [
     ],
     reviewType: 'research-based',
   },
+  // SITE123 - page created Oct 16 2026 from vendor pages and third-party reviews. Mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'd10', slug: 'site123',
+    name: "SITE123", tagline: "Drag-and-drop website builder with a free plan and 24/7 live support",
+    description: "SITE123 is a drag-and-drop website builder for beginners, not an AI site generator. Its pricing page lists a Free plan (250 MB storage, 250 MB bandwidth, SITE123 subdomain) and paid Premium plans that add a custom domain, more storage and bandwidth, removal of the SITE123 floating tag and store features. It states a 14-day money-back guarantee on Premium plans.",
+    category: Category.DESIGN, affiliateLink: 'https://site123ltd.sjv.io/enPqkZ?utm_source=site123&utm_medium=affiliate',
+    iconName: 'Layout', color: '#0ea5e9', accentColor: '#0369a1',
+    pricing: "Free plan; paid plans vary by term (Basic read at about $10.80/month in one May 2026 snapshot)", bestFor: "Beginners who want a simple, non-AI site builder with a permanent free plan and live support",
+    ctaText: "Start Free at SITE123",
+    features: ["Free plan with 250 MB storage and 250 MB bandwidth on a SITE123 subdomain", "Paid plans add a custom domain, more storage and bandwidth, and store features", "Free domain for the first year on paid annual plans, per third-party reviews", "Free SSL certificate on every plan, per a third-party review", "14-day money-back guarantee stated on Premium plans", "Live support that third-party reviews say is open to free-plan users too"],
+    pros: [
+      "The free plan has no time limit, so you can build and judge the editor before paying",
+      "Support is described as 24/7 live chat, including for free users",
+      "A custom domain, SSL and store features are available without a separate hosting purchase",
+      "The editor is built for non-technical users and does not ask you to write code",
+    ],
+    cons: [
+      "Pricing is hard to read: the public page shows Free and Premium, and reviewers say the other plans only appear after you create an account",
+      "Prices differ widely by term and by source, so the figure you pay depends on the length you commit to",
+      "The SITE123 floating tag and footer ads stay on lower plans, and removing all of them needs a higher paid plan",
+      "Store limits scale by plan: one review lists 100 orders a month on Professional, 500 on Gold and unlimited on Platinum",
+      "It is a template builder with limited design freedom, and it does not generate sites with AI",
+    ],
+    notForYou: "People who want an AI builder that drafts the site from a prompt (look at Alf Website Studio or Wegic), anyone who needs full design control or code export, and larger online stores that would hit the order limits on lower plans.",
+    lastTestedISO: '2026-10-16',
+    researchSources: {
+      lastVerified: '2026-10-16',
+    },
+    pricingBreakdown: [
+      { tier: "Free", price: "$0", highlight: "250 MB storage and 250 MB bandwidth, SITE123 subdomain, no time limit" },
+      { tier: "Premium (entry tier)", price: "About $10.80/month for Basic", highlight: "One May 2026 reading of the pricing page: free domain for a year, 3 GB storage and bandwidth, floating tag removed, store included" },
+      { tier: "Higher tiers", price: "Advanced, Professional, Gold, Platinum", highlight: "Prices vary by term and by source; one reviewer lists Basic from $19 a month on a 3-month term to $5 on a 120-month term, so confirm at checkout" },
+      { tier: "Order limits", price: "Professional 100, Gold 500, Platinum unlimited", highlight: "Monthly store orders per plan, as listed in one third-party review" },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: "Page created from SITE123's pricing page as read in a May 2026 snapshot, plus several third-party reviews. No first-hand testing is claimed. Reviewers disagree on paid-plan prices and tier names, so no plan price is quoted as fixed; confirm the total at checkout." },
+    ],
+    reviewType: 'research-based',
+  },
+  // Network Solutions - page created Oct 16 2026 from vendor pages and third-party reviews. Mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'mk5', slug: 'network-solutions',
+    name: "Network Solutions", tagline: "Long-established domain registrar and web host with a large gap between first-year and renewal prices",
+    description: "Network Solutions is a long-established domain registrar and web host that also sells website builders, business email and SSL certificates. A price tracker read on 26 May 2026 lists a .com at $9.59 for the first year and $32.99 to renew, and third-party reviews put the .com renewal between about $29 and $38, so the renewal bill is the number to plan around. Domain privacy is a paid add-on.",
+    category: Category.MARKETING, affiliateLink: 'https://network-solutions.7eer.net/yZQg63?utm_source=network-solutions&utm_medium=affiliate',
+    iconName: 'Globe', color: '#2563eb', accentColor: '#1d4ed8',
+    pricing: ".com $9.59 first year, $32.99 renewal (tracker, 26 May 2026); privacy is extra", bestFor: "Owners who value an established brand and one account for domains, hosting, email and SSL, and who accept a high renewal price",
+    ctaText: "Check Network Solutions Prices",
+    features: ["Domain registration, transfers and DNS management", "Hosting, website builder, business email and SSL certificates from the same company", "Domain privacy and protection offered as paid add-ons", "Transfer locks and other domain-security options, per a third-party review", "A third-party review lists registrations of up to 100 years", "A Buyer's Club pre-registration program with a 10% discount, per a third-party listing"],
+    pros: [
+      "One established provider for domains, hosting, email, SSL and a site builder",
+      "First-year .com offers can be low: a tracker read $9.59 in May 2026",
+      "Domain-security options such as transfer locks and paid privacy are available",
+      "Long registration terms are available, according to a third-party review",
+    ],
+    cons: [
+      "The .com renewal is more than three times the tracker's first-year price: $32.99 against $9.59",
+      "Reviews put the .com renewal between about $29 and $38 depending on the date, so the figure keeps moving",
+      "WHOIS privacy is a paid add-on, while several rivals include it at no charge",
+      "Users report having to decline optional extras during checkout",
+      "The tracker data on this page is older than the figures for the other registrars we compare",
+    ],
+    notForYou: "Price-sensitive buyers, anyone who wants free domain privacy, and owners who plan to keep a domain for years, since the renewal price compounds. Spaceship lists a much lower .com renewal with free privacy on eligible domains, and BigRock is the rupee-priced option for India.",
+    lastTestedISO: '2026-10-16',
+    researchSources: {
+      lastVerified: '2026-10-16',
+    },
+    pricingBreakdown: [
+      { tier: ".com registration", price: "$9.59 first year (tracker)", highlight: "Regular first-year price shown as $11.99 on the same tracker, read on 26 May 2026; other reviews quote $20 to $25" },
+      { tier: ".com renewal", price: "$32.99 per year (tracker)", highlight: "Other sources list $28.99 on the vendor's pricing page and $37.99 in reviews, so confirm the renewal price before buying" },
+      { tier: ".com transfer", price: "$10.99 (tracker)", highlight: "Tracker figure from 26 May 2026; confirm at checkout" },
+      { tier: "Domain privacy", price: "Paid add-on", highlight: "Price not confirmed; several rivals include privacy free" },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: "Page created from a May 2026 price-tracker snapshot, the vendor's site listing and several third-party reviews. No first-hand testing is claimed. Prices differ between sources and move often, so confirm the registration and renewal totals at checkout." },
+    ],
+    reviewType: 'research-based',
+  },
+  // Perplexity Comet - page created Oct 16 2026 from vendor pages and third-party reviews. Mirrors the matching entry in scripts/prerender.mjs TOOLS.
+  {
+    id: 'p18', slug: 'perplexity-comet',
+    name: "Perplexity Comet", tagline: "Free Chromium-based AI browser with a built-in Perplexity assistant",
+    description: "Perplexity Comet is an AI web browser built on Chromium, with an assistant that reads the page you are on and can act for you. It launched in July 2025 for Perplexity Max subscribers and has been free for everyone since 2 October 2025. An optional Comet Plus add-on costs $5 a month and adds publisher content; it is included with Perplexity Pro and Max.",
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://www.perplexity.ai/comet?via=ainexus',
+    iconName: 'Globe', color: '#0d9488', accentColor: '#0f766e',
+    pricing: "Browser free; Comet Plus $5/month (included with Perplexity Pro and Max)", bestFor: "People who already use Perplexity for research and want its assistant built into the browser",
+    ctaText: "Try Comet Free",
+    features: ["Free browser download for everyone since 2 October 2025", "Built on Chromium, so it behaves like a mainstream desktop browser", "A sidecar assistant that answers questions about the page you are viewing", "Comet Plus: a $5 a month publisher-content add-on, included with Pro and Max", "A background assistant reserved for Max subscribers at the October 2025 launch", "Windows, macOS and iOS at launch, with Android listed as coming soon then"],
+    pros: [
+      "The browser itself is free, with no waitlist since October 2025",
+      "The assistant sits beside the page, so you can ask about what you are reading",
+      "Paid Perplexity Pro and Max subscribers already get Comet Plus at no extra cost",
+      "Chromium underneath means the browsing experience is familiar",
+    ],
+    cons: [
+      "On the free tier, reports at launch described the AI features as limited to the sidecar assistant",
+      "The background assistant was reserved for Max, which costs $200 a month",
+      "An assistant that can act on pages while you are signed in deserves careful permissions and review",
+      "Perplexity's pricing URL stopped working in June 2026 per one review, so the official plan details can be harder to find",
+      "Platform support has changed since launch, so check that your device is covered",
+    ],
+    notForYou: "Anyone who wants a browser with no AI assistant, people who are not comfortable letting an assistant read pages while they are signed in to sensitive accounts, and readers who only want a chatbot, for whom Perplexity's regular app or site is enough.",
+    lastTestedISO: '2026-10-16',
+    researchSources: {
+      lastVerified: '2026-10-16',
+    },
+    pricingBreakdown: [
+      { tier: "Comet browser", price: "Free", highlight: "Download for everyone since 2 October 2025, with the sidecar assistant" },
+      { tier: "Comet Plus", price: "$5/month", highlight: "Publisher-content add-on; included with Perplexity Pro and Max" },
+      { tier: "Perplexity Pro", price: "$20/month (per a third-party guide)", highlight: "Includes Comet Plus at no extra cost; confirm current plan details on Perplexity's site" },
+      { tier: "Perplexity Max", price: "$200/month", highlight: "Reserved the background assistant at launch; includes Comet Plus" },
+    ],
+    updateLog: [
+      { date: 'October 2026', note: "Page created from Perplexity's October 2025 launch coverage and third-party pricing guides. No first-hand testing is claimed. Plans, platform support and Pro and Max features have changed since launch, so confirm them on Perplexity's site." },
+    ],
+    reviewType: 'research-based',
+  },
   // Tidio — page created Oct 16 2026 from the vendor's official pages. Mirrors the matching entry in scripts/prerender.mjs TOOLS.
   {
     id: 'mk4', slug: 'tidio',
@@ -3884,6 +4001,36 @@ Object.assign(TOOL_FAQS, {
 Object.assign(TOOL_KEYWORDS, {
   spaceship: ["spaceship review", "spaceship domain registrar review", "spaceship .com renewal price", "spaceship domain privacy", "spaceship spacemail pricing", "spaceship vs namecheap"],
   bigrock: ["bigrock review", "bigrock domain ₹1 offer", "bigrock renewal price", "bigrock hosting india", "bigrock domain privacy", "cheap domain registrar india"],
+});
+
+//  SITE123 + Network Solutions + Perplexity Comet  added Oct 2026, mirrors prerender.mjs TOOL_FAQS
+Object.assign(TOOL_FAQS, {
+  site123: [
+    { q: "Is SITE123 free?", a: "Yes. SITE123's pricing page lists a Free plan at $0 with 250 MB of storage and 250 MB of bandwidth on a SITE123 subdomain, and says every site is free to use indefinitely. A custom domain and more advanced features need a paid plan." },
+    { q: "How much does SITE123 cost?", a: "It depends on the plan and the term. One May 2026 reading of the pricing page shows the Basic plan from about $10.80 a month, while a third-party review lists Basic from $19 a month on a 3-month term to $5 on a 120-month term. Prices differ between sources, so confirm the total at checkout." },
+    { q: "Does SITE123 have a money-back guarantee?", a: "Yes. The pricing page says all Premium plans carry a 14-day money-back guarantee. Read the terms for what it covers before you buy." },
+    { q: "Is SITE123 an AI website builder?", a: "No. It is a template-based drag-and-drop builder. If you want a site drafted from a prompt, compare it with an AI builder such as Alf Website Studio or Wegic." },
+    { q: "Does SITE123 include a free domain?", a: "Third-party reviews say paid annual plans include a free domain for the first year, and that it is not included on the free plan. Check the plan details at checkout, because terms differ between sources." },
+  ],
+  "network-solutions": [
+    { q: "How much does a .com cost at Network Solutions?", a: "A price tracker read on 26 May 2026 listed a .com at $9.59 for the first year, $32.99 to renew and $10.99 to transfer. Other sources quote different numbers, with renewals between about $29 and $38, so confirm the total at checkout." },
+    { q: "Is domain privacy free at Network Solutions?", a: "Not on the sources we checked. Privacy is sold as a paid add-on, and several rivals include it at no charge. Check the add-on price before you buy." },
+    { q: "Why is the Network Solutions renewal price so high?", a: "The first-year price is often a promotion, and the renewal goes back to the standard rate. On the tracker figures the renewal is more than three times the first-year price, which is why we suggest budgeting for year two." },
+    { q: "What does Network Solutions sell besides domains?", a: "Hosting, website builders, business email and SSL certificates, plus paid domain-protection options." },
+    { q: "Is there a cheaper alternative to Network Solutions?", a: "Yes. Spaceship lists a .com renewal near $10 a year with free privacy on eligible domains, and BigRock is the rupee-priced option for India. See our domain renewal price comparison for the dated figures." },
+  ],
+  "perplexity-comet": [
+    { q: "Is Perplexity Comet free?", a: "Yes. Perplexity made the Comet browser free for everyone on 2 October 2025, after launching it in July for Max subscribers. Some features and the Comet Plus add-on are paid." },
+    { q: "What is Comet Plus and what does it cost?", a: "Comet Plus is a $5 a month add-on that brings publisher content into the browser. It is included at no extra cost with Perplexity Pro and Max." },
+    { q: "Is Comet based on Chromium?", a: "Yes. Reviews describe it as a Chromium-based browser built around an AI assistant that understands the page you are on." },
+    { q: "Is Comet safer or riskier than Chrome?", a: "We have not tested that. Because the assistant can act on pages while you are signed in, review what it is allowed to do and avoid using it on sensitive accounts until you are comfortable with its permissions." },
+    { q: "How does Comet compare with ChatGPT Atlas and Dia?", a: "See our comparison of the three AI browsers, which covers what each assistant does and what each costs." },
+  ],
+});
+Object.assign(TOOL_KEYWORDS, {
+  site123: ["site123 review", "site123 pricing", "site123 free plan", "site123 vs wix", "simple website builder for beginners", "non-ai website builder"],
+  "network-solutions": ["network solutions review", "network solutions domain renewal price", "network solutions .com price", "network solutions domain privacy", "network solutions alternatives", "cheap domain registrar"],
+  "perplexity-comet": ["perplexity comet review", "perplexity comet pricing", "comet browser free", "comet plus", "perplexity comet vs chrome", "ai browser"],
 });
 
 // ── Tidio + Soundraw — added Oct 2026, mirrors prerender.mjs TOOL_FAQS ──

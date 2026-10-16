@@ -33,6 +33,8 @@ const AFFILIATE_SLUGS = [
   'readdy', 'gitmind', 'retouch4me', 'wordtosite', 'signnow',
   // Added Oct 16 2026: Impact tools that now have review pages
   'spaceship', 'bigrock',
+  // Added Oct 16 2026: tracked-link tools that now have review pages (D batch)
+  'site123', 'network-solutions', 'perplexity-comet',
   // Added Oct 16 2026: tracked-link tools that now have review pages
   'tidio', 'soundraw',
   'vidiq', 'appsumo',
@@ -1607,6 +1609,54 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
     verdict: "A reasonable pick for India-based owners who want rupee pricing and will keep the domain for three years. Judge the offer by the renewal price, budget for privacy separately, and look at Spaceship instead if you want free privacy and one-year flexibility.",
     relatedBlogSlugs: ['domain-renewal-prices-compared-2026', 'launch-an-ai-built-website-2026', 'best-free-ai-tools-for-students-in-india-2026', 'best-ai-website-builders-2026'],
     rating: 3.5, lastTested: "October 2026", lastTestedISO: "2026-10-16", datePublished: "2026-10-16", timeUsed: "Researched Oct 2026",
+  },
+  "site123": {
+    whatIs: "SITE123 is a drag-and-drop website builder aimed at beginners. It is not an AI site generator: you pick a template, fill in sections and publish. Its pricing page lists a Free plan with 250 MB of storage and bandwidth on a SITE123 subdomain, and paid Premium plans that add a custom domain, more storage and bandwidth, store features and removal of the SITE123 floating tag. Premium plans carry a stated 14-day money-back guarantee.",
+    whoIsItFor: "Beginners, freelancers and small businesses who want a simple site with a permanent free starting point, live support and no AI features to learn. The free plan lets you build before you pay.",
+    whoShouldSkip: "Anyone who wants an AI builder that drafts the site from a prompt, people who need full design control or code export, and busy online stores that would reach the order limits on the lower plans.",
+    myTake: "This review draws on SITE123's pricing page as read in a May 2026 snapshot and on several third-party reviews. No first-hand testing is claimed.\n\nThe appeal is simplicity and the free plan. The catch is the pricing: the public page shows Free and Premium, reviewers say the other tiers appear only after sign-up, and the monthly price swings a lot with the term you pick. Treat any single price you see online, including ours, as a starting point and read the checkout total.",
+    useCases: [
+      "Building a small business or portfolio site from a template without writing code",
+      "Testing the editor on the free plan before deciding whether to pay",
+      "Adding a simple store to a small site on a paid plan",
+      "Running a multilingual brochure site, which reviewers say the builder supports on paid plans",
+    ],
+    pricingSection: "**SITE123 pricing (USD; verify on site123.com before buying):**\n- Free: $0, 250 MB storage, 250 MB bandwidth, SITE123 subdomain, no time limit.\n- Premium plans: Basic, Advanced, Professional and Gold are listed on the pricing page, and some reviews also list Platinum. One May 2026 reading shows Basic from about $10.80 a month.\n- Prices depend on the term. One reviewer lists Basic from $19 a month on a 3-month term down to $5 on a 120-month term, so the same plan can look very different between sources.\n- A 14-day money-back guarantee is stated on Premium plans.\n\nConfirm the plan, term and total at checkout before paying.",
+    verdict: "A sensible starting point if you want a plain, non-AI builder with a free plan and live support. Judge it by the checkout total for the term you pick, and look at an AI builder instead if you want the site drafted for you.",
+    relatedBlogSlugs: ['best-ai-website-builders-2026', 'launch-an-ai-built-website-2026', 'best-free-ai-tools-for-students-in-india-2026', 'lovable-vs-wegic-vs-readdy-vs-creao-2026'],
+    rating: 3.7, lastTested: "October 2026", lastTestedISO: "2026-10-16", datePublished: "2026-10-16", timeUsed: "Researched Oct 2026",
+  },
+  "network-solutions": {
+    whatIs: "Network Solutions is a long-established domain registrar and web host. Besides domains it sells hosting, website builders, business email and SSL certificates. The main thing to know is the price shape: a May 2026 price tracker lists a .com at $9.59 for the first year and $32.99 to renew, and third-party reviews quote renewals between about $29 and $38. Domain privacy is a paid add-on rather than included.",
+    whoIsItFor: "Owners who want an established brand and one account for domain, hosting, email and SSL, and who are comfortable with a high renewal price. It can also suit people who want paid security options such as domain protection bundled in one place.",
+    whoShouldSkip: "Price-sensitive buyers, anyone who wants domain privacy included at no cost, and owners who will hold a domain for many years. Spaceship and Cloudflare-style registrars list lower renewals, and BigRock suits buyers who want rupee pricing.",
+    myTake: "This review draws on a May 2026 price-tracker snapshot and several third-party reviews. No first-hand testing is claimed, and the figures are older than the other registrars on our domain-price comparison.\n\nThe first-year price is not the price that matters. On the tracker's numbers, year two costs more than three times year one, and privacy is extra. Do the maths on the renewal before you register.",
+    useCases: [
+      "Registering a domain from a long-established provider",
+      "Keeping domain, hosting and business email under one account",
+      "Adding SSL certificates and domain protection to an existing registration",
+      "Transferring a domain in and managing DNS from a single control panel",
+    ],
+    pricingSection: "**Network Solutions pricing (USD; verify on networksolutions.com before buying):**\n- .com registration: $9.59 for the first year on a price tracker read on 26 May 2026, against a regular first-year price of $11.99 on the same tracker. Some reviews quote $20 to $25.\n- .com renewal: $32.99 a year on the tracker. Other sources list $28.99 on the vendor's pricing page and $37.99 in reviews.\n- .com transfer: $10.99 on the tracker.\n- Domain privacy: a paid add-on; the price was not confirmed.\n\nThe renewal price is the one to budget for. Confirm the registration total, renewal price and add-ons at checkout.",
+    verdict: "A recognisable registrar with a wide choice of add-ons, but one of the more expensive places to keep a .com. Compare the renewal price and the cost of privacy against Spaceship before you register.",
+    relatedBlogSlugs: ['domain-renewal-prices-compared-2026', 'launch-an-ai-built-website-2026', 'best-ai-website-builders-2026', 'best-free-ai-tools-for-students-in-india-2026'],
+    rating: 3.0, lastTested: "October 2026", lastTestedISO: "2026-10-16", datePublished: "2026-10-16", timeUsed: "Researched Oct 2026",
+  },
+  "perplexity-comet": {
+    whatIs: "Perplexity Comet is an AI web browser built on Chromium. A sidecar assistant reads the page you are on and answers questions about it, and it can act on your behalf. Comet launched in July 2025 for Perplexity Max subscribers and became free for everyone on 2 October 2025. Comet Plus is an optional $5 a month add-on with publisher content, and it is included with Perplexity Pro and Max.",
+    whoIsItFor: "People who already rely on Perplexity for research and want the assistant inside the browser, and anyone curious about an AI-first alternative to Chrome. Because the browser is free, trying it costs nothing.",
+    whoShouldSkip: "Anyone who wants a browser with no AI assistant, people who are uneasy about an assistant reading pages while they are signed in to sensitive accounts, and readers who only need a chatbot.",
+    myTake: "This review draws on Perplexity's October 2025 launch coverage and third-party pricing guides. No first-hand testing is claimed.\n\nThe browser being free makes the decision easy to test. The questions to ask before relying on it are what the assistant is allowed to do while you are signed in, and which Pro or Max features you would actually use. Our comparison of Comet, ChatGPT Atlas and Dia covers how it stacks up against the other AI browsers.",
+    useCases: [
+      "Asking questions about the article or page you are reading without switching tabs",
+      "Researching a topic with Perplexity's assistant beside the pages you open",
+      "Adding publisher content through Comet Plus, which Pro and Max subscribers already have",
+      "Trying an AI-first browser alongside Chrome before deciding whether to switch",
+    ],
+    pricingSection: "**Perplexity Comet pricing (USD; verify on perplexity.ai before buying):**\n- Comet browser: free for everyone since 2 October 2025.\n- Comet Plus: $5 a month, adding publisher content. It is included with Perplexity Pro and Max.\n- Perplexity Pro: $20 a month per a third-party guide, with Comet Plus included.\n- Perplexity Max: $200 a month; at launch it also carried a background assistant.\n\nOne review notes that Perplexity's old pricing URL stopped working in June 2026, so confirm current plans on its main site.",
+    verdict: "Worth installing if you already use Perplexity, because the browser is free and costs nothing to test. Decide on Pro or Max separately, and check what the assistant can do on signed-in pages before you rely on it.",
+    relatedBlogSlugs: ['chatgpt-atlas-vs-perplexity-comet-vs-dia-2026', 'perplexity-ai-review-2026', 'perplexity-pro-vs-chatgpt-plus-vs-claude-pro-freelancers-2026', 'chatgpt-alternatives-free-2026'],
+    rating: 3.9, lastTested: "October 2026", lastTestedISO: "2026-10-16", datePublished: "2026-10-16", timeUsed: "Researched Oct 2026",
   },
   'alf-website-studio': {
     whatIs: "Alf Website Studio is Spaceship's conversational website builder. You describe the site to Alf, Spaceship's AI assistant, which generates the pages, copy, branding and images; you then refine the result by chat or in a visual editor. Hosting, domain connection and an SSL certificate are handled for you. Spaceship's published pricing is a 30-day free trial, then $5 per month.",

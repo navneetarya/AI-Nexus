@@ -33,8 +33,7 @@ import { TOOLS } from '../constants';
 // a real tool page, move its link into constants.ts and delete it here.
 const SUPPLEMENTARY_LINKS: Record<string, string> = {
   make: 'https://www.make.com/en/register?pc=navneet',
-  // Perplexity Comet browser deep link (same ?via=ainexus program as the Perplexity tool page).
-  'perplexity-comet': 'https://www.perplexity.ai/comet?via=ainexus',
+  // Perplexity Comet now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['perplexity-comet']).
   // Lindy runs a public PartnerStack program (market.partnerstack.com/page/lindy). Our application is recorded as pending in
   // constants.ts, so this link stays plain until a tracked link is issued. Rates differ between Lindy's network listings, so confirm
   // terms in the PartnerStack dashboard before quoting a commission anywhere. NOTE: this entry overrides the Lindy TOOLS entry in
@@ -62,10 +61,10 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   // The four domain/hosting/SSL programs are meant for one combined "launch your site" article.
   // BigRock now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['bigrock']).
   'domain-com': 'https://domain.mno8.net/vDqz6v?utm_source=domain-com&utm_medium=affiliate', // mno8.net — now covered by scripts/check-affiliate-links.mjs
-  'network-solutions': 'https://network-solutions.7eer.net/yZQg63?utm_source=network-solutions&utm_medium=affiliate',
+  // Network Solutions now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['network-solutions']).
   ssls: 'https://ssls.sjv.io/m4VRyM?utm_source=ssls&utm_medium=affiliate',
   // Added Sep 30 2026 (Impact). SITE123 is positioned as a simple drag-and-drop builder, not an AI builder.
-  site123: 'https://site123ltd.sjv.io/enPqkZ?utm_source=site123&utm_medium=affiliate',
+  // SITE123 now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['site123']).
   // GitMind now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['gitmind']).
   // Added Oct 8 2026 (Impact). Esimatic is a travel eSIM app, off-niche for an AI tools site: use only as a
   // contextual mention (e.g. India / remote-work content), not as a tool page or comparison.

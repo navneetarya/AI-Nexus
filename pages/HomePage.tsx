@@ -125,6 +125,7 @@ const AFFILIATE_SLUGS = [
   'readdy', 'gitmind', 'retouch4me', 'wordtosite', 'signnow',
   // Added Oct 16 2026: Impact tools that now have review pages
   'spaceship', 'bigrock',
+  'site123', 'network-solutions', 'perplexity-comet',
   'tidio', 'soundraw',
   'vidiq', 'appsumo',
   // Added Oct 14 2026: Impact (pxf.io) tools the disclosure banner was missing for, found once validate_critical_fixes.py learned the pxf.io domain

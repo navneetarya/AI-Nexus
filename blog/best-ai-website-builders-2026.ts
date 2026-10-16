@@ -191,7 +191,7 @@ const post: BlogPost = {
 </div>
 
 <h3>A simple, non-AI alternative: SITE123</h3>
-<p>Not everyone needs AI generation. SITE123 is a plain drag-and-drop website builder that suits a first personal or small-business site. You pick a layout, add your content, and publish.</p>
+<p>Not everyone needs AI generation. <a href="/tools/site123/" style="color:var(--a1);font-weight:600;">SITE123</a> is a plain drag-and-drop website builder that suits a first personal or small-business site. You pick a layout, add your content, and publish.</p>
 <p>The free plan runs on a SITE123 subdomain with 250MB of storage and bandwidth. Premium is $5.80/month (checked on SITE123's own pricing page) and includes a domain free for the first year, 3GB storage and bandwidth, and removal of the SITE123 tag. All premium plans carry a 14-day money-back guarantee.</p>
 <p>Choose SITE123 when you want a simple site with few decisions to make. Skip it if you want AI to write the first draft for you. Wix, Durable and Wegic all do that — see our <a href="/compare/site123-vs-wix/" style="color:var(--a1);font-weight:600;">SITE123 vs Wix comparison</a> for the full price and feature breakdown.</p>
 <div style="text-align:center;margin:20px 0">

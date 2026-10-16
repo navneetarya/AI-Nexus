@@ -87,7 +87,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> - we may earn a commission at no extra cost to you.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Spaceship has the lowest long-term .com cost here at $10.18 a year to renew. Domain.com renews at $22.99 and Network Solutions at $32.99. BigRock is the rupee-priced option for India. SSLs.com matters only if your host does not already include HTTPS.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Spaceship has the lowest long-term .com cost here at $10.18 a year to renew. Domain.com renews at $22.99 and <a href="/tools/network-solutions/">Network Solutions</a> at $32.99. BigRock is the rupee-priced option for India. SSLs.com matters only if your host does not already include HTTPS.</p>
 </div>
 
 <h2>The short answer: the renewal price decides the bill</h2>
