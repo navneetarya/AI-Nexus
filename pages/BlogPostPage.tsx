@@ -55,6 +55,7 @@ const BLOG_RELATED_TOOLS: Record<string, string[]> = {
   'fastest-growing-ai-startups-2026':                ['perplexity', 'replit', 'taskade'],
   'cheapest-ai-coding-tools-2026':                   ['replit', 'notion-ai', 'taskade'],
   'ai-ecosystem-growth-report-2026':                 ['grammarly', 'canva-ai', 'leonardo-ai'],
+  'best-ai-recruitment-tools-2026':                  ['juicebox'],
 };
 
 // ── Related blog posts (blog → blog cross-linking) ──────────────────────────

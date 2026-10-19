@@ -2363,6 +2363,59 @@ export const TOOLS: Tool[] = [
     ],
   },
 
+  // HR / recruiting — added October 2026 (feeds the best-ai-recruitment-tools-2026 blog post)
+  {
+    id: 'hr1', slug: 'juicebox',
+    name: 'Juicebox', tagline: 'AI talent-sourcing search: describe the candidate in plain English',
+    description: 'Juicebox (also sold as PeopleGPT) is an AI recruiting platform built for sourcing candidates. Recruiters describe the person they need in plain English and Juicebox returns a ranked list of matching profiles, with a short explanation of why each one fits. Pricing is per seat: a Free plan, Starter at $99 to $119 a month, Growth at $179 to $199 a month, and custom Business pricing, plus an optional $199 a month Agents add-on that runs searches in the background. It finds candidates; it is not an applicant tracking system.',
+    category: Category.PRODUCTIVITY, affiliateLink: 'https://juicebox.ai/?via=c6add3', // tracked referral link — moved here from SUPPLEMENTARY_LINKS in lib/affiliate-links.ts now that Juicebox has a tool page
+    iconName: 'Users', color: '#7c3aed', accentColor: '#6d28d9',
+    userBadge: 'Best for AI sourcing', pricing: 'Free + $99–$199/seat/month', bestFor: 'Recruiters and founders who need to source passive candidates for hard-to-fill roles without writing Boolean strings',
+    notForYou: 'Teams that only need to manage inbound applications — Juicebox sources people, it does not track applicants, so an ATS such as Greenhouse, Lever or Ashby is the right first purchase. Also reconsider if you hire in high volume on a tight budget: contact credits and exports are capped per seat (Starter includes 500 of each per month), and an Agents add-on at $199 each can nearly triple a Starter seat. ATS and CRM integration is listed only on the custom Business plan.',
+    lastTestedISO: '2026-10-19',
+    metaDescription: 'Juicebox 2026: free plan, $99–$119 Starter and $179–$199 Growth seats reviewed. See who AI recruiting search fits and where you still need an ATS.',
+    researchSources: {
+      reddit: 'Not sampled — this review relies on Juicebox\'s own pricing page and feature descriptions plus a third-party pricing comparison; no review-site rating is cited',
+      lastVerified: '2026-10-19',
+    },
+    reviewType: 'research-based',
+    indiaPricing: {
+      free: 'Free plan available (limited searches, 5 one-off contact credits, no exports)',
+      paid: 'Starter about ₹8,200–₹9,900/month per seat (at $99–$119/month, ₹83/USD) + GST where applicable',
+      note: 'Prices are listed in USD. Confirm INR billing, UPI support and GST treatment at checkout — not verified as of October 2026. Candidate coverage is strongest in major metro areas.',
+    },
+    updateLog: [
+      { date: 'October 2026', note: 'Tool entry created. Pricing taken from Juicebox\'s own pricing page: Free $0, Starter $99–$119, Growth $179–$199 per seat per month, Business custom (annual only), Agents add-on $199 per agent per month. The page shows two prices per paid plan without labelling billing terms. The previous ~$79 Starter figure used in the recruitment roundup is retired.' },
+    ],
+    features: [
+      'Natural-language candidate search — describe the person you need instead of writing Boolean strings',
+      'Ranked results with a reasoning layer that explains why each profile matched',
+      'Juicebox Agents that run searches in the background, with auto-email or auto-shortlist options ($199 per agent per month)',
+      'Email outreach with AI templates and connected mailboxes (1 on Starter, 3 per seat on Growth, 6 per user on Business)',
+      'Contact and export credits that cap monthly reach (500 each on Starter, 1,500 each on Growth)',
+      'ATS and CRM integration, usage analytics and priority support on the custom Business plan',
+    ],
+    pros: [
+      'Plain-language search surfaces passive candidates that keyword and Boolean queries tend to miss',
+      'A real Free plan lets you judge result quality before paying',
+      'Self-serve per-seat pricing from $99 a month, well below sales-led enterprise sourcing contracts',
+      'Draws on sources beyond LinkedIn, which helps for technical roles where GitHub activity is a signal',
+    ],
+    cons: [
+      'Sourcing only — no applicant tracking, so most teams still need an ATS alongside it',
+      'Contact and export credits are capped per seat, so high-volume outreach gets expensive quickly',
+      'The $199 per agent Agents add-on can nearly triple the cost of a Starter seat',
+      'ATS and CRM integration is listed only on the custom Business plan',
+      'The pricing page shows two price points per paid plan without saying which is monthly or annual billing',
+    ],
+    pricingBreakdown: [
+      { tier: 'Free', price: '$0', highlight: 'Limited searches · AI email templates · 1 agent set up · 1 seat · 5 one-off contact credits · no exports' },
+      { tier: 'Starter', price: '$99–$119/seat/month', highlight: 'Unlimited searches · 500 contact credits and 500 exports/month · 1 seat · 1 mailbox' },
+      { tier: 'Growth', price: '$179–$199/seat/month', highlight: 'Starter plus talent insights · 1,500 contact credits and 1,500 exports per seat · up to 5 seats · 3 mailboxes per seat' },
+      { tier: 'Business', price: 'Custom (annual only)', highlight: 'Growth plus ATS/CRM integration · unlimited contact credits · usage analytics · priority support · 2,250 exports per seat' },
+    ],
+  },
+
   // PRODUCTIVITY (automation platforms — added August 2026)
   {
     id: 'p9', slug: 'n8n',
@@ -3480,6 +3533,14 @@ Object.assign(TOOL_FAQS, {
     { q: 'Is Gumloop good for non-technical users?', a: 'Yes for straightforward flows — reviewers consistently describe the drag-and-drop canvas as more pleasant and intuitive than older tools like n8n. The learning curve shows up once workflows get more complex: understanding all the node types and conditional logic can take a few weeks to feel comfortable with, per G2 and Reddit feedback.' },
     { q: 'How mature is Gumloop compared to Relevance AI and Lindy?', a: 'Gumloop is the newest and least-reviewed of the three, with just 6 verified G2 reviews (4.8/5) as of mid-2026 — a genuinely good early signal, but too small a sample to treat with the same confidence as Lindy\'s 170+ reviews. It\'s also the smallest by native integration count. What it offers in exchange is the strongest fit of the three for structured, multi-stage AI data pipelines.' },
   ],
+  // Added October 2026 — HR / recruiting
+  juicebox: [
+    { q: 'Is Juicebox free?', a: 'Yes, there is a Free plan at $0 with limited searches, AI email templates, one Juicebox Agent set up, 1 seat and 5 one-off contact credits. Exports are not included on Free. Paid plans start at $99 to $119 per seat per month (Starter).' },
+    { q: 'How much does Juicebox cost?', a: 'As of October 2026, Juicebox lists Starter at $99 to $119 per seat per month, Growth at $179 to $199 per seat per month, and custom annual-only Business pricing. Juicebox Agents are an extra $199 per agent per month. The page shows two prices per paid plan without labelling billing terms, so confirm at checkout.' },
+    { q: 'Is Juicebox the same as PeopleGPT?', a: 'Yes. Juicebox is sold under the PeopleGPT brand name for its natural-language candidate search. It is the same product, not a separate tool.' },
+    { q: 'Does Juicebox replace an applicant tracking system?', a: 'No. Juicebox sources and contacts candidates. It does not manage applications, interview stages or offers, so most teams pair it with an ATS such as Greenhouse, Lever, Ashby or Manatal. ATS and CRM integration is listed on the custom Business plan.' },
+    { q: 'What limits does Juicebox put on outreach?', a: 'Credits. Starter includes 500 contact credits and 500 export credits per month, and Growth includes 1,500 of each per seat. Business offers unlimited contact credits with an export limit of 2,250 per seat per month. Heavy outreach teams should model credit use before choosing a plan.' },
+  ],
   // Added August 2026 — n8n / Make / Zapier automation cluster
   n8n: [
     { q: 'Is n8n really free?', a: 'Yes, if you self-host. The Community Edition is free with no execution limit and no time cap — you run it on your own server, and a $5/month VPS is enough for moderate use. The tradeoff is that server administration (updates, uptime, Docker/Kubernetes setup) becomes your responsibility. n8n Cloud, the managed alternative that removes that burden, starts at roughly €20/month.' },
@@ -3578,6 +3639,12 @@ export const TOOL_COMPARISONS: Record<string, Array<{
     { name: 'n8n', price: 'Free (self-host)–$50/mo', freeplan: true, bestFor: 'Self-hosted, complex branching logic', ourPick: false },
     { name: 'Make', price: 'Free–$29/mo', freeplan: true, bestFor: 'Cheaper visual automation, less AI-native', ourPick: false },
   ],
+  juicebox: [
+    { name: 'Juicebox', price: 'Free–$199/seat/mo', freeplan: true, bestFor: 'Plain-language candidate sourcing', ourPick: true },
+    { name: 'SeekOut', price: 'Custom (sales-led)', freeplan: false, bestFor: 'Deep talent intelligence and diversity sourcing', ourPick: false },
+    { name: 'LinkedIn Recruiter', price: 'Quote-based', freeplan: false, bestFor: 'Largest network, InMail and in-platform outreach', ourPick: false },
+    { name: 'Manatal', price: 'From $19/user/mo', freeplan: false, bestFor: 'Affordable ATS with AI candidate scoring (not a sourcing engine)', ourPick: false },
+  ],
   n8n: [
     { name: 'n8n', price: 'Free (self-host)–€50/mo', freeplan: true, bestFor: 'AI-native, execution-based pricing, deepest MCP support', ourPick: true },
     { name: 'Make', price: 'Free–$9+/mo', freeplan: true, bestFor: 'Best power-to-price for branching workflows', ourPick: false },
@@ -3653,6 +3720,7 @@ export const TOOL_KEYWORDS: Record<string, string[]> = {
   'relevance-ai': ['relevance ai review', 'relevance ai vs lindy', 'relevance ai vs gumloop', 'best multi agent ai builder 2026', 'relevance ai pricing 2026'],
   lindy: ['lindy ai review', 'lindy ai vs relevance ai', 'lindy free plan 2026', 'best ai executive assistant 2026', 'lindy ai pricing'],
   gumloop: ['gumloop review', 'gumloop vs zapier', 'gumloop vs relevance ai', 'best ai workflow automation 2026', 'gumloop pricing 2026'],
+  juicebox: ['juicebox review', 'juicebox ai pricing', 'peoplegpt review', 'juicebox vs linkedin recruiter', 'best ai recruiting sourcing tool 2026', 'is juicebox free'],
   n8n: ['n8n review', 'n8n vs zapier', 'n8n vs make', 'n8n pricing 2026', 'n8n self hosted free', 'is n8n free'],
   make: ['make.com review', 'make vs zapier', 'make vs n8n', 'make.com pricing 2026', 'integromat review'],
   zapier: ['zapier review', 'zapier vs make', 'zapier vs n8n', 'zapier pricing 2026', 'zapier task pricing explained'],

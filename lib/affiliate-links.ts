@@ -42,7 +42,7 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   'relevance-ai': 'https://relevanceai.com/?via=navneet',
   n8n: 'https://n8n.io/', // TODO: n8n has no public affiliate program as of 2026
   // Tidio now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['tidio']).
-  juicebox: 'https://juicebox.ai/?via=c6add3',
+  // Juicebox now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['juicebox']).
   // vidIQ now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['vidiq']).
   // AppSumo now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['appsumo']).
   // PixVerse has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['pixverse']).

@@ -14,7 +14,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Recruitment Tools 2026: 8 Platforms for Smarter Hiring',
   metaDescription: 'Independent analysis of 8 AI recruitment platforms in 2026 — sourcing, ATS, screening, interview intelligence. Pricing and INR costs compared by team size.',
   datePublished: '2026-06-26',
-  dateModified: '2026-10-15',
+  dateModified: '2026-10-19',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '11 min read',
@@ -45,7 +45,7 @@ const post: BlogPost = {
     },
     {
       q: 'How much does an AI recruitment tool cost for a small business?',
-      a: 'Manatal is the most affordable full AI ATS at $19/month per user, with a 14-day free trial and no contract minimums, making it the practical starting point for teams hiring under 25 roles a year. Sourcing tools like Juicebox add roughly $79/month once you outgrow the free tier. Enterprise platforms like Greenhouse, Lever, HireVue, and SeekOut all require sales-led annual contracts starting in the $5,000–$30,000/year range, which is out of reach for most SMBs.',
+      a: 'Manatal is the most affordable full AI ATS at $19/month per user, with a 14-day free trial and no contract minimums, making it the practical starting point for teams hiring under 25 roles a year. Sourcing tools like Juicebox add from about $99/month per seat (Starter) once you outgrow the free tier. Enterprise platforms like Greenhouse, Lever, HireVue, and SeekOut all require sales-led annual contracts starting in the $5,000–$30,000/year range, which is out of reach for most SMBs.',
     },
     {
       q: 'Which AI recruitment tool is best for high-volume hiring?',
@@ -131,13 +131,15 @@ const post: BlogPost = {
     <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Key Features</th>
   </tr></thead>
   <tbody>
-    <tr style="border-bottom:1px solid rgba(13,148,136,.08);"><td style="padding:10px 14px;"><a href="${AFFILIATE_LINKS['juicebox']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Juicebox</a> Free</td><td style="padding:10px 14px;">$0</td><td style="padding:10px 14px;">Limited searches, profile previews: sufficient to evaluate quality before committing</td></tr>
-    <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);"><td style="padding:10px 14px;">Starter</td><td style="padding:10px 14px;">~$79/month</td><td style="padding:10px 14px;">Unlimited NL searches, 200 candidate exports/month, outreach sequencing</td></tr>
-    <tr><td style="padding:10px 14px;">Pro / Team</td><td style="padding:10px 14px;">Custom</td><td style="padding:10px 14px;">ATS integrations (Greenhouse, Lever, Ashby), bulk exports, team seat management</td></tr>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);"><td style="padding:10px 14px;"><a href="${AFFILIATE_LINKS['juicebox']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Juicebox</a> Free</td><td style="padding:10px 14px;">$0</td><td style="padding:10px 14px;">Limited searches, AI email templates, 5 one-off contact credits, no exports: enough to judge result quality before paying</td></tr>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);"><td style="padding:10px 14px;">Starter</td><td style="padding:10px 14px;">$99–$119/seat/month</td><td style="padding:10px 14px;">Unlimited searches, 500 contact credits and 500 exports/month, 1 mailbox</td></tr>
+    <tr style="border-bottom:1px solid rgba(13,148,136,.08);"><td style="padding:10px 14px;">Growth</td><td style="padding:10px 14px;">$179–$199/seat/month</td><td style="padding:10px 14px;">1,500 contact credits and 1,500 exports per seat, up to 5 seats, 3 mailboxes per seat</td></tr>
+    <tr><td style="padding:10px 14px;">Business</td><td style="padding:10px 14px;">Custom (annual only)</td><td style="padding:10px 14px;">ATS/CRM integration, unlimited contact credits, usage analytics, priority support</td></tr>
   </tbody>
 </table>
 </div>
-<p><strong>India pricing note:</strong> Juicebox Starter costs about ₹6,600/month. There's no local payment gateway. You need a USD card or international Razorpay. Candidate coverage is strong in Tier 1 cities — Bengaluru, Hyderabad, Mumbai, Pune, Delhi NCR. Tier 2 city coverage is thinner than LinkedIn Recruiter's.</p>
+<p>Juicebox also lists Agents, which run searches in the background, as a $199 per agent per month add-on. The pricing page shows two prices for each paid plan, so confirm the figure at checkout. Read the full <a href="/tools/juicebox/">Juicebox review</a> for plan limits, pros and cons, and who should skip it.</p>
+<p><strong>India pricing note:</strong> Juicebox Starter costs about ₹8,200–₹9,900/month per seat at current USD prices. There's no local payment gateway confirmed. You need a USD card or international Razorpay. Candidate coverage is strong in Tier 1 cities — Bengaluru, Hyderabad, Mumbai, Pune, Delhi NCR. Tier 2 city coverage is thinner than LinkedIn Recruiter's.</p>
 <p><strong>Best for:</strong> Technical and niche roles where Boolean search quality is now the bottleneck. Engineering, data science, and product hiring at firms with 5–30 open roles per quarter. <strong>Apply affiliate:</strong> <a href="${AFFILIATE_LINKS['juicebox']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Juicebox (affiliate link)</a>.</p>
 
 <h3>2. Greenhouse: Best Enterprise ATS with AI Screening</h3>

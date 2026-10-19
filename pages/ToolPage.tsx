@@ -55,6 +55,8 @@ const AFFILIATE_SLUGS = [
   // is pending (self-serve program at n8n.io/affiliates, 30%/12mo). Zapier has
   // no standard blogger affiliate program — neither is in this list yet.
   'make',
+  // Added October 2026 — Juicebox has a live tracked referral link (?via=c6add3).
+  'juicebox',
 ];
 
 const CAT_ACCENT: Record<string, 'a1'|'a2'> = {
@@ -238,6 +240,26 @@ The most consistent limitation is a real learning curve once workflows move past
     relatedBlogSlugs: ['relevance-ai-vs-lindy-vs-gumloop-2026', 'best-no-code-ai-automation-tools-2026'],
     verdict: "Gumloop is the strongest of the major AI agent/automation builders for structured, multi-stage data pipelines — scraping, enrichment, and structured output are exactly what its node canvas is built for, and the free tier (5,000 credits/month) is genuinely usable rather than a demo. Early reviews are strongly positive but the sample is thin (6 G2 reviews), so treat this as a promising early signal rather than a settled verdict. Budget real time to learn the node system past simple flows, and watch AI-heavy or enrichment nodes — they burn through credits faster than the headline free-tier number suggests. Skip it if you want a conversational assistant; Lindy is built for that instead.",
     rating: 4.8, lastTested: "August 2026", lastTestedISO: "2026-08-22", datePublished: "2026-08-22", timeUsed: "Researched Aug 2026",
+  },
+  // Added October 2026 — HR / recruiting (feeds the best-ai-recruitment-tools-2026 blog post)
+  juicebox: {
+    whatIs: "Juicebox, also sold as PeopleGPT, is an AI recruiting platform that finds candidates from a plain-English description. Recruiters type who they need, and Juicebox returns a ranked list of matching profiles with an explanation of why each fits. It handles sourcing and email outreach, not applicant tracking. A Free plan exists, and paid per-seat plans start at $99 a month.",
+    whoIsItFor: "Recruiters, talent partners and founders hiring for roles that are hard to fill through job posts, especially technical roles where GitHub and open-source activity are useful signals. A good fit for teams that have outgrown Boolean search on LinkedIn, and for small teams that want self-serve pricing instead of a sales-led enterprise contract.",
+    whoShouldSkip: "Teams that only need to manage inbound applications — Juicebox sources people, it does not track applicants, so an ATS such as Greenhouse, Lever or Ashby is the right first purchase. Also reconsider if you hire in high volume on a tight budget: contact credits and exports are capped per seat (Starter includes 500 of each per month), and an Agents add-on at $199 each can nearly triple a Starter seat. ATS and CRM integration is listed only on the custom Business plan.",
+    myTake: "This review is based on Juicebox's own pricing page (checked October 2026), its published feature descriptions, and third-party pricing comparisons. It is a research-based review, not a hands-on test, and it does not cite a review-site rating because no verified sample was collected.\n\nThe core idea is sound: searching in plain language and getting a ranked list with reasons is a better fit for passive-candidate sourcing than building Boolean strings, and the Free plan makes the claim easy to test. The cost model is where buyers should be careful. Each paid seat has monthly contact and export credits, and the $199 per agent Agents add-on stacks on top, so a heavily automated Starter seat costs far more than the headline $99.\n\nNet effect: strong for sourcing, but plan for an ATS next to it, and start on Free to see whether the results match the roles you actually hire for.",
+    useCases: [
+      "Sourcing passive candidates for senior or niche roles that do not respond to job posts",
+      "Technical hiring where GitHub and open-source work are meaningful signals",
+      "Replacing long Boolean search strings on LinkedIn with a plain-language brief",
+      "Background candidate discovery for a standing role using a Juicebox Agent",
+      "Small teams and founders who want self-serve per-seat pricing rather than an enterprise sourcing contract",
+    ],
+    freePlanDetails: "Juicebox's Free plan gives limited searches, AI email templates, one Juicebox Agent set up, 1 seat and 5 one-off contact credits, with no exports. It is enough to run real searches and judge result quality for the roles you hire for, but not to build a pipeline: without exports you cannot move candidates into another tool, and 5 contact credits cover only a handful of people. Paid plans unlock unlimited searches, monthly contact and export credits, and outreach mailboxes.",
+    pricingSection: "**Does Juicebox have a free plan?** Yes — Free is $0 with limited searches, AI email templates, one agent set up, 1 seat, 5 one-off contact credits and no exports.\n\n**Juicebox pricing (checked October 2026, per seat per month):**\n- Free: $0.\n- Starter: $99 to $119 — unlimited searches, 500 contact credits and 500 export credits a month, 1 seat, 1 mailbox.\n- Growth: $179 to $199 — adds talent insights, 1,500 contact credits and 1,500 exports per seat, up to 5 seats, 3 mailboxes per seat.\n- Business: custom, annual only — adds ATS/CRM integration, unlimited contact credits, usage analytics, priority support.\n- Juicebox Agents: $199 per agent per month.\n\nThe pricing page shows two price points for each paid plan without labelling which is monthly and which is annual billing, so confirm the figure at checkout.",
+    researchSummary: "This section documents Juicebox's own pricing page (checked October 2026) and its published feature descriptions, cross-checked against a third-party pricing comparison. No review-site rating is cited because a verified sample was not collected.\n\nAcross those sources the consistent points are: natural-language search with ranked, explained results; a Free plan for testing; per-seat plans with monthly contact and export credits; and an Agents add-on for background searching. The consistent limitations are that Juicebox does not track applicants, that credits cap monthly reach, that add-ons raise the real per-seat cost, and that ATS and CRM integration sits on the custom Business plan.",
+    relatedBlogSlugs: ['best-ai-recruitment-tools-2026'],
+    verdict: "Juicebox is a strong choice for sourcing passive candidates in plain language, and the Free plan makes it low-risk to test. Treat it as the top of the hiring funnel rather than a full recruiting stack: pair it with an ATS, and budget for credits and any Agents add-on before choosing a plan.",
+    rating: 4.3, lastTested: "October 2026", lastTestedISO: "2026-10-19", datePublished: "2026-10-19", timeUsed: "Researched Oct 2026",
   },
   // Added August 2026 — n8n / Make / Zapier automation cluster (feeds the n8n-vs-make-vs-zapier-2026 blog post)
   n8n: {

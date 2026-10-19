@@ -720,6 +720,18 @@ const TOOLS = [
     reviewBody: "Gumloop is a drag-and-drop, node-based automation canvas — closer to an AI-native successor to Zapier or Make than to a chat-based assistant. AI calls (GPT, Claude, Gemini) are first-class node types alongside scraping, API calls, and data transforms, making it the strongest of the major agent/automation builders for structured, multi-stage work: scrape a source, summarize with AI, pull structured fields, write to a database. The Free plan (5,000 credits/month, 1 seat, 1 active trigger, 2 concurrent runs) is genuinely usable for real workflows, and Pro at $37/month adds 20,000+ credits, unlimited seats, and one hosted MCP server for standardized external-tool access without a dedicated connector per app. Reviews are strongly positive but the sample is thin — Gumloop holds 4.8/5 from just 6 verified G2 reviews and 4.8/5 from 144 Product Hunt reviews as of August 2026 — with reviewers consistently praising the visual builder as more intuitive than older tools like n8n, alongside fast, responsive support. The recurring criticism is a genuine learning curve once workflows move past simple flows: understanding the full node system and conditional logic takes real time, often described as a few weeks. A more specific cost pattern: AI-heavy and enrichment nodes (roughly 60 credits per contact) consume credits considerably faster than simple data-moving steps, meaning the 5,000-credit free-tier headline is optimistic for AI-heavy use cases specifically — bringing your own API key on Pro cuts that cost by roughly 95%. Gumloop is the right pick for teams whose AI job looks like ETL — scraping, enrichment, structured output — rather than a conversation; for that, it's a stronger fit than Lindy's assistant model or Relevance AI's multi-agent framework, though it has the smallest native integration count (roughly 125 apps) of the three.",
   },
 
+  // Added October 2026 — Juicebox (HR / recruiting). Without this entry /tools/juicebox/ would 404 to Googlebot.
+  {
+    slug: 'juicebox', name: 'Juicebox', category: 'Productivity',
+    tagline: 'AI talent-sourcing search: describe the candidate in plain English',
+    description: 'Juicebox (also sold as PeopleGPT) is an AI recruiting platform built for sourcing candidates. Recruiters describe the person they need in plain English and Juicebox returns a ranked list of matching profiles, with a short explanation of why each one fits. Pricing is per seat: a Free plan, Starter at $99 to $119 a month, Growth at $179 to $199 a month, and custom Business pricing, plus an optional $199 a month Agents add-on that runs searches in the background. It finds candidates; it is not an applicant tracking system.',
+    pricing: 'Free + $99–$199/seat/month', bestFor: 'Recruiters and founders who need to source passive candidates for hard-to-fill roles without writing Boolean strings',
+    rating: 4.3, lastTested: 'October 2026',
+    seoTitle: 'Juicebox Review 2026: Free Plan vs $99/mo Starter — Worth It? | AI Nexus',
+    metaDescription: 'Juicebox 2026: free plan, $99–$119 Starter and $179–$199 Growth seats reviewed. See who AI recruiting search fits and where you still need an ATS.',
+    reviewBody: "Juicebox, also sold under the PeopleGPT name, is an AI recruiting platform focused on one job: finding candidates. Instead of building Boolean strings, a recruiter types a description of the ideal person, for example a senior Golang engineer in Bengaluru with fintech experience, and Juicebox returns a ranked list with a reasoning layer that explains why each profile matched. Candidate data is drawn from public professional sources such as LinkedIn and GitHub, which is why it is particularly useful for technical roles where open-source work is a signal. On Juicebox's own pricing page the Free plan gives limited searches, AI email templates, one Juicebox Agent set up and 5 one-off contact credits, with no exports. Starter is listed at $99 to $119 per seat a month with unlimited searches, 500 contact credits and 500 export credits a month, and one mailbox. Growth is $179 to $199 per seat a month with 1,500 contact credits and 1,500 exports per seat, up to 5 seats and 3 mailboxes per seat. Business is custom, annual only, and adds ATS and CRM integration, unlimited contact credits and priority support. Juicebox Agents, which run searches in the background and can auto-email or auto-shortlist, are $199 per agent per month. The limits to know about: Juicebox sits at the top of the funnel and does not replace an ATS, credits cap monthly reach, and the pricing page shows two price points per paid plan without labelling billing terms, so confirm the exact figure at checkout. Verdict: a strong choice for sourcing passive candidates, best started on the Free plan to judge result quality before paying.",
+  },
+
   // PRODUCTIVITY — automation platforms, added August 2026. Same 404-to-Googlebot
   // risk as the agent-builder cluster above if these entries are skipped.
   {
@@ -5777,6 +5789,11 @@ const RELATED_LINKS = {
     ['/tools/relevance-ai/', 'Relevance AI Review'],
     ['/tools/lindy/', 'Lindy Review'],
     ['/blog/best-no-code-ai-automation-tools-2026/', 'Best No-Code AI Automation Tools 2026'],
+  ],
+  'juicebox': [
+    ['/blog/best-ai-recruitment-tools-2026/', 'Best AI Recruitment Tools 2026'],
+    ['/blog/best-ai-tools-for-startups-2026/', 'Best AI Tools for Startups 2026'],
+    ['/blog/best-ai-agents-for-small-business-2026/', 'Best AI Agents for Small Business 2026'],
   ],
   'n8n': [
     ['/blog/n8n-vs-make-vs-zapier-2026/', 'n8n vs Make vs Zapier: Full Comparison'],
