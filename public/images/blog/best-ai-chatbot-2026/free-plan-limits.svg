@@ -1,0 +1,20 @@
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How quickly each free AI chatbot plan hits its limit: Gemini and Perplexity most usable, ChatGPT capped, Claude limited daily, Grok tightest">
+  <rect x="0" y="0" width="640" height="300" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="0" y="0" width="10" height="300" rx="5" fill="#0d9488"/>
+  <text x="28" y="40" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="800" fill="#111827">Free plans: how fast you hit the wall</text>
+  <text x="28" y="62" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#4b5563">Grouped by how usable each free tier is for everyday questions</text>
+  <g font-family="Arial,Helvetica,sans-serif" font-size="15">
+    <rect x="28" y="82" width="584" height="44" rx="10" fill="#ccfbf1"/>
+    <text x="44" y="109" font-weight="700" fill="#115e59">Most usable</text>
+    <text x="180" y="109" fill="#134e4a">Gemini, Perplexity</text>
+    <rect x="28" y="134" width="584" height="44" rx="10" fill="#fef9c3"/>
+    <text x="44" y="161" font-weight="700" fill="#854d0e">Capped</text>
+    <text x="180" y="161" fill="#713f12">ChatGPT Free (may show ads)</text>
+    <rect x="28" y="186" width="584" height="44" rx="10" fill="#ffedd5"/>
+    <text x="44" y="213" font-weight="700" fill="#9a3412">Daily limit</text>
+    <text x="180" y="213" fill="#7c2d12">Claude Free (limited by daily usage)</text>
+    <rect x="28" y="238" width="584" height="44" rx="10" fill="#fee2e2"/>
+    <text x="44" y="265" font-weight="700" fill="#991b1b">Tightest</text>
+    <text x="180" y="265" fill="#7f1d1d">Grok Free (small prompt cap)</text>
+  </g>
+</svg>

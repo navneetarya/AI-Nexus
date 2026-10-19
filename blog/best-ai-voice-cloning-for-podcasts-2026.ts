@@ -143,6 +143,8 @@ const post: BlogPost = {
 
 <p>For a weekly show with a scripted intro, ElevenLabs Starter is usually the cheapest route that includes commercial use. Descript costs more per month, but it replaces a separate editor if you would use it for editing anyway. Allowances come from third-party reviews, so confirm them on each pricing page.</p>
 
+<img src="/images/blog/best-ai-voice-cloning-for-podcasts-2026/yearly-cost.svg" alt="Bar chart of yearly cost for ElevenLabs Starter and Creator and Descript Hobbyist and Creator voice cloning setups for podcasts" width="640" height="290" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:8px 0 24px;border-radius:12px;" />
+
 <h2>How to set up a cloned intro in five steps</h2>
 
 <ol>

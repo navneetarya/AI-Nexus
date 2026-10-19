@@ -133,7 +133,7 @@ const post: BlogPost = {
 </div>
 <h2>Claude: Best for Writing and Analysis</h2>
 <p>Anthropic's Claude is the chatbot reviewers most often single out for long-form writing. It tends to produce flowing prose where other chatbots default to bullet points, and it is popular for working through long documents and code.</p>
-<p>Pro costs $20 a month, or about $17 a month on annual billing. Max at $100 or $200 adds 5x or 20x the usage, not extra features. The paid plans include Claude Code for terminal-based coding. A common complaint in user reviews is that Pro usage limits run out quickly on heavy sessions, which is the usual reason people step up to Max.</p>
+<p>Pro costs $20 a month, or about $17 a month on annual billing. Max at $100 or $200 adds 5x or 20x the usage, not extra features. The paid plans include <a href="/tools/claude-code/">Claude Code</a> for terminal-based coding. A common complaint in user reviews is that Pro usage limits run out quickly on heavy sessions, which is the usual reason people step up to Max.</p>
 <p><strong>Best for:</strong> Content creators, bloggers, copywriters, analysts, and developers who want a strong coding assistant.</p>
 <p><strong>Think twice if:</strong> you need built-in live social data or a strict citation trail for every answer.</p>
 <div style="margin:14px 0 24px;">
@@ -172,6 +172,8 @@ const post: BlogPost = {
 <h2>Free Plans Compared</h2>
 <p>You can get real work done without paying. Gemini and Perplexity have the most usable free plans for everyday questions. ChatGPT Free is capped and may show ads. Claude Free is limited by daily usage. Grok Free is the tightest, with a small prompt cap.</p>
 <p>The practical test is how fast you hit the wall. If you ask a few questions a day, free is enough. If you work with the chatbot for hours, expect to upgrade within a week.</p>
+
+<img src="/images/blog/best-ai-chatbot-2026/free-plan-limits.svg" alt="Chart grouping free AI chatbot plans by how fast you hit the limit: Gemini and Perplexity most usable, ChatGPT capped, Claude daily limit, Grok tightest" width="640" height="300" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:8px 0 24px;border-radius:12px;" />
 
 <h2>What a Chatbot Stack Costs</h2>
 <p>Many heavy users run two tools rather than one. Here is how the common budgets break down.</p>

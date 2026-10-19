@@ -1,0 +1,17 @@
+<svg viewBox="0 0 640 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yearly cost range of podcast voice cloning setups: ElevenLabs Starter $60 to $72, Creator $220 to $264, Descript Hobbyist $192 to $288, Creator $288 to $420">
+  <rect x="0" y="0" width="640" height="290" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="0" y="0" width="10" height="290" rx="5" fill="#0d9488"/>
+  <text x="28" y="38" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="800" fill="#111827">Yearly cost of a cloning setup</text>
+  <text x="28" y="58" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#4b5563">Dark bar = annual billing, light bar = extra paid on monthly billing. List prices, October 2026</text>
+  <g font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#111827">
+    <line x1="220" y1="76" x2="220" y2="262" stroke="#e5e7eb"/>
+    <text x="28" y="108" font-weight="600">ElevenLabs Starter</text>
+    <rect x="220" y="92" width="24" height="22" rx="4" fill="#0d9488"/><rect x="244" y="92" width="4.8" height="22" rx="4" fill="#5eead4"/><text x="258.8" y="108">$60 to $72</text>
+    <text x="28" y="152" font-weight="600">ElevenLabs Creator</text>
+    <rect x="220" y="136" width="88" height="22" rx="4" fill="#0d9488"/><rect x="308" y="136" width="17.6" height="22" rx="4" fill="#5eead4"/><text x="335.6" y="152">$220 to $264</text>
+    <text x="28" y="196" font-weight="600">Descript Hobbyist</text>
+    <rect x="220" y="180" width="76.8" height="22" rx="4" fill="#2563eb"/><rect x="296.8" y="180" width="38.4" height="22" rx="4" fill="#93c5fd"/><text x="345.2" y="196">$192 to $288</text>
+    <text x="28" y="240" font-weight="600">Descript Creator</text>
+    <rect x="220" y="224" width="115.2" height="22" rx="4" fill="#2563eb"/><rect x="335.2" y="224" width="52.8" height="22" rx="4" fill="#93c5fd"/><text x="398" y="240">$288 to $420</text>
+  </g>
+</svg>
