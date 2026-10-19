@@ -89,9 +89,9 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "best-ai-voice-cloning-for-podcasts-2026",
     "title": "Best AI Voice Cloning for Podcasts 2026: Should You Clone Your Voice?",
     "seoTitle": "Best AI Voice Cloning for Podcasts 2026",
-    "metaDescription": "AI voice cloning for podcasts in 2026: the 3 jobs it actually solves for a show, what ElevenLabs and Descript Overdub cost, and when cloning is worth it.",
+    "metaDescription": "AI voice cloning for podcasts in 2026: the 3 jobs it actually solves for a show, what ElevenLabs and Descript cost, and when cloning is worth it.",
     "datePublished": "2026-09-26",
-    "dateModified": "2026-10-15",
+    "dateModified": "2026-10-19",
     "author": "Navneet Arya",
     "category": "Audio",
     "readTime": "8 min read",
@@ -256,11 +256,11 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     "slug": "best-ai-voice-cloning-tools-2026",
-    "title": "Best AI Voice Cloning Tools 2026: 4 Options, Tested on Quality and Consent",
-    "seoTitle": "Best AI Voice Cloning Tools 2026: 4 Ranked",
-    "metaDescription": "The best AI voice cloning tools in 2026, ranked on clone quality and pricing. ElevenLabs, Descript, Resemble AI & Play.ht compared, plus consent rules.",
+    "title": "Best AI Voice Cloning Tools 2026: 3 Options Compared on Quality and Consent",
+    "seoTitle": "Best AI Voice Cloning Tools 2026: 3 Ranked",
+    "metaDescription": "The best AI voice cloning tools in 2026, ranked on clone quality and pricing. ElevenLabs, Descript and Resemble AI compared on price and samples, plus consent rules.",
     "datePublished": "2026-08-18",
-    "dateModified": "2026-10-09",
+    "dateModified": "2026-10-19",
     "author": "Navneet Arya",
     "category": "Audio",
     "readTime": "11 min read",
@@ -895,14 +895,14 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "ai-api-pricing-comparison-2026",
     "title": "AI API Pricing Comparison 2026 — OpenAI vs Anthropic vs Google vs Meta",
     "seoTitle": "AI API Pricing Comparison 2026: Full Breakdown",
-    "metaDescription": "Complete AI API pricing comparison for 2026: OpenAI GPT-4o, Anthropic Claude, Google Gemini, and Meta Llama compared on cost per million tokens. Build smarter.",
+    "metaDescription": "AI API pricing comparison for October 2026: OpenAI GPT-6, Anthropic Claude, Google Gemini, Mistral and hosted Llama compared on cost per million tokens, with real cost examples.",
     "datePublished": "2026-05-24",
-    "dateModified": "2026-08-22",
+    "dateModified": "2026-10-19",
     "author": "Navneet Arya",
     "category": "Research",
     "readTime": "10 min read",
     "ogImage": "https://ainexustools.online/og/blog/ai-api-pricing-comparison-2026.webp",
-    "excerpt": "AI API costs vary by 100x between providers and models. This independent analysis compares real 2026 pricing across OpenAI, Anthropic, Google, and open-source to help developers choose the most cost-effective option for their use case."
+    "excerpt": "AI API costs still vary by about 100x between models. This independent analysis compares October 2026 pricing across OpenAI, Anthropic, Google, Mistral and open-weight hosts to help developers choose the most cost-effective option for their use case."
   },
   {
     "slug": "best-ai-tools-for-startups-2026",
@@ -1389,14 +1389,14 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "slug": "best-ai-chatbot-2026",
     "title": "Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini vs Grok vs Perplexity",
     "seoTitle": "Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini vs Grok",
-    "metaDescription": "The 5 best AI chatbots for 2026 compared — ChatGPT, Claude, Gemini, Grok 4, and Perplexity. See pricing, strengths, and which one fits your use case.",
+    "metaDescription": "The 5 best AI chatbots for 2026 compared: ChatGPT, Claude, Gemini, Grok, and Perplexity. See every plan price, strengths, limits, and which one fits your use case.",
     "datePublished": "2026-05-17",
-    "dateModified": "2026-08-22",
+    "dateModified": "2026-10-19",
     "author": "Navneet Arya",
     "category": "Guides",
     "readTime": "12 min read",
     "ogImage": "https://ainexustools.online/og/blog/best-ai-chatbot-2026.webp",
-    "excerpt": "The AI chatbot landscape in 2026 looks nothing like 2023. GPT-5.5, Claude 3.5, Gemini 3.1, and Grok 4.3 are all genuinely excellent — and the right choice depends entirely on what you're using it for."
+    "excerpt": "The AI chatbot landscape in 2026 looks nothing like 2023. ChatGPT, Claude, Gemini, Grok, and Perplexity are all genuinely strong, and the right choice depends on what you are using it for and what you already pay for."
   },
 ];
 
