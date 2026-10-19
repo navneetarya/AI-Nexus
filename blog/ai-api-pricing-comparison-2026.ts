@@ -4,7 +4,7 @@ const post: BlogPost = {
   slug: 'ai-api-pricing-comparison-2026',
   title: 'AI API Pricing Comparison 2026 — OpenAI vs Anthropic vs Google vs Meta',
   seoTitle: 'AI API Pricing Comparison 2026: Full Breakdown',
-  metaDescription: 'AI API pricing comparison for October 2026: OpenAI GPT-6, Anthropic Claude, Google Gemini, Mistral and hosted Llama compared on cost per million tokens, with real cost examples.',
+  metaDescription: 'AI API pricing for October 2026: OpenAI GPT-6, Claude, Gemini, Mistral and hosted Llama compared per million tokens, with real cost examples.',
   datePublished: '2026-05-24',
   dateModified: '2026-10-19',
   author: 'Navneet Arya',

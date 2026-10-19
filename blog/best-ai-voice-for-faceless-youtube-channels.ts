@@ -17,6 +17,9 @@
 //       and "characters" -> credits; (3) "script-to-video sync" -> Murf built-in video editor;
 //   (4) removed unverified "29 vs 20 languages" comparison; (5) added credit-per-video estimates
 //       (stated assumptions), cost scenarios, "AI-voice tells" and mistakes sections, 2 new FAQs.
+// Oct 19 2026 depth pass (analyzer 'short' flag, 1,885 -> ~2,120 words): added loudness guidance and a
+//   mix-levels diagram (public/images/blog/<slug>/mix-levels.svg) to Step 5, three more common mistakes,
+//   and a pre-publish checklist. No new vendor claims.
 import { BlogPost } from './types';
 import { Category } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
@@ -222,6 +225,10 @@ const post: BlogPost = {
 
 <p>Background music needs to sit under the voice, not compete with it. A narration track peaking around -3dB with music ducked underneath at -18 to -20dB is a reasonable starting point for most faceless content.</p>
 
+<img src="/images/blog/best-ai-voice-for-faceless-youtube-channels/mix-levels.svg" alt="Diagram of starting mix levels for faceless narration: voice peaks near -3 dB, music ducked to -18 to -20 dB, finished video near -14 LUFS" width="640" height="250" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:6px 0 14px;border-radius:12px;" />
+
+<p>Loudness is the other half of the mix. Creators commonly aim for about -14 LUFS integrated on YouTube, and the platform turns louder uploads down to match. A free loudness meter in your editor shows where the finished video lands. If the narration sounds thin next to other channels on a phone, raise the whole mix before you export.</p>
+
 <img src="https://images.unsplash.com/photo-1502665607786-eaa3cd100809?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A close-up of hands adjusting an audio mixing board" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <p>Murf's built-in editor makes this mixing step faster since voice and music can sit on the same timeline. With ElevenLabs, plan on exporting the raw voice track into a separate video or audio editor for the final mix.</p>
@@ -296,7 +303,23 @@ const post: BlogPost = {
   <li><strong>Using a free-plan voice for monetized videos:</strong> check the licence first.</li>
   <li><strong>Cloning a voice without consent:</strong> this breaks platform rules and can carry legal risk.</li>
   <li><strong>Skipping the phone-speaker check:</strong> pacing flaws show up there first.</li>
+  <li><strong>Writing for the eye, not the ear:</strong> long, clause-heavy sentences sound flat when spoken, so rewrite them before you generate audio.</li>
+  <li><strong>Ignoring loudness:</strong> narration far quieter than the music, or than other videos, sends viewers reaching for the volume key.</li>
+  <li><strong>Matching the voice to the wrong niche:</strong> a warm, slow narrator suits history or relaxation content, while a brisk, neutral one suits finance or tech explainers.</li>
 </ul>
+
+<h2>A pre-publish checklist for faceless narration</h2>
+
+<p>Run through this list before every upload. It takes about ten minutes and catches most of the problems viewers notice first.</p>
+
+<ol>
+  <li>Listen to the full narration once without looking at the screen, and mark any line that sounds rushed or flat.</li>
+  <li>Check every name, number and acronym against how you want it said.</li>
+  <li>Confirm the music sits clearly under the voice, with no section where it competes.</li>
+  <li>Play the first 30 seconds on a phone speaker and on headphones.</li>
+  <li>Check the licence for the voice plan and for the music you used.</li>
+  <li>Decide whether the video needs a synthetic-media disclosure under YouTube's rules.</li>
+</ol>
 
 <h2>Which pick fits your faceless channel</h2>
 
@@ -359,7 +382,7 @@ const post: BlogPost = {
     { url: 'https://support.google.com/youtube/answer/1311392', label: 'YouTube — Monetization Policies' },
   ],
 
-  wordCount: 2100,
+  wordCount: 2119,
 };
 
 export default post;

@@ -18,6 +18,8 @@
 //   secondary CTA for the Overdub-in-existing-workflow case.
 // Image sourcing note: reuses images already verified live (free Unsplash License, not
 // Unsplash+) elsewhere on the site — no new unverified images introduced.
+// Oct 19 2026 depth pass (analyzer 'short' flag, ~1,994 -> ~2,200 words): added a record-keeping section,
+//   two more mistakes, and a fourth row in the tool-fit list. No new vendor claims.
 import { BlogPost } from './types';
 import { Category } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
@@ -52,6 +54,8 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 <p>If your show has a scripted intro, sponsor reads that need to sound identical every week, or an audience in more than one language, ElevenLabs' cloning can pay for itself. If cloning is only for the occasional flubbed line, <a href="/tools/descript/">Descript</a> fits better, since its Regenerate feature (formerly Overdub) sits inside the transcript editor you may already use.</p>
+
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices verified October 2026 against each vendor's official pricing page. Billing options and regional prices vary, so confirm at checkout.</em></p>
 
 <div style="overflow-x:auto;margin:28px 0">
   <table style="width:100%;border-collapse:collapse;font-size:14px">
@@ -175,6 +179,18 @@ const post: BlogPost = {
 
 <p>A short checklist catches most problems. Listen on headphones and on a phone speaker, since flaws show up differently on each. Check that names, brand terms and numbers are pronounced correctly. Compare loudness against the rest of the episode so the cloned segment does not jump out. Finally, confirm that the sponsor copy matches what the sponsor approved, because a regenerated line can drift from the approved wording.</p>
 
+<h2>What should you keep on file for every cloned segment?</h2>
+
+<p>A small record protects you if a sponsor, guest or platform asks questions later. Keep it next to the episode files.</p>
+
+<ul>
+  <li>The original voice sample and the written permission behind it.</li>
+  <li>The script version that was approved, with the date.</li>
+  <li>The tool, plan and settings used to generate the audio.</li>
+  <li>The sponsor's sign-off for any cloned ad read.</li>
+  <li>The exact disclosure wording you used in the episode and metadata.</li>
+</ul>
+
 <h2>Disclosure and platform rules for AI voices</h2>
 
 <p>Using a clone of your own voice is generally fine, but platforms are tightening rules around synthetic audio. Reports say Apple Podcasts guideline 1.11 asks shows that use generative AI to synthesize audio to disclose it in show and episode metadata. Spotify has said it will remove podcast content that imitates another person's voice without permission, including AI clones. Hosting platforms such as Acast have their own AI rules, and the IAB recommends a short spoken disclosure.</p>
@@ -195,6 +211,8 @@ const post: BlogPost = {
   <li><strong>Forgetting commercial rights.</strong> Free plans do not cover monetized shows.</li>
   <li><strong>Skipping disclosure.</strong> Hidden AI voices can cost listener trust and break platform rules.</li>
   <li><strong>Trusting a weak translation.</strong> Cloning does not improve the script.</li>
+  <li><strong>Fixing every flub.</strong> Replace only the errors that confuse listeners, since small slips are part of a natural show.</li>
+  <li><strong>Deleting the raw take.</strong> Keep the original recording in case the clone sounds off or you need to re-edit later.</li>
 </ul>
 
 <h2>Which cloning tool fits your show</h2>
@@ -203,7 +221,10 @@ const post: BlogPost = {
   <li>Scripted intro or sponsor read that must sound identical every week: ElevenLabs, from $6/month.</li>
   <li>Occasional flub fix inside an editing session you already run: Descript's Regenerate, from $16/month on annual billing.</li>
   <li>Multi-language dubbing for a growing international audience: ElevenLabs, with Professional cloning from $22/month.</li>
+  <li>A show with guests or co-hosts: clone only voices you have written permission for, and re-record the rest.</li>
 </ol>
+
+<p>If none of these rows describes your show, skip cloning for now and revisit it when a repeating job appears.</p>
 
 <h2>Final verdict</h2>
 
@@ -259,7 +280,7 @@ const post: BlogPost = {
     { url: 'https://elevenlabs.io/safety', label: 'ElevenLabs — Safety and Consent Policy' },
   ],
 
-  wordCount: 1977,
+  wordCount: 2150,
 };
 
 export default post;

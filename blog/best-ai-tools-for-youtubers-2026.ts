@@ -18,7 +18,7 @@ const post: BlogPost = {
   readTime: '9 min read',
   ogImage: 'https://ainexustools.online/og/blog/best-ai-tools-for-youtubers-2026.webp',
   excerpt: 'AI has made YouTube content creation dramatically faster in 2026. These tools handle scripting, editing, voiceover, thumbnails, and SEO optimisation — saving creators 5–10 hours per video.',
-  quickAnswer: 'The best AI tools for YouTubers in 2026: InVideo AI (from $9/month) for faceless video creation, Opus Clip (free–$15/month) for repurposing long videos into Shorts, Descript (Hobbyist, $24/month billed annually) for text-based editing, Murf AI ($22/month billed yearly) for voiceover, and VidIQ (free–$49/month) for SEO and channel analytics. A full stack runs $80–120/month and saves 8–12 hours per week.',
+  quickAnswer: 'The best AI tools for YouTubers in 2026: InVideo AI (from $9/month) for faceless video creation, Opus Clip (free–$15/month) for repurposing long videos into Shorts, Descript (Hobbyist, $16/month billed annually) for text-based editing, Murf AI ($22/month billed yearly) for voiceover, and VidIQ (free–$49/month) for SEO and channel analytics. A full stack runs $70–110/month and saves 8–12 hours per week.',
   myTake: 'This guide compares these tools against long-form and Shorts creator workflows, not just demo videos. The practical split is InVideo AI or Descript for production, plus one repurposing tool.',
   faqs: [
     {
@@ -39,7 +39,7 @@ const post: BlogPost = {
     },
     {
       q: 'How much does a full AI YouTube production stack cost?',
-      a: 'A complete stack of InVideo AI (from $9/month), Opus Clip ($15/month), Descript ($24/month), Murf AI ($22/month billed yearly), and VidIQ ($7.50–$49/month) runs $80–120/month for regular use. Most creators don\'t need every tool at once; a lighter stack of just InVideo AI or Descript, plus VidIQ, covers the essentials for under $30/month.',
+      a: 'A complete stack of InVideo AI (from $9/month), Opus Clip ($15/month), Descript ($16/month billed annually), Murf AI ($22/month billed yearly), and VidIQ ($7.50–$49/month) runs $70–110/month for regular use. Most creators don\'t need every tool at once; a lighter stack of just InVideo AI or Descript, plus VidIQ, covers the essentials for under $30/month.',
     },
     {
       q: 'Do I need Descript if I already use InVideo AI?',
@@ -66,7 +66,7 @@ const post: BlogPost = {
     ],
     cons: [
       'AI-generated faceless videos from InVideo AI still need 15–20 minutes of manual review before publishing',
-      'A full 5-tool stack costs $80–120/month, which is a real commitment for a pre-monetisation channel',
+      'A full 5-tool stack costs $70–110/month, which is a real commitment for a pre-monetisation channel',
       'AI voiceover is not a good fit for channels built around a creator\'s personal, authentic delivery',
     ],
   },
@@ -85,7 +85,7 @@ const post: BlogPost = {
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For faceless YouTube videos: <strong>InVideo AI (from $9/mo)</strong>. For repurposing long-form into Shorts: <strong>Opus Clip (free–$15/mo)</strong>. For video editing with transcripts: <strong><a href="/tools/descript/">Descript</a> (Hobbyist, $24/mo billed annually)</strong>. For AI voiceover: <strong><a href="/tools/murf-ai/">Murf AI</a> ($22/mo billed yearly)</strong>. For YouTube SEO: <strong><a href="/tools/vidiq/">VidIQ</a> (free–$49/mo)</strong>.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For faceless YouTube videos: <strong>InVideo AI (from $9/mo)</strong>. For repurposing long-form into Shorts: <strong>Opus Clip (free–$15/mo)</strong>. For video editing with transcripts: <strong><a href="/tools/descript/">Descript</a> (Hobbyist, $16/mo billed annually)</strong>. For AI voiceover: <strong><a href="/tools/murf-ai/">Murf AI</a> ($22/mo billed yearly)</strong>. For YouTube SEO: <strong><a href="/tools/vidiq/">VidIQ</a> (free–$49/mo)</strong>.</p>
 </div>
 <blockquote style="margin:0 0 24px;padding:14px 18px;border-left:3px solid #0D9488;font-style:italic;color:var(--txt);background:rgba(13,148,136,.04);border-radius:0 8px 8px 0;">
   This guide compares these tools against long-form and Shorts creator workflows, not just demo videos. Most solo creators don't need all five running at once from day one.
@@ -136,7 +136,7 @@ const post: BlogPost = {
       <td style="padding:10px 14px;font-weight:600;color:#0D9488;"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a></td>
       <td style="padding:10px 14px;">Text-based video editing</td>
       <td style="padding:10px 14px;">✅ 1hr/mo</td>
-      <td style="padding:10px 14px;">$24/mo (Hobbyist, annual)</td>
+      <td style="padding:10px 14px;">$16/mo (Hobbyist, annual)</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
       <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Murf AI</td>
@@ -192,7 +192,7 @@ const post: BlogPost = {
 <p>Descript's text-based editing is the most genuinely novel editing paradigm available to YouTube creators. Record your video, get an automatic transcript, then edit the video by editing the text: delete a word in the transcript and the corresponding video clip disappears.</p>
 <p>Finding and removing every "um" in a 20-minute interview takes 5 minutes, not 50. For interview-format channels, podcast-style content, and any video where the spoken word drives the edit, Descript saves substantial time.</p>
 <p>The Studio Sound AI cleanup improves audio quality automatically. The Overdub voice cloning lets you re-record individual words using an AI clone of your voice, so there's no need to re-record an entire take to fix one mispronounced word.</p>
-<p>The free plan covers 1 hour of transcription per month, enough for light use. The Hobbyist plan at $24/month (billed annually) works for regular YouTube production; the Creator tier is $24/month.</p>
+<p>The free plan covers 1 hour of transcription per month, enough for light use. The Hobbyist plan at $16/month (billed annually, or $24/month if paid monthly) works for regular YouTube production; the Creator tier is $24/month billed annually ($35/month monthly).</p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
@@ -240,7 +240,7 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
-<p>Total monthly cost for this stack: $80–120. Total weekly time saved: 8–12 hours for a creator publishing 2 videos per week. The investment pays for itself within the first month for any creator monetising their channel.</p>
+<p>Total monthly cost for this stack: $70–110. Total weekly time saved: 8–12 hours for a creator publishing 2 videos per week. The investment pays for itself within the first month for any creator monetising their channel.</p>
 <p>For creators who script with AI, see <a href="/blog/how-to-use-ai-for-content-creation-2026/">How to Use AI for Content Creation 2026</a>. If you're comparing InVideo AI against other options before committing, our <a href="/blog/best-invideo-alternatives-2026/">Best InVideo Alternatives 2026</a> guide is worth a look, and for the broader creator toolkit beyond YouTube specifically, see <a href="/blog/best-ai-tools-for-content-creators-free-2026/">Best AI Tools for Content Creators (Free) 2026</a>.</p>
 
 <h3>Workflow fit and operating cost</h3>

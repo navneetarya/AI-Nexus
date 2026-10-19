@@ -56,7 +56,7 @@ const post: BlogPost = {
     },
     {
       q: 'What is the cheapest AI transcription tool in 2026?',
-      a: 'For light, occasional use, Otter.ai\'s free plan (300 minutes/month) and Rev\'s free plan (45 AI minutes/month) cost nothing. For the cheapest paid tier with meaningful monthly volume, Transkriptor\'s Lite plan at $9.99/month for 5 hours of transcription is the lowest entry price among the paid plans compared here, ahead of Fireflies.ai\'s roughly $10/month starting tier, Otter.ai Pro at $8.33/month annual (but capped at 1,200 minutes), and Descript\'s Hobbyist plan at $24/month annual (the Creator tier is $24/month). Rev\'s subscription starts higher, around $25.49/seat/month, reflecting its human-transcription-first positioning rather than a pure AI product.',
+      a: 'For light, occasional use, Otter.ai\'s free plan (300 minutes/month) and Rev\'s free plan (45 AI minutes/month) cost nothing. For the cheapest paid tier with meaningful monthly volume, Transkriptor\'s Lite plan at $9.99/month for 5 hours of transcription is the lowest entry price among the paid plans compared here, ahead of Fireflies.ai\'s roughly $10/month starting tier, Otter.ai Pro at $8.33/month annual (but capped at 1,200 minutes), and Descript\'s Hobbyist plan at $16/month annual ($24/month monthly). Rev\'s subscription starts higher, around $25.49/seat/month, reflecting its human-transcription-first positioning rather than a pure AI product.',
     },
     {
       q: 'Does any AI transcription tool guarantee 99% accuracy?',
@@ -109,7 +109,7 @@ const post: BlogPost = {
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI transcription software in 2026: <strong><a href="/tools/transkriptor/">Transkriptor</a></strong> (free trial, from $9.99/month) wins for transcribing files and live calls across 100+ languages. <strong>Otter.ai</strong> (free 300 min/month, from $8.33/month annual) wins for live, in-meeting notes and captions. <strong><a href="/tools/descript/">Descript</a></strong> (free, Hobbyist from $24/month billed annually) wins if you need to edit the recording by editing its transcript.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI transcription software in 2026: <strong><a href="/tools/transkriptor/">Transkriptor</a></strong> (free trial, from $9.99/month) wins for transcribing files and live calls across 100+ languages. <strong>Otter.ai</strong> (free 300 min/month, from $8.33/month annual) wins for live, in-meeting notes and captions. <strong><a href="/tools/descript/">Descript</a></strong> (free, Hobbyist from $16/month billed annually) wins if you need to edit the recording by editing its transcript.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong><a href="/tools/fireflies/">Fireflies</a>.ai</strong> (free, from $10/month) wins for CRM-connected meeting recording with automatic action items. <strong>Rev</strong> (free 45 min/month AI, human transcription from $1.99/minute) wins when 99%+ accuracy for a legal or compliance record matters more than speed or price.</p>
 </div>
 
@@ -148,7 +148,7 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 14px;font-weight:600;"><a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Descript</a></td>
       <td style="padding:10px 14px;">Yes: limited</td>
-      <td style="padding:10px 14px;">$24/month (monthly Hobbyist)</td>
+      <td style="padding:10px 14px;">$16/month (Hobbyist, annual)</td>
       <td style="padding:10px 14px;">Editing audio/video by editing text</td>
       <td style="padding:10px 14px;">⭐ 4.4/5</td>
     </tr>
@@ -208,7 +208,7 @@ const post: BlogPost = {
 <p>Descript is the outlier on this list: it's built primarily as an audio and video editor, and transcription is the mechanism, not the end product. Upload a file, get a transcript, then edit the recording by deleting words and sentences directly in that text — the audio disappears to match.</p>
 <p>For podcasters, YouTubers, and anyone producing finished audio or video content, that workflow can genuinely save hours compared to editing on a traditional timeline. Studio Sound AI cleans up room noise and echo, and Overdub can generate a voice clone to fix a flubbed line without a re-record.</p>
 <h3>Descript pricing</h3>
-<p>The Free plan exists but is limited. Hobbyist runs $24/month on annual billing ($24/month monthly) with 10 hours of transcription a month. Creator, the tier most podcasters and YouTubers actually land on, costs $24/month annual ($35/month monthly) and adds full Studio Sound and watermark-free 4K export. Business runs $50–$65/month per user. Since a September 2025 pricing overhaul, Descript meters usage in "media minutes" and AI credits rather than flat transcription hours, which is worth checking against your actual monthly recording volume before committing to a tier.</p>
+<p>The Free plan exists but is limited. Hobbyist runs $16/month on annual billing ($24/month monthly) with 10 hours of transcription a month. Creator, the tier most podcasters and YouTubers actually land on, costs $24/month annual ($35/month monthly) and adds full Studio Sound and watermark-free 4K export. Business runs $50–$65/month per user. Since a September 2025 pricing overhaul, Descript meters usage in "media minutes" and AI credits rather than flat transcription hours, which is worth checking against your actual monthly recording volume before committing to a tier.</p>
 <p>If all you need is a plain transcript with no editing, Descript is a more expensive way to get there than a dedicated transcription tool — its price reflects the editor, not just the transcription engine underneath it.</p>
 <p><strong>Descript: try the free plan first.</strong> No credit card required to start.</p>
 <div style="margin:14px 0 24px;">

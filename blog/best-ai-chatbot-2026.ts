@@ -12,7 +12,7 @@ const post: BlogPost = {
   slug: 'best-ai-chatbot-2026',
   title: 'Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini vs Grok vs Perplexity',
   seoTitle: 'Best AI Chatbot 2026: ChatGPT vs Claude vs Gemini vs Grok',
-  metaDescription: 'The 5 best AI chatbots for 2026 compared: ChatGPT, Claude, Gemini, Grok, and Perplexity. See every plan price, strengths, limits, and which one fits your use case.',
+  metaDescription: 'The 5 best AI chatbots for 2026 compared: ChatGPT, Claude, Gemini, Grok and Perplexity, with plan prices, strengths, limits and who each one fits.',
   datePublished: '2026-05-17',
   dateModified: '2026-10-19',
   author: 'Navneet Arya',
@@ -86,6 +86,7 @@ const post: BlogPost = {
 
 <h2>Plan-by-Plan Pricing</h2>
 <p>Headline prices hide the real decision, which is which tier you land on. Here is every consumer tier for the five chatbots, as listed in October 2026. Team and enterprise plans are left out.</p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices verified October 2026 against each vendor's official pricing page. Regional prices and taxes vary, so confirm at checkout.</em></p>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
