@@ -1,7 +1,9 @@
-# Save as .github/workflows/blog-analyzer.yml
+# Save as .github/workflows/blog-analyzer.yml   (v2)
 # 1) Every PR touching blog/ or affiliate files: static gate that fails only on NEW critical issues
-#    (uses analyzer-baseline.json, created once with:  python3 blog_analyzer.py --write-baseline analyzer-baseline.json)
-# 2) Every Monday: full live audit (broken links, affiliate-link health, vendor pricing drift) + HTML dashboard artifact
+#    (baseline: python3 blog_analyzer.py --write-baseline analyzer-baseline.json — regenerate it ONCE after you fix the
+#    'Tested' headline violations, otherwise new v2 policy findings count as "new" and fail the gate until fixed)
+# 2) Every Monday: full audit — builds the site, verifies prerendered HTML (--dist), live link/price checks, git-verified
+#    freshness, optional Search Console / GA4 data you commit under data/, trend history, HTML dashboard artifact
 name: blog-analyzer
 on:
   pull_request:
@@ -16,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }          # full history → real-edit (date-bump) verification
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: python3 blog_analyzer.py --ci --baseline analyzer-baseline.json --min-score 75
@@ -25,12 +28,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: >
-          python3 blog_analyzer.py --live
-          --html analyzer-report.html --json analyzer-report.json
-          --csv analyzer-posts.csv --checklist analyzer-fixes.md
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - name: Build site (for --dist prerender verification)
+        continue-on-error: true
+        run: npm ci && npm run build
+      - name: Restore trend history
+        uses: actions/cache@v4
+        with:
+          path: .analyzer-history.json
+          key: analyzer-history-${{ github.run_id }}
+          restore-keys: analyzer-history-
+      - name: Run analyzer
+        run: |
+          ARGS="--live --history .analyzer-history.json"
+          [ -d dist ] && ARGS="$ARGS --dist dist"
+          # Commit monthly exports to data/ to enable real-traffic + revenue guidance:
+          #   data/gsc-pages.csv   Search Console → Performance → Pages (add Query for per-query gaps)
+          #   data/ga4-pages.csv   GA4 → page path + Sessions
+          #   data/ga4-aff-clicks.csv   GA4 → event 'affiliate_click' by page path (Event count)
+          #   benchmarks.txt       "<your-slug> <competitor URL>" per line
+          [ -f data/gsc-pages.csv ] && ARGS="$ARGS --gsc data/gsc-pages.csv"
+          [ -f data/ga4-pages.csv ] && ARGS="$ARGS --traffic data/ga4-pages.csv"
+          [ -f data/ga4-aff-clicks.csv ] && ARGS="$ARGS --affclicks data/ga4-aff-clicks.csv"
+          [ -f benchmarks.txt ] && ARGS="$ARGS --benchmarks benchmarks.txt"
+          python3 blog_analyzer.py $ARGS \
+            --html analyzer-report.html --json analyzer-report.json \
+            --csv analyzer-posts.csv --checklist analyzer-fixes.md
       - uses: actions/upload-artifact@v4
         with:
           name: blog-analyzer-report
