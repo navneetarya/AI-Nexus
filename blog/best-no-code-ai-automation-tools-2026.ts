@@ -106,6 +106,9 @@ const post: BlogPost = {
 <p>"No-code AI automation" gets used loosely in 2026 marketing copy. So it's worth being clear about what it really buys you. At its core, it means building a working software process: connect this app to that app, run this logic, take this action.</p>
 <p>That happens fully through a visual interface, with AI doing part of the thinking. Not every step has to be a fixed rule set by a human.</p>
 <p>It does not mean zero setup time or zero learning curve. Nor does it mean every platform sold as "no-code" is just as easy for someone with no technical background.</p>
+<h3>Where the setup work still lives</h3>
+<p>The interface removes much of the code, but it does not remove the design work. You still need to define the trigger, decide what data the workflow may use, handle failed steps, and review the output before anything customer-facing is sent.</p>
+<p>That distinction matters when comparing the free plans. Zapier's free tier is around 100 single-step tasks per month, Make's free tier is 1,000 operations, and n8n's free Community Edition is self-hosted. Those allowances are not interchangeable because each platform counts a different unit of work.</p>
 <p>The category has split sharply over the past two years. A platform like Zapier stays close to its original form. Trigger an action, run a sequence of steps, and now and then let an AI step draft text or make a sorting decision inside that sequence.</p>
 <p>A platform like <a href="/tools/lindy/">Lindy</a> or n8n's AI Agent node is something truly different. It's software that plans its own steps toward a stated goal. It adapts as it goes, rather than following a path you laid out in advance. Both get marketed as "AI automation." Only one of them is truly agentic.</p>
 
@@ -288,6 +291,7 @@ const post: BlogPost = {
 <p><strong>Choose Zapier if:</strong> you have no developer on the team, need to be live today, and your workflows are simple and low-volume. The app library and onboarding speed are unmatched, and at low volume the task-based pricing penalty rarely becomes large enough to matter.</p>
 <p><strong>Choose Make.com if:</strong> your workflows involve real branching logic or moderate-to-high volume. At least one team member should be at ease with a visual, node-based builder. Make consistently delivers the best power-to-price ratio for teams that have outgrown Zapier's simplicity.</p>
 <p><strong>Choose n8n if:</strong> you have developer resources and want genuine AI-agent behaviour with tool use and memory, rather than single AI steps. It's also the pick if you need the deepest MCP integration available, or run high enough volume that execution-based, self-hostable pricing matters.</p>
+<h3>When to combine platforms</h3>
 <p><strong>Choose Lindy or Relevance AI if:</strong> your problem is really "I need an agent to handle this ongoing task". It's not "I need to connect these apps". Lindy gets a working agent live the fastest. Relevance AI trades some setup speed for more auditable, structured agent behaviour.</p>
 <p><strong>Choose Activepieces if:</strong> budget is the binding constraint and you have at least light technical capacity to self-host. Choose Bardeen specifically for browser-trapped data work with no usable API. Choose Gumloop for multi-stage AI data pipelines, and Pipedream if you want a visual builder that doesn't restrict you from dropping into code.</p>
 <p>None of this is exclusive. Most teams that automate seriously in 2026 run more than one of these platforms, using each where it's strongest.</p>

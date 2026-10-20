@@ -66,6 +66,16 @@ const post: BlogPost = {
 <p>Resource constraint is the defining challenge of early-stage startup life. Every hour and every dollar matters. AI tools in 2026 have reached the point where a two-person startup can produce the marketing, design, content, and product output that once took a team of six.</p>
 <p>Startups that understand this, and build AI into every workflow from day one, get a structural operating advantage over the ones that don't. This isn't about replacing people. It's about doing more with the team you have.</p>
 
+<h3>Three budget levels for the same stack</h3>
+<p>A founder can start with the free tiers and add paid seats only where the limit becomes a real bottleneck. The documented paid prices in this guide are $20/month for Claude, $8/month for Gamma, $15/month for Canva AI, $10/month for the Notion AI add-on, and $10/month for GitHub Copilot.</p>
+<ul style="margin:12px 0 20px 24px;line-height:1.9;">
+  <li><strong>Free validation:</strong> start with the free tiers while testing whether the workflow is used every week.</li>
+  <li><strong>Lean paid stack:</strong> Claude plus Gamma is $28/month before any additional seats or usage limits.</li>
+  <li><strong>Full five-tool stack:</strong> the listed paid prices total $63/month for one user, so the under-$70 claim depends on the stated plans and excludes extra seats.</li>
+</ul>
+<p>Those totals are arithmetic from the prices listed above, not a promise of a particular return. Track the hours saved and the quality of the resulting work before expanding the stack.</p>
+<p>The same approach works when the team grows. Keep shared documentation in Notion only when a shared workspace solves a real coordination problem, and add GitHub Copilot when code work is frequent enough to justify the seat. The point of the stack is to remove a bottleneck, not to make the tools themselves another operating task.</p>
+
 <h2>The Startup AI Stack: What Actually Matters</h2>
 <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for The Startup AI Stack: What Actually Matters" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">

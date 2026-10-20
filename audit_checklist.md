@@ -1,6 +1,6 @@
 # AI Nexus — blog fix checklist
 
-_Generated 2026-10-20T14:17:10 · site score 99.4/100 · tick items off as you ship them._
+_Generated 2026-10-20T15:21:28 · site score 99.5/100 · tick items off as you ship them._
 
 Priority = severity × page importance (link authority + revenue potential) × pillar weight ÷ effort. **Effort**: S ≈ <30 min, M ≈ 1-2 h, L ≈ half-day+.
 
@@ -50,18 +50,8 @@ Priority = severity × page importance (link authority + revenue potential) × p
 
 ## 1. Do these first (top 25 across the site)
 
-- [ ] **MEDIUM** · Affiliate revenue · effort M — Heavily-mentioned tools with NO tracked affiliate link: Grammarly (238×/18 posts), Cursor (150×/10 posts), n8n (118×/12 posts), Zapier (106×/10 posts), GitHub Copilot (103×/11 posts), Claude Code (97×/9 posts).
+- [ ] **MEDIUM** · Affiliate revenue · effort M — Heavily-mentioned tools with NO tracked affiliate link: Grammarly (239×/18 posts), Cursor (150×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).
   - **Fix:** Check each vendor for an affiliate/partner program (Impact, PartnerStack, FirstPromoter, direct); apply, then add the link in constants.ts.
-- [ ] **MEDIUM** · Reader value · effort S — `best-no-code-ai-automation-tools-2026` — A section runs 501 words without a heading.
-  - **Fix:** Insert an H3, list or table.
-- [ ] **MEDIUM** · Reader value · effort M — `best-ai-tools-for-freelancers-2026` — 1606 words; competitive 'roundup' posts run ≈2000+.
-  - **Fix:** Deepen the weakest sections rather than padding.
-- [ ] **MEDIUM** · Reader value · effort M — `lovable-vs-wegic-vs-readdy-vs-creao-2026` — 1379 words; competitive 'comparison' posts run ≈1600+.
-  - **Fix:** Deepen the weakest sections rather than padding.
-- [ ] **MEDIUM** · Reader value · effort M — `ai-tools-for-students-free-2026` — Flesch reading ease 54 (target ≥55-60).
-  - **Fix:** Split sentences >25 words; swap multisyllabic words.
-- [ ] **MEDIUM** · Reader value · effort M — `best-ai-tools-for-startups-2026` — 1807 words; competitive 'roundup' posts run ≈2000+.
-  - **Fix:** Deepen the weakest sections rather than padding.
 - [ ] **MEDIUM** · Reader value · effort M — `best-free-ai-tool-plans-2026` — 1492 words; competitive 'roundup' posts run ≈2000+.
   - **Fix:** Deepen the weakest sections rather than padding.
 - [ ] **MEDIUM** · Reader value · effort M — `best-free-ai-tool-plans-2026` — Only 5 distinct concrete figures (3.4/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
@@ -100,37 +90,23 @@ Priority = severity × page importance (link authority + revenue potential) × p
   - **Fix:** Deepen the weakest sections rather than padding.
 - [ ] **MEDIUM** · Reader value · effort M — `best-ai-writing-tools-for-beginners-2026` — 1470 words; competitive 'roundup' posts run ≈2000+.
   - **Fix:** Deepen the weakest sections rather than padding.
+- [ ] **MEDIUM** · Reader value · effort M — `best-midjourney-alternatives-2026` — 1553 words; competitive 'alternatives' posts run ≈1600+.
+  - **Fix:** Deepen the weakest sections rather than padding.
+- [ ] **MEDIUM** · Reader value · effort M — `best-vibe-coding-tools-2026` — Only 10 distinct concrete figures (5.5/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
+  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
+- [ ] **MEDIUM** · Reader value · effort M — `perplexity-ai-review-2026` — Flesch reading ease 53 (target ≥55-60).
+  - **Fix:** Split sentences >25 words; swap multisyllabic words.
+- [ ] **MEDIUM** · Reader value · effort M — `best-ai-meeting-tools-2026` — Flesch reading ease 54 (target ≥55-60).
+  - **Fix:** Split sentences >25 words; swap multisyllabic words.
+- [ ] **MEDIUM** · Reader value · effort M — `murf-ai-alternatives-2026` — 1093 words; competitive 'alternatives' posts run ≈1600+.
+  - **Fix:** Deepen the weakest sections rather than padding.
 
 ## 2. Site-level
 
-- [ ] **MEDIUM** · Affiliate revenue · effort M — Heavily-mentioned tools with NO tracked affiliate link: Grammarly (238×/18 posts), Cursor (150×/10 posts), n8n (118×/12 posts), Zapier (106×/10 posts), GitHub Copilot (103×/11 posts), Claude Code (97×/9 posts).
+- [ ] **MEDIUM** · Affiliate revenue · effort M — Heavily-mentioned tools with NO tracked affiliate link: Grammarly (239×/18 posts), Cursor (150×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).
   - **Fix:** Check each vendor for an affiliate/partner program (Impact, PartnerStack, FirstPromoter, direct); apply, then add the link in constants.ts.
 
 ## 3. Per-post checklists (most important pages first)
-
-### best-ai-tools-for-freelancers-2026 — 99.0/100 (A+)
-_roundup · 1606 words · importance 2.67 · inbound links 12_
-
-- [ ] **MEDIUM** · Reader value · effort M — 1606 words; competitive 'roundup' posts run ≈2000+.
-  - **Fix:** Deepen the weakest sections rather than padding.
-
-### lovable-vs-wegic-vs-readdy-vs-creao-2026 — 99.0/100 (A+)
-_comparison · 1379 words · importance 2.28 · inbound links 13_
-
-- [ ] **MEDIUM** · Reader value · effort M — 1379 words; competitive 'comparison' posts run ≈1600+.
-  - **Fix:** Deepen the weakest sections rather than padding.
-
-### ai-tools-for-students-free-2026 — 99.0/100 (A+)
-_roundup · 2322 words · importance 2.27 · inbound links 5_
-
-- [ ] **MEDIUM** · Reader value · effort M — Flesch reading ease 54 (target ≥55-60).
-  - **Fix:** Split sentences >25 words; swap multisyllabic words.
-
-### best-ai-tools-for-startups-2026 — 99.0/100 (A+)
-_roundup · 1807 words · importance 2.27 · inbound links 12_
-
-- [ ] **MEDIUM** · Reader value · effort M — 1807 words; competitive 'roundup' posts run ≈2000+.
-  - **Fix:** Deepen the weakest sections rather than padding.
 
 ### best-free-ai-tool-plans-2026 — 97.9/100 (A+)
 _roundup · 1492 words · importance 2.22 · inbound links 13_
@@ -250,12 +226,6 @@ _comparison · 1810 words · importance 1.72 · inbound links 8_
 - [ ] **MEDIUM** · Reader value · effort M — Only 10 distinct concrete figures (5.5/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
   - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
 
-### chatgpt-atlas-vs-perplexity-comet-vs-dia-2026 — 99.0/100 (A+)
-_comparison · 2396 words · importance 1.71 · inbound links 13_
-
-- [ ] **MEDIUM** · Reader value · effort M — Only 4 distinct concrete figures (1.7/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
-  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
-
 ### perplexity-ai-review-2026 — 99.0/100 (A+)
 _comparison · 1742 words · importance 1.7 · inbound links 15_
 
@@ -274,24 +244,10 @@ _alternatives · 1093 words · importance 1.69 · inbound links 5_
 - [ ] **MEDIUM** · Reader value · effort M — 1093 words; competitive 'alternatives' posts run ≈1600+.
   - **Fix:** Deepen the weakest sections rather than padding.
 
-### best-no-code-ai-automation-tools-2026 — 97.9/100 (A+)
-_roundup · 3232 words · importance 1.65 · inbound links 12_
-
-- [ ] **MEDIUM** · Reader value · effort S — A section runs 501 words without a heading.
-  - **Fix:** Insert an H3, list or table.
-- [ ] **MEDIUM** · Reader value · effort M — Only 15 distinct concrete figures (4.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
-  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
-
 ### ai-agents-vs-ai-automation-difference-2026 — 99.0/100 (A+)
 _comparison · 2148 words · importance 1.65 · inbound links 13_
 
 - [ ] **MEDIUM** · Reader value · effort M — Only 3 distinct concrete figures (1.4/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
-  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
-
-### grok-4-vs-chatgpt-vs-claude-content-creators-2026 — 99.0/100 (A+)
-_comparison · 1728 words · importance 1.65 · inbound links 3_
-
-- [ ] **MEDIUM** · Reader value · effort M — Only 8 distinct concrete figures (4.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
   - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
 
 ### best-ai-voice-generators-for-youtube-2026 — 99.0/100 (A+)
@@ -362,12 +318,6 @@ _roundup · 1500 words · importance 1.45 · inbound links 6_
 - [ ] **MEDIUM** · Reader value · effort M — Only 8 distinct concrete figures (5.3/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
   - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
 
-### google-gemini-ai-review-2026 — 99.0/100 (A+)
-_review · 1706 words · importance 1.44 · inbound links 3_
-
-- [ ] **MEDIUM** · Reader value · effort M — Only 5 distinct concrete figures (2.9/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
-  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
-
 ### claude-code-alternatives-2026 — 99.0/100 (A+)
 _alternatives · 2540 words · importance 1.43 · inbound links 3_
 
@@ -385,18 +335,6 @@ _comparison · 1571 words · importance 1.38 · inbound links 5_
 
 - [ ] **MEDIUM** · Reader value · effort M — 1571 words; competitive 'comparison' posts run ≈1600+.
   - **Fix:** Deepen the weakest sections rather than padding.
-
-### cursor-ai-review-2026 — 99.0/100 (A+)
-_review · 2068 words · importance 1.35 · inbound links 3_
-
-- [ ] **MEDIUM** · Reader value · effort M — Only 10 distinct concrete figures (4.8/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
-  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
-
-### n8n-vs-make-vs-zapier-2026 — 99.0/100 (A+)
-_comparison · 3109 words · importance 1.32 · inbound links 10_
-
-- [ ] **MEDIUM** · Reader value · effort M — Only 14 distinct concrete figures (4.5/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
-  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
 
 ### best-ai-tool-lifetime-deals-appsumo-2026 — 99.0/100 (A+)
 _roundup · 1648 words · importance 1.27 · inbound links 3_
@@ -432,28 +370,10 @@ _article · 2673 words · importance 0.95 · inbound links 3_
 - [ ] **MEDIUM** · Reader value · effort M — Flesch reading ease 54 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
 
-### what-is-mcp-model-context-protocol-2026 — 99.0/100 (A+)
-_article · 2210 words · importance 0.78 · inbound links 8_
-
-- [ ] **MEDIUM** · Reader value · effort M — Only 1 distinct concrete figures (0.5/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
-  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
-
-### multi-agent-ai-systems-explained-2026 — 99.0/100 (A+)
-_article · 3842 words · importance 0.77 · inbound links 5_
-
-- [ ] **MEDIUM** · Reader value · effort M — Only 14 distinct concrete figures (3.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
-  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
-
 ### how-to-beat-ats-resume-screening-2026 — 97.9/100 (A+)
 _howto · 1971 words · importance 0.76 · inbound links 3_
 
 - [ ] **MEDIUM** · Reader value · effort M — Flesch reading ease 53 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
 - [ ] **MEDIUM** · Reader value · effort M — Only 2 distinct concrete figures (1.0/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
-  - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
-
-### emergent-ai-explained-2026 — 99.0/100 (A+)
-_howto · 3151 words · importance 0.74 · inbound links 3_
-
-- [ ] **MEDIUM** · Reader value · effort M — Only 2 distinct concrete figures (0.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
   - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.

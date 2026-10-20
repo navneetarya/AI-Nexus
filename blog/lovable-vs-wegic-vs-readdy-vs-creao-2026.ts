@@ -160,6 +160,17 @@ const post: BlogPost = {
 <p>Wegic reviewers report that failed edits can still consume credits, and Wegic credits do not roll over. Lovable credits expire after two months. Readdy credits refresh monthly on monthly plans and once a year on multi-year plans.</p>
 <p>Write the whole brief first, change one thing per message, and set a monthly spending cap before you upgrade.</p>
 
+<h2>Match the Builder to the Project Risk</h2>
+<p>The cheapest plan is not automatically the lowest-risk choice. A public brochure site can tolerate a short trial and a few manual edits. An app with logins or stored data needs a builder that supports the underlying product requirements, plus a plan for export, ownership, and ongoing maintenance.</p>
+<ul style="margin:12px 0 24px;padding-left:22px;line-height:1.9;">
+  <li><strong>Marketing site:</strong> compare Wegic and Readdy on editing, domain support, forms, and branding removal.</li>
+  <li><strong>Full-stack prototype:</strong> use Lovable's app-oriented workflow when the brief needs accounts, a database, or application logic.</li>
+  <li><strong>Repeatable internal task:</strong> use CREAO only when the output is an agent or workflow rather than a public site.</li>
+</ul>
+<p>These are fit conclusions from the documented product scope, not a performance benchmark. The article does not claim hands-on build speed, and Wegic and CREAO prices remain ranges because the cited public sources disagree.</p>
+<p>For a first decision, write down the non-negotiable requirement before opening a builder. If it is authentication or stored data, start with the app-oriented option. If it is a public site, compare editor access, custom-domain support, branding, and lead capture. If it is a repeatable internal task, compare agent controls and the cost of each run. This keeps the comparison tied to the project instead of to a headline credit number.</p>
+<p>Also record the exit path before you start: where the domain will live, whether the plan includes hosting, and whether the builder offers code download or an export route. Those details determine the cost of changing tools later, especially when the first version becomes a real customer-facing project.</p>
+
 <h2>Which one should you choose?</h2>
 <ul style="margin:12px 0 24px;padding-left:22px;line-height:1.9;">
   <li><strong>Choose Lovable</strong> if your project needs user accounts, stored data or app logic, not only pages.</li>

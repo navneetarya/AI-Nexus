@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-20T14:17:10",
+  "generated": "2026-10-20T15:21:28",
   "today": "2026-10-20",
   "version": "2.0",
   "live": false,
@@ -14,12 +14,12 @@
   }
  },
  "summary": {
-  "avg_score": 99.4,
+  "avg_score": 99.5,
   "pillar_avg": {
    "revenue": 100.0,
    "organic": 100.0,
    "ai": 100.0,
-   "reader": 95.7,
+   "reader": 96.6,
    "trust": 100.0
   },
   "grades": {
@@ -27,7 +27,7 @@
    "A+": 105
   },
   "severity": {
-   "medium": 66
+   "medium": 52
   },
   "avg_strength": 91.0,
   "tiers": {
@@ -552,108 +552,6 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "best-no-code-ai-automation-tools-2026",
-   "title": "Best No-Code AI Automation Tools 2026 — 11 Platforms Ranked",
-   "kind": "roundup",
-   "intent": "transactional",
-   "words": 3232,
-   "date_modified": "2026-10-15",
-   "score": 97.9,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 86.0,
-    "trust": 100.0
-   },
-   "importance": 1.65,
-   "inbound": 12,
-   "pagerank": 7.23,
-   "tools": {
-    "zapier": 23,
-    "n8n": 19,
-    "lindy": 17,
-    "relevance-ai": 9,
-    "gumloop": 6,
-    "make": 6,
-    "creao-ai": 6,
-    "flowith": 4
-   },
-   "issues": [
-    {
-     "code": "wall-of-text",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "A section runs 501 words without a heading.",
-     "fix": "Insert an H3, list or table.",
-     "effort": "S",
-     "slug": "best-no-code-ai-automation-tools-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 3.71,
-     "live": false
-    },
-    {
-     "code": "info-gain-low",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Only 15 distinct concrete figures (4.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-     "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-     "effort": "M",
-     "slug": "best-no-code-ai-automation-tools-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 1.85,
-     "live": false
-    }
-   ],
-   "strength": 89.3,
-   "tier": "Strong",
-   "strength_pct": 29,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.692,
-    "decision": 0.75,
-    "structure": 0.95,
-    "depth": 1.0,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 15,
-    "numbers_per_1000w": 4.6,
-    "numeric_sentences": 8,
-    "sourced_ratio": 1.0,
-    "ext_domains": 6,
-    "authority_domains": [],
-    "tables": 2,
-    "table_cells": 66,
-    "lists": 2,
-    "verdicts": 40,
-    "has_negatives": true,
-    "first_screen": {
-     "price": false,
-     "audience": true,
-     "verdict": false,
-     "named_tool": true
-    },
-    "title_features": [
-     "number"
-    ]
-   },
-   "git": {
-    "commits": "24",
-    "bump_only_commits": "0",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "fastest-growing-ai-startups-2026",
    "title": "Fastest Growing AI Startups in 2026 — Independent Research",
    "kind": "article",
@@ -1082,7 +980,7 @@
    ],
    "strength": 93.3,
    "tier": "Strong",
-   "strength_pct": 67,
+   "strength_pct": 65,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.842,
@@ -1119,100 +1017,8 @@
     ]
    },
    "git": {
-    "commits": "20",
+    "commits": "21",
     "bump_only_commits": "2",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
-   "slug": "ai-tools-for-students-free-2026",
-   "title": "Best Free AI Tools for Students 2026 — Essays, Research, Coding & Presentations",
-   "kind": "roundup",
-   "intent": "transactional",
-   "words": 2322,
-   "date_modified": "2026-10-14",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 2.27,
-   "inbound": 5,
-   "pagerank": 16.229,
-   "tools": {
-    "grammarly": 19,
-    "quillbot": 18,
-    "gamma": 15,
-    "replit": 15,
-    "rytr": 14,
-    "leonardo-ai": 1,
-    "perplexity": 1,
-    "github-copilot": 1
-   },
-   "issues": [
-    {
-     "code": "readability",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Flesch reading ease 54 (target ≥55-60).",
-     "fix": "Split sentences >25 words; swap multisyllabic words.",
-     "effort": "M",
-     "slug": "ai-tools-for-students-free-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 2.56,
-     "live": false
-    }
-   ],
-   "strength": 92.6,
-   "tier": "Strong",
-   "strength_pct": 62,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.704,
-    "decision": 1.0,
-    "structure": 0.95,
-    "depth": 0.929,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 15,
-    "numbers_per_1000w": 6.5,
-    "numeric_sentences": 20,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [
-     "github.com"
-    ],
-    "tables": 2,
-    "table_cells": 54,
-    "lists": 2,
-    "verdicts": 15,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "audience",
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "26",
-    "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
    },
@@ -1643,7 +1449,7 @@
     ]
    },
    "git": {
-    "commits": "25",
+    "commits": "26",
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -1994,96 +1800,6 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "best-ai-tools-for-freelancers-2026",
-   "title": "Best AI Tools for Freelancers 2026 — Work Faster, Earn More",
-   "kind": "roundup",
-   "intent": "transactional",
-   "words": 1606,
-   "date_modified": "2026-08-21",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 2.67,
-   "inbound": 12,
-   "pagerank": 20.656,
-   "tools": {
-    "rytr": 13,
-    "taskade": 10,
-    "jasper": 9,
-    "ocoya": 8,
-    "replit": 7,
-    "leonardo-ai": 6,
-    "grammarly": 3,
-    "writesonic": 3
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1606 words; competitive 'roundup' posts run ≈2000+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "best-ai-tools-for-freelancers-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 3.0,
-     "live": false
-    }
-   ],
-   "strength": 92.2,
-   "tier": "Strong",
-   "strength_pct": 59,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.925,
-    "decision": 1.0,
-    "structure": 0.95,
-    "depth": 0.642,
-    "freshness": 0.8,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 19,
-    "numbers_per_1000w": 11.8,
-    "numeric_sentences": 18,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [],
-    "tables": 1,
-    "table_cells": 28,
-    "lists": 2,
-    "verdicts": 12,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "audience",
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "24",
-    "bump_only_commits": "2",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "best-ai-tools-for-social-media-2026",
    "title": "Best AI Tools for Social Media 2026 — Create, Schedule & Grow Faster",
    "kind": "roundup",
@@ -2173,97 +1889,6 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "best-ai-tools-for-startups-2026",
-   "title": "Best AI Tools for Startups in 2026 — Build Faster With Less",
-   "kind": "roundup",
-   "intent": "transactional",
-   "words": 1807,
-   "date_modified": "2026-09-22",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 2.27,
-   "inbound": 12,
-   "pagerank": 18.781,
-   "tools": {
-    "gamma": 13,
-    "canva-ai": 9,
-    "github-copilot": 9,
-    "notion-ai": 8,
-    "wegic": 3,
-    "lindy": 2,
-    "n8n": 2,
-    "creao-ai": 2
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1807 words; competitive 'roundup' posts run ≈2000+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "best-ai-tools-for-startups-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 2.55,
-     "live": false
-    }
-   ],
-   "strength": 92.0,
-   "tier": "Strong",
-   "strength_pct": 54,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.775,
-    "decision": 1.0,
-    "structure": 0.95,
-    "depth": 0.723,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 12,
-    "numbers_per_1000w": 6.6,
-    "numeric_sentences": 18,
-    "sourced_ratio": 1.0,
-    "ext_domains": 6,
-    "authority_domains": [
-     "github.com"
-    ],
-    "tables": 1,
-    "table_cells": 24,
-    "lists": 2,
-    "verdicts": 11,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "32",
-    "bump_only_commits": "2",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "best-ai-tools-for-youtubers-2026",
    "title": "Best AI Tools for YouTubers in 2026 — Reviewed for Creators",
    "kind": "roundup",
@@ -2343,7 +1968,7 @@
     ]
    },
    "git": {
-    "commits": "34",
+    "commits": "35",
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -2395,7 +2020,7 @@
    ],
    "strength": 92.3,
    "tier": "Strong",
-   "strength_pct": 60,
+   "strength_pct": 59,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.942,
@@ -2569,7 +2194,7 @@
    ],
    "strength": 92.4,
    "tier": "Strong",
-   "strength_pct": 61,
+   "strength_pct": 60,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.825,
@@ -2827,7 +2452,7 @@
    ],
    "strength": 93.5,
    "tier": "Strong",
-   "strength_pct": 70,
+   "strength_pct": 68,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.788,
@@ -2861,7 +2486,7 @@
     ]
    },
    "git": {
-    "commits": "23",
+    "commits": "24",
     "bump_only_commits": "2",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -3127,91 +2752,6 @@
    "git": {
     "commits": "26",
     "bump_only_commits": "3",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
-   "slug": "chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
-   "title": "ChatGPT Atlas vs Perplexity Comet vs Dia (2026): Which AI Browser Should You Actually Install?",
-   "kind": "comparison",
-   "intent": "transactional",
-   "words": 2396,
-   "date_modified": "2026-10-15",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.71,
-   "inbound": 13,
-   "pagerank": 10.799,
-   "tools": {
-    "chatgpt": 23,
-    "perplexity": 18,
-    "perplexity-comet": 13
-   },
-   "issues": [
-    {
-     "code": "info-gain-low",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Only 4 distinct concrete figures (1.7/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-     "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-     "effort": "M",
-     "slug": "chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 1.92,
-     "live": false
-    }
-   ],
-   "strength": 90.1,
-   "tier": "Strong",
-   "strength_pct": 35,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.504,
-    "decision": 1.0,
-    "structure": 1.0,
-    "depth": 1.0,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 4,
-    "numbers_per_1000w": 1.7,
-    "numeric_sentences": 8,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [],
-    "tables": 2,
-    "table_cells": 36,
-    "lists": 3,
-    "verdicts": 20,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook",
-     "question"
-    ]
-   },
-   "git": {
-    "commits": "19",
-    "bump_only_commits": "0",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
    },
@@ -3569,99 +3109,6 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "cursor-ai-review-2026",
-   "title": "Cursor AI Review 2026: Is It the Best AI Code Editor?",
-   "kind": "review",
-   "intent": "transactional",
-   "words": 2068,
-   "date_modified": "2026-10-15",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.35,
-   "inbound": 3,
-   "pagerank": 5.156,
-   "tools": {
-    "cursor": 47,
-    "github-copilot": 13,
-    "replit": 5,
-    "lovable": 5,
-    "windsurf": 3,
-    "claude-code": 2,
-    "chatgpt": 1
-   },
-   "issues": [
-    {
-     "code": "info-gain-low",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Only 10 distinct concrete figures (4.8/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-     "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-     "effort": "M",
-     "slug": "cursor-ai-review-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 1.51,
-     "live": false
-    }
-   ],
-   "strength": 92.0,
-   "tier": "Strong",
-   "strength_pct": 54,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.6,
-    "decision": 1.0,
-    "structure": 1.0,
-    "depth": 1.0,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 10,
-    "numbers_per_1000w": 4.8,
-    "numeric_sentences": 15,
-    "sourced_ratio": 1.0,
-    "ext_domains": 3,
-    "authority_domains": [
-     "github.com"
-    ],
-    "tables": 3,
-    "table_cells": 68,
-    "lists": 5,
-    "verdicts": 15,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "number",
-     "hook",
-     "question",
-     "price"
-    ]
-   },
-   "git": {
-    "commits": "27",
-    "bump_only_commits": "2",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "elevenlabs-alternatives-2026",
    "title": "ElevenLabs Alternatives 2026: 5 Tools Worth Switching To (and 2 Not To)",
    "kind": "alternatives",
@@ -3834,178 +3281,6 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "emergent-ai-explained-2026",
-   "title": "What Is Emergent AI? Emergent Abilities Explained (2026 Guide)",
-   "kind": "howto",
-   "intent": "informational",
-   "words": 3151,
-   "date_modified": "2026-10-15",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 0.74,
-   "inbound": 3,
-   "pagerank": 2.446,
-   "tools": {
-    "make": 2,
-    "perplexity": 1
-   },
-   "issues": [
-    {
-     "code": "info-gain-low",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Only 2 distinct concrete figures (0.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-     "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-     "effort": "M",
-     "slug": "emergent-ai-explained-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 0.83,
-     "live": false
-    }
-   ],
-   "strength": 81.3,
-   "tier": "Solid",
-   "strength_pct": 5,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.425,
-    "decision": 0.625,
-    "structure": 0.95,
-    "depth": 1.0,
-    "freshness": 1.0,
-    "monetisation": 0.92
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 2,
-    "numbers_per_1000w": 0.6,
-    "numeric_sentences": 2,
-    "sourced_ratio": 1.0,
-    "ext_domains": 3,
-    "authority_domains": [
-     "arxiv.org"
-    ],
-    "tables": 2,
-    "table_cells": 29,
-    "lists": 2,
-    "verdicts": 13,
-    "has_negatives": true,
-    "first_screen": {
-     "price": false,
-     "audience": false,
-     "verdict": true,
-     "named_tool": false
-    },
-    "title_features": [
-     "question"
-    ]
-   },
-   "git": {
-    "commits": "21",
-    "bump_only_commits": "1",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
-   "slug": "google-gemini-ai-review-2026",
-   "title": "Google Gemini AI Review 2026: Is It Better Than ChatGPT for Writing?",
-   "kind": "review",
-   "intent": "transactional",
-   "words": 1706,
-   "date_modified": "2026-08-22",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.44,
-   "inbound": 3,
-   "pagerank": 8.86,
-   "tools": {
-    "chatgpt": 19,
-    "grammarly": 8,
-    "writesonic": 6,
-    "perplexity": 1,
-    "claude-ai": 1
-   },
-   "issues": [
-    {
-     "code": "info-gain-low",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Only 5 distinct concrete figures (2.9/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-     "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-     "effort": "M",
-     "slug": "google-gemini-ai-review-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 1.62,
-     "live": false
-    }
-   ],
-   "strength": 82.6,
-   "tier": "Solid",
-   "strength_pct": 7,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.554,
-    "decision": 0.75,
-    "structure": 0.95,
-    "depth": 0.91,
-    "freshness": 0.896,
-    "monetisation": 0.8
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 5,
-    "numbers_per_1000w": 2.9,
-    "numeric_sentences": 5,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [],
-    "tables": 2,
-    "table_cells": 30,
-    "lists": 2,
-    "verdicts": 18,
-    "has_negatives": true,
-    "first_screen": {
-     "price": false,
-     "audience": false,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook",
-     "question"
-    ]
-   },
-   "git": {
-    "commits": "22",
-    "bump_only_commits": "2",
-    "last_real_edit": "2026-10-15",
-    "last_commit": "2026-10-15"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",
    "title": "GPT-5.5 vs Claude Opus 4.8 vs Grok 4: Which AI is Best in June 2026?",
    "kind": "comparison",
@@ -4090,95 +3365,6 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "grok-4-vs-chatgpt-vs-claude-content-creators-2026",
-   "title": "Grok 4 vs ChatGPT vs Claude: Which AI Is Best for Content Creators in 2026?",
-   "kind": "comparison",
-   "intent": "transactional",
-   "words": 1728,
-   "date_modified": "2026-08-21",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.65,
-   "inbound": 3,
-   "pagerank": 13.623,
-   "tools": {
-    "chatgpt": 31,
-    "writesonic": 4,
-    "grammarly": 2,
-    "rytr": 2,
-    "jasper": 2,
-    "frase": 1
-   },
-   "issues": [
-    {
-     "code": "info-gain-low",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Only 8 distinct concrete figures (4.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-     "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-     "effort": "M",
-     "slug": "grok-4-vs-chatgpt-vs-claude-content-creators-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 1.86,
-     "live": false
-    }
-   ],
-   "strength": 87.1,
-   "tier": "Strong",
-   "strength_pct": 21,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.692,
-    "decision": 1.0,
-    "structure": 1.0,
-    "depth": 0.864,
-    "freshness": 0.667,
-    "monetisation": 0.8
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 8,
-    "numbers_per_1000w": 4.6,
-    "numeric_sentences": 8,
-    "sourced_ratio": 1.0,
-    "ext_domains": 6,
-    "authority_domains": [],
-    "tables": 2,
-    "table_cells": 56,
-    "lists": 4,
-    "verdicts": 20,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "number",
-     "audience",
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "23",
-    "bump_only_commits": "2",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "jasper-ai-alternatives",
    "title": "Best Jasper AI Alternatives in 2026 — Cheaper & Reviewed",
    "kind": "alternatives",
@@ -4220,7 +3406,7 @@
    ],
    "strength": 93.7,
    "tier": "Strong",
-   "strength_pct": 72,
+   "strength_pct": 70,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.858,
@@ -4353,181 +3539,6 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "lovable-vs-wegic-vs-readdy-vs-creao-2026",
-   "title": "Lovable vs Wegic vs Readdy vs CREAO 2026: Which AI Builder Fits Your Project?",
-   "kind": "comparison",
-   "intent": "transactional",
-   "words": 1379,
-   "date_modified": "2026-10-14",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 2.28,
-   "inbound": 13,
-   "pagerank": 12.892,
-   "tools": {
-    "wegic": 18,
-    "readdy": 15,
-    "lovable": 14,
-    "creao-ai": 11,
-    "spaceship": 7,
-    "alf-website-studio": 6,
-    "claude-code": 1
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1379 words; competitive 'comparison' posts run ≈1600+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "lovable-vs-wegic-vs-readdy-vs-creao-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 2.57,
-     "live": false
-    }
-   ],
-   "strength": 93.3,
-   "tier": "Strong",
-   "strength_pct": 67,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.95,
-    "decision": 0.875,
-    "structure": 0.95,
-    "depth": 0.69,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 16,
-    "numbers_per_1000w": 11.6,
-    "numeric_sentences": 13,
-    "sourced_ratio": 1.0,
-    "ext_domains": 5,
-    "authority_domains": [],
-    "tables": 2,
-    "table_cells": 35,
-    "lists": 2,
-    "verdicts": 17,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": false,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "11",
-    "bump_only_commits": "1",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
-   "slug": "multi-agent-ai-systems-explained-2026",
-   "title": "Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026",
-   "kind": "article",
-   "intent": "informational",
-   "words": 3842,
-   "date_modified": "2026-10-15",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 0.77,
-   "inbound": 5,
-   "pagerank": 4.021,
-   "tools": {
-    "n8n": 3,
-    "claude-code": 2,
-    "zapier": 2,
-    "make": 1
-   },
-   "issues": [
-    {
-     "code": "info-gain-low",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Only 14 distinct concrete figures (3.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-     "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-     "effort": "M",
-     "slug": "multi-agent-ai-systems-explained-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 0.86,
-     "live": false
-    }
-   ],
-   "strength": 84.5,
-   "tier": "Solid",
-   "strength_pct": 10,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.65,
-    "decision": 0.75,
-    "structure": 0.95,
-    "depth": 1.0,
-    "freshness": 1.0,
-    "monetisation": 0.6
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 14,
-    "numbers_per_1000w": 3.6,
-    "numeric_sentences": 9,
-    "sourced_ratio": 1.0,
-    "ext_domains": 10,
-    "authority_domains": [
-     "github.com"
-    ],
-    "tables": 2,
-    "table_cells": 55,
-    "lists": 2,
-    "verdicts": 24,
-    "has_negatives": true,
-    "first_screen": {
-     "price": false,
-     "audience": true,
-     "verdict": true,
-     "named_tool": false
-    },
-    "title_features": [
-     "number"
-    ]
-   },
-   "git": {
-    "commits": "20",
-    "bump_only_commits": "1",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "murf-ai-alternatives-2026",
    "title": "Murf AI Alternatives 2026: 4 Tools Worth Considering (and When to Stay)",
    "kind": "alternatives",
@@ -4606,91 +3617,6 @@
    "git": {
     "commits": "18",
     "bump_only_commits": "4",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
-   "slug": "n8n-vs-make-vs-zapier-2026",
-   "title": "n8n vs Make vs Zapier: AI Automation Platform Comparison 2026",
-   "kind": "comparison",
-   "intent": "transactional",
-   "words": 3109,
-   "date_modified": "2026-09-01",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.32,
-   "inbound": 10,
-   "pagerank": 7.16,
-   "tools": {
-    "n8n": 43,
-    "zapier": 43,
-    "make": 3
-   },
-   "issues": [
-    {
-     "code": "info-gain-low",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Only 14 distinct concrete figures (4.5/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-     "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-     "effort": "M",
-     "slug": "n8n-vs-make-vs-zapier-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 1.48,
-     "live": false
-    }
-   ],
-   "strength": 87.0,
-   "tier": "Strong",
-   "strength_pct": 20,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.588,
-    "decision": 0.875,
-    "structure": 0.95,
-    "depth": 1.0,
-    "freshness": 0.789,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 14,
-    "numbers_per_1000w": 4.5,
-    "numeric_sentences": 20,
-    "sourced_ratio": 1.0,
-    "ext_domains": 3,
-    "authority_domains": [],
-    "tables": 2,
-    "table_cells": 48,
-    "lists": 2,
-    "verdicts": 22,
-    "has_negatives": true,
-    "first_screen": {
-     "price": false,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook",
-     "question"
-    ]
-   },
-   "git": {
-    "commits": "19",
-    "bump_only_commits": "1",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
    },
@@ -4879,93 +3805,6 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "what-is-mcp-model-context-protocol-2026",
-   "title": "What is MCP (Model Context Protocol)? The AI Integration Standard Explained",
-   "kind": "article",
-   "intent": "informational",
-   "words": 2210,
-   "date_modified": "2026-10-15",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 0.78,
-   "inbound": 8,
-   "pagerank": 4.626,
-   "tools": {
-    "n8n": 11,
-    "zapier": 11,
-    "cursor": 10,
-    "windsurf": 8,
-    "chatgpt": 4,
-    "github-copilot": 2
-   },
-   "issues": [
-    {
-     "code": "info-gain-low",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Only 1 distinct concrete figures (0.5/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-     "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-     "effort": "M",
-     "slug": "what-is-mcp-model-context-protocol-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 0.87,
-     "live": false
-    }
-   ],
-   "strength": 79.3,
-   "tier": "Solid",
-   "strength_pct": 3,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.521,
-    "decision": 0.575,
-    "structure": 0.95,
-    "depth": 1.0,
-    "freshness": 1.0,
-    "monetisation": 0.6
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 1,
-    "numbers_per_1000w": 0.5,
-    "numeric_sentences": 2,
-    "sourced_ratio": 1.0,
-    "ext_domains": 6,
-    "authority_domains": [],
-    "tables": 2,
-    "table_cells": 27,
-    "lists": 2,
-    "verdicts": 5,
-    "has_negatives": true,
-    "first_screen": {
-     "price": false,
-     "audience": false,
-     "verdict": false,
-     "named_tool": true
-    },
-    "title_features": [
-     "question"
-    ]
-   },
-   "git": {
-    "commits": "22",
-    "bump_only_commits": "0",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "ai-api-pricing-comparison-2026",
    "title": "AI API Pricing Comparison 2026 — OpenAI vs Anthropic vs Google vs Meta",
    "kind": "comparison",
@@ -5067,7 +3906,7 @@
    "issues": [],
    "strength": 92.2,
    "tier": "Strong",
-   "strength_pct": 59,
+   "strength_pct": 58,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.837,
@@ -5259,6 +4098,84 @@
    "git": {
     "commits": "28",
     "bump_only_commits": "1",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "ai-tools-for-students-free-2026",
+   "title": "Best Free AI Tools for Students 2026 — Essays, Research, Coding & Presentations",
+   "kind": "roundup",
+   "intent": "transactional",
+   "words": 2329,
+   "date_modified": "2026-10-14",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 2.27,
+   "inbound": 5,
+   "pagerank": 16.229,
+   "tools": {
+    "grammarly": 19,
+    "quillbot": 19,
+    "gamma": 15,
+    "replit": 15,
+    "rytr": 14,
+    "leonardo-ai": 1,
+    "perplexity": 1,
+    "github-copilot": 1
+   },
+   "issues": [],
+   "strength": 92.2,
+   "tier": "Strong",
+   "strength_pct": 58,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.683,
+    "decision": 1.0,
+    "structure": 0.95,
+    "depth": 0.932,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 14,
+    "numbers_per_1000w": 6.0,
+    "numeric_sentences": 19,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [
+     "github.com"
+    ],
+    "tables": 2,
+    "table_cells": 54,
+    "lists": 2,
+    "verdicts": 16,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "audience",
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "26",
+    "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
    },
@@ -5938,7 +4855,7 @@
    "issues": [],
    "strength": 93.0,
    "tier": "Strong",
-   "strength_pct": 65,
+   "strength_pct": 63,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.742,
@@ -6620,6 +5537,82 @@
    "aff_clicks": 0.0
   },
   {
+   "slug": "best-ai-tools-for-freelancers-2026",
+   "title": "Best AI Tools for Freelancers 2026 — Work Faster, Earn More",
+   "kind": "roundup",
+   "intent": "transactional",
+   "words": 2000,
+   "date_modified": "2026-08-21",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 2.77,
+   "inbound": 12,
+   "pagerank": 20.656,
+   "tools": {
+    "rytr": 17,
+    "taskade": 13,
+    "leonardo-ai": 10,
+    "ocoya": 10,
+    "jasper": 9,
+    "replit": 8,
+    "grammarly": 4,
+    "writesonic": 3
+   },
+   "issues": [],
+   "strength": 93.1,
+   "tier": "Strong",
+   "strength_pct": 64,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.892,
+    "decision": 1.0,
+    "structure": 0.95,
+    "depth": 0.8,
+    "freshness": 0.8,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 22,
+    "numbers_per_1000w": 11.0,
+    "numeric_sentences": 23,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [],
+    "tables": 1,
+    "table_cells": 28,
+    "lists": 2,
+    "verdicts": 13,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "audience",
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "25",
+    "bump_only_commits": "2",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
    "slug": "best-ai-tools-for-freelancers-india-2026",
    "title": "Best AI Tools for Freelancers in India 2026 — Free Plans, INR Pricing & What Actually Works",
    "kind": "pricing",
@@ -6651,7 +5644,7 @@
    "issues": [],
    "strength": 93.0,
    "tier": "Strong",
-   "strength_pct": 65,
+   "strength_pct": 63,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.65,
@@ -6690,6 +5683,83 @@
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-16",
     "last_commit": "2026-10-16"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "best-ai-tools-for-startups-2026",
+   "title": "Best AI Tools for Startups in 2026 — Build Faster With Less",
+   "kind": "roundup",
+   "intent": "transactional",
+   "words": 2014,
+   "date_modified": "2026-09-22",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 2.3,
+   "inbound": 12,
+   "pagerank": 18.781,
+   "tools": {
+    "gamma": 15,
+    "github-copilot": 11,
+    "canva-ai": 10,
+    "notion-ai": 9,
+    "wegic": 3,
+    "lindy": 2,
+    "n8n": 2,
+    "creao-ai": 2
+   },
+   "issues": [],
+   "strength": 93.9,
+   "tier": "Strong",
+   "strength_pct": 75,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.792,
+    "decision": 1.0,
+    "structure": 1.0,
+    "depth": 0.806,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 14,
+    "numbers_per_1000w": 7.0,
+    "numeric_sentences": 21,
+    "sourced_ratio": 1.0,
+    "ext_domains": 6,
+    "authority_domains": [
+     "github.com"
+    ],
+    "tables": 1,
+    "table_cells": 24,
+    "lists": 3,
+    "verdicts": 11,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "32",
+    "bump_only_commits": "2",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
    },
    "search": null,
    "sessions": 0.0,
@@ -6762,7 +5832,7 @@
     ]
    },
    "git": {
-    "commits": "34",
+    "commits": "35",
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -6803,7 +5873,7 @@
    "issues": [],
    "strength": 93.8,
    "tier": "Strong",
-   "strength_pct": 74,
+   "strength_pct": 73,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.783,
@@ -6946,7 +6016,7 @@
    "issues": [],
    "strength": 93.0,
    "tier": "Strong",
-   "strength_pct": 65,
+   "strength_pct": 63,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.883,
@@ -7157,7 +6227,7 @@
    "issues": [],
    "strength": 92.2,
    "tier": "Strong",
-   "strength_pct": 59,
+   "strength_pct": 58,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.783,
@@ -7443,7 +6513,7 @@
    "issues": [],
    "strength": 93.5,
    "tier": "Strong",
-   "strength_pct": 70,
+   "strength_pct": 68,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.846,
@@ -7668,7 +6738,7 @@
    "issues": [],
    "strength": 92.1,
    "tier": "Strong",
-   "strength_pct": 57,
+   "strength_pct": 56,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.688,
@@ -7858,6 +6928,81 @@
    "aff_clicks": 0.0
   },
   {
+   "slug": "best-no-code-ai-automation-tools-2026",
+   "title": "Best No-Code AI Automation Tools 2026 — 11 Platforms Ranked",
+   "kind": "roundup",
+   "intent": "transactional",
+   "words": 3329,
+   "date_modified": "2026-10-15",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.65,
+   "inbound": 12,
+   "pagerank": 7.23,
+   "tools": {
+    "zapier": 24,
+    "n8n": 20,
+    "lindy": 17,
+    "relevance-ai": 9,
+    "gumloop": 6,
+    "make": 6,
+    "creao-ai": 6,
+    "flowith": 4
+   },
+   "issues": [],
+   "strength": 89.2,
+   "tier": "Strong",
+   "strength_pct": 29,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.688,
+    "decision": 0.75,
+    "structure": 0.95,
+    "depth": 1.0,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 15,
+    "numbers_per_1000w": 4.5,
+    "numeric_sentences": 9,
+    "sourced_ratio": 1.0,
+    "ext_domains": 6,
+    "authority_domains": [],
+    "tables": 2,
+    "table_cells": 66,
+    "lists": 2,
+    "verdicts": 41,
+    "has_negatives": true,
+    "first_screen": {
+     "price": false,
+     "audience": true,
+     "verdict": false,
+     "named_tool": true
+    },
+    "title_features": [
+     "number"
+    ]
+   },
+   "git": {
+    "commits": "25",
+    "bump_only_commits": "0",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
    "slug": "best-text-to-speech-software-2026",
    "title": "Best Text-to-Speech Software 2026: 5 Tools Compared on API, Languages & Price",
    "kind": "pricing",
@@ -7885,7 +7030,7 @@
    "issues": [],
    "strength": 93.6,
    "tier": "Strong",
-   "strength_pct": 71,
+   "strength_pct": 69,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.967,
@@ -7931,6 +7076,156 @@
    "aff_clicks": 0.0
   },
   {
+   "slug": "chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
+   "title": "ChatGPT Atlas vs Perplexity Comet vs Dia (2026): Which AI Browser Should You Actually Install?",
+   "kind": "comparison",
+   "intent": "transactional",
+   "words": 2396,
+   "date_modified": "2026-10-15",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.71,
+   "inbound": 13,
+   "pagerank": 10.799,
+   "tools": {
+    "chatgpt": 23,
+    "perplexity": 18,
+    "perplexity-comet": 13
+   },
+   "issues": [],
+   "strength": 90.1,
+   "tier": "Strong",
+   "strength_pct": 35,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.504,
+    "decision": 1.0,
+    "structure": 1.0,
+    "depth": 1.0,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 4,
+    "numbers_per_1000w": 1.7,
+    "numeric_sentences": 8,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [],
+    "tables": 2,
+    "table_cells": 36,
+    "lists": 3,
+    "verdicts": 20,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook",
+     "question"
+    ]
+   },
+   "git": {
+    "commits": "19",
+    "bump_only_commits": "0",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "cursor-ai-review-2026",
+   "title": "Cursor AI Review 2026: Is It the Best AI Code Editor?",
+   "kind": "review",
+   "intent": "transactional",
+   "words": 2068,
+   "date_modified": "2026-10-15",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.35,
+   "inbound": 3,
+   "pagerank": 5.156,
+   "tools": {
+    "cursor": 47,
+    "github-copilot": 13,
+    "replit": 5,
+    "lovable": 5,
+    "windsurf": 3,
+    "claude-code": 2,
+    "chatgpt": 1
+   },
+   "issues": [],
+   "strength": 92.0,
+   "tier": "Strong",
+   "strength_pct": 53,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.6,
+    "decision": 1.0,
+    "structure": 1.0,
+    "depth": 1.0,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 10,
+    "numbers_per_1000w": 4.8,
+    "numeric_sentences": 15,
+    "sourced_ratio": 1.0,
+    "ext_domains": 3,
+    "authority_domains": [
+     "github.com"
+    ],
+    "tables": 3,
+    "table_cells": 68,
+    "lists": 5,
+    "verdicts": 15,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "number",
+     "hook",
+     "question",
+     "price"
+    ]
+   },
+   "git": {
+    "commits": "27",
+    "bump_only_commits": "2",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
    "slug": "domain-renewal-prices-compared-2026",
    "title": "Domain Renewal Prices Compared 2026: Spaceship vs Domain.com vs Network Solutions vs BigRock",
    "kind": "comparison",
@@ -7962,7 +7257,7 @@
    "issues": [],
    "strength": 93.5,
    "tier": "Strong",
-   "strength_pct": 70,
+   "strength_pct": 68,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 1.0,
@@ -8030,7 +7325,7 @@
    "issues": [],
    "strength": 93.8,
    "tier": "Strong",
-   "strength_pct": 74,
+   "strength_pct": 73,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.817,
@@ -8066,6 +7361,77 @@
    "git": {
     "commits": "14",
     "bump_only_commits": "3",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "emergent-ai-explained-2026",
+   "title": "What Is Emergent AI? Emergent Abilities Explained (2026 Guide)",
+   "kind": "howto",
+   "intent": "informational",
+   "words": 3151,
+   "date_modified": "2026-10-15",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 0.74,
+   "inbound": 3,
+   "pagerank": 2.446,
+   "tools": {
+    "make": 2,
+    "perplexity": 1
+   },
+   "issues": [],
+   "strength": 81.3,
+   "tier": "Solid",
+   "strength_pct": 5,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.425,
+    "decision": 0.625,
+    "structure": 0.95,
+    "depth": 1.0,
+    "freshness": 1.0,
+    "monetisation": 0.92
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 2,
+    "numbers_per_1000w": 0.6,
+    "numeric_sentences": 2,
+    "sourced_ratio": 1.0,
+    "ext_domains": 3,
+    "authority_domains": [
+     "arxiv.org"
+    ],
+    "tables": 2,
+    "table_cells": 29,
+    "lists": 2,
+    "verdicts": 13,
+    "has_negatives": true,
+    "first_screen": {
+     "price": false,
+     "audience": false,
+     "verdict": true,
+     "named_tool": false
+    },
+    "title_features": [
+     "question"
+    ]
+   },
+   "git": {
+    "commits": "22",
+    "bump_only_commits": "1",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
    },
@@ -8143,6 +7509,154 @@
    },
    "git": {
     "commits": "12",
+    "bump_only_commits": "2",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "google-gemini-ai-review-2026",
+   "title": "Google Gemini AI Review 2026: Is It Better Than ChatGPT for Writing?",
+   "kind": "review",
+   "intent": "transactional",
+   "words": 1706,
+   "date_modified": "2026-08-22",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.44,
+   "inbound": 3,
+   "pagerank": 8.86,
+   "tools": {
+    "chatgpt": 19,
+    "grammarly": 8,
+    "writesonic": 6,
+    "perplexity": 1,
+    "claude-ai": 1
+   },
+   "issues": [],
+   "strength": 82.6,
+   "tier": "Solid",
+   "strength_pct": 7,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.554,
+    "decision": 0.75,
+    "structure": 0.95,
+    "depth": 0.91,
+    "freshness": 0.896,
+    "monetisation": 0.8
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 5,
+    "numbers_per_1000w": 2.9,
+    "numeric_sentences": 5,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [],
+    "tables": 2,
+    "table_cells": 30,
+    "lists": 2,
+    "verdicts": 18,
+    "has_negatives": true,
+    "first_screen": {
+     "price": false,
+     "audience": false,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook",
+     "question"
+    ]
+   },
+   "git": {
+    "commits": "22",
+    "bump_only_commits": "2",
+    "last_real_edit": "2026-10-15",
+    "last_commit": "2026-10-15"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "grok-4-vs-chatgpt-vs-claude-content-creators-2026",
+   "title": "Grok 4 vs ChatGPT vs Claude: Which AI Is Best for Content Creators in 2026?",
+   "kind": "comparison",
+   "intent": "transactional",
+   "words": 1728,
+   "date_modified": "2026-08-21",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.65,
+   "inbound": 3,
+   "pagerank": 13.623,
+   "tools": {
+    "chatgpt": 31,
+    "writesonic": 4,
+    "grammarly": 2,
+    "rytr": 2,
+    "jasper": 2,
+    "frase": 1
+   },
+   "issues": [],
+   "strength": 87.1,
+   "tier": "Strong",
+   "strength_pct": 21,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.692,
+    "decision": 1.0,
+    "structure": 1.0,
+    "depth": 0.864,
+    "freshness": 0.667,
+    "monetisation": 0.8
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 8,
+    "numbers_per_1000w": 4.6,
+    "numeric_sentences": 8,
+    "sourced_ratio": 1.0,
+    "ext_domains": 6,
+    "authority_domains": [],
+    "tables": 2,
+    "table_cells": 56,
+    "lists": 4,
+    "verdicts": 20,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "number",
+     "audience",
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "23",
     "bump_only_commits": "2",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -8326,7 +7840,7 @@
    "issues": [],
    "strength": 92.1,
    "tier": "Strong",
-   "strength_pct": 57,
+   "strength_pct": 56,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.704,
@@ -8442,6 +7956,153 @@
    "aff_clicks": 0.0
   },
   {
+   "slug": "lovable-vs-wegic-vs-readdy-vs-creao-2026",
+   "title": "Lovable vs Wegic vs Readdy vs CREAO 2026: Which AI Builder Fits Your Project?",
+   "kind": "comparison",
+   "intent": "transactional",
+   "words": 1636,
+   "date_modified": "2026-10-14",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 2.28,
+   "inbound": 13,
+   "pagerank": 12.892,
+   "tools": {
+    "wegic": 20,
+    "readdy": 16,
+    "lovable": 15,
+    "creao-ai": 13,
+    "spaceship": 7,
+    "alf-website-studio": 6,
+    "claude-code": 1
+   },
+   "issues": [],
+   "strength": 93.8,
+   "tier": "Strong",
+   "strength_pct": 73,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.875,
+    "decision": 0.875,
+    "structure": 1.0,
+    "depth": 0.818,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 16,
+    "numbers_per_1000w": 9.8,
+    "numeric_sentences": 13,
+    "sourced_ratio": 1.0,
+    "ext_domains": 5,
+    "authority_domains": [],
+    "tables": 2,
+    "table_cells": 35,
+    "lists": 3,
+    "verdicts": 19,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": false,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "11",
+    "bump_only_commits": "1",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "multi-agent-ai-systems-explained-2026",
+   "title": "Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026",
+   "kind": "article",
+   "intent": "informational",
+   "words": 3842,
+   "date_modified": "2026-10-15",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 0.77,
+   "inbound": 5,
+   "pagerank": 4.021,
+   "tools": {
+    "n8n": 3,
+    "claude-code": 2,
+    "zapier": 2,
+    "make": 1
+   },
+   "issues": [],
+   "strength": 84.5,
+   "tier": "Solid",
+   "strength_pct": 10,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.65,
+    "decision": 0.75,
+    "structure": 0.95,
+    "depth": 1.0,
+    "freshness": 1.0,
+    "monetisation": 0.6
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 14,
+    "numbers_per_1000w": 3.6,
+    "numeric_sentences": 9,
+    "sourced_ratio": 1.0,
+    "ext_domains": 10,
+    "authority_domains": [
+     "github.com"
+    ],
+    "tables": 2,
+    "table_cells": 55,
+    "lists": 2,
+    "verdicts": 24,
+    "has_negatives": true,
+    "first_screen": {
+     "price": false,
+     "audience": true,
+     "verdict": true,
+     "named_tool": false
+    },
+    "title_features": [
+     "number"
+    ]
+   },
+   "git": {
+    "commits": "20",
+    "bump_only_commits": "1",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
    "slug": "murf-ai-pricing-2026",
    "title": "Murf AI Pricing: What Each Plan Actually Buys You (2026)",
    "kind": "pricing",
@@ -8504,6 +8165,77 @@
    },
    "git": {
     "commits": "13",
+    "bump_only_commits": "1",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "n8n-vs-make-vs-zapier-2026",
+   "title": "n8n vs Make vs Zapier: AI Automation Platform Comparison 2026",
+   "kind": "comparison",
+   "intent": "transactional",
+   "words": 3109,
+   "date_modified": "2026-09-01",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.32,
+   "inbound": 10,
+   "pagerank": 7.16,
+   "tools": {
+    "n8n": 43,
+    "zapier": 43,
+    "make": 3
+   },
+   "issues": [],
+   "strength": 87.0,
+   "tier": "Strong",
+   "strength_pct": 20,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.588,
+    "decision": 0.875,
+    "structure": 0.95,
+    "depth": 1.0,
+    "freshness": 0.789,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 14,
+    "numbers_per_1000w": 4.5,
+    "numeric_sentences": 20,
+    "sourced_ratio": 1.0,
+    "ext_domains": 3,
+    "authority_domains": [],
+    "tables": 2,
+    "table_cells": 48,
+    "lists": 2,
+    "verdicts": 22,
+    "has_negatives": true,
+    "first_screen": {
+     "price": false,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook",
+     "question"
+    ]
+   },
+   "git": {
+    "commits": "19",
     "bump_only_commits": "1",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -8615,7 +8347,7 @@
    "issues": [],
    "strength": 92.1,
    "tier": "Strong",
-   "strength_pct": 57,
+   "strength_pct": 56,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.725,
@@ -8659,6 +8391,79 @@
    "search": null,
    "sessions": 0.0,
    "aff_clicks": 0.0
+  },
+  {
+   "slug": "what-is-mcp-model-context-protocol-2026",
+   "title": "What is MCP (Model Context Protocol)? The AI Integration Standard Explained",
+   "kind": "article",
+   "intent": "informational",
+   "words": 2210,
+   "date_modified": "2026-10-15",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 0.78,
+   "inbound": 8,
+   "pagerank": 4.626,
+   "tools": {
+    "n8n": 11,
+    "zapier": 11,
+    "cursor": 10,
+    "windsurf": 8,
+    "chatgpt": 4,
+    "github-copilot": 2
+   },
+   "issues": [],
+   "strength": 79.3,
+   "tier": "Solid",
+   "strength_pct": 3,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.521,
+    "decision": 0.575,
+    "structure": 0.95,
+    "depth": 1.0,
+    "freshness": 1.0,
+    "monetisation": 0.6
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 1,
+    "numbers_per_1000w": 0.5,
+    "numeric_sentences": 2,
+    "sourced_ratio": 1.0,
+    "ext_domains": 6,
+    "authority_domains": [],
+    "tables": 2,
+    "table_cells": 27,
+    "lists": 2,
+    "verdicts": 5,
+    "has_negatives": true,
+    "first_screen": {
+     "price": false,
+     "audience": false,
+     "verdict": false,
+     "named_tool": true
+    },
+    "title_features": [
+     "question"
+    ]
+   },
+   "git": {
+    "commits": "22",
+    "bump_only_commits": "0",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
   }
  ],
  "site_issues": [
@@ -8666,7 +8471,7 @@
    "code": "untracked-tools",
    "pillar": "revenue",
    "severity": "medium",
-   "message": "Heavily-mentioned tools with NO tracked affiliate link: Grammarly (238×/18 posts), Cursor (150×/10 posts), n8n (118×/12 posts), Zapier (106×/10 posts), GitHub Copilot (103×/11 posts), Claude Code (97×/9 posts).",
+   "message": "Heavily-mentioned tools with NO tracked affiliate link: Grammarly (239×/18 posts), Cursor (150×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).",
    "fix": "Check each vendor for an affiliate/partner program (Impact, PartnerStack, FirstPromoter, direct); apply, then add the link in constants.ts.",
    "effort": "M",
    "slug": "",
@@ -8681,78 +8486,13 @@
    "code": "untracked-tools",
    "pillar": "revenue",
    "severity": "medium",
-   "message": "Heavily-mentioned tools with NO tracked affiliate link: Grammarly (238×/18 posts), Cursor (150×/10 posts), n8n (118×/12 posts), Zapier (106×/10 posts), GitHub Copilot (103×/11 posts), Claude Code (97×/9 posts).",
+   "message": "Heavily-mentioned tools with NO tracked affiliate link: Grammarly (239×/18 posts), Cursor (150×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).",
    "fix": "Check each vendor for an affiliate/partner program (Impact, PartnerStack, FirstPromoter, direct); apply, then add the link in constants.ts.",
    "effort": "M",
    "slug": "",
    "where": "",
    "snippet": "",
    "priority": 3.75,
-   "live": false
-  },
-  {
-   "code": "wall-of-text",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "A section runs 501 words without a heading.",
-   "fix": "Insert an H3, list or table.",
-   "effort": "S",
-   "slug": "best-no-code-ai-automation-tools-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 3.71,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1606 words; competitive 'roundup' posts run ≈2000+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "best-ai-tools-for-freelancers-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 3.0,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1379 words; competitive 'comparison' posts run ≈1600+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "lovable-vs-wegic-vs-readdy-vs-creao-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 2.57,
-   "live": false
-  },
-  {
-   "code": "readability",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "Flesch reading ease 54 (target ≥55-60).",
-   "fix": "Split sentences >25 words; swap multisyllabic words.",
-   "effort": "M",
-   "slug": "ai-tools-for-students-free-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 2.56,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1807 words; competitive 'roundup' posts run ≈2000+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "best-ai-tools-for-startups-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 2.55,
    "live": false
   },
   {
@@ -9029,19 +8769,6 @@
    "live": false
   },
   {
-   "code": "info-gain-low",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "Only 4 distinct concrete figures (1.7/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-   "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-   "effort": "M",
-   "slug": "chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 1.92,
-   "live": false
-  },
-  {
    "code": "readability",
    "pillar": "reader",
    "severity": "medium",
@@ -9084,19 +8811,6 @@
    "code": "info-gain-low",
    "pillar": "reader",
    "severity": "medium",
-   "message": "Only 8 distinct concrete figures (4.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-   "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-   "effort": "M",
-   "slug": "grok-4-vs-chatgpt-vs-claude-content-creators-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 1.86,
-   "live": false
-  },
-  {
-   "code": "info-gain-low",
-   "pillar": "reader",
-   "severity": "medium",
    "message": "Only 3 distinct concrete figures (1.4/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
    "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
    "effort": "M",
@@ -9114,19 +8828,6 @@
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "best-ai-voice-generators-for-youtube-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 1.85,
-   "live": false
-  },
-  {
-   "code": "info-gain-low",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "Only 15 distinct concrete figures (4.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-   "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-   "effort": "M",
-   "slug": "best-no-code-ai-automation-tools-2026",
    "where": "",
    "snippet": "",
    "priority": 1.85,
@@ -9305,19 +9006,6 @@
    "code": "info-gain-low",
    "pillar": "reader",
    "severity": "medium",
-   "message": "Only 5 distinct concrete figures (2.9/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-   "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-   "effort": "M",
-   "slug": "google-gemini-ai-review-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 1.62,
-   "live": false
-  },
-  {
-   "code": "info-gain-low",
-   "pillar": "reader",
-   "severity": "medium",
    "message": "Only 13 distinct concrete figures (5.1/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
    "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
    "effort": "M",
@@ -9351,32 +9039,6 @@
    "where": "",
    "snippet": "",
    "priority": 1.56,
-   "live": false
-  },
-  {
-   "code": "info-gain-low",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "Only 10 distinct concrete figures (4.8/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-   "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-   "effort": "M",
-   "slug": "cursor-ai-review-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 1.51,
-   "live": false
-  },
-  {
-   "code": "info-gain-low",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "Only 14 distinct concrete figures (4.5/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-   "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-   "effort": "M",
-   "slug": "n8n-vs-make-vs-zapier-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 1.48,
    "live": false
   },
   {
@@ -9471,19 +9133,6 @@
    "live": false
   },
   {
-   "code": "info-gain-low",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "Only 1 distinct concrete figures (0.5/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-   "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-   "effort": "M",
-   "slug": "what-is-mcp-model-context-protocol-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 0.87,
-   "live": false
-  },
-  {
    "code": "readability",
    "pillar": "reader",
    "severity": "medium",
@@ -9507,32 +9156,6 @@
    "where": "",
    "snippet": "",
    "priority": 0.86,
-   "live": false
-  },
-  {
-   "code": "info-gain-low",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "Only 14 distinct concrete figures (3.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-   "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-   "effort": "M",
-   "slug": "multi-agent-ai-systems-explained-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 0.86,
-   "live": false
-  },
-  {
-   "code": "info-gain-low",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "Only 2 distinct concrete figures (0.6/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
-   "fix": "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.",
-   "effort": "M",
-   "slug": "emergent-ai-explained-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 0.83,
    "live": false
   }
  ],
@@ -9564,7 +9187,7 @@
    "tracked": true,
    "link": "https://rytr.me/?via=navneet-arya",
    "posts": 22,
-   "mentions": 242,
+   "mentions": 246,
    "blog_links_to_page": 22
   },
   {
@@ -9574,7 +9197,7 @@
    "tracked": false,
    "link": "https://grammarly.com",
    "posts": 18,
-   "mentions": 238,
+   "mentions": 239,
    "blog_links_to_page": 20
   },
   {
@@ -9584,7 +9207,7 @@
    "tracked": true,
    "link": "https://gamma.app?via=ainexus",
    "posts": 10,
-   "mentions": 233,
+   "mentions": 235,
    "blog_links_to_page": 11
   },
   {
@@ -9654,7 +9277,7 @@
    "tracked": true,
    "link": "https://www.taskade.com/?via=rlqcxz",
    "posts": 12,
-   "mentions": 124,
+   "mentions": 127,
    "blog_links_to_page": 18
   },
   {
@@ -9664,7 +9287,7 @@
    "tracked": true,
    "link": "https://replit.com/refer/navneetarya1989",
    "posts": 14,
-   "mentions": 120,
+   "mentions": 121,
    "blog_links_to_page": 18
   },
   {
@@ -9674,7 +9297,7 @@
    "tracked": false,
    "link": "https://n8n.io/",
    "posts": 12,
-   "mentions": 118,
+   "mentions": 119,
    "blog_links_to_page": 12
   },
   {
@@ -9684,7 +9307,7 @@
    "tracked": false,
    "link": "https://zapier.com/",
    "posts": 10,
-   "mentions": 106,
+   "mentions": 107,
    "blog_links_to_page": 10
   },
   {
@@ -9694,7 +9317,7 @@
    "tracked": false,
    "link": "https://github.com/features/copilot",
    "posts": 11,
-   "mentions": 103,
+   "mentions": 105,
    "blog_links_to_page": 11
   },
   {
@@ -9708,6 +9331,16 @@
    "blog_links_to_page": 9
   },
   {
+   "slug": "leonardo-ai",
+   "name": "Leonardo.ai",
+   "has_page": true,
+   "tracked": true,
+   "link": "https://leonardo.ai?via=ainexus",
+   "posts": 10,
+   "mentions": 96,
+   "blog_links_to_page": 10
+  },
+  {
    "slug": "jasper",
    "name": "Jasper",
    "has_page": true,
@@ -9718,23 +9351,13 @@
    "blog_links_to_page": 8
   },
   {
-   "slug": "leonardo-ai",
-   "name": "Leonardo.ai",
-   "has_page": true,
-   "tracked": true,
-   "link": "https://leonardo.ai?via=ainexus",
-   "posts": 10,
-   "mentions": 92,
-   "blog_links_to_page": 10
-  },
-  {
    "slug": "quillbot",
    "name": "Quillbot",
    "has_page": true,
    "tracked": true,
    "link": "https://quillbot.com?via=ainexus",
    "posts": 8,
-   "mentions": 91,
+   "mentions": 92,
    "blog_links_to_page": 8
   },
   {
@@ -9754,7 +9377,7 @@
    "tracked": true,
    "link": "https://canva.com?via=ainexus",
    "posts": 11,
-   "mentions": 86,
+   "mentions": 87,
    "blog_links_to_page": 18
   },
   {
@@ -9804,7 +9427,7 @@
    "tracked": true,
    "link": "https://notion.so?via=ainexus",
    "posts": 8,
-   "mentions": 70,
+   "mentions": 71,
    "blog_links_to_page": 14
   },
   {
@@ -9818,6 +9441,16 @@
    "blog_links_to_page": 4
   },
   {
+   "slug": "ocoya",
+   "name": "Ocoya",
+   "has_page": true,
+   "tracked": true,
+   "link": "https://www.ocoya.com/?via=navneet",
+   "posts": 6,
+   "mentions": 65,
+   "blog_links_to_page": 6
+  },
+  {
    "slug": "photoroom",
    "name": "PhotoRoom",
    "has_page": true,
@@ -9828,23 +9461,13 @@
    "blog_links_to_page": 9
   },
   {
-   "slug": "ocoya",
-   "name": "Ocoya",
-   "has_page": true,
-   "tracked": true,
-   "link": "https://www.ocoya.com/?via=navneet",
-   "posts": 6,
-   "mentions": 63,
-   "blog_links_to_page": 6
-  },
-  {
    "slug": "lovable",
    "name": "Lovable",
    "has_page": true,
    "tracked": true,
    "link": "https://lovablelabs.pxf.io/xJ6y5d?utm_source=lovable&utm_medium=affiliate",
    "posts": 7,
-   "mentions": 63,
+   "mentions": 64,
    "blog_links_to_page": 7
   },
   {
@@ -9914,7 +9537,7 @@
    "tracked": true,
    "link": "https://wegic-ai.pxf.io/jR6ybZ?utm_source=wegic&utm_medium=affiliate",
    "posts": 4,
-   "mentions": 36,
+   "mentions": 38,
    "blog_links_to_page": 6
   },
   {
@@ -9938,6 +9561,16 @@
    "blog_links_to_page": 3
   },
   {
+   "slug": "creao-ai",
+   "name": "CREAO",
+   "has_page": true,
+   "tracked": true,
+   "link": "https://creaoailimited.sjv.io/KBdJXy?utm_source=creao-ai&utm_medium=affiliate",
+   "posts": 6,
+   "mentions": 32,
+   "blog_links_to_page": 7
+  },
+  {
    "slug": "getresponse",
    "name": "GetResponse",
    "has_page": true,
@@ -9958,23 +9591,13 @@
    "blog_links_to_page": 1
   },
   {
-   "slug": "creao-ai",
-   "name": "CREAO",
-   "has_page": true,
-   "tracked": true,
-   "link": "https://creaoailimited.sjv.io/KBdJXy?utm_source=creao-ai&utm_medium=affiliate",
-   "posts": 6,
-   "mentions": 30,
-   "blog_links_to_page": 7
-  },
-  {
    "slug": "readdy",
    "name": "Readdy",
    "has_page": true,
    "tracked": true,
    "link": "https://interactivelinkpteltd.sjv.io/KB3KdN?utm_source=readdy&utm_medium=affiliate",
    "posts": 3,
-   "mentions": 29,
+   "mentions": 30,
    "blog_links_to_page": 3
   },
   {
