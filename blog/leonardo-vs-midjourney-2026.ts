@@ -95,6 +95,7 @@ const post: BlogPost = {
 </p>
 
 <h2>Free Plan Comparison: The Clearest Difference</h2>
+<p>Leonardo.ai lets you test the workflow before paying: 150 tokens refresh daily and commercial use is allowed on the free tier according to the documented comparison. Midjourney starts at $10/month and has no free plan, so the first question is whether its aesthetic advantage is worth paying before evaluation.</p>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>

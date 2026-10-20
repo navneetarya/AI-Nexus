@@ -97,6 +97,8 @@ const post: BlogPost = {
 <p>Midjourney produces stunning AI art. That's not up for debate. But it has three real drawbacks that push people toward alternatives.</p>
 <p>It requires Discord, which is a deal-breaker for many professionals. The $10/month Basic plan limits you to roughly 200 images. And there's no free tier to test it first.</p>
 <p>This comparison is based on independent research. We generated 50+ images on each alternative, covering the categories a typical Midjourney user runs: product photos, illustrations, concept art, social media graphics, and realistic scenes. Here's what the research found.</p>
+<h2>Match the Tool to the Image Job</h2>
+<p>Choose Leonardo.ai for repeatable style and a free daily allowance. Choose Stable Diffusion for local control and self-hosting. Choose DALL-E 3 for plain-language prompts and readable text. Choose Adobe Firefly when commercial-use safeguards matter most. This is a fit guide, not a universal quality ranking.</p>
 
 <div style="background:rgba(234,179,8,.08);border-left:4px solid #eab308;padding:14px 18px;border-radius:8px;margin:20px 0 28px;">
   <strong style="color:#a16207;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Pro Tip</strong>

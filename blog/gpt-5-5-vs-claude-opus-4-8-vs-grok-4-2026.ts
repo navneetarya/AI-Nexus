@@ -60,6 +60,8 @@ const post: BlogPost = {
 <p>For most individual users, Claude Opus 4.8 or GPT-5.5 gives the best value for $20/month.</p>
 <p>The same set of 8 real-world tasks was independently researched across all three models over two weeks in June 2026. These were not cherry-picked benchmarks. They were the actual tasks that come up in a week of content creation, research, and coding work. Here is what the research found.</p>
 <p>If you're weighing the raw API cost of each provider instead of the flat-rate subscription, see our <a href="/blog/ai-api-pricing-comparison-2026/">AI API pricing comparison</a>.</p>
+<h2>Choose the Information Source You Need</h2>
+<p>Choose GPT-5.5 for mixed work, Claude Opus 4.8 for long documents and careful writing, and Grok 4 when current web or X data is the requirement. Treat the listed subscription prices as plan prices, not proof that one model is universally better.</p>
 
 <h2>Quick Verdict: GPT-5.5 vs Claude Opus 4.8 vs Grok 4</h2>
 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Quick Verdict: GPT-5.5 vs Claude Opus 4.8 vs Grok 4" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />

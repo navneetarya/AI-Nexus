@@ -67,6 +67,8 @@ const post: BlogPost = {
 <p>Claude 3.5 Sonnet is best for talking through tricky debugging and architecture decisions. Replit is the choice when you need to build and ship from a browser with no local setup.</p>
 <p>AI has moved from optional to essential in software development. Every developer survey in 2026 shows adoption above 70%. Developers who use these tools well ship faster and debug quicker. They spend more time on architecture and less on boilerplate.</p>
 <p>This comparison draws on independent research into how these tools perform on common project types. That includes a React dashboard, a Node.js REST API, a Python data pipeline, and freelance client work. What follows is based on documented development work, not marketing demos.</p>
+<h2>Keep the Stack Small at First</h2>
+<p>Start with the editor you already use. Add a chat model when debugging or architecture needs more context. Add terminal assistance only when shell work is a repeated bottleneck. The documented $10 Copilot and $30 Cursor prices are easier to evaluate when each has a clear job.</p>
 
 <h2>How to Choose the Right AI Tool for Your Workflow</h2>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Choose the Right AI Tool for Your Workflow" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />

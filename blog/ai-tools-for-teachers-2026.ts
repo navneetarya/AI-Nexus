@@ -246,6 +246,21 @@ const post: BlogPost = {
   <li><strong>$20-22/month:</strong> Gamma Plus ($10/mo) + Notion AI ($10/mo add-on) + Grammarly free. This is the power combo for teachers who want AI across planning, presentations, and communication.</li>
 </ul>
 
+<h2>Use the Tools Without Losing Teacher Judgment</h2>
+<p>The safest classroom workflow keeps AI on the preparation side of the work. Use Gamma to draft a deck, Rytr to create worksheet variations, Notion AI to organise a plan, and Grammarly to polish your own feedback. Then check the content against the curriculum, the grade level, and the needs of the actual class.</p>
+<ol style="margin:12px 0 20px 24px;line-height:1.9;">
+  <li><strong>Remove identifying data:</strong> do not paste student names, grades, IEP details, or unredacted work into a free AI tool.</li>
+  <li><strong>Review for accuracy:</strong> check generated facts, examples, reading level, and accessibility before sharing.</li>
+  <li><strong>Keep assessment human:</strong> use Grammarly to accelerate comments, but keep grading decisions and substantive feedback with the teacher.</li>
+  <li><strong>Check policy:</strong> district and school rules differ, so record which tools are used and follow the local guidance.</li>
+</ol>
+<p>This makes the free-tier stack useful without treating the tools as classroom authorities. They reduce preparation and editing time; they do not replace safeguarding, curriculum knowledge, or the teacher's relationship with students.</p>
+<p>Keep a short record of which lesson task each tool supported and what the teacher changed afterward. That makes the next renewal decision concrete and provides a simple explanation if a school leader asks how the tool is being used.</p>
+<p>Review the record at the end of the month. Keep the tool that removes a repeated task. Drop the tool that creates more checking than it saves.</p>
+<p>That keeps the stack small and the classroom work visible.</p>
+<p>It also makes training easier. A teacher can explain one repeatable workflow to a colleague instead of asking the department to adopt four tools at once.</p>
+<p>Start with one class. Pick one task. Save the prompt and the final work. Ask whether the result was right for the age group and the lesson goal. Then keep the tool, change the prompt, or stop using it. Small tests lower risk and make the time saved easier to see.</p>
+
 <h2>Final Verdict</h2>
 <p>AI tools won't make you a better teacher, but they will give you back hours of your week that you currently spend on admin tasks. Gamma transforms presentations from a 3-hour chore into a 20-minute edit.</p>
 <p>Grammarly makes feedback faster and more consistent. Notion AI turns lesson planning into a collaborative process with an AI assistant. Rytr handles the small content tasks that add up over a week.</p>

@@ -42,6 +42,7 @@ const post: BlogPost = {
 <p><a style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;" href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Try ElevenLabs free →</a></p>
 
 <h2>TL;DR: which AI voice fits your channel</h2>
+<p>Choose ElevenLabs for a consistent cloned narrator and short-form volume. Choose Murf AI when script-to-video sync and e-learning workflow matter more. The right choice follows the format, not a generic claim about which voice sounds best.</p>
 
 <ul style="margin:8px 0 12px 24px;line-height:1.9;">
   <li>ElevenLabs wins for short-form and faceless channels where a consistent, cloned voice across every video matters most.</li>

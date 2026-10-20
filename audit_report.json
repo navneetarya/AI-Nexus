@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-20T15:42:37",
+  "generated": "2026-10-20T16:15:46",
   "today": "2026-10-20",
   "version": "2.0",
   "live": false,
@@ -14,21 +14,21 @@
   }
  },
  "summary": {
-  "avg_score": 99.7,
+  "avg_score": 99.8,
   "pillar_avg": {
    "revenue": 100.0,
    "organic": 100.0,
    "ai": 100.0,
-   "reader": 98.0,
+   "reader": 98.7,
    "trust": 100.0
   },
   "grades": {
    "A+": 106
   },
   "severity": {
-   "medium": 32
+   "medium": 23
   },
-  "avg_strength": 91.0,
+  "avg_strength": 91.1,
   "tiers": {
    "Strong": 94,
    "Solid": 12
@@ -37,109 +37,11 @@
  },
  "posts": [
   {
-   "slug": "best-grammarly-alternatives",
-   "title": "Best Grammarly Alternatives in 2026 — Reviewed & Ranked",
-   "kind": "alternatives",
-   "intent": "transactional",
-   "words": 1204,
-   "date_modified": "2026-08-21",
-   "score": 97.9,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 86.0,
-    "trust": 100.0
-   },
-   "importance": 1.91,
-   "inbound": 4,
-   "pagerank": 12.08,
-   "tools": {
-    "grammarly": 39,
-    "quillbot": 17,
-    "rytr": 14,
-    "writesonic": 12
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1204 words; competitive 'alternatives' posts run ≈1600+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "best-grammarly-alternatives",
-     "where": "",
-     "snippet": "",
-     "priority": 2.15,
-     "live": false
-    },
-    {
-     "code": "readability",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "Flesch reading ease 50 (target ≥55-60).",
-     "fix": "Split sentences >25 words; swap multisyllabic words.",
-     "effort": "M",
-     "slug": "best-grammarly-alternatives",
-     "where": "",
-     "snippet": "",
-     "priority": 2.15,
-     "live": false
-    }
-   ],
-   "strength": 88.9,
-   "tier": "Strong",
-   "strength_pct": 27,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.85,
-    "decision": 1.0,
-    "structure": 0.95,
-    "depth": 0.602,
-    "freshness": 0.667,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 12,
-    "numbers_per_1000w": 10.0,
-    "numeric_sentences": 14,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [],
-    "tables": 1,
-    "table_cells": 25,
-    "lists": 2,
-    "verdicts": 17,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "25",
-    "bump_only_commits": "2",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "best-podcastle-alternatives",
    "title": "Best Podcastle Alternatives in 2026 — For Podcasters Who Need More",
    "kind": "alternatives",
    "intent": "transactional",
-   "words": 1311,
+   "words": 1346,
    "date_modified": "2026-10-14",
    "score": 97.9,
    "grade": "A+",
@@ -154,15 +56,15 @@
    "inbound": 13,
    "pagerank": 8.772,
    "tools": {
-    "podcastle": 37,
-    "descript": 21
+    "podcastle": 38,
+    "descript": 22
    },
    "issues": [
     {
      "code": "short",
      "pillar": "reader",
      "severity": "medium",
-     "message": "1311 words; competitive 'alternatives' posts run ≈1600+.",
+     "message": "1346 words; competitive 'alternatives' posts run ≈1600+.",
      "fix": "Deepen the weakest sections rather than padding.",
      "effort": "M",
      "slug": "best-podcastle-alternatives",
@@ -185,22 +87,22 @@
      "live": false
     }
    ],
-   "strength": 85.8,
+   "strength": 85.9,
    "tier": "Strong",
    "strength_pct": 14,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.592,
+    "evidence": 0.588,
     "decision": 0.875,
     "structure": 0.95,
-    "depth": 0.655,
+    "depth": 0.673,
     "freshness": 1.0,
     "monetisation": 1.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 6,
-    "numbers_per_1000w": 4.6,
+    "numbers_per_1000w": 4.5,
     "numeric_sentences": 6,
     "sourced_ratio": 1.0,
     "ext_domains": 3,
@@ -208,7 +110,7 @@
     "tables": 1,
     "table_cells": 20,
     "lists": 2,
-    "verdicts": 13,
+    "verdicts": 14,
     "has_negatives": true,
     "first_screen": {
      "price": true,
@@ -235,7 +137,7 @@
    "title": "AI Agents vs AI Automation: What's the Real Difference?",
    "kind": "comparison",
    "intent": "transactional",
-   "words": 2148,
+   "words": 2220,
    "date_modified": "2026-10-15",
    "score": 99.0,
    "grade": "A+",
@@ -297,10 +199,10 @@
      "g2.com",
      "trustpilot.com"
     ],
-    "tables": 2,
-    "table_cells": 32,
+    "tables": 3,
+    "table_cells": 44,
     "lists": 3,
-    "verdicts": 14,
+    "verdicts": 16,
     "has_negatives": true,
     "first_screen": {
      "price": false,
@@ -410,100 +312,11 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "ai-tools-for-teachers-2026",
-   "title": "Best AI Tools for Teachers in 2026 — Save Hours Every Week",
-   "kind": "roundup",
-   "intent": "transactional",
-   "words": 1719,
-   "date_modified": "2026-09-22",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.88,
-   "inbound": 13,
-   "pagerank": 10.899,
-   "tools": {
-    "gamma": 21,
-    "grammarly": 13,
-    "rytr": 12,
-    "notion-ai": 12,
-    "presentation-intelligence": 1
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1719 words; competitive 'roundup' posts run ≈2000+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "ai-tools-for-teachers-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 2.11,
-     "live": false
-    }
-   ],
-   "strength": 94.3,
-   "tier": "Strong",
-   "strength_pct": 77,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.871,
-    "decision": 1.0,
-    "structure": 1.0,
-    "depth": 0.688,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 18,
-    "numbers_per_1000w": 10.5,
-    "numeric_sentences": 18,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [
-     "reddit.com"
-    ],
-    "tables": 1,
-    "table_cells": 25,
-    "lists": 6,
-    "verdicts": 9,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "audience",
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "26",
-    "bump_only_commits": "3",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "best-ai-coding-tools-2026",
    "title": "Best AI Coding Tools in 2026 — Independently Reviewed & Ranked",
    "kind": "roundup",
    "intent": "transactional",
-   "words": 1360,
+   "words": 1477,
    "date_modified": "2026-10-14",
    "score": 99.0,
    "grade": "A+",
@@ -518,8 +331,8 @@
    "inbound": 10,
    "pagerank": 17.131,
    "tools": {
-    "cursor": 14,
-    "replit": 12,
+    "cursor": 16,
+    "replit": 14,
     "github-copilot": 9
    },
    "issues": [
@@ -527,7 +340,7 @@
      "code": "short",
      "pillar": "reader",
      "severity": "medium",
-     "message": "1360 words; competitive 'roundup' posts run ≈2000+.",
+     "message": "1477 words; competitive 'roundup' posts run ≈2000+.",
      "fix": "Deepen the weakest sections rather than padding.",
      "effort": "M",
      "slug": "best-ai-coding-tools-2026",
@@ -537,23 +350,23 @@
      "live": false
     }
    ],
-   "strength": 90.8,
+   "strength": 90.7,
    "tier": "Strong",
-   "strength_pct": 41,
+   "strength_pct": 40,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.767,
+    "evidence": 0.737,
     "decision": 1.0,
     "structure": 1.0,
-    "depth": 0.544,
+    "depth": 0.591,
     "freshness": 1.0,
     "monetisation": 1.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 12,
-    "numbers_per_1000w": 8.8,
-    "numeric_sentences": 12,
+    "numbers_per_1000w": 8.1,
+    "numeric_sentences": 13,
     "sourced_ratio": 1.0,
     "ext_domains": 3,
     "authority_domains": [
@@ -562,7 +375,7 @@
     "tables": 1,
     "table_cells": 25,
     "lists": 5,
-    "verdicts": 15,
+    "verdicts": 21,
     "has_negatives": true,
     "first_screen": {
      "price": true,
@@ -586,99 +399,11 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "best-ai-marketing-tools-2026",
-   "title": "Best AI Marketing Tools in 2026 — For SEO, Social & Content",
-   "kind": "roundup",
-   "intent": "transactional",
-   "words": 1425,
-   "date_modified": "2026-09-17",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 2.04,
-   "inbound": 5,
-   "pagerank": 10.846,
-   "tools": {
-    "frase": 18,
-    "writesonic": 13,
-    "ocoya": 13,
-    "jasper": 11,
-    "rytr": 2,
-    "chatgpt": 1
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1425 words; competitive 'roundup' posts run ≈2000+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "best-ai-marketing-tools-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 2.3,
-     "live": false
-    }
-   ],
-   "strength": 88.3,
-   "tier": "Strong",
-   "strength_pct": 25,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.725,
-    "decision": 0.875,
-    "structure": 1.0,
-    "depth": 0.57,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 10,
-    "numbers_per_1000w": 7.0,
-    "numeric_sentences": 13,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [],
-    "tables": 1,
-    "table_cells": 25,
-    "lists": 6,
-    "verdicts": 14,
-    "has_negatives": true,
-    "first_screen": {
-     "price": false,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "number",
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "28",
-    "bump_only_commits": "2",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "best-ai-meeting-tools-2026",
    "title": "Best AI Meeting Tools 2026 — Ranked & Compared",
    "kind": "roundup",
    "intent": "transactional",
-   "words": 2797,
+   "words": 2835,
    "date_modified": "2026-10-14",
    "score": 99.0,
    "grade": "A+",
@@ -693,7 +418,7 @@
    "inbound": 5,
    "pagerank": 9.123,
    "tools": {
-    "fireflies": 35,
+    "fireflies": 36,
     "notta": 7,
     "taskade": 3,
     "transkriptor": 3
@@ -713,12 +438,12 @@
      "live": false
     }
    ],
-   "strength": 96.8,
+   "strength": 96.6,
    "tier": "Strong",
-   "strength_pct": 92,
+   "strength_pct": 91,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.837,
+    "evidence": 0.829,
     "decision": 1.0,
     "structure": 1.0,
     "depth": 1.0,
@@ -728,7 +453,7 @@
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 27,
-    "numbers_per_1000w": 9.7,
+    "numbers_per_1000w": 9.5,
     "numeric_sentences": 29,
     "sourced_ratio": 1.0,
     "ext_domains": 4,
@@ -736,7 +461,7 @@
     "tables": 2,
     "table_cells": 71,
     "lists": 15,
-    "verdicts": 25,
+    "verdicts": 28,
     "has_negatives": true,
     "first_screen": {
      "price": true,
@@ -750,93 +475,6 @@
    },
    "git": {
     "commits": "26",
-    "bump_only_commits": "3",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
-   "slug": "best-ai-podcast-tools-2026",
-   "title": "Best AI Podcast Tools 2026 — Record, Edit & Enhance Your Show",
-   "kind": "roundup",
-   "intent": "transactional",
-   "words": 1511,
-   "date_modified": "2026-10-15",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 2.05,
-   "inbound": 6,
-   "pagerank": 14.312,
-   "tools": {
-    "podcastle": 20,
-    "descript": 15,
-    "murf-ai": 8,
-    "elevenlabs": 4,
-    "transkriptor": 2
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1511 words; competitive 'roundup' posts run ≈2000+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "best-ai-podcast-tools-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 2.31,
-     "live": false
-    }
-   ],
-   "strength": 90.0,
-   "tier": "Strong",
-   "strength_pct": 34,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.737,
-    "decision": 1.0,
-    "structure": 0.95,
-    "depth": 0.604,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 11,
-    "numbers_per_1000w": 7.3,
-    "numeric_sentences": 11,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [],
-    "tables": 1,
-    "table_cells": 25,
-    "lists": 2,
-    "verdicts": 13,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "number",
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "31",
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -1109,7 +747,7 @@
    "title": "Best AI Tools for Developers in 2026 — Reviewed & Ranked",
    "kind": "roundup",
    "intent": "transactional",
-   "words": 1500,
+   "words": 1553,
    "date_modified": "2026-08-22",
    "score": 99.0,
    "grade": "A+",
@@ -1125,7 +763,7 @@
    "pagerank": 7.407,
    "tools": {
     "replit": 14,
-    "cursor": 13,
+    "cursor": 14,
     "github-copilot": 10,
     "perplexity": 1,
     "claude-code": 1,
@@ -1136,7 +774,7 @@
      "code": "short",
      "pillar": "reader",
      "severity": "medium",
-     "message": "1500 words; competitive 'roundup' posts run ≈2000+.",
+     "message": "1553 words; competitive 'roundup' posts run ≈2000+.",
      "fix": "Deepen the weakest sections rather than padding.",
      "effort": "M",
      "slug": "best-ai-tools-for-developers-2026",
@@ -1146,23 +784,23 @@
      "live": false
     }
    ],
-   "strength": 87.8,
+   "strength": 88.0,
    "tier": "Strong",
-   "strength_pct": 23,
+   "strength_pct": 24,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.688,
+    "evidence": 0.683,
     "decision": 1.0,
     "structure": 1.0,
-    "depth": 0.6,
+    "depth": 0.621,
     "freshness": 0.809,
     "monetisation": 1.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 8,
-    "numbers_per_1000w": 5.3,
-    "numeric_sentences": 9,
+    "numbers_per_1000w": 5.2,
+    "numeric_sentences": 10,
     "sourced_ratio": 1.0,
     "ext_domains": 5,
     "authority_domains": [
@@ -1171,7 +809,7 @@
     "tables": 1,
     "table_cells": 24,
     "lists": 3,
-    "verdicts": 15,
+    "verdicts": 16,
     "has_negatives": true,
     "first_screen": {
      "price": true,
@@ -1237,7 +875,7 @@
    ],
    "strength": 92.3,
    "tier": "Strong",
-   "strength_pct": 59,
+   "strength_pct": 60,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.942,
@@ -1289,7 +927,7 @@
    "title": "Best AI Voice Generators for YouTube 2026: 2 Tools, 4 Real Use Cases",
    "kind": "roundup",
    "intent": "transactional",
-   "words": 1851,
+   "words": 1887,
    "date_modified": "2026-10-20",
    "score": 99.0,
    "grade": "A+",
@@ -1304,15 +942,15 @@
    "inbound": 13,
    "pagerank": 9.044,
    "tools": {
-    "elevenlabs": 30,
-    "murf-ai": 17
+    "elevenlabs": 31,
+    "murf-ai": 18
    },
    "issues": [
     {
      "code": "short",
      "pillar": "reader",
      "severity": "medium",
-     "message": "1851 words; competitive 'roundup' posts run ≈2000+.",
+     "message": "1887 words; competitive 'roundup' posts run ≈2000+.",
      "fix": "Deepen the weakest sections rather than padding.",
      "effort": "M",
      "slug": "best-ai-voice-generators-for-youtube-2026",
@@ -1327,17 +965,17 @@
    "strength_pct": 41,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.896,
+    "evidence": 0.887,
     "decision": 0.75,
     "structure": 0.95,
-    "depth": 0.74,
+    "depth": 0.755,
     "freshness": 1.0,
     "monetisation": 1.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 22,
-    "numbers_per_1000w": 11.9,
+    "numbers_per_1000w": 11.7,
     "numeric_sentences": 15,
     "sourced_ratio": 1.0,
     "ext_domains": 3,
@@ -1345,7 +983,7 @@
     "tables": 3,
     "table_cells": 53,
     "lists": 2,
-    "verdicts": 13,
+    "verdicts": 15,
     "has_negatives": true,
     "first_screen": {
      "price": false,
@@ -1372,7 +1010,7 @@
    "title": "Best AI Writing Tools for Beginners 2026 — Reviewed & Ranked",
    "kind": "roundup",
    "intent": "transactional",
-   "words": 1470,
+   "words": 1586,
    "date_modified": "2026-09-30",
    "score": 99.0,
    "grade": "A+",
@@ -1387,9 +1025,9 @@
    "inbound": 3,
    "pagerank": 7.431,
    "tools": {
-    "rytr": 17,
-    "grammarly": 15,
-    "quillbot": 13,
+    "rytr": 19,
+    "grammarly": 17,
+    "quillbot": 15,
     "writesonic": 12,
     "spaceship": 1,
     "jetpack-ai-assistant": 1
@@ -1399,7 +1037,7 @@
      "code": "short",
      "pillar": "reader",
      "severity": "medium",
-     "message": "1470 words; competitive 'roundup' posts run ≈2000+.",
+     "message": "1586 words; competitive 'roundup' posts run ≈2000+.",
      "fix": "Deepen the weakest sections rather than padding.",
      "effort": "M",
      "slug": "best-ai-writing-tools-for-beginners-2026",
@@ -1409,30 +1047,30 @@
      "live": false
     }
    ],
-   "strength": 92.4,
+   "strength": 92.3,
    "tier": "Strong",
    "strength_pct": 60,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.825,
+    "evidence": 0.796,
     "decision": 1.0,
     "structure": 1.0,
-    "depth": 0.588,
+    "depth": 0.634,
     "freshness": 1.0,
     "monetisation": 1.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 15,
-    "numbers_per_1000w": 10.2,
-    "numeric_sentences": 14,
+    "numbers_per_1000w": 9.5,
+    "numeric_sentences": 15,
     "sourced_ratio": 1.0,
     "ext_domains": 3,
     "authority_domains": [],
     "tables": 1,
     "table_cells": 25,
-    "lists": 4,
-    "verdicts": 18,
+    "lists": 5,
+    "verdicts": 20,
     "has_negatives": true,
     "first_screen": {
      "price": true,
@@ -1456,184 +1094,11 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "best-midjourney-alternatives-2026",
-   "title": "Best Midjourney Alternatives in 2026 — Free & Paid Options Compared",
-   "kind": "alternatives",
-   "intent": "transactional",
-   "words": 1553,
-   "date_modified": "2026-10-20",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.73,
-   "inbound": 3,
-   "pagerank": 15.213,
-   "tools": {
-    "midjourney": 28,
-    "leonardo-ai": 16,
-    "stable-diffusion": 16,
-    "chatgpt": 8
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1553 words; competitive 'alternatives' posts run ≈1600+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "best-midjourney-alternatives-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 1.94,
-     "live": false
-    }
-   ],
-   "strength": 93.5,
-   "tier": "Strong",
-   "strength_pct": 68,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.788,
-    "decision": 1.0,
-    "structure": 1.0,
-    "depth": 0.776,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 12,
-    "numbers_per_1000w": 7.7,
-    "numeric_sentences": 10,
-    "sourced_ratio": 1.0,
-    "ext_domains": 5,
-    "authority_domains": [],
-    "tables": 1,
-    "table_cells": 25,
-    "lists": 6,
-    "verdicts": 31,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "24",
-    "bump_only_commits": "2",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
-   "slug": "chatgpt-alternatives-free-2026",
-   "title": "Best Free ChatGPT Alternatives in 2026: Compared Head-to-Head",
-   "kind": "alternatives",
-   "intent": "transactional",
-   "words": 1489,
-   "date_modified": "2026-09-29",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.9,
-   "inbound": 14,
-   "pagerank": 11.597,
-   "tools": {
-    "chatgpt": 28,
-    "perplexity": 17,
-    "rytr": 12,
-    "writesonic": 10,
-    "perplexity-comet": 1
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1489 words; competitive 'alternatives' posts run ≈1600+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "chatgpt-alternatives-free-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 2.14,
-     "live": false
-    }
-   ],
-   "strength": 94.5,
-   "tier": "Strong",
-   "strength_pct": 80,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.854,
-    "decision": 1.0,
-    "structure": 1.0,
-    "depth": 0.745,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 15,
-    "numbers_per_1000w": 10.1,
-    "numeric_sentences": 14,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [
-     "reddit.com"
-    ],
-    "tables": 1,
-    "table_cells": 25,
-    "lists": 6,
-    "verdicts": 16,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "26",
-    "bump_only_commits": "3",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "chatgpt-free-vs-claude-free-vs-gemini-free-2026",
    "title": "ChatGPT Free vs Claude Free vs Gemini Free: Which AI Actually Works for Freelancers in 2026?",
    "kind": "comparison",
    "intent": "transactional",
-   "words": 1461,
+   "words": 1510,
    "date_modified": "2026-10-20",
    "score": 99.0,
    "grade": "A+",
@@ -1648,7 +1113,7 @@
    "inbound": 5,
    "pagerank": 11.185,
    "tools": {
-    "chatgpt": 18,
+    "chatgpt": 19,
     "claude-code": 4
    },
    "issues": [
@@ -1656,7 +1121,7 @@
      "code": "short",
      "pillar": "reader",
      "severity": "medium",
-     "message": "1461 words; competitive 'comparison' posts run ≈1600+.",
+     "message": "1510 words; competitive 'comparison' posts run ≈1600+.",
      "fix": "Deepen the weakest sections rather than padding.",
      "effort": "M",
      "slug": "chatgpt-free-vs-claude-free-vs-gemini-free-2026",
@@ -1666,22 +1131,22 @@
      "live": false
     }
    ],
-   "strength": 85.2,
+   "strength": 85.1,
    "tier": "Strong",
    "strength_pct": 12,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.896,
+    "evidence": 0.879,
     "decision": 1.0,
     "structure": 1.0,
-    "depth": 0.731,
+    "depth": 0.755,
     "freshness": 1.0,
     "monetisation": 0.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 15,
-    "numbers_per_1000w": 10.3,
+    "numbers_per_1000w": 9.9,
     "numeric_sentences": 8,
     "sourced_ratio": 1.0,
     "ext_domains": 5,
@@ -1689,7 +1154,7 @@
     "tables": 2,
     "table_cells": 52,
     "lists": 3,
-    "verdicts": 8,
+    "verdicts": 11,
     "has_negatives": true,
     "first_screen": {
      "price": true,
@@ -1716,7 +1181,7 @@
    "title": "Cheapest AI Coding Tools in 2026 — Real Pricing, Compared",
    "kind": "pricing",
    "intent": "transactional",
-   "words": 964,
+   "words": 1022,
    "date_modified": "2026-10-15",
    "score": 99.0,
    "grade": "A+",
@@ -1731,8 +1196,8 @@
    "inbound": 8,
    "pagerank": 9.624,
    "tools": {
+    "replit": 14,
     "cursor": 14,
-    "replit": 13,
     "github-copilot": 13,
     "windsurf": 8,
     "claude-code": 1
@@ -1742,7 +1207,7 @@
      "code": "short",
      "pillar": "reader",
      "severity": "medium",
-     "message": "964 words; competitive 'pricing' posts run ≈1200+.",
+     "message": "1022 words; competitive 'pricing' posts run ≈1200+.",
      "fix": "Deepen the weakest sections rather than padding.",
      "effort": "M",
      "slug": "cheapest-ai-coding-tools-2026",
@@ -1752,23 +1217,23 @@
      "live": false
     }
    ],
-   "strength": 91.3,
+   "strength": 91.2,
    "tier": "Strong",
    "strength_pct": 47,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.779,
+    "evidence": 0.758,
     "decision": 1.0,
     "structure": 0.95,
-    "depth": 0.643,
+    "depth": 0.681,
     "freshness": 1.0,
     "monetisation": 1.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 8,
-    "numbers_per_1000w": 8.3,
-    "numeric_sentences": 14,
+    "numbers_per_1000w": 7.8,
+    "numeric_sentences": 15,
     "sourced_ratio": 1.0,
     "ext_domains": 4,
     "authority_domains": [
@@ -1792,178 +1257,6 @@
    "git": {
     "commits": "24",
     "bump_only_commits": "3",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
-   "slug": "elevenlabs-alternatives-2026",
-   "title": "ElevenLabs Alternatives 2026: 5 Tools Worth Switching To (and 2 Not To)",
-   "kind": "alternatives",
-   "intent": "transactional",
-   "words": 1381,
-   "date_modified": "2026-10-09",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.85,
-   "inbound": 7,
-   "pagerank": 14.154,
-   "tools": {
-    "elevenlabs": 29,
-    "murf-ai": 11,
-    "soundraw": 1
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1381 words; competitive 'alternatives' posts run ≈1600+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "elevenlabs-alternatives-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 2.08,
-     "live": false
-    }
-   ],
-   "strength": 88.4,
-   "tier": "Strong",
-   "strength_pct": 26,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.8,
-    "decision": 0.75,
-    "structure": 0.95,
-    "depth": 0.691,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 11,
-    "numbers_per_1000w": 8.0,
-    "numeric_sentences": 9,
-    "sourced_ratio": 1.0,
-    "ext_domains": 5,
-    "authority_domains": [
-     "trustpilot.com"
-    ],
-    "tables": 2,
-    "table_cells": 54,
-    "lists": 2,
-    "verdicts": 17,
-    "has_negatives": true,
-    "first_screen": {
-     "price": false,
-     "audience": false,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "number",
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "20",
-    "bump_only_commits": "4",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
-   "slug": "elevenlabs-pricing-character-credits-2026",
-   "title": "ElevenLabs Pricing: The Real Cost of Character Credits (2026)",
-   "kind": "pricing",
-   "intent": "transactional",
-   "words": 1180,
-   "date_modified": "2026-10-15",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.53,
-   "inbound": 5,
-   "pagerank": 7.949,
-   "tools": {
-    "elevenlabs": 14,
-    "murf-ai": 5
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1180 words; competitive 'pricing' posts run ≈1200+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "elevenlabs-pricing-character-credits-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 1.72,
-     "live": false
-    }
-   ],
-   "strength": 91.9,
-   "tier": "Strong",
-   "strength_pct": 51,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.933,
-    "decision": 0.875,
-    "structure": 0.95,
-    "depth": 0.787,
-    "freshness": 1.0,
-    "monetisation": 0.8
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 34,
-    "numbers_per_1000w": 28.8,
-    "numeric_sentences": 22,
-    "sourced_ratio": 1.0,
-    "ext_domains": 4,
-    "authority_domains": [
-     "g2.com"
-    ],
-    "tables": 1,
-    "table_cells": 35,
-    "lists": 2,
-    "verdicts": 9,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": false,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "12",
-    "bump_only_commits": "1",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
    },
@@ -2061,90 +1354,6 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",
-   "title": "GPT-5.5 vs Claude Opus 4.8 vs Grok 4: Which AI is Best in June 2026?",
-   "kind": "comparison",
-   "intent": "transactional",
-   "words": 1571,
-   "date_modified": "2026-10-20",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.38,
-   "inbound": 5,
-   "pagerank": 10.129,
-   "tools": {
-    "chatgpt": 14,
-    "cursor": 1
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1571 words; competitive 'comparison' posts run ≈1600+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",
-     "where": "",
-     "snippet": "",
-     "priority": 1.56,
-     "live": false
-    }
-   ],
-   "strength": 83.9,
-   "tier": "Solid",
-   "strength_pct": 9,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.896,
-    "decision": 0.875,
-    "structure": 1.0,
-    "depth": 0.785,
-    "freshness": 1.0,
-    "monetisation": 0.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 15,
-    "numbers_per_1000w": 9.5,
-    "numeric_sentences": 18,
-    "sourced_ratio": 1.0,
-    "ext_domains": 6,
-    "authority_domains": [],
-    "tables": 3,
-    "table_cells": 68,
-    "lists": 5,
-    "verdicts": 16,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": false,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "number",
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "22",
-    "bump_only_commits": "3",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "how-to-beat-ats-resume-screening-2026",
    "title": "How to Beat ATS Resume Screening in 2026 (What Actually Works)",
    "kind": "howto",
@@ -2227,96 +1436,11 @@
    "aff_clicks": 0.0
   },
   {
-   "slug": "jasper-ai-alternatives",
-   "title": "Best Jasper AI Alternatives in 2026 — Cheaper & Reviewed",
-   "kind": "alternatives",
-   "intent": "transactional",
-   "words": 1456,
-   "date_modified": "2026-10-14",
-   "score": 99.0,
-   "grade": "A+",
-   "scores": {
-    "revenue": 100.0,
-    "organic": 100.0,
-    "ai": 100.0,
-    "reader": 93.0,
-    "trust": 100.0
-   },
-   "importance": 1.88,
-   "inbound": 3,
-   "pagerank": 7.418,
-   "tools": {
-    "jasper": 42,
-    "writesonic": 16,
-    "rytr": 12,
-    "frase": 12
-   },
-   "issues": [
-    {
-     "code": "short",
-     "pillar": "reader",
-     "severity": "medium",
-     "message": "1456 words; competitive 'alternatives' posts run ≈1600+.",
-     "fix": "Deepen the weakest sections rather than padding.",
-     "effort": "M",
-     "slug": "jasper-ai-alternatives",
-     "where": "",
-     "snippet": "",
-     "priority": 2.12,
-     "live": false
-    }
-   ],
-   "strength": 93.7,
-   "tier": "Strong",
-   "strength_pct": 70,
-   "strength_parts": {
-    "uniqueness": 1.0,
-    "evidence": 0.858,
-    "decision": 1.0,
-    "structure": 0.95,
-    "depth": 0.728,
-    "freshness": 1.0,
-    "monetisation": 1.0
-   },
-   "unique_pct": 100.0,
-   "metrics": {
-    "numbers": 16,
-    "numbers_per_1000w": 11.0,
-    "numeric_sentences": 30,
-    "sourced_ratio": 1.0,
-    "ext_domains": 3,
-    "authority_domains": [],
-    "tables": 1,
-    "table_cells": 30,
-    "lists": 2,
-    "verdicts": 9,
-    "has_negatives": true,
-    "first_screen": {
-     "price": true,
-     "audience": true,
-     "verdict": true,
-     "named_tool": true
-    },
-    "title_features": [
-     "hook"
-    ]
-   },
-   "git": {
-    "commits": "25",
-    "bump_only_commits": "3",
-    "last_real_edit": "2026-10-20",
-    "last_commit": "2026-10-20"
-   },
-   "search": null,
-   "sessions": 0.0,
-   "aff_clicks": 0.0
-  },
-  {
    "slug": "leonardo-vs-midjourney-2026",
    "title": "Leonardo.ai vs Midjourney 2026 — Free Plan Comparison (Which Is Worth It?)",
    "kind": "comparison",
    "intent": "transactional",
-   "words": 1310,
+   "words": 1361,
    "date_modified": "2026-08-21",
    "score": 99.0,
    "grade": "A+",
@@ -2331,15 +1455,15 @@
    "inbound": 4,
    "pagerank": 10.473,
    "tools": {
-    "midjourney": 19,
-    "leonardo-ai": 15
+    "midjourney": 20,
+    "leonardo-ai": 16
    },
    "issues": [
     {
      "code": "short",
      "pillar": "reader",
      "severity": "medium",
-     "message": "1310 words; competitive 'comparison' posts run ≈1600+.",
+     "message": "1361 words; competitive 'comparison' posts run ≈1600+.",
      "fix": "Deepen the weakest sections rather than padding.",
      "effort": "M",
      "slug": "leonardo-vs-midjourney-2026",
@@ -2349,23 +1473,23 @@
      "live": false
     }
    ],
-   "strength": 86.3,
+   "strength": 86.4,
    "tier": "Strong",
    "strength_pct": 15,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.654,
+    "evidence": 0.646,
     "decision": 1.0,
     "structure": 1.0,
-    "depth": 0.655,
+    "depth": 0.68,
     "freshness": 0.667,
     "monetisation": 1.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 7,
-    "numbers_per_1000w": 5.3,
-    "numeric_sentences": 9,
+    "numbers_per_1000w": 5.1,
+    "numeric_sentences": 11,
     "sourced_ratio": 1.0,
     "ext_domains": 4,
     "authority_domains": [
@@ -2375,7 +1499,7 @@
     "tables": 1,
     "table_cells": 24,
     "lists": 3,
-    "verdicts": 10,
+    "verdicts": 11,
     "has_negatives": true,
     "first_screen": {
      "price": true,
@@ -2402,7 +1526,7 @@
    "title": "Murf AI Alternatives 2026: 4 Tools Worth Considering (and When to Stay)",
    "kind": "alternatives",
    "intent": "transactional",
-   "words": 1093,
+   "words": 1180,
    "date_modified": "2026-10-09",
    "score": 99.0,
    "grade": "A+",
@@ -2417,7 +1541,7 @@
    "inbound": 5,
    "pagerank": 10.258,
    "tools": {
-    "elevenlabs": 13,
+    "elevenlabs": 14,
     "murf-ai": 10
    },
    "issues": [
@@ -2425,7 +1549,7 @@
      "code": "short",
      "pillar": "reader",
      "severity": "medium",
-     "message": "1093 words; competitive 'alternatives' posts run ≈1600+.",
+     "message": "1180 words; competitive 'alternatives' posts run ≈1600+.",
      "fix": "Deepen the weakest sections rather than padding.",
      "effort": "M",
      "slug": "murf-ai-alternatives-2026",
@@ -2435,23 +1559,23 @@
      "live": false
     }
    ],
-   "strength": 89.0,
+   "strength": 88.9,
    "tier": "Strong",
-   "strength_pct": 28,
+   "strength_pct": 27,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.808,
+    "evidence": 0.783,
     "decision": 0.875,
     "structure": 0.95,
-    "depth": 0.546,
+    "depth": 0.59,
     "freshness": 1.0,
     "monetisation": 1.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 9,
-    "numbers_per_1000w": 8.2,
-    "numeric_sentences": 9,
+    "numbers_per_1000w": 7.6,
+    "numeric_sentences": 10,
     "sourced_ratio": 1.0,
     "ext_domains": 5,
     "authority_domains": [
@@ -2460,7 +1584,7 @@
     "tables": 2,
     "table_cells": 44,
     "lists": 2,
-    "verdicts": 9,
+    "verdicts": 10,
     "has_negatives": true,
     "first_screen": {
      "price": true,
@@ -2488,7 +1612,7 @@
    "title": "Perplexity AI Review 2026: Is It Worth It vs Google Search?",
    "kind": "comparison",
    "intent": "transactional",
-   "words": 1742,
+   "words": 1776,
    "date_modified": "2026-09-29",
    "score": 99.0,
    "grade": "A+",
@@ -2503,7 +1627,7 @@
    "inbound": 15,
    "pagerank": 11.036,
    "tools": {
-    "perplexity": 51,
+    "perplexity": 52,
     "notion-ai": 4,
     "chatgpt": 4,
     "writesonic": 2,
@@ -2530,17 +1654,17 @@
    "strength_pct": 24,
    "strength_parts": {
     "uniqueness": 1.0,
-    "evidence": 0.688,
+    "evidence": 0.683,
     "decision": 0.75,
     "structure": 0.95,
-    "depth": 0.871,
+    "depth": 0.888,
     "freshness": 1.0,
     "monetisation": 1.0
    },
    "unique_pct": 100.0,
    "metrics": {
     "numbers": 12,
-    "numbers_per_1000w": 6.9,
+    "numbers_per_1000w": 6.8,
     "numeric_sentences": 12,
     "sourced_ratio": 1.0,
     "ext_domains": 3,
@@ -2550,7 +1674,7 @@
     "tables": 2,
     "table_cells": 36,
     "lists": 2,
-    "verdicts": 8,
+    "verdicts": 10,
     "has_negatives": true,
     "first_screen": {
      "price": true,
@@ -2830,7 +1954,7 @@
    "issues": [],
    "strength": 93.9,
    "tier": "Strong",
-   "strength_pct": 75,
+   "strength_pct": 74,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.771,
@@ -2944,6 +2068,81 @@
    },
    "git": {
     "commits": "27",
+    "bump_only_commits": "3",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "ai-tools-for-teachers-2026",
+   "title": "Best AI Tools for Teachers in 2026 — Save Hours Every Week",
+   "kind": "roundup",
+   "intent": "transactional",
+   "words": 2034,
+   "date_modified": "2026-09-22",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.88,
+   "inbound": 13,
+   "pagerank": 10.899,
+   "tools": {
+    "gamma": 22,
+    "grammarly": 15,
+    "rytr": 13,
+    "notion-ai": 13,
+    "presentation-intelligence": 1
+   },
+   "issues": [],
+   "strength": 94.1,
+   "tier": "Strong",
+   "strength_pct": 76,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.8,
+    "decision": 1.0,
+    "structure": 1.0,
+    "depth": 0.814,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 18,
+    "numbers_per_1000w": 8.8,
+    "numeric_sentences": 18,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [
+     "reddit.com"
+    ],
+    "tables": 1,
+    "table_cells": 25,
+    "lists": 7,
+    "verdicts": 13,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "audience",
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "26",
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -3200,7 +2399,7 @@
    "issues": [],
    "strength": 96.7,
    "tier": "Strong",
-   "strength_pct": 91,
+   "strength_pct": 92,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.833,
@@ -3737,6 +2936,80 @@
    "aff_clicks": 0.0
   },
   {
+   "slug": "best-ai-marketing-tools-2026",
+   "title": "Best AI Marketing Tools in 2026 — For SEO, Social & Content",
+   "kind": "roundup",
+   "intent": "transactional",
+   "words": 2001,
+   "date_modified": "2026-09-17",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 2.04,
+   "inbound": 5,
+   "pagerank": 10.846,
+   "tools": {
+    "frase": 21,
+    "writesonic": 16,
+    "ocoya": 16,
+    "jasper": 14,
+    "rytr": 2,
+    "chatgpt": 1
+   },
+   "issues": [],
+   "strength": 89.0,
+   "tier": "Strong",
+   "strength_pct": 28,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.642,
+    "decision": 0.875,
+    "structure": 1.0,
+    "depth": 0.8,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 10,
+    "numbers_per_1000w": 5.0,
+    "numeric_sentences": 20,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [],
+    "tables": 1,
+    "table_cells": 25,
+    "lists": 7,
+    "verdicts": 15,
+    "has_negatives": true,
+    "first_screen": {
+     "price": false,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "number",
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "28",
+    "bump_only_commits": "2",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
    "slug": "best-ai-music-generator-tools-2026",
    "title": "Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)",
    "kind": "comparison",
@@ -3832,7 +3105,7 @@
    "issues": [],
    "strength": 90.7,
    "tier": "Strong",
-   "strength_pct": 39,
+   "strength_pct": 40,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.7,
@@ -3940,6 +3213,79 @@
    "git": {
     "commits": "21",
     "bump_only_commits": "2",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "best-ai-podcast-tools-2026",
+   "title": "Best AI Podcast Tools 2026 — Record, Edit & Enhance Your Show",
+   "kind": "roundup",
+   "intent": "transactional",
+   "words": 2002,
+   "date_modified": "2026-10-15",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 2.08,
+   "inbound": 6,
+   "pagerank": 14.312,
+   "tools": {
+    "podcastle": 23,
+    "descript": 19,
+    "murf-ai": 10,
+    "elevenlabs": 4,
+    "transkriptor": 2
+   },
+   "issues": [],
+   "strength": 90.5,
+   "tier": "Strong",
+   "strength_pct": 38,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.662,
+    "decision": 1.0,
+    "structure": 0.95,
+    "depth": 0.801,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 11,
+    "numbers_per_1000w": 5.5,
+    "numeric_sentences": 11,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [],
+    "tables": 2,
+    "table_cells": 40,
+    "lists": 2,
+    "verdicts": 15,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "number",
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "31",
+    "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
    },
@@ -4628,7 +3974,7 @@
    "issues": [],
    "strength": 91.9,
    "tier": "Strong",
-   "strength_pct": 51,
+   "strength_pct": 50,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.787,
@@ -4662,7 +4008,7 @@
     ]
    },
    "git": {
-    "commits": "30",
+    "commits": "31",
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -4703,7 +4049,7 @@
    "issues": [],
    "strength": 93.9,
    "tier": "Strong",
-   "strength_pct": 75,
+   "strength_pct": 74,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.792,
@@ -4890,7 +4236,7 @@
     ]
    },
    "git": {
-    "commits": "35",
+    "commits": "36",
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -4931,7 +4277,7 @@
    "issues": [],
    "strength": 93.8,
    "tier": "Strong",
-   "strength_pct": 73,
+   "strength_pct": 72,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.783,
@@ -5571,7 +4917,7 @@
    "issues": [],
    "strength": 93.5,
    "tier": "Strong",
-   "strength_pct": 68,
+   "strength_pct": 67,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.846,
@@ -5830,7 +5176,7 @@
     ]
    },
    "git": {
-    "commits": "28",
+    "commits": "29",
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -5871,7 +5217,7 @@
    "issues": [],
    "strength": 92.1,
    "tier": "Strong",
-   "strength_pct": 55,
+   "strength_pct": 54,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.688,
@@ -5944,7 +5290,7 @@
    "issues": [],
    "strength": 90.0,
    "tier": "Strong",
-   "strength_pct": 34,
+   "strength_pct": 33,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.696,
@@ -5978,7 +5324,7 @@
     ]
    },
    "git": {
-    "commits": "27",
+    "commits": "28",
     "bump_only_commits": "2",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -6060,6 +5406,77 @@
    "aff_clicks": 0.0
   },
   {
+   "slug": "best-grammarly-alternatives",
+   "title": "Best Grammarly Alternatives in 2026 — Reviewed & Ranked",
+   "kind": "alternatives",
+   "intent": "transactional",
+   "words": 1667,
+   "date_modified": "2026-08-21",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.91,
+   "inbound": 4,
+   "pagerank": 12.08,
+   "tools": {
+    "grammarly": 45,
+    "quillbot": 22,
+    "rytr": 18,
+    "writesonic": 15
+   },
+   "issues": [],
+   "strength": 88.9,
+   "tier": "Strong",
+   "strength_pct": 27,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.733,
+    "decision": 1.0,
+    "structure": 0.95,
+    "depth": 0.834,
+    "freshness": 0.667,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 12,
+    "numbers_per_1000w": 7.2,
+    "numeric_sentences": 15,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [],
+    "tables": 2,
+    "table_cells": 40,
+    "lists": 2,
+    "verdicts": 22,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "25",
+    "bump_only_commits": "2",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
    "slug": "best-invideo-alternatives-2026",
    "title": "Best InVideo AI Alternatives 2026 — Reviewed for Faceless YouTube",
    "kind": "alternatives",
@@ -6089,7 +5506,7 @@
    "issues": [],
    "strength": 91.2,
    "tier": "Strong",
-   "strength_pct": 46,
+   "strength_pct": 47,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.667,
@@ -6125,6 +5542,77 @@
    "git": {
     "commits": "33",
     "bump_only_commits": "3",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "best-midjourney-alternatives-2026",
+   "title": "Best Midjourney Alternatives in 2026 — Free & Paid Options Compared",
+   "kind": "alternatives",
+   "intent": "transactional",
+   "words": 1606,
+   "date_modified": "2026-10-20",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.73,
+   "inbound": 3,
+   "pagerank": 15.213,
+   "tools": {
+    "midjourney": 28,
+    "leonardo-ai": 17,
+    "stable-diffusion": 17,
+    "chatgpt": 8
+   },
+   "issues": [],
+   "strength": 93.6,
+   "tier": "Strong",
+   "strength_pct": 69,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.779,
+    "decision": 1.0,
+    "structure": 1.0,
+    "depth": 0.803,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 12,
+    "numbers_per_1000w": 7.5,
+    "numeric_sentences": 10,
+    "sourced_ratio": 1.0,
+    "ext_domains": 5,
+    "authority_domains": [],
+    "tables": 1,
+    "table_cells": 25,
+    "lists": 6,
+    "verdicts": 36,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "24",
+    "bump_only_commits": "2",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
    },
@@ -6342,7 +5830,7 @@
     ]
    },
    "git": {
-    "commits": "26",
+    "commits": "27",
     "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
@@ -6455,7 +5943,7 @@
    "issues": [],
    "strength": 90.4,
    "tier": "Strong",
-   "strength_pct": 37,
+   "strength_pct": 36,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.662,
@@ -6501,6 +5989,80 @@
    "aff_clicks": 0.0
   },
   {
+   "slug": "chatgpt-alternatives-free-2026",
+   "title": "Best Free ChatGPT Alternatives in 2026: Compared Head-to-Head",
+   "kind": "alternatives",
+   "intent": "transactional",
+   "words": 1620,
+   "date_modified": "2026-09-29",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.9,
+   "inbound": 14,
+   "pagerank": 11.597,
+   "tools": {
+    "chatgpt": 28,
+    "perplexity": 19,
+    "rytr": 14,
+    "writesonic": 12,
+    "perplexity-comet": 1
+   },
+   "issues": [],
+   "strength": 94.5,
+   "tier": "Strong",
+   "strength_pct": 80,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.821,
+    "decision": 1.0,
+    "structure": 1.0,
+    "depth": 0.81,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 15,
+    "numbers_per_1000w": 9.3,
+    "numeric_sentences": 14,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [
+     "reddit.com"
+    ],
+    "tables": 1,
+    "table_cells": 25,
+    "lists": 7,
+    "verdicts": 21,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "26",
+    "bump_only_commits": "3",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
    "slug": "chatgpt-atlas-vs-perplexity-comet-vs-dia-2026",
    "title": "ChatGPT Atlas vs Perplexity Comet vs Dia (2026): Which AI Browser Should You Actually Install?",
    "kind": "comparison",
@@ -6527,7 +6089,7 @@
    "issues": [],
    "strength": 90.1,
    "tier": "Strong",
-   "strength_pct": 35,
+   "strength_pct": 34,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.504,
@@ -6752,7 +6314,7 @@
    "issues": [],
    "strength": 92.0,
    "tier": "Strong",
-   "strength_pct": 52,
+   "strength_pct": 51,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.6,
@@ -6832,7 +6394,7 @@
    "issues": [],
    "strength": 93.5,
    "tier": "Strong",
-   "strength_pct": 68,
+   "strength_pct": 67,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 1.0,
@@ -6876,6 +6438,150 @@
    "aff_clicks": 0.0
   },
   {
+   "slug": "elevenlabs-alternatives-2026",
+   "title": "ElevenLabs Alternatives 2026: 5 Tools Worth Switching To (and 2 Not To)",
+   "kind": "alternatives",
+   "intent": "transactional",
+   "words": 1612,
+   "date_modified": "2026-10-09",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.85,
+   "inbound": 7,
+   "pagerank": 14.154,
+   "tools": {
+    "elevenlabs": 30,
+    "murf-ai": 12,
+    "soundraw": 1
+   },
+   "issues": [],
+   "strength": 88.6,
+   "tier": "Strong",
+   "strength_pct": 25,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.75,
+    "decision": 0.75,
+    "structure": 0.95,
+    "depth": 0.806,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 11,
+    "numbers_per_1000w": 6.8,
+    "numeric_sentences": 9,
+    "sourced_ratio": 1.0,
+    "ext_domains": 5,
+    "authority_domains": [
+     "trustpilot.com"
+    ],
+    "tables": 3,
+    "table_cells": 69,
+    "lists": 2,
+    "verdicts": 19,
+    "has_negatives": true,
+    "first_screen": {
+     "price": false,
+     "audience": false,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "number",
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "20",
+    "bump_only_commits": "4",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "elevenlabs-pricing-character-credits-2026",
+   "title": "ElevenLabs Pricing: The Real Cost of Character Credits (2026)",
+   "kind": "pricing",
+   "intent": "transactional",
+   "words": 1244,
+   "date_modified": "2026-10-15",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.53,
+   "inbound": 5,
+   "pagerank": 7.949,
+   "tools": {
+    "elevenlabs": 14,
+    "murf-ai": 5
+   },
+   "issues": [],
+   "strength": 92.3,
+   "tier": "Strong",
+   "strength_pct": 60,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.933,
+    "decision": 0.875,
+    "structure": 0.95,
+    "depth": 0.829,
+    "freshness": 1.0,
+    "monetisation": 0.8
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 34,
+    "numbers_per_1000w": 27.3,
+    "numeric_sentences": 23,
+    "sourced_ratio": 1.0,
+    "ext_domains": 4,
+    "authority_domains": [
+     "g2.com"
+    ],
+    "tables": 1,
+    "table_cells": 35,
+    "lists": 2,
+    "verdicts": 10,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": false,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "12",
+    "bump_only_commits": "1",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
    "slug": "elevenlabs-youtube-commercial-rights-2026",
    "title": "Can I use ElevenLabs for YouTube? (Commercial Rights Guide, 2026)",
    "kind": "howto",
@@ -6900,7 +6606,7 @@
    "issues": [],
    "strength": 93.8,
    "tier": "Strong",
-   "strength_pct": 73,
+   "strength_pct": 72,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.817,
@@ -7166,6 +6872,76 @@
    "aff_clicks": 0.0
   },
   {
+   "slug": "gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",
+   "title": "GPT-5.5 vs Claude Opus 4.8 vs Grok 4: Which AI is Best in June 2026?",
+   "kind": "comparison",
+   "intent": "transactional",
+   "words": 1621,
+   "date_modified": "2026-10-20",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.38,
+   "inbound": 5,
+   "pagerank": 10.129,
+   "tools": {
+    "chatgpt": 14,
+    "cursor": 1
+   },
+   "issues": [],
+   "strength": 84.0,
+   "tier": "Solid",
+   "strength_pct": 9,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.887,
+    "decision": 0.875,
+    "structure": 1.0,
+    "depth": 0.81,
+    "freshness": 1.0,
+    "monetisation": 0.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 15,
+    "numbers_per_1000w": 9.3,
+    "numeric_sentences": 18,
+    "sourced_ratio": 1.0,
+    "ext_domains": 6,
+    "authority_domains": [],
+    "tables": 3,
+    "table_cells": 68,
+    "lists": 5,
+    "verdicts": 18,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": false,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "number",
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "22",
+    "bump_only_commits": "3",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
    "slug": "grok-4-vs-chatgpt-vs-claude-content-creators-2026",
    "title": "Grok 4 vs ChatGPT vs Claude: Which AI Is Best for Content Creators in 2026?",
    "kind": "comparison",
@@ -7272,7 +7048,7 @@
    "issues": [],
    "strength": 90.2,
    "tier": "Strong",
-   "strength_pct": 36,
+   "strength_pct": 35,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.775,
@@ -7415,7 +7191,7 @@
    "issues": [],
    "strength": 92.1,
    "tier": "Strong",
-   "strength_pct": 55,
+   "strength_pct": 54,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.704,
@@ -7455,6 +7231,77 @@
    "git": {
     "commits": "22",
     "bump_only_commits": "2",
+    "last_real_edit": "2026-10-20",
+    "last_commit": "2026-10-20"
+   },
+   "search": null,
+   "sessions": 0.0,
+   "aff_clicks": 0.0
+  },
+  {
+   "slug": "jasper-ai-alternatives",
+   "title": "Best Jasper AI Alternatives in 2026 — Cheaper & Reviewed",
+   "kind": "alternatives",
+   "intent": "transactional",
+   "words": 1610,
+   "date_modified": "2026-10-14",
+   "score": 100.0,
+   "grade": "A+",
+   "scores": {
+    "revenue": 100.0,
+    "organic": 100.0,
+    "ai": 100.0,
+    "reader": 100.0,
+    "trust": 100.0
+   },
+   "importance": 1.88,
+   "inbound": 3,
+   "pagerank": 7.418,
+   "tools": {
+    "jasper": 44,
+    "writesonic": 18,
+    "rytr": 14,
+    "frase": 14
+   },
+   "issues": [],
+   "strength": 94.3,
+   "tier": "Strong",
+   "strength_pct": 77,
+   "strength_parts": {
+    "uniqueness": 1.0,
+    "evidence": 0.812,
+    "decision": 1.0,
+    "structure": 1.0,
+    "depth": 0.805,
+    "freshness": 1.0,
+    "monetisation": 1.0
+   },
+   "unique_pct": 100.0,
+   "metrics": {
+    "numbers": 16,
+    "numbers_per_1000w": 9.9,
+    "numeric_sentences": 32,
+    "sourced_ratio": 1.0,
+    "ext_domains": 3,
+    "authority_domains": [],
+    "tables": 1,
+    "table_cells": 30,
+    "lists": 3,
+    "verdicts": 9,
+    "has_negatives": true,
+    "first_screen": {
+     "price": true,
+     "audience": true,
+     "verdict": true,
+     "named_tool": true
+    },
+    "title_features": [
+     "hook"
+    ]
+   },
+   "git": {
+    "commits": "25",
+    "bump_only_commits": "3",
     "last_real_edit": "2026-10-20",
     "last_commit": "2026-10-20"
    },
@@ -7636,7 +7483,7 @@
    "issues": [],
    "strength": 93.8,
    "tier": "Strong",
-   "strength_pct": 73,
+   "strength_pct": 72,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.875,
@@ -8073,7 +7920,7 @@
    "issues": [],
    "strength": 92.1,
    "tier": "Strong",
-   "strength_pct": 55,
+   "strength_pct": 54,
    "strength_parts": {
     "uniqueness": 1.0,
     "evidence": 0.725,
@@ -8194,10 +8041,36 @@
  ],
  "site_issues": [
   {
+   "code": "price-inconsistent",
+   "pillar": "trust",
+   "severity": "medium",
+   "message": "Ocoya: most posts say $15/mo but others differ — $19 in best-ai-marketing-tools-2026.",
+   "fix": "Verify the current price on the vendor's page, then align every post (label annual-vs-monthly differences).",
+   "effort": "S",
+   "slug": "",
+   "where": "$19 in best-ai-marketing-tools-2026",
+   "snippet": "",
+   "priority": 4.5,
+   "live": false
+  },
+  {
+   "code": "price-inconsistent",
+   "pillar": "trust",
+   "severity": "medium",
+   "message": "Jasper: most posts say $49/mo but others differ — $39 in best-ai-writing-tools-2026.",
+   "fix": "Verify the current price on the vendor's page, then align every post (label annual-vs-monthly differences).",
+   "effort": "S",
+   "slug": "",
+   "where": "$39 in best-ai-writing-tools-2026",
+   "snippet": "",
+   "priority": 4.5,
+   "live": false
+  },
+  {
    "code": "untracked-tools",
    "pillar": "revenue",
    "severity": "medium",
-   "message": "Heavily-mentioned tools with NO tracked affiliate link: Grammarly (245×/18 posts), Cursor (150×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).",
+   "message": "Heavily-mentioned tools with NO tracked affiliate link: Grammarly (255×/18 posts), Cursor (153×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).",
    "fix": "Check each vendor for an affiliate/partner program (Impact, PartnerStack, FirstPromoter, direct); apply, then add the link in constants.ts.",
    "effort": "M",
    "slug": "",
@@ -8209,10 +8082,36 @@
  ],
  "top_actions": [
   {
+   "code": "price-inconsistent",
+   "pillar": "trust",
+   "severity": "medium",
+   "message": "Ocoya: most posts say $15/mo but others differ — $19 in best-ai-marketing-tools-2026.",
+   "fix": "Verify the current price on the vendor's page, then align every post (label annual-vs-monthly differences).",
+   "effort": "S",
+   "slug": "",
+   "where": "$19 in best-ai-marketing-tools-2026",
+   "snippet": "",
+   "priority": 4.5,
+   "live": false
+  },
+  {
+   "code": "price-inconsistent",
+   "pillar": "trust",
+   "severity": "medium",
+   "message": "Jasper: most posts say $49/mo but others differ — $39 in best-ai-writing-tools-2026.",
+   "fix": "Verify the current price on the vendor's page, then align every post (label annual-vs-monthly differences).",
+   "effort": "S",
+   "slug": "",
+   "where": "$39 in best-ai-writing-tools-2026",
+   "snippet": "",
+   "priority": 4.5,
+   "live": false
+  },
+  {
    "code": "untracked-tools",
    "pillar": "revenue",
    "severity": "medium",
-   "message": "Heavily-mentioned tools with NO tracked affiliate link: Grammarly (245×/18 posts), Cursor (150×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).",
+   "message": "Heavily-mentioned tools with NO tracked affiliate link: Grammarly (255×/18 posts), Cursor (153×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).",
    "fix": "Check each vendor for an affiliate/partner program (Impact, PartnerStack, FirstPromoter, direct); apply, then add the link in constants.ts.",
    "effort": "M",
    "slug": "",
@@ -8225,111 +8124,7 @@
    "code": "short",
    "pillar": "reader",
    "severity": "medium",
-   "message": "1511 words; competitive 'roundup' posts run ≈2000+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "best-ai-podcast-tools-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 2.31,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1425 words; competitive 'roundup' posts run ≈2000+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "best-ai-marketing-tools-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 2.3,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1204 words; competitive 'alternatives' posts run ≈1600+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "best-grammarly-alternatives",
-   "where": "",
-   "snippet": "",
-   "priority": 2.15,
-   "live": false
-  },
-  {
-   "code": "readability",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "Flesch reading ease 50 (target ≥55-60).",
-   "fix": "Split sentences >25 words; swap multisyllabic words.",
-   "effort": "M",
-   "slug": "best-grammarly-alternatives",
-   "where": "",
-   "snippet": "",
-   "priority": 2.15,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1489 words; competitive 'alternatives' posts run ≈1600+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "chatgpt-alternatives-free-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 2.14,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1456 words; competitive 'alternatives' posts run ≈1600+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "jasper-ai-alternatives",
-   "where": "",
-   "snippet": "",
-   "priority": 2.12,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1719 words; competitive 'roundup' posts run ≈2000+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "ai-tools-for-teachers-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 2.11,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1381 words; competitive 'alternatives' posts run ≈1600+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "elevenlabs-alternatives-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 2.08,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1360 words; competitive 'roundup' posts run ≈2000+.",
+   "message": "1477 words; competitive 'roundup' posts run ≈2000+.",
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "best-ai-coding-tools-2026",
@@ -8342,26 +8137,13 @@
    "code": "short",
    "pillar": "reader",
    "severity": "medium",
-   "message": "1470 words; competitive 'roundup' posts run ≈2000+.",
+   "message": "1586 words; competitive 'roundup' posts run ≈2000+.",
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "best-ai-writing-tools-for-beginners-2026",
    "where": "",
    "snippet": "",
    "priority": 1.98,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1553 words; competitive 'alternatives' posts run ≈1600+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "best-midjourney-alternatives-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 1.94,
    "live": false
   },
   {
@@ -8394,7 +8176,7 @@
    "code": "short",
    "pillar": "reader",
    "severity": "medium",
-   "message": "1093 words; competitive 'alternatives' posts run ≈1600+.",
+   "message": "1180 words; competitive 'alternatives' posts run ≈1600+.",
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "murf-ai-alternatives-2026",
@@ -8420,7 +8202,7 @@
    "code": "short",
    "pillar": "reader",
    "severity": "medium",
-   "message": "1851 words; competitive 'roundup' posts run ≈2000+.",
+   "message": "1887 words; competitive 'roundup' posts run ≈2000+.",
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "best-ai-voice-generators-for-youtube-2026",
@@ -8433,7 +8215,7 @@
    "code": "short",
    "pillar": "reader",
    "severity": "medium",
-   "message": "1311 words; competitive 'alternatives' posts run ≈1600+.",
+   "message": "1346 words; competitive 'alternatives' posts run ≈1600+.",
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "best-podcastle-alternatives",
@@ -8459,7 +8241,7 @@
    "code": "short",
    "pillar": "reader",
    "severity": "medium",
-   "message": "1310 words; competitive 'comparison' posts run ≈1600+.",
+   "message": "1361 words; competitive 'comparison' posts run ≈1600+.",
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "leonardo-vs-midjourney-2026",
@@ -8472,20 +8254,7 @@
    "code": "short",
    "pillar": "reader",
    "severity": "medium",
-   "message": "1180 words; competitive 'pricing' posts run ≈1200+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "elevenlabs-pricing-character-credits-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 1.72,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "964 words; competitive 'pricing' posts run ≈1200+.",
+   "message": "1022 words; competitive 'pricing' posts run ≈1200+.",
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "cheapest-ai-coding-tools-2026",
@@ -8511,7 +8280,7 @@
    "code": "short",
    "pillar": "reader",
    "severity": "medium",
-   "message": "1500 words; competitive 'roundup' posts run ≈2000+.",
+   "message": "1553 words; competitive 'roundup' posts run ≈2000+.",
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "best-ai-tools-for-developers-2026",
@@ -8524,26 +8293,13 @@
    "code": "short",
    "pillar": "reader",
    "severity": "medium",
-   "message": "1461 words; competitive 'comparison' posts run ≈1600+.",
+   "message": "1510 words; competitive 'comparison' posts run ≈1600+.",
    "fix": "Deepen the weakest sections rather than padding.",
    "effort": "M",
    "slug": "chatgpt-free-vs-claude-free-vs-gemini-free-2026",
    "where": "",
    "snippet": "",
    "priority": 1.6,
-   "live": false
-  },
-  {
-   "code": "short",
-   "pillar": "reader",
-   "severity": "medium",
-   "message": "1571 words; competitive 'comparison' posts run ≈1600+.",
-   "fix": "Deepen the weakest sections rather than padding.",
-   "effort": "M",
-   "slug": "gpt-5-5-vs-claude-opus-4-8-vs-grok-4-2026",
-   "where": "",
-   "snippet": "",
-   "priority": 1.56,
    "live": false
   },
   {
@@ -8633,7 +8389,7 @@
    "tracked": true,
    "link": "https://try.elevenlabs.io/earuakibkmz9",
    "posts": 22,
-   "mentions": 389,
+   "mentions": 392,
    "blog_links_to_page": 22
   },
   {
@@ -8643,7 +8399,7 @@
    "tracked": false,
    "link": "https://chatgpt.com",
    "posts": 21,
-   "mentions": 265,
+   "mentions": 266,
    "blog_links_to_page": 21
   },
   {
@@ -8653,7 +8409,7 @@
    "tracked": true,
    "link": "https://rytr.me/?via=navneet-arya",
    "posts": 22,
-   "mentions": 251,
+   "mentions": 262,
    "blog_links_to_page": 22
   },
   {
@@ -8663,7 +8419,7 @@
    "tracked": false,
    "link": "https://grammarly.com",
    "posts": 18,
-   "mentions": 245,
+   "mentions": 255,
    "blog_links_to_page": 20
   },
   {
@@ -8673,7 +8429,7 @@
    "tracked": true,
    "link": "https://gamma.app?via=ainexus",
    "posts": 10,
-   "mentions": 241,
+   "mentions": 242,
    "blog_links_to_page": 11
   },
   {
@@ -8683,7 +8439,7 @@
    "tracked": true,
    "link": "https://perplexity.ai?via=ainexus",
    "posts": 13,
-   "mentions": 217,
+   "mentions": 220,
    "blog_links_to_page": 13
   },
   {
@@ -8693,7 +8449,7 @@
    "tracked": true,
    "link": "https://descript.com?via=ainexus",
    "posts": 13,
-   "mentions": 168,
+   "mentions": 173,
    "blog_links_to_page": 13
   },
   {
@@ -8703,7 +8459,17 @@
    "tracked": true,
    "link": "https://get.murf.ai/ilypoqhxvxsj",
    "posts": 18,
-   "mentions": 163,
+   "mentions": 167,
+   "blog_links_to_page": 19
+  },
+  {
+   "slug": "writesonic",
+   "name": "Writesonic",
+   "has_page": true,
+   "tracked": true,
+   "link": "https://writesonic.com?via=ainexus",
+   "posts": 18,
+   "mentions": 154,
    "blog_links_to_page": 19
   },
   {
@@ -8713,18 +8479,8 @@
    "tracked": false,
    "link": "https://cursor.com",
    "posts": 10,
-   "mentions": 150,
+   "mentions": 153,
    "blog_links_to_page": 12
-  },
-  {
-   "slug": "writesonic",
-   "name": "Writesonic",
-   "has_page": true,
-   "tracked": true,
-   "link": "https://writesonic.com?via=ainexus",
-   "posts": 18,
-   "mentions": 144,
-   "blog_links_to_page": 19
   },
   {
    "slug": "taskade",
@@ -8743,7 +8499,7 @@
    "tracked": true,
    "link": "https://podcastle.ai/?ref=ymi1ntf",
    "posts": 7,
-   "mentions": 127,
+   "mentions": 131,
    "blog_links_to_page": 7
   },
   {
@@ -8753,7 +8509,7 @@
    "tracked": true,
    "link": "https://replit.com/refer/navneetarya1989",
    "posts": 14,
-   "mentions": 124,
+   "mentions": 127,
    "blog_links_to_page": 18
   },
   {
@@ -8777,6 +8533,16 @@
    "blog_links_to_page": 10
   },
   {
+   "slug": "leonardo-ai",
+   "name": "Leonardo.ai",
+   "has_page": true,
+   "tracked": true,
+   "link": "https://leonardo.ai?via=ainexus",
+   "posts": 10,
+   "mentions": 106,
+   "blog_links_to_page": 10
+  },
+  {
    "slug": "github-copilot",
    "name": "GitHub Copilot",
    "has_page": true,
@@ -8787,14 +8553,24 @@
    "blog_links_to_page": 11
   },
   {
-   "slug": "leonardo-ai",
-   "name": "Leonardo.ai",
+   "slug": "quillbot",
+   "name": "Quillbot",
    "has_page": true,
    "tracked": true,
-   "link": "https://leonardo.ai?via=ainexus",
-   "posts": 10,
-   "mentions": 104,
-   "blog_links_to_page": 10
+   "link": "https://quillbot.com?via=ainexus",
+   "posts": 8,
+   "mentions": 101,
+   "blog_links_to_page": 8
+  },
+  {
+   "slug": "jasper",
+   "name": "Jasper",
+   "has_page": true,
+   "tracked": true,
+   "link": "https://jasper.ai?via=ainexus",
+   "posts": 8,
+   "mentions": 99,
+   "blog_links_to_page": 8
   },
   {
    "slug": "claude-code",
@@ -8805,26 +8581,6 @@
    "posts": 9,
    "mentions": 97,
    "blog_links_to_page": 9
-  },
-  {
-   "slug": "quillbot",
-   "name": "Quillbot",
-   "has_page": true,
-   "tracked": true,
-   "link": "https://quillbot.com?via=ainexus",
-   "posts": 8,
-   "mentions": 94,
-   "blog_links_to_page": 8
-  },
-  {
-   "slug": "jasper",
-   "name": "Jasper",
-   "has_page": true,
-   "tracked": true,
-   "link": "https://jasper.ai?via=ainexus",
-   "posts": 8,
-   "mentions": 94,
-   "blog_links_to_page": 8
   },
   {
    "slug": "lindy",
@@ -8847,6 +8603,16 @@
    "blog_links_to_page": 18
   },
   {
+   "slug": "frase",
+   "name": "Frase.io",
+   "has_page": true,
+   "tracked": true,
+   "link": "https://www.frase.io/pricing/?via=navneet66",
+   "posts": 5,
+   "mentions": 86,
+   "blog_links_to_page": 5
+  },
+  {
    "slug": "invideo",
    "name": "InVideo AI",
    "has_page": true,
@@ -8855,16 +8621,6 @@
    "posts": 6,
    "mentions": 85,
    "blog_links_to_page": 6
-  },
-  {
-   "slug": "frase",
-   "name": "Frase.io",
-   "has_page": true,
-   "tracked": true,
-   "link": "https://www.frase.io/pricing/?via=navneet66",
-   "posts": 5,
-   "mentions": 81,
-   "blog_links_to_page": 5
   },
   {
    "slug": "relevance-ai",
@@ -8883,7 +8639,7 @@
    "tracked": false,
    "link": "https://midjourney.com",
    "posts": 4,
-   "mentions": 75,
+   "mentions": 76,
    "blog_links_to_page": 4
   },
   {
@@ -8893,7 +8649,7 @@
    "tracked": true,
    "link": "https://notion.so?via=ainexus",
    "posts": 8,
-   "mentions": 73,
+   "mentions": 74,
    "blog_links_to_page": 14
   },
   {
@@ -8903,7 +8659,7 @@
    "tracked": true,
    "link": "https://www.ocoya.com/?via=navneet",
    "posts": 6,
-   "mentions": 70,
+   "mentions": 73,
    "blog_links_to_page": 6
   },
   {
@@ -8913,7 +8669,7 @@
    "tracked": true,
    "link": "https://fireflies.ai/?fpr=navneet89",
    "posts": 4,
-   "mentions": 66,
+   "mentions": 67,
    "blog_links_to_page": 4
   },
   {
@@ -9227,6 +8983,16 @@
    "blog_links_to_page": 2
   },
   {
+   "slug": "stable-diffusion",
+   "name": "Stable Diffusion",
+   "has_page": true,
+   "tracked": false,
+   "link": "https://stability.ai",
+   "posts": 1,
+   "mentions": 17,
+   "blog_links_to_page": 1
+  },
+  {
    "slug": "alf-website-studio",
    "name": "Alf Website Studio",
    "has_page": true,
@@ -9235,16 +9001,6 @@
    "posts": 4,
    "mentions": 17,
    "blog_links_to_page": 4
-  },
-  {
-   "slug": "stable-diffusion",
-   "name": "Stable Diffusion",
-   "has_page": true,
-   "tracked": false,
-   "link": "https://stability.ai",
-   "posts": 1,
-   "mentions": 16,
-   "blog_links_to_page": 1
   },
   {
    "slug": "notta",
@@ -9457,7 +9213,35 @@
    "blog_links_to_page": 0
   }
  ],
- "price_conflicts": [],
+ "price_conflicts": [
+  {
+   "tool": "Ocoya",
+   "slug": "ocoya",
+   "modal": "$15",
+   "prices": {
+    "$15 (most common)": [
+     "best-ai-tools-for-content-creators-free-2026",
+     "best-ai-tools-for-freelancers-2026"
+    ],
+    "$19": [
+     "best-ai-marketing-tools-2026"
+    ]
+   }
+  },
+  {
+   "tool": "Jasper",
+   "slug": "jasper",
+   "modal": "$49",
+   "prices": {
+    "$49 (most common)": [
+     "best-ai-marketing-tools-2026"
+    ],
+    "$39": [
+     "best-ai-writing-tools-2026"
+    ]
+   }
+  }
+ ],
  "live": null,
  "v2": {
   "policy": {

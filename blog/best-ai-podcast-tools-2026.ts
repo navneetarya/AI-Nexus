@@ -198,6 +198,28 @@ const post: BlogPost = {
 <p>Two categories are worth avoiding. The first is any AI tool that promises to auto-publish and distribute your podcast for you. Dedicated podcast hosts like Buzzsprout, Transistor, or Spotify for Podcasters already handle distribution better than a general AI tool.</p>
 <p>The second is AI "voice cloning" services that clone any voice from a short sample without that person's consent. Beyond the ethical problem, output from tools built on that kind of data tends to sound worse than purpose-built tools like Murf or ElevenLabs anyway.</p>
 <p>The podcast AI tools worth paying for are the ones that save real time in post-production. Adobe Enhance is free and beats most paid alternatives for cleanup alone. Podcastle covers recording and workflow. Descript covers editing for anyone without audio experience. Start with those three before adding anything else.</p>
+
+<h2>Choose the Stack Around Your Recording Format</h2>
+<p>A remote interview and a solo narrated show have different technical needs. Remote interviews benefit from separate local tracks, so Podcastle's recording workflow is the relevant starting point. A solo show that already has clean audio may need only Descript for transcript editing and Adobe Podcast Enhance for occasional cleanup. A scripted show may add Murf AI for the intro, outro, or ad read without replacing the human recording.</p>
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0 24px;"><thead><tr style="background:rgba(13,148,136,.1);"><th style="padding:10px;text-align:left;">Show format</th><th style="padding:10px;text-align:left;">Start with</th><th style="padding:10px;text-align:left;">Limit to check</th></tr></thead><tbody>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.12);">Remote interviews</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.12);">Podcastle</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.12);">Free recording hours and published-episode allowance.</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.12);">Recorded interviews or podcasts</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.12);">Descript</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.12);">One free transcription hour and watermarked exports.</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.12);">Noisy room or laptop microphone</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.12);">Adobe Podcast Enhance</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.12);">One-hour file limit and cleanup-only scope.</td></tr>
+<tr><td style="padding:10px;">Scripted intros and ad reads</td><td style="padding:10px;">Murf AI</td><td style="padding:10px;">Ten free voiceover minutes and the watermark on the free plan.</td></tr>
+</tbody></table>
+<p>These tools are not interchangeable subscriptions. Recording, cleanup, transcript editing, and voice generation are separate jobs. Start with the job that currently delays publication, run one real episode through that step, and only then decide whether a second tool removes another bottleneck.</p>
+<h3>What to check before publishing</h3>
+<p>Listen to the cleaned file on headphones and ordinary laptop speakers. Noise removal can improve a voice while making breaths, music, or room tone feel unnatural. Read the transcript against the recording before publishing show notes. Automatic transcription is a draft, not a final record of names, numbers, or specialist terms.</p>
+<p>For AI voiceovers, check pronunciation and pacing with the actual sponsor copy. Murf's free ten minutes are enough to test a short intro or ad read. For editing, Descript's one free transcription hour is enough to decide whether transcript editing is comfortable before paying for the ten-hour Creator allowance.</p>
+<p>These checks keep the tool choice tied to the finished episode. A clean waveform is not the same as a publishable show, and a fast transcript is not automatically an accurate one.</p>
+<p>For a weekly show, keep the process repeatable. Record in the same environment. Name each file clearly. Run cleanup before detailed edits. Store the final transcript beside the audio so corrections are easy to find later.</p>
+<p>If the show is occasional, the free plans may be enough. Podcastle's free recording allowance, Adobe's free cleanup, and Descript's free transcription hour each support a small test. Upgrade only when the publishing schedule repeatedly reaches a documented limit.</p>
+<p>Keep the raw recording too. It gives you a fallback when an enhancement pass removes too much room tone or changes a speaker's voice.</p>
+<p>That archive also helps when a guest asks for a correction. You can return to the source, update the transcript, and export the corrected segment without recreating the entire episode.</p>
+<p>Keep the source file, the clean file, and the final mix in named folders. A clear archive saves time when a sponsor asks for a new cut or a guest needs a change.</p>
+<p>Good file names help too.</p>
+<p>Use the date and episode number.</p>
+<p>Keep backups too.</p>
   
 <p><strong>Related reading:</strong> <a href="/blog/best-ai-transcription-software-2026/">Best AI Transcription Software 2026</a>, <a href="/blog/best-podcastle-alternatives/">Best Podcastle Alternatives in 2026</a>, <a href="/blog/best-text-to-speech-software-2026/">Best Text-to-Speech Software 2026</a>.</p>
 

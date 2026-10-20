@@ -237,6 +237,16 @@ const post: BlogPost = {
 <p>The era of ChatGPT being the obvious default is over. Gemini's unlimited free plan with web access makes it the best general-purpose alternative. Perplexity's citation-backed research is something ChatGPT still can't match. And for content creators, Rytr and Writesonic offer more structured workflows than a blank chat window.</p>
 <p>All four are free to start. Try them on your actual work, not demo prompts, and you'll likely find at least one that fits your workflow better than ChatGPT does.</p>
 <p>Still building your AI toolkit? Compare more options in our <a href="/blog/best-free-ai-writing-tools-2026/" style="color:var(--a1);font-weight:600;">best free AI writing tools</a> roundup, or check <a href="/tools/chatgpt/" style="color:var(--a1);font-weight:600;">our ChatGPT review</a> to see exactly what the paid tier adds over these free picks.</p>
+
+<h2>Use a Two-Tool Workflow Without Duplicating Work</h2>
+<p>Each free alternative is strongest at a different stage. Use Perplexity when the answer needs citations, Gemini when you need general brainstorming or web access, Rytr when a template is faster than writing a prompt, and Writesonic when a structured SEO article is the deliverable.</p>
+<ol style="margin:12px 0 20px 24px;line-height:1.9;">
+  <li><strong>Research:</strong> collect source links in Perplexity and open the important sources yourself.</li>
+  <li><strong>Plan:</strong> use Gemini for options or Rytr for a structured short-form brief.</li>
+  <li><strong>Draft:</strong> use Writesonic only when its roughly one free article per month matches the assignment; otherwise use the lighter tool.</li>
+  <li><strong>Review:</strong> check every factual claim, especially when a free tool has no citation layer.</li>
+</ol>
+<p>This keeps a free plan useful without pretending that unlimited chat, cited research, and SEO article generation are the same capability.</p>
   
 <p><strong>Related reading:</strong> <a href="/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/">ChatGPT Atlas vs Perplexity Comet vs Dia (2026)</a>.</p>
 
