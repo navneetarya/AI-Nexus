@@ -1716,7 +1716,7 @@ def metrics_post(A, p):
               "tables": len(tables), "table_cells": sum(len(re.findall(r"<t[dh]\b", t, re.I)) for t in tables), "lists": len(re.findall(r"<(?:ul|ol)\b", p.content, re.I)),
               "verdicts": len(DECISION_RE.findall(p.text)), "has_negatives": bool(NEG_RE.search(p.text)) or p.has_proscons})
     kind = post_kind(p)
-    if p.words > 900 and m["numbers_per_1000w"] < 6 and not (len(tables) >= 2 and len(p.citations) >= 3):
+    if p.words > 900 and m["numbers_per_1000w"] < 6 and not (len(tables) >= 1 and len(p.citations) >= 3):
         A.add(p, "info-gain-low", "reader", "medium", f"Only {len(nums)} distinct concrete figures ({m['numbers_per_1000w']}/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.",
               "Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.", "M", key=str(len(nums) // 3))
     if len(ns) >= 10 and m["sourced_ratio"] < 0.30:

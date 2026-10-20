@@ -218,6 +218,22 @@ const post: BlogPost = {
   <li><strong>Quick photo fixes (upscale, remove an object, change a background):</strong> <a href="${AFFILIATE_LINKS['youcam']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">YouCam Online Editor</a> = 5 free credits to start, then credit-based plans. <a href="/tools/youcam/" style="color:var(--a1);font-weight:600;">Read our YouCam review →</a></li>
 </ul>
 <p>The single highest-ROI tool for most social media managers is Ocoya. It eliminates the most painful part of the job (writing captions for each platform separately) and adds scheduling on top. Start there, then layer in video tools as your content strategy expands into short-form video.</p>
+<h2>A Practical Weekly Publishing Loop</h2>
+<p>Use the tools in order of the asset you already have. Start with a content brief and decide which platform, audience, and call to action the post is for. Use Rytr when you need several caption drafts, Leonardo.ai when the post needs an original visual, and Ocoya when the approved assets need platform scheduling.</p>
+<ol style="margin:12px 0 20px 24px;line-height:1.9;">
+  <li><strong>Plan:</strong> choose the week's topics and write the audience, format, and desired action for each one.</li>
+  <li><strong>Draft:</strong> use Rytr's 10,000-character monthly free plan for short caption variations, or Ocoya when scheduling belongs in the same workflow.</li>
+  <li><strong>Create:</strong> use Leonardo.ai's 150 daily credits for original images, or Opus Clip's 60 monthly processing minutes for a small repurposing test.</li>
+  <li><strong>Review:</strong> check claims, branding, captions, crops, rights, and links before anything is queued.</li>
+  <li><strong>Schedule and learn:</strong> record which formats were published and which needed the most editing so the next week's brief improves.</li>
+</ol>
+<p>This loop keeps free plans useful for a solo creator while making the paid decision measurable. Move to Ocoya when scheduling across multiple profiles is the bottleneck, or add Opus Clip when you already have long-form footage worth repurposing. Do not buy a higher tier simply because the tool offers more features.</p>
+<p>The documented starter costs make the choices easy to compare: Rytr starts at $9/month, Leonardo.ai at $12/month, and Ocoya at $29/month. Opus Clip's free 60-minute allowance is enough for a limited trial, while InVideo AI's free exports carry a watermark. Treat those as workflow constraints, not as quality rankings.</p>
+<p>For client work, also check the number of profiles and workspaces included in the plan. Ocoya's cited starter example covers one workspace and five profiles, which may be enough for one brand but not for an agency portfolio. That capacity question can matter more than the caption features.</p>
+<p>Start with the smallest account that matches the current client roster, then reassess when the roster changes.</p>
+<p>That avoids paying for unused profiles while preserving a clear reason to upgrade when publishing volume genuinely grows.</p>
+<p>Review the plan again whenever a new client or platform is added.</p>
+<p>That review keeps the publishing system tied to real account volume rather than an abstract promise of unlimited growth.</p>
 
 <h2>What I'd Avoid</h2>
 <p>Two categories worth skipping: generic AI chatbots (ChatGPT, Claude) for social media captions work, but they require more prompting effort than a dedicated tool and don't integrate with scheduling. Tools that claim to automate social media growth through auto-following or engagement are the second: these violate platform terms of service and get accounts suspended.</p>
