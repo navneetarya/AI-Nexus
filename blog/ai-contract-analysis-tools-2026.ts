@@ -247,6 +247,11 @@ const post: BlogPost = {
 <img src="https://images.unsplash.com/photo-1726594701898-c420e01a3a62?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A person writing on a piece of paper, finalising a contract decision" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Final Verdict: AI Contract Analysis Tools in 2026</h2>
+<ul style="margin:12px 0 20px 24px;line-height:1.9;">
+  <li><strong>Start with risk:</strong> Decide whether you need clause review, a redline, or a searchable contract library.</li>
+  <li><strong>Check the limits:</strong> Confirm file types, page caps, export options, and retention terms before uploading a live agreement.</li>
+  <li><strong>Keep legal review:</strong> Treat the output as issue-spotting support, not a substitute for qualified counsel.</li>
+</ul>
 <p>The legal AI headlines in 2026 are dominated by Harvey and Luminance because that's where the funding and the enterprise deals are. Neither is a realistic option for the freelancer this guide is actually written for.</p>
 <p>Spellbook is a genuinely capable product, but it's priced and built for lawyers who draft contracts daily, not for someone who signs a handful a year.</p>
 <p>For everyone else, the practical 2026 stack is boring on purpose. Use Claude or ChatGPT for a fast, free first-pass read, and add a purpose-built reviewer under $30/month if your volume justifies it. Bring in a real attorney for anything unusual or high-value enough to need one.</p>

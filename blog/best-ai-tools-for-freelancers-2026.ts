@@ -225,7 +225,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<h2>Building Your Freelance AI Stack: Where to Start</h2>
+<h2>How Should Freelancers Build an AI Stack?</h2>
 <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Building Your Freelance AI Stack: Where to Start" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Don't try to adopt five new tools at once. Pick the one that solves your biggest time drain right now:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">

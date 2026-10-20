@@ -214,6 +214,11 @@ const post: BlogPost = {
 <p>Whether "emergence" is the correct scientific label for that observation is still argued in papers and conferences. The alternative view: it's a smoother trend hidden by a harsh scoring method. You don't need to resolve that argument to get value from the concept. Just remember that capability isn't linear. Test rather than assume when something matters.</p>
 
 <h2>Final verdict — hype or real in 2026?</h2>
+<ul style="margin:12px 0 20px 24px;line-height:1.9;">
+  <li><strong>Map the handoffs:</strong> Write down which agent can call which tool and what data crosses each boundary.</li>
+  <li><strong>Set a stop rule:</strong> Require human approval before an agent sends, purchases, deletes, or publishes anything consequential.</li>
+  <li><strong>Review the logs:</strong> Keep enough input, output, and tool-call history to explain an unexpected result.</li>
+</ul>
 <p>Both, depending on which claim you're evaluating. The core finding is real and well-documented. Large models have capabilities smaller ones lack, and these appear without being directly trained in. Does that pattern deserve the dramatic label "emergence"? Or is it a predictable scaling curve seen through the wrong metric? That is a truly open scientific question.</p>
 <p>I'd be skeptical of anyone who tells you it's settled either way.</p>
 <p>What's not in question is the practical takeaway. Don't assume a smaller or older model degrades gracefully on every task. Re-check capability claims after major model updates. Put human checkpoints on any multi-agent workflow doing something important.</p>

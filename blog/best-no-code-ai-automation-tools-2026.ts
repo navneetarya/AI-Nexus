@@ -279,6 +279,12 @@ const post: BlogPost = {
 <p>Operation-based billing (Make) and execution-based billing (n8n) tend to stay cheaper as complexity grows. A multi-step internal process can still count as a small number of billed units. Self-hosted, free options (Activepieces, n8n Community Edition) remove the billing question entirely, in exchange for taking on the server-maintenance work yourself.</p>
 
 <h2>Decision Guide: Matching Platform to Use Case &amp; Technical Level</h2>
+<h3>Rules for a maintainable first workflow</h3>
+<ul style="margin:12px 0 20px 24px;line-height:1.9;">
+  <li><strong>Choose Zapier</strong> for simple trigger-and-action workflows and the broadest app catalog.</li>
+  <li><strong>Choose Make</strong> when branching logic and visual control matter more than a gentle learning curve.</li>
+  <li><strong>Choose n8n</strong> when self-hosting, custom nodes, or data control justify technical setup.</li>
+</ul>
 <p><strong>Choose Zapier if:</strong> you have no developer on the team, need to be live today, and your workflows are simple and low-volume. The app library and onboarding speed are unmatched, and at low volume the task-based pricing penalty rarely becomes large enough to matter.</p>
 <p><strong>Choose Make.com if:</strong> your workflows involve real branching logic or moderate-to-high volume. At least one team member should be at ease with a visual, node-based builder. Make consistently delivers the best power-to-price ratio for teams that have outgrown Zapier's simplicity.</p>
 <p><strong>Choose n8n if:</strong> you have developer resources and want genuine AI-agent behaviour with tool use and memory, rather than single AI steps. It's also the pick if you need the deepest MCP integration available, or run high enough volume that execution-based, self-hostable pricing matters.</p>

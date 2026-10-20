@@ -115,7 +115,7 @@ const post: BlogPost = {
   </p>
 </div>
 
-<h2 id="key-takeaways">Key Takeaways</h2>
+<h2 id="key-takeaways">What Are the Key Takeaways?</h2>
 <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Key Takeaways" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
   <li>AI meeting tools save <strong>30–90 minutes per week</strong> in post-meeting note-taking and action item follow-up for a typical professional</li>

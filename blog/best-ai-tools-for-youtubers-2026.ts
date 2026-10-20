@@ -107,7 +107,7 @@ const post: BlogPost = {
   <p style="margin:6px 0 0;font-size:14.5px;line-height:1.6;">Start with just two tools: one production tool (InVideo AI for faceless, Descript for filmed content) plus Opus Clip for Shorts. Add Murf AI and VidIQ once you're publishing consistently and know exactly where the extra hours would go.</p>
 </div>
 
-<h2>Comparison: Best AI Tools for YouTubers</h2>
+<h2>Which AI Tools Are Best for YouTubers?</h2>
 <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for Comparison: Best AI Tools for YouTubers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">

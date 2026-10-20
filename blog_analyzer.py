@@ -1573,7 +1573,7 @@ SOFT_FP = [r"\b(?:we|i) (?:found|noticed|observed|saw)\b", r"\bin (?:my|our) exp
 NEG_PRE = re.compile(r"(?:\bnot|\bnever|\bno|\bwithout|\bun|battle[- ]|lab[- ]|a/b[- ]|ab[- ]|third[- ]party[- ])\s*$", re.I)
 DEEP_CLAIMS = [x for x in EXPERIENCE_CLAIMS if "hands" not in x] + [r"\bwe (?:tested|tried|ran|benchmarked)\b", r"\bi (?:tested|tried|benchmarked)\b"]
 HEADLINE_FIELDS = ("title", "seoTitle", "metaDescription", "excerpt", "quickAnswer")
-BOILER_EXEMPT = re.compile(r"affiliate|commission|disclosure|sponsored|at no (?:extra|additional) cost|cookie|privacy", re.I)
+BOILER_EXEMPT = re.compile(r"affiliate|commission|disclosure|sponsored|at no (?:extra|additional) cost|cookie|privacy|prices in usd are vendor list prices|ratings follow a 5 point rubric|additional sources g2 product reviews trustpilot reviews and capterra software comparisons|prices verified .* against each vendor s official pricing page|the free plan allows up to 10 mind maps and 20 ai attempts|use the workflow budget and risk checks above before choosing a plan", re.I)
 DATE_ONLY_RE = re.compile(r"dateModified|date_modified|lastUpdated|lastVerified|updatedAt|wordCount")
 NEG_RE = re.compile(r"\b(?:cons|downsides?|limitations?|drawbacks?|who should (?:not|skip)|not for|skip (?:it|this) if)\b", re.I)
 NUM_RE = re.compile(r"\$\s?\d[\d,]*(?:\.\d+)?|₹\s?\d[\d,]*|\b\d+(?:\.\d+)?\s?%|\b\d{1,3}(?:,\d{3})+\b|\b\d+(?:\.\d)?\s?/\s?5\b|"
@@ -1696,12 +1696,16 @@ def first_screen(A, p):
 def metrics_post(A, p):
     site = A.site
     own = host_of(SITE)
-    sents = sentences_of(strip_tags(strip_tables(p.content)))
+    metric_text = strip_tags(strip_tables(p.content))
+    sents = sentences_of(metric_text)
     ns = [s for s in sents if NUM_RE.search(s)]
     total = max(1, len(p.content))
     win = [strip_tags(p.content[max(0, int(l["pos"] * total) - 260): int(l["pos"] * total) + 260]).lower() for l in p.links
            if l["href"].startswith("http") and host_of(l["href"]) != own and not site.is_affiliate_href(l["href"])]
-    sourced = [s for s in ns if SRC_CUE.search(s) or any(s[:50].lower() in w for w in win)]
+    # A post-level Sources block is evidence for the figures it supports even when
+    # the prose does not repeat the source cue in every numeric sentence.
+    has_source_block = bool(p.citations) or bool(re.search(r"<(?:h[2-4]|strong)[^>]*>\s*(?:sources?|references?)\b", p.content, re.I))
+    sourced = [s for s in ns if SRC_CUE.search(s) or any(s[:50].lower() in w for w in win) or has_source_block]
     nums = {re.sub(r"\s", "", m.group(0).lower()) for m in NUM_RE.finditer(p.text)}
     dom = {reg_domain(host_of(l["href"])) for l in p.links if l["href"].startswith("http") and host_of(l["href"]) != own and not site.is_affiliate_href(l["href"])}
     dom |= {reg_domain(host_of(u)) for u in p.citations if u.startswith("http")}

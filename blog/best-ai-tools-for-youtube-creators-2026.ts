@@ -118,7 +118,7 @@ const post: BlogPost = {
 
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1636971828014-0f3493cba88a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A creator typing on a keyboard next to editing software" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 
-<h2 id="key-takeaways">Key Takeaways</h2>
+<h2 id="key-takeaways">What Are the Key Takeaways?</h2>
 <ul style="margin:12px 0 12px 24px;line-height:2.4;">
   <li><strong>Munch AI</strong> gives more strategic repurposing than simple clip-cutting tools. It studies transcripts, brand voice, and engagement patterns. Then it tells you what to publish and when</li>
   <li><strong>ElevenLabs</strong> now sounds real enough for YouTube narration. Educational, explainer, and faceless channels can scale narration without recording every script</li>
