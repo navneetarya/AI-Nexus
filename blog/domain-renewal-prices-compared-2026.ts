@@ -120,7 +120,7 @@ const post: BlogPost = {
 <h3>Domain.com: cheap year one, higher renewal</h3>
 <p>Domain.com lists .com at $5.00 for the first year and $22.99 to renew, with a $10.99 transfer fee. That makes it a fair choice for a short project or a name you may drop after a year.</p>
 <p>It is a weaker choice for a name you will keep for years. Over five years the tracker figures put it about $47 above Spaceship.</p>
-<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['domain-com']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Domain.com</a></div>
+<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['domain-com']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Domain.com</a> <a href="/tools/domain-com/" style="color:var(--a1);font-weight:600;">Read the Domain.com review</a></div>
 
 <h3>Network Solutions: verify the bundle before you buy</h3>
 <p>The tracker snapshot from 26 May 2026 lists Network Solutions .com at $9.59 in year one and $32.99 to renew, with a $10.99 transfer fee. It is the oldest data in this guide, so re-check it first.</p>
@@ -154,7 +154,7 @@ const post: BlogPost = {
 </tbody></table></div>
 <p>These came from the SSLs.com product menu on 29 September 2026. Confirm the term, the renewal price and the validation requirements in the cart before you buy.</p>
 <img src="/images/blog/domain-renewal-prices-compared-2026/ssl-decision.svg" alt="Decision card showing when a separate SSL certificate is needed" width="640" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:14px 0 20px;border-radius:12px;" />
-<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['ssls']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit SSLs.com</a></div>
+<div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['ssls']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit SSLs.com</a> <a href="/tools/ssls/" style="color:var(--a1);font-weight:600;">Read the SSLs.com review</a></div>
 
 <h2>Which provider should you choose?</h2>
 <ul style="margin:12px 0 24px;padding-left:22px;line-height:1.9;">
@@ -186,7 +186,7 @@ const post: BlogPost = {
 <tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">SSLs.com</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">No</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">No</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Separate certificates</td></tr>
 </tbody></table></div>
 <p>The simplest route for a small site is a builder that includes hosting and HTTPS. <a href="/tools/alf-website-studio/" style="color:var(--a1);font-weight:600;">Alf Website Studio</a> is Spaceship's version of that. Its documentation says it uses Spaceship's own hosting, so a domain registered elsewhere has to point to Spaceship nameservers.</p>
-<p>If your site runs on WordPress, <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">WordPress.com</a> is a managed host from Automattic that handles updates, security and SSL. Buy a separate certificate only when your host does not provide HTTPS.</p>
+<p>If your site runs on WordPress, <a href="${AFFILIATE_LINKS['automattic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="color:rgb(13,148,136);">WordPress.com</a> is a managed host from Automattic that handles updates, security and SSL. See the <a href="/tools/wordpress-com/" style="color:var(--a1);font-weight:600;">WordPress.com and Pressable review</a> before choosing a plan. Buy a separate certificate only when your host does not provide HTTPS.</p>
 
 <h2>Where this fits in a full website launch</h2>
 <p>A domain is one of three launch decisions. The others are hosting and HTTPS, and many AI builders include both. Read <a href="/blog/launch-an-ai-built-website-2026/" style="color:var(--a1);font-weight:600;">How to Launch an AI-Built Website</a> for the full sequence.</p>

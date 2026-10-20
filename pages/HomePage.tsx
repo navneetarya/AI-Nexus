@@ -124,7 +124,7 @@ const AFFILIATE_SLUGS = [
   'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence', 'pixverse', 'youcam', 'notta',
   'readdy', 'gitmind', 'retouch4me', 'wordtosite', 'signnow',
   // Added Oct 16 2026: Impact tools that now have review pages
-  'spaceship', 'bigrock',
+  'spaceship', 'bigrock', 'domain-com', 'ssls', 'wordpress-com',
   'site123', 'network-solutions', 'perplexity-comet',
   'tidio', 'soundraw',
   'vidiq', 'appsumo',

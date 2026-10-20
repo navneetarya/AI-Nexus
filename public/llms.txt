@@ -1,7 +1,7 @@
 # AI Nexus — https://ainexustools.online
 # llms.txt — machine-readable site index for AI crawlers
 # Author: Navneet Arya
-# Updated: 2026-10-14
+# Updated: 2026-10-18
 
 > AI Nexus is an independent AI tools review site run by Navneet Arya.
 > Tools are independently researched based on features, pricing, user reviews, and available trial documentation. No sponsored reviews. Affiliate links are disclosed on every page. Independent editorial — Navneet Arya, AI Nexus 2026.
@@ -41,6 +41,9 @@
 
 ### Marketing Tools
 - [Ocoya Review 2026](https://ainexustools.online/tools/ocoya): Write and schedule social media content 10x faster. AI captions + scheduling. From $15/month.
+- [Domain.com Review 2026](https://ainexustools.online/tools/domain-com): Domain registration, hosting and website tools. Dated .com figures: $5.00 first year, $22.99 renewal.
+- [SSLs.com Review 2026](https://ainexustools.online/tools/ssls): Domain, wildcard, multi-domain and validation certificates. Dated Standard SSL example from $3.75/year.
+- [WordPress.com / Pressable Review 2026](https://ainexustools.online/tools/wordpress-com): Managed WordPress hosting from Automattic, from a free WordPress.com plan to Pressable Signature hosting.
 
 ### Coding Tools
 - [Replit Review 2026](https://ainexustools.online/tools/replit): Build and deploy full apps with AI in your browser. Free + from $7/month.

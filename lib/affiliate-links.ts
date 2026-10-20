@@ -55,14 +55,14 @@ const SUPPLEMENTARY_LINKS: Record<string, string> = {
   // base link (https://spaceship.sjv.io/X49n7b), which is confirmed working.
   // Spaceship now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['spaceship']). 'spaceship-email' stays here.
   'spaceship-email': 'https://spaceship.sjv.io/X49n7b?u=https%3A%2F%2Fwww.spaceship.com%2Fbusiness-email&utm_source=spaceship-email&utm_medium=affiliate', // Spacemail business email
-  automattic: 'https://automattic.pxf.io/3k0mxk?utm_source=automattic&utm_medium=affiliate', // Impact — WordPress.com / Pressable hosting; Jetpack AI Assistant has its own tool page in constants.ts
+  // WordPress.com / Pressable now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['wordpress-com']); the automattic alias remains for existing blog templates.
   // Added Sep 29 2026 — website-creation + domain/hosting/SSL programs (all Impact).
   // Readdy and WordToSite now have tool pages, so their links live in constants.ts TOOLS (AFFILIATE_LINKS['readdy'] / ['wordtosite']).
   // The four domain/hosting/SSL programs are meant for one combined "launch your site" article.
   // BigRock now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['bigrock']).
-  'domain-com': 'https://domain.mno8.net/vDqz6v?utm_source=domain-com&utm_medium=affiliate', // mno8.net — now covered by scripts/check-affiliate-links.mjs
+  // Domain.com now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['domain-com']).
   // Network Solutions now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['network-solutions']).
-  ssls: 'https://ssls.sjv.io/m4VRyM?utm_source=ssls&utm_medium=affiliate',
+  // SSLs.com now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['ssls']).
   // Added Sep 30 2026 (Impact). SITE123 is positioned as a simple drag-and-drop builder, not an AI builder.
   // SITE123 now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['site123']).
   // GitMind now has a tool page, so its link lives in constants.ts TOOLS (AFFILIATE_LINKS['gitmind']).
@@ -86,5 +86,7 @@ const TOOL_LINKS: Record<string, string> = Object.fromEntries(
 
 export const AFFILIATE_LINKS: Record<string, string> = {
   ...TOOL_LINKS,
+  // Backward-compatible key used by existing WordPress.com blog templates.
+  automattic: TOOL_LINKS['wordpress-com'],
   ...SUPPLEMENTARY_LINKS,
 };

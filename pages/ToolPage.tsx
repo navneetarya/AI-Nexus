@@ -32,7 +32,7 @@ const AFFILIATE_SLUGS = [
   'aippt', 'alf-website-studio', 'creao-ai', 'flowith', 'popai-sheets', 'presentation-intelligence', 'pixverse', 'youcam', 'notta',
   'readdy', 'gitmind', 'retouch4me', 'wordtosite', 'signnow',
   // Added Oct 16 2026: Impact tools that now have review pages
-  'spaceship', 'bigrock',
+  'spaceship', 'bigrock', 'domain-com', 'ssls', 'wordpress-com',
   // Added Oct 16 2026: tracked-link tools that now have review pages (D batch)
   'site123', 'network-solutions', 'perplexity-comet',
   // Added Oct 16 2026: tracked-link tools that now have review pages
@@ -1715,6 +1715,39 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
     relatedBlogSlugs: ['best-ai-writing-tools-for-beginners-2026', 'best-ai-website-builders-2026'],
     rating: 3.5, lastTested: "October 2026", lastTestedISO: "2026-10-08", datePublished: "2026-09-22", timeUsed: "Researched Oct 2026",
   },
+  'domain-com': {
+    whatIs: "Domain.com is a domain registrar and web-presence provider offering domain registration, hosting, email, SSL certificates and website-building products. Existing 2026 price research lists a .com at $5.00 for the first year, $22.99 to renew and $10.99 to transfer. Those figures are dated, so check the current checkout total.",
+    whoIsItFor: "Small businesses and short-lived projects that want a domain plus related hosting, email or website products from one provider. It is most attractive when the first-year promotion matters more than the long-term renewal price.",
+    whoShouldSkip: "Anyone choosing primarily on five-year cost or free privacy. Spaceship has the lower renewal figure in the existing comparison, and BigRock is the better starting point for India-focused rupee pricing.",
+    myTake: "This review uses the existing domain-renewal comparison and dated public price research. No first-hand purchase is claimed. Domain.com is reasonable for a short project, but the $22.99 renewal figure makes the second year the decision point. Check privacy, hosting, email, SSL and renewal add-ons as separate line items before paying.",
+    useCases: ['Registering a domain for a short campaign or temporary project', 'Keeping domain, hosting and email products under one account', 'Comparing a promotional first-year price with a lower-renewal registrar'],
+    pricingSection: "**Domain.com pricing (USD; dated figures, verify before buying):**\n- .com registration: $5.00 for the first year.\n- .com renewal: $22.99 per year.\n- .com transfer: $10.99.\n\nConfirm the current registration, renewal, privacy, tax and add-on totals at checkout.",
+    verdict: "A workable short-project registrar when the introductory price is the priority. It is a weaker long-term value than Spaceship on the dated renewal figures, so compare the full renewal and privacy cost before registering.",
+    relatedBlogSlugs: ['domain-renewal-prices-compared-2026', 'launch-an-ai-built-website-2026'],
+    rating: 3.2, lastTested: 'October 2026', lastTestedISO: '2026-10-18', datePublished: '2026-10-18', timeUsed: 'Researched Oct 2026',
+  },
+  ssls: {
+    whatIs: "SSLs.com sells TLS/SSL certificates for websites, including domain validation, organization validation and extended validation. Its catalog includes single-domain, wildcard and multi-domain certificates, with official pages describing SHA-2 encryption, site seals and guided activation. A separate certificate is only useful when your host does not already supply the HTTPS coverage you need.",
+    whoIsItFor: "Site owners who need a separately managed certificate, wildcard coverage for subdomains, multi-domain coverage, or organization and extended validation. It is also useful for comparing certificate terms rather than accepting the first host add-on.",
+    whoShouldSkip: "Most sites whose host or website builder already includes a suitable SSL certificate. Do not buy a duplicate certificate until you have checked the host's coverage, renewal and validation requirements.",
+    myTake: "This review draws on SSLs.com's official certificate and validation pages plus the existing blog research. No first-hand purchase is claimed. Choose coverage first, then choose the level of validation your audience or organization actually needs. Certificate names, renewal prices and issuance rules can change, so compare the exact certificate and renewal total in the cart.",
+    useCases: ['Adding HTTPS when a host does not provide a certificate', 'Covering several subdomains with a wildcard certificate', 'Covering multiple domain names with a SAN certificate', 'Choosing organization or extended validation for a business site'],
+    pricingSection: "**SSLs.com pricing examples (verify current terms):**\n- Standard SSL: $3.75/year shown for one domain.\n- Standard Wildcard SSL: $38.53/year shown for wildcard coverage.\n- EV SSL: $39.75/year shown for extended validation.\n\nThe examples are dated and certificate renewal prices, validation steps and eligible domains vary by product.",
+    verdict: "A broad certificate marketplace with useful wildcard and multi-domain options. It is worth comparing when your host does not include HTTPS, but unnecessary for most managed hosts that already provide a suitable certificate.",
+    relatedBlogSlugs: ['domain-renewal-prices-compared-2026', 'launch-an-ai-built-website-2026'],
+    rating: 3.8, lastTested: 'October 2026', lastTestedISO: '2026-10-18', datePublished: '2026-10-18', timeUsed: 'Researched Oct 2026',
+  },
+  'wordpress-com': {
+    whatIs: "WordPress.com is Automattic's managed WordPress hosting platform. It offers a free plan and paid Personal, Premium, Business and Commerce plans, with managed hosting, security and SSL. Paid plans add features such as a custom domain for the first year, premium themes and plugins; the platform also includes an AI-assisted site builder. Pressable is Automattic's higher-resource managed WordPress hosting option.",
+    whoIsItFor: "Creators, publishers, small businesses and stores that want WordPress without maintaining a server. WordPress.com suits simple sites through WooCommerce stores; Pressable is the better comparison when the site needs more predictable resource and support tiers, migrations, backups or higher traffic capacity.",
+    whoShouldSkip: "Anyone who needs full server control, a very simple static site, or the lowest possible hosting bill. Also skip the Pressable tier unless your traffic and support requirements justify managed WordPress pricing.",
+    myTake: "This review covers WordPress.com and Pressable as two Automattic hosting surfaces. WordPress.com is the approachable entry point: a free plan, managed security and SSL, paid plans with custom domains and plugins, and an AI-assisted builder. Pressable is the more infrastructure-oriented option, with Signature 1 listed at $250 per year for one WordPress install, up to 30K visits and 20GB storage, plus backups, migrations and support. Start with WordPress.com for a creator or small business site; compare Pressable when traffic, performance and operational support matter more than the lowest entry price.",
+    useCases: ['Launching a managed WordPress blog or business site', 'Using an AI-assisted builder without configuring a server', 'Installing plugins and running a WooCommerce store on an eligible plan', 'Moving a higher-traffic WordPress site to managed hosting through Pressable'],
+    pricingSection: "**WordPress.com and Pressable pricing (verify current regional prices):**\n- WordPress.com Free: $0, with platform limits.\n- WordPress.com Personal, Premium, Business and Commerce: paid plans with regional pricing; the current page shows managed hosting, a free first-year domain on paid plans, and progressively more storage, analytics, plugins, backups and store features.\n- Pressable Signature 1: $250/year, listed as $20.83/month, for one WordPress install, up to 30K visits and 20GB storage.\n\nPrices, taxes, renewals and included features vary by region and billing term. Confirm the plan and checkout total before subscribing.",
+    verdict: "A sensible managed WordPress starting point with a free entry tier and a clear path from a simple site to a store. Use WordPress.com for general publishing and compare Pressable when traffic, migrations, backups and support justify the higher hosting budget.",
+    relatedBlogSlugs: ['best-ai-website-builders-2026', 'best-ai-tools-for-startups-2026', 'best-ai-writing-tools-for-beginners-2026', 'domain-renewal-prices-compared-2026', 'launch-an-ai-built-website-2026'],
+    rating: 4.0, lastTested: 'October 2026', lastTestedISO: '2026-10-18', datePublished: '2026-10-18', timeUsed: 'Researched Oct 2026',
+  },
 };
 
 const TODAY = new Date().toISOString().split('T')[0];
@@ -1744,6 +1777,7 @@ const TOOL_COMPARE_MAP: Record<string, string[]> = {
   notta:         ['notta-vs-transkriptor'],
   'presentation-intelligence': ['aippt-vs-presentation-intelligence'],
   aippt:         ['aippt-vs-presentation-intelligence'],
+  'wordpress-com': ['domain-renewal-prices-compared-2026'],
 };
 
 interface ToolPageProps { tool: Tool; navigate: (to: string) => void; isDark: boolean; toggleTheme: () => void; }
@@ -1787,7 +1821,7 @@ const TOOL_DOMAIN: Record<string, string> = {
   'opus-clip':'opus.pro','invideo':'invideo.ai','murf-ai':'murf.ai',
   'podcastle':'podcastle.ai','gamma':'gamma.app','beautiful-ai':'beautiful.ai',
   'ocoya':'ocoya.com','replit':'replit.com','notion-ai':'notion.so','taskade':'taskade.com',
-  'perplexity':'perplexity.ai',
+  'perplexity':'perplexity.ai','domain-com':'domain.com','ssls':'ssls.com','wordpress-com':'wordpress.com',
 };
 
 function ToolLogoImg({ slug, size = 32, name, color }: { slug: string; size?: number; name?: string; color?: string }) {
@@ -1884,6 +1918,9 @@ const TOOL_RADAR: Record<string, [number, number, number, number, number]> = {
   'jetpack-ai-assistant':     [4.4, 3.5, 3.8, 3.0, 3.6],
   'spaceship':                [4.3, 4.0, 4.5, 3.0, 3.5],
   'bigrock':                  [3.6, 3.6, 3.4, 3.0, 3.5],
+  'domain-com':               [4.0, 3.4, 3.0, 3.8, 3.2],
+  'ssls':                     [4.1, 4.0, 4.0, 3.5, 3.4],
+  'wordpress-com':            [4.4, 4.1, 3.9, 4.0, 4.1],
   'tidio':                    [4.4, 3.8, 3.5, 3.8, 3.2],
   'soundraw':                 [4.5, 3.7, 3.6, 2.5, 3.0],
   'vidiq':                    [4.3, 3.7, 3.3, 3.8, 3.0],

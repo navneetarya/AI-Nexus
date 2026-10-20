@@ -230,6 +230,11 @@ function loadAffiliateLinksMap() {
     links[sm[1]] = sm[2];
   }
 
+  // Existing WordPress.com blog templates use the legacy Automattic key. At
+  // runtime it is derived from the wordpress-com tool entry in lib/affiliate-links.ts;
+  // mirror that alias here without creating a second hardcoded URL.
+  if (links['wordpress-com']) links.automattic = links['wordpress-com'];
+
   return links;
 }
 
@@ -1083,6 +1088,36 @@ const TOOLS = [
     metaDescription: "BigRock 2026 review: ₹1 .com and .in first year on a 3-year term, renewal prices, hosting from ₹69/month and what the guarantee covers.",
     reviewBody: "BigRock is an ICANN-accredited domain registrar and web host aimed at Indian buyers, with prices shown in rupees. It sells domains, shared, WordPress, reseller and VPS hosting, dedicated servers, business email, SSL certificates and a website builder. Its headline offer is a .com or .in for ₹1 in the first year, but only on a three-year registration. For .com, years two and three cost ₹1,405 each, a ₹2,811 total against ₹3,707 at regular one-year prices. For .in, years two and three cost ₹899 each, a ₹1,799 total. Domain privacy is not free: Domain Protect+ is a separate add-on. Shared hosting starts at ₹69 a month with a free Let's Encrypt SSL certificate and daily backups. A 30-day money-back guarantee covers shared, reseller, self-managed VPS and business hosting but does not list domains. Support is 24/7 live chat plus phone lines. Some figures differ between pages, so confirm the total at checkout. A good fit for India-based owners who want rupee pricing and will commit to three years, and a weaker fit for buyers who want free privacy or one-year flexibility. This review is based on BigRock's official pages; no first-hand testing is claimed.",
   },
+  {
+    slug: 'domain-com', name: 'Domain.com', category: 'Marketing',
+    tagline: 'Domain registration, hosting and website tools for small businesses',
+    description: 'Domain.com offers domain registration, hosting, email, SSL certificates and website-building products. Existing 2026 research lists .com at $5.00 for the first year, $22.99 to renew and $10.99 to transfer; confirm current figures at checkout.',
+    pricing: '.com $5.00 first year, $22.99 renewal (dated figures)', bestFor: 'Short projects needing a domain and related web-presence products',
+    rating: 3.2, lastTested: 'October 2026',
+    seoTitle: 'Domain.com Review 2026: Pricing, Renewal Cost & Verdict | AI Nexus',
+    metaDescription: 'Domain.com review 2026: dated .com first-year and renewal prices, hosting, SSL and who should choose it over Spaceship or BigRock.',
+    reviewBody: 'Domain.com is a broad domain and web-presence provider. Existing comparison research lists a .com at $5.00 for the first year, $22.99 to renew and $10.99 to transfer. The introductory price is the appeal; the renewal is the decision point. Check privacy, hosting, email, SSL and renewal add-ons as separate line items before paying. This review is based on dated public price research and existing blog coverage; no first-hand purchase is claimed.',
+  },
+  {
+    slug: 'ssls', name: 'SSLs.com', category: 'Marketing',
+    tagline: 'SSL certificates with domain, organization and extended validation options',
+    description: 'SSLs.com sells single-domain, wildcard and multi-domain TLS/SSL certificates with domain, organization and extended validation options. Many hosts already include basic HTTPS, so compare the exact coverage and renewal before buying separately.',
+    pricing: 'From $3.75/year for a dated Standard SSL example', bestFor: 'Site owners needing a separately managed certificate or expanded coverage',
+    rating: 3.8, lastTested: 'October 2026',
+    seoTitle: 'SSLs.com Review 2026: Certificate Pricing and Coverage | AI Nexus',
+    metaDescription: 'SSLs.com review 2026: domain, wildcard, multi-domain and EV certificates, dated example prices, and when you do not need a separate SSL.',
+    reviewBody: 'SSLs.com sells TLS/SSL certificates for single domains, wildcard coverage and multiple domains, with domain, organization and extended validation. Dated catalog examples include Standard SSL at $3.75/year, Standard Wildcard SSL at $38.53/year and EV SSL at $39.75/year. Check whether your host already includes HTTPS before buying separately. This review is based on official pages and existing blog research; no first-hand purchase is claimed.',
+  },
+  {
+    slug: 'wordpress-com', name: 'WordPress.com / Pressable', category: 'Marketing',
+    tagline: 'Managed WordPress hosting from Automattic, from simple sites to high-traffic stores',
+    description: 'WordPress.com offers free and paid managed WordPress plans with hosting, security, SSL, custom domains and an AI-assisted site builder. Pressable is Automattic\'s higher-resource managed WordPress option, with Signature plans starting at $250/year on its current pricing page.',
+    pricing: 'WordPress.com free plan + paid plans; Pressable from $250/year', bestFor: 'Creators, businesses and stores that want managed WordPress',
+    rating: 4.0, lastTested: 'October 2026',
+    seoTitle: 'WordPress.com and Pressable Review 2026 | AI Nexus',
+    metaDescription: 'WordPress.com and Pressable review 2026: managed WordPress plans, free hosting, plugins, AI site building and Pressable pricing.',
+    reviewBody: 'WordPress.com is Automattic\'s approachable managed WordPress platform, with a free plan and paid plans that add custom domains, themes, plugins, analytics, backups and store features. Pressable is the higher-resource comparison, with Signature 1 listed at $250/year for one WordPress install, up to 30K visits and 20GB storage. Choose WordPress.com for general publishing and compare Pressable when traffic, migrations, backups and support justify the larger hosting budget. This review is based on official pricing pages; no first-hand testing is claimed.',
+  },
   //  SITE123 + Network Solutions + Perplexity Comet  added Oct 2026. Mirrors matching entries in constants.ts TOOLS.
   {
     slug: "site123", name: "SITE123", category: "Design",
@@ -1642,6 +1677,21 @@ const TOOL_FAQS = {
     { q: 'Is PopAi Sheets really hallucination-free?', a: "PopAi markets the extraction as 100% hallucination-free. That is a vendor claim, not an independently verified result, and no current AI system can guarantee zero errors on arbitrary documents. Treat it as a marketing statement and spot-check extracted figures against the source, particularly for financial data where a single misread number carries real consequences." },
     { q: 'PopAi Sheets vs Copilot in Excel — which is better?', a: "They are built for different jobs. Microsoft 365 Copilot is the governed in-suite option, tied to your organisation's identity and admin controls, and strong at general formula help, cleanup and analysis inside Excel. PopAi Sheets is narrower and extraction-first, pulling structured data out of PDFs and messy files. If your bottleneck is documents rather than formulas, that focus is the reason to use it." },
     { q: 'Does PopAi Sheets work with Google Sheets?', a: "Yes — it covers both Excel and Google Sheets rather than committing to one, and exports to Excel, CSV and PDF. That makes it workable for teams split across both environments, which several native assistants are not." },
+  ],
+  'domain-com': [
+    { q: 'How much does a Domain.com .com cost?', a: 'Existing 2026 research lists $5.00 for the first year, $22.99 to renew and $10.99 to transfer. These are dated figures, so confirm the current total at checkout.' },
+    { q: 'Is Domain.com good for a long-term domain?', a: 'Compare the renewal price before registering. The dated comparison lists a much higher renewal than the first-year promotion, so Spaceship may be better value for a domain you plan to keep.' },
+    { q: 'What does Domain.com sell besides domains?', a: 'Domain.com also offers hosting, email, SSL certificates and website-building products. Check the current product bundle and add-on prices before buying.' },
+  ],
+  ssls: [
+    { q: 'What does SSLs.com sell?', a: 'SSLs.com sells TLS/SSL certificates including domain, organization and extended validation, plus single-domain, wildcard and multi-domain coverage.' },
+    { q: 'Do I need to buy an SSL certificate separately?', a: 'Often no. Many hosts and website builders include HTTPS. Buy separately only when your host does not provide the coverage you need or you require wildcard, multi-domain or organization validation.' },
+    { q: 'How much does SSLs.com cost?', a: 'Dated official catalog examples include Standard SSL at $3.75/year, Standard Wildcard SSL at $38.53/year and EV SSL at $39.75/year. Confirm the current product and renewal price in the cart.' },
+  ],
+  'wordpress-com': [
+    { q: 'Is WordPress.com free?', a: 'Yes. WordPress.com has a free plan with platform limits. Paid Personal, Premium, Business and Commerce plans add features such as custom domains, premium themes, plugins, analytics, backups and store tools.' },
+    { q: 'Does WordPress.com include hosting and SSL?', a: 'Yes. WordPress.com is managed hosting and its plan pages describe security and SSL as part of the platform. Confirm the exact plan features and regional terms before subscribing.' },
+    { q: 'What is Pressable?', a: 'Pressable is Automattic\'s managed WordPress hosting service for sites that need more resource, support and operational features. Signature 1 is listed at $250/year for one install, up to 30K visits and 20GB storage.' },
   ],
 };
 

@@ -486,6 +486,74 @@ export const TOOLS: Tool[] = [
     ],
     reviewType: 'research-based',
   },
+  // Domain.com, SSLs.com and WordPress.com/Pressable — added Oct 2026 from official pages and existing blog research.
+  {
+    id: 'mk6', slug: 'domain-com',
+    name: 'Domain.com', tagline: 'Domain registration, hosting and website tools for small businesses',
+    description: 'Domain.com is a domain registrar and web-presence provider offering domain registration, hosting, SSL certificates, email and website-building products. Existing price research lists .com at $5.00 for the first year, $22.99 to renew and $10.99 to transfer; confirm the current total at checkout.',
+    category: Category.MARKETING, affiliateLink: 'https://domain.mno8.net/vDqz6v?utm_source=domain-com&utm_medium=affiliate',
+    iconName: 'Globe', color: '#0ea5e9', accentColor: '#0369a1',
+    pricing: '.com $5.00 first year, $22.99 renewal (dated price-tracker figures)', bestFor: 'Short projects that need a domain and related web-presence products from one provider',
+    ctaText: 'Check Domain.com Prices',
+    features: ['Domain registration, transfer and DNS management', 'Website hosting, email and website-builder products', 'SSL certificates available as a separate product', 'One account for domain and web-presence services'],
+    pros: ['Low first-year .com price in the dated comparison research', 'Domain, hosting, email and SSL products are available from one provider', 'A straightforward option for a short-lived project'],
+    cons: ['Renewal is substantially higher than the first-year promotion', 'Exact product bundles and add-on prices need checking at checkout', 'Domain privacy and other extras may change the long-term cost'],
+    notForYou: 'Anyone choosing mainly on long-term renewal cost. Spaceship lists a lower .com renewal in the same comparison, while BigRock is the rupee-priced option for India.',
+    lastTestedISO: '2026-10-18',
+    researchSources: { lastVerified: '2026-10-18' },
+    pricingBreakdown: [
+      { tier: '.com registration', price: '$5.00 first year', highlight: 'Dated price-tracker figure from August 2026; promotional terms may change' },
+      { tier: '.com renewal', price: '$22.99 per year', highlight: 'Dated price-tracker figure; confirm the current renewal amount before registering' },
+      { tier: '.com transfer', price: '$10.99', highlight: 'Existing comparison figure; check the current transfer total' },
+    ],
+    updateLog: [{ date: 'October 2026', note: 'Page created from the existing domain-renewal comparison and Domain.com public product information. No first-hand purchase is claimed; verify registration, renewal, privacy and add-on prices at checkout.' }],
+    reviewType: 'research-based',
+  },
+  {
+    id: 'mk7', slug: 'ssls',
+    name: 'SSLs.com', tagline: 'SSL certificates with domain, organization and extended validation options',
+    description: 'SSLs.com sells TLS/SSL certificates for single domains, wildcard coverage and multiple domains. Its official product pages describe domain, organization and extended validation, fast activation for domain validation, site seals and a 3-click activation flow. Many hosts already include basic HTTPS, so a separate certificate is only needed when the host does not provide the coverage you require.',
+    category: Category.MARKETING, affiliateLink: 'https://ssls.sjv.io/m4VRyM?utm_source=ssls&utm_medium=affiliate',
+    iconName: 'Shield', color: '#14b8a6', accentColor: '#0f766e',
+    pricing: 'From $3.75/year for a dated Standard SSL example', bestFor: 'Site owners who need a separately managed certificate or a validation type their host does not include',
+    ctaText: 'Compare SSLs.com Certificates',
+    features: ['Domain Validation, Organization Validation and Extended Validation certificates', 'Single-domain, multi-domain and wildcard coverage', 'SHA-2 and 2048-bit encryption options', 'Site seal, support and guided activation'],
+    pros: ['Broad certificate and validation choice', 'Published example prices are competitive for basic certificates', 'Wildcard and multi-domain options cover more than one hostname'],
+    cons: ['A separate certificate is unnecessary when the host already provides HTTPS', 'Validation requirements and renewal terms vary by product', 'Pricing and product names can change, so checkout details matter'],
+    notForYou: 'Anyone whose host or website builder already supplies the HTTPS certificate they need. Buy only after checking coverage, validation and renewal terms.',
+    lastTestedISO: '2026-10-18',
+    researchSources: { lastVerified: '2026-10-18', trustpilot: { rating: 4.8, count: 89904, url: 'https://www.shopperapproved.com/reviews/SSLs.com' } },
+    pricingBreakdown: [
+      { tier: 'Standard SSL', price: '$3.75/year shown', highlight: 'Single domain, domain validation and basic HTTPS; confirm the current renewal price' },
+      { tier: 'Standard Wildcard SSL', price: '$38.53/year shown', highlight: 'Wildcard coverage for subdomains; validation and renewal terms apply' },
+      { tier: 'EV SSL', price: '$39.75/year shown', highlight: 'Extended validation with company verification; check current issuance requirements' },
+    ],
+    updateLog: [{ date: 'October 2026', note: 'Page created from SSLs.com official product and validation pages plus the existing site research. Example prices are dated and should be confirmed in the current cart.' }],
+    reviewType: 'research-based',
+  },
+  {
+    id: 'mk8', slug: 'wordpress-com',
+    name: 'WordPress.com / Pressable', tagline: 'Managed WordPress hosting from Automattic, from simple sites to high-traffic stores',
+    description: 'WordPress.com provides managed WordPress hosting with a free plan, paid plans that add custom domains, premium themes and plugins, and an AI-assisted site builder. Pressable is Automattic\'s managed WordPress hosting option for sites that need more predictable resource and support tiers, with Signature plans beginning at $250/year in the current pricing page.',
+    category: Category.MARKETING, affiliateLink: 'https://automattic.pxf.io/3k0mxk?utm_source=automattic&utm_medium=affiliate',
+    iconName: 'Globe', color: '#2563eb', accentColor: '#1d4ed8',
+    userBadge: 'Managed WordPress', pricing: 'WordPress.com free plan + paid plans; Pressable from $250/year', bestFor: 'Creators, businesses and stores that want managed WordPress without maintaining a server',
+    ctaText: 'Compare WordPress.com Plans',
+    features: ['WordPress.com free, Personal, Premium, Business and Commerce plans', 'Managed hosting, security and SSL across the WordPress.com platform', 'Paid plans include a free custom domain for the first year', 'Plugins and AI site-building features on eligible paid plans', 'Pressable Signature plans with backups, migrations, support and scalable resources'],
+    pros: ['Managed updates, security and hosting reduce maintenance work', 'WordPress.com has a genuinely usable free starting point', 'Business and Commerce plans add plugins, backups, developer access and store tooling', 'Pressable offers a stronger fit for higher-traffic managed WordPress workloads'],
+    cons: ['The best WordPress.com features are split across several plans', 'Pressable is priced for serious sites rather than a small personal blog', 'WordPress.com and Pressable serve different segments, so compare the workload before choosing', 'Verify regional currency, taxes, renewal pricing and the exact Automattic product attached to the referral link'],
+    notForYou: 'Anyone who wants a static site with no WordPress maintenance needs, full server control, or the lowest possible hosting price. A simpler builder or self-hosted setup may fit better.',
+    lastTestedISO: '2026-10-18',
+    researchSources: { lastVerified: '2026-10-18' },
+    pricingBreakdown: [
+      { tier: 'WordPress.com Free', price: '$0', highlight: 'Hosted WordPress site on a WordPress.com address with platform limits' },
+      { tier: 'WordPress.com Personal', price: 'Regional pricing; verify current plan', highlight: 'Custom domain, no visitor ads, premium themes and managed hosting' },
+      { tier: 'WordPress.com Business / Commerce', price: 'Regional pricing; verify current plan', highlight: 'Plugins, backups, developer tools, AI site assistant and WooCommerce features on eligible plans' },
+      { tier: 'Pressable Signature 1', price: '$250/year', highlight: 'One WordPress install, up to 30K visits and 20GB storage; 30-day money-back guarantee' },
+    ],
+    updateLog: [{ date: 'October 2026', note: 'Page created from WordPress.com and Pressable official pricing pages. WordPress.com is the main review surface; Pressable is included as the higher-resource Automattic hosting option. Confirm current regional pricing and renewal terms.' }],
+    reviewType: 'research-based',
+  },
   // Perplexity Comet - page created Oct 16 2026 from vendor pages and third-party reviews. Mirrors the matching entry in scripts/prerender.mjs TOOLS.
   {
     id: 'p18', slug: 'perplexity-comet',
@@ -4202,4 +4270,38 @@ Object.assign(TOOL_KEYWORDS, {
   retouch4me: ['retouch4me review', 'retouch4me pricing', 'retouch4me plugins', 'retouch4me free', 'ai skin retouching photoshop', 'retouch4me alternatives'],
   wordtosite: ['wordtosite review', 'wordtosite pricing', 'wordtosite free plan', 'ai wordpress site builder', 'wordtosite alternatives', 'ai website builder for agencies'],
   signnow: ['signnow review', 'signnow pricing', 'signnow free trial', 'is signnow free', 'signnow alternatives', 'esignature for freelancers'],
+});
+
+Object.assign(TOOL_FAQS, {
+  'domain-com': [
+    { q: 'How much does a Domain.com .com cost?', a: 'Existing 2026 price research lists $5.00 for the first year, $22.99 to renew and $10.99 to transfer. Those are dated figures, not a price guarantee. Confirm the current registration, renewal and add-on totals at checkout.' },
+    { q: 'Is Domain.com good for a long-term domain?', a: 'It can work, but compare the renewal price before registering. The dated comparison used for this review lists a much higher renewal than the first-year promotion, so Spaceship may be better value for a domain you plan to keep for years.' },
+    { q: 'What does Domain.com sell besides domains?', a: 'Domain.com also offers hosting, email, SSL certificates and website-building products. Product bundles and add-on prices can change, so check each line item in the current checkout.' },
+    { q: 'Does Domain.com include SSL?', a: 'SSL certificates are available as a product, but whether HTTPS is included depends on the hosting or website plan you choose. Check the exact plan rather than assuming every domain purchase includes a certificate.' },
+    { q: 'Is Domain.com better than Spaceship?', a: 'Domain.com may suit a short project where the first-year promotion matters most. Spaceship is the stronger long-term comparison on the dated figures because its .com renewal is lower and eligible domain privacy is free. Confirm current prices before deciding.' },
+  ],
+  ssls: [
+    { q: 'What does SSLs.com sell?', a: 'SSLs.com sells TLS/SSL certificates including domain validation, organization validation and extended validation products. Its catalog includes single-domain, wildcard and multi-domain certificates.' },
+    { q: 'How much does SSLs.com cost?', a: 'The official catalog showed examples including Standard SSL at $3.75/year, Standard Wildcard SSL at $38.53/year and EV SSL at $39.75/year. These figures can change, and renewal, validation and product terms vary, so check the current cart.' },
+    { q: 'Do I need to buy an SSL certificate separately?', a: 'Often no. Many hosting providers and website builders include basic HTTPS. Buy a separate certificate only when your host does not provide the coverage you need or you require wildcard, multi-domain or organization validation.' },
+    { q: 'What is the difference between DV, OV and EV SSL?', a: 'Domain Validation checks control of the domain. Organization Validation adds a business identity check. Extended Validation performs a deeper company verification. All use strong encryption; the main difference is the identity evidence shown during issuance.' },
+    { q: 'Does SSLs.com support wildcard certificates?', a: 'Yes. SSLs.com lists wildcard certificates that cover a domain and its subdomains. Check the exact hostname coverage and renewal terms before buying.' },
+  ],
+  'wordpress-com': [
+    { q: 'Is WordPress.com free?', a: 'Yes. WordPress.com has a free plan with platform limits. Paid Personal, Premium, Business and Commerce plans add features such as a custom domain, premium themes, plugins, analytics, backups and store tools depending on the tier.' },
+    { q: 'Does WordPress.com include hosting and SSL?', a: 'Yes. WordPress.com is managed hosting, and its plan pages describe security and SSL as part of the platform. Confirm the exact plan features and any regional limitations before subscribing.' },
+    { q: 'Can I install plugins on WordPress.com?', a: 'The current pricing page lists plugin installation on eligible paid plans, including Business and Commerce. The free and lower plans have more limited feature access, so check the current plan comparison if plugins are essential.' },
+    { q: 'What is Pressable?', a: 'Pressable is Automattic\'s managed WordPress hosting service for sites that need more resource, support and operational features than a basic hosted site. Its Signature 1 plan is listed at $250 per year for one install, up to 30K visits and 20GB storage.' },
+    { q: 'Should I choose WordPress.com or Pressable?', a: 'Choose WordPress.com for a simple blog, business site or store with an approachable free and paid plan ladder. Compare Pressable when you need higher-resource managed hosting, migrations, backups, support or a more predictable traffic-oriented hosting tier.' },
+  ],
+});
+Object.assign(TOOL_COMPARISONS, {
+  'domain-com': [{ tool: 'Spaceship', summary: 'Domain.com has the lower dated first-year .com promotion, while Spaceship has the lower dated renewal and free privacy on eligible domains.', slug: 'spaceship' }],
+  ssls: [{ tool: 'Spaceship', summary: 'Spaceship bundles SSL with its hosting and site products; SSLs.com is for a separately managed certificate when the host does not provide one.', slug: 'spaceship' }],
+  'wordpress-com': [{ tool: 'Jetpack AI Assistant', summary: 'WordPress.com is managed hosting and site building; Jetpack AI Assistant is the in-editor writing add-on for WordPress sites.', slug: 'jetpack-ai-assistant' }],
+});
+Object.assign(TOOL_KEYWORDS, {
+  'domain-com': ['domain.com review', 'domain.com pricing', 'domain.com renewal price', 'domain.com vs spaceship', 'domain registrar review'],
+  ssls: ['ssls.com review', 'ssls.com pricing', 'cheap ssl certificate', 'wildcard ssl certificate', 'ssl certificate comparison'],
+  'wordpress-com': ['wordpress.com review', 'wordpress.com pricing', 'pressable review', 'managed wordpress hosting', 'wordpress.com vs pressable'],
 });
