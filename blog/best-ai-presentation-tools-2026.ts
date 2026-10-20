@@ -50,7 +50,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'best-ai-presentation-tools-2026',
   title: 'Best AI Presentation Tools 2026: Gamma vs Beautiful.ai vs Canva AI vs NotebookLM',
-  seoTitle: 'Best AI Presentation Tools 2026: Reviewed & Ranked',
+  seoTitle: 'Best AI Presentation Tools 2026: Gamma vs Beautiful.ai & More',
   metaDescription: 'Best AI presentation tools 2026: Gamma, Pi, AiPPT, Beautiful.ai, Canva AI & NotebookLM compared. Tome shut down in 2025 — verified pricing inside.',
   datePublished: '2026-06-30',
   dateModified: '2026-10-15',

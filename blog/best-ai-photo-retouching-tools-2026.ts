@@ -20,7 +20,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'best-ai-photo-retouching-tools-2026',
   title: 'Best AI Photo Retouching Tools 2026: Retouch4me vs YouCam vs PhotoRoom vs Topaz vs Remini',
-  seoTitle: 'Best AI Photo Retouching Tools 2026 (Compared)',
+  seoTitle: 'Best AI Photo Retouching Tools 2026: 5 Compared by Job',
   metaDescription: 'Retouch4me, YouCam, PhotoRoom, Topaz Photo AI and Remini compared by job: skin retouching, quick fixes, product photos and restoration. Pricing dated Oct 2026.',
   datePublished: '2026-10-14',
   dateModified: '2026-10-14',

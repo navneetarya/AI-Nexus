@@ -12,7 +12,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'best-ai-writing-tools-2026',
   title: 'Best AI Writing Tools 2026 — Reviewed, Ranked & Compared',
-  seoTitle: 'Best AI Writing Tools 2026: Ranked by Use Case',
+  seoTitle: 'Best AI Writing Tools 2026: 6 Ranked by Use Case',
   metaDescription: '6 best AI writing tools for 2026 — Grammarly, Rytr, QuillBot, Writesonic, Jasper, and Frase ranked by use case and free plan. See our top picks.',
   datePublished: '2026-05-11',
   dateModified: '2026-09-29',

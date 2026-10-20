@@ -4,7 +4,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'fastest-growing-ai-startups-2026',
   title: 'Fastest Growing AI Startups in 2026 — Independent Research',
-  seoTitle: 'Fastest Growing AI Startups 2026 — Researched',
+  seoTitle: 'Which AI Startups Are Growing Fastest in 2026? Ranked',
   metaDescription: 'Independent research into the fastest growing AI startups of 2026 — ranked by revenue, user growth, and funding based on verified public data.',
   datePublished: '2026-05-25',
   dateModified: '2026-10-15',

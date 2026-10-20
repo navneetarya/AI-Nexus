@@ -39,7 +39,7 @@ const post: BlogPost = {
   quickAnswer:
     'Best Gamma AI alternatives in 2026: Pi (Presentation Intelligence) wins on price and free-plan generosity — forever-free with no watermark, and $7.50/month on annual billing undercuts Gamma\u2019s $8/month Plus tier. Beautiful.ai wins for teams that need every deck to look consistent regardless of who built it. Canva AI wins if you already pay for Canva. NotebookLM wins if you want slides grounded in documents you actually uploaded, not AI-invented filler.',
   myTake:
-    "Navneet's take: Pi is the Gamma alternative is a strong choice for most price-sensitive users to first \u2014 a genuinely free, watermark-free plan is a real difference from Gamma's free tier, not just a cheaper number on a pricing page. Beautiful.ai and NotebookLM aren't really Gamma replacements so much as tools that solve one thing Gamma does adequately at best: locked design consistency, and staying grounded in your own source material.",
+    "Navneet's take: Pi is the strongest first choice for most price-sensitive users \u2014 a genuinely free, watermark-free plan is a real difference from Gamma's free tier, not just a cheaper number on a pricing page. Beautiful.ai and NotebookLM aren't really Gamma replacements so much as tools that solve one thing Gamma does adequately at best: locked design consistency, and staying grounded in your own source material.",
   faqs: [
     {
       q: 'What is the best free Gamma alternative in 2026?',

@@ -20,7 +20,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'ai-tools-cost-roi-calculator-2026',
   title: 'AI Tools ROI Calculator: What AI Actually Costs Your Business in 2026',
-  seoTitle: 'AI Tools ROI Calculator 2026: Real Costs & Payback Time',
+  seoTitle: 'AI Tools ROI Calculator 2026: 5 Steps to Real Cost & Payback',
   metaDescription: 'What do AI tools actually cost your business in 2026? Cost breakdown by category, an ROI framework, hidden fees, and India INR pricing.',
   datePublished: '2026-06-27',
   dateModified: '2026-08-22',

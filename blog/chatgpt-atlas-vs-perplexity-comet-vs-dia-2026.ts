@@ -14,7 +14,7 @@ const post: BlogPost = {
   slug: 'chatgpt-atlas-vs-perplexity-comet-vs-dia-2026',
   title: 'ChatGPT Atlas vs Perplexity Comet vs Dia (2026): Which AI Browser Should You Actually Install?',
   seoTitle: 'ChatGPT Atlas vs Comet vs Dia: Which AI Browser in 2026?',
-  metaDescription: "ChatGPT Atlas, Perplexity Comet, and Dia tested head-to-head — including the security risks most reviews leave out. Here's which AI browser to install.",
+  metaDescription: "ChatGPT Atlas, Perplexity Comet, and Dia compared head-to-head — including the security risks most reviews leave out. Here's which AI browser to install.",
   datePublished: '2026-07-21',
   dateModified: '2026-10-15',
   author: 'Navneet Arya',

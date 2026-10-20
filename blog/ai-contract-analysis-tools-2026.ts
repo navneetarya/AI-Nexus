@@ -30,7 +30,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'ai-contract-analysis-tools-2026',
   title: 'AI Contract Analysis Tools 2026: Legal AI for Small Business & Freelancers',
-  seoTitle: 'AI Contract Analysis Tools 2026: Freelancer & SMB Guide',
+  seoTitle: 'AI Contract Analysis Tools for Freelancers & SMBs: 2026 Costs',
   metaDescription: 'Harvey AI and Luminance are enterprise-only. Here is what AI contract analysis tools actually cost in 2026, and what freelancers should use instead.',
   datePublished: '2026-07-13',
   dateModified: '2026-10-15',

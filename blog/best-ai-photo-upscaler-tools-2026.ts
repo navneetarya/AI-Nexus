@@ -26,8 +26,8 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-ai-photo-upscaler-tools-2026',
-  title: 'Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration',
-  seoTitle: 'Best AI Image Upscaler Tools 2026 — Compared & Ranked',
+  title: 'Best AI Image Upscaler Tools 2026 — Compared for Ecommerce & Photo Restoration',
+  seoTitle: 'Best AI Image Upscaler Tools 2026: 5 Compared + Free Pick',
   metaDescription: 'PhotoRoom, Topaz Photo AI, Let\'s Enhance, Upscale.media & Remini — best ai image upscaler tools 2026. Real pricing, ecommerce fit, honest verdict.',
   datePublished: '2026-07-31',
   dateModified: '2026-10-13',

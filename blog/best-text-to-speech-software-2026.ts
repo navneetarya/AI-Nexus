@@ -12,8 +12,8 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 
 const post: BlogPost = {
   slug: 'best-text-to-speech-software-2026',
-  title: 'Best Text-to-Speech Software 2026: 5 Tools Tested on API, Languages & Price',
-  seoTitle: 'Best Text-to-Speech Software 2026: 5 Tools Tested',
+  title: 'Best Text-to-Speech Software 2026: 5 Tools Compared on API, Languages & Price',
+  seoTitle: 'Best Text-to-Speech Software 2026: 5 Tools Compared',
   metaDescription: 'Best text-to-speech software 2026 compared on API access, languages, latency, and real pricing: ElevenLabs, Murf AI, Podcastle & Descript.',
   datePublished: '2026-08-13',
   dateModified: '2026-10-09',

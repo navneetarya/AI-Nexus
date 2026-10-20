@@ -23,7 +23,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'best-ai-seo-content-optimization-tools-2026',
   title: 'Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)',
-  seoTitle: 'Best AI SEO Content Optimization Tools 2026',
+  seoTitle: 'Best AI SEO Content Optimization Tools 2026: 4 Compared',
   metaDescription: 'Surfer, Frase, Clearscope & MarketMuse compared on verified 2026 pricing and G2 ratings. The best ai seo content optimization tools 2026, by team size.',
   datePublished: '2026-08-11',
   dateModified: '2026-09-29',

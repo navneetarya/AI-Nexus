@@ -13,7 +13,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 const post: BlogPost = {
   slug: 'best-ai-meeting-tools-2026',
   title: 'Best AI Meeting Tools 2026 — Ranked & Compared',
-  seoTitle: 'Best AI Meeting Tools 2026 — Ranked & Compared',
+  seoTitle: 'Best AI Meeting Tools 2026: Fireflies vs Otter vs Fathom',
   metaDescription: 'Fireflies.ai, Otter.ai & Fathom — best AI meeting tools 2026. Auto-transcription, action items, summaries & pricing. Independent research.',
   datePublished: '2026-06-09',
   dateModified: '2026-10-14',

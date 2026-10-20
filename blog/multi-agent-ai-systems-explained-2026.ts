@@ -10,7 +10,7 @@ import { BlogPost } from './types';
 const post: BlogPost = {
   slug: 'multi-agent-ai-systems-explained-2026',
   title: 'Multi-Agent AI Systems Explained: Architecture, Tools & Use Cases 2026',
-  seoTitle: 'Multi-Agent AI Systems Explained 2026: Architecture & Tools',
+  seoTitle: 'Multi-Agent AI Systems Explained 2026: 6 Frameworks Compared',
   metaDescription: 'Multi-agent AI systems explained: architecture, the 6 frameworks that matter in 2026 (LangGraph, CrewAI, AutoGen & more), MCP vs A2A, and real use cases.',
   datePublished: '2026-07-02',
   dateModified: '2026-10-15',
