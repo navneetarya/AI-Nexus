@@ -1,6 +1,6 @@
 # AI Nexus — blog fix checklist
 
-_Generated 2026-10-20T16:15:46 · site score 99.8/100 · tick items off as you ship them._
+_Generated 2026-10-20T17:44:10 · site score 99.8/100 · tick items off as you ship them._
 
 Priority = severity × page importance (link authority + revenue potential) × pillar weight ÷ effort. **Effort**: S ≈ <30 min, M ≈ 1-2 h, L ≈ half-day+.
 
@@ -46,37 +46,29 @@ Priority = severity × page importance (link authority + revenue potential) × p
 | `best-ai-receptionist-small-business-2026` | 84.8 | Solid | monetisation (0%) |
 | `chatgpt-free-vs-claude-free-vs-gemini-free-2026` | 85.1 | Strong | monetisation (0%) |
 | `best-ai-tool-lifetime-deals-appsumo-2026` | 85.6 | Strong | evidence (73%) |
-| `best-podcastle-alternatives` | 85.9 | Strong | evidence (58%) |
+| `best-podcastle-alternatives` | 86.2 | Strong | evidence (57%) |
 
 ## 1. Do these first (top 25 across the site)
 
-- [ ] **MEDIUM** · Trust & E-E-A-T · effort S — Ocoya: most posts say $15/mo but others differ — $19 in best-ai-marketing-tools-2026.
-  - **Fix:** Verify the current price on the vendor's page, then align every post (label annual-vs-monthly differences).
-- [ ] **MEDIUM** · Trust & E-E-A-T · effort S — Jasper: most posts say $49/mo but others differ — $39 in best-ai-writing-tools-2026.
-  - **Fix:** Verify the current price on the vendor's page, then align every post (label annual-vs-monthly differences).
-- [ ] **MEDIUM** · Affiliate revenue · effort M — Heavily-mentioned tools with NO tracked affiliate link: Grammarly (255×/18 posts), Cursor (153×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).
-  - **Fix:** Check each vendor for an affiliate/partner program (Impact, PartnerStack, FirstPromoter, direct); apply, then add the link in constants.ts.
-- [ ] **MEDIUM** · Reader value · effort M — `best-ai-coding-tools-2026` — 1477 words; competitive 'roundup' posts run ≈2000+.
+- [ ] **MEDIUM** · Reader value · effort M — `best-ai-coding-tools-2026` — 1626 words; competitive 'roundup' posts run ≈2000+.
   - **Fix:** Deepen the weakest sections rather than padding.
-- [ ] **MEDIUM** · Reader value · effort M — `best-ai-writing-tools-for-beginners-2026` — 1586 words; competitive 'roundup' posts run ≈2000+.
+- [ ] **MEDIUM** · Reader value · effort M — `best-ai-writing-tools-for-beginners-2026` — 1717 words; competitive 'roundup' posts run ≈2000+.
   - **Fix:** Deepen the weakest sections rather than padding.
 - [ ] **MEDIUM** · Reader value · effort M — `perplexity-ai-review-2026` — Flesch reading ease 53 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
 - [ ] **MEDIUM** · Reader value · effort M — `best-ai-meeting-tools-2026` — Flesch reading ease 54 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
-- [ ] **MEDIUM** · Reader value · effort M — `murf-ai-alternatives-2026` — 1180 words; competitive 'alternatives' posts run ≈1600+.
+- [ ] **MEDIUM** · Reader value · effort M — `murf-ai-alternatives-2026` — 1313 words; competitive 'alternatives' posts run ≈1600+.
   - **Fix:** Deepen the weakest sections rather than padding.
-- [ ] **MEDIUM** · Reader value · effort M — `ai-agents-vs-ai-automation-difference-2026` — Only 3 distinct concrete figures (1.4/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
+- [ ] **MEDIUM** · Reader value · effort M — `ai-agents-vs-ai-automation-difference-2026` — Only 3 distinct concrete figures (1.3/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
   - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
-- [ ] **MEDIUM** · Reader value · effort M — `best-ai-voice-generators-for-youtube-2026` — 1887 words; competitive 'roundup' posts run ≈2000+.
+- [ ] **MEDIUM** · Reader value · effort M — `best-podcastle-alternatives` — 1473 words; competitive 'alternatives' posts run ≈1600+.
   - **Fix:** Deepen the weakest sections rather than padding.
-- [ ] **MEDIUM** · Reader value · effort M — `best-podcastle-alternatives` — 1346 words; competitive 'alternatives' posts run ≈1600+.
-  - **Fix:** Deepen the weakest sections rather than padding.
-- [ ] **MEDIUM** · Reader value · effort M — `best-podcastle-alternatives` — Flesch reading ease 54 (target ≥55-60).
+- [ ] **MEDIUM** · Reader value · effort M — `best-podcastle-alternatives` — Flesch reading ease 55 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
-- [ ] **MEDIUM** · Reader value · effort M — `leonardo-vs-midjourney-2026` — 1361 words; competitive 'comparison' posts run ≈1600+.
+- [ ] **MEDIUM** · Reader value · effort M — `leonardo-vs-midjourney-2026` — 1404 words; competitive 'comparison' posts run ≈1600+.
   - **Fix:** Deepen the weakest sections rather than padding.
-- [ ] **MEDIUM** · Reader value · effort M — `cheapest-ai-coding-tools-2026` — 1022 words; competitive 'pricing' posts run ≈1200+.
+- [ ] **MEDIUM** · Reader value · effort M — `cheapest-ai-coding-tools-2026` — 1077 words; competitive 'pricing' posts run ≈1200+.
   - **Fix:** Deepen the weakest sections rather than padding.
 - [ ] **MEDIUM** · Reader value · effort M — `best-ai-voice-dictation-tools-2026` — Flesch reading ease 54 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
@@ -97,77 +89,62 @@ Priority = severity × page importance (link authority + revenue potential) × p
 - [ ] **MEDIUM** · Reader value · effort M — `how-to-beat-ats-resume-screening-2026` — Flesch reading ease 53 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
 
-## 2. Site-level
-
-- [ ] **MEDIUM** · Trust & E-E-A-T · effort S — Ocoya: most posts say $15/mo but others differ — $19 in best-ai-marketing-tools-2026.
-  - **Fix:** Verify the current price on the vendor's page, then align every post (label annual-vs-monthly differences).
-- [ ] **MEDIUM** · Trust & E-E-A-T · effort S — Jasper: most posts say $49/mo but others differ — $39 in best-ai-writing-tools-2026.
-  - **Fix:** Verify the current price on the vendor's page, then align every post (label annual-vs-monthly differences).
-- [ ] **MEDIUM** · Affiliate revenue · effort M — Heavily-mentioned tools with NO tracked affiliate link: Grammarly (255×/18 posts), Cursor (153×/10 posts), n8n (119×/12 posts), Zapier (107×/10 posts), GitHub Copilot (105×/11 posts), Claude Code (97×/9 posts).
-  - **Fix:** Check each vendor for an affiliate/partner program (Impact, PartnerStack, FirstPromoter, direct); apply, then add the link in constants.ts.
-
 ## 3. Per-post checklists (most important pages first)
 
 ### best-ai-coding-tools-2026 — 99.0/100 (A+)
-_roundup · 1477 words · importance 1.8 · inbound links 10_
+_roundup · 1626 words · importance 1.8 · inbound links 10_
 
-- [ ] **MEDIUM** · Reader value · effort M — 1477 words; competitive 'roundup' posts run ≈2000+.
+- [ ] **MEDIUM** · Reader value · effort M — 1626 words; competitive 'roundup' posts run ≈2000+.
   - **Fix:** Deepen the weakest sections rather than padding.
 
 ### best-ai-writing-tools-for-beginners-2026 — 99.0/100 (A+)
-_roundup · 1586 words · importance 1.76 · inbound links 3_
+_roundup · 1717 words · importance 1.76 · inbound links 3_
 
-- [ ] **MEDIUM** · Reader value · effort M — 1586 words; competitive 'roundup' posts run ≈2000+.
+- [ ] **MEDIUM** · Reader value · effort M — 1717 words; competitive 'roundup' posts run ≈2000+.
   - **Fix:** Deepen the weakest sections rather than padding.
 
 ### perplexity-ai-review-2026 — 99.0/100 (A+)
-_comparison · 1776 words · importance 1.7 · inbound links 15_
+_comparison · 1792 words · importance 1.7 · inbound links 15_
 
 - [ ] **MEDIUM** · Reader value · effort M — Flesch reading ease 53 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
 
 ### best-ai-meeting-tools-2026 — 99.0/100 (A+)
-_roundup · 2835 words · importance 1.69 · inbound links 5_
+_roundup · 2873 words · importance 1.69 · inbound links 5_
 
 - [ ] **MEDIUM** · Reader value · effort M — Flesch reading ease 54 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
 
 ### murf-ai-alternatives-2026 — 99.0/100 (A+)
-_alternatives · 1180 words · importance 1.69 · inbound links 5_
+_alternatives · 1313 words · importance 1.69 · inbound links 5_
 
-- [ ] **MEDIUM** · Reader value · effort M — 1180 words; competitive 'alternatives' posts run ≈1600+.
+- [ ] **MEDIUM** · Reader value · effort M — 1313 words; competitive 'alternatives' posts run ≈1600+.
   - **Fix:** Deepen the weakest sections rather than padding.
 
 ### ai-agents-vs-ai-automation-difference-2026 — 99.0/100 (A+)
-_comparison · 2220 words · importance 1.65 · inbound links 13_
+_comparison · 2257 words · importance 1.65 · inbound links 13_
 
-- [ ] **MEDIUM** · Reader value · effort M — Only 3 distinct concrete figures (1.4/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
+- [ ] **MEDIUM** · Reader value · effort M — Only 3 distinct concrete figures (1.3/1000 words). Posts that rank & get cited carry specifics competitors skip: limits, per-seat prices, caps, ratings with review counts.
   - **Fix:** Add a dated plan/limits table and 5-8 verifiable numbers (credit caps, seat minimums, overage rates, G2 rating + review count) — each with its source.
 
-### best-ai-voice-generators-for-youtube-2026 — 99.0/100 (A+)
-_roundup · 1887 words · importance 1.64 · inbound links 13_
-
-- [ ] **MEDIUM** · Reader value · effort M — 1887 words; competitive 'roundup' posts run ≈2000+.
-  - **Fix:** Deepen the weakest sections rather than padding.
-
 ### best-podcastle-alternatives — 97.9/100 (A+)
-_alternatives · 1346 words · importance 1.63 · inbound links 13_
+_alternatives · 1473 words · importance 1.63 · inbound links 13_
 
-- [ ] **MEDIUM** · Reader value · effort M — 1346 words; competitive 'alternatives' posts run ≈1600+.
+- [ ] **MEDIUM** · Reader value · effort M — 1473 words; competitive 'alternatives' posts run ≈1600+.
   - **Fix:** Deepen the weakest sections rather than padding.
-- [ ] **MEDIUM** · Reader value · effort M — Flesch reading ease 54 (target ≥55-60).
+- [ ] **MEDIUM** · Reader value · effort M — Flesch reading ease 55 (target ≥55-60).
   - **Fix:** Split sentences >25 words; swap multisyllabic words.
 
 ### leonardo-vs-midjourney-2026 — 99.0/100 (A+)
-_comparison · 1361 words · importance 1.55 · inbound links 4_
+_comparison · 1404 words · importance 1.55 · inbound links 4_
 
-- [ ] **MEDIUM** · Reader value · effort M — 1361 words; competitive 'comparison' posts run ≈1600+.
+- [ ] **MEDIUM** · Reader value · effort M — 1404 words; competitive 'comparison' posts run ≈1600+.
   - **Fix:** Deepen the weakest sections rather than padding.
 
 ### cheapest-ai-coding-tools-2026 — 99.0/100 (A+)
-_pricing · 1022 words · importance 1.51 · inbound links 8_
+_pricing · 1077 words · importance 1.51 · inbound links 8_
 
-- [ ] **MEDIUM** · Reader value · effort M — 1022 words; competitive 'pricing' posts run ≈1200+.
+- [ ] **MEDIUM** · Reader value · effort M — 1077 words; competitive 'pricing' posts run ≈1200+.
   - **Fix:** Deepen the weakest sections rather than padding.
 
 ### best-ai-voice-dictation-tools-2026 — 99.0/100 (A+)

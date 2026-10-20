@@ -1084,7 +1084,15 @@ def site_analysis(site: Site, A: Analyzer):
         if o["tracked"] and o["has_page"] and o["blog_links_to_page"] == 0 and o["posts"] >= 1:
             site_issue(site, "tool-page-no-inbound", "revenue", "medium", f"/tools/{o['slug']}/ (tracked affiliate) is discussed in {o['posts']} post(s) but no blog post links to it.",
                        "Link the first mention of the tool to its review page.", "S", key=o["slug"])
-    untracked = [o for o in site.tool_table if not o["tracked"] and o["mentions"] >= 8 and o["slug"] not in ("chatgpt", "claude", "gemini", "copilot", "notebooklm", "google-gemini")]
+    # These vendors have no confirmed public affiliate/referral program in the
+    # repository's current research. Do not invent tracking URLs to silence the
+    # finding; revisit this allowlist when a vendor publishes a program.
+    no_public_program = {
+        "grammarly", "cursor", "n8n", "zapier", "copilot", "github-copilot", "claude-code",
+        "lindy", "midjourney", "gumloop", "nano-banana-pro", "windsurf",
+        "v0", "stable-diffusion",
+    }
+    untracked = [o for o in site.tool_table if not o["tracked"] and o["mentions"] >= 8 and o["slug"] not in ("chatgpt", "claude", "gemini", "copilot", "notebooklm", "google-gemini") and o["slug"] not in no_public_program]
     if untracked:
         top = ", ".join(f"{o['name']} ({o['mentions']}×/{o['posts']} posts)" for o in untracked[:6])
         site_issue(site, "untracked-tools", "revenue", "medium", f"Heavily-mentioned tools with NO tracked affiliate link: {top}.",

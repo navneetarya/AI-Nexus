@@ -98,7 +98,12 @@ const post: BlogPost = {
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A computer screen displaying a search analytics dashboard" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>Perplexity is worth it for research-heavy work: questions that require pulling together information from multiple sources. Google still wins for navigational searches, local results, breaking news, and shopping. The two aren't really competing for the same query — they're solving different information needs.</p>
 <p>Use Perplexity when the question needs synthesis and citations. Open the cited page for any number, quote, policy, or claim used in published work. Use Google when the task is local, navigational, or time-sensitive.</p>
-<p>So the honest answer is that most people end up using both. For two years, Perplexity operated as a power-user tool, known in tech communities but largely ignored by the mainstream. That has changed.</p>
+<p>Most people end up using both. Perplexity is a research tool. Google remains the broad everyday search tool. That distinction has become clearer as both products add AI features.</p>
+<p>Use Perplexity for synthesis. Open the cited source for important claims. Use Google for local results, shopping, and a specific website.</p>
+<h3>A safe research loop</h3>
+<ol style="margin:12px 0 20px 24px;line-height:1.9;"><li>Ask a focused question.</li><li>Read the summary.</li><li>Open the strongest citations.</li><li>Check each number and quote.</li><li>Write the answer in your own words.</li></ol>
+<p>This loop keeps the speed advantage without treating a generated answer as a primary source. The free plan is enough for many users. Pro at $20/month is for heavier research, Deep Research, Spaces, and access to more capable models.</p>
+<p>Check the source. Check the date. Check the claim.</p>
 <div style="margin:14px 0 20px;">
   <a href="${AFFILIATE_LINKS['perplexity']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Perplexity Free →</a>
 </div>
