@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'ChatGPT Free vs Claude Free vs Gemini Free (2026)',
   metaDescription: 'ChatGPT, Claude and Gemini free plans compared from official plan pages: limits, web search, image tools and when to upgrade. Updated October 2026.',
   datePublished: '2026-05-20',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-20',
   author: 'Navneet Arya',
   category: 'AI Comparison',
   readTime: '8 min read',
@@ -219,25 +219,54 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);">This comparison is independent research — AI Nexus is not sponsored by OpenAI, Anthropic, or Google. Plan details were taken from official plan pages on 10 October 2026 and can change without notice. See our <a href="/disclosure/">disclosure policy</a> and <a href="/methodology/">editorial methodology</a>.</p>
 
 <p><strong>Related reading:</strong> <a href="/blog/google-gemini-ai-review-2026/">Google Gemini AI Review 2026</a>.</p>
-<h2>How to choose with confidence</h2>
-<p>Start with the job you need to finish. A broad feature list is less useful than one clear outcome. Write down the input, the output, and the time you can spend learning a new tool.</p>
-<p>Then compare the lowest paid tier that supports that job. Free plans are useful for checking quality, but limits can distort a real workflow. Check export rules, usage caps, team seats, and cancellation terms before you rely on a trial.</p>
-<p>Finally, keep a small fallback. Save the original files, prompts, or workflow steps. That makes it easier to switch vendors when a price changes or a feature moves behind a higher tier. The strongest choice is the tool that fits your recurring work, not the one with the longest feature page.</p>
-<h3>Practical checks before you commit</h3>
-<p>Use one representative task as a trial. Do not judge a tool from a polished demo. Bring the file, prompt, or workflow that normally causes friction. Record how long setup takes. Record how much cleanup the result needs.</p>
-<p>For writing and research tools, check citation behavior and export quality. A fast draft is less useful when links disappear during export. For creative tools, inspect watermarks, resolution, commercial rights, and the way credits are counted. For automation tools, confirm retry behavior, logs, permissions, and human approval steps.</p>
-<p>Privacy deserves the same attention as price. Read whether uploads train a shared model. Check retention periods and deletion controls. Teams should also confirm whether administrators can remove a workspace member's data. These details matter when a workflow handles customer records, private documents, or unreleased creative work.</p>
-<p>Make the final comparison at the same billing interval. Annual prices can look much lower than monthly prices. Note the currency, tax treatment, usage cap, seat minimum, and overage rate. A low starting price can become expensive when a team reaches normal volume.</p>
-<p>Keep a fallback plan for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document the manual steps that remain. This keeps a price increase or an outage from stopping the workflow.</p>
-<p>The right choice is usually clear after this check. Pick the option that solves the recurring task with the least supervision. Pick a cheaper option when its limitations do not affect that task. Upgrade only when a specific limit costs more time than the next plan costs money.</p>
+<h2>Pick by job, not by brand</h2>
+<p>Match the free plan to the task that costs you the most time each week:</p>
+<ul style="margin:8px 0 12px 24px;line-height:1.9;">
+  <li>Blog or newsletter first drafts and long client briefs: Claude Free, because Projects keep the brief and style guide together and web search covers quick fact checks.</li>
+  <li>Social captions with a quick image, or a screenshot question: ChatGPT Free, the only one of the three that mixes limited image creation with unlimited text chat.</li>
+  <li>Research that needs current sources: Gemini Free, which includes Deep Research and searches with Google.</li>
+  <li>A small coding fix: ChatGPT Free, thanks to its limited Codex access.</li>
+  <li>Anything confidential: none of the three. Opt out of training where you can, or move to a business tier.</li>
+</ul>
 
-<h3>Workflow fit and operating cost</h3>
-<p>A useful comparison includes the work around the headline feature. Count setup time, review time, export time, and corrections. A tool that creates a result quickly can still lose its advantage if every output needs a manual cleanup pass.</p>
-<p>Check limits that appear only after regular use. Look for monthly credits, file-size caps, queue priority, team permissions, API access, and whether unused credits expire. Read the cancellation page before starting an annual plan. These checks turn a polished demo into a realistic buying decision.</p>
-<p>For professional work, confirm rights in writing. Check commercial use, client delivery, attribution, training use, and whether the vendor can reuse uploaded material. Keep a local copy of important inputs and outputs. That habit makes vendor changes easier to absorb.</p>
-<p>Use the smallest plan that supports one complete workflow. Upgrade when a measured limit blocks the work, not when a feature list sounds impressive. Revisit the choice after a month of normal use. The best tool is the one that keeps the whole process predictable.</p>
-<p>Compare the total monthly cost with the manual alternative. Include review time, storage, extra seats, taxes, and paid integrations. A cheap plan that requires several workarounds may cost more than a focused tool with a clearer workflow.</p>
-<p>Keep a fallback plan for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document the manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>`,
+<h2>What the first paid step costs</h2>
+<p>If a free plan keeps blocking you, here is where each provider's paid ladder starts. These are US list prices; independent comparisons dated July to October 2026 agree on them, but plans change often, so confirm on the official pages linked above before paying.</p>
+<div style="overflow-x:auto;margin:28px 0">
+  <table style="width:100%;border-collapse:collapse;font-size:14px">
+    <thead>
+      <tr style="background:rgba(14,165,233,.08)">
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);font-weight:600">Provider</th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);font-weight:600">Entry paid plan</th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);font-weight:600">Standard plan</th>
+        <th style="padding:10px 14px;text-align:left;border-bottom:2px solid rgba(14,165,233,.2);font-weight:600">Power tiers</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">ChatGPT</td>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Go, $8/mo</td>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Plus, $20/mo</td>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Pro, $100 or $200/mo</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Claude</td>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">None (Free goes straight to Pro)</td>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Pro, $20/mo ($17/mo billed yearly)</td>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Max, $100 or $200/mo</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Gemini</td>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Google AI Plus, $4.99/mo</td>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Google AI Pro, $19.99/mo</td>
+        <td style="padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06)">Google AI Ultra, $99.99 or $199.99/mo</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>The standard plans cluster around $20 a month, so price rarely decides the choice. What differs is what you unlock: Projects and custom GPTs on ChatGPT Plus, Claude Research and Claude Code on Claude Pro, and Gemini inside Gmail and Docs on Google's paid plans. In India the entry steps are ChatGPT Go and Google AI Plus at ₹399 a month each.</p>
+
+<h2>A one-afternoon test before you pay for anything</h2>
+<p>Run the same three jobs through all three free plans: a client email that needs the right tone, an 800-word draft from a brief, and a short competitor research summary with sources. Compare how much editing each result needs and whether you hit a cap before finishing. Whichever plan you reach for first on a normal workday is the one whose paid tier is worth considering.</p>`,
 };
 
 export default post;
