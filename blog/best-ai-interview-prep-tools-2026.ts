@@ -233,7 +233,7 @@ const post: BlogPost = {
 </ol>
 <p>Editorial verdict based on every pricing page and reading the complaint patterns directly: Yoodli is the tool I'd recommend to most job seekers first. It's cheap, honest about what it does, and the improvement is measurable rather than promised.</p>
 <p>Verify each platform's current pricing and refund terms directly before you subscribe to anything, whichever tool you land on.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “Best AI Interview Prep Tools 2026”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `,
 
   faqs: [

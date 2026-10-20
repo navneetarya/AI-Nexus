@@ -38,7 +38,7 @@ const post: BlogPost = {
   myTake: "This guide focuses on the actual jobs podcasters use voice generation for, not a repeat of our broader podcast tools guide. Fixing one bad line beats a full re-record almost every time.",
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1593697909683-bccb1b9e68a4?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A podcaster sitting in front of a microphone in a recording studio" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 

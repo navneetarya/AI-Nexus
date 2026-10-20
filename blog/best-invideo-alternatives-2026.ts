@@ -74,7 +74,7 @@ const post: BlogPost = {
   ],
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best InVideo AI alternatives in 2026 for faceless YouTube creators: choose <strong>Pictory</strong> (from $15/month, per vendor pricing as of October 2026) to turn blog posts or scripts into faceless videos, pick <strong>Opus Clip</strong> (free plan, 60 minutes a month) for short-form clips for TikTok and Reels, or use <strong>Murf AI</strong> (Creator from $22/month billed yearly) if voiceover quality is your only complaint.</p>
@@ -227,7 +227,7 @@ const post: BlogPost = {
 <p>The honest truth: most serious faceless YouTube creators end up using two of these tools in combination. Pictory or InVideo for video creation, Murf for voiceovers, and Opus Clip to generate short-form content from the same videos. Even paying for two of these tools costs less than a single freelance video editor per video.</p>
 
 <p><strong>Related reading:</strong> <a href="/blog/best-ai-tools-for-youtubers-2026/">Best AI Tools for YouTubers in 2026</a>.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “Best InVideo AI Alternatives 2026”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `,
 };
 

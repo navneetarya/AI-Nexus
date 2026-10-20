@@ -170,7 +170,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.
 </p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “Best AI Tool Lifetime Deals on AppSumo in 2026”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   
 <h2>Lifetime deal math: when a one-time price beats a subscription</h2>
 <p>Divide the one-time price by the tool's normal monthly price to get the break-even point. The number only matters if you would keep using the tool, and the vendor stays in business, for at least that long.</p>

@@ -81,7 +81,7 @@ const post: BlogPost = {
   wordCount: 2647,
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:10px;padding:16px 20px;margin:0 0 28px;">
   <div style="font-size:11px;font-weight:700;color:#0D9488;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;">⚡ Quick Answer</div>

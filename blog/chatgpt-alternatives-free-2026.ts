@@ -74,7 +74,7 @@ const post: BlogPost = {
   },
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0d9488;border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;">
   <p style="font-weight:600;margin:0 0 8px;color:#0d9488;font-size:13px;text-transform:uppercase;letter-spacing:.04em;">Quick Verdict</p>
@@ -240,13 +240,7 @@ const post: BlogPost = {
   
 <p><strong>Related reading:</strong> <a href="/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/">ChatGPT Atlas vs Perplexity Comet vs Dia (2026)</a>.</p>
 
-<h3>Workflow fit and operating cost</h3>
-<p>A useful comparison includes the work around the headline feature. Count setup time, review time, export time, and corrections. A tool that creates a result quickly can still lose its advantage if every output needs a manual cleanup pass.</p>
-<p>Check limits that appear only after regular use. Look for monthly credits, file-size caps, queue priority, team permissions, API access, and whether unused credits expire. Read the cancellation page before starting an annual plan. These checks turn a polished demo into a realistic buying decision.</p>
-<p>For professional work, confirm rights in writing. Check commercial use, client delivery, attribution, training use, and whether the vendor can reuse uploaded material. Keep a local copy of important inputs and outputs. That habit makes vendor changes easier to absorb.</p>
-<p>Use the smallest plan that supports one complete workflow. Upgrade when a measured limit blocks the work, not when a feature list sounds impressive. Revisit the choice after a month of normal use. The best tool is the one that keeps the whole process predictable.</p>
-<p>Compare the total monthly cost with the manual alternative. Include review time, storage, extra seats, taxes, and paid integrations. A cheap plan that requires several workarounds may cost more than a focused tool with a clearer workflow.</p>
-<p>Keep a fallback plan for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document the manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>`.trim(),
+`.trim(),
 };
 
 export default post;

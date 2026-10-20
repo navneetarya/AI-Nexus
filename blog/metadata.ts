@@ -198,7 +198,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "dateModified": "2026-10-20",
     "author": "Navneet Arya",
     "category": "Audio",
-    "readTime": "8 min read",
+    "readTime": "7 min read",
     "ogImage": "https://ainexustools.online/og/blog/elevenlabs-youtube-commercial-rights-2026.webp",
     "excerpt": "Two separate rulebooks decide whether your ElevenLabs voiceover is safe to monetize: ElevenLabs' own commercial license terms, and YouTube's AI content disclosure policy."
   },

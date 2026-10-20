@@ -76,7 +76,7 @@ const post: BlogPost = {
   ],
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>Which AI Is Best for Content Creators: Grok 4, ChatGPT, or Claude?</h2>
 <p>For content creators in 2026, Claude is the best choice for quality-first long-form drafts. <a href="/tools/chatgpt/">ChatGPT</a> is the most versatile option for everyday content across formats. Grok 4 is the strongest pick when a piece depends on real-time, research-backed information.</p>

@@ -77,7 +77,7 @@ const post: BlogPost = {
   ],
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>How Do You Use AI for Content Creation in 2026?</h2>
 <p>Using AI for content creation in 2026 means running one idea through four AI-assisted stages: writing, images, video, and audio. The right workflow can cut the time between an idea and a finished piece of content by 60–80%. The bottleneck usually isn't any single tool — it's the handoffs between them.</p>

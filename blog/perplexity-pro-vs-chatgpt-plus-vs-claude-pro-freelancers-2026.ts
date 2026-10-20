@@ -78,7 +78,7 @@ const post: BlogPost = {
   wordCount: 2350,
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted).</em></p>
 <h2>Which $20/Month AI Is Worth It for Freelancers: Perplexity Pro, ChatGPT Plus, or Claude Pro?</h2>
 <p>None of the three wins every task. Perplexity Pro is worth it for research with sources, ChatGPT Plus for writing first drafts and brainstorming, and Claude Pro for editing and document summarisation. So the $20/month that's "worth it" depends entirely on which of those five tasks eats most of your week.</p>
 <p>Three tools. Same five tasks. One honest table.</p>
@@ -287,7 +287,7 @@ const post: BlogPost = {
 </div>
   
 <p><strong>Related reading:</strong> <a href="/blog/best-nano-banana-pro-alternatives-2026/">Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)</a>, <a href="/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026/">ChatGPT Atlas vs Perplexity Comet vs Dia (2026)</a>, <a href="/blog/perplexity-ai-review-2026/">Perplexity AI Review 2026</a>.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “Perplexity Pro vs ChatGPT Plus vs Claude Pro”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `.trim(),
 };
 

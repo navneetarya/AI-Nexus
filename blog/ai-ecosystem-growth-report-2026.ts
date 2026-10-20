@@ -42,7 +42,7 @@ const post: BlogPost = {
   ],
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Research Note</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">This report pulls together public data from industry reports, company disclosures, and survey research. Where we use private company estimates, we name the source. This is an independent analysis, not sponsored by any AI company.</p>
@@ -159,7 +159,7 @@ const post: BlogPost = {
 <p><a href="${AFFILIATE_LINKS['taskade']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Taskade Free →</a></p>
   <li><strong>Faster growth in emerging markets:</strong> India, Southeast Asia, and Latin America are the fastest-growing markets by new AI tool users in 2026. English-language AI tools are the main entry point. But local language support (Hindi, Bahasa, Spanish) matters more and more for the next 100 million users.</li>
 </ol>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “AI Ecosystem Growth Report 2026”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `
 };
 

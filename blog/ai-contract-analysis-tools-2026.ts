@@ -251,22 +251,7 @@ const post: BlogPost = {
 <p>Spellbook is a genuinely capable product, but it's priced and built for lawyers who draft contracts daily, not for someone who signs a handful a year.</p>
 <p>For everyone else, the practical 2026 stack is boring on purpose. Use Claude or ChatGPT for a fast, free first-pass read, and add a purpose-built reviewer under $30/month if your volume justifies it. Bring in a real attorney for anything unusual or high-value enough to need one.</p>
   
-<h3>How to evaluate the choice in real work</h3>
-<p>Start with one recurring task, not a feature checklist. Use a real file, prompt, campaign, or workflow that normally takes time. Record setup time and the amount of cleanup the result needs. A polished demo is useful only when it survives ordinary work.</p>
-<p>Check the limits that appear after regular use. Review monthly credits, file-size caps, export formats, queue priority, team seats, API access, and whether unused credits expire. A free plan is a test route, not always a sustainable operating plan.</p>
-<p>For creative tools, confirm resolution, watermarks, commercial rights, and client-delivery terms. For research and writing tools, inspect citations, source links, and export quality. For automation tools, check logs, retries, permissions, and human approval steps before connecting important accounts.</p>
-<p>Privacy deserves the same attention as price. Read whether uploads train a shared model. Check retention periods and deletion controls. Teams should confirm whether administrators can remove workspace data. These details matter when the workflow handles customer records, private documents, or unreleased work.</p>
-<p>Compare plans at the same billing interval. Note the currency, tax treatment, usage cap, seat minimum, and overage rate. Annual pricing can look attractive while creating a large commitment. Monthly pricing can cost more but make an early experiment easier to stop.</p>
-<p>Keep a fallback for important work. Export source files in an open format. Save prompts and settings outside the vendor. Document manual steps that remain. A price increase or outage should be inconvenient, not a reason to stop publishing or serving customers.</p>
-<p>Choose the smallest plan that supports one complete workflow. Upgrade when a measured limit blocks the work. Revisit the choice after a month of normal use. The best option is the one that keeps the whole process predictable.</p>
-<h3>Decision notes</h3>
-<ul style="margin:8px 0 12px 24px;line-height:1.9;">
-  <li>Test the main job first. Use a real example. Keep the input small. Check the output by hand.</li>
-  <li>Then check repeat use. Look at speed. Look at errors. Look at export quality. Look at the monthly limit.</li>
-  <li>Read the privacy terms before uploading sensitive material. Check deletion controls. Check commercial use. Check client delivery rights.</li>
-  <li>Compare monthly and annual prices separately. Include taxes, seats, credits, and overages. Keep a backup route for important work.</li>
-</ul>
-<p>These checks make the final choice clearer. Pick the tool that saves time in the complete workflow, not only in the first demo.</p>`.trim(),
+`.trim(),
   wordCount: 3012,
   proscons: {
     pros: [

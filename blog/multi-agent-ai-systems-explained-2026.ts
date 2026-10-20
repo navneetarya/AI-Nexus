@@ -335,7 +335,7 @@ const post: BlogPost = {
 </p>
 
 <p><strong>Related reading:</strong> <a href="/blog/best-ai-voice-agent-small-business-2026/">Best AI Voice Agent Platforms for Small Business in 2026 (2026 Pricing & Feature Comparison)</a>, <a href="/blog/emergent-ai-explained-2026/">What Is Emergent AI? Emergent Abilities Explained (2026 Guide)</a>.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “Multi-Agent AI Systems Explained”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `,
 };
 

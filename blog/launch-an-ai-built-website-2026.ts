@@ -80,7 +80,7 @@ const post: BlogPost = {
   ],
   wordCount: 1820,
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> - we may earn a commission at no extra cost to you.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
@@ -166,7 +166,7 @@ const post: BlogPost = {
 <p>An AI-generated site can look finished while still having a broken form, a missing email record, an incorrect price, or a private page that search engines cannot crawl. Treat the generated content as a draft and the launch as an operational handoff.</p>
 <p>Buy the smallest setup that meets the actual requirement, record renewal costs, test the public URL from a phone, and keep the domain account separate from the person who created the first AI prompt. That discipline matters more than which provider has the most attractive first-year banner.</p>
 <p>For a freelancer-focused tool stack, see <a href="/blog/best-ai-tools-for-freelancers-2026/" style="color:var(--a1);font-weight:600;">Best AI Tools for Freelancers</a>.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “How to Launch an AI-Built Website in 2026”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `
 };
 

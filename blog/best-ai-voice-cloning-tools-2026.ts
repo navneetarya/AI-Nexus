@@ -33,7 +33,7 @@ const post: BlogPost = {
   myTake: "Based on vendor pricing pages and published reviews, the tool you pick matters less here than most guides suggest. Test an Instant clone before paying for a Professional one, and treat consent, not quality, as the real risk in this category.",
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as read from pricing pages and trackers in October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as read from pricing pages and trackers in October 2026 (annual billing where noted).</em></p>
 <div class="top-pick" style="background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Our top pick</strong>
   <p style="margin:6px 0 0;font-size:17px;font-weight:700;line-height:1.4;">ElevenLabs for voice cloning</p>

@@ -42,7 +42,7 @@ const post: BlogPost = {
 
   content: `
 <p style="font-size:12px;opacity:.75;margin:0 0 16px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1638389746768-fd3020d35add?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A voiceover artist recording a script with a condenser microphone and headphones" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <p>Commercial voiceover work has a different shape than most AI voice jobs. It's not one script generated once. It's dozens of ad reads, training modules, or explainer clips, each one needing to line up with a timeline someone else already built. That makes timing precision and re-recording flexibility more important than raw voice realism alone.</p>

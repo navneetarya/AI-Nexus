@@ -43,7 +43,7 @@ const post: BlogPost = {
   myTake: "The figures come from each vendor's published pricing page and recent pricing reviews rather than older cached numbers, since plans on ElevenLabs, Descript and Resemble have all changed within the last year. The biggest gap in this comparison is Murf: a strong voiceover tool otherwise, but it doesn't offer cloning to anyone below Enterprise.",
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio mixing console dials, representing AI voice cloning pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 

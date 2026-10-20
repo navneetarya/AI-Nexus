@@ -321,7 +321,7 @@ const post: BlogPost = {
 <p>The clearest takeaway from the official pricing pages, not recycled charts: GPT-4o is no longer part of this conversation. Any pricing table that still centers it is working from stale data.</p><p>The real three-way comparison in July 2026 is GPT-5.4/5.5 versus Claude Sonnet 5/Opus 4.8 versus Gemini 3.1 Pro/3.5 Flash.</p>
 <p>On that comparison, Sonnet 5's intro rate and Gemini 3.5 Flash are the two best-value options near the frontier tier. Claude and Gemini both beat OpenAI, on flat long-context pricing and free-tier access respectively. Every provider now offers roughly the same caching and batch discounts too.</p>
 <p>The single biggest cost lever, whichever provider you pick, is still routing simple tasks to a cheaper model. Turning on prompt caching for a repeated system prompt is the other one.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “Claude vs GPT vs Gemini API Pricing (Aug 2026)”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `.trim(),
   wordCount: 2230,
   proscons: {

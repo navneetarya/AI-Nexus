@@ -79,7 +79,7 @@ const post: BlogPost = {
   wordCount: 1150,
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of September 2026 (annual billing where noted).</em></p>
 <h2>Quick Verdict: Is Grammarly Premium Worth It?</h2>
 <p><strong>Yes, for daily professional writers.</strong> Do you send important emails, write client proposals, or produce content that represents your brand? Grammarly Premium's tone detection and full-sentence rewrite features justify $12/month for that. Casual users who mostly send quick messages rarely see enough value to justify upgrading from the free tier.</p>
 <p>The upgrade pays for itself the first time it stops you sending a message that reads as dismissive when you meant to sound direct.</p>
@@ -249,7 +249,7 @@ const post: BlogPost = {
 </div>
   
 <p><strong>Related reading:</strong> <a href="/blog/best-grammarly-alternatives/">Best Grammarly Alternatives in 2026</a>.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “Is Grammarly Premium Worth It in 2026?”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `.trim(),
 };
 

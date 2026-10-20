@@ -55,7 +55,7 @@ const post: BlogPost = {
   ],
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as read from pricing pages and trackers in October 2026 (monthly billing unless noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as read from pricing pages and trackers in October 2026 (monthly billing unless noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <h2>What Is the Best AI Chatbot in 2026?</h2>
 <p>The best AI chatbot in 2026 depends on the job. <a href="/tools/chatgpt/">ChatGPT</a> (now on the GPT-6 family) is the strongest all-rounder, and Claude is the one reviewers most often prefer for writing and careful analysis. Gemini pulls ahead on Google Workspace integration, and <a href="/tools/perplexity/">Perplexity</a> wins when the real job is research with citations, not conversation.</p>

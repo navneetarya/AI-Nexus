@@ -224,7 +224,7 @@ const post: BlogPost = {
   </tbody>
 </table>
 </div>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “GPT-5.5 vs Claude Opus 4.8 vs Grok 4”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   
 <h2>What each ladder costs, from entry plan to power tier</h2>
 <p>The $20 plans are only the middle rung. These are the US list prices at each provider as of October 2026:</p>

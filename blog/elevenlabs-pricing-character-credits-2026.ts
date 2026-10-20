@@ -33,7 +33,7 @@ const post: BlogPost = {
   myTake: "The figures come from ElevenLabs' live pricing page and independent pricing breakdowns. The key decision is whether your monthly output exceeds 30 minutes, because that is where Creator becomes more economical than Starter.",
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Vendors change plans often, so confirm on each tool's pricing page before you buy.</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Sound waveform on a screen, representing AI voice generation pricing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.</p>
 
@@ -179,7 +179,7 @@ const post: BlogPost = {
 </div>
 
 <p><strong>Related reading:</strong> <a href="/blog/llm-api-pricing-comparison-2026/">Claude vs GPT vs Gemini API Pricing (Aug 2026)</a>, <a href="/blog/murf-ai-pricing-2026/">Murf AI Pricing</a>.</p>
-<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we research: every figure in this post comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing. Read our <a href="/methodology/">editorial methodology</a> to see how tools are selected, compared and re-checked.</p>
+<p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “ElevenLabs Pricing”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `,
 
   faqs: [
