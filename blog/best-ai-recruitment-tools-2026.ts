@@ -7,6 +7,7 @@ import { AFFILIATE_LINKS } from '../lib/affiliate-links';
 // Lever                : TODO — apply at https://www.lever.co/partners
 // Ashby                : No affiliate — linked to main site only
 // Manatal              : No affiliate — linked to main site only
+// Internshala          : No affiliate — editorial mention in the India section (rel="nofollow noopener", not in outboundCitations)
 
 const post: BlogPost = {
   slug: 'best-ai-recruitment-tools-2026',
@@ -14,7 +15,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Recruitment Tools 2026: 8 Platforms for Smarter Hiring',
   metaDescription: 'Independent analysis of 8 AI recruitment platforms in 2026 — sourcing, ATS, screening, interview intelligence. Pricing and INR costs compared by team size.',
   datePublished: '2026-06-26',
-  dateModified: '2026-10-19',
+  dateModified: '2026-10-21',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '11 min read',
@@ -79,7 +80,7 @@ const post: BlogPost = {
     { url: 'https://www.greenhouse.com/', label: 'Greenhouse — Enterprise ATS' },
     { url: 'https://www.lever.co', label: 'Lever — ATS + CRM Platform' },
   ],
-  wordCount: 3682,
+  wordCount: 3935,
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
@@ -314,7 +315,14 @@ const post: BlogPost = {
   </tbody>
 </table>
 </div>
-<p>For Indian startups and SMBs, the best pick is Manatal as the main ATS. Its pricing is within reach. Its roadmap for India-specific job board links (Naukri, Shine) is the strongest of any global ATS. For large Indian firms with US-level budgets, Greenhouse + Juicebox is the best pair. It gives structured hiring with high-quality tech sourcing.</p>
+<p>For Indian startups and SMBs, the best pick is Manatal as the main ATS. Its pricing is within reach. Its roadmap for India-specific job board links (Naukri, Shine) is the strongest of any global ATS. For large Indian firms with US-level budgets, Greenhouse + Juicebox is the best pair. It gives structured hiring with high-quality tech sourcing. For intern and fresher roles, add a student-focused board such as <a href="https://internshala.com/" target="_blank" rel="nofollow noopener">Internshala</a> next to your ATS.</p>
+
+<h3>Hiring Freshers and Interns in India: Where Internshala Fits</h3>
+<p>The tools above mostly serve experienced and mid-level hiring. For intern and fresher roles in India, a job board with a student audience can matter more than an ATS. <a href="https://internshala.com/" target="_blank" rel="nofollow noopener">Internshala</a> is a job and internship platform for students and early-career candidates. It sits in a different category from the AI recruitment tools ranked above, because it supplies applicants rather than managing your pipeline.</p>
+<p>Internshala's own <a href="https://internshala.com/blog/employer-job-posting-cost-comparison/" target="_blank" rel="nofollow noopener">employer guides</a> describe a Free plan at ₹0 with job and internship listings, smart candidate filters, and a basic applicant dashboard. They also mention one free posting per month. Paid options include Hiring Pro, where pricing varies, and custom-priced Job Slots for high-volume hiring.</p>
+<p>Its <a href="https://internshala.com/blog/employer-how-to-find-employees-with-internshala-smart-hire/" target="_blank" rel="nofollow noopener">Smart Hire</a> product adds AI-assisted screening, shortlisting, and AI-led first interviews, while the employer keeps the final hiring decision. Plan limits change often, so confirm current terms on the <a href="https://internshala.com/" target="_blank" rel="nofollow noopener">Internshala employer site</a> before you budget.</p>
+<p><strong>Best for:</strong> startups and SMBs hiring interns and freshers in India, who can start with <a href="https://internshala.com/" target="_blank" rel="nofollow noopener">Internshala</a>'s free plan. Pair it with an ATS such as Manatal once applications start to pile up. Larger teams hiring experienced talent will get more from the sourcing and ATS tools above.</p>
+<p style="font-size:12px;opacity:.75;margin:0 0 20px;"><em>Editorial mention: AI Nexus has no affiliate arrangement with Internshala and earns no commission from this link.</em></p>
 
 <h2>How to Choose the Right AI Recruitment Tool</h2>
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Illustrative workspace for How to Choose the Right AI Recruitment Tool" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -395,7 +403,7 @@ const post: BlogPost = {
 
 
 <h2>Decision checklist</h2>
-<p>Use the workflow, budget, and risk checks above before choosing a plan.</p>
+<p>Use the workflow, budget, and risk checks above before choosing a plan. Hiring interns or freshers in India? Compare <a href="https://internshala.com/" target="_blank" rel="nofollow noopener">Internshala</a>'s free plan against what you now spend on job boards.</p>
 `,
 };
 
