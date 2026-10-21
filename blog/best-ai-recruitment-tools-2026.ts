@@ -80,7 +80,7 @@ const post: BlogPost = {
     { url: 'https://www.greenhouse.com/', label: 'Greenhouse — Enterprise ATS' },
     { url: 'https://www.lever.co', label: 'Lever — ATS + CRM Platform' },
   ],
-  wordCount: 3935,
+  wordCount: 3985,
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of August 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
@@ -320,6 +320,7 @@ const post: BlogPost = {
 <h3>Hiring Freshers and Interns in India: Where Internshala Fits</h3>
 <p>The tools above mostly serve experienced and mid-level hiring. For intern and fresher roles in India, a job board with a student audience can matter more than an ATS. <a href="https://internshala.com/" target="_blank" rel="nofollow noopener">Internshala</a> is a job and internship platform for students and early-career candidates. It sits in a different category from the AI recruitment tools ranked above, because it supplies applicants rather than managing your pipeline.</p>
 <p>Internshala's own <a href="https://internshala.com/blog/employer-job-posting-cost-comparison/" target="_blank" rel="nofollow noopener">employer guides</a> describe a Free plan at ₹0 with job and internship listings, smart candidate filters, and a basic applicant dashboard. They also mention one free posting per month. Paid options include Hiring Pro, where pricing varies, and custom-priced Job Slots for high-volume hiring.</p>
+<p>Internshala's <a href="https://internshala.com/blog/employer-ai-tools-for-recruiters/" target="_blank" rel="nofollow noopener">AI tools for recruiters guide</a> lists paid employer pricing as of September 2026. A pack of 5 listings costs ₹13,499. A 1-month plan costs ₹17,999, and a 1-year plan costs ₹179,999. Taxes and current offers are not stated there, so check the final price at checkout.</p>
 <p>Its <a href="https://internshala.com/blog/employer-how-to-find-employees-with-internshala-smart-hire/" target="_blank" rel="nofollow noopener">Smart Hire</a> product adds AI-assisted screening, shortlisting, and AI-led first interviews, while the employer keeps the final hiring decision. Plan limits change often, so confirm current terms on the <a href="https://internshala.com/" target="_blank" rel="nofollow noopener">Internshala employer site</a> before you budget.</p>
 <p><strong>Best for:</strong> startups and SMBs hiring interns and freshers in India, who can start with <a href="https://internshala.com/" target="_blank" rel="nofollow noopener">Internshala</a>'s free plan. Pair it with an ATS such as Manatal once applications start to pile up. Larger teams hiring experienced talent will get more from the sourcing and ATS tools above.</p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;"><em>Editorial mention: AI Nexus has no affiliate arrangement with Internshala and earns no commission from this link.</em></p>
