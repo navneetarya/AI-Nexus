@@ -25,7 +25,7 @@ const post: BlogPost = {
   faqs: [
     {
       q: 'What is the best free alternative to Podcastle?',
-      a: 'Descript offers the most generous free plan among Podcastle alternatives — 1 hour of transcription per month, basic audio and video editing, and access to the text-based editing workflow. Adobe Podcast (now part of Adobe Firefly) also has a free AI audio enhancement tool called Enhance Speech, which removes background noise from recordings at no cost.',
+      a: 'Descript offers the most generous free plan among Podcastle alternatives — 60 media minutes per month, basic audio and video editing, and access to the text-based editing workflow. Adobe Podcast (now part of Adobe Firefly) also has a free AI audio enhancement tool called Enhance Speech, which removes background noise from recordings at no cost.',
     },
     {
       q: 'Is Riverside.fm better than Podcastle?',
@@ -150,7 +150,7 @@ const post: BlogPost = {
 <p><strong>Video podcasts:</strong> Descript handles video with the same text-based approach. Cut your video, export social clips, and create audiograms, all within the same tool. If you record video alongside audio, Descript covers both in ways Podcastle doesn't.</p>
 <p><strong>Overdub (AI voice):</strong> Descript's voice cloning feature is mature and reliable. Record a voice model, then use it to add or replace words in your recording. That's useful for fixing mistakes without re-recording a whole take.</p>
 <p><strong>Where Descript falls short vs Podcastle:</strong> Remote guest recording quality is slightly less steady than Podcastle's Magic Dust approach. Descript also doesn't offer podcast publishing and distribution; you export and publish elsewhere. The text-editing paradigm takes a few sessions to feel natural.</p>
-<p><strong>Free plan:</strong> 1 hour of transcription per month, basic audio and video editing, watermarked exports. Paid Creator plan at $12/month removes limits.</p>
+<p><strong>Free plan:</strong> 60 media minutes per month and 100 one-time AI credits. The paid Hobbyist plan starts at $16/month billed annually.</p>
 <p><a href="/compare/podcastle-vs-descript/" style="color:#0D9488;font-weight:600;">→ See full Podcastle vs Descript comparison</a> or read our <a href="/tools/descript/" style="color:#0D9488;font-weight:600;">on its own Descript review</a>.</p>
 
 <div style="margin:14px 0 24px;">

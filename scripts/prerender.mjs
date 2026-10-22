@@ -460,10 +460,10 @@ const TOOLS = [
   {
     slug: 'murf-ai', name: 'Murf AI', category: 'Audio',
     tagline: 'Studio-quality AI voiceovers in minutes',
-    description: 'Murf AI creates studio-quality voiceovers for videos, presentations, and e-learning using 120+ realistic AI voices across 20 languages. No microphone needed.',
+    description: 'Murf AI creates studio-quality voiceovers for videos, presentations, and e-learning using 200+ realistic AI voices across 35+ languages. No microphone needed.',
     pricing: 'Free + from $19/month', bestFor: 'Video creators & eLearning',
     rating: 4.4, lastTested: 'May 2026',
-    reviewBody: 'Murf AI is the most complete AI voiceover production studio in 2026 for video creators and eLearning developers who need professional-quality narration without a microphone setup. The platform offers 120+ studio-recorded voices across 20 languages, with natural-sounding delivery that consistently outperforms basic text-to-speech tools. The production workflow is what separates Murf from simpler voice generators: voices are placed on a timeline, synced directly to uploaded video footage, and accompanied by background music controls — creating a complete narration session rather than just a sound file. The Indian English accent options are notably strong for creators producing content for Indian audiences. The free plan includes 10 minutes of voiceover per month with a watermark — enough to evaluate voice quality and the interface before committing. The Creator plan at $19/month removes the watermark, adds commercial use rights, and gives 2 hours of voice generation per month — the entry point for YouTube creators and eLearning course producers. The main limitation versus ElevenLabs is voice cloning: Murf AI does not offer voice cloning at the Creator price tier, while ElevenLabs provides voice cloning from a 1-minute sample at $5/month. If the goal is to replicate a specific voice, ElevenLabs is the right choice. For structured voiceover production with a polished studio interface, the Murf AI timeline-based workflow is more practical than ElevenLabs for non-technical users. The 20-language support and Indian English accent quality make it particularly relevant for the Indian eLearning market.',
+    reviewBody: 'Murf AI is the most complete AI voiceover production studio in 2026 for video creators and eLearning developers who need professional-quality narration without a microphone setup. The platform offers 200+ studio-recorded voices across 35+ languages, with natural-sounding delivery that consistently outperforms basic text-to-speech tools. The production workflow is what separates Murf from simpler voice generators: voices are placed on a timeline, synced directly to uploaded video footage, and accompanied by background music controls — creating a complete narration session rather than just a sound file. The Indian English accent options are notably strong for creators producing content for Indian audiences. The free plan includes 10 minutes of voiceover per month with a watermark — enough to evaluate voice quality and the interface before committing. The Creator plan at $19/month removes the watermark, adds commercial use rights, and gives 2 hours of voice generation per month — the entry point for YouTube creators and eLearning course producers. The main limitation versus ElevenLabs is voice cloning: Murf AI does not offer voice cloning at the Creator price tier, while ElevenLabs provides voice cloning from a 1-minute sample at $5/month. If the goal is to replicate a specific voice, ElevenLabs is the right choice. For structured voiceover production with a polished studio interface, the Murf AI timeline-based workflow is more practical than ElevenLabs for non-technical users. The 35+ language support and Indian English accent quality make it particularly relevant for the Indian eLearning market.',
   },
   {
     slug: 'podcastle', name: 'Podcastle', category: 'Audio',
@@ -1294,14 +1294,14 @@ const TOOL_FAQS = {
   elevenlabs: [
     { q: 'Is ElevenLabs free to use?', a: "Yes — ElevenLabs' free plan gives 10,000 characters per month (roughly 7–8 minutes of audio) with access to all pre-made voices. No credit card is required. The Starter plan at $5/month triples the limit and adds commercial use rights." },
     { q: 'How realistic are ElevenLabs voices?', a: "ElevenLabs consistently ranks as the most realistic AI voice generator available. In blind listening tests, the premium voices are regularly mistaken for real human recordings. The quality gap between ElevenLabs and other tools is significant — particularly for emotional range and natural pacing." },
-    { q: 'How do I clone my own voice with ElevenLabs?', a: "Go to Voices → Add Voice → Instant Voice Clone. Upload a clean 1-minute recording of yourself speaking naturally (no background noise). ElevenLabs processes it in under 2 minutes and creates a voice model you can use to generate any text. Professional Voice Clone on the Creator plan uses longer samples for even higher accuracy." },
+    { q: 'How do I clone my own voice with ElevenLabs?', a: "Go to Voices → Add Voice → Instant Voice Clone. Upload a clean recording of yourself speaking naturally (no background noise); Instant Voice Cloning is included from the Starter plan. ElevenLabs creates a voice model you can use to generate any text. Professional Voice Clone on the Creator plan uses longer samples for even higher accuracy." },
     { q: 'Can I use ElevenLabs voices commercially?', a: "Commercial use requires the Starter plan ($5/month) or above. The free tier is for personal and non-commercial use only. All paid plans include a commercial licence for content monetised on YouTube, sold as products, or used in client work." },
     { q: 'How does ElevenLabs compare to Murf AI?', a: "ElevenLabs produces better-sounding voices, especially for voice cloning and emotional speech. Murf AI has a more polished production studio with video sync and background music built in. If pure voice quality is your priority, ElevenLabs wins. If you need a full voiceover production workflow in one app, Murf is more practical." },
   ],
   // W1-T4: Descript FAQs — enables FAQ rich results for "descript review" (1,200/mo)
   descript: [
     { q: 'What makes Descript different from other audio editors?', a: "Descript uses a text-based editing model — you edit your recording by editing the transcript. Delete a sentence in the text and the audio disappears. This is fundamentally different from traditional timeline editors and is significantly faster for podcasters and video creators who think in words, not waveforms." },
-    { q: 'Is Descript free?', a: "Yes — Descript has a free plan that includes 1 hour of transcription per month, basic editing, and 720p video export with a watermark. The Hobbyist plan at $12/month removes the watermark, adds 4K export, 10 hours of transcription, screen recording, and filler word removal." },
+    { q: 'Is Descript free?', a: "Yes — Descript has a free plan that includes 60 media minutes per month and 100 one-time AI credits. The Hobbyist plan at $16/month billed annually adds 1080p watermark-free export, 10 media hours and 400 AI credits per month." },
     { q: 'How does Descript filler word removal work?', a: "Go to Edit → Remove Filler Words. Descript scans your transcript for 'um', 'uh', 'you know', 'like', and other filler words and highlights them all. You review the list and delete any or all of them in one click. The corresponding audio is removed seamlessly. On a typical 45-minute podcast, this saves 20–30 minutes of manual editing." },
     { q: 'What is Descript Overdub?', a: "Overdub is Descript's AI voice cloning feature. Record 10 minutes of training audio, wait 30 minutes for processing, and you can then type corrections that Descript renders in your cloned voice. It's used to fix mispronounced words or stumbled lines without re-recording the entire segment. Available on the Creator plan ($24/month)." },
     { q: 'Descript vs Podcastle — which Should I use?', a: "Descript is better for editing-heavy workflows — long-form podcast episodes, video content, and anything where you'll spend significant time removing errors and restructuring content. Podcastle is better for recording remote guests in high quality with minimal editing needed. For simple recording and publish, Podcastle. For complex editing, Descript." },
@@ -1318,9 +1318,9 @@ const TOOL_FAQS = {
   // W2-T11: Murf AI FAQs — enables FAQ rich results for "murf ai review" (1,800/mo)
   'murf-ai': [
     { q: 'Is Murf AI free?', a: "Yes — Murf AI has a free plan that includes 10 minutes of voiceover per month with a watermark on exports. The free tier is sufficient for testing voice quality and the interface, but not for production or commercial use. Commercial-use voiceover without watermarks requires the Creator plan at $19/month." },
-    { q: 'Murf AI vs ElevenLabs — which is better?', a: "They excel in different areas. Murf AI is better for structured production workflows — it has a polished studio interface, video timeline sync, and 120+ studio-recorded voices ideal for eLearning and corporate narration. ElevenLabs is better for voice cloning (creating audio in a specific person's voice) and has a more generous free tier (10,000 characters/month vs Murf's 10 minutes). For professional studio-quality voiceovers, choose Murf. For custom voice cloning, choose ElevenLabs." },
+    { q: 'Murf AI vs ElevenLabs — which is better?', a: "They excel in different areas. Murf AI is better for structured production workflows — it has a polished studio interface, video timeline sync, and 200+ studio-recorded voices ideal for eLearning and corporate narration. ElevenLabs is better for voice cloning (creating audio in a specific person's voice) and has a more generous free tier (10,000 characters/month vs Murf's 10 minutes). For professional studio-quality voiceovers, choose Murf. For custom voice cloning, choose ElevenLabs." },
     { q: 'Can I use Murf AI for YouTube videos?', a: "Yes — the Creator plan ($19/month) includes commercial usage rights, which covers YouTube monetised content. You can generate narration for YouTube videos, sync it to your video timeline, and export for commercial use. The free plan is watermarked and cannot be used on monetised YouTube channels." },
-    { q: 'What languages does Murf AI support?', a: "Murf AI supports 20+ languages including English (US, UK, Australian, and Indian accents), Hindi, Spanish, French, German, Italian, Portuguese, Arabic, Chinese, Japanese, and Korean. The Indian English accent quality is notably strong — one of the best available for creators targeting Indian audiences." },
+    { q: 'What languages does Murf AI support?', a: "Murf AI supports 35+ languages including English (US, UK, Australian, and Indian accents), Hindi, Spanish, French, German, Italian, Portuguese, Arabic, Chinese, Japanese, and Korean. The Indian English accent quality is notably strong — one of the best available for creators targeting Indian audiences." },
   ],
 
   // W2-T11: Canva AI FAQs — enables FAQ rich results for "canva ai review" (2,400/mo)
@@ -1400,7 +1400,7 @@ const TOOL_FAQS = {
   ],
 
   pictory: [
-    { q: 'Is Pictory free to use?', a: "Pictory does not have a permanent free plan. It offers a free trial with 3 video projects (no credit card required) so you can test the full workflow before committing. Paid plans start at $19/month for the Starter plan, which includes 30 videos per month at up to 10 minutes each." },
+    { q: 'Is Pictory free to use?', a: "Pictory does not have a permanent free plan. It offers a free trial with 3 video projects (the pricing page does not say whether a card is needed) so you can test the full workflow before committing. Paid plans start at $25/month billed annually ($29 monthly) for the Starter plan, which includes 200 video minutes per month." },
     { q: 'What is Pictory best for?', a: "Pictory is best for repurposing existing content into video — particularly converting blog posts, articles, and scripts into short social media videos or video summaries. It is also strong for creating highlight reels from long webinar or Zoom recordings. For creating new videos from scratch with no existing content, InVideo AI is a better fit." },
     { q: 'Can Pictory turn a blog post into a video automatically?', a: "Yes — paste any blog post URL or text into Pictory and it extracts key points, selects matching stock footage from its library, adds background music, and generates a narrated video in minutes. The automation handles 80% of the work; you review and adjust the script, footage selection, and branding before export." },
     { q: 'Pictory vs InVideo AI — which should I choose?', a: "Pictory is better for repurposing existing content (blogs, webinar recordings, articles). InVideo AI is better for creating new videos from a text prompt with no existing content. If your workflow is 'I have blog posts and want to make videos' — Pictory. If your workflow is 'I want to create faceless YouTube videos from scratch' — InVideo AI." },
@@ -1806,7 +1806,7 @@ const COMPARE_ARTICLES = [
       { q: 'Is Podcastle better than Descript?', a: 'For pure podcast recording and audio quality — especially remote guest recording — Podcastle is better. Its Magic Dust AI audio enhancement is best-in-class for noise removal. Descript is better for transcript-based editing, video podcasts, and bulk filler-word removal across long interviews.' },
       { q: 'Does Podcastle record remote guests?', a: 'Yes. Podcastle records each participant locally on their own device and uploads separate high-quality audio tracks. This means recording quality doesn\'t depend on internet connection stability during the call.' },
       { q: 'What is Descript\'s text-based editing?', a: 'Descript transcribes your recording and lets you edit audio or video by editing the text transcript — delete a word in the transcript and the corresponding audio clip is deleted automatically. This makes cutting filler words and restructuring interviews very fast.' },
-      { q: 'Is Podcastle free?', a: 'Yes. Podcastle\'s free plan includes unlimited recordings, up to 10 hours of Magic Dust AI enhancement per month, and remote recording for up to 10 participants. Paid plans start at $11.99/month.' },
+      { q: 'Is Podcastle free?', a: 'Yes. Podcastle\'s free plan includes 10 one-time AI credits, 1 hour of remote recording (lifetime) and basic editing tools. Paid plans start at $11.99/month billed annually ($19.99 monthly).' },
       { q: 'Which podcast tool is better for beginners?', a: 'Podcastle is easier to get started with. The interface is straightforward, the AI audio cleanup is automatic, and there\'s no new editing paradigm to learn. Descript\'s text-based editing is powerful but takes a learning curve to click into place.' },
     ],
   },
@@ -1988,7 +1988,7 @@ const COMPARE_ARTICLES = [
     metaDescription: 'InVideo AI vs Pictory compared for content creators and faceless YouTube channels. AI video generation, pricing, and output quality compared in 2026.',
     faqs: [
       { q: 'Is InVideo AI better than Pictory?', a: 'InVideo AI is better for creating new videos from text prompts — it generates scripts, selects footage, and adds voiceover automatically. Pictory is better for converting existing blog posts into videos. Choose based on whether you\'re creating or repurposing.' },
-      { q: 'Which is cheaper?', a: 'InVideo AI starts at $20/month. Pictory starts at $19/month. Both have limited free plans. The pricing is comparable; the differentiation is in what each tool does best.' },
+      { q: 'Which is cheaper?', a: 'InVideo AI starts at $20/month. Pictory starts at $25/month billed annually. Both have limited free plans. The pricing is comparable; the differentiation is in what each tool does best.' },
       { q: 'Can I make faceless YouTube videos with InVideo AI?', a: 'Yes — InVideo AI is specifically designed for faceless YouTube content. It generates complete videos with script, AI voiceover, stock footage, and captions from a single text prompt.' },
       { q: 'Does Pictory have AI voiceover?', a: 'Pictory has basic AI narration but it\'s not as natural as InVideo AI\'s voiceover. For professional-quality AI voiceover, pair Pictory with a dedicated tool like Murf AI or ElevenLabs.' },
     ],
@@ -3564,7 +3564,7 @@ const BLOG_POSTS = [
     dateModified: '2026-08-20',
     readTimeMinutes: 10,
     ogImage: 'https://ainexustools.online/og/blog/best-ai-voice-generators-for-voiceovers-2026.webp',
-    quickAnswer: 'Murf AI is the best AI voice generator for commercial voiceovers in 2026, thanks to its script-to-video sync and 120-plus voice library built for finished production work, not just raw audio. ElevenLabs is the better pick if voice cloning matters more than a studio workflow. Most commercial voiceover work, ads, e-learning, corporate video, fits Murf AI\'s $19/month plan comfortably.',
+    quickAnswer: 'Murf AI is the best AI voice generator for commercial voiceovers in 2026, thanks to its script-to-video sync and 200-plus voice library built for finished production work, not just raw audio. ElevenLabs is the better pick if voice cloning matters more than a studio workflow. Most commercial voiceover work, ads, e-learning, corporate video, fits Murf AI\'s $19/month plan comfortably.',
     faqs: [
     {
       q: 'What is the best AI voice generator for commercial voiceovers?',
@@ -3588,7 +3588,7 @@ const BLOG_POSTS = [
     },
     {
       q: 'What languages does Murf AI support for voiceovers?',
-      a: 'Murf AI covers 20 languages across its 120-plus voice library, with especially strong Indian English, British English, and Australian accent options. ElevenLabs covers more languages at 29, though through voice cloning, not a pre-built commercial voice library.',
+      a: 'Murf AI covers 35+ languages across its 200-plus voice library, with especially strong Indian English, British English, and Australian accent options. ElevenLabs covers more languages at 29, though through voice cloning, not a pre-built commercial voice library.',
     },
     {
       q: 'Is there a free AI voiceover generator for testing before a client project?',
@@ -3804,7 +3804,7 @@ const BLOG_POSTS = [
     },
     {
       q: 'Which AI voice generator supports the most languages for a global YouTube audience?',
-      a: 'ElevenLabs supports 29 languages, the wider coverage between the two main tools for YouTube. Murf AI covers 20 languages, with particularly strong Indian, British, and Australian English accents. For a channel targeting a specific non-English market, checking both tools\' accent in that language first is worth the extra step.',
+      a: 'ElevenLabs supports 70+ languages, the wider coverage between the two main tools for YouTube. Murf AI covers 35+ languages, with particularly strong Indian, British, and Australian English accents. For a channel targeting a specific non-English market, checking both tools\' accent in that language first is worth the extra step.',
     },
     {
       q: 'Can I clone my own voice for YouTube narration?',
@@ -3942,7 +3942,7 @@ const BLOG_POSTS = [
     dateModified: '2026-08-13',
     readTimeMinutes: 13,
     ogImage: 'https://ainexustools.online/og/blog/best-text-to-speech-software-2026.webp',
-    quickAnswer: 'The best text-to-speech software in 2026 is ElevenLabs, with 29 languages, a first-class developer API, and low-latency streaming built for real-time apps. Murf AI covers 20 languages and suits commercial video and e-learning output more than raw API work. Podcastle and Descript are built around editing workflows first, with TTS as one feature inside a larger tool. Pick based on whether you need an API, a finished video voiceover, or an editing workflow.',
+    quickAnswer: 'The best text-to-speech software in 2026 is ElevenLabs, with 70+ languages, a first-class developer API, and low-latency streaming built for real-time apps. Murf AI covers 35+ languages and suits commercial video and e-learning output more than raw API work. Podcastle and Descript are built around editing workflows first, with TTS as one feature inside a larger tool. Pick based on whether you need an API, a finished video voiceover, or an editing workflow.',
     faqs: [
     {
       q: 'What is the best text-to-speech software with an API?',
@@ -3950,7 +3950,7 @@ const BLOG_POSTS = [
     },
     {
       q: 'How many languages does ElevenLabs text-to-speech support?',
-      a: 'ElevenLabs supports 29 languages, the widest coverage among the tools compared in this guide. Murf AI covers 20 languages, with especially strong Indian English, British, and Australian accent variety. Podcastle and Descript are both built mostly for English, so language breadth is not their strength.',
+      a: 'ElevenLabs supports 70+ languages, the widest coverage among the tools compared in this guide. Murf AI covers 35+ languages, with especially strong Indian English, British, and Australian accent variety. Podcastle and Descript are both built mostly for English, so language breadth is not their strength.',
     },
     {
       q: 'Is there a free text-to-speech software with commercial rights?',
@@ -3978,7 +3978,7 @@ const BLOG_POSTS = [
     },
     {
       q: 'What text-to-speech software works best for non-English content?',
-      a: 'ElevenLabs is the strongest choice for non-English or multilingual projects, given its 29-language coverage and consistent voice quality across languages. Murf AI\'s 20 languages cover most major markets, with particular strength in Indian and Australian English variants. Podcastle and Descript are both weaker choices here, since their tools are built mostly for English content.',
+      a: 'ElevenLabs is the strongest choice for non-English or multilingual projects, given its 70+ language coverage and consistent voice quality across languages. Murf AI\'s 35+ languages cover most major markets, with particular strength in Indian and Australian English variants. Podcastle and Descript are both weaker choices here, since their tools are built mostly for English content.',
     },
     {
       q: 'Do text-to-speech tools charge by character or by minute?',
@@ -4024,7 +4024,7 @@ const BLOG_POSTS = [
     },
     {
       q: 'Can AI voice generators handle multiple languages and accents?',
-      a: 'Yes, though coverage varies. ElevenLabs supports 29 languages with strong accent accuracy across most of them. Murf AI covers 20 languages with particularly strong Indian English, British English, and Australian accent options, which matters for international content. Descript and Podcastle are more English-focused, with less depth in accent variety compared to ElevenLabs and Murf.',
+      a: 'Yes, though coverage varies. ElevenLabs supports 70+ languages with strong accent accuracy across most of them. Murf AI covers 35+ languages with particularly strong Indian English, British English, and Australian accent options, which matters for international content. Descript and Podcastle are more English-focused, with less depth in accent variety compared to ElevenLabs and Murf.',
     },
     {
       q: 'Is ElevenLabs safe from voice cloning misuse?',
@@ -7939,11 +7939,11 @@ Answer: ElevenLabs produces the most realistic AI voiceover among the tools test
 
 ## For podcast creators
 
-Podcastle gives 3 hours of free recording per month with AI noise removal, no credit card needed. Descript's free plan includes 1 hour of transcription-based audio editing, letting you edit audio by editing a text transcript instead of a waveform — useful for creators who find waveform editing unintuitive.
+Podcastle's free plan includes 1 hour of remote recording (lifetime) and 10 AI credits, with no credit card required. Descript's free plan includes 60 media minutes a month of transcript-based audio editing, letting you edit audio by editing a text transcript instead of a waveform — useful for creators who find waveform editing unintuitive.
 
 ## For voiceover and text-to-speech
 
-ElevenLabs' free tier generates 10,000 characters per month of speech across a wide voice library. Murf AI gives 10 minutes of free voiceover across 120+ voices and covers commercial voiceover workflows more directly than ElevenLabs' creator-focused pricing. The right choice depends on whether you need voice cloning (ElevenLabs), commercial licensing built in (Murf), or podcast recording and editing (Podcastle or Descript) — these aren't interchangeable tools solving the same problem.
+ElevenLabs' free tier generates 10,000 characters per month of speech across a wide voice library. Murf AI gives 10 minutes of free voiceover across 200+ voices and covers commercial voiceover workflows more directly than ElevenLabs' creator-focused pricing. The right choice depends on whether you need voice cloning (ElevenLabs), commercial licensing built in (Murf), or podcast recording and editing (Podcastle or Descript) — these aren't interchangeable tools solving the same problem.
 
 Every tool below has been researched against its official documentation and verified user reviews. Pricing is verified against live pricing pages as of May 2026.`,
 
@@ -8157,7 +8157,7 @@ const CATEGORY_DEEPDIVE = {
     { name: 'Writesonic', text: 'Writesonic targets SEO-focused bloggers and content marketers. Its Article Writer drafts 1,500–2,500 word posts with keyword integration and heading structure, built on competitor content analysis. Chatsonic, its built-in chatbot, adds real-time web browsing for time-sensitive topics. The free plan gives 25 one-click article generations. At $16/month, the Small plan lifts the word cap. Articles beyond 2,000 words sometimes lose coherence in the final third, so a manual edit pass still helps.' },
     { name: 'Rytr', text: 'Rytr is the clearest value pick in the category. The $9/month Saver plan gives unlimited characters and 40+ templates for cold emails, ad copy, and social captions. The free plan gives 10,000 characters/month with no card required. Pick a content type, add a brief, and Rytr generates 3 variants in under 10 seconds. Past 800 words it tends to repeat itself, so it fits short-to-medium content better than long-form.' },
     { name: 'Quillbot', text: 'Quillbot is a paraphrasing and summarising tool, not a content generator — it rewrites and restructures text you already have. Its 7 modes (Standard, Formal, Creative, Fluency, Expand, Shorten, Academic) each produce different output. The free plan covers 125-word paraphrasing and a citation generator supporting APA, MLA, Chicago, and Harvard. Premium at $9.95/month removes the word limit and adds all 7 modes plus plagiarism checking.' },
-    { name: 'Jasper', text: 'Jasper is built for marketing teams, not solo writers. Its Brand Voice feature trains the AI on a company\'s tone and style guide, keeping output consistent across every writer on a team. 50+ templates cover ad copy, email sequences, and landing pages. The Creator plan starts at $39/month — roughly 2.4x the cost of Writesonic — which only pays off when multiple writers need enforced brand consistency.' },
+    { name: 'Jasper', text: 'Jasper is built for marketing teams, not solo writers. Its Brand Voice feature trains the AI on a company\'s tone and style guide, keeping output consistent across every writer on a team. Chat and Canvas cover ad copy, email sequences, and landing pages. Pro is $59/month billed annually ($69 monthly) and includes one seat; teams need the custom-priced Business plan.' },
   ],
   'best-ai-image-tools': [
     { name: 'Leonardo.ai', text: 'Leonardo.ai gives 150 free generation credits per day with no credit card required — the most generous free tier in the category, covering roughly 30–50 quality images daily. Custom model training lets you upload reference images to keep a character or art style consistent across unlimited generations, which Midjourney cannot match without complex prompting. The $12/month Apprentice plan removes the watermark and adds 2,500 tokens/month.' },
@@ -8171,14 +8171,14 @@ const CATEGORY_DEEPDIVE = {
   ],
   'best-ai-audio-tools': [
     { name: 'Podcastle', text: 'Podcastle records each participant on their own device, so recording quality doesn\'t depend on internet stability during the interview. Its one-click noise removal (Magic Dust) strips background noise, echo, and keyboard clicks. The free plan includes unlimited recordings and 10 hours of enhancement per month. Paid plans start at $11.99/month and add direct publishing to Spotify and Apple Podcasts. It does not offer transcript-based editing — for that, Descript is the stronger pick.' },
-    { name: 'ElevenLabs', text: 'ElevenLabs is the benchmark for AI voice realism, especially on emotional speech. The free plan gives 10,000 characters per month (roughly 7–8 minutes of audio) with 500+ pre-made voices. Voice cloning from a 1-minute sample takes under 2 minutes and is regularly mistaken for the real speaker in informal tests. The $5/month Starter plan triples the character limit and adds commercial rights. It is a voice-generation tool only — it doesn\'t record or edit audio.' },
-    { name: 'Murf AI', text: 'Murf AI gives 120+ studio-recorded voices across 20 languages, placed on a timeline synced to your video — closer to a production studio than a simple text-to-speech tool. The free plan covers 10 minutes of voiceover per month with a watermark. The $19/month Creator plan removes it and adds commercial rights. Unlike ElevenLabs, Murf does not offer voice cloning at this price tier.' },
-    { name: 'Descript', text: 'Descript lets you edit audio and video by editing a text transcript — delete a sentence on the page and the matching audio disappears. Filler-word removal strips every "um" and "uh" from a 45-minute recording in one click. The free plan covers 1 hour of transcription per month with a video watermark; the $12/month Hobbyist plan removes both limits and adds 4K export.' },
+    { name: 'ElevenLabs', text: 'ElevenLabs is the benchmark for AI voice realism, especially on emotional speech. The free plan gives 10,000 credits per month (about 10,000 characters of standard text-to-speech). Instant voice cloning is included from the paid Starter plan. The $6/month Starter plan ($5 billed annually) triples the monthly credits and adds commercial rights. It is a voice-generation tool only — it doesn\'t record or edit audio.' },
+    { name: 'Murf AI', text: 'Murf AI gives 200+ studio-recorded voices across 35+ languages, placed on a timeline synced to your video — closer to a production studio than a simple text-to-speech tool. The free plan covers 10 minutes of voiceover per month with a watermark. The $19/month Creator plan removes it and adds commercial rights. Unlike ElevenLabs, Murf does not offer voice cloning at this price tier.' },
+    { name: 'Descript', text: 'Descript lets you edit audio and video by editing a text transcript — delete a sentence on the page and the matching audio disappears. Filler-word removal strips every "um" and "uh" from a 45-minute recording in one click. The free plan covers 60 media minutes per month; the $16/month (billed annually) Hobbyist plan adds watermark-free 1080p export, 10 media hours and 400 AI credits per month.' },
   ],
   'best-ai-marketing-tools': [
     { name: 'Ocoya', text: 'Ocoya combines AI caption writing with scheduling across Instagram, LinkedIn, Twitter, and Facebook — captions are tailored per platform automatically. Plans start at $15/month for 5 social profiles. Compared with Buffer ($6/month per channel with no AI writing), Ocoya is more cost-effective once a team manages 4 or more profiles, since AI writing is bundled in.' },
     { name: 'Frase', text: 'Frase reads the top 10 ranking pages for a target keyword and surfaces the headings, word counts, and questions needed to compete — a brief that takes 45–60 minutes manually takes about 30 seconds in Frase. Its Content Score shows optimisation percentage in real time. The Solo plan is $15/month for 4 documents; skip Frase if the goal isn\'t Google rankings specifically.' },
-    { name: 'Jasper', text: 'For marketing teams, Jasper\'s Brand Voice keeps tone consistent across every writer producing content under one brand. 50+ templates cover ad copy, email sequences, and product descriptions. Pricing starts at $39/month for one Brand Voice and one seat, rising to $99/month for agency-scale use with 3 Brand Voices and 5 seats.' },
+    { name: 'Jasper', text: 'For marketing teams, Jasper\'s Brand Voice keeps tone consistent across every writer producing content under one brand. Pro is $59/month billed annually ($69 monthly) for one seat; extra seats require the custom-priced Business plan.' },
   ],
   'best-ai-design-tools': [
     { name: 'Gamma', text: 'Gamma generates a full, styled slide deck from a single topic prompt in under 2 minutes, handling layout, typography, and imagery automatically. The free plan gives 400 AI credits on signup — enough for 4–5 presentations. The $8/month Plus plan removes the Gamma badge and adds PowerPoint export. It gives less brand-compliance control than PowerPoint for strict corporate deliverables.' },
@@ -8244,7 +8244,7 @@ const CATEGORY_PRICING = {
   'best-ai-video-tools': [
     { name: 'InVideo AI', price: 'Free + $20/mo', bestFor: 'Full videos from a text prompt' },
     { name: 'Opus Clip', price: 'Free + $19/mo', bestFor: 'Turning long videos into short clips' },
-    { name: 'Pictory', price: 'From $19/mo', bestFor: 'Turning blog posts into video' },
+    { name: 'Pictory', price: 'From $25/mo', bestFor: 'Turning blog posts into video' },
   ],
   'best-ai-audio-tools': [
     { name: 'Podcastle', price: 'Free + $11.99/mo', bestFor: 'Recording podcasts remotely' },

@@ -154,7 +154,7 @@ Every review includes documented sample outputs, rendering time benchmarks from 
     color: '#f97316',
     intro: `The best AI audio tools in 2026 — independently researched across official documentation, 100+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
 
-For podcast creators: Podcastle gives 3 hours free recording per month with AI noise removal — no credit card. Murf AI gives 10 minutes of free voiceover across 120+ voices. Descript's free plan includes 1 hour of transcription-based audio editing.
+For podcast creators: Podcastle's free plan includes 1 hour of remote recording (lifetime) and needs no credit card. Murf AI gives a limited 10 minutes of free voice generation across 200+ voices. Descript's free plan includes 60 media minutes a month of transcript-based audio editing.
 
 For voiceover and TTS: ElevenLabs' free tier generates 10,000 characters per month of ultra-realistic speech. Murf covers commercial voiceover workflows. The right choice depends on whether you need voice cloning (ElevenLabs), commercial rights (Murf), or podcast editing (Podcastle or Descript).
 
@@ -162,7 +162,7 @@ Every tool below has been researched against its official documentation and veri
     faqs: [
       { q: 'What is the best free AI audio tool in 2026?', a: 'ElevenLabs offers the most generous free plan for AI voice generation — 10,000 characters per month with no credit card. For podcast recording and editing, Podcastle gives 3 hours per month free with AI noise removal. For transcription-based podcast editing, Descript offers 1 free hour per month.' },
       { q: 'Do AI voices sound realistic?', a: 'Yes — modern AI voices from tools like Murf AI and ElevenLabs are nearly indistinguishable from human recordings for standard narration. They handle pacing, emphasis, and natural pauses well. The gap with human voice actors is mainly in emotional range and character performances.' },
-      { q: 'What is the cheapest AI podcast tool?', a: 'Podcastle starts at $11.99 per month for its Storyteller plan after the free tier. Descript starts at $16 per month (billed annually). For voice-only content without a podcast editing workflow, ElevenLabs starts at $5 per month for 30,000 characters.' },
+      { q: 'What is the cheapest AI podcast tool?', a: 'Podcastle starts at $11.99 per month (billed annually) for its Essentials plan after the free tier. Descript starts at $16 per month (billed annually). For voice-only content without a podcast editing workflow, ElevenLabs starts at $5 per month (billed annually) for 30,000 credits.' },
       { q: 'Can I use AI voiceovers in commercial videos?', a: 'Yes — both Murf AI and Podcastle allow commercial use of AI-generated voiceovers on their paid plans. Free plans may have restrictions. Always check the specific terms of service for your intended commercial use.' },
     ],
   },

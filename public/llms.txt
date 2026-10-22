@@ -33,7 +33,7 @@
 
 ### Audio & Podcast Tools
 - [Podcastle Review 2026](https://ainexustools.online/tools/podcastle): Record, edit and publish podcasts with AI. Magic Dust audio enhancement, remote recording. Free + from $11.99/month.
-- [Murf AI Review 2026](https://ainexustools.online/tools/murf-ai): Studio-quality AI voiceovers. 120+ voices, 20 languages. Free + from $19/month.
+- [Murf AI Review 2026](https://ainexustools.online/tools/murf-ai): Studio-quality AI voiceovers. 200+ voices, 35+ languages. Free + from $19/month.
 
 ### Design Tools
 - [Gamma Review 2026](https://ainexustools.online/tools/gamma): Build beautiful presentations and docs with AI. Free + from $8/month.

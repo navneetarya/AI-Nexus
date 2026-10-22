@@ -144,7 +144,7 @@ const post: BlogPost = {
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Plan needed</td>
-        <td style="padding:10px 14px">Pro, at $23.99/month billed annually. Not on Basic or Storyteller.</td>
+        <td style="padding:10px 14px">Pro, at $23.99/month billed annually. Not on Essentials.</td>
         <td style="padding:10px 14px">Descript paid plans, from $16/month billed annually</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -156,7 +156,7 @@ const post: BlogPost = {
   </table>
 </div>
 
-<p>Two cost details are easy to miss. Revoice sits on Podcastle's Pro tier, so the cheaper Storyteller plan at $11.99/month billed annually does not include it. And Descript prices rise on monthly billing, so check the billing toggle before you compare.</p>
+<p>Two cost details are easy to miss. Revoice sits on Podcastle's Pro tier, so the cheaper Essentials plan at $11.99/month billed annually does not include it. And Descript prices rise on monthly billing, so check the billing toggle before you compare.</p>
 
 <h3>Tips for a clean line repair</h3>
 

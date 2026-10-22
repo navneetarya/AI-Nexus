@@ -842,7 +842,7 @@ For interview-heavy podcasts, this workflow is genuinely transformative. Searchi
 
 **The learning curve is real.** Descript's interface is unusual — most people who've edited audio in Audacity or GarageBand need a couple of sessions before the text-editing paradigm clicks. Once it does, it's fast. But it's not as immediately accessible as Podcastle.
 
-**Pricing starts at $12/month** for the Creator plan. Free plan is limited to 1 hour of transcription per month — not enough for regular podcasters.
+**Pricing starts at $16/month billed annually** (Hobbyist plan). The free plan includes 60 media minutes per month — not enough for regular podcasters.
 
 **Who it's for:** Video podcasters, YouTube creators, content teams producing interview-format content, and editors who work with long-form interviews that benefit from transcript-based editing.`,
       },
@@ -885,7 +885,7 @@ The tools are complementary more than competitive. Some serious podcast teams us
     pricing: {
       tools: [
         { name: 'Podcastle', free: true, startingPrice: '$0', paidFrom: '$11.99/mo', bestPlanFor: 'Podcasters wanting all-in-one recording + AI', affiliateLink: 'https://podcastle.ai/?ref=ymi1ntf' },
-        { name: 'Descript', free: true, startingPrice: '$0', paidFrom: '$12/mo', bestPlanFor: 'Text-based video & podcast editing', affiliateLink: AFFILIATE_LINKS['descript'] },
+        { name: 'Descript', free: true, startingPrice: '$0', paidFrom: '$16/mo', bestPlanFor: 'Text-based video & podcast editing', affiliateLink: AFFILIATE_LINKS['descript'] },
       ],
     },
     faqs: [
@@ -895,7 +895,7 @@ The tools are complementary more than competitive. Some serious podcast teams us
       { q: 'What is Magic Dust in Podcastle?', a: 'Magic Dust is Podcastle\'s AI audio enhancement feature. It removes background noise, evens out volume levels, and improves voice clarity automatically — without manual audio engineering. Free plan users get 10 hours of Magic Dust per month. Paid plans include unlimited Magic Dust.' },
     ],
     featureRows: [
-      { feature: 'Free plan',          toolA: 'Yes (limited hours)',       toolB: 'Yes (1 hour transcription)', winner: 'tie' },
+      { feature: 'Free plan',          toolA: 'Yes (limited hours)',       toolB: 'Yes (60 media minutes/month)', winner: 'tie' },
       { feature: 'Paid pricing',        toolA: 'From $11.99/mo',           toolB: 'From $12/mo',              winner: 'tie' },
       { feature: 'AI noise removal',    toolA: 'Magic Dust (1-click)',      toolB: 'Studio Sound',             winner: 'A' },
       { feature: 'Text-based editing',  toolA: 'Basic',                    toolB: 'Full (delete words)',       winner: 'B' },
@@ -1447,7 +1447,7 @@ The trade-off is real, though: ElevenLabs' $6 Starter plan gives you 30,000 cred
 
 **Value for occasional users:** ElevenLabs' $6/month Starter plan is exceptional value for individual creators who need occasional high-quality voice generation. Murf's free plan (10 minutes total, no commercial use) is limiting for regular use.
 
-**Cheapest legal commercial license:** ElevenLabs wins clearly. Its $6/month Starter plan unlocks monetized use; Murf's cheapest commercial tier is $19/month annual or $29/month monthly — three to five times the cost for the license alone.`,
+**Lower-priced commercial licence:** ElevenLabs wins on the prices both vendors list publicly. Its $6/month Starter plan unlocks monetized use; Murf's cheapest commercial tier is $19/month annual or $29/month monthly — three to five times the cost for the license alone.`,
       },
     ],
     verdict: `For most content creators producing regular video or audio content, Murf AI is the better starting point. The complete production workflow — script editor, video sync, pronunciation controls, team collaboration — means you spend less time stitching tools together and more time creating. The voice quality is professional-grade and appropriate for the vast majority of content use cases.
@@ -2276,7 +2276,7 @@ For content marketers and bloggers who already produce written content and want 
 The deciding question: are you creating new video content or repurposing existing written content? If new, InVideo AI. If repurposing, Pictory. Some creators use both — InVideo AI for YouTube, Pictory for social clips from their blog posts. At a combined $39–59/month, that's still cheaper than hiring a video editor.`,
     comparisonTable: [
       { name: 'InVideo AI', price: 'Free–$50/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Full video from prompt (script + footage + voice)', platforms: 'Web', bestFor: 'Faceless YouTube & original video', ourPick: true },
-      { name: 'Pictory', price: '$19–$99/mo', priceUSD: 'Free trial ✓', freeplan: false, aiContent: 'Blog-to-video + auto-captions', platforms: 'Web', bestFor: 'Blog repurposing & social clips', ourPick: false },
+      { name: 'Pictory', price: 'From $25/mo', priceUSD: 'Free trial ✓', freeplan: false, aiContent: 'Blog-to-video + auto-captions', platforms: 'Web', bestFor: 'Blog repurposing & social clips', ourPick: false },
     ],
     winnerSlug: 'invideo',
     winnerName: 'InVideo AI',
@@ -2285,14 +2285,14 @@ The deciding question: are you creating new video content or repurposing existin
     pricing: {
       tools: [
         { name: 'InVideo AI', free: true, startingPrice: '$0', paidFrom: '$20/mo', bestPlanFor: 'Content creators turning scripts into video', affiliateLink: AFFILIATE_LINKS['invideo'] },
-        { name: 'Pictory', free: true, startingPrice: '$0 (trial)', paidFrom: '$19/mo', bestPlanFor: 'Bloggers repurposing written content to video', affiliateLink: AFFILIATE_LINKS['pictory'] },
+        { name: 'Pictory', free: true, startingPrice: '$0 (trial)', paidFrom: '$25/mo', bestPlanFor: 'Bloggers repurposing written content to video', affiliateLink: AFFILIATE_LINKS['pictory'] },
       ],
     },
     faqs: [
       { q: 'Is InVideo AI better than Pictory?', a: 'InVideo AI is better for creating original videos from scratch — it generates scripts, selects footage, and adds voiceover automatically from a text prompt. Pictory is better for converting existing blog posts and articles into short social videos. Choose based on whether you\'re creating new content or repurposing existing content.' },
       { q: 'Can InVideo AI create faceless YouTube videos?', a: 'Yes. InVideo AI is one of the best tools for faceless YouTube channels. It generates complete videos — script, stock footage, AI voiceover, captions, and music — from a single text prompt. The free plan allows testing the workflow. Many faceless YouTube creators use InVideo AI as their primary production tool.' },
       { q: 'Is Pictory good for turning blog posts into videos?', a: 'Yes, blog-to-video conversion is Pictory\'s core strength. Paste a blog post URL or text, and Pictory automatically creates a short video with matched footage, text overlays, and captions. The output is optimised for social media sharing — LinkedIn, Instagram Reels, and Twitter. It\'s the fastest way to get video content from existing articles.' },
-      { q: 'Which is cheaper — InVideo AI or Pictory?', a: 'InVideo AI has a more accessible entry point — a free plan with 10 minutes of weekly generation vs Pictory\'s 3-video free trial. InVideo AI\'s paid plans start at $20/month; Pictory\'s start at $19/month. At the entry tier, they\'re similarly priced, but InVideo AI\'s free plan gives you more runway to evaluate before committing.' },
+      { q: 'Which is cheaper — InVideo AI or Pictory?', a: 'InVideo AI has a more accessible entry point — a free plan with 10 minutes of weekly generation vs Pictory\'s 3-video free trial. InVideo AI\'s paid plans start at $20/month; Pictory\'s start at $25/month billed annually. At the entry tier, they\'re similarly priced, but InVideo AI\'s free plan gives you more runway to evaluate before committing.' },
     ],
     featureRows: [
       { feature: 'Free plan',          toolA: 'Yes (watermark)',           toolB: 'Yes (3 videos/month)',     winner: 'tie' },

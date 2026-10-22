@@ -37,7 +37,7 @@ const post: BlogPost = {
 <p>This guide uses live pricing for this guide as of August 2026. If you haven't compared Murf against the wider field yet, start with our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a>. This one assumes you already know Murf and want to know exactly what beats it, and for which job.</p>
 <h2>Choose the Missing Capability</h2>
 <p>Do not switch because another voice tool has a longer feature list. Switch when a specific gap blocks the work. ElevenLabs addresses cloning and realism. Synthesia adds an avatar presenter. Speechify Studio addresses lower-cost production. WellSaid Labs addresses enterprise English narration.</p>
-<p>Murf remains sensible when script-to-video workflow, 120+ voices, 20 languages, and the $19/month entry price match the job.</p>
+<p>Murf remains sensible when script-to-video workflow, 200+ voices, 35+ languages, and the $19/month entry price match the job.</p>
 <p>Before switching, record the same short script in the format you publish. Check pronunciation, pacing, export quality, and how much manual sync remains.</p>
 <h3>When the alternative is actually cheaper</h3>
 <p>Compare the finished workflow, not only the subscription. Murf's documented advantage is script-to-video sync. ElevenLabs is the relevant comparison when cloning and realism matter. Synthesia is relevant when the output needs an avatar presenter. Speechify Studio is relevant when the entry price matters more than Murf's timeline features.</p>
@@ -103,7 +103,7 @@ const post: BlogPost = {
 
 <p>If the one thing you want from Murf but can't get is a cloned version of your own voice, ElevenLabs is the direct answer. It builds a usable clone from about one minute of clean audio, something Murf only offers on its Enterprise tier.</p>
 
-<p>The free plan gives 10,000 characters a month, and paid plans start at $6/month, cheaper than Murf's $19/month entry point. It also covers 29 languages against Murf's 20. What you lose is Murf's script-to-video sync, so you'll need a separate editor to line the voiceover up with footage.</p>
+<p>The free plan gives 10,000 characters a month, and paid plans start at $6/month, cheaper than Murf's $19/month entry point. It also covers 70+ languages against Murf's 35+. What you lose is Murf's script-to-video sync, so you'll need a separate editor to line the voiceover up with footage.</p>
 
 <p><strong>Switch to ElevenLabs if:</strong> cloning quality and voice realism matter more than a built-in video workflow. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or the direct <a href="/blog/elevenlabs-alternatives-2026/">ElevenLabs alternatives comparison</a> if you want the reverse angle.</p>
 
@@ -196,7 +196,7 @@ const post: BlogPost = {
 
 <p>For most video creators and e-learning teams, Murf's script-to-video sync is still the fastest way to get from a script to a finished, timed voiceover. No alternative here matches that specific workflow without adding a separate editing step.</p>
 
-<p>Its free plan gives 10 minutes of voiceover a month, paid plans start at $19/month, and the 120-plus voice library across 20 languages covers most commercial needs. See our full <a href="/tools/murf-ai/">Murf AI review</a> if you haven't ruled it out yet.</p>
+<p>Its free plan gives a limited 10 minutes of voice generation, paid plans start at $19/month, and the 200-plus voice library across 35+ languages covers most commercial needs. See our full <a href="/tools/murf-ai/">Murf AI review</a> if you haven't ruled it out yet.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Murf AI Free →</a>

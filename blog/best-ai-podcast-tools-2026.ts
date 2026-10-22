@@ -42,11 +42,11 @@ const post: BlogPost = {
     },
     {
       q: 'Is Descript free to use for podcast editing?',
-      a: 'Descript has a free plan that includes 1 hour of transcription per month, but exports carry a watermark. The $12/month Creator plan removes the watermark and raises the transcription limit to 10 hours, which is enough for a weekly 30-minute show. For anyone testing whether transcript-based editing fits their workflow, the free plan is enough to try a few episodes before deciding.',
+      a: 'Descript has a free plan that includes 60 media minutes per month and 100 one-time AI credits. The Hobbyist plan at $16/month billed annually adds watermark-free 1080p export and 10 media hours a month, which is enough for a weekly 30-minute show. For anyone testing whether transcript-based editing fits their workflow, the free plan is enough to try a few episodes before deciding.',
     },
     {
       q: 'Does Murf AI support languages other than English for podcast voiceovers?',
-      a: 'Yes. Murf AI\'s voice library covers 120+ AI voices across 20+ languages, with a range of accents and tones inside each language. This makes it usable for intros, outros, and ad reads in non-English podcasts, not just English-language shows. The Studio interface also lets you adjust pace and emphasis so the output does not sound flat.',
+      a: 'Yes. Murf AI\'s voice library covers 200+ AI voices across 35+ languages, with a range of accents and tones inside each language. This makes it usable for intros, outros, and ad reads in non-English podcasts, not just English-language shows. The Studio interface also lets you adjust pace and emphasis so the output does not sound flat.',
     },
     {
       q: 'How long does Adobe Podcast Enhance take to clean up an episode?',
@@ -165,7 +165,7 @@ const post: BlogPost = {
 <p>Descript takes a different approach to editing. Instead of cutting a waveform on a timeline, you edit a transcript. Delete a sentence from the text and Descript removes it from the audio too. Editing feels as easy as editing a Google Doc, with no audio editing skill needed.</p>
 <p>This removes the whole learning curve for anyone who struggles with tools like Audacity, GarageBand, or Logic Pro. You listen to your recording, read the auto-generated transcript, and cut or rearrange sections by editing text.</p>
 <p>Overdub mode can re-record a single word or phrase using an AI clone of your own voice. That fixes one stumble without re-recording the whole segment.</p>
-<p>The free plan gives 1 hour of transcription a month with watermarked exports. The $12/month Creator plan raises that to 10 hours with clean exports — enough for a weekly 30-minute show. See our full <a href="/compare/podcastle-vs-descript/" style="color:var(--a1);font-weight:600;">Podcastle vs Descript comparison</a> to see which fits your workflow better.</p>
+<p>The free plan gives 60 media minutes a month. The Hobbyist plan at $16/month billed annually raises that to 10 media hours with watermark-free 1080p export — enough for a weekly 30-minute show. See our full <a href="/compare/podcastle-vs-descript/" style="color:var(--a1);font-weight:600;">Podcastle vs Descript comparison</a> to see which fits your workflow better.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['descript']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Descript Free →</a>
 </div>

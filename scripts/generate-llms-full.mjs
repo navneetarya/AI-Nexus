@@ -268,7 +268,7 @@ const TOOL_REVIEWS = [
     whoIsItFor: 'YouTubers, course creators, marketers, and anyone needing professional voiceovers without hiring a voice actor.',
     whoShouldSkip: "Anyone on a tight budget — Murf's $19/month minimum is expensive. For basic one-off voiceovers, ElevenLabs' free tier (10,000 characters/month) is sufficient.",
     pricing: 'Free: 10 min/month (watermarked). Creator $19/month (2hrs, no watermark). Business $39/month (4hrs, voice cloning). Enterprise custom.',
-    myTake: "Murf's video sync feature is what sets it apart: you upload your video, choose a voice, and Murf automatically adjusts the voiceover pacing to match your video length. This alone saves 2-3 hours on every video production. The 120+ voices across 20 languages give enough variety that most projects will find a perfect match.",
+    myTake: "Murf's video sync feature is what sets it apart: you upload your video, choose a voice, and Murf automatically adjusts the voiceover pacing to match your video length. This alone saves 2-3 hours on every video production. The 200+ voices across 35+ languages give enough variety that most projects will find a perfect match.",
   },
   {
     slug: 'podcastle',

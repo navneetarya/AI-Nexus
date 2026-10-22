@@ -203,7 +203,7 @@
           "id": "hobbyist",
           "name": "Hobbyist",
           "isFree": false,
-          "priceMonthly": 24,
+          "priceMonthly": null,
           "priceMonthlyBilledAnnually": 16,
           "oneTimePrice": null,
           "customPricing": false,
@@ -219,13 +219,13 @@
             "100 GB storage",
             "1 seat"
           ],
-          "notes": "Priced per person. Annual price is billed up front."
+          "notes": "Priced per person. Annual price is billed up front. Per person; the pricing page shows the annual-billing rate. Monthly-billing rate not re-verified."
         },
         {
           "id": "creator",
           "name": "Creator",
           "isFree": false,
-          "priceMonthly": 35,
+          "priceMonthly": null,
           "priceMonthlyBilledAnnually": 24,
           "oneTimePrice": null,
           "customPricing": false,
@@ -241,13 +241,13 @@
             "Top-ups for media hours and AI credits",
             "Up to 3 seats, billed separately"
           ],
-          "notes": "Priced per person. Annual price is billed up front."
+          "notes": "Priced per person. Annual price is billed up front. Per person; the pricing page shows the annual-billing rate. Monthly-billing rate not re-verified."
         },
         {
           "id": "business",
           "name": "Business",
           "isFree": false,
-          "priceMonthly": 65,
+          "priceMonthly": null,
           "priceMonthlyBilledAnnually": 50,
           "oneTimePrice": null,
           "customPricing": false,
@@ -264,7 +264,7 @@
             "Up to 5 seats, billed separately",
             "Priority support with SLA"
           ],
-          "notes": "Priced per person. Annual price is billed up front."
+          "notes": "Priced per person. Annual price is billed up front. Per person; the pricing page shows the annual-billing rate. Monthly-billing rate not re-verified."
         },
         {
           "id": "enterprise",
@@ -287,8 +287,8 @@
       "indiaNote": null,
       "sources": [
         {
-          "label": "Plan allowances (help center)",
-          "url": "https://help.descript.com/hc/en-us/articles/27653385141517-Understanding-Your-Legacy-and-Sunset-Plan"
+          "label": "Descript help: plan details",
+          "url": "https://help.descript.com/billing-payments-plans/legacy-sunset"
         }
       ]
     },
@@ -328,7 +328,7 @@
           "id": "essentials",
           "name": "Essentials",
           "isFree": false,
-          "priceMonthly": null,
+          "priceMonthly": 19.99,
           "priceMonthlyBilledAnnually": 11.99,
           "oneTimePrice": null,
           "customPricing": false,
@@ -351,7 +351,7 @@
           "id": "pro",
           "name": "Pro",
           "isFree": false,
-          "priceMonthly": null,
+          "priceMonthly": 39.99,
           "priceMonthlyBilledAnnually": 23.99,
           "oneTimePrice": null,
           "customPricing": false,
@@ -374,7 +374,7 @@
           "id": "teams",
           "name": "Teams",
           "isFree": false,
-          "priceMonthly": null,
+          "priceMonthly": 84.99,
           "priceMonthlyBilledAnnually": 49.99,
           "oneTimePrice": null,
           "customPricing": false,
@@ -414,7 +414,7 @@
       "indiaNote": "The pricing FAQ lists PayPal and major credit and debit cards; UPI is not listed.",
       "sources": [
         {
-          "label": "Plan allowances (help center)",
+          "label": "Async Creator pricing help article",
           "url": "https://help.async.com/en/articles/6535067-how-does-async-creator-pricing-work"
         }
       ]
@@ -473,7 +473,12 @@
         "skipIf": "You are a solo creator or blogger on a tight budget"
       },
       "indiaNote": "Priced in USD and converted at purchase by Stripe. Accepts major credit and debit cards; PayPal and prepaid cards are not accepted.",
-      "sources": []
+      "sources": [
+        {
+          "label": "Jasper pricing FAQ (billing, payments, trial)",
+          "url": "https://www.jasper.ai/pricing"
+        }
+      ]
     },
     {
       "slug": "pictory",
@@ -582,14 +587,19 @@
         "skipIf": "You need detailed design control or heavy custom visuals"
       },
       "indiaNote": "Priced in USD. Accepts major debit and credit cards and PayPal; UPI is not listed. No refunds on paid plans.",
-      "sources": []
+      "sources": [
+        {
+          "label": "Pictory pricing FAQ (video minutes)",
+          "url": "https://pictory.ai/pricing/"
+        }
+      ]
     },
     {
       "slug": "murf-ai",
       "name": "Murf AI",
-      "status": "pending",
+      "status": "verified",
       "pricingPageUrl": "https://murf.ai/pricing",
-      "verifiedISO": null,
+      "verifiedISO": "2026-10-22",
       "currency": "USD",
       "freeAccess": "free-plan",
       "trial": null,
@@ -602,74 +612,30 @@
           "priceMonthlyBilledAnnually": null,
           "oneTimePrice": null,
           "customPricing": false,
-          "allowance": {
-            "amount": 10,
-            "unit": "minutes",
-            "period": "one-time",
-            "label": "10 minutes in total"
-          },
+          "allowance": null,
           "commercialUse": false,
           "highlights": [
-            "No downloads"
+            "Limited 10-minute voice generation time",
+            "Voices cannot be downloaded on the free plan"
           ],
-          "notes": "The 10 minutes is a lifetime total, not monthly."
+          "notes": "Murf's FAQ states the free plan has no commercial licence and that voices can only be downloaded on paid plans."
         },
         {
-          "id": "creator",
-          "name": "Creator",
-          "isFree": false,
-          "priceMonthly": 29,
-          "priceMonthlyBilledAnnually": 19,
-          "oneTimePrice": null,
-          "customPricing": false,
-          "allowance": {
-            "amount": 24,
-            "unit": "hours",
-            "period": "year",
-            "label": "24 hours/year"
-          },
-          "commercialUse": true,
-          "highlights": [
-            "100 projects",
-            "Unlimited downloads",
-            "Canva integration"
-          ],
-          "notes": "$19/month is billed annually ($228/year). Usage is metered in voice-generation hours, not characters or credits."
-        },
-        {
-          "id": "business",
-          "name": "Business",
-          "isFree": false,
-          "priceMonthly": 99,
-          "priceMonthlyBilledAnnually": 66,
-          "oneTimePrice": null,
-          "customPricing": false,
-          "allowance": {
-            "amount": 96,
-            "unit": "hours",
-            "period": "year",
-            "label": "96 hours/year on annual billing"
-          },
-          "commercialUse": true,
-          "highlights": [
-            "500 projects",
-            "1 editor seat",
-            "Priority support"
-          ],
-          "notes": "$66/month is billed annually ($792/year). Hours differ by billing cycle: sources report 20 hours/month on monthly billing, so confirm on Murf's page before verifying. Usage is metered in voice-generation hours."
-        },
-        {
-          "id": "enterprise",
-          "name": "Enterprise",
+          "id": "paid-studio",
+          "name": "Paid Studio plans",
           "isFree": false,
           "priceMonthly": null,
           "priceMonthlyBilledAnnually": null,
           "oneTimePrice": null,
-          "customPricing": true,
+          "customPricing": false,
           "allowance": null,
-          "commercialUse": null,
-          "highlights": [],
-          "notes": "Contact sales. Voice cloning is listed on this tier."
+          "commercialUse": true,
+          "highlights": [
+            "Commercial rights over Studio voiceovers on all paid plans",
+            "Team workspaces on paid plans",
+            "Monthly plans available (auto-renew, cancel before billing date)"
+          ],
+          "notes": "Murf's pricing page now lists API plans only. Studio plan prices and hour allowances are not shown on a page that could be read, so they are left empty. The separate API is pay-as-you-go from $0.01 per 1,000 characters (Falcon)."
         }
       ],
       "card": {
@@ -677,14 +643,23 @@
         "skipIf": "You need voice cloning or high monthly audio volume on lower plans"
       },
       "indiaNote": null,
-      "sources": []
+      "sources": [
+        {
+          "label": "Murf help: commercial rights",
+          "url": "https://help.murf.ai/do-i-have-commercial-rights-over-the-voice-over-created"
+        },
+        {
+          "label": "Murf home page FAQ",
+          "url": "https://murf.ai/"
+        }
+      ]
     },
     {
       "slug": "gamma",
       "name": "Gamma",
-      "status": "pending",
+      "status": "verified",
       "pricingPageUrl": "https://gamma.app/pricing",
-      "verifiedISO": null,
+      "verifiedISO": "2026-10-22",
       "currency": "USD",
       "freeAccess": "free-plan",
       "trial": null,
@@ -708,14 +683,14 @@
             "Up to 10 slides per prompt",
             "Gamma branding on exports"
           ],
-          "notes": "No credit card needed. Credits never refresh; extra credits can be earned by referrals."
+          "notes": "No credit card required. Credits do not refresh; extra credits can be earned through referrals (200 per referral, up to 2,000 at once)."
         },
         {
           "id": "plus",
           "name": "Plus",
           "isFree": false,
-          "priceMonthly": 12,
-          "priceMonthlyBilledAnnually": 9,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
           "oneTimePrice": null,
           "customPricing": false,
           "allowance": {
@@ -730,14 +705,14 @@
             "Removes Gamma branding",
             "Advanced AI image models"
           ],
-          "notes": "Priced per seat. Unused credits roll over up to twice the monthly amount. Annual plans receive credits monthly, not upfront."
+          "notes": "Priced per user. Unused credits roll over up to twice the monthly amount. Annual plans receive credits monthly and carry a 28% discount per Gamma's help center. Dollar price not shown on a readable official page."
         },
         {
           "id": "pro",
           "name": "Pro",
           "isFree": false,
-          "priceMonthly": 25,
-          "priceMonthlyBilledAnnually": 18,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
           "oneTimePrice": null,
           "customPricing": false,
           "allowance": {
@@ -754,14 +729,14 @@
             "API access",
             "Detailed analytics"
           ],
-          "notes": "Priced per seat. Unused credits roll over up to twice the monthly amount. Annual plans receive credits monthly, not upfront."
+          "notes": "Priced per user. Unused credits roll over up to twice the monthly amount. Annual plans receive credits monthly and carry a 28% discount per Gamma's help center. Dollar price not shown on a readable official page."
         },
         {
           "id": "ultra",
           "name": "Ultra",
           "isFree": false,
-          "priceMonthly": 100,
-          "priceMonthlyBilledAnnually": 90,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
           "oneTimePrice": null,
           "customPricing": false,
           "allowance": {
@@ -776,14 +751,14 @@
             "Up to 100 custom domains",
             "Early access to new features"
           ],
-          "notes": "Priced per seat. Unused credits roll over up to twice the monthly amount. Annual plans receive credits monthly, not upfront. Gamma's help center says Ultra was launched monthly-only; confirm the annual option on the pricing page."
+          "notes": "Priced per seat. Unused credits roll over up to twice the monthly amount. Gamma's help center (updated 2 Oct 2026) says Ultra is available monthly only."
         },
         {
           "id": "business",
           "name": "Business",
           "isFree": false,
           "priceMonthly": null,
-          "priceMonthlyBilledAnnually": 40,
+          "priceMonthlyBilledAnnually": null,
           "oneTimePrice": null,
           "customPricing": false,
           "allowance": {
@@ -796,18 +771,22 @@
           "highlights": [
             "Minimum 10 seats (reported)"
           ],
-          "notes": "Price and seat minimum are reported by third parties; confirm on the Business tab."
+          "notes": "Workspace shares a credit pool. Dollar price and seat minimum not shown on a readable official page."
         }
       ],
       "card": {
         "bestFor": "Founders, students and educators building decks and docs from a prompt",
         "skipIf": "You need more layout control than PowerPoint offers"
       },
-      "indiaNote": null,
+      "indiaNote": "Prices are subject to tax depending on your location.",
       "sources": [
         {
-          "label": "Plan details (help center)",
-          "url": "https://help.gamma.app/ja/articles/8077107"
+          "label": "Gamma help: upgrade and plans",
+          "url": "https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription"
+        },
+        {
+          "label": "Gamma help: how credits work",
+          "url": "https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma"
         }
       ]
     }
