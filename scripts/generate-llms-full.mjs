@@ -18,12 +18,16 @@
  * Run after any review update. Keep the file under 100KB (LLM context-friendly).
  */
 
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = resolve(__dirname, '../public/llms-full.txt');
+// The build runs this script AFTER `vite build` has already copied public/ into dist/, so a file
+// written only to public/ never reaches the deployed site. When dist/ exists, write there too.
+const DIST_OUTPUT_PATH = resolve(__dirname, '../dist/llms-full.txt');
+const PRICING_SNAPSHOT_PATH = resolve(__dirname, '../data/pricing/latest.json');
 
 // ─── Tool Content ──────────────────────────────────────────────────────────────
 // Mirror of TOOL_CONTENT in pages/ToolPage.tsx.
@@ -1052,6 +1056,52 @@ const BLOG_POSTS = [
   { title: 'What is MCP (Model Context Protocol)? The AI Integration Standard Explained', url: 'https://ainexustools.online/blog/what-is-mcp-model-context-protocol-2026', summary: 'MCP (Model Context Protocol) is an open standard, introduced by Anthropic in November 2024, that lets AI models connect to external tools and data sources through one shared interface instead of a custom-built connector for every model-and-tool pair. By mid-2026 it has been adopted by OpenAI, Cursor, Windsurf, VS Code, n8n, Zapier, and thousands of community-built servers — making it the closest…' },
 ];
 
+// ─── Pricing tracker section (Phase 4, task 4.6) ──────────────────────────────
+// Reads data/pricing/latest.json. Only verified values are printed; null is omitted, never
+// turned into "free" or "no". Returns [] if the snapshot is missing so the export still builds.
+
+function money(n, currency) {
+  return currency === 'USD' ? `$${n}` : `${n} ${currency}`;
+}
+
+function planText(p, currency) {
+  const bits = [];
+  if (p.customPricing) bits.push('custom pricing');
+  if (typeof p.priceMonthly === 'number') bits.push(p.priceMonthly === 0 ? '$0' : `${money(p.priceMonthly, currency)}/month billed monthly`);
+  if (typeof p.priceMonthlyBilledAnnually === 'number') bits.push(`${money(p.priceMonthlyBilledAnnually, currency)}/month billed annually`);
+  if (typeof p.oneTimePrice === 'number') bits.push(`${money(p.oneTimePrice, currency)} one-time`);
+  if (p.allowance) bits.push(p.allowance);
+  if (p.commercialUse === true) bits.push('commercial use allowed');
+  if (p.commercialUse === false) bits.push('no commercial use');
+  return bits.length ? `${p.name}: ${bits.join(', ')}` : `${p.name}: price not verified`;
+}
+
+function pricingTrackerLines() {
+  if (!existsSync(PRICING_SNAPSHOT_PATH)) return [];
+  const snap = JSON.parse(readFileSync(PRICING_SNAPSHOT_PATH, 'utf8'));
+  const lines = [];
+  lines.push(`---`);
+  lines.push(`# SECTION: PRICING TRACKER (${snap.tools.length} tools, snapshot ${snap.snapshotISO})`);
+  lines.push(`Page: https://ainexustools.online/pricing-tracker/`);
+  lines.push(`Data: https://ainexustools.online/data/ai-tool-pricing.json`);
+  lines.push(`Each price was checked against the vendor's own pricing page on the date shown. A missing value means "not verified", not "does not exist".`);
+  lines.push(``);
+  for (const t of snap.tools) {
+    const free = t.freeAccess === 'free-plan' ? 'Free plan available'
+      : t.freeAccess === 'trial-only' ? (typeof t.trialDays === 'number' ? `No free plan, ${t.trialDays}-day trial` : 'No free plan, free trial')
+      : 'No free plan or trial';
+    const from = [];
+    if (typeof t.startsAtMonthly === 'number') from.push(`${money(t.startsAtMonthly, t.currency)}/month billed monthly`);
+    if (typeof t.startsAtMonthlyBilledAnnually === 'number') from.push(`${money(t.startsAtMonthlyBilledAnnually, t.currency)}/month billed annually`);
+    lines.push(`## ${t.name} pricing (verified ${t.verifiedISO})`);
+    lines.push(`${free}. ${from.length ? `Cheapest paid plan: ${from.join(' or ')}.` : 'Cheapest paid price not verified.'}`);
+    lines.push(`Plans: ${t.plans.map(p => planText(p, t.currency)).join(' | ')}`);
+    lines.push(`Source: ${t.pricingPageUrl}`);
+    lines.push(``);
+  }
+  return lines;
+}
+
 // ─── Generator ─────────────────────────────────────────────────────────────────
 
 function generateLlmsFullTxt() {
@@ -1108,6 +1158,9 @@ function generateLlmsFullTxt() {
     lines.push(``);
   }
 
+  // ── Pricing tracker ──
+  lines.push(...pricingTrackerLines());
+
   // ── Metadata ──
   lines.push(`---`);
   lines.push(`# SITE METADATA`);
@@ -1118,6 +1171,7 @@ function generateLlmsFullTxt() {
   lines.push(`Affiliate disclosure: https://ainexustools.online/disclosure`);
   lines.push(`Methodology: https://ainexustools.online/methodology`);
   lines.push(`Content index: https://ainexustools.online/llms.txt`);
+  lines.push(`Pricing tracker: https://ainexustools.online/pricing-tracker/`);
   lines.push(``);
 
   return lines.join('\n');
@@ -1129,6 +1183,7 @@ try {
   mkdirSync(resolve(__dirname, '../public'), { recursive: true });
   const content = generateLlmsFullTxt();
   writeFileSync(OUTPUT_PATH, content, 'utf8');
+  if (existsSync(resolve(__dirname, '../dist'))) writeFileSync(DIST_OUTPUT_PATH, content, 'utf8');
   const sizeKB = (Buffer.byteLength(content, 'utf8') / 1024).toFixed(1);
   console.log(`✅  llms-full.txt generated`);
   console.log(`    Path : ${OUTPUT_PATH}`);

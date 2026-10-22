@@ -272,6 +272,7 @@ jobs:
             'dist/blog/best-ai-writing-tools-2026/index.html',
             'dist/compare/rytr-vs-writesonic/index.html',
             'dist/best-ai-writing-tools/index.html',
+            'dist/pricing-tracker/index.html',
           ];
 
           let failed = false;
@@ -313,6 +314,49 @@ jobs:
             process.exit(1);
           }
           console.log('✅ All JSON-LD schema blocks valid');
+          EOF
+
+      - name: Validate pricing tracker output
+        # Phase 4: the tracker page must ship its Dataset JSON-LD, and the public JSON file it
+        # points to must exist, parse, and agree with the snapshot the page was built from.
+        run: |
+          echo "── Pricing Tracker Validation ──"
+          node <<'EOF'
+          const fs = require('fs');
+
+          const page = 'dist/pricing-tracker/index.html';
+          const data = 'dist/data/ai-tool-pricing.json';
+          let failed = false;
+          const bad = (m) => { console.log(`❌ ${m}`); failed = true; };
+
+          if (!fs.existsSync(page)) bad(`Missing ${page}`);
+          if (!fs.existsSync(data)) bad(`Missing ${data} (scripts/generate-pricing-json.mjs did not run)`);
+
+          if (!failed) {
+            const html = fs.readFileSync(page, 'utf-8');
+            const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+              .map((m) => { try { return JSON.parse(m[1].trim()); } catch { return null; } });
+            const dataset = blocks.find((b) => b && b['@type'] === 'Dataset');
+            if (!dataset) bad('Dataset JSON-LD missing from pricing tracker page');
+
+            let json = null;
+            try { json = JSON.parse(fs.readFileSync(data, 'utf-8')); } catch (e) { bad(`Invalid JSON in ${data}: ${e.message}`); }
+
+            if (dataset && json) {
+              if (dataset.distribution?.[0]?.contentUrl !== 'https://ainexustools.online/data/ai-tool-pricing.json') {
+                bad('Dataset distribution.contentUrl does not point at /data/ai-tool-pricing.json');
+              }
+              if (dataset.dateModified !== json.snapshotDate) {
+                bad(`Dataset dateModified (${dataset.dateModified}) does not match JSON snapshotDate (${json.snapshotDate})`);
+              }
+              if (!Array.isArray(json.tools) || json.tools.length !== json.toolCount || json.tools.length === 0) {
+                bad('pricing JSON tool list is empty or does not match toolCount');
+              }
+              if (!failed) console.log(`✅ Pricing tracker: Dataset JSON-LD present, JSON has ${json.tools.length} tools (snapshot ${json.snapshotDate})`);
+            }
+          }
+
+          if (failed) process.exit(1);
           EOF
 
       - name: Validate homepage body word count
@@ -405,6 +449,17 @@ jobs:
             exit 1
           fi
           echo "✅ dist/llms-full.txt present in build output"
+
+          # 4. Pricing tracker must be listed in both llms files (Phase 4)
+          if ! grep -q "ainexustools.online/pricing-tracker/" dist/llms.txt; then
+            echo "❌ dist/llms.txt does not list the pricing tracker"
+            exit 1
+          fi
+          if ! grep -q "SECTION: PRICING TRACKER" dist/llms-full.txt; then
+            echo "❌ dist/llms-full.txt has no pricing tracker section"
+            exit 1
+          fi
+          echo "✅ Pricing tracker listed in llms.txt and llms-full.txt"
 
           echo "── llms.txt validation passed ✅ ──"
 

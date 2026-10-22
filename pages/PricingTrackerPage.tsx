@@ -196,7 +196,7 @@ export function PricingTrackerBody({ navigate, snapshot = PRICING_SNAPSHOT, hist
 export function PricingTrackerPage({ navigate, isDark, toggleTheme, snapshot, history }: Props) {
   return (
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif", color: C.txt }}>
-      <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} />
+      <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="pricing" />
 
       <main style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(24px, 6vw, 48px) clamp(16px, 4vw, 24px) 80px' }}>
         <h1 style={{ fontSize: 'clamp(26px, 5vw, 38px)', fontWeight: 800, lineHeight: 1.15, margin: '0 0 12px', letterSpacing: '-0.02em' }}>

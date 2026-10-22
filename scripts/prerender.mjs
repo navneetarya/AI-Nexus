@@ -7058,6 +7058,44 @@ console.log('\nStatic pages:');
   writeRoute('methodology', buildPage(template, { title, description, canonical, schemas: [...schemas, AUTHOR_PERSON], datePublished: '2026-05-01', dateModified: PAGE_LAST_UPDATED.methodology, bodyHtml: methodologyBodyHtml }));
 }
 
+// ── Phase 4 (task 4.8): Dataset JSON-LD for the pricing tracker ───────────────
+// Built from data/pricing/latest.json, so it can only describe what the page and the public
+// JSON file actually contain. No build timestamp: dateModified is the snapshot date.
+function pricingDatasetSchema(canonical) {
+  const snap = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'pricing', 'latest.json'), 'utf8'));
+  const categories = [...new Set(snap.tools.map(t => t.category).filter(Boolean))].sort();
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    '@id': `${canonical}#dataset`,
+    name: 'AI Tool Pricing Tracker',
+    description: `Verified prices and plan details for ${snap.tools.length} AI tools (${snap.tools.map(t => t.name).join(', ')}). Each tool was checked against the vendor's own pricing page on the date shown, and a missing value means "not verified", not "does not exist". Snapshot dated ${snap.snapshotISO}.`,
+    url: canonical,
+    sameAs: canonical,
+    inLanguage: 'en',
+    isAccessibleForFree: true,
+    datePublished: '2026-10-22',
+    dateModified: snap.snapshotISO,
+    temporalCoverage: snap.snapshotISO,
+    keywords: ['AI tool pricing', 'AI software prices', 'subscription pricing', 'free plans', ...categories],
+    measurementTechnique: 'Manual check of each vendor\'s own pricing page, recorded with the check date and a link to the page. Values are copied as published, never estimated.',
+    variableMeasured: [
+      'Monthly price (billed monthly)',
+      'Monthly price (billed annually)',
+      'Free plan or trial availability',
+      'Plan allowance',
+      'Commercial use rights',
+    ].map(name => ({ '@type': 'PropertyValue', name })),
+    creator: AUTHOR_PERSON,
+    publisher: { '@type': 'Organization', name: 'AI Nexus', url: SITE },
+    distribution: [{
+      '@type': 'DataDownload',
+      encodingFormat: 'application/json',
+      contentUrl: `${SITE}/data/ai-tool-pricing.json`,
+    }],
+  };
+}
+
 // ── Phase 4 (task 4.5): Pricing tracker ───────────────────────────────────────
 {
   const canonical = `${SITE}/pricing-tracker/`;
@@ -7069,6 +7107,7 @@ console.log('\nStatic pages:');
       [1, 'AI Nexus', SITE],
       [2, 'AI Tool Pricing Tracker', canonical],
     ]),
+    pricingDatasetSchema(canonical),
   ];
   // Body is the SAME React component the live page uses (PricingTrackerBody), rendered at build time.
   writeRoute('pricing-tracker', buildPage(template, {
@@ -9258,6 +9297,8 @@ generateRssFeed();
 // Replaces the manually-maintained public/llms.txt with a build-time generated
 // version that is always in sync with the codebase. Overwrites Vite's copy.
 function generateLlmsTxt() {
+  let PRICING_TOOL_COUNT = 0;
+  try { PRICING_TOOL_COUNT = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'pricing', 'latest.json'), 'utf8')).tools.length; } catch { /* keep 0 */ }
   const lines = [
     `# AI Nexus — ${SITE}`,
     `# llms.txt — auto-generated at build time by scripts/prerender.mjs`,
@@ -9286,6 +9327,11 @@ function generateLlmsTxt() {
     ...COMPARE_ARTICLES.map(a =>
       `- [${a.title}](${SITE}/compare/${a.slug}/): ${a.metaDescription}`
     ),
+    '',
+    '## Pricing Data',
+    '',
+    `- [AI Tool Pricing Tracker](${SITE}/pricing-tracker/): Verified prices for ${PRICING_TOOL_COUNT} AI tools, each checked against the vendor's own pricing page. Snapshot dated ${PAGE_LAST_UPDATED.pricingTracker}. A missing value means not verified, not "no".`,
+    `- [Pricing data (JSON)](${SITE}/data/ai-tool-pricing.json): Same data as machine-readable JSON, with change log and corrections.`,
     '',
     '## Site Policy',
     '',
@@ -9321,6 +9367,10 @@ function generateApiCatalog() {
     {
       anchor: `${SITE}/`,
       describedby: [{ href: `${SITE}/sitemap.xml`, type: 'application/xml', title: 'XML sitemap — full URL index' }],
+    },
+    {
+      anchor: `${SITE}/`,
+      describedby: [{ href: `${SITE}/data/ai-tool-pricing.json`, type: 'application/json', title: 'AI tool pricing data — verified prices, change log and corrections' }],
     },
     {
       anchor: `${SITE}/`,

@@ -1865,6 +1865,47 @@ Relevance AI, Lindy, and Gumloop all build AI agents, but they solve different p
 MCP (Model Context Protocol) is an open standard, introduced by Anthropic in November 2024, that lets AI models connect to external tools and data sources through one shared interface instead of a custom-built connector for every model-and-tool pair. By mid-2026 it has been adopted by OpenAI, Cursor, Windsurf, VS Code, n8n, Zapier, and thousands of community-built servers — making it the closest…
 
 ---
+# SECTION: PRICING TRACKER (7 tools, snapshot 2026-10-22)
+Page: https://ainexustools.online/pricing-tracker/
+Data: https://ainexustools.online/data/ai-tool-pricing.json
+Each price was checked against the vendor's own pricing page on the date shown. A missing value means "not verified", not "does not exist".
+
+## Descript pricing (verified 2026-10-22)
+Free plan available. Cheapest paid plan: $16/month billed annually.
+Plans: Free: $0, 60 media minutes/month, 100 AI credits (one-time) | Hobbyist: $16/month billed annually, 10 media hours/month, 400 AI credits/month | Creator: $24/month billed annually, 30 media hours/month, 800 AI credits/month | Business: $50/month billed annually, 40 media hours/month, 1,500 AI credits/month | Enterprise: custom pricing
+Source: https://www.descript.com/pricing
+
+## ElevenLabs pricing (verified 2026-10-22)
+Free plan available. Cheapest paid plan: $6/month billed monthly or $5/month billed annually.
+Plans: Free: $0, 10,000 credits/month, no commercial use | Starter: $6/month billed monthly, $5/month billed annually, 30,000 credits/month, commercial use allowed | Creator: $22/month billed monthly, $18.33/month billed annually, 121,000 credits/month, commercial use allowed | Pro: $99/month billed monthly, $82.5/month billed annually, 600,000 credits/month, commercial use allowed | Scale: $299/month billed monthly, $249.17/month billed annually, 1,800,000 credits/month, commercial use allowed | Business: $990/month billed monthly, $825/month billed annually, 6,000,000 credits/month, commercial use allowed | Enterprise: custom pricing
+Source: https://elevenlabs.io/pricing
+
+## Gamma pricing (verified 2026-10-22)
+Free plan available. Cheapest paid price not verified.
+Plans: Free: $0, 400 AI credits (one-time) | Plus: 1,000 AI credits/month | Pro: 4,000 AI credits/month | Ultra: 20,000 AI credits/month | Business: 10,000 AI credits/seat/month
+Source: https://gamma.app/pricing
+
+## Jasper pricing (verified 2026-10-22)
+No free plan, 7-day trial. Cheapest paid plan: $69/month billed monthly or $59/month billed annually.
+Plans: Pro: $69/month billed monthly, $59/month billed annually | Business: custom pricing
+Source: https://www.jasper.ai/pricing
+
+## Murf AI pricing (verified 2026-10-22)
+Free plan available. Cheapest paid price not verified.
+Plans: Free: $0, no commercial use | Paid Studio plans: commercial use allowed
+Source: https://murf.ai/pricing
+
+## Pictory pricing (verified 2026-10-22)
+No free plan, 14-day trial. Cheapest paid plan: $29/month billed monthly or $25/month billed annually.
+Plans: Starter: $29/month billed monthly, $25/month billed annually, 200 video minutes/month (2,400/year on annual billing) | Professional: $59/month billed monthly, $35/month billed annually, 600 video minutes/month (7,200/year on annual billing) | Team: $199/month billed monthly, $119/month billed annually, 1,800 video minutes/month (21,600/year on annual billing) | Enterprise: custom pricing
+Source: https://pictory.ai/pricing
+
+## Podcastle (now Async) pricing (verified 2026-10-22)
+Free plan available. Cheapest paid plan: $19.99/month billed monthly or $11.99/month billed annually.
+Plans: Free: $0, 10 AI credits (one-time) | Essentials: $19.99/month billed monthly, $11.99/month billed annually, 450 AI credits/month | Pro: $39.99/month billed monthly, $23.99/month billed annually, 1,200 AI credits/month | Teams: $84.99/month billed monthly, $49.99/month billed annually, 3,000 AI credits/month | Business: custom pricing
+Source: https://async.com/pricing
+
+---
 # SITE METADATA
 Site: AI Nexus | https://ainexustools.online
 Author: Navneet Arya
@@ -1873,3 +1914,4 @@ Review standard: Every tool review is independently researched using verified pu
 Affiliate disclosure: https://ainexustools.online/disclosure
 Methodology: https://ainexustools.online/methodology
 Content index: https://ainexustools.online/llms.txt
+Pricing tracker: https://ainexustools.online/pricing-tracker/

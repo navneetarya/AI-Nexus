@@ -73,7 +73,7 @@ export interface SharedNavProps {
   isDark:      boolean;
   toggleTheme: () => void;
   /** Which tab is currently active. Default: 'home' */
-  activePage?: 'home' | 'compare' | 'about' | 'tool' | 'blog' | 'methodology';
+  activePage?: 'home' | 'compare' | 'about' | 'tool' | 'blog' | 'methodology' | 'pricing';
   /** If provided, clicking Compare calls this instead of navigating away */
   onCompare?:  () => void;
   /** If provided, clicking All Tools calls this instead of navigating away */
@@ -162,10 +162,16 @@ export function SharedNav({
   const isHomeActive    = activePage === 'home';
   const isAboutActive   = activePage === 'about';
   const isBlogActive    = activePage === 'blog';
+  const isPricingActive = activePage === 'pricing';
 
   const handleGlossary = () => {
     closeMobile();
     navigate('/glossary');
+  };
+
+  const handlePricing = () => {
+    closeMobile();
+    navigate('/pricing-tracker');
   };
 
   const handleMethodology = () => {
@@ -387,6 +393,22 @@ export function SharedNav({
               Glossary
             </button>
 
+            {/* Pricing tracker — desktop only */}
+            <button
+              className="shared-nav-btn"
+              onClick={handlePricing}
+              style={{
+                fontSize: 14, fontWeight: 500,
+                color: isPricingActive ? C.a1 : C.mut,
+                padding: '7px 13px', borderRadius: 8,
+                background: isPricingActive ? C.a1card : 'transparent',
+                border: 'none', cursor: 'pointer',
+                fontFamily: "'Inter', system-ui, sans-serif",
+              }}
+            >
+              Pricing
+            </button>
+
             {/* How I Review — trust signal in nav */}
             <button
               className="shared-nav-btn"
@@ -476,6 +498,7 @@ export function SharedNav({
               { label: 'Best AI Logo Makers',           fn: () => { closeMobile(); navigate('/best-ai-logo-makers'); } },
               { label: 'Best AI Tools for Freelancers', fn: () => { closeMobile(); navigate('/best-ai-tools-for-freelancers'); } },
               { label: 'Glossary',   fn: handleGlossary },
+              { label: 'AI Tool Pricing', fn: handlePricing },
               { label: 'How I Review', fn: handleMethodology },
               { label: 'Privacy Policy', fn: () => { closeMobile(); navigate('/privacy'); } },
             ].map(({ label, fn }) => (
@@ -577,6 +600,7 @@ export function SharedNav({
               { label: 'Privacy Policy', path: '/privacy' },
               { label: 'Disclosure',     path: '/disclosure' },
               { label: 'Methodology',    path: '/methodology' },
+              { label: 'Pricing Tracker', path: '/pricing-tracker' },
               { label: 'About',          path: '/about' },
             ].map(({ label, path }) => (
               <button

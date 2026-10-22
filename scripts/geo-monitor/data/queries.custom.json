@@ -1,0 +1,144 @@
+{
+  "queries": [
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "How much does ElevenLabs cost in 2026?",
+      "target_page_hint": "/tools/elevenlabs",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "How much does Murf AI cost in 2026?",
+      "target_page_hint": "/tools/murf-ai",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "How much does Descript cost in 2026?",
+      "target_page_hint": "/tools/descript",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "How much does Jasper AI cost in 2026?",
+      "target_page_hint": "/tools/jasper",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "How much does Pictory cost in 2026?",
+      "target_page_hint": "/tools/pictory",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "How much does Podcastle cost in 2026?",
+      "target_page_hint": "/tools/podcastle",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "How much does Gamma cost in 2026?",
+      "target_page_hint": "/tools/gamma",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "ElevenLabs pricing plans 2026: what does each plan include?",
+      "target_page_hint": "/tools/elevenlabs",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "Is ElevenLabs free plan allowed for commercial use?",
+      "target_page_hint": "/tools/elevenlabs",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "What is the cheapest paid plan for ElevenLabs?",
+      "target_page_hint": "/tools/elevenlabs",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "Does Jasper AI have a free plan or only a free trial?",
+      "target_page_hint": "/tools/jasper",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "Does Pictory have a free plan in 2026?",
+      "target_page_hint": "/tools/pictory",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "Descript pricing 2026: is the free plan enough?",
+      "target_page_hint": "/tools/descript",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "What is the cheapest AI voice generator with a commercial license?",
+      "target_page_hint": "/pricing-tracker",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "AI tool pricing tracker: where can I see verified AI software prices?",
+      "target_page_hint": "/pricing-tracker",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "How much do AI tools cost per month in 2026?",
+      "target_page_hint": "/pricing-tracker",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "Which AI video tools have a free plan and which only offer a trial?",
+      "target_page_hint": "/pricing-tracker",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "Did any AI tool change its pricing recently?",
+      "target_page_hint": "/pricing-tracker",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "Where can I find a dated, verified list of AI tool prices?",
+      "target_page_hint": "/pricing-tracker",
+      "source": "custom"
+    },
+    {
+      "cluster": "pricing-tracker",
+      "category": "pricing",
+      "query": "Is there a downloadable dataset of AI tool pricing?",
+      "target_page_hint": "/data/ai-tool-pricing.json",
+      "source": "custom"
+    }
+  ]
+}
