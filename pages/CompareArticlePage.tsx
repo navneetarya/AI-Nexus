@@ -3,6 +3,7 @@ import { ArrowLeft, ExternalLink, Check, X, ChevronRight } from 'lucide-react';
 import { SITE_CONFIG, TOOLS } from '../constants';
 import { trackAffiliateClick } from '../lib/subid-tracking';
 import { SharedNav } from './SharedNav';
+import { CompareCard, resolveCompareFacts } from '../components/CompareCard';
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
 const C = {
@@ -276,6 +277,13 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
   // resolves to a real /tools/ route, so we never link to a 404.
   const winnerHasToolPage = TOOLS.some(t => t.slug === article.winnerSlug);
 
+  // Phase 3 (task 3.2): at-a-glance card for two-tool comparisons where BOTH tools have verified facts.
+  // When it shows, it replaces the separate "Our pick" CTA block below the Quick Answer, so the page has
+  // one primary CTA there. The end-of-page verdict CTA is unchanged.
+  const compareFacts = article.toolSlugs
+    ? resolveCompareFacts(article.toolSlugs[0], article.toolSlugs[1], article.winnerSlug)
+    : null;
+
   // Track which tool names have been linked already — only link first mention per page
   const linked = React.useRef(new Set<string>()).current;
   // Reset on article change
@@ -388,11 +396,22 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
           </div>
         </section>
 
+        {compareFacts && (
+          <CompareCard
+            facts={compareFacts}
+            winnerSlug={article.winnerSlug}
+            affiliateLink={article.winnerAffiliateLink}
+            fullReviewPath={winnerHasToolPage ? `/tools/${article.winnerSlug}/` : undefined}
+            navigate={navigate}
+          />
+        )}
+
         {/* Winner CTA (top) — duplicate of the end-of-page winner CTA, placed
             directly under the Quick Answer so high-intent visitors who don't
             scroll the full comparison still see a button, not just text.
             Tracked with cta_position: 'top' (vs 'verdict' below) so GA4 can
             show which position actually converts. */}
+        {!compareFacts && (
         <div style={{ background: C.surf, border: `1px solid ${C.a1brd}`, borderRadius: 14, padding: '1.1rem 1.25rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
           <div>
             <div style={{ fontSize: 12, fontWeight: 700, color: C.mut, textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: 2 }}>
@@ -422,6 +441,7 @@ export function CompareArticlePage({ article, navigate, isDark, toggleTheme }: P
             )}
           </div>
         </div>
+        )}
 
         {/* W4-T4: Pricing Comparison Table — answers buyer's #1 question immediately */}
         {article.pricing && <PricingTable pricing={article.pricing} />}

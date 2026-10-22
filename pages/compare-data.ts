@@ -44,6 +44,11 @@ export interface CompareArticle {
   pricing?: ComparePricing;
   /** T3.1: Feature-by-feature comparison table — winner badge per row */
   featureRows?: FeatureRow[];
+  /** Phase 3 (task 3.2): tool slugs of the two tools, in the same order as comparisonTable (A, B).
+   *  Used to look up verified facts for the at-a-glance card. Leave unset for articles that are not
+   *  a two-tool comparison. The card shows only when BOTH tools are verified in lib/vendor-facts.data.json
+   *  and winnerSlug is one of the two. */
+  toolSlugs?: [string, string];
 }
 
 /** T3.1: One row in the feature comparison table */
@@ -79,6 +84,7 @@ export const COMPARE_ARTICLES: CompareArticle[] = [
   // NOTE: pages/../scripts/prerender.mjs reads `slug: '...'` and `lastUpdated: '...'` with single quotes: keep that style.
   {
     slug: 'notta-vs-transkriptor',
+    toolSlugs: ['notta', 'transkriptor'],
     title: "Notta vs Transkriptor (2026): Which AI Transcription Tool Fits Your Audio?",
     seoTitle: "Notta vs Transkriptor 2026: Which to Pick?",
     metaDescription: "Notta vs Transkriptor compared for 2026: 58 vs 100+ languages, monthly minute limits, annual vs monthly pricing, free plans and billing cautions.",
@@ -159,6 +165,7 @@ export const COMPARE_ARTICLES: CompareArticle[] = [
   // Figures read from the vendors' own pages on 2026-10-08 (see section text for what could not be verified).
   {
     slug: 'aippt-vs-presentation-intelligence',
+    toolSlugs: ['aippt', 'presentation-intelligence'],
     title: "AiPPT vs Pi (Presentation Intelligence) 2026: Which AI Slide Maker Fits?",
     seoTitle: "AiPPT vs Pi (Presentation Intelligence) 2026",
     metaDescription: "AiPPT vs Pi (Presentation Intelligence) compared for 2026: free-plan credits, slide caps, export, input formats, and which AI slide maker suits which job.",
@@ -794,6 +801,7 @@ The question that simplifies the choice: do you already have a reliable way to w
   // ── podcastle-vs-descript ─────────────────────────────────────────────────
   {
     slug: 'podcastle-vs-descript',
+    toolSlugs: ['podcastle', 'descript'],
     title: 'Podcastle vs Descript (2026): Which Podcast Tool Should You Actually Use?',
     seoTitle: 'Podcastle vs Descript 2026 — Podcastle Wins on Recording, Descript on Editing',
     metaDescription: 'Podcastle vs Descript 2026: Podcastle wins for recording quality. Descript wins for video podcast editing. Full feature comparison with free plan breakdown.',
@@ -1369,6 +1377,7 @@ The mistake to avoid: buying Writesonic's paid tier expecting it to fix your gra
   // ── murf-ai-vs-elevenlabs ─────────────────────────────────────────────────
   {
     slug: 'murf-ai-vs-elevenlabs',
+    toolSlugs: ['murf-ai', 'elevenlabs'],
     title: 'Murf AI vs ElevenLabs (2026): Which AI Voice Generator Is Worth It?',
     seoTitle: 'Murf AI vs ElevenLabs (2026): Voice Quality Compared',
     metaDescription: 'Murf AI vs ElevenLabs compared for content creators and podcasters. Real voice quality, pricing, and an honest verdict on which AI voice tool wins in 2026.',
@@ -3252,6 +3261,7 @@ Aragon: Upload photo → Configure style/setting → Generate variations → Rev
   // Affiliate: Make.com (direct) + Zapier (PartnerStack)
   {
     slug: 'make-vs-zapier',
+    toolSlugs: ['make', 'zapier'],
     title: 'Make vs Zapier (2026): Which No-Code Automation Platform Wins?',
     seoTitle: 'Make vs Zapier (2026): Honest Pricing + Feature Comparison',
     metaDescription: 'Make vs Zapier compared for 2026 — no-code automation platforms compared. Pricing, app integrations, automation builder, and honest verdict on which is better.',
