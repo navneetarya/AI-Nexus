@@ -74,7 +74,7 @@ const INDIA_TOOLS: Array<{
   },
   {
     slug: 'elevenlabs',
-    inrFree: 'Free (10,000 chars/mo)',
+    inrFree: 'Free (10,000 credits/mo)',
     inrPaid: '₹415/month Starter',
     hindiSupport: true,
     hindiNote: 'Hindi + Indian English voices',
@@ -166,7 +166,7 @@ function IndiaItemListSchema() {
     { position: 1, name: 'Grammarly', url: `${SITE_CONFIG.siteUrl}/tools/grammarly`, description: 'Best free AI writing assistant for Indian professionals — English grammar, tone, and email improvement.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web, Chrome, iOS, Android' },
     { position: 2, name: 'Rytr', url: `${SITE_CONFIG.siteUrl}/tools/rytr`, description: 'Most affordable AI content writer for Indian freelancers and students — ₹750/month paid tier.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
     { position: 3, name: 'Canva AI', url: `${SITE_CONFIG.siteUrl}/tools/canva-ai`, description: 'Best free AI design tool for Indian SMEs and content creators — Hindi template support included.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web, iOS, Android' },
-    { position: 4, name: 'ElevenLabs', url: `${SITE_CONFIG.siteUrl}/tools/elevenlabs`, description: 'Best AI voice generator supporting Indian English accents — free 10,000 characters per month.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
+    { position: 4, name: 'ElevenLabs', url: `${SITE_CONFIG.siteUrl}/tools/elevenlabs`, description: 'Best AI voice generator supporting Indian English accents — free 10,000 credits per month.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
     { position: 5, name: 'Leonardo AI', url: `${SITE_CONFIG.siteUrl}/tools/leonardo-ai`, description: 'Best free AI image generator for Indian designers — 150 free credits daily, no credit card required.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
     { position: 6, name: 'Murf AI', url: `${SITE_CONFIG.siteUrl}/tools/murf-ai`, description: 'AI voiceover tool with strong Indian English voice support — used by Indian eLearning creators.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web' },
     { position: 7, name: 'Perplexity', url: `${SITE_CONFIG.siteUrl}/tools/perplexity`, description: 'Best free AI search engine for Indian researchers and students — cited answers, no hallucinations.', price: '₹0', priceCurrency: 'INR', operatingSystem: 'Web, iOS, Android' },

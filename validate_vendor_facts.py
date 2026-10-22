@@ -257,6 +257,60 @@ def check_copy_drift(tools, pricing):
                 f"paid plan is published at {sorted(set(cheapest_vals))}")
 
 
+# ---------------------------------------------------------------------------
+# Site-wide stale-claim scan (Phase 1, task 1.13).
+# Each rule: (vendor regex, bad-claim regex, message). A line that matches BOTH
+# is an error. Only claims already proven wrong against the vendor's own pages
+# are listed here. Add a rule whenever a copy correction is made.
+# ---------------------------------------------------------------------------
+STALE_RULES = [
+    (r"eleven\s?labs", r"\d[\d,]*\s+(characters|chars)\b", "ElevenLabs allowance is credits, not characters"),
+    (r"eleven\s?labs", r"no credit card", "ElevenLabs pages do not state that no card is needed"),
+    (r"eleven\s?labs", r"cheapest commercial licen", "unverified 'cheapest commercial licence' claim"),
+    (r"eleven\s?labs", r"all pre-made voices", "unverified 'all pre-made voices' claim"),
+    (r"jasper", r"\$39\b", "Jasper Pro is $59/mo annual ($69 monthly); no $39 plan"),
+    (r"jasper", r"50\+ templates|seo mode|custom ai model", "feature not on Jasper's current plans"),
+    (r"pictory", r"from \$19\b", "Pictory Starter is $25/mo annual ($29 monthly)"),
+    (r"descript", r"from \$12\b|hobbyist \(\$12", "Descript Hobbyist is $16/mo annual"),
+    (r"murf", r"\bbasic plan\b", "Murf has no 'Basic' plan"),
+]
+# Claims that cannot be confirmed from an official page yet. Reported as one
+# warning per rule so they stay visible without drowning the output.
+UNVERIFIED_RULES = [
+    (r"gamma", r"\$8\s*/?\s*(month|mo)\b|from \$8\b|free\s*[–-]\s*\$8", "Gamma '$8/month' (third-party sources give $8 to $12)"),
+    (r"murf", r"\$19\s*/?\s*(month|mo)\b|from \$19\b", "Murf '$19/month' (Studio prices not shown on murf.ai/pricing)"),
+]
+
+
+def scan_site_copy():
+    files = [ROOT / "constants.ts", ROOT / "public" / "llms.txt", ROOT / "public" / "llms-full.txt"]
+    for sub in ("pages", "blog"):
+        d = ROOT / sub
+        if d.is_dir():
+            files += sorted(d.glob("*.ts")) + sorted(d.glob("*.tsx"))
+    hits = {}
+    for f in files:
+        if not f.is_file():
+            continue
+        try:
+            lines = f.read_text(encoding="utf-8", errors="replace").splitlines()
+        except OSError:
+            continue
+        for n, line in enumerate(lines, 1):
+            low = line.lower()
+            for vend, bad, msg in STALE_RULES:
+                if re.search(vend, low) and re.search(bad, low):
+                    # Allow lines that explain credits vs characters, and API per-1,000-character prices.
+                    if "characters" in bad and ("credit" in low or "per 1,000" in low):
+                        continue
+                    err(f"{f.relative_to(ROOT)}:{n}: {msg}")
+            for vend, bad, msg in UNVERIFIED_RULES:
+                if re.search(vend, low) and re.search(bad, low):
+                    hits.setdefault(msg, set()).add(str(f.relative_to(ROOT)))
+    for msg, fs in hits.items():
+        warn(f"{msg} appears in {len(fs)} file(s); confirm on the official page, then fix")
+
+
 def main():
     strict = "--strict" in sys.argv
     today = date.today()
@@ -294,6 +348,8 @@ def main():
 
     if pricing:
         check_copy_drift(tools, pricing)
+
+    scan_site_copy()
 
     verified = sum(1 for t in tools if t.get("status") == "verified")
     print(f"Checked {len(tools)} tools ({verified} verified, {len(tools) - verified} pending).")

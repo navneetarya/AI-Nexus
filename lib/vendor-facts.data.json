@@ -345,7 +345,7 @@
             "Exports up to Full HD",
             "About 2 hours of text-to-speech"
           ],
-          "notes": "Price shown is the per-month figure on yearly billing. The monthly-billing price is not recorded. Credits are added monthly and do not roll over."
+          "notes": "Prices are the monthly-billing rate and the per-month rate on yearly billing. Credits are added monthly and do not roll over."
         },
         {
           "id": "pro",
@@ -368,7 +368,7 @@
             "Exports up to 4K",
             "About 10 hours of text-to-speech"
           ],
-          "notes": "Price shown is the per-month figure on yearly billing. The monthly-billing price is not recorded. Credits are added monthly and do not roll over."
+          "notes": "Prices are the monthly-billing rate and the per-month rate on yearly billing. Credits are added monthly and do not roll over."
         },
         {
           "id": "teams",
@@ -391,7 +391,7 @@
             "Exports up to 4K",
             "About 40 hours of text-to-speech"
           ],
-          "notes": "Price shown is the per-month figure on yearly billing. The monthly-billing price is not recorded. Credits are added monthly and do not roll over. Priced per creator."
+          "notes": "Prices are the monthly-billing rate and the per-month rate on yearly billing. Credits are added monthly and do not roll over. Priced per creator."
         },
         {
           "id": "business",

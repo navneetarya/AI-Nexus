@@ -101,7 +101,7 @@ const post: BlogPost = {
 
 <div style="background:rgba(13,148,136,.07);border-left:3px solid #0D9488;border-radius:8px;padding:16px 20px;margin:20px 0;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">⚠ Character Budget Tip</strong>
-  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">A typical 60-second Short runs roughly 700 to 900 characters of script. At 30,000 characters a month, that's about 35 to 40 Shorts (our estimate from those script lengths) before you'd need to upgrade past the $6/month Starter tier.</p>
+  <p style="margin:8px 0 0;font-size:14px;line-height:1.7;">A typical 60-second Short runs roughly 700 to 900 characters of script. At 30,000 credits a month (about 30,000 characters of standard text-to-speech), that's about 35 to 40 Shorts (our estimate from those script lengths) before you'd need to upgrade past the $6/month Starter tier.</p>
 </div>
 
 <p><strong>Best for:</strong> Short-form creators and faceless channels that need one consistent voice across dozens of uploads a month. Read our full <a href="/tools/elevenlabs/">ElevenLabs review</a> or see <a href="/blog/elevenlabs-alternatives-2026/">what to use instead</a> if cloning isn't your priority.</p>
@@ -183,7 +183,7 @@ const post: BlogPost = {
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Free plan</td>
-        <td style="padding:10px 14px">10,000 chars/month</td>
+        <td style="padding:10px 14px">10,000 credits/month</td>
         <td style="padding:10px 14px">~10 min total, no downloads</td>
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
@@ -202,7 +202,7 @@ const post: BlogPost = {
 
 <h2>Pricing at real YouTube upload volume</h2>
 
-<p>One 60-second Short a day uses roughly 21,000 to 27,000 characters a month (700 to 900 per script), which fits ElevenLabs' $6 Starter plan. A weekly 15-minute explainer needs about 48,000 characters, so it takes ElevenLabs Creator at $22/month or Murf Creator at $19/month on annual billing; Murf's 2 hours a month leaves room for about 8 such videos.</p>
+<p>One 60-second Short a day uses roughly 21,000 to 27,000 characters a month (700 to 900 per script, roughly one credit per character on standard voices), which fits ElevenLabs' $6 Starter plan. A weekly 15-minute explainer needs about 48,000 characters, so it takes ElevenLabs Creator at $22/month or Murf Creator at $19/month on annual billing; Murf's 2 hours a month leaves room for about 8 such videos.</p>
 
 <p>Both tools accept standard cards and UPI for India-based creators, billed in USD with no separate regional pricing tier.</p>
 
@@ -288,7 +288,7 @@ const post: BlogPost = {
 `,
 
   faqs: [
-    { q: "What is the best AI voice generator for YouTube Shorts?", a: "ElevenLabs is the best fit for YouTube Shorts and other short-form content. Its free plan gives 10,000 characters a month, enough to test a week's worth of short scripts, and cloning keeps the voice consistent across dozens of uploads. Murf AI works too, but its video-sync strength matters less on videos under a minute." },
+    { q: "What is the best AI voice generator for YouTube Shorts?", a: "ElevenLabs is the best fit for YouTube Shorts and other short-form content. Its free plan gives 10,000 credits a month, enough to test a week's worth of short scripts, and cloning keeps the voice consistent across dozens of uploads. Murf AI works too, but its video-sync strength matters less on videos under a minute." },
     { q: "Can I use the same AI voice on every YouTube video for channel consistency?", a: "Yes, and it's one of the strongest reasons to use voice cloning specifically. ElevenLabs builds a usable clone from about one minute of audio, and every video generated from it sounds like the same narrator. This matters most for faceless channels, where the voice is the primary way viewers recognize the channel." },
     { q: "Is Murf AI or ElevenLabs better for long-form YouTube explainer videos?", a: "Murf AI tends to work better for long-form explainers, mainly because its script-to-video sync times the voiceover to your footage automatically. On a 15 to 20 minute video, that saves real editing time compared to manually aligning an ElevenLabs export in a separate editor." },
     { q: "How much does an AI voice generator cost for a daily YouTube Shorts channel?", a: "One 60-second Short a day uses roughly 21,000 to 27,000 characters a month, which fits ElevenLabs' $6/month Starter plan (30,000 credits). Move to Creator at $22/month for Professional Voice Cloning or a second Short a day. Murf AI's Creator plan at $19/month on annual billing also covers daily Shorts, with about 2 hours of audio a month and commercial rights included." },

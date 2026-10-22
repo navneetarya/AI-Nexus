@@ -106,7 +106,7 @@ const post: BlogPost = {
 
 <p>ElevenLabs is the clearest pick for anyone looking at text-to-speech as software, not just a content tool. Its API is truly built for real use, with SDKs, streaming endpoints, and documentation built for developers, not just marketing copy about "API access."</p>
 
-<p>The free plan gives 10,000 characters a month, enough to prototype an integration before committing. Paid plans start at $6/month for 30,000 characters. The Creator tier at $22/month unlocks 100,000 characters and full voice cloning. Trustpilot rates it 4.5 stars from nearly 1,900 reviews.</p>
+<p>The free plan gives 10,000 credits a month (about 10,000 characters of standard text-to-speech), enough to prototype an integration before committing. Paid plans start at $6/month for 30,000 credits. The Creator tier at $22/month unlocks 121,000 credits and professional voice cloning. Trustpilot rates it 4.5 stars from nearly 1,900 reviews.</p>
 
 <p><strong>Best for:</strong> Developers building voice features into a product, and anyone who needs genuine multi-language coverage. See the full breakdown in our <a href="/tools/elevenlabs/">ElevenLabs review</a>, or compare it head-to-head in our <a href="/compare/murf-ai-vs-elevenlabs/">ElevenLabs vs Murf AI comparison</a>.</p>
 
@@ -198,7 +198,7 @@ const post: BlogPost = {
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500">Free plan limit</td>
-        <td style="padding:10px 14px">10,000 chars/month</td>
+        <td style="padding:10px 14px">10,000 credits/month</td>
         <td style="padding:10px 14px">10 min/month</td>
         <td style="padding:10px 14px">1 hour of recording (lifetime)</td>
         <td style="padding:10px 14px">1hr transcription/month</td>

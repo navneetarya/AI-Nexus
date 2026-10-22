@@ -1142,7 +1142,7 @@ export const TOOLS: Tool[] = [
     notForYou: 'Individual bloggers or solo creators on a budget. Jasper\'s strength is brand consistency across a team — if you\'re writing alone, tools like Writesonic or Rytr deliver 80% of the output quality at a fraction of the cost.',
     realOutputExample: {
       output: 'Used the 7-day free trial with the Blog Post Intro Paragraph template. Prompt: "AI tools for marketing teams, professional tone, addressing the pain point of producing consistent brand content." Jasper generated a 120-word intro that opened with a specific pain point, referenced a real-world scenario, and ended with a clear CTA to read on. Generated in under 10 seconds.',
-      editorialNote: 'Jasper\'s template quality is noticeably higher than generic AI writing tools — the Blog Post Intro template structures the output for conversion, not just information. The Brand Voice feature is genuinely useful: verified users report that training on 3 examples of existing content produces output that matches the source style better than competing tools. Honest caveat: at $39/month starting price, this is only justified if you\'re producing high volumes of on-brand content for a business. For solo bloggers, Writesonic or Rytr are 80% of the quality at 20% of the cost.',
+      editorialNote: 'Jasper\'s template quality is noticeably higher than generic AI writing tools — the Blog Post Intro template structures the output for conversion, not just information. The Brand Voice feature is genuinely useful: verified users report that training on 3 examples of existing content produces output that matches the source style better than competing tools. Honest caveat: at $59/month starting price, this is only justified if you\'re producing high volumes of on-brand content for a business. For solo bloggers, Writesonic or Rytr are 80% of the quality at 20% of the cost.',
     },
     lastTestedISO: '2026-05-13',
     researchSources: {
@@ -3500,7 +3500,7 @@ export const TOOL_FAQS: Record<string, Array<{ q: string; a: string }>> = {
 // ── Week 8: FAQs for 5 new tools ──────────────────────────────────────────
 Object.assign(TOOL_FAQS, {
   elevenlabs: [
-    { q: "Is ElevenLabs free to use?", a: "Yes — ElevenLabs' free plan gives you 10,000 characters per month (roughly 7–8 minutes of audio) with access to all pre-made voices. No credit card is required. The Starter plan at $6/month triples the limit and adds commercial use rights." },
+    { q: "Is ElevenLabs free to use?", a: "Yes — ElevenLabs' free plan gives you 10,000 credits per month (about 10,000 characters of standard text-to-speech) for non-commercial use, with attribution. The Starter plan at $6/month ($5 billed annually) triples the allowance to 30,000 credits and adds commercial use rights." },
     { q: "How realistic are ElevenLabs voices?", a: "ElevenLabs consistently ranks as the most realistic AI voice generator available. In blind listening tests, the premium voices are regularly mistaken for real human recordings. The quality gap between ElevenLabs and other tools is significant — particularly for emotional range and natural pacing." },
     { q: "How do I clone my own voice with ElevenLabs?", a: "Go to Voices → Add Voice → Instant Voice Clone. Upload a clean recording of yourself speaking naturally (no background noise); Instant Voice Cloning is included from the Starter plan. ElevenLabs creates a voice model you can use to generate any text. Professional Voice Clone (Creator plan) uses longer samples for even higher accuracy." },
     { q: "Can I use ElevenLabs voices commercially?", a: "Commercial use requires the Starter plan ($6/month) or above. The free tier is for personal and non-commercial use only. All paid plans include a commercial licence for content monetised on YouTube, sold as products, or used in client work." },
@@ -3508,9 +3508,9 @@ Object.assign(TOOL_FAQS, {
   ],
   jasper: [
     { q: "Is Jasper worth the price compared to ChatGPT?", a: "Jasper justifies its price for marketing teams through brand voice consistency — it remembers your tone, terminology, and audience across every piece of content. ChatGPT doesn't retain brand context between sessions. For individuals, ChatGPT Plus at $20/month is better value. For teams producing high volume branded content, Jasper's consistency pays for itself." },
-    { q: "Does Jasper have a free plan?", a: "Jasper offers a 7-day free trial with full access to all features. There is no permanent free tier. Plans start at $39/month for one user. Given the focus on team workflows, Jasper is generally purchased at the Pro ($59/month) or Business level." },
+    { q: "Does Jasper have a free plan?", a: "Jasper offers a 7-day free trial with full access to all features. There is no permanent free tier. Pro starts at $59/month billed annually ($69 monthly) for one user. Given the focus on team workflows, Jasper is generally purchased at the Pro ($59/month) or Business level." },
     { q: "What is Jasper's Brand Voice feature?", a: "Brand Voice is Jasper's standout feature — you paste examples of your best existing content and Jasper learns your style, tone, and vocabulary. Every output it generates afterwards applies that brand voice automatically. For teams where multiple writers produce content, it keeps everything sounding like one consistent voice." },
-    { q: "How does Jasper compare to Writesonic?", a: "Writesonic is significantly cheaper ($16/month vs $39/month) and is better value for individual bloggers and small businesses. Jasper wins for marketing teams that need brand voice controls, collaboration, and campaign-level content planning. If you're a solo content creator, Writesonic gives you 80% of the output quality at less than half the price." },
+    { q: "How does Jasper compare to Writesonic?", a: "Writesonic is significantly cheaper ($16/month vs $59/month) and is better value for individual bloggers and small businesses. Jasper wins for marketing teams that need brand voice controls, collaboration, and campaign-level content planning. If you're a solo content creator, Writesonic gives you 80% of the output quality at less than half the price." },
     { q: "Does Jasper integrate with SEO tools?", a: "Yes — Jasper has a native integration with Surfer SEO. You can write and optimise content in real time, with Surfer's keyword recommendations appearing alongside Jasper's AI output. This makes it particularly effective for SEO-focused marketing teams who need to hit content score targets consistently." },
   ],
   descript: [
@@ -3646,7 +3646,7 @@ export const TOOL_COMPARISONS: Record<string, Array<{
   rytr: [
     { name: 'Rytr', price: 'Free–$29/mo', freeplan: true, bestFor: 'Budget AI writing', ourPick: true },
     { name: 'Writesonic', price: 'Free–$99/mo', freeplan: true, bestFor: 'SEO blog posts', ourPick: false },
-    { name: 'Jasper', price: '$39–$99/mo', freeplan: false, bestFor: 'Enterprise content teams', ourPick: false },
+    { name: 'Jasper', price: 'From $59/mo', freeplan: false, bestFor: 'Enterprise content teams', ourPick: false },
     { name: 'Copy.ai', price: 'Free–$36/mo', freeplan: true, bestFor: 'Marketing copy', ourPick: false },
     { name: 'ChatGPT Plus', price: '$20/mo', freeplan: true, bestFor: 'Flexible AI tasks', ourPick: false },
   ],
@@ -3742,7 +3742,7 @@ Object.assign(TOOL_COMPARISONS, {
     { name: 'Speechify', price: 'Free–$139/yr', freeplan: true, bestFor: 'Personal listening & TTS', ourPick: false },
   ],
   jasper: [
-    { name: 'Jasper', price: '$39–Custom/mo', freeplan: false, bestFor: 'Team brand voice control', ourPick: true },
+    { name: 'Jasper', price: '$59–Custom/mo', freeplan: false, bestFor: 'Team brand voice control', ourPick: true },
     { name: 'Writesonic', price: 'Free–$99/mo', freeplan: true, bestFor: 'SEO blog posts at low cost', ourPick: false },
     { name: 'Copy.ai', price: 'Free–$36/mo', freeplan: true, bestFor: 'Quick marketing copy', ourPick: false },
     { name: 'Rytr', price: 'Free–$29/mo', freeplan: true, bestFor: 'Budget short-form writing', ourPick: false },
@@ -3864,7 +3864,7 @@ Object.assign(TOOL_COMPARISONS, {
     { name: 'Munch AI', price: 'from $49/mo', freeplan: false, bestFor: 'Repurposing intelligence + multi-platform calendar', ourPick: true },
     { name: 'Opus Clip', price: 'Free + from $19/mo', freeplan: true, bestFor: 'Pure YouTube Shorts volume, virality scoring', ourPick: false },
     { name: 'InVideo AI', price: 'Free + from $20/mo', freeplan: true, bestFor: 'New video creation from text prompts', ourPick: false },
-    { name: 'Descript', price: 'Free + from $12/mo', freeplan: true, bestFor: 'Text-based video editing', ourPick: false },
+    { name: 'Descript', price: 'Free + from $16/mo', freeplan: true, bestFor: 'Text-based video editing', ourPick: false },
   ],
   fireflies: [
     { name: 'Fireflies.ai', price: 'Free + from $10/mo', freeplan: true, bestFor: 'Auto-join meetings, action items, CRM sync', ourPick: true },

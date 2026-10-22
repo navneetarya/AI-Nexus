@@ -85,7 +85,7 @@ const post: BlogPost = {
       </tr>
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer">ElevenLabs</a></td>
-        <td style="padding:10px 14px">Yes \u2014 10,000 characters/month</td>
+        <td style="padding:10px 14px">Yes \u2014 10,000 credits/month</td>
         <td style="padding:10px 14px">$6/month</td>
         <td style="padding:10px 14px">Voice quality layer, not a full agent</td>
         <td style="padding:10px 14px">\u2b50 4.4/5</td>
@@ -167,9 +167,9 @@ const post: BlogPost = {
 <h3>ElevenLabs: best voice quality, as an add-on layer</h3>
 <p>ElevenLabs isn't a full voice-agent platform on its own. It's a voice engine that Retell, Vapi, and most competitors let you plug in as the text-to-speech layer. That makes the agent sound noticeably more natural.</p>
 <p>Voice realism matters for some use cases, like a client-facing receptionist, where a robotic voice undermines trust. Pairing ElevenLabs with Retell or Vapi is a common combination there.</p>
-<p>ElevenLabs' own free plan covers 10,000 characters/month with no commercial license, and paid plans start at $6/month. See our full <a href="/tools/elevenlabs/">ElevenLabs review</a> for pricing tiers beyond the voice-agent use case.</p>
+<p>ElevenLabs' own free plan covers 10,000 credits/month with no commercial license, and paid plans start at $6/month. See our full <a href="/tools/elevenlabs/">ElevenLabs review</a> for pricing tiers beyond the voice-agent use case.</p>
 
-<p>Free plan covers 10,000 characters/month \u2014 pair with Retell or Vapi for a more natural-sounding agent.</p>
+<p>Free plan covers 10,000 credits/month \u2014 pair with Retell or Vapi for a more natural-sounding agent.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free \u2192</a>
 </div>
@@ -238,7 +238,7 @@ const post: BlogPost = {
   faqs: [
     {
       q: 'Is there a free ai voice agent for small business?',
-      a: 'Not a permanent free tier, but both Retell AI and Vapi offer $10 in free credits plus free concurrent-call allowances, which is enough to build and test a real agent before paying anything. ElevenLabs, used as a voice layer rather than a full agent platform, has an ongoing free plan covering 10,000 characters/month. Treat any platform advertised as fully free for production use with caution \u2014 none of the credible options in this category run that way as of 2026.',
+      a: 'Not a permanent free tier, but both Retell AI and Vapi offer $10 in free credits plus free concurrent-call allowances, which is enough to build and test a real agent before paying anything. ElevenLabs, used as a voice layer rather than a full agent platform, has an ongoing free plan covering 10,000 credits/month. Treat any platform advertised as fully free for production use with caution \u2014 none of the credible options in this category run that way as of 2026.',
     },
     {
       q: 'How much does an ai voice agent cost per minute?',

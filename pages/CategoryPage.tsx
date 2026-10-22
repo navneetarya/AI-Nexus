@@ -89,7 +89,7 @@ Browse the tools below, read the full reviews, and pick the one that matches you
       { q: 'Are there any free AI writing tools?', a: 'Yes — Grammarly offers unlimited grammar and tone checks for free. Rytr gives 10,000 free characters per month with 40+ templates. Quillbot provides free paraphrasing up to 125 words per input. All three work without a credit card.' },
       { q: 'Can AI writing tools replace human writers?', a: 'Not yet. AI writing tools are best used as first-draft generators and editing assistants. They save 50–70% of writing time but still need human review for accuracy, brand voice, and nuance. The best workflow is AI for the first draft, human for the final polish.' },
       { q: 'Which AI writing tool is best for SEO blog posts?', a: 'Writesonic is the best for SEO blog posts, with a built-in SEO checker and keyword optimisation. Jasper AI is a close second for teams that need brand voice consistency across content. Both produce well-structured articles that rank.' },
-      { q: 'How much do AI writing tools cost?', a: 'Most AI writing tools range from $9 to $49 per month. Rytr starts at $9/month for unlimited characters. Writesonic starts at $16/month. Grammarly Premium is $12/month. Jasper starts at $39/month for teams. Many offer free plans or trials to get started.' },
+      { q: 'How much do AI writing tools cost?', a: 'Most AI writing tools range from $9 to $49 per month. Rytr starts at $9/month for unlimited characters. Writesonic starts at $16/month. Grammarly Premium is $12/month. Jasper starts at $59/month billed annually. Many offer free plans or trials to get started.' },
     ],
   },
 
@@ -156,11 +156,11 @@ Every review includes documented sample outputs, rendering time benchmarks from 
 
 For podcast creators: Podcastle's free plan includes 1 hour of remote recording (lifetime) and needs no credit card. Murf AI gives a limited 10 minutes of free voice generation across 200+ voices. Descript's free plan includes 60 media minutes a month of transcript-based audio editing.
 
-For voiceover and TTS: ElevenLabs' free tier generates 10,000 characters per month of ultra-realistic speech. Murf covers commercial voiceover workflows. The right choice depends on whether you need voice cloning (ElevenLabs), commercial rights (Murf), or podcast editing (Podcastle or Descript).
+For voiceover and TTS: ElevenLabs' free tier gives 10,000 credits per month for realistic speech. Murf covers commercial voiceover workflows. The right choice depends on whether you need voice cloning (ElevenLabs), commercial rights (Murf), or podcast editing (Podcastle or Descript).
 
 Every tool below has been researched against its official documentation and verified user reviews. Pricing is verified against live pricing pages as of May 2026.`,
     faqs: [
-      { q: 'What is the best free AI audio tool in 2026?', a: 'ElevenLabs offers the most generous free plan for AI voice generation — 10,000 characters per month with no credit card. For podcast recording and editing, Podcastle gives 3 hours per month free with AI noise removal. For transcription-based podcast editing, Descript offers 1 free hour per month.' },
+      { q: 'What is the best free AI audio tool in 2026?', a: 'ElevenLabs offers the most generous free plan for AI voice generation — 10,000 credits per month. For podcast recording and editing, Podcastle gives 3 hours per month free with AI noise removal. For transcription-based podcast editing, Descript offers 1 free hour per month.' },
       { q: 'Do AI voices sound realistic?', a: 'Yes — modern AI voices from tools like Murf AI and ElevenLabs are nearly indistinguishable from human recordings for standard narration. They handle pacing, emphasis, and natural pauses well. The gap with human voice actors is mainly in emotional range and character performances.' },
       { q: 'What is the cheapest AI podcast tool?', a: 'Podcastle starts at $11.99 per month (billed annually) for its Essentials plan after the free tier. Descript starts at $16 per month (billed annually). For voice-only content without a podcast editing workflow, ElevenLabs starts at $5 per month (billed annually) for 30,000 credits.' },
       { q: 'Can I use AI voiceovers in commercial videos?', a: 'Yes — both Murf AI and Podcastle allow commercial use of AI-generated voiceovers on their paid plans. Free plans may have restrictions. Always check the specific terms of service for your intended commercial use.' },
