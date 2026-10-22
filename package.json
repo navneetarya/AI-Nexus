@@ -14,7 +14,9 @@
     "generate:llms": "node scripts/generate-llms-full.mjs",
     "generate:pricing-json": "node scripts/generate-pricing-json.mjs",
     "verify-prerender": "node scripts/verify-prerender.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "lucide-react": "^0.556.0",
@@ -27,6 +29,7 @@
     "esbuild": "^0.27.7",
     "sharp": "^0.34.5",
     "typescript": "~5.8.2",
-    "vite": "^7.2.6"
+    "vite": "^7.2.6",
+    "vitest": "^3.2.7"
   }
 }
