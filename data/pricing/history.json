@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "note": "Reader-facing log of verified price and plan changes. Entries are drafted by scripts/pricing-diff.mjs (task 4.2) from two snapshots and approved by a human before they are added. Newest first. The first snapshot (2026-10-22) is the baseline, so there are no entries yet.",
+  "entries": []
+}

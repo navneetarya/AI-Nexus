@@ -41,6 +41,7 @@ const CategoryPage       = React.lazy(() => import('./pages/CategoryPage').then(
 const GlossaryPage       = React.lazy(() => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })));
 const EditorialPolicyPage = React.lazy(() => import('./pages/EditorialPolicyPage').then(m => ({ default: m.EditorialPolicyPage })));
 const HowWeAnalyzePage    = React.lazy(() => import('./pages/HowWeAnalyzePage').then(m => ({ default: m.HowWeAnalyzePage })));
+const PricingTrackerPage  = React.lazy(() => import('./pages/PricingTrackerPage').then(m => ({ default: m.PricingTrackerPage })));
 const ContactPage         = React.lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
 
 // ── Minimal loading fallback — avoids layout shift during chunk load ─────────
@@ -451,6 +452,19 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <MethodologyPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/pricing-tracker') {
+    updateMeta(
+      'AI Tool Pricing Tracker 2026: Verified Prices | AI Nexus',
+      'Verified prices for AI tools, each checked against the vendor\'s own pricing page and dated. Sort by price, filter by category and see what changed.',
+      `${SITE_CONFIG.siteUrl}/pricing-tracker/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <PricingTrackerPage navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }

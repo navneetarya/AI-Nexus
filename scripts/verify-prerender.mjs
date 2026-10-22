@@ -112,6 +112,17 @@ for (const slug of expectedCompare) {
   if (!compareSlugs.includes(slug)) cardProblems.push(`compare/${slug}: no prerendered compare page found`);
 }
 
+// ── Phase 4 (task 4.5): pricing tracker parity ────────────────────────────────
+{
+  const file = join(DIST, 'pricing-tracker', 'index.html');
+  if (!existsSync(file)) cardProblems.push('pricing-tracker: no prerendered page found');
+  else {
+    const html = readFileSync(file, 'utf8');
+    if (!html.includes(ssr.renderPricingTrackerHtml())) cardProblems.push('pricing-tracker: table differs from the live component output');
+    if (!html.includes(`/pricing-tracker/</loc>`) && !readFileSync(SITEMAP, 'utf8').includes('/pricing-tracker/</loc>')) cardProblems.push('pricing-tracker: missing from sitemap.xml');
+  }
+}
+
 console.log(`\n   Verdict cards expected : ${expectedSlugs.size}`);
 console.log(`   Compare cards expected : ${expectedCompare.size}`);
 console.log(`   Card parity problems   : ${cardProblems.length}`);

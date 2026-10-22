@@ -102,6 +102,8 @@ const TODAY  = new Date().toISOString().split('T')[0]; // YYYY-MM-DD — build l
 //   • static pages → PAGE_LAST_UPDATED below — BUMP THE DATE when you change that page's content
 const STABLE_FALLBACK_DATE = '2026-05-01';
 const PAGE_LAST_UPDATED = {
+  // Phase 4: the pricing tracker's date is its snapshot date (data/pricing/latest.json), never the build date.
+  pricingTracker: (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'pricing', 'latest.json'), 'utf8')).snapshotISO; } catch { return '2026-10-22'; } })(),
   home:        '2026-09-20',
   about:       '2026-09-20',
   methodology: '2026-09-20',
@@ -3051,6 +3053,7 @@ function generateSitemap() {
   blocks.push(urlBlock({ loc: `${SITE}/terms/`,            priority: '0.4', freq: 'yearly',  mod: '2026-06-26' }));
   blocks.push(urlBlock({ loc: `${SITE}/disclosure/`,        priority: '0.3', freq: 'yearly',  mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/methodology/`,       priority: '0.7', freq: 'monthly', mod: PAGE_LAST_UPDATED.methodology }));
+  blocks.push(urlBlock({ loc: `${SITE}/pricing-tracker/`,    priority: '0.8', freq: 'monthly', mod: PAGE_LAST_UPDATED.pricingTracker }));
   blocks.push(urlBlock({ loc: `${SITE}/editorial-policy/`,  priority: '0.4', freq: 'yearly',  mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/how-we-analyze-ai-tools/`, priority: '0.5', freq: 'yearly', mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/glossary/`,          priority: '0.8', freq: 'monthly', mod: STABLE_FALLBACK_DATE }));
@@ -7055,6 +7058,26 @@ console.log('\nStatic pages:');
   writeRoute('methodology', buildPage(template, { title, description, canonical, schemas: [...schemas, AUTHOR_PERSON], datePublished: '2026-05-01', dateModified: PAGE_LAST_UPDATED.methodology, bodyHtml: methodologyBodyHtml }));
 }
 
+// ── Phase 4 (task 4.5): Pricing tracker ───────────────────────────────────────
+{
+  const canonical = `${SITE}/pricing-tracker/`;
+  const title = 'AI Tool Pricing Tracker 2026: Verified Prices | AI Nexus';
+  const description = "Verified prices for AI tools, each checked against the vendor's own pricing page and dated. Sort by price, filter by category and see what changed.";
+  const schemas = [
+    articleSchema({ title, description, canonical, imageUrl: `${SITE}/og-image.png`, datePublished: '2026-10-22', dateModified: PAGE_LAST_UPDATED.pricingTracker }),
+    breadcrumbs([
+      [1, 'AI Nexus', SITE],
+      [2, 'AI Tool Pricing Tracker', canonical],
+    ]),
+  ];
+  // Body is the SAME React component the live page uses (PricingTrackerBody), rendered at build time.
+  writeRoute('pricing-tracker', buildPage(template, {
+    title, description, canonical, schemas: [...schemas, AUTHOR_PERSON],
+    datePublished: '2026-10-22', dateModified: PAGE_LAST_UPDATED.pricingTracker,
+    bodyHtml: VERDICT_SSR.renderPricingTrackerHtml(),
+  }));
+}
+
 // ── Editorial Policy page ─────────────────────────────────────────────────────
 {
   const canonical = `${SITE}/editorial-policy/`;
@@ -9317,7 +9340,7 @@ function generateApiCatalog() {
 generateApiCatalog();
 
 // ── Done ──────────────────────────────────────────────────────────────────────
-const total = TOOLS.length + COMPARE_ARTICLES.length + 5 + BLOG_POSTS.length + 1; // +1 blog list, +5 static
+const total = TOOLS.length + COMPARE_ARTICLES.length + 5 + BLOG_POSTS.length + 1 + 1; // +1 blog list, +5 static, +1 pricing tracker
 console.log(`\n✅  ${total} routes pre-rendered. Every URL now returns HTTP 200.\n`);
 console.log('   Google Search Console: re-request indexing for all sitemap URLs.');
 console.log('   Bing Webmaster Tools: submit sitemap at /sitemap.xml\n');

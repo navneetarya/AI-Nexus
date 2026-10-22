@@ -22,6 +22,8 @@ import { VerdictCard } from '../components/VerdictCard';
 import { CompareCard, compareCardPropsFor } from '../components/CompareCard';
 import { TOOLS } from '../constants';
 import { COMPARE_ARTICLES } from '../pages/compare-data';
+import { PricingTrackerBody } from '../pages/PricingTrackerPage';
+import { PRICING_SNAPSHOT } from './pricing-data';
 import { cheapestPaidPlan, getVerifiedFacts, startsAtLabel, freePlanLabel } from './vendor-facts';
 
 function affiliateLinkFor(slug: string): string | null {
@@ -94,4 +96,16 @@ export function renderCompareCardHtml(articleSlug: string): string {
 /** Compare-article slugs that show a card, for the build report and for verify-prerender. */
 export function compareCardSlugs(): string[] {
   return COMPARE_ARTICLES.map((a) => a.slug).filter((s) => renderCompareCardHtml(s) !== '');
+}
+
+// ── Phase 4 (task 4.5): pricing tracker ───────────────────────────────────────
+
+/** The tracker's body (everything under the h1) as static HTML. Same component as the live page. */
+export function renderPricingTrackerHtml(): string {
+  return renderToStaticMarkup(<PricingTrackerBody />);
+}
+
+/** Date of the snapshot the tracker shows (YYYY-MM-DD), used for the sitemap and "Updated" line. */
+export function pricingSnapshotISO(): string {
+  return PRICING_SNAPSHOT.snapshotISO;
 }
