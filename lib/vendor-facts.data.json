@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedISO": null,
+  "updatedISO": "2026-10-22",
   "rules": {
     "bestForMaxWords": 12,
     "skipIfMaxWords": 15,
@@ -10,16 +10,806 @@
     {
       "slug": "elevenlabs",
       "name": "ElevenLabs",
+      "status": "verified",
+      "pricingPageUrl": "https://elevenlabs.io/pricing",
+      "verifiedISO": "2026-10-22",
+      "currency": "USD",
+      "freeAccess": "free-plan",
+      "trial": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 10000,
+            "unit": "credits",
+            "period": "month",
+            "label": "10,000 credits/month"
+          },
+          "commercialUse": false,
+          "highlights": [
+            "3 Studio projects"
+          ],
+          "notes": "Non-commercial use; attribution required for published output. Credits do not roll over."
+        },
+        {
+          "id": "starter",
+          "name": "Starter",
+          "isFree": false,
+          "priceMonthly": 6,
+          "priceMonthlyBilledAnnually": 5,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 30000,
+            "unit": "credits",
+            "period": "month",
+            "label": "30,000 credits/month"
+          },
+          "commercialUse": true,
+          "highlights": [
+            "Instant voice cloning",
+            "20 Studio projects",
+            "Dubbing Studio"
+          ],
+          "notes": "Unused credits roll over up to two months on an active paid plan."
+        },
+        {
+          "id": "creator",
+          "name": "Creator",
+          "isFree": false,
+          "priceMonthly": 22,
+          "priceMonthlyBilledAnnually": 18.33,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 121000,
+            "unit": "credits",
+            "period": "month",
+            "label": "121,000 credits/month"
+          },
+          "commercialUse": true,
+          "highlights": [
+            "Professional voice cloning"
+          ],
+          "notes": "Unused credits roll over up to two months on an active paid plan. First month is discounted; the list price is stored."
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 99,
+          "priceMonthlyBilledAnnually": 82.5,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 600000,
+            "unit": "credits",
+            "period": "month",
+            "label": "600,000 credits/month"
+          },
+          "commercialUse": true,
+          "highlights": [
+            "44.1kHz PCM output via API"
+          ],
+          "notes": "Unused credits roll over up to two months on an active paid plan."
+        },
+        {
+          "id": "scale",
+          "name": "Scale",
+          "isFree": false,
+          "priceMonthly": 299,
+          "priceMonthlyBilledAnnually": 249.17,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 1800000,
+            "unit": "credits",
+            "period": "month",
+            "label": "1,800,000 credits/month"
+          },
+          "commercialUse": true,
+          "highlights": [
+            "3 seats",
+            "3 professional voice clones"
+          ],
+          "notes": "Unused credits roll over up to two months on an active paid plan."
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": 990,
+          "priceMonthlyBilledAnnually": 825,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 6000000,
+            "unit": "credits",
+            "period": "month",
+            "label": "6,000,000 credits/month"
+          },
+          "commercialUse": true,
+          "highlights": [
+            "10 seats",
+            "10 professional voice clones"
+          ],
+          "notes": "Unused credits roll over up to two months on an active paid plan."
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [],
+          "notes": "Contact sales."
+        }
+      ],
+      "card": {
+        "bestFor": "Creators, developers and podcasters needing realistic voices and voice cloning",
+        "skipIf": "You need full podcast recording, editing and publishing in one place"
+      },
+      "indiaNote": "Priced in USD, taxes extra. The pricing FAQ lists card, Apple Pay and Google Pay; UPI is not listed.",
+      "sources": [
+        {
+          "label": "Billing documentation",
+          "url": "https://elevenlabs.io/docs/overview/administration/billing"
+        }
+      ]
+    },
+    {
+      "slug": "descript",
+      "name": "Descript",
+      "status": "verified",
+      "pricingPageUrl": "https://www.descript.com/pricing",
+      "verifiedISO": "2026-10-22",
+      "currency": "USD",
+      "freeAccess": "free-plan",
+      "trial": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 60,
+            "unit": "minutes",
+            "period": "month",
+            "label": "60 media minutes/month, 100 AI credits (one-time)"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "720p export with watermark",
+            "5 GB storage",
+            "1 seat"
+          ],
+          "notes": "No credit card needed to start."
+        },
+        {
+          "id": "hobbyist",
+          "name": "Hobbyist",
+          "isFree": false,
+          "priceMonthly": 24,
+          "priceMonthlyBilledAnnually": 16,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 600,
+            "unit": "minutes",
+            "period": "month",
+            "label": "10 media hours/month, 400 AI credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "1080p watermark-free export",
+            "100 GB storage",
+            "1 seat"
+          ],
+          "notes": "Priced per person. Annual price is billed up front."
+        },
+        {
+          "id": "creator",
+          "name": "Creator",
+          "isFree": false,
+          "priceMonthly": 35,
+          "priceMonthlyBilledAnnually": 24,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 1800,
+            "unit": "minutes",
+            "period": "month",
+            "label": "30 media hours/month, 800 AI credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "4K watermark-free export",
+            "Top-ups for media hours and AI credits",
+            "Up to 3 seats, billed separately"
+          ],
+          "notes": "Priced per person. Annual price is billed up front."
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": 65,
+          "priceMonthlyBilledAnnually": 50,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 2400,
+            "unit": "minutes",
+            "period": "month",
+            "label": "40 media hours/month, 1,500 AI credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Brand Studio",
+            "Translate and dub in 30+ languages with proofread",
+            "Up to 5 seats, billed separately",
+            "Priority support with SLA"
+          ],
+          "notes": "Priced per person. Annual price is billed up front."
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [],
+          "notes": "Contact sales."
+        }
+      ],
+      "card": {
+        "bestFor": "Podcasters and video creators who prefer editing audio through text",
+        "skipIf": "You mainly record solo and only need light cleanup"
+      },
+      "indiaNote": null,
+      "sources": [
+        {
+          "label": "Plan allowances (help center)",
+          "url": "https://help.descript.com/hc/en-us/articles/27653385141517-Understanding-Your-Legacy-and-Sunset-Plan"
+        }
+      ]
+    },
+    {
+      "slug": "podcastle",
+      "name": "Podcastle (now Async)",
+      "status": "verified",
+      "pricingPageUrl": "https://async.com/pricing",
+      "verifiedISO": "2026-10-22",
+      "currency": "USD",
+      "freeAccess": "free-plan",
+      "trial": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 10,
+            "unit": "credits",
+            "period": "one-time",
+            "label": "10 AI credits (one-time)"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "1 hour remote recording (lifetime)",
+            "2 GB storage",
+            "Exports up to 720p"
+          ],
+          "notes": "No credit card needed to sign up."
+        },
+        {
+          "id": "essentials",
+          "name": "Essentials",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 11.99,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 450,
+            "unit": "credits",
+            "period": "month",
+            "label": "450 AI credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "2 hours remote recording",
+            "20 GB storage",
+            "Exports up to Full HD",
+            "About 2 hours of text-to-speech"
+          ],
+          "notes": "Price shown is the per-month figure on yearly billing. The monthly-billing price is not recorded. Credits are added monthly and do not roll over."
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 23.99,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 1200,
+            "unit": "credits",
+            "period": "month",
+            "label": "1,200 AI credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "20 hours remote recording",
+            "120 GB storage",
+            "Exports up to 4K",
+            "About 10 hours of text-to-speech"
+          ],
+          "notes": "Price shown is the per-month figure on yearly billing. The monthly-billing price is not recorded. Credits are added monthly and do not roll over."
+        },
+        {
+          "id": "teams",
+          "name": "Teams",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 49.99,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 3000,
+            "unit": "credits",
+            "period": "month",
+            "label": "3,000 AI credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "50 hours remote recording",
+            "1 TB storage",
+            "Exports up to 4K",
+            "About 40 hours of text-to-speech"
+          ],
+          "notes": "Price shown is the per-month figure on yearly billing. The monthly-billing price is not recorded. Credits are added monthly and do not roll over. Priced per creator."
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [],
+          "notes": "Contact sales."
+        }
+      ],
+      "card": {
+        "bestFor": "Podcasters and creators wanting recording, editing and AI tools together",
+        "skipIf": "You need audio-engineer level mixing, mastering or EQ automation"
+      },
+      "indiaNote": "The pricing FAQ lists PayPal and major credit and debit cards; UPI is not listed.",
+      "sources": [
+        {
+          "label": "Plan allowances (help center)",
+          "url": "https://help.async.com/en/articles/6535067-how-does-async-creator-pricing-work"
+        }
+      ]
+    },
+    {
+      "slug": "jasper",
+      "name": "Jasper",
+      "status": "verified",
+      "pricingPageUrl": "https://www.jasper.ai/pricing",
+      "verifiedISO": "2026-10-22",
+      "currency": "USD",
+      "freeAccess": "trial-only",
+      "trial": {
+        "days": 7,
+        "cardRequired": null
+      },
+      "plans": [
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 69,
+          "priceMonthlyBilledAnnually": 59,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [
+            "1 seat included",
+            "Canvas and agents for core marketing workflows",
+            "2 Brand Voices, 5 Knowledge assets, 3 Audiences"
+          ],
+          "notes": "Yearly billing is paid up front with a 12-month commitment. More than one user requires the Business plan."
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [
+            "Unlimited Brand Voices, Knowledge and Audiences",
+            "API access and no-code custom agent builder",
+            "SSO and admin controls",
+            "Dedicated account management"
+          ],
+          "notes": "Custom pricing through sales. Starts with a 12-month commitment. Credits apply to some usage-based features on this plan."
+        }
+      ],
+      "card": {
+        "bestFor": "Marketing teams and agencies needing on-brand content at scale",
+        "skipIf": "You are a solo creator or blogger on a tight budget"
+      },
+      "indiaNote": "Priced in USD and converted at purchase by Stripe. Accepts major credit and debit cards; PayPal and prepaid cards are not accepted.",
+      "sources": []
+    },
+    {
+      "slug": "pictory",
+      "name": "Pictory",
+      "status": "verified",
+      "pricingPageUrl": "https://pictory.ai/pricing",
+      "verifiedISO": "2026-10-22",
+      "currency": "USD",
+      "freeAccess": "trial-only",
+      "trial": {
+        "days": 14,
+        "cardRequired": null
+      },
+      "plans": [
+        {
+          "id": "starter",
+          "name": "Starter",
+          "isFree": false,
+          "priceMonthly": 29,
+          "priceMonthlyBilledAnnually": 25,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 200,
+            "unit": "minutes",
+            "period": "month",
+            "label": "200 video minutes/month (2,400/year on annual billing)"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "1 user",
+            "5 GB storage",
+            "1 Brand Kit",
+            "No watermark",
+            "100 AI credits/month (1,200/year on annual)"
+          ],
+          "notes": "Video minutes are exports only and reset on the 1st of each month with no rollover. Annual plans receive the full year of minutes upfront."
+        },
+        {
+          "id": "professional",
+          "name": "Professional",
+          "isFree": false,
+          "priceMonthly": 59,
+          "priceMonthlyBilledAnnually": 35,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 600,
+            "unit": "minutes",
+            "period": "month",
+            "label": "600 video minutes/month (7,200/year on annual billing)"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "1 user",
+            "20 GB storage",
+            "5 Brand Kits",
+            "Voice cloning and custom avatars",
+            "500 AI credits/month (12,000/year on annual)"
+          ],
+          "notes": "Video minutes are exports only and reset on the 1st of each month with no rollover. Annual plans receive the full year of minutes upfront."
+        },
+        {
+          "id": "team",
+          "name": "Team",
+          "isFree": false,
+          "priceMonthly": 199,
+          "priceMonthlyBilledAnnually": 119,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 1800,
+            "unit": "minutes",
+            "period": "month",
+            "label": "1,800 video minutes/month (21,600/year on annual billing)"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "3+ users, minutes shared",
+            "100 GB storage",
+            "10 Brand Kits",
+            "2,400 AI credits/month (28,800/year on annual)"
+          ],
+          "notes": "Video minutes are exports only and reset on the 1st of each month with no rollover. Annual plans receive the full year of minutes upfront."
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [
+            "10+ users",
+            "Custom minutes, storage and AI credits",
+            "SSO and dedicated success manager"
+          ],
+          "notes": "Contact sales."
+        }
+      ],
+      "card": {
+        "bestFor": "Bloggers and marketers turning scripts, articles and recordings into videos",
+        "skipIf": "You need detailed design control or heavy custom visuals"
+      },
+      "indiaNote": "Priced in USD. Accepts major debit and credit cards and PayPal; UPI is not listed. No refunds on paid plans.",
+      "sources": []
+    },
+    {
+      "slug": "murf-ai",
+      "name": "Murf AI",
       "status": "pending",
-      "pricingPageUrl": null,
+      "pricingPageUrl": "https://murf.ai/pricing",
       "verifiedISO": null,
       "currency": "USD",
-      "freeAccess": null,
+      "freeAccess": "free-plan",
       "trial": null,
-      "plans": [],
-      "card": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 10,
+            "unit": "minutes",
+            "period": "one-time",
+            "label": "10 minutes in total"
+          },
+          "commercialUse": false,
+          "highlights": [
+            "No downloads"
+          ],
+          "notes": "The 10 minutes is a lifetime total, not monthly."
+        },
+        {
+          "id": "creator",
+          "name": "Creator",
+          "isFree": false,
+          "priceMonthly": 29,
+          "priceMonthlyBilledAnnually": 19,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 24,
+            "unit": "hours",
+            "period": "year",
+            "label": "24 hours/year"
+          },
+          "commercialUse": true,
+          "highlights": [
+            "100 projects",
+            "Unlimited downloads",
+            "Canva integration"
+          ],
+          "notes": "$19/month is billed annually ($228/year). Usage is metered in voice-generation hours, not characters or credits."
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": 99,
+          "priceMonthlyBilledAnnually": 66,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 96,
+            "unit": "hours",
+            "period": "year",
+            "label": "96 hours/year on annual billing"
+          },
+          "commercialUse": true,
+          "highlights": [
+            "500 projects",
+            "1 editor seat",
+            "Priority support"
+          ],
+          "notes": "$66/month is billed annually ($792/year). Hours differ by billing cycle: sources report 20 hours/month on monthly billing, so confirm on Murf's page before verifying. Usage is metered in voice-generation hours."
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [],
+          "notes": "Contact sales. Voice cloning is listed on this tier."
+        }
+      ],
+      "card": {
+        "bestFor": "Video creators and e-learning producers needing studio voiceovers",
+        "skipIf": "You need voice cloning or high monthly audio volume on lower plans"
+      },
       "indiaNote": null,
       "sources": []
+    },
+    {
+      "slug": "gamma",
+      "name": "Gamma",
+      "status": "pending",
+      "pricingPageUrl": "https://gamma.app/pricing",
+      "verifiedISO": null,
+      "currency": "USD",
+      "freeAccess": "free-plan",
+      "trial": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 400,
+            "unit": "credits",
+            "period": "one-time",
+            "label": "400 AI credits (one-time)"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Up to 10 slides per prompt",
+            "Gamma branding on exports"
+          ],
+          "notes": "No credit card needed. Credits never refresh; extra credits can be earned by referrals."
+        },
+        {
+          "id": "plus",
+          "name": "Plus",
+          "isFree": false,
+          "priceMonthly": 12,
+          "priceMonthlyBilledAnnually": 9,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 1000,
+            "unit": "credits",
+            "period": "month",
+            "label": "1,000 AI credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Up to 100 slides per prompt",
+            "Removes Gamma branding",
+            "Advanced AI image models"
+          ],
+          "notes": "Priced per seat. Unused credits roll over up to twice the monthly amount. Annual plans receive credits monthly, not upfront."
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 25,
+          "priceMonthlyBilledAnnually": 18,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 4000,
+            "unit": "credits",
+            "period": "month",
+            "label": "4,000 AI credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Premium AI image models",
+            "Custom branding",
+            "Up to 10 custom domains",
+            "API access",
+            "Detailed analytics"
+          ],
+          "notes": "Priced per seat. Unused credits roll over up to twice the monthly amount. Annual plans receive credits monthly, not upfront."
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra",
+          "isFree": false,
+          "priceMonthly": 100,
+          "priceMonthlyBilledAnnually": 90,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 20000,
+            "unit": "credits",
+            "period": "month",
+            "label": "20,000 AI credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Most advanced AI models",
+            "Up to 100 custom domains",
+            "Early access to new features"
+          ],
+          "notes": "Priced per seat. Unused credits roll over up to twice the monthly amount. Annual plans receive credits monthly, not upfront. Gamma's help center says Ultra was launched monthly-only; confirm the annual option on the pricing page."
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 40,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 10000,
+            "unit": "credits",
+            "period": "month",
+            "label": "10,000 AI credits/seat/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Minimum 10 seats (reported)"
+          ],
+          "notes": "Price and seat minimum are reported by third parties; confirm on the Business tab."
+        }
+      ],
+      "card": {
+        "bestFor": "Founders, students and educators building decks and docs from a prompt",
+        "skipIf": "You need more layout control than PowerPoint offers"
+      },
+      "indiaNote": null,
+      "sources": [
+        {
+          "label": "Plan details (help center)",
+          "url": "https://help.gamma.app/ja/articles/8077107"
+        }
+      ]
     }
   ]
 }
