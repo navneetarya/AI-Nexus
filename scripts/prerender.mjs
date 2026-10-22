@@ -22,11 +22,33 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { loadVerdictSsr } from './verdict-ssr-loader.mjs';
 
 const __dir  = path.dirname(fileURLToPath(import.meta.url));
 const ROOT   = path.join(__dir, '..');
 const DIST   = path.join(ROOT, 'dist');
 const SITE   = 'https://ainexustools.online';
+
+// Phase 2 (task 2.4): the verdict card on tool pages is produced by the SAME React
+// component the live page uses (components/VerdictCard.tsx), bundled by esbuild via
+// lib/verdict-card-ssr.tsx. Crawlers therefore see exactly what readers see, and the
+// card text cannot drift from lib/vendor-facts.data.json.
+const VERDICT_SSR = await loadVerdictSsr();
+
+/**
+ * Offer fields for JSON-LD. For tools with verified facts the price comes from
+ * lib/vendor-facts.data.json ("0" only when a free plan is verified, otherwise the
+ * cheapest published paid price). Other tools keep their previous values.
+ */
+function offerPriceFields(tool) {
+  const v = VERDICT_SSR.verifiedOffer(tool.slug);
+  if (!v) return { price: '0', description: tool.pricing };
+  return {
+    ...(v.price !== null ? { price: v.price } : {}),
+    priceCurrency: v.priceCurrency,
+    description: v.description,
+  };
+}
 const AUTHOR = 'Navneet Arya';
 // W1-T6 FIX: sameAs array — links "Navneet Arya" entity across Google's knowledge graph.
 // Used in every Person schema in this file so AI engines (Perplexity, ChatGPT, Google AIO)
@@ -381,7 +403,7 @@ const TOOLS = [
     description: 'Writesonic creates SEO-friendly blog posts, Facebook ads, Google ads, and product descriptions. Powered by GPT-4 with a built-in AI chatbot called Chatsonic.',
     pricing: 'Free + from $16/month', bestFor: 'Bloggers & content marketers',
     rating: 4.2, lastTested: 'May 2026',
-    reviewBody: 'Writesonic is one of the most capable AI writing tools for SEO-focused content in 2026, built specifically for bloggers and content marketers who need to produce optimised articles at scale. Its Article Writer generates 1,500 to 2,500 word drafts with keyword integration, meta description suggestions, and heading structure — drawing on competitor content analysis to produce SEO-aware output. The built-in chatbot, Chatsonic, adds real-time web browsing to the writing workflow, making it genuinely useful for news-driven or time-sensitive content that requires current data. Over 80 content templates cover ad copy, email sequences, landing pages, and product descriptions in addition to long-form writing. The free plan includes 25 one-click article generations with a word limit, enough to evaluate the tool on real content before committing. The Small plan at $16/month lifts the word limit and is the practical entry point for regular use. The main limitation is consistency on long-form output: articles beyond 2,000 words sometimes repeat phrases or lose structural coherence in the final third, requiring manual editing. For content teams needing enterprise-level brand voice controls across multiple writers, Jasper at $39/month adds features Writesonic does not offer at this price point. For solo bloggers and freelance content marketers producing regular SEO content, Writesonic delivers the best balance of output quality and affordability in the category. Supports 25+ languages including Hindi and Spanish — solid for non-English short-form content.',
+    reviewBody: 'Writesonic is one of the most capable AI writing tools for SEO-focused content in 2026, built specifically for bloggers and content marketers who need to produce optimised articles at scale. Its Article Writer generates 1,500 to 2,500 word drafts with keyword integration, meta description suggestions, and heading structure — drawing on competitor content analysis to produce SEO-aware output. The built-in chatbot, Chatsonic, adds real-time web browsing to the writing workflow, making it genuinely useful for news-driven or time-sensitive content that requires current data. Over 80 content templates cover ad copy, email sequences, landing pages, and product descriptions in addition to long-form writing. The free plan includes 25 one-click article generations with a word limit, enough to evaluate the tool on real content before committing. The Small plan at $16/month lifts the word limit and is the practical entry point for regular use. The main limitation is consistency on long-form output: articles beyond 2,000 words sometimes repeat phrases or lose structural coherence in the final third, requiring manual editing. For content teams needing enterprise-level brand voice controls across multiple writers, Jasper at $59/month billed annually adds features Writesonic does not offer at this price point. For solo bloggers and freelance content marketers producing regular SEO content, Writesonic delivers the best balance of output quality and affordability in the category. Supports 25+ languages including Hindi and Spanish — solid for non-English short-form content.',
   },
   {
     slug: 'rytr', name: 'Rytr', category: 'Writing',
@@ -437,9 +459,9 @@ const TOOLS = [
     slug: 'pictory', name: 'Pictory', category: 'Video',
     tagline: 'Turn your articles and scripts into videos automatically',
     description: 'Pictory converts blog posts, scripts, and long-form content into short branded videos. The fastest way to repurpose written content into video for YouTube or Reels.',
-    pricing: 'From $19/month', bestFor: 'Bloggers & content repurposers',
+    pricing: 'From $25/month billed annually ($29 monthly)', bestFor: 'Bloggers & content repurposers',
     rating: 4.1, lastTested: 'May 2026',
-    reviewBody: 'Pictory is the most focused video repurposing tool available in 2026 for bloggers and content creators who want to convert existing written content into short social media videos. The core workflow — paste a blog post URL, review the AI-extracted script, adjust footage selection, and export — takes 10 to 15 minutes for a finished 60 to 90 second video backed by Storyblocks stock footage (3 million clips) and background music. The text-to-video conversion is the strongest differentiator: Pictory reads the source article, identifies key points, matches relevant b-roll footage, and generates a voice-narrated video without requiring a script, footage, or recording equipment from the user. The Starter plan at $19/month includes 30 videos per month at up to 10 minutes each — sufficient for a solo creator publishing across multiple platforms. A free trial of 3 video projects (no credit card) lets users test the full pipeline before committing. The main limitation is content type: Pictory is built for repurposing existing content, not creating new video from scratch. If the goal is to make a new YouTube video from a text prompt with no prior content, InVideo AI is the better fit. The stock footage library, while large at 3 million clips, occasionally produces awkward b-roll matches on highly specific or technical topics — manual footage selection is sometimes required. For bloggers and educators who already produce written content regularly and want a fast, low-effort path to video, Pictory is the clearest tool in the category.',
+    reviewBody: 'Pictory is the most focused video repurposing tool available in 2026 for bloggers and content creators who want to convert existing written content into short social media videos. The core workflow — paste a blog post URL, review the AI-extracted script, adjust footage selection, and export — takes 10 to 15 minutes for a finished 60 to 90 second video backed by Storyblocks stock footage (3 million clips) and background music. The text-to-video conversion is the strongest differentiator: Pictory reads the source article, identifies key points, matches relevant b-roll footage, and generates a voice-narrated video without requiring a script, footage, or recording equipment from the user. The Starter plan at $25/month billed annually ($29 billed monthly) includes 200 video minutes per month — sufficient for a solo creator publishing across multiple platforms. A 14-day free trial lets users test the pipeline before committing. The main limitation is content type: Pictory is built for repurposing existing content, not creating new video from scratch. If the goal is to make a new YouTube video from a text prompt with no prior content, InVideo AI is the better fit. The stock footage library, while large at 3 million clips, occasionally produces awkward b-roll matches on highly specific or technical topics — manual footage selection is sometimes required. For bloggers and educators who already produce written content regularly and want a fast, low-effort path to video, Pictory is the clearest tool in the category.',
   },
   {
     slug: 'opus-clip', name: 'Opus Clip', category: 'Video',
@@ -461,7 +483,7 @@ const TOOLS = [
     slug: 'murf-ai', name: 'Murf AI', category: 'Audio',
     tagline: 'Studio-quality AI voiceovers in minutes',
     description: 'Murf AI creates studio-quality voiceovers for videos, presentations, and e-learning using 200+ realistic AI voices across 35+ languages. No microphone needed.',
-    pricing: 'Free + from $19/month', bestFor: 'Video creators & eLearning',
+    pricing: 'Free + from $19/mo (annual) or $29/mo (monthly)', bestFor: 'Video creators & eLearning',
     rating: 4.4, lastTested: 'May 2026',
     reviewBody: 'Murf AI is the most complete AI voiceover production studio in 2026 for video creators and eLearning developers who need professional-quality narration without a microphone setup. The platform offers 200+ studio-recorded voices across 35+ languages, with natural-sounding delivery that consistently outperforms basic text-to-speech tools. The production workflow is what separates Murf from simpler voice generators: voices are placed on a timeline, synced directly to uploaded video footage, and accompanied by background music controls — creating a complete narration session rather than just a sound file. The Indian English accent options are notably strong for creators producing content for Indian audiences. The free plan includes 10 minutes of voiceover per month with a watermark — enough to evaluate voice quality and the interface before committing. The Creator plan at $19/month removes the watermark, adds commercial use rights, and gives 2 hours of voice generation per month — the entry point for YouTube creators and eLearning course producers. The main limitation versus ElevenLabs is voice cloning: Murf AI does not offer voice cloning at the Creator price tier, while ElevenLabs provides voice cloning from a 1-minute sample at $5/month. If the goal is to replicate a specific voice, ElevenLabs is the right choice. For structured voiceover production with a polished studio interface, the Murf AI timeline-based workflow is more practical than ElevenLabs for non-technical users. The 35+ language support and Indian English accent quality make it particularly relevant for the Indian eLearning market.',
   },
@@ -469,10 +491,10 @@ const TOOLS = [
     slug: 'podcastle', name: 'Podcastle', category: 'Audio',
     tagline: 'Record, edit and publish podcasts with AI',
     description: 'Podcastle gives you studio-quality recording, AI-powered noise removal, and one-click publishing. Record remotely with guests and let AI clean up the audio automatically.',
-    pricing: 'Free + from $11.99/month', bestFor: 'Podcasters & interviewers',
+    pricing: 'Free + from $11.99/month billed annually ($19.99 monthly)', bestFor: 'Podcasters & interviewers',
     rating: 4.2, lastTested: 'April 2026',
     seoTitle: 'Podcastle Review 2026 — Free Plan, AI Noise Removal Reviewed | AI Nexus',
-    reviewBody: 'Podcastle is the strongest tool in 2026 for podcasters and remote interviewers who prioritise recording quality and ease of use over advanced editing capabilities. The local recording architecture — each participant records on their own device and uploads separate audio tracks — means recording quality is independent of internet connection stability during the interview. This is the technical detail that matters most for remote podcast production: Zoom and similar tools compress audio over the network; Podcastle captures full-quality audio locally. The AI audio enhancement (Magic Dust) removes background noise, echo, room reverb, and keyboard clicks in a single click — consistently rated among the most effective one-click noise removal tools at this price point in G2 and Trustpilot reviews. The free plan includes unlimited recordings and up to 10 hours of Magic Dust enhancement per month, making it genuinely functional for low-volume podcasting. The Revoice feature lets users clone their voice and type corrections that Podcastle renders in the cloned voice — fixing stumbles without re-recording segments. Paid plans start at $11.99/month and include direct publishing to Spotify, Apple Podcasts, and other major platforms without needing a separate hosting service. The main limitation compared to Descript is editing depth: Podcastle does not offer transcript-based editing. For podcasters who produce long interviews requiring heavy content editing (removing segments, restructuring the episode), Descript text-based editing is more efficient. Podcastle is the better choice when recording quality and simplicity are the primary requirements.',
+    reviewBody: 'Podcastle is the strongest tool in 2026 for podcasters and remote interviewers who prioritise recording quality and ease of use over advanced editing capabilities. The local recording architecture — each participant records on their own device and uploads separate audio tracks — means recording quality is independent of internet connection stability during the interview. This is the technical detail that matters most for remote podcast production: Zoom and similar tools compress audio over the network; Podcastle captures full-quality audio locally. The AI audio enhancement (Magic Dust) removes background noise, echo, room reverb, and keyboard clicks in a single click — consistently rated among the most effective one-click noise removal tools at this price point in G2 and Trustpilot reviews. The free plan is a limited starter tier (10 AI credits one-time, 1 hour of remote recording, 2 GB storage, exports up to 720p), enough to test the workflow before paying. The Revoice feature lets users clone their voice and type corrections that Podcastle renders in the cloned voice — fixing stumbles without re-recording segments. Paid plans start at $11.99/month billed annually ($19.99 billed monthly) and include direct publishing to Spotify, Apple Podcasts, and other major platforms without needing a separate hosting service. The main limitation compared to Descript is editing depth: Podcastle does not offer transcript-based editing. For podcasters who produce long interviews requiring heavy content editing (removing segments, restructuring the episode), Descript text-based editing is more efficient. Podcastle is the better choice when recording quality and simplicity are the primary requirements.',
   },
   {
     slug: 'gamma', name: 'Gamma', category: 'Design',
@@ -538,25 +560,25 @@ const TOOLS = [
     slug: 'elevenlabs', name: 'ElevenLabs', category: 'Audio',
     tagline: 'The most realistic AI voice generator on the planet',
     description: 'ElevenLabs creates the most natural-sounding AI voices available. Clone your own voice, generate studio-quality narration, and build voice-powered products with the industry-leading speech API.',
-    pricing: 'Free + from $5/month', bestFor: 'Creators, developers & podcasters',
+    pricing: 'Free + from $6/month', bestFor: 'Creators, developers & podcasters',
     rating: 4.7, lastTested: 'April 2026',
-    reviewBody: 'ElevenLabs is the benchmark for AI voice quality in 2026 — no other tool comes close for realism, especially on emotional speech and sentence-final intonation. The free plan gives 10,000 characters per month (roughly 7–8 minutes of audio) with access to 500+ pre-made voices and no credit card required. Voice cloning from a 1-minute clean sample takes under 2 minutes to process and produces output that is regularly mistaken for the original speaker in informal listening tests. The Starter plan at $5/month triples the character limit and adds commercial use rights — one of the best value upgrades in the AI tools category. The main limitation is workflow: ElevenLabs is a pure voice generation and API tool. It does not record audio, edit timelines, or handle publishing. For end-to-end podcast or video production, pair it with Podcastle or Descript. For developers, the API is the most capable speech API available in 2026, with streaming, multi-voice projects, and dubbing endpoints. The free tier is generous enough to build and test a production integration before committing to a paid plan.',
+    reviewBody: 'ElevenLabs is the benchmark for AI voice quality in 2026 — no other tool comes close for realism, especially on emotional speech and sentence-final intonation. The free plan gives 10,000 credits per month (about 10,000 characters of standard text-to-speech, roughly 7–8 minutes of audio) with access to pre-made voices. Voice cloning from a 1-minute clean sample takes under 2 minutes to process and produces output that is regularly mistaken for the original speaker in informal listening tests. The Starter plan at $6/month ($5/month billed annually) triples the monthly allowance to 30,000 credits and adds commercial use rights — one of the best value upgrades in the AI tools category. The main limitation is workflow: ElevenLabs is a pure voice generation and API tool. It does not record audio, edit timelines, or handle publishing. For end-to-end podcast or video production, pair it with Podcastle or Descript. For developers, the API is the most capable speech API available in 2026, with streaming, multi-voice projects, and dubbing endpoints. The free tier is generous enough to build and test a production integration before committing to a paid plan.',
   },
   {
     slug: 'jasper', name: 'Jasper', category: 'Writing',
     tagline: 'Enterprise AI content platform for marketing teams',
     description: 'Jasper is the leading AI writing platform for marketing teams. Create on-brand blog posts, ad copy, emails, and social content at scale — with brand voice controls that keep every output consistent.',
-    pricing: 'From $39/month', bestFor: 'Marketing teams & agencies',
+    pricing: 'From $59/month billed annually ($69 monthly)', bestFor: 'Marketing teams & agencies',
     rating: 4.3, lastTested: 'April 2026',
-    reviewBody: 'Jasper is the leading enterprise AI writing platform for marketing teams and agencies in 2026, built around the Brand Voice feature that trains the AI on a company tone, style guide, and terminology — producing on-brand output across every content type without lengthy per-session prompting. For teams where multiple writers produce content under a single brand voice, this consistency enforcement is the feature that justifies the premium pricing. The 50+ purpose-built marketing templates cover ad copy, email sequences, blog posts, product descriptions, landing pages, and social content — each template structured for the specific output format rather than requiring a general-purpose prompt. The Creator plan starts at $39/month (1 Brand Voice, 1 seat) and the Pro plan at $99/month supports 3 Brand Voices and 5 seats — the entry point for agency use. No permanent free plan is available; a 7-day free trial gives access to the full feature set. The main limitation is price: at $39/month, Jasper is approximately 2.4x the cost of Writesonic and more than 4x the cost of Rytr for comparable content generation output. For solo creators, freelancers, and small operations without a defined brand voice system, the premium is hard to justify. Jasper is specifically worth its price for marketing teams and agencies managing content production across multiple writers at scale, where the Brand Voice consistency feature delivers measurable value in reduced review cycles and brand compliance. For individual content creators, Writesonic at $16/month or Rytr at $9/month deliver comparable output at significantly lower cost.',
+    reviewBody: 'Jasper is the leading enterprise AI writing platform for marketing teams and agencies in 2026, built around the Brand Voice feature that trains the AI on a company tone, style guide, and terminology — producing on-brand output across every content type without lengthy per-session prompting. For teams where multiple writers produce content under a single brand voice, this consistency enforcement is the feature that justifies the premium pricing. The 50+ purpose-built marketing templates cover ad copy, email sequences, blog posts, product descriptions, landing pages, and social content — each template structured for the specific output format rather than requiring a general-purpose prompt. The Pro plan starts at $59/month billed annually ($69 billed monthly) with 1 seat and 2 Brand Voices, and the Business plan is custom-priced with unlimited Brand Voices — the entry point for agency use. No permanent free plan is available; a 7-day free trial gives access to the full feature set. The main limitation is price: at $59/month billed annually, Jasper costs several times more than Writesonic or Rytr for comparable content generation output. For solo creators, freelancers, and small operations without a defined brand voice system, the premium is hard to justify. Jasper is specifically worth its price for marketing teams and agencies managing content production across multiple writers at scale, where the Brand Voice consistency feature delivers measurable value in reduced review cycles and brand compliance. For individual content creators, Writesonic at $16/month or Rytr at $9/month deliver comparable output at significantly lower cost.',
   },
   {
     slug: 'descript', name: 'Descript', category: 'Audio',
     tagline: 'Edit audio and video by editing text — like a Google Doc',
     description: 'Descript is the most innovative audio and video editor available. Edit your recordings by editing a transcript — delete words on the page and the audio disappears. Includes AI voice clone, filler word removal, and studio-quality processing.',
-    pricing: 'Free + from $12/month', bestFor: 'Podcasters & video creators',
+    pricing: 'Free + from $16/month billed annually', bestFor: 'Podcasters & video creators',
     rating: 4.5, lastTested: 'April 2026',
-    reviewBody: 'Descript is the most distinctive audio and video editor in its category because of one core concept: you edit your recording by editing the transcript. Select a sentence in the text, press backspace, and the corresponding audio is removed. For podcasters and video creators who hate traditional waveform editing, this changes everything. The filler word removal feature strips every "um", "uh", and "you know" from a 45-minute recording in a single click — saving 20–30 minutes of manual editing on every episode. The Overdub voice cloning feature requires 10 minutes of training audio but once trained lets you type corrections that Descript renders in your cloned voice — seamlessly fixing stumbles without re-recording. The free plan limits you to 1 hour of transcription per month and adds a watermark to video exports; the Hobbyist plan at $12/month removes both restrictions and adds 4K export and filler word removal. The learning curve is steeper than Podcastle because the interface is built around a document paradigm rather than a timeline — creators who think in waveforms may find it counterintuitive at first. For anyone who already edits text faster than they edit audio, Descript is the most significant productivity upgrade in the category.',
+    reviewBody: 'Descript is the most distinctive audio and video editor in its category because of one core concept: you edit your recording by editing the transcript. Select a sentence in the text, press backspace, and the corresponding audio is removed. For podcasters and video creators who hate traditional waveform editing, this changes everything. The filler word removal feature strips every "um", "uh", and "you know" from a 45-minute recording in a single click — saving 20–30 minutes of manual editing on every episode. The Overdub voice cloning feature requires 10 minutes of training audio but once trained lets you type corrections that Descript renders in your cloned voice — seamlessly fixing stumbles without re-recording. The free plan limits you to 1 hour of transcription per month and adds a watermark to video exports; the Hobbyist plan at $16/month billed annually removes the watermark and raises the limit to 10 media hours per month. The learning curve is steeper than Podcastle because the interface is built around a document paradigm rather than a timeline — creators who think in waveforms may find it counterintuitive at first. For anyone who already edits text faster than they edit audio, Descript is the most significant productivity upgrade in the category.',
   },
   {
     slug: 'perplexity', name: 'Perplexity Pro', category: 'Productivity',
@@ -1292,7 +1314,7 @@ const TOOL_FAQS = {
   ],
   // W1-T2: ElevenLabs FAQs — enables FAQ rich results for "elevenlabs review" (1,600/mo)
   elevenlabs: [
-    { q: 'Is ElevenLabs free to use?', a: "Yes — ElevenLabs' free plan gives 10,000 characters per month (roughly 7–8 minutes of audio) with access to all pre-made voices. No credit card is required. The Starter plan at $5/month triples the limit and adds commercial use rights." },
+    { q: 'Is ElevenLabs free to use?', a: "Yes — ElevenLabs' free plan gives 10,000 credits per month (about 10,000 characters of standard text-to-speech, roughly 7–8 minutes of audio) with access to pre-made voices. The Starter plan at $6/month ($5/month billed annually) triples the monthly allowance to 30,000 credits and adds commercial use rights." },
     { q: 'How realistic are ElevenLabs voices?', a: "ElevenLabs consistently ranks as the most realistic AI voice generator available. In blind listening tests, the premium voices are regularly mistaken for real human recordings. The quality gap between ElevenLabs and other tools is significant — particularly for emotional range and natural pacing." },
     { q: 'How do I clone my own voice with ElevenLabs?', a: "Go to Voices → Add Voice → Instant Voice Clone. Upload a clean recording of yourself speaking naturally (no background noise); Instant Voice Cloning is included from the Starter plan. ElevenLabs creates a voice model you can use to generate any text. Professional Voice Clone on the Creator plan uses longer samples for even higher accuracy." },
     { q: 'Can I use ElevenLabs voices commercially?', a: "Commercial use requires the Starter plan ($5/month) or above. The free tier is for personal and non-commercial use only. All paid plans include a commercial licence for content monetised on YouTube, sold as products, or used in client work." },
@@ -1318,7 +1340,7 @@ const TOOL_FAQS = {
   // W2-T11: Murf AI FAQs — enables FAQ rich results for "murf ai review" (1,800/mo)
   'murf-ai': [
     { q: 'Is Murf AI free?', a: "Yes — Murf AI has a free plan that includes 10 minutes of voiceover per month with a watermark on exports. The free tier is sufficient for testing voice quality and the interface, but not for production or commercial use. Commercial-use voiceover without watermarks requires the Creator plan at $19/month." },
-    { q: 'Murf AI vs ElevenLabs — which is better?', a: "They excel in different areas. Murf AI is better for structured production workflows — it has a polished studio interface, video timeline sync, and 200+ studio-recorded voices ideal for eLearning and corporate narration. ElevenLabs is better for voice cloning (creating audio in a specific person's voice) and has a more generous free tier (10,000 characters/month vs Murf's 10 minutes). For professional studio-quality voiceovers, choose Murf. For custom voice cloning, choose ElevenLabs." },
+    { q: 'Murf AI vs ElevenLabs — which is better?', a: "They excel in different areas. Murf AI is better for structured production workflows — it has a polished studio interface, video timeline sync, and 200+ studio-recorded voices ideal for eLearning and corporate narration. ElevenLabs is better for voice cloning (creating audio in a specific person's voice) and has a more generous free tier (10,000 credits/month vs Murf's 10 minutes). For professional studio-quality voiceovers, choose Murf. For custom voice cloning, choose ElevenLabs." },
     { q: 'Can I use Murf AI for YouTube videos?', a: "Yes — the Creator plan ($19/month) includes commercial usage rights, which covers YouTube monetised content. You can generate narration for YouTube videos, sync it to your video timeline, and export for commercial use. The free plan is watermarked and cannot be used on monetised YouTube channels." },
     { q: 'What languages does Murf AI support?', a: "Murf AI supports 35+ languages including English (US, UK, Australian, and Indian accents), Hindi, Spanish, French, German, Italian, Portuguese, Arabic, Chinese, Japanese, and Korean. The Indian English accent quality is notably strong — one of the best available for creators targeting Indian audiences." },
   ],
@@ -1369,7 +1391,7 @@ const TOOL_FAQS = {
 
   writesonic: [
     { q: 'Is Writesonic free to use?', a: "Writesonic has a free plan that gives 25 one-click article generations and access to most templates with a word limit. No credit card is required. The paid plans start at $16/month for the Small plan, which lifts the word limit and adds the full Article Writer with SEO integration." },
-    { q: 'Writesonic vs Jasper — which is better?', a: "Writesonic is better value for most solo creators and freelancers — it delivers comparable output quality at less than half the price ($16/month vs Jasper's $39/month). Jasper wins on brand voice consistency and enterprise team features. For budget-conscious content creators, Writesonic is the smarter starting point." },
+    { q: 'Writesonic vs Jasper — which is better?', a: "Writesonic is better value for most solo creators and freelancers — it delivers comparable output quality at less than half the price ($16/month vs Jasper's $59/month billed annually). Jasper wins on brand voice consistency and enterprise team features. For budget-conscious content creators, Writesonic is the smarter starting point." },
     { q: 'Can Writesonic write full SEO blog posts?', a: "Yes — Writesonic's Article Writer generates 1,500–2,500 word SEO-optimised drafts with keyword integration, meta descriptions, and heading structure. It analyses competitor content and incorporates SEO best practices automatically. For long-form blog content at scale, this is one of Writesonic's strongest use cases." },
     { q: 'What is Chatsonic?', a: "Chatsonic is Writesonic's AI chatbot — similar to ChatGPT but with real-time web browsing enabled. It can research current topics, pull recent data, and generate content based on up-to-date information. This makes it particularly useful for news-driven content and topical blog posts that need current facts." },
     { q: 'Does Writesonic support languages other than English?', a: "Yes — Writesonic supports 25+ languages including Spanish, French, German, Hindi, Portuguese, Italian, and Dutch. The output quality in major European languages is solid. For non-English content at scale, Writesonic is one of the better-supported multilingual AI writing tools at this price point." },
@@ -1432,8 +1454,8 @@ const TOOL_FAQS = {
   ],
 
   jasper: [
-    { q: 'Is Jasper AI worth it in 2026?', a: "Jasper at $39/month is worth it specifically for content teams that need consistent brand voice across multiple writers. The Brand Voice feature trains Jasper on your style guide and company voice, producing on-brand content without lengthy prompting. For individual creators and freelancers who don't have a defined brand voice system, Writesonic at $16/month delivers comparable output at less than half the price." },
-    { q: 'Does Jasper AI have a free plan?', a: "No — Jasper does not offer a permanent free plan. It provides a 7-day free trial (no credit card for some trial versions) that gives access to the full feature set including Brand Voice, the document editor, and all templates. After the trial, the Creator plan is $39/month and the Pro plan (with Brand Voice for 3+ brand voices) is $99/month." },
+    { q: 'Is Jasper AI worth it in 2026?', a: "Jasper at $59/month billed annually is worth it specifically for content teams that need consistent brand voice across multiple writers. The Brand Voice feature trains Jasper on your style guide and company voice, producing on-brand content without lengthy prompting. For individual creators and freelancers who don't have a defined brand voice system, Writesonic at $16/month delivers comparable output at less than half the price." },
+    { q: 'Does Jasper AI have a free plan?', a: "No — Jasper does not offer a permanent free plan. It provides a 7-day free trial that lets you test the platform before paying. After the trial, the Pro plan is $59/month billed annually ($69 billed monthly) and the Business plan is custom-priced." },
     { q: 'Jasper AI vs ChatGPT — which is better for marketing?', a: "Jasper is better for structured marketing content creation within a defined brand voice — it has 50+ purpose-built marketing templates (ad copy, product descriptions, email sequences, blog posts) and the Brand Voice feature ensures consistency. ChatGPT is better for flexible, conversational tasks, research, and one-off content where brand consistency isn't the primary concern. For a dedicated content team, Jasper. For a solo creator or researcher, ChatGPT." },
     { q: 'What is Jasper Art?', a: "Jasper Art is Jasper's built-in AI image generation feature, powered by Stable Diffusion. It generates images from text prompts within the Jasper editor, allowing content creators to produce both written content and supporting visuals in one workflow. Available on the Creator and Pro plans. For dedicated image generation with more control, Leonardo.ai or Midjourney produce higher-quality outputs." },
     { q: 'Can Jasper write in languages other than English?', a: "Yes — Jasper supports 30+ languages including Spanish, French, German, Italian, Portuguese, Dutch, Japanese, and Hindi. The output quality in major European languages is strong. For non-English content at scale, verify the specific language quality during the free trial, as performance varies by language and content type." },
@@ -1922,10 +1944,10 @@ const COMPARE_ARTICLES = [
     seoTitle: 'Writesonic vs Jasper 2026 — Which AI Writer Wins?',
     metaDescription: 'Writesonic vs Jasper 2026: compared for content teams and solo creators. SEO features, pricing, and output quality compared side by side. Honest verdict.',
     faqs: [
-      { q: 'Is Writesonic cheaper than Jasper?', a: 'Yes. Writesonic starts at $16/month with SEO tools included. Jasper starts at $39/month (Creator) and $99/month (Pro). For solo creators, Writesonic delivers 80-90% of Jasper\'s output at less than half the price.' },
+      { q: 'Is Writesonic cheaper than Jasper?', a: 'Yes. Writesonic starts at $16/month with SEO tools included. Jasper starts at $59/month billed annually (Pro) and Business is custom-priced. For solo creators, Writesonic delivers 80-90% of Jasper\'s output at less than half the price.' },
       { q: 'Does Jasper have a free plan?', a: 'No. Jasper offers a 7-day free trial but no permanent free plan. Writesonic has a limited free plan with 25 generations per month.' },
       { q: 'Which is better for SEO content?', a: 'Writesonic has built-in SEO scoring and keyword optimisation in its Article Writer. Jasper requires Surfer SEO ($89/month extra) for equivalent SEO guidance. For budget-conscious SEO content, Writesonic wins.' },
-      { q: 'Is Jasper worth $39/month?', a: 'Only if brand voice consistency is critical — Jasper\'s Brand Voice feature and team collaboration tools are genuinely superior. For individual creators and small teams, Writesonic at $16/month is the smarter investment.' },
+      { q: 'Is Jasper worth $59/month?', a: 'Only if brand voice consistency is critical — Jasper\'s Brand Voice feature and team collaboration tools are genuinely superior. For individual creators and small teams, Writesonic at $16/month is the smarter investment.' },
     ],
   },
   // ── grammarly-vs-prowritingaid ────────────────────────────────────────────
@@ -2729,10 +2751,9 @@ function compareProductListSchema(compareSlug, canonical) {
       url: `${SITE}/tools/${tool.slug}/`,
       offers: {
         '@type': 'Offer',
-        price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
-        description: tool.pricing,
+        ...offerPriceFields(tool),
         url: `${SITE}/tools/${tool.slug}/`,
         // GSC Fix (June 2026): hasMerchantReturnPolicy required by Google Product schema validator.
         // SaaS/digital tools don't have physical returns — MerchantReturnNotPermitted is the
@@ -2839,10 +2860,9 @@ function reviewSchema(tool, canonical) {
       // FIX 3 (SEO-High): Proper Offer object (was plain string) — Google uses this for pricing in results
       offers: {
         '@type': 'Offer',
-        price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
-        description: tool.pricing,
+        ...offerPriceFields(tool),
         url: canonical,
         // GSC Fix (June 2026): hasMerchantReturnPolicy required by Google Product schema validator.
         hasMerchantReturnPolicy: {
@@ -3592,7 +3612,7 @@ const BLOG_POSTS = [
     },
     {
       q: 'Is there a free AI voiceover generator for testing before a client project?',
-      a: 'Both Murf AI and ElevenLabs offer free plans suitable for testing before committing. Murf\'s free plan gives 10 minutes of voiceover a month, enough to test a short ad script. ElevenLabs\' free plan gives 10,000 characters, useful for testing voice quality before you pay.',
+      a: 'Both Murf AI and ElevenLabs offer free plans suitable for testing before committing. Murf\'s free plan gives 10 minutes of voiceover a month, enough to test a short ad script. ElevenLabs\' free plan gives 10,000 credits, useful for testing voice quality before you pay.',
     },
     {
       q: 'Can I revise an AI voiceover after a client requests changes?',
@@ -3784,7 +3804,7 @@ const BLOG_POSTS = [
     faqs: [
     {
       q: 'What is the best AI voice generator for YouTube Shorts?',
-      a: 'ElevenLabs is the best fit for YouTube Shorts and other short-form content. Its free plan gives 10,000 characters a month, enough to test a week\'s worth of short scripts, and cloning keeps the voice consistent across dozens of uploads. Murf AI works too, but its video-sync strength matters less on videos under a minute.',
+      a: 'ElevenLabs is the best fit for YouTube Shorts and other short-form content. Its free plan gives 10,000 credits a month, enough to test a week\'s worth of short scripts, and cloning keeps the voice consistent across dozens of uploads. Murf AI works too, but its video-sync strength matters less on videos under a minute.',
     },
     {
       q: 'Can I use the same AI voice on every YouTube video for channel consistency?',
@@ -3796,7 +3816,7 @@ const BLOG_POSTS = [
     },
     {
       q: 'How much does an AI voice generator cost for a daily YouTube Shorts channel?',
-      a: 'For daily Shorts, expect to land on ElevenLabs\' Creator tier at $22/month once past initial testing, since the free plan\'s 10,000 characters get used up quickly across dozens of short scripts a month. The $5/month Starter tier can work for a lower-volume schedule of a few Shorts a week.',
+      a: 'For daily Shorts, expect to land on ElevenLabs\' Creator tier at $22/month once past initial testing, since the free plan\'s 10,000 credits get used up quickly across dozens of short scripts a month. The $6/month Starter tier can work for a lower-volume schedule of a few Shorts a week.',
     },
     {
       q: 'Do AI voice generators work well for faceless YouTube channels?',
@@ -3816,7 +3836,7 @@ const BLOG_POSTS = [
     },
     {
       q: 'What is the fastest way to test an AI voice generator before committing to a YouTube channel?',
-      a: 'Start with ElevenLabs\' free plan, which needs no credit card and gives 10,000 characters, enough to generate a handful of full scripts. Test the exact tone and pacing you\'d use on a real video before deciding whether to clone a voice or upgrade to a paid tier.',
+      a: 'Start with ElevenLabs\' free plan, which gives 10,000 credits, enough to generate a handful of full scripts. Test the exact tone and pacing you\'d use on a real video before deciding whether to clone a voice or upgrade to a paid tier.',
     },
     {
       q: 'Is a cloned AI voice better than a generic stock voice for YouTube?',
@@ -3838,7 +3858,7 @@ const BLOG_POSTS = [
     faqs: [
     {
       q: 'What is the best free alternative to Murf AI?',
-      a: 'ElevenLabs has the most usable free plan among true Murf alternatives, with 10,000 characters a month and no credit card required. Synthesia\'s free plan gives 10 minutes of watermarked video monthly, useful for testing the avatar feature. Speechify Studio\'s free tier is more limited and works best as a quick trial before upgrading.',
+      a: 'ElevenLabs has the most usable free plan among true Murf alternatives, with 10,000 credits a month. Synthesia\'s free plan gives 10 minutes of watermarked video monthly, useful for testing the avatar feature. Speechify Studio\'s free tier is more limited and works best as a quick trial before upgrading.',
     },
     {
       q: 'Is there a cheaper alternative to Murf AI?',
@@ -4779,8 +4799,8 @@ const BLOG_POSTS = [
     dateModified: '2026-05-10',
     readTimeMinutes: 7,
     faqs: [
-      { q: 'What is the best Jasper AI alternative?', a: "Writesonic is the best Jasper alternative for long-form blog content at $19/month vs Jasper's $39/month. For short-form writing, Rytr at $9/month unlimited is significantly cheaper. For SEO-specific content, Frase at $15/month offers SERP analysis that Jasper doesn't include." },
-      { q: 'Why are people looking for Jasper alternatives?', a: "The most common reasons are: (1) Jasper's pricing starts at $39/month — expensive for solo creators. (2) Jasper's output quality has been matched by newer, cheaper tools. (3) Jasper removed the free trial. (4) Many users only need specific features that cheaper tools cover better." },
+      { q: 'What is the best Jasper AI alternative?', a: "Writesonic is the best Jasper alternative for long-form blog content at $19/month vs Jasper's $59/month billed annually. For short-form writing, Rytr at $9/month unlimited is significantly cheaper. For SEO-specific content, Frase at $15/month offers SERP analysis that Jasper doesn't include." },
+      { q: 'Why are people looking for Jasper alternatives?', a: "The most common reasons are: (1) Jasper's pricing starts at $59/month billed annually — expensive for solo creators. (2) Jasper's output quality has been matched by newer, cheaper tools. (3) Jasper removed the free trial. (4) Many users only need specific features that cheaper tools cover better." },
       { q: 'Is Writesonic better than Jasper?', a: "For blog content creation, Writesonic matches Jasper's output quality at less than half the price. Jasper is better for enterprise teams needing brand voice training and team collaboration features. For individual creators and small teams, Writesonic is the better value." },
       { q: 'What is the cheapest Jasper alternative?', a: "Rytr at $9/month unlimited is the cheapest full-featured Jasper alternative. It covers 40+ use cases in 30+ languages. The free plan (10,000 characters/month) lets you test before paying. For enterprise features at a lower price, Writesonic at $16/month is the next step up." },
     ],
@@ -4957,14 +4977,14 @@ const BLOG_POSTS = [
     title: 'Best AI Writing Tools 2026 — Reviewed, Ranked & Compared',
     seoTitle: 'Best AI Writing Tools 2026: 6 Ranked by Use Case',
     metaDescription: '6 AI writing tools compared for 2026: Grammarly, Rytr, QuillBot, Writesonic, Jasper, and Frase ranked by use case, free plan quality, and real output.',
-    quickAnswer: 'The best AI writing tool in 2026 depends on your goal: Grammarly (free) for editing and improving existing text; Rytr ($9/mo) for generating drafts fast; QuillBot (free) for paraphrasing; Writesonic ($16/mo) for SEO blog posts; Frase ($15/mo) for SEO research + writing; Jasper ($39/mo) for brand-consistent team content. This guide compares all 6 on price, free plans, and output quality.',
+    quickAnswer: 'The best AI writing tool in 2026 depends on your goal: Grammarly (free) for editing and improving existing text; Rytr ($9/mo) for generating drafts fast; QuillBot (free) for paraphrasing; Writesonic ($16/mo) for SEO blog posts; Frase ($15/mo) for SEO research + writing; Jasper ($59/mo billed annually) for brand-consistent team content. This guide compares all 6 on price, free plans, and output quality.',
     datePublished: '2026-05-14',
     dateModified: '2026-05-14',
     readTimeMinutes: 10,
     faqs: [
-      { q: 'What is the best AI writing tool in 2026?', a: 'The best AI writing tool depends on your use case. For improving your own writing: Grammarly (free plan covers most needs). For generating first drafts: Rytr ($9/month) or Writesonic ($16/month). For paraphrasing and rewriting: QuillBot (free plan available). For SEO content with research: Frase ($15/month). For brand-consistent team content: Jasper ($39/month). There is no single best tool — the right answer is whichever one solves your specific bottleneck.' },
+      { q: 'What is the best AI writing tool in 2026?', a: 'The best AI writing tool depends on your use case. For improving your own writing: Grammarly (free plan covers most needs). For generating first drafts: Rytr ($9/month) or Writesonic ($16/month). For paraphrasing and rewriting: QuillBot (free plan available). For SEO content with research: Frase ($15/month). For brand-consistent team content: Jasper ($59/month billed annually). There is no single best tool — the right answer is whichever one solves your specific bottleneck.' },
       { q: 'Which AI writing tool has the best free plan?', a: 'Grammarly has the most useful free plan — unlimited grammar and spelling checks across every app you use, with no word limit. QuillBot\'s free plan is second-best for students who need paraphrasing (up to 125 words per pass) and summarising. Rytr offers 10,000 free characters per month for content generation. All three free plans are genuinely functional for regular use — not just trials.' },
-      { q: 'Is Jasper better than ChatGPT for writing?', a: 'Jasper is better than ChatGPT for marketing teams that need brand voice consistency across multiple writers — it remembers your tone, vocabulary, and style. ChatGPT is better for individuals who want general-purpose writing help at a lower cost ($20/month for ChatGPT Plus vs $39/month for Jasper Creator). For solo writers and freelancers, ChatGPT or Rytr deliver equivalent output quality at lower prices.' },
+      { q: 'Is Jasper better than ChatGPT for writing?', a: 'Jasper is better than ChatGPT for marketing teams that need brand voice consistency across multiple writers — it remembers your tone, vocabulary, and style. ChatGPT is better for individuals who want general-purpose writing help at a lower cost ($20/month for ChatGPT Plus vs $59/month billed annually for Jasper Pro). For solo writers and freelancers, ChatGPT or Rytr deliver equivalent output quality at lower prices.' },
       { q: 'Can AI writing tools replace human writers?', a: 'No. AI writing tools generate drafts, fix grammar, and speed up structured content production. They cannot replace original research, personal experience, domain expertise, creative strategy, or the editorial judgment that makes high-quality writing trustworthy. The writers most at risk are those producing entirely formulaic, template-driven content with no distinctive insight or voice.' },
       { q: 'What AI writing tool is best for SEO blog posts?', a: 'Frase ($15/month) is the best AI writing tool specifically for SEO blog posts because it combines content research (analysing the top 20 Google results for your keyword) with AI writing in one workflow. Writesonic ($16/month) is the strongest alternative for SEO long-form drafts without the research layer. Both produce more SEO-ready output than general-purpose tools like Rytr or ChatGPT.' },
     ],
@@ -6671,10 +6691,9 @@ for (const tool of TOOLS) {
       description: tool.description,
       offers: {
         '@type': 'Offer',
-        price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
-        description: tool.pricing,
+        ...offerPriceFields(tool),
       },
       // Only include aggregateRating if we have a real Trustpilot review count
       // (hardcoded '1' was suppressing rich results — looked fabricated to Google)
@@ -6725,6 +6744,9 @@ for (const tool of TOOLS) {
 
   // E-04 Audit Fix: Surface research sources visibly (Trustpilot/G2 counts from TRUSTPILOT_COUNTS)
   const reviewCount = TRUSTPILOT_COUNTS[tool.slug];
+  // Phase 2 (task 2.4): verified pricing lives in the verdict card; rendering it from here too would
+  // put a second, possibly stale, price next to it.
+  const verdictCardHtml = VERDICT_SSR.renderVerdictCardHtml(tool.slug);
   const researchSourcesHtml = reviewCount
     ? `<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;padding:12px 14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;font-size:.82rem">
         <span><strong>Rating:</strong> ${tool.rating}/5</span>
@@ -6733,7 +6755,7 @@ for (const tool of TOOLS) {
         <span>·</span>
         <span><strong>Last verified:</strong> ${esc(tool.lastTested || '2026')}</span>
       </div>`
-    : `<p style="font-size:.9rem;color:#555;margin-top:12px"><strong>Rating:</strong> ${tool.rating}/5 · <strong>Pricing:</strong> ${esc(tool.pricing || 'See website')}</p>`;
+    : `<p style="font-size:.9rem;color:#555;margin-top:12px"><strong>Rating:</strong> ${tool.rating}/5${verdictCardHtml ? '' : ` · <strong>Pricing:</strong> ${esc(tool.pricing || 'See website')}`}</p>`;
 
   // E-03 Audit Fix: Render updateLog as visible update history section
   const updateLogHtml = tool.updateLog?.length
@@ -6768,6 +6790,7 @@ for (const tool of TOOLS) {
     <p data-speakable="summary" style="font-size:1rem;line-height:1.6;color:#333">${esc(description)}</p>
     ${lastTestedHtml}
     ${methodologyBadgeHtml}
+    ${verdictCardHtml ? `<div style="margin-top:16px">${verdictCardHtml}</div>` : ''}
     ${quickAnswerHtml}
     <div data-speakable="verdict" style="margin-top:16px">
       <h2 style="font-size:1.2rem;margin-bottom:8px">Our Research</h2>
@@ -7925,7 +7948,7 @@ If you're starting from a blank page and need a finished video, InVideo's text-t
 
 Every review below includes documented sample outputs, export quality comparisons, and an honest verdict on whether the free plan is genuinely usable for production work.`,
 
-  'best-ai-audio-tools': `Podcastle is the best free AI audio tool for podcast creators in 2026 — 3 hours of free recording per month with AI noise removal, no credit card required. ElevenLabs is the stronger pick specifically for realistic AI voiceover and voice cloning.
+  'best-ai-audio-tools': `Podcastle is the best free AI audio tool for podcast creators in 2026 — a free plan with 1 hour of remote recording and AI noise removal. ElevenLabs is the stronger pick specifically for realistic AI voiceover and voice cloning.
 
 The best AI audio tools in 2026 cover two very different jobs: recording and editing podcasts, and generating AI voiceover or text-to-speech. Every tool on this page has been independently researched across official documentation, 100+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
 
@@ -7935,7 +7958,7 @@ We separated audio tools into two workflows rather than scoring them on one scal
 
 ### Answer → Context → Example
 
-Answer: ElevenLabs produces the most realistic AI voiceover among the tools tested. Context: its free tier generates 10,000 characters per month of speech, documented in <a href="https://elevenlabs.io/docs" target="_blank" rel="noopener noreferrer">ElevenLabs' official documentation</a>, with voice-cloning available on paid tiers. Example: a YouTuber narrating a script without recording their own voice gets output close enough to natural speech that listeners rarely notice it's AI-generated, unlike older robotic-sounding TTS tools.
+Answer: ElevenLabs produces the most realistic AI voiceover among the tools tested. Context: its free tier gives 10,000 credits per month of speech, documented in <a href="https://elevenlabs.io/docs" target="_blank" rel="noopener noreferrer">ElevenLabs' official documentation</a>, with voice-cloning available on paid tiers. Example: a YouTuber narrating a script without recording their own voice gets output close enough to natural speech that listeners rarely notice it's AI-generated, unlike older robotic-sounding TTS tools.
 
 ## For podcast creators
 
@@ -7943,7 +7966,7 @@ Podcastle's free plan includes 1 hour of remote recording (lifetime) and 10 AI c
 
 ## For voiceover and text-to-speech
 
-ElevenLabs' free tier generates 10,000 characters per month of speech across a wide voice library. Murf AI gives 10 minutes of free voiceover across 200+ voices and covers commercial voiceover workflows more directly than ElevenLabs' creator-focused pricing. The right choice depends on whether you need voice cloning (ElevenLabs), commercial licensing built in (Murf), or podcast recording and editing (Podcastle or Descript) — these aren't interchangeable tools solving the same problem.
+ElevenLabs' free tier gives 10,000 credits per month of speech across a voice library. Murf AI gives 10 minutes of free voiceover across 200+ voices and covers commercial voiceover workflows more directly than ElevenLabs' creator-focused pricing. The right choice depends on whether you need voice cloning (ElevenLabs), commercial licensing built in (Murf), or podcast recording and editing (Podcastle or Descript) — these aren't interchangeable tools solving the same problem.
 
 Every tool below has been researched against its official documentation and verified user reviews. Pricing is verified against live pricing pages as of May 2026.`,
 
@@ -8074,7 +8097,7 @@ const CATEGORY_FAQS = {
   ],
   'best-ai-audio-tools': [
     { q: 'What is the best free AI tool for podcast recording?', a: 'Podcastle offers the best free option for podcast creators — 3 hours of free recording per month with AI noise removal, and no credit card required to start.' },
-    { q: 'What is the best AI voice generator for realistic speech?', a: 'ElevenLabs produces the most realistic AI voiceover among widely used tools, with a free tier covering 10,000 characters per month and voice-cloning available on paid plans.' },
+    { q: 'What is the best AI voice generator for realistic speech?', a: 'ElevenLabs produces the most realistic AI voiceover among widely used tools, with a free tier covering 10,000 credits per month and voice-cloning available on paid plans.' },
     { q: 'Can I clone my own voice with AI?', a: 'Yes — ElevenLabs supports voice cloning on its paid tiers, letting you generate speech in your own voice from text input. This requires a paid plan; the free tier only includes its standard voice library.' },
     { q: 'What is Descript used for?', a: 'Descript lets you edit audio by editing a text transcript instead of a waveform, which makes podcast editing faster for creators who find traditional waveform editing unintuitive. Its free plan includes 1 hour of transcription-based editing.' },
     { q: 'Is Murf AI good for commercial voiceover work?', a: 'Yes — Murf AI is built specifically around commercial voiceover licensing, unlike ElevenLabs which is more creator-focused. If you need cleared commercial rights for ads or corporate videos, Murf is the more direct fit.' },
@@ -8122,7 +8145,7 @@ const CATEGORY_TAKEAWAYS = {
   ],
   'best-ai-audio-tools': [
     'Podcastle gives 3 hours of free podcast recording per month with AI noise removal, no credit card required.',
-    'ElevenLabs produces the most realistic AI voiceover, with a free tier covering 10,000 characters per month.',
+    'ElevenLabs produces the most realistic AI voiceover, with a free tier covering 10,000 credits per month.',
     'Murf AI covers commercial voiceover licensing more directly than ElevenLabs\' creator-focused pricing.',
   ],
   'best-ai-marketing-tools': [
@@ -8234,7 +8257,7 @@ const CATEGORY_PRICING = {
     { name: 'Writesonic', price: 'Free + $16/mo', bestFor: 'SEO blog posts at scale' },
     { name: 'Rytr', price: 'Free + $9/mo', bestFor: 'Budget short-form drafts' },
     { name: 'Quillbot', price: 'Free + $9.95/mo', bestFor: 'Paraphrasing and citations' },
-    { name: 'Jasper', price: 'From $39/mo', bestFor: 'Brand-voice marketing teams' },
+    { name: 'Jasper', price: 'From $59/mo', bestFor: 'Brand-voice marketing teams' },
   ],
   'best-ai-image-tools': [
     { name: 'Leonardo.ai', price: 'Free + $12/mo', bestFor: 'Daily volume with commercial rights' },
@@ -8255,7 +8278,7 @@ const CATEGORY_PRICING = {
   'best-ai-marketing-tools': [
     { name: 'Ocoya', price: 'From $15/mo', bestFor: 'Social captions plus scheduling in one tool' },
     { name: 'Frase', price: 'From $15/mo', bestFor: 'SEO-focused content briefs' },
-    { name: 'Jasper', price: 'From $39/mo', bestFor: 'Multi-brand content teams' },
+    { name: 'Jasper', price: 'From $59/mo', bestFor: 'Multi-brand content teams' },
   ],
   'best-ai-design-tools': [
     { name: 'Gamma', price: 'Free + $8/mo', bestFor: 'Presentations from a single prompt' },

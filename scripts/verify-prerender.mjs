@@ -1,8 +1,9 @@
 // scripts/verify-prerender.mjs
 // Verifies all URLs in sitemap.xml have corresponding prerendered HTML files in dist/.
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, existsSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { loadVerdictSsr } from './verdict-ssr-loader.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -48,6 +49,52 @@ console.log(`\n✅  Prerender verification complete`);
 console.log(`   Checked : ${urls.length} URLs`);
 console.log(`   Passing : ${pass}`);
 console.log(`   Missing : ${fail}`);
+
+// ── Phase 2 (task 2.4): verdict card parity ───────────────────────────────────
+// Every tool page where the live site shows the verdict card must contain the card
+// byte for byte (same component, same data). Every other tool page must not contain it.
+// Also: a tool with verified facts must never publish schema price 0 unless a free plan is verified.
+const ssr = await loadVerdictSsr();
+const expectedSlugs = new Set(ssr.verdictCardSlugs());
+const cardProblems = [];
+const toolsDir = join(DIST, 'tools');
+const toolSlugs = existsSync(toolsDir)
+  ? readdirSync(toolsDir, { withFileTypes: true }).filter(d => d.isDirectory()).map(d => d.name)
+  : [];
+
+for (const slug of toolSlugs) {
+  const file = join(toolsDir, slug, 'index.html');
+  if (!existsSync(file)) continue;
+  const html = readFileSync(file, 'utf8');
+  const hasCard = html.includes(`data-verdict-card="${slug}"`);
+  if (expectedSlugs.has(slug)) {
+    const expected = ssr.renderVerdictCardHtml(slug);
+    if (!hasCard) cardProblems.push(`${slug}: verdict card missing from prerendered HTML`);
+    else if (!html.includes(expected)) cardProblems.push(`${slug}: verdict card differs from the live component output`);
+    if (!html.includes('Prices verified')) cardProblems.push(`${slug}: "Prices verified" date line missing`);
+    const offer = ssr.verifiedOffer(slug);
+    if (offer && offer.price !== null && !new RegExp(`"price"\\s*:\\s*"${offer.price}"`).test(html)) {
+      cardProblems.push(`${slug}: JSON-LD price is not ${offer.price} (from verified facts)`);
+    }
+    if (offer && offer.price !== '0' && /"price"\s*:\s*"0"/.test(html)) {
+      cardProblems.push(`${slug}: JSON-LD still says price 0 but there is no verified free plan`);
+    }
+  } else if (hasCard) {
+    cardProblems.push(`${slug}: has a verdict card in HTML but the live page would not show one`);
+  }
+}
+for (const slug of expectedSlugs) {
+  if (!toolSlugs.includes(slug)) cardProblems.push(`${slug}: no prerendered tool page found`);
+}
+
+console.log(`\n   Verdict cards expected : ${expectedSlugs.size}`);
+console.log(`   Verdict card problems  : ${cardProblems.length}`);
+
+if (cardProblems.length > 0) {
+  console.log('\n❌  Verdict card parity failures:');
+  for (const msg of cardProblems) console.log(`   ${msg}`);
+  process.exit(1);
+}
 
 if (failures.length > 0) {
   console.log('\n❌  Missing prerendered files:');

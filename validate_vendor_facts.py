@@ -283,7 +283,7 @@ UNVERIFIED_RULES = [
 
 
 def scan_site_copy():
-    files = [ROOT / "constants.ts", ROOT / "public" / "llms.txt", ROOT / "public" / "llms-full.txt"]
+    files = [ROOT / "constants.ts", ROOT / "scripts" / "prerender.mjs", ROOT / "public" / "llms.txt", ROOT / "public" / "llms-full.txt"]
     for sub in ("pages", "blog"):
         d = ROOT / sub
         if d.is_dir():
