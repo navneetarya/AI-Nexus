@@ -125,7 +125,6 @@ const post: BlogPost = {
 <h2>What Is Perplexity, and How Does It Work?</h2>
 <p>Perplexity is an AI-powered search engine. You type a question, and instead of returning a ranked list of links, it searches the web in real time, reads the relevant pages, and synthesises the information. It returns a direct answer with inline citations showing exactly which sources it used.</p>
 <p>The key difference from Google is the last step: Perplexity does the reading for you. A Google search for "best noise-cancelling headphones under $200 in 2026" returns 10 links you have to open and read.</p>
-<p>Perplexity returns a structured comparison table with the top options, pricing, pros and cons, and links to each source, in about 3 seconds.</p>
 <p>This sounds like Google's AI Overviews, and the surface-level experience is similar. The difference is depth. Perplexity's citations are more granular, and its follow-up question feature lets you drill deeper without starting a new search. Pro Search with GPT-4o or Claude 3.5 handles complex reasoning tasks that Google's AI Overviews cannot.</p>
 
 <div style="background:rgba(217,119,6,.08);border-left:4px solid #d97706;padding:14px 18px;border-radius:8px;margin:20px 0;">

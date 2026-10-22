@@ -174,6 +174,16 @@ export function SharedNav({
     navigate('/pricing-tracker');
   };
 
+  const handleFindTool = () => {
+    closeMobile();
+    navigate('/find-ai-tool');
+  };
+
+  const handleVoiceCalculator = () => {
+    closeMobile();
+    navigate('/calculators/voice-cost');
+  };
+
   const handleMethodology = () => {
     closeMobile();
     navigate('/methodology');
@@ -409,6 +419,21 @@ export function SharedNav({
               Pricing
             </button>
 
+            <button
+              className="shared-nav-btn"
+              onClick={handleFindTool}
+              style={{
+                fontSize: 13, fontWeight: 700,
+                color: C.a1,
+                padding: '7px 13px', borderRadius: 8,
+                background: C.a1card,
+                border: `1px solid ${C.a1brd}`, cursor: 'pointer',
+                fontFamily: "'Inter', system-ui, sans-serif",
+              }}
+            >
+              Find My Tool
+            </button>
+
             {/* How I Review — trust signal in nav */}
             <button
               className="shared-nav-btn"
@@ -499,6 +524,8 @@ export function SharedNav({
               { label: 'Best AI Tools for Freelancers', fn: () => { closeMobile(); navigate('/best-ai-tools-for-freelancers'); } },
               { label: 'Glossary',   fn: handleGlossary },
               { label: 'AI Tool Pricing', fn: handlePricing },
+              { label: 'Find My AI Tool', fn: handleFindTool },
+              { label: 'Voice Cost Calculator', fn: handleVoiceCalculator },
               { label: 'How I Review', fn: handleMethodology },
               { label: 'Privacy Policy', fn: () => { closeMobile(); navigate('/privacy'); } },
             ].map(({ label, fn }) => (

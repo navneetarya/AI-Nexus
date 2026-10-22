@@ -7,6 +7,8 @@ import { BLOG_POSTS_META } from '../blog/metadata';
 import ANSWER_BLOCKS from '../blog/answer-blocks.json';
 import { SITE_CONFIG, TOOLS } from '../constants';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
+import { VerdictCard } from '../components/VerdictCard';
+import { parseVerdictTokens, verdictDataForSlug } from '../lib/blog-verdict-token';
 import {
   trackAffiliateClick,
   trackAffiliateClickOnElement,
@@ -315,6 +317,37 @@ const C = {
   brdSm:  'var(--brd-sm)'
 };
 
+export function TokenizedBlogContent({
+  html,
+  navigate,
+  onClick,
+}: {
+  html: string;
+  navigate: (to: string) => void;
+  onClick: (e: React.MouseEvent<HTMLDivElement>) => void;
+}) {
+  return (
+    <>
+      {parseVerdictTokens(html).map((segment, index) => {
+        if (segment.type === 'verdict') {
+          const { facts, affiliateLink } = verdictDataForSlug(segment.value);
+          return <React.Fragment key={`verdict-${index}`}><VerdictCard facts={facts} affiliateLink={affiliateLink} navigate={navigate} /></React.Fragment>;
+        }
+        if (!segment.value) return null;
+        return (
+          <div
+            key={`html-${index}`}
+            style={{ color: C.txt, lineHeight: 1.75, fontSize: 16 }}
+            className="blog-content"
+            onClick={onClick}
+            dangerouslySetInnerHTML={{ __html: segment.value }}
+          />
+        );
+      })}
+    </>
+  );
+}
+
 export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPageProps) {
   // Phase 5: curated direct-answer block + 'last verified' date (blog/answer-blocks.json)
   const answerBlock = (ANSWER_BLOCKS as Record<string, any>)[post.slug] as { answer?: string; verified?: string | null; cta?: { tool: string; label: string } } | undefined;
@@ -354,7 +387,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
       return out;
     });
     return { tocItems: toc, linkedContent: html };
-  }, [post.slug]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [post.slug, post.content]);
   // Bounce-audit fix: Pros & Cons should sit directly after the comparison table —
   // the point where a reader actually forms a decision — instead of always at the
   // bottom of the article. Split the rendered content right after the first
@@ -732,12 +765,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
 
         {/* Article content — part 1: everything up to (and including) the first
             comparison table, if the post has one. */}
-        <div
-          style={{ color: C.txt, lineHeight: 1.75, fontSize: 16 }}
-          className="blog-content"
-          onClick={handleContentClick}
-          dangerouslySetInnerHTML={{ __html: contentBeforeTable }}
-        />
+        <TokenizedBlogContent html={contentBeforeTable} navigate={navigate} onClick={handleContentClick} />
 
         {/* T5 (EEAT-High): Pros/Cons table ─────────────────────────────────────
             Renders only when post.proscons is populated. Two-column green/red card
@@ -820,12 +848,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
         {/* Article content — part 2: everything after the comparison table.
             Empty when the post has no table, so this is a no-op for those posts. */}
         {contentAfterTable && (
-          <div
-            style={{ color: C.txt, lineHeight: 1.75, fontSize: 16 }}
-            className="blog-content"
-            onClick={handleContentClick}
-            dangerouslySetInnerHTML={{ __html: contentAfterTable }}
-          />
+          <TokenizedBlogContent html={contentAfterTable} navigate={navigate} onClick={handleContentClick} />
         )}
 
         {/* T7 (EEAT-Medium): Sources section ──────────────────────────────────

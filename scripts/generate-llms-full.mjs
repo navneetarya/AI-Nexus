@@ -1102,6 +1102,18 @@ function pricingTrackerLines() {
   return lines;
 }
 
+function calculatorLines() {
+  return [
+    `---`,
+    `# SECTION: CALCULATORS`,
+    `Page: https://ainexustools.online/calculators/voice-cost/`,
+    `Compare published ElevenLabs and Murf voice-plan pricing for monthly character volume, commercial use, voice cloning, and billing period.`,
+    `Page: https://ainexustools.online/find-ai-tool/`,
+    `Match a workflow and budget to currently verified tool facts without ranking by affiliate status.`,
+    ``,
+  ];
+}
+
 // ─── Generator ─────────────────────────────────────────────────────────────────
 
 function generateLlmsFullTxt() {
@@ -1160,6 +1172,7 @@ function generateLlmsFullTxt() {
 
   // ── Pricing tracker ──
   lines.push(...pricingTrackerLines());
+  lines.push(...calculatorLines());
 
   // ── Metadata ──
   lines.push(`---`);

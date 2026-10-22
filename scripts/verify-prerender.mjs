@@ -112,6 +112,19 @@ for (const slug of expectedCompare) {
   if (!compareSlugs.includes(slug)) cardProblems.push(`compare/${slug}: no prerendered compare page found`);
 }
 
+// ── Phase 7: blog verdict-token parity ───────────────────────────────────────
+const blogTokenProblems = [];
+const blogDir = join(DIST, 'blog');
+if (existsSync(blogDir)) {
+  for (const entry of readdirSync(blogDir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const file = join(blogDir, entry.name, 'index.html');
+    if (!existsSync(file)) continue;
+    const html = readFileSync(file, 'utf8');
+    if (html.includes('{{verdict:')) blogTokenProblems.push(`${entry.name}: unresolved verdict token`);
+  }
+}
+
 // ── Phase 4 (task 4.5): pricing tracker parity ────────────────────────────────
 {
   const file = join(DIST, 'pricing-tracker', 'index.html');
@@ -123,13 +136,42 @@ for (const slug of expectedCompare) {
   }
 }
 
+// ── Phase 5 (task 5.7): voice calculator parity ──────────────────────────────
+{
+  const file = join(DIST, 'calculators', 'voice-cost', 'index.html');
+  if (!existsSync(file)) cardProblems.push('calculators/voice-cost: no prerendered page found');
+  else {
+    const html = readFileSync(file, 'utf8');
+    if (!html.includes('data-voice-calculator')) cardProblems.push('calculators/voice-cost: calculator markup missing from prerendered HTML');
+    if (!readFileSync(SITEMAP, 'utf8').includes('/calculators/voice-cost/</loc>')) cardProblems.push('calculators/voice-cost: missing from sitemap.xml');
+  }
+}
+
+// ── Phase 6 (task 6.9): matcher parity ────────────────────────────────────────
+{
+  const file = join(DIST, 'find-ai-tool', 'index.html');
+  if (!existsSync(file)) cardProblems.push('find-ai-tool: no prerendered page found');
+  else {
+    const html = readFileSync(file, 'utf8');
+    if (!html.includes('data-tool-matcher')) cardProblems.push('find-ai-tool: matcher markup missing from prerendered HTML');
+    if (!readFileSync(SITEMAP, 'utf8').includes('/find-ai-tool/</loc>')) cardProblems.push('find-ai-tool: missing from sitemap.xml');
+  }
+}
+
 console.log(`\n   Verdict cards expected : ${expectedSlugs.size}`);
 console.log(`   Compare cards expected : ${expectedCompare.size}`);
 console.log(`   Card parity problems   : ${cardProblems.length}`);
+console.log(`   Blog token problems     : ${blogTokenProblems.length}`);
 
 if (cardProblems.length > 0) {
   console.log('\n❌  Card parity failures:');
   for (const msg of cardProblems) console.log(`   ${msg}`);
+  process.exit(1);
+}
+
+if (blogTokenProblems.length > 0) {
+  console.log('\n❌  Blog verdict-token failures:');
+  for (const msg of blogTokenProblems) console.log(`   ${msg}`);
   process.exit(1);
 }
 

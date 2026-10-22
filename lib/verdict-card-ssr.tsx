@@ -23,6 +23,9 @@ import { CompareCard, compareCardPropsFor } from '../components/CompareCard';
 import { TOOLS } from '../constants';
 import { COMPARE_ARTICLES } from '../pages/compare-data';
 import { PricingTrackerBody } from '../pages/PricingTrackerPage';
+import { VoiceCalculator } from '../components/VoiceCalculator';
+import { MatcherBody } from '../pages/MatcherPage';
+import { AFFILIATE_LINKS } from './affiliate-links';
 import { PRICING_SNAPSHOT } from './pricing-data';
 import { cheapestPaidPlan, getVerifiedFacts, startsAtLabel, freePlanLabel } from './vendor-facts';
 
@@ -108,4 +111,18 @@ export function renderPricingTrackerHtml(): string {
 /** Date of the snapshot the tracker shows (YYYY-MM-DD), used for the sitemap and "Updated" line. */
 export function pricingSnapshotISO(): string {
   return PRICING_SNAPSHOT.snapshotISO;
+}
+
+/** The calculator's deterministic default state, using the same component as the live page. */
+export function renderVoiceCalculatorHtml(): string {
+  return renderToStaticMarkup(
+    <VoiceCalculator
+      affiliateLinks={{ elevenlabs: AFFILIATE_LINKS.elevenlabs, 'murf-ai': AFFILIATE_LINKS['murf-ai'] }}
+    />,
+  );
+}
+
+/** The matcher's deterministic default state, using the same body as the live page. */
+export function renderMatcherHtml(): string {
+  return renderToStaticMarkup(<MatcherBody />);
 }

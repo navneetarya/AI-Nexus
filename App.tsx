@@ -42,6 +42,8 @@ const GlossaryPage       = React.lazy(() => import('./pages/GlossaryPage').then(
 const EditorialPolicyPage = React.lazy(() => import('./pages/EditorialPolicyPage').then(m => ({ default: m.EditorialPolicyPage })));
 const HowWeAnalyzePage    = React.lazy(() => import('./pages/HowWeAnalyzePage').then(m => ({ default: m.HowWeAnalyzePage })));
 const PricingTrackerPage  = React.lazy(() => import('./pages/PricingTrackerPage').then(m => ({ default: m.PricingTrackerPage })));
+const VoiceCalculatorPage = React.lazy(() => import('./pages/VoiceCalculatorPage').then(m => ({ default: m.VoiceCalculatorPage })));
+const MatcherPage         = React.lazy(() => import('./pages/MatcherPage').then(m => ({ default: m.MatcherPage })));
 const ContactPage         = React.lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
 
 // ── Minimal loading fallback — avoids layout shift during chunk load ─────────
@@ -465,6 +467,32 @@ function App() {
     return (
       <Suspense fallback={<PageLoader />}>
         <PricingTrackerPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/calculators/voice-cost') {
+    updateMeta(
+      'Voice Cost Calculator: ElevenLabs vs Murf | AI Nexus',
+      'Compare ElevenLabs and Murf voice pricing for your monthly character volume, commercial use, voice cloning needs, and billing period.',
+      `${SITE_CONFIG.siteUrl}/calculators/voice-cost/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <VoiceCalculatorPage navigate={navigate} {...themeProps} />
+      </Suspense>
+    );
+  }
+
+  if (path === '/find-ai-tool') {
+    updateMeta(
+      'Find an AI Tool for Your Workflow | AI Nexus',
+      'Answer three questions and compare AI tools using verified pricing, plan, and capability facts from AI Nexus.',
+      `${SITE_CONFIG.siteUrl}/find-ai-tool/`
+    );
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <MatcherPage navigate={navigate} {...themeProps} />
       </Suspense>
     );
   }

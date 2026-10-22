@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { ArrowDown, ArrowUp, ArrowUpDown } from 'lucide-react';
-import { SharedNav } from './SharedNav';
+import { SharedNav } from '../pages/SharedNav';
 import { PricingTrackerNotes } from '../components/PricingTrackerNotes';
 import {
   PRICING_SNAPSHOT, PRICING_HISTORY, recentChanges, sortTools, categoriesOf,

@@ -1906,6 +1906,13 @@ Plans: Free: $0, 10 AI credits (one-time) | Essentials: $19.99/month billed mont
 Source: https://async.com/pricing
 
 ---
+# SECTION: CALCULATORS
+Page: https://ainexustools.online/calculators/voice-cost/
+Compare published ElevenLabs and Murf voice-plan pricing for monthly character volume, commercial use, voice cloning, and billing period.
+Page: https://ainexustools.online/find-ai-tool/
+Match a workflow and budget to currently verified tool facts without ranking by affiliate status.
+
+---
 # SITE METADATA
 Site: AI Nexus | https://ainexustools.online
 Author: Navneet Arya

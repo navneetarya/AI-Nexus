@@ -104,6 +104,8 @@ const STABLE_FALLBACK_DATE = '2026-05-01';
 const PAGE_LAST_UPDATED = {
   // Phase 4: the pricing tracker's date is its snapshot date (data/pricing/latest.json), never the build date.
   pricingTracker: (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'pricing', 'latest.json'), 'utf8')).snapshotISO; } catch { return '2026-10-22'; } })(),
+  voiceCalculator: '2026-10-22',
+  matcher: '2026-10-22',
   home:        '2026-09-20',
   about:       '2026-09-20',
   methodology: '2026-09-20',
@@ -128,6 +130,14 @@ const COMPARE_LAST_UPDATED = (() => {
 function monthLabelToISO(label) {
   const parts = String(label || '').split(' ');
   return parts.length === 2 && MONTH_NUMBERS[parts[0]] ? `${parts[1]}-${MONTH_NUMBERS[parts[0]]}-01` : STABLE_FALLBACK_DATE;
+}
+
+function replaceBlogVerdictTokens(html, postSlug) {
+  return html.replace(/\{\{verdict:([a-z0-9-]+)\}\}/g, (_, toolSlug) => {
+    const card = VERDICT_SSR.renderVerdictCardHtml(toolSlug);
+    if (!card) throw new Error(`[prerender] invalid verdict token '${toolSlug}' in blog post '${postSlug}'`);
+    return card;
+  });
 }
 
 // Task 7: Per-tool last-modified dates — used for sitemap <lastmod> on tool pages
@@ -3054,6 +3064,8 @@ function generateSitemap() {
   blocks.push(urlBlock({ loc: `${SITE}/disclosure/`,        priority: '0.3', freq: 'yearly',  mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/methodology/`,       priority: '0.7', freq: 'monthly', mod: PAGE_LAST_UPDATED.methodology }));
   blocks.push(urlBlock({ loc: `${SITE}/pricing-tracker/`,    priority: '0.8', freq: 'monthly', mod: PAGE_LAST_UPDATED.pricingTracker }));
+  blocks.push(urlBlock({ loc: `${SITE}/calculators/voice-cost/`, priority: '0.8', freq: 'monthly', mod: PAGE_LAST_UPDATED.voiceCalculator }));
+  blocks.push(urlBlock({ loc: `${SITE}/find-ai-tool/`, priority: '0.8', freq: 'monthly', mod: PAGE_LAST_UPDATED.matcher }));
   blocks.push(urlBlock({ loc: `${SITE}/editorial-policy/`,  priority: '0.4', freq: 'yearly',  mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/how-we-analyze-ai-tools/`, priority: '0.5', freq: 'yearly', mod: '2026-05-01' }));
   blocks.push(urlBlock({ loc: `${SITE}/glossary/`,          priority: '0.8', freq: 'monthly', mod: STABLE_FALLBACK_DATE }));
@@ -7117,6 +7129,40 @@ function pricingDatasetSchema(canonical) {
   }));
 }
 
+// ── Phase 5 (task 5.7): Voice cost calculator ────────────────────────────────
+{
+  const canonical = `${SITE}/calculators/voice-cost/`;
+  const title = 'Voice Cost Calculator: ElevenLabs vs Murf | AI Nexus';
+  const description = 'Compare ElevenLabs and Murf voice pricing for your monthly character volume, commercial use, voice cloning needs, and billing period.';
+  const calculatorBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333;max-width:720px">Estimate which published plan fits your monthly voice workload. The calculator shows its assumptions and links to each vendor&apos;s official pricing page.</p>
+    ${VERDICT_SSR.renderVoiceCalculatorHtml()}
+  `;
+  writeRoute('calculators/voice-cost', buildPage(template, {
+    title, description, canonical,
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Voice Cost Calculator', canonical]]), AUTHOR_PERSON],
+    datePublished: '2026-10-22', dateModified: PAGE_LAST_UPDATED.voiceCalculator,
+    bodyHtml: calculatorBodyHtml,
+  }));
+}
+
+// ── Phase 6 (task 6.9): verified-facts matcher ───────────────────────────────
+{
+  const canonical = `${SITE}/find-ai-tool/`;
+  const title = 'Find an AI Tool for Your Workflow | AI Nexus';
+  const description = 'Answer three questions and compare AI tools using verified pricing, plan, and capability facts from AI Nexus.';
+  const matcherBodyHtml = `
+    <p style="font-size:1rem;line-height:1.7;color:#333;max-width:720px">Answer three questions and get up to three recommendations from the currently verified facts dataset.</p>
+    ${VERDICT_SSR.renderMatcherHtml()}
+  `;
+  writeRoute('find-ai-tool', buildPage(template, {
+    title, description, canonical,
+    schemas: [breadcrumbs([[1, 'AI Nexus', SITE], [2, 'Find an AI Tool', canonical]]), AUTHOR_PERSON],
+    datePublished: '2026-10-22', dateModified: PAGE_LAST_UPDATED.matcher,
+    bodyHtml: matcherBodyHtml,
+  }));
+}
+
 // ── Editorial Policy page ─────────────────────────────────────────────────────
 {
   const canonical = `${SITE}/editorial-policy/`;
@@ -7498,6 +7544,7 @@ for (const post of BLOG_POSTS) {
   // schemas array is assembled. The variable continues to be used below for
   // CTA injection and body HTML — behaviour is unchanged.
   let blogContent = loadBlogContent(post.slug);
+  blogContent = replaceBlogVerdictTokens(blogContent, post.slug);
   const schemas = [
     {
       '@context': 'https://schema.org',
@@ -9332,6 +9379,8 @@ function generateLlmsTxt() {
     '',
     `- [AI Tool Pricing Tracker](${SITE}/pricing-tracker/): Verified prices for ${PRICING_TOOL_COUNT} AI tools, each checked against the vendor's own pricing page. Snapshot dated ${PAGE_LAST_UPDATED.pricingTracker}. A missing value means not verified, not "no".`,
     `- [Pricing data (JSON)](${SITE}/data/ai-tool-pricing.json): Same data as machine-readable JSON, with change log and corrections.`,
+    `- [Voice Cost Calculator](${SITE}/calculators/voice-cost/): Compare published ElevenLabs and Murf voice-plan pricing for a monthly voice workload.`,
+    `- [Find an AI Tool](${SITE}/find-ai-tool/): Match a workflow and budget to currently verified tool facts.`,
     '',
     '## Site Policy',
     '',
