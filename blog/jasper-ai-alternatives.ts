@@ -78,6 +78,7 @@ const post: BlogPost = {
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
+{{verdict:jasper}}
 <h2>What Are the Best Jasper AI Alternatives in 2026?</h2>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A data reporting dashboard shown on a laptop screen" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" />
 <p>The best Jasper AI alternatives in 2026 are four. Writesonic for long-form SEO content if you can pay more than Jasper's $59/month billed annually ($69 monthly). Rytr for short-form copy at $9/month. Copy.ai if you want a genuinely usable free plan. And Frase if SEO research and writing need to happen in the same tool.</p>

@@ -79,6 +79,7 @@ const post: BlogPost = {
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best InVideo AI alternatives in 2026 for faceless YouTube creators: choose <strong>Pictory</strong> (from $15/month, per vendor pricing as of October 2026) to turn blog posts or scripts into faceless videos, pick <strong>Opus Clip</strong> (free plan, 60 minutes a month) for short-form clips for TikTok and Reels, or use <strong>Murf AI</strong> (Creator from $22/month billed yearly) if voiceover quality is your only complaint.</p>
 </div>
+{{verdict:pictory}}
 
 <h2>What Are the Best InVideo AI Alternatives in 2026?</h2>
 <div style="margin:14px 0 24px;">

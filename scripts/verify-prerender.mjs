@@ -115,6 +115,28 @@ for (const slug of expectedCompare) {
 // ── Phase 7: blog verdict-token parity ───────────────────────────────────────
 const blogTokenProblems = [];
 const blogDir = join(DIST, 'blog');
+const blogSourceDir = join(ROOT, 'blog');
+const sourceBlogTokens = [];
+if (existsSync(blogSourceDir)) {
+  for (const entry of readdirSync(blogSourceDir, { withFileTypes: true })) {
+    if (!entry.isFile() || !entry.name.endsWith('.ts')) continue;
+    const source = readFileSync(join(blogSourceDir, entry.name), 'utf8');
+    for (const match of source.matchAll(/\{\{verdict:([a-z0-9-]+)\}\}/g)) {
+      sourceBlogTokens.push({ postSlug: entry.name.replace(/\.ts$/, ''), toolSlug: match[1] });
+    }
+  }
+}
+for (const { postSlug, toolSlug } of sourceBlogTokens) {
+  const file = join(blogDir, postSlug, 'index.html');
+  if (!existsSync(file)) {
+    blogTokenProblems.push(`${postSlug}: no prerendered page for verdict token`);
+    continue;
+  }
+  const html = readFileSync(file, 'utf8');
+  const expected = ssr.renderVerdictCardHtml(toolSlug);
+  if (!expected) blogTokenProblems.push(`${postSlug}: token ${toolSlug} has no valid SSR card`);
+  else if (!html.includes(expected)) blogTokenProblems.push(`${postSlug}: token ${toolSlug} card differs from SSR output`);
+}
 if (existsSync(blogDir)) {
   for (const entry of readdirSync(blogDir, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
@@ -162,6 +184,7 @@ console.log(`\n   Verdict cards expected : ${expectedSlugs.size}`);
 console.log(`   Compare cards expected : ${expectedCompare.size}`);
 console.log(`   Card parity problems   : ${cardProblems.length}`);
 console.log(`   Blog token problems     : ${blogTokenProblems.length}`);
+console.log(`   Blog verdict tokens     : ${sourceBlogTokens.length}`);
 
 if (cardProblems.length > 0) {
   console.log('\n❌  Card parity failures:');

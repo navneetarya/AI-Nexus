@@ -36,6 +36,7 @@ const post: BlogPost = {
 
   content: `
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">Read our disclosure</a>.</em></p>
+{{verdict:elevenlabs}}
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="YouTube Studio dashboard on a laptop screen, representing content monetization and policy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <div style="background:rgba(217,119,6,.08);border-left:4px solid #d97706;padding:14px 18px;border-radius:8px;margin:20px 0;"><strong style="color:#d97706;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Policy warning</strong><p style="margin:8px 0 0;line-height:1.6;">ElevenLabs controls commercial rights. YouTube controls altered-content disclosure. Check both rulebooks before publishing.</p></div>
