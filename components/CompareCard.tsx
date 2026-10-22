@@ -77,6 +77,36 @@ export interface CompareCardProps {
   navigate?: (to: string) => void;
 }
 
+/** The article fields the card needs. CompareArticle satisfies this. */
+export interface CompareCardArticle {
+  toolSlugs?: [string, string];
+  winnerSlug: string;
+  winnerAffiliateLink: string;
+}
+
+/**
+ * THE ONE RULE for whether a compare page shows the card, and with what props.
+ * Used by pages/CompareArticlePage.tsx (live page) and lib/verdict-card-ssr.tsx
+ * (prerender), so crawlers and readers can never see different cards.
+ * Returns null when the page must not show a card.
+ *
+ * @param winnerHasToolPage true when /tools/<winnerSlug>/ exists (shows the "full review" text link)
+ */
+export function compareCardPropsFor(
+  article: CompareCardArticle,
+  winnerHasToolPage: boolean,
+): Omit<CompareCardProps, 'navigate'> | null {
+  if (!article.toolSlugs || !article.winnerAffiliateLink) return null;
+  const facts = resolveCompareFacts(article.toolSlugs[0], article.toolSlugs[1], article.winnerSlug);
+  if (!facts) return null;
+  return {
+    facts,
+    winnerSlug: article.winnerSlug,
+    affiliateLink: article.winnerAffiliateLink,
+    fullReviewPath: winnerHasToolPage ? `/tools/${article.winnerSlug}/` : undefined,
+  };
+}
+
 const wrap: React.CSSProperties = { minWidth: 0, overflowWrap: 'anywhere' };
 
 function Column({ tool, rows, side, isWinner }: { tool: ToolFacts; rows: CompareRow[]; side: 'a' | 'b'; isWinner: boolean }) {

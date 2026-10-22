@@ -9,12 +9,19 @@
 //   the card shows only when the tool has an affiliate link AND getVerifiedFacts(slug)
 //   returns an entry. If either is missing, nothing is rendered.
 //
+// PHASE 3 (task 3.3): the same file also renders the compare-page card. The rule is
+// compareCardPropsFor() in components/CompareCard.tsx, which pages/CompareArticlePage.tsx
+// calls too, and the article data comes straight from pages/compare-data.ts (the live
+// page's own data), not from the reduced copy inside prerender.mjs.
+//
 // Nothing in the browser bundle imports this file, so it adds no weight to the site.
 
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { VerdictCard } from '../components/VerdictCard';
+import { CompareCard, compareCardPropsFor } from '../components/CompareCard';
 import { TOOLS } from '../constants';
+import { COMPARE_ARTICLES } from '../pages/compare-data';
 import { cheapestPaidPlan, getVerifiedFacts, startsAtLabel, freePlanLabel } from './vendor-facts';
 
 function affiliateLinkFor(slug: string): string | null {
@@ -71,4 +78,20 @@ export function verifiedOffer(slug: string): VerifiedOffer | null {
   }
   const description = [startsAtLabel(facts), freePlanLabel(facts)].filter(Boolean).join('. ');
   return { price, priceCurrency: facts.currency, description };
+}
+
+// ── Phase 3 (task 3.3): compare-page card ─────────────────────────────────────
+
+/** The compare card as static HTML, or '' when the live page would not show one. */
+export function renderCompareCardHtml(articleSlug: string): string {
+  const article = COMPARE_ARTICLES.find((a) => a.slug === articleSlug);
+  if (!article) return '';
+  const winnerHasToolPage = TOOLS.some((t) => t.slug === article.winnerSlug);
+  const props = compareCardPropsFor(article, winnerHasToolPage);
+  return props ? renderToStaticMarkup(<CompareCard {...props} />) : '';
+}
+
+/** Compare-article slugs that show a card, for the build report and for verify-prerender. */
+export function compareCardSlugs(): string[] {
+  return COMPARE_ARTICLES.map((a) => a.slug).filter((s) => renderCompareCardHtml(s) !== '');
 }

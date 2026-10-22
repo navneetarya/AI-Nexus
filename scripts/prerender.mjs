@@ -6867,10 +6867,18 @@ if (art.faqs && art.faqs.length > 0) {
   // I-09 Fix: Speakable schema for compare pages (was missing; tool pages ✓, blog posts ✓)
   schemas.push(speakableSchema(canonical, ['h1', '[data-speakable="verdict"]', 'h2:first-of-type']));
 
+  // Phase 3 (task 3.3): the at-a-glance card is rendered by the SAME component and rule the live
+  // page uses (CompareCard via lib/verdict-card-ssr.tsx). Pages without a card keep their previous
+  // output exactly (bodyHtml stays null).
+  const compareCardHtml = VERDICT_SSR.renderCompareCardHtml(art.slug);
+  const compareBodyHtml = compareCardHtml
+    ? `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(art.metaDescription)}</p>\n      <div style="margin-top:16px">${compareCardHtml}</div>`
+    : null;
+
   // H7 (SEO-High): use seoTitle (≤60 chars) for <title> tag if defined
   writeRoute(
     `compare/${art.slug}`,
-    buildPage(template, { dateModified: COMPARE_LAST_UPDATED[art.slug] || STABLE_FALLBACK_DATE, title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas, ogImage: resolveOgImage(`compare/${art.slug}`), ogType: 'article' })
+    buildPage(template, { bodyHtml: compareBodyHtml, dateModified: COMPARE_LAST_UPDATED[art.slug] || STABLE_FALLBACK_DATE, title: `${art.seoTitle ?? art.title} | AI Nexus`, description: art.metaDescription, canonical, schemas, ogImage: resolveOgImage(`compare/${art.slug}`), ogType: 'article' })
   );
 }
 

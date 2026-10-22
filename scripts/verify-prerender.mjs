@@ -87,11 +87,37 @@ for (const slug of expectedSlugs) {
   if (!toolSlugs.includes(slug)) cardProblems.push(`${slug}: no prerendered tool page found`);
 }
 
+// ── Phase 3 (task 3.3): compare-page card parity ──────────────────────────────
+// Every compare page where the live site shows the compare card must contain it byte for
+// byte; every other compare page must not contain one.
+const expectedCompare = new Set(ssr.compareCardSlugs());
+const compareDir = join(DIST, 'compare');
+const compareSlugs = existsSync(compareDir)
+  ? readdirSync(compareDir, { withFileTypes: true }).filter(d => d.isDirectory()).map(d => d.name)
+  : [];
+for (const slug of compareSlugs) {
+  const file = join(compareDir, slug, 'index.html');
+  if (!existsSync(file)) continue;
+  const html = readFileSync(file, 'utf8');
+  const hasCard = html.includes('data-compare-card="');
+  if (expectedCompare.has(slug)) {
+    if (!hasCard) cardProblems.push(`compare/${slug}: compare card missing from prerendered HTML`);
+    else if (!html.includes(ssr.renderCompareCardHtml(slug))) cardProblems.push(`compare/${slug}: compare card differs from the live component output`);
+    if (!html.includes('Prices verified') && !html.includes('date not verified')) cardProblems.push(`compare/${slug}: "Prices verified" date line missing`);
+  } else if (hasCard) {
+    cardProblems.push(`compare/${slug}: has a compare card in HTML but the live page would not show one`);
+  }
+}
+for (const slug of expectedCompare) {
+  if (!compareSlugs.includes(slug)) cardProblems.push(`compare/${slug}: no prerendered compare page found`);
+}
+
 console.log(`\n   Verdict cards expected : ${expectedSlugs.size}`);
-console.log(`   Verdict card problems  : ${cardProblems.length}`);
+console.log(`   Compare cards expected : ${expectedCompare.size}`);
+console.log(`   Card parity problems   : ${cardProblems.length}`);
 
 if (cardProblems.length > 0) {
-  console.log('\n❌  Verdict card parity failures:');
+  console.log('\n❌  Card parity failures:');
   for (const msg of cardProblems) console.log(`   ${msg}`);
   process.exit(1);
 }
