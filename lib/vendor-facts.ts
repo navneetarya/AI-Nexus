@@ -281,6 +281,7 @@ export function freePlanLabel(f: ToolFacts): string | null {
     if (!free) return null;
     const parts: string[] = [];
     if (free.allowance?.label) parts.push(free.allowance.label);
+    else parts.push('Free plan available');
     if (free.commercialUse === false) parts.push('not for commercial use');
     if (free.commercialUse === true) parts.push('commercial use allowed');
     return parts.length > 0 ? parts.join(', ') : 'Free plan available';

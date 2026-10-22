@@ -3,6 +3,8 @@ import { Tool } from '../types';
 import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award, Scale, Sun, Moon, BookOpen, Layers, Shield } from 'lucide-react';
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS, TOOLS } from '../constants';
 import { trackAffiliateClick } from '../lib/subid-tracking';
+import { getVerifiedFacts } from '../lib/vendor-facts';
+import { VerdictCard } from '../components/VerdictCard';
 import { SharedNav } from './SharedNav';
 import { COMPARE_ARTICLES } from './compare-data';
 // Perf: use the lightweight metadata list (no full post `content`) so this
@@ -2012,6 +2014,9 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
   const cardBg = isA2 ? C.a2card : C.a1card;
   const cardBrd = isA2 ? C.a2brd : C.a1brd;
   const content = TOOL_CONTENT[tool.slug];
+  // Phase 2 (task 2.2): the verdict card shows only for tools with verified facts and an affiliate link.
+  // When it shows, it replaces the hero's own price + CTA row so the page has one primary CTA there.
+  const verdictFacts = tool.affiliateLink ? getVerifiedFacts(tool.slug) : null;
   const faqs = TOOL_FAQS[tool.slug] || [];
   const comparisons = TOOL_COMPARISONS[tool.slug] || [];
   const keywords = TOOL_KEYWORDS[tool.slug] || [];
@@ -2205,6 +2210,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               {tool.description}
             </p>
 
+            {!verdictFacts && (<>
             {/* Pricing + CTA row */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' as const }}>
               {/* W4-T2: rel="sponsored nofollow" added for FTC/Google compliance */}
@@ -2224,8 +2230,13 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               Affiliate link — I earn a commission if you upgrade, at no extra cost to you.{' '}
               <span style={{ cursor: 'pointer', textDecoration: 'underline' }} onClick={() => navigate('/disclosure')}>Full disclosure →</span>
             </p>
+            </>)}
           </div>
         </div>
+
+        {verdictFacts && (
+          <VerdictCard facts={verdictFacts} affiliateLink={tool.affiliateLink} navigate={navigate} />
+        )}
 
         {AFFILIATE_SLUGS?.includes(tool.slug) && (
           <div style={{ 
