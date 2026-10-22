@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "updatedISO": null,
+  "rules": {
+    "bestForMaxWords": 12,
+    "skipIfMaxWords": 15,
+    "staleAfterDays": 90
+  },
+  "tools": [
+    {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs",
+      "status": "pending",
+      "pricingPageUrl": null,
+      "verifiedISO": null,
+      "currency": "USD",
+      "freeAccess": null,
+      "trial": null,
+      "plans": [],
+      "card": null,
+      "indiaNote": null,
+      "sources": []
+    }
+  ]
+}

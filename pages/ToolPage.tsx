@@ -1752,6 +1752,14 @@ Free plan documented limits: The text-to-image credit allowance depletes quickly
 
 const TODAY = new Date().toISOString().split('T')[0];
 
+/**
+ * Phase 0 (Oct 2026): the "Real output sample" block is hidden sitewide. Several
+ * entries describe sample outputs as if the site generated them, which conflicts
+ * with the research-only positioning. The data stays in constants.ts so this is
+ * reversible: set to true to show it again once the copy has been reworded.
+ */
+const SHOW_REAL_OUTPUT_EXAMPLE = false;
+
 // ── Map each tool slug to its compare article slugs (W1-T3 — internal linking audit fix) ──
 // Updated: added missing compare links per the audit report recommendations.
 // Each tool now links to ALL relevant compare pages, not just the first one found.
@@ -3068,7 +3076,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
         )}
 
         {/* ── Real output example (Week 2 — Rytr only) ── */}
-        {tool.realOutputExample && (
+        {SHOW_REAL_OUTPUT_EXAMPLE && tool.realOutputExample && (
           section(
             <>
               {sectionTitle('Real output sample')}
