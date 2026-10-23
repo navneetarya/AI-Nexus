@@ -169,7 +169,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "Murf AI Pricing 2026: Free, Creator & Business Costs",
     "metaDescription": "Murf AI pricing broken down by generation hours: what Free, Creator, Business and Enterprise actually buy, where voice cloning lives, and which plan fits.",
     "datePublished": "2026-09-16",
-    "dateModified": "2026-10-09",
+    "dateModified": "2026-10-23",
     "author": "Navneet Arya",
     "category": "Audio",
     "readTime": "9 min read",

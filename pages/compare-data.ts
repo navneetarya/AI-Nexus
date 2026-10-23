@@ -1402,7 +1402,9 @@ This distinction matters for some use cases and not others. For a corporate expl
 
 That's not a minor difference. For a small business owner, freelancer, or solo YouTuber deciding purely on "what's the cheapest way to legally monetize an AI voiceover," ElevenLabs' Starter plan is roughly a third of Murf's entry-level commercial cost, before either tool's feature set is even weighed.
 
-The trade-off is real, though: ElevenLabs' $6 Starter plan gives you 30,000 credits (~30 minutes) of narration with instant voice cloning, while Murf's $19-29 Creator plan gives you a full production studio — script editor, video sync, pronunciation controls — alongside its 2 hours/month of generation. If your bottleneck is production workflow rather than raw cost, Murf's higher entry price buys real capability. If your bottleneck is simply getting a legal, monetizable voiceover for the lowest monthly spend, ElevenLabs wins on price by a wide margin.`,
+The trade-off is real, though: ElevenLabs' $6 Starter plan gives you 30,000 credits (~30 minutes) of narration with instant voice cloning, while Murf's $19-29 Creator plan gives you a full production studio — script editor, video sync, pronunciation controls — alongside its 2 hours/month of generation. If your bottleneck is production workflow rather than raw cost, Murf's higher entry price buys real capability. If your bottleneck is simply getting a legal, monetizable voiceover for the lowest monthly spend, ElevenLabs wins on price by a wide margin.
+
+To see what your own monthly workload would cost on each plan, try the [voice cost calculator](/calculators/voice-cost/).`,
       },
       {
         heading: 'Murf AI — Built for professional voiceover production',

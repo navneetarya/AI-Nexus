@@ -969,7 +969,7 @@ const TOOLS = [
     slug: 'transkriptor', name: 'Transkriptor', category: 'Audio',
     tagline: 'AI transcription for audio, video and live meetings',
     description: 'Transkriptor converts audio files, video files and live Zoom, Teams and Google Meet calls into searchable, editable text across 100+ languages, with speaker separation, timestamps and subtitle export.',
-    pricing: 'Free trial + from $9.99/month', bestFor: 'Researchers, students, journalists and meeting-heavy teams',
+    pricing: 'Free trial + from $8.33/month billed annually', bestFor: 'Researchers, students, journalists and meeting-heavy teams',
     rating: 4.3, lastTested: 'September 2026',
     seoTitle: 'Transkriptor Review 2026: 100+ Languages, From $9.99 | AI Nexus',
     metaDescription: 'Transkriptor 2026 review: 100+ language AI transcription from $9.99/month. Accuracy limits, hour caps, and whether the subscription beats pay-per-hour.',

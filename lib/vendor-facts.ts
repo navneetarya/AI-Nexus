@@ -117,6 +117,9 @@ export interface SourceLink {
 
 export type FactStatus = 'pending' | 'verified';
 
+/** Which "what are you making?" answer in the Find-an-AI-tool matcher this tool belongs to. */
+export type MatcherTaskId = 'audio' | 'transcription' | 'video' | 'writing' | 'presentations';
+
 export interface ToolFacts {
   /** Must match Tool.slug in constants.ts. */
   slug: string;
@@ -136,6 +139,8 @@ export interface ToolFacts {
   indiaNote: string | null;
   /** Other official pages used (terms, FAQ, licensing). */
   sources: SourceLink[];
+  /** Matcher category. Omit when the tool should not appear in the matcher. */
+  matcherTask?: MatcherTaskId;
 }
 
 export interface VendorFactsRules {

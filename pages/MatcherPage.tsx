@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { SharedNav } from './SharedNav';
 import { trackAffiliateClick } from '../lib/subid-tracking';
-import { matchTools, type MatcherAnswers, type MatcherBudget, type MatcherConstraint, type MatcherResult, type MatcherTask } from '../lib/matcher';
+import { candidateCountsByTask, matchTools, type MatcherAnswers, type MatcherBudget, type MatcherConstraint, type MatcherResult, type MatcherTask } from '../lib/matcher';
 
 interface Props {
   navigate?: (to: string) => void;
@@ -28,6 +28,7 @@ function Option<T extends string>({ label, value, current, onChange }: { label: 
 export function MatcherBody() {
   const [answers, setAnswers] = useState<MatcherAnswers>(DEFAULT_ANSWERS);
   const [results, setResults] = useState<MatcherResult[]>(() => matchTools(DEFAULT_ANSWERS));
+  const taskCounts = candidateCountsByTask();
 
   useEffect(() => {
     track('matcher_start', { matcher: 'verified_tool_matcher' });
@@ -46,7 +47,7 @@ export function MatcherBody() {
       <section style={{ display: 'grid', gap: 18, padding: 'clamp(16px, 4vw, 24px)', background: 'var(--surf)', border: '1px solid var(--brd)', borderRadius: 16 }}>
         <fieldset style={{ border: 0, padding: 0, margin: 0, display: 'grid', gap: 8 }}>
           <legend style={{ fontWeight: 700, marginBottom: 8 }}>What are you trying to make?</legend>
-          {([['audio', 'Voice, podcast or audio work'], ['video', 'Videos and short-form clips'], ['writing', 'Marketing or written content'], ['presentations', 'Presentations and slides']] as [MatcherTask, string][]).map(([value, label]) => <React.Fragment key={value}><Option label={label} value={value} current={answers.task} onChange={(next) => update('task', next)} /></React.Fragment>)}
+          {([['audio', 'Voice, podcast or audio work'], ['transcription', 'Transcribing meetings and recordings'], ['video', 'Videos and short-form clips'], ['writing', 'Marketing or written content'], ['presentations', 'Presentations and slides']] as [MatcherTask, string][]).map(([value, label]) => <React.Fragment key={value}><Option label={label} value={value} current={answers.task} onChange={(next) => update('task', next)} /></React.Fragment>)}
         </fieldset>
         <fieldset style={{ border: 0, padding: 0, margin: 0, display: 'grid', gap: 8 }}>
           <legend style={{ fontWeight: 700, marginBottom: 8 }}>What is your budget?</legend>
@@ -61,6 +62,7 @@ export function MatcherBody() {
       <section aria-live="polite" style={{ display: 'grid', gap: 12 }}>
         <h2 style={{ fontSize: 20, margin: 0 }}>Verified matches</h2>
         {results.length === 0 ? <p style={{ color: 'var(--mut)' }}>No verified tool currently matches all three answers. Try a broader budget or remove the extra constraint.</p> : results.slice(0, 3).map((result) => <React.Fragment key={result.slug}><Result result={result} /></React.Fragment>)}
+        {taskCounts[answers.task] === 1 ? <p style={{ fontSize: 13, color: 'var(--mut)', lineHeight: 1.6, margin: 0 }}>Only one tool in this category has verified pricing so far, so there is nothing to rank it against. More are added as each vendor&apos;s pricing page is checked.</p> : null}
         <p style={{ fontSize: 12, color: 'var(--mut)', lineHeight: 1.6, margin: 0 }}>Ranking uses task fit, your selected constraint, and verified price/free-plan facts. Affiliate status does not affect the score. Facts are linked to each vendor&apos;s pricing page.</p>
       </section>
     </div>

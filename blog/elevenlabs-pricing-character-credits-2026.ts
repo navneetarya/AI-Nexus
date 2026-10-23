@@ -171,6 +171,8 @@ const post: BlogPost = {
 
 <p>If you're weighing ElevenLabs against <a href="/tools/murf-ai/">Murf AI</a>, the pricing structures differ. Murf meters generation hours rather than credits.</p><p>Murf's commercial license starts at $19/month annually or $29/month monthly. ElevenLabs starts at $6/month. Our full <a href="/compare/murf-ai-vs-elevenlabs/">Murf AI vs ElevenLabs comparison</a> breaks down the workflow fit.</p>
 
+<p>Want the monthly number for your own script volume? The <a href="/calculators/voice-cost/">voice cost calculator</a> compares ElevenLabs and Murf plans side by side.</p>
+
 <h2>Bottom line</h2>
 
 <p>Most individual creators choose between Starter ($6/month) and Creator ($22/month, with $11 for month one). Starter fits occasional output.</p><p>Creator fits monthly output above 25–30 finished minutes or Professional Voice Cloning. Pro and above are business-scale tiers driven by seats and volume.</p>

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedISO": "2026-10-22",
+  "updatedISO": "2026-10-23",
   "rules": {
     "bestForMaxWords": 12,
     "skipIfMaxWords": 15,
@@ -165,7 +165,8 @@
           "label": "Billing documentation",
           "url": "https://elevenlabs.io/docs/overview/administration/billing"
         }
-      ]
+      ],
+      "matcherTask": "audio"
     },
     {
       "slug": "descript",
@@ -416,8 +417,13 @@
         {
           "label": "Async Creator pricing help article",
           "url": "https://help.async.com/en/articles/6535067-how-does-async-creator-pricing-work"
+        },
+        {
+          "label": "Async announcement: Podcastle is now Async",
+          "url": "https://async.com/blog/podcastle-is-now-async"
         }
-      ]
+      ],
+      "matcherTask": "audio"
     },
     {
       "slug": "jasper",
@@ -478,7 +484,8 @@
           "label": "Jasper pricing FAQ (billing, payments, trial)",
           "url": "https://www.jasper.ai/pricing"
         }
-      ]
+      ],
+      "matcherTask": "writing"
     },
     {
       "slug": "pictory",
@@ -592,7 +599,8 @@
           "label": "Pictory pricing FAQ (video minutes)",
           "url": "https://pictory.ai/pricing/"
         }
-      ]
+      ],
+      "matcherTask": "video"
     },
     {
       "slug": "murf-ai",
@@ -652,7 +660,8 @@
           "label": "Murf home page FAQ",
           "url": "https://murf.ai/"
         }
-      ]
+      ],
+      "matcherTask": "audio"
     },
     {
       "slug": "gamma",
@@ -788,7 +797,94 @@
           "label": "Gamma help: how credits work",
           "url": "https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma"
         }
-      ]
+      ],
+      "matcherTask": "presentations"
+    },
+    {
+      "slug": "transkriptor",
+      "name": "Transkriptor",
+      "status": "verified",
+      "pricingPageUrl": "https://transkriptor.com/pricing/",
+      "verifiedISO": "2026-10-23",
+      "currency": "USD",
+      "freeAccess": null,
+      "trial": null,
+      "plans": [
+        {
+          "id": "lite",
+          "name": "Lite",
+          "isFree": false,
+          "priceMonthly": 9.99,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 300,
+            "unit": "minutes",
+            "period": "month",
+            "label": "300 minutes/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Translate, share and download transcripts",
+            "Web and mobile app"
+          ],
+          "notes": "Unused minutes expire after one month."
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 19.99,
+          "priceMonthlyBilledAnnually": 8.33,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 2400,
+            "unit": "minutes",
+            "period": "month",
+            "label": "2,400 minutes/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "AI summary",
+            "AI chat",
+            "Knowledge base",
+            "Custom meeting summary templates"
+          ],
+          "notes": "Annual billing is $99.99 per year. Unused minutes expire after one month."
+        },
+        {
+          "id": "team",
+          "name": "Team",
+          "isFree": false,
+          "priceMonthly": 30,
+          "priceMonthlyBilledAnnually": 20,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 3000,
+            "unit": "minutes",
+            "period": "month",
+            "label": "3,000 minutes/seat/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Custom vocabulary",
+            "Call analysis",
+            "Advanced analytics",
+            "Centralized team plan management"
+          ],
+          "notes": "Priced per seat. Annual billing is $240 per seat per year."
+        }
+      ],
+      "card": {
+        "bestFor": "Researchers, students, journalists and meeting-heavy teams",
+        "skipIf": "Your monthly transcription volume varies a lot, or recordings have overlapping speakers"
+      },
+      "indiaNote": "The pricing page lists USD prices. Its FAQ says to pay with a Visa or Mastercard credit card (debit and AMEX cards can fail) or through the App Store or Play Store.",
+      "sources": [],
+      "matcherTask": "transcription"
     }
   ]
 }

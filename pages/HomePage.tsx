@@ -464,6 +464,21 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
                 {label}
               </button>
             ))}
+            {[
+              { label: 'AI Pricing Tracker', path: '/pricing-tracker' },
+              { label: 'Voice Cost Calculator', path: '/calculators/voice-cost' },
+              { label: 'Find an AI Tool', path: '/find-ai-tool' },
+            ].map(({ label, path }) => (
+              <a key={path} href={`${path}/`}
+                onClick={(e) => { e.preventDefault(); navigate(path); }}
+                style={{ display:'block', fontSize:12.5, color:'rgba(255,255,255,.4)',
+                  fontFamily:"'Inter', system-ui, sans-serif", textDecoration:'none',
+                  padding:'3px 0', transition:'color .15s' }}
+                onMouseEnter={e=>(e.currentTarget.style.color=C.a1)}
+                onMouseLeave={e=>(e.currentTarget.style.color='rgba(255,255,255,.4)')}>
+                {label}
+              </a>
+            ))}
           </div>
 
           {/* Company */}

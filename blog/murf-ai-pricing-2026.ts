@@ -36,7 +36,7 @@ const post: BlogPost = {
   seoTitle: 'Murf AI Pricing 2026: Free, Creator & Business Costs',
   metaDescription: 'Murf AI pricing broken down by generation hours: what Free, Creator, Business and Enterprise actually buy, where voice cloning lives, and which plan fits.',
   datePublished: '2026-09-16',
-  dateModified: '2026-10-09',
+  dateModified: '2026-10-23',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '9 min read',
@@ -213,6 +213,8 @@ const post: BlogPost = {
 <p>What that $22 buys on Murf's side is a genuine production studio: video sync, pronunciation controls, native Canva and Slides export. Not just a raw voice engine.</p>
 
 <p>Our full <a href="/compare/murf-ai-vs-elevenlabs/">Murf AI vs ElevenLabs comparison</a> breaks down which tool actually fits which workflow. Our <a href="/blog/best-ai-voice-generators-2026/">best AI voice generators guide</a> covers the wider field if you haven't narrowed it to these two yet.</p>
+
+<p>To price your own monthly workload on both tools, use the <a href="/calculators/voice-cost/">voice cost calculator</a>.</p>
 
 <h2>Which plan should you actually pick</h2>
 <ol style="margin:12px 0 20px 24px;line-height:1.9;">

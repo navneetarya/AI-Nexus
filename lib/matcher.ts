@@ -1,7 +1,7 @@
 import { TOOLS } from '../constants';
-import { getVerifiedFacts, type ToolFacts } from './vendor-facts';
+import { getVerifiedFacts, type MatcherTaskId, type ToolFacts } from './vendor-facts';
 
-export type MatcherTask = 'audio' | 'video' | 'writing' | 'presentations';
+export type MatcherTask = MatcherTaskId;
 export type MatcherBudget = 'free' | 'under20' | 'any';
 export type MatcherConstraint = 'commercial' | 'cloning' | 'long-form' | 'none';
 
@@ -31,14 +31,6 @@ export interface MatcherResult extends MatcherCandidate {
   reasons: string[];
 }
 
-function taskFor(slug: string): MatcherTask | null {
-  if (slug === 'elevenlabs' || slug === 'murf-ai' || slug === 'podcastle') return 'audio';
-  if (slug === 'pictory') return 'video';
-  if (slug === 'jasper') return 'writing';
-  if (slug === 'gamma') return 'presentations';
-  return null;
-}
-
 function lowestPaidMonthly(facts: ToolFacts): number | null {
   const prices = facts.plans
     .filter((plan) => !plan.isFree)
@@ -56,7 +48,7 @@ function hasAllowanceUnit(facts: ToolFacts, units: string[]): boolean {
 }
 
 function candidateFor(facts: ToolFacts): MatcherCandidate | null {
-  const task = taskFor(facts.slug);
+  const task = facts.matcherTask ?? null;
   const tool = TOOLS.find((entry) => entry.slug === facts.slug);
   if (!task || !tool || !facts.card || !facts.pricingPageUrl || !tool.affiliateLink) return null;
   return {
@@ -73,6 +65,13 @@ function candidateFor(facts: ToolFacts): MatcherCandidate | null {
     sourceUrl: facts.pricingPageUrl,
     affiliateLink: tool.affiliateLink,
   };
+}
+
+/** Number of verified tools per task, so the page can say when a category is thin. */
+export function candidateCountsByTask(candidates = verifiedMatcherCandidates()): Record<MatcherTask, number> {
+  const counts: Record<MatcherTask, number> = { audio: 0, transcription: 0, video: 0, writing: 0, presentations: 0 };
+  for (const candidate of candidates) counts[candidate.task] += 1;
+  return counts;
 }
 
 export function verifiedMatcherCandidates(): MatcherCandidate[] {

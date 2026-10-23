@@ -1088,7 +1088,7 @@ export const TOOLS: Tool[] = [
     pricingBreakdown: [
       { tier: 'Free', price: '$0/month', highlight: '10,000 credits/month · No commercial use · 3 Studio projects' },
       { tier: 'Starter', price: '$6/month', highlight: '30,000 credits/month · Commercial licence · Instant voice cloning · Dubbing Studio' },
-      { tier: 'Creator', price: '$22/month ($11 first month)', highlight: '121,000 credits/month · Professional voice cloning · 192kbps audio' },
+      { tier: 'Creator', price: '$22/month ($11 first month)', highlight: '121,000 credits/month · Professional voice cloning' },
     ],
     setupSteps: [
       'Sign up at elevenlabs.io — the free plan includes 10,000 credits per month (1 credit is about 1 character of standard text-to-speech).',
@@ -1106,7 +1106,7 @@ export const TOOLS: Tool[] = [
     notForYou: 'Users who need full podcast production workflows with recording, editing, and publishing in one place — ElevenLabs is purely a voice generation and API tool. For end-to-end podcast production, pair it with Podcastle or Descript.',
     realOutputExample: {
       output: 'Generated a 45-second voiceover for a YouTube intro script using the Rachel (US English) voice at stability 0.71 and similarity boost 0.75 on the free tier. Script: "In this video, I\'m going to show you the exact AI writing workflow I use to produce 3 blog posts per week — without burning out. Let\'s get into it." Generated in 8 seconds. Clean MP3 export at 128kbps.',
-      editorialNote: 'The voice quality on the free plan is genuinely impressive. Rachel\'s delivery sounds like a professional voice-over artist, not a robot reading text. The stability and similarity sliders actually produce different outputs — turning down stability gives more expressive delivery; turning it up makes it more consistent. One real limitation: the free plan only gives 10,000 characters per month (about 7–8 minutes of audio), and you can\'t export without the audio watermark without upgrading. For a YouTube creator or podcast editor, the Creator plan at $22/month is the value point.',
+      editorialNote: 'The voice quality on the free plan is genuinely impressive. Rachel\'s delivery sounds like a professional voice-over artist, not a robot reading text. The stability and similarity sliders actually produce different outputs — turning down stability gives more expressive delivery; turning it up makes it more consistent. One real limitation: the free plan only gives 10,000 credits per month (about 10,000 characters of standard text-to-speech, or roughly 7–8 minutes of audio), and you can\'t export without the audio watermark without upgrading. For a YouTube creator or podcast editor, the Creator plan at $22/month is the value point.',
     },
     lastTestedISO: '2026-05-15',
     researchSources: {
@@ -2805,7 +2805,7 @@ export const TOOLS: Tool[] = [
     description: 'Transkriptor converts audio files, video files and live Zoom, Teams and Google Meet calls into searchable, editable text across 100+ languages. It adds speaker separation, timestamps, subtitle export and an AI chat layer over the finished transcript.',
     category: Category.AUDIO, affiliateLink: 'https://textintelfze.pxf.io/9VdAzj?utm_source=transkriptor&utm_medium=affiliate',
     iconName: 'FileAudio', color: '#0ea5e9', accentColor: '#0284c7',
-    userBadge: '100+ languages', pricing: 'Free trial + from $9.99/month', bestFor: 'Researchers, students, journalists and meeting-heavy teams',
+    userBadge: '100+ languages', pricing: 'Free trial + from $8.33/month billed annually', bestFor: 'Researchers, students, journalists and meeting-heavy teams',
     features: ['100+ language transcription', 'Zoom / Teams / Meet meeting recording', 'Speaker separation and timestamps', 'Subtitle and multi-format export', 'AI chat and summaries over transcripts'],
     pros: [
       'Broad language coverage — well beyond the English-first tools in this category',
