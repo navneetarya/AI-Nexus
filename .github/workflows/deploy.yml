@@ -36,6 +36,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Quality gates. These run BEFORE the build so a broken commit fails in about a
+      # minute instead of shipping. `vite build` does not type-check, so without the
+      # first step a TypeScript error would deploy silently.
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Validate vendor facts
+        # Checks lib/vendor-facts.data.json (https sources, dates, card word limits)
+        # and warns when site copy drifts from verified prices. Warnings do not fail
+        # the build; errors do.
+        run: python3 validate_vendor_facts.py
+
       - name: Build + Pre-render all routes
         # vite build compiles the React app, then scripts/prerender.mjs
         # creates dist/<route>/index.html for every URL in the sitemap.

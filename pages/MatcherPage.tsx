@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { SharedNav } from './SharedNav';
+import { trackAffiliateClick } from '../lib/subid-tracking';
 import { matchTools, type MatcherAnswers, type MatcherBudget, type MatcherConstraint, type MatcherResult, type MatcherTask } from '../lib/matcher';
 
 interface Props {
@@ -67,7 +68,19 @@ export function MatcherBody() {
 }
 
 function Result({ result }: { result: MatcherResult }) {
-  const click = () => track('matcher_result_click', { matcher: 'verified_tool_matcher', tool: result.slug, link_url: result.affiliateLink });
+  const click = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    // Shared tracker first: appends the Sub ID to the outbound href and fires the standard
+    // `affiliate_click` event (cta_position 'matcher'), so these clicks join the same GA4 report
+    // and PartnerStack/Impact attribution flow as every other affiliate CTA.
+    trackAffiliateClick(event, { toolName: result.name, ctaPosition: 'matcher' });
+    // Matcher-specific event kept as an extra; link_url is read after the rewrite.
+    track('matcher_result_click', {
+      matcher: 'verified_tool_matcher',
+      tool: result.slug,
+      vendor: result.slug,
+      link_url: event.currentTarget.href,
+    });
+  };
   return (
     <article style={{ display: 'grid', gap: 8, padding: '16px 18px', background: 'var(--surf)', border: '1px solid var(--brd)', borderRadius: 12 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>

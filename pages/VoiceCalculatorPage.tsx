@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { SharedNav } from './SharedNav';
 import { VoiceCalculator } from '../components/VoiceCalculator';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
+import { trackAffiliateClick } from '../lib/subid-tracking';
 import type { VoiceScenario } from '../lib/calc/voice';
 import type { ConversionAssumptions, VoiceVendorId } from '../lib/calc/voice-inputs';
 
@@ -16,6 +17,11 @@ declare global {
     gtag?: (...args: any[]) => void;
   }
 }
+
+const VENDOR_NAMES: Record<VoiceVendorId, string> = {
+  elevenlabs: 'ElevenLabs',
+  'murf-ai': 'Murf AI',
+};
 
 function track(name: string, params: Record<string, unknown>) {
   if (typeof window.gtag === 'function') window.gtag('event', name, params);
@@ -49,6 +55,12 @@ export function VoiceCalculatorPage({ navigate, isDark, toggleTheme }: Props) {
   };
 
   const onCtaClick = (vendor: VoiceVendorId, event: React.MouseEvent<HTMLAnchorElement>) => {
+    // Shared tracker first: it appends the PartnerStack/Impact Sub ID to the outbound href and
+    // fires the standard `affiliate_click` event, so calculator clicks show up in the same GA4
+    // report and attribution flow as every other affiliate CTA on the site.
+    trackAffiliateClick(event, { toolName: VENDOR_NAMES[vendor], ctaPosition: 'calculator' });
+    // Calculator-specific event kept as an extra. link_url is read AFTER the rewrite above so it
+    // matches the URL the visitor actually lands on.
     track('calc_cta_click', {
       calculator: 'voice_cost',
       vendor,
