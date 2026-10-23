@@ -55,6 +55,7 @@ const post: BlogPost = {
 <h2>TL;DR: the faceless channel workflow</h2>
 
 <p>Pick a niche, write a tight script, generate the voice, layer in pacing and music, then export. ElevenLabs fits best at the voice step for most faceless channels, since a cloned voice becomes the channel's identity in a way a stock voice never quite matches.</p>
+{{verdict:elevenlabs}}
 
 <div style="overflow-x:auto;margin:28px 0">
   <table style="width:100%;border-collapse:collapse;font-size:14px">

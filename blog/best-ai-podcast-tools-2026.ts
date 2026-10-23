@@ -26,7 +26,7 @@ const post: BlogPost = {
     },
     {
       q: 'Is Podcastle free?',
-      a: 'Yes — Podcastle has a permanent free plan that includes remote recording (up to 10 hours/month), AI magic dust noise removal, automatic transcription (up to 3 hours), and up to 3 published episodes. The free plan is genuinely usable for a new podcast that publishes 2–3 episodes per month. The paid Basic plan at free tier/month removes episode limits and adds filler word removal.',
+      a: 'Yes. Podcastle (now Async) has a permanent free plan with 10 one-time AI credits, 1 hour of remote recording (lifetime), 2 GB of storage and exports up to 720p, and no credit card is needed. It is enough to test the workflow, not to run a regular show. The paid Essentials plan at $11.99/month billed annually ($19.99 monthly) adds 450 AI credits a month, 2 hours of remote recording and Full HD exports.',
     },
     {
       q: 'Can AI remove background noise from podcast recordings?',
@@ -63,7 +63,7 @@ const post: BlogPost = {
       'The best choice depends on your exact workflow, team size, and budget',
     ],
   },
-  quickAnswer: 'Best AI podcast tools 2026: Podcastle wins overall for all-in-one recording and editing, with a workable free plan up to 10 hours a month. Adobe Podcast Enhance cleans up noisy audio for free with no account needed. Descript is best for editing by transcript instead of a waveform. Murf AI covers AI voiceovers for intros, outros, and ad reads.',
+  quickAnswer: 'Best AI podcast tools 2026: Podcastle wins overall for all-in-one recording and editing, with a free plan for testing (1 hour of remote recording, lifetime) and paid plans from $11.99/month billed annually. Adobe Podcast Enhance cleans up noisy audio for free with no account needed. Descript is best for editing by transcript instead of a waveform. Murf AI covers AI voiceovers for intros, outros, and ad reads.',
   myTake: 'Navneet\'s take: Adobe Podcast Enhance is the one tool here I\'d tell any podcaster to bookmark regardless of what else they use — it\'s free, needs no account, and the noise cleanup is genuinely studio-grade. Podcastle earns the top spot because it solves recording and cleanup in one place, which matters most for a new show with a tight budget.',
   outboundCitations: [
     { url: 'https://async.com/pricing', label: 'Podcastle (now Async) — Official Pricing' },
@@ -76,7 +76,7 @@ const post: BlogPost = {
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best AI podcast tools 2026: <strong>Podcastle</strong> wins overall for all-in-one recording and editing, with a workable free plan up to 10 hours a month. <strong>Adobe Podcast Enhance</strong> cleans up noisy audio for free with no account needed. <strong>Descript</strong> is best for editing by transcript instead of a waveform. <strong>Murf AI</strong> covers AI voiceovers for intros, outros, and ad reads.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best AI podcast tools 2026: <strong>Podcastle</strong> wins overall for all-in-one recording and editing, with a free plan for testing (1 hour of remote recording, lifetime) and paid plans from $11.99/month billed annually. <strong>Adobe Podcast Enhance</strong> cleans up noisy audio for free with no account needed. <strong>Descript</strong> is best for editing by transcript instead of a waveform. <strong>Murf AI</strong> covers AI voiceovers for intros, outros, and ad reads.</p>
 </div>
 
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate links: AI Nexus may earn a commission at no extra cost to you. <a href="/disclosure/">How we pick</a>.</p>
@@ -186,9 +186,9 @@ const post: BlogPost = {
 <h2>The Right Podcast AI Stack by Budget</h2>
 <ul style="margin:10px 0 16px 24px;line-height:2.4;">
   <li><strong>Zero budget (starting out):</strong> Podcastle free (record) + Adobe Podcast Enhance free (cleanup). Professional recording and AI noise removal at no cost.</li>
-  <li><strong>$12/month:</strong> Podcastle Basic (record, no episode limit) + Descript Creator (transcript editing). A complete record-to-publish workflow.</li>
-  <li><strong>$31/month:</strong> Podcastle Basic + Descript Creator + Murf AI Basic (intros, outros, ad reads). The full professional stack.</li>
-  <li><strong>Single-tool simplicity:</strong> Podcastle Basic (free tier/month) handles recording, noise removal, transcription, and basic editing in one place. Best if you want to keep your toolset small.</li>
+  <li><strong>From $11.99/month:</strong> Podcastle Essentials (billed annually; $19.99 monthly) for recording, noise removal and transcription. Add Descript if you want transcript-based editing.</li>
+  <li><strong>Full stack:</strong> Podcastle Essentials + Descript + Murf AI (intros, outros, ad reads). Check each pricing page for the current total.</li>
+  <li><strong>Single-tool simplicity:</strong> Podcastle Essentials ($11.99/month billed annually) handles recording, noise removal, transcription, and basic editing in one place. Best if you want to keep your toolset small.</li>
   <li><strong>Add for show-note transcripts:</strong> If you need a clean written transcript for SEO show notes or a non-English audience, <a href="/tools/transkriptor/" style="color:rgb(13,148,136);">Transkriptor</a> ($9.99/month) covers 100+ languages, wider than any tool above. It's a transcription add-on for existing recordings, not a replacement for Podcastle's record-and-edit workflow.</li>
 </ul>
 <div style="margin:14px 0 24px;">

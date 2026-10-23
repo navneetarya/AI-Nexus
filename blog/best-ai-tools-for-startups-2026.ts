@@ -145,7 +145,7 @@ const post: BlogPost = {
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
   <a href="/disclosure/">Affiliate disclosure</a>: we may earn a commission at no extra cost to you.
 </p>
-<p>If budget is tighter than time, <a href="/tools/presentation-intelligence/" style="color:#0D9488;">Pi (Presentation Intelligence)</a> is worth a look too: its free plan is forever free with no watermark, and the paid Basic tier runs about $7.50/month annualised, a touch cheaper than Gamma Plus. It also accepts an existing pitch memo or one-pager as a starting document, not just a text prompt. The trade-off is a much smaller independent review base than Gamma's, so it's a reasonable budget pick, not yet a proven default.</p>
+<p>If budget is tighter than time, <a href="/tools/presentation-intelligence/" style="color:#0D9488;">Pi (Presentation Intelligence)</a> is worth a look too: it accepts an existing pitch memo or one-pager as a starting document, not just a text prompt. Its free plan lets you judge the output, but export needs a paid membership (Pro is $168/year). The trade-off is a much smaller independent review base than Gamma's, so it's a reasonable pick to test, not yet a proven default.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['presentation-intelligence']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pi Free →</a>
 </div>

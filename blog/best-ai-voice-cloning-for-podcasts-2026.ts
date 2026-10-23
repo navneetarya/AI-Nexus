@@ -54,6 +54,7 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
 </div>
 <p>If your show has a scripted intro, sponsor reads that need to sound identical every week, or an audience in more than one language, ElevenLabs' cloning can pay for itself. If cloning is only for the occasional flubbed line, <a href="/tools/descript/">Descript</a> fits better, since its Regenerate feature (formerly Overdub) sits inside the transcript editor you may already use.</p>
+{{verdict:elevenlabs}}
 
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices verified October 2026 against each vendor's official pricing page. Billing options and regional prices vary, so confirm at checkout.</em></p>
 

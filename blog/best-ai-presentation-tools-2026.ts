@@ -68,7 +68,7 @@ const post: BlogPost = {
     },
     {
       q: 'What is the best free AI presentation tool in 2026?',
-      a: 'NotebookLM (Google) is the strongest genuinely free option. There is no paid tier at all for its slide-generation feature. It builds presentations from documents you upload, so the content is grounded in your actual material. Pi (Presentation Intelligence) is the strongest free option among the prompt-based tools. Its free plan is forever free and exports with no watermark, though it caps out at roughly 40 AI credits. Gamma\'s free plan gives the largest one-time credit allowance: 400 one-time AI credits (roughly 8–15 full presentations). Every free Gamma deck carries a "Made with Gamma" watermark. Beautiful.ai has no permanent free plan, only a 14-day trial that requires a credit card.',
+      a: 'NotebookLM (Google) is the strongest genuinely free option. There is no paid tier at all for its slide-generation feature. It builds presentations from documents you upload, so the content is grounded in your actual material. Pi (Presentation Intelligence) has a free plan with a 400-point welcome bonus for judging output, but its pricing page says export requires a membership. Gamma\'s free plan gives the largest one-time credit allowance: 400 one-time AI credits (roughly 8–15 full presentations). Every free Gamma deck carries a "Made with Gamma" watermark. Beautiful.ai has no permanent free plan, only a 14-day trial that requires a credit card.',
     },
     {
       q: 'Is Gamma or Beautiful.ai better for presentations?',
@@ -84,15 +84,15 @@ const post: BlogPost = {
     },
     {
       q: 'How much do AI presentation tools cost for a small team in India?',
-      a: 'For a 3-person team, Gamma Plus across 3 seats runs roughly $24/month (~₹2,000/month), the cheapest paid option with unlimited generation and no watermark. Canva Pro for 3 people runs about $432/year ($144 each, roughly ₹3,000/month) and bundles a full design suite. Canva\'s pricing page says Canva Teams is no longer open to new sign-ups. Beautiful.ai is the most expensive entry point: there is no team discount below the $40/seat/month Team plan, so 3 seats costs $120/month (~₹10,000/month). All four tools bill in USD with no UPI support. Indian users need a forex-enabled card or an international prepaid card (Niyo, Scapia). NotebookLM remains the only fully free option regardless of team size.',
+      a: 'For a 3-person team, Gamma Plus across 3 seats costs ₹1,200/month on annual billing (₹400 per seat before tax, as shown on the Gamma pricing page for Indian visitors), with 1,000 AI credits per seat each month and no watermark. Canva Pro for 3 people runs about $432/year ($144 each, roughly ₹3,000/month) and bundles a full design suite. Canva\'s pricing page says Canva Teams is no longer open to new sign-ups. Beautiful.ai is the most expensive entry point: there is no team discount below the $40/seat/month Team plan, so 3 seats costs $120/month (~₹10,000/month). Gamma accepts UPI in India; the other paid tools here bill in USD with no UPI support, so Indian users need a forex-enabled card or an international prepaid card (Niyo, Scapia) for those. NotebookLM remains the only fully free option regardless of team size.',
     },
     {
       q: 'What is the cheapest paid AI presentation tool in 2026?',
-      a: 'Pi (Presentation Intelligence), at $7.50/month on annual billing ($89.90/year), is the cheapest paid option among the tools compared here that gives unlimited generation. Gamma Plus is close behind at $8/month on annual billing. Beautiful.ai\'s Pro plan runs $14.50/month billed annually and has no permanent free plan to fall back on, unlike Gamma or Pi. Canva Pro at $144/year is priced similarly, though it bundles a full design suite beyond just presentations. NotebookLM is not "cheap" but genuinely free with no paid tier at all, so it wins outright if budget is the only factor.',
+      a: 'Gamma Plus is the lowest price we could confirm on an official page: ₹400 per seat per month on annual billing in India, with 1,000 AI credits a month. Pi (Presentation Intelligence) Pro is $168/year (about $14/month) with 12,000 credits a month. Beautiful.ai\'s Pro plan runs $14.50/month billed annually and has no permanent free plan to fall back on, unlike Gamma or Pi. Canva Pro at $144/year is priced similarly, though it bundles a full design suite beyond just presentations. NotebookLM is not "cheap" but genuinely free with no paid tier at all, so it wins outright if budget is the only factor.',
     },
     {
       q: 'Do AI presentation tools support UPI or direct INR billing for Indian users?',
-      a: 'No. Gamma, Beautiful.ai, and Canva AI all bill in USD only, with no UPI or direct INR payment option as of 2026. Indian users need a forex-enabled card or a prepaid international card, such as Niyo or Scapia, to subscribe to any of them. NotebookLM is the exception: since it is completely free with no paid tier, it has zero billing friction for Indian users and needs nothing beyond a free Google account.',
+      a: 'Partly. Gamma accepts UPI in India, according to its help center, and its pricing page shows Indian visitors rupee prices (Plus is ₹400 per seat per month on annual billing). Beautiful.ai and Canva AI bill in USD only, with no UPI or direct INR payment option as of 2026, so Indian users need a forex-enabled card or a prepaid international card, such as Niyo or Scapia, for those. NotebookLM is completely free with no paid tier, so it has zero billing friction for Indian users and needs nothing beyond a free Google account.',
     },
     {
       q: 'Is Prezi AI better than Gamma?',
@@ -155,6 +155,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI presentation tools in 2026: <strong>Gamma</strong> (fastest web-native decks, free–$18/month) wins for speed and design quality. <strong>NotebookLM</strong> (completely free) wins for document-grounded slides that can't invent statistics. <strong><a href="/tools/beautiful-ai/">Beautiful.ai</a></strong> (from $14.50/month billed annually, no free plan) wins for consistently polished team decks. <strong>Prezi AI</strong> wins for live audience polls and viewer analytics.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong><a href="/tools/canva-ai/">Canva AI</a></strong> (free–$144/year) wins if you already use Canva for other design work. <strong><a href="/tools/chatgpt/">ChatGPT</a> for PowerPoint, Copilot, and Gemini</strong> win if you want AI inside the tool you already use rather than a separate app. Tome shut down its presentation product in April 2025 and is no longer an option.</p>
 </div>
+{{verdict:gamma}}
 
 <h2>Best AI Presentation Tools 2026: What Happened to Tome?</h2>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1757876598533-749f56cd1c66?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A speaker presenting on a large stage with a screen behind them" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
@@ -214,9 +215,9 @@ const post: BlogPost = {
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 14px;font-weight:600;">Pi (<a href="/tools/presentation-intelligence/">Presentation Intelligence</a>)</td>
-      <td style="padding:10px 14px;">Yes: forever free, ~40 credits, no watermark</td>
-      <td style="padding:10px 14px;">$7.50/month (annual Basic)</td>
-      <td style="padding:10px 14px;">Turning a document, PDF or webpage into a deck cheaply</td>
+      <td style="padding:10px 14px;">Yes: 400-point welcome bonus; export needs a membership</td>
+      <td style="padding:10px 14px;">$14/month (Pro, $168/year)</td>
+      <td style="padding:10px 14px;">Turning a document, PDF or webpage into a deck</td>
       <td style="padding:10px 14px;">⭐ 3.8/5</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
@@ -280,9 +281,9 @@ const post: BlogPost = {
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 12px;font-weight:600;">Pi (Presentation Intelligence)</td>
-      <td style="padding:10px 12px;">Free plan; extra credits can be earned through referrals, daily logins and sharing documents</td>
-      <td style="padding:10px 12px;">Basic at $9.90/month or $89.90/year, from our earlier check</td>
-      <td style="padding:10px 12px;"><a href="https://www.pi.inc/pricing" target="_blank" rel="noopener noreferrer">Pi's pricing page</a> showed no plan details on 12 Oct 2026, so confirm credits and price there</td>
+      <td style="padding:10px 12px;">Free plan with a 400-point welcome bonus; export requires a membership</td>
+      <td style="padding:10px 12px;">Pro at $168/year (about $14/month), or $240/year paid monthly</td>
+      <td style="padding:10px 12px;"><a href="https://www.pi.inc/pricing" target="_blank" rel="noopener noreferrer">Pi's pricing page</a>, checked 23 Oct 2026</td>
     </tr>
     <tr>
       <td style="padding:10px 12px;font-weight:600;">NotebookLM</td>
@@ -378,14 +379,14 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['canva-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Canva AI Free →</a>
 </div>
 
-<h2>Pi (Presentation Intelligence): Best Cheap Option for Turning a Document Into a Deck</h2>
+<h2>Pi (Presentation Intelligence): Best for Turning a Document Into a Deck</h2>
 <p>Pi, short for Presentation Intelligence and built by DeepVinci, takes the widest range of source material of any tool in this comparison. Feed it a prompt, a PDF, a Word document, a PowerPoint file, a webpage URL, or an image, and its Design Engine generates content and visual layout together, rather than dropping AI-written text into a fixed template.</p>
-<p>The free plan is the most generous in this guide on one specific point: it's forever free, not a trial, and exports carry no watermark — a real difference from Gamma's free tier. The trade-off is a smaller credit allowance, roughly 40 AI generation credits, versus Gamma's 400 one-time credits.</p>
+<p>The free plan is for judging output: Pi's pricing page lists a 400-point welcome bonus, up to 10 cards per prompt and 100 MB of storage, and says export requires a membership.</p>
 <h3>Pi pricing and free plan</h3>
-<p>The free plan includes custom templates and font uploads alongside those ~40 credits, and additional credits can be earned through referrals, daily logins, or sharing documents. The paid Basic plan costs $9.90/month, or $89.90/year (about $7.50/month annualised) — slightly undercutting Gamma's $8/month Plus plan — and removes the credit cap entirely.</p>
+<p>Extra free points can be earned by inviting friends. Pro costs $168/year (about $14/month), or $240/year paid monthly, with 12,000 credits a month, up to 50 cards per prompt and 100 GB of storage. Max ($336/year) and Studio ($888/year) sit above it.</p>
 <p>Pi also includes built-in analytics on shared decks (how often a link was opened, per-page reading data over the past 30 days), a feature that usually sits behind a higher tier on competing tools.</p>
 <p>The honest limitation: Pi's independent review base is thin. No G2 reviews exist for it as of this guide, and the Trustpilot listing under "PI" belongs to a different product, the pi.ai chatbot, not this tool. There's also no public team or enterprise tier, so it isn't the right pick for a company-wide rollout needing SSO or admin controls.</p>
-<p><strong>Pi: try the free plan first.</strong> Forever free, no watermark, no credit card required to start.</p>
+<p><strong>Pi: try the free plan first.</strong> Use the welcome points to judge the output on your own document before paying for export.</p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['presentation-intelligence']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Pi Free →</a>
 </div>
@@ -457,12 +458,12 @@ const post: BlogPost = {
 <p><strong>Use Beautiful.ai if:</strong> you manage a sales or marketing team where 10+ people create client-facing decks on their own. Brand consistency matters more to you than design flexibility. Budget for the $40/seat/month Team plan once you need collaboration features, not just the $14.50/month individual Pro.</p>
 <p><strong>Use Prezi AI if:</strong> you present live to an audience and want built-in polls, quizzes, or real-time viewer analytics during the talk itself — a feature no other tool in this guide offers.</p>
 <p><strong>Use Canva AI if:</strong> you already pay for Canva Pro for other design work, like social posts, brand assets, or marketing graphics. You want an AI presentation tool bundled in. That beats paying for a second subscription.</p>
-<p><strong>Use Pi (Presentation Intelligence) if:</strong> you want to turn an existing PDF, Word doc, or webpage into a deck cheaply, and a genuinely free, watermark-free plan matters more to you than a large body of independent reviews to check first.</p>
+<p><strong>Use Pi (Presentation Intelligence) if:</strong> you want to turn an existing PDF, Word doc, or webpage into a deck, and the widest range of input formats matters more to you than a large body of independent reviews to check first.</p>
 <p><strong>Use AiPPT.com if:</strong> you want to try more than one generation style from the same tool. It offers a fast one-shot build, an adaptive agent mode, and an image-heavy visual mode. It also suits you if you'd rather pay once with a Lifetime plan than commit to a recurring subscription. Verify the current price directly on AiPPT.com's own pricing page first, since third-party listings disagree on the exact figures.</p>
 <p><strong>Use ChatGPT for PowerPoint, Copilot, or Gemini if:</strong> staying inside PowerPoint or Google Slides matters more than getting the boldest possible first draft, and you or your team already have a license for one of them.</p>
 <p>For a closer look at how two of these tools stack up feature-by-feature, see the <a href="/compare/gamma-vs-beautiful-ai/">full Gamma vs Beautiful.ai comparison</a> on AI Nexus. For the broader AI design tools landscape, the <a href="/best-ai-design-tools/">best AI design tools 2026 category page</a> covers logo makers, image generators, and other adjacent categories.</p>
 <h3>Pricing Notes for Indian Users</h3>
-<p>For Indian users, Gamma, Beautiful.ai, Canva AI, and Prezi AI all bill in USD with no UPI or direct INR support. Gamma Plus runs roughly ₹670/month, Canva Pro roughly ₹1,000/month ($144 a year), and Beautiful.ai Pro roughly ₹1,200/month at current exchange rates.</p>
+<p>For Indian users, Gamma accepts UPI and shows rupee prices: Gamma Plus is ₹400 per seat per month on annual billing, before tax. Beautiful.ai, Canva AI, and Prezi AI bill in USD with no UPI or direct INR support. Canva Pro runs roughly ₹1,000/month ($144 a year), and Beautiful.ai Pro roughly ₹1,200/month at current exchange rates.</p>
 <p>A forex-enabled card or a prepaid international card (Niyo, Scapia) is the practical workaround. NotebookLM remains the one option with zero payment hassle for Indian users, since it requires nothing beyond a free Google account.</p>
 
 <h2>Final Verdict: Worth It in 2026?</h2>

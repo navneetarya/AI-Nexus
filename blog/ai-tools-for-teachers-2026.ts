@@ -242,7 +242,7 @@ const post: BlogPost = {
 <p>Here's the exact setup I'd recommend based on budget:</p>
 <ul style="margin:12px 0 12px 24px;line-height:2.2;">
   <li><strong>$0/month:</strong> Grammarly free (unlimited) + Rytr free (10K chars/mo) + Gamma free credits. This covers feedback, worksheets, and presentations at zero cost.</li>
-  <li><strong>$9-10/month:</strong> Add Rytr Saver ($9/mo) for unlimited worksheet generation, or Gamma Plus ($10/mo) for unlimited presentations. Pick whichever task eats more of your time.</li>
+  <li><strong>$9-10/month:</strong> Add Rytr Saver ($9/mo) for unlimited worksheet generation, or Gamma Plus ($10/mo) for 1,000 AI credits a month and no Gamma branding. Pick whichever task eats more of your time.</li>
   <li><strong>$20-22/month:</strong> Gamma Plus ($10/mo) + Notion AI ($10/mo add-on) + Grammarly free. This is the power combo for teachers who want AI across planning, presentations, and communication.</li>
 </ul>
 

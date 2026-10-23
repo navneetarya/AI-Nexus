@@ -101,7 +101,7 @@ const post: BlogPost = {
       <tr style="border-bottom:1px solid rgba(0,0,0,.06)">
         <td style="padding:10px 14px;font-weight:500"><a href="${AFFILIATE_LINKS['wegic']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Wegic</a></td>
         <td style="padding:10px 14px">Yes — starter credits, Wegic badge</td>
-        <td style="padding:10px 14px">$2.99 one-time trial (paid plans from ~$11.90/mo)</td>
+        <td style="padding:10px 14px">$2.99 one-time trial (Starter from $23.90/mo billed annually)</td>
         <td style="padding:10px 14px">Fastest chat-based build, no editor needed</td>
         <td style="padding:10px 14px">Credit-based — no independent Trustpilot score yet</td>
       </tr>

@@ -466,7 +466,7 @@ Startup founders, consultants, marketers, students, and anyone who regularly nee
 Large enterprise teams with strict brand guidelines where pixel-perfect brand compliance is required.
 
 ### Gamma Pricing 2026
-Free: unlimited presentations (Gamma watermark). Plus $8/month (no watermark, custom domain). Pro $15/month (analytics, custom fonts).
+Free: 400 one-time AI credits (Gamma branding). Plus $8/month (no branding, 1,000 AI credits a month). Pro $15/month (4,000 AI credits a month, detailed analytics, custom domains).
 
 ### Reviewer's Honest Take
 In documented testing, Gamma was given the prompt: 'Create a 10-slide deck on AI tools for small businesses.' In 90 seconds it returned a fully designed, visually consistent presentation with headers, body copy, icons, and a colour scheme, needing only light content edits. The time saving compared to building slides from scratch in PowerPoint is enormous.
@@ -1219,10 +1219,10 @@ A generous free tier, a wide range of input formats and a low-priced paid plan m
 People who already have source material, such as a report, PDF, webpage or rough notes, and want a designed first-draft deck quickly. It suits freelancers, students and small teams who want a free tier without a watermark and do not need enterprise controls.
 
 ### Who Should NOT Use Presentation Intelligence (Pi)
-Teams that need SSO, admin controls or a published security and compliance package, because Pi lists only a Free and a Basic plan with no public enterprise tier. Also skip it if you want a large, independently verified review base before buying: Pi is a newer entrant than Gamma or Beautiful.ai, and public third-party coverage is still small.
+Teams that need SSO, admin controls or a published security and compliance package, because Pi lists no public enterprise tier. Also skip it if you want a large, independently verified review base before buying: Pi is a newer entrant than Gamma or Beautiful.ai, and public third-party coverage is still small.
 
 ### Presentation Intelligence (Pi) Pricing 2026
-Pi pricing (verify on pi.inc): Free: forever free, roughly 40 AI generation credits, custom templates and font upload, no watermark on exported decks. Basic: $9.90 per month, or $89.90 per year (about $7.50 per month), described as unlimited AI generation, editing, image creation and export. No team or enterprise tier is published. Figures come from Pi's own pricing page as checked in September 2026 and are consistent with independent listings, but plan limits for young products change, so confirm before you subscribe.
+Pi pricing (from pi.inc/pricing, October 2026): Free: 400-point welcome bonus, up to 10 cards per prompt, 100 MB storage; export requires a membership. Pro: $168 per year (about $14 per month), or $240 a year paid monthly; 12,000 credits a month, up to 50 cards per prompt, 100 GB storage. Max: $336 per year. Studio: $888 per year. No team or enterprise tier is published.
 
 ### Reviewer's Honest Take
 The free plan is the headline. Published figures describe roughly 40 AI generation credits, custom templates, font upload and no watermark on exported decks. A no-watermark free tier is unusual in this category, which makes Pi a low-risk place to judge output quality before paying anything. The second distinctive point is input range. Pi accepts a PDF, Word document, PowerPoint file, webpage or image as the starting point, so it fits the common job of turning something that already exists into slides. Built-in analytics on shared decks, such as opens and per-page reading time, are described as part of the product rather than a premium add-on. The honest caveat is evidence. Independent review coverage is thin, and the Trustpilot listing under the name PI belongs to the unrelated pi.ai chatbot, not this product. Reviewers also report that very large source files, such as 400-plus-page PDFs, and some image uploads can fail on import. Credits on the free plan are capped, so heavy users will hit the Basic upgrade quickly. Treat the pricing below as indicative and confirm it on pi.inc before buying, since Pi is a young product and plans can change.
@@ -1264,7 +1264,7 @@ Non-designers who need a professional-looking business site, portfolio or landin
 Designers and developers who want precise control over layout and spacing — conversational-only editing becomes a constraint rather than a convenience at that level of detail. Also skip if you are building a serious online store, where dedicated commerce platforms are far stronger, or if you need application logic and user accounts, which is a job for a vibe-coding tool like Lovable.
 
 ### Wegic Pricing 2026
-Wegic pricing (2026): Free: starter credits on signup, limited pages and monthly visitors, Wegic badge visible on the published site. Trial ($2.99 one-time): one full website generation — the cheapest honest way to judge output quality. Entry paid tier (from around $11.90/month): monthly credit allowance, more pages and visitors, badge removed, code download. Higher tier (from around $19.90/month): larger credit pool, custom domain, Google Analytics, advanced design control. Annual billing cuts the effective monthly rate substantially. Two cautions: free and trial sites go offline without a paid subscription, and Wegic's pricing has changed several times — treat these figures as indicative and confirm on Wegic's own pricing page.
+Wegic pricing (from wegic.ai/pricing, October 2026): Free credits: 100 credits on signup for chatting with the AI; website generation itself is a paid feature. Trial pack ($2.99 one-time): one website generation, no edit credits. Starter ($23.90/month billed annually, $286.80/year; $39.90 billed monthly): 600 credits a month, .wegic.net domain, code export, watermark removed. Premium ($41.90/month billed annually, $502.80/year): 2,000 credits a month, custom domain, SEO optimization. Credits do not roll over, and plan payments are non-refundable.
 
 ### Reviewer's Honest Take
 The speed is real and it is the headline. Independent reviewers consistently describe a full first draft arriving in roughly a minute from a conversational brief — layout, copy and responsive behaviour included. For anyone who has spent a weekend fighting a WordPress theme, that is a meaningful change in how the job feels. Code export deserves more attention than it usually gets. Most AI website builders are deliberate walled gardens; being able to download the underlying code means Wegic is a starting point rather than a commitment. That single feature substantially lowers the risk of trying it. The most documented complaint across reviews is credit consumption on failed edits. Credits are spent whether or not the AI produces something you keep, and they do not roll over between months. The practical effect is that the working cost is higher than the headline price for anyone who iterates a lot — which is most people, since iteration is the whole workflow. Two smaller notes. Reviewers report editor slowness and occasional crashes. And Wegic has restructured its pricing more than once, which is why published figures differ between sources — verify current rates directly before buying.
@@ -1865,7 +1865,7 @@ Relevance AI, Lindy, and Gumloop all build AI agents, but they solve different p
 MCP (Model Context Protocol) is an open standard, introduced by Anthropic in November 2024, that lets AI models connect to external tools and data sources through one shared interface instead of a custom-built connector for every model-and-tool pair. By mid-2026 it has been adopted by OpenAI, Cursor, Windsurf, VS Code, n8n, Zapier, and thousands of community-built servers — making it the closest…
 
 ---
-# SECTION: PRICING TRACKER (9 tools, snapshot 2026-10-23)
+# SECTION: PRICING TRACKER (14 tools, snapshot 2026-10-23)
 Page: https://ainexustools.online/pricing-tracker/
 Data: https://ainexustools.online/data/ai-tool-pricing.json
 Each price was checked against the vendor's own pricing page on the date shown. A missing value means "not verified", not "does not exist".
@@ -1882,13 +1882,18 @@ Source: https://elevenlabs.io/pricing
 
 ## Gamma pricing (verified 2026-10-22)
 Free plan available. Cheapest paid price not verified.
-Plans: Free: $0, 400 AI credits (one-time) | Plus: 1,000 AI credits/month | Pro: 4,000 AI credits/month | Ultra: 20,000 AI credits/month | Business: 10,000 AI credits/seat/month
+Plans: Free: $0, 400 AI credits (one-time) | Plus: 1,000 AI credits/month | Pro: 4,000 AI credits/month | Ultra: 20,000 AI credits/month | Business: 10,000 AI credits/member/month
 Source: https://gamma.app/pricing
 
 ## Jasper pricing (verified 2026-10-22)
 No free plan, 7-day trial. Cheapest paid plan: $69/month billed monthly or $59/month billed annually.
 Plans: Pro: $69/month billed monthly, $59/month billed annually | Business: custom pricing
 Source: https://www.jasper.ai/pricing
+
+## Make pricing (verified 2026-10-23)
+Free plan available. Cheapest paid price not verified.
+Plans: Free: $0, 1,000 credits/month | Make Plan: price not verified
+Source: https://www.make.com/en/pricing
 
 ## Murf AI pricing (verified 2026-10-22)
 Free plan available. Cheapest paid price not verified.
@@ -1910,10 +1915,30 @@ Free plan available. Cheapest paid plan: $19.99/month billed monthly or $11.99/m
 Plans: Free: $0, 10 AI credits (one-time) | Essentials: $19.99/month billed monthly, $11.99/month billed annually, 450 AI credits/month | Pro: $39.99/month billed monthly, $23.99/month billed annually, 1,200 AI credits/month | Teams: $84.99/month billed monthly, $49.99/month billed annually, 3,000 AI credits/month | Business: custom pricing
 Source: https://async.com/pricing
 
+## Presentation Intelligence (Pi) pricing (verified 2026-10-23)
+Free plan available. Cheapest paid plan: $14/month billed annually.
+Plans: Free: $0, 400 points welcome bonus | Pro: $14/month billed annually, 12,000 credits/month | Max: $28/month billed annually | Studio: $74/month billed annually
+Source: https://www.pi.inc/pricing
+
+## Renderforest pricing (verified 2026-10-23)
+Free plan available. Cheapest paid plan: 499 INR/month billed annually.
+Plans: Free: $0 | Lite: 499 INR/month billed annually, 9,600 AI credits/year | Pro: 1499 INR/month billed annually, 28,800 AI credits/year | Business: 2999 INR/month billed annually, 72,000 AI credits/year
+Source: https://www.renderforest.com/pricing
+
 ## Transkriptor pricing (verified 2026-10-23)
-No free plan or trial. Cheapest paid plan: $9.99/month billed monthly or $8.33/month billed annually.
+No free plan, free trial. Cheapest paid plan: $9.99/month billed monthly or $8.33/month billed annually.
 Plans: Lite: $9.99/month billed monthly, 300 minutes/month | Pro: $19.99/month billed monthly, $8.33/month billed annually, 2,400 minutes/month | Team: $30/month billed monthly, $20/month billed annually, 3,000 minutes/seat/month
 Source: https://transkriptor.com/pricing/
+
+## Wegic pricing (verified 2026-10-23)
+No free plan or trial. Cheapest paid plan: $39.9/month billed monthly or $23.9/month billed annually.
+Plans: Trial pack: $2.99 one-time, 1 website generation | Starter: $39.9/month billed monthly, $23.9/month billed annually, 600 credits/month | Premium: $41.9/month billed annually, 2,000 credits/month
+Source: https://wegic.ai/pricing
+
+## Zapier pricing (verified 2026-10-23)
+Free plan available. Cheapest paid plan: $29.99/month billed monthly or $19.99/month billed annually.
+Plans: Free: $0, 100 tasks/month | Professional: $29.99/month billed monthly, $19.99/month billed annually, 750 tasks/month (entry tier) | Team: $103.5/month billed monthly, $69/month billed annually, 2,000 tasks/month (entry tier) | Enterprise: custom pricing
+Source: https://zapier.com/pricing
 
 ---
 # SECTION: CALCULATORS

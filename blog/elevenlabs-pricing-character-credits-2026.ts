@@ -48,6 +48,7 @@ const post: BlogPost = {
 <p>Choose the plan from finished minutes, not from the headline credit count. Free is for testing and requires attribution. Starter covers a light commercial workflow at about 30 minutes. Creator is the practical step for a regular channel, while Pro and above are for larger recurring output. Model language, voice, and product usage can change the conversion, so treat the minute figures as estimates.</p>
 
 <ol style="margin:12px 0 24px;padding-left:22px;line-height:1.9;"><li>Estimate your finished audio minutes for a normal month.</li><li>Choose the plan whose credit allowance covers that volume.</li><li>Check commercial rights and overage pricing before publishing.</li></ol>
+{{verdict:elevenlabs}}
 
 <div style="margin:14px 0 24px;">
   <p style="margin:0 0 6px;font-size:14px;">Check the plan that fits your volume against your own text:</p>

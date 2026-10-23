@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "snapshotISO": "2026-10-23",
   "source": "lib/vendor-facts.data.json",
-  "toolCount": 9,
+  "toolCount": 14,
   "tools": [
     {
       "slug": "descript",
@@ -228,7 +228,7 @@
           "priceMonthlyBilledAnnually": null,
           "oneTimePrice": null,
           "customPricing": false,
-          "allowance": "10,000 AI credits/seat/month",
+          "allowance": "10,000 AI credits/member/month",
           "commercialUse": null
         }
       ]
@@ -264,6 +264,42 @@
           "priceMonthlyBilledAnnually": null,
           "oneTimePrice": null,
           "customPricing": true,
+          "allowance": null,
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "make",
+      "name": "Make",
+      "category": "Productivity",
+      "currency": "USD",
+      "pricingPageUrl": "https://www.make.com/en/pricing",
+      "verifiedISO": "2026-10-23",
+      "freeAccess": "free-plan",
+      "trialDays": null,
+      "startsAtMonthly": null,
+      "startsAtMonthlyBilledAnnually": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "1,000 credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "make-plan",
+          "name": "Make Plan",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
           "allowance": null,
           "commercialUse": null
         }
@@ -491,13 +527,129 @@
       ]
     },
     {
+      "slug": "presentation-intelligence",
+      "name": "Presentation Intelligence (Pi)",
+      "category": "Design",
+      "currency": "USD",
+      "pricingPageUrl": "https://www.pi.inc/pricing",
+      "verifiedISO": "2026-10-23",
+      "freeAccess": "free-plan",
+      "trialDays": null,
+      "startsAtMonthly": null,
+      "startsAtMonthlyBilledAnnually": 14,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "400 points welcome bonus",
+          "commercialUse": null
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 14,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "12,000 credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "max",
+          "name": "Max",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 28,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": null
+        },
+        {
+          "id": "studio",
+          "name": "Studio",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 74,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "renderforest",
+      "name": "Renderforest",
+      "category": "Video",
+      "currency": "INR",
+      "pricingPageUrl": "https://www.renderforest.com/pricing",
+      "verifiedISO": "2026-10-23",
+      "freeAccess": "free-plan",
+      "trialDays": null,
+      "startsAtMonthly": null,
+      "startsAtMonthlyBilledAnnually": 499,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": null
+        },
+        {
+          "id": "lite",
+          "name": "Lite",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 499,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "9,600 AI credits/year",
+          "commercialUse": null
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 1499,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "28,800 AI credits/year",
+          "commercialUse": null
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 2999,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "72,000 AI credits/year",
+          "commercialUse": null
+        }
+      ]
+    },
+    {
       "slug": "transkriptor",
       "name": "Transkriptor",
       "category": "Audio",
       "currency": "USD",
       "pricingPageUrl": "https://transkriptor.com/pricing/",
       "verifiedISO": "2026-10-23",
-      "freeAccess": null,
+      "freeAccess": "trial-only",
       "trialDays": null,
       "startsAtMonthly": 9.99,
       "startsAtMonthlyBilledAnnually": 8.33,
@@ -533,6 +685,111 @@
           "oneTimePrice": null,
           "customPricing": false,
           "allowance": "3,000 minutes/seat/month",
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "wegic",
+      "name": "Wegic",
+      "category": "Design",
+      "currency": "USD",
+      "pricingPageUrl": "https://wegic.ai/pricing",
+      "verifiedISO": "2026-10-23",
+      "freeAccess": null,
+      "trialDays": null,
+      "startsAtMonthly": 39.9,
+      "startsAtMonthlyBilledAnnually": 23.9,
+      "plans": [
+        {
+          "id": "trial-pack",
+          "name": "Trial pack",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": 2.99,
+          "customPricing": false,
+          "allowance": "1 website generation",
+          "commercialUse": null
+        },
+        {
+          "id": "starter",
+          "name": "Starter",
+          "isFree": false,
+          "priceMonthly": 39.9,
+          "priceMonthlyBilledAnnually": 23.9,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "600 credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "premium",
+          "name": "Premium",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 41.9,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "2,000 credits/month",
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "zapier",
+      "name": "Zapier",
+      "category": "Productivity",
+      "currency": "USD",
+      "pricingPageUrl": "https://zapier.com/pricing",
+      "verifiedISO": "2026-10-23",
+      "freeAccess": "free-plan",
+      "trialDays": 14,
+      "startsAtMonthly": 29.99,
+      "startsAtMonthlyBilledAnnually": 19.99,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "100 tasks/month",
+          "commercialUse": null
+        },
+        {
+          "id": "professional",
+          "name": "Professional",
+          "isFree": false,
+          "priceMonthly": 29.99,
+          "priceMonthlyBilledAnnually": 19.99,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "750 tasks/month (entry tier)",
+          "commercialUse": null
+        },
+        {
+          "id": "team",
+          "name": "Team",
+          "isFree": false,
+          "priceMonthly": 103.5,
+          "priceMonthlyBilledAnnually": 69,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "2,000 tasks/month (entry tier)",
+          "commercialUse": null
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
           "commercialUse": null
         }
       ]

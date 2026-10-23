@@ -199,7 +199,7 @@ const post: BlogPost = {
     <tr style="background:rgba(13,148,136,.03);">
       <td style="padding:10px 14px;font-weight:600;color:#0D9488;">Workflow automation</td>
       <td style="padding:10px 14px;">Make.com</td>
-      <td style="padding:10px 14px;">Yes — 1,000 ops/month</td>
+      <td style="padding:10px 14px;">Yes — 1,000 credits/month</td>
       <td style="padding:10px 14px;">$9/month</td>
     </tr>
   </tbody>
@@ -307,7 +307,7 @@ const post: BlogPost = {
 <h2>8. AI Workflow Automation: Make.com</h2>
 <p>Every tool above this point operates independently unless something connects them. Think of a new Tidio conversation that should create a Taskade task, or a form submission that should trigger a Fireflies follow-up email.</p>
 <p>Make.com is the glue layer: a visual, no-code automation builder that connects apps with branching logic. It needs no development resources a solopreneur doesn't have.</p>
-<p>Make's pricing model charges per "operation," one action inside a scenario, rather than per completed automation run. That keeps costs predictable for moderate-complexity workflows. The Core plan starts at $9/month and covers roughly 10,000 operations. That's comfortably enough for a solopreneur connecting 3–5 tools with a handful of automated workflows.</p>
+<p>Make bills in credits rather than per completed automation run. Its free plan includes 1,000 credits a month, and the paid Make Plan is priced by credit volume; the pricing page shows $9/month at 5,000 credits. That is usually enough for a solopreneur connecting a few tools, but check the credit slider with your own volume.</p>
 <p>For solopreneurs comfortable with more technical setup who want the lowest cost at higher volume, <a href="/tools/n8n/">n8n</a>'s self-hosted free tier is the stronger long-term option. Anyone whose work is closer to long, branching research or content projects than fixed workflow triggers might prefer <a href="/tools/flowith/" style="color:rgb(13,148,136);">Flowith</a>'s canvas-based agent instead — a different shape of tool aimed at multi-step thinking rather than app-to-app automation. The full tradeoff analysis is in <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier 2026</a> and <a href="/blog/best-no-code-ai-automation-tools-2026/">Best No-Code AI Automation Tools 2026</a>.</p>
 <p><a href="https://n8n.io/" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try n8n Free →</a></p>
 <p><strong>India pricing note:</strong> About ₹750/month for the Core plan at current exchange rates; no India-specific discount is currently offered.</p>

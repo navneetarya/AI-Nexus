@@ -50,6 +50,7 @@ const post: BlogPost = {
 <p>"How much does it actually cost to clone a voice?" has a different answer depending on which tool you ask. ElevenLabs sells cloning as a monthly-plan feature. Resemble AI bills per second of audio. <a href="/tools/descript/">Descript</a> bundles it into an editing subscription. And Murf, despite selling voiceovers to everyone, doesn't sell cloning to almost anyone. Here's what each one charges.</p>
 
 <p>This guide uses each vendor's published pricing page plus recent pricing reviews. For a feature-by-feature look at cloning quality rather than just price, see our <a href="/blog/best-ai-voice-cloning-tools-2026/">best AI voice cloning tools guide</a>.</p>
+{{verdict:elevenlabs}}
 
 <h2>TL;DR: cloning pricing at a glance</h2>
 

@@ -127,7 +127,7 @@ const post: BlogPost = {
     </tr>
     <tr>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;"><a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Make.com</a></td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — 1,000 ops/mo</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Yes — 1,000 credits/mo</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$9/mo</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Automation-native teams adding AI</td>
     </tr>
@@ -216,7 +216,7 @@ const post: BlogPost = {
   <a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Make.com Free →</a>
 </div>
 
-<p><strong>Zapier</strong> launched its Agents product in late 2024. It lets agents watch triggers and run multi-step actions on their own. This works across Zapier's 6,000+ app integrations. For SMBs already invested in the Zapier ecosystem, Agents adds new behaviour on its own, without switching platforms. Starter plans begin at $19.99/month. <a href="https://zapier.com/" target="_blank" rel="noopener">Zapier</a></p>
+<p><strong>Zapier</strong> launched its Agents product in late 2024. It lets agents watch triggers and run multi-step actions on their own. This works across Zapier's 9,000+ app integrations. For SMBs already invested in the Zapier ecosystem, Agents adds new behaviour on its own, without switching platforms. Paid plans begin at $19.99/month billed annually (Professional). <a href="https://zapier.com/" target="_blank" rel="noopener">Zapier</a></p>
 <div style="margin:14px 0 24px;">
   <a href="https://zapier.com/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit Zapier →</a>
 </div>
@@ -293,7 +293,7 @@ const post: BlogPost = {
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 12px;font-weight:600;color:#0D9488;">Make.com</td>
-      <td style="padding:10px 12px;">✅ 1,000 ops/mo</td>
+      <td style="padding:10px 12px;">✅ 1,000 credits/mo</td>
       <td style="padding:10px 12px;">$9/mo</td>
       <td style="padding:10px 12px;">⚡ Add-on</td>
       <td style="padding:10px 12px;">✅ Yes</td>

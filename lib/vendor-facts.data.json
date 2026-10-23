@@ -415,6 +415,10 @@
       "indiaNote": "The pricing FAQ lists PayPal and major credit and debit cards; UPI is not listed.",
       "sources": [
         {
+          "label": "Async pricing page (plan limits, credits, payment FAQ)",
+          "url": "https://async.com/pricing"
+        },
+        {
           "label": "Async Creator pricing help article",
           "url": "https://help.async.com/en/articles/6535067-how-does-async-creator-pricing-work"
         },
@@ -774,21 +778,35 @@
             "amount": 10000,
             "unit": "credits",
             "period": "month",
-            "label": "10,000 AI credits/seat/month"
+            "label": "10,000 AI credits/member/month"
           },
           "commercialUse": null,
           "highlights": [
-            "Minimum 10 seats (reported)"
+            "SSO authentication",
+            "100 custom domains",
+            "Training opt-out locked for the workspace"
           ],
-          "notes": "Workspace shares a credit pool. Dollar price and seat minimum not shown on a readable official page."
+          "notes": "Priced per member and billed annually only; Gamma's help center lists $40 per member per month. Self-serve. Unused credits roll over up to twice the monthly amount."
         }
       ],
       "card": {
         "bestFor": "Founders, students and educators building decks and docs from a prompt",
         "skipIf": "You need more layout control than PowerPoint offers"
       },
-      "indiaNote": "Prices are subject to tax depending on your location.",
+      "indiaNote": "Gamma accepts UPI in India, plus major credit and debit cards. Its pricing page shows Indian visitors rupee prices: Plus ₹400 and Pro ₹950 per seat per month on annual billing (₹4,800 and ₹11,400 per seat per year). Prices are subject to tax.",
       "sources": [
+        {
+          "label": "Gamma pricing page (INR prices shown to Indian visitors)",
+          "url": "https://gamma.app/pricing"
+        },
+        {
+          "label": "Gamma help: payment methods (UPI in India)",
+          "url": "https://help.gamma.app/en/articles/11048302-what-payment-methods-does-gamma-accept"
+        },
+        {
+          "label": "Gamma help: Business plan pricing",
+          "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business"
+        },
         {
           "label": "Gamma help: upgrade and plans",
           "url": "https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription"
@@ -807,8 +825,11 @@
       "pricingPageUrl": "https://transkriptor.com/pricing/",
       "verifiedISO": "2026-10-23",
       "currency": "USD",
-      "freeAccess": null,
-      "trial": null,
+      "freeAccess": "trial-only",
+      "trial": {
+        "days": null,
+        "cardRequired": null
+      },
       "plans": [
         {
           "id": "lite",
@@ -883,7 +904,12 @@
         "skipIf": "Your monthly transcription volume varies a lot, or recordings have overlapping speakers"
       },
       "indiaNote": "The pricing page lists USD prices. Its FAQ says to pay with a Visa or Mastercard credit card (debit and AMEX cards can fail) or through the App Store or Play Store.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Transkriptor home page (free trial offer)",
+          "url": "https://transkriptor.com/"
+        }
+      ],
       "matcherTask": "transcription"
     },
     {
@@ -994,6 +1020,454 @@
         }
       ],
       "matcherTask": "transcription"
+    },
+    {
+      "slug": "renderforest",
+      "name": "Renderforest",
+      "status": "verified",
+      "pricingPageUrl": "https://www.renderforest.com/pricing",
+      "verifiedISO": "2026-10-23",
+      "currency": "INR",
+      "freeAccess": "free-plan",
+      "trial": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [
+            "Test credits to start creating",
+            "No credit card required"
+          ],
+          "notes": "The pricing page offers a free start with test credits; it does not state the credit amount or free export limits."
+        },
+        {
+          "id": "lite",
+          "name": "Lite",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 499,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 9600,
+            "unit": "credits",
+            "period": "year",
+            "label": "9,600 AI credits/year"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "HD720 video template exports and video editing",
+            "600 minutes of text to speech",
+            "10 GB cloud storage"
+          ],
+          "notes": "Annual plans are paid upfront. Monthly billing is offered, but its price was not readable on the page."
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 1499,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 28800,
+            "unit": "credits",
+            "period": "year",
+            "label": "28,800 AI credits/year"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "HD1080 video template exports",
+            "Premium website on your own domain",
+            "1,200 minutes of text to speech",
+            "50 GB cloud storage"
+          ],
+          "notes": "List price on annual billing, paid upfront. A first-year discount was running when checked; promotions are not stored."
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 2999,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 72000,
+            "unit": "credits",
+            "period": "year",
+            "label": "72,000 AI credits/year"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "4K video template exports",
+            "Reseller license for up to 10 clients",
+            "Team management",
+            "3,600 minutes of text to speech",
+            "100 GB cloud storage per seat"
+          ],
+          "notes": "List price on annual billing, paid upfront. A first-year discount was running when checked; promotions are not stored."
+        }
+      ],
+      "card": {
+        "bestFor": "Small businesses wanting video, logo and website under one subscription",
+        "skipIf": "You want the single best tool for one job, like video or logos"
+      },
+      "indiaNote": "Prices are the rupee prices Renderforest's pricing page shows to visitors in India. Payment methods are not listed on that page.",
+      "sources": []
+    },
+    {
+      "slug": "zapier",
+      "name": "Zapier",
+      "status": "verified",
+      "pricingPageUrl": "https://zapier.com/pricing",
+      "verifiedISO": "2026-10-23",
+      "currency": "USD",
+      "freeAccess": "free-plan",
+      "trial": {
+        "days": 14,
+        "cardRequired": false
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 100,
+            "unit": "tasks",
+            "period": "month",
+            "label": "100 tasks/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Two-step Zaps only",
+            "Unlimited Zaps, Tables and Forms"
+          ],
+          "notes": "New accounts also get a 14-day Professional trial with no credit card required."
+        },
+        {
+          "id": "professional",
+          "name": "Professional",
+          "isFree": false,
+          "priceMonthly": 29.99,
+          "priceMonthlyBilledAnnually": 19.99,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 750,
+            "unit": "tasks",
+            "period": "month",
+            "label": "750 tasks/month (entry tier)"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Multi-step Zaps",
+            "Unlimited premium apps",
+            "Webhooks"
+          ],
+          "notes": "Price rises with the task tier; for example 2,000 tasks is $49/month billed annually ($73.50 monthly). Tasks reset monthly even on annual billing."
+        },
+        {
+          "id": "team",
+          "name": "Team",
+          "isFree": false,
+          "priceMonthly": 103.5,
+          "priceMonthlyBilledAnnually": 69,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 2000,
+            "unit": "tasks",
+            "period": "month",
+            "label": "2,000 tasks/month (entry tier)"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "25 users",
+            "Shared Zaps and app connections",
+            "SAML single sign-on"
+          ],
+          "notes": "Team starts at the 2,000-task tier; price rises with the task tier."
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [
+            "Unlimited users",
+            "Annual task limits"
+          ],
+          "notes": "Custom pricing through sales."
+        }
+      ],
+      "card": {
+        "bestFor": "Non-technical teams needing simple, low-to-moderate volume automations fast",
+        "skipIf": "You run high-volume or multi-step workflows on a tight budget"
+      },
+      "indiaNote": "Zapier can bill in INR. Prices are set in USD and converted at the exchange rate at the time of payment.",
+      "sources": [
+        {
+          "label": "Zapier task usage rates",
+          "url": "https://zapier.com/pricing/rates"
+        }
+      ]
+    },
+    {
+      "slug": "make",
+      "name": "Make",
+      "status": "verified",
+      "pricingPageUrl": "https://www.make.com/en/pricing",
+      "verifiedISO": "2026-10-23",
+      "currency": "USD",
+      "freeAccess": "free-plan",
+      "trial": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 1000,
+            "unit": "credits",
+            "period": "month",
+            "label": "1,000 credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "No-code visual workflow builder",
+            "3,500+ apps",
+            "15-minute minimum interval between runs"
+          ],
+          "notes": null
+        },
+        {
+          "id": "make-plan",
+          "name": "Make Plan",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [
+            "Unlimited active scenarios",
+            "Access to 300+ Make API endpoints",
+            "Teams and team roles"
+          ],
+          "notes": "Priced by monthly credit volume. At 5,000 credits a month the pricing page shows $9/month ($1.80 per 1,000 credits) next to a 'Save 15%' label; the billing interval behind that figure was not readable, so no price is stored. An Enterprise plan is available through sales."
+        }
+      ],
+      "card": {
+        "bestFor": "Teams outgrowing Zapier's lower tiers who need real branching logic",
+        "skipIf": "You want the largest app library; Zapier offers more pre-built connectors"
+      },
+      "indiaNote": null,
+      "sources": []
+    },
+    {
+      "slug": "presentation-intelligence",
+      "name": "Presentation Intelligence (Pi)",
+      "status": "verified",
+      "pricingPageUrl": "https://www.pi.inc/pricing",
+      "verifiedISO": "2026-10-23",
+      "currency": "USD",
+      "freeAccess": "free-plan",
+      "trial": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 400,
+            "unit": "other",
+            "unitLabel": "points",
+            "period": "one-time",
+            "label": "400 points welcome bonus"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Up to 10 cards per prompt",
+            "100 MB cloud storage",
+            "Export requires a membership"
+          ],
+          "notes": "Extra points can be earned by inviting friends."
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 14,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 12000,
+            "unit": "credits",
+            "period": "month",
+            "label": "12,000 credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Up to 50 cards per prompt",
+            "100 GB cloud storage",
+            "Multi-format export"
+          ],
+          "notes": "$168 per year. The pricing page says this saves $72 a year against paying monthly ($240 a year)."
+        },
+        {
+          "id": "max",
+          "name": "Max",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 28,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [
+            "100 GB cloud storage",
+            "Advanced AI features",
+            "Multi-format export"
+          ],
+          "notes": "$336 per year. The pricing page says this saves $132 a year against paying monthly ($468 a year)."
+        },
+        {
+          "id": "studio",
+          "name": "Studio",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 74,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [
+            "100 GB cloud storage",
+            "Advanced AI features",
+            "Multi-format export"
+          ],
+          "notes": "$888 per year. The pricing page says this saves $192 a year against paying monthly ($1,080 a year)."
+        }
+      ],
+      "card": {
+        "bestFor": "Anyone turning an existing document, PDF or webpage into a deck fast",
+        "skipIf": "You need SSO, admin controls or a large independent review base"
+      },
+      "indiaNote": null,
+      "sources": [],
+      "matcherTask": "presentations"
+    },
+    {
+      "slug": "wegic",
+      "name": "Wegic",
+      "status": "verified",
+      "pricingPageUrl": "https://wegic.ai/pricing",
+      "verifiedISO": "2026-10-23",
+      "currency": "USD",
+      "freeAccess": null,
+      "trial": null,
+      "plans": [
+        {
+          "id": "trial-pack",
+          "name": "Trial pack",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": 2.99,
+          "customPricing": false,
+          "allowance": {
+            "amount": 1,
+            "unit": "other",
+            "unitLabel": "website generation",
+            "period": "one-time",
+            "label": "1 website generation"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "No edit credits included"
+          ],
+          "notes": "New sign-ups get 100 free credits for chatting with the AI, but website generation itself is a paid feature. Plan payments are non-refundable."
+        },
+        {
+          "id": "starter",
+          "name": "Starter",
+          "isFree": false,
+          "priceMonthly": 39.9,
+          "priceMonthlyBilledAnnually": 23.9,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 600,
+            "unit": "credits",
+            "period": "month",
+            "label": "600 credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Permanent .wegic.net domain while subscribed",
+            "Code export",
+            "Wegic watermark removal"
+          ],
+          "notes": "$286.80 per year on annual billing. Unused credits are cleared at the end of each monthly cycle."
+        },
+        {
+          "id": "premium",
+          "name": "Premium",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 41.9,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 2000,
+            "unit": "credits",
+            "period": "month",
+            "label": "2,000 credits/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Custom domain",
+            "SEO optimization",
+            "Up to 70% off extra credit purchases"
+          ],
+          "notes": "$502.80 per year on annual billing. Monthly-billing price was not readable on the page."
+        }
+      ],
+      "card": {
+        "bestFor": "Non-designers who need a business site or landing page live fast",
+        "skipIf": "You need precise layout control or a serious online store"
+      },
+      "indiaNote": "Wegic accepts credit and debit cards, Google Pay and Amazon Pay. American Express is not accepted for INR payments.",
+      "sources": []
     }
   ]
 }

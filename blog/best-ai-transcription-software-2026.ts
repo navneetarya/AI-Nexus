@@ -112,6 +112,7 @@ const post: BlogPost = {
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">The best AI transcription software in 2026: <strong><a href="/tools/transkriptor/">Transkriptor</a></strong> (free trial, from $9.99/month) wins for transcribing files and live calls across 100+ languages. <strong>Otter.ai</strong> (free 300 min/month, from $8.33/month annual) wins for live, in-meeting notes and captions. <strong><a href="/tools/descript/">Descript</a></strong> (free, Hobbyist from $16/month billed annually) wins if you need to edit the recording by editing its transcript.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong><a href="/tools/fireflies/">Fireflies</a>.ai</strong> (free, from $10/month) wins for CRM-connected meeting recording with automatic action items. <strong>Rev</strong> (free 45 min/month AI, human transcription from $1.99/minute) wins when 99%+ accuracy for a legal or compliance record matters more than speed or price.</p>
 </div>
+{{verdict:transkriptor}}
 
 <h2>Best AI Transcription Software 2026: Five Different Jobs, One Search Term</h2>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A microphone on a desk in front of a laptop, representing an audio recording being prepared for transcription" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />

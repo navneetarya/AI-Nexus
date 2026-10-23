@@ -172,16 +172,16 @@ export const COMPARE_ARTICLES: CompareArticle[] = [
     keyword: "aippt vs pi presentation intelligence",
     publishDate: 'October 2026',
     lastUpdated: '2026-10-08',
-    quickAnswer: "Pi is the better first try: its own materials describe a watermark-free free plan, and Basic is $9.90 a month. AiPPT is the better fit for longer or repeated work: paid plans allow 20 or 50 slides per deck and ten concurrent tasks, and a one-time Lifetime plan exists. Pi's figures are vendor-published, so test its free export first.",
-    intro: "Both tools promise the same thing: give an AI a prompt, a PDF or a Word file and get back a designed slide deck. The limits underneath are different enough to matter, and the evidence behind them is uneven. AiPPT publishes a readable plan table with credit and slide-count limits. Pi's pricing page does not render for automated readers, so most of Pi's plan details below come from Pi's own published material plus one independent review, and are flagged as such.\n\nSingle-tool write-ups: [Pi review](/tools/presentation-intelligence/) and [AiPPT review](/tools/aippt/). For the wider field, see [best AI presentation tools](/blog/best-ai-presentation-tools-2026/).",
+    quickAnswer: "Pi is the better first try for turning an existing document into slides: its free plan gives a 400-point welcome bonus to judge output, though Pi's pricing page says export requires a membership, and Pro is $168 a year (about $14 a month). AiPPT is the better fit for longer or repeated work: paid plans allow 20 or 50 slides per deck and ten concurrent tasks, and a one-time Lifetime plan exists.",
+    intro: "Both tools promise the same thing: give an AI a prompt, a PDF or a Word file and get back a designed slide deck. The limits underneath are different enough to matter, and the evidence behind them is uneven. AiPPT publishes a readable plan table with credit and slide-count limits. Pi's pricing page lists its plans, points and export rule, so the Pi figures below come from that page.\n\nSingle-tool write-ups: [Pi review](/tools/presentation-intelligence/) and [AiPPT review](/tools/aippt/). For the wider field, see [best AI presentation tools](/blog/best-ai-presentation-tools-2026/).",
     sections: [
       {
-        heading: "The real difference: a simple offer vs a plan ladder with published limits",
-        content: "Pi's offer is simple: a free plan and one paid plan. According to Pi's own articles, Free includes roughly 40 AI generation credits, custom templates, font upload and no watermark. Basic is $9.90 a month ($89.90 a year, about $7.50 a month) with unlimited AI generation, editing, image creation and export. Pi's pricing FAQ adds that extra credits can be earned through daily login, inviting friends and sharing documents.\n\nAiPPT is a ladder. Its price page shows Free (140 credits, one-time), Plus (600 credits a month) and Pro (1,200 credits a month). The caps rise by tier: 10, 20 and 50 slides per AI-generated deck, with better generation models at each step. A one-time Lifetime membership also exists, according to its FAQ.\n\nSo the choice is between simplicity and a ceiling you can see in advance. Pi has fewer decisions to make. AiPPT tells you exactly where each plan stops.",
+        heading: "The real difference: two plan ladders with different limits",
+        content: "Pi's pricing page lists Free, Pro, Max and Studio. Free gives a 400-point welcome bonus, up to 10 cards per prompt and 100 MB of storage, and says export requires a membership. Pro is $168 a year (about $14 a month, or $240 a year paid monthly) with 12,000 credits a month and up to 50 cards per prompt. Extra points can be earned by inviting friends.\n\nAiPPT is a ladder too. Its price page shows Free (140 credits, one-time), Plus (600 credits a month) and Pro (1,200 credits a month). The caps rise by tier: 10, 20 and 50 slides per AI-generated deck, with better generation models at each step. A one-time Lifetime membership also exists, according to its FAQ.\n\nSo the choice comes down to deck length and what you need to export. Pi's free plan is for judging output, and AiPPT caps free AI-generated decks at 10 slides.",
       },
       {
         heading: "Pi: content and design generated together",
-        content: "Pi describes itself as AI-native. It generates the content and the layout together instead of pouring text into a fixed template, and its own articles quote generation times of 10 to 15 seconds. Accepted starting points include a prompt, PDF, Word document, PowerPoint file, webpage or image. Decks are described as responsive across desktop, tablet and mobile, and shared decks include viewer analytics such as opens and per-page reading time, as noted in our review.\n\n**Where it falls short:** Most public material on Pi's pricing and performance is written by Pi itself, including several \"best AI presentation tools\" lists that rank Pi first. That is useful for numbers but weak as independent evidence. One third-party review we found says the free plan starts with 400 credits at roughly 40 per deck (about ten decks), while Pi's own articles say about 40 credits. The same review says file export requires Basic, while Pi's articles say free decks carry no watermark. Both can be true if free decks can be built and viewed without a watermark but not exported as files, and nothing we could read settles which applies today.\n\n**Who it's for:** Individuals and small teams turning existing documents into first-draft decks who want to pay nothing until they know it works.",
+        content: "Pi describes itself as AI-native. It generates the content and the layout together instead of pouring text into a fixed template, and its own articles quote generation times of 10 to 15 seconds. Accepted starting points include a prompt, PDF, Word document, PowerPoint file, webpage or image. Decks are described as responsive across desktop, tablet and mobile, and shared decks include viewer analytics such as opens and per-page reading time, as noted in our review.\n\n**Where it falls short:** Most public material on Pi's pricing and performance is written by Pi itself, including several \"best AI presentation tools\" lists that rank Pi first. That is useful for numbers but weak as independent evidence. Pi's pricing page now settles two earlier questions: the free plan starts with a 400-point welcome bonus, and export requires a membership.\n\n**Who it's for:** Individuals and small teams turning existing documents into first-draft decks who want to judge the output for free before paying.",
       },
       {
         heading: "AiPPT: three modes, credit meters and slide caps",
@@ -189,16 +189,16 @@ export const COMPARE_ARTICLES: CompareArticle[] = [
       },
       {
         heading: "Credits and slide caps: the numbers that decide it",
-        content: "Three practical consequences follow from the published limits.\n\n**Deck length.** On AiPPT's free plan an AI-generated deck is capped at 10 slides, and at 20 on Plus. A 15-slide proposal needs Plus or has to be built in stages. We found no published per-deck slide cap for Pi, which is not the same as there being none.\n\n**How long the free tier lasts.** AiPPT's 140 free credits are a one-time pool that does not refill. Pi's credits can be earned over time, though the amounts per action are not shown on the page we could read. If you generate a few decks a month, Pi's free tier may last longer. If you generate a lot in one sitting, AiPPT's paid plans give you a visible monthly meter.\n\n**Batch work.** AiPPT lists 10 concurrent agent tasks on paid plans. Pi's published material does not mention concurrency. If you produce several decks at once, for a class or a client roster, that line matters more than the model list.\n\nNone of this measures output quality. Both vendors' design claims are marketing until you test them on your own material.",
+        content: "Three practical consequences follow from the published limits.\n\n**Deck length.** On AiPPT's free plan an AI-generated deck is capped at 10 slides, and at 20 on Plus. A 15-slide proposal needs Plus or has to be built in stages. Pi publishes a cap of 10 cards per prompt on Free and 50 on Pro.\n\n**How long the free tier lasts.** AiPPT's 140 free credits are a one-time pool that does not refill. Pi's 400-point welcome bonus can be topped up by inviting friends, but export needs a membership, so Pi's free plan is for testing rather than delivering decks.\n\n**Batch work.** AiPPT lists 10 concurrent agent tasks on paid plans. Pi's published material does not mention concurrency. If you produce several decks at once, for a class or a client roster, that line matters more than the model list.\n\nNone of this measures output quality. Both vendors' design claims are marketing until you test them on your own material.",
       },
       {
         heading: "What neither tool settles for you",
-        content: "**Teams.** Pi's FAQ says team collaboration happens through sharing and co-editing, with more advanced team features available by contacting support. AiPPT's price page lists no team or enterprise plan. Neither publishes SSO or admin controls on the pages we read, so neither is a safe pick for a company-wide rollout.\n\n**Prices.** Pi's $9.90 and $89.90 figures come from Pi's own articles, because its pricing page did not render for automated readers. AiPPT's dollar prices for Plus, Pro and Lifetime were not visible at all. Check both at checkout before committing.\n\n**Evidence.** Both tools are newer than Gamma or Beautiful.ai, and independent review coverage of each is thin. Treat any score or ranking, including ours, as research-based rather than the result of long hands-on use.",
+        content: "**Teams.** Pi's FAQ says team collaboration happens through sharing and co-editing, with more advanced team features available by contacting support. AiPPT's price page lists no team or enterprise plan. Neither publishes SSO or admin controls on the pages we read, so neither is a safe pick for a company-wide rollout.\n\n**Prices.** Pi's prices come from its pricing page: Pro is $168 a year, Max $336 and Studio $888. AiPPT's dollar prices for Plus, Pro and Lifetime were not visible at all. Check both at checkout before committing.\n\n**Evidence.** Both tools are newer than Gamma or Beautiful.ai, and independent review coverage of each is thin. Treat any score or ranking, including ours, as research-based rather than the result of long hands-on use.",
       },
     ],
-    verdict: "Start with Pi if you have a document or webpage to turn into slides and want to spend nothing until you have seen the output. It is the simpler offer, its paid plan is a single published price, and our rating radar puts it slightly ahead of AiPPT on all five axes. That lead is narrow and rests largely on vendor-published numbers, so run the free plan through a real export before trusting it.\n\nChoose AiPPT if you regularly build decks longer than ten slides, run several at once, or would rather pay once than subscribe. Its limits are published, its modes (Classic, Flow, Visual) give some control over speed versus polish, and its Lifetime plan has no published equivalent at Pi.\n\nTest both on the same source document. The free plans cost nothing, comparing outputs takes minutes, and the deck you would rather present is a better tie-breaker than any table here.",
+    verdict: "Start with Pi if you have a document or webpage to turn into slides and want to judge the output before paying; note that exporting needs a paid membership. Our rating radar puts it slightly ahead of AiPPT on all five axes, but that lead is narrow, so test it on your own document first.\n\nChoose AiPPT if you regularly build decks longer than ten slides, run several at once, or would rather pay once than subscribe. Its limits are published, its modes (Classic, Flow, Visual) give some control over speed versus polish, and its Lifetime plan has no published equivalent at Pi.\n\nTest both on the same source document. The free plans cost nothing, comparing outputs takes minutes, and the deck you would rather present is a better tie-breaker than any table here.",
     comparisonTable: [
-      { name: "Presentation Intelligence (Pi)", price: "Free + $9.90/mo ($89.90/yr)", priceUSD: "Free to $9.90", freeplan: true, aiContent: "Content and design generated together; PDF, Word, PowerPoint, web and image input", platforms: "Web", bestFor: "First-draft decks from existing documents", ourPick: true },
+      { name: "Presentation Intelligence (Pi)", price: "Free + Pro $168/yr", priceUSD: "Free to $14/mo (annual)", freeplan: true, aiContent: "Content and design generated together; PDF, Word, PowerPoint, web and image input", platforms: "Web", bestFor: "First-draft decks from existing documents", ourPick: true },
       { name: "AiPPT.com", price: "Free (140 credits) + Plus/Pro + Lifetime", priceUSD: "Free; paid prices: check price page", freeplan: true, aiContent: "Classic, Flow and Visual modes; document and URL import", platforms: "Web", bestFor: "Longer decks, batch work, one-time payment", ourPick: false },
     ],
     winnerSlug: 'presentation-intelligence',
@@ -207,27 +207,27 @@ export const COMPARE_ARTICLES: CompareArticle[] = [
     winnerAffiliateText: "Try Pi free",
     pricing: {
       tools: [
-        { name: "Presentation Intelligence (Pi)", free: true, startingPrice: "$0 (credit-limited)", paidFrom: "$9.90/mo or $89.90/yr (Pi-published)", bestPlanFor: "Turning one document into a first-draft deck", affiliateLink: AFFILIATE_LINKS['presentation-intelligence'] },
+        { name: "Presentation Intelligence (Pi)", free: true, startingPrice: "$0 (400 points; export needs a membership)", paidFrom: "$168/yr Pro (about $14/mo)", bestPlanFor: "Turning one document into a first-draft deck", affiliateLink: AFFILIATE_LINKS['presentation-intelligence'] },
         { name: "AiPPT.com", free: true, startingPrice: "$0 (140 credits, one-time)", paidFrom: "Plus or Pro: see aippt.com/price", bestPlanFor: "Longer decks and several decks at once", affiliateLink: AFFILIATE_LINKS['aippt'] },
       ],
     },
     faqs: [
-      { q: "Is Pi or AiPPT better?", a: "Pi is the better first try for turning a single document into a deck, because its free plan costs nothing and its paid plan is one published price. AiPPT is the better fit for decks over ten slides, several decks at once, or buyers who prefer a one-time payment. Pi's figures are largely vendor-published, so test both on the same source file." },
+      { q: "Is Pi or AiPPT better?", a: "Pi is the better first try for turning a single document into a deck, because it accepts the widest range of source files and has a free plan for judging output. AiPPT is the better fit for decks over ten slides, several decks at once, or buyers who prefer a one-time payment. Test both on the same source file." },
       { q: "Is AiPPT.com free?", a: "Yes, with limits. The free plan is 140 credits as a one-time allocation, up to 10 slides per AI-generated deck, on the base generation model. Plus adds 600 credits a month and 20 slides per deck, and Pro adds 1,200 credits a month and 50 slides per deck." },
-      { q: "Does Pi's free plan add a watermark?", a: "Pi's own articles say free decks have no watermark. One independent review says file export requires the Basic plan. Generate a deck and export it on the free plan before you depend on it." },
-      { q: "Which is cheaper, Pi or AiPPT?", a: "Pi's own materials list Basic at $9.90 a month or $89.90 a year. AiPPT's Plus and Pro dollar prices were not readable on its price page, and third-party listings disagree, so confirm at checkout. AiPPT also offers a one-time Lifetime membership, which suits people who build decks often and dislike subscriptions." },
+      { q: "Can I export from Pi's free plan?", a: "No, according to Pi's pricing page, which says export requires a membership. Use the free plan to judge output, then upgrade if you need to download decks." },
+      { q: "Which is cheaper, Pi or AiPPT?", a: "Pi's pricing page lists Pro at $168 a year (about $14 a month), or $240 a year paid monthly. AiPPT's Plus and Pro dollar prices were not readable on its price page, and third-party listings disagree, so confirm at checkout. AiPPT also offers a one-time Lifetime membership, which suits people who build decks often and dislike subscriptions." },
       { q: "Can both import a PDF or Word file?", a: "Yes. AiPPT says it accepts PDF, Word, PowerPoint and Excel files, images and URLs. Pi's published description lists a prompt, PDF, Word document, PowerPoint file, webpage or image as starting points." },
       { q: "Are Pi and AiPPT suitable for team use?", a: "Not for a formal rollout. Pi's FAQ says teams collaborate by sharing and co-editing, with advanced team features available on request. AiPPT's price page lists no team or enterprise plan. Neither shows SSO or admin controls on the pages we read." },
     ],
     featureRows: [
-      { feature: "Free plan", toolA: "Forever free (about 40 credits per Pi; one review says 400)", toolB: "140 credits, one-time", winner: 'tie' },
-      { feature: "Earn extra credits", toolA: "Yes (daily login, referrals, sharing)", toolB: "Not listed on price page", winner: 'A' },
-      { feature: "Paid entry price", toolA: "$9.90/mo or $89.90/yr (Pi-published)", toolB: "Not readable; verify at checkout", winner: 'tie' },
+      { feature: "Free plan", toolA: "400-point welcome bonus", toolB: "140 credits, one-time", winner: 'tie' },
+      { feature: "Earn extra credits", toolA: "Yes (inviting friends)", toolB: "Not listed on price page", winner: 'A' },
+      { feature: "Paid entry price", toolA: "$168/yr Pro (about $14/mo)", toolB: "Not readable; verify at checkout", winner: 'tie' },
       { feature: "One-time Lifetime plan", toolA: "Not published", toolB: "Yes", winner: 'B' },
-      { feature: "Per-deck slide cap (AI generation)", toolA: "Not published", toolB: "10 / 20 / 50 by tier", winner: 'tie' },
+      { feature: "Per-deck slide cap (AI generation)", toolA: "10 cards per prompt (Free), 50 (Pro)", toolB: "10 / 20 / 50 by tier", winner: 'tie' },
       { feature: "Concurrent tasks", toolA: "Not published", toolB: "1 on Free, 10 on paid", winner: 'B' },
       { feature: "Input formats", toolA: "Prompt, PDF, Word, PowerPoint, webpage, image", toolB: "Prompt, PDF, Word, PowerPoint, Excel, images, URLs, Markdown", winner: 'B' },
-      { feature: "Export", toolA: "Included on Basic; free-plan export unconfirmed", toolB: "PPT, PDF, image", winner: 'B' },
+      { feature: "Export", toolA: "Paid plans only (per Pi's pricing page)", toolB: "PPT, PDF, image", winner: 'B' },
       { feature: "Viewer analytics", toolA: "Opens and per-page reading time", toolB: "Not listed", winner: 'A' },
       { feature: "Team features", toolA: "Share and co-edit; more on request", toolB: "No team plan listed", winner: 'A' },
       { feature: "Independent evidence", toolA: "Thin, mostly vendor-authored", toolB: "Thin, no G2 presence found", winner: 'tie' },
@@ -822,7 +822,7 @@ If you only make podcasts: Podcastle is more purpose-built. If you make video po
       },
       {
         heading: 'Podcastle — Purpose-built podcasting with serious AI audio',
-        content: `Podcastle's free plan is one of the most generous in the podcasting space: unlimited recordings, up to 10 hours of Magic Dust (AI audio enhancement) per month, remote guest recording for up to 10 people, and browser-based recording with no downloads required. That free tier alone makes it worth testing.
+        content: `Podcastle's free plan is built for testing: 10 one-time AI credits, 1 hour of remote recording (lifetime), recording sessions with up to 10 participants, and browser-based recording with no downloads required. That is enough to judge the workflow before paying.
 
 **Magic Dust** — Podcastle's AI noise removal and voice enhancement — is the standout feature. It removes background noise, evens out volume levels, and genuinely makes recordings sound like they were done in a studio rather than a spare bedroom. Verified user reports describe running recordings made next to an open window through it, with dramatic results. Comparable tools charge extra for this kind of processing.
 
@@ -900,7 +900,7 @@ The tools are complementary more than competitive. Some serious podcast teams us
       { q: 'Is Podcastle better than Descript for beginners?', a: 'Yes. Podcastle\'s recording-and-enhance workflow is more immediately accessible than Descript\'s text-based editing paradigm. Beginners can record an episode, apply Magic Dust AI enhancement, and publish without a steep learning curve. Descript\'s workflow takes several sessions to feel natural.' },
       { q: 'Which is better for video podcasts — Podcastle or Descript?', a: 'Descript is significantly better for video podcasts. It handles audio and video editing with the same text-based workflow, generates social clips, and is specifically designed for multi-format content. Podcastle is audio-first; its video capabilities are limited by comparison.' },
       { q: 'Does Descript have podcast hosting?', a: 'No. Descript is a recording and editing tool — you export your finished episode and publish it through a separate hosting platform (Buzzsprout, Podbean, Anchor, etc.). Podcastle has built-in podcast distribution on higher-tier plans, which simplifies the workflow for audio-only podcasters.' },
-      { q: 'What is Magic Dust in Podcastle?', a: 'Magic Dust is Podcastle\'s AI audio enhancement feature. It removes background noise, evens out volume levels, and improves voice clarity automatically — without manual audio engineering. Free plan users get 10 hours of Magic Dust per month. Paid plans include unlimited Magic Dust.' },
+      { q: 'What is Magic Dust in Podcastle?', a: 'Magic Dust is Podcastle\'s AI audio enhancement feature. It removes background noise, evens out volume levels, and improves voice clarity automatically — without manual audio engineering. Async lists Magic Dust among its AI editing tools; check its pricing page for the current per-plan limits.' },
     ],
     featureRows: [
       { feature: 'Free plan',          toolA: 'Yes (limited hours)',       toolB: 'Yes (60 media minutes/month)', winner: 'tie' },
@@ -2037,7 +2037,7 @@ Gamma is faster to go from zero to a finished deck. Beautiful.ai gives you more 
 
 **Where Gamma falls short:** Per-slide design precision is limited compared to Beautiful.ai. You can't micromanage element positioning the way PowerPoint allows. For highly structured corporate templates with exact pixel-level brand requirements, Gamma's AI-driven layout can feel constraining. Exports to PowerPoint lose some formatting fidelity.
 
-**Pricing:** Free (400 credits, Gamma branding). Plus: $8/month (unlimited AI, no branding). Pro: $15/month (advanced analytics, custom domains).
+**Pricing:** Free (400 credits, Gamma branding). Plus: $8/month (1,000 AI credits a month, no branding). Pro: $15/month (4,000 AI credits a month, detailed analytics, custom domains).
 
 **Who it's for:** Founders creating pitch decks, students building class presentations, consultants preparing client deliverables, and anyone who values speed over pixel-perfect control.`,
       },
@@ -2074,7 +2074,7 @@ Gamma is faster to go from zero to a finished deck. Beautiful.ai gives you more 
 **Export quality:** Beautiful.ai wins for PowerPoint exports. Gamma's exports to .pptx occasionally have spacing and font issues. Gamma wins for web sharing — the published URL experience is superior to any exported file.`,
       },
     ],
-    verdict: `For founders, students, consultants, and individual professionals: Gamma is the clear winner in 2026. The free plan is genuinely functional, full-deck AI generation saves meaningful time, and the output quality is excellent. At $8/month for unlimited AI and no branding, it's also cheaper than Beautiful.ai's entry price.
+    verdict: `For founders, students, consultants, and individual professionals: Gamma is the clear winner in 2026. The free plan is genuinely functional, full-deck AI generation saves meaningful time, and the output quality is excellent. At $8/month for 1,000 AI credits a month and no branding, it's also cheaper than Beautiful.ai's entry price.
 
 For corporate teams needing brand governance, consistent template systems, and reliable PowerPoint exports: Beautiful.ai's smart templates and team controls justify the higher cost. If your presentations are shared across a 10-person sales team that all need to look identical, Beautiful.ai's enforcement of design consistency is worth paying for.
 
@@ -2094,8 +2094,8 @@ The simple test: create a pitch deck in Gamma's free plan. If the output quality
       ],
     },
     faqs: [
-      { q: 'Is Gamma better than Beautiful.ai?', a: 'Gamma is better for most individual users — it generates entire presentations from a text prompt in under 2 minutes, has a genuinely useful free plan, and costs $8/month for unlimited AI. Beautiful.ai is better for corporate teams needing brand controls and consistent slide templates across multiple presenters. For speed and value, Gamma wins.' },
-      { q: 'Does Gamma have a free plan?', a: 'Yes. Gamma\'s free plan includes 400 AI credits (enough for roughly 10 full deck generations), unlimited presentations, and web publishing. The only limitation is Gamma branding on exports. The Plus plan at $8/month removes branding and provides unlimited AI credits.' },
+      { q: 'Is Gamma better than Beautiful.ai?', a: 'Gamma is better for most individual users — it generates entire presentations from a text prompt in under 2 minutes, has a genuinely useful free plan, and costs $8/month for 1,000 AI credits a month. Beautiful.ai is better for corporate teams needing brand controls and consistent slide templates across multiple presenters. For speed and value, Gamma wins.' },
+      { q: 'Does Gamma have a free plan?', a: 'Yes. Gamma\'s free plan includes 400 AI credits (enough for roughly 10 full deck generations), unlimited presentations, and web publishing. The only limitation is Gamma branding on exports. The Plus plan at $8/month removes branding and adds 1,000 AI credits a month.' },
       { q: 'Can Gamma export to PowerPoint?', a: 'Yes, Gamma exports to PowerPoint (.pptx), though some formatting — particularly custom fonts and embedded content — may not translate perfectly. Beautiful.ai\'s PowerPoint export is more reliable for maintaining exact formatting. If your final deliverable must be a pixel-perfect .pptx file, Beautiful.ai handles this better.' },
       { q: 'Is Beautiful.ai worth $12/month?', a: 'Beautiful.ai is worth $12/month for professionals who create multiple presentations weekly and need every slide to look consistently polished without design skills. The smart templates genuinely prevent bad design. However, for occasional presentation needs or price-sensitive users, Gamma\'s free plan or $8/month paid plan delivers comparable results at lower cost.' },
     ],
@@ -2142,7 +2142,7 @@ If keeping an exit option matters to you, Wegic wins outright. If you'd rather n
 
 **Where Wegic falls short:** pricing is credit-based, and credits are consumed even by edits that fail or get rejected — a documented, recurring complaint. Credits also don't roll over month to month. E-commerce support is weak compared with dedicated store builders.
 
-**Pricing:** Free starter credits on signup, plus a $2.99 one-time trial for one full site generation. Paid tiers start around $11.90/month (code download, badge removed) and $19.90/month (custom domain, larger credit pool, advanced design control).
+**Pricing:** 100 free credits on signup for chatting with the AI, plus a $2.99 one-time trial pack for one website generation. Starter is $23.90/month billed annually ($39.90 monthly) with code export and the Wegic watermark removed; Premium is $41.90/month billed annually with a custom domain and a larger credit pool.
 
 **Who it's for:** Non-designers who want a simple business site or landing page live fast, and who value having an exit path if their needs outgrow the tool.`,
       },
@@ -2177,7 +2177,7 @@ Alf Website Studio earns its place specifically for people who are already Space
 
 The simple test: if you can picture ever wanting to move your site to a different host, use Wegic. If you're committed to Spaceship anyway and just want a site live with the least possible fuss, Alf is the more convenient choice.`,
     comparisonTable: [
-      { name: 'Wegic', price: 'Free credits–$19.90/mo', priceUSD: 'Free tier ✓', freeplan: true, aiContent: 'Chat-built site + code export', platforms: 'Web', bestFor: 'Anyone who wants an exit path', ourPick: true },
+      { name: 'Wegic', price: 'Free chat credits; $23.90–$41.90/mo (annual)', priceUSD: '$2.99 trial pack', freeplan: false, aiContent: 'Chat-built site + code export', platforms: 'Web', bestFor: 'Anyone who wants an exit path', ourPick: true },
       { name: 'Alf Website Studio', price: '30-day free trial → $5/mo', priceUSD: 'Free trial ✓', freeplan: false, aiContent: 'Chat-built site + visual editor', platforms: 'Web (Spaceship-hosted)', bestFor: 'Existing Spaceship domain customers', ourPick: false },
     ],
     winnerSlug: 'wegic',
@@ -2186,7 +2186,7 @@ The simple test: if you can picture ever wanting to move your site to a differen
     winnerAffiliateText: 'Try Wegic free',
     pricing: {
       tools: [
-        { name: 'Wegic', free: true, startingPrice: '$0', paidFrom: '$11.90/mo', bestPlanFor: 'Anyone who wants a chat-built site with an exit path', affiliateLink: AFFILIATE_LINKS['wegic'] },
+        { name: 'Wegic', free: false, startingPrice: '$2.99 trial pack', paidFrom: '$23.90/mo billed annually', bestPlanFor: 'Anyone who wants a chat-built site with an exit path', affiliateLink: AFFILIATE_LINKS['wegic'] },
         { name: 'Alf Website Studio', free: true, startingPrice: '$0 (30-day trial)', paidFrom: '$5/mo', bestPlanFor: 'Existing Spaceship domain customers wanting bundled hosting', affiliateLink: AFFILIATE_LINKS['alf-website-studio'] },
       ],
     },
@@ -2198,7 +2198,7 @@ The simple test: if you can picture ever wanting to move your site to a differen
     ],
     featureRows: [
       { feature: 'Free plan',        toolA: 'Starter credits + $2.99 trial', toolB: '30-day free trial',        winner: 'tie' },
-      { feature: 'Paid pricing',     toolA: 'From $11.90/mo',                toolB: 'Flat $5/mo',                winner: 'B' },
+      { feature: 'Paid pricing',     toolA: 'From $23.90/mo (annual)',       toolB: 'Flat $5/mo',                winner: 'B' },
       { feature: 'Code export',      toolA: 'Yes',                          toolB: 'No',                        winner: 'A' },
       { feature: 'Editing mode',     toolA: 'Chat only',                    toolB: 'Chat + visual editor',      winner: 'B' },
       { feature: 'Hosting',          toolA: 'Separate/external',            toolB: 'Bundled, fully managed',    winner: 'B' },
@@ -3270,7 +3270,7 @@ Aragon: Upload photo → Configure style/setting → Generate variations → Rev
     keyword: 'make vs zapier',
     publishDate: 'June 2026',
     lastUpdated: '2026-06-22',
-    quickAnswer: 'Make is cheaper and more flexible for advanced automations ($9/mo for unlimited tasks). Zapier is simpler, has more app integrations (5000+), and better for non-technical users. For builders and power users: Make. For simplicity and breadth: Zapier. Both have free tiers.',
+    quickAnswer: 'Make is usually cheaper for multi-step automations: its free plan gives 1,000 credits a month, and its pricing page shows the Make Plan at $9/month for 5,000 credits. Zapier is simpler and has more app integrations (9,000+ vs 3,500+); its free plan gives 100 tasks a month and Professional starts at $19.99/month billed annually ($29.99 monthly) for 750 tasks. For builders and power users: Make. For simplicity and breadth: Zapier.',
     intro: `Make (formerly Integromat) and Zapier are the two most popular no-code automation platforms in 2026. Both connect your apps and automate repetitive workflows — but they take different approaches to pricing, flexibility, and ease of use. This comparison draws on official documentation, verified user reviews, and reported real-world workflow builds to show which one actually delivers.`,
     sections: [
       {
@@ -3283,17 +3283,17 @@ For simple automations (send email when form submitted), Zapier wins. For comple
       },
       {
         heading: 'Pricing: Make is significantly cheaper',
-        content: `**Zapier:** $19/mo (starter) = 100 tasks/month. A "task" is one successful run of your automation. Complex automations with multiple steps count as 1 task. If you have 200 tasks/month, you need the $49 plan.
+        content: `**Zapier:** Free gives 100 tasks a month with two-step Zaps only. Professional starts at $19.99/month billed annually ($29.99 monthly) for 750 tasks and unlocks multi-step Zaps; 2,000 tasks costs $49/month billed annually. Every successful action step uses a task, so a Zap with 4 actions uses 4 tasks per run. Triggers and Zapier's built-in tools (Formatter, Filter, Paths) do not use tasks.
 
-**Make:** $9/mo (core) = 1,000 operations/month. An "operation" is one action within your automation. A 10-step automation counts as 10 operations. You get 5x more headroom at half the price.
+**Make:** Free gives 1,000 credits a month. The paid Make Plan is priced by credit volume: at 5,000 credits a month, Make's pricing page shows $9/month ($1.80 per 1,000 credits) next to a "Save 15%" label, so check whether that is the annual rate before you buy.
 
-**For small businesses automating 2–5 workflows, Make is $40–60/year. Zapier is $228–588/year.**
+**For multi-step workflows, Make usually gives more headroom per dollar,** because Zapier counts every action step. Check both pricing pages against your own monthly volume.
 
-Winner: Make by a landslide on value.`,
+Winner: Make on value.`,
       },
       {
         heading: 'App integrations: Zapier has more built-in',
-        content: `Zapier: 5000+ built-in integrations (native connections). Make: 1000+ built-in integrations.
+        content: `Zapier: 9,000+ app integrations. Make: 3,500+ apps. Both figures are from each vendor's pricing page.
 
 But Make has webhooks and API connectors, which means you can integrate almost any SaaS without a native integration. In practice, you can connect anything to Make that you can connect to Zapier.
 
@@ -3304,8 +3304,8 @@ Winner: Zapier for breadth, Make for flexibility.`,
     ],
     verdict: `Use Make if you are building automations for yourself or your business and want to maximize value. Use Zapier if you are non-technical or building automations for end users who need simplicity. For agencies and power users, Make's pricing advantage is hard to beat.`,
     comparisonTable: [
-      { name: 'Make', price: '$9/mo', priceUSD: '$9 starter (1K ops)', freeplan: true, aiContent: 'Flexible workflow builder, webhooks, APIs', platforms: 'Web, mobile apps available', bestFor: 'Power users, agencies, complex workflows', ourPick: true },
-      { name: 'Zapier', price: '$19/mo', priceUSD: '$19 starter (100 tasks)', freeplan: true, aiContent: '5000+ pre-built integrations, simple UI', platforms: 'Web, desktop, mobile', bestFor: 'Non-technical users, simple automations', ourPick: true },
+      { name: 'Make', price: '$9/mo', priceUSD: '$9 at 5,000 credits', freeplan: true, aiContent: 'Flexible workflow builder, webhooks, APIs', platforms: 'Web, mobile apps available', bestFor: 'Power users, agencies, complex workflows', ourPick: true },
+      { name: 'Zapier', price: '$19.99/mo', priceUSD: '$19.99 Professional (750 tasks, annual)', freeplan: true, aiContent: '9,000+ pre-built integrations, simple UI', platforms: 'Web, desktop, mobile', bestFor: 'Non-technical users, simple automations', ourPick: true },
     ],
     winnerSlug: 'make',
     winnerName: 'Make',
@@ -3314,19 +3314,19 @@ Winner: Zapier for breadth, Make for flexibility.`,
     pricing: {
       tools: [
         { name: 'Make', free: true, startingPrice: '$0', paidFrom: '$9/mo', bestPlanFor: 'Builders needing powerful automation with unlimited flexibility' },
-        { name: 'Zapier', free: true, startingPrice: '$0', paidFrom: '$19/mo', bestPlanFor: 'Non-technical users prioritizing simplicity and breadth' },
+        { name: 'Zapier', free: true, startingPrice: '$0', paidFrom: '$19.99/mo', bestPlanFor: 'Non-technical users prioritizing simplicity and breadth' },
       ],
     },
     faqs: [
       { q: 'Which is easier to learn?', a: 'Zapier. The interface is more straightforward — "if this, then that" thinking. Make\'s interface is more powerful but has a steeper learning curve. If you have never built an automation, start with Zapier. Once you understand the concepts, Make gives you more capability.' },
       { q: 'Can I build the same automations in both?', a: 'Most of the time, yes. Simple automations (email, Slack notifications, data transfer) work identically in both. Complex automations with branching logic, loops, and data transformation are easier to build in Make because Zapier has limitations on what you can do with conditionals.' },
-      { q: 'Which has better integrations?', a: 'Zapier has more pre-built integrations (5000 vs 1000). But Make has webhooks and API connectors that let you integrate anything with a public API. In practice, you can integrate the same apps in both tools — Zapier is just faster if a pre-built integration exists.' },
-      { q: 'Does pricing scale with usage?', a: 'Both platforms price based on usage (tasks/operations). Make\'s pricing scales better — the $9 plan gives 1000 operations/month. Zapier\'s starter plan (100 tasks) fills up faster. If you have 5+ automations, Make becomes cheaper. If you have 1 automation, both are affordable.' },
+      { q: 'Which has better integrations?', a: 'Zapier has more pre-built integrations (9,000+ vs 3,500+). But Make has webhooks and API connectors that let you integrate anything with a public API. In practice, you can integrate the same apps in both tools — Zapier is just faster if a pre-built integration exists.' },
+      { q: 'Does pricing scale with usage?', a: 'Both platforms price by usage: Zapier by tasks, Make by credits. Zapier\'s free plan includes 100 tasks a month and Professional starts at 750 tasks; every action step uses a task, so multi-step Zaps fill the allowance faster. Make\'s free plan includes 1,000 credits a month. If you run several multi-step automations, Make usually works out cheaper.' },
     ],
     featureRows: [
-      { feature: 'Free plan',              toolA: 'Yes (1K ops)',                  toolB: 'Yes (100 tasks)',               winner: 'A' },
-      { feature: 'Starter pricing',        toolA: '$9/mo',                         toolB: '$19/mo',                       winner: 'A' },
-      { feature: 'Pre-built integrations', toolA: '1000+',                          toolB: '5000+',                        winner: 'B' },
+      { feature: 'Free plan',              toolA: 'Yes (1,000 credits/mo)',        toolB: 'Yes (100 tasks/mo)',            winner: 'A' },
+      { feature: 'Starter pricing',        toolA: '$9/mo (5,000 credits)',         toolB: '$19.99/mo (annual)',           winner: 'A' },
+      { feature: 'Pre-built integrations', toolA: '3,500+',                         toolB: '9,000+',                       winner: 'B' },
       { feature: 'Flexibility/customization', toolA: 'Advanced (webhooks, APIs)',    toolB: 'Limited',                      winner: 'A' },
       { feature: 'Learning curve',         toolA: 'Steeper',                       toolB: 'Gentle',                       winner: 'B' },
       { feature: 'Complex workflows',      toolA: 'Easy',                          toolB: 'Difficult',                    winner: 'A' },

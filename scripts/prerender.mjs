@@ -22,6 +22,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createRequire } from 'node:module';
+import ts from 'typescript';
 import { loadVerdictSsr } from './verdict-ssr-loader.mjs';
 
 const __dir  = path.dirname(fileURLToPath(import.meta.url));
@@ -514,7 +516,7 @@ const TOOLS = [
     description: 'Gamma creates stunning presentations, documents, and webpages from a text prompt. No design skills needed — describe what you want and Gamma builds and styles it.',
     pricing: 'Free + from $8/month', bestFor: 'Founders, students & educators',
     rating: 4.5, lastTested: 'March 2026',
-    reviewBody: 'Gamma is the fastest AI presentation tool in 2026 — generating a complete, visually polished deck from a text brief in under 2 minutes. Enter a topic, paste existing content, or upload a document, and Gamma produces a full presentation with slide content, layout, typography, and imagery already applied. This replaces the most time-consuming part of presentation creation: the blank slide problem. The AI handles structural thinking — deciding what belongs on each slide and how to organise it — so users focus on refinement rather than construction. The output quality is consistently above average: modern templates and a card-based design system produce results that look more current than default PowerPoint or Google Slides themes, without requiring any design skill. The free plan includes 400 AI credits on signup (enough for 4 to 5 complete presentations) with a small Gamma badge. The Plus plan at $8/month removes the badge, adds unlimited AI creation, custom domains, and engagement analytics. Export to PDF is available on the free plan; PowerPoint export requires a paid plan. The main limitation versus traditional presentation software is precision: for presentations where exact brand compliance matters (corporate deliverables, client pitches with strict brand guidelines), Gamma gives less granular control than PowerPoint or Beautiful.ai. For student presentations, startup pitch decks, educator materials, and team briefings, the speed advantage is significant — a polished 10-slide deck takes 10 minutes instead of an hour.',
+    reviewBody: 'Gamma is the fastest AI presentation tool in 2026 — generating a complete, visually polished deck from a text brief in under 2 minutes. Enter a topic, paste existing content, or upload a document, and Gamma produces a full presentation with slide content, layout, typography, and imagery already applied. This replaces the most time-consuming part of presentation creation: the blank slide problem. The AI handles structural thinking — deciding what belongs on each slide and how to organise it — so users focus on refinement rather than construction. The output quality is consistently above average: modern templates and a card-based design system produce results that look more current than default PowerPoint or Google Slides themes, without requiring any design skill. The free plan includes 400 AI credits on signup (enough for 4 to 5 complete presentations) with a small Gamma badge. The Plus plan at $8/month removes the badge and adds 1,000 AI credits a month; custom domains and detailed analytics start on Pro. Export to PDF is available on the free plan; PowerPoint export requires a paid plan. The main limitation versus traditional presentation software is precision: for presentations where exact brand compliance matters (corporate deliverables, client pitches with strict brand guidelines), Gamma gives less granular control than PowerPoint or Beautiful.ai. For student presentations, startup pitch decks, educator materials, and team briefings, the speed advantage is significant — a polished 10-slide deck takes 10 minutes instead of an hour.',
   },
   {
     slug: 'beautiful-ai', name: 'Beautiful.ai', category: 'Design',
@@ -786,21 +788,21 @@ const TOOLS = [
   {
     slug: 'make', name: 'Make', category: 'Productivity',
     tagline: 'Visual, node-based automation with the best power-to-price ratio for moderate-complexity workflows',
-    description: 'Make bills by the operation rather than Zapier\'s per-task model, typically delivering a significantly higher usable allowance for a comparable fee. Free plan: 1,000 operations/month. Core plan runs roughly $9/month for 10,000 operations. Ships an official first-party MCP server.',
-    pricing: 'Free (1,000 ops/mo) + ~$9–$16+/month (Core, Pro)', bestFor: 'Teams that have outgrown Zapier\'s lower tiers and need real branching logic without self-hosting overhead',
+    description: 'Make bills in credits rather than Zapier\'s per-task model. Free plan: 1,000 credits/month. The paid Make Plan is priced by credit volume, from $9/month at 5,000 credits. Ships an official first-party MCP server.',
+    pricing: 'Free (1,000 credits/mo) + Make Plan from $9/month (5,000 credits)', bestFor: 'Teams that have outgrown Zapier\'s lower tiers and need real branching logic without self-hosting overhead',
     rating: 4.6, lastTested: 'August 2026',
     seoTitle: 'Make.com Review 2026 — Pricing vs Zapier & Is It Worth It? | AI Nexus',
     metaDescription: 'Make.com 2026: $9/month Core pricing, a 1,000-operation free tier, and a 4.6 G2 rating reviewed. See why it beats Zapier on power-to-price for branching workflows.',
-    reviewBody: "Make (formerly Integromat) is a visual, no-code automation platform that bills by the operation — each module run inside a scenario — rather than Zapier's per-task model, which typically delivers a significantly higher usable allowance for a comparable monthly fee. The Free plan includes 1,000 operations/month, and the Core plan runs roughly $9/month for 10,000 operations, with Pro/Teams tiers scaling from there and custom Enterprise pricing available. Make ships an official first-party MCP server, documented at developers.make.com, letting AI systems run existing scenarios and manage account contents via OAuth or an MCP token, plus pre-built AI-integrated modules for OpenAI, Anthropic, and Google AI that drop into any scenario step for classification, summarization, or generation. G2 reviewers rate Make at 4.6/5 from 270 reviews as of August 2026, with a G2 head-to-head comparison against Relay.app specifically noting Make's affordability and wide integration range as standout strengths. Reviewers consistently describe getting a working scenario live within minutes of signing up, and the catalog of off-the-shelf integrations covers the large majority of mainstream business tools, with HTTP/webhook modules filling gaps for less common services. The most common critique is a smaller native integration library than Zapier's roughly 8,000+, and the absence of a dedicated AI reasoning/agent node — AI capability in Make stays limited to pre-built modules dropped into an otherwise human-designed execution path, unlike n8n's tool-using AI Agent node. Make is the consistent recommendation for teams that have outgrown Zapier's lower tiers but aren't ready to manage self-hosted infrastructure: same visual, no-code building experience as Zapier, at materially better unit economics — a five-step workflow running 2,000 times a month costs roughly $9/month on Make versus $69–$100+/month on Zapier.",
+    reviewBody: "Make (formerly Integromat) is a visual, no-code automation platform that bills in credits rather than Zapier's per-task model. The Free plan includes 1,000 credits/month, and the paid Make Plan is priced by credit volume (Make's pricing page shows $9/month at 5,000 credits), with custom Enterprise pricing available. Make ships an official first-party MCP server, documented at developers.make.com, letting AI systems run existing scenarios and manage account contents via OAuth or an MCP token, plus pre-built AI-integrated modules for OpenAI, Anthropic, and Google AI that drop into any scenario step for classification, summarization, or generation. G2 reviewers rate Make at 4.6/5 from 270 reviews as of August 2026, with a G2 head-to-head comparison against Relay.app specifically noting Make's affordability and wide integration range as standout strengths. Reviewers consistently describe getting a working scenario live within minutes of signing up, and the catalog of off-the-shelf integrations covers the large majority of mainstream business tools, with HTTP/webhook modules filling gaps for less common services. The most common critique is a smaller native integration library than Zapier's (Make lists 3,500+ apps; Zapier lists 9,000+), and the absence of a dedicated AI reasoning/agent node — AI capability in Make stays limited to pre-built modules dropped into an otherwise human-designed execution path, unlike n8n's tool-using AI Agent node. Make is the consistent recommendation for teams that have outgrown Zapier's lower tiers but aren't ready to manage self-hosted infrastructure: same visual, no-code building experience as Zapier, with credit-based pricing that usually suits multi-step workflows better than Zapier's per-step tasks.",
   },
   {
     slug: 'zapier', name: 'Zapier', category: 'Productivity',
     tagline: 'The largest app library and the fastest onboarding for non-technical teams',
     description: 'Zapier bills per task — every action step in a Zap, each time it runs — which is straightforward at low volume but escalates quickly for multi-step or high-volume workflows. Roughly 8,000+ pre-built app connections, the largest of any automation platform. Free plan available; Starter from $19.99/month.',
-    pricing: 'Free (~100 tasks/mo) + $19.99+/month (Starter, Professional, Team)', bestFor: 'Non-technical teams who need to be live today with simple, low-to-moderate volume workflows',
+    pricing: 'Free (100 tasks/mo) + from $19.99/month (Professional, billed annually)', bestFor: 'Non-technical teams who need to be live today with simple, low-to-moderate volume workflows',
     rating: 4.5, lastTested: 'August 2026',
     seoTitle: 'Zapier Review 2026 — Pricing, Task-Based Costs Explained | AI Nexus',
-    metaDescription: 'Zapier 2026: $19.99/month Starter pricing, 8,000+ app integrations, and a 4.5 G2 rating from 1,806 reviews. Full pricing breakdown and honest cost-at-scale verdict.',
+    metaDescription: 'Zapier 2026: Professional from $19.99/month billed annually, 9,000+ app integrations, and a 4.5 G2 rating from 1,806 reviews. Full pricing breakdown and honest cost-at-scale verdict.',
     reviewBody: "Zapier is the longest-established of the major automation platforms, built around raw integration breadth — roughly 8,000+ pre-built app connections, the largest of any platform in this category — and the gentlest learning curve of the three, with a linear trigger-action Zap builder that gets non-technical users live in minutes. The Free plan allows roughly 100 tasks/month on single-step Zaps only; the Starter plan at $19.99/month (annual billing) unlocks multi-step Zaps with around 750 tasks, and Professional/Team tiers run $69–$100+/month depending on volume and billing terms. The billing unit that defines Zapier's economics is the task: every action step in a Zap consumes one task, every time it runs, so a 1-trigger, 4-action Zap consumes 4 tasks per run — meaning a moderately complex workflow can exhaust a 750-task allowance in as few as 150 runs. Genuine autonomous AI agent behavior lives in a separate product, Zapier Agents, launched in late 2024, distinct from the classic rule-based Zap builder most users interact with; Zapier MCP separately exposes the full app catalog to any MCP-compatible AI host. G2 reviewers rate Zapier at 4.5/5 from 1,806 reviews as of August 2026 — the largest verified review base of any automation platform — with roughly three-quarters giving 5 stars and reviewers overwhelmingly citing ease of use and the Trigger → Action logic as standout strengths; a G2-sourced grid report separately scores Zapier at 89% for cross-system integration. The consistent, specific criticism is cost at scale: task-based billing escalating into real budget territory, with some reviewers reporting $500–$2,000/month in overages once volume passes roughly 100,000 tasks/month. Zapier is the right pick for non-technical teams with simple, low-volume workflows who need to be live today; teams with real branching logic or meaningful volume get better economics from Make, and teams with developer resources needing AI-native agent behavior at the lowest cost should evaluate n8n.",
   },
 
@@ -1040,7 +1042,7 @@ const TOOLS = [
     slug: 'wegic', name: 'Wegic', category: 'Design',
     tagline: 'Build a website by chatting with an AI design team',
     description: 'Wegic builds websites through conversation instead of a drag-and-drop editor. Describe the business, answer a few follow-up questions, and it generates a responsive multi-page site you refine by chat — with code export available.',
-    pricing: 'Free credits + $2.99 trial + paid plans', bestFor: 'Non-designers who need a business site or landing page live fast',
+    pricing: '$2.99 trial pack + from $23.90/month (Starter, billed annually)', bestFor: 'Non-designers who need a business site or landing page live fast',
     rating: 4.0, lastTested: 'September 2026',
     seoTitle: 'Wegic Review 2026: Chat-Based AI Website Builder Reviewed | AI Nexus',
     metaDescription: 'Wegic 2026 review: build a site by chatting, first draft in about a minute. Credit costs, code export, and where the $2.99 trial makes sense.',
@@ -1051,11 +1053,11 @@ const TOOLS = [
     slug: 'presentation-intelligence', name: 'Presentation Intelligence (Pi)', category: 'Design',
     tagline: 'An AI presentation generator that designs while it writes',
     description: 'Pi (Presentation Intelligence) turns a prompt, PDF, Word doc, PowerPoint file, webpage or image into a fully designed slide deck, generating content and layout together rather than dropping AI text into a fixed template.',
-    pricing: 'Free (forever) + $9.90/month', bestFor: 'Anyone turning an existing document, PDF or webpage into a deck fast',
+    pricing: 'Free (400 points) + Pro from $14/month billed annually', bestFor: 'Anyone turning an existing document, PDF or webpage into a deck fast',
     rating: 3.8, lastTested: 'September 2026',
-    seoTitle: 'Presentation Intelligence (Pi) Review 2026: Free & $9.90/Mo | AI Nexus',
-    metaDescription: 'Pi (Presentation Intelligence) 2026 review: forever-free plan with no watermark, Basic at $9.90/month. Verified pricing, inputs accepted, and who it fits.',
-    reviewBody: 'Pi, short for Presentation Intelligence and built by DeepVinci, is an AI-native presentation generator whose Design Engine produces content and visual layout together rather than filling a fixed template with AI text, and its Smart Fluid Content Framework renders decks responsively across desktop, tablet and mobile. It accepts an unusually wide range of source material — a text prompt, PDF, Word document, PowerPoint file, webpage URL or image — and returns a complete deck with structure, copy, layout and matched imagery already in place. The free plan is more generous than most competitors\' in this category: it is forever free, includes roughly 40 AI generation credits, custom templates and font uploads, and exports with no watermark, which is a meaningfully lower-risk way to evaluate output quality than a time-limited trial. The paid Basic plan costs $9.90/month, or $89.90/year (roughly $7.50/month annualised), which undercuts several established competitors and unlocks unlimited generation, editing, AI image creation and export. Pi\'s independent review footprint is thin: no G2 reviews were found, and the Trustpilot listing under "PI" belongs to a different product, the pi.ai chatbot, not this tool — so vendor claims about quality and reliability are harder to verify against outside sources than for more established competitors. There is no publicly listed team or enterprise tier, no SSO, and large source files (400+ page PDFs) and some image uploads have been reported to fail on import. A reasonable pick for individuals who want a cheap, watermark-free way to turn an existing document into a deck; a weaker fit for teams needing admin controls or a large body of independent reviews to lean on first.',
+    seoTitle: 'Presentation Intelligence (Pi) Review 2026: Free Plan & Pro Pricing | AI Nexus',
+    metaDescription: 'Pi (Presentation Intelligence) 2026 review: free plan with 400 points, Pro at $168/year. Verified pricing, inputs accepted, and who it fits.',
+    reviewBody: 'Pi, short for Presentation Intelligence and built by DeepVinci, is an AI-native presentation generator whose Design Engine produces content and visual layout together rather than filling a fixed template with AI text, and its Smart Fluid Content Framework renders decks responsively across desktop, tablet and mobile. It accepts an unusually wide range of source material — a text prompt, PDF, Word document, PowerPoint file, webpage URL or image — and returns a complete deck with structure, copy, layout and matched imagery already in place. The free plan gives a 400-point welcome bonus, up to 10 cards per prompt and 100 MB of storage, but Pi\'s pricing page says export requires a membership, so it is a way to judge output rather than to ship decks. Pro costs $168/year (about $14/month), or $240/year paid monthly, with 12,000 credits a month and up to 50 cards per prompt; Max ($336/year) and Studio ($888/year) sit above it. Pi\'s independent review footprint is thin: no G2 reviews were found, and the Trustpilot listing under "PI" belongs to a different product, the pi.ai chatbot, not this tool — so vendor claims about quality and reliability are harder to verify against outside sources than for more established competitors. There is no publicly listed team or enterprise tier, no SSO, and large source files (400+ page PDFs) and some image uploads have been reported to fail on import. A reasonable pick for individuals who want to turn an existing document into a deck; a weaker fit for teams needing admin controls or a large body of independent reviews to lean on first.',
   },
   // ── AiPPT.com (Megadreams) — added Sep 2026. Mirrors matching entry in constants.ts TOOLS. ──
   {
@@ -1073,10 +1075,10 @@ const TOOLS = [
     slug: 'renderforest', name: 'Renderforest', category: 'Video',
     tagline: 'One subscription for AI video, logo, mockups and a website — not four separate tools',
     description: 'Renderforest is an all-in-one AI platform bundling video creation, an AI logo maker, mockup generation and a no-code website builder into one account. Pick a template category, describe or upload your content, and it assembles a branded first draft in minutes.',
-    pricing: 'Free (watermarked, 360p) + Lite/Amateur/Pro subscriptions from ~$9–13/month', bestFor: 'Small businesses and freelancers who want video, logo and a basic website covered by one subscription instead of three',
+    pricing: 'Free test credits + Lite/Pro/Business from ₹499/month (billed annually, India pricing)', bestFor: 'Small businesses and freelancers who want video, logo and a basic website covered by one subscription instead of three',
     rating: 4.0, lastTested: 'September 2026',
     seoTitle: 'Renderforest Review 2026: Free Plan, Pricing & Alternatives | AI Nexus',
-    metaDescription: 'Renderforest 2026 review: all-in-one AI video, logo and website platform. Free-plan limits, verified Lite/Amateur/Pro pricing, and who it fits.',
+    metaDescription: 'Renderforest 2026 review: all-in-one AI video, logo and website platform. Free-plan limits, verified Lite/Pro/Business pricing, and who it fits.',
     reviewBody: 'Renderforest is an all-in-one AI platform that bundles video creation, an AI logo maker, mockup generation and a no-code website builder into a single account rather than requiring separate subscriptions for each. Pick a template category — intros, explainers, slideshows, presentations, or music visualisations — describe or upload your content, and Renderforest assembles a branded first draft in minutes; the same account also covers logo design and a basic website. The free plan is a genuine evaluation tier rather than a locked preview: 300MB of storage, unlimited 360p video exports, and a downloadable logo PNG, though every free export carries a watermark and the logo download is capped at low resolution for non-commercial use. Independent listings disagree on paid pricing — GetApp shows Lite at $13.09/month, Amateur at $19.64/month and Pro at $39.29/month, while G2 shows Lite at $9/month and Pro at $19/month — so treat any published dollar figure as approximate until confirmed at checkout; a pay-per-export option also exists as an alternative to a subscription. The product carries a strong independent review base for this category: 4.8/5 on Capterra across 407 reviews, with 97% positive sentiment, and reviewers specifically praise speed and ease of use, though several also flag the tier structure as confusing to compare against single-purpose competitors. A reasonable pick for anyone who wants video, logo and a basic website covered by one login and one subscription; a weaker fit for anyone who wants the single best tool in just one of those three categories, where a dedicated competitor (Pictory for video repurposing, Looka or Canva AI for logos) will generally out-perform Renderforest\'s version of that one feature.',
   },
   // ── PixVerse — added Oct 2026. Mirrors matching entry in constants.ts TOOLS. ──
@@ -1450,7 +1452,7 @@ const TOOL_FAQS = {
   ],
 
   gamma: [
-    { q: 'Is Gamma free?', a: "Yes — Gamma gives 400 free AI credits on signup with no credit card required. That is enough to create 4–5 complete AI-generated presentations. Free presentations include a small Gamma badge in the corner. The Plus plan at $8/month removes the badge, unlocks unlimited AI creation, and adds custom domains and analytics." },
+    { q: 'Is Gamma free?', a: "Yes — Gamma gives 400 free AI credits on signup with no credit card required. That is enough to create 4–5 complete AI-generated presentations. Free presentations include a small Gamma badge in the corner. The Plus plan at $8/month removes the badge and adds 1,000 AI credits a month. Custom domains and detailed analytics start on Pro." },
     { q: 'How does Gamma generate presentations?', a: "Enter a topic, paste existing content, or upload a document. Gamma's AI generates a complete presentation — including slide content, layout, imagery, and formatting — in under 2 minutes. You then edit individual slides in a web-based editor. The AI handles the structural thinking so you focus on refinement rather than starting from a blank slide." },
     { q: 'Gamma vs PowerPoint — which Should I use?', a: "Gamma is faster for AI-generated presentations and produces more modern, visually polished results from minimal input. PowerPoint gives more precise manual control and is the standard for corporate and client presentations where exact brand compliance matters. For rapid ideation, pitch decks, and team presentations, Gamma is significantly faster. For formal corporate deliverables, PowerPoint is still the expected format." },
     { q: 'Can Gamma export to PowerPoint or PDF?', a: "Yes — Gamma exports to PDF and PowerPoint (.pptx) on paid plans. This means you can create the structure in Gamma and deliver a .pptx file to clients or stakeholders who work in PowerPoint. PDF export is available on the free plan." },
@@ -1687,10 +1689,10 @@ const TOOL_FAQS = {
     { q: 'Who is signNow for?', a: "Freelancers and small businesses that send contracts for signature regularly. If you sign once or twice a year, a free signing option may be enough." },
   ],
   'presentation-intelligence': [
-    { q: 'Is Presentation Intelligence (Pi) free?', a: "Yes — the free plan is forever free, not a time-limited trial. It includes roughly 40 AI generation credits, custom templates and font uploads, and exports with no watermark. Once those credits run out you either wait for extra credits (earned through referrals, daily login or document sharing) or upgrade to Basic at $9.90/month for unlimited generation." },
-    { q: 'How much does Pi cost?', a: "Pi has two public plans: Free ($0, ~40 credits) and Basic at $9.90/month, or $89.90/year, which works out to roughly $7.50/month billed annually. There is no publicly listed team or enterprise tier — larger deployments are handled as custom arrangements on request." },
+    { q: 'Is Presentation Intelligence (Pi) free?', a: "Yes, to try. Pi's pricing page lists a Free plan with a 400-point welcome bonus, up to 10 cards per prompt and 100 MB of storage, and more points can be earned by inviting friends. The same page says export requires a membership, so plan on a paid plan if you need to download decks." },
+    { q: 'How much does Pi cost?', a: "Pi's pricing page lists Free, Pro ($168/year, about $14/month, or $240/year paid monthly), Max ($336/year) and Studio ($888/year). Pro includes 12,000 credits a month and up to 50 cards per prompt. There is no publicly listed team or enterprise tier." },
     { q: 'What can I upload to Pi to build a deck?', a: "Pi accepts a plain text prompt, PDFs, Word documents, PowerPoint files, webpage URLs and images as source material, then produces a complete deck with structure, copy, layout and matched imagery already in place. Very large PDFs (400+ pages) and some image uploads have been reported to fail, so split oversized files before uploading." },
-    { q: 'Is Pi better than Gamma?', a: "Both generate a designed deck from a prompt, and Pi's Basic plan is slightly cheaper than Gamma's Plus plan on annual billing ($7.50/month vs $8/month). Pi's free plan is more generous on watermarking (none, versus Gamma's watermarked free exports) but capped at fewer credits. Gamma has a far larger independent review base and a more established track record; Pi is the newer, less-tested option, so treat it as a lower-cost alternative worth a look rather than a like-for-like replacement." },
+    { q: 'Is Pi better than Gamma?', a: "Both generate a designed deck from a prompt. Pi accepts the widest range of source files (PDF, Word, PowerPoint, webpages and images), while Gamma has a far larger independent review base. Pi's Pro plan is $168/year (about $14/month), and Pi's pricing page says free-plan export requires a membership. Treat Pi as an alternative worth testing for document-to-deck work rather than a like-for-like replacement." },
     { q: 'Is Pi (Presentation Intelligence) a trustworthy pick given the limited reviews?', a: "Treat it as an early-stage bet rather than an established default. There are no G2 reviews for Pi, and the Trustpilot listing under \"PI\" belongs to a different product (the pi.ai chatbot), not this tool — so there isn't yet an independent review base to verify vendor claims against. The free plan is genuinely usable for testing output quality before committing money, which is the lowest-risk way to judge it yourself." },
   ],
   'creao-ai': [
@@ -1995,7 +1997,7 @@ const COMPARE_ARTICLES = [
     seoTitle: 'Gamma vs Beautiful.ai 2026 — Compared',
     metaDescription: 'Gamma vs Beautiful.ai compared for students, startups, and professionals. Free plans, AI generation speed, and design quality compared side by side in 2026.',
     faqs: [
-      { q: 'Is Gamma free?', a: 'Yes. Gamma offers 400 AI credits on signup — enough for 4-5 complete presentations. Free presentations include a small Gamma badge. Paid plans from $8/month remove the badge and add unlimited AI creation.' },
+      { q: 'Is Gamma free?', a: 'Yes. Gamma offers 400 AI credits on signup — enough for 4-5 complete presentations. Free presentations include a small Gamma badge. Paid plans from $8/month remove the badge and add monthly AI credits (1,000 a month on Plus).' },
       { q: 'Is Beautiful.ai better for corporate presentations?', a: 'Beautiful.ai has stronger corporate templates and brand consistency controls. If you present to enterprise clients regularly and need pixel-perfect brand compliance, Beautiful.ai is worth the higher price.' },
       { q: 'Which generates presentations faster?', a: 'Gamma generates a complete presentation in under 2 minutes from a topic prompt. Beautiful.ai takes 3-4 minutes and requires more manual template selection. Gamma wins on speed.' },
       { q: 'Can Gamma create websites?', a: 'Yes — Gamma creates scrollable one-page websites and documents using the same AI workflow. Beautiful.ai is limited to slide presentations only.' },
@@ -3512,7 +3514,7 @@ const BLOG_POSTS = [
     dateModified: '2026-09-09',
     readTimeMinutes: 10,
     ogImage: 'https://ainexustools.online/og/blog/gamma-ai-review-2026.webp',
-    quickAnswer: "Gamma AI is worth $8/month in 2026 for anyone who builds presentations from scratch more than once a month. The free plan's 400 one-time AI credits (roughly 8–15 decks) are enough to evaluate it properly. Plus removes the watermark and unlocks unlimited generation. Beautiful.ai suits teams that need locked-down design consistency instead of speed.",
+    quickAnswer: "Gamma AI is worth $8/month in 2026 for anyone who builds presentations from scratch more than once a month. The free plan's 400 one-time AI credits (roughly 8–15 decks) are enough to evaluate it properly. Plus removes the watermark and adds 1,000 AI credits a month. Beautiful.ai suits teams that need locked-down design consistency instead of speed.",
     faqs: [
     {
       q: "Is Gamma AI worth it in 2026?",
@@ -3544,7 +3546,7 @@ const BLOG_POSTS = [
     },
     {
       q: "How much does Gamma AI cost for a small team in India?",
-      a: "Gamma bills per seat in USD with no UPI or direct INR option, so a 3-person team on the Plus plan runs roughly $24/month (about ₹2,000/month) — the cheapest paid route with unlimited generation and no watermark. Indian users need a forex-enabled card or a prepaid international card such as Niyo or Scapia to subscribe, since Gamma doesn't currently support UPI or Razorpay billing.",
+      a: "Gamma bills per seat and shows Indian visitors rupee prices: Plus is ₹400 per seat per month on annual billing (₹4,800 per seat per year, before tax), so a 3-person team pays ₹1,200/month. Each Plus seat gets 1,000 AI credits a month and no Gamma branding. Gamma's help center lists UPI as a payment method in India, alongside major credit and debit cards.",
     },
     ],
     mentionedTools: ['gamma', 'beautiful-ai', 'canva-ai'],
@@ -4733,7 +4735,7 @@ const BLOG_POSTS = [
     readTimeMinutes: 8,
     faqs: [
       { q: 'What is the best AI tool for podcast recording and editing in 2026?', a: "Podcastle is the best all-in-one AI podcast tool for creators who record and edit in the same platform. It handles remote recording (up to 4K quality), AI noise removal, filler word detection, and automatic transcript-based editing. For creators who only need AI editing on pre-recorded files, Descript's text-based editor is the most intuitive option — you edit audio by editing a transcript like a Google Doc." },
-      { q: 'Is Podcastle free?', a: "Yes — Podcastle has a permanent free plan that includes remote recording (up to 10 hours/month), AI magic dust noise removal, automatic transcription (up to 3 hours), and up to 3 published episodes. The free plan is genuinely usable for a new podcast that publishes 2–3 episodes per month. The paid Basic plan at $11.99/month removes episode limits and adds filler word removal." },
+      { q: 'Is Podcastle free?', a: "Yes. Podcastle (now Async) has a permanent free plan with 10 one-time AI credits, 1 hour of remote recording (lifetime), 2 GB of storage and exports up to 720p, and no credit card is needed. It is enough to test the workflow, not to run a regular show. The paid Essentials plan at $11.99/month billed annually ($19.99 monthly) adds 450 AI credits a month, 2 hours of remote recording and Full HD exports." },
       { q: 'Can AI remove background noise from podcast recordings?', a: "Yes — Podcastle's Magic Dust feature and Adobe Podcast's Enhance Speech tool both use AI to remove background noise, hum, echo, and room reverb from recordings. Adobe Podcast Enhance is particularly impressive: upload a noisy recording and it returns a studio-quality clean version in seconds, completely free. It works on recordings made on laptop microphones, phone audio, and even noisy outdoor recordings." },
       { q: 'What is the difference between Podcastle and Descript?', a: "Podcastle is primarily a recording and production platform — it excels at remote recording quality and AI audio cleanup. Descript is primarily an editing platform — you edit your podcast by editing the automatically generated transcript (delete a line of text and the audio is removed). Podcastle is better for the recording stage; Descript is better if you have a lot of recorded audio to cut down and structure." },
       { q: 'Do I need Murf AI for podcasts if I already have a microphone?', a: "Murf AI is not a recording or editing tool — it's a text-to-speech voice generator. You use it for podcast intros, outros, ad reads, and voiceover narration when you don't want to record those sections yourself, or when you need a consistent branded voice for a show with multiple hosts. If you have a microphone and record all your own audio, you don't need Murf for the recording process itself." },
@@ -5014,7 +5016,7 @@ const BLOG_POSTS = [
     readTimeMinutes: 10,
     faqs: [
       { q: 'What is the best free AI tool for content creators in 2026?', a: "Canva AI is the best free AI tool for content creators who need design, writing, and image generation in one place. Its free plan includes 250,000+ templates, Magic Write (AI copy), and limited background removal — enough to produce professional content without paying. For writing specifically, Rytr's free plan (10,000 characters/month) is the strongest no-cost option for generating captions, emails, and short copy." },
-      { q: 'Can you use AI tools for content creation without paying?', a: "Yes — all 8 tools in this guide have genuinely usable free plans. The key distinction is what 'free' means: Rytr's free plan has no time limit but caps at 10,000 characters/month. Canva free is unlimited for basic design but locks AI features behind Pro. Podcastle free allows 10 hours of recording per month. For most solo content creators publishing 3–5 pieces per week, the free plans covered here are sufficient to start without a paid subscription." },
+      { q: 'Can you use AI tools for content creation without paying?', a: "Yes — all 8 tools in this guide have genuinely usable free plans. The key distinction is what 'free' means: Rytr's free plan has no time limit but caps at 10,000 characters/month. Canva free is unlimited for basic design but locks AI features behind Pro. Podcastle free includes 1 hour of remote recording in total (lifetime), so treat it as a trial. For most solo content creators publishing 3–5 pieces per week, the free plans covered here are sufficient to start without a paid subscription." },
       { q: 'Which AI tool is best for YouTube and social media content creators?', a: "For YouTube creators: Podcastle (free, 10hrs/month) for audio recording and editing, Canva AI (free) for thumbnails and graphics, and Ocoya (paid from $15/month) for cross-platform scheduling. For social media creators specifically: Ocoya combines caption writing, design, and scheduling — the three tasks that take the most time — into one dashboard." },
       { q: 'Is Grammarly useful for content creators?', a: "Yes — Grammarly's free plan is one of the highest-ROI free tools for any content creator who writes in English. It catches grammar and clarity errors across Gmail, Google Docs, Notion, and the browser without any word limit. The tone detector (Premium only) is particularly useful for creators who write for multiple audience types." },
       { q: 'What AI tool helps content creators save the most time?', a: "Ocoya saves the most time for creators managing multiple social media accounts — it replaces a caption writer, design tool, and scheduler in one dashboard. For writers and bloggers, Rytr cuts first-draft time by 60–70% on short-form content. For podcast creators, Podcastle's AI noise removal and auto-transcription eliminate the most time-consuming post-production steps." },
@@ -5755,9 +5757,9 @@ const BLOG_POSTS = [
       { q: "Is Gamma or Beautiful.ai better for presentations?", a: "It depends on what you are optimizing for. Gamma is the better choice for speed and design variety. Type a prompt and receive a complete, visually polished deck in under a minute. Beautiful.ai is the better choice when consistency matters more than speed. Its Smart Slide system constrains every slide to a small library of professionally designed layouts. The tradeoff: Gamma gives you more creative range but requires more editing to make export-ready; Beautiful.ai is more rigid but harder to make look unprofessional. For solo founders and freelancers, Gamma is the more practical pick. For sales and marketing teams that need brand consistency across many presenters, Beautiful.ai is worth the higher entry price." },
       { q: "Can NotebookLM make a PowerPoint presentation?", a: "NotebookLM's slide-generation feature launched in November 2025 with PDF as the primary export format; native PPTX (PowerPoint) export began rolling out starting February 2026 and should be available in most accounts by mid-2026, though Google has not published an exact completion date for the full rollout. Until you confirm PPTX export is live on your account, the safe assumption is PDF-first — usable for sharing and presenting directly, but requiring a manual rebuild if your final deliverable must specifically be an editable .pptx file. Check NotebookLM's export menu directly, since this is a feature still in active rollout." },
       { q: "Is Canva good for AI presentations or just templates?", a: "Canva AI's presentation generation (Magic Design) is genuinely AI-driven — it builds a structured deck from a single text prompt, not just a folder of pre-made templates — but it is a feature bolted onto a much broader design platform rather than a presentation-first product the way Gamma is. The practical result: Canva AI's slide-specific intelligence (narrative flow, content structuring, slide-to-slide pacing) is noticeably weaker than Gamma's, but if you are already a Canva user for social graphics, brand assets, or marketing materials, getting presentations \"for free\" inside a subscription you already pay for is a real advantage. Pick Canva if presentations are one of several design tasks you do weekly; pick Gamma if presentations specifically are the job." },
-      { q: "How much do AI presentation tools cost for a small team in India?", a: "For a 3-person team, Gamma Plus across 3 seats runs roughly $24/month (~₹2,000/month), the cheapest paid option with unlimited generation and no watermark. Canva Pro for 3 people runs about $432/year ($144 each, roughly ₹3,000/month) and bundles a full design suite. Canva's pricing page says Canva Teams is no longer open to new sign-ups. Beautiful.ai is the most expensive entry point: there is no team discount below the $40/seat/month Team plan, so 3 seats costs $120/month (~₹10,000/month). All four tools bill in USD with no UPI support. Indian users need a forex-enabled card or an international prepaid card (Niyo, Scapia). NotebookLM remains the only fully free option regardless of team size." },
-      { q: "What is the cheapest paid AI presentation tool in 2026?", a: "Pi (Presentation Intelligence), at $7.50/month on annual billing ($89.90/year), is the cheapest paid option among the tools compared here that gives unlimited generation. Gamma Plus is close behind at $8/month on annual billing. Beautiful.ai's Pro plan runs $14.50/month billed annually and has no permanent free plan to fall back on, unlike Gamma or Pi. Canva Pro at $144/year is priced similarly, though it bundles a full design suite beyond just presentations. NotebookLM is not \"cheap\" but genuinely free with no paid tier at all, so it wins outright if budget is the only factor." },
-      { q: "Do AI presentation tools support UPI or direct INR billing for Indian users?", a: "No. Gamma, Beautiful.ai, and Canva AI all bill in USD only, with no UPI or direct INR payment option as of 2026. Indian users need a forex-enabled card or a prepaid international card, such as Niyo or Scapia, to subscribe to any of them. NotebookLM is the exception: since it is completely free with no paid tier, it has zero billing friction for Indian users and needs nothing beyond a free Google account." },
+      { q: "How much do AI presentation tools cost for a small team in India?", a: "For a 3-person team, Gamma Plus across 3 seats costs ₹1,200/month on annual billing (₹400 per seat before tax, as shown on the Gamma pricing page for Indian visitors), with 1,000 AI credits per seat each month and no watermark. Canva Pro for 3 people runs about $432/year ($144 each, roughly ₹3,000/month) and bundles a full design suite. Canva's pricing page says Canva Teams is no longer open to new sign-ups. Beautiful.ai is the most expensive entry point: there is no team discount below the $40/seat/month Team plan, so 3 seats costs $120/month (~₹10,000/month). Gamma accepts UPI in India; the other paid tools here bill in USD with no UPI support, so Indian users need a forex-enabled card or an international prepaid card (Niyo, Scapia) for those. NotebookLM remains the only fully free option regardless of team size." },
+      { q: "What is the cheapest paid AI presentation tool in 2026?", a: "Pi (Presentation Intelligence), at $7.50/month on annual billing ($89.90/year), is the cheapest paid option among the tools compared here that gives unlimited generation. Gamma Plus is another low-cost option (₹400 per seat per month on annual billing in India), but it includes 1,000 AI credits a month rather than unlimited generation. Beautiful.ai's Pro plan runs $14.50/month billed annually and has no permanent free plan to fall back on, unlike Gamma or Pi. Canva Pro at $144/year is priced similarly, though it bundles a full design suite beyond just presentations. NotebookLM is not \"cheap\" but genuinely free with no paid tier at all, so it wins outright if budget is the only factor." },
+      { q: "Do AI presentation tools support UPI or direct INR billing for Indian users?", a: "Partly. Gamma accepts UPI in India, according to its help center, and its pricing page shows Indian visitors rupee prices (Plus is ₹400 per seat per month on annual billing). Beautiful.ai and Canva AI bill in USD only, with no UPI or direct INR payment option as of 2026, so Indian users need a forex-enabled card or a prepaid international card, such as Niyo or Scapia, for those. NotebookLM is completely free with no paid tier, so it has zero billing friction for Indian users and needs nothing beyond a free Google account." },
       { q: "Is Prezi AI better than Gamma?", a: "It depends on whether your presentation is live or static. Gamma is faster for producing a polished static deck or web-native page from a single prompt. Prezi AI's advantage is built-in audience engagement: live polls, quizzes, and viewer analytics during the presentation itself, plus a dynamic, chat-based canvas rather than a fixed slide sequence. Neither of those features exist in Gamma, Beautiful.ai, or Canva AI. If you present live to an audience and want real-time interaction, Prezi AI is worth the switch. If you mainly send decks as links or export to PowerPoint, Gamma remains the faster, cheaper default." },
       { q: "Can ChatGPT or Microsoft Copilot make PowerPoint presentations?", a: "Yes. ChatGPT for PowerPoint is OpenAI's official add-in that generates and edits slides inside PowerPoint itself. Microsoft Copilot does the same natively within Microsoft 365, at a higher price point than ChatGPT Plus ($20/month): Copilot is roughly $30/user/month as an add-on. Google's Gemini plays the equivalent role inside Google Slides. Their advantage over Gamma, Beautiful.ai, or Canva AI is zero export friction, since the deck is native PowerPoint or Slides from the start. The trade-off is design ambition. These native tools are better at editing existing content than at generating a bold, fully-designed deck from a blank prompt. Pick a native tool if staying inside PowerPoint or Slides matters more than design output; pick a dedicated tool if the opposite is true." },
       { q: "Which AI presentation tool has audience polls or live engagement features?", a: "Prezi AI is the only tool in this comparison with built-in live audience engagement — polls, quizzes, and real-time viewer analytics during the presentation itself. Gamma has basic viewer stats on its Pro plan (who opened the link, how long they stayed) but no interactive polling. Beautiful.ai, Canva AI, and NotebookLM have no audience-interaction features at all; they're built for producing the deck, not for running the live session. If interactivity during the talk itself is a requirement, Prezi AI is currently the only tool on this list built for it." },
@@ -6121,6 +6123,41 @@ const ANSWER_BLOCKS = JSON.parse(fs.readFileSync(path.join(ROOT, 'blog', 'answer
     if (newest && newest !== post.dateModified && newest >= post.datePublished && newest <= TODAY) { post.dateModified = newest; synced++; }
   }
   console.log(`   ↻ freshness sync: ${synced} post dateModified value(s) updated from blog/metadata.ts + answer-blocks`);
+}
+
+// ── FAQ / quick-answer sync (Oct 2026) ────────────────────────────────────────────────────
+// The mirrored quickAnswer/faqs had drifted from blog/*.ts, so the FAQPage schema and Quick Answer
+// in the static HTML disagreed with what readers see. The post file is the source of truth.
+{
+  const nodeRequire = createRequire(import.meta.url);
+  const Module = nodeRequire('module');
+  const compileTs = (absPath, requireFn) => {
+    const { outputText } = ts.transpileModule(fs.readFileSync(absPath, 'utf8'), {
+      compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020, esModuleInterop: true },
+      fileName: absPath,
+    });
+    const mod = new Module(absPath, null);
+    mod.filename = absPath;
+    mod.paths = Module._nodeModulePaths(path.dirname(absPath));
+    if (requireFn) mod.require = requireFn;
+    mod._compile(outputText, absPath);
+    return mod.exports;
+  };
+  const typesModule = compileTs(path.join(ROOT, 'blog', 'types.ts'));
+  // Other relative imports only feed the `content` field, which is not read here.
+  const stub = new Proxy({}, { get: () => new Proxy({}, { get: () => '' }) });
+  let synced = 0;
+  for (const post of BLOG_POSTS) {
+    const absPath = path.join(ROOT, 'blog', `${post.slug}.ts`);
+    if (!fs.existsSync(absPath)) continue;
+    const exp = compileTs(absPath, id => (id === './types' ? typesModule : id.startsWith('.') ? stub : nodeRequire(id)));
+    const src = exp.default ?? exp;
+    let changed = false;
+    if (Array.isArray(src.faqs) && JSON.stringify(src.faqs) !== JSON.stringify(post.faqs)) { post.faqs = src.faqs; changed = true; }
+    if (typeof src.quickAnswer === 'string' && src.quickAnswer && src.quickAnswer !== post.quickAnswer) { post.quickAnswer = src.quickAnswer; changed = true; }
+    if (changed) synced++;
+  }
+  console.log(`   ↻ FAQ sync: ${synced} post(s) took quickAnswer/faqs from blog/*.ts`);
 }
 
 const BLOG_RELATED_LINKS = {
@@ -6856,7 +6893,69 @@ for (const tool of TOOLS) {
 
 // ── 2. Compare pages ──────────────────────────────────────────────────────────
 console.log('\nCompare pages:');
+
+// pages/compare-data.ts is what the live page renders; read it so crawlers get the full article
+// and the FAQPage schema matches the visible FAQ (the COMPARE_ARTICLES mirror above had drifted).
+const COMPARE_SOURCE = (() => {
+  const nodeRequire = createRequire(import.meta.url);
+  const Module = nodeRequire('module');
+  const absPath = path.join(ROOT, 'pages', 'compare-data.ts');
+  const { outputText } = ts.transpileModule(fs.readFileSync(absPath, 'utf8'), {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020, esModuleInterop: true },
+    fileName: absPath,
+  });
+  const mod = new Module(absPath, null);
+  mod.filename = absPath;
+  mod.paths = Module._nodeModulePaths(path.dirname(absPath));
+  mod.require = id => {
+    if (id === '../lib/affiliate-links') return { AFFILIATE_LINKS: AFFILIATE_LINKS_MAP };
+    return nodeRequire(id);
+  };
+  mod._compile(outputText, absPath);
+  return Object.fromEntries((mod.exports.COMPARE_ARTICLES || []).map(a => [a.slug, a]));
+})();
+
+// Same rules as renderContent() in pages/CompareArticlePage.tsx: blank line = paragraph, **bold**, [label](href).
+function compareTextToHtml(text) {
+  return String(text || '').split('\n\n').filter(p => p.trim()).map(para => {
+    const inner = para.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g).map(chunk => {
+      if (chunk.startsWith('**') && chunk.endsWith('**')) return `<strong>${esc(chunk.slice(2, -2))}</strong>`;
+      const link = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(chunk);
+      if (link) {
+        const external = !link[2].startsWith('/');
+        return `<a href="${esc(link[2])}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''} style="color:#0D9488">${esc(link[1])}</a>`;
+      }
+      return esc(chunk).replace(/\n/g, '<br>');
+    }).join('');
+    return `<p style="font-size:.95rem;line-height:1.7;color:#333;margin:0 0 12px">${inner}</p>`;
+  }).join('\n');
+}
+
+function compareArticleBodyHtml(src) {
+  const sectionId = h => h.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const tableHtml = src.comparisonTable?.length
+    ? `<h2 style="font-size:1.15rem;margin:24px 0 10px">At a glance — pricing &amp; features</h2>
+      <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:.85rem">
+        <thead><tr>${['Tool', 'Price/mo', 'USD/mo', 'Free plan', 'AI captions', 'Platforms', 'Best for'].map(h => `<th scope="col" style="text-align:left;padding:8px;border-bottom:2px solid #0D9488">${h}</th>`).join('')}</tr></thead>
+        <tbody>${src.comparisonTable.map(r => `<tr><td style="padding:8px;border-bottom:1px solid #eee"><strong>${esc(r.name)}</strong>${r.ourPick ? ' (our pick)' : ''}</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(r.price)}</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(r.priceUSD)}</td><td style="padding:8px;border-bottom:1px solid #eee">${r.freeplan ? 'Yes' : 'No'}</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(r.aiContent)}</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(r.platforms)}</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(r.bestFor)}</td></tr>`).join('')}</tbody>
+      </table></div>`
+    : '';
+  const sectionsHtml = (src.sections || []).map(s =>
+    `<section id="${sectionId(s.heading)}" style="margin-top:24px"><h2 style="font-size:1.15rem;margin-bottom:10px">${esc(s.heading)}</h2>\n${compareTextToHtml(s.content)}</section>`
+  ).join('\n');
+  const faqHtml = src.faqs?.length
+    ? `<section style="margin-top:24px"><h2 style="font-size:1.15rem;margin-bottom:10px">Frequently Asked Questions</h2>${src.faqs.map(f => `<h3 style="font-size:1rem;margin:14px 0 6px">${esc(f.q)}</h3><p style="font-size:.95rem;line-height:1.7;color:#333;margin:0">${esc(f.a)}</p>`).join('')}</section>`
+    : '';
+  return `<div style="margin-top:20px">${compareTextToHtml(src.intro)}</div>
+      ${tableHtml}
+      ${sectionsHtml}
+      <div data-speakable="verdict" style="margin-top:24px;padding:16px 20px;background:#f8fafc;border-radius:10px"><h2 style="font-size:1.15rem;margin-bottom:10px">Our Verdict</h2>${compareTextToHtml(src.verdict)}</div>
+      ${faqHtml}`;
+}
+
 for (const art of COMPARE_ARTICLES) {
+  const compareSrc = COMPARE_SOURCE[art.slug];
+  if (compareSrc?.faqs?.length) art.faqs = compareSrc.faqs;
   // FIXED: All compare pages self-canonicalize. Previously claude-code compare page
   // pointed its canonical to the blog URL, meaning it could never be indexed at /compare/.
   const canonical = `${SITE}/compare/${art.slug}/`;
@@ -6886,9 +6985,17 @@ if (art.faqs && art.faqs.length > 0) {
   // page uses (CompareCard via lib/verdict-card-ssr.tsx). Pages without a card keep their previous
   // output exactly (bodyHtml stays null).
   const compareCardHtml = VERDICT_SSR.renderCompareCardHtml(art.slug);
-  const compareBodyHtml = compareCardHtml
-    ? `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(art.metaDescription)}</p>\n      <div style="margin-top:16px">${compareCardHtml}</div>`
-    : null;
+  const compareQuickAnswer = compareSrc?.quickAnswer
+    ? `<section aria-label="Quick Answer" style="margin-top:16px;padding:16px 20px;background:#f0fdfa;border:1.5px solid #99f6e4;border-radius:12px"><h2 style="font-size:.8rem;font-weight:700;color:#0D9488;text-transform:uppercase;margin-bottom:6px">Quick Answer</h2><p style="font-size:.95rem;line-height:1.7;color:#333;margin:0">${esc(compareSrc.quickAnswer)}</p></section>`
+    : '';
+  const compareBodyHtml = compareSrc
+    ? `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(art.metaDescription)}</p>
+      ${compareQuickAnswer}
+      ${compareCardHtml ? `<div style="margin-top:16px">${compareCardHtml}</div>` : ''}
+      ${compareArticleBodyHtml(compareSrc)}`
+    : compareCardHtml
+      ? `<p style="font-size:1rem;line-height:1.6;color:#333">${esc(art.metaDescription)}</p>\n      <div style="margin-top:16px">${compareCardHtml}</div>`
+      : null;
 
   // H7 (SEO-High): use seoTitle (≤60 chars) for <title> tag if defined
   writeRoute(

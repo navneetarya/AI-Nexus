@@ -815,7 +815,7 @@ export const TOOLS: Tool[] = [
     description: 'Renderforest is an all-in-one AI platform bundling video creation, an AI logo maker, mockup generation and a no-code website builder into one account. Pick a template category, describe or upload your content, and it assembles a branded first draft in minutes.',
     category: Category.VIDEO, affiliateLink: 'https://renderforest.pxf.io/WOQ5PA?utm_source=renderforest&utm_medium=affiliate',
     iconName: 'Film', color: '#6366f1', accentColor: '#4f46e5',
-    userBadge: 'Free plan ✓', pricing: 'Free (watermarked, 360p) + Lite/Amateur/Pro subscriptions from ~$9–13/month', bestFor: 'Small businesses and freelancers who want video, logo and a basic website covered by one subscription instead of three',
+    userBadge: 'Free plan ✓', pricing: 'Free test credits + Lite/Pro/Business from ₹499/month (billed annually, India pricing)', bestFor: 'Small businesses and freelancers who want video, logo and a basic website covered by one subscription instead of three',
     features: ['Template-based AI video maker (intros, explainers, slideshows, music visualisations)', 'AI logo maker from a business brief', 'Mockup generator for apparel, product and print assets', 'No-code website builder in the same account', 'Pay-per-export option alongside subscriptions'],
     pros: [
       'Video, logo, mockups and a basic website under one login and one subscription',
@@ -2536,10 +2536,10 @@ export const TOOLS: Tool[] = [
   {
     id: 'p10', slug: 'make',
     name: 'Make', tagline: 'Visual, node-based automation with the best power-to-price ratio for moderate-complexity workflows',
-    description: 'Make (formerly Integromat) is a visual, no-code automation platform that bills by the operation — each module run inside a scenario — rather than Zapier\'s per-task model, which typically delivers a significantly higher usable allowance for a comparable monthly fee. The free plan includes 1,000 operations/month, and the Core plan runs roughly $9/month for 10,000 operations. Make ships an official first-party MCP server that lets AI systems run existing scenarios and manage account contents, plus pre-built AI-integrated modules for OpenAI, Anthropic, and Google AI that drop into any scenario for classification, summarization, or generation at a specific step.',
+    description: 'Make (formerly Integromat) is a visual, no-code automation platform that bills in credits rather than Zapier\'s per-task model. The free plan includes 1,000 credits/month, and the paid Make Plan is priced by credit volume (Make\'s pricing page shows $9/month at 5,000 credits). Make ships an official first-party MCP server that lets AI systems run existing scenarios and manage account contents, plus pre-built AI-integrated modules for OpenAI, Anthropic, and Google AI that drop into any scenario for classification, summarization, or generation at a specific step.',
     category: Category.PRODUCTIVITY, affiliateLink: 'https://www.make.com/en/register?pc=navneet', // Live affiliate link
     iconName: 'Layers', color: '#6D00CC', accentColor: '#5800A3',
-    userBadge: 'Best power-to-price for branching workflows', pricing: 'Free (1,000 ops/mo) + ~$9–$16+/month (Core, Pro)', bestFor: 'Teams that have outgrown Zapier\'s lower tiers and need real branching logic without the overhead of self-hosting',
+    userBadge: 'Best power-to-price for branching workflows', pricing: 'Free (1,000 credits/mo) + Make Plan from $9/month (5,000 credits)', bestFor: 'Teams that have outgrown Zapier\'s lower tiers and need real branching logic without the overhead of self-hosting',
     notForYou: 'Anyone who wants the single largest app library available — Zapier\'s 8,000+ pre-built connectors still outnumber Make\'s. Also reconsider if your workflows need genuine AI agent behavior (autonomous, multi-step reasoning with tool use); Make offers AI-integrated modules you drop into a scenario, not a dedicated reasoning/agent node the way n8n does — the execution path around those modules is still entirely human-designed.',
     lastTestedISO: '2026-08-23',
     researchSources: {
@@ -2576,9 +2576,8 @@ export const TOOLS: Tool[] = [
       'Support quality is solid but live chat is more limited on lower tiers compared to Zapier\'s more mature support infrastructure',
     ],
     pricingBreakdown: [
-      { tier: 'Free', price: '$0/month', highlight: '1,000 operations/month' },
-      { tier: 'Core', price: '~$9/month (annual)', highlight: '10,000 operations/month' },
-      { tier: 'Pro / Teams', price: 'Higher tiers, ~$16+/month', highlight: 'Increased operation allowance, added collaboration and priority execution features' },
+      { tier: 'Free', price: '$0/month', highlight: '1,000 credits/month' },
+      { tier: 'Make Plan', price: 'From $9/month', highlight: '5,000 credits/month at that price; priced by credit volume' },
       { tier: 'Enterprise', price: 'Custom', highlight: 'Custom volume, dedicated support, advanced governance' },
     ],
   },
@@ -2588,8 +2587,8 @@ export const TOOLS: Tool[] = [
     description: 'Zapier is the longest-established of the major automation platforms, built around raw integration breadth — roughly 8,000+ pre-built app connections, the largest of any platform in this category — and the gentlest learning curve, with a linear trigger-action builder that gets non-technical users live in minutes. It bills by the task (every action step in a Zap, each time it runs), which is straightforward at low volume but escalates quickly for multi-step or high-volume workflows. Genuine AI agent behavior — autonomous, multi-step reasoning rather than a single LLM-assisted step — lives in a separate product, Zapier Agents, launched in late 2024, sitting alongside rather than inside the classic Zap builder. Zapier MCP exposes its full app catalog to any MCP-compatible AI host.',
     category: Category.PRODUCTIVITY, affiliateLink: 'https://zapier.com/', // No standard blogger affiliate program confirmed as of August 2026 — Zapier's referral paths run through its Solution Partner / Experts program instead, which is oriented at consultants and agencies, not content sites
     iconName: 'Zap', color: '#FF4A00', accentColor: '#E23F00',
-    userBadge: 'Fastest onboarding, largest app library', pricing: 'Free (~100 tasks/mo) + $19.99+/month (Starter, Professional, Team)', bestFor: 'Non-technical teams who need to be live today, with simple, low-to-moderate volume workflows',
-    notForYou: 'Anyone running high-volume or multi-step workflows on a budget — task-based billing means a 5-action Zap burns 5 tasks per run, so a 750-task Starter allowance can be exhausted in as few as 150 runs of a moderately complex workflow. Also reconsider if you need genuine AI agent reasoning inside your core automation; that capability sits in the separate Zapier Agents product, not the classic Zap builder most users interact with day to day.',
+    userBadge: 'Fastest onboarding, largest app library', pricing: 'Free (100 tasks/mo) + from $19.99/month (Professional, billed annually)', bestFor: 'Non-technical teams who need to be live today, with simple, low-to-moderate volume workflows',
+    notForYou: 'Anyone running high-volume or multi-step workflows on a budget — task-based billing means a 5-action Zap burns 5 tasks per run, so a 750-task Professional allowance can be exhausted in as few as 150 runs of a moderately complex workflow. Also reconsider if you need genuine AI agent reasoning inside your core automation; that capability sits in the separate Zapier Agents product, not the classic Zap builder most users interact with day to day.',
     lastTestedISO: '2026-08-23',
     researchSources: {
       g2: { rating: 4.5, count: 1806 },
@@ -2599,7 +2598,7 @@ export const TOOLS: Tool[] = [
     reviewType: 'research-based',
     indiaPricing: {
       free: 'Free forever (~100 tasks/month, single-step Zaps only)',
-      paid: 'Starter ~₹1,650/month + GST (at $19.99/month, annual billing, ~750 tasks, unlocks multi-step Zaps)',
+      paid: 'Professional ~₹1,650/month + GST (at $19.99/month, annual billing, 750 tasks, unlocks multi-step Zaps). Zapier can bill in INR at the exchange rate on the payment date.',
       note: 'Billed in USD via international card — no confirmed INR billing or UPI support as of August 2026. Of the three major platforms reviewed on this site, Zapier\'s task-based pricing is the most expensive at real multi-step volume — model your actual workflow\'s task consumption before committing to a tier.',
     },
     updateLog: [
@@ -2626,8 +2625,8 @@ export const TOOLS: Tool[] = [
     ],
     pricingBreakdown: [
       { tier: 'Free', price: '$0/month', highlight: '~100 tasks/month, single-step Zaps only' },
-      { tier: 'Starter', price: '$19.99/month (annual)', highlight: '~750 tasks/month, multi-step Zaps unlocked' },
-      { tier: 'Professional / Team', price: '$69–$100+/month', highlight: 'Higher task volume, team collaboration, premium app access' },
+      { tier: 'Professional', price: '$19.99/month (annual), $29.99 monthly', highlight: '750 tasks/month entry tier, multi-step Zaps unlocked' },
+      { tier: 'Team', price: 'From $69/month (annual)', highlight: '2,000+ tasks/month, 25 users, shared Zaps, SAML SSO' },
       { tier: 'Enterprise', price: 'Custom', highlight: 'Custom volume, SSO, advanced admin controls' },
     ],
   },
@@ -3072,7 +3071,7 @@ export const TOOLS: Tool[] = [
     description: 'Wegic builds websites through conversation rather than a drag-and-drop editor. You describe the business, it asks follow-up questions, then generates a responsive multi-page site you keep refining by chat. Sites are mobile-optimised automatically and the underlying code can be exported.',
     category: Category.DESIGN, affiliateLink: 'https://wegic-ai.pxf.io/jR6ybZ?utm_source=wegic&utm_medium=affiliate',
     iconName: 'Globe', color: '#8b5cf6', accentColor: '#7c3aed',
-    userBadge: 'Chat to build', pricing: 'Free credits + $2.99 trial + paid plans', bestFor: 'Non-designers who need a business site or landing page live fast',
+    userBadge: 'Chat to build', pricing: '$2.99 trial pack + from $23.90/month (Starter, billed annually)', bestFor: 'Non-designers who need a business site or landing page live fast',
     features: ['Conversational site generation', 'Automatic mobile optimisation', 'Multilingual site support', 'Code export — no hard platform lock-in', 'Custom domain on higher tiers'],
     pros: [
       'Genuinely fast — a first full draft typically arrives in around a minute',
@@ -3094,12 +3093,13 @@ export const TOOLS: Tool[] = [
       lastVerified: '2026-09-18',
     },
     pricingBreakdown: [
-      { tier: 'Free', price: '$0', highlight: 'Starter credits on signup · limited pages and monthly visitors · Wegic badge stays visible' },
-      { tier: 'Trial', price: '$2.99 one-time', highlight: 'One full website generation — the cheapest way to judge real output quality' },
-      { tier: 'Entry paid tier', price: 'from ~$11.90/month', highlight: 'Monthly credits · more pages and visitors · badge removed · code download' },
-      { tier: 'Higher tier', price: 'from ~$19.90/month', highlight: 'Larger credit pool · custom domain · Google Analytics · advanced design control' },
+      { tier: 'Free credits', price: '$0', highlight: '100 credits on signup for chatting with the AI · website generation itself is a paid feature' },
+      { tier: 'Trial pack', price: '$2.99 one-time', highlight: 'One website generation, no edit credits — the cheapest way to judge real output quality' },
+      { tier: 'Starter', price: '$23.90/month billed annually ($286.80/year); $39.90 monthly', highlight: '600 credits/month · .wegic.net domain · code export · watermark removed' },
+      { tier: 'Premium', price: '$41.90/month billed annually ($502.80/year)', highlight: '2,000 credits/month · custom domain · SEO optimization' },
     ],
     updateLog: [
+      { date: 'October 2026', note: 'Plan names and prices updated from Wegic\'s own pricing page (23 Oct 2026).' },
       { date: 'September 2026', note: 'Page created. Wegic has restructured pricing more than once and published figures vary between sources — tiers below are indicative; confirm current rates on Wegic\'s own pricing page before buying.' },
     ],
     reviewType: 'research-based',
@@ -3110,18 +3110,18 @@ export const TOOLS: Tool[] = [
     description: 'Pi (Presentation Intelligence) turns a prompt, PDF, Word doc, PowerPoint file, webpage or image into a fully designed slide deck. Its Design Engine generates content and visual layout together rather than dropping AI text into a fixed template, and decks render responsively across desktop, tablet and mobile without a separate mobile version.',
     category: Category.DESIGN, affiliateLink: 'https://deepvincilimited.sjv.io/WOQd7Z?utm_source=presentation-intelligence&utm_medium=affiliate',
     iconName: 'Layers', color: '#f97316', accentColor: '#ea580c',
-    userBadge: 'Free plan ✓', pricing: 'Free (forever) + $9.90/month', bestFor: 'Anyone turning an existing document, PDF or webpage into a deck fast',
+    userBadge: 'Free plan ✓', pricing: 'Free (400 points) + Pro from $14/month billed annually', bestFor: 'Anyone turning an existing document, PDF or webpage into a deck fast',
     features: ['Generates content and design together, not text-into-template', 'Accepts PDF, DOCX, PPTX, webpages and images as source material', 'Responsive rendering across desktop, tablet and mobile', 'Built-in analytics on shared decks (opens, per-page reading time)', 'Custom templates and font uploads on the free plan'],
     pros: [
-      'Free plan is unusually generous for the category: no watermark and custom templates included, not just a locked-down trial',
+      'Free plan with a 400-point welcome bonus to test output before paying',
       'Wide input range — a PDF, Word file, PowerPoint, webpage or image can all become a starting deck',
-      'Basic plan at $9.90/month ($89.90/year, ~$7.50/month annualised) undercuts most direct competitors',
+      'Pro is $168/year (about $14/month), with 12,000 credits a month and up to 50 cards per prompt',
       'Built-in per-deck viewer analytics, which usually sits behind a higher tier on rival tools',
     ],
     cons: [
       'Very thin independent review base — no G2 reviews found, and the Trustpilot listing under "PI" belongs to the unrelated pi.ai chatbot, not this product',
-      'Free tier is capped at roughly 40 AI generation credits; heavy use requires upgrading',
-      'No public team or enterprise tier — no SSO or seat management, only two plans (Free and Basic)',
+      'Free plan export requires a paid membership, per Pi\'s pricing page',
+      'No public team or enterprise tier — no SSO or seat management',
       'Large source files (400+ page PDFs) and some image uploads have been reported to fail on import',
       'Newer entrant than Gamma or Beautiful.ai, so less third-party testing and community troubleshooting exists',
     ],
@@ -3131,8 +3131,9 @@ export const TOOLS: Tool[] = [
       lastVerified: '2026-09-21',
     },
     pricingBreakdown: [
-      { tier: 'Free', price: '$0 (forever free)', highlight: '~40 AI generation credits · custom templates · font upload · no watermark on export' },
-      { tier: 'Basic', price: '$9.90/month, or $89.90/year (~$7.50/mo)', highlight: 'Unlimited AI generation, editing, image creation and export' },
+      { tier: 'Free', price: '$0', highlight: '400 points welcome bonus · up to 10 cards per prompt · 100 MB storage · export requires a membership' },
+      { tier: 'Pro', price: '$168/year (~$14/mo); $240/year paid monthly', highlight: '12,000 credits/month · up to 50 cards per prompt · 100 GB storage · multi-format export' },
+      { tier: 'Max / Studio', price: '$336/year and $888/year', highlight: 'Higher tiers with advanced AI features' },
     ],
     updateLog: [
       { date: 'September 2026', note: 'Page created. Free-plan credit count and watermark status verified against pi.inc/pricing and cross-checked against two independent reviews after earlier sources conflicted (one claimed 400 credits with downloads locked). Ratings intentionally omitted from schema — no G2 reviews and no matching Trustpilot listing exist for this product as of this review.' },
@@ -3475,7 +3476,7 @@ export const TOOL_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     { q: "Does Murf AI support languages other than English?", a: "Yes — Murf AI supports 35+ languages including Spanish, French, German, Italian, Portuguese, Hindi, Japanese, and Korean. Each language has multiple voice options with regional accent variations. Quality is strongest in English, but the Spanish and French voices in particular are very natural-sounding." },
   ],
   gamma: [
-    { q: "Is Gamma free to use?", a: "Yes — Gamma's free plan gives you 400 AI credits on sign-up, which creates roughly 4–5 full presentations. After that, additional credits are needed. The free plan also adds a 'Made with Gamma' badge to published decks. Paid plans start at $8/month and include unlimited AI creation and badge removal." },
+    { q: "Is Gamma free to use?", a: "Yes — Gamma's free plan gives you 400 AI credits on sign-up, which creates roughly 4–5 full presentations. After that, additional credits are needed. The free plan also adds a 'Made with Gamma' badge to published decks. Paid plans start at $8/month and include badge removal and monthly AI credits (1,000 a month on Plus)." },
     { q: "How does Gamma compare to PowerPoint or Google Slides?", a: "PowerPoint and Google Slides give you complete manual control over every pixel. Gamma trades that control for speed — a presentation that takes 2 hours in PowerPoint takes under 3 minutes in Gamma. Gamma also auto-handles responsive layout, so your decks look good on any screen size. For most pitches and internal decks, Gamma's output is indistinguishable from a hand-designed slide." },
     { q: "Can I import existing slides into Gamma?", a: "Yes — Gamma can import PowerPoint (.pptx) files and PDF slide decks. The conversion preserves your content and Gamma restructures the layout into its own format. After import, you can use AI to restyling, add pages, or rewrite sections. It is also possible to export Gamma decks back to PowerPoint for clients who need .pptx files." },
     { q: "Does Gamma work for documents and websites, not just presentations?", a: "Yes — Gamma creates three types of content: presentations (slides), documents (long-form scrollable pages), and websites (single-page publishable sites with a live URL). All three use the same AI workflow. This makes Gamma useful for one-pagers, case studies, and light landing pages — not just decks." },
@@ -3539,7 +3540,7 @@ Object.assign(TOOL_FAQS, {
 // ── W2-T2: FAQs for tools previously missing from constants.ts TOOL_FAQS ──
 Object.assign(TOOL_FAQS, {
   podcastle: [
-    { q: "Is Podcastle free?", a: "Yes — Podcastle has a permanent free plan that includes remote recording (up to 10 hours/month), AI Magic Dust noise removal, automatic transcription (up to 3 hours), and up to 3 published episodes per month. No credit card is required. The paid Basic plan at $11.99/month removes episode limits and adds filler word removal." },
+    { q: "Is Podcastle free?", a: "Yes. Podcastle (now Async) has a permanent free plan with 10 one-time AI credits, 1 hour of remote recording (lifetime), 2 GB of storage and exports up to 720p, and no credit card is needed. It is enough to test the workflow, not to run a regular show. The paid Essentials plan at $11.99/month billed annually ($19.99 monthly) adds 450 AI credits a month, 2 hours of remote recording and Full HD exports." },
     { q: "How does Podcastle compare to Descript?", a: "Podcastle is better for recording — especially remote interviews with guests. Descript is better for heavy text-based editing of existing audio. If you record first then edit, Podcastle is the better starting point and it's cheaper than Descript. For solo podcasters who need one-click noise removal and simple publishing, Podcastle wins." },
     { q: "Can Podcastle remove background noise automatically?", a: "Yes — Podcastle's AI Magic Dust noise removal removes keyboard clicks, air conditioning hum, echo, and room noise in one click. Verified user feedback across G2 and Trustpilot consistently highlights this as one of the most effective one-click noise removal tools available at this price point. It's available on the free plan." },
     { q: "What is Podcastle Revoice?", a: "Revoice lets you clone your voice to fix recording mistakes without re-recording. If you mispronounced a word or said 'um', you type the correction and Revoice generates it in your voice. It's particularly useful for solo podcasters who want polished audio without multiple takes." },
@@ -3617,14 +3618,14 @@ Object.assign(TOOL_FAQS, {
     { q: 'Who should not use n8n?', a: 'Teams with no developer on staff who need something working today. n8n has the steepest learning curve of the three major automation platforms, ships only a few hundred official pre-built integrations (versus Zapier\'s 8,000+), and self-hosting requires real comfort with Docker or server administration. For that profile, Zapier remains the faster starting point.' },
   ],
   make: [
-    { q: 'Is Make.com cheaper than Zapier?', a: 'Yes, generally. Zapier charges per task (each action step in a Zap, every time it runs), which punishes multi-step or high-volume workflows. Make charges per operation (each module run) and is widely regarded as more generous at comparable price points — Make\'s Core plan runs roughly $9/month for 10,000 operations, while a similar volume on Zapier\'s task-based pricing typically costs significantly more. The gap widens further at scale, with Make often landing 60–80% cheaper than the equivalent Zapier tier.' },
+    { q: 'Is Make.com cheaper than Zapier?', a: 'Usually, for multi-step workflows. Zapier charges a task for every successful action step, so multi-step or high-volume Zaps add up: Professional starts at $19.99/month billed annually for 750 tasks, and 10,000 tasks costs $129/month billed annually. Make bills in credits; its free plan includes 1,000 credits a month, and its pricing page shows the Make Plan at $9/month for 5,000 credits. Check both pricing pages against your own monthly volume.' },
     { q: 'Does Make support AI natively?', a: 'Make offers pre-built AI-integrated modules for OpenAI, Anthropic, and Google AI that you drop into any scenario step to classify, summarize, or generate content — but it doesn\'t have a dedicated AI reasoning/agent node the way n8n does. The execution path around those modules stays entirely human-designed. Make does ship an official first-party MCP server, letting AI systems run existing scenarios and manage account contents via OAuth or an MCP token.' },
     { q: 'Is Make good for non-technical users?', a: 'Yes — multiple independent reviews cite getting a working scenario live within minutes of signing up, and the visual, drag-and-drop builder doesn\'t require code for the large majority of use cases. The learning curve is moderate: more powerful than Zapier\'s linear builder, but still meaningfully easier than n8n\'s node-and-code approach.' },
     { q: 'How does Make compare to n8n and Zapier?', a: 'Make sits in the middle of the three: more powerful and better-priced than Zapier for workflows with real branching logic, but without n8n\'s self-hosting option or native AI agent node. It\'s the consistent recommendation for teams that have outgrown Zapier\'s lower tiers but aren\'t ready to manage a self-hosted platform. Full breakdown in our <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier comparison</a>.' },
     { q: 'Does Make have an affiliate or referral program?', a: 'Yes. This site is a participant in Make\'s affiliate program — links to Make on AI Nexus may earn a commission at no extra cost to you. See our <a href="/disclosure/">affiliate disclosure</a> for details.' },
   ],
   zapier: [
-    { q: 'How does Zapier\'s task-based pricing actually work?', a: 'Every action step in a Zap consumes one task, each time the Zap runs. A 1-trigger, 4-action Zap consumes 4 tasks per run — so a 750-task Starter allowance ($19.99/month) can be exhausted in as few as 150 runs of a moderately complex workflow. This is the core reason Zapier gets expensive fast at real volume: the pricing model penalizes both complexity and volume simultaneously, unlike Make\'s per-operation or n8n\'s per-execution billing.' },
+    { q: 'How does Zapier\'s task-based pricing actually work?', a: 'Every action step in a Zap consumes one task, each time the Zap runs. A 1-trigger, 4-action Zap consumes 4 tasks per run — so a 750-task Professional allowance ($19.99/month billed annually) can be exhausted in as few as 150 runs of a moderately complex workflow. This is the core reason Zapier gets expensive fast at real volume: the pricing model penalizes both complexity and volume simultaneously, unlike Make\'s credit-based or n8n\'s per-execution billing.' },
     { q: 'Does Zapier support AI agents?', a: 'Genuine autonomous AI agent behavior lives in a separate product, Zapier Agents, launched in late 2024 — distinct from the classic Zap builder most users interact with day to day. Classic Zaps remain deterministic, rule-based automation that can optionally call an LLM at a given step. Zapier MCP separately exposes Zapier\'s full ~8,000+ app catalog to any MCP-compatible AI host, letting an assistant trigger any action a human could configure in a Zap.' },
     { q: 'Why is Zapier still worth using if it\'s the most expensive option?', a: 'Because for non-technical teams with simple, low-volume workflows, the task-based pricing penalty never gets large enough to matter, and Zapier\'s roughly 8,000+ pre-built app connections plus the gentlest learning curve of the three platforms mean the fastest path from zero to a working automation — often under 15 minutes. The cost problem is specifically a multi-step, high-volume problem, not a universal one.' },
     { q: 'How does Zapier compare to Make and n8n?', a: 'Zapier wins on raw app breadth and onboarding speed; it loses on unit economics the moment workflows get complex or run at real volume. Make delivers better value for moderate branching workflows, and n8n is cheaper still at scale (especially self-hosted) with deeper native AI-agent capability. See the full <a href="/blog/n8n-vs-make-vs-zapier-2026/">n8n vs Make vs Zapier comparison</a> for a worked cost example across all three.' },
@@ -4027,10 +4028,10 @@ Object.assign(TOOL_KEYWORDS, {
 // ── Presentation Intelligence (Pi) — added Sep 2026, mirrors prerender.mjs TOOL_FAQS ──
 Object.assign(TOOL_FAQS, {
   'presentation-intelligence': [
-    { q: 'Is Presentation Intelligence (Pi) free?', a: "Yes — the free plan is forever free, not a time-limited trial. It includes roughly 40 AI generation credits, custom templates and font uploads, and exports with no watermark. Once those credits run out you either wait for extra credits (earned through referrals, daily login or document sharing) or upgrade to Basic at $9.90/month for unlimited generation." },
-    { q: 'How much does Pi cost?', a: "Pi has two public plans: Free ($0, ~40 credits) and Basic at $9.90/month, or $89.90/year, which works out to roughly $7.50/month billed annually. There is no publicly listed team or enterprise tier — larger deployments are handled as custom arrangements on request." },
+    { q: 'Is Presentation Intelligence (Pi) free?', a: "Yes, to try. Pi's pricing page lists a Free plan with a 400-point welcome bonus, up to 10 cards per prompt and 100 MB of storage, and more points can be earned by inviting friends. The same page says export requires a membership, so plan on a paid plan if you need to download decks." },
+    { q: 'How much does Pi cost?', a: "Pi's pricing page lists Free, Pro ($168/year, about $14/month, or $240/year paid monthly), Max ($336/year) and Studio ($888/year). Pro includes 12,000 credits a month and up to 50 cards per prompt. There is no publicly listed team or enterprise tier." },
     { q: 'What can I upload to Pi to build a deck?', a: "Pi accepts a plain text prompt, PDFs, Word documents, PowerPoint files, webpage URLs and images as source material, then produces a complete deck with structure, copy, layout and matched imagery already in place. Very large PDFs (400+ pages) and some image uploads have been reported to fail, so split oversized files before uploading." },
-    { q: 'Is Pi better than Gamma?', a: "Both generate a designed deck from a prompt, and Pi's Basic plan is slightly cheaper than Gamma's Plus plan on annual billing ($7.50/month vs $8/month). Pi's free plan is more generous on watermarking (none, versus Gamma's watermarked free exports) but capped at fewer credits. Gamma has a far larger independent review base and a more established track record; Pi is the newer, less-tested option, so treat it as a lower-cost alternative worth a look rather than a like-for-like replacement." },
+    { q: 'Is Pi better than Gamma?', a: "Both generate a designed deck from a prompt. Pi accepts the widest range of source files (PDF, Word, PowerPoint, webpages and images), while Gamma has a far larger independent review base. Pi's Pro plan is $168/year (about $14/month), and Pi's pricing page says free-plan export requires a membership. Treat Pi as an alternative worth testing for document-to-deck work rather than a like-for-like replacement." },
     { q: 'Is Pi (Presentation Intelligence) a trustworthy pick given the limited reviews?', a: "Treat it as an early-stage bet rather than an established default. There are no G2 reviews for Pi, and the Trustpilot listing under \"PI\" belongs to a different product (the pi.ai chatbot), not this tool — so there isn't yet an independent review base to verify vendor claims against. The free plan is genuinely usable for testing output quality before committing money, which is the lowest-risk way to judge it yourself." },
   ],
 });

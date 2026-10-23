@@ -33,7 +33,7 @@ const post: BlogPost = {
     },
     {
       q: 'Is Make.com cheaper than Zapier?',
-      a: 'Yes, generally. Zapier charges per task (each action step in a Zap), which punishes multi-step or high-volume workflows. Make charges per operation (each module run) and is widely regarded as more generous at comparable price points — Make\'s Core plan runs roughly $9/month for 10,000 operations, while a comparable volume on Zapier\'s task-based pricing typically costs significantly more. The gap widens further at scale: teams processing tens of thousands of monthly tasks often see Make come in 60–80% cheaper than the equivalent Zapier tier.',
+      a: 'Usually, for multi-step workflows. Zapier charges a task for every successful action step, which adds up quickly on multi-step or high-volume Zaps: Professional starts at $19.99/month billed annually for 750 tasks, and 10,000 tasks costs $129/month billed annually. Make bills in credits; its free plan includes 1,000 credits a month, and its pricing page shows the Make Plan at $9/month for 5,000 credits. Check both pricing pages against your own monthly volume before deciding.',
     },
     {
       q: 'Can n8n replace Zapier?',
@@ -97,7 +97,7 @@ const post: BlogPost = {
     <tr>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;"><a href="${AFFILIATE_LINKS['make']}" target="_blank" rel="sponsored nofollow noopener noreferrer">Make</a></td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Operation (per module)</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">~$9/mo for 10,000 ops</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$9/mo for 5,000 credits</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Branching logic, best power-to-price</td>
     </tr>
     <tr>
@@ -177,15 +177,15 @@ const post: BlogPost = {
 <p>All three platforms publish a low headline price. The real cost only becomes clear once you map your actual workflow volume and complexity onto each platform's billing unit. The three use fundamentally different units.</p>
 
 <h3>Zapier: $19.99/mo for 750 Tasks — What That Means at Scale</h3>
-<p>Zapier's free plan allows roughly 100 tasks per month, limited to single-step Zaps. The Starter plan runs from $19.99/month (billed annually) for around 750 tasks and unlocks multi-step Zaps.</p>
+<p>Zapier's free plan allows roughly 100 tasks per month, limited to single-step Zaps. The Professional plan runs from $19.99/month (billed annually; $29.99 monthly) for 750 tasks and unlocks multi-step Zaps.</p>
 <p>The unit that matters here is the <strong>task</strong>. Every action step in a Zap consumes one task, every time the Zap runs. A 1-trigger, 1-action Zap uses 1 task per run. A 1-trigger, 5-action Zap uses 5 tasks per run.</p>
 <p>That means a moderately complex workflow burns through a 750-task allowance in as few as 150 runs.</p>
 <p>This is the mechanism behind Zapier's reputation for getting expensive fast. The pricing model punishes complexity and volume at the same time.</p>
 <p>A workflow that looks affordable at 100 runs per month can become a genuine cost problem once usage scales to thousands of runs. That often forces an upgrade to a tier costing hundreds of dollars monthly.</p>
 
-<h3>Make: 10,000 Ops at $9/mo — The Actual Value Case</h3>
-<p>Make's free plan includes 1,000 operations per month, enough for light testing or a handful of simple scenarios. The Core plan starts at roughly $9/month (billed annually) for 10,000 operations.</p>
-<p>The billing unit is the <strong>operation</strong>. Each module run inside a scenario consumes one operation, similar in concept to Zapier's task, but with much larger allowances at comparable price points.</p>
+<h3>Make: Credit-Based Pricing From $9/mo — The Value Case</h3>
+<p>Make's free plan includes 1,000 credits per month, enough for light testing or a handful of simple scenarios. The paid Make Plan is priced by credit volume: at 5,000 credits a month, Make's pricing page shows $9/month ($1.80 per 1,000 credits).</p>
+<p>The billing unit is now the <strong>credit</strong>. Use the credit slider on Make's pricing page with your own volume to see the price that applies to you.</p>
 <p>The practical effect: for a similar monthly fee, Make typically delivers a significantly higher usable allowance than Zapier's task-based tiers. Teams that have outgrown Zapier's lower tiers, but aren't ready to manage a self-hosted platform, consistently find Make the lowest-friction upgrade. Same visual, no-code building experience, materially better unit economics.</p>
 
 <h3>n8n: Self-Hosted vs Cloud Pricing Tradeoffs</h3>
@@ -198,10 +198,10 @@ const post: BlogPost = {
 <h3>A Worked Example: The Same Workflow on All Three Platforms</h3>
 <p>Take a realistic onboarding workflow. A new customer signs up, and the platform looks up their record in a CRM. It sends a personalised welcome email, posts a notification to a Slack channel, and adds a row to a reporting spreadsheet. That's five steps, running 2,000 times a month (a few dozen signups a day).</p>
 <p>If that reporting step is the real pain point, <a href="/blog/best-ai-spreadsheet-tools-2026/">AI spreadsheet tools</a> can handle the cleanup and formulas inside the sheet instead of adding another workflow step.</p>
-<p>On <strong>Zapier</strong>, that's a 1-trigger, 4-action Zap consuming 4 tasks per run, or 8,000 tasks/month. That's well beyond the 750-task Starter tier and into the Professional or Team tier, typically $69–$100+/month depending on the exact plan and whether annual billing applies.</p>
-<p>On <strong>Make</strong>, the same five-module scenario consumes roughly 5 operations per run, or 10,000 operations/month, landing comfortably inside the $9/month Core tier, with headroom to spare.</p>
+<p>On <strong>Zapier</strong>, that's a 1-trigger, 4-action Zap consuming 4 tasks per run, or 8,000 tasks/month. That's well beyond the 750-task entry tier. On Zapier's pricing page, 10,000 tasks a month costs $129/month on Professional billed annually ($193.50 monthly), or $169/month on Team.</p>
+<p>On <strong>Make</strong>, the same five-module scenario runs 2,000 times a month and is billed in credits. Make's pricing page shows $9/month at 5,000 credits, with higher volumes priced higher, so run your own numbers through its credit slider.</p>
 <p>On <strong>n8n self-hosted</strong>, the entire workflow counts as one execution regardless of step count. 2,000 executions/month runs without issue on the same ~$5/month VPS a single low-traffic workflow would use.</p>
-<p>The same business logic costs roughly $69–$100/month on Zapier, $9/month on Make, and effectively the price of a basic server on n8n. That gap only widens as the workflow grows more steps or runs more often.</p>
+<p>The same business logic costs about $129/month on Zapier (billed annually), a credit-based price on Make that starts at $9/month for 5,000 credits, and effectively the price of a basic server on n8n. That gap only widens as the workflow grows more steps or runs more often.</p>
 
 <h2>AI-Native Feature Matrix: June 2026 Comparison Table</h2>
 <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Close-up of hands typing on a laptop keyboard, comparing AI-native features across platforms" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
@@ -237,13 +237,13 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 12px;font-weight:600;">Free tier</td>
       <td style="padding:10px 12px;">Unlimited (self-hosted)</td>
-      <td style="padding:10px 12px;">1,000 ops/month</td>
+      <td style="padding:10px 12px;">1,000 credits/month</td>
       <td style="padding:10px 12px;">~100 tasks/month, single-step only</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 12px;font-weight:600;">Entry paid tier</td>
       <td style="padding:10px 12px;">~€20/month (Cloud)</td>
-      <td style="padding:10px 12px;">~$9/month for 10,000 ops</td>
+      <td style="padding:10px 12px;">$9/month for 5,000 credits</td>
       <td style="padding:10px 12px;">$19.99/month for ~750 tasks</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">

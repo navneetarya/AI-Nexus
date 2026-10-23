@@ -40,7 +40,7 @@ const post: BlogPost = {
     },
     {
       q: 'What is the cheapest InVideo AI alternative?',
-      a: 'Opus Clip is the cheapest paid InVideo alternative at $15/month (Starter), with a functional free plan that gives you 60 minutes of processing per month. Pictory starts at $15/month with a 3-video free trial. InVideo AI\'s paid plans start at $9/month (Basic). All three are in a similar price range — the choice should be based on use case (creating new videos vs. repurposing existing ones vs. clipping long content) rather than price.',
+      a: 'Opus Clip is the cheapest paid InVideo alternative at $15/month (Starter), with a functional free plan that gives you 60 minutes of processing per month. Pictory starts at $25/month billed annually ($29 billed monthly) with a 14-day free trial. InVideo AI\'s paid plans start at $9/month (Basic). All three are in a similar price range — the choice should be based on use case (creating new videos vs. repurposing existing ones vs. clipping long content) rather than price.',
     },
     {
       q: 'Do any InVideo alternatives require a credit card for the free plan?',
@@ -65,7 +65,7 @@ const post: BlogPost = {
       'The best choice depends on your exact workflow, team size, and budget',
     ],
   },
-  quickAnswer: 'Best InVideo AI alternatives in 2026 for faceless YouTube creators: choose Pictory (from $15/month, per vendor pricing as of October 2026) to turn blog posts or scripts into videos, pick Opus Clip (free plan, 60 minutes a month) for short-form clips, or use Murf AI (Creator from $22/month billed yearly) if voiceover is your only complaint.',
+  quickAnswer: 'Best InVideo AI alternatives in 2026 for faceless YouTube creators: choose Pictory (from $25/month billed annually, per vendor pricing as of October 2026) to turn blog posts or scripts into videos, pick Opus Clip (free plan, 60 minutes a month) for short-form clips, or use Murf AI (Creator from $22/month billed yearly) if voiceover is your only complaint.',
   myTake: "Navneet's take: Pictory is the strongest first choice for most faceless YouTube creators, specifically because it starts from your own written content instead of a prompt — that keeps the output consistent across dozens of videos in a way prompt-based tools struggle with. Opus Clip and Murf AI aren't really InVideo replacements so much as tools that solve one job InVideo does adequately at best.",
   outboundCitations: [
     { url: 'https://pictory.ai/pricing', label: 'Pictory — Official Pricing' },
@@ -77,7 +77,7 @@ const post: BlogPost = {
 <p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best InVideo AI alternatives in 2026 for faceless YouTube creators: choose <strong>Pictory</strong> (from $15/month, per vendor pricing as of October 2026) to turn blog posts or scripts into faceless videos, pick <strong>Opus Clip</strong> (free plan, 60 minutes a month) for short-form clips for TikTok and Reels, or use <strong>Murf AI</strong> (Creator from $22/month billed yearly) if voiceover quality is your only complaint.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">Best InVideo AI alternatives in 2026 for faceless YouTube creators: choose <strong>Pictory</strong> (from $25/month billed annually, per vendor pricing as of October 2026) to turn blog posts or scripts into faceless videos, pick <strong>Opus Clip</strong> (free plan, 60 minutes a month) for short-form clips for TikTok and Reels, or use <strong>Murf AI</strong> (Creator from $22/month billed yearly) if voiceover quality is your only complaint.</p>
 </div>
 {{verdict:pictory}}
 
@@ -118,8 +118,8 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.05);">
       <td style="padding:10px 14px;font-weight:700;color:#0D9488;">Pictory ⭐ Top Pick</td>
       <td style="padding:10px 14px;">Article/script → faceless video</td>
-      <td style="padding:10px 14px;">✅ 3 videos trial</td>
-      <td style="padding:10px 14px;">$15/mo</td>
+      <td style="padding:10px 14px;">❌ 14-day trial</td>
+      <td style="padding:10px 14px;">$25/mo (annual)</td>
       <td style="padding:10px 14px;">Best for repurposing content</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
@@ -163,7 +163,7 @@ const post: BlogPost = {
 <p><strong>How the workflows compare:</strong> Feed the same 1,200-word article into both tools and the difference is in the source material. Pictory builds the video directly from your article's sentences, matching footage and captions to your actual wording.</p>
 <p>InVideo AI instead generates its own script from the prompt rather than using your article verbatim, then selects more generic b-roll around it. For repurposing existing writing specifically, Pictory's script fidelity to your original text is the meaningful advantage.</p>
 <p><strong>Brand templates:</strong> Pictory lets you set a brand kit (fonts, colours, logo placement) that applies to every video automatically. For faceless YouTube channels building a consistent look, this is a major time-saver. InVideo also has templates, but Pictory's brand persistence across a content pipeline is more polished.</p>
-<p><strong>Pricing:</strong> From $15/month. 3-video free trial, no credit card required, enough to test whether it fits your content workflow before committing.</p>
+<p><strong>Pricing:</strong> From $25/month billed annually ($29 billed monthly). 14-day free trial, enough to test whether it fits your content workflow before committing.</p>
 <p><a href="/tools/pictory/" style="color:#0D9488;font-weight:600;">→ Read the full Pictory review</a></p>
 
 <div style="margin:14px 0 24px;">

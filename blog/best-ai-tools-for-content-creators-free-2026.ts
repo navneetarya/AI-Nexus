@@ -29,7 +29,7 @@ const post: BlogPost = {
     },
     {
       q: 'Can you use AI tools for content creation without paying?',
-      a: 'Yes — all 8 tools in this guide have genuinely usable free plans. The key distinction is what "free" means: Rytr\'s free plan has no time limit but caps at 10,000 characters/month. Canva free is unlimited for basic design but locks AI features behind Pro. Podcastle free allows 10 hours of recording per month. For most solo content creators publishing 3–5 pieces per week, the free plans covered here are sufficient to start without a paid subscription.',
+      a: 'Yes — all 8 tools in this guide have genuinely usable free plans. The key distinction is what "free" means: Rytr\'s free plan has no time limit but caps at 10,000 characters/month. Canva free is unlimited for basic design but locks AI features behind Pro. Podcastle free includes 1 hour of remote recording in total (lifetime), so treat it as a trial. For most solo content creators publishing 3–5 pieces per week, the free plans covered here are sufficient to start without a paid subscription.',
     },
     {
       q: 'Which AI tool is best for YouTube and social media content creators?',
@@ -224,7 +224,7 @@ const post: BlogPost = {
 </p>
 <h2>4. Podcastle: Best Free AI Audio Tool for Podcast and Video Creators</h2>
 <p><strong>Type: Audio · Rating: 4.2/5 · Free plan: 10 hours of recording/month · Paid: from $11.99/month</strong></p>
-<p>Podcastle is the most handy free audio tool for content creators who record interviews, podcasts, or voiceovers. The free plan allows 10 hours of recording per month, enough for 2–4 full podcast episodes. It includes AI noise cleanup, automatic transcription, and direct export to MP3.</p>
+<p>Podcastle is the most handy free audio tool for content creators who record interviews, podcasts, or voiceovers. The free plan includes 1 hour of remote recording in total (lifetime) and 10 one-time AI credits, so treat it as a way to test the workflow rather than an ongoing free tier. It includes AI noise cleanup, automatic transcription, and direct export to MP3.</p>
 <p>The standout free feature is Magic Dust: one-click AI noise cleanup that eliminates background noise, keyboard clicks, air conditioning hum, and echo from recordings. This replaces what used to require a dedicated noise reduction plugin in Audacity or Adobe Audition. It works on recordings made on a laptop microphone, not just studio equipment.</p>
 <img src="https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Two people recording a podcast interview with headphones and a microphone" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p><strong>Based on checked user reports:</strong> Recording a 10-minute interview with background fan noise and applying Magic Dust makes clean audio. The noise floor drops without the "underwater" artifact found in aggressive noise cleanup tools.</p>
