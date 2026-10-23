@@ -29,7 +29,7 @@ export interface SnapshotTool {
   currency: string;
   pricingPageUrl: string;
   verifiedISO: string;
-  freeAccess: 'free-plan' | 'trial-only' | 'none';
+  freeAccess: 'free-plan' | 'trial-only' | 'none' | null;
   trialDays: number | null;
   startsAtMonthly: number | null;
   startsAtMonthlyBilledAnnually: number | null;
@@ -124,7 +124,8 @@ export function perMonth(amount: number | null, currency: string): string | null
 export function freeAccessText(t: SnapshotTool): string {
   if (t.freeAccess === 'free-plan') return 'Free plan';
   if (t.freeAccess === 'trial-only') return typeof t.trialDays === 'number' ? `No free plan, ${t.trialDays}-day trial` : 'No free plan, free trial';
-  return 'No free plan or trial';
+  if (t.freeAccess === 'none') return 'No free plan or trial';
+  return 'Not verified';
 }
 
 /** "22 Oct 2026" */

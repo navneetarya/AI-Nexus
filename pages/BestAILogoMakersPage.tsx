@@ -7,6 +7,7 @@ import { TOOLS, SITE_CONFIG } from '../constants';
 import { Tool } from '../types';
 import { ExternalLink, CheckCircle, AlertCircle, ArrowRight, Zap } from 'lucide-react';
 import { SharedNav } from './SharedNav';
+import { trackAffiliateClick } from '../lib/subid-tracking';
 
 const C = {
   bg:     'var(--bg)',
@@ -214,6 +215,7 @@ const LogoToolCard: React.FC<{ tool: Tool; navigate: (to: string) => void }> = (
           href={tool.affiliateLink}
           target="_blank"
           rel="sponsored nofollow noopener noreferrer"
+          onClick={(e) => trackAffiliateClick(e, { toolName: tool.name, ctaPosition: 'logo_makers_card' })}
           style={{
             flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
             background: C.a1, color: '#fff', borderRadius: 8,

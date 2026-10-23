@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "snapshotISO": "2026-10-23",
+  "source": "lib/vendor-facts.data.json",
+  "toolCount": 8,
+  "tools": [
+    {
+      "slug": "descript",
+      "name": "Descript",
+      "category": "Audio",
+      "currency": "USD",
+      "pricingPageUrl": "https://www.descript.com/pricing",
+      "verifiedISO": "2026-10-22",
+      "freeAccess": "free-plan",
+      "trialDays": null,
+      "startsAtMonthly": null,
+      "startsAtMonthlyBilledAnnually": 16,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "60 media minutes/month, 100 AI credits (one-time)",
+          "commercialUse": null
+        },
+        {
+          "id": "hobbyist",
+          "name": "Hobbyist",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 16,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "10 media hours/month, 400 AI credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "creator",
+          "name": "Creator",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 24,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "30 media hours/month, 800 AI credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": 50,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "40 media hours/month, 1,500 AI credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs",
+      "category": "Audio",
+      "currency": "USD",
+      "pricingPageUrl": "https://elevenlabs.io/pricing",
+      "verifiedISO": "2026-10-22",
+      "freeAccess": "free-plan",
+      "trialDays": null,
+      "startsAtMonthly": 6,
+      "startsAtMonthlyBilledAnnually": 5,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "10,000 credits/month",
+          "commercialUse": false
+        },
+        {
+          "id": "starter",
+          "name": "Starter",
+          "isFree": false,
+          "priceMonthly": 6,
+          "priceMonthlyBilledAnnually": 5,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "30,000 credits/month",
+          "commercialUse": true
+        },
+        {
+          "id": "creator",
+          "name": "Creator",
+          "isFree": false,
+          "priceMonthly": 22,
+          "priceMonthlyBilledAnnually": 18.33,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "121,000 credits/month",
+          "commercialUse": true
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 99,
+          "priceMonthlyBilledAnnually": 82.5,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "600,000 credits/month",
+          "commercialUse": true
+        },
+        {
+          "id": "scale",
+          "name": "Scale",
+          "isFree": false,
+          "priceMonthly": 299,
+          "priceMonthlyBilledAnnually": 249.17,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "1,800,000 credits/month",
+          "commercialUse": true
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": 990,
+          "priceMonthlyBilledAnnually": 825,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "6,000,000 credits/month",
+          "commercialUse": true
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "gamma",
+      "name": "Gamma",
+      "category": "Design",
+      "currency": "USD",
+      "pricingPageUrl": "https://gamma.app/pricing",
+      "verifiedISO": "2026-10-22",
+      "freeAccess": "free-plan",
+      "trialDays": null,
+      "startsAtMonthly": null,
+      "startsAtMonthlyBilledAnnually": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "400 AI credits (one-time)",
+          "commercialUse": null
+        },
+        {
+          "id": "plus",
+          "name": "Plus",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "1,000 AI credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "4,000 AI credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "20,000 AI credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "10,000 AI credits/seat/month",
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "jasper",
+      "name": "Jasper",
+      "category": "Writing",
+      "currency": "USD",
+      "pricingPageUrl": "https://www.jasper.ai/pricing",
+      "verifiedISO": "2026-10-22",
+      "freeAccess": "trial-only",
+      "trialDays": 7,
+      "startsAtMonthly": 69,
+      "startsAtMonthlyBilledAnnually": 59,
+      "plans": [
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 69,
+          "priceMonthlyBilledAnnually": 59,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": null
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "murf-ai",
+      "name": "Murf AI",
+      "category": "Audio",
+      "currency": "USD",
+      "pricingPageUrl": "https://murf.ai/pricing",
+      "verifiedISO": "2026-10-22",
+      "freeAccess": "free-plan",
+      "trialDays": null,
+      "startsAtMonthly": null,
+      "startsAtMonthlyBilledAnnually": null,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": false
+        },
+        {
+          "id": "paid-studio",
+          "name": "Paid Studio plans",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": null,
+          "commercialUse": true
+        }
+      ]
+    },
+    {
+      "slug": "pictory",
+      "name": "Pictory",
+      "category": "Video",
+      "currency": "USD",
+      "pricingPageUrl": "https://pictory.ai/pricing",
+      "verifiedISO": "2026-10-22",
+      "freeAccess": "trial-only",
+      "trialDays": 14,
+      "startsAtMonthly": 29,
+      "startsAtMonthlyBilledAnnually": 25,
+      "plans": [
+        {
+          "id": "starter",
+          "name": "Starter",
+          "isFree": false,
+          "priceMonthly": 29,
+          "priceMonthlyBilledAnnually": 25,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "200 video minutes/month (2,400/year on annual billing)",
+          "commercialUse": null
+        },
+        {
+          "id": "professional",
+          "name": "Professional",
+          "isFree": false,
+          "priceMonthly": 59,
+          "priceMonthlyBilledAnnually": 35,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "600 video minutes/month (7,200/year on annual billing)",
+          "commercialUse": null
+        },
+        {
+          "id": "team",
+          "name": "Team",
+          "isFree": false,
+          "priceMonthly": 199,
+          "priceMonthlyBilledAnnually": 119,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "1,800 video minutes/month (21,600/year on annual billing)",
+          "commercialUse": null
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "podcastle",
+      "name": "Podcastle (now Async)",
+      "category": "Audio",
+      "currency": "USD",
+      "pricingPageUrl": "https://async.com/pricing",
+      "verifiedISO": "2026-10-22",
+      "freeAccess": "free-plan",
+      "trialDays": null,
+      "startsAtMonthly": 19.99,
+      "startsAtMonthlyBilledAnnually": 11.99,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "10 AI credits (one-time)",
+          "commercialUse": null
+        },
+        {
+          "id": "essentials",
+          "name": "Essentials",
+          "isFree": false,
+          "priceMonthly": 19.99,
+          "priceMonthlyBilledAnnually": 11.99,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "450 AI credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 39.99,
+          "priceMonthlyBilledAnnually": 23.99,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "1,200 AI credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "teams",
+          "name": "Teams",
+          "isFree": false,
+          "priceMonthly": 84.99,
+          "priceMonthlyBilledAnnually": 49.99,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "3,000 AI credits/month",
+          "commercialUse": null
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "transkriptor",
+      "name": "Transkriptor",
+      "category": "Audio",
+      "currency": "USD",
+      "pricingPageUrl": "https://transkriptor.com/pricing/",
+      "verifiedISO": "2026-10-23",
+      "freeAccess": null,
+      "trialDays": null,
+      "startsAtMonthly": 9.99,
+      "startsAtMonthlyBilledAnnually": 8.33,
+      "plans": [
+        {
+          "id": "lite",
+          "name": "Lite",
+          "isFree": false,
+          "priceMonthly": 9.99,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "300 minutes/month",
+          "commercialUse": null
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 19.99,
+          "priceMonthlyBilledAnnually": 8.33,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "2,400 minutes/month",
+          "commercialUse": null
+        },
+        {
+          "id": "team",
+          "name": "Team",
+          "isFree": false,
+          "priceMonthly": 30,
+          "priceMonthlyBilledAnnually": 20,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "3,000 minutes/seat/month",
+          "commercialUse": null
+        }
+      ]
+    }
+  ]
+}

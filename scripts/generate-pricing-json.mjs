@@ -62,7 +62,7 @@ for (const t of snapshot.tools) {
   slugs.add(t.slug);
   if (!/^https:\/\//.test(t.pricingPageUrl ?? '')) fail(`${where}: pricingPageUrl must be an https URL`);
   if (!ISO.test(t.verifiedISO ?? '')) fail(`${where}: verifiedISO missing or not YYYY-MM-DD`);
-  if (!['free-plan', 'trial-only', 'none'].includes(t.freeAccess)) fail(`${where}: bad freeAccess "${t.freeAccess}"`);
+  if (t.freeAccess !== null && !['free-plan', 'trial-only', 'none'].includes(t.freeAccess)) fail(`${where}: bad freeAccess "${t.freeAccess}"`); // null = not verified
   if (!isNumOrNull(t.startsAtMonthly) || !isNumOrNull(t.startsAtMonthlyBilledAnnually)) fail(`${where}: starting prices must be a number or null`);
   if (!Array.isArray(t.plans) || t.plans.length === 0) fail(`${where}: no plans`);
   const planIds = new Set();

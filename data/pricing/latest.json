@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotISO": "2026-10-22",
+  "snapshotISO": "2026-10-23",
   "source": "lib/vendor-facts.data.json",
-  "toolCount": 7,
+  "toolCount": 8,
   "tools": [
     {
       "slug": "descript",
@@ -428,6 +428,53 @@
           "oneTimePrice": null,
           "customPricing": true,
           "allowance": null,
+          "commercialUse": null
+        }
+      ]
+    },
+    {
+      "slug": "transkriptor",
+      "name": "Transkriptor",
+      "category": "Audio",
+      "currency": "USD",
+      "pricingPageUrl": "https://transkriptor.com/pricing/",
+      "verifiedISO": "2026-10-23",
+      "freeAccess": null,
+      "trialDays": null,
+      "startsAtMonthly": 9.99,
+      "startsAtMonthlyBilledAnnually": 8.33,
+      "plans": [
+        {
+          "id": "lite",
+          "name": "Lite",
+          "isFree": false,
+          "priceMonthly": 9.99,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "300 minutes/month",
+          "commercialUse": null
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 19.99,
+          "priceMonthlyBilledAnnually": 8.33,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "2,400 minutes/month",
+          "commercialUse": null
+        },
+        {
+          "id": "team",
+          "name": "Team",
+          "isFree": false,
+          "priceMonthly": 30,
+          "priceMonthlyBilledAnnually": 20,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "3,000 minutes/seat/month",
           "commercialUse": null
         }
       ]

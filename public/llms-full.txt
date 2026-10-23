@@ -1865,7 +1865,7 @@ Relevance AI, Lindy, and Gumloop all build AI agents, but they solve different p
 MCP (Model Context Protocol) is an open standard, introduced by Anthropic in November 2024, that lets AI models connect to external tools and data sources through one shared interface instead of a custom-built connector for every model-and-tool pair. By mid-2026 it has been adopted by OpenAI, Cursor, Windsurf, VS Code, n8n, Zapier, and thousands of community-built servers — making it the closest…
 
 ---
-# SECTION: PRICING TRACKER (7 tools, snapshot 2026-10-22)
+# SECTION: PRICING TRACKER (8 tools, snapshot 2026-10-23)
 Page: https://ainexustools.online/pricing-tracker/
 Data: https://ainexustools.online/data/ai-tool-pricing.json
 Each price was checked against the vendor's own pricing page on the date shown. A missing value means "not verified", not "does not exist".
@@ -1904,6 +1904,11 @@ Source: https://pictory.ai/pricing
 Free plan available. Cheapest paid plan: $19.99/month billed monthly or $11.99/month billed annually.
 Plans: Free: $0, 10 AI credits (one-time) | Essentials: $19.99/month billed monthly, $11.99/month billed annually, 450 AI credits/month | Pro: $39.99/month billed monthly, $23.99/month billed annually, 1,200 AI credits/month | Teams: $84.99/month billed monthly, $49.99/month billed annually, 3,000 AI credits/month | Business: custom pricing
 Source: https://async.com/pricing
+
+## Transkriptor pricing (verified 2026-10-23)
+No free plan or trial. Cheapest paid plan: $9.99/month billed monthly or $8.33/month billed annually.
+Plans: Lite: $9.99/month billed monthly, 300 minutes/month | Pro: $19.99/month billed monthly, $8.33/month billed annually, 2,400 minutes/month | Team: $30/month billed monthly, $20/month billed annually, 3,000 minutes/seat/month
+Source: https://transkriptor.com/pricing/
 
 ---
 # SECTION: CALCULATORS
