@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "snapshotISO": "2026-10-23",
   "source": "lib/vendor-facts.data.json",
-  "toolCount": 8,
+  "toolCount": 9,
   "tools": [
     {
       "slug": "descript",
@@ -302,6 +302,64 @@
           "customPricing": false,
           "allowance": null,
           "commercialUse": true
+        }
+      ]
+    },
+    {
+      "slug": "notta",
+      "name": "Notta",
+      "category": "Audio",
+      "currency": "USD",
+      "pricingPageUrl": "https://www.notta.ai/en/pricing",
+      "verifiedISO": "2026-10-23",
+      "freeAccess": "free-plan",
+      "trialDays": null,
+      "startsAtMonthly": 13.49,
+      "startsAtMonthlyBilledAnnually": 8.17,
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "isFree": true,
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "120 minutes/month",
+          "commercialUse": null
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "isFree": false,
+          "priceMonthly": 13.49,
+          "priceMonthlyBilledAnnually": 8.17,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "1,800 minutes/month",
+          "commercialUse": null
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "isFree": false,
+          "priceMonthly": 27.99,
+          "priceMonthlyBilledAnnually": 16.67,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": "Unlimited minutes/month",
+          "commercialUse": null
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "isFree": false,
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null
         }
       ]
     },

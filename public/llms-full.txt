@@ -1865,7 +1865,7 @@ Relevance AI, Lindy, and Gumloop all build AI agents, but they solve different p
 MCP (Model Context Protocol) is an open standard, introduced by Anthropic in November 2024, that lets AI models connect to external tools and data sources through one shared interface instead of a custom-built connector for every model-and-tool pair. By mid-2026 it has been adopted by OpenAI, Cursor, Windsurf, VS Code, n8n, Zapier, and thousands of community-built servers — making it the closest…
 
 ---
-# SECTION: PRICING TRACKER (8 tools, snapshot 2026-10-23)
+# SECTION: PRICING TRACKER (9 tools, snapshot 2026-10-23)
 Page: https://ainexustools.online/pricing-tracker/
 Data: https://ainexustools.online/data/ai-tool-pricing.json
 Each price was checked against the vendor's own pricing page on the date shown. A missing value means "not verified", not "does not exist".
@@ -1894,6 +1894,11 @@ Source: https://www.jasper.ai/pricing
 Free plan available. Cheapest paid price not verified.
 Plans: Free: $0, no commercial use | Paid Studio plans: commercial use allowed
 Source: https://murf.ai/pricing
+
+## Notta pricing (verified 2026-10-23)
+Free plan available. Cheapest paid plan: $13.49/month billed monthly or $8.17/month billed annually.
+Plans: Free: $0, 120 minutes/month | Pro: $13.49/month billed monthly, $8.17/month billed annually, 1,800 minutes/month | Business: $27.99/month billed monthly, $16.67/month billed annually, Unlimited minutes/month | Enterprise: custom pricing
+Source: https://www.notta.ai/en/pricing
 
 ## Pictory pricing (verified 2026-10-22)
 No free plan, 14-day trial. Cheapest paid plan: $29/month billed monthly or $25/month billed annually.

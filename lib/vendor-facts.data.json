@@ -885,6 +885,115 @@
       "indiaNote": "The pricing page lists USD prices. Its FAQ says to pay with a Visa or Mastercard credit card (debit and AMEX cards can fail) or through the App Store or Play Store.",
       "sources": [],
       "matcherTask": "transcription"
+    },
+    {
+      "slug": "notta",
+      "name": "Notta",
+      "status": "verified",
+      "pricingPageUrl": "https://www.notta.ai/en/pricing",
+      "verifiedISO": "2026-10-23",
+      "currency": "USD",
+      "freeAccess": "free-plan",
+      "trial": null,
+      "plans": [
+        {
+          "priceMonthly": 0,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 120,
+            "unit": "minutes",
+            "period": "month",
+            "label": "120 minutes/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Up to 3 minutes per conversation",
+            "50 file uploads per month",
+            "10 AI summaries per month"
+          ],
+          "notes": "No credit card required. Unused minutes do not carry over.",
+          "isFree": true,
+          "id": "free",
+          "name": "Free"
+        },
+        {
+          "priceMonthly": 13.49,
+          "priceMonthlyBilledAnnually": 8.17,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": 1800,
+            "unit": "minutes",
+            "period": "month",
+            "label": "1,800 minutes/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Up to 5 hours per recording",
+            "Export transcripts",
+            "Transcript translation",
+            "Custom vocabulary"
+          ],
+          "notes": "Annual billing is $97.99 per year. Monthly price is from Notta's meeting-notes page. Notta also offers a 50% education discount.",
+          "isFree": false,
+          "id": "pro",
+          "name": "Pro"
+        },
+        {
+          "priceMonthly": 27.99,
+          "priceMonthlyBilledAnnually": 16.67,
+          "oneTimePrice": null,
+          "customPricing": false,
+          "allowance": {
+            "amount": null,
+            "unit": "minutes",
+            "period": "month",
+            "label": "Unlimited minutes/month"
+          },
+          "commercialUse": null,
+          "highlights": [
+            "Up to 5 hours per recording",
+            "Record web meeting video",
+            "Usage report",
+            "CRM and Zapier integration"
+          ],
+          "notes": "Priced per seat. Annual billing is $199.99 per seat per year. Monthly price is from Notta's meeting-notes page. A 7-day Business trial is offered.",
+          "isFree": false,
+          "id": "business",
+          "name": "Business"
+        },
+        {
+          "priceMonthly": null,
+          "priceMonthlyBilledAnnually": null,
+          "oneTimePrice": null,
+          "customPricing": true,
+          "allowance": null,
+          "commercialUse": null,
+          "highlights": [
+            "SAML SSO",
+            "Audit logs",
+            "Priority support"
+          ],
+          "notes": "Custom pricing, starting from 51 seats.",
+          "isFree": false,
+          "id": "enterprise",
+          "name": "Enterprise"
+        }
+      ],
+      "card": {
+        "bestFor": "Multilingual professionals and students who want a large monthly allowance",
+        "skipIf": "You would rely on the Free plan, which caps each recording at 3 minutes"
+      },
+      "indiaNote": "Prices are in USD. The pricing FAQ lists credit and debit cards (American Express, Discover, Mastercard, Visa, JCB) and Apple or Google in-app purchases; UPI is not listed.",
+      "sources": [
+        {
+          "label": "Notta meeting-notes page (monthly prices)",
+          "url": "https://www.notta.ai/en/landing-page/meeting-notes"
+        }
+      ],
+      "matcherTask": "transcription"
     }
   ]
 }

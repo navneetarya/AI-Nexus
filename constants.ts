@@ -2867,8 +2867,8 @@ export const TOOLS: Tool[] = [
     },
     pricingBreakdown: [
       { tier: 'Free', price: '$0', highlight: '120 transcription minutes per month · 3-minute cap per recording · 10 AI summaries per month · limited export' },
-      { tier: 'Pro', price: '$8.17/month billed annually ($97.99/year)', highlight: '1,800 transcription minutes per month · translation included · monthly billing costs more (several listings show about $13.61-$13.99)' },
-      { tier: 'Business', price: '$16.67/seat/month billed annually ($199.99/year)', highlight: 'Unlimited transcription minutes · team features and CRM integrations · monthly billing is listed at about $27.34-$27.99' },
+      { tier: 'Pro', price: '$8.17/month billed annually ($97.99/year)', highlight: '1,800 transcription minutes per month · translation included · monthly billing is $13.49' },
+      { tier: 'Business', price: '$16.67/seat/month billed annually ($199.99/year)', highlight: 'Unlimited transcription minutes · team features and CRM integrations · monthly billing is $27.99 per seat' },
       { tier: 'Enterprise', price: 'Custom', highlight: 'Negotiated directly with Notta sales · larger deployments' },
     ],
     updateLog: [
@@ -4216,7 +4216,7 @@ Object.assign(TOOL_KEYWORDS, {
 Object.assign(TOOL_FAQS, {
   notta: [
     { q: 'Is Notta free?', a: 'Yes, but the free plan is a demo rather than a working tier. It gives 120 transcription minutes a month and 10 AI summaries a month, caps each recording at three minutes and restricts export. To transcribe a full meeting you need a paid plan. Test accuracy on a short clip of your own audio first.' },
-    { q: 'How much does Notta cost?', a: 'Pro is $8.17/month billed annually ($97.99 a year) for 1,800 transcription minutes a month. Business is $16.67/seat/month billed annually ($199.99 a year) with unlimited minutes. Enterprise is custom. Monthly billing costs more, and several 2026 listings show roughly $13.61 to $13.99 for Pro and $27.34 to $27.99 for Business. Real-time translation and bilingual transcription are paid add-ons from about $6/month. Prices vary by region, so confirm on notta.ai/pricing.' },
+    { q: 'How much does Notta cost?', a: 'Pro is $8.17/month billed annually ($97.99 a year) for 1,800 transcription minutes a month. Business is $16.67/seat/month billed annually ($199.99 a year) with unlimited minutes. Enterprise is custom. Monthly billing costs more: $13.49 for Pro and $27.99 per seat for Business. Real-time translation and bilingual transcription are paid add-ons from about $6/month. Prices vary by region, so confirm on notta.ai/pricing.' },
     { q: 'How many languages does Notta support?', a: 'Notta lists 58 transcription languages. That is narrower than Transkriptor, which supports 100+ languages, so check that your language is covered and test accuracy on your own recording before paying.' },
     { q: 'Does Notta work with Zoom, Google Meet and Teams?', a: 'Yes. Notta describes itself as able to schedule and transcribe Zoom, Google Meet and Microsoft Teams meetings, and it also transcribes uploaded audio and video files.' },
     { q: 'Are there billing complaints about Notta?', a: 'Several Trustpilot reviewers say they were charged for an annual plan after a free trial ended and had trouble getting a refund, while Notta\'s public replies point people to its support email. These are reported experiences that we have not verified. Read the billing terms before starting a trial, set a calendar reminder before it ends, and keep your receipts.' },
