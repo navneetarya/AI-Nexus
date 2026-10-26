@@ -14,22 +14,22 @@ const post: BlogPost = {
   seoTitle: 'Relevance AI vs Lindy vs Gumloop (2026): Which Wins?',
   metaDescription: 'Relevance AI vs Lindy vs Gumloop compared on pricing, architecture, and fit. Pricing checked October 2026, including who still has a free plan.',
   datePublished: '2026-07-03',
-  dateModified: '2026-08-23',
+  dateModified: '2026-10-26',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '11 min read',
   ogImage: 'https://ainexustools.online/og-compare.webp',
   excerpt: 'Relevance AI, Lindy, and Gumloop all build AI agents, but they solve different problems: a coordinated AI workforce, a ready-made AI assistant, and a node-based AI pipeline canvas. Here\'s what each actually costs as of October 2026, and which one fits your use case.',
-  quickAnswer: 'Relevance AI (Pro from $19/month billed annually; no free plan per its docs) wins for coordinated sales and ops agent teams. Lindy (Team $49.99/month; $50 in credits for 7 days) is the fastest path to an email and scheduling assistant. Gumloop (Pro from $37/month, 14-day trial) wins for node-based AI data pipelines. All three differ sharply on architecture, not just price.',
+  quickAnswer: 'Relevance AI (Pro from $19/month billed annually; no free plan per its docs) wins for coordinated sales and ops agent teams. Lindy (Team $29.99/month; $50 in credits for 7 days) is the fastest path to an email and scheduling assistant. Gumloop (Pro from $37/month, 14-day trial) wins for node-based AI data pipelines. All three differ sharply on architecture, not just price.',
   myTake: 'Free plans have largely vanished from this category. Lindy offers $50 in credits for 7 days, Gumloop a 14-day Pro trial, and Relevance AI\'s own docs say its Free plan is retired, yet plenty of "best AI agent" roundups still list free tiers for all three. Test one platform on one real task during its trial instead of stacking three.',
   faqs: [
     {
       q: 'Does Lindy have a free plan in 2026?',
-      a: 'No ongoing free plan. As of Lindy\'s pricing page (checked 12 October 2026), the Free option is $50 in credits that last 7 days, with no card required. After that, the Team plan is $49.99/month for 5,000 credits, extra credits cost $10 per 1,000, and Enterprise is custom. Some roundups still list an older permanent free tier or Plus/Pro/Max plans; neither matches Lindy\'s page as of this check. Relevance AI and Gumloop have also moved away from free plans, so for all three the practical test is a short trial rather than a permanent free tier.',
+      a: 'No ongoing free plan. As of Lindy\'s pricing page (checked 26 October 2026), the Free option is $50 in credits that last 7 days, with no card required. After that, the Team plan is $29.99/month for 3,000 credits, extra credits cost $10 per 1,000, and Enterprise is custom. Some roundups still list an older permanent free tier or a higher Team price; neither matches Lindy\'s page as of this check. Relevance AI and Gumloop have also moved away from free plans, so for all three the practical test is a short trial rather than a permanent free tier.',
     },
     {
       q: 'Which is cheaper: Relevance AI, Lindy, or Gumloop?',
-      a: 'On entry price, Relevance AI is cheapest: Pro is $19/month billed annually ($29 billed monthly) for 2,500 Actions plus 10,000 Vendor Credits ($20 of model usage). Gumloop Pro starts at $37/month for 20,000 credits per month. Lindy Team is $49.99/month for 5,000 credits. At the team tier, Relevance AI Team is $234/month annual or $349 monthly for 7,000 Actions, Gumloop lists unlimited seats on Pro, and Lindy Enterprise is custom-priced. Actions, credits and Vendor Credits are different units, so compare them against your own workflow rather than the sticker price. None has a permanent free plan as of 12 October 2026; the trials are Lindy\'s $50 in credits for 7 days and Gumloop\'s 14 days on Pro.',
+      a: 'On entry price, Relevance AI is cheapest: Pro is $19/month billed annually ($29 billed monthly) for 2,500 Actions plus 10,000 Vendor Credits ($20 of model usage). Gumloop Pro starts at $37/month for 20,000 credits per month. Lindy Team is $29.99/month for 3,000 credits. At the team tier, Relevance AI Team is $234/month annual or $349 monthly for 7,000 Actions, Gumloop lists unlimited seats on Pro, and Lindy Enterprise is custom-priced. Actions, credits and Vendor Credits are different units, so compare them against your own workflow rather than the sticker price. None has a permanent free plan as of 26 October 2026; the trials are Lindy\'s $50 in credits for 7 days and Gumloop\'s 14 days on Pro.',
     },
     {
       q: 'Is Relevance AI or Gumloop better for building AI agents?',
@@ -60,7 +60,7 @@ const post: BlogPost = {
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Relevance AI</strong> (Pro from $19/month billed annually, $29 monthly; no free plan per its docs) wins for building a coordinated team of sales and ops agents. <strong>Lindy</strong> (Team $49.99/month; $50 in credits for 7 days) is the fastest path to a working AI assistant for email and scheduling.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Relevance AI</strong> (Pro from $19/month billed annually, $29 monthly; no free plan per its docs) wins for building a coordinated team of sales and ops agents. <strong>Lindy</strong> (Team $29.99/month; $50 in credits for 7 days) is the fastest path to a working AI assistant for email and scheduling.</p>
   <p style="margin:6px 0 0;font-size:15px;line-height:1.6;"><strong>Gumloop</strong> (Pro from $37/month, 14-day trial) wins for data-heavy, node-based AI pipelines. All three differ sharply on architecture, not just price.</p>
 </div>
 <!-- ai-nexus:early-comparison-table -->
@@ -82,7 +82,7 @@ const post: BlogPost = {
     <tr>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);font-weight:600;">Lindy</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">No — $50 credits for 7 days</td>
-      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$49.99/mo (Team)</td>
+      <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">$29.99/mo (Team)</td>
       <td style="padding:10px 14px;border-bottom:1px solid rgba(13,148,136,.08);">Fastest setup — inbox and scheduling</td>
     </tr>
     <tr>
@@ -98,7 +98,7 @@ const post: BlogPost = {
 <div class="decision-block" style="border:1px solid rgba(13,148,136,.35);border-radius:12px;padding:16px 20px;margin:0 0 24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Decide in 30 seconds</strong>
   <ul style="margin:10px 0 0;padding-left:20px;line-height:1.8;font-size:15px;">
-    <li>Your job sounds like <em>"manage my inbox and calendar"</em>: pick <strong>Lindy</strong> (Team $49.99/month; $50 in credits for 7 days to test).</li>
+    <li>Your job sounds like <em>"manage my inbox and calendar"</em>: pick <strong>Lindy</strong> (Team $29.99/month; $50 in credits for 7 days to test).</li>
     <li>Your job sounds like <em>"research, draft, then hand off between agents"</em>: pick <strong>Relevance AI</strong> (Pro from $19/month billed annually).</li>
     <li>Your job sounds like <em>"scrape, transform, publish data"</em>: pick <strong>Gumloop</strong> (Pro from $37/month; 14-day trial).</li>
     <li>Not sure: run one trial on your real task with the platform that matches your sentence. Don't stack three.</li>
@@ -137,9 +137,9 @@ const post: BlogPost = {
 <p><strong>Pro</strong> is $19/month on annual billing ($29 billed monthly), including 2,500 Actions and 10,000 Vendor Credits ($20) monthly. <strong>Team</strong> runs $234/month annual (or $349/month billed monthly) for 7,000 Actions plus 35,000 Vendor Credits ($70). <strong>Enterprise</strong> is custom-priced. Top-ups cost $80 per 1,000 Actions and need a paid plan. Bring-your-own-key is optional on every plan and skips Vendor Credits — handy if you already manage OpenAI or Anthropic spend directly.</p>
 
 <h3>Lindy Pricing: $50 Trial Credits, Then Team at $49.99</h3>
-<p>Lindy's pricing page lists a Free option of $50 in credits that last 7 days, no card required. That is a trial, not an ongoing plan. <strong>Team</strong> costs $49.99/month and includes 5,000 credits; extra credits are $10 per 1,000.</p>
+<p>Lindy's pricing page lists a Free option of $50 in credits that last 7 days, no card required. That is a trial, not an ongoing plan. <strong>Team</strong> costs $29.99/month and includes 3,000 credits; extra credits are $10 per 1,000.</p>
 <p><strong>Enterprise</strong> is custom, with custom credits and billing, and access starts with a demo request.</p>
-<p>Lindy meters usage in credits, so a heavy agent can use up a plan's 5,000 credits faster than a light one. Measure how many credits your own workflow burns during the trial before you commit.</p>
+<p>Lindy meters usage in credits, so a heavy agent can use up a plan's 3,000 credits faster than a light one. Measure how many credits your own workflow burns during the trial before you commit.</p>
 
 <h3>Gumloop Pricing: Credit-Based Pro, 14-Day Trial</h3>
 <p>Gumloop's pricing page lists no Free plan. It offers a 14-day free trial on Pro instead, which is enough time to build and test a real workflow.</p>
@@ -169,7 +169,7 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 12px;font-weight:600;">Lindy</td>
       <td style="padding:10px 12px;">$50 in credits for 7 days, no card.</td>
-      <td style="padding:10px 12px;">Team: $49.99/mo. 5,000 credits; extra credits $10 per 1,000.</td>
+      <td style="padding:10px 12px;">Team: $29.99/mo. 3,000 credits; extra credits $10 per 1,000.</td>
       <td style="padding:10px 12px;">Enterprise: custom, via demo request.</td>
       <td style="padding:10px 12px;"><a href="https://www.lindy.ai/pricing" target="_blank" rel="nofollow noopener noreferrer">Official pricing</a></td>
     </tr>
@@ -221,7 +221,7 @@ const post: BlogPost = {
 <p>Consider a common small-business case. An agent researches 200 inbound leads a month, drafts a personal outreach email for each, and logs the result to a CRM. That's three AI-touching steps per lead, 600 AI actions total a month.</p>
 <p>On <strong>Relevance AI's</strong> Pro plan, each step uses one Action. 600 Actions/month sits comfortably within the 2,500-Action allowance at $19/month, with Vendor Credits covering the underlying model cost.</p>
 <p>On <strong>Gumloop</strong>, the same workflow built as three nodes per lead uses roughly 2–20 credits per AI node, depending on model tier. That lands somewhere between 1,200 and 12,000 credits a month, and likely needs the $37/month Pro tier once research and drafting both use higher-tier models.</p>
-<p>On <strong>Lindy</strong>, the same workflow runs as credit-metered tasks inside the $49.99/month Team plan. The real constraint isn't the price — it's whether 200 leads/month with research and drafting fits within the plan's 5,000 monthly credits.</p>
+<p>On <strong>Lindy</strong>, the same workflow runs as credit-metered tasks inside the $29.99/month Team plan. The real constraint isn't the price — it's whether 200 leads/month with research and drafting fits within the plan's 3,000 monthly credits.</p>
 <p>Lindy's own docs warn that complex actions, like research or multi-step lead workflows, can use 5–10x more credits than a simple message send.</p>
 
 <h2>Relevance AI vs Lindy vs Gumloop: Feature Comparison Table</h2>
@@ -245,7 +245,7 @@ const post: BlogPost = {
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 12px;font-weight:600;">Entry paid tier</td>
       <td style="padding:10px 12px;">$19/mo annual ($29 monthly): 2,500 Actions</td>
-      <td style="padding:10px 12px;">$49.99/mo (Team): 5,000 credits</td>
+      <td style="padding:10px 12px;">$29.99/mo (Team): 3,000 credits</td>
       <td style="padding:10px 12px;">$37/mo: 20,000+ credits</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
@@ -299,6 +299,7 @@ const post: BlogPost = {
 <h2>Final Verdict: Relevance AI vs Lindy vs Gumloop</h2>
 <p>There's no single winner here because these three platforms aren't really competing for the same job.</p>
 <p>If forced to a single recommendation for most small teams starting from zero: begin with <strong>Relevance AI</strong>. It's the closest match to what serious multi-agent work looks like, and $19/month (billed annually) is the lowest committed cost of the three.</p>
+<p><em>Prices re-verified October 2026 against each vendor's pricing page; Lindy's Team plan dropped from $49.99/month (5,000 credits) to $29.99/month (3,000 credits) since this post's last check.</em></p>
 <p>Add <strong>Lindy</strong> once a specific recurring task (inbox, scheduling) justifies its higher flat fee. Bring in <strong>Gumloop</strong> when a workflow starts looking more like a data pipeline than an assistant. None of the three is a mistake. The mistake is picking based on marketing language ("AI agent," "AI employee," "AI workforce") instead of the actual shape of the work.</p>
 
 <p><strong>Relevance AI — Multi-Agent Orchestration.</strong> Pro starts at $19/month on annual billing ($29 monthly). Check the sign-up page for any current trial before you commit.</p>

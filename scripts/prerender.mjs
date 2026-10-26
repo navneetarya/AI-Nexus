@@ -2778,15 +2778,10 @@ function compareProductListSchema(compareSlug, canonical) {
           returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
         },
       },
-      ...(TRUSTPILOT_COUNTS[tool.slug] ? {
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: (tool.rating || 4.0).toString(),
-          reviewCount: TRUSTPILOT_COUNTS[tool.slug].toString(),
-          bestRating: '5',
-          worstRating: '1',
-        },
-      } : {}),
+      // AggregateRating removed here: ratingValue is AI Nexus's own editorial score, while
+      // TRUSTPILOT_COUNTS is a third-party review count — pairing them in one AggregateRating
+      // node claims a rating was computed from reviews it wasn't. The editorial score is still
+      // exposed via the separate Review/ClaimReview reviewRating schema elsewhere on the page.
       // Task 4 (AEO/GEO): Wikidata/Crunchbase/ProductHunt links for the tool's
       // parent company/product — helps disambiguate the entity in Knowledge Graph.
       ...(tool.sameAs ? { sameAs: tool.sameAs } : {}),
@@ -6747,17 +6742,11 @@ for (const tool of TOOLS) {
         availability: 'https://schema.org/InStock',
         ...offerPriceFields(tool),
       },
-      // Only include aggregateRating if we have a real Trustpilot review count
-      // (hardcoded '1' was suppressing rich results — looked fabricated to Google)
-      ...(TRUSTPILOT_COUNTS[tool.slug] ? {
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: tool.rating.toString(),
-          bestRating: '5',
-          worstRating: '1',
-          reviewCount: TRUSTPILOT_COUNTS[tool.slug].toString(),
-        },
-      } : {}),
+      // AggregateRating removed here: ratingValue is AI Nexus's own editorial score, while
+      // TRUSTPILOT_COUNTS is a third-party review count — pairing them in one AggregateRating
+      // node claims a rating was computed from reviews it wasn't. The editorial score is still
+      // exposed via the separate Review/ClaimReview reviewRating schema above, and the Trustpilot
+      // count is shown to readers (unlabelled as "our rating") in researchSourcesHtml below.
       // Task 4 (AEO/GEO): Wikidata/Crunchbase/ProductHunt links for the tool's
       // parent company/product — helps disambiguate the entity in Knowledge Graph.
       ...(tool.sameAs ? { sameAs: tool.sameAs } : {}),
@@ -6786,7 +6775,7 @@ for (const tool of TOOLS) {
   // H-04 Audit Fix: Visible "last tested" badge — freshness signal for quality raters
   const lastTestedHtml = tool.lastTested
     ? `<p class="last-tested" style="font-size:.8rem;color:#6B7280;margin-top:8px;display:flex;align-items:center;gap:6px">
-        <span>✓ Personally researched</span>
+        <span>✓ Independently researched</span>
         <span>·</span>
         <span>Last verified: <strong>${esc(tool.lastTested)}</strong></span>
         <span>·</span>
@@ -6801,13 +6790,13 @@ for (const tool of TOOLS) {
   const verdictCardHtml = VERDICT_SSR.renderVerdictCardHtml(tool.slug);
   const researchSourcesHtml = reviewCount
     ? `<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;padding:12px 14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;font-size:.82rem">
-        <span><strong>Rating:</strong> ${tool.rating}/5</span>
+        <span><strong>AI Nexus rating:</strong> ${tool.rating}/5</span>
         <span>·</span>
-        <span><strong>Verified reviews:</strong> ${reviewCount.toLocaleString()}</span>
+        <span><strong>Trustpilot reviews:</strong> ${reviewCount.toLocaleString()}</span>
         <span>·</span>
         <span><strong>Last verified:</strong> ${esc(tool.lastTested || '2026')}</span>
       </div>`
-    : `<p style="font-size:.9rem;color:#555;margin-top:12px"><strong>Rating:</strong> ${tool.rating}/5${verdictCardHtml ? '' : ` · <strong>Pricing:</strong> ${esc(tool.pricing || 'See website')}`}</p>`;
+    : `<p style="font-size:.9rem;color:#555;margin-top:12px"><strong>AI Nexus rating:</strong> ${tool.rating}/5${verdictCardHtml ? '' : ` · <strong>Pricing:</strong> ${esc(tool.pricing || 'See website')}`}</p>`;
 
   // E-03 Audit Fix: Render updateLog as visible update history section
   const updateLogHtml = tool.updateLog?.length

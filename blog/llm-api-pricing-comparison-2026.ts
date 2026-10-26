@@ -13,18 +13,18 @@ import { BlogPost } from './types';
 
 const post: BlogPost = {
   slug: 'llm-api-pricing-comparison-2026',
-  title: 'Claude vs GPT vs Gemini API Pricing (Aug 2026): $2 vs $2.50 vs $1.50 per Million Tokens',
-  seoTitle: 'Claude vs GPT vs Gemini API Pricing (Aug 2026)',
-  metaDescription: 'Claude Sonnet 5 ($2/$10), GPT-5.4 ($2.50/$15), Gemini 3.5 Flash ($1.50/$9) per million tokens — verified pricing plus a worked cost example.',
+  title: 'Claude vs GPT vs Gemini API Pricing (Oct 2026): $3 vs $2.50 vs $1.50 per Million Tokens',
+  seoTitle: 'Claude vs GPT vs Gemini API Pricing (Oct 2026)',
+  metaDescription: 'Claude Sonnet 5 ($3/$15), GPT-5.4 ($2.50/$15), Gemini 3.5 Flash ($1.50/$9) per million tokens — verified pricing plus a worked cost example.',
   datePublished: '2026-07-06',
-  dateModified: '2026-08-22',
+  dateModified: '2026-10-26',
   author: 'Navneet Arya',
   category: 'Coding',
   readTime: '12 min read',
   ogImage: 'https://ainexustools.online/og/blog/llm-api-pricing-comparison-2026.webp',
-  excerpt: 'GPT-4o has quietly disappeared from OpenAI\'s own pricing page. Here is what the OpenAI, Anthropic, and Google Gemini APIs actually cost per million tokens as of July 2026 — including a worked cost example for a real production workload.',
-  quickAnswer: 'As of July 2026, Claude Sonnet 5 is the cheapest frontier-tier model at $2/$10 per million input/output tokens (introductory, through August 31). Gemini 3.5 Flash costs $1.50/$9, and GPT-5.4 costs $2.50/$15. GPT-4o no longer appears on OpenAI\'s official pricing page; GPT-5.4 and GPT-5.5 are its direct successors for any 2026 API pricing comparison.',
-  myTake: 'The "GPT-4o vs Claude vs Gemini" search habit hasn\'t caught up with reality. GPT-4o has been retired from ChatGPT entirely and dropped off OpenAI\'s own pricing table, so the real 2026 comparison is GPT-5.4/5.5 vs Claude Sonnet 5 vs Gemini 3.5 Flash. Sonnet 5\'s introductory $2/$10 rate through August 31 makes it the one worth routing to right now if quality-per-dollar is the goal. Its heavier tokenizer does eat into that headline discount on real workloads, though.',
+  excerpt: 'GPT-4o has quietly disappeared from OpenAI\'s own pricing page. Here is what the OpenAI, Anthropic, and Google Gemini APIs actually cost per million tokens as of October 2026 — including a worked cost example for a real production workload.',
+  quickAnswer: 'As of October 2026, Gemini 3.5 Flash is the cheapest frontier-tier model at $1.50/$9 per million input/output tokens. Claude Sonnet 5\'s introductory rate ended August 31; it now bills at its standard $3/$15 rate. GPT-5.4 costs $2.50/$15. GPT-4o no longer appears on OpenAI\'s official pricing page; GPT-5.4 and GPT-5.5 are its direct successors for any 2026 API pricing comparison.',
+  myTake: 'The "GPT-4o vs Claude vs Gemini" search habit hasn\'t caught up with reality. GPT-4o has been retired from ChatGPT entirely and dropped off OpenAI\'s own pricing table, so the real 2026 comparison is GPT-5.4/5.5 vs Claude Sonnet 5 vs Gemini 3.5 Flash. Sonnet 5\'s introductory $2/$10 rate expired August 31, so Gemini 3.5 Flash is now the better cost-per-dollar pick for routine routing, with Sonnet 5 reserved for tasks where its 1M-token context window and caching discount matter more than raw price.',
   faqs: [
     {
       q: 'Is GPT-4o pricing still relevant in 2026?',
@@ -32,15 +32,15 @@ const post: BlogPost = {
     },
     {
       q: 'What is the cheapest LLM API in 2026?',
-      a: 'Among frontier-tier, general-purpose models, Gemini 3.5 Flash ($1.50/$9.00 per million input/output tokens) and Claude Sonnet 5 ($2.00/$10.00 introductory, through August 31, 2026) are the two cheapest capable options. For pure budget routing on simple tasks like classification or extraction, Gemini 2.5 Flash-Lite ($0.10/$0.40 per million tokens) and Claude Haiku 4.5 ($1.00/$5.00) are considerably cheaper. They trade off reasoning depth, though. The right "cheapest" answer depends on whether the task needs frontier-level reasoning or can be routed to a smaller model.',
+      a: 'Among frontier-tier, general-purpose models, Gemini 3.5 Flash ($1.50/$9.00 per million input/output tokens) is now the cheapest capable option, after Claude Sonnet 5\'s introductory rate expired August 31, 2026 (it now bills at its standard $3.00/$15.00). For pure budget routing on simple tasks like classification or extraction, Gemini 2.5 Flash-Lite ($0.10/$0.40 per million tokens) and Claude Haiku 4.5 ($1.00/$5.00) are considerably cheaper. They trade off reasoning depth, though. The right "cheapest" answer depends on whether the task needs frontier-level reasoning or can be routed to a smaller model.',
     },
     {
       q: 'How much does the Claude API cost per million tokens in 2026?',
-      a: 'Claude Sonnet 5 costs $2.00 input / $10.00 output per million tokens through an introductory period ending August 31, 2026. After that it moves to $3.00/$15.00, the same rate as Claude Sonnet 4.6. Claude Opus 4.8 costs $5.00/$25.00, and Claude Haiku 4.5 costs $1.00/$5.00. All current-generation Claude models include a full 1 million token context window at standard pricing with no long-context surcharge. Prompt caching also cuts cache-hit input cost by 90% across the board.',
+      a: 'Claude Sonnet 5 billed an introductory $2.00 input / $10.00 output per million tokens through August 31, 2026. That window has ended: Sonnet 5 now costs $3.00/$15.00, the same rate as Claude Sonnet 4.6. Claude Opus 4.8 costs $5.00/$25.00, and Claude Haiku 4.5 costs $1.00/$5.00. All current-generation Claude models include a full 1 million token context window at standard pricing with no long-context surcharge. Prompt caching also cuts cache-hit input cost by 90% across the board.',
     },
     {
       q: 'Is Gemini cheaper than GPT-5 and Claude for API use?',
-      a: 'At the flagship tier, Gemini 3.5 Flash ($1.50/$9.00) undercuts GPT-5.4 ($2.50/$15.00) and matches or beats Claude Sonnet 5\'s post-introductory rate ($3.00/$15.00). Gemini 3.1 Pro Preview ($2.00/$12.00 up to 200K tokens) sits between the two on price. Google also offers a genuinely free tier for Flash and Flash-Lite models with reduced rate limits, which neither OpenAI nor Anthropic currently matches for their current-generation models. Google\'s Pro-tier models, however, lost free-tier access entirely as of April 1, 2026. Gemini 3.1 Pro Preview is paid-only.',
+      a: 'At the flagship tier, Gemini 3.5 Flash ($1.50/$9.00) undercuts GPT-5.4 ($2.50/$15.00) and Claude Sonnet 5\'s standard rate ($3.00/$15.00). Gemini 3.1 Pro Preview ($2.00/$12.00 up to 200K tokens) sits between the two on price. Google also offers a genuinely free tier for Flash and Flash-Lite models with reduced rate limits, which neither OpenAI nor Anthropic currently matches for their current-generation models. Google\'s Pro-tier models, however, lost free-tier access entirely as of April 1, 2026. Gemini 3.1 Pro Preview is paid-only.',
     },
     {
       q: 'What is prompt caching and how much does it save on LLM API costs?',
@@ -66,7 +66,7 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For <strong>LLM API pricing</strong> as of July 2026, <strong>Claude Sonnet 5</strong> is the cheapest frontier-tier model. It costs $2/$10 per million input/output tokens (introductory, through August 31). <strong>Gemini 3.5 Flash</strong> costs $1.50/$9, and <strong>GPT-5.4</strong> costs $2.50/$15.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">For <strong>LLM API pricing</strong> as of October 2026, <strong>Gemini 3.5 Flash</strong> is the cheapest frontier-tier model at $1.50/$9 per million input/output tokens. <strong>Claude Sonnet 5</strong>'s introductory rate ended August 31; it now bills at its standard $3/$15. <strong>GPT-5.4</strong> costs $2.50/$15.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>GPT-4o</strong> no longer appears on OpenAI's official pricing page. GPT-5.4 and GPT-5.5 are its direct successors for any 2026 API pricing comparison.</p>
 </div>
 
@@ -184,8 +184,8 @@ const post: BlogPost = {
 <p>OpenAI's current flagship lineup has two tiers. GPT-5.5 runs $5.00 input / $30.00 output per million tokens, with a $0.50 cached-input rate. GPT-5.4 is the mid-tier option at $2.50/$15.00.</p><p>Both roughly double their rate once a request crosses a long-context threshold — around 270,000 tokens for GPT-5.5/5.4.</p>
 <p>For budget routing, GPT-5.4 mini ($0.75/$4.50) and GPT-5.4 nano ($0.20/$1.25) exist below the flagship tier. GPT-4o isn't listed in OpenAI's current pricing docs at all. That's a real shift from earlier in 2026, when it still showed up as a legacy option.</p>
 
-<h3>Anthropic: Claude Sonnet 5's Introductory Window</h3>
-<p>Anthropic's current lineup is Claude Opus 4.8 at $5.00/$25.00 and Claude Haiku 4.5 at $1.00/$5.00. Claude Sonnet 5 costs an introductory $2.00/$10.00 through August 31, 2026. After that it reverts to $3.00/$15.00, the same rate as the outgoing Sonnet 4.6.</p>
+<h3>Anthropic: Claude Sonnet 5's Introductory Window Has Closed</h3>
+<p>Anthropic's current lineup is Claude Opus 4.8 at $5.00/$25.00 and Claude Haiku 4.5 at $1.00/$5.00. Claude Sonnet 5 billed an introductory $2.00/$10.00 through August 31, 2026; that window has closed, and it now bills at its standard $3.00/$15.00, the same rate as the outgoing Sonnet 4.6.</p>
 <p>One thing headline pricing tables tend to miss: Sonnet 5, plus Opus 4.7 and later, uses a newer tokenizer. It produces roughly 30% more tokens for the same input text than the previous generation did.</p>
 <p>That means the real cost on Sonnet 5 can land higher than the raw rate implies, even at the discounted introductory price.</p>
 <p>Anthropic is also the only one of the three providers with a full 1 million token context window at flat, standard pricing. There's no long-context surcharge, unlike with OpenAI and Google.</p>
@@ -250,7 +250,7 @@ const post: BlogPost = {
       <td style="padding:10px 12px;font-weight:600;">$42.00</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
-      <td style="padding:10px 12px;font-weight:600;">Claude Sonnet 5 (introductory)</td>
+      <td style="padding:10px 12px;font-weight:600;">Claude Sonnet 5 (historical, through Aug 31)</td>
       <td style="padding:10px 12px;">$20.00</td>
       <td style="padding:10px 12px;">$30.00</td>
       <td style="padding:10px 12px;font-weight:600;">$50.00</td>
@@ -268,7 +268,7 @@ const post: BlogPost = {
       <td style="padding:10px 12px;font-weight:600;">$70.00</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
-      <td style="padding:10px 12px;font-weight:600;">Claude Sonnet 5 (standard, post-Sep 1)</td>
+      <td style="padding:10px 12px;font-weight:600;">Claude Sonnet 5 (current, standard rate)</td>
       <td style="padding:10px 12px;">$30.00</td>
       <td style="padding:10px 12px;">$45.00</td>
       <td style="padding:10px 12px;font-weight:600;">$75.00</td>
@@ -290,12 +290,13 @@ const post: BlogPost = {
 </div>
 <p>At this volume, the spread between the cheapest budget-tier model and the priciest flagship is roughly 64x. That's a bigger swing than most teams expect until they run the numbers.</p>
 <p>Note: this table skips Sonnet 5's ~30% tokenizer overhead versus older Claude models. Real cost lands a bit higher than the raw math shows. It also excludes caching. A chatbot with an 80% cache-hit rate on a shared system prompt could cut most of these totals by a third or more.</p>
+<p><em>Prices re-verified October 2026 against each provider's official API pricing page. Claude Sonnet 5's introductory rate expired as scheduled on August 31, 2026.</em></p>
 
 <img src="https://images.unsplash.com/photo-1726137570000-70ae29f0ba01?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A hand holding a credit card next to a phone, representing billing for API usage in India" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 
 <h2>Which LLM API Is Cheapest for Indian Developers?</h2>
 <p>None of the three providers bill in INR or accept UPI for direct API usage. OpenAI, Anthropic, and Google all charge in USD through an international card, which adds 2–3.5% in forex fees. GST-registered Indian businesses also pay 18% GST on top of the converted amount.</p>
-<p>From the example above, a $50/month Sonnet 5 bill at the intro rate works out to roughly ₹4,150–₹4,300 after forex fees, before GST. That's competitive with Gemini 3.5 Flash's $42/month bill at similar conversion overhead.</p>
+<p>From the example above, a $50/month Sonnet 5 bill at the (now-expired) intro rate worked out to roughly ₹4,150–₹4,300 after forex fees, before GST; at Sonnet 5's current standard rate the same workload now runs closer to $75/month (~₹6,200–₹6,450 after forex fees). That makes Gemini 3.5 Flash's $42/month bill the cheaper frontier-tier option at similar conversion overhead.</p>
 <p>For Indian teams testing providers, Google AI Studio gives free access to Gemini 3.5 Flash and Flash-Lite, no card needed. It's the lowest-friction way to prototype before any INR conversion cost applies.</p>
 <p>A forex-enabled card from an Indian bank, or a prepaid card from a fintech like Niyo or Scapia, helps too. Either cuts the repeated conversion fee versus a standard debit card, whichever provider you settle on.</p>
 

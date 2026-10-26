@@ -13,7 +13,7 @@ const post: BlogPost = {
   seoTitle: 'Leonardo AI vs Midjourney 2026 — Free Plan Compared',
   metaDescription: 'Leonardo.ai vs Midjourney compared for 2026 — free plans, image quality, pricing, and commercial usage rights. See which AI image generator wins.',
   datePublished: '2026-05-12',
-  dateModified: '2026-08-21',
+  dateModified: '2026-10-26',
   author: 'Navneet Arya',
   category: 'Image',
   readTime: '7 min read',
@@ -48,7 +48,7 @@ const post: BlogPost = {
     },
     {
       q: 'Which is cheaper long-term, Leonardo.ai or Midjourney?',
-      a: 'Leonardo.ai is cheaper at the entry tier: $12/month (Apprentice, 8,500 tokens) versus Midjourney\'s $10/month (Basic, 200 images) — close enough that raw price is not the deciding factor there. The bigger cost difference is the free tier: Leonardo lets you validate the tool for $0 before paying anything, while Midjourney requires payment before you generate a single image. At the mid tier, both land near $30/month, so the real cost difference comes down to which tool\'s output you actually need, not the sticker price.',
+      a: 'Leonardo.ai is cheaper at the entry tier: $12/month (Essential, 8,500 tokens) versus Midjourney\'s $10/month (Basic, 200 images) — close enough that raw price is not the deciding factor there. The bigger cost difference is the free tier: Leonardo lets you validate the tool for $0 before paying anything, while Midjourney requires payment before you generate a single image. At the mid tier, both land near $30/month, so the real cost difference comes down to which tool\'s output you actually need, not the sticker price.',
     },
     {
       q: 'Does Midjourney have a mobile app?',
@@ -97,6 +97,7 @@ const post: BlogPost = {
 <h2>Free Plan Comparison: The Clearest Difference</h2>
 <p>Run the same prompt on both only after deciding what success means. For a game asset, consistency and commercial terms may matter most. For a portfolio image, a single aesthetic result may matter more. The free allowance makes Leonardo easier to evaluate first.</p>
 <p>Leonardo.ai lets you test the workflow before paying: 150 tokens refresh daily and commercial use is allowed on the free tier according to the documented comparison. Midjourney starts at $10/month and has no free plan, so the first question is whether its aesthetic advantage is worth paying before evaluation.</p>
+<p><em>Prices verified October 2026 against Leonardo.ai's and Midjourney's own pricing pages.</em></p>
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:14px;">
   <thead>
@@ -119,12 +120,12 @@ const post: BlogPost = {
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
       <td style="padding:10px 14px;font-weight:600;">Entry paid price</td>
-      <td style="padding:10px 14px;">$12/month (Apprentice — 8,500 tokens)</td>
+      <td style="padding:10px 14px;">$12/month (Essential — 8,500 tokens)</td>
       <td style="padding:10px 14px;">$10/month (Basic — 200 images)</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);background:rgba(13,148,136,.03);">
       <td style="padding:10px 14px;font-weight:600;">Standard paid price</td>
-      <td style="padding:10px 14px;">$30/month (Artisan — 25,000 tokens)</td>
+      <td style="padding:10px 14px;">$30/month (Premium — 25,000 tokens)</td>
       <td style="padding:10px 14px;">$30/month (Standard — unlimited relaxed)</td>
     </tr>
     <tr style="border-bottom:1px solid rgba(13,148,136,.08);">
@@ -201,7 +202,7 @@ const post: BlogPost = {
   <li><strong>Start with Leonardo.ai's free plan.</strong> Generate 50–100 images across a week using different models, since switching models changes the output more than any prompt tweak.</li>
   <li><strong>Judge the output against your actual bottleneck.</strong> If it doesn't reach the quality level you need, and aesthetic quality is really the limitation, move to step 3.</li>
   <li><strong>Try Midjourney's Basic plan for a month.</strong> $10/month is a low-risk way to confirm whether the aesthetic ceiling is really what was missing.</li>
-  <li><strong>Pick a home based on the result, not the marketing.</strong> Most creators who go through this process find Leonardo's paid tiers — Apprentice at $12/month for 8,500 tokens, or Artisan at $30/month for 25,000 tokens — are more than enough for professional work. The creators who stay on Midjourney are usually those where pure aesthetic quality for one-off images is the single non-negotiable.</li>
+  <li><strong>Pick a home based on the result, not the marketing.</strong> Most creators who go through this process find Leonardo's paid tiers — Essential at $12/month for 8,500 tokens, or Premium at $30/month for 25,000 tokens — are more than enough for professional work. The creators who stay on Midjourney are usually those where pure aesthetic quality for one-off images is the single non-negotiable.</li>
 </ol>
 <p>For the full head-to-head technical comparison, see: <a href="/compare/leonardo-vs-midjourney/" style="color:#0D9488;font-weight:600;">Leonardo.ai vs Midjourney: full comparison</a></p>
 <p>Looking for more free alternatives? See: <a href="/blog/best-midjourney-alternatives-2026/" style="color:#0D9488;font-weight:600;">Best Midjourney Alternatives 2026: Free Options Tested</a></p>

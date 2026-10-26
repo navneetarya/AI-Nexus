@@ -41,6 +41,21 @@ v2.0 additions (all optional data flags degrade gracefully when omitted)
   Benchmarks   --benchmarks FILE   compares each post to competitor pages (live URL or saved .html)
   Trend        --history FILE   run-over-run deltas
 
+v2.1 additions (strategic, site-wide; grounded in repo facts only, never fabricated demand numbers)
+  Cluster concentration   flags a category holding a disproportionate share of posts (same-intent pages
+                          competing with each other) and cross-references the near-duplicate check
+  Utility coverage gap    categories with many posts but 0 verified-price tools in data/pricing/latest.json
+                          (no calculator/tracker-type asset backing that cluster, unlike covered categories)
+  Assistant tool gap      checks constants.ts for missing /tools/ pages among major AI-assistant brands
+                          (Gemini, DeepSeek, NotebookLM, Microsoft Copilot) — fix text asks you to verify
+                          demand yourself; this script never asserts search-volume numbers
+  Trust-claim contradiction   a 'personally researched / independently tested' badge next to the site's
+                          own research-only disclaimer ('No first-hand testing is claimed')
+  Mixed rating schema     AggregateRating pairing an editorial rating with a third-party Trustpilot count
+                          under one 'Verified reviews' label
+  Category-enum bug fix   posts written as `category: Category.AUDIO` (no quotes) were silently dropped
+                          from every category-based check; now resolved via blog/types.ts enum lookup
+
   python3 blog_analyzer.py --gsc data/gsc-pages.csv --traffic data/ga4-pages.csv --affclicks data/ga4-aff-clicks.csv \\
           --history .analyzer-history.json --html report.html --checklist fixes.md
   python3 blog_analyzer.py --dist dist --strict-policy --ci --baseline analyzer-baseline.json
@@ -69,7 +84,7 @@ from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-VERSION = "2.0"
+VERSION = "2.1"
 SITE = "https://ainexustools.online"
 NON_POST_FILES = {"index.ts", "metadata.ts", "loaders.ts", "types.ts"}
 
@@ -311,6 +326,17 @@ class Site:
         self.load_compare()
         self.load_static_routes()
         self.load_template_data()
+        self.load_category_enum()
+
+    # blog/types.ts `enum Category { WRITING = 'Writing', ... }` — newer posts write `category: Category.AUDIO`
+    # instead of a quoted string, which get_field() cannot see; this resolves the enum name to its display value.
+    def load_category_enum(self):
+        self.category_enum: dict = {}
+        txt = read(self.blog_dir / "types.ts") or read(self.root / "types.ts")
+        m = re.search(r"enum Category\s*\{(.*?)\}", txt, re.S)
+        if m:
+            for k, v in re.findall(r"([A-Z_]+)\s*=\s*'([^']*)'", m.group(1)):
+                self.category_enum[k] = v
 
     # constants.ts + lib/affiliate-links.ts
     def load_tools(self):
@@ -335,6 +361,18 @@ class Site:
                 self.aff_links[key] = m.group(3)           # supplementary wins (matches the TS spread order)
                 if key not in self.tools:
                     self.tools[key] = {"name": key.replace("-", " ").title(), "link": m.group(3), "has_page": False}
+        # backward-compat aliases inside the AFFILIATE_LINKS export itself, e.g.
+        # `automattic: TOOL_LINKS['wordpress-com'],` — a real, resolvable link that a plain
+        # string-literal regex can't see; without this, every post using AFFILIATE_LINKS['automattic']
+        # falsely reports a dead CTA even though the build resolves it fine.
+        exp = re.search(r"export const AFFILIATE_LINKS[^=]*=\s*\{(.*?)\n\};", lib, re.S)
+        if exp:
+            for m in re.finditer(r"^\s*(?:'([^']+)'|([A-Za-z0-9_]+))\s*:\s*TOOL_LINKS\[\s*'([^']+)'\s*\]", exp.group(1), re.M):
+                key, target = m.group(1) or m.group(2), m.group(3)
+                if key not in self.aff_links and target in self.aff_links:
+                    self.aff_links[key] = self.aff_links[target]
+                    if key not in self.tools:
+                        self.tools[key] = {"name": key.replace("-", " ").title(), "link": self.aff_links[key], "has_page": False}
                 else:
                     self.tools[key]["link"] = m.group(3)
 
@@ -424,13 +462,29 @@ class Site:
             p.date_pub = get_field(raw, "datePublished")
             p.date_mod = get_field(raw, "dateModified")
             p.category = get_field(raw, "category")
+            if not p.category:
+                # bug fix: get_field() only matches quoted strings; posts written as `category: Category.AUDIO,`
+                # (enum reference, no quotes) were silently scored with an empty category and dropped out of
+                # every category-based check (cluster-concentration, utility-coverage-gap, cannibalisation-by-category).
+                em = re.search(r"^\s{0,4}category:\s*Category\.([A-Z_]+)", raw, re.M)
+                if em:
+                    p.category = self.category_enum.get(em.group(1), "")
             p.quick_answer = get_field(raw, "quickAnswer")
             p.my_take = get_field(raw, "myTake")
             wc = re.search(r"^\s{0,4}wordCount:\s*(\d+)", raw, re.M)
             p.wordcount_field = int(wc.group(1)) if wc else 0
             p.faqs = parse_faqs(raw)
             cit = re.search(r"outboundCitations:\s*\[(.*?)\n\s{0,4}\]", raw, re.S)
-            p.citations = re.findall(r"url:\s*'([^']+)'", cit.group(1)) if cit else []
+            if cit:
+                p.citations = re.findall(r"url:\s*'([^']+)'", cit.group(1))
+                # bug fix: `url: AFFILIATE_LINKS['slug']` (a resolved variable, not a quoted string)
+                # was invisible to the string-literal regex above, undercounting real citations and
+                # falsely tripping info-gain-low/few-sources even when the post cites 3+ sources.
+                for key in re.findall(r"url:\s*AFFILIATE_LINKS\[\s*'([^']+)'\s*\]", cit.group(1)):
+                    if key in self.aff_links and self.aff_links[key]:
+                        p.citations.append(self.aff_links[key])
+            else:
+                p.citations = []
             p.has_proscons = bool(re.search(r"^\s{0,4}proscons:\s*\{", raw, re.M))
             p.header = raw[: raw.find("import ")] if "import " in raw else raw[:3000]
             km = re.search(r'Target keyword:\s*["“\']([^"”\']+)["”\']', p.header)
@@ -1947,6 +2001,101 @@ def boilerplate_and_duplicates(site, A):
                        "Give each a clearly different angle/data set, merge the weaker into the stronger with a 301, or consolidate overlapping sections.", "L", where=f"{a} / {b}", key="|".join(sorted((a, b))))
 
 
+# --- strategic growth checks -----------------------------------------------------------------------------------
+# Grounded entirely in repo facts (category counts, data/pricing/latest.json, constants.ts, scripts/prerender.mjs,
+# pages/*.tsx wording) — never in external demand numbers. Where external market research is the reason a check
+# exists (see repo audit notes), the fix text asks you to verify current volume (Search Console / Keyword Planner)
+# rather than asserting a number this script cannot see.
+MIN_CLUSTER_POSTS = 10            # a category needs at least this many posts before concentration is worth flagging
+# (brand, slug-must-match, slug-must-NOT-match) — checked against actual /tools/ page slugs in constants.ts.
+MAJOR_AI_ASSISTANTS = [
+    ("Gemini", re.compile(r"gemini", re.I), re.compile(r"^$")),
+    ("DeepSeek", re.compile(r"deepseek", re.I), re.compile(r"^$")),
+    ("NotebookLM", re.compile(r"notebooklm", re.I), re.compile(r"^$")),
+    ("Microsoft Copilot (consumer)", re.compile(r"copilot", re.I), re.compile(r"github|claude", re.I)),
+]
+
+
+def strategic_opportunities(site, A):
+    posts = site.posts
+
+    # 1. Topic-cluster concentration: a category holding a large share of all posts means many same-intent
+    #    pages compete with each other instead of winning new queries. Flag any category at/above the share
+    #    threshold (not just the single largest), since a narrow vertical can crowd itself out even while
+    #    a broader catch-all category (e.g. Productivity) is nominally bigger.
+    CLUSTER_SHARE_THRESHOLD = 0.15
+    by_cat = defaultdict(list)
+    for s, p in posts.items():
+        if p.category: by_cat[p.category].append(s)
+    total = len(posts)
+    ranked = sorted(by_cat.items(), key=lambda kv: -len(kv[1]))
+    for cat, slugs in ranked[:3]:
+        share = len(slugs) / max(1, total)
+        if len(slugs) >= MIN_CLUSTER_POSTS and share >= CLUSTER_SHARE_THRESHOLD:
+            dup_in_cluster = sorted({s for _, a, b in getattr(site, "near_dups", []) for s in (a, b) if s in slugs})
+            msg = f"'{cat}' holds {len(slugs)}/{total} posts ({share:.0%} of the site) — same-intent posts in one cluster compete with each other instead of winning new queries."
+            if dup_in_cluster:
+                msg += f" {len(dup_in_cluster)} of those posts also show up in the near-duplicate check above: {', '.join(dup_in_cluster[:6])}."
+            site_issue(site, "cluster-concentration", "organic", "medium", msg,
+                       "Pause new posts in this category and consolidate near-neighbour ones (merge + 301 the weaker of each overlapping pair, e.g. voice-for-podcasts vs voice-for-YouTube vs voice-for-voiceovers) before publishing more; "
+                       "put new coverage toward categories that currently have 0-1 posts.",
+                       "L", snippet=", ".join(sorted(slugs)), key=f"{cat}:{len(slugs)}")
+
+    # 2. Utility-asset coverage gap: categories with many posts but no verified-price tool in the pricing tracker
+    #    (data/pricing/latest.json) have no calculator/tracker-type asset backing them, unlike categories that do.
+    snap = {}
+    try:
+        snap = json.loads(read(site.root / "data" / "pricing" / "latest.json") or "{}")
+    except ValueError:
+        snap = {}
+    tracked_cats = {t.get("category") for t in snap.get("tools", []) if t.get("category")}
+    if tracked_cats:
+        for cat, slugs in sorted(by_cat.items(), key=lambda kv: -len(kv[1])):
+            if cat and cat not in tracked_cats and len(slugs) >= MIN_CLUSTER_POSTS:
+                site_issue(site, "utility-coverage-gap", "revenue", "medium",
+                           f"{len(slugs)} posts are in the '{cat}' category, but data/pricing/latest.json has 0 verified-price tools there "
+                           f"(only {', '.join(sorted(tracked_cats))} are covered by the pricing tracker/calculator).",
+                           f"Add {cat} tools to the pricing-snapshot pipeline (scripts/pricing-snapshot.mjs) so this cluster gets the same verified-price utility asset the covered categories already have.",
+                           "L", key=cat)
+
+    # 3. Missing tool pages for major AI-assistant brands \u2014 only checks what constants.ts actually has;
+    #    verify current query volume yourself (Search Console / Keyword Planner) before committing content.
+    missing = [name for name, inc, exc in MAJOR_AI_ASSISTANTS
+               if not any(inc.search(slug) and not exc.search(slug) for slug in site.tools)]
+    if missing:
+        site_issue(site, "assistant-tool-gap", "organic", "medium",
+                   f"No /tools/ page for: {', '.join(missing)} \u2014 major AI-assistant brands with no dedicated review/plans page in constants.ts.",
+                   "Verify current demand via Search Console/Keyword Planner before building (this check cannot see traffic). If confirmed, a plans/limits/free-tier page is a documented-facts page, not a hands-on review \u2014 fits a research-only site.",
+                   "L", key=",".join(missing))
+
+    # 4. Trust-claim contradiction: a 'personally researched / independently tested' badge next to a
+    #    research-only disclaimer elsewhere is an internal inconsistency, not just a wording nitpick.
+    pre = read(site.root / "scripts" / "prerender.mjs")
+    contact = read(site.root / "pages" / "ContactPage.tsx")
+    first_hand_claims = []
+    if re.search(r"Personally researched", pre):
+        first_hand_claims.append(("scripts/prerender.mjs", "'\u2713 Personally researched' tool-page badge"))
+    if re.search(r"independently tested", contact, re.I):
+        first_hand_claims.append(("pages/ContactPage.tsx", "'independently tested' in the affiliate-partner policy text"))
+    disclaims_research_only = bool(re.search(r"no first-hand testing is claimed", read(site.root / "constants.ts"), re.I))
+    if first_hand_claims and disclaims_research_only:
+        site_issue(site, "trust-claim-contradiction", "trust", "high",
+                   "Hands-on-testing language in " + "; ".join(f"{f} ({d})" for f, d in first_hand_claims) +
+                   " contradicts the research-only disclaimer elsewhere (constants.ts: 'No first-hand testing is claimed'). "
+                   "Google's product-review guidance asks reviewers to show evidence of actually using the product \u2014 a research-only site shouldn't claim first-hand testing, and competing as a hands-on reviewer invites that scrutiny.",
+                   "Replace 'Personally researched' / 'independently tested' with 'Independently researched' or 'Reviewed' everywhere; keep the research-only disclaimer as the single source of truth site-wide.",
+                   "S", where="; ".join(f for f, _ in first_hand_claims), key="badge+contact")
+
+    # 5. Mixed rating data: an editorial rating paired with a third-party review count in one schema block,
+    #    labelled 'Verified reviews' \u2014 blends two different sources under one number.
+    if re.search(r"ratingValue:\s*tool\.rating", pre) and re.search(r"reviewCount:\s*TRUSTPILOT_COUNTS", pre):
+        site_issue(site, "mixed-rating-schema", "trust", "medium",
+                   "Tool-page AggregateRating schema pairs an editorial ratingValue (tool.rating) with a third-party reviewCount (TRUSTPILOT_COUNTS), "
+                   "and the visible UI labels the Trustpilot count 'Verified reviews' next to that editorial rating.",
+                   "Either source both ratingValue and reviewCount from Trustpilot (internally consistent), or drop aggregateRating and show the Trustpilot rating/count separately from the editorial verdict, clearly labelled as two different things.",
+                   "M", where="scripts/prerender.mjs (TRUSTPILOT_COUNTS + aggregateRating block)", key="rating-blend")
+
+
 def policy_sitefiles(site):
     pat = re.compile(r"\b(seoTitle|metaDescription|description|title|excerpt|headline)\s*:\s*(['\"`])((?:\\.|(?!\2)[^\\\n])*)\2")
     found = []
@@ -2302,6 +2451,7 @@ def main(argv=None):
     for p in site.posts.values(): A.analyze(p)
     site_analysis(site, A)
     boilerplate_and_duplicates(site, A); policy_sitefiles(site); bulk_dates(site)
+    strategic_opportunities(site, A)
     if args.dist: dist_checks(site, A, args.dist)
     if args.benchmarks: run_benchmarks(site, A, args.benchmarks, args)
     if args.slugs:

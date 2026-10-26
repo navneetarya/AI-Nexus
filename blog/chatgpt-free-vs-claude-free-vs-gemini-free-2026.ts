@@ -206,6 +206,7 @@ const post: BlogPost = {
   <li><strong>A tricky client email:</strong> Claude Free, especially if the client brief already sits in a Project.</li>
   <li><strong>Brainstorming:</strong> any of the three. Use whichever has room left today.</li>
   <li><strong>Quick code fix:</strong> ChatGPT Free, thanks to its limited Codex access.</li>
+  <li><strong>Voice brainstorming on the move:</strong> ChatGPT Free (limited voice chats) or Gemini Free (Gemini Live), since both ship a spoken-interaction mode on the free tier. Claude Free has no live voice mode yet, so route voice-first tasks to the other two.</li>
 </ul>
 
 <h2>When the Free Plan Stops Being Enough</h2>
@@ -266,6 +267,7 @@ const post: BlogPost = {
   </table>
 </div>
 <p>The standard plans cluster around $20 a month, so price rarely decides the choice. What differs is what you unlock: Projects and custom GPTs on ChatGPT Plus, Claude Research and Claude Code on Claude Pro, and Gemini inside Gmail and Docs on Google's paid plans. In India the entry steps are ChatGPT Go and Google AI Plus at ₹399 a month each.</p>
+<p>Notice the gap in Claude's ladder: ChatGPT and Gemini both offer a cheap entry step (Go at $8/mo, Google AI Plus at $4.99/mo) before their full $20/mo tier, but Claude jumps straight from Free to the full $20/mo Pro plan with nothing in between. If budget is tight and you mainly need more room rather than Research or Claude Code, ChatGPT Go or Google AI Plus are the cheaper way to test whether paying helps before committing to a $20/mo plan.</p>
 
 <h2>A one-afternoon test before you pay for anything</h2>
 <p>Run the same three jobs through all three free plans: a client email that needs the right tone, an 800-word draft from a brief, and a short competitor research summary with sources. Compare how much editing each result needs and whether you hit a cap before finishing. Whichever plan you reach for first on a normal workday is the one whose paid tier is worth considering.</p>`,

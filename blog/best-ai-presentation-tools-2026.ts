@@ -84,7 +84,7 @@ const post: BlogPost = {
     },
     {
       q: 'How much do AI presentation tools cost for a small team in India?',
-      a: 'For a 3-person team, Gamma Plus across 3 seats costs ₹1,200/month on annual billing (₹400 per seat before tax, as shown on the Gamma pricing page for Indian visitors), with 1,000 AI credits per seat each month and no watermark. Canva Pro for 3 people runs about $432/year ($144 each, roughly ₹3,000/month) and bundles a full design suite. Canva\'s pricing page says Canva Teams is no longer open to new sign-ups. Beautiful.ai is the most expensive entry point: there is no team discount below the $40/seat/month Team plan, so 3 seats costs $120/month (~₹10,000/month). Gamma accepts UPI in India; the other paid tools here bill in USD with no UPI support, so Indian users need a forex-enabled card or an international prepaid card (Niyo, Scapia) for those. NotebookLM remains the only fully free option regardless of team size.',
+      a: 'For a 3-person team, Gamma Plus costs ₹1,200/month total (₹400/seat before tax, per Gamma\'s India pricing page), with 1,000 AI credits/seat and no watermark. Canva Pro runs about $432/year for 3 people (~₹3,000/month); Canva Teams is closed to new sign-ups. Beautiful.ai has no team discount below its $40/seat/month Team plan, so 3 seats costs $120/month (~₹10,000/month) — the most expensive option here. Gamma accepts UPI; the others bill in USD only, so Indian users need a forex-enabled or prepaid international card (Niyo, Scapia). NotebookLM remains free regardless of team size.',
     },
     {
       q: 'What is the cheapest paid AI presentation tool in 2026?',

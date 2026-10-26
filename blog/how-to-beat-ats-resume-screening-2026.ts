@@ -69,7 +69,7 @@ const post: BlogPost = {
   content: `
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
   <strong style="color:#0D9488;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Quick Answer</strong>
-  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">To beat ATS resume screening, know this: most resumes never reach a human recruiter because <strong>Applicant Tracking System (ATS)</strong> software filters them out first. In 2026, the fix is not keyword-stuffing — it's a single-column, standard-header format the parser can actually read, language that matches the job posting's real requirements, and a free ATS check before you submit.</p>
+  <p style="margin:8px 0 0;font-size:15px;line-height:1.6;">To beat ATS resume screening, know this: most resumes never reach a human recruiter because <strong>Applicant Tracking System (ATS)</strong> software filters them out first. In 2026, the fix is not keyword-stuffing. It's a single-column, standard-header format the parser can actually read, language that matches the job posting's real requirements, and a free ATS check before you submit.</p>
   <p style="margin:8px 0 0;font-size:15px;line-height:1.6;"><strong>Claude</strong> and <strong>ChatGPT</strong> can help draft and tailor the content for free, but neither checks ATS-formatting compatibility on its own — that's a different, narrower job that tools like Jobscan and Teal are built around.</p>
 </div>
 
@@ -86,8 +86,8 @@ const post: BlogPost = {
 <p>For high-volume roles, they function as the actual first round of hiring, not an obstacle layered on top of it.</p>
 <p>The scale is the real driver here. Major employers report receiving dozens of applications per minute for competitive remote and high-demand roles. No recruiting team reads that volume manually.</p>
 <p>So software does the first pass: parsing each resume into structured fields, then ranking or filtering candidates before a human opens a single file.</p>
-<p>That's not inherently unfair — it's a scale problem being solved with software, the same way a search engine ranks pages instead of a person reading the entire internet.</p>
-<p>But it does mean something important. A resume that would read perfectly well to a hiring manager can still get filtered out if the parsing software can't extract it correctly, or if it never matches the terms the posting is being ranked against.</p>
+<p>That's not inherently unfair. It's a scale problem being solved with software, the same way a search engine ranks pages instead of a person reading the entire internet.</p>
+<p>But it does mean something important. A resume that would read perfectly well to a hiring manager can still get filtered out. That happens if the parsing software can't extract it correctly, or if it never matches the terms the posting is being ranked against.</p>
 
 <div style="overflow-x:auto;margin:24px 0;">
 <table style="width:100%;border-collapse:collapse;font-size:13px;">
@@ -140,11 +140,11 @@ const post: BlogPost = {
 
 <h2>How ATS software actually screens a resume in 2026</h2>
 <img src="https://images.unsplash.com/photo-1586769852351-8791d2bb43be?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A typewriter and printed paper, illustrating how mechanically an ATS parses a submitted document" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p>An ATS doesn't read a resume the way a person does. It parses the document into structured fields — name, dates, job titles, skills — then ranks or scores candidates against the job posting's requirements before a recruiter ever sees the file.</p>
+<p>An ATS doesn't read a resume the way a person does. It parses the document into structured fields: name, dates, job titles, skills. Then it ranks or scores candidates against the job posting's requirements before a recruiter ever sees the file.</p>
 <p>Where this gets genuinely different in 2026: older ATS platforms mostly worked as literal keyword scanners, matching exact words. That's where most of the internet's outdated "just repeat the job posting" advice comes from.</p>
 <p>Current-generation systems increasingly layer in natural-language processing, evaluating "skill clusters" and professional context rather than isolated word matches. A posting that emphasizes "team collaboration" might now be matched against phrases like "collaborated with cross-functional teams," not just the literal string "team collaboration."</p>
 <p>That shift cuts both ways. It means crude keyword-stuffing is a weaker strategy than it used to be, and can actively read as suspicious once a human does open the file.</p>
-<p>It also means something more useful: genuinely describing your real experience in language close to the posting's own terms — not copying it wholesale — is now a better-aligned strategy than it was a few years ago. The system increasingly rewards that instead of penalizing paraphrase.</p>
+<p>It also means something more useful. Genuinely describing your real experience in language close to the posting's own terms, not copying it wholesale, is now a better-aligned strategy than it was a few years ago. The system increasingly rewards that instead of penalizing paraphrase.</p>
 <p>One other 2026-specific wrinkle worth knowing: some systems now retain your profile in their database even after a rejection. A few also track "application behavior" — applying to many unrelated roles at the same company in a short window can flag a profile as low-intent.</p>
 <p>It's a reminder that ATS activity isn't a single pass/fail event; it's closer to an ongoing profile you're building with each application.</p>
 
@@ -152,16 +152,16 @@ const post: BlogPost = {
 <p>Independent ATS-testing data is remarkably consistent on what actually breaks parsing. None of these make a resume look bad to a human — most look fine, or even more polished. The problem is entirely on the software side:</p>
 <ul style="margin:8px 0 24px;padding-left:22px;line-height:1.8;">
   <li><strong>Multi-column layouts.</strong> Parsers generally read left-to-right, top-to-bottom, in a single stream. A two-column layout can scramble the order content gets extracted in, mixing your job titles with the wrong dates or descriptions.</li>
-  <li><strong>Text inside images, icons, or text boxes.</strong> If it isn't selectable, plain text, most parsers don't see it at all — including skill-icon graphics, styled headshots with embedded contact info, or text baked into a decorative header.</li>
+  <li><strong>Text inside images, icons, or text boxes.</strong> If it isn't selectable, plain text, most parsers don't see it at all. That includes skill-icon graphics, styled headshots with embedded contact info, or text baked into a decorative header.</li>
   <li><strong>Tables.</strong> Tables can misalign which field a piece of information is assigned to, especially for work-history entries that use a table to line up dates against responsibilities.</li>
   <li><strong>Contact info in a header or footer.</strong> Many parsers only read the document body, not header/footer regions — meaning your name, phone number, or email can simply be dropped from the parsed record.</li>
   <li><strong>Non-standard section titles.</strong> Creative section headers like "Where I've Been" instead of "Experience," or "My Toolkit" instead of "Skills," can fail to map to the fields the ATS is looking for.</li>
 </ul>
-<p>The pattern across all five: a plain, single-column resume with standard section headers is unglamorous, but it's the format every major ATS platform (Workday, Greenhouse, Taleo, iCIMS) is built to read correctly. Save visual differentiation for a portfolio site or LinkedIn profile, not the document doing the parsing-critical work.</p>
+<p>The pattern across all five: a plain, single-column resume with standard section headers is unglamorous. But it's the format every major ATS platform (Workday, Greenhouse, Taleo, iCIMS) is built to read correctly. Save visual differentiation for a portfolio site or LinkedIn profile, not the document doing the parsing-critical work.</p>
 
 <h2>Keyword matching without keyword-stuffing</h2>
 <img src="https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Someone typing at a keyboard while tailoring a resume for a specific job posting" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
-<p>The practical version of "match the keywords" that still works in 2026: read the job posting closely and note its exact terms for tools, skills, and qualifications — not a close synonym, the actual phrase it uses. If it says "stakeholder management," use that exact phrase somewhere your experience genuinely supports it, rather than only writing "worked with clients."</p>
+<p>The practical version of "match the keywords" that still works in 2026: read the job posting closely and note its exact terms for tools, skills, and qualifications. Use the actual phrase it uses, not a close synonym. If it says "stakeholder management," use that exact phrase somewhere your experience genuinely supports it, rather than only writing "worked with clients."</p>
 <p>Then embed that language inside a real, specific accomplishment, not a bare list. "Managed stakeholder relationships across three departments during a platform migration" does the matching work and reads as a real claim to a human reviewer.</p>
 <p>A bolted-on skills line that just repeats posting language with no supporting context is the pattern that both weaker parsing systems and any human reviewer tend to discount.</p>
 <p>One keyword each posting is likely to check that's easy to miss: required certifications, tools, or platform names, spelled exactly as the posting spells them. "PMP" and "Project Management Professional" can both be correct, but if the posting only uses one form, matching that exact form removes any parsing ambiguity.</p>
@@ -169,7 +169,7 @@ const post: BlogPost = {
 <h2>Free ways to check your resume before you hit submit</h2>
 <img src="https://images.unsplash.com/photo-1581462050168-00c97ee89d1f?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A laptop open to a resume-scanning tool before a job application is submitted" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />
 <p>Before paying for anything, there are several free checks worth running. <strong><a href="/tools/claude-ai/">Claude</a></strong> and <strong><a href="/tools/chatgpt/">ChatGPT</a></strong> are both genuinely useful, at no cost, for turning a weak bullet point into a specific, achievement-focused one, or explaining what a strong resume section actually contains.</p>
-<p>What neither does natively: check your finished resume against a specific job posting's parsed keywords, score formatting risk against a named ATS platform, or confirm your file parses the way it looks on screen. That's a narrower, more structured diagnostic — and it's the actual product a dedicated resume tool is built around.</p>
+<p>What neither does natively: check your finished resume against a specific job posting's parsed keywords. Neither scores formatting risk against a named ATS platform or confirms your file parses the way it looks on screen. That's a narrower, more structured diagnostic. It's the actual product a dedicated resume tool is built around.</p>
 <p><strong>Jobscan</strong> offers 5 free ATS match scans per month, checked against a specific job posting and, in some cases, a named ATS platform your target company may use. For most people applying to a handful of roles a week, that free allotment is enough without ever paying.</p>
 <div style="margin:14px 0 24px;">
   <!-- PLACEHOLDER: replace with confirmed/tracked Jobscan affiliate link — see file header note -->
@@ -206,13 +206,13 @@ const post: BlogPost = {
 <p>Getting past ATS screening is the first hurdle, not the whole job search. Once your resume is parsing cleanly and matching the roles you're targeting, the next practical step is usually interview readiness.</p>
 <p>See AI Nexus's <a href="/blog/best-ai-interview-prep-tools-2026/">Best AI Interview Prep Tools 2026</a> for tools that cover mock interviews and behavioral-question practice.</p>
 <p>If you're early in your search and still building out your target list, <a href="/blog/ai-tools-for-students-free-2026/">Best Free AI Tools for Students</a> covers relevant free tools for anyone job-hunting straight out of school.</p>
-<p>And if you're curious how the other side of this process works — what recruiters themselves are using to screen candidates — <a href="/blog/best-ai-recruitment-tools-2026/">Best AI Recruitment Tools 2026</a> covers that employer-side tooling.</p>
+<p>And if you're curious how the other side of this process works: <a href="/blog/best-ai-recruitment-tools-2026/">Best AI Recruitment Tools 2026</a> covers what recruiters themselves use to screen candidates, that employer-side tooling.</p>
 <p>If large enterprises with strict ATS platforms are your main target, Rezi's plain, single-column templates are built specifically to parse reliably across every major system.</p>
 <div style="margin:14px 0 24px;">
   <!-- PLACEHOLDER: replace with confirmed/tracked Rezi affiliate link — see file header note -->
   <a href="https://www.rezi.ai" target="_blank" rel="nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Rezi's ATS-safe templates →</a>
 </div>
-<p>The honest summary: there's no trick that reliably beats a modern ATS. The tools that actually work are the boring ones — a clean, parseable format, language that genuinely matches what the role is asking for, and a free check before you hit submit.</p>
+<p>The honest summary: there's no trick that reliably beats a modern ATS. The tools that actually work are the boring ones. Use a clean, parseable format, language that genuinely matches what the role is asking for, and a free check before you hit submit.</p>
 <p>Save the paid tools for once you've confirmed, specifically, which gap they're closing for you.</p>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “How to Beat ATS Resume Screening in 2026 (What Actually Works)”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   

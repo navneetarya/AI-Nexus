@@ -23,7 +23,7 @@ const post: BlogPost = {
   seoTitle: 'AI Tools ROI Calculator 2026: 5 Steps to Real Cost & Payback',
   metaDescription: 'What do AI tools actually cost your business in 2026? Cost breakdown by category, an ROI framework, hidden fees, and India INR pricing.',
   datePublished: '2026-06-27',
-  dateModified: '2026-08-22',
+  dateModified: '2026-10-26',
   author: 'Navneet Arya',
   category: 'Productivity',
   readTime: '12 min read',
@@ -185,8 +185,9 @@ const post: BlogPost = {
 
 <h3>AI Meeting Intelligence ($10–$30/user/month)</h3>
 <p>This is the highest-ROI category per dollar spent of any AI tool category in 2026. The calculation is simple: the average knowledge worker attends 5–8 meetings per week. Each meeting generates 30–60 minutes of post-meeting work: note consolidation, action item extraction, follow-up email drafting. An AI meeting tool eliminates almost all of that work.</p>
-<p>At $19/month for a <a href="/tools/fireflies/">Fireflies</a>.ai Pro plan: if you attend 8 meetings per week and save 40 minutes each, you save 53 hours/month of meeting admin.</p>
-<p>At a $50/hour effective rate, that is $2,650 in value for $19 in cost, a 13,847% ROI. This is not a rounding error. Meeting intelligence tools are genuinely the most underpriced AI category available to small businesses in 2026.</p>
+<p>At $10/month for a <a href="/tools/fireflies/">Fireflies</a>.ai Pro plan: if you attend 8 meetings per week and save 40 minutes each, you save 53 hours/month of meeting admin.</p>
+<p>At a $50/hour effective rate, that is $2,650 in value for $10 in cost, a 26,400% ROI. This is not a rounding error. Meeting intelligence tools are genuinely the most underpriced AI category available to small businesses in 2026.</p>
+<p><em>Prices verified October 2026 against each vendor's official pricing page.</em></p>
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['fireflies']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Fireflies.ai Free →</a>
 </div>

@@ -207,10 +207,12 @@ const post: BlogPost = {
   <li><strong>State the goal.</strong> Say whether the text should inform, persuade, or prompt a click.</li>
   <li><strong>Give the key points.</strong> List three facts or ideas you want included, so the tool does not invent its own.</li>
   <li><strong>Set the tone and length.</strong> For example, friendly and plain, about 150 words.</li>
+  <li><strong>Name what to avoid.</strong> If you don't want jargon, buzzwords, or a sales-y closing line, say so in the brief — it's far easier to prevent than to edit out afterward.</li>
 </ol>
 <h3>Edit Before You Publish</h3>
 <p>Treat every AI draft as a first draft. Read it aloud once. Cut sentences that say nothing. Replace vague claims with a specific example from your own experience. Check every number, name, and date against a trustworthy source, because writing tools can state wrong facts in a confident tone.</p>
 <p>Then run the edited text through Grammarly. The order matters: generate first, edit by hand second, proofread last. Skipping the middle step usually leaves text that reads smoothly but says little.</p>
+<p>A five-minute pass catches most of what matters: does the opening line say something specific, does every claim have a real source or example behind it, and would you send this draft to a client under your own name? If the answer to any of those is no, it needs another editing pass before it goes out.</p>
 
 <h2>The Recommended Stack for Beginners in 2026</h2>
 <p>Here's the exact stack worth starting with at a $0 budget:</p>

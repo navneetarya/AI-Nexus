@@ -38,7 +38,7 @@ const SECTIONS = [
   },
   {
     heading: 'Affiliate Partnerships',
-    body: 'AI Nexus only accepts direct affiliate programmes from tools that have been independently tested and meet our editorial standards. If you represent an AI tool and want to explore a partnership, send a brief overview of the tool and its programme details.',
+    body: 'AI Nexus only accepts direct affiliate programmes from tools that have been independently researched and meet our editorial standards. If you represent an AI tool and want to explore a partnership, send a brief overview of the tool and its programme details.',
   },
 ];
 

@@ -37,7 +37,7 @@ const post: BlogPost = {
   excerpt:
     'Gamma is the default AI presentation tool in 2026, but it is not the only option. Four alternatives compared that each fix a specific Gamma complaint — the watermark, the one-time credit cap, or content the AI invented — honest breakdown for 2026.',
   quickAnswer:
-    'Best Gamma AI alternatives in 2026: Pi (Presentation Intelligence) wins for turning existing documents into decks, accepting PDFs, Word files, PowerPoint, webpages and images; its Pro plan is $168/year (about $14/month), and its free plan is for judging output, since export requires a membership. Beautiful.ai wins for teams that need every deck to look consistent regardless of who built it. Canva AI wins if you already pay for Canva. NotebookLM wins if you want slides grounded in documents you actually uploaded, not AI-invented filler.',
+    'Best Gamma alternatives in 2026: Pi (Presentation Intelligence) wins for turning existing documents into decks — it accepts PDFs, Word, PowerPoint, webpages and images, with Pro at $168/year. Beautiful.ai wins for consistent team-wide design. Canva AI wins if you already pay for Canva. NotebookLM wins for slides grounded only in documents you actually uploaded.',
   myTake:
     "Navneet's take: Pi is the strongest first choice when you already have a document, PDF or webpage to turn into slides, because it accepts the widest range of source material. Its free plan lets you judge output, but export needs a paid membership. Beautiful.ai and NotebookLM aren't really Gamma replacements so much as tools that solve one thing Gamma does adequately at best: locked design consistency, and staying grounded in your own source material.",
   faqs: [
