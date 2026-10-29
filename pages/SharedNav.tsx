@@ -602,7 +602,7 @@ export function SharedNav({
           maxWidth: 1200, width: '100%', margin: '0 auto',
           padding: '0 20px', display: 'flex', alignItems: 'center', gap: 8,
         }}>
-          <img
+          <img loading="lazy"
             src="/author-avatar.webp"
             alt="Navneet Arya"
             width={20} height={20}

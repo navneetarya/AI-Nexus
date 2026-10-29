@@ -1069,7 +1069,7 @@ export function BlogPostPage({ post, navigate, isDark, toggleTheme }: BlogPostPa
           borderRadius: 12,
           marginTop: 52,
         }}>
-          <img
+          <img loading="lazy"
             src="/author-avatar.webp"
             alt={`${post.author} — AI tools reviewer and founder of AI Nexus`}
             width={48} height={48}

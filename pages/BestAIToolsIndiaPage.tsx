@@ -221,14 +221,14 @@ function ToolLogo({ slug, size = 36, name, color }: { slug: string; size?: numbe
 
   if (!localErr) {
     return (
-      <img src={`/logos/${slug}.png`} alt={name ?? slug} width={size} height={size}
+      <img loading="lazy" src={`/logos/${slug}.png`} alt={name ?? slug} width={size} height={size}
         style={{ borderRadius: r, objectFit: 'contain', display: 'block', background: '#fff' }}
         onError={() => setLocalErr(true)} />
     );
   }
   if (domain && !clearbitErr) {
     return (
-      <img src={`https://logo.clearbit.com/${domain}`} alt={name ?? slug} width={size} height={size}
+      <img loading="lazy" src={`https://logo.clearbit.com/${domain}`} alt={name ?? slug} width={size} height={size}
         style={{ borderRadius: r, objectFit: 'contain', display: 'block', background: '#fff' }}
         onError={() => setClearbitErr(true)} />
     );

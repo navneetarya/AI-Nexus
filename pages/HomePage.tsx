@@ -785,7 +785,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       <div style={{ background:C.a1card, borderBottom:`1px solid ${C.a1brd}` }}>
         <div style={{ maxWidth:1200, margin:'0 auto', padding:'12px 24px', display:'flex',
           alignItems:'center', justifyContent:'center', gap:12, flexWrap:'wrap' as const }}>
-          <img src="/author-photo.jpg" alt="Navneet Arya, AI tools researcher"
+          <img loading="lazy" src="/author-photo.jpg" alt="Navneet Arya, AI tools researcher"
             width={32} height={32}
             style={{ width:32, height:32, borderRadius:'50%', objectFit:'cover' as const,
               border:`2px solid ${C.a1}`, flexShrink:0 }} />

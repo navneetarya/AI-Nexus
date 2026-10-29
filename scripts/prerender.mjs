@@ -8989,6 +8989,10 @@ ${items}
   //   ✓ Conversational tone: "you", "your", "we"
   //   ✓ data-speakable attributes for SpeakableSpecification
   //   ✓ dateModified in <time> for freshness signal
+  // T8c: verified-pricing snapshot facts for the homepage table note (same source as /pricing-tracker/).
+  let homePricingToolCount = 0;
+  try { homePricingToolCount = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'pricing', 'latest.json'), 'utf8')).tools.length; } catch { /* keep 0 */ }
+  const homePricingDate = new Date(PAGE_LAST_UPDATED.pricingTracker + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   const homepageBodyContent = `<main role="main" id="main-content" aria-label="AI Tools Research &amp; Reviews" style="font-family:system-ui,sans-serif">
   <article itemscope itemtype="https://schema.org/Article" style="max-width:800px;margin:0 auto;padding:24px 16px">
 
@@ -9059,6 +9063,7 @@ ${items}
         <li><a href="#ai-tools-comparison" style="color:#0D9488">How Do Popular AI Tools Compare?</a></li>
         <li><a href="#ai-tool-by-use-case" style="color:#0D9488">Which AI Tool Is Best for Your Use Case?</a></li>
         <li><a href="#how-to-choose-ai-tool" style="color:#0D9488">How to Choose the Right AI Tool (3 Steps)</a></li>
+        <li><a href="#when-not-to-use-ai-tools" style="color:#0D9488">When NOT to Use AI Tools</a></li>
         <li><a href="#compare-tools" style="color:#0D9488">Compare AI Tools Side by Side</a></li>
         <li><a href="#free-vs-paid-perspectives" style="color:#0D9488">Free vs. Paid AI Tools: Two Perspectives</a></li>
         <li><a href="#verdict" style="color:#0D9488">Our Verdict: Final Recommendation</a></li>
@@ -9149,6 +9154,7 @@ ${items}
         </table>
       </div>
       <p style="font-size:.8rem;color:#888">Pricing verified against official pages. Last updated: <time datetime="${PAGE_LAST_UPDATED.home}">${displayDate}</time></p>
+      ${homePricingToolCount > 0 ? `<p style="font-size:.9rem;line-height:1.7;color:#444;margin-top:12px">Need more than six rows? The <a href="${SITE}/pricing-tracker/" style="color:#0D9488;font-weight:500">AI Tool Pricing Tracker</a> is a sortable table of verified prices for ${homePricingToolCount} tools, each checked against the vendor's own pricing page (snapshot dated <time datetime="${PAGE_LAST_UPDATED.pricingTracker}">${homePricingDate}</time>). A value shown as "Not verified" means we could not confirm it from an official page, not that the tool is free.</p>` : ''}
     </section>
 
     <!-- ── Section 3: Best for use case (dl) ────────────────────────── -->
@@ -9180,10 +9186,34 @@ ${items}
         <li id="step-2" style="margin-bottom:8px"><strong>Test free plans before paying.</strong> Every major AI tool has a functional free tier. Run 2–3 tools on a real task from your actual workflow before purchasing — not a demo task. Grammarly, Leonardo.ai, and Rytr all have no-credit-card free plans you can test today.</li>
         <li id="step-3" style="margin-bottom:8px"><strong>Check what's behind the paywall.</strong> Most useful AI features cost $9–$20/month. Before committing, confirm the features you need are not locked behind an enterprise plan ($60+/month). Our reviews document exactly which features are free vs. paid for every tool.</li>
       </ol>
+      <h3 id="decision-framework" style="font-size:1.05rem;margin:16px 0 6px;color:#0F1C1A">A Four-Question Decision Framework</h3>
+      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:8px">When two tools both fit your use case, these four questions usually separate them:</p>
+      <ol style="margin:0 0 14px;padding-left:22px;line-height:1.8;font-size:.9rem;color:#444">
+        <li id="framework-1" style="margin-bottom:6px"><strong>How often will you use it?</strong> Occasional use usually fits a free tier; daily use is where plan limits (credits, message caps, character quotas) start to matter. Compare the free allowance in each review against your real weekly volume.</li>
+        <li id="framework-2" style="margin-bottom:6px"><strong>What is your monthly price ceiling?</strong> Decide the number before you look at plans. Then check which features sit at or below it on the <a href="${SITE}/pricing-tracker/" style="color:#0D9488">pricing tracker</a> or the tool's own pricing page.</li>
+        <li id="framework-3" style="margin-bottom:6px"><strong>What data will you put into it?</strong> If the work involves client, employee, or otherwise confidential material, read the vendor's data-use and retention terms first, and check whether they differ between free and paid plans.</li>
+        <li id="framework-4" style="margin-bottom:6px"><strong>How hard is it to leave?</strong> A tool that only works inside its own editor, or that holds your content in a format you cannot export, costs more to switch away from later. Prefer tools whose output you can take elsewhere.</li>
+      </ol>
       <p style="font-size:.875rem;color:#666">
         See full evaluation criteria at <a href="${SITE}/methodology/" style="color:#0D9488">our Methodology page</a>, aligned with
         <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Google's helpful content guidelines</a>.
       </p>
+    </section>
+
+    <!-- ── Section 4b: When NOT to use AI tools (balanced-expertise section) ── -->
+    <section id="when-not-to-use-ai-tools" style="margin-bottom:28px">
+      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">When NOT to Use AI Tools</h2>
+      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>Skip or limit AI tools when a wrong answer is costly, the data is confidential, or the task is faster and better done by hand.</strong></p>
+      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:10px">AI tools are strong at drafting, summarising, and speeding up repetitive work. They are weaker where accuracy, accountability, or your own voice is the whole point. The cases below are where a human-only or human-led process is usually the safer choice.</p>
+      <ul style="margin:0 0 14px;padding-left:22px;line-height:1.8;font-size:.9rem;color:#444">
+        <li style="margin-bottom:6px"><strong>High-stakes advice (legal, medical, financial, safety).</strong> AI output can read confidently and still be wrong. If an error could harm someone or cost real money, treat the tool as a drafting aid at most and have a qualified person review the result.</li>
+        <li style="margin-bottom:6px"><strong>Confidential or regulated data.</strong> Do not paste client, employee, or personal data into a tool until you have read its data-use and retention terms for your specific plan. When in doubt, leave the data out.</li>
+        <li style="margin-bottom:6px"><strong>Work you cannot verify.</strong> If you do not know the subject well enough to spot a mistake, you cannot tell whether the output is good. Facts, figures, citations, and code behaviour all need checking against a primary source.</li>
+        <li style="margin-bottom:6px"><strong>Small one-off edits.</strong> Setting up a prompt, reviewing the result, and correcting it can take longer than fixing a sentence or a cell yourself.</li>
+        <li style="margin-bottom:6px"><strong>Writing that has to sound like you, or show real experience.</strong> Personal stories, opinions, and first-hand expertise are what readers value in that kind of writing, and a generic draft tends to dilute them.</li>
+        <li style="margin-bottom:6px"><strong>Rules that forbid it.</strong> Some schools, employers, publishers, and clients restrict or require disclosure of AI use. Check the policy before you rely on a tool.</li>
+      </ul>
+      <p style="font-size:.875rem;color:#666">Each of our <a href="${SITE}/tools/grammarly/" style="color:#0D9488">tool reviews</a> lists cons and limits alongside the pros, so you can see where a specific tool falls short before you rely on it.</p>
     </section>
 
     <!-- ── Section 5: Compare tools ──────────────────────────────────── -->

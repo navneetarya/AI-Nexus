@@ -111,7 +111,7 @@ function ToolLogo({ slug, size = 32, name, color }: { slug: string; size?: numbe
 
   if (!localErr) {
     return (
-      <img
+      <img loading="lazy"
         src={`/logos/${slug}.png`}
         alt={name ?? slug}
         width={size} height={size}
@@ -122,7 +122,7 @@ function ToolLogo({ slug, size = 32, name, color }: { slug: string; size?: numbe
   }
   if (domain && !clearbitErr) {
     return (
-      <img
+      <img loading="lazy"
         src={`https://logo.clearbit.com/${domain}`}
         alt={name ?? slug}
         width={size} height={size}

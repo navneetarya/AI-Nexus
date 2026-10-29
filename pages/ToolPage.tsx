@@ -2706,7 +2706,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
               {sectionTitle('My honest take')}
               {/* Author byline */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 16px', background: cardBg, borderRadius: 12, border: `1px solid ${cardBrd}`, marginBottom: 12 }}>
-                <img src="/author-photo.jpg" alt="Navneet Arya, independent AI researcher and founder of AI Nexus" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' as const, flexShrink: 0 }} />
+                <img loading="lazy" src="/author-photo.jpg" alt="Navneet Arya, independent AI researcher and founder of AI Nexus" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' as const, flexShrink: 0 }} />
                 <div>
                   <div style={{ fontSize: 13, fontWeight: 600, color: C.txt }}>{SITE_CONFIG.authorName}</div>
                   <div style={{ fontSize: 11, color: C.mut2 }}>{SITE_CONFIG.authorExperience} · researched {tool.name} · {content.timeUsed}</div>
@@ -2828,7 +2828,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
           >
             {/* Section header with research attribution */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
-              <img
+              <img loading="lazy"
                 src="/author-photo.jpg"
                 alt="Navneet Arya — AI tools researcher"
                 width={38} height={38}

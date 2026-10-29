@@ -19,18 +19,35 @@ import type { Tool } from '../types';
 
 type WebMCPToolResult = { content: Array<{ type: 'text'; text: string }> };
 
+type WebMCPToolDef = {
+  name: string;
+  description: string;
+  inputSchema: Record<string, unknown>;
+  annotations?: Record<string, unknown>;
+  execute: (input: any) => Promise<WebMCPToolResult> | WebMCPToolResult;
+};
+
+type ModelContextLike = {
+  registerTool: (tool: WebMCPToolDef) => unknown;
+};
+
 declare global {
   interface Navigator {
-    modelContext?: {
-      registerTool: (tool: {
-        name: string;
-        description: string;
-        inputSchema: Record<string, unknown>;
-        annotations?: Record<string, unknown>;
-        execute: (input: any) => Promise<WebMCPToolResult> | WebMCPToolResult;
-      }) => void;
-    };
+    modelContext?: ModelContextLike;
   }
+  interface Document {
+    modelContext?: ModelContextLike;
+  }
+}
+
+/**
+ * Dual feature detection: prefer document.modelContext (spec entry point),
+ * fall back to navigator.modelContext (older implementations).
+ */
+function getModelContext(): ModelContextLike | null {
+  if (typeof document !== 'undefined' && document.modelContext) return document.modelContext;
+  if (typeof navigator !== 'undefined' && navigator.modelContext) return navigator.modelContext;
+  return null;
 }
 
 function toSummary(tool: Tool) {
@@ -48,14 +65,27 @@ function toSummary(tool: Tool) {
 }
 
 export async function registerWebMCPTools(): Promise<void> {
-  if (typeof navigator === 'undefined' || !('modelContext' in navigator) || !navigator.modelContext) {
+  if (!getModelContext()) {
     return;
   }
   // Dynamic import: only browsers that actually support WebMCP pay the cost
   // of loading the tools dataset here — everyone else never fetches it via
   // this path (constants.ts is still lazy-loaded elsewhere as normal).
   const { TOOLS } = await import('../constants');
-  const modelContext = navigator.modelContext;
+  // Re-resolve after the await in case the API appeared meanwhile.
+  const mc = getModelContext();
+  if (!mc) return;
+  // registerTool may throw synchronously (e.g. duplicate name) or return a
+  // rejecting promise in some builds — swallow both so it never breaks the app.
+  const modelContext = {
+    registerTool: (tool: WebMCPToolDef) => {
+      try {
+        Promise.resolve(mc.registerTool(tool)).catch(() => {});
+      } catch {
+        /* ignore */
+      }
+    },
+  };
 
   modelContext.registerTool({
     name: 'search_ai_tools',

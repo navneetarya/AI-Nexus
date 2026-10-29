@@ -278,7 +278,7 @@ function ToolLogo({ tool, size = 40 }: { tool: Tool; size?: number }) {
 
   if (!err) {
     return (
-      <img
+      <img loading="lazy"
         src={`/logos/${tool.slug}.png`}
         alt={tool.name}
         width={size} height={size}
