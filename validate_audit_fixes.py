@@ -200,8 +200,8 @@ for slug in ["grammarly", "rytr", "cursor"]:
           "Last verified" in tool_html,
           f"Add lastTestedHtml injection to toolBodyHtml in prerender.mjs")
 
-# H-05: HowTo schema on how-to posts (schema already handled via howToSteps field)
-print(f"  {INFO}  [H-05] HowTo schema: supported when post.howToSteps is set in BLOG_POSTS")
+# H-05: HowTo schema intentionally removed (Google deprecated HowTo rich results in Sept 2023)
+print(f"  {INFO}  [H-05] HowTo schema: intentionally not emitted (deprecated by Google)")
 
 # H-06: India hreflang on tool pages
 for slug in ["grammarly", "writesonic", "windsurf", "cursor"]:

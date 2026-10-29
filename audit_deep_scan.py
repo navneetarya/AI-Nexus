@@ -453,8 +453,10 @@ def scan_structured_data(prerender_src: str, index_src: str):
                   str(PRERENDER), None, "Add SpeakableSpecification to key pages.")
 
     # ── HowTo schema ──────────────────────────────────────────────────────────
-    if "HowTo" in prerender_src:
-        print("    ✓  HowTo schema present (enables step rich results)")
+    # Google deprecated HowTo rich results (Sept 2023). HowTo JSON-LD was removed
+    # from the site on purpose, so it is no longer expected. Flag only if it returns.
+    if "'@type': 'HowTo'" in prerender_src:
+        print("    ⚠  HowTo JSON-LD found in prerender.mjs (deprecated by Google, no SERP benefit)")
     
     # ── ItemList schema ───────────────────────────────────────────────────────
     if "ItemList" in prerender_src:
@@ -1007,15 +1009,9 @@ def scan_aeo(prerender_src: str, index_src: str):
     tool_faq_count = len(re.findall(r"TOOL_FAQS\[", prerender_src))
     print(f"    FAQ schemas injected: {faq_count} references, {tool_faq_count} tool FAQ injections")
     
-    # ── HowTo content (step-by-step = AEO gold) ──────────────────────────────
-    howto_count = prerender_src.count("HowTo")
-    if howto_count > 0:
-        print(f"    ✓  HowTo schema ({howto_count} references)")
-    else:
-        add_issue(Severity.LOW, Category.AEO, "No HowTo schema",
-                  "HowTo rich results get high click-through in SERPs and are "
-                  "frequently cited by AI answer engines.",
-                  str(PRERENDER), None, "Add HowTo schema to tutorial/guide blog posts.")
+    # ── HowTo schema (deprecated) ────────────────────────────────────────────
+    # HowTo rich results were retired by Google in Sept 2023; absence is expected.
+    print("    ℹ  HowTo schema intentionally not used (deprecated by Google)")
 
     # ── Content structure for AI extraction ───────────────────────────────────
     # Check for pre-rendered body content (critical for AI crawlers that don't run JS)

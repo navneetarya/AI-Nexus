@@ -1,5 +1,4 @@
 import React from 'react';
-import { SITE_CONFIG } from '../constants';
 import { SharedNav } from './SharedNav';
 
 const C = {
@@ -50,33 +49,8 @@ export function HowWeAnalyzePage({ navigate, isDark, toggleTheme }: { navigate: 
     },
   ];
 
-  const howToSchema = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "How AI Nexus Analyzes AI Tools — 6-Step Research Process",
-    "url": `${SITE_CONFIG.siteUrl}/how-we-analyze-ai-tools/`,
-    "description": "The 6-step process Navneet Arya uses to independently research, verify, and compare AI tools before publishing reviews.",
-    "author": {
-      "@type": "Person",
-      "@id": `${SITE_CONFIG.siteUrl}/about#author`,
-      "name": SITE_CONFIG.authorName
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "AI Nexus",
-      "url": SITE_CONFIG.siteUrl
-    },
-    "step": steps.map(s => ({
-      "@type": "HowToStep",
-      "position": s.position,
-      "name": s.name,
-      "text": s.text
-    }))
-  };
-
   return (
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: "'Inter', system-ui, sans-serif", color: C.txt }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="methodology" />
 
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '48px 28px 80px' }}>

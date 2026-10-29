@@ -1282,7 +1282,7 @@ const TOOLS = [
 
 // ── Tool FAQs (mirrors TOOL_FAQS in constants.ts) ────────────────────────────
 // These are injected as FAQPage JSON-LD into each tool page's static HTML,
-// giving Google the data it needs to show FAQ rich results in SERPs.
+// giving search and AI engines clean Q&A data (Google retired FAQ rich results on 2026-05-07; the markup is still valid and used for page understanding).
 const TOOL_FAQS = {
   rytr: [
     { q: 'Is Rytr really free?', a: "Yes. Rytr's free plan gives you 10,000 characters per month — enough to write 3–4 short blog posts or 20+ social media captions. No credit card required to sign up." },
@@ -1326,7 +1326,7 @@ const TOOL_FAQS = {
     { q: 'Is Grammarly Premium worth it?', a: "Grammarly Premium at $12/month is worth it if you write professionally at significant volume. The tone detector, full-sentence clarity rewrites, and plagiarism checker meaningfully reduce editing time for emails, reports, and long-form content. The free plan is sufficient for casual writing." },
     { q: 'Does Grammarly work in Microsoft Word and Google Docs?', a: "Yes — Grammarly has native integrations for both Microsoft Word (via a desktop add-in) and Google Docs (via Chrome extension). Corrections appear as underlines in real time, exactly like the built-in spell-checker but significantly more accurate and detailed." },
   ],
-  // W1-T2: ElevenLabs FAQs — enables FAQ rich results for "elevenlabs review" (1,600/mo)
+  // W1-T2: ElevenLabs FAQs — FAQ content for "elevenlabs review" (no SERP rich result since 2026-05-07) (1,600/mo)
   elevenlabs: [
     { q: 'Is ElevenLabs free to use?', a: "Yes — ElevenLabs' free plan gives 10,000 credits per month (about 10,000 characters of standard text-to-speech, roughly 7–8 minutes of audio) with access to pre-made voices. The Starter plan at $6/month ($5/month billed annually) triples the monthly allowance to 30,000 credits and adds commercial use rights." },
     { q: 'How realistic are ElevenLabs voices?', a: "ElevenLabs consistently ranks as the most realistic AI voice generator available. In blind listening tests, the premium voices are regularly mistaken for real human recordings. The quality gap between ElevenLabs and other tools is significant — particularly for emotional range and natural pacing." },
@@ -1334,7 +1334,7 @@ const TOOL_FAQS = {
     { q: 'Can I use ElevenLabs voices commercially?', a: "Commercial use requires the Starter plan ($5/month) or above. The free tier is for personal and non-commercial use only. All paid plans include a commercial licence for content monetised on YouTube, sold as products, or used in client work." },
     { q: 'How does ElevenLabs compare to Murf AI?', a: "ElevenLabs produces better-sounding voices, especially for voice cloning and emotional speech. Murf AI has a more polished production studio with video sync and background music built in. If pure voice quality is your priority, ElevenLabs wins. If you need a full voiceover production workflow in one app, Murf is more practical." },
   ],
-  // W1-T4: Descript FAQs — enables FAQ rich results for "descript review" (1,200/mo)
+  // W1-T4: Descript FAQs — FAQ content for "descript review" (no SERP rich result since 2026-05-07) (1,200/mo)
   descript: [
     { q: 'What makes Descript different from other audio editors?', a: "Descript uses a text-based editing model — you edit your recording by editing the transcript. Delete a sentence in the text and the audio disappears. This is fundamentally different from traditional timeline editors and is significantly faster for podcasters and video creators who think in words, not waveforms." },
     { q: 'Is Descript free?', a: "Yes — Descript has a free plan that includes 60 media minutes per month and 100 one-time AI credits. The Hobbyist plan at $16/month billed annually adds 1080p watermark-free export, 10 media hours and 400 AI credits per month." },
@@ -1342,7 +1342,7 @@ const TOOL_FAQS = {
     { q: 'What is Descript Overdub?', a: "Overdub is Descript's AI voice cloning feature. Record 10 minutes of training audio, wait 30 minutes for processing, and you can then type corrections that Descript renders in your cloned voice. It's used to fix mispronounced words or stumbled lines without re-recording the entire segment. Available on the Creator plan ($24/month)." },
     { q: 'Descript vs Podcastle — which Should I use?', a: "Descript is better for editing-heavy workflows — long-form podcast episodes, video content, and anything where you'll spend significant time removing errors and restructuring content. Podcastle is better for recording remote guests in high quality with minimal editing needed. For simple recording and publish, Podcastle. For complex editing, Descript." },
   ],
-  // W2-T1: Frase FAQs — enables FAQ rich results for "frase review" (1,200/mo, KD 18)
+  // W2-T1: Frase FAQs — FAQ content for "frase review" (no SERP rich result since 2026-05-07) (1,200/mo, KD 18)
   frase: [
     { q: 'Is Frase worth it in 2026?', a: "Yes — if ranking on Google is your primary content goal. Frase analyses the top 20 results for any keyword and generates a data-driven content brief in 30 seconds. The Content Score feature tells you exactly what topics you're missing. At $15/month for the Solo plan (4 documents/month), it pays for itself if even one article ranks and drives traffic." },
     { q: 'Frase vs Surfer SEO — which is better?', a: "Both do content optimisation but Frase is stronger on brief-building and research; Surfer SEO is stronger on real-time keyword density analysis during writing. For solo creators, Frase is the better starting point. For agencies managing multiple client sites, Surfer SEO's workflow is more suited to team use." },
@@ -1351,7 +1351,7 @@ const TOOL_FAQS = {
     { q: 'Does Frase work for non-English content?', a: "Frase's SERP analysis works for any language Google supports — it pulls the top results regardless of language. However, the AI writing features produce the best output in English. For non-English SEO content, use Frase for the brief and competitor analysis, then write the content manually or with a multilingual tool like Writesonic." },
   ],
 
-  // W2-T11: Murf AI FAQs — enables FAQ rich results for "murf ai review" (1,800/mo)
+  // W2-T11: Murf AI FAQs — FAQ content for "murf ai review" (no SERP rich result since 2026-05-07) (1,800/mo)
   'murf-ai': [
     { q: 'Is Murf AI free?', a: "Yes — Murf AI has a free plan that includes 10 minutes of voiceover per month with a watermark on exports. The free tier is sufficient for testing voice quality and the interface, but not for production or commercial use. Commercial-use voiceover without watermarks requires the Creator plan at $19/month." },
     { q: 'Murf AI vs ElevenLabs — which is better?', a: "They excel in different areas. Murf AI is better for structured production workflows — it has a polished studio interface, video timeline sync, and 200+ studio-recorded voices ideal for eLearning and corporate narration. ElevenLabs is better for voice cloning (creating audio in a specific person's voice) and has a more generous free tier (10,000 credits/month vs Murf's 10 minutes). For professional studio-quality voiceovers, choose Murf. For custom voice cloning, choose ElevenLabs." },
@@ -1359,7 +1359,7 @@ const TOOL_FAQS = {
     { q: 'What languages does Murf AI support?', a: "Murf AI supports 35+ languages including English (US, UK, Australian, and Indian accents), Hindi, Spanish, French, German, Italian, Portuguese, Arabic, Chinese, Japanese, and Korean. The Indian English accent quality is notably strong — one of the best available for creators targeting Indian audiences." },
   ],
 
-  // W2-T11: Canva AI FAQs — enables FAQ rich results for "canva ai review" (2,400/mo)
+  // W2-T11: Canva AI FAQs — FAQ content for "canva ai review" (no SERP rich result since 2026-05-07) (2,400/mo)
   'canva-ai': [
     { q: 'Is Canva AI free?', a: "Yes — Canva's free plan includes AI features like Magic Write (text generation), basic text-to-image generation with a monthly credit allowance, and one-click background removal. The free plan supports 250,000+ templates and works without a credit card. Canva Pro at $15/month adds unlimited AI credits, Magic Resize across all formats, 1TB storage, and the full Brand Kit." },
     { q: 'What can Canva AI do?', a: "Canva AI includes: Magic Write (generate captions, headlines, and copy directly in the canvas), text-to-image generation via Dream Lab, background removal and Magic Eraser (Pro), Magic Resize to convert one design into every platform format in one click (Pro), and AI-powered design suggestions. It covers design, copywriting, and image generation in a single editor — reducing the need for separate tools." },
@@ -1367,7 +1367,7 @@ const TOOL_FAQS = {
     { q: 'Is Canva Pro worth it?', a: "Canva Pro at $15/month is worth it when you regularly create content for multiple platforms. Magic Resize alone pays for the subscription — resizing one design for Instagram, LinkedIn, Pinterest, and Twitter simultaneously instead of manually adjusting 4 times saves significant time per content session. The Brand Kit (custom fonts, colours, logos applied across all templates) is essential for any consistent brand presence." },
   ],
 
-  // W2-T11: Notion AI FAQs — enables FAQ rich results for "notion ai review" (2,100/mo)
+  // W2-T11: Notion AI FAQs — FAQ content for "notion ai review" (no SERP rich result since 2026-05-07) (2,100/mo)
   'notion-ai': [
     { q: 'Is Notion AI worth it?', a: "For daily Notion users who write 5,000+ words per week in their workspace, yes. The $10/month add-on gives context-aware AI generation that understands your existing documents, databases, and notes — unlike a standalone AI writer that needs your brand voice re-explained every session. For light Notion users or teams primarily needing external content creation, ChatGPT or Rytr are better value." },
     { q: 'What does Notion AI actually do?', a: "Notion AI writes, edits, and summarises content directly inside your Notion workspace. Key features: AI writing assistance for any text block (rewrite, expand, shorten, fix tone), automatic summarisation of long documents and meeting notes, Q&A against your workspace ('What did we decide in last week's meeting?'), and autofill in database properties to generate content from existing data." },
@@ -1375,7 +1375,7 @@ const TOOL_FAQS = {
     { q: 'Can Notion AI summarise long documents?', a: "Yes — Notion AI's summarisation is one of its strongest features. Open any long document or meeting transcript in Notion, click the AI button, and select 'Summarise'. It produces a bullet-point summary of key decisions, actions, and themes in seconds. For teams running long meetings with shared Notion notes, this feature alone saves 10–15 minutes per meeting." },
   ],
 
-  // W2-T11: Perplexity FAQs — enables FAQ rich results for "perplexity review" (1,900/mo)
+  // W2-T11: Perplexity FAQs — FAQ content for "perplexity review" (no SERP rich result since 2026-05-07) (1,900/mo)
   perplexity: [
     { q: 'Is Perplexity AI free?', a: "Yes — Perplexity offers a permanent free plan with unlimited standard searches and no credit card required. The free tier uses Perplexity's own AI model and handles most everyday research and fact-finding tasks well. Perplexity Pro ($20/month) adds access to GPT-4o, Claude 3.5, and Gemini Ultra for 300 Pro searches per day, plus Spaces for document-based research." },
     { q: 'Perplexity vs Google — which is better?', a: "Perplexity is better when you need a direct, synthesised answer with cited sources — it replaces reading 6–8 browser tabs with one clearly cited paragraph. Google is better for finding specific websites, personalised shopping results, and local recommendations. For research and fact-finding, Perplexity saves significant time. For discovery and navigation, Google is still the better tool." },
@@ -1383,7 +1383,7 @@ const TOOL_FAQS = {
     { q: 'What is Perplexity Pro and is it worth it?', a: "Perplexity Pro ($20/month) gives access to GPT-4o, Claude 3.5, and Gemini Ultra for 300 high-quality searches per day, plus Spaces (persistent research environments with uploaded documents). It's worth it for professionals who conduct research daily and need the best available AI models for complex analytical questions. For casual users searching a few times per day, the free standard model is sufficient." },
   ],
 
-  // W2-T11: PhotoRoom FAQs — enables FAQ rich results for "photoroom review" (1,400/mo)
+  // W2-T11: PhotoRoom FAQs — FAQ content for "photoroom review" (no SERP rich result since 2026-05-07) (1,400/mo)
   photoroom: [
     { q: 'Is PhotoRoom free to use?', a: "Yes — PhotoRoom has a free plan for both the web app and mobile app. The free tier adds a PhotoRoom watermark to exported images. The Pro plan at $9.99/month removes watermarks, adds AI background generation, shadow effects, batch processing for multiple images simultaneously, and higher export resolution. For occasional one-off background removals, the free plan works. For e-commerce sellers processing images regularly, Pro is worth it." },
     { q: 'How accurate is PhotoRoom background removal?', a: "PhotoRoom is consistently more accurate than most competing tools, particularly on complex edges like hair, transparent objects, and product photography with fine details. In comparative tests across product photos, PhotoRoom outperforms basic tools like Remove.bg for complex backgrounds. Hair and fine detail edges are handled well in most lighting conditions." },
@@ -1391,7 +1391,7 @@ const TOOL_FAQS = {
     { q: 'Is PhotoRoom good for e-commerce product photos?', a: "PhotoRoom is specifically designed for e-commerce product photography and is used by over 150 million people for exactly this use case. It removes backgrounds, generates AI replacement backgrounds (white studio, lifestyle scenes, gradients), and adds professional shadows — turning basic smartphone product photos into professional-quality catalogue images. Indian sellers on Flipkart, Meesho, and Amazon commonly use it for this workflow." },
   ],
 
-  // W2-T11: Opus Clip FAQs — enables FAQ rich results for "opus clip review" (1,100/mo)
+  // W2-T11: Opus Clip FAQs — FAQ content for "opus clip review" (no SERP rich result since 2026-05-07) (1,100/mo)
   'opus-clip': [
     { q: 'Is Opus Clip free?', a: "Yes — Opus Clip has a free plan that includes 60 minutes of video processing per month. This is enough to test the tool properly and repurpose 1–2 long-form videos per month. Paid plans start at $19/month for 300 minutes of processing, no watermark, higher virality score accuracy, and priority rendering." },
     { q: 'How does Opus Clip choose which clips to make?', a: "Opus Clip's AI analyses the transcript and visual content of your video to identify the most engaging 30–90 second moments. It uses a proprietary 'virality score' that predicts engagement based on hook strength, pacing, emotional peaks, and topic clarity. Higher-scoring clips are prioritised. In practice, about 60–70% of suggested clips are genuinely strong; the rest need manual review." },
@@ -2988,23 +2988,8 @@ function speakableSchema(canonical, cssSelectors) {
   };
 }
 
-// FIX 8 (AEO-Critical): HowTo schema — enables numbered step rich results in Google
-function howToSchema({ title, description, canonical, steps }) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: title,
-    description,
-    url: canonical,
-    step: steps.map((s, i) => ({
-      '@type': 'HowToStep',
-      position: i + 1,
-      name: s.name,
-      text: s.text,
-      url: `${canonical}#step-${i + 1}`,
-    })),
-  };
-}
+// NOTE: HowTo JSON-LD intentionally removed. Google deprecated HowTo rich results
+// (Sept 2023); the markup has no effect in Google Search. Step content stays as visible HTML.
 
 // FIX 11 (AEO-Medium): ItemList schema — enables sitelinks/carousel results in Google
 function itemListSchema({ name, url, items }) {
@@ -6753,7 +6738,7 @@ for (const tool of TOOLS) {
     },
   ];
 
-  // Inject FAQPage schema if Q&As exist for this tool — enables FAQ rich results in SERPs
+  // Inject FAQPage schema if Q&As exist for this tool — FAQ rich results were retired by Google (2026-05-07); markup kept for page understanding / AI citation
   if (TOOL_FAQS[tool.slug] && TOOL_FAQS[tool.slug].length > 0) {
     schemas.push(faqSchema(TOOL_FAQS[tool.slug]));
   }
@@ -7675,10 +7660,6 @@ for (const post of BLOG_POSTS) {
     // FIX 4 (GEO-Critical): Speakable — marks excerpt/intro for AI engine citation
     speakableSchema(canonical, ['h1', '[data-speakable="quick-answer"]', '.post-excerpt', 'h2:first-of-type']),
     ...(post.faqs.length > 0 ? [faqSchema(post.faqs)] : []),
-    // FIX 8 (AEO-Critical): HowTo schema — numbered step rich results for how-to posts
-    ...(post.slug.startsWith('how-to-') && post.howToSteps?.length
-      ? [howToSchema({ title: post.title, description: post.metaDescription, canonical, steps: post.howToSteps })]
-      : []),
     // TASK 1 (AEO-Critical): ItemList schema for best-* posts.
     // Makes each ranked tool's position + name machine-readable for Google AIO,
     // Perplexity, and ChatGPT Search snippet extraction.
@@ -8861,7 +8842,7 @@ ${items}
 
 // ── Homepage FAQPage schema injection ─────────────────────────────────────────
 // The homepage dist/index.html is the Vite build output — inject FAQPage schema
-// so Google shows FAQ rich results for "best AI tools" homepage queries.
+// for page understanding and AI-answer citation (Google no longer shows FAQ rich results).
 {
   const homepagePath = path.join(DIST, 'index.html');
   let homeHtml = fs.readFileSync(homepagePath, 'utf-8');
@@ -8964,35 +8945,6 @@ ${items}
     },
   }, null, 2);
 
-  // ── GEO Fix (Task 2): HowTo schema — rebuilt via the shared howToSchema()
-  // helper (same builder used on tool pages — see "FIX 8 (AEO-Critical)"
-  // above) instead of a one-off inline object. The inline version was
-  // missing the per-step `url` anchor that howToSchema() always adds
-  // (`${canonical}#step-${i+1}`), which is why some structured-data
-  // validators didn't recognize it as a complete HowTo node. Step anchors
-  // below match `id="step-1/2/3"` added to the <ol> in the homepage body's
-  // "How to Choose the Right AI Tool" section.
-  // Matches that section; resolves "No HowTo Schema" GEO audit failure.
-  const homepageHowToSchema = JSON.stringify(howToSchema({
-    title: 'How to Choose the Right AI Tool in 2026',
-    description: 'A 3-step guide to selecting the best AI tool for your specific workflow and budget.',
-    canonical: `${SITE}/`,
-    steps: [
-      {
-        name: 'Identify Your Primary Use Case',
-        text: 'Decide whether you need writing, image generation, video, coding, or productivity tools. Mixing use cases into one tool rarely delivers the best result.',
-      },
-      {
-        name: 'Test Free Plans Before Paying',
-        text: 'Every major AI tool offers a functional free tier. Test 2–3 tools on a real task before purchasing. Grammarly, Leonardo.ai, and Rytr all have no-credit-card free plans.',
-      },
-      {
-        name: 'Check the Pricing Ceiling',
-        text: 'Most useful AI features cost $9–$20/month. Confirm the features you actually need are not locked behind an enterprise plan before committing to a free trial.',
-      },
-    ],
-  }), null, 2);
-
   // GEO Quick Win: Article schema — the audit flags the homepage as missing
   // Article/BlogPosting schema entirely (WebPage schema alone doesn't satisfy this
   // check). Homepage bypasses buildPage()'s auto-inject (it patches dist/index.html
@@ -9005,7 +8957,7 @@ ${items}
     dateModified: PAGE_LAST_UPDATED.home,
   }), null, 2);
 
-  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageWebPageSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageBreadcrumbSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageSpeakableSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageHowToSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageArticleSchema}\n    </script>`;
+  const faqScriptTag = `\n    <script type="application/ld+json">\n    ${homepageFaqSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageItemListSchema}\n    </script>\n    <script type="application/ld+json">\n    ${siteNavSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageWebPageSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageBreadcrumbSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageSpeakableSchema}\n    </script>\n    <script type="application/ld+json">\n    ${homepageArticleSchema}\n    </script>`;
   homeHtml = homeHtml.replace('</head>', `${faqScriptTag}\n  </head>`);
 
   // ── Homepage static body content injection ──────────────────────────────────

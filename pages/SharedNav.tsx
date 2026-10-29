@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Mail, Menu, X, Scale, Sun, Moon, ChevronDown, BookOpen } from 'lucide-react';
 import { SITE_CONFIG } from '../site-config';
 import { COMPARE_ARTICLES_META } from './compare-metadata';
@@ -90,6 +91,31 @@ export function SharedNav({
 }: SharedNavProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [compareOpen, setCompareOpen] = useState(false);
+
+  // Site footer host — the footer is portalled to a container appended to <body>
+  // (after #root) so it renders at the BOTTOM of the page. It used to be rendered
+  // inline here, which placed it directly under the nav, above the page content
+  // (the "footer above hero on mobile" bug). The Home and Blog pages render their
+  // own full footers, so the bar is skipped there to avoid a duplicate.
+  const [footerHost, setFooterHost] = useState<HTMLElement | null>(null);
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (path === '/' || path === '/blog' || path.startsWith('/blog/')) {
+      setFooterHost(null);
+      return;
+    }
+    let host = document.getElementById('site-footer-bar');
+    if (!host) {
+      host = document.createElement('div');
+      host.id = 'site-footer-bar';
+      document.body.appendChild(host);
+    }
+    setFooterHost(host);
+    return () => {
+      setFooterHost(null);
+      if (host && host.childNodes.length === 0) host.remove();
+    };
+  }, [activePage]);
   
   // Skip-to-content link for accessibility (WCAG 2.1 Level A)
   const skipLinkStyle: React.CSSProperties = {
@@ -603,7 +629,9 @@ export function SharedNav({
         </div>
       </div>
 
-      {/* W1-T3: Site footer — Privacy Policy visibility for Google Quality Raters */}
+      {/* W1-T3: Site footer — Privacy Policy visibility for Google Quality Raters.
+          Portalled to the bottom of <body> (see footerHost above). */}
+      {footerHost && createPortal(
       <footer style={{
         background: C.surf,
         borderTop: `1px solid ${C.barBrd}`,
@@ -645,7 +673,8 @@ export function SharedNav({
             ))}
           </div>
         </div>
-      </footer>
+      </footer>,
+      footerHost)}
     </>
   );
 }
