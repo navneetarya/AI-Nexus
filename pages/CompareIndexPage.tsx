@@ -1,6 +1,7 @@
 import React from 'react';
 import { Scale } from 'lucide-react';
 import { SharedNav } from './SharedNav';
+import { Breadcrumb } from '../components/Breadcrumb';
 import { COMPARE_ARTICLES_META } from './compare-metadata';
 
 const C = {
@@ -29,6 +30,8 @@ export function CompareIndexPage({ navigate, isDark, toggleTheme }: CompareIndex
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="compare" />
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '48px 24px 80px' }}>
+
+        <Breadcrumb navigate={navigate} crumbs={[{ label: 'Home', href: '/' }, { label: 'AI Tool Comparisons' }]} />
 
         {/* Page header */}
         <div style={{ marginBottom: 40, textAlign: 'center' as const }}>

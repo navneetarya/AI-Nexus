@@ -124,6 +124,11 @@ export function BlogPage({ navigate, isDark, toggleTheme }: BlogPageProps) {
           background: 'radial-gradient(ellipse 60% 80% at 80% 50%, rgba(13,148,136,.22) 0%, transparent 70%), radial-gradient(ellipse 40% 60% at 10% 80%, rgba(20,184,166,.08) 0%, transparent 60%)',
         }} />
         <div style={{ maxWidth: 840, margin: '0 auto', position: 'relative', zIndex: 2 }}>
+          <nav aria-label="breadcrumb" style={{ fontSize: 13, color: 'rgba(255,255,255,.55)', marginBottom: 18, display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center' }}>
+            <span onClick={() => navigate('/')} style={{ cursor: 'pointer', color: '#5eead4' }}>Home</span>
+            <span style={{ opacity: 0.5, fontSize: 11 }}>›</span>
+            <span>Blog</span>
+          </nav>
           <div style={{
             display: 'inline-flex', alignItems: 'center', gap: 8,
             background: 'rgba(13,148,136,.15)',

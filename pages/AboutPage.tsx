@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowLeft, CheckCircle, Mail, ExternalLink, Linkedin } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 import { SharedNav } from './SharedNav';
+import { Breadcrumb } from '../components/Breadcrumb';
 
 const C = {
   bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
@@ -77,6 +78,8 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="about" />
 
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '48px 28px 80px' }}>
+
+        <Breadcrumb navigate={navigate} crumbs={[{ label: 'Home', href: '/' }, { label: 'About Navneet Arya' }]} />
 
         {/* Author hero card */}
         <div style={{ background: C.surf, borderRadius: 20, border: `1.5px solid ${C.a1brd}`, padding: '40px', marginBottom: 16, position: 'relative', overflow: 'hidden' }}>

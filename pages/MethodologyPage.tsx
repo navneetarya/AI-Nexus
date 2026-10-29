@@ -2,6 +2,7 @@ import React from 'react';
 import { CheckCircle, FlaskConical, Clock, Scale, ShieldCheck, BadgeDollarSign, Star, UserCheck, Search, BarChart2 } from 'lucide-react';
 import { SITE_CONFIG } from '../constants';
 import { SharedNav } from './SharedNav';
+import { Breadcrumb } from '../components/Breadcrumb';
 
 const C = {
   bg:'var(--bg)', surf:'var(--surf)', a1:'var(--a1)', a2:'var(--a2)',
@@ -118,6 +119,8 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="methodology" />
 
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '48px 28px 80px' }}>
+
+        <Breadcrumb navigate={navigate} crumbs={[{ label: 'Home', href: '/' }, { label: 'Review Methodology' }]} />
 
         {/* Hero card */}
         <div style={{ background: C.surf, borderRadius: 20, border: `1.5px solid ${C.a1brd}`, padding: '40px', marginBottom: 14, position: 'relative', overflow: 'hidden' }}>
