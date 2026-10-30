@@ -66,6 +66,29 @@ jobs:
         # readers (React renders the JSON), so this fails the build. No browser needed.
         run: node scripts/check-homepage-sections.mjs
 
+      - name: Install browser parity dependencies
+        run: |
+          python3 -m pip install --disable-pip-version-check playwright
+          python3 -m playwright install --with-deps chromium
+
+      - name: Check static versus rendered headings
+        # T6.2: verify that crawler-visible H2 sections also exist after React renders.
+        # The three allow-listed sections are intentionally rendered by existing React
+        # components under their own headings.
+        run: >-
+          python3 scripts/check_static_vs_rendered.py
+          /
+          /best-ai-writing-tools/
+          /best-ai-coding-tools/
+          /best-ai-image-tools/
+          /best-ai-video-tools/
+          /best-ai-audio-tools/
+          /best-ai-productivity-tools/
+          /best-ai-marketing-tools/
+          /best-ai-design-tools/
+          --allow start-here,compare-tools,ai-blog-guides
+          --strict
+
       - name: Validate prerender output
         # Task 27: Ensure all routes are prerendered, schemas injected,
         # sitemap generated, and no regressions before deploying.

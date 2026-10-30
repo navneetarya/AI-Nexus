@@ -43,13 +43,13 @@ const NAV_CSS = `
   font-size:11px; font-weight:700; color:var(--a1);
   white-space:nowrap; letter-spacing:.01em; line-height:1; flex-shrink:0;
 }
-@media(max-width:680px){
+@media(max-width:900px){
   #shared-hamburger { display:flex !important; }
   #shared-desktop-nav { display:none !important; }
   .trust-pill-nav { display:none !important; }
   .author-cred-bar { display:none !important; }
 }
-@media(min-width:681px){
+@media(min-width:901px){
   #shared-hamburger { display:none !important; }
 }
 `;
