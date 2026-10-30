@@ -463,12 +463,11 @@ def scan_structured_data(prerender_src: str, index_src: str):
         print("    ✓  ItemList schema present (enables carousel/sitelinks)")
 
     # ── WebSite SearchAction ──────────────────────────────────────────────────
+    # Google retired the sitelinks search box, and the site's ?search= URL was never
+    # backed by a visible search page, so SearchAction was removed on purpose (T0.3).
+    # A missing SearchAction is no longer flagged; flag only if it returns.
     if "SearchAction" in index_src:
-        print("    ✓  WebSite SearchAction schema (sitelinks searchbox)")
-    else:
-        add_issue(Severity.LOW, Category.SCHEMA, "No SearchAction in WebSite schema",
-                  "SearchAction enables sitelinks searchbox in SERPs.",
-                  str(INDEX_HTML), None, "Add potentialAction SearchAction to WebSite schema.")
+        print("    ⚠  SearchAction found in index.html (sitelinks search box retired by Google; markup was removed on purpose)")
 
     # ── Person/Organization @id cross-referencing ─────────────────────────────
     if "@id" in index_src and "Organization" in index_src:

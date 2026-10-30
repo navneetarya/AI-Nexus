@@ -25,6 +25,7 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import ts from 'typescript';
 import { loadVerdictSsr } from './verdict-ssr-loader.mjs';
+import { loadHomepageContent, renderHomeSectionHtml, faqItemsPlain } from './homepage-content.mjs';
 
 const __dir  = path.dirname(fileURLToPath(import.meta.url));
 const ROOT   = path.join(__dir, '..');
@@ -8849,12 +8850,10 @@ ${items}
   // Agent-Ready: markdown alternate for the homepage (root path is handled by
   // its own Cloudflare Transform Rule — see CLOUDFLARE_AGENT_READY_SETUP.md)
   homeHtml = homeHtml.replace('</head>', `\n  <link rel="alternate" type="text/markdown" href="${SITE}/index.md">\n  </head>`);
-  const homepageFaqSchema = JSON.stringify(faqSchema([
-    { q: 'What are the best free AI tools in 2026?', a: 'The best free AI tools in 2026 are Grammarly (writing, unlimited free), Rytr (10,000 characters/month), QuillBot (paraphrasing, free tier), Leonardo.ai (150 free credits/day), and Gamma (10 free AI presentations). All offer functional free plans that don\'t expire.' },
-    { q: 'Which AI writing tool is best for beginners?', a: 'Rytr is the best AI writing tool for beginners in 2026. It has 40+ pre-built templates with clear labels, a free plan with 10,000 characters/month, and produces usable output within 90 seconds of signing up — no content strategy knowledge required.' },
-    { q: 'Are AI writing tools worth paying for?', a: 'Yes, if you write regularly for work. Paid AI writing tools ($9-16/month) save 2-4 hours per week for professional writers, bloggers, and marketers. The free plans from Grammarly and Rytr are enough for casual writers.' },
-    { q: 'What is the best AI tool for content creators?', a: 'For content creators, the best combination in 2026 is: Rytr or Writesonic for writing, Opus Clip for short-form video, Leonardo.ai for image generation, and Ocoya for social media scheduling. Each tool has a free plan to get started.' },
-  ]), null, 2);
+  // T2.1: the FAQPage JSON-LD is built from the SAME list as the visible FAQ (data/homepage-content.json, section "faq"),
+  // so the markup lists exactly the questions on the page and the two can no longer drift.
+  const HOME_CONTENT = loadHomepageContent(ROOT);
+  const homepageFaqSchema = JSON.stringify(faqSchema(faqItemsPlain(HOME_CONTENT, 'faq', { site: SITE, toolCount: TOOLS.length })), null, 2);
 
   // H4: ItemList schema — enables sitelinks for homepage tool listings
   const homepageItemListSchema = JSON.stringify(itemListSchema({
@@ -8968,11 +8967,6 @@ ${items}
   // links, no author byline, no About/Contact/Privacy links.
   const displayDate = new Date(PAGE_LAST_UPDATED.home + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
-  // Build a list of up to 8 featured tool links for the static content
-  const featuredTools = TOOLS.slice(0, 8).map(t =>
-    `<li><a href="${SITE}/tools/${t.slug}/" style="color:#0D9488;text-decoration:none">${esc(t.name)} — ${esc(t.tagline.slice(0, 60))}</a></li>`
-  ).join('\n        ');
-
   // ── AEO-Compliant Homepage Body ─────────────────────────────────────────────
   // Full semantic HTML rewrite that resolves ALL outstanding AEO audit failures:
   //   ✓ <main>, <article>, <section>, <header> semantic elements
@@ -8993,6 +8987,12 @@ ${items}
   let homePricingToolCount = 0;
   try { homePricingToolCount = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'pricing', 'latest.json'), 'utf8')).tools.length; } catch { /* keep 0 */ }
   const homePricingDate = new Date(PAGE_LAST_UPDATED.pricingTracker + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  // T1.2: shared homepage content (data/homepage-content.json) rendered to static HTML here and to React by components/ContentBlocks.tsx.
+  const HOME_CONTENT_CTX = {
+    site: SITE, toolCount: TOOLS.length, year: YEAR, tools: TOOLS, pricingToolCount: homePricingToolCount,
+    homeDate: { iso: PAGE_LAST_UPDATED.home, label: displayDate },
+    pricingDate: { iso: PAGE_LAST_UPDATED.pricingTracker, label: homePricingDate },
+  };
   const homepageBodyContent = `<main role="main" id="main-content" aria-label="AI Tools Research &amp; Reviews" style="font-family:system-ui,sans-serif">
   <article itemscope itemtype="https://schema.org/Article" style="max-width:800px;margin:0 auto;padding:24px 16px">
 
@@ -9011,16 +9011,7 @@ ${items}
     </header>
 
     <!-- ── Key Takeaways ───────────────────────────────────────────────── -->
-    <section id="key-takeaways" aria-label="Key Takeaways" style="background:#f0faf9;border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:28px">
-      <h2 data-speakable="key-takeaways" style="font-size:1.1rem;margin:0 0 10px;color:#0F1C1A">Key Takeaways</h2>
-      <ul style="margin:0;padding-left:18px;line-height:1.9;font-size:.95rem;color:#333">
-        <li>Best free AI tools: <a href="${SITE}/tools/grammarly/" style="color:#0D9488">Grammarly</a> (writing), <a href="${SITE}/tools/leonardo-ai/" style="color:#0D9488">Leonardo.ai</a> (images, 150 credits/day), <a href="${SITE}/tools/rytr/" style="color:#0D9488">Rytr</a> (10K chars/month)</li>
-        <li>Best value paid tier: $8–$20/month covers Rytr Saver, Canva Pro, ChatGPT Plus, and Claude Pro</li>
-        <li>Top coding AI: <a href="${SITE}/tools/cursor/" style="color:#0D9488">Cursor</a> leads on multi-file refactoring; <a href="${SITE}/tools/github-copilot/" style="color:#0D9488">GitHub Copilot</a> for inline autocomplete at $10/month</li>
-        <li>All ${TOOLS.length} tools verified against official docs, G2 &amp; Trustpilot review data, and current live pricing</li>
-        <li>Research methodology aligns with <a href="https://schema.org/Review" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Schema.org Review</a> standards and <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Google's helpful content guidelines</a></li>
-      </ul>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'key-takeaways', HOME_CONTENT_CTX)}
 
     <!-- ── Start Here — Authority Hub (Task 04) ────────────────────────────
          Homepage sits at avg. GSC position 51.5 vs. several blog posts
@@ -9074,109 +9065,16 @@ ${items}
     </nav>
 
     <!-- ── Section 1: What are the best AI tools ──────────────────────── -->
-    <section id="what-are-best-ai-tools-2026" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">What Are the Best AI Tools in 2026?</h2>
-      <p data-speakable="tools-answer" style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>The best AI tools in 2026 are Grammarly (writing), Cursor (coding), Leonardo.ai (images), Opus Clip (video), and ChatGPT (general use).</strong></p>
-      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
-        You'll find ${TOOLS.length} researched reviews below, each with verified pricing, feature breakdowns, and honest use-case guidance.
-        We cross-reference official documentation, community feedback from Reddit, and verified review data from
-        <a href="https://www.g2.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">G2</a> and
-        <a href="https://www.trustpilot.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Trustpilot</a> —
-        not vendor marketing claims.
-      </p>
-      <ul style="margin:0 0 14px;padding-left:20px;line-height:1.9;font-size:.95rem">
-        ${featuredTools}
-      </ul>
-      <p style="font-size:.875rem;color:#666"><a href="${SITE}/" style="color:#0D9488">Browse all ${TOOLS.length} AI tool reviews →</a></p>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'what-are-best-ai-tools-2026', HOME_CONTENT_CTX)}
 
     <!-- ── Answer → Context → Example (GEO fix: ACE pattern) ───────────── -->
-    <section id="answer-context-example" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">How do we decide which AI tool is "best"?</h2>
-      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>Answer:</strong> a tool earns a "best for X" recommendation only when its free plan is usable without a credit card and its core feature has been verified against official documentation, not marketing copy.</p>
-      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:8px"><strong>Context:</strong> many "best AI tools" lists rank by affiliate commission size rather than actual fit. We instead score each tool on three fixed criteria — free-tier usability, documented feature accuracy, and verified pricing — before it earns a category placement.</p>
-      <p style="font-size:.95rem;line-height:1.7;color:#444"><strong>Example:</strong> Grammarly is recommended for "everyday writing," not "content marketing," because its free plan handles grammar and tone correction well but has no long-form article generation — that's Writesonic's strength, and the two tools are recommended for different jobs rather than ranked against each other on one list.</p>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'answer-context-example', HOME_CONTENT_CTX)}
 
     <!-- ── Section 2: Comparison table ───────────────────────────────── -->
-    <section id="ai-tools-comparison" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">How Do Popular AI Tools Compare?</h2>
-      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>Key differences come down to use case, pricing, and free-tier generosity — here's a quick comparison of the top tools.</strong></p>
-      <div style="overflow-x:auto;margin-bottom:12px">
-        <table style="width:100%;border-collapse:collapse;font-size:.875rem">
-          <caption style="text-align:left;font-size:.8rem;color:#666;padding-bottom:6px;caption-side:top">Top AI Tools 2026 — Pricing &amp; Use Case Overview (source: official pricing pages, verified ${YEAR})</caption>
-          <thead>
-            <tr style="background:#0D9488;color:#fff">
-              <th style="padding:8px 10px;text-align:left;font-weight:600">Tool</th>
-              <th style="padding:8px 10px;text-align:left;font-weight:600">Best For</th>
-              <th style="padding:8px 10px;text-align:left;font-weight:600">Free Plan</th>
-              <th style="padding:8px 10px;text-align:left;font-weight:600">Paid From</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom:1px solid #e5e7eb">
-              <td style="padding:8px 10px"><a href="${SITE}/tools/grammarly/" style="color:#0D9488;font-weight:500">Grammarly</a></td>
-              <td style="padding:8px 10px">AI Writing</td>
-              <td style="padding:8px 10px">Yes — unlimited</td>
-              <td style="padding:8px 10px">$12/mo</td>
-            </tr>
-            <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb">
-              <td style="padding:8px 10px"><a href="${SITE}/tools/cursor/" style="color:#0D9488;font-weight:500">Cursor</a></td>
-              <td style="padding:8px 10px">AI Coding</td>
-              <td style="padding:8px 10px">Yes — 2,000 completions/mo</td>
-              <td style="padding:8px 10px">$20/mo</td>
-            </tr>
-            <tr style="border-bottom:1px solid #e5e7eb">
-              <td style="padding:8px 10px"><a href="${SITE}/tools/leonardo-ai/" style="color:#0D9488;font-weight:500">Leonardo.ai</a></td>
-              <td style="padding:8px 10px">AI Images</td>
-              <td style="padding:8px 10px">Yes — 150 credits/day</td>
-              <td style="padding:8px 10px">$12/mo</td>
-            </tr>
-            <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb">
-              <td style="padding:8px 10px"><a href="${SITE}/tools/chatgpt/" style="color:#0D9488;font-weight:500">ChatGPT</a></td>
-              <td style="padding:8px 10px">General AI</td>
-              <td style="padding:8px 10px">Yes — limited messages</td>
-              <td style="padding:8px 10px">$20/mo</td>
-            </tr>
-            <tr style="border-bottom:1px solid #e5e7eb">
-              <td style="padding:8px 10px"><a href="${SITE}/tools/canva-ai/" style="color:#0D9488;font-weight:500">Canva AI</a></td>
-              <td style="padding:8px 10px">AI Design</td>
-              <td style="padding:8px 10px">Yes — 250K+ templates</td>
-              <td style="padding:8px 10px">$15/mo</td>
-            </tr>
-            <tr style="background:#f9fafb">
-              <td style="padding:8px 10px"><a href="${SITE}/tools/rytr/" style="color:#0D9488;font-weight:500">Rytr</a></td>
-              <td style="padding:8px 10px">Short-form Writing</td>
-              <td style="padding:8px 10px">Yes — 10K chars/mo</td>
-              <td style="padding:8px 10px">$9/mo</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="font-size:.8rem;color:#888">Pricing verified against official pages. Last updated: <time datetime="${PAGE_LAST_UPDATED.home}">${displayDate}</time></p>
-      ${homePricingToolCount > 0 ? `<p style="font-size:.9rem;line-height:1.7;color:#444;margin-top:12px">Need more than six rows? The <a href="${SITE}/pricing-tracker/" style="color:#0D9488;font-weight:500">AI Tool Pricing Tracker</a> is a sortable table of verified prices for ${homePricingToolCount} tools, each checked against the vendor's own pricing page (snapshot dated <time datetime="${PAGE_LAST_UPDATED.pricingTracker}">${homePricingDate}</time>). A value shown as "Not verified" means we could not confirm it from an official page, not that the tool is free.</p>` : ''}
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'ai-tools-comparison', HOME_CONTENT_CTX)}
 
     <!-- ── Section 3: Best for use case (dl) ────────────────────────── -->
-    <section id="ai-tool-by-use-case" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">Which AI Tool Is Best for Your Use Case?</h2>
-      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>The right tool depends on your workflow — here's the top-rated pick per category based on our independent research.</strong></p>
-      <dl style="margin:0;font-size:.9rem;line-height:1.8">
-        <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Writing Tool</dt>
-        <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/grammarly/" style="color:#0D9488">Grammarly</a> — grammar, tone detection, and full-sentence rewrites. Used by 40 million+ people globally. Free plan has no word limit.<br><a href="${SITE}/best-ai-writing-tools/" style="color:#0D9488;font-size:.85rem">See all AI writing tool reviews →</a></dd>
-        <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Coding Tool</dt>
-        <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/cursor/" style="color:#0D9488">Cursor</a> — multi-file AI refactoring, @Codebase context, VS Code-compatible.<br><a href="${SITE}/best-ai-coding-tools/" style="color:#0D9488;font-size:.85rem">See all AI coding tool reviews →</a></dd>
-        <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Image Generator</dt>
-        <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/leonardo-ai/" style="color:#0D9488">Leonardo.ai</a> — 150 free credits per day, custom model training, no watermark on free plan. Best free-tier image generator available.<br><a href="${SITE}/best-ai-image-tools/" style="color:#0D9488;font-size:.85rem">See all AI image tool reviews →</a></dd>
-        <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Video Tool</dt>
-        <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/opus-clip/" style="color:#0D9488">Opus Clip</a> — AI virality scoring, automated captions, repurpose long-form videos into short clips in minutes.<br><a href="${SITE}/best-ai-video-tools/" style="color:#0D9488;font-size:.85rem">See all AI video tool reviews →</a></dd>
-        <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Podcast Tool</dt>
-        <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/podcastle/" style="color:#0D9488">Podcastle</a> — local recording, one-click noise removal (Magic Dust), unlimited free recording with no credit card required.<br><a href="${SITE}/best-ai-audio-tools/" style="color:#0D9488;font-size:.85rem">See all AI audio tool reviews →</a></dd>
-        <dt style="font-weight:700;color:#0F1C1A;margin-top:12px">Best AI Productivity Tool</dt>
-        <dd style="margin-left:0;color:#444;padding:6px 12px;border-left:3px solid #0D9488;background:#fafafa;border-radius:0 4px 4px 0"><a href="${SITE}/tools/notion-ai/" style="color:#0D9488">Notion AI</a> — workspace-aware summaries, action-item extraction from meetings, and AI writing without leaving your existing Notion workspace.<br><a href="${SITE}/best-ai-productivity-tools/" style="color:#0D9488;font-size:.85rem">See all AI productivity tool reviews →</a></dd>
-      </dl>
-      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-top:14px">Looking for another category? Browse our <a href="${SITE}/best-ai-marketing-tools/" style="color:#0D9488">AI marketing tool reviews</a> and <a href="${SITE}/best-ai-design-tools/" style="color:#0D9488">AI design tool reviews</a>, or see the full list of <a href="${SITE}/best-ai-tools-for-freelancers/" style="color:#0D9488">AI tools for freelancers</a>.</p>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'ai-tool-by-use-case', HOME_CONTENT_CTX)}
 
     <!-- ── Section 4: How to choose (numbered steps) ─────────────────── -->
     <section id="how-to-choose-ai-tool" style="margin-bottom:28px">
@@ -9313,34 +9211,7 @@ ${items}
     </section>
 
     <!-- ── FAQ Section (details/summary) ─────────────────────────────── -->
-    <section id="faq" aria-label="Frequently Asked Questions" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 14px;color:#0F1C1A">Frequently Asked Questions About AI Tools</h2>
-
-      <details style="border:1px solid #e5e7eb;border-radius:8px;padding:12px 16px;margin-bottom:8px">
-        <summary style="font-weight:600;cursor:pointer;font-size:.95rem;color:#0F1C1A;list-style:none">What are the best free AI tools in 2026?</summary>
-        <p style="margin-top:10px;font-size:.9rem;line-height:1.7;color:#444">The best free AI tools in 2026 are Grammarly (writing, no word limit on free plan), Leonardo.ai (150 image credits per day, no watermark), Rytr (10,000 characters per month), Gamma (10 AI-generated presentations), and Perplexity (unlimited standard searches with citations). All require no credit card to start.</p>
-      </details>
-
-      <details style="border:1px solid #e5e7eb;border-radius:8px;padding:12px 16px;margin-bottom:8px">
-        <summary style="font-weight:600;cursor:pointer;font-size:.95rem;color:#0F1C1A;list-style:none">Which AI writing tool is best for beginners?</summary>
-        <p style="margin-top:10px;font-size:.9rem;line-height:1.7;color:#444">Rytr is the best AI writing tool for beginners in 2026. Its 40+ pre-built content templates produce usable output within 90 seconds of signup — no content strategy knowledge required. The free plan gives you 10,000 characters per month with no credit card. For longer articles, Writesonic at $16/month is the step-up pick.</p>
-      </details>
-
-      <details style="border:1px solid #e5e7eb;border-radius:8px;padding:12px 16px;margin-bottom:8px">
-        <summary style="font-weight:600;cursor:pointer;font-size:.95rem;color:#0F1C1A;list-style:none">Is ChatGPT better than Claude AI for writing?</summary>
-        <p style="margin-top:10px;font-size:.9rem;line-height:1.7;color:#444">Claude leads on long-form writing quality, document analysis, and consistent voice across lengthy content. ChatGPT leads on breadth — image generation, voice, video, and a larger app ecosystem. Most professional writers use both: Claude for writing and deep analysis, ChatGPT for research and visual content. Both are $20/month.</p>
-      </details>
-
-      <details style="border:1px solid #e5e7eb;border-radius:8px;padding:12px 16px;margin-bottom:8px">
-        <summary style="font-weight:600;cursor:pointer;font-size:.95rem;color:#0F1C1A;list-style:none">Are AI tools worth paying for?</summary>
-        <p style="margin-top:10px;font-size:.9rem;line-height:1.7;color:#444">Yes, if you use them regularly for professional work. Paid AI tools ($9–$20/month) typically save 2–4 hours per week for writers, developers, and content creators — making them cost-effective at even low usage frequency. The free plans from Grammarly, Leonardo.ai, and Rytr are enough for casual or occasional use without any payment.</p>
-      </details>
-
-      <details style="border:1px solid #e5e7eb;border-radius:8px;padding:12px 16px;margin-bottom:8px">
-        <summary style="font-weight:600;cursor:pointer;font-size:.95rem;color:#0F1C1A;list-style:none">What is the best AI tool for content creators?</summary>
-        <p style="margin-top:10px;font-size:.9rem;line-height:1.7;color:#444">The best combination for content creators in 2026 is: Rytr or Writesonic for written content, Opus Clip for repurposing long videos into short clips, Leonardo.ai for thumbnail and visual creation, and Ocoya for social media scheduling. Each has a free plan you can test before committing to a paid subscription.</p>
-      </details>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'faq', HOME_CONTENT_CTX)}
 
     <!-- ── About Research ─────────────────────────────────────────────── -->
     <section id="about-research" style="margin-bottom:24px">

@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "spec": "docs/homepage-content-format.md",
+  "sections": [
+    {
+      "id": "key-takeaways",
+      "ariaLabel": "Key Takeaways",
+      "variant": "callout",
+      "heading": {
+        "text": "Key Takeaways",
+        "speakable": "key-takeaways"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Best free AI tools: [Grammarly](/tools/grammarly/) (writing), [Leonardo.ai](/tools/leonardo-ai/) (images, 150 credits/day), [Rytr](/tools/rytr/) (10K chars/month)",
+            "Best value paid tier: $8–$20/month covers Rytr Saver, Canva Pro, ChatGPT Plus, and Claude Pro",
+            "Top coding AI: [Cursor](/tools/cursor/) leads on multi-file refactoring; [GitHub Copilot](/tools/github-copilot/) for inline autocomplete at $10/month",
+            "All {{toolCount}} tools verified against official docs, G2 & Trustpilot review data, and current live pricing",
+            "Research methodology aligns with [Schema.org Review](https://schema.org/Review) standards and [Google's helpful content guidelines](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-are-best-ai-tools-2026",
+      "variant": "plain",
+      "heading": {
+        "text": "What Are the Best AI Tools in 2026?"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "lead",
+          "speakable": "tools-answer",
+          "text": "**The best AI tools in 2026 are Grammarly (writing), Cursor (coding), Leonardo.ai (images), Opus Clip (video), and ChatGPT (general use).**"
+        },
+        {
+          "type": "paragraph",
+          "variant": "body",
+          "text": "You'll find {{toolCount}} researched reviews below, each with verified pricing, feature breakdowns, and honest use-case guidance. We cross-reference official documentation, community feedback from Reddit, and verified review data from [G2](https://www.g2.com) and [Trustpilot](https://www.trustpilot.com) — not vendor marketing claims."
+        },
+        {
+          "type": "toolList",
+          "count": 8
+        },
+        {
+          "type": "paragraph",
+          "variant": "note",
+          "text": "[Browse all {{toolCount}} AI tool reviews →](/)"
+        }
+      ]
+    },
+    {
+      "id": "answer-context-example",
+      "variant": "plain",
+      "heading": {
+        "text": "How do we decide which AI tool is \"best\"?"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "lead",
+          "text": "**Answer:** a tool earns a \"best for X\" recommendation only when its free plan is usable without a credit card and its core feature has been verified against official documentation, not marketing copy."
+        },
+        {
+          "type": "paragraph",
+          "variant": "bodyTight",
+          "text": "**Context:** many \"best AI tools\" lists rank by affiliate commission size rather than actual fit. We instead score each tool on three fixed criteria — free-tier usability, documented feature accuracy, and verified pricing — before it earns a category placement."
+        },
+        {
+          "type": "paragraph",
+          "variant": "bodyEnd",
+          "text": "**Example:** Grammarly is recommended for \"everyday writing,\" not \"content marketing,\" because its free plan handles grammar and tone correction well but has no long-form article generation — that's Writesonic's strength, and the two tools are recommended for different jobs rather than ranked against each other on one list."
+        }
+      ]
+    },
+    {
+      "id": "ai-tools-comparison",
+      "variant": "plain",
+      "heading": {
+        "text": "How Do Popular AI Tools Compare?"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "lead",
+          "text": "**Key differences come down to use case, pricing, and free-tier generosity — here's a quick comparison of the top tools.**"
+        },
+        {
+          "type": "table",
+          "caption": "Top AI Tools 2026 — Pricing & Use Case Overview (source: official pricing pages, verified {{year}})",
+          "columns": [
+            "Tool",
+            "Best For",
+            "Free Plan",
+            "Paid From"
+          ],
+          "rows": [
+            [
+              "[Grammarly](/tools/grammarly/)",
+              "AI Writing",
+              "Yes — unlimited",
+              "$12/mo"
+            ],
+            [
+              "[Cursor](/tools/cursor/)",
+              "AI Coding",
+              "Yes — 2,000 completions/mo",
+              "$20/mo"
+            ],
+            [
+              "[Leonardo.ai](/tools/leonardo-ai/)",
+              "AI Images",
+              "Yes — 150 credits/day",
+              "$12/mo"
+            ],
+            [
+              "[ChatGPT](/tools/chatgpt/)",
+              "General AI",
+              "Yes — limited messages",
+              "$20/mo"
+            ],
+            [
+              "[Canva AI](/tools/canva-ai/)",
+              "AI Design",
+              "Yes — 250K+ templates",
+              "$15/mo"
+            ],
+            [
+              "[Rytr](/tools/rytr/)",
+              "Short-form Writing",
+              "Yes — 10K chars/mo",
+              "$9/mo"
+            ]
+          ],
+          "linkWeight": 500
+        },
+        {
+          "type": "paragraph",
+          "variant": "fineprint",
+          "text": "Pricing verified against official pages. Last updated: {{homeDate}}"
+        },
+        {
+          "type": "paragraph",
+          "variant": "follow",
+          "linkWeight": 500,
+          "showIf": "pricingToolCount",
+          "text": "Need more than six rows? The [AI Tool Pricing Tracker](/pricing-tracker/) is a sortable table of verified prices for {{pricingToolCount}} tools, each checked against the vendor's own pricing page (snapshot dated {{pricingDate}}). A value shown as \"Not verified\" means we could not confirm it from an official page, not that the tool is free."
+        }
+      ]
+    },
+    {
+      "id": "ai-tool-by-use-case",
+      "variant": "plain",
+      "heading": {
+        "text": "Which AI Tool Is Best for Your Use Case?"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "lead",
+          "text": "**The right tool depends on your workflow — here's the top-rated pick per category based on our independent research.**"
+        },
+        {
+          "type": "definitionList",
+          "items": [
+            {
+              "term": "Best AI Writing Tool",
+              "text": "[Grammarly](/tools/grammarly/) — grammar, tone detection, and full-sentence rewrites. Used by 40 million+ people globally. Free plan has no word limit.",
+              "more": {
+                "label": "See all AI writing tool reviews →",
+                "href": "/best-ai-writing-tools/"
+              }
+            },
+            {
+              "term": "Best AI Coding Tool",
+              "text": "[Cursor](/tools/cursor/) — multi-file AI refactoring, @Codebase context, VS Code-compatible.",
+              "more": {
+                "label": "See all AI coding tool reviews →",
+                "href": "/best-ai-coding-tools/"
+              }
+            },
+            {
+              "term": "Best AI Image Generator",
+              "text": "[Leonardo.ai](/tools/leonardo-ai/) — 150 free credits per day, custom model training, no watermark on free plan. Best free-tier image generator available.",
+              "more": {
+                "label": "See all AI image tool reviews →",
+                "href": "/best-ai-image-tools/"
+              }
+            },
+            {
+              "term": "Best AI Video Tool",
+              "text": "[Opus Clip](/tools/opus-clip/) — AI virality scoring, automated captions, repurpose long-form videos into short clips in minutes.",
+              "more": {
+                "label": "See all AI video tool reviews →",
+                "href": "/best-ai-video-tools/"
+              }
+            },
+            {
+              "term": "Best AI Podcast Tool",
+              "text": "[Podcastle](/tools/podcastle/) — local recording, one-click noise removal (Magic Dust), unlimited free recording with no credit card required.",
+              "more": {
+                "label": "See all AI audio tool reviews →",
+                "href": "/best-ai-audio-tools/"
+              }
+            },
+            {
+              "term": "Best AI Productivity Tool",
+              "text": "[Notion AI](/tools/notion-ai/) — workspace-aware summaries, action-item extraction from meetings, and AI writing without leaving your existing Notion workspace.",
+              "more": {
+                "label": "See all AI productivity tool reviews →",
+                "href": "/best-ai-productivity-tools/"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "variant": "followLg",
+          "text": "Looking for another category? Browse our [AI marketing tool reviews](/best-ai-marketing-tools/) and [AI design tool reviews](/best-ai-design-tools/), or see the full list of [AI tools for freelancers](/best-ai-tools-for-freelancers/)."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "ariaLabel": "Frequently Asked Questions",
+      "variant": "faq",
+      "heading": {
+        "text": "Frequently Asked Questions About AI Tools"
+      },
+      "blocks": [
+        {
+          "type": "faq",
+          "items": [
+            {
+              "q": "What are the best free AI tools in 2026?",
+              "a": "The best free AI tools in 2026 are Grammarly (writing, no word limit on free plan), Leonardo.ai (150 image credits per day, no watermark), Rytr (10,000 characters per month), Gamma (10 AI-generated presentations), and Perplexity (unlimited standard searches with citations). All require no credit card to start."
+            },
+            {
+              "q": "Which AI writing tool is best for beginners?",
+              "a": "Rytr is the best AI writing tool for beginners in 2026. Its 40+ pre-built content templates produce usable output within 90 seconds of signup — no content strategy knowledge required. The free plan gives you 10,000 characters per month with no credit card. For longer articles, Writesonic at $16/month is the step-up pick."
+            },
+            {
+              "q": "Is ChatGPT better than Claude AI for writing?",
+              "a": "Claude leads on long-form writing quality, document analysis, and consistent voice across lengthy content. ChatGPT leads on breadth — image generation, voice, video, and a larger app ecosystem. Most professional writers use both: Claude for writing and deep analysis, ChatGPT for research and visual content. Both are $20/month."
+            },
+            {
+              "q": "Are AI tools worth paying for?",
+              "a": "Yes, if you use them regularly for professional work. Paid AI tools ($9–$20/month) typically save 2–4 hours per week for writers, developers, and content creators — making them cost-effective at even low usage frequency. The free plans from Grammarly, Leonardo.ai, and Rytr are enough for casual or occasional use without any payment."
+            },
+            {
+              "q": "What is the best AI tool for content creators?",
+              "a": "The best combination for content creators in 2026 is: Rytr or Writesonic for written content, Opus Clip for repurposing long videos into short clips, Leonardo.ai for thumbnail and visual creation, and Ocoya for social media scheduling. Each has a free plan you can test before committing to a paid subscription."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
