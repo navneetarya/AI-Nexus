@@ -28,12 +28,18 @@ Content-Signal: search=yes, ai-input=yes, ai-train=no
 # ── Google (incl. Google AI / Gemini / AI Overviews) ──────────────────────────
 User-agent: Googlebot
 User-agent: Googlebot-Image
-User-agent: Google-Extended
 User-agent: GoogleOther
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Disallow: /*?category=
 Disallow: /*?search=
+
+# Google-Extended: Google documents it as a control token for whether crawled content is used for
+# Gemini training and grounding. Disallowing it does not affect Google Search or AI Overviews.
+# https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
+User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Disallow: /
 
 # ── Bing ──────────────────────────────────────────────────────────────────────
 User-agent: Bingbot
@@ -67,13 +73,22 @@ Content-Signal: search=yes, ai-input=yes, ai-train=no
 Disallow: /
 
 # ── Anthropic / Claude ────────────────────────────────────────────────────────
-User-agent: ClaudeBot
-User-agent: anthropic-ai
-User-agent: Claude-Web
+# Claude-SearchBot (search) and Claude-User (user-initiated fetches) stay allowed.
+User-agent: Claude-SearchBot
+User-agent: Claude-User
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Disallow: /*?category=
 Disallow: /*?search=
+
+# ClaudeBot: Anthropic documents it as the crawler that collects web content for model training.
+# https://support.claude.com/en/articles/8896518
+# anthropic-ai and Claude-Web are older Anthropic training/crawl tokens, blocked for consistency.
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Disallow: /
 
 # ── Perplexity ────────────────────────────────────────────────────────────────
 User-agent: PerplexityBot
@@ -106,20 +121,24 @@ Content-Signal: search=yes, ai-input=yes, ai-train=no
 Disallow: /
 
 # ── Other AI / data crawlers ──────────────────────────────────────────────────
-# Left allowed on purpose (checked against vendor documentation on 2026-10-30): each is documented
-# as, or can be, a search / index / retrieval crawler rather than a training-only one, or has no
-# vendor documentation to confirm otherwise. Re-check before moving any of them to Disallow.
+# Left allowed on purpose: vendor documentation is mixed or unclear on whether these are training-only
+# (meta-externalagent is in the Meta group above). Re-check before moving any of them to Disallow.
 User-agent: Amazonbot
 User-agent: Diffbot
 User-agent: Timpibot
 User-agent: YouBot
 User-agent: cohere-ai
 User-agent: DuckAssistBot
-User-agent: Bytespider
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Disallow: /*?category=
 Disallow: /*?search=
+
+# Bytespider: ByteDance crawler widely reported as collecting training data; no vendor documentation
+# found that describes a search or citation function. Blocked to match ai-train=no.
+User-agent: Bytespider
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Disallow: /
 
 # CCBot: Common Crawl builds an open crawl dataset for others to reuse (including model training).
 # It has no search or citation function for this site.
