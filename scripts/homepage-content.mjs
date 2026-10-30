@@ -216,3 +216,20 @@ export function faqItemsPlain(content, id, vars) {
   if (!faq) throw new Error(`homepage-content: section "${id}" has no faq block`);
   return faq.items.map(i => ({ q: stripInline(i.q, vars), a: stripInline(i.a, vars) }));
 }
+
+/** Table of Contents nav (T3.2). Same list drives the React ToC (components/HomeEditorialSections.tsx). */
+export function renderHomeTocHtml(content) {
+  const toc = content.toc;
+  if (!toc || !Array.isArray(toc.items) || !toc.items.length) throw new Error('homepage-content: missing "toc" { heading, items[] }');
+  const items = toc.items
+    .map(i => `        <li><a href="#${escAttr(i.id)}" style="color:#0D9488">${escText(i.label)}</a></li>`)
+    .join('\n');
+  return [
+    `<nav id="table-of-contents" aria-label="Table of Contents" style="background:#fafafa;border:1px solid #e5e7eb;padding:14px 18px;border-radius:8px;margin-bottom:28px">`,
+    `      <h2 style="font-size:.95rem;font-weight:700;margin:0 0 8px;color:#0F1C1A">${escText(toc.heading)}</h2>`,
+    `      <ol style="margin:0;padding-left:20px;line-height:1.9;font-size:.875rem">`,
+    items,
+    `      </ol>`,
+    `    </nav>`,
+  ].join('\n');
+}

@@ -25,7 +25,7 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import ts from 'typescript';
 import { loadVerdictSsr } from './verdict-ssr-loader.mjs';
-import { loadHomepageContent, renderHomeSectionHtml, faqItemsPlain } from './homepage-content.mjs';
+import { loadHomepageContent, renderHomeSectionHtml, renderHomeTocHtml, faqItemsPlain } from './homepage-content.mjs';
 
 const __dir  = path.dirname(fileURLToPath(import.meta.url));
 const ROOT   = path.join(__dir, '..');
@@ -6941,7 +6941,7 @@ for (const art of COMPARE_ARTICLES) {
 	
     breadcrumbs([
       [1, 'AI Nexus', SITE],
-      [2, 'Comparisons', `${SITE}/compare`],
+      [2, 'Comparisons', `${SITE}/compare/`],
       [3, art.title, canonical],
     ]),
     // Issue 21 Fix (AEO): Product+ItemList schema for comparison rich results
@@ -8876,7 +8876,7 @@ ${items}
     name: 'Site Navigation',
     itemListElement: [
       { '@type': 'SiteNavigationElement', position: 1, name: 'AI Tool Reviews', url: `${SITE}/` },
-      { '@type': 'SiteNavigationElement', position: 2, name: 'Compare AI Tools', url: `${SITE}/compare` },
+      { '@type': 'SiteNavigationElement', position: 2, name: 'Compare AI Tools', url: `${SITE}/compare/` },
       { '@type': 'SiteNavigationElement', position: 3, name: 'AI Tools Blog', url: `${SITE}/blog/` },
       { '@type': 'SiteNavigationElement', position: 4, name: 'About & Methodology', url: `${SITE}/about/` },
       { '@type': 'SiteNavigationElement', position: 5, name: 'AI Glossary', url: `${SITE}/glossary/` },
@@ -9047,23 +9047,7 @@ ${items}
     </section>
 
     <!-- ── Table of Contents ───────────────────────────────────────────── -->
-    <nav id="table-of-contents" aria-label="Table of Contents" style="background:#fafafa;border:1px solid #e5e7eb;padding:14px 18px;border-radius:8px;margin-bottom:28px">
-      <h2 style="font-size:.95rem;font-weight:700;margin:0 0 8px;color:#0F1C1A">Table of Contents</h2>
-      <ol style="margin:0;padding-left:20px;line-height:1.9;font-size:.875rem">
-        <li><a href="#start-here" style="color:#0D9488">Start Here: Our Most-Researched Guides</a></li>
-        <li><a href="#what-are-best-ai-tools-2026" style="color:#0D9488">What Are the Best AI Tools in 2026?</a></li>
-        <li><a href="#ai-tools-comparison" style="color:#0D9488">How Do Popular AI Tools Compare?</a></li>
-        <li><a href="#ai-tool-by-use-case" style="color:#0D9488">Which AI Tool Is Best for Your Use Case?</a></li>
-        <li><a href="#how-to-choose-ai-tool" style="color:#0D9488">How to Choose the Right AI Tool (3 Steps)</a></li>
-        <li><a href="#when-not-to-use-ai-tools" style="color:#0D9488">When NOT to Use AI Tools</a></li>
-        <li><a href="#compare-tools" style="color:#0D9488">Compare AI Tools Side by Side</a></li>
-        <li><a href="#free-vs-paid-perspectives" style="color:#0D9488">Free vs. Paid AI Tools: Two Perspectives</a></li>
-        <li><a href="#verdict" style="color:#0D9488">Our Verdict: Final Recommendation</a></li>
-        <li><a href="#ai-blog-guides" style="color:#0D9488">AI Research Blog &amp; Guides</a></li>
-        <li><a href="#faq" style="color:#0D9488">Frequently Asked Questions</a></li>
-        <li><a href="#about-research" style="color:#0D9488">About This Research</a></li>
-      </ol>
-    </nav>
+    ${renderHomeTocHtml(HOME_CONTENT)}
 
     <!-- ── Section 1: What are the best AI tools ──────────────────────── -->
     ${renderHomeSectionHtml(HOME_CONTENT, 'what-are-best-ai-tools-2026', HOME_CONTENT_CTX)}

@@ -93,3 +93,16 @@ These ids already exist in the static homepage. Keep them unchanged.
 1. Edit `data/homepage-content.json` only.
 2. `npm run build`, then `python3 scripts/check_static_vs_rendered.py / --allow start-here,compare-tools,ai-blog-guides`.
 3. Never edit the same wording in `prerender.mjs` or in a React file.
+
+## Table of Contents (`toc`)
+
+Top-level `toc` key: `{ "heading": "Table of Contents", "items": [{ "id", "label", "reactHref"? }] }`.
+One list feeds both renderers: `renderHomeTocHtml()` (static, scripts/homepage-content.mjs) and `HomeTableOfContents` (React, components/HomeEditorialSections.tsx).
+
+- `id` is the section id the link jumps to. Most ids are sections in this file. `start-here` and `compare-tools` are ids on the React sections in pages/HomePage.tsx; the static HTML still has its own sections with those ids.
+- `reactHref` (optional): in React, link to this page via `navigate()` instead of a hash. Used for `ai-blog-guides`, which has no React section.
+- Labels are plain text (no inline markup); `&` is escaped by the renderer.
+
+## Block types and variants added after the first draft
+
+`heading` (level 3), `quote`, `toolList`, `table`, `definitionList`, `faq`, list items with `id`, and the `showIf` / `linkWeight` flags are all implemented in both renderers (see the `Block` type in components/ContentBlocks.tsx). Variants such as `spaced` and `compact` exist only to reproduce the old spacing exactly. A variant that either renderer does not know fails the build or the render with a clear message.

@@ -2,6 +2,60 @@
   "version": 1,
   "spec": "docs/homepage-content-format.md",
   "updated": "2026-09-20",
+  "toc": {
+    "heading": "Table of Contents",
+    "items": [
+      {
+        "id": "start-here",
+        "label": "Start Here: Our Most-Researched Guides"
+      },
+      {
+        "id": "what-are-best-ai-tools-2026",
+        "label": "What Are the Best AI Tools in 2026?"
+      },
+      {
+        "id": "ai-tools-comparison",
+        "label": "How Do Popular AI Tools Compare?"
+      },
+      {
+        "id": "ai-tool-by-use-case",
+        "label": "Which AI Tool Is Best for Your Use Case?"
+      },
+      {
+        "id": "how-to-choose-ai-tool",
+        "label": "How to Choose the Right AI Tool (3 Steps)"
+      },
+      {
+        "id": "when-not-to-use-ai-tools",
+        "label": "When NOT to Use AI Tools"
+      },
+      {
+        "id": "compare-tools",
+        "label": "Compare AI Tools Side by Side"
+      },
+      {
+        "id": "free-vs-paid-perspectives",
+        "label": "Free vs. Paid AI Tools: Two Perspectives"
+      },
+      {
+        "id": "verdict",
+        "label": "Our Verdict: Final Recommendation"
+      },
+      {
+        "id": "ai-blog-guides",
+        "label": "AI Research Blog & Guides",
+        "reactHref": "/blog/"
+      },
+      {
+        "id": "faq",
+        "label": "Frequently Asked Questions"
+      },
+      {
+        "id": "about-research",
+        "label": "About This Research"
+      }
+    ]
+  },
   "sections": [
     {
       "id": "key-takeaways",

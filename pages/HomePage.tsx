@@ -11,6 +11,7 @@ import {
 import { COMPARE_ARTICLES_META } from './compare-metadata';
 import { BLOG_POSTS_META } from '../blog/metadata';
 import { SharedNav } from './SharedNav';
+import { HomeEditorialSections, HomeTableOfContents } from '../components/HomeEditorialSections';
 
 const BeehiivForm = lazy(() => import('../components/BeehiivForm').then(m => ({ default: m.BeehiivForm })));
 
@@ -695,7 +696,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
             />
           </div>
 
-          <p className="anim-fade-up d3"
+          <p className="anim-fade-up d3" data-speakable="intro"
             style={{ fontSize:16.5, lineHeight:1.72, color:C.mut, margin:'0 0 8px',
               maxWidth:480, marginLeft:'auto', marginRight:'auto' }}>
             Compare the best AI tools for writing, coding, marketing, audio, and design with clear, independent reviews built for creators and freelancers.
@@ -814,7 +815,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           ranking top-15 — treat it as an internal-linking/trust anchor
           instead of competing for broad terms. Surfaces the 6 strongest-
           positioned pages above the fold plus use-case quick paths. ──── */}
-      <div style={{ maxWidth:1200, margin:'0 auto', padding:'40px 24px 8px' }}>
+      <div id="start-here" style={{ maxWidth:1200, margin:'0 auto', padding:'40px 24px 8px' }}>
         <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19,
           color:C.txt, letterSpacing:'-0.025em', marginBottom:8 }}>
           Start Here — Our Most-Researched Guides
@@ -1054,7 +1055,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
       {/* Popular Comparisons */}
       {(filters.category as string) === 'All' && !filters.search && (
       <DeferredSection minHeight={420}>
-        <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px 48px' }}>
+        <div id="compare-tools" style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px 48px' }}>
           <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:8, flexWrap:'wrap' as const, gap:12 }}>
             <div>
               <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:19, color:C.txt, letterSpacing:'-0.025em', marginBottom:4 }}>
@@ -1103,6 +1104,14 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           </div>
         </div>
       </DeferredSection>
+      )}
+
+      {/* ── Editorial sections (T3.2) — same JSON as the prerendered static HTML ── */}
+      {(filters.category as string) === 'All' && !filters.search && (
+        <>
+          <HomeTableOfContents C={C} navigate={navigate} tools={TOOLS} />
+          <HomeEditorialSections C={C} isDark={isDark} navigate={navigate} tools={TOOLS} />
+        </>
       )}
 
       {/* ── Newsletter ───────────────────────────────────────────────────── */}
