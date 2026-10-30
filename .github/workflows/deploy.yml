@@ -58,6 +58,14 @@ jobs:
         # making them crawlable by Google, Bing, and AI answer engines.
         run: npm run build
 
+      - name: Check static sections match the shared JSON
+        # T6.1: every <section id> on the static homepage must exist in
+        # data/homepage-content.json (or the short allow-list in the script), and every
+        # <h2> on the 8 category pages must come from data/category-content.json.
+        # A section added only in scripts/prerender.mjs would reach crawlers but not
+        # readers (React renders the JSON), so this fails the build. No browser needed.
+        run: node scripts/check-homepage-sections.mjs
+
       - name: Validate prerender output
         # Task 27: Ensure all routes are prerendered, schemas injected,
         # sitemap generated, and no regressions before deploying.

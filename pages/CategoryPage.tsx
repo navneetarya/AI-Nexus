@@ -2,11 +2,12 @@
 // Dynamic category landing pages — /best-ai-writing-tools/, /best-ai-image-tools/, etc.
 // Each category targets a high-volume keyword with unique editorial intro + FAQ.
 
-import React, { useState, lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import { TOOLS, SITE_CONFIG } from '../constants';
 import { Category, Tool } from '../types';
 import { ExternalLink, Star, ArrowRight, Zap, BookOpen } from 'lucide-react';
 import { SharedNav } from './SharedNav';
+import { CategoryIntroSections, CategoryDetailSections, CategoryFaq, categoryFaqPlain } from '../components/CategoryEditorial';
 // Perf: use the lightweight metadata list (no full post `content`) so this
 // route's bundle doesn't pull in every blog post's HTML body just to render
 // the "From the blog" cards. Full content is only needed on /blog/:slug itself,
@@ -28,30 +29,6 @@ const C = {
   barBrd: 'var(--bar-brd)',
 };
 
-// Collapsible FAQ row — click the +/− control to expand or collapse the answer.
-function FAQAccordionItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void; key?: React.Key }) {
-  return (
-    <div style={{ borderBottom: `1px solid ${C.barBrd}` }}>
-      <button
-        onClick={onToggle}
-        aria-expanded={open}
-        style={{
-          width: '100%', textAlign: 'left' as const, padding: '18px 0',
-          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-          background: 'none', border: 'none', cursor: 'pointer', gap: 12,
-          fontFamily: "'Inter',sans-serif", fontSize: 14, fontWeight: 700, color: C.txt,
-        }}
-      >
-        <span>{q}</span>
-        <span style={{ color: C.a1, fontSize: 20, lineHeight: 1, flexShrink: 0 }}>{open ? '\u2212' : '+'}</span>
-      </button>
-      {open && (
-        <p style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, margin: '0 0 18px' }}>{a}</p>
-      )}
-    </div>
-  );
-}
-
 // ── Category SEO metadata ────────────────────────────────────────────────────
 
 interface CategoryMeta {
@@ -60,8 +37,6 @@ interface CategoryMeta {
   metaDescription: string;
   h1: string;
   slug: string;
-  intro: string;
-  faqs: { q: string; a: string }[];
   emoji: string;
   color: string;
 }
@@ -75,22 +50,6 @@ const CATEGORY_META: Record<string, CategoryMeta> = {
     slug: 'best-ai-writing-tools',
     emoji: '✍️',
     color: '#a855f7',
-    intro: `Finding the best AI writing tools in 2026 means sorting through dozens of options that all promise to "write like a human." Every tool on this page has been independently researched — official documentation, 100+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
-
-The AI writing landscape has matured significantly. Tools like Grammarly now go far beyond grammar checking, offering full AI text generation and tone rewriting. Writesonic and Rytr have built out SEO-optimised article writers that can produce first drafts in minutes. Jasper remains a top choice for marketing teams, while Quillbot dominates the paraphrasing and summarisation niche.
-
-What separates the best AI writing tools from the rest comes down to three things: output quality (does the text sound human and accurate?), ease of use (can you get results without a 30-minute learning curve?), and value for money (does the free plan actually let you do real work?). Every tool below is scored on these criteria.
-
-Whether you are a blogger writing weekly posts, a freelancer handling multiple client projects, a student working on essays, or a marketer producing ad copy at scale — there is a writing tool here that fits your workflow. Every review includes real output comparisons, honest pros and cons, and a clear recommendation on who each tool is best for.
-
-Browse the tools below, read the full reviews, and pick the one that matches your writing needs and budget.`,
-    faqs: [
-      { q: 'What is the best AI writing tool in 2026?', a: 'Grammarly is the best overall AI writing tool for editing and improving existing text, thanks to its accuracy and universal app integration. For generating new content from scratch, Writesonic offers the best combination of SEO features and output quality. Rytr is the best budget option at $9/month with unlimited characters.' },
-      { q: 'Are there any free AI writing tools?', a: 'Yes — Grammarly offers unlimited grammar and tone checks for free. Rytr gives 10,000 free characters per month with 40+ templates. Quillbot provides free paraphrasing up to 125 words per input. All three work without a credit card.' },
-      { q: 'Can AI writing tools replace human writers?', a: 'Not yet. AI writing tools are best used as first-draft generators and editing assistants. They save 50–70% of writing time but still need human review for accuracy, brand voice, and nuance. The best workflow is AI for the first draft, human for the final polish.' },
-      { q: 'Which AI writing tool is best for SEO blog posts?', a: 'Writesonic is the best for SEO blog posts, with a built-in SEO checker and keyword optimisation. Jasper AI is a close second for teams that need brand voice consistency across content. Both produce well-structured articles that rank.' },
-      { q: 'How much do AI writing tools cost?', a: 'Most AI writing tools range from $9 to $49 per month. Rytr starts at $9/month for unlimited characters. Writesonic starts at $16/month. Grammarly Premium is $12/month. Jasper starts at $59/month billed annually. Many offer free plans or trials to get started.' },
-    ],
   },
 
   [Category.IMAGE]: {
@@ -101,21 +60,6 @@ Browse the tools below, read the full reviews, and pick the one that matches you
     slug: 'best-ai-image-tools',
     emoji: '🎨',
     color: '#3b82f6',
-    intro: `The best AI image generators in 2026 can create stunning visuals from a simple text prompt — but choosing the right one depends entirely on what you need. Product photos? Marketing graphics? Digital art? Each tool has different strengths, researched and compared head-to-head below.
-
-Leonardo.ai stands out for its generous free plan — 150 credits per day, which translates to roughly 1,500 images per month at no cost. For professional product photography, PhotoRoom automates background removal and scene generation. Midjourney remains the gold standard for artistic quality, though it requires Discord access and a paid subscription.
-
-What matters most when choosing an AI image tool is output quality, creative control, and commercial usage rights. Some tools generate beautiful images but restrict commercial use on free plans. Others offer full commercial licences but produce less refined results. The exact terms for each tool are documented in the reviews below, based on official pricing pages and licence terms.
-
-The technology has advanced dramatically — modern AI image generators handle complex compositions, realistic lighting, and specific art styles with remarkable consistency. Whether you are creating social media content, e-commerce product shots, presentation graphics, or creative artwork, there is a tool here that fits your use case.
-
-Each tool below includes sample outputs, honest quality assessments, pricing breakdowns, and a verdict on who should use it. Browse the list and click through to the full review for any tool that catches your eye.`,
-    faqs: [
-      { q: 'What is the best AI image generator in 2026?', a: 'Leonardo.ai is the best free AI image generator with 150 credits per day. For the highest artistic quality, Midjourney remains the leader. PhotoRoom is the best for product photography and e-commerce. The best choice depends on your specific use case and budget.' },
-      { q: 'Are AI-generated images free to use commercially?', a: 'It depends on the tool and plan. Leonardo.ai allows commercial use on its free plan. Midjourney grants commercial rights on all paid plans. Always check each tool\'s specific terms of service before using AI-generated images in commercial projects or client work.' },
-      { q: 'Which AI image tool has the best free plan?', a: 'Leonardo.ai has the most generous free plan — 150 credits per day with no credit card required. That translates to approximately 1,500 images per month. PhotoRoom also offers a free tier but adds a watermark to exports.' },
-      { q: 'Can AI image generators create realistic photos?', a: 'Yes — modern AI image generators like Midjourney and Leonardo.ai can produce photorealistic images that are difficult to distinguish from real photographs. Quality depends heavily on prompt engineering and the specific model used.' },
-    ],
   },
 
   [Category.VIDEO]: {
@@ -126,22 +70,6 @@ Each tool below includes sample outputs, honest quality assessments, pricing bre
     slug: 'best-ai-video-tools',
     emoji: '🎬',
     color: '#ef4444',
-    intro: `The best AI video editors and generators in 2026 have made professional video creation accessible to everyone — even if you have zero editing experience. Each tool on this page has been independently researched with verified user data and official documentation to assess how they handle everything from short-form social clips to full-length YouTube videos.
-
-InVideo leads the pack for text-to-video creation. Give it a topic or script and it generates a complete video with stock footage, transitions, and voiceover. Opus Clip specialises in repurposing long-form content — feed it a podcast or webinar recording and it automatically extracts the most engaging short clips for TikTok, Reels, and Shorts.
-
-The AI video space is evolving faster than any other category. Tools that struggled with basic transitions a year ago now handle multi-scene compositions, AI avatars, automatic captioning, and intelligent b-roll selection. The biggest differentiator between tools is whether they excel at creation from scratch or editing and repurposing existing footage.
-
-For content creators, the real question is workflow fit. Do you need to turn blog posts into videos? Repurpose podcasts into clips? Create explainer videos with AI avatars? Each tool below is optimised for a different workflow, and I have mapped out exactly which one fits each use case.
-
-Every review includes documented sample outputs, rendering time benchmarks from verified user reports, export quality comparisons, and honest verdicts on whether the free plan is genuinely usable for production work.`,
-    faqs: [
-      { q: 'What is the best AI video editor in 2026?', a: 'InVideo is the best all-round AI video tool for creating videos from text prompts. Opus Clip is the best for repurposing long videos into short clips. The best choice depends on whether you need to create from scratch or edit existing footage.' },
-      { q: 'Can AI make videos from text?', a: 'Yes — tools like InVideo can generate complete videos from a text prompt or script. They automatically select stock footage, add transitions, generate voiceover, and add captions. The quality is good enough for social media and marketing content.' },
-      { q: 'Which AI video tool is best for YouTube Shorts?', a: 'Opus Clip is the best tool for creating YouTube Shorts from existing long-form content. It uses AI to identify the most engaging moments and automatically formats them for vertical video with captions.' },
-      { q: 'Are there free AI video tools?', a: 'InVideo and Opus Clip both offer free plans. InVideo allows 10 exports per week with a watermark. Opus Clip gives 60 minutes of processing per month. Both are usable for testing but most creators upgrade for watermark-free exports.' },
-      { q: 'How long does AI video rendering take?', a: 'Most AI video tools render a 1-minute video in 2–5 minutes. Longer videos with complex effects can take 10–15 minutes. Rendering speed has improved significantly in 2026 compared to earlier tools.' },
-    ],
   },
 
   [Category.AUDIO]: {
@@ -152,19 +80,6 @@ Every review includes documented sample outputs, rendering time benchmarks from 
     slug: 'best-ai-audio-tools',
     emoji: '🎙️',
     color: '#f97316',
-    intro: `The best AI audio tools in 2026 — independently researched across official documentation, 100+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
-
-For podcast creators: Podcastle's free plan includes 1 hour of remote recording (lifetime) and needs no credit card. Murf AI gives a limited 10 minutes of free voice generation across 200+ voices. Descript's free plan includes 60 media minutes a month of transcript-based audio editing.
-
-For voiceover and TTS: ElevenLabs' free tier gives 10,000 credits per month for realistic speech. Murf covers commercial voiceover workflows. The right choice depends on whether you need voice cloning (ElevenLabs), commercial rights (Murf), or podcast editing (Podcastle or Descript).
-
-Every tool below has been researched against its official documentation and verified user reviews. Pricing is verified against live pricing pages as of May 2026.`,
-    faqs: [
-      { q: 'What is the best free AI audio tool in 2026?', a: 'ElevenLabs offers the most generous free plan for AI voice generation — 10,000 credits per month. For podcast recording and editing, Podcastle gives 3 hours per month free with AI noise removal. For transcription-based podcast editing, Descript offers 1 free hour per month.' },
-      { q: 'Do AI voices sound realistic?', a: 'Yes — modern AI voices from tools like Murf AI and ElevenLabs are nearly indistinguishable from human recordings for standard narration. They handle pacing, emphasis, and natural pauses well. The gap with human voice actors is mainly in emotional range and character performances.' },
-      { q: 'What is the cheapest AI podcast tool?', a: 'Podcastle starts at $11.99 per month (billed annually) for its Essentials plan after the free tier. Descript starts at $16 per month (billed annually). For voice-only content without a podcast editing workflow, ElevenLabs starts at $5 per month (billed annually) for 30,000 credits.' },
-      { q: 'Can I use AI voiceovers in commercial videos?', a: 'Yes — both Murf AI and Podcastle allow commercial use of AI-generated voiceovers on their paid plans. Free plans may have restrictions. Always check the specific terms of service for your intended commercial use.' },
-    ],
   },
 
   [Category.MARKETING]: {
@@ -175,22 +90,6 @@ Every tool below has been researched against its official documentation and veri
     slug: 'best-ai-marketing-tools',
     emoji: '📊',
     color: '#ec4899',
-    intro: `The best AI marketing tools in 2026 automate the most time-consuming parts of digital marketing — from writing ad copy and scheduling social posts to analysing campaign performance and generating content ideas. Each tool on this page has been independently researched across official documentation, live pricing verification, and verified user reviews.
-
-AI marketing tools have moved beyond simple text generation. The leading platforms now combine content creation, scheduling, analytics, and optimisation into unified workflows. Instead of using five separate tools for social media, email, ads, SEO, and analytics, a single AI marketing platform can handle most of these tasks.
-
-What I look for in AI marketing tools is practical time savings. How many hours per week does this tool actually save? Does it produce copy that converts without heavy editing? Can it maintain brand voice across channels? These are the questions I answer in each review below.
-
-For small teams and solo marketers, the right AI marketing tool can replace a part-time hire. For agencies, these tools scale output across multiple client accounts without proportionally scaling headcount. The ROI calculation is straightforward — if the tool saves 10+ hours per week at $20–50 per month, it pays for itself many times over.
-
-Every review on this page includes real campaign examples, output quality assessments, integration capabilities, and my honest take on whether the pricing justifies the features. Browse the tools below to find the right fit for your marketing stack.`,
-    faqs: [
-      { q: 'What is the best AI marketing tool in 2026?', a: 'The best AI marketing tool depends on your focus area. For social media management, Ocoya combines content creation with scheduling. For ad copy and content marketing, Jasper AI delivers consistent brand-voice output. For email marketing, tools with AI personalisation features deliver the highest ROI.' },
-      { q: 'Can AI tools write effective ad copy?', a: 'Yes — AI marketing tools like Jasper and Writesonic can generate high-converting ad copy for Google Ads, Facebook, and Instagram. The best results come from providing clear briefs with target audience details, then editing the AI output for brand voice and specificity.' },
-      { q: 'How much time do AI marketing tools save?', a: 'Most marketers report saving 8–15 hours per week using AI marketing tools. The biggest time savings come from automated social media content creation (3–5 hours), ad copy generation (2–3 hours), and email draft writing (2–4 hours per week).' },
-      { q: 'Are AI marketing tools worth the cost for small businesses?', a: 'Yes — most AI marketing tools cost $20–50/month and save 10+ hours per week. For a small business owner or solo marketer, that is an excellent return on investment. Start with a free trial to validate the time savings before committing to a paid plan.' },
-      { q: 'Do AI marketing tools integrate with existing platforms?', a: 'Most AI marketing tools integrate with major platforms including Google Ads, Facebook Business, Instagram, LinkedIn, Mailchimp, HubSpot, and Shopify. Check each tool\'s integration list to ensure compatibility with your existing marketing stack.' },
-    ],
   },
 
   [Category.DESIGN]: {
@@ -201,19 +100,6 @@ Every review on this page includes real campaign examples, output quality assess
     slug: 'best-ai-design-tools',
     emoji: '💎',
     color: '#14b8a6',
-    intro: `The best AI design tools in 2026 let you create professional presentations, social media graphics, and marketing materials without any design skills — independently researched across official documentation, 100+ verified user reviews, and live pricing verification.
-
-Gamma has emerged as the standout for AI-powered presentations. Give it a topic and it generates a complete slide deck with proper layout, imagery, and visual hierarchy. The results are genuinely better than what most people create manually in PowerPoint. For broader graphic design, Canva AI's AI-powered templates and smart resize features have made professional design accessible to non-designers.
-
-What separates great AI design tools from gimmicky ones is output polish. Can you send the result to a client without embarrassment? Does it look like a professional designer created it? That is the bar used in every review below.
-
-Each review includes documented design samples, template quality assessments, export format options, and honest comparisons with traditional design tools.`,
-    faqs: [
-      { q: 'What is the best AI design tool in 2026?', a: 'Gamma is the best AI design tool for presentations and decks — it generates professional slide decks from a text prompt. For social media graphics, Canva with its AI features offers the broadest template library. The best choice depends on whether you need presentations, social graphics, or brand materials.' },
-      { q: 'Can AI design tools replace a graphic designer?', a: 'For standard business materials — presentations, social posts, basic marketing graphics — yes, AI design tools can replace a freelance designer for most tasks. For brand identity work, complex illustrations, and custom creative direction, human designers still deliver superior results.' },
-      { q: 'Which AI design tool has the best free plan?', a: 'Gamma offers 400 free AI credits with unlimited sharing and viewing — enough to create approximately 40 presentations. Canva offers a generous free tier for basic design work. Both are usable without a credit card.' },
-      { q: 'Can AI design tools maintain brand consistency?', a: 'Yes — most AI design tools now support brand kits where you upload your logo, colours, and fonts. The AI then applies these consistently across all generated designs. This feature is typically available on paid plans.' },
-    ],
   },
 
   [Category.CODING]: {
@@ -224,22 +110,6 @@ Each review includes documented design samples, template quality assessments, ex
     slug: 'best-ai-coding-tools',
     emoji: '💻',
     color: '#22c55e',
-    intro: `The best AI coding tools in 2026 go far beyond autocomplete — they write entire functions, debug complex errors, explain unfamiliar codebases, and even build full applications from natural language descriptions. Each tool on this page has been researched against official documentation, verified user reviews, and real-world reports across multiple programming languages.
-
-Replit has transformed from a simple online IDE into a powerful AI-first development platform. Its AI assistant can generate, explain, and debug code directly in the browser. GitHub Copilot remains the industry standard for IDE-integrated code completion, offering suggestions that are right more often than not. Newer tools like Cursor take a different approach with chat-first coding workflows.
-
-What matters most in an AI coding tool is accuracy and context awareness. A tool that generates syntactically correct but logically wrong code creates more work than it saves. The best tools understand your entire codebase, follow your coding conventions, and produce code that integrates cleanly with existing architecture.
-
-For beginners, AI coding tools are game-changing — they accelerate learning by showing idiomatic code patterns and explaining concepts in context. For experienced developers, they eliminate boilerplate, speed up prototyping, and handle routine tasks like writing tests, documentation, and type definitions.
-
-Each review below includes code samples generated by the tool, accuracy benchmarks across languages, integration details, and my honest assessment of where each tool excels and where it falls short. Whether you are a solo developer or part of a team, there is an AI coding assistant here that fits your workflow.`,
-    faqs: [
-      { q: 'What is the best AI coding tool in 2026?', a: 'GitHub Copilot is the best AI coding tool for IDE-integrated code completion across all major languages. Replit is the best for browser-based development and learning. Cursor is the best for chat-driven coding workflows. The right choice depends on your IDE preference and coding style.' },
-      { q: 'Are AI coding tools worth it for beginners?', a: 'Yes — AI coding tools accelerate learning by showing correct code patterns, explaining errors in plain language, and providing context-aware suggestions. Replit is particularly good for beginners with its free browser-based environment and AI assistant.' },
-      { q: 'Can AI write production-quality code?', a: 'AI coding tools produce production-quality code for standard patterns — API calls, CRUD operations, data transformations, and utility functions. Complex business logic, architecture decisions, and security-critical code still require experienced human review.' },
-      { q: 'Which AI coding tool has the best free plan?', a: 'Replit offers 3 free public Repls with AI autocomplete. GitHub Copilot offers a free tier for individual developers on public repositories. Both are usable for learning and small projects without a credit card.' },
-      { q: 'Do AI coding tools support all programming languages?', a: 'Major AI coding tools support all popular languages — Python, JavaScript, TypeScript, Java, C#, Go, Rust, and more. Performance is best for Python and JavaScript/TypeScript, which have the largest training datasets. Niche languages have less accurate suggestions.' },
-    ],
   },
 
   [Category.PRODUCTIVITY]: {
@@ -250,22 +120,6 @@ Each review below includes code samples generated by the tool, accuracy benchmar
     slug: 'best-ai-productivity-tools',
     emoji: '⚡',
     color: '#f59e0b',
-    intro: `The best AI productivity tools in 2026 do not just organise your tasks — they actively help you think, plan, and execute faster. Every tool on this page has been independently researched — official documentation, 100+ verified user reviews, and live pricing verification by Navneet Arya (AI Automation & Performance Testing Leader, BOLD).
-
-Taskade combines AI-powered task management, project planning, and team collaboration into a single platform. Its AI agents can break down complex projects into actionable tasks, generate meeting agendas, and even automate repetitive workflows. For individual knowledge workers, AI-enhanced note-taking tools have transformed how we capture, organise, and retrieve information.
-
-The key question with AI productivity tools is whether they reduce friction or add it. A tool that requires 20 minutes of setup for every task is not productive, no matter how smart its AI is. The best tools integrate seamlessly into existing workflows and deliver value with minimal configuration.
-
-We evaluate productivity tools on a simple metric: net time saved per week. After accounting for the learning curve, setup time, and documented edge cases from verified user reviews, does this tool leave you with more free hours? Every recommendation below is backed by real user data.
-
-For freelancers managing multiple clients, students juggling coursework, or team leads coordinating projects — the right AI productivity tool can reclaim 5–10 hours per week. Each review below includes a clear recommendation and honest verdict on who each tool is best for.`,
-    faqs: [
-      { q: 'What is the best AI productivity tool in 2026?', a: 'Taskade is the best all-in-one AI productivity tool, combining task management, project planning, and AI agents in a single platform. Notion AI is the best for knowledge management and note-taking. The best choice depends on whether you prioritise task management or information organisation.' },
-      { q: 'Can AI productivity tools replace project management software?', a: 'For small teams and solo users, yes — tools like Taskade handle tasks, projects, timelines, and collaboration with AI assistance. For large teams with complex workflows, dedicated project management tools like Jira or Asana still offer more granular control and enterprise features.' },
-      { q: 'How much time do AI productivity tools actually save?', a: 'Research shows AI productivity tools save 5–10 hours per week for active users. The biggest savings come from AI task breakdown (turning vague goals into actionable steps), automated meeting notes, and intelligent task prioritisation.' },
-      { q: 'Are there free AI productivity tools?', a: 'Taskade offers a free plan with 1 workspace and 5 projects. Notion offers a free personal plan with AI features. Both are genuinely usable on the free tier for individual productivity, though teams will need paid plans for collaboration features.' },
-      { q: 'Do AI productivity tools work offline?', a: 'Most AI productivity tools require an internet connection for AI features since processing happens on remote servers. Some, like Notion, offer offline editing with AI features syncing when you reconnect. Check each tool\'s offline capabilities if this is important for your workflow.' },
-    ],
   },
 };
 
@@ -447,8 +301,6 @@ interface Props {
 }
 
 export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props) {
-  // Which FAQ accordion row is expanded (null = all collapsed)
-  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
   const meta = CATEGORY_META[category];
 
   // Fallback if category not found
@@ -473,7 +325,7 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
   return (
     <div style={{ background: C.bg, minHeight: '100vh', color: C.txt }}>
       <BreadcrumbSchema meta={meta} />
-      <FAQSchema faqs={meta.faqs} />
+      <FAQSchema faqs={categoryFaqPlain(meta.slug)} />
       <ItemListSchema tools={filteredTools} meta={meta} />
 
       <SharedNav navigate={navigate} isDark={isDark} toggleTheme={toggleTheme} activePage="home" />
@@ -541,20 +393,10 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
         </div>
       </div>
 
-      {/* ── Editorial intro ─────────────────────────────────────────────── */}
+      {/* ── Editorial intro: key takeaways, how we research, landscape (T5.4) ─────────
+          Same data/category-content.json as the prerendered static HTML. */}
       <div style={{ maxWidth: 780, margin: '0 auto', padding: '40px 24px 8px' }}>
-        <div style={{
-          background: C.surf, border: `1px solid ${C.barBrd}`, borderRadius: 16, padding: '24px 28px',
-        }}>
-          <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 18, fontWeight: 700, color: C.txt, marginBottom: 12 }}>
-            {meta.emoji} How we research these {meta.title.replace('Best AI ', '').replace(' 2026', '').toLowerCase()}
-          </h2>
-          {meta.intro.split('\n\n').map((p, i) => (
-            <p key={i} style={{ fontSize: 14, color: C.txt, lineHeight: 1.75, marginBottom: i < meta.intro.split('\n\n').length - 1 ? 10 : 0 }}>
-              {p}
-            </p>
-          ))}
-        </div>
+        <CategoryIntroSections slug={meta.slug} C={C} navigate={navigate} />
       </div>
 
       {/* ── Tool grid ────────────────────────────────────────────────────── */}
@@ -577,6 +419,11 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
             </button>
           </div>
         )}
+      </div>
+
+      {/* ── Closer look, pricing at a glance, common mistakes (T5.4) ───────────── */}
+      <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px 8px' }}>
+        <CategoryDetailSections slug={meta.slug} C={C} navigate={navigate} />
       </div>
 
       {/* ── From the blog (Day 1 fix: hub → cluster internal linking) ─────── */}
@@ -610,20 +457,9 @@ export function CategoryPage({ category, navigate, isDark, toggleTheme }: Props)
         </div>
       )}
 
-      {/* ── FAQ section ──────────────────────────────────────────────────── */}
+      {/* ── FAQ (T5.4): same questions as the FAQPage JSON-LD and the static HTML ── */}
       <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px 48px' }}>
-        <h2 style={{ fontFamily: "'Inter',sans-serif", fontSize: 20, fontWeight: 800, color: C.txt, marginBottom: 20 }}>
-          Frequently Asked Questions
-        </h2>
-        {meta.faqs.map(({ q, a }, i) => (
-          <FAQAccordionItem
-            key={i}
-            q={q}
-            a={a}
-            open={openFaqIdx === i}
-            onToggle={() => setOpenFaqIdx(openFaqIdx === i ? null : i)}
-          />
-        ))}
+        <CategoryFaq slug={meta.slug} C={C} navigate={navigate} />
       </div>
 
       {/* ── Newsletter CTA ───────────────────────────────────────────────── */}
