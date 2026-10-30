@@ -1,6 +1,7 @@
 {
   "version": 1,
   "spec": "docs/homepage-content-format.md",
+  "updated": "2026-09-20",
   "sections": [
     {
       "id": "key-takeaways",
@@ -224,6 +225,208 @@
       ]
     },
     {
+      "id": "how-to-choose-ai-tool",
+      "variant": "plain",
+      "heading": {
+        "text": "How to Choose the Right AI Tool in 3 Steps"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "lead",
+          "text": "**Identify your use case, test free plans on a real task, then check the pricing ceiling before you pay.**"
+        },
+        {
+          "type": "orderedList",
+          "variant": "steps",
+          "items": [
+            {
+              "id": "step-1",
+              "text": "**Identify your primary use case.** Writing, image generation, video, coding, and productivity tools are very different categories. Picking a \"general-purpose\" tool often means compromising on the feature that actually matters to your workflow. Narrow your use case first."
+            },
+            {
+              "id": "step-2",
+              "text": "**Test free plans before paying.** Every major AI tool has a functional free tier. Run 2–3 tools on a real task from your actual workflow before purchasing — not a demo task. Grammarly, Leonardo.ai, and Rytr all have no-credit-card free plans you can test today."
+            },
+            {
+              "id": "step-3",
+              "text": "**Check what's behind the paywall.** Most useful AI features cost $9–$20/month. Before committing, confirm the features you need are not locked behind an enterprise plan ($60+/month). Our reviews document exactly which features are free vs. paid for every tool."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "id": "decision-framework",
+          "variant": "sub",
+          "text": "A Four-Question Decision Framework"
+        },
+        {
+          "type": "paragraph",
+          "variant": "small",
+          "text": "When two tools both fit your use case, these four questions usually separate them:"
+        },
+        {
+          "type": "orderedList",
+          "variant": "compact",
+          "items": [
+            {
+              "id": "framework-1",
+              "text": "**How often will you use it?** Occasional use usually fits a free tier; daily use is where plan limits (credits, message caps, character quotas) start to matter. Compare the free allowance in each review against your real weekly volume."
+            },
+            {
+              "id": "framework-2",
+              "text": "**What is your monthly price ceiling?** Decide the number before you look at plans. Then check which features sit at or below it on the [pricing tracker](/pricing-tracker/) or the tool's own pricing page."
+            },
+            {
+              "id": "framework-3",
+              "text": "**What data will you put into it?** If the work involves client, employee, or otherwise confidential material, read the vendor's data-use and retention terms first, and check whether they differ between free and paid plans."
+            },
+            {
+              "id": "framework-4",
+              "text": "**How hard is it to leave?** A tool that only works inside its own editor, or that holds your content in a format you cannot export, costs more to switch away from later. Prefer tools whose output you can take elsewhere."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "variant": "note",
+          "text": "See full evaluation criteria at [our Methodology page](/methodology/), aligned with [Google's helpful content guidelines](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)."
+        }
+      ]
+    },
+    {
+      "id": "when-not-to-use-ai-tools",
+      "variant": "plain",
+      "heading": {
+        "text": "When NOT to Use AI Tools"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "lead",
+          "text": "**Skip or limit AI tools when a wrong answer is costly, the data is confidential, or the task is faster and better done by hand.**"
+        },
+        {
+          "type": "paragraph",
+          "variant": "smallLoose",
+          "text": "AI tools are strong at drafting, summarising, and speeding up repetitive work. They are weaker where accuracy, accountability, or your own voice is the whole point. The cases below are where a human-only or human-led process is usually the safer choice."
+        },
+        {
+          "type": "list",
+          "variant": "compact",
+          "items": [
+            "**High-stakes advice (legal, medical, financial, safety).** AI output can read confidently and still be wrong. If an error could harm someone or cost real money, treat the tool as a drafting aid at most and have a qualified person review the result.",
+            "**Confidential or regulated data.** Do not paste client, employee, or personal data into a tool until you have read its data-use and retention terms for your specific plan. When in doubt, leave the data out.",
+            "**Work you cannot verify.** If you do not know the subject well enough to spot a mistake, you cannot tell whether the output is good. Facts, figures, citations, and code behaviour all need checking against a primary source.",
+            "**Small one-off edits.** Setting up a prompt, reviewing the result, and correcting it can take longer than fixing a sentence or a cell yourself.",
+            "**Writing that has to sound like you, or show real experience.** Personal stories, opinions, and first-hand expertise are what readers value in that kind of writing, and a generic draft tends to dilute them.",
+            "**Rules that forbid it.** Some schools, employers, publishers, and clients restrict or require disclosure of AI use. Check the policy before you rely on a tool."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "variant": "note",
+          "text": "Each of our [tool reviews](/tools/grammarly/) lists cons and limits alongside the pros, so you can see where a specific tool falls short before you rely on it."
+        }
+      ]
+    },
+    {
+      "id": "free-vs-paid-perspectives",
+      "variant": "spaced",
+      "heading": {
+        "text": "Free vs. Paid AI Tools: Which Side Are You On?"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "leadLoose",
+          "text": "**There's no single right answer — it depends on how often you actually use the tool, and reasonable people land on different sides of this.**"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "variant": "subFlat",
+          "text": "The Case for Starting Free"
+        },
+        {
+          "type": "paragraph",
+          "variant": "smallWide",
+          "text": "According to feedback we've reviewed from creator communities on Reddit and product forums, most casual users get everything they need from free tiers alone. Grammarly's free plan has no word limit, Leonardo.ai gives 150 image credits a day, and Rytr offers 10,000 characters a month — enough for students, hobbyists, and anyone testing a workflow before committing budget. Some users argue paying immediately is premature until you've confirmed the tool actually fits your habits."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "variant": "subFlat",
+          "text": "The Case for Paying From Day One"
+        },
+        {
+          "type": "paragraph",
+          "variant": "smallEnd",
+          "text": "On the other hand, freelancers and professionals who bill clients by the hour often find the free-tier ceiling — rate limits, watermarks, slower queues — costs more in lost time than a $9–$20/month subscription would. Industry analysts covering productivity software note that paid AI tools tend to pay for themselves within the first one or two billable hours saved per month. Another perspective worth weighing: if the tool touches client-facing work, the free tier's usage caps and slower generation speeds can be a real liability, not just an inconvenience."
+        }
+      ]
+    },
+    {
+      "id": "verdict",
+      "variant": "spaced",
+      "heading": {
+        "text": "Our Verdict: Which AI Tool Should You Actually Pick?"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "leadLoose",
+          "text": "**If you only take one thing from this page: start with the free tier closest to your use case, give it one real task, then upgrade only once you hit a wall.**"
+        },
+        {
+          "type": "paragraph",
+          "variant": "smallWide",
+          "text": "You should try Grammarly or Rytr first if you write regularly, Cursor if you code daily, and Leonardo.ai if you need images — all three have no-credit-card free plans. Upgrade to a paid tier only after you can point to a specific limit it removes for you, not because a subscription \"feels\" more serious. Avoid stacking multiple overlapping paid tools in the same category; one well-chosen paid subscription almost always beats two half-used ones."
+        },
+        {
+          "type": "quote",
+          "cite": "/about/",
+          "text": "\"The tools that win in 2026 aren't the ones with the longest feature list — they're the ones that remove one specific bottleneck from your actual workflow. Test against a real task before you pay for anything.\"",
+          "attribution": "{{author}}, Independent AI Tools Researcher"
+        },
+        {
+          "type": "paragraph",
+          "variant": "note",
+          "text": "For the full breakdown behind these recommendations, see our [evaluation methodology](/methodology/) or [browse all {{toolCount}} researched AI tools →](/)."
+        }
+      ]
+    },
+    {
+      "id": "common-mistakes",
+      "variant": "plain",
+      "heading": {
+        "text": "What mistakes do people make when picking an AI tool?"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "lead",
+          "text": "**The most common mistake is picking a tool based on a features list instead of a real workflow test — most AI tools look similar on paper but behave very differently on your actual content.**"
+        },
+        {
+          "type": "paragraph",
+          "variant": "body",
+          "text": "Buying an annual plan before testing the free tier is the second most common mistake. Every tool on this site that has a usable free plan is marked as such precisely so you can test on your own writing, code, or images before paying for a year upfront. A tool that looks great on a vendor's demo video can behave very differently on your actual project."
+        },
+        {
+          "type": "paragraph",
+          "variant": "body",
+          "text": "Another common mistake is stacking overlapping subscriptions — paying for both Jasper and Writesonic, for example, when they solve the same problem for most users. Before adding a second tool in the same category, cancel or downgrade the first one for a billing cycle and see if you actually miss it."
+        },
+        {
+          "type": "paragraph",
+          "variant": "bodyEnd",
+          "text": "Finally, people underweight export and integration limits. A writing tool that produces great drafts but locks exports behind a paid plan, or a video tool that adds a watermark on free renders, changes the real cost of \"free\" significantly. Every review on this site documents these limits explicitly rather than only listing headline features."
+        }
+      ]
+    },
+    {
       "id": "faq",
       "ariaLabel": "Frequently Asked Questions",
       "variant": "faq",
@@ -255,6 +458,35 @@
               "a": "The best combination for content creators in 2026 is: Rytr or Writesonic for written content, Opus Clip for repurposing long videos into short clips, Leonardo.ai for thumbnail and visual creation, and Ocoya for social media scheduling. Each has a free plan you can test before committing to a paid subscription."
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "about-research",
+      "variant": "compact",
+      "heading": {
+        "text": "About This Research"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "variant": "leadTight",
+          "text": "**All reviews are written independently — no sponsored rankings, no paid placements, ever.**"
+        },
+        {
+          "type": "paragraph",
+          "variant": "body",
+          "text": "AI Nexus is maintained by **{{author}}**, an independent AI tools researcher since 2022 and AI Automation & Performance Testing Leader at BOLD. Our research is based on publicly available feature documentation, transparent pricing pages, verified [Trustpilot](https://www.trustpilot.com) and [G2](https://www.g2.com) review data (100+ reviews aggregated per tool), and creator community feedback from Reddit and product forums. Our evaluation methodology covers pricing accuracy, feature completeness, free-plan value, and real-world use-case fit."
+        },
+        {
+          "type": "paragraph",
+          "variant": "body",
+          "text": "According to the [2026 AI Index Report](https://hai.stanford.edu/ai-index/2026-ai-index-report) from Stanford's Institute for Human-Centered Artificial Intelligence, AI adoption is accelerating across every professional sector as technical capabilities and investment both increase. That trend is exactly why independent, tool-by-tool research matters more than trusting marketing pages alone."
+        },
+        {
+          "type": "paragraph",
+          "variant": "noteLoose",
+          "text": "**Data points:** {{toolCount}} tools researched · 100+ reviews per tool aggregated · Pricing verified quarterly against official pages · No sponsored rankings · Research ongoing since 2022 · [About the Reviewer](/about/) · [Full Methodology](/methodology/)"
         }
       ]
     }

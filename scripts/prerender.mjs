@@ -109,7 +109,8 @@ const PAGE_LAST_UPDATED = {
   pricingTracker: (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'pricing', 'latest.json'), 'utf8')).snapshotISO; } catch { return '2026-10-22'; } })(),
   voiceCalculator: '2026-10-22',
   matcher: '2026-10-22',
-  home:        '2026-09-20',
+  // The homepage's content lives in data/homepage-content.json, so its "updated" date lives there too. BUMP IT THERE when you change homepage content.
+  home:        (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'homepage-content.json'), 'utf8')).updated; } catch { return '2026-09-20'; } })(),
   about:       '2026-09-20',
   methodology: '2026-09-20',
 };
@@ -8989,7 +8990,7 @@ ${items}
   const homePricingDate = new Date(PAGE_LAST_UPDATED.pricingTracker + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   // T1.2: shared homepage content (data/homepage-content.json) rendered to static HTML here and to React by components/ContentBlocks.tsx.
   const HOME_CONTENT_CTX = {
-    site: SITE, toolCount: TOOLS.length, year: YEAR, tools: TOOLS, pricingToolCount: homePricingToolCount,
+    site: SITE, author: AUTHOR, toolCount: TOOLS.length, year: YEAR, tools: TOOLS, pricingToolCount: homePricingToolCount,
     homeDate: { iso: PAGE_LAST_UPDATED.home, label: displayDate },
     pricingDate: { iso: PAGE_LAST_UPDATED.pricingTracker, label: homePricingDate },
   };
@@ -9077,43 +9078,10 @@ ${items}
     ${renderHomeSectionHtml(HOME_CONTENT, 'ai-tool-by-use-case', HOME_CONTENT_CTX)}
 
     <!-- ── Section 4: How to choose (numbered steps) ─────────────────── -->
-    <section id="how-to-choose-ai-tool" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">How to Choose the Right AI Tool in 3 Steps</h2>
-      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>Identify your use case, test free plans on a real task, then check the pricing ceiling before you pay.</strong></p>
-      <ol style="margin:0 0 14px;padding-left:22px;line-height:1.9;font-size:.95rem;color:#444">
-        <li id="step-1" style="margin-bottom:8px"><strong>Identify your primary use case.</strong> Writing, image generation, video, coding, and productivity tools are very different categories. Picking a "general-purpose" tool often means compromising on the feature that actually matters to your workflow. Narrow your use case first.</li>
-        <li id="step-2" style="margin-bottom:8px"><strong>Test free plans before paying.</strong> Every major AI tool has a functional free tier. Run 2–3 tools on a real task from your actual workflow before purchasing — not a demo task. Grammarly, Leonardo.ai, and Rytr all have no-credit-card free plans you can test today.</li>
-        <li id="step-3" style="margin-bottom:8px"><strong>Check what's behind the paywall.</strong> Most useful AI features cost $9–$20/month. Before committing, confirm the features you need are not locked behind an enterprise plan ($60+/month). Our reviews document exactly which features are free vs. paid for every tool.</li>
-      </ol>
-      <h3 id="decision-framework" style="font-size:1.05rem;margin:16px 0 6px;color:#0F1C1A">A Four-Question Decision Framework</h3>
-      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:8px">When two tools both fit your use case, these four questions usually separate them:</p>
-      <ol style="margin:0 0 14px;padding-left:22px;line-height:1.8;font-size:.9rem;color:#444">
-        <li id="framework-1" style="margin-bottom:6px"><strong>How often will you use it?</strong> Occasional use usually fits a free tier; daily use is where plan limits (credits, message caps, character quotas) start to matter. Compare the free allowance in each review against your real weekly volume.</li>
-        <li id="framework-2" style="margin-bottom:6px"><strong>What is your monthly price ceiling?</strong> Decide the number before you look at plans. Then check which features sit at or below it on the <a href="${SITE}/pricing-tracker/" style="color:#0D9488">pricing tracker</a> or the tool's own pricing page.</li>
-        <li id="framework-3" style="margin-bottom:6px"><strong>What data will you put into it?</strong> If the work involves client, employee, or otherwise confidential material, read the vendor's data-use and retention terms first, and check whether they differ between free and paid plans.</li>
-        <li id="framework-4" style="margin-bottom:6px"><strong>How hard is it to leave?</strong> A tool that only works inside its own editor, or that holds your content in a format you cannot export, costs more to switch away from later. Prefer tools whose output you can take elsewhere.</li>
-      </ol>
-      <p style="font-size:.875rem;color:#666">
-        See full evaluation criteria at <a href="${SITE}/methodology/" style="color:#0D9488">our Methodology page</a>, aligned with
-        <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Google's helpful content guidelines</a>.
-      </p>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'how-to-choose-ai-tool', HOME_CONTENT_CTX)}
 
     <!-- ── Section 4b: When NOT to use AI tools (balanced-expertise section) ── -->
-    <section id="when-not-to-use-ai-tools" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">When NOT to Use AI Tools</h2>
-      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>Skip or limit AI tools when a wrong answer is costly, the data is confidential, or the task is faster and better done by hand.</strong></p>
-      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:10px">AI tools are strong at drafting, summarising, and speeding up repetitive work. They are weaker where accuracy, accountability, or your own voice is the whole point. The cases below are where a human-only or human-led process is usually the safer choice.</p>
-      <ul style="margin:0 0 14px;padding-left:22px;line-height:1.8;font-size:.9rem;color:#444">
-        <li style="margin-bottom:6px"><strong>High-stakes advice (legal, medical, financial, safety).</strong> AI output can read confidently and still be wrong. If an error could harm someone or cost real money, treat the tool as a drafting aid at most and have a qualified person review the result.</li>
-        <li style="margin-bottom:6px"><strong>Confidential or regulated data.</strong> Do not paste client, employee, or personal data into a tool until you have read its data-use and retention terms for your specific plan. When in doubt, leave the data out.</li>
-        <li style="margin-bottom:6px"><strong>Work you cannot verify.</strong> If you do not know the subject well enough to spot a mistake, you cannot tell whether the output is good. Facts, figures, citations, and code behaviour all need checking against a primary source.</li>
-        <li style="margin-bottom:6px"><strong>Small one-off edits.</strong> Setting up a prompt, reviewing the result, and correcting it can take longer than fixing a sentence or a cell yourself.</li>
-        <li style="margin-bottom:6px"><strong>Writing that has to sound like you, or show real experience.</strong> Personal stories, opinions, and first-hand expertise are what readers value in that kind of writing, and a generic draft tends to dilute them.</li>
-        <li style="margin-bottom:6px"><strong>Rules that forbid it.</strong> Some schools, employers, publishers, and clients restrict or require disclosure of AI use. Check the policy before you rely on a tool.</li>
-      </ul>
-      <p style="font-size:.875rem;color:#666">Each of our <a href="${SITE}/tools/grammarly/" style="color:#0D9488">tool reviews</a> lists cons and limits alongside the pros, so you can see where a specific tool falls short before you rely on it.</p>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'when-not-to-use-ai-tools', HOME_CONTENT_CTX)}
 
     <!-- ── Section 5: Compare tools ──────────────────────────────────── -->
     <section id="compare-tools" style="margin-bottom:28px">
@@ -9134,47 +9102,12 @@ ${items}
          other hand...' for balance" and "Flat heading structure — add
          H3/H4 subheadings for depth" by giving two competing viewpoints
          their own H3 under one H2, instead of one flat opinion. -->
-    <section id="free-vs-paid-perspectives" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 10px;color:#0F1C1A">Free vs. Paid AI Tools: Which Side Are You On?</h2>
-      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:14px"><strong>There's no single right answer — it depends on how often you actually use the tool, and reasonable people land on different sides of this.</strong></p>
-
-      <h3 style="font-size:1.05rem;margin:0 0 6px;color:#0F1C1A">The Case for Starting Free</h3>
-      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:16px">
-        According to feedback we've reviewed from creator communities on Reddit and product forums, most casual users get everything they need from free tiers alone.
-        Grammarly's free plan has no word limit, Leonardo.ai gives 150 image credits a day, and Rytr offers 10,000 characters a month — enough for students, hobbyists,
-        and anyone testing a workflow before committing budget. Some users argue paying immediately is premature until you've confirmed the tool actually fits your habits.
-      </p>
-
-      <h3 style="font-size:1.05rem;margin:0 0 6px;color:#0F1C1A">The Case for Paying From Day One</h3>
-      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:0">
-        On the other hand, freelancers and professionals who bill clients by the hour often find the free-tier ceiling — rate limits, watermarks, slower queues — costs more
-        in lost time than a $9–$20/month subscription would. Industry analysts covering productivity software note that paid AI tools tend to pay for themselves within the
-        first one or two billable hours saved per month. Another perspective worth weighing: if the tool touches client-facing work, the free tier's usage caps and slower
-        generation speeds can be a real liability, not just an inconvenience.
-      </p>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'free-vs-paid-perspectives', HOME_CONTENT_CTX)}
 
     <!-- ── Section 5c: Verdict — conclusion + expert quote (blockquote) ──── -->
     <!-- GEO Fix (Task 3): resolves "No conclusion — add recommendations or
          a verdict section" and "No expert quotes — use <blockquote> tags". -->
-    <section id="verdict" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 10px;color:#0F1C1A">Our Verdict: Which AI Tool Should You Actually Pick?</h2>
-      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:14px"><strong>If you only take one thing from this page: start with the free tier closest to your use case, give it one real task, then upgrade only once you hit a wall.</strong></p>
-      <p style="font-size:.9rem;line-height:1.7;color:#444;margin-bottom:16px">
-        You should try Grammarly or Rytr first if you write regularly, Cursor if you code daily, and Leonardo.ai if you need images — all three have no-credit-card free
-        plans. Upgrade to a paid tier only after you can point to a specific limit it removes for you, not because a subscription "feels" more serious. Avoid stacking
-        multiple overlapping paid tools in the same category; one well-chosen paid subscription almost always beats two half-used ones.
-      </p>
-      <blockquote cite="${SITE}/about/" style="margin:0 0 14px;padding:14px 18px;border-left:4px solid #0D9488;background:#f7fafa;border-radius:0 8px 8px 0;font-size:.95rem;line-height:1.7;color:#333;font-style:italic">
-        "The tools that win in 2026 aren't the ones with the longest feature list — they're the ones that remove one specific bottleneck from your actual workflow. Test
-        against a real task before you pay for anything."
-        <footer style="margin-top:8px;font-size:.8rem;color:#666;font-style:normal">— <cite>${esc(AUTHOR)}, Independent AI Tools Researcher</cite></footer>
-      </blockquote>
-      <p style="font-size:.875rem;color:#666">
-        For the full breakdown behind these recommendations, see our <a href="${SITE}/methodology/" style="color:#0D9488">evaluation methodology</a> or
-        <a href="${SITE}/" style="color:#0D9488">browse all ${TOOLS.length} researched AI tools →</a>.
-      </p>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'verdict', HOME_CONTENT_CTX)}
 
     <!-- ── Section 6: Blog and guides ────────────────────────────────── -->
     <section id="ai-blog-guides" style="margin-bottom:28px">
@@ -9196,46 +9129,13 @@ ${items}
     </section>
 
     <!-- ── Common mistakes (GEO depth fix) ─────────────────────────────── -->
-    <section id="common-mistakes" style="margin-bottom:28px">
-      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">What mistakes do people make when picking an AI tool?</h2>
-      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px"><strong>The most common mistake is picking a tool based on a features list instead of a real workflow test — most AI tools look similar on paper but behave very differently on your actual content.</strong></p>
-      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
-        Buying an annual plan before testing the free tier is the second most common mistake. Every tool on this site that has a usable free plan is marked as such precisely so you can test on your own writing, code, or images before paying for a year upfront. A tool that looks great on a vendor's demo video can behave very differently on your actual project.
-      </p>
-      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
-        Another common mistake is stacking overlapping subscriptions — paying for both Jasper and Writesonic, for example, when they solve the same problem for most users. Before adding a second tool in the same category, cancel or downgrade the first one for a billing cycle and see if you actually miss it.
-      </p>
-      <p style="font-size:.95rem;line-height:1.7;color:#444">
-        Finally, people underweight export and integration limits. A writing tool that produces great drafts but locks exports behind a paid plan, or a video tool that adds a watermark on free renders, changes the real cost of "free" significantly. Every review on this site documents these limits explicitly rather than only listing headline features.
-      </p>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'common-mistakes', HOME_CONTENT_CTX)}
 
     <!-- ── FAQ Section (details/summary) ─────────────────────────────── -->
     ${renderHomeSectionHtml(HOME_CONTENT, 'faq', HOME_CONTENT_CTX)}
 
     <!-- ── About Research ─────────────────────────────────────────────── -->
-    <section id="about-research" style="margin-bottom:24px">
-      <h2 style="font-size:1.3rem;margin:0 0 8px;color:#0F1C1A">About This Research</h2>
-      <p style="font-size:.95rem;line-height:1.5;color:#333;margin-bottom:10px"><strong>All reviews are written independently — no sponsored rankings, no paid placements, ever.</strong></p>
-      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">
-        AI Nexus is maintained by <strong>${esc(AUTHOR)}</strong>, an independent AI tools researcher since 2022 and AI Automation &amp; Performance Testing Leader at BOLD.
-        Our research is based on publicly available feature documentation, transparent pricing pages,
-        verified <a href="https://www.trustpilot.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">Trustpilot</a> and
-        <a href="https://www.g2.com" target="_blank" rel="noopener noreferrer" style="color:#0D9488">G2</a> review data (100+ reviews aggregated per tool),
-        and creator community feedback from Reddit and product forums.
-        Our evaluation methodology covers pricing accuracy, feature completeness, free-plan value, and real-world use-case fit.
-      </p>
-      <p style="font-size:.95rem;line-height:1.7;color:#444;margin-bottom:12px">According to the <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener noreferrer" style="color:#0D9488">2026 AI Index Report</a> from Stanford's Institute for Human-Centered Artificial Intelligence, AI adoption is accelerating across every professional sector as technical capabilities and investment both increase. That trend is exactly why independent, tool-by-tool research matters more than trusting marketing pages alone.</p>
-      <p style="font-size:.875rem;color:#666;line-height:1.7">
-        <strong>Data points:</strong> ${TOOLS.length} tools researched ·
-        100+ reviews per tool aggregated ·
-        Pricing verified quarterly against official pages ·
-        No sponsored rankings ·
-        Research ongoing since 2022 ·
-        <a href="${SITE}/about/" style="color:#0D9488">About the Reviewer</a> ·
-        <a href="${SITE}/methodology/" style="color:#0D9488">Full Methodology</a>
-      </p>
-    </section>
+    ${renderHomeSectionHtml(HOME_CONTENT, 'about-research', HOME_CONTENT_CTX)}
 
     <!-- ── Footer navigation ──────────────────────────────────────────── -->
     <nav aria-label="Important pages" style="display:flex;flex-wrap:wrap;gap:12px 20px;padding-top:16px;border-top:1px solid #e5e7eb;font-size:.875rem">

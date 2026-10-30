@@ -15,6 +15,7 @@ export type Palette = Record<string, string>;
 export type DateVar = { iso: string; label: string };
 export interface ContentVars {
   site: string;
+  author: string;
   toolCount: number;
   year: number;
   pricingToolCount: number;
@@ -26,7 +27,9 @@ export interface ToolLite { slug: string; name: string; tagline: string }
 
 export type Block =
   | { type: 'paragraph'; variant: string; text: string; speakable?: string; showIf?: string; linkWeight?: number }
-  | { type: 'list' | 'orderedList'; items: string[]; showIf?: string; linkWeight?: number }
+  | { type: 'list' | 'orderedList'; variant?: string; items: (string | { id?: string; text: string })[]; showIf?: string; linkWeight?: number }
+  | { type: 'heading'; level: 3; id?: string; variant: string; text: string; showIf?: string }
+  | { type: 'quote'; cite?: string; text: string; attribution: string; showIf?: string }
   | { type: 'toolList'; count: number; showIf?: string }
   | { type: 'table'; caption?: string; columns: string[]; rows: string[][]; linkWeight?: number; showIf?: string }
   | { type: 'definitionList'; items: { term: string; text: string; more?: { label: string; href: string } }[]; showIf?: string }
@@ -74,7 +77,8 @@ const sectionStyle = (variant: string, C: Palette): React.CSSProperties => {
   if (variant === 'callout') {
     return { ...base, background: C.a1card, borderLeft: `4px solid ${C.a1}`, padding: '16px 20px', borderRadius: 8 };
   }
-  if (variant === 'plain' || variant === 'faq') return base;
+  if (variant === 'plain' || variant === 'faq' || variant === 'spaced') return base;
+  if (variant === 'compact') return { ...base, marginBottom: 24 };
   throw new Error(`ContentBlocks: unknown section variant "${variant}"`);
 };
 
@@ -82,6 +86,7 @@ const headingStyle = (variant: string, C: Palette): React.CSSProperties => {
   const base: React.CSSProperties = { fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 800, color: C.txt, lineHeight: 1.25 };
   if (variant === 'callout') return { ...base, fontSize: '1.1rem', margin: '0 0 10px' };
   if (variant === 'faq') return { ...base, fontSize: '1.3rem', margin: '0 0 14px' };
+  if (variant === 'spaced') return { ...base, fontSize: '1.3rem', margin: '0 0 10px' };
   return { ...base, fontSize: '1.3rem', margin: '0 0 8px' };
 };
 
@@ -93,6 +98,13 @@ const paraStyle = (variant: string, C: Palette): React.CSSProperties => {
     case 'bodyTight': return { ...body, marginBottom: 8 };
     case 'bodyEnd': return body;
     case 'note': return { fontSize: '.875rem', color: C.mut2 };
+    case 'noteLoose': return { fontSize: '.875rem', lineHeight: 1.7, color: C.mut2 };
+    case 'small': return { fontSize: '.9rem', lineHeight: 1.7, color: C.mut, marginBottom: 8 };
+    case 'smallLoose': return { fontSize: '.9rem', lineHeight: 1.7, color: C.mut, marginBottom: 10 };
+    case 'smallWide': return { fontSize: '.9rem', lineHeight: 1.7, color: C.mut, marginBottom: 16 };
+    case 'smallEnd': return { fontSize: '.9rem', lineHeight: 1.7, color: C.mut, marginBottom: 0 };
+    case 'leadLoose': return { fontSize: '.95rem', lineHeight: 1.5, color: C.txt, marginBottom: 14 };
+    case 'leadTight': return { fontSize: '.95rem', lineHeight: 1.5, color: C.txt, marginBottom: 10 };
     case 'fineprint': return { fontSize: '.8rem', color: C.mut2 };
     case 'follow': return { fontSize: '.9rem', lineHeight: 1.7, color: C.mut, marginTop: 12 };
     case 'followLg': return { fontSize: '.9rem', lineHeight: 1.7, color: C.mut, marginTop: 14 };
@@ -113,11 +125,40 @@ function BlockView({ block, variant, ctx }: { block: Block; variant: string; ctx
     case 'list':
     case 'orderedList': {
       const Tag = block.type === 'list' ? 'ul' : 'ol';
-      const style: React.CSSProperties = variant === 'callout'
-        ? { margin: 0, paddingLeft: 18, lineHeight: 1.9, fontSize: '.95rem', color: C.mut }
-        : { margin: '0 0 14px', paddingLeft: 20, lineHeight: 1.9, fontSize: '.95rem', color: C.mut };
-      return <Tag style={style}>{block.items.map((t, i) => <li key={i}><Inline text={t} ctx={ctx} linkWeight={block.linkWeight} /></li>)}</Tag>;
+      const look = block.variant ?? variant;
+      let style: React.CSSProperties, liStyle: React.CSSProperties = {};
+      if (look === 'callout') style = { margin: 0, paddingLeft: 18, lineHeight: 1.9, fontSize: '.95rem', color: C.mut };
+      else if (look === 'steps') { style = { margin: '0 0 14px', paddingLeft: 22, lineHeight: 1.9, fontSize: '.95rem', color: C.mut }; liStyle = { marginBottom: 8 }; }
+      else if (look === 'compact') { style = { margin: '0 0 14px', paddingLeft: 22, lineHeight: 1.8, fontSize: '.9rem', color: C.mut }; liStyle = { marginBottom: 6 }; }
+      else throw new Error(`ContentBlocks: unknown list variant "${look}"`);
+      return (
+        <Tag style={style}>
+          {block.items.map((it, i) => {
+            const { id, text } = typeof it === 'string' ? { id: undefined, text: it } : it;
+            return <li key={i} id={id} style={liStyle}><Inline text={text} ctx={ctx} linkWeight={block.linkWeight} /></li>;
+          })}
+        </Tag>
+      );
     }
+    case 'heading': {
+      const margin = block.variant === 'sub' ? '16px 0 6px' : block.variant === 'subFlat' ? '0 0 6px' : null;
+      if (margin === null) throw new Error(`ContentBlocks: unknown heading variant "${block.variant}"`);
+      return (
+        <h3 id={block.id} style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700, fontSize: '1.05rem', margin, color: C.txt }}>
+          <Inline text={block.text} ctx={ctx} />
+        </h3>
+      );
+    }
+    case 'quote':
+      return (
+        <blockquote cite={block.cite ? vars.site + block.cite : undefined}
+          style={{ margin: '0 0 14px', padding: '14px 18px', borderLeft: `4px solid ${C.a1}`, background: C.a1card, borderRadius: '0 8px 8px 0', fontSize: '.95rem', lineHeight: 1.7, color: C.txt, fontStyle: 'italic' }}>
+          <Inline text={block.text} ctx={ctx} />
+          <footer style={{ marginTop: 8, fontSize: '.8rem', color: C.mut2, fontStyle: 'normal' }}>
+            — <cite><Inline text={block.attribution} ctx={ctx} /></cite>
+          </footer>
+        </blockquote>
+      );
     case 'toolList': {
       const tools = (ctx.tools ?? []).slice(0, block.count);
       return (

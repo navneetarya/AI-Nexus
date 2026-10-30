@@ -19,15 +19,29 @@ const SECTION_STYLE = {
   callout: 'background:#f0faf9;border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:28px',
   plain: 'margin-bottom:28px',
   faq: 'margin-bottom:28px',
+  spaced: 'margin-bottom:28px',
+  compact: 'margin-bottom:24px',
 };
 const HEADING_STYLE = {
   callout: 'font-size:1.1rem;margin:0 0 10px;color:#0F1C1A',
   plain: 'font-size:1.3rem;margin:0 0 8px;color:#0F1C1A',
   faq: 'font-size:1.3rem;margin:0 0 14px;color:#0F1C1A',
+  spaced: 'font-size:1.3rem;margin:0 0 10px;color:#0F1C1A',
+  compact: 'font-size:1.3rem;margin:0 0 8px;color:#0F1C1A',
 };
+// list/orderedList looks: `list` is the <ul>/<ol> style, `li` the optional per-item style.
 const LIST_STYLE = {
-  callout: 'margin:0;padding-left:18px;line-height:1.9;font-size:.95rem;color:#333',
-  plain: 'margin:0 0 14px;padding-left:20px;line-height:1.9;font-size:.95rem',
+  callout: { list: 'margin:0;padding-left:18px;line-height:1.9;font-size:.95rem;color:#333', li: '' },
+  steps: { list: 'margin:0 0 14px;padding-left:22px;line-height:1.9;font-size:.95rem;color:#444', li: 'margin-bottom:8px' },
+  compact: { list: 'margin:0 0 14px;padding-left:22px;line-height:1.8;font-size:.9rem;color:#444', li: 'margin-bottom:6px' },
+};
+const SUBHEADING_STYLE = {
+  sub: 'font-size:1.05rem;margin:16px 0 6px;color:#0F1C1A',
+  subFlat: 'font-size:1.05rem;margin:0 0 6px;color:#0F1C1A',
+};
+const QUOTE = {
+  quote: 'margin:0 0 14px;padding:14px 18px;border-left:4px solid #0D9488;background:#f7fafa;border-radius:0 8px 8px 0;font-size:.95rem;line-height:1.7;color:#333;font-style:italic',
+  footer: 'margin-top:8px;font-size:.8rem;color:#666;font-style:normal',
 };
 const PARA_STYLE = {
   lead: 'font-size:.95rem;line-height:1.5;color:#333;margin-bottom:12px',
@@ -35,6 +49,13 @@ const PARA_STYLE = {
   bodyTight: 'font-size:.95rem;line-height:1.7;color:#444;margin-bottom:8px',
   bodyEnd: 'font-size:.95rem;line-height:1.7;color:#444',
   note: 'font-size:.875rem;color:#666',
+  noteLoose: 'font-size:.875rem;color:#666;line-height:1.7',
+  small: 'font-size:.9rem;line-height:1.7;color:#444;margin-bottom:8px',
+  smallLoose: 'font-size:.9rem;line-height:1.7;color:#444;margin-bottom:10px',
+  smallWide: 'font-size:.9rem;line-height:1.7;color:#444;margin-bottom:16px',
+  smallEnd: 'font-size:.9rem;line-height:1.7;color:#444;margin-bottom:0',
+  leadLoose: 'font-size:.95rem;line-height:1.5;color:#333;margin-bottom:14px',
+  leadTight: 'font-size:.95rem;line-height:1.5;color:#333;margin-bottom:10px',
   fineprint: 'font-size:.8rem;color:#888',
   follow: 'font-size:.9rem;line-height:1.7;color:#444;margin-top:12px',
   followLg: 'font-size:.9rem;line-height:1.7;color:#444;margin-top:14px',
@@ -112,8 +133,22 @@ function renderBlockHtml(block, variant, vars) {
     case 'list':
     case 'orderedList': {
       const tag = block.type === 'list' ? 'ul' : 'ol';
-      const items = block.items.map(i => `        <li>${inline(i)}</li>`).join('\n');
-      return `      <${tag} style="${pick(LIST_STYLE, variant, 'list')}">\n${items}\n      </${tag}>`;
+      const look = pick(LIST_STYLE, block.variant ?? variant, 'list');
+      const items = block.items.map(i => {
+        const { id, text } = typeof i === 'string' ? { id: undefined, text: i } : i;
+        const attrs = `${id ? ` id="${escAttr(id)}"` : ''}${look.li ? ` style="${look.li}"` : ''}`;
+        return `        <li${attrs}>${inline(text)}</li>`;
+      }).join('\n');
+      return `      <${tag} style="${look.list}">\n${items}\n      </${tag}>`;
+    }
+    case 'heading': {
+      if (block.level !== 3) throw new Error('homepage-content: only level-3 heading blocks are supported');
+      const id = block.id ? ` id="${escAttr(block.id)}"` : '';
+      return `      <h3${id} style="${pick(SUBHEADING_STYLE, block.variant, 'heading block')}">${inline(block.text)}</h3>`;
+    }
+    case 'quote': {
+      const cite = block.cite ? ` cite="${escAttr(vars.site + classifyInternal(block.cite))}"` : '';
+      return `      <blockquote${cite} style="${QUOTE.quote}">\n        ${inline(block.text)}\n        <footer style="${QUOTE.footer}">— <cite>${inline(block.attribution)}</cite></footer>\n      </blockquote>`;
     }
     case 'toolList': {
       const tools = (vars.tools || []).slice(0, block.count);

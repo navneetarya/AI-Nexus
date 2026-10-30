@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { applyVars, renderInlineHtml, renderHomeSectionHtml, loadHomepageContent } from '../scripts/homepage-content.mjs';
 
-const ctx = { site: 'https://ainexustools.online', toolCount: 81, pricingToolCount: 14, year: 2026,
+const ctx = { site: 'https://ainexustools.online', author: 'Navneet Arya', toolCount: 81, pricingToolCount: 14, year: 2026,
   homeDate: { iso: '2026-10-27', label: 'October 27, 2026' }, pricingDate: { iso: '2026-10-22', label: 'October 22, 2026' } };
 
 describe('homepage-content static renderer', () => {
