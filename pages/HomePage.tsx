@@ -703,7 +703,7 @@ export function HomePage({ navigate, isDark, toggleTheme }: HomePageProps) {
           </p>
 
           <div className="anim-fade-up d3" style={{ display:'flex', justifyContent:'center', gap:14, flexWrap:'wrap' as const, marginTop:14, marginBottom:22 }}>
-            {['Tools researched across 8 categories', '100+ reviews aggregated per tool', 'Pricing verified from official pages'].map(item => (
+            {['Tools researched across 8 categories', 'Published user reviews analysed', 'Pricing verified from official pages'].map(item => (
               <span key={item} style={{ fontSize:11.5, color:C.mut2, fontWeight:600,
                 background:'var(--chip-bg)', border:'1px solid var(--brd-xs)',
                 padding:'5px 10px', borderRadius:100 }}>{item}</span>

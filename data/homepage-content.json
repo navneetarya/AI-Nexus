@@ -1,7 +1,7 @@
 {
   "version": 1,
   "spec": "docs/homepage-content-format.md",
-  "updated": "2026-09-20",
+  "updated": "2026-11-03",
   "toc": {
     "heading": "Table of Contents",
     "items": [
@@ -497,7 +497,7 @@
             },
             {
               "q": "Which AI writing tool is best for beginners?",
-              "a": "Rytr is the best AI writing tool for beginners in 2026. Its 40+ pre-built content templates produce usable output within 90 seconds of signup — no content strategy knowledge required. The free plan gives you 10,000 characters per month with no credit card. For longer articles, Writesonic at $16/month is the step-up pick."
+              "a": "Rytr is the best AI writing tool for beginners in 2026. Its 40+ pre-built content templates make it easy to get started without content strategy knowledge. The free plan gives you 10,000 characters per month with no credit card. For longer articles, Writesonic at $16/month is the step-up pick."
             },
             {
               "q": "Is ChatGPT better than Claude AI for writing?",
@@ -530,7 +530,7 @@
         {
           "type": "paragraph",
           "variant": "body",
-          "text": "AI Nexus is maintained by **{{author}}**, an independent AI tools researcher since 2022 and AI Automation & Performance Testing Leader at BOLD. Our research is based on publicly available feature documentation, transparent pricing pages, verified [Trustpilot](https://www.trustpilot.com) and [G2](https://www.g2.com) review data (100+ reviews aggregated per tool), and creator community feedback from Reddit and product forums. Our evaluation methodology covers pricing accuracy, feature completeness, free-plan value, and real-world use-case fit."
+          "text": "AI Nexus is maintained by **{{author}}**, an independent AI tools researcher since 2022 and AI Automation & Performance Testing Leader at BOLD. Our research is based on publicly available feature documentation, transparent pricing pages, published [Trustpilot](https://www.trustpilot.com) and [G2](https://www.g2.com) review data where available, and creator community feedback from Reddit and product forums. Our evaluation methodology covers pricing accuracy, feature completeness, free-plan value, and real-world use-case fit."
         },
         {
           "type": "paragraph",
@@ -540,7 +540,7 @@
         {
           "type": "paragraph",
           "variant": "noteLoose",
-          "text": "**Data points:** {{toolCount}} tools researched · 100+ reviews per tool aggregated · Pricing verified quarterly against official pages · No sponsored rankings · Research ongoing since 2022 · [About the Reviewer](/about/) · [Full Methodology](/methodology/)"
+          "text": "**Data points:** {{toolCount}} tools researched · Desk research from public sources, no hands-on testing · Published user reviews analysed where available · Pricing verified quarterly against official pages · No sponsored rankings · Research ongoing since 2022 · [About the Reviewer](/about/) · [Full Methodology](/methodology/)"
         }
       ]
     }

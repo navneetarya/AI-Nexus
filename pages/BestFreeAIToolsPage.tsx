@@ -8,6 +8,7 @@ import { TOOLS, SITE_CONFIG } from '../constants';
 import { Category, Tool } from '../types';
 import { ExternalLink, CheckCircle, Star, ArrowRight, Zap } from 'lucide-react';
 import { SharedNav } from './SharedNav';
+import { trackAffiliateClick } from '../lib/subid-tracking';
 
 const C = {
   bg:   'var(--bg)',
@@ -215,7 +216,8 @@ const ToolCard: React.FC<{ tool: Tool; navigate: (to: string) => void }> = ({ to
         <a
           href={tool.affiliateLink}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored nofollow noopener noreferrer"
+          onClick={(e) => trackAffiliateClick(e, { toolName: tool.name, ctaPosition: 'free_tools_card' })}
           style={{
             flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
             background: C.a1, color: '#fff', borderRadius: 8,

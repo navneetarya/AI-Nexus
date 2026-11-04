@@ -158,7 +158,7 @@ export const TOOLS: Tool[] = [
       'Batching 10 Instagram captions in 15 minutes using the Social Media Caption template — one brief, 10 output variants, pick the 3 best ones.',
       'Writing a 5-email cold outreach sequence for a freelance pitch. Each email took under 2 minutes to generate and required only light personalisation.',
       'Generating 3 headline variants for a landing page A/B test — faster than brainstorming manually, and the hook angles are genuinely varied each time.',
-      'Drafting a LinkedIn post from a bullet-point brief: I type 4 key points, select Professional tone, and get a ready-to-edit post in 90 seconds.',
+      'Drafting a LinkedIn post from a bullet-point brief by supplying key points and selecting a tone.',
       'Writing 20 product descriptions for a Shopify store — Rytr\'s Product Description template handles tone, length, and feature emphasis automatically.',
     ],
     notForYou: 'Rytr is not the right tool if you primarily write 1,500+ word articles. Beyond 800 words, it loses coherence and tends to repeat itself — especially on complex topics. It also doesn\'t browse the web or reference current sources, so research-heavy pieces need fact-checking. If long-form SEO articles are your main output, Writesonic or Frase will serve you better. Teams needing multi-user collaboration or brand voice training should look at Jasper\'s team plans. Rytr is a short-form tool at a short-form price — trying to force it into a long-form article workflow is fighting its design.',

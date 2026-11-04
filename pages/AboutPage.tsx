@@ -112,13 +112,13 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
             </div>
 
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
-               — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools with real-world workflows in mind before writing about them. I've researched tools across writing, audio, video, design, coding, and productivity, comparing official documentation, verified user reviews, and pricing before recommending any of them.
+               — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools with real-world workflows in mind before writing about them. I've researched tools across writing, audio, video, design, coding, and productivity, comparing official documentation, published user reviews, and pricing before recommending any of them.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 14 }}>
-              AI Nexus was created because every "best AI tools" article I found was clearly built on recycled marketing copy with no visible sourcing. Review sites were copying vendor pages and calling it a review. I got frustrated and decided to build something where every review is based on independent research — official documentation, verified user reviews, and real pricing data.
+              AI Nexus was created because many "best AI tools" articles I found were built on recycled marketing copy with no visible sourcing. Review sites were copying vendor pages and calling it a review. I decided to build something where every review is based on independent research — official documentation, published user reviews, and real pricing data.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>
-              Every tool on this site is independently researched — verified against official documentation, aggregated from 100+ verified user reviews on Trustpilot, G2, and Capterra, and cross-referenced with Reddit community sentiment before I write about it. I focus on what works for <strong style={{ color: C.txt }}>solo creators, freelancers, and small teams</strong> — not enterprise buyers with unlimited budgets. Every tool on this site is useful regardless of where you're based.
+              Every tool on this site is independently researched — verified against official documentation, compared with published user reviews on Trustpilot, G2, and Capterra where they exist, and cross-referenced with Reddit community discussion before I write about it. I don't test each product hands-on. I focus on what works for <strong style={{ color: C.txt }}>solo creators, freelancers, and small teams</strong> — not enterprise buyers with unlimited budgets. Every tool on this site is useful regardless of where you're based.
             </p>
 
             {/* Contact row */}
@@ -162,7 +162,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 12 }}>
             {[
-              { n: '200+',    label: 'verified reviews analysed per tool' },
+              { n: 'No hands-on testing', label: 'reviews are desk research, not product testing' },
               { n: 'May 2026', label: 'live pricing verified against official pages' },
               { n: '8',       label: 'categories researched from official docs, reviews, and documented free-plan limits' },
               { n: 'Public sources', label: 'every review is built from official docs, user reviews, and pricing pages' },
@@ -218,7 +218,7 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
           <div style={{ marginTop: 16, padding: '14px 16px', borderRadius: 12, background: `${C.a1}06`, border: `1px solid ${C.a1}18` }}>
             <div style={{ fontSize: 12, fontWeight: 600, color: C.txt, marginBottom: 4 }}>Research environment</div>
             <div style={{ fontSize: 12, color: C.mut2, lineHeight: 1.6 }}>
-              Official documentation review · 100+ Trustpilot, G2 &amp; Capterra reviews per tool · Reddit community sentiment analysis · Live pricing page verification · INR pricing included for India market
+              Official documentation review · Published Trustpilot, G2 &amp; Capterra reviews where available · Reddit community discussion · Live pricing page verification · INR pricing included for India market · No hands-on product testing
             </div>
           </div>
         </div>
@@ -233,18 +233,18 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
               style={{ color: C.a1, fontWeight: 500 }}>Read the full review methodology →</a>
           </p>
 
-          {/* E-E-A-T: exact testing standard — audited copy required for Google quality rater signals */}
+          {/* E-E-A-T: exact research standard — keep in sync with the About block in scripts/prerender.mjs */}
           <div style={{ background: C.a1card, borderRadius: 12, border: `1.5px solid ${C.a1brd}`, padding: '18px 20px', marginBottom: 22 }}>
             <p style={{ fontSize: 14.5, color: C.txt, lineHeight: 1.75, fontWeight: 400, margin: 0 }}>
-              Every review is based on independent research: official documentation review, aggregated verified user feedback (Trustpilot, G2, Capterra), Reddit community sentiment analysis, and live pricing verification. INR equivalents are included for the India market. Reviews are updated when tools change their pricing or features.
+              Every review is based on independent desk research: official documentation review, published user feedback (Trustpilot, G2, Capterra), Reddit community discussion, and live pricing verification. AI Nexus does not perform hands-on product testing. INR equivalents are included for the India market. Reviews are updated when tools change their pricing or features.
             </p>
           </div>
 
           {[
             ['1. Official documentation review', 'Every feature claim is verified against the tool\'s official documentation and changelog — not marketing copy. If the docs say something is a paid feature, that\'s what the review reflects.'],
-            ['2. Verified user review aggregation', 'A minimum of 100 verified reviews from Trustpilot, G2, and Capterra per tool. Reddit communities (r/writing, r/productivity, r/indiegamedev and others) are analysed for real-world sentiment that doesn\'t appear in official reviews.'],
+            ['2. Published user feedback', 'Ratings and review text published on Trustpilot, G2, and Capterra are read where a tool has them. Reddit and product-forum discussions are checked for real-world sentiment that doesn\'t appear in official reviews. The amount of feedback differs by tool, so no fixed review count is promised.'],
             ['3. Pricing verification', 'All pricing is verified against the tool\'s live pricing page at the time of publication. INR equivalents are included for the India market. Free plan limitations are documented explicitly.'],
-            ['4. Competitor benchmarking', 'Each tool is compared against its 2–3 closest alternatives on feature parity, pricing, and use-case fit. The comparison tables on each review page come from this structured benchmarking.'],
+            ['4. Competitor comparison', 'Each tool is compared against its closest alternatives on feature parity, pricing, and use-case fit, using public documentation and pricing pages. The comparison tables on each review page come from this structured comparison, not hands-on benchmark runs.'],
             ['5. Review freshness', 'Each review is updated when tools change their pricing or ship significant new features. The "last updated" date at the top of every review reflects the most recent verification pass.'],
           ].map(([title, desc], i) => (
             <div key={i} style={{ display: 'flex', gap: 12, marginBottom: 18, alignItems: 'flex-start' }}>
@@ -263,10 +263,10 @@ export function AboutPage({ navigate, isDark, toggleTheme }: { navigate: (to: st
         <div style={{ background: 'rgba(13,148,136,.04)', borderRadius: 16, border: `1.5px solid ${C.a1brd}`, padding: '22px 26px', marginBottom: 16 }}>
           <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 14, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Full transparency on how this site earns money</div>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 10 }}>
-            This site earns money through affiliate commissions. When you click a link and sign up for a paid plan, I earn a commission — typically 20–30% of the subscription payment, recurring. This does not affect my reviews. I recommend tools because they're genuinely good, not because the commission is high.
+            This site earns money through affiliate commissions. When you click a link and sign up for a paid plan, I may earn a commission. Rates and terms vary by program. This does not affect my reviews, and affiliate status doesn't decide which tools are covered or how they are rated.
           </p>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>
-            I only list tools that I have independently researched and would recommend to a friend. I have turned down sponsorships from tools that I don't think are worth recommending.{' '}
+            Every tool listed here has been researched using the process described on the methodology page.{' '}
             <a href="/disclosure" onClick={e => { e.preventDefault(); navigate('/disclosure'); }} style={{ color: C.a1, fontWeight: 500 }}>Read the full affiliate disclosure →</a>
           </p>
         </div>

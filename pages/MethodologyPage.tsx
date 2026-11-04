@@ -21,8 +21,8 @@ const STEPS = [
   },
   {
     icon: Clock,
-    title: '2. Verified user review aggregation',
-    body: `A minimum of 100 verified reviews from Trustpilot, G2, and Capterra are analysed for each tool before publication. Verified-purchase reviews surface problems that marketing copy never will — support response times, billing friction, feature gaps that appear only after prolonged use. Reddit communities (r/writing, r/productivity, r/indiegamedev and others) are also analysed for real-world sentiment that doesn't appear in structured review platforms.`,
+    title: '2. Published user feedback',
+    body: `Ratings and review text published on Trustpilot, G2, and Capterra are read where a tool has them. Published reviews surface problems that marketing copy never will — support response times, billing friction, feature gaps that appear only after prolonged use. Relevant community discussions (Reddit and product forums) are also checked for real-world sentiment that doesn't appear on structured review platforms. The amount of published feedback differs from tool to tool, so no fixed review count is promised.`,
   },
   {
     icon: CheckCircle,
@@ -31,8 +31,8 @@ const STEPS = [
   },
   {
     icon: Scale,
-    title: '4. Competitor benchmarking',
-    body: `No tool is reviewed in isolation. Each tool is compared against its 2–3 closest alternatives on feature parity, pricing, and use-case fit. The comparison tables in every review come from structured, side-by-side benchmarking — the same evaluation criteria applied to each competing tool. If a competitor does something meaningfully better, the review says so. The goal is to help you make the right choice, not to rank the tool being reviewed as highly as possible.`,
+    title: '4. Competitor comparison',
+    body: `No tool is reviewed in isolation. Each tool is compared against its closest alternatives on feature parity, pricing, and use-case fit, using the same criteria each time. The comparison tables are compiled from public documentation and pricing pages, not from hands-on benchmark runs. If a competitor does something meaningfully better, the review says so. The goal is to help you make the right choice, not to rank the tool being reviewed as highly as possible.`,
   },
   {
     icon: Star,
@@ -41,52 +41,44 @@ const STEPS = [
   },
 ];
 
-// T2.4 — Quantified 6-step research process table
-// Audit finding: methodology page described the research process qualitatively.
-// Google quality raters want to see SPECIFIC, MEASURABLE steps — not "we research carefully"
-// but "here is exactly what we do, in order, with time spent."
+// Research steps — desk research from public sources. Keep in sync with the methodology
+// block in scripts/prerender.mjs (prerendered copy read by crawlers and AI tools).
 const RESEARCH_STEPS = [
   {
     icon: UserCheck,
     step: 'Step 1',
-    action: 'Official documentation & interface research',
-    detail: 'For each tool reviewed, free account access and official documentation are used to research three standard workflows. Where interface-based research was conducted, outputs are documented. Research covers: Grammarly, Rytr, Writesonic, QuillBot, Canva AI, Notion AI, Gamma, Perplexity, and Looka. Where a tool is researched from official documentation and aggregated user reviews only, it is marked explicitly as \'Research-Based Review\' at the top of the page. For tools with no free tier, the review is based on three things: the tool\'s official documentation and changelog (not marketing copy), aggregated verified user reviews from Trustpilot, G2, and Capterra, and publicly available demo content and trial walkthroughs. Every feature claim is cross-referenced against official docs before it appears in a review.',
-    time: '20 min',
+    action: 'Official documentation review',
+    detail: 'Features, limits, and plan rules are read from the vendor\'s official documentation, help centre, and changelog. If the docs say a feature is paid-only, limited, or in beta, the review says so. AI Nexus does not perform hands-on product testing, so anything the documentation does not state is not asserted. Every feature claim is cross-referenced against official docs before it appears in a review.',
   },
   {
     icon: ShieldCheck,
     step: 'Step 2',
     action: 'Free plan claim verification',
-    detail: 'Every free tier claim is checked against the tool\'s official documentation, pricing page, and verified user reports — not just what its marketing page promises. This step specifically documents: whether a credit card is required to access the free plan, whether "free" features are actually rate-limited or watermarked, and where advertised free capabilities require a paid upgrade to use in practice. INR equivalents are included for Indian creators, since USD pricing does not reflect local purchasing power. This is the step that catches the most common deceptive pattern in AI tool marketing: advertising a feature as free when it is only available on a paid plan.',
-    time: '15 min',
+    detail: 'Every free tier claim is checked against the tool\'s official documentation, pricing page, and published user reports — not just what its marketing page promises. This step documents whether a credit card is required to access the free plan, whether "free" features are rate-limited or watermarked, and where advertised free capabilities require a paid upgrade to use in practice. INR equivalents are included for Indian creators, since USD pricing does not reflect local purchasing power. This is the step that catches the most common deceptive pattern in AI tool marketing: advertising a feature as free when it is only available on a paid plan.',
   },
   {
     icon: Search,
     step: 'Step 3',
-    action: 'Analysis of 100+ verified user reviews',
-    detail: 'Pull a minimum of 200 verified reviews from Trustpilot, G2, and Capterra combined. Filter for verified-purchase reviews only. Tag recurring complaints (support, billing, feature gaps) and recurring praise points. This cross-platform aggregation prevents any single platform\'s review distribution from skewing the verdict.',
-    time: '45 min',
+    action: 'Published user review analysis',
+    detail: 'Ratings and review text published on Trustpilot, G2, and Capterra are read where they exist, favouring reviews the platform marks as verified. Recurring complaints (support, billing, feature gaps) and recurring praise points are tagged. Reading across platforms prevents any single platform\'s review distribution from skewing the verdict. Review volume differs by tool, so no fixed review count is promised.',
   },
   {
     icon: BarChart2,
     step: 'Step 4',
-    action: 'Reddit sentiment check',
-    detail: 'Search the tool\'s name in r/[toolname], r/productivity, r/artificial, and r/[relevant niche]. Read the top 20 posts sorted by "top" over the past year. Reddit surfaces long-term user frustrations — cancellation problems, hidden charges, feature degradations — that don\'t appear in structured review platforms for months.',
-    time: '20 min',
+    action: 'Community discussion check',
+    detail: 'Relevant discussions on Reddit and product forums are read for long-term frustrations — cancellation problems, hidden charges, feature degradations — that don\'t always appear on structured review platforms. Community posts are anecdotal, so they are treated as signals to check against documentation, not as proof.',
   },
   {
     icon: BadgeDollarSign,
     step: 'Step 5',
     action: 'Live pricing page verification',
-    detail: 'Open the tool\'s pricing page directly and document every tier: exact price, billing frequency, what\'s included, what requires an upgrade, whether a credit card is required for the free plan, and the cancellation terms. Pricing is never pulled from third-party aggregators — it goes stale within weeks.',
-    time: '10 min',
+    detail: 'The tool\'s pricing page is checked directly and every tier is documented: exact price, billing frequency, what\'s included, what requires an upgrade, whether a credit card is required for the free plan, and the cancellation terms. Pricing is never pulled from third-party aggregators — it goes stale within weeks.',
   },
   {
     icon: Scale,
     step: 'Step 6',
-    action: 'Feature comparison against 3 nearest competitors',
-    detail: 'Map the tool\'s key features against its 3 closest alternatives across: free plan quality, pricing, output quality, ease of use, and unique differentiators. This structured comparison is what generates the comparison tables in every review — not opinion, but side-by-side data from the same evaluation run on each tool.',
-    time: '30 min',
+    action: 'Feature comparison against close alternatives',
+    detail: 'The tool\'s key features are mapped against its closest alternatives across free plan quality, pricing, documented capabilities, and unique differentiators. The comparison tables are compiled from public documentation and pricing pages, not from hands-on benchmark runs.',
   },
 ];
 
@@ -95,8 +87,8 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
   const methodologySchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: `How I Review AI Tools — Testing Methodology | AI Nexus`,
-    description: `The exact 6-step process ${SITE_CONFIG.authorName} uses to independently research every AI tool on AI Nexus. Official documentation review, 100+ verified reviews per tool, live pricing verification, Reddit sentiment analysis, and competitor benchmarking.`,
+    headline: `How I Research AI Tools — Research Methodology | AI Nexus`,
+    description: `How ${SITE_CONFIG.authorName} researches and compares every AI tool on AI Nexus: official documentation, published user reviews, live pricing verification, community discussion, and competitor comparison. Desk research from public sources — no hands-on product testing.`,
     url: `${SITE_CONFIG.siteUrl}/methodology`,
     author: {
       '@type': 'Person',
@@ -108,7 +100,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
       name: 'AI Nexus',
       url: SITE_CONFIG.siteUrl,
     },
-    dateModified: '2026-09-20',
+    dateModified: '2026-11-03',
   };
 
   return (
@@ -133,7 +125,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: `${C.a1}12`, border: `1.5px solid ${C.a1}30`, borderRadius: 100, padding: '5px 14px' }}>
                 <div style={{ width: 7, height: 7, borderRadius: '50%', background: C.a1, flexShrink: 0 }} />
                 <span style={{ fontSize: 11, fontWeight: 600, color: C.a1, fontFamily: "'Inter', sans-serif", letterSpacing: '0.01em' }}>
-                  Methodology last updated: September 2026
+                  Methodology last updated: November 2026
                 </span>
               </div>
             </div>
@@ -143,10 +135,10 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             </h1>
 
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.78, fontWeight: 300, marginBottom: 14 }}>
-              Every "best AI tools" article I found before building this site was clearly written by someone who had never opened the products. Copying marketing copy and calling it a review isn't a review — it's spam with better formatting.
+              Many "best AI tools" articles I found before building this site simply repeat vendor marketing copy. Repeating a vendor's pitch and calling it a review isn't a review — it's marketing with better formatting.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.78, fontWeight: 300, marginBottom: 14 }}>
-              The methodology below is the standard I hold every review on AI Nexus to. It's not aspirational — it's the process every review on this site goes through. If a review is on this site, it went through these steps. If I couldn't research something properly, I haven't published a review of it.
+              The methodology below is the standard I hold every review on AI Nexus to. It is desk research from public sources — official documentation, pricing pages, published user reviews, and community discussion. I don't test each product hands-on. If I couldn't research something properly, I haven't published a review of it.
             </p>
             <p style={{ fontSize: 15, color: C.mut, lineHeight: 1.78, fontWeight: 300 }}>
               I publish these standards publicly because I think transparency about <em>how</em> a tool was researched matters as much as the verdict. You should know what "independently researched" means before you trust it.
@@ -156,9 +148,9 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 10, marginTop: 22 }}>
               {[
                 { label: 'Categories covered', value: '8' },
-                { label: 'Avg research time / tool', value: '4–6 hrs' },
-                { label: 'Reviews analysed / tool', value: '200+' },
-                { label: 'Methodology last updated', value: 'September 2026' },
+                { label: 'Research method', value: 'Desk research' },
+                { label: 'Hands-on product testing', value: 'None' },
+                { label: 'Methodology last updated', value: 'November 2026' },
               ].map(({ label, value }) => (
                 <div key={label} style={{ background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 10, padding: '8px 14px', textAlign: 'center' as const }}>
                   <div style={{ fontSize: 16, fontWeight: 700, color: C.a1 }}>{value}</div>
@@ -175,7 +167,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             The 5-step research process
           </h2>
           {/* AEO: concise answer paragraph after H2 (40-200 chars) */}
-          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 24px', fontWeight: 300 }}>Applied to every tool before a review is published — verified docs, 100+ reviews, live pricing, Reddit sentiment, and competitor benchmarking.</p>
+          <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 24px', fontWeight: 300 }}>Applied to every tool before a review is published — official docs, published user reviews, live pricing, community discussion, and competitor comparison.</p>
 
           {STEPS.map(({ icon: Icon, title, body }, i) => (
             <div key={i} style={{ display: 'flex', gap: 14, marginBottom: i < STEPS.length - 1 ? 22 : 0, alignItems: 'flex-start' }}>
@@ -190,41 +182,21 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           ))}
         </div>
 
-        {/* ── T2.4: Quantified 6-step research session breakdown ──────────────────────
-             Audit finding (T2.4): Methodology page was qualitative — described research
-             philosophically but did not show the EXACT steps taken per tool session.
-             Google quality raters need to see specifics: what action, in what order,
-             for how long. This section maps each session step with time and rationale.
-             "Total tools researched: X. Average research time: 4-6 hrs. Last updated: May 2026"
-        */}
+        {/* Research steps in detail. Desk research from public sources — no per-step timings or
+             hands-on testing claims. Keep in sync with the methodology block in scripts/prerender.mjs. */}
         <div style={{ background: C.surf, borderRadius: 18, border: `1.5px solid ${C.barBrd}`, padding: '28px 30px', marginBottom: 14 }}>
           <h2 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: C.txt, margin: '0 0 6px', letterSpacing: '-0.02em' }}>
-            What every review session looks like in practice
+            How each tool is researched, step by step
           </h2>
           {/* AEO: concise answer paragraph after H2 */}
           <p style={{ fontSize: 13, color: C.mut2, margin: '0 0 12px', fontWeight: 300 }}>
-            Six structured steps applied to every tool, documented with time spent and data sources — ensuring transparent, repeatable research methodology.
+            Six steps applied to every tool, each based on public sources — documentation, pricing pages, published reviews, and community discussion.
           </p>
           <h3 style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt, margin: '0 0 16px', letterSpacing: '-0.01em' }}>
-            Documented Research Process — Average 2.5–6 Hours Per Tool
+            Documented Research Process — Desk Research From Public Sources
           </h3>
-          {/* AEO: Research formula as code block */}
-          <div style={{ marginBottom: 16, padding: '12px 16px', background: 'var(--footer-bg)', borderRadius: 8, border: `1px solid rgba(13,148,136,.2)`, overflowX: 'auto' as const }}>
-            <pre style={{ margin: 0, fontSize: 11, color: 'rgba(255,255,255,.75)', lineHeight: 1.6, fontFamily: "'Courier New', monospace" }}>
-              <code>{`Research Process Breakdown:
-  Step 1: Docs review        = 20 min  // verify features
-  Step 2: Free plan check    = 15 min  // test credit card requirement
-  Step 3: Review analysis    = 45 min  // 100+ verified reviews
-  Step 4: Reddit sentiment   = 20 min  // real-world frustrations
-  Step 5: Live pricing       = 10 min  // never cached data
-  Step 6: Competitor compare = 30 min  // feature matrix
-  ─────────────────────────────────────
-  Total minimum per tool:     ~155 min (2.5 hours)
-  Complex tools (4–6 tiers):  4–6 hours across 2–3 sessions`}</code>
-            </pre>
-          </div>
 
-          {RESEARCH_STEPS.map(({ icon: Icon, step, action, detail, time }, i) => (
+          {RESEARCH_STEPS.map(({ icon: Icon, step, action, detail }, i) => (
             <div
               key={i}
               style={{
@@ -242,23 +214,21 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
                 <span style={{ fontSize: 10, fontWeight: 700, color: C.a1, letterSpacing: '0.06em', textTransform: 'uppercase' as const }}>{step}</span>
               </div>
               <div style={{ flex: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, marginBottom: 6, flexWrap: 'wrap' as const }}>
+                <div style={{ marginBottom: 6 }}>
                   <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 14, color: C.txt }}>{action}</span>
-                  <span style={{ fontSize: 11, fontWeight: 700, color: C.a1, background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 100, padding: '2px 10px', whiteSpace: 'nowrap' as const }}>⏱ {time}</span>
                 </div>
                 <div style={{ fontSize: 13, color: C.mut, lineHeight: 1.7, fontWeight: 300 }}>{detail}</div>
               </div>
             </div>
           ))}
 
-          {/* Session total */}
-          <div style={{ marginTop: 22, padding: '14px 18px', background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 10 }}>
-            <div style={{ fontSize: 13, fontWeight: 600, color: C.txt }}>Total research time per tool</div>
-            <div style={{ fontSize: 15, fontWeight: 700, color: C.a1 }}>~155 min (2.5 hrs minimum per session)</div>
+          {/* Scope note */}
+          <div style={{ marginTop: 22, padding: '14px 18px', background: C.a1card, border: `1px solid ${C.a1brd}`, borderRadius: 12 }}>
+            <div style={{ fontSize: 13, fontWeight: 600, color: C.txt, marginBottom: 4 }}>What this research does not include</div>
+            <div style={{ fontSize: 13, color: C.mut, lineHeight: 1.7, fontWeight: 300 }}>
+              AI Nexus does not sign up for and test each product hands-on, so reviews do not contain first-person usage claims, original screenshots, output samples, or benchmark results. Where something could not be confirmed from a public source, it is left out or marked as unverified.
+            </div>
           </div>
-          <p style={{ fontSize: 12, color: C.mut2, marginTop: 10, fontWeight: 300, lineHeight: 1.6 }}>
-            Complex tools — particularly those with multiple pricing tiers, long feature sets, or significant Reddit discussion — routinely take 4–6 hours total across 2–3 sessions. The 6 steps above represent the minimum research threshold. No review is published on the basis of a single session alone.
-          </p>
         </div>
 
         {/* What "comparison table" means */}
@@ -267,7 +237,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             What the comparison tables are based on
           </h2>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 12 }}>
-            Every comparison table in a review or comparison article is based on structured, side-by-side benchmarking — the same evaluation criteria applied to each competing tool at the same time. Data is drawn from official documentation, verified user reviews, and live pricing pages. We don't compile comparison data from other review sites or from the tools' own marketing materials.
+            Every comparison table in a review or comparison article is a side-by-side comparison — the same evaluation criteria applied to each competing tool. Data is drawn from official documentation, published user reviews, and live pricing pages, not from hands-on benchmark runs. Comparison data is not copied from other review sites or from the tools' own marketing materials.
           </p>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 12 }}>
             The ratings (out of 5) are an independent assessment across five dimensions: output quality (based on documented user feedback), ease of use (based on G2/Capterra usability scores), pricing fairness, free plan generosity, and reliability (based on verified user reports over time).
@@ -346,9 +316,9 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           </p>
           {[
             ['No sponsored reviews', 'I don\'t accept payment from tool companies to write positive reviews, publish "sponsored" content labelled as editorial, or adjust ratings in exchange for extended trial access or other benefits.'],
-            ['No review-bombing or inflating scores', 'I don\'t give artificially high scores to tools I want to promote, or artificially low scores to tools I don\'t have an affiliate relationship with. Scores reflect my genuine assessment after testing.'],
-            ['No paywalled reviews', 'Every review on this site is free to read. I don\'t lock detailed test results or verdicts behind a newsletter subscription or paywall.'],
-            ['No "round-up" reviews of tools not properly researched', 'If a tool hasn\'t been verified against official documentation and aggregated user reviews, it doesn\'t appear in a comparative round-up on this site. We\'d rather publish fewer reviews than pad the list with tools we can\'t honestly evaluate.'],
+            ['No review-bombing or inflating scores', 'I don\'t give artificially high scores to tools I want to promote, or artificially low scores to tools I don\'t have an affiliate relationship with. Scores reflect my genuine assessment after reviewing official documentation, pricing, and published user feedback.'],
+            ['No paywalled reviews', 'Every review on this site is free to read. I don\'t lock detailed research notes or verdicts behind a newsletter subscription or paywall.'],
+            ['No "round-up" reviews of tools not properly researched', 'If a tool hasn\'t been verified against official documentation and published user reviews, it doesn\'t appear in a comparative round-up on this site. We\'d rather publish fewer reviews than pad the list with tools we can\'t honestly evaluate.'],
           ].map(([heading, body], i) => (
             <div key={i} style={{ display: 'flex', gap: 12, marginBottom: i < 3 ? 18 : 0, alignItems: 'flex-start' }}>
               <div style={{ width: 28, height: 28, borderRadius: '50%', background: C.a1card, border: `1px solid ${C.a1brd}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
@@ -374,10 +344,10 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
           {/* GEO: Author credentials with key-value patterns */}
           <dl style={{ margin: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px 20px' }}>
             {([
-              { label: 'Background', val: '13+ years enterprise tech, AI automation, and product testing' },
+              { label: 'Background', val: '13+ years enterprise tech, AI automation, and performance testing' },
               { label: 'AI Research', val: 'Independently evaluating AI tools since 2022' },
               { label: 'Tools Evaluated', val: 'AI tools researched across 8 categories' },
-              { label: 'Review Process', val: '4–6 hours minimum research per tool (documented methodology)' },
+              { label: 'Review Process', val: 'Desk research from public sources (documented methodology); no hands-on product testing' },
               { label: 'Standards', val: 'Zero sponsored reviews, independent verification only' },
               { label: 'Current Role', val: 'AI Automation & Performance Testing Leader, BOLD' },
             ] as const).map(({ label, val }) => (
@@ -388,7 +358,7 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
             ))}
           </dl>
           <p style={{ fontSize: 13, color: C.mut, lineHeight: 1.7, marginTop: 14 }}>
-            All reviews on this site reflect independent research verified against official documentation, live pricing, and 100+ verified user reviews per tool. No tool receives preferential ranking based on commission structure or affiliate relationships.
+            All reviews on this site reflect independent desk research verified against official documentation, live pricing, and published user reviews. No tool receives preferential ranking based on commission structure or affiliate relationships.
           </p>
         </div>
 
@@ -396,10 +366,10 @@ export function MethodologyPage({ navigate, isDark, toggleTheme }: { navigate: (
         <div style={{ background: 'rgba(13,148,136,.04)', borderRadius: 16, border: `1.5px solid ${C.a1brd}`, padding: '22px 26px', marginBottom: 14 }}>
           <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 14, color: C.a1, letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: 10 }}>Affiliate links — the full picture</div>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 10 }}>
-            This site earns revenue through affiliate commissions — when you click a link and sign up for a paid plan, I earn a percentage of the subscription. Commissions range from 20–30% recurring, depending on the tool.
+            This site earns revenue through affiliate commissions — when you click a link and sign up for a paid plan, I may earn a commission. Rates and terms vary by program.
           </p>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300, marginBottom: 10 }}>
-            Every tool we link to is one that has been independently researched and would be recommended regardless of the commission structure. We've declined to list tools with high commission rates that didn't meet our research standards. We've published reviews of tools we earn nothing from because they were genuinely useful.
+            Every tool we link to has been researched using the process above, and commission structure doesn't decide which tools are covered or how they are rated. We've published reviews of tools we earn nothing from because they were genuinely useful.
           </p>
           <p style={{ fontSize: 14, color: C.mut, lineHeight: 1.75, fontWeight: 300 }}>
             The commission doesn't cost you anything — it's paid by the tool company, not added to your price.{' '}

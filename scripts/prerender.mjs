@@ -118,8 +118,8 @@ const PAGE_LAST_UPDATED = {
   matcher: '2026-10-22',
   // The homepage's content lives in data/homepage-content.json, so its "updated" date lives there too. BUMP IT THERE when you change homepage content.
   home:        (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'homepage-content.json'), 'utf8')).updated; } catch { return '2026-09-20'; } })(),
-  about:       '2026-09-20',
-  methodology: '2026-09-20',
+  about:       '2026-11-03',
+  methodology: '2026-11-03',
 };
 const MONTH_NUMBERS = {
   January:'01', February:'02', March:'03', April:'04', May:'05', June:'06',
@@ -7043,22 +7043,22 @@ console.log('\nStatic pages:');
     ]),
   ];
   const aboutBodyHtml = `
-    <p style="font-size:1rem;line-height:1.7;color:#333"> — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools with real-world workflows in mind before writing about them. I've researched ${TOOLS.length} tools across writing, audio, video, design, coding, and productivity, comparing official documentation, verified user reviews, and pricing before recommending any of them.</p>
-    <p style="font-size:1rem;line-height:1.7;color:#333;margin-top:14px">AI Nexus was created because every "best AI tools" article I found was clearly written by someone who had never actually opened the products. Review sites were copying marketing pages and calling it a review. I got frustrated and decided to build something where every review is based on independent research — official documentation, verified user reviews, and real pricing data.</p>
-    <p style="font-size:1rem;line-height:1.7;color:#333;margin-top:14px">Every tool on this site is researched from public sources — verified against official documentation, aggregated from 100+ verified user reviews on Trustpilot, G2, and Capterra, and cross-referenced with Reddit community sentiment before I write about it. I focus on what works for solo creators, freelancers, and small teams — not enterprise buyers with unlimited budgets.</p>
+    <p style="font-size:1rem;line-height:1.7;color:#333"> — AI Automation &amp; Performance Testing Leader at BOLD, and founder of AI Nexus. In my day role, I evaluate and implement AI tools for automation and performance testing pipelines — so I research these tools with real-world workflows in mind before writing about them. I've researched ${TOOLS.length} tools across writing, audio, video, design, coding, and productivity, comparing official documentation, published user reviews, and pricing before recommending any of them.</p>
+    <p style="font-size:1rem;line-height:1.7;color:#333;margin-top:14px">AI Nexus was created because many "best AI tools" articles I found were built on recycled marketing copy with no visible sourcing. Review sites were copying vendor pages and calling it a review. I decided to build something where every review is based on independent research — official documentation, published user reviews, and real pricing data.</p>
+    <p style="font-size:1rem;line-height:1.7;color:#333;margin-top:14px">Every tool on this site is researched from public sources — verified against official documentation, compared with published user reviews on Trustpilot, G2, and Capterra where they exist, and cross-referenced with Reddit community discussion before I write about it. I don't test each product hands-on. I focus on what works for solo creators, freelancers, and small teams — not enterprise buyers with unlimited budgets.</p>
     <h2 style="font-size:1.2rem;margin-top:28px">What I've researched</h2>
     <p style="font-size:.95rem;line-height:1.6;color:#555">Independently researched AI tools across 8 categories, verified against official docs, user reviews, and live pricing data since 2022: Writing tools (Grammarly, Rytr, QuillBot, Writesonic, Jasper, Frase, ProWritingAid), AI image tools (Leonardo.ai, PhotoRoom, Midjourney, Looka, Canva AI, Adobe Firefly), Video AI tools (InVideo AI, Pictory, Opus Clip, Descript, Kapwing), Podcast &amp; audio (Podcastle, Murf AI, ElevenLabs, Riverside.fm, Adobe Podcast), Productivity apps (Taskade, Notion AI, Perplexity, Otter.ai, Motion, Reclaim), Marketing tools (Ocoya, Buffer, Hootsuite, Beehiiv, Mailchimp), Coding platforms (Replit, GitHub Copilot, Cursor, v0), and Design tools (Gamma, Beautiful.ai, Canva AI, Figma AI).</p>
     <h2 style="font-size:1.2rem;margin-top:28px">Research methodology — how every review is done</h2>
-    <p style="font-size:1rem;line-height:1.7;color:#333">Every review is based on independent research: official documentation review, aggregated verified user feedback (<a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>), Reddit community sentiment analysis, and live pricing verification. INR equivalents are included for the India market. Reviews are updated when tools change their pricing or features.</p>
+    <p style="font-size:1rem;line-height:1.7;color:#333">Every review is based on independent desk research: official documentation review, published user feedback (<a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>), Reddit community discussion, and live pricing verification. No hands-on product testing is performed. INR equivalents are included for the India market. Reviews are updated when tools change their pricing or features.</p>
     <ol style="font-size:.95rem;line-height:1.7;color:#555;padding-left:20px">
       <li><strong>Official documentation review</strong> — Every feature claim is verified against the tool's official documentation and changelog, not marketing copy.</li>
-      <li><strong>Verified user review aggregation</strong> — At least 100 verified reviews per tool from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, plus Reddit sentiment analysis.</li>
+      <li><strong>Published user feedback</strong> — Ratings and review text from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, where available, plus Reddit community discussion.</li>
       <li><strong>Pricing verification</strong> — All pricing verified against the tool's live pricing page at time of publication, with INR equivalents for the India market.</li>
-      <li><strong>Competitor benchmarking</strong> — Each tool compared against its 2–3 closest alternatives on feature parity, pricing, and use-case fit.</li>
+      <li><strong>Competitor comparison</strong> — Each tool is compared against its closest alternatives on feature parity, pricing, and use-case fit, using public documentation and pricing pages.</li>
       <li><strong>Review freshness</strong> — Reviews are updated when tools change pricing or ship significant new features.</li>
     </ol>
     <h2 style="font-size:1.2rem;margin-top:28px">Full transparency on how this site earns money</h2>
-    <p style="font-size:.95rem;line-height:1.6;color:#555">This site earns money through affiliate commissions. When you click a link and sign up for a paid plan, I earn a commission — typically 20–30% of the subscription payment, recurring. This does not affect my reviews. I recommend tools because they're genuinely good, not because the commission is high. I only list tools that I have independently researched and would recommend to a friend, and I have turned down sponsorships from tools I don't think are worth recommending. See the <a href="/disclosure/">full affiliate disclosure</a>.</p>
+    <p style="font-size:.95rem;line-height:1.6;color:#555">This site earns money through affiliate commissions. When you click a link and sign up for a paid plan, I may earn a commission — rates and terms vary by program. This does not affect my reviews. Affiliate status doesn't decide which tools are covered or how they are rated. See the <a href="/disclosure/">full affiliate disclosure</a>.</p>
   `;
   writeRoute('about', buildPage(template, { title, description, canonical, schemas, datePublished: '2026-05-01', dateModified: PAGE_LAST_UPDATED.about, bodyHtml: aboutBodyHtml }));
 }
@@ -7073,16 +7073,16 @@ console.log('\nStatic pages:');
       <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
       <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
         <li>Clicking an affiliate link never costs you extra — the price is the same as going direct.</li>
-        <li>Commission is typically 20–30% of the subscription payment, recurring, paid by the provider.</li>
+        <li>Commission rates and terms vary by affiliate programme and are paid by the provider.</li>
         <li>Not every tool on this site has an affiliate programme; many are covered purely because they're useful.</li>
       </ul>
     </div>
     <h2 style="font-size:1.15rem">What are affiliate links?</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Some links on this website are affiliate links. This means that if you click a link and make a purchase or sign up for a paid plan, AI Nexus may earn a commission. This comes at no additional cost to you.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">How much does AI Nexus earn per referral?</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">Commission structures vary by provider, but typically fall between 20–30% of the subscription payment, recurring for as long as the referred customer stays subscribed. Some tools instead pay a fixed one-time bounty per signup. Exact rates are set by each provider's affiliate programme, not by AI Nexus, and are never disclosed to readers as a specific dollar figure since they change without notice.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Commission structures vary by provider: some programmes pay a percentage of the subscription payment for a limited period, others a fixed one-time amount per signup. Exact rates are set by each provider's affiliate programme, not by AI Nexus, and are never disclosed to readers as a specific dollar figure since they change without notice.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Does this affect our reviews?</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">No. Tools are reviewed through independent research — official documentation, verified user reviews (<a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, <a href="https://www.reddit.com" target="_blank" rel="noopener">Reddit</a>), and pricing analysis — combined with honest, unsponsored assessment. We've written negative reviews of tools with affiliate programs, and positive reviews of tools where we earn no commission. The affiliate relationship never changes what a review says.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">No. Tools are reviewed through independent research — official documentation, published user reviews (<a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, <a href="https://www.reddit.com" target="_blank" rel="noopener">Reddit</a>), and pricing analysis — combined with honest, unsponsored assessment. We've written negative reviews of tools with affiliate programs, and positive reviews of tools where we earn no commission. The affiliate relationship never changes what a review says.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Which tools have affiliate links?</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Some tools featured on AI Nexus contain affiliate or referral links. We may earn a commission if you purchase through these links, at no extra cost to you. However, many tools are included purely because they are useful to our readers. Affiliate partnerships do not influence our reviews, rankings, or recommendations.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Compliance</h2>
@@ -7111,7 +7111,7 @@ console.log('\nStatic pages:');
   // GEO Quick Win: title was 62 chars (aim 30–60) — trimmed. Description was
   // 201 chars — trimmed to ~150.
   const title = `How Navneet Reviews AI Tools | AI Nexus`;
-  const description = `The exact 7-step process ${AUTHOR} uses to research and evaluate every AI tool — free/paid plan analysis, head-to-head comparisons, and pricing checks.`;
+  const description = `How ${AUTHOR} researches and compares AI tools: official docs, pricing pages, published user reviews and community discussion. No hands-on testing.`;
   const schemas = [
     articleSchema({ title, description, canonical, imageUrl: `${SITE}/og-image.png` }),
     breadcrumbs([
@@ -7119,10 +7119,10 @@ console.log('\nStatic pages:');
       [2, 'Review Methodology', canonical],
     ]),
     faqSchema([
-      { q: `Does ${AUTHOR} independently research every AI tool?`, a: `Yes. Every tool reviewed on AI Nexus is researched based on features, pricing, official documentation, and verified user reviews before a review is published. Both free and paid plan details are covered.` },
-      { q: 'How long does research take before a review goes live?', a: `A minimum of 2–4 weeks for individual tool reviews. Comparison articles require simultaneous side-by-side analysis of 2–3 tools across the same use cases, which typically takes 4–6 weeks in total.` },
+      { q: `Does ${AUTHOR} independently research every AI tool?`, a: `Yes. Every tool reviewed on AI Nexus is researched based on features, pricing, official documentation, and published user reviews before a review is published. Both free and paid plan details are covered.` },
+      { q: `Does ${AUTHOR} test each AI tool hands-on?`, a: `No. AI Nexus is desk research. ${AUTHOR} works from official documentation, vendor pricing pages, published user reviews, and community discussion. Reviews do not include first-person usage claims, original screenshots, or benchmark results from hands-on testing.` },
       { q: 'Does the affiliate commission affect ratings or recommendations?', a: `No. Tools are evaluated and rated before checking whether an affiliate programme exists. The review verdict is written independently of any commission. ${AUTHOR} has published critical reviews of tools that have affiliate programmes, and positive reviews of tools that do not.` },
-      { q: `What does "independently researched" mean on AI Nexus?`, a: `It means ${AUTHOR} has reviewed each tool based on features, pricing, available documentation, and real user reviews from verified sources. Affiliate links are disclosed on every page. No sponsored reviews.` },
+      { q: `What does "independently researched" mean on AI Nexus?`, a: `It means ${AUTHOR} has reviewed each tool based on features, pricing, available documentation, and published user reviews. Affiliate links are disclosed on every page. No sponsored reviews.` },
       { q: 'Are there any sponsored reviews on AI Nexus?', a: `No. AI Nexus does not accept payment from tool companies to publish positive reviews or adjust ratings. All editorial content reflects ${AUTHOR}'s independent assessment.` },
     ]),
   ];
@@ -7130,30 +7130,31 @@ console.log('\nStatic pages:');
     <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
       <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
       <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
-        <li>Every review follows the same 5-step process: docs, verified reviews, pricing, competitor benchmarking, and freshness checks.</li>
-        <li>At least 100 verified reviews per tool are read from Trustpilot, G2, and Capterra before a verdict is written.</li>
+        <li>Every review follows the same 5-step process: docs, published user feedback, pricing, competitor comparison, and freshness checks.</li>
+        <li>This is desk research from public sources. Reviews do not involve hands-on product testing.</li>
         <li>Affiliate status is checked after the rating is set, not before — it never influences the score.</li>
       </ul>
     </div>
     <ol style="font-size:.95rem;line-height:1.75;color:#555;padding-left:20px">
       <li style="margin-bottom:14px"><strong>Official documentation review</strong> — Every feature claim is checked against the tool's official documentation and changelog. Marketing copy is not used as a source. If the docs say a feature is paid-only, limited, or in beta, the review says so.</li>
-      <li style="margin-bottom:14px"><strong>Verified user review aggregation</strong> — At least 100 verified reviews per tool are read from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>. Reddit threads are checked too, for real-world sentiment that doesn't show up on structured review platforms.</li>
+      <li style="margin-bottom:14px"><strong>Published user feedback</strong> — Ratings and review text are read from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>. Reddit threads are checked too, for real-world sentiment that doesn't show up on structured review platforms.</li>
       <li style="margin-bottom:14px"><strong>Pricing verification</strong> — Pricing is confirmed on the tool's live pricing page, not from cached data or third-party aggregators. Free-plan limits are written out explicitly. INR equivalents are included for Indian creators and freelancers.</li>
-      <li style="margin-bottom:14px"><strong>Competitor benchmarking</strong> — No tool is reviewed alone. Each one is compared against its 2–3 closest alternatives on feature parity, pricing, and use-case fit, using the same criteria each time.</li>
+      <li style="margin-bottom:14px"><strong>Competitor comparison</strong> — No tool is reviewed alone. Each one is compared against its closest alternatives on feature parity, pricing, and use-case fit, using the same criteria each time. Comparison tables come from public documentation and pricing pages, not hands-on benchmark runs.</li>
       <li style="margin-bottom:14px"><strong>Review freshness — updated on tool changes</strong> — Reviews are updated when tools ship major features or change pricing. Anything untouched for over 6 months gets flagged for re-verification.</li>
     </ol>
-    <h2 style="font-size:1.15rem;margin-top:24px">The 6-step research process, quantified</h2>
+    <h2 style="font-size:1.15rem;margin-top:24px">How each tool is researched, step by step</h2>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Six steps applied to every tool, each based on public sources. AI Nexus does not perform hands-on product testing.</p>
     <ol style="font-size:.95rem;line-height:1.75;color:#555;padding-left:20px">
-      <li style="margin-bottom:12px"><strong>Official documentation &amp; interface research</strong> (~20 min) — Free account access and official docs are used to research standard workflows. Every feature claim is checked against the docs before it goes in a review.</li>
-      <li style="margin-bottom:12px"><strong>Free plan claim verification</strong> (~15 min) — Each free-tier claim is checked against what the tool actually delivers: whether a card is required, and where "free" features are rate-limited.</li>
-      <li style="margin-bottom:12px"><strong>Analysis of 100+ verified user reviews</strong> (~45 min) — At least 100 verified reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a> are pulled and tagged for recurring complaints and praise.</li>
-      <li style="margin-bottom:12px"><strong>Reddit sentiment check</strong> (~20 min) — The top posts in relevant subreddits from the past year are read for long-term frustrations that don't surface on review platforms for months.</li>
-      <li style="margin-bottom:12px"><strong>Live pricing page verification</strong> (~10 min) — Every tier's price, billing frequency, and cancellation terms are documented straight from the pricing page.</li>
-      <li style="margin-bottom:12px"><strong>Feature comparison against 3 nearest competitors</strong> (~30 min) — Key features are mapped against the closest alternatives to build the comparison tables used in every review.</li>
+      <li style="margin-bottom:12px"><strong>Official documentation review</strong> — Features, limits, and plan rules are read from the vendor's official documentation, help centre, and changelog. Anything the documentation does not state is not asserted.</li>
+      <li style="margin-bottom:12px"><strong>Free plan claim verification</strong> — Each free-tier claim is checked against official documentation, the pricing page, and published user reports: whether a card is required, and where "free" features are rate-limited or watermarked.</li>
+      <li style="margin-bottom:12px"><strong>Published user review analysis</strong> — Ratings and review text on <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a> are read where they exist and tagged for recurring complaints and praise. Review volume differs by tool, so no fixed review count is promised.</li>
+      <li style="margin-bottom:12px"><strong>Community discussion check</strong> — Relevant Reddit and product-forum discussions are read for long-term frustrations that don't always show up on review platforms. Community posts are anecdotal and are checked against documentation.</li>
+      <li style="margin-bottom:12px"><strong>Live pricing page verification</strong> — Every tier's price, billing frequency, and cancellation terms are documented straight from the pricing page.</li>
+      <li style="margin-bottom:12px"><strong>Feature comparison against close alternatives</strong> — Key features are mapped against the closest alternatives to build the comparison tables used in every review. The tables are compiled from public documentation and pricing pages, not hands-on benchmark runs.</li>
     </ol>
     <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
-    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does ${esc(AUTHOR)} independently research every AI tool?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Yes. Every tool reviewed on AI Nexus is researched based on features, pricing, official documentation, and verified user reviews before a review is published.</p>
-    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">How long does research take before a review goes live?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">At least 2–4 weeks for a single tool review. Comparison articles take 4–6 weeks since they require side-by-side testing of 2–3 tools.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does ${esc(AUTHOR)} independently research every AI tool?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Yes. Every tool reviewed on AI Nexus is researched based on features, pricing, official documentation, and published user reviews before a review is published.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does ${esc(AUTHOR)} test each AI tool hands-on?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. AI Nexus is desk research from public sources: official documentation, pricing pages, published user reviews, and community discussion.</p>
     <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does an affiliate commission change the rating?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. Tools are rated before checking whether an affiliate programme exists. Critical reviews have been published for tools with affiliate programmes, and positive reviews for tools without one.</p></div>
     ${categoryByline()}
   `;
@@ -7271,9 +7272,9 @@ function pricingDatasetSchema(canonical) {
     <h2 style="font-size:1.15rem;margin-top:22px">Independence — No Sponsored Reviews</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Every review on AI Nexus is written independently. No tool company pays for inclusion, good coverage, or a ranking spot. Some reviews include affiliate links, disclosed at the top of the page. Those links never change the verdict, the rating, or the ranking.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">What independence looks like in practice</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">In practice, this means a tool with a generous affiliate commission can still receive a critical review if the research supports it, and a tool with no affiliate programme at all can still receive a strong recommendation. Sponsorship offers from tool companies asking for guaranteed positive coverage have been declined; AI Nexus does not accept that kind of arrangement.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">In practice, this means a tool with a generous affiliate commission can still receive a critical review if the research supports it, and a tool with no affiliate programme at all can still receive a strong recommendation. AI Nexus does not accept sponsorship arrangements that guarantee positive coverage.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Research Standards</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">Every tool goes through the same 6-step process: official documentation review, free-plan verification, analysis of 100+ verified reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, Reddit sentiment analysis, live pricing verification, and competitor benchmarking. Tools are never recommended on marketing claims alone.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">Every tool goes through the same 6-step process: official documentation review, free-plan verification, analysis of published user reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, and <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, Reddit community discussion, live pricing verification, and competitor comparison. This is desk research from public sources, not hands-on product testing. Tools are never recommended on marketing claims alone.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Pricing Accuracy</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Pricing is checked on the tool's live pricing page at the time of publication. Reviews get updated when a tool changes its pricing or features. INR pricing is included for Indian readers wherever the tool sets local pricing.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Affiliate Disclosure</h2>
@@ -7281,7 +7282,7 @@ function pricingDatasetSchema(canonical) {
     <h2 style="font-size:1.15rem;margin-top:22px">Correction Policy</h2>
     <p style="font-size:.95rem;line-height:1.7;color:#555">Spotted an error? Reach out via the contact details on the <a href="/about/">About page</a>. Verified corrections go live within 48 hours, and the review gets a dated note. Pricing corrections happen as soon as they're verified.</p>
     <h2 style="font-size:1.15rem;margin-top:22px">Author Expertise</h2>
-    <p style="font-size:.95rem;line-height:1.7;color:#555">AI Nexus is run by Navneet Arya, who has worked in AI automation and performance testing since 2022. Research draws on official documentation, verified reviews, and public usage data — never fabricated testing or sponsored data.</p>
+    <p style="font-size:.95rem;line-height:1.7;color:#555">AI Nexus is run by Navneet Arya, who has worked in AI automation and performance testing since 2022. Research draws on official documentation, published user reviews, and public usage data. AI Nexus does not perform hands-on product testing and does not present desk research as testing.</p>
     <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
     <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Does AI Nexus accept payment for positive reviews?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">No. No tool company pays for inclusion, good coverage, or a ranking spot. Some pages carry disclosed affiliate links, which never change the verdict.</p>
     <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">How do I report an error in a review?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Contact details are on the <a href="/about/">About page</a>. Verified corrections go live within 48 hours, with a dated note on the page.</p>
@@ -7301,28 +7302,28 @@ function pricingDatasetSchema(canonical) {
 {
   const canonical = `${SITE}/how-we-analyze-ai-tools/`;
   const title = 'How We Analyze AI Tools — 6-Step Research Process | AI Nexus';
-  const description = 'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, 100+ reviews, live pricing verification.';
+  const description = 'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, published user reviews, live pricing verification.';
   const howWeAnalyzeBodyHtml = `
     <div style="margin-bottom:18px;padding:14px 18px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px">
       <h2 style="font-size:1rem;font-weight:700;color:#0D9488;margin-bottom:8px">Key takeaways</h2>
       <ul style="margin:0;padding-left:18px;font-size:.9rem;line-height:1.7;color:#333">
-        <li>Free-tier claims are tested directly, not taken from marketing pages, since many tools hide rate limits or watermarks.</li>
-        <li>100+ verified reviews per tool are read across Trustpilot, G2, Capterra, and Reddit before a verdict is written.</li>
-        <li>Every tool is benchmarked against 2–4 direct competitors on the same criteria, not scored in isolation.</li>
+        <li>Free-tier claims are checked against official documentation and pricing pages, not taken from marketing pages, since many tools hide rate limits or watermarks.</li>
+        <li>Published user reviews on Trustpilot, G2, Capterra, and Reddit are read where available before a verdict is written.</li>
+        <li>Every tool is compared against its closest competitors on the same criteria, not scored in isolation.</li>
       </ul>
     </div>
     <p style="font-size:1rem;line-height:1.7;color:#333">Every AI tool reviewed on AI Nexus goes through a consistent 6-step research process. Here's exactly what that looks like.</p>
     <ol style="font-size:.95rem;line-height:1.75;color:#555;padding-left:20px">
-      <li style="margin-bottom:14px"><strong>Official Documentation Review</strong> — We read every word of the tool's official docs, changelog, and API reference before writing a single sentence. This means reading the actual feature documentation, not the homepage or pricing page — checking what features exist at each tier, what the API limits are, and what changed in recent versions.</li>
-      <li style="margin-bottom:14px"><strong>Free Plan Verification</strong> — Every tool's free tier is tested against what it advertises. Limitations, watermarks, export restrictions, and rate limits are all documented, since many tools advertise "free forever" but hide critical limitations.</li>
-      <li style="margin-bottom:14px"><strong>Review Aggregation (100+ Reviews)</strong> — We read verified user reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, and Reddit — 200+ per tool — to find recurring complaints and praise patterns rather than relying on a star average.</li>
+      <li style="margin-bottom:14px"><strong>Official Documentation Review</strong> — The tool's official docs, changelog, and API reference are read before any claim is written. This means reading the actual feature documentation, not the homepage or pricing page alone — checking what features exist at each tier, what the API limits are, and what changed in recent versions.</li>
+      <li style="margin-bottom:14px"><strong>Free Plan Verification</strong> — Every tool's free tier is checked against what it advertises, using official documentation, pricing pages, and published user reports. Limitations, watermarks, export restrictions, and rate limits are all documented, since many tools advertise "free forever" but hide critical limitations.</li>
+      <li style="margin-bottom:14px"><strong>Published User Review Analysis</strong> — We read published user reviews from <a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a>, <a href="https://www.g2.com" target="_blank" rel="noopener">G2</a>, <a href="https://www.capterra.com" target="_blank" rel="noopener">Capterra</a>, and Reddit where they exist, to find recurring complaints and praise patterns rather than relying on a star average. Review volume differs by tool.</li>
       <li style="margin-bottom:14px"><strong>Reddit Sentiment Analysis</strong> — Real conversations on <a href="https://www.reddit.com" target="_blank" rel="noopener">Reddit</a> (r/artificial, r/ChatGPT, r/MachineLearning, and tool-specific subreddits) reveal pain points, workarounds, and deal-breakers that polished review sites miss.</li>
-      <li style="margin-bottom:14px"><strong>Live Pricing Verification</strong> — All pricing is verified against the live pricing page on the day of publication, screenshotted with a date. INR pricing is verified separately for Indian audience articles.</li>
-      <li style="margin-bottom:14px"><strong>Competitor Benchmarking</strong> — Every tool is compared against 2–4 direct competitors using the same criteria: features, pricing, limitations, and target use case.</li>
+      <li style="margin-bottom:14px"><strong>Live Pricing Verification</strong> — All pricing is verified against the live pricing page on the day of publication. INR pricing is verified separately for Indian audience articles.</li>
+      <li style="margin-bottom:14px"><strong>Competitor Comparison</strong> — Every tool is compared against its closest competitors using the same criteria: features, pricing, limitations, and target use case.</li>
     </ol>
     <div style="margin-top:26px"><h2 style="font-size:1.15rem;font-weight:700;margin-bottom:10px;color:#111">Frequently asked questions</h2>
     <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Why read Reddit instead of only structured reviews?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Structured review platforms surface a star rating; Reddit threads surface long-term frustrations, workarounds, and deal-breakers that don't show up in a 5-star summary.</p>
-    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Why verify free plan claims separately?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Many tools advertise "free forever" while hiding rate limits, watermarks, or export restrictions. Testing the free tier directly catches gaps that marketing pages don't mention.</p>
+    <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">Why verify free plan claims separately?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Many tools advertise "free forever" while hiding rate limits, watermarks, or export restrictions. Checking the free tier's documented limits catches gaps that marketing pages don't mention.</p>
     <h3 style="font-size:1rem;font-weight:600;margin-top:14px;margin-bottom:4px;color:#222">How often is pricing re-checked?</h3><p style="font-size:.9rem;line-height:1.7;color:#555">Pricing is verified against the live pricing page at time of publication, and reviews are updated when a tool changes its pricing or features.</p></div>
     ${categoryByline()}
   `;
@@ -8102,7 +8103,7 @@ function categoryByline() {
     { slug: 'best-ai-writing-tools', category: 'Writing', title: 'Best AI Writing Tools 2026 — Reviewed & Ranked | AI Nexus', desc: 'Best AI writing tools reviewed for 2026. Grammarly, Rytr, Writesonic, Frase, Jasper compared with free plans and honest verdicts.' },
     { slug: 'best-ai-image-tools', category: 'Image', title: 'Best AI Image Generators 2026 — Reviewed & Ranked | AI Nexus', desc: 'Best AI image generators reviewed in 2026. Leonardo.ai, PhotoRoom, and more with honest reviews.' },
     { slug: 'best-ai-video-tools', category: 'Video', title: '4 Best AI Video Tools 2026: InVideo vs Opus Clip vs Pictory | AI Nexus', desc: 'Best AI video tools reviewed in 2026. InVideo AI, Pictory, Opus Clip compared for faceless YouTube and Shorts.' },
-    { slug: 'best-ai-audio-tools', category: 'Audio', title: 'Best AI Audio Tools 2026 — Podcast, Voiceover & TTS Compared | AI Nexus', desc: 'Best AI audio tools in 2026 — Podcastle, Murf AI, ElevenLabs, Descript. Independently researched across 100+ verified reviews. Free plans compared. Podcast and voiceover picks.' },
+    { slug: 'best-ai-audio-tools', category: 'Audio', title: 'Best AI Audio Tools 2026 — Podcast, Voiceover & TTS Compared | AI Nexus', desc: 'Best AI audio tools in 2026 — Podcastle, Murf AI, ElevenLabs, Descript. Independently researched from official docs and published user reviews. Free plans compared. Podcast and voiceover picks.' },
     { slug: 'best-ai-marketing-tools', category: 'Marketing', title: 'Best AI Marketing Tools 2026 — SEO, Social & Content AI Compared | AI Nexus', desc: 'Best AI marketing tools in 2026 — Ocoya, Frase, Jasper, Writesonic for SEO and social media marketing. Independently researched. Free plans and pricing compared.' },
     { slug: 'best-ai-design-tools', category: 'Design', title: 'Best AI Design Tools 2026 — Logo, Presentation & Graphic AI Compared | AI Nexus', desc: 'Best AI design tools in 2026 — Canva AI, Looka, Gamma, Beautiful.ai. Free plans, pricing, and honest comparisons. No design experience needed.' },
     { slug: 'best-ai-coding-tools', category: 'Coding', title: 'Best AI Coding Tools 2026 — GitHub Copilot, Replit & Cursor Compared | AI Nexus', desc: 'Best AI coding tools in 2026 — Replit, GitHub Copilot, Cursor compared for beginners and professionals. Free plans, pricing, and honest verdicts.' },
@@ -8453,7 +8454,7 @@ ${items}
   // directly), so it needs its own explicit articleSchema() call here.
   const homepageArticleSchema = JSON.stringify(articleSchema({
     title: 'Best AI Tools 2026 — Researched & Compared',
-    description: 'AI Nexus independently researches AI tools against official docs, 100+ verified reviews, and live pricing. No sponsored picks.',
+    description: 'AI Nexus independently researches AI tools against official docs, published user reviews, and live pricing. No sponsored picks.',
     canonical: `${SITE}/`,
     datePublished: '2026-01-01',
     dateModified: PAGE_LAST_UPDATED.home,

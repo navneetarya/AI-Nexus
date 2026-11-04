@@ -9,8 +9,7 @@
 // Internal links: /blog/best-ai-voice-cloning-tools-2026/, /blog/best-ai-voice-cloning-for-podcasts-2026/,
 //   /blog/elevenlabs-pricing-character-credits-2026/, /blog/murf-ai-pricing-2026/,
 //   /compare/murf-ai-vs-elevenlabs/, /tools/elevenlabs/, /tools/murf-ai/, /tools/descript/
-// Affiliate: ElevenLabs (try.elevenlabs.io/earuakibkmz9) — highest-converting tool page
-//   on the site (30% conversion) — primary CTA. Murf AI (get.murf.ai/ilypoqhxvxsj) and
+// Affiliate: ElevenLabs (try.elevenlabs.io/earuakibkmz9) — primary CTA. Murf AI (get.murf.ai/ilypoqhxvxsj) and
 //   Descript (descript.com?via=ainexus) — secondary CTAs. Resemble AI has no affiliate
 //   program in this codebase — covered editorially only, cited to its own pricing page,
 //   matching the existing treatment in best-ai-voice-cloning-tools-2026.ts.

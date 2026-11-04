@@ -395,7 +395,7 @@ function App() {
   if (path === '/about') {
     updateMeta(
       `About ${SITE_CONFIG.authorName} — The Person Behind AI Nexus`,
-      `${SITE_CONFIG.authorName} independently researches AI tools since 2022 — official docs, 100+ verified reviews, and live pricing verification. No sponsored reviews.`,
+      `${SITE_CONFIG.authorName} independently researches AI tools since 2022 — official docs, published user reviews, and live pricing verification. No sponsored reviews.`,
 
       `${SITE_CONFIG.siteUrl}/about/`
     );
@@ -447,8 +447,8 @@ function App() {
 
   if (path === '/methodology') {
     updateMeta(
-      'How I Review AI Tools — Testing Methodology | AI Nexus',
-      `The 7-step process ${SITE_CONFIG.authorName} uses to test every AI tool on AI Nexus. Real standards, paid plan testing, head-to-head comparisons, and honest verdicts.`,
+      'How I Research AI Tools — Research Methodology | AI Nexus',
+      `How ${SITE_CONFIG.authorName} researches every AI tool on AI Nexus: official documentation, pricing pages, published user reviews, and community discussion. Desk research, no hands-on testing.`,
       `${SITE_CONFIG.siteUrl}/methodology/`
     );
     return (
@@ -513,7 +513,7 @@ function App() {
   if (path === '/how-we-analyze-ai-tools') {
     updateMeta(
       'How We Analyze AI Tools — 6-Step Research Process | AI Nexus',
-      'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, 100+ reviews, live pricing verification.',
+      'The 6-step process Navneet Arya uses to independently research and compare AI tools — official docs, published user reviews, live pricing verification.',
       `${SITE_CONFIG.siteUrl}/how-we-analyze-ai-tools/`
     );
     return (
@@ -636,7 +636,7 @@ function App() {
 
   updateMeta(
       `Best AI Tools ${CURRENT_YEAR} — Researched & Ranked | AI Nexus`,
-    `Honest reviews of the best AI tools for writing, video, audio, podcasting, and productivity. Independently researched by ${SITE_CONFIG.authorName} — official docs, 100+ verified reviews per tool, live pricing verified May 2026.`,
+    `Honest reviews of the best AI tools for writing, video, audio, podcasting, and productivity. Independently researched by ${SITE_CONFIG.authorName} — official docs, published user reviews, live pricing verified May 2026.`,
     SITE_CONFIG.siteUrl
   );
   return <HomePage navigate={navigate} {...themeProps} />;

@@ -7,6 +7,7 @@ import { TOOLS, SITE_CONFIG } from '../constants';
 import { Category, Tool } from '../types';
 import { ExternalLink, Star, ArrowRight, Zap, BookOpen } from 'lucide-react';
 import { SharedNav } from './SharedNav';
+import { trackAffiliateClick } from '../lib/subid-tracking';
 import { CategoryIntroSections, CategoryDetailSections, CategoryFaq, categoryFaqPlain } from '../components/CategoryEditorial';
 // Perf: use the lightweight metadata list (no full post `content`) so this
 // route's bundle doesn't pull in every blog post's HTML body just to render
@@ -223,7 +224,8 @@ const ToolCard: React.FC<{ tool: Tool; navigate: (to: string) => void }> = ({ to
       <a
         href={tool.affiliateLink}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="sponsored nofollow noopener noreferrer"
+        onClick={(e) => trackAffiliateClick(e, { toolName: tool.name, ctaPosition: 'category_card' })}
         style={{
           flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
           background: C.a1, color: '#fff', borderRadius: 8,

@@ -41,7 +41,7 @@ export function EditorialPolicyPage({ navigate, isDark, toggleTheme }: { navigat
     },
     {
       title: "Research Standards",
-      body: `Every tool is researched using the same 6-step process: official documentation review, free plan verification, analysis of 200+ verified user reviews from Trustpilot, G2, and Capterra, Reddit sentiment analysis, live pricing verification, and competitor benchmarking. Tools are never recommended based solely on their marketing materials.`
+      body: `Every tool is researched using the same 6-step process: official documentation review, free plan verification, analysis of published user reviews from Trustpilot, G2, and Capterra, Reddit community discussion, live pricing verification, and competitor comparison. This is desk research from public sources, not hands-on product testing. Tools are never recommended based solely on their marketing materials.`
     },
     {
       title: "Pricing Accuracy",
@@ -57,7 +57,7 @@ export function EditorialPolicyPage({ navigate, isDark, toggleTheme }: { navigat
     },
     {
       title: "Author Expertise",
-      body: `AI Nexus is run by Navneet Arya, an AI Automation & Performance Testing professional since 2022. Research is based on official documentation, verified reviews, and public usage data — not fabricated testing or sponsored data. Where free-plan or trial-based research has been conducted directly, it is noted explicitly. Where research is documentation and review-based, that is also stated.`
+      body: `AI Nexus is run by Navneet Arya, an AI Automation & Performance Testing professional since 2022. Research is based on official documentation, published user reviews, and public usage data. AI Nexus does not perform hands-on product testing and does not present desk research as testing.`
     },
   ];
 

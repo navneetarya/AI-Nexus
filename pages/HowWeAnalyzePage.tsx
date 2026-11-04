@@ -14,37 +14,37 @@ export function HowWeAnalyzePage({ navigate, isDark, toggleTheme }: { navigate: 
     {
       position: 1,
       name: "Official Documentation Review",
-      text: "We read every word of the tool's official docs, changelog, and API reference before writing a single sentence. No assumptions from marketing pages.",
-      detail: "This means reading the actual feature documentation — not the homepage or pricing page. We check what features exist at each tier, what the API limits are, and what changed in recent versions."
+      text: "The tool's official docs, changelog, and API reference are read before any claim is written. No assumptions from marketing pages.",
+      detail: "This means reading the actual feature documentation — not the homepage or pricing page alone. We check what features exist at each tier, what the API limits are, and what changed in recent versions."
     },
     {
       position: 2,
       name: "Free Plan Verification",
-      text: "Every tool's free tier is tested against what it advertises. Limitations, watermarks, export restrictions, and rate limits are all documented.",
+      text: "Every tool's free tier is checked against what it advertises, using official documentation, pricing pages, and published user reports. Limitations, watermarks, export restrictions, and rate limits are all documented.",
       detail: "Many tools advertise 'free forever' but hide critical limitations. We document exactly what you can and cannot do on the free plan so readers can make an informed decision before signing up."
     },
     {
       position: 3,
-      name: "Review Aggregation (200+ Reviews)",
-      text: "We analyze verified user reviews from Trustpilot, G2, Capterra, and Reddit. We look for patterns in complaints and praise — not just star averages.",
-      detail: "A 4.2/5 rating tells you little. We read the text of 200+ reviews to find recurring complaints, praise patterns, and use-case fit. We weight recent reviews more heavily."
+      name: "Published User Review Analysis",
+      text: "We read published user reviews from Trustpilot, G2, Capterra, and Reddit where they exist. We look for patterns in complaints and praise — not just star averages.",
+      detail: "A 4.2/5 rating tells you little. We read review text to find recurring complaints, praise patterns, and use-case fit. Review volume differs by tool, so no fixed review count is promised."
     },
     {
       position: 4,
       name: "Reddit Sentiment Analysis",
       text: "Real conversations in r/artificial, r/ChatGPT, r/MachineLearning and tool-specific subreddits reveal pain points that polished review sites miss.",
-      detail: "Reddit users are brutally honest. We search for the tool name across relevant subreddits and catalogue what real power users say — including workarounds, deal-breakers, and hidden gems."
+      detail: "Reddit users are often blunt. We search for the tool name across relevant subreddits and note what users say — including workarounds, deal-breakers, and hidden gems. Community posts are anecdotal, so they are checked against documentation."
     },
     {
       position: 5,
       name: "Live Pricing Verification",
       text: "All pricing is verified against the live pricing page on the day of publication. INR pricing is verified separately for Indian audience articles.",
-      detail: "AI tool pricing changes frequently. We check the live pricing page, screenshot it with a date, and note when pricing was last verified at the top of every review."
+      detail: "AI tool pricing changes frequently. We check the live pricing page and note when pricing was last verified at the top of every review."
     },
     {
       position: 6,
-      name: "Competitor Benchmarking",
-      text: "Every tool is compared against 2–4 direct competitors using the same criteria: features, pricing, limitations, and target use case.",
+      name: "Competitor Comparison",
+      text: "Every tool is compared against its closest competitors using the same criteria: features, pricing, limitations, and target use case.",
       detail: "We never recommend a tool in isolation. Every review includes a comparison table or section that shows how the tool stacks up against its closest alternatives."
     },
   ];
@@ -65,7 +65,7 @@ export function HowWeAnalyzePage({ navigate, isDark, toggleTheme }: { navigate: 
           How We Analyze AI Tools
         </h1>
         <p style={{ color: C.mut, fontSize: 14, marginBottom: 16 }}>
-          Last updated: May 25, 2026 · <span style={{ color: C.a1 }}>AI Nexus</span>
+          Last updated: November 3, 2026 · <span style={{ color: C.a1 }}>AI Nexus</span>
         </p>
 
         <p style={{ fontSize: 15, lineHeight: 1.75, color: C.mut, marginBottom: 40 }}>

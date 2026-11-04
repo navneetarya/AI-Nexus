@@ -7,6 +7,7 @@ import React from 'react';
 import { TOOLS, SITE_CONFIG } from '../constants';
 import { ExternalLink, CheckCircle, XCircle, ArrowRight, MapPin, Star } from 'lucide-react';
 import { SharedNav } from './SharedNav';
+import { trackAffiliateClick } from '../lib/subid-tracking';
 
 const C = {
   bg:     'var(--bg)',
@@ -382,7 +383,8 @@ const IndiaToolCard: React.FC<{
         <a
           href={tool.affiliateLink}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored nofollow noopener noreferrer"
+          onClick={(e) => trackAffiliateClick(e, { toolName: tool.name, ctaPosition: 'india_card' })}
           style={{
             flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
             background: C.a1, color: '#fff', borderRadius: 8,
@@ -676,7 +678,8 @@ export function BestAIToolsIndiaPage({ navigate, isDark, toggleTheme }: Props) {
                   <a
                     href={tool.affiliateLink}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="sponsored nofollow noopener noreferrer"
+                    onClick={(e) => trackAffiliateClick(e, { toolName: tool.name, ctaPosition: 'india_list' })}
                     style={{
                       flexShrink: 0, display: 'flex', alignItems: 'center', gap: 5,
                       background: C.a1, color: '#fff', borderRadius: 7,
