@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-15T10:38:44.666Z",
+  "generated_at": "2026-11-01T12:26:53.207Z",
   "base_url": "https://ainexustools.online",
   "pages_sampled": 15,
-  "sitemap_url_count": 231,
+  "sitemap_url_count": 247,
   "overall_score": 93,
   "site_wide": {
-    "score": 100,
+    "score": 79,
     "checks": [
       {
         "id": "robots-reachable",
@@ -17,9 +17,9 @@
       {
         "id": "robots-GPTBot",
         "label": "GPTBot not blocked",
-        "pass": true,
+        "pass": false,
         "weight": 1,
-        "detail": "GPTBot explicitly allowed"
+        "detail": "GPTBot appears Disallow: /"
       },
       {
         "id": "robots-ChatGPT-User",
@@ -38,16 +38,16 @@
       {
         "id": "robots-ClaudeBot",
         "label": "ClaudeBot not blocked",
-        "pass": true,
+        "pass": false,
         "weight": 1,
-        "detail": "ClaudeBot explicitly allowed"
+        "detail": "ClaudeBot appears Disallow: /"
       },
       {
         "id": "robots-anthropic-ai",
         "label": "anthropic-ai not blocked",
-        "pass": true,
+        "pass": false,
         "weight": 1,
-        "detail": "anthropic-ai explicitly allowed"
+        "detail": "anthropic-ai appears Disallow: /"
       },
       {
         "id": "robots-PerplexityBot",
@@ -59,16 +59,16 @@
       {
         "id": "robots-Google-Extended",
         "label": "Google-Extended not blocked",
-        "pass": true,
+        "pass": false,
         "weight": 1,
-        "detail": "Google-Extended explicitly allowed"
+        "detail": "Google-Extended appears Disallow: /"
       },
       {
         "id": "robots-Bytespider",
         "label": "Bytespider not blocked",
-        "pass": true,
+        "pass": false,
         "weight": 1,
-        "detail": "Bytespider explicitly allowed"
+        "detail": "Bytespider appears Disallow: /"
       },
       {
         "id": "robots-DuckAssistBot",
@@ -103,7 +103,7 @@
         "label": "sitemap.xml has URLs",
         "pass": true,
         "weight": 1,
-        "detail": "231 <loc> entries"
+        "detail": "247 <loc> entries"
       },
       {
         "id": "llms-txt-reachable",
@@ -124,7 +124,7 @@
         "label": "llms.txt updated within 45 days",
         "pass": true,
         "weight": 1,
-        "detail": "last updated 2026-09-20 (25d ago)"
+        "detail": "last updated 2026-09-20 (42d ago)"
       }
     ]
   },
@@ -137,21 +137,21 @@
           "label": "JSON-LD schema present",
           "pass": true,
           "weight": 2,
-          "detail": "9 block(s): WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo, Article"
+          "detail": "8 block(s): WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, Article"
         },
         {
           "id": "schema-organization-or-person",
           "label": "Organization/Person entity schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo, Article"
+          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, Article"
         },
         {
           "id": "schema-article-or-review",
           "label": "Article/Review/FAQPage schema present",
           "pass": true,
           "weight": 2,
-          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, HowTo, Article"
+          "detail": "WebSite, Organization, Person, FAQPage, ItemList, WebPage, BreadcrumbList, Article"
         },
         {
           "id": "canonical-present",
@@ -172,7 +172,7 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "15 H2, 3 H3"
+          "detail": "16 H2, 4 H3"
         },
         {
           "id": "question-headers",
@@ -197,8 +197,8 @@
         }
       ],
       "meta": {
-        "h2Count": 15,
-        "h3Count": 3,
+        "h2Count": 16,
+        "h3Count": 4,
         "tableCount": 1,
         "questionHeaders": 7,
         "schemaTypes": [
@@ -209,7 +209,6 @@
           "ItemList",
           "WebPage",
           "BreadcrumbList",
-          "HowTo",
           "Article"
         ]
       }
@@ -849,7 +848,7 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "10 H2, 16 H3"
+          "detail": "11 H2, 15 H3"
         },
         {
           "id": "question-headers",
@@ -874,8 +873,8 @@
         }
       ],
       "meta": {
-        "h2Count": 10,
-        "h3Count": 16,
+        "h2Count": 11,
+        "h3Count": 15,
         "tableCount": 2,
         "questionHeaders": 10,
         "schemaTypes": [
@@ -933,7 +932,7 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "11 H2, 15 H3"
+          "detail": "11 H2, 14 H3"
         },
         {
           "id": "question-headers",
@@ -959,7 +958,7 @@
       ],
       "meta": {
         "h2Count": 11,
-        "h3Count": 15,
+        "h3Count": 14,
         "tableCount": 4,
         "questionHeaders": 10,
         "schemaTypes": [
@@ -1016,14 +1015,14 @@
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
           "pass": true,
           "weight": 1,
-          "detail": "9 H2, 12 H3"
+          "detail": "9 H2, 15 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
           "pass": true,
           "weight": 1,
-          "detail": "7 question heading(s)"
+          "detail": "10 question heading(s)"
         },
         {
           "id": "has-table",
@@ -1042,9 +1041,9 @@
       ],
       "meta": {
         "h2Count": 9,
-        "h3Count": 12,
+        "h3Count": 15,
         "tableCount": 1,
-        "questionHeaders": 7,
+        "questionHeaders": 10,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -1179,23 +1178,23 @@
         {
           "id": "heading-structure",
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
-          "pass": false,
+          "pass": true,
           "weight": 1,
-          "detail": "0 H2, 0 H3"
+          "detail": "11 H2, 6 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
-          "pass": false,
+          "pass": true,
           "weight": 1,
-          "detail": "0 question heading(s)"
+          "detail": "6 question heading(s)"
         },
         {
           "id": "has-table",
           "label": "Has at least one comparison/data table",
-          "pass": false,
+          "pass": true,
           "weight": 1,
-          "detail": "0 table(s)"
+          "detail": "1 table(s)"
         },
         {
           "id": "author-byline",
@@ -1206,10 +1205,10 @@
         }
       ],
       "meta": {
-        "h2Count": 0,
-        "h3Count": 0,
-        "tableCount": 0,
-        "questionHeaders": 0,
+        "h2Count": 11,
+        "h3Count": 6,
+        "tableCount": 1,
+        "questionHeaders": 6,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -1264,23 +1263,23 @@
         {
           "id": "heading-structure",
           "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
-          "pass": false,
+          "pass": true,
           "weight": 1,
-          "detail": "0 H2, 0 H3"
+          "detail": "9 H2, 6 H3"
         },
         {
           "id": "question-headers",
           "label": "Has at least one question-style heading (FAQ/AEO pattern)",
-          "pass": false,
+          "pass": true,
           "weight": 1,
-          "detail": "0 question heading(s)"
+          "detail": "6 question heading(s)"
         },
         {
           "id": "has-table",
           "label": "Has at least one comparison/data table",
-          "pass": false,
+          "pass": true,
           "weight": 1,
-          "detail": "0 table(s)"
+          "detail": "1 table(s)"
         },
         {
           "id": "author-byline",
@@ -1291,10 +1290,10 @@
         }
       ],
       "meta": {
-        "h2Count": 0,
-        "h3Count": 0,
-        "tableCount": 0,
-        "questionHeaders": 0,
+        "h2Count": 9,
+        "h3Count": 6,
+        "tableCount": 1,
+        "questionHeaders": 6,
         "schemaTypes": [
           "WebSite",
           "Organization",
@@ -1391,14 +1390,42 @@
       }
     }
   ],
-  "page_avg_score": 92,
+  "page_avg_score": 95,
   "top_failures": [
     {
-      "id": "has-table",
-      "label": "Has at least one comparison/data table",
+      "id": "robots-GPTBot",
+      "label": "GPTBot not blocked",
       "pass": false,
       "weight": 1,
-      "detail": "0 table(s)"
+      "detail": "GPTBot appears Disallow: /"
+    },
+    {
+      "id": "robots-ClaudeBot",
+      "label": "ClaudeBot not blocked",
+      "pass": false,
+      "weight": 1,
+      "detail": "ClaudeBot appears Disallow: /"
+    },
+    {
+      "id": "robots-anthropic-ai",
+      "label": "anthropic-ai not blocked",
+      "pass": false,
+      "weight": 1,
+      "detail": "anthropic-ai appears Disallow: /"
+    },
+    {
+      "id": "robots-Google-Extended",
+      "label": "Google-Extended not blocked",
+      "pass": false,
+      "weight": 1,
+      "detail": "Google-Extended appears Disallow: /"
+    },
+    {
+      "id": "robots-Bytespider",
+      "label": "Bytespider not blocked",
+      "pass": false,
+      "weight": 1,
+      "detail": "Bytespider appears Disallow: /"
     },
     {
       "id": "has-table",
@@ -1434,34 +1461,6 @@
       "pass": false,
       "weight": 1,
       "detail": "0 table(s)"
-    },
-    {
-      "id": "heading-structure",
-      "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
-      "pass": false,
-      "weight": 1,
-      "detail": "0 H2, 0 H3"
-    },
-    {
-      "id": "question-headers",
-      "label": "Has at least one question-style heading (FAQ/AEO pattern)",
-      "pass": false,
-      "weight": 1,
-      "detail": "0 question heading(s)"
-    },
-    {
-      "id": "has-table",
-      "label": "Has at least one comparison/data table",
-      "pass": false,
-      "weight": 1,
-      "detail": "0 table(s)"
-    },
-    {
-      "id": "heading-structure",
-      "label": "Has meaningful H2/H3 hierarchy (≥3 combined)",
-      "pass": false,
-      "weight": 1,
-      "detail": "0 H2, 0 H3"
     }
   ]
 }

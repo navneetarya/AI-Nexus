@@ -1,25 +1,25 @@
-# AI Nexus GEO Report — 2026-10-15
+# AI Nexus GEO Report — 2026-11-01
 
 ## Technical GEO score: 93/100
 
-- Site-wide (robots.txt / sitemap / llms.txt): **100/100**
-- Sampled pages average (15 pages checked): **92/100**
-- Sitemap URL count: 231
+- Site-wide (robots.txt / sitemap / llms.txt): **79/100**
+- Sampled pages average (15 pages checked): **95/100**
+- Sitemap URL count: 247
 
 ### Top technical issues to fix
 
 | Issue | Weight | Detail |
 |---|---|---|
+| GPTBot not blocked | 1 | GPTBot appears Disallow: / |
+| ClaudeBot not blocked | 1 | ClaudeBot appears Disallow: / |
+| anthropic-ai not blocked | 1 | anthropic-ai appears Disallow: / |
+| Google-Extended not blocked | 1 | Google-Extended appears Disallow: / |
+| Bytespider not blocked | 1 | Bytespider appears Disallow: / |
 | Has at least one comparison/data table | 1 | 0 table(s) |
 | Has at least one comparison/data table | 1 | 0 table(s) |
 | Has at least one comparison/data table | 1 | 0 table(s) |
 | Has at least one comparison/data table | 1 | 0 table(s) |
 | Has at least one comparison/data table | 1 | 0 table(s) |
-| Has at least one comparison/data table | 1 | 0 table(s) |
-| Has meaningful H2/H3 hierarchy (≥3 combined) | 1 | 0 H2, 0 H3 |
-| Has at least one question-style heading (FAQ/AEO pattern) | 1 | 0 question heading(s) |
-| Has at least one comparison/data table | 1 | 0 table(s) |
-| Has meaningful H2/H3 hierarchy (≥3 combined) | 1 | 0 H2, 0 H3 |
 
 ## AI citation test results
 
@@ -55,6 +55,26 @@ Tested against: **gemini**
 | ElevenLabs vs Murf: which AI voice generator should I choose? | — | 0/1 | — | `/blog/best-ai-voice-generators-2026` | Very High |
 | Do free AI voice generators allow commercial use? | — | 0/1 | — | `/blog/best-ai-voice-generators-2026` | Very High |
 | What AI tools should a solopreneur use in 2026? | — | 0/1 | — | `/blog/ai-tools-for-solopreneurs-2026` | Very High |
+| How much does ElevenLabs cost in 2026? | — | 0/1 | — | `/tools/elevenlabs` | Very High |
+| How much does Murf AI cost in 2026? | — | 0/1 | — | `/tools/murf-ai` | Very High |
+| How much does Descript cost in 2026? | — | 0/1 | — | `/tools/descript` | Very High |
+| How much does Jasper AI cost in 2026? | — | 0/1 | — | `/tools/jasper` | Very High |
+| How much does Pictory cost in 2026? | — | 0/1 | — | `/tools/pictory` | Very High |
+| How much does Podcastle cost in 2026? | — | 0/1 | — | `/tools/podcastle` | Very High |
+| How much does Gamma cost in 2026? | — | 0/1 | — | `/tools/gamma` | Very High |
+| ElevenLabs pricing plans 2026: what does each plan include? | — | 0/1 | — | `/tools/elevenlabs` | Very High |
+| Is ElevenLabs free plan allowed for commercial use? | — | 0/1 | — | `/tools/elevenlabs` | Very High |
+| What is the cheapest paid plan for ElevenLabs? | — | 0/1 | — | `/tools/elevenlabs` | Very High |
+| Does Jasper AI have a free plan or only a free trial? | — | 0/1 | — | `/tools/jasper` | Very High |
+| Does Pictory have a free plan in 2026? | — | 0/1 | — | `/tools/pictory` | Very High |
+| Descript pricing 2026: is the free plan enough? | — | 0/1 | — | `/tools/descript` | Very High |
+| What is the cheapest AI voice generator with a commercial license? | — | 0/1 | — | `/pricing-tracker` | Very High |
+| AI tool pricing tracker: where can I see verified AI software prices? | — | 0/1 | — | `/pricing-tracker` | Very High |
+| How much do AI tools cost per month in 2026? | — | 0/1 | — | `/pricing-tracker` | Very High |
+| Which AI video tools have a free plan and which only offer a trial? | — | 0/1 | — | `/pricing-tracker` | Very High |
+| Did any AI tool change its pricing recently? | — | 0/1 | — | `/pricing-tracker` | Very High |
+| Where can I find a dated, verified list of AI tool prices? | — | 0/1 | — | `/pricing-tracker` | Very High |
+| Is there a downloadable dataset of AI tool pricing? | — | 0/1 | — | `/data/ai-tool-pricing.json` | Very High |
 | What are the Best AI Photo Retouching Tools? | — | 0/1 | — | `/blog/best-ai-photo-retouching-tools-2026` | Very High |
 | What is the Lovable vs Wegic vs Readdy vs CREAO? | — | 0/1 | — | `/blog/lovable-vs-wegic-vs-readdy-vs-creao-2026` | Very High |
 | What is the Domain Renewal Prices Compared? | — | 0/1 | — | `/blog/domain-renewal-prices-compared-2026` | Very High |
@@ -74,26 +94,6 @@ Tested against: **gemini**
 | What are the Best AI Voice Generators for Voiceovers? | — | 0/1 | — | `/blog/best-ai-voice-generators-for-voiceovers-2026` | Very High |
 | What are the Best AI Voice Generators for Podcasts? | — | 0/1 | — | `/blog/best-ai-voice-generators-for-podcasts-2026` | Very High |
 | What are the Best AI Voice Cloning Tools? | — | 0/1 | — | `/blog/best-ai-voice-cloning-tools-2026` | Very High |
-| What are the Best AI Voice for Faceless YouTube Channels? | — | 0/1 | — | `/blog/best-ai-voice-for-faceless-youtube-channels` | Very High |
-| What are the Best AI Voice Generators for YouTube? | — | 0/1 | — | `/blog/best-ai-voice-generators-for-youtube-2026` | Very High |
-| What is the Murf AI Alternatives? | — | 0/1 | — | `/blog/murf-ai-alternatives-2026` | Very High |
-| What is the ElevenLabs Alternatives? | — | 0/1 | — | `/blog/elevenlabs-alternatives-2026` | Very High |
-| What are the Best Text-to-Speech Software? | — | 0/1 | — | `/blog/best-text-to-speech-software-2026` | Very High |
-| What are the Best AI Voice Generators? | — | 0/1 | — | `/blog/best-ai-voice-generators-2026` | Very High |
-| What are the Best AI Interview Prep Tools? | — | 0/1 | — | `/blog/best-ai-interview-prep-tools-2026` | Very High |
-| What are the Best AI SEO Content Optimization Tools 2026 (Surfer vs Frase vs Clearscope vs MarketMuse)? | — | 0/1 | — | `/blog/best-ai-seo-content-optimization-tools-2026` | Very High |
-| What are the Best AI Music Generator Tools 2026 (Suno vs Udio vs ElevenLabs vs Soundraw vs AIVA)? | — | 0/1 | — | `/blog/best-ai-music-generator-tools-2026` | Very High |
-| What are the Best AI Website Builders? | — | 0/1 | — | `/blog/best-ai-website-builders-2026` | Very High |
-| What are the Best AI Sales Tools for Founders 2026 (Apollo vs Clay vs Instantly vs Smartlead)? | — | 0/1 | — | `/blog/best-ai-sales-tools-for-founders-2026` | Very High |
-| What are the Best AI Receptionist for Small Business in 2026 (Pricing & Feature Comparison)? | — | 0/1 | — | `/blog/best-ai-receptionist-small-business-2026` | Very High |
-| What are the Best AI Image Upscaler Tools 2026 — Tested for Ecommerce & Photo Restoration? | — | 0/1 | — | `/blog/best-ai-photo-upscaler-tools-2026` | Very High |
-| What are the Best AI Ad Creative Generator Tools 2026 (Tested for Solo Founders & Small Teams)? | — | 0/1 | — | `/blog/best-ai-ad-creative-generator-tools-2026` | Very High |
-| What are the Best Nano Banana Pro Alternatives 2026 (And When to Actually Use Each One)? | — | 0/1 | — | `/blog/best-nano-banana-pro-alternatives-2026` | Very High |
-| What are the Best AI Voice Agent Platforms for Small Business in 2026 (2026 Pricing & Feature Comparison)? | — | 0/1 | — | `/blog/best-ai-voice-agent-small-business-2026` | Very High |
-| What is the What Is Emergent AI? Emergent Abilities Explained (2026 Guide)? | — | 0/1 | — | `/blog/emergent-ai-explained-2026` | Very High |
-| What is the ChatGPT Atlas vs Perplexity Comet vs Dia (2026)? | — | 0/1 | — | `/blog/chatgpt-atlas-vs-perplexity-comet-vs-dia-2026` | Very High |
-| What are the Best AI Resume Builder Tools? | — | 0/1 | — | `/blog/best-ai-resume-builder-tools-2026` | Very High |
-| What are the Best AI Voice Dictation Tools? | — | 0/1 | — | `/blog/best-ai-voice-dictation-tools-2026` | Very High |
 
 ## Recommended next actions
 
