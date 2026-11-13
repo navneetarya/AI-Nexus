@@ -15,7 +15,10 @@
  *   "generate:llms": "node scripts/generate-llms-full.mjs"
  *   "build": "vite build && node scripts/generate-llms-full.mjs"
  *
- * Run after any review update. Keep the file under 100KB (LLM context-friendly).
+ * Run after any review update. No hard size limit is enforced in CI — this is informational only.
+ * The file grows as tool/post coverage grows; that is a feature for AI-citation purposes (more
+ * verified facts per tool), not a regression. Flag for review only if it crosses ~300KB, where a
+ * flat single file starts getting unwieldy for some ingestion pipelines to chunk sensibly.
  */
 
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs';
@@ -1200,7 +1203,7 @@ try {
   const sizeKB = (Buffer.byteLength(content, 'utf8') / 1024).toFixed(1);
   console.log(`✅  llms-full.txt generated`);
   console.log(`    Path : ${OUTPUT_PATH}`);
-  console.log(`    Size : ${sizeKB} KB (target < 100 KB)`);
+  console.log(`    Size : ${sizeKB} KB${Number(sizeKB) > 300 ? ' — exceeds the ~300KB review ceiling, consider trimming' : ''}`);
   console.log(`    Tools: ${TOOL_REVIEWS.length} | Posts: ${BLOG_POSTS.length}`);
 } catch (err) {
   console.error('❌  Failed to generate llms-full.txt:', err.message);

@@ -23,7 +23,7 @@ const post: BlogPost = {
   seoTitle: 'ElevenLabs Pricing 2026: Real Cost Per Credit Explained',
   metaDescription: 'ElevenLabs pricing explained by credits: minutes per plan, overage charges, commercial rights, and the tier that fits your audio workload.',
   datePublished: '2026-09-10',
-  dateModified: '2026-10-15',
+  dateModified: '2026-11-13',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '9 min read',
@@ -33,12 +33,12 @@ const post: BlogPost = {
   myTake: "The figures come from ElevenLabs' live pricing page and independent pricing breakdowns. The key decision is whether your monthly output exceeds 30 minutes, because that is where Creator becomes more economical than Starter.",
 
   content: `
-<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted).</em></p>
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Prices in USD are vendor list prices as of October 2026 (annual billing where noted). Last verified: November 13, 2026, against ElevenLabs' billing documentation.</em></p>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Sound waveform on a screen, representing AI voice generation pricing" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 <p style="font-size:12px;color:var(--text-muted,#888);margin:0 0 20px;">This guide contains affiliate links. <a href="/disclosure/">Affiliate disclosure</a> — we may earn a commission at no extra cost to you.</p>
 
 <div style="background:rgba(217,119,6,.08);border-left:4px solid #d97706;padding:14px 18px;border-radius:8px;margin:20px 0;"><strong style="color:#d97706;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Pricing warning</strong><p style="margin:8px 0 0;line-height:1.6;">Treat the first-month Creator discount as a promotion, not the ongoing price. Check the current plan page before budgeting for a recurring workflow.</p></div>
-<p><a href="/tools/elevenlabs/" style="color:var(--a1);font-weight:600;">Read the ElevenLabs tool review</a> for the broader feature breakdown. Compare the alternative pricing model in our <a href="/blog/elevenlabs-alternatives-2026/" style="color:var(--a1);font-weight:600;">ElevenLabs alternatives guide</a>.</p>
+<p><a href="/tools/elevenlabs/" style="color:var(--a1);font-weight:600;">Read the ElevenLabs tool review</a> for the broader feature breakdown. Compare the alternative pricing model in our <a href="/blog/elevenlabs-alternatives-2026/" style="color:var(--a1);font-weight:600;">ElevenLabs alternatives guide</a>, or see the direct <a href="/compare/murf-ai-vs-elevenlabs/" style="color:var(--a1);font-weight:600;">Murf AI vs ElevenLabs comparison</a> if you're choosing between the two.</p>
 
 <p>In 2026, ElevenLabs sells credits rather than minutes or dollars per word. Credit value changes by model and product. Speech, voice cloning, and dubbing each use credits differently.</p><p>That system may suit the product roadmap. It makes one buyer question harder: how much will this cost for the work I want to do?</p>
 
@@ -52,7 +52,7 @@ const post: BlogPost = {
 
 <div style="margin:14px 0 24px;">
   <p style="margin:0 0 6px;font-size:14px;">Check the plan that fits your volume against your own text:</p>
-  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>
+  <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Clone your voice free in 2 minutes →</a>
 </div>
 
 <div style="overflow-x:auto;margin:28px 0">
@@ -195,6 +195,9 @@ const post: BlogPost = {
     { q: 'Is ElevenLabs cheaper with annual billing?', a: 'Yes, meaningfully so on the higher tiers. Starter drops to an effective $5/month annually, Creator to roughly $18/month, and Pro to about $82.50/month — a saving of nearly $200 a year compared to paying monthly.' },
     { q: 'How is ElevenLabs pricing different from Murf AI?', a: 'ElevenLabs meters usage in shared credits across all its products, while Murf AI meters in generation hours specific to voiceover output. The more consequential difference for buyers is where commercial rights begin: ElevenLabs\' commercial license starts at $6/month, while Murf AI\'s starts at $19–29/month depending on billing cycle.' },
     { q: 'Which ElevenLabs plan is best for a weekly podcast?', a: 'Creator is the practical starting point for a weekly podcast because its 121,000 monthly credits cover roughly 121 minutes on the standard model and it includes Professional Voice Cloning. Starter suits shorter episodes or occasional publishing, while Pro is aimed at much higher monthly volume.' },
+    { q: 'Does ElevenLabs offer a discount or coupon code?', a: 'ElevenLabs regularly runs first-month promotions on its own pricing page — commonly $1 for the first month of Starter and $11 for the first month of Creator — rather than a standing coupon code. Treat these as temporary promotional prices, not the ongoing monthly rate, and check the current offer on elevenlabs.io/pricing before budgeting.' },
+    { q: 'Can I get a refund from ElevenLabs after subscribing?', a: 'ElevenLabs\' billing documentation does not publish a blanket refund guarantee for self-serve plans. Cancelling stops future renewals, but the current billing period typically runs its course rather than being refunded. Confirm the current terms in your account billing settings or with ElevenLabs support before relying on a refund.' },
+    { q: 'Is ElevenLabs\' free plan enough for a YouTube Shorts channel?', a: 'Only for testing, not for publishing. The free plan requires attribution and explicitly excludes commercial use, which covers monetized YouTube content. A Shorts channel that plans to publish regularly needs at least the $6/month Starter plan, which is also where commercial rights and instant voice cloning begin.' },
   ],
 
   proscons: {

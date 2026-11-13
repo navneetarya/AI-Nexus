@@ -16,7 +16,7 @@ const post: BlogPost = {
   seoTitle: 'Best AI Voice Generators 2026: 5 Tools Ranked',
   metaDescription: 'Best AI voice generators in 2026 compared on pricing pages and public reviews: ElevenLabs, Murf AI, Podcastle (Async) and Descript. Free limits and licensing.',
   datePublished: '2026-08-13',
-  dateModified: '2026-10-12',
+  dateModified: '2026-11-13',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '13 min read',
@@ -26,6 +26,7 @@ const post: BlogPost = {
   myTake: 'Published pricing and review evidence make ElevenLabs the strongest starting point; its free tier is substantial enough to evaluate before paying.',
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 12px;"><em>Last verified: November 13, 2026, against each vendor's own pricing page and lib/vendor-facts.data.json for ElevenLabs.</em></p>
 <p style="font-size:12px;opacity:.75;margin:0 0 20px;">Affiliate disclosure: AI Nexus may earn a commission if you buy through links on this page, at no extra cost to you. <a href="/disclosure/">How we pick and get paid</a>.</p>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1567596296091-0a257a028e72?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="A condenser microphone set up for podcast or voiceover recording" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 

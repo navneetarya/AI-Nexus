@@ -1,4 +1,5 @@
 import React, { useState, lazy, Suspense } from 'react';
+import AudioSample from '../components/AudioSample';
 import { Tool } from '../types';
 import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDown, ChevronUp, Award, Scale, Sun, Moon, BookOpen, Layers, Shield } from 'lucide-react';
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS, TOOLS } from '../constants';
@@ -3082,6 +3083,25 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
                   </div>
                 ))}
               </div>
+            </>
+          )
+        )}
+
+        {/* ── Audio sample (voice/audio tools only, renders when tool.audioSample is set) ── */}
+        {tool.audioSample && (
+          section(
+            <>
+              {sectionTitle(`Hear ${tool.name}`)}
+              <AudioSample
+                src={tool.audioSample.src}
+                caption={tool.audioSample.caption}
+                durationLabel={tool.audioSample.durationLabel}
+                accent={accent}
+                cardBg={cardBg}
+                cardBrd={cardBrd}
+                textColor={C.txt}
+                mutedColor={C.mut}
+              />
             </>
           )
         )}

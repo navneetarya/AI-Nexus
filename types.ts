@@ -59,6 +59,14 @@ export interface Tool {
     editorialNote: string; // Your honest take on the quality
   };
 
+  /** Short, hosted audio clip generated through our own account (voice/audio tools only).
+   *  Unset until a clip actually exists under public/audio-samples/ — no vendor-hosted audio reused. */
+  audioSample?: {
+    src: string;          // e.g. '/audio-samples/murf-ai-sample.mp3'
+    caption: string;      // e.g. 'Generated with the Ethan (US English) voice, free plan'
+    durationLabel?: string; // e.g. '0:12'
+  };
+
   /** "5 things I use it for daily" list */
   dailyUseCases?: string[];
 

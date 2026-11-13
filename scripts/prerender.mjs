@@ -1742,6 +1742,20 @@ const TOOL_FAQS = {
 
 // ── Compare articles ──────────────────────────────────────────────────────────
 const COMPARE_ARTICLES = [
+  { // ── murf-ai-vs-elevenlabs ── Nov 13 2026 (mirrors pages/compare-data.ts)
+    slug: 'murf-ai-vs-elevenlabs',
+    title: "Murf AI vs ElevenLabs (2026): Which AI Voice Generator Should You Use?",
+    seoTitle: "Murf AI vs ElevenLabs 2026: Which to Pick?",
+    metaDescription: "Murf AI vs ElevenLabs compared for 2026: pricing, voice cloning, free-plan limits, and which wins for YouTube, e-learning, and commercial voiceovers.",
+    faqs: [
+      { q: "Is Murf AI or ElevenLabs cheaper?", a: "ElevenLabs is cheaper for commercial use: Starter is $6/month ($5 billed annually) and already includes commercial rights and instant voice cloning. Murf's lowest commercial-use plan is around $19/month billed annually, and Murf doesn't include voice cloning at that tier. Murf's free plan also blocks downloads entirely, while ElevenLabs' free plan lets you download non-commercial audio." },
+      { q: "Does Murf AI have voice cloning?", a: "Not on its entry-level Studio plan, based on Murf's own published feature list. ElevenLabs includes instant voice cloning starting on its $6/month Starter plan, and Professional Voice Cloning from the $22/month Creator plan." },
+      { q: "Which is better for YouTube voiceovers, Murf or ElevenLabs?", a: "It depends on the format. For narration synced to edited video footage, Murf's timeline-based editor saves manual alignment work. For raw narration, Shorts, or a cloned-voice channel presenter, ElevenLabs' voice realism is the more commonly cited advantage in reviews." },
+      { q: "Can you use Murf AI's free plan for commercial videos?", a: "No. Murf's help-center FAQ states the free plan has no commercial licence and that generated voices cannot be downloaded at all until you upgrade to a paid Studio plan." },
+      { q: "Can you use ElevenLabs' free plan commercially?", a: "No. ElevenLabs' free plan is limited to non-commercial use with required attribution to ElevenLabs. Commercial rights start on the $6/month Starter plan." },
+      { q: "Is ElevenLabs more realistic than Murf AI?", a: "Review sentiment consistently rates ElevenLabs higher on voice realism and emotional expressiveness, which tracks with where each company focuses engineering effort — ElevenLabs on the voice model itself, Murf on the video-production workflow around it. Neither claim was independently tested side-by-side for this comparison." },
+    ],
+  },
   { // ── notta-vs-transkriptor ── Oct 14 2026 (mirrors pages/compare-data.ts)
     slug: 'notta-vs-transkriptor',
     title: "Notta vs Transkriptor (2026): Which AI Transcription Tool Fits Your Audio?",
@@ -3452,7 +3466,7 @@ const BLOG_POSTS = [
     seoTitle: 'Murf AI Pricing 2026: Free, Creator & Business Costs',
     metaDescription: 'Murf AI pricing broken down by generation hours, not marketing copy. Exactly what Free, Creator, Business and Enterprise buy, where voice cloning lives, and which tier to pick.',
     datePublished: '2026-09-16',
-    dateModified: '2026-09-16',
+    dateModified: '2026-11-13',
     readTimeMinutes: 9,
     ogImage: 'https://ainexustools.online/og/blog/murf-ai-pricing-2026.webp',
     quickAnswer: 'Murf AI costs $0 (Free, 10 minutes total, no downloads or commercial rights), $19/mo annual or $29/mo monthly (Creator, 24 hours/year), $66/mo annual or $99/mo monthly (Business, roughly 8 hours/month), and custom-quoted Enterprise pricing. Commercial usage rights start on Creator. Voice cloning is locked to Enterprise only — the single biggest gap versus ElevenLabs, which offers cloning from its $6/month Starter plan.',
@@ -3464,6 +3478,9 @@ const BLOG_POSTS = [
       { q: 'How does Murf AI\'s pricing compare to ElevenLabs?', a: 'Murf meters usage in generation hours; ElevenLabs meters in shared credits. The more consequential difference is where commercial rights begin: ElevenLabs\' commercial license starts at $6/month, while Murf\'s starts at $19/month on annual billing — roughly three times more, though Murf\'s price includes a fuller production studio with video sync and slide-deck integrations.' },
       { q: 'Does Murf AI charge separately for API access?', a: 'Yes. Murf\'s API is billed independently of any Studio subscription — roughly $0.03 per 1,000 characters for Studio-quality text-to-speech and $0.01 per 1,000 characters for the Falcon conversational model, with a small monthly credit typically included for testing.' },
       { q: 'Does Murf AI\'s free plan let me download audio?', a: 'No. The Free plan blocks downloads entirely — it exists to let you preview voice quality in the browser, not to produce anything you can export or publish. Downloads and commercial rights both start on the paid Creator plan.' },
+      { q: 'Does Murf AI offer a discount or coupon code?', a: 'No sitewide discount code is confirmed in Murf\'s published pricing or help-center pages at the time of writing. The only verified saving is switching from monthly to annual billing, which cuts both Creator and Business by roughly a third. Treat any third-party "Murf coupon" site with caution and confirm the final price at checkout.' },
+      { q: 'Can I get a refund from Murf AI after subscribing?', a: 'Murf\'s own help-center pages do not publish a self-serve refund guarantee for Studio subscriptions, which is standard for most self-serve SaaS tools. If you cancel, your plan typically stays active until the end of the current billing period rather than refunding the unused portion. Confirm the current refund terms directly with Murf support before relying on this for a paid plan.' },
+      { q: 'Is Murf AI\'s free plan enough for a YouTube Shorts channel?', a: 'No. The free plan blocks downloads entirely, so there is no way to get a finished file out of the editor for publishing, regardless of how many Shorts you plan to make. Any channel that publishes regularly needs at least the Creator plan ($19/month annual), which is also where commercial usage rights begin.' },
     ],
     mentionedTools: ['murf-ai', 'elevenlabs'],
   },
@@ -3566,7 +3583,7 @@ const BLOG_POSTS = [
     seoTitle: 'ElevenLabs Pricing 2026: Real Cost Per Credit Explained',
     metaDescription: 'ElevenLabs pricing broken down by credits, not marketing copy. Exactly how many minutes of audio each plan buys, what triggers overage charges, and which tier to pick.',
     datePublished: '2026-09-10',
-    dateModified: '2026-09-10',
+    dateModified: '2026-11-13',
     readTimeMinutes: 9,
     ogImage: 'https://ainexustools.online/og/blog/elevenlabs-pricing-character-credits-2026.webp',
     quickAnswer: 'ElevenLabs costs $0 (Free, 10k credits), $6/mo (Starter, 30k credits), $22/mo (Creator, 121k credits, $11 for the first month), $99/mo (Pro, 600k credits), $299/mo (Scale) and $990/mo (Business). One credit is roughly one character on the Multilingual v2 model, so 1,000 credits is about one minute of speech. Commercial usage rights only start on the paid Starter plan — the Free plan cannot be monetized.',
@@ -3578,6 +3595,9 @@ const BLOG_POSTS = [
       { q: 'Do unused ElevenLabs credits roll over?', a: 'Yes, on paid plans. Unused credits carry over for up to two months before expiring, which helps absorb a lighter month but is not designed as long-term credit banking.' },
       { q: 'Is ElevenLabs cheaper with annual billing?', a: 'Yes, meaningfully so on the higher tiers. Starter drops to an effective $5/month annually, Creator to roughly $18/month, and Pro to about $82.50/month — a saving of nearly $200 a year compared to paying monthly.' },
       { q: 'How is ElevenLabs pricing different from Murf AI?', a: 'ElevenLabs meters usage in shared credits across all its products, while Murf AI meters in generation hours specific to voiceover output. The more consequential difference for buyers is where commercial rights begin: ElevenLabs\' commercial license starts at $6/month, while Murf AI\'s starts at $19–29/month depending on billing cycle.' },
+      { q: 'Does ElevenLabs offer a discount or coupon code?', a: 'ElevenLabs regularly runs first-month promotions on its own pricing page — commonly $1 for the first month of Starter and $11 for the first month of Creator — rather than a standing coupon code. Treat these as temporary promotional prices, not the ongoing monthly rate, and check the current offer on elevenlabs.io/pricing before budgeting.' },
+      { q: 'Can I get a refund from ElevenLabs after subscribing?', a: 'ElevenLabs\' billing documentation does not publish a blanket refund guarantee for self-serve plans. Cancelling stops future renewals, but the current billing period typically runs its course rather than being refunded. Confirm the current terms in your account billing settings or with ElevenLabs support before relying on a refund.' },
+      { q: 'Is ElevenLabs\' free plan enough for a YouTube Shorts channel?', a: 'Only for testing, not for publishing. The free plan requires attribution and explicitly excludes commercial use, which covers monetized YouTube content. A Shorts channel that plans to publish regularly needs at least the $6/month Starter plan, which is also where commercial rights and instant voice cloning begin.' },
     ],
     mentionedTools: ['elevenlabs', 'murf-ai'],
   },

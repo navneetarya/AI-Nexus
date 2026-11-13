@@ -10,6 +10,15 @@ export interface CompareArticleMeta {
 
 export const COMPARE_ARTICLES_META: CompareArticleMeta[] = [
   {
+    "slug": "murf-ai-vs-elevenlabs",
+    "title": "Murf AI vs ElevenLabs (2026): Which AI Voice Generator Should You Use?",
+    "seoTitle": "Murf AI vs ElevenLabs 2026: Which to Pick?",
+    "metaDescription": "Murf AI vs ElevenLabs compared for 2026: pricing, voice cloning, free-plan limits, and which wins for YouTube, e-learning, and commercial voiceovers.",
+    "keyword": "murf ai vs elevenlabs",
+    "publishDate": "November 2026",
+    "winnerName": "ElevenLabs"
+  },
+  {
     "slug": "notta-vs-transkriptor",
     "title": "Notta vs Transkriptor (2026): Which AI Transcription Tool Fits Your Audio?",
     "seoTitle": "Notta vs Transkriptor 2026: Which to Pick?",

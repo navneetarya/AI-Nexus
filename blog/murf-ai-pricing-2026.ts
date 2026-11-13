@@ -36,7 +36,7 @@ const post: BlogPost = {
   seoTitle: 'Murf AI Pricing 2026: Free, Creator & Business Costs',
   metaDescription: 'Murf AI pricing broken down by generation hours: what Free, Creator, Business and Enterprise actually buy, where voice cloning lives, and which plan fits.',
   datePublished: '2026-09-16',
-  dateModified: '2026-10-23',
+  dateModified: '2026-11-13',
   author: 'Navneet Arya',
   category: Category.AUDIO,
   readTime: '9 min read',
@@ -46,6 +46,7 @@ const post: BlogPost = {
   myTake: " The figures were cross-checked against several independent 2026 pricing breakdowns rather than relying on a single source, since Murf's own pricing page wasn't reachable during this research pass and third-party numbers occasionally drift. If you're deciding between Creator and Business, the real question isn't the monthly fee. It's whether 2 hours a month of generation time actually covers your production schedule once you count re-recording a line to fix a pronunciation, because that eats into the same hour budget.",
 
   content: `
+<p style="font-size:13px;opacity:.8;margin:0 0 16px;"><em>Last verified: November 13, 2026, against Murf's help-center FAQ and cross-referenced third-party pricing breakdowns (Murf's own Studio pricing page remains unreadable via direct fetch).</em></p>
 <img fetchpriority="high" src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropy" alt="Audio mixing console dials, representing AI voiceover pricing tiers" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:0 0 24px;" />
 
 <div style="background:rgba(13,148,136,.08);border-left:4px solid #0D9488;padding:16px 20px;border-radius:8px;margin-bottom:24px;" data-speakable="quick-answer">
@@ -57,7 +58,7 @@ const post: BlogPost = {
 </div>
 
 <div style="margin:14px 0 24px;">
-  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Get Murf AI's current plans →</a>
+  <a href="${AFFILIATE_LINKS['murf-ai']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Preview 200+ Murf voices free →</a>
   <a href="/tools/murf-ai/" style="display:inline-block;color:#0D9488;padding:10px 4px 0 0;margin:6px 0 0;font-weight:600;font-size:13px;text-decoration:none;">Read our full Murf AI review →</a>
 </div>
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:-12px">
@@ -248,6 +249,9 @@ const post: BlogPost = {
     { q: 'Can I cancel Murf AI or switch plans at any time?', a: 'Yes. Murf AI subscriptions are self-serve and can be upgraded, downgraded, or canceled from account settings without contacting support, unless you\'re on a custom-quoted Enterprise contract, which typically runs on its own negotiated term.' },
     { q: 'Does Murf AI\'s Business plan support multiple team members?', a: 'Yes — multiple seats are the main reason most buyers choose Business over Creator. It adds shared asset libraries and comment-based project feedback, letting an agency or marketing team collaborate on the same voiceover projects instead of emailing exported files back and forth.' },
     { q: 'Is annual or monthly billing cheaper for Murf AI?', a: 'Annual billing is meaningfully cheaper on both paid tiers. Creator drops from $29/month to an effective $22/month, and Business drops from $99/month to an effective $66/month — roughly a one-third saving on both plans if you plan to stick with Murf past the first few months.' },
+    { q: 'Does Murf AI offer a discount or coupon code?', a: 'No sitewide discount code is confirmed in Murf\'s published pricing or help-center pages at the time of writing. The only verified saving is switching from monthly to annual billing, which cuts both Creator and Business by roughly a third. Treat any third-party "Murf coupon" site with caution and confirm the final price at checkout.' },
+    { q: 'Can I get a refund from Murf AI after subscribing?', a: 'Murf\'s own help-center pages do not publish a self-serve refund guarantee for Studio subscriptions, which is standard for most self-serve SaaS tools. If you cancel, your plan typically stays active until the end of the current billing period rather than refunding the unused portion. Confirm the current refund terms directly with Murf support before relying on this for a paid plan.' },
+    { q: 'Is Murf AI\'s free plan enough for a YouTube Shorts channel?', a: 'No. The free plan blocks downloads entirely, so there is no way to get a finished file out of the editor for publishing, regardless of how many Shorts you plan to make. Any channel that publishes regularly needs at least the Creator plan ($22/month annual), which is also where commercial usage rights begin.' },
   ],
 
   proscons: {
