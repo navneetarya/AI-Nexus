@@ -1742,20 +1742,6 @@ const TOOL_FAQS = {
 
 // ── Compare articles ──────────────────────────────────────────────────────────
 const COMPARE_ARTICLES = [
-  { // ── murf-ai-vs-elevenlabs ── Nov 13 2026 (mirrors pages/compare-data.ts)
-    slug: 'murf-ai-vs-elevenlabs',
-    title: "Murf AI vs ElevenLabs (2026): Which AI Voice Generator Should You Use?",
-    seoTitle: "Murf AI vs ElevenLabs 2026: Which to Pick?",
-    metaDescription: "Murf AI vs ElevenLabs compared for 2026: pricing, voice cloning, free-plan limits, and which wins for YouTube, e-learning, and commercial voiceovers.",
-    faqs: [
-      { q: "Is Murf AI or ElevenLabs cheaper?", a: "ElevenLabs is cheaper for commercial use: Starter is $6/month ($5 billed annually) and already includes commercial rights and instant voice cloning. Murf's lowest commercial-use plan is around $19/month billed annually, and Murf doesn't include voice cloning at that tier. Murf's free plan also blocks downloads entirely, while ElevenLabs' free plan lets you download non-commercial audio." },
-      { q: "Does Murf AI have voice cloning?", a: "Not on its entry-level Studio plan, based on Murf's own published feature list. ElevenLabs includes instant voice cloning starting on its $6/month Starter plan, and Professional Voice Cloning from the $22/month Creator plan." },
-      { q: "Which is better for YouTube voiceovers, Murf or ElevenLabs?", a: "It depends on the format. For narration synced to edited video footage, Murf's timeline-based editor saves manual alignment work. For raw narration, Shorts, or a cloned-voice channel presenter, ElevenLabs' voice realism is the more commonly cited advantage in reviews." },
-      { q: "Can you use Murf AI's free plan for commercial videos?", a: "No. Murf's help-center FAQ states the free plan has no commercial licence and that generated voices cannot be downloaded at all until you upgrade to a paid Studio plan." },
-      { q: "Can you use ElevenLabs' free plan commercially?", a: "No. ElevenLabs' free plan is limited to non-commercial use with required attribution to ElevenLabs. Commercial rights start on the $6/month Starter plan." },
-      { q: "Is ElevenLabs more realistic than Murf AI?", a: "Review sentiment consistently rates ElevenLabs higher on voice realism and emotional expressiveness, which tracks with where each company focuses engineering effort — ElevenLabs on the voice model itself, Murf on the video-production workflow around it. Neither claim was independently tested side-by-side for this comparison." },
-    ],
-  },
   { // ── notta-vs-transkriptor ── Oct 14 2026 (mirrors pages/compare-data.ts)
     slug: 'notta-vs-transkriptor',
     title: "Notta vs Transkriptor (2026): Which AI Transcription Tool Fits Your Audio?",
