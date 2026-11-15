@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T12:26:53.207Z",
+  "generated_at": "2026-11-15T13:15:13.096Z",
   "base_url": "https://ainexustools.online",
   "pages_sampled": 15,
   "sitemap_url_count": 247,
@@ -124,7 +124,7 @@
         "label": "llms.txt updated within 45 days",
         "pass": true,
         "weight": 1,
-        "detail": "last updated 2026-09-20 (42d ago)"
+        "detail": "last updated 2026-11-03 (12d ago)"
       }
     ]
   },

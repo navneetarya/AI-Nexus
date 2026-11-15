@@ -1,4 +1,4 @@
-# AI Nexus GEO Report — 2026-11-01
+# AI Nexus GEO Report — 2026-11-15
 
 ## Technical GEO score: 93/100
 
