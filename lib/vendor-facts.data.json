@@ -173,7 +173,7 @@
       "name": "Descript",
       "status": "verified",
       "pricingPageUrl": "https://www.descript.com/pricing",
-      "verifiedISO": "2026-10-22",
+      "verifiedISO": "2026-11-20",
       "currency": "USD",
       "freeAccess": "free-plan",
       "trial": null,
@@ -290,6 +290,10 @@
         {
           "label": "Descript help: plan details",
           "url": "https://help.descript.com/billing-payments-plans/legacy-sunset"
+        },
+        {
+          "label": "Descript Terms of Service (re-checked Nov 2026 — no explicit per-plan commercial-use clause found; commercialUse stays null/not-stated for every tier)",
+          "url": "https://www.descript.com/terms"
         }
       ]
     },
@@ -298,7 +302,7 @@
       "name": "Podcastle (now Async)",
       "status": "verified",
       "pricingPageUrl": "https://async.com/pricing",
-      "verifiedISO": "2026-10-22",
+      "verifiedISO": "2026-11-20",
       "currency": "USD",
       "freeAccess": "free-plan",
       "trial": null,
@@ -425,6 +429,10 @@
         {
           "label": "Async announcement: Podcastle is now Async",
           "url": "https://async.com/blog/podcastle-is-now-async"
+        },
+        {
+          "label": "Async Terms of Service (re-checked Nov 2026 — only the Business/Enterprise tier is explicitly labeled for \"commercial purposes\"; Creator tiers are described as for \"personal or professional content creation\" with no explicit commercial-use grant or prohibition, so commercialUse stays null/not-stated for every Creator-tier plan)",
+          "url": "https://async.com/terms"
         }
       ],
       "matcherTask": "audio"

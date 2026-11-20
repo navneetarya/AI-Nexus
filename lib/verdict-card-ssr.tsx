@@ -19,6 +19,7 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { VerdictCard } from '../components/VerdictCard';
+import { DealBox } from '../components/DealBox';
 import { CompareCard, compareCardPropsFor } from '../components/CompareCard';
 import { TOOLS } from '../constants';
 import { COMPARE_ARTICLES } from '../pages/compare-data';
@@ -28,6 +29,7 @@ import { MatcherBody } from '../pages/MatcherPage';
 import { AFFILIATE_LINKS } from './affiliate-links';
 import { PRICING_SNAPSHOT } from './pricing-data';
 import { cheapestPaidPlan, getVerifiedFacts, startsAtLabel, freePlanLabel } from './vendor-facts';
+import { getActiveDeal } from './deals';
 
 function affiliateLinkFor(slug: string): string | null {
   const tool = TOOLS.find((t) => t.slug === slug);
@@ -50,6 +52,14 @@ export function renderVerdictCardHtml(slug: string): string {
 /** Slugs that have a card, for the build report and for verify-prerender. */
 export function verdictCardSlugs(): string[] {
   return TOOLS.map((t) => t.slug).filter(hasVerdictCard);
+}
+
+/** The deal box as static HTML for this tool slug, or '' when there's no active deal. */
+export function renderDealBoxHtml(slug: string): string {
+  const tool = TOOLS.find((t) => t.slug === slug);
+  const deal = getActiveDeal(slug);
+  if (!deal) return '';
+  return renderToStaticMarkup(<DealBox deal={deal} toolName={tool?.name ?? slug} />);
 }
 
 export interface VerifiedOffer {

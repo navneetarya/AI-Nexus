@@ -14,6 +14,26 @@ Register these event-scoped custom dimensions in GA4 before reading reports:
 - `page_path`: page where the event occurred
 - `post_slug`: blog post slug for blog engagement events
 
+C2 audit (Nov 2026): `lib/subid-tracking.ts`'s `applyTracking` (the `affiliate_click` event fired by
+every React CTA and by `BlogPostPage.tsx`'s delegated blog-body handler) sends several params that
+were missing from the list above. Any param without a matching GA4 custom dimension stays empty in
+reports. Register these too, and re-check this list whenever a new param is added to
+`applyTracking` or `trackOutboundClickOnElement`:
+
+- `tool_name`: resolved tool/brand slug (from `utm_source`, or the matched domain as a fallback)
+- `network`: `impact` | `partnerstack` | `direct` — which affiliate network the link belongs to
+- `link_domain`: hostname of the final (Sub-ID-appended) outbound URL
+- `link_type`: `affiliate` | `plain` — distinguishes real affiliate links from plain `rel="sponsored"` links
+- `content_position`: `0_15` | `15_50` | `50_85` | `85_100` | `unknown` — where in the article body the link sits
+- `sid`: the GA4 Client ID appended to the link as a PartnerStack/Impact Sub ID (`unavailable` if the `_ga` cookie wasn't readable)
+- `sid_param`: which query param carried the Sub ID (`sid` for PartnerStack, `subId1` for Impact)
+
+`outbound_click` (both the React `trackOutboundClickOnElement` path for blog-body plain links and
+the `public/js/ga-init.js` document-level fallback for every other page) also use `tool_name`,
+`link_domain`, `link_url`, `cta_position`, `content_position` and `post_slug` from the same
+definitions above, plus `is_affiliate` (boolean) and `destination_domain`/`destination_url` on the
+ga-init.js fallback path specifically.
+
 Calculator events:
 
 - `calc_start`

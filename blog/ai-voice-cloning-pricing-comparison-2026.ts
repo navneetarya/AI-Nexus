@@ -156,7 +156,7 @@ const post: BlogPost = {
 
 <p>Credits are shared across everything you generate. The cost per character depends on the model you choose, so a clone is cheap to create but not free to use.</p>
 
-<p><strong>Best for:</strong> anyone who wants to start cloning today without a large upfront commitment. Read the full <a href="/tools/elevenlabs/">ElevenLabs review</a>.</p>
+<p><strong>Best for:</strong> anyone who wants to start cloning today without a large upfront commitment. Read the full <a href="/tools/elevenlabs/">ElevenLabs review</a>. For whether a plan actually permits commercial use of the output (a different question from the cost to clone), see our <a href="/blog/ai-voice-commercial-use-by-plan-2026/">AI voice commercial-use rights by plan</a> guide.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Free →</a>

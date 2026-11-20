@@ -12,7 +12,7 @@ const post: BlogPost = {
   seoTitle: 'Domain Renewal Prices Compared 2026 (India Guide)',
   metaDescription: 'Spaceship, Domain.com, Network Solutions and BigRock compared on first-year vs renewal price, plus SSLs.com certificates and an India angle. Dated Oct 2026.',
   datePublished: '2026-10-09',
-  dateModified: '2026-10-14',
+  dateModified: '2026-11-20',
   author: 'Navneet Arya',
   category: 'Design',
   readTime: '9 min read',
@@ -146,13 +146,8 @@ const post: BlogPost = {
 <div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['bigrock']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit BigRock India</a></div>
 
 <h2>SSLs.com: when a separate certificate is worth buying</h2>
-<p>HTTPS encrypts the connection between your visitor and your site. Many hosts and AI website builders include a certificate automatically. BigRock's hosting page lists a free Let's Encrypt certificate in its plans.</p>
-<p>A separate certificate is useful in narrower cases. Examples are wildcard coverage for many subdomains, one certificate across several domains, or organisation and extended validation that an included certificate does not offer.</p>
-<div style="overflow-x:auto;margin:20px 0 28px;"><table style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr style="background:rgba(13,148,136,.1);"><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">SSLs.com product</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">Price shown</th><th style="padding:10px;text-align:left;border-bottom:2px solid rgba(13,148,136,.2);">List price</th></tr></thead><tbody>
-<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Standard SSL</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">$3.75 a year</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">$7.99</td></tr>
-<tr><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">Standard Wildcard SSL</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">$38.53 a year</td><td style="padding:10px;border-bottom:1px solid rgba(13,148,136,.08);">$64.99</td></tr>
-</tbody></table></div>
-<p>These came from the SSLs.com product menu on 29 September 2026. Confirm the term, the renewal price and the validation requirements in the cart before you buy.</p>
+<p>HTTPS encrypts the connection between your visitor and your site. Many hosts and AI website builders include a certificate automatically — BigRock's hosting page lists a free Let's Encrypt certificate in its plans, for instance. A separate certificate from SSLs.com is only worth paying for in narrower cases: wildcard coverage for many subdomains, one certificate across several domains, or organisation/extended validation that an included free certificate doesn't offer. Its Standard SSL starts around $3.75/year; Wildcard runs about $38.53/year.</p>
+<p>For the full decision — free Let's Encrypt vs. paid, DV vs. OV vs. EV, and exactly when the extra cost is justified — see our dedicated <a href="/blog/do-you-need-a-paid-ssl-certificate-2026/">Do You Need a Paid SSL Certificate?</a> guide.</p>
 <img src="/images/blog/domain-renewal-prices-compared-2026/ssl-decision.svg" alt="Decision card showing when a separate SSL certificate is needed" width="640" loading="lazy" style="width:100%;height:auto;max-width:640px;margin:14px 0 20px;border-radius:12px;" />
 <div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['ssls']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Visit SSLs.com</a> <a href="/tools/ssls/" style="color:var(--a1);font-weight:600;">Read the SSLs.com review</a></div>
 

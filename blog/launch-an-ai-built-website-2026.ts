@@ -3,6 +3,7 @@
 
 import { BlogPost } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
+import { getLaunchKitHtml } from '../lib/launch-kit';
 
 const post: BlogPost = {
   slug: 'launch-an-ai-built-website-2026',
@@ -160,6 +161,7 @@ const post: BlogPost = {
   <li><strong>Use Domain.com or Network Solutions</strong> only after checking the exact product bundle and renewal terms you are buying. They are broad providers, so the checkout details matter more than a generic brand comparison. See the <a href="/blog/domain-renewal-prices-compared-2026/" style="color:var(--a1);font-weight:600;">renewal price comparison</a> before you commit.</li>
   <li><strong>Use SSLs.com</strong> when you have a genuine need for a separately managed certificate. If your builder or host already supplies HTTPS, keep the setup simpler and avoid paying for a duplicate certificate.</li>
 </ul>
+${getLaunchKitHtml()}
 
 <h2>Final rule: verify the handoff, not just the AI draft</h2>
 <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&h=675&q=80&crop=entropyp=entropy" alt="A team reviewing a website launch checklist" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px 0 24px;" loading="lazy" />

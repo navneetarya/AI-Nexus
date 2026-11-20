@@ -199,12 +199,14 @@ function loadPostModule(filePath) {
   // `content` field — which we strip before ever writing it out. Rather
   // than resolving the app's whole dependency graph (constants.ts, icons,
   // etc.) just to throw it away, stub any non-types relative import with a
-  // harmless Proxy that returns '' for anything accessed.
+  // harmless Proxy that returns '' for anything accessed. Some lib helpers
+  // (e.g. lib/launch-kit's getLaunchKitHtml()) are CALLED directly inside
+  // the content template rather than just indexed, so the stub must also be
+  // callable — a plain object-literal Proxy can't have an `apply` trap, so
+  // the target is a no-op function instead.
   const originalRequire = mod.require.bind(mod);
-  const stub = new Proxy(
-    {},
-    { get: () => new Proxy({}, { get: () => '' }) }
-  );
+  const makeStub = () => new Proxy(function stub() {}, { get: makeStub, apply: () => '' });
+  const stub = makeStub();
   mod.require = (id) => {
     if (id === './types') return loadTypesModule();
     if (id.startsWith('.')) return stub;

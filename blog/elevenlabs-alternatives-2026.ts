@@ -161,6 +161,8 @@ const post: BlogPost = {
 
 <p>Fish Audio is another budget-focused option that has gotten attention for beating ElevenLabs on price while staying close on quality in blind tests. Neither has the polish or feature depth of the five tools above. Both are worth a look if you're processing content at a scale where per-character cost is the deciding factor.</p>
 
+<p>If cloning your own voice is specifically what you're shopping for, rather than TTS generally, our <a href="/blog/best-ai-voice-cloning-tools-2026/">best AI voice cloning tools roundup</a> ranks the field on cloning quality alone, and our <a href="/blog/ai-voice-cloning-pricing-comparison-2026/">voice cloning pricing comparison</a> breaks down what a clone actually costs on each tool here.</p>
+
 <h2>Full comparison: ElevenLabs alternatives 2026</h2>
 
 <div style="overflow-x:auto;margin:28px 0">

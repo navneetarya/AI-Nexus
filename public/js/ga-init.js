@@ -56,6 +56,27 @@ function bindAffiliateClickTracking() {
       return;
     }
 
+    // C2 fix (GA4 audit, Nov 2026): React already handles tracking for this link via
+    // lib/subid-tracking.ts's trackAffiliateClick / trackAffiliateClickOnElement, which fires
+    // BOTH affiliate_click and (where applicable) outbound_click itself. This document-level
+    // capture listener used to fire again on the exact same click — rel="sponsored" CTAs
+    // (ToolPage, CompareArticlePage, CategoryPage, BlogPostPage's quick-answer CTA, etc.) and any
+    // link inside a blog post's <article> body (handled by BlogPostPage's handleContentClick,
+    // including its plain-link outbound_click case) were double-counted. Links carrying
+    // data-quick-cta are the same quick-answer CTA, belt-and-braces in case rel ever changes.
+    // Skip all three here; this listener remains the ONLY tracker for plain outbound/citation
+    // links on pages with no React click handler of their own (e.g. GlossaryPage, docs links).
+    var rel = (el.getAttribute('rel') || '').toLowerCase();
+    if (rel.indexOf('sponsored') !== -1) {
+      return;
+    }
+    if (el.hasAttribute('data-quick-cta')) {
+      return;
+    }
+    if (el.closest('article')) {
+      return;
+    }
+
     var matched = affiliateDomains.find(function (domain) {
       return href.indexOf(domain) !== -1;
     });

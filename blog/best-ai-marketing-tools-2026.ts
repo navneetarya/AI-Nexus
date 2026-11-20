@@ -180,6 +180,8 @@ const post: BlogPost = {
   <li><strong>Best for:</strong> Marketing teams, agencies, and businesses with established brand guidelines</li>
 </ul>
 
+<p>Solo marketer and don't need the team features? See our <a href="/blog/jasper-ai-alternatives/">Jasper AI alternatives guide</a> for cheaper tools that cover the same generation job.</p>
+
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['jasper']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Jasper Free →</a>
 </div>

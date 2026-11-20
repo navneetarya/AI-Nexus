@@ -173,6 +173,8 @@ const post: BlogPost = {
   <li><strong>Freemium that actually converts.</strong> The most successful AI startups in 2026 offer free plans that show genuine value, not crippled trials. Their paid tier ties to a volume or capability limit that heavy users naturally hit. Perplexity's unlimited free search with Pro Search limits is a textbook example.</li>
 </ul>
 
+<p>For the broader market data behind these patterns — funding trends, category-level adoption, and where tool spend is actually going across the wider AI ecosystem — see our <a href="/blog/ai-ecosystem-growth-report-2026/">AI Ecosystem Growth Report 2026</a>.</p>
+
 <h2>The Startups Worth Watching in Late 2026</h2>
 <p>Based on current growth signals and product direction, three categories look likely to produce the headline AI startups of 2027:</p>
 <ul>

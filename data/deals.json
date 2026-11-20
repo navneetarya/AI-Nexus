@@ -1,0 +1,13 @@
+{
+  "_readme": "C6 (Nov 2026): verified time-limited discounts, shown in DealBox (components/DealBox.tsx) only when the deal hasn't expired AND 'verifiedISO' is under 30 days old (see lib/deals.ts isDealActive). 'tool' must be a key of AFFILIATE_LINKS (lib/affiliate-links.ts). 'code' is the literal coupon/promo code a buyer enters at checkout, or null when the discount is automatic (applied on the linked landing page, no code needed) — never invent a code that isn't published on the vendor's own page. 'source' must be the exact vendor page the discount was read from. Re-verify and bump 'verifiedISO' before the 30-day window closes, or remove the entry once 'expiresISO' passes. validate_deals.py enforces: source present, verifiedISO/expiresISO are valid ISO dates, and expiresISO is not already in the past.",
+  "deals": [
+    {
+      "tool": "elevenlabs",
+      "code": null,
+      "discount": "Up to 55% off subscription plans (Black Friday, automatic — no code needed)",
+      "source": "https://elevenlabs.io/pricing",
+      "verifiedISO": "2026-11-20",
+      "expiresISO": "2026-12-01"
+    }
+  ]
+}

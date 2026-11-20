@@ -1,6 +1,42 @@
 {
   "repo": "D:\\AI-Nexus\\AI-Nexus",
-  "static_broken_links": [],
+  "static_broken_links": [
+    {
+      "url": "/calculators/voice-cost/",
+      "file": "blog\\elevenlabs-pricing-character-credits-2026.ts",
+      "line": 177,
+      "dynamic": false,
+      "reason": "unrecognized route (not tools/blog/compare/static/category)"
+    },
+    {
+      "url": "/calculators/voice-cost/",
+      "file": "blog\\murf-ai-pricing-2026.ts",
+      "line": 220,
+      "dynamic": false,
+      "reason": "unrecognized route (not tools/blog/compare/static/category)"
+    },
+    {
+      "url": "/pricing-tracker",
+      "file": "pages\\SharedNav.tsx",
+      "line": 200,
+      "dynamic": false,
+      "reason": "unrecognized route (not tools/blog/compare/static/category)"
+    },
+    {
+      "url": "/find-ai-tool",
+      "file": "pages\\SharedNav.tsx",
+      "line": 205,
+      "dynamic": false,
+      "reason": "unrecognized route (not tools/blog/compare/static/category)"
+    },
+    {
+      "url": "/calculators/voice-cost",
+      "file": "pages\\SharedNav.tsx",
+      "line": 210,
+      "dynamic": false,
+      "reason": "unrecognized route (not tools/blog/compare/static/category)"
+    }
+  ],
   "winner_slug_mismatches": [],
   "winner_slug_known_non_tool_skipped": [
     {
@@ -8,6 +44,6 @@
       "winner_slug": "india-targeted-strategy"
     }
   ],
-  "total_link_occurrences": 1549,
+  "total_link_occurrences": 1599,
   "live_results": null
 }

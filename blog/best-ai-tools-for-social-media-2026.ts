@@ -239,6 +239,8 @@ const post: BlogPost = {
 <p>Two categories worth skipping: generic AI chatbots (ChatGPT, Claude) for social media captions work, but they require more prompting effort than a dedicated tool and don't integrate with scheduling. Tools that claim to automate social media growth through auto-following or engagement are the second: these violate platform terms of service and get accounts suspended.</p>
 <p>Stick to tools that help you create and schedule better content. The growth comes from the content quality, not from gaming the algorithm with automation shortcuts.</p>
 
+<p>For paid social, the organic tools above aren't built to produce ad-ready creative at volume — see our <a href="/blog/best-ai-ad-creative-generator-tools-2026/">best AI ad creative generator tools</a> guide for that specific job.</p>
+
 <h2>Final Verdict</h2>
 <p>The best AI tools for social media in 2026 are Ocoya (all-in-one for professionals), Opus Clip (video repurposing), and Leonardo.ai (image generation). If budget is a concern, the entirely free combination of Rytr + Leonardo.ai covers most solo creator needs with no monthly cost. Add scheduling tools when you're ready to systematise your publishing cadence.</p>
   

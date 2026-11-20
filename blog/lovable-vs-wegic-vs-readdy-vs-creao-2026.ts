@@ -6,6 +6,7 @@
 
 import { BlogPost } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
+import { getLaunchKitHtml } from '../lib/launch-kit';
 
 const post: BlogPost = {
   slug: 'lovable-vs-wegic-vs-readdy-vs-creao-2026',
@@ -193,6 +194,7 @@ const post: BlogPost = {
 <h2>After the build: domain, hosting and HTTPS</h2>
 <p>A finished draft is not a launched site. You still need a domain, a connection to the builder, and HTTPS. Many builders include hosting and a certificate on paid plans, so check before you buy them twice.</p>
 <p>Start with <a href="/blog/launch-an-ai-built-website-2026/" style="color:var(--a1);font-weight:600;">How to Launch an AI-Built Website</a>, then compare registrars in <a href="/blog/domain-renewal-prices-compared-2026/" style="color:var(--a1);font-weight:600;">Domain Renewal Prices Compared</a>. If you are weighing coding tools instead, read <a href="/blog/claude-code-alternatives-2026/" style="color:var(--a1);font-weight:600;">Claude Code Alternatives</a>.</p>
+${getLaunchKitHtml()}
 <div style="margin:18px 0 24px;padding:14px 16px;border:1px solid rgba(13,148,136,.25);background:rgba(13,148,136,.06);border-radius:12px;">
   <p style="margin:0 0 6px;font-size:14px;line-height:1.6;"><strong>Our verdict: start with Wegic.</strong></p>
   <a href="${AFFILIATE_LINKS['wegic']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try Wegic →</a>

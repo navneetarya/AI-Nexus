@@ -275,8 +275,16 @@ import post104 from './domain-renewal-prices-compared-2026';
 import post105 from './lovable-vs-wegic-vs-readdy-vs-creao-2026';
 // Oct 14 — Best AI Photo Retouching Tools 2026 (Retouch4me, YouCam, PhotoRoom, Topaz Photo AI, Remini) — matched by job; research synthesis
 import post106 from './best-ai-photo-retouching-tools-2026';
+// Nov 20 — Cheapest AI Voice Plan That Allows Commercial Use 2026 — cross-vendor commercial-use-rights
+// hub, distinct from the existing voice-cloning-pricing and ElevenLabs-YouTube posts
+import post107 from './ai-voice-commercial-use-by-plan-2026';
+// Nov 20 — Do You Need a Paid SSL Certificate? 2026 — free vs paid, DV/OV/EV and wildcard cost guide;
+// shortens and links with the SSLs.com section in domain-renewal-prices-compared-2026
+import post108 from './do-you-need-a-paid-ssl-certificate-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  post108, // Nov 20 — Do You Need a Paid SSL Certificate? 2026 — pinned first for freshness
+  post107, // Nov 20 — Cheapest AI Voice Plan That Allows Commercial Use 2026 — pinned first for freshness
   post106, // Oct 14 — Best AI Photo Retouching Tools 2026 (Retouch4me, YouCam, PhotoRoom, Topaz Photo AI, Remini)
   post105, // Oct 9 — Lovable vs Wegic vs Readdy vs CREAO — AI app and site builder comparison
   post104, // Oct 9 — Domain Renewal Prices Compared 2026 (Spaceship, Domain.com, Network Solutions, BigRock, SSLs.com)

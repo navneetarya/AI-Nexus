@@ -51,6 +51,11 @@ jobs:
         # the build; errors do.
         run: python3 validate_vendor_facts.py
 
+      - name: Validate deals
+        # C6: checks data/deals.json (https source, real tool slug, valid ISO dates) and
+        # fails the build if a deal is missing its source or has already expired.
+        run: python3 validate_deals.py
+
       - name: Build + Pre-render all routes
         # vite build compiles the React app, then scripts/prerender.mjs
         # creates dist/<route>/index.html for every URL in the sitemap.
@@ -116,6 +121,8 @@ jobs:
           # The sync check below will fail the build with a reminder if a
           # post is added to blog/ without a matching entry here.
           BLOG_SLUGS=(
+            do-you-need-a-paid-ssl-certificate-2026
+            ai-voice-commercial-use-by-plan-2026
             best-ai-photo-retouching-tools-2026
             lovable-vs-wegic-vs-readdy-vs-creao-2026
             domain-renewal-prices-compared-2026

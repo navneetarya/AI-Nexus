@@ -104,6 +104,8 @@ const post: BlogPost = {
 
 <p>Cloning lets you generate new speech in your own voice, or a voice you have rights to use. ElevenLabs can build a usable clone from about one minute of clean audio. Murf AI offers cloning too, but it's gated to higher-tier and Enterprise plans, and needs more source material to sound convincing.</p>
 
+<p>If cloning is the actual deciding factor for you, not general voice generation, our <a href="/blog/best-ai-voice-cloning-tools-2026/">best AI voice cloning tools</a> guide compares every option on that one feature specifically.</p>
+
 <h2>ElevenLabs: best for realism and voice cloning</h2>
 
 <p>ElevenLabs is the benchmark most competitors get measured against. Its voices don't just sound clear, they sound like they mean what they're saying, with natural pauses and shifts in tone that hold up on longer scripts.</p>

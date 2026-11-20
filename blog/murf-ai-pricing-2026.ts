@@ -175,6 +175,8 @@ const post: BlogPost = {
 
 <p>If cloning your own voice, or a consistent branded voice for a channel, is the actual reason you're evaluating voice AI tools, Murf is not the tool built for that job. Not on any plan below Enterprise.</p>
 
+<p>See our <a href="/blog/ai-voice-cloning-pricing-comparison-2026/">AI voice cloning pricing comparison</a> for how Murf's Enterprise-only cloning cost actually stacks up against ElevenLabs and the other tools that offer it on a cheaper, self-serve tier.</p>
+
 <p>Enterprise also adds unlimited generation, the Falcon API, SSO, and compliance certifications — SOC 2, ISO 27001, HIPAA, GDPR, and ISO 42001. That's why its pricing lives in a completely different bracket from the self-serve tiers.</p>
 
 <div style="margin:14px 0 24px;">

@@ -141,6 +141,8 @@ const post: BlogPost = {
 <p>Creator costs $22/month after a first-month $11 promotion. Treat the discount as temporary when budgeting.</p><p>Its 121,000 credits cover about 121 minutes. Creator suits a weekly podcast or steady short-form schedule. It is also the first tier with Professional Voice Cloning.</p>
 
 <p>The practical break-even: say you regularly generate more than about 25–30 minutes of finished audio a month, or need cloning beyond a quick instant clone. Then Creator's $22/month plan works out cheaper than staying on Starter and paying per-minute overage once you pass 30,000 credits.</p>
+
+<p>For the full cost-per-clone math across ElevenLabs and its rivals, see our <a href="/blog/ai-voice-cloning-pricing-comparison-2026/">AI voice cloning pricing comparison</a>.</p>
 <div style="margin:14px 0 24px;"><a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs Creator →</a></div>
 
 <h2>What happens when you run out of credits</h2>

@@ -1,0 +1,60 @@
+name: Monthly Pricing Snapshot
+
+# C8 (Nov 2026): freezes the CURRENT verified facts in lib/vendor-facts.data.json into a
+# dated snapshot (data/pricing/snapshots/<YYYY-MM-DD>.json + data/pricing/latest.json),
+# committed back into the repo. scripts/pricing-snapshot.mjs is the single source of
+# truth for how a snapshot is built — see that file for the schema and rules.
+#
+# CAVEATS (read before assuming this workflow alone keeps pricing fresh):
+#   - This workflow does not re-verify any vendor's actual prices. It only takes
+#     whatever is currently in lib/vendor-facts.data.json and freezes it under
+#     today's date. Unless vendor-facts.data.json is re-verified against official
+#     pricing pages before the 1st of the month, this snapshot will be byte-for-byte
+#     identical to the previous one, and scripts/pricing-diff.mjs will report no
+#     changes — that is expected, not a bug, until the underlying facts are updated.
+#   - The commit below uses the default GITHUB_TOKEN, which GitHub deliberately does
+#     not let trigger other workflow runs (incl. this repo's Pages deploy workflow).
+#     That's fine for a snapshot: it doesn't change site behavior, so no deploy is
+#     needed. If a push ever needs to trigger deploy.yml too, use a PAT instead.
+#
+# Manual run: Actions tab → Monthly Pricing Snapshot → Run workflow.
+
+on:
+  schedule:
+    # 06:00 UTC on the 1st of every month.
+    - cron: '0 6 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pricing-snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate pricing snapshot
+        run: node scripts/pricing-snapshot.mjs
+
+      - name: Commit snapshot to repo
+        run: |
+          git config user.name "pricing-snapshot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/pricing/snapshots/ data/pricing/latest.json
+          if git diff --cached --quiet; then
+            echo "No pricing changes since last snapshot — nothing to commit."
+          else
+            git commit -m "chore(pricing): monthly snapshot $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi

@@ -83,5 +83,59 @@
       "tool": "soundraw",
       "label": "Try Soundraw →"
     }
+  },
+  "murf-ai-pricing-2026": {
+    "answer": "Murf AI costs $0 for a 10-minute Free trial, $22/month annually ($29 monthly) for Creator with 24 hours/year and commercial rights, and $66/month annually ($99 monthly) for Business. Voice cloning is Enterprise-only, custom-quoted — the biggest gap versus ElevenLabs, which offers cloning from $6/month.",
+    "verified": "2026-11-13",
+    "updated": "2026-11-20",
+    "cta": {
+      "tool": "murf-ai",
+      "label": "See Murf AI plans →"
+    }
+  },
+  "elevenlabs-pricing-character-credits-2026": {
+    "answer": "ElevenLabs costs $0 (Free, 10,000 credits/month, no commercial rights), $6/month (Starter, 30,000 credits, commercial license + instant voice cloning), $22/month (Creator, 121,000 credits, professional cloning), up to $299/month (Scale) and $990/month (Business). One credit is roughly one character; 1,000 credits ≈ one minute of speech.",
+    "verified": "2026-11-20",
+    "updated": "2026-11-20",
+    "cta": {
+      "tool": "elevenlabs",
+      "label": "Try ElevenLabs free →"
+    }
+  },
+  "elevenlabs-youtube-commercial-rights-2026": {
+    "answer": "Yes — but only on a paid ElevenLabs plan. The Free plan bans commercial use; Starter ($6/month) and above include full commercial rights. Separately, YouTube's AI-disclosure label is only required for realistic content, such as cloning a specific real person's voice — a standard narration voice usually doesn't need it.",
+    "verified": "2026-11-20",
+    "updated": "2026-11-20",
+    "cta": {
+      "tool": "elevenlabs",
+      "label": "Try ElevenLabs free →"
+    }
+  },
+  "best-ai-tool-lifetime-deals-appsumo-2026": {
+    "answer": "AppSumo is a deals marketplace, not one tool — it sells one-time lifetime licenses at steep discounts. Refund windows vary by listing (commonly 30 or 60 days, stated in each deal's Deal Terms), so confirm the exact window before buying. AppSumo Plus membership (from $12/month) adds 10% off every deal.",
+    "verified": "2026-11-20",
+    "updated": "2026-11-20",
+    "cta": {
+      "tool": "appsumo",
+      "label": "Browse AppSumo deals →"
+    }
+  },
+  "domain-renewal-prices-compared-2026": {
+    "answer": "Spaceship has the lowest long-term .com cost compared here: $10.18/year to renew, versus $22.99 at Domain.com and $32.99 at Network Solutions. BigRock suits buyers wanting rupee pricing and a .in domain. SSLs.com only matters if your host doesn't already bundle HTTPS. Always check the renewal price, not just year one.",
+    "verified": "2026-10-14",
+    "updated": "2026-11-20",
+    "cta": {
+      "tool": "spaceship",
+      "label": "Check Spaceship pricing →"
+    }
+  },
+  "do-you-need-a-paid-ssl-certificate-2026": {
+    "answer": "Most small sites don't need a paid SSL certificate — a free Let's Encrypt certificate encrypts identically to a $500 one. Pay only for Organization/Extended Validation required by a contract or regulator, a larger CA warranty, or easier wildcard/multi-domain coverage without self-managing DNS-based renewal.",
+    "verified": "2026-11-20",
+    "updated": "2026-11-20",
+    "cta": {
+      "tool": "ssls",
+      "label": "Compare SSLs.com certificates →"
+    }
   }
 }

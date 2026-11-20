@@ -19,6 +19,7 @@
 
 import { BlogPost } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
+import { getLaunchKitHtml } from '../lib/launch-kit';
 
 const post: BlogPost = {
   slug: 'best-ai-website-builders-2026',
@@ -270,6 +271,7 @@ const post: BlogPost = {
 </ol>
 <p>Editorial verdict based on every pricing page directly: Wix earns "best overall" honestly. But Hostinger's renewal jump from under $3 to nearly $11 a month is the one trap in this category that a headline price alone won't warn you about.</p>
 <p>Verify the renewal price before you commit a card, whichever tool you land on.</p>
+${getLaunchKitHtml()}
 <p style="font-size:12px;color:var(--text-muted,#888);margin-top:16px;">How we researched “Best AI Website Builders 2026”: every figure comes from official vendor documentation, published pricing pages and public review sites, not from hands-on lab testing (see our <a href="/methodology/">editorial methodology</a>).</p>
   `,
 

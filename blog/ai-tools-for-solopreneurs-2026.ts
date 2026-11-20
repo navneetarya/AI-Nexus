@@ -1,5 +1,6 @@
 import { BlogPost } from './types';
 import { AFFILIATE_LINKS } from '../lib/affiliate-links';
+import { getLaunchKitHtml } from '../lib/launch-kit';
 
 // ── Affiliate links used in this post ────────────────────────────────────────
 // Taskade      : Affiliate active — https://www.taskade.com/?via=rlqcxz (30% recurring)
@@ -427,6 +428,7 @@ const post: BlogPost = {
   <li><strong>Week 3 — Client-facing layer:</strong> Once you have a live website or storefront, add Tidio's free tier for support coverage outside working hours. If you are running discovery or client calls, add Fireflies Free for transcription. This is also the point to register a proper <a href="${AFFILIATE_LINKS['spaceship']}" target="_blank" rel="sponsored nofollow noopener noreferrer">domain</a> and <a href="${AFFILIATE_LINKS['spaceship-email']}" target="_blank" rel="sponsored nofollow noopener noreferrer">business email</a> — Spaceship handles both — rather than emailing clients from a personal address.</li>
   <li><strong>Week 4 — Automate the repetition:</strong> By this point you will have noticed at least one repetitive cross-tool task. Maybe a new Tidio chat should become a Taskade follow-up. Maybe a form submission should trigger an email. That specific, observed pain point is what Make.com's Core plan ($9/month) should solve, not a hypothetical future workflow. Add Ocoya only once content volume really needs scheduling automation — typically once you're posting 3+ times a week across more than one platform.</li>
 </ol>
+${getLaunchKitHtml()}
 
 <h2>What to Skip: Tools Solopreneurs Don't Need Yet</h2>
 <p>Just as important as what to add is what to defer. AI agent builders like <a href="/tools/lindy/">Lindy</a>.ai and <a href="/tools/relevance-ai/">Relevance AI</a>, covered in <a href="/blog/best-ai-agents-for-small-business-2026/">Best AI Agents for Small Business 2026</a>, solve a scaling problem: coordinating multiple repeatable processes across a team.</p>

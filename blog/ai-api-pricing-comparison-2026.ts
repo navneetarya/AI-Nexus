@@ -102,6 +102,8 @@ const post: BlogPost = {
   <li><strong>Open-weight models got cheaper and newer.</strong> Llama 4 Scout and Maverick, Mistral Large 3, and GPT-OSS 120B all list below $1 per million input tokens on hosted APIs.</li>
 </ul>
 
+<p>These price cuts aren't happening in isolation — they track the same adoption and funding shifts covered in our <a href="/blog/ai-ecosystem-growth-report-2026/">AI Ecosystem Growth Report 2026</a>.</p>
+
 <h2>Real Cost at Scale: 1 Million API Calls</h2>
 <p>Token pricing only becomes real once you turn it into app costs. Here is the math, assuming 500 input tokens and 200 output tokens per call, which is typical for a chatbot or content-writing feature. One million calls means 500M input tokens and 200M output tokens.</p>
 <ul>

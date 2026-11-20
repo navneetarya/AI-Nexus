@@ -214,6 +214,7 @@ const post: BlogPost = {
 </ol>
 <p>The combination covers most individual professional and creative workflows without a subscription.</p>
 <p>Paid upgrades become worth it once you hit volume limits: more than 30–40 images a day, more than 5 Pro Search queries, or a need for team features. They're also worth it when you need a specific premium feature, like tone detection in Grammarly, unlimited AI in Gamma, or deployment in Replit.</p>
+<p>Free plans this generous are themselves a sign of where the market is heading — see our <a href="/blog/ai-ecosystem-growth-report-2026/">AI Ecosystem Growth Report 2026</a> for the adoption data behind it.</p>
 <h2>Choose the Free Plan That Matches Your Actual Work</h2>
 <p>The most generous allowance is not automatically the most useful one. A researcher benefits more from Perplexity's cited searches than from a daily image allowance. A designer benefits more from Leonardo.ai's renewing tokens than from Gamma's one-time presentation credits. Start with the job you repeat, then check whether the allowance renews before choosing a tool.</p>
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0 24px;"><thead><tr style="background:rgba(13,148,136,.1);"><th style="padding:10px;text-align:left;">If your recurring job is</th><th style="padding:10px;text-align:left;">Start with</th><th style="padding:10px;text-align:left;">The limit to watch</th></tr></thead><tbody>

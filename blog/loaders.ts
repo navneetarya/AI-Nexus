@@ -7,6 +7,8 @@ import type { BlogPost } from './types';
 type BlogPostModule = { default: BlogPost };
 
 const BLOG_POST_LOADERS: Record<string, () => Promise<BlogPostModule>> = {
+  'do-you-need-a-paid-ssl-certificate-2026': () => import('./do-you-need-a-paid-ssl-certificate-2026'),
+  'ai-voice-commercial-use-by-plan-2026': () => import('./ai-voice-commercial-use-by-plan-2026'),
   'best-ai-photo-retouching-tools-2026': () => import('./best-ai-photo-retouching-tools-2026'),
   'lovable-vs-wegic-vs-readdy-vs-creao-2026': () => import('./lovable-vs-wegic-vs-readdy-vs-creao-2026'),
   'domain-renewal-prices-compared-2026': () => import('./domain-renewal-prices-compared-2026'),

@@ -159,6 +159,7 @@ const post: BlogPost = {
 <h2>Bottom line</h2>
 
 <p>Yes, ElevenLabs can be used for monetized YouTube content on a paid plan. Commercial rights are binary by tier.</p><p>The disclosure rule is narrower. Generic narration usually needs no label. A clone of a specific real person usually does. Use consented or licensed voices and check both policies before publishing.</p>
+<p>For how ElevenLabs' commercial terms compare against Murf AI, Descript and Podcastle rather than just ElevenLabs alone, see our <a href="/blog/ai-voice-commercial-use-by-plan-2026/">cheapest AI voice plan with commercial use rights</a> guide.</p>
 
 <div style="margin:14px 0 24px;">
   <a href="${AFFILIATE_LINKS['elevenlabs']}" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#0D9488,#0f766e);color:#fff;padding:10px 14px;margin:6px 8px 0 0;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;">Try ElevenLabs' Starter plan →</a>

@@ -5,7 +5,9 @@ import { ArrowLeft, ExternalLink, Check, X, Star, Calendar, User, Tag, ChevronDo
 import { SITE_CONFIG, TOOL_FAQS, TOOL_COMPARISONS, TOOL_KEYWORDS, TOOLS } from '../constants';
 import { trackAffiliateClick } from '../lib/subid-tracking';
 import { getVerifiedFacts } from '../lib/vendor-facts';
+import { getActiveDeal } from '../lib/deals';
 import { VerdictCard } from '../components/VerdictCard';
+import { DealBox } from '../components/DealBox';
 import { SharedNav } from './SharedNav';
 import { COMPARE_ARTICLES } from './compare-data';
 // Perf: use the lightweight metadata list (no full post `content`) so this
@@ -2018,6 +2020,7 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
   // Phase 2 (task 2.2): the verdict card shows only for tools with verified facts and an affiliate link.
   // When it shows, it replaces the hero's own price + CTA row so the page has one primary CTA there.
   const verdictFacts = tool.affiliateLink ? getVerifiedFacts(tool.slug) : null;
+  const activeDeal = getActiveDeal(tool.slug);
   const faqs = TOOL_FAQS[tool.slug] || [];
   const comparisons = TOOL_COMPARISONS[tool.slug] || [];
   const keywords = TOOL_KEYWORDS[tool.slug] || [];
@@ -2238,6 +2241,8 @@ export function ToolPage({ tool, navigate, isDark, toggleTheme }: ToolPageProps)
         {verdictFacts && (
           <VerdictCard facts={verdictFacts} affiliateLink={tool.affiliateLink} navigate={navigate} />
         )}
+
+        {activeDeal && <DealBox deal={activeDeal} toolName={tool.name} />}
 
         {AFFILIATE_SLUGS?.includes(tool.slug) && (
           <div style={{ 

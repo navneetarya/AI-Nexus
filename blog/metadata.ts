@@ -21,6 +21,32 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "do-you-need-a-paid-ssl-certificate-2026",
+    "title": "Do You Need a Paid SSL Certificate? (Free vs Paid, 2026)",
+    "seoTitle": "Free vs Paid SSL Certificate: Do You Need One? (2026)",
+    "metaDescription": "Most small sites don’t need a paid SSL certificate. Free Let’s Encrypt vs paid DV, OV, EV and wildcard certificates, and when paying is worth it.",
+    "datePublished": "2026-11-20",
+    "dateModified": "2026-11-20",
+    "author": "Navneet Arya",
+    "category": "Productivity",
+    "readTime": "8 min read",
+    "ogImage": "https://ainexustools.online/og/blog/do-you-need-a-paid-ssl-certificate-2026.webp",
+    "excerpt": "A free Let’s Encrypt certificate gives identical encryption to a $500 one. Here are the specific, verified cases where paying for a certificate is actually justified — and why most small sites don’t hit any of them."
+  },
+  {
+    "slug": "ai-voice-commercial-use-by-plan-2026",
+    "title": "Cheapest AI Voice Plan That Allows Commercial Use (2026)",
+    "seoTitle": "Cheapest AI Voice Plan With Commercial Use Rights 2026",
+    "metaDescription": "Which AI voice plans let you monetize the output, and which is cheapest? ElevenLabs, Murf AI, Descript and Podcastle compared on verified commercial-use terms.",
+    "datePublished": "2026-11-20",
+    "dateModified": "2026-11-20",
+    "author": "Navneet Arya",
+    "category": "Audio",
+    "readTime": "7 min read",
+    "ogImage": "https://ainexustools.online/og/blog/ai-voice-commercial-use-by-plan-2026.webp",
+    "excerpt": "Free AI voice plans almost always ban monetized use. Here is exactly which paid plan unlocks commercial rights, on which tool, and which one does it cheapest — using only terms each vendor states explicitly."
+  },
+  {
     "slug": "best-ai-photo-retouching-tools-2026",
     "title": "Best AI Photo Retouching Tools 2026: Retouch4me vs YouCam vs PhotoRoom vs Topaz vs Remini",
     "seoTitle": "Best AI Photo Retouching Tools 2026: 5 Compared by Job",
@@ -52,7 +78,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "Domain Renewal Prices Compared 2026 (India Guide)",
     "metaDescription": "Spaceship, Domain.com, Network Solutions and BigRock compared on first-year vs renewal price, plus SSLs.com certificates and an India angle. Dated Oct 2026.",
     "datePublished": "2026-10-09",
-    "dateModified": "2026-10-14",
+    "dateModified": "2026-11-20",
     "author": "Navneet Arya",
     "category": "Design",
     "readTime": "9 min read",
@@ -104,12 +130,12 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     "seoTitle": "Are AppSumo AI Lifetime Deals Worth It in 2026?",
     "metaDescription": "How AppSumo lifetime deals for AI tools actually work in 2026, what to check before buying, and a category-by-category guide to which deals are worth it.",
     "datePublished": "2026-09-26",
-    "dateModified": "2026-10-20",
+    "dateModified": "2026-11-20",
     "author": "Navneet Arya",
     "category": "Productivity",
     "readTime": "8 min read",
     "ogImage": "https://ainexustools.online/og/blog/best-ai-tool-lifetime-deals-appsumo-2026.webp",
-    "excerpt": "AppSumo sells one-time \"lifetime\" access to AI and SaaS tools at 60–95% off, backed by a 60-day refund window. Here is how to tell a genuinely good deal from a risky one."
+    "excerpt": "AppSumo sells one-time \"lifetime\" access to AI and SaaS tools at 60–95% off, backed by a refund window (commonly up to 60 days, but it varies by listing). Here is how to tell a genuinely good deal from a risky one."
   },
   {
     "slug": "best-gamma-alternatives-2026",

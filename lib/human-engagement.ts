@@ -15,8 +15,12 @@
 // guarantee, and keep the Cloudflare-side bot rules as the second layer.
 //
 // SETUP IN GA4 (one-time, no code): Admin -> Events -> mark `engaged_human` as a key event, and
-// register `interaction` and `page_type` as custom dimensions if you want them in reports.
-// Build an Exploration segment "Human" = sessions that contain the `engaged_human` event.
+// register `interaction` and `page_type` as event-scoped custom dimensions if you want them in
+// reports. Also register `human_verified` as a USER-scoped custom dimension (Admin -> Custom
+// definitions -> Custom dimensions -> scope "User") — it's set via `gtag('set', 'user_properties',
+// ...)` below, not as an event param, so it needs the User scope, not Event scope, to show up.
+// Build an Exploration segment "Human" = sessions where `human_verified` = `yes` (or, equivalently,
+// sessions that contain the `engaged_human` event).
 
 const DWELL_MS = 10_000;
 const TICK_MS = 1_000;
@@ -73,6 +77,12 @@ export function startHumanEngagement(pagePath: string, pageType: string): void {
           engaged_seconds: Math.round(visibleMs / 1000),
           interaction,
         });
+        // C1 (Nov 2026): a user property (unlike an event param) persists on every subsequent
+        // event and pageview in the session, so "human_verified = yes" becomes filterable across
+        // ALL GA4 reports — not just on the one event that set it. Bots that never fire
+        // engaged_human (curl, headless scrapers with no synthesized input) never get this
+        // property set, so it stays unset for them.
+        window.gtag('set', 'user_properties', { human_verified: 'yes' });
       }
       stopHumanEngagement();
     }

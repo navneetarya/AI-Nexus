@@ -226,7 +226,7 @@ const post: BlogPost = {
   </table>
 </div>
 
-<p>Instant cloning builds a voice from a short audio sample. Professional cloning is a higher tier built for closer matches. Most solo podcasters can start with instant cloning and upgrade only if the match isn't close enough.</p>
+<p>Instant cloning builds a voice from a short audio sample. Professional cloning is a higher tier built for closer matches. Most solo podcasters can start with instant cloning and upgrade only if the match isn't close enough. For a wider shortlist focused purely on cloning quality, not podcast-specific features, see our <a href="/blog/best-ai-voice-cloning-tools-2026/">best AI voice cloning tools</a> guide.</p>
 
 <p>Credit use is small for scripted reads. A 30-second intro is roughly 75 words, or about 450 characters. Even at one credit per character, the free allowance covers around 22 reads like that.</p>
 
